@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 历史回顾展览 - 增强版</title>
+    <style>
+        /* ==================== 1. 全局变量与基础重置 ==================== */
+        :root {
+            --bg-color: #0B0E14;
+            --text-main: #FFFFFF;
+            --text-muted: #8AB4F8;
+            --accent: #FFD166;
+            --panel-bg: rgba(255, 255, 255, 0.05);
+            --border-color: rgba(138, 180, 248, 0.3);
+            --polaroid-bg: #f4f4f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            overflow: hidden;
+        }
+
+        /* ==================== 2. 主容器与布局 (严格 16:9) ==================== */
+        .screen-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 56.25vw;
+            max-height: 100vh;
+            max-width: 177.78vh;
+            background: radial-gradient(circle at center, #1A2130 0%, var(--bg-color) 100%);
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1fr;
+            grid-template-rows: 15% 85%;
+            gap: 2.5%;
+            padding: 3%;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+        }
+
+        /* ==================== 3. 动画与状态机类 ==================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-out-left {
+            transform: translate(-150%, -50%);
+            opacity: 0;
+        }
+
+        .slide-out-right {
+            transform: translate(50%, -50%);
+            opacity: 0;
+        }
+
+        /* ==================== 4. 顶部标题区与视频 ==================== */
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 1%;
+            animation-delay: 0.2s;
+        }
+
+        .title-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* 第一层：大分类标题 */
+        .milestone-category {
+            font-size: 1.8vw;
+            font-weight: 600;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* 第二层：年份 + 事件标题 */
+        .milestone-year-event {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .event-year {
+            font-size: 4.5vw;
+            font-weight: 900;
+            color: var(--accent);
+            line-height: 1;
+            text-shadow: 0 0 30px rgba(255, 209, 102, 0.4);
+            letter-spacing: -2px;
+            flex-shrink: 0;
+        }
+
+        .event-separator {
+            font-size: 3vw;
+            color: var(--accent);
+            opacity: 0.6;
+        }
+
+        .event-title {
+            font-size: 2.2vw;
+            color: var(--text-main);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+
+        /* ==================== 5. 面板通用样式（增强对比度）==================== */
+        .panel {
+            background: var(--panel-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .panel-title {
+            font-size: 1.3vw;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-left: 5px solid var(--accent);
+            padding-left: 12px;
+            margin-bottom: 6%;
+            font-weight: 700;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* ==================== 6. 左栏：动态地球与事件 ==================== */
+        .col-left {
+            animation-delay: 0.6s;
+        }
+
+        .location-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12%;
+        }
+
+        /* 🌍 纯 CSS 3D 动态地球 */
+        .globe-container {
+            position: relative;
+            width: 6vw;
+            height: 6vw;
+            perspective: 1000px;
+        }
+
+        .globe {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa3d1 100%);
+            box-shadow:
+                inset -15px -15px 40px rgba(0, 0, 0, 0.5),
+                inset 15px 15px 40px rgba(255, 255, 255, 0.1),
+                0 0 30px rgba(138, 180, 248, 0.5);
+            animation: rotateGlobe 20s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        /* 地球上的大陆 */
+        .globe::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 30%;
+            background: rgba(76, 175, 80, 0.4);
+            border-radius: 50%;
+            transform: translateZ(1px);
+        }
+
+        .globe::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            width: 30%;
+            height: 25%;
+            background: rgba(76, 175, 80, 0.3);
+            border-radius: 50%;
+            transform: translateZ(1px);
+        }
+
+        @keyframes rotateGlobe {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+
+        /* 地球上的坐标标记 */
+        .location-marker {
+            position: absolute;
+            top: 35%;
+            left: 45%;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            border: 2px solid white;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(255, 209, 102, 0.8);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.5); opacity: 0.7; }
+        }
+
+        .location-text {
+            font-size: 1.6vw;
+            color: var(--text-main);
+            text-align: center;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .event-desc {
+            font-size: 1.25vw;
+            line-height: 1.7;
+            color: #ddd;
+        }
+
+        /* ==================== 7. 中栏：人物卡片与拍立得照片 ==================== */
+        .col-center {
+            animation-delay: 1.0s;
+            position: relative;
+        }
+
+        /* 卡片式人物阵列（增强动画）- 支持动态列数 */
+        .figures-grid {
+            display: grid;
+            gap: 5%;
+            margin-bottom: 10%;
+        }
+
+        /* 根据人物数量动态调整网格 */
+        .figures-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+
+        .figures-grid.count-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .figures-grid.count-3 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .figures-grid.count-4 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* 3个人物时，第3个居中显示 */
+        .figures-grid.count-3 .figure-card:nth-child(3) {
+            grid-column: 1 / -1;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        /* 空状态：没有人物时的占位 */
+        .figures-grid.empty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 15vh;
+            color: var(--text-muted);
+            font-style: italic;
+            opacity: 0.5;
+        }
+
+        .figure-card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 6%;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .figure-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 209, 102, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .figure-card:hover::before {
+            left: 100%;
+        }
+
+        .figure-card:hover {
+            background: rgba(255, 209, 102, 0.15);
+            border-color: var(--accent);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 209, 102, 0.3);
+        }
+
+        .figure-name {
+            font-size: 1.35vw;
+            color: var(--text-main);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .figure-role {
+            font-size: 0.95vw;
+            color: var(--text-muted);
+        }
+
+        /* 📸 拍立得照片拼贴效果 - 支持动态数量 */
+        .collage-container {
+            position: relative;
+            flex-grow: 1;
+            min-height: 22vh;
+            margin-top: 5%;
+        }
+
+        /* 空状态 */
+        .collage-container.empty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-muted);
+            font-style: italic;
+            opacity: 0.5;
+        }
+
+        .polaroid {
+            position: absolute;
+            background: var(--polaroid-bg);
+            padding: 5% 5% 15% 5%;  /* 底部留更宽的边距 */
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.3),
+                0 10px 40px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .polaroid:hover {
+            transform: scale(1.15) translateY(-20px) !important;
+            box-shadow:
+                0 15px 30px rgba(0, 0, 0, 0.4),
+                0 25px 60px rgba(0, 0, 0, 0.3);
+            z-index: 100 !important;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .polaroid-caption {
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Courier New', monospace;
+            font-size: 0.8vw;
+            color: #555;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* 动态照片布局（1-6张） */
+        /* 1张照片：居中显示 */
+        .polaroid.photo-0 {
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            transform: translate(-50%, -50%) rotate(-3deg);
+            z-index: 1;
+        }
+
+        /* 2张照片：左右布局 */
+        .polaroid.photo-0.of-2 {
+            top: 15%;
+            left: 5%;
+            width: 50%;
+            transform: rotate(-6deg);
+            z-index: 1;
+        }
+
+        .polaroid.photo-1.of-2 {
+            top: 25%;
+            right: 8%;
+            width: 48%;
+            transform: rotate(8deg);
+            z-index: 2;
+        }
+
+        /* 3张照片：经典拼贴 */
+        .polaroid.photo-0.of-3 {
+            top: 0;
+            left: 0;
+            width: 55%;
+            transform: rotate(-6deg);
+            z-index: 1;
+        }
+
+        .polaroid.photo-1.of-3 {
+            top: 12%;
+            right: 5%;
+            width: 48%;
+            transform: rotate(8deg);
+            z-index: 2;
+        }
+
+        .polaroid.photo-2.of-3 {
+            bottom: 5%;
+            left: 18%;
+            width: 52%;
+            transform: rotate(-3deg);
+            z-index: 3;
+        }
+
+        /* 4张照片：网格布局 */
+        .polaroid.photo-0.of-4 {
+            top: 2%;
+            left: 2%;
+            width: 45%;
+            transform: rotate(-5deg);
+            z-index: 1;
+        }
+
+        .polaroid.photo-1.of-4 {
+            top: 5%;
+            right: 5%;
+            width: 43%;
+            transform: rotate(6deg);
+            z-index: 2;
+        }
+
+        .polaroid.photo-2.of-4 {
+            bottom: 8%;
+            left: 8%;
+            width: 44%;
+            transform: rotate(4deg);
+            z-index: 3;
+        }
+
+        .polaroid.photo-3.of-4 {
+            bottom: 5%;
+            right: 2%;
+            width: 42%;
+            transform: rotate(-7deg);
+            z-index: 4;
+        }
+
+        /* 5+张照片：紧凑布局 */
+        .polaroid.of-many {
+            width: 38% !important;
+        }
+
+        .polaroid.photo-0.of-many {
+            top: 0;
+            left: 0;
+            transform: rotate(-8deg);
+            z-index: 5;
+        }
+
+        .polaroid.photo-1.of-many {
+            top: 0;
+            right: 0;
+            transform: rotate(7deg);
+            z-index: 4;
+        }
+
+        .polaroid.photo-2.of-many {
+            top: 35%;
+            left: 30%;
+            transform: rotate(-3deg);
+            z-index: 6;
+        }
+
+        .polaroid.photo-3.of-many {
+            bottom: 0;
+            left: 5%;
+            transform: rotate(5deg);
+            z-index: 2;
+        }
+
+        .polaroid.photo-4.of-many {
+            bottom: 0;
+            right: 5%;
+            transform: rotate(-6deg);
+            z-index: 3;
+        }
+
+        /* ==================== 8. 右栏：视频与引用 ==================== */
+        .col-right {
+            animation-delay: 1.4s;
+        }
+
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        /* 视频隐藏状态 */
+        .video-container.hidden {
+            display: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .quote-box {
+            margin-top: 6%;
+            font-size: 1.25vw;
+            font-style: italic;
+            color: #ddd;
+            border-left: 4px solid var(--text-muted);
+            padding-left: 6%;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        /* 当视频隐藏时，引用框占据更多空间 */
+        .video-container.hidden + .quote-box {
+            margin-top: 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 引用空状态 */
+        .quote-box.empty {
+            opacity: 0.5;
+            color: var(--text-muted);
+        }
+
+        /* ==================== 9. 底部导航栏 ==================== */
+        .bottom-nav {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 18px 45px;
+            border-radius: 50px;
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+            border: 2px solid var(--border-color);
+        }
+
+        .nav-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: none;
+            color: #000;
+            font-size: 22px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover:not(:disabled) {
+            transform: scale(1.25);
+            box-shadow: 0 0 25px rgba(255, 209, 102, 0.6);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .page-indicators {
+            display: flex;
+            gap: 14px;
+        }
+
+        .dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .dot.active {
+            background: var(--accent);
+            transform: scale(1.6);
+            box-shadow: 0 0 12px rgba(255, 209, 102, 0.7);
+        }
+
+        .dot:hover {
+            background: rgba(255, 209, 102, 0.8);
+            transform: scale(1.4);
+        }
+
+        /* ==================== 10. 照片查看器 ==================== */
+        .photo-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .viewer-photo {
+            max-width: 85%;
+            max-height: 85%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        }
+
+        .close-viewer {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50%;
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .close-viewer:hover {
+            background: var(--accent);
+            color: #000;
+            transform: rotate(90deg);
+        }
+
+        .photo-prev,
+        .photo-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 65px;
+            height: 65px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50%;
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .photo-prev {
+            left: 30px;
+        }
+
+        .photo-next {
+            right: 30px;
+        }
+
+        .photo-prev:hover,
+        .photo-next:hover {
+            background: var(--accent);
+            color: #000;
+            transform: translateY(-50%) scale(1.15);
+        }
+
+        .photo-counter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen-container" id="mainScreen">
+
+        <header class="header reveal">
+            <div class="title-group">
+                <div class="milestone-category" id="categoryDisplay">AI创世纪 (1950s-1970s)</div>
+                <div class="milestone-year-event">
+                    <span class="event-year" id="yearDisplay">1956</span>
+                    <span class="event-separator">•</span>
+                    <span class="event-title" id="titleDisplay">人工智能的正式诞生</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="panel col-left reveal">
+            <div class="panel-title">Location & Event</div>
+            <div class="location-box">
+                <div class="globe-container">
+                    <div class="globe">
+                        <div class="location-marker"></div>
+                    </div>
+                </div>
+                <div class="location-text" id="locationDisplay">
+                    达特茅斯学院<br>
+                    <span style="font-size: 1.1vw; color: var(--text-muted);">美国, 新罕布什尔州</span>
+                </div>
+            </div>
+            <div class="event-desc" id="eventDesc">
+                在1956年的夏天，一群富有远见的科学家在此进行了为期8周的闭门探讨。<br><br>
+                会议的核心议题是探讨"如何让机器具备人类的智能"。正是在这次会议上，首次确立了<span
+                    class="highlight">"人工智能 (Artificial Intelligence)"</span>这一历史性术语。
+            </div>
+        </div>
+
+        <div class="panel col-center reveal">
+            <div class="panel-title">Key Figures & Archive</div>
+            <div class="figures-grid" id="figuresGrid">
+                <div class="figure-card">
+                    <div class="figure-name">John McCarthy</div>
+                    <div class="figure-role">提出"AI"术语</div>
+                </div>
+                <div class="figure-card">
+                    <div class="figure-name">Marvin Minsky</div>
+                    <div class="figure-role">认知科学家</div>
+                </div>
+                <div class="figure-card">
+                    <div class="figure-name">Claude Shannon</div>
+                    <div class="figure-role">信息论创始人</div>
+                </div>
+                <div class="figure-card">
+                    <div class="figure-name">Nathaniel Rochester</div>
+                    <div class="figure-role">IBM 架构师</div>
+                </div>
+            </div>
+            <div class="collage-container">
+                <!-- 照片由 JavaScript 动态生成 -->
+            </div>
+        </div>
+
+        <div class="panel col-right reveal">
+            <div class="panel-title">Commentary & Media</div>
+            <div class="video-container">
+                <iframe id="mainVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="quote-box" id="quoteDisplay">
+                "We propose that a 2 month, 10 man study of artificial intelligence be carried out during the summer of
+                1956..."<br><br>
+                <span style="font-size: 1vw; color: var(--accent);">— 达特茅斯会议提案书</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="bottom-nav">
+        <button class="nav-btn" id="prevBtn">◀</button>
+
+        <div class="page-indicators" id="pageIndicators">
+            <!-- 动态生成圆点 -->
+        </div>
+
+        <button class="nav-btn" id="nextBtn">▶</button>
+    </div>
+
+    <!-- 外部数据文件 -->
+    <script src="milestones-data-full.js"></script>
+
+    <script>
+        // ==================== 全局变量 ====================
+        let currentIndex = 0;
+        let isTransitioning = false;
+
+        // DOM 元素引用
+        const mainScreen = document.getElementById('mainScreen');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicators = document.getElementById('pageIndicators');
+
+        // ==================== 初始化 ====================
+        function init() {
+            // 生成页面指示器
+            indicators.innerHTML = milestones.map((_, i) =>
+                `<div class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+            ).join('');
+
+            // 绑定圆点点击事件
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.onclick = () => jumpTo(i);
+            });
+
+            // 渲染第一个页面
+            renderPage(0);
+
+            // 绑定照片点击事件
+            bindPhotoClicks();
+        }
+
+        // ==================== 页面渲染（配置化版本）====================
+        function renderPage(index) {
+            const m = milestones[index];
+
+            // 更新分类（第一层标题）
+            document.getElementById('categoryDisplay').textContent = m.category;
+
+            // 更新年份和事件标题（第二层）
+            document.getElementById('yearDisplay').textContent = m.year;
+            document.getElementById('titleDisplay').textContent = m.title;
+
+            // 更新地点
+            document.getElementById('locationDisplay').innerHTML =
+                `${m.location.name}<br><span style="font-size: 1.1vw; color: var(--text-muted);">${m.location.country}</span>`;
+
+            // 更新事件描述
+            document.getElementById('eventDesc').innerHTML = m.description;
+
+            // ==================== 动态渲染人物（支持0-N个）====================
+            const figuresGrid = document.getElementById('figuresGrid');
+            const figuresCount = m.figures.length;
+
+            // 移除所有动态类
+            figuresGrid.className = 'figures-grid';
+
+            if (figuresCount === 0) {
+                // 空状态
+                figuresGrid.classList.add('empty');
+                figuresGrid.innerHTML = '暂无关键人物信息';
+            } else {
+                // 添加数量类
+                figuresGrid.classList.add(`count-${Math.min(figuresCount, 4)}`);
+                figuresGrid.innerHTML = m.figures.map(f => `
+                    <div class="figure-card">
+                        <div class="figure-name">${f.name}</div>
+                        <div class="figure-role">${f.role}</div>
+                    </div>
+                `).join('');
+            }
+
+            // ==================== 动态渲染照片（支持0-N张）====================
+            const collageContainer = document.querySelector('.collage-container');
+
+            // 合并照片：优先 photos（PPT原图），不足5张则从 resources.images 补充
+            let photosList = [];
+
+            // 1. 先添加所有 photos
+            if (m.photos && m.photos.length > 0) {
+                photosList = [...m.photos];
+            }
+
+            // 2. 如果不足5张，从 resources.images 补充
+            if (photosList.length < 5 && m.resources && m.resources.images && m.resources.images.length > 0) {
+                const needed = 5 - photosList.length;
+                photosList = [...photosList, ...m.resources.images.slice(0, needed)];
+            }
+
+            // 3. 最多取5张
+            photosList = photosList.slice(0, 5);
+
+            const photosCount = photosList.length;
+
+            if (photosCount === 0) {
+                // 空状态
+                collageContainer.innerHTML = '<div style="text-align: center;">暂无历史照片</div>';
+                collageContainer.classList.add('empty');
+            } else {
+                // 移除空状态类
+                collageContainer.classList.remove('empty');
+
+                // 确定布局类型
+                let layoutClass;
+                if (photosCount === 1) {
+                    layoutClass = '';  // 使用photo-0默认样式
+                } else if (photosCount === 2) {
+                    layoutClass = 'of-2';
+                } else if (photosCount === 3) {
+                    layoutClass = 'of-3';
+                } else if (photosCount === 4) {
+                    layoutClass = 'of-4';
+                } else {
+                    layoutClass = 'of-many';  // 5+张
+                }
+
+                // 动态生成拍立得照片（最多5张）
+                collageContainer.innerHTML = photosList.slice(0, 5).map((photoUrl, i) => {
+                    // 生成caption
+                    let caption = '';
+                    if (i === 0) caption = m.location.name;
+                    else if (i === 1 && m.figures[0]) caption = m.figures[0].name;
+                    else caption = `${m.year}`;
+
+                    return `
+                        <div class="polaroid photo-${i} ${layoutClass}" data-index="${i}">
+                            <img src="${photoUrl}" alt="照片${i + 1}">
+                            <div class="polaroid-caption">${caption}</div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // ==================== 更新视频（无视频时隐藏）====================
+            const videoContainer = document.querySelector('.video-container');
+            const mainVideo = document.getElementById('mainVideo');
+
+            // 优先使用 resources.videos，如果不存在则使用 videoUrl
+            let videoEmbedUrl = '';
+            if (m.resources && m.resources.videos && m.resources.videos.length > 0) {
+                videoEmbedUrl = m.resources.videos[0].embed_url;
+            } else if (m.videoUrl && m.videoUrl.trim() !== '') {
+                videoEmbedUrl = m.videoUrl;
+            }
+
+            if (videoEmbedUrl) {
+                videoContainer.classList.remove('hidden');
+                // 确保iframe存在
+                if (!videoContainer.querySelector('iframe')) {
+                    videoContainer.innerHTML = '<iframe id="mainVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                }
+                document.getElementById('mainVideo').src = videoEmbedUrl;
+            } else {
+                // 没有视频时隐藏容器
+                videoContainer.classList.add('hidden');
+            }
+
+            // ==================== 更新引用（处理空状态）====================
+            const quoteDisplay = document.getElementById('quoteDisplay');
+
+            if (m.quote && m.quote.trim() !== '' && m.quote !== '待补充') {
+                quoteDisplay.classList.remove('empty');
+                quoteDisplay.innerHTML = m.quote;
+            } else {
+                quoteDisplay.classList.add('empty');
+                quoteDisplay.innerHTML = '暂无引用内容';
+            }
+
+            // 重新绑定照片点击
+            bindPhotoClicks();
+        }
+
+        // ==================== 页面切换 ====================
+        function navigate(direction) {
+            if (isTransitioning) return;
+
+            const newIndex = direction === 'next'
+                ? Math.min(currentIndex + 1, milestones.length - 1)
+                : Math.max(currentIndex - 1, 0);
+
+            if (newIndex === currentIndex) return;
+
+            isTransitioning = true;
+
+            // 退出动画
+            mainScreen.classList.add(direction === 'next' ? 'slide-out-left' : 'slide-out-right');
+
+            setTimeout(() => {
+                currentIndex = newIndex;
+                renderPage(currentIndex);
+                updateIndicators();
+                mainScreen.classList.remove('slide-out-left', 'slide-out-right');
+                isTransitioning = false;
+            }, 600);
+        }
+
+        function jumpTo(index) {
+            if (index === currentIndex || isTransitioning) return;
+            navigate(index > currentIndex ? 'next' : 'prev');
+        }
+
+        // ==================== 更新指示器 ====================
+        function updateIndicators() {
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === milestones.length - 1;
+        }
+
+        // ==================== 照片查看器 ====================
+        function bindPhotoClicks() {
+            document.querySelectorAll('.polaroid').forEach((polaroid) => {
+                const index = parseInt(polaroid.dataset.index);
+                polaroid.onclick = () => openPhotoViewer(index);
+            });
+        }
+
+        function openPhotoViewer(startIndex) {
+            const m = milestones[currentIndex];
+            // 合并照片：优先 photos（PPT原图），不足5张则从 resources.images 补充
+            let photos = [];
+
+            // 1. 先添加所有 photos
+            if (m.photos && m.photos.length > 0) {
+                photos = [...m.photos];
+            }
+
+            // 2. 如果不足5张，从 resources.images 补充
+            if (photos.length < 5 && m.resources && m.resources.images && m.resources.images.length > 0) {
+                const needed = 5 - photos.length;
+                photos = [...photos, ...m.resources.images.slice(0, needed)];
+            }
+
+            // 3. 最多取5张
+            photos = photos.slice(0, 5);
+
+            let currentPhotoIndex = startIndex;
+
+            // 创建查看器
+            const viewer = document.createElement('div');
+            viewer.className = 'photo-viewer';
+            viewer.innerHTML = `
+                <button class="close-viewer">✕</button>
+                <button class="photo-prev">◀</button>
+                <img src="${photos[currentPhotoIndex]}" class="viewer-photo">
+                <button class="photo-next">▶</button>
+                <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
+            `;
+            document.body.appendChild(viewer);
+
+            // 关闭
+            viewer.querySelector('.close-viewer').onclick = () => viewer.remove();
+
+            // 上一张
+            viewer.querySelector('.photo-prev').onclick = () => {
+                currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
+                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+
+            // 下一张
+            viewer.querySelector('.photo-next').onclick = () => {
+                currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
+                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+
+            // 键盘控制
+            const handleKey = (e) => {
+                if (e.key === 'Escape') viewer.remove();
+                if (e.key === 'ArrowLeft') viewer.querySelector('.photo-prev').click();
+                if (e.key === 'ArrowRight') viewer.querySelector('.photo-next').click();
+            };
+            document.addEventListener('keydown', handleKey);
+
+            // 清理事件监听
+            const observer = new MutationObserver(() => {
+                if (!document.body.contains(viewer)) {
+                    document.removeEventListener('keydown', handleKey);
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true });
+        }
+
+        // ==================== 事件绑定 ====================
+        prevBtn.onclick = () => navigate('prev');
+        nextBtn.onclick = () => navigate('next');
+
+        // 键盘导航
+        document.addEventListener('keydown', (e) => {
+            if (isTransitioning) return;
+            if (e.key === 'ArrowRight') navigate('next');
+            else if (e.key === 'ArrowLeft') navigate('prev');
+        });
+
+        // ==================== 启动应用 ====================
+        init();
+    </script>
+</body>
+
+</html>
