@@ -829,11 +829,11 @@ const milestones = [
     "title": "大预言模型百花齐放",
     "subtitle": "大模型时代",
     "location": {
-      "name": "待确认",
-      "country": "全球研究",
+      "name": "全球各大AI实验室",
+      "country": "美国 / 全球",
       "coordinates": [
-        0,
-        0
+        37.7749,
+        -122.4194
       ]
     },
     "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",

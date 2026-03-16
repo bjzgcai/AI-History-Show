@@ -172,75 +172,27 @@
             margin-bottom: 12%;
         }
 
-        /* 🌍 纯 CSS 3D 动态地球 */
+        /* 🌍 Three.js 3D 地球容器 */
         .globe-container {
             position: relative;
-            width: 6vw;
-            height: 6vw;
-            perspective: 1000px;
+            width: 14vw;
+            height: 14vw;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(100, 160, 255, 0.4), 0 0 60px rgba(50, 100, 200, 0.2);
         }
 
         .globe {
             width: 100%;
             height: 100%;
-            border-radius: 50%;
             position: relative;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa3d1 100%);
-            box-shadow:
-                inset -15px -15px 40px rgba(0, 0, 0, 0.5),
-                inset 15px 15px 40px rgba(255, 255, 255, 0.1),
-                0 0 30px rgba(138, 180, 248, 0.5);
-            animation: rotateGlobe 20s linear infinite;
-            transform-style: preserve-3d;
         }
 
-        /* 地球上的大陆 */
-        .globe::before {
-            content: '';
-            position: absolute;
-            top: 20%;
-            left: 30%;
-            width: 40%;
-            height: 30%;
-            background: rgba(76, 175, 80, 0.4);
-            border-radius: 50%;
-            transform: translateZ(1px);
-        }
-
-        .globe::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 60%;
-            width: 30%;
-            height: 25%;
-            background: rgba(76, 175, 80, 0.3);
-            border-radius: 50%;
-            transform: translateZ(1px);
-        }
-
-        @keyframes rotateGlobe {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
-        }
-
-        /* 地球上的坐标标记 */
-        .location-marker {
-            position: absolute;
-            top: 35%;
-            left: 45%;
-            width: 12px;
-            height: 12px;
-            background: var(--accent);
-            border-radius: 50%;
-            border: 2px solid white;
-            animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 0 20px rgba(255, 209, 102, 0.8);
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.5); opacity: 0.7; }
+        /* Three.js Canvas */
+        #globeCanvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
         }
 
         .location-text {
@@ -766,9 +718,7 @@
             <div class="panel-title">Location & Event</div>
             <div class="location-box">
                 <div class="globe-container">
-                    <div class="globe">
-                        <div class="location-marker"></div>
-                    </div>
+                    <div class="globe" id="globeContainer"></div>
                 </div>
                 <div class="location-text" id="locationDisplay">
                     达特茅斯学院<br>
@@ -835,6 +785,9 @@
     <!-- 外部数据文件 -->
     <script src="milestones-data-full.js"></script>
 
+    <!-- Three.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
     <script>
         // ==================== 全局变量 ====================
         let currentIndex = 0;
@@ -846,8 +799,373 @@
         const nextBtn = document.getElementById('nextBtn');
         const indicators = document.getElementById('pageIndicators');
 
+        // ==================== Three.js 地球变量 ====================
+        let globeScene, globeCamera, globeRenderer, globeMesh, globeMarker;
+        const CAM_RADIUS = 2.2;  // 相机距地球中心距离
+        // 相机绕地球飞行角度：初始随机位置，第一张也会有旋转入场动画
+        const _rndPhi = Math.PI * (0.25 + Math.random() * 0.5);   // phi: 随机纬度区间[45°,135°]
+        const _rndTheta = Math.PI * (Math.random() * 2 - 1);       // theta: 随机经度[-π, π]
+        let camTarget = { phi: _rndPhi, theta: _rndTheta };
+        let camCurrent = { phi: _rndPhi, theta: _rndTheta };
+
+        // ==================== 初始化Three.js地球 ====================
+        function initGlobe() {
+            // 检查Three.js是否加载成功
+            if (typeof THREE === 'undefined') {
+                console.error('Three.js failed to load');
+                showGlobeFallback();
+                return false;
+            }
+
+            const container = document.getElementById('globeContainer');
+            if (!container) {
+                console.error('Globe container not found');
+                return false;
+            }
+
+            const width = container.clientWidth || 300;
+            const height = container.clientHeight || 300;
+
+            if (width === 0 || height === 0) {
+                console.warn('Invalid container dimensions, using defaults');
+            }
+
+            try {
+                // 创建场景
+                globeScene = new THREE.Scene();
+
+                // 创建相机：初始位于Z轴正方向，面向地球中心
+                globeCamera = new THREE.PerspectiveCamera(35, width / height, 0.1, 1000);
+                globeCamera.position.set(0, 0, CAM_RADIUS);
+                globeCamera.lookAt(0, 0, 0);
+
+                // 创建渲染器（添加性能优化配置）
+                globeRenderer = new THREE.WebGLRenderer({
+                    antialias: true,
+                    alpha: true,
+                    powerPreference: 'high-performance',
+                    precision: 'mediump',
+                    stencil: false,
+                    depth: true
+                });
+                globeRenderer.setSize(width, height);
+                globeRenderer.setClearColor(0x000000, 0);
+                globeRenderer.domElement.id = 'globeCanvas';
+                container.appendChild(globeRenderer.domElement);
+
+                // 创建地球球体
+                const geometry = new THREE.SphereGeometry(1, 64, 64);
+
+            // 添加环境光（调亮，让暗面也能看清大陆）
+            const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+            globeScene.add(ambientLight);
+
+            // 添加主方向光（模拟太阳光）
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+            directionalLight.position.set(5, 3, 5);
+            globeScene.add(directionalLight);
+
+            // 添加补光（照亮背面）
+            const fillLight = new THREE.DirectionalLight(0x8ab4f8, 0.5);
+            fillLight.position.set(-5, -2, -3);
+            globeScene.add(fillLight);
+
+            // 先用占位材质创建 mesh，纹理异步加载后自动更新
+            const material = new THREE.MeshPhongMaterial({
+                color: 0x2255aa,
+                specular: new THREE.Color(0x4488aa),
+                shininess: 12
+            });
+
+            globeMesh = new THREE.Mesh(geometry, material);
+            globeScene.add(globeMesh);
+
+            // 加载真实地球纹理
+            const textureLoader = new THREE.TextureLoader();
+            textureLoader.crossOrigin = 'anonymous';
+
+            // 主纹理加载成功后赋给材质
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg',
+                (tex) => { material.map = tex; material.needsUpdate = true; },
+                undefined,
+                () => { useFallbackEarthMaterial(); }
+            );
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-topology.png',
+                (tex) => { material.bumpMap = tex; material.bumpScale = 0.015; material.needsUpdate = true; }
+            );
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-water.png',
+                (tex) => { material.specularMap = tex; material.needsUpdate = true; }
+            );
+
+                // 创建红色标记点（初始隐藏，带发光效果）
+                const markerGeometry = new THREE.SphereGeometry(0.03, 16, 16);
+                const markerMaterial = new THREE.MeshBasicMaterial({
+                    color: 0xff0000,
+                    transparent: true,
+                    opacity: 0,
+                    emissive: 0xff0000,
+                    emissiveIntensity: 1
+                });
+                globeMarker = new THREE.Mesh(markerGeometry, markerMaterial);
+                globeMesh.add(globeMarker);  // 作为地球子对象，随地球一起转
+
+                // 启动渲染循环
+                animateGlobe();
+
+                return true;
+
+            } catch (error) {
+                console.error('Failed to initialize globe:', error);
+                showGlobeFallback();
+                return false;
+            }
+        }
+
+        // ==================== 降级方案：显示静态CSS地球 ====================
+        function showGlobeFallback() {
+            const container = document.getElementById('globeContainer');
+            if (!container) return;
+
+            container.innerHTML = `
+                <div style="
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa3d1 100%);
+                    box-shadow: inset -15px -15px 40px rgba(0, 0, 0, 0.5),
+                                inset 15px 15px 40px rgba(255, 255, 255, 0.1),
+                                0 0 30px rgba(138, 180, 248, 0.5);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--text-muted);
+                    font-size: 0.8vw;
+                    text-align: center;
+                    padding: 10%;
+                ">
+                    🌍
+                </div>
+            `;
+        }
+
+        // ==================== 地球纹理加载失败备用方案 ====================
+        function useFallbackEarthMaterial() {
+            if (!globeMesh) return;
+            const material = new THREE.ShaderMaterial({
+                uniforms: { time: { value: 0 } },
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    void main() {
+                        vUv = uv;
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    #define PI 3.14159265358979
+                    // 简化版真实大陆轮廓（基于经纬度多边形近似）
+                    float isLand(vec2 uv) {
+                        float lon = uv.x * 360.0 - 180.0;
+                        float lat = uv.y * 180.0 - 90.0;
+                        // 北美
+                        if (lon > -140.0 && lon < -55.0 && lat > 15.0 && lat < 70.0) return 0.9;
+                        // 南美
+                        if (lon > -82.0 && lon < -35.0 && lat > -55.0 && lat < 12.0) return 0.9;
+                        // 欧洲
+                        if (lon > -10.0 && lon < 40.0 && lat > 35.0 && lat < 70.0) return 0.9;
+                        // 非洲
+                        if (lon > -18.0 && lon < 52.0 && lat > -35.0 && lat < 37.0) return 0.9;
+                        // 亚洲
+                        if (lon > 26.0 && lon < 145.0 && lat > 5.0 && lat < 73.0) return 0.9;
+                        // 东南亚岛屿
+                        if (lon > 95.0 && lon < 141.0 && lat > -10.0 && lat < 20.0) return 0.7;
+                        // 澳大利亚
+                        if (lon > 114.0 && lon < 154.0 && lat > -39.0 && lat < -11.0) return 0.9;
+                        // 格陵兰
+                        if (lon > -55.0 && lon < -17.0 && lat > 59.0 && lat < 84.0) return 0.8;
+                        return 0.0;
+                    }
+                    void main() {
+                        float land = isLand(vUv);
+                        vec3 oceanDeep = vec3(0.08, 0.18, 0.40);
+                        vec3 oceanShallow = vec3(0.15, 0.40, 0.65);
+                        vec3 landGreen = vec3(0.25, 0.55, 0.20);
+                        vec3 landBrown = vec3(0.50, 0.40, 0.22);
+                        float lat = vUv.y * 180.0 - 90.0;
+                        vec3 ocean = mix(oceanDeep, oceanShallow, smoothstep(-90.0, 90.0, lat) * 0.5 + 0.25);
+                        vec3 landCol = mix(landGreen, landBrown, abs(lat) / 60.0);
+                        vec3 color = mix(ocean, landCol, land);
+                        // 极地白色
+                        float polar = smoothstep(70.0, 85.0, abs(lat));
+                        color = mix(color, vec3(0.95, 0.97, 1.0), polar);
+                        // 大气边缘光
+                        float rim = pow(1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0))), 3.0);
+                        color += vec3(0.3, 0.5, 0.9) * rim * 0.6;
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+            globeMesh.material = material;
+        }
+
+
+        /**
+         * 经纬度 → 相机球坐标角度
+         * 相机始终在球外，绕地球飞行，正面朝向目标地点
+         */
+        function latLngToCamAngles(lat, lng) {
+            // phi: 从Y轴正方向算的极角（纬度越高越靠近极点）
+            const phi = (90 - lat) * (Math.PI / 180);
+            // theta: 绕Y轴方位角（经度）
+            const theta = -lng * (Math.PI / 180);
+            return { phi, theta };
+        }
+
+        /**
+         * 页面切换时，旋转相机从旧位置飞到新位置，并更新标记点
+         */
+        function rotateGlobeToCoordinates(coordinates) {
+            if (!coordinates || coordinates.length !== 2) return;
+            const [lat, lng] = coordinates;
+            if (isNaN(lat) || isNaN(lng)) return;
+
+            const angles = latLngToCamAngles(lat, lng);
+            camTarget.phi = angles.phi;
+            camTarget.theta = angles.theta;
+
+            // 重置状态，开始新一轮旋转+闪烁
+            globeArrived = false;
+            markerFlashDone = false;
+
+            updateMarkerPosition(lat, lng);
+        }
+
+        /**
+         * 更新标记点到经纬度对应的球面局部坐标（globeMesh子节点）
+         */
+        function updateMarkerPosition(lat, lng) {
+            if (!globeMarker) return;
+
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = -lng * (Math.PI / 180);  // 与相机角度保持一致
+            const r = 1.05;
+
+            // Three.js球坐标→笛卡尔（Y轴向上）
+            const x = r * Math.sin(phi) * Math.sin(theta);
+            const y = r * Math.cos(phi);
+            const z = r * Math.sin(phi) * Math.cos(theta);
+
+            globeMarker.position.set(x, y, z);
+            globeMarker.material.opacity = 0;  // 旋转过程中隐藏，到达后由渲染循环控制
+        }
+
+        // ==================== 地球渲染循环 ====================
+        let animationTime = 0;
+        let markerFlashCount = 0;     // 已完成的闪烁次数
+        let markerFlashDone = false;  // 是否闪烁完毕
+        let globeArrived = false;     // 相机是否已到达目标
+
+        function animateGlobe() {
+            requestAnimationFrame(animateGlobe);
+            if (document.hidden || !globeRenderer) return;
+
+            animationTime += 0.016;
+
+            // 球面插值
+            const lerpFactor = 0.05;
+
+            let dTheta = camTarget.theta - camCurrent.theta;
+            while (dTheta > Math.PI) dTheta -= 2 * Math.PI;
+            while (dTheta < -Math.PI) dTheta += 2 * Math.PI;
+            const dPhi = camTarget.phi - camCurrent.phi;
+
+            // 判断是否到达目标（角度差小于阈值）
+            const arrived = Math.abs(dTheta) < 0.01 && Math.abs(dPhi) < 0.01;
+            if (!globeArrived && arrived) {
+                globeArrived = true;
+                animationTime = 0;  // 到达时重置，让闪烁从头开始
+                camCurrent.phi = camTarget.phi;
+                camCurrent.theta = camTarget.theta;
+                // 显示标记点，开始闪烁
+                if (globeMarker) globeMarker.material.opacity = 1;
+            }
+
+            if (!globeArrived) {
+                camCurrent.phi += dPhi * lerpFactor;
+                camCurrent.theta += dTheta * lerpFactor;
+            }
+
+            // 相机位置
+            const cx = CAM_RADIUS * Math.sin(camCurrent.phi) * Math.sin(camCurrent.theta);
+            const cy = CAM_RADIUS * Math.cos(camCurrent.phi);
+            const cz = CAM_RADIUS * Math.sin(camCurrent.phi) * Math.cos(camCurrent.theta);
+
+            globeCamera.position.set(cx, cy, cz);
+            globeCamera.lookAt(0, 0, 0);
+
+            // 标记点：到达后闪烁2次，之后常亮
+            if (globeMarker && globeArrived) {
+                if (!markerFlashDone) {
+                    const t = animationTime * 2.5;         // 闪烁速率
+                    const cycle = Math.floor(t);
+                    if (cycle >= 2) {
+                        markerFlashDone = true;
+                        globeMarker.scale.set(1, 1, 1);
+                        globeMarker.material.opacity = 1;
+                    } else {
+                        // 闪烁：scale 1→1.8→1，opacity 1→0.3→1，各2次
+                        const phase = (t - cycle) * Math.PI;
+                        const s = 1.0 + 0.8 * Math.sin(phase);
+                        globeMarker.scale.set(s, s, s);
+                        globeMarker.material.opacity = 1.0 - 0.7 * Math.sin(phase);
+                    }
+                }
+            }
+
+            globeRenderer.render(globeScene, globeCamera);
+        }
+
+        // ==================== 窗口resize响应式处理 ====================
+        function handleGlobeResize() {
+            if (!globeCamera || !globeRenderer) return;
+
+            const container = document.getElementById('globeContainer');
+            if (!container) return;
+
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            if (width === 0 || height === 0) return;
+
+            globeCamera.aspect = width / height;
+            globeCamera.updateProjectionMatrix();
+            globeRenderer.setSize(width, height);
+        }
+
+        // 防抖函数
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
         // ==================== 初始化 ====================
         function init() {
+            // 初始化Three.js地球
+            initGlobe();
+
             // 生成页面指示器
             indicators.innerHTML = milestones.map((_, i) =>
                 `<div class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
@@ -857,6 +1175,9 @@
             document.querySelectorAll('.dot').forEach((dot, i) => {
                 dot.onclick = () => jumpTo(i);
             });
+
+            // 绑定窗口resize事件（使用防抖优化性能）
+            window.addEventListener('resize', debounce(handleGlobeResize, 250));
 
             // 渲染第一个页面
             renderPage(0);
@@ -882,6 +1203,22 @@
 
             // 更新事件描述
             document.getElementById('eventDesc').innerHTML = m.description;
+
+            // ==================== 更新3D地球旋转 ====================
+            // 如果有GPS坐标，旋转地球到该位置
+            if (m.location && m.location.coordinates && m.location.coordinates.length === 2) {
+                const [lat, lng] = m.location.coordinates;
+
+                // 验证坐标有效性（排除(0,0)和NaN）
+                if (typeof lat === 'number' && typeof lng === 'number' &&
+                    !isNaN(lat) && !isNaN(lng) && !(lat === 0 && lng === 0)) {
+
+                    rotateGlobeToCoordinates(m.location.coordinates, true);
+                    previousCoordinates = m.location.coordinates;
+                } else {
+                    console.warn(`Skipping invalid coordinates for milestone ${index}:`, { lat, lng });
+                }
+            }
 
             // ==================== 动态渲染人物（支持0-N个）====================
             const figuresGrid = document.getElementById('figuresGrid');
