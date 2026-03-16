@@ -102,20 +102,7 @@ python3 -m http.server 8000
 
 ### 2. 部署到服务器
 
-将整个项目文件夹上传到任何静态网站托管服务：
-
-```bash
-# 示例：使用 Nginx
-cp -r . /var/www/html/ai-history/
-
-# 示例：使用 GitHub Pages
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin <你的仓库地址>
-git push -u origin main
-```
+详见 [DEPLOYMENT.md](DEPLOYMENT.md)，包含 Nginx 云服务器和 Gitee Pages 两种方案的完整步骤与对比。
 
 ## 文件结构
 

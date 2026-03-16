@@ -43,7 +43,7 @@
             background: radial-gradient(circle at center, #1A2130 0%, var(--bg-color) 100%);
             display: grid;
             grid-template-columns: 1fr 1.2fr 1fr;
-            grid-template-rows: 15% 85%;
+            grid-template-rows: 15% 78% 7%;
             gap: 2.5%;
             padding: 3%;
             transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
@@ -162,6 +162,20 @@
         /* ==================== 6. 左栏：动态地球与事件 ==================== */
         .col-left {
             animation-delay: 0.6s;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+        }
+
+        .col-left::-webkit-scrollbar {
+            width: 4px;
+        }
+        .col-left::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+        .col-left::-webkit-scrollbar-track {
+            background: transparent;
         }
 
         .location-box {
@@ -201,6 +215,16 @@
             text-align: center;
             line-height: 1.4;
             font-weight: 600;
+        }
+
+        .location-country {
+            font-size: 1.1vw;
+            color: var(--text-muted);
+        }
+
+        .quote-source {
+            font-size: 1vw;
+            color: var(--accent);
         }
 
         .event-desc {
@@ -305,8 +329,9 @@
         .collage-container {
             position: relative;
             flex-grow: 1;
-            min-height: 22vh;
+            min-height: 0;
             margin-top: 5%;
+            overflow: hidden;
         }
 
         /* 空状态 */
@@ -361,7 +386,7 @@
         .polaroid.photo-0 {
             top: 50%;
             left: 50%;
-            width: 70%;
+            width: 58%;
             transform: translate(-50%, -50%) rotate(-3deg);
             z-index: 1;
         }
@@ -370,7 +395,7 @@
         .polaroid.photo-0.of-2 {
             top: 15%;
             left: 5%;
-            width: 50%;
+            width: 42%;
             transform: rotate(-6deg);
             z-index: 1;
         }
@@ -378,7 +403,7 @@
         .polaroid.photo-1.of-2 {
             top: 25%;
             right: 8%;
-            width: 48%;
+            width: 40%;
             transform: rotate(8deg);
             z-index: 2;
         }
@@ -387,7 +412,7 @@
         .polaroid.photo-0.of-3 {
             top: 0;
             left: 0;
-            width: 55%;
+            width: 46%;
             transform: rotate(-6deg);
             z-index: 1;
         }
@@ -395,7 +420,7 @@
         .polaroid.photo-1.of-3 {
             top: 12%;
             right: 5%;
-            width: 48%;
+            width: 40%;
             transform: rotate(8deg);
             z-index: 2;
         }
@@ -403,7 +428,7 @@
         .polaroid.photo-2.of-3 {
             bottom: 5%;
             left: 18%;
-            width: 52%;
+            width: 44%;
             transform: rotate(-3deg);
             z-index: 3;
         }
@@ -412,7 +437,7 @@
         .polaroid.photo-0.of-4 {
             top: 2%;
             left: 2%;
-            width: 45%;
+            width: 38%;
             transform: rotate(-5deg);
             z-index: 1;
         }
@@ -420,7 +445,7 @@
         .polaroid.photo-1.of-4 {
             top: 5%;
             right: 5%;
-            width: 43%;
+            width: 36%;
             transform: rotate(6deg);
             z-index: 2;
         }
@@ -428,7 +453,7 @@
         .polaroid.photo-2.of-4 {
             bottom: 8%;
             left: 8%;
-            width: 44%;
+            width: 37%;
             transform: rotate(4deg);
             z-index: 3;
         }
@@ -436,14 +461,14 @@
         .polaroid.photo-3.of-4 {
             bottom: 5%;
             right: 2%;
-            width: 42%;
+            width: 35%;
             transform: rotate(-7deg);
             z-index: 4;
         }
 
         /* 5+张照片：紧凑布局 */
         .polaroid.of-many {
-            width: 38% !important;
+            width: 32% !important;
         }
 
         .polaroid.photo-0.of-many {
@@ -484,6 +509,20 @@
         /* ==================== 8. 右栏：视频与引用 ==================== */
         .col-right {
             animation-delay: 1.4s;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+        }
+
+        .col-right::-webkit-scrollbar {
+            width: 4px;
+        }
+        .col-right::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+        .col-right::-webkit-scrollbar-track {
+            background: transparent;
         }
 
         .video-container {
@@ -536,30 +575,31 @@
 
         /* ==================== 9. 底部导航栏 ==================== */
         .bottom-nav {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+            grid-column: 1 / -1;
+            position: relative;
             display: flex;
             align-items: center;
-            gap: 40px;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 18px 45px;
-            border-radius: 50px;
+            justify-content: center;
+            gap: 24px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 30px;
+            border-radius: 40px;
             backdrop-filter: blur(15px);
-            z-index: 1000;
-            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
-            border: 2px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            align-self: center;
+            width: fit-content;
+            margin: 0 auto;
         }
 
         .nav-btn {
-            width: 55px;
-            height: 55px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             background: var(--accent);
             border: none;
             color: #000;
-            font-size: 22px;
+            font-size: 13px;
             cursor: pointer;
             transition: all 0.3s;
             font-weight: bold;
@@ -578,12 +618,12 @@
 
         .page-indicators {
             display: flex;
-            gap: 14px;
+            gap: 10px;
         }
 
         .dot {
-            width: 11px;
-            height: 11px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.5);
             cursor: pointer;
@@ -601,7 +641,222 @@
             transform: scale(1.4);
         }
 
-        /* ==================== 10. 照片查看器 ==================== */
+        /* ==================== 10. 移动端适配 ==================== */
+
+        /* 竖屏手机 / 窄屏（≤768px） */
+        @media screen and (max-width: 768px) {
+
+            body, html {
+                height: auto;
+                min-height: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .screen-container {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                height: auto;
+                max-height: none;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                padding: 14px 12px 16px;
+            }
+
+            /* 标题区 */
+            .header {
+                flex-direction: column;
+                padding-bottom: 10px;
+                gap: 4px;
+            }
+
+            .milestone-category {
+                font-size: 11px;
+                letter-spacing: 1px;
+            }
+
+            .milestone-year-event {
+                flex-wrap: wrap;
+                gap: 8px;
+                align-items: baseline;
+            }
+
+            .event-year {
+                font-size: 32px;
+                letter-spacing: -1px;
+            }
+
+            .event-separator {
+                font-size: 20px;
+            }
+
+            .event-title {
+                font-size: 16px;
+                line-height: 1.3;
+            }
+
+            /* 面板通用 */
+            .panel {
+                padding: 14px;
+                border-radius: 12px;
+            }
+
+            .panel-title {
+                font-size: 10px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+            }
+
+            /* 左栏 */
+            .globe-container {
+                width: 110px;
+                height: 110px;
+            }
+
+            .location-text {
+                font-size: 14px;
+            }
+
+            .location-box {
+                margin-bottom: 12px;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 16px;
+            }
+
+            .event-desc {
+                font-size: 13px;
+                line-height: 1.6;
+            }
+
+            /* 中栏 */
+            .figures-grid {
+                margin-bottom: 12px;
+            }
+
+            .figure-name {
+                font-size: 13px;
+            }
+
+            .figure-role {
+                font-size: 11px;
+            }
+
+            .collage-container {
+                min-height: 200px;
+            }
+
+            .polaroid-caption {
+                font-size: 10px;
+            }
+
+            .location-country {
+                font-size: 12px;
+            }
+
+            /* 右栏 */
+            .quote-box {
+                font-size: 13px;
+                margin-top: 12px;
+                line-height: 1.6;
+            }
+
+            .quote-source {
+                font-size: 12px;
+            }
+
+            /* 底部导航 */
+            .bottom-nav {
+                padding: 8px 16px;
+                gap: 12px;
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            .nav-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+
+            /* 页面指示器：横向滚动，隐藏滚动条 */
+            .page-indicators {
+                overflow-x: auto;
+                max-width: 55vw;
+                gap: 8px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .page-indicators::-webkit-scrollbar {
+                display: none;
+            }
+
+            .dot {
+                width: 7px;
+                height: 7px;
+                flex-shrink: 0;
+                gap: 8px;
+            }
+        }
+
+        /* 手机横屏：三列完整展示，缩小字体 */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+
+            .screen-container {
+                height: 100vh;
+                overflow: hidden;
+                padding: 1% 2% 1%;
+                grid-template-columns: 1fr 1.2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+
+            .header {
+                grid-column: 1 / -1;
+            }
+
+            .event-year {
+                font-size: 4vh;
+            }
+
+            .event-title {
+                font-size: 2.2vh;
+            }
+
+            .milestone-category {
+                font-size: 1.5vh;
+            }
+
+            .panel-title {
+                font-size: 1.2vh;
+                margin-bottom: 4%;
+            }
+
+            .event-desc,
+            .quote-box {
+                font-size: 1.4vh;
+            }
+
+            .figure-name {
+                font-size: 1.3vh;
+            }
+
+            .figure-role {
+                font-size: 1.1vh;
+            }
+
+            .globe-container {
+                width: 10vh;
+                height: 10vh;
+            }
+        }
+
+        /* ==================== 11. 照片查看器 ==================== */
         .photo-viewer {
             position: fixed;
             top: 0;
@@ -722,7 +977,7 @@
                 </div>
                 <div class="location-text" id="locationDisplay">
                     达特茅斯学院<br>
-                    <span style="font-size: 1.1vw; color: var(--text-muted);">美国, 新罕布什尔州</span>
+                    <span class="location-country">美国, 新罕布什尔州</span>
                 </div>
             </div>
             <div class="event-desc" id="eventDesc">
@@ -766,20 +1021,20 @@
             <div class="quote-box" id="quoteDisplay">
                 "We propose that a 2 month, 10 man study of artificial intelligence be carried out during the summer of
                 1956..."<br><br>
-                <span style="font-size: 1vw; color: var(--accent);">— 达特茅斯会议提案书</span>
+                <span class="quote-source">— 达特茅斯会议提案书</span>
             </div>
         </div>
-    </div>
 
-    <!-- 底部导航栏 -->
-    <div class="bottom-nav">
-        <button class="nav-btn" id="prevBtn">◀</button>
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <button class="nav-btn" id="prevBtn">◀</button>
 
-        <div class="page-indicators" id="pageIndicators">
-            <!-- 动态生成圆点 -->
+            <div class="page-indicators" id="pageIndicators">
+                <!-- 动态生成圆点 -->
+            </div>
+
+            <button class="nav-btn" id="nextBtn">▶</button>
         </div>
-
-        <button class="nav-btn" id="nextBtn">▶</button>
     </div>
 
     <!-- 外部数据文件 -->
@@ -1199,7 +1454,7 @@
 
             // 更新地点
             document.getElementById('locationDisplay').innerHTML =
-                `${m.location.name}<br><span style="font-size: 1.1vw; color: var(--text-muted);">${m.location.country}</span>`;
+                `${m.location.name}<br><span class="location-country">${m.location.country}</span>`;
 
             // 更新事件描述
             document.getElementById('eventDesc').innerHTML = m.description;
@@ -1379,6 +1634,12 @@
 
             prevBtn.disabled = currentIndex === 0;
             nextBtn.disabled = currentIndex === milestones.length - 1;
+
+            // 移动端：让活跃圆点滚动到可见区域中央
+            const activeDot = indicators.querySelector('.dot.active');
+            if (activeDot) {
+                activeDot.scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
+            }
         }
 
         // ==================== 照片查看器 ====================
@@ -1456,6 +1717,26 @@
             });
             observer.observe(document.body, { childList: true });
         }
+
+        // ==================== 触摸滑动支持（移动端） ====================
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
+        }, { passive: true });
+
+        document.addEventListener('touchend', (e) => {
+            if (isTransitioning) return;
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            const dy = e.changedTouches[0].clientY - touchStartY;
+            // 水平位移 > 垂直位移 且超过 50px 时才触发翻页
+            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+                if (dx < 0) navigate('next');
+                else navigate('prev');
+            }
+        }, { passive: true });
 
         // ==================== 事件绑定 ====================
         prevBtn.onclick = () => navigate('prev');
