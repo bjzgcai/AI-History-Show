@@ -90,6 +90,26 @@
             animation: slideInFromLeft  0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
         }
 
+        /* 竖屏翻页：垂直方向动画 */
+        .slide-out-portrait-up   { transform: translateY(-40px); opacity: 0; }
+        .slide-out-portrait-down { transform: translateY(40px);  opacity: 0; }
+        @keyframes slideInPortraitFromBottom {
+            from { transform: translateY(40px);  opacity: 0; }
+            to   { transform: translateY(0);     opacity: 1; }
+        }
+        @keyframes slideInPortraitFromTop {
+            from { transform: translateY(-40px); opacity: 0; }
+            to   { transform: translateY(0);     opacity: 1; }
+        }
+        .slide-in-portrait-from-bottom {
+            transition: none;
+            animation: slideInPortraitFromBottom 0.5s ease forwards;
+        }
+        .slide-in-portrait-from-top {
+            transition: none;
+            animation: slideInPortraitFromTop    0.5s ease forwards;
+        }
+
         /* ==================== 4. 顶部标题区与视频 ==================== */
         .header {
             grid-column: 1 / -1;
@@ -796,9 +816,7 @@
             }
 
             .nav-btn {
-                width: 32px;
-                height: 32px;
-                font-size: 13px;
+                display: none;
             }
 
             /* 页面指示器：横向滚动，隐藏滚动条 */
@@ -823,10 +841,23 @@
         }
 
         /* 手机横屏：三列完整展示，缩小字体 */
-        @media screen and (max-height: 500px) and (orientation: landscape) {
+        @media screen and (orientation: landscape) and (max-height: 600px) {
+
+            body, html {
+                height: 100dvh;
+                overflow: hidden;
+            }
 
             .screen-container {
-                height: 100vh;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: grid;
+                width: 100%;
+                max-width: 177.78dvh;
+                height: 100dvh;
+                max-height: 100dvh;
                 overflow: hidden;
                 padding: 1% 2% 1%;
                 grid-template-columns: 1fr 1.2fr 1fr;
@@ -838,38 +869,42 @@
             }
 
             .event-year {
-                font-size: 4vh;
+                font-size: 4dvh;
             }
 
             .event-title {
-                font-size: 2.2vh;
+                font-size: 2.2dvh;
             }
 
             .milestone-category {
-                font-size: 1.5vh;
+                font-size: 1.5dvh;
             }
 
             .panel-title {
-                font-size: 1.2vh;
+                font-size: 1.2dvh;
                 margin-bottom: 4%;
             }
 
             .event-desc,
             .quote-box {
-                font-size: 1.4vh;
+                font-size: 1.4dvh;
             }
 
             .figure-name {
-                font-size: 1.3vh;
+                font-size: 1.3dvh;
             }
 
             .figure-role {
-                font-size: 1.1vh;
+                font-size: 1.1dvh;
             }
 
             .globe-container {
-                width: 10vh;
-                height: 10vh;
+                width: 10dvh;
+                height: 10dvh;
+            }
+
+            .nav-btn {
+                display: none;
             }
         }
 
@@ -1651,23 +1686,32 @@
 
             isTransitioning = true;
 
+            const portrait = isMobilePortrait();
+            const outClass = portrait
+                ? (direction === 'next' ? 'slide-out-portrait-up'   : 'slide-out-portrait-down')
+                : (direction === 'next' ? 'slide-out-left'           : 'slide-out-right');
+            const inClass = portrait
+                ? (direction === 'next' ? 'slide-in-portrait-from-bottom' : 'slide-in-portrait-from-top')
+                : (direction === 'next' ? 'slide-in-from-right'           : 'slide-in-from-left');
+            const duration = portrait ? 500 : 600;
+
             // 退出动画
-            mainScreen.classList.add(direction === 'next' ? 'slide-out-left' : 'slide-out-right');
+            mainScreen.classList.add(outClass);
 
             setTimeout(() => {
                 currentIndex = newIndex;
                 renderPage(currentIndex);
                 updateIndicators();
-                mainScreen.classList.remove('slide-out-left', 'slide-out-right');
+                if (portrait) window.scrollTo(0, 0);
+                mainScreen.classList.remove(outClass);
 
                 // 入场动画
-                const inClass = direction === 'next' ? 'slide-in-from-right' : 'slide-in-from-left';
                 mainScreen.classList.add(inClass);
                 setTimeout(() => {
                     mainScreen.classList.remove(inClass);
                     isTransitioning = false;
-                }, 600);
-            }, 600);
+                }, duration);
+            }, duration);
         }
 
         function jumpTo(index) {
@@ -1776,14 +1820,29 @@
             touchStartY = e.changedTouches[0].clientY;
         }, { passive: true });
 
+        function isMobilePortrait() {
+            return window.matchMedia('(max-width: 768px) and (orientation: portrait)').matches;
+        }
+
         document.addEventListener('touchend', (e) => {
             if (isTransitioning) return;
             const dx = e.changedTouches[0].clientX - touchStartX;
             const dy = e.changedTouches[0].clientY - touchStartY;
-            // 水平位移 > 垂直位移 且超过 50px 时才触发翻页
-            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
-                if (dx < 0) navigate('next');
-                else navigate('prev');
+
+            if (isMobilePortrait()) {
+                // 竖屏：检测垂直滑动 + 滚动边界触发翻页
+                if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 50) {
+                    const atBottom = window.scrollY + window.innerHeight >= document.body.scrollHeight - 10;
+                    const atTop    = window.scrollY <= 10;
+                    if (dy < 0 && atBottom) navigate('next'); // 手指上滑 + 在底部 → 下一页
+                    if (dy > 0 && atTop)    navigate('prev'); // 手指下滑 + 在顶部 → 上一页
+                }
+            } else {
+                // 横屏/桌面：水平滑动翻页
+                if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+                    if (dx < 0) navigate('next');
+                    else        navigate('prev');
+                }
             }
         }, { passive: true });
 
