@@ -73,6 +73,23 @@
             opacity: 0;
         }
 
+        @keyframes slideInFromRight {
+            from { transform: translate(50%, -50%);   opacity: 0; }
+            to   { transform: translate(-50%, -50%);  opacity: 1; }
+        }
+        @keyframes slideInFromLeft {
+            from { transform: translate(-150%, -50%); opacity: 0; }
+            to   { transform: translate(-50%, -50%);  opacity: 1; }
+        }
+        .slide-in-from-right {
+            transition: none;
+            animation: slideInFromRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        .slide-in-from-left {
+            transition: none;
+            animation: slideInFromLeft  0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
         /* ==================== 4. 顶部标题区与视频 ==================== */
         .header {
             grid-column: 1 / -1;
@@ -1642,7 +1659,14 @@
                 renderPage(currentIndex);
                 updateIndicators();
                 mainScreen.classList.remove('slide-out-left', 'slide-out-right');
-                isTransitioning = false;
+
+                // 入场动画
+                const inClass = direction === 'next' ? 'slide-in-from-right' : 'slide-in-from-left';
+                mainScreen.classList.add(inClass);
+                setTimeout(() => {
+                    mainScreen.classList.remove(inClass);
+                    isTransitioning = false;
+                }, 600);
             }, 600);
         }
 
