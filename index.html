@@ -1056,6 +1056,7 @@
 
         // ==================== Three.js 地球变量 ====================
         let globeScene, globeCamera, globeRenderer, globeMesh, globeMarker;
+        let globeMarkers = [];  // 支持多点标记
         const CAM_RADIUS = 2.2;  // 相机距地球中心距离
         // 相机绕地球飞行角度：初始随机位置，第一张也会有旋转入场动画
         const _rndPhi = Math.PI * (0.25 + Math.random() * 0.5);   // phi: 随机纬度区间[45°,135°]
@@ -1155,17 +1156,8 @@
                 (tex) => { material.specularMap = tex; material.needsUpdate = true; }
             );
 
-                // 创建红色标记点（初始隐藏，带发光效果）
-                const markerGeometry = new THREE.SphereGeometry(0.03, 16, 16);
-                const markerMaterial = new THREE.MeshBasicMaterial({
-                    color: 0xff0000,
-                    transparent: true,
-                    opacity: 0,
-                    emissive: 0xff0000,
-                    emissiveIntensity: 1
-                });
-                globeMarker = new THREE.Mesh(markerGeometry, markerMaterial);
-                globeMesh.add(globeMarker);  // 作为地球子对象，随地球一起转
+                // 创建初始单个标记点占位（实际由 setMarkers 管理）
+                globeMarker = null;  // 不再使用单点，改用 globeMarkers 数组
 
                 // 启动渲染循环
                 animateGlobe();
@@ -1277,17 +1269,24 @@
         function latLngToCamAngles(lat, lng) {
             // phi: 从Y轴正方向算的极角（纬度越高越靠近极点）
             const phi = (90 - lat) * (Math.PI / 180);
-            // theta: 绕Y轴方位角（经度）
-            const theta = -lng * (Math.PI / 180);
+            // theta: (lng-90) 修正 Three.js SphereGeometry 纹理坐标偏移
+            // Three.js SphereGeometry: x=-cos(φh)*sin, z=sin(φh)*sin，展开后需 θ=lng-90
+            const theta = (lng - 90) * (Math.PI / 180);
             return { phi, theta };
         }
 
         /**
-         * 页面切换时，旋转相机从旧位置飞到新位置，并更新标记点
+         * 页面切换时，旋转相机飞向第一个坐标，并在所有坐标处放置标记点。
+         * coordinates: [lat,lng]（单点）或 [[lat,lng],[lat,lng],...]（多点）
          */
         function rotateGlobeToCoordinates(coordinates) {
-            if (!coordinates || coordinates.length !== 2) return;
-            const [lat, lng] = coordinates;
+            // 统一转为多点数组
+            const coordsList = Array.isArray(coordinates[0])
+                ? coordinates              // 已经是多点格式
+                : [coordinates];           // 单点包装成数组
+
+            // 相机飞向第一个点
+            const [lat, lng] = coordsList[0];
             if (isNaN(lat) || isNaN(lng)) return;
 
             const angles = latLngToCamAngles(lat, lng);
@@ -1298,26 +1297,47 @@
             globeArrived = false;
             markerFlashDone = false;
 
-            updateMarkerPosition(lat, lng);
+            setMarkers(coordsList);
         }
 
         /**
-         * 更新标记点到经纬度对应的球面局部坐标（globeMesh子节点）
+         * 创建/重建标记点列表（支持多点）
+         * coordsList: [[lat,lng], [lat,lng], ...]
          */
-        function updateMarkerPosition(lat, lng) {
-            if (!globeMarker) return;
+        function setMarkers(coordsList) {
+            if (!globeMesh) return;
 
-            const phi = (90 - lat) * (Math.PI / 180);
-            const theta = -lng * (Math.PI / 180);  // 与相机角度保持一致
-            const r = 1.05;
+            // 清除旧标记
+            globeMarkers.forEach(m => globeMesh.remove(m));
+            globeMarkers = [];
 
-            // Three.js球坐标→笛卡尔（Y轴向上）
-            const x = r * Math.sin(phi) * Math.sin(theta);
-            const y = r * Math.cos(phi);
-            const z = r * Math.sin(phi) * Math.cos(theta);
+            const markerGeometry = new THREE.SphereGeometry(0.03, 16, 16);
 
-            globeMarker.position.set(x, y, z);
-            globeMarker.material.opacity = 0;  // 旋转过程中隐藏，到达后由渲染循环控制
+            coordsList.forEach(([lat, lng]) => {
+                const mat = new THREE.MeshBasicMaterial({
+                    color: 0xff0000,
+                    transparent: true,
+                    opacity: 0
+                });
+                const mesh = new THREE.Mesh(markerGeometry, mat);
+
+                const phi = (90 - lat) * (Math.PI / 180);
+                const theta = (lng - 90) * (Math.PI / 180);  // 与 latLngToCamAngles 保持一致
+                const r = 1.05;
+                // Three.js SphereGeometry 顶点: x=-sin(phi)*sin(theta), z=-sin(phi)*cos(theta)
+                // 标记点需与球体表面对应，故 x/z 取反
+                mesh.position.set(
+                    -r * Math.sin(phi) * Math.sin(theta),
+                    r * Math.cos(phi),
+                    -r * Math.sin(phi) * Math.cos(theta)
+                );
+
+                globeMesh.add(mesh);
+                globeMarkers.push(mesh);
+            });
+
+            // 兼容旧代码：globeMarker 指向第一个点
+            globeMarker = globeMarkers[0] || null;
         }
 
         // ==================== 地球渲染循环 ====================
@@ -1356,30 +1376,31 @@
                 camCurrent.theta += dTheta * lerpFactor;
             }
 
-            // 相机位置
-            const cx = CAM_RADIUS * Math.sin(camCurrent.phi) * Math.sin(camCurrent.theta);
+            // 相机位置（与标记点公式一致，朝向地球表面目标点）
+            const cx = -CAM_RADIUS * Math.sin(camCurrent.phi) * Math.sin(camCurrent.theta);
             const cy = CAM_RADIUS * Math.cos(camCurrent.phi);
-            const cz = CAM_RADIUS * Math.sin(camCurrent.phi) * Math.cos(camCurrent.theta);
+            const cz = -CAM_RADIUS * Math.sin(camCurrent.phi) * Math.cos(camCurrent.theta);
 
             globeCamera.position.set(cx, cy, cz);
             globeCamera.lookAt(0, 0, 0);
 
-            // 标记点：到达后闪烁2次，之后常亮
-            if (globeMarker && globeArrived) {
+            // 标记点：到达后所有点同步闪烁2次，之后常亮
+            if (globeMarkers.length > 0 && globeArrived) {
                 if (!markerFlashDone) {
-                    const t = animationTime * 2.5;         // 闪烁速率
+                    const t = animationTime * 2.5;
                     const cycle = Math.floor(t);
-                    if (cycle >= 2) {
-                        markerFlashDone = true;
-                        globeMarker.scale.set(1, 1, 1);
-                        globeMarker.material.opacity = 1;
-                    } else {
-                        // 闪烁：scale 1→1.8→1，opacity 1→0.3→1，各2次
-                        const phase = (t - cycle) * Math.PI;
-                        const s = 1.0 + 0.8 * Math.sin(phase);
-                        globeMarker.scale.set(s, s, s);
-                        globeMarker.material.opacity = 1.0 - 0.7 * Math.sin(phase);
-                    }
+                    globeMarkers.forEach(mk => {
+                        if (cycle >= 2) {
+                            mk.scale.set(1, 1, 1);
+                            mk.material.opacity = 1;
+                        } else {
+                            const phase = (t - cycle) * Math.PI;
+                            const s = 1.0 + 0.8 * Math.sin(phase);
+                            mk.scale.set(s, s, s);
+                            mk.material.opacity = 1.0 - 0.7 * Math.sin(phase);
+                        }
+                    });
+                    if (cycle >= 2) markerFlashDone = true;
                 }
             }
 
@@ -1460,18 +1481,22 @@
             document.getElementById('eventDesc').innerHTML = m.description;
 
             // ==================== 更新3D地球旋转 ====================
-            // 如果有GPS坐标，旋转地球到该位置
-            if (m.location && m.location.coordinates && m.location.coordinates.length === 2) {
-                const [lat, lng] = m.location.coordinates;
+            if (m.location && m.location.coordinates) {
+                const raw = m.location.coordinates;
+                // 统一为多点数组：[[lat,lng],...] 或 [lat,lng]→[[lat,lng]]
+                const coordsList = Array.isArray(raw[0]) ? raw : [raw];
 
-                // 验证坐标有效性（排除(0,0)和NaN）
-                if (typeof lat === 'number' && typeof lng === 'number' &&
-                    !isNaN(lat) && !isNaN(lng) && !(lat === 0 && lng === 0)) {
+                // 过滤无效点（NaN 或 [0,0]）
+                const validList = coordsList.filter(([lat, lng]) =>
+                    typeof lat === 'number' && typeof lng === 'number' &&
+                    !isNaN(lat) && !isNaN(lng) && !(lat === 0 && lng === 0)
+                );
 
-                    rotateGlobeToCoordinates(m.location.coordinates, true);
-                    previousCoordinates = m.location.coordinates;
+                if (validList.length > 0) {
+                    rotateGlobeToCoordinates(validList);
+                    previousCoordinates = validList[0];
                 } else {
-                    console.warn(`Skipping invalid coordinates for milestone ${index}:`, { lat, lng });
+                    console.warn(`Skipping invalid coordinates for milestone ${index}:`, raw);
                 }
             }
 

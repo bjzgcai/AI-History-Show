@@ -573,11 +573,11 @@ AI-History-Show/
 #### 坐标系约定
 
 ```javascript
-// 经纬度 → 相机角度
+// 经纬度 → 相机角度（latLngToCamAngles）
 phi   = (90 - lat) * (Math.PI / 180)   // 极角，Y轴向上
-theta = -lng * (Math.PI / 180)          // 方位角
+theta = -lng * (Math.PI / 180)          // 方位角（无偏移，three-globe 纹理与 Three.js UV 对齐）
 
-// 经纬度 → 球面坐标（标记点局部坐标）
+// 经纬度 → 球面坐标（updateMarkerPosition，标记点局部坐标，r=1.05）
 x = r * sin(phi) * sin(theta)
 y = r * cos(phi)
 z = r * sin(phi) * cos(theta)

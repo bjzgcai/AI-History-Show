@@ -457,10 +457,10 @@ const milestones = [
         116.4074
       ]
     },
-    "description": "2015年，何凯明和孙剑的ResNet，通过直接加identity通路，“简单粗暴”但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做“最优门控≈1”的 Highway Network。 2015年训练到152层 后来最多训练到1202层",
+    "description": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，“简单粗暴”但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做“最优门控≈1”的 Highway Network。 2015年训练到152层 后来最多训练到1202层",
     "figures": [
       {
-        "name": "何凯明",
+        "name": "何恺明",
         "role": "ResNet作者"
       },
       {
@@ -472,7 +472,7 @@ const milestones = [
     ],
     "videoUrl": "",
     "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2015年，何凯明和孙剑的ResNet，通过直接加identity通路，“简单粗暴”但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。\n技术上，ResNet可以看做“最优门控≈1”的 Highway Network。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第26页</span>",
+    "quote": "\"2015年，何恺明和孙剑的ResNet，通过直接加identity通路，“简单粗暴”但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。\n技术上，ResNet可以看做“最优门控≈1”的 Highway Network。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第26页</span>",
     "resources": {
       "images": [
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
@@ -826,14 +826,14 @@ const milestones = [
     "id": "milestone-2025-39",
     "year": 2025,
     "category": "大模型时代 (2020s-今)",
-    "title": "大预言模型百花齐放",
+    "title": "大语言模型百花齐放",
     "subtitle": "大模型时代",
     "location": {
-      "name": "全球各大AI实验室",
-      "country": "美国 / 全球",
+      "name": "全球研究",
+      "country": "多个机构",
       "coordinates": [
-        37.7749,
-        -122.4194
+        0,
+        0
       ]
     },
     "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
@@ -981,8 +981,8 @@ const milestones = [
       "name": "Sakana AI / UC Berkeley",
       "country": "日本 / 美国",
       "coordinates": [
-        37.8719,
-        -122.2585
+        [35.6762, 139.6503],
+        [37.8719, -122.2585]
       ]
     },
     "description": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for Science进入新阶段。",
