@@ -361,7 +361,7 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
   <div class="diff-page-body" id="diffContent"></div>
   <div class="diff-page-footer">
     <button class="btn btn-secondary" onclick="closeDiffPanel()">取消</button>
-    <button class="btn btn-primary" id="btnConfirmApply">确认应用</button>
+    <button class="btn btn-primary" id="btnConfirmApply" style="opacity:0.5;cursor:not-allowed;">确认应用</button>
   </div>
 </div>
 
@@ -495,7 +495,7 @@ function closeDiffPanel() {
 
 function renderDiffPanel(diff) {
   const el = document.getElementById('diffContent');
-  document.getElementById('btnConfirmApply').onclick = () => { closeDiffPanel(); doGenerate(); };
+  document.getElementById('btnConfirmApply').onclick = () => { toast('权限未开放', 'error'); };
 
   if (diff.firstGeneration) {
     const n = diff.newKeys ? diff.newKeys.length : diff.totalEvents;
