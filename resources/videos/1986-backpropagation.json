@@ -1,0 +1,21 @@
+{
+  "event_id": "1986-backpropagation",
+  "event_title": "反向传播算法",
+  "year": 1986,
+  "candidate_videos": [
+    {
+      "id": "tIeHLnjs5U8",
+      "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8",
+      "embed_url": "https://www.youtube.com/embed/tIeHLnjs5U8",
+      "title": "Backpropagation calculus | Deep Learning Chapter 4",
+      "channel": "3Blue1Brown",
+      "duration": "10:18",
+      "views": "3,673,006回視聴",
+      "thumbnail": "https://img.youtube.com/vi/tIeHLnjs5U8/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/tIeHLnjs5U8/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

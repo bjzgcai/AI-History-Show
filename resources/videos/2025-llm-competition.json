@@ -1,0 +1,21 @@
+{
+  "event_id": "2025-llm-competition",
+  "event_title": "大预言模型百花齐放",
+  "year": 2025,
+  "candidate_videos": [
+    {
+      "id": "5sLYAQS9sWQ",
+      "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
+      "embed_url": "https://www.youtube.com/embed/5sLYAQS9sWQ",
+      "title": "How Large Language Models Work",
+      "channel": "IBM Technology",
+      "duration": "5:34",
+      "views": "1,394,448回視聴",
+      "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/5sLYAQS9sWQ/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

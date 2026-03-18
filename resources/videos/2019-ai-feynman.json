@@ -1,0 +1,21 @@
+{
+  "event_id": "2019-ai-feynman",
+  "event_title": "AI Feynman：自主科学规律发现",
+  "year": 2019,
+  "candidate_videos": [
+    {
+      "id": "ipRvjS7q1DI",
+      "url": "https://www.youtube.com/watch?v=ipRvjS7q1DI",
+      "embed_url": "https://www.youtube.com/embed/ipRvjS7q1DI",
+      "title": "Richard Feynman: Can Machines Think?",
+      "channel": "Lex Clips",
+      "duration": "18:27",
+      "views": "2,191,947回視聴",
+      "thumbnail": "https://img.youtube.com/vi/ipRvjS7q1DI/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/ipRvjS7q1DI/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

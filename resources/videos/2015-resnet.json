@@ -1,0 +1,21 @@
+{
+  "event_id": "2015-resnet",
+  "event_title": "ResNet",
+  "year": 2015,
+  "candidate_videos": [
+    {
+      "id": "o_3mboe1jYI",
+      "url": "https://www.youtube.com/watch?v=o_3mboe1jYI",
+      "embed_url": "https://www.youtube.com/embed/o_3mboe1jYI",
+      "title": "ResNet を（実際に）10分以内で説明する",
+      "channel": "rupert ai",
+      "duration": "9:47",
+      "views": "192,781回視聴",
+      "thumbnail": "https://img.youtube.com/vi/o_3mboe1jYI/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/o_3mboe1jYI/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

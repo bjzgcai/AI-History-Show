@@ -1,0 +1,21 @@
+{
+  "event_id": "2018-gpt",
+  "event_title": "GPT",
+  "year": 2018,
+  "candidate_videos": [
+    {
+      "id": "OFS90-FX6pg",
+      "url": "https://www.youtube.com/watch?v=OFS90-FX6pg",
+      "embed_url": "https://www.youtube.com/embed/OFS90-FX6pg",
+      "title": "ChatGPTの35年の歴史",
+      "channel": "Art of the Problem",
+      "duration": "26:55",
+      "views": "1,287,957回視聴",
+      "thumbnail": "https://img.youtube.com/vi/OFS90-FX6pg/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/OFS90-FX6pg/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

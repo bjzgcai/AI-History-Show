@@ -1,0 +1,21 @@
+{
+  "event_id": "1969-ai-winter",
+  "event_title": "第一次AI寒冬",
+  "year": 1969,
+  "candidate_videos": [
+    {
+      "id": "w_v5lumtoPk",
+      "url": "https://www.youtube.com/watch?v=w_v5lumtoPk",
+      "embed_url": "https://www.youtube.com/embed/w_v5lumtoPk",
+      "title": "AI Winter : The Rise and Fall of Artificial Intelligence",
+      "channel": "AI Discovery Zone",
+      "duration": "3:03",
+      "views": "1,685回視聴",
+      "thumbnail": "https://img.youtube.com/vi/w_v5lumtoPk/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/w_v5lumtoPk/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

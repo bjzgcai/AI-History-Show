@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 历史回顾展览 - 增强版</title>
+    <style>
+        /* ==================== 1. 全局变量与基础重置 ==================== */
+        :root {
+            --bg-color: #0B0E14;
+            --text-main: #FFFFFF;
+            --text-muted: #8AB4F8;
+            --accent: #FFD166;
+            --panel-bg: rgba(255, 255, 255, 0.05);
+            --border-color: rgba(138, 180, 248, 0.3);
+            --polaroid-bg: #f4f4f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            overflow: hidden;
+        }
+
+        /* ==================== 2. 主容器与布局 (严格 16:9) ==================== */
+        .screen-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 56.25vw;
+            max-height: 100vh;
+            max-width: 177.78vh;
+            background: radial-gradient(circle at center, #1A2130 0%, var(--bg-color) 100%);
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1fr;
+            grid-template-rows: 15% 78% 7%;
+            gap: 2.5%;
+            padding: 3%;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+        }
+
+        /* ==================== 3. 动画与状态机类 ==================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-out-left {
+            transform: translate(-150%, -50%);
+            opacity: 0;
+        }
+
+        .slide-out-right {
+            transform: translate(50%, -50%);
+            opacity: 0;
+        }
+
+        @keyframes slideInFromRight {
+            from { transform: translate(50%, -50%);   opacity: 0; }
+            to   { transform: translate(-50%, -50%);  opacity: 1; }
+        }
+        @keyframes slideInFromLeft {
+            from { transform: translate(-150%, -50%); opacity: 0; }
+            to   { transform: translate(-50%, -50%);  opacity: 1; }
+        }
+        .slide-in-from-right {
+            transition: none;
+            animation: slideInFromRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        .slide-in-from-left {
+            transition: none;
+            animation: slideInFromLeft  0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        /* 竖屏翻页：垂直方向动画 */
+        .slide-out-portrait-up   { transform: translateY(-40px); opacity: 0; }
+        .slide-out-portrait-down { transform: translateY(40px);  opacity: 0; }
+        @keyframes slideInPortraitFromBottom {
+            from { transform: translateY(40px);  opacity: 0; }
+            to   { transform: translateY(0);     opacity: 1; }
+        }
+        @keyframes slideInPortraitFromTop {
+            from { transform: translateY(-40px); opacity: 0; }
+            to   { transform: translateY(0);     opacity: 1; }
+        }
+        .slide-in-portrait-from-bottom {
+            transition: none;
+            animation: slideInPortraitFromBottom 0.5s ease forwards;
+        }
+        .slide-in-portrait-from-top {
+            transition: none;
+            animation: slideInPortraitFromTop    0.5s ease forwards;
+        }
+
+        /* ==================== 4. 顶部标题区与视频 ==================== */
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 1%;
+            animation-delay: 0.2s;
+        }
+
+        .title-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* 第一层：大分类标题 */
+        .milestone-category {
+            font-size: 1.8vw;
+            font-weight: 600;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* 第二层：年份 + 事件标题 */
+        .milestone-year-event {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .event-year {
+            font-size: 4.5vw;
+            font-weight: 900;
+            color: var(--accent);
+            line-height: 1;
+            text-shadow: 0 0 30px rgba(255, 209, 102, 0.4);
+            letter-spacing: -2px;
+            flex-shrink: 0;
+        }
+
+        .event-separator {
+            font-size: 3vw;
+            color: var(--accent);
+            opacity: 0.6;
+        }
+
+        .event-title {
+            font-size: 2.2vw;
+            color: var(--text-main);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+
+        /* ==================== 5. 面板通用样式（增强对比度）==================== */
+        .panel {
+            background: var(--panel-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .panel-title {
+            font-size: 1.3vw;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-left: 5px solid var(--accent);
+            padding-left: 12px;
+            margin-bottom: 6%;
+            font-weight: 700;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* ==================== 6. 左栏：动态地球与事件 ==================== */
+        .col-left {
+            animation-delay: 0.6s;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+        }
+
+        .col-left::-webkit-scrollbar {
+            width: 4px;
+        }
+        .col-left::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+        .col-left::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .location-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12%;
+        }
+
+        /* 🌍 Three.js 3D 地球容器 */
+        .globe-container {
+            position: relative;
+            width: 14vw;
+            height: 14vw;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(100, 160, 255, 0.4), 0 0 60px rgba(50, 100, 200, 0.2);
+        }
+
+        .globe {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Three.js Canvas */
+        #globeCanvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+        }
+
+        .location-text {
+            font-size: 1.6vw;
+            color: var(--text-main);
+            text-align: center;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .location-country {
+            font-size: 1.1vw;
+            color: var(--text-muted);
+        }
+
+        .quote-source {
+            font-size: 1vw;
+            color: var(--accent);
+        }
+
+        .event-desc {
+            font-size: 1.25vw;
+            line-height: 1.7;
+            color: #ddd;
+        }
+
+        /* ==================== 7. 中栏：人物卡片与拍立得照片 ==================== */
+        .col-center {
+            animation-delay: 1.0s;
+            position: relative;
+        }
+
+        /* 卡片式人物阵列（增强动画）- 支持动态列数 */
+        .figures-grid {
+            display: grid;
+            gap: 5%;
+            margin-bottom: 10%;
+        }
+
+        /* 根据人物数量动态调整网格 */
+        .figures-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+
+        .figures-grid.count-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .figures-grid.count-3 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .figures-grid.count-4 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* 3个人物时，第3个居中显示 */
+        .figures-grid.count-3 .figure-card:nth-child(3) {
+            grid-column: 1 / -1;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        /* 空状态：没有人物时的占位 */
+        .figures-grid.empty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 15vh;
+            color: var(--text-muted);
+            font-style: italic;
+            opacity: 0.5;
+        }
+
+        .figure-card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 6%;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .figure-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 209, 102, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .figure-card:hover::before {
+            left: 100%;
+        }
+
+        .figure-card:hover {
+            background: rgba(255, 209, 102, 0.15);
+            border-color: var(--accent);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 209, 102, 0.3);
+        }
+
+        .figure-name {
+            font-size: 1.35vw;
+            color: var(--text-main);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .figure-role {
+            font-size: 0.95vw;
+            color: var(--text-muted);
+        }
+
+        /* 📸 拍立得照片拼贴效果 - 支持动态数量 */
+        .collage-container {
+            position: relative;
+            flex-grow: 1;
+            min-height: 0;
+            margin-top: 5%;
+            overflow: hidden;
+        }
+
+        /* 空状态 */
+        .collage-container.empty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-muted);
+            font-style: italic;
+            opacity: 0.5;
+        }
+
+        .polaroid {
+            position: absolute;
+            background: var(--polaroid-bg);
+            padding: 5% 5% 15% 5%;  /* 底部留更宽的边距 */
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.3),
+                0 10px 40px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .polaroid:hover {
+            transform: scale(1.15) translateY(-20px) !important;
+            box-shadow:
+                0 15px 30px rgba(0, 0, 0, 0.4),
+                0 25px 60px rgba(0, 0, 0, 0.3);
+            z-index: 100 !important;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .polaroid-caption {
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Courier New', monospace;
+            font-size: 0.8vw;
+            color: #555;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* 动态照片布局（1-6张） */
+        /* 1张照片：居中显示 */
+        .polaroid.photo-0 {
+            top: 50%;
+            left: 50%;
+            width: 58%;
+            transform: translate(-50%, -50%) rotate(-3deg);
+            z-index: 1;
+        }
+
+        /* 2张照片：左右布局 */
+        .polaroid.photo-0.of-2 {
+            top: 15%;
+            left: 5%;
+            width: 42%;
+            transform: rotate(-6deg);
+            z-index: 1;
+        }
+
+        .polaroid.photo-1.of-2 {
+            top: 25%;
+            right: 8%;
+            width: 40%;
+            transform: rotate(8deg);
+            z-index: 2;
+        }
+
+        /* 3张照片：经典拼贴 */
+        .polaroid.photo-0.of-3 {
+            top: 0;
+            left: 0;
+            width: 46%;
+            transform: rotate(-6deg);
+            z-index: 1;
+        }
+
+        .polaroid.photo-1.of-3 {
+            top: 12%;
+            right: 5%;
+            width: 40%;
+            transform: rotate(8deg);
+            z-index: 2;
+        }
+
+        .polaroid.photo-2.of-3 {
+            bottom: 5%;
+            left: 18%;
+            width: 44%;
+            transform: rotate(-3deg);
+            z-index: 3;
+        }
+
+        /* 4张照片：网格布局 */
+        .polaroid.photo-0.of-4 {
+            top: 2%;
+            left: 2%;
+            width: 38%;
+            transform: rotate(-5deg);
+            z-index: 1;
+        }
+
+        .polaroid.photo-1.of-4 {
+            top: 5%;
+            right: 5%;
+            width: 36%;
+            transform: rotate(6deg);
+            z-index: 2;
+        }
+
+        .polaroid.photo-2.of-4 {
+            bottom: 8%;
+            left: 8%;
+            width: 37%;
+            transform: rotate(4deg);
+            z-index: 3;
+        }
+
+        .polaroid.photo-3.of-4 {
+            bottom: 5%;
+            right: 2%;
+            width: 35%;
+            transform: rotate(-7deg);
+            z-index: 4;
+        }
+
+        /* 5+张照片：紧凑布局 */
+        .polaroid.of-many {
+            width: 32% !important;
+        }
+
+        .polaroid.photo-0.of-many {
+            top: 0;
+            left: 0;
+            transform: rotate(-8deg);
+            z-index: 5;
+        }
+
+        .polaroid.photo-1.of-many {
+            top: 0;
+            right: 0;
+            transform: rotate(7deg);
+            z-index: 4;
+        }
+
+        .polaroid.photo-2.of-many {
+            top: 35%;
+            left: 30%;
+            transform: rotate(-3deg);
+            z-index: 6;
+        }
+
+        .polaroid.photo-3.of-many {
+            bottom: 0;
+            left: 5%;
+            transform: rotate(5deg);
+            z-index: 2;
+        }
+
+        .polaroid.photo-4.of-many {
+            bottom: 0;
+            right: 5%;
+            transform: rotate(-6deg);
+            z-index: 3;
+        }
+
+        /* ==================== 8. 右栏：视频与引用 ==================== */
+        .col-right {
+            animation-delay: 1.4s;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+        }
+
+        .col-right::-webkit-scrollbar {
+            width: 4px;
+        }
+        .col-right::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+        .col-right::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        /* 视频隐藏状态 */
+        .video-container.hidden {
+            display: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .quote-box {
+            margin-top: 6%;
+            font-size: 1.25vw;
+            font-style: italic;
+            color: #ddd;
+            border-left: 4px solid var(--text-muted);
+            padding-left: 6%;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        /* 当视频隐藏时，引用框占据更多空间 */
+        .video-container.hidden + .quote-box {
+            margin-top: 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 引用空状态 */
+        .quote-box.empty {
+            opacity: 0.5;
+            color: var(--text-muted);
+        }
+
+        /* ==================== 9. 底部导航栏 ==================== */
+        .bottom-nav {
+            grid-column: 1 / -1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 30px;
+            border-radius: 40px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            align-self: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .nav-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: none;
+            color: #000;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover:not(:disabled) {
+            transform: scale(1.25);
+            box-shadow: 0 0 25px rgba(255, 209, 102, 0.6);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .page-indicators {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .dot.active {
+            background: var(--accent);
+            transform: scale(1.6);
+            box-shadow: 0 0 12px rgba(255, 209, 102, 0.7);
+        }
+
+        .dot:hover {
+            background: rgba(255, 209, 102, 0.8);
+            transform: scale(1.4);
+        }
+
+        /* ==================== 10. 移动端适配 ==================== */
+
+        /* 竖屏手机 / 窄屏（≤768px） */
+        @media screen and (max-width: 768px) {
+
+            body, html {
+                height: auto;
+                min-height: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .screen-container {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                height: auto;
+                max-height: none;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                padding: 14px 12px 16px;
+            }
+
+            /* 标题区 */
+            .header {
+                flex-direction: column;
+                padding-bottom: 10px;
+                gap: 4px;
+            }
+
+            .milestone-category {
+                font-size: 11px;
+                letter-spacing: 1px;
+            }
+
+            .milestone-year-event {
+                flex-wrap: wrap;
+                gap: 8px;
+                align-items: baseline;
+            }
+
+            .event-year {
+                font-size: 32px;
+                letter-spacing: -1px;
+            }
+
+            .event-separator {
+                font-size: 20px;
+            }
+
+            .event-title {
+                font-size: 16px;
+                line-height: 1.3;
+            }
+
+            /* 面板通用 */
+            .panel {
+                padding: 14px;
+                border-radius: 12px;
+            }
+
+            .panel-title {
+                font-size: 10px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+            }
+
+            /* 左栏 */
+            .globe-container {
+                width: 110px;
+                height: 110px;
+            }
+
+            .location-text {
+                font-size: 14px;
+            }
+
+            .location-box {
+                margin-bottom: 12px;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 16px;
+            }
+
+            .event-desc {
+                font-size: 13px;
+                line-height: 1.6;
+            }
+
+            /* 中栏 */
+            .figures-grid {
+                margin-bottom: 12px;
+            }
+
+            .figure-name {
+                font-size: 13px;
+            }
+
+            .figure-role {
+                font-size: 11px;
+            }
+
+            .collage-container {
+                min-height: 200px;
+            }
+
+            .polaroid-caption {
+                font-size: 10px;
+            }
+
+            .location-country {
+                font-size: 12px;
+            }
+
+            /* 右栏 */
+            .quote-box {
+                font-size: 13px;
+                margin-top: 12px;
+                line-height: 1.6;
+            }
+
+            .quote-source {
+                font-size: 12px;
+            }
+
+            /* 底部导航 */
+            .bottom-nav {
+                padding: 8px 16px;
+                gap: 12px;
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            .nav-btn {
+                display: none;
+            }
+
+            /* 页面指示器：横向滚动，隐藏滚动条 */
+            .page-indicators {
+                overflow-x: auto;
+                max-width: 55vw;
+                gap: 8px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .page-indicators::-webkit-scrollbar {
+                display: none;
+            }
+
+            .dot {
+                width: 7px;
+                height: 7px;
+                flex-shrink: 0;
+                gap: 8px;
+            }
+        }
+
+        /* 手机横屏：三列完整展示，缩小字体 */
+        @media screen and (orientation: landscape) and (max-height: 600px) {
+
+            body, html {
+                height: 100dvh;
+                overflow: hidden;
+            }
+
+            .screen-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: grid;
+                width: 100%;
+                max-width: 177.78dvh;
+                height: 100dvh;
+                max-height: 100dvh;
+                overflow: hidden;
+                padding: 1% 2% 1%;
+                grid-template-columns: 1fr 1.2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+
+            .header {
+                grid-column: 1 / -1;
+            }
+
+            .event-year {
+                font-size: 4dvh;
+            }
+
+            .event-title {
+                font-size: 2.2dvh;
+            }
+
+            .milestone-category {
+                font-size: 1.5dvh;
+            }
+
+            .panel-title {
+                font-size: 1.2dvh;
+                margin-bottom: 4%;
+            }
+
+            .event-desc,
+            .quote-box {
+                font-size: 1.4dvh;
+            }
+
+            .figure-name {
+                font-size: 1.3dvh;
+            }
+
+            .figure-role {
+                font-size: 1.1dvh;
+            }
+
+            .globe-container {
+                width: 10dvh;
+                height: 10dvh;
+            }
+
+            .nav-btn {
+                display: none;
+            }
+        }
+
+        /* ==================== 11. 照片查看器 ==================== */
+        .photo-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .viewer-photo {
+            max-width: 85%;
+            max-height: 85%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        }
+
+        .close-viewer {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50%;
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .close-viewer:hover {
+            background: var(--accent);
+            color: #000;
+            transform: rotate(90deg);
+        }
+
+        .photo-prev,
+        .photo-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 65px;
+            height: 65px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50%;
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .photo-prev {
+            left: 30px;
+        }
+
+        .photo-next {
+            right: 30px;
+        }
+
+        .photo-prev:hover,
+        .photo-next:hover {
+            background: var(--accent);
+            color: #000;
+            transform: translateY(-50%) scale(1.15);
+        }
+
+        .photo-counter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen-container" id="mainScreen">
+
+        <header class="header reveal">
+            <div class="title-group">
+                <div class="milestone-category" id="categoryDisplay">AI创世纪 (1950s-1970s)</div>
+                <div class="milestone-year-event">
+                    <span class="event-year" id="yearDisplay">1956</span>
+                    <span class="event-separator">•</span>
+                    <span class="event-title" id="titleDisplay">人工智能的正式诞生</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="panel col-left reveal">
+            <div class="panel-title">Location & Event</div>
+            <div class="location-box">
+                <div class="globe-container">
+                    <div class="globe" id="globeContainer"></div>
+                </div>
+                <div class="location-text" id="locationDisplay">
+                    达特茅斯学院<br>
+                    <span class="location-country">美国, 新罕布什尔州</span>
+                </div>
+            </div>
+            <div class="event-desc" id="eventDesc">
+                在1956年的夏天，一群富有远见的科学家在此进行了为期8周的闭门探讨。<br><br>
+                会议的核心议题是探讨"如何让机器具备人类的智能"。正是在这次会议上，首次确立了<span
+                    class="highlight">"人工智能 (Artificial Intelligence)"</span>这一历史性术语。
+            </div>
+        </div>
+
+        <div class="panel col-center reveal">
+            <div class="panel-title">Key Figures & Archive</div>
+            <div class="figures-grid" id="figuresGrid">
+                <div class="figure-card">
+                    <div class="figure-name">John McCarthy</div>
+                    <div class="figure-role">提出"AI"术语</div>
+                </div>
+                <div class="figure-card">
+                    <div class="figure-name">Marvin Minsky</div>
+                    <div class="figure-role">认知科学家</div>
+                </div>
+                <div class="figure-card">
+                    <div class="figure-name">Claude Shannon</div>
+                    <div class="figure-role">信息论创始人</div>
+                </div>
+                <div class="figure-card">
+                    <div class="figure-name">Nathaniel Rochester</div>
+                    <div class="figure-role">IBM 架构师</div>
+                </div>
+            </div>
+            <div class="collage-container">
+                <!-- 照片由 JavaScript 动态生成 -->
+            </div>
+        </div>
+
+        <div class="panel col-right reveal">
+            <div class="panel-title">Commentary & Media</div>
+            <div class="video-container">
+                <iframe id="mainVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="quote-box" id="quoteDisplay">
+                "We propose that a 2 month, 10 man study of artificial intelligence be carried out during the summer of
+                1956..."<br><br>
+                <span class="quote-source">— 达特茅斯会议提案书</span>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <button class="nav-btn" id="prevBtn">◀</button>
+
+            <div class="page-indicators" id="pageIndicators">
+                <!-- 动态生成圆点 -->
+            </div>
+
+            <button class="nav-btn" id="nextBtn">▶</button>
+        </div>
+    </div>
+
+    <!-- 里程碑数据：优先加载生成数据，失败时回退至默认数据 -->
+    <script>
+        function _loadDefaultMilestones() {
+            document.write('<script src="milestones-data-default.js"><\/script>');
+        }
+    </script>
+    <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+    <script>
+        // ==================== 全局变量 ====================
+        let currentIndex = 0;
+        let isTransitioning = false;
+
+        // DOM 元素引用
+        const mainScreen = document.getElementById('mainScreen');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicators = document.getElementById('pageIndicators');
+
+        // ==================== Three.js 地球变量 ====================
+        let globeScene, globeCamera, globeRenderer, globeMesh, globeMarker;
+        let globeMarkers = [];  // 支持多点标记
+        const CAM_RADIUS = 2.2;  // 相机距地球中心距离
+        // 相机绕地球飞行角度：初始随机位置，第一张也会有旋转入场动画
+        const _rndPhi = Math.PI * (0.25 + Math.random() * 0.5);   // phi: 随机纬度区间[45°,135°]
+        const _rndTheta = Math.PI * (Math.random() * 2 - 1);       // theta: 随机经度[-π, π]
+        let camTarget = { phi: _rndPhi, theta: _rndTheta };
+        let camCurrent = { phi: _rndPhi, theta: _rndTheta };
+
+        // ==================== 初始化Three.js地球 ====================
+        function initGlobe() {
+            // 检查Three.js是否加载成功
+            if (typeof THREE === 'undefined') {
+                console.error('Three.js failed to load');
+                showGlobeFallback();
+                return false;
+            }
+
+            const container = document.getElementById('globeContainer');
+            if (!container) {
+                console.error('Globe container not found');
+                return false;
+            }
+
+            const width = container.clientWidth || 300;
+            const height = container.clientHeight || 300;
+
+            if (width === 0 || height === 0) {
+                console.warn('Invalid container dimensions, using defaults');
+            }
+
+            try {
+                // 创建场景
+                globeScene = new THREE.Scene();
+
+                // 创建相机：初始位于Z轴正方向，面向地球中心
+                globeCamera = new THREE.PerspectiveCamera(35, width / height, 0.1, 1000);
+                globeCamera.position.set(0, 0, CAM_RADIUS);
+                globeCamera.lookAt(0, 0, 0);
+
+                // 创建渲染器（添加性能优化配置）
+                globeRenderer = new THREE.WebGLRenderer({
+                    antialias: true,
+                    alpha: true,
+                    powerPreference: 'high-performance',
+                    precision: 'mediump',
+                    stencil: false,
+                    depth: true
+                });
+                globeRenderer.setSize(width, height);
+                globeRenderer.setClearColor(0x000000, 0);
+                globeRenderer.domElement.id = 'globeCanvas';
+                container.appendChild(globeRenderer.domElement);
+
+                // 创建地球球体
+                const geometry = new THREE.SphereGeometry(1, 64, 64);
+
+            // 添加环境光（调亮，让暗面也能看清大陆）
+            const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+            globeScene.add(ambientLight);
+
+            // 添加主方向光（模拟太阳光）
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+            directionalLight.position.set(5, 3, 5);
+            globeScene.add(directionalLight);
+
+            // 添加补光（照亮背面）
+            const fillLight = new THREE.DirectionalLight(0x8ab4f8, 0.5);
+            fillLight.position.set(-5, -2, -3);
+            globeScene.add(fillLight);
+
+            // 先用占位材质创建 mesh，纹理异步加载后自动更新
+            const material = new THREE.MeshPhongMaterial({
+                color: 0x2255aa,
+                specular: new THREE.Color(0x4488aa),
+                shininess: 12
+            });
+
+            globeMesh = new THREE.Mesh(geometry, material);
+            globeScene.add(globeMesh);
+
+            // 加载真实地球纹理
+            const textureLoader = new THREE.TextureLoader();
+            textureLoader.crossOrigin = 'anonymous';
+
+            // 主纹理加载成功后赋给材质
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg',
+                (tex) => { material.map = tex; material.needsUpdate = true; },
+                undefined,
+                () => { useFallbackEarthMaterial(); }
+            );
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-topology.png',
+                (tex) => { material.bumpMap = tex; material.bumpScale = 0.015; material.needsUpdate = true; }
+            );
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-water.png',
+                (tex) => { material.specularMap = tex; material.needsUpdate = true; }
+            );
+
+                // 创建初始单个标记点占位（实际由 setMarkers 管理）
+                globeMarker = null;  // 不再使用单点，改用 globeMarkers 数组
+
+                // 启动渲染循环
+                animateGlobe();
+
+                return true;
+
+            } catch (error) {
+                console.error('Failed to initialize globe:', error);
+                showGlobeFallback();
+                return false;
+            }
+        }
+
+        // ==================== 降级方案：显示静态CSS地球 ====================
+        function showGlobeFallback() {
+            const container = document.getElementById('globeContainer');
+            if (!container) return;
+
+            container.innerHTML = `
+                <div style="
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa3d1 100%);
+                    box-shadow: inset -15px -15px 40px rgba(0, 0, 0, 0.5),
+                                inset 15px 15px 40px rgba(255, 255, 255, 0.1),
+                                0 0 30px rgba(138, 180, 248, 0.5);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--text-muted);
+                    font-size: 0.8vw;
+                    text-align: center;
+                    padding: 10%;
+                ">
+                    🌍
+                </div>
+            `;
+        }
+
+        // ==================== 地球纹理加载失败备用方案 ====================
+        function useFallbackEarthMaterial() {
+            if (!globeMesh) return;
+            const material = new THREE.ShaderMaterial({
+                uniforms: { time: { value: 0 } },
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    void main() {
+                        vUv = uv;
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    #define PI 3.14159265358979
+                    // 简化版真实大陆轮廓（基于经纬度多边形近似）
+                    float isLand(vec2 uv) {
+                        float lon = uv.x * 360.0 - 180.0;
+                        float lat = uv.y * 180.0 - 90.0;
+                        // 北美
+                        if (lon > -140.0 && lon < -55.0 && lat > 15.0 && lat < 70.0) return 0.9;
+                        // 南美
+                        if (lon > -82.0 && lon < -35.0 && lat > -55.0 && lat < 12.0) return 0.9;
+                        // 欧洲
+                        if (lon > -10.0 && lon < 40.0 && lat > 35.0 && lat < 70.0) return 0.9;
+                        // 非洲
+                        if (lon > -18.0 && lon < 52.0 && lat > -35.0 && lat < 37.0) return 0.9;
+                        // 亚洲
+                        if (lon > 26.0 && lon < 145.0 && lat > 5.0 && lat < 73.0) return 0.9;
+                        // 东南亚岛屿
+                        if (lon > 95.0 && lon < 141.0 && lat > -10.0 && lat < 20.0) return 0.7;
+                        // 澳大利亚
+                        if (lon > 114.0 && lon < 154.0 && lat > -39.0 && lat < -11.0) return 0.9;
+                        // 格陵兰
+                        if (lon > -55.0 && lon < -17.0 && lat > 59.0 && lat < 84.0) return 0.8;
+                        return 0.0;
+                    }
+                    void main() {
+                        float land = isLand(vUv);
+                        vec3 oceanDeep = vec3(0.08, 0.18, 0.40);
+                        vec3 oceanShallow = vec3(0.15, 0.40, 0.65);
+                        vec3 landGreen = vec3(0.25, 0.55, 0.20);
+                        vec3 landBrown = vec3(0.50, 0.40, 0.22);
+                        float lat = vUv.y * 180.0 - 90.0;
+                        vec3 ocean = mix(oceanDeep, oceanShallow, smoothstep(-90.0, 90.0, lat) * 0.5 + 0.25);
+                        vec3 landCol = mix(landGreen, landBrown, abs(lat) / 60.0);
+                        vec3 color = mix(ocean, landCol, land);
+                        // 极地白色
+                        float polar = smoothstep(70.0, 85.0, abs(lat));
+                        color = mix(color, vec3(0.95, 0.97, 1.0), polar);
+                        // 大气边缘光
+                        float rim = pow(1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0))), 3.0);
+                        color += vec3(0.3, 0.5, 0.9) * rim * 0.6;
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+            globeMesh.material = material;
+        }
+
+
+        /**
+         * 经纬度 → 相机球坐标角度
+         * 相机始终在球外，绕地球飞行，正面朝向目标地点
+         */
+        function latLngToCamAngles(lat, lng) {
+            // phi: 从Y轴正方向算的极角（纬度越高越靠近极点）
+            const phi = (90 - lat) * (Math.PI / 180);
+            // theta: (lng-90) 修正 Three.js SphereGeometry 纹理坐标偏移
+            // Three.js SphereGeometry: x=-cos(φh)*sin, z=sin(φh)*sin，展开后需 θ=lng-90
+            const theta = (lng - 90) * (Math.PI / 180);
+            return { phi, theta };
+        }
+
+        /**
+         * 页面切换时，旋转相机飞向第一个坐标，并在所有坐标处放置标记点。
+         * coordinates: [lat,lng]（单点）或 [[lat,lng],[lat,lng],...]（多点）
+         */
+        function rotateGlobeToCoordinates(coordinates) {
+            // 统一转为多点数组
+            const coordsList = Array.isArray(coordinates[0])
+                ? coordinates              // 已经是多点格式
+                : [coordinates];           // 单点包装成数组
+
+            // 相机飞向第一个点
+            const [lat, lng] = coordsList[0];
+            if (isNaN(lat) || isNaN(lng)) return;
+
+            const angles = latLngToCamAngles(lat, lng);
+            camTarget.phi = angles.phi;
+            camTarget.theta = angles.theta;
+
+            // 重置状态，开始新一轮旋转+闪烁
+            globeArrived = false;
+            markerFlashDone = false;
+
+            setMarkers(coordsList);
+        }
+
+        /**
+         * 创建/重建标记点列表（支持多点）
+         * coordsList: [[lat,lng], [lat,lng], ...]
+         */
+        function setMarkers(coordsList) {
+            if (!globeMesh) return;
+
+            // 清除旧标记
+            globeMarkers.forEach(m => globeMesh.remove(m));
+            globeMarkers = [];
+
+            const markerGeometry = new THREE.SphereGeometry(0.03, 16, 16);
+
+            coordsList.forEach(([lat, lng]) => {
+                const mat = new THREE.MeshBasicMaterial({
+                    color: 0xff0000,
+                    transparent: true,
+                    opacity: 0
+                });
+                const mesh = new THREE.Mesh(markerGeometry, mat);
+
+                const phi = (90 - lat) * (Math.PI / 180);
+                const theta = (lng - 90) * (Math.PI / 180);  // 与 latLngToCamAngles 保持一致
+                const r = 1.05;
+                // Three.js SphereGeometry 顶点: x=-sin(phi)*sin(theta), z=-sin(phi)*cos(theta)
+                // 标记点需与球体表面对应，故 x/z 取反
+                mesh.position.set(
+                    -r * Math.sin(phi) * Math.sin(theta),
+                    r * Math.cos(phi),
+                    -r * Math.sin(phi) * Math.cos(theta)
+                );
+
+                globeMesh.add(mesh);
+                globeMarkers.push(mesh);
+            });
+
+            // 兼容旧代码：globeMarker 指向第一个点
+            globeMarker = globeMarkers[0] || null;
+        }
+
+        // ==================== 地球渲染循环 ====================
+        let animationTime = 0;
+        let markerFlashCount = 0;     // 已完成的闪烁次数
+        let markerFlashDone = false;  // 是否闪烁完毕
+        let globeArrived = false;     // 相机是否已到达目标
+
+        function animateGlobe() {
+            requestAnimationFrame(animateGlobe);
+            if (document.hidden || !globeRenderer) return;
+
+            animationTime += 0.016;
+
+            // 球面插值
+            const lerpFactor = 0.05;
+
+            let dTheta = camTarget.theta - camCurrent.theta;
+            while (dTheta > Math.PI) dTheta -= 2 * Math.PI;
+            while (dTheta < -Math.PI) dTheta += 2 * Math.PI;
+            const dPhi = camTarget.phi - camCurrent.phi;
+
+            // 判断是否到达目标（角度差小于阈值）
+            const arrived = Math.abs(dTheta) < 0.01 && Math.abs(dPhi) < 0.01;
+            if (!globeArrived && arrived) {
+                globeArrived = true;
+                animationTime = 0;  // 到达时重置，让闪烁从头开始
+                camCurrent.phi = camTarget.phi;
+                camCurrent.theta = camTarget.theta;
+                // 显示标记点，开始闪烁
+                if (globeMarker) globeMarker.material.opacity = 1;
+            }
+
+            if (!globeArrived) {
+                camCurrent.phi += dPhi * lerpFactor;
+                camCurrent.theta += dTheta * lerpFactor;
+            }
+
+            // 相机位置（与标记点公式一致，朝向地球表面目标点）
+            const cx = -CAM_RADIUS * Math.sin(camCurrent.phi) * Math.sin(camCurrent.theta);
+            const cy = CAM_RADIUS * Math.cos(camCurrent.phi);
+            const cz = -CAM_RADIUS * Math.sin(camCurrent.phi) * Math.cos(camCurrent.theta);
+
+            globeCamera.position.set(cx, cy, cz);
+            globeCamera.lookAt(0, 0, 0);
+
+            // 标记点：到达后所有点同步闪烁2次，之后常亮
+            if (globeMarkers.length > 0 && globeArrived) {
+                if (!markerFlashDone) {
+                    const t = animationTime * 2.5;
+                    const cycle = Math.floor(t);
+                    globeMarkers.forEach(mk => {
+                        if (cycle >= 2) {
+                            mk.scale.set(1, 1, 1);
+                            mk.material.opacity = 1;
+                        } else {
+                            const phase = (t - cycle) * Math.PI;
+                            const s = 1.0 + 0.8 * Math.sin(phase);
+                            mk.scale.set(s, s, s);
+                            mk.material.opacity = 1.0 - 0.7 * Math.sin(phase);
+                        }
+                    });
+                    if (cycle >= 2) markerFlashDone = true;
+                }
+            }
+
+            globeRenderer.render(globeScene, globeCamera);
+        }
+
+        // ==================== 窗口resize响应式处理 ====================
+        function handleGlobeResize() {
+            if (!globeCamera || !globeRenderer) return;
+
+            const container = document.getElementById('globeContainer');
+            if (!container) return;
+
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            if (width === 0 || height === 0) return;
+
+            globeCamera.aspect = width / height;
+            globeCamera.updateProjectionMatrix();
+            globeRenderer.setSize(width, height);
+        }
+
+        // 防抖函数
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // ==================== 初始化 ====================
+        function init() {
+            // 初始化Three.js地球
+            initGlobe();
+
+            // 生成页面指示器
+            indicators.innerHTML = milestones.map((_, i) =>
+                `<div class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+            ).join('');
+
+            // 绑定圆点点击事件
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.onclick = () => jumpTo(i);
+            });
+
+            // 绑定窗口resize事件（使用防抖优化性能）
+            window.addEventListener('resize', debounce(handleGlobeResize, 250));
+
+            // 渲染第一个页面
+            renderPage(0);
+
+            // 绑定照片点击事件
+            bindPhotoClicks();
+        }
+
+        // ==================== 页面渲染（配置化版本）====================
+        function renderPage(index) {
+            const m = milestones[index];
+
+            // 更新分类（第一层标题）
+            document.getElementById('categoryDisplay').textContent = m.category;
+
+            // 更新年份和事件标题（第二层）
+            document.getElementById('yearDisplay').textContent = m.year;
+            document.getElementById('titleDisplay').textContent = m.title;
+
+            // 更新地点
+            document.getElementById('locationDisplay').innerHTML =
+                `${m.location.name}<br><span class="location-country">${m.location.country}</span>`;
+
+            // 更新事件描述
+            document.getElementById('eventDesc').innerHTML = m.description;
+
+            // ==================== 更新3D地球旋转 ====================
+            if (m.location && m.location.coordinates) {
+                const raw = m.location.coordinates;
+                // 统一为多点数组：[[lat,lng],...] 或 [lat,lng]→[[lat,lng]]
+                const coordsList = Array.isArray(raw[0]) ? raw : [raw];
+
+                // 过滤无效点（NaN 或 [0,0]）
+                const validList = coordsList.filter(([lat, lng]) =>
+                    typeof lat === 'number' && typeof lng === 'number' &&
+                    !isNaN(lat) && !isNaN(lng) && !(lat === 0 && lng === 0)
+                );
+
+                if (validList.length > 0) {
+                    rotateGlobeToCoordinates(validList);
+                    previousCoordinates = validList[0];
+                } else {
+                    console.warn(`Skipping invalid coordinates for milestone ${index}:`, raw);
+                }
+            }
+
+            // ==================== 动态渲染人物（支持0-N个）====================
+            const figuresGrid = document.getElementById('figuresGrid');
+            const figuresCount = m.figures.length;
+
+            // 移除所有动态类
+            figuresGrid.className = 'figures-grid';
+
+            if (figuresCount === 0) {
+                // 空状态
+                figuresGrid.classList.add('empty');
+                figuresGrid.innerHTML = '暂无关键人物信息';
+            } else {
+                // 添加数量类
+                figuresGrid.classList.add(`count-${Math.min(figuresCount, 4)}`);
+                figuresGrid.innerHTML = m.figures.map(f => `
+                    <div class="figure-card">
+                        <div class="figure-name">${f.name}</div>
+                        <div class="figure-role">${f.role}</div>
+                    </div>
+                `).join('');
+            }
+
+            // ==================== 动态渲染照片（支持0-N张）====================
+            const collageContainer = document.querySelector('.collage-container');
+
+            // 合并照片：优先 photos（PPT原图），不足5张则从 resources.images 补充
+            let photosList = [];
+
+            // 1. 先添加所有 photos
+            if (m.photos && m.photos.length > 0) {
+                photosList = [...m.photos];
+            }
+
+            // 2. 如果不足5张，从 resources.images 补充
+            if (photosList.length < 5 && m.resources && m.resources.images && m.resources.images.length > 0) {
+                const needed = 5 - photosList.length;
+                photosList = [...photosList, ...m.resources.images.slice(0, needed)];
+            }
+
+            // 3. 最多取5张
+            photosList = photosList.slice(0, 5);
+
+            const photosCount = photosList.length;
+
+            if (photosCount === 0) {
+                // 空状态
+                collageContainer.innerHTML = '<div style="text-align: center;">暂无历史照片</div>';
+                collageContainer.classList.add('empty');
+            } else {
+                // 移除空状态类
+                collageContainer.classList.remove('empty');
+
+                // 确定布局类型
+                let layoutClass;
+                if (photosCount === 1) {
+                    layoutClass = '';  // 使用photo-0默认样式
+                } else if (photosCount === 2) {
+                    layoutClass = 'of-2';
+                } else if (photosCount === 3) {
+                    layoutClass = 'of-3';
+                } else if (photosCount === 4) {
+                    layoutClass = 'of-4';
+                } else {
+                    layoutClass = 'of-many';  // 5+张
+                }
+
+                // 动态生成拍立得照片（最多5张）
+                collageContainer.innerHTML = photosList.slice(0, 5).map((photoUrl, i) => {
+                    // 生成caption
+                    let caption = '';
+                    if (i === 0) caption = m.location.name;
+                    else if (i === 1 && m.figures[0]) caption = m.figures[0].name;
+                    else caption = `${m.year}`;
+
+                    return `
+                        <div class="polaroid photo-${i} ${layoutClass}" data-index="${i}">
+                            <img src="${photoUrl}" alt="照片${i + 1}">
+                            <div class="polaroid-caption">${caption}</div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // ==================== 更新视频（无视频时隐藏）====================
+            const videoContainer = document.querySelector('.video-container');
+            const mainVideo = document.getElementById('mainVideo');
+
+            // 优先使用 resources.videos，如果不存在则使用 videoUrl
+            let videoEmbedUrl = '';
+            if (m.resources && m.resources.videos && m.resources.videos.length > 0) {
+                videoEmbedUrl = m.resources.videos[0].embed_url;
+            } else if (m.videoUrl && m.videoUrl.trim() !== '') {
+                videoEmbedUrl = m.videoUrl;
+            }
+
+            if (videoEmbedUrl) {
+                videoContainer.classList.remove('hidden');
+                // 确保iframe存在
+                if (!videoContainer.querySelector('iframe')) {
+                    videoContainer.innerHTML = '<iframe id="mainVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                }
+                document.getElementById('mainVideo').src = videoEmbedUrl;
+            } else {
+                // 没有视频时隐藏容器
+                videoContainer.classList.add('hidden');
+            }
+
+            // ==================== 更新引用（处理空状态）====================
+            const quoteDisplay = document.getElementById('quoteDisplay');
+
+            if (m.quote && m.quote.trim() !== '' && m.quote !== '待补充') {
+                quoteDisplay.classList.remove('empty');
+                quoteDisplay.innerHTML = m.quote;
+            } else {
+                quoteDisplay.classList.add('empty');
+                quoteDisplay.innerHTML = '暂无引用内容';
+            }
+
+            // 重新绑定照片点击
+            bindPhotoClicks();
+        }
+
+        // ==================== 页面切换 ====================
+        function navigate(direction) {
+            if (isTransitioning) return;
+
+            const newIndex = direction === 'next'
+                ? Math.min(currentIndex + 1, milestones.length - 1)
+                : Math.max(currentIndex - 1, 0);
+
+            if (newIndex === currentIndex) return;
+
+            isTransitioning = true;
+
+            const portrait = isMobilePortrait();
+            const outClass = portrait
+                ? (direction === 'next' ? 'slide-out-portrait-up'   : 'slide-out-portrait-down')
+                : (direction === 'next' ? 'slide-out-left'           : 'slide-out-right');
+            const inClass = portrait
+                ? (direction === 'next' ? 'slide-in-portrait-from-bottom' : 'slide-in-portrait-from-top')
+                : (direction === 'next' ? 'slide-in-from-right'           : 'slide-in-from-left');
+            const duration = portrait ? 500 : 600;
+
+            // 退出动画
+            mainScreen.classList.add(outClass);
+
+            setTimeout(() => {
+                currentIndex = newIndex;
+                renderPage(currentIndex);
+                updateIndicators();
+                if (portrait) window.scrollTo(0, 0);
+                mainScreen.classList.remove(outClass);
+
+                // 入场动画
+                mainScreen.classList.add(inClass);
+                setTimeout(() => {
+                    mainScreen.classList.remove(inClass);
+                    isTransitioning = false;
+                }, duration);
+            }, duration);
+        }
+
+        function jumpTo(index) {
+            if (index === currentIndex || isTransitioning) return;
+            navigate(index > currentIndex ? 'next' : 'prev');
+        }
+
+        // ==================== 更新指示器 ====================
+        function updateIndicators() {
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === milestones.length - 1;
+
+            // 移动端：让活跃圆点滚动到可见区域中央
+            const activeDot = indicators.querySelector('.dot.active');
+            if (activeDot) {
+                activeDot.scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        // ==================== 照片查看器 ====================
+        function bindPhotoClicks() {
+            document.querySelectorAll('.polaroid').forEach((polaroid) => {
+                const index = parseInt(polaroid.dataset.index);
+                polaroid.onclick = () => openPhotoViewer(index);
+            });
+        }
+
+        function openPhotoViewer(startIndex) {
+            const m = milestones[currentIndex];
+            // 合并照片：优先 photos（PPT原图），不足5张则从 resources.images 补充
+            let photos = [];
+
+            // 1. 先添加所有 photos
+            if (m.photos && m.photos.length > 0) {
+                photos = [...m.photos];
+            }
+
+            // 2. 如果不足5张，从 resources.images 补充
+            if (photos.length < 5 && m.resources && m.resources.images && m.resources.images.length > 0) {
+                const needed = 5 - photos.length;
+                photos = [...photos, ...m.resources.images.slice(0, needed)];
+            }
+
+            // 3. 最多取5张
+            photos = photos.slice(0, 5);
+
+            let currentPhotoIndex = startIndex;
+
+            // 创建查看器
+            const viewer = document.createElement('div');
+            viewer.className = 'photo-viewer';
+            viewer.innerHTML = `
+                <button class="close-viewer">✕</button>
+                <button class="photo-prev">◀</button>
+                <img src="${photos[currentPhotoIndex]}" class="viewer-photo">
+                <button class="photo-next">▶</button>
+                <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
+            `;
+            document.body.appendChild(viewer);
+
+            // 关闭
+            viewer.querySelector('.close-viewer').onclick = () => viewer.remove();
+
+            // 上一张
+            viewer.querySelector('.photo-prev').onclick = () => {
+                currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
+                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+
+            // 下一张
+            viewer.querySelector('.photo-next').onclick = () => {
+                currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
+                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+
+            // 键盘控制
+            const handleKey = (e) => {
+                if (e.key === 'Escape') viewer.remove();
+                if (e.key === 'ArrowLeft') viewer.querySelector('.photo-prev').click();
+                if (e.key === 'ArrowRight') viewer.querySelector('.photo-next').click();
+            };
+            document.addEventListener('keydown', handleKey);
+
+            // 清理事件监听
+            const observer = new MutationObserver(() => {
+                if (!document.body.contains(viewer)) {
+                    document.removeEventListener('keydown', handleKey);
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true });
+        }
+
+        // ==================== 触摸滑动支持（移动端） ====================
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
+        }, { passive: true });
+
+        function isMobilePortrait() {
+            return window.matchMedia('(max-width: 768px) and (orientation: portrait)').matches;
+        }
+
+        document.addEventListener('touchend', (e) => {
+            if (isTransitioning) return;
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            const dy = e.changedTouches[0].clientY - touchStartY;
+
+            if (isMobilePortrait()) {
+                // 竖屏：检测垂直滑动 + 滚动边界触发翻页
+                if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 50) {
+                    const atBottom = window.scrollY + window.innerHeight >= document.body.scrollHeight - 10;
+                    const atTop    = window.scrollY <= 10;
+                    if (dy < 0 && atBottom) navigate('next'); // 手指上滑 + 在底部 → 下一页
+                    if (dy > 0 && atTop)    navigate('prev'); // 手指下滑 + 在顶部 → 上一页
+                }
+            } else {
+                // 横屏/桌面：水平滑动翻页
+                if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+                    if (dx < 0) navigate('next');
+                    else        navigate('prev');
+                }
+            }
+        }, { passive: true });
+
+        // ==================== 事件绑定 ====================
+        prevBtn.onclick = () => navigate('prev');
+        nextBtn.onclick = () => navigate('next');
+
+        // 键盘导航
+        document.addEventListener('keydown', (e) => {
+            if (isTransitioning) return;
+            if (e.key === 'ArrowRight') navigate('next');
+            else if (e.key === 'ArrowLeft') navigate('prev');
+        });
+
+        // ==================== 启动应用 ====================
+        init();
+    </script>
+</body>
+
+</html>
