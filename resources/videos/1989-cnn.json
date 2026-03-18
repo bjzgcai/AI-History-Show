@@ -1,0 +1,21 @@
+{
+  "event_id": "1989-cnn",
+  "event_title": "卷积神经网络",
+  "year": 1989,
+  "candidate_videos": [
+    {
+      "id": "FwFduRA_L6Q",
+      "url": "https://www.youtube.com/watch?v=FwFduRA_L6Q",
+      "embed_url": "https://www.youtube.com/embed/FwFduRA_L6Q",
+      "title": "Convolutional Network Demo from 1989",
+      "channel": "Yann LeCun",
+      "duration": "1:02",
+      "views": "142,863回視聴",
+      "thumbnail": "https://img.youtube.com/vi/FwFduRA_L6Q/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/FwFduRA_L6Q/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

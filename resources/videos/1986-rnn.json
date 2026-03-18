@@ -1,0 +1,21 @@
+{
+  "event_id": "1986-rnn",
+  "event_title": "循环神经网络",
+  "year": 1986,
+  "candidate_videos": [
+    {
+      "id": "AsNTP8Kwu80",
+      "url": "https://www.youtube.com/watch?v=AsNTP8Kwu80",
+      "embed_url": "https://www.youtube.com/embed/AsNTP8Kwu80",
+      "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
+      "channel": "StatQuest with Josh Starmer",
+      "duration": "16:37",
+      "views": "935,182回視聴",
+      "thumbnail": "https://img.youtube.com/vi/AsNTP8Kwu80/maxresdefault.jpg",
+      "thumbnail_hq": "https://img.youtube.com/vi/AsNTP8Kwu80/hqdefault.jpg",
+      "source": "YouTube"
+    }
+  ],
+  "total_count": 1,
+  "created_at": "2026-03-13 09:05:38"
+}

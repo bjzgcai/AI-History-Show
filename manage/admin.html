@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI展览 · 内容管理</title>
+<style>
+:root {
+  --bg:        #0B0E14;
+  --bg2:       #12161f;
+  --bg3:       #1a2030;
+  --border:    rgba(138,180,248,.18);
+  --text:      #e8eaed;
+  --muted:     #8AB4F8;
+  --accent:    #FFD166;
+  --danger:    #f28b82;
+  --success:   #81c995;
+  --radius:    8px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; display: flex; flex-direction: column; }
+
+/* ── Header ─────────────────────────────────────── */
+header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px; border-bottom: 1px solid var(--border);
+  background: var(--bg2); flex-shrink: 0;
+}
+header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
+.header-right { display: flex; align-items: center; gap: 10px; }
+#generateOutput {
+  font-size: 12px; color: var(--success); max-width: 380px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#generateOutput.error { color: var(--danger); }
+
+/* ── Layout ──────────────────────────────────────── */
+.layout { display: flex; flex: 1; min-height: 0; }
+
+/* ── Sidebar ─────────────────────────────────────── */
+.sidebar {
+  width: 220px; flex-shrink: 0; border-right: 1px solid var(--border);
+  background: var(--bg2); display: flex; flex-direction: column; overflow-y: auto;
+}
+.sidebar-section { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.sidebar-title {
+  padding: 6px 14px; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted); cursor: default;
+}
+.sidebar-item {
+  padding: 7px 14px 7px 20px; cursor: pointer; display: flex; align-items: center; gap: 8px;
+  border-left: 3px solid transparent; transition: background .15s;
+}
+.sidebar-item:hover  { background: var(--bg3); }
+.sidebar-item.active { background: var(--bg3); border-left-color: var(--accent); color: var(--accent); }
+.sidebar-item .badge {
+  margin-left: auto; font-size: 11px; background: var(--bg3);
+  padding: 1px 6px; border-radius: 10px; color: var(--muted);
+}
+.sidebar-item.active .badge { background: var(--bg); }
+
+/* ── Main area ───────────────────────────────────── */
+.main { flex: 1; overflow-y: auto; padding: 20px; }
+
+/* ── Buttons ─────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px; border-radius: var(--radius); font-size: 13px;
+  cursor: pointer; border: 1px solid transparent; transition: opacity .15s, background .15s;
+}
+.btn:hover  { opacity: .85; }
+.btn:active { opacity: .7; }
+.btn-primary  { background: var(--accent); color: #000; font-weight: 600; border-color: var(--accent); }
+.btn-secondary{ background: transparent; color: var(--muted); border-color: var(--border); }
+.btn-danger   { background: transparent; color: var(--danger); border-color: var(--danger); }
+.btn-sm       { padding: 4px 10px; font-size: 12px; }
+.btn-icon     { padding: 4px 8px; font-size: 14px; line-height: 1; }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* ── Section header ──────────────────────────────── */
+.section-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px;
+}
+.section-header h2 { font-size: 16px; font-weight: 600; }
+
+/* ── Cards ───────────────────────────────────────── */
+.card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius);
+  margin-bottom: 12px; overflow: hidden;
+}
+.card-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; cursor: pointer; user-select: none;
+}
+.card-header:hover { background: var(--bg3); }
+.card-header .toggle { margin-left: auto; color: var(--muted); font-size: 12px; }
+.card-body { padding: 14px; border-top: 1px solid var(--border); }
+.card-body.collapsed { display: none; }
+
+/* ── Forms ───────────────────────────────────────── */
+.field { margin-bottom: 12px; }
+.field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.field input, .field textarea, .field select {
+  width: 100%; background: var(--bg); border: 1px solid var(--border);
+  color: var(--text); border-radius: var(--radius); padding: 7px 10px; font-size: 13px;
+  font-family: inherit; resize: vertical;
+}
+.field input:focus, .field textarea:focus {
+  outline: none; border-color: var(--muted);
+}
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.field-row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+
+/* ── Dynamic list (figures, images) ─────────────── */
+.dyn-list { display: flex; flex-direction: column; gap: 6px; }
+.dyn-row {
+  display: flex; align-items: center; gap: 6px;
+}
+.dyn-row input { flex: 1; }
+.dyn-add { margin-top: 6px; }
+
+/* ── Event list in sidebar ───────────────────────── */
+.event-search {
+  width: 100%; background: var(--bg); border: 1px solid var(--border);
+  color: var(--text); border-radius: var(--radius); padding: 6px 10px;
+  font-size: 13px; margin: 6px 14px; width: calc(100% - 28px);
+}
+.event-search:focus { outline: none; border-color: var(--muted); }
+
+/* ── Category cards ──────────────────────────────── */
+.cat-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,.3);
+}
+.cat-card-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 18px; cursor: pointer; user-select: none;
+  background: linear-gradient(90deg, rgba(255,209,102,.08) 0%, transparent 100%);
+  border-bottom: 1px solid transparent;
+  transition: background .15s;
+}
+.cat-card-header:hover { background: linear-gradient(90deg, rgba(255,209,102,.14) 0%, rgba(138,180,248,.05) 100%); }
+.cat-card-header .cat-index {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent); color: #000;
+  font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cat-card-header .cat-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+.cat-card-header .cat-count {
+  font-size: 11px; background: rgba(138,180,248,.15);
+  color: var(--muted); padding: 2px 10px; border-radius: 12px;
+  border: 1px solid rgba(138,180,248,.2);
+}
+.cat-card-header .cat-toggle { color: var(--muted); font-size: 13px; margin-left: 4px; }
+.cat-card-body { padding: 16px 18px; }
+.cat-card-body.collapsed { display: none; }
+.cat-card-header.open { border-bottom-color: var(--border); }
+
+/* ── Category event tags ─────────────────────────── */
+.event-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.event-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--bg3); border: 1px solid rgba(138,180,248,.25);
+  border-radius: 6px; padding: 5px 10px; font-size: 12px;
+  cursor: grab; transition: border-color .15s, background .15s;
+}
+.event-tag:hover { background: rgba(138,180,248,.08); border-color: var(--muted); }
+.event-tag:active { cursor: grabbing; opacity: .7; }
+.event-tag .tag-key { color: var(--accent); font-weight: 600; font-size: 11px; }
+.event-tag .tag-title { color: var(--text); }
+.event-tag .rm { cursor: pointer; color: var(--danger); font-size: 15px; line-height: 1; margin-left: 2px; }
+.event-tag.drag-over { border-color: var(--accent); background: rgba(255,209,102,.08); }
+
+/* ── Video picker ────────────────────────────────── */
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 8px; margin-top: 8px; }
+.video-card {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden; cursor: pointer;
+  transition: border-color .15s;
+}
+.video-card:hover { border-color: var(--muted); }
+.video-card.selected { border-color: var(--accent); }
+.video-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.video-card-info { padding: 6px 8px; }
+.video-card-title { font-size: 11px; line-height: 1.3; color: var(--text); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.video-card-meta  { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+/* ── Image picker ────────────────────────────────── */
+.img-group-title { font-size: 11px; font-weight: 700; color: var(--muted); margin: 8px 0 4px; text-transform: uppercase; letter-spacing: .05em; }
+.img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px,1fr)); gap: 6px; margin-bottom: 8px; }
+.img-card {
+  border: 2px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; cursor: pointer; position: relative;
+}
+.img-card:hover { border-color: var(--muted); }
+.img-card.selected { border-color: var(--accent); }
+.img-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.img-card .img-name { font-size: 10px; color: var(--muted); padding: 2px 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Toast ───────────────────────────────────────── */
+#toast {
+  position: fixed; bottom: 24px; right: 24px; z-index: 999;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 10px 18px; font-size: 13px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.5);
+  transform: translateY(80px); opacity: 0;
+  transition: transform .25s, opacity .25s;
+  pointer-events: none;
+}
+#toast.show { transform: translateY(0); opacity: 1; }
+#toast.success { border-color: var(--success); color: var(--success); }
+#toast.error   { border-color: var(--danger);  color: var(--danger); }
+
+/* ── Empty state ─────────────────────────────────── */
+.empty { color: var(--muted); text-align: center; padding: 40px; }
+.divider { border: none; border-top: 1px solid var(--border); margin: 12px 0; }
+
+/* ── Diff page (full-screen) ─────────────────────── */
+#diffPage {
+  display: none; position: fixed; inset: 0; z-index: 300;
+  background: var(--bg); flex-direction: column; overflow: hidden;
+}
+#diffPage.show { display: flex; }
+.diff-page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px; border-bottom: 1px solid var(--border);
+  background: var(--bg2); flex-shrink: 0;
+}
+.diff-page-header h2 { font-size: 15px; font-weight: 600; }
+.diff-page-body {
+  flex: 1; overflow-y: auto; padding: 20px 24px; max-width: 900px; width: 100%;
+  margin: 0 auto;
+}
+.diff-page-footer {
+  display: flex; gap: 8px; justify-content: flex-end;
+  padding: 12px 24px; border-top: 1px solid var(--border);
+  background: var(--bg2); flex-shrink: 0;
+}
+/* event card */
+.diff-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: 14px; overflow: hidden;
+}
+.diff-card-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+}
+.diff-card-body { padding: 12px 14px; }
+.diff-badge {
+  flex-shrink: 0; font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 3px; min-width: 42px; text-align: center;
+}
+.diff-badge.added    { background: #1a3326; color: var(--success); }
+.diff-badge.removed  { background: #331a1a; color: var(--danger); }
+.diff-badge.modified { background: #332e1a; color: var(--accent); }
+.diff-badge.unchanged{ background: var(--bg3); color: var(--muted); }
+/* field diff rows */
+.diff-field { margin-bottom: 10px; font-size: 12px; }
+.diff-field:last-child { margin-bottom: 0; }
+.diff-field-label {
+  font-size: 11px; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px;
+}
+.diff-inline { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.diff-from { color: var(--danger); text-decoration: line-through; }
+.diff-to   { color: var(--success); }
+/* text block diff (description / quote) */
+.diff-text-block {
+  border-radius: 4px; padding: 8px 10px; font-size: 12px; line-height: 1.6;
+  white-space: pre-wrap; word-break: break-all; font-family: inherit;
+}
+.diff-text-block.old { background: rgba(242,139,130,.08); color: var(--danger); border-left: 2px solid var(--danger); }
+.diff-text-block.new { background: rgba(129,201,149,.08); color: var(--success); border-left: 2px solid var(--success); }
+.diff-text-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 600px) { .diff-text-cols { grid-template-columns: 1fr; } }
+/* chips */
+.diff-chip {
+  display: inline-block; background: var(--bg3); border-radius: 3px;
+  padding: 0 5px; margin: 1px 2px; font-size: 10px; max-width: 320px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;
+}
+.diff-chip.add { color: var(--success); }
+.diff-chip.del { color: var(--danger); }
+.diff-chip.chg { color: var(--accent); }
+/* summary banner */
+.diff-summary {
+  font-size: 12px; color: var(--muted); margin-bottom: 16px;
+  padding: 8px 12px; background: var(--bg2); border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.diff-unchanged-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 8px 14px;
+  font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>AI 展览 · 内容管理</h1>
+  <div class="header-right">
+    <span id="generateOutput"></span>
+    <button class="btn btn-secondary" id="btnBackups" title="备份历史">⏱ 备份历史</button>
+    <button class="btn btn-primary" id="btnGenerate">▶ 应用数据</button>
+  </div>
+</header>
+
+<!-- 备份历史浮层 -->
+<div id="backupPanel" style="
+  display:none; position:fixed; top:52px; right:16px; z-index:200;
+  width:480px; max-height:70vh; overflow-y:auto;
+  background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius);
+  box-shadow:0 8px 32px rgba(0,0,0,.6); padding:16px;
+">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+    <span style="font-weight:600">备份历史</span>
+    <button class="btn btn-secondary btn-sm" onclick="document.getElementById('backupPanel').style.display='none'">关闭</button>
+  </div>
+  <div id="backupList"><div style="color:var(--muted);font-size:12px">加载中…</div></div>
+</div>
+
+<!-- Layout -->
+<div class="layout">
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">分类目录</div>
+      <div class="sidebar-item active" data-view="catalog" id="navCatalog">
+        📂 分类管理
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">事件</div>
+      <input class="event-search" id="eventSearch" placeholder="搜索事件…" type="text">
+      <div id="eventList"></div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <div class="empty">加载中…</div>
+  </main>
+</div>
+
+<!-- Diff 确认页（全屏） -->
+<div id="diffPage">
+  <div class="diff-page-header">
+    <h2>应用数据 — 变更确认</h2>
+    <button class="btn btn-secondary btn-sm" onclick="closeDiffPanel()">✕ 取消</button>
+  </div>
+  <div class="diff-page-body" id="diffContent"></div>
+  <div class="diff-page-footer">
+    <button class="btn btn-secondary" onclick="closeDiffPanel()">取消</button>
+    <button class="btn btn-primary" id="btnConfirmApply" style="opacity:0.5;cursor:not-allowed;">确认应用</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<script>
+'use strict';
+
+// ─── State ────────────────────────────────────────────────────────────────────
+let catalog = null;   // { categories: [...] }
+let events  = null;   // { key: {...} }
+let videos  = null;   // { key: [candidateVideo,...] }
+let images  = null;   // { key: { sub: [path,...] } }
+let currentView = 'catalog';
+let currentEventKey = null;
+let unsavedEvents = false;
+
+// ─── API helpers ──────────────────────────────────────────────────────────────
+async function api(method, path, body) {
+  const opts = { method, headers: {} };
+  if (body !== undefined) {
+    opts.headers['Content-Type'] = 'application/json';
+    opts.body = JSON.stringify(body);
+  }
+  const res = await fetch(path, opts);
+  const text = await res.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    throw new Error(`服务器响应非 JSON (HTTP ${res.status})：${text.slice(0, 120)}\n请重启 server.js`);
+  }
+  if (!res.ok) throw new Error(data.error || res.statusText);
+  return data;
+}
+
+// ─── Toast ────────────────────────────────────────────────────────────────────
+let toastTimer;
+function toast(msg, type = 'success') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = `show ${type}`;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.className = ''; }, 2500);
+}
+
+// ─── Load all data ────────────────────────────────────────────────────────────
+async function loadAll() {
+  const [c, e, v, i] = await Promise.all([
+    api('GET', '/api/catalog'),
+    api('GET', '/api/events'),
+    api('GET', '/api/videos'),
+    api('GET', '/api/images'),
+  ]);
+  catalog = c;
+  events  = e;
+  videos  = v;
+  images  = i;
+  renderSidebar();
+  renderView();
+}
+
+// ─── Sidebar ──────────────────────────────────────────────────────────────────
+function renderSidebar() {
+  const list = document.getElementById('eventList');
+  const q = document.getElementById('eventSearch').value.toLowerCase();
+  const keys = Object.keys(events || {});
+  list.innerHTML = keys
+    .filter(k => !q || k.includes(q) || (events[k].title || '').toLowerCase().includes(q))
+    .map(k => {
+      const active = currentView === 'event' && currentEventKey === k ? ' active' : '';
+      return `<div class="sidebar-item${active}" data-view="event" data-key="${k}" onclick="selectEvent('${k}')">
+        <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${events[k].title || k}</span>
+        <span class="badge">${events[k].year || ''}</span>
+      </div>`;
+    }).join('');
+
+  // Highlight active nav
+  document.querySelectorAll('.sidebar-item[data-view="catalog"]').forEach(el => {
+    el.classList.toggle('active', currentView === 'catalog');
+  });
+}
+
+document.getElementById('eventSearch').addEventListener('input', renderSidebar);
+document.getElementById('navCatalog').addEventListener('click', () => {
+  currentView = 'catalog';
+  currentEventKey = null;
+  renderSidebar();
+  renderView();
+});
+
+function selectEvent(key) {
+  currentView = 'event';
+  currentEventKey = key;
+  renderSidebar();
+  renderView();
+}
+
+// ─── Main render router ───────────────────────────────────────────────────────
+function renderView() {
+  if (currentView === 'catalog') renderCatalog();
+  else if (currentView === 'event') renderEventEditor(currentEventKey);
+}
+
+// ─── 应用数据（先展示差异，确认后生成）────────────────────────────────────────
+document.getElementById('btnGenerate').addEventListener('click', async () => {
+  const btn = document.getElementById('btnGenerate');
+  const out = document.getElementById('generateOutput');
+  btn.disabled = true;
+  btn.textContent = '加载中…';
+  out.textContent = '';
+  out.className = '';
+  try {
+    const diff = await api('GET', '/api/generate/diff');
+    renderDiffPanel(diff);
+    document.getElementById('diffPage').classList.add('show');
+  } catch (e) {
+    out.className = 'error';
+    out.textContent = e.message;
+    toast(e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '▶ 应用数据';
+  }
+});
+
+function closeDiffPanel() {
+  document.getElementById('diffPage').classList.remove('show');
+}
+
+function renderDiffPanel(diff) {
+  const el = document.getElementById('diffContent');
+  document.getElementById('btnConfirmApply').onclick = () => { toast('权限未开放', 'error'); };
+
+  if (diff.firstGeneration) {
+    const n = diff.newKeys ? diff.newKeys.length : diff.totalEvents;
+    el.innerHTML = `
+      <div class="diff-summary">首次生成 milestones-data.js，共 <strong style="color:var(--text)">${n}</strong> 个里程碑事件</div>
+    `;
+    return;
+  }
+
+  const total = diff.added.length + diff.modified.length + diff.removed.length;
+
+  if (total === 0 && !diff.categoryChanged) {
+    el.innerHTML = `<div style="color:var(--muted);text-align:center;padding:40px 0;font-size:14px">
+      ✓ 无变化，当前 milestones-data.js 已是最新
+    </div>`;
+    return;
+  }
+
+  const catNote = diff.categoryChanged
+    ? `&ensp;·&ensp;<span style="color:var(--accent)">分类顺序已变化（${diff.appliedCategoryOrder.join(' → ')} ⟹ ${diff.newCategoryOrder.join(' → ')}）</span>`
+    : '';
+  let html = `<div class="diff-summary">
+    共 <strong style="color:var(--text)">${total}</strong> 处变更${catNote}
+  </div>`;
+
+  // ── 新增事件 ──────────────────────────────────────────────────
+  for (const item of diff.added) {
+    html += `<div class="diff-card">
+      <div class="diff-card-header">
+        <span class="diff-badge added">新增</span>
+        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="color:var(--muted);font-size:11px">${item.key}</span>
+      </div>
+      <div class="diff-card-body" style="font-size:12px;color:var(--muted)">
+        ${item.year ? `<span style="color:var(--accent)">${item.year}</span>` : ''}
+        ${item.location ? `&ensp;·&ensp;${esc(item.location)}` : ''}
+        ${item.figureCount ? `&ensp;·&ensp;${item.figureCount} 人物` : ''}
+        ${item.imageCount  ? `&ensp;·&ensp;${item.imageCount} 图片` : ''}
+        ${item.videoCount  ? `&ensp;·&ensp;${item.videoCount} 视频` : ''}
+      </div>
+    </div>`;
+  }
+
+  // ── 删除事件 ──────────────────────────────────────────────────
+  for (const item of diff.removed) {
+    html += `<div class="diff-card">
+      <div class="diff-card-header">
+        <span class="diff-badge removed">删除</span>
+        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="color:var(--muted);font-size:11px">${item.key}</span>
+      </div>
+      <div class="diff-card-body" style="font-size:12px;color:var(--muted)">
+        ${item.year ? `<span style="color:var(--danger)">${item.year}</span>` : ''}
+        ${item.category ? `&ensp;·&ensp;${esc(item.category)}` : ''}
+      </div>
+    </div>`;
+  }
+
+  // ── 修改事件 ──────────────────────────────────────────────────
+  for (const item of diff.modified) {
+    const c = item.changes || {};
+    let bodyHtml = '';
+
+    if (c.title) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">标题</div>
+        <div class="diff-inline">
+          <span class="diff-from">${esc(c.title.from)}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${esc(c.title.to)}</span>
+        </div>
+      </div>`;
+    }
+    if (c.year) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">年份</div>
+        <div class="diff-inline">
+          <span class="diff-from">${c.year.from}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${c.year.to}</span>
+        </div>
+      </div>`;
+    }
+    if (c.location) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">地点</div>
+        <div class="diff-inline">
+          <span class="diff-from">${esc(c.location.from)}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${esc(c.location.to)}</span>
+        </div>
+      </div>`;
+    }
+    if (c.description) {
+      const descFrom = typeof c.description === 'object' ? (c.description.from || '') : '';
+      const descTo   = typeof c.description === 'object' ? (c.description.to   || '') : '';
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">描述</div>
+        <div class="diff-text-cols">
+          <div>
+            <div style="font-size:10px;color:var(--danger);margin-bottom:3px">原内容</div>
+            <div class="diff-text-block old">${esc(descFrom)}</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--success);margin-bottom:3px">新内容</div>
+            <div class="diff-text-block new">${esc(descTo)}</div>
+          </div>
+        </div>
+      </div>`;
+    }
+    if (c.quote) {
+      // 从 HTML 中提取纯文本用于展示（applied.quote 是 HTML）
+      const oldText = (typeof c.quote === 'object' && c.quote.from ? c.quote.from : '').replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ');
+      const newText = (c.quote.quoteText || '') + (c.quote.quotePage ? `\n— ${c.quote.quotePage}` : '');
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">引言</div>
+        <div class="diff-text-cols">
+          <div>
+            <div style="font-size:10px;color:var(--danger);margin-bottom:3px">原内容</div>
+            <div class="diff-text-block old">${esc(oldText)}</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--success);margin-bottom:3px">新内容</div>
+            <div class="diff-text-block new">${esc(newText)}</div>
+          </div>
+        </div>
+      </div>`;
+    }
+    if (c.figures) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">人物</div><div>`;
+      if (c.figures.added.length)
+        bodyHtml += c.figures.added.map(n => `<span class="diff-chip add">+${esc(n)}</span>`).join('');
+      if (c.figures.removed.length)
+        bodyHtml += c.figures.removed.map(n => `<span class="diff-chip del">-${esc(n)}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+    if (c.images) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">图片</div><div>`;
+      if (c.images.added.length)
+        bodyHtml += c.images.added.map(p => `<span class="diff-chip add" title="${esc(p)}">+${esc(p.split('/').pop())}</span>`).join('');
+      if (c.images.removed.length)
+        bodyHtml += c.images.removed.map(p => `<span class="diff-chip del" title="${esc(p)}">-${esc(p.split('/').pop())}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+    if (c.videos) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">视频</div><div>`;
+      if (c.videos.added.length)
+        bodyHtml += c.videos.added.map(id => `<span class="diff-chip add" title="${esc(id)}">+${esc(id)}</span>`).join('');
+      if (c.videos.removed.length)
+        bodyHtml += c.videos.removed.map(id => `<span class="diff-chip del" title="${esc(id)}">-${esc(id)}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+
+    html += `<div class="diff-card">
+      <div class="diff-card-header">
+        <span class="diff-badge modified">修改</span>
+        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="color:var(--muted);font-size:11px">${item.key}</span>
+      </div>
+      ${bodyHtml ? `<div class="diff-card-body">${bodyHtml}</div>` : ''}
+    </div>`;
+  }
+
+  // ── 未变化（汇总） ─────────────────────────────────────────────
+  if (diff.unchanged && diff.unchanged.length > 0) {
+    html += `<div class="diff-unchanged-card">
+      <span class="diff-badge unchanged">未变化</span>
+      <span>${diff.unchanged.length} 个事件无修改</span>
+    </div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+async function doGenerate() {
+  const btn = document.getElementById('btnGenerate');
+  const out = document.getElementById('generateOutput');
+  btn.disabled = true;
+  btn.textContent = '生成中…';
+  out.textContent = '';
+  out.className = '';
+  try {
+    const res = await api('POST', '/api/generate');
+    if (res.ok) {
+      out.className = '';
+      out.textContent = res.stdout.trim().split('\n').pop() || '生成成功';
+      toast('milestones-data.js 已更新', 'success');
+    } else {
+      out.className = 'error';
+      out.textContent = res.stderr || '生成失败';
+      toast('生成失败，请检查控制台', 'error');
+    }
+  } catch (e) {
+    out.className = 'error';
+    out.textContent = e.message;
+    toast(e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '▶ 应用数据';
+  }
+}
+
+// ─── Backup panel ─────────────────────────────────────────────────────────────
+document.getElementById('btnBackups').addEventListener('click', async () => {
+  const panel = document.getElementById('backupPanel');
+  const isOpen = panel.style.display !== 'none';
+  panel.style.display = isOpen ? 'none' : 'block';
+  if (!isOpen) await loadBackupList();
+});
+
+async function loadBackupList() {
+  const el = document.getElementById('backupList');
+  el.innerHTML = '<div style="color:var(--muted);font-size:12px">加载中…</div>';
+  try {
+    const list = await api('GET', '/api/backups');
+    if (!list.length) {
+      el.innerHTML = '<div style="color:var(--muted);font-size:12px">暂无备份</div>';
+      return;
+    }
+    // 按原始文件名分组
+    const groups = {};
+    for (const b of list) {
+      if (!groups[b.file]) groups[b.file] = [];
+      groups[b.file].push(b);
+    }
+    let html = '';
+    for (const [file, items] of Object.entries(groups)) {
+      html += `<div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:8px 0 4px">${file}</div>`;
+      for (const b of items) {
+        const ts  = b.mtime.replace('T', ' ').slice(0, 19);
+        const kb  = (b.size / 1024).toFixed(1);
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)">
+          <span style="flex:1;font-size:12px;color:var(--text)">${ts}</span>
+          <span style="font-size:11px;color:var(--muted)">${kb} KB</span>
+          <button class="btn btn-secondary btn-sm" onclick="restoreBackup('${b.name}','${file}')">恢复</button>
+        </div>`;
+      }
+    }
+    el.innerHTML = html;
+  } catch (e) {
+    el.innerHTML = `<div style="color:var(--danger);font-size:12px">${e.message}</div>`;
+  }
+}
+
+async function restoreBackup(name, file) {
+  if (!confirm(`确认恢复"${file}"到备份版本？\n当前版本将先自动备份，再被替换。`)) return;
+  try {
+    await api('POST', '/api/backups/restore', { name });
+    toast(`${file} 已恢复`, 'success');
+    // 重新加载内存数据
+    if (file === 'events.js') {
+      events = await api('GET', '/api/events');
+      renderSidebar();
+      if (currentView === 'event' && currentEventKey) renderEventEditor(currentEventKey);
+    } else if (file === 'catalog.js') {
+      catalog = await api('GET', '/api/catalog');
+      if (currentView === 'catalog') renderCatalog();
+    }
+    await loadBackupList();
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// CATALOG VIEW
+// ═══════════════════════════════════════════════════════════════════════════════
+function renderCatalog() {
+  const main = document.getElementById('main');
+  main.innerHTML = `
+    <div class="section-header">
+      <h2>分类目录</h2>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-secondary" onclick="addCategory()">+ 新增分类</button>
+        <button class="btn btn-secondary" onclick="showNewEventDialog()">+ 新增事件</button>
+        <button class="btn btn-primary" onclick="saveCatalog()">保存目录</button>
+      </div>
+    </div>
+    <div id="catList"></div>
+  `;
+  renderCategoryList();
+}
+
+function renderCategoryList() {
+  const list = document.getElementById('catList');
+  if (!list) return;
+  list.innerHTML = catalog.categories.map((cat, ci) => buildCatCard(cat, ci)).join('');
+}
+
+function buildCatCard(cat, ci) {
+  const eventKeys = Object.keys(events || {});
+  const addOptions = eventKeys
+    .filter(k => !cat.events.includes(k))
+    .map(k => `<option value="${k}">${k} — ${(events[k]||{}).title||''}</option>`)
+    .join('');
+
+  const tags = cat.events.map((key, ei) => {
+    const ev = (events || {})[key] || {};
+    const title = ev.title || '';
+    return `<div class="event-tag" draggable="true"
+      ondragstart="onTagDragStart(event,${ci},${ei})"
+      ondragover="onTagDragOver(event)"
+      ondrop="onTagDrop(event,${ci},${ei})"
+      title="${esc(title)}" onclick_stop="true">
+      <span class="tag-key">${esc(key)}</span>
+      ${title ? `<span class="tag-title">${esc(title)}</span>` : ''}
+      <span class="rm" onclick="event.stopPropagation();removeCatEvent(${ci},${ei})">×</span>
+    </div>`;
+  }).join('');
+
+  return `
+    <div class="cat-card" id="cat-${ci}">
+      <div class="cat-card-header open" id="cat-${ci}-header" onclick="toggleCatCard(${ci})">
+        <div class="cat-index">${ci + 1}</div>
+        <div class="cat-name" id="cat-${ci}-name">${esc(cat.name || '（未命名分类）')}</div>
+        <div class="cat-count">${cat.events.length} 个事件</div>
+        <div class="cat-toggle" id="cat-${ci}-toggle">▾</div>
+      </div>
+      <div class="cat-card-body" id="cat-${ci}-body">
+        <div class="field-row" style="margin-bottom:14px">
+          <div class="field">
+            <label>分类完整名称</label>
+            <input value="${esc(cat.name)}" oninput="catalog.categories[${ci}].name=this.value;updateCatHeader(${ci})">
+          </div>
+          <div class="field">
+            <label>副标题（短标题）</label>
+            <input value="${esc(cat.subtitle)}" oninput="catalog.categories[${ci}].subtitle=this.value">
+          </div>
+        </div>
+
+        <div class="field">
+          <label style="font-size:12px;font-weight:600;color:var(--accent);margin-bottom:8px;display:block">
+            事件列表 <span style="font-weight:400;color:var(--muted)">（拖拽排序，× 移除，点击标签跳转编辑）</span>
+          </label>
+          ${cat.events.length === 0
+            ? `<div style="padding:12px 0;color:var(--muted);font-size:12px;font-style:italic">暂无事件，请从下方添加</div>`
+            : `<div class="event-tags" id="tags-${ci}">${tags}</div>`
+          }
+          <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+            <select id="addEvtSel-${ci}" style="flex:1;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:6px 8px;font-size:12px">
+              <option value="">— 添加已有事件 —</option>${addOptions}
+            </select>
+            <button class="btn btn-secondary btn-sm" onclick="addCatEvent(${ci})">添加</button>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
+          <button class="btn btn-danger btn-sm" onclick="deleteCategory(${ci})">删除分类</button>
+          <button class="btn btn-secondary btn-sm" onclick="moveCat(${ci},-1)">↑ 上移</button>
+          <button class="btn btn-secondary btn-sm" onclick="moveCat(${ci},1)">↓ 下移</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function toggleCard(id) {
+  const body = document.getElementById(id + '-body');
+  if (!body) return;
+  body.classList.toggle('collapsed');
+  const header = document.querySelector(`#${id} .toggle`);
+  if (header) header.textContent = body.classList.contains('collapsed') ? '▸' : '▾';
+}
+
+function toggleCatCard(ci) {
+  const body   = document.getElementById(`cat-${ci}-body`);
+  const toggle = document.getElementById(`cat-${ci}-toggle`);
+  const header = document.getElementById(`cat-${ci}-header`);
+  if (!body) return;
+  const collapsed = body.classList.toggle('collapsed');
+  if (toggle) toggle.textContent = collapsed ? '▸' : '▾';
+  if (header) header.classList.toggle('open', !collapsed);
+}
+
+function updateCatHeader(ci) {
+  const nameEl  = document.getElementById(`cat-${ci}-name`);
+  if (nameEl) nameEl.textContent = catalog.categories[ci].name || '（未命名分类）';
+}
+
+function addCategory() {
+  catalog.categories.push({ name: '新分类', subtitle: '新分类', events: [] });
+  renderCategoryList();
+}
+
+function deleteCategory(ci) {
+  if (!confirm(`确定删除分类"${catalog.categories[ci].name}"？`)) return;
+  catalog.categories.splice(ci, 1);
+  renderCategoryList();
+}
+
+function moveCat(ci, dir) {
+  const cats = catalog.categories;
+  const ni = ci + dir;
+  if (ni < 0 || ni >= cats.length) return;
+  [cats[ci], cats[ni]] = [cats[ni], cats[ci]];
+  renderCategoryList();
+}
+
+function addCatEvent(ci) {
+  const sel = document.getElementById(`addEvtSel-${ci}`);
+  if (!sel.value) return;
+  catalog.categories[ci].events.push(sel.value);
+  renderCategoryList();
+}
+
+function removeCatEvent(ci, ei) {
+  catalog.categories[ci].events.splice(ei, 1);
+  renderCategoryList();
+}
+
+// Drag & drop for tags
+let dragFrom = null;
+function onTagDragStart(e, ci, ei) {
+  dragFrom = { ci, ei };
+  e.dataTransfer.effectAllowed = 'move';
+}
+function onTagDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+}
+function onTagDrop(e, ci, ei) {
+  e.preventDefault();
+  if (!dragFrom || dragFrom.ci !== ci) return;
+  const arr = catalog.categories[ci].events;
+  const [item] = arr.splice(dragFrom.ei, 1);
+  arr.splice(ei, 0, item);
+  dragFrom = null;
+  renderCategoryList();
+}
+
+async function saveCatalog() {
+  try {
+    await api('POST', '/api/catalog', catalog);
+    toast('目录已保存', 'success');
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// EVENT EDITOR
+// ═══════════════════════════════════════════════════════════════════════════════
+function renderEventEditor(key) {
+  const ev = events[key];
+  const main = document.getElementById('main');
+
+  main.innerHTML = `
+    <div class="section-header">
+      <h2><span style="color:var(--muted);font-weight:400;font-size:13px">${key}</span></h2>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-danger btn-sm" onclick="deleteEvent('${key}')">删除事件</button>
+        <button class="btn btn-secondary btn-sm" onclick="showNewEventDialog()">+ 新增事件</button>
+        <button class="btn btn-primary" onclick="saveEvents()">保存事件</button>
+      </div>
+    </div>
+
+    <!-- Basic fields -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('sec-basic')">
+        <span style="font-weight:600">基本信息</span><span class="toggle">▾</span>
+      </div>
+      <div class="card-body" id="sec-basic-body">
+        <div class="field-row">
+          <div class="field">
+            <label>标题</label>
+            <input id="f-title" value="${esc(ev.title||'')}" oninput="ev_set('title',this.value)">
+          </div>
+          <div class="field">
+            <label>年份</label>
+            <input id="f-year" type="number" value="${ev.year||''}" oninput="ev_set('year',+this.value)">
+          </div>
+        </div>
+        <div class="field">
+          <label>描述</label>
+          <textarea id="f-desc" rows="4" oninput="ev_set('description',this.value)">${esc(ev.description||'')}</textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('sec-loc')">
+        <span style="font-weight:600">地点</span><span class="toggle">▾</span>
+      </div>
+      <div class="card-body" id="sec-loc-body">
+        <div class="field-row3">
+          <div class="field">
+            <label>地点名称</label>
+            <input value="${esc((ev.location||{}).name||'')}" oninput="ev_setLoc('name',this.value)">
+          </div>
+          <div class="field">
+            <label>国家/地区</label>
+            <input value="${esc((ev.location||{}).country||'')}" oninput="ev_setLoc('country',this.value)">
+          </div>
+          <div class="field">
+            <label>坐标 [lat, lng]</label>
+            <input id="f-coords" value="${coordsToStr(ev)}" oninput="ev_setCoords(this.value)" placeholder="43.70, -72.28">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Figures -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('sec-fig')">
+        <span style="font-weight:600">关键人物</span><span class="toggle">▾</span>
+      </div>
+      <div class="card-body" id="sec-fig-body">
+        <div class="dyn-list" id="figures-list"></div>
+        <button class="btn btn-secondary btn-sm dyn-add" onclick="addFigure()">+ 添加人物</button>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('sec-quote')">
+        <span style="font-weight:600">引言</span><span class="toggle">▾</span>
+      </div>
+      <div class="card-body" id="sec-quote-body">
+        <div class="field">
+          <label>引言正文（\\n 换行）</label>
+          <textarea rows="4" oninput="ev_set('quoteText',this.value)">${esc(ev.quoteText||'')}</textarea>
+        </div>
+        <div class="field">
+          <label>来源说明</label>
+          <input value="${esc(ev.quotePage||'')}" oninput="ev_set('quotePage',this.value)" placeholder="摘自PPT第X页">
+        </div>
+      </div>
+    </div>
+
+    <!-- Images -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('sec-img')">
+        <span style="font-weight:600">图片</span><span class="toggle">▾</span>
+      </div>
+      <div class="card-body" id="sec-img-body">
+        <div id="img-picker"></div>
+      </div>
+    </div>
+
+    <!-- Videos -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('sec-vid')">
+        <span style="font-weight:600">视频</span><span class="toggle">▾</span>
+      </div>
+      <div class="card-body" id="sec-vid-body">
+        <div id="vid-picker"></div>
+      </div>
+    </div>
+  `;
+
+  renderFigures(key);
+  renderImagePicker(key);
+  renderVideoPicker(key);
+}
+
+// helpers to mutate events[key]
+function ev_set(field, val) {
+  if (!currentEventKey) return;
+  events[currentEventKey][field] = val;
+}
+function ev_setLoc(field, val) {
+  if (!currentEventKey) return;
+  if (!events[currentEventKey].location) events[currentEventKey].location = {};
+  events[currentEventKey].location[field] = val;
+}
+function coordsToStr(ev) {
+  const c = (ev.location||{}).coordinates;
+  if (!c) return '';
+  if (Array.isArray(c[0])) return c.map(p => p.join(',')).join(' | ');
+  return c.join(', ');
+}
+function ev_setCoords(val) {
+  if (!currentEventKey) return;
+  const ev = events[currentEventKey];
+  if (!ev.location) ev.location = {};
+  const parts = val.split('|').map(s => s.trim());
+  if (parts.length > 1) {
+    ev.location.coordinates = parts.map(p => p.split(',').map(Number));
+  } else {
+    ev.location.coordinates = val.split(',').map(Number);
+  }
+}
+
+// Figures
+function renderFigures(key) {
+  const ev = events[key];
+  const list = document.getElementById('figures-list');
+  if (!list) return;
+  const figs = ev.figures || [];
+  list.innerHTML = figs.map((f, i) => `
+    <div class="dyn-row">
+      <input value="${esc(f.name||'')}" placeholder="姓名" oninput="setFigure('${key}',${i},'name',this.value)">
+      <input value="${esc(f.role||'')}" placeholder="职位/角色" oninput="setFigure('${key}',${i},'role',this.value)">
+      <button class="btn btn-danger btn-icon" onclick="removeFigure('${key}',${i})">×</button>
+    </div>`).join('');
+}
+function setFigure(key, i, field, val) {
+  if (!events[key].figures) events[key].figures = [];
+  events[key].figures[i][field] = val;
+}
+function addFigure() {
+  if (!currentEventKey) return;
+  if (!events[currentEventKey].figures) events[currentEventKey].figures = [];
+  events[currentEventKey].figures.push({ name: '', role: '' });
+  renderFigures(currentEventKey);
+}
+function removeFigure(key, i) {
+  events[key].figures.splice(i, 1);
+  renderFigures(key);
+}
+
+// Image picker
+const IMG_SUBDIRS = ['historical', 'people', 'papers', 'architecture', 'uploaded', 'downloaded'];
+
+function subdirSelect(id) {
+  return `<select id="${id}" style="background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:6px 8px;font-size:12px">
+    ${IMG_SUBDIRS.map(s => `<option value="${s}">${s}</option>`).join('')}
+  </select>`;
+}
+
+function renderImagePicker(key) {
+  const el = document.getElementById('img-picker');
+  if (!el) return;
+  const ev = events[key];
+  const selected = new Set(ev.images || []);
+  const avail = (images && images[key]) || {};
+
+  let html = '';
+
+  // ── 现有文件 ──
+  if (Object.keys(avail).length) {
+    for (const [sub, paths] of Object.entries(avail)) {
+      html += `<div class="img-group-title">${sub}</div><div class="img-grid">`;
+      for (const p of paths) {
+        const sel = selected.has(p) ? ' selected' : '';
+        const fname = p.split('/').pop();
+        html += `<div class="img-card${sel}" onclick="toggleImage('${key}','${p}',this)">
+          <img src="/${p}" loading="lazy" onerror="this.style.display='none'">
+          <div class="img-name">${fname}</div>
+        </div>`;
+      }
+      html += '</div>';
+    }
+  } else {
+    html += `<div style="color:var(--muted);font-size:12px;margin-bottom:8px">resources/images/${key}/ 下暂无图片</div>`;
+  }
+
+  // ── 上传 / URL下载 / 手动路径 ──
+  html += `<hr class="divider">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px">
+
+    <div class="field">
+      <label>本地上传</label>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+        <input type="file" id="imgFileInput" accept="image/*" multiple
+          style="flex:1;min-width:0;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:5px 8px;font-size:12px">
+        ${subdirSelect('imgUploadSubdir')}
+        <button class="btn btn-secondary btn-sm" onclick="uploadImages('${key}')">上传</button>
+      </div>
+      <div id="img-upload-status" style="font-size:11px;color:var(--muted);margin-top:4px"></div>
+    </div>
+
+    <div class="field">
+      <label>URL 下载</label>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+        <input id="imgUrlInput" placeholder="https://..." type="url"
+          style="flex:1;min-width:0;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:12px">
+        ${subdirSelect('imgDownloadSubdir')}
+        <button class="btn btn-secondary btn-sm" onclick="downloadImage('${key}')">下载</button>
+      </div>
+      <div id="img-download-status" style="font-size:11px;color:var(--muted);margin-top:4px"></div>
+    </div>
+
+  </div>
+
+  <div class="field" style="margin-top:8px">
+    <label>已选图片列表</label>
+    <div class="dyn-list" id="img-manual-list"></div>
+  </div>`;
+
+  el.innerHTML = html;
+  renderManualImages(key);
+}
+
+function toggleImage(key, path, card) {
+  const arr = events[key].images = events[key].images || [];
+  const idx = arr.indexOf(path);
+  if (idx === -1) { arr.push(path); card.classList.add('selected'); }
+  else            { arr.splice(idx, 1); card.classList.remove('selected'); }
+  renderManualImages(key);
+}
+
+async function uploadImages(key) {
+  const input  = document.getElementById('imgFileInput');
+  const subdir = document.getElementById('imgUploadSubdir').value;
+  const status = document.getElementById('img-upload-status');
+  if (!input.files.length) { status.textContent = '请先选择文件'; return; }
+
+  let done = 0;
+  status.style.color = 'var(--muted)';
+  status.textContent = `上传中 0/${input.files.length}…`;
+
+  for (const file of input.files) {
+    try {
+      const buf = await file.arrayBuffer();
+      const res = await fetch(
+        `/api/images/upload?eventKey=${encodeURIComponent(key)}&subdir=${encodeURIComponent(subdir)}&filename=${encodeURIComponent(file.name)}`,
+        { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: buf }
+      );
+      const data = await res.json();
+      if (!data.ok) throw new Error(data.error || '上传失败');
+      if (!events[key].images) events[key].images = [];
+      if (!events[key].images.includes(data.path)) events[key].images.push(data.path);
+      done++;
+      status.textContent = `上传中 ${done}/${input.files.length}…`;
+    } catch (e) {
+      status.style.color = 'var(--danger)';
+      status.textContent = `${file.name} 失败：${e.message}`;
+      return;
+    }
+  }
+
+  status.style.color = 'var(--success)';
+  status.textContent = `✓ 已上传 ${done} 张`;
+  input.value = '';
+  // 刷新图片目录缓存
+  images = await api('GET', '/api/images');
+  renderImagePicker(key);
+}
+
+async function downloadImage(key) {
+  const input  = document.getElementById('imgUrlInput');
+  const subdir = document.getElementById('imgDownloadSubdir').value;
+  const status = document.getElementById('img-download-status');
+  const url    = input.value.trim();
+  if (!url) { status.textContent = '请输入 URL'; return; }
+
+  status.style.color = 'var(--muted)';
+  status.textContent = '下载中…';
+  try {
+    const data = await api('POST', '/api/images/download', { eventKey: key, url, subdir });
+    if (!events[key].images) events[key].images = [];
+    if (!events[key].images.includes(data.path)) events[key].images.push(data.path);
+    status.style.color = 'var(--success)';
+    status.textContent = `✓ 已保存：${data.path.split('/').pop()}`;
+    input.value = '';
+    images = await api('GET', '/api/images');
+    renderImagePicker(key);
+  } catch (e) {
+    status.style.color = 'var(--danger)';
+    status.textContent = `失败：${e.message}`;
+  }
+}
+
+function removeManualImage(key, path) {
+  const arr = events[key].images || [];
+  const idx = arr.indexOf(path);
+  if (idx !== -1) arr.splice(idx, 1);
+  renderManualImages(key);
+  document.querySelectorAll('.img-card').forEach(el => {
+    if (el.querySelector('.img-name') && el.textContent.includes(path.split('/').pop())) el.classList.remove('selected');
+  });
+}
+function renderManualImages(key) {
+  const el = document.getElementById('img-manual-list');
+  if (!el) return;
+  const paths = events[key].images || [];
+  if (!paths.length) { el.innerHTML = `<div style="font-size:12px;color:var(--muted)">（无）</div>`; return; }
+  el.innerHTML = paths.map((p, i) => `
+    <div class="dyn-row">
+      <span style="width:24px;text-align:center;font-size:11px;color:var(--muted);flex-shrink:0">${i+1}</span>
+      <span style="flex:1;font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p}</span>
+      <button class="btn btn-secondary btn-icon" onclick="moveImg('${key}',${i},-1)" title="上移">↑</button>
+      <button class="btn btn-secondary btn-icon" onclick="moveImg('${key}',${i},1)"  title="下移">↓</button>
+      <button class="btn btn-danger btn-icon"    onclick="removeManualImage('${key}','${p}')">×</button>
+    </div>`).join('');
+}
+function moveImg(key, i, dir) {
+  const arr = events[key].images || [];
+  const ni = i + dir;
+  if (ni < 0 || ni >= arr.length) return;
+  [arr[i], arr[ni]] = [arr[ni], arr[i]];
+  renderManualImages(key);
+}
+
+// ─── Video helpers ────────────────────────────────────────────────────────────
+
+/** 从 URL 自动推导平台标签 */
+function detectVideoSource(url) {
+  if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
+  if (/bilibili\.com/.test(url))           return 'Bilibili';
+  if (/vimeo\.com/.test(url))              return 'Vimeo';
+  return 'Web';
+}
+
+/** 从 YouTube URL 提取 ID（返回 null 若非 YouTube） */
+function ytId(url) {
+  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  return m ? m[1] : null;
+}
+
+/** 从视频数组项（字符串或对象）取得用于候选列表比对的 ID */
+function videoItemId(item) {
+  if (typeof item === 'string') return item;
+  return item.id || item.url || '';
+}
+
+// Video picker
+function renderVideoPicker(key) {
+  const el = document.getElementById('vid-picker');
+  if (!el) return;
+  const ev = events[key];
+  // 已选 ID 集合（兼容字符串和对象）
+  const selectedIds = new Set((ev.videos || []).map(videoItemId));
+  const candidateList = (videos && videos[key]) || [];
+
+  // 将已选视频中不在候选列表里的条目补充进去，保证选了几个就显示几个框
+  const candidateIds = new Set(candidateList.map(v => v.id));
+  const extraEntries = (ev.videos || [])
+    .map(item => {
+      if (typeof item === 'string') {
+        if (candidateIds.has(item)) return null;
+        // YouTube ID，构造最小展示对象
+        return { id: item, url: `https://www.youtube.com/watch?v=${item}`,
+                 embed_url: `https://www.youtube.com/embed/${item}`,
+                 title: item, channel: '', duration: '',
+                 thumbnail: `https://img.youtube.com/vi/${item}/maxresdefault.jpg`,
+                 thumbnail_hq: `https://img.youtube.com/vi/${item}/hqdefault.jpg`, source: 'YouTube' };
+      }
+      if (typeof item === 'object' && item.id && !candidateIds.has(item.id)) {
+        return { id: item.id,
+                 url: item.url || `https://www.youtube.com/watch?v=${item.id}`,
+                 embed_url: item.embed_url || `https://www.youtube.com/embed/${item.id}`,
+                 title: item.title || item.id, channel: item.channel || '',
+                 duration: item.duration || '',
+                 thumbnail: item.thumbnail || `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
+                 thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
+                 source: item.source || 'YouTube' };
+      }
+      return null;
+    })
+    .filter(Boolean);
+  const avail = [...candidateList, ...extraEntries];
+
+  let html = '';
+  if (avail.length) {
+    html += `<div style="font-size:12px;color:var(--muted);margin-bottom:6px">点击选择/取消候选视频：</div>`;
+    html += '<div class="video-grid">';
+    for (const v of avail) {
+      const sel = selectedIds.has(v.id) ? ' selected' : '';
+      html += `<div class="video-card${sel}" onclick="toggleVideo('${key}','${v.id}',this)">
+        <img src="${v.thumbnail_hq||v.thumbnail||''}" loading="lazy" onerror="this.src=''">
+        <div class="video-card-info">
+          <div class="video-card-title">${esc(v.title||v.id)}</div>
+          <div class="video-card-meta">${esc(v.channel||'')} · ${v.duration||''}</div>
+        </div>
+      </div>`;
+    }
+    html += '</div>';
+  } else {
+    html += `<div style="color:var(--muted);font-size:12px;margin-bottom:8px">resources/videos/${key}.json 中无候选视频</div>`;
+  }
+
+  // 手动添加：URL 输入（支持任意平台）
+  html += `<hr class="divider">
+    <div class="field" style="margin-top:8px">
+      <label>添加视频 URL（YouTube / Bilibili / Vimeo / 其他）</label>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <input id="vidUrlInput" type="url" placeholder="https://…"
+          style="flex:1;min-width:160px;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px"
+          oninput="previewVideoUrl(this.value)">
+        <input id="vidTitleInput" placeholder="标题（可选）"
+          style="flex:1;min-width:120px;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px">
+        <button class="btn btn-secondary btn-sm" onclick="addVideoUrl('${key}')">添加</button>
+      </div>
+      <div id="vid-url-preview" style="margin-top:6px;font-size:11px;color:var(--muted)"></div>
+    </div>
+    <div class="field">
+      <label>已选视频列表</label>
+      <div class="dyn-list" id="vid-manual-list"></div>
+    </div>`;
+
+  el.innerHTML = html;
+  renderManualVideos(key);
+}
+
+function previewVideoUrl(url) {
+  const preview = document.getElementById('vid-url-preview');
+  if (!preview) return;
+  if (!url) { preview.textContent = ''; return; }
+  const src = detectVideoSource(url);
+  const id  = ytId(url);
+  preview.innerHTML = `平台：${src}${id ? `&nbsp;·&nbsp;ID: ${id}` : ''}`;
+}
+
+function toggleVideo(key, id, card) {
+  const arr = events[key].videos = events[key].videos || [];
+  const existing = arr.find(i => videoItemId(i) === id);
+  if (!existing) {
+    arr.push(id); // 候选列表中的项保持字符串 ID（generate.js 会从 JSON 查找元数据）
+    card.classList.add('selected');
+  } else {
+    const idx = arr.indexOf(existing);
+    arr.splice(idx, 1);
+    card.classList.remove('selected');
+  }
+  renderManualVideos(key);
+}
+
+function addVideoUrl(key) {
+  const urlInput   = document.getElementById('vidUrlInput');
+  const titleInput = document.getElementById('vidTitleInput');
+  const raw        = urlInput.value.trim();
+  if (!raw) return;
+
+  if (!events[key].videos) events[key].videos = [];
+
+  // 提取 YouTube ID：从完整 URL 解析，或直接输入的 11 位 ID 字符串
+  const id = ytId(raw) || (/^[A-Za-z0-9_-]{11}$/.test(raw) ? raw : null);
+
+  // YouTube → 只存字符串 ID；非 YouTube → 只存字符串 URL（id 与 url 一致）
+  const storeValue = id ? id : raw;
+
+  const alreadyExists = events[key].videos.some(i => videoItemId(i) === storeValue);
+  if (!alreadyExists) events[key].videos.push(storeValue);
+
+  urlInput.value = '';
+  if (titleInput) titleInput.value = '';
+  document.getElementById('vid-url-preview').textContent = '';
+  renderManualVideos(key);
+  renderVideoPicker(key);
+}
+
+function removeVideo(key, itemId) {
+  const arr = events[key].videos || [];
+  const idx = arr.findIndex(i => videoItemId(i) === itemId);
+  if (idx !== -1) arr.splice(idx, 1);
+  renderManualVideos(key);
+  // 取消候选列表高亮
+  document.querySelectorAll('.video-card.selected').forEach(el => {
+    if (el.getAttribute('onclick') && el.getAttribute('onclick').includes(itemId)) {
+      el.classList.remove('selected');
+    }
+  });
+}
+
+function renderManualVideos(key) {
+  const el = document.getElementById('vid-manual-list');
+  if (!el) return;
+  const items = events[key].videos || [];
+  if (!items.length) { el.innerHTML = `<div style="font-size:12px;color:var(--muted)">（无）</div>`; return; }
+  el.innerHTML = items.map(item => {
+    const isStr  = typeof item === 'string';
+    const id     = isStr ? item : (item.id || '');
+    const url    = isStr ? '' : (item.url || '');
+    const title  = isStr ? id : (item.title || item.url || id);
+    const src    = isStr ? 'YouTube ID' : (item.source || 'Web');
+    const link   = isStr
+      ? `https://www.youtube.com/watch?v=${id}`
+      : (item.url || '#');
+    const dispId = isStr ? id : (id || url);
+    return `<div class="dyn-row">
+      <span style="font-size:11px;background:var(--bg3);border-radius:3px;padding:1px 5px;color:var(--muted);flex-shrink:0">${src}</span>
+      <span style="flex:1;font-size:12px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(title)}">${esc(title)||dispId}</span>
+      <a href="${link}" target="_blank" style="font-size:11px;color:var(--muted);white-space:nowrap">预览</a>
+      <button class="btn btn-danger btn-icon" onclick="removeVideo('${key}','${esc(dispId)}')">×</button>
+    </div>`;
+  }).join('');
+}
+
+// Save events
+async function saveEvents() {
+  try {
+    await api('POST', '/api/events', events);
+    toast('事件已保存', 'success');
+    renderSidebar(); // refresh titles
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+// Delete event
+async function deleteEvent(key) {
+  if (!confirm(`确定删除事件"${events[key].title||key}"？`)) return;
+  delete events[key];
+  // Also remove from all categories
+  for (const cat of catalog.categories) {
+    cat.events = cat.events.filter(k => k !== key);
+  }
+  currentEventKey = null;
+  currentView = 'catalog';
+  await Promise.all([
+    api('POST', '/api/events', events),
+    api('POST', '/api/catalog', catalog),
+  ]);
+  toast(`事件 ${key} 已删除`, 'success');
+  renderSidebar();
+  renderView();
+}
+
+// ─── New event modal ──────────────────────────────────────────────────────────
+
+function showNewEventDialog() {
+  if (document.getElementById('newEventModal')) return;
+
+  const catOptions = (catalog.categories || [])
+    .map((c, i) => `<option value="${i}">${esc(c.name)}</option>`)
+    .join('');
+
+  const overlay = document.createElement('div');
+  overlay.id = 'newEventModal';
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;';
+  overlay.innerHTML = `
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+                width:600px;max-width:94vw;max-height:88vh;overflow-y:auto;
+                box-shadow:0 12px 48px rgba(0,0,0,.8);">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;
+                  padding:16px 20px;border-bottom:1px solid var(--border);
+                  background:linear-gradient(90deg,rgba(255,209,102,.08) 0%,transparent 100%)">
+        <span style="font-size:15px;font-weight:700;color:var(--accent)">+ 新增事件</span>
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('newEventModal').remove()">✕</button>
+      </div>
+
+      <div style="padding:20px;display:flex;flex-direction:column;gap:14px">
+
+        <!-- Key + 年份 -->
+        <div class="field-row">
+          <div class="field">
+            <label>事件 Key <span style="color:var(--danger)">*</span>
+              <span style="font-weight:400;color:var(--muted);font-size:11px">（唯一标识，如 2026-gpt5）</span>
+            </label>
+            <input id="ne-key" placeholder="yyyy-slug" oninput="neAutoKey()">
+          </div>
+          <div class="field">
+            <label>年份 <span style="color:var(--danger)">*</span></label>
+            <input id="ne-year" type="number" value="${new Date().getFullYear()}" min="1900" max="2100">
+          </div>
+        </div>
+
+        <!-- 标题 -->
+        <div class="field">
+          <label>标题 <span style="color:var(--danger)">*</span></label>
+          <input id="ne-title" placeholder="事件标题">
+        </div>
+
+        <!-- 所属分类 -->
+        <div class="field">
+          <label>加入分类
+            <span style="font-weight:400;color:var(--muted);font-size:11px">（可选，也可之后在分类管理中添加）</span>
+          </label>
+          <select id="ne-cat" style="width:100%;background:var(--bg);border:1px solid var(--border);
+                  color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px">
+            <option value="">— 暂不加入分类 —</option>
+            ${catOptions}
+          </select>
+        </div>
+
+        <!-- 地点 -->
+        <div class="field-row">
+          <div class="field">
+            <label>地点名称</label>
+            <input id="ne-locname" placeholder="如：达特茅斯学院">
+          </div>
+          <div class="field">
+            <label>国家/地区</label>
+            <input id="ne-loccountry" placeholder="如：美国, 新罕布什尔州">
+          </div>
+        </div>
+
+        <!-- 描述 -->
+        <div class="field">
+          <label>描述</label>
+          <textarea id="ne-desc" rows="3" placeholder="事件简介…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+        </div>
+
+        <!-- 引言 -->
+        <div class="field-row">
+          <div class="field">
+            <label>引言正文</label>
+            <textarea id="ne-quote" rows="2" placeholder="引言内容…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+          </div>
+          <div class="field">
+            <label>引言来源</label>
+            <input id="ne-quotepage" placeholder="摘自PPT第X页">
+          </div>
+        </div>
+
+        <!-- 初始化目录 -->
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;font-size:12px;color:var(--muted)">
+          <span style="color:var(--text);font-weight:600">📁 资源目录</span>
+          保存后将自动在 <code style="background:var(--bg);padding:1px 5px;border-radius:3px">resources/images/&lt;key&gt;/</code>
+          下创建子目录（historical / people / papers / architecture），
+          并初始化 <code style="background:var(--bg);padding:1px 5px;border-radius:3px">resources/videos/&lt;key&gt;.json</code>。
+        </div>
+
+        <!-- 按钮 -->
+        <div style="display:flex;gap:10px;justify-content:flex-end;padding-top:4px;border-top:1px solid var(--border)">
+          <button class="btn btn-secondary" onclick="document.getElementById('newEventModal').remove()">取消</button>
+          <button class="btn btn-primary" id="ne-submit" onclick="submitNewEvent()">创建并开始编辑</button>
+        </div>
+      </div>
+    </div>`;
+
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+  document.getElementById('ne-key').focus();
+}
+
+function neAutoKey() {
+  // 根据 key 输入自动同步年份（若 key 以 4 位数字开头）
+  const k = document.getElementById('ne-key').value.trim();
+  const m = k.match(/^(\d{4})/);
+  if (m) {
+    const yr = document.getElementById('ne-year');
+    if (yr && !yr._edited) yr.value = m[1];
+  }
+}
+
+async function submitNewEvent() {
+  const key    = document.getElementById('ne-key').value.trim();
+  const title  = document.getElementById('ne-title').value.trim();
+  const year   = parseInt(document.getElementById('ne-year').value) || new Date().getFullYear();
+  const catIdx = document.getElementById('ne-cat').value;
+  const locName    = document.getElementById('ne-locname').value.trim();
+  const locCountry = document.getElementById('ne-loccountry').value.trim();
+  const desc    = document.getElementById('ne-desc').value.trim();
+  const quote   = document.getElementById('ne-quote').value.trim();
+  const quotePg = document.getElementById('ne-quotepage').value.trim();
+
+  if (!key)   { toast('请输入事件 Key', 'error'); return; }
+  if (!title) { toast('请输入标题', 'error'); return; }
+  if (events[key]) { toast('该 Key 已存在', 'error'); return; }
+
+  const btn = document.getElementById('ne-submit');
+  btn.disabled = true;
+  btn.textContent = '创建中…';
+
+  try {
+    // 1. 调用后端初始化资源目录
+    await api('POST', '/api/events/init', { key });
+
+    // 2. 构造新事件
+    events[key] = {
+      year,
+      title,
+      location: { name: locName, country: locCountry, coordinates: [0, 0] },
+      description: desc,
+      figures: [],
+      quoteText: quote,
+      quotePage: quotePg,
+      images: [],
+      videos: [],
+    };
+
+    // 3. 若选了分类，加入
+    if (catIdx !== '') {
+      const idx = parseInt(catIdx);
+      if (!isNaN(idx) && catalog.categories[idx]) {
+        if (!catalog.categories[idx].events.includes(key)) {
+          catalog.categories[idx].events.push(key);
+        }
+      }
+    }
+
+    // 4. 保存 events + catalog
+    await Promise.all([
+      api('POST', '/api/events', events),
+      api('POST', '/api/catalog', catalog),
+    ]);
+
+    // 5. 刷新图片缓存
+    images = await api('GET', '/api/images');
+
+    document.getElementById('newEventModal').remove();
+    toast(`事件 ${key} 已创建`, 'success');
+    renderSidebar();
+    selectEvent(key);
+  } catch (e) {
+    toast(e.message, 'error');
+    btn.disabled = false;
+    btn.textContent = '创建并开始编辑';
+  }
+}
+
+// ─── Utilities ────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── Boot ─────────────────────────────────────────────────────────────────────
+loadAll().catch(e => {
+  document.getElementById('main').innerHTML = `<div class="empty" style="color:var(--danger)">加载失败：${e.message}<br><small>请确认 manage/server.js 正在运行</small></div>`;
+});
+</script>
+</body>
+</html>
