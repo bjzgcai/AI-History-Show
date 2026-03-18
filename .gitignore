@@ -1,0 +1,13 @@
+# Claude Code workspace
+.claude/
+
+# Node.js
+node_modules/
+*.log
+
+# Auto-generated backups
+manage/.backups/
+
+# OS
+.DS_Store
+Thumbs.db
