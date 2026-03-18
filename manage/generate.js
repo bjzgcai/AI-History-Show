@@ -71,16 +71,45 @@ for (const cat of categories) {
 
     for (const item of ev.videos || []) {
       if (typeof item === 'string') {
-        // 字符串：YouTube ID，从 resources/videos/{key}.json 查找元数据
-        if (catalog === null) {
-          catalog = loadVideoCatalog(key);
-          if (catalog === null) {
-            console.warn(`[警告] 事件 "${key}" 包含视频 ID，但 resources/videos/${key}.json 不存在，字符串 ID 已跳过。`);
+        if (item.startsWith('http://') || item.startsWith('https://')) {
+          // 完整 URL（Bilibili 等）：先查 JSON 候选列表，找不到则直接构建
+          if (catalog === null) catalog = loadVideoCatalog(key);
+          const fromCatalog = catalog && catalog.find(v => v.url === item);
+          if (fromCatalog) {
+            videos.push({
+              id:        fromCatalog.id || fromCatalog.url,
+              url:       fromCatalog.url,
+              embed_url: fromCatalog.embed_url || deriveEmbedUrl(fromCatalog.url),
+              title:     fromCatalog.title    || '',
+              channel:   fromCatalog.channel  || '',
+              duration:  fromCatalog.duration || '',
+              thumbnail: fromCatalog.thumbnail || '',
+              source:    fromCatalog.source   || detectSource(fromCatalog.url),
+            });
+          } else {
+            videos.push({
+              id:        item,
+              url:       item,
+              embed_url: deriveEmbedUrl(item),
+              title:     '',
+              channel:   '',
+              duration:  '',
+              thumbnail: '',
+              source:    detectSource(item),
+            });
           }
-        }
-        if (catalog) {
-          const v = lookupVideo(catalog, item, key);
-          if (v) videos.push(v);
+        } else {
+          // 短字符串：YouTube ID，从 resources/videos/{key}.json 查找元数据
+          if (catalog === null) {
+            catalog = loadVideoCatalog(key);
+            if (catalog === null) {
+              console.warn(`[警告] 事件 "${key}" 包含视频 ID，但 resources/videos/${key}.json 不存在，字符串 ID 已跳过。`);
+            }
+          }
+          if (catalog) {
+            const v = lookupVideo(catalog, item, key);
+            if (v) videos.push(v);
+          }
         }
       } else if (item && typeof item === 'object' && item.url) {
         // 对象：直接使用 URL，自动推导 embed_url 和 source

@@ -9,6 +9,7 @@ const http         = require('http');
 const https        = require('https');
 const fs           = require('fs');
 const path         = require('path');
+const vm           = require('vm');
 const { execFile } = require('child_process');
 const { URL }      = require('url');
 
@@ -48,10 +49,10 @@ function err(res, msg, status = 500) {
 
 function readBody(req) {
   return new Promise((resolve, reject) => {
-    let data = '';
-    req.on('data', chunk => { data += chunk; });
+    const chunks = [];
+    req.on('data', chunk => chunks.push(chunk));
     req.on('end', () => {
-      try { resolve(JSON.parse(data)); }
+      try { resolve(JSON.parse(Buffer.concat(chunks).toString('utf8'))); }
       catch (e) { reject(new Error('Invalid JSON')); }
     });
     req.on('error', reject);
@@ -83,6 +84,14 @@ function parseQuery(urlStr) {
     if (k) q[k] = v || '';
   }
   return q;
+}
+
+/** 根据 URL 检测视频平台 */
+function detectVideoSource(url) {
+  if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
+  if (/bilibili\.com/.test(url))          return 'Bilibili';
+  if (/vimeo\.com/.test(url))             return 'Vimeo';
+  return 'Web';
 }
 
 /** 清理文件名，只保留安全字符 */
@@ -226,8 +235,103 @@ const routes = {
   },
 
   'POST /api/events': async (req, res) => {
-    try { writeEvents(await readBody(req)); json(res, { ok: true }); }
-    catch (e) { err(res, e.message); }
+    try {
+      const eventsData = await readBody(req);
+      const videosDir  = path.join(ROOT, 'resources', 'videos');
+
+      // 同步视频：将含元数据的对象写入 resources/videos/{key}.json，
+      // 同时将 events 中的条目规范化为纯字符串：
+      //   YouTube（有 id）→ 字符串 ID；非 YouTube（只有 url）→ 字符串 URL
+      for (const [eventKey, ev] of Object.entries(eventsData)) {
+        if (!Array.isArray(ev.videos)) continue;
+        ev.videos = ev.videos.map(item => {
+          // 已是字符串：短 ID 不变；完整 URL 写入 JSON 后保留
+          if (typeof item === 'string') {
+            if (item.startsWith('http://') || item.startsWith('https://')) {
+              // 非 YouTube URL → 写入 candidate_videos JSON
+              const jsonPath = path.join(videosDir, `${eventKey}.json`);
+              let catalog = null;
+              if (fs.existsSync(jsonPath)) {
+                try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
+              }
+              if (!catalog || typeof catalog !== 'object') {
+                catalog = { event_id: eventKey, event_title: ev.title || eventKey, year: ev.year || 0, candidate_videos: [], total_count: 0, created_at: new Date().toISOString().slice(0, 19).replace('T', ' ') };
+              }
+              if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
+              const alreadyExists = catalog.candidate_videos.some(v => v.url === item);
+              if (!alreadyExists) {
+                catalog.candidate_videos.push({ url: item, title: '', source: detectVideoSource(item) });
+                catalog.total_count = catalog.candidate_videos.length;
+                mkdirp(videosDir);
+                atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
+              }
+            }
+            return item; // 字符串原样保留
+          }
+          if (typeof item !== 'object') return item;
+          // 无 url 且无 id → 丢弃（无效条目）
+          if (!item.id && !item.url) return null;
+
+          // 写入 candidate_videos JSON
+          const jsonPath = path.join(videosDir, `${eventKey}.json`);
+          let catalog = null;
+          if (fs.existsSync(jsonPath)) {
+            try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
+          }
+          if (!catalog || typeof catalog !== 'object') {
+            catalog = {
+              event_id:         eventKey,
+              event_title:      ev.title || eventKey,
+              year:             ev.year  || 0,
+              candidate_videos: [],
+              total_count:      0,
+              created_at:       new Date().toISOString().slice(0, 19).replace('T', ' '),
+            };
+          }
+          if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
+
+          if (item.id) {
+            // YouTube 视频：按 id 去重，写入后规范化为纯字符串 ID
+            const alreadyExists = catalog.candidate_videos.some(v => v.id === item.id);
+            if (!alreadyExists) {
+              catalog.candidate_videos.push({
+                id:           item.id,
+                url:          item.url          || `https://www.youtube.com/watch?v=${item.id}`,
+                embed_url:    item.embed_url    || `https://www.youtube.com/embed/${item.id}`,
+                title:        item.title        || '',
+                channel:      item.channel      || '',
+                duration:     item.duration     || '',
+                views:        item.views        || '',
+                thumbnail:    item.thumbnail    || `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
+                thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
+                source:       'YouTube',
+              });
+              catalog.total_count = catalog.candidate_videos.length;
+              mkdirp(videosDir);
+              atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
+            }
+            return item.id; // 规范化为纯字符串 ID
+          } else {
+            // 非 YouTube 视频（Bilibili 等）：按 url 去重，写入 JSON，events 中保留对象
+            const alreadyExists = catalog.candidate_videos.some(v => v.url === item.url);
+            if (!alreadyExists) {
+              catalog.candidate_videos.push({
+                url:    item.url,
+                title:  item.title  || '',
+                source: item.source || 'Web',
+              });
+              catalog.total_count = catalog.candidate_videos.length;
+              mkdirp(videosDir);
+              atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
+            }
+            return item.url; // 规范化为纯字符串 URL
+          }
+        }).filter(Boolean);
+      }
+
+      writeEvents(eventsData);
+      json(res, { ok: true });
+    } catch (e) { err(res, e.message); }
   },
 
   'GET /api/videos': (req, res) => {
@@ -313,6 +417,179 @@ const routes = {
 
       const relPath = path.relative(ROOT, dest).replace(/\\/g, '/');
       json(res, { ok: true, path: relPath });
+    } catch (e) { err(res, e.message); }
+  },
+
+  // 差异预览：比较当前 manage/ 配置与已应用的 milestones-data.js
+  'GET /api/generate/diff': (req, res) => {
+    try {
+      const catalog   = freshRequire(path.join(MANAGE, 'catalog.js'));
+      const eventsMap = freshRequire(path.join(MANAGE, 'events.js'));
+
+      // 新目录中所有 key（按 catalog 顺序）
+      const newKeys = [];
+      for (const cat of catalog.categories || []) {
+        for (const key of cat.events || []) {
+          if (!newKeys.includes(key)) newKeys.push(key);
+        }
+      }
+
+      // 解析已应用的 milestones-data.js
+      const milestonePath = path.join(ROOT, 'milestones-data.js');
+      if (!fs.existsSync(milestonePath)) {
+        json(res, { firstGeneration: true, totalEvents: newKeys.length, newKeys });
+        return;
+      }
+
+      let appliedMilestones;
+      try {
+        const src = fs.readFileSync(milestonePath, 'utf8');
+        // const 顶级声明不会成为 sandbox 属性，替换为 var 使其可读取
+        const sandbox = {};
+        vm.runInNewContext(src.replace(/\bconst\s+(milestones)\b/, 'var $1'), sandbox);
+        appliedMilestones = sandbox.milestones || [];
+      } catch (e) {
+        json(res, { firstGeneration: true, parseError: e.message, newKeys });
+        return;
+      }
+
+      // applied map: key → milestone
+      const appliedMap = {};
+      for (const m of appliedMilestones) {
+        if (m.id && m.id.startsWith('milestone-')) {
+          appliedMap[m.id.slice('milestone-'.length)] = m;
+        }
+      }
+      const appliedKeys = new Set(Object.keys(appliedMap));
+      const newKeysSet  = new Set(newKeys);
+
+      const added   = newKeys.filter(k => !appliedKeys.has(k));
+      const removed = [...appliedKeys].filter(k => !newKeysSet.has(k));
+
+      const modified  = [];
+      const unchanged = [];
+
+      for (const key of newKeys) {
+        if (!appliedKeys.has(key)) continue;
+        const ev      = eventsMap[key] || {};
+        const applied = appliedMap[key];
+
+        const changes = {};
+
+        // 标量字段：直接对比旧/新值
+        if (String(ev.title || '') !== String(applied.title || ''))
+          changes.title = { from: applied.title || '', to: ev.title || '' };
+        if (String(ev.year  || '') !== String(applied.year  || ''))
+          changes.year  = { from: applied.year,         to: ev.year };
+
+        // 描述：记录完整前后内容
+        if (String(ev.description || '') !== String(applied.description || ''))
+          changes.description = { from: applied.description || '', to: ev.description || '' };
+
+        // 引言文本（quoteText + quotePage → applied.quote）：重建 quote HTML 后比较
+        const evQuoteText = ev.quoteText || '';
+        const evQuotePage = ev.quotePage || '';
+        const rebuildQuote = (text, page) => {
+          if (!text) return '';
+          const body = text.replace(/\n/g, '<br>');
+          const src  = page ? `<br><br><span style="font-size: 0.9vw; color: var(--accent);">— ${page}</span>` : '';
+          return `"${body}"${src}`;
+        };
+        const rebuiltQuote = rebuildQuote(evQuoteText, evQuotePage);
+        if (rebuiltQuote !== String(applied.quote || ''))
+          changes.quote = { from: applied.quote || '', quoteText: evQuoteText, quotePage: evQuotePage };
+
+        // 图片：计算集合差
+        const evImgSet  = new Set(ev.images || []);
+        const appImgSet = new Set((applied.resources || {}).images || []);
+        const imgsAdded   = [...evImgSet].filter(p => !appImgSet.has(p));
+        const imgsRemoved = [...appImgSet].filter(p => !evImgSet.has(p));
+        if (imgsAdded.length || imgsRemoved.length)
+          changes.images = { added: imgsAdded, removed: imgsRemoved };
+
+        // 视频：计算集合差
+        const evVidIds  = new Set((ev.videos || []).map(v => typeof v === 'string' ? v : (v.id || v.url || '')));
+        const appVidIds = new Set(((applied.resources || {}).videos || []).map(v => v.id || v.url || ''));
+        const vidsAdded   = [...evVidIds].filter(id => !appVidIds.has(id));
+        const vidsRemoved = [...appVidIds].filter(id => !evVidIds.has(id));
+        if (vidsAdded.length || vidsRemoved.length)
+          changes.videos = { added: vidsAdded, removed: vidsRemoved };
+
+        // 地点：比较 name + country
+        const evLoc  = `${(ev.location || {}).name || ''}|${(ev.location || {}).country || ''}`;
+        const appLoc = `${(applied.location || {}).name || ''}|${(applied.location || {}).country || ''}`;
+        if (evLoc !== appLoc)
+          changes.location = {
+            from: (applied.location || {}).name || '',
+            to:   (ev.location  || {}).name || '',
+          };
+
+        // 人物：计算增删
+        const evFigNames  = new Set((ev.figures || []).map(f => f.name));
+        const appFigNames = new Set((applied.figures || []).map(f => f.name));
+        const figsAdded   = (ev.figures || []).filter(f => !appFigNames.has(f.name)).map(f => f.name);
+        const figsRemoved = (applied.figures || []).filter(f => !evFigNames.has(f.name)).map(f => f.name);
+        if (figsAdded.length || figsRemoved.length)
+          changes.figures = { added: figsAdded, removed: figsRemoved };
+
+        if (Object.keys(changes).length > 0) {
+          modified.push({ key, title: ev.title || key, year: ev.year, changes });
+        } else {
+          unchanged.push(key);
+        }
+      }
+
+      // 分类顺序对比
+      const appliedCategoryOrder = [];
+      const seen = {};
+      for (const m of appliedMilestones) {
+        if (m.category && !seen[m.category]) { seen[m.category] = true; appliedCategoryOrder.push(m.category); }
+      }
+      const newCategoryOrder = (catalog.categories || []).map(c => c.name);
+      const categoryChanged  = JSON.stringify(newCategoryOrder) !== JSON.stringify(appliedCategoryOrder);
+
+      json(res, {
+        added:   added.map(k => ({
+          key: k, title: (eventsMap[k] || {}).title || k,
+          year: (eventsMap[k] || {}).year,
+          location: ((eventsMap[k] || {}).location || {}).name || '',
+          figureCount: ((eventsMap[k] || {}).figures || []).length,
+          imageCount:  ((eventsMap[k] || {}).images  || []).length,
+          videoCount:  ((eventsMap[k] || {}).videos  || []).length,
+        })),
+        removed: removed.map(k => ({
+          key: k, title: (appliedMap[k] || {}).title || k,
+          year: (appliedMap[k] || {}).year,
+          category: (appliedMap[k] || {}).category || '',
+        })),
+        modified,
+        unchanged,
+        categoryChanged,
+        newCategoryOrder,
+        appliedCategoryOrder,
+      });
+    } catch (e) { err(res, e.message); }
+  },
+
+  // 初始化新事件的资源目录：POST /api/events/init  { key: "yyyy-slug" }
+  'POST /api/events/init': async (req, res) => {
+    try {
+      const { key } = await readBody(req);
+      if (!key || /[^a-zA-Z0-9_\-]/.test(key)) { err(res, '非法 key', 400); return; }
+      const IMG_SUBDIRS = ['historical', 'people', 'papers', 'architecture'];
+      const imgBase = path.join(ROOT, 'resources', 'images', key);
+      for (const sub of IMG_SUBDIRS) {
+        mkdirp(path.join(imgBase, sub));
+      }
+      const videoFile = path.join(ROOT, 'resources', 'videos', `${key}.json`);
+      if (!fs.existsSync(videoFile)) {
+        mkdirp(path.join(ROOT, 'resources', 'videos'));
+        atomicWrite(videoFile, JSON.stringify({
+          candidate_videos: [],
+          total_count: 0,
+        }, null, 2));
+      }
+      json(res, { ok: true, key, createdDirs: IMG_SUBDIRS.map(s => `resources/images/${key}/${s}`) });
     } catch (e) { err(res, e.message); }
   },
 

@@ -129,17 +129,55 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
 }
 .event-search:focus { outline: none; border-color: var(--muted); }
 
-/* ── Category event tags ─────────────────────────── */
-.event-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-.event-tag {
-  display: inline-flex; align-items: center; gap: 4px;
-  background: var(--bg3); border: 1px solid var(--border);
-  border-radius: 4px; padding: 3px 8px; font-size: 12px;
-  cursor: grab;
+/* ── Category cards ──────────────────────────────── */
+.cat-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,.3);
 }
+.cat-card-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 18px; cursor: pointer; user-select: none;
+  background: linear-gradient(90deg, rgba(255,209,102,.08) 0%, transparent 100%);
+  border-bottom: 1px solid transparent;
+  transition: background .15s;
+}
+.cat-card-header:hover { background: linear-gradient(90deg, rgba(255,209,102,.14) 0%, rgba(138,180,248,.05) 100%); }
+.cat-card-header .cat-index {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent); color: #000;
+  font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cat-card-header .cat-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+.cat-card-header .cat-count {
+  font-size: 11px; background: rgba(138,180,248,.15);
+  color: var(--muted); padding: 2px 10px; border-radius: 12px;
+  border: 1px solid rgba(138,180,248,.2);
+}
+.cat-card-header .cat-toggle { color: var(--muted); font-size: 13px; margin-left: 4px; }
+.cat-card-body { padding: 16px 18px; }
+.cat-card-body.collapsed { display: none; }
+.cat-card-header.open { border-bottom-color: var(--border); }
+
+/* ── Category event tags ─────────────────────────── */
+.event-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.event-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--bg3); border: 1px solid rgba(138,180,248,.25);
+  border-radius: 6px; padding: 5px 10px; font-size: 12px;
+  cursor: grab; transition: border-color .15s, background .15s;
+}
+.event-tag:hover { background: rgba(138,180,248,.08); border-color: var(--muted); }
 .event-tag:active { cursor: grabbing; opacity: .7; }
-.event-tag .rm { cursor: pointer; color: var(--danger); font-size: 14px; line-height: 1; }
-.event-tag.drag-over { border-color: var(--accent); }
+.event-tag .tag-key { color: var(--accent); font-weight: 600; font-size: 11px; }
+.event-tag .tag-title { color: var(--text); }
+.event-tag .rm { cursor: pointer; color: var(--danger); font-size: 15px; line-height: 1; margin-left: 2px; }
+.event-tag.drag-over { border-color: var(--accent); background: rgba(255,209,102,.08); }
 
 /* ── Video picker ────────────────────────────────── */
 .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 8px; margin-top: 8px; }
@@ -184,6 +222,85 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
 /* ── Empty state ─────────────────────────────────── */
 .empty { color: var(--muted); text-align: center; padding: 40px; }
 .divider { border: none; border-top: 1px solid var(--border); margin: 12px 0; }
+
+/* ── Diff page (full-screen) ─────────────────────── */
+#diffPage {
+  display: none; position: fixed; inset: 0; z-index: 300;
+  background: var(--bg); flex-direction: column; overflow: hidden;
+}
+#diffPage.show { display: flex; }
+.diff-page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px; border-bottom: 1px solid var(--border);
+  background: var(--bg2); flex-shrink: 0;
+}
+.diff-page-header h2 { font-size: 15px; font-weight: 600; }
+.diff-page-body {
+  flex: 1; overflow-y: auto; padding: 20px 24px; max-width: 900px; width: 100%;
+  margin: 0 auto;
+}
+.diff-page-footer {
+  display: flex; gap: 8px; justify-content: flex-end;
+  padding: 12px 24px; border-top: 1px solid var(--border);
+  background: var(--bg2); flex-shrink: 0;
+}
+/* event card */
+.diff-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: 14px; overflow: hidden;
+}
+.diff-card-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+}
+.diff-card-body { padding: 12px 14px; }
+.diff-badge {
+  flex-shrink: 0; font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 3px; min-width: 42px; text-align: center;
+}
+.diff-badge.added    { background: #1a3326; color: var(--success); }
+.diff-badge.removed  { background: #331a1a; color: var(--danger); }
+.diff-badge.modified { background: #332e1a; color: var(--accent); }
+.diff-badge.unchanged{ background: var(--bg3); color: var(--muted); }
+/* field diff rows */
+.diff-field { margin-bottom: 10px; font-size: 12px; }
+.diff-field:last-child { margin-bottom: 0; }
+.diff-field-label {
+  font-size: 11px; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px;
+}
+.diff-inline { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.diff-from { color: var(--danger); text-decoration: line-through; }
+.diff-to   { color: var(--success); }
+/* text block diff (description / quote) */
+.diff-text-block {
+  border-radius: 4px; padding: 8px 10px; font-size: 12px; line-height: 1.6;
+  white-space: pre-wrap; word-break: break-all; font-family: inherit;
+}
+.diff-text-block.old { background: rgba(242,139,130,.08); color: var(--danger); border-left: 2px solid var(--danger); }
+.diff-text-block.new { background: rgba(129,201,149,.08); color: var(--success); border-left: 2px solid var(--success); }
+.diff-text-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 600px) { .diff-text-cols { grid-template-columns: 1fr; } }
+/* chips */
+.diff-chip {
+  display: inline-block; background: var(--bg3); border-radius: 3px;
+  padding: 0 5px; margin: 1px 2px; font-size: 10px; max-width: 320px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;
+}
+.diff-chip.add { color: var(--success); }
+.diff-chip.del { color: var(--danger); }
+.diff-chip.chg { color: var(--accent); }
+/* summary banner */
+.diff-summary {
+  font-size: 12px; color: var(--muted); margin-bottom: 16px;
+  padding: 8px 12px; background: var(--bg2); border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.diff-unchanged-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 8px 14px;
+  font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px;
+}
 </style>
 </head>
 <body>
@@ -194,7 +311,7 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
   <div class="header-right">
     <span id="generateOutput"></span>
     <button class="btn btn-secondary" id="btnBackups" title="备份历史">⏱ 备份历史</button>
-    <button class="btn btn-primary" id="btnGenerate">▶ 生成数据</button>
+    <button class="btn btn-primary" id="btnGenerate">▶ 应用数据</button>
   </div>
 </header>
 
@@ -235,6 +352,19 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
   </main>
 </div>
 
+<!-- Diff 确认页（全屏） -->
+<div id="diffPage">
+  <div class="diff-page-header">
+    <h2>应用数据 — 变更确认</h2>
+    <button class="btn btn-secondary btn-sm" onclick="closeDiffPanel()">✕ 取消</button>
+  </div>
+  <div class="diff-page-body" id="diffContent"></div>
+  <div class="diff-page-footer">
+    <button class="btn btn-secondary" onclick="closeDiffPanel()">取消</button>
+    <button class="btn btn-primary" id="btnConfirmApply">确认应用</button>
+  </div>
+</div>
+
 <!-- Toast -->
 <div id="toast"></div>
 
@@ -258,7 +388,13 @@ async function api(method, path, body) {
     opts.body = JSON.stringify(body);
   }
   const res = await fetch(path, opts);
-  const data = await res.json();
+  const text = await res.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    throw new Error(`服务器响应非 JSON (HTTP ${res.status})：${text.slice(0, 120)}\n请重启 server.js`);
+  }
   if (!res.ok) throw new Error(data.error || res.statusText);
   return data;
 }
@@ -331,9 +467,210 @@ function renderView() {
   else if (currentView === 'event') renderEventEditor(currentEventKey);
 }
 
-// ─── Generate ─────────────────────────────────────────────────────────────────
+// ─── 应用数据（先展示差异，确认后生成）────────────────────────────────────────
 document.getElementById('btnGenerate').addEventListener('click', async () => {
-  if (!confirm('确认重新生成 milestones-data.js？\n当前文件将被覆盖（系统已自动备份）。')) return;
+  const btn = document.getElementById('btnGenerate');
+  const out = document.getElementById('generateOutput');
+  btn.disabled = true;
+  btn.textContent = '加载中…';
+  out.textContent = '';
+  out.className = '';
+  try {
+    const diff = await api('GET', '/api/generate/diff');
+    renderDiffPanel(diff);
+    document.getElementById('diffPage').classList.add('show');
+  } catch (e) {
+    out.className = 'error';
+    out.textContent = e.message;
+    toast(e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '▶ 应用数据';
+  }
+});
+
+function closeDiffPanel() {
+  document.getElementById('diffPage').classList.remove('show');
+}
+
+function renderDiffPanel(diff) {
+  const el = document.getElementById('diffContent');
+  document.getElementById('btnConfirmApply').onclick = () => { closeDiffPanel(); doGenerate(); };
+
+  if (diff.firstGeneration) {
+    const n = diff.newKeys ? diff.newKeys.length : diff.totalEvents;
+    el.innerHTML = `
+      <div class="diff-summary">首次生成 milestones-data.js，共 <strong style="color:var(--text)">${n}</strong> 个里程碑事件</div>
+    `;
+    return;
+  }
+
+  const total = diff.added.length + diff.modified.length + diff.removed.length;
+
+  if (total === 0 && !diff.categoryChanged) {
+    el.innerHTML = `<div style="color:var(--muted);text-align:center;padding:40px 0;font-size:14px">
+      ✓ 无变化，当前 milestones-data.js 已是最新
+    </div>`;
+    return;
+  }
+
+  const catNote = diff.categoryChanged
+    ? `&ensp;·&ensp;<span style="color:var(--accent)">分类顺序已变化（${diff.appliedCategoryOrder.join(' → ')} ⟹ ${diff.newCategoryOrder.join(' → ')}）</span>`
+    : '';
+  let html = `<div class="diff-summary">
+    共 <strong style="color:var(--text)">${total}</strong> 处变更${catNote}
+  </div>`;
+
+  // ── 新增事件 ──────────────────────────────────────────────────
+  for (const item of diff.added) {
+    html += `<div class="diff-card">
+      <div class="diff-card-header">
+        <span class="diff-badge added">新增</span>
+        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="color:var(--muted);font-size:11px">${item.key}</span>
+      </div>
+      <div class="diff-card-body" style="font-size:12px;color:var(--muted)">
+        ${item.year ? `<span style="color:var(--accent)">${item.year}</span>` : ''}
+        ${item.location ? `&ensp;·&ensp;${esc(item.location)}` : ''}
+        ${item.figureCount ? `&ensp;·&ensp;${item.figureCount} 人物` : ''}
+        ${item.imageCount  ? `&ensp;·&ensp;${item.imageCount} 图片` : ''}
+        ${item.videoCount  ? `&ensp;·&ensp;${item.videoCount} 视频` : ''}
+      </div>
+    </div>`;
+  }
+
+  // ── 删除事件 ──────────────────────────────────────────────────
+  for (const item of diff.removed) {
+    html += `<div class="diff-card">
+      <div class="diff-card-header">
+        <span class="diff-badge removed">删除</span>
+        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="color:var(--muted);font-size:11px">${item.key}</span>
+      </div>
+      <div class="diff-card-body" style="font-size:12px;color:var(--muted)">
+        ${item.year ? `<span style="color:var(--danger)">${item.year}</span>` : ''}
+        ${item.category ? `&ensp;·&ensp;${esc(item.category)}` : ''}
+      </div>
+    </div>`;
+  }
+
+  // ── 修改事件 ──────────────────────────────────────────────────
+  for (const item of diff.modified) {
+    const c = item.changes || {};
+    let bodyHtml = '';
+
+    if (c.title) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">标题</div>
+        <div class="diff-inline">
+          <span class="diff-from">${esc(c.title.from)}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${esc(c.title.to)}</span>
+        </div>
+      </div>`;
+    }
+    if (c.year) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">年份</div>
+        <div class="diff-inline">
+          <span class="diff-from">${c.year.from}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${c.year.to}</span>
+        </div>
+      </div>`;
+    }
+    if (c.location) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">地点</div>
+        <div class="diff-inline">
+          <span class="diff-from">${esc(c.location.from)}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${esc(c.location.to)}</span>
+        </div>
+      </div>`;
+    }
+    if (c.description) {
+      const descFrom = typeof c.description === 'object' ? (c.description.from || '') : '';
+      const descTo   = typeof c.description === 'object' ? (c.description.to   || '') : '';
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">描述</div>
+        <div class="diff-text-cols">
+          <div>
+            <div style="font-size:10px;color:var(--danger);margin-bottom:3px">原内容</div>
+            <div class="diff-text-block old">${esc(descFrom)}</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--success);margin-bottom:3px">新内容</div>
+            <div class="diff-text-block new">${esc(descTo)}</div>
+          </div>
+        </div>
+      </div>`;
+    }
+    if (c.quote) {
+      // 从 HTML 中提取纯文本用于展示（applied.quote 是 HTML）
+      const oldText = (typeof c.quote === 'object' && c.quote.from ? c.quote.from : '').replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ');
+      const newText = (c.quote.quoteText || '') + (c.quote.quotePage ? `\n— ${c.quote.quotePage}` : '');
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">引言</div>
+        <div class="diff-text-cols">
+          <div>
+            <div style="font-size:10px;color:var(--danger);margin-bottom:3px">原内容</div>
+            <div class="diff-text-block old">${esc(oldText)}</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--success);margin-bottom:3px">新内容</div>
+            <div class="diff-text-block new">${esc(newText)}</div>
+          </div>
+        </div>
+      </div>`;
+    }
+    if (c.figures) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">人物</div><div>`;
+      if (c.figures.added.length)
+        bodyHtml += c.figures.added.map(n => `<span class="diff-chip add">+${esc(n)}</span>`).join('');
+      if (c.figures.removed.length)
+        bodyHtml += c.figures.removed.map(n => `<span class="diff-chip del">-${esc(n)}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+    if (c.images) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">图片</div><div>`;
+      if (c.images.added.length)
+        bodyHtml += c.images.added.map(p => `<span class="diff-chip add" title="${esc(p)}">+${esc(p.split('/').pop())}</span>`).join('');
+      if (c.images.removed.length)
+        bodyHtml += c.images.removed.map(p => `<span class="diff-chip del" title="${esc(p)}">-${esc(p.split('/').pop())}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+    if (c.videos) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">视频</div><div>`;
+      if (c.videos.added.length)
+        bodyHtml += c.videos.added.map(id => `<span class="diff-chip add" title="${esc(id)}">+${esc(id)}</span>`).join('');
+      if (c.videos.removed.length)
+        bodyHtml += c.videos.removed.map(id => `<span class="diff-chip del" title="${esc(id)}">-${esc(id)}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+
+    html += `<div class="diff-card">
+      <div class="diff-card-header">
+        <span class="diff-badge modified">修改</span>
+        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="color:var(--muted);font-size:11px">${item.key}</span>
+      </div>
+      ${bodyHtml ? `<div class="diff-card-body">${bodyHtml}</div>` : ''}
+    </div>`;
+  }
+
+  // ── 未变化（汇总） ─────────────────────────────────────────────
+  if (diff.unchanged && diff.unchanged.length > 0) {
+    html += `<div class="diff-unchanged-card">
+      <span class="diff-badge unchanged">未变化</span>
+      <span>${diff.unchanged.length} 个事件无修改</span>
+    </div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+async function doGenerate() {
   const btn = document.getElementById('btnGenerate');
   const out = document.getElementById('generateOutput');
   btn.disabled = true;
@@ -357,9 +694,9 @@ document.getElementById('btnGenerate').addEventListener('click', async () => {
     toast(e.message, 'error');
   } finally {
     btn.disabled = false;
-    btn.textContent = '▶ 生成数据';
+    btn.textContent = '▶ 应用数据';
   }
-});
+}
 
 // ─── Backup panel ─────────────────────────────────────────────────────────────
 document.getElementById('btnBackups').addEventListener('click', async () => {
@@ -433,6 +770,7 @@ function renderCatalog() {
       <h2>分类目录</h2>
       <div style="display:flex;gap:8px">
         <button class="btn btn-secondary" onclick="addCategory()">+ 新增分类</button>
+        <button class="btn btn-secondary" onclick="showNewEventDialog()">+ 新增事件</button>
         <button class="btn btn-primary" onclick="saveCatalog()">保存目录</button>
       </div>
     </div>
@@ -454,24 +792,30 @@ function buildCatCard(cat, ci) {
     .map(k => `<option value="${k}">${k} — ${(events[k]||{}).title||''}</option>`)
     .join('');
 
-  const tags = cat.events.map((key, ei) => `
-    <div class="event-tag" draggable="true"
+  const tags = cat.events.map((key, ei) => {
+    const ev = (events || {})[key] || {};
+    const title = ev.title || '';
+    return `<div class="event-tag" draggable="true"
       ondragstart="onTagDragStart(event,${ci},${ei})"
       ondragover="onTagDragOver(event)"
-      ondrop="onTagDrop(event,${ci},${ei})">
-      <span>${key}</span>
-      <span class="rm" onclick="removeCatEvent(${ci},${ei})">×</span>
-    </div>`).join('');
+      ondrop="onTagDrop(event,${ci},${ei})"
+      title="${esc(title)}" onclick_stop="true">
+      <span class="tag-key">${esc(key)}</span>
+      ${title ? `<span class="tag-title">${esc(title)}</span>` : ''}
+      <span class="rm" onclick="event.stopPropagation();removeCatEvent(${ci},${ei})">×</span>
+    </div>`;
+  }).join('');
 
   return `
-    <div class="card" id="cat-${ci}">
-      <div class="card-header" onclick="toggleCard('cat-${ci}')">
-        <span style="font-weight:600">${cat.name || '（未命名分类）'}</span>
-        <span class="badge" style="background:var(--bg3);padding:2px 8px;border-radius:10px;font-size:11px;color:var(--muted);margin-left:8px">${cat.events.length} 个事件</span>
-        <span class="toggle">▾</span>
+    <div class="cat-card" id="cat-${ci}">
+      <div class="cat-card-header open" id="cat-${ci}-header" onclick="toggleCatCard(${ci})">
+        <div class="cat-index">${ci + 1}</div>
+        <div class="cat-name" id="cat-${ci}-name">${esc(cat.name || '（未命名分类）')}</div>
+        <div class="cat-count">${cat.events.length} 个事件</div>
+        <div class="cat-toggle" id="cat-${ci}-toggle">▾</div>
       </div>
-      <div class="card-body" id="cat-${ci}-body">
-        <div class="field-row">
+      <div class="cat-card-body" id="cat-${ci}-body">
+        <div class="field-row" style="margin-bottom:14px">
           <div class="field">
             <label>分类完整名称</label>
             <input value="${esc(cat.name)}" oninput="catalog.categories[${ci}].name=this.value;updateCatHeader(${ci})">
@@ -481,17 +825,24 @@ function buildCatCard(cat, ci) {
             <input value="${esc(cat.subtitle)}" oninput="catalog.categories[${ci}].subtitle=this.value">
           </div>
         </div>
+
         <div class="field">
-          <label>事件列表（拖拽排序，× 移除）</label>
-          <div class="event-tags" id="tags-${ci}">${tags}</div>
-          <div style="display:flex;gap:8px;align-items:center">
+          <label style="font-size:12px;font-weight:600;color:var(--accent);margin-bottom:8px;display:block">
+            事件列表 <span style="font-weight:400;color:var(--muted)">（拖拽排序，× 移除，点击标签跳转编辑）</span>
+          </label>
+          ${cat.events.length === 0
+            ? `<div style="padding:12px 0;color:var(--muted);font-size:12px;font-style:italic">暂无事件，请从下方添加</div>`
+            : `<div class="event-tags" id="tags-${ci}">${tags}</div>`
+          }
+          <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
             <select id="addEvtSel-${ci}" style="flex:1;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:6px 8px;font-size:12px">
-              <option value="">— 添加事件 —</option>${addOptions}
+              <option value="">— 添加已有事件 —</option>${addOptions}
             </select>
             <button class="btn btn-secondary btn-sm" onclick="addCatEvent(${ci})">添加</button>
           </div>
         </div>
-        <div style="display:flex;gap:8px;margin-top:4px">
+
+        <div style="display:flex;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
           <button class="btn btn-danger btn-sm" onclick="deleteCategory(${ci})">删除分类</button>
           <button class="btn btn-secondary btn-sm" onclick="moveCat(${ci},-1)">↑ 上移</button>
           <button class="btn btn-secondary btn-sm" onclick="moveCat(${ci},1)">↓ 下移</button>
@@ -508,9 +859,19 @@ function toggleCard(id) {
   if (header) header.textContent = body.classList.contains('collapsed') ? '▸' : '▾';
 }
 
+function toggleCatCard(ci) {
+  const body   = document.getElementById(`cat-${ci}-body`);
+  const toggle = document.getElementById(`cat-${ci}-toggle`);
+  const header = document.getElementById(`cat-${ci}-header`);
+  if (!body) return;
+  const collapsed = body.classList.toggle('collapsed');
+  if (toggle) toggle.textContent = collapsed ? '▸' : '▾';
+  if (header) header.classList.toggle('open', !collapsed);
+}
+
 function updateCatHeader(ci) {
-  const el = document.querySelector(`#cat-${ci} .card-header span:first-child`);
-  if (el) el.textContent = catalog.categories[ci].name || '（未命名分类）';
+  const nameEl  = document.getElementById(`cat-${ci}-name`);
+  if (nameEl) nameEl.textContent = catalog.categories[ci].name || '（未命名分类）';
 }
 
 function addCategory() {
@@ -949,7 +1310,35 @@ function renderVideoPicker(key) {
   const ev = events[key];
   // 已选 ID 集合（兼容字符串和对象）
   const selectedIds = new Set((ev.videos || []).map(videoItemId));
-  const avail = (videos && videos[key]) || [];
+  const candidateList = (videos && videos[key]) || [];
+
+  // 将已选视频中不在候选列表里的条目补充进去，保证选了几个就显示几个框
+  const candidateIds = new Set(candidateList.map(v => v.id));
+  const extraEntries = (ev.videos || [])
+    .map(item => {
+      if (typeof item === 'string') {
+        if (candidateIds.has(item)) return null;
+        // YouTube ID，构造最小展示对象
+        return { id: item, url: `https://www.youtube.com/watch?v=${item}`,
+                 embed_url: `https://www.youtube.com/embed/${item}`,
+                 title: item, channel: '', duration: '',
+                 thumbnail: `https://img.youtube.com/vi/${item}/maxresdefault.jpg`,
+                 thumbnail_hq: `https://img.youtube.com/vi/${item}/hqdefault.jpg`, source: 'YouTube' };
+      }
+      if (typeof item === 'object' && item.id && !candidateIds.has(item.id)) {
+        return { id: item.id,
+                 url: item.url || `https://www.youtube.com/watch?v=${item.id}`,
+                 embed_url: item.embed_url || `https://www.youtube.com/embed/${item.id}`,
+                 title: item.title || item.id, channel: item.channel || '',
+                 duration: item.duration || '',
+                 thumbnail: item.thumbnail || `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
+                 thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
+                 source: item.source || 'YouTube' };
+      }
+      return null;
+    })
+    .filter(Boolean);
+  const avail = [...candidateList, ...extraEntries];
 
   let html = '';
   if (avail.length) {
@@ -1019,39 +1408,25 @@ function toggleVideo(key, id, card) {
 function addVideoUrl(key) {
   const urlInput   = document.getElementById('vidUrlInput');
   const titleInput = document.getElementById('vidTitleInput');
-  const url        = urlInput.value.trim();
-  if (!url) return;
+  const raw        = urlInput.value.trim();
+  if (!raw) return;
 
   if (!events[key].videos) events[key].videos = [];
 
-  // 若是 YouTube URL，可提取 ID 并存为字符串（兼容候选列表）
-  const id = ytId(url);
-  if (id && (videos && videos[key] || []).find(v => v.id === id)) {
-    // 已在候选列表中，直接选中
-    if (!events[key].videos.includes(id)) events[key].videos.push(id);
-  } else {
-    // 存为 URL 对象
-    const src = detectVideoSource(url);
-    const obj = {
-      url,
-      title:  titleInput.value.trim() || '',
-      source: src,
-    };
-    if (id) {
-      obj.id        = id;
-      obj.embed_url = `https://www.youtube.com/embed/${id}`;
-      obj.thumbnail = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
-    }
-    // 去重
-    const alreadyExists = events[key].videos.some(i => videoItemId(i) === (id || url));
-    if (!alreadyExists) events[key].videos.push(obj);
-  }
+  // 提取 YouTube ID：从完整 URL 解析，或直接输入的 11 位 ID 字符串
+  const id = ytId(raw) || (/^[A-Za-z0-9_-]{11}$/.test(raw) ? raw : null);
+
+  // YouTube → 只存字符串 ID；非 YouTube → 只存字符串 URL（id 与 url 一致）
+  const storeValue = id ? id : raw;
+
+  const alreadyExists = events[key].videos.some(i => videoItemId(i) === storeValue);
+  if (!alreadyExists) events[key].videos.push(storeValue);
 
   urlInput.value = '';
   if (titleInput) titleInput.value = '';
   document.getElementById('vid-url-preview').textContent = '';
   renderManualVideos(key);
-  renderVideoPicker(key); // 刷新候选列表选中状态
+  renderVideoPicker(key);
 }
 
 function removeVideo(key, itemId) {
@@ -1121,48 +1496,190 @@ async function deleteEvent(key) {
   renderView();
 }
 
-// New event dialog (inline)
+// ─── New event modal ──────────────────────────────────────────────────────────
+
 function showNewEventDialog() {
-  const main = document.getElementById('main');
-  const existing = document.getElementById('new-event-form');
-  if (existing) { existing.remove(); return; }
-  const form = document.createElement('div');
-  form.id = 'new-event-form';
-  form.className = 'card';
-  form.style.marginBottom = '16px';
-  form.innerHTML = `
-    <div class="card-header"><span style="font-weight:600">新增事件</span></div>
-    <div class="card-body">
-      <div class="field-row">
-        <div class="field"><label>事件 Key（唯一标识，如 2026-gpt5）</label><input id="ne-key" placeholder="yyyy-slug"></div>
-        <div class="field"><label>标题</label><input id="ne-title" placeholder="事件标题"></div>
+  if (document.getElementById('newEventModal')) return;
+
+  const catOptions = (catalog.categories || [])
+    .map((c, i) => `<option value="${i}">${esc(c.name)}</option>`)
+    .join('');
+
+  const overlay = document.createElement('div');
+  overlay.id = 'newEventModal';
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;';
+  overlay.innerHTML = `
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+                width:600px;max-width:94vw;max-height:88vh;overflow-y:auto;
+                box-shadow:0 12px 48px rgba(0,0,0,.8);">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;
+                  padding:16px 20px;border-bottom:1px solid var(--border);
+                  background:linear-gradient(90deg,rgba(255,209,102,.08) 0%,transparent 100%)">
+        <span style="font-size:15px;font-weight:700;color:var(--accent)">+ 新增事件</span>
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('newEventModal').remove()">✕</button>
       </div>
-      <div style="display:flex;gap:8px">
-        <button class="btn btn-primary btn-sm" onclick="createEvent()">创建</button>
-        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('new-event-form').remove()">取消</button>
+
+      <div style="padding:20px;display:flex;flex-direction:column;gap:14px">
+
+        <!-- Key + 年份 -->
+        <div class="field-row">
+          <div class="field">
+            <label>事件 Key <span style="color:var(--danger)">*</span>
+              <span style="font-weight:400;color:var(--muted);font-size:11px">（唯一标识，如 2026-gpt5）</span>
+            </label>
+            <input id="ne-key" placeholder="yyyy-slug" oninput="neAutoKey()">
+          </div>
+          <div class="field">
+            <label>年份 <span style="color:var(--danger)">*</span></label>
+            <input id="ne-year" type="number" value="${new Date().getFullYear()}" min="1900" max="2100">
+          </div>
+        </div>
+
+        <!-- 标题 -->
+        <div class="field">
+          <label>标题 <span style="color:var(--danger)">*</span></label>
+          <input id="ne-title" placeholder="事件标题">
+        </div>
+
+        <!-- 所属分类 -->
+        <div class="field">
+          <label>加入分类
+            <span style="font-weight:400;color:var(--muted);font-size:11px">（可选，也可之后在分类管理中添加）</span>
+          </label>
+          <select id="ne-cat" style="width:100%;background:var(--bg);border:1px solid var(--border);
+                  color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px">
+            <option value="">— 暂不加入分类 —</option>
+            ${catOptions}
+          </select>
+        </div>
+
+        <!-- 地点 -->
+        <div class="field-row">
+          <div class="field">
+            <label>地点名称</label>
+            <input id="ne-locname" placeholder="如：达特茅斯学院">
+          </div>
+          <div class="field">
+            <label>国家/地区</label>
+            <input id="ne-loccountry" placeholder="如：美国, 新罕布什尔州">
+          </div>
+        </div>
+
+        <!-- 描述 -->
+        <div class="field">
+          <label>描述</label>
+          <textarea id="ne-desc" rows="3" placeholder="事件简介…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+        </div>
+
+        <!-- 引言 -->
+        <div class="field-row">
+          <div class="field">
+            <label>引言正文</label>
+            <textarea id="ne-quote" rows="2" placeholder="引言内容…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+          </div>
+          <div class="field">
+            <label>引言来源</label>
+            <input id="ne-quotepage" placeholder="摘自PPT第X页">
+          </div>
+        </div>
+
+        <!-- 初始化目录 -->
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;font-size:12px;color:var(--muted)">
+          <span style="color:var(--text);font-weight:600">📁 资源目录</span>
+          保存后将自动在 <code style="background:var(--bg);padding:1px 5px;border-radius:3px">resources/images/&lt;key&gt;/</code>
+          下创建子目录（historical / people / papers / architecture），
+          并初始化 <code style="background:var(--bg);padding:1px 5px;border-radius:3px">resources/videos/&lt;key&gt;.json</code>。
+        </div>
+
+        <!-- 按钮 -->
+        <div style="display:flex;gap:10px;justify-content:flex-end;padding-top:4px;border-top:1px solid var(--border)">
+          <button class="btn btn-secondary" onclick="document.getElementById('newEventModal').remove()">取消</button>
+          <button class="btn btn-primary" id="ne-submit" onclick="submitNewEvent()">创建并开始编辑</button>
+        </div>
       </div>
     </div>`;
-  main.prepend(form);
+
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+  document.getElementById('ne-key').focus();
 }
 
-function createEvent() {
-  const key   = document.getElementById('ne-key').value.trim();
-  const title = document.getElementById('ne-title').value.trim();
-  if (!key) { toast('请输入事件 Key', 'error'); return; }
+function neAutoKey() {
+  // 根据 key 输入自动同步年份（若 key 以 4 位数字开头）
+  const k = document.getElementById('ne-key').value.trim();
+  const m = k.match(/^(\d{4})/);
+  if (m) {
+    const yr = document.getElementById('ne-year');
+    if (yr && !yr._edited) yr.value = m[1];
+  }
+}
+
+async function submitNewEvent() {
+  const key    = document.getElementById('ne-key').value.trim();
+  const title  = document.getElementById('ne-title').value.trim();
+  const year   = parseInt(document.getElementById('ne-year').value) || new Date().getFullYear();
+  const catIdx = document.getElementById('ne-cat').value;
+  const locName    = document.getElementById('ne-locname').value.trim();
+  const locCountry = document.getElementById('ne-loccountry').value.trim();
+  const desc    = document.getElementById('ne-desc').value.trim();
+  const quote   = document.getElementById('ne-quote').value.trim();
+  const quotePg = document.getElementById('ne-quotepage').value.trim();
+
+  if (!key)   { toast('请输入事件 Key', 'error'); return; }
+  if (!title) { toast('请输入标题', 'error'); return; }
   if (events[key]) { toast('该 Key 已存在', 'error'); return; }
-  events[key] = {
-    year: new Date().getFullYear(),
-    title: title || key,
-    location: { name: '', country: '', coordinates: [0, 0] },
-    description: '',
-    figures: [],
-    quoteText: '',
-    quotePage: '',
-    images: [],
-    videos: [],
-  };
-  document.getElementById('new-event-form').remove();
-  selectEvent(key);
+
+  const btn = document.getElementById('ne-submit');
+  btn.disabled = true;
+  btn.textContent = '创建中…';
+
+  try {
+    // 1. 调用后端初始化资源目录
+    await api('POST', '/api/events/init', { key });
+
+    // 2. 构造新事件
+    events[key] = {
+      year,
+      title,
+      location: { name: locName, country: locCountry, coordinates: [0, 0] },
+      description: desc,
+      figures: [],
+      quoteText: quote,
+      quotePage: quotePg,
+      images: [],
+      videos: [],
+    };
+
+    // 3. 若选了分类，加入
+    if (catIdx !== '') {
+      const idx = parseInt(catIdx);
+      if (!isNaN(idx) && catalog.categories[idx]) {
+        if (!catalog.categories[idx].events.includes(key)) {
+          catalog.categories[idx].events.push(key);
+        }
+      }
+    }
+
+    // 4. 保存 events + catalog
+    await Promise.all([
+      api('POST', '/api/events', events),
+      api('POST', '/api/catalog', catalog),
+    ]);
+
+    // 5. 刷新图片缓存
+    images = await api('GET', '/api/images');
+
+    document.getElementById('newEventModal').remove();
+    toast(`事件 ${key} 已创建`, 'success');
+    renderSidebar();
+    selectEvent(key);
+  } catch (e) {
+    toast(e.message, 'error');
+    btn.disabled = false;
+    btn.textContent = '创建并开始编辑';
+  }
 }
 
 // ─── Utilities ────────────────────────────────────────────────────────────────

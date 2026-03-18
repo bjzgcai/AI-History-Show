@@ -1089,8 +1089,13 @@
         </div>
     </div>
 
-    <!-- 外部数据文件 -->
-    <script src="milestones-data-full.js"></script>
+    <!-- 里程碑数据：优先加载生成数据，失败时回退至默认数据 -->
+    <script>
+        function _loadDefaultMilestones() {
+            document.write('<script src="milestones-data-default.js"><\/script>');
+        }
+    </script>
+    <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
 
     <!-- Three.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>

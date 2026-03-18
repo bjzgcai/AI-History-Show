@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-03-17 08:16
+// 生成时间: 2026-03-18 02:19
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -17,7 +17,7 @@ const milestones = [
         -72.2887
       ]
     },
-    "description": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"Artificial Intelligence\" 这个名称",
+    "description": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"Artificial Intelligence\" 这个名称。",
     "figures": [
       {
         "name": "John McCarthy",
@@ -41,9 +41,9 @@ const milestones = [
     "quote": "\"从1956年至今，已经历经69年，AI发展经历了\"三起两落\"。为什么过去没实现呢？要分析一下深层次原因。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第1页</span>",
     "resources": {
       "images": [
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg"
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg"
       ],
       "videos": [
         {
@@ -85,7 +85,6 @@ const milestones = [
     "quote": "\"1958 年， Frank Rosenblatt发明了\"感知机\"（Perceptron），这是人工神经网络的首个物理实现，也是连接主义的代表性工作。<br><br>Rosenblatt 乐观地预测：感知器可以\"学习、做决定、翻译语言\"。感知器技术曾获得巨大成功：美国海军曾出资支持该项研究, 期望它\"可以自己走、说话、 观察、阅读、自我复制、甚至拥有自我意识\"。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第4页</span>",
     "resources": {
       "images": [
-        "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
         "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
         "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
         "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
@@ -93,14 +92,14 @@ const milestones = [
       ],
       "videos": [
         {
-          "id": "Ikev4w8Euy0",
-          "url": "https://www.youtube.com/watch?v=Ikev4w8Euy0",
-          "embed_url": "https://www.youtube.com/embed/Ikev4w8Euy0",
-          "title": "Data Science #11 - The original Perceptron paper by Frank Rosenblatt (1958)",
-          "channel": "Data Science Decoded",
-          "duration": "1:03:30",
-          "thumbnail": "https://img.youtube.com/vi/Ikev4w8Euy0/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://www.bilibili.com/video/BV1eEcBzmE4n/?spm_id_from=333.1007.tianma.1-2-2.click",
+          "url": "https://www.bilibili.com/video/BV1eEcBzmE4n/?spm_id_from=333.1007.tianma.1-2-2.click",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1eEcBzmE4n&autoplay=0",
+          "title": "",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Bilibili"
         }
       ]
     }
