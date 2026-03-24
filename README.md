@@ -14,7 +14,16 @@ node manage/server.js
 # 访问 http://localhost:3001/admin
 ```
 
+> **安全提示**：管理服务（端口 3001）无认证保护，仅供本地使用，**切勿直接暴露到公网**。生产环境请通过 SSH 隧道或 Nginx Basic Auth 访问，详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+
 云服务器部署（Nginx + PM2）、Gitee Pages 托管、SSH 隧道访问管理后台等详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+
+## 展厅双屏演示
+
+- 单屏展示入口：`http://localhost:8000/`
+- 双屏展陈入口：`http://localhost:8000/dual-screen.html`
+- Windows 现场演示推荐先用 `msedge --app="http://localhost:8000/dual-screen.html"` 验证页面，再根据显卡控制软件决定是否合成超宽屏后进入 `F11` 或 `--kiosk`
+- 多显示器全屏演示、Edge app/kiosk、Intel/NVIDIA 合屏、DisplayFusion 限制等详细说明见 [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
 
@@ -27,7 +36,7 @@ node manage/server.js
 # 访问 http://localhost:3001/admin
 ```
 
-在浏览器中直接编辑分类、事件内容，点击「保存」后再点「▶ 生成数据」即可。
+在浏览器中直接编辑分类、事件内容，点击「保存」后再点「▶ 应用数据」即可。
 
 ### 方式 B：直接编辑文件 + CLI
 
@@ -213,4 +222,4 @@ AI-History-Show/
 
 ## 许可证
 
-MIT License
+Apache License 2.0

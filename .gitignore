@@ -1,18 +1,13 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Claude Code workspace
+.claude/
 
-# Other files and folders
-.settings/
+# Node.js
+node_modules/
+*.log
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Auto-generated backups
+manage/.backups/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 历史回顾展览 - 双横屏展陈模式</title>
+    <style>
+        :root {
+            --bg: #070707;
+            --panel: rgba(255, 255, 255, 0.04);
+            --panel-strong: rgba(255, 255, 255, 0.07);
+            --line: rgba(255, 255, 255, 0.18);
+            --line-strong: rgba(255, 255, 255, 0.28);
+            --muted: rgba(255, 255, 255, 0.58);
+            --text: #f3efe7;
+            --accent: #f0a63b;
+            --accent-soft: rgba(240, 166, 59, 0.22);
+            --safe-gap: clamp(18px, 2vw, 40px);
+            --outer-padding: clamp(14px, 1.4vw, 26px);
+            --ui-font: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 20% 22%, rgba(240, 166, 59, 0.12), transparent 28%),
+                radial-gradient(circle at 72% 38%, rgba(255, 255, 255, 0.08), transparent 30%),
+                linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+            color: var(--text);
+            font-family: var(--ui-font);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: 4px 4px, 4px 4px;
+            opacity: 0.35;
+            mix-blend-mode: soft-light;
+        }
+
+        .dual-shell {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) var(--safe-gap) minmax(0, 1fr);
+            padding: var(--outer-padding);
+            gap: 0;
+        }
+
+        .screen {
+            min-width: 0;
+            min-height: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: clamp(12px, 1.2vw, 20px);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            padding: clamp(16px, 1.2vw, 22px);
+            background: linear-gradient(180deg, rgba(8, 8, 8, 0.92), rgba(0, 0, 0, 0.95));
+        }
+
+        .screen-left {
+            padding-right: clamp(16px, 1.5vw, 24px);
+        }
+
+        .screen-right {
+            padding-left: clamp(16px, 1.5vw, 24px);
+        }
+
+        .seam-buffer {
+            position: relative;
+        }
+
+        .seam-buffer::before,
+        .seam-buffer::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+        }
+
+        .seam-buffer::before {
+            left: 0;
+        }
+
+        .seam-buffer::after {
+            right: 0;
+        }
+
+        .topbar {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: end;
+            gap: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--line-strong);
+        }
+
+        .brand {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: clamp(11px, 0.82vw, 15px);
+            letter-spacing: 0.06em;
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        .screen-code {
+            font-size: clamp(26px, 1.72vw, 36px);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.02em;
+        }
+
+        .brand-mark {
+            font-weight: 600;
+            line-height: 1.4;
+            white-space: nowrap;
+        }
+
+        .section-kicker {
+            font-size: clamp(10px, 0.66vw, 13px);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: rgba(255, 255, 255, 0.82);
+            text-align: right;
+        }
+
+        .left-main {
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(280px, 0.92fr) minmax(360px, 1.08fr);
+            gap: clamp(14px, 1.35vw, 22px);
+            align-items: start;
+        }
+
+        .hero-panel,
+        .narrative-panel,
+        .archive-column,
+        .commentary-column {
+            min-height: 0;
+        }
+
+        .hero-panel {
+            display: grid;
+            grid-template-rows: auto auto;
+            min-height: 0;
+            align-content: start;
+        }
+
+        .hero-years {
+            display: flex;
+            gap: clamp(14px, 1.6vw, 24px);
+            color: rgba(255, 255, 255, 0.42);
+            font-size: clamp(17px, 1.28vw, 24px);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            padding-top: 10px;
+        }
+
+        .hero-current {
+            display: flex;
+            align-items: flex-start;
+            gap: clamp(12px, 0.95vw, 18px);
+            margin-top: clamp(6px, 0.75vw, 12px);
+        }
+
+        .hero-year {
+            font-size: clamp(94px, 10.2vw, 172px);
+            line-height: 0.9;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -0.05em;
+        }
+
+        .hero-copy {
+            max-width: 15ch;
+            padding-top: 0.8vw;
+        }
+
+        .hero-category {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: clamp(11px, 0.74vw, 14px);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            margin-top: 8px;
+            font-size: clamp(20px, 1.55vw, 28px);
+            line-height: 1.32;
+            font-weight: 700;
+        }
+
+        .hero-location {
+            margin-top: 10px;
+            font-size: clamp(11px, 0.74vw, 14px);
+            color: rgba(255, 255, 255, 0.74);
+            line-height: 1.5;
+        }
+
+        .globe-stage {
+            position: relative;
+            min-height: clamp(260px, 28vh, 340px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: clamp(18px, 2vh, 28px);
+            margin-top: clamp(18px, 2.6vh, 36px);
+        }
+
+        .globe-shell {
+            position: relative;
+            width: clamp(190px, 17vw, 280px);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle at 38% 34%, rgba(58, 116, 185, 0.36), rgba(10, 18, 29, 0.08) 60%, transparent 72%);
+            box-shadow:
+                0 0 48px rgba(69, 128, 202, 0.22),
+                0 0 120px rgba(240, 166, 59, 0.08);
+            overflow: hidden;
+        }
+
+        #dualGlobeContainer {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        #dualGlobeCanvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+        }
+
+        .globe-shell::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.16), transparent 18%);
+            mix-blend-mode: screen;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .globe-shell::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            box-shadow:
+                inset -40px -24px 44px rgba(0, 0, 0, 0.36),
+                inset 28px 0 30px rgba(255, 255, 255, 0.04);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .globe-atmosphere {
+            position: absolute;
+            inset: 1%;
+            border-radius: 50%;
+            border: 1px solid rgba(125, 179, 234, 0.24);
+            box-shadow: 0 0 26px rgba(112, 168, 232, 0.14);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .orbit-path {
+            position: absolute;
+            inset: -22% 2% -8% -2%;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .orbit-path svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .orbit-dot {
+            fill: var(--accent);
+            stroke: rgba(255, 255, 255, 0.7);
+            stroke-width: 0.9;
+            opacity: 0;
+        }
+
+        .orbit-start-dot {
+            fill: #ff5a34;
+            stroke: rgba(255, 255, 255, 0.76);
+            stroke-width: 0.7;
+            opacity: 0.96;
+        }
+
+        .orbit-ring {
+            fill: none;
+            stroke: rgba(255, 87, 44, 0.9);
+            stroke-width: 1.45;
+            stroke-linecap: round;
+        }
+
+        .narrative-panel {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            padding-top: clamp(18px, 2vh, 28px);
+            align-content: start;
+        }
+
+        .ghost-years {
+            display: none;
+        }
+
+        .summary-card {
+            max-width: 29vw;
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+        .summary-title {
+            font-size: clamp(20px, 1.65vw, 30px);
+            font-weight: 700;
+            line-height: 1.28;
+            margin-bottom: 8px;
+        }
+
+        .summary-location {
+            color: rgba(255, 255, 255, 0.82);
+            font-weight: 600;
+            font-size: clamp(11px, 0.78vw, 15px);
+            margin-bottom: 14px;
+        }
+
+        .summary-body {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: clamp(11px, 0.72vw, 14px);
+            line-height: 1.72;
+            max-width: 30ch;
+        }
+
+        .archive-strip {
+            display: flex;
+            align-items: flex-end;
+            gap: clamp(12px, 1.2vw, 18px);
+            padding-top: clamp(26px, 4vh, 58px);
+            min-height: 0;
+            justify-content: flex-start;
+        }
+
+        .archive-card {
+            position: relative;
+            background: #efede7;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+            overflow: hidden;
+            flex: 1 1 0;
+            min-width: 0;
+        }
+
+        .archive-card img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(0.08);
+        }
+
+        .archive-card.paper {
+            aspect-ratio: 0.82;
+            max-width: 16%;
+            transform: rotate(-1deg) translateY(1%);
+        }
+
+        .archive-card.primary {
+            aspect-ratio: 0.95;
+            max-width: 31%;
+            border: 14px solid #f6f2ea;
+            transform: rotate(7deg);
+        }
+
+        .archive-card.secondary {
+            aspect-ratio: 1.12;
+            max-width: 22%;
+            transform: rotate(-3deg) translateY(2%);
+        }
+
+        .left-timeline {
+            border-top: 1px solid var(--line);
+            padding-top: 16px;
+        }
+
+        .timeline-active-year {
+            display: none;
+        }
+
+        .timeline-track {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(24px, 1fr));
+            align-items: end;
+            gap: clamp(4px, 0.32vw, 8px);
+            min-height: 70px;
+        }
+
+        .timeline-tick {
+            background: transparent;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        .timeline-tick::before {
+            content: "";
+            width: 1px;
+            height: 14px;
+            background: rgba(255, 255, 255, 0.36);
+            transition: height 0.25s ease, background 0.25s ease;
+        }
+
+        .timeline-tick span {
+            font-size: clamp(8px, 0.55vw, 11px);
+            color: rgba(255, 255, 255, 0.5);
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .timeline-tick.active::before,
+        .timeline-tick:hover::before {
+            height: 26px;
+            background: var(--accent);
+        }
+
+        .timeline-tick.active span,
+        .timeline-tick:hover span {
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .timeline-tick.active span {
+            color: var(--accent);
+            font-weight: 700;
+            transform: translateY(-1px);
+        }
+
+        .right-grid {
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(330px, 1.08fr) minmax(250px, 0.72fr);
+            gap: clamp(20px, 1.6vw, 26px);
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--line-strong);
+            margin-bottom: 14px;
+        }
+
+        .panel-header h2 {
+            font-size: clamp(12px, 0.82vw, 16px);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .panel-header .panel-year {
+            color: var(--accent);
+            font-size: clamp(18px, 1.05vw, 22px);
+            font-weight: 700;
+        }
+
+        .figure-row {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .figure-chip {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 8px;
+            align-items: center;
+            min-width: 0;
+        }
+
+        .figure-avatar {
+            width: clamp(46px, 3vw, 64px);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            color: rgba(255, 255, 255, 0.86);
+            font-size: clamp(16px, 1.1vw, 22px);
+            font-weight: 700;
+        }
+
+        .figure-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .figure-meta {
+            min-width: 0;
+        }
+
+        .figure-name {
+            font-size: clamp(12px, 0.82vw, 15px);
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .figure-role {
+            margin-top: 4px;
+            color: var(--muted);
+            font-size: clamp(10px, 0.72vw, 13px);
+            line-height: 1.45;
+        }
+
+        .archive-stage {
+            display: grid;
+            grid-template-columns: minmax(0, 0.52fr) minmax(0, 1fr) minmax(0, 0.62fr);
+            gap: 12px;
+            align-items: end;
+            min-height: clamp(260px, 38vh, 420px);
+        }
+
+        .archive-thumb {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 6px;
+            cursor: pointer;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            min-height: 120px;
+        }
+
+        .archive-thumb:hover,
+        .archive-thumb.active {
+            transform: translateY(-4px);
+            border-color: rgba(240, 166, 59, 0.55);
+        }
+
+        .archive-thumb img,
+        .archive-focus img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #111;
+        }
+
+        .archive-focus {
+            height: 100%;
+            background: #efece4;
+            border: 14px solid #f6f2ea;
+            box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+            overflow: hidden;
+            max-height: 300px;
+        }
+
+        .archive-caption {
+            margin-top: 10px;
+            color: var(--accent);
+            font-size: clamp(11px, 0.7vw, 14px);
+            font-weight: 700;
+        }
+
+        .archive-subcaption {
+            margin-top: 6px;
+            color: rgba(255, 255, 255, 0.74);
+            font-size: clamp(10px, 0.6vw, 12px);
+            line-height: 1.45;
+        }
+
+        .archive-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .archive-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.38);
+            border: none;
+            cursor: pointer;
+        }
+
+        .archive-dot.active {
+            background: var(--accent);
+        }
+
+        .media-frame {
+            background: transparent;
+            border: none;
+            padding: 0;
+            position: relative;
+        }
+
+        .video-frame {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            overflow: hidden;
+        }
+
+        .video-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-frame.empty {
+            display: grid;
+            place-items: center;
+            color: rgba(255, 255, 255, 0.42);
+            font-size: clamp(12px, 0.9vw, 16px);
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+        }
+
+        .commentary-list {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-height: calc(100% - 220px);
+            overflow: auto;
+            padding-right: 12px;
+            position: relative;
+            border-right: 1px dashed rgba(255, 255, 255, 0.16);
+        }
+
+        .commentary-list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .commentary-list::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.24);
+        }
+
+        .commentary-item {
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .commentary-label {
+            font-size: clamp(10px, 0.72vw, 13px);
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+
+        .commentary-body {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: clamp(11px, 0.72vw, 13px);
+            line-height: 1.72;
+        }
+
+        .screen-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+            border-top: 1px solid var(--line-strong);
+            padding-top: 12px;
+            color: rgba(255, 255, 255, 0.54);
+            font-size: clamp(11px, 0.76vw, 14px);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .nav-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .nav-button:hover:not(:disabled) {
+            background: rgba(240, 166, 59, 0.14);
+            border-color: rgba(240, 166, 59, 0.45);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.32;
+            cursor: not-allowed;
+        }
+
+        .counter {
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        @media (max-width: 1400px) {
+            .left-main,
+            .right-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dual-shell {
+                overflow: auto;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .screen {
+                min-height: 0;
+            }
+
+            .brand {
+                flex-wrap: wrap;
+            }
+
+            .screen-code {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dual-shell" id="dualShell">
+        <section class="screen screen-left">
+            <header class="topbar">
+                <div class="brand">
+                    <div class="screen-code">03 - UI01</div>
+                    <div class="brand-mark">北京中关村学院</div>
+                    <div class="brand-mark">中关村人工智能研究院</div>
+                </div>
+                <div class="section-kicker" id="leftKicker">AI 创世纪</div>
+            </header>
+
+            <div class="left-main">
+                <div class="hero-panel">
+                    <div>
+                        <div class="hero-years" id="heroYears"></div>
+                        <div class="hero-current">
+                            <div class="hero-year" id="heroYear">1956</div>
+                            <div class="hero-copy">
+                                <div class="hero-category" id="heroCategory">AI创世纪</div>
+                                <div class="hero-title" id="heroTitle">达特茅斯会议</div>
+                                <div class="hero-location" id="heroLocation">达特茅斯学院<br>美国，新罕布什尔州</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="globe-stage">
+                        <div class="orbit-path">
+                            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <path id="orbitPath" class="orbit-ring" d="M30 8 C18 26, 18 54, 36 82"></path>
+                                <circle class="orbit-start-dot" cx="26" cy="8" r="1.35"></circle>
+                                <circle id="orbitDot" class="orbit-dot" cx="36" cy="82" r="2.2"></circle>
+                            </svg>
+                        </div>
+                        <div class="globe-shell">
+                            <div id="dualGlobeContainer"></div>
+                            <div class="globe-atmosphere"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrative-panel">
+                    <div class="ghost-years" id="ghostYears"></div>
+                    <div class="summary-card">
+                        <div class="summary-title" id="summaryTitle">达特茅斯会议</div>
+                        <div class="summary-location" id="summaryLocation">达特茅斯学院 美国，新罕布什尔州</div>
+                        <div class="summary-body" id="summaryBody"></div>
+                    </div>
+                    <div class="archive-strip">
+                        <div class="archive-card paper"><img id="leftArchivePaper" alt="档案文稿"></div>
+                        <div class="archive-card primary"><img id="leftArchivePrimary" alt="主档案图"></div>
+                        <div class="archive-card secondary"><img id="leftArchiveSecondary" alt="辅档案图"></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="left-timeline">
+                <div class="timeline-track" id="timelineTrack"></div>
+            </footer>
+        </section>
+
+        <div class="seam-buffer" aria-hidden="true"></div>
+
+        <section class="screen screen-right">
+            <header class="topbar">
+                <div class="brand">
+                    <div class="screen-code">04 - UI02</div>
+                </div>
+                <div class="section-kicker">Commentary & Media</div>
+            </header>
+
+            <div class="right-grid">
+                <div class="archive-column">
+                    <div class="panel-header">
+                        <h2 id="archiveTitle">达特茅斯会议</h2>
+                        <div class="panel-year" id="archiveYear">1956</div>
+                    </div>
+                    <div class="figure-row" id="figureRow"></div>
+                    <div class="archive-stage">
+                        <button class="archive-thumb" id="archiveThumbPrev" type="button"></button>
+                        <div>
+                            <div class="archive-focus"><img id="archiveFocus" alt="主档案照片"></div>
+                            <div class="archive-caption" id="archiveCaption">John McCarthy</div>
+                            <div class="archive-subcaption" id="archiveSubcaption">提出“AI”术语</div>
+                            <div class="archive-dots" id="archiveDots"></div>
+                        </div>
+                        <button class="archive-thumb" id="archiveThumbNext" type="button"></button>
+                    </div>
+                </div>
+
+                <div class="commentary-column">
+                    <div class="panel-header">
+                        <h2>Commentary & Media</h2>
+                        <div class="panel-year" id="mediaYear">1956</div>
+                    </div>
+                    <div class="media-frame">
+                        <div class="video-frame" id="videoFrame">
+                            <iframe id="mediaVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="commentary-list" id="commentaryList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="screen-footer">
+                <div id="statusText">双横屏展陈模式</div>
+                <div class="nav-group">
+                    <button class="nav-button" id="prevBtn" type="button">Prev</button>
+                    <div class="counter" id="counterText">1 / 21</div>
+                    <button class="nav-button" id="nextBtn" type="button">Next</button>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script>
+        function _loadDefaultMilestones() {
+            document.write('<script src="milestones-data-default.js"><\/script>');
+        }
+    </script>
+    <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
+    <script src="shared/milestone-view.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script>
+        const exhibitionBrand = {
+            cn: '北京中关村学院 × 中关村人工智能研究院',
+            en: 'AI History Dual-Screen Exhibition'
+        };
+
+        let currentIndex = 0;
+        let currentArchiveIndex = 0;
+        let globeScene, globeCamera, globeRenderer, globeMesh, globeMarker;
+        let globeMarkers = [];
+        const GLOBE_CAM_RADIUS = 2.2;
+        const _rndPhi = Math.PI * (0.25 + Math.random() * 0.5);
+        const _rndTheta = Math.PI * (Math.random() * 2 - 1);
+        let camTarget = { phi: _rndPhi, theta: _rndTheta };
+        let camCurrent = { phi: _rndPhi, theta: _rndTheta };
+        let globeAnimationTime = 0;
+        let globeArrived = false;
+        let markerFlashDone = false;
+
+        const refs = {
+            heroYears: document.getElementById('heroYears'),
+            heroYear: document.getElementById('heroYear'),
+            heroCategory: document.getElementById('heroCategory'),
+            heroTitle: document.getElementById('heroTitle'),
+            heroLocation: document.getElementById('heroLocation'),
+            leftKicker: document.getElementById('leftKicker'),
+            globeStage: document.querySelector('.globe-stage'),
+            globeShell: document.querySelector('.globe-shell'),
+            ghostYears: document.getElementById('ghostYears'),
+            summaryTitle: document.getElementById('summaryTitle'),
+            summaryLocation: document.getElementById('summaryLocation'),
+            summaryBody: document.getElementById('summaryBody'),
+            leftArchivePaper: document.getElementById('leftArchivePaper'),
+            leftArchivePrimary: document.getElementById('leftArchivePrimary'),
+            leftArchiveSecondary: document.getElementById('leftArchiveSecondary'),
+            timelineTrack: document.getElementById('timelineTrack'),
+            archiveTitle: document.getElementById('archiveTitle'),
+            archiveYear: document.getElementById('archiveYear'),
+            mediaYear: document.getElementById('mediaYear'),
+            figureRow: document.getElementById('figureRow'),
+            archiveThumbPrev: document.getElementById('archiveThumbPrev'),
+            archiveThumbNext: document.getElementById('archiveThumbNext'),
+            archiveFocus: document.getElementById('archiveFocus'),
+            archiveCaption: document.getElementById('archiveCaption'),
+            archiveSubcaption: document.getElementById('archiveSubcaption'),
+            archiveDots: document.getElementById('archiveDots'),
+            videoFrame: document.getElementById('videoFrame'),
+            mediaVideo: document.getElementById('mediaVideo'),
+            commentaryList: document.getElementById('commentaryList'),
+            statusText: document.getElementById('statusText'),
+            counterText: document.getElementById('counterText'),
+            prevBtn: document.getElementById('prevBtn'),
+            nextBtn: document.getElementById('nextBtn'),
+            dualGlobeContainer: document.getElementById('dualGlobeContainer'),
+            orbitPath: document.getElementById('orbitPath'),
+            orbitDot: document.getElementById('orbitDot')
+        };
+
+        function getVm(index) {
+            return window.MilestoneView.normalizeMilestone(milestones[index], index, milestones);
+        }
+
+        function getContextYears(year, beforeCount = 2) {
+            const years = [];
+            for (let offset = beforeCount; offset >= 1; offset -= 1) {
+                years.push(year - offset);
+            }
+            return years;
+        }
+
+        function initials(name) {
+            const words = String(name || '').trim().split(/\s+/).filter(Boolean);
+            if (words.length === 0) return 'AI';
+            if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+            return words.slice(0, 2).map((item) => item[0].toUpperCase()).join('');
+        }
+
+        function buildFigureAvatar(figure, imageUrl) {
+            if (imageUrl) {
+                return `<img src="${imageUrl}" alt="${figure.name}">`;
+            }
+            return `<span>${initials(figure.name)}</span>`;
+        }
+
+        function buildLocationLine(location) {
+            return [location.name, location.country].filter(Boolean).join('  ');
+        }
+
+        function scorePhoto(url) {
+            const value = String(url || '').toLowerCase();
+            if (!value) return -999;
+            if (value.includes('/historical/')) return 5;
+            if (value.includes('/people/')) return 4;
+            if (value.includes('/architecture/')) return 2;
+            if (value.includes('/papers/')) return 1;
+            return 3;
+        }
+
+        function sortPhotosForDisplay(photos) {
+            return [...(photos || [])]
+                .filter(Boolean)
+                .sort((a, b) => scorePhoto(b) - scorePhoto(a));
+        }
+
+        function computeOrbitFromCoordinates(location) {
+            const fallback = { dotX: 36, dotY: 82 };
+
+            const coords = location && location.coordinates;
+            if (!coords || !Array.isArray(coords) || coords.length < 2) return fallback;
+
+            const lat = Array.isArray(coords[0]) ? coords[0][0] : coords[0];
+            const lng = Array.isArray(coords[0]) ? coords[0][1] : coords[1];
+            if (typeof lat !== 'number' || typeof lng !== 'number') return fallback;
+
+            const normalizedX = Math.min(80, Math.max(20, ((lng + 180) / 360) * 56 + 20));
+            const normalizedY = Math.min(82, Math.max(18, ((90 - lat) / 180) * 48 + 18));
+
+            return {
+                dotX: normalizedX,
+                dotY: normalizedY
+            };
+        }
+
+        function updateOrbitOverlay(point) {
+            const startX = 26;
+            const startY = 8;
+            const dotX = Math.min(82, Math.max(14, point.x));
+            const dotY = Math.min(86, Math.max(18, point.y));
+            const controlAX = Math.max(8, startX - 3);
+            const controlAY = 22;
+            const controlBX = Math.max(10, dotX - 16);
+            const controlBY = Math.max(14, dotY - 22);
+            refs.orbitPath.setAttribute('d', `M${startX} ${startY} C${controlAX} ${controlAY}, ${controlBX} ${controlBY}, ${dotX} ${dotY}`);
+            refs.orbitDot.setAttribute('cx', dotX);
+            refs.orbitDot.setAttribute('cy', dotY);
+        }
+
+        function latLngToCamAngles(lat, lng) {
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = (lng - 90) * (Math.PI / 180);
+            return { phi, theta };
+        }
+
+        function setGlobeMarkers(coordsList) {
+            if (!globeMesh) return;
+
+            globeMarkers.forEach((marker) => globeMesh.remove(marker));
+            globeMarkers = [];
+
+            const markerGeometry = new THREE.SphereGeometry(0.022, 16, 16);
+            coordsList.forEach(([lat, lng]) => {
+                const markerMaterial = new THREE.MeshBasicMaterial({
+                    color: 0xff4f32,
+                    transparent: true,
+                    opacity: 0
+                });
+                const markerMesh = new THREE.Mesh(markerGeometry, markerMaterial);
+                const phi = (90 - lat) * (Math.PI / 180);
+                const theta = (lng - 90) * (Math.PI / 180);
+                const radius = 1.05;
+                markerMesh.position.set(
+                    -radius * Math.sin(phi) * Math.sin(theta),
+                    radius * Math.cos(phi),
+                    -radius * Math.sin(phi) * Math.cos(theta)
+                );
+                globeMesh.add(markerMesh);
+                globeMarkers.push(markerMesh);
+            });
+
+            globeMarker = globeMarkers[0] || null;
+        }
+
+        function rotateGlobeToCoordinates(coordinates) {
+            const coordsList = Array.isArray(coordinates[0]) ? coordinates : [coordinates];
+            const [lat, lng] = coordsList[0];
+            if (Number.isNaN(lat) || Number.isNaN(lng)) return;
+
+            const angles = latLngToCamAngles(lat, lng);
+            camTarget.phi = angles.phi;
+            camTarget.theta = angles.theta;
+            globeArrived = false;
+            markerFlashDone = false;
+            globeAnimationTime = 0;
+            refs.orbitDot.style.opacity = '0';
+            setGlobeMarkers(coordsList);
+        }
+
+        function useFallbackEarthMaterial() {
+            if (!globeMesh || typeof THREE === 'undefined') return;
+            globeMesh.material = new THREE.ShaderMaterial({
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    void main() {
+                        vUv = uv;
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    float isLand(vec2 uv) {
+                        float lon = uv.x * 360.0 - 180.0;
+                        float lat = uv.y * 180.0 - 90.0;
+                        if (lon > -140.0 && lon < -55.0 && lat > 15.0 && lat < 70.0) return 0.9;
+                        if (lon > -82.0 && lon < -35.0 && lat > -55.0 && lat < 12.0) return 0.9;
+                        if (lon > -10.0 && lon < 40.0 && lat > 35.0 && lat < 70.0) return 0.9;
+                        if (lon > -18.0 && lon < 52.0 && lat > -35.0 && lat < 37.0) return 0.9;
+                        if (lon > 26.0 && lon < 145.0 && lat > 5.0 && lat < 73.0) return 0.9;
+                        if (lon > 95.0 && lon < 141.0 && lat > -10.0 && lat < 20.0) return 0.7;
+                        if (lon > 114.0 && lon < 154.0 && lat > -39.0 && lat < -11.0) return 0.9;
+                        if (lon > -55.0 && lon < -17.0 && lat > 59.0 && lat < 84.0) return 0.8;
+                        return 0.0;
+                    }
+                    void main() {
+                        float land = isLand(vUv);
+                        float lat = vUv.y * 180.0 - 90.0;
+                        vec3 oceanDeep = vec3(0.07, 0.16, 0.36);
+                        vec3 oceanShallow = vec3(0.14, 0.38, 0.64);
+                        vec3 landGreen = vec3(0.32, 0.52, 0.21);
+                        vec3 landBrown = vec3(0.58, 0.44, 0.22);
+                        vec3 ocean = mix(oceanDeep, oceanShallow, smoothstep(-90.0, 90.0, lat) * 0.5 + 0.25);
+                        vec3 landCol = mix(landGreen, landBrown, abs(lat) / 60.0);
+                        vec3 color = mix(ocean, landCol, land);
+                        float polar = smoothstep(70.0, 85.0, abs(lat));
+                        color = mix(color, vec3(0.95, 0.97, 1.0), polar);
+                        float rim = pow(1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0))), 3.0);
+                        color += vec3(0.3, 0.5, 0.9) * rim * 0.6;
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+        }
+
+        function initGlobe() {
+            if (typeof THREE === 'undefined') return false;
+            if (!refs.dualGlobeContainer) return false;
+
+            const width = refs.dualGlobeContainer.clientWidth || 320;
+            const height = refs.dualGlobeContainer.clientHeight || 320;
+
+            globeScene = new THREE.Scene();
+            globeCamera = new THREE.PerspectiveCamera(35, width / height, 0.1, 1000);
+            globeCamera.position.set(0, 0, GLOBE_CAM_RADIUS);
+            globeCamera.lookAt(0, 0, 0);
+
+            globeRenderer = new THREE.WebGLRenderer({
+                antialias: true,
+                alpha: true,
+                powerPreference: 'high-performance',
+                precision: 'mediump',
+                stencil: false,
+                depth: true
+            });
+            globeRenderer.setSize(width, height);
+            globeRenderer.setClearColor(0x000000, 0);
+            globeRenderer.domElement.id = 'dualGlobeCanvas';
+            refs.dualGlobeContainer.innerHTML = '';
+            refs.dualGlobeContainer.appendChild(globeRenderer.domElement);
+
+            const geometry = new THREE.SphereGeometry(1, 64, 64);
+            const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+            const fillLight = new THREE.DirectionalLight(0x8ab4f8, 0.5);
+            directionalLight.position.set(5, 3, 5);
+            fillLight.position.set(-5, -2, -3);
+            globeScene.add(ambientLight, directionalLight, fillLight);
+
+            const material = new THREE.MeshPhongMaterial({
+                color: 0x2255aa,
+                specular: new THREE.Color(0x4488aa),
+                shininess: 12
+            });
+            globeMesh = new THREE.Mesh(geometry, material);
+            globeScene.add(globeMesh);
+
+            const textureLoader = new THREE.TextureLoader();
+            textureLoader.crossOrigin = 'anonymous';
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg',
+                (texture) => { material.map = texture; material.needsUpdate = true; },
+                undefined,
+                () => useFallbackEarthMaterial()
+            );
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-topology.png',
+                (texture) => { material.bumpMap = texture; material.bumpScale = 0.015; material.needsUpdate = true; }
+            );
+            textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-water.png',
+                (texture) => { material.specularMap = texture; material.needsUpdate = true; }
+            );
+
+            animateGlobe();
+            return true;
+        }
+
+        function projectMarkerToOverlay(marker) {
+            if (!marker || !globeCamera || !refs.globeShell || !refs.globeStage) return null;
+            const projected = marker.position.clone().project(globeCamera);
+            const shellRect = refs.globeShell.getBoundingClientRect();
+            const stageRect = refs.globeStage.getBoundingClientRect();
+            if (!shellRect.width || !shellRect.height || !stageRect.width || !stageRect.height) return null;
+            const shellX = (projected.x * 0.5 + 0.5) * shellRect.width + (shellRect.left - stageRect.left);
+            const shellY = (-projected.y * 0.5 + 0.5) * shellRect.height + (shellRect.top - stageRect.top);
+            return {
+                x: (shellX / stageRect.width) * 100,
+                y: (shellY / stageRect.height) * 100
+            };
+        }
+
+        function animateGlobe() {
+            requestAnimationFrame(animateGlobe);
+            if (document.hidden || !globeRenderer || !globeCamera || !globeMesh) return;
+
+            globeAnimationTime += 0.016;
+            const lerpFactor = 0.05;
+            let dTheta = camTarget.theta - camCurrent.theta;
+            while (dTheta > Math.PI) dTheta -= 2 * Math.PI;
+            while (dTheta < -Math.PI) dTheta += 2 * Math.PI;
+            const dPhi = camTarget.phi - camCurrent.phi;
+
+            const arrived = Math.abs(dTheta) < 0.01 && Math.abs(dPhi) < 0.01;
+            if (!globeArrived && arrived) {
+                globeArrived = true;
+                globeAnimationTime = 0;
+                camCurrent.phi = camTarget.phi;
+                camCurrent.theta = camTarget.theta;
+            }
+
+            if (!globeArrived) {
+                camCurrent.phi += dPhi * lerpFactor;
+                camCurrent.theta += dTheta * lerpFactor;
+            }
+
+            const cx = -GLOBE_CAM_RADIUS * Math.sin(camCurrent.phi) * Math.sin(camCurrent.theta);
+            const cy = GLOBE_CAM_RADIUS * Math.cos(camCurrent.phi);
+            const cz = -GLOBE_CAM_RADIUS * Math.sin(camCurrent.phi) * Math.cos(camCurrent.theta);
+            globeCamera.position.set(cx, cy, cz);
+            globeCamera.lookAt(0, 0, 0);
+
+            if (globeMarkers.length > 0) {
+                const overlayPoint = projectMarkerToOverlay(globeMarkers[0]);
+                if (overlayPoint) updateOrbitOverlay(overlayPoint);
+
+                if (globeArrived && !markerFlashDone) {
+                    const t = globeAnimationTime * 2.5;
+                    const cycle = Math.floor(t);
+                    refs.orbitDot.style.opacity = '1';
+                    globeMarkers.forEach((marker) => {
+                        if (cycle >= 2) {
+                            marker.scale.set(1, 1, 1);
+                            marker.material.opacity = 1;
+                        } else {
+                            const phase = (t - cycle) * Math.PI;
+                            const scale = 1.0 + 0.8 * Math.sin(phase);
+                            marker.scale.set(scale, scale, scale);
+                            marker.material.opacity = 1.0 - 0.7 * Math.sin(phase);
+                        }
+                    });
+                    if (cycle >= 2) markerFlashDone = true;
+                }
+            }
+
+            globeRenderer.render(globeScene, globeCamera);
+        }
+
+        function handleGlobeResize() {
+            if (!globeRenderer || !globeCamera || !refs.dualGlobeContainer) return;
+            const width = refs.dualGlobeContainer.clientWidth;
+            const height = refs.dualGlobeContainer.clientHeight;
+            if (!width || !height) return;
+            globeCamera.aspect = width / height;
+            globeCamera.updateProjectionMatrix();
+            globeRenderer.setSize(width, height);
+        }
+
+        function setImage(imgEl, src, alt) {
+            imgEl.src = src || '';
+            imgEl.alt = alt || '';
+            imgEl.style.visibility = src ? 'visible' : 'hidden';
+        }
+
+        function renderLeft(vm) {
+            refs.leftKicker.textContent = vm.category || 'AI History';
+            refs.heroYears.innerHTML = getContextYears(vm.year)
+                .map((year) => `<span>${year}</span>`)
+                .join('');
+            refs.heroYear.textContent = vm.year;
+            refs.heroCategory.textContent = vm.category || 'AI History';
+            refs.heroTitle.textContent = vm.title;
+            refs.heroLocation.innerHTML = `${vm.location.name}<br>${vm.location.country || ''}`;
+            refs.ghostYears.innerHTML = getContextYears(vm.year)
+                .map((year) => `<span>${year}</span>`)
+                .join('');
+            refs.summaryTitle.textContent = `${vm.title}`;
+            refs.summaryLocation.textContent = buildLocationLine(vm.location);
+            refs.summaryBody.textContent = vm.descriptionText || '暂无事件摘要';
+
+            const leftImages = sortPhotosForDisplay(vm.photos);
+            const ordered = leftImages.length > 0 ? leftImages : ['', '', ''];
+            setImage(refs.leftArchivePaper, ordered[2] || ordered[1] || ordered[0] || '', '档案文稿');
+            setImage(refs.leftArchivePrimary, ordered[0] || '', '主档案图');
+            setImage(refs.leftArchiveSecondary, ordered[1] || ordered[0] || '', '辅档案图');
+
+            if (vm.location && vm.location.coordinates) {
+                const raw = vm.location.coordinates;
+                const coordsList = Array.isArray(raw[0]) ? raw : [raw];
+                const validList = coordsList.filter(([lat, lng]) =>
+                    typeof lat === 'number' && typeof lng === 'number' &&
+                    !Number.isNaN(lat) && !Number.isNaN(lng) &&
+                    !(lat === 0 && lng === 0)
+                );
+                if (validList.length > 0) {
+                    rotateGlobeToCoordinates(validList);
+                }
+            }
+        }
+
+        function renderTimeline(vm) {
+            refs.timelineTrack.innerHTML = vm.timeline.map((item, index) => `
+                <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}">
+                    <span>${item.year}</span>
+                </button>
+            `).join('');
+
+            refs.timelineTrack.querySelectorAll('.timeline-tick').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = Number(button.dataset.index);
+                    jumpTo(index);
+                });
+            });
+        }
+
+        function renderFigures(vm) {
+            const portraitPool = sortPhotosForDisplay(vm.photos).slice(0, Math.max(vm.figures.length, 3));
+
+            if (vm.figures.length === 0) {
+                refs.figureRow.innerHTML = '<div class="figure-role">暂无关键人物信息</div>';
+                return;
+            }
+
+            refs.figureRow.innerHTML = vm.figures.slice(0, 3).map((figure, index) => `
+                <article class="figure-chip">
+                    <div class="figure-avatar">${buildFigureAvatar(figure, portraitPool[index])}</div>
+                    <div class="figure-meta">
+                        <div class="figure-name">${figure.name}</div>
+                        <div class="figure-role">${figure.role || '关键参与者'}</div>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function renderArchive(vm) {
+            const photos = sortPhotosForDisplay(vm.photos).length > 0 ? sortPhotosForDisplay(vm.photos) : [''];
+            const activeIndex = Math.min(currentArchiveIndex, photos.length - 1);
+            currentArchiveIndex = Math.max(0, activeIndex);
+
+            const prevIndex = (currentArchiveIndex - 1 + photos.length) % photos.length;
+            const nextIndex = (currentArchiveIndex + 1) % photos.length;
+            const activeFigure = vm.figures[currentArchiveIndex % Math.max(vm.figures.length, 1)] || vm.figures[0];
+
+            refs.archiveTitle.textContent = vm.title;
+            refs.archiveYear.textContent = vm.year;
+            refs.mediaYear.textContent = vm.year;
+
+            refs.archiveThumbPrev.innerHTML = photos[prevIndex]
+                ? `<img src="${photos[prevIndex]}" alt="前一张档案">`
+                : '';
+            refs.archiveThumbNext.innerHTML = photos[nextIndex]
+                ? `<img src="${photos[nextIndex]}" alt="后一张档案">`
+                : '';
+
+            refs.archiveThumbPrev.classList.toggle('active', photos.length <= 1);
+            refs.archiveThumbNext.classList.toggle('active', photos.length <= 1);
+            refs.archiveThumbPrev.disabled = photos.length <= 1;
+            refs.archiveThumbNext.disabled = photos.length <= 1;
+
+            setImage(refs.archiveFocus, photos[currentArchiveIndex], '主档案照片');
+            refs.archiveCaption.textContent = activeFigure ? activeFigure.name : vm.title;
+            refs.archiveSubcaption.textContent = activeFigure ? (activeFigure.role || buildLocationLine(vm.location)) : buildLocationLine(vm.location);
+
+            refs.archiveDots.innerHTML = photos.map((_, index) => `
+                <button class="archive-dot ${index === currentArchiveIndex ? 'active' : ''}" type="button" data-index="${index}"></button>
+            `).join('');
+
+            refs.archiveDots.querySelectorAll('.archive-dot').forEach((button) => {
+                button.addEventListener('click', () => {
+                    currentArchiveIndex = Number(button.dataset.index);
+                    renderArchive(vm);
+                });
+            });
+
+            refs.archiveThumbPrev.onclick = () => {
+                currentArchiveIndex = prevIndex;
+                renderArchive(vm);
+            };
+
+            refs.archiveThumbNext.onclick = () => {
+                currentArchiveIndex = nextIndex;
+                renderArchive(vm);
+            };
+        }
+
+        function ensureMediaIframe() {
+            let iframe = refs.videoFrame.querySelector('iframe');
+            if (!iframe) {
+                refs.videoFrame.innerHTML = '<iframe id="mediaVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                iframe = refs.videoFrame.querySelector('iframe');
+                refs.mediaVideo = iframe;
+            }
+            return iframe;
+        }
+
+        function renderCommentary(vm) {
+            if (vm.videoEmbedUrl) {
+                refs.videoFrame.classList.remove('empty');
+                const iframe = ensureMediaIframe();
+                iframe.style.display = 'block';
+                iframe.src = vm.videoEmbedUrl;
+            } else {
+                const iframe = refs.videoFrame.querySelector('iframe');
+                if (iframe) iframe.src = 'about:blank';
+                refs.videoFrame.classList.add('empty');
+                refs.videoFrame.innerHTML = 'No Media Available';
+            }
+
+            refs.commentaryList.innerHTML = vm.commentarySections.map((section) => `
+                <article class="commentary-item">
+                    <div class="commentary-label">${section.label}</div>
+                    <div class="commentary-body">${section.html}</div>
+                </article>
+            `).join('');
+        }
+
+        function renderStatus() {
+            refs.counterText.textContent = `${currentIndex + 1} / ${milestones.length}`;
+            refs.statusText.textContent = `${exhibitionBrand.en} · ${milestones[currentIndex].year}`;
+            refs.prevBtn.disabled = currentIndex === 0;
+            refs.nextBtn.disabled = currentIndex === milestones.length - 1;
+        }
+
+        function renderPage(index) {
+            const vm = getVm(index);
+            renderLeft(vm);
+            renderTimeline(vm);
+            renderFigures(vm);
+            renderArchive(vm);
+            renderCommentary(vm);
+            renderStatus();
+        }
+
+        function jumpTo(index) {
+            if (index < 0 || index >= milestones.length || index === currentIndex) return;
+            currentIndex = index;
+            currentArchiveIndex = 0;
+            renderPage(currentIndex);
+        }
+
+        function navigate(direction) {
+            const nextIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+            jumpTo(nextIndex);
+        }
+
+        refs.prevBtn.addEventListener('click', () => navigate('prev'));
+        refs.nextBtn.addEventListener('click', () => navigate('next'));
+        window.addEventListener('resize', handleGlobeResize);
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') navigate('next');
+            if (event.key === 'ArrowLeft') navigate('prev');
+        });
+
+        initGlobe();
+        renderPage(currentIndex);
+    </script>
+</body>
+</html>
