@@ -1280,145 +1280,815 @@
             font-weight: 600;
         }
     </style>
+    <style>
+        body.figma-shell,
+        html.figma-shell {
+            background:
+                radial-gradient(circle at 24% 28%, rgba(246, 137, 0, 0.08), transparent 24%),
+                radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.05), transparent 22%),
+                linear-gradient(180deg, #070707 0%, #010101 100%);
+        }
+
+        body.figma-shell::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px);
+            background-size: 4px 4px;
+            opacity: 0.28;
+            mix-blend-mode: soft-light;
+        }
+
+        body.figma-shell .screen-container {
+            grid-template-columns: none;
+            grid-template-rows: auto minmax(0, 1fr) auto;
+            gap: 1vw;
+            padding: 1.45vw 1.9vw 1.15vw;
+            background: linear-gradient(180deg, rgba(7, 7, 7, 0.96), rgba(0, 0, 0, 0.99));
+        }
+
+        body.figma-shell .header {
+            grid-column: auto;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+            align-items: end;
+            gap: 1vw;
+            min-height: 4vw;
+            padding-bottom: 0.92vw;
+        }
+
+        body.figma-shell .brand-block {
+            gap: 0.18vw;
+            min-width: 0;
+        }
+
+        body.figma-shell .brand-code {
+            font-size: 0.78vw;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+        }
+
+        body.figma-shell .brand-name {
+            font-size: 0.34vw;
+            line-height: 1.45;
+            color: var(--text-muted);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            max-width: none;
+        }
+
+        body.figma-shell .category-track {
+            justify-self: center;
+            align-self: center;
+            min-height: auto;
+            font-size: 1.18vw;
+            color: var(--text-soft);
+            letter-spacing: 0.02em;
+            text-transform: none;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .header-filler {
+            min-width: 0;
+        }
+
+        .main-grid {
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(27vw, 33.7%) minmax(0, 1fr);
+            gap: 0.85vw;
+        }
+
+        .hero-panel,
+        .content-panel {
+            min-height: 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-panel {
+            animation-delay: 0.35s;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            padding: 1.35vw 1.2vw 1.1vw;
+            background:
+                radial-gradient(circle at 55% 62%, rgba(255, 133, 59, 0.18), transparent 26%),
+                linear-gradient(180deg, #540303 0%, #4a0101 52%, #380000 100%);
+        }
+
+        .hero-year-rail,
+        .narrative-year-rail {
+            display: flex;
+            gap: 1.35vw;
+            color: rgba(242, 224, 224, 0.33);
+            font-size: 1.12vw;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+        }
+
+        .hero-year-rail .active-year,
+        .narrative-year-rail .active-year {
+            color: rgba(246, 192, 129, 0.9);
+        }
+
+        .hero-year {
+            position: absolute;
+            top: 0.6vw;
+            right: 1.05vw;
+            font-size: 4.9vw;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.08em;
+            color: var(--accent);
+            text-shadow: 0 0 24px rgba(246, 137, 0, 0.18);
+        }
+
+        .hero-stage {
+            position: relative;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            padding: 4.2vw 0 1.25vw;
+        }
+
+        .globe-shell {
+            position: relative;
+            width: min(15.6vw, 100%);
+            aspect-ratio: 1;
+            border-radius: 50%;
+        }
+
+        body.figma-shell .globe {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow:
+                0 0 42px rgba(56, 114, 183, 0.16),
+                0 0 120px rgba(246, 137, 0, 0.1);
+        }
+
+        .globe-annotation {
+            position: absolute;
+            inset: -7.5vw auto auto 2.6vw;
+            width: 10vw;
+            height: 11vw;
+            pointer-events: none;
+        }
+
+        .globe-annotation::before {
+            content: "";
+            position: absolute;
+            left: 2.35vw;
+            top: 0.72vw;
+            width: 1px;
+            height: 8vw;
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(233, 29, 15, 0.95), rgba(233, 29, 15, 0.1));
+            transform: rotate(10deg);
+            transform-origin: bottom center;
+        }
+
+        .globe-annotation::after {
+            content: "";
+            position: absolute;
+            left: 4.22vw;
+            bottom: 0.78vw;
+            width: 0.6vw;
+            height: 0.6vw;
+            border-radius: 50%;
+            background: #e91d0f;
+            box-shadow: 0 0 0 0.16vw rgba(233, 29, 15, 0.18);
+        }
+
+        .hero-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 1vw;
+        }
+
+        .hero-footer-year {
+            font-size: 2.08vw;
+            line-height: 1;
+            font-weight: 700;
+            color: #f2d5c7;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-footer-copy {
+            font-size: 0.62vw;
+            color: rgba(255, 255, 255, 0.52);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .content-panel {
+            animation-delay: 0.5s;
+            padding: 1.12vw 1.05vw 0.95vw;
+            background:
+                radial-gradient(circle at 82% 28%, rgba(255, 255, 255, 0.05), transparent 18%),
+                linear-gradient(180deg, #595959 0%, #555555 100%);
+        }
+
+        .content-topline {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 1vw;
+            align-items: start;
+        }
+
+        .title-stack {
+            min-width: 0;
+        }
+
+        body.figma-shell .event-title {
+            max-width: none;
+            font-size: 1.72vw;
+            line-height: 1.18;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        body.figma-shell .location-text {
+            margin-top: 0.38vw;
+            font-size: 0.88vw;
+            line-height: 1.45;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        body.figma-shell .location-country {
+            margin-top: 0.16vw;
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 0.82vw;
+        }
+
+        .content-body {
+            margin-top: 1.35vw;
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+            gap: 1.15vw;
+            align-items: start;
+        }
+
+        .description-column {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9vw;
+        }
+
+        body.figma-shell .event-desc {
+            max-width: none;
+            font-size: 0.98vw;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.92);
+            max-height: 16.5vw;
+            overflow: auto;
+            padding-right: 0.3vw;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.24) transparent;
+        }
+
+        body.figma-shell .event-desc::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        body.figma-shell .event-desc::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.24);
+            border-radius: 999px;
+        }
+
+        .figure-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.42vw;
+        }
+
+        .figure-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.28vw 0.6vw;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            background: rgba(0, 0, 0, 0.12);
+            color: rgba(255, 255, 255, 0.76);
+            font-size: 0.58vw;
+            letter-spacing: 0.02em;
+        }
+
+        .archive-collage {
+            position: relative;
+            min-height: 25vw;
+        }
+
+        .archive-empty {
+            width: 100%;
+            height: 100%;
+            min-height: 24vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed rgba(255, 255, 255, 0.18);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.84vw;
+        }
+
+        .collage-card {
+            position: absolute;
+            display: block;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            overflow: hidden;
+            background: transparent;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.18);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .collage-card:hover {
+            box-shadow: 0 22px 36px rgba(0, 0, 0, 0.26);
+        }
+
+        .collage-card img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            filter: grayscale(0.12);
+        }
+
+        .collage-card.doc {
+            left: 0;
+            top: 4.35vw;
+            width: 21%;
+            aspect-ratio: 1 / 1;
+            background: rgba(245, 242, 235, 0.95);
+            padding: 0.45vw;
+        }
+
+        .collage-card.hero {
+            left: 29%;
+            top: 3.2vw;
+            width: 34%;
+            aspect-ratio: 0.85;
+            padding: 1vw 1vw 1.85vw;
+            background: #f7f4ef;
+            transform: rotate(7deg);
+            z-index: 2;
+        }
+
+        .collage-card.side {
+            right: 0.2vw;
+            top: 7.2vw;
+            width: 32%;
+            aspect-ratio: 1.12;
+            transform: rotate(-4deg);
+        }
+
+        .collage-card.solo {
+            left: 15%;
+            top: 0.8vw;
+            width: 56%;
+            aspect-ratio: 0.96;
+            background: #f7f4ef;
+            padding: 1vw;
+        }
+
+        .collage-card.duo-secondary {
+            left: 4%;
+            top: 6.2vw;
+            width: 24%;
+            aspect-ratio: 1 / 1;
+            background: rgba(245, 242, 235, 0.95);
+            padding: 0.45vw;
+        }
+
+        .collage-card.duo-primary {
+            right: 4%;
+            top: 2vw;
+            width: 44%;
+            aspect-ratio: 0.86;
+            background: #f7f4ef;
+            padding: 1vw 1vw 1.8vw;
+            transform: rotate(6deg);
+        }
+
+        body.figma-shell .bottom-nav {
+            grid-column: auto;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            gap: 0.9vw;
+            align-items: end;
+            padding-top: 0.18vw;
+        }
+
+        body.figma-shell .nav-btn {
+            width: 2.2vw;
+            height: 2.2vw;
+            border-radius: 0;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.02);
+            color: rgba(255, 255, 255, 0.62);
+            font-size: 1vw;
+        }
+
+        .timeline-ruler {
+            position: relative;
+            min-width: 0;
+            padding-top: 0.92vw;
+            padding-bottom: 1.1vw;
+        }
+
+        .timeline-ruler::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0.05vw;
+            height: 1.55vw;
+            background:
+                linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent 0,
+                    transparent 0.44vw,
+                    rgba(255, 255, 255, 0.52) 0.44vw,
+                    rgba(255, 255, 255, 0.52) 0.49vw,
+                    transparent 0.49vw,
+                    transparent 0.75vw
+                );
+            opacity: 0.58;
+            pointer-events: none;
+        }
+
+        .timeline-current-year {
+            position: absolute;
+            left: 0;
+            bottom: 2.45vw;
+            font-size: 2vw;
+            line-height: 1;
+            font-weight: 700;
+            color: #f2d5c7;
+            letter-spacing: -0.04em;
+        }
+
+        body.figma-shell .page-indicators {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: minmax(5.15vw, 1fr);
+            gap: 0.4vw;
+            min-width: 0;
+            overflow-x: auto;
+            padding-top: 0.15vw;
+            padding-bottom: 0.95vw;
+            scrollbar-width: none;
+        }
+
+        body.figma-shell .page-indicators::-webkit-scrollbar {
+            display: none;
+        }
+
+        body.figma-shell .timeline-item {
+            flex: none;
+            position: relative;
+            min-width: 0;
+            padding-top: 0;
+            border: none;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.42);
+            text-align: center;
+            cursor: pointer;
+            padding-bottom: 0.2vw;
+        }
+
+        body.figma-shell .timeline-item::before {
+            display: none;
+        }
+
+        body.figma-shell .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: auto;
+            bottom: -0.48vw;
+            width: 0.1vw;
+            height: 2vw;
+            border-radius: 0;
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateX(-50%);
+        }
+
+        body.figma-shell .timeline-year {
+            font-size: 0.72vw;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        body.figma-shell .timeline-title {
+            margin-top: 0.18vw;
+            font-size: 0.42vw;
+            line-height: 1.3;
+            opacity: 0;
+        }
+
+        body.figma-shell .timeline-item.active .timeline-year {
+            color: var(--accent);
+        }
+
+        body.figma-shell .timeline-item.active .timeline-title {
+            opacity: 0.78;
+        }
+
+        body.figma-shell .timeline-item.active::after {
+            background: linear-gradient(180deg, var(--accent), rgba(246, 137, 0, 0.12));
+            box-shadow: 0 0 0 1px rgba(246, 137, 0, 0.14);
+        }
+
+        @media screen and (max-width: 768px) {
+            body.figma-shell .screen-container {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                height: auto;
+                max-width: none;
+                max-height: none;
+                padding: 14px 12px 16px;
+                gap: 12px;
+            }
+
+            body.figma-shell .header {
+                grid-template-columns: 1fr;
+                align-items: start;
+                gap: 8px;
+                padding-bottom: 10px;
+            }
+
+            body.figma-shell .brand-code {
+                font-size: 14px;
+                white-space: normal;
+            }
+
+            body.figma-shell .brand-name,
+            body.figma-shell .category-track {
+                font-size: 10px;
+                white-space: normal;
+            }
+
+            .header-filler {
+                display: none;
+            }
+
+            .main-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .hero-panel,
+            .content-panel {
+                padding: 14px;
+            }
+
+            .hero-year-rail,
+            .narrative-year-rail {
+                gap: 12px;
+                font-size: 14px;
+                overflow-x: auto;
+                scrollbar-width: none;
+            }
+
+            .hero-year {
+                top: 12px;
+                right: 14px;
+                font-size: 56px;
+            }
+
+            .globe-shell {
+                width: min(60vw, 240px);
+            }
+
+            .globe-annotation {
+                inset: -120px auto auto 32px;
+                width: 120px;
+                height: 150px;
+            }
+
+            .globe-annotation::before {
+                left: 28px;
+                top: 12px;
+                height: 110px;
+            }
+
+            .globe-annotation::after {
+                left: 52px;
+                bottom: 16px;
+                width: 10px;
+                height: 10px;
+            }
+
+            .hero-footer-year {
+                font-size: 28px;
+            }
+
+            .hero-footer-copy {
+                font-size: 10px;
+            }
+
+            body.figma-shell .event-title {
+                font-size: 28px;
+            }
+
+            body.figma-shell .location-text {
+                font-size: 14px;
+            }
+
+            body.figma-shell .location-country {
+                font-size: 12px;
+            }
+
+            .content-body {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            body.figma-shell .event-desc {
+                max-height: none;
+                font-size: 13px;
+                line-height: 1.7;
+            }
+
+            .figure-chip {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+
+            .archive-collage {
+                min-height: 260px;
+            }
+
+            .archive-empty {
+                min-height: 240px;
+                font-size: 13px;
+            }
+
+            .collage-card.doc {
+                top: 60px;
+                width: 24%;
+                padding: 6px;
+            }
+
+            .collage-card.hero {
+                top: 34px;
+                width: 38%;
+                padding: 12px 12px 24px;
+            }
+
+            .collage-card.side {
+                top: 92px;
+                width: 34%;
+            }
+
+            .collage-card.solo {
+                left: 12%;
+                width: 64%;
+                padding: 12px;
+            }
+
+            .collage-card.duo-secondary {
+                top: 84px;
+                width: 25%;
+                padding: 6px;
+            }
+
+            .collage-card.duo-primary {
+                top: 28px;
+                width: 48%;
+                padding: 12px 12px 22px;
+            }
+
+            body.figma-shell .bottom-nav {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            body.figma-shell .nav-btn {
+                display: none;
+            }
+
+            .timeline-current-year {
+                bottom: 46px;
+                font-size: 26px;
+            }
+
+            .timeline-ruler {
+                padding-bottom: 24px;
+            }
+
+            .timeline-ruler::before {
+                bottom: 0;
+                height: 24px;
+            }
+
+            body.figma-shell .page-indicators {
+                grid-auto-columns: 90px;
+                gap: 8px;
+                padding-bottom: 18px;
+            }
+
+            body.figma-shell .timeline-item::after {
+                bottom: -11px;
+                height: 28px;
+                width: 2px;
+            }
+
+            body.figma-shell .timeline-year {
+                font-size: 12px;
+            }
+
+            body.figma-shell .timeline-title {
+                font-size: 10px;
+                opacity: 0.72;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="figma-shell">
     <div class="screen-container" id="mainScreen">
-
         <header class="header reveal">
             <div class="brand-block">
-                <div class="brand-code">03 - UI01</div>
-                <div class="brand-name">浙江大学计算机学院 × 人工智能人工学院<br>Shangguanwen History Showcase of Artificial Intelligence</div>
-            </div>
-            <div class="title-group">
-                <div class="milestone-category" id="categoryDisplay">AI创世纪 (1950s-1970s)</div>
-                <div class="milestone-year-event">
-                    <span class="event-year" id="yearDisplay">1956</span>
-                    <span class="event-separator">•</span>
-                    <span class="event-title" id="titleDisplay">人工智能的正式诞生</span>
-                </div>
+                <div class="brand-code">北京中关村学院 × 中关村人工智能研究院</div>
+                <div class="brand-name">Zhongguancun Academy × Zhongguancun Institute of Artificial Intelligence</div>
             </div>
             <div class="category-track" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
+            <div class="header-filler"></div>
         </header>
 
-        <div class="panel col-left reveal">
-            <div class="panel-title">Location & Event</div>
-            <div class="left-year-rail" id="yearContext">
-                <span>1954</span>
-                <span>1955</span>
-                <span class="active-year">1956</span>
-                <span>1957</span>
-                <span>1958</span>
-            </div>
-            <div class="location-box">
-                <div class="globe-container">
-                    <div class="globe" id="globeContainer"></div>
-                    <div class="globe-annotation"></div>
+        <main class="main-grid">
+            <section class="hero-panel reveal">
+                <div class="hero-year-rail" id="heroYearContext">
+                    <span>1954</span>
+                    <span>1955</span>
+                    <span class="active-year">1956</span>
+                    <span>1957</span>
+                    <span>1958</span>
                 </div>
-                <div class="event-summary">
-                    <div class="location-text" id="locationDisplay">
-                        达特茅斯学院<br>
-                        <span class="location-country">美国, 新罕布什尔州</span>
-                    </div>
-                    <div class="event-desc" id="eventDesc">
-                        在1956年的夏天，一群富有远见的科学家在此进行了为期8周的闭门探讨。<br><br>
-                        会议的核心议题是探讨"如何让机器具备人类的智能"。正是在这次会议上，首次确立了<span
-                            class="highlight">"人工智能 (Artificial Intelligence)"</span>这一历史性术语。
+                <div class="hero-year" id="yearDisplay">1956</div>
+                <div class="hero-stage">
+                    <div class="globe-shell">
+                        <div class="globe" id="globeContainer"></div>
+                        <div class="globe-annotation"></div>
                     </div>
                 </div>
-            </div>
-            <div class="same-year-module">
-                <div class="same-year-label">Same Year Events</div>
-                <div class="same-year-list" id="sameYearEvents">
-                    <div class="same-year-item">
-                        <div class="year">1956</div>
-                        <div class="title">同年暂无其他事件</div>
-                    </div>
+                <div class="hero-footer">
+                    <div class="hero-footer-year" id="heroFooterYear">1956</div>
+                    <div class="hero-footer-copy" id="heroFooterCopy">AI创世纪</div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="panel col-center reveal">
-            <div class="panel-title">Key Figures & Archive</div>
-            <div class="figures-grid" id="figuresGrid">
-                <div class="figure-card">
-                    <div class="figure-avatar">JM</div>
-                    <div>
-                        <div class="figure-name">John McCarthy</div>
-                        <div class="figure-role">提出"AI"术语</div>
-                    </div>
-                </div>
-                <div class="figure-card">
-                    <div class="figure-avatar">MM</div>
-                    <div>
-                        <div class="figure-name">Marvin Minsky</div>
-                        <div class="figure-role">认知科学家</div>
-                    </div>
-                </div>
-                <div class="figure-card">
-                    <div class="figure-avatar">CS</div>
-                    <div>
-                        <div class="figure-name">Claude Shannon</div>
-                        <div class="figure-role">信息论创始人</div>
-                    </div>
-                </div>
-                <div class="figure-card">
-                    <div class="figure-avatar">NR</div>
-                    <div>
-                        <div class="figure-name">Nathaniel Rochester</div>
-                        <div class="figure-role">IBM 架构师</div>
-                    </div>
-                </div>
-            </div>
-            <div class="collage-container">
-                <div class="archive-layout">
-                    <button class="archive-feature media-photo" data-index="0" type="button">
-                        <img src="resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg" alt="主档案图">
-                        <div class="archive-caption">
-                            <span class="title">达特茅斯会议合影</span>
-                            <span class="meta">Primary Archive</span>
+            <section class="content-panel reveal">
+                <div class="content-topline">
+                    <div class="title-stack">
+                        <div class="event-title" id="titleDisplay">达特茅斯会议 - AI正式诞生！</div>
+                        <div class="location-text" id="locationDisplay">
+                            达特茅斯学院<br>
+                            <span class="location-country">美国, 新罕布什尔州</span>
                         </div>
-                    </button>
-                    <div class="archive-strip">
-                        <button class="archive-thumb active media-photo" data-index="0" type="button">
-                            <img src="resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg" alt="档案图 1">
-                            <span class="archive-thumb-label">现场合影</span>
-                        </button>
-                        <button class="archive-thumb media-photo" data-index="1" type="button">
-                            <img src="resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg" alt="档案图 2">
-                            <span class="archive-thumb-label">提案文稿</span>
-                        </button>
-                        <button class="archive-thumb media-photo" data-index="2" type="button">
-                            <img src="resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg" alt="档案图 3">
-                            <span class="archive-thumb-label">会议现场</span>
-                        </button>
+                    </div>
+                    <div class="narrative-year-rail" id="narrativeYearContext">
+                        <span>1954</span>
+                        <span>1955</span>
+                        <span class="active-year">1956</span>
+                        <span>1957</span>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="panel col-right reveal">
-            <div class="panel-title">Commentary & Media</div>
-            <div class="video-container">
-                <iframe id="mainVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="commentary-list" id="commentarySections">
-                <div class="commentary-item">
-                    <div class="commentary-label">引言摘录</div>
-                    <div class="commentary-body">"We propose that a 2 month, 10 man study of artificial intelligence be carried out during the summer of 1956..."</div>
+                <div class="content-body">
+                    <div class="description-column">
+                        <div class="event-desc" id="eventDesc">
+                            1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 “Artificial Intelligence” 这个名称
+                        </div>
+                        <div class="figure-strip" id="figureStrip"></div>
+                    </div>
+                    <div class="archive-collage" id="archiveCollage"></div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
 
-        <!-- 底部导航栏 -->
         <div class="bottom-nav">
             <button class="nav-btn" id="prevBtn">◀</button>
-
-            <div class="page-indicators" id="pageIndicators">
-                <!-- 动态生成圆点 -->
+            <div class="timeline-ruler">
+                <div class="timeline-current-year" id="timelineCurrentYear">1956</div>
+                <div class="page-indicators" id="pageIndicators"></div>
             </div>
-
             <button class="nav-btn" id="nextBtn">▶</button>
         </div>
     </div>
@@ -1850,27 +2520,53 @@
             }).join('');
         }
 
-        function buildSameYearEvents(index) {
-            const current = milestones[index];
-            const sameYear = milestones.filter((item, itemIndex) =>
-                item.year === current.year && itemIndex !== index
-            );
+        function buildFigureStrip(figures) {
+            if (!Array.isArray(figures) || figures.length === 0) {
+                return '';
+            }
 
-            if (!sameYear.length) {
+            return figures.slice(0, 4).map((figure) => `
+                <span class="figure-chip">${figure.name || 'AI'}</span>
+            `).join('');
+        }
+
+        function buildArchiveCollage(vm) {
+            const photos = Array.isArray(vm.photos) ? vm.photos : [];
+
+            if (photos.length === 0) {
+                return '<div class="archive-empty">暂无历史档案图像</div>';
+            }
+
+            if (photos.length === 1) {
                 return `
-                    <div class="same-year-item">
-                        <div class="year">${current.year}</div>
-                        <div class="title">当前时间点没有收录其他同年事件</div>
-                    </div>
+                    <button class="collage-card solo media-photo" data-index="0" type="button">
+                        <img src="${photos[0]}" alt="档案图 1">
+                    </button>
                 `;
             }
 
-            return sameYear.slice(0, 3).map((item) => `
-                <div class="same-year-item">
-                    <div class="year">${item.year}</div>
-                    <div class="title">${item.title}</div>
-                </div>
-            `).join('');
+            if (photos.length === 2) {
+                return `
+                    <button class="collage-card duo-secondary media-photo" data-index="0" type="button">
+                        <img src="${photos[0]}" alt="档案图 1">
+                    </button>
+                    <button class="collage-card duo-primary media-photo" data-index="1" type="button">
+                        <img src="${photos[1]}" alt="档案图 2">
+                    </button>
+                `;
+            }
+
+            return `
+                <button class="collage-card doc media-photo" data-index="0" type="button">
+                    <img src="${photos[0]}" alt="档案图 1">
+                </button>
+                <button class="collage-card hero media-photo" data-index="1" type="button">
+                    <img src="${photos[1]}" alt="档案图 2">
+                </button>
+                <button class="collage-card side media-photo" data-index="2" type="button">
+                    <img src="${photos[2]}" alt="档案图 3">
+                </button>
+            `;
         }
 
         function buildTimelineIndicators(currentIndex) {
@@ -1922,22 +2618,28 @@
                     quoteHtml: m.quote || ''
                 };
 
-            // 更新分类（第一层标题）
-            document.getElementById('categoryDisplay').textContent = vm.category;
-            document.getElementById('categoryTrack').textContent = vm.category;
+            document.getElementById('categoryTrack').textContent = vm.category || '';
+            document.getElementById('yearDisplay').textContent = vm.year || '';
+            document.getElementById('heroFooterYear').textContent = vm.year || '';
+            document.getElementById('timelineCurrentYear').textContent = vm.year || '';
+            document.getElementById('heroFooterCopy').textContent = vm.subtitle || vm.category || '';
+            document.getElementById('titleDisplay').textContent = vm.title || '';
+            document.getElementById('heroYearContext').innerHTML = buildYearContext(index);
+            document.getElementById('narrativeYearContext').innerHTML = buildYearContext(index);
 
-            // 更新年份和事件标题（第二层）
-            document.getElementById('yearDisplay').textContent = vm.year;
-            document.getElementById('titleDisplay').textContent = vm.title;
-            document.getElementById('yearContext').innerHTML = buildYearContext(index);
-            document.getElementById('sameYearEvents').innerHTML = buildSameYearEvents(index);
-
-            // 更新地点
-            document.getElementById('locationDisplay').innerHTML =
-                `${vm.location.name}<br><span class="location-country">${vm.location.country}</span>`;
-
-            // 更新事件描述
+            const locationName = vm.location && vm.location.name ? vm.location.name : '';
+            const locationCountry = vm.location && vm.location.country ? vm.location.country : '';
+            document.getElementById('locationDisplay').innerHTML = locationCountry
+                ? `${locationName}<br><span class="location-country">${locationCountry}</span>`
+                : locationName;
             document.getElementById('eventDesc').innerHTML = vm.descriptionHtml;
+            document.title = `AI 历史回顾展览 - ${vm.year} ${vm.title}`;
+
+            const figureStrip = document.getElementById('figureStrip');
+            figureStrip.innerHTML = buildFigureStrip(vm.figures);
+            figureStrip.style.display = figureStrip.innerHTML ? 'flex' : 'none';
+
+            document.getElementById('archiveCollage').innerHTML = buildArchiveCollage(vm);
 
             // ==================== 更新3D地球旋转 ====================
             if (m.location && m.location.coordinates) {
@@ -1959,110 +2661,22 @@
                 }
             }
 
-            // ==================== 动态渲染人物（支持0-N个）====================
-            const figuresGrid = document.getElementById('figuresGrid');
-            const figuresCount = vm.figures.length;
-
-            // 移除所有动态类
-            figuresGrid.className = 'figures-grid';
-
-            if (figuresCount === 0) {
-                // 空状态
-                figuresGrid.classList.add('empty');
-                figuresGrid.innerHTML = '暂无关键人物信息';
-            } else {
-                // 添加数量类
-                figuresGrid.classList.add(`count-${Math.min(figuresCount, 4)}`);
-                figuresGrid.innerHTML = vm.figures.map(f => `
-                    <div class="figure-card">
-                        <div class="figure-avatar">${getInitials(f.name)}</div>
-                        <div>
-                            <div class="figure-name">${f.name}</div>
-                            <div class="figure-role">${f.role}</div>
-                        </div>
-                    </div>
-                `).join('');
-            }
-
-            // ==================== 动态渲染照片（支持0-N张）====================
-            const collageContainer = document.querySelector('.collage-container');
-
-            // 合并照片：优先 photos（PPT原图），不足5张则从 resources.images 补充
-            const photosList = vm.photos;
-
-            const photosCount = photosList.length;
-
-            if (photosCount === 0) {
-                // 空状态
-                collageContainer.innerHTML = '<div style="text-align: center;">暂无历史照片</div>';
-                collageContainer.classList.add('empty');
-            } else {
-                // 移除空状态类
-                collageContainer.classList.remove('empty');
-                const primaryTitle = vm.title || vm.location.name || `${vm.year} 档案`;
-                const thumbCount = Math.min(Math.max(photosCount, 1), 3);
-                const thumbs = photosList.slice(0, thumbCount).map((photoUrl, i) => {
-                    const label = i === 0
-                        ? '主档案图'
-                        : (vm.figures[i - 1] ? vm.figures[i - 1].name : `${vm.year} Archive ${i + 1}`);
-                    return `
-                        <button class="archive-thumb media-photo ${i === 0 ? 'active' : ''}" data-index="${i}" type="button">
-                            <img src="${photoUrl}" alt="档案图 ${i + 1}">
-                            <span class="archive-thumb-label">${label}</span>
-                        </button>
-                    `;
-                }).join('');
-
-                collageContainer.innerHTML = `
-                    <div class="archive-layout">
-                        <button class="archive-feature media-photo" data-index="0" type="button">
-                            <img src="${photosList[0]}" alt="${primaryTitle}">
-                            <div class="archive-caption">
-                                <span class="title">${primaryTitle}</span>
-                                <span class="meta">${vm.location.name || 'Primary Archive'}</span>
-                            </div>
-                        </button>
-                        <div class="archive-strip">${thumbs}</div>
-                    </div>
-                `;
-            }
-
-            // ==================== 更新视频（无视频时隐藏）====================
-            const videoContainer = document.querySelector('.video-container');
-            if (vm.videoEmbedUrl) {
-                videoContainer.classList.remove('hidden');
-                // 确保iframe存在
-                if (!videoContainer.querySelector('iframe')) {
-                    videoContainer.innerHTML = '<iframe id="mainVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                }
-                document.getElementById('mainVideo').src = vm.videoEmbedUrl;
-            } else {
-                // 没有视频时隐藏容器
-                videoContainer.classList.add('hidden');
-            }
-
-            // ==================== 更新引用（处理空状态）====================
-            const commentarySections = document.getElementById('commentarySections');
-            const sections = Array.isArray(vm.commentarySections) ? vm.commentarySections : [];
-            commentarySections.classList.toggle('empty', sections.length === 0);
-            commentarySections.innerHTML = (sections.length ? sections : [{ label: '内容整理中', html: '暂无相关解读' }]).map((section) => `
-                <div class="commentary-item">
-                    <div class="commentary-label">${section.label}</div>
-                    <div class="commentary-body">${section.html}</div>
-                </div>
-            `).join('');
-
             // 重新绑定照片点击
             bindPhotoClicks();
         }
 
         // ==================== 页面切换 ====================
-        function navigate(direction) {
+        function navigate(direction, targetIndex = null) {
             if (isTransitioning) return;
 
-            const newIndex = direction === 'next'
-                ? Math.min(currentIndex + 1, milestones.length - 1)
-                : Math.max(currentIndex - 1, 0);
+            const boundedTargetIndex = typeof targetIndex === 'number'
+                ? Math.max(0, Math.min(targetIndex, milestones.length - 1))
+                : null;
+            const newIndex = boundedTargetIndex !== null
+                ? boundedTargetIndex
+                : (direction === 'next'
+                    ? Math.min(currentIndex + 1, milestones.length - 1)
+                    : Math.max(currentIndex - 1, 0));
 
             if (newIndex === currentIndex) return;
 
@@ -2098,7 +2712,7 @@
 
         function jumpTo(index) {
             if (index === currentIndex || isTransitioning) return;
-            navigate(index > currentIndex ? 'next' : 'prev');
+            navigate(index > currentIndex ? 'next' : 'prev', index);
         }
 
         // ==================== 更新指示器 ====================
