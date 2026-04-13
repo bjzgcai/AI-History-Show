@@ -177,10 +177,12 @@
         .left-kicker {
             justify-self: center;
             align-self: start;
-            margin-top: calc(10 * var(--left-unit-y));
-            font-size: calc(18 * var(--left-scale));
-            color: var(--text-soft);
-            letter-spacing: 0.04em;
+            margin-top: calc(52 * var(--left-unit-y));
+            font-size: calc(15 * var(--left-scale));
+            font-weight: 600;
+            line-height: 1.1;
+            color: rgba(244, 239, 229, 0.9);
+            letter-spacing: 0.08em;
             white-space: nowrap;
         }
 
@@ -256,6 +258,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.24));
         }
 
         .globe-shell {
@@ -264,22 +267,68 @@
             height: 100%;
             border-radius: 50%;
             overflow: hidden;
-            background: radial-gradient(circle at 38% 34%, rgba(64, 122, 190, 0.34), rgba(10, 18, 29, 0.08) 60%, transparent 72%);
+            isolation: isolate;
+            transform: translateZ(0);
+            background:
+                radial-gradient(circle at 31% 28%, rgba(81, 126, 191, 0.16), transparent 22%),
+                radial-gradient(circle at 72% 72%, rgba(243, 132, 47, 0.1), transparent 30%),
+                radial-gradient(circle at 39% 35%, rgba(23, 46, 92, 0.32), rgba(8, 11, 21, 0.12) 61%, transparent 74%);
             box-shadow:
-                0 0 48px rgba(56, 112, 180, 0.22),
-                0 0 120px rgba(246, 137, 0, 0.08);
+                0 0 44px rgba(56, 112, 180, 0.16),
+                0 0 96px rgba(246, 137, 0, 0.06),
+                inset 0 0 26px rgba(8, 18, 36, 0.34);
+        }
+
+        .globe-shell.globe-shell-figma {
+            isolation: auto;
+            background: transparent;
+            box-shadow: none;
         }
 
         #dualGlobeContainer {
             position: absolute;
             inset: 0;
             z-index: 1;
+            border-radius: inherit;
+            overflow: hidden;
+            clip-path: circle(50% at 50% 50%);
+            transform: translateZ(0);
+        }
+
+        .globe-figma-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.015);
+            filter: none;
+            animation: globeFigmaDrift 24s ease-in-out infinite alternate;
+        }
+
+        @keyframes globeFigmaDrift {
+            from {
+                transform: scale(1.01) translate3d(-1.2%, -0.4%, 0);
+            }
+            to {
+                transform: scale(1.04) translate3d(1%, 0.7%, 0);
+            }
         }
 
         #dualGlobeCanvas {
             width: 100% !important;
             height: 100% !important;
             display: block;
+            border-radius: inherit;
+            transform: scale(1.005);
+            filter: none;
+        }
+
+        .globe-shell.globe-shell-figma::before,
+        .globe-shell.globe-shell-figma::after {
+            display: none;
         }
 
         .globe-shell::before {
@@ -287,8 +336,12 @@
             position: absolute;
             inset: 0;
             border-radius: 50%;
-            background: radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.16), transparent 18%);
+            background:
+                radial-gradient(circle at 25% 22%, rgba(255, 255, 255, 0.14), transparent 14%),
+                radial-gradient(circle at 69% 71%, rgba(255, 176, 92, 0.14), transparent 24%),
+                radial-gradient(circle at 37% 35%, rgba(141, 203, 255, 0.06), transparent 22%);
             mix-blend-mode: screen;
+            opacity: 0.46;
             pointer-events: none;
             z-index: 2;
         }
@@ -299,20 +352,32 @@
             inset: 0;
             border-radius: 50%;
             box-shadow:
-                inset -40px -24px 44px rgba(0, 0, 0, 0.36),
-                inset 28px 0 30px rgba(255, 255, 255, 0.04);
+                inset -28px -20px 38px rgba(12, 12, 20, 0.2),
+                inset 14px 4px 20px rgba(255, 236, 212, 0.04),
+                inset 0 0 0 1px rgba(205, 138, 82, 0.08);
+            opacity: 0.44;
             pointer-events: none;
             z-index: 2;
         }
 
         .globe-atmosphere {
             position: absolute;
-            inset: 1%;
+            inset: 0.9%;
             border-radius: 50%;
             border: 1px solid rgba(125, 179, 234, 0.24);
-            box-shadow: 0 0 26px rgba(112, 168, 232, 0.14);
+            background:
+                radial-gradient(circle at 28% 30%, rgba(255, 255, 255, 0.06), transparent 16%),
+                radial-gradient(circle at 70% 72%, rgba(246, 137, 0, 0.04), transparent 26%);
+            box-shadow:
+                0 0 20px rgba(112, 168, 232, 0.1),
+                inset 0 0 10px rgba(136, 191, 244, 0.04);
+            mix-blend-mode: screen;
             pointer-events: none;
-            z-index: 2;
+            z-index: 3;
+        }
+
+        .globe-shell.globe-shell-figma .globe-atmosphere {
+            opacity: 0;
         }
 
         .orbit-overlay {
@@ -358,6 +423,8 @@
             stroke: rgba(255, 87, 44, 0.92);
             stroke-width: 2.3;
             stroke-linecap: round;
+            opacity: 0;
+            transition: opacity 0.2s ease;
         }
 
         .orbit-start-dot {
@@ -371,6 +438,7 @@
             stroke: rgba(255, 255, 255, 0.76);
             stroke-width: 1.2;
             opacity: 0;
+            transition: opacity 0.2s ease;
         }
 
         .left-bottom-year {
@@ -641,6 +709,7 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            z-index: 2;
         }
 
         .return-button {
@@ -680,11 +749,12 @@
         .right-section-headings {
             position: absolute;
             inset: 0;
+            pointer-events: none;
         }
 
         .section-heading {
             position: absolute;
-            top: 37px;
+            top: 55px;
             text-align: center;
             font-size: 15px;
             font-weight: 600;
@@ -752,7 +822,7 @@
         .figure-row {
             position: absolute;
             left: 0;
-            top: 92px;
+            top: 108px;
             width: 881px;
             height: 92px;
         }
@@ -1673,17 +1743,24 @@
         let globeCamera;
         let globeRenderer;
         let globeMesh;
+        let globeHaloMesh;
+        let globeCloudMesh;
         let globeMarker;
         let globeMarkers = [];
-        const GLOBE_CAM_RADIUS = 2.2;
+        let globePrimaryCoordinate = null;
+        const GLOBE_RENDER_MODE = 'interactive';
+        const GLOBE_TEXTURE_VERSION = '20260413c';
+        const FIGMA_GLOBE_ASSET_URL = `resources/images/figma-globe.png?v=${GLOBE_TEXTURE_VERSION}`;
+        const GLOBE_TEXTURE_URLS = {
+            water: `resources/textures/earth-water.png?v=${GLOBE_TEXTURE_VERSION}`,
+            topo: `resources/textures/earth-topology.png?v=${GLOBE_TEXTURE_VERSION}`,
+            clouds: `resources/textures/clouds.png?v=${GLOBE_TEXTURE_VERSION}`
+        };
+        const GLOBE_CAM_RADIUS = 2.06;
+        const GLOBE_HALO_RADIUS = 1.02;
         const LEFT_ORBIT_START = { x: 372.41, y: 246.52 };
         const LEFT_ORBIT_DEFAULT_DOT = { x: 416.41, y: 611.38 };
-        const LEFT_ORBIT_CLAMP = {
-            minX: 260,
-            maxX: 470,
-            minY: 430,
-            maxY: 690
-        };
+        const LEFT_ORBIT_FIGMA_DOT = { x: 408.89, y: 603.86 };
         const randomPhi = Math.PI * (0.25 + Math.random() * 0.5);
         const randomTheta = Math.PI * (Math.random() * 2 - 1);
         let camTarget = { phi: randomPhi, theta: randomTheta };
@@ -1691,6 +1768,7 @@
         let globeAnimationTime = 0;
         let globeArrived = false;
         let markerFlashDone = false;
+        let globeLastFrameTime = 0;
 
         const refs = {
             leftKicker: document.getElementById('leftKicker'),
@@ -2088,20 +2166,276 @@
         }
 
         function renderStaticGlobeFallback() {
+            refs.globeShell.classList.add('globe-shell-figma');
             refs.dualGlobeContainer.innerHTML = `
-                <div style="
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    background: linear-gradient(135deg, #16396d 0%, #26579a 50%, #78a1d1 100%);
-                    box-shadow: inset -18px -18px 42px rgba(0, 0, 0, 0.5), inset 15px 15px 40px rgba(255, 255, 255, 0.1);
-                "></div>
+                <img class="globe-figma-image" src="${FIGMA_GLOBE_ASSET_URL}" alt="" draggable="false">
             `;
+        }
+
+        function setStaticGlobeFocus() {
+            refs.orbitPath.setAttribute(
+                'd',
+                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C296 356, 276 504, ${LEFT_ORBIT_FIGMA_DOT.x} ${LEFT_ORBIT_FIGMA_DOT.y}`
+            );
+            refs.orbitDot.setAttribute('cx', String(LEFT_ORBIT_FIGMA_DOT.x));
+            refs.orbitDot.setAttribute('cy', String(LEFT_ORBIT_FIGMA_DOT.y));
+            refs.orbitPath.style.opacity = '1';
+            refs.orbitDot.style.opacity = '1';
         }
 
         function getEffectivePixelRatio() {
             const stageScale = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--stage-scale')) || 1;
             return Math.min(2, Math.max(1, (window.devicePixelRatio || 1) * stageScale));
+        }
+
+        function getGlobeDeltaTime(now) {
+            if (!globeLastFrameTime) {
+                globeLastFrameTime = now;
+                return 1 / 60;
+            }
+
+            const delta = (now - globeLastFrameTime) / 1000;
+            globeLastFrameTime = now;
+            return Math.min(0.05, Math.max(1 / 240, delta));
+        }
+
+        function applyTextureDefaults(texture, isColorTexture = false) {
+            if (!texture || !globeRenderer || typeof THREE === 'undefined') return;
+
+            if (isColorTexture && 'colorSpace' in texture && THREE.SRGBColorSpace) {
+                texture.colorSpace = THREE.SRGBColorSpace;
+            }
+
+            if ('anisotropy' in texture && globeRenderer.capabilities && typeof globeRenderer.capabilities.getMaxAnisotropy === 'function') {
+                texture.anisotropy = Math.min(8, globeRenderer.capabilities.getMaxAnisotropy());
+            }
+        }
+
+        function createSolidTexture(r, g, b, isColorTexture = false) {
+            if (typeof THREE === 'undefined') return null;
+            const data = new Uint8Array([r, g, b, 255]);
+            const texture = new THREE.DataTexture(data, 1, 1, THREE.RGBAFormat);
+            texture.needsUpdate = true;
+            if ('minFilter' in texture && THREE.LinearFilter) {
+                texture.minFilter = THREE.LinearFilter;
+                texture.magFilter = THREE.LinearFilter;
+            }
+            if (isColorTexture && 'colorSpace' in texture && THREE.SRGBColorSpace) {
+                texture.colorSpace = THREE.SRGBColorSpace;
+            }
+            return texture;
+        }
+
+        function setEarthTextureUniform(material, uniformName, texture, isColorTexture = false) {
+            if (!material || !texture || typeof THREE === 'undefined') return;
+            applyTextureDefaults(texture, isColorTexture);
+            texture.wrapS = THREE.RepeatWrapping;
+            texture.wrapT = THREE.ClampToEdgeWrapping;
+            material.uniforms[uniformName].value = texture;
+            if (uniformName === 'waterMap' && texture.image && texture.image.width && texture.image.height) {
+                material.uniforms.waterTexel.value.set(1 / texture.image.width, 1 / texture.image.height);
+            }
+        }
+
+        function createStylizedEarthMaterial() {
+            if (typeof THREE === 'undefined') return null;
+
+            return new THREE.ShaderMaterial({
+                uniforms: {
+                    waterMap: { value: createSolidTexture(255, 255, 255) },
+                    topoMap: { value: createSolidTexture(0, 0, 0) },
+                    waterTexel: { value: new THREE.Vector2(1, 1) }
+                },
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vViewNormal;
+                    varying vec3 vWorldNormal;
+                    void main() {
+                        vUv = uv;
+                        vViewNormal = normalize(normalMatrix * normal);
+                        vWorldNormal = normalize(mat3(modelMatrix) * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform sampler2D waterMap;
+                    uniform sampler2D topoMap;
+                    uniform vec2 waterTexel;
+                    varying vec2 vUv;
+                    varying vec3 vViewNormal;
+                    varying vec3 vWorldNormal;
+
+                    float saturate(float value) {
+                        return clamp(value, 0.0, 1.0);
+                    }
+
+                    float oceanSample(vec2 uv) {
+                        return smoothstep(0.38, 0.58, texture2D(waterMap, fract(uv)).r);
+                    }
+
+                    float coastline(vec2 uv) {
+                        vec2 dx = vec2(max(waterTexel.x * 1.9, 0.0003), 0.0);
+                        vec2 dy = vec2(0.0, max(waterTexel.y * 1.9, 0.0003));
+                        float center = oceanSample(uv);
+                        float east = oceanSample(uv + dx);
+                        float west = oceanSample(uv - dx);
+                        float north = oceanSample(uv + dy);
+                        float south = oceanSample(uv - dy);
+                        return smoothstep(0.05, 0.4, abs(center - east) + abs(center - west) + abs(center - north) + abs(center - south));
+                    }
+
+                    void main() {
+                        vec3 viewNormal = normalize(vViewNormal);
+                        vec3 worldNormal = normalize(vWorldNormal);
+                        float oceanMask = oceanSample(vUv);
+                        float landMask = 1.0 - oceanMask;
+                        float topo = texture2D(topoMap, vUv).r;
+                        float elevation = smoothstep(0.06, 0.88, topo);
+                        float ridge = smoothstep(0.42, 0.92, topo);
+                        float coast = coastline(vUv);
+                        vec2 topoStep = vec2(max(waterTexel.x * 1.25, 0.0003), max(waterTexel.y * 1.25, 0.0003));
+                        float topoEast = texture2D(topoMap, vUv + vec2(topoStep.x, 0.0)).r;
+                        float topoWest = texture2D(topoMap, vUv - vec2(topoStep.x, 0.0)).r;
+                        float topoNorth = texture2D(topoMap, vUv + vec2(0.0, topoStep.y)).r;
+                        float topoSouth = texture2D(topoMap, vUv - vec2(0.0, topoStep.y)).r;
+                        vec2 topoGradient = vec2(topoEast - topoWest, topoNorth - topoSouth);
+                        float relief = smoothstep(0.01, 0.18, length(topoGradient));
+                        float reliefLight = saturate(0.5 + topoGradient.x * 3.8 - topoGradient.y * 2.4);
+                        float latitude = abs(vUv.y * 2.0 - 1.0);
+                        vec3 sunDir = normalize(vec3(0.86, 0.18, 0.48));
+                        vec3 bounceDir = normalize(vec3(-0.54, -0.24, 0.8));
+                        vec3 keyDir = normalize(vec3(-0.44, 0.56, 0.95));
+                        vec3 fillDir = normalize(vec3(0.72, -0.1, 0.62));
+                        float sunLight = saturate(dot(worldNormal, sunDir) * 0.5 + 0.5);
+                        float bounceLight = saturate(dot(worldNormal, bounceDir) * 0.5 + 0.5);
+                        float keyLight = saturate(dot(viewNormal, keyDir) * 0.5 + 0.5);
+                        float fillLight = saturate(dot(viewNormal, fillDir) * 0.5 + 0.5);
+                        float faceLight = saturate(viewNormal.z * 0.5 + 0.5);
+                        float horizon = pow(1.0 - faceLight, 1.85);
+                        float shadowBand = pow(1.0 - faceLight, 1.65);
+
+                        vec3 oceanDeep = vec3(0.03, 0.11, 0.24);
+                        vec3 oceanMid = vec3(0.16, 0.34, 0.56);
+                        vec3 oceanHighlight = vec3(0.69, 0.82, 0.91);
+                        vec3 landShadow = vec3(0.28, 0.08, 0.01);
+                        vec3 landBase = vec3(0.62, 0.2, 0.01);
+                        vec3 landMid = vec3(0.965, 0.537, 0.0);
+                        vec3 landHighlight = vec3(1.0, 0.76, 0.22);
+
+                        float oceanLight = saturate(0.08 + sunLight * 0.34 + keyLight * 0.34 + fillLight * 0.12 + (1.0 - latitude) * 0.1);
+                        vec3 ocean = mix(oceanDeep, oceanMid, oceanLight);
+                        float oceanSpec = pow(saturate(keyLight * 0.72 + faceLight * 0.28), 11.0) * (0.2 + (1.0 - latitude) * 0.12);
+                        ocean = mix(ocean, oceanHighlight, coast * 0.08 + oceanSpec * 0.22 + relief * 0.05);
+                        ocean = mix(ocean, vec3(0.84, 0.95, 1.0), oceanMask * oceanSpec * 0.1);
+                        ocean = mix(ocean, vec3(0.86, 0.92, 0.97), smoothstep(0.8, 1.0, latitude) * 0.12 + horizon * 0.04);
+
+                        float baseLandLight = smoothstep(0.08, 0.52, elevation + sunLight * 0.18 + bounceLight * 0.08);
+                        float warmMask = saturate(elevation * 0.56 + sunLight * 0.34 + relief * 0.22 + coast * 0.06 - latitude * 0.08);
+                        warmMask = smoothstep(0.18, 0.92, warmMask);
+                        vec3 land = mix(landShadow, landBase, baseLandLight);
+                        land = mix(land, landMid, warmMask * 0.98);
+                        land = mix(land, landHighlight, smoothstep(0.4, 1.0, keyLight * 0.58 + reliefLight * relief * 0.56 + ridge * 0.18));
+                        land = mix(land, vec3(0.22, 0.06, 0.0), shadowBand * (0.18 + (1.0 - sunLight) * 0.12));
+                        land = mix(land, vec3(1.0, 0.8, 0.28), coast * 0.1);
+                        land = mix(land, vec3(0.99, 0.7, 0.14), smoothstep(0.8, 1.0, latitude) * 0.03);
+                        land = mix(land, vec3(0.5, 0.16, 0.02), smoothstep(0.02, 0.24, topo) * 0.12);
+                        land *= mix(0.86, 1.14, reliefLight * relief + keyLight * 0.06);
+                        land = mix(land, vec3(1.0, 0.76, 0.22), relief * reliefLight * 0.1);
+                        land = mix(land, vec3(1.0, 0.5, 0.07), smoothstep(0.2, 0.9, warmMask) * 0.09);
+
+                        vec3 color = mix(land, ocean, oceanMask);
+                        color *= mix(0.68, 1.05, faceLight);
+                        color = mix(color, vec3(0.48, 0.64, 0.82), horizon * (oceanMask * 0.18 + landMask * 0.04));
+                        color = mix(color, vec3(1.0, 0.5, 0.07), landMask * pow(keyLight, 2.0) * 0.08);
+                        color = mix(color, vec3(0.76, 0.88, 0.98), oceanMask * oceanSpec * 0.05);
+
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+        }
+
+        function createStylizedCloudTexture(texture) {
+            if (!texture || typeof THREE === 'undefined' || typeof document === 'undefined' || !texture.image) {
+                return texture;
+            }
+
+            const width = texture.image.width || 0;
+            const height = texture.image.height || 0;
+            if (!width || !height) return texture;
+
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const context = canvas.getContext('2d', { willReadFrequently: true });
+            if (!context) return texture;
+
+            context.drawImage(texture.image, 0, 0, width, height);
+            const imageData = context.getImageData(0, 0, width, height);
+            const { data } = imageData;
+            for (let index = 0; index < data.length; index += 4) {
+                const average = (data[index] + data[index + 1] + data[index + 2]) / 3;
+                const alpha = data[index + 3] / 255;
+                const density = Math.max(alpha, 1 - average / 255);
+                data[index] = 255;
+                data[index + 1] = 255;
+                data[index + 2] = 255;
+                data[index + 3] = Math.round(Math.min(1, Math.pow(density, 0.88) * 1.08) * 255);
+            }
+            context.putImageData(imageData, 0, 0);
+
+            const softenedCanvas = document.createElement('canvas');
+            softenedCanvas.width = width;
+            softenedCanvas.height = height;
+            const softenedContext = softenedCanvas.getContext('2d');
+            if (!softenedContext) {
+                const directTexture = new THREE.CanvasTexture(canvas);
+                directTexture.wrapS = THREE.RepeatWrapping;
+                directTexture.wrapT = THREE.ClampToEdgeWrapping;
+                applyTextureDefaults(directTexture, false);
+                return directTexture;
+            }
+            softenedContext.clearRect(0, 0, width, height);
+            softenedContext.filter = 'blur(1.6px)';
+            softenedContext.drawImage(canvas, 0, 0, width, height);
+            softenedContext.filter = 'none';
+            softenedContext.globalAlpha = 0.72;
+            softenedContext.drawImage(canvas, 0, 0, width, height);
+            softenedContext.globalAlpha = 1;
+
+            const stylizedTexture = new THREE.CanvasTexture(softenedCanvas);
+            stylizedTexture.wrapS = THREE.RepeatWrapping;
+            stylizedTexture.wrapT = THREE.ClampToEdgeWrapping;
+            applyTextureDefaults(stylizedTexture, false);
+            return stylizedTexture;
+        }
+
+        function latLngToSpherePosition(lat, lng, radius) {
+            const latRad = lat * (Math.PI / 180);
+            const lngRad = lng * (Math.PI / 180);
+            const cosLat = Math.cos(latRad);
+            return {
+                x: radius * cosLat * Math.cos(lngRad),
+                y: radius * Math.sin(latRad),
+                z: -radius * cosLat * Math.sin(lngRad)
+            };
+        }
+
+        function normalizeLocationCoordinates(rawCoordinates) {
+            if (!Array.isArray(rawCoordinates)) return [];
+
+            const coordsList = Array.isArray(rawCoordinates[0]) ? rawCoordinates : [rawCoordinates];
+            return coordsList
+                .map((pair) => Array.isArray(pair) ? [Number(pair[0]), Number(pair[1])] : [Number.NaN, Number.NaN])
+                .filter(([lat, lng]) =>
+                    Number.isFinite(lat) &&
+                    Number.isFinite(lng) &&
+                    lat >= -90 &&
+                    lat <= 90 &&
+                    lng >= -180 &&
+                    lng <= 180 &&
+                    !(lat === 0 && lng === 0)
+                );
         }
 
         function useFallbackEarthMaterial() {
@@ -2134,26 +2468,162 @@
                     void main() {
                         float land = isLand(vUv);
                         float lat = vUv.y * 180.0 - 90.0;
-                        vec3 oceanDeep = vec3(0.07, 0.16, 0.36);
-                        vec3 oceanShallow = vec3(0.14, 0.38, 0.64);
-                        vec3 landGreen = vec3(0.32, 0.52, 0.21);
-                        vec3 landBrown = vec3(0.58, 0.44, 0.22);
-                        vec3 ocean = mix(oceanDeep, oceanShallow, smoothstep(-90.0, 90.0, lat) * 0.5 + 0.25);
-                        vec3 landCol = mix(landGreen, landBrown, abs(lat) / 60.0);
+                        vec3 oceanDeep = vec3(0.03, 0.12, 0.25);
+                        vec3 oceanShallow = vec3(0.19, 0.38, 0.57);
+                        vec3 landBase = vec3(0.63, 0.3, 0.08);
+                        vec3 landHighlight = vec3(0.98, 0.77, 0.26);
+                        vec3 ocean = mix(oceanDeep, oceanShallow, smoothstep(-90.0, 90.0, lat) * 0.48 + 0.26);
+                        vec3 landCol = mix(landBase, landHighlight, 0.35 + (1.0 - abs(lat) / 90.0) * 0.45);
                         vec3 color = mix(ocean, landCol, land);
                         float polar = smoothstep(70.0, 85.0, abs(lat));
                         color = mix(color, vec3(0.95, 0.97, 1.0), polar);
                         float rim = pow(1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0))), 3.0);
-                        color += vec3(0.3, 0.5, 0.9) * rim * 0.6;
+                        color += vec3(0.32, 0.49, 0.68) * rim * 0.35;
                         gl_FragColor = vec4(color, 1.0);
                     }
                 `
             });
         }
 
+        function createGlobeHalo() {
+            if (!globeScene || typeof THREE === 'undefined') return;
+
+            if (globeHaloMesh) {
+                globeScene.remove(globeHaloMesh);
+            }
+
+            const haloGeometry = new THREE.SphereGeometry(GLOBE_HALO_RADIUS, 64, 64);
+            const haloMaterial = new THREE.ShaderMaterial({
+                transparent: true,
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                vertexShader: `
+                    varying vec3 vWorldPosition;
+                    varying vec3 vWorldNormal;
+                    void main() {
+                        vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+                        vWorldPosition = worldPosition.xyz;
+                        vWorldNormal = normalize(mat3(modelMatrix) * normal);
+                        gl_Position = projectionMatrix * viewMatrix * worldPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vWorldPosition;
+                    varying vec3 vWorldNormal;
+                    void main() {
+                        vec3 viewDir = normalize(cameraPosition - vWorldPosition);
+                        float fresnel = pow(1.0 - max(dot(viewDir, normalize(vWorldNormal)), 0.0), 3.4);
+                        float latitude = clamp(vWorldNormal.y * 0.5 + 0.5, 0.0, 1.0);
+                        vec3 coolGlow = vec3(0.28, 0.56, 0.98);
+                        vec3 warmGlow = vec3(1.0, 0.66, 0.22);
+                        vec3 color = mix(coolGlow, warmGlow, smoothstep(0.0, 0.7, latitude) * 0.35);
+                        gl_FragColor = vec4(color, fresnel * 0.11);
+                    }
+                `
+            });
+
+            globeHaloMesh = new THREE.Mesh(haloGeometry, haloMaterial);
+            globeScene.add(globeHaloMesh);
+        }
+
+        function createCloudLayer(texture) {
+            if (!globeScene || !texture || typeof THREE === 'undefined') return;
+
+            if (globeCloudMesh) {
+                globeScene.remove(globeCloudMesh);
+            }
+
+            const cloudInnerMaterial = new THREE.MeshBasicMaterial({
+                map: texture,
+                transparent: true,
+                opacity: 0.3,
+                color: new THREE.Color(0xf4f8ff),
+                depthWrite: false,
+                side: THREE.DoubleSide
+            });
+            const cloudOuterMaterial = new THREE.MeshBasicMaterial({
+                map: texture,
+                transparent: true,
+                opacity: 0.18,
+                color: new THREE.Color(0xffffff),
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+                side: THREE.DoubleSide
+            });
+
+            const cloudInnerMesh = new THREE.Mesh(new THREE.SphereGeometry(1.014, 64, 64), cloudInnerMaterial);
+            const cloudOuterMesh = new THREE.Mesh(new THREE.SphereGeometry(1.028, 64, 64), cloudOuterMaterial);
+            cloudOuterMesh.rotation.y = 0.12;
+
+            globeCloudMesh = new THREE.Group();
+            globeCloudMesh.add(cloudInnerMesh);
+            globeCloudMesh.add(cloudOuterMesh);
+            globeCloudMesh.rotation.z = 0.06;
+            globeScene.add(globeCloudMesh);
+        }
+
+        function createMarkerMesh() {
+            if (typeof THREE === 'undefined') return null;
+
+            const markerGroup = new THREE.Group();
+            const core = new THREE.Mesh(
+                new THREE.SphereGeometry(0.022, 20, 20),
+                new THREE.MeshBasicMaterial({
+                    color: 0xff5e3a,
+                    transparent: true,
+                    opacity: 0
+                })
+            );
+            const aura = new THREE.Mesh(
+                new THREE.SphereGeometry(0.042, 20, 20),
+                new THREE.MeshBasicMaterial({
+                    color: 0xffb160,
+                    transparent: true,
+                    opacity: 0,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false
+                })
+            );
+
+            markerGroup.add(aura);
+            markerGroup.add(core);
+            markerGroup.userData.core = core;
+            markerGroup.userData.aura = aura;
+            return markerGroup;
+        }
+
+        function setMarkerState(marker, scale, opacity) {
+            if (!marker) return;
+
+            marker.scale.setScalar(scale);
+
+            if (marker.userData && marker.userData.core) {
+                marker.userData.core.material.opacity = opacity;
+            }
+
+            if (marker.userData && marker.userData.aura) {
+                marker.userData.aura.material.opacity = opacity * 0.42;
+                marker.userData.aura.scale.setScalar(1.08 + (scale - 1) * 0.55);
+            }
+        }
+
         function initGlobe() {
-            if (typeof THREE === 'undefined' || !refs.dualGlobeContainer) {
+            if (!refs.dualGlobeContainer) {
+                return false;
+            }
+
+            if (GLOBE_RENDER_MODE === 'figma') {
                 renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
+
+            refs.globeShell.classList.remove('globe-shell-figma');
+
+            if (typeof THREE === 'undefined') {
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
                 return false;
             }
 
@@ -2165,65 +2635,71 @@
             globeCamera.position.set(0, 0, GLOBE_CAM_RADIUS);
             globeCamera.lookAt(0, 0, 0);
 
-            globeRenderer = new THREE.WebGLRenderer({
-                antialias: true,
-                alpha: true,
-                powerPreference: 'high-performance',
-                precision: 'mediump',
-                stencil: false,
-                depth: true
-            });
+            try {
+                globeRenderer = new THREE.WebGLRenderer({
+                    antialias: true,
+                    alpha: true,
+                    powerPreference: 'high-performance',
+                    precision: 'mediump',
+                    stencil: false,
+                    depth: true
+                });
+            } catch (error) {
+                console.warn('Globe WebGL init failed, using static fallback.', error);
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
             globeRenderer.setPixelRatio(getEffectivePixelRatio());
             globeRenderer.setSize(width, height);
             globeRenderer.setClearColor(0x000000, 0);
+            if ('outputColorSpace' in globeRenderer && typeof THREE !== 'undefined' && THREE.SRGBColorSpace) {
+                globeRenderer.outputColorSpace = THREE.SRGBColorSpace;
+            }
             globeRenderer.domElement.id = 'dualGlobeCanvas';
             refs.dualGlobeContainer.innerHTML = '';
             refs.dualGlobeContainer.appendChild(globeRenderer.domElement);
 
             const geometry = new THREE.SphereGeometry(1, 64, 64);
-            const material = new THREE.MeshPhongMaterial({
-                color: 0x2255aa,
-                specular: new THREE.Color(0x4488aa),
-                shininess: 12
-            });
-
-            const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
-            const fillLight = new THREE.DirectionalLight(0x8ab4f8, 0.5);
-            directionalLight.position.set(5, 3, 5);
-            fillLight.position.set(-5, -2, -3);
-            globeScene.add(ambientLight, directionalLight, fillLight);
+            const material = createStylizedEarthMaterial();
+            if (!material) {
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
 
             globeMesh = new THREE.Mesh(geometry, material);
             globeScene.add(globeMesh);
+            createGlobeHalo();
 
             const textureLoader = new THREE.TextureLoader();
-            textureLoader.crossOrigin = 'anonymous';
             textureLoader.load(
-                'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg',
+                GLOBE_TEXTURE_URLS.topo,
                 (texture) => {
-                    material.map = texture;
-                    material.needsUpdate = true;
+                    setEarthTextureUniform(material, 'topoMap', texture, false);
+                },
+                undefined,
+                () => console.warn('Unable to load local topology texture for globe.')
+            );
+            textureLoader.load(
+                GLOBE_TEXTURE_URLS.water,
+                (texture) => {
+                    setEarthTextureUniform(material, 'waterMap', texture, false);
                 },
                 undefined,
                 () => useFallbackEarthMaterial()
             );
             textureLoader.load(
-                'https://unpkg.com/three-globe/example/img/earth-topology.png',
+                GLOBE_TEXTURE_URLS.clouds,
                 (texture) => {
-                    material.bumpMap = texture;
-                    material.bumpScale = 0.015;
-                    material.needsUpdate = true;
-                }
-            );
-            textureLoader.load(
-                'https://unpkg.com/three-globe/example/img/earth-water.png',
-                (texture) => {
-                    material.specularMap = texture;
-                    material.needsUpdate = true;
+                    applyTextureDefaults(texture, false);
+                    texture.wrapS = THREE.RepeatWrapping;
+                    texture.wrapT = THREE.ClampToEdgeWrapping;
+                    createCloudLayer(createStylizedCloudTexture(texture));
                 }
             );
 
+            globeLastFrameTime = 0;
             animateGlobe();
             return true;
         }
@@ -2241,21 +2717,31 @@
             );
             refs.orbitDot.setAttribute('cx', String(LEFT_ORBIT_DEFAULT_DOT.x));
             refs.orbitDot.setAttribute('cy', String(LEFT_ORBIT_DEFAULT_DOT.y));
+            refs.orbitPath.style.opacity = '0';
             refs.orbitDot.style.opacity = '0';
         }
 
-        function clearGlobeMarkers() {
+        function clearGlobeMarkerMeshes() {
             if (globeMesh) {
                 globeMarkers.forEach((marker) => globeMesh.remove(marker));
             }
 
             globeMarkers = [];
             globeMarker = null;
+            globePrimaryCoordinate = null;
+        }
+
+        function clearGlobeMarkers() {
+            clearGlobeMarkerMeshes();
             globeArrived = true;
             markerFlashDone = true;
             globeAnimationTime = 0;
             camTarget.phi = camCurrent.phi;
             camTarget.theta = camCurrent.theta;
+            if (GLOBE_RENDER_MODE === 'figma') {
+                setStaticGlobeFocus();
+                return;
+            }
             resetOrbitOverlay();
         }
 
@@ -2263,27 +2749,18 @@
             if (!globeMesh) {
                 globeMarkers = [];
                 globeMarker = null;
+                globePrimaryCoordinate = null;
                 return;
             }
 
-            clearGlobeMarkers();
+            clearGlobeMarkerMeshes();
+            globePrimaryCoordinate = coordsList[0] || null;
 
-            const markerGeometry = new THREE.SphereGeometry(0.022, 16, 16);
             coordsList.forEach(([lat, lng]) => {
-                const markerMaterial = new THREE.MeshBasicMaterial({
-                    color: 0xff4f32,
-                    transparent: true,
-                    opacity: 0
-                });
-                const markerMesh = new THREE.Mesh(markerGeometry, markerMaterial);
-                const phi = (90 - lat) * (Math.PI / 180);
-                const theta = (lng - 90) * (Math.PI / 180);
-                const radius = 1.05;
-                markerMesh.position.set(
-                    -radius * Math.sin(phi) * Math.sin(theta),
-                    radius * Math.cos(phi),
-                    -radius * Math.sin(phi) * Math.cos(theta)
-                );
+                const markerMesh = createMarkerMesh();
+                if (!markerMesh) return;
+                const position = latLngToSpherePosition(lat, lng, 1.05);
+                markerMesh.position.set(position.x, position.y, position.z);
                 globeMesh.add(markerMesh);
                 globeMarkers.push(markerMesh);
             });
@@ -2292,10 +2769,13 @@
         }
 
         function rotateGlobeToCoordinates(coordinates) {
-            const coordsList = Array.isArray(coordinates)
-                ? (Array.isArray(coordinates[0]) ? coordinates : [coordinates])
-                    .map((pair) => Array.isArray(pair) ? [Number(pair[0]), Number(pair[1])] : [Number.NaN, Number.NaN])
-                : [];
+            if (GLOBE_RENDER_MODE === 'figma' || !globeMesh) {
+                setStaticGlobeFocus();
+                return;
+            }
+
+            const coordsList = normalizeLocationCoordinates(coordinates);
+            // The first coordinate anchors the camera; any additional coordinates render as supplementary markers.
             const [lat, lng] = coordsList[0] || [];
             if (!coordsList.length || Number.isNaN(lat) || Number.isNaN(lng)) {
                 clearGlobeMarkers();
@@ -2309,14 +2789,15 @@
             markerFlashDone = false;
             globeAnimationTime = 0;
             setGlobeMarkers(coordsList);
+            refs.orbitPath.style.opacity = '0';
             refs.orbitDot.style.opacity = '0';
         }
 
         function updateOrbitOverlay(point) {
             const startX = LEFT_ORBIT_START.x;
             const startY = LEFT_ORBIT_START.y;
-            const dotX = Math.min(LEFT_ORBIT_CLAMP.maxX, Math.max(LEFT_ORBIT_CLAMP.minX, point.x));
-            const dotY = Math.min(LEFT_ORBIT_CLAMP.maxY, Math.max(LEFT_ORBIT_CLAMP.minY, point.y));
+            const dotX = Math.min(SCREEN_WIDTH, Math.max(0, point.x));
+            const dotY = Math.min(SCREEN_HEIGHT, Math.max(0, point.y));
             const controlAX = startX - 76;
             const controlAY = startY + 110;
             const controlBX = Math.max(210, dotX - 138);
@@ -2326,10 +2807,20 @@
             refs.orbitDot.setAttribute('cy', dotY);
         }
 
-        function projectMarkerToOverlay(marker) {
-            if (!marker || !globeCamera || !refs.globeShell || !refs.globeStage) return null;
+        function projectCoordinateToOverlay(coordinate, radius = 0.985) {
+            if (!coordinate || !globeCamera || !refs.globeShell || !refs.globeStage || !globeMesh || typeof THREE === 'undefined') return null;
 
-            const projected = marker.position.clone().project(globeCamera);
+            const [lat, lng] = coordinate;
+            if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+
+            const localPoint = latLngToSpherePosition(lat, lng, radius);
+            const worldPoint = globeMesh.localToWorld(
+                new THREE.Vector3(localPoint.x, localPoint.y, localPoint.z)
+            );
+            const facing = worldPoint.clone().normalize().dot(globeCamera.position.clone().normalize());
+            if (facing <= 0.02) return null;
+
+            const projected = worldPoint.project(globeCamera);
             const shellRect = refs.globeShell.getBoundingClientRect();
             const stageRect = refs.globeStage.getBoundingClientRect();
             if (!shellRect.width || !shellRect.height || !stageRect.width || !stageRect.height) return null;
@@ -2342,12 +2833,13 @@
             };
         }
 
-        function animateGlobe() {
+        function animateGlobe(now = performance.now()) {
             requestAnimationFrame(animateGlobe);
             if (document.hidden || !globeRenderer || !globeCamera || !globeMesh) return;
 
-            globeAnimationTime += 0.016;
-            const lerpFactor = 0.05;
+            const deltaSeconds = getGlobeDeltaTime(now);
+            globeAnimationTime += deltaSeconds;
+            const lerpFactor = 1 - Math.pow(0.0025, deltaSeconds * 3.4);
             let dTheta = camTarget.theta - camCurrent.theta;
             while (dTheta > Math.PI) dTheta -= 2 * Math.PI;
             while (dTheta < -Math.PI) dTheta += 2 * Math.PI;
@@ -2372,26 +2864,48 @@
             globeCamera.position.set(cx, cy, cz);
             globeCamera.lookAt(0, 0, 0);
 
+            if (globeHaloMesh) {
+                const haloScale = 1 + Math.sin(globeAnimationTime * 0.9) * 0.012;
+                globeHaloMesh.scale.setScalar(haloScale);
+                globeHaloMesh.rotation.y += deltaSeconds * 0.08;
+            }
+
+            if (globeCloudMesh) {
+                globeCloudMesh.rotation.y += deltaSeconds * 0.018;
+            }
+
             if (globeMarkers.length > 0) {
-                const overlayPoint = projectMarkerToOverlay(globeMarkers[0]);
-                if (overlayPoint) updateOrbitOverlay(overlayPoint);
+                if (globeArrived) {
+                    const overlayPoint = projectCoordinateToOverlay(globePrimaryCoordinate);
+                    if (overlayPoint) {
+                        updateOrbitOverlay(overlayPoint);
+                        refs.orbitPath.style.opacity = '1';
+                    } else {
+                        refs.orbitPath.style.opacity = '0';
+                        refs.orbitDot.style.opacity = '0';
+                    }
+                } else {
+                    refs.orbitPath.style.opacity = '0';
+                    refs.orbitDot.style.opacity = '0';
+                }
 
                 if (globeArrived && !markerFlashDone) {
-                    const t = globeAnimationTime * 2.5;
+                    const t = globeAnimationTime * 2.8;
                     const cycle = Math.floor(t);
                     refs.orbitDot.style.opacity = '1';
                     globeMarkers.forEach((marker) => {
                         if (cycle >= 2) {
-                            marker.scale.set(1, 1, 1);
-                            marker.material.opacity = 1;
+                            setMarkerState(marker, 1, 1);
                         } else {
                             const phase = (t - cycle) * Math.PI;
-                            const scale = 1.0 + 0.8 * Math.sin(phase);
-                            marker.scale.set(scale, scale, scale);
-                            marker.material.opacity = 1.0 - 0.7 * Math.sin(phase);
+                            const scale = 1.0 + 0.95 * Math.sin(phase);
+                            const opacity = 1.0 - 0.6 * Math.sin(phase);
+                            setMarkerState(marker, scale, opacity);
                         }
                     });
                     if (cycle >= 2) markerFlashDone = true;
+                } else if (globeArrived) {
+                    globeMarkers.forEach((marker) => setMarkerState(marker, 1, 1));
                 }
             }
 
@@ -2474,15 +2988,7 @@
             renderLeftArchive(vm.photos);
 
             if (vm.location && Array.isArray(vm.location.coordinates)) {
-                const raw = vm.location.coordinates;
-                const coordsList = Array.isArray(raw[0]) ? raw : [raw];
-                const validList = coordsList
-                    .map((pair) => Array.isArray(pair) ? [Number(pair[0]), Number(pair[1])] : [Number.NaN, Number.NaN])
-                    .filter(([lat, lng]) =>
-                        !Number.isNaN(lat) &&
-                        !Number.isNaN(lng) &&
-                        !(lat === 0 && lng === 0)
-                    );
+                const validList = normalizeLocationCoordinates(vm.location.coordinates);
 
                 if (validList.length > 0) {
                     rotateGlobeToCoordinates(validList);
@@ -2651,8 +3157,9 @@
         function renderStatus(vm) {
             refs.counterText.textContent = `${currentIndex + 1} / ${milestones.length}`;
             refs.statusText.textContent = `${vm.year || ''} · ${vm.category || 'AI 历史详情'}`;
-            refs.topPrevBtn.disabled = currentIndex === 0;
-            refs.topNextBtn.disabled = currentIndex === milestones.length - 1;
+            const canNavigate = milestones.length > 1;
+            refs.topPrevBtn.disabled = !canNavigate;
+            refs.topNextBtn.disabled = !canNavigate;
             refs.rightScaleProgress.style.top = `${milestones.length > 1 ? (currentIndex / (milestones.length - 1)) * 100 : 0}%`;
             updateAutoplayButton();
         }
@@ -2755,9 +3262,11 @@
         }
 
         function navigate(direction, options = {}) {
+            if (milestones.length <= 1) return;
+
             const nextIndex = direction === 'next'
-                ? Math.min(currentIndex + 1, milestones.length - 1)
-                : Math.max(currentIndex - 1, 0);
+                ? (currentIndex + 1) % milestones.length
+                : (currentIndex - 1 + milestones.length) % milestones.length;
             jumpTo(nextIndex, options);
         }
 

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-03-18 02:46
+// 生成时间: 2026-04-13 06:17
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -791,10 +791,24 @@ const milestones = [
     "subtitle": "大模型时代",
     "location": {
       "name": "全球研究",
-      "country": "多个机构",
+      "country": "美国 / 中国",
       "coordinates": [
-        0,
-        0
+        [
+          37.7749,
+          -122.4194
+        ],
+        [
+          37.422,
+          -122.0841
+        ],
+        [
+          39.9042,
+          116.4074
+        ],
+        [
+          30.2741,
+          120.1551
+        ]
       ]
     },
     "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
