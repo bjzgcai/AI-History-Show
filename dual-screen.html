@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-layout-mode="dual">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 历史回顾展览 - 双横屏展陈模式</title>
+    <script src="shared/layout-router.js"></script>
     <style>
         :root {
             --screen-width: 1920px;
@@ -74,6 +75,7 @@
             transform: translate(-50%, -50%) scale(var(--stage-scale));
             transform-origin: center center;
             box-shadow: none;
+            touch-action: pan-y;
         }
 
         .dual-stage::after {
@@ -1458,37 +1460,6 @@
             min-width: 0;
         }
 
-        .control-group {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .control-button {
-            border: none;
-            background: transparent;
-            color: rgba(244, 239, 229, 0.38);
-            padding: 0;
-            cursor: pointer;
-            font-size: 8px;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            transition: color 0.2s ease;
-        }
-
-        .control-button:hover:not(:disabled) {
-            color: var(--accent);
-        }
-
-        .control-button:disabled {
-            opacity: 0.28;
-            cursor: not-allowed;
-        }
-
-        .control-button.is-active {
-            color: var(--accent);
-        }
-
         .counter {
             color: rgba(255, 255, 255, 0.54);
             min-width: 48px;
@@ -1709,9 +1680,6 @@
                         <div id="statusText">双屏展陈模式</div>
                         <div class="counter" id="counterText">1 / 21</div>
                     </div>
-                    <div class="control-group">
-                        <button class="control-button" id="autoplayBtn" type="button">开始自动播放</button>
-                    </div>
                 </footer>
             </section>
         </div>
@@ -1724,6 +1692,7 @@
     </script>
     <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
+    <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script>
         const SCREEN_WIDTH = 1920;
@@ -1731,11 +1700,13 @@
         const STAGE_WIDTH = SCREEN_WIDTH * 2;
         const STAGE_HEIGHT = SCREEN_HEIGHT;
         const AUTOPLAY_INTERVAL_MS = 10000;
+        const AUTOPLAY_IDLE_DELAY_MS = 5 * 60 * 1000;
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
         let isAutoplaying = false;
         let autoplayTimer = null;
+        let idleTimer = null;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
 
@@ -1771,6 +1742,7 @@
         let globeLastFrameTime = 0;
 
         const refs = {
+            stage: document.getElementById('dualStage'),
             leftKicker: document.getElementById('leftKicker'),
             heroYears: document.getElementById('heroYears'),
             heroYear: document.getElementById('heroYear'),
@@ -1805,7 +1777,6 @@
             counterText: document.getElementById('counterText'),
             topPrevBtn: document.getElementById('topPrevBtn'),
             topNextBtn: document.getElementById('topNextBtn'),
-            autoplayBtn: document.getElementById('autoplayBtn'),
             rightScaleProgress: document.getElementById('rightScaleProgress'),
             dualGlobeContainer: document.getElementById('dualGlobeContainer'),
             globeShell: document.getElementById('globeShell'),
@@ -2125,16 +2096,17 @@
                 .sort((a, b) => scorePhoto(b) - scorePhoto(a));
         }
 
-        function updateAutoplayButton() {
-            refs.autoplayBtn.textContent = isAutoplaying ? '停止自动播放' : '开始自动播放';
-            refs.autoplayBtn.classList.toggle('is-active', isAutoplaying);
-            refs.autoplayBtn.setAttribute('aria-pressed', isAutoplaying ? 'true' : 'false');
-        }
-
         function clearAutoplayTimer() {
             if (autoplayTimer) {
                 window.clearTimeout(autoplayTimer);
                 autoplayTimer = null;
+            }
+        }
+
+        function clearIdleTimer() {
+            if (idleTimer) {
+                window.clearTimeout(idleTimer);
+                idleTimer = null;
             }
         }
 
@@ -2150,19 +2122,44 @@
         }
 
         function setAutoplayState(nextState) {
-            isAutoplaying = Boolean(nextState);
+            const shouldAutoplay = Boolean(nextState) && milestones.length > 1;
+            if (isAutoplaying === shouldAutoplay) {
+                if (!shouldAutoplay) {
+                    clearAutoplayTimer();
+                }
+                return;
+            }
+
+            isAutoplaying = shouldAutoplay;
             if (isAutoplaying) {
+                clearIdleTimer();
                 scheduleAutoplayTick();
             } else {
                 clearAutoplayTimer();
             }
-            updateAutoplayButton();
         }
 
         function resetAutoplayTimer() {
             if (isAutoplaying) {
                 scheduleAutoplayTick();
             }
+        }
+
+        function restartIdleCountdown() {
+            clearIdleTimer();
+            if (milestones.length <= 1) return;
+
+            idleTimer = window.setTimeout(() => {
+                setAutoplayState(true);
+            }, AUTOPLAY_IDLE_DELAY_MS);
+        }
+
+        function registerUserActivity(event) {
+            if (event && event.isTrusted === false) return;
+            if (isAutoplaying) {
+                setAutoplayState(false);
+            }
+            restartIdleCountdown();
         }
 
         function renderStaticGlobeFallback() {
@@ -3161,7 +3158,6 @@
             refs.topPrevBtn.disabled = !canNavigate;
             refs.topNextBtn.disabled = !canNavigate;
             refs.rightScaleProgress.style.top = `${milestones.length > 1 ? (currentIndex / (milestones.length - 1)) * 100 : 0}%`;
-            updateAutoplayButton();
         }
 
         function bindPhotoClicks() {
@@ -3182,11 +3178,6 @@
             const photos = sortPhotosForDisplay(vm.photos);
             if (!photos.length) return;
 
-            const shouldResumeAutoplay = isAutoplaying;
-            if (shouldResumeAutoplay) {
-                setAutoplayState(false);
-            }
-
             let currentPhotoIndex = Math.max(0, Math.min(startIndex, photos.length - 1));
             const viewer = document.createElement('div');
             viewer.className = 'photo-viewer';
@@ -3201,9 +3192,6 @@
 
             const closeViewer = () => {
                 viewer.remove();
-                if (shouldResumeAutoplay) {
-                    setAutoplayState(true);
-                }
             };
 
             viewer.querySelector('.close-viewer').onclick = closeViewer;
@@ -3270,18 +3258,42 @@
             jumpTo(nextIndex, options);
         }
 
-        function toggleAutoplay() {
-            setAutoplayState(!isAutoplaying);
+        function initSwipeNavigation() {
+            if (!window.SwipeNavigation || typeof window.SwipeNavigation.setupSwipeNavigation !== 'function') {
+                return;
+            }
+
+            window.SwipeNavigation.setupSwipeNavigation({
+                surface: refs.stage,
+                onNavigate(direction) {
+                    navigate(direction);
+                }
+            });
         }
 
         refs.topPrevBtn.addEventListener('click', () => navigate('prev'));
         refs.topNextBtn.addEventListener('click', () => navigate('next'));
-        refs.autoplayBtn.addEventListener('click', toggleAutoplay);
 
         window.addEventListener('resize', debounce(syncStageScale, 120));
-        window.addEventListener('beforeunload', clearAutoplayTimer);
+        window.addEventListener('beforeunload', () => {
+            clearAutoplayTimer();
+            clearIdleTimer();
+        });
+
+        document.addEventListener('pointerdown', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('click', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('wheel', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
 
         document.addEventListener('keydown', (event) => {
+            registerUserActivity(event);
             if (hasOpenPhotoViewer()) return;
             if (event.key === 'ArrowRight') navigate('next');
             if (event.key === 'ArrowLeft') navigate('prev');
@@ -3289,7 +3301,9 @@
 
         syncStageScale();
         initGlobe();
+        initSwipeNavigation();
         renderPage(currentIndex);
+        restartIdleCountdown();
     </script>
 </body>
 </html>

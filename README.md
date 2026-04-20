@@ -9,6 +9,12 @@
 python3 -m http.server 8000
 # 访问 http://localhost:8000
 
+# 校验单双屏自适应路由
+node scripts/test-layout-router.js
+
+# 校验触摸滑动翻页规则
+node scripts/test-swipe-navigation.js
+
 # 本地运行内容管理服务
 node manage/server.js
 # 访问 http://localhost:3001/admin
@@ -20,8 +26,10 @@ node manage/server.js
 
 ## 展厅双屏演示
 
-- 单屏展示入口：`http://localhost:8000/`
-- 双屏展陈入口：`http://localhost:8000/dual-screen.html`
+- 自适应入口：`http://localhost:8000/`
+- `index.html` 会根据当前浏览器视口自动切换到单屏/移动端或双屏布局
+- 双屏固定入口：`http://localhost:8000/dual-screen.html`
+- 如需手动强制模式，可在 URL 后追加 `?layout=single` 或 `?layout=dual`
 - Windows 现场演示推荐先用 `msedge --app="http://localhost:8000/dual-screen.html"` 验证页面，再根据显卡控制软件决定是否合成超宽屏后进入 `F11` 或 `--kiosk`
 - 多显示器全屏演示、Edge app/kiosk、Intel/NVIDIA 合屏、DisplayFusion 限制等详细说明见 [DEPLOYMENT.md](DEPLOYMENT.md)
 

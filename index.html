@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-layout-mode="single">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 历史回顾展览 - 单屏模式</title>
+    <script src="shared/layout-router.js"></script>
     <style>
         :root {
             --screen-width: 1920px;
@@ -77,6 +78,7 @@
             grid-template-rows: 88px 1fr 92px;
             gap: 24px;
             padding: 24px 48px 32px;
+            touch-action: pan-y;
         }
 
         .empty-state {
@@ -1314,13 +1316,14 @@
             letter-spacing: 0.08em;
         }
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1100px) and (orientation: portrait) {
             html,
             body {
                 height: auto;
                 min-height: 100%;
                 overflow-x: hidden;
                 overflow-y: auto;
+                overscroll-behavior-y: contain;
             }
 
             .stage-viewport {
@@ -1546,6 +1549,11 @@
                 font-size: 14px;
             }
 
+            .commentary-list {
+                overflow: visible;
+                padding-right: 0;
+            }
+
             .stage-footer {
                 grid-template-columns: auto minmax(0, 1fr) auto;
                 gap: 12px;
@@ -1735,6 +1743,7 @@
     </script>
     <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
+    <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
     <script>
@@ -1749,6 +1758,10 @@
         };
         const GLOBE_CAM_RADIUS = 2.06;
         const GLOBE_HALO_RADIUS = 1.02;
+        const PORTRAIT_EDGE_NAV_MIN_Y = 90;
+        const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
+        const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, iframe';
         const milestoneList = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
 
         let currentIndex = 0;
@@ -1773,8 +1786,11 @@
         let globeArrived = false;
         let markerFlashDone = false;
         let globeLastFrameTime = 0;
+        let portraitEdgeGesture = null;
+        let lastPortraitTouchAt = 0;
 
         const refs = {
+            viewport: document.querySelector('.stage-viewport'),
             stage: document.getElementById('singleStage'),
             categoryTrack: document.getElementById('categoryTrack'),
             leftKicker: document.getElementById('leftKicker'),
@@ -3273,19 +3289,306 @@
             preloadAdjacentAssets(index);
         }
 
-        function jumpTo(index) {
+        function isPortraitStackLayout() {
+            if (typeof window.matchMedia === 'function') {
+                return window.matchMedia('(max-width: 1100px) and (orientation: portrait)').matches;
+            }
+            return window.innerWidth <= 1100 && window.innerHeight > window.innerWidth;
+        }
+
+        function getPortraitIgnoreElement(target) {
+            if (!target) return null;
+            const element = target.nodeType === 1 ? target : target.parentElement;
+            if (!element || !PORTRAIT_EDGE_IGNORE_SELECTOR) return null;
+            return element.closest(PORTRAIT_EDGE_IGNORE_SELECTOR);
+        }
+
+        function shouldIgnorePortraitEdgeTarget(target) {
+            return Boolean(getPortraitIgnoreElement(target));
+        }
+
+        function resetPortraitScrollPosition() {
+            if (!isPortraitStackLayout()) return;
+
+            const activeElement = document.activeElement;
+            if (activeElement && activeElement !== document.body && typeof activeElement.blur === 'function') {
+                activeElement.blur();
+            }
+
+            const resetScroll = () => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+                if (refs.viewport) {
+                    refs.viewport.scrollTop = 0;
+                }
+            };
+
+            resetScroll();
+            window.requestAnimationFrame(resetScroll);
+            window.setTimeout(resetScroll, 0);
+        }
+
+        function getDocumentScrollTop() {
+            return window.scrollY
+                || window.pageYOffset
+                || document.documentElement.scrollTop
+                || document.body.scrollTop
+                || 0;
+        }
+
+        function getDocumentScrollMax() {
+            const scrollHeight = Math.max(
+                document.documentElement.scrollHeight,
+                document.body.scrollHeight
+            );
+            return Math.max(0, scrollHeight - window.innerHeight);
+        }
+
+        function isNearPortraitBoundary(boundary) {
+            const scrollTop = getDocumentScrollTop();
+            const maxScroll = getDocumentScrollMax();
+
+            if (boundary === 'top') {
+                return scrollTop <= PORTRAIT_EDGE_NAV_TOLERANCE;
+            }
+
+            return scrollTop >= maxScroll - PORTRAIT_EDGE_NAV_TOLERANCE;
+        }
+
+        function scrollPortraitToBoundary(boundary) {
+            if (!isPortraitStackLayout()) return;
+
+            const targetTop = boundary === 'bottom' ? getDocumentScrollMax() : 0;
+            const applyScroll = () => {
+                window.scrollTo(0, targetTop);
+                document.documentElement.scrollTop = targetTop;
+                document.body.scrollTop = targetTop;
+                if (refs.viewport) {
+                    refs.viewport.scrollTop = targetTop;
+                }
+            };
+
+            applyScroll();
+            window.requestAnimationFrame(applyScroll);
+            window.setTimeout(applyScroll, 0);
+        }
+
+        function releasePortraitEdgeGesture() {
+            portraitEdgeGesture = null;
+        }
+
+        function notePortraitTouchActivity() {
+            lastPortraitTouchAt = Date.now();
+        }
+
+        function isPortraitTouchEmulationContext() {
+            const hasTouchPoints = typeof navigator !== 'undefined' && Number(navigator.maxTouchPoints) > 0;
+            const supportsMatchMedia = typeof window.matchMedia === 'function';
+            const hasCoarsePointer = supportsMatchMedia
+                && (window.matchMedia('(pointer: coarse)').matches || window.matchMedia('(any-pointer: coarse)').matches);
+            const hasNoHover = supportsMatchMedia
+                && (window.matchMedia('(hover: none)').matches || window.matchMedia('(any-hover: none)').matches);
+            return hasTouchPoints || hasCoarsePointer || hasNoHover;
+        }
+
+        function shouldIgnorePortraitPointerEvent(event) {
+            if (!event || !window.SwipeNavigation || typeof window.SwipeNavigation.isTouchLikePointer !== 'function') {
+                return true;
+            }
+
+            const isTouchLike = window.SwipeNavigation.isTouchLikePointer(event.pointerType);
+            const isEmulatedMouse = event.pointerType === 'mouse' && isPortraitTouchEmulationContext();
+
+            if (!event.isTrusted || (!isTouchLike && !isEmulatedMouse)) {
+                return true;
+            }
+
+            return Date.now() - lastPortraitTouchAt < PORTRAIT_EDGE_POINTER_SUPPRESSION_MS;
+        }
+
+        function resetPortraitEdgeBoundary() {
+            if (!portraitEdgeGesture) return;
+            portraitEdgeGesture.boundary = '';
+            portraitEdgeGesture.boundaryDrag = 0;
+        }
+
+        function getPortraitBoundaryForStep(deltaY) {
+            if (deltaY < 0 && isNearPortraitBoundary('bottom')) {
+                return 'bottom';
+            }
+
+            if (deltaY > 0 && isNearPortraitBoundary('top')) {
+                return 'top';
+            }
+
+            return '';
+        }
+
+        function maybeNavigateAcrossPortraitBoundary(currentY, originalEvent) {
+            if (!portraitEdgeGesture || !Number.isFinite(currentY)) return false;
+
+            const deltaStep = currentY - portraitEdgeGesture.lastY;
+            portraitEdgeGesture.lastY = currentY;
+
+            if (!deltaStep) return false;
+
+            const boundary = getPortraitBoundaryForStep(deltaStep);
+            if (!boundary) {
+                resetPortraitEdgeBoundary();
+                return false;
+            }
+
+            if (portraitEdgeGesture.boundary !== boundary) {
+                portraitEdgeGesture.boundary = boundary;
+                portraitEdgeGesture.boundaryDrag = 0;
+            }
+
+            const outwardDelta = boundary === 'bottom' ? -deltaStep : deltaStep;
+            if (outwardDelta <= 0) {
+                resetPortraitEdgeBoundary();
+                return false;
+            }
+
+            portraitEdgeGesture.boundaryDrag += outwardDelta;
+            if (portraitEdgeGesture.boundaryDrag < PORTRAIT_EDGE_NAV_MIN_Y) {
+                return false;
+            }
+
+            if (originalEvent && originalEvent.cancelable) {
+                originalEvent.preventDefault();
+            }
+
+            const direction = boundary === 'bottom' ? 'next' : 'prev';
+            const portraitScrollAnchor = boundary === 'bottom' ? 'top' : 'bottom';
+
+            releasePortraitEdgeGesture();
+            navigate(direction, { portraitScrollAnchor });
+            return true;
+        }
+
+        function findTouchByIdentifier(touchList, identifier) {
+            if (!touchList || identifier == null) return null;
+            for (let index = 0; index < touchList.length; index += 1) {
+                if (touchList[index].identifier === identifier) {
+                    return touchList[index];
+                }
+            }
+            return null;
+        }
+
+        function handlePortraitEdgeTouchStart(event) {
+            if (!isPortraitStackLayout()) return;
+            if (!event.isTrusted) return;
+            if (shouldIgnorePortraitEdgeTarget(event.target)) return;
+            if (portraitEdgeGesture) return;
+
+            const primaryTouch = event.changedTouches && event.changedTouches[0];
+            if (!primaryTouch) return;
+            notePortraitTouchActivity();
+
+            portraitEdgeGesture = {
+                identifier: primaryTouch.identifier,
+                source: 'touch',
+                startY: primaryTouch.clientY,
+                lastY: primaryTouch.clientY,
+                boundary: '',
+                boundaryDrag: 0
+            };
+        }
+
+        function handlePortraitEdgeTouchMove(event) {
+            if (!portraitEdgeGesture || portraitEdgeGesture.source !== 'touch') return;
+            notePortraitTouchActivity();
+
+            const activeTouch = findTouchByIdentifier(event.touches, portraitEdgeGesture.identifier)
+                || findTouchByIdentifier(event.changedTouches, portraitEdgeGesture.identifier);
+            if (!activeTouch) return;
+
+            maybeNavigateAcrossPortraitBoundary(activeTouch.clientY, event);
+        }
+
+        function handlePortraitEdgeTouchEnd(event) {
+            if (!portraitEdgeGesture || portraitEdgeGesture.source !== 'touch') return;
+            notePortraitTouchActivity();
+
+            const endedTouch = findTouchByIdentifier(event.changedTouches, portraitEdgeGesture.identifier);
+            if (endedTouch && maybeNavigateAcrossPortraitBoundary(endedTouch.clientY, event)) {
+                return;
+            }
+
+            releasePortraitEdgeGesture();
+        }
+
+        function handlePortraitEdgePointerDown(event) {
+            if (!isPortraitStackLayout()) return;
+            if (shouldIgnorePortraitPointerEvent(event)) return;
+            if (shouldIgnorePortraitEdgeTarget(event.target)) return;
+            if (portraitEdgeGesture) return;
+
+            portraitEdgeGesture = {
+                pointerId: event.pointerId,
+                source: 'pointer',
+                startY: event.clientY,
+                lastY: event.clientY,
+                boundary: '',
+                boundaryDrag: 0
+            };
+        }
+
+        function handlePortraitEdgePointerMove(event) {
+            if (!portraitEdgeGesture || portraitEdgeGesture.source !== 'pointer') return;
+            if (event.pointerId !== portraitEdgeGesture.pointerId) return;
+            if (shouldIgnorePortraitPointerEvent(event)) return;
+
+            maybeNavigateAcrossPortraitBoundary(event.clientY, event);
+        }
+
+        function handlePortraitEdgePointerEnd(event) {
+            if (!portraitEdgeGesture || portraitEdgeGesture.source !== 'pointer') return;
+            if (event.pointerId !== portraitEdgeGesture.pointerId) return;
+            if (shouldIgnorePortraitPointerEvent(event)) return;
+
+            if (maybeNavigateAcrossPortraitBoundary(event.clientY, event)) {
+                return;
+            }
+
+            releasePortraitEdgeGesture();
+        }
+
+        function jumpTo(index, options = {}) {
+            const { portraitScrollAnchor = 'top' } = options;
             if (index < 0 || index >= milestoneList.length || index === currentIndex) return;
             preloadMilestoneAssets(index);
             currentIndex = index;
             renderPage(currentIndex);
+            if (portraitScrollAnchor === 'bottom') {
+                scrollPortraitToBoundary('bottom');
+            } else {
+                resetPortraitScrollPosition();
+            }
         }
 
-        function navigate(direction) {
+        function navigate(direction, options = {}) {
             if (milestoneList.length <= 1) return;
             const nextIndex = direction === 'next'
                 ? Math.min(currentIndex + 1, milestoneList.length - 1)
                 : Math.max(currentIndex - 1, 0);
-            jumpTo(nextIndex);
+            jumpTo(nextIndex, options);
+        }
+
+        function initSwipeNavigation() {
+            if (!window.SwipeNavigation || typeof window.SwipeNavigation.setupSwipeNavigation !== 'function') {
+                return;
+            }
+
+            window.SwipeNavigation.setupSwipeNavigation({
+                surface: refs.stage,
+                onNavigate(direction) {
+                    if (isPortraitStackLayout()) return;
+                    navigate(direction);
+                }
+            });
         }
 
         if (!milestoneList.length) {
@@ -3295,6 +3598,14 @@
             refs.nextBtn.addEventListener('click', () => navigate('next'));
 
             window.addEventListener('resize', debounce(syncStageScale, 120));
+            document.addEventListener('touchstart', handlePortraitEdgeTouchStart, { passive: true });
+            document.addEventListener('touchmove', handlePortraitEdgeTouchMove, { passive: false });
+            document.addEventListener('touchend', handlePortraitEdgeTouchEnd, { passive: true });
+            document.addEventListener('touchcancel', releasePortraitEdgeGesture, { passive: true });
+            document.addEventListener('pointerdown', handlePortraitEdgePointerDown, { passive: true });
+            document.addEventListener('pointermove', handlePortraitEdgePointerMove, { passive: true });
+            document.addEventListener('pointerup', handlePortraitEdgePointerEnd, { passive: true });
+            document.addEventListener('pointercancel', releasePortraitEdgeGesture, { passive: true });
 
             document.addEventListener('keydown', (event) => {
                 if (hasOpenPhotoViewer()) return;
@@ -3304,6 +3615,7 @@
 
             syncStageScale();
             initGlobe();
+            initSwipeNavigation();
             renderPage(currentIndex);
         }
     </script>
