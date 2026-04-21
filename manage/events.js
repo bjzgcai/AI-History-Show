@@ -583,8 +583,8 @@ module.exports = {
     "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
     "figures": [
       {
-        "name": "研究团队",
-        "role": "待补充"
+        "name": "研究机构",
+        "role": "前沿模型研发机构"
       }
     ],
     "quoteText": "注释：  榜单来源：LMArena\"",

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 生成脚本：读取 catalog.js + events.js，输出 milestones-data.js
+// 生成脚本：读取 catalog.js + events.js，输出 milestones-data.js / milestones-data-default.js
 // 用法：node manage/generate.js
 //
 // 无需安装任何依赖，直接运行即可。
@@ -13,10 +13,15 @@ const path = require('path');
 
 const ROOT       = path.resolve(__dirname, '..');
 const VIDEOS_DIR = path.join(ROOT, 'resources', 'videos');
-const OUTPUT     = path.join(ROOT, 'milestones-data.js');
+const OUTPUTS    = [
+  path.join(ROOT, 'milestones-data.js'),
+  path.join(ROOT, 'milestones-data-default.js'),
+];
+const AVATAR_REGISTRY_PATH = path.join(__dirname, 'figure-avatars.js');
 
 const { categories } = require('./catalog.js');
 const eventsMap      = require('./events.js');
+const avatarRegistry = loadAvatarRegistry();
 
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
 
@@ -134,7 +139,7 @@ for (const cat of categories) {
       subtitle:    cat.subtitle,
       location:    ev.location,
       description: ev.description,
-      figures:     ev.figures || [],
+      figures:     (ev.figures || []).map(enrichFigure),
       photos:      [],   // 预留字段，暂不使用
       videoUrl:    "",   // 预留字段，暂不使用
       quote:       buildQuote(ev.quoteText, ev.quotePage),
@@ -167,6 +172,29 @@ function detectSource(url) {
   return 'Web';
 }
 
+/** 头像注册表允许缺失，这样生成脚本在资源未准备齐时也不会直接报错 */
+function loadAvatarRegistry() {
+  if (!fs.existsSync(AVATAR_REGISTRY_PATH)) {
+    console.warn('[警告] manage/figure-avatars.js 不存在，已跳过头像注册表补全。');
+    return {};
+  }
+
+  return require('./figure-avatars.js');
+}
+
+/** 给人物条目补上显式头像信息 */
+function enrichFigure(figure) {
+  const safeFigure = figure && typeof figure === 'object' ? figure : {};
+  const registryEntry = safeFigure.name ? avatarRegistry[safeFigure.name] || {} : {};
+
+  return {
+    ...safeFigure,
+    avatar: safeFigure.avatar || registryEntry.avatar || '',
+    avatarStyle: safeFigure.avatarStyle || registryEntry.avatarStyle || '',
+    figureType: safeFigure.figureType || registryEntry.type || 'person',
+  };
+}
+
 /** 将纯文本引言 + 来源说明 组装成 HTML 字符串（\n → <br>）*/
 function buildQuote(text, page) {
   if (!text) return '';
@@ -179,37 +207,85 @@ function buildQuote(text, page) {
 
 // ─── 写出文件 ────────────────────────────────────────────────────────────────
 
-// 备份旧的输出文件（最多保留5份）
-const BACKUP_DIR = path.join(ROOT, 'manage', '.backups');
-if (fs.existsSync(OUTPUT)) {
+function backupOutput(file) {
+  if (!fs.existsSync(file)) return;
+
+  // 备份旧的输出文件（每个目标最多保留5份）
+  const BACKUP_DIR = path.join(ROOT, 'manage', '.backups');
   fs.mkdirSync(BACKUP_DIR, { recursive: true });
   const ts   = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-  const dest = path.join(BACKUP_DIR, `milestones-data.js.${ts}.bak`);
-  fs.copyFileSync(OUTPUT, dest);
+  const base = path.basename(file);
+  const dest = path.join(BACKUP_DIR, `${base}.${ts}.bak`);
+  fs.copyFileSync(file, dest);
   const all = fs.readdirSync(BACKUP_DIR)
-    .filter(f => f.startsWith('milestones-data.js.') && f.endsWith('.bak'))
+    .filter((name) => name.startsWith(`${base}.`) && name.endsWith('.bak'))
     .sort();
   for (const old of all.slice(0, -5)) {
     try { fs.unlinkSync(path.join(BACKUP_DIR, old)); } catch (_) {}
   }
 }
 
+function buildOutputContent(now) {
+  return [
+    `// AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）`,
+    `// 生成时间: ${now}`,
+    `// 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/`,
+    ``,
+    `const milestones = ${JSON.stringify(milestones, null, 2)};`,
+    ``,
+    `// 导出（兼容 Node.js require）`,
+    `if (typeof module !== 'undefined' && module.exports) {`,
+    `  module.exports = { milestones };`,
+    `}`,
+    ``,
+  ].join('\n');
+}
+
+function validateAvatarAssets(items) {
+  const missing = [];
+  const seen = new Set();
+
+  for (const milestone of items) {
+    for (const figure of milestone.figures || []) {
+      const avatar = String(figure.avatar || '').trim();
+      if (!avatar) continue;
+      if (seen.has(avatar)) continue;
+      seen.add(avatar);
+
+      const absolutePath = path.isAbsolute(avatar)
+        ? avatar
+        : path.join(ROOT, avatar);
+
+      if (!fs.existsSync(absolutePath)) {
+        missing.push({
+          avatar,
+          milestoneId: milestone.id,
+          figureName: figure.name || '未知人物',
+        });
+      }
+    }
+  }
+
+  return missing;
+}
+
+const missingAvatarAssets = validateAvatarAssets(milestones);
 const now     = new Date().toISOString().replace('T', ' ').slice(0, 16);
-const content = [
-  `// AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）`,
-  `// 生成时间: ${now}`,
-  `// 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/`,
-  ``,
-  `const milestones = ${JSON.stringify(milestones, null, 2)};`,
-  ``,
-  `// 导出（兼容 Node.js require）`,
-  `if (typeof module !== 'undefined' && module.exports) {`,
-  `  module.exports = { milestones };`,
-  `}`,
-  ``,
-].join('\n');
+const content = buildOutputContent(now);
 
-fs.writeFileSync(OUTPUT, content, 'utf8');
+for (const file of OUTPUTS) {
+  backupOutput(file);
+  fs.writeFileSync(file, content, 'utf8');
+}
 
-console.log(`✓ 生成完成：${OUTPUT}`);
+for (const item of missingAvatarAssets) {
+  console.warn(`[警告] 头像文件不存在：${item.avatar}（${item.milestoneId} / ${item.figureName}）`);
+}
+
+for (const file of OUTPUTS) {
+  console.log(`✓ 生成完成：${file}`);
+}
 console.log(`  共 ${categories.length} 个分类，${milestones.length} 个事件`);
+if (missingAvatarAssets.length > 0) {
+  console.log(`  头像资源缺失：${missingAvatarAssets.length}`);
+}

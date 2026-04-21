@@ -1,10 +1,10 @@
-// AI 历史里程碑完整数据（从PPT自动生成）
-// 生成时间: 2026-03-11
-// 数据来源: references/未来已来，过去未去 - 改.pptx
+// AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
+// 生成时间: 2026-04-21 06:19
+// 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
   {
-    "id": "milestone-1956-1",
+    "id": "milestone-1956-dartmouth",
     "year": 1956,
     "category": "AI创世纪 (1950s-1970s)",
     "title": "达特茅斯会议 - AI正式诞生！",
@@ -17,30 +17,40 @@ const milestones = [
         -72.2887
       ]
     },
-    "description": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 “Artificial Intelligence” 这个名称",
+    "description": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"Artificial Intelligence\" 这个名称",
     "figures": [
       {
         "name": "John McCarthy",
-        "role": "提出\"AI\"术语"
+        "role": "提出\"AI\"术语",
+        "avatar": "resources/images/figures/john-mccarthy.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Marvin Minsky",
-        "role": "认知科学家"
+        "role": "认知科学家",
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Claude Shannon",
-        "role": "信息论创始人"
+        "role": "信息论创始人",
+        "avatar": "resources/images/figures/claude-shannon.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Nathaniel Rochester",
-        "role": "IBM架构师"
+        "role": "IBM架构师",
+        "avatar": "resources/images/figures/nathaniel-rochester.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"从1956年至今，已经历经69年，AI发展经历了“三起两落”。为什么过去没实现呢？要分析一下深层次原因。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第1页</span>",
+    "quote": "\"从1956年至今，已经历经69年，AI发展经历了\"三起两落\"。为什么过去没实现呢？要分析一下深层次原因。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第1页</span>",
     "resources": {
       "images": [
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
@@ -55,13 +65,14 @@ const milestones = [
           "title": "Dartmouth Conference - The Birthplace of A.I. | Where It All Started!",
           "channel": "ELEV-AI-TE",
           "duration": "9:36",
-          "thumbnail": "https://img.youtube.com/vi/5Ur-Nf85ARw/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/5Ur-Nf85ARw/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-1957-4",
+    "id": "milestone-1957-perceptron",
     "year": 1957,
     "category": "AI创世纪 (1950s-1970s)",
     "title": "感知机与连接主义",
@@ -78,14 +89,15 @@ const milestones = [
     "figures": [
       {
         "name": "Frank Rosenblatt",
-        "role": "感知机发明者"
+        "role": "感知机发明者",
+        "avatar": "resources/images/figures/frank-rosenblatt.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"1958 年， Frank Rosenblatt发明了“感知机”（Perceptron），这是人工神经网络的首个物理实现，也是连接主义的代表性工作。\n\nRosenblatt 乐观地预测：感知器可以 “学习、做决定、翻译语言”。感知器技术曾获得巨大成功：美国海军曾出资支持该项研究, 期望它 “可以自己走、说话、 观察、阅读、自我复制、甚至拥有自我意识”。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第4页</span>",
+    "quote": "\"1958 年， Frank Rosenblatt发明了\"感知机\"（Perceptron），这是人工神经网络的首个物理实现，也是连接主义的代表性工作。<br><br>Rosenblatt 乐观地预测：感知器可以\"学习、做决定、翻译语言\"。感知器技术曾获得巨大成功：美国海军曾出资支持该项研究, 期望它\"可以自己走、说话、 观察、阅读、自我复制、甚至拥有自我意识\"。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第4页</span>",
     "resources": {
       "images": [
         "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
@@ -102,13 +114,14 @@ const milestones = [
           "title": "Data Science #11 - The original Perceptron paper by Frank Rosenblatt (1958)",
           "channel": "Data Science Decoded",
           "duration": "1:03:30",
-          "thumbnail": "https://img.youtube.com/vi/Ikev4w8Euy0/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/Ikev4w8Euy0/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-1969-5",
+    "id": "milestone-1969-ai-winter",
     "year": 1969,
     "category": "AI创世纪 (1950s-1970s)",
     "title": "第一次寒冬的到来",
@@ -125,14 +138,15 @@ const milestones = [
     "figures": [
       {
         "name": "Marvin Minsky",
-        "role": "《感知器》作者"
+        "role": "《感知器》作者",
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"感知机在当时引发了巨大的乐观情绪，但由于缺乏训练多层网络的算法（即后来的反向传播），它能解决的问题类型严重受限。Minsky等人在1969年出版的《感知机》一书中，通过数学证明指出单层感知机无法处理非线性可分的 XOR（异或）逻辑问题。该书的出版，在社会学层面，被广泛解读为对神经网络研究的“死刑判决”。这导致神经网络研究进入长达十余年的第一个“寒冬”。有趣的是，Minsky和Rosenblatt是...\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第5页</span>",
+    "quote": "\"感知机在当时引发了巨大的乐观情绪，但由于缺乏训练多层网络的算法（即后来的反向传播），它能解决的问题类型严重受限。Minsky等人在1969年出版的《感知机》一书中，通过数学证明指出单层感知机无法处理非线性可分的 XOR（异或）逻辑问题。该书的出版，在社会学层面，被广泛解读为对神经网络研究的\"死刑判决\"。这导致神经网络研究进入长达十余年的第一个\"寒冬\"。有趣的是，Minsky和Rosenblatt是...\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第5页</span>",
     "resources": {
       "images": [
         "resources/images/1969-ai-winter/people/1969-ai-winter_people_01.jpg",
@@ -146,13 +160,14 @@ const milestones = [
           "title": "AI Winter : The Rise and Fall of Artificial Intelligence",
           "channel": "AI Discovery Zone",
           "duration": "3:03",
-          "thumbnail": "https://img.youtube.com/vi/w_v5lumtoPk/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/w_v5lumtoPk/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-1986-9",
+    "id": "milestone-1986-backpropagation",
     "year": 1986,
     "category": "神经网络与连接主义的复兴 (1980s-2000s)",
     "title": "反向传播算法",
@@ -169,22 +184,29 @@ const milestones = [
     "figures": [
       {
         "name": "David Rumelhart",
-        "role": "BP算法作者"
+        "role": "BP算法作者",
+        "avatar": "resources/images/figures/david-rumelhart.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Geoffrey Hinton",
-        "role": "深度学习之父"
+        "role": "深度学习之父",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Ronald Williams",
-        "role": "BP算法共同作者"
+        "role": "BP算法共同作者",
+        "avatar": "resources/images/figures/ronald-williams.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"神经网络的复兴与反向传播算法密切相关。\n\n1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第9页</span>",
+    "quote": "\"神经网络的复兴与反向传播算法密切相关。<br><br>1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第9页</span>",
     "resources": {
       "images": [
         "resources/images/1986-backpropagation/historical/1986-backpropagation_historical_01.png",
@@ -198,13 +220,14 @@ const milestones = [
           "title": "Backpropagation calculus | Deep Learning Chapter 4",
           "channel": "3Blue1Brown",
           "duration": "10:18",
-          "thumbnail": "https://img.youtube.com/vi/tIeHLnjs5U8/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/tIeHLnjs5U8/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-1989-14",
+    "id": "milestone-1989-cnn",
     "year": 1989,
     "category": "神经网络与连接主义的复兴 (1980s-2000s)",
     "title": "卷积神经网络",
@@ -221,14 +244,15 @@ const milestones = [
     "figures": [
       {
         "name": "Yann LeCun",
-        "role": "CNN之父"
+        "role": "CNN之父",
+        "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"卷积神经网络的结构设计受生物机理启发\n视觉皮质只对局部区域敏感，通过堆叠覆盖整个\u000b视野；皮质细胞起到滤波器作用，适合利用自然\u000b图像的强局部相关性\n1989年， LeCun将反向传播算法应用于训练卷积神经网络，\u000b实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第14页</span>",
+    "quote": "\"卷积神经网络的结构设计受生物机理启发<br>视觉皮质只对局部区域敏感，通过堆叠覆盖整个视野；皮质细胞起到滤波器作用，适合利用自然图像的强局部相关性<br>1989年， LeCun将反向传播算法应用于训练卷积神经网络，实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第14页</span>",
     "resources": {
       "images": [
         "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
@@ -243,13 +267,14 @@ const milestones = [
           "title": "Convolutional Network Demo from 1989",
           "channel": "Yann LeCun",
           "duration": "1:02",
-          "thumbnail": "https://img.youtube.com/vi/FwFduRA_L6Q/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/FwFduRA_L6Q/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-1986-16",
+    "id": "milestone-1986-rnn",
     "year": 1986,
     "category": "神经网络与连接主义的复兴 (1980s-2000s)",
     "title": "循环神经网络",
@@ -262,22 +287,26 @@ const milestones = [
         -117.234
       ]
     },
-    "description": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，Elman和Jordan分别提出了Simple RNN和Jordan Network，引入context units作为显式的'短期记忆'单元，开创了循环神经网络的先河。",
+    "description": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，Elman和Jordan分别提出了Simple RNN和Jordan Network，引入context units作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
     "figures": [
       {
         "name": "Jeffrey Elman",
-        "role": "Simple RNN提出者"
+        "role": "Simple RNN提出者",
+        "avatar": "resources/images/figures/jeffrey-elman.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Michael Jordan",
-        "role": "Jordan Network提出者"
+        "role": "Jordan Network提出者",
+        "avatar": "resources/images/figures/michael-i-jordan.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"待补充\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第16页</span>",
+    "quote": "\"待补充\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第16页</span>",
     "resources": {
       "images": [
         "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
@@ -292,13 +321,14 @@ const milestones = [
           "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
           "channel": "StatQuest with Josh Starmer",
           "duration": "16:37",
-          "thumbnail": "https://img.youtube.com/vi/AsNTP8Kwu80/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/AsNTP8Kwu80/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-1997-19",
+    "id": "milestone-1997-lstm",
     "year": 1997,
     "category": "神经网络与连接主义的复兴 (1980s-2000s)",
     "title": "LSTM与门控机制",
@@ -315,18 +345,22 @@ const milestones = [
     "figures": [
       {
         "name": "Sepp Hochreiter",
-        "role": "LSTM发明者"
+        "role": "LSTM发明者",
+        "avatar": "resources/images/figures/sepp-hochreiter.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Jürgen Schmidhuber",
-        "role": "LSTM共同发明者"
+        "role": "LSTM共同发明者",
+        "avatar": "resources/images/figures/juergen-schmidhuber.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"梯度在沿 C_t 反向传播时，主要路径是连乘遗忘门 f_t。只要遗忘门在大部分时间接近1，梯度就能几乎无衰减地长距离传递，这被称为“常数误差流”。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第19页</span>",
+    "quote": "\"梯度在沿 C_t 反向传播时，主要路径是连乘遗忘门 f_t。只要遗忘门在大部分时间接近1，梯度就能几乎无衰减地长距离传递，这被称为\"常数误差流\"。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第19页</span>",
     "resources": {
       "images": [
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
@@ -341,13 +375,14 @@ const milestones = [
           "title": "What is LSTM (Long Short Term Memory)?",
           "channel": "IBM Technology",
           "duration": "8:19",
-          "thumbnail": "https://img.youtube.com/vi/b61DPVFX03I/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/b61DPVFX03I/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2012-23",
+    "id": "milestone-2012-alexnet",
     "year": 2012,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "ImageNet时代：AlexNet与深度学习爆发",
@@ -364,18 +399,22 @@ const milestones = [
     "figures": [
       {
         "name": "Alex Krizhevsky",
-        "role": "AlexNet作者"
+        "role": "AlexNet作者",
+        "avatar": "resources/images/figures/alex-krizhevsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Geoffrey Hinton",
-        "role": "导师"
+        "role": "导师",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"待补充\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第23页</span>",
+    "quote": "\"待补充\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第23页</span>",
     "resources": {
       "images": [
         "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
@@ -387,16 +426,17 @@ const milestones = [
           "id": "_zE4wYy-vjo",
           "url": "https://www.youtube.com/watch?v=_zE4wYy-vjo",
           "embed_url": "https://www.youtube.com/embed/_zE4wYy-vjo",
-          "title": "When AI Finally 'Saw' : The ImageNet Moment (AlexNet's 2012 Revolution)",
+          "title": "When AI Finally \"Saw\" : The ImageNet Moment (AlexNet's 2012 Revolution)",
           "channel": "Machine Learning Nerd",
           "duration": "7:19",
-          "thumbnail": "https://img.youtube.com/vi/_zE4wYy-vjo/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/_zE4wYy-vjo/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2014-25",
+    "id": "milestone-2014-highway-network",
     "year": 2014,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "Highway Network",
@@ -413,18 +453,22 @@ const milestones = [
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": "GAN发明者",
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": "注意力机制提出者",
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"最初训练超过百层\n最多训练到上千层\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第25页</span>",
+    "quote": "\"最初训练超过百层<br>最多训练到上千层\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第25页</span>",
     "resources": {
       "images": [
         "resources/images/2014-highway-network/architecture/2014-gan_historical_01.png",
@@ -438,13 +482,14 @@ const milestones = [
           "title": "Highway Networks - Deep Neural Network Explained",
           "channel": "Deep Learning with Yacine",
           "duration": "8:59",
-          "thumbnail": "https://img.youtube.com/vi/CyoQ1FoUWdA/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/CyoQ1FoUWdA/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2015-26",
+    "id": "milestone-2015-resnet",
     "year": 2015,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "ResNet",
@@ -457,22 +502,26 @@ const milestones = [
         116.4074
       ]
     },
-    "description": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，“简单粗暴”但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做“最优门控≈1”的 Highway Network。 2015年训练到152层 后来最多训练到1202层",
+    "description": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层",
     "figures": [
       {
         "name": "何恺明",
-        "role": "ResNet作者"
+        "role": "ResNet作者",
+        "avatar": "resources/images/figures/kaiming-he.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "孙剑",
-        "role": "ResNet共同作者"
+        "role": "ResNet共同作者",
+        "avatar": "resources/images/figures/sun-jian.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2015年，何恺明和孙剑的ResNet，通过直接加identity通路，“简单粗暴”但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。\n技术上，ResNet可以看做“最优门控≈1”的 Highway Network。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第26页</span>",
+    "quote": "\"2015年，何恺明和孙剑的ResNet，通过直接加identity通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。<br>技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第26页</span>",
     "resources": {
       "images": [
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
@@ -480,9 +529,6 @@ const milestones = [
         "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
         "resources/images/2015-resnet/historical/2015-resnet_historical_01.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_02.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_04.png"
       ],
       "videos": [
@@ -493,13 +539,14 @@ const milestones = [
           "title": "ResNet を（実際に）10分以内で説明する",
           "channel": "rupert ai",
           "duration": "9:47",
-          "thumbnail": "https://img.youtube.com/vi/o_3mboe1jYI/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/o_3mboe1jYI/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2016-27",
+    "id": "milestone-2016-densenet",
     "year": 2016,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "DenseNet",
@@ -512,25 +559,24 @@ const milestones = [
         -76.4735
       ]
     },
-    "description": "2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做“无压缩、无遗忘”的极端 LSTM。 最多训练到201层",
+    "description": "2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。 最多训练到201层",
     "figures": [
       {
         "name": "黄高",
-        "role": "DenseNet作者"
+        "role": "DenseNet作者",
+        "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。\n\n技术上，DenseNet可以看做“无压缩、无遗忘”的极端 LSTM。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第27页</span>",
+    "quote": "\"2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。<br><br>技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第27页</span>",
     "resources": {
       "images": [
         "resources/images/2016-densenet/people/2016-densenet_people_02.png",
         "resources/images/2016-densenet/people/2016-densenet_people_01.png",
-        "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
-        "resources/images/2016-densenet/people/2016-densenet_people_01.png",
-        "resources/images/2016-densenet/people/2016-densenet_people_02.png"
+        "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png"
       ],
       "videos": [
         {
@@ -540,13 +586,14 @@ const milestones = [
           "title": "DenseNet | Densely Connected Convolutional Networks",
           "channel": "Code With Aarohi",
           "duration": "22:59",
-          "thumbnail": "https://img.youtube.com/vi/hCg9bolMeJM/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/hCg9bolMeJM/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2014-30",
+    "id": "milestone-2014-gan",
     "year": 2014,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "GAN（生成对抗网路）",
@@ -559,32 +606,35 @@ const milestones = [
         -73.5673
       ]
     },
-    "description": "2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为“控制器”尝试产生输出，另一个网络作为“预测器”尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 Goodfellow对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的“流行即发明”案例。",
+    "description": "2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为\"控制器\"尝试产生输出，另一个网络作为\"预测器\"尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 Goodfellow对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的\"流行即发明\"案例。",
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": "GAN发明者",
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": "注意力机制提出者",
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。\n\n类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为“控制器”尝试产生输出，另一个网络作为“预测器”尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。\n\nGoodfellow对自己没有引用这些早期工...\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第30页</span>",
+    "quote": "\"2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。<br><br>类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为\"控制器\"尝试产生输出，另一个网络作为\"预测器\"尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。<br><br>Goodfellow对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的\"流行即发明\"案例。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第30页</span>",
     "resources": {
       "images": [
         "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
       ],
-      "videos": [
-      ]
+      "videos": []
     }
   },
   {
-    "id": "milestone-2014-32",
+    "id": "milestone-2014-attention",
     "year": 2014,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "自回归模型和注意力机制",
@@ -601,21 +651,24 @@ const milestones = [
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": "GAN发明者",
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": "注意力机制提出者",
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2014年，Bengio在《Neural Machine Translation by Jointly Learning to Align and Translate》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第32页</span>",
+    "quote": "\"2014年，Bengio在《Neural Machine Translation by Jointly Learning to Align and Translate》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第32页</span>",
     "resources": {
       "images": [
-        "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
         "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
         "resources/images/2014-attention/people/2014-attention_people_01.png"
       ],
@@ -627,13 +680,14 @@ const milestones = [
           "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
           "channel": "3Blue1Brown",
           "duration": "26:10",
-          "thumbnail": "https://img.youtube.com/vi/eMlx5fFNoYc/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/eMlx5fFNoYc/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2017-33",
+    "id": "milestone-2017-transformer",
     "year": 2017,
     "category": "深度学习与范式归一 (2010s-2020s)",
     "title": "Transformer",
@@ -646,31 +700,30 @@ const milestones = [
         -122.0841
       ]
     },
-    "description": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的“思想去冗余、结构去先验”的探索。 Transformer已成为目前人工智能领域的主导模型。",
+    "description": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。",
     "figures": [
       {
         "name": "Ashish Vaswani",
-        "role": "Transformer作者"
+        "role": "Transformer作者",
+        "avatar": "resources/images/figures/ashish-vaswani.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2017 年，Vaswani 等人在《Attention \u000bis All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。\nTransformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的“思想去冗余、结构去先验”的探索。\nTransformer已成为...\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第33页</span>",
+    "quote": "\"2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。<br>Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。<br>Transformer已成为目前人工智能领域的主导模型。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第33页</span>",
     "resources": {
       "images": [
-        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
         "resources/images/2017-transformer/historical/2017-transformer_historical_01.png",
         "resources/images/2017-transformer/papers/2017-transformer_papers_01.png"
       ],
-      "videos": [
-      ]
+      "videos": []
     }
   },
   {
-    "id": "milestone-2018-37",
+    "id": "milestone-2018-bert",
     "year": 2018,
     "category": "大模型时代 (2020s-今)",
     "title": "BERT",
@@ -687,18 +740,22 @@ const milestones = [
     "figures": [
       {
         "name": "Jacob Devlin",
-        "role": "BERT作者"
+        "role": "BERT作者",
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Alec Radford",
-        "role": "GPT作者"
+        "role": "GPT作者",
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2018年，Google提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。\nBERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（Masked Language Model）和下一句预测（Next Sentence Prediction）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第37页</span>",
+    "quote": "\"2018年，Google提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。<br>BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（Masked Language Model）和下一句预测（Next Sentence Prediction）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第37页</span>",
     "resources": {
       "images": [
         "resources/images/2018-bert/people/2018-bert_people_03.jpg",
@@ -713,13 +770,14 @@ const milestones = [
           "title": "BERT ニューラル ネットワーク - 説明!",
           "channel": "CodeEmporium",
           "duration": "11:37",
-          "thumbnail": "https://img.youtube.com/vi/xI0HHN5XKDo/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/xI0HHN5XKDo/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2018-38",
+    "id": "milestone-2018-gpt",
     "year": 2018,
     "category": "大模型时代 (2020s-今)",
     "title": "GPT",
@@ -736,18 +794,22 @@ const milestones = [
     "figures": [
       {
         "name": "Jacob Devlin",
-        "role": "BERT作者"
+        "role": "BERT作者",
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Alec Radford",
-        "role": "GPT作者"
+        "role": "GPT作者",
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。\nGPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（Next Token Prediction）进行训练。\n虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。\n2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第38页</span>",
+    "quote": "\"2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。<br>GPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（Next Token Prediction）进行训练。<br>虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。<br>2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第38页</span>",
     "resources": {
       "images": [
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
@@ -764,13 +826,14 @@ const milestones = [
           "title": "ChatGPTの35年の歴史",
           "channel": "Art of the Problem",
           "duration": "26:55",
-          "thumbnail": "https://img.youtube.com/vi/OFS90-FX6pg/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/OFS90-FX6pg/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2023-45",
+    "id": "milestone-2023-agents",
     "year": 2023,
     "category": "大模型时代 (2020s-今)",
     "title": "智能体：LLM驱动的自主系统",
@@ -783,47 +846,44 @@ const milestones = [
         -122.4194
       ]
     },
-    "description": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为'认知引擎'，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从'预定义算法'到'自主适应行为'的跨越。",
+    "description": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
     "figures": [
       {
         "name": "Stuart Russell",
-        "role": "智能体理论奠基人"
+        "role": "智能体理论奠基人",
+        "avatar": "resources/images/figures/stuart-russell.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Peter Norvig",
-        "role": "AIMA作者"
+        "role": "AIMA作者",
+        "avatar": "resources/images/figures/peter-norvig.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Michael Wooldridge",
-        "role": "多智能体系统专家"
+        "role": "多智能体系统专家",
+        "avatar": "resources/images/figures/michael-wooldridge.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"智能体的能动性构想，贯穿了AI的整个发展史。1995年，Russell与Norvig在其经典教科书中将智能体定义为能够通过传感器感知环境并通过执行器作用于环境的实体。同时期的Wooldridge与Jennings进一步细化了智能体的四个属性：自主性、社会能力、反应性和主动性。当代智能体之所以被认为具有原创性，是因为它引入了大语言模型作为'认知引擎'。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第45-46页</span>",
+    "quote": "\"智能体的能动性构想，贯穿了AI的整个发展史。1995年，Russell与Norvig在其经典教科书中将智能体定义为能够通过传感器感知环境并通过执行器作用于环境的实体。同时期的Wooldridge与Jennings进一步细化了智能体的四个属性：自主性、社会能力、反应性和主动性。当代智能体之所以被认为具有原创性，是因为它引入了大语言模型作为\"认知引擎\"。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第45-46页</span>",
     "resources": {
       "images": [
         "resources/images/2023-agents/historical/2023-agents_historical_01.png",
         "resources/images/2023-agents/historical/2023-agents_historical_02.png",
         "resources/images/2023-agents/historical/2023-agents_historical_03.png"
       ],
-      "videos": [
-        {
-          "id": "F8NKVhkZZWI",
-          "url": "https://www.youtube.com/watch?v=F8NKVhkZZWI",
-          "embed_url": "https://www.youtube.com/embed/F8NKVhkZZWI",
-          "title": "AI Agents Explained Like You're 5 (Seriously)",
-          "channel": "Matthew Berman",
-          "duration": "10:42",
-          "thumbnail": "https://img.youtube.com/vi/F8NKVhkZZWI/maxresdefault.jpg"
-        }
-      ]
+      "videos": []
     }
   },
   {
-    "id": "milestone-2025-39",
+    "id": "milestone-2025-llm-competition",
     "year": 2025,
     "category": "大模型时代 (2020s-今)",
     "title": "大语言模型百花齐放",
@@ -853,20 +913,20 @@ const milestones = [
     "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
     "figures": [
       {
-        "name": "研究团队",
-        "role": "待补充"
+        "name": "研究机构",
+        "role": "前沿模型研发机构",
+        "avatar": "resources/images/figures/research-institution.png",
+        "avatarStyle": "",
+        "figureType": "team"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"注释：  榜单来源：LMArena\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第39页</span>",
+    "quote": "\"注释：  榜单来源：LMArena\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第39页</span>",
     "resources": {
       "images": [
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
         "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
       ],
@@ -878,13 +938,14 @@ const milestones = [
           "title": "How Large Language Models Work",
           "channel": "IBM Technology",
           "duration": "5:34",
-          "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2020-50",
+    "id": "milestone-2020-alphafold",
     "year": 2020,
     "category": "AI for Science (2018-今)",
     "title": "AlphaFold: 蛋白质结构预测",
@@ -901,21 +962,24 @@ const milestones = [
     "figures": [
       {
         "name": "Demis Hassabis",
-        "role": "DeepMind CEO"
+        "role": "DeepMind CEO",
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "John Jumper",
-        "role": "AlphaFold 2首席科学家"
+        "role": "AlphaFold 2首席科学家",
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"氨基酸序列\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第50页</span>",
+    "quote": "\"氨基酸序列\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第50页</span>",
     "resources": {
       "images": [
-        "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.png",
@@ -932,13 +996,14 @@ const milestones = [
           "title": "AlphaFold - The Most Useful Thing AI Has Ever Done",
           "channel": "Veritasium",
           "duration": "24:52",
-          "thumbnail": "https://img.youtube.com/vi/P_fHJIYENdI/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/P_fHJIYENdI/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2019-53",
+    "id": "milestone-2019-ai-feynman",
     "year": 2019,
     "category": "AI for Science (2018-今)",
     "title": "AI Feynman：自主科学规律发现",
@@ -951,26 +1016,26 @@ const milestones = [
         -71.0942
       ]
     },
-    "description": "2019年，MIT的Tegmark团队推出了AI Feynman。 利用神经网络作为“直觉”引导，结合了物理学中的对称性（Symmetry）和量纲分析（Dimensional Analysis）作为约束，使用符号回归（Symbolic regression），从复杂噪声数据中成功“重新发现”了物理规律。 AI Feynman系统成功“重新发现”了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
+    "description": "2019年，MIT的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（Symmetry）和量纲分析（Dimensional Analysis）作为约束，使用符号回归（Symbolic regression），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
     "figures": [
       {
         "name": "Max Tegmark",
-        "role": "AI Feynman作者"
+        "role": "AI Feynman作者",
+        "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"position-specific scoring matrix (PSSM)\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第53页</span>",
+    "quote": "\"position-specific scoring matrix (PSSM)\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第53页</span>",
     "resources": {
       "images": [
         "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
         "resources/images/2019-ai-feynman/historical/2019-ai-feynman_historical_04.jpg",
         "resources/images/2019-ai-feynman/historical/2019-ai-feynman_historical_01.png",
         "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png",
-        "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png",
-        "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png"
+        "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png"
       ],
       "videos": [
         {
@@ -980,13 +1045,14 @@ const milestones = [
           "title": "Richard Feynman: Can Machines Think?",
           "channel": "Lex Clips",
           "duration": "18:27",
-          "thumbnail": "https://img.youtube.com/vi/ipRvjS7q1DI/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/ipRvjS7q1DI/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   },
   {
-    "id": "milestone-2024-55",
+    "id": "milestone-2024-ai-scientist",
     "year": 2024,
     "category": "AI for Science (2018-今)",
     "title": "AI科学家与自主实验室",
@@ -995,26 +1061,36 @@ const milestones = [
       "name": "Sakana AI / UC Berkeley",
       "country": "日本 / 美国",
       "coordinates": [
-        [35.6762, 139.6503],
-        [37.8719, -122.2585]
+        [
+          35.6762,
+          139.6503
+        ],
+        [
+          37.8719,
+          -122.2585
+        ]
       ]
     },
     "description": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for Science进入新阶段。",
     "figures": [
       {
         "name": "Sakana AI团队",
-        "role": "AI Scientist开发者"
+        "role": "AI Scientist开发者",
+        "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
+        "avatarStyle": "",
+        "figureType": "team"
       },
       {
         "name": "伯克利团队",
-        "role": "A-Lab开发者"
+        "role": "A-Lab开发者",
+        "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
+        "avatarStyle": "",
+        "figureType": "team"
       }
     ],
-    "photos": [
-    ],
+    "photos": [],
     "videoUrl": "",
-    "commentaryVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "quote": "\"Sakana AI开发的AI Scientist系统向ICLR workshop提交了完全自主生成的论文，获得了足够高的分数，超过了人类接受稿件的平均门槛，代表完全由AI进行的自主科学发现和论文撰写首次成功通过顶会的同行评审。\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第55页</span>",
+    "quote": "\"Sakana AI开发的AI Scientist系统向ICLR workshop提交了完全自主生成的论文，获得了足够高的分数，超过了人类接受稿件的平均门槛，代表完全由AI进行的自主科学发现和论文撰写首次成功通过顶会的同行评审。\"\"<br><br><span style=\"font-size: 0.9vw; color: var(--accent);\">— 摘自PPT第55页</span>",
     "resources": {
       "images": [
         "resources/images/2024-ai-scientist/historical/2024-ai-scientist_historical_02.png",
@@ -1031,14 +1107,15 @@ const milestones = [
           "title": "Robots and AI hunt for new materials at A-Lab",
           "channel": "Berkeley Lab",
           "duration": "2:16",
-          "thumbnail": "https://img.youtube.com/vi/RLO4sfK37w4/maxresdefault.jpg"
+          "thumbnail": "https://img.youtube.com/vi/RLO4sfK37w4/maxresdefault.jpg",
+          "source": "YouTube"
         }
       ]
     }
   }
 ];
 
-// 导出（兼容旧版本）
+// 导出（兼容 Node.js require）
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { milestones };
 }

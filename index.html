@@ -783,7 +783,7 @@
         }
 
         .archive-card-caption {
-            min-height: 44px;
+            display: none;
         }
 
         .archive-card-name {
@@ -2003,7 +2003,14 @@
             return words.slice(0, 2).map((item) => item[0].toUpperCase()).join('');
         }
 
-        function getFigureAvatarSource(vm, portraitPool, index) {
+        function getFigureAvatarSource(figure, vm, portraitPool, index) {
+            if (figure && figure.avatar) {
+                return {
+                    src: figure.avatar,
+                    style: figure.avatarStyle || ''
+                };
+            }
+
             if (portraitPool[index]) {
                 return {
                     src: portraitPool[index],
@@ -3079,7 +3086,7 @@
             refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
                 <article class="figure-chip">
-                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(vm, portraitPool, index))}</div>
+                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
                     <div class="figure-meta">
                         <div class="figure-name">${escapeHtml(figure.name || '关键人物')}</div>
                         <div class="figure-role">${escapeHtml(figure.role || '关键参与者')}</div>

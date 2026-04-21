@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-04-13 06:17
+// 生成时间: 2026-04-21 06:19
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -21,19 +21,31 @@ const milestones = [
     "figures": [
       {
         "name": "John McCarthy",
-        "role": "提出\"AI\"术语"
+        "role": "提出\"AI\"术语",
+        "avatar": "resources/images/figures/john-mccarthy.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Marvin Minsky",
-        "role": "认知科学家"
+        "role": "认知科学家",
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Claude Shannon",
-        "role": "信息论创始人"
+        "role": "信息论创始人",
+        "avatar": "resources/images/figures/claude-shannon.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Nathaniel Rochester",
-        "role": "IBM架构师"
+        "role": "IBM架构师",
+        "avatar": "resources/images/figures/nathaniel-rochester.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -77,7 +89,10 @@ const milestones = [
     "figures": [
       {
         "name": "Frank Rosenblatt",
-        "role": "感知机发明者"
+        "role": "感知机发明者",
+        "avatar": "resources/images/figures/frank-rosenblatt.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -123,7 +138,10 @@ const milestones = [
     "figures": [
       {
         "name": "Marvin Minsky",
-        "role": "《感知器》作者"
+        "role": "《感知器》作者",
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -166,15 +184,24 @@ const milestones = [
     "figures": [
       {
         "name": "David Rumelhart",
-        "role": "BP算法作者"
+        "role": "BP算法作者",
+        "avatar": "resources/images/figures/david-rumelhart.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Geoffrey Hinton",
-        "role": "深度学习之父"
+        "role": "深度学习之父",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Ronald Williams",
-        "role": "BP算法共同作者"
+        "role": "BP算法共同作者",
+        "avatar": "resources/images/figures/ronald-williams.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -217,7 +244,10 @@ const milestones = [
     "figures": [
       {
         "name": "Yann LeCun",
-        "role": "CNN之父"
+        "role": "CNN之父",
+        "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -261,11 +291,17 @@ const milestones = [
     "figures": [
       {
         "name": "Jeffrey Elman",
-        "role": "Simple RNN提出者"
+        "role": "Simple RNN提出者",
+        "avatar": "resources/images/figures/jeffrey-elman.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Michael Jordan",
-        "role": "Jordan Network提出者"
+        "role": "Jordan Network提出者",
+        "avatar": "resources/images/figures/michael-i-jordan.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -309,11 +345,17 @@ const milestones = [
     "figures": [
       {
         "name": "Sepp Hochreiter",
-        "role": "LSTM发明者"
+        "role": "LSTM发明者",
+        "avatar": "resources/images/figures/sepp-hochreiter.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Jürgen Schmidhuber",
-        "role": "LSTM共同发明者"
+        "role": "LSTM共同发明者",
+        "avatar": "resources/images/figures/juergen-schmidhuber.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -357,11 +399,17 @@ const milestones = [
     "figures": [
       {
         "name": "Alex Krizhevsky",
-        "role": "AlexNet作者"
+        "role": "AlexNet作者",
+        "avatar": "resources/images/figures/alex-krizhevsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Geoffrey Hinton",
-        "role": "导师"
+        "role": "导师",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -405,11 +453,17 @@ const milestones = [
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": "GAN发明者",
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": "注意力机制提出者",
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -452,11 +506,17 @@ const milestones = [
     "figures": [
       {
         "name": "何恺明",
-        "role": "ResNet作者"
+        "role": "ResNet作者",
+        "avatar": "resources/images/figures/kaiming-he.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "孙剑",
-        "role": "ResNet共同作者"
+        "role": "ResNet共同作者",
+        "avatar": "resources/images/figures/sun-jian.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -503,7 +563,10 @@ const milestones = [
     "figures": [
       {
         "name": "黄高",
-        "role": "DenseNet作者"
+        "role": "DenseNet作者",
+        "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -547,11 +610,17 @@ const milestones = [
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": "GAN发明者",
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": "注意力机制提出者",
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -582,11 +651,17 @@ const milestones = [
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": "GAN发明者",
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": "注意力机制提出者",
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -629,7 +704,10 @@ const milestones = [
     "figures": [
       {
         "name": "Ashish Vaswani",
-        "role": "Transformer作者"
+        "role": "Transformer作者",
+        "avatar": "resources/images/figures/ashish-vaswani.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -662,11 +740,17 @@ const milestones = [
     "figures": [
       {
         "name": "Jacob Devlin",
-        "role": "BERT作者"
+        "role": "BERT作者",
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Alec Radford",
-        "role": "GPT作者"
+        "role": "GPT作者",
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -710,11 +794,17 @@ const milestones = [
     "figures": [
       {
         "name": "Jacob Devlin",
-        "role": "BERT作者"
+        "role": "BERT作者",
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Alec Radford",
-        "role": "GPT作者"
+        "role": "GPT作者",
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -760,15 +850,24 @@ const milestones = [
     "figures": [
       {
         "name": "Stuart Russell",
-        "role": "智能体理论奠基人"
+        "role": "智能体理论奠基人",
+        "avatar": "resources/images/figures/stuart-russell.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Peter Norvig",
-        "role": "AIMA作者"
+        "role": "AIMA作者",
+        "avatar": "resources/images/figures/peter-norvig.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "Michael Wooldridge",
-        "role": "多智能体系统专家"
+        "role": "多智能体系统专家",
+        "avatar": "resources/images/figures/michael-wooldridge.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -814,8 +913,11 @@ const milestones = [
     "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
     "figures": [
       {
-        "name": "研究团队",
-        "role": "待补充"
+        "name": "研究机构",
+        "role": "前沿模型研发机构",
+        "avatar": "resources/images/figures/research-institution.png",
+        "avatarStyle": "",
+        "figureType": "team"
       }
     ],
     "photos": [],
@@ -860,11 +962,17 @@ const milestones = [
     "figures": [
       {
         "name": "Demis Hassabis",
-        "role": "DeepMind CEO"
+        "role": "DeepMind CEO",
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person"
       },
       {
         "name": "John Jumper",
-        "role": "AlphaFold 2首席科学家"
+        "role": "AlphaFold 2首席科学家",
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -912,7 +1020,10 @@ const milestones = [
     "figures": [
       {
         "name": "Max Tegmark",
-        "role": "AI Feynman作者"
+        "role": "AI Feynman作者",
+        "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "photos": [],
@@ -964,11 +1075,17 @@ const milestones = [
     "figures": [
       {
         "name": "Sakana AI团队",
-        "role": "AI Scientist开发者"
+        "role": "AI Scientist开发者",
+        "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
+        "avatarStyle": "",
+        "figureType": "team"
       },
       {
         "name": "伯克利团队",
-        "role": "A-Lab开发者"
+        "role": "A-Lab开发者",
+        "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
+        "avatarStyle": "",
+        "figureType": "team"
       }
     ],
     "photos": [],
