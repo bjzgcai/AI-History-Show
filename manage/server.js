@@ -148,6 +148,33 @@ function downloadFile(rawUrl, dest) {
   });
 }
 
+function normalizeQuoteText(text) {
+  let value = String(text || '').trim();
+  if (!value) return '';
+  if (value.startsWith('"')) value = value.slice(1).trimStart();
+  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
+  return value;
+}
+
+function extractAppliedQuoteState(milestone) {
+  const rawQuote = String((milestone || {}).quote || '').trim();
+  const explicitQuotePage = String((milestone || {}).quotePage || '').trim();
+  const sourcePattern = /(?:<br\s*\/?>\s*){1,2}<span[^>]*>\s*—\s*([^<]+?)\s*<\/span>\s*$/i;
+  const matchedSource = rawQuote.match(sourcePattern);
+
+  if (matchedSource) {
+    return {
+      quote: rawQuote.replace(sourcePattern, '').trim(),
+      quotePage: explicitQuotePage || matchedSource[1].trim(),
+    };
+  }
+
+  return {
+    quote: rawQuote,
+    quotePage: explicitQuotePage,
+  };
+}
+
 // ─── 备份 + 原子写 ────────────────────────────────────────────────────────────
 
 const BACKUP_DIR  = path.join(MANAGE, '.backups');
@@ -486,18 +513,20 @@ const routes = {
         if (String(ev.description || '') !== String(applied.description || ''))
           changes.description = { from: applied.description || '', to: ev.description || '' };
 
-        // 引言文本（quoteText + quotePage → applied.quote）：重建 quote HTML 后比较
-        const evQuoteText = ev.quoteText || '';
+        // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
+        const evQuoteText = normalizeQuoteText(ev.quoteText || '');
         const evQuotePage = ev.quotePage || '';
-        const rebuildQuote = (text, page) => {
+        const rebuildQuote = (text) => {
           if (!text) return '';
           const body = text.replace(/\n/g, '<br>');
-          const src  = page ? `<br><br><span style="font-size: 0.9vw; color: var(--accent);">— ${page}</span>` : '';
-          return `"${body}"${src}`;
+          return `"${body}"`;
         };
-        const rebuiltQuote = rebuildQuote(evQuoteText, evQuotePage);
-        if (rebuiltQuote !== String(applied.quote || ''))
-          changes.quote = { from: applied.quote || '', quoteText: evQuoteText, quotePage: evQuotePage };
+        const appliedQuoteState = extractAppliedQuoteState(applied);
+        const rebuiltQuote = rebuildQuote(evQuoteText);
+        if (rebuiltQuote !== appliedQuoteState.quote)
+          changes.quote = { from: appliedQuoteState.quote || '', quoteText: evQuoteText };
+        if (evQuotePage !== appliedQuoteState.quotePage)
+          changes.quotePage = { from: appliedQuoteState.quotePage || '', to: evQuotePage };
 
         // 图片：计算集合差
         const evImgSet  = new Set(ev.images || []);

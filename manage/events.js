@@ -41,7 +41,7 @@ module.exports = {
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg"
     ],
     "videos": [
-      "5Ur-Nf85ARw"
+      "https://media.sciencearena.cn/video/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A1956%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9.mp4"
     ]
   },
   "1957-perceptron": {
@@ -72,7 +72,7 @@ module.exports = {
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png"
     ],
     "videos": [
-      "Ikev4w8Euy0"
+      "https://media.sciencearena.cn/video/%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4"
     ]
   },
   "1969-ai-winter": {

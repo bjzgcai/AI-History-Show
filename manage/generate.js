@@ -141,8 +141,9 @@ for (const cat of categories) {
       description: ev.description,
       figures:     (ev.figures || []).map(enrichFigure),
       photos:      [],   // 预留字段，暂不使用
-      videoUrl:    "",   // 预留字段，暂不使用
-      quote:       buildQuote(ev.quoteText, ev.quotePage),
+      videoUrl:    videos[0] ? (videos[0].embed_url || videos[0].url || '') : '',
+      quote:       buildQuote(ev.quoteText),
+      quotePage:   ev.quotePage || '',
       resources: {
         images: ev.images || [],
         videos,
@@ -195,14 +196,21 @@ function enrichFigure(figure) {
   };
 }
 
-/** 将纯文本引言 + 来源说明 组装成 HTML 字符串（\n → <br>）*/
-function buildQuote(text, page) {
-  if (!text) return '';
-  const body = text.replace(/\n/g, '<br>');
-  const src  = page
-    ? `<br><br><span style="font-size: 0.9vw; color: var(--accent);">— ${page}</span>`
-    : '';
-  return `"${body}"${src}`;
+/** 清理历史数据里手动残留的首尾包装引号 */
+function normalizeQuoteText(text) {
+  let value = String(text || '').trim();
+  if (!value) return '';
+  if (value.startsWith('"')) value = value.slice(1).trimStart();
+  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
+  return value;
+}
+
+/** 将纯文本引言组装成 HTML 字符串（\n → <br>）*/
+function buildQuote(text) {
+  const normalizedText = normalizeQuoteText(text);
+  if (!normalizedText) return '';
+  const body = normalizedText.replace(/\n/g, '<br>');
+  return `"${body}"`;
 }
 
 // ─── 写出文件 ────────────────────────────────────────────────────────────────

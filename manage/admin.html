@@ -609,7 +609,7 @@ function renderDiffPanel(diff) {
     if (c.quote) {
       // 从 HTML 中提取纯文本用于展示（applied.quote 是 HTML）
       const oldText = (typeof c.quote === 'object' && c.quote.from ? c.quote.from : '').replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ');
-      const newText = (c.quote.quoteText || '') + (c.quote.quotePage ? `\n— ${c.quote.quotePage}` : '');
+      const newText = c.quote.quoteText || '';
       bodyHtml += `<div class="diff-field">
         <div class="diff-field-label">引言</div>
         <div class="diff-text-cols">
@@ -621,6 +621,16 @@ function renderDiffPanel(diff) {
             <div style="font-size:10px;color:var(--success);margin-bottom:3px">新内容</div>
             <div class="diff-text-block new">${esc(newText)}</div>
           </div>
+        </div>
+      </div>`;
+    }
+    if (c.quotePage) {
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">引言页码</div>
+        <div class="diff-inline">
+          <span class="diff-from">${esc(c.quotePage.from || '未填写')}</span>
+          <span style="color:var(--muted)">→</span>
+          <span class="diff-to">${esc(c.quotePage.to || '未填写')}</span>
         </div>
       </div>`;
     }

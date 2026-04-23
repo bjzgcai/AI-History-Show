@@ -1191,7 +1191,7 @@
             z-index: 3;
         }
 
-        .video-frame.has-video-data {
+        .video-frame.has-video-data:not(.is-playing) {
             cursor: pointer;
         }
 
@@ -1207,18 +1207,28 @@
             opacity: 0.42;
         }
 
-        .video-frame iframe {
+        .video-frame iframe,
+        .video-frame video {
             position: absolute;
             left: 6.99px;
             top: 4.26px;
             width: 591.64px;
             height: 332.8px;
-            border: none;
             background: #000;
         }
 
+        .video-frame iframe {
+            border: none;
+        }
+
+        .video-frame video {
+            object-fit: contain;
+        }
+
         .video-frame:not(.is-playing) iframe,
-        .video-frame.empty iframe {
+        .video-frame.empty iframe,
+        .video-frame:not(.is-playing) video,
+        .video-frame.empty video {
             display: none;
         }
 
@@ -1863,6 +1873,7 @@
                 primaryVideo,
                 videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
                 quoteHtml: quote,
+                quotePage: String(safeMilestone.quotePage || '').trim(),
                 commentarySections,
                 timeline: milestones.map((item, itemIndex) => ({
                     year: item.year,
@@ -3123,16 +3134,67 @@
             return iframe;
         }
 
+        function ensureMediaPlayer() {
+            let player = refs.videoFrame.querySelector('video');
+            if (!player) {
+                player = document.createElement('video');
+                player.id = 'mediaVideoPlayer';
+                player.controls = true;
+                player.playsInline = true;
+                player.preload = 'metadata';
+                refs.videoFrame.appendChild(player);
+            }
+            return player;
+        }
+
+        function isDirectVideoMedia(url) {
+            return /\.(mp4|webm|ogg)(?:[?#].*)?$/i.test(String(url || ''));
+        }
+
+        function resetInlineMedia() {
+            const iframe = ensureMediaIframe();
+            const player = ensureMediaPlayer();
+
+            iframe.style.display = 'none';
+            iframe.src = 'about:blank';
+
+            player.pause();
+            player.removeAttribute('src');
+            player.style.display = 'none';
+            player.load();
+        }
+
         function playInlineVideo(url) {
             if (!url) return;
-            const iframe = ensureMediaIframe();
             refs.videoFrame.classList.add('is-playing');
+            refs.videoFrame.onclick = null;
+            if (isDirectVideoMedia(url)) {
+                const iframe = ensureMediaIframe();
+                const player = ensureMediaPlayer();
+                iframe.style.display = 'none';
+                iframe.src = 'about:blank';
+                player.src = url;
+                player.style.display = 'block';
+                const playback = player.play();
+                if (playback && typeof playback.catch === 'function') {
+                    playback.catch(() => {});
+                }
+                return;
+            }
+
+            const iframe = ensureMediaIframe();
+            const player = ensureMediaPlayer();
+            player.pause();
+            player.removeAttribute('src');
+            player.style.display = 'none';
+            player.load();
             iframe.src = url;
             iframe.style.display = 'block';
         }
 
         function renderCommentary(vm) {
-            const iframe = ensureMediaIframe();
+            ensureMediaIframe();
+            ensureMediaPlayer();
             refs.mediaTimecode.textContent = `00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}`;
             refs.videoQuote.textContent = extractVideoQuote(vm);
             refs.videoFrame.classList.remove('is-playing');
@@ -3143,8 +3205,7 @@
                 ? () => playInlineVideo(vm.videoEmbedUrl)
                 : null;
             refs.videoFrame.title = vm.videoEmbedUrl ? '点击播放视频' : '暂无媒体资料';
-            iframe.style.display = 'none';
-            iframe.src = 'about:blank';
+            resetInlineMedia();
             const sections = buildRightCommentarySections(vm);
 
             refs.commentaryList.innerHTML = sections.map((section) => `

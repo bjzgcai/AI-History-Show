@@ -119,8 +119,9 @@
             primaryVideo,
             videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
             quoteHtml: String(milestone.quote || '').trim() && milestone.quote !== '待补充'
-                ? milestone.quote
+                ? String(milestone.quote || '').trim()
                 : '',
+            quotePage: String(milestone.quotePage || '').trim(),
             commentarySections,
             timeline
         };
