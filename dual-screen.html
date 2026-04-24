@@ -937,6 +937,10 @@
             z-index: 1;
         }
 
+        .archive-card.is-hidden {
+            display: none;
+        }
+
         .archive-thumb,
         .archive-focus {
             position: relative;
@@ -1840,12 +1844,27 @@
             }
 
             const quote = String(safeMilestone.quote || '').trim();
+            const quoteAttribution = String(safeMilestone.quoteAttribution || '').trim();
             const descriptionText = stripHtml(safeMilestone.description || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
-                commentarySections.push({ label: '引言摘录', html: quote });
+                const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? '来源：' : '署名：';
+                commentarySections.push({
+                    label: '引言摘录',
+                    html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
+                });
             }
-            if (descriptionText) {
+            const customSections = Array.isArray(safeMilestone.commentarySections)
+                ? safeMilestone.commentarySections.filter((section) => stripHtml(section && section.html))
+                : [];
+            if (customSections.length > 0) {
+                customSections.forEach((section) => {
+                    commentarySections.push({
+                        label: section.label || '内容解读',
+                        html: section.html
+                    });
+                });
+            } else if (descriptionText) {
                 commentarySections.push({ label: '背景解读', html: descriptionText });
             }
             if (commentarySections.length === 0) {
@@ -1874,6 +1893,7 @@
                 videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
                 quoteHtml: quote,
                 quotePage: String(safeMilestone.quotePage || '').trim(),
+                commentaryOverrideSections: Array.isArray(safeMilestone.commentarySections) ? safeMilestone.commentarySections : [],
                 commentarySections,
                 timeline: milestones.map((item, itemIndex) => ({
                     year: item.year,
@@ -2039,6 +2059,87 @@
             return {
                 name: fallbackName || vm.title || '历史档案',
                 role: buildLocationLine(vm.location) || vm.category || '历史事件'
+            };
+        }
+
+        function extractWorkTitleFromAttribution(attribution) {
+            const match = String(attribution || '').match(/《([^》]+)》/);
+            return match ? String(match[1] || '').trim() : '';
+        }
+
+        function getConfiguredImageMeta(vm, url) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const map = raw && raw.resources && raw.resources.imageMeta ? raw.resources.imageMeta : (raw.imageMeta || null);
+            if (!map || typeof map !== 'object') return null;
+            const entry = map[url];
+            if (!entry || typeof entry !== 'object') return null;
+
+            const caption = String(entry.caption || entry.title || entry.name || '').trim();
+            const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+            if (!caption && !subcaption) return null;
+            return { caption, subcaption };
+        }
+
+        function buildArchivePhotoMeta(vm, url) {
+            const value = String(url || '').trim();
+            if (!value) return { name: '', role: '' };
+
+            const configured = getConfiguredImageMeta(vm, value);
+            const title = String(vm && vm.title ? vm.title : '').trim();
+            const year = vm && vm.year ? String(vm.year) : '';
+            const workTitle = extractWorkTitleFromAttribution(vm && vm.quoteAttribution ? vm.quoteAttribution : '');
+
+            if (isPortraitLikePhoto(value)) {
+                const autoMeta = {
+                    name: '人物肖像',
+                    role: '相关研究者照片'
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
+                const autoMeta = {
+                    name: '结构示意',
+                    role: title ? `${title} 架构图` : '模型架构图'
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            if (/\/papers\//i.test(value) || /_papers_/i.test(value) || isDocumentLikePhoto(value)) {
+                const autoMeta = {
+                    name: '论文页面',
+                    role: workTitle ? `《${workTitle}》` : (title || '原文截图或摘要')
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
+                const autoMeta = {
+                    name: '历史照片',
+                    role: title || (year ? `${year} 年相关档案` : '事件相关档案')
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            const autoMeta = {
+                name: '档案图片',
+                role: title || (vm && vm.category) || '事件相关资料'
+            };
+            return {
+                name: (configured && configured.caption) || autoMeta.name,
+                role: (configured && configured.subcaption) || autoMeta.role
             };
         }
 
@@ -3067,37 +3168,51 @@
             const activeIndex = Math.min(currentArchiveIndex, safePhotos.length - 1);
             currentArchiveIndex = Math.max(0, activeIndex);
 
+            const focusUrl = hasPhotos ? safePhotos[currentArchiveIndex] : '';
             const prevIndex = (currentArchiveIndex - 1 + safePhotos.length) % safePhotos.length;
             const nextIndex = (currentArchiveIndex + 1) % safePhotos.length;
-            const activeFigure = buildArchiveFigureMeta(vm, currentArchiveIndex, vm.title || '历史档案');
-            const prevFigure = buildArchiveFigureMeta(vm, prevIndex, vm.title || '历史档案');
-            const nextFigure = buildArchiveFigureMeta(vm, nextIndex, vm.title || '历史档案');
+            let prevUrl = hasPhotos ? safePhotos[prevIndex] : '';
+            let nextUrl = hasPhotos ? safePhotos[nextIndex] : '';
+
+            // 照片不足 3 张时，不要用同一张图重复填充左右缩略图位。
+            if (prevUrl === focusUrl) prevUrl = '';
+            if (nextUrl === focusUrl) nextUrl = '';
+            if (prevUrl && nextUrl && prevUrl === nextUrl) prevUrl = '';
+
+            const prevCard = refs.archiveThumbPrev ? refs.archiveThumbPrev.closest('.archive-card') : null;
+            const nextCard = refs.archiveThumbNext ? refs.archiveThumbNext.closest('.archive-card') : null;
+            if (prevCard) prevCard.classList.toggle('is-hidden', !prevUrl);
+            if (nextCard) nextCard.classList.toggle('is-hidden', !nextUrl);
+
+            const prevMeta = buildArchivePhotoMeta(vm, prevUrl);
+            const activeMeta = buildArchivePhotoMeta(vm, focusUrl);
+            const nextMeta = buildArchivePhotoMeta(vm, nextUrl);
 
             refs.archiveTitle.textContent = vm.title || 'AI 历史事件';
             refs.archiveYear.textContent = vm.year || '';
 
-            refs.archiveThumbPrev.innerHTML = safePhotos[prevIndex]
-                ? `<img src="${safePhotos[prevIndex]}" alt="前一张档案">`
+            refs.archiveThumbPrev.innerHTML = prevUrl
+                ? `<img src="${prevUrl}" alt="前一张档案">`
                 : '';
-            refs.archiveThumbNext.innerHTML = safePhotos[nextIndex]
-                ? `<img src="${safePhotos[nextIndex]}" alt="后一张档案">`
+            refs.archiveThumbNext.innerHTML = nextUrl
+                ? `<img src="${nextUrl}" alt="后一张档案">`
                 : '';
 
-            refs.archiveThumbPrev.classList.toggle('is-empty', !safePhotos[prevIndex]);
-            refs.archiveThumbNext.classList.toggle('is-empty', !safePhotos[nextIndex]);
-            refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1;
-            refs.archiveThumbNext.disabled = !hasPhotos || safePhotos.length <= 1;
+            refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
+            refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
+            refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1 || !prevUrl;
+            refs.archiveThumbNext.disabled = !hasPhotos || safePhotos.length <= 1 || !nextUrl;
 
-            setImage(refs.archiveFocus, safePhotos[currentArchiveIndex], '主档案照片');
+            setImage(refs.archiveFocus, focusUrl, '主档案照片');
             refs.archiveFocusButton.dataset.photoIndex = String(currentArchiveIndex);
             refs.archiveFocusButton.classList.toggle('is-empty', !hasPhotos);
             refs.archiveFocusButton.disabled = !hasPhotos;
-            refs.archivePrevCaption.textContent = prevFigure.name;
-            refs.archivePrevSubcaption.textContent = prevFigure.role;
-            refs.archiveCaption.textContent = activeFigure.name;
-            refs.archiveSubcaption.textContent = activeFigure.role;
-            refs.archiveNextCaption.textContent = nextFigure.name;
-            refs.archiveNextSubcaption.textContent = nextFigure.role;
+            refs.archivePrevCaption.textContent = prevMeta.name;
+            refs.archivePrevSubcaption.textContent = prevMeta.role;
+            refs.archiveCaption.textContent = activeMeta.name;
+            refs.archiveSubcaption.textContent = activeMeta.role;
+            refs.archiveNextCaption.textContent = nextMeta.name;
+            refs.archiveNextSubcaption.textContent = nextMeta.role;
 
             refs.archiveDots.innerHTML = safePhotos.map((_, index) => `
                 <button class="archive-dot ${index === currentArchiveIndex ? 'active' : ''}" type="button" data-index="${index}"></button>

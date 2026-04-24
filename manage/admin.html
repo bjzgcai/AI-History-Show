@@ -121,6 +121,24 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
 .dyn-row input { flex: 1; }
 .dyn-add { margin-top: 6px; }
 
+/* ── Image caption editor ───────────────────────── */
+.img-meta-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px;
+  background: rgba(255,255,255,0.02);
+}
+.img-meta-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 6px;
+}
+.img-meta-fields input {
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
 /* ── Event list in sidebar ───────────────────────── */
 .event-search {
   width: 100%; background: var(--bg); border: 1px solid var(--border);
@@ -188,7 +206,36 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
 }
 .video-card:hover { border-color: var(--muted); }
 .video-card.selected { border-color: var(--accent); }
-.video-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.video-card-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(255,209,102,.16), transparent 52%),
+    linear-gradient(135deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-card-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-card-thumb span {
+  display: none;
+  padding: 0 12px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.video-card-thumb.empty span { display: block; }
 .video-card-info { padding: 6px 8px; }
 .video-card-title { font-size: 11px; line-height: 1.3; color: var(--text); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .video-card-meta  { font-size: 10px; color: var(--muted); margin-top: 2px; }
@@ -368,6 +415,7 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
 <!-- Toast -->
 <div id="toast"></div>
 
+<script src="/resources/quote-candidates.js"></script>
 <script>
 'use strict';
 
@@ -634,6 +682,25 @@ function renderDiffPanel(diff) {
         </div>
       </div>`;
     }
+    if (c.quoteMeta) {
+      const oldMeta = quoteMetaSummary(c.quoteMeta.from);
+      const newMeta = quoteMetaSummary(c.quoteMeta.to);
+      bodyHtml += `<div class="diff-field">
+        <div class="diff-field-label">引言来源</div>
+        <div class="diff-text-cols">
+          <div>
+            <div style="font-size:10px;color:var(--danger);margin-bottom:3px">原署名</div>
+            <div class="diff-text-block old">${esc(c.quoteMeta.fromAttribution || '未填写')}</div>
+            ${oldMeta ? `<div class="diff-text-block old" style="margin-top:6px">${esc(oldMeta)}</div>` : ''}
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--success);margin-bottom:3px">新署名</div>
+            <div class="diff-text-block new">${esc(c.quoteMeta.toAttribution || '未填写')}</div>
+            ${newMeta ? `<div class="diff-text-block new" style="margin-top:6px">${esc(newMeta)}</div>` : ''}
+          </div>
+        </div>
+      </div>`;
+    }
     if (c.figures) {
       bodyHtml += `<div class="diff-field"><div class="diff-field-label">人物</div><div>`;
       if (c.figures.added.length)
@@ -648,6 +715,12 @@ function renderDiffPanel(diff) {
         bodyHtml += c.images.added.map(p => `<span class="diff-chip add" title="${esc(p)}">+${esc(p.split('/').pop())}</span>`).join('');
       if (c.images.removed.length)
         bodyHtml += c.images.removed.map(p => `<span class="diff-chip del" title="${esc(p)}">-${esc(p.split('/').pop())}</span>`).join('');
+      bodyHtml += `</div></div>`;
+    }
+    if (c.imageMeta) {
+      bodyHtml += `<div class="diff-field"><div class="diff-field-label">图片说明</div><div>`;
+      if (c.imageMeta.changed.length)
+        bodyHtml += c.imageMeta.changed.map(p => `<span class="diff-chip chg" title="${esc(p)}">~${esc(p.split('/').pop())}</span>`).join('');
       bodyHtml += `</div></div>`;
     }
     if (c.videos) {
@@ -1025,12 +1098,39 @@ function renderEventEditor(key) {
       </div>
       <div class="card-body" id="sec-quote-body">
         <div class="field">
-          <label>引言正文（\\n 换行）</label>
+          <label>引言正文（\\n 换行；若存在候选库，将同步更新首条候选及来源信息）</label>
           <textarea rows="4" oninput="ev_set('quoteText',this.value)">${esc(ev.quoteText||'')}</textarea>
         </div>
+        <div class="field-row3">
+          <div class="field">
+            <label>署名 / 说话者</label>
+            <input value="${esc(((ev.quoteMeta||{}).speaker)||'')}" oninput="ev_setQuoteMeta('speaker',this.value)" placeholder="如 John McCarthy et al.">
+          </div>
+          <div class="field">
+            <label>作品标题</label>
+            <input value="${esc(((ev.quoteMeta||{}).workTitle)||'')}" oninput="ev_setQuoteMeta('workTitle',this.value)" placeholder="如 Attention Is All You Need">
+          </div>
+          <div class="field">
+            <label>作者</label>
+            <input value="${esc(((ev.quoteMeta||{}).workAuthors)||'')}" oninput="ev_setQuoteMeta('workAuthors',this.value)" placeholder="如 Ashish Vaswani et al.">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>来源标签</label>
+            <input value="${esc(((ev.quoteMeta||{}).sourceLabel)||'')}" oninput="ev_setQuoteMeta('sourceLabel',this.value)" placeholder="如 Nature abstract">
+          </div>
+          <div class="field">
+            <label>来源链接</label>
+            <input value="${esc(((ev.quoteMeta||{}).sourceUrl)||'')}" oninput="ev_setQuoteMeta('sourceUrl',this.value)" placeholder="https://...">
+          </div>
+        </div>
         <div class="field">
-          <label>来源说明</label>
+          <label>页码/备注</label>
           <input value="${esc(ev.quotePage||'')}" oninput="ev_set('quotePage',this.value)" placeholder="摘自PPT第X页">
+        </div>
+        <div style="font-size:12px;color:var(--muted)">
+          当前页面展示署名：<span id="quote-attribution-preview" style="color:var(--text)">${esc(formatQuoteAttribution(ev.quoteMeta || {}) || '未填写')}</span>
         </div>
       </div>
     </div>
@@ -1065,6 +1165,22 @@ function renderEventEditor(key) {
 function ev_set(field, val) {
   if (!currentEventKey) return;
   events[currentEventKey][field] = val;
+}
+function ensureQuoteMeta(key) {
+  if (!events[key].quoteMeta || typeof events[key].quoteMeta !== 'object') {
+    events[key].quoteMeta = {};
+  }
+  return events[key].quoteMeta;
+}
+function ev_setQuoteMeta(field, val) {
+  if (!currentEventKey) return;
+  ensureQuoteMeta(currentEventKey)[field] = val;
+  updateQuoteAttributionPreview(currentEventKey);
+}
+function updateQuoteAttributionPreview(key) {
+  const el = document.getElementById('quote-attribution-preview');
+  if (!el || !events[key]) return;
+  el.textContent = formatQuoteAttribution(events[key].quoteMeta || {}) || '未填写';
 }
 function ev_setLoc(field, val) {
   if (!currentEventKey) return;
@@ -1183,6 +1299,9 @@ function renderImagePicker(key) {
 
   <div class="field" style="margin-top:8px">
     <label>已选图片列表</label>
+    <div style="display:flex;justify-content:flex-end;margin:-6px 0 6px">
+      <button class="btn btn-secondary btn-sm" onclick="autoFillImageMeta('${key}')">自动生成描述</button>
+    </div>
     <div class="dyn-list" id="img-manual-list"></div>
   </div>`;
 
@@ -1190,11 +1309,91 @@ function renderImagePicker(key) {
   renderManualImages(key);
 }
 
+function extractWorkTitleFromAttribution(attribution) {
+  const match = String(attribution || '').match(/《([^》]+)》/);
+  return match ? String(match[1] || '').trim() : '';
+}
+
+function formatQuoteAttribution(meta) {
+  const safeMeta = meta && typeof meta === 'object' ? meta : {};
+  const workTitle = String(safeMeta.workTitle || '').trim();
+  const workAuthors = String(safeMeta.workAuthors || '').trim();
+  const speaker = String(safeMeta.speaker || '').trim();
+  if (workTitle) return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
+  return speaker;
+}
+
+function quoteMetaSummary(meta) {
+  const safeMeta = meta && typeof meta === 'object' ? meta : {};
+  return [
+    safeMeta.sourceLabel ? `标签：${safeMeta.sourceLabel}` : '',
+    safeMeta.sourceUrl ? `链接：${safeMeta.sourceUrl}` : '',
+  ].filter(Boolean).join(' · ');
+}
+
+function getQuoteCandidateWorkTitle(key) {
+  try {
+    const entry = window.quoteCandidates && window.quoteCandidates.events
+      ? window.quoteCandidates.events[key]
+      : null;
+    const first = Array.isArray(entry) && entry.length > 0 ? entry[0] : null;
+    return first && first.workTitle ? String(first.workTitle).trim() : '';
+  } catch {
+    return '';
+  }
+}
+
+function suggestImageMeta(key, path) {
+  const ev = events[key] || {};
+  const title = String(ev.title || key || '').trim();
+  const quoteWork = String(((ev.quoteMeta || {}).workTitle) || '').trim() || getQuoteCandidateWorkTitle(key);
+
+  const value = String(path || '');
+  if (/\/people\//i.test(value) || /portrait|headshot|avatar|人物|人像/i.test(value)) {
+    return { caption: '人物肖像', subcaption: '相关研究者照片' };
+  }
+  if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
+    return { caption: '结构示意', subcaption: title ? `${title} 架构图` : '模型架构图' };
+  }
+  if (/\/papers\//i.test(value) || /_papers_/i.test(value) || /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(value)) {
+    return { caption: '论文页面', subcaption: quoteWork ? `《${quoteWork}》` : (title || '原文截图或摘要') };
+  }
+  if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
+    return { caption: '历史照片', subcaption: title || '事件相关档案' };
+  }
+  return { caption: '档案图片', subcaption: title || '事件相关资料' };
+}
+
+function autoFillImageMeta(key) {
+  if (!events[key]) return;
+  const ev = events[key];
+  if (!ev.imageMeta) ev.imageMeta = {};
+  const list = ev.images || [];
+  for (const p of list) {
+    if (!p) continue;
+    const existing = ev.imageMeta[p] || {};
+    const hasCaption = String(existing.caption || '').trim();
+    const hasSubcaption = String(existing.subcaption || '').trim();
+    if (hasCaption && hasSubcaption) continue;
+    const suggestion = suggestImageMeta(key, p);
+    ev.imageMeta[p] = {
+      ...existing,
+      caption: hasCaption ? existing.caption : suggestion.caption,
+      subcaption: hasSubcaption ? existing.subcaption : suggestion.subcaption,
+    };
+  }
+  renderManualImages(key);
+}
+
 function toggleImage(key, path, card) {
   const arr = events[key].images = events[key].images || [];
   const idx = arr.indexOf(path);
   if (idx === -1) { arr.push(path); card.classList.add('selected'); }
-  else            { arr.splice(idx, 1); card.classList.remove('selected'); }
+  else            {
+    arr.splice(idx, 1);
+    card.classList.remove('selected');
+    if (events[key].imageMeta && events[key].imageMeta[path]) delete events[key].imageMeta[path];
+  }
   renderManualImages(key);
 }
 
@@ -1264,24 +1463,52 @@ function removeManualImage(key, path) {
   const arr = events[key].images || [];
   const idx = arr.indexOf(path);
   if (idx !== -1) arr.splice(idx, 1);
+  if (events[key].imageMeta && events[key].imageMeta[path]) delete events[key].imageMeta[path];
   renderManualImages(key);
   document.querySelectorAll('.img-card').forEach(el => {
     if (el.querySelector('.img-name') && el.textContent.includes(path.split('/').pop())) el.classList.remove('selected');
   });
 }
+
+function setImageMeta(key, path, field, val) {
+  if (!events[key]) return;
+  if (!events[key].imageMeta) events[key].imageMeta = {};
+  if (!events[key].imageMeta[path]) events[key].imageMeta[path] = {};
+  events[key].imageMeta[path][field] = val;
+
+  const caption = String((events[key].imageMeta[path] || {}).caption || '').trim();
+  const subcaption = String((events[key].imageMeta[path] || {}).subcaption || '').trim();
+  if (!caption && !subcaption) {
+    delete events[key].imageMeta[path];
+  }
+}
+
 function renderManualImages(key) {
   const el = document.getElementById('img-manual-list');
   if (!el) return;
   const paths = events[key].images || [];
   if (!paths.length) { el.innerHTML = `<div style="font-size:12px;color:var(--muted)">（无）</div>`; return; }
-  el.innerHTML = paths.map((p, i) => `
-    <div class="dyn-row">
-      <span style="width:24px;text-align:center;font-size:11px;color:var(--muted);flex-shrink:0">${i+1}</span>
-      <span style="flex:1;font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p}</span>
-      <button class="btn btn-secondary btn-icon" onclick="moveImg('${key}',${i},-1)" title="上移">↑</button>
-      <button class="btn btn-secondary btn-icon" onclick="moveImg('${key}',${i},1)"  title="下移">↓</button>
-      <button class="btn btn-danger btn-icon"    onclick="removeManualImage('${key}','${p}')">×</button>
-    </div>`).join('');
+  const metaMap = events[key].imageMeta || {};
+  el.innerHTML = paths.map((p, i) => {
+    const meta = metaMap[p] || {};
+    return `
+      <div class="img-meta-item">
+        <div class="dyn-row">
+          <span style="width:24px;text-align:center;font-size:11px;color:var(--muted);flex-shrink:0">${i+1}</span>
+          <span style="flex:1;font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p}</span>
+          <button class="btn btn-secondary btn-icon" onclick="moveImg('${key}',${i},-1)" title="上移">↑</button>
+          <button class="btn btn-secondary btn-icon" onclick="moveImg('${key}',${i},1)"  title="下移">↓</button>
+          <button class="btn btn-danger btn-icon"    onclick="removeManualImage('${key}','${p}')">×</button>
+        </div>
+        <div class="img-meta-fields">
+          <input value="${esc(meta.caption || '')}" placeholder="标题（可选）"
+            oninput="setImageMeta('${key}','${p}','caption',this.value)">
+          <input value="${esc(meta.subcaption || '')}" placeholder="描述（可选）"
+            oninput="setImageMeta('${key}','${p}','subcaption',this.value)">
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 function moveImg(key, i, dir) {
   const arr = events[key].images || [];
@@ -1294,23 +1521,150 @@ function moveImg(key, i, dir) {
 // ─── Video helpers ────────────────────────────────────────────────────────────
 
 /** 从 URL 自动推导平台标签 */
+function isHttpUrl(value) {
+  return /^https?:\/\//i.test(String(value || '').trim());
+}
+
+function isYouTubeId(value) {
+  return /^[A-Za-z0-9_-]{11}$/.test(String(value || '').trim());
+}
+
 function detectVideoSource(url) {
-  if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
-  if (/bilibili\.com/.test(url))           return 'Bilibili';
-  if (/vimeo\.com/.test(url))              return 'Vimeo';
+  const value = String(url || '').trim();
+  if (!value) return 'Web';
+  if (isYouTubeId(value) || /youtube\.com|youtu\.be/.test(value)) return 'YouTube';
+  if (/bilibili\.com/.test(value))                                 return 'Bilibili';
+  if (/vimeo\.com/.test(value))                                    return 'Vimeo';
+  if (/sciencearena\.cn/.test(value))                              return 'Science Arena';
   return 'Web';
 }
 
 /** 从 YouTube URL 提取 ID（返回 null 若非 YouTube） */
 function ytId(url) {
-  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+  const raw = String(url || '').trim();
+  if (!raw) return null;
+  if (isYouTubeId(raw)) return raw;
+  try {
+    const parsed = new URL(raw);
+    const host = parsed.hostname.replace(/^www\./, '');
+    if (host === 'youtu.be') {
+      const shortId = parsed.pathname.split('/').filter(Boolean)[0] || '';
+      return isYouTubeId(shortId) ? shortId : null;
+    }
+    if (host.endsWith('youtube.com')) {
+      const watchId = parsed.searchParams.get('v');
+      if (isYouTubeId(watchId)) return watchId;
+      const parts = parsed.pathname.split('/').filter(Boolean);
+      if ((parts[0] === 'embed' || parts[0] === 'shorts' || parts[0] === 'live') && isYouTubeId(parts[1])) {
+        return parts[1];
+      }
+    }
+  } catch (_) {}
+  const m = raw.match(/(?:youtube\.com\/(?:watch\?[^#\s]*?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
   return m ? m[1] : null;
+}
+
+function videoTitleFromUrl(rawUrl) {
+  const value = String(rawUrl || '').trim();
+  if (!value) return '';
+  try {
+    const parsed = new URL(value);
+    const parts = parsed.pathname.split('/').filter(Boolean);
+    return decodeURIComponent(parts[parts.length - 1] || parsed.hostname || value);
+  } catch (_) {
+    return value;
+  }
+}
+
+function buildVideoCandidateEntry(item) {
+  if (!item) return null;
+
+  if (typeof item === 'string') {
+    const raw = item.trim();
+    if (!raw) return null;
+    const id = ytId(raw);
+    if (id) {
+      return {
+        id,
+        storeValue: id,
+        url: `https://www.youtube.com/watch?v=${id}`,
+        embed_url: `https://www.youtube.com/embed/${id}`,
+        title: id,
+        channel: '',
+        duration: '',
+        thumbnail: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+        thumbnail_hq: `https://img.youtube.com/vi/${id}/hqdefault.jpg`,
+        source: 'YouTube',
+      };
+    }
+
+    const url = isHttpUrl(raw) ? raw : '';
+    const storeValue = url || raw;
+    return {
+      id: storeValue,
+      storeValue,
+      url,
+      embed_url: url,
+      title: videoTitleFromUrl(url || raw) || raw,
+      channel: '',
+      duration: '',
+      thumbnail: '',
+      thumbnail_hq: '',
+      source: detectVideoSource(url || raw),
+    };
+  }
+
+  if (typeof item !== 'object') return null;
+
+  const rawId = String(item.id || '').trim();
+  const rawUrl = String(item.url || '').trim();
+  const id = ytId(rawId) || ytId(rawUrl);
+  if (id) {
+    return {
+      id,
+      storeValue: id,
+      url: rawUrl || `https://www.youtube.com/watch?v=${id}`,
+      embed_url: item.embed_url || `https://www.youtube.com/embed/${id}`,
+      title: item.title || id,
+      channel: item.channel || '',
+      duration: item.duration || '',
+      thumbnail: item.thumbnail || `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+      thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${id}/hqdefault.jpg`,
+      source: item.source || 'YouTube',
+    };
+  }
+
+  const url = rawUrl || (isHttpUrl(rawId) ? rawId : '');
+  const storeValue = url || rawId;
+  if (!storeValue) return null;
+  return {
+    id: storeValue,
+    storeValue,
+    url,
+    embed_url: String(item.embed_url || url || '').trim(),
+    title: item.title || videoTitleFromUrl(url || rawId) || storeValue,
+    channel: item.channel || '',
+    duration: item.duration || '',
+    thumbnail: item.thumbnail || '',
+    thumbnail_hq: item.thumbnail_hq || '',
+    source: item.source || detectVideoSource(url || rawId),
+  };
 }
 
 /** 从视频数组项（字符串或对象）取得用于候选列表比对的 ID */
 function videoItemId(item) {
-  if (typeof item === 'string') return item;
-  return item.id || item.url || '';
+  const entry = buildVideoCandidateEntry(item);
+  return entry ? entry.id : '';
+}
+
+function videoMetaText(video) {
+  return [video.channel, video.duration].filter(Boolean).join(' · ') || video.source || '';
+}
+
+function handleVideoThumbError(img) {
+  const wrap = img.closest('.video-card-thumb');
+  if (wrap) wrap.classList.add('empty');
+  img.remove();
 }
 
 // Video picker
@@ -1319,36 +1673,20 @@ function renderVideoPicker(key) {
   if (!el) return;
   const ev = events[key];
   // 已选 ID 集合（兼容字符串和对象）
-  const selectedIds = new Set((ev.videos || []).map(videoItemId));
-  const candidateList = (videos && videos[key]) || [];
+  const selectedIds = new Set((ev.videos || []).map(videoItemId).filter(Boolean));
+  const candidateList = ((videos && videos[key]) || []).map(buildVideoCandidateEntry).filter(Boolean);
 
   // 将已选视频中不在候选列表里的条目补充进去，保证选了几个就显示几个框
   const candidateIds = new Set(candidateList.map(v => v.id));
   const extraEntries = (ev.videos || [])
-    .map(item => {
-      if (typeof item === 'string') {
-        if (candidateIds.has(item)) return null;
-        // YouTube ID，构造最小展示对象
-        return { id: item, url: `https://www.youtube.com/watch?v=${item}`,
-                 embed_url: `https://www.youtube.com/embed/${item}`,
-                 title: item, channel: '', duration: '',
-                 thumbnail: `https://img.youtube.com/vi/${item}/maxresdefault.jpg`,
-                 thumbnail_hq: `https://img.youtube.com/vi/${item}/hqdefault.jpg`, source: 'YouTube' };
-      }
-      if (typeof item === 'object' && item.id && !candidateIds.has(item.id)) {
-        return { id: item.id,
-                 url: item.url || `https://www.youtube.com/watch?v=${item.id}`,
-                 embed_url: item.embed_url || `https://www.youtube.com/embed/${item.id}`,
-                 title: item.title || item.id, channel: item.channel || '',
-                 duration: item.duration || '',
-                 thumbnail: item.thumbnail || `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
-                 thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
-                 source: item.source || 'YouTube' };
-      }
-      return null;
-    })
-    .filter(Boolean);
-  const avail = [...candidateList, ...extraEntries];
+    .map(buildVideoCandidateEntry)
+    .filter(v => v && !candidateIds.has(v.id));
+  const seenIds = new Set();
+  const avail = [...candidateList, ...extraEntries].filter(v => {
+    if (seenIds.has(v.id)) return false;
+    seenIds.add(v.id);
+    return true;
+  });
 
   let html = '';
   if (avail.length) {
@@ -1356,11 +1694,15 @@ function renderVideoPicker(key) {
     html += '<div class="video-grid">';
     for (const v of avail) {
       const sel = selectedIds.has(v.id) ? ' selected' : '';
-      html += `<div class="video-card${sel}" onclick="toggleVideo('${key}','${v.id}',this)">
-        <img src="${v.thumbnail_hq||v.thumbnail||''}" loading="lazy" onerror="this.src=''">
+      const thumb = v.thumbnail_hq || v.thumbnail || '';
+      html += `<div class="video-card${sel}" data-video-id="${esc(v.id)}" onclick='toggleVideo(${JSON.stringify(key)}, ${JSON.stringify(v.storeValue)}, this)'>
+        <div class="video-card-thumb${thumb ? '' : ' empty'}">
+          ${thumb ? `<img src="${esc(thumb)}" loading="lazy" alt="${esc(v.title || v.id)}" onerror="handleVideoThumbError(this)">` : ''}
+          <span>${esc(v.source || 'No Preview')}</span>
+        </div>
         <div class="video-card-info">
           <div class="video-card-title">${esc(v.title||v.id)}</div>
-          <div class="video-card-meta">${esc(v.channel||'')} · ${v.duration||''}</div>
+          <div class="video-card-meta">${esc(videoMetaText(v))}</div>
         </div>
       </div>`;
     }
@@ -1396,7 +1738,9 @@ function previewVideoUrl(url) {
   const preview = document.getElementById('vid-url-preview');
   if (!preview) return;
   if (!url) { preview.textContent = ''; return; }
-  const src = detectVideoSource(url);
+  const entry = buildVideoCandidateEntry(url);
+  if (!entry) { preview.textContent = ''; return; }
+  const src = entry.source || 'Web';
   const id  = ytId(url);
   preview.innerHTML = `平台：${src}${id ? `&nbsp;·&nbsp;ID: ${id}` : ''}`;
 }
@@ -1423,11 +1767,8 @@ function addVideoUrl(key) {
 
   if (!events[key].videos) events[key].videos = [];
 
-  // 提取 YouTube ID：从完整 URL 解析，或直接输入的 11 位 ID 字符串
-  const id = ytId(raw) || (/^[A-Za-z0-9_-]{11}$/.test(raw) ? raw : null);
-
-  // YouTube → 只存字符串 ID；非 YouTube → 只存字符串 URL（id 与 url 一致）
-  const storeValue = id ? id : raw;
+  const parsed = buildVideoCandidateEntry(raw);
+  const storeValue = parsed ? parsed.storeValue : raw;
 
   const alreadyExists = events[key].videos.some(i => videoItemId(i) === storeValue);
   if (!alreadyExists) events[key].videos.push(storeValue);
@@ -1446,7 +1787,7 @@ function removeVideo(key, itemId) {
   renderManualVideos(key);
   // 取消候选列表高亮
   document.querySelectorAll('.video-card.selected').forEach(el => {
-    if (el.getAttribute('onclick') && el.getAttribute('onclick').includes(itemId)) {
+    if (el.dataset.videoId === itemId) {
       el.classList.remove('selected');
     }
   });
@@ -1458,20 +1799,17 @@ function renderManualVideos(key) {
   const items = events[key].videos || [];
   if (!items.length) { el.innerHTML = `<div style="font-size:12px;color:var(--muted)">（无）</div>`; return; }
   el.innerHTML = items.map(item => {
-    const isStr  = typeof item === 'string';
-    const id     = isStr ? item : (item.id || '');
-    const url    = isStr ? '' : (item.url || '');
-    const title  = isStr ? id : (item.title || item.url || id);
-    const src    = isStr ? 'YouTube ID' : (item.source || 'Web');
-    const link   = isStr
-      ? `https://www.youtube.com/watch?v=${id}`
-      : (item.url || '#');
-    const dispId = isStr ? id : (id || url);
+    const entry = buildVideoCandidateEntry(item);
+    if (!entry) return '';
+    const title  = entry.title || entry.id;
+    const src    = entry.source || 'Web';
+    const link   = entry.url || '';
+    const dispId = entry.id;
     return `<div class="dyn-row">
-      <span style="font-size:11px;background:var(--bg3);border-radius:3px;padding:1px 5px;color:var(--muted);flex-shrink:0">${src}</span>
+      <span style="font-size:11px;background:var(--bg3);border-radius:3px;padding:1px 5px;color:var(--muted);flex-shrink:0">${esc(src)}</span>
       <span style="flex:1;font-size:12px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(title)}">${esc(title)||dispId}</span>
-      <a href="${link}" target="_blank" style="font-size:11px;color:var(--muted);white-space:nowrap">预览</a>
-      <button class="btn btn-danger btn-icon" onclick="removeVideo('${key}','${esc(dispId)}')">×</button>
+      ${link ? `<a href="${esc(link)}" target="_blank" style="font-size:11px;color:var(--muted);white-space:nowrap">预览</a>` : `<span style="font-size:11px;color:var(--muted);white-space:nowrap">无链接</span>`}
+      <button class="btn btn-danger btn-icon" onclick='removeVideo(${JSON.stringify(key)}, ${JSON.stringify(dispId)})'>×</button>
     </div>`;
   }).join('');
 }

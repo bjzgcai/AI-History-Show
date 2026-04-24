@@ -18,10 +18,15 @@ const OUTPUTS    = [
   path.join(ROOT, 'milestones-data-default.js'),
 ];
 const AVATAR_REGISTRY_PATH = path.join(__dirname, 'figure-avatars.js');
+const RESEARCH_CANDIDATES_PATH = path.join(ROOT, 'resources', 'research-candidates.js');
+const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
+const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
 
 const { categories } = require('./catalog.js');
 const eventsMap      = require('./events.js');
 const avatarRegistry = loadAvatarRegistry();
+const researchCandidates = loadResearchCandidates();
+const quoteCandidates = loadQuoteCandidates();
 
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
 
@@ -69,6 +74,8 @@ for (const cat of categories) {
       console.warn(`[警告] catalog.js 中引用了 "${key}"，但 events.js 中不存在该事件，已跳过。`);
       continue;
     }
+
+    const curatedQuote = selectCuratedQuote(key, ev);
 
     // 构建视频列表（支持字符串 ID 和 URL 对象两种格式）
     const videos = [];
@@ -142,10 +149,14 @@ for (const cat of categories) {
       figures:     (ev.figures || []).map(enrichFigure),
       photos:      [],   // 预留字段，暂不使用
       videoUrl:    videos[0] ? (videos[0].embed_url || videos[0].url || '') : '',
-      quote:       buildQuote(ev.quoteText),
+      quote:       buildQuote(curatedQuote.text),
+      quoteAttribution: curatedQuote.attribution,
+      quoteMeta:   curatedQuote.meta,
       quotePage:   ev.quotePage || '',
+      commentarySections: buildCommentarySectionsOverride(key),
       resources: {
         images: ev.images || [],
+        imageMeta: ev.imageMeta || {},
         videos,
       },
     });
@@ -183,6 +194,32 @@ function loadAvatarRegistry() {
   return require('./figure-avatars.js');
 }
 
+function loadResearchCandidates() {
+  if (!fs.existsSync(RESEARCH_CANDIDATES_PATH)) {
+    return { events: {} };
+  }
+
+  try {
+    return require(RESEARCH_CANDIDATES_PATH).researchCandidates || { events: {} };
+  } catch (error) {
+    console.warn(`[警告] 无法加载候选研究素材 ${RESEARCH_CANDIDATES_PATH}: ${error.message}`);
+    return { events: {} };
+  }
+}
+
+function loadQuoteCandidates() {
+  if (!fs.existsSync(QUOTE_CANDIDATES_PATH)) {
+    return { events: {} };
+  }
+
+  try {
+    return require(QUOTE_CANDIDATES_PATH).quoteCandidates || { events: {} };
+  } catch (error) {
+    console.warn(`[警告] 无法加载引言候选库 ${QUOTE_CANDIDATES_PATH}: ${error.message}`);
+    return { events: {} };
+  }
+}
+
 /** 给人物条目补上显式头像信息 */
 function enrichFigure(figure) {
   const safeFigure = figure && typeof figure === 'object' ? figure : {};
@@ -196,6 +233,48 @@ function enrichFigure(figure) {
   };
 }
 
+function buildCommentarySectionsOverride(key) {
+  const entry = researchCandidates.events && researchCandidates.events[key];
+  if (!entry) {
+    return [];
+  }
+
+  const explicitSections = Array.isArray(entry.displayCommentarySections)
+    ? entry.displayCommentarySections
+    : [];
+
+  const fallbackSections = [];
+  const backgroundText = entry.candidateTexts && entry.candidateTexts.background
+    ? String(entry.candidateTexts.background.text || '').trim()
+    : '';
+  const extensionText = entry.candidateTexts && entry.candidateTexts.extension
+    ? String(entry.candidateTexts.extension.text || '').trim()
+    : '';
+
+  if (backgroundText) {
+    fallbackSections.push({
+      label: '背景解读',
+      text: backgroundText,
+    });
+  }
+
+  if (extensionText) {
+    fallbackSections.push({
+      label: '延展说明',
+      text: extensionText,
+    });
+  }
+
+  const sourceSections = explicitSections.length > 0 ? explicitSections : fallbackSections;
+
+  return sourceSections
+    .map((section) => ({
+      label: String(section.label || '').trim(),
+      html: String(section.text || '').trim(),
+    }))
+    .filter((section) => section.label && section.html);
+}
+
 /** 清理历史数据里手动残留的首尾包装引号 */
 function normalizeQuoteText(text) {
   let value = String(text || '').trim();
@@ -203,6 +282,55 @@ function normalizeQuoteText(text) {
   if (value.startsWith('"')) value = value.slice(1).trimStart();
   if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
   return value;
+}
+
+function formatQuoteAttribution(candidate) {
+  const safeCandidate = candidate && typeof candidate === 'object' ? candidate : {};
+  const workTitle = String(safeCandidate.workTitle || '').trim();
+  const workAuthors = String(safeCandidate.workAuthors || '').trim();
+  const speaker = String(safeCandidate.speaker || '').trim();
+
+  if (workTitle) {
+    return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
+  }
+
+  return speaker;
+}
+
+function hasOwn(obj, key) {
+  return Object.prototype.hasOwnProperty.call(obj || {}, key);
+}
+
+function mergeEditableQuoteMeta(eventMeta, candidateMeta) {
+  const hasEventMeta = Boolean(eventMeta && typeof eventMeta === 'object');
+  const eventSource = hasEventMeta ? eventMeta : null;
+  const candidateSource = candidateMeta && typeof candidateMeta === 'object' ? candidateMeta : null;
+  const merged = {};
+  let hasValue = false;
+
+  for (const field of QUOTE_META_FIELDS) {
+    const rawValue = eventSource && hasOwn(eventSource, field)
+      ? eventSource[field]
+      : (candidateSource && hasOwn(candidateSource, field) ? candidateSource[field] : '');
+    const value = String(rawValue || '').trim();
+    if (value) hasValue = true;
+    if (value || hasEventMeta) merged[field] = value;
+  }
+
+  return hasValue || hasEventMeta ? merged : {};
+}
+
+function selectCuratedQuote(key, ev) {
+  const candidates = quoteCandidates.events && quoteCandidates.events[key];
+  const first = Array.isArray(candidates) && candidates.length > 0 ? candidates[0] : null;
+  const candidateQuote = first && typeof first === 'object' ? String(first.quote || '').trim() : '';
+  const effectiveMeta = mergeEditableQuoteMeta(ev && ev.quoteMeta, first);
+
+  return {
+    text: candidateQuote || String((ev && ev.quoteText) || '').trim(),
+    attribution: formatQuoteAttribution(effectiveMeta),
+    meta: effectiveMeta,
+  };
 }
 
 /** 将纯文本引言组装成 HTML 字符串（\n → <br>）*/

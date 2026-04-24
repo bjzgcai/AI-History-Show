@@ -63,20 +63,34 @@
     function buildCommentarySections(milestone) {
         const sections = [];
         const quoteHtml = String(milestone.quote || '').trim();
+        const quoteAttribution = String(milestone.quoteAttribution || '').trim();
+        const customSections = Array.isArray(milestone.commentarySections)
+            ? milestone.commentarySections.filter((section) => stripHtml(section && section.html))
+            : [];
 
         if (quoteHtml && quoteHtml !== '待补充') {
+            const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? '来源：' : '署名：';
             sections.push({
                 label: '引言摘录',
-                html: quoteHtml
+                html: quoteAttribution ? `${quoteHtml}<br>${attributionPrefix}${quoteAttribution}` : quoteHtml
             });
         }
 
-        splitDescription(milestone.description).forEach((paragraph, index) => {
-            sections.push({
-                label: index === 0 ? '背景解读' : '延展说明',
-                html: paragraph
+        if (customSections.length > 0) {
+            customSections.forEach((section) => {
+                sections.push({
+                    label: section.label || '内容解读',
+                    html: section.html
+                });
             });
-        });
+        } else {
+            splitDescription(milestone.description).forEach((paragraph, index) => {
+                sections.push({
+                    label: index === 0 ? '背景解读' : '延展说明',
+                    html: paragraph
+                });
+            });
+        }
 
         if (sections.length === 0) {
             sections.push({
@@ -121,7 +135,9 @@
             quoteHtml: String(milestone.quote || '').trim() && milestone.quote !== '待补充'
                 ? String(milestone.quote || '').trim()
                 : '',
+            quoteAttribution: String(milestone.quoteAttribution || '').trim(),
             quotePage: String(milestone.quotePage || '').trim(),
+            commentaryOverrideSections: Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [],
             commentarySections,
             timeline
         };
