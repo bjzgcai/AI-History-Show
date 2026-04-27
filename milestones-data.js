@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-04-24 11:30
+// 生成时间: 2026-04-24 11:41
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -1203,9 +1203,9 @@ const milestones = [
   {
     "id": "milestone-2018-bert",
     "year": 2018,
-    "category": "大模型时代 (2020s-今)",
+    "category": "大模型与科学智能",
     "title": "BERT",
-    "subtitle": "大模型时代",
+    "subtitle": "大模型与科学智能",
     "location": {
       "name": "OpenAI / Google AI",
       "country": "美国, 加利福尼亚州",
@@ -1290,9 +1290,9 @@ const milestones = [
   {
     "id": "milestone-2018-gpt",
     "year": 2018,
-    "category": "大模型时代 (2020s-今)",
+    "category": "大模型与科学智能",
     "title": "GPT",
-    "subtitle": "大模型时代",
+    "subtitle": "大模型与科学智能",
     "location": {
       "name": "OpenAI / Google AI",
       "country": "美国, 加利福尼亚州",
@@ -1385,193 +1385,11 @@ const milestones = [
     }
   },
   {
-    "id": "milestone-2023-agents",
-    "year": 2023,
-    "category": "大模型时代 (2020s-今)",
-    "title": "智能体：LLM驱动的自主系统",
-    "subtitle": "大模型时代",
-    "location": {
-      "name": "全球研究",
-      "country": "多个机构",
-      "coordinates": [
-        37.7749,
-        -122.4194
-      ]
-    },
-    "description": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
-    "figures": [
-      {
-        "name": "Stuart Russell",
-        "role": "智能体理论奠基人",
-        "avatar": "resources/images/figures/stuart-russell.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": "Peter Norvig",
-        "role": "AIMA作者",
-        "avatar": "resources/images/figures/peter-norvig.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": "Michael Wooldridge",
-        "role": "多智能体系统专家",
-        "avatar": "resources/images/figures/michael-wooldridge.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      }
-    ],
-    "photos": [],
-    "videoUrl": "",
-    "quote": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
-    "quoteAttribution": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
-    "quoteMeta": {
-      "speaker": "Shunyu Yao et al.",
-      "workTitle": "ReAct: Synergizing Reasoning and Acting in Language Models",
-      "workAuthors": "Shunyu Yao et al.",
-      "sourceLabel": "ReAct abstract",
-      "sourceUrl": "https://arxiv.org/abs/2210.03629"
-    },
-    "quotePage": "摘自PPT第45-46页",
-    "commentarySections": [
-      {
-        "label": "背景解读",
-        "html": "当代 Agentic AI 的关键变化，并不是“会调用工具”这一点本身，而是大语言模型开始同时承担目标分解、状态解释、行动选择与自我修正的认知中枢角色。"
-      },
-      {
-        "label": "延展说明",
-        "html": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。"
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/2023-agents/historical/2023-agents_historical_01.png",
-        "resources/images/2023-agents/historical/2023-agents_historical_02.png",
-        "resources/images/2023-agents/historical/2023-agents_historical_03.png"
-      ],
-      "imageMeta": {
-        "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-          "caption": "历史照片",
-          "subcaption": "智能体：LLM驱动的自主系统"
-        },
-        "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
-          "caption": "历史照片",
-          "subcaption": "智能体：LLM驱动的自主系统"
-        },
-        "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
-          "caption": "历史照片",
-          "subcaption": "智能体：LLM驱动的自主系统"
-        }
-      },
-      "videos": []
-    }
-  },
-  {
-    "id": "milestone-2025-llm-competition",
-    "year": 2025,
-    "category": "大模型时代 (2020s-今)",
-    "title": "大语言模型百花齐放",
-    "subtitle": "大模型时代",
-    "location": {
-      "name": "全球研究",
-      "country": "美国 / 中国",
-      "coordinates": [
-        [
-          37.7749,
-          -122.4194
-        ],
-        [
-          37.422,
-          -122.0841
-        ],
-        [
-          39.9042,
-          116.4074
-        ],
-        [
-          30.2741,
-          120.1551
-        ]
-      ]
-    },
-    "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
-    "figures": [
-      {
-        "name": "研究机构",
-        "role": "前沿模型研发机构",
-        "avatar": "resources/images/figures/research-institution.png",
-        "avatarStyle": "",
-        "figureType": "team"
-      }
-    ],
-    "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/5sLYAQS9sWQ",
-    "quote": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
-    "quoteAttribution": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
-    "quoteMeta": {
-      "speaker": "Wei-Lin Chiang et al.",
-      "workTitle": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
-      "workAuthors": "Wei-Lin Chiang et al.",
-      "sourceLabel": "Chatbot Arena abstract",
-      "sourceUrl": "https://arxiv.org/abs/2403.04132"
-    },
-    "quotePage": "摘自PPT第39页",
-    "commentarySections": [
-      {
-        "label": "背景解读",
-        "html": "大模型竞争的可见化，越来越依赖“活榜单”而不是单次论文成绩：用户偏好投票、公开对战与频繁更新，让模型比较从实验室内部评测走向持续的公共观察。"
-      },
-      {
-        "label": "延展说明",
-        "html": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。"
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
-        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
-      ],
-      "imageMeta": {
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
-          "caption": "历史照片",
-          "subcaption": "大语言模型百花齐放"
-        },
-        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
-          "caption": "结构示意",
-          "subcaption": "大语言模型百花齐放 架构图"
-        },
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
-          "caption": "历史照片",
-          "subcaption": "大语言模型百花齐放"
-        },
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
-          "caption": "历史照片",
-          "subcaption": "大语言模型百花齐放"
-        }
-      },
-      "videos": [
-        {
-          "id": "5sLYAQS9sWQ",
-          "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
-          "embed_url": "https://www.youtube.com/embed/5sLYAQS9sWQ",
-          "title": "How Large Language Models Work",
-          "channel": "IBM Technology",
-          "duration": "5:34",
-          "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg",
-          "source": "YouTube"
-        }
-      ]
-    }
-  },
-  {
     "id": "milestone-2019-ai-feynman",
     "year": 2019,
-    "category": "AI for Science (2018-今)",
+    "category": "大模型与科学智能",
     "title": "AI Feynman：自主科学规律发现",
-    "subtitle": "AI",
+    "subtitle": "大模型与科学智能",
     "location": {
       "name": "麻省理工学院",
       "country": "美国, 马萨诸塞州",
@@ -1654,9 +1472,9 @@ const milestones = [
   {
     "id": "milestone-2020-alphafold",
     "year": 2020,
-    "category": "AI for Science (2018-今)",
+    "category": "大模型与科学智能",
     "title": "AlphaFold: 蛋白质结构预测",
-    "subtitle": "AI",
+    "subtitle": "大模型与科学智能",
     "location": {
       "name": "DeepMind",
       "country": "英国, 伦敦",
@@ -1759,11 +1577,94 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-2023-agents",
+    "year": 2023,
+    "category": "大模型与科学智能",
+    "title": "智能体：LLM驱动的自主系统",
+    "subtitle": "大模型与科学智能",
+    "location": {
+      "name": "全球研究",
+      "country": "多个机构",
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
+    "figures": [
+      {
+        "name": "Stuart Russell",
+        "role": "智能体理论奠基人",
+        "avatar": "resources/images/figures/stuart-russell.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": "Peter Norvig",
+        "role": "AIMA作者",
+        "avatar": "resources/images/figures/peter-norvig.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": "Michael Wooldridge",
+        "role": "多智能体系统专家",
+        "avatar": "resources/images/figures/michael-wooldridge.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
+    "quoteAttribution": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
+    "quoteMeta": {
+      "speaker": "Shunyu Yao et al.",
+      "workTitle": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "workAuthors": "Shunyu Yao et al.",
+      "sourceLabel": "ReAct abstract",
+      "sourceUrl": "https://arxiv.org/abs/2210.03629"
+    },
+    "quotePage": "摘自PPT第45-46页",
+    "commentarySections": [
+      {
+        "label": "背景解读",
+        "html": "当代 Agentic AI 的关键变化，并不是“会调用工具”这一点本身，而是大语言模型开始同时承担目标分解、状态解释、行动选择与自我修正的认知中枢角色。"
+      },
+      {
+        "label": "延展说明",
+        "html": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/2023-agents/historical/2023-agents_historical_01.png",
+        "resources/images/2023-agents/historical/2023-agents_historical_02.png",
+        "resources/images/2023-agents/historical/2023-agents_historical_03.png"
+      ],
+      "imageMeta": {
+        "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
+          "caption": "历史照片",
+          "subcaption": "智能体：LLM驱动的自主系统"
+        },
+        "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
+          "caption": "历史照片",
+          "subcaption": "智能体：LLM驱动的自主系统"
+        },
+        "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+          "caption": "历史照片",
+          "subcaption": "智能体：LLM驱动的自主系统"
+        }
+      },
+      "videos": []
+    }
+  },
+  {
     "id": "milestone-2024-ai-scientist",
     "year": 2024,
-    "category": "AI for Science (2018-今)",
+    "category": "大模型与科学智能",
     "title": "AI科学家与自主实验室",
-    "subtitle": "AI",
+    "subtitle": "大模型与科学智能",
     "location": {
       "name": "Sakana AI / UC Berkeley",
       "country": "日本 / 美国",
@@ -1856,6 +1757,105 @@ const milestones = [
           "channel": "Berkeley Lab",
           "duration": "2:16",
           "thumbnail": "https://img.youtube.com/vi/RLO4sfK37w4/maxresdefault.jpg",
+          "source": "YouTube"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-2025-llm-competition",
+    "year": 2025,
+    "category": "大模型与科学智能",
+    "title": "大语言模型百花齐放",
+    "subtitle": "大模型与科学智能",
+    "location": {
+      "name": "全球研究",
+      "country": "美国 / 中国",
+      "coordinates": [
+        [
+          37.7749,
+          -122.4194
+        ],
+        [
+          37.422,
+          -122.0841
+        ],
+        [
+          39.9042,
+          116.4074
+        ],
+        [
+          30.2741,
+          120.1551
+        ]
+      ]
+    },
+    "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
+    "figures": [
+      {
+        "name": "研究机构",
+        "role": "前沿模型研发机构",
+        "avatar": "resources/images/figures/research-institution.png",
+        "avatarStyle": "",
+        "figureType": "team"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "https://www.youtube.com/embed/5sLYAQS9sWQ",
+    "quote": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
+    "quoteAttribution": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
+    "quoteMeta": {
+      "speaker": "Wei-Lin Chiang et al.",
+      "workTitle": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+      "workAuthors": "Wei-Lin Chiang et al.",
+      "sourceLabel": "Chatbot Arena abstract",
+      "sourceUrl": "https://arxiv.org/abs/2403.04132"
+    },
+    "quotePage": "摘自PPT第39页",
+    "commentarySections": [
+      {
+        "label": "背景解读",
+        "html": "大模型竞争的可见化，越来越依赖“活榜单”而不是单次论文成绩：用户偏好投票、公开对战与频繁更新，让模型比较从实验室内部评测走向持续的公共观察。"
+      },
+      {
+        "label": "延展说明",
+        "html": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
+      ],
+      "imageMeta": {
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
+          "caption": "历史照片",
+          "subcaption": "大语言模型百花齐放"
+        },
+        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
+          "caption": "结构示意",
+          "subcaption": "大语言模型百花齐放 架构图"
+        },
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
+          "caption": "历史照片",
+          "subcaption": "大语言模型百花齐放"
+        },
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
+          "caption": "历史照片",
+          "subcaption": "大语言模型百花齐放"
+        }
+      },
+      "videos": [
+        {
+          "id": "5sLYAQS9sWQ",
+          "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
+          "embed_url": "https://www.youtube.com/embed/5sLYAQS9sWQ",
+          "title": "How Large Language Models Work",
+          "channel": "IBM Technology",
+          "duration": "5:34",
+          "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg",
           "source": "YouTube"
         }
       ]

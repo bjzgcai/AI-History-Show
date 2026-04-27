@@ -37,22 +37,16 @@ module.exports = {
       ]
     },
     {
-      name: "大模型时代 (2020s-今)",
-      subtitle: "大模型时代",
+      name: "大模型与科学智能",
+      subtitle: "大模型与科学智能",
       events: [
         "2018-bert",
         "2018-gpt",
-        "2023-agents",
-        "2025-llm-competition",
-      ]
-    },
-    {
-      name: "AI for Science (2018-今)",
-      subtitle: "AI",
-      events: [
         "2019-ai-feynman",
         "2020-alphafold",
+        "2023-agents",
         "2024-ai-scientist",
+        "2025-llm-competition",
       ]
     },
   ]
