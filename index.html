@@ -10,6 +10,8 @@
             --screen-width: 1920px;
             --screen-height: 1080px;
             --stage-scale: 1;
+            --footer-nav-size: 56px;
+            --footer-status-width: 250px;
             --bg: #020202;
             --panel: rgba(255, 255, 255, 0.05);
             --line: rgba(255, 255, 255, 0.14);
@@ -1091,7 +1093,7 @@
 
         .stage-footer {
             display: grid;
-            grid-template-columns: auto minmax(0, 1fr) auto auto;
+            grid-template-columns: var(--footer-nav-size) minmax(0, 1fr) var(--footer-nav-size) var(--footer-status-width);
             gap: 20px;
             align-items: end;
             padding-top: 14px;
@@ -1099,8 +1101,8 @@
         }
 
         .nav-button {
-            width: 56px;
-            height: 56px;
+            width: var(--footer-nav-size);
+            height: var(--footer-nav-size);
             border: 1px solid rgba(255, 255, 255, 0.18);
             background: rgba(255, 255, 255, 0.03);
             color: rgba(244, 239, 229, 0.7);
@@ -1235,6 +1237,7 @@
         .footer-status {
             align-self: stretch;
             min-width: 0;
+            width: var(--footer-status-width);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -1563,6 +1566,7 @@
 
             .footer-status {
                 grid-column: 1 / -1;
+                width: auto;
                 flex-direction: row;
                 align-items: end;
                 justify-content: space-between;
