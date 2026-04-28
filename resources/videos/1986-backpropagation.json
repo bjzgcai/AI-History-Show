@@ -4,18 +4,17 @@
   "year": 1986,
   "candidate_videos": [
     {
-      "id": "tIeHLnjs5U8",
-      "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8",
-      "embed_url": "https://www.youtube.com/embed/tIeHLnjs5U8",
-      "title": "Backpropagation calculus | Deep Learning Chapter 4",
-      "channel": "3Blue1Brown",
-      "duration": "10:18",
-      "views": "3,673,006回視聴",
-      "thumbnail": "https://img.youtube.com/vi/tIeHLnjs5U8/maxresdefault.jpg",
-      "thumbnail_hq": "https://img.youtube.com/vi/tIeHLnjs5U8/hqdefault.jpg",
-      "source": "YouTube"
+      "id": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+      "url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+      "embed_url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+      "title": "1986：神经网络的复兴与反向传播算法_720p",
+      "channel": "",
+      "duration": "",
+      "thumbnail": "",
+      "thumbnail_hq": "",
+      "source": "Web"
     }
   ],
   "total_count": 1,
-  "created_at": "2026-03-13 09:05:38"
+  "created_at": "2026-04-28 02:22:40"
 }

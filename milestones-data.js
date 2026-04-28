@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-04-24 11:41
+// 生成时间: 2026-04-28 02:22
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -49,7 +49,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A1956%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9.mp4",
+    "videoUrl": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
     "quote": "\"Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.\"",
     "quoteAttribution": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
     "quoteMeta": {
@@ -97,14 +97,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "https://media.sciencearena.cn/video/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A1956%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9.mp4",
-          "url": "https://media.sciencearena.cn/video/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A1956%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A1956%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9.mp4",
-          "title": "人工智能的诞生：1956年的夏天",
+          "id": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+          "url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+          "title": "1956年：人工智能的诞生",
           "channel": "",
           "duration": "",
           "thumbnail": "",
-          "source": "Science Arena"
+          "source": "Web"
         }
       ]
     }
@@ -134,7 +134,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
+    "videoUrl": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
     "quote": "\"The theory serves as a bridge between biophysics and psychology.\"",
     "quoteAttribution": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
     "quoteMeta": {
@@ -187,14 +187,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "https://media.sciencearena.cn/video/%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "url": "https://media.sciencearena.cn/video/%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "title": "感知机：人工智能的最初火花",
+          "id": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
+          "url": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
+          "title": "1957感知机：人工智能的最初火花",
           "channel": "",
           "duration": "",
           "thumbnail": "",
-          "source": "Science Arena"
+          "source": "Web"
         }
       ]
     }
@@ -224,7 +224,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/w_v5lumtoPk",
+    "videoUrl": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
     "quote": "\"Their rigorous work and brilliant technique does not make the perceptron look very good.\"",
     "quoteAttribution": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
     "quoteMeta": {
@@ -267,14 +267,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "w_v5lumtoPk",
-          "url": "https://www.youtube.com/watch?v=w_v5lumtoPk",
-          "embed_url": "https://www.youtube.com/embed/w_v5lumtoPk",
-          "title": "AI Winter : The Rise and Fall of Artificial Intelligence",
-          "channel": "AI Discovery Zone",
-          "duration": "3:03",
-          "thumbnail": "https://img.youtube.com/vi/w_v5lumtoPk/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+          "url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+          "title": "1969第一次人工智能寒冬：逻辑谜题如何冰封AI之梦",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -318,7 +318,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/tIeHLnjs5U8",
+    "videoUrl": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
     "quote": "\"The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.\"",
     "quoteAttribution": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
     "quoteMeta": {
@@ -371,14 +371,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "tIeHLnjs5U8",
-          "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8",
-          "embed_url": "https://www.youtube.com/embed/tIeHLnjs5U8",
-          "title": "Backpropagation calculus | Deep Learning Chapter 4",
-          "channel": "3Blue1Brown",
-          "duration": "10:18",
-          "thumbnail": "https://img.youtube.com/vi/tIeHLnjs5U8/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+          "url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+          "title": "1986：神经网络的复兴与反向传播算法_720p",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -415,7 +415,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/AsNTP8Kwu80",
+    "videoUrl": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": "\"The current report develops a proposal ... to provide networks with a dynamic memory.\"",
     "quoteAttribution": "《Finding Structure in Time》, Jeffrey L. Elman",
     "quoteMeta": {
@@ -453,14 +453,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "AsNTP8Kwu80",
-          "url": "https://www.youtube.com/watch?v=AsNTP8Kwu80",
-          "embed_url": "https://www.youtube.com/embed/AsNTP8Kwu80",
-          "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
-          "channel": "StatQuest with Josh Starmer",
-          "duration": "16:37",
-          "thumbnail": "https://img.youtube.com/vi/AsNTP8Kwu80/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "title": "1986追寻AI的记忆：1986年RNN的突破",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -490,7 +490,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/FwFduRA_L6Q",
+    "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
     "quote": "\"Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.\"",
     "quoteAttribution": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
     "quoteMeta": {
@@ -533,14 +533,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "FwFduRA_L6Q",
-          "url": "https://www.youtube.com/watch?v=FwFduRA_L6Q",
-          "embed_url": "https://www.youtube.com/embed/FwFduRA_L6Q",
-          "title": "Convolutional Network Demo from 1989",
-          "channel": "Yann LeCun",
-          "duration": "1:02",
-          "thumbnail": "https://img.youtube.com/vi/FwFduRA_L6Q/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+          "url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+          "title": "1989CNN-计算机视觉的隐秘历史",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -577,7 +577,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/b61DPVFX03I",
+    "videoUrl": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
     "quote": "\"We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).\"",
     "quoteAttribution": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
     "quoteMeta": {
@@ -620,14 +620,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "b61DPVFX03I",
-          "url": "https://www.youtube.com/watch?v=b61DPVFX03I",
-          "embed_url": "https://www.youtube.com/embed/b61DPVFX03I",
-          "title": "What is LSTM (Long Short Term Memory)?",
-          "channel": "IBM Technology",
-          "duration": "8:19",
-          "thumbnail": "https://img.youtube.com/vi/b61DPVFX03I/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+          "url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+          "title": "1997：LSTM与AI的结构性胜利",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -664,7 +664,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/_zE4wYy-vjo",
+    "videoUrl": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
     "quote": "\"We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.\"",
     "quoteAttribution": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
     "quoteMeta": {
@@ -707,14 +707,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "_zE4wYy-vjo",
-          "url": "https://www.youtube.com/watch?v=_zE4wYy-vjo",
-          "embed_url": "https://www.youtube.com/embed/_zE4wYy-vjo",
-          "title": "When AI Finally \"Saw\" : The ImageNet Moment (AlexNet's 2012 Revolution)",
-          "channel": "Machine Learning Nerd",
-          "duration": "7:19",
-          "thumbnail": "https://img.youtube.com/vi/_zE4wYy-vjo/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+          "url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+          "title": "2012年ImageNet：引爆人工智能革命的一年",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -751,7 +751,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/CyoQ1FoUWdA",
+    "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
     "quote": "\"The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.\"",
     "quoteAttribution": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
     "quoteMeta": {
@@ -789,14 +789,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "CyoQ1FoUWdA",
-          "url": "https://www.youtube.com/watch?v=CyoQ1FoUWdA",
-          "embed_url": "https://www.youtube.com/embed/CyoQ1FoUWdA",
-          "title": "Highway Networks - Deep Neural Network Explained",
-          "channel": "Deep Learning with Yacine",
-          "duration": "8:59",
-          "thumbnail": "https://img.youtube.com/vi/CyoQ1FoUWdA/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+          "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+          "title": "2014高速网络：深度学习中被遗忘的英雄",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -833,7 +833,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
+    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
     "quote": "\"We propose a new framework for estimating generative models via adversarial nets.\"",
     "quoteAttribution": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
     "quoteMeta": {
@@ -864,7 +864,18 @@ const milestones = [
           "subcaption": "GAN（生成对抗网路） 架构图"
         }
       },
-      "videos": []
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+          "url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+          "title": "2014生成对抗网络：决斗、延迟与辩论",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ]
     }
   },
   {
@@ -899,7 +910,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/eMlx5fFNoYc",
+    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
     "quote": "\"We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.\"",
     "quoteAttribution": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
     "quoteMeta": {
@@ -937,14 +948,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "eMlx5fFNoYc",
-          "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
-          "embed_url": "https://www.youtube.com/embed/eMlx5fFNoYc",
-          "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
-          "channel": "3Blue1Brown",
-          "duration": "26:10",
-          "thumbnail": "https://img.youtube.com/vi/eMlx5fFNoYc/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+          "url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+          "title": "2014现代AI的突破：注意力机制",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -981,7 +992,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/o_3mboe1jYI",
+    "videoUrl": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": "\"We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.\"",
     "quoteAttribution": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
     "quoteMeta": {
@@ -1039,14 +1050,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "o_3mboe1jYI",
-          "url": "https://www.youtube.com/watch?v=o_3mboe1jYI",
-          "embed_url": "https://www.youtube.com/embed/o_3mboe1jYI",
-          "title": "ResNet を（実際に）10分以内で説明する",
-          "channel": "rupert ai",
-          "duration": "9:47",
-          "thumbnail": "https://img.youtube.com/vi/o_3mboe1jYI/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "title": "2015ResNet：深度学习的突破",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1076,7 +1087,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/hCg9bolMeJM",
+    "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
     "quote": "\"DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.\"",
     "quoteAttribution": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
     "quoteMeta": {
@@ -1119,14 +1130,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "hCg9bolMeJM",
-          "url": "https://www.youtube.com/watch?v=hCg9bolMeJM",
-          "embed_url": "https://www.youtube.com/embed/hCg9bolMeJM",
-          "title": "DenseNet | Densely Connected Convolutional Networks",
-          "channel": "Code With Aarohi",
-          "duration": "22:59",
-          "thumbnail": "https://img.youtube.com/vi/hCg9bolMeJM/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+          "url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+          "title": "2016DenseNet：奔向更深层的人工智能",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1156,7 +1167,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
+    "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
     "quote": "\"We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.\"",
     "quoteAttribution": "《Attention Is All You Need》, Ashish Vaswani et al.",
     "quoteMeta": {
@@ -1197,7 +1208,18 @@ const milestones = [
           "subcaption": "《Attention Is All You Need》"
         }
       },
-      "videos": []
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+          "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+          "title": "2017Transformer：改变AI的2017年论文",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ]
     }
   },
   {
@@ -1232,7 +1254,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/xI0HHN5XKDo",
+    "videoUrl": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
     "quote": "\"BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.\"",
     "quoteAttribution": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
     "quoteMeta": {
@@ -1275,14 +1297,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "xI0HHN5XKDo",
-          "url": "https://www.youtube.com/watch?v=xI0HHN5XKDo",
-          "embed_url": "https://www.youtube.com/embed/xI0HHN5XKDo",
-          "title": "BERT ニューラル ネットワーク - 説明!",
-          "channel": "CodeEmporium",
-          "duration": "11:37",
-          "thumbnail": "https://img.youtube.com/vi/xI0HHN5XKDo/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+          "url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+          "title": "2018BERT：自然语言处理的革命",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1319,7 +1341,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/OFS90-FX6pg",
+    "videoUrl": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
     "quote": "\"We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.\"",
     "quoteAttribution": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
     "quoteMeta": {
@@ -1372,14 +1394,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "OFS90-FX6pg",
-          "url": "https://www.youtube.com/watch?v=OFS90-FX6pg",
-          "embed_url": "https://www.youtube.com/embed/OFS90-FX6pg",
-          "title": "ChatGPTの35年の歴史",
-          "channel": "Art of the Problem",
-          "duration": "26:55",
-          "thumbnail": "https://img.youtube.com/vi/OFS90-FX6pg/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
+          "url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
+          "title": "2018年GPT突破：极简的胜利",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1409,7 +1431,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/ipRvjS7q1DI",
+    "videoUrl": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
     "quote": "\"We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.\"",
     "quoteAttribution": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
     "quoteMeta": {
@@ -1457,14 +1479,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "ipRvjS7q1DI",
-          "url": "https://www.youtube.com/watch?v=ipRvjS7q1DI",
-          "embed_url": "https://www.youtube.com/embed/ipRvjS7q1DI",
-          "title": "Richard Feynman: Can Machines Think?",
-          "channel": "Lex Clips",
-          "duration": "18:27",
-          "thumbnail": "https://img.youtube.com/vi/ipRvjS7q1DI/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+          "url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+          "title": "2019AI_Feynman：破解宇宙的密码",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1501,7 +1523,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/P_fHJIYENdI",
+    "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
     "quote": "\"Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.\"",
     "quoteAttribution": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
     "quoteMeta": {
@@ -1564,14 +1586,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "P_fHJIYENdI",
-          "url": "https://www.youtube.com/watch?v=P_fHJIYENdI",
-          "embed_url": "https://www.youtube.com/embed/P_fHJIYENdI",
-          "title": "AlphaFold - The Most Useful Thing AI Has Ever Done",
-          "channel": "Veritasium",
-          "duration": "24:52",
-          "thumbnail": "https://img.youtube.com/vi/P_fHJIYENdI/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+          "url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+          "title": "2020AlphaFold：破解生物学的终极挑战",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1615,7 +1637,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
+    "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
     "quote": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
     "quoteAttribution": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
     "quoteMeta": {
@@ -1656,7 +1678,18 @@ const milestones = [
           "subcaption": "智能体：LLM驱动的自主系统"
         }
       },
-      "videos": []
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+          "url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+          "title": "2023AI智能体：70年的梦想",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ]
     }
   },
   {
@@ -1697,7 +1730,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/RLO4sfK37w4",
+    "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
     "quote": "\"This paper presents the first comprehensive framework for fully automatic scientific discovery.\"",
     "quoteAttribution": "《The AI Scientist》, Chris Lu et al.",
     "quoteMeta": {
@@ -1750,14 +1783,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "RLO4sfK37w4",
-          "url": "https://www.youtube.com/watch?v=RLO4sfK37w4",
-          "embed_url": "https://www.youtube.com/embed/RLO4sfK37w4",
-          "title": "Robots and AI hunt for new materials at A-Lab",
-          "channel": "Berkeley Lab",
-          "duration": "2:16",
-          "thumbnail": "https://img.youtube.com/vi/RLO4sfK37w4/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+          "url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+          "title": "2024AI科学家：探索发现的新纪元",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }
@@ -1801,7 +1834,7 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "https://www.youtube.com/embed/5sLYAQS9sWQ",
+    "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
     "quote": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
     "quoteAttribution": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
     "quoteMeta": {
@@ -1849,14 +1882,14 @@ const milestones = [
       },
       "videos": [
         {
-          "id": "5sLYAQS9sWQ",
-          "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
-          "embed_url": "https://www.youtube.com/embed/5sLYAQS9sWQ",
-          "title": "How Large Language Models Work",
-          "channel": "IBM Technology",
-          "duration": "5:34",
-          "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg",
-          "source": "YouTube"
+          "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+          "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+          "title": "2025新AI竞技场：我们如何评判最强AI",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
         }
       ]
     }

@@ -4,18 +4,17 @@
   "year": 2018,
   "candidate_videos": [
     {
-      "id": "xI0HHN5XKDo",
-      "url": "https://www.youtube.com/watch?v=xI0HHN5XKDo",
-      "embed_url": "https://www.youtube.com/embed/xI0HHN5XKDo",
-      "title": "BERT ニューラル ネットワーク - 説明!",
-      "channel": "CodeEmporium",
-      "duration": "11:37",
-      "views": "485,422回視聴",
-      "thumbnail": "https://img.youtube.com/vi/xI0HHN5XKDo/maxresdefault.jpg",
-      "thumbnail_hq": "https://img.youtube.com/vi/xI0HHN5XKDo/hqdefault.jpg",
-      "source": "YouTube"
+      "id": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+      "url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+      "embed_url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+      "title": "2018BERT：自然语言处理的革命",
+      "channel": "",
+      "duration": "",
+      "thumbnail": "",
+      "thumbnail_hq": "",
+      "source": "Web"
     }
   ],
   "total_count": 1,
-  "created_at": "2026-03-13 09:05:38"
+  "created_at": "2026-04-28 02:22:40"
 }

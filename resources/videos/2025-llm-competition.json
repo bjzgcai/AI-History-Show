@@ -1,21 +1,20 @@
 {
   "event_id": "2025-llm-competition",
-  "event_title": "大预言模型百花齐放",
+  "event_title": "大语言模型百花齐放",
   "year": 2025,
   "candidate_videos": [
     {
-      "id": "5sLYAQS9sWQ",
-      "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
-      "embed_url": "https://www.youtube.com/embed/5sLYAQS9sWQ",
-      "title": "How Large Language Models Work",
-      "channel": "IBM Technology",
-      "duration": "5:34",
-      "views": "1,394,448回視聴",
-      "thumbnail": "https://img.youtube.com/vi/5sLYAQS9sWQ/maxresdefault.jpg",
-      "thumbnail_hq": "https://img.youtube.com/vi/5sLYAQS9sWQ/hqdefault.jpg",
-      "source": "YouTube"
+      "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+      "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+      "embed_url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+      "title": "2025新AI竞技场：我们如何评判最强AI",
+      "channel": "",
+      "duration": "",
+      "thumbnail": "",
+      "thumbnail_hq": "",
+      "source": "Web"
     }
   ],
   "total_count": 1,
-  "created_at": "2026-03-13 09:05:38"
+  "created_at": "2026-04-28 02:22:40"
 }

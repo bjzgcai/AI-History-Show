@@ -4,18 +4,17 @@
   "year": 2019,
   "candidate_videos": [
     {
-      "id": "ipRvjS7q1DI",
-      "url": "https://www.youtube.com/watch?v=ipRvjS7q1DI",
-      "embed_url": "https://www.youtube.com/embed/ipRvjS7q1DI",
-      "title": "Richard Feynman: Can Machines Think?",
-      "channel": "Lex Clips",
-      "duration": "18:27",
-      "views": "2,191,947回視聴",
-      "thumbnail": "https://img.youtube.com/vi/ipRvjS7q1DI/maxresdefault.jpg",
-      "thumbnail_hq": "https://img.youtube.com/vi/ipRvjS7q1DI/hqdefault.jpg",
-      "source": "YouTube"
+      "id": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+      "url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+      "embed_url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+      "title": "2019AI_Feynman：破解宇宙的密码",
+      "channel": "",
+      "duration": "",
+      "thumbnail": "",
+      "thumbnail_hq": "",
+      "source": "Web"
     }
   ],
   "total_count": 1,
-  "created_at": "2026-03-13 09:05:38"
+  "created_at": "2026-04-28 02:22:40"
 }
