@@ -42,7 +42,7 @@ module.exports = {
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
     ],
     "videos": [
-      "https://media.sciencearena.cn/video/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A1956%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9.mp4"
+      "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4"
     ],
     "imageMeta": {
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
@@ -91,7 +91,7 @@ module.exports = {
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png"
     ],
     "videos": [
-      "https://media.sciencearena.cn/video/%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4"
+      "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4"
     ],
     "imageMeta": {
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png": {
@@ -142,7 +142,7 @@ module.exports = {
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png"
     ],
     "videos": [
-      "w_v5lumtoPk"
+      "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4"
     ],
     "imageMeta": {
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
@@ -195,7 +195,7 @@ module.exports = {
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
     ],
     "videos": [
-      "tIeHLnjs5U8"
+      "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4"
     ],
     "imageMeta": {
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png": {
@@ -246,7 +246,7 @@ module.exports = {
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg"
     ],
     "videos": [
-      "FwFduRA_L6Q"
+      "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4"
     ],
     "imageMeta": {
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
@@ -292,7 +292,7 @@ module.exports = {
       "resources/images/1986-rnn/people/1986-rnn_people_01.png"
     ],
     "videos": [
-      "AsNTP8Kwu80"
+      "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4"
     ],
     "imageMeta": {
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
@@ -335,7 +335,7 @@ module.exports = {
       "resources/images/1997-lstm/people/1997-lstm_people_01.png"
     ],
     "videos": [
-      "b61DPVFX03I"
+      "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4"
     ],
     "imageMeta": {
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
@@ -382,7 +382,7 @@ module.exports = {
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
     ],
     "videos": [
-      "_zE4wYy-vjo"
+      "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4"
     ],
     "imageMeta": {
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
@@ -428,7 +428,7 @@ module.exports = {
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png"
     ],
     "videos": [
-      "CyoQ1FoUWdA"
+      "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4"
     ],
     "imageMeta": {
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
@@ -474,7 +474,7 @@ module.exports = {
       "resources/images/2015-resnet/people/2015-resnet_people_04.png"
     ],
     "videos": [
-      "o_3mboe1jYI"
+      "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4"
     ],
     "imageMeta": {
       "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
@@ -529,7 +529,7 @@ module.exports = {
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png"
     ],
     "videos": [
-      "hCg9bolMeJM"
+      "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4"
     ],
     "imageMeta": {
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
@@ -573,7 +573,9 @@ module.exports = {
     "images": [
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
     ],
-    "videos": [],
+    "videos": [
+      "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4"
+    ],
     "imageMeta": {
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
         "caption": "结构示意",
@@ -610,7 +612,7 @@ module.exports = {
       "resources/images/2014-attention/people/2014-attention_people_01.png"
     ],
     "videos": [
-      "eMlx5fFNoYc"
+      "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4"
     ],
     "imageMeta": {
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
@@ -648,7 +650,9 @@ module.exports = {
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
       "resources/images/2017-transformer/papers/2017-transformer_papers_01.png"
     ],
-    "videos": [],
+    "videos": [
+      "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4"
+    ],
     "imageMeta": {
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
         "caption": "结构示意",
@@ -694,7 +698,7 @@ module.exports = {
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
     ],
     "videos": [
-      "xI0HHN5XKDo"
+      "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4"
     ],
     "imageMeta": {
       "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
@@ -743,7 +747,7 @@ module.exports = {
       "resources/images/2018-gpt/people/2018-gpt_people_02.png"
     ],
     "videos": [
-      "OFS90-FX6pg"
+      "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4"
     ],
     "imageMeta": {
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
@@ -801,7 +805,9 @@ module.exports = {
       "resources/images/2023-agents/historical/2023-agents_historical_02.png",
       "resources/images/2023-agents/historical/2023-agents_historical_03.png"
     ],
-    "videos": [],
+    "videos": [
+      "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4"
+    ],
     "imageMeta": {
       "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
         "caption": "历史照片",
@@ -858,7 +864,7 @@ module.exports = {
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
     ],
     "videos": [
-      "5sLYAQS9sWQ"
+      "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4"
     ],
     "imageMeta": {
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
@@ -913,7 +919,7 @@ module.exports = {
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png"
     ],
     "videos": [
-      "P_fHJIYENdI"
+      "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4"
     ],
     "imageMeta": {
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
@@ -973,7 +979,7 @@ module.exports = {
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png"
     ],
     "videos": [
-      "ipRvjS7q1DI"
+      "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4"
     ],
     "imageMeta": {
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
@@ -1032,7 +1038,7 @@ module.exports = {
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png"
     ],
     "videos": [
-      "RLO4sfK37w4"
+      "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4"
     ],
     "imageMeta": {
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png": {
