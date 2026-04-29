@@ -99,19 +99,11 @@
         }
 
         .screen-left::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: none;
-            box-shadow: none;
+            content: none;
         }
 
         .screen-left::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-            background: none;
+            content: none;
         }
 
         .screen-right::before {
@@ -136,62 +128,87 @@
             --left-scale: calc(var(--screen-width) / 1920);
         }
 
+        .screen-right {
+            --left-unit-x: calc(var(--screen-width) / 1920);
+            --left-unit-y: calc(var(--screen-height) / 1080);
+            --left-scale: calc(var(--screen-width) / 1920);
+        }
+
         .left-topbar {
             position: absolute;
-            left: calc(48 * var(--left-unit-x));
-            top: calc(24 * var(--left-unit-y));
-            width: calc(1872.48 * var(--left-unit-x));
-            height: calc(88.39 * var(--left-unit-y));
+            left: calc(55 * var(--left-unit-x));
+            top: calc(30 * var(--left-unit-y));
+            width: calc(1810.11 * var(--left-unit-x));
+            height: calc(60.63 * var(--left-unit-y));
             display: grid;
             grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
             align-items: start;
             gap: calc(14 * var(--left-unit-x));
-            padding-top: calc(2 * var(--left-unit-y));
-            padding-bottom: calc(18 * var(--left-unit-y));
-            border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+            padding: 0;
+            border-bottom: none;
             z-index: 5;
+        }
+
+        .left-topbar::after {
+            content: "历史  HISTORY";
+            position: absolute;
+            right: 0;
+            top: calc(-1 * var(--left-unit-y));
+            color: #797a7a;
+            font-size: calc(25 * var(--left-scale));
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0;
+            white-space: nowrap;
         }
 
         .brand-lockup {
             min-width: 0;
             display: flex;
-            flex-direction: column;
-            gap: calc(2 * var(--left-unit-y));
+            align-items: flex-start;
         }
 
-        .brand-cn {
-            font-size: calc(12 * var(--left-scale));
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            white-space: nowrap;
-            line-height: 1.15;
-        }
-
-        .brand-en {
-            font-size: calc(7 * var(--left-scale));
-            color: var(--text-muted);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            white-space: nowrap;
-            line-height: 1.15;
+        .brand-lockup img {
+            display: block;
+            width: auto;
+            height: calc(34 * var(--left-unit-y));
+            max-width: calc(520 * var(--left-unit-x));
+            object-fit: contain;
         }
 
         .left-kicker {
             justify-self: center;
             align-self: start;
-            margin-top: calc(52 * var(--left-unit-y));
-            font-size: calc(15 * var(--left-scale));
-            font-weight: 600;
+            margin-top: calc(14 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(18 * var(--left-scale));
+            font-weight: 700;
             line-height: 1.1;
-            color: rgba(244, 239, 229, 0.9);
-            letter-spacing: 0.08em;
+            letter-spacing: 0;
             white-space: nowrap;
         }
 
         .left-body {
             position: absolute;
-            inset: 0;
+            left: 0;
+            top: 0;
+            width: var(--screen-width);
+            height: var(--screen-height);
             z-index: 3;
+            overflow: hidden;
+        }
+
+        .left-body::before {
+            content: "";
+            position: absolute;
+            left: calc(58 * var(--left-unit-x));
+            top: calc(105 * var(--left-unit-y));
+            width: calc(1809 * var(--left-unit-x));
+            height: calc(825 * var(--left-unit-y));
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: calc(10 * var(--left-scale));
+            background: #111;
+            pointer-events: none;
         }
 
         .hero-panel,
@@ -209,20 +226,27 @@
 
         .hero-panel {
             z-index: 4;
+            pointer-events: none;
         }
 
         .narrative-panel {
-            z-index: 2;
+            z-index: 5;
+            inset: auto;
+            left: calc(58 * var(--left-unit-x));
+            top: calc(105 * var(--left-unit-y));
+            width: calc(1809 * var(--left-unit-x));
+            height: calc(825 * var(--left-unit-y));
             overflow: hidden;
+            pointer-events: none;
         }
 
         .hero-years {
             position: absolute;
-            left: calc(103 * var(--left-unit-x));
-            top: calc(167 * var(--left-unit-y));
+            left: calc(82 * var(--left-unit-x));
+            top: calc(191 * var(--left-unit-y));
             display: flex;
-            gap: calc(52 * var(--left-unit-x));
-            color: rgba(244, 221, 221, 0.34);
+            gap: calc(58 * var(--left-unit-x));
+            color: rgba(244, 239, 229, 0.28);
             font-size: calc(24 * var(--left-scale));
             font-weight: 700;
             letter-spacing: 0.05em;
@@ -232,14 +256,14 @@
 
         .hero-year {
             position: absolute;
-            left: calc(397.17 * var(--left-unit-x));
-            top: calc(155 * var(--left-unit-y));
+            left: calc(430 * var(--left-unit-x));
+            top: calc(120.4 * var(--left-unit-y));
             margin-top: 0;
-            font-size: calc(108 * var(--left-scale));
+            font-size: calc(94.6 * var(--left-scale));
             line-height: 1;
-            font-weight: 800;
+            font-weight: 500;
             color: var(--accent);
-            letter-spacing: -0.06em;
+            letter-spacing: -0.03em;
             text-shadow: 0 0 24px rgba(246, 137, 0, 0.16);
             white-space: nowrap;
         }
@@ -253,14 +277,15 @@
 
         .globe-stage {
             position: absolute;
-            left: calc(218 * var(--left-unit-x));
-            top: calc(466 * var(--left-unit-y));
-            width: calc(372.48 * var(--left-unit-x));
-            height: calc(372.72 * var(--left-unit-y));
+            left: calc(89 * var(--left-unit-x));
+            top: calc(319 * var(--left-unit-y));
+            width: calc(542 * var(--left-unit-x));
+            height: calc(542 * var(--left-unit-y));
             display: flex;
             align-items: center;
             justify-content: center;
             filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.24));
+            pointer-events: auto;
         }
 
         .globe-shell {
@@ -279,6 +304,12 @@
                 0 0 44px rgba(56, 112, 180, 0.16),
                 0 0 96px rgba(246, 137, 0, 0.06),
                 inset 0 0 26px rgba(8, 18, 36, 0.34);
+            cursor: grab;
+            touch-action: none;
+        }
+
+        .globe-shell.is-dragging {
+            cursor: grabbing;
         }
 
         .globe-shell.globe-shell-figma {
@@ -390,14 +421,7 @@
         }
 
         .left-screen-divider {
-            position: absolute;
-            left: calc(1761 * var(--left-unit-x));
-            top: 0;
-            bottom: 0;
-            width: max(1px, calc(1.2 * var(--left-scale)));
-            background: rgba(255, 255, 255, 0.92);
-            pointer-events: none;
-            z-index: 12;
+            display: none;
         }
 
         .orbit-overlay svg {
@@ -422,7 +446,7 @@
 
         .orbit-ring {
             fill: none;
-            stroke: rgba(255, 87, 44, 0.92);
+            stroke: var(--accent);
             stroke-width: 2.3;
             stroke-linecap: round;
             opacity: 0;
@@ -430,41 +454,30 @@
         }
 
         .orbit-start-dot {
-            fill: #ff5a34;
-            stroke: rgba(255, 255, 255, 0.76);
-            stroke-width: 1.2;
+            fill: var(--accent);
+            stroke: none;
         }
 
         .orbit-dot {
             fill: var(--accent);
-            stroke: rgba(255, 255, 255, 0.76);
-            stroke-width: 1.2;
+            stroke: none;
             opacity: 0;
             transition: opacity 0.2s ease;
         }
 
         .left-bottom-year {
-            position: absolute;
-            left: calc(506 * var(--left-unit-x));
-            top: calc(944 * var(--left-unit-y));
-            width: calc(97 * var(--left-unit-x));
-            text-align: center;
-            font-size: calc(32 * var(--left-scale));
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            color: rgba(244, 239, 229, 0.92);
-            line-height: 1;
+            display: none;
         }
 
         .ghost-years {
             position: absolute;
-            left: calc(1274 * var(--left-unit-x));
-            top: calc(167 * var(--left-unit-y));
-            width: calc(410 * var(--left-unit-x));
+            left: calc(1212 * var(--left-unit-x));
+            top: calc(85 * var(--left-unit-y));
+            width: calc(560 * var(--left-unit-x));
             display: flex;
             justify-content: space-between;
             gap: calc(34 * var(--left-unit-x));
-            color: rgba(244, 239, 229, 0.26);
+            color: rgba(244, 239, 229, 0.24);
             font-size: calc(24 * var(--left-scale));
             font-weight: 700;
             letter-spacing: 0.04em;
@@ -474,9 +487,9 @@
 
         .summary-card {
             position: absolute;
-            left: calc(706 * var(--left-unit-x));
-            top: calc(136 * var(--left-unit-y));
-            width: calc(533 * var(--left-unit-x));
+            left: calc(657 * var(--left-unit-x));
+            top: calc(19 * var(--left-unit-y));
+            width: calc(620 * var(--left-unit-x));
             margin-top: 0;
         }
 
@@ -485,28 +498,31 @@
         }
 
         .summary-title {
-            margin-top: 0;
-            font-size: calc(22 * var(--left-scale));
-            line-height: 1.18;
+            margin-top: calc(58 * var(--left-unit-y));
+            font-size: calc(36 * var(--left-scale));
+            line-height: 1.1;
             font-weight: 700;
-            max-width: calc(533 * var(--left-unit-x));
+            color: var(--accent);
+            max-width: calc(620 * var(--left-unit-x));
         }
 
         .summary-location {
-            margin-top: calc(8 * var(--left-unit-y));
-            color: rgba(244, 239, 229, 0.82);
-            font-size: calc(12 * var(--left-scale));
-            line-height: 1.45;
-            font-weight: 600;
-            letter-spacing: 0.03em;
+            margin-top: calc(20 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(20 * var(--left-scale));
+            line-height: 1.25;
+            font-weight: 700;
+            letter-spacing: 0;
         }
 
         .summary-body {
-            margin-top: calc(24 * var(--left-unit-y));
-            color: rgba(244, 239, 229, 0.82);
-            font-size: calc(12 * var(--left-scale));
-            line-height: 1.55;
-            max-width: calc(278 * var(--left-unit-x));
+            margin-top: calc(54 * var(--left-unit-y));
+            color: rgba(244, 239, 229, 0.9);
+            font-size: calc(22 * var(--left-scale));
+            line-height: 1.42;
+            max-width: calc(560 * var(--left-unit-x));
+            max-height: calc(238 * var(--left-unit-y));
+            overflow: hidden;
         }
 
         .summary-body p {
@@ -517,15 +533,51 @@
             margin-bottom: 0;
         }
 
+        .screen-left .summary-card,
+        .screen-left .archive-strip,
+        .screen-left .hero-year,
+        .screen-left .ghost-years {
+            transition:
+                left 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+                top 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+                opacity 0.32s ease,
+                transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .screen-left.is-detail-view .hero-year {
+            top: calc(138 * var(--left-unit-y));
+        }
+
+        .screen-left.is-detail-view .ghost-years {
+            opacity: 0.55;
+        }
+
+        .screen-left.is-detail-view .summary-card {
+            top: calc(701 * var(--left-unit-y));
+            transform: translateY(0);
+        }
+
+        .screen-left.is-detail-view .summary-body {
+            max-width: calc(480 * var(--left-unit-x));
+            color: rgba(244, 239, 229, 0.66);
+        }
+
+        .screen-left.is-detail-view .archive-strip {
+            top: calc(563 * var(--left-unit-y));
+            transform: none;
+            opacity: 0.86;
+        }
+
         .archive-strip {
             position: absolute;
-            left: calc(719.76 * var(--left-unit-x));
-            top: calc(174 * var(--left-unit-y));
-            width: calc(824 * var(--left-unit-x));
-            height: calc(732 * var(--left-unit-y));
+            left: calc(672 * var(--left-unit-x));
+            top: calc(545 * var(--left-unit-y));
+            width: calc(920 * var(--left-unit-x));
+            height: calc(255 * var(--left-unit-y));
             min-height: 0;
             display: block;
             padding-bottom: 0;
+            pointer-events: auto;
         }
 
         .left-archive-card {
@@ -549,25 +601,25 @@
 
         .left-archive-card.paper {
             position: absolute;
-            left: calc(20.52 * var(--left-unit-x));
-            top: calc(394.83 * var(--left-unit-y));
-            width: calc(188.16 * var(--left-unit-x));
-            height: calc(169.68 * var(--left-unit-y));
+            left: calc(0 * var(--left-unit-x));
+            top: calc(18 * var(--left-unit-y));
+            width: calc(180 * var(--left-unit-x));
+            height: calc(188 * var(--left-unit-y));
             background: #f1ede4;
             z-index: 1;
         }
 
         .left-archive-card.primary {
             position: absolute;
-            left: calc(223.27 * var(--left-unit-x));
-            top: calc(368 * var(--left-unit-y));
-            width: calc(305.4 * var(--left-unit-x));
-            height: calc(328.04 * var(--left-unit-y));
+            left: calc(330 * var(--left-unit-x));
+            top: calc(0 * var(--left-unit-y));
+            width: calc(286 * var(--left-unit-x));
+            height: calc(252 * var(--left-unit-y));
             background: #f6f2ea;
             padding:
-                calc(50.39 * var(--left-unit-y))
+                calc(42 * var(--left-unit-y))
                 calc(9.9 * var(--left-unit-x))
-                calc(50.46 * var(--left-unit-y))
+                calc(42 * var(--left-unit-y))
                 calc(11.9 * var(--left-unit-x));
             transform: rotate(7.98deg);
             z-index: 2;
@@ -575,10 +627,10 @@
 
         .left-archive-card.secondary {
             position: absolute;
-            left: calc(505.52 * var(--left-unit-x));
-            top: calc(445.55 * var(--left-unit-y));
-            width: calc(314.66 * var(--left-unit-x));
-            height: calc(225.9 * var(--left-unit-y));
+            left: calc(690 * var(--left-unit-x));
+            top: calc(30 * var(--left-unit-y));
+            width: calc(270 * var(--left-unit-x));
+            height: calc(210 * var(--left-unit-y));
             background: #ece7dd;
             border: calc(10 * var(--left-unit-x)) solid #ece7dd;
             transform: rotate(-4.52deg);
@@ -597,36 +649,112 @@
             text-transform: uppercase;
         }
 
-        .left-timeline {
+        .left-timeline,
+        .right-timeline {
             position: absolute;
-            left: calc(102 * var(--left-unit-x));
-            top: calc(985 * var(--left-unit-y));
-            width: calc(1681.69 * var(--left-unit-x));
-            height: calc(32.97 * var(--left-unit-y));
+            left: calc(57 * var(--left-unit-x));
+            top: calc(958 * var(--left-unit-y));
+            width: calc(1811 * var(--left-unit-x));
+            height: calc(87 * var(--left-unit-y));
             padding-top: 0;
             border-top: none;
             z-index: 4;
         }
 
+        .left-timeline::before,
+        .right-timeline::before {
+            content: "Timeline";
+            position: absolute;
+            left: calc(70.33 * var(--left-unit-x));
+            top: calc(-0.58 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(23 * var(--left-scale));
+            font-weight: 700;
+        }
+
+        .left-timeline::after,
+        .right-timeline::after {
+            content: attr(data-title);
+            position: absolute;
+            left: calc(1502 * var(--left-unit-x));
+            right: auto;
+            top: calc(3 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(20 * var(--left-scale));
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .left-timeline-nav,
+        .right-timeline-nav {
+            position: absolute;
+            top: calc(2.86 * var(--left-unit-y));
+            width: calc(48.23 * var(--left-unit-x));
+            height: calc(79.2 * var(--left-unit-y));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: calc(8 * var(--left-scale));
+            background: #151515;
+            color: rgba(244, 239, 229, 0.74);
+            font-size: calc(38 * var(--left-scale));
+            line-height: 1;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            z-index: 7;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+
+        .left-timeline-nav:hover:not(:disabled),
+        .right-timeline-nav:hover:not(:disabled) {
+            color: #fff;
+        }
+
+        .left-timeline-nav:disabled,
+        .right-timeline-nav:disabled {
+            opacity: 0.38;
+            cursor: default;
+        }
+
+        .left-timeline-prev,
+        .right-timeline-prev {
+            left: 0;
+        }
+
+        .left-timeline-next,
+        .right-timeline-next {
+            right: 0;
+        }
+
         .timeline-track {
-            position: relative;
-            width: 100%;
-            height: 100%;
+            position: absolute;
+            left: calc(74.74 * var(--left-unit-x));
+            top: calc(31.9 * var(--left-unit-y));
+            width: calc(1667.62 * var(--left-unit-x));
+            height: calc(54.15 * var(--left-unit-y));
             display: grid;
             grid-auto-flow: column;
             grid-auto-columns: minmax(0, 1fr);
             align-items: end;
             gap: 0;
+            cursor: grab;
+            touch-action: none;
+        }
+
+        .timeline-track.is-dragging {
+            cursor: grabbing;
         }
 
         .timeline-track::before {
             content: "";
             position: absolute;
-            inset: 0;
+            left: 0;
+            right: 0;
+            top: calc(24.15 * var(--left-unit-y));
+            height: calc(3.5 * var(--left-unit-y));
             background: repeating-linear-gradient(
                 90deg,
-                rgba(255, 255, 255, 0.42) 0 1px,
-                transparent 1px calc(11.93 * var(--left-unit-x))
+                rgba(255, 255, 255, 0.42) 0 max(1px, calc(1 * var(--left-unit-x))),
+                transparent max(1px, calc(1 * var(--left-unit-x))) calc(11.93 * var(--left-unit-x))
             );
             opacity: 0.56;
             pointer-events: none;
@@ -643,7 +771,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
-            gap: calc(4 * var(--left-unit-y));
+            gap: calc(4.5 * var(--left-unit-y));
             min-width: 0;
             padding: 0;
         }
@@ -651,21 +779,23 @@
         .timeline-tick::before {
             content: "";
             width: 1px;
-            height: calc(12 * var(--left-unit-y));
+            height: calc(14.15 * var(--left-unit-y));
             background: rgba(255, 255, 255, 0.62);
             transition: height 0.25s ease, background 0.25s ease;
         }
 
         .timeline-tick span {
-            font-size: 0;
-            color: rgba(255, 255, 255, 0.42);
-            transition: color 0.25s ease, transform 0.25s ease;
+            font-size: calc(11.5 * var(--left-scale));
+            line-height: 1;
+            color: #797a7a;
+            transform-origin: center bottom;
+            transition: color 0.25s ease, font-size 0.25s ease;
             white-space: nowrap;
         }
 
         .timeline-tick.active::before,
         .timeline-tick:hover::before {
-            height: calc(20 * var(--left-unit-y));
+            height: calc(14.15 * var(--left-unit-y));
             background: var(--accent);
         }
 
@@ -675,77 +805,50 @@
         }
 
         .timeline-tick.active span {
-            color: transparent;
-            transform: none;
+            color: var(--accent);
+            font-size: calc(18 * var(--left-scale));
         }
 
         .right-topbar {
             position: absolute;
-            left: 48px;
-            right: 0;
-            top: 24px;
-            height: 88.39px;
+            left: 55px;
+            right: 55px;
+            top: 30px;
+            height: 60.63px;
             z-index: 4;
         }
 
         .right-topbar::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 1px;
-            background: rgba(255, 255, 255, 0.44);
-        }
-
-        .right-topbar::after {
             content: none;
         }
 
-        .right-return {
+        .right-brand {
             position: absolute;
             left: 0;
-            top: 38px;
-            width: 72px;
-            height: 23px;
+            top: 0;
+            min-width: 0;
             display: flex;
-            align-items: center;
-            gap: 16px;
-            z-index: 2;
+            align-items: flex-start;
         }
 
-        .return-button {
-            width: 18px;
-            height: 18px;
-            border: none;
-            padding: 0;
-            background: transparent;
-            color: rgba(244, 239, 229, 0.74);
-            cursor: pointer;
-            transition: color 0.2s ease, opacity 0.2s ease;
-        }
-
-        .return-button:hover:not(:disabled) {
-            color: var(--accent);
-        }
-
-        .return-button:disabled {
-            color: rgba(244, 239, 229, 0.26);
-            cursor: default;
-        }
-
-        .return-button svg {
-            width: 18px;
-            height: 18px;
+        .right-brand img {
             display: block;
+            width: auto;
+            height: 34px;
+            max-width: 520px;
+            object-fit: contain;
         }
 
-        .return-button path {
-            stroke: currentColor;
-            stroke-width: 1.8;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+        .right-topbar::after {
+            content: "历史  HISTORY";
+            position: absolute;
+            right: 0;
+            top: -1px;
+            color: #797a7a;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 1;
+            white-space: nowrap;
         }
 
         .right-section-headings {
@@ -756,24 +859,39 @@
 
         .section-heading {
             position: absolute;
-            top: 55px;
-            text-align: center;
-            font-size: 15px;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            color: rgba(244, 239, 229, 0.9);
-            text-transform: uppercase;
+            text-align: left;
+            font-size: 0;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: var(--accent);
+            text-transform: none;
             white-space: nowrap;
         }
 
+        .section-heading::before {
+            font-size: 20px;
+            line-height: 1;
+        }
+
         .section-heading:nth-child(1) {
-            left: 793px;
-            width: 286px;
+            left: 25px;
+            top: 82px;
+            width: 600px;
+        }
+
+        .section-heading:nth-child(1)::before {
+            content: "AI创世纪";
+            font-size: 14px;
         }
 
         .section-heading:nth-child(2) {
-            left: 1145px;
-            width: 285px;
+            left: 1216px;
+            top: 82px;
+            width: 300px;
+        }
+
+        .section-heading:nth-child(2)::before {
+            content: "评论与媒体";
         }
 
         .right-body {
@@ -784,58 +902,63 @@
 
         .archive-column {
             position: absolute;
-            left: 68px;
-            top: 122px;
-            width: 1042px;
-            height: 857px;
+            left: 54px;
+            top: 105px;
+            width: 1176px;
+            height: 825px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            background: #111;
         }
 
         .archive-header {
             position: absolute;
-            left: 0;
+            left: 24px;
             top: 0;
-            width: 881px;
-            height: 274px;
+            width: 1098px;
+            height: 168px;
         }
 
         .archive-header h2 {
             position: absolute;
             left: 0;
-            top: 0;
-            width: 881px;
-            font-size: 21px;
-            line-height: 1.28;
+            top: 36px;
+            width: 740px;
+            font-size: 48px;
+            line-height: 1.08;
             font-weight: 700;
-            color: rgba(255, 255, 255, 0.98);
+            color: var(--accent);
         }
 
         .panel-year {
             position: absolute;
-            left: 0;
-            top: 44px;
+            left: 915px;
+            right: auto;
+            top: 0;
             margin-top: 0;
             color: var(--accent);
-            font-size: 42px;
-            font-weight: 700;
+            font-size: 94.6px;
+            font-weight: 500;
             line-height: 1;
             letter-spacing: -0.02em;
         }
 
         .figure-row {
             position: absolute;
-            left: 0;
-            top: 108px;
-            width: 881px;
-            height: 92px;
+            left: 24px;
+            top: 155px;
+            width: 823px;
+            height: 81px;
         }
 
         .figure-chip {
             position: absolute;
             display: grid;
-            grid-template-columns: 60px minmax(0, 1fr);
-            gap: 18px;
+            grid-template-columns: 80px minmax(0, 1fr);
+            gap: 16px;
             align-items: center;
-            width: 252px;
+            width: 240px;
             min-width: 0;
         }
 
@@ -845,18 +968,18 @@
         }
 
         .figure-chip:nth-child(2) {
-            left: 302px;
+            left: 300px;
             top: 0;
         }
 
         .figure-chip:nth-child(3) {
-            left: 604px;
+            left: 612px;
             top: 0;
         }
 
         .figure-avatar {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.04);
             border: none;
@@ -866,7 +989,7 @@
             color: rgba(255, 255, 255, 0.78);
             font-size: 14px;
             font-weight: 700;
-            filter: grayscale(1);
+            filter: grayscale(0.1);
             letter-spacing: 0.08em;
         }
 
@@ -874,7 +997,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(1) contrast(1.04);
+            filter: grayscale(0.1);
             object-position: center center;
         }
 
@@ -884,7 +1007,7 @@
         }
 
         .figure-name {
-            font-size: 11px;
+            font-size: 15px;
             line-height: 1.18;
             color: rgba(244, 239, 229, 0.62);
         }
@@ -892,16 +1015,22 @@
         .figure-role {
             margin-top: 3px;
             color: rgba(244, 239, 229, 0.5);
-            font-size: 11px;
+            font-size: 15px;
             line-height: 1.18;
         }
 
         .archive-stage {
             position: absolute;
-            left: 0;
-            top: 314px;
-            width: 1042px;
-            height: 543px;
+            left: 23px;
+            top: 301px;
+            width: 1122px;
+            height: 411px;
+            cursor: grab;
+            touch-action: pan-y;
+        }
+
+        .archive-stage.is-dragging {
+            cursor: grabbing;
         }
 
         .archive-stage::before,
@@ -987,12 +1116,12 @@
             height: 100%;
             object-fit: cover;
             background: #111;
-            filter: grayscale(1) contrast(1.06);
+            filter: grayscale(0.1);
         }
 
         .archive-card-left {
             left: 0;
-            top: 204.2px;
+            top: 109px;
             width: 228.48px;
         }
 
@@ -1021,40 +1150,40 @@
         }
 
         .archive-card-main .archive-focus {
-            width: 396.06px;
-            height: 296.24px;
+            width: 464.94px;
+            height: 347.76px;
             background: #f4f0e8;
             border: 12px solid #f4f0e8;
             box-shadow: 0 18px 44px rgba(0, 0, 0, 0.3);
         }
 
         .archive-card-main {
-            left: 258.96px;
-            top: 76.57px;
-            width: 396.06px;
+            left: 260px;
+            top: 31px;
+            width: 464.94px;
         }
 
         .archive-card-main::before {
             content: "";
             position: absolute;
-            left: -9.44px;
-            top: -76.57px;
-            width: 409px;
-            height: 449.7px;
+            left: -9px;
+            top: -32px;
+            width: 480px;
+            height: 411px;
             background: rgba(255, 255, 255, 0.96);
             z-index: -1;
         }
 
         .archive-card-main .archive-card-caption {
             position: absolute;
-            left: -12px;
-            top: 399.43px;
+            left: 0;
+            top: 426px;
             width: 334px;
         }
 
         .archive-card-right {
-            left: 695.42px;
-            top: 171.99px;
+            left: 751px;
+            top: 112px;
             width: 328.95px;
         }
 
@@ -1079,7 +1208,7 @@
         .archive-card-right .archive-card-caption {
             position: absolute;
             left: 0;
-            top: 304.01px;
+            top: 313px;
             width: 284px;
         }
 
@@ -1113,7 +1242,7 @@
 
         .archive-caption {
             color: var(--accent);
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 1.12;
         }
@@ -1121,18 +1250,18 @@
         .archive-subcaption {
             margin-top: 3px;
             color: var(--accent);
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.12;
             font-weight: 700;
         }
 
         .archive-bottomline {
             position: absolute;
-            left: 259px;
-            top: 516px;
+            left: 24px;
+            top: 789px;
             width: 396px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .archive-dots {
@@ -1159,10 +1288,15 @@
 
         .commentary-column {
             position: absolute;
-            left: 1191px;
-            top: 166px;
-            width: 606px;
-            height: 851px;
+            left: 1247px;
+            top: 105px;
+            width: 618px;
+            height: 825px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            background: #111;
+            padding: 68px 23px 23px 24px;
         }
 
         .commentary-column::before {
@@ -1171,14 +1305,14 @@
 
         .media-frame {
             position: relative;
-            width: 606px;
+            width: 570px;
             height: 100%;
         }
 
         .video-frame {
             position: relative;
-            width: 605.62px;
-            height: 341.32px;
+            width: 570px;
+            height: 312px;
             background: #0b0b0b;
             overflow: hidden;
         }
@@ -1186,10 +1320,10 @@
         .video-frame::before {
             content: "";
             position: absolute;
-            left: 6.99px;
-            top: 4.26px;
-            width: 591.64px;
-            height: 332.8px;
+            left: 0;
+            top: 0;
+            width: 570px;
+            height: 304px;
             box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.62);
             pointer-events: none;
             z-index: 3;
@@ -1214,10 +1348,10 @@
         .video-frame iframe,
         .video-frame video {
             position: absolute;
-            left: 6.99px;
-            top: 4.26px;
-            width: 591.64px;
-            height: 332.8px;
+            left: 0;
+            top: 0;
+            width: 570px;
+            height: 304px;
             background: #000;
         }
 
@@ -1351,12 +1485,14 @@
 
         .commentary-list {
             position: absolute;
-            left: 12px;
-            top: 374px;
-            width: 494px;
-            height: 431px;
+            left: 0;
+            top: 344px;
+            width: 570px;
+            height: 414px;
             overflow: auto;
-            padding: 0 6px 0 0;
+            padding: 0;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
         }
 
         .commentary-list::-webkit-scrollbar {
@@ -1364,28 +1500,31 @@
         }
 
         .commentary-list::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 999px;
         }
 
         .commentary-item {
-            padding-bottom: 24px;
-            margin-bottom: 10px;
+            padding: 23px;
+            margin-bottom: 11px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.025);
         }
 
         .commentary-label {
-            margin-bottom: 9px;
-            color: rgba(255, 255, 255, 0.96);
-            font-size: 15px;
+            margin-bottom: 16px;
+            color: var(--accent);
+            font-size: 12px;
             font-weight: 700;
             line-height: 1.05;
             letter-spacing: 0.01em;
         }
 
         .commentary-body {
-            max-width: 482px;
-            color: rgba(244, 239, 229, 0.68);
-            font-size: 12px;
-            line-height: 1.78;
+            max-width: 520px;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 15px;
+            line-height: 1.42;
         }
 
         .commentary-body p {
@@ -1397,13 +1536,7 @@
         }
 
         .right-scale {
-            position: absolute;
-            right: 37px;
-            top: 146px;
-            bottom: 21px;
-            width: 16px;
-            pointer-events: none;
-            z-index: 4;
+            display: none;
         }
 
         .right-scale::before {
@@ -1434,13 +1567,7 @@
 
         .right-center-divider,
         .right-side-divider {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background: rgba(255, 255, 255, 0.92);
-            pointer-events: none;
-            z-index: 4;
+            display: none;
         }
 
         .right-center-divider {
@@ -1451,33 +1578,8 @@
             left: 1821px;
         }
 
-        .right-footer {
-            position: absolute;
-            left: 68px;
-            right: 123px;
-            bottom: 14px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 14px;
-            color: rgba(244, 239, 229, 0.28);
-            font-size: 8px;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            z-index: 4;
-        }
-
-        .status-cluster {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            min-width: 0;
-        }
-
         .counter {
-            color: rgba(255, 255, 255, 0.54);
-            min-width: 48px;
-            text-align: center;
+            display: none;
         }
 
         .photo-viewer {
@@ -1546,11 +1648,10 @@
 <body>
     <div class="stage-viewport">
         <div class="dual-stage" id="dualStage">
-            <section class="screen screen-left">
+            <section class="screen screen-left" id="leftScreen">
                 <header class="left-topbar">
                     <div class="brand-lockup">
-                        <div class="brand-cn">北京中关村学院 × 中关村人工智能研究院</div>
-                        <div class="brand-en">Zhongguancun Academy × Zhongguancun Institute of Artificial Intelligence</div>
+                        <img src="resources/images/ui/brand.png" alt="北京中关村学院 × 中关村人工智能研究院">
                     </div>
                     <div class="left-kicker" id="leftKicker">AI创世纪</div>
                     <div></div>
@@ -1564,8 +1665,8 @@
                         <div class="globe-zone" id="globeStage">
                             <div class="orbit-overlay">
                                 <svg viewBox="0 0 1920 1080" preserveAspectRatio="none">
-                                    <path id="orbitPath" class="orbit-ring" d="M372.41 246.52 C296 356, 276 504, 416.41 611.38"></path>
-                                    <circle class="orbit-start-dot" cx="372.41" cy="246.52" r="7.52"></circle>
+                                    <path id="orbitPath" class="orbit-ring" d="M541 225 C465 356, 276 504, 416.41 611.38"></path>
+                                    <circle class="orbit-start-dot" cx="541" cy="225" r="7.52"></circle>
                                     <circle id="orbitDot" class="orbit-dot" cx="416.41" cy="611.38" r="7.52"></circle>
                                 </svg>
                             </div>
@@ -1592,7 +1693,9 @@
                 </div>
 
                 <footer class="left-timeline">
+                    <button class="left-timeline-nav left-timeline-prev" id="leftTimelinePrev" type="button" aria-label="上一页">‹</button>
                     <div class="timeline-track" id="timelineTrack"></div>
+                    <button class="left-timeline-nav left-timeline-next" id="leftTimelineNext" type="button" aria-label="下一页">›</button>
                 </footer>
 
                 <div class="left-screen-divider" aria-hidden="true"></div>
@@ -1600,17 +1703,8 @@
 
             <section class="screen screen-right">
                 <header class="right-topbar">
-                    <div class="right-return">
-                        <button class="return-button" id="topPrevBtn" type="button" aria-label="上一页">
-                            <svg viewBox="0 0 18 18" aria-hidden="true">
-                                <path d="M11.5 3.5 L5.5 9 L11.5 14.5"></path>
-                            </svg>
-                        </button>
-                        <button class="return-button" id="topNextBtn" type="button" aria-label="下一页">
-                            <svg viewBox="0 0 18 18" aria-hidden="true">
-                                <path d="M6.5 3.5 L12.5 9 L6.5 14.5"></path>
-                            </svg>
-                        </button>
+                    <div class="right-brand">
+                        <img src="resources/images/ui/brand.png" alt="北京中关村学院 × 中关村人工智能研究院">
                     </div>
                     <div class="right-section-headings">
                         <div class="section-heading">Key Figures & Archive</div>
@@ -1627,7 +1721,7 @@
 
                         <div class="figure-row" id="figureRow"></div>
 
-                        <div class="archive-stage">
+                        <div class="archive-stage" id="archiveStage">
                             <article class="archive-card archive-card-left">
                                 <button class="archive-thumb" id="archiveThumbPrev" type="button" data-empty-label="暂无图片"></button>
                                 <div class="archive-card-caption">
@@ -1689,11 +1783,10 @@
                 </div>
                 <div class="right-side-divider" aria-hidden="true"></div>
 
-                <footer class="right-footer">
-                    <div class="status-cluster">
-                        <div id="statusText">双屏展陈模式</div>
-                        <div class="counter" id="counterText">1 / 21</div>
-                    </div>
+                <footer class="right-timeline">
+                    <button class="right-timeline-nav right-timeline-prev" id="topPrevBtn" type="button" aria-label="上一页">‹</button>
+                    <div class="timeline-track" id="rightTimelineTrack"></div>
+                    <button class="right-timeline-nav right-timeline-next" id="topNextBtn" type="button" aria-label="下一页">›</button>
                 </footer>
             </section>
         </div>
@@ -1743,7 +1836,7 @@
         };
         const GLOBE_CAM_RADIUS = 2.06;
         const GLOBE_HALO_RADIUS = 1.02;
-        const LEFT_ORBIT_START = { x: 372.41, y: 246.52 };
+        const LEFT_ORBIT_START = { x: 541, y: 225 };
         const LEFT_ORBIT_DEFAULT_DOT = { x: 416.41, y: 611.38 };
         const LEFT_ORBIT_FIGMA_DOT = { x: 408.89, y: 603.86 };
         const randomPhi = Math.PI * (0.25 + Math.random() * 0.5);
@@ -1754,9 +1847,11 @@
         let globeArrived = false;
         let markerFlashDone = false;
         let globeLastFrameTime = 0;
+        let isLeftDetailView = false;
 
         const refs = {
             stage: document.getElementById('dualStage'),
+            leftScreen: document.getElementById('leftScreen'),
             leftKicker: document.getElementById('leftKicker'),
             heroYears: document.getElementById('heroYears'),
             heroYear: document.getElementById('heroYear'),
@@ -1768,11 +1863,17 @@
             summaryBody: document.getElementById('summaryBody'),
             leftArchiveStrip: document.getElementById('leftArchiveStrip'),
             timelineTrack: document.getElementById('timelineTrack'),
+            rightTimelineTrack: document.getElementById('rightTimelineTrack'),
+            leftTimelinePrev: document.getElementById('leftTimelinePrev'),
+            leftTimelineNext: document.getElementById('leftTimelineNext'),
+            leftTimeline: document.querySelector('.left-timeline'),
+            rightTimeline: document.querySelector('.right-timeline'),
             archiveTitle: document.getElementById('archiveTitle'),
             archiveYear: document.getElementById('archiveYear'),
             figureRow: document.getElementById('figureRow'),
             archiveThumbPrev: document.getElementById('archiveThumbPrev'),
             archiveThumbNext: document.getElementById('archiveThumbNext'),
+            archiveStage: document.getElementById('archiveStage'),
             archiveFocusButton: document.getElementById('archiveFocusButton'),
             archiveFocus: document.getElementById('archiveFocus'),
             archivePrevCaption: document.getElementById('archivePrevCaption'),
@@ -1787,8 +1888,6 @@
             videoQuote: document.getElementById('videoQuote'),
             mediaTimecode: document.getElementById('mediaTimecode'),
             commentaryList: document.getElementById('commentaryList'),
-            statusText: document.getElementById('statusText'),
-            counterText: document.getElementById('counterText'),
             topPrevBtn: document.getElementById('topPrevBtn'),
             topNextBtn: document.getElementById('topNextBtn'),
             rightScaleProgress: document.getElementById('rightScaleProgress'),
@@ -2291,7 +2390,7 @@
         function setStaticGlobeFocus() {
             refs.orbitPath.setAttribute(
                 'd',
-                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C296 356, 276 504, ${LEFT_ORBIT_FIGMA_DOT.x} ${LEFT_ORBIT_FIGMA_DOT.y}`
+                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C465 356, 276 504, ${LEFT_ORBIT_FIGMA_DOT.x} ${LEFT_ORBIT_FIGMA_DOT.y}`
             );
             refs.orbitDot.setAttribute('cx', String(LEFT_ORBIT_FIGMA_DOT.x));
             refs.orbitDot.setAttribute('cy', String(LEFT_ORBIT_FIGMA_DOT.y));
@@ -2829,7 +2928,7 @@
         function resetOrbitOverlay() {
             refs.orbitPath.setAttribute(
                 'd',
-                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C296 356, 276 504, ${LEFT_ORBIT_DEFAULT_DOT.x} ${LEFT_ORBIT_DEFAULT_DOT.y}`
+                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C465 356, 276 504, ${LEFT_ORBIT_DEFAULT_DOT.x} ${LEFT_ORBIT_DEFAULT_DOT.y}`
             );
             refs.orbitDot.setAttribute('cx', String(LEFT_ORBIT_DEFAULT_DOT.x));
             refs.orbitDot.setAttribute('cy', String(LEFT_ORBIT_DEFAULT_DOT.y));
@@ -2915,7 +3014,7 @@
             const dotX = Math.min(SCREEN_WIDTH, Math.max(0, point.x));
             const dotY = Math.min(SCREEN_HEIGHT, Math.max(0, point.y));
             const controlAX = startX - 76;
-            const controlAY = startY + 110;
+            const controlAY = startY + 131;
             const controlBX = Math.max(210, dotX - 138);
             const controlBY = Math.max(390, dotY - 126);
             refs.orbitPath.setAttribute('d', `M${startX} ${startY} C${controlAX} ${controlAY}, ${controlBX} ${controlBY}, ${dotX} ${dotY}`);
@@ -3040,6 +3139,32 @@
             globeRenderer.setSize(width, height);
         }
 
+        function wrapAngle(angle) {
+            let wrapped = angle;
+            while (wrapped > Math.PI) wrapped -= Math.PI * 2;
+            while (wrapped < -Math.PI) wrapped += Math.PI * 2;
+            return wrapped;
+        }
+
+        function clampPhi(phi) {
+            return Math.min(Math.PI - 0.18, Math.max(0.18, phi));
+        }
+
+        function setLeftDetailView(nextState) {
+            isLeftDetailView = Boolean(nextState);
+            if (refs.leftScreen) {
+                refs.leftScreen.classList.toggle('is-detail-view', isLeftDetailView);
+            }
+        }
+
+        function toggleLeftDetailView(direction) {
+            if (direction === 'down') {
+                setLeftDetailView(true);
+            } else if (direction === 'up') {
+                setLeftDetailView(false);
+            }
+        }
+
         function syncStageScale() {
             // All left/right screen coordinates are authored against a 1920x1080 design space.
             const scale = Math.min(window.innerWidth / STAGE_WIDTH, window.innerHeight / STAGE_HEIGHT);
@@ -3087,12 +3212,33 @@
             `).join('');
         }
 
-        function renderLeft(vm) {
-            const yearsBefore = buildContextYears(vm.year, 2, 0);
-            const yearsAfter = buildContextYears(vm.year, 0, 4);
+        function formatCategoryLabel(vm) {
+            const rawCategory = String((vm && vm.category) || (vm && vm.subtitle) || 'AI 历史').trim();
+            const compactCategory = rawCategory.replace(/\s+\(/g, '(');
+            if (/\([^)]*\)/.test(compactCategory)) return compactCategory;
 
-            refs.leftKicker.textContent = vm.category || 'AI 历史';
-            refs.summaryKicker.textContent = (vm.subtitle || vm.category || 'AI 历史').toUpperCase();
+            const subtitle = String((vm && vm.subtitle) || '').trim();
+            const categoryYears = milestones
+                .filter((item) => {
+                    const itemCategory = String(item.category || '').trim();
+                    const itemSubtitle = String(item.subtitle || '').trim();
+                    return itemCategory === rawCategory || itemSubtitle === subtitle || itemSubtitle === rawCategory;
+                })
+                .map((item) => Number(item.year))
+                .filter(Number.isFinite);
+
+            if (categoryYears.length === 0) return compactCategory;
+            const minYear = Math.min(...categoryYears);
+            const maxYear = Math.max(...categoryYears);
+            return `${compactCategory}(${minYear}-${maxYear})`;
+        }
+
+        function renderLeft(vm) {
+            const yearsBefore = buildContextYears(vm.year, 3, 0);
+            const yearsAfter = buildContextYears(vm.year, 0, 5);
+
+            refs.leftKicker.textContent = formatCategoryLabel(vm);
+            refs.summaryKicker.textContent = vm.subtitle || vm.category || 'AI 历史';
             refs.heroYears.innerHTML = yearsBefore.map((year) => `<span>${year}</span>`).join('');
             refs.heroYear.textContent = vm.year || '';
             refs.leftBottomYear.textContent = vm.year || '';
@@ -3116,16 +3262,19 @@
         }
 
         function renderTimeline(vm) {
-            refs.timelineTrack.innerHTML = vm.timeline.map((item, index) => `
+            const timelineHtml = vm.timeline.map((item, index) => `
                 <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
                     <span>${item.year}</span>
                 </button>
             `).join('');
 
-            refs.timelineTrack.querySelectorAll('.timeline-tick').forEach((button) => {
-                button.addEventListener('click', () => {
-                    const index = Number(button.dataset.index);
-                    jumpTo(index);
+            [refs.timelineTrack, refs.rightTimelineTrack].filter(Boolean).forEach((track) => {
+                track.innerHTML = timelineHtml;
+                track.querySelectorAll('.timeline-tick').forEach((button) => {
+                    button.addEventListener('click', () => {
+                        const index = Number(button.dataset.index);
+                        jumpTo(index);
+                    });
                 });
             });
         }
@@ -3159,6 +3308,13 @@
             }
             imgEl.alt = alt || '';
             imgEl.style.visibility = src ? 'visible' : 'hidden';
+        }
+
+        function selectArchivePhoto(vm, index) {
+            const nextIndex = Number(index);
+            if (!Number.isFinite(nextIndex)) return;
+            currentArchiveIndex = nextIndex;
+            renderArchive(vm);
         }
 
         function renderArchive(vm) {
@@ -3197,6 +3353,8 @@
             refs.archiveThumbNext.innerHTML = nextUrl
                 ? `<img src="${nextUrl}" alt="后一张档案">`
                 : '';
+            refs.archiveThumbPrev.dataset.photoIndex = prevUrl ? String(prevIndex) : '';
+            refs.archiveThumbNext.dataset.photoIndex = nextUrl ? String(nextIndex) : '';
 
             refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
             refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
@@ -3220,19 +3378,16 @@
 
             refs.archiveDots.querySelectorAll('.archive-dot').forEach((button) => {
                 button.addEventListener('click', () => {
-                    currentArchiveIndex = Number(button.dataset.index);
-                    renderArchive(vm);
+                    selectArchivePhoto(vm, button.dataset.index);
                 });
             });
 
             refs.archiveThumbPrev.onclick = () => {
-                currentArchiveIndex = prevIndex;
-                renderArchive(vm);
+                selectArchivePhoto(vm, refs.archiveThumbPrev.dataset.photoIndex);
             };
 
             refs.archiveThumbNext.onclick = () => {
-                currentArchiveIndex = nextIndex;
-                renderArchive(vm);
+                selectArchivePhoto(vm, refs.archiveThumbNext.dataset.photoIndex);
             };
         }
 
@@ -3332,9 +3487,15 @@
         }
 
         function renderStatus(vm) {
-            refs.counterText.textContent = `${currentIndex + 1} / ${milestones.length}`;
-            refs.statusText.textContent = `${vm.year || ''} · ${vm.category || 'AI 历史详情'}`;
+            if (refs.leftTimeline) {
+                refs.leftTimeline.dataset.title = vm.title || '';
+            }
+            if (refs.rightTimeline) {
+                refs.rightTimeline.dataset.title = vm.title || '';
+            }
             const canNavigate = milestones.length > 1;
+            refs.leftTimelinePrev.disabled = !canNavigate;
+            refs.leftTimelineNext.disabled = !canNavigate;
             refs.topPrevBtn.disabled = !canNavigate;
             refs.topNextBtn.disabled = !canNavigate;
             refs.rightScaleProgress.style.top = `${milestones.length > 1 ? (currentIndex / (milestones.length - 1)) * 100 : 0}%`;
@@ -3438,6 +3599,197 @@
             jumpTo(nextIndex, options);
         }
 
+        function jumpToTimelineClientX(clientX, track = refs.timelineTrack) {
+            if (!track || milestones.length <= 1) return;
+            const rect = track.getBoundingClientRect();
+            if (!rect.width) return;
+
+            const ratio = Math.min(0.999, Math.max(0, (clientX - rect.left) / rect.width));
+            const index = Math.min(milestones.length - 1, Math.max(0, Math.floor(ratio * milestones.length)));
+            jumpTo(index);
+        }
+
+        function bindTimelineDrag(track) {
+            if (!track) return;
+
+            let activePointerId = null;
+            let hasDragged = false;
+
+            track.addEventListener('pointerdown', (event) => {
+                if (event.button != null && event.button !== 0) return;
+                activePointerId = event.pointerId;
+                hasDragged = false;
+                track.classList.add('is-dragging');
+                track.setPointerCapture(event.pointerId);
+                jumpToTimelineClientX(event.clientX, track);
+                registerUserActivity(event);
+                event.preventDefault();
+            });
+
+            track.addEventListener('pointermove', (event) => {
+                if (activePointerId !== event.pointerId) return;
+                hasDragged = true;
+                jumpToTimelineClientX(event.clientX, track);
+                event.preventDefault();
+            });
+
+            const endDrag = (event) => {
+                if (activePointerId !== event.pointerId) return;
+                track.classList.remove('is-dragging');
+                try {
+                    track.releasePointerCapture(event.pointerId);
+                } catch (error) {}
+                activePointerId = null;
+                if (hasDragged) {
+                    event.preventDefault();
+                }
+            };
+
+            track.addEventListener('pointerup', endDrag);
+            track.addEventListener('pointercancel', endDrag);
+        }
+
+        function bindGlobeDrag() {
+            if (!refs.globeShell) return;
+
+            let activePointerId = null;
+            let startX = 0;
+            let startY = 0;
+            let startTheta = 0;
+            let startPhi = 0;
+
+            refs.globeShell.addEventListener('pointerdown', (event) => {
+                if (event.button != null && event.button !== 0) return;
+                activePointerId = event.pointerId;
+                startX = event.clientX;
+                startY = event.clientY;
+                startTheta = camTarget.theta;
+                startPhi = camTarget.phi;
+                globeArrived = true;
+                markerFlashDone = true;
+                refs.globeShell.classList.add('is-dragging');
+                refs.globeShell.setPointerCapture(event.pointerId);
+                registerUserActivity(event);
+                event.preventDefault();
+            });
+
+            refs.globeShell.addEventListener('pointermove', (event) => {
+                if (activePointerId !== event.pointerId) return;
+                const stageScale = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--stage-scale')) || 1;
+                const dx = (event.clientX - startX) / Math.max(0.1, stageScale);
+                const dy = (event.clientY - startY) / Math.max(0.1, stageScale);
+                camTarget.theta = wrapAngle(startTheta + dx * 0.006);
+                camTarget.phi = clampPhi(startPhi + dy * 0.006);
+                camCurrent.theta = camTarget.theta;
+                camCurrent.phi = camTarget.phi;
+                event.preventDefault();
+            });
+
+            const endDrag = (event) => {
+                if (activePointerId !== event.pointerId) return;
+                refs.globeShell.classList.remove('is-dragging');
+                try {
+                    refs.globeShell.releasePointerCapture(event.pointerId);
+                } catch (error) {}
+                activePointerId = null;
+            };
+
+            refs.globeShell.addEventListener('pointerup', endDrag);
+            refs.globeShell.addEventListener('pointercancel', endDrag);
+        }
+
+        function bindArchiveDrag() {
+            if (!refs.archiveStage) return;
+
+            let activePointerId = null;
+            let startX = 0;
+            let startY = 0;
+            let didNavigate = false;
+
+            refs.archiveStage.addEventListener('pointerdown', (event) => {
+                if (event.button != null && event.button !== 0) return;
+                activePointerId = event.pointerId;
+                startX = event.clientX;
+                startY = event.clientY;
+                didNavigate = false;
+                refs.archiveStage.classList.add('is-dragging');
+                refs.archiveStage.setPointerCapture(event.pointerId);
+                registerUserActivity(event);
+            });
+
+            refs.archiveStage.addEventListener('pointermove', (event) => {
+                if (activePointerId !== event.pointerId || didNavigate) return;
+                const dx = event.clientX - startX;
+                const dy = event.clientY - startY;
+                if (Math.abs(dx) < 80 || Math.abs(dx) < Math.abs(dy) * 1.25) return;
+
+                if (dx < 0) {
+                    refs.archiveThumbNext.click();
+                } else {
+                    refs.archiveThumbPrev.click();
+                }
+                didNavigate = true;
+                event.preventDefault();
+            });
+
+            const endDrag = (event) => {
+                if (activePointerId !== event.pointerId) return;
+                const dx = event.clientX - startX;
+                const dy = event.clientY - startY;
+                refs.archiveStage.classList.remove('is-dragging');
+                try {
+                    refs.archiveStage.releasePointerCapture(event.pointerId);
+                } catch (error) {}
+                activePointerId = null;
+
+                if (!didNavigate && Math.abs(dx) < 12 && Math.abs(dy) < 12) {
+                    const hitTarget = document.elementFromPoint(event.clientX, event.clientY);
+                    const thumbButton = hitTarget && hitTarget.closest
+                        ? hitTarget.closest('#archiveThumbPrev, #archiveThumbNext')
+                        : null;
+                    if (thumbButton && !thumbButton.disabled) {
+                        selectArchivePhoto(getVm(currentIndex), thumbButton.dataset.photoIndex);
+                        event.preventDefault();
+                    }
+                }
+            };
+
+            refs.archiveStage.addEventListener('pointerup', endDrag);
+            refs.archiveStage.addEventListener('pointercancel', endDrag);
+        }
+
+        function bindLeftVerticalNavigation() {
+            if (!refs.leftScreen) return;
+
+            let activePointerId = null;
+            let startX = 0;
+            let startY = 0;
+
+            refs.leftScreen.addEventListener('wheel', (event) => {
+                if (Math.abs(event.deltaY) < Math.max(16, Math.abs(event.deltaX) * 1.2)) return;
+                toggleLeftDetailView(event.deltaY > 0 ? 'down' : 'up');
+            }, { passive: true });
+
+            refs.leftScreen.addEventListener('pointerdown', (event) => {
+                const target = event.target && event.target.closest
+                    ? event.target.closest('button, .globe-shell, .timeline-track, .archive-strip')
+                    : null;
+                if (target) return;
+                activePointerId = event.pointerId;
+                startX = event.clientX;
+                startY = event.clientY;
+            }, { passive: true });
+
+            refs.leftScreen.addEventListener('pointerup', (event) => {
+                if (activePointerId !== event.pointerId) return;
+                const dx = event.clientX - startX;
+                const dy = event.clientY - startY;
+                activePointerId = null;
+                if (Math.abs(dy) < 80 || Math.abs(dy) < Math.abs(dx) * 1.2) return;
+                toggleLeftDetailView(dy < 0 ? 'down' : 'up');
+            }, { passive: true });
+        }
+
         function initSwipeNavigation() {
             if (!window.SwipeNavigation || typeof window.SwipeNavigation.setupSwipeNavigation !== 'function') {
                 return;
@@ -3451,6 +3803,8 @@
             });
         }
 
+        refs.leftTimelinePrev.addEventListener('click', () => navigate('prev'));
+        refs.leftTimelineNext.addEventListener('click', () => navigate('next'));
         refs.topPrevBtn.addEventListener('click', () => navigate('prev'));
         refs.topNextBtn.addEventListener('click', () => navigate('next'));
 
@@ -3482,6 +3836,10 @@
         syncStageScale();
         initGlobe();
         initSwipeNavigation();
+        bindTimelineDrag(refs.timelineTrack);
+        bindTimelineDrag(refs.rightTimelineTrack);
+        bindGlobeDrag();
+        bindArchiveDrag();
         renderPage(currentIndex);
         restartIdleCountdown();
     </script>
