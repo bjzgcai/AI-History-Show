@@ -16,6 +16,8 @@ const { URL }      = require('url');
 const PORT    = process.env.PORT || 3001;
 const ROOT    = path.resolve(__dirname, '..');
 const MANAGE  = __dirname;
+const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
+const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
 
 // ─── MIME 类型 ────────────────────────────────────────────────────────────────
 
@@ -148,6 +150,417 @@ function downloadFile(rawUrl, dest) {
   });
 }
 
+function normalizeQuoteText(text) {
+  let value = String(text || '').trim();
+  if (!value) return '';
+  if (value.startsWith('"')) value = value.slice(1).trimStart();
+  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
+  return value;
+}
+
+function decodeHtmlEntities(text) {
+  return String(text || '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, '\'')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');
+}
+
+function extractAppliedQuoteState(milestone) {
+  const rawQuote = String((milestone || {}).quote || '').trim();
+  const explicitQuotePage = String((milestone || {}).quotePage || '').trim();
+  const sourcePattern = /(?:<br\s*\/?>\s*){1,2}<span[^>]*>\s*—\s*([^<]+?)\s*<\/span>\s*$/i;
+  const matchedSource = rawQuote.match(sourcePattern);
+
+  if (matchedSource) {
+    return {
+      quote: rawQuote.replace(sourcePattern, '').trim(),
+      quotePage: explicitQuotePage || matchedSource[1].trim(),
+    };
+  }
+
+  return {
+    quote: rawQuote,
+    quotePage: explicitQuotePage,
+  };
+}
+
+function quoteHtmlToText(html) {
+  let value = String(html || '').trim();
+  if (!value) return '';
+  if (value.startsWith('"')) value = value.slice(1).trimStart();
+  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
+  value = value
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]*>/g, '');
+  return decodeHtmlEntities(value).trim();
+}
+
+function deepClone(value) {
+  return JSON.parse(JSON.stringify(value));
+}
+
+function loadAppliedMilestones() {
+  const milestonePath = path.join(ROOT, 'milestones-data.js');
+  if (!fs.existsSync(milestonePath)) return [];
+  try {
+    const src = fs.readFileSync(milestonePath, 'utf8');
+    const sandbox = {};
+    vm.runInNewContext(src.replace(/\bconst\s+(milestones)\b/, 'var $1'), sandbox);
+    return Array.isArray(sandbox.milestones) ? sandbox.milestones : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function loadAppliedMilestoneMap() {
+  const map = {};
+  for (const milestone of loadAppliedMilestones()) {
+    if (milestone && typeof milestone === 'object' && milestone.id && milestone.id.startsWith('milestone-')) {
+      map[milestone.id.slice('milestone-'.length)] = milestone;
+    }
+  }
+  return map;
+}
+
+function loadQuoteCandidates() {
+  if (!fs.existsSync(QUOTE_CANDIDATES_PATH)) {
+    return { curatedAt: '', purpose: '', events: {} };
+  }
+  try {
+    return freshRequire(QUOTE_CANDIDATES_PATH).quoteCandidates || { curatedAt: '', purpose: '', events: {} };
+  } catch (_) {
+    return { curatedAt: '', purpose: '', events: {} };
+  }
+}
+
+function writeQuoteCandidates(data) {
+  const target = QUOTE_CANDIDATES_PATH;
+  const safeData = data && typeof data === 'object' ? data : { events: {} };
+  const content = [
+    `// AI 历史展览引言摘录候选库（人工整理）`,
+    `// 说明：`,
+    `// - 每个事件至少提供一条高相关、可追溯来源的候选引言`,
+    `// - 优先选择官方页面、论文摘要、学术出版社页面或机构页面中的原话`,
+    `// - 当前文件仅存候选数据，不直接参与页面渲染`,
+    ``,
+    `const quoteCandidates = ${JSON.stringify(safeData, null, 2)};`,
+    ``,
+    `if (typeof module !== 'undefined' && module.exports) {`,
+    `  module.exports = { quoteCandidates };`,
+    `}`,
+    ``,
+    `if (typeof window !== 'undefined') {`,
+    `  window.quoteCandidates = quoteCandidates;`,
+    `}`,
+    ``,
+  ].join('\n');
+  backupFile(target);
+  atomicWrite(target, content);
+}
+
+function getLeadQuoteCandidate(candidatesMap, key) {
+  const list = candidatesMap && candidatesMap.events && Array.isArray(candidatesMap.events[key])
+    ? candidatesMap.events[key]
+    : [];
+  return list.length > 0 && list[0] && typeof list[0] === 'object' ? list[0] : null;
+}
+
+function hasOwn(obj, key) {
+  return Object.prototype.hasOwnProperty.call(obj || {}, key);
+}
+
+function normalizeEditableQuoteMeta(meta, options = {}) {
+  const preserveKeys = Boolean(options.preserveKeys);
+  const source = meta && typeof meta === 'object' ? meta : null;
+  const normalized = {};
+  let hasValue = false;
+
+  for (const field of QUOTE_META_FIELDS) {
+    const value = source && hasOwn(source, field) ? String(source[field] || '').trim() : '';
+    if (value) hasValue = true;
+    if (value || preserveKeys) normalized[field] = value;
+  }
+
+  return hasValue || preserveKeys ? normalized : {};
+}
+
+function mergeEditableQuoteMeta(eventMeta, candidateMeta, options = {}) {
+  const preserveKeys = Boolean(options.preserveKeys);
+  const hasEventMeta = Boolean(eventMeta && typeof eventMeta === 'object');
+  const eventSource = hasEventMeta ? eventMeta : null;
+  const candidateSource = candidateMeta && typeof candidateMeta === 'object' ? candidateMeta : null;
+  const merged = {};
+  let hasValue = false;
+
+  for (const field of QUOTE_META_FIELDS) {
+    const rawValue = eventSource && hasOwn(eventSource, field)
+      ? eventSource[field]
+      : (candidateSource && hasOwn(candidateSource, field) ? candidateSource[field] : '');
+    const value = String(rawValue || '').trim();
+    if (value) hasValue = true;
+    if (value || preserveKeys || hasEventMeta) merged[field] = value;
+  }
+
+  return hasValue || preserveKeys || hasEventMeta ? merged : {};
+}
+
+function formatQuoteAttribution(candidate) {
+  const safeCandidate = candidate && typeof candidate === 'object' ? candidate : {};
+  const workTitle = String(safeCandidate.workTitle || '').trim();
+  const workAuthors = String(safeCandidate.workAuthors || '').trim();
+  const speaker = String(safeCandidate.speaker || '').trim();
+
+  if (workTitle) {
+    return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
+  }
+
+  return speaker;
+}
+
+function getEffectiveQuoteText(candidatesMap, key, fallbackText) {
+  const first = getLeadQuoteCandidate(candidatesMap, key);
+  const candidateQuote = first ? String(first.quote || '').trim() : '';
+  return candidateQuote || String(fallbackText || '').trim();
+}
+
+function getEffectiveQuoteMeta(candidatesMap, key, ev, options = {}) {
+  const first = getLeadQuoteCandidate(candidatesMap, key);
+  const eventMeta = ev && hasOwn(ev, 'quoteMeta') ? ev.quoteMeta : null;
+  return mergeEditableQuoteMeta(eventMeta, first, options);
+}
+
+function quoteMetaHasAnyValue(meta) {
+  return QUOTE_META_FIELDS.some((field) => String((meta || {})[field] || '').trim());
+}
+
+function quoteMetaEquals(a, b) {
+  return QUOTE_META_FIELDS.every((field) => String((a || {})[field] || '').trim() === String((b || {})[field] || '').trim());
+}
+
+function extractQuoteMetaFromAttribution(attribution, options = {}) {
+  const preserveKeys = Boolean(options.preserveKeys);
+  const value = String(attribution || '').trim();
+  const empty = normalizeEditableQuoteMeta({}, { preserveKeys });
+  if (!value) return empty;
+
+  const workMatch = value.match(/^《([^》]+)》(.*)$/);
+  if (workMatch) {
+    const authors = String(workMatch[2] || '').replace(/^,\s*/, '').trim();
+    return normalizeEditableQuoteMeta({
+      workTitle: String(workMatch[1] || '').trim(),
+      workAuthors: authors,
+    }, { preserveKeys });
+  }
+
+  return normalizeEditableQuoteMeta({ speaker: value }, { preserveKeys });
+}
+
+function getFileMtimeMs(filePath) {
+  try {
+    return fs.statSync(filePath).mtimeMs;
+  } catch (_) {
+    return 0;
+  }
+}
+
+function shouldPreferAppliedSnapshot(eventsPath, milestonePath) {
+  if (!fs.existsSync(milestonePath)) return false;
+  return getFileMtimeMs(milestonePath) >= getFileMtimeMs(eventsPath);
+}
+
+function isPortraitLikeImage(url) {
+  return /\/people\/|portrait|headshot|avatar|人物|人像/i.test(String(url || ''));
+}
+
+function isDocumentLikeImage(url) {
+  return /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(String(url || ''));
+}
+
+function extractWorkTitleFromAttribution(attribution) {
+  const match = String(attribution || '').match(/《([^》]+)》/);
+  return match ? String(match[1] || '').trim() : '';
+}
+
+function readConfiguredImageMetaEntry(map, url) {
+  if (!map || typeof map !== 'object') return null;
+  const entry = map[url];
+  if (!entry || typeof entry !== 'object') return null;
+
+  const caption = String(entry.caption || entry.title || entry.name || '').trim();
+  const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+  if (!caption && !subcaption) return null;
+  return { caption, subcaption };
+}
+
+function deriveDisplayedImageMeta(milestone, url, configured) {
+  const value = String(url || '').trim();
+  if (!value) return { caption: '', subcaption: '' };
+
+  const title = String((milestone || {}).title || '').trim();
+  const year = milestone && milestone.year ? String(milestone.year) : '';
+  const category = String((milestone || {}).category || '').trim();
+  const workTitle = extractWorkTitleFromAttribution((milestone || {}).quoteAttribution || '');
+
+  let fallback;
+  if (isPortraitLikeImage(value)) {
+    fallback = { caption: '人物肖像', subcaption: '相关研究者照片' };
+  } else if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
+    fallback = { caption: '结构示意', subcaption: title ? `${title} 架构图` : '模型架构图' };
+  } else if (/\/papers\//i.test(value) || /_papers_/i.test(value) || isDocumentLikeImage(value)) {
+    fallback = { caption: '论文页面', subcaption: workTitle ? `《${workTitle}》` : (title || '原文截图或摘要') };
+  } else if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
+    fallback = { caption: '历史照片', subcaption: title || (year ? `${year} 年相关档案` : '事件相关档案') };
+  } else {
+    fallback = { caption: '档案图片', subcaption: title || category || '事件相关资料' };
+  }
+
+  return {
+    caption: (configured && configured.caption) || fallback.caption,
+    subcaption: (configured && configured.subcaption) || fallback.subcaption,
+  };
+}
+
+function buildDisplayedImageMetaMap(milestone, existingMap, imageList) {
+  const result = {};
+  const sourceMap = existingMap && typeof existingMap === 'object' ? existingMap : {};
+  for (const url of Array.isArray(imageList) ? imageList : []) {
+    if (!url) continue;
+    const configured = readConfiguredImageMetaEntry(sourceMap, url);
+    const displayed = deriveDisplayedImageMeta(milestone, url, configured);
+    if (!displayed.caption && !displayed.subcaption) continue;
+    result[url] = {
+      ...(sourceMap[url] && typeof sourceMap[url] === 'object' ? sourceMap[url] : {}),
+      caption: displayed.caption,
+      subcaption: displayed.subcaption,
+    };
+  }
+  return result;
+}
+
+function buildAdminEventsSnapshot(eventsData, options = {}) {
+  const merged = deepClone(eventsData || {});
+  const appliedMap = options.appliedMap || loadAppliedMilestoneMap();
+  const quoteCandidates = options.quoteCandidates || loadQuoteCandidates();
+  const preferApplied = Boolean(options.preferApplied);
+
+  for (const [key, ev] of Object.entries(merged)) {
+    const applied = appliedMap[key];
+    const resources = applied && applied.resources && typeof applied.resources === 'object' ? applied.resources : {};
+
+    if (preferApplied && applied) {
+      if (applied.title !== undefined) ev.title = String(applied.title || '');
+      if (applied.year !== undefined) ev.year = applied.year;
+      if (applied.location && typeof applied.location === 'object') ev.location = deepClone(applied.location);
+      if (applied.description !== undefined) ev.description = String(applied.description || '');
+      if (Array.isArray(applied.figures)) ev.figures = deepClone(applied.figures);
+
+      const appliedQuoteState = extractAppliedQuoteState(applied);
+      const appliedQuoteText = quoteHtmlToText(appliedQuoteState.quote);
+      ev.quoteText = appliedQuoteText;
+      ev.quotePage = String(appliedQuoteState.quotePage || '');
+
+      if (Array.isArray(resources.images)) ev.images = deepClone(resources.images);
+      if (Array.isArray(resources.videos)) ev.videos = deepClone(resources.videos);
+    } else {
+      if (!hasOwn(ev, 'quoteText') && applied) {
+        const appliedQuoteState = extractAppliedQuoteState(applied);
+        const appliedQuoteText = quoteHtmlToText(appliedQuoteState.quote);
+        ev.quoteText = appliedQuoteText;
+      }
+      if (!hasOwn(ev, 'quotePage') && applied) {
+        const appliedQuoteState = extractAppliedQuoteState(applied);
+        ev.quotePage = String(appliedQuoteState.quotePage || '');
+      }
+      if (!hasOwn(ev, 'images') && Array.isArray(resources.images)) {
+        ev.images = deepClone(resources.images);
+      }
+      if (!hasOwn(ev, 'videos') && Array.isArray(resources.videos)) {
+        ev.videos = deepClone(resources.videos);
+      }
+    }
+
+    const effectiveQuoteText = normalizeQuoteText(getEffectiveQuoteText(quoteCandidates, key, ev.quoteText));
+    const effectiveQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
+    ev.quoteText = effectiveQuoteText;
+    ev.quoteMeta = effectiveQuoteMeta;
+
+    const displayMilestone = preferApplied && applied
+      ? applied
+      : {
+          title: ev.title,
+          year: ev.year,
+          category: '',
+          quoteAttribution: formatQuoteAttribution(effectiveQuoteMeta),
+        };
+
+    ev.imageMeta = buildDisplayedImageMetaMap(displayMilestone, ev.imageMeta || resources.imageMeta || {}, ev.images || []);
+  }
+
+  return merged;
+}
+
+function normalizeImageMetaMap(map) {
+  const source = map && typeof map === 'object' ? map : {};
+  const normalized = {};
+  for (const [url, entry] of Object.entries(source)) {
+    if (!entry || typeof entry !== 'object') continue;
+    const caption = String(entry.caption || entry.title || entry.name || '').trim();
+    const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+    if (!caption && !subcaption) continue;
+    normalized[url] = { caption, subcaption };
+  }
+  return normalized;
+}
+
+function syncLeadQuoteCandidates(eventsData) {
+  const quoteCandidates = loadQuoteCandidates();
+  if (!quoteCandidates.events || typeof quoteCandidates.events !== 'object') {
+    quoteCandidates.events = {};
+  }
+
+  let changed = false;
+  for (const [key, ev] of Object.entries(eventsData || {})) {
+    let first = getLeadQuoteCandidate(quoteCandidates, key);
+    const normalizedQuoteMeta = normalizeEditableQuoteMeta(
+      ev && hasOwn(ev, 'quoteMeta') ? ev.quoteMeta : null,
+      { preserveKeys: ev && hasOwn(ev, 'quoteMeta') },
+    );
+    const nextQuote = normalizeQuoteText(ev && ev.quoteText ? ev.quoteText : '');
+
+    if (!first && (nextQuote || quoteMetaHasAnyValue(normalizedQuoteMeta))) {
+      if (!Array.isArray(quoteCandidates.events[key])) quoteCandidates.events[key] = [];
+      first = {};
+      quoteCandidates.events[key].unshift(first);
+      changed = true;
+    }
+    if (!first) continue;
+
+    if (String(first.quote || '').trim() !== nextQuote) {
+      first.quote = nextQuote;
+      changed = true;
+    }
+
+    if (ev && hasOwn(ev, 'quoteMeta')) {
+      for (const field of QUOTE_META_FIELDS) {
+        const nextValue = String(normalizedQuoteMeta[field] || '').trim();
+        if (String(first[field] || '').trim() !== nextValue) {
+          first[field] = nextValue;
+          changed = true;
+        }
+      }
+    }
+  }
+
+  if (changed) {
+    writeQuoteCandidates(quoteCandidates);
+  }
+
+  return quoteCandidates;
+}
+
 // ─── 备份 + 原子写 ────────────────────────────────────────────────────────────
 
 const BACKUP_DIR  = path.join(MANAGE, '.backups');
@@ -230,7 +643,16 @@ const routes = {
   },
 
   'GET /api/events': (req, res) => {
-    try { json(res, freshRequire(path.join(MANAGE, 'events.js'))); }
+    try {
+      const eventsPath = path.join(MANAGE, 'events.js');
+      const milestonePath = path.join(ROOT, 'milestones-data.js');
+      const baseEvents = freshRequire(path.join(MANAGE, 'events.js'));
+      json(res, buildAdminEventsSnapshot(baseEvents, {
+        appliedMap: loadAppliedMilestoneMap(),
+        quoteCandidates: loadQuoteCandidates(),
+        preferApplied: shouldPreferAppliedSnapshot(eventsPath, milestonePath),
+      }));
+    }
     catch (e) { err(res, e.message); }
   },
 
@@ -238,6 +660,19 @@ const routes = {
     try {
       const eventsData = await readBody(req);
       const videosDir  = path.join(ROOT, 'resources', 'videos');
+
+      for (const ev of Object.values(eventsData)) {
+        if (ev && typeof ev === 'object' && hasOwn(ev, 'quoteMeta')) {
+          ev.quoteMeta = normalizeEditableQuoteMeta(ev.quoteMeta, { preserveKeys: true });
+        }
+        if (!Array.isArray(ev.figures)) continue;
+        ev.figures = ev.figures
+          .map((figure) => ({
+            name: String(figure && figure.name ? figure.name : '').trim(),
+            role: String(figure && figure.role ? figure.role : '').trim(),
+          }))
+          .filter((figure) => figure.name || figure.role);
+      }
 
       // 同步视频：将含元数据的对象写入 resources/videos/{key}.json，
       // 同时将 events 中的条目规范化为纯字符串：
@@ -329,6 +764,19 @@ const routes = {
         }).filter(Boolean);
       }
 
+      const updatedQuoteCandidates = syncLeadQuoteCandidates(eventsData);
+      for (const [key, ev] of Object.entries(eventsData)) {
+        if (!ev || typeof ev !== 'object' || !hasOwn(ev, 'quoteMeta')) continue;
+        const eventQuoteMeta = normalizeEditableQuoteMeta(ev.quoteMeta, { preserveKeys: true });
+        const candidateQuoteMeta = normalizeEditableQuoteMeta(getLeadQuoteCandidate(updatedQuoteCandidates, key));
+        if (!quoteMetaHasAnyValue(eventQuoteMeta)) {
+          delete ev.quoteMeta;
+          continue;
+        }
+        if (quoteMetaEquals(eventQuoteMeta, candidateQuoteMeta)) {
+          delete ev.quoteMeta;
+        }
+      }
       writeEvents(eventsData);
       json(res, { ok: true });
     } catch (e) { err(res, e.message); }
@@ -425,6 +873,7 @@ const routes = {
     try {
       const catalog   = freshRequire(path.join(MANAGE, 'catalog.js'));
       const eventsMap = freshRequire(path.join(MANAGE, 'events.js'));
+      const quoteCandidates = loadQuoteCandidates();
 
       // 新目录中所有 key（按 catalog 顺序）
       const newKeys = [];
@@ -443,11 +892,7 @@ const routes = {
 
       let appliedMilestones;
       try {
-        const src = fs.readFileSync(milestonePath, 'utf8');
-        // const 顶级声明不会成为 sandbox 属性，替换为 var 使其可读取
-        const sandbox = {};
-        vm.runInNewContext(src.replace(/\bconst\s+(milestones)\b/, 'var $1'), sandbox);
-        appliedMilestones = sandbox.milestones || [];
+        appliedMilestones = loadAppliedMilestones();
       } catch (e) {
         json(res, { firstGeneration: true, parseError: e.message, newKeys });
         return;
@@ -486,18 +931,39 @@ const routes = {
         if (String(ev.description || '') !== String(applied.description || ''))
           changes.description = { from: applied.description || '', to: ev.description || '' };
 
-        // 引言文本（quoteText + quotePage → applied.quote）：重建 quote HTML 后比较
-        const evQuoteText = ev.quoteText || '';
+        // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
+        const evQuoteText = normalizeQuoteText(getEffectiveQuoteText(quoteCandidates, key, ev.quoteText));
         const evQuotePage = ev.quotePage || '';
-        const rebuildQuote = (text, page) => {
+        const rebuildQuote = (text) => {
           if (!text) return '';
           const body = text.replace(/\n/g, '<br>');
-          const src  = page ? `<br><br><span style="font-size: 0.9vw; color: var(--accent);">— ${page}</span>` : '';
-          return `"${body}"${src}`;
+          return `"${body}"`;
         };
-        const rebuiltQuote = rebuildQuote(evQuoteText, evQuotePage);
-        if (rebuiltQuote !== String(applied.quote || ''))
-          changes.quote = { from: applied.quote || '', quoteText: evQuoteText, quotePage: evQuotePage };
+        const appliedQuoteState = extractAppliedQuoteState(applied);
+        const rebuiltQuote = rebuildQuote(evQuoteText);
+        if (rebuiltQuote !== appliedQuoteState.quote)
+          changes.quote = { from: appliedQuoteState.quote || '', quoteText: evQuoteText };
+        if (evQuotePage !== appliedQuoteState.quotePage)
+          changes.quotePage = { from: appliedQuoteState.quotePage || '', to: evQuotePage };
+
+        const evQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
+        const appliedHasStructuredQuoteMeta = Boolean(applied.quoteMeta && typeof applied.quoteMeta === 'object');
+        const appliedQuoteMeta = appliedHasStructuredQuoteMeta
+          ? normalizeEditableQuoteMeta(applied.quoteMeta, { preserveKeys: true })
+          : extractQuoteMetaFromAttribution(applied.quoteAttribution, { preserveKeys: true });
+        const evQuoteAttribution = formatQuoteAttribution(evQuoteMeta);
+        const appliedQuoteAttribution = String(applied.quoteAttribution || '').trim() || formatQuoteAttribution(appliedQuoteMeta);
+        if (
+          evQuoteAttribution !== appliedQuoteAttribution ||
+          (appliedHasStructuredQuoteMeta && !quoteMetaEquals(evQuoteMeta, appliedQuoteMeta))
+        ) {
+          changes.quoteMeta = {
+            fromAttribution: appliedQuoteAttribution,
+            toAttribution: evQuoteAttribution,
+            from: appliedHasStructuredQuoteMeta ? appliedQuoteMeta : null,
+            to: evQuoteMeta,
+          };
+        }
 
         // 图片：计算集合差
         const evImgSet  = new Set(ev.images || []);
@@ -506,6 +972,14 @@ const routes = {
         const imgsRemoved = [...appImgSet].filter(p => !evImgSet.has(p));
         if (imgsAdded.length || imgsRemoved.length)
           changes.images = { added: imgsAdded, removed: imgsRemoved };
+
+        const evImageMeta = normalizeImageMetaMap(ev.imageMeta);
+        const appImageMeta = normalizeImageMetaMap((applied.resources || {}).imageMeta);
+        const imageMetaChanged = [...new Set([...Object.keys(evImageMeta), ...Object.keys(appImageMeta)])]
+          .filter((imgPath) => JSON.stringify(evImageMeta[imgPath] || {}) !== JSON.stringify(appImageMeta[imgPath] || {}));
+        if (imageMetaChanged.length) {
+          changes.imageMeta = { changed: imageMetaChanged };
+        }
 
         // 视频：计算集合差
         const evVidIds  = new Set((ev.videos || []).map(v => typeof v === 'string' ? v : (v.id || v.url || '')));

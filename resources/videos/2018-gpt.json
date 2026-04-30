@@ -4,18 +4,17 @@
   "year": 2018,
   "candidate_videos": [
     {
-      "id": "OFS90-FX6pg",
-      "url": "https://www.youtube.com/watch?v=OFS90-FX6pg",
-      "embed_url": "https://www.youtube.com/embed/OFS90-FX6pg",
-      "title": "ChatGPTの35年の歴史",
-      "channel": "Art of the Problem",
-      "duration": "26:55",
-      "views": "1,287,957回視聴",
-      "thumbnail": "https://img.youtube.com/vi/OFS90-FX6pg/maxresdefault.jpg",
-      "thumbnail_hq": "https://img.youtube.com/vi/OFS90-FX6pg/hqdefault.jpg",
-      "source": "YouTube"
+      "id": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
+      "url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
+      "embed_url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
+      "title": "2018年GPT突破：极简的胜利",
+      "channel": "",
+      "duration": "",
+      "thumbnail": "",
+      "thumbnail_hq": "",
+      "source": "Web"
     }
   ],
   "total_count": 1,
-  "created_at": "2026-03-13 09:05:38"
+  "created_at": "2026-04-28 02:22:40"
 }

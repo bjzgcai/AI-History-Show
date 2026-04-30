@@ -2,12 +2,23 @@
 
 展厅大屏互动式前端应用，展示人工智能发展的重要里程碑。
 
+## 代码仓库
+
+- Gitee：`ssh://git@z.gitee.cn:223/zgca/AI-History-Show.git`
+- GitHub：`git@github.com:bjzgcai/AI-History-Show.git`
+
 ## 快速开始
 
 ```bash
 # 本地预览展示页
 python3 -m http.server 8000
 # 访问 http://localhost:8000
+
+# 校验单双屏自适应路由
+node scripts/test-layout-router.js
+
+# 校验触摸滑动翻页规则
+node scripts/test-swipe-navigation.js
 
 # 本地运行内容管理服务
 node manage/server.js
@@ -16,7 +27,38 @@ node manage/server.js
 
 > **安全提示**：管理服务（端口 3001）无认证保护，仅供本地使用，**切勿直接暴露到公网**。生产环境请通过 SSH 隧道或 Nginx Basic Auth 访问，详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
-云服务器部署（Nginx + PM2）、Gitee Pages 托管、SSH 隧道访问管理后台等详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+云服务器部署（Nginx + PM2）、静态托管、SSH 隧道访问管理后台等详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+
+## 代码同步
+
+本地当前配置了两个远端：
+
+```bash
+# 推送到 Gitee
+git push origin master
+
+# 推送到 GitHub
+git push github master
+```
+
+日常改动建议先确认工作区，再按需提交和同步：
+
+```bash
+git status --short
+git add <files>
+git commit -m "描述本次改动"
+git push origin master
+git push github master
+```
+
+## 展厅双屏演示
+
+- 自适应入口：`http://localhost:8000/`
+- `index.html` 会根据当前浏览器视口自动切换到单屏/移动端或双屏布局
+- 双屏固定入口：`http://localhost:8000/dual-screen.html`
+- 如需手动强制模式，可在 URL 后追加 `?layout=single` 或 `?layout=dual`
+- Windows 现场演示推荐先用 `msedge --app="http://localhost:8000/dual-screen.html"` 验证页面，再根据显卡控制软件决定是否合成超宽屏后进入 `F11` 或 `--kiosk`
+- 多显示器全屏演示、Edge app/kiosk、Intel/NVIDIA 合屏、DisplayFusion 限制等详细说明见 [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
 
@@ -76,15 +118,14 @@ module.exports = {
 };
 ```
 
-**当前分类（5个，共21个事件）：**
+**当前分类（4个，共21个事件）：**
 
 | 分类 | 事件数 | 时间跨度 |
 |------|--------|---------|
 | AI创世纪 | 3 | 1950s–1970s |
 | 神经网络复兴 | 4 | 1980s–2000s |
 | 深度学习与范式归一 | 7 | 2010s–2020s |
-| 大模型时代 | 4 | 2020s–今 |
-| AI for Science | 3 | 2018–今 |
+| 大模型与科学智能 | 7 | 2018–2025 |
 
 ---
 
@@ -185,6 +226,9 @@ AI-History-Show/
 │   ├── server.js                # 可视化管理服务器（node manage/server.js）
 │   └── admin.html               # 管理页面（由 server.js 提供）
 │
+├── shared/                      # 单屏/双屏共用前端逻辑
+├── scripts/                     # 本地校验脚本
+│
 ├── resources/
 │   ├── images/                  # 事件图片（按事件 key 分文件夹）
 │   └── videos/                  # YouTube 视频元数据 JSON（每个事件一个文件）
@@ -199,6 +243,7 @@ AI-History-Show/
 
 - **3D 地球**：Three.js 渲染，自动定位到当前事件的地理坐标
 - **页面切换**：按钮或键盘方向键（`←` / `→`）
+- **双屏展陈自动翻页**：`dual-screen.html` 支持“开始/停止自动播放”，默认关闭，开启后每 10 秒循环翻页
 - **视频播放**：内嵌 YouTube 视频 + 本地讲解视频
 - **图片浏览**：点击进入全屏，支持左右切换（`←` / `→` / `Esc`）
 - **响应式**：适配大屏（4K/2K/1080p）与移动端
