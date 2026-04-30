@@ -4,18 +4,17 @@
   "year": 2024,
   "candidate_videos": [
     {
-      "id": "RLO4sfK37w4",
-      "url": "https://www.youtube.com/watch?v=RLO4sfK37w4",
-      "embed_url": "https://www.youtube.com/embed/RLO4sfK37w4",
-      "title": "Robots and AI hunt for new materials at A-Lab",
-      "channel": "Berkeley Lab",
-      "duration": "2:16",
-      "views": "2,710回視聴",
-      "thumbnail": "https://img.youtube.com/vi/RLO4sfK37w4/maxresdefault.jpg",
-      "thumbnail_hq": "https://img.youtube.com/vi/RLO4sfK37w4/hqdefault.jpg",
-      "source": "YouTube"
+      "id": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+      "url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+      "embed_url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+      "title": "2024AI科学家：探索发现的新纪元",
+      "channel": "",
+      "duration": "",
+      "thumbnail": "",
+      "thumbnail_hq": "",
+      "source": "Web"
     }
   ],
   "total_count": 1,
-  "created_at": "2026-03-13 09:05:38"
+  "created_at": "2026-04-28 02:22:40"
 }

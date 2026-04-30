@@ -18,8 +18,8 @@ module.exports = {
       subtitle: "神经网络与连接主义的复兴",
       events: [
         "1986-backpropagation",
-        "1989-cnn",
         "1986-rnn",
+        "1989-cnn",
         "1997-lstm",
       ]
     },
@@ -29,30 +29,24 @@ module.exports = {
       events: [
         "2012-alexnet",
         "2014-highway-network",
-        "2015-resnet",
-        "2016-densenet",
         "2014-gan",
         "2014-attention",
+        "2015-resnet",
+        "2016-densenet",
         "2017-transformer",
       ]
     },
     {
-      name: "大模型时代 (2020s-今)",
-      subtitle: "大模型时代",
+      name: "大模型与科学智能",
+      subtitle: "大模型与科学智能",
       events: [
         "2018-bert",
         "2018-gpt",
-        "2023-agents",
-        "2025-llm-competition",
-      ]
-    },
-    {
-      name: "AI for Science (2018-今)",
-      subtitle: "AI",
-      events: [
-        "2020-alphafold",
         "2019-ai-feynman",
+        "2020-alphafold",
+        "2023-agents",
         "2024-ai-scientist",
+        "2025-llm-competition",
       ]
     },
   ]

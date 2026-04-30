@@ -150,7 +150,136 @@ curl -o vendor/three.min.js https://unpkg.com/three@0.160.0/build/three.min.js
 
 ---
 
-## 二、内容管理服务部署（manage/server.js）
+## 二、多显示器全屏演示
+
+本节面向**展厅现场 / 双横屏演示**。目标不是“普通浏览器打开网页”，而是尽量做到：
+
+- 双屏横向铺满
+- 浏览器 UI 最小化
+- 适合现场稳定重复演示
+
+双屏展陈页面入口：
+
+```text
+http://localhost:8000/dual-screen.html
+```
+
+### 方案对比
+
+| 方案 | 典型做法 | 能否跨双屏 | 能否去掉地址栏/标签栏 | 能否去掉系统标题栏 | 稳定性 |
+|------|----------|------------|----------------------|-------------------|--------|
+| 跨屏窗口方案 | `Edge/Chrome --app` + DisplayFusion 跨屏 | ✅ | ✅ | ❌ 通常不行 | 中 |
+| 合成超宽屏方案 | `Intel Graphics Software` / `NVIDIA Surround` 合成单个逻辑显示器，再 `F11` / `--kiosk` | ✅ | ✅ | ✅ 更容易实现 | 高 |
+| 正式布展方案 | 桌面壳程序（如 Electron）或专业拼接器 | ✅ | ✅ | ✅ | 很高 |
+
+### 当前已知结论与限制
+
+- `DisplayFusion` 负责的是**窗口级别**操作，例如跨屏、位置、尺寸、置顶。
+- `Chrome/Edge` 的标签栏、地址栏、标签页属于**浏览器自身 UI**，不是网页内容，DisplayFusion 不能直接移除。
+- `--app` 模式可以去掉地址栏和标签页，但通常仍会保留一条**系统窗口标题栏**。
+- 浏览器原生 `F11` / 普通全屏，在“扩展桌面”模式下通常只会占用**当前一块屏**，不等于双屏全屏。
+- 只有把两块屏先合成一个**逻辑上的超宽显示器**后，`F11` 或 `--kiosk` 才会真正跨双屏铺满。
+- “跨屏窗口”不等于“单个超宽逻辑显示器”。前者是窗口横跨两块屏，后者是系统层把两块屏当成一块屏。
+- “浏览器 UI”和“网页 UI”是两层不同对象。网页可以做沉浸式布局，但不能单独移除浏览器外壳。
+
+### Windows 推荐操作顺序
+
+**第一步：启动本地静态服务**
+
+```bash
+cd /path/to/AI-History-Show
+python3 -m http.server 8000
+```
+
+**第二步：优先验证双屏页面**
+
+浏览器访问：
+
+```text
+http://localhost:8000/dual-screen.html
+```
+
+或直接用 Edge `app` 模式：
+
+```powershell
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="http://localhost:8000/dual-screen.html"
+```
+
+**第三步：优先尝试显卡控制软件合屏**
+
+- 如果两块目标屏由同一块 `Intel` 驱动，优先查看 `Intel Graphics Software` 的多显示器/合屏能力。
+- 如果两块目标屏由同一块 `NVIDIA` 驱动，优先查看 `NVIDIA Control Panel -> 配置 Surround, PhysX`。
+- 合屏成功后，Windows 会把两块屏识别为一个超宽显示区域。
+
+**第四步：合屏成功后再进入沉浸模式**
+
+先用 `--app` 验证页面布局和拼缝安全区，再切换：
+
+- `F11`：常规浏览器全屏
+- `--kiosk`：更适合现场演示
+
+```powershell
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://localhost:8000/dual-screen.html"
+```
+
+### Windows 故障排查
+
+**1. `NVIDIA Surround` 灰掉，无法勾选**
+
+常见原因是两块目标屏**不在同一块 NVIDIA 上**。判断方式：
+
+- 看 `NVIDIA 控制面板 -> 配置 Surround, PhysX` 的拓扑图
+- 或看 `Windows -> 设置 -> 系统 -> 显示 -> 高级显示`
+
+如果两块屏挂在 `Intel` 下面，而不是 `NVIDIA` 下面，那么 `NVIDIA Surround` 无法用于这两块屏。
+
+**2. 两块屏都在同一块 Intel 上**
+
+这时应优先检查 `Intel Graphics Software` 是否支持：
+
+- 多显示器拼接
+- 合并桌面
+- Collage / Combined Desktop / Span 等能力
+
+如果 Intel 端能完成合屏，就不需要再依赖 `NVIDIA Surround`。
+
+**3. 无法合屏，只能扩展桌面**
+
+退回到“跨屏窗口方案”：
+
+- 使用 `Edge/Chrome --app`
+- 使用 DisplayFusion 执行 `Span Window Across all Monitors`
+- 接受保留系统标题栏这一现实限制
+
+这条方案可以用于快速演示，但不等于真正的双屏全屏。
+
+**4. 为什么 `F11` 后窗口又只回到一块屏**
+
+说明当前系统仍然是“扩展桌面”，还没有把双屏合成一个超宽逻辑显示器。此时 `F11` 只会占用当前显示器。
+
+### 示例命令
+
+本地启动静态服务：
+
+```bash
+python3 -m http.server 8000
+```
+
+Edge `app` 模式：
+
+```powershell
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="http://localhost:8000/dual-screen.html"
+```
+
+Edge `kiosk` 模式：
+
+```powershell
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://localhost:8000/dual-screen.html"
+```
+
+---
+
+## 三、内容管理服务部署（manage/server.js）
 
 `server.js` 提供网页版内容编辑功能（端口 3001）。它会直接修改服务器上的 `manage/events.js`、`manage/catalog.js`，并重新生成 `milestones-data.js`，**Nginx 无需重启，刷新展示页即生效**。
 
@@ -250,7 +379,7 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ---
 
-## 三、验证部署
+## 四、验证部署
 
 **展示页：**
 

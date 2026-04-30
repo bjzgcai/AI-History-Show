@@ -1,0 +1,3871 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-layout-mode="dual">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 历史回顾展览 - 双横屏展陈模式</title>
+    <script src="shared/layout-router.js"></script>
+    <style>
+        :root {
+            --screen-width: 1920px;
+            --screen-height: 1080px;
+            --stage-width: calc(var(--screen-width) * 2);
+            --stage-scale: 1;
+            --bg: #020202;
+            --panel: rgba(255, 255, 255, 0.05);
+            --line: rgba(255, 255, 255, 0.14);
+            --line-strong: rgba(255, 255, 255, 0.28);
+            --text: #f4efe5;
+            --text-soft: rgba(244, 239, 229, 0.78);
+            --text-muted: rgba(244, 239, 229, 0.42);
+            --accent: #f68900;
+            --accent-strong: #ff7f11;
+            --deep-red: #4f0404;
+            --deep-red-soft: rgba(95, 9, 9, 0.68);
+            --ui-font: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 12% 18%, rgba(246, 137, 0, 0.1), transparent 24%),
+                radial-gradient(circle at 82% 16%, rgba(255, 255, 255, 0.04), transparent 18%),
+                linear-gradient(180deg, #0a0a0a 0%, #020202 100%);
+            color: var(--text);
+            font-family: var(--ui-font);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+            background-size: 4px 4px;
+            opacity: 0.3;
+            mix-blend-mode: soft-light;
+        }
+
+        .stage-viewport {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .dual-stage {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: var(--stage-width);
+            height: var(--screen-height);
+            display: grid;
+            grid-template-columns: var(--screen-width) var(--screen-width);
+            transform: translate(-50%, -50%) scale(var(--stage-scale));
+            transform-origin: center center;
+            box-shadow: none;
+            touch-action: pan-y;
+        }
+
+        .dual-stage::after {
+            content: "";
+            position: absolute;
+            left: calc(var(--screen-width) - 1px);
+            top: 0;
+            width: 2px;
+            height: var(--screen-height);
+            background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+            pointer-events: none;
+        }
+
+        .screen {
+            position: relative;
+            width: var(--screen-width);
+            height: var(--screen-height);
+            overflow: hidden;
+            background: #000;
+            border: none;
+        }
+
+        .screen-left::before {
+            content: none;
+        }
+
+        .screen-left::after {
+            content: none;
+        }
+
+        .screen-right::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: none;
+            box-shadow: none;
+        }
+
+        .screen-right::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: none;
+        }
+
+        .screen-left {
+            --left-unit-x: calc(var(--screen-width) / 1920);
+            --left-unit-y: calc(var(--screen-height) / 1080);
+            --left-scale: calc(var(--screen-width) / 1920);
+        }
+
+        .screen-right {
+            --left-unit-x: calc(var(--screen-width) / 1920);
+            --left-unit-y: calc(var(--screen-height) / 1080);
+            --left-scale: calc(var(--screen-width) / 1920);
+        }
+
+        .left-topbar {
+            position: absolute;
+            left: calc(55 * var(--left-unit-x));
+            top: calc(30 * var(--left-unit-y));
+            width: calc(1810.11 * var(--left-unit-x));
+            height: calc(60.63 * var(--left-unit-y));
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+            align-items: start;
+            gap: calc(14 * var(--left-unit-x));
+            padding: 0;
+            border-bottom: none;
+            z-index: 5;
+        }
+
+        .left-topbar::after {
+            content: "历史  HISTORY";
+            position: absolute;
+            right: 0;
+            top: calc(-1 * var(--left-unit-y));
+            color: #797a7a;
+            font-size: calc(25 * var(--left-scale));
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .brand-lockup {
+            min-width: 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .brand-lockup img {
+            display: block;
+            width: auto;
+            height: calc(34 * var(--left-unit-y));
+            max-width: calc(520 * var(--left-unit-x));
+            object-fit: contain;
+        }
+
+        .left-kicker {
+            justify-self: center;
+            align-self: start;
+            margin-top: calc(14 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(18 * var(--left-scale));
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: 0;
+            white-space: nowrap;
+        }
+
+        .left-body {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: var(--screen-width);
+            height: var(--screen-height);
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .left-body::before {
+            content: "";
+            position: absolute;
+            left: calc(58 * var(--left-unit-x));
+            top: calc(105 * var(--left-unit-y));
+            width: calc(1809 * var(--left-unit-x));
+            height: calc(825 * var(--left-unit-y));
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: calc(10 * var(--left-scale));
+            background: #111;
+            pointer-events: none;
+        }
+
+        .hero-panel,
+        .narrative-panel,
+        .archive-column,
+        .commentary-column {
+            min-height: 0;
+        }
+
+        .hero-panel,
+        .narrative-panel {
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-panel {
+            z-index: 4;
+            pointer-events: none;
+        }
+
+        .narrative-panel {
+            z-index: 5;
+            inset: auto;
+            left: calc(58 * var(--left-unit-x));
+            top: calc(105 * var(--left-unit-y));
+            width: calc(1809 * var(--left-unit-x));
+            height: calc(825 * var(--left-unit-y));
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .hero-years {
+            position: absolute;
+            left: calc(82 * var(--left-unit-x));
+            top: calc(191 * var(--left-unit-y));
+            display: flex;
+            gap: calc(58 * var(--left-unit-x));
+            color: rgba(244, 239, 229, 0.28);
+            font-size: calc(24 * var(--left-scale));
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .hero-year {
+            position: absolute;
+            left: calc(430 * var(--left-unit-x));
+            top: calc(120.4 * var(--left-unit-y));
+            margin-top: 0;
+            font-size: calc(94.6 * var(--left-scale));
+            line-height: 1;
+            font-weight: 500;
+            color: var(--accent);
+            letter-spacing: -0.03em;
+            text-shadow: 0 0 24px rgba(246, 137, 0, 0.16);
+            white-space: nowrap;
+        }
+
+        .globe-zone {
+            position: absolute;
+            inset: 0;
+            z-index: 6;
+            pointer-events: none;
+        }
+
+        .globe-stage {
+            position: absolute;
+            left: calc(89 * var(--left-unit-x));
+            top: calc(319 * var(--left-unit-y));
+            width: calc(542 * var(--left-unit-x));
+            height: calc(542 * var(--left-unit-y));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 42px 84px rgba(0, 0, 0, 0.78));
+            pointer-events: auto;
+        }
+
+        .globe-stage::before {
+            content: "";
+            position: absolute;
+            inset: -18% -22%;
+            border-radius: calc(18 * var(--left-scale));
+            background:
+                radial-gradient(circle at 62% 36%, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.05) 13%, transparent 30%),
+                radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0.68) 62%, #020202 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .globe-stage::after {
+            content: "";
+            position: absolute;
+            inset: -1.4%;
+            border-radius: 50%;
+            background:
+                linear-gradient(90deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.26) 25%, rgba(0, 0, 0, 0) 43%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 0.26) 75%, rgba(0, 0, 0, 0.82) 100%),
+                linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.72) 100%),
+                radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 44%, rgba(0, 0, 0, 0.58) 72%, rgba(0, 0, 0, 0.94) 100%);
+            pointer-events: none;
+            z-index: 4;
+        }
+
+        .globe-shell {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            isolation: isolate;
+            transform: translateZ(0);
+            background:
+                radial-gradient(circle at 31% 28%, rgba(81, 126, 191, 0.16), transparent 22%),
+                radial-gradient(circle at 72% 72%, rgba(243, 132, 47, 0.1), transparent 30%),
+                radial-gradient(circle at 39% 35%, rgba(23, 46, 92, 0.32), rgba(8, 11, 21, 0.12) 61%, transparent 74%);
+            box-shadow:
+                0 0 78px rgba(0, 0, 0, 0.84),
+                0 0 72px rgba(56, 112, 180, 0.16),
+                0 0 116px rgba(246, 137, 0, 0.1),
+                inset 0 0 52px rgba(3, 5, 12, 0.72);
+            cursor: grab;
+            touch-action: none;
+        }
+
+        .globe-shell.is-dragging {
+            cursor: grabbing;
+        }
+
+        .globe-shell.globe-shell-figma {
+            isolation: auto;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        #dualGlobeContainer {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            border-radius: inherit;
+            overflow: hidden;
+            clip-path: circle(50% at 50% 50%);
+            transform: translateZ(0);
+        }
+
+        .globe-figma-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.015);
+            filter: none;
+            animation: globeFigmaDrift 24s ease-in-out infinite alternate;
+        }
+
+        @keyframes globeFigmaDrift {
+            from {
+                transform: scale(1.01) translate3d(-1.2%, -0.4%, 0);
+            }
+            to {
+                transform: scale(1.04) translate3d(1%, 0.7%, 0);
+            }
+        }
+
+        #dualGlobeCanvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+            border-radius: inherit;
+            transform: scale(1.005);
+            filter: none;
+        }
+
+        .globe-shell.globe-shell-figma::before,
+        .globe-shell.globe-shell-figma::after {
+            display: none;
+        }
+
+        .globe-shell::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at 25% 22%, rgba(255, 255, 255, 0.14), transparent 14%),
+                radial-gradient(circle at 69% 71%, rgba(255, 176, 92, 0.14), transparent 24%),
+                radial-gradient(circle at 37% 35%, rgba(141, 203, 255, 0.06), transparent 22%);
+            mix-blend-mode: screen;
+            opacity: 0.46;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .globe-shell::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            box-shadow:
+                inset -28px -20px 38px rgba(12, 12, 20, 0.2),
+                inset 14px 4px 20px rgba(255, 236, 212, 0.04),
+                inset 0 0 0 1px rgba(205, 138, 82, 0.08);
+            opacity: 0.44;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .globe-atmosphere {
+            position: absolute;
+            inset: 0.9%;
+            border-radius: 50%;
+            border: 1px solid rgba(125, 179, 234, 0.24);
+            background:
+                radial-gradient(circle at 28% 30%, rgba(255, 255, 255, 0.06), transparent 16%),
+                radial-gradient(circle at 70% 72%, rgba(246, 137, 0, 0.04), transparent 26%);
+            box-shadow:
+                0 0 20px rgba(112, 168, 232, 0.1),
+                inset 0 0 10px rgba(136, 191, 244, 0.04);
+            mix-blend-mode: screen;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .globe-shell.globe-shell-figma .globe-atmosphere {
+            opacity: 0;
+        }
+
+        .orbit-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 8;
+        }
+
+        .left-screen-divider {
+            display: none;
+        }
+
+        .orbit-overlay svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .orbit-guide-line {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.92);
+            stroke-width: 1.8;
+            stroke-linecap: round;
+        }
+
+        .orbit-guide-ring {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.92);
+            stroke-width: 1.8;
+            opacity: 0.92;
+        }
+
+        .orbit-ring {
+            fill: none;
+            stroke: var(--accent);
+            stroke-width: 2.3;
+            stroke-linecap: round;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .orbit-start-dot {
+            fill: var(--accent);
+            stroke: none;
+        }
+
+        .orbit-dot {
+            fill: var(--accent);
+            stroke: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .left-bottom-year {
+            display: none;
+        }
+
+        .ghost-years {
+            position: absolute;
+            left: calc(1212 * var(--left-unit-x));
+            top: calc(85 * var(--left-unit-y));
+            width: calc(560 * var(--left-unit-x));
+            display: flex;
+            justify-content: space-between;
+            gap: calc(34 * var(--left-unit-x));
+            color: rgba(244, 239, 229, 0.24);
+            font-size: calc(24 * var(--left-scale));
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .summary-card {
+            position: absolute;
+            left: calc(657 * var(--left-unit-x));
+            top: calc(19 * var(--left-unit-y));
+            width: calc(620 * var(--left-unit-x));
+            margin-top: 0;
+        }
+
+        .summary-kicker {
+            display: none;
+        }
+
+        .summary-title {
+            margin-top: calc(58 * var(--left-unit-y));
+            font-size: calc(36 * var(--left-scale));
+            line-height: 1.1;
+            font-weight: 700;
+            color: var(--accent);
+            max-width: calc(620 * var(--left-unit-x));
+        }
+
+        .summary-location {
+            margin-top: calc(20 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(20 * var(--left-scale));
+            line-height: 1.25;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+
+        .summary-body {
+            margin-top: calc(54 * var(--left-unit-y));
+            color: rgba(244, 239, 229, 0.9);
+            font-size: calc(22 * var(--left-scale));
+            line-height: 1.42;
+            max-width: calc(560 * var(--left-unit-x));
+            max-height: calc(238 * var(--left-unit-y));
+            overflow: hidden;
+        }
+
+        .summary-body p {
+            margin-bottom: 0.7em;
+        }
+
+        .summary-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .screen-left .summary-card,
+        .screen-left .archive-strip,
+        .screen-left .hero-year,
+        .screen-left .ghost-years {
+            transition:
+                left 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+                top 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+                opacity 0.32s ease,
+                transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .screen-left.is-detail-view .hero-year {
+            top: calc(138 * var(--left-unit-y));
+        }
+
+        .screen-left.is-detail-view .ghost-years {
+            opacity: 0.55;
+        }
+
+        .screen-left.is-detail-view .summary-card {
+            top: calc(701 * var(--left-unit-y));
+            transform: translateY(0);
+        }
+
+        .screen-left.is-detail-view .summary-body {
+            max-width: calc(480 * var(--left-unit-x));
+            color: rgba(244, 239, 229, 0.66);
+        }
+
+        .screen-left.is-detail-view .archive-strip {
+            top: calc(563 * var(--left-unit-y));
+            transform: none;
+            opacity: 0.86;
+        }
+
+        .archive-strip {
+            position: absolute;
+            left: calc(672 * var(--left-unit-x));
+            top: calc(545 * var(--left-unit-y));
+            width: calc(920 * var(--left-unit-x));
+            height: calc(255 * var(--left-unit-y));
+            min-height: 0;
+            display: block;
+            padding-bottom: 0;
+            pointer-events: auto;
+        }
+
+        .left-archive-card {
+            position: relative;
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+            overflow: hidden;
+        }
+
+        .left-archive-card img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #111;
+            filter: grayscale(0.1);
+        }
+
+        .left-archive-card.paper {
+            position: absolute;
+            left: calc(0 * var(--left-unit-x));
+            top: calc(18 * var(--left-unit-y));
+            width: calc(180 * var(--left-unit-x));
+            height: calc(188 * var(--left-unit-y));
+            background: #f1ede4;
+            z-index: 1;
+        }
+
+        .left-archive-card.primary {
+            position: absolute;
+            left: calc(330 * var(--left-unit-x));
+            top: calc(0 * var(--left-unit-y));
+            width: calc(286 * var(--left-unit-x));
+            height: calc(252 * var(--left-unit-y));
+            background: #f6f2ea;
+            padding:
+                calc(42 * var(--left-unit-y))
+                calc(9.9 * var(--left-unit-x))
+                calc(42 * var(--left-unit-y))
+                calc(11.9 * var(--left-unit-x));
+            transform: rotate(7.98deg);
+            z-index: 2;
+        }
+
+        .left-archive-card.secondary {
+            position: absolute;
+            left: calc(690 * var(--left-unit-x));
+            top: calc(30 * var(--left-unit-y));
+            width: calc(270 * var(--left-unit-x));
+            height: calc(210 * var(--left-unit-y));
+            background: #ece7dd;
+            border: calc(10 * var(--left-unit-x)) solid #ece7dd;
+            transform: rotate(-4.52deg);
+            z-index: 1;
+        }
+
+        .archive-empty {
+            width: calc(824 * var(--left-unit-x));
+            min-height: calc(320 * var(--left-unit-y));
+            display: grid;
+            place-items: center;
+            border: 1px dashed rgba(255, 255, 255, 0.18);
+            color: rgba(244, 239, 229, 0.45);
+            font-size: calc(22 * var(--left-scale));
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .left-timeline,
+        .right-timeline {
+            position: absolute;
+            left: calc(57 * var(--left-unit-x));
+            top: calc(958 * var(--left-unit-y));
+            width: calc(1811 * var(--left-unit-x));
+            height: calc(87 * var(--left-unit-y));
+            padding-top: 0;
+            border-top: none;
+            z-index: 4;
+        }
+
+        .left-timeline::before,
+        .right-timeline::before {
+            content: "Timeline";
+            position: absolute;
+            left: calc(70.33 * var(--left-unit-x));
+            top: calc(-0.58 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(23 * var(--left-scale));
+            font-weight: 700;
+        }
+
+        .left-timeline::after,
+        .right-timeline::after {
+            content: attr(data-title);
+            position: absolute;
+            left: calc(1502 * var(--left-unit-x));
+            right: auto;
+            top: calc(3 * var(--left-unit-y));
+            color: var(--accent);
+            font-size: calc(20 * var(--left-scale));
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .left-timeline-nav,
+        .right-timeline-nav {
+            position: absolute;
+            top: calc(2.86 * var(--left-unit-y));
+            width: calc(48.23 * var(--left-unit-x));
+            height: calc(79.2 * var(--left-unit-y));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: calc(8 * var(--left-scale));
+            background: #151515;
+            color: rgba(244, 239, 229, 0.74);
+            font-size: calc(38 * var(--left-scale));
+            line-height: 1;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            z-index: 7;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+
+        .left-timeline-nav:hover:not(:disabled),
+        .right-timeline-nav:hover:not(:disabled) {
+            color: #fff;
+        }
+
+        .left-timeline-nav:disabled,
+        .right-timeline-nav:disabled {
+            opacity: 0.38;
+            cursor: default;
+        }
+
+        .left-timeline-prev,
+        .right-timeline-prev {
+            left: 0;
+        }
+
+        .left-timeline-next,
+        .right-timeline-next {
+            right: 0;
+        }
+
+        .timeline-track {
+            position: absolute;
+            left: calc(74.74 * var(--left-unit-x));
+            top: calc(31.9 * var(--left-unit-y));
+            width: calc(1667.62 * var(--left-unit-x));
+            height: calc(54.15 * var(--left-unit-y));
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: minmax(0, 1fr);
+            align-items: end;
+            gap: 0;
+            cursor: grab;
+            touch-action: none;
+        }
+
+        .timeline-track.is-dragging {
+            cursor: grabbing;
+        }
+
+        .timeline-track::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: calc(24.15 * var(--left-unit-y));
+            height: calc(3.5 * var(--left-unit-y));
+            background: repeating-linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.42) 0 max(1px, calc(1 * var(--left-unit-x))),
+                transparent max(1px, calc(1 * var(--left-unit-x))) calc(11.93 * var(--left-unit-x))
+            );
+            opacity: 0.56;
+            pointer-events: none;
+        }
+
+        .timeline-tick {
+            position: relative;
+            z-index: 1;
+            border: none;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: calc(4.5 * var(--left-unit-y));
+            min-width: 0;
+            padding: 0;
+        }
+
+        .timeline-tick::before {
+            content: "";
+            width: 1px;
+            height: calc(14.15 * var(--left-unit-y));
+            background: rgba(255, 255, 255, 0.62);
+            transition: height 0.25s ease, background 0.25s ease;
+        }
+
+        .timeline-tick span {
+            font-size: calc(11.5 * var(--left-scale));
+            line-height: 1;
+            color: #797a7a;
+            transform-origin: center bottom;
+            transition: color 0.25s ease, font-size 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .timeline-tick.active::before,
+        .timeline-tick:hover::before {
+            height: calc(14.15 * var(--left-unit-y));
+            background: var(--accent);
+        }
+
+        .timeline-tick.active span,
+        .timeline-tick:hover span {
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .timeline-tick.active span {
+            color: var(--accent);
+            font-size: calc(18 * var(--left-scale));
+        }
+
+        .right-topbar {
+            position: absolute;
+            left: 55px;
+            right: 55px;
+            top: 30px;
+            height: 60.63px;
+            z-index: 4;
+        }
+
+        .right-topbar::before {
+            content: none;
+        }
+
+        .right-brand {
+            position: absolute;
+            left: 0;
+            top: 0;
+            min-width: 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .right-brand img {
+            display: block;
+            width: auto;
+            height: 34px;
+            max-width: 520px;
+            object-fit: contain;
+        }
+
+        .right-topbar::after {
+            content: "历史  HISTORY";
+            position: absolute;
+            right: 0;
+            top: -1px;
+            color: #797a7a;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .right-section-headings {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .section-heading {
+            position: absolute;
+            text-align: left;
+            font-size: 0;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: var(--accent);
+            text-transform: none;
+            white-space: nowrap;
+        }
+
+        .section-heading::before {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .section-heading:nth-child(1) {
+            left: 25px;
+            top: 82px;
+            width: 600px;
+        }
+
+        .section-heading:nth-child(1)::before {
+            content: "AI创世纪";
+            font-size: 14px;
+        }
+
+        .section-heading:nth-child(2) {
+            left: 1216px;
+            top: 82px;
+            width: 300px;
+        }
+
+        .section-heading:nth-child(2)::before {
+            content: "评论与媒体";
+        }
+
+        .right-body {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+        }
+
+        .archive-column {
+            position: absolute;
+            left: 54px;
+            top: 105px;
+            width: 1176px;
+            height: 825px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            background: #111;
+        }
+
+        .archive-header {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            width: 1098px;
+            height: 168px;
+        }
+
+        .archive-header h2 {
+            position: absolute;
+            left: 0;
+            top: 36px;
+            width: 740px;
+            font-size: 48px;
+            line-height: 1.08;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .panel-year {
+            position: absolute;
+            left: 915px;
+            right: auto;
+            top: 0;
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 94.6px;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+
+        .figure-row {
+            position: absolute;
+            left: 24px;
+            top: 155px;
+            width: 823px;
+            height: 81px;
+        }
+
+        .figure-chip {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr);
+            gap: 16px;
+            align-items: center;
+            width: 240px;
+            min-width: 0;
+        }
+
+        .figure-chip:nth-child(1) {
+            left: 0;
+            top: 0;
+        }
+
+        .figure-chip:nth-child(2) {
+            left: 300px;
+            top: 0;
+        }
+
+        .figure-chip:nth-child(3) {
+            left: 612px;
+            top: 0;
+        }
+
+        .figure-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            border: none;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 14px;
+            font-weight: 700;
+            filter: grayscale(0.1);
+            letter-spacing: 0.08em;
+        }
+
+        .figure-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(0.1);
+            object-position: center center;
+        }
+
+        .figure-meta {
+            min-width: 0;
+            padding-top: 5px;
+        }
+
+        .figure-name {
+            font-size: 15px;
+            line-height: 1.18;
+            color: rgba(244, 239, 229, 0.62);
+        }
+
+        .figure-role {
+            margin-top: 3px;
+            color: rgba(244, 239, 229, 0.5);
+            font-size: 15px;
+            line-height: 1.18;
+        }
+
+        .archive-stage {
+            position: absolute;
+            left: 23px;
+            top: 301px;
+            width: 1122px;
+            height: 411px;
+            cursor: grab;
+            touch-action: pan-y;
+        }
+
+        .archive-stage.is-dragging {
+            cursor: grabbing;
+        }
+
+        .archive-stage::before,
+        .archive-stage::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 260px;
+            height: 411px;
+            pointer-events: none;
+            z-index: 3;
+            opacity: 0.96;
+        }
+
+        .archive-stage::before {
+            left: 0;
+            background: linear-gradient(90deg, #111 0%, rgba(17, 17, 17, 0.88) 18%, rgba(17, 17, 17, 0) 100%);
+        }
+
+        .archive-stage::after {
+            right: 0;
+            background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.88) 82%, #111 100%);
+        }
+
+        .archive-card {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 1;
+        }
+
+        .archive-card.is-hidden {
+            display: none;
+        }
+
+        .archive-thumb,
+        .archive-focus {
+            position: relative;
+            display: block;
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .archive-thumb::after,
+        .archive-focus::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+
+        .archive-thumb.is-empty,
+        .archive-focus.is-empty {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+        }
+
+        .archive-thumb.is-empty::before,
+        .archive-focus.is-empty::before {
+            content: attr(data-empty-label);
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            color: rgba(244, 239, 229, 0.42);
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+
+        .archive-thumb img,
+        .archive-focus img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #111;
+            filter: grayscale(0.1);
+        }
+
+        .archive-card-left {
+            left: 0;
+            top: 109px;
+            width: 228.48px;
+        }
+
+        .archive-card-left::before {
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: -50.32px;
+            width: 227.48px;
+            height: 295.83px;
+            background: rgba(255, 255, 255, 0.94);
+            z-index: -1;
+        }
+
+        .archive-card-left .archive-thumb {
+            width: 228.48px;
+            height: 206.04px;
+            background: linear-gradient(90deg, rgba(232, 232, 232, 0.92) 0%, rgba(244, 244, 244, 0.96) 44%, rgba(16, 16, 16, 0.08) 100%);
+        }
+
+        .archive-card-left .archive-card-caption {
+            position: absolute;
+            left: 0;
+            top: 271.8px;
+            width: 228.48px;
+        }
+
+        .archive-card-main .archive-focus {
+            width: 464.94px;
+            height: 347.76px;
+            background: #f4f0e8;
+            border: 12px solid #f4f0e8;
+            box-shadow: 0 18px 44px rgba(0, 0, 0, 0.3);
+        }
+
+        .archive-card-main {
+            left: 260px;
+            top: 31px;
+            width: 464.94px;
+        }
+
+        .archive-card-main::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: -32px;
+            width: 480px;
+            height: 411px;
+            background: rgba(255, 255, 255, 0.96);
+            z-index: -1;
+        }
+
+        .archive-card-main .archive-card-caption {
+            position: absolute;
+            left: 0;
+            top: 426px;
+            width: 334px;
+        }
+
+        .archive-card-right {
+            left: 751px;
+            top: 112px;
+            width: 328.95px;
+        }
+
+        .archive-card-right::before {
+            content: "";
+            position: absolute;
+            left: -15.85px;
+            top: -15.41px;
+            width: 362.81px;
+            height: 293.13px;
+            background: rgba(255, 255, 255, 0.94);
+            z-index: -1;
+        }
+
+        .archive-card-right .archive-thumb {
+            width: 328.95px;
+            height: 260.58px;
+            background: #e9e3d8;
+            border: 10px solid #e9e3d8;
+        }
+
+        .archive-card-right .archive-card-caption {
+            position: absolute;
+            left: 0;
+            top: 313px;
+            width: 284px;
+        }
+
+        .archive-thumb:hover:not(:disabled),
+        .archive-focus:hover {
+            transform: translateY(-2px);
+        }
+
+        .archive-thumb:disabled {
+            cursor: default;
+            opacity: 0.7;
+        }
+
+        .archive-card-caption {
+            margin-top: 0;
+            min-height: 46px;
+        }
+
+        .archive-card-name {
+            color: rgba(244, 239, 229, 0.76);
+            font-size: 12px;
+            line-height: 1.28;
+        }
+
+        .archive-card-role {
+            margin-top: 3px;
+            color: rgba(244, 239, 229, 0.42);
+            font-size: 12px;
+            line-height: 1.28;
+        }
+
+        .archive-caption {
+            color: var(--accent);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.12;
+        }
+
+        .archive-subcaption {
+            margin-top: 3px;
+            color: var(--accent);
+            font-size: 20px;
+            line-height: 1.12;
+            font-weight: 700;
+        }
+
+        .archive-bottomline {
+            position: absolute;
+            left: 24px;
+            top: 789px;
+            width: 396px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .archive-dots {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 10px;
+        }
+
+        .archive-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.22);
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .archive-dot.active {
+            background: var(--accent);
+            transform: scale(1.25);
+        }
+
+        .commentary-column {
+            position: absolute;
+            left: 1247px;
+            top: 105px;
+            width: 618px;
+            height: 825px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            background: #111;
+            padding: 68px 23px 23px 24px;
+        }
+
+        .commentary-column::before {
+            content: none;
+        }
+
+        .media-frame {
+            position: relative;
+            width: 570px;
+            height: 100%;
+        }
+
+        .video-frame {
+            position: relative;
+            width: 570px;
+            height: 312px;
+            background: #0b0b0b;
+            overflow: hidden;
+        }
+
+        .video-frame::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 570px;
+            height: 304px;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.62);
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .video-frame.has-video-data:not(.is-playing) {
+            cursor: pointer;
+        }
+
+        .video-frame::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 12%, transparent 88%, rgba(255, 255, 255, 0.02)),
+                repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px 4px);
+            mix-blend-mode: screen;
+            opacity: 0.42;
+        }
+
+        .video-frame iframe,
+        .video-frame video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 570px;
+            height: 304px;
+            background: #000;
+        }
+
+        .video-frame iframe {
+            border: none;
+        }
+
+        .video-frame video {
+            object-fit: contain;
+        }
+
+        .video-frame:not(.is-playing) iframe,
+        .video-frame.empty iframe,
+        .video-frame:not(.is-playing) video,
+        .video-frame.empty video {
+            display: none;
+        }
+
+        .video-frame.is-playing .video-quote,
+        .video-frame.is-playing .video-play-tag,
+        .video-frame.is-playing .video-timebar,
+        .video-frame.is-playing .video-quote-mark {
+            opacity: 0;
+        }
+
+        .video-play-tag {
+            position: absolute;
+            left: 42px;
+            top: 14px;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+            pointer-events: none;
+            color: rgba(244, 239, 229, 0.34);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            transition: opacity 0.2s ease;
+        }
+
+        .video-play-tag::after {
+            content: " ▶";
+            color: rgba(244, 239, 229, 0.54);
+        }
+
+        .video-timebar {
+            position: absolute;
+            left: 42px;
+            right: 44px;
+            bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .video-chip {
+            color: rgba(244, 239, 229, 0.46);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .video-quote {
+            position: absolute;
+            left: 60px;
+            top: 72px;
+            width: 470px;
+            color: #d79c10;
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 14px;
+            line-height: 1.18;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            white-space: pre-wrap;
+            text-wrap: balance;
+            text-shadow: 0 0 1px rgba(215, 156, 16, 0.5);
+            z-index: 2;
+            transition: opacity 0.2s ease;
+        }
+
+        .video-quote-mark {
+            position: absolute;
+            left: 160px;
+            top: 216px;
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            z-index: 2;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .video-quote-square {
+            width: 14px;
+            height: 14px;
+            display: grid;
+            place-items: center;
+            background: var(--accent);
+            color: #090909;
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .video-quote-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding-bottom: 1px;
+        }
+
+        .video-quote-lines span {
+            display: block;
+            height: 2px;
+            background: rgba(244, 239, 229, 0.82);
+        }
+
+        .video-quote-lines span:nth-child(1) {
+            width: 40px;
+        }
+
+        .video-quote-lines span:nth-child(2) {
+            width: 34px;
+        }
+
+        .commentary-list {
+            position: absolute;
+            left: 0;
+            top: 344px;
+            width: 570px;
+            height: 414px;
+            overflow: auto;
+            padding: 0;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+        }
+
+        .commentary-list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .commentary-list::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 999px;
+        }
+
+        .commentary-item {
+            padding: 23px;
+            margin-bottom: 11px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        .commentary-label {
+            margin-bottom: 16px;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: 0.01em;
+        }
+
+        .commentary-body {
+            max-width: 520px;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 15px;
+            line-height: 1.42;
+        }
+
+        .commentary-body p {
+            margin-bottom: 0.86em;
+        }
+
+        .commentary-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .right-scale {
+            display: none;
+        }
+
+        .right-scale::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 913px;
+            background: repeating-linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.72) 0 1px,
+                transparent 1px 13.823px
+            );
+            background-position: 0 0.5px;
+            opacity: 0.86;
+        }
+
+        .right-scale-progress {
+            position: absolute;
+            left: -29px;
+            width: 45px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.96);
+            opacity: 0.98;
+            transform: translateY(-50%);
+        }
+
+        .right-center-divider,
+        .right-side-divider {
+            display: none;
+        }
+
+        .right-center-divider {
+            left: 1160px;
+        }
+
+        .right-side-divider {
+            left: 1821px;
+        }
+
+        .counter {
+            display: none;
+        }
+
+        .photo-viewer {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.92);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 40;
+        }
+
+        .viewer-photo {
+            max-width: 86vw;
+            max-height: 82vh;
+            object-fit: contain;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .photo-prev,
+        .photo-next,
+        .close-viewer {
+            position: absolute;
+            border: none;
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .close-viewer {
+            top: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            font-size: 28px;
+        }
+
+        .photo-prev,
+        .photo-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 56px;
+            height: 72px;
+            font-size: 28px;
+        }
+
+        .photo-prev {
+            left: 20px;
+        }
+
+        .photo-next {
+            right: 20px;
+        }
+
+        .photo-counter {
+            position: absolute;
+            left: 50%;
+            bottom: 24px;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 0.08em;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage-viewport">
+        <div class="dual-stage" id="dualStage">
+            <section class="screen screen-left" id="leftScreen">
+                <header class="left-topbar">
+                    <div class="brand-lockup">
+                        <img src="resources/images/ui/brand.png" alt="北京中关村学院 × 中关村人工智能研究院">
+                    </div>
+                    <div class="left-kicker" id="leftKicker">AI创世纪</div>
+                    <div></div>
+                </header>
+
+                <div class="left-body">
+                    <div class="hero-panel">
+                        <div class="hero-years" id="heroYears"></div>
+                        <div class="hero-year" id="heroYear">1956</div>
+
+                        <div class="globe-zone" id="globeStage">
+                            <div class="orbit-overlay">
+                                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none">
+                                    <path id="orbitPath" class="orbit-ring" d="M541 225 C465 356, 276 504, 416.41 611.38"></path>
+                                    <circle class="orbit-start-dot" cx="541" cy="225" r="7.52"></circle>
+                                    <circle id="orbitDot" class="orbit-dot" cx="416.41" cy="611.38" r="7.52"></circle>
+                                </svg>
+                            </div>
+                            <div class="globe-stage">
+                                <div class="globe-shell" id="globeShell">
+                                    <div id="dualGlobeContainer"></div>
+                                    <div class="globe-atmosphere"></div>
+                                </div>
+                            </div>
+                            <div class="left-bottom-year" id="leftBottomYear">1956</div>
+                        </div>
+                    </div>
+
+                    <div class="narrative-panel">
+                        <div class="ghost-years" id="ghostYears"></div>
+                        <div class="summary-card">
+                            <div class="summary-kicker" id="summaryKicker">AI创世纪</div>
+                            <div class="summary-title" id="summaryTitle">达特茅斯会议 - AI正式诞生！</div>
+                            <div class="summary-location" id="summaryLocation">达特茅斯学院 美国，新罕布什尔州</div>
+                            <div class="summary-body" id="summaryBody"></div>
+                        </div>
+                        <div class="archive-strip" id="leftArchiveStrip"></div>
+                    </div>
+                </div>
+
+                <footer class="left-timeline">
+                    <button class="left-timeline-nav left-timeline-prev" id="leftTimelinePrev" type="button" aria-label="上一页">‹</button>
+                    <div class="timeline-track" id="timelineTrack"></div>
+                    <button class="left-timeline-nav left-timeline-next" id="leftTimelineNext" type="button" aria-label="下一页">›</button>
+                </footer>
+
+                <div class="left-screen-divider" aria-hidden="true"></div>
+            </section>
+
+            <section class="screen screen-right">
+                <header class="right-topbar">
+                    <div class="right-brand">
+                        <img src="resources/images/ui/brand.png" alt="北京中关村学院 × 中关村人工智能研究院">
+                    </div>
+                    <div class="right-section-headings">
+                        <div class="section-heading">Key Figures & Archive</div>
+                        <div class="section-heading">Commentary & Media</div>
+                    </div>
+                </header>
+
+                <div class="right-body">
+                    <section class="archive-column">
+                        <div class="archive-header">
+                            <h2 id="archiveTitle">达特茅斯会议</h2>
+                            <div class="panel-year" id="archiveYear">1956</div>
+                        </div>
+
+                        <div class="figure-row" id="figureRow"></div>
+
+                        <div class="archive-stage" id="archiveStage">
+                            <article class="archive-card archive-card-left">
+                                <button class="archive-thumb" id="archiveThumbPrev" type="button" data-empty-label="暂无图片"></button>
+                                <div class="archive-card-caption">
+                                    <div class="archive-card-name" id="archivePrevCaption">John McCarthy</div>
+                                    <div class="archive-card-role" id="archivePrevSubcaption">提出“AI”术语</div>
+                                </div>
+                            </article>
+
+                            <article class="archive-card archive-card-main">
+                                <button class="archive-focus media-photo" id="archiveFocusButton" type="button" data-photo-index="0" data-empty-label="暂无档案">
+                                    <img id="archiveFocus" alt="主档案照片">
+                                </button>
+                                <div class="archive-card-caption">
+                                    <div class="archive-caption" id="archiveCaption">John McCarthy</div>
+                                    <div class="archive-subcaption" id="archiveSubcaption">提出“AI”术语</div>
+                                </div>
+                            </article>
+
+                            <article class="archive-card archive-card-right">
+                                <button class="archive-thumb" id="archiveThumbNext" type="button" data-empty-label="暂无图片"></button>
+                                <div class="archive-card-caption">
+                                    <div class="archive-card-name" id="archiveNextCaption">John McCarthy</div>
+                                    <div class="archive-card-role" id="archiveNextSubcaption">提出“AI”术语</div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="archive-bottomline">
+                            <div class="archive-dots" id="archiveDots"></div>
+                        </div>
+                    </section>
+
+                    <section class="commentary-column">
+                        <div class="media-frame">
+                            <div class="video-frame empty" id="videoFrame">
+                                <div class="video-play-tag" aria-hidden="true">Play</div>
+                                <div class="video-quote-mark" aria-hidden="true">
+                                    <span class="video-quote-square">m</span>
+                                    <span class="video-quote-lines">
+                                        <span></span>
+                                        <span></span>
+                                    </span>
+                                </div>
+                                <div class="video-timebar" aria-hidden="true">
+                                    <span class="video-chip">SP</span>
+                                    <span class="video-chip" id="mediaTimecode">00:00:03</span>
+                                </div>
+                                <div class="video-quote" id="videoQuote">暂无媒体资料</div>
+                                <iframe id="mediaVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="commentary-list" id="commentaryList"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right-center-divider" aria-hidden="true"></div>
+                <div class="right-scale" aria-hidden="true">
+                    <div class="right-scale-progress" id="rightScaleProgress"></div>
+                </div>
+                <div class="right-side-divider" aria-hidden="true"></div>
+
+                <footer class="right-timeline">
+                    <button class="right-timeline-nav right-timeline-prev" id="topPrevBtn" type="button" aria-label="上一页">‹</button>
+                    <div class="timeline-track" id="rightTimelineTrack"></div>
+                    <button class="right-timeline-nav right-timeline-next" id="topNextBtn" type="button" aria-label="下一页">›</button>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function _loadDefaultMilestones() {
+            document.write('<script src="milestones-data-default.js"><\/script>');
+        }
+    </script>
+    <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
+    <script src="shared/milestone-view.js"></script>
+    <script src="shared/swipe-navigation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script>
+        const SCREEN_WIDTH = 1920;
+        const SCREEN_HEIGHT = 1080;
+        const STAGE_WIDTH = SCREEN_WIDTH * 2;
+        const STAGE_HEIGHT = SCREEN_HEIGHT;
+        const AUTOPLAY_INTERVAL_MS = 10000;
+        const AUTOPLAY_IDLE_DELAY_MS = 5 * 60 * 1000;
+
+        let currentIndex = 0;
+        let currentArchiveIndex = 0;
+        let isAutoplaying = false;
+        let autoplayTimer = null;
+        let idleTimer = null;
+        const vmCache = new Map();
+        const imagePreloadCache = new Map();
+
+        let globeScene;
+        let globeCamera;
+        let globeRenderer;
+        let globeMesh;
+        let globeHaloMesh;
+        let globeCloudMesh;
+        let globeMarker;
+        let globeMarkers = [];
+        let globePrimaryCoordinate = null;
+        const GLOBE_RENDER_MODE = 'interactive';
+        const GLOBE_TEXTURE_VERSION = '20260413c';
+        const FIGMA_GLOBE_ASSET_URL = `resources/images/figma-globe.png?v=${GLOBE_TEXTURE_VERSION}`;
+        const GLOBE_TEXTURE_URLS = {
+            water: `resources/textures/earth-water.png?v=${GLOBE_TEXTURE_VERSION}`,
+            topo: `resources/textures/earth-topology.png?v=${GLOBE_TEXTURE_VERSION}`,
+            clouds: `resources/textures/clouds.png?v=${GLOBE_TEXTURE_VERSION}`
+        };
+        const GLOBE_CAM_RADIUS = 2.06;
+        const GLOBE_HALO_RADIUS = 1.02;
+        const LEFT_ORBIT_START = { x: 541, y: 225 };
+        const LEFT_ORBIT_DEFAULT_DOT = { x: 416.41, y: 611.38 };
+        const LEFT_ORBIT_FIGMA_DOT = { x: 408.89, y: 603.86 };
+        const randomPhi = Math.PI * (0.25 + Math.random() * 0.5);
+        const randomTheta = Math.PI * (Math.random() * 2 - 1);
+        let camTarget = { phi: randomPhi, theta: randomTheta };
+        let camCurrent = { phi: randomPhi, theta: randomTheta };
+        let globeAnimationTime = 0;
+        let globeArrived = false;
+        let markerFlashDone = false;
+        let globeLastFrameTime = 0;
+        let isLeftDetailView = false;
+
+        const refs = {
+            stage: document.getElementById('dualStage'),
+            leftScreen: document.getElementById('leftScreen'),
+            leftKicker: document.getElementById('leftKicker'),
+            heroYears: document.getElementById('heroYears'),
+            heroYear: document.getElementById('heroYear'),
+            leftBottomYear: document.getElementById('leftBottomYear'),
+            ghostYears: document.getElementById('ghostYears'),
+            summaryKicker: document.getElementById('summaryKicker'),
+            summaryTitle: document.getElementById('summaryTitle'),
+            summaryLocation: document.getElementById('summaryLocation'),
+            summaryBody: document.getElementById('summaryBody'),
+            leftArchiveStrip: document.getElementById('leftArchiveStrip'),
+            timelineTrack: document.getElementById('timelineTrack'),
+            rightTimelineTrack: document.getElementById('rightTimelineTrack'),
+            leftTimelinePrev: document.getElementById('leftTimelinePrev'),
+            leftTimelineNext: document.getElementById('leftTimelineNext'),
+            leftTimeline: document.querySelector('.left-timeline'),
+            rightTimeline: document.querySelector('.right-timeline'),
+            archiveTitle: document.getElementById('archiveTitle'),
+            archiveYear: document.getElementById('archiveYear'),
+            figureRow: document.getElementById('figureRow'),
+            archiveThumbPrev: document.getElementById('archiveThumbPrev'),
+            archiveThumbNext: document.getElementById('archiveThumbNext'),
+            archiveStage: document.getElementById('archiveStage'),
+            archiveFocusButton: document.getElementById('archiveFocusButton'),
+            archiveFocus: document.getElementById('archiveFocus'),
+            archivePrevCaption: document.getElementById('archivePrevCaption'),
+            archivePrevSubcaption: document.getElementById('archivePrevSubcaption'),
+            archiveCaption: document.getElementById('archiveCaption'),
+            archiveSubcaption: document.getElementById('archiveSubcaption'),
+            archiveNextCaption: document.getElementById('archiveNextCaption'),
+            archiveNextSubcaption: document.getElementById('archiveNextSubcaption'),
+            archiveDots: document.getElementById('archiveDots'),
+            videoFrame: document.getElementById('videoFrame'),
+            mediaVideo: document.getElementById('mediaVideo'),
+            videoQuote: document.getElementById('videoQuote'),
+            mediaTimecode: document.getElementById('mediaTimecode'),
+            commentaryList: document.getElementById('commentaryList'),
+            topPrevBtn: document.getElementById('topPrevBtn'),
+            topNextBtn: document.getElementById('topNextBtn'),
+            rightScaleProgress: document.getElementById('rightScaleProgress'),
+            dualGlobeContainer: document.getElementById('dualGlobeContainer'),
+            globeShell: document.getElementById('globeShell'),
+            globeStage: document.getElementById('globeStage'),
+            orbitPath: document.getElementById('orbitPath'),
+            orbitDot: document.getElementById('orbitDot')
+        };
+
+        function escapeHtml(value) {
+            return String(value == null ? '' : value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        function stripHtml(value) {
+            if (window.MilestoneView && typeof window.MilestoneView.stripHtml === 'function') {
+                return window.MilestoneView.stripHtml(value);
+            }
+            return String(value || '')
+                .replace(/<br\s*\/?>/gi, '\n')
+                .replace(/<[^>]*>/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        function buildFallbackVm(milestone, index) {
+            const safeMilestone = milestone || {};
+            const photos = [];
+            (safeMilestone.photos || []).forEach((url) => {
+                if (url && !photos.includes(url)) photos.push(url);
+            });
+            if (safeMilestone.resources && Array.isArray(safeMilestone.resources.images)) {
+                safeMilestone.resources.images.forEach((url) => {
+                    if (url && !photos.includes(url)) photos.push(url);
+                });
+            }
+
+            const quote = String(safeMilestone.quote || '').trim();
+            const quoteAttribution = String(safeMilestone.quoteAttribution || '').trim();
+            const descriptionText = stripHtml(safeMilestone.description || '');
+            const commentarySections = [];
+            if (quote && quote !== '待补充') {
+                const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? '来源：' : '署名：';
+                commentarySections.push({
+                    label: '引言摘录',
+                    html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
+                });
+            }
+            const customSections = Array.isArray(safeMilestone.commentarySections)
+                ? safeMilestone.commentarySections.filter((section) => stripHtml(section && section.html))
+                : [];
+            if (customSections.length > 0) {
+                customSections.forEach((section) => {
+                    commentarySections.push({
+                        label: section.label || '内容解读',
+                        html: section.html
+                    });
+                });
+            } else if (descriptionText) {
+                commentarySections.push({ label: '背景解读', html: descriptionText });
+            }
+            if (commentarySections.length === 0) {
+                commentarySections.push({ label: '内容整理中', html: '暂无补充说明' });
+            }
+
+            const primaryVideo = safeMilestone.resources && Array.isArray(safeMilestone.resources.videos) && safeMilestone.resources.videos.length > 0
+                ? safeMilestone.resources.videos[0]
+                : null;
+            const category = safeMilestone.category || safeMilestone.subtitle || '';
+
+            return {
+                raw: safeMilestone,
+                year: safeMilestone.year || '',
+                title: safeMilestone.title || '',
+                category,
+                subtitle: safeMilestone.subtitle || category,
+                location: safeMilestone.location || { name: '', country: '', coordinates: [] },
+                descriptionHtml: safeMilestone.description || '',
+                descriptionText,
+                figures: Array.isArray(safeMilestone.figures) ? safeMilestone.figures : [],
+                photos,
+                primaryPhoto: photos[0] || '',
+                archivePhotos: photos.slice(1),
+                primaryVideo,
+                videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
+                quoteHtml: quote,
+                quotePage: String(safeMilestone.quotePage || '').trim(),
+                commentaryOverrideSections: Array.isArray(safeMilestone.commentarySections) ? safeMilestone.commentarySections : [],
+                commentarySections,
+                timeline: milestones.map((item, itemIndex) => ({
+                    year: item.year,
+                    title: item.title,
+                    active: itemIndex === index
+                }))
+            };
+        }
+
+        function getVm(index) {
+            if (vmCache.has(index)) {
+                return vmCache.get(index);
+            }
+
+            const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
+                ? window.MilestoneView.normalizeMilestone(milestones[index], index, milestones)
+                : buildFallbackVm(milestones[index], index);
+            vmCache.set(index, vm);
+            return vm;
+        }
+
+        function preloadImage(url) {
+            if (!url) return;
+            if (imagePreloadCache.has(url)) return;
+
+            const image = new Image();
+            image.decoding = 'async';
+            image.loading = 'eager';
+            image.src = url;
+            imagePreloadCache.set(url, image);
+        }
+
+        function preloadMilestoneAssets(index) {
+            if (index < 0 || index >= milestones.length) return;
+            const vm = getVm(index);
+            sortPhotosForDisplay(vm.photos)
+                .slice(0, 5)
+                .forEach(preloadImage);
+        }
+
+        function preloadAdjacentAssets(index) {
+            preloadMilestoneAssets(index);
+            preloadMilestoneAssets(index - 1);
+            preloadMilestoneAssets(index + 1);
+        }
+
+        function buildContextYears(year, beforeCount, afterCount) {
+            const safeYear = Number(year);
+            if (Number.isNaN(safeYear)) return [];
+            const years = [];
+            for (let offset = beforeCount; offset >= 1; offset -= 1) {
+                years.push(safeYear - offset);
+            }
+            for (let offset = 1; offset <= afterCount; offset += 1) {
+                years.push(safeYear + offset);
+            }
+            return years;
+        }
+
+        function buildLocationLine(location) {
+            return [location && location.name, location && location.country]
+                .filter(Boolean)
+                .join('  ');
+        }
+
+        function buildLocationHtml(location) {
+            const name = escapeHtml(location && location.name ? location.name : '');
+            const country = escapeHtml(location && location.country ? location.country : '');
+            if (name && country) {
+                return `${name}<br>${country}`;
+            }
+            if (name) return name;
+            if (country) return country;
+            return '地点待补充';
+        }
+
+        function buildSummaryHtml(vm) {
+            if (vm.descriptionHtml && String(vm.descriptionHtml).trim()) {
+                return vm.descriptionHtml;
+            }
+
+            if (vm.descriptionText) {
+                return `<p>${escapeHtml(vm.descriptionText)}</p>`;
+            }
+
+            return '<p>暂无事件摘要</p>';
+        }
+
+        function initials(name) {
+            const words = String(name || '').trim().split(/\s+/).filter(Boolean);
+            if (words.length === 0) return 'AI';
+            if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+            return words.slice(0, 2).map((item) => item[0].toUpperCase()).join('');
+        }
+
+        function getFigureAvatarSource(figure, vm, portraitPool, index) {
+            if (figure && figure.avatar) {
+                return {
+                    src: figure.avatar,
+                    style: figure.avatarStyle || ''
+                };
+            }
+
+            if (portraitPool[index]) {
+                return {
+                    src: portraitPool[index],
+                    style: ''
+                };
+            }
+
+            if (vm && vm.year === 1956) {
+                return {
+                    src: 'resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg',
+                    style: 'object-position: 36% 30%; transform: scale(1.45);'
+                };
+            }
+
+            return null;
+        }
+
+        function buildFigureAvatar(figure, avatarSource) {
+            if (avatarSource && avatarSource.src) {
+                const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
+                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || '关键人物')}"${styleAttr}>`;
+            }
+            return `<span>${escapeHtml(initials(figure.name))}</span>`;
+        }
+
+        function isPortraitLikePhoto(url) {
+            return /\/people\/|portrait|headshot|avatar|人物|人像/i.test(String(url || ''));
+        }
+
+        function isDocumentLikePhoto(url) {
+            return /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(String(url || ''));
+        }
+
+        function choosePreferredArchiveIndex(photos) {
+            const safePhotos = Array.isArray(photos) ? photos.filter(Boolean) : [];
+            if (safePhotos.length <= 1) return 0;
+
+            const firstNonDocumentIndex = safePhotos.findIndex((url) => !isDocumentLikePhoto(url));
+            if (firstNonDocumentIndex > 0) {
+                return firstNonDocumentIndex;
+            }
+
+            if (safePhotos.length >= 3 && !safePhotos.some(isPortraitLikePhoto)) {
+                return 1;
+            }
+
+            return 0;
+        }
+
+        function buildArchiveFigureMeta(vm, index, fallbackName) {
+            const figures = Array.isArray(vm.figures) ? vm.figures.filter(Boolean) : [];
+            if (figures.length > 0) {
+                const figure = figures[((index % figures.length) + figures.length) % figures.length] || figures[0];
+                return {
+                    name: figure.name || fallbackName || '关键人物',
+                    role: figure.role || buildLocationLine(vm.location) || '关键参与者'
+                };
+            }
+
+            return {
+                name: fallbackName || vm.title || '历史档案',
+                role: buildLocationLine(vm.location) || vm.category || '历史事件'
+            };
+        }
+
+        function extractWorkTitleFromAttribution(attribution) {
+            const match = String(attribution || '').match(/《([^》]+)》/);
+            return match ? String(match[1] || '').trim() : '';
+        }
+
+        function getConfiguredImageMeta(vm, url) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const map = raw && raw.resources && raw.resources.imageMeta ? raw.resources.imageMeta : (raw.imageMeta || null);
+            if (!map || typeof map !== 'object') return null;
+            const entry = map[url];
+            if (!entry || typeof entry !== 'object') return null;
+
+            const caption = String(entry.caption || entry.title || entry.name || '').trim();
+            const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+            if (!caption && !subcaption) return null;
+            return { caption, subcaption };
+        }
+
+        function buildArchivePhotoMeta(vm, url) {
+            const value = String(url || '').trim();
+            if (!value) return { name: '', role: '' };
+
+            const configured = getConfiguredImageMeta(vm, value);
+            const title = String(vm && vm.title ? vm.title : '').trim();
+            const year = vm && vm.year ? String(vm.year) : '';
+            const workTitle = extractWorkTitleFromAttribution(vm && vm.quoteAttribution ? vm.quoteAttribution : '');
+
+            if (isPortraitLikePhoto(value)) {
+                const autoMeta = {
+                    name: '人物肖像',
+                    role: '相关研究者照片'
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
+                const autoMeta = {
+                    name: '结构示意',
+                    role: title ? `${title} 架构图` : '模型架构图'
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            if (/\/papers\//i.test(value) || /_papers_/i.test(value) || isDocumentLikePhoto(value)) {
+                const autoMeta = {
+                    name: '论文页面',
+                    role: workTitle ? `《${workTitle}》` : (title || '原文截图或摘要')
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
+                const autoMeta = {
+                    name: '历史照片',
+                    role: title || (year ? `${year} 年相关档案` : '事件相关档案')
+                };
+                return {
+                    name: (configured && configured.caption) || autoMeta.name,
+                    role: (configured && configured.subcaption) || autoMeta.role
+                };
+            }
+
+            const autoMeta = {
+                name: '档案图片',
+                role: title || (vm && vm.category) || '事件相关资料'
+            };
+            return {
+                name: (configured && configured.caption) || autoMeta.name,
+                role: (configured && configured.subcaption) || autoMeta.role
+            };
+        }
+
+        function extractVideoQuote(vm) {
+            const candidates = [
+                vm.quoteHtml,
+                Array.isArray(vm.commentarySections) && vm.commentarySections[0] ? vm.commentarySections[0].html : '',
+                vm.descriptionText
+            ];
+
+            const raw = candidates.map((item) => stripHtml(item || '')).find(Boolean) || '暂无媒体资料';
+            return raw.length > 120 ? `${raw.slice(0, 120).trim()}…` : raw;
+        }
+
+        function splitTextByPunctuation(text, targetParts) {
+            const normalized = stripHtml(text || '').replace(/\s+/g, ' ').trim();
+            if (!normalized) return [];
+
+            const parts = [];
+            const estimatedLength = Math.max(28, Math.ceil(normalized.length / Math.max(1, targetParts)));
+            let cursor = 0;
+            while (cursor < normalized.length && parts.length < targetParts) {
+                let end = Math.min(normalized.length, cursor + estimatedLength);
+                if (end < normalized.length) {
+                    const nextBreak = normalized.slice(end).search(/[，。；：,.!?！？]/);
+                    if (nextBreak >= 0 && nextBreak < 20) {
+                        end += nextBreak + 1;
+                    }
+                }
+                parts.push(normalized.slice(cursor, end).trim());
+                cursor = end;
+            }
+            return parts.filter(Boolean);
+        }
+
+        function buildRightCommentarySections(vm) {
+            const sourceSections = Array.isArray(vm.commentarySections)
+                ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
+                : [];
+            const sections = sourceSections.slice(0, 3).map((section) => ({
+                label: section.label || '署名',
+                text: stripHtml(section.html || '')
+            }));
+
+            const fallbackText = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
+            const fillerParts = splitTextByPunctuation(fallbackText, 3);
+
+            let fillerIndex = 0;
+            while (sections.length < 3) {
+                sections.push({
+                    label: '署名',
+                    text: fillerParts[fillerIndex] || sections[sections.length - 1]?.text || '暂无补充说明'
+                });
+                fillerIndex += 1;
+            }
+
+            return sections.slice(0, 3);
+        }
+
+        function scorePhoto(url) {
+            const value = String(url || '').toLowerCase();
+            if (!value) return -999;
+            if (value.includes('/historical/')) return 5;
+            if (value.includes('/people/')) return 4;
+            if (value.includes('/architecture/')) return 2;
+            if (value.includes('/papers/')) return 1;
+            return 3;
+        }
+
+        function sortPhotosForDisplay(photos) {
+            return [...(photos || [])]
+                .filter(Boolean)
+                .sort((a, b) => scorePhoto(b) - scorePhoto(a));
+        }
+
+        function clearAutoplayTimer() {
+            if (autoplayTimer) {
+                window.clearTimeout(autoplayTimer);
+                autoplayTimer = null;
+            }
+        }
+
+        function clearIdleTimer() {
+            if (idleTimer) {
+                window.clearTimeout(idleTimer);
+                idleTimer = null;
+            }
+        }
+
+        function scheduleAutoplayTick() {
+            clearAutoplayTimer();
+            if (!isAutoplaying || milestones.length <= 1) return;
+
+            autoplayTimer = window.setTimeout(() => {
+                const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
+                jumpTo(nextIndex, { resetAutoplay: false });
+                scheduleAutoplayTick();
+            }, AUTOPLAY_INTERVAL_MS);
+        }
+
+        function setAutoplayState(nextState) {
+            const shouldAutoplay = Boolean(nextState) && milestones.length > 1;
+            if (isAutoplaying === shouldAutoplay) {
+                if (!shouldAutoplay) {
+                    clearAutoplayTimer();
+                }
+                return;
+            }
+
+            isAutoplaying = shouldAutoplay;
+            if (isAutoplaying) {
+                clearIdleTimer();
+                scheduleAutoplayTick();
+            } else {
+                clearAutoplayTimer();
+            }
+        }
+
+        function resetAutoplayTimer() {
+            if (isAutoplaying) {
+                scheduleAutoplayTick();
+            }
+        }
+
+        function restartIdleCountdown() {
+            clearIdleTimer();
+            if (milestones.length <= 1) return;
+
+            idleTimer = window.setTimeout(() => {
+                setAutoplayState(true);
+            }, AUTOPLAY_IDLE_DELAY_MS);
+        }
+
+        function registerUserActivity(event) {
+            if (event && event.isTrusted === false) return;
+            if (isAutoplaying) {
+                setAutoplayState(false);
+            }
+            restartIdleCountdown();
+        }
+
+        function renderStaticGlobeFallback() {
+            refs.globeShell.classList.add('globe-shell-figma');
+            refs.dualGlobeContainer.innerHTML = `
+                <img class="globe-figma-image" src="${FIGMA_GLOBE_ASSET_URL}" alt="" draggable="false">
+            `;
+        }
+
+        function setStaticGlobeFocus() {
+            refs.orbitPath.setAttribute(
+                'd',
+                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C465 356, 276 504, ${LEFT_ORBIT_FIGMA_DOT.x} ${LEFT_ORBIT_FIGMA_DOT.y}`
+            );
+            refs.orbitDot.setAttribute('cx', String(LEFT_ORBIT_FIGMA_DOT.x));
+            refs.orbitDot.setAttribute('cy', String(LEFT_ORBIT_FIGMA_DOT.y));
+            refs.orbitPath.style.opacity = '1';
+            refs.orbitDot.style.opacity = '1';
+        }
+
+        function getEffectivePixelRatio() {
+            const stageScale = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--stage-scale')) || 1;
+            return Math.min(2, Math.max(1, (window.devicePixelRatio || 1) * stageScale));
+        }
+
+        function getGlobeDeltaTime(now) {
+            if (!globeLastFrameTime) {
+                globeLastFrameTime = now;
+                return 1 / 60;
+            }
+
+            const delta = (now - globeLastFrameTime) / 1000;
+            globeLastFrameTime = now;
+            return Math.min(0.05, Math.max(1 / 240, delta));
+        }
+
+        function applyTextureDefaults(texture, isColorTexture = false) {
+            if (!texture || !globeRenderer || typeof THREE === 'undefined') return;
+
+            if (isColorTexture && 'colorSpace' in texture && THREE.SRGBColorSpace) {
+                texture.colorSpace = THREE.SRGBColorSpace;
+            }
+
+            if ('anisotropy' in texture && globeRenderer.capabilities && typeof globeRenderer.capabilities.getMaxAnisotropy === 'function') {
+                texture.anisotropy = Math.min(8, globeRenderer.capabilities.getMaxAnisotropy());
+            }
+        }
+
+        function createSolidTexture(r, g, b, isColorTexture = false) {
+            if (typeof THREE === 'undefined') return null;
+            const data = new Uint8Array([r, g, b, 255]);
+            const texture = new THREE.DataTexture(data, 1, 1, THREE.RGBAFormat);
+            texture.needsUpdate = true;
+            if ('minFilter' in texture && THREE.LinearFilter) {
+                texture.minFilter = THREE.LinearFilter;
+                texture.magFilter = THREE.LinearFilter;
+            }
+            if (isColorTexture && 'colorSpace' in texture && THREE.SRGBColorSpace) {
+                texture.colorSpace = THREE.SRGBColorSpace;
+            }
+            return texture;
+        }
+
+        function setEarthTextureUniform(material, uniformName, texture, isColorTexture = false) {
+            if (!material || !texture || typeof THREE === 'undefined') return;
+            applyTextureDefaults(texture, isColorTexture);
+            texture.wrapS = THREE.RepeatWrapping;
+            texture.wrapT = THREE.ClampToEdgeWrapping;
+            material.uniforms[uniformName].value = texture;
+            if (uniformName === 'waterMap' && texture.image && texture.image.width && texture.image.height) {
+                material.uniforms.waterTexel.value.set(1 / texture.image.width, 1 / texture.image.height);
+            }
+        }
+
+        function createStylizedEarthMaterial() {
+            if (typeof THREE === 'undefined') return null;
+
+            return new THREE.ShaderMaterial({
+                uniforms: {
+                    waterMap: { value: createSolidTexture(255, 255, 255) },
+                    topoMap: { value: createSolidTexture(0, 0, 0) },
+                    waterTexel: { value: new THREE.Vector2(1, 1) }
+                },
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vViewNormal;
+                    varying vec3 vWorldNormal;
+                    void main() {
+                        vUv = uv;
+                        vViewNormal = normalize(normalMatrix * normal);
+                        vWorldNormal = normalize(mat3(modelMatrix) * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform sampler2D waterMap;
+                    uniform sampler2D topoMap;
+                    uniform vec2 waterTexel;
+                    varying vec2 vUv;
+                    varying vec3 vViewNormal;
+                    varying vec3 vWorldNormal;
+
+                    float saturate(float value) {
+                        return clamp(value, 0.0, 1.0);
+                    }
+
+                    float oceanSample(vec2 uv) {
+                        return smoothstep(0.38, 0.58, texture2D(waterMap, fract(uv)).r);
+                    }
+
+                    float coastline(vec2 uv) {
+                        vec2 dx = vec2(max(waterTexel.x * 1.9, 0.0003), 0.0);
+                        vec2 dy = vec2(0.0, max(waterTexel.y * 1.9, 0.0003));
+                        float center = oceanSample(uv);
+                        float east = oceanSample(uv + dx);
+                        float west = oceanSample(uv - dx);
+                        float north = oceanSample(uv + dy);
+                        float south = oceanSample(uv - dy);
+                        return smoothstep(0.05, 0.4, abs(center - east) + abs(center - west) + abs(center - north) + abs(center - south));
+                    }
+
+                    void main() {
+                        vec3 viewNormal = normalize(vViewNormal);
+                        vec3 worldNormal = normalize(vWorldNormal);
+                        float oceanMask = oceanSample(vUv);
+                        float landMask = 1.0 - oceanMask;
+                        float topo = texture2D(topoMap, vUv).r;
+                        float elevation = smoothstep(0.06, 0.88, topo);
+                        float ridge = smoothstep(0.42, 0.92, topo);
+                        float coast = coastline(vUv);
+                        vec2 topoStep = vec2(max(waterTexel.x * 1.25, 0.0003), max(waterTexel.y * 1.25, 0.0003));
+                        float topoEast = texture2D(topoMap, vUv + vec2(topoStep.x, 0.0)).r;
+                        float topoWest = texture2D(topoMap, vUv - vec2(topoStep.x, 0.0)).r;
+                        float topoNorth = texture2D(topoMap, vUv + vec2(0.0, topoStep.y)).r;
+                        float topoSouth = texture2D(topoMap, vUv - vec2(0.0, topoStep.y)).r;
+                        vec2 topoGradient = vec2(topoEast - topoWest, topoNorth - topoSouth);
+                        float relief = smoothstep(0.01, 0.18, length(topoGradient));
+                        float reliefLight = saturate(0.5 + topoGradient.x * 3.8 - topoGradient.y * 2.4);
+                        float latitude = abs(vUv.y * 2.0 - 1.0);
+                        vec3 sunDir = normalize(vec3(0.86, 0.18, 0.48));
+                        vec3 bounceDir = normalize(vec3(-0.54, -0.24, 0.8));
+                        vec3 keyDir = normalize(vec3(-0.44, 0.56, 0.95));
+                        vec3 fillDir = normalize(vec3(0.72, -0.1, 0.62));
+                        float sunLight = saturate(dot(worldNormal, sunDir) * 0.5 + 0.5);
+                        float bounceLight = saturate(dot(worldNormal, bounceDir) * 0.5 + 0.5);
+                        float keyLight = saturate(dot(viewNormal, keyDir) * 0.5 + 0.5);
+                        float fillLight = saturate(dot(viewNormal, fillDir) * 0.5 + 0.5);
+                        float faceLight = saturate(viewNormal.z * 0.5 + 0.5);
+                        float horizon = pow(1.0 - faceLight, 1.85);
+                        float shadowBand = pow(1.0 - faceLight, 1.65);
+
+                        vec3 oceanDeep = vec3(0.03, 0.11, 0.24);
+                        vec3 oceanMid = vec3(0.16, 0.34, 0.56);
+                        vec3 oceanHighlight = vec3(0.69, 0.82, 0.91);
+                        vec3 landShadow = vec3(0.28, 0.08, 0.01);
+                        vec3 landBase = vec3(0.62, 0.2, 0.01);
+                        vec3 landMid = vec3(0.965, 0.537, 0.0);
+                        vec3 landHighlight = vec3(1.0, 0.76, 0.22);
+
+                        float oceanLight = saturate(0.08 + sunLight * 0.34 + keyLight * 0.34 + fillLight * 0.12 + (1.0 - latitude) * 0.1);
+                        vec3 ocean = mix(oceanDeep, oceanMid, oceanLight);
+                        float oceanSpec = pow(saturate(keyLight * 0.72 + faceLight * 0.28), 11.0) * (0.2 + (1.0 - latitude) * 0.12);
+                        ocean = mix(ocean, oceanHighlight, coast * 0.08 + oceanSpec * 0.22 + relief * 0.05);
+                        ocean = mix(ocean, vec3(0.84, 0.95, 1.0), oceanMask * oceanSpec * 0.1);
+                        ocean = mix(ocean, vec3(0.86, 0.92, 0.97), smoothstep(0.8, 1.0, latitude) * 0.12 + horizon * 0.04);
+
+                        float baseLandLight = smoothstep(0.08, 0.52, elevation + sunLight * 0.18 + bounceLight * 0.08);
+                        float warmMask = saturate(elevation * 0.56 + sunLight * 0.34 + relief * 0.22 + coast * 0.06 - latitude * 0.08);
+                        warmMask = smoothstep(0.18, 0.92, warmMask);
+                        vec3 land = mix(landShadow, landBase, baseLandLight);
+                        land = mix(land, landMid, warmMask * 0.98);
+                        land = mix(land, landHighlight, smoothstep(0.4, 1.0, keyLight * 0.58 + reliefLight * relief * 0.56 + ridge * 0.18));
+                        land = mix(land, vec3(0.22, 0.06, 0.0), shadowBand * (0.18 + (1.0 - sunLight) * 0.12));
+                        land = mix(land, vec3(1.0, 0.8, 0.28), coast * 0.1);
+                        land = mix(land, vec3(0.99, 0.7, 0.14), smoothstep(0.8, 1.0, latitude) * 0.03);
+                        land = mix(land, vec3(0.5, 0.16, 0.02), smoothstep(0.02, 0.24, topo) * 0.12);
+                        land *= mix(0.86, 1.14, reliefLight * relief + keyLight * 0.06);
+                        land = mix(land, vec3(1.0, 0.76, 0.22), relief * reliefLight * 0.1);
+                        land = mix(land, vec3(1.0, 0.5, 0.07), smoothstep(0.2, 0.9, warmMask) * 0.09);
+
+                        vec3 color = mix(land, ocean, oceanMask);
+                        color *= mix(0.68, 1.05, faceLight);
+                        color = mix(color, vec3(0.48, 0.64, 0.82), horizon * (oceanMask * 0.18 + landMask * 0.04));
+                        color = mix(color, vec3(1.0, 0.5, 0.07), landMask * pow(keyLight, 2.0) * 0.08);
+                        color = mix(color, vec3(0.76, 0.88, 0.98), oceanMask * oceanSpec * 0.05);
+
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+        }
+
+        function createStylizedCloudTexture(texture) {
+            if (!texture || typeof THREE === 'undefined' || typeof document === 'undefined' || !texture.image) {
+                return texture;
+            }
+
+            const width = texture.image.width || 0;
+            const height = texture.image.height || 0;
+            if (!width || !height) return texture;
+
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const context = canvas.getContext('2d', { willReadFrequently: true });
+            if (!context) return texture;
+
+            context.drawImage(texture.image, 0, 0, width, height);
+            const imageData = context.getImageData(0, 0, width, height);
+            const { data } = imageData;
+            for (let index = 0; index < data.length; index += 4) {
+                const average = (data[index] + data[index + 1] + data[index + 2]) / 3;
+                const alpha = data[index + 3] / 255;
+                const density = Math.max(alpha, 1 - average / 255);
+                data[index] = 255;
+                data[index + 1] = 255;
+                data[index + 2] = 255;
+                data[index + 3] = Math.round(Math.min(1, Math.pow(density, 0.88) * 1.08) * 255);
+            }
+            context.putImageData(imageData, 0, 0);
+
+            const softenedCanvas = document.createElement('canvas');
+            softenedCanvas.width = width;
+            softenedCanvas.height = height;
+            const softenedContext = softenedCanvas.getContext('2d');
+            if (!softenedContext) {
+                const directTexture = new THREE.CanvasTexture(canvas);
+                directTexture.wrapS = THREE.RepeatWrapping;
+                directTexture.wrapT = THREE.ClampToEdgeWrapping;
+                applyTextureDefaults(directTexture, false);
+                return directTexture;
+            }
+            softenedContext.clearRect(0, 0, width, height);
+            softenedContext.filter = 'blur(1.6px)';
+            softenedContext.drawImage(canvas, 0, 0, width, height);
+            softenedContext.filter = 'none';
+            softenedContext.globalAlpha = 0.72;
+            softenedContext.drawImage(canvas, 0, 0, width, height);
+            softenedContext.globalAlpha = 1;
+
+            const stylizedTexture = new THREE.CanvasTexture(softenedCanvas);
+            stylizedTexture.wrapS = THREE.RepeatWrapping;
+            stylizedTexture.wrapT = THREE.ClampToEdgeWrapping;
+            applyTextureDefaults(stylizedTexture, false);
+            return stylizedTexture;
+        }
+
+        function latLngToSpherePosition(lat, lng, radius) {
+            const latRad = lat * (Math.PI / 180);
+            const lngRad = lng * (Math.PI / 180);
+            const cosLat = Math.cos(latRad);
+            return {
+                x: radius * cosLat * Math.cos(lngRad),
+                y: radius * Math.sin(latRad),
+                z: -radius * cosLat * Math.sin(lngRad)
+            };
+        }
+
+        function normalizeLocationCoordinates(rawCoordinates) {
+            if (!Array.isArray(rawCoordinates)) return [];
+
+            const coordsList = Array.isArray(rawCoordinates[0]) ? rawCoordinates : [rawCoordinates];
+            return coordsList
+                .map((pair) => Array.isArray(pair) ? [Number(pair[0]), Number(pair[1])] : [Number.NaN, Number.NaN])
+                .filter(([lat, lng]) =>
+                    Number.isFinite(lat) &&
+                    Number.isFinite(lng) &&
+                    lat >= -90 &&
+                    lat <= 90 &&
+                    lng >= -180 &&
+                    lng <= 180 &&
+                    !(lat === 0 && lng === 0)
+                );
+        }
+
+        function useFallbackEarthMaterial() {
+            if (!globeMesh || typeof THREE === 'undefined') return;
+            globeMesh.material = new THREE.ShaderMaterial({
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    void main() {
+                        vUv = uv;
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    varying vec2 vUv;
+                    varying vec3 vNormal;
+                    float isLand(vec2 uv) {
+                        float lon = uv.x * 360.0 - 180.0;
+                        float lat = uv.y * 180.0 - 90.0;
+                        if (lon > -140.0 && lon < -55.0 && lat > 15.0 && lat < 70.0) return 0.9;
+                        if (lon > -82.0 && lon < -35.0 && lat > -55.0 && lat < 12.0) return 0.9;
+                        if (lon > -10.0 && lon < 40.0 && lat > 35.0 && lat < 70.0) return 0.9;
+                        if (lon > -18.0 && lon < 52.0 && lat > -35.0 && lat < 37.0) return 0.9;
+                        if (lon > 26.0 && lon < 145.0 && lat > 5.0 && lat < 73.0) return 0.9;
+                        if (lon > 95.0 && lon < 141.0 && lat > -10.0 && lat < 20.0) return 0.7;
+                        if (lon > 114.0 && lon < 154.0 && lat > -39.0 && lat < -11.0) return 0.9;
+                        return 0.0;
+                    }
+                    void main() {
+                        float land = isLand(vUv);
+                        float lat = vUv.y * 180.0 - 90.0;
+                        vec3 oceanDeep = vec3(0.03, 0.12, 0.25);
+                        vec3 oceanShallow = vec3(0.19, 0.38, 0.57);
+                        vec3 landBase = vec3(0.63, 0.3, 0.08);
+                        vec3 landHighlight = vec3(0.98, 0.77, 0.26);
+                        vec3 ocean = mix(oceanDeep, oceanShallow, smoothstep(-90.0, 90.0, lat) * 0.48 + 0.26);
+                        vec3 landCol = mix(landBase, landHighlight, 0.35 + (1.0 - abs(lat) / 90.0) * 0.45);
+                        vec3 color = mix(ocean, landCol, land);
+                        float polar = smoothstep(70.0, 85.0, abs(lat));
+                        color = mix(color, vec3(0.95, 0.97, 1.0), polar);
+                        float rim = pow(1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0))), 3.0);
+                        color += vec3(0.32, 0.49, 0.68) * rim * 0.35;
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+        }
+
+        function createGlobeHalo() {
+            if (!globeScene || typeof THREE === 'undefined') return;
+
+            if (globeHaloMesh) {
+                globeScene.remove(globeHaloMesh);
+            }
+
+            const haloGeometry = new THREE.SphereGeometry(GLOBE_HALO_RADIUS, 64, 64);
+            const haloMaterial = new THREE.ShaderMaterial({
+                transparent: true,
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                vertexShader: `
+                    varying vec3 vWorldPosition;
+                    varying vec3 vWorldNormal;
+                    void main() {
+                        vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+                        vWorldPosition = worldPosition.xyz;
+                        vWorldNormal = normalize(mat3(modelMatrix) * normal);
+                        gl_Position = projectionMatrix * viewMatrix * worldPosition;
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vWorldPosition;
+                    varying vec3 vWorldNormal;
+                    void main() {
+                        vec3 viewDir = normalize(cameraPosition - vWorldPosition);
+                        float fresnel = pow(1.0 - max(dot(viewDir, normalize(vWorldNormal)), 0.0), 3.4);
+                        float latitude = clamp(vWorldNormal.y * 0.5 + 0.5, 0.0, 1.0);
+                        vec3 coolGlow = vec3(0.28, 0.56, 0.98);
+                        vec3 warmGlow = vec3(1.0, 0.66, 0.22);
+                        vec3 color = mix(coolGlow, warmGlow, smoothstep(0.0, 0.7, latitude) * 0.35);
+                        gl_FragColor = vec4(color, fresnel * 0.11);
+                    }
+                `
+            });
+
+            globeHaloMesh = new THREE.Mesh(haloGeometry, haloMaterial);
+            globeScene.add(globeHaloMesh);
+        }
+
+        function createCloudLayer(texture) {
+            if (!globeScene || !texture || typeof THREE === 'undefined') return;
+
+            if (globeCloudMesh) {
+                globeScene.remove(globeCloudMesh);
+            }
+
+            const cloudInnerMaterial = new THREE.MeshBasicMaterial({
+                map: texture,
+                transparent: true,
+                opacity: 0.3,
+                color: new THREE.Color(0xf4f8ff),
+                depthWrite: false,
+                side: THREE.DoubleSide
+            });
+            const cloudOuterMaterial = new THREE.MeshBasicMaterial({
+                map: texture,
+                transparent: true,
+                opacity: 0.18,
+                color: new THREE.Color(0xffffff),
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+                side: THREE.DoubleSide
+            });
+
+            const cloudInnerMesh = new THREE.Mesh(new THREE.SphereGeometry(1.014, 64, 64), cloudInnerMaterial);
+            const cloudOuterMesh = new THREE.Mesh(new THREE.SphereGeometry(1.028, 64, 64), cloudOuterMaterial);
+            cloudOuterMesh.rotation.y = 0.12;
+
+            globeCloudMesh = new THREE.Group();
+            globeCloudMesh.add(cloudInnerMesh);
+            globeCloudMesh.add(cloudOuterMesh);
+            globeCloudMesh.rotation.z = 0.06;
+            globeScene.add(globeCloudMesh);
+        }
+
+        function createMarkerMesh() {
+            if (typeof THREE === 'undefined') return null;
+
+            const markerGroup = new THREE.Group();
+            const core = new THREE.Mesh(
+                new THREE.SphereGeometry(0.022, 20, 20),
+                new THREE.MeshBasicMaterial({
+                    color: 0xff5e3a,
+                    transparent: true,
+                    opacity: 0
+                })
+            );
+            const aura = new THREE.Mesh(
+                new THREE.SphereGeometry(0.042, 20, 20),
+                new THREE.MeshBasicMaterial({
+                    color: 0xffb160,
+                    transparent: true,
+                    opacity: 0,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false
+                })
+            );
+
+            markerGroup.add(aura);
+            markerGroup.add(core);
+            markerGroup.userData.core = core;
+            markerGroup.userData.aura = aura;
+            return markerGroup;
+        }
+
+        function setMarkerState(marker, scale, opacity) {
+            if (!marker) return;
+
+            marker.scale.setScalar(scale);
+
+            if (marker.userData && marker.userData.core) {
+                marker.userData.core.material.opacity = opacity;
+            }
+
+            if (marker.userData && marker.userData.aura) {
+                marker.userData.aura.material.opacity = opacity * 0.42;
+                marker.userData.aura.scale.setScalar(1.08 + (scale - 1) * 0.55);
+            }
+        }
+
+        function initGlobe() {
+            if (!refs.dualGlobeContainer) {
+                return false;
+            }
+
+            if (GLOBE_RENDER_MODE === 'figma') {
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
+
+            refs.globeShell.classList.remove('globe-shell-figma');
+
+            if (typeof THREE === 'undefined') {
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
+
+            const width = refs.dualGlobeContainer.clientWidth || 320;
+            const height = refs.dualGlobeContainer.clientHeight || 320;
+
+            globeScene = new THREE.Scene();
+            globeCamera = new THREE.PerspectiveCamera(35, width / height, 0.1, 1000);
+            globeCamera.position.set(0, 0, GLOBE_CAM_RADIUS);
+            globeCamera.lookAt(0, 0, 0);
+
+            try {
+                globeRenderer = new THREE.WebGLRenderer({
+                    antialias: true,
+                    alpha: true,
+                    powerPreference: 'high-performance',
+                    precision: 'mediump',
+                    stencil: false,
+                    depth: true
+                });
+            } catch (error) {
+                console.warn('Globe WebGL init failed, using static fallback.', error);
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
+            globeRenderer.setPixelRatio(getEffectivePixelRatio());
+            globeRenderer.setSize(width, height);
+            globeRenderer.setClearColor(0x000000, 0);
+            if ('outputColorSpace' in globeRenderer && typeof THREE !== 'undefined' && THREE.SRGBColorSpace) {
+                globeRenderer.outputColorSpace = THREE.SRGBColorSpace;
+            }
+            globeRenderer.domElement.id = 'dualGlobeCanvas';
+            refs.dualGlobeContainer.innerHTML = '';
+            refs.dualGlobeContainer.appendChild(globeRenderer.domElement);
+
+            const geometry = new THREE.SphereGeometry(1, 64, 64);
+            const material = createStylizedEarthMaterial();
+            if (!material) {
+                renderStaticGlobeFallback();
+                setStaticGlobeFocus();
+                return false;
+            }
+
+            globeMesh = new THREE.Mesh(geometry, material);
+            globeScene.add(globeMesh);
+            createGlobeHalo();
+
+            const textureLoader = new THREE.TextureLoader();
+            textureLoader.load(
+                GLOBE_TEXTURE_URLS.topo,
+                (texture) => {
+                    setEarthTextureUniform(material, 'topoMap', texture, false);
+                },
+                undefined,
+                () => console.warn('Unable to load local topology texture for globe.')
+            );
+            textureLoader.load(
+                GLOBE_TEXTURE_URLS.water,
+                (texture) => {
+                    setEarthTextureUniform(material, 'waterMap', texture, false);
+                },
+                undefined,
+                () => useFallbackEarthMaterial()
+            );
+            textureLoader.load(
+                GLOBE_TEXTURE_URLS.clouds,
+                (texture) => {
+                    applyTextureDefaults(texture, false);
+                    texture.wrapS = THREE.RepeatWrapping;
+                    texture.wrapT = THREE.ClampToEdgeWrapping;
+                    createCloudLayer(createStylizedCloudTexture(texture));
+                }
+            );
+
+            globeLastFrameTime = 0;
+            animateGlobe();
+            return true;
+        }
+
+        function latLngToCamAngles(lat, lng) {
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = (lng - 90) * (Math.PI / 180);
+            return { phi, theta };
+        }
+
+        function resetOrbitOverlay() {
+            refs.orbitPath.setAttribute(
+                'd',
+                `M${LEFT_ORBIT_START.x} ${LEFT_ORBIT_START.y} C465 356, 276 504, ${LEFT_ORBIT_DEFAULT_DOT.x} ${LEFT_ORBIT_DEFAULT_DOT.y}`
+            );
+            refs.orbitDot.setAttribute('cx', String(LEFT_ORBIT_DEFAULT_DOT.x));
+            refs.orbitDot.setAttribute('cy', String(LEFT_ORBIT_DEFAULT_DOT.y));
+            refs.orbitPath.style.opacity = '0';
+            refs.orbitDot.style.opacity = '0';
+        }
+
+        function clearGlobeMarkerMeshes() {
+            if (globeMesh) {
+                globeMarkers.forEach((marker) => globeMesh.remove(marker));
+            }
+
+            globeMarkers = [];
+            globeMarker = null;
+            globePrimaryCoordinate = null;
+        }
+
+        function clearGlobeMarkers() {
+            clearGlobeMarkerMeshes();
+            globeArrived = true;
+            markerFlashDone = true;
+            globeAnimationTime = 0;
+            camTarget.phi = camCurrent.phi;
+            camTarget.theta = camCurrent.theta;
+            if (GLOBE_RENDER_MODE === 'figma') {
+                setStaticGlobeFocus();
+                return;
+            }
+            resetOrbitOverlay();
+        }
+
+        function setGlobeMarkers(coordsList) {
+            if (!globeMesh) {
+                globeMarkers = [];
+                globeMarker = null;
+                globePrimaryCoordinate = null;
+                return;
+            }
+
+            clearGlobeMarkerMeshes();
+            globePrimaryCoordinate = coordsList[0] || null;
+
+            coordsList.forEach(([lat, lng]) => {
+                const markerMesh = createMarkerMesh();
+                if (!markerMesh) return;
+                const position = latLngToSpherePosition(lat, lng, 1.05);
+                markerMesh.position.set(position.x, position.y, position.z);
+                globeMesh.add(markerMesh);
+                globeMarkers.push(markerMesh);
+            });
+
+            globeMarker = globeMarkers[0] || null;
+        }
+
+        function rotateGlobeToCoordinates(coordinates) {
+            if (GLOBE_RENDER_MODE === 'figma' || !globeMesh) {
+                setStaticGlobeFocus();
+                return;
+            }
+
+            const coordsList = normalizeLocationCoordinates(coordinates);
+            // The first coordinate anchors the camera; any additional coordinates render as supplementary markers.
+            const [lat, lng] = coordsList[0] || [];
+            if (!coordsList.length || Number.isNaN(lat) || Number.isNaN(lng)) {
+                clearGlobeMarkers();
+                return;
+            }
+
+            const angles = latLngToCamAngles(lat, lng);
+            camTarget.phi = angles.phi;
+            camTarget.theta = angles.theta;
+            globeArrived = false;
+            markerFlashDone = false;
+            globeAnimationTime = 0;
+            setGlobeMarkers(coordsList);
+            refs.orbitPath.style.opacity = '0';
+            refs.orbitDot.style.opacity = '0';
+        }
+
+        function updateOrbitOverlay(point) {
+            const startX = LEFT_ORBIT_START.x;
+            const startY = LEFT_ORBIT_START.y;
+            const dotX = Math.min(SCREEN_WIDTH, Math.max(0, point.x));
+            const dotY = Math.min(SCREEN_HEIGHT, Math.max(0, point.y));
+            const controlAX = startX - 76;
+            const controlAY = startY + 131;
+            const controlBX = Math.max(210, dotX - 138);
+            const controlBY = Math.max(390, dotY - 126);
+            refs.orbitPath.setAttribute('d', `M${startX} ${startY} C${controlAX} ${controlAY}, ${controlBX} ${controlBY}, ${dotX} ${dotY}`);
+            refs.orbitDot.setAttribute('cx', dotX);
+            refs.orbitDot.setAttribute('cy', dotY);
+        }
+
+        function projectCoordinateToOverlay(coordinate, radius = 0.985) {
+            if (!coordinate || !globeCamera || !refs.globeShell || !refs.globeStage || !globeMesh || typeof THREE === 'undefined') return null;
+
+            const [lat, lng] = coordinate;
+            if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+
+            const localPoint = latLngToSpherePosition(lat, lng, radius);
+            const worldPoint = globeMesh.localToWorld(
+                new THREE.Vector3(localPoint.x, localPoint.y, localPoint.z)
+            );
+            const facing = worldPoint.clone().normalize().dot(globeCamera.position.clone().normalize());
+            if (facing <= 0.02) return null;
+
+            const projected = worldPoint.project(globeCamera);
+            const shellRect = refs.globeShell.getBoundingClientRect();
+            const stageRect = refs.globeStage.getBoundingClientRect();
+            if (!shellRect.width || !shellRect.height || !stageRect.width || !stageRect.height) return null;
+
+            const shellX = (projected.x * 0.5 + 0.5) * shellRect.width + (shellRect.left - stageRect.left);
+            const shellY = (-projected.y * 0.5 + 0.5) * shellRect.height + (shellRect.top - stageRect.top);
+            return {
+                x: (shellX / stageRect.width) * SCREEN_WIDTH,
+                y: (shellY / stageRect.height) * SCREEN_HEIGHT
+            };
+        }
+
+        function animateGlobe(now = performance.now()) {
+            requestAnimationFrame(animateGlobe);
+            if (document.hidden || !globeRenderer || !globeCamera || !globeMesh) return;
+
+            const deltaSeconds = getGlobeDeltaTime(now);
+            globeAnimationTime += deltaSeconds;
+            const lerpFactor = 1 - Math.pow(0.0025, deltaSeconds * 3.4);
+            let dTheta = camTarget.theta - camCurrent.theta;
+            while (dTheta > Math.PI) dTheta -= 2 * Math.PI;
+            while (dTheta < -Math.PI) dTheta += 2 * Math.PI;
+            const dPhi = camTarget.phi - camCurrent.phi;
+
+            const arrived = Math.abs(dTheta) < 0.01 && Math.abs(dPhi) < 0.01;
+            if (!globeArrived && arrived) {
+                globeArrived = true;
+                globeAnimationTime = 0;
+                camCurrent.phi = camTarget.phi;
+                camCurrent.theta = camTarget.theta;
+            }
+
+            if (!globeArrived) {
+                camCurrent.phi += dPhi * lerpFactor;
+                camCurrent.theta += dTheta * lerpFactor;
+            }
+
+            const cx = -GLOBE_CAM_RADIUS * Math.sin(camCurrent.phi) * Math.sin(camCurrent.theta);
+            const cy = GLOBE_CAM_RADIUS * Math.cos(camCurrent.phi);
+            const cz = -GLOBE_CAM_RADIUS * Math.sin(camCurrent.phi) * Math.cos(camCurrent.theta);
+            globeCamera.position.set(cx, cy, cz);
+            globeCamera.lookAt(0, 0, 0);
+
+            if (globeHaloMesh) {
+                const haloScale = 1 + Math.sin(globeAnimationTime * 0.9) * 0.012;
+                globeHaloMesh.scale.setScalar(haloScale);
+                globeHaloMesh.rotation.y += deltaSeconds * 0.08;
+            }
+
+            if (globeCloudMesh) {
+                globeCloudMesh.rotation.y += deltaSeconds * 0.018;
+            }
+
+            if (globeMarkers.length > 0) {
+                if (globeArrived) {
+                    const overlayPoint = projectCoordinateToOverlay(globePrimaryCoordinate);
+                    if (overlayPoint) {
+                        updateOrbitOverlay(overlayPoint);
+                        refs.orbitPath.style.opacity = '1';
+                    } else {
+                        refs.orbitPath.style.opacity = '0';
+                        refs.orbitDot.style.opacity = '0';
+                    }
+                } else {
+                    refs.orbitPath.style.opacity = '0';
+                    refs.orbitDot.style.opacity = '0';
+                }
+
+                if (globeArrived && !markerFlashDone) {
+                    const t = globeAnimationTime * 2.8;
+                    const cycle = Math.floor(t);
+                    refs.orbitDot.style.opacity = '1';
+                    globeMarkers.forEach((marker) => {
+                        if (cycle >= 2) {
+                            setMarkerState(marker, 1, 1);
+                        } else {
+                            const phase = (t - cycle) * Math.PI;
+                            const scale = 1.0 + 0.95 * Math.sin(phase);
+                            const opacity = 1.0 - 0.6 * Math.sin(phase);
+                            setMarkerState(marker, scale, opacity);
+                        }
+                    });
+                    if (cycle >= 2) markerFlashDone = true;
+                } else if (globeArrived) {
+                    globeMarkers.forEach((marker) => setMarkerState(marker, 1, 1));
+                }
+            }
+
+            globeRenderer.render(globeScene, globeCamera);
+        }
+
+        function handleGlobeResize() {
+            if (!globeRenderer || !globeCamera || !refs.dualGlobeContainer) return;
+            const width = refs.dualGlobeContainer.clientWidth;
+            const height = refs.dualGlobeContainer.clientHeight;
+            if (!width || !height) return;
+
+            globeCamera.aspect = width / height;
+            globeCamera.updateProjectionMatrix();
+            globeRenderer.setPixelRatio(getEffectivePixelRatio());
+            globeRenderer.setSize(width, height);
+        }
+
+        function wrapAngle(angle) {
+            let wrapped = angle;
+            while (wrapped > Math.PI) wrapped -= Math.PI * 2;
+            while (wrapped < -Math.PI) wrapped += Math.PI * 2;
+            return wrapped;
+        }
+
+        function clampPhi(phi) {
+            return Math.min(Math.PI - 0.18, Math.max(0.18, phi));
+        }
+
+        function setLeftDetailView(nextState) {
+            isLeftDetailView = Boolean(nextState);
+            if (refs.leftScreen) {
+                refs.leftScreen.classList.toggle('is-detail-view', isLeftDetailView);
+            }
+        }
+
+        function toggleLeftDetailView(direction) {
+            if (direction === 'down') {
+                setLeftDetailView(true);
+            } else if (direction === 'up') {
+                setLeftDetailView(false);
+            }
+        }
+
+        function syncStageScale() {
+            // All left/right screen coordinates are authored against a 1920x1080 design space.
+            const scale = Math.min(window.innerWidth / STAGE_WIDTH, window.innerHeight / STAGE_HEIGHT);
+            document.documentElement.style.setProperty('--stage-scale', Math.max(0.1, scale).toFixed(6));
+            handleGlobeResize();
+        }
+
+        function renderLeftArchive(photos) {
+            const ordered = sortPhotosForDisplay(photos);
+            if (ordered.length === 0) {
+                refs.leftArchiveStrip.innerHTML = '<div class="archive-empty">暂无历史档案图像</div>';
+                return;
+            }
+
+            const cards = [];
+            if (ordered[0]) {
+                cards.push({
+                    cls: 'primary',
+                    src: ordered[0],
+                    label: '主档案图',
+                    index: 0
+                });
+            }
+            if (ordered.length >= 3 && ordered[2]) {
+                cards.unshift({
+                    cls: 'paper',
+                    src: ordered[2],
+                    label: '档案文稿',
+                    index: 2
+                });
+            }
+            if (ordered[1]) {
+                cards.push({
+                    cls: 'secondary',
+                    src: ordered[1],
+                    label: '辅档案图',
+                    index: 1
+                });
+            }
+
+            refs.leftArchiveStrip.innerHTML = cards.map((card) => `
+                <button class="left-archive-card ${card.cls} media-photo" type="button" data-photo-index="${card.index}">
+                    <img src="${card.src}" alt="${escapeHtml(card.label)}">
+                </button>
+            `).join('');
+        }
+
+        function formatCategoryLabel(vm) {
+            const rawCategory = String((vm && vm.category) || (vm && vm.subtitle) || 'AI 历史').trim();
+            const compactCategory = rawCategory.replace(/\s+\(/g, '(');
+            if (/\([^)]*\)/.test(compactCategory)) return compactCategory;
+
+            const subtitle = String((vm && vm.subtitle) || '').trim();
+            const categoryYears = milestones
+                .filter((item) => {
+                    const itemCategory = String(item.category || '').trim();
+                    const itemSubtitle = String(item.subtitle || '').trim();
+                    return itemCategory === rawCategory || itemSubtitle === subtitle || itemSubtitle === rawCategory;
+                })
+                .map((item) => Number(item.year))
+                .filter(Number.isFinite);
+
+            if (categoryYears.length === 0) return compactCategory;
+            const minYear = Math.min(...categoryYears);
+            const maxYear = Math.max(...categoryYears);
+            return `${compactCategory}(${minYear}-${maxYear})`;
+        }
+
+        function renderLeft(vm) {
+            const yearsBefore = buildContextYears(vm.year, 3, 0);
+            const yearsAfter = buildContextYears(vm.year, 0, 5);
+
+            refs.leftKicker.textContent = formatCategoryLabel(vm);
+            refs.summaryKicker.textContent = vm.subtitle || vm.category || 'AI 历史';
+            refs.heroYears.innerHTML = yearsBefore.map((year) => `<span>${year}</span>`).join('');
+            refs.heroYear.textContent = vm.year || '';
+            refs.leftBottomYear.textContent = vm.year || '';
+            refs.ghostYears.innerHTML = yearsAfter.map((year) => `<span>${year}</span>`).join('');
+            refs.summaryTitle.textContent = vm.title || '';
+            refs.summaryLocation.innerHTML = buildLocationHtml(vm.location);
+            refs.summaryBody.innerHTML = buildSummaryHtml(vm);
+
+            renderLeftArchive(vm.photos);
+
+            if (vm.location && Array.isArray(vm.location.coordinates)) {
+                const validList = normalizeLocationCoordinates(vm.location.coordinates);
+
+                if (validList.length > 0) {
+                    rotateGlobeToCoordinates(validList);
+                    return;
+                }
+            }
+
+            clearGlobeMarkers();
+        }
+
+        function renderTimeline(vm) {
+            const timelineHtml = vm.timeline.map((item, index) => `
+                <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
+                    <span>${item.year}</span>
+                </button>
+            `).join('');
+
+            [refs.timelineTrack, refs.rightTimelineTrack].filter(Boolean).forEach((track) => {
+                track.innerHTML = timelineHtml;
+                track.querySelectorAll('.timeline-tick').forEach((button) => {
+                    button.addEventListener('click', () => {
+                        const index = Number(button.dataset.index);
+                        jumpTo(index);
+                    });
+                });
+            });
+        }
+
+        function renderFigures(vm) {
+            const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
+            const figures = Array.isArray(vm.figures) && vm.figures.length > 0
+                ? vm.figures.slice(0, 3)
+                : [{
+                    name: vm.title || 'AI 历史事件',
+                    role: buildLocationLine(vm.location) || '关键历史人物'
+                }];
+
+            refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
+            refs.figureRow.innerHTML = figures.map((figure, index) => `
+                <article class="figure-chip">
+                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
+                    <div class="figure-meta">
+                        <div class="figure-name">${escapeHtml(figure.name || '关键人物')}</div>
+                        <div class="figure-role">${escapeHtml(figure.role || '关键参与者')}</div>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function setImage(imgEl, src, alt) {
+            const nextSrc = src || '';
+            if (imgEl.getAttribute('src') !== nextSrc) {
+                imgEl.decoding = 'async';
+                imgEl.src = nextSrc;
+            }
+            imgEl.alt = alt || '';
+            imgEl.style.visibility = src ? 'visible' : 'hidden';
+        }
+
+        function selectArchivePhoto(vm, index) {
+            const nextIndex = Number(index);
+            if (!Number.isFinite(nextIndex)) return;
+            currentArchiveIndex = nextIndex;
+            renderArchive(vm);
+        }
+
+        function renderArchive(vm) {
+            const photos = sortPhotosForDisplay(vm.photos);
+            const hasPhotos = photos.length > 0;
+            const safePhotos = hasPhotos ? photos : [''];
+            const activeIndex = Math.min(currentArchiveIndex, safePhotos.length - 1);
+            currentArchiveIndex = Math.max(0, activeIndex);
+
+            const focusUrl = hasPhotos ? safePhotos[currentArchiveIndex] : '';
+            const prevIndex = (currentArchiveIndex - 1 + safePhotos.length) % safePhotos.length;
+            const nextIndex = (currentArchiveIndex + 1) % safePhotos.length;
+            let prevUrl = hasPhotos ? safePhotos[prevIndex] : '';
+            let nextUrl = hasPhotos ? safePhotos[nextIndex] : '';
+
+            // 照片不足 3 张时，不要用同一张图重复填充左右缩略图位。
+            if (prevUrl === focusUrl) prevUrl = '';
+            if (nextUrl === focusUrl) nextUrl = '';
+            if (prevUrl && nextUrl && prevUrl === nextUrl) prevUrl = '';
+
+            const prevCard = refs.archiveThumbPrev ? refs.archiveThumbPrev.closest('.archive-card') : null;
+            const nextCard = refs.archiveThumbNext ? refs.archiveThumbNext.closest('.archive-card') : null;
+            if (prevCard) prevCard.classList.toggle('is-hidden', !prevUrl);
+            if (nextCard) nextCard.classList.toggle('is-hidden', !nextUrl);
+
+            const prevMeta = buildArchivePhotoMeta(vm, prevUrl);
+            const activeMeta = buildArchivePhotoMeta(vm, focusUrl);
+            const nextMeta = buildArchivePhotoMeta(vm, nextUrl);
+
+            refs.archiveTitle.textContent = vm.title || 'AI 历史事件';
+            refs.archiveYear.textContent = vm.year || '';
+
+            refs.archiveThumbPrev.innerHTML = prevUrl
+                ? `<img src="${prevUrl}" alt="前一张档案">`
+                : '';
+            refs.archiveThumbNext.innerHTML = nextUrl
+                ? `<img src="${nextUrl}" alt="后一张档案">`
+                : '';
+            refs.archiveThumbPrev.dataset.photoIndex = prevUrl ? String(prevIndex) : '';
+            refs.archiveThumbNext.dataset.photoIndex = nextUrl ? String(nextIndex) : '';
+
+            refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
+            refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
+            refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1 || !prevUrl;
+            refs.archiveThumbNext.disabled = !hasPhotos || safePhotos.length <= 1 || !nextUrl;
+
+            setImage(refs.archiveFocus, focusUrl, '主档案照片');
+            refs.archiveFocusButton.dataset.photoIndex = String(currentArchiveIndex);
+            refs.archiveFocusButton.classList.toggle('is-empty', !hasPhotos);
+            refs.archiveFocusButton.disabled = !hasPhotos;
+            refs.archivePrevCaption.textContent = prevMeta.name;
+            refs.archivePrevSubcaption.textContent = prevMeta.role;
+            refs.archiveCaption.textContent = activeMeta.name;
+            refs.archiveSubcaption.textContent = activeMeta.role;
+            refs.archiveNextCaption.textContent = nextMeta.name;
+            refs.archiveNextSubcaption.textContent = nextMeta.role;
+
+            refs.archiveDots.innerHTML = safePhotos.map((_, index) => `
+                <button class="archive-dot ${index === currentArchiveIndex ? 'active' : ''}" type="button" data-index="${index}"></button>
+            `).join('');
+
+            refs.archiveDots.querySelectorAll('.archive-dot').forEach((button) => {
+                button.addEventListener('click', () => {
+                    selectArchivePhoto(vm, button.dataset.index);
+                });
+            });
+
+            refs.archiveThumbPrev.onclick = () => {
+                selectArchivePhoto(vm, refs.archiveThumbPrev.dataset.photoIndex);
+            };
+
+            refs.archiveThumbNext.onclick = () => {
+                selectArchivePhoto(vm, refs.archiveThumbNext.dataset.photoIndex);
+            };
+        }
+
+        function ensureMediaIframe() {
+            let iframe = refs.videoFrame.querySelector('iframe');
+            if (!iframe) {
+                iframe = document.createElement('iframe');
+                iframe.id = 'mediaVideo';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                refs.videoFrame.appendChild(iframe);
+                refs.mediaVideo = iframe;
+            }
+            return iframe;
+        }
+
+        function ensureMediaPlayer() {
+            let player = refs.videoFrame.querySelector('video');
+            if (!player) {
+                player = document.createElement('video');
+                player.id = 'mediaVideoPlayer';
+                player.controls = true;
+                player.playsInline = true;
+                player.preload = 'metadata';
+                refs.videoFrame.appendChild(player);
+            }
+            return player;
+        }
+
+        function isDirectVideoMedia(url) {
+            return /\.(mp4|webm|ogg)(?:[?#].*)?$/i.test(String(url || ''));
+        }
+
+        function resetInlineMedia() {
+            const iframe = ensureMediaIframe();
+            const player = ensureMediaPlayer();
+
+            iframe.style.display = 'none';
+            iframe.src = 'about:blank';
+
+            player.pause();
+            player.removeAttribute('src');
+            player.style.display = 'none';
+            player.load();
+        }
+
+        function playInlineVideo(url) {
+            if (!url) return;
+            refs.videoFrame.classList.add('is-playing');
+            refs.videoFrame.onclick = null;
+            if (isDirectVideoMedia(url)) {
+                const iframe = ensureMediaIframe();
+                const player = ensureMediaPlayer();
+                iframe.style.display = 'none';
+                iframe.src = 'about:blank';
+                player.src = url;
+                player.style.display = 'block';
+                const playback = player.play();
+                if (playback && typeof playback.catch === 'function') {
+                    playback.catch(() => {});
+                }
+                return;
+            }
+
+            const iframe = ensureMediaIframe();
+            const player = ensureMediaPlayer();
+            player.pause();
+            player.removeAttribute('src');
+            player.style.display = 'none';
+            player.load();
+            iframe.src = url;
+            iframe.style.display = 'block';
+        }
+
+        function renderCommentary(vm) {
+            ensureMediaIframe();
+            ensureMediaPlayer();
+            refs.mediaTimecode.textContent = `00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}`;
+            refs.videoQuote.textContent = extractVideoQuote(vm);
+            refs.videoFrame.classList.remove('is-playing');
+            refs.videoFrame.classList.toggle('has-video-data', Boolean(vm.videoEmbedUrl));
+            refs.videoFrame.classList.toggle('empty', !vm.videoEmbedUrl);
+            refs.videoFrame.dataset.videoUrl = vm.videoEmbedUrl || '';
+            refs.videoFrame.onclick = vm.videoEmbedUrl
+                ? () => playInlineVideo(vm.videoEmbedUrl)
+                : null;
+            refs.videoFrame.title = vm.videoEmbedUrl ? '点击播放视频' : '暂无媒体资料';
+            resetInlineMedia();
+            const sections = buildRightCommentarySections(vm);
+
+            refs.commentaryList.innerHTML = sections.map((section) => `
+                <article class="commentary-item">
+                    <div class="commentary-label">${escapeHtml(section.label || '内容')}</div>
+                    <div class="commentary-body">${escapeHtml(section.text || '暂无补充说明')}</div>
+                </article>
+            `).join('');
+        }
+
+        function renderStatus(vm) {
+            if (refs.leftTimeline) {
+                refs.leftTimeline.dataset.title = vm.title || '';
+            }
+            if (refs.rightTimeline) {
+                refs.rightTimeline.dataset.title = vm.title || '';
+            }
+            const canNavigate = milestones.length > 1;
+            refs.leftTimelinePrev.disabled = !canNavigate;
+            refs.leftTimelineNext.disabled = !canNavigate;
+            refs.topPrevBtn.disabled = !canNavigate;
+            refs.topNextBtn.disabled = !canNavigate;
+            refs.rightScaleProgress.style.top = `${milestones.length > 1 ? (currentIndex / (milestones.length - 1)) * 100 : 0}%`;
+        }
+
+        function bindPhotoClicks() {
+            document.querySelectorAll('.media-photo').forEach((card) => {
+                card.onclick = () => {
+                    const startIndex = Number(card.dataset.photoIndex || 0);
+                    openPhotoViewer(startIndex);
+                };
+            });
+        }
+
+        function hasOpenPhotoViewer() {
+            return Boolean(document.querySelector('.photo-viewer'));
+        }
+
+        function openPhotoViewer(startIndex) {
+            const vm = getVm(currentIndex);
+            const photos = sortPhotosForDisplay(vm.photos);
+            if (!photos.length) return;
+
+            let currentPhotoIndex = Math.max(0, Math.min(startIndex, photos.length - 1));
+            const viewer = document.createElement('div');
+            viewer.className = 'photo-viewer';
+            viewer.innerHTML = `
+                <button class="close-viewer" type="button">✕</button>
+                <button class="photo-prev" type="button">◀</button>
+                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="历史档案">
+                <button class="photo-next" type="button">▶</button>
+                <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
+            `;
+            document.body.appendChild(viewer);
+
+            const closeViewer = () => {
+                viewer.remove();
+            };
+
+            viewer.querySelector('.close-viewer').onclick = closeViewer;
+            viewer.querySelector('.photo-prev').onclick = () => {
+                currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
+                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+            viewer.querySelector('.photo-next').onclick = () => {
+                currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
+                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+
+            const handleKey = (event) => {
+                if (event.key === 'Escape') closeViewer();
+                if (event.key === 'ArrowLeft') viewer.querySelector('.photo-prev').click();
+                if (event.key === 'ArrowRight') viewer.querySelector('.photo-next').click();
+            };
+
+            document.addEventListener('keydown', handleKey);
+            const observer = new MutationObserver(() => {
+                if (!document.body.contains(viewer)) {
+                    document.removeEventListener('keydown', handleKey);
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true });
+        }
+
+        function renderPage(index) {
+            const vm = getVm(index);
+            currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            renderLeft(vm);
+            renderTimeline(vm);
+            renderFigures(vm);
+            renderArchive(vm);
+            renderCommentary(vm);
+            renderStatus(vm);
+            bindPhotoClicks();
+            document.title = `AI 历史回顾展览 - 双屏模式 - ${vm.year} ${vm.title}`;
+            preloadAdjacentAssets(index);
+        }
+
+        function jumpTo(index, options = {}) {
+            const { resetAutoplay = true } = options;
+            if (index < 0 || index >= milestones.length || index === currentIndex) return;
+
+            preloadMilestoneAssets(index);
+            currentIndex = index;
+            currentArchiveIndex = 0;
+            renderPage(currentIndex);
+            if (resetAutoplay) {
+                resetAutoplayTimer();
+            }
+        }
+
+        function navigate(direction, options = {}) {
+            if (milestones.length <= 1) return;
+
+            const nextIndex = direction === 'next'
+                ? (currentIndex + 1) % milestones.length
+                : (currentIndex - 1 + milestones.length) % milestones.length;
+            jumpTo(nextIndex, options);
+        }
+
+        function jumpToTimelineClientX(clientX, track = refs.timelineTrack) {
+            if (!track || milestones.length <= 1) return;
+            const rect = track.getBoundingClientRect();
+            if (!rect.width) return;
+
+            const ratio = Math.min(0.999, Math.max(0, (clientX - rect.left) / rect.width));
+            const index = Math.min(milestones.length - 1, Math.max(0, Math.floor(ratio * milestones.length)));
+            jumpTo(index);
+        }
+
+        function bindTimelineDrag(track) {
+            if (!track) return;
+
+            let activePointerId = null;
+            let hasDragged = false;
+
+            track.addEventListener('pointerdown', (event) => {
+                if (event.button != null && event.button !== 0) return;
+                activePointerId = event.pointerId;
+                hasDragged = false;
+                track.classList.add('is-dragging');
+                track.setPointerCapture(event.pointerId);
+                jumpToTimelineClientX(event.clientX, track);
+                registerUserActivity(event);
+                event.preventDefault();
+            });
+
+            track.addEventListener('pointermove', (event) => {
+                if (activePointerId !== event.pointerId) return;
+                hasDragged = true;
+                jumpToTimelineClientX(event.clientX, track);
+                event.preventDefault();
+            });
+
+            const endDrag = (event) => {
+                if (activePointerId !== event.pointerId) return;
+                track.classList.remove('is-dragging');
+                try {
+                    track.releasePointerCapture(event.pointerId);
+                } catch (error) {}
+                activePointerId = null;
+                if (hasDragged) {
+                    event.preventDefault();
+                }
+            };
+
+            track.addEventListener('pointerup', endDrag);
+            track.addEventListener('pointercancel', endDrag);
+        }
+
+        function bindGlobeDrag() {
+            if (!refs.globeShell) return;
+
+            let activePointerId = null;
+            let startX = 0;
+            let startY = 0;
+            let startTheta = 0;
+            let startPhi = 0;
+
+            refs.globeShell.addEventListener('pointerdown', (event) => {
+                if (event.button != null && event.button !== 0) return;
+                activePointerId = event.pointerId;
+                startX = event.clientX;
+                startY = event.clientY;
+                startTheta = camTarget.theta;
+                startPhi = camTarget.phi;
+                globeArrived = true;
+                markerFlashDone = true;
+                refs.globeShell.classList.add('is-dragging');
+                refs.globeShell.setPointerCapture(event.pointerId);
+                registerUserActivity(event);
+                event.preventDefault();
+            });
+
+            refs.globeShell.addEventListener('pointermove', (event) => {
+                if (activePointerId !== event.pointerId) return;
+                const stageScale = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--stage-scale')) || 1;
+                const dx = (event.clientX - startX) / Math.max(0.1, stageScale);
+                const dy = (event.clientY - startY) / Math.max(0.1, stageScale);
+                camTarget.theta = wrapAngle(startTheta + dx * 0.006);
+                camTarget.phi = clampPhi(startPhi + dy * 0.006);
+                camCurrent.theta = camTarget.theta;
+                camCurrent.phi = camTarget.phi;
+                event.preventDefault();
+            });
+
+            const endDrag = (event) => {
+                if (activePointerId !== event.pointerId) return;
+                refs.globeShell.classList.remove('is-dragging');
+                try {
+                    refs.globeShell.releasePointerCapture(event.pointerId);
+                } catch (error) {}
+                activePointerId = null;
+            };
+
+            refs.globeShell.addEventListener('pointerup', endDrag);
+            refs.globeShell.addEventListener('pointercancel', endDrag);
+        }
+
+        function bindArchiveDrag() {
+            if (!refs.archiveStage) return;
+
+            let activePointerId = null;
+            let startX = 0;
+            let startY = 0;
+            let didNavigate = false;
+
+            refs.archiveStage.addEventListener('pointerdown', (event) => {
+                if (event.button != null && event.button !== 0) return;
+                activePointerId = event.pointerId;
+                startX = event.clientX;
+                startY = event.clientY;
+                didNavigate = false;
+                refs.archiveStage.classList.add('is-dragging');
+                refs.archiveStage.setPointerCapture(event.pointerId);
+                registerUserActivity(event);
+            });
+
+            refs.archiveStage.addEventListener('pointermove', (event) => {
+                if (activePointerId !== event.pointerId || didNavigate) return;
+                const dx = event.clientX - startX;
+                const dy = event.clientY - startY;
+                if (Math.abs(dx) < 80 || Math.abs(dx) < Math.abs(dy) * 1.25) return;
+
+                if (dx < 0) {
+                    refs.archiveThumbNext.click();
+                } else {
+                    refs.archiveThumbPrev.click();
+                }
+                didNavigate = true;
+                event.preventDefault();
+            });
+
+            const endDrag = (event) => {
+                if (activePointerId !== event.pointerId) return;
+                const dx = event.clientX - startX;
+                const dy = event.clientY - startY;
+                refs.archiveStage.classList.remove('is-dragging');
+                try {
+                    refs.archiveStage.releasePointerCapture(event.pointerId);
+                } catch (error) {}
+                activePointerId = null;
+
+                if (!didNavigate && Math.abs(dx) < 12 && Math.abs(dy) < 12) {
+                    const hitTarget = document.elementFromPoint(event.clientX, event.clientY);
+                    const thumbButton = hitTarget && hitTarget.closest
+                        ? hitTarget.closest('#archiveThumbPrev, #archiveThumbNext')
+                        : null;
+                    if (thumbButton && !thumbButton.disabled) {
+                        selectArchivePhoto(getVm(currentIndex), thumbButton.dataset.photoIndex);
+                        event.preventDefault();
+                    }
+                }
+            };
+
+            refs.archiveStage.addEventListener('pointerup', endDrag);
+            refs.archiveStage.addEventListener('pointercancel', endDrag);
+        }
+
+        function bindLeftVerticalNavigation() {
+            if (!refs.leftScreen) return;
+
+            let activePointerId = null;
+            let startX = 0;
+            let startY = 0;
+
+            refs.leftScreen.addEventListener('wheel', (event) => {
+                if (Math.abs(event.deltaY) < Math.max(16, Math.abs(event.deltaX) * 1.2)) return;
+                toggleLeftDetailView(event.deltaY > 0 ? 'down' : 'up');
+            }, { passive: true });
+
+            refs.leftScreen.addEventListener('pointerdown', (event) => {
+                const target = event.target && event.target.closest
+                    ? event.target.closest('button, .globe-shell, .timeline-track, .archive-strip')
+                    : null;
+                if (target) return;
+                activePointerId = event.pointerId;
+                startX = event.clientX;
+                startY = event.clientY;
+            }, { passive: true });
+
+            refs.leftScreen.addEventListener('pointerup', (event) => {
+                if (activePointerId !== event.pointerId) return;
+                const dx = event.clientX - startX;
+                const dy = event.clientY - startY;
+                activePointerId = null;
+                if (Math.abs(dy) < 80 || Math.abs(dy) < Math.abs(dx) * 1.2) return;
+                toggleLeftDetailView(dy < 0 ? 'down' : 'up');
+            }, { passive: true });
+        }
+
+        function initSwipeNavigation() {
+            if (!window.SwipeNavigation || typeof window.SwipeNavigation.setupSwipeNavigation !== 'function') {
+                return;
+            }
+
+            window.SwipeNavigation.setupSwipeNavigation({
+                surface: refs.stage,
+                onNavigate(direction) {
+                    navigate(direction);
+                }
+            });
+        }
+
+        refs.leftTimelinePrev.addEventListener('click', () => navigate('prev'));
+        refs.leftTimelineNext.addEventListener('click', () => navigate('next'));
+        refs.topPrevBtn.addEventListener('click', () => navigate('prev'));
+        refs.topNextBtn.addEventListener('click', () => navigate('next'));
+
+        window.addEventListener('resize', debounce(syncStageScale, 120));
+        window.addEventListener('beforeunload', () => {
+            clearAutoplayTimer();
+            clearIdleTimer();
+        });
+
+        document.addEventListener('pointerdown', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('click', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('wheel', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('keydown', (event) => {
+            registerUserActivity(event);
+            if (hasOpenPhotoViewer()) return;
+            if (event.key === 'ArrowRight') navigate('next');
+            if (event.key === 'ArrowLeft') navigate('prev');
+        });
+
+        syncStageScale();
+        initGlobe();
+        initSwipeNavigation();
+        bindTimelineDrag(refs.timelineTrack);
+        bindTimelineDrag(refs.rightTimelineTrack);
+        bindGlobeDrag();
+        bindArchiveDrag();
+        renderPage(currentIndex);
+        restartIdleCountdown();
+    </script>
+</body>
+</html>
