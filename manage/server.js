@@ -169,15 +169,19 @@ function decodeHtmlEntities(text) {
 }
 
 function extractAppliedQuoteState(milestone) {
-  const rawQuote = String((milestone || {}).quote || '').trim();
-  const explicitQuotePage = String((milestone || {}).quotePage || '').trim();
+  const safeMilestone = milestone || {};
+  const rawQuote = localizedText(safeMilestone.quote, 'en');
+  const explicitQuotePage = isLocalizedText(safeMilestone.quotePage)
+    ? cloneTextValue(safeMilestone.quotePage)
+    : String(safeMilestone.quotePage || '').trim();
+  const explicitQuotePageText = localizedText(explicitQuotePage, 'en');
   const sourcePattern = /(?:<br\s*\/?>\s*){1,2}<span[^>]*>\s*—\s*([^<]+?)\s*<\/span>\s*$/i;
   const matchedSource = rawQuote.match(sourcePattern);
 
   if (matchedSource) {
     return {
       quote: rawQuote.replace(sourcePattern, '').trim(),
-      quotePage: explicitQuotePage || matchedSource[1].trim(),
+      quotePage: explicitQuotePageText ? explicitQuotePage : matchedSource[1].trim(),
     };
   }
 
@@ -887,7 +891,7 @@ const routes = {
         // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
         const evQuoteTextValue = getEffectiveQuoteText(quoteCandidates, key, ev.quoteText);
         const evQuoteText = normalizeQuoteText(localizedText(evQuoteTextValue, 'en'));
-        const evQuotePage = localizedText(ev.quotePage);
+        const evQuotePage = localizedText(ev.quotePage, 'en');
         const rebuildQuote = (text) => {
           if (!text) return '';
           const body = text.replace(/\n/g, '<br>');
@@ -897,8 +901,9 @@ const routes = {
         const rebuiltQuote = rebuildQuote(evQuoteText);
         if (rebuiltQuote !== appliedQuoteState.quote)
           changes.quote = { from: appliedQuoteState.quote || '', quoteText: evQuoteText };
-        if (evQuotePage !== appliedQuoteState.quotePage)
-          changes.quotePage = { from: appliedQuoteState.quotePage || '', to: evQuotePage };
+        const appliedQuotePage = localizedText(appliedQuoteState.quotePage, 'en');
+        if (evQuotePage !== appliedQuotePage)
+          changes.quotePage = { from: appliedQuotePage || '', to: evQuotePage };
 
         const evQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
         const appliedHasStructuredQuoteMeta = Boolean(applied.quoteMeta && typeof applied.quoteMeta === 'object');
