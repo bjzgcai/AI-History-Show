@@ -20,15 +20,26 @@ const OUTPUTS    = [
 const AVATAR_REGISTRY_PATH = path.join(__dirname, 'figure-avatars.js');
 const RESEARCH_CANDIDATES_PATH = path.join(ROOT, 'resources', 'research-candidates.js');
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
-const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
-const SUPPORTED_LOCALES = ['en', 'zh'];
-const DEFAULT_LOCALE = 'zh';
+const {
+  MILESTONE_ID_PREFIX,
+  SUPPORTED_LOCALES,
+  backupFile,
+  deriveEmbedUrl,
+  detectVideoSource,
+  formatQuoteAttribution,
+  getLocalizedText,
+  isLocalizedText,
+  loadQuoteCandidates,
+  mergeEditableQuoteMeta,
+  normalizeQuoteText,
+} = require('../shared/utils.js');
+const detectSource = detectVideoSource;
 
 const { categories } = require('./catalog.js');
 const eventsMap      = require('./events.js');
 const avatarRegistry = loadAvatarRegistry();
 const researchCandidates = loadResearchCandidates();
-const quoteCandidates = loadQuoteCandidates();
+const quoteCandidates = loadQuoteCandidates(QUOTE_CANDIDATES_PATH);
 
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
 
@@ -141,7 +152,7 @@ for (const cat of categories) {
     }
 
     milestones.push({
-      id:          `milestone-${key}`,
+      id:          `${MILESTONE_ID_PREFIX}${key}`,
       year:        ev.year,
       category:    cat.name,
       title:       ev.title,
@@ -167,25 +178,6 @@ for (const cat of categories) {
 
 // ─── 辅助函数 ────────────────────────────────────────────────────────────────
 
-/** 根据 URL 自动推导 embed_url */
-function deriveEmbedUrl(url) {
-  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
-  if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
-  const bili = url.match(/bilibili\.com\/video\/(BV[A-Za-z0-9]+)/);
-  if (bili) return `https://player.bilibili.com/player.html?bvid=${bili[1]}&autoplay=0`;
-  const vimeo = url.match(/vimeo\.com\/(\d+)/);
-  if (vimeo) return `https://player.vimeo.com/video/${vimeo[1]}`;
-  return url;
-}
-
-/** 根据 URL 检测来源平台 */
-function detectSource(url) {
-  if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
-  if (/bilibili\.com/.test(url))          return 'Bilibili';
-  if (/vimeo\.com/.test(url))             return 'Vimeo';
-  return 'Web';
-}
-
 /** 头像注册表允许缺失，这样生成脚本在资源未准备齐时也不会直接报错 */
 function loadAvatarRegistry() {
   if (!fs.existsSync(AVATAR_REGISTRY_PATH)) {
@@ -205,19 +197,6 @@ function loadResearchCandidates() {
     return require(RESEARCH_CANDIDATES_PATH).researchCandidates || { events: {} };
   } catch (error) {
     console.warn(`[警告] 无法加载候选研究素材 ${RESEARCH_CANDIDATES_PATH}: ${error.message}`);
-    return { events: {} };
-  }
-}
-
-function loadQuoteCandidates() {
-  if (!fs.existsSync(QUOTE_CANDIDATES_PATH)) {
-    return { events: {} };
-  }
-
-  try {
-    return require(QUOTE_CANDIDATES_PATH).quoteCandidates || { events: {} };
-  } catch (error) {
-    console.warn(`[警告] 无法加载引言候选库 ${QUOTE_CANDIDATES_PATH}: ${error.message}`);
     return { events: {} };
   }
 }
@@ -283,42 +262,6 @@ function buildCommentarySectionsOverride(key, ev) {
     .filter((section) => section.label.zh && section.html.zh);
 }
 
-/** 清理历史数据里手动残留的首尾包装引号 */
-function normalizeQuoteText(text) {
-  let value = String(text || '').trim();
-  if (!value) return '';
-  if (value.startsWith('"')) value = value.slice(1).trimStart();
-  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
-  return value;
-}
-
-function formatQuoteAttribution(candidate) {
-  const safeCandidate = candidate && typeof candidate === 'object' ? candidate : {};
-  const workTitle = String(safeCandidate.workTitle || '').trim();
-  const workAuthors = String(safeCandidate.workAuthors || '').trim();
-  const speaker = String(safeCandidate.speaker || '').trim();
-
-  if (workTitle) {
-    return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
-  }
-
-  return speaker;
-}
-
-function hasOwn(obj, key) {
-  return Object.prototype.hasOwnProperty.call(obj || {}, key);
-}
-
-function isLocalizedText(value) {
-  return Boolean(value && typeof value === 'object' && !Array.isArray(value)
-    && SUPPORTED_LOCALES.some((locale) => hasOwn(value, locale)));
-}
-
-function getLocalizedText(value, locale = DEFAULT_LOCALE) {
-  if (!isLocalizedText(value)) return String(value || '').trim();
-  return String(value[locale] || value[DEFAULT_LOCALE] || value.en || value.zh || '').trim();
-}
-
 function mapLocalizedText(value, transform) {
   if (!isLocalizedText(value)) return transform(String(value || ''));
   const result = {};
@@ -327,25 +270,6 @@ function mapLocalizedText(value, transform) {
     result[locale] = transform(text, locale);
   }
   return result;
-}
-
-function mergeEditableQuoteMeta(eventMeta, candidateMeta) {
-  const hasEventMeta = Boolean(eventMeta && typeof eventMeta === 'object');
-  const eventSource = hasEventMeta ? eventMeta : null;
-  const candidateSource = candidateMeta && typeof candidateMeta === 'object' ? candidateMeta : null;
-  const merged = {};
-  let hasValue = false;
-
-  for (const field of QUOTE_META_FIELDS) {
-    const rawValue = eventSource && hasOwn(eventSource, field)
-      ? eventSource[field]
-      : (candidateSource && hasOwn(candidateSource, field) ? candidateSource[field] : '');
-    const value = String(rawValue || '').trim();
-    if (value) hasValue = true;
-    if (value || hasEventMeta) merged[field] = value;
-  }
-
-  return hasValue || hasEventMeta ? merged : {};
 }
 
 function selectCuratedQuote(key, ev) {
@@ -381,21 +305,7 @@ function buildQuote(text) {
 // ─── 写出文件 ────────────────────────────────────────────────────────────────
 
 function backupOutput(file) {
-  if (!fs.existsSync(file)) return;
-
-  // 备份旧的输出文件（每个目标最多保留5份）
-  const BACKUP_DIR = path.join(ROOT, 'manage', '.backups');
-  fs.mkdirSync(BACKUP_DIR, { recursive: true });
-  const ts   = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-  const base = path.basename(file);
-  const dest = path.join(BACKUP_DIR, `${base}.${ts}.bak`);
-  fs.copyFileSync(file, dest);
-  const all = fs.readdirSync(BACKUP_DIR)
-    .filter((name) => name.startsWith(`${base}.`) && name.endsWith('.bak'))
-    .sort();
-  for (const old of all.slice(0, -5)) {
-    try { fs.unlinkSync(path.join(BACKUP_DIR, old)); } catch (_) {}
-  }
+  backupFile(file, { backupDir: path.join(ROOT, 'manage', '.backups'), maxBackups: 5 });
 }
 
 function buildOutputContent(now) {

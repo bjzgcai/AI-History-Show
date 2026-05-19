@@ -17,9 +17,23 @@ const PORT    = process.env.PORT || 3001;
 const ROOT    = path.resolve(__dirname, '..');
 const MANAGE  = __dirname;
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
-const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
-const SUPPORTED_LOCALES = ['en', 'zh'];
-const DEFAULT_LOCALE = 'zh';
+const {
+  MILESTONE_ID_PREFIX,
+  QUOTE_META_FIELDS,
+  SUPPORTED_LOCALES,
+  backupFile: backupSharedFile,
+  detectVideoSource,
+  formatQuoteAttribution,
+  getLocalizedText,
+  hasOwn,
+  isLocalizedText,
+  loadQuoteCandidates: loadSharedQuoteCandidates,
+  mergeEditableQuoteMeta,
+  normalizeEditableQuoteMeta,
+  normalizeQuoteText,
+} = require('../shared/utils.js');
+const localizedText = getLocalizedText;
+const BACKUP_DIR = path.join(MANAGE, '.backups');
 
 // ─── MIME 类型 ────────────────────────────────────────────────────────────────
 
@@ -90,14 +104,6 @@ function parseQuery(urlStr) {
   return q;
 }
 
-/** 根据 URL 检测视频平台 */
-function detectVideoSource(url) {
-  if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
-  if (/bilibili\.com/.test(url))          return 'Bilibili';
-  if (/vimeo\.com/.test(url))             return 'Vimeo';
-  return 'Web';
-}
-
 /** 清理文件名，只保留安全字符 */
 function safeName(name) {
   return name.replace(/[^A-Za-z0-9._\-\u4e00-\u9fa5]/g, '_').slice(0, 120);
@@ -150,14 +156,6 @@ function downloadFile(rawUrl, dest) {
       out.on('error', reject);
     }).on('error', reject);
   });
-}
-
-function normalizeQuoteText(text) {
-  let value = String(text || '').trim();
-  if (!value) return '';
-  if (value.startsWith('"')) value = value.slice(1).trimStart();
-  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
-  return value;
 }
 
 function decodeHtmlEntities(text) {
@@ -220,22 +218,18 @@ function loadAppliedMilestones() {
 function loadAppliedMilestoneMap() {
   const map = {};
   for (const milestone of loadAppliedMilestones()) {
-    if (milestone && typeof milestone === 'object' && milestone.id && milestone.id.startsWith('milestone-')) {
-      map[milestone.id.slice('milestone-'.length)] = milestone;
+    if (milestone && typeof milestone === 'object' && milestone.id && milestone.id.startsWith(MILESTONE_ID_PREFIX)) {
+      map[milestone.id.slice(MILESTONE_ID_PREFIX.length)] = milestone;
     }
   }
   return map;
 }
 
 function loadQuoteCandidates() {
-  if (!fs.existsSync(QUOTE_CANDIDATES_PATH)) {
-    return { curatedAt: '', purpose: '', events: {} };
-  }
-  try {
-    return freshRequire(QUOTE_CANDIDATES_PATH).quoteCandidates || { curatedAt: '', purpose: '', events: {} };
-  } catch (_) {
-    return { curatedAt: '', purpose: '', events: {} };
-  }
+  return loadSharedQuoteCandidates(QUOTE_CANDIDATES_PATH, {
+    fresh: true,
+    fallback: { curatedAt: '', purpose: '', events: {} },
+  });
 }
 
 function writeQuoteCandidates(data) {
@@ -270,70 +264,8 @@ function getLeadQuoteCandidate(candidatesMap, key) {
   return list.length > 0 && list[0] && typeof list[0] === 'object' ? list[0] : null;
 }
 
-function hasOwn(obj, key) {
-  return Object.prototype.hasOwnProperty.call(obj || {}, key);
-}
-
-function isLocalizedText(value) {
-  return Boolean(value && typeof value === 'object' && !Array.isArray(value)
-    && SUPPORTED_LOCALES.some((locale) => hasOwn(value, locale)));
-}
-
-function localizedText(value, locale = DEFAULT_LOCALE) {
-  if (!isLocalizedText(value)) return String(value || '').trim();
-  return String(value[locale] || value[DEFAULT_LOCALE] || value.en || value.zh || '').trim();
-}
-
 function cloneTextValue(value) {
   return isLocalizedText(value) ? deepClone(value) : String(value || '');
-}
-
-function normalizeEditableQuoteMeta(meta, options = {}) {
-  const preserveKeys = Boolean(options.preserveKeys);
-  const source = meta && typeof meta === 'object' ? meta : null;
-  const normalized = {};
-  let hasValue = false;
-
-  for (const field of QUOTE_META_FIELDS) {
-    const value = source && hasOwn(source, field) ? String(source[field] || '').trim() : '';
-    if (value) hasValue = true;
-    if (value || preserveKeys) normalized[field] = value;
-  }
-
-  return hasValue || preserveKeys ? normalized : {};
-}
-
-function mergeEditableQuoteMeta(eventMeta, candidateMeta, options = {}) {
-  const preserveKeys = Boolean(options.preserveKeys);
-  const hasEventMeta = Boolean(eventMeta && typeof eventMeta === 'object');
-  const eventSource = hasEventMeta ? eventMeta : null;
-  const candidateSource = candidateMeta && typeof candidateMeta === 'object' ? candidateMeta : null;
-  const merged = {};
-  let hasValue = false;
-
-  for (const field of QUOTE_META_FIELDS) {
-    const rawValue = eventSource && hasOwn(eventSource, field)
-      ? eventSource[field]
-      : (candidateSource && hasOwn(candidateSource, field) ? candidateSource[field] : '');
-    const value = String(rawValue || '').trim();
-    if (value) hasValue = true;
-    if (value || preserveKeys || hasEventMeta) merged[field] = value;
-  }
-
-  return hasValue || preserveKeys || hasEventMeta ? merged : {};
-}
-
-function formatQuoteAttribution(candidate) {
-  const safeCandidate = candidate && typeof candidate === 'object' ? candidate : {};
-  const workTitle = String(safeCandidate.workTitle || '').trim();
-  const workAuthors = String(safeCandidate.workAuthors || '').trim();
-  const speaker = String(safeCandidate.speaker || '').trim();
-
-  if (workTitle) {
-    return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
-  }
-
-  return speaker;
 }
 
 function getEffectiveQuoteText(candidatesMap, key, fallbackText) {
@@ -587,25 +519,8 @@ function syncLeadQuoteCandidates(eventsData) {
 
 // ─── 备份 + 原子写 ────────────────────────────────────────────────────────────
 
-const BACKUP_DIR  = path.join(MANAGE, '.backups');
-const MAX_BACKUPS = 5;
-
-/** 备份文件到 manage/.backups/，最多保留 MAX_BACKUPS 份 */
 function backupFile(filePath) {
-  if (!fs.existsSync(filePath)) return;
-  mkdirp(BACKUP_DIR);
-  const ts   = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-  const name = path.basename(filePath);
-  const dest = path.join(BACKUP_DIR, `${name}.${ts}.bak`);
-  fs.copyFileSync(filePath, dest);
-  // 只保留最新 MAX_BACKUPS 份，删除多余的
-  const all = fs.readdirSync(BACKUP_DIR)
-    .filter(f => f.startsWith(name + '.') && f.endsWith('.bak'))
-    .sort();
-  for (const old of all.slice(0, -MAX_BACKUPS)) {
-    try { fs.unlinkSync(path.join(BACKUP_DIR, old)); } catch (_) {}
-  }
-  return dest;
+  return backupSharedFile(filePath, { backupDir: BACKUP_DIR, maxBackups: 5 });
 }
 
 /** 原子写：先写 .tmp，再 rename，防止写入中断损坏文件 */
@@ -643,6 +558,41 @@ function writeEvents(data) {
   ].join('\n');
   backupFile(target);
   atomicWrite(target, content);
+}
+
+function createVideoCatalog(eventKey, ev) {
+  return {
+    event_id: eventKey,
+    event_title: localizedText(ev.title) || eventKey,
+    year: ev.year || 0,
+    candidate_videos: [],
+    total_count: 0,
+    created_at: new Date().toISOString().slice(0, 19).replace('T', ' '),
+  };
+}
+
+function readVideoCatalog(jsonPath, eventKey, ev) {
+  let catalog = null;
+  if (fs.existsSync(jsonPath)) {
+    try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
+  }
+  if (!catalog || typeof catalog !== 'object') {
+    catalog = createVideoCatalog(eventKey, ev);
+  }
+  if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
+  return catalog;
+}
+
+function ensureVideoCatalogEntry(jsonPath, eventKey, ev, matchFn, newEntry) {
+  const catalog = readVideoCatalog(jsonPath, eventKey, ev);
+  const alreadyExists = catalog.candidate_videos.some(matchFn);
+  if (alreadyExists) return false;
+
+  catalog.candidate_videos.push(newEntry);
+  catalog.total_count = catalog.candidate_videos.length;
+  mkdirp(path.dirname(jsonPath));
+  atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
+  return true;
 }
 
 // ─── 路由处理 ─────────────────────────────────────────────────────────────────
@@ -711,21 +661,13 @@ const routes = {
             if (item.startsWith('http://') || item.startsWith('https://')) {
               // 非 YouTube URL → 写入 candidate_videos JSON
               const jsonPath = path.join(videosDir, `${eventKey}.json`);
-              let catalog = null;
-              if (fs.existsSync(jsonPath)) {
-                try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
-              }
-              if (!catalog || typeof catalog !== 'object') {
-                catalog = { event_id: eventKey, event_title: localizedText(ev.title) || eventKey, year: ev.year || 0, candidate_videos: [], total_count: 0, created_at: new Date().toISOString().slice(0, 19).replace('T', ' ') };
-              }
-              if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
-              const alreadyExists = catalog.candidate_videos.some(v => v.url === item);
-              if (!alreadyExists) {
-                catalog.candidate_videos.push({ url: item, title: '', source: detectVideoSource(item) });
-                catalog.total_count = catalog.candidate_videos.length;
-                mkdirp(videosDir);
-                atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
-              }
+              ensureVideoCatalogEntry(
+                jsonPath,
+                eventKey,
+                ev,
+                v => v.url === item,
+                { url: item, title: '', source: detectVideoSource(item) },
+              );
             }
             return item; // 字符串原样保留
           }
@@ -735,27 +677,15 @@ const routes = {
 
           // 写入 candidate_videos JSON
           const jsonPath = path.join(videosDir, `${eventKey}.json`);
-          let catalog = null;
-          if (fs.existsSync(jsonPath)) {
-            try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
-          }
-          if (!catalog || typeof catalog !== 'object') {
-            catalog = {
-              event_id:         eventKey,
-              event_title:      localizedText(ev.title) || eventKey,
-              year:             ev.year  || 0,
-              candidate_videos: [],
-              total_count:      0,
-              created_at:       new Date().toISOString().slice(0, 19).replace('T', ' '),
-            };
-          }
-          if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
 
           if (item.id) {
             // YouTube 视频：按 id 去重，写入后规范化为纯字符串 ID
-            const alreadyExists = catalog.candidate_videos.some(v => v.id === item.id);
-            if (!alreadyExists) {
-              catalog.candidate_videos.push({
+            ensureVideoCatalogEntry(
+              jsonPath,
+              eventKey,
+              ev,
+              v => v.id === item.id,
+              {
                 id:           item.id,
                 url:          item.url          || `https://www.youtube.com/watch?v=${item.id}`,
                 embed_url:    item.embed_url    || `https://www.youtube.com/embed/${item.id}`,
@@ -766,25 +696,22 @@ const routes = {
                 thumbnail:    item.thumbnail    || `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
                 thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
                 source:       'YouTube',
-              });
-              catalog.total_count = catalog.candidate_videos.length;
-              mkdirp(videosDir);
-              atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
-            }
+              },
+            );
             return item.id; // 规范化为纯字符串 ID
           } else {
             // 非 YouTube 视频（Bilibili 等）：按 url 去重，写入 JSON，events 中保留对象
-            const alreadyExists = catalog.candidate_videos.some(v => v.url === item.url);
-            if (!alreadyExists) {
-              catalog.candidate_videos.push({
+            ensureVideoCatalogEntry(
+              jsonPath,
+              eventKey,
+              ev,
+              v => v.url === item.url,
+              {
                 url:    item.url,
                 title:  item.title  || '',
                 source: item.source || 'Web',
-              });
-              catalog.total_count = catalog.candidate_videos.length;
-              mkdirp(videosDir);
-              atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
-            }
+              },
+            );
             return item.url; // 规范化为纯字符串 URL
           }
         }).filter(Boolean);
@@ -927,8 +854,8 @@ const routes = {
       // applied map: key → milestone
       const appliedMap = {};
       for (const m of appliedMilestones) {
-        if (m.id && m.id.startsWith('milestone-')) {
-          appliedMap[m.id.slice('milestone-'.length)] = m;
+        if (m.id && m.id.startsWith(MILESTONE_ID_PREFIX)) {
+          appliedMap[m.id.slice(MILESTONE_ID_PREFIX.length)] = m;
         }
       }
       const appliedKeys = new Set(Object.keys(appliedMap));
