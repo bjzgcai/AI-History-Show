@@ -33,7 +33,6 @@ const {
   mergeEditableQuoteMeta,
   normalizeQuoteText,
 } = require('../shared/utils.js');
-const detectSource = detectVideoSource;
 
 const { categories } = require('./catalog.js');
 const eventsMap      = require('./events.js');
@@ -109,7 +108,7 @@ for (const cat of categories) {
               channel:   fromCatalog.channel  || '',
               duration:  fromCatalog.duration || '',
               thumbnail: fromCatalog.thumbnail || '',
-              source:    fromCatalog.source   || detectSource(fromCatalog.url),
+              source:    fromCatalog.source   || detectVideoSource(fromCatalog.url),
             });
           } else {
             videos.push({
@@ -120,7 +119,7 @@ for (const cat of categories) {
               channel:   '',
               duration:  '',
               thumbnail: '',
-              source:    detectSource(item),
+              source:    detectVideoSource(item),
             });
           }
         } else {
@@ -146,7 +145,7 @@ for (const cat of categories) {
           channel:   item.channel   || '',
           duration:  item.duration  || '',
           thumbnail: item.thumbnail || '',
-          source:    item.source    || detectSource(item.url),
+          source:    item.source    || detectVideoSource(item.url),
         });
       }
     }
