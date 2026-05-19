@@ -154,6 +154,13 @@
             padding-top: 3px;
         }
 
+        .topbar-actions {
+            justify-self: end;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+
         .mode-chip-cn {
             font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
             font-size: 21px;
@@ -167,6 +174,41 @@
             font-size: 23px;
             color: rgba(244, 239, 229, 0.42);
             letter-spacing: 0.02em;
+        }
+
+        .language-toggle.topbar-language-toggle {
+            --language-toggle-width: 52px;
+            --language-toggle-height: 31px;
+            justify-self: end;
+            align-self: baseline;
+            margin-top: 0;
+            width: var(--language-toggle-width);
+            height: var(--language-toggle-height);
+            min-width: var(--language-toggle-width);
+            min-height: var(--language-toggle-height);
+            border: 1px solid rgba(244, 239, 229, 0.34);
+            background: transparent;
+            color: rgba(244, 239, 229, 0.42);
+            border-radius: 2px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .language-toggle.topbar-language-toggle:hover,
+        .language-toggle.topbar-language-toggle:focus-visible {
+            color: rgba(244, 239, 229, 0.62);
+            border-color: rgba(244, 239, 229, 0.54);
+            outline: none;
         }
 
         .stage-grid {
@@ -1524,9 +1566,12 @@
             }
 
             .mode-chip {
-                justify-self: end;
                 font-size: 14px;
                 gap: 6px;
+            }
+
+            .topbar-actions {
+                gap: 8px;
             }
 
             .mode-chip-cn {
@@ -1534,6 +1579,12 @@
             }
 
             .mode-chip-en {
+                font-size: 18px;
+            }
+
+            .language-toggle.topbar-language-toggle {
+                --language-toggle-width: 42px;
+                --language-toggle-height: 25px;
                 font-size: 18px;
             }
 
@@ -1798,9 +1849,11 @@
                     >
                 </div>
                 <div class="stage-kicker" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
-                <div class="mode-chip" aria-label="历史 HISTORY">
-                    <span class="mode-chip-cn">历史</span>
-                    <span class="mode-chip-en">HISTORY</span>
+                <div class="topbar-actions">
+                    <div class="mode-chip" aria-label="历史 HISTORY">
+                        <span class="mode-chip-cn">历史</span>
+                        <span class="mode-chip-en">HISTORY</span>
+                    </div>
                 </div>
             </header>
 

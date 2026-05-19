@@ -6,7 +6,7 @@ module.exports = {
   "1956-dartmouth": {
     "year": 1956,
     "title": {
-      "en": "Dartmouth Workshop - AI Is Born",
+      "en": "Dartmouth Workshop - AI Is Born!",
       "zh": "达特茅斯会议 - AI正式诞生！"
     },
     "location": {
@@ -77,7 +77,7 @@ module.exports = {
     "imageMeta": {
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
         "subcaption": {
-          "en": "Dartmouth Workshop - AI Is Born",
+          "en": "Cover of the Dartmouth Conference Proposal",
           "zh": "达特茅斯会议提议封面"
         },
         "caption": {
@@ -87,7 +87,7 @@ module.exports = {
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
         "subcaption": {
-          "en": "Dartmouth Workshop - AI Is Born",
+          "en": "Organizer of the Dartmouth Conference",
           "zh": "达特茅斯会议发起人"
         },
         "caption": {
@@ -101,17 +101,17 @@ module.exports = {
           "zh": "历史照片"
         },
         "subcaption": {
-          "en": "Dartmouth Workshop - AI Is Born",
+          "en": "Dartmouth Workshop - AI Is Born!",
           "zh": "达特茅斯会议 - AI正式诞生！"
         }
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png": {
         "caption": {
-          "en": "达特茅斯学院（现代）",
+          "en": "Dartmouth College（Current）",
           "zh": "达特茅斯学院（现代）"
         },
         "subcaption": {
-          "en": "Dartmouth Workshop - AI Is Born",
+          "en": "Dartmouth Workshop - AI Is Born!",
           "zh": "达特茅斯会议 - AI正式诞生！"
         }
       }
@@ -151,7 +151,7 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The theory serves as a bridge between biophysics and psychology.",
+      "en": "This theory serves as a bridge between biophysics and psychology.",
       "zh": "这一理论在生物物理学和心理学之间架起了一座桥梁。"
     },
     "quotePage": {
@@ -175,7 +175,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "The Perceptron and Connectionism",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -185,7 +185,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "The Perceptron and Connectionism",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -195,7 +195,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "The Perceptron and Connectionism",
+          "en": "<i>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</i>",
           "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
         }
       },
@@ -249,7 +249,7 @@ module.exports = {
       {
         "name": "Marvin Minsky",
         "role": {
-          "en": "Author of Perceptrons",
+          "en": "Author of <i>Perceptrons</i>",
           "zh": "《感知器》作者"
         }
       }
@@ -277,7 +277,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "The First AI Winter Arrives",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -287,7 +287,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "The First AI Winter Arrives",
+          "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
           "zh": "《Perceptrons: An Introduction to Computational Geometry》"
         }
       },
@@ -297,7 +297,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "The First AI Winter Arrives",
+          "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
           "zh": "《Perceptrons: An Introduction to Computational Geometry》"
         }
       }
@@ -324,14 +324,14 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published Learning representations by back-propagating errors, bringing practical attention to training multilayer neural networks.",
+      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks.",
       "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。"
     },
     "figures": [
       {
         "name": "David Rumelhart",
         "role": {
-          "en": "Backpropagation co-author",
+          "en": "Backpropagation author",
           "zh": "BP算法作者"
         }
       },
@@ -375,7 +375,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Backpropagation",
+          "en": "Backpropagation Algorithm Architecture Diagram",
           "zh": "反向传播算法 架构图"
         }
       },
@@ -385,7 +385,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -395,7 +395,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -405,7 +405,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },

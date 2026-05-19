@@ -145,9 +145,16 @@
         if (!global.document || global.document.getElementById('languageToggle')) return;
         const button = global.document.createElement('button');
         button.id = 'languageToggle';
+        button.className = 'language-toggle';
         button.type = 'button';
         button.setAttribute('aria-label', 'Switch language');
-        button.style.cssText = [
+
+        const modeChip = global.document.querySelector('.mode-chip');
+        if (modeChip && modeChip.parentNode) {
+            button.classList.add('topbar-language-toggle');
+            modeChip.parentNode.insertBefore(button, modeChip);
+        } else {
+            button.style.cssText = [
             'position:fixed',
             'right:18px',
             'top:18px',
@@ -161,13 +168,14 @@
             'letter-spacing:0',
             'cursor:pointer',
             'backdrop-filter:blur(10px)'
-        ].join(';');
+            ].join(';');
+            global.document.body.appendChild(button);
+        }
         button.addEventListener('click', () => {
             const current = getLocale();
             const index = i18n.supportedLocales.indexOf(current);
             setLocale(i18n.supportedLocales[(index + 1) % i18n.supportedLocales.length]);
         });
-        global.document.body.appendChild(button);
         updateToggle();
     }
 
@@ -175,7 +183,7 @@
         if (!global.document) return;
         const button = global.document.getElementById('languageToggle');
         if (!button) return;
-        button.textContent = getLocale() === 'zh' ? 'EN' : '中文';
+        button.textContent = getLocale() === 'zh' ? 'EN' : '中';
     }
 
     global.i18n = i18n;
