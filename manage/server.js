@@ -18,6 +18,8 @@ const ROOT    = path.resolve(__dirname, '..');
 const MANAGE  = __dirname;
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
 const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
+const SUPPORTED_LOCALES = ['en', 'zh'];
+const DEFAULT_LOCALE = 'zh';
 
 // ─── MIME 类型 ────────────────────────────────────────────────────────────────
 
@@ -272,6 +274,20 @@ function hasOwn(obj, key) {
   return Object.prototype.hasOwnProperty.call(obj || {}, key);
 }
 
+function isLocalizedText(value) {
+  return Boolean(value && typeof value === 'object' && !Array.isArray(value)
+    && SUPPORTED_LOCALES.some((locale) => hasOwn(value, locale)));
+}
+
+function localizedText(value, locale = DEFAULT_LOCALE) {
+  if (!isLocalizedText(value)) return String(value || '').trim();
+  return String(value[locale] || value[DEFAULT_LOCALE] || value.en || value.zh || '').trim();
+}
+
+function cloneTextValue(value) {
+  return isLocalizedText(value) ? deepClone(value) : String(value || '');
+}
+
 function normalizeEditableQuoteMeta(meta, options = {}) {
   const preserveKeys = Boolean(options.preserveKeys);
   const source = meta && typeof meta === 'object' ? meta : null;
@@ -323,7 +339,13 @@ function formatQuoteAttribution(candidate) {
 function getEffectiveQuoteText(candidatesMap, key, fallbackText) {
   const first = getLeadQuoteCandidate(candidatesMap, key);
   const candidateQuote = first ? String(first.quote || '').trim() : '';
-  return candidateQuote || String(fallbackText || '').trim();
+  if (isLocalizedText(fallbackText)) {
+    return {
+      en: candidateQuote || localizedText(fallbackText, 'en'),
+      zh: localizedText(fallbackText, 'zh') || candidateQuote || localizedText(fallbackText, 'en'),
+    };
+  }
+  return candidateQuote || localizedText(fallbackText);
 }
 
 function getEffectiveQuoteMeta(candidatesMap, key, ev, options = {}) {
@@ -389,8 +411,8 @@ function readConfiguredImageMetaEntry(map, url) {
   const entry = map[url];
   if (!entry || typeof entry !== 'object') return null;
 
-  const caption = String(entry.caption || entry.title || entry.name || '').trim();
-  const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+  const caption = localizedText(entry.caption || entry.title || entry.name || '');
+  const subcaption = localizedText(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
   if (!caption && !subcaption) return null;
   return { caption, subcaption };
 }
@@ -399,7 +421,7 @@ function deriveDisplayedImageMeta(milestone, url, configured) {
   const value = String(url || '').trim();
   if (!value) return { caption: '', subcaption: '' };
 
-  const title = String((milestone || {}).title || '').trim();
+  const title = localizedText((milestone || {}).title);
   const year = milestone && milestone.year ? String(milestone.year) : '';
   const category = String((milestone || {}).category || '').trim();
   const workTitle = extractWorkTitleFromAttribution((milestone || {}).quoteAttribution || '');
@@ -451,16 +473,16 @@ function buildAdminEventsSnapshot(eventsData, options = {}) {
     const resources = applied && applied.resources && typeof applied.resources === 'object' ? applied.resources : {};
 
     if (preferApplied && applied) {
-      if (applied.title !== undefined) ev.title = String(applied.title || '');
+      if (applied.title !== undefined) ev.title = cloneTextValue(applied.title);
       if (applied.year !== undefined) ev.year = applied.year;
       if (applied.location && typeof applied.location === 'object') ev.location = deepClone(applied.location);
-      if (applied.description !== undefined) ev.description = String(applied.description || '');
+      if (applied.description !== undefined) ev.description = cloneTextValue(applied.description);
       if (Array.isArray(applied.figures)) ev.figures = deepClone(applied.figures);
 
       const appliedQuoteState = extractAppliedQuoteState(applied);
       const appliedQuoteText = quoteHtmlToText(appliedQuoteState.quote);
       ev.quoteText = appliedQuoteText;
-      ev.quotePage = String(appliedQuoteState.quotePage || '');
+      ev.quotePage = cloneTextValue(appliedQuoteState.quotePage || '');
 
       if (Array.isArray(resources.images)) ev.images = deepClone(resources.images);
       if (Array.isArray(resources.videos)) ev.videos = deepClone(resources.videos);
@@ -472,7 +494,7 @@ function buildAdminEventsSnapshot(eventsData, options = {}) {
       }
       if (!hasOwn(ev, 'quotePage') && applied) {
         const appliedQuoteState = extractAppliedQuoteState(applied);
-        ev.quotePage = String(appliedQuoteState.quotePage || '');
+        ev.quotePage = cloneTextValue(appliedQuoteState.quotePage || '');
       }
       if (!hasOwn(ev, 'images') && Array.isArray(resources.images)) {
         ev.images = deepClone(resources.images);
@@ -482,9 +504,11 @@ function buildAdminEventsSnapshot(eventsData, options = {}) {
       }
     }
 
-    const effectiveQuoteText = normalizeQuoteText(getEffectiveQuoteText(quoteCandidates, key, ev.quoteText));
+    const effectiveQuoteText = getEffectiveQuoteText(quoteCandidates, key, ev.quoteText);
     const effectiveQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
-    ev.quoteText = effectiveQuoteText;
+    ev.quoteText = isLocalizedText(effectiveQuoteText)
+      ? Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, normalizeQuoteText(localizedText(effectiveQuoteText, locale))]))
+      : normalizeQuoteText(effectiveQuoteText);
     ev.quoteMeta = effectiveQuoteMeta;
 
     const displayMilestone = preferApplied && applied
@@ -507,8 +531,8 @@ function normalizeImageMetaMap(map) {
   const normalized = {};
   for (const [url, entry] of Object.entries(source)) {
     if (!entry || typeof entry !== 'object') continue;
-    const caption = String(entry.caption || entry.title || entry.name || '').trim();
-    const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+  const caption = localizedText(entry.caption || entry.title || entry.name || '');
+  const subcaption = localizedText(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
     if (!caption && !subcaption) continue;
     normalized[url] = { caption, subcaption };
   }
@@ -528,7 +552,7 @@ function syncLeadQuoteCandidates(eventsData) {
       ev && hasOwn(ev, 'quoteMeta') ? ev.quoteMeta : null,
       { preserveKeys: ev && hasOwn(ev, 'quoteMeta') },
     );
-    const nextQuote = normalizeQuoteText(ev && ev.quoteText ? ev.quoteText : '');
+    const nextQuote = normalizeQuoteText(localizedText(ev && ev.quoteText ? ev.quoteText : '', 'en'));
 
     if (!first && (nextQuote || quoteMetaHasAnyValue(normalizedQuoteMeta))) {
       if (!Array.isArray(quoteCandidates.events[key])) quoteCandidates.events[key] = [];
@@ -669,7 +693,9 @@ const routes = {
         ev.figures = ev.figures
           .map((figure) => ({
             name: String(figure && figure.name ? figure.name : '').trim(),
-            role: String(figure && figure.role ? figure.role : '').trim(),
+            role: isLocalizedText(figure && figure.role)
+              ? deepClone(figure.role)
+              : String(figure && figure.role ? figure.role : '').trim(),
           }))
           .filter((figure) => figure.name || figure.role);
       }
@@ -690,7 +716,7 @@ const routes = {
                 try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
               }
               if (!catalog || typeof catalog !== 'object') {
-                catalog = { event_id: eventKey, event_title: ev.title || eventKey, year: ev.year || 0, candidate_videos: [], total_count: 0, created_at: new Date().toISOString().slice(0, 19).replace('T', ' ') };
+                catalog = { event_id: eventKey, event_title: localizedText(ev.title) || eventKey, year: ev.year || 0, candidate_videos: [], total_count: 0, created_at: new Date().toISOString().slice(0, 19).replace('T', ' ') };
               }
               if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
               const alreadyExists = catalog.candidate_videos.some(v => v.url === item);
@@ -716,7 +742,7 @@ const routes = {
           if (!catalog || typeof catalog !== 'object') {
             catalog = {
               event_id:         eventKey,
-              event_title:      ev.title || eventKey,
+              event_title:      localizedText(ev.title) || eventKey,
               year:             ev.year  || 0,
               candidate_videos: [],
               total_count:      0,
@@ -922,18 +948,19 @@ const routes = {
         const changes = {};
 
         // 标量字段：直接对比旧/新值
-        if (String(ev.title || '') !== String(applied.title || ''))
-          changes.title = { from: applied.title || '', to: ev.title || '' };
+        if (JSON.stringify(ev.title || '') !== JSON.stringify(applied.title || ''))
+          changes.title = { from: localizedText(applied.title), to: localizedText(ev.title) };
         if (String(ev.year  || '') !== String(applied.year  || ''))
           changes.year  = { from: applied.year,         to: ev.year };
 
         // 描述：记录完整前后内容
-        if (String(ev.description || '') !== String(applied.description || ''))
-          changes.description = { from: applied.description || '', to: ev.description || '' };
+        if (JSON.stringify(ev.description || '') !== JSON.stringify(applied.description || ''))
+          changes.description = { from: localizedText(applied.description), to: localizedText(ev.description) };
 
         // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
-        const evQuoteText = normalizeQuoteText(getEffectiveQuoteText(quoteCandidates, key, ev.quoteText));
-        const evQuotePage = ev.quotePage || '';
+        const evQuoteTextValue = getEffectiveQuoteText(quoteCandidates, key, ev.quoteText);
+        const evQuoteText = normalizeQuoteText(localizedText(evQuoteTextValue, 'en'));
+        const evQuotePage = localizedText(ev.quotePage);
         const rebuildQuote = (text) => {
           if (!text) return '';
           const body = text.replace(/\n/g, '<br>');
@@ -990,12 +1017,12 @@ const routes = {
           changes.videos = { added: vidsAdded, removed: vidsRemoved };
 
         // 地点：比较 name + country
-        const evLoc  = `${(ev.location || {}).name || ''}|${(ev.location || {}).country || ''}`;
-        const appLoc = `${(applied.location || {}).name || ''}|${(applied.location || {}).country || ''}`;
+        const evLoc  = `${localizedText((ev.location || {}).name)}|${localizedText((ev.location || {}).country)}`;
+        const appLoc = `${localizedText((applied.location || {}).name)}|${localizedText((applied.location || {}).country)}`;
         if (evLoc !== appLoc)
           changes.location = {
-            from: (applied.location || {}).name || '',
-            to:   (ev.location  || {}).name || '',
+            from: localizedText((applied.location || {}).name),
+            to:   localizedText((ev.location  || {}).name),
           };
 
         // 人物：计算增删
@@ -1007,7 +1034,7 @@ const routes = {
           changes.figures = { added: figsAdded, removed: figsRemoved };
 
         if (Object.keys(changes).length > 0) {
-          modified.push({ key, title: ev.title || key, year: ev.year, changes });
+          modified.push({ key, title: localizedText(ev.title) || key, year: ev.year, changes });
         } else {
           unchanged.push(key);
         }
@@ -1017,24 +1044,25 @@ const routes = {
       const appliedCategoryOrder = [];
       const seen = {};
       for (const m of appliedMilestones) {
-        if (m.category && !seen[m.category]) { seen[m.category] = true; appliedCategoryOrder.push(m.category); }
+        const categoryName = localizedText(m.category);
+        if (categoryName && !seen[categoryName]) { seen[categoryName] = true; appliedCategoryOrder.push(categoryName); }
       }
-      const newCategoryOrder = (catalog.categories || []).map(c => c.name);
+      const newCategoryOrder = (catalog.categories || []).map(c => localizedText(c.name));
       const categoryChanged  = JSON.stringify(newCategoryOrder) !== JSON.stringify(appliedCategoryOrder);
 
       json(res, {
         added:   added.map(k => ({
-          key: k, title: (eventsMap[k] || {}).title || k,
+          key: k, title: localizedText((eventsMap[k] || {}).title) || k,
           year: (eventsMap[k] || {}).year,
-          location: ((eventsMap[k] || {}).location || {}).name || '',
+          location: localizedText(((eventsMap[k] || {}).location || {}).name),
           figureCount: ((eventsMap[k] || {}).figures || []).length,
           imageCount:  ((eventsMap[k] || {}).images  || []).length,
           videoCount:  ((eventsMap[k] || {}).videos  || []).length,
         })),
         removed: removed.map(k => ({
-          key: k, title: (appliedMap[k] || {}).title || k,
+          key: k, title: localizedText((appliedMap[k] || {}).title) || k,
           year: (appliedMap[k] || {}).year,
-          category: (appliedMap[k] || {}).category || '',
+          category: localizedText((appliedMap[k] || {}).category),
         })),
         modified,
         unchanged,

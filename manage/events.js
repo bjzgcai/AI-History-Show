@@ -5,36 +5,66 @@
 module.exports = {
   "1956-dartmouth": {
     "year": 1956,
-    "title": "达特茅斯会议 - AI正式诞生！",
+    "title": {
+      "en": "Dartmouth Workshop - AI Is Born",
+      "zh": "达特茅斯会议 - AI正式诞生！"
+    },
     "location": {
-      "name": "达特茅斯学院",
-      "country": "美国, 新罕布什尔州",
+      "name": {
+        "en": "Dartmouth College",
+        "zh": "达特茅斯学院"
+      },
+      "country": {
+        "en": "NH, United States",
+        "zh": "美国, 新罕布什尔州"
+      },
       "coordinates": [
         43.7044,
         -72.2887
       ]
     },
-    "description": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"Artificial Intelligence\" 这个名称",
+    "description": {
+      "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field.",
+      "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"Artificial Intelligence\" 这个名称"
+    },
     "figures": [
       {
         "name": "John McCarthy",
-        "role": "提出\"AI\"术语"
+        "role": {
+          "en": "Coined the term \"AI\"",
+          "zh": "提出\"AI\"术语"
+        }
       },
       {
         "name": "Marvin Minsky",
-        "role": "认知科学家"
+        "role": {
+          "en": "Cognitive scientist",
+          "zh": "认知科学家"
+        }
       },
       {
         "name": "Claude Shannon",
-        "role": "信息论创始人"
+        "role": {
+          "en": "Founder of information theory",
+          "zh": "信息论创始人"
+        }
       },
       {
         "name": "Nathaniel Rochester",
-        "role": "IBM架构师"
+        "role": {
+          "en": "IBM architect",
+          "zh": "IBM架构师"
+        }
       }
     ],
-    "quoteText": "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.",
-    "quotePage": "摘自PPT第1页",
+    "quoteText": {
+      "en": "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.",
+      "zh": "学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。"
+    },
+    "quotePage": {
+      "en": "From PPT page 1",
+      "zh": "摘自PPT第1页"
+    },
     "images": [
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
@@ -46,43 +76,88 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
-        "subcaption": "达特茅斯会议提议封面",
-        "caption": "历史照片"
+        "subcaption": {
+          "en": "Dartmouth Workshop - AI Is Born",
+          "zh": "达特茅斯会议提议封面"
+        },
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        }
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
-        "subcaption": "达特茅斯会议发起人",
-        "caption": "历史照片"
+        "subcaption": {
+          "en": "Dartmouth Workshop - AI Is Born",
+          "zh": "达特茅斯会议发起人"
+        },
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        }
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg": {
-        "caption": "历史照片",
-        "subcaption": "达特茅斯会议 - AI正式诞生！"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Dartmouth Workshop - AI Is Born",
+          "zh": "达特茅斯会议 - AI正式诞生！"
+        }
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png": {
-        "caption": "达特茅斯学院（现代）",
-        "subcaption": "达特茅斯会议 - AI正式诞生！"
+        "caption": {
+          "en": "达特茅斯学院（现代）",
+          "zh": "达特茅斯学院（现代）"
+        },
+        "subcaption": {
+          "en": "Dartmouth Workshop - AI Is Born",
+          "zh": "达特茅斯会议 - AI正式诞生！"
+        }
       }
     }
   },
   "1957-perceptron": {
     "year": 1957,
-    "title": "感知机与连接主义",
+    "title": {
+      "en": "The Perceptron and Connectionism",
+      "zh": "感知机与连接主义"
+    },
     "location": {
-      "name": "康奈尔大学",
-      "country": "美国, 纽约州",
+      "name": {
+        "en": "Cornell University",
+        "zh": "康奈尔大学"
+      },
+      "country": {
+        "en": "NY, United States",
+        "zh": "美国, 纽约州"
+      },
       "coordinates": [
         42.4534,
         -76.4735
       ]
     },
-    "description": "1957年，Rosenblatt设计了第一个人工神经网络（感知机），可以模拟人类大脑的思考过程。这是人工神经网络的首个物理实现，也是连接主义的代表性工作。",
+    "description": {
+      "en": "In 1957, Frank Rosenblatt designed the perceptron, one of the first artificial neural networks, to model aspects of human cognition. It became the first physical implementation of an artificial neural network and an early landmark for connectionist AI.",
+      "zh": "1957年，Rosenblatt设计了第一个人工神经网络（感知机），可以模拟人类大脑的思考过程。这是人工神经网络的首个物理实现，也是连接主义的代表性工作。"
+    },
     "figures": [
       {
         "name": "Frank Rosenblatt",
-        "role": "感知机发明者"
+        "role": {
+          "en": "Inventor of the perceptron",
+          "zh": "感知机发明者"
+        }
       }
     ],
-    "quoteText": "The theory serves as a bridge between biophysics and psychology.",
-    "quotePage": "摘自PPT第4页",
+    "quoteText": {
+      "en": "The theory serves as a bridge between biophysics and psychology.",
+      "zh": "这一理论在生物物理学和心理学之间架起了一座桥梁。"
+    },
+    "quotePage": {
+      "en": "From PPT page 4",
+      "zh": "摘自PPT第4页"
+    },
     "images": [
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
@@ -95,47 +170,98 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "The Perceptron and Connectionism",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "The Perceptron and Connectionism",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "The Perceptron and Connectionism",
+          "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
+        }
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
-        "caption": "历史照片",
-        "subcaption": "感知机与连接主义"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "The Perceptron and Connectionism",
+          "zh": "感知机与连接主义"
+        }
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
-        "caption": "历史照片",
-        "subcaption": "感知机与连接主义"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "The Perceptron and Connectionism",
+          "zh": "感知机与连接主义"
+        }
       }
     }
   },
   "1969-ai-winter": {
     "year": 1969,
-    "title": "第一次寒冬的到来",
+    "title": {
+      "en": "The First AI Winter Arrives",
+      "zh": "第一次寒冬的到来"
+    },
     "location": {
-      "name": "麻省理工学院",
-      "country": "美国, 马萨诸塞州",
+      "name": {
+        "en": "MIT",
+        "zh": "麻省理工学院"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国, 马萨诸塞州"
+      },
       "coordinates": [
         42.3601,
         -71.0942
       ]
     },
-    "description": "1969 年, Minsky 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
+    "description": {
+      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+      "zh": "1969 年, Minsky 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
+    },
     "figures": [
       {
         "name": "Marvin Minsky",
-        "role": "《感知器》作者"
+        "role": {
+          "en": "Author of Perceptrons",
+          "zh": "《感知器》作者"
+        }
       }
     ],
-    "quoteText": "Their rigorous work and brilliant technique does not make the perceptron look very good.",
-    "quotePage": "摘自PPT第5页",
+    "quoteText": {
+      "en": "Their rigorous work and brilliant technique does not make the perceptron look very good.",
+      "zh": "他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。"
+    },
+    "quotePage": {
+      "en": "From PPT page 5",
+      "zh": "摘自PPT第5页"
+    },
     "images": [
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg",
@@ -146,47 +272,92 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "The First AI Winter Arrives",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
-        "caption": "论文页面",
-        "subcaption": "《Perceptrons: An Introduction to Computational Geometry》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "The First AI Winter Arrives",
+          "zh": "《Perceptrons: An Introduction to Computational Geometry》"
+        }
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《Perceptrons: An Introduction to Computational Geometry》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "The First AI Winter Arrives",
+          "zh": "《Perceptrons: An Introduction to Computational Geometry》"
+        }
       }
     }
   },
   "1986-backpropagation": {
     "year": 1986,
-    "title": "反向传播算法",
+    "title": {
+      "en": "Backpropagation",
+      "zh": "反向传播算法"
+    },
     "location": {
-      "name": "加州大学圣地亚哥分校",
-      "country": "美国, 加利福尼亚州",
+      "name": {
+        "en": "University of California, San Diego",
+        "zh": "加州大学圣地亚哥分校"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国, 加利福尼亚州"
+      },
       "coordinates": [
         32.8801,
         -117.234
       ]
     },
-    "description": "神经网络的复兴与反向传播算法密切相关。 1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
+    "description": {
+      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published Learning representations by back-propagating errors, bringing practical attention to training multilayer neural networks.",
+      "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。"
+    },
     "figures": [
       {
         "name": "David Rumelhart",
-        "role": "BP算法作者"
+        "role": {
+          "en": "Backpropagation co-author",
+          "zh": "BP算法作者"
+        }
       },
       {
         "name": "Geoffrey Hinton",
-        "role": "深度学习之父"
+        "role": {
+          "en": "Pioneer of deep learning",
+          "zh": "深度学习之父"
+        }
       },
       {
         "name": "Ronald Williams",
-        "role": "BP算法共同作者"
+        "role": {
+          "en": "Backpropagation co-author",
+          "zh": "BP算法共同作者"
+        }
       }
     ],
-    "quoteText": "The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.",
-    "quotePage": "摘自PPT第9页",
+    "quoteText": {
+      "en": "The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.",
+      "zh": "能够创造有用的新特征，使反向传播区别于更早、更简单的方法。"
+    },
+    "quotePage": {
+      "en": "From PPT page 9",
+      "zh": "摘自PPT第9页"
+    },
     "images": [
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
@@ -199,47 +370,98 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png": {
-        "caption": "结构示意",
-        "subcaption": "反向传播算法 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Backpropagation",
+          "zh": "反向传播算法 架构图"
+        }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Backpropagation",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Backpropagation",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Backpropagation",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《Learning representations by back-propagating errors》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "Backpropagation",
+          "zh": "《Learning representations by back-propagating errors》"
+        }
       }
     }
   },
   "1989-cnn": {
     "year": 1989,
-    "title": "卷积神经网络",
+    "title": {
+      "en": "Convolutional Neural Networks",
+      "zh": "卷积神经网络"
+    },
     "location": {
-      "name": "贝尔实验室",
-      "country": "美国, 新泽西州",
+      "name": {
+        "en": "Bell Labs",
+        "zh": "贝尔实验室"
+      },
+      "country": {
+        "en": "NJ, United States",
+        "zh": "美国, 新泽西州"
+      },
       "coordinates": [
         40.6836,
         -74.3977
       ]
     },
-    "description": "卷积神经网络的结构设计受生物机理启发 视觉皮质只对局部区域敏感，通过堆叠覆盖整个 视野；皮质细胞起到滤波器作用，适合利用自然 图像的强局部相关性 1989年， LeCun将反向传播算法应用于训练卷积神经网络， 实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。",
+    "description": {
+      "en": "Convolutional neural networks draw inspiration from biological vision: local receptive fields and filters exploit the spatial structure of images. In 1989, Yann LeCun applied backpropagation to train CNNs for handwritten digit recognition, opening the path to modern computer vision.",
+      "zh": "卷积神经网络的结构设计受生物机理启发 视觉皮质只对局部区域敏感，通过堆叠覆盖整个 视野；皮质细胞起到滤波器作用，适合利用自然 图像的强局部相关性 1989年， LeCun将反向传播算法应用于训练卷积神经网络， 实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。"
+    },
     "figures": [
       {
         "name": "Yann LeCun",
-        "role": "CNN之父"
+        "role": {
+          "en": "Pioneer of CNNs",
+          "zh": "CNN之父"
+        }
       }
     ],
-    "quoteText": "Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.",
-    "quotePage": "摘自PPT第14页",
+    "quoteText": {
+      "en": "Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.",
+      "zh": "专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。"
+    },
+    "quotePage": {
+      "en": "From PPT page 14",
+      "zh": "摘自PPT第14页"
+    },
     "images": [
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
@@ -250,43 +472,85 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Convolutional Neural Networks",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Convolutional Neural Networks",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
-        "caption": "结构示意",
-        "subcaption": "卷积神经网络 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Convolutional Neural Networks",
+          "zh": "卷积神经网络 架构图"
+        }
       }
     }
   },
   "1986-rnn": {
     "year": 1986,
-    "title": "循环神经网络",
+    "title": {
+      "en": "Recurrent Neural Networks",
+      "zh": "循环神经网络"
+    },
     "location": {
-      "name": "加州大学圣地亚哥分校",
-      "country": "美国, 加利福尼亚州",
+      "name": {
+        "en": "University of California, San Diego",
+        "zh": "加州大学圣地亚哥分校"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国, 加利福尼亚州"
+      },
       "coordinates": [
         32.8801,
         -117.234
       ]
     },
-    "description": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，Elman和Jordan分别提出了Simple RNN和Jordan Network，引入context units作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
+    "description": {
+      "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling.",
+      "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，Elman和Jordan分别提出了Simple RNN和Jordan Network，引入context units作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。"
+    },
     "figures": [
       {
         "name": "Jeffrey Elman",
-        "role": "Simple RNN提出者"
+        "role": {
+          "en": "Simple RNN提出者",
+          "zh": "Simple RNN提出者"
+        }
       },
       {
         "name": "Michael Jordan",
-        "role": "Jordan Network提出者"
+        "role": {
+          "en": "Jordan Network提出者",
+          "zh": "Jordan Network提出者"
+        }
       }
     ],
-    "quoteText": "The current report develops a proposal ... to provide networks with a dynamic memory.",
-    "quotePage": "摘自PPT第16页",
+    "quoteText": {
+      "en": "The current report develops a proposal ... to provide networks with a dynamic memory.",
+      "zh": "简单循环网络能够在内部表示中保留关于过去输入的信息。"
+    },
+    "quotePage": {
+      "en": "From PPT page 16",
+      "zh": "摘自PPT第16页"
+    },
     "images": [
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
       "resources/images/1986-rnn/people/1986-rnn_people_01.png"
@@ -296,39 +560,75 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "循环神经网络 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Recurrent Neural Networks",
+          "zh": "循环神经网络 架构图"
+        }
       },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Recurrent Neural Networks",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "1997-lstm": {
     "year": 1997,
-    "title": "LSTM与门控机制",
+    "title": {
+      "en": "LSTM and Gating Mechanisms",
+      "zh": "LSTM与门控机制"
+    },
     "location": {
-      "name": "慕尼黑工业大学",
-      "country": "德国, 巴伐利亚州",
+      "name": {
+        "en": "Technical University of Munich",
+        "zh": "慕尼黑工业大学"
+      },
+      "country": {
+        "en": "Germany",
+        "zh": "德国, 巴伐利亚州"
+      },
       "coordinates": [
         48.1351,
         11.582
       ]
     },
-    "description": "1997年，Hochreiter与Schmidhuber提出了长短期记忆网络（LSTM），通过引入门控机制 保持长距离信息流，用以解决RNN的梯度消失困境。 导数：与遗忘门Ft有关，接近于1",
+    "description": {
+      "en": "In 1997, Sepp Hochreiter and Juergen Schmidhuber proposed Long Short-Term Memory networks. LSTM introduced gates that preserve long-range information flow, helping recurrent networks overcome vanishing gradients and enabling later breakthroughs in speech and language.",
+      "zh": "1997年，Hochreiter与Schmidhuber提出了长短期记忆网络（LSTM），通过引入门控机制 保持长距离信息流，用以解决RNN的梯度消失困境。 导数：与遗忘门Ft有关，接近于1"
+    },
     "figures": [
       {
         "name": "Sepp Hochreiter",
-        "role": "LSTM发明者"
+        "role": {
+          "en": "LSTM发明者",
+          "zh": "LSTM发明者"
+        }
       },
       {
         "name": "Jürgen Schmidhuber",
-        "role": "LSTM共同发明者"
+        "role": {
+          "en": "LSTM共同发明者",
+          "zh": "LSTM共同发明者"
+        }
       }
     ],
-    "quoteText": "We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).",
-    "quotePage": "摘自PPT第19页",
+    "quoteText": {
+      "en": "We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).",
+      "zh": "长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。"
+    },
+    "quotePage": {
+      "en": "From PPT page 19",
+      "zh": "摘自PPT第19页"
+    },
     "images": [
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
@@ -339,43 +639,85 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
-        "caption": "结构示意",
-        "subcaption": "LSTM与门控机制 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "LSTM and Gating Mechanisms",
+          "zh": "LSTM与门控机制 架构图"
+        }
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "LSTM与门控机制 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "LSTM and Gating Mechanisms",
+          "zh": "LSTM与门控机制 架构图"
+        }
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "LSTM and Gating Mechanisms",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "2012-alexnet": {
     "year": 2012,
-    "title": "ImageNet时代：AlexNet与深度学习爆发",
+    "title": {
+      "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+      "zh": "ImageNet时代：AlexNet与深度学习爆发"
+    },
     "location": {
-      "name": "多伦多大学",
-      "country": "加拿大, 安大略省",
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Canada",
+        "zh": "加拿大, 安大略省"
+      },
       "coordinates": [
         43.6629,
         -79.3957
       ]
     },
-    "description": "2012-2014年，获得ImageNet冠军的AlexNet、VGG、GoogleNet，其成功并非源于全新的算法（核心算法与20年前的LeNet并无多大差别），而是大数据（ImageNet）、大算力（GPU）和算法优化（ReLU, Dropout）的结合。",
+    "description": {
+      "en": "From 2012 to 2014, AlexNet, VGG and GoogLeNet won ImageNet with deep neural networks. Their success came from the convergence of data, GPUs and engineering, proving that deep learning could dominate large-scale visual recognition.",
+      "zh": "2012-2014年，获得ImageNet冠军的AlexNet、VGG、GoogleNet，其成功并非源于全新的算法（核心算法与20年前的LeNet并无多大差别），而是大数据（ImageNet）、大算力（GPU）和算法优化（ReLU, Dropout）的结合。"
+    },
     "figures": [
       {
         "name": "Alex Krizhevsky",
-        "role": "AlexNet作者"
+        "role": {
+          "en": "AlexNet作者",
+          "zh": "AlexNet作者"
+        }
       },
       {
         "name": "Geoffrey Hinton",
-        "role": "导师"
+        "role": {
+          "en": "导师",
+          "zh": "导师"
+        }
       }
     ],
-    "quoteText": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.",
-    "quotePage": "摘自PPT第23页",
+    "quoteText": {
+      "en": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.",
+      "zh": "我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。"
+    },
+    "quotePage": {
+      "en": "From PPT page 23",
+      "zh": "摘自PPT第23页"
+    },
     "images": [
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
@@ -386,43 +728,85 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "ImageNet时代：AlexNet与深度学习爆发 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+          "zh": "ImageNet时代：AlexNet与深度学习爆发 架构图"
+        }
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "ImageNet时代：AlexNet与深度学习爆发 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+          "zh": "ImageNet时代：AlexNet与深度学习爆发 架构图"
+        }
       }
     }
   },
   "2014-highway-network": {
     "year": 2014,
-    "title": "Highway Network",
+    "title": {
+      "en": "Highway Networks",
+      "zh": "Highway Network"
+    },
     "location": {
-      "name": "蒙特利尔大学",
-      "country": "加拿大, 魁北克省",
+      "name": {
+        "en": "IDSIA",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Switzerland",
+        "zh": "加拿大, 魁北克省"
+      },
       "coordinates": [
         45.5017,
         -73.5673
       ]
     },
-    "description": "最初训练超过百层 最多训练到上千层",
+    "description": {
+      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures.",
+      "zh": "最初训练超过百层 最多训练到上千层"
+    },
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": {
+          "en": "GAN发明者",
+          "zh": "GAN发明者"
+        }
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": {
+          "en": "注意力机制提出者",
+          "zh": "注意力机制提出者"
+        }
       }
     ],
-    "quoteText": "The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.",
-    "quotePage": "摘自PPT第25页",
+    "quoteText": {
+      "en": "The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.",
+      "zh": "高速网络能够训练非常深的前馈网络。"
+    },
+    "quotePage": {
+      "en": "From PPT page 25",
+      "zh": "摘自PPT第25页"
+    },
     "images": [
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png"
@@ -432,39 +816,75 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "Highway Network 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Highway Networks",
+          "zh": "Highway Network 架构图"
+        }
       },
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Highway Networks",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "2015-resnet": {
     "year": 2015,
-    "title": "ResNet",
+    "title": {
+      "en": "ResNet",
+      "zh": "ResNet"
+    },
     "location": {
-      "name": "微软研究院",
-      "country": "中国, 北京",
+      "name": {
+        "en": "Microsoft Research Asia",
+        "zh": "微软研究院"
+      },
+      "country": {
+        "en": "China",
+        "zh": "中国, 北京"
+      },
       "coordinates": [
         39.9042,
         116.4074
       ]
     },
-    "description": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层",
+    "description": {
+      "en": "In 2015, Kaiming He and Jian Sun introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
+      "zh": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层"
+    },
     "figures": [
       {
         "name": "何恺明",
-        "role": "ResNet作者"
+        "role": {
+          "en": "ResNet作者",
+          "zh": "ResNet作者"
+        }
       },
       {
         "name": "孙剑",
-        "role": "ResNet共同作者"
+        "role": {
+          "en": "ResNet共同作者",
+          "zh": "ResNet共同作者"
+        }
       }
     ],
-    "quoteText": "We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.",
-    "quotePage": "摘自PPT第26页",
+    "quoteText": {
+      "en": "We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.",
+      "zh": "我们提出一种残差学习框架，以便训练比以前深得多的网络。"
+    },
+    "quotePage": {
+      "en": "From PPT page 26",
+      "zh": "摘自PPT第26页"
+    },
     "images": [
       "resources/images/2015-resnet/people/2015-resnet_people_02.png",
       "resources/images/2015-resnet/people/2015-resnet_people_01.png",
@@ -478,51 +898,108 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "ResNet",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "ResNet",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "ResNet",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "ResNet 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "ResNet",
+          "zh": "ResNet 架构图"
+        }
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "ResNet 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "ResNet",
+          "zh": "ResNet 架构图"
+        }
       },
       "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "ResNet",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "2016-densenet": {
     "year": 2016,
-    "title": "DenseNet",
+    "title": {
+      "en": "DenseNet",
+      "zh": "DenseNet"
+    },
     "location": {
-      "name": "康奈尔大学",
-      "country": "美国, 纽约州",
+      "name": {
+        "en": "Cornell University",
+        "zh": "康奈尔大学"
+      },
+      "country": {
+        "en": "NY, United States",
+        "zh": "美国, 纽约州"
+      },
       "coordinates": [
         42.4534,
         -76.4735
       ]
     },
-    "description": "2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。 最多训练到201层",
+    "description": {
+      "en": "In 2016, Gao Huang and collaborators proposed DenseNet, connecting each layer to every later layer. By making all previous feature states directly visible, DenseNet increased gradient paths, improved feature reuse and influenced efficient network design.",
+      "zh": "2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。 最多训练到201层"
+    },
     "figures": [
       {
         "name": "黄高",
-        "role": "DenseNet作者"
+        "role": {
+          "en": "DenseNet作者",
+          "zh": "DenseNet作者"
+        }
       }
     ],
-    "quoteText": "DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.",
-    "quotePage": "摘自PPT第27页",
+    "quoteText": {
+      "en": "DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.",
+      "zh": "密集卷积网络以前馈方式将每一层连接到其他每一层。"
+    },
+    "quotePage": {
+      "en": "From PPT page 27",
+      "zh": "摘自PPT第27页"
+    },
     "images": [
       "resources/images/2016-densenet/people/2016-densenet_people_02.png",
       "resources/images/2016-densenet/people/2016-densenet_people_01.png",
@@ -533,43 +1010,85 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "DenseNet",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "DenseNet",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "DenseNet 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "DenseNet",
+          "zh": "DenseNet 架构图"
+        }
       }
     }
   },
   "2014-gan": {
     "year": 2014,
-    "title": "GAN（生成对抗网路）",
+    "title": {
+      "en": "GANs: Generative Adversarial Networks",
+      "zh": "GAN（生成对抗网路）"
+    },
     "location": {
-      "name": "蒙特利尔大学",
-      "country": "加拿大, 魁北克省",
+      "name": {
+        "en": "University of Montreal",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Canada",
+        "zh": "加拿大, 魁北克省"
+      },
       "coordinates": [
         45.5017,
         -73.5673
       ]
     },
-    "description": "2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为\"控制器\"尝试产生输出，另一个网络作为\"预测器\"尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 Goodfellow对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的\"流行即发明\"案例。",
+    "description": {
+      "en": "In 2014, Ian Goodfellow introduced Generative Adversarial Networks, in which a generator and discriminator learn through an adversarial game. GANs became a major framework for learning data distributions and generating realistic images and media.",
+      "zh": "2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为\"控制器\"尝试产生输出，另一个网络作为\"预测器\"尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 Goodfellow对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的\"流行即发明\"案例。"
+    },
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": {
+          "en": "GAN发明者",
+          "zh": "GAN发明者"
+        }
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": {
+          "en": "注意力机制提出者",
+          "zh": "注意力机制提出者"
+        }
       }
     ],
-    "quoteText": "We propose a new framework for estimating generative models via adversarial nets.",
-    "quotePage": "摘自PPT第30页",
+    "quoteText": {
+      "en": "We propose a new framework for estimating generative models via adversarial nets.",
+      "zh": "我们提出一种通过对抗过程估计生成模型的新框架。"
+    },
+    "quotePage": {
+      "en": "From PPT page 30",
+      "zh": "摘自PPT第30页"
+    },
     "images": [
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
     ],
@@ -578,35 +1097,65 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "GAN（生成对抗网路） 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "GANs: Generative Adversarial Networks",
+          "zh": "GAN（生成对抗网路） 架构图"
+        }
       }
     }
   },
   "2014-attention": {
     "year": 2014,
-    "title": "自回归模型和注意力机制",
+    "title": {
+      "en": "Autoregressive Models and Attention",
+      "zh": "自回归模型和注意力机制"
+    },
     "location": {
-      "name": "蒙特利尔大学",
-      "country": "加拿大, 魁北克省",
+      "name": {
+        "en": "University of Montreal",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Canada",
+        "zh": "加拿大, 魁北克省"
+      },
       "coordinates": [
         45.5017,
         -73.5673
       ]
     },
-    "description": "2014年，Bengio在《Neural Machine Translation by Jointly Learning to Align and Translate》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。",
+    "description": {
+      "en": "In 2014, the neural machine translation work by Bahdanau, Cho and Bengio introduced attention as a way to align and translate jointly. Attention let models focus on relevant input parts and became a central mechanism for sequence modeling.",
+      "zh": "2014年，Bengio在《Neural Machine Translation by Jointly Learning to Align and Translate》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。"
+    },
     "figures": [
       {
         "name": "Ian Goodfellow",
-        "role": "GAN发明者"
+        "role": {
+          "en": "GAN发明者",
+          "zh": "GAN发明者"
+        }
       },
       {
         "name": "Yoshua Bengio",
-        "role": "注意力机制提出者"
+        "role": {
+          "en": "注意力机制提出者",
+          "zh": "注意力机制提出者"
+        }
       }
     ],
-    "quoteText": "We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.",
-    "quotePage": "摘自PPT第32页",
+    "quoteText": {
+      "en": "We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.",
+      "zh": "我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。"
+    },
+    "quotePage": {
+      "en": "From PPT page 32",
+      "zh": "摘自PPT第32页"
+    },
     "images": [
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
       "resources/images/2014-attention/people/2014-attention_people_01.png"
@@ -616,35 +1165,68 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "自回归模型和注意力机制 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Autoregressive Models and Attention",
+          "zh": "自回归模型和注意力机制 架构图"
+        }
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "Autoregressive Models and Attention",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "2017-transformer": {
     "year": 2017,
-    "title": "Transformer",
+    "title": {
+      "en": "Transformer",
+      "zh": "Transformer"
+    },
     "location": {
-      "name": "Google Brain",
-      "country": "美国, 加利福尼亚州",
+      "name": {
+        "en": "Google Brain",
+        "zh": "Google Brain"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国, 加利福尼亚州"
+      },
       "coordinates": [
         37.422,
         -122.0841
       ]
     },
-    "description": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。",
+    "description": {
+      "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+      "zh": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
+    },
     "figures": [
       {
         "name": "Ashish Vaswani",
-        "role": "Transformer作者"
+        "role": {
+          "en": "Transformer作者",
+          "zh": "Transformer作者"
+        }
       }
     ],
-    "quoteText": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-    "quotePage": "摘自PPT第33页",
+    "quoteText": {
+      "en": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+      "zh": "我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。"
+    },
+    "quotePage": {
+      "en": "From PPT page 33",
+      "zh": "摘自PPT第33页"
+    },
     "images": [
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
@@ -655,43 +1237,85 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "Transformer 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Transformer",
+          "zh": "Transformer 架构图"
+        }
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "Transformer 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "Transformer",
+          "zh": "Transformer 架构图"
+        }
       },
       "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《Attention Is All You Need》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "Transformer",
+          "zh": "《Attention Is All You Need》"
+        }
       }
     }
   },
   "2018-bert": {
     "year": 2018,
-    "title": "BERT",
+    "title": {
+      "en": "BERT",
+      "zh": "BERT"
+    },
     "location": {
-      "name": "OpenAI / Google AI",
-      "country": "美国, 加利福尼亚州",
+      "name": {
+        "en": "Google AI Language",
+        "zh": "OpenAI / Google AI"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国, 加利福尼亚州"
+      },
       "coordinates": [
         37.7749,
         -122.4194
       ]
     },
-    "description": "2018年，Google提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。 BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（Masked Language Model）和下一句预测（Next Sentence Prediction）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。",
+    "description": {
+      "en": "In 2018, Google introduced BERT, bringing large-scale pretraining plus fine-tuning into mainstream NLP. Based on the Transformer encoder, BERT learned bidirectional representations and achieved state-of-the-art results across many language tasks.",
+      "zh": "2018年，Google提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。 BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（Masked Language Model）和下一句预测（Next Sentence Prediction）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。"
+    },
     "figures": [
       {
         "name": "Jacob Devlin",
-        "role": "BERT作者"
+        "role": {
+          "en": "BERT作者",
+          "zh": "BERT作者"
+        }
       },
       {
         "name": "Alec Radford",
-        "role": "GPT作者"
+        "role": {
+          "en": "GPT作者",
+          "zh": "GPT作者"
+        }
       }
     ],
-    "quoteText": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
-    "quotePage": "摘自PPT第37页",
+    "quoteText": {
+      "en": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
+      "zh": "BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。"
+    },
+    "quotePage": {
+      "en": "From PPT page 37",
+      "zh": "摘自PPT第37页"
+    },
     "images": [
       "resources/images/2018-bert/people/2018-bert_people_03.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
@@ -702,43 +1326,85 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "BERT",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
-        "caption": "结构示意",
-        "subcaption": "BERT 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "BERT",
+          "zh": "BERT 架构图"
+        }
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "BERT 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "BERT",
+          "zh": "BERT 架构图"
+        }
       }
     }
   },
   "2018-gpt": {
     "year": 2018,
-    "title": "GPT",
+    "title": {
+      "en": "GPT",
+      "zh": "GPT"
+    },
     "location": {
-      "name": "OpenAI / Google AI",
-      "country": "美国, 加利福尼亚州",
+      "name": {
+        "en": "OpenAI",
+        "zh": "OpenAI / Google AI"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国, 加利福尼亚州"
+      },
       "coordinates": [
         37.7749,
         -122.4194
       ]
     },
-    "description": "2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。 GPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（Next Token Prediction）进行训练。 虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。 2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。",
+    "description": {
+      "en": "In 2018, OpenAI introduced GPT as another pretraining-and-fine-tuning paradigm. GPT used a unidirectional Transformer decoder trained with next-token prediction, showing that generative pretraining could transfer effectively to many NLP tasks.",
+      "zh": "2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。 GPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（Next Token Prediction）进行训练。 虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。 2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。"
+    },
     "figures": [
       {
         "name": "Jacob Devlin",
-        "role": "BERT作者"
+        "role": {
+          "en": "BERT作者",
+          "zh": "BERT作者"
+        }
       },
       {
         "name": "Alec Radford",
-        "role": "GPT作者"
+        "role": {
+          "en": "GPT作者",
+          "zh": "GPT作者"
+        }
       }
     ],
-    "quoteText": "We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.",
-    "quotePage": "摘自PPT第38页",
+    "quoteText": {
+      "en": "We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.",
+      "zh": "我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。"
+    },
+    "quotePage": {
+      "en": "From PPT page 38",
+      "zh": "摘自PPT第38页"
+    },
     "images": [
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
@@ -751,55 +1417,112 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
-        "caption": "结构示意",
-        "subcaption": "GPT 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "GPT",
+          "zh": "GPT 架构图"
+        }
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "GPT 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "GPT",
+          "zh": "GPT 架构图"
+        }
       },
       "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
-        "caption": "历史照片",
-        "subcaption": "GPT"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "GPT",
+          "zh": "GPT"
+        }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "GPT",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "GPT",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "2023-agents": {
     "year": 2023,
-    "title": "智能体：LLM驱动的自主系统",
+    "title": {
+      "en": "Agents: LLM-Driven Autonomous Systems",
+      "zh": "智能体：LLM驱动的自主系统"
+    },
     "location": {
-      "name": "全球研究",
-      "country": "多个机构",
+      "name": {
+        "en": "Global AI Labs",
+        "zh": "全球研究"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "多个机构"
+      },
       "coordinates": [
         37.7749,
         -122.4194
       ]
     },
-    "description": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
+    "description": {
+      "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction.",
+      "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。"
+    },
     "figures": [
       {
         "name": "Stuart Russell",
-        "role": "智能体理论奠基人"
+        "role": {
+          "en": "智能体理论奠基人",
+          "zh": "智能体理论奠基人"
+        }
       },
       {
         "name": "Peter Norvig",
-        "role": "AIMA作者"
+        "role": {
+          "en": "AIMA作者",
+          "zh": "AIMA作者"
+        }
       },
       {
         "name": "Michael Wooldridge",
-        "role": "多智能体系统专家"
+        "role": {
+          "en": "多智能体系统专家",
+          "zh": "多智能体系统专家"
+        }
       }
     ],
-    "quoteText": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
-    "quotePage": "摘自PPT第45-46页",
+    "quoteText": {
+      "en": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
+      "zh": "智能体将语言模型与规划、记忆和工具使用结合起来，形成能够自主行动的系统。"
+    },
+    "quotePage": {
+      "en": "From PPT page 45-46",
+      "zh": "摘自PPT第45-46页"
+    },
     "images": [
       "resources/images/2023-agents/historical/2023-agents_historical_01.png",
       "resources/images/2023-agents/historical/2023-agents_historical_02.png",
@@ -810,25 +1533,52 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-        "caption": "历史照片",
-        "subcaption": "智能体：LLM驱动的自主系统"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Agents: LLM-Driven Autonomous Systems",
+          "zh": "智能体：LLM驱动的自主系统"
+        }
       },
       "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
-        "caption": "历史照片",
-        "subcaption": "智能体：LLM驱动的自主系统"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Agents: LLM-Driven Autonomous Systems",
+          "zh": "智能体：LLM驱动的自主系统"
+        }
       },
       "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
-        "caption": "历史照片",
-        "subcaption": "智能体：LLM驱动的自主系统"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Agents: LLM-Driven Autonomous Systems",
+          "zh": "智能体：LLM驱动的自主系统"
+        }
       }
     }
   },
   "2025-llm-competition": {
     "year": 2025,
-    "title": "大语言模型百花齐放",
+    "title": {
+      "en": "A Flourishing Competition Among Large Language Models",
+      "zh": "大语言模型百花齐放"
+    },
     "location": {
-      "name": "全球研究",
-      "country": "美国 / 中国",
+      "name": {
+        "en": "Global AI Industry",
+        "zh": "全球研究"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "美国 / 中国"
+      },
       "coordinates": [
         [
           37.7749,
@@ -848,15 +1598,27 @@ module.exports = {
         ]
       ]
     },
-    "description": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22",
+    "description": {
+      "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
+      "zh": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22"
+    },
     "figures": [
       {
         "name": "研究机构",
-        "role": "前沿模型研发机构"
+        "role": {
+          "en": "前沿模型研发机构",
+          "zh": "前沿模型研发机构"
+        }
       }
     ],
-    "quoteText": "We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.",
-    "quotePage": "摘自PPT第39页",
+    "quoteText": {
+      "en": "We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.",
+      "zh": "大语言模型进入百花齐放的竞争阶段，能力评测和真实使用共同推动快速迭代。"
+    },
+    "quotePage": {
+      "en": "From PPT page 39",
+      "zh": "摘自PPT第39页"
+    },
     "images": [
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
       "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
@@ -868,47 +1630,95 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
-        "caption": "历史照片",
-        "subcaption": "大语言模型百花齐放"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
+        }
       },
       "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "大语言模型百花齐放 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放 架构图"
+        }
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
-        "caption": "历史照片",
-        "subcaption": "大语言模型百花齐放"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
+        }
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
-        "caption": "历史照片",
-        "subcaption": "大语言模型百花齐放"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
+        }
       }
     }
   },
   "2020-alphafold": {
     "year": 2020,
-    "title": "AlphaFold: 蛋白质结构预测",
+    "title": {
+      "en": "AlphaFold: Protein Structure Prediction",
+      "zh": "AlphaFold: 蛋白质结构预测"
+    },
     "location": {
-      "name": "DeepMind",
-      "country": "英国, 伦敦",
+      "name": {
+        "en": "DeepMind",
+        "zh": "DeepMind"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "zh": "英国, 伦敦"
+      },
       "coordinates": [
         51.5074,
         -0.1278
       ]
     },
-    "description": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。",
+    "description": {
+      "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+      "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
+    },
     "figures": [
       {
         "name": "Demis Hassabis",
-        "role": "DeepMind CEO"
+        "role": {
+          "en": "DeepMind CEO",
+          "zh": "DeepMind CEO"
+        }
       },
       {
         "name": "John Jumper",
-        "role": "AlphaFold 2首席科学家"
+        "role": {
+          "en": "AlphaFold 2首席科学家",
+          "zh": "AlphaFold 2首席科学家"
+        }
       }
     ],
-    "quoteText": "Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.",
-    "quotePage": "摘自PPT第50页",
+    "quoteText": {
+      "en": "Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.",
+      "zh": "AlphaFold 展示了人工智能能够在蛋白质结构预测这一重大科学挑战上取得突破。"
+    },
+    "quotePage": {
+      "en": "From PPT page 50",
+      "zh": "摘自PPT第50页"
+    },
     "images": [
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
@@ -923,55 +1733,118 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "AlphaFold: 蛋白质结构预测 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "AlphaFold: 蛋白质结构预测 架构图"
+        }
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
-        "caption": "历史照片",
-        "subcaption": "AlphaFold: 蛋白质结构预测"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "AlphaFold: 蛋白质结构预测"
+        }
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "AlphaFold: 蛋白质结构预测 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "AlphaFold: 蛋白质结构预测 架构图"
+        }
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
-        "caption": "历史照片",
-        "subcaption": "AlphaFold: 蛋白质结构预测"
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "AlphaFold: 蛋白质结构预测"
+        }
       },
       "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《Highly accurate protein structure prediction with AlphaFold》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "《Highly accurate protein structure prediction with AlphaFold》"
+        }
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "AlphaFold: Protein Structure Prediction",
+          "zh": "相关研究者照片"
+        }
       }
     }
   },
   "2019-ai-feynman": {
     "year": 2019,
-    "title": "AI Feynman：自主科学规律发现",
+    "title": {
+      "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+      "zh": "AI Feynman：自主科学规律发现"
+    },
     "location": {
-      "name": "麻省理工学院",
-      "country": "美国, 马萨诸塞州",
+      "name": {
+        "en": "MIT",
+        "zh": "麻省理工学院"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国, 马萨诸塞州"
+      },
       "coordinates": [
         42.3601,
         -71.0942
       ]
     },
-    "description": "2019年，MIT的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（Symmetry）和量纲分析（Dimensional Analysis）作为约束，使用符号回归（Symbolic regression），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
+    "description": {
+      "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
+      "zh": "2019年，MIT的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（Symmetry）和量纲分析（Dimensional Analysis）作为约束，使用符号回归（Symbolic regression），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。"
+    },
     "figures": [
       {
         "name": "Max Tegmark",
-        "role": "AI Feynman作者"
+        "role": {
+          "en": "AI Feynman作者",
+          "zh": "AI Feynman作者"
+        }
       }
     ],
-    "quoteText": "We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.",
-    "quotePage": "摘自PPT第53页",
+    "quoteText": {
+      "en": "We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.",
+      "zh": "AI Feynman 是一种受物理学启发的符号回归方法。"
+    },
+    "quotePage": {
+      "en": "From PPT page 53",
+      "zh": "摘自PPT第53页"
+    },
     "images": [
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png",
@@ -983,29 +1856,62 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
-        "caption": "结构示意",
-        "subcaption": "AI Feynman：自主科学规律发现 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "zh": "AI Feynman：自主科学规律发现 架构图"
+        }
       },
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《AI Feynman: a physics-inspired method for symbolic regression》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
+        }
       },
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png": {
-        "caption": "论文页面",
-        "subcaption": "《AI Feynman: a physics-inspired method for symbolic regression》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
+        }
       }
     }
   },
   "2024-ai-scientist": {
     "year": 2024,
-    "title": "AI科学家与自主实验室",
+    "title": {
+      "en": "AI Scientists and Autonomous Laboratories",
+      "zh": "AI科学家与自主实验室"
+    },
     "location": {
-      "name": "Sakana AI / UC Berkeley",
-      "country": "日本 / 美国",
+      "name": {
+        "en": "Sakana AI / UC Berkeley",
+        "zh": "Sakana AI / UC Berkeley"
+      },
+      "country": {
+        "en": "Japan / United States",
+        "zh": "日本 / 美国"
+      },
       "coordinates": [
         [
           35.6762,
@@ -1017,19 +1923,34 @@ module.exports = {
         ]
       ]
     },
-    "description": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for Science进入新阶段。",
+    "description": {
+      "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments.",
+      "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for Science进入新阶段。"
+    },
     "figures": [
       {
         "name": "Sakana AI团队",
-        "role": "AI Scientist开发者"
+        "role": {
+          "en": "AI Scientist开发者",
+          "zh": "AI Scientist开发者"
+        }
       },
       {
         "name": "伯克利团队",
-        "role": "A-Lab开发者"
+        "role": {
+          "en": "A-Lab开发者",
+          "zh": "A-Lab开发者"
+        }
       }
     ],
-    "quoteText": "This paper presents the first comprehensive framework for fully automatic scientific discovery.",
-    "quotePage": "摘自PPT第55页",
+    "quoteText": {
+      "en": "This paper presents the first comprehensive framework for fully automatic scientific discovery.",
+      "zh": "AI 科学家系统开始展示自动提出问题、设计实验并撰写研究结果的能力。"
+    },
+    "quotePage": {
+      "en": "From PPT page 55",
+      "zh": "摘自PPT第55页"
+    },
     "images": [
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png",
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png",
@@ -1042,24 +1963,54 @@ module.exports = {
     ],
     "imageMeta": {
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png": {
-        "caption": "结构示意",
-        "subcaption": "AI科学家与自主实验室 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "AI Scientists and Autonomous Laboratories",
+          "zh": "AI科学家与自主实验室 架构图"
+        }
       },
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png": {
-        "caption": "结构示意",
-        "subcaption": "AI科学家与自主实验室 架构图"
+        "caption": {
+          "en": "Architecture",
+          "zh": "结构示意"
+        },
+        "subcaption": {
+          "en": "AI Scientists and Autonomous Laboratories",
+          "zh": "AI科学家与自主实验室 架构图"
+        }
       },
       "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png": {
-        "caption": "论文页面",
-        "subcaption": "《The AI Scientist》"
+        "caption": {
+          "en": "Paper page",
+          "zh": "论文页面"
+        },
+        "subcaption": {
+          "en": "AI Scientists and Autonomous Laboratories",
+          "zh": "《The AI Scientist》"
+        }
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "AI Scientists and Autonomous Laboratories",
+          "zh": "相关研究者照片"
+        }
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
-        "caption": "人物肖像",
-        "subcaption": "相关研究者照片"
+        "caption": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        },
+        "subcaption": {
+          "en": "AI Scientists and Autonomous Laboratories",
+          "zh": "相关研究者照片"
+        }
       }
     }
   }

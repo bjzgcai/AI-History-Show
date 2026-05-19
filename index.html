@@ -1856,7 +1856,7 @@
                     <div class="story-summary" id="summaryBody"></div>
 
                     <section class="figures-section">
-                        <div class="section-heading">Key Figures && Archive Narrative</div>
+                        <div class="section-heading" data-i18n="keyFiguresArchiveNarrative">Key Figures & Archive Narrative</div>
                         <div class="figure-row" id="figureRow"></div>
                     </section>
 
@@ -1897,7 +1897,7 @@
 
                 <aside class="panel-shell media-panel">
                     <div class="media-header">
-                        <div class="section-heading">评论与媒体</div>
+                        <div class="section-heading" data-i18n="commentaryMedia">评论与媒体</div>
                     </div>
 
                     <div class="video-frame empty" id="videoFrame">
@@ -1953,6 +1953,7 @@
             document.write('<script src="milestones-data-default.js"><\/script>');
         }
     </script>
+    <script src="shared/i18n.js"></script>
     <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -2083,6 +2084,25 @@
                 .trim();
         }
 
+        function tx(key) {
+            return window.I18n && typeof window.I18n.t === 'function' ? window.I18n.t(key) : key;
+        }
+
+        function lx(value) {
+            return window.I18n && typeof window.I18n.localize === 'function' ? window.I18n.localize(value) : (value == null ? '' : value);
+        }
+
+        function applyStaticTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach((element) => {
+                element.textContent = tx(element.dataset.i18n);
+            });
+            document.querySelectorAll('[data-empty-label-key]').forEach((element) => {
+                element.dataset.emptyLabel = tx(element.dataset.emptyLabelKey);
+            });
+            refs.prevBtn.setAttribute('aria-label', tx('previousPage'));
+            refs.nextBtn.setAttribute('aria-label', tx('nextPage'));
+        }
+
         function buildFallbackVm(milestone, index) {
             const safeMilestone = milestone || {};
             const photos = [];
@@ -2095,14 +2115,14 @@
                 });
             }
 
-            const quote = String(safeMilestone.quote || '').trim();
-            const quoteAttribution = String(safeMilestone.quoteAttribution || '').trim();
-            const descriptionText = stripHtml(safeMilestone.description || '');
+            const quote = String(lx(safeMilestone.quote) || '').trim();
+            const quoteAttribution = String(lx(safeMilestone.quoteAttribution) || '').trim();
+            const descriptionText = stripHtml(lx(safeMilestone.description) || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
-                const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? '来源：' : '署名：';
+                const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? `${tx('source')}：` : `${tx('attribution')}：`;
                 commentarySections.push({
-                    label: '引言摘录',
+                    label: tx('quoteExcerpt'),
                     html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
                 });
             }
@@ -2112,15 +2132,15 @@
             if (customSections.length > 0) {
                 customSections.forEach((section) => {
                     commentarySections.push({
-                        label: section.label || '内容解读',
-                        html: section.html
+                        label: lx(section.label) || tx('contentInterpretation'),
+                        html: lx(section.html)
                     });
                 });
             } else if (descriptionText) {
-                commentarySections.push({ label: '背景解读', html: descriptionText });
+                commentarySections.push({ label: tx('background'), html: descriptionText });
             }
             if (commentarySections.length === 0) {
-                commentarySections.push({ label: '内容整理中', html: '暂无补充说明' });
+                commentarySections.push({ label: tx('contentPending'), html: tx('noAdditionalInfo') });
             }
 
             const primaryVideo = safeMilestone.resources && Array.isArray(safeMilestone.resources.videos) && safeMilestone.resources.videos.length > 0
@@ -2215,7 +2235,7 @@
             }
             if (name) return name;
             if (country) return country;
-            return '地点待补充';
+            return tx('locationPending');
         }
 
         function extractStageContext(vm) {
@@ -2275,7 +2295,7 @@
         function buildFigureAvatar(figure, avatarSource) {
             if (avatarSource && avatarSource.src) {
                 const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
-                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || '关键人物')}"${styleAttr}>`;
+                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || tx('keyFigure'))}"${styleAttr}>`;
             }
             return `<span>${escapeHtml(initials(figure.name))}</span>`;
         }
@@ -2309,14 +2329,14 @@
             if (figures.length > 0) {
                 const figure = figures[((index % figures.length) + figures.length) % figures.length] || figures[0];
                 return {
-                    name: figure.name || fallbackName || '关键人物',
-                    role: figure.role || buildLocationLine(vm.location) || '关键参与者'
+                    name: figure.name || fallbackName || tx('keyFigure'),
+                    role: figure.role || buildLocationLine(vm.location) || tx('keyParticipant')
                 };
             }
 
             return {
-                name: fallbackName || vm.title || '历史档案',
-                role: buildLocationLine(vm.location) || vm.category || '历史事件'
+                name: fallbackName || vm.title || tx('historicalArchive'),
+                role: buildLocationLine(vm.location) || vm.category || tx('historicalEvent')
             };
         }
 
@@ -2332,8 +2352,8 @@
             const entry = map[url];
             if (!entry || typeof entry !== 'object') return null;
 
-            const caption = String(entry.caption || entry.title || entry.name || '').trim();
-            const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+            const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
+            const subcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || entry.role || '')).trim();
             if (!caption && !subcaption) return null;
             return { caption, subcaption };
         }
@@ -2349,8 +2369,8 @@
 
             if (isPortraitLikePhoto(value)) {
                 const autoMeta = {
-                    name: '人物肖像',
-                    role: '相关研究者照片'
+                    name: tx('portrait'),
+                    role: tx('researcherPhoto')
                 };
                 return {
                     name: (configured && configured.caption) || autoMeta.name,
@@ -2360,8 +2380,8 @@
 
             if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
                 const autoMeta = {
-                    name: '结构示意',
-                    role: title ? `${title} 架构图` : '模型架构图'
+                    name: tx('architectureDiagram'),
+                    role: title ? `${title} ${tx('architectureDiagram')}` : tx('modelArchitecture')
                 };
                 return {
                     name: (configured && configured.caption) || autoMeta.name,
@@ -2371,8 +2391,8 @@
 
             if (/\/papers\//i.test(value) || /_papers_/i.test(value) || isDocumentLikePhoto(value)) {
                 const autoMeta = {
-                    name: '论文页面',
-                    role: workTitle ? `《${workTitle}》` : (title || '原文截图或摘要')
+                    name: tx('paperPage'),
+                    role: workTitle ? `《${workTitle}》` : (title || tx('originalScreenshot'))
                 };
                 return {
                     name: (configured && configured.caption) || autoMeta.name,
@@ -2382,8 +2402,8 @@
 
             if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
                 const autoMeta = {
-                    name: '历史照片',
-                    role: title || (year ? `${year} 年相关档案` : '事件相关档案')
+                    name: tx('historicalArchive'),
+                    role: title || (year ? `${year} ${tx('historicalArchive')}` : tx('archiveMaterial'))
                 };
                 return {
                     name: (configured && configured.caption) || autoMeta.name,
@@ -2392,8 +2412,8 @@
             }
 
             const autoMeta = {
-                name: '档案图片',
-                role: title || (vm && vm.category) || '事件相关资料'
+                name: tx('archiveImage'),
+                role: title || (vm && vm.category) || tx('archiveMaterial')
             };
             return {
                 name: (configured && configured.caption) || autoMeta.name,
@@ -2407,7 +2427,7 @@
                 Array.isArray(vm.commentarySections) && vm.commentarySections[0] ? vm.commentarySections[0].html : '',
                 vm.descriptionText
             ];
-            const raw = candidates.map((item) => stripHtml(item || '')).find(Boolean) || '暂无媒体资料';
+            const raw = candidates.map((item) => stripHtml(item || '')).find(Boolean) || tx('noMedia');
             return raw.length > 120 ? `${raw.slice(0, 120).trim()}...` : raw;
         }
 
@@ -2433,12 +2453,12 @@
         }
 
         function buildRightCommentarySections(vm) {
-            const defaultLabels = ['引言摘录', '背景解读', '延展说明'];
+            const defaultLabels = [tx('quoteExcerpt'), tx('background'), tx('extension')];
             const sourceSections = Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
                 : [];
             const sections = sourceSections.slice(0, 3).map((section, index) => ({
-                label: section.label || defaultLabels[index] || '内容解读',
+                label: section.label || defaultLabels[index] || tx('contentInterpretation'),
                 text: stripHtml(section.html || '')
             }));
 
@@ -2448,8 +2468,8 @@
             let fillerIndex = 0;
             while (sections.length < 3) {
                 sections.push({
-                    label: defaultLabels[sections.length] || '内容解读',
-                    text: fillerParts[fillerIndex] || sections[sections.length - 1]?.text || '暂无补充说明'
+                    label: defaultLabels[sections.length] || tx('contentInterpretation'),
+                    text: fillerParts[fillerIndex] || sections[sections.length - 1]?.text || tx('noAdditionalInfo')
                 });
                 fillerIndex += 1;
             }
@@ -3363,8 +3383,8 @@
 
         function renderHeader(vm) {
             const stageContext = extractStageContext(vm);
-            refs.categoryTrack.textContent = vm.category || vm.subtitle || stageContext.label || 'AI 历史';
-            refs.statusText.textContent = vm.title || 'AI 历史回顾';
+            refs.categoryTrack.textContent = vm.category || vm.subtitle || stageContext.label || tx('aiHistory');
+            refs.statusText.textContent = vm.title || tx('aiHistoryReview');
             refs.counterText.textContent = `${currentIndex + 1} / ${milestoneList.length}`;
             refs.prevBtn.disabled = currentIndex === 0 || milestoneList.length <= 1;
             refs.nextBtn.disabled = currentIndex === milestoneList.length - 1 || milestoneList.length <= 1;
@@ -3374,8 +3394,8 @@
             const stageContext = extractStageContext(vm);
             refs.leftKicker.textContent = stageContext.label;
             refs.heroYear.textContent = vm.year || '';
-            refs.heroLocationName.textContent = vm.location && vm.location.name ? vm.location.name : (vm.title || '地点待补充');
-            refs.heroLocationCountry.textContent = vm.location && vm.location.country ? vm.location.country : '地点信息待补充';
+            refs.heroLocationName.textContent = vm.location && vm.location.name ? vm.location.name : (vm.title || tx('locationPending'));
+            refs.heroLocationCountry.textContent = vm.location && vm.location.country ? vm.location.country : tx('locationInfoPending');
             refs.heroContextPeriod.textContent = stageContext.period ? `(${stageContext.period})` : '';
             refs.heroContextPeriod.style.display = stageContext.period ? 'block' : 'none';
             refs.heroYears.innerHTML = buildContextYears(vm.year, 3, 0)
@@ -3385,7 +3405,7 @@
                 .map((year) => `<span>${escapeHtml(year)}</span>`)
                 .join('');
             refs.heroBottomYear.textContent = vm.year || '';
-            refs.heroBottomCopy.textContent = vm.category || vm.subtitle || stageContext.label || 'AI 历史';
+            refs.heroBottomCopy.textContent = vm.category || vm.subtitle || stageContext.label || tx('aiHistory');
 
             if (vm.location && Array.isArray(vm.location.coordinates)) {
                 const validList = normalizeLocationCoordinates(vm.location.coordinates);
@@ -3412,8 +3432,8 @@
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
                 ? vm.figures.slice(0, 3)
                 : [{
-                    name: vm.title || 'AI 历史事件',
-                    role: buildLocationLine(vm.location) || '关键历史人物'
+                    name: vm.title || tx('aiHistoryEvent'),
+                    role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
 
             refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
@@ -3421,8 +3441,8 @@
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
                     <div class="figure-meta">
-                        <div class="figure-name">${escapeHtml(figure.name || '关键人物')}</div>
-                        <div class="figure-role">${escapeHtml(figure.role || '关键参与者')}</div>
+                        <div class="figure-name">${escapeHtml(figure.name || tx('keyFigure'))}</div>
+                        <div class="figure-role">${escapeHtml(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
             `).join('');
@@ -3465,14 +3485,14 @@
             const activeMeta = buildArchivePhotoMeta(vm, focusUrl);
             const nextMeta = buildArchivePhotoMeta(vm, nextUrl);
 
-            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${prevUrl}" alt="前一张档案">` : '';
-            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${nextUrl}" alt="后一张档案">` : '';
+            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${prevUrl}" alt="${tx('previousArchive')}">` : '';
+            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${nextUrl}" alt="${tx('nextArchive')}">` : '';
             refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
             refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
             refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1 || !prevUrl;
             refs.archiveThumbNext.disabled = !hasPhotos || safePhotos.length <= 1 || !nextUrl;
 
-            setImage(refs.archiveFocus, focusUrl, '主档案照片');
+            setImage(refs.archiveFocus, focusUrl, tx('mainArchivePhoto'));
             refs.archiveFocusButton.dataset.photoIndex = String(currentArchiveIndex);
             refs.archiveFocusButton.classList.toggle('is-empty', !hasPhotos);
             refs.archiveFocusButton.disabled = !hasPhotos;
@@ -3589,14 +3609,14 @@
             refs.videoFrame.classList.toggle('empty', !vm.videoEmbedUrl);
             refs.videoFrame.dataset.videoUrl = vm.videoEmbedUrl || '';
             refs.videoFrame.onclick = vm.videoEmbedUrl ? () => playInlineVideo(vm.videoEmbedUrl) : null;
-            refs.videoFrame.title = vm.videoEmbedUrl ? '点击播放视频' : '暂无媒体资料';
+            refs.videoFrame.title = vm.videoEmbedUrl ? tx('playVideo') : tx('noMedia');
             resetInlineMedia();
 
             const sections = buildRightCommentarySections(vm);
             refs.commentaryList.innerHTML = sections.map((section) => `
                 <article class="commentary-item">
-                    <div class="commentary-label">${escapeHtml(section.label || '内容')}</div>
-                    <div class="commentary-body">${escapeHtml(section.text || '暂无补充说明')}</div>
+                    <div class="commentary-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
+                    <div class="commentary-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
                 </article>
             `).join('');
         }
@@ -3641,7 +3661,7 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button">×</button>
                 <button class="photo-prev" type="button">◀</button>
-                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="历史档案">
+                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="${tx('historicalArchive')}">
                 <button class="photo-next" type="button">▶</button>
                 <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
             `;
@@ -3682,6 +3702,7 @@
         function renderPage(index) {
             const vm = getVm(index);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            applyStaticTranslations();
             renderHeader(vm);
             renderHero(vm);
             renderStory(vm);
@@ -3690,7 +3711,7 @@
             renderCommentary(vm);
             renderTimeline(vm);
             bindPhotoClicks();
-            document.title = `AI 历史回顾展览 - 单屏模式 - ${vm.year} ${vm.title}`;
+            document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             preloadAdjacentAssets(index);
         }
 
@@ -4016,6 +4037,11 @@
                 if (hasOpenPhotoViewer()) return;
                 if (event.key === 'ArrowRight') navigate('next');
                 if (event.key === 'ArrowLeft') navigate('prev');
+            });
+
+            window.addEventListener('languageChanged', () => {
+                vmCache.clear();
+                renderPage(currentIndex);
             });
 
             syncStageScale();
