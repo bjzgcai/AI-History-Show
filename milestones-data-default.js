@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-19 15:53
+// 生成时间: 2026-05-19 22:05
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -11,7 +11,7 @@ const milestones = [
       "zh": "AI创世纪 (1950s-1970s)"
     },
     "title": {
-      "en": "Dartmouth Workshop - AI Is Born",
+      "en": "Dartmouth Workshop - AI Is Born!",
       "zh": "达特茅斯会议 - AI正式诞生！"
     },
     "subtitle": {
@@ -113,7 +113,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field.",
+          "en": "",
           "zh": "这场会议并没有立刻产出统一理论，却成功完成了一件更深远的事：它把“人工智能”从提案里的命名，变成了一个可以持续聚拢研究者、资金和公众想象的学科标签。"
         }
       }
@@ -128,7 +128,7 @@ const milestones = [
       "imageMeta": {
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
           "subcaption": {
-            "en": "Dartmouth Workshop - AI Is Born",
+            "en": "Cover of the Dartmouth Conference Proposal",
             "zh": "达特茅斯会议提议封面"
           },
           "caption": {
@@ -138,7 +138,7 @@ const milestones = [
         },
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
           "subcaption": {
-            "en": "Dartmouth Workshop - AI Is Born",
+            "en": "Organizer of the Dartmouth Conference",
             "zh": "达特茅斯会议发起人"
           },
           "caption": {
@@ -152,17 +152,17 @@ const milestones = [
             "zh": "历史照片"
           },
           "subcaption": {
-            "en": "Dartmouth Workshop - AI Is Born",
+            "en": "Dartmouth Workshop - AI Is Born!",
             "zh": "达特茅斯会议 - AI正式诞生！"
           }
         },
         "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png": {
           "caption": {
-            "en": "达特茅斯学院（现代）",
+            "en": "Dartmouth College（Current）",
             "zh": "达特茅斯学院（现代）"
           },
           "subcaption": {
-            "en": "Dartmouth Workshop - AI Is Born",
+            "en": "Dartmouth Workshop - AI Is Born!",
             "zh": "达特茅斯会议 - AI正式诞生！"
           }
         }
@@ -261,7 +261,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 1957, Frank Rosenblatt designed the perceptron, one of the first artificial neural networks, to model aspects of human cognition. It became the first physical implementation of an artificial neural network and an early landmark for connectionist AI.",
+          "en": "",
           "zh": "它引发的乐观情绪说明，AI 历史中的很多浪潮并不是在算法完全成熟后才出现，而是在一个原型首次让人看见“机器似乎真的能学”的那一刻就被提前点燃。"
         }
       }
@@ -281,7 +281,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "The Perceptron and Connectionism",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -291,7 +291,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "The Perceptron and Connectionism",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -301,7 +301,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "The Perceptron and Connectionism",
+            "en": "<i>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</i>",
             "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
           }
         },
@@ -377,7 +377,7 @@ const milestones = [
       {
         "name": "Marvin Minsky",
         "role": {
-          "en": "Author of Perceptrons",
+          "en": "Author of <i>Perceptrons</i>",
           "zh": "《感知器》作者"
         },
         "avatar": "resources/images/figures/marvin-minsky.jpg",
@@ -420,7 +420,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+          "en": "",
           "zh": "寒冬并不意味着神经网络从此失效，而是意味着在当时的计算与算法条件下，它的承诺被重新估价；后来 BP、LSTM 与大算力的回归，本质上是在补齐当年缺失的训练机制与资源基础。"
         }
       }
@@ -438,7 +438,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "The First AI Winter Arrives",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -448,7 +448,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "The First AI Winter Arrives",
+            "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
             "zh": "《Perceptrons: An Introduction to Computational Geometry》"
           }
         },
@@ -458,7 +458,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "The First AI Winter Arrives",
+            "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
             "zh": "《Perceptrons: An Introduction to Computational Geometry》"
           }
         }
@@ -507,14 +507,14 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published Learning representations by back-propagating errors, bringing practical attention to training multilayer neural networks.",
+      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks.",
       "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。"
     },
     "figures": [
       {
         "name": "David Rumelhart",
         "role": {
-          "en": "Backpropagation co-author",
+          "en": "Backpropagation author",
           "zh": "BP算法作者"
         },
         "avatar": "resources/images/figures/david-rumelhart.jpg",
@@ -567,7 +567,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published Learning representations by back-propagating errors, bringing practical attention to training multilayer neural networks.",
+          "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks.",
           "zh": "反向传播的关键不只是“把误差往回传”，而是把多层网络中每一层参数都嵌入统一的可微计算图里，让表示学习第一次变成真正可训练的工程流程。"
         }
       },
@@ -577,7 +577,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published Learning representations by back-propagating errors, bringing practical attention to training multilayer neural networks.",
+          "en": "",
           "zh": "它为后来深度学习复兴打下的基础，是让“隐藏层能学到什么”从人工设计问题变成数据驱动问题；这一步把神经网络从概念模型推进到了可扩展的方法论。"
         }
       }
@@ -597,7 +597,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Backpropagation",
+            "en": "Backpropagation Algorithm Architecture Diagram",
             "zh": "反向传播算法 架构图"
           }
         },
@@ -607,7 +607,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Backpropagation",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -617,7 +617,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Backpropagation",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -627,7 +627,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Backpropagation",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -746,7 +746,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling.",
+          "en": "",
           "zh": "它也暴露了一个长期难题：序列建模的想法很早就有，但没有稳定训练机制时，这类模型很难真正把长距离依赖学出来；这条线最后要靠 LSTM 才被接上。"
         }
       }
@@ -872,7 +872,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "Convolutional neural networks draw inspiration from biological vision: local receptive fields and filters exploit the spatial structure of images. In 1989, Yann LeCun applied backpropagation to train CNNs for handwritten digit recognition, opening the path to modern computer vision.",
+          "en": "",
           "zh": "LeNet 的意义还在于它展示了“算法 + 数据集 + 真实任务”的闭环：当网络能稳定读懂手写数字时，神经网络才第一次在工业可用性上获得了持续说服力。"
         }
       }
@@ -1019,7 +1019,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 1997, Sepp Hochreiter and Juergen Schmidhuber proposed Long Short-Term Memory networks. LSTM introduced gates that preserve long-range information flow, helping recurrent networks overcome vanishing gradients and enabling later breakthroughs in speech and language.",
+          "en": "",
           "zh": "从历史角度看，LSTM 是连接主义里一次典型的“结构补偿算法不足”案例：当标准 RNN 难以训练时，研究者没有放弃序列模型，而是通过结构设计把可训练性重新找回来。"
         }
       }
@@ -1166,7 +1166,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "From 2012 to 2014, AlexNet, VGG and GoogLeNet won ImageNet with deep neural networks. Their success came from the convergence of data, GPUs and engineering, proving that deep learning could dominate large-scale visual recognition.",
+          "en": "",
           "zh": "它让深度学习从“学术上可能有效”变成“行业必须认真对待的默认路线”：一旦在 ImageNet 这种公开、可复验的竞赛上形成数量级优势，研究范式的切换就会迅速发生。"
         }
       }
@@ -1313,7 +1313,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures.",
+          "en": "",
           "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。"
         }
       }
@@ -1449,7 +1449,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2014, Ian Goodfellow introduced Generative Adversarial Networks, in which a generator and discriminator learn through an adversarial game. GANs became a major framework for learning data distributions and generating realistic images and media.",
+          "en": "",
           "zh": "它也开启了一条典型的 AI 发展路径：一个最初训练不稳定、评价困难的方法，因视觉效果足够震撼而迅速获得社区关注，继而倒逼出更强的训练技巧、评价指标与产业应用。"
         }
       }
@@ -1574,7 +1574,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2014, the neural machine translation work by Bahdanau, Cho and Bengio introduced attention as a way to align and translate jointly. Attention let models focus on relevant input parts and became a central mechanism for sequence modeling.",
+          "en": "",
           "zh": "它的重要性不只在翻译精度提升，更在于它引入了一种后来被 Transformer 放大的思想：模型内部的关系，不一定要靠递归传播，也可以靠显式加权来建立。"
         }
       }
@@ -1710,7 +1710,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2015, Kaiming He and Jian Sun introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
+          "en": "",
           "zh": "它之所以迅速成为工程默认项，是因为 shortcut 带来的收益足够大，而代价又极低；相比更复杂的门控设计，ResNet 证明很多时候“结构减法”比“机制加法”更有扩散力。"
         }
       }
@@ -1880,7 +1880,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2016, Gao Huang and collaborators proposed DenseNet, connecting each layer to every later layer. By making all previous feature states directly visible, DenseNet increased gradient paths, improved feature reuse and influenced efficient network design.",
+          "en": "",
           "zh": "与 ResNet 相比，DenseNet 更像一种“信息不轻易丢弃”的极端方案：它把前面所有层都保留下来，换来更高的参数效率，也带来更强的内存压力与实现成本。"
         }
       }
@@ -2017,7 +2017,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+          "en": "",
           "zh": "它后来统治大模型时代，并不只是因为效果更好，更因为这种结构对硬件友好、易于扩展、便于堆叠，使“模型越大越强”的缩放逻辑第一次被充分释放。"
         }
       }
@@ -2164,7 +2164,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2018, Google introduced BERT, bringing large-scale pretraining plus fine-tuning into mainstream NLP. Based on the Transformer encoder, BERT learned bidirectional representations and achieved state-of-the-art results across many language tasks.",
+          "en": "",
           "zh": "它的标志性不只在双向编码，而在于它让“预训练模型”第一次成为 NLP 的标准基础设施；此后模型能力的竞争，逐渐转到数据规模、训练资源与后训练策略上。"
         }
       }
@@ -2311,7 +2311,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2018, OpenAI introduced GPT as another pretraining-and-fine-tuning paradigm. GPT used a unidirectional Transformer decoder trained with next-token prediction, showing that generative pretraining could transfer effectively to many NLP tasks.",
+          "en": "",
           "zh": "从后来历史回看，GPT 的胜利并不只是模型结构胜利，更是“简单目标 + 大规模训练 + 统一生成接口”这套工程哲学的胜利，它为后续对话式大模型奠定了接口习惯。"
         }
       }
@@ -2470,7 +2470,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
+          "en": "",
           "zh": "这类系统的重要价值在于可解释性。与只给出预测结果的黑盒模型相比，AI Feynman 直接输出人类可读的方程，因此它更像是“可交付给科学共同体”的中间发现工具。"
         }
       }
@@ -2628,7 +2628,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+          "en": "",
           "zh": "它对 AI for Science 的启发在于：当模型足够强时，AI 不再只是“帮科学家筛选候选”，而是可以直接把原本极其昂贵、周期很长的科学环节前移到计算流程里。"
         }
       }
@@ -2829,7 +2829,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction.",
+          "en": "",
           "zh": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。"
         }
       }
@@ -2982,7 +2982,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments.",
+          "en": "",
           "zh": "它也意味着 AI for Science 的评价标准正在改变：未来的关键问题不再只是模型能否解释一张图或一个序列，而是它能否持续产出可验证、可复现实验流程，并在反馈中自我改进。"
         }
       }
@@ -3155,7 +3155,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
+          "en": "",
           "zh": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。"
         }
       }

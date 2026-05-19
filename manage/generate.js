@@ -213,6 +213,11 @@ function enrichFigure(figure) {
   };
 }
 
+function getExplicitLocalizedText(value, locale) {
+  if (!isLocalizedText(value) || !Object.prototype.hasOwnProperty.call(value, locale)) return '';
+  return String(value[locale] || '').trim();
+}
+
 function buildCommentarySectionsOverride(key, ev) {
   const entry = researchCandidates.events && researchCandidates.events[key];
   if (!entry) {
@@ -248,16 +253,22 @@ function buildCommentarySectionsOverride(key, ev) {
   const sourceSections = explicitSections.length > 0 ? explicitSections : fallbackSections;
 
   return sourceSections
-    .map((section, index) => ({
-      label: {
-        en: index === 0 ? 'Background' : 'Context',
-        zh: String(section.label || '').trim(),
-      },
-      html: {
-        en: getLocalizedText(ev && ev.description, 'en'),
-        zh: String(section.text || '').trim(),
-      },
-    }))
+    .map((section, index) => {
+      const zhText = getLocalizedText(section.text, 'zh');
+      const explicitEnLabel = getExplicitLocalizedText(section.label, 'en');
+      const explicitEnText = getExplicitLocalizedText(section.text, 'en');
+      const fallbackEnText = index === 0 ? getLocalizedText(ev && ev.description, 'en') : '';
+      return {
+        label: {
+          en: explicitEnLabel || (index === 0 ? 'Background' : 'Context'),
+          zh: getLocalizedText(section.label, 'zh'),
+        },
+        html: {
+          en: explicitEnText || fallbackEnText,
+          zh: zhText,
+        },
+      };
+    })
     .filter((section) => section.label.zh && section.html.zh);
 }
 
