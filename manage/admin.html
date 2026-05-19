@@ -479,11 +479,11 @@ function renderSidebar() {
   const q = document.getElementById('eventSearch').value.toLowerCase();
   const keys = Object.keys(events || {});
   list.innerHTML = keys
-    .filter(k => !q || k.includes(q) || (events[k].title || '').toLowerCase().includes(q))
+    .filter(k => !q || k.includes(q) || mlText(events[k].title).toLowerCase().includes(q) || mlText(events[k].title, 'en').toLowerCase().includes(q))
     .map(k => {
       const active = currentView === 'event' && currentEventKey === k ? ' active' : '';
       return `<div class="sidebar-item${active}" data-view="event" data-key="${k}" onclick="selectEvent('${k}')">
-        <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${events[k].title || k}</span>
+        <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(mlText(events[k].title) || k)}</span>
         <span class="badge">${events[k].year || ''}</span>
       </div>`;
     }).join('');
@@ -872,12 +872,12 @@ function buildCatCard(cat, ci) {
   const eventKeys = Object.keys(events || {});
   const addOptions = eventKeys
     .filter(k => !cat.events.includes(k))
-    .map(k => `<option value="${k}">${k} — ${(events[k]||{}).title||''}</option>`)
+    .map(k => `<option value="${k}">${k} — ${mlText((events[k]||{}).title)||''}</option>`)
     .join('');
 
   const tags = cat.events.map((key, ei) => {
     const ev = (events || {})[key] || {};
-    const title = ev.title || '';
+    const title = mlText(ev.title) || '';
     return `<div class="event-tag" draggable="true"
       ondragstart="onTagDragStart(event,${ci},${ei})"
       ondragover="onTagDragOver(event)"
@@ -893,7 +893,7 @@ function buildCatCard(cat, ci) {
     <div class="cat-card" id="cat-${ci}">
       <div class="cat-card-header open" id="cat-${ci}-header" onclick="toggleCatCard(${ci})">
         <div class="cat-index">${ci + 1}</div>
-        <div class="cat-name" id="cat-${ci}-name">${esc(cat.name || '（未命名分类）')}</div>
+        <div class="cat-name" id="cat-${ci}-name">${esc(mlText(cat.name) || '（未命名分类）')}</div>
         <div class="cat-count">${cat.events.length} 个事件</div>
         <div class="cat-toggle" id="cat-${ci}-toggle">▾</div>
       </div>
@@ -901,11 +901,13 @@ function buildCatCard(cat, ci) {
         <div class="field-row" style="margin-bottom:14px">
           <div class="field">
             <label>分类完整名称</label>
-            <input value="${esc(cat.name)}" oninput="catalog.categories[${ci}].name=this.value;updateCatHeader(${ci})">
+            <input value="${esc(mlText(cat.name, 'zh'))}" oninput="catalog.categories[${ci}].name=ensureMlObject(catalog.categories[${ci}].name);catalog.categories[${ci}].name.zh=this.value;updateCatHeader(${ci})" placeholder="中文分类名称">
+            <input value="${esc(mlText(cat.name, 'en'))}" oninput="catalog.categories[${ci}].name=ensureMlObject(catalog.categories[${ci}].name);catalog.categories[${ci}].name.en=this.value;updateCatHeader(${ci})" placeholder="English category name" style="margin-top:6px">
           </div>
           <div class="field">
             <label>副标题（短标题）</label>
-            <input value="${esc(cat.subtitle)}" oninput="catalog.categories[${ci}].subtitle=this.value">
+            <input value="${esc(mlText(cat.subtitle, 'zh'))}" oninput="catalog.categories[${ci}].subtitle=ensureMlObject(catalog.categories[${ci}].subtitle);catalog.categories[${ci}].subtitle.zh=this.value" placeholder="中文副标题">
+            <input value="${esc(mlText(cat.subtitle, 'en'))}" oninput="catalog.categories[${ci}].subtitle=ensureMlObject(catalog.categories[${ci}].subtitle);catalog.categories[${ci}].subtitle.en=this.value" placeholder="English subtitle" style="margin-top:6px">
           </div>
         </div>
 
@@ -954,11 +956,11 @@ function toggleCatCard(ci) {
 
 function updateCatHeader(ci) {
   const nameEl  = document.getElementById(`cat-${ci}-name`);
-  if (nameEl) nameEl.textContent = catalog.categories[ci].name || '（未命名分类）';
+  if (nameEl) nameEl.textContent = mlText(catalog.categories[ci].name) || '（未命名分类）';
 }
 
 function addCategory() {
-  catalog.categories.push({ name: '新分类', subtitle: '新分类', events: [] });
+  catalog.categories.push({ name: { zh: '新分类', en: 'New category' }, subtitle: { zh: '新分类', en: 'New category' }, events: [] });
   renderCategoryList();
 }
 
@@ -1043,7 +1045,8 @@ function renderEventEditor(key) {
         <div class="field-row">
           <div class="field">
             <label>标题</label>
-            <input id="f-title" value="${esc(ev.title||'')}" oninput="ev_set('title',this.value)">
+            <input id="f-title" value="${esc(mlText(ev.title, 'zh'))}" oninput="ev_setMl('title','zh',this.value)" placeholder="中文标题">
+            <input value="${esc(mlText(ev.title, 'en'))}" oninput="ev_setMl('title','en',this.value)" placeholder="English title" style="margin-top:6px">
           </div>
           <div class="field">
             <label>年份</label>
@@ -1052,7 +1055,8 @@ function renderEventEditor(key) {
         </div>
         <div class="field">
           <label>描述</label>
-          <textarea id="f-desc" rows="4" oninput="ev_set('description',this.value)">${esc(ev.description||'')}</textarea>
+          <textarea id="f-desc" rows="4" oninput="ev_setMl('description','zh',this.value)" placeholder="中文描述">${esc(mlText(ev.description, 'zh'))}</textarea>
+          <textarea rows="4" oninput="ev_setMl('description','en',this.value)" placeholder="English description" style="margin-top:6px">${esc(mlText(ev.description, 'en'))}</textarea>
         </div>
       </div>
     </div>
@@ -1066,11 +1070,13 @@ function renderEventEditor(key) {
         <div class="field-row3">
           <div class="field">
             <label>地点名称</label>
-            <input value="${esc((ev.location||{}).name||'')}" oninput="ev_setLoc('name',this.value)">
+            <input value="${esc(mlText((ev.location||{}).name, 'zh'))}" oninput="ev_setLocMl('name','zh',this.value)" placeholder="中文地点">
+            <input value="${esc(mlText((ev.location||{}).name, 'en'))}" oninput="ev_setLocMl('name','en',this.value)" placeholder="English location" style="margin-top:6px">
           </div>
           <div class="field">
             <label>国家/地区</label>
-            <input value="${esc((ev.location||{}).country||'')}" oninput="ev_setLoc('country',this.value)">
+            <input value="${esc(mlText((ev.location||{}).country, 'zh'))}" oninput="ev_setLocMl('country','zh',this.value)" placeholder="中文国家/地区">
+            <input value="${esc(mlText((ev.location||{}).country, 'en'))}" oninput="ev_setLocMl('country','en',this.value)" placeholder="English country/region" style="margin-top:6px">
           </div>
           <div class="field">
             <label>坐标 [lat, lng]</label>
@@ -1099,7 +1105,8 @@ function renderEventEditor(key) {
       <div class="card-body" id="sec-quote-body">
         <div class="field">
           <label>引言正文（\\n 换行；若存在候选库，将同步更新首条候选及来源信息）</label>
-          <textarea rows="4" oninput="ev_set('quoteText',this.value)">${esc(ev.quoteText||'')}</textarea>
+          <textarea rows="4" oninput="ev_setMl('quoteText','zh',this.value)" placeholder="中文引言">${esc(mlText(ev.quoteText, 'zh'))}</textarea>
+          <textarea rows="4" oninput="ev_setMl('quoteText','en',this.value)" placeholder="English quote" style="margin-top:6px">${esc(mlText(ev.quoteText, 'en'))}</textarea>
         </div>
         <div class="field-row3">
           <div class="field">
@@ -1127,7 +1134,8 @@ function renderEventEditor(key) {
         </div>
         <div class="field">
           <label>页码/备注</label>
-          <input value="${esc(ev.quotePage||'')}" oninput="ev_set('quotePage',this.value)" placeholder="摘自PPT第X页">
+          <input value="${esc(mlText(ev.quotePage, 'zh'))}" oninput="ev_setMl('quotePage','zh',this.value)" placeholder="摘自PPT第X页">
+          <input value="${esc(mlText(ev.quotePage, 'en'))}" oninput="ev_setMl('quotePage','en',this.value)" placeholder="From PPT page X" style="margin-top:6px">
         </div>
         <div style="font-size:12px;color:var(--muted)">
           当前页面展示署名：<span id="quote-attribution-preview" style="color:var(--text)">${esc(formatQuoteAttribution(ev.quoteMeta || {}) || '未填写')}</span>
@@ -1166,6 +1174,11 @@ function ev_set(field, val) {
   if (!currentEventKey) return;
   events[currentEventKey][field] = val;
 }
+function ev_setMl(field, locale, val) {
+  if (!currentEventKey) return;
+  events[currentEventKey][field] = ensureMlObject(events[currentEventKey][field]);
+  events[currentEventKey][field][locale] = val;
+}
 function ensureQuoteMeta(key) {
   if (!events[key].quoteMeta || typeof events[key].quoteMeta !== 'object') {
     events[key].quoteMeta = {};
@@ -1186,6 +1199,12 @@ function ev_setLoc(field, val) {
   if (!currentEventKey) return;
   if (!events[currentEventKey].location) events[currentEventKey].location = {};
   events[currentEventKey].location[field] = val;
+}
+function ev_setLocMl(field, locale, val) {
+  if (!currentEventKey) return;
+  if (!events[currentEventKey].location) events[currentEventKey].location = {};
+  events[currentEventKey].location[field] = ensureMlObject(events[currentEventKey].location[field]);
+  events[currentEventKey].location[field][locale] = val;
 }
 function coordsToStr(ev) {
   const c = (ev.location||{}).coordinates;
@@ -1214,13 +1233,19 @@ function renderFigures(key) {
   list.innerHTML = figs.map((f, i) => `
     <div class="dyn-row">
       <input value="${esc(f.name||'')}" placeholder="姓名" oninput="setFigure('${key}',${i},'name',this.value)">
-      <input value="${esc(f.role||'')}" placeholder="职位/角色" oninput="setFigure('${key}',${i},'role',this.value)">
+      <input value="${esc(mlText(f.role, 'zh'))}" placeholder="中文角色" oninput="setFigureMl('${key}',${i},'role','zh',this.value)">
+      <input value="${esc(mlText(f.role, 'en'))}" placeholder="English role" oninput="setFigureMl('${key}',${i},'role','en',this.value)">
       <button class="btn btn-danger btn-icon" onclick="removeFigure('${key}',${i})">×</button>
     </div>`).join('');
 }
 function setFigure(key, i, field, val) {
   if (!events[key].figures) events[key].figures = [];
   events[key].figures[i][field] = val;
+}
+function setFigureMl(key, i, field, locale, val) {
+  if (!events[key].figures) events[key].figures = [];
+  events[key].figures[i][field] = ensureMlObject(events[key].figures[i][field]);
+  events[key].figures[i][field][locale] = val;
 }
 function addFigure() {
   if (!currentEventKey) return;
@@ -1888,7 +1913,8 @@ function showNewEventDialog() {
         <!-- 标题 -->
         <div class="field">
           <label>标题 <span style="color:var(--danger)">*</span></label>
-          <input id="ne-title" placeholder="事件标题">
+          <input id="ne-title" placeholder="中文标题">
+          <input id="ne-title-en" placeholder="English title" style="margin-top:6px">
         </div>
 
         <!-- 所属分类 -->
@@ -1908,28 +1934,33 @@ function showNewEventDialog() {
           <div class="field">
             <label>地点名称</label>
             <input id="ne-locname" placeholder="如：达特茅斯学院">
+            <input id="ne-locname-en" placeholder="e.g. Dartmouth College" style="margin-top:6px">
           </div>
           <div class="field">
             <label>国家/地区</label>
             <input id="ne-loccountry" placeholder="如：美国, 新罕布什尔州">
+            <input id="ne-loccountry-en" placeholder="e.g. NH, United States" style="margin-top:6px">
           </div>
         </div>
 
         <!-- 描述 -->
         <div class="field">
           <label>描述</label>
-          <textarea id="ne-desc" rows="3" placeholder="事件简介…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+          <textarea id="ne-desc" rows="3" placeholder="中文事件简介…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+          <textarea id="ne-desc-en" rows="3" placeholder="English event summary..." style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit;margin-top:6px"></textarea>
         </div>
 
         <!-- 引言 -->
         <div class="field-row">
           <div class="field">
             <label>引言正文</label>
-            <textarea id="ne-quote" rows="2" placeholder="引言内容…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+            <textarea id="ne-quote" rows="2" placeholder="中文引言…" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit"></textarea>
+            <textarea id="ne-quote-en" rows="2" placeholder="English quote..." style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);padding:7px 10px;font-size:13px;resize:vertical;font-family:inherit;margin-top:6px"></textarea>
           </div>
           <div class="field">
             <label>引言来源</label>
             <input id="ne-quotepage" placeholder="摘自PPT第X页">
+            <input id="ne-quotepage-en" placeholder="From PPT page X" style="margin-top:6px">
           </div>
         </div>
 
@@ -1967,13 +1998,19 @@ function neAutoKey() {
 async function submitNewEvent() {
   const key    = document.getElementById('ne-key').value.trim();
   const title  = document.getElementById('ne-title').value.trim();
+  const titleEn = document.getElementById('ne-title-en').value.trim();
   const year   = parseInt(document.getElementById('ne-year').value) || new Date().getFullYear();
   const catIdx = document.getElementById('ne-cat').value;
   const locName    = document.getElementById('ne-locname').value.trim();
+  const locNameEn  = document.getElementById('ne-locname-en').value.trim();
   const locCountry = document.getElementById('ne-loccountry').value.trim();
+  const locCountryEn = document.getElementById('ne-loccountry-en').value.trim();
   const desc    = document.getElementById('ne-desc').value.trim();
+  const descEn  = document.getElementById('ne-desc-en').value.trim();
   const quote   = document.getElementById('ne-quote').value.trim();
+  const quoteEn = document.getElementById('ne-quote-en').value.trim();
   const quotePg = document.getElementById('ne-quotepage').value.trim();
+  const quotePgEn = document.getElementById('ne-quotepage-en').value.trim();
 
   if (!key)   { toast('请输入事件 Key', 'error'); return; }
   if (!title) { toast('请输入标题', 'error'); return; }
@@ -1990,12 +2027,16 @@ async function submitNewEvent() {
     // 2. 构造新事件
     events[key] = {
       year,
-      title,
-      location: { name: locName, country: locCountry, coordinates: [0, 0] },
-      description: desc,
+      title: { zh: title, en: titleEn || title },
+      location: {
+        name: { zh: locName, en: locNameEn || locName },
+        country: { zh: locCountry, en: locCountryEn || locCountry },
+        coordinates: [0, 0]
+      },
+      description: { zh: desc, en: descEn || desc },
       figures: [],
-      quoteText: quote,
-      quotePage: quotePg,
+      quoteText: { zh: quote, en: quoteEn || quote },
+      quotePage: { zh: quotePg, en: quotePgEn || quotePg },
       images: [],
       videos: [],
     };
@@ -2033,6 +2074,21 @@ async function submitNewEvent() {
 // ─── Utilities ────────────────────────────────────────────────────────────────
 function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+const SUPPORTED_LOCALES = ['zh', 'en'];
+function isMl(value) {
+  return value && typeof value === 'object' && !Array.isArray(value)
+    && SUPPORTED_LOCALES.some(locale => Object.prototype.hasOwnProperty.call(value, locale));
+}
+function mlText(value, locale = 'zh') {
+  if (!isMl(value)) return String(value || '');
+  return String(value[locale] || value.zh || value.en || '');
+}
+function ensureMlObject(value) {
+  if (isMl(value)) return value;
+  const text = String(value || '');
+  return { zh: text, en: text };
 }
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────

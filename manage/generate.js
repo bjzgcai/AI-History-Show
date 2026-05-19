@@ -21,6 +21,8 @@ const AVATAR_REGISTRY_PATH = path.join(__dirname, 'figure-avatars.js');
 const RESEARCH_CANDIDATES_PATH = path.join(ROOT, 'resources', 'research-candidates.js');
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
 const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
+const SUPPORTED_LOCALES = ['en', 'zh'];
+const DEFAULT_LOCALE = 'zh';
 
 const { categories } = require('./catalog.js');
 const eventsMap      = require('./events.js');
@@ -153,7 +155,7 @@ for (const cat of categories) {
       quoteAttribution: curatedQuote.attribution,
       quoteMeta:   curatedQuote.meta,
       quotePage:   ev.quotePage || '',
-      commentarySections: buildCommentarySectionsOverride(key),
+      commentarySections: buildCommentarySectionsOverride(key, ev),
       resources: {
         images: ev.images || [],
         imageMeta: ev.imageMeta || {},
@@ -233,7 +235,7 @@ function enrichFigure(figure) {
   };
 }
 
-function buildCommentarySectionsOverride(key) {
+function buildCommentarySectionsOverride(key, ev) {
   const entry = researchCandidates.events && researchCandidates.events[key];
   if (!entry) {
     return [];
@@ -268,11 +270,17 @@ function buildCommentarySectionsOverride(key) {
   const sourceSections = explicitSections.length > 0 ? explicitSections : fallbackSections;
 
   return sourceSections
-    .map((section) => ({
-      label: String(section.label || '').trim(),
-      html: String(section.text || '').trim(),
+    .map((section, index) => ({
+      label: {
+        en: index === 0 ? 'Background' : 'Context',
+        zh: String(section.label || '').trim(),
+      },
+      html: {
+        en: getLocalizedText(ev && ev.description, 'en'),
+        zh: String(section.text || '').trim(),
+      },
     }))
-    .filter((section) => section.label && section.html);
+    .filter((section) => section.label.zh && section.html.zh);
 }
 
 /** 清理历史数据里手动残留的首尾包装引号 */
@@ -301,6 +309,26 @@ function hasOwn(obj, key) {
   return Object.prototype.hasOwnProperty.call(obj || {}, key);
 }
 
+function isLocalizedText(value) {
+  return Boolean(value && typeof value === 'object' && !Array.isArray(value)
+    && SUPPORTED_LOCALES.some((locale) => hasOwn(value, locale)));
+}
+
+function getLocalizedText(value, locale = DEFAULT_LOCALE) {
+  if (!isLocalizedText(value)) return String(value || '').trim();
+  return String(value[locale] || value[DEFAULT_LOCALE] || value.en || value.zh || '').trim();
+}
+
+function mapLocalizedText(value, transform) {
+  if (!isLocalizedText(value)) return transform(String(value || ''));
+  const result = {};
+  for (const locale of SUPPORTED_LOCALES) {
+    const text = getLocalizedText(value, locale);
+    result[locale] = transform(text, locale);
+  }
+  return result;
+}
+
 function mergeEditableQuoteMeta(eventMeta, candidateMeta) {
   const hasEventMeta = Boolean(eventMeta && typeof eventMeta === 'object');
   const eventSource = hasEventMeta ? eventMeta : null;
@@ -325,9 +353,16 @@ function selectCuratedQuote(key, ev) {
   const first = Array.isArray(candidates) && candidates.length > 0 ? candidates[0] : null;
   const candidateQuote = first && typeof first === 'object' ? String(first.quote || '').trim() : '';
   const effectiveMeta = mergeEditableQuoteMeta(ev && ev.quoteMeta, first);
+  const eventQuote = ev && ev.quoteText;
+  const quoteText = isLocalizedText(eventQuote)
+    ? {
+        en: candidateQuote || getLocalizedText(eventQuote, 'en'),
+        zh: getLocalizedText(eventQuote, 'zh') || candidateQuote || getLocalizedText(eventQuote, 'en'),
+      }
+    : (candidateQuote || getLocalizedText(eventQuote));
 
   return {
-    text: candidateQuote || String((ev && ev.quoteText) || '').trim(),
+    text: quoteText,
     attribution: formatQuoteAttribution(effectiveMeta),
     meta: effectiveMeta,
   };
@@ -335,10 +370,12 @@ function selectCuratedQuote(key, ev) {
 
 /** 将纯文本引言组装成 HTML 字符串（\n → <br>）*/
 function buildQuote(text) {
-  const normalizedText = normalizeQuoteText(text);
-  if (!normalizedText) return '';
-  const body = normalizedText.replace(/\n/g, '<br>');
-  return `"${body}"`;
+  return mapLocalizedText(text, (value) => {
+    const normalizedText = normalizeQuoteText(value);
+    if (!normalizedText) return '';
+    const body = normalizedText.replace(/\n/g, '<br>');
+    return `"${body}"`;
+  });
 }
 
 // ─── 写出文件 ────────────────────────────────────────────────────────────────
