@@ -230,20 +230,20 @@ function buildCommentarySectionsOverride(key, ev) {
 
   const fallbackSections = [];
   const backgroundText = entry.candidateTexts && entry.candidateTexts.background
-    ? String(entry.candidateTexts.background.text || '').trim()
+    ? entry.candidateTexts.background.text
     : '';
   const extensionText = entry.candidateTexts && entry.candidateTexts.extension
-    ? String(entry.candidateTexts.extension.text || '').trim()
+    ? entry.candidateTexts.extension.text
     : '';
 
-  if (backgroundText) {
+  if (getLocalizedText(backgroundText, 'zh')) {
     fallbackSections.push({
       label: '背景解读',
       text: backgroundText,
     });
   }
 
-  if (extensionText) {
+  if (getLocalizedText(extensionText, 'zh')) {
     fallbackSections.push({
       label: '延展说明',
       text: extensionText,
@@ -257,19 +257,18 @@ function buildCommentarySectionsOverride(key, ev) {
       const zhText = getLocalizedText(section.text, 'zh');
       const explicitEnLabel = getExplicitLocalizedText(section.label, 'en');
       const explicitEnText = getExplicitLocalizedText(section.text, 'en');
-      const fallbackEnText = index === 0 ? getLocalizedText(ev && ev.description, 'en') : '';
       return {
         label: {
           en: explicitEnLabel || (index === 0 ? 'Background' : 'Context'),
           zh: getLocalizedText(section.label, 'zh'),
         },
         html: {
-          en: explicitEnText || fallbackEnText,
+          en: explicitEnText,
           zh: zhText,
         },
       };
     })
-    .filter((section) => section.label.zh && section.html.zh);
+    .filter((section) => section.label.zh && section.html.zh && section.html.en);
 }
 
 function mapLocalizedText(value, transform) {
