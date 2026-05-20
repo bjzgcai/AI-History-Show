@@ -126,9 +126,11 @@
     }
 
     function t(key, locale = getLocale()) {
-        return (i18n.dictionary[locale] && i18n.dictionary[locale][key])
-            || (i18n.dictionary[i18n.defaultLocale] && i18n.dictionary[i18n.defaultLocale][key])
-            || key;
+        return (
+            (i18n.dictionary[locale] && i18n.dictionary[locale][key]) ||
+            (i18n.dictionary[i18n.defaultLocale] && i18n.dictionary[i18n.defaultLocale][key]) ||
+            key
+        );
     }
 
     function isLocalizedObject(value) {
@@ -155,19 +157,19 @@
             modeChip.parentNode.insertBefore(button, modeChip);
         } else {
             button.style.cssText = [
-            'position:fixed',
-            'right:18px',
-            'top:18px',
-            'z-index:9999',
-            'border:1px solid rgba(244,239,229,.28)',
-            'background:rgba(0,0,0,.62)',
-            'color:#f4efe5',
-            'border-radius:8px',
-            'padding:8px 12px',
-            'font:700 13px/1.1 PingFang SC, Microsoft YaHei, Arial, sans-serif',
-            'letter-spacing:0',
-            'cursor:pointer',
-            'backdrop-filter:blur(10px)'
+                'position:fixed',
+                'right:18px',
+                'top:18px',
+                'z-index:9999',
+                'border:1px solid rgba(244,239,229,.28)',
+                'background:rgba(0,0,0,.62)',
+                'color:#f4efe5',
+                'border-radius:8px',
+                'padding:8px 12px',
+                'font:700 13px/1.1 PingFang SC, Microsoft YaHei, Arial, sans-serif',
+                'letter-spacing:0',
+                'cursor:pointer',
+                'backdrop-filter:blur(10px)'
             ].join(';');
             global.document.body.appendChild(button);
         }

@@ -61,11 +61,18 @@ const dualUrl = router.buildTargetUrl('http://localhost:8000/index.html?layout=d
 assert.equal(dualUrl, 'http://localhost:8000/dual-screen.html?layout=dual#demo');
 console.log(`PASS buildTargetUrl dual redirect: ${dualUrl}`);
 
-const singleUrl = router.buildTargetUrl('http://localhost:8000/dual-screen.html?layout=single#demo', router.SINGLE_MODE);
+const singleUrl = router.buildTargetUrl(
+    'http://localhost:8000/dual-screen.html?layout=single#demo',
+    router.SINGLE_MODE
+);
 assert.equal(singleUrl, 'http://localhost:8000/index.html?layout=single#demo');
 console.log(`PASS buildTargetUrl single redirect: ${singleUrl}`);
 
-assert.equal(router.getPathFileName('http://localhost:8000/dual-screen.html'), 'dual-screen.html', 'dual entry filename should be detected');
+assert.equal(
+    router.getPathFileName('http://localhost:8000/dual-screen.html'),
+    'dual-screen.html',
+    'dual entry filename should be detected'
+);
 assert.equal(router.getPathFileName('/'), '', 'root path should not be treated as a fixed file');
 console.log('PASS path filename detection');
 
@@ -125,7 +132,11 @@ console.log('PASS stable dual entry detection');
     const fakeRoot = { dataset: { layoutMode: 'dual' }, clientWidth: 1920, clientHeight: 1080 };
     const actual = router.syncBrowserLayout(fakeWindow, fakeRoot);
     assert.equal(actual, router.SINGLE_MODE, 'explicit single override should still work from dual entry');
-    assert.equal(replacedUrl, 'http://localhost:8000/index.html?layout=single', 'dual entry override should redirect to single');
+    assert.equal(
+        replacedUrl,
+        'http://localhost:8000/index.html?layout=single',
+        'dual entry override should redirect to single'
+    );
     console.log('PASS fixed dual entry still honors explicit override');
 }
 

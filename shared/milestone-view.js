@@ -4,7 +4,11 @@
     }
 
     function localize(value) {
-        return global.I18n && typeof global.I18n.localize === 'function' ? global.I18n.localize(value) : (value == null ? '' : value);
+        return global.I18n && typeof global.I18n.localize === 'function'
+            ? global.I18n.localize(value)
+            : value == null
+              ? ''
+              : value;
     }
 
     function localizeObject(value) {
@@ -91,7 +95,8 @@
             : [];
 
         if (quoteHtml && quoteHtml !== '待补充') {
-            const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? `${t('source')}：` : `${t('attribution')}：`;
+            const attributionPrefix =
+                quoteAttribution && quoteAttribution.startsWith('《') ? `${t('source')}：` : `${t('attribution')}：`;
             sections.push({
                 label: t('quoteExcerpt'),
                 html: quoteAttribution ? `${quoteHtml}<br>${attributionPrefix}${quoteAttribution}` : quoteHtml
@@ -157,9 +162,7 @@
             archivePhotos: photos.slice(1),
             primaryVideo,
             videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
-            quoteHtml: quote && quote !== '待补充'
-                ? quote
-                : '',
+            quoteHtml: quote && quote !== '待补充' ? quote : '',
             quoteAttribution: String(localize(milestone.quoteAttribution) || '').trim(),
             quotePage: String(localize(milestone.quotePage) || '').trim(),
             commentaryOverrideSections: Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [],
