@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-19 22:05
+// 生成时间: 2026-05-20 17:53
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -103,7 +103,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field.",
+          "en": "The Dartmouth project mattered not just as a summer workshop, but because it brought language, abstraction, learning, neural networks, and self-improvement into one research agenda for the first time, giving scattered lines of work a shared problem space.",
           "zh": "达特茅斯项目的重要性不只在于一次夏季研讨，而在于它第一次把语言、抽象、学习、神经网络与自我改进放进同一份研究议程中，给分散的研究方向立下了共同问题域。"
         }
       },
@@ -113,7 +113,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "The meeting did not immediately produce a unified theory, but it achieved something more durable: it turned \"artificial intelligence\" from a phrase in a proposal into a disciplinary label that could keep attracting researchers, funding, and public imagination.",
           "zh": "这场会议并没有立刻产出统一理论，却成功完成了一件更深远的事：它把“人工智能”从提案里的命名，变成了一个可以持续聚拢研究者、资金和公众想象的学科标签。"
         }
       }
@@ -251,7 +251,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 1957, Frank Rosenblatt designed the perceptron, one of the first artificial neural networks, to model aspects of human cognition. It became the first physical implementation of an artificial neural network and an early landmark for connectionist AI.",
+          "en": "The perceptron became iconic not only because it was an early neural network model, but because Rosenblatt moved a trainable weight system from theory into something that could be demonstrated, funded, and reported by the media.",
           "zh": "感知机之所以具有标志性，不只因为它是早期神经网络模型，更因为 Rosenblatt 把“可学习的权重系统”从理论设想推进到了可演示、可资助、可被媒体传播的工程对象。"
         }
       },
@@ -261,7 +261,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "The optimism it triggered shows that many waves in AI history did not wait for algorithms to mature. They often began the moment a prototype made people feel that machines might really be able to learn.",
           "zh": "它引发的乐观情绪说明，AI 历史中的很多浪潮并不是在算法完全成熟后才出现，而是在一个原型首次让人看见“机器似乎真的能学”的那一刻就被提前点燃。"
         }
       }
@@ -301,7 +301,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "<i>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</i>",
+            "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》",
             "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
           }
         },
@@ -370,14 +370,14 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+      "en": "In 1969, Marvin Minsky and Seymour Papert published 《Perceptrons》, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
       "zh": "1969 年, Minsky 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
     },
     "figures": [
       {
         "name": "Marvin Minsky",
         "role": {
-          "en": "Author of <i>Perceptrons</i>",
+          "en": "Author of 《Perceptrons》",
           "zh": "《感知器》作者"
         },
         "avatar": "resources/images/figures/marvin-minsky.jpg",
@@ -410,7 +410,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+          "en": "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove.",
           "zh": "《Perceptrons》真正改变研究方向的地方，在于它把“哪些任务是单层感知机做不到的”说清楚了；学术界随后开始把注意力从神经网络热潮转向更容易形式化和证明的路线。"
         }
       },
@@ -420,7 +420,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources.",
           "zh": "寒冬并不意味着神经网络从此失效，而是意味着在当时的计算与算法条件下，它的承诺被重新估价；后来 BP、LSTM 与大算力的回归，本质上是在补齐当年缺失的训练机制与资源基础。"
         }
       }
@@ -448,8 +448,8 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
-            "zh": "《Perceptrons: An Introduction to Computational Geometry》"
+            "en": "《Perceptrons: An Introduction to Computational Geometry》",
+            "zh": "《感知机：计算几何学导论》"
           }
         },
         "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png": {
@@ -458,8 +458,8 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
-            "zh": "《Perceptrons: An Introduction to Computational Geometry》"
+            "en": "《Perceptrons: An Introduction to Computational Geometry》",
+            "zh": "《感知机：计算几何学导论》"
           }
         }
       },
@@ -567,7 +567,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks.",
+          "en": "The key to backpropagation was not merely sending errors backward. It embedded every layer's parameters in a unified differentiable computation graph, making representation learning a genuinely trainable engineering process for the first time.",
           "zh": "反向传播的关键不只是“把误差往回传”，而是把多层网络中每一层参数都嵌入统一的可微计算图里，让表示学习第一次变成真正可训练的工程流程。"
         }
       },
@@ -577,7 +577,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Its foundation for the later deep-learning revival was to turn the question of what hidden layers can learn from a hand-design problem into a data-driven one. That step moved neural networks from conceptual models toward a scalable methodology.",
           "zh": "它为后来深度学习复兴打下的基础，是让“隐藏层能学到什么”从人工设计问题变成数据驱动问题；这一步把神经网络从概念模型推进到了可扩展的方法论。"
         }
       }
@@ -637,8 +637,8 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "Backpropagation",
-            "zh": "《Learning representations by back-propagating errors》"
+            "en": "《Learning representations by back-propagating errors》",
+            "zh": "《通过反向传播误差来学习表征》"
           }
         }
       },
@@ -693,7 +693,7 @@ const milestones = [
       {
         "name": "Jeffrey Elman",
         "role": {
-          "en": "Simple RNN提出者",
+          "en": "The creator of Simple RNN",
           "zh": "Simple RNN提出者"
         },
         "avatar": "resources/images/figures/jeffrey-elman.jpg",
@@ -703,7 +703,7 @@ const milestones = [
       {
         "name": "Michael Jordan",
         "role": {
-          "en": "Jordan Network提出者",
+          "en": "The creator of Jordan Network",
           "zh": "Jordan Network提出者"
         },
         "avatar": "resources/images/figures/michael-i-jordan.jpg",
@@ -715,7 +715,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": {
       "en": "\"The current report develops a proposal ... to provide networks with a dynamic memory.\"",
-      "zh": "\"简单循环网络能够在内部表示中保留关于过去输入的信息。\""
+      "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
     },
     "quoteAttribution": "《Finding Structure in Time》, Jeffrey L. Elman",
     "quoteMeta": {
@@ -736,7 +736,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling.",
+          "en": "The breakthrough in early RNNs was putting historical state explicitly back inside the network. Context units let the model look beyond the current input and compress earlier time steps into an internal memory it could read repeatedly.",
           "zh": "早期 RNN 的突破点在于把“历史状态”显式放回网络内部：context units 让模型不再只看当前输入，而是能把先前时间步的信息压缩成一个可反复读取的内部记忆。"
         }
       },
@@ -746,7 +746,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "They also exposed a long-running problem: sequence modeling was an early idea, but without stable training mechanisms these models struggled to learn long-range dependencies. That line of work was only truly reconnected later through LSTM.",
           "zh": "它也暴露了一个长期难题：序列建模的想法很早就有，但没有稳定训练机制时，这类模型很难真正把长距离依赖学出来；这条线最后要靠 LSTM 才被接上。"
         }
       }
@@ -773,7 +773,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Recurrent Neural Networks",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -862,7 +862,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "Convolutional neural networks draw inspiration from biological vision: local receptive fields and filters exploit the spatial structure of images. In 1989, Yann LeCun applied backpropagation to train CNNs for handwritten digit recognition, opening the path to modern computer vision.",
+          "en": "CNNs endured because they wrote locality and translation invariance directly into the network structure. Local receptive fields and weight sharing were not just engineering tricks; they were structured uses of the statistics of vision.",
           "zh": "CNN 的持久价值在于把图像的局部性与平移不变性写进网络结构本身：局部感受野与权值共享不是简单的工程技巧，而是对视觉统计规律的结构化利用。"
         }
       },
@@ -872,7 +872,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "LeNet also showed the closed loop of algorithm, dataset, and real task. Once a network could reliably read handwritten digits, neural networks gained sustained credibility as industrially useful systems.",
           "zh": "LeNet 的意义还在于它展示了“算法 + 数据集 + 真实任务”的闭环：当网络能稳定读懂手写数字时，神经网络才第一次在工业可用性上获得了持续说服力。"
         }
       }
@@ -890,7 +890,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Convolutional Neural Networks",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -900,7 +900,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Convolutional Neural Networks",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -966,7 +966,7 @@ const milestones = [
       {
         "name": "Sepp Hochreiter",
         "role": {
-          "en": "LSTM发明者",
+          "en": "LSTM inventor",
           "zh": "LSTM发明者"
         },
         "avatar": "resources/images/figures/sepp-hochreiter.jpg",
@@ -976,7 +976,7 @@ const milestones = [
       {
         "name": "Jürgen Schmidhuber",
         "role": {
-          "en": "LSTM共同发明者",
+          "en": "LSTM co-inventor",
           "zh": "LSTM共同发明者"
         },
         "avatar": "resources/images/figures/juergen-schmidhuber.jpg",
@@ -1009,7 +1009,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 1997, Sepp Hochreiter and Juergen Schmidhuber proposed Long Short-Term Memory networks. LSTM introduced gates that preserve long-range information flow, helping recurrent networks overcome vanishing gradients and enabling later breakthroughs in speech and language.",
+          "en": "The core of LSTM was not simply adding a few gates. It separated the preservation, writing, and reading of long-term memory, so gradient flow and state updates no longer fought each other as directly.",
           "zh": "LSTM 的核心并不是“多了几个门”，而是它把长期记忆的保存与写入、读取分开管理，使梯度传播和状态更新不再互相掣肘。"
         }
       },
@@ -1019,7 +1019,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Historically, LSTM is a classic case of structure compensating for algorithmic limits in connectionism. When standard RNNs were hard to train, researchers did not abandon sequence models; they redesigned the structure to recover trainability.",
           "zh": "从历史角度看，LSTM 是连接主义里一次典型的“结构补偿算法不足”案例：当标准 RNN 难以训练时，研究者没有放弃序列模型，而是通过结构设计把可训练性重新找回来。"
         }
       }
@@ -1057,7 +1057,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "LSTM and Gating Mechanisms",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1113,7 +1113,7 @@ const milestones = [
       {
         "name": "Alex Krizhevsky",
         "role": {
-          "en": "AlexNet作者",
+          "en": "AlexNet author",
           "zh": "AlexNet作者"
         },
         "avatar": "resources/images/figures/alex-krizhevsky.jpg",
@@ -1123,7 +1123,7 @@ const milestones = [
       {
         "name": "Geoffrey Hinton",
         "role": {
-          "en": "导师",
+          "en": "Advisor",
           "zh": "导师"
         },
         "avatar": "resources/images/figures/geoffrey-hinton.jpg",
@@ -1156,7 +1156,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "From 2012 to 2014, AlexNet, VGG and GoogLeNet won ImageNet with deep neural networks. Their success came from the convergence of data, GPUs and engineering, proving that deep learning could dominate large-scale visual recognition.",
+          "en": "AlexNet's explosive impact came from several conditions maturing at once: large labeled datasets, GPU training, ReLU, Dropout, and other practical techniques were integrated into a pipeline that could reliably win a benchmark.",
           "zh": "AlexNet 的爆发性影响来自多种条件首次同时成熟：大规模标注数据、GPU 训练、ReLU 与 Dropout 等工程技巧，被整合成一条能够稳定赢下基准测试的流水线。"
         }
       },
@@ -1166,7 +1166,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "It moved deep learning from something that might work academically to a default path industry had to take seriously. Once it achieved a large advantage on a public, repeatable competition like ImageNet, the research paradigm shifted quickly.",
           "zh": "它让深度学习从“学术上可能有效”变成“行业必须认真对待的默认路线”：一旦在 ImageNet 这种公开、可复验的竞赛上形成数量级优势，研究范式的切换就会迅速发生。"
         }
       }
@@ -1184,7 +1184,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+            "en": "Revelant researcger photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1254,13 +1254,13 @@ const milestones = [
     },
     "description": {
       "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures.",
-      "zh": "最初训练超过百层 最多训练到上千层"
+      "zh": "Highway Networks 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。"
     },
     "figures": [
       {
         "name": "Ian Goodfellow",
         "role": {
-          "en": "GAN发明者",
+          "en": "GAN inventor",
           "zh": "GAN发明者"
         },
         "avatar": "resources/images/figures/ian-goodfellow.jpg",
@@ -1270,7 +1270,7 @@ const milestones = [
       {
         "name": "Yoshua Bengio",
         "role": {
-          "en": "注意力机制提出者",
+          "en": "Proposer of Attention Mechanism ",
           "zh": "注意力机制提出者"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
@@ -1282,7 +1282,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
     "quote": {
       "en": "\"The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.\"",
-      "zh": "\"高速网络能够训练非常深的前馈网络。\""
+      "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
     },
     "quoteAttribution": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
     "quoteMeta": {
@@ -1303,7 +1303,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures.",
+          "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed.",
           "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。"
         }
       },
@@ -1313,7 +1313,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream.",
           "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。"
         }
       }
@@ -1330,7 +1330,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Highway Networks",
+            "en": "Highway Networks diagram",
             "zh": "Highway Network 架构图"
           }
         },
@@ -1340,7 +1340,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Highway Networks",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1396,7 +1396,7 @@ const milestones = [
       {
         "name": "Ian Goodfellow",
         "role": {
-          "en": "GAN发明者",
+          "en": "GAN inventor",
           "zh": "GAN发明者"
         },
         "avatar": "resources/images/figures/ian-goodfellow.jpg",
@@ -1406,7 +1406,7 @@ const milestones = [
       {
         "name": "Yoshua Bengio",
         "role": {
-          "en": "注意力机制提出者",
+          "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
@@ -1439,7 +1439,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2014, Ian Goodfellow introduced Generative Adversarial Networks, in which a generator and discriminator learn through an adversarial game. GANs became a major framework for learning data distributions and generating realistic images and media.",
+          "en": "GANs mattered historically because they reframed complex distribution modeling as an adversarial game between a generator and a discriminator, making high-dimensional generation less dependent on explicit probability modeling.",
           "zh": "GAN 的历史意义，在于它把“如何建模复杂分布”改写成一场生成器与判别器之间的对抗游戏，使高维生成不再完全依赖显式概率建模。"
         }
       },
@@ -1449,7 +1449,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "They also opened a familiar AI development path: a method that was initially unstable and hard to evaluate drew rapid attention because its visual results were striking, which then forced stronger training techniques, metrics, and industrial applications.",
           "zh": "它也开启了一条典型的 AI 发展路径：一个最初训练不稳定、评价困难的方法，因视觉效果足够震撼而迅速获得社区关注，继而倒逼出更强的训练技巧、评价指标与产业应用。"
         }
       }
@@ -1521,7 +1521,7 @@ const milestones = [
       {
         "name": "Ian Goodfellow",
         "role": {
-          "en": "GAN发明者",
+          "en": "GAN inventor",
           "zh": "GAN发明者"
         },
         "avatar": "resources/images/figures/ian-goodfellow.jpg",
@@ -1531,7 +1531,7 @@ const milestones = [
       {
         "name": "Yoshua Bengio",
         "role": {
-          "en": "注意力机制提出者",
+          "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
@@ -1564,7 +1564,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2014, the neural machine translation work by Bahdanau, Cho and Bengio introduced attention as a way to align and translate jointly. Attention let models focus on relevant input parts and became a central mechanism for sequence modeling.",
+          "en": "Attention first addressed the compression bottleneck in encoder-decoder models. Instead of forcing one fixed vector to remember an entire sentence, the decoder could dynamically retrieve the most relevant parts of the input at each step.",
           "zh": "注意力机制最初解决的是编码器-解码器的“压缩瓶颈”：与其要求一个固定向量记住整句，不如让解码器在每一步动态检索最相关的输入片段。"
         }
       },
@@ -1574,7 +1574,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Its importance went beyond better translation accuracy. It introduced an idea later amplified by the Transformer: internal relationships in a model do not have to be carried only by recurrence; they can be built through explicit weighting.",
           "zh": "它的重要性不只在翻译精度提升，更在于它引入了一种后来被 Transformer 放大的思想：模型内部的关系，不一定要靠递归传播，也可以靠显式加权来建立。"
         }
       }
@@ -1591,7 +1591,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Autoregressive Models and Attention",
+            "en": "Autoregressive Models and Attention diagram",
             "zh": "自回归模型和注意力机制 架构图"
           }
         },
@@ -1601,7 +1601,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Autoregressive Models and Attention",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1657,7 +1657,7 @@ const milestones = [
       {
         "name": "何恺明",
         "role": {
-          "en": "ResNet作者",
+          "en": "ResNet author",
           "zh": "ResNet作者"
         },
         "avatar": "resources/images/figures/kaiming-he.jpg",
@@ -1667,7 +1667,7 @@ const milestones = [
       {
         "name": "孙剑",
         "role": {
-          "en": "ResNet共同作者",
+          "en": "ResNet co-author",
           "zh": "ResNet共同作者"
         },
         "avatar": "resources/images/figures/sun-jian.png",
@@ -1700,7 +1700,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2015, Kaiming He and Jian Sun introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
+          "en": "ResNet's real breakthrough was not depth by itself, but changing the learning target from a full mapping to a residual correction. Each layer did not have to reinvent features; it only had to make incremental changes to existing representations.",
           "zh": "ResNet 的真正突破不是“更深”本身，而是把学习目标从完整映射改成残差修正：网络不必每层都重新发明特征，只需在已有表示上做增量改动。"
         }
       },
@@ -1710,7 +1710,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "It became an engineering default quickly because shortcuts delivered large gains at very low cost. Compared with more complex gated designs, ResNet showed that structural subtraction can sometimes spread further than adding mechanisms.",
           "zh": "它之所以迅速成为工程默认项，是因为 shortcut 带来的收益足够大，而代价又极低；相比更复杂的门控设计，ResNet 证明很多时候“结构减法”比“机制加法”更有扩散力。"
         }
       }
@@ -1731,7 +1731,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "ResNet",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1741,7 +1741,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "ResNet",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1751,7 +1751,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "ResNet",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1761,7 +1761,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "ResNet",
+            "en": "ResNet diagram",
             "zh": "ResNet 架构图"
           }
         },
@@ -1771,7 +1771,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "ResNet",
+            "en": "ResNet diagram",
             "zh": "ResNet 架构图"
           }
         },
@@ -1781,7 +1781,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "ResNet",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1837,7 +1837,7 @@ const milestones = [
       {
         "name": "黄高",
         "role": {
-          "en": "DenseNet作者",
+          "en": "DenseNet author",
           "zh": "DenseNet作者"
         },
         "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
@@ -1849,7 +1849,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
     "quote": {
       "en": "\"DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.\"",
-      "zh": "\"密集卷积网络以前馈方式将每一层连接到其他每一层。\""
+      "zh": "\"DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。\""
     },
     "quoteAttribution": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
     "quoteMeta": {
@@ -1870,7 +1870,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2016, Gao Huang and collaborators proposed DenseNet, connecting each layer to every later layer. By making all previous feature states directly visible, DenseNet increased gradient paths, improved feature reuse and influenced efficient network design.",
+          "en": "DenseNet changed \"each layer sees only the previous layer\" into \"each layer sees all earlier layers.\" It did more than deepen gradient paths; it explicitly encouraged feature reuse at the representation level.",
           "zh": "DenseNet 把“每层只看上一层”改成“每层都看所有历史层”，因此它不只是加深梯度通路，更是在表示层面鼓励显式特征复用。"
         }
       },
@@ -1880,7 +1880,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Compared with ResNet, DenseNet is a more extreme version of not discarding information. It preserves all preceding layers, gaining parameter efficiency while increasing memory pressure and implementation cost.",
           "zh": "与 ResNet 相比，DenseNet 更像一种“信息不轻易丢弃”的极端方案：它把前面所有层都保留下来，换来更高的参数效率，也带来更强的内存压力与实现成本。"
         }
       }
@@ -1898,7 +1898,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "DenseNet",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1908,7 +1908,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "DenseNet",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1918,7 +1918,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "DenseNet",
+            "en": "DenseNet diagram",
             "zh": "DenseNet 架构图"
           }
         }
@@ -1967,14 +1967,14 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+      "en": "In 2017, Vaswani and collaborators proposed the Transformer in 《Attention Is All You Need》. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
       "zh": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
     },
     "figures": [
       {
         "name": "Ashish Vaswani",
         "role": {
-          "en": "Transformer作者",
+          "en": "Transformer author",
           "zh": "Transformer作者"
         },
         "avatar": "resources/images/figures/ashish-vaswani.jpg",
@@ -2007,7 +2007,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+          "en": "The Transformer's structural revolution was to move the core of sequence modeling from recurrence and convolution to global self-attention, allowing relationships between positions to be modeled directly and computed in parallel.",
           "zh": "Transformer 的结构革命，在于它把序列建模的核心从递归与卷积转移到全局自注意力，使不同位置之间的关系可以被并行计算、直接建模。"
         }
       },
@@ -2017,7 +2017,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "It later dominated the large-model era not only because it worked better, but because the architecture was hardware-friendly, easy to scale, and easy to stack. That released the scaling logic that larger models could become stronger.",
           "zh": "它后来统治大模型时代，并不只是因为效果更好，更因为这种结构对硬件友好、易于扩展、便于堆叠，使“模型越大越强”的缩放逻辑第一次被充分释放。"
         }
       }
@@ -2035,7 +2035,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Transformer",
+            "en": "Transformer diagram",
             "zh": "Transformer 架构图"
           }
         },
@@ -2045,7 +2045,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Transformer",
+            "en": "Transformer diagram",
             "zh": "Transformer 架构图"
           }
         },
@@ -2055,7 +2055,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "Transformer",
+            "en": "《Attention Is All You Need》",
             "zh": "《Attention Is All You Need》"
           }
         }
@@ -2111,7 +2111,7 @@ const milestones = [
       {
         "name": "Jacob Devlin",
         "role": {
-          "en": "BERT作者",
+          "en": "BERT author",
           "zh": "BERT作者"
         },
         "avatar": "resources/images/figures/jacob-devlin.jpg",
@@ -2121,7 +2121,7 @@ const milestones = [
       {
         "name": "Alec Radford",
         "role": {
-          "en": "GPT作者",
+          "en": "GPT author",
           "zh": "GPT作者"
         },
         "avatar": "resources/images/figures/alec-radford.png",
@@ -2154,7 +2154,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2018, Google introduced BERT, bringing large-scale pretraining plus fine-tuning into mainstream NLP. Based on the Transformer encoder, BERT learned bidirectional representations and achieved state-of-the-art results across many language tasks.",
+          "en": "BERT shifted NLP from designing structures for individual tasks to pretraining a general language model and then lightly fine-tuning it. The same base could transfer quickly to question answering, classification, extraction, and many other tasks.",
           "zh": "BERT 把 NLP 的重点从“为单个任务设计结构”转到“先做通用语言预训练，再做轻量微调”，这让同一个底座可以快速迁移到问答、分类、抽取等大量任务。"
         }
       },
@@ -2164,7 +2164,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Its landmark status was not only bidirectional encoding. It made pretrained models standard infrastructure for NLP, after which competition increasingly moved toward data scale, training resources, and post-training strategy.",
           "zh": "它的标志性不只在双向编码，而在于它让“预训练模型”第一次成为 NLP 的标准基础设施；此后模型能力的竞争，逐渐转到数据规模、训练资源与后训练策略上。"
         }
       }
@@ -2182,7 +2182,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "BERT",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2192,7 +2192,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "BERT",
+            "en": "BERT diagram",
             "zh": "BERT 架构图"
           }
         },
@@ -2202,7 +2202,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "BERT",
+            "en": "BERT diagram",
             "zh": "BERT 架构图"
           }
         }
@@ -2258,7 +2258,7 @@ const milestones = [
       {
         "name": "Jacob Devlin",
         "role": {
-          "en": "BERT作者",
+          "en": "BERT author",
           "zh": "BERT作者"
         },
         "avatar": "resources/images/figures/jacob-devlin.jpg",
@@ -2268,7 +2268,7 @@ const milestones = [
       {
         "name": "Alec Radford",
         "role": {
-          "en": "GPT作者",
+          "en": "GPT author",
           "zh": "GPT作者"
         },
         "avatar": "resources/images/figures/alec-radford.png",
@@ -2301,7 +2301,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2018, OpenAI introduced GPT as another pretraining-and-fine-tuning paradigm. GPT used a unidirectional Transformer decoder trained with next-token prediction, showing that generative pretraining could transfer effectively to many NLP tasks.",
+          "en": "GPT's decisive contribution was proving that a decoder-only architecture with a single autoregressive objective could be a strong and scalable general route. The model did not need a new objective for every task to gain transfer ability from large-scale pretraining.",
           "zh": "GPT 的决定性贡献，是把 decoder-only 架构与单一自回归目标证明成一条足够强、足够可扩展的通用路线：模型不必为每个任务重写目标函数，也能靠规模化预训练获得迁移能力。"
         }
       },
@@ -2311,7 +2311,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "In hindsight, GPT's success was not just a model-architecture success. It was the success of an engineering philosophy: a simple objective, large-scale training, and one unified generation interface, which shaped the interaction pattern for later conversational models.",
           "zh": "从后来历史回看，GPT 的胜利并不只是模型结构胜利，更是“简单目标 + 大规模训练 + 统一生成接口”这套工程哲学的胜利，它为后续对话式大模型奠定了接口习惯。"
         }
       }
@@ -2331,7 +2331,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "GPT",
+            "en": "GPT diagram",
             "zh": "GPT 架构图"
           }
         },
@@ -2341,7 +2341,7 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "GPT",
+            "en": "GPT diagram",
             "zh": "GPT 架构图"
           }
         },
@@ -2361,7 +2361,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "GPT",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2371,7 +2371,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "GPT",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -2427,7 +2427,7 @@ const milestones = [
       {
         "name": "Max Tegmark",
         "role": {
-          "en": "AI Feynman作者",
+          "en": "AI Feynman author",
           "zh": "AI Feynman作者"
         },
         "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
@@ -2439,7 +2439,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
     "quote": {
       "en": "\"We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.\"",
-      "zh": "\"AI Feynman 是一种受物理学启发的符号回归方法。\""
+      "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
     },
     "quoteAttribution": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
     "quoteMeta": {
@@ -2460,7 +2460,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
+          "en": "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws.",
           "zh": "AI Feynman 的思路很有代表性：它没有把符号回归完全交给暴力搜索，而是引入对称性、量纲分析等物理先验，缩小候选空间，让“机器发现公式”从玩具问题走向真实规律重建。"
         }
       },
@@ -2470,7 +2470,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community.",
           "zh": "这类系统的重要价值在于可解释性。与只给出预测结果的黑盒模型相比，AI Feynman 直接输出人类可读的方程，因此它更像是“可交付给科学共同体”的中间发现工具。"
         }
       }
@@ -2489,7 +2489,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2509,7 +2509,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+            "en": "《AI Feynman: a physics-inspired method for symbolic regression》",
             "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
           }
         },
@@ -2519,7 +2519,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+            "en": "《AI Feynman: a physics-inspired method for symbolic regression》",
             "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
           }
         }
@@ -2585,7 +2585,7 @@ const milestones = [
       {
         "name": "John Jumper",
         "role": {
-          "en": "AlphaFold 2首席科学家",
+          "en": "AlphaFold Co-Chief Scientists",
           "zh": "AlphaFold 2首席科学家"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
@@ -2597,7 +2597,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
     "quote": {
       "en": "\"Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.\"",
-      "zh": "\"AlphaFold 展示了人工智能能够在蛋白质结构预测这一重大科学挑战上取得突破。\""
+      "zh": "\"在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。\""
     },
     "quoteAttribution": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
     "quoteMeta": {
@@ -2618,7 +2618,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+          "en": "AlphaFold's breakthrough was not just a small gain in prediction accuracy. It brought sequence-to-3D-structure inference close to experimental usability on large-scale benchmarks, changing the order of work in structural biology.",
           "zh": "AlphaFold 的突破不只是把预测精度提高了一点，而是让从序列到三维结构的推断第一次在大规模基准上接近实验方法的可用水准，改变了结构生物学的工作顺序。"
         }
       },
@@ -2628,7 +2628,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "Its lesson for AI for Science is that when models become strong enough, AI is no longer only screening candidates for scientists. It can move scientific steps that were once expensive and slow directly into computational workflows.",
           "zh": "它对 AI for Science 的启发在于：当模型足够强时，AI 不再只是“帮科学家筛选候选”，而是可以直接把原本极其昂贵、周期很长的科学环节前移到计算流程里。"
         }
       }
@@ -2690,7 +2690,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "AlphaFold: Protein Structure Prediction",
+            "en": "《Highly accurate protein structure prediction with AlphaFold》",
             "zh": "《Highly accurate protein structure prediction with AlphaFold》"
           }
         },
@@ -2700,7 +2700,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AlphaFold: Protein Structure Prediction",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2710,7 +2710,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AlphaFold: Protein Structure Prediction",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -2766,7 +2766,7 @@ const milestones = [
       {
         "name": "Stuart Russell",
         "role": {
-          "en": "智能体理论奠基人",
+          "en": "Founder of Agent Theory",
           "zh": "智能体理论奠基人"
         },
         "avatar": "resources/images/figures/stuart-russell.jpg",
@@ -2776,7 +2776,7 @@ const milestones = [
       {
         "name": "Peter Norvig",
         "role": {
-          "en": "AIMA作者",
+          "en": "AIMA author",
           "zh": "AIMA作者"
         },
         "avatar": "resources/images/figures/peter-norvig.jpg",
@@ -2786,7 +2786,7 @@ const milestones = [
       {
         "name": "Michael Wooldridge",
         "role": {
-          "en": "多智能体系统专家",
+          "en": "Expert in Multi-Agent Systems",
           "zh": "多智能体系统专家"
         },
         "avatar": "resources/images/figures/michael-wooldridge.jpg",
@@ -2798,7 +2798,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
     "quote": {
       "en": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
-      "zh": "\"智能体将语言模型与规划、记忆和工具使用结合起来，形成能够自主行动的系统。\""
+      "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
     },
     "quoteAttribution": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
     "quoteMeta": {
@@ -2819,7 +2819,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction.",
+          "en": "The key change in contemporary agentic AI is not tool use by itself. Large language models began to act as the cognitive center for goal decomposition, state interpretation, action selection, and self-correction.",
           "zh": "当代 Agentic AI 的关键变化，并不是“会调用工具”这一点本身，而是大语言模型开始同时承担目标分解、状态解释、行动选择与自我修正的认知中枢角色。"
         }
       },
@@ -2829,7 +2829,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "That turns agents from systems dependent on hand-written planners into open software forms whose behavior strategies can be rebuilt through prompts, memory, toolchains, and feedback loops. It also explains why agent products expanded so quickly after 2023.",
           "zh": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。"
         }
       }
@@ -2929,7 +2929,7 @@ const milestones = [
       {
         "name": "Sakana AI团队",
         "role": {
-          "en": "AI Scientist开发者",
+          "en": "AI Scientist Developer",
           "zh": "AI Scientist开发者"
         },
         "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
@@ -2939,7 +2939,7 @@ const milestones = [
       {
         "name": "伯克利团队",
         "role": {
-          "en": "A-Lab开发者",
+          "en": "A-Lab Developer",
           "zh": "A-Lab开发者"
         },
         "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
@@ -2951,7 +2951,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
     "quote": {
       "en": "\"This paper presents the first comprehensive framework for fully automatic scientific discovery.\"",
-      "zh": "\"AI 科学家系统开始展示自动提出问题、设计实验并撰写研究结果的能力。\""
+      "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
     },
     "quoteAttribution": "《The AI Scientist》, Chris Lu et al.",
     "quoteMeta": {
@@ -2972,7 +2972,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments.",
+          "en": "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow.",
           "zh": "这类系统真正新的地方，并不是能写出论文段落，而是把“提出假设、设计流程、调用工具、执行实验、评估结果”连成了闭环，开始触碰科学研究的工作流自动化。"
         }
       },
@@ -2982,7 +2982,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback.",
           "zh": "它也意味着 AI for Science 的评价标准正在改变：未来的关键问题不再只是模型能否解释一张图或一个序列，而是它能否持续产出可验证、可复现实验流程，并在反馈中自我改进。"
         }
       }
@@ -3022,7 +3022,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "AI Scientists and Autonomous Laboratories",
+            "en": "《The AI Scientist》",
             "zh": "《The AI Scientist》"
           }
         },
@@ -3032,7 +3032,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AI Scientists and Autonomous Laboratories",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -3042,7 +3042,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AI Scientists and Autonomous Laboratories",
+            "en": "Revelant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -3112,7 +3112,7 @@ const milestones = [
       {
         "name": "研究机构",
         "role": {
-          "en": "前沿模型研发机构",
+          "en": "Leading-edge model R&D organization",
           "zh": "前沿模型研发机构"
         },
         "avatar": "resources/images/figures/research-institution.png",
@@ -3124,7 +3124,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
     "quote": {
       "en": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
-      "zh": "\"大语言模型进入百花齐放的竞争阶段，能力评测和真实使用共同推动快速迭代。\""
+      "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
     },
     "quoteAttribution": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
     "quoteMeta": {
@@ -3145,7 +3145,7 @@ const milestones = [
           "zh": "背景解读"
         },
         "html": {
-          "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
+          "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation.",
           "zh": "大模型竞争的可见化，越来越依赖“活榜单”而不是单次论文成绩：用户偏好投票、公开对战与频繁更新，让模型比较从实验室内部评测走向持续的公共观察。"
         }
       },
@@ -3155,7 +3155,7 @@ const milestones = [
           "zh": "延展说明"
         },
         "html": {
-          "en": "",
+          "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability.",
           "zh": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。"
         }
       }
