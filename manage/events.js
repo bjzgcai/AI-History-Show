@@ -195,7 +195,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "<i>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</i>",
+          "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》",
           "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
         }
       },
@@ -242,14 +242,14 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+      "en": "In 1969, Marvin Minsky and Seymour Papert published 《Perceptrons》, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
       "zh": "1969 年, Minsky 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
     },
     "figures": [
       {
         "name": "Marvin Minsky",
         "role": {
-          "en": "Author of <i>Perceptrons</i>",
+          "en": "Author of 《Perceptrons》",
           "zh": "《感知器》作者"
         }
       }
@@ -287,8 +287,8 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
-          "zh": "《Perceptrons: An Introduction to Computational Geometry》"
+          "en": "《Perceptrons: An Introduction to Computational Geometry》",
+          "zh": "《感知机：计算几何学导论》"
         }
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png": {
@@ -297,8 +297,8 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "<i>Perceptrons: An Introduction to Computational Geometry</i>",
-          "zh": "《Perceptrons: An Introduction to Computational Geometry》"
+          "en": "《Perceptrons: An Introduction to Computational Geometry》",
+          "zh": "《感知机：计算几何学导论》"
         }
       }
     }
@@ -415,8 +415,8 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "Backpropagation",
-          "zh": "《Learning representations by back-propagating errors》"
+          "en": "《Learning representations by back-propagating errors》",
+          "zh": "《通过反向传播误差来学习表征》"
         }
       }
     }
@@ -477,7 +477,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Convolutional Neural Networks",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -487,7 +487,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Convolutional Neural Networks",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -531,21 +531,21 @@ module.exports = {
       {
         "name": "Jeffrey Elman",
         "role": {
-          "en": "Simple RNN提出者",
+          "en": "The creator of Simple RNN",
           "zh": "Simple RNN提出者"
         }
       },
       {
         "name": "Michael Jordan",
         "role": {
-          "en": "Jordan Network提出者",
+          "en": "The creator of Jordan Network",
           "zh": "Jordan Network提出者"
         }
       }
     ],
     "quoteText": {
       "en": "The current report develops a proposal ... to provide networks with a dynamic memory.",
-      "zh": "简单循环网络能够在内部表示中保留关于过去输入的信息。"
+      "zh": "本报告提出了一项建议……旨在为网络提供动态内存。"
     },
     "quotePage": {
       "en": "From PPT page 16",
@@ -575,7 +575,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Recurrent Neural Networks",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -609,14 +609,14 @@ module.exports = {
       {
         "name": "Sepp Hochreiter",
         "role": {
-          "en": "LSTM发明者",
+          "en": "LSTM inventor",
           "zh": "LSTM发明者"
         }
       },
       {
         "name": "Jürgen Schmidhuber",
         "role": {
-          "en": "LSTM共同发明者",
+          "en": "LSTM co-inventor",
           "zh": "LSTM共同发明者"
         }
       }
@@ -664,7 +664,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "LSTM and Gating Mechanisms",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -698,14 +698,14 @@ module.exports = {
       {
         "name": "Alex Krizhevsky",
         "role": {
-          "en": "AlexNet作者",
+          "en": "AlexNet author",
           "zh": "AlexNet作者"
         }
       },
       {
         "name": "Geoffrey Hinton",
         "role": {
-          "en": "导师",
+          "en": "Advisor",
           "zh": "导师"
         }
       }
@@ -733,7 +733,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+          "en": "Revelant researcger photo",
           "zh": "相关研究者照片"
         }
       },
@@ -781,27 +781,27 @@ module.exports = {
     },
     "description": {
       "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures.",
-      "zh": "最初训练超过百层 最多训练到上千层"
+      "zh": "Highway Networks 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。"
     },
     "figures": [
       {
         "name": "Ian Goodfellow",
         "role": {
-          "en": "GAN发明者",
+          "en": "GAN inventor",
           "zh": "GAN发明者"
         }
       },
       {
         "name": "Yoshua Bengio",
         "role": {
-          "en": "注意力机制提出者",
+          "en": "Proposer of Attention Mechanism ",
           "zh": "注意力机制提出者"
         }
       }
     ],
     "quoteText": {
       "en": "The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.",
-      "zh": "高速网络能够训练非常深的前馈网络。"
+      "zh": "这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。"
     },
     "quotePage": {
       "en": "From PPT page 25",
@@ -821,7 +821,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Highway Networks",
+          "en": "Highway Networks diagram",
           "zh": "Highway Network 架构图"
         }
       },
@@ -831,7 +831,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Highway Networks",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -865,14 +865,14 @@ module.exports = {
       {
         "name": "何恺明",
         "role": {
-          "en": "ResNet作者",
+          "en": "ResNet author",
           "zh": "ResNet作者"
         }
       },
       {
         "name": "孙剑",
         "role": {
-          "en": "ResNet共同作者",
+          "en": "ResNet co-author",
           "zh": "ResNet共同作者"
         }
       }
@@ -903,7 +903,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "ResNet",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -913,7 +913,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "ResNet",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -923,7 +923,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "ResNet",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -933,7 +933,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "ResNet",
+          "en": "ResNet diagram",
           "zh": "ResNet 架构图"
         }
       },
@@ -943,7 +943,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "ResNet",
+          "en": "ResNet diagram",
           "zh": "ResNet 架构图"
         }
       },
@@ -953,7 +953,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "ResNet",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -987,14 +987,14 @@ module.exports = {
       {
         "name": "黄高",
         "role": {
-          "en": "DenseNet作者",
+          "en": "DenseNet author",
           "zh": "DenseNet作者"
         }
       }
     ],
     "quoteText": {
       "en": "DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.",
-      "zh": "密集卷积网络以前馈方式将每一层连接到其他每一层。"
+      "zh": "DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。"
     },
     "quotePage": {
       "en": "From PPT page 27",
@@ -1015,7 +1015,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DenseNet",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1025,7 +1025,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DenseNet",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1035,7 +1035,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "DenseNet",
+          "en": "DenseNet diagram",
           "zh": "DenseNet 架构图"
         }
       }
@@ -1069,14 +1069,14 @@ module.exports = {
       {
         "name": "Ian Goodfellow",
         "role": {
-          "en": "GAN发明者",
+          "en": "GAN inventor",
           "zh": "GAN发明者"
         }
       },
       {
         "name": "Yoshua Bengio",
         "role": {
-          "en": "注意力机制提出者",
+          "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
         }
       }
@@ -1136,14 +1136,14 @@ module.exports = {
       {
         "name": "Ian Goodfellow",
         "role": {
-          "en": "GAN发明者",
+          "en": "GAN inventor",
           "zh": "GAN发明者"
         }
       },
       {
         "name": "Yoshua Bengio",
         "role": {
-          "en": "注意力机制提出者",
+          "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
         }
       }
@@ -1170,7 +1170,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Autoregressive Models and Attention",
+          "en": "Autoregressive Models and Attention diagram",
           "zh": "自回归模型和注意力机制 架构图"
         }
       },
@@ -1180,7 +1180,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Autoregressive Models and Attention",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1207,14 +1207,14 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+      "en": "In 2017, Vaswani and collaborators proposed the Transformer in 《Attention Is All You Need》. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
       "zh": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
     },
     "figures": [
       {
         "name": "Ashish Vaswani",
         "role": {
-          "en": "Transformer作者",
+          "en": "Transformer author",
           "zh": "Transformer作者"
         }
       }
@@ -1242,7 +1242,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Transformer",
+          "en": "Transformer diagram",
           "zh": "Transformer 架构图"
         }
       },
@@ -1252,7 +1252,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Transformer",
+          "en": "Transformer diagram",
           "zh": "Transformer 架构图"
         }
       },
@@ -1262,7 +1262,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "Transformer",
+          "en": "《Attention Is All You Need》",
           "zh": "《Attention Is All You Need》"
         }
       }
@@ -1296,14 +1296,14 @@ module.exports = {
       {
         "name": "Jacob Devlin",
         "role": {
-          "en": "BERT作者",
+          "en": "BERT author",
           "zh": "BERT作者"
         }
       },
       {
         "name": "Alec Radford",
         "role": {
-          "en": "GPT作者",
+          "en": "GPT author",
           "zh": "GPT作者"
         }
       }
@@ -1331,7 +1331,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "BERT",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1341,7 +1341,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "BERT",
+          "en": "BERT diagram",
           "zh": "BERT 架构图"
         }
       },
@@ -1351,7 +1351,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "BERT",
+          "en": "BERT diagram",
           "zh": "BERT 架构图"
         }
       }
@@ -1385,14 +1385,14 @@ module.exports = {
       {
         "name": "Jacob Devlin",
         "role": {
-          "en": "BERT作者",
+          "en": "BERT author",
           "zh": "BERT作者"
         }
       },
       {
         "name": "Alec Radford",
         "role": {
-          "en": "GPT作者",
+          "en": "GPT author",
           "zh": "GPT作者"
         }
       }
@@ -1422,7 +1422,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "GPT",
+          "en": "GPT diagram",
           "zh": "GPT 架构图"
         }
       },
@@ -1432,7 +1432,7 @@ module.exports = {
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "GPT",
+          "en": "GPT diagram",
           "zh": "GPT 架构图"
         }
       },
@@ -1452,7 +1452,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "GPT",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1462,7 +1462,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "GPT",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1496,28 +1496,28 @@ module.exports = {
       {
         "name": "Stuart Russell",
         "role": {
-          "en": "智能体理论奠基人",
+          "en": "Founder of Agent Theory",
           "zh": "智能体理论奠基人"
         }
       },
       {
         "name": "Peter Norvig",
         "role": {
-          "en": "AIMA作者",
+          "en": "AIMA author",
           "zh": "AIMA作者"
         }
       },
       {
         "name": "Michael Wooldridge",
         "role": {
-          "en": "多智能体系统专家",
+          "en": "Expert in Multi-Agent Systems",
           "zh": "多智能体系统专家"
         }
       }
     ],
     "quoteText": {
       "en": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
-      "zh": "智能体将语言模型与规划、记忆和工具使用结合起来，形成能够自主行动的系统。"
+      "zh": "我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作"
     },
     "quotePage": {
       "en": "From PPT page 45-46",
@@ -1606,14 +1606,14 @@ module.exports = {
       {
         "name": "研究机构",
         "role": {
-          "en": "前沿模型研发机构",
+          "en": "Leading-edge model R&D organization",
           "zh": "前沿模型研发机构"
         }
       }
     ],
     "quoteText": {
       "en": "We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.",
-      "zh": "大语言模型进入百花齐放的竞争阶段，能力评测和真实使用共同推动快速迭代。"
+      "zh": "我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。"
     },
     "quotePage": {
       "en": "From PPT page 39",
@@ -1706,14 +1706,14 @@ module.exports = {
       {
         "name": "John Jumper",
         "role": {
-          "en": "AlphaFold 2首席科学家",
+          "en": "AlphaFold Co-Chief Scientists",
           "zh": "AlphaFold 2首席科学家"
         }
       }
     ],
     "quoteText": {
       "en": "Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.",
-      "zh": "AlphaFold 展示了人工智能能够在蛋白质结构预测这一重大科学挑战上取得突破。"
+      "zh": "在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。"
     },
     "quotePage": {
       "en": "From PPT page 50",
@@ -1778,7 +1778,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "AlphaFold: Protein Structure Prediction",
+          "en": "《Highly accurate protein structure prediction with AlphaFold》",
           "zh": "《Highly accurate protein structure prediction with AlphaFold》"
         }
       },
@@ -1788,7 +1788,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AlphaFold: Protein Structure Prediction",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1798,7 +1798,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AlphaFold: Protein Structure Prediction",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1832,14 +1832,14 @@ module.exports = {
       {
         "name": "Max Tegmark",
         "role": {
-          "en": "AI Feynman作者",
+          "en": "AI Feynman author",
           "zh": "AI Feynman作者"
         }
       }
     ],
     "quoteText": {
       "en": "We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.",
-      "zh": "AI Feynman 是一种受物理学启发的符号回归方法。"
+      "zh": "我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。"
     },
     "quotePage": {
       "en": "From PPT page 53",
@@ -1861,7 +1861,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1881,7 +1881,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "en": "《AI Feynman: a physics-inspired method for symbolic regression》",
           "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
         }
       },
@@ -1891,7 +1891,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+          "en": "《AI Feynman: a physics-inspired method for symbolic regression》",
           "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
         }
       }
@@ -1931,21 +1931,21 @@ module.exports = {
       {
         "name": "Sakana AI团队",
         "role": {
-          "en": "AI Scientist开发者",
+          "en": "AI Scientist Developer",
           "zh": "AI Scientist开发者"
         }
       },
       {
         "name": "伯克利团队",
         "role": {
-          "en": "A-Lab开发者",
+          "en": "A-Lab Developer",
           "zh": "A-Lab开发者"
         }
       }
     ],
     "quoteText": {
       "en": "This paper presents the first comprehensive framework for fully automatic scientific discovery.",
-      "zh": "AI 科学家系统开始展示自动提出问题、设计实验并撰写研究结果的能力。"
+      "zh": "本文提出了首个用于全自动科学发现的综合性框架。"
     },
     "quotePage": {
       "en": "From PPT page 55",
@@ -1988,7 +1988,7 @@ module.exports = {
           "zh": "论文页面"
         },
         "subcaption": {
-          "en": "AI Scientists and Autonomous Laboratories",
+          "en": "《The AI Scientist》",
           "zh": "《The AI Scientist》"
         }
       },
@@ -1998,7 +1998,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Scientists and Autonomous Laboratories",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -2008,7 +2008,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Scientists and Autonomous Laboratories",
+          "en": "Revelant researcher photo",
           "zh": "相关研究者照片"
         }
       }
