@@ -1,0 +1,21 @@
+{
+    "name": "ai-history-show",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Interactive AI history exhibition screen application.",
+    "scripts": {
+        "lint": "eslint .",
+        "format": "prettier --write \"shared/**/*.js\" \"scripts/**/*.js\" \".github/**/*.yml\" \"*.json\" \"eslint.config.js\"",
+        "format:check": "prettier --check \"shared/**/*.js\" \"scripts/**/*.js\" \".github/**/*.yml\" \"*.json\" \"eslint.config.js\"",
+        "test": "node scripts/test-layout-router.js && node scripts/test-swipe-navigation.js",
+        "quality": "npm run lint && npm run format:check && npm test"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.0.0",
+        "eslint": "^9.0.0",
+        "prettier": "^3.0.0"
+    },
+    "engines": {
+        "node": ">=22"
+    }
+}
