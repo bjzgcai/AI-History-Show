@@ -1368,25 +1368,43 @@ function getQuoteCandidateWorkTitle(key) {
   }
 }
 
+function imageMetaSuggestion(captionZh, subcaptionZh, captionEn, subcaptionEn) {
+  return {
+    caption: { zh: captionZh, en: captionEn || captionZh },
+    subcaption: { zh: subcaptionZh, en: subcaptionEn || subcaptionZh },
+  };
+}
+
 function suggestImageMeta(key, path) {
   const ev = events[key] || {};
   const title = mlText(ev.title) || String(key || '').trim();
+  const titleEn = mlText(ev.title, 'en') || title;
   const quoteWork = String(((ev.quoteMeta || {}).workTitle) || '').trim() || getQuoteCandidateWorkTitle(key);
 
   const value = String(path || '');
   if (/\/people\//i.test(value) || /portrait|headshot|avatar|人物|人像/i.test(value)) {
-    return { caption: '人物肖像', subcaption: '相关研究者照片' };
+    return imageMetaSuggestion('人物肖像', '相关研究者照片', 'Portrait', 'Researcher photo');
   }
   if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
-    return { caption: '结构示意', subcaption: title ? `${title} 架构图` : '模型架构图' };
+    return imageMetaSuggestion(
+      '结构示意',
+      title ? `${title} 架构图` : '模型架构图',
+      'Architecture',
+      titleEn ? `${titleEn} architecture diagram` : 'Model architecture',
+    );
   }
   if (/\/papers\//i.test(value) || /_papers_/i.test(value) || /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(value)) {
-    return { caption: '论文页面', subcaption: quoteWork ? `《${quoteWork}》` : (title || '原文截图或摘要') };
+    return imageMetaSuggestion(
+      '论文页面',
+      quoteWork ? `《${quoteWork}》` : (title || '原文截图或摘要'),
+      'Paper page',
+      quoteWork || titleEn || 'Original screenshot or abstract',
+    );
   }
   if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
-    return { caption: '历史照片', subcaption: title || '事件相关档案' };
+    return imageMetaSuggestion('历史照片', title || '事件相关档案', 'Historical photo', titleEn || 'Event archive');
   }
-  return { caption: '档案图片', subcaption: title || '事件相关资料' };
+  return imageMetaSuggestion('档案图片', title || '事件相关资料', 'Archive image', titleEn || 'Event material');
 }
 
 function autoFillImageMeta(key) {
@@ -1397,8 +1415,8 @@ function autoFillImageMeta(key) {
   for (const p of list) {
     if (!p) continue;
     const existing = ev.imageMeta[p] || {};
-    const hasCaption = String(existing.caption || '').trim();
-    const hasSubcaption = String(existing.subcaption || '').trim();
+    const hasCaption = hasMlText(existing.caption);
+    const hasSubcaption = hasMlText(existing.subcaption);
     if (hasCaption && hasSubcaption) continue;
     const suggestion = suggestImageMeta(key, p);
     ev.imageMeta[p] = {
@@ -1501,9 +1519,20 @@ function setImageMeta(key, path, field, val) {
   if (!events[key].imageMeta[path]) events[key].imageMeta[path] = {};
   events[key].imageMeta[path][field] = val;
 
-  const caption = String((events[key].imageMeta[path] || {}).caption || '').trim();
-  const subcaption = String((events[key].imageMeta[path] || {}).subcaption || '').trim();
-  if (!caption && !subcaption) {
+  const entry = events[key].imageMeta[path] || {};
+  if (!hasMlText(entry.caption) && !hasMlText(entry.subcaption)) {
+    delete events[key].imageMeta[path];
+  }
+}
+function setImageMetaMl(key, path, field, locale, val) {
+  if (!events[key]) return;
+  if (!events[key].imageMeta) events[key].imageMeta = {};
+  if (!events[key].imageMeta[path]) events[key].imageMeta[path] = {};
+  events[key].imageMeta[path][field] = ensureMlObject(events[key].imageMeta[path][field]);
+  events[key].imageMeta[path][field][locale] = val;
+
+  const entry = events[key].imageMeta[path] || {};
+  if (!hasMlText(entry.caption) && !hasMlText(entry.subcaption)) {
     delete events[key].imageMeta[path];
   }
 }
@@ -1526,10 +1555,14 @@ function renderManualImages(key) {
           <button class="btn btn-danger btn-icon"    onclick="removeManualImage('${key}','${p}')">×</button>
         </div>
         <div class="img-meta-fields">
-          <input value="${esc(meta.caption || '')}" placeholder="标题（可选）"
-            oninput="setImageMeta('${key}','${p}','caption',this.value)">
-          <input value="${esc(meta.subcaption || '')}" placeholder="描述（可选）"
-            oninput="setImageMeta('${key}','${p}','subcaption',this.value)">
+          <input value="${esc(mlText(meta.caption, 'zh'))}" placeholder="中文标题（可选）"
+            oninput="setImageMetaMl('${key}','${p}','caption','zh',this.value)">
+          <input value="${esc(mlText(meta.caption, 'en'))}" placeholder="English caption (optional)"
+            oninput="setImageMetaMl('${key}','${p}','caption','en',this.value)">
+          <input value="${esc(mlText(meta.subcaption, 'zh'))}" placeholder="中文描述（可选）"
+            oninput="setImageMetaMl('${key}','${p}','subcaption','zh',this.value)">
+          <input value="${esc(mlText(meta.subcaption, 'en'))}" placeholder="English description (optional)"
+            oninput="setImageMetaMl('${key}','${p}','subcaption','en',this.value)">
         </div>
       </div>
     `;
@@ -2084,6 +2117,10 @@ function isMl(value) {
 function mlText(value, locale = 'zh') {
   if (!isMl(value)) return String(value || '');
   return String(value[locale] || value.zh || value.en || '');
+}
+function hasMlText(value) {
+  if (isMl(value)) return SUPPORTED_LOCALES.some(locale => mlText(value, locale).trim());
+  return String(value || '').trim() !== '';
 }
 function ensureMlObject(value) {
   if (isMl(value)) return value;
