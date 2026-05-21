@@ -165,7 +165,7 @@ for (const cat of categories) {
       quoteAttribution: curatedQuote.attribution,
       quoteMeta:   curatedQuote.meta,
       quotePage:   ev.quotePage || '',
-      commentarySections: buildCommentarySectionsOverride(key, ev),
+      commentarySections: buildCommentarySectionsOverride(key),
       resources: {
         images: ev.images || [],
         imageMeta: ev.imageMeta || {},
@@ -218,7 +218,7 @@ function getExplicitLocalizedText(value, locale) {
   return String(value[locale] || '').trim();
 }
 
-function buildCommentarySectionsOverride(key, ev) {
+function buildCommentarySectionsOverride(key) {
   const entry = researchCandidates.events && researchCandidates.events[key];
   if (!entry) {
     return [];

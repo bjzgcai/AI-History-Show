@@ -168,30 +168,54 @@ function decodeHtmlEntities(text) {
     .replace(/&amp;/g, '&');
 }
 
-function extractAppliedQuoteState(milestone) {
-  const safeMilestone = milestone || {};
-  const rawQuote = localizedText(safeMilestone.quote, 'en');
-  const explicitQuotePage = isLocalizedText(safeMilestone.quotePage)
-    ? cloneTextValue(safeMilestone.quotePage)
-    : String(safeMilestone.quotePage || '').trim();
-  const explicitQuotePageText = localizedText(explicitQuotePage, 'en');
+function extractAppliedQuoteLocale(rawQuote, explicitQuotePage) {
+  const quoteHtml = String(rawQuote || '').trim();
+  const quotePage = String(explicitQuotePage || '').trim();
   const sourcePattern = /(?:<br\s*\/?>\s*){1,2}<span[^>]*>\s*—\s*([^<]+?)\s*<\/span>\s*$/i;
-  const matchedSource = rawQuote.match(sourcePattern);
+  const matchedSource = quoteHtml.match(sourcePattern);
 
   if (matchedSource) {
     return {
-      quote: rawQuote.replace(sourcePattern, '').trim(),
-      quotePage: explicitQuotePageText ? explicitQuotePage : matchedSource[1].trim(),
+      quote: quoteHtml.replace(sourcePattern, '').trim(),
+      quotePage: quotePage || matchedSource[1].trim(),
     };
   }
 
   return {
-    quote: rawQuote,
-    quotePage: explicitQuotePage,
+    quote: quoteHtml,
+    quotePage,
   };
 }
 
+function extractAppliedQuoteState(milestone) {
+  const safeMilestone = milestone || {};
+  if (isLocalizedText(safeMilestone.quote) || isLocalizedText(safeMilestone.quotePage)) {
+    const quote = {};
+    const quotePage = {};
+
+    for (const locale of SUPPORTED_LOCALES) {
+      const extracted = extractAppliedQuoteLocale(
+        localizedText(safeMilestone.quote, locale),
+        localizedText(safeMilestone.quotePage, locale),
+      );
+      quote[locale] = extracted.quote;
+      quotePage[locale] = extracted.quotePage;
+    }
+
+    return {
+      quote,
+      quotePage,
+    };
+  }
+
+  return extractAppliedQuoteLocale(safeMilestone.quote, safeMilestone.quotePage);
+}
+
 function quoteHtmlToText(html) {
+  if (isLocalizedText(html)) {
+    return Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, quoteHtmlToText(localizedText(html, locale))]));
+  }
+
   let value = String(html || '').trim();
   if (!value) return '';
   if (value.startsWith('"')) value = value.slice(1).trimStart();
@@ -347,9 +371,9 @@ function readConfiguredImageMetaEntry(map, url) {
   const entry = map[url];
   if (!entry || typeof entry !== 'object') return null;
 
-  const caption = localizedText(entry.caption || entry.title || entry.name || '');
-  const subcaption = localizedText(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
-  if (!caption && !subcaption) return null;
+  const caption = cloneTextValue(entry.caption || entry.title || entry.name || '');
+  const subcaption = cloneTextValue(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
+  if (!localizedText(caption) && !localizedText(subcaption)) return null;
   return { caption, subcaption };
 }
 
@@ -359,7 +383,7 @@ function deriveDisplayedImageMeta(milestone, url, configured) {
 
   const title = localizedText((milestone || {}).title);
   const year = milestone && milestone.year ? String(milestone.year) : '';
-  const category = String((milestone || {}).category || '').trim();
+  const category = localizedText((milestone || {}).category);
   const workTitle = extractWorkTitleFromAttribution((milestone || {}).quoteAttribution || '');
 
   let fallback;
@@ -376,8 +400,8 @@ function deriveDisplayedImageMeta(milestone, url, configured) {
   }
 
   return {
-    caption: (configured && configured.caption) || fallback.caption,
-    subcaption: (configured && configured.subcaption) || fallback.subcaption,
+    caption: configured && localizedText(configured.caption) ? configured.caption : fallback.caption,
+    subcaption: configured && localizedText(configured.subcaption) ? configured.subcaption : fallback.subcaption,
   };
 }
 
