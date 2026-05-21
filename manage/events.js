@@ -175,7 +175,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -185,7 +185,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -277,7 +277,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -385,7 +385,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -395,7 +395,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -405,7 +405,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -477,7 +477,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -487,7 +487,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -575,7 +575,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -664,7 +664,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -733,7 +733,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcger photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -831,7 +831,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -903,7 +903,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -913,7 +913,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -923,7 +923,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -953,7 +953,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1015,7 +1015,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1025,7 +1025,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1180,7 +1180,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1331,7 +1331,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1452,7 +1452,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1462,7 +1462,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1788,7 +1788,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1798,7 +1798,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
@@ -1861,7 +1861,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -1998,7 +1998,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       },
@@ -2008,7 +2008,7 @@ module.exports = {
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Revelant researcher photo",
+          "en": "Relevant researcher photo",
           "zh": "相关研究者照片"
         }
       }
