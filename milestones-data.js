@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-20 17:53
+// 生成时间: 2026-05-21 16:45
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -281,7 +281,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -291,7 +291,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -301,7 +301,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》",
+            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
             "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
           }
         },
@@ -370,14 +370,14 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 1969, Marvin Minsky and Seymour Papert published 《Perceptrons》, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
       "zh": "1969 年, Minsky 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
     },
     "figures": [
       {
         "name": "Marvin Minsky",
         "role": {
-          "en": "Author of 《Perceptrons》",
+          "en": "Author of Perceptrons",
           "zh": "《感知器》作者"
         },
         "avatar": "resources/images/figures/marvin-minsky.jpg",
@@ -438,7 +438,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -448,7 +448,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《Perceptrons: An Introduction to Computational Geometry》",
+            "en": "Perceptrons: An Introduction to Computational Geometry",
             "zh": "《感知机：计算几何学导论》"
           }
         },
@@ -458,7 +458,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《Perceptrons: An Introduction to Computational Geometry》",
+            "en": "Perceptrons: An Introduction to Computational Geometry",
             "zh": "《感知机：计算几何学导论》"
           }
         }
@@ -607,7 +607,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -617,7 +617,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -627,7 +627,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -637,7 +637,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《Learning representations by back-propagating errors》",
+            "en": "Learning representations by back-propagating errors",
             "zh": "《通过反向传播误差来学习表征》"
           }
         }
@@ -773,7 +773,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -890,7 +890,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -900,7 +900,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1057,7 +1057,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1184,7 +1184,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcger photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1340,7 +1340,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1601,7 +1601,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1655,22 +1655,22 @@ const milestones = [
     },
     "figures": [
       {
-        "name": "何恺明",
+        "name": "何恺明 (Kaiming He)",
         "role": {
           "en": "ResNet author",
           "zh": "ResNet作者"
         },
-        "avatar": "resources/images/figures/kaiming-he.jpg",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
-        "name": "孙剑",
+        "name": "孙剑 (Jian Sun)",
         "role": {
           "en": "ResNet co-author",
           "zh": "ResNet共同作者"
         },
-        "avatar": "resources/images/figures/sun-jian.png",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1731,7 +1731,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1741,7 +1741,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1751,7 +1751,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1781,7 +1781,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -1835,12 +1835,12 @@ const milestones = [
     },
     "figures": [
       {
-        "name": "黄高",
+        "name": "黄高 (Gao Huang)",
         "role": {
           "en": "DenseNet author",
           "zh": "DenseNet作者"
         },
-        "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1898,7 +1898,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1908,7 +1908,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -1967,7 +1967,7 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 2017, Vaswani and collaborators proposed the Transformer in 《Attention Is All You Need》. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+      "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
       "zh": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
     },
     "figures": [
@@ -2055,7 +2055,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《Attention Is All You Need》",
+            "en": "Attention Is All You Need",
             "zh": "《Attention Is All You Need》"
           }
         }
@@ -2182,7 +2182,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2361,7 +2361,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2371,7 +2371,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -2489,7 +2489,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2509,7 +2509,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《AI Feynman: a physics-inspired method for symbolic regression》",
+            "en": "AI Feynman: a physics-inspired method for symbolic regression",
             "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
           }
         },
@@ -2519,7 +2519,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《AI Feynman: a physics-inspired method for symbolic regression》",
+            "en": "AI Feynman: a physics-inspired method for symbolic regression",
             "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
           }
         }
@@ -2690,7 +2690,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《Highly accurate protein structure prediction with AlphaFold》",
+            "en": "Highly accurate protein structure prediction with AlphaFold",
             "zh": "《Highly accurate protein structure prediction with AlphaFold》"
           }
         },
@@ -2700,7 +2700,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -2710,7 +2710,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
@@ -3022,7 +3022,7 @@ const milestones = [
             "zh": "论文页面"
           },
           "subcaption": {
-            "en": "《The AI Scientist》",
+            "en": "The AI Scientist",
             "zh": "《The AI Scientist》"
           }
         },
@@ -3032,7 +3032,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         },
@@ -3042,7 +3042,7 @@ const milestones = [
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Revelant researcher photo",
+            "en": "Relevant researcher photo",
             "zh": "相关研究者照片"
           }
         }
