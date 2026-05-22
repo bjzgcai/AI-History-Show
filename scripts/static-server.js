@@ -30,9 +30,22 @@ function getArg(name, fallback) {
 const host = getArg('host', '0.0.0.0');
 const port = Number(getArg('port', process.env.PORT || '8000'));
 
+if (!Number.isInteger(port) || port <= 0 || port > 65535) {
+  console.error(`Invalid port: ${port}`);
+  process.exit(1);
+}
+
 function resolveRequestPath(url) {
-  const parsed = new URL(url, `http://${host}:${port}`);
-  const pathname = decodeURIComponent(parsed.pathname);
+  let parsed;
+  let pathname;
+
+  try {
+    parsed = new URL(url, `http://${host}:${port}`);
+    pathname = decodeURIComponent(parsed.pathname);
+  } catch (_) {
+    return null;
+  }
+
   const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
   const filePath = path.resolve(ROOT, relativePath);
 

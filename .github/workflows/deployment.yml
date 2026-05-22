@@ -29,3 +29,6 @@ jobs:
 
       - name: Build container image
         run: docker build -t ai-history-show:ci .
+
+      - name: Validate Compose configuration
+        run: docker compose config --quiet
