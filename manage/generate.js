@@ -378,7 +378,9 @@ function buildOutputContent(now) {
 }
 
 function stripGeneratedTime(content) {
-  return String(content || '').replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <stable>');
+  return String(content || '')
+    .replace(/\r\n?/g, '\n')
+    .replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <stable>');
 }
 
 function writeOutputIfChanged(file, content) {
