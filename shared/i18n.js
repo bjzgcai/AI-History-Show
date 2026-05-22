@@ -192,7 +192,10 @@
         if (!button) return;
         const locale = getLocale();
         button.textContent = locale === 'zh' ? 'EN' : '中';
-        button.setAttribute('aria-label', locale === 'zh' ? t('switchLanguageToEnglish') : t('switchLanguageToChinese'));
+        button.setAttribute(
+            'aria-label',
+            locale === 'zh' ? t('switchLanguageToEnglish') : t('switchLanguageToChinese')
+        );
     }
 
     global.i18n = i18n;
