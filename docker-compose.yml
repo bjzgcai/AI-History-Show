@@ -1,0 +1,19 @@
+services:
+    preview:
+        build: .
+        command: npm run start:preview
+        environment:
+            HOST: 0.0.0.0
+            PORT: 8000
+        ports:
+            - '8000:8000'
+
+    admin:
+        build: .
+        command: npm run start:admin
+        environment:
+            PORT: 3001
+        ports:
+            - '3001:3001'
+        volumes:
+            - .:/app

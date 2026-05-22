@@ -4,6 +4,102 @@
 - **展示页**（`index.html`）：纯静态 HTML5，任何静态文件服务器均可运行
 - **内容管理服务**（`manage/server.js`）：Node.js 服务，用于在线编辑内容，**仅需在有编辑需求时运行**
 
+推荐优先使用仓库内的命令启动和验证，避免部署说明与实际运行方式脱节。
+
+## 零、可复现启动命令
+
+### 本地预览展示页
+
+```bash
+cd /path/to/AI-History-Show
+npm ci
+npm run start:preview
+```
+
+访问：
+
+```text
+http://localhost:8000/
+http://localhost:8000/dual-screen.html
+```
+
+如需换端口：
+
+```bash
+PORT=8080 npm run start:preview
+```
+
+Windows PowerShell：
+
+```powershell
+$env:PORT=8080
+npm run start:preview
+```
+
+### 本地运行内容管理服务
+
+```bash
+cd /path/to/AI-History-Show
+npm ci
+npm run start:admin
+```
+
+访问：
+
+```text
+http://localhost:3001/admin
+```
+
+### 展厅演示启动
+
+```bash
+cd /path/to/AI-History-Show
+npm ci
+npm run start:demo
+```
+
+然后使用 Edge / Chrome 打开双屏入口：
+
+```text
+http://localhost:8000/dual-screen.html
+```
+
+### 启动路径验证
+
+CI 和本地都可以运行同一条命令，验证展示页和管理页能正常启动并响应：
+
+```bash
+npm run validate:startup
+```
+
+### Docker 启动
+
+构建并运行展示页容器：
+
+```bash
+docker build -t ai-history-show .
+docker run --rm -p 8000:8000 ai-history-show
+```
+
+访问：
+
+```text
+http://localhost:8000/
+```
+
+如需同时启动展示页和管理服务：
+
+```bash
+docker compose up --build
+```
+
+访问：
+
+```text
+http://localhost:8000/
+http://localhost:3001/admin
+```
+
 ---
 
 ## 一、展示页部署
@@ -188,7 +284,8 @@ http://localhost:8000/dual-screen.html
 
 ```bash
 cd /path/to/AI-History-Show
-python3 -m http.server 8000
+npm ci
+npm run start:preview
 ```
 
 **第二步：优先验证双屏页面**
@@ -262,7 +359,7 @@ http://localhost:8000/dual-screen.html
 本地启动静态服务：
 
 ```bash
-python3 -m http.server 8000
+npm run start:preview
 ```
 
 Edge `app` 模式：
@@ -285,10 +382,11 @@ Edge `kiosk` 模式：
 
 > **安全原则：不要将 3001 端口直接暴露到公网**，推荐通过 SSH 隧道访问。
 
-### 第一步：确认 Node.js 已安装（v14+）
+### 第一步：确认 Node.js 已安装（v22+）
 
 ```bash
 node -v
+npm ci
 ```
 
 如未安装：
@@ -313,7 +411,7 @@ npm install -g pm2
 cd /var/www/ai-history
 
 # 启动管理服务
-pm2 start manage/server.js --name ai-admin
+pm2 start npm --name ai-admin -- run start:admin
 
 # 设置开机自启
 pm2 startup   # 按输出提示执行一条 sudo 命令
@@ -380,6 +478,14 @@ sudo nginx -t && sudo systemctl reload nginx
 ---
 
 ## 四、验证部署
+
+**命令验证：**
+
+```bash
+npm run quality
+npm run validate:startup
+docker build -t ai-history-show .
+```
 
 **展示页：**
 

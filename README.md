@@ -10,8 +10,11 @@
 ## 快速开始
 
 ```bash
+# 安装依赖
+npm ci
+
 # 本地预览展示页
-python3 -m http.server 8000
+npm run start:preview
 # 访问 http://localhost:8000
 
 # 校验单双屏自适应路由
@@ -21,12 +24,24 @@ node scripts/test-layout-router.js
 node scripts/test-swipe-navigation.js
 
 # 运行完整质量门禁（lint + format check + tests）
-npm install
 npm run quality
 
+# 验证展示页和管理服务启动路径
+npm run validate:startup
+
 # 本地运行内容管理服务
-node manage/server.js
+npm run start:admin
 # 访问 http://localhost:3001/admin
+```
+
+容器化预览：
+
+```bash
+docker build -t ai-history-show .
+docker run --rm -p 8000:8000 ai-history-show
+
+# 或同时启动展示页和管理服务
+docker compose up --build
 ```
 
 > **安全提示**：管理服务（端口 3001）无认证保护，仅供本地使用，**切勿直接暴露到公网**。生产环境请通过 SSH 隧道或 Nginx Basic Auth 访问，详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
@@ -38,11 +53,12 @@ node manage/server.js
 在提交 Pull Request 或合并改动前，请运行：
 
 ```bash
-npm install
+npm ci
 npm run quality
+npm run validate:startup
 ```
 
-质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。GitHub Actions 会在 push 和 Pull Request 时运行同一套命令。
+质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。GitHub Actions 会在 push 和 Pull Request 时运行同一套命令，并额外验证启动命令和 Docker 镜像构建。
 
 后续优先补充测试覆盖的模块：
 
@@ -88,7 +104,7 @@ git push github master
 ### 方式 A：可视化管理页面（推荐）
 
 ```bash
-node manage/server.js
+npm run start:admin
 # 访问 http://localhost:3001/admin
 ```
 

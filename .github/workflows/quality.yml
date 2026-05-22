@@ -26,3 +26,12 @@ jobs:
 
             - name: Run quality gate
               run: npm run quality
+
+            - name: Validate startup commands
+              run: npm run validate:startup
+
+            - name: Build deployment container
+              run: docker build -t ai-history-show:ci .
+
+            - name: Validate compose configuration
+              run: docker compose config
