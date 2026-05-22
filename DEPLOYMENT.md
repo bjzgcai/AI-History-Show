@@ -73,6 +73,8 @@ docker compose --profile admin up --build
 管理后台：http://localhost:3001/admin
 ```
 
+Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此在管理后台保存内容后，`manage/events.js`、`manage/catalog.js` 和生成数据会同步写回本地工作区。
+
 > **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
 
 ### CI 验证
@@ -83,6 +85,7 @@ GitHub Actions 工作流位于 `.github/workflows/deployment.yml`，会执行：
 npm ci
 npm run validate:deployment
 docker build -t ai-history-show:ci .
+docker compose config --quiet
 ```
 
 其中 `validate:deployment` 会生成 `milestones-data.js`，运行现有 JS 测试，并启动展示页与管理服务做 HTTP 冒烟测试。
