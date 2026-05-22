@@ -872,7 +872,7 @@ function buildCatCard(cat, ci) {
   const eventKeys = Object.keys(events || {});
   const addOptions = eventKeys
     .filter(k => !cat.events.includes(k))
-    .map(k => `<option value="${k}">${k} — ${mlText((events[k]||{}).title)||''}</option>`)
+    .map(k => `<option value="${esc(k)}">${esc(k)} — ${esc(mlText((events[k]||{}).title) || '')}</option>`)
     .join('');
 
   const tags = cat.events.map((key, ei) => {

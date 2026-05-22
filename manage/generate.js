@@ -257,18 +257,19 @@ function buildCommentarySectionsOverride(key) {
       const zhText = getLocalizedText(section.text, 'zh');
       const explicitEnLabel = getExplicitLocalizedText(section.label, 'en');
       const explicitEnText = getExplicitLocalizedText(section.text, 'en');
+      const enText = explicitEnText || zhText;
       return {
         label: {
           en: explicitEnLabel || (index === 0 ? 'Background' : 'Context'),
           zh: getLocalizedText(section.label, 'zh'),
         },
         html: {
-          en: explicitEnText,
+          en: enText,
           zh: zhText,
         },
       };
     })
-    .filter((section) => section.label.zh && section.html.zh && section.html.en);
+    .filter((section) => section.label.zh && section.html.zh);
 }
 
 function mapLocalizedText(value, transform) {
