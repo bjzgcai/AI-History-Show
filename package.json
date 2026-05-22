@@ -1,0 +1,21 @@
+{
+  "name": "ai-history-show",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive AI history exhibition presentation and local content management tools.",
+  "scripts": {
+    "start": "npm run start:static",
+    "start:static": "node scripts/static-server.js",
+    "start:admin": "node manage/server.js",
+    "start:demo": "node scripts/static-server.js --host 127.0.0.1 --port 8000",
+    "generate": "node manage/generate.js",
+    "test": "node scripts/test-layout-router.js && node scripts/test-swipe-navigation.js",
+    "validate:startup": "node scripts/validate-startup.js",
+    "validate:deployment": "npm run generate && npm test && npm run validate:startup"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

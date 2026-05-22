@@ -377,6 +377,23 @@ function buildOutputContent(now) {
   ].join('\n');
 }
 
+function stripGeneratedTime(content) {
+  return String(content || '').replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <stable>');
+}
+
+function writeOutputIfChanged(file, content) {
+  if (fs.existsSync(file)) {
+    const current = fs.readFileSync(file, 'utf8');
+    if (stripGeneratedTime(current) === stripGeneratedTime(content)) {
+      return false;
+    }
+  }
+
+  backupOutput(file);
+  fs.writeFileSync(file, content, 'utf8');
+  return true;
+}
+
 function validateAvatarAssets(items) {
   const missing = [];
   const seen = new Set();
@@ -409,9 +426,9 @@ const missingAvatarAssets = validateAvatarAssets(milestones);
 const now     = new Date().toISOString().replace('T', ' ').slice(0, 16);
 const content = buildOutputContent(now);
 
+const writeResults = new Map();
 for (const file of OUTPUTS) {
-  backupOutput(file);
-  fs.writeFileSync(file, content, 'utf8');
+  writeResults.set(file, writeOutputIfChanged(file, content));
 }
 
 for (const item of missingAvatarAssets) {
@@ -419,7 +436,7 @@ for (const item of missingAvatarAssets) {
 }
 
 for (const file of OUTPUTS) {
-  console.log(`✓ 生成完成：${file}`);
+  console.log(`✓ ${writeResults.get(file) ? '生成完成' : '内容未变化'}：${file}`);
 }
 console.log(`  共 ${categories.length} 个分类，${milestones.length} 个事件`);
 if (missingAvatarAssets.length > 0) {
