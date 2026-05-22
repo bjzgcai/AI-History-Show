@@ -10,18 +10,22 @@
 ## 快速开始
 
 ```bash
+# 安装并校验可复现启动路径
+npm ci
+npm run validate:deployment
+
 # 本地预览展示页
-python3 -m http.server 8000
+npm run start:static
 # 访问 http://localhost:8000
 
 # 校验单双屏自适应路由
-node scripts/test-layout-router.js
+npm test
 
-# 校验触摸滑动翻页规则
-node scripts/test-swipe-navigation.js
+# 展厅本机演示服务
+npm run start:demo
 
 # 本地运行内容管理服务
-node manage/server.js
+npm run start:admin
 # 访问 http://localhost:3001/admin
 ```
 

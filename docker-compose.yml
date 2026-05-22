@@ -1,0 +1,18 @@
+services:
+  presentation:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: 8000
+    command: npm run start:static
+
+  admin:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+    command: npm run start:admin
+    profiles:
+      - admin
