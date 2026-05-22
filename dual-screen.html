@@ -3226,7 +3226,7 @@
         function renderLeftArchive(photos) {
             const ordered = sortPhotosForDisplay(photos);
             if (ordered.length === 0) {
-                refs.leftArchiveStrip.innerHTML = `<div class="archive-empty">${tx('historicalArchive')}</div>`;
+                refs.leftArchiveStrip.innerHTML = `<div class="archive-empty">${escapeHtml(tx('noArchivePhotos'))}</div>`;
                 return;
             }
 

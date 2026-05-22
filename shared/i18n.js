@@ -9,6 +9,8 @@
                 appTitleDual: 'AI History Exhibition - Dual Screen',
                 aiHistory: 'AI History',
                 aiHistoryReview: 'AI History Exhibition',
+                switchLanguageToEnglish: 'Switch to English',
+                switchLanguageToChinese: 'Switch to Chinese',
                 previousPage: 'Previous',
                 nextPage: 'Next',
                 autoPlay: 'Auto Play',
@@ -35,6 +37,7 @@
                 mainArchivePhoto: 'Main archive photo',
                 previousArchive: 'Previous archive',
                 nextArchive: 'Next archive',
+                noArchivePhotos: 'No archive images available',
                 noMedia: 'No media available',
                 playVideo: 'Click to play video',
                 portrait: 'Portrait',
@@ -52,6 +55,8 @@
                 appTitleDual: 'AI 历史回顾展览 - 双屏模式',
                 aiHistory: 'AI 历史',
                 aiHistoryReview: 'AI 历史回顾',
+                switchLanguageToEnglish: '切换到英文',
+                switchLanguageToChinese: '切换到中文',
                 previousPage: '上一页',
                 nextPage: '下一页',
                 autoPlay: '自动播放',
@@ -78,6 +83,7 @@
                 mainArchivePhoto: '主档案照片',
                 previousArchive: '前一张档案',
                 nextArchive: '后一张档案',
+                noArchivePhotos: '暂无历史档案图像',
                 noMedia: '暂无媒体资料',
                 playVideo: '点击播放视频',
                 portrait: '人物肖像',
@@ -149,7 +155,6 @@
         button.id = 'languageToggle';
         button.className = 'language-toggle';
         button.type = 'button';
-        button.setAttribute('aria-label', 'Switch language');
 
         const modeChip = global.document.querySelector('.mode-chip');
         if (modeChip && modeChip.parentNode) {
@@ -185,7 +190,9 @@
         if (!global.document) return;
         const button = global.document.getElementById('languageToggle');
         if (!button) return;
-        button.textContent = getLocale() === 'zh' ? 'EN' : '中';
+        const locale = getLocale();
+        button.textContent = locale === 'zh' ? 'EN' : '中';
+        button.setAttribute('aria-label', locale === 'zh' ? t('switchLanguageToEnglish') : t('switchLanguageToChinese'));
     }
 
     global.i18n = i18n;

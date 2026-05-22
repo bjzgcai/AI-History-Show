@@ -230,6 +230,10 @@ function deepClone(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
+function localizedTextEquals(a, b) {
+  return SUPPORTED_LOCALES.every((locale) => localizedText(a, locale) === localizedText(b, locale));
+}
+
 function loadAppliedMilestones() {
   const milestonePath = path.join(ROOT, 'milestones-data.js');
   if (!fs.existsSync(milestonePath)) return [];
@@ -903,13 +907,13 @@ const routes = {
         const changes = {};
 
         // 标量字段：直接对比旧/新值
-        if (JSON.stringify(ev.title || '') !== JSON.stringify(applied.title || ''))
+        if (!localizedTextEquals(ev.title, applied.title))
           changes.title = { from: localizedText(applied.title), to: localizedText(ev.title) };
         if (String(ev.year  || '') !== String(applied.year  || ''))
           changes.year  = { from: applied.year,         to: ev.year };
 
         // 描述：记录完整前后内容
-        if (JSON.stringify(ev.description || '') !== JSON.stringify(applied.description || ''))
+        if (!localizedTextEquals(ev.description, applied.description))
           changes.description = { from: localizedText(applied.description), to: localizedText(ev.description) };
 
         // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
