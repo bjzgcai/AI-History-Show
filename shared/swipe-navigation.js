@@ -26,10 +26,12 @@
         const nav = scope.navigator || {};
         const hasTouchPoints = Number(nav.maxTouchPoints) > 0;
         const supportsMatchMedia = typeof scope.matchMedia === 'function';
-        const hasCoarsePointer = supportsMatchMedia
-            && (scope.matchMedia('(pointer: coarse)').matches || scope.matchMedia('(any-pointer: coarse)').matches);
-        const hasNoHover = supportsMatchMedia
-            && (scope.matchMedia('(hover: none)').matches || scope.matchMedia('(any-hover: none)').matches);
+        const hasCoarsePointer =
+            supportsMatchMedia &&
+            (scope.matchMedia('(pointer: coarse)').matches || scope.matchMedia('(any-pointer: coarse)').matches);
+        const hasNoHover =
+            supportsMatchMedia &&
+            (scope.matchMedia('(hover: none)').matches || scope.matchMedia('(any-hover: none)').matches);
         return hasTouchPoints || hasCoarsePointer || hasNoHover;
     }
 
@@ -73,9 +75,12 @@
         }
 
         const ignoreSelector = config.ignoreSelector || DEFAULT_IGNORE_SELECTOR;
-        const trackingTarget = config.trackingTarget && typeof config.trackingTarget.addEventListener === 'function'
-            ? config.trackingTarget
-            : (globalScope && typeof globalScope.addEventListener === 'function' ? globalScope : surface);
+        const trackingTarget =
+            config.trackingTarget && typeof config.trackingTarget.addEventListener === 'function'
+                ? config.trackingTarget
+                : globalScope && typeof globalScope.addEventListener === 'function'
+                  ? globalScope
+                  : surface;
         let activeGesture = null;
         let lastTouchInputAt = 0;
 
@@ -188,7 +193,8 @@
         }
 
         function handlePointerMove(event) {
-            if (!activeGesture || activeGesture.source !== 'pointer' || event.pointerId !== activeGesture.pointerId) return;
+            if (!activeGesture || activeGesture.source !== 'pointer' || event.pointerId !== activeGesture.pointerId)
+                return;
             if (!isSwipePointerType(event.pointerType, globalScope)) return;
             if (Date.now() - lastTouchInputAt < TOUCH_POINTER_SUPPRESSION_MS) return;
 
@@ -196,7 +202,8 @@
         }
 
         function handlePointerUp(event) {
-            if (!activeGesture || activeGesture.source !== 'pointer' || event.pointerId !== activeGesture.pointerId) return;
+            if (!activeGesture || activeGesture.source !== 'pointer' || event.pointerId !== activeGesture.pointerId)
+                return;
             if (!isSwipePointerType(event.pointerType, globalScope)) return;
             if (Date.now() - lastTouchInputAt < TOUCH_POINTER_SUPPRESSION_MS) return;
 
@@ -204,7 +211,8 @@
         }
 
         function handlePointerCancel(event) {
-            if (!activeGesture || activeGesture.source !== 'pointer' || event.pointerId !== activeGesture.pointerId) return;
+            if (!activeGesture || activeGesture.source !== 'pointer' || event.pointerId !== activeGesture.pointerId)
+                return;
             releaseActivePointer();
         }
 
@@ -231,8 +239,9 @@
             if (!activeGesture || activeGesture.source !== 'touch') return;
             noteTouchInput();
 
-            const activeTouch = findTouchByIdentifier(event.touches, activeGesture.identifier)
-                || findTouchByIdentifier(event.changedTouches, activeGesture.identifier);
+            const activeTouch =
+                findTouchByIdentifier(event.touches, activeGesture.identifier) ||
+                findTouchByIdentifier(event.changedTouches, activeGesture.identifier);
             if (!activeTouch) return;
 
             updateGesture(activeTouch.clientX, activeTouch.clientY);

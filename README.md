@@ -20,6 +20,10 @@ node scripts/test-layout-router.js
 # 校验触摸滑动翻页规则
 node scripts/test-swipe-navigation.js
 
+# 运行完整质量门禁（lint + format check + tests）
+npm install
+npm run quality
+
 # 本地运行内容管理服务
 node manage/server.js
 # 访问 http://localhost:3001/admin
@@ -28,6 +32,23 @@ node manage/server.js
 > **安全提示**：管理服务（端口 3001）无认证保护，仅供本地使用，**切勿直接暴露到公网**。生产环境请通过 SSH 隧道或 Nginx Basic Auth 访问，详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
 云服务器部署（Nginx + PM2）、静态托管、SSH 隧道访问管理后台等详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+
+## 质量门禁
+
+在提交 Pull Request 或合并改动前，请运行：
+
+```bash
+npm install
+npm run quality
+```
+
+质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。GitHub Actions 会在 push 和 Pull Request 时运行同一套命令。
+
+后续优先补充测试覆盖的模块：
+
+- `manage/generate.js`：生成后的里程碑数据结构、引言选择、视频查找、缺失资源警告。
+- `shared/milestone-view.js`：多语言渲染兜底逻辑，以及媒体元数据规范化。
+- `manage/server.js`：`/api/generate/diff`、`/api/events`，以及图片/视频元数据规范化。
 
 ## 代码同步
 
@@ -252,7 +273,7 @@ AI-History-Show/
 
 ## 技术栈
 
-- **纯前端**：HTML5 + CSS3 + JavaScript ES6+，无构建工具，无 npm 依赖
+- **纯前端**：HTML5 + CSS3 + JavaScript ES6+，无构建工具、无前端运行时 npm 依赖
 - **Three.js**（CDN 加载）：3D 地球渲染
 - **Node.js**（仅用于内容生成脚本）：运行 `manage/generate.js`
 
