@@ -29,7 +29,11 @@ const ignoredTarget = {
         return selector.includes('.video-frame') ? {} : null;
     }
 };
-assert.equal(swipe.shouldIgnoreSwipeTarget(ignoredTarget, '.video-frame, button'), true, 'video frame target should be ignored');
+assert.equal(
+    swipe.shouldIgnoreSwipeTarget(ignoredTarget, '.video-frame, button'),
+    true,
+    'video frame target should be ignored'
+);
 console.log('PASS ignored target detection');
 
 const activeTarget = {
@@ -38,7 +42,11 @@ const activeTarget = {
         return null;
     }
 };
-assert.equal(swipe.shouldIgnoreSwipeTarget(activeTarget, '.video-frame, button'), false, 'plain content target should stay active');
+assert.equal(
+    swipe.shouldIgnoreSwipeTarget(activeTarget, '.video-frame, button'),
+    false,
+    'plain content target should stay active'
+);
 console.log('PASS active target detection');
 
 assert.equal(swipe.isTouchLikePointer('touch'), true, 'touch pointer should be accepted');
@@ -46,25 +54,53 @@ assert.equal(swipe.isTouchLikePointer('pen'), true, 'pen pointer should be accep
 assert.equal(swipe.isTouchLikePointer('mouse'), false, 'mouse pointer should be ignored');
 console.log('PASS pointer type filtering');
 
-assert.equal(swipe.isTouchEmulationContext({ navigator: { maxTouchPoints: 5 } }), true, 'touch-capable context should be detected');
-assert.equal(swipe.isTouchEmulationContext({
-    navigator: { maxTouchPoints: 0 },
-    matchMedia(query) {
-        return { matches: query === '(pointer: coarse)' };
-    }
-}), true, 'coarse pointer context should be detected');
-assert.equal(swipe.isTouchEmulationContext({
-    navigator: { maxTouchPoints: 0 },
-    matchMedia(query) {
-        return { matches: query === '(hover: none)' };
-    }
-}), true, 'no-hover context should be detected');
-assert.equal(swipe.isTouchEmulationContext({ navigator: { maxTouchPoints: 0 } }), false, 'plain desktop context should be ignored');
+assert.equal(
+    swipe.isTouchEmulationContext({ navigator: { maxTouchPoints: 5 } }),
+    true,
+    'touch-capable context should be detected'
+);
+assert.equal(
+    swipe.isTouchEmulationContext({
+        navigator: { maxTouchPoints: 0 },
+        matchMedia(query) {
+            return { matches: query === '(pointer: coarse)' };
+        }
+    }),
+    true,
+    'coarse pointer context should be detected'
+);
+assert.equal(
+    swipe.isTouchEmulationContext({
+        navigator: { maxTouchPoints: 0 },
+        matchMedia(query) {
+            return { matches: query === '(hover: none)' };
+        }
+    }),
+    true,
+    'no-hover context should be detected'
+);
+assert.equal(
+    swipe.isTouchEmulationContext({ navigator: { maxTouchPoints: 0 } }),
+    false,
+    'plain desktop context should be ignored'
+);
 console.log('PASS touch emulation context detection');
 
-assert.equal(swipe.isSwipePointerType('touch', { navigator: { maxTouchPoints: 0 } }), true, 'touch pointer should enable swipe input');
-assert.equal(swipe.isSwipePointerType('mouse', { navigator: { maxTouchPoints: 5 } }), true, 'emulated mouse should enable swipe input');
-assert.equal(swipe.isSwipePointerType('mouse', { navigator: { maxTouchPoints: 0 } }), false, 'plain mouse should stay disabled');
+assert.equal(
+    swipe.isSwipePointerType('touch', { navigator: { maxTouchPoints: 0 } }),
+    true,
+    'touch pointer should enable swipe input'
+);
+assert.equal(
+    swipe.isSwipePointerType('mouse', { navigator: { maxTouchPoints: 5 } }),
+    true,
+    'emulated mouse should enable swipe input'
+);
+assert.equal(
+    swipe.isSwipePointerType('mouse', { navigator: { maxTouchPoints: 0 } }),
+    false,
+    'plain mouse should stay disabled'
+);
 console.log('PASS swipe pointer eligibility');
 
 function createTarget() {
@@ -131,16 +167,22 @@ function createMouseEvent(target, overrides = {}) {
     });
     surface.dispatch('mousedown', startEvent);
 
-    trackingTarget.dispatch('mousemove', createMouseEvent(activeTarget, {
-        clientX: 70,
-        clientY: 118,
-        sourceCapabilities: { firesTouchEvents: true }
-    }));
-    trackingTarget.dispatch('mouseup', createMouseEvent(activeTarget, {
-        clientX: 70,
-        clientY: 118,
-        sourceCapabilities: { firesTouchEvents: true }
-    }));
+    trackingTarget.dispatch(
+        'mousemove',
+        createMouseEvent(activeTarget, {
+            clientX: 70,
+            clientY: 118,
+            sourceCapabilities: { firesTouchEvents: true }
+        })
+    );
+    trackingTarget.dispatch(
+        'mouseup',
+        createMouseEvent(activeTarget, {
+            clientX: 70,
+            clientY: 118,
+            sourceCapabilities: { firesTouchEvents: true }
+        })
+    );
 
     assert.deepEqual(directions, ['next'], 'emulated touch mouse drag should navigate');
     assert.equal(startEvent.defaultPrevented, true, 'emulated mouse down should suppress native drag behavior');
@@ -160,18 +202,27 @@ function createMouseEvent(target, overrides = {}) {
         }
     });
 
-    surface.dispatch('mousedown', createMouseEvent(activeTarget, {
-        clientX: 220,
-        clientY: 100
-    }));
-    trackingTarget.dispatch('mousemove', createMouseEvent(activeTarget, {
-        clientX: 70,
-        clientY: 118
-    }));
-    trackingTarget.dispatch('mouseup', createMouseEvent(activeTarget, {
-        clientX: 70,
-        clientY: 118
-    }));
+    surface.dispatch(
+        'mousedown',
+        createMouseEvent(activeTarget, {
+            clientX: 220,
+            clientY: 100
+        })
+    );
+    trackingTarget.dispatch(
+        'mousemove',
+        createMouseEvent(activeTarget, {
+            clientX: 70,
+            clientY: 118
+        })
+    );
+    trackingTarget.dispatch(
+        'mouseup',
+        createMouseEvent(activeTarget, {
+            clientX: 70,
+            clientY: 118
+        })
+    );
 
     assert.deepEqual(directions, [], 'plain desktop mouse drag should stay disabled');
     controller.destroy();

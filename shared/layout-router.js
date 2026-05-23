@@ -19,9 +19,7 @@
     }
 
     function getCurrentModeFromRoot(root) {
-        return root && root.dataset && root.dataset.layoutMode === DUAL_MODE
-            ? DUAL_MODE
-            : SINGLE_MODE;
+        return root && root.dataset && root.dataset.layoutMode === DUAL_MODE ? DUAL_MODE : SINGLE_MODE;
     }
 
     function isHandheldViewport(options) {
@@ -46,14 +44,10 @@
         if (isHandheldViewport(config)) return SINGLE_MODE;
 
         if (currentMode === DUAL_MODE) {
-            return width >= KEEP_DUAL_MIN_WIDTH && ratio >= KEEP_DUAL_MIN_RATIO
-                ? DUAL_MODE
-                : SINGLE_MODE;
+            return width >= KEEP_DUAL_MIN_WIDTH && ratio >= KEEP_DUAL_MIN_RATIO ? DUAL_MODE : SINGLE_MODE;
         }
 
-        return width >= SWITCH_TO_DUAL_MIN_WIDTH && ratio >= SWITCH_TO_DUAL_MIN_RATIO
-            ? DUAL_MODE
-            : SINGLE_MODE;
+        return width >= SWITCH_TO_DUAL_MIN_WIDTH && ratio >= SWITCH_TO_DUAL_MIN_RATIO ? DUAL_MODE : SINGLE_MODE;
     }
 
     function buildTargetUrl(currentHref, targetMode) {
@@ -72,9 +66,7 @@
         if (!value) return '';
 
         try {
-            const parsedUrl = value.includes('://')
-                ? new URL(value)
-                : new URL(value, 'http://localhost');
+            const parsedUrl = value.includes('://') ? new URL(value) : new URL(value, 'http://localhost');
             const pathname = parsedUrl.pathname || '';
             const segments = pathname.split('/').filter(Boolean);
             return segments.length ? segments[segments.length - 1] : '';
@@ -95,10 +87,13 @@
         const searchParams = new URLSearchParams(browserWindow.location.search);
         const overrideMode = searchParams.get(LAYOUT_PARAM);
 
-        if (!overrideMode && isStableDualEntry({
-            currentMode,
-            pathname: browserWindow.location.pathname || browserWindow.location.href
-        })) {
+        if (
+            !overrideMode &&
+            isStableDualEntry({
+                currentMode,
+                pathname: browserWindow.location.pathname || browserWindow.location.href
+            })
+        ) {
             return currentMode;
         }
 
@@ -107,9 +102,10 @@
             overrideMode,
             width: browserWindow.innerWidth || (root && root.clientWidth) || 0,
             height: browserWindow.innerHeight || (root && root.clientHeight) || 1,
-            hasCoarsePointer: typeof browserWindow.matchMedia === 'function'
-                ? browserWindow.matchMedia('(pointer: coarse)').matches
-                : false
+            hasCoarsePointer:
+                typeof browserWindow.matchMedia === 'function'
+                    ? browserWindow.matchMedia('(pointer: coarse)').matches
+                    : false
         });
 
         if (targetMode === currentMode) return targetMode;
@@ -148,12 +144,16 @@
 
         if (!overrideMode) {
             let resizeTimer = 0;
-            window.addEventListener('resize', function () {
-                window.clearTimeout(resizeTimer);
-                resizeTimer = window.setTimeout(function () {
-                    syncBrowserLayout(window, root);
-                }, 180);
-            }, { passive: true });
+            window.addEventListener(
+                'resize',
+                function () {
+                    window.clearTimeout(resizeTimer);
+                    resizeTimer = window.setTimeout(function () {
+                        syncBrowserLayout(window, root);
+                    }, 180);
+                },
+                { passive: true }
+            );
         }
     }
 })(typeof window !== 'undefined' ? window : globalThis);

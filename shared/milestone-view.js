@@ -1,4 +1,30 @@
 (function (global) {
+    function t(key) {
+        return global.I18n && typeof global.I18n.t === 'function' ? global.I18n.t(key) : key;
+    }
+
+    function localize(value) {
+        return global.I18n && typeof global.I18n.localize === 'function'
+            ? global.I18n.localize(value)
+            : value == null
+              ? ''
+              : value;
+    }
+
+    function localizeObject(value) {
+        if (!value || typeof value !== 'object' || Array.isArray(value)) return value;
+        const localized = localize(value);
+        if (localized !== value) return localized;
+        const result = {};
+        for (const [key, item] of Object.entries(value)) {
+            if (key === 'coordinates') result[key] = item;
+            else if (Array.isArray(item)) result[key] = item.map(localizeObject);
+            else if (item && typeof item === 'object') result[key] = localizeObject(item);
+            else result[key] = item;
+        }
+        return result;
+    }
+
     function stripHtml(html) {
         return String(html || '')
             .replace(/<br\s*\/?>/gi, '\n')
@@ -33,7 +59,7 @@
         if (milestone.videoUrl && milestone.videoUrl.trim()) {
             return {
                 embed_url: milestone.videoUrl.trim(),
-                title: milestone.title || '',
+                title: localize(milestone.title) || '',
                 source: 'External'
             };
         }
@@ -62,16 +88,17 @@
 
     function buildCommentarySections(milestone) {
         const sections = [];
-        const quoteHtml = String(milestone.quote || '').trim();
-        const quoteAttribution = String(milestone.quoteAttribution || '').trim();
+        const quoteHtml = String(localize(milestone.quote) || '').trim();
+        const quoteAttribution = String(localize(milestone.quoteAttribution) || '').trim();
         const customSections = Array.isArray(milestone.commentarySections)
-            ? milestone.commentarySections.filter((section) => stripHtml(section && section.html))
+            ? milestone.commentarySections.filter((section) => stripHtml(localize(section && section.html)))
             : [];
 
         if (quoteHtml && quoteHtml !== '待补充') {
-            const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? '来源：' : '署名：';
+            const attributionPrefix =
+                quoteAttribution && quoteAttribution.startsWith('《') ? `${t('source')}：` : `${t('attribution')}：`;
             sections.push({
-                label: '引言摘录',
+                label: t('quoteExcerpt'),
                 html: quoteAttribution ? `${quoteHtml}<br>${attributionPrefix}${quoteAttribution}` : quoteHtml
             });
         }
@@ -79,14 +106,14 @@
         if (customSections.length > 0) {
             customSections.forEach((section) => {
                 sections.push({
-                    label: section.label || '内容解读',
-                    html: section.html
+                    label: localize(section.label) || t('contentInterpretation'),
+                    html: localize(section.html)
                 });
             });
         } else {
-            splitDescription(milestone.description).forEach((paragraph, index) => {
+            splitDescription(localize(milestone.description)).forEach((paragraph, index) => {
                 sections.push({
-                    label: index === 0 ? '背景解读' : '延展说明',
+                    label: index === 0 ? t('background') : t('extension'),
                     html: paragraph
                 });
             });
@@ -94,8 +121,8 @@
 
         if (sections.length === 0) {
             sections.push({
-                label: '内容整理中',
-                html: '暂无补充说明'
+                label: t('contentPending'),
+                html: t('noAdditionalInfo')
             });
         }
 
@@ -105,38 +132,39 @@
     function toTimelineItems(allMilestones, currentIndex) {
         return allMilestones.map((item, index) => ({
             year: item.year,
-            title: item.title,
+            title: localize(item.title),
             active: index === currentIndex
         }));
     }
 
     function normalizeMilestone(milestone, currentIndex, allMilestones) {
-        const figures = Array.isArray(milestone.figures) ? milestone.figures : [];
+        const figures = Array.isArray(milestone.figures) ? milestone.figures.map(localizeObject) : [];
         const photos = collectPhotos(milestone, 5);
         const timeline = Array.isArray(allMilestones) ? toTimelineItems(allMilestones, currentIndex) : [];
         const commentarySections = buildCommentarySections(milestone);
         const primaryVideo = getPrimaryVideo(milestone);
+        const description = localize(milestone.description) || '';
+        const location = localizeObject(milestone.location || { name: '', country: '', coordinates: [] });
+        const quote = String(localize(milestone.quote) || '').trim();
 
         return {
             raw: milestone,
             year: milestone.year,
-            title: milestone.title || '',
-            category: milestone.category || milestone.subtitle || '',
-            subtitle: milestone.subtitle || milestone.category || '',
-            location: milestone.location || { name: '', country: '', coordinates: [] },
-            descriptionHtml: milestone.description || '',
-            descriptionText: stripHtml(milestone.description || ''),
+            title: localize(milestone.title) || '',
+            category: localize(milestone.category) || localize(milestone.subtitle) || '',
+            subtitle: localize(milestone.subtitle) || localize(milestone.category) || '',
+            location,
+            descriptionHtml: description,
+            descriptionText: stripHtml(description),
             figures,
             photos,
             primaryPhoto: photos[0] || '',
             archivePhotos: photos.slice(1),
             primaryVideo,
             videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
-            quoteHtml: String(milestone.quote || '').trim() && milestone.quote !== '待补充'
-                ? String(milestone.quote || '').trim()
-                : '',
-            quoteAttribution: String(milestone.quoteAttribution || '').trim(),
-            quotePage: String(milestone.quotePage || '').trim(),
+            quoteHtml: quote && quote !== '待补充' ? quote : '',
+            quoteAttribution: String(localize(milestone.quoteAttribution) || '').trim(),
+            quotePage: String(localize(milestone.quotePage) || '').trim(),
             commentaryOverrideSections: Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [],
             commentarySections,
             timeline
