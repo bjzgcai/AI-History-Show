@@ -45,9 +45,7 @@ function getAvatarInfo(name, figure, eventKey) {
         };
     }
     const entry = getRegistryEntry(name);
-    const eventAvatar = entry && eventKey && entry.avatarByEvent
-        ? String(entry.avatarByEvent[eventKey] || '').trim()
-        : '';
+    const eventAvatar = String(entry?.avatarByEvent?.[eventKey] || '').trim();
     const avatar = eventAvatar || (entry && entry.avatar ? String(entry.avatar).trim() : '');
     return {
         avatar,
