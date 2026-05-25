@@ -17,7 +17,23 @@ const PORT    = process.env.PORT || 3001;
 const ROOT    = path.resolve(__dirname, '..');
 const MANAGE  = __dirname;
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
-const QUOTE_META_FIELDS = ['speaker', 'workTitle', 'workAuthors', 'sourceLabel', 'sourceUrl'];
+const {
+  MILESTONE_ID_PREFIX,
+  QUOTE_META_FIELDS,
+  SUPPORTED_LOCALES,
+  backupFile: backupSharedFile,
+  detectVideoSource,
+  formatQuoteAttribution,
+  getLocalizedText,
+  hasOwn,
+  isLocalizedText,
+  loadQuoteCandidates: loadSharedQuoteCandidates,
+  mergeEditableQuoteMeta,
+  normalizeEditableQuoteMeta,
+  normalizeQuoteText,
+} = require('../shared/utils.js');
+const localizedText = getLocalizedText;
+const BACKUP_DIR = path.join(MANAGE, '.backups');
 
 // ─── MIME 类型 ────────────────────────────────────────────────────────────────
 
@@ -88,14 +104,6 @@ function parseQuery(urlStr) {
   return q;
 }
 
-/** 根据 URL 检测视频平台 */
-function detectVideoSource(url) {
-  if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
-  if (/bilibili\.com/.test(url))          return 'Bilibili';
-  if (/vimeo\.com/.test(url))             return 'Vimeo';
-  return 'Web';
-}
-
 /** 清理文件名，只保留安全字符 */
 function safeName(name) {
   return name.replace(/[^A-Za-z0-9._\-\u4e00-\u9fa5]/g, '_').slice(0, 120);
@@ -150,14 +158,6 @@ function downloadFile(rawUrl, dest) {
   });
 }
 
-function normalizeQuoteText(text) {
-  let value = String(text || '').trim();
-  if (!value) return '';
-  if (value.startsWith('"')) value = value.slice(1).trimStart();
-  if (value.endsWith('"')) value = value.slice(0, -1).trimEnd();
-  return value;
-}
-
 function decodeHtmlEntities(text) {
   return String(text || '')
     .replace(/&nbsp;/g, ' ')
@@ -168,26 +168,54 @@ function decodeHtmlEntities(text) {
     .replace(/&amp;/g, '&');
 }
 
-function extractAppliedQuoteState(milestone) {
-  const rawQuote = String((milestone || {}).quote || '').trim();
-  const explicitQuotePage = String((milestone || {}).quotePage || '').trim();
+function extractAppliedQuoteLocale(rawQuote, explicitQuotePage) {
+  const quoteHtml = String(rawQuote || '').trim();
+  const quotePage = String(explicitQuotePage || '').trim();
   const sourcePattern = /(?:<br\s*\/?>\s*){1,2}<span[^>]*>\s*—\s*([^<]+?)\s*<\/span>\s*$/i;
-  const matchedSource = rawQuote.match(sourcePattern);
+  const matchedSource = quoteHtml.match(sourcePattern);
 
   if (matchedSource) {
     return {
-      quote: rawQuote.replace(sourcePattern, '').trim(),
-      quotePage: explicitQuotePage || matchedSource[1].trim(),
+      quote: quoteHtml.replace(sourcePattern, '').trim(),
+      quotePage: quotePage || matchedSource[1].trim(),
     };
   }
 
   return {
-    quote: rawQuote,
-    quotePage: explicitQuotePage,
+    quote: quoteHtml,
+    quotePage,
   };
 }
 
+function extractAppliedQuoteState(milestone) {
+  const safeMilestone = milestone || {};
+  if (isLocalizedText(safeMilestone.quote) || isLocalizedText(safeMilestone.quotePage)) {
+    const quote = {};
+    const quotePage = {};
+
+    for (const locale of SUPPORTED_LOCALES) {
+      const extracted = extractAppliedQuoteLocale(
+        localizedText(safeMilestone.quote, locale),
+        localizedText(safeMilestone.quotePage, locale),
+      );
+      quote[locale] = extracted.quote;
+      quotePage[locale] = extracted.quotePage;
+    }
+
+    return {
+      quote,
+      quotePage,
+    };
+  }
+
+  return extractAppliedQuoteLocale(safeMilestone.quote, safeMilestone.quotePage);
+}
+
 function quoteHtmlToText(html) {
+  if (isLocalizedText(html)) {
+    return Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, quoteHtmlToText(localizedText(html, locale))]));
+  }
+
   let value = String(html || '').trim();
   if (!value) return '';
   if (value.startsWith('"')) value = value.slice(1).trimStart();
@@ -200,6 +228,10 @@ function quoteHtmlToText(html) {
 
 function deepClone(value) {
   return JSON.parse(JSON.stringify(value));
+}
+
+function localizedTextEquals(a, b) {
+  return SUPPORTED_LOCALES.every((locale) => localizedText(a, locale) === localizedText(b, locale));
 }
 
 function loadAppliedMilestones() {
@@ -218,22 +250,18 @@ function loadAppliedMilestones() {
 function loadAppliedMilestoneMap() {
   const map = {};
   for (const milestone of loadAppliedMilestones()) {
-    if (milestone && typeof milestone === 'object' && milestone.id && milestone.id.startsWith('milestone-')) {
-      map[milestone.id.slice('milestone-'.length)] = milestone;
+    if (milestone && typeof milestone === 'object' && milestone.id && milestone.id.startsWith(MILESTONE_ID_PREFIX)) {
+      map[milestone.id.slice(MILESTONE_ID_PREFIX.length)] = milestone;
     }
   }
   return map;
 }
 
 function loadQuoteCandidates() {
-  if (!fs.existsSync(QUOTE_CANDIDATES_PATH)) {
-    return { curatedAt: '', purpose: '', events: {} };
-  }
-  try {
-    return freshRequire(QUOTE_CANDIDATES_PATH).quoteCandidates || { curatedAt: '', purpose: '', events: {} };
-  } catch (_) {
-    return { curatedAt: '', purpose: '', events: {} };
-  }
+  return loadSharedQuoteCandidates(QUOTE_CANDIDATES_PATH, {
+    fresh: true,
+    fallback: { curatedAt: '', purpose: '', events: {} },
+  });
 }
 
 function writeQuoteCandidates(data) {
@@ -268,62 +296,20 @@ function getLeadQuoteCandidate(candidatesMap, key) {
   return list.length > 0 && list[0] && typeof list[0] === 'object' ? list[0] : null;
 }
 
-function hasOwn(obj, key) {
-  return Object.prototype.hasOwnProperty.call(obj || {}, key);
-}
-
-function normalizeEditableQuoteMeta(meta, options = {}) {
-  const preserveKeys = Boolean(options.preserveKeys);
-  const source = meta && typeof meta === 'object' ? meta : null;
-  const normalized = {};
-  let hasValue = false;
-
-  for (const field of QUOTE_META_FIELDS) {
-    const value = source && hasOwn(source, field) ? String(source[field] || '').trim() : '';
-    if (value) hasValue = true;
-    if (value || preserveKeys) normalized[field] = value;
-  }
-
-  return hasValue || preserveKeys ? normalized : {};
-}
-
-function mergeEditableQuoteMeta(eventMeta, candidateMeta, options = {}) {
-  const preserveKeys = Boolean(options.preserveKeys);
-  const hasEventMeta = Boolean(eventMeta && typeof eventMeta === 'object');
-  const eventSource = hasEventMeta ? eventMeta : null;
-  const candidateSource = candidateMeta && typeof candidateMeta === 'object' ? candidateMeta : null;
-  const merged = {};
-  let hasValue = false;
-
-  for (const field of QUOTE_META_FIELDS) {
-    const rawValue = eventSource && hasOwn(eventSource, field)
-      ? eventSource[field]
-      : (candidateSource && hasOwn(candidateSource, field) ? candidateSource[field] : '');
-    const value = String(rawValue || '').trim();
-    if (value) hasValue = true;
-    if (value || preserveKeys || hasEventMeta) merged[field] = value;
-  }
-
-  return hasValue || preserveKeys || hasEventMeta ? merged : {};
-}
-
-function formatQuoteAttribution(candidate) {
-  const safeCandidate = candidate && typeof candidate === 'object' ? candidate : {};
-  const workTitle = String(safeCandidate.workTitle || '').trim();
-  const workAuthors = String(safeCandidate.workAuthors || '').trim();
-  const speaker = String(safeCandidate.speaker || '').trim();
-
-  if (workTitle) {
-    return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
-  }
-
-  return speaker;
+function cloneTextValue(value) {
+  return isLocalizedText(value) ? deepClone(value) : String(value || '');
 }
 
 function getEffectiveQuoteText(candidatesMap, key, fallbackText) {
   const first = getLeadQuoteCandidate(candidatesMap, key);
   const candidateQuote = first ? String(first.quote || '').trim() : '';
-  return candidateQuote || String(fallbackText || '').trim();
+  if (isLocalizedText(fallbackText)) {
+    return {
+      en: candidateQuote || localizedText(fallbackText, 'en'),
+      zh: localizedText(fallbackText, 'zh') || candidateQuote || localizedText(fallbackText, 'en'),
+    };
+  }
+  return candidateQuote || localizedText(fallbackText);
 }
 
 function getEffectiveQuoteMeta(candidatesMap, key, ev, options = {}) {
@@ -389,9 +375,9 @@ function readConfiguredImageMetaEntry(map, url) {
   const entry = map[url];
   if (!entry || typeof entry !== 'object') return null;
 
-  const caption = String(entry.caption || entry.title || entry.name || '').trim();
-  const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
-  if (!caption && !subcaption) return null;
+  const caption = cloneTextValue(entry.caption || entry.title || entry.name || '');
+  const subcaption = cloneTextValue(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
+  if (!localizedText(caption) && !localizedText(subcaption)) return null;
   return { caption, subcaption };
 }
 
@@ -399,9 +385,9 @@ function deriveDisplayedImageMeta(milestone, url, configured) {
   const value = String(url || '').trim();
   if (!value) return { caption: '', subcaption: '' };
 
-  const title = String((milestone || {}).title || '').trim();
+  const title = localizedText((milestone || {}).title);
   const year = milestone && milestone.year ? String(milestone.year) : '';
-  const category = String((milestone || {}).category || '').trim();
+  const category = localizedText((milestone || {}).category);
   const workTitle = extractWorkTitleFromAttribution((milestone || {}).quoteAttribution || '');
 
   let fallback;
@@ -418,8 +404,8 @@ function deriveDisplayedImageMeta(milestone, url, configured) {
   }
 
   return {
-    caption: (configured && configured.caption) || fallback.caption,
-    subcaption: (configured && configured.subcaption) || fallback.subcaption,
+    caption: configured && localizedText(configured.caption) ? configured.caption : fallback.caption,
+    subcaption: configured && localizedText(configured.subcaption) ? configured.subcaption : fallback.subcaption,
   };
 }
 
@@ -451,16 +437,16 @@ function buildAdminEventsSnapshot(eventsData, options = {}) {
     const resources = applied && applied.resources && typeof applied.resources === 'object' ? applied.resources : {};
 
     if (preferApplied && applied) {
-      if (applied.title !== undefined) ev.title = String(applied.title || '');
+      if (applied.title !== undefined) ev.title = cloneTextValue(applied.title);
       if (applied.year !== undefined) ev.year = applied.year;
       if (applied.location && typeof applied.location === 'object') ev.location = deepClone(applied.location);
-      if (applied.description !== undefined) ev.description = String(applied.description || '');
+      if (applied.description !== undefined) ev.description = cloneTextValue(applied.description);
       if (Array.isArray(applied.figures)) ev.figures = deepClone(applied.figures);
 
       const appliedQuoteState = extractAppliedQuoteState(applied);
       const appliedQuoteText = quoteHtmlToText(appliedQuoteState.quote);
       ev.quoteText = appliedQuoteText;
-      ev.quotePage = String(appliedQuoteState.quotePage || '');
+      ev.quotePage = cloneTextValue(appliedQuoteState.quotePage || '');
 
       if (Array.isArray(resources.images)) ev.images = deepClone(resources.images);
       if (Array.isArray(resources.videos)) ev.videos = deepClone(resources.videos);
@@ -472,7 +458,7 @@ function buildAdminEventsSnapshot(eventsData, options = {}) {
       }
       if (!hasOwn(ev, 'quotePage') && applied) {
         const appliedQuoteState = extractAppliedQuoteState(applied);
-        ev.quotePage = String(appliedQuoteState.quotePage || '');
+        ev.quotePage = cloneTextValue(appliedQuoteState.quotePage || '');
       }
       if (!hasOwn(ev, 'images') && Array.isArray(resources.images)) {
         ev.images = deepClone(resources.images);
@@ -482,9 +468,11 @@ function buildAdminEventsSnapshot(eventsData, options = {}) {
       }
     }
 
-    const effectiveQuoteText = normalizeQuoteText(getEffectiveQuoteText(quoteCandidates, key, ev.quoteText));
+    const effectiveQuoteText = getEffectiveQuoteText(quoteCandidates, key, ev.quoteText);
     const effectiveQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
-    ev.quoteText = effectiveQuoteText;
+    ev.quoteText = isLocalizedText(effectiveQuoteText)
+      ? Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, normalizeQuoteText(localizedText(effectiveQuoteText, locale))]))
+      : normalizeQuoteText(effectiveQuoteText);
     ev.quoteMeta = effectiveQuoteMeta;
 
     const displayMilestone = preferApplied && applied
@@ -507,8 +495,8 @@ function normalizeImageMetaMap(map) {
   const normalized = {};
   for (const [url, entry] of Object.entries(source)) {
     if (!entry || typeof entry !== 'object') continue;
-    const caption = String(entry.caption || entry.title || entry.name || '').trim();
-    const subcaption = String(entry.subcaption || entry.subtitle || entry.description || entry.role || '').trim();
+  const caption = localizedText(entry.caption || entry.title || entry.name || '');
+  const subcaption = localizedText(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
     if (!caption && !subcaption) continue;
     normalized[url] = { caption, subcaption };
   }
@@ -528,7 +516,7 @@ function syncLeadQuoteCandidates(eventsData) {
       ev && hasOwn(ev, 'quoteMeta') ? ev.quoteMeta : null,
       { preserveKeys: ev && hasOwn(ev, 'quoteMeta') },
     );
-    const nextQuote = normalizeQuoteText(ev && ev.quoteText ? ev.quoteText : '');
+    const nextQuote = normalizeQuoteText(localizedText(ev && ev.quoteText ? ev.quoteText : '', 'en'));
 
     if (!first && (nextQuote || quoteMetaHasAnyValue(normalizedQuoteMeta))) {
       if (!Array.isArray(quoteCandidates.events[key])) quoteCandidates.events[key] = [];
@@ -563,25 +551,8 @@ function syncLeadQuoteCandidates(eventsData) {
 
 // ─── 备份 + 原子写 ────────────────────────────────────────────────────────────
 
-const BACKUP_DIR  = path.join(MANAGE, '.backups');
-const MAX_BACKUPS = 5;
-
-/** 备份文件到 manage/.backups/，最多保留 MAX_BACKUPS 份 */
 function backupFile(filePath) {
-  if (!fs.existsSync(filePath)) return;
-  mkdirp(BACKUP_DIR);
-  const ts   = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-  const name = path.basename(filePath);
-  const dest = path.join(BACKUP_DIR, `${name}.${ts}.bak`);
-  fs.copyFileSync(filePath, dest);
-  // 只保留最新 MAX_BACKUPS 份，删除多余的
-  const all = fs.readdirSync(BACKUP_DIR)
-    .filter(f => f.startsWith(name + '.') && f.endsWith('.bak'))
-    .sort();
-  for (const old of all.slice(0, -MAX_BACKUPS)) {
-    try { fs.unlinkSync(path.join(BACKUP_DIR, old)); } catch (_) {}
-  }
-  return dest;
+  return backupSharedFile(filePath, { backupDir: BACKUP_DIR, maxBackups: 5 });
 }
 
 /** 原子写：先写 .tmp，再 rename，防止写入中断损坏文件 */
@@ -619,6 +590,41 @@ function writeEvents(data) {
   ].join('\n');
   backupFile(target);
   atomicWrite(target, content);
+}
+
+function createVideoCatalog(eventKey, ev) {
+  return {
+    event_id: eventKey,
+    event_title: localizedText(ev.title) || eventKey,
+    year: ev.year || 0,
+    candidate_videos: [],
+    total_count: 0,
+    created_at: new Date().toISOString().slice(0, 19).replace('T', ' '),
+  };
+}
+
+function readVideoCatalog(jsonPath, eventKey, ev) {
+  let catalog = null;
+  if (fs.existsSync(jsonPath)) {
+    try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
+  }
+  if (!catalog || typeof catalog !== 'object') {
+    catalog = createVideoCatalog(eventKey, ev);
+  }
+  if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
+  return catalog;
+}
+
+function ensureVideoCatalogEntry(jsonPath, eventKey, ev, matchFn, newEntry) {
+  const catalog = readVideoCatalog(jsonPath, eventKey, ev);
+  const alreadyExists = catalog.candidate_videos.some(matchFn);
+  if (alreadyExists) return false;
+
+  catalog.candidate_videos.push(newEntry);
+  catalog.total_count = catalog.candidate_videos.length;
+  mkdirp(path.dirname(jsonPath));
+  atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
+  return true;
 }
 
 // ─── 路由处理 ─────────────────────────────────────────────────────────────────
@@ -669,7 +675,9 @@ const routes = {
         ev.figures = ev.figures
           .map((figure) => ({
             name: String(figure && figure.name ? figure.name : '').trim(),
-            role: String(figure && figure.role ? figure.role : '').trim(),
+            role: isLocalizedText(figure && figure.role)
+              ? deepClone(figure.role)
+              : String(figure && figure.role ? figure.role : '').trim(),
           }))
           .filter((figure) => figure.name || figure.role);
       }
@@ -685,21 +693,13 @@ const routes = {
             if (item.startsWith('http://') || item.startsWith('https://')) {
               // 非 YouTube URL → 写入 candidate_videos JSON
               const jsonPath = path.join(videosDir, `${eventKey}.json`);
-              let catalog = null;
-              if (fs.existsSync(jsonPath)) {
-                try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
-              }
-              if (!catalog || typeof catalog !== 'object') {
-                catalog = { event_id: eventKey, event_title: ev.title || eventKey, year: ev.year || 0, candidate_videos: [], total_count: 0, created_at: new Date().toISOString().slice(0, 19).replace('T', ' ') };
-              }
-              if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
-              const alreadyExists = catalog.candidate_videos.some(v => v.url === item);
-              if (!alreadyExists) {
-                catalog.candidate_videos.push({ url: item, title: '', source: detectVideoSource(item) });
-                catalog.total_count = catalog.candidate_videos.length;
-                mkdirp(videosDir);
-                atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
-              }
+              ensureVideoCatalogEntry(
+                jsonPath,
+                eventKey,
+                ev,
+                v => v.url === item,
+                { url: item, title: '', source: detectVideoSource(item) },
+              );
             }
             return item; // 字符串原样保留
           }
@@ -709,27 +709,15 @@ const routes = {
 
           // 写入 candidate_videos JSON
           const jsonPath = path.join(videosDir, `${eventKey}.json`);
-          let catalog = null;
-          if (fs.existsSync(jsonPath)) {
-            try { catalog = JSON.parse(fs.readFileSync(jsonPath, 'utf8')); } catch (_) {}
-          }
-          if (!catalog || typeof catalog !== 'object') {
-            catalog = {
-              event_id:         eventKey,
-              event_title:      ev.title || eventKey,
-              year:             ev.year  || 0,
-              candidate_videos: [],
-              total_count:      0,
-              created_at:       new Date().toISOString().slice(0, 19).replace('T', ' '),
-            };
-          }
-          if (!Array.isArray(catalog.candidate_videos)) catalog.candidate_videos = [];
 
           if (item.id) {
             // YouTube 视频：按 id 去重，写入后规范化为纯字符串 ID
-            const alreadyExists = catalog.candidate_videos.some(v => v.id === item.id);
-            if (!alreadyExists) {
-              catalog.candidate_videos.push({
+            ensureVideoCatalogEntry(
+              jsonPath,
+              eventKey,
+              ev,
+              v => v.id === item.id,
+              {
                 id:           item.id,
                 url:          item.url          || `https://www.youtube.com/watch?v=${item.id}`,
                 embed_url:    item.embed_url    || `https://www.youtube.com/embed/${item.id}`,
@@ -740,25 +728,22 @@ const routes = {
                 thumbnail:    item.thumbnail    || `https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`,
                 thumbnail_hq: item.thumbnail_hq || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`,
                 source:       'YouTube',
-              });
-              catalog.total_count = catalog.candidate_videos.length;
-              mkdirp(videosDir);
-              atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
-            }
+              },
+            );
             return item.id; // 规范化为纯字符串 ID
           } else {
             // 非 YouTube 视频（Bilibili 等）：按 url 去重，写入 JSON，events 中保留对象
-            const alreadyExists = catalog.candidate_videos.some(v => v.url === item.url);
-            if (!alreadyExists) {
-              catalog.candidate_videos.push({
+            ensureVideoCatalogEntry(
+              jsonPath,
+              eventKey,
+              ev,
+              v => v.url === item.url,
+              {
                 url:    item.url,
                 title:  item.title  || '',
                 source: item.source || 'Web',
-              });
-              catalog.total_count = catalog.candidate_videos.length;
-              mkdirp(videosDir);
-              atomicWrite(jsonPath, JSON.stringify(catalog, null, 2));
-            }
+              },
+            );
             return item.url; // 规范化为纯字符串 URL
           }
         }).filter(Boolean);
@@ -901,8 +886,8 @@ const routes = {
       // applied map: key → milestone
       const appliedMap = {};
       for (const m of appliedMilestones) {
-        if (m.id && m.id.startsWith('milestone-')) {
-          appliedMap[m.id.slice('milestone-'.length)] = m;
+        if (m.id && m.id.startsWith(MILESTONE_ID_PREFIX)) {
+          appliedMap[m.id.slice(MILESTONE_ID_PREFIX.length)] = m;
         }
       }
       const appliedKeys = new Set(Object.keys(appliedMap));
@@ -922,18 +907,19 @@ const routes = {
         const changes = {};
 
         // 标量字段：直接对比旧/新值
-        if (String(ev.title || '') !== String(applied.title || ''))
-          changes.title = { from: applied.title || '', to: ev.title || '' };
+        if (!localizedTextEquals(ev.title, applied.title))
+          changes.title = { from: localizedText(applied.title), to: localizedText(ev.title) };
         if (String(ev.year  || '') !== String(applied.year  || ''))
           changes.year  = { from: applied.year,         to: ev.year };
 
         // 描述：记录完整前后内容
-        if (String(ev.description || '') !== String(applied.description || ''))
-          changes.description = { from: applied.description || '', to: ev.description || '' };
+        if (!localizedTextEquals(ev.description, applied.description))
+          changes.description = { from: localizedText(applied.description), to: localizedText(ev.description) };
 
         // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
-        const evQuoteText = normalizeQuoteText(getEffectiveQuoteText(quoteCandidates, key, ev.quoteText));
-        const evQuotePage = ev.quotePage || '';
+        const evQuoteTextValue = getEffectiveQuoteText(quoteCandidates, key, ev.quoteText);
+        const evQuoteText = normalizeQuoteText(localizedText(evQuoteTextValue, 'en'));
+        const evQuotePage = localizedText(ev.quotePage, 'en');
         const rebuildQuote = (text) => {
           if (!text) return '';
           const body = text.replace(/\n/g, '<br>');
@@ -943,8 +929,9 @@ const routes = {
         const rebuiltQuote = rebuildQuote(evQuoteText);
         if (rebuiltQuote !== appliedQuoteState.quote)
           changes.quote = { from: appliedQuoteState.quote || '', quoteText: evQuoteText };
-        if (evQuotePage !== appliedQuoteState.quotePage)
-          changes.quotePage = { from: appliedQuoteState.quotePage || '', to: evQuotePage };
+        const appliedQuotePage = localizedText(appliedQuoteState.quotePage, 'en');
+        if (evQuotePage !== appliedQuotePage)
+          changes.quotePage = { from: appliedQuotePage || '', to: evQuotePage };
 
         const evQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
         const appliedHasStructuredQuoteMeta = Boolean(applied.quoteMeta && typeof applied.quoteMeta === 'object');
@@ -990,12 +977,12 @@ const routes = {
           changes.videos = { added: vidsAdded, removed: vidsRemoved };
 
         // 地点：比较 name + country
-        const evLoc  = `${(ev.location || {}).name || ''}|${(ev.location || {}).country || ''}`;
-        const appLoc = `${(applied.location || {}).name || ''}|${(applied.location || {}).country || ''}`;
+        const evLoc  = `${localizedText((ev.location || {}).name)}|${localizedText((ev.location || {}).country)}`;
+        const appLoc = `${localizedText((applied.location || {}).name)}|${localizedText((applied.location || {}).country)}`;
         if (evLoc !== appLoc)
           changes.location = {
-            from: (applied.location || {}).name || '',
-            to:   (ev.location  || {}).name || '',
+            from: localizedText((applied.location || {}).name),
+            to:   localizedText((ev.location  || {}).name),
           };
 
         // 人物：计算增删
@@ -1007,7 +994,7 @@ const routes = {
           changes.figures = { added: figsAdded, removed: figsRemoved };
 
         if (Object.keys(changes).length > 0) {
-          modified.push({ key, title: ev.title || key, year: ev.year, changes });
+          modified.push({ key, title: localizedText(ev.title) || key, year: ev.year, changes });
         } else {
           unchanged.push(key);
         }
@@ -1017,24 +1004,25 @@ const routes = {
       const appliedCategoryOrder = [];
       const seen = {};
       for (const m of appliedMilestones) {
-        if (m.category && !seen[m.category]) { seen[m.category] = true; appliedCategoryOrder.push(m.category); }
+        const categoryName = localizedText(m.category);
+        if (categoryName && !seen[categoryName]) { seen[categoryName] = true; appliedCategoryOrder.push(categoryName); }
       }
-      const newCategoryOrder = (catalog.categories || []).map(c => c.name);
+      const newCategoryOrder = (catalog.categories || []).map(c => localizedText(c.name));
       const categoryChanged  = JSON.stringify(newCategoryOrder) !== JSON.stringify(appliedCategoryOrder);
 
       json(res, {
         added:   added.map(k => ({
-          key: k, title: (eventsMap[k] || {}).title || k,
+          key: k, title: localizedText((eventsMap[k] || {}).title) || k,
           year: (eventsMap[k] || {}).year,
-          location: ((eventsMap[k] || {}).location || {}).name || '',
+          location: localizedText(((eventsMap[k] || {}).location || {}).name),
           figureCount: ((eventsMap[k] || {}).figures || []).length,
           imageCount:  ((eventsMap[k] || {}).images  || []).length,
           videoCount:  ((eventsMap[k] || {}).videos  || []).length,
         })),
         removed: removed.map(k => ({
-          key: k, title: (appliedMap[k] || {}).title || k,
+          key: k, title: localizedText((appliedMap[k] || {}).title) || k,
           year: (appliedMap[k] || {}).year,
-          category: (appliedMap[k] || {}).category || '',
+          category: localizedText((appliedMap[k] || {}).category),
         })),
         modified,
         unchanged,

@@ -755,6 +755,120 @@ const researchCandidates = {
   },
 };
 
+const commentaryTranslations = {
+  "1956-dartmouth": {
+    background: "The Dartmouth project mattered not just as a summer workshop, but because it brought language, abstraction, learning, neural networks, and self-improvement into one research agenda for the first time, giving scattered lines of work a shared problem space.",
+    extension: "The meeting did not immediately produce a unified theory, but it achieved something more durable: it turned \"artificial intelligence\" from a phrase in a proposal into a disciplinary label that could keep attracting researchers, funding, and public imagination.",
+  },
+  "1957-perceptron": {
+    background: "The perceptron became iconic not only because it was an early neural network model, but because Rosenblatt moved a trainable weight system from theory into something that could be demonstrated, funded, and reported by the media.",
+    extension: "The optimism it triggered shows that many waves in AI history did not wait for algorithms to mature. They often began the moment a prototype made people feel that machines might really be able to learn.",
+  },
+  "1969-ai-winter": {
+    background: "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove.",
+    extension: "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources.",
+  },
+  "1986-backpropagation": {
+    background: "The key to backpropagation was not merely sending errors backward. It embedded every layer's parameters in a unified differentiable computation graph, making representation learning a genuinely trainable engineering process for the first time.",
+    extension: "Its foundation for the later deep-learning revival was to turn the question of what hidden layers can learn from a hand-design problem into a data-driven one. That step moved neural networks from conceptual models toward a scalable methodology.",
+  },
+  "1989-cnn": {
+    background: "CNNs endured because they wrote locality and translation invariance directly into the network structure. Local receptive fields and weight sharing were not just engineering tricks; they were structured uses of the statistics of vision.",
+    extension: "LeNet also showed the closed loop of algorithm, dataset, and real task. Once a network could reliably read handwritten digits, neural networks gained sustained credibility as industrially useful systems.",
+  },
+  "1986-rnn": {
+    background: "The breakthrough in early RNNs was putting historical state explicitly back inside the network. Context units let the model look beyond the current input and compress earlier time steps into an internal memory it could read repeatedly.",
+    extension: "They also exposed a long-running problem: sequence modeling was an early idea, but without stable training mechanisms these models struggled to learn long-range dependencies. That line of work was only truly reconnected later through LSTM.",
+  },
+  "1997-lstm": {
+    background: "The core of LSTM was not simply adding a few gates. It separated the preservation, writing, and reading of long-term memory, so gradient flow and state updates no longer fought each other as directly.",
+    extension: "Historically, LSTM is a classic case of structure compensating for algorithmic limits in connectionism. When standard RNNs were hard to train, researchers did not abandon sequence models; they redesigned the structure to recover trainability.",
+  },
+  "2012-alexnet": {
+    background: "AlexNet's explosive impact came from several conditions maturing at once: large labeled datasets, GPU training, ReLU, Dropout, and other practical techniques were integrated into a pipeline that could reliably win a benchmark.",
+    extension: "It moved deep learning from something that might work academically to a default path industry had to take seriously. Once it achieved a large advantage on a public, repeatable competition like ImageNet, the research paradigm shifted quickly.",
+  },
+  "2014-highway-network": {
+    background: "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed.",
+    extension: "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream.",
+  },
+  "2015-resnet": {
+    background: "ResNet's real breakthrough was not depth by itself, but changing the learning target from a full mapping to a residual correction. Each layer did not have to reinvent features; it only had to make incremental changes to existing representations.",
+    extension: "It became an engineering default quickly because shortcuts delivered large gains at very low cost. Compared with more complex gated designs, ResNet showed that structural subtraction can sometimes spread further than adding mechanisms.",
+  },
+  "2016-densenet": {
+    background: "DenseNet changed \"each layer sees only the previous layer\" into \"each layer sees all earlier layers.\" It did more than deepen gradient paths; it explicitly encouraged feature reuse at the representation level.",
+    extension: "Compared with ResNet, DenseNet is a more extreme version of not discarding information. It preserves all preceding layers, gaining parameter efficiency while increasing memory pressure and implementation cost.",
+  },
+  "2014-gan": {
+    background: "GANs mattered historically because they reframed complex distribution modeling as an adversarial game between a generator and a discriminator, making high-dimensional generation less dependent on explicit probability modeling.",
+    extension: "They also opened a familiar AI development path: a method that was initially unstable and hard to evaluate drew rapid attention because its visual results were striking, which then forced stronger training techniques, metrics, and industrial applications.",
+  },
+  "2014-attention": {
+    background: "Attention first addressed the compression bottleneck in encoder-decoder models. Instead of forcing one fixed vector to remember an entire sentence, the decoder could dynamically retrieve the most relevant parts of the input at each step.",
+    extension: "Its importance went beyond better translation accuracy. It introduced an idea later amplified by the Transformer: internal relationships in a model do not have to be carried only by recurrence; they can be built through explicit weighting.",
+  },
+  "2017-transformer": {
+    background: "The Transformer's structural revolution was to move the core of sequence modeling from recurrence and convolution to global self-attention, allowing relationships between positions to be modeled directly and computed in parallel.",
+    extension: "It later dominated the large-model era not only because it worked better, but because the architecture was hardware-friendly, easy to scale, and easy to stack. That released the scaling logic that larger models could become stronger.",
+  },
+  "2018-bert": {
+    background: "BERT shifted NLP from designing structures for individual tasks to pretraining a general language model and then lightly fine-tuning it. The same base could transfer quickly to question answering, classification, extraction, and many other tasks.",
+    extension: "Its landmark status was not only bidirectional encoding. It made pretrained models standard infrastructure for NLP, after which competition increasingly moved toward data scale, training resources, and post-training strategy.",
+  },
+  "2018-gpt": {
+    background: "GPT's decisive contribution was proving that a decoder-only architecture with a single autoregressive objective could be a strong and scalable general route. The model did not need a new objective for every task to gain transfer ability from large-scale pretraining.",
+    extension: "In hindsight, GPT's success was not just a model-architecture success. It was the success of an engineering philosophy: a simple objective, large-scale training, and one unified generation interface, which shaped the interaction pattern for later conversational models.",
+  },
+  "2023-agents": {
+    background: "The key change in contemporary agentic AI is not tool use by itself. Large language models began to act as the cognitive center for goal decomposition, state interpretation, action selection, and self-correction.",
+    extension: "That turns agents from systems dependent on hand-written planners into open software forms whose behavior strategies can be rebuilt through prompts, memory, toolchains, and feedback loops. It also explains why agent products expanded so quickly after 2023.",
+  },
+  "2025-llm-competition": {
+    background: "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation.",
+    extension: "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability.",
+  },
+  "2020-alphafold": {
+    background: "AlphaFold's breakthrough was not just a small gain in prediction accuracy. It brought sequence-to-3D-structure inference close to experimental usability on large-scale benchmarks, changing the order of work in structural biology.",
+    extension: "Its lesson for AI for Science is that when models become strong enough, AI is no longer only screening candidates for scientists. It can move scientific steps that were once expensive and slow directly into computational workflows.",
+  },
+  "2019-ai-feynman": {
+    background: "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws.",
+    extension: "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community.",
+  },
+  "2024-ai-scientist": {
+    background: "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow.",
+    extension: "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback.",
+  },
+};
+
+for (const [eventKey, translations] of Object.entries(commentaryTranslations)) {
+  const event = researchCandidates.events[eventKey];
+  if (!event) continue;
+
+  for (const sectionName of ["background", "extension"]) {
+    const candidate = event.candidateTexts && event.candidateTexts[sectionName];
+    if (candidate && typeof candidate.text === "string" && translations[sectionName]) {
+      candidate.text = {
+        en: translations[sectionName],
+        zh: candidate.text,
+      };
+    }
+  }
+
+  if (Array.isArray(event.displayCommentarySections)) {
+    event.displayCommentarySections.forEach((section, index) => {
+      const sectionName = index === 0 ? "background" : "extension";
+      if (section && typeof section.text === "string" && translations[sectionName]) {
+        section.text = {
+          en: translations[sectionName],
+          zh: section.text,
+        };
+      }
+    });
+  }
+}
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { researchCandidates };
 }
