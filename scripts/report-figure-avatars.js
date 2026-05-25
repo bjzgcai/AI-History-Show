@@ -36,6 +36,22 @@ function resolveAvatarPath(avatarPath) {
     return path.isAbsolute(trimmed) ? trimmed : path.join(ROOT, trimmed);
 }
 
+function normalizeGeneratedTime(content) {
+    return String(content || '').replace(/^生成时间：.+$/m, '生成时间：<preserved>');
+}
+
+function writeIfMeaningfullyChanged(file, content) {
+    if (fs.existsSync(file)) {
+        const existing = fs.readFileSync(file, 'utf8');
+        if (normalizeGeneratedTime(existing) === normalizeGeneratedTime(content)) {
+            return false;
+        }
+    }
+
+    fs.writeFileSync(file, content, 'utf8');
+    return true;
+}
+
 function getAvatarInfo(name, figure, eventKey) {
     if (figure && typeof figure.avatar === 'string' && figure.avatar.trim()) {
         const avatar = figure.avatar.trim();
@@ -170,9 +186,9 @@ figureRows.forEach((item) => {
 
 lines.push('');
 
-fs.writeFileSync(OUTPUT, `${lines.join('\n')}\n`, 'utf8');
+const didWrite = writeIfMeaningfullyChanged(OUTPUT, `${lines.join('\n')}\n`);
 
-console.log(`已写入 ${path.relative(ROOT, OUTPUT)}`);
+console.log(`${didWrite ? '已写入' : '内容未变'} ${path.relative(ROOT, OUTPUT)}`);
 console.log(
     `人物/团队: ${summary.uniqueFigureCount}, 已有可用头像: ${summary.readyFigureCount}, 缺失: ${summary.missingFigureCount}`
 );
