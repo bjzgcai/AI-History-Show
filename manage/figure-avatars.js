@@ -15,28 +15,32 @@ module.exports = {
     type: "person",
     status: "ready",
     wikipediaTitle: "Alex_Krizhevsky",
-    avatar: "resources/images/figures/alex-krizhevsky.jpg",
-    note: "来自 CHM AlexNet 文章主图裁剪。"
+    avatar: "resources/images/figures/historical/alex-krizhevsky-2013.png",
+    avatarStyle: "transform: scale(1.08); transform-origin: 50% 47%;",
+    note: "来自多伦多大学 2013 年 AlexNet 团队照片裁剪。"
   },
   "Ashish Vaswani": {
     type: "person",
     status: "ready",
     wikipediaTitle: "Ashish_Vaswani",
     avatar: "resources/images/figures/ashish-vaswani.jpg",
+    avatarStyle: "transform: scale(2.05); transform-origin: 50% 33%;",
     note: "来自 RAAIS 演讲嘉宾页头像。"
   },
   "Claude Shannon": {
     type: "person",
     status: "ready",
     wikipediaTitle: "Claude_Shannon",
-    avatar: "resources/images/figures/claude-shannon.jpg",
-    note: "来自 Wikipedia/Wikimedia Commons 头像。"
+    avatar: "resources/images/figures/historical/claude-shannon-1956-v2.png",
+    avatarStyle: "transform: scale(1.06); transform-origin: 50% 45%;",
+    note: "改用 1956 年达特茅斯 AI workshop 合影裁剪，避免使用晚年头像。"
   },
   "David Rumelhart": {
     type: "person",
     status: "ready",
     wikipediaTitle: "David_Rumelhart",
     avatar: "resources/images/figures/david-rumelhart.jpg",
+    avatarStyle: "transform: scale(1.28); transform-origin: 50% 35%;",
     note: "来自 Wikipedia/Wikimedia Commons 头像。"
   },
   "Demis Hassabis": {
@@ -51,6 +55,7 @@ module.exports = {
     status: "ready",
     wikipediaTitle: "Frank_Rosenblatt",
     avatar: "resources/images/figures/frank-rosenblatt.png",
+    avatarStyle: "transform: scale(1.18); transform-origin: 44% 38%;",
     note: "由感知机章节原始照片裁剪出的独立头像。"
   },
   "Geoffrey Hinton": {
@@ -58,7 +63,13 @@ module.exports = {
     status: "ready",
     wikipediaTitle: "Geoffrey_Hinton",
     avatar: "resources/images/figures/geoffrey-hinton.jpg",
-    note: "来自 Wikipedia/Wikimedia Commons 头像。"
+    avatarByEvent: {
+      "1986-backpropagation": "resources/images/figures/historical/geoffrey-hinton-1986.png"
+    },
+    avatarStyleByEvent: {
+      "1986-backpropagation": "transform: scale(1.24); transform-origin: 50% 42%;"
+    },
+    note: "默认头像保留给 AlexNet 章节；1986 反向传播章节改用项目中同期视频素材裁剪。"
   },
   "Ian Goodfellow": {
     type: "person",
@@ -92,22 +103,32 @@ module.exports = {
     type: "person",
     status: "ready",
     wikipediaTitle: "John_McCarthy_(computer_scientist)",
-    avatar: "resources/images/figures/john-mccarthy.jpg",
-    note: "来自 Wikipedia/Wikimedia Commons 头像。"
+    avatar: "resources/images/figures/historical/john-mccarthy-1956-v2.png",
+    avatarStyle: "transform: scale(1.08); transform-origin: 50% 45%;",
+    note: "改用 1956 年达特茅斯 AI workshop 合影裁剪，避免使用晚年头像。"
   },
   "Jürgen Schmidhuber": {
     type: "person",
     status: "ready",
     wikipediaTitle: "Jürgen_Schmidhuber",
-    avatar: "resources/images/figures/juergen-schmidhuber.jpg",
-    note: "来自 Wikipedia/Wikimedia Commons 头像。"
+    avatar: "resources/images/figures/historical/juergen-schmidhuber-1996.png",
+    avatarStyle: "transform: scale(1.16); transform-origin: 50% 40%;",
+    note: "改用作者官网 1996 年照片，时间更接近 1997 年 LSTM 论文。"
   },
   "Marvin Minsky": {
     type: "person",
     status: "ready",
     wikipediaTitle: "Marvin_Minsky",
     avatar: "resources/images/figures/marvin-minsky.jpg",
-    note: "来自 Wikipedia/Wikimedia Commons 头像。"
+    avatarByEvent: {
+      "1956-dartmouth": "resources/images/figures/historical/marvin-minsky-1956-v2.png",
+      "1969-ai-winter": "resources/images/figures/historical/marvin-minsky-1968.png"
+    },
+    avatarStyleByEvent: {
+      "1956-dartmouth": "transform: scale(1.06); transform-origin: 50% 46%;",
+      "1969-ai-winter": "transform: scale(1.32); transform-origin: 50% 35%;"
+    },
+    note: "默认头像保留备用；1956 章节使用达特茅斯合影裁剪，1969 章节使用 1968 年 MIT AI Lab 照片裁剪。"
   },
   "Max Tegmark": {
     type: "person",
@@ -134,8 +155,9 @@ module.exports = {
     type: "person",
     status: "ready",
     wikipediaTitle: "Nathaniel_Rochester_(computer_scientist)",
-    avatar: "resources/images/figures/nathaniel-rochester.jpg",
-    note: "来自 IEEE Computer Society 历史人物页头像。"
+    avatar: "resources/images/figures/historical/nathaniel-rochester-1956-v2.png",
+    avatarStyle: "transform: scale(1.06); transform-origin: 50% 45%;",
+    note: "改用 1956 年达特茅斯 AI workshop 合影裁剪，避免使用晚年头像。"
   },
   "Peter Norvig": {
     type: "person",
@@ -149,6 +171,7 @@ module.exports = {
     status: "ready",
     wikipediaTitle: "Ronald_J._Williams",
     avatar: "resources/images/figures/ronald-williams.jpg",
+    avatarStyle: "transform: scale(1.16); transform-origin: 50% 36%;",
     note: "来自 Northeastern Khoury 纪念页头像。"
   },
   "Sakana AI团队": {
@@ -177,6 +200,7 @@ module.exports = {
     status: "ready",
     wikipediaTitle: "Yann_LeCun",
     avatar: "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+    avatarStyle: "transform: scale(2.28); transform-origin: 52% 43%;",
     note: "本地已有可用人物照片。"
   },
   "Yoshua Bengio": {
@@ -185,6 +209,28 @@ module.exports = {
     wikipediaTitle: "Yoshua_Bengio",
     avatar: "resources/images/2014-attention/people/2014-attention_people_01.png",
     note: "本地已有可用人物照片。"
+  },
+  "何恺明 (Kaiming He)": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "Kaiming_He",
+    avatar: "resources/images/figures/kaiming-he.jpg",
+    note: "双语事件名映射，头像同何恺明。"
+  },
+  "孙剑 (Jian Sun)": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/figures/sun-jian.png",
+    note: "双语事件名映射，头像同孙剑。"
+  },
+  "黄高 (Gao Huang)": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+    avatarStyle: "transform: scale(1.72); transform-origin: 46% 28%;",
+    note: "双语事件名映射，头像同黄高。"
   },
   "伯克利团队": {
     type: "team",
@@ -219,6 +265,7 @@ module.exports = {
     status: "ready",
     wikipediaTitle: "",
     avatar: "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+    avatarStyle: "transform: scale(1.72); transform-origin: 46% 28%;",
     note: "本地已有可用人物照片。"
   }
 };

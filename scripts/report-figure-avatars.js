@@ -36,7 +36,7 @@ function resolveAvatarPath(avatarPath) {
     return path.isAbsolute(trimmed) ? trimmed : path.join(ROOT, trimmed);
 }
 
-function getAvatarInfo(name, figure) {
+function getAvatarInfo(name, figure, eventKey) {
     if (figure && typeof figure.avatar === 'string' && figure.avatar.trim()) {
         const avatar = figure.avatar.trim();
         return {
@@ -45,7 +45,10 @@ function getAvatarInfo(name, figure) {
         };
     }
     const entry = getRegistryEntry(name);
-    const avatar = entry && entry.avatar ? String(entry.avatar).trim() : '';
+    const eventAvatar = entry && eventKey && entry.avatarByEvent
+        ? String(entry.avatarByEvent[eventKey] || '').trim()
+        : '';
+    const avatar = eventAvatar || (entry && entry.avatar ? String(entry.avatar).trim() : '');
     return {
         avatar,
         exists: avatar ? fs.existsSync(resolveAvatarPath(avatar)) : false
@@ -61,7 +64,7 @@ const eventRows = [];
 
 for (const [key, event] of Object.entries(events)) {
     const figures = Array.isArray(event.figures) ? event.figures.filter(Boolean) : [];
-    const readyCount = figures.filter((figure) => getAvatarInfo(figure.name, figure).exists).length;
+    const readyCount = figures.filter((figure) => getAvatarInfo(figure.name, figure, key).exists).length;
     const totalCount = figures.length;
     const legacyPeopleCount = getLegacyPeopleCount(event);
     const state =
@@ -97,7 +100,7 @@ for (const [key, event] of Object.entries(events)) {
         }
 
         const item = figureMap.get(name);
-        const avatarInfo = getAvatarInfo(name, figure);
+        const avatarInfo = getAvatarInfo(name, figure, key);
         if (figure.role) item.roles.add(figure.role);
         item.events.add(key);
         if (!item.avatar && avatarInfo.avatar) item.avatar = avatarInfo.avatar;
