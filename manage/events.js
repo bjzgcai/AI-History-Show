@@ -66,9 +66,9 @@ module.exports = {
       "zh": "摘自PPT第1页"
     },
     "images": [
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
     ],
     "videos": [
@@ -359,10 +359,10 @@ module.exports = {
       "zh": "摘自PPT第9页"
     },
     "images": [
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
-      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
     ],
     "videos": [
@@ -630,6 +630,7 @@ module.exports = {
       "zh": "摘自PPT第19页"
     },
     "images": [
+      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
       "resources/images/1997-lstm/people/1997-lstm_people_01.png"
@@ -638,6 +639,10 @@ module.exports = {
       "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4"
     ],
     "imageMeta": {
+      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg": {
+        "caption": "人物肖像",
+        "subcaption": "Jürgen Schmidhuber，1997 年照片"
+      },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
           "en": "Architecture",
@@ -1317,7 +1322,7 @@ module.exports = {
       "zh": "摘自PPT第37页"
     },
     "images": [
-      "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
     ],
@@ -1325,14 +1330,14 @@ module.exports = {
       "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4"
     ],
     "imageMeta": {
-      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
+      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg": {
         "caption": {
           "en": "Portrait",
           "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Jacob Devlin, lead author of the BERT paper",
+          "zh": "Jacob Devlin，BERT 论文主要作者"
         }
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {

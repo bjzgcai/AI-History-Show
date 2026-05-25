@@ -158,7 +158,7 @@ for (const cat of categories) {
       subtitle:    cat.subtitle,
       location:    ev.location,
       description: ev.description,
-      figures:     (ev.figures || []).map(enrichFigure),
+      figures:     (ev.figures || []).map((figure) => enrichFigure(figure, key)),
       photos:      [],   // 预留字段，暂不使用
       videoUrl:    videos[0] ? (videos[0].embed_url || videos[0].url || '') : '',
       quote:       buildQuote(curatedQuote.text),
@@ -201,14 +201,20 @@ function loadResearchCandidates() {
 }
 
 /** 给人物条目补上显式头像信息 */
-function enrichFigure(figure) {
+function enrichFigure(figure, key) {
   const safeFigure = figure && typeof figure === 'object' ? figure : {};
   const registryEntry = safeFigure.name ? avatarRegistry[safeFigure.name] || {} : {};
+  const eventAvatar = key && registryEntry.avatarByEvent
+    ? registryEntry.avatarByEvent[key] || ''
+    : '';
+  const eventAvatarStyle = key && registryEntry.avatarStyleByEvent
+    ? registryEntry.avatarStyleByEvent[key] || ''
+    : '';
 
   return {
     ...safeFigure,
-    avatar: safeFigure.avatar || registryEntry.avatar || '',
-    avatarStyle: safeFigure.avatarStyle || registryEntry.avatarStyle || '',
+    avatar: safeFigure.avatar || eventAvatar || registryEntry.avatar || '',
+    avatarStyle: safeFigure.avatarStyle || eventAvatarStyle || registryEntry.avatarStyle || '',
     figureType: safeFigure.figureType || registryEntry.type || 'person',
   };
 }

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-21 16:45
+// 生成时间: 2026-05-25 00:00
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -43,8 +43,8 @@ const milestones = [
           "en": "Coined the term \"AI\"",
           "zh": "提出\"AI\"术语"
         },
-        "avatar": "resources/images/figures/john-mccarthy.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
+        "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
         "figureType": "person"
       },
       {
@@ -53,8 +53,8 @@ const milestones = [
           "en": "Cognitive scientist",
           "zh": "认知科学家"
         },
-        "avatar": "resources/images/figures/marvin-minsky.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/marvin-minsky-1956-v2.png",
+        "avatarStyle": "transform: scale(1.06); transform-origin: 50% 46%;",
         "figureType": "person"
       },
       {
@@ -63,8 +63,8 @@ const milestones = [
           "en": "Founder of information theory",
           "zh": "信息论创始人"
         },
-        "avatar": "resources/images/figures/claude-shannon.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/claude-shannon-1956-v2.png",
+        "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
         "figureType": "person"
       },
       {
@@ -73,8 +73,8 @@ const milestones = [
           "en": "IBM architect",
           "zh": "IBM架构师"
         },
-        "avatar": "resources/images/figures/nathaniel-rochester.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/nathaniel-rochester-1956-v2.png",
+        "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
         "figureType": "person"
       }
     ],
@@ -120,9 +120,9 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
       ],
       "imageMeta": {
@@ -222,7 +222,7 @@ const milestones = [
           "zh": "感知机发明者"
         },
         "avatar": "resources/images/figures/frank-rosenblatt.png",
-        "avatarStyle": "",
+        "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
         "figureType": "person"
       }
     ],
@@ -380,8 +380,8 @@ const milestones = [
           "en": "Author of Perceptrons",
           "zh": "《感知器》作者"
         },
-        "avatar": "resources/images/figures/marvin-minsky.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/marvin-minsky-1968.png",
+        "avatarStyle": "transform: scale(1.32); transform-origin: 50% 35%;",
         "figureType": "person"
       }
     ],
@@ -518,7 +518,7 @@ const milestones = [
           "zh": "BP算法作者"
         },
         "avatar": "resources/images/figures/david-rumelhart.jpg",
-        "avatarStyle": "",
+        "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
         "figureType": "person"
       },
       {
@@ -527,8 +527,8 @@ const milestones = [
           "en": "Pioneer of deep learning",
           "zh": "深度学习之父"
         },
-        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/geoffrey-hinton-1986.png",
+        "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
         "figureType": "person"
       },
       {
@@ -538,7 +538,7 @@ const milestones = [
           "zh": "BP算法共同作者"
         },
         "avatar": "resources/images/figures/ronald-williams.jpg",
-        "avatarStyle": "",
+        "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
         "figureType": "person"
       }
     ],
@@ -584,10 +584,10 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
         "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
-        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
         "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
       ],
       "imageMeta": {
@@ -833,7 +833,7 @@ const milestones = [
           "zh": "CNN之父"
         },
         "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
-        "avatarStyle": "",
+        "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
         "figureType": "person"
       }
     ],
@@ -979,8 +979,8 @@ const milestones = [
           "en": "LSTM co-inventor",
           "zh": "LSTM共同发明者"
         },
-        "avatar": "resources/images/figures/juergen-schmidhuber.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/juergen-schmidhuber-1996.png",
+        "avatarStyle": "transform: scale(1.16); transform-origin: 50% 40%;",
         "figureType": "person"
       }
     ],
@@ -1026,11 +1026,16 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg",
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
         "resources/images/1997-lstm/people/1997-lstm_people_01.png"
       ],
       "imageMeta": {
+        "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg": {
+          "caption": "人物肖像",
+          "subcaption": "Jürgen Schmidhuber，1997 年照片"
+        },
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
           "caption": {
             "en": "Architecture",
@@ -1116,8 +1121,8 @@ const milestones = [
           "en": "AlexNet author",
           "zh": "AlexNet作者"
         },
-        "avatar": "resources/images/figures/alex-krizhevsky.jpg",
-        "avatarStyle": "",
+        "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
+        "avatarStyle": "transform: scale(1.08); transform-origin: 50% 47%;",
         "figureType": "person"
       },
       {
@@ -1660,7 +1665,7 @@ const milestones = [
           "en": "ResNet author",
           "zh": "ResNet作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/kaiming-he.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -1670,7 +1675,7 @@ const milestones = [
           "en": "ResNet co-author",
           "zh": "ResNet共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/sun-jian.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1840,8 +1845,8 @@ const milestones = [
           "en": "DenseNet author",
           "zh": "DenseNet作者"
         },
-        "avatar": "",
-        "avatarStyle": "",
+        "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+        "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
         "figureType": "person"
       }
     ],
@@ -1978,7 +1983,7 @@ const milestones = [
           "zh": "Transformer作者"
         },
         "avatar": "resources/images/figures/ashish-vaswani.jpg",
-        "avatarStyle": "",
+        "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
         "figureType": "person"
       }
     ],
@@ -2171,19 +2176,19 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+        "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
       ],
       "imageMeta": {
-        "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
+        "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg": {
           "caption": {
             "en": "Portrait",
             "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "Jacob Devlin, lead author of the BERT paper",
+            "zh": "Jacob Devlin，BERT 论文主要作者"
           }
         },
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
