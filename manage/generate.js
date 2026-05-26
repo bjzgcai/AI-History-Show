@@ -200,10 +200,25 @@ function loadResearchCandidates() {
   }
 }
 
+function figureNameCandidates(figure) {
+  const value = figure && figure.name;
+  const names = isLocalizedText(value)
+    ? [...SUPPORTED_LOCALES.map((locale) => getLocalizedText(value, locale)), ...Object.values(value).map((item) => String(item || '').trim())]
+    : [String(value || '').trim()];
+  return [...new Set(names.filter(Boolean))];
+}
+
+function findAvatarRegistryEntry(figure) {
+  for (const name of figureNameCandidates(figure)) {
+    if (avatarRegistry[name]) return avatarRegistry[name];
+  }
+  return {};
+}
+
 /** 给人物条目补上显式头像信息 */
 function enrichFigure(figure, key) {
   const safeFigure = figure && typeof figure === 'object' ? figure : {};
-  const registryEntry = safeFigure.name ? avatarRegistry[safeFigure.name] || {} : {};
+  const registryEntry = findAvatarRegistryEntry(safeFigure);
   const eventAvatar = key && registryEntry.avatarByEvent
     ? registryEntry.avatarByEvent[key] || ''
     : '';
@@ -379,7 +394,7 @@ function validateAvatarAssets(items) {
         missing.push({
           avatar,
           milestoneId: milestone.id,
-          figureName: figure.name || '未知人物',
+          figureName: getLocalizedText(figure.name) || '未知人物',
         });
       }
     }
