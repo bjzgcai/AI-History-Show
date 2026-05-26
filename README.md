@@ -116,6 +116,22 @@ node manage/generate.js
   共 5 个分类，21 个事件
 ```
 
+### Content assistance checks
+
+Rule-based image metadata assistance is centralized in `resources/content-assistance.js`.
+Generated suggestions stay in `imageMetaSuggestions` until an editor approves them into
+`imageMeta` from the admin UI. Check deterministic behavior with:
+
+```bash
+node scripts/test-content-assistance.js
+```
+
+Related artifacts:
+
+- `docs/content-assistance.md` documents the review flow and output schema.
+- `resources/evaluations/content-assistance-eval.json` seeds future generation evals.
+- `resources/prompts/image-metadata-assistance.md` defines the future LLM prompt contract.
+
 ---
 
 ### 文件 A：`manage/catalog.js` — 展示目录
