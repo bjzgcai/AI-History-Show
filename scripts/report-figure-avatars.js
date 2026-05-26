@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUTPUT = path.join(ROOT, 'manage', 'figure-avatar-report.md');
 const AVATAR_REGISTRY_PATH = path.join(ROOT, 'manage', 'figure-avatars.js');
 
+const { SUPPORTED_LOCALES, getLocalizedText, isLocalizedText } = require(path.join(ROOT, 'shared', 'utils.js'));
 const events = require(path.join(ROOT, 'manage', 'events.js'));
 const avatarRegistry = loadAvatarRegistry();
 
@@ -17,8 +18,31 @@ function escapeCell(value) {
         .replace(/\n/g, '<br>');
 }
 
-function getRegistryEntry(name) {
-    return avatarRegistry[name] || null;
+function textCandidates(value) {
+    const names = isLocalizedText(value)
+        ? [
+              ...SUPPORTED_LOCALES.map((locale) => getLocalizedText(value, locale)),
+              ...Object.values(value).map((item) => String(item || '').trim())
+          ]
+        : [String(value || '').trim()];
+    return [...new Set(names.filter(Boolean))];
+}
+
+function figureDisplayName(figure) {
+    const value = figure && figure.name;
+    return getLocalizedText(value, 'zh') || getLocalizedText(value, 'en') || textCandidates(value)[0] || '';
+}
+
+function figureDisplayRole(figure) {
+    const value = figure && figure.role;
+    return getLocalizedText(value, 'zh') || getLocalizedText(value, 'en') || '';
+}
+
+function getRegistryEntry(figure) {
+    for (const name of textCandidates(figure && figure.name)) {
+        if (avatarRegistry[name]) return avatarRegistry[name];
+    }
+    return null;
 }
 
 function loadAvatarRegistry() {
@@ -52,7 +76,7 @@ function writeIfMeaningfullyChanged(file, content) {
     return true;
 }
 
-function getAvatarInfo(name, figure, eventKey) {
+function getAvatarInfo(figure, eventKey) {
     if (figure && typeof figure.avatar === 'string' && figure.avatar.trim()) {
         const avatar = figure.avatar.trim();
         return {
@@ -60,7 +84,7 @@ function getAvatarInfo(name, figure, eventKey) {
             exists: fs.existsSync(resolveAvatarPath(avatar))
         };
     }
-    const entry = getRegistryEntry(name);
+    const entry = getRegistryEntry(figure);
     const eventAvatar = String(entry?.avatarByEvent?.[eventKey] || '').trim();
     const avatar = eventAvatar || (entry && entry.avatar ? String(entry.avatar).trim() : '');
     return {
@@ -78,7 +102,7 @@ const eventRows = [];
 
 for (const [key, event] of Object.entries(events)) {
     const figures = Array.isArray(event.figures) ? event.figures.filter(Boolean) : [];
-    const readyCount = figures.filter((figure) => getAvatarInfo(figure.name, figure, key).exists).length;
+    const readyCount = figures.filter((figure) => getAvatarInfo(figure, key).exists).length;
     const totalCount = figures.length;
     const legacyPeopleCount = getLegacyPeopleCount(event);
     const state =
@@ -86,7 +110,7 @@ for (const [key, event] of Object.entries(events)) {
 
     eventRows.push({
         key,
-        title: event.title || key,
+        title: getLocalizedText(event.title, 'zh') || getLocalizedText(event.title, 'en') || key,
         totalCount,
         readyCount,
         legacyPeopleCount,
@@ -95,11 +119,11 @@ for (const [key, event] of Object.entries(events)) {
     });
 
     figures.forEach((figure) => {
-        const name = String((figure || {}).name || '').trim();
+        const name = figureDisplayName(figure);
         if (!name) return;
 
         if (!figureMap.has(name)) {
-            const entry = getRegistryEntry(name) || {};
+            const entry = getRegistryEntry(figure) || {};
             figureMap.set(name, {
                 name,
                 type: entry.type || 'person',
@@ -114,8 +138,9 @@ for (const [key, event] of Object.entries(events)) {
         }
 
         const item = figureMap.get(name);
-        const avatarInfo = getAvatarInfo(name, figure, key);
-        if (figure.role) item.roles.add(figure.role);
+        const avatarInfo = getAvatarInfo(figure, key);
+        const role = figureDisplayRole(figure);
+        if (role) item.roles.add(role);
         item.events.add(key);
         if (!item.avatar && avatarInfo.avatar) item.avatar = avatarInfo.avatar;
         item.avatarExists = item.avatarExists || avatarInfo.exists;

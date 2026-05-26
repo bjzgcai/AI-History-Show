@@ -29,28 +29,40 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "John McCarthy",
+        "name": {
+          "en": "John McCarthy",
+          "zh": "约翰·麦卡锡 (John McCarthy)"
+        },
         "role": {
           "en": "Coined the term \"AI\"",
           "zh": "提出\"AI\"术语"
         }
       },
       {
-        "name": "Marvin Minsky",
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "马文·明斯基 (Marvin Minsky)"
+        },
         "role": {
           "en": "Cognitive scientist",
           "zh": "认知科学家"
         }
       },
       {
-        "name": "Claude Shannon",
+        "name": {
+          "en": "Claude Shannon",
+          "zh": "克劳德·香农 (Claude Shannon)"
+        },
         "role": {
           "en": "Founder of information theory",
           "zh": "信息论创始人"
         }
       },
       {
-        "name": "Nathaniel Rochester",
+        "name": {
+          "en": "Nathaniel Rochester",
+          "zh": "纳撒尼尔·罗切斯特 (Nathaniel Rochester)"
+        },
         "role": {
           "en": "IBM architect",
           "zh": "IBM架构师"
@@ -143,7 +155,10 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Frank Rosenblatt",
+        "name": {
+          "en": "Frank Rosenblatt",
+          "zh": "弗兰克·罗森布拉特 (Frank Rosenblatt)"
+        },
         "role": {
           "en": "Inventor of the perceptron",
           "zh": "感知机发明者"
@@ -247,7 +262,10 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Marvin Minsky",
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "马文·明斯基 (Marvin Minsky)"
+        },
         "role": {
           "en": "Author of Perceptrons",
           "zh": "《感知器》作者"
@@ -329,21 +347,30 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "David Rumelhart",
+        "name": {
+          "en": "David Rumelhart",
+          "zh": "大卫·鲁梅尔哈特 (David Rumelhart)"
+        },
         "role": {
           "en": "Backpropagation author",
           "zh": "BP算法作者"
         }
       },
       {
-        "name": "Geoffrey Hinton",
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿 (Geoffrey Hinton)"
+        },
         "role": {
           "en": "Pioneer of deep learning",
           "zh": "深度学习之父"
         }
       },
       {
-        "name": "Ronald Williams",
+        "name": {
+          "en": "Ronald Williams",
+          "zh": "罗纳德·威廉姆斯 (Ronald Williams)"
+        },
         "role": {
           "en": "Backpropagation co-author",
           "zh": "BP算法共同作者"
@@ -447,7 +474,10 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Yann LeCun",
+        "name": {
+          "en": "Yann LeCun",
+          "zh": "杨立昆 (Yann LeCun)"
+        },
         "role": {
           "en": "Pioneer of CNNs",
           "zh": "CNN之父"
@@ -529,14 +559,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Jeffrey Elman",
+        "name": {
+          "en": "Jeffrey Elman",
+          "zh": "杰弗里·埃尔曼 (Jeffrey Elman)"
+        },
         "role": {
           "en": "The creator of Simple RNN",
           "zh": "Simple RNN提出者"
         }
       },
       {
-        "name": "Michael Jordan",
+        "name": {
+          "en": "Michael Jordan",
+          "zh": "迈克尔·乔丹 (Michael Jordan)"
+        },
         "role": {
           "en": "The creator of Jordan Network",
           "zh": "Jordan Network提出者"
@@ -607,14 +643,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Sepp Hochreiter",
+        "name": {
+          "en": "Sepp Hochreiter",
+          "zh": "塞普·霍赫赖特 (Sepp Hochreiter)"
+        },
         "role": {
           "en": "LSTM inventor",
           "zh": "LSTM发明者"
         }
       },
       {
-        "name": "Jürgen Schmidhuber",
+        "name": {
+          "en": "Jürgen Schmidhuber",
+          "zh": "尤尔根·施密德胡伯 (Jürgen Schmidhuber)"
+        },
         "role": {
           "en": "LSTM co-inventor",
           "zh": "LSTM共同发明者"
@@ -701,14 +743,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Alex Krizhevsky",
+        "name": {
+          "en": "Alex Krizhevsky",
+          "zh": "亚历克斯·克里热夫斯基 (Alex Krizhevsky)"
+        },
         "role": {
           "en": "AlexNet author",
           "zh": "AlexNet作者"
         }
       },
       {
-        "name": "Geoffrey Hinton",
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿 (Geoffrey Hinton)"
+        },
         "role": {
           "en": "Advisor",
           "zh": "导师"
@@ -790,14 +838,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Ian Goodfellow",
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛 (Ian Goodfellow)"
+        },
         "role": {
           "en": "GAN inventor",
           "zh": "GAN发明者"
         }
       },
       {
-        "name": "Yoshua Bengio",
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥 (Yoshua Bengio)"
+        },
         "role": {
           "en": "Proposer of Attention Mechanism ",
           "zh": "注意力机制提出者"
@@ -868,14 +922,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "何恺明 (Kaiming He)",
+        "name": {
+          "en": "Kaiming He",
+          "zh": "何恺明 (Kaiming He)"
+        },
         "role": {
           "en": "ResNet author",
           "zh": "ResNet作者"
         }
       },
       {
-        "name": "孙剑 (Jian Sun)",
+        "name": {
+          "en": "Jian Sun",
+          "zh": "孙剑 (Jian Sun)"
+        },
         "role": {
           "en": "ResNet co-author",
           "zh": "ResNet共同作者"
@@ -990,7 +1050,10 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "黄高 (Gao Huang)",
+        "name": {
+          "en": "Gao Huang",
+          "zh": "黄高 (Gao Huang)"
+        },
         "role": {
           "en": "DenseNet author",
           "zh": "DenseNet作者"
@@ -1072,14 +1135,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Ian Goodfellow",
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛 (Ian Goodfellow)"
+        },
         "role": {
           "en": "GAN inventor",
           "zh": "GAN发明者"
         }
       },
       {
-        "name": "Yoshua Bengio",
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥 (Yoshua Bengio)"
+        },
         "role": {
           "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
@@ -1139,14 +1208,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Ian Goodfellow",
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛 (Ian Goodfellow)"
+        },
         "role": {
           "en": "GAN inventor",
           "zh": "GAN发明者"
         }
       },
       {
-        "name": "Yoshua Bengio",
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥 (Yoshua Bengio)"
+        },
         "role": {
           "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
@@ -1217,7 +1292,10 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Ashish Vaswani",
+        "name": {
+          "en": "Ashish Vaswani",
+          "zh": "阿希什·瓦斯瓦尼 (Ashish Vaswani)"
+        },
         "role": {
           "en": "Transformer author",
           "zh": "Transformer作者"
@@ -1299,14 +1377,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Jacob Devlin",
+        "name": {
+          "en": "Jacob Devlin",
+          "zh": "雅各布·德夫林 (Jacob Devlin)"
+        },
         "role": {
           "en": "BERT author",
           "zh": "BERT作者"
         }
       },
       {
-        "name": "Alec Radford",
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德 (Alec Radford)"
+        },
         "role": {
           "en": "GPT author",
           "zh": "GPT作者"
@@ -1388,14 +1472,20 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Jacob Devlin",
+        "name": {
+          "en": "Jacob Devlin",
+          "zh": "雅各布·德夫林 (Jacob Devlin)"
+        },
         "role": {
           "en": "BERT author",
           "zh": "BERT作者"
         }
       },
       {
-        "name": "Alec Radford",
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德 (Alec Radford)"
+        },
         "role": {
           "en": "GPT author",
           "zh": "GPT作者"
@@ -1499,21 +1589,30 @@ module.exports = {
     },
     "figures": [
       {
-        "name": "Stuart Russell",
+        "name": {
+          "en": "Stuart Russell",
+          "zh": "斯图尔特·罗素 (Stuart Russell)"
+        },
         "role": {
           "en": "Founder of Agent Theory",
           "zh": "智能体理论奠基人"
         }
       },
       {
-        "name": "Peter Norvig",
+        "name": {
+          "en": "Peter Norvig",
+          "zh": "彼得·诺维格 (Peter Norvig)"
+        },
         "role": {
           "en": "AIMA author",
           "zh": "AIMA作者"
         }
       },
       {
-        "name": "Michael Wooldridge",
+        "name": {
+          "en": "Michael Wooldridge",
+          "zh": "迈克尔·伍尔德里奇 (Michael Wooldridge)"
+        },
         "role": {
           "en": "Expert in Multi-Agent Systems",
           "zh": "多智能体系统专家"
@@ -1605,11 +1704,14 @@ module.exports = {
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22"
+      "zh": "到2025年，大语言模型进入百花齐放的竞争阶段。LMArena等公开榜单记录了模型家族在推理、多模态、工具使用和部署效率上的快速进展。"
     },
     "figures": [
       {
-        "name": "研究机构",
+        "name": {
+          "en": "Research Organizations",
+          "zh": "研究机构"
+        },
         "role": {
           "en": "Leading-edge model R&D organization",
           "zh": "前沿模型研发机构"
@@ -1625,46 +1727,35 @@ module.exports = {
       "zh": "摘自PPT第39页"
     },
     "images": [
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg",
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg",
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4"
     ],
     "imageMeta": {
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg": {
         "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
+          "en": "Leaderboard",
+          "zh": "榜单示意"
         },
         "subcaption": {
-          "en": "A Flourishing Competition Among Large Language Models",
-          "zh": "大语言模型百花齐放"
+          "en": "LLM leaderboard snapshot",
+          "zh": "大语言模型榜单示意"
         }
       },
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg": {
         "caption": {
           "en": "Architecture",
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "A Flourishing Competition Among Large Language Models",
-          "zh": "大语言模型百花齐放 架构图"
+          "en": "Large language model development pipeline",
+          "zh": "大语言模型发展流程示意"
         }
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
-        "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
-        },
-        "subcaption": {
-          "en": "A Flourishing Competition Among Large Language Models",
-          "zh": "大语言模型百花齐放"
-        }
-      },
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"
@@ -1697,19 +1788,25 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+      "en": "AlphaFold is DeepMind's protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
       "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
     },
     "figures": [
       {
-        "name": "Demis Hassabis",
+        "name": {
+          "en": "Demis Hassabis",
+          "zh": "戴密斯·哈萨比斯 (Demis Hassabis)"
+        },
         "role": {
           "en": "DeepMind CEO",
           "zh": "DeepMind CEO"
         }
       },
       {
-        "name": "John Jumper",
+        "name": {
+          "en": "John Jumper",
+          "zh": "约翰·江珀 (John Jumper)"
+        },
         "role": {
           "en": "AlphaFold Co-Chief Scientists",
           "zh": "AlphaFold 2首席科学家"
@@ -1830,12 +1927,15 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
+      "en": "In 2019, Max Tegmark's team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
       "zh": "2019年，MIT的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（Symmetry）和量纲分析（Dimensional Analysis）作为约束，使用符号回归（Symbolic regression），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。"
     },
     "figures": [
       {
-        "name": "Max Tegmark",
+        "name": {
+          "en": "Max Tegmark",
+          "zh": "马克斯·泰格马克 (Max Tegmark)"
+        },
         "role": {
           "en": "AI Feynman author",
           "zh": "AI Feynman作者"
@@ -1929,19 +2029,25 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments.",
+      "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI's AI Scientist explored autonomous paper generation, while Berkeley's A-Lab used AI-guided laboratories to plan, run and analyze experiments.",
       "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for Science进入新阶段。"
     },
     "figures": [
       {
-        "name": "Sakana AI团队",
+        "name": {
+          "en": "Sakana AI Team",
+          "zh": "Sakana AI团队"
+        },
         "role": {
           "en": "AI Scientist Developer",
           "zh": "AI Scientist开发者"
         }
       },
       {
-        "name": "伯克利团队",
+        "name": {
+          "en": "UC Berkeley Team",
+          "zh": "伯克利团队"
+        },
         "role": {
           "en": "A-Lab Developer",
           "zh": "A-Lab开发者"
