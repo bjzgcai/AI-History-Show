@@ -17,6 +17,7 @@ const PORT    = process.env.PORT || 3001;
 const ROOT    = path.resolve(__dirname, '..');
 const MANAGE  = __dirname;
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
+const contentAssistance = require(path.join(ROOT, 'resources', 'content-assistance.js'));
 const {
   MILESTONE_ID_PREFIX,
   QUOTE_META_FIELDS,
@@ -375,10 +376,9 @@ function readConfiguredImageMetaEntry(map, url) {
   const entry = map[url];
   if (!entry || typeof entry !== 'object') return null;
 
-  const caption = cloneTextValue(entry.caption || entry.title || entry.name || '');
-  const subcaption = cloneTextValue(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
-  if (!localizedText(caption) && !localizedText(subcaption)) return null;
-  return { caption, subcaption };
+  const normalized = contentAssistance.normalizeImageMetadataEntry(entry);
+  if (!localizedText(normalized.caption) && !localizedText(normalized.subcaption)) return null;
+  return normalized;
 }
 
 function deriveDisplayedImageMeta(milestone, url, configured) {
@@ -495,10 +495,9 @@ function normalizeImageMetaMap(map) {
   const normalized = {};
   for (const [url, entry] of Object.entries(source)) {
     if (!entry || typeof entry !== 'object') continue;
-  const caption = localizedText(entry.caption || entry.title || entry.name || '');
-  const subcaption = localizedText(entry.subcaption || entry.subtitle || entry.description || entry.role || '');
-    if (!caption && !subcaption) continue;
-    normalized[url] = { caption, subcaption };
+    const normalizedEntry = contentAssistance.normalizeImageMetadataEntry(entry);
+    if (!localizedText(normalizedEntry.caption) && !localizedText(normalizedEntry.subcaption)) continue;
+    normalized[url] = normalizedEntry;
   }
   return normalized;
 }
@@ -670,6 +669,28 @@ const routes = {
       for (const ev of Object.values(eventsData)) {
         if (ev && typeof ev === 'object' && hasOwn(ev, 'quoteMeta')) {
           ev.quoteMeta = normalizeEditableQuoteMeta(ev.quoteMeta, { preserveKeys: true });
+        }
+        if (ev && typeof ev === 'object' && ev.imageMeta && typeof ev.imageMeta === 'object') {
+          const normalizedImageMeta = {};
+          for (const [imagePath, entry] of Object.entries(ev.imageMeta)) {
+            const normalizedEntry = contentAssistance.normalizeImageMetadataEntry(entry);
+            if (localizedText(normalizedEntry.caption) || localizedText(normalizedEntry.subcaption)) {
+              normalizedImageMeta[imagePath] = normalizedEntry;
+            }
+          }
+          ev.imageMeta = normalizedImageMeta;
+        }
+        if (ev && typeof ev === 'object' && ev.imageMetaSuggestions && typeof ev.imageMetaSuggestions === 'object') {
+          for (const [imagePath, suggestion] of Object.entries(ev.imageMetaSuggestions)) {
+            if (
+              !suggestion ||
+              typeof suggestion !== 'object' ||
+              !localizedText(suggestion.caption) ||
+              !localizedText(suggestion.subcaption)
+            ) {
+              delete ev.imageMetaSuggestions[imagePath];
+            }
+          }
         }
         if (!Array.isArray(ev.figures)) continue;
         ev.figures = ev.figures
