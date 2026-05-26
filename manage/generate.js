@@ -356,10 +356,9 @@ function buildOutputContent(now) {
 }
 
 function normalizeGeneratedTime(content) {
-  return String(content || '').replace(
-    /^\/\/ 生成时间: .+$/m,
-    '// 生成时间: <preserved>'
-  );
+  return String(content || '')
+    .replace(/\r\n/g, '\n')
+    .replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <preserved>');
 }
 
 function writeIfMeaningfullyChanged(file, content) {
