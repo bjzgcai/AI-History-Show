@@ -1,21 +1,25 @@
 services:
     presentation:
-        build: .
+        build:
+            context: .
+            target: presentation
         ports:
             - '8000:8000'
-        environment:
-            PORT: 8000
-        command: npm run start:static
         read_only: true
+        tmpfs:
+            - /tmp
+            - /var/cache/nginx
+            - /var/run
 
     admin:
-        build: .
+        build:
+            context: .
+            target: admin
         ports:
             - '3001:3001'
         environment:
             PORT: 3001
-            HEALTHCHECK_PATH: /admin
-        command: npm run start:admin
+        command: node manage/server.js
         volumes:
             - .:/app
         profiles:
