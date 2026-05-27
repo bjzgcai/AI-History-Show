@@ -7,7 +7,7 @@
         "lint": "eslint .",
         "format": "prettier --write \"shared/**/*.js\" \"scripts/**/*.js\" \".github/**/*.yml\" \"*.json\" \"eslint.config.js\"",
         "format:check": "prettier --check \"shared/**/*.js\" \"scripts/**/*.js\" \".github/**/*.yml\" \"*.json\" \"eslint.config.js\"",
-        "test": "node scripts/test-layout-router.js && node scripts/test-swipe-navigation.js",
+        "test": "node scripts/test-layout-router.js && node scripts/test-swipe-navigation.js && node scripts/test-content-assistance.js",
         "quality": "npm run lint && npm run format:check && npm test"
     },
     "devDependencies": {
