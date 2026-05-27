@@ -38,7 +38,11 @@ PORT=3002 npm run start:admin
 
 ### Docker 单容器预览
 
-`Dockerfile` 默认运行静态展示页，适合验证交付包能在干净环境中启动。
+`Dockerfile` 默认构建 Nginx 展示页镜像，对应下面“方案一：Nginx 云服务器”的部署流程：
+
+1. 使用 Node.js 生成 `milestones-data.js` 和 `milestones-data-default.js`。
+2. 将 `index.html`、`dual-screen.html`、`shared/`、`resources/` 和生成数据复制到 Nginx Web 根目录。
+3. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
 
 ```bash
 docker build -t ai-history-show .
@@ -85,10 +89,12 @@ GitHub Actions 工作流位于 `.github/workflows/deployment.yml`，会执行：
 npm ci
 npm run validate:deployment
 docker build -t ai-history-show:ci .
+docker run --rm -d --name ai-history-show-ci -p 18080:8000 ai-history-show:ci
+curl -fsS http://127.0.0.1:18080/
 docker compose config --quiet
 ```
 
-其中 `validate:deployment` 会生成 `milestones-data.js`，运行现有 JS 测试，并启动展示页与管理服务做 HTTP 冒烟测试。
+其中 `validate:deployment` 会生成 `milestones-data.js`，运行现有 JS 测试，并启动展示页与管理服务做 HTTP 冒烟测试。CI 还会构建 Nginx 容器镜像、运行容器并请求首页，确认容器化展示页可以启动。
 
 ---
 

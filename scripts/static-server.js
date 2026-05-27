@@ -89,7 +89,17 @@ const server = http.createServer((req, res) => {
             return;
         }
 
-        fs.createReadStream(filePath).pipe(res);
+        const stream = fs.createReadStream(filePath);
+        stream.on('error', (error) => {
+            if (res.headersSent) {
+                res.destroy(error);
+                return;
+            }
+
+            res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+            res.end('Internal server error');
+        });
+        stream.pipe(res);
     });
 });
 

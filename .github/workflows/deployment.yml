@@ -30,5 +30,20 @@ jobs:
             - name: Build container image
               run: docker build -t ai-history-show:ci .
 
+            - name: Smoke test container image
+              run: |
+                  docker run --rm -d --name ai-history-show-ci -p 18080:8000 ai-history-show:ci
+                  trap 'docker stop ai-history-show-ci' EXIT
+
+                  for attempt in {1..20}; do
+                      if curl -fsS http://127.0.0.1:18080/ >/dev/null; then
+                          exit 0
+                      fi
+                      sleep 1
+                  done
+
+                  docker logs ai-history-show-ci
+                  exit 1
+
             - name: Validate Compose configuration
               run: docker compose config --quiet

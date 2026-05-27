@@ -44,12 +44,12 @@ async function waitForHttp(url, attempts = 40) {
 async function stopProcess(child) {
     if (child.exitCode !== null) return;
     child.kill('SIGTERM');
-    await Promise.race([
-        once(child, 'exit'),
-        wait(3000).then(() => {
-            if (child.exitCode === null) child.kill('SIGKILL');
-        })
-    ]);
+    const exited = await Promise.race([once(child, 'exit').then(() => true), wait(3000).then(() => false)]);
+
+    if (!exited && child.exitCode === null) {
+        child.kill('SIGKILL');
+        await once(child, 'exit');
+    }
 }
 
 async function validateStaticServer() {
