@@ -1650,27 +1650,47 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 2015, Kaiming He and Jian Sun introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
-      "zh": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层"
+      "en": "In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun at Microsoft Research Asia introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
+      "zh": "2015年，微软亚洲研究院的何恺明、张祥雨、任少卿、孙剑团队提出 ResNet，通过直接加 identity 通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层"
     },
     "figures": [
       {
         "name": "何恺明 (Kaiming He)",
         "role": {
-          "en": "ResNet author",
-          "zh": "ResNet作者"
+          "en": "ResNet first author",
+          "zh": "ResNet第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": "张祥雨 (Xiangyu Zhang)",
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet共同作者"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": "任少卿 (Shaoqing Ren)",
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet共同作者"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
         "name": "孙剑 (Jian Sun)",
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet共同作者"
+          "en": "ResNet senior author",
+          "zh": "ResNet通讯作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1727,32 +1747,32 @@ const milestones = [
       "imageMeta": {
         "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Shaoqing Ren",
+            "zh": "任少卿"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet co-author; now VP of R&D at NIO",
+            "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Kaiming He",
+            "zh": "何恺明"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet first author; Associate Professor at MIT EECS",
+            "zh": "ResNet 第一作者，现任 MIT 电气工程与计算机科学系副教授"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Xiangyu Zhang",
+            "zh": "张祥雨"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet co-author; later at Megvii, now at StepFun",
+            "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰"
           }
         },
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
@@ -1777,12 +1797,12 @@ const milestones = [
         },
         "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Jian Sun",
+            "zh": "孙剑"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)",
+            "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）"
           }
         }
       },
