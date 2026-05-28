@@ -12,23 +12,38 @@
 ## 快速开始
 
 ```bash
+# 按锁文件安装依赖
+npm ci
+
 # 本地预览展示页
-python3 -m http.server 8000
+npm run start:static
 # 访问 http://localhost:8000
 
-# 校验单双屏自适应路由
-node scripts/test-layout-router.js
+# 展厅本机演示服务入口
+npm run start:demo
 
-# 校验触摸滑动翻页规则
-node scripts/test-swipe-navigation.js
+# 校验生成数据、测试和启动路径
+npm run validate:deployment
 
 # 运行完整质量门禁（lint + format check + tests）
-npm install
 npm run quality
 
 # 本地运行内容管理服务
-node manage/server.js
+npm run start:admin
 # 访问 http://localhost:3001/admin
+```
+
+容器化预览：
+
+```bash
+docker build -t ai-history-show .
+docker run --rm -p 8000:8000 ai-history-show
+
+# 或用 Compose 启动 Nginx 展示服务
+docker compose up --build
+
+# 需要本地管理服务时启用 admin profile
+docker compose --profile admin up --build
 ```
 
 > **安全提示**：管理服务（端口 3001）无认证保护，仅供本地使用，**切勿直接暴露到公网**。生产环境请通过 SSH 隧道或 Nginx Basic Auth 访问，详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
@@ -51,11 +66,12 @@ node manage/server.js
 在提交 Pull Request 或合并改动前，请运行：
 
 ```bash
-npm install
+npm ci
 npm run quality
+npm run validate:deployment
 ```
 
-质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。GitHub Actions 会在 push 和 Pull Request 时运行同一套命令。
+质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。部署验证会重新生成里程碑数据、运行测试、启动展示页和管理服务；CI 还会构建 Docker 镜像并校验 Compose 配置。
 
 后续优先补充测试覆盖的模块：
 

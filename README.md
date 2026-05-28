@@ -12,23 +12,38 @@ An interactive frontend application designed for exhibition-hall large-screen di
 ## Quick Start
 
 ```bash
+# Install dependencies from the lockfile
+npm ci
+
 # Preview the exhibition page locally
-python3 -m http.server 8000
+npm run start:static
 # Open http://localhost:8000
 
-# Verify the single/dual-screen adaptive router
-node scripts/test-layout-router.js
+# Run the local demo server entry
+npm run start:demo
 
-# Verify the touch-swipe paging rules
-node scripts/test-swipe-navigation.js
+# Validate generated data, tests, and startup behavior
+npm run validate:deployment
 
 # Run the full quality gate (lint + format check + tests)
-npm install
 npm run quality
 
 # Run the content management server locally
-node manage/server.js
+npm run start:admin
 # Open http://localhost:3001/admin
+```
+
+Containerized preview:
+
+```bash
+docker build -t ai-history-show .
+docker run --rm -p 8000:8000 ai-history-show
+
+# Or run the Nginx presentation service with Compose
+docker compose up --build
+
+# Include the local admin service when needed
+docker compose --profile admin up --build
 ```
 
 > **Security notice**: The management service (port 3001) has no authentication and is intended for **local use only**. **Never expose it directly to the public internet.** For production, access it through an SSH tunnel or behind Nginx Basic Auth — see [DEPLOYMENT.md](DEPLOYMENT.md) for details.
@@ -51,11 +66,12 @@ When authoring content, you can mix plain strings (treated as Chinese) and bilin
 Before opening a Pull Request or merging changes, please run:
 
 ```bash
-npm install
+npm ci
 npm run quality
+npm run validate:deployment
 ```
 
-The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. GitHub Actions runs the same command on push and pull request.
+The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. Deployment validation regenerates the milestone data, runs tests, starts the presentation/admin services, builds the Docker image, and validates the Compose configuration in CI.
 
 Modules that should be prioritized for additional test coverage:
 
