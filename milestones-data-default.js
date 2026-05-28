@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-28 10:13
+// 生成时间: 2026-05-28 10:57
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -1660,7 +1660,7 @@ const milestones = [
           "en": "ResNet first author",
           "zh": "ResNet第一作者"
         },
-        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -1690,7 +1690,7 @@ const milestones = [
           "en": "ResNet senior author",
           "zh": "ResNet通讯作者"
         },
-        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1757,12 +1757,12 @@ const milestones = [
         },
         "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
           "caption": {
-            "en": "Kaiming He",
-            "zh": "何恺明"
+            "en": "Jian Sun",
+            "zh": "孙剑"
           },
           "subcaption": {
-            "en": "ResNet first author; Associate Professor at MIT EECS",
-            "zh": "ResNet 第一作者，现任 MIT 电气工程与计算机科学系副教授"
+            "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)",
+            "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
@@ -1797,12 +1797,12 @@ const milestones = [
         },
         "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
           "caption": {
-            "en": "Jian Sun",
-            "zh": "孙剑"
+            "en": "Kaiming He",
+            "zh": "何恺明"
           },
           "subcaption": {
-            "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)",
-            "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）"
+            "en": "ResNet first author; Associate Professor at MIT EECS",
+            "zh": "ResNet 第一作者，现任 MIT 电气工程与计算机科学系副教授"
           }
         }
       },

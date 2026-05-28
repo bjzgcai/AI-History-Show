@@ -627,6 +627,11 @@
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
+        .figure-row.count-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 28px;
+        }
+
         .figure-chip {
             display: grid;
             grid-template-columns: 52px minmax(0, 1fr);
@@ -1690,7 +1695,8 @@
 
             .figure-row,
             .figure-row.count-2,
-            .figure-row.count-3 {
+            .figure-row.count-3,
+            .figure-row.count-4 {
                 grid-template-columns: 1fr;
             }
 
@@ -3483,13 +3489,13 @@
         function renderFigures(vm) {
             const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
-                ? vm.figures.slice(0, 3)
+                ? vm.figures.slice(0, 4)
                 : [{
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
 
-            refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
+            refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
