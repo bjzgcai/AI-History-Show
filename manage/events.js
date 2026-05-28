@@ -904,12 +904,12 @@ module.exports = {
       "zh": "摘自PPT第26页"
     },
     "images": [
+      "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+      "resources/images/2015-resnet/people/2015-resnet_people_03.png",
       "resources/images/2015-resnet/people/2015-resnet_people_02.png",
       "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-      "resources/images/2015-resnet/people/2015-resnet_people_03.png",
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
-      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
-      "resources/images/2015-resnet/people/2015-resnet_people_04.png"
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4"

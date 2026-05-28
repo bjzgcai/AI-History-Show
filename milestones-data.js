@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-28 10:57
+// 生成时间: 2026-05-28 11:10
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -1737,12 +1737,12 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
-        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_04.png"
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png"
       ],
       "imageMeta": {
         "resources/images/2015-resnet/people/2015-resnet_people_02.png": {

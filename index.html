@@ -2258,7 +2258,7 @@
         function preloadMilestoneAssets(index) {
             if (index < 0 || index >= milestoneList.length) return;
             const vm = getVm(index);
-            sortPhotosForDisplay(vm.photos).slice(0, 5).forEach(preloadImage);
+            sortPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
         }
 
         function preloadAdjacentAssets(index) {
