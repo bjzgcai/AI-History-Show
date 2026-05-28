@@ -2096,7 +2096,7 @@
             if (index < 0 || index >= milestones.length) return;
             const vm = getVm(index);
             sortPhotosForDisplay(vm.photos)
-                .slice(0, 5)
+                .slice(0, 20)
                 .forEach(preloadImage);
         }
 
