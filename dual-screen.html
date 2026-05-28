@@ -1006,6 +1006,22 @@
             top: 0;
         }
 
+        .figure-row.count-4 .figure-chip {
+            width: 188px;
+            grid-template-columns: 64px minmax(0, 1fr);
+            gap: 12px;
+        }
+
+        .figure-row.count-4 .figure-chip:nth-child(1) { left: 0; }
+        .figure-row.count-4 .figure-chip:nth-child(2) { left: 212px; }
+        .figure-row.count-4 .figure-chip:nth-child(3) { left: 424px; }
+        .figure-row.count-4 .figure-chip:nth-child(4) { left: 636px; }
+
+        .figure-row.count-4 .figure-avatar {
+            width: 64px;
+            height: 64px;
+        }
+
         .figure-avatar {
             width: 80px;
             height: 80px;
@@ -2080,7 +2096,7 @@
             if (index < 0 || index >= milestones.length) return;
             const vm = getVm(index);
             sortPhotosForDisplay(vm.photos)
-                .slice(0, 5)
+                .slice(0, 20)
                 .forEach(preloadImage);
         }
 
@@ -3333,13 +3349,13 @@
         function renderFigures(vm) {
             const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
-                ? vm.figures.slice(0, 3)
+                ? vm.figures.slice(0, 4)
                 : [{
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
 
-            refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
+            refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
