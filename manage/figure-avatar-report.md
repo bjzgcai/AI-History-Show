@@ -1,13 +1,13 @@
 # 人物头像缺口报告
 
-生成时间：2026-04-21T06:21:19.332Z
+生成时间：2026-05-28T10:34:43.416Z
 
 ## 摘要
 - 章节事件数：21
-- 去重人物/团队数：31
-- 已有可用头像：31
-- 仍缺可用头像：0
-- 章节覆盖：完整 21 / 部分 0 / 空缺 0
+- 去重人物/团队数：33
+- 已有可用头像：32
+- 仍缺可用头像：1
+- 章节覆盖：完整 20 / 部分 0 / 空缺 1
 
 > 注：`旧 people 图` 只是当前资源目录中落在 `/people/` 下的文件数，不等于真正可用的头像数；非空头像路径但文件不存在时，仍按缺失处理。
 
@@ -15,6 +15,7 @@
 
 | 事件 key | 标题 | 人物数 | 已可用 | 旧 people 图 | 仍缺 | 状态 |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2016-densenet | [object Object] | 1 | 0 | 2 | 1 | none |
 
 ## 人物清单
 
@@ -46,9 +47,11 @@
 | Stuart Russell | person | ready | resources/images/figures/stuart-russell.jpg | ok | Stuart_J._Russell | 2023-agents | 来自 Wikipedia/Wikimedia Commons 头像。 |
 | Yann LeCun | person | ready | resources/images/1989-cnn/people/1989-cnn_people_02.jpg | ok | Yann_LeCun | 1989-cnn | 本地已有可用人物照片。 |
 | Yoshua Bengio | person | ready | resources/images/2014-attention/people/2014-attention_people_01.png | ok | Yoshua_Bengio | 2014-attention, 2014-gan, 2014-highway-network | 本地已有可用人物照片。 |
+| 任少卿 (Shaoqing Ren) | person | unregistered | resources/images/2015-resnet/people/2015-resnet_people_02.png | ok |  | 2015-resnet |  |
 | 伯克利团队 | team | ready | resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png | ok |  | 2024-ai-scientist | 当前使用团队实验室照片，后续可细化为具体作者头像。 |
-| 何恺明 | person | ready | resources/images/figures/kaiming-he.jpg | ok | Kaiming_He | 2015-resnet | 来自 MIT EECS 教师页头像。 |
-| 孙剑 | person | ready | resources/images/figures/sun-jian.png | ok |  | 2015-resnet | 沿用 ResNet 章节现有头像。 |
+| 何恺明 (Kaiming He) | person | unregistered | resources/images/2015-resnet/people/2015-resnet_people_01.png | ok |  | 2015-resnet |  |
+| 孙剑 (Jian Sun) | person | unregistered | resources/images/2015-resnet/people/2015-resnet_people_04.png | ok |  | 2015-resnet |  |
+| 张祥雨 (Xiangyu Zhang) | person | unregistered | resources/images/2015-resnet/people/2015-resnet_people_03.png | ok |  | 2015-resnet |  |
 | 研究机构 | team | ready | resources/images/figures/research-institution.png | ok |  | 2025-llm-competition | 使用本地机房图作为研究机构头像。 |
-| 黄高 | person | ready | resources/images/2016-densenet/people/2016-densenet_people_02.png | ok |  | 2016-densenet | 本地已有可用人物照片。 |
+| 黄高 (Gao Huang) | person | unregistered |  | missing |  | 2016-densenet |  |
 
