@@ -49,7 +49,8 @@
                 signature: 'Attribution',
                 keyFiguresArchiveNarrative: 'Key Figures & Archive Narrative',
                 commentaryMedia: 'Commentary & Media',
-                storylineSelector: 'Storyline'
+                storylineSelector: 'Storyline',
+                achievementMap: 'Achievement Map'
             },
             zh: {
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
@@ -96,7 +97,8 @@
                 signature: '署名',
                 keyFiguresArchiveNarrative: '关键人物与档案叙事',
                 commentaryMedia: '评论与媒体',
-                storylineSelector: '故事线'
+                storylineSelector: '故事线',
+                achievementMap: '成就地图'
             }
         }
     };

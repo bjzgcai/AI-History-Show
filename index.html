@@ -1432,6 +1432,107 @@
             font-size: 18px;
         }
 
+        .timeline-track.achievement-map-track {
+            height: 64px;
+            grid-auto-columns: minmax(0, 1fr);
+            align-items: stretch;
+            gap: 12px;
+            overflow: visible;
+            cursor: default;
+        }
+
+        .timeline-track.achievement-map-track::before {
+            left: 40px;
+            right: 40px;
+            top: 31px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(246, 137, 0, 0), rgba(246, 137, 0, 0.44), rgba(246, 137, 0, 0));
+            opacity: 1;
+        }
+
+        .achievement-map-node {
+            position: relative;
+            z-index: 1;
+            min-width: 0;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018)),
+                rgba(10, 10, 10, 0.88);
+            color: rgba(244, 239, 229, 0.76);
+            padding: 8px 10px 8px 48px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: 3px;
+            text-align: left;
+            cursor: pointer;
+            overflow: hidden;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .achievement-map-node:hover,
+        .achievement-map-node.active {
+            border-color: rgba(246, 137, 0, 0.7);
+            background:
+                linear-gradient(180deg, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.04)),
+                rgba(14, 10, 6, 0.94);
+        }
+
+        .achievement-map-node:hover {
+            transform: translateY(-1px);
+        }
+
+        .achievement-map-index {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(246, 137, 0, 0.42);
+            color: var(--accent);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1;
+            background: rgba(0, 0, 0, 0.44);
+        }
+
+        .achievement-map-area {
+            color: rgba(244, 239, 229, 0.5);
+            font-size: 10px;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .achievement-map-title {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 15px;
+            font-weight: 800;
+            line-height: 1.12;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .achievement-map-method {
+            color: rgba(244, 239, 229, 0.54);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         .footer-status {
             min-width: 0;
             margin-left: auto;
@@ -1868,6 +1969,23 @@
                 height: 44px;
             }
 
+            .timeline-track.achievement-map-track {
+                height: auto;
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .timeline-track.achievement-map-track::before {
+                display: none;
+            }
+
+            .achievement-map-node {
+                min-height: 54px;
+                padding: 8px 10px 8px 44px;
+            }
+
             .timeline-tick span {
                 font-size: 0;
             }
@@ -2022,7 +2140,7 @@
 
                 <div class="timeline-block">
                     <div class="timeline-meta">
-                        <div class="timeline-current-year">Timeline</div>
+                        <div class="timeline-current-year" id="timelineModeLabel">Timeline</div>
                         <div class="footer-status">
                             <div class="footer-status-text" id="statusText">达特茅斯会议 - AI正式诞生！</div>
                             <div class="footer-counter" id="counterText">1 / 21</div>
@@ -2092,6 +2210,7 @@
             },
             {
                 id: 'bench-council-ai100',
+                layout: 'achievement-map',
                 label: {
                     en: 'AI Top 100 Achievements',
                     zh: 'AI 百大成就'
@@ -2106,9 +2225,22 @@
             return DEFAULT_STORYLINE_ID;
         };
         const getStorylineMilestones = (storylineId) => allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId);
-        let activeStorylineId = getStorylineMilestones(DEFAULT_STORYLINE_ID).length > 0
+        const getStorylineOption = (storylineId) => STORYLINE_OPTIONS.find((option) => option.id === storylineId) || null;
+        const hasStorylineMilestones = (storylineId) => getStorylineMilestones(storylineId).length > 0;
+        const getRequestedStorylineId = () => {
+            try {
+                return new URLSearchParams(window.location.search).get('storyline') || '';
+            } catch (_) {
+                return '';
+            }
+        };
+        const getFallbackStorylineId = () => hasStorylineMilestones(DEFAULT_STORYLINE_ID)
             ? DEFAULT_STORYLINE_ID
-            : (STORYLINE_OPTIONS.find((option) => getStorylineMilestones(option.id).length > 0) || {}).id || DEFAULT_STORYLINE_ID;
+            : (STORYLINE_OPTIONS.find((option) => hasStorylineMilestones(option.id)) || {}).id || DEFAULT_STORYLINE_ID;
+        const requestedStorylineId = getRequestedStorylineId();
+        let activeStorylineId = requestedStorylineId && hasStorylineMilestones(requestedStorylineId)
+            ? requestedStorylineId
+            : getFallbackStorylineId();
         let milestoneList = getStorylineMilestones(activeStorylineId);
 
         let currentIndex = 0;
@@ -2176,6 +2308,7 @@
             prevBtn: document.getElementById('prevBtn'),
             nextBtn: document.getElementById('nextBtn'),
             storylineSelect: document.getElementById('storylineSelect'),
+            timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
             globeStage: document.getElementById('globeStage'),
             globeShell: document.getElementById('globeShell'),
@@ -2242,6 +2375,28 @@
             return String(lx(option && option.label) || (option && option.id) || '').trim();
         }
 
+        function getActiveStorylineOption() {
+            return getStorylineOption(activeStorylineId);
+        }
+
+        function isAchievementMapActive() {
+            const option = getActiveStorylineOption();
+            return Boolean(option && option.layout === 'achievement-map');
+        }
+
+        function updateStorylineUrl(storylineId) {
+            if (!window.history || !window.location) return;
+            try {
+                const url = new URL(window.location.href);
+                if (storylineId && storylineId !== DEFAULT_STORYLINE_ID) {
+                    url.searchParams.set('storyline', storylineId);
+                } else {
+                    url.searchParams.delete('storyline');
+                }
+                window.history.replaceState(null, '', url);
+            } catch (_) {}
+        }
+
         function renderStorylineSelect() {
             if (!refs.storylineSelect) return;
 
@@ -2255,11 +2410,11 @@
                 return `<option value="${escapeHtml(option.id)}"${selected}${disabled}>${escapeHtml(label + suffix)}</option>`;
             }).join('');
 
-            const activeOption = STORYLINE_OPTIONS.find((option) => option.id === activeStorylineId);
+            const activeOption = getActiveStorylineOption();
             refs.storylineSelect.title = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
         }
 
-        function setActiveStoryline(storylineId) {
+        function setActiveStoryline(storylineId, options = {}) {
             const nextMilestones = getStorylineMilestones(storylineId);
             if (!nextMilestones.length) {
                 renderStorylineSelect();
@@ -2273,6 +2428,9 @@
             vmCache.clear();
             resetInlineMedia();
             renderStorylineSelect();
+            if (options.updateUrl) {
+                updateStorylineUrl(activeStorylineId);
+            }
             renderPage(currentIndex);
             resetPortraitScrollPosition();
         }
@@ -3795,7 +3953,46 @@
             `).join('');
         }
 
+        function getAchievementField(milestone, field, fallback = '') {
+            return String(lx(milestone && milestone.achievement && milestone.achievement[field]) || fallback || '').trim();
+        }
+
+        function renderAchievementMap() {
+            refs.timelineModeLabel.textContent = tx('achievementMap');
+            refs.timelineTrack.classList.add('achievement-map-track');
+            refs.timelineTrack.innerHTML = milestoneList.map((item, index) => {
+                const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
+                const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
+                const method = getAchievementField(item, 'method', String(item.year || ''));
+                const material = getAchievementField(item, 'material', '');
+                const active = index === currentIndex ? ' active' : '';
+                const titleText = [area, title, method, material].filter(Boolean).join(' · ');
+                return `
+                    <button class="achievement-map-node${active}" type="button" data-index="${index}" title="${escapeHtml(titleText)}">
+                        <span class="achievement-map-index">${String(index + 1).padStart(2, '0')}</span>
+                        <span class="achievement-map-area">${escapeHtml(area || tx('aiHistory'))}</span>
+                        <span class="achievement-map-title">${escapeHtml(title)}</span>
+                        <span class="achievement-map-method">${escapeHtml(method || material || String(item.year || ''))}</span>
+                    </button>
+                `;
+            }).join('');
+
+            refs.timelineTrack.querySelectorAll('.achievement-map-node').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = Number(button.dataset.index);
+                    jumpTo(index);
+                });
+            });
+        }
+
         function renderTimeline(vm) {
+            if (isAchievementMapActive()) {
+                renderAchievementMap();
+                return;
+            }
+
+            refs.timelineModeLabel.textContent = 'Timeline';
+            refs.timelineTrack.classList.remove('achievement-map-track');
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
                 <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
@@ -4197,7 +4394,7 @@
             renderStorylineSelect();
             if (refs.storylineSelect) {
                 refs.storylineSelect.addEventListener('change', () => {
-                    setActiveStoryline(refs.storylineSelect.value);
+                    setActiveStoryline(refs.storylineSelect.value, { updateUrl: true });
                 });
             }
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
