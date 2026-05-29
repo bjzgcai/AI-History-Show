@@ -150,6 +150,7 @@ for (const cat of categories) {
       }
     }
 
+    const commentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
     const milestone = {
       id:          `${MILESTONE_ID_PREFIX}${key}`,
       year:        ev.year,
@@ -165,7 +166,7 @@ for (const cat of categories) {
       quoteAttribution: curatedQuote.attribution,
       quoteMeta:   curatedQuote.meta,
       quotePage:   ev.quotePage || '',
-      commentarySections: buildCommentarySectionsOverride(key),
+      commentarySections,
       resources: {
         images: ev.images || [],
         imageMeta: ev.imageMeta || {},
@@ -175,6 +176,7 @@ for (const cat of categories) {
 
     const storyline = ev.storyline || cat.storyline || null;
     if (storyline) milestone.storyline = storyline;
+    if (ev.achievement) milestone.achievement = ev.achievement;
 
     milestones.push(milestone);
   }

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-29 01:45
+// 生成时间: 2026-05-29 02:29
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -3253,8 +3253,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "BenchCouncil AI100 places the Turing test at the beginning of its theory thread. In 1950, Alan Turing turned the abstract question of machine intelligence into an operational test: judge the behavior of a machine through conversation, rather than by peering inside its mechanism. The idea became a durable reference point for AI evaluation.",
-      "zh": "BenchCouncil AI100 将图灵测试放在理论线索的开端。1950 年，Alan Turing 将“机器能否思考”这个抽象问题转化为可操作的测试：通过对话来判断机器的行为，而不是直接观察机器内部机制。它由此成为 AI 评估长期绕不开的参照点。"
+      "en": "<p>BenchCouncil AI100 places the Turing test at the beginning of its theory thread. In 1950, Alan Turing turned the abstract question of machine intelligence into an operational test: judge a machine by its conversational behavior, not by opening the machine and inspecting its mechanism.</p><p>The achievement is bigger than a single benchmark. It introduced a pattern still visible in modern AI evaluation: define a protocol, hide irrelevant identity cues, collect human judgments, then debate what the result actually proves.</p>",
+      "zh": "<p>BenchCouncil AI100 将图灵测试放在理论线索的开端。1950 年，Alan Turing 将“机器能否思考”这个抽象问题转化为可操作的测试：通过对话行为来判断机器，而不是打开机器去观察内部机制。</p><p>它的意义不止是一个早期基准。它提出了一种现代 AI 评估仍在沿用的模式：定义协议，遮蔽身份线索，收集人类判断，再讨论结果到底能证明什么。</p>"
     },
     "figures": [
       {
@@ -3277,13 +3277,50 @@ const milestones = [
       "en": "\"I propose to consider the question, 'Can machines think?'\"",
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
     },
-    "quoteAttribution": "",
-    "quoteMeta": {},
+    "quoteAttribution": "《Computing Machinery and Intelligence》, Alan M. Turing, Mind, 1950",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Computing Machinery and Intelligence",
+      "workAuthors": "Alan M. Turing, Mind, 1950",
+      "sourceLabel": "",
+      "sourceUrl": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+    },
     "quotePage": {
       "en": "BenchCouncil AI100: Theory / Turing test",
       "zh": "BenchCouncil AI100：理论 / 图灵测试"
     },
-    "commentarySections": [],
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols.",
+          "zh": "Turing 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。Turing Digital Archive 也保存了这篇原文，适合与现代评测协议并置展示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation Logic",
+          "zh": "评估逻辑"
+        },
+        "html": {
+          "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance.",
+          "zh": "图灵测试最值得展示的是评估设计：盲测交互、受限通道、人类判断和明确成功标准。这让它自然连接到红队测试、人类偏好评测和基准治理。"
+        }
+      },
+      {
+        "label": {
+          "en": "Demo Hook",
+          "zh": "展示钩子"
+        },
+        "html": {
+          "en": "Build a blind transcript booth: viewers compare two anonymous answer streams, vote human or machine, then see how a single evaluation protocol can both reveal ability and hide important context.",
+          "zh": "可做成“盲测对话亭”：观众比较两段匿名回答，投票判断人或机器，再揭示同一套评估协议既能显示能力，也会隐藏重要上下文。"
+        }
+      }
+    ],
     "resources": {
       "images": [],
       "imageMeta": {},
@@ -3294,6 +3331,28 @@ const milestones = [
       "name": {
         "en": "AI Top 100 Achievements",
         "zh": "AI 百大成就"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Theory",
+        "zh": "理论"
+      },
+      "method": {
+        "en": "Behavioral evaluation",
+        "zh": "行为评估"
+      },
+      "artifact": {
+        "en": "Imitation game protocol",
+        "zh": "模仿游戏协议"
+      },
+      "material": {
+        "en": "Paper + archive",
+        "zh": "论文 + 档案"
+      },
+      "demo": {
+        "en": "Blind transcript vote",
+        "zh": "匿名对话投票"
       }
     }
   },
@@ -3327,8 +3386,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In the BenchCouncil AI100 language section, LISP marks the moment when symbolic AI gained a practical medium. John McCarthy's language treated programs and data as list structures, making recursive symbolic manipulation natural. For decades, it shaped AI laboratories, expert systems, theorem provers, and the culture of AI programming.",
-      "zh": "在 BenchCouncil AI100 的语言类目中，LISP 标志着符号 AI 获得了可实践的媒介。John McCarthy 的语言把程序和数据都组织成表结构，使递归式符号处理变得自然。此后几十年，它深刻影响了 AI 实验室、专家系统、定理证明器以及 AI 编程文化。"
+      "en": "<p>In the BenchCouncil AI100 language section, LISP marks the moment when symbolic AI gained a practical medium. John McCarthy's language treated programs and data as list structures, making recursive symbolic manipulation a native act of programming.</p><p>The achievement is not only the invention of a language. It gave AI researchers compact primitives for representing knowledge, transforming expressions, building theorem provers and experimenting with systems whose own programs could be manipulated as data.</p>",
+      "zh": "<p>在 BenchCouncil AI100 的语言类目中，LISP 标志着符号 AI 获得了可实践的媒介。John McCarthy 的语言把程序和数据都组织成表结构，使递归式符号处理成为编程语言本身的自然能力。</p><p>它的成就不只是发明一门语言，而是为 AI 研究者提供了表示知识、变换表达式、构造定理证明器以及把程序自身当作数据处理的一组简洁原语。</p>"
     },
     "figures": [
       {
@@ -3351,13 +3410,50 @@ const milestones = [
       "en": "\"Recursive functions of symbolic expressions became a working language for artificial intelligence.\"",
       "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
     },
-    "quoteAttribution": "",
-    "quoteMeta": {},
+    "quoteAttribution": "《Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I》, John McCarthy, Communications of the ACM, 1960",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I",
+      "workAuthors": "John McCarthy, Communications of the ACM, 1960",
+      "sourceLabel": "",
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive.html"
+    },
     "quotePage": {
       "en": "BenchCouncil AI100: Language / LISP",
       "zh": "BenchCouncil AI100：语言 / LISP"
     },
-    "commentarySections": [],
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool.",
+          "zh": "McCarthy 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I Programmer's Manual 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。"
+        }
+      },
+      {
+        "label": {
+          "en": "API-Like Primitives",
+          "zh": "类 API 原语"
+        },
+        "html": {
+          "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems.",
+          "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。"
+        }
+      },
+      {
+        "label": {
+          "en": "Demo Hook",
+          "zh": "展示钩子"
+        },
+        "html": {
+          "en": "Show an expression entering an EVAL machine: a nested list flows through QUOTE, CAR/CDR and COND until the symbolic expression reduces to an answer. The point is to make code-as-data visible.",
+          "zh": "可做成“EVAL 机器”：嵌套表进入系统，经过 QUOTE、CAR/CDR 与 COND，一步步归约成结果。展示重点是让“代码即数据”变得可见。"
+        }
+      }
+    ],
     "resources": {
       "images": [],
       "imageMeta": {},
@@ -3368,6 +3464,28 @@ const milestones = [
       "name": {
         "en": "AI Top 100 Achievements",
         "zh": "AI 百大成就"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Language",
+        "zh": "语言"
+      },
+      "method": {
+        "en": "Symbolic recursion",
+        "zh": "符号递归"
+      },
+      "artifact": {
+        "en": "S-expression evaluator",
+        "zh": "S 表达式求值器"
+      },
+      "material": {
+        "en": "Paper + manual",
+        "zh": "论文 + 手册"
+      },
+      "demo": {
+        "en": "EVAL reduction",
+        "zh": "EVAL 归约"
       }
     }
   },
@@ -3401,8 +3519,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "BenchCouncil AI100 lists AlphaGo under reinforcement learning. The system combined deep neural networks, Monte Carlo tree search, supervised learning from expert games, and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience and reframed what machine learning systems could master.",
-      "zh": "BenchCouncil AI100 将 AlphaGo 列在强化学习线索之下。这个系统结合深度神经网络、蒙特卡洛树搜索、专家棋谱监督学习以及自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见，也重新定义了机器学习系统能够掌握的复杂任务。"
+      "en": "<p>BenchCouncil AI100 lists AlphaGo under reinforcement learning. The system combined deep neural networks, Monte Carlo tree search, supervised learning from expert games and reinforcement learning through self-play.</p><p>The 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The richer technical story is that AlphaGo did not merely search harder; it learned where to search, how to value positions and how to improve through play.</p>",
+      "zh": "<p>BenchCouncil AI100 将 AlphaGo 列在强化学习线索之下。这个系统结合深度神经网络、蒙特卡洛树搜索、专家棋谱监督学习以及自我对弈强化学习。</p><p>2016 年与李世石的对局让 AI 的战略能力被全球观众看见。更丰富的技术故事是：AlphaGo 并不只是“搜索更多”，而是学会了在哪里搜索、如何评估局面，以及如何通过对弈提升自己。</p>"
     },
     "figures": [
       {
@@ -3451,13 +3569,50 @@ const milestones = [
       "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
-    "quoteAttribution": "",
-    "quoteMeta": {},
+    "quoteAttribution": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+      "workAuthors": "David Silver et al., Nature, 2016",
+      "sourceLabel": "",
+      "sourceUrl": "https://www.nature.com/articles/nature16961"
+    },
     "quotePage": {
       "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
       "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
     },
-    "commentarySections": [],
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+          "zh": "Nature 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+        }
+      },
+      {
+        "label": {
+          "en": "Blog / API Materials",
+          "zh": "博客 / API 材料"
+        },
+        "html": {
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Demo Hook",
+          "zh": "展示钩子"
+        },
+        "html": {
+          "en": "Use a Go-board explainer around Move 37: contrast human prior, policy suggestion, search tree and later board consequence. It turns a single move into a visible story about learned intuition plus planning.",
+          "zh": "可围绕第 37 手做围棋棋盘解释器：对比人类先验、策略网络建议、搜索树和后续局面影响。这样能把一个落子变成“学习直觉 + 规划搜索”的可见故事。"
+        }
+      }
+    ],
     "resources": {
       "images": [],
       "imageMeta": {},
@@ -3468,6 +3623,28 @@ const milestones = [
       "name": {
         "en": "AI Top 100 Achievements",
         "zh": "AI 百大成就"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement Learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Self-play search",
+        "zh": "自我对弈搜索"
+      },
+      "artifact": {
+        "en": "Policy/value networks + MCTS",
+        "zh": "策略 / 价值网络 + MCTS"
+      },
+      "material": {
+        "en": "Nature paper + blog + SGF/API",
+        "zh": "Nature 论文 + 博客 + 棋谱/API"
+      },
+      "demo": {
+        "en": "Move 37 board explainer",
+        "zh": "第 37 手棋盘解释器"
       }
     }
   }
