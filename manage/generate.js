@@ -150,7 +150,7 @@ for (const cat of categories) {
       }
     }
 
-    milestones.push({
+    const milestone = {
       id:          `${MILESTONE_ID_PREFIX}${key}`,
       year:        ev.year,
       category:    cat.name,
@@ -171,7 +171,12 @@ for (const cat of categories) {
         imageMeta: ev.imageMeta || {},
         videos,
       },
-    });
+    };
+
+    const storyline = ev.storyline || cat.storyline || null;
+    if (storyline) milestone.storyline = storyline;
+
+    milestones.push(milestone);
   }
 }
 

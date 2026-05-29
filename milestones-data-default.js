@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-21 16:45
+// 生成时间: 2026-05-29 01:45
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -3221,6 +3221,254 @@ const milestones = [
           "source": "Web"
         }
       ]
+    }
+  },
+  {
+    "id": "milestone-1950-turing-test",
+    "year": 1950,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Turing Test: A Question Becomes a Benchmark",
+      "zh": "图灵测试：一个问题成为基准"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Manchester",
+        "zh": "曼彻斯特大学"
+      },
+      "country": {
+        "en": "Manchester, United Kingdom",
+        "zh": "英国，曼彻斯特"
+      },
+      "coordinates": [
+        53.4668,
+        -2.2339
+      ]
+    },
+    "description": {
+      "en": "BenchCouncil AI100 places the Turing test at the beginning of its theory thread. In 1950, Alan Turing turned the abstract question of machine intelligence into an operational test: judge the behavior of a machine through conversation, rather than by peering inside its mechanism. The idea became a durable reference point for AI evaluation.",
+      "zh": "BenchCouncil AI100 将图灵测试放在理论线索的开端。1950 年，Alan Turing 将“机器能否思考”这个抽象问题转化为可操作的测试：通过对话来判断机器的行为，而不是直接观察机器内部机制。它由此成为 AI 评估长期绕不开的参照点。"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alan Turing",
+          "zh": "艾伦·图灵 (Alan Turing)"
+        },
+        "role": {
+          "en": "Proposed the imitation game",
+          "zh": "提出模仿游戏"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"I propose to consider the question, 'Can machines think?'\"",
+      "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "BenchCouncil AI100: Theory / Turing test",
+      "zh": "BenchCouncil AI100：理论 / 图灵测试"
+    },
+    "commentarySections": [],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements",
+        "zh": "AI 百大成就"
+      }
+    }
+  },
+  {
+    "id": "milestone-1958-lisp",
+    "year": 1958,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "LISP: Symbolic AI Gets a Language",
+      "zh": "LISP：符号 AI 获得编程语言"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "MIT",
+        "zh": "麻省理工学院"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国，马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "In the BenchCouncil AI100 language section, LISP marks the moment when symbolic AI gained a practical medium. John McCarthy's language treated programs and data as list structures, making recursive symbolic manipulation natural. For decades, it shaped AI laboratories, expert systems, theorem provers, and the culture of AI programming.",
+      "zh": "在 BenchCouncil AI100 的语言类目中，LISP 标志着符号 AI 获得了可实践的媒介。John McCarthy 的语言把程序和数据都组织成表结构，使递归式符号处理变得自然。此后几十年，它深刻影响了 AI 实验室、专家系统、定理证明器以及 AI 编程文化。"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John McCarthy",
+          "zh": "约翰·麦卡锡 (John McCarthy)"
+        },
+        "role": {
+          "en": "Designer of LISP",
+          "zh": "LISP 设计者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Recursive functions of symbolic expressions became a working language for artificial intelligence.\"",
+      "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "BenchCouncil AI100: Language / LISP",
+      "zh": "BenchCouncil AI100：语言 / LISP"
+    },
+    "commentarySections": [],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements",
+        "zh": "AI 百大成就"
+      }
+    }
+  },
+  {
+    "id": "milestone-2016-alphago",
+    "year": 2016,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "AlphaGo: Search, Learning, and Go",
+      "zh": "AlphaGo：搜索、学习与围棋"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国，伦敦"
+      },
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "en": "BenchCouncil AI100 lists AlphaGo under reinforcement learning. The system combined deep neural networks, Monte Carlo tree search, supervised learning from expert games, and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience and reframed what machine learning systems could master.",
+      "zh": "BenchCouncil AI100 将 AlphaGo 列在强化学习线索之下。这个系统结合深度神经网络、蒙特卡洛树搜索、专家棋谱监督学习以及自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见，也重新定义了机器学习系统能够掌握的复杂任务。"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Silver",
+          "zh": "大卫·席尔瓦 (David Silver)"
+        },
+        "role": {
+          "en": "AlphaGo lead researcher",
+          "zh": "AlphaGo 主要研究者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Demis Hassabis",
+          "zh": "戴密斯·哈萨比斯 (Demis Hassabis)"
+        },
+        "role": {
+          "en": "DeepMind co-founder",
+          "zh": "DeepMind 联合创始人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Aja Huang",
+          "zh": "黄士杰 (Aja Huang)"
+        },
+        "role": {
+          "en": "AlphaGo researcher",
+          "zh": "AlphaGo 研究者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
+      "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
+      "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
+    },
+    "commentarySections": [],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements",
+        "zh": "AI 百大成就"
+      }
     }
   }
 ];
