@@ -1292,15 +1292,23 @@
         .bench-material-panel {
             padding: 18px 16px;
             display: grid;
+            gap: 16px;
+        }
+
+        .bench-map-panel {
             grid-template-rows: auto minmax(0, 1fr);
             gap: 16px;
+        }
+
+        .bench-material-panel {
+            grid-template-rows: auto 214px minmax(0, 1fr);
         }
 
         .bench-core-panel {
             position: relative;
             padding: 24px 26px;
             display: grid;
-            grid-template-rows: auto auto minmax(88px, auto) minmax(0, 1fr);
+            grid-template-rows: auto auto minmax(72px, auto) 206px minmax(0, 1fr);
             gap: 16px;
         }
 
@@ -1349,7 +1357,7 @@
         }
 
         .bench-core-summary {
-            max-height: 128px;
+            max-height: 106px;
             overflow: auto;
             padding-right: 8px;
             color: rgba(244, 239, 229, 0.9);
@@ -1359,6 +1367,74 @@
 
         .bench-core-summary p + p {
             margin-top: 0.7em;
+        }
+
+        .bench-hero-visual {
+            min-height: 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(0, 0, 0, 0.24);
+        }
+
+        .bench-hero-visual.has-photo::before {
+            content: "";
+            position: absolute;
+            inset: -18px;
+            background-image: var(--bench-photo);
+            background-size: cover;
+            background-position: center;
+            filter: blur(18px);
+            opacity: 0.42;
+            transform: scale(1.08);
+        }
+
+        .bench-hero-visual::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 2;
+            box-shadow: inset 0 0 44px rgba(0, 0, 0, 0.42);
+        }
+
+        .bench-hero-visual img {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .bench-hero-visual.is-empty {
+            display: none;
+        }
+
+        .bench-hero-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            z-index: 3;
+            padding: 10px 14px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0));
+            color: rgba(244, 239, 229, 0.88);
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .bench-hero-caption span:first-child {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
         }
 
         .bench-map-list,
@@ -1445,8 +1521,8 @@
         .bench-demo-surface {
             min-height: 0;
             display: grid;
-            grid-template-columns: minmax(0, 1fr) 260px;
-            gap: 18px;
+            grid-template-columns: minmax(0, 1fr) 230px;
+            gap: 16px;
             align-items: stretch;
         }
 
@@ -1459,19 +1535,24 @@
         }
 
         .bench-demo-visual {
-            padding: 18px;
+            padding: 16px;
             overflow: hidden;
+            display: grid;
         }
 
         .bench-demo-steps {
-            padding: 14px;
+            padding: 16px;
             display: grid;
-            align-content: start;
-            gap: 10px;
+            align-content: stretch;
+            gap: 12px;
         }
 
         .bench-demo-step {
-            min-height: 56px;
+            min-height: 0;
+            border: 1px solid rgba(244, 239, 229, 0.08);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.028);
+            padding: 11px 10px;
             display: grid;
             grid-template-columns: 24px minmax(0, 1fr);
             align-items: center;
@@ -1497,6 +1578,7 @@
         .bench-transcript-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: minmax(0, 1fr) auto;
             gap: 14px;
             height: 100%;
         }
@@ -1506,9 +1588,37 @@
             border-radius: 7px;
             padding: 16px;
             display: grid;
-            grid-template-rows: auto minmax(0, 1fr) auto;
+            grid-template-rows: auto auto auto;
+            align-content: start;
             gap: 14px;
             background: rgba(255, 255, 255, 0.03);
+        }
+
+        .bench-transcript-ruling {
+            grid-column: 1 / -1;
+            border: 1px solid rgba(246, 137, 0, 0.24);
+            border-radius: 7px;
+            background: rgba(246, 137, 0, 0.055);
+            padding: 13px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        }
+
+        .bench-transcript-ruling span {
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-transcript-ruling strong {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 16px;
+            line-height: 1.25;
+            text-align: right;
         }
 
         .bench-transcript-label,
@@ -1523,7 +1633,7 @@
 
         .bench-transcript-text {
             color: rgba(255, 255, 255, 0.9);
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 750;
             line-height: 1.35;
         }
@@ -1540,6 +1650,7 @@
 
         .bench-code-flow {
             display: grid;
+            align-content: center;
             gap: 14px;
         }
 
@@ -1573,13 +1684,13 @@
 
         .bench-go-layout {
             display: grid;
-            grid-template-columns: 300px minmax(0, 1fr);
+            grid-template-columns: 250px minmax(0, 1fr);
             gap: 18px;
             align-items: center;
         }
 
         .bench-go-board {
-            width: 300px;
+            width: 250px;
             aspect-ratio: 1 / 1;
             border: 1px solid rgba(246, 137, 0, 0.3);
             border-radius: 7px;
@@ -1629,7 +1740,6 @@
             display: grid;
             align-content: start;
             gap: 10px;
-            max-height: 220px;
             padding-right: 3px;
         }
 
@@ -2175,7 +2285,7 @@
             }
 
             .bench-core-panel {
-                grid-template-rows: auto auto auto auto;
+                grid-template-rows: auto auto auto auto auto;
             }
 
             .bench-core-title {
@@ -2188,6 +2298,10 @@
                 overflow: visible;
             }
 
+            .bench-hero-visual {
+                min-height: 180px;
+            }
+
             .bench-demo-surface {
                 grid-template-columns: 1fr;
             }
@@ -2195,6 +2309,16 @@
             .bench-transcript-grid,
             .bench-go-layout {
                 grid-template-columns: 1fr;
+            }
+
+            .bench-transcript-ruling {
+                grid-column: auto;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .bench-transcript-ruling strong {
+                text-align: left;
             }
 
             .bench-go-board {
@@ -2610,6 +2734,7 @@
                         </div>
                         <h1 class="bench-core-title" id="benchCoreTitle"></h1>
                         <div class="bench-core-summary" id="benchCoreSummary"></div>
+                        <div class="bench-hero-visual" id="benchHeroVisual"></div>
                         <div class="bench-demo-surface" id="benchDemoSurface"></div>
                     </section>
 
@@ -2680,8 +2805,12 @@
             {
                 id: DEFAULT_STORYLINE_ID,
                 label: {
-                    en: 'AI History: Deep Learning',
-                    zh: 'AI 历史：深度学习'
+                    en: 'Current: AI History (Deep Learning)',
+                    zh: '当前：AI 历史（深度学习）'
+                },
+                note: {
+                    en: '1956-now, centered on deep learning milestones',
+                    zh: '1956 至今，聚焦深度学习里程碑'
                 }
             },
             {
@@ -2689,21 +2818,33 @@
                 label: {
                     en: 'AI & Board/Card Games',
                     zh: 'AI 与棋类 / 牌类游戏'
+                },
+                note: {
+                    en: 'Future storyline from game benchmarks and matches',
+                    zh: '待扩展：游戏基准与经典对局故事线'
                 }
             },
             {
                 id: 'culture-humanity-ethics',
                 label: {
-                    en: 'AI, Culture & Ethics',
-                    zh: 'AI、文化与伦理'
+                    en: 'AI, Culture, Humanity & Ethics',
+                    zh: 'AI、文化、人文与伦理'
+                },
+                note: {
+                    en: 'Future storyline for social and cultural impact',
+                    zh: '待扩展：社会、文化与伦理影响故事线'
                 }
             },
             {
                 id: 'bench-council-ai100',
                 layout: 'achievement-map',
                 label: {
-                    en: 'AI Top 100 Achievements',
-                    zh: 'AI 百大成就'
+                    en: 'AI Top 100 Achievements (BenchCouncil)',
+                    zh: 'AI 百大成就（BenchCouncil）'
+                },
+                note: {
+                    en: 'Pilot storyline from the BenchCouncil AI100 list',
+                    zh: '来自 BenchCouncil AI100 榜单的试点故事线'
                 }
             }
         ];
@@ -2815,6 +2956,7 @@
             benchCoreYear: document.getElementById('benchCoreYear'),
             benchCoreTitle: document.getElementById('benchCoreTitle'),
             benchCoreSummary: document.getElementById('benchCoreSummary'),
+            benchHeroVisual: document.getElementById('benchHeroVisual'),
             benchDemoSurface: document.getElementById('benchDemoSurface'),
             benchMaterialHeading: document.getElementById('benchMaterialHeading'),
             benchSourceList: document.getElementById('benchSourceList'),
@@ -2881,6 +3023,18 @@
             return String(lx(option && option.label) || (option && option.id) || '').trim();
         }
 
+        function getStorylineNote(option) {
+            return String(lx(option && option.note) || '').trim();
+        }
+
+        function getStorylineStatus(option, count) {
+            if (count <= 0) return uiText('planned', '规划中');
+            if (option && option.id === 'bench-council-ai100') {
+                return uiText(`${count}/100 pilot`, `${count}/100 试点`);
+            }
+            return uiText(`${count} events`, `${count} 个事件`);
+        }
+
         function getActiveStorylineOption() {
             return getStorylineOption(activeStorylineId);
         }
@@ -2916,7 +3070,7 @@
                 const disabled = count <= 0 ? ' disabled' : '';
                 const selected = option.id === activeStorylineId ? ' selected' : '';
                 const label = getStorylineLabel(option);
-                const suffix = count > 0 ? ` (${count})` : '';
+                const suffix = ` (${getStorylineStatus(option, count)})`;
                 return `<option value="${escapeHtml(option.id)}"${selected}${disabled}>${escapeHtml(label + suffix)}</option>`;
             }).join('');
 
@@ -4573,6 +4727,10 @@
                         <div class="bench-transcript-text">${escapeHtml(uiText('The protocol does the work: same interface, same task, competing interpretations.', '协议本身在工作：同一界面、同一任务、不同解释彼此竞争。'))}</div>
                         <div class="bench-transcript-chip">${escapeHtml(uiText('Protocol', '协议'))}</div>
                     </article>
+                    <div class="bench-transcript-ruling">
+                        <span>${escapeHtml(uiText('Evaluation object', '评估对象'))}</span>
+                        <strong>${escapeHtml(uiText('Behavior under a controlled interface', '受控界面下的行为表现'))}</strong>
+                    </div>
                 </div>
             `;
         }
@@ -4622,6 +4780,29 @@
                 <div class="bench-code-flow">
                     <div class="bench-code-label">${escapeHtml(artifact || tx('historicalEvent'))}</div>
                     <div class="bench-code-line">${escapeHtml(demo || stripHtml(lx(rawMilestone.description) || ''))}</div>
+                </div>
+            `;
+        }
+
+        function renderBenchHeroVisual(vm) {
+            if (!refs.benchHeroVisual) return;
+            const photos = sortPhotosForDisplay(vm.photos);
+            const photo = photos[0] || '';
+            refs.benchHeroVisual.classList.toggle('is-empty', !photo);
+            refs.benchHeroVisual.classList.toggle('has-photo', Boolean(photo));
+            if (!photo) {
+                refs.benchHeroVisual.style.removeProperty('--bench-photo');
+                refs.benchHeroVisual.innerHTML = '';
+                return;
+            }
+
+            refs.benchHeroVisual.style.setProperty('--bench-photo', `url("${photo.replace(/"/g, '\\"')}")`);
+            const meta = buildArchivePhotoMeta(vm, photo);
+            refs.benchHeroVisual.innerHTML = `
+                <img src="${escapeHtml(photo)}" alt="${escapeHtml(meta.role || vm.title || tx('archiveImage'))}">
+                <div class="bench-hero-caption">
+                    <span>${escapeHtml(meta.name || tx('historicalArchive'))}</span>
+                    <span>${escapeHtml(meta.role || vm.title || '')}</span>
                 </div>
             `;
         }
@@ -4685,6 +4866,7 @@
             refs.benchCoreTitle.textContent = vm.title || '';
             refs.benchCoreSummary.innerHTML = buildSummaryHtml(vm);
             renderBenchMapList();
+            renderBenchHeroVisual(vm);
             renderBenchDemo(vm);
             renderBenchSources(raw);
             renderBenchEvidence(vm);

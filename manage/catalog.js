@@ -85,8 +85,8 @@ module.exports = {
       "storyline": {
         "id": "bench-council-ai100",
         "name": {
-          "en": "AI Top 100 Achievements",
-          "zh": "AI 百大成就"
+          "en": "AI Top 100 Achievements (BenchCouncil)",
+          "zh": "AI 百大成就（BenchCouncil）"
         }
       },
       "events": [

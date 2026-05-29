@@ -2167,7 +2167,23 @@ module.exports = {
         }
       ]
     },
-    "images": [],
+    "images": [
+      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
+        "caption": {
+          "en": "Alan Turing portrait",
+          "zh": "Alan Turing 肖像"
+        },
+        "subcaption": {
+          "en": "Photograph portrait of Alan Turing, 29 March 1951",
+          "zh": "Alan Turing 肖像照，1951 年 3 月 29 日"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+        "license": "Public domain"
+      }
+    },
     "videos": []
   },
   "1958-lisp": {
@@ -2323,7 +2339,23 @@ module.exports = {
         }
       ]
     },
-    "images": [],
+    "images": [
+      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
+        "caption": {
+          "en": "John McCarthy portrait",
+          "zh": "John McCarthy 肖像"
+        },
+        "subcaption": {
+          "en": "John McCarthy at Stanford, 2006",
+          "zh": "John McCarthy 于 Stanford，2006 年"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+        "license": "CC BY-SA 2.0"
+      }
+    },
     "videos": []
   },
   "2016-alphago": {
@@ -2499,7 +2531,23 @@ module.exports = {
         }
       ]
     },
-    "images": [],
+    "images": [
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
+        "caption": {
+          "en": "Lee Sedol portrait",
+          "zh": "李世石肖像"
+        },
+        "subcaption": {
+          "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
+          "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+        "license": "CC BY 2.0"
+      }
+    },
     "videos": []
   }
 };
