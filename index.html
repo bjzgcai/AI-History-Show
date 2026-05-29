@@ -1252,6 +1252,435 @@
             line-height: 1.52;
         }
 
+        .bench-dossier {
+            display: none;
+            grid-column: 1 / -1;
+            min-height: 0;
+            grid-template-columns: 310px minmax(0, 1fr) 390px;
+            gap: calc(100% * var(--stage-grid-gap-ratio));
+        }
+
+        .single-stage.is-bench-dossier .stage-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .single-stage.is-bench-dossier .hero-panel,
+        .single-stage.is-bench-dossier .story-panel,
+        .single-stage.is-bench-dossier .media-panel {
+            display: none;
+        }
+
+        .single-stage.is-bench-dossier .bench-dossier {
+            display: grid;
+        }
+
+        .bench-map-panel,
+        .bench-core-panel,
+        .bench-material-panel {
+            min-height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background:
+                radial-gradient(circle at 80% 0%, rgba(246, 137, 0, 0.08), transparent 26%),
+                linear-gradient(180deg, rgba(20, 20, 20, 0.98), rgba(9, 9, 9, 0.99));
+            box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0.026),
+                0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .bench-map-panel,
+        .bench-material-panel {
+            padding: 18px 16px;
+            display: grid;
+            grid-template-rows: auto minmax(0, 1fr);
+            gap: 16px;
+        }
+
+        .bench-core-panel {
+            position: relative;
+            padding: 24px 26px;
+            display: grid;
+            grid-template-rows: auto auto minmax(88px, auto) minmax(0, 1fr);
+            gap: 16px;
+        }
+
+        .bench-core-panel::before {
+            content: "";
+            position: absolute;
+            left: 26px;
+            right: 26px;
+            top: 138px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(246, 137, 0, 0.7), rgba(246, 137, 0, 0.06));
+            pointer-events: none;
+        }
+
+        .bench-panel-heading,
+        .bench-core-area {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-core-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        }
+
+        .bench-core-year {
+            color: rgba(244, 239, 229, 0.44);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .bench-core-title {
+            max-width: 92%;
+            color: rgba(255, 255, 255, 0.96);
+            font-size: 50px;
+            line-height: 1.02;
+            font-weight: 850;
+            letter-spacing: 0;
+            text-wrap: balance;
+        }
+
+        .bench-core-summary {
+            max-height: 128px;
+            overflow: auto;
+            padding-right: 8px;
+            color: rgba(244, 239, 229, 0.9);
+            font-size: 17px;
+            line-height: 1.48;
+        }
+
+        .bench-core-summary p + p {
+            margin-top: 0.7em;
+        }
+
+        .bench-map-list,
+        .bench-source-list,
+        .bench-evidence-list {
+            min-height: 0;
+            overflow: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+        }
+
+        .bench-map-list {
+            display: grid;
+            align-content: start;
+            gap: 10px;
+        }
+
+        .bench-map-item {
+            position: relative;
+            min-height: 104px;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.032);
+            color: rgba(244, 239, 229, 0.76);
+            padding: 12px 12px 12px 48px;
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            gap: 7px;
+            text-align: left;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .bench-map-item:hover,
+        .bench-map-item.active {
+            border-color: rgba(246, 137, 0, 0.72);
+            background: rgba(246, 137, 0, 0.09);
+        }
+
+        .bench-map-item:hover {
+            transform: translateX(2px);
+        }
+
+        .bench-map-index {
+            position: absolute;
+            left: 12px;
+            top: 14px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--accent);
+            border: 1px solid rgba(246, 137, 0, 0.44);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            background: rgba(0, 0, 0, 0.26);
+        }
+
+        .bench-map-area {
+            color: rgba(244, 239, 229, 0.48);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-map-title {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 1.16;
+        }
+
+        .bench-map-method {
+            align-self: end;
+            color: rgba(244, 239, 229, 0.6);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .bench-demo-surface {
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 260px;
+            gap: 18px;
+            align-items: stretch;
+        }
+
+        .bench-demo-visual,
+        .bench-demo-steps {
+            min-height: 0;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(0, 0, 0, 0.24);
+        }
+
+        .bench-demo-visual {
+            padding: 18px;
+            overflow: hidden;
+        }
+
+        .bench-demo-steps {
+            padding: 14px;
+            display: grid;
+            align-content: start;
+            gap: 10px;
+        }
+
+        .bench-demo-step {
+            min-height: 56px;
+            display: grid;
+            grid-template-columns: 24px minmax(0, 1fr);
+            align-items: center;
+            gap: 10px;
+            color: rgba(244, 239, 229, 0.86);
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .bench-demo-step span:first-child {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--accent);
+            border: 1px solid rgba(246, 137, 0, 0.4);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 11px;
+        }
+
+        .bench-transcript-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            height: 100%;
+        }
+
+        .bench-transcript-column {
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            padding: 16px;
+            display: grid;
+            grid-template-rows: auto minmax(0, 1fr) auto;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .bench-transcript-label,
+        .bench-code-label,
+        .bench-go-label {
+            color: rgba(244, 239, 229, 0.52);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-transcript-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            font-weight: 750;
+            line-height: 1.35;
+        }
+
+        .bench-transcript-chip,
+        .bench-source-type {
+            justify-self: start;
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .bench-code-flow {
+            display: grid;
+            gap: 14px;
+        }
+
+        .bench-code-line {
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.034);
+            color: rgba(255, 255, 255, 0.94);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 18px;
+            line-height: 1.28;
+            white-space: pre-wrap;
+        }
+
+        .bench-primitive-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .bench-primitive {
+            border: 1px solid rgba(246, 137, 0, 0.32);
+            border-radius: 999px;
+            padding: 6px 10px;
+            color: rgba(244, 239, 229, 0.84);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .bench-go-layout {
+            display: grid;
+            grid-template-columns: 300px minmax(0, 1fr);
+            gap: 18px;
+            align-items: center;
+        }
+
+        .bench-go-board {
+            width: 300px;
+            aspect-ratio: 1 / 1;
+            border: 1px solid rgba(246, 137, 0, 0.3);
+            border-radius: 7px;
+            background:
+                linear-gradient(rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                #191511;
+            background-size: calc(100% / 8) calc(100% / 8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bench-go-stone {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background: #0a0a0a;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16), 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .bench-go-stone.white {
+            background: #eee7d8;
+        }
+
+        .bench-go-stone.move37 {
+            background: var(--accent);
+            box-shadow: 0 0 0 6px rgba(246, 137, 0, 0.12), 0 0 28px rgba(246, 137, 0, 0.46);
+        }
+
+        .bench-go-notes {
+            display: grid;
+            gap: 12px;
+        }
+
+        .bench-go-note {
+            border-left: 2px solid rgba(246, 137, 0, 0.58);
+            padding-left: 12px;
+            color: rgba(244, 239, 229, 0.88);
+            font-size: 15px;
+            line-height: 1.35;
+            font-weight: 700;
+        }
+
+        .bench-source-list {
+            display: grid;
+            align-content: start;
+            gap: 10px;
+            max-height: 220px;
+            padding-right: 3px;
+        }
+
+        .bench-source-item {
+            display: grid;
+            gap: 6px;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.032);
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .bench-source-item:hover,
+        .bench-source-item:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            outline: none;
+        }
+
+        .bench-source-label {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .bench-evidence-list {
+            display: grid;
+            align-content: start;
+            gap: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bench-evidence-item {
+            display: grid;
+            gap: 8px;
+        }
+
+        .bench-evidence-label {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .bench-evidence-body {
+            color: rgba(244, 239, 229, 0.88);
+            font-size: 13.5px;
+            line-height: 1.48;
+        }
+
         .stage-footer {
             display: grid;
             grid-template-columns:
@@ -1734,6 +2163,44 @@
                 padding-bottom: 0;
             }
 
+            .bench-dossier {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .bench-map-panel,
+            .bench-core-panel,
+            .bench-material-panel {
+                padding: 18px;
+            }
+
+            .bench-core-panel {
+                grid-template-rows: auto auto auto auto;
+            }
+
+            .bench-core-title {
+                max-width: none;
+                font-size: 30px;
+            }
+
+            .bench-core-summary {
+                max-height: none;
+                overflow: visible;
+            }
+
+            .bench-demo-surface {
+                grid-template-columns: 1fr;
+            }
+
+            .bench-transcript-grid,
+            .bench-go-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .bench-go-board {
+                width: min(100%, 300px);
+            }
+
             .hero-panel,
             .story-panel,
             .media-panel {
@@ -2129,6 +2596,29 @@
 
                     <div class="commentary-list" id="commentaryList"></div>
                 </aside>
+
+                <section class="bench-dossier" id="benchDossier" aria-live="polite">
+                    <aside class="bench-map-panel">
+                        <div class="bench-panel-heading" id="benchMapHeading">Achievement Map</div>
+                        <div class="bench-map-list" id="benchMapList"></div>
+                    </aside>
+
+                    <section class="bench-core-panel">
+                        <div class="bench-core-meta">
+                            <div class="bench-core-area" id="benchCoreArea"></div>
+                            <div class="bench-core-year" id="benchCoreYear"></div>
+                        </div>
+                        <h1 class="bench-core-title" id="benchCoreTitle"></h1>
+                        <div class="bench-core-summary" id="benchCoreSummary"></div>
+                        <div class="bench-demo-surface" id="benchDemoSurface"></div>
+                    </section>
+
+                    <aside class="bench-material-panel">
+                        <div class="bench-panel-heading" id="benchMaterialHeading">Materials</div>
+                        <div class="bench-source-list" id="benchSourceList"></div>
+                        <div class="bench-evidence-list" id="benchEvidenceList"></div>
+                    </aside>
+                </section>
             </main>
 
             <footer class="stage-footer">
@@ -2317,7 +2807,18 @@
             orbitSvg: document.getElementById('orbitSvg'),
             orbitPath: document.getElementById('orbitPath'),
             orbitStartDot: document.getElementById('orbitStartDot'),
-            orbitDot: document.getElementById('orbitDot')
+            orbitDot: document.getElementById('orbitDot'),
+            benchDossier: document.getElementById('benchDossier'),
+            benchMapHeading: document.getElementById('benchMapHeading'),
+            benchMapList: document.getElementById('benchMapList'),
+            benchCoreArea: document.getElementById('benchCoreArea'),
+            benchCoreYear: document.getElementById('benchCoreYear'),
+            benchCoreTitle: document.getElementById('benchCoreTitle'),
+            benchCoreSummary: document.getElementById('benchCoreSummary'),
+            benchDemoSurface: document.getElementById('benchDemoSurface'),
+            benchMaterialHeading: document.getElementById('benchMaterialHeading'),
+            benchSourceList: document.getElementById('benchSourceList'),
+            benchEvidenceList: document.getElementById('benchEvidenceList')
         };
 
         function escapeHtml(value) {
@@ -2360,6 +2861,11 @@
             return window.I18n && typeof window.I18n.localize === 'function' ? window.I18n.localize(value) : (value == null ? '' : value);
         }
 
+        function uiText(en, zh) {
+            const locale = window.I18n && typeof window.I18n.getLocale === 'function' ? window.I18n.getLocale() : window.currentLocale;
+            return locale === 'zh' ? zh : en;
+        }
+
         function applyStaticTranslations() {
             document.querySelectorAll('[data-i18n]').forEach((element) => {
                 element.textContent = tx(element.dataset.i18n);
@@ -2382,6 +2888,10 @@
         function isAchievementMapActive() {
             const option = getActiveStorylineOption();
             return Boolean(option && option.layout === 'achievement-map');
+        }
+
+        function isResearchDossierActive() {
+            return isAchievementMapActive();
         }
 
         function updateStorylineUrl(storylineId) {
@@ -4008,6 +4518,178 @@
             });
         }
 
+        function getAchievementSources(rawMilestone) {
+            const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
+                ? rawMilestone.achievement.sources
+                : [];
+            return sources.filter((source) => source && source.url && lx(source.label));
+        }
+
+        function getAchievementDemoSteps(rawMilestone) {
+            const steps = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.demoSteps)
+                ? rawMilestone.achievement.demoSteps
+                : [];
+            return steps.map((step) => String(lx(step) || '').trim()).filter(Boolean);
+        }
+
+        function getAchievementVisual(rawMilestone) {
+            return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.visual || '').trim();
+        }
+
+        function renderBenchMapList() {
+            refs.benchMapList.innerHTML = milestoneList.map((item, index) => {
+                const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
+                const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
+                const method = getAchievementField(item, 'method', String(item.year || ''));
+                const active = index === currentIndex ? ' active' : '';
+                return `
+                    <button class="bench-map-item${active}" type="button" data-index="${index}">
+                        <span class="bench-map-index">${String(index + 1).padStart(2, '0')}</span>
+                        <span class="bench-map-area">${escapeHtml(area || tx('aiHistory'))}</span>
+                        <span class="bench-map-title">${escapeHtml(title)}</span>
+                        <span class="bench-map-method">${escapeHtml(method || String(item.year || ''))}</span>
+                    </button>
+                `;
+            }).join('');
+
+            refs.benchMapList.querySelectorAll('.bench-map-item').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = Number(button.dataset.index);
+                    jumpTo(index);
+                });
+            });
+        }
+
+        function buildTranscriptDemo() {
+            return `
+                <div class="bench-transcript-grid">
+                    <article class="bench-transcript-column">
+                        <div class="bench-transcript-label">${escapeHtml(uiText('Channel A', '通道 A'))}</div>
+                        <div class="bench-transcript-text">${escapeHtml(uiText('Answers arrive as text. Identity is hidden; behavior becomes the evidence.', '回答只以文本出现。身份被遮蔽，行为成为证据。'))}</div>
+                        <div class="bench-transcript-chip">${escapeHtml(uiText('Judge', '判断者'))}</div>
+                    </article>
+                    <article class="bench-transcript-column">
+                        <div class="bench-transcript-label">${escapeHtml(uiText('Channel B', '通道 B'))}</div>
+                        <div class="bench-transcript-text">${escapeHtml(uiText('The protocol does the work: same interface, same task, competing interpretations.', '协议本身在工作：同一界面、同一任务、不同解释彼此竞争。'))}</div>
+                        <div class="bench-transcript-chip">${escapeHtml(uiText('Protocol', '协议'))}</div>
+                    </article>
+                </div>
+            `;
+        }
+
+        function buildEvalDemo() {
+            return `
+                <div class="bench-code-flow">
+                    <div class="bench-code-label">${escapeHtml(uiText('Symbolic evaluation path', '符号求值路径'))}</div>
+                    <div class="bench-code-line">(EVAL '(COND ((ATOM X) X) (T (CAR X))))</div>
+                    <div class="bench-primitive-row">
+                        <span class="bench-primitive">QUOTE</span>
+                        <span class="bench-primitive">CONS</span>
+                        <span class="bench-primitive">CAR</span>
+                        <span class="bench-primitive">CDR</span>
+                        <span class="bench-primitive">COND</span>
+                        <span class="bench-primitive">EVAL</span>
+                    </div>
+                    <div class="bench-code-line">${escapeHtml(uiText('program == data == symbolic expression', '程序 == 数据 == 符号表达式'))}</div>
+                </div>
+            `;
+        }
+
+        function buildGoDemo() {
+            const stones = [
+                ['black', 28, 32], ['white', 40, 30], ['black', 52, 36], ['white', 64, 30],
+                ['black', 36, 48], ['white', 49, 51], ['black', 61, 48], ['white', 72, 56],
+                ['black', 44, 66], ['white', 57, 68], ['move37', 31, 61]
+            ].map(([color, x, y]) => `<span class="bench-go-stone ${color}" style="left:${x}%;top:${y}%"></span>`).join('');
+
+            return `
+                <div class="bench-go-layout">
+                    <div class="bench-go-board" aria-hidden="true">${stones}</div>
+                    <div class="bench-go-notes">
+                        <div class="bench-go-label">${escapeHtml(uiText('Move 37 explainer', '第 37 手解释器'))}</div>
+                        <div class="bench-go-note">${escapeHtml(uiText('Policy network proposes candidates.', '策略网络提出候选落子。'))}</div>
+                        <div class="bench-go-note">${escapeHtml(uiText('Value network estimates the position.', '价值网络评估局面。'))}</div>
+                        <div class="bench-go-note">${escapeHtml(uiText('Tree search turns learned intuition into a move.', '树搜索把学习到的直觉转化为落子。'))}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildGenericDemo(rawMilestone) {
+            const artifact = getAchievementField(rawMilestone, 'artifact', '');
+            const demo = getAchievementField(rawMilestone, 'demo', '');
+            return `
+                <div class="bench-code-flow">
+                    <div class="bench-code-label">${escapeHtml(artifact || tx('historicalEvent'))}</div>
+                    <div class="bench-code-line">${escapeHtml(demo || stripHtml(lx(rawMilestone.description) || ''))}</div>
+                </div>
+            `;
+        }
+
+        function renderBenchDemo(vm) {
+            const raw = vm.raw || {};
+            const visual = getAchievementVisual(raw);
+            const steps = getAchievementDemoSteps(raw);
+            const visualHtml = visual === 'transcript'
+                ? buildTranscriptDemo()
+                : visual === 'eval'
+                  ? buildEvalDemo()
+                  : visual === 'go'
+                    ? buildGoDemo()
+                    : buildGenericDemo(raw);
+
+            const stepHtml = steps.length > 0
+                ? steps.map((step, index) => `
+                    <div class="bench-demo-step">
+                        <span>${index + 1}</span>
+                        <strong>${escapeHtml(step)}</strong>
+                    </div>
+                `).join('')
+                : `<div class="bench-demo-step"><span>1</span><strong>${escapeHtml(getAchievementField(raw, 'demo', tx('historicalEvent')))}</strong></div>`;
+
+            refs.benchDemoSurface.innerHTML = `
+                <div class="bench-demo-visual">${visualHtml}</div>
+                <div class="bench-demo-steps">${stepHtml}</div>
+            `;
+        }
+
+        function renderBenchSources(rawMilestone) {
+            const sources = getAchievementSources(rawMilestone);
+            refs.benchSourceList.innerHTML = sources.length > 0
+                ? sources.map((source) => `
+                    <a class="bench-source-item" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
+                        <span class="bench-source-type">${escapeHtml(lx(source.type) || tx('source'))}</span>
+                        <span class="bench-source-label">${escapeHtml(lx(source.label) || source.url)}</span>
+                    </a>
+                `).join('')
+                : `<div class="bench-source-item"><span class="bench-source-label">${escapeHtml(tx('noAdditionalInfo'))}</span></div>`;
+        }
+
+        function renderBenchEvidence(vm) {
+            const sections = buildRightCommentarySections(vm);
+            refs.benchEvidenceList.innerHTML = sections.map((section) => `
+                <article class="bench-evidence-item">
+                    <div class="bench-evidence-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
+                    <div class="bench-evidence-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
+                </article>
+            `).join('');
+        }
+
+        function renderBenchDossier(vm) {
+            if (!refs.benchDossier) return;
+            const raw = vm.raw || {};
+            refs.benchMapHeading.textContent = tx('achievementMap');
+            refs.benchMaterialHeading.textContent = tx('sourceMaterials');
+            refs.benchCoreArea.textContent = getAchievementField(raw, 'area', vm.category || vm.subtitle || tx('aiHistory'));
+            refs.benchCoreYear.textContent = String(vm.year || '');
+            refs.benchCoreTitle.textContent = vm.title || '';
+            refs.benchCoreSummary.innerHTML = buildSummaryHtml(vm);
+            renderBenchMapList();
+            renderBenchDemo(vm);
+            renderBenchSources(raw);
+            renderBenchEvidence(vm);
+        }
+
         function bindPhotoClicks() {
             document.querySelectorAll('.media-photo').forEach((card) => {
                 card.onclick = () => {
@@ -4074,14 +4756,22 @@
             const vm = getVm(index);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
+            refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
             renderHeader(vm);
-            renderHero(vm);
-            renderStory(vm);
-            renderFigures(vm);
-            renderArchive(vm);
-            renderCommentary(vm);
+            if (isResearchDossierActive()) {
+                clearGlobeMarkers();
+                resetOrbitOverlay();
+                resetInlineMedia();
+                renderBenchDossier(vm);
+            } else {
+                renderHero(vm);
+                renderStory(vm);
+                renderFigures(vm);
+                renderArchive(vm);
+                renderCommentary(vm);
+                bindPhotoClicks();
+            }
             renderTimeline(vm);
-            bindPhotoClicks();
             document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             preloadAdjacentAssets(index);
         }
