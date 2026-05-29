@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-29 02:29
+// 生成时间: 2026-05-29 03:11
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -3353,7 +3353,57 @@ const milestones = [
       "demo": {
         "en": "Blind transcript vote",
         "zh": "匿名对话投票"
-      }
+      },
+      "visual": "transcript",
+      "demoSteps": [
+        {
+          "en": "Blind channel",
+          "zh": "盲测通道"
+        },
+        {
+          "en": "Human judgment",
+          "zh": "人类判断"
+        },
+        {
+          "en": "Evaluation debate",
+          "zh": "评估争议"
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Computing Machinery and Intelligence",
+            "zh": "Computing Machinery and Intelligence"
+          },
+          "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Turing Digital Archive",
+            "zh": "Turing Digital Archive"
+          },
+          "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence"
+        },
+        {
+          "type": {
+            "en": "Context",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Stanford Encyclopedia of Philosophy",
+            "zh": "Stanford Encyclopedia of Philosophy"
+          },
+          "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
+        }
+      ]
     }
   },
   {
@@ -3486,7 +3536,57 @@ const milestones = [
       "demo": {
         "en": "EVAL reduction",
         "zh": "EVAL 归约"
-      }
+      },
+      "visual": "eval",
+      "demoSteps": [
+        {
+          "en": "S-expression",
+          "zh": "S 表达式"
+        },
+        {
+          "en": "Primitive operators",
+          "zh": "基础原语"
+        },
+        {
+          "en": "Code as data",
+          "zh": "代码即数据"
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Recursive Functions of Symbolic Expressions",
+            "zh": "Recursive Functions of Symbolic Expressions"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/recursive.html"
+        },
+        {
+          "type": {
+            "en": "Manual",
+            "zh": "手册"
+          },
+          "label": {
+            "en": "LISP I Programmer's Manual",
+            "zh": "LISP I Programmer's Manual"
+          },
+          "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史"
+          },
+          "label": {
+            "en": "History of Lisp",
+            "zh": "History of Lisp"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
+        }
+      ]
     }
   },
   {
@@ -3645,7 +3745,57 @@ const milestones = [
       "demo": {
         "en": "Move 37 board explainer",
         "zh": "第 37 手棋盘解释器"
-      }
+      },
+      "visual": "go",
+      "demoSteps": [
+        {
+          "en": "Policy prior",
+          "zh": "策略先验"
+        },
+        {
+          "en": "Value estimate",
+          "zh": "价值估计"
+        },
+        {
+          "en": "Search variation",
+          "zh": "搜索分支"
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Nature 2016 AlphaGo paper",
+            "zh": "Nature 2016 AlphaGo 论文"
+          },
+          "url": "https://www.nature.com/articles/nature16961"
+        },
+        {
+          "type": {
+            "en": "Blog",
+            "zh": "博客"
+          },
+          "label": {
+            "en": "Google DeepMind AlphaGo",
+            "zh": "Google DeepMind AlphaGo"
+          },
+          "url": "https://deepmind.google/research/alphago/"
+        },
+        {
+          "type": {
+            "en": "API",
+            "zh": "API"
+          },
+          "label": {
+            "en": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎"
+          },
+          "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+        }
+      ]
     }
   }
 ];
