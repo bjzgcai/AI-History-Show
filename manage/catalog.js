@@ -72,6 +72,28 @@ module.exports = {
         "2024-ai-scientist",
         "2025-llm-competition"
       ]
+    },
+    {
+      "name": {
+        "en": "BenchCouncil AI100 Achievements",
+        "zh": "BenchCouncil AI100 成就"
+      },
+      "subtitle": {
+        "en": "AI Top 100 Achievements",
+        "zh": "AI 百大成就"
+      },
+      "storyline": {
+        "id": "bench-council-ai100",
+        "name": {
+          "en": "AI Top 100 Achievements",
+          "zh": "AI 百大成就"
+        }
+      },
+      "events": [
+        "1950-turing-test",
+        "1958-lisp",
+        "2016-alphago"
+      ]
     }
   ]
 };

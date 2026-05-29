@@ -157,8 +157,36 @@
         .topbar-actions {
             justify-self: end;
             display: inline-flex;
-            align-items: baseline;
+            align-items: center;
             gap: 12px;
+        }
+
+        .storyline-select {
+            width: 334px;
+            height: 32px;
+            min-width: 0;
+            border: 1px solid rgba(244, 239, 229, 0.24);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.34);
+            color: rgba(244, 239, 229, 0.78);
+            padding: 0 32px 0 10px;
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .storyline-select:focus-visible {
+            border-color: rgba(246, 137, 0, 0.78);
+            outline: none;
+        }
+
+        .storyline-select option {
+            background: #0b0b0b;
+            color: #f4efe5;
         }
 
         .mode-chip-cn {
@@ -1572,6 +1600,16 @@
 
             .topbar-actions {
                 gap: 8px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+
+            .storyline-select {
+                width: 184px;
+                height: 27px;
+                padding-left: 8px;
+                padding-right: 24px;
+                font-size: 11px;
             }
 
             .mode-chip-cn {
@@ -1850,6 +1888,7 @@
                 </div>
                 <div class="stage-kicker" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
                 <div class="topbar-actions">
+                    <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
                     <div class="mode-chip" aria-label="历史 HISTORY">
                         <span class="mode-chip-cn">历史</span>
                         <span class="mode-chip-en">HISTORY</span>
@@ -2027,8 +2066,50 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, iframe';
-        const milestoneList = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, iframe, .storyline-select';
+        const DEFAULT_STORYLINE_ID = 'deep-learning-history';
+        const STORYLINE_OPTIONS = [
+            {
+                id: DEFAULT_STORYLINE_ID,
+                label: {
+                    en: 'AI History: Deep Learning',
+                    zh: 'AI 历史：深度学习'
+                }
+            },
+            {
+                id: 'board-games-card-games',
+                label: {
+                    en: 'AI & Board/Card Games',
+                    zh: 'AI 与棋类 / 牌类游戏'
+                }
+            },
+            {
+                id: 'culture-humanity-ethics',
+                label: {
+                    en: 'AI, Culture & Ethics',
+                    zh: 'AI、文化与伦理'
+                }
+            },
+            {
+                id: 'bench-council-ai100',
+                label: {
+                    en: 'AI Top 100 Achievements',
+                    zh: 'AI 百大成就'
+                }
+            }
+        ];
+        const allMilestones = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
+        const getMilestoneStorylineId = (milestone) => {
+            const storyline = milestone && milestone.storyline;
+            if (typeof storyline === 'string') return storyline || DEFAULT_STORYLINE_ID;
+            if (storyline && typeof storyline === 'object' && storyline.id) return storyline.id;
+            return DEFAULT_STORYLINE_ID;
+        };
+        const getStorylineMilestones = (storylineId) => allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId);
+        let activeStorylineId = getStorylineMilestones(DEFAULT_STORYLINE_ID).length > 0
+            ? DEFAULT_STORYLINE_ID
+            : (STORYLINE_OPTIONS.find((option) => getStorylineMilestones(option.id).length > 0) || {}).id || DEFAULT_STORYLINE_ID;
+        let milestoneList = getStorylineMilestones(activeStorylineId);
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
@@ -2094,6 +2175,7 @@
             counterText: document.getElementById('counterText'),
             prevBtn: document.getElementById('prevBtn'),
             nextBtn: document.getElementById('nextBtn'),
+            storylineSelect: document.getElementById('storylineSelect'),
             timelineTrack: document.getElementById('timelineTrack'),
             globeStage: document.getElementById('globeStage'),
             globeShell: document.getElementById('globeShell'),
@@ -2154,6 +2236,45 @@
             });
             refs.prevBtn.setAttribute('aria-label', tx('previousPage'));
             refs.nextBtn.setAttribute('aria-label', tx('nextPage'));
+        }
+
+        function getStorylineLabel(option) {
+            return String(lx(option && option.label) || (option && option.id) || '').trim();
+        }
+
+        function renderStorylineSelect() {
+            if (!refs.storylineSelect) return;
+
+            refs.storylineSelect.setAttribute('aria-label', tx('storylineSelector'));
+            refs.storylineSelect.innerHTML = STORYLINE_OPTIONS.map((option) => {
+                const count = getStorylineMilestones(option.id).length;
+                const disabled = count <= 0 ? ' disabled' : '';
+                const selected = option.id === activeStorylineId ? ' selected' : '';
+                const label = getStorylineLabel(option);
+                const suffix = count > 0 ? ` (${count})` : '';
+                return `<option value="${escapeHtml(option.id)}"${selected}${disabled}>${escapeHtml(label + suffix)}</option>`;
+            }).join('');
+
+            const activeOption = STORYLINE_OPTIONS.find((option) => option.id === activeStorylineId);
+            refs.storylineSelect.title = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
+        }
+
+        function setActiveStoryline(storylineId) {
+            const nextMilestones = getStorylineMilestones(storylineId);
+            if (!nextMilestones.length) {
+                renderStorylineSelect();
+                return;
+            }
+
+            activeStorylineId = storylineId;
+            milestoneList = nextMilestones;
+            currentIndex = 0;
+            currentArchiveIndex = 0;
+            vmCache.clear();
+            resetInlineMedia();
+            renderStorylineSelect();
+            renderPage(currentIndex);
+            resetPortraitScrollPosition();
         }
 
         function buildFallbackVm(milestone, index) {
@@ -4073,6 +4194,12 @@
         if (!milestoneList.length) {
             refs.stage.innerHTML = '<div class="empty-state">暂无里程碑数据</div>';
         } else {
+            renderStorylineSelect();
+            if (refs.storylineSelect) {
+                refs.storylineSelect.addEventListener('change', () => {
+                    setActiveStoryline(refs.storylineSelect.value);
+                });
+            }
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
             refs.nextBtn.addEventListener('click', () => navigate('next'));
 
@@ -4094,6 +4221,7 @@
 
             window.addEventListener('languageChanged', () => {
                 vmCache.clear();
+                renderStorylineSelect();
                 renderPage(currentIndex);
             });
 
