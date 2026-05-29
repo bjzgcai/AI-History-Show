@@ -2086,12 +2086,19 @@ module.exports = {
       },
       {
         "label": {
-          "en": "Demo Hook",
-          "zh": "展示钩子"
+          "en": "Modern View",
+          "zh": "现代评价"
         },
         "html": {
-          "en": "Build a blind transcript booth: viewers compare two anonymous answer streams, vote human or machine, then see how a single evaluation protocol can both reveal ability and hide important context.",
-          "zh": "可做成“盲测对话亭”：观众比较两段匿名回答，投票判断人或机器，再揭示同一套评估协议既能显示能力，也会隐藏重要上下文。"
+          "en": "A modern expert or visitor can frame Turing's achievement as the start of AI evaluation culture: intelligence is judged through interaction, evidence and comparison rather than a single internal definition. Video clip:",
+          "zh": "可以增加“现在的专家/个人对这个成就的评价”：从今天看，图灵测试开启的是 AI 评估文化，用交互、证据和比较来讨论智能，而不是只寻找一个内部定义。视频片段："
+        },
+        "link": {
+          "label": {
+            "en": "The Turing Test: Can Machines Think?",
+            "zh": "The Turing Test: Can Machines Think?"
+          },
+          "url": "https://www.youtube.com/watch?v=3wLqsRLvV-c"
         }
       }
     ],

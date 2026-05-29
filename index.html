@@ -101,6 +101,12 @@
             box-shadow: none;
         }
 
+        .single-stage.is-bench-dossier {
+            grid-template-rows:
+                calc(var(--screen-height) * var(--stage-topbar-ratio))
+                1fr;
+        }
+
         .empty-state {
             display: grid;
             place-items: center;
@@ -1252,16 +1258,34 @@
             line-height: 1.52;
         }
 
+        .commentary-body a,
+        .bench-evidence-body a {
+            color: var(--accent);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .commentary-body a:hover,
+        .commentary-body a:focus-visible,
+        .bench-evidence-body a:hover,
+        .bench-evidence-body a:focus-visible {
+            text-decoration: underline;
+        }
+
         .bench-dossier {
             display: none;
             grid-column: 1 / -1;
             min-height: 0;
-            grid-template-columns: 310px minmax(0, 1fr) 390px;
+            grid-template-columns: 330px minmax(0, 1fr) 410px;
             gap: calc(100% * var(--stage-grid-gap-ratio));
         }
 
         .single-stage.is-bench-dossier .stage-grid {
             grid-template-columns: 1fr;
+        }
+
+        .single-stage.is-bench-dossier .stage-footer {
+            display: none;
         }
 
         .single-stage.is-bench-dossier .hero-panel,
@@ -1290,9 +1314,9 @@
 
         .bench-map-panel,
         .bench-material-panel {
-            padding: 18px 16px;
+            padding: 20px 18px;
             display: grid;
-            gap: 16px;
+            gap: 18px;
         }
 
         .bench-map-panel {
@@ -1301,26 +1325,15 @@
         }
 
         .bench-material-panel {
-            grid-template-rows: auto 214px minmax(0, 1fr);
+            grid-template-rows: auto 235px minmax(0, 1fr);
         }
 
         .bench-core-panel {
             position: relative;
-            padding: 24px 26px;
+            padding: 28px 30px;
             display: grid;
-            grid-template-rows: auto auto minmax(72px, auto) 206px minmax(0, 1fr);
-            gap: 16px;
-        }
-
-        .bench-core-panel::before {
-            content: "";
-            position: absolute;
-            left: 26px;
-            right: 26px;
-            top: 138px;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(246, 137, 0, 0.7), rgba(246, 137, 0, 0.06));
-            pointer-events: none;
+            grid-template-rows: auto auto minmax(88px, auto) 265px minmax(0, 1fr);
+            gap: 18px;
         }
 
         .bench-panel-heading,
@@ -1349,7 +1362,7 @@
         .bench-core-title {
             max-width: 92%;
             color: rgba(255, 255, 255, 0.96);
-            font-size: 50px;
+            font-size: 56px;
             line-height: 1.02;
             font-weight: 850;
             letter-spacing: 0;
@@ -1357,12 +1370,24 @@
         }
 
         .bench-core-summary {
-            max-height: 106px;
+            position: relative;
+            max-height: 132px;
             overflow: auto;
-            padding-right: 8px;
+            padding: 16px 8px 0 0;
             color: rgba(244, 239, 229, 0.9);
-            font-size: 17px;
+            font-size: 18px;
             line-height: 1.48;
+        }
+
+        .bench-core-summary::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(246, 137, 0, 0.7), rgba(246, 137, 0, 0.06));
+            pointer-events: none;
         }
 
         .bench-core-summary p + p {
@@ -3129,7 +3154,8 @@
                 customSections.forEach((section) => {
                     commentarySections.push({
                         label: lx(section.label) || tx('contentInterpretation'),
-                        html: lx(section.html)
+                        html: lx(section.html),
+                        link: section.link || null
                     });
                 });
             } else if (descriptionText) {
@@ -3453,9 +3479,11 @@
             const sourceSections = Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
                 : [];
-            const sections = sourceSections.slice(0, 3).map((section, index) => ({
+            const maxSections = sourceSections.length > 3 ? 4 : 3;
+            const sections = sourceSections.slice(0, maxSections).map((section, index) => ({
                 label: section.label || defaultLabels[index] || tx('contentInterpretation'),
-                text: stripHtml(section.html || '')
+                text: stripHtml(section.html || ''),
+                link: section.link || null
             }));
 
             const fallbackText = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
@@ -3470,7 +3498,17 @@
                 fillerIndex += 1;
             }
 
-            return sections.slice(0, 3);
+            return sections.slice(0, maxSections);
+        }
+
+        function buildCommentaryBodyHtml(section) {
+            const text = escapeHtml(section.text || tx('noAdditionalInfo'));
+            const rawLink = section && section.link ? section.link : null;
+            const url = rawLink && rawLink.url ? String(rawLink.url).trim() : '';
+            if (!url) return text;
+
+            const label = String(lx(rawLink.label) || url).trim();
+            return `${text} <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
         }
 
         function scorePhoto(url) {
@@ -4612,7 +4650,7 @@
             refs.commentaryList.innerHTML = sections.map((section) => `
                 <article class="commentary-item">
                     <div class="commentary-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
-                    <div class="commentary-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
+                    <div class="commentary-body">${buildCommentaryBodyHtml(section)}</div>
                 </article>
             `).join('');
         }
@@ -4851,7 +4889,7 @@
             refs.benchEvidenceList.innerHTML = sections.map((section) => `
                 <article class="bench-evidence-item">
                     <div class="bench-evidence-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
-                    <div class="bench-evidence-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
+                    <div class="bench-evidence-body">${buildCommentaryBodyHtml(section)}</div>
                 </article>
             `).join('');
         }
