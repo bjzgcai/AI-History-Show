@@ -1403,7 +1403,7 @@
             background: rgba(0, 0, 0, 0.24);
             padding: 12px;
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.28fr) minmax(0, 1fr);
             gap: 12px;
         }
 
@@ -1439,8 +1439,17 @@
             background: rgba(0, 0, 0, 0.28);
         }
 
+        .bench-visual-card {
+            color: inherit;
+            text-decoration: none;
+        }
+
         .bench-photo-frame.has-image {
             background: rgba(0, 0, 0, 0.34);
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 0;
+            padding: 10px 10px 0;
         }
 
         .bench-photo-frame.is-placeholder {
@@ -1469,12 +1478,89 @@
             opacity: 0.38;
         }
 
-        .bench-photo-frame img {
+        .bench-image-stage {
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .bench-image-stage img {
             display: block;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            box-sizing: border-box;
             object-fit: contain;
             object-position: center;
+        }
+
+        .bench-image-stage.is-diagram {
+            padding: 4px;
+            background: rgba(255, 255, 255, 0.92);
+        }
+
+        .bench-archive-card {
+            isolation: isolate;
+            padding: 14px;
+            display: grid;
+            align-content: start;
+            gap: 9px;
+            background:
+                linear-gradient(135deg, rgba(244, 239, 229, 0.12), rgba(244, 239, 229, 0.02) 42%),
+                radial-gradient(circle at 84% 12%, rgba(246, 137, 0, 0.18), transparent 35%),
+                rgba(0, 0, 0, 0.38);
+        }
+
+        .bench-archive-card:hover {
+            border-color: rgba(246, 137, 0, 0.64);
+        }
+
+        .bench-archive-kicker,
+        .bench-archive-action {
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-archive-title {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 18px;
+            font-weight: 850;
+            line-height: 1.08;
+        }
+
+        .bench-archive-description {
+            color: rgba(244, 239, 229, 0.76);
+            font-size: 13px;
+            font-weight: 650;
+            line-height: 1.42;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .bench-archive-license {
+            color: rgba(244, 239, 229, 0.52);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.35;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .bench-archive-action {
+            align-self: end;
+            margin-top: 2px;
         }
 
         .bench-hero-visual.is-empty {
@@ -1482,17 +1568,15 @@
         }
 
         .bench-hero-caption {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            position: relative;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 16px;
+            justify-content: flex-start;
+            gap: 8px;
             z-index: 3;
-            padding: 10px 14px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0));
+            min-height: 38px;
+            padding: 8px 10px;
+            background: rgba(0, 0, 0, 0.72);
             color: rgba(244, 239, 229, 0.88);
             font-size: 12px;
             font-weight: 800;
@@ -1503,6 +1587,18 @@
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 0.06em;
+            overflow-wrap: anywhere;
+        }
+
+        .bench-hero-caption small {
+            min-width: 0;
+            color: rgba(244, 239, 229, 0.72);
+            font-size: 11px;
+            font-weight: 700;
+            text-align: right;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         .bench-map-list,
@@ -2848,11 +2944,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260602-turing-visuals"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260602-turing-visuals" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -3424,8 +3520,11 @@
 
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
             const subcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || entry.role || '')).trim();
-            if (!caption && !subcaption) return null;
-            return { caption, subcaption };
+            const source = String(entry.source || entry.url || '').trim();
+            const license = String(lx(entry.license || '')).trim();
+            const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
+            if (!caption && !subcaption && !source && !license && !usage) return null;
+            return { caption, subcaption, source, license, usage };
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -3489,6 +3588,89 @@
                 name: (configured && configured.caption) || autoMeta.name,
                 role: (configured && configured.subcaption) || autoMeta.role
             };
+        }
+
+        function getAchievementVisualModules(rawMilestone) {
+            const raw = rawMilestone || {};
+            const modules = raw && raw.achievement && Array.isArray(raw.achievement.visualModules)
+                ? raw.achievement.visualModules
+                : [];
+
+            return modules
+                .map((module) => {
+                    if (!module || typeof module !== 'object') return null;
+                    const type = String(module.type || '').trim();
+                    const url = String(module.url || module.source || '').trim();
+                    if (!type || !url) return null;
+
+                    return {
+                        type,
+                        url,
+                        site: String(lx(module.site || module.label || '')).trim(),
+                        title: String(lx(module.title || '')).trim(),
+                        description: String(lx(module.description || module.subcaption || '')).trim(),
+                        license: String(lx(module.license || '')).trim(),
+                        usage: String(lx(module.usage || '')).trim(),
+                        action: String(lx(module.action || '')).trim()
+                    };
+                })
+                .filter(Boolean);
+        }
+
+        function buildBenchVisualItems(vm) {
+            const photos = sortPhotosForDisplay(vm.photos).slice(0, 3).map((photo) => {
+                const meta = buildArchivePhotoMeta(vm, photo);
+                const configured = getConfiguredImageMeta(vm, photo) || {};
+                return {
+                    type: 'image',
+                    url: photo,
+                    title: meta.name || configured.caption || tx('archiveImage'),
+                    description: meta.role || configured.subcaption || '',
+                    source: configured.source || '',
+                    license: configured.license || '',
+                    usage: configured.usage || ''
+                };
+            });
+
+            const configuredModules = getAchievementVisualModules(vm.raw);
+            return [...photos, ...configuredModules].slice(0, 3);
+        }
+
+        function buildBenchImageVisualCard(item) {
+            const title = item.title || tx('archiveImage');
+            const isDiagram = /diagram|explainer/i.test(`${item.url || ''} ${title || ''} ${item.usage || ''}`);
+            return `
+                <div class="bench-photo-frame bench-visual-card has-image">
+                    <div class="bench-image-stage${isDiagram ? ' is-diagram' : ''}">
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}">
+                    </div>
+                    <div class="bench-hero-caption">
+                        <span>${escapeHtml(title)}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildBenchArchiveVisualCard(item) {
+            const site = item.site || tx('historicalArchive');
+            const title = item.title || site;
+            const description = item.description || item.usage || '';
+            const action = item.action || 'Open archive preview';
+            return `
+                <a class="bench-photo-frame bench-visual-card bench-archive-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
+                    <div class="bench-archive-kicker">${escapeHtml(site)}</div>
+                    <div class="bench-archive-title">${escapeHtml(title)}</div>
+                    ${description ? `<div class="bench-archive-description">${escapeHtml(description)}</div>` : ''}
+                    ${item.license ? `<div class="bench-archive-license">${escapeHtml(item.license)}</div>` : ''}
+                    <div class="bench-archive-action">${escapeHtml(action)}</div>
+                </a>
+            `;
+        }
+
+        function buildBenchVisualCard(item) {
+            if (!item) return '<div class="bench-photo-frame is-placeholder" aria-hidden="true"></div>';
+            if (item.type === 'image') return buildBenchImageVisualCard(item);
+            return buildBenchArchiveVisualCard(item);
         }
 
         function extractVideoQuote(vm) {
@@ -3564,6 +3746,8 @@
             if (!value) return -999;
             if (value.includes('/historical/')) return 5;
             if (value.includes('/people/')) return 4;
+            if (value.includes('/photos/')) return 4;
+            if (value.includes('/explainers/')) return 3;
             if (value.includes('/architecture/')) return 2;
             if (value.includes('/papers/')) return 1;
             return 3;
@@ -4872,28 +5056,25 @@
 
         function renderBenchHeroVisual(vm) {
             if (!refs.benchHeroVisual) return;
-            const photos = sortPhotosForDisplay(vm.photos);
-            const photo = photos[0] || '';
-            refs.benchHeroVisual.classList.toggle('is-empty', !photo);
-            refs.benchHeroVisual.classList.toggle('has-photo', Boolean(photo));
-            if (!photo) {
+            const items = buildBenchVisualItems(vm);
+            const backgroundItem = items.find((item) => item && item.type === 'image');
+            const backgroundPhoto = backgroundItem ? backgroundItem.url : '';
+            refs.benchHeroVisual.classList.toggle('is-empty', items.length === 0);
+            refs.benchHeroVisual.classList.toggle('has-photo', Boolean(backgroundPhoto));
+            if (!items.length) {
                 refs.benchHeroVisual.style.removeProperty('--bench-photo');
                 refs.benchHeroVisual.innerHTML = '';
                 return;
             }
 
-            refs.benchHeroVisual.style.setProperty('--bench-photo', `url("${photo.replace(/"/g, '\\"')}")`);
-            const meta = buildArchivePhotoMeta(vm, photo);
-            refs.benchHeroVisual.innerHTML = `
-                <div class="bench-photo-frame has-image">
-                    <img src="${escapeHtml(photo)}" alt="${escapeHtml(meta.role || vm.title || tx('archiveImage'))}">
-                    <div class="bench-hero-caption">
-                        <span>${escapeHtml(meta.name || tx('historicalArchive'))}</span>
-                    </div>
-                </div>
-                <div class="bench-photo-frame is-placeholder" aria-hidden="true"></div>
-                <div class="bench-photo-frame is-placeholder" aria-hidden="true"></div>
-            `;
+            if (backgroundPhoto) {
+                refs.benchHeroVisual.style.setProperty('--bench-photo', `url("${backgroundPhoto.replace(/"/g, '\\"')}")`);
+            } else {
+                refs.benchHeroVisual.style.removeProperty('--bench-photo');
+            }
+
+            const placeholders = Array.from({ length: Math.max(0, 3 - items.length) }, () => null);
+            refs.benchHeroVisual.innerHTML = [...items, ...placeholders].map(buildBenchVisualCard).join('');
         }
 
         function renderBenchDemo(vm) {

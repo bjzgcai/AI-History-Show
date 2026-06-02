@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-05-29 18:42
+// 生成时间: 2026-06-02 03:23
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -3330,7 +3330,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg"
+        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
       ],
       "imageMeta": {
         "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
@@ -3344,6 +3345,22 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
           "license": "Public domain"
+        },
+        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
+          "caption": {
+            "en": "Turing test diagram",
+            "zh": "图灵测试结构图"
+          },
+          "subcaption": {
+            "en": "Observer C judges hidden human and machine replies through text only.",
+            "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
+          "license": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+          "usage": {
+            "en": "Supporting image / Explainer graphic",
+            "zh": "辅助说明图 / 解释性图形"
+          }
         }
       },
       "videos": []
@@ -3391,6 +3408,31 @@ const milestones = [
           "zh": "评估争议"
         }
       ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Internet Archive",
+          "title": {
+            "en": "Computing Machinery and Intelligence archive preview",
+            "zh": "《Computing Machinery and Intelligence》档案预览"
+          },
+          "description": {
+            "en": "Digitized access page for Turing's 1950 Mind paper, showing the title, author, publication date and download options.",
+            "zh": "Turing 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
+          },
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "license": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+          "usage": {
+            "en": "Source material image / Archival reference",
+            "zh": "原始材料入口 / 档案参考"
+          },
+          "action": {
+            "en": "Open archive preview",
+            "zh": "打开档案预览"
+          }
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -3413,6 +3455,17 @@ const milestones = [
             "zh": "Turing Digital Archive"
           },
           "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Internet Archive digital preview",
+            "zh": "Internet Archive 数字化预览"
+          },
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up"
         },
         {
           "type": {
@@ -3528,7 +3581,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg"
+        "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
+        "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
       ],
       "imageMeta": {
         "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
@@ -3542,6 +3596,22 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
           "license": "CC BY-SA 2.0"
+        },
+        "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
+          "caption": {
+            "en": "S-expression evaluator",
+            "zh": "S 表达式求值流程"
+          },
+          "subcaption": {
+            "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives.",
+            "zh": "根据 McCarthy 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
+          },
+          "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+          "license": "Original local explainer; source text reuse rights not stated.",
+          "usage": {
+            "en": "Supporting image / Explainer graphic",
+            "zh": "辅助说明图 / 解释性图形"
+          }
         }
       },
       "videos": []
@@ -3587,6 +3657,31 @@ const milestones = [
         {
           "en": "Code as data",
           "zh": "代码即数据"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Stanford / John McCarthy",
+          "title": {
+            "en": "Recursive Functions of Symbolic Expressions",
+            "zh": "《Recursive Functions of Symbolic Expressions》原文"
+          },
+          "description": {
+            "en": "Author-hosted Stanford page for McCarthy's original LISP paper, first published in Communications of the ACM in April 1960.",
+            "zh": "McCarthy 在 Stanford 个人站点保存的 LISP 原始论文页面，论文最初发表于 1960 年 4 月的 Communications of the ACM。"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+          "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+          "license": "Author-hosted web access; reuse rights for the text are not stated.",
+          "usage": {
+            "en": "Source material / Original paper reference",
+            "zh": "原始材料入口 / 原始论文参考"
+          },
+          "action": {
+            "en": "Open paper source",
+            "zh": "打开论文原文"
+          }
         }
       ],
       "sources": [
@@ -3752,7 +3847,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "imageMeta": {
         "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
@@ -3766,6 +3862,22 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "license": "CC BY 2.0"
+        },
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
+          "caption": {
+            "en": "Policy-value-search explainer",
+            "zh": "策略-价值-搜索解释图"
+          },
+          "subcaption": {
+            "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
+            "zh": "根据 Nature AlphaGo 论文与 Google DeepMind AlphaGo 官方材料制作的解释图。"
+          },
+          "source": "https://www.nature.com/articles/nature16961",
+          "license": "Original local explainer; publisher figure reuse rights not used.",
+          "usage": {
+            "en": "Supporting image / Explainer graphic",
+            "zh": "辅助说明图 / 解释性图形"
+          }
         }
       },
       "videos": []
@@ -3811,6 +3923,31 @@ const milestones = [
         {
           "en": "Search variation",
           "zh": "搜索分支"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Nature",
+          "title": {
+            "en": "Mastering the game of Go with deep neural networks and tree search",
+            "zh": "《Mastering the game of Go with deep neural networks and tree search》"
+          },
+          "description": {
+            "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
+            "zh": "Nature 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+          },
+          "url": "https://www.nature.com/articles/nature16961",
+          "source": "https://www.nature.com/articles/nature16961",
+          "license": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open Nature paper",
+            "zh": "打开 Nature 论文"
+          }
         }
       ],
       "sources": [
