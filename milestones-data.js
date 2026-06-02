@@ -3437,8 +3437,8 @@ const milestones = [
       "zh": "BenchCouncil AI100 成就"
     },
     "title": {
-      "en": "Turing Test: A Question Becomes a Benchmark",
-      "zh": "图灵测试：一个问题成为基准"
+      "en": "Turing Test",
+      "zh": "图灵测试"
     },
     "subtitle": {
       "en": "AI Top 100 Achievements",
@@ -3459,8 +3459,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "<p>BenchCouncil AI100 places the Turing test at the beginning of its theory thread. In 1950, Alan Turing turned the abstract question of machine intelligence into an operational test: judge a machine by its conversational behavior, not by opening the machine and inspecting its mechanism.</p><p>The achievement is bigger than a single benchmark. It introduced a pattern still visible in modern AI evaluation: define a protocol, hide irrelevant identity cues, collect human judgments, then debate what the result actually proves.</p>",
-      "zh": "<p>BenchCouncil AI100 将图灵测试放在理论线索的开端。1950 年，Alan Turing 将“机器能否思考”这个抽象问题转化为可操作的测试：通过对话行为来判断机器，而不是打开机器去观察内部机制。</p><p>它的意义不止是一个早期基准。它提出了一种现代 AI 评估仍在沿用的模式：定义协议，遮蔽身份线索，收集人类判断，再讨论结果到底能证明什么。</p>"
+      "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>",
+      "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>"
     },
     "figures": [
       {
@@ -3518,19 +3518,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Modern View",
-          "zh": "现代评价"
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
         },
         "html": {
-          "en": "A modern expert or visitor can frame Turing's achievement as the start of AI evaluation culture: intelligence is judged through interaction, evidence and comparison rather than a single internal definition. Video clip:",
-          "zh": "可以增加“现在的专家/个人对这个成就的评价”：从今天看，图灵测试开启的是 AI 评估文化，用交互、证据和比较来讨论智能，而不是只寻找一个内部定义。视频片段："
-        },
-        "link": {
-          "label": {
-            "en": "The Turing Test: Can Machines Think?",
-            "zh": "The Turing Test: Can Machines Think?"
-          },
-          "url": "https://www.youtube.com/watch?v=3wLqsRLvV-c"
+          "en": "Today experts usually treat the Turing Test as historically foundational and philosophically fertile, but not as a complete modern definition of intelligence. Its strongest legacy is methodological: it made machine intelligence discussable through observable interaction.",
+          "zh": "今天的专家通常认为，图灵测试在历史上具有奠基意义，在哲学上也非常富有启发性，但它并不是现代智能的完整定义。它最持久的遗产是方法论层面的：它让机器智能能够通过可观察互动来讨论。"
         }
       }
     ],
@@ -3600,6 +3593,28 @@ const milestones = [
         "zh": "匿名对话投票"
       },
       "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Imitation Game",
+            "zh": "模仿游戏"
+          },
+          "text": {
+            "en": "Turing's setup hides identity and asks a judge to compare typed answers from a human and a machine. It turns intelligence into an observable interaction rather than an internal claim.",
+            "zh": "图灵的设置遮蔽身份，让裁判比较人和机器的文字回答。它把智能变成可观察的互动，而不是关于内部状态的主张。"
+          }
+        },
+        {
+          "label": {
+            "en": "Behavioral Evaluation",
+            "zh": "行为评估"
+          },
+          "text": {
+            "en": "The test judges performance through conversation under a controlled interface. The protocol, not the machine's construction, becomes the evidence.",
+            "zh": "测试在受控界面中通过对话判断表现。成为证据的是评估协议，而不是机器由什么构成。"
+          }
+        }
+      ],
       "demoSteps": [
         {
           "en": "Blind channel",
@@ -3612,6 +3627,22 @@ const milestones = [
         {
           "en": "Evaluation debate",
           "zh": "评估争议"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ELIZA",
+          "zh": "ELIZA"
+        },
+        {
+          "en": "IBM Watson",
+          "zh": "IBM Watson"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
         }
       ],
       "visualModules": [
@@ -3695,8 +3726,8 @@ const milestones = [
       "zh": "BenchCouncil AI100 成就"
     },
     "title": {
-      "en": "LISP: Symbolic AI Gets a Language",
-      "zh": "LISP：符号 AI 获得编程语言"
+      "en": "LISP",
+      "zh": "LISP"
     },
     "subtitle": {
       "en": "AI Top 100 Achievements",
@@ -3717,8 +3748,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "<p>In the BenchCouncil AI100 language section, LISP marks the moment when symbolic AI gained a practical medium. John McCarthy's language treated programs and data as list structures, making recursive symbolic manipulation a native act of programming.</p><p>The achievement is not only the invention of a language. It gave AI researchers compact primitives for representing knowledge, transforming expressions, building theorem provers and experimenting with systems whose own programs could be manipulated as data.</p>",
-      "zh": "<p>在 BenchCouncil AI100 的语言类目中，LISP 标志着符号 AI 获得了可实践的媒介。John McCarthy 的语言把程序和数据都组织成表结构，使递归式符号处理成为编程语言本身的自然能力。</p><p>它的成就不只是发明一门语言，而是为 AI 研究者提供了表示知识、变换表达式、构造定理证明器以及把程序自身当作数据处理的一组简洁原语。</p>"
+      "en": "<p>John McCarthy's LISP gave symbolic AI a practical programming language. It treated code and data as list structures that could be created, transformed and evaluated recursively. That made it a natural tool for early AI systems built around symbols, rules and programs that manipulate programs.</p>",
+      "zh": "<p>约翰·麦卡锡的 LISP 为符号 AI 提供了实用编程语言。它把代码和数据都表示为表结构，使递归式符号处理成为可执行的工程工具。这让它自然适合早期以符号、规则和“处理程序的程序”为核心的 AI 系统。</p>"
     },
     "figures": [
       {
@@ -3865,6 +3896,22 @@ const milestones = [
           "zh": "代码即数据"
         }
       ],
+      "relatedAchievements": [
+        {
+          "en": "PROLOG",
+          "zh": "PROLOG"
+        },
+        {
+          "en": "ELIZA",
+          "zh": "ELIZA"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
       "visualModules": [
         {
           "type": "archiveLink",
@@ -3935,8 +3982,8 @@ const milestones = [
       "zh": "BenchCouncil AI100 成就"
     },
     "title": {
-      "en": "AlphaGo: Search, Learning, and Go",
-      "zh": "AlphaGo：搜索、学习与围棋"
+      "en": "AlphaGo",
+      "zh": "AlphaGo"
     },
     "subtitle": {
       "en": "AI Top 100 Achievements",
@@ -3957,8 +4004,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "<p>BenchCouncil AI100 lists AlphaGo under reinforcement learning. The system combined deep neural networks, Monte Carlo tree search, supervised learning from expert games and reinforcement learning through self-play.</p><p>The 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The richer technical story is that AlphaGo did not merely search harder; it learned where to search, how to value positions and how to improve through play.</p>",
-      "zh": "<p>BenchCouncil AI100 将 AlphaGo 列在强化学习线索之下。这个系统结合深度神经网络、蒙特卡洛树搜索、专家棋谱监督学习以及自我对弈强化学习。</p><p>2016 年与李世石的对局让 AI 的战略能力被全球观众看见。更丰富的技术故事是：AlphaGo 并不只是“搜索更多”，而是学会了在哪里搜索、如何评估局面，以及如何通过对弈提升自己。</p>"
+      "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
+      "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
     },
     "figures": [
       {
@@ -4129,6 +4176,22 @@ const milestones = [
         {
           "en": "Search variation",
           "zh": "搜索分支"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Deep Blue",
+          "zh": "深蓝"
+        },
+        {
+          "en": "AlphaZero",
+          "zh": "AlphaZero"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
         }
       ],
       "visualModules": [
