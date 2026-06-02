@@ -35,6 +35,9 @@
             --accent: #f68900;
             --accent-strong: #ff7f11;
             --deep-red: #4f0404;
+            --scrollbar-track: rgba(255, 255, 255, 0.045);
+            --scrollbar-thumb: rgba(246, 137, 0, 0.42);
+            --scrollbar-thumb-hover: rgba(246, 137, 0, 0.68);
             --ui-font: "PingFang SC", "Microsoft YaHei", sans-serif;
         }
 
@@ -607,19 +610,6 @@
             color: rgba(244, 239, 229, 0.92);
             font-size: 17px;
             line-height: 1.5;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(255, 255, 255, 0.24) transparent;
-        }
-
-        .story-summary::-webkit-scrollbar,
-        .commentary-list::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        .story-summary::-webkit-scrollbar-thumb,
-        .commentary-list::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.24);
-            border-radius: 999px;
         }
 
         .story-summary p {
@@ -1606,8 +1596,95 @@
         .bench-evidence-list {
             min-height: 0;
             overflow: auto;
+        }
+
+        .story-summary,
+        .commentary-list,
+        .bench-core-summary,
+        .bench-map-list,
+        .bench-source-list,
+        .bench-evidence-list {
             scrollbar-width: thin;
-            scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+            scrollbar-color: transparent transparent;
+            scrollbar-gutter: stable;
+        }
+
+        .story-summary.is-scrolling,
+        .commentary-list.is-scrolling,
+        .bench-core-summary.is-scrolling,
+        .bench-map-list.is-scrolling,
+        .bench-source-list.is-scrolling,
+        .bench-evidence-list.is-scrolling {
+            scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+        }
+
+        .story-summary::-webkit-scrollbar,
+        .commentary-list::-webkit-scrollbar,
+        .bench-core-summary::-webkit-scrollbar,
+        .bench-map-list::-webkit-scrollbar,
+        .bench-source-list::-webkit-scrollbar,
+        .bench-evidence-list::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+        .story-summary::-webkit-scrollbar-track,
+        .commentary-list::-webkit-scrollbar-track,
+        .bench-core-summary::-webkit-scrollbar-track,
+        .bench-map-list::-webkit-scrollbar-track,
+        .bench-source-list::-webkit-scrollbar-track,
+        .bench-evidence-list::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 999px;
+        }
+
+        .story-summary.is-scrolling::-webkit-scrollbar-track,
+        .commentary-list.is-scrolling::-webkit-scrollbar-track,
+        .bench-core-summary.is-scrolling::-webkit-scrollbar-track,
+        .bench-map-list.is-scrolling::-webkit-scrollbar-track,
+        .bench-source-list.is-scrolling::-webkit-scrollbar-track,
+        .bench-evidence-list.is-scrolling::-webkit-scrollbar-track {
+            background: var(--scrollbar-track);
+        }
+
+        .story-summary::-webkit-scrollbar-thumb,
+        .commentary-list::-webkit-scrollbar-thumb,
+        .bench-core-summary::-webkit-scrollbar-thumb,
+        .bench-map-list::-webkit-scrollbar-thumb,
+        .bench-source-list::-webkit-scrollbar-thumb,
+        .bench-evidence-list::-webkit-scrollbar-thumb {
+            min-height: 40px;
+            background: transparent;
+            border: 2px solid transparent;
+            border-radius: 999px;
+            background-clip: content-box;
+        }
+
+        .story-summary.is-scrolling::-webkit-scrollbar-thumb,
+        .commentary-list.is-scrolling::-webkit-scrollbar-thumb,
+        .bench-core-summary.is-scrolling::-webkit-scrollbar-thumb,
+        .bench-map-list.is-scrolling::-webkit-scrollbar-thumb,
+        .bench-source-list.is-scrolling::-webkit-scrollbar-thumb,
+        .bench-evidence-list.is-scrolling::-webkit-scrollbar-thumb {
+            background: var(--scrollbar-thumb);
+        }
+
+        .story-summary::-webkit-scrollbar-thumb:hover,
+        .commentary-list::-webkit-scrollbar-thumb:hover,
+        .bench-core-summary::-webkit-scrollbar-thumb:hover,
+        .bench-map-list::-webkit-scrollbar-thumb:hover,
+        .bench-source-list::-webkit-scrollbar-thumb:hover,
+        .bench-evidence-list::-webkit-scrollbar-thumb:hover {
+            background-color: var(--scrollbar-thumb-hover);
+        }
+
+        .story-summary::-webkit-scrollbar-corner,
+        .commentary-list::-webkit-scrollbar-corner,
+        .bench-core-summary::-webkit-scrollbar-corner,
+        .bench-map-list::-webkit-scrollbar-corner,
+        .bench-source-list::-webkit-scrollbar-corner,
+        .bench-evidence-list::-webkit-scrollbar-corner {
+            background: transparent;
         }
 
         .bench-map-list {
@@ -1688,6 +1765,7 @@
             grid-template-columns: minmax(0, 1fr) 230px;
             gap: 16px;
             align-items: stretch;
+            padding-bottom: 1px;
         }
 
         .bench-demo-visual,
@@ -1700,7 +1778,7 @@
 
         .bench-demo-visual {
             padding: 16px;
-            overflow: hidden;
+            overflow: visible;
             display: grid;
         }
 
@@ -1742,15 +1820,15 @@
         .bench-transcript-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            grid-template-rows: minmax(0, 1fr) auto;
+            align-content: stretch;
             gap: 14px;
-            height: 100%;
+            min-height: 100%;
         }
 
         .bench-transcript-column {
             border: 1px solid rgba(244, 239, 229, 0.1);
             border-radius: 7px;
-            padding: 16px;
+            padding: 13px 16px;
             display: grid;
             grid-template-rows: auto auto auto;
             align-content: start;
@@ -4956,6 +5034,39 @@
             return steps.map((step) => String(lx(step) || '').trim()).filter(Boolean);
         }
 
+        function getAchievementRelatedItems(rawMilestone) {
+            const achievement = rawMilestone && rawMilestone.achievement ? rawMilestone.achievement : {};
+            const relatedAchievements = Array.isArray(achievement.relatedAchievements) ? achievement.relatedAchievements : [];
+            const relatedRegions = Array.isArray(achievement.relatedRegions) ? achievement.relatedRegions : [];
+            const items = [
+                ...relatedAchievements.slice(0, 2),
+                ...relatedRegions.slice(0, 1)
+            ].map((item) => String(lx(item) || '').trim()).filter(Boolean);
+
+            return items.length > 0 ? items : getAchievementDemoSteps(rawMilestone);
+        }
+
+        function getAchievementKeyConcepts(rawMilestone) {
+            const concepts = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.keyConcepts)
+                ? rawMilestone.achievement.keyConcepts
+                : [];
+            return concepts.slice(0, 2).map((concept, index) => {
+                if (typeof concept === 'string' || !concept || typeof concept !== 'object') {
+                    return {
+                        label: uiText(`Key concept ${index + 1}`, `关键概念 ${index + 1}`),
+                        text: String(lx(concept) || '').trim(),
+                        chip: uiText('Key concept', '关键概念')
+                    };
+                }
+
+                return {
+                    label: String(lx(concept.label || concept.name || concept.title) || uiText(`Key concept ${index + 1}`, `关键概念 ${index + 1}`)).trim(),
+                    text: String(lx(concept.text || concept.description || concept.summary) || '').trim(),
+                    chip: String(lx(concept.chip || concept.type) || uiText('Key concept', '关键概念')).trim()
+                };
+            }).filter((concept) => concept.label && concept.text);
+        }
+
         function getAchievementVisual(rawMilestone) {
             return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.visual || '').trim();
         }
@@ -4984,23 +5095,31 @@
             });
         }
 
-        function buildTranscriptDemo() {
+        function buildTranscriptDemo(rawMilestone) {
+            const concepts = getAchievementKeyConcepts(rawMilestone);
+            const firstConcept = concepts[0] || {
+                label: uiText('Channel A', '通道 A'),
+                text: uiText('Answers arrive as text. Identity is hidden; behavior becomes the evidence.', '回答只以文本出现。身份被遮蔽，行为成为证据。'),
+                chip: uiText('Judge', '判断者')
+            };
+            const secondConcept = concepts[1] || {
+                label: uiText('Channel B', '通道 B'),
+                text: uiText('The protocol does the work: same interface, same task, competing interpretations.', '协议本身在工作：同一界面、同一任务、不同解释彼此竞争。'),
+                chip: uiText('Protocol', '协议')
+            };
+
             return `
                 <div class="bench-transcript-grid">
                     <article class="bench-transcript-column">
-                        <div class="bench-transcript-label">${escapeHtml(uiText('Channel A', '通道 A'))}</div>
-                        <div class="bench-transcript-text">${escapeHtml(uiText('Answers arrive as text. Identity is hidden; behavior becomes the evidence.', '回答只以文本出现。身份被遮蔽，行为成为证据。'))}</div>
-                        <div class="bench-transcript-chip">${escapeHtml(uiText('Judge', '判断者'))}</div>
+                        <div class="bench-transcript-label">${escapeHtml(firstConcept.label)}</div>
+                        <div class="bench-transcript-text">${escapeHtml(firstConcept.text)}</div>
+                        <div class="bench-transcript-chip">${escapeHtml(firstConcept.chip)}</div>
                     </article>
                     <article class="bench-transcript-column">
-                        <div class="bench-transcript-label">${escapeHtml(uiText('Channel B', '通道 B'))}</div>
-                        <div class="bench-transcript-text">${escapeHtml(uiText('The protocol does the work: same interface, same task, competing interpretations.', '协议本身在工作：同一界面、同一任务、不同解释彼此竞争。'))}</div>
-                        <div class="bench-transcript-chip">${escapeHtml(uiText('Protocol', '协议'))}</div>
+                        <div class="bench-transcript-label">${escapeHtml(secondConcept.label)}</div>
+                        <div class="bench-transcript-text">${escapeHtml(secondConcept.text)}</div>
+                        <div class="bench-transcript-chip">${escapeHtml(secondConcept.chip)}</div>
                     </article>
-                    <div class="bench-transcript-ruling">
-                        <span>${escapeHtml(uiText('Evaluation object', '评估对象'))}</span>
-                        <strong>${escapeHtml(uiText('Behavior under a controlled interface', '受控界面下的行为表现'))}</strong>
-                    </div>
                 </div>
             `;
         }
@@ -5080,9 +5199,9 @@
         function renderBenchDemo(vm) {
             const raw = vm.raw || {};
             const visual = getAchievementVisual(raw);
-            const steps = getAchievementDemoSteps(raw);
+            const steps = getAchievementRelatedItems(raw);
             const visualHtml = visual === 'transcript'
-                ? buildTranscriptDemo()
+                ? buildTranscriptDemo(raw)
                 : visual === 'eval'
                   ? buildEvalDemo()
                   : visual === 'go'
@@ -5516,6 +5635,30 @@
             jumpTo(nextIndex, options);
         }
 
+        function initAutoHideScrollbars() {
+            const selector = [
+                '.story-summary',
+                '.commentary-list',
+                '.bench-core-summary',
+                '.bench-map-list',
+                '.bench-source-list',
+                '.bench-evidence-list'
+            ].join(',');
+            const timers = new WeakMap();
+
+            document.querySelectorAll(selector).forEach((element) => {
+                element.addEventListener('scroll', () => {
+                    element.classList.add('is-scrolling');
+                    const existingTimer = timers.get(element);
+                    if (existingTimer) window.clearTimeout(existingTimer);
+                    timers.set(element, window.setTimeout(() => {
+                        element.classList.remove('is-scrolling');
+                        timers.delete(element);
+                    }, 900));
+                }, { passive: true });
+            });
+        }
+
         function initSwipeNavigation() {
             if (!window.SwipeNavigation || typeof window.SwipeNavigation.setupSwipeNavigation !== 'function') {
                 return;
@@ -5567,6 +5710,7 @@
             syncStageScale();
             initGlobe();
             initSwipeNavigation();
+            initAutoHideScrollbars();
             renderPage(currentIndex);
         }
     </script>
