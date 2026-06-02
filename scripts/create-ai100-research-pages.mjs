@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { URL } from "node:url";
 
 const ROOT_DIR = new URL("../research/ai100/", import.meta.url);
 const PAGES_DIR = new URL("pages/", ROOT_DIR);

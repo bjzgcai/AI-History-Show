@@ -1,4 +1,5 @@
 import { mkdir, writeFile } from "node:fs/promises";
+import { URL } from "node:url";
 
 const SOURCE_URL = "https://www.benchcouncil.org/evaluation/ai/";
 const OUTPUT_DIR = new URL("../research/ai100/", import.meta.url);
