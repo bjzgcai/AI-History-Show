@@ -1,6 +1,6 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
 // 生成时间: 2026-06-05 19:56
-// 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
+// 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
   {
@@ -3722,7 +3722,89 @@ const milestones = [
           "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
         }
       ]
-    }
+    },
+    "quiz": {
+      "id": "1950-turing-test-quiz-1",
+      "question": {
+        "en": "Turing's test avoids opening the machine. What does it judge instead?",
+        "zh": "图灵测试不打开机器看内部，它改为判断什么？"
+      },
+      "options": [
+        {
+          "en": "Conversational behavior under a blind protocol",
+          "zh": "盲测协议下的对话行为"
+        },
+        {
+          "en": "The color of the computer case",
+          "zh": "电脑外壳颜色"
+        },
+        {
+          "en": "How loudly the machine runs",
+          "zh": "机器运行声音大小"
+        },
+        {
+          "en": "Whether it owns a chessboard",
+          "zh": "它是否拥有棋盘"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The imitation game focuses on observable interaction rather than inspecting internal mechanisms.",
+        "zh": "模仿游戏关注可观察互动，而不是检查内部机制。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "evaluation",
+        "behavior"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1950-turing-test-quiz-1",
+        "question": {
+          "en": "Turing's test avoids opening the machine. What does it judge instead?",
+          "zh": "图灵测试不打开机器看内部，它改为判断什么？"
+        },
+        "options": [
+          {
+            "en": "Conversational behavior under a blind protocol",
+            "zh": "盲测协议下的对话行为"
+          },
+          {
+            "en": "The color of the computer case",
+            "zh": "电脑外壳颜色"
+          },
+          {
+            "en": "How loudly the machine runs",
+            "zh": "机器运行声音大小"
+          },
+          {
+            "en": "Whether it owns a chessboard",
+            "zh": "它是否拥有棋盘"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The imitation game focuses on observable interaction rather than inspecting internal mechanisms.",
+          "zh": "模仿游戏关注可观察互动，而不是检查内部机制。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "evaluation",
+          "behavior"
+        ]
+      }
+    ]
   },
   {
     "id": "milestone-1958-lisp",
@@ -3984,7 +4066,89 @@ const milestones = [
           "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
         }
       ]
-    }
+    },
+    "quiz": {
+      "id": "1958-lisp-quiz-1",
+      "question": {
+        "en": "LISP made early AI feel programmable because code and data could both be written as...",
+        "zh": "LISP 让早期 AI 更可编程，因为代码和数据都可以写成什么？"
+      },
+      "options": [
+        {
+          "en": "S-expressions",
+          "zh": "S 表达式"
+        },
+        {
+          "en": "Photographs",
+          "zh": "照片"
+        },
+        {
+          "en": "Go stones",
+          "zh": "围棋棋子"
+        },
+        {
+          "en": "Audio tapes only",
+          "zh": "只有录音磁带"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "S-expressions made symbolic programs and symbolic data share a compact representation.",
+        "zh": "S 表达式让符号程序和符号数据共享一种紧凑表示。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "language",
+        "symbolic"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1958-lisp-quiz-1",
+        "question": {
+          "en": "LISP made early AI feel programmable because code and data could both be written as...",
+          "zh": "LISP 让早期 AI 更可编程，因为代码和数据都可以写成什么？"
+        },
+        "options": [
+          {
+            "en": "S-expressions",
+            "zh": "S 表达式"
+          },
+          {
+            "en": "Photographs",
+            "zh": "照片"
+          },
+          {
+            "en": "Go stones",
+            "zh": "围棋棋子"
+          },
+          {
+            "en": "Audio tapes only",
+            "zh": "只有录音磁带"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "S-expressions made symbolic programs and symbolic data share a compact representation.",
+          "zh": "S 表达式让符号程序和符号数据共享一种紧凑表示。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "language",
+          "symbolic"
+        ]
+      }
+    ]
   },
   {
     "id": "milestone-2016-alphago",
@@ -4272,7 +4436,89 @@ const milestones = [
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
         }
       ]
-    }
+    },
+    "quiz": {
+      "id": "2016-alphago-quiz-1",
+      "question": {
+        "en": "AlphaGo did not just search harder. What did it learn to guide search?",
+        "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？"
+      },
+      "options": [
+        {
+          "en": "Policy priors and value estimates",
+          "zh": "策略先验和价值估计"
+        },
+        {
+          "en": "The referee's handwriting",
+          "zh": "裁判的笔迹"
+        },
+        {
+          "en": "Only the board color",
+          "zh": "只有棋盘颜色"
+        },
+        {
+          "en": "A fixed first move for every game",
+          "zh": "每盘棋固定第一手"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead.",
+        "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "games",
+        "search"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "2016-alphago-quiz-1",
+        "question": {
+          "en": "AlphaGo did not just search harder. What did it learn to guide search?",
+          "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？"
+        },
+        "options": [
+          {
+            "en": "Policy priors and value estimates",
+            "zh": "策略先验和价值估计"
+          },
+          {
+            "en": "The referee's handwriting",
+            "zh": "裁判的笔迹"
+          },
+          {
+            "en": "Only the board color",
+            "zh": "只有棋盘颜色"
+          },
+          {
+            "en": "A fixed first move for every game",
+            "zh": "每盘棋固定第一手"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead.",
+          "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "games",
+          "search"
+        ]
+      }
+    ]
   }
 ];
 
