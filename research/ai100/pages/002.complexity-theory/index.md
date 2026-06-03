@@ -25,13 +25,11 @@ Stephen Cook's 1971 theorem-proving paper introduced NP-completeness, giving com
 
 # Hero Title
 
-- title.en: NP-Completeness
-- title.zh: NP 完全性
+- title: NP-Completeness
 
 # Hero Description
 
-- description.en: Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.
-- description.zh: 计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。
+- description: Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.
 
 # People & Place
 
@@ -161,23 +159,32 @@ Today experts generally evaluate Cook's 1971 contribution as a founding event of
 
 # Photos
 
-- Title: Stephen A. Cook ACM Award Recipient Photo
-- Image URL: https://awards.acm.org/award_winners/cook_N991950
-- Source: Association for Computing Machinery
-- Copyright Information: ACM award page; use requires checking ACM image permissions.
-- Description: Official ACM profile page for Stephen Cook, including award information and photo.
+images:
 
-- Title: Stephen Cook at University of Toronto
-- Image URL: https://www.utoronto.ca/news/some-deepest-questions-it-s-possible-ask-stephen-cook-s-pioneering-career-computational
-- Source: University of Toronto
-- Copyright Information: University of Toronto page credits photo courtesy of BBVA Foundation.
-- Description: University profile article on Cook's career and the 50-year celebration of computational complexity.
+- resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
+- resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
 
-- Title: P versus NP Millennium Problem Image
-- Image URL: https://www.claymath.org/millennium/p-vs-np/
-- Source: Clay Mathematics Institute
-- Copyright Information: Clay page credits Stephen Cook photo by Jiri Janicek, CC BY-SA 3.0.
-- Description: Official Clay Mathematics Institute page for the P versus NP Millennium Prize Problem.
+imageMeta:
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
+- title: Stephen A. Cook portrait
+- caption: Stephen A. Cook
+- description: Official or institutional profile image connected to Cook's work on NP-completeness.
+- source_name: Association for Computing Machinery
+- source_page_url: https://awards.acm.org/award_winners/cook_N991950
+- original_image_url: Not available
+- copyright_or_license: ACM award page; use requires checking ACM image permissions.
+- usage: Portrait
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
+- title: P versus NP Millennium Problem
+- caption: P versus NP Millennium Problem
+- description: Official Clay Mathematics Institute page for the P versus NP Millennium Prize Problem.
+- source_name: Clay Mathematics Institute
+- source_page_url: https://www.claymath.org/millennium/p-vs-np/
+- original_image_url: Not available
+- copyright_or_license: Clay page credits Stephen Cook photo by Jiri Janicek, CC BY-SA 3.0.
+- usage: Source material / Historical context
 
 # Video Clips
 

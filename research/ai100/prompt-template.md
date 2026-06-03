@@ -79,16 +79,16 @@ Achievement:
 
 为网站主视觉提供一个简洁标题：
 
-- title.en: 1-5 words
-- title.zh: 1-8 个字或常用中文名称
+- `index.md`: `title` 用英文，1-5 words
+- `index.zh.md`: `title` 用中文，1-8 个字或常用中文名称
 - 不要写成长句或完整论文标题
 
 # Hero Description
 
 为网站主视觉提供 2-3 句简短说明，不能只写一句：
 
-- description.en: 2-3 sentences
-- description.zh: 2-3 句
+- `index.md`: `description` 用英文，2-3 sentences
+- `index.zh.md`: `description` 用中文，2-3 句
 - 说明该成就是什么、为什么重要
 - 每种语言都要比一句话摘要更具体，但仍保持简洁
 - 不要写成完整展厅长文
@@ -245,6 +245,8 @@ London, UK
 
 提供 1-3 张真实存在的图片。
 
+图片必须按网站可直接使用的 schema 输出：抓取图片时优先保存为本地文件，并同时记录本地路径、来源页面和版权/授权信息。不要只提供网页 URL。
+
 优先顺序：
 
 1. 原始论文截图
@@ -257,11 +259,45 @@ London, UK
 
 每张图片提供：
 
-- Title
-- Image URL
-- Source
-- Copyright Information
-- Description
+- local_image_path: 例如 `resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg`
+- title: 当前文件语言的图片标题
+- caption: 当前文件语言的短 caption
+- description: 当前文件语言的 1-2 句说明
+- source_name
+- source_page_url
+- original_image_url: 如果能确认直接图片地址则填写；否则写 `Not available`
+- copyright_or_license
+- usage: 当前文件语言的图片用途，例如 `Portrait`, `Paper screenshot`, `Source material`, `Explainer graphic`
+
+注意：research markdown 文件保持单语；不要在 `index.md` 里同时写 `.zh` 字段，也不要在 `index.zh.md` 里同时写 `.en` 字段。网站数据层可以再转换成 `caption.en/caption.zh` 这样的双语对象。
+
+同时输出网站数据结构：
+
+```js
+images: [
+  "resources/images/bench-council-ai100/photos/example.jpg"
+],
+imageMeta: {
+  "resources/images/bench-council-ai100/photos/example.jpg": {
+    caption: {
+      en: "",
+      zh: ""
+    },
+    subcaption: {
+      en: "",
+      zh: ""
+    },
+    source: "",
+    sourceUrl: "",
+    originalImageUrl: "",
+    license: "",
+    usage: {
+      en: "",
+      zh: ""
+    }
+  }
+}
+```
 
 # Video Clips
 
