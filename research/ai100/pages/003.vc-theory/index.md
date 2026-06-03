@@ -25,13 +25,11 @@ VC theory gave machine learning a mathematical account of generalization: when l
 
 # Hero Title
 
-- title.en: VC Theory
-- title.zh: VC 理论
+- title: VC Theory
 
 # Hero Description
 
-- description.en: VC theory explains why a model trained on limited examples can sometimes perform well on data it has never seen. Vapnik and Chervonenkis connected learning, probability, and model capacity through measures such as VC dimension. Their work became a foundation for statistical learning theory and shaped how machine learning thinks about generalization.
-- description.zh: VC 理论解释了为什么模型只用有限样本训练后，有时仍能在未见数据上表现可靠。瓦普尼克和切尔沃年基斯用 VC 维等概念把学习、概率和模型容量联系起来。它成为统计学习理论的基础，也深刻影响了机器学习对泛化能力的理解。
+- description: VC theory explains why a model trained on limited examples can sometimes perform well on data it has never seen. Vapnik and Chervonenkis connected learning, probability, and model capacity through measures such as VC dimension. Their work became a foundation for statistical learning theory and shaped how machine learning thinks about generalization.
 
 # People & Place
 
@@ -170,23 +168,43 @@ Today experts usually evaluate VC theory as one of the mathematical foundations 
 
 # Photos
 
-- Title: The Nature of Statistical Learning Theory Book Page
-- Image URL: https://link.springer.com/book/10.1007/978-1-4757-2440-0
-- Source: Springer Nature
-- Copyright Information: Copyright Springer Science+Business Media New York 1995.
-- Description: Official Springer page for Vapnik's foundational book, including cover image and bibliographic metadata.
+images:
 
-- Title: Vladimir Vapnik IAS Lecture Page
-- Image URL: https://www.ias.edu/video/csdm/2015/0330-VladimirVapnik
-- Source: Institute for Advanced Study
-- Copyright Information: IAS page; consult IAS media permissions before reuse.
-- Description: Official IAS video page for Vapnik's 2015 lecture on intelligent learning.
+- resources/images/bench-council-ai100/photos/1971-vc-theory_vapnik-book.jpg
+- resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.jpg
+- resources/images/bench-council-ai100/photos/1971-vc-theory_paper.jpg
 
-- Title: On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities
-- Image URL: https://epubs.siam.org/doi/10.1137/1116025
-- Source: Society for Industrial and Applied Mathematics
-- Copyright Information: SIAM publication page; reuse requires checking SIAM rights.
-- Description: Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.
+imageMeta:
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-vc-theory_vapnik-book.jpg
+- title: The Nature of Statistical Learning Theory
+- caption: The Nature of Statistical Learning Theory book page
+- description: Official Springer page for Vapnik's foundational book, including cover image and bibliographic metadata.
+- source_name: Springer Nature
+- source_page_url: https://link.springer.com/book/10.1007/978-1-4757-2440-0
+- original_image_url: Not available
+- copyright_or_license: Copyright Springer Science+Business Media New York 1995.
+- usage: Book cover / Source material
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.jpg
+- title: Vladimir Vapnik IAS lecture
+- caption: Vladimir Vapnik lecture page
+- description: Official IAS video page for Vapnik's 2015 lecture on intelligent learning.
+- source_name: Institute for Advanced Study
+- source_page_url: https://www.ias.edu/video/csdm/2015/0330-VladimirVapnik
+- original_image_url: Not available
+- copyright_or_license: IAS page; consult IAS media permissions before reuse.
+- usage: Portrait / Lecture still
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-vc-theory_paper.jpg
+- title: Uniform convergence paper page
+- caption: On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities
+- description: Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.
+- source_name: Society for Industrial and Applied Mathematics
+- source_page_url: https://epubs.siam.org/doi/10.1137/1116025
+- original_image_url: Not available
+- copyright_or_license: SIAM publication page; reuse requires checking SIAM rights.
+- usage: Paper page / Source material
 
 # Video Clips
 

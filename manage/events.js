@@ -2396,7 +2396,10 @@ module.exports = {
           "en": "Photograph portrait of Alan Turing, 29 March 1951",
           "zh": "Alan Turing 肖像照，1951 年 3 月 29 日"
         },
+        "sourceName": "Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+        "originalImageUrl": "Not available",
         "license": "Public domain"
       },
       "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
@@ -2408,7 +2411,10 @@ module.exports = {
           "en": "Observer C judges hidden human and machine replies through text only.",
           "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。"
         },
+        "sourceName": "Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
+        "originalImageUrl": "Not available",
         "license": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
         "usage": {
           "en": "Supporting image / Explainer graphic",
@@ -2626,7 +2632,10 @@ module.exports = {
           "en": "John McCarthy at Stanford, 2006",
           "zh": "John McCarthy 于 Stanford，2006 年"
         },
+        "sourceName": "Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+        "originalImageUrl": "Not available",
         "license": "CC BY-SA 2.0"
       },
       "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
@@ -2638,7 +2647,10 @@ module.exports = {
           "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives.",
           "zh": "根据 McCarthy 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
         },
+        "sourceName": "Stanford / John McCarthy",
         "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "originalImageUrl": "Local original explainer",
         "license": "Original local explainer; source text reuse rights not stated.",
         "usage": {
           "en": "Supporting image / Explainer graphic",
@@ -2876,7 +2888,10 @@ module.exports = {
           "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
           "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
         },
+        "sourceName": "Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+        "originalImageUrl": "Not available",
         "license": "CC BY 2.0"
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
@@ -2888,7 +2903,10 @@ module.exports = {
           "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
           "zh": "根据 Nature AlphaGo 论文与 Google DeepMind AlphaGo 官方材料制作的解释图。"
         },
+        "sourceName": "Nature / Google DeepMind",
         "source": "https://www.nature.com/articles/nature16961",
+        "sourceUrl": "https://www.nature.com/articles/nature16961",
+        "originalImageUrl": "Local original explainer",
         "license": "Original local explainer; publisher figure reuse rights not used.",
         "usage": {
           "en": "Supporting image / Explainer graphic",

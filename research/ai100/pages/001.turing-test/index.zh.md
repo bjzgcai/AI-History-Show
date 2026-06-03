@@ -28,13 +28,11 @@ language: "zh"
 
 # 主视觉标题
 
-- title.en: Turing Test
-- title.zh: 图灵测试
+- title: 图灵测试
 
 # 主视觉简介
 
-- description.en: In 1950, Alan Turing turned the question "Can machines think?" into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence, and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.
-- description.zh: 1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。
+- description: 1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。
 
 # 人物与地点
 
@@ -147,17 +145,32 @@ BenchCouncil 在 AI100 表中列出《Computing Machinery and Intelligence》的
 
 # 图片
 
-- 标题: Computing Machinery and Intelligence
-- 图片 URL: https://www.computerhistory.org/chess/doc-431614f68ed44/
-- 来源: 计算机历史博物馆
-- 版权信息: CHM 标注版权方为《Mind》；CHM accession 062303001
-- 描述: Computer History Museum 收录的 1950 年 Mind 论文条目，包含文档图像和可下载 PDF。
+images:
 
-- 标题: AI 与机器人时间线中的艾伦·图灵
-- 图片 URL: https://www.computerhistory.org/timeline/ai-robotics/
-- 来源: 计算机历史博物馆
-- 版权信息: 计算机历史博物馆页面；复用前需查看条目级授权信息。
-- 描述: Computer History Museum 时间线中将图灵测试置于早期 AI 与机器人发展脉络中的条目。
+- resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
+- resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+
+imageMeta:
+
+- local_image_path: resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
+- title: 艾伦·图灵肖像
+- caption: 艾伦·图灵肖像
+- description: 艾伦·图灵肖像照，1951 年 3 月 29 日。
+- source_name: Wikimedia Commons
+- source_page_url: https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg
+- original_image_url: Not available
+- copyright_or_license: Public domain
+- usage: 人物肖像
+
+- local_image_path: resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+- title: 图灵测试结构图
+- caption: 图灵测试结构图
+- description: 观察者 C 只通过文字回答判断隐藏的人类与机器。
+- source_name: Wikimedia Commons
+- source_page_url: https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png
+- original_image_url: Not available
+- copyright_or_license: Creative Commons Attribution 2.5 Generic, CC BY 2.5
+- usage: 辅助说明图 / 解释性图形
 
 # 视频片段
 

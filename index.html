@@ -3591,7 +3591,7 @@
 
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
             const subcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || entry.role || '')).trim();
-            const source = String(entry.source || entry.url || '').trim();
+            const source = String(entry.sourceUrl || entry.source || entry.url || '').trim();
             const license = String(lx(entry.license || '')).trim();
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
             if (!caption && !subcaption && !source && !license && !usage) return null;
