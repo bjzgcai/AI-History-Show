@@ -1375,6 +1375,20 @@
             color: var(--accent);
         }
 
+        .quick-quiz-feedback-result,
+        .quick-quiz-feedback-explanation {
+            display: block;
+        }
+
+        .quick-quiz-feedback-result {
+            margin-bottom: 7px;
+        }
+
+        .quick-quiz-feedback-explanation {
+            color: rgba(244, 239, 229, 0.76);
+            font-weight: 600;
+        }
+
         .quiz-modal {
             position: fixed;
             inset: 0;
@@ -5428,9 +5442,11 @@
                 const lead = isCorrect ? uiText('Correct', '答对了') : uiText('Not quite', '差一点');
                 const answerText = uiText('Answer', '正确答案');
                 feedback.innerHTML = `
-                    <strong>${escapeHtml(lead)}</strong>
-                    <span>${escapeHtml(answerText)}：${escapeHtml(answerLabel)}</span>
-                    ${quiz.explanation ? `<span>${escapeHtml(quiz.explanation)}</span>` : ''}
+                    <span class="quick-quiz-feedback-result">
+                        <strong>${escapeHtml(lead)}</strong>
+                        <span>${escapeHtml(answerText)}：${escapeHtml(answerLabel)}</span>
+                    </span>
+                    ${quiz.explanation ? `<span class="quick-quiz-feedback-explanation">${escapeHtml(quiz.explanation)}</span>` : ''}
                 `;
             }
 
