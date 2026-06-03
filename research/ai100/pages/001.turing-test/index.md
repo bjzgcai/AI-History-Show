@@ -25,13 +25,11 @@ Alan Turing reframed the question "Can machines think?" as an operational test: 
 
 # Hero Title
 
-- title.en: Turing Test
-- title.zh: 图灵测试
+- title: Turing Test
 
 # Hero Description
 
-- description.en: In 1950, Alan Turing turned the question "Can machines think?" into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence, and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.
-- description.zh: 1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。
+- description: In 1950, Alan Turing turned the question "Can machines think?" into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence, and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.
 
 # People & Place
 
@@ -142,17 +140,32 @@ Today experts usually treat the Turing Test as historically foundational and phi
 
 # Photos
 
-- Title: Computing Machinery and Intelligence
-- Image URL: https://www.computerhistory.org/chess/doc-431614f68ed44/
-- Source: Computer History Museum
-- Copyright Information: Copyright owner listed by CHM as Mind; CHM accession 062303001
-- Description: Museum catalog entry for the 1950 Mind article by Alan Turing, with a document image and downloadable PDF.
+images:
 
-- Title: Alan Turing in AI & Robotics Timeline
-- Image URL: https://www.computerhistory.org/timeline/ai-robotics/
-- Source: Computer History Museum
-- Copyright Information: Computer History Museum page; consult item-level rights before reuse.
-- Description: Timeline entry placing the Turing Test among early AI and robotics milestones.
+- resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
+- resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+
+imageMeta:
+
+- local_image_path: resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
+- title: Alan Turing portrait
+- caption: Alan Turing portrait
+- description: Photograph portrait of Alan Turing, 29 March 1951.
+- source_name: Wikimedia Commons
+- source_page_url: https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg
+- original_image_url: Not available
+- copyright_or_license: Public domain
+- usage: Portrait
+
+- local_image_path: resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+- title: Turing test diagram
+- caption: Turing test diagram
+- description: Observer C judges hidden human and machine replies through text only.
+- source_name: Wikimedia Commons
+- source_page_url: https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png
+- original_image_url: Not available
+- copyright_or_license: Creative Commons Attribution 2.5 Generic, CC BY 2.5
+- usage: Supporting image / Explainer graphic
 
 # Video Clips
 

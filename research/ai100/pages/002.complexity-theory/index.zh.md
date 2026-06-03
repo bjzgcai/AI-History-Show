@@ -28,13 +28,11 @@ language: "zh"
 
 # 主视觉标题
 
-- title.en: NP-Completeness
-- title.zh: NP 完全性
+- title: NP 完全性
 
 # 主视觉简介
 
-- description.en: Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.
-- description.zh: 计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。
+- description: 计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。
 
 # 人物与地点
 
@@ -166,23 +164,32 @@ NP 完全性仍然是计算机科学教育和研究中的标准理论。P versus
 
 # 图片
 
-- 标题: 斯蒂芬·A·库克 ACM 获奖者照片
-- 图片 URL: https://awards.acm.org/award_winners/cook_N991950
-- 来源: 美国计算机协会（ACM）
-- 版权信息: ACM 获奖页面；使用前需查看 ACM 图片授权。
-- 描述: ACM 官方斯蒂芬·库克个人资料页，包含获奖信息和照片。
+images:
 
-- 标题: 多伦多大学介绍斯蒂芬·库克
-- 图片 URL: https://www.utoronto.ca/news/some-deepest-questions-it-s-possible-ask-stephen-cook-s-pioneering-career-computational
-- 来源: 多伦多大学
-- 版权信息: 多伦多大学页面标注照片由 BBVA Foundation 提供。
-- 描述: 多伦多大学介绍 Cook 职业生涯和计算复杂性 50 周年纪念的文章。
+- resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
+- resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
 
-- 标题: P versus NP 千禧年难题页面图片
-- 图片 URL: https://www.claymath.org/millennium/p-vs-np/
-- 来源: 克雷数学研究所
-- 版权信息: Clay 页面标注 Stephen Cook 照片作者为 Jiri Janicek，授权为 CC BY-SA 3.0。
-- 描述: 克雷数学研究所关于 P versus NP 千禧年大奖难题的官方页面。
+imageMeta:
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
+- title: 斯蒂芬·A·库克肖像
+- caption: 斯蒂芬·A·库克
+- description: 与库克和 NP 完全性工作相关的官方或机构资料图片。
+- source_name: Association for Computing Machinery
+- source_page_url: https://awards.acm.org/award_winners/cook_N991950
+- original_image_url: Not available
+- copyright_or_license: ACM award page; use requires checking ACM image permissions.
+- usage: 人物肖像
+
+- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
+- title: P versus NP 千禧年难题
+- caption: P versus NP 千禧年难题
+- description: Clay Mathematics Institute 关于 P versus NP 千禧年难题的官方页面。
+- source_name: Clay Mathematics Institute
+- source_page_url: https://www.claymath.org/millennium/p-vs-np/
+- original_image_url: Not available
+- copyright_or_license: Clay page credits Stephen Cook photo by Jiri Janicek, CC BY-SA 3.0.
+- usage: 原始材料 / 历史背景
 
 # 视频片段
 
