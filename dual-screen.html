@@ -1007,6 +1007,7 @@
         }
 
         .figure-avatar {
+            position: relative;
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -1023,6 +1024,8 @@
         }
 
         .figure-avatar img {
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1844,14 +1847,11 @@
         const SCREEN_HEIGHT = 1080;
         const STAGE_WIDTH = SCREEN_WIDTH * 2;
         const STAGE_HEIGHT = SCREEN_HEIGHT;
-        const AUTOPLAY_INTERVAL_MS = 10000;
-        const AUTOPLAY_IDLE_DELAY_MS = 5 * 60 * 1000;
+        const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
-        let isAutoplaying = false;
-        let autoplayTimer = null;
-        let idleTimer = null;
+        let idleAdvanceTimer = null;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
 
@@ -2389,69 +2389,41 @@
                 .sort((a, b) => scorePhoto(b) - scorePhoto(a));
         }
 
-        function clearAutoplayTimer() {
-            if (autoplayTimer) {
-                window.clearTimeout(autoplayTimer);
-                autoplayTimer = null;
+        function clearIdleAdvanceTimer() {
+            if (idleAdvanceTimer) {
+                window.clearTimeout(idleAdvanceTimer);
+                idleAdvanceTimer = null;
             }
         }
 
-        function clearIdleTimer() {
-            if (idleTimer) {
-                window.clearTimeout(idleTimer);
-                idleTimer = null;
-            }
+        function closeTransientOverlaysForIdleAdvance() {
+            document.querySelectorAll('.photo-viewer').forEach((viewer) => viewer.remove());
         }
 
-        function scheduleAutoplayTick() {
-            clearAutoplayTimer();
-            if (!isAutoplaying || milestones.length <= 1) return;
-
-            autoplayTimer = window.setTimeout(() => {
-                const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
-                jumpTo(nextIndex, { resetAutoplay: false });
-                scheduleAutoplayTick();
-            }, AUTOPLAY_INTERVAL_MS);
-        }
-
-        function setAutoplayState(nextState) {
-            const shouldAutoplay = Boolean(nextState) && milestones.length > 1;
-            if (isAutoplaying === shouldAutoplay) {
-                if (!shouldAutoplay) {
-                    clearAutoplayTimer();
-                }
+        function handleIdleAutoAdvance() {
+            if (milestones.length <= 1) {
+                clearIdleAdvanceTimer();
                 return;
             }
 
-            isAutoplaying = shouldAutoplay;
-            if (isAutoplaying) {
-                clearIdleTimer();
-                scheduleAutoplayTick();
-            } else {
-                clearAutoplayTimer();
-            }
+            closeTransientOverlaysForIdleAdvance();
+            const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
+            jumpTo(nextIndex, { resetAutoplay: false });
+            restartIdleCountdown();
         }
 
         function resetAutoplayTimer() {
-            if (isAutoplaying) {
-                scheduleAutoplayTick();
-            }
+            restartIdleCountdown();
         }
 
         function restartIdleCountdown() {
-            clearIdleTimer();
+            clearIdleAdvanceTimer();
             if (milestones.length <= 1) return;
-
-            idleTimer = window.setTimeout(() => {
-                setAutoplayState(true);
-            }, AUTOPLAY_IDLE_DELAY_MS);
+            idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, IDLE_AUTO_ADVANCE_MS);
         }
 
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
-            if (isAutoplaying) {
-                setAutoplayState(false);
-            }
             restartIdleCountdown();
         }
 
@@ -3355,13 +3327,14 @@
         }
 
         function renderFigures(vm) {
-            const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
                 ? vm.figures.slice(0, 3)
                 : [{
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
+            const hasFigureAvatars = figures.some((figure) => figure && figure.avatar);
+            const portraitPool = hasFigureAvatars ? [] : sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
 
             refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
@@ -3886,11 +3859,14 @@
 
         window.addEventListener('resize', debounce(syncStageScale, 120));
         window.addEventListener('beforeunload', () => {
-            clearAutoplayTimer();
-            clearIdleTimer();
+            clearIdleAdvanceTimer();
         });
 
         document.addEventListener('pointerdown', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('pointermove', (event) => {
             registerUserActivity(event);
         }, { passive: true });
 
@@ -3899,6 +3875,14 @@
         }, { passive: true });
 
         document.addEventListener('wheel', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('touchstart', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('touchmove', (event) => {
             registerUserActivity(event);
         }, { passive: true });
 
