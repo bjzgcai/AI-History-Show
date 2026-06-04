@@ -95,7 +95,9 @@ module.exports = {
         "2016-alphago",
         "1971-complexity-theory",
         "1971-vc-theory",
-        "1956-logic-theorist"
+        "1956-logic-theorist",
+        "1958-wangs-algorithm",
+        "1960-davis-putnam-dpll"
       ]
     }
   ]
