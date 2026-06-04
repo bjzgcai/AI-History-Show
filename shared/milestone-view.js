@@ -146,7 +146,7 @@
 
     function normalizeMilestone(milestone, currentIndex, allMilestones) {
         const figures = Array.isArray(milestone.figures) ? milestone.figures.map(localizeObject) : [];
-        const photos = collectPhotos(milestone, 5);
+        const photos = collectPhotos(milestone, 20);
         const timeline = Array.isArray(allMilestones) ? toTimelineItems(allMilestones, currentIndex) : [];
         const quizzes = collectQuizzes(milestone);
         const commentarySections = buildCommentarySections(milestone);
