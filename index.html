@@ -153,13 +153,11 @@
         .mode-chip {
             justify-self: end;
             display: inline-flex;
-            align-items: baseline;
-            gap: 9px;
+            align-items: center;
             color: rgba(244, 239, 229, 0.54);
             font-size: 18px;
             font-weight: 700;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
+            letter-spacing: 0;
             padding-top: 3px;
         }
 
@@ -198,19 +196,13 @@
             color: #f4efe5;
         }
 
-        .mode-chip-cn {
+        .mode-chip-label {
             font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
-            font-size: 21px;
+            font-size: 23px;
             color: rgba(244, 239, 229, 0.56);
             font-weight: 800;
-            letter-spacing: 0.03em;
-        }
-
-        .mode-chip-en {
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
-            font-size: 23px;
-            color: rgba(244, 239, 229, 0.42);
-            letter-spacing: 0.02em;
+            letter-spacing: 0;
+            white-space: nowrap;
         }
 
         .language-toggle.topbar-language-toggle {
@@ -323,10 +315,12 @@
             font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
             font-size: 86px;
             line-height: 1;
-            font-weight: 500;
+            font-weight: 800;
             color: var(--accent);
-            letter-spacing: -0.03em;
-            text-shadow: 0 0 24px rgba(246, 137, 0, 0.16);
+            letter-spacing: 0;
+            text-shadow:
+                0 0 24px rgba(246, 137, 0, 0.2),
+                0 2px 0 rgba(246, 137, 0, 0.08);
             white-space: nowrap;
         }
 
@@ -336,7 +330,7 @@
             aspect-ratio: 1 / 1;
             height: auto;
             margin: 146px auto 28px;
-            overflow: hidden;
+            overflow: visible;
             z-index: 2;
             filter: drop-shadow(0 24px 42px rgba(0, 0, 0, 0.26));
         }
@@ -419,11 +413,12 @@
         .globe-stage::before {
             content: "";
             position: absolute;
-            inset: -18% -22%;
-            border-radius: 18px;
+            inset: -18%;
+            border-radius: 50%;
             background:
-                radial-gradient(circle at 62% 36%, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.05) 13%, transparent 30%),
-                radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0.68) 62%, #020202 100%);
+                radial-gradient(circle at 58% 42%, rgba(246, 137, 0, 0.13), rgba(246, 137, 0, 0.045) 17%, transparent 38%),
+                radial-gradient(circle at 50% 52%, rgba(22, 26, 29, 0) 44%, rgba(0, 0, 0, 0.34) 71%, rgba(0, 0, 0, 0) 100%);
+            filter: blur(16px);
             pointer-events: none;
             z-index: 0;
         }
@@ -649,6 +644,11 @@
 
         .figure-row.count-2 {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .figure-row.count-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 28px;
         }
 
         .figure-chip {
@@ -2883,7 +2883,6 @@
 
             .mode-chip {
                 font-size: 14px;
-                gap: 6px;
             }
 
             .topbar-actions {
@@ -2900,12 +2899,8 @@
                 font-size: 11px;
             }
 
-            .mode-chip-cn {
+            .mode-chip-label {
                 font-size: 12px;
-            }
-
-            .mode-chip-en {
-                font-size: 18px;
             }
 
             .language-toggle.topbar-language-toggle {
@@ -3073,7 +3068,8 @@
 
             .figure-row,
             .figure-row.count-2,
-            .figure-row.count-3 {
+            .figure-row.count-3,
+            .figure-row.count-4 {
                 grid-template-columns: 1fr;
             }
 
@@ -3251,9 +3247,8 @@
                 <div class="stage-kicker" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
                 <div class="topbar-actions">
                     <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
-                    <div class="mode-chip" aria-label="历史 HISTORY">
-                        <span class="mode-chip-cn">历史</span>
-                        <span class="mode-chip-en">HISTORY</span>
+                    <div class="mode-chip">
+                        <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
                     </div>
                 </div>
             </header>
@@ -3889,7 +3884,7 @@
         function preloadMilestoneAssets(index) {
             if (index < 0 || index >= milestoneList.length) return;
             const vm = getVm(index);
-            sortPhotosForDisplay(vm.photos).slice(0, 5).forEach(preloadImage);
+            sortPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
         }
 
         function preloadAdjacentAssets(index) {
@@ -5219,7 +5214,7 @@
 
         function renderFigures(vm) {
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
-                ? vm.figures.slice(0, 3)
+                ? vm.figures.slice(0, 4)
                 : [{
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
@@ -5227,7 +5222,7 @@
             const hasFigureAvatars = figures.some((figure) => figure && figure.avatar);
             const portraitPool = hasFigureAvatars ? [] : sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
 
-            refs.figureRow.className = `figure-row count-${Math.min(3, figures.length)}`;
+            refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>

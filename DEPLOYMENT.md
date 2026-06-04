@@ -6,7 +6,99 @@
 
 ---
 
-## 一、展示页部署
+## 一、可复现启动命令
+
+推荐先使用本节命令验证本地、容器和 CI 的基础启动路径。项目没有第三方运行时依赖，但仍使用 `npm ci` 锁定命令入口和 Node.js 版本约束。
+
+### 本地命令
+
+```bash
+cd /path/to/AI-History-Show
+npm ci
+
+# 生成展示数据，并运行路由、触摸滑动、HTTP 启动校验
+npm run validate:deployment
+
+# 本地预览展示页，默认监听 http://localhost:8000
+npm run start:static
+
+# 展厅本机演示服务，固定使用 127.0.0.1:8000
+npm run start:demo
+
+# 内容管理服务，默认监听 http://localhost:3001/admin
+npm run start:admin
+```
+
+如需改端口：
+
+```bash
+PORT=8080 npm run start:static
+PORT=3002 npm run start:admin
+```
+
+### Docker 单容器预览
+
+`Dockerfile` 默认构建 Nginx 展示页镜像，对应下面“方案一：Nginx 云服务器”的部署流程：
+
+1. 使用 Node.js 生成 `milestones-data.js` 和 `milestones-data-default.js`。
+2. 将 `index.html`、`dual-screen.html`、`shared/`、`resources/` 和生成数据复制到 Nginx Web 根目录。
+3. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
+
+```bash
+docker build -t ai-history-show .
+docker run --rm -p 8000:8000 ai-history-show
+```
+
+访问：
+
+```text
+http://localhost:8000/
+http://localhost:8000/dual-screen.html
+```
+
+### Docker Compose
+
+默认只启动展示页：
+
+```bash
+docker compose up --build presentation
+```
+
+如需同时启动本地内容管理服务：
+
+```bash
+docker compose --profile admin up --build
+```
+
+访问：
+
+```text
+展示页：http://localhost:8000/
+管理后台：http://localhost:3001/admin
+```
+
+Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此在管理后台保存内容后，`manage/events.js`、`manage/catalog.js` 和生成数据会同步写回本地工作区。
+
+> **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
+
+### CI 验证
+
+GitHub Actions 工作流位于 `.github/workflows/deployment.yml`，会执行：
+
+```bash
+npm ci
+npm run validate:deployment
+docker build -t ai-history-show:ci .
+docker run --rm -d --name ai-history-show-ci -p 18080:8000 ai-history-show:ci
+curl -fsS http://127.0.0.1:18080/
+docker compose config --quiet
+```
+
+其中 `validate:deployment` 会生成 `milestones-data.js`，运行现有 JS 测试，并启动展示页与管理服务做 HTTP 冒烟测试。CI 还会构建 Nginx 容器镜像、运行容器并请求首页，确认容器化展示页可以启动。
+
+---
+
+## 二、展示页部署
 
 ### 方案对比
 
@@ -188,7 +280,8 @@ http://localhost:8000/dual-screen.html
 
 ```bash
 cd /path/to/AI-History-Show
-python3 -m http.server 8000
+npm ci
+npm run start:demo
 ```
 
 **第二步：优先验证双屏页面**
@@ -262,7 +355,7 @@ http://localhost:8000/dual-screen.html
 本地启动静态服务：
 
 ```bash
-python3 -m http.server 8000
+npm run start:static
 ```
 
 Edge `app` 模式：
@@ -279,7 +372,7 @@ Edge `kiosk` 模式：
 
 ---
 
-## 三、内容管理服务部署（manage/server.js）
+## 四、内容管理服务部署（manage/server.js）
 
 `server.js` 提供网页版内容编辑功能（端口 3001）。它会直接修改服务器上的 `manage/events.js`、`manage/catalog.js`，并重新生成 `milestones-data.js`，**Nginx 无需重启，刷新展示页即生效**。
 
@@ -311,9 +404,10 @@ npm install -g pm2
 
 # 进入项目目录
 cd /var/www/ai-history
+npm ci
 
 # 启动管理服务
-pm2 start manage/server.js --name ai-admin
+pm2 start npm --name ai-admin -- run start:admin
 
 # 设置开机自启
 pm2 startup   # 按输出提示执行一条 sudo 命令
@@ -379,7 +473,15 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ---
 
-## 四、验证部署
+## 五、验证部署
+
+**命令校验：**
+
+```bash
+npm ci
+npm run validate:deployment
+docker build -t ai-history-show:ci .
+```
 
 **展示页：**
 
