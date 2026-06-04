@@ -170,23 +170,12 @@ Today experts usually evaluate VC theory as one of the mathematical foundations 
 
 images:
 
-- resources/images/bench-council-ai100/photos/1971-vc-theory_vapnik-book.jpg
-- resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.jpg
-- resources/images/bench-council-ai100/photos/1971-vc-theory_paper.jpg
+- photos/1971-vc-theory_vladimir-vapnik.png
+- photos/1971-vc-theory_generalization.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1971-vc-theory_vapnik-book.jpg
-- title: The Nature of Statistical Learning Theory
-- caption: The Nature of Statistical Learning Theory book page
-- description: Official Springer page for Vapnik's foundational book, including cover image and bibliographic metadata.
-- source_name: Springer Nature
-- source_page_url: https://link.springer.com/book/10.1007/978-1-4757-2440-0
-- original_image_url: Not available
-- copyright_or_license: Copyright Springer Science+Business Media New York 1995.
-- usage: Book cover / Source material
-
-- local_image_path: resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.jpg
+- local_image_path: photos/1971-vc-theory_vladimir-vapnik.png
 - title: Vladimir Vapnik IAS lecture
 - caption: Vladimir Vapnik lecture page
 - description: Official IAS video page for Vapnik's 2015 lecture on intelligent learning.
@@ -196,15 +185,15 @@ imageMeta:
 - copyright_or_license: IAS page; consult IAS media permissions before reuse.
 - usage: Portrait / Lecture still
 
-- local_image_path: resources/images/bench-council-ai100/photos/1971-vc-theory_paper.jpg
-- title: Uniform convergence paper page
-- caption: On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities
-- description: Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.
-- source_name: Society for Industrial and Applied Mathematics
+- local_image_path: photos/1971-vc-theory_generalization.svg
+- title: VC generalization explainer
+- caption: Capacity and generalization
+- description: Local explainer showing how VC theory connects hypothesis classes, sample size, and generalization.
+- source_name: Local explainer based on Vapnik-Chervonenkis theory
 - source_page_url: https://epubs.siam.org/doi/10.1137/1116025
-- original_image_url: Not available
-- copyright_or_license: SIAM publication page; reuse requires checking SIAM rights.
-- usage: Paper page / Source material
+- original_image_url: Local original explainer
+- copyright_or_license: Original local explainer; source text and figure reuse rights not used.
+- usage: Explainer graphic
 
 # Video Clips
 
