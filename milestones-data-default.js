@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-03 22:00
+// 生成时间: 2026-06-04 02:39
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -5459,6 +5459,779 @@ const milestones = [
         },
         "tags": [
           "reasoning",
+          "theorem-proving"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1958-wangs-algorithm",
+    "year": "1958-1961",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Wang's Algorithm",
+      "zh": "王氏算法"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Bell Telephone Laboratories",
+        "zh": "贝尔电话实验室"
+      },
+      "country": {
+        "en": "Murray Hill, United States",
+        "zh": "美国，新泽西州默里山"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4018
+      ]
+    },
+    "description": {
+      "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>",
+      "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 Bell System Technical Journal 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Hao Wang",
+          "zh": "王浩 (Hao Wang)"
+        },
+        "role": {
+          "en": "Developed pattern-recognition theorem-proving procedures",
+          "zh": "提出基于模式识别的定理证明过程"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A proof procedure for the predicate calculus is given\"",
+      "zh": "\"给出了一个谓词演算的证明过程\""
+    },
+    "quoteAttribution": "《Proving Theorems by Pattern Recognition - II》, Hao Wang, Bell System Technical Journal, 1961",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Proving Theorems by Pattern Recognition - II",
+      "workAuthors": "Hao Wang, Bell System Technical Journal, 1961",
+      "sourceLabel": "",
+      "sourceUrl": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Wang's algorithm",
+      "zh": "BenchCouncil AI100：自动定理证明 / 王氏算法"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Papers",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases.",
+          "zh": "第一篇论文发表于 1960 年 4 月 Communications of the ACM，DOI 为 10.1145/367177.367224。Bell Labs 档案保存了 1961 年续篇，其中 Wang 讨论了谓词演算证明过程及相关判定问题情形。"
+        }
+      },
+      {
+        "label": {
+          "en": "Pattern Logic",
+          "zh": "模式逻辑"
+        },
+        "html": {
+          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears.",
+          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Wang's algorithm is usually treated as an early milestone in automated theorem proving. It made the gap between formal logic and machine execution smaller, and it influenced later work on proof procedures and SAT-style reasoning.",
+          "zh": "王氏算法通常被视为自动定理证明的早期里程碑。它缩小了形式逻辑与机器执行之间的距离，也影响了后来的证明过程与 SAT 式推理研究。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
+        "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg": {
+          "caption": {
+            "en": "Hao Wang portrait",
+            "zh": "王浩肖像"
+          },
+          "subcaption": {
+            "en": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection.",
+            "zh": "王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。"
+          },
+          "sourceName": "The Rockefeller University Digital Commons",
+          "source": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+          "sourceUrl": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+          "originalImageUrl": "https://digitalcommons.rockefeller.edu/faculty-members/1109/preview.jpg",
+          "license": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg": {
+          "caption": {
+            "en": "Wang algorithm pattern proof",
+            "zh": "王氏算法模式证明"
+          },
+          "subcaption": {
+            "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure.",
+            "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。"
+          },
+          "sourceName": "Local explainer based on Wang 1960 and Wang 1961",
+          "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "sourceUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "originalImageUrl": "Local original explainer",
+          "license": "Original local explainer; source article images not reused.",
+          "usage": {
+            "en": "Supporting image / Explainer graphic",
+            "zh": "辅助说明图 / 解释性图形"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Automated Theorem Proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "Pattern-guided proof procedure",
+        "zh": "模式引导证明过程"
+      },
+      "artifact": {
+        "en": "Wang theorem-proving procedure",
+        "zh": "王氏定理证明过程"
+      },
+      "material": {
+        "en": "CACM paper + Bell Labs article",
+        "zh": "CACM 论文 + Bell Labs 文章"
+      },
+      "demo": {
+        "en": "Pattern proof loop",
+        "zh": "模式证明循环"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Pattern Recognition",
+            "zh": "模式识别"
+          },
+          "text": {
+            "en": "The procedure looks for logical forms that match known rule patterns. Matching turns theorem proving into a sequence of recognizable transformations.",
+            "zh": "该过程寻找能够匹配已知规则模式的逻辑形式。匹配让定理证明变成一串可识别的变换。"
+          }
+        },
+        {
+          "label": {
+            "en": "Proof Reduction",
+            "zh": "证明归约"
+          },
+          "text": {
+            "en": "A complex formula is reduced into smaller subgoals until branches close or require further search. This helped avoid pure truth-table enumeration.",
+            "zh": "复杂公式被归约成更小的子目标，直到分支闭合或继续搜索。这有助于避免纯真值表枚举。"
+          }
+        },
+        {
+          "label": {
+            "en": "Mechanical Mathematics",
+            "zh": "机械数学"
+          },
+          "text": {
+            "en": "Wang's work framed mathematical proof as something machines could perform using symbolic rules and carefully designed procedures.",
+            "zh": "王浩的工作把数学证明表述为机器可以通过符号规则和精心设计的过程来执行的任务。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Logic Theorist",
+          "zh": "Logic Theorist"
+        },
+        {
+          "en": "Davis-Putnam algorithm and DPLL",
+          "zh": "Davis-Putnam 算法与 DPLL"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Communications of the ACM",
+          "title": {
+            "en": "Proving theorems by pattern recognition I",
+            "zh": "《Proving theorems by pattern recognition I》"
+          },
+          "description": {
+            "en": "Official CACM page for Wang's 1960 article, including DOI, issue, and page information.",
+            "zh": "CACM 官方页面，列出 Wang 1960 年论文的 DOI、期号与页码信息。"
+          },
+          "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open CACM record",
+            "zh": "打开 CACM 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Proving theorems by pattern recognition I",
+            "zh": "Proving theorems by pattern recognition I"
+          },
+          "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Proving Theorems by Pattern Recognition - II",
+            "zh": "Proving Theorems by Pattern Recognition - II"
+          },
+          "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+        },
+        {
+          "type": {
+            "en": "Photo",
+            "zh": "照片"
+          },
+          "label": {
+            "en": "Rockefeller University Digital Commons: Wang, Hao",
+            "zh": "Rockefeller University Digital Commons: Wang, Hao"
+          },
+          "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1958-wangs-algorithm-quiz-1",
+      "question": {
+        "en": "What did Wang's theorem-proving procedure use to avoid blind truth-table enumeration?",
+        "zh": "王氏定理证明过程用什么避免盲目真值表枚举？"
+      },
+      "options": [
+        {
+          "en": "Pattern-guided logical transformations",
+          "zh": "由模式引导的逻辑变换"
+        },
+        {
+          "en": "Random screen colors",
+          "zh": "随机屏幕颜色"
+        },
+        {
+          "en": "Only handwritten notes",
+          "zh": "只靠手写笔记"
+        },
+        {
+          "en": "A fixed chess opening",
+          "zh": "固定国际象棋开局"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments.",
+        "zh": "王浩把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "theorem-proving",
+        "pattern-recognition"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1958-wangs-algorithm-quiz-1",
+        "question": {
+          "en": "What did Wang's theorem-proving procedure use to avoid blind truth-table enumeration?",
+          "zh": "王氏定理证明过程用什么避免盲目真值表枚举？"
+        },
+        "options": [
+          {
+            "en": "Pattern-guided logical transformations",
+            "zh": "由模式引导的逻辑变换"
+          },
+          {
+            "en": "Random screen colors",
+            "zh": "随机屏幕颜色"
+          },
+          {
+            "en": "Only handwritten notes",
+            "zh": "只靠手写笔记"
+          },
+          {
+            "en": "A fixed chess opening",
+            "zh": "固定国际象棋开局"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments.",
+          "zh": "王浩把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "theorem-proving",
+          "pattern-recognition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1960-davis-putnam-dpll",
+    "year": "1960-1962",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Davis-Putnam & DPLL",
+      "zh": "DP/DPLL 算法"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "New York University / Princeton University / RPI",
+        "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
+      },
+      "country": {
+        "en": "New York and Princeton, United States",
+        "zh": "美国，纽约与普林斯顿"
+      },
+      "coordinates": [
+        40.7295,
+        -73.9965
+      ]
+    },
+    "description": {
+      "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>",
+      "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 JACM 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Martin Davis",
+          "zh": "马丁·戴维斯 (Martin Davis)"
+        },
+        "role": {
+          "en": "Co-developed Davis-Putnam and DPLL procedures",
+          "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Hilary Putnam",
+          "zh": "希拉里·普特南 (Hilary Putnam)"
+        },
+        "role": {
+          "en": "Co-authored the 1960 Davis-Putnam procedure",
+          "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "George Logemann",
+          "zh": "乔治·洛格曼 (George Logemann)"
+        },
+        "role": {
+          "en": "Co-authored the 1962 DPLL program paper",
+          "zh": "共同撰写 1962 年 DPLL 程序论文"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Donald W. Loveland",
+          "zh": "唐纳德·W·洛夫兰 (Donald W. Loveland)"
+        },
+        "role": {
+          "en": "Co-authored the 1962 DPLL program paper",
+          "zh": "共同撰写 1962 年 DPLL 程序论文"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"a uniform proof procedure for quantification theory is given\"",
+      "zh": "\"给出了量词理论的统一证明过程\""
+    },
+    "quoteAttribution": "《A Computing Procedure for Quantification Theory》, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "A Computing Procedure for Quantification Theory",
+      "workAuthors": "Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "sourceLabel": "",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Davis-Putnam algorithm & DPLL",
+      "zh": "BenchCouncil AI100：自动定理证明 / Davis-Putnam 算法与 DPLL"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Papers",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage.",
+          "zh": "Davis 和 Putnam 1960 年 JACM 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 Communications of the ACM 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。"
+        }
+      },
+      {
+        "label": {
+          "en": "SAT Search",
+          "zh": "SAT 搜索"
+        },
+        "html": {
+          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible.",
+          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "DPLL is usually evaluated as one of the foundational algorithms behind practical SAT solving. Modern solvers add learning, watched literals, restarts, and heuristics, but the core search-and-propagate structure remains recognizable.",
+          "zh": "DPLL 通常被视为实用 SAT 求解背后的基础算法之一。现代求解器加入学习、watched literals、重启与启发式策略，但搜索与传播的核心结构仍清晰可见。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+        "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
+          "caption": {
+            "en": "Hilary Putnam portrait",
+            "zh": "Hilary Putnam 肖像"
+          },
+          "subcaption": {
+            "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.",
+            "zh": "Wikimedia Commons 收录的 Hilary Putnam 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Hilary_Putnam.jpg",
+          "license": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg": {
+          "caption": {
+            "en": "Davis-Putnam and DPLL SAT search",
+            "zh": "Davis-Putnam 与 DPLL SAT 搜索"
+          },
+          "subcaption": {
+            "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance.",
+            "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。"
+          },
+          "sourceName": "Local explainer based on Davis-Putnam 1960 and Davis-Logemann-Loveland 1962",
+          "source": "https://dl.acm.org/doi/10.1145/321033.321034",
+          "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034",
+          "originalImageUrl": "Local original explainer",
+          "license": "Original local explainer; source article images not reused.",
+          "usage": {
+            "en": "Supporting image / Explainer graphic",
+            "zh": "辅助说明图 / 解释性图形"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Automated Theorem Proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "SAT search with propagation",
+        "zh": "带传播的 SAT 搜索"
+      },
+      "artifact": {
+        "en": "Davis-Putnam / DPLL procedure",
+        "zh": "Davis-Putnam / DPLL 过程"
+      },
+      "material": {
+        "en": "JACM paper + CACM program",
+        "zh": "JACM 论文 + CACM 程序"
+      },
+      "demo": {
+        "en": "Branch, propagate, backtrack",
+        "zh": "分支、传播、回溯"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Davis-Putnam Procedure",
+            "zh": "Davis-Putnam 过程"
+          },
+          "text": {
+            "en": "The 1960 procedure used logical transformations to attack quantification theory and propositional satisfiability. It made proof search more systematic than earlier brute-force attempts.",
+            "zh": "1960 年过程用逻辑变换处理量词理论和命题可满足性。它让证明搜索比早期暴力尝试更系统。"
+          }
+        },
+        {
+          "label": {
+            "en": "DPLL Search",
+            "zh": "DPLL 搜索"
+          },
+          "text": {
+            "en": "DPLL refines SAT solving into recursive branching plus simplification. Each choice either builds a model or reveals a contradiction that prunes the branch.",
+            "zh": "DPLL 把 SAT 求解改进为递归分支加简化。每次选择要么构造模型，要么暴露矛盾并剪去分支。"
+          }
+        },
+        {
+          "label": {
+            "en": "Unit Propagation",
+            "zh": "单子句传播"
+          },
+          "text": {
+            "en": "When a clause has only one possible literal left, the solver must assign it. This forced move can trigger a cascade of simplifications.",
+            "zh": "当一个子句只剩一个可能文字时，求解器必须赋值。这个被迫动作可能触发一连串简化。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Wang's algorithm",
+          "zh": "王氏算法"
+        },
+        {
+          "en": "Resolution method",
+          "zh": "归结方法"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Communications of the ACM",
+          "title": {
+            "en": "A machine program for theorem-proving",
+            "zh": "《A machine program for theorem-proving》"
+          },
+          "description": {
+            "en": "CACM article page for the 1962 Davis, Logemann, and Loveland theorem-proving program.",
+            "zh": "CACM 文章页，收录 Davis、Logemann 与 Loveland 1962 年的定理证明程序论文。"
+          },
+          "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+          "source": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open CACM record",
+            "zh": "打开 CACM 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Computing Procedure for Quantification Theory",
+            "zh": "A Computing Procedure for Quantification Theory"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/321033.321034"
+        },
+        {
+          "type": {
+            "en": "Program",
+            "zh": "程序"
+          },
+          "label": {
+            "en": "A machine program for theorem-proving",
+            "zh": "A machine program for theorem-proving"
+          },
+          "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/"
+        },
+        {
+          "type": {
+            "en": "Photo",
+            "zh": "照片"
+          },
+          "label": {
+            "en": "Wikimedia Commons: Hilary Putnam",
+            "zh": "Wikimedia Commons: Hilary Putnam"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1960-davis-putnam-dpll-quiz-1",
+      "question": {
+        "en": "What SAT-solving structure did DPLL make central?",
+        "zh": "DPLL 让 SAT 求解的哪种结构成为核心？"
+      },
+      "options": [
+        {
+          "en": "Branching, propagation, and backtracking",
+          "zh": "分支、传播与回溯"
+        },
+        {
+          "en": "Painting a circuit board",
+          "zh": "给电路板上色"
+        },
+        {
+          "en": "Sorting portraits by brightness",
+          "zh": "按亮度排序肖像"
+        },
+        {
+          "en": "Replacing logic with audio signals",
+          "zh": "用音频信号替代逻辑"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DPLL recursively branches on assignments, propagates forced literals, and backtracks when a contradiction appears.",
+        "zh": "DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "sat",
+        "search",
+        "theorem-proving"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1960-davis-putnam-dpll-quiz-1",
+        "question": {
+          "en": "What SAT-solving structure did DPLL make central?",
+          "zh": "DPLL 让 SAT 求解的哪种结构成为核心？"
+        },
+        "options": [
+          {
+            "en": "Branching, propagation, and backtracking",
+            "zh": "分支、传播与回溯"
+          },
+          {
+            "en": "Painting a circuit board",
+            "zh": "给电路板上色"
+          },
+          {
+            "en": "Sorting portraits by brightness",
+            "zh": "按亮度排序肖像"
+          },
+          {
+            "en": "Replacing logic with audio signals",
+            "zh": "用音频信号替代逻辑"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DPLL recursively branches on assignments, propagates forced literals, and backtracks when a contradiction appears.",
+          "zh": "DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "sat",
+          "search",
           "theorem-proving"
         ]
       }
