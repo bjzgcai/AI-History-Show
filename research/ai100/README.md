@@ -8,7 +8,7 @@ This directory supports the AI History Museum / AI Top 100 Achievements research
 - `pages/`: one directory per achievement, named `$number.$achievement-name-slug/`.
 - `pages/*/index.md`: the achievement research page.
 - `pages/*/index.zh.md`: Chinese version of the achievement research page when available.
-- `pages/*/photos/`: local images collected for that achievement.
+- `pages/*/photos/`: local images collected for that achievement. Keep achievement-specific images here with the research notes so each page is self-contained.
 
 Regenerate the list:
 

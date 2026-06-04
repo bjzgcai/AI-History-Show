@@ -136,12 +136,12 @@ Today experts usually treat Wang's algorithm as a foundational automated theorem
 
 images:
 
-- resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg
-- resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg
+- photos/1958-wangs-algorithm_hao-wang.jpg
+- photos/1958-wangs-algorithm_pattern-proof.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg
+- local_image_path: photos/1958-wangs-algorithm_hao-wang.jpg
 - title: Hao Wang portrait
 - caption: Hao Wang portrait
 - description: Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection.
@@ -151,7 +151,7 @@ imageMeta:
 - copyright_or_license: Historical Photograph Collection preview; creator and photo credit listed as unknown; reuse rights not stated on page.
 - usage: Portrait
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg
+- local_image_path: photos/1958-wangs-algorithm_pattern-proof.svg
 - title: Wang algorithm pattern proof
 - caption: Wang algorithm pattern proof diagram
 - description: Original local explainer showing formula normalization, rule matching, proof reduction, and branch closure.

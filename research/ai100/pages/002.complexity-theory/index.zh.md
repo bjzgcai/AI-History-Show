@@ -166,12 +166,12 @@ NP 完全性仍然是计算机科学教育和研究中的标准理论。P versus
 
 images:
 
-- resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
-- resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
+- photos/1971-complexity-theory_stephen-cook.jpg
+- photos/1971-complexity-theory_reduction-map.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
+- local_image_path: photos/1971-complexity-theory_stephen-cook.jpg
 - title: 斯蒂芬·A·库克肖像
 - caption: 斯蒂芬·A·库克
 - description: 与库克和 NP 完全性工作相关的官方或机构资料图片。
@@ -181,15 +181,15 @@ imageMeta:
 - copyright_or_license: ACM award page; use requires checking ACM image permissions.
 - usage: 人物肖像
 
-- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
-- title: P versus NP 千禧年难题
-- caption: P versus NP 千禧年难题
-- description: Clay Mathematics Institute 关于 P versus NP 千禧年难题的官方页面。
-- source_name: Clay Mathematics Institute
-- source_page_url: https://www.claymath.org/millennium/p-vs-np/
-- original_image_url: Not available
-- copyright_or_license: Clay page credits Stephen Cook photo by Jiri Janicek, CC BY-SA 3.0.
-- usage: 原始材料 / 历史背景
+- local_image_path: photos/1971-complexity-theory_reduction-map.svg
+- title: NP 完全性归约图
+- caption: 归约关系图
+- description: 本地解释图，展示讨论 NP 完全性时不同计算问题如何通过归约建立联系。
+- source_name: Local explainer based on Cook 1971 and Karp 1972
+- source_page_url: https://doi.org/10.1145/321921.321924
+- original_image_url: Local original explainer
+- copyright_or_license: Original local explainer; source text and figure reuse rights not used.
+- usage: 解释性图形
 
 # 视频片段
 
