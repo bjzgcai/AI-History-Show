@@ -261,7 +261,7 @@ London, UK
 
 每张图片提供：
 
-- local_image_path: 例如 `resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg`
+- local_image_path: 例如 `photos/example.jpg`。图片应保存到当前 achievement 目录下的 `photos/`，不要放到共享图片目录。
 - title: 当前文件语言的图片标题
 - caption: 当前文件语言的短 caption
 - description: 当前文件语言的 1-2 句说明
@@ -277,10 +277,10 @@ London, UK
 
 ```js
 images: [
-  "resources/images/bench-council-ai100/photos/example.jpg"
+  "photos/example.jpg"
 ],
 imageMeta: {
-  "resources/images/bench-council-ai100/photos/example.jpg": {
+  "photos/example.jpg": {
     caption: {
       en: "",
       zh: ""

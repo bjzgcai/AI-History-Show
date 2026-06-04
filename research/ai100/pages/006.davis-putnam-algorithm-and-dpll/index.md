@@ -156,12 +156,12 @@ Today experts usually evaluate Davis-Putnam and DPLL as foundational SAT-solving
 
 images:
 
-- resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg
-- resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg
+- photos/1960-davis-putnam-dpll_hilary-putnam.jpg
+- photos/1960-davis-putnam-dpll_sat-search.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg
+- local_image_path: photos/1960-davis-putnam-dpll_hilary-putnam.jpg
 - title: Hilary Putnam portrait
 - caption: Hilary Putnam portrait
 - description: Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.
@@ -171,7 +171,7 @@ imageMeta:
 - copyright_or_license: Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.
 - usage: Portrait
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg
+- local_image_path: photos/1960-davis-putnam-dpll_sat-search.svg
 - title: Davis-Putnam and DPLL SAT search
 - caption: Davis-Putnam and DPLL SAT search diagram
 - description: Original local explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance.
