@@ -138,6 +138,42 @@ module.exports = {
                 zh: 'Logic Theorist 在符号变换空间中搜索，并用启发式规则选择更有希望的证明路径。'
             },
             ['reasoning', 'theorem-proving']
+        ),
+        '1958-wangs-algorithm': quiz(
+            {
+                en: "What did Wang's theorem-proving procedure use to avoid blind truth-table enumeration?",
+                zh: '王氏定理证明过程用什么避免盲目真值表枚举？'
+            },
+            [
+                { en: 'Pattern-guided logical transformations', zh: '由模式引导的逻辑变换' },
+                { en: 'Random screen colors', zh: '随机屏幕颜色' },
+                { en: 'Only handwritten notes', zh: '只靠手写笔记' },
+                { en: 'A fixed chess opening', zh: '固定国际象棋开局' }
+            ],
+            0,
+            {
+                en: 'Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments.',
+                zh: '王浩把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。'
+            },
+            ['theorem-proving', 'pattern-recognition']
+        ),
+        '1960-davis-putnam-dpll': quiz(
+            {
+                en: 'What SAT-solving structure did DPLL make central?',
+                zh: 'DPLL 让 SAT 求解的哪种结构成为核心？'
+            },
+            [
+                { en: 'Branching, propagation, and backtracking', zh: '分支、传播与回溯' },
+                { en: 'Painting a circuit board', zh: '给电路板上色' },
+                { en: 'Sorting portraits by brightness', zh: '按亮度排序肖像' },
+                { en: 'Replacing logic with audio signals', zh: '用音频信号替代逻辑' }
+            ],
+            0,
+            {
+                en: 'DPLL recursively branches on assignments, propagates forced literals, and backtracks when a contradiction appears.',
+                zh: 'DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。'
+            },
+            ['sat', 'search', 'theorem-proving']
         )
     }
 };
