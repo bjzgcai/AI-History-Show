@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Large Language Model Development Pipeline</title>
+  <desc id="desc">An English-only pipeline diagram for large language model development, from public data to applications and evaluation.</desc>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <text x="100" y="100" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800" fill="#111827">Large Language Model Development Pipeline</text>
+  <text x="104" y="148" font-family="Inter, Arial, sans-serif" font-size="24" fill="#64748b">Competition in 2025 moved from scale alone toward stronger reasoning, tools, agents and deployment efficiency.</text>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <g font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="middle">
+    <rect x="90" y="270" width="230" height="132" rx="22" fill="#eff6ff" stroke="#93c5fd" stroke-width="3"/>
+    <text x="205" y="325">Public Data</text><text x="205" y="358" font-size="18" fill="#475569">text, code, images, video</text>
+    <rect x="390" y="270" width="230" height="132" rx="22" fill="#fef3c7" stroke="#fbbf24" stroke-width="3"/>
+    <text x="505" y="325">Pretraining</text><text x="505" y="358" font-size="18" fill="#475569">predict tokens at scale</text>
+    <rect x="690" y="270" width="230" height="132" rx="22" fill="#dcfce7" stroke="#86efac" stroke-width="3"/>
+    <text x="805" y="325">Base Model</text><text x="805" y="358" font-size="18" fill="#475569">general knowledge</text>
+    <rect x="990" y="270" width="230" height="132" rx="22" fill="#f3e8ff" stroke="#c084fc" stroke-width="3"/>
+    <text x="1105" y="325">Alignment</text><text x="1105" y="358" font-size="18" fill="#475569">instruction tuning, RLHF</text>
+    <rect x="1290" y="270" width="230" height="132" rx="22" fill="#e0f2fe" stroke="#38bdf8" stroke-width="3"/>
+    <text x="1405" y="325">Products</text><text x="1405" y="358" font-size="18" fill="#475569">chat, coding, agents</text>
+  </g>
+  <g stroke="#334155" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <path d="M320 336H380"/>
+    <path d="M620 336H680"/>
+    <path d="M920 336H980"/>
+    <path d="M1220 336H1280"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="210" y="560" width="1180" height="190" rx="28" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="12 12"/>
+    <text x="800" y="622" font-size="32" font-weight="800" text-anchor="middle" fill="#111827">Evaluation and Competition Loop</text>
+    <g font-size="22" font-weight="700" text-anchor="middle">
+      <rect x="300" y="665" width="210" height="54" rx="16" fill="#ffffff" stroke="#cbd5e1"/><text x="405" y="700" fill="#111827">Arena Voting</text>
+      <rect x="560" y="665" width="210" height="54" rx="16" fill="#ffffff" stroke="#cbd5e1"/><text x="665" y="700" fill="#111827">Benchmarks</text>
+      <rect x="820" y="665" width="210" height="54" rx="16" fill="#ffffff" stroke="#cbd5e1"/><text x="925" y="700" fill="#111827">Safety Tests</text>
+      <rect x="1080" y="665" width="210" height="54" rx="16" fill="#ffffff" stroke="#cbd5e1"/><text x="1185" y="700" fill="#111827">Cost Metrics</text>
+    </g>
+  </g>
+  <path d="M1405 402C1405 505 1240 560 1185 650" stroke="#334155" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M405 650C350 560 205 505 205 402" stroke="#334155" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+</svg>
