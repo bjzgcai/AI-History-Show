@@ -1649,6 +1649,130 @@
             outline: none;
         }
 
+        .region-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 78;
+            display: grid;
+            place-items: center;
+            padding: 32px;
+            background: rgba(0, 0, 0, 0.74);
+            backdrop-filter: blur(10px);
+        }
+
+        .region-modal.is-hidden {
+            display: none;
+        }
+
+        .region-modal-shell {
+            position: relative;
+            width: min(860px, calc(100vw - 48px));
+            max-height: calc(100vh - 48px);
+            overflow: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(246, 137, 0, 0.34);
+            background:
+                radial-gradient(circle at 86% 0%, rgba(246, 137, 0, 0.15), transparent 34%),
+                linear-gradient(180deg, rgba(22, 19, 15, 0.98), rgba(7, 7, 7, 0.98));
+            box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+            padding: 26px;
+            display: grid;
+            gap: 16px;
+        }
+
+        .region-modal-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid rgba(244, 239, 229, 0.2);
+            background: rgba(0, 0, 0, 0.32);
+            color: rgba(244, 239, 229, 0.72);
+            font-size: 22px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .region-modal-close:hover,
+        .region-modal-close:focus-visible {
+            border-color: rgba(246, 137, 0, 0.72);
+            color: rgba(244, 239, 229, 0.96);
+            outline: none;
+        }
+
+        .region-modal-eyebrow {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .region-modal-title {
+            max-width: 88%;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.96);
+            font-size: 31px;
+            font-weight: 900;
+            line-height: 1.08;
+        }
+
+        .region-modal-subtitle {
+            color: rgba(244, 239, 229, 0.62);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.38;
+        }
+
+        .region-option-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .region-option {
+            min-height: 74px;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+                rgba(10, 10, 10, 0.88);
+            color: rgba(244, 239, 229, 0.82);
+            padding: 12px 14px;
+            display: grid;
+            align-content: center;
+            gap: 5px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .region-option:hover,
+        .region-option:focus-visible,
+        .region-option.active {
+            border-color: rgba(246, 137, 0, 0.7);
+            background:
+                linear-gradient(180deg, rgba(246, 137, 0, 0.15), rgba(246, 137, 0, 0.04)),
+                rgba(14, 10, 6, 0.94);
+            outline: none;
+        }
+
+        .region-option-name {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 16px;
+            font-weight: 850;
+            line-height: 1.16;
+        }
+
+        .region-option-count {
+            color: rgba(244, 239, 229, 0.54);
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
         @media (max-width: 860px) {
             .quiz-modal {
                 padding: 18px;
@@ -1665,6 +1789,15 @@
 
             .quiz-material-image {
                 --quiz-material-image-height: 150px;
+            }
+
+            .region-modal {
+                padding: 18px;
+            }
+
+            .region-modal-shell {
+                width: min(720px, calc(100vw - 28px));
+                padding: 22px;
             }
         }
 
@@ -2766,6 +2899,35 @@
             text-overflow: ellipsis;
         }
 
+        .achievement-map-node.region-picker-node,
+        .bench-map-item.region-picker-node {
+            position: sticky;
+            border-color: rgba(246, 137, 0, 0.48);
+            background:
+                linear-gradient(180deg, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.035)),
+                rgba(16, 12, 8, 0.94);
+            z-index: 5;
+        }
+
+        .achievement-map-node.region-picker-node {
+            left: 0;
+        }
+
+        .bench-map-item.region-picker-node {
+            top: 0;
+        }
+
+        .achievement-map-node.region-picker-node .achievement-map-index,
+        .bench-map-item.region-picker-node .bench-map-index {
+            border-color: rgba(244, 239, 229, 0.32);
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .achievement-map-node.region-picker-node .achievement-map-title,
+        .bench-map-item.region-picker-node .bench-map-title {
+            color: var(--accent);
+        }
+
         .footer-status {
             min-width: 0;
             margin-left: auto;
@@ -3487,6 +3649,16 @@
         </div>
     </div>
 
+    <div class="region-modal is-hidden" id="regionModal" role="dialog" aria-modal="true" aria-labelledby="regionModalTitle">
+        <div class="region-modal-shell">
+            <button class="region-modal-close" id="regionModalClose" type="button" aria-label="Close">×</button>
+            <div class="region-modal-eyebrow" id="regionModalEyebrow">Region Index</div>
+            <h2 class="region-modal-title" id="regionModalTitle"></h2>
+            <div class="region-modal-subtitle" id="regionModalSubtitle"></div>
+            <div class="region-option-grid" id="regionOptionGrid"></div>
+        </div>
+    </div>
+
     <script>
         function _loadDefaultMilestones() {
             document.write('<script src="milestones-data-default.js?v=20260604-ai100-three-images"><\/script>');
@@ -3588,6 +3760,7 @@
             ? requestedStorylineId
             : getFallbackStorylineId();
         let milestoneList = getStorylineMilestones(activeStorylineId);
+        let activeRegionFilter = '';
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
@@ -3688,7 +3861,13 @@
             quizModalMaterials: document.getElementById('quizModalMaterials'),
             quizModalBody: document.getElementById('quizModalBody'),
             quizModalSkip: document.getElementById('quizModalSkip'),
-            quizModalContinue: document.getElementById('quizModalContinue')
+            quizModalContinue: document.getElementById('quizModalContinue'),
+            regionModal: document.getElementById('regionModal'),
+            regionModalClose: document.getElementById('regionModalClose'),
+            regionModalEyebrow: document.getElementById('regionModalEyebrow'),
+            regionModalTitle: document.getElementById('regionModalTitle'),
+            regionModalSubtitle: document.getElementById('regionModalSubtitle'),
+            regionOptionGrid: document.getElementById('regionOptionGrid')
         };
 
         function escapeHtml(value) {
@@ -3731,9 +3910,69 @@
             return window.I18n && typeof window.I18n.localize === 'function' ? window.I18n.localize(value) : (value == null ? '' : value);
         }
 
+        const ACHIEVEMENT_REGION_NAMES = [
+            'United States',
+            'United Kingdom',
+            'Canada',
+            'Russia',
+            'Netherlands',
+            'Germany',
+            'China',
+            'France'
+        ];
+
+        const ACHIEVEMENT_REGION_LABELS = {
+            'United States': '美国',
+            'United Kingdom': '英国',
+            Canada: '加拿大',
+            Russia: '俄罗斯',
+            Netherlands: '荷兰',
+            Germany: '德国',
+            China: '中国',
+            France: '法国'
+        };
+
         function uiText(en, zh) {
             const locale = window.I18n && typeof window.I18n.getLocale === 'function' ? window.I18n.getLocale() : window.currentLocale;
             return locale === 'zh' ? zh : en;
+        }
+
+        function getMilestoneRegions(milestone) {
+            const country = milestone && milestone.location && milestone.location.country;
+            const rawCountry = String(country && typeof country === 'object' ? country.en : country || '').trim();
+            if (!rawCountry) return [];
+            const matched = ACHIEVEMENT_REGION_NAMES.filter((region) => rawCountry.includes(region));
+            return matched.length > 0 ? matched : [rawCountry];
+        }
+
+        function getRegionLabel(region) {
+            return uiText(region, ACHIEVEMENT_REGION_LABELS[region] || region);
+        }
+
+        function getVisibleStorylineMilestones(storylineId) {
+            const source = getStorylineMilestones(storylineId);
+            if (!activeRegionFilter || storylineId !== 'bench-council-ai100') return source;
+            return source.filter((milestone) => getMilestoneRegions(milestone).includes(activeRegionFilter));
+        }
+
+        function getRegionOptions() {
+            const source = getStorylineMilestones(activeStorylineId);
+            const regionCounts = new Map();
+            source.forEach((milestone) => {
+                getMilestoneRegions(milestone).forEach((region) => {
+                    regionCounts.set(region, (regionCounts.get(region) || 0) + 1);
+                });
+            });
+
+            return Array.from(regionCounts, ([region, count]) => ({ region, count }))
+                .sort((a, b) => b.count - a.count || a.region.localeCompare(b.region));
+        }
+
+        function formatAchievementCount(count) {
+            return uiText(
+                `${count} ${count === 1 ? 'achievement' : 'achievements'}`,
+                `${count} 个成就`
+            );
         }
 
         function applyStaticTranslations() {
@@ -3814,7 +4053,11 @@
                 return;
             }
 
-            const nextMilestones = getStorylineMilestones(storylineId);
+            if (storylineId !== activeStorylineId) {
+                activeRegionFilter = '';
+            }
+
+            const nextMilestones = getVisibleStorylineMilestones(storylineId);
             if (!nextMilestones.length) {
                 renderStorylineSelect();
                 return;
@@ -5501,6 +5744,31 @@
             }
         }
 
+        function shuffleQuizOptions(quiz) {
+            const entries = quiz.options.map((option, index) => ({
+                option,
+                originalIndex: index
+            }));
+
+            for (let index = entries.length - 1; index > 0; index -= 1) {
+                const swapIndex = Math.floor(Math.random() * (index + 1));
+                [entries[index], entries[swapIndex]] = [entries[swapIndex], entries[index]];
+            }
+
+            let answerIndex = entries.findIndex((entry) => entry.originalIndex === quiz.answerIndex);
+            if (answerIndex === quiz.answerIndex && entries.length > 1) {
+                const swapIndex = (answerIndex + 1 + Math.floor(Math.random() * (entries.length - 1))) % entries.length;
+                [entries[answerIndex], entries[swapIndex]] = [entries[swapIndex], entries[answerIndex]];
+                answerIndex = swapIndex;
+            }
+
+            return {
+                ...quiz,
+                options: entries.map((entry) => entry.option),
+                answerIndex
+            };
+        }
+
         function renderQuickQuiz(container, vm) {
             if (!container) return;
             const quiz = getQuizItems(vm)[0];
@@ -5511,12 +5779,13 @@
                 return;
             }
 
+            const displayQuiz = shuffleQuizOptions(quiz);
             const optionLabels = ['A', 'B', 'C', 'D', 'E'];
             container.innerHTML = `
                 <div class="quick-quiz-kicker">${escapeHtml(uiText('Quick challenge', '快速挑战'))}</div>
-                <div class="quick-quiz-question">${escapeHtml(quiz.question)}</div>
+                <div class="quick-quiz-question">${escapeHtml(displayQuiz.question)}</div>
                 <div class="quick-quiz-options" role="group" aria-label="${escapeHtml(uiText('Pop quiz options', '快速问答选项'))}">
-                    ${quiz.options.map((option, index) => `
+                    ${displayQuiz.options.map((option, index) => `
                         <button class="quick-quiz-option" type="button" data-answer-index="${index}">
                             <span class="quick-quiz-index">${escapeHtml(optionLabels[index] || String(index + 1))}</span>
                             <span>${escapeHtml(option)}</span>
@@ -5527,7 +5796,7 @@
             `;
 
             container.querySelectorAll('.quick-quiz-option').forEach((button) => {
-                button.addEventListener('click', () => applyQuizAnswer(container, quiz, Number(button.dataset.answerIndex)));
+                button.addEventListener('click', () => applyQuizAnswer(container, displayQuiz, Number(button.dataset.answerIndex)));
             });
         }
 
@@ -5663,6 +5932,66 @@
             pendingQuizAction = null;
         }
 
+        function hasOpenRegionModal() {
+            return Boolean(refs.regionModal && !refs.regionModal.classList.contains('is-hidden'));
+        }
+
+        function closeRegionPicker() {
+            if (!refs.regionModal) return;
+            refs.regionModal.classList.add('is-hidden');
+            if (refs.regionOptionGrid) refs.regionOptionGrid.innerHTML = '';
+        }
+
+        function applyRegionFilter(region) {
+            const currentMilestoneId = milestoneList[currentIndex] && milestoneList[currentIndex].id;
+            activeRegionFilter = region || '';
+            milestoneList = getVisibleStorylineMilestones(activeStorylineId);
+            const preservedIndex = currentMilestoneId
+                ? milestoneList.findIndex((milestone) => milestone.id === currentMilestoneId)
+                : -1;
+            currentIndex = preservedIndex >= 0 ? preservedIndex : 0;
+            currentArchiveIndex = 0;
+            vmCache.clear();
+            closeRegionPicker();
+            renderPage(currentIndex);
+            resetPortraitScrollPosition();
+        }
+
+        function openRegionPicker() {
+            if (!refs.regionModal || !refs.regionOptionGrid) return;
+            const options = getRegionOptions();
+            const allCount = getStorylineMilestones(activeStorylineId).length;
+            refs.regionModalEyebrow.textContent = uiText('Region Index', '地区索引');
+            refs.regionModalTitle.textContent = uiText('Choose a Region', '选择地区');
+            refs.regionModalSubtitle.textContent = activeRegionFilter
+                ? uiText(`Current filter: ${activeRegionFilter}`, `当前筛选：${activeRegionFilter}`)
+                : uiText('Showing all AI100 achievements.', '正在显示全部 AI100 成就。');
+            refs.regionOptionGrid.innerHTML = [
+                { region: '', count: allCount, label: uiText('All regions', '全部地区') },
+                ...options.map((option) => ({ ...option, label: getRegionLabel(option.region) }))
+            ].map((option) => {
+                const active = option.region === activeRegionFilter ? ' active' : '';
+                const countLabel = formatAchievementCount(option.count);
+                return `
+                    <button class="region-option${active}" type="button" data-region="${escapeHtml(option.region)}">
+                        <span class="region-option-name">${escapeHtml(option.label)}</span>
+                        <span class="region-option-count">${escapeHtml(countLabel)}</span>
+                    </button>
+                `;
+            }).join('');
+
+            refs.regionOptionGrid.querySelectorAll('.region-option').forEach((button) => {
+                button.addEventListener('click', () => applyRegionFilter(button.dataset.region || ''));
+            });
+
+            refs.regionModal.classList.remove('is-hidden');
+            window.requestAnimationFrame(() => {
+                const activeButton = refs.regionOptionGrid.querySelector('.region-option.active')
+                    || refs.regionOptionGrid.querySelector('.region-option');
+                if (activeButton) activeButton.focus();
+            });
+        }
+
         function maybeOpenCompletionQuiz(onComplete) {
             if (!isTopAchievementStorylineActive()) return false;
             const vm = getVm(currentIndex);
@@ -5702,7 +6031,16 @@
         function renderAchievementMap() {
             refs.timelineModeLabel.textContent = tx('achievementMap');
             refs.timelineTrack.classList.add('achievement-map-track');
-            refs.timelineTrack.innerHTML = milestoneList.map((item, index) => {
+            const regionLabel = activeRegionFilter ? getRegionLabel(activeRegionFilter) : uiText('All regions', '全部地区');
+            const regionNode = `
+                <button class="achievement-map-node region-picker-node" type="button" data-region-picker="true" title="${escapeHtml(uiText('Choose region', '选择地区'))}">
+                    <span class="achievement-map-index">${escapeHtml(uiText('R', '地'))}</span>
+                    <span class="achievement-map-area">${escapeHtml(uiText('Region', '地区'))}</span>
+                    <span class="achievement-map-title">${escapeHtml(regionLabel)}</span>
+                    <span class="achievement-map-method">${escapeHtml(formatAchievementCount(milestoneList.length))}</span>
+                </button>
+            `;
+            const milestoneNodes = milestoneList.map((item, index) => {
                 const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
                 const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
                 const method = getAchievementField(item, 'method', String(item.year || ''));
@@ -5718,8 +6056,13 @@
                     </button>
                 `;
             }).join('');
+            refs.timelineTrack.innerHTML = regionNode + milestoneNodes;
+
+            const regionButton = refs.timelineTrack.querySelector('[data-region-picker="true"]');
+            if (regionButton) regionButton.addEventListener('click', openRegionPicker);
 
             refs.timelineTrack.querySelectorAll('.achievement-map-node').forEach((button) => {
+                if (button.dataset.regionPicker) return;
                 button.addEventListener('click', () => {
                     const index = Number(button.dataset.index);
                     jumpTo(index);
@@ -5764,26 +6107,33 @@
             return steps.map((step) => String(lx(step) || '').trim()).filter(Boolean);
         }
 
+        function getAchievementLocationItem(rawMilestone) {
+            return getMilestoneRegions(rawMilestone).map(getRegionLabel).join(' / ');
+        }
+
         function getAchievementRelatedItems(rawMilestone) {
             const demoSteps = getAchievementDemoSteps(rawMilestone);
-            if (demoSteps.length > 0) return demoSteps.slice(0, 3);
-
             const achievement = rawMilestone && rawMilestone.achievement ? rawMilestone.achievement : {};
             const relatedAchievements = Array.isArray(achievement.relatedAchievements) ? achievement.relatedAchievements : [];
             const relatedRegions = Array.isArray(achievement.relatedRegions) ? achievement.relatedRegions : [];
+            const locationItem = getAchievementLocationItem(rawMilestone);
             const items = [
-                ...relatedAchievements.slice(0, 2),
-                ...relatedRegions.slice(0, 1)
+                ...demoSteps,
+                ...relatedAchievements,
+                ...relatedRegions
             ].map((item) => String(lx(item) || '').trim()).filter(Boolean);
 
-            return items.length > 0 ? items : getAchievementDemoSteps(rawMilestone);
+            return [
+                ...items.slice(0, 2),
+                locationItem || items[2] || uiText('Affiliated place pending', '关联地点待补充')
+            ].filter(Boolean).slice(0, 3);
         }
 
         function getAchievementKeyConcepts(rawMilestone) {
             const concepts = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.keyConcepts)
                 ? rawMilestone.achievement.keyConcepts
                 : [];
-            return concepts.slice(0, 2).map((concept, index) => {
+            const conceptItems = concepts.slice(0, 2).map((concept, index) => {
                 if (typeof concept === 'string' || !concept || typeof concept !== 'object') {
                     return {
                         label: uiText(`Key concept ${index + 1}`, `关键概念 ${index + 1}`),
@@ -5798,6 +6148,17 @@
                     chip: String(lx(concept.chip || concept.type) || uiText('Key concept', '关键概念')).trim()
                 };
             }).filter((concept) => concept.label && concept.text);
+
+            const locationItem = getAchievementLocationItem(rawMilestone);
+            if (locationItem) {
+                conceptItems.push({
+                    label: locationItem,
+                    text: uiText('Affiliated place for this achievement', '该成就关联地点'),
+                    chip: uiText('Affiliated place', '关联地点')
+                });
+            }
+
+            return conceptItems.slice(0, 3);
         }
 
         function getAchievementVisual(rawMilestone) {
@@ -5805,7 +6166,16 @@
         }
 
         function renderBenchMapList() {
-            refs.benchMapList.innerHTML = milestoneList.map((item, index) => {
+            const regionLabel = activeRegionFilter ? getRegionLabel(activeRegionFilter) : uiText('All regions', '全部地区');
+            const regionNode = `
+                <button class="bench-map-item region-picker-node" type="button" data-region-picker="true">
+                    <span class="bench-map-index">${escapeHtml(uiText('R', '地'))}</span>
+                    <span class="bench-map-area">${escapeHtml(uiText('Region', '地区'))}</span>
+                    <span class="bench-map-title">${escapeHtml(regionLabel)}</span>
+                    <span class="bench-map-method">${escapeHtml(formatAchievementCount(milestoneList.length))}</span>
+                </button>
+            `;
+            const milestoneNodes = milestoneList.map((item, index) => {
                 const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
                 const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
                 const method = getAchievementField(item, 'method', String(item.year || ''));
@@ -5819,8 +6189,13 @@
                     </button>
                 `;
             }).join('');
+            refs.benchMapList.innerHTML = regionNode + milestoneNodes;
+
+            const regionButton = refs.benchMapList.querySelector('[data-region-picker="true"]');
+            if (regionButton) regionButton.addEventListener('click', openRegionPicker);
 
             refs.benchMapList.querySelectorAll('.bench-map-item').forEach((button) => {
+                if (button.dataset.regionPicker) return;
                 button.addEventListener('click', () => {
                     const index = Number(button.dataset.index);
                     jumpTo(index);
@@ -6932,6 +7307,12 @@
             if (refs.quizModalContinue) refs.quizModalContinue.addEventListener('click', () => {
                 if (!refs.quizModalContinue.disabled) completeQuizModal();
             });
+            if (refs.regionModalClose) refs.regionModalClose.addEventListener('click', closeRegionPicker);
+            if (refs.regionModal) {
+                refs.regionModal.addEventListener('click', (event) => {
+                    if (event.target === refs.regionModal) closeRegionPicker();
+                });
+            }
 
             window.addEventListener('resize', debounce(syncStageScale, 120));
             window.addEventListener('beforeunload', clearIdleAdvanceTimer);
@@ -6953,6 +7334,10 @@
             document.addEventListener('keydown', (event) => {
                 registerUserActivity(event);
                 if (hasOpenPhotoViewer()) return;
+                if (hasOpenRegionModal()) {
+                    if (event.key === 'Escape') closeRegionPicker();
+                    return;
+                }
                 if (hasOpenQuizModal()) {
                     if (event.key === 'Escape') completeQuizModal();
                     if (event.key === 'Enter' && refs.quizModalContinue && !refs.quizModalContinue.disabled) {

@@ -101,7 +101,7 @@ BenchCouncil AI100 records 63,346 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever maximum-margin classification with kernels became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 63,346 citations. SVMs influenced text classification, bioinformatics, computer vision, kernel methods, and the broader culture of margin-based learning.
 

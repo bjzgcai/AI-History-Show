@@ -110,7 +110,7 @@ BenchCouncil lists "Computing Machinery and Intelligence" with 21,510 citations 
 
 The Turing Test did not directly produce a single commercial system, but it shaped the public and product imagination around conversational AI. Chatbots, voice assistants, customer-service agents, CAPTCHA-style human/machine distinction tests, and modern LLM demos all inherit part of their cultural framing from Turing's conversational benchmark.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The test remains one of the most recognizable ideas in AI history. It is no longer treated as a sufficient benchmark for general intelligence by most AI researchers, but it remains a durable reference point for evaluating human-like dialogue, deception, social interaction, and the gap between fluent language and robust understanding.
 

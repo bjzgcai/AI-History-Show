@@ -101,7 +101,7 @@ BenchCouncil AI100 records 56,687 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever probabilistic search with a cooling schedule became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 56,687 citations. Simulated annealing influenced scheduling, VLSI layout, route planning, Bayesian computation, and metaheuristic optimization.
 
