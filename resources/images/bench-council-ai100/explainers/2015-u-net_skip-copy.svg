@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Skip-copy feature bridge</title>
+  <desc id="desc">跳跃复制特征桥</desc>
+  <rect width="1200" height="720" fill="#101827"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <text x="90" y="120" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Skip-copy feature bridge</text>
+  <text x="90" y="164" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">跳跃复制特征桥</text>
+  <rect x="160" y="170" width="180" height="130" rx="18" fill="#0f766e"/><rect x="820" y="170" width="180" height="130" rx="18" fill="#7c2d12"/><rect x="160" y="410" width="180" height="130" rx="18" fill="#0f766e"/><rect x="820" y="410" width="180" height="130" rx="18" fill="#7c2d12"/><path d="M340 235 C520 105 660 105 820 235 M340 475 C520 610 660 610 820 475" stroke="#f59e0b" stroke-width="14" fill="none"/>
+  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Skip · local redraw from source material</text>
+</svg>
