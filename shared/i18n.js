@@ -49,7 +49,11 @@
                 originalScreenshot: 'Original screenshot or abstract',
                 signature: 'Attribution',
                 keyFiguresArchiveNarrative: 'Key Figures & Archive Narrative',
-                commentaryMedia: 'Commentary & Media'
+                commentaryMedia: 'Commentary & Media',
+                storylineSelector: 'Storyline',
+                achievementMap: 'Achievement Map',
+                researchDossier: 'Research Dossier',
+                sourceMaterials: 'Source Materials'
             },
             zh: {
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
@@ -96,7 +100,11 @@
                 originalScreenshot: '原文截图或摘要',
                 signature: '署名',
                 keyFiguresArchiveNarrative: '关键人物与档案叙事',
-                commentaryMedia: '评论与媒体'
+                commentaryMedia: '评论与媒体',
+                storylineSelector: '故事线',
+                achievementMap: '成就地图',
+                researchDossier: '研究档案',
+                sourceMaterials: '资料来源'
             }
         }
     };

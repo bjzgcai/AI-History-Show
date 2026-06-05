@@ -107,7 +107,8 @@
             customSections.forEach((section) => {
                 sections.push({
                     label: localize(section.label) || t('contentInterpretation'),
-                    html: localize(section.html)
+                    html: localize(section.html),
+                    link: section.link || null
                 });
             });
         } else {
@@ -126,7 +127,7 @@
             });
         }
 
-        return sections.slice(0, 3);
+        return sections.slice(0, sections.length > 3 ? 4 : 3);
     }
 
     function toTimelineItems(allMilestones, currentIndex) {

@@ -1569,6 +1569,17 @@
             line-height: 1.42;
         }
 
+        .commentary-body a {
+            color: var(--accent);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .commentary-body a:hover,
+        .commentary-body a:focus-visible {
+            text-decoration: underline;
+        }
+
         .commentary-body p {
             margin-bottom: 0.86em;
         }
@@ -2029,7 +2040,8 @@
                 customSections.forEach((section) => {
                     commentarySections.push({
                         label: lx(section.label) || tx('contentInterpretation'),
-                        html: lx(section.html)
+                        html: lx(section.html),
+                        link: section.link || null
                     });
                 });
             } else if (descriptionText) {
@@ -2343,9 +2355,11 @@
             const sourceSections = Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
                 : [];
-            const sections = sourceSections.slice(0, 3).map((section) => ({
+            const maxSections = sourceSections.length > 3 ? 4 : 3;
+            const sections = sourceSections.slice(0, maxSections).map((section) => ({
                 label: section.label || '署名',
-                text: stripHtml(section.html || '')
+                text: stripHtml(section.html || ''),
+                link: section.link || null
             }));
 
             const fallbackText = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
@@ -2360,7 +2374,17 @@
                 fillerIndex += 1;
             }
 
-            return sections.slice(0, 3);
+            return sections.slice(0, maxSections);
+        }
+
+        function buildCommentaryBodyHtml(section) {
+            const text = escapeHtml(section.text || tx('noAdditionalInfo'));
+            const rawLink = section && section.link ? section.link : null;
+            const url = rawLink && rawLink.url ? String(rawLink.url).trim() : '';
+            if (!url) return text;
+
+            const label = String(lx(rawLink.label) || url).trim();
+            return `${text} <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
         }
 
         function scorePhoto(url) {
@@ -3546,7 +3570,7 @@
             refs.commentaryList.innerHTML = sections.map((section) => `
                 <article class="commentary-item">
                     <div class="commentary-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
-                    <div class="commentary-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
+                    <div class="commentary-body">${buildCommentaryBodyHtml(section)}</div>
                 </article>
             `).join('');
         }

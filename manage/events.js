@@ -2154,5 +2154,685 @@ module.exports = {
         }
       }
     }
+  },
+  "1950-turing-test": {
+    "year": 1950,
+    "title": {
+      "en": "Turing Test: A Question Becomes a Benchmark",
+      "zh": "图灵测试：一个问题成为基准"
+    },
+    "location": {
+      "name": {
+        "en": "University of Manchester",
+        "zh": "曼彻斯特大学"
+      },
+      "country": {
+        "en": "Manchester, United Kingdom",
+        "zh": "英国，曼彻斯特"
+      },
+      "coordinates": [
+        53.4668,
+        -2.2339
+      ]
+    },
+    "description": {
+      "en": "<p>BenchCouncil AI100 places the Turing test at the beginning of its theory thread. In 1950, Alan Turing turned the abstract question of machine intelligence into an operational test: judge a machine by its conversational behavior, not by opening the machine and inspecting its mechanism.</p><p>The achievement is bigger than a single benchmark. It introduced a pattern still visible in modern AI evaluation: define a protocol, hide irrelevant identity cues, collect human judgments, then debate what the result actually proves.</p>",
+      "zh": "<p>BenchCouncil AI100 将图灵测试放在理论线索的开端。1950 年，Alan Turing 将“机器能否思考”这个抽象问题转化为可操作的测试：通过对话行为来判断机器，而不是打开机器去观察内部机制。</p><p>它的意义不止是一个早期基准。它提出了一种现代 AI 评估仍在沿用的模式：定义协议，遮蔽身份线索，收集人类判断，再讨论结果到底能证明什么。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alan Turing",
+          "zh": "艾伦·图灵 (Alan Turing)"
+        },
+        "role": {
+          "en": "Proposed the imitation game",
+          "zh": "提出模仿游戏"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "I propose to consider the question, 'Can machines think?'",
+      "zh": "我建议考虑这样一个问题：机器能思考吗？"
+    },
+    "quoteMeta": {
+      "workTitle": "Computing Machinery and Intelligence",
+      "workAuthors": "Alan M. Turing, Mind, 1950",
+      "sourceUrl": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Theory / Turing test",
+      "zh": "BenchCouncil AI100：理论 / 图灵测试"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols.",
+          "zh": "Turing 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。Turing Digital Archive 也保存了这篇原文，适合与现代评测协议并置展示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation Logic",
+          "zh": "评估逻辑"
+        },
+        "html": {
+          "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance.",
+          "zh": "图灵测试最值得展示的是评估设计：盲测交互、受限通道、人类判断和明确成功标准。这让它自然连接到红队测试、人类偏好评测和基准治理。"
+        }
+      },
+      {
+        "label": {
+          "en": "Modern View",
+          "zh": "现代评价"
+        },
+        "html": {
+          "en": "A modern expert or visitor can frame Turing's achievement as the start of AI evaluation culture: intelligence is judged through interaction, evidence and comparison rather than a single internal definition. Video clip:",
+          "zh": "可以增加“现在的专家/个人对这个成就的评价”：从今天看，图灵测试开启的是 AI 评估文化，用交互、证据和比较来讨论智能，而不是只寻找一个内部定义。视频片段："
+        },
+        "link": {
+          "label": {
+            "en": "The Turing Test: Can Machines Think?",
+            "zh": "The Turing Test: Can Machines Think?"
+          },
+          "url": "https://www.youtube.com/watch?v=3wLqsRLvV-c"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Theory",
+        "zh": "理论"
+      },
+      "method": {
+        "en": "Behavioral evaluation",
+        "zh": "行为评估"
+      },
+      "artifact": {
+        "en": "Imitation game protocol",
+        "zh": "模仿游戏协议"
+      },
+      "material": {
+        "en": "Paper + archive",
+        "zh": "论文 + 档案"
+      },
+      "demo": {
+        "en": "Blind transcript vote",
+        "zh": "匿名对话投票"
+      },
+      "visual": "transcript",
+      "demoSteps": [
+        {
+          "en": "Blind channel",
+          "zh": "盲测通道"
+        },
+        {
+          "en": "Human judgment",
+          "zh": "人类判断"
+        },
+        {
+          "en": "Evaluation debate",
+          "zh": "评估争议"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Internet Archive",
+          "title": {
+            "en": "Computing Machinery and Intelligence archive preview",
+            "zh": "《Computing Machinery and Intelligence》档案预览"
+          },
+          "description": {
+            "en": "Digitized access page for Turing's 1950 Mind paper, showing the title, author, publication date and download options.",
+            "zh": "Turing 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
+          },
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "license": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+          "usage": {
+            "en": "Source material image / Archival reference",
+            "zh": "原始材料入口 / 档案参考"
+          },
+          "action": {
+            "en": "Open archive preview",
+            "zh": "打开档案预览"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Computing Machinery and Intelligence",
+            "zh": "Computing Machinery and Intelligence"
+          },
+          "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Turing Digital Archive",
+            "zh": "Turing Digital Archive"
+          },
+          "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Internet Archive digital preview",
+            "zh": "Internet Archive 数字化预览"
+          },
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up"
+        },
+        {
+          "type": {
+            "en": "Context",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Stanford Encyclopedia of Philosophy",
+            "zh": "Stanford Encyclopedia of Philosophy"
+          },
+          "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+      "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
+        "caption": {
+          "en": "Alan Turing portrait",
+          "zh": "Alan Turing 肖像"
+        },
+        "subcaption": {
+          "en": "Photograph portrait of Alan Turing, 29 March 1951",
+          "zh": "Alan Turing 肖像照，1951 年 3 月 29 日"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+        "license": "Public domain"
+      },
+      "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
+        "caption": {
+          "en": "Turing test diagram",
+          "zh": "图灵测试结构图"
+        },
+        "subcaption": {
+          "en": "Observer C judges hidden human and machine replies through text only.",
+          "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
+        "license": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1958-lisp": {
+    "year": 1958,
+    "title": {
+      "en": "LISP: Symbolic AI Gets a Language",
+      "zh": "LISP：符号 AI 获得编程语言"
+    },
+    "location": {
+      "name": {
+        "en": "MIT",
+        "zh": "麻省理工学院"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国，马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>In the BenchCouncil AI100 language section, LISP marks the moment when symbolic AI gained a practical medium. John McCarthy's language treated programs and data as list structures, making recursive symbolic manipulation a native act of programming.</p><p>The achievement is not only the invention of a language. It gave AI researchers compact primitives for representing knowledge, transforming expressions, building theorem provers and experimenting with systems whose own programs could be manipulated as data.</p>",
+      "zh": "<p>在 BenchCouncil AI100 的语言类目中，LISP 标志着符号 AI 获得了可实践的媒介。John McCarthy 的语言把程序和数据都组织成表结构，使递归式符号处理成为编程语言本身的自然能力。</p><p>它的成就不只是发明一门语言，而是为 AI 研究者提供了表示知识、变换表达式、构造定理证明器以及把程序自身当作数据处理的一组简洁原语。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John McCarthy",
+          "zh": "约翰·麦卡锡 (John McCarthy)"
+        },
+        "role": {
+          "en": "Designer of LISP",
+          "zh": "LISP 设计者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Recursive functions of symbolic expressions became a working language for artificial intelligence.",
+      "zh": "符号表达式的递归函数成为人工智能可以实际使用的语言。"
+    },
+    "quoteMeta": {
+      "workTitle": "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I",
+      "workAuthors": "John McCarthy, Communications of the ACM, 1960",
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Language / LISP",
+      "zh": "BenchCouncil AI100：语言 / LISP"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool.",
+          "zh": "McCarthy 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I Programmer's Manual 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。"
+        }
+      },
+      {
+        "label": {
+          "en": "API-Like Primitives",
+          "zh": "类 API 原语"
+        },
+        "html": {
+          "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems.",
+          "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。"
+        }
+      },
+      {
+        "label": {
+          "en": "Demo Hook",
+          "zh": "展示钩子"
+        },
+        "html": {
+          "en": "Show an expression entering an EVAL machine: a nested list flows through QUOTE, CAR/CDR and COND until the symbolic expression reduces to an answer. The point is to make code-as-data visible.",
+          "zh": "可做成“EVAL 机器”：嵌套表进入系统，经过 QUOTE、CAR/CDR 与 COND，一步步归约成结果。展示重点是让“代码即数据”变得可见。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Language",
+        "zh": "语言"
+      },
+      "method": {
+        "en": "Symbolic recursion",
+        "zh": "符号递归"
+      },
+      "artifact": {
+        "en": "S-expression evaluator",
+        "zh": "S 表达式求值器"
+      },
+      "material": {
+        "en": "Paper + manual",
+        "zh": "论文 + 手册"
+      },
+      "demo": {
+        "en": "EVAL reduction",
+        "zh": "EVAL 归约"
+      },
+      "visual": "eval",
+      "demoSteps": [
+        {
+          "en": "S-expression",
+          "zh": "S 表达式"
+        },
+        {
+          "en": "Primitive operators",
+          "zh": "基础原语"
+        },
+        {
+          "en": "Code as data",
+          "zh": "代码即数据"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Stanford / John McCarthy",
+          "title": {
+            "en": "Recursive Functions of Symbolic Expressions",
+            "zh": "《Recursive Functions of Symbolic Expressions》原文"
+          },
+          "description": {
+            "en": "Author-hosted Stanford page for McCarthy's original LISP paper, first published in Communications of the ACM in April 1960.",
+            "zh": "McCarthy 在 Stanford 个人站点保存的 LISP 原始论文页面，论文最初发表于 1960 年 4 月的 Communications of the ACM。"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+          "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+          "license": "Author-hosted web access; reuse rights for the text are not stated.",
+          "usage": {
+            "en": "Source material / Original paper reference",
+            "zh": "原始材料入口 / 原始论文参考"
+          },
+          "action": {
+            "en": "Open paper source",
+            "zh": "打开论文原文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Recursive Functions of Symbolic Expressions",
+            "zh": "Recursive Functions of Symbolic Expressions"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/recursive.html"
+        },
+        {
+          "type": {
+            "en": "Manual",
+            "zh": "手册"
+          },
+          "label": {
+            "en": "LISP I Programmer's Manual",
+            "zh": "LISP I Programmer's Manual"
+          },
+          "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史"
+          },
+          "label": {
+            "en": "History of Lisp",
+            "zh": "History of Lisp"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
+      "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
+        "caption": {
+          "en": "John McCarthy portrait",
+          "zh": "John McCarthy 肖像"
+        },
+        "subcaption": {
+          "en": "John McCarthy at Stanford, 2006",
+          "zh": "John McCarthy 于 Stanford，2006 年"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+        "license": "CC BY-SA 2.0"
+      },
+      "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
+        "caption": {
+          "en": "S-expression evaluator",
+          "zh": "S 表达式求值流程"
+        },
+        "subcaption": {
+          "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives.",
+          "zh": "根据 McCarthy 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
+        },
+        "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "license": "Original local explainer; source text reuse rights not stated.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2016-alphago": {
+    "year": 2016,
+    "title": {
+      "en": "AlphaGo: Search, Learning, and Go",
+      "zh": "AlphaGo：搜索、学习与围棋"
+    },
+    "location": {
+      "name": {
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国，伦敦"
+      },
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "en": "<p>BenchCouncil AI100 lists AlphaGo under reinforcement learning. The system combined deep neural networks, Monte Carlo tree search, supervised learning from expert games and reinforcement learning through self-play.</p><p>The 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The richer technical story is that AlphaGo did not merely search harder; it learned where to search, how to value positions and how to improve through play.</p>",
+      "zh": "<p>BenchCouncil AI100 将 AlphaGo 列在强化学习线索之下。这个系统结合深度神经网络、蒙特卡洛树搜索、专家棋谱监督学习以及自我对弈强化学习。</p><p>2016 年与李世石的对局让 AI 的战略能力被全球观众看见。更丰富的技术故事是：AlphaGo 并不只是“搜索更多”，而是学会了在哪里搜索、如何评估局面，以及如何通过对弈提升自己。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Silver",
+          "zh": "大卫·席尔瓦 (David Silver)"
+        },
+        "role": {
+          "en": "AlphaGo lead researcher",
+          "zh": "AlphaGo 主要研究者"
+        }
+      },
+      {
+        "name": {
+          "en": "Demis Hassabis",
+          "zh": "戴密斯·哈萨比斯 (Demis Hassabis)"
+        },
+        "role": {
+          "en": "DeepMind co-founder",
+          "zh": "DeepMind 联合创始人"
+        }
+      },
+      {
+        "name": {
+          "en": "Aja Huang",
+          "zh": "黄士杰 (Aja Huang)"
+        },
+        "role": {
+          "en": "AlphaGo researcher",
+          "zh": "AlphaGo 研究者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
+      "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
+    },
+    "quoteMeta": {
+      "workTitle": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+      "workAuthors": "David Silver et al., Nature, 2016",
+      "sourceUrl": "https://www.nature.com/articles/nature16961"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
+      "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+          "zh": "Nature 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+        }
+      },
+      {
+        "label": {
+          "en": "Blog / API Materials",
+          "zh": "博客 / API 材料"
+        },
+        "html": {
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Demo Hook",
+          "zh": "展示钩子"
+        },
+        "html": {
+          "en": "Use a Go-board explainer around Move 37: contrast human prior, policy suggestion, search tree and later board consequence. It turns a single move into a visible story about learned intuition plus planning.",
+          "zh": "可围绕第 37 手做围棋棋盘解释器：对比人类先验、策略网络建议、搜索树和后续局面影响。这样能把一个落子变成“学习直觉 + 规划搜索”的可见故事。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Reinforcement Learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Self-play search",
+        "zh": "自我对弈搜索"
+      },
+      "artifact": {
+        "en": "Policy/value networks + MCTS",
+        "zh": "策略 / 价值网络 + MCTS"
+      },
+      "material": {
+        "en": "Nature paper + blog + SGF/API",
+        "zh": "Nature 论文 + 博客 + 棋谱/API"
+      },
+      "demo": {
+        "en": "Move 37 board explainer",
+        "zh": "第 37 手棋盘解释器"
+      },
+      "visual": "go",
+      "demoSteps": [
+        {
+          "en": "Policy prior",
+          "zh": "策略先验"
+        },
+        {
+          "en": "Value estimate",
+          "zh": "价值估计"
+        },
+        {
+          "en": "Search variation",
+          "zh": "搜索分支"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Nature",
+          "title": {
+            "en": "Mastering the game of Go with deep neural networks and tree search",
+            "zh": "《Mastering the game of Go with deep neural networks and tree search》"
+          },
+          "description": {
+            "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
+            "zh": "Nature 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+          },
+          "url": "https://www.nature.com/articles/nature16961",
+          "source": "https://www.nature.com/articles/nature16961",
+          "license": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open Nature paper",
+            "zh": "打开 Nature 论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Nature 2016 AlphaGo paper",
+            "zh": "Nature 2016 AlphaGo 论文"
+          },
+          "url": "https://www.nature.com/articles/nature16961"
+        },
+        {
+          "type": {
+            "en": "Blog",
+            "zh": "博客"
+          },
+          "label": {
+            "en": "Google DeepMind AlphaGo",
+            "zh": "Google DeepMind AlphaGo"
+          },
+          "url": "https://deepmind.google/research/alphago/"
+        },
+        {
+          "type": {
+            "en": "API",
+            "zh": "API"
+          },
+          "label": {
+            "en": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎"
+          },
+          "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
+        "caption": {
+          "en": "Lee Sedol portrait",
+          "zh": "李世石肖像"
+        },
+        "subcaption": {
+          "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
+          "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+        "license": "CC BY 2.0"
+      },
+      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
+        "caption": {
+          "en": "Policy-value-search explainer",
+          "zh": "策略-价值-搜索解释图"
+        },
+        "subcaption": {
+          "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
+          "zh": "根据 Nature AlphaGo 论文与 Google DeepMind AlphaGo 官方材料制作的解释图。"
+        },
+        "source": "https://www.nature.com/articles/nature16961",
+        "license": "Original local explainer; publisher figure reuse rights not used.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
   }
 };
