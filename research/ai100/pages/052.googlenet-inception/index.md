@@ -96,7 +96,7 @@ BenchCouncil AI100 records 54,115 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever multi-scale inception modules became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 54,115 citations. Inception influenced modular CNNs, efficient architecture search, and the idea that neural-network blocks can be designed as reusable computation patterns.
 

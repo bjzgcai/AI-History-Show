@@ -96,7 +96,7 @@ BenchCouncil AI100 records 111,338 citations for the canonical source associated
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever very deep stacks of 3x3 convolutions became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 111,338 citations. VGG is still a reference point for visual features, perceptual losses, and the historical transition from shallow CNNs to very deep models.
 
