@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-05 00:49
+// 生成时间: 2026-06-05 01:06
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -1650,27 +1650,47 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 2015, Kaiming He and Jian Sun introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
-      "zh": "2015年，何恺明和孙剑的ResNet，通过直接加identity通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层"
+      "en": "In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun at Microsoft Research Asia introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
+      "zh": "2015年，微软亚洲研究院的何恺明、张祥雨、任少卿、孙剑团队提出 ResNet，通过直接加 identity 通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层"
     },
     "figures": [
       {
         "name": "何恺明 (Kaiming He)",
         "role": {
-          "en": "ResNet author",
-          "zh": "ResNet作者"
+          "en": "ResNet first author",
+          "zh": "ResNet第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": "张祥雨 (Xiangyu Zhang)",
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet共同作者"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": "任少卿 (Shaoqing Ren)",
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet共同作者"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
         "name": "孙剑 (Jian Sun)",
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet共同作者"
+          "en": "ResNet senior author",
+          "zh": "ResNet通讯作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1717,42 +1737,42 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
-        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_04.png"
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png"
       ],
       "imageMeta": {
         "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Shaoqing Ren",
+            "zh": "任少卿"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet co-author; now VP of R&D at NIO",
+            "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Jian Sun",
+            "zh": "孙剑"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)",
+            "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Xiangyu Zhang",
+            "zh": "张祥雨"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet co-author; later at Megvii, now at StepFun",
+            "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰"
           }
         },
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
@@ -1777,12 +1797,12 @@ const milestones = [
         },
         "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Kaiming He",
+            "zh": "何恺明"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "ResNet first author; Associate Professor at MIT EECS",
+            "zh": "ResNet 第一作者，现任 MIT 电气工程与计算机科学系副教授"
           }
         }
       },
@@ -3323,11 +3343,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
-        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
+        "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
+        "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
+        "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg": {
           "caption": {
             "en": "Alan Turing portrait",
             "zh": "Alan Turing 肖像"
@@ -3342,7 +3362,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "Public domain"
         },
-        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
+        "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png": {
           "caption": {
             "en": "Turing test diagram",
             "zh": "图灵测试结构图"
@@ -3700,11 +3720,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
-        "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
+        "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
+        "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
+        "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg": {
           "caption": {
             "en": "John McCarthy portrait",
             "zh": "John McCarthy 肖像"
@@ -3719,7 +3739,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "CC BY-SA 2.0"
         },
-        "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
+        "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg": {
           "caption": {
             "en": "S-expression evaluator",
             "zh": "S 表达式求值流程"
@@ -4070,11 +4090,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
+        "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+        "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
+        "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
           "caption": {
             "en": "Lee Sedol portrait",
             "zh": "李世石肖像"
@@ -4089,7 +4109,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "CC BY 2.0"
         },
-        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
+        "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
           "caption": {
             "en": "Policy-value-search explainer",
             "zh": "策略-价值-搜索解释图"
@@ -4427,11 +4447,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg",
-        "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg"
+        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg": {
+        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg": {
           "caption": {
             "en": "Stephen A. Cook portrait",
             "zh": "Stephen A. Cook 肖像"
@@ -4450,7 +4470,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg": {
+        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg": {
           "caption": {
             "en": "NP-completeness reduction map",
             "zh": "NP 完全性归约地图"
@@ -4806,11 +4826,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
-        "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg"
+        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png": {
+        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png": {
           "caption": {
             "en": "Vladimir Vapnik portrait",
             "zh": "Vladimir Vapnik 肖像"
@@ -4829,7 +4849,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg": {
+        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg": {
           "caption": {
             "en": "VC theory generalization diagram",
             "zh": "VC 理论泛化示意图"
@@ -5198,11 +5218,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
-        "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg"
+        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
+        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg": {
           "caption": {
             "en": "Herbert A. Simon portrait",
             "zh": "Herbert A. Simon 肖像"
@@ -5221,7 +5241,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg": {
+        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg": {
           "caption": {
             "en": "Logic Theorist proof search",
             "zh": "Logic Theorist 证明搜索"
@@ -5564,11 +5584,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
-        "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg"
+        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg": {
+        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg": {
           "caption": {
             "en": "Hao Wang portrait",
             "zh": "王浩肖像"
@@ -5587,7 +5607,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg": {
+        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg": {
           "caption": {
             "en": "Wang algorithm pattern proof",
             "zh": "王氏算法模式证明"
@@ -5969,11 +5989,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
-        "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg"
+        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
+        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
           "caption": {
             "en": "Hilary Putnam portrait",
             "zh": "Hilary Putnam 肖像"
@@ -5992,7 +6012,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg": {
+        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg": {
           "caption": {
             "en": "Davis-Putnam and DPLL SAT search",
             "zh": "Davis-Putnam 与 DPLL SAT 搜索"

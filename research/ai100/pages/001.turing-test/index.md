@@ -142,12 +142,12 @@ Today experts usually treat the Turing Test as historically foundational and phi
 
 images:
 
-- resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
-- resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+- photos/1950-turing-test_alan-turing.jpg
+- photos/1950-turing-test_diagram.png
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
+- local_image_path: photos/1950-turing-test_alan-turing.jpg
 - title: Alan Turing portrait
 - caption: Alan Turing portrait
 - description: Photograph portrait of Alan Turing, 29 March 1951.
@@ -157,7 +157,7 @@ imageMeta:
 - copyright_or_license: Public domain
 - usage: Portrait
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+- local_image_path: photos/1950-turing-test_diagram.png
 - title: Turing test diagram
 - caption: Turing test diagram
 - description: Observer C judges hidden human and machine replies through text only.
