@@ -91,7 +91,7 @@ BenchCouncil AI100 records 80,564 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever population-based evolutionary search became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 80,564 citations. Genetic algorithms influenced evolutionary computation, AutoML search, design optimization, scheduling, and simulation-based discovery.
 

@@ -106,7 +106,7 @@ BenchCouncil AI100 records 61,639 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever recursive partitioning with pruning became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 61,639 citations. CART is still visible inside random forests, boosted trees, explainable modeling, tabular ML, and clinical decision support.
 

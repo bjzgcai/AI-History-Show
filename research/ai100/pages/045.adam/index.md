@@ -96,7 +96,7 @@ BenchCouncil AI100 records 162,259 citations for the canonical source associated
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever adaptive first- and second-moment updates became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 162,259 citations for the Adam paper. Adam remains a baseline optimizer in research code, production training stacks, and teaching material, even when later variants are chosen for final runs.
 

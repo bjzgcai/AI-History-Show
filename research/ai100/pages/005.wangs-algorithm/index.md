@@ -110,7 +110,7 @@ BenchCouncil lists "Proving theorems by pattern recognition I" with 173 citation
 
 The original algorithm was not a commercial product. Its industrial value was methodological: it demonstrated how proof procedures could run on contemporary machines and helped establish theorem proving as a computational task.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The exact procedure is historical, but the idea of using formula structure to guide proof search remains central in automated deduction, SAT solving, SMT solving, proof assistants, and formal verification.
 
