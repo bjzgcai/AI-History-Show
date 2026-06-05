@@ -674,12 +674,12 @@ const routes = {
         if (!Array.isArray(ev.figures)) continue;
         ev.figures = ev.figures
           .map((figure) => ({
-            name: String(figure && figure.name ? figure.name : '').trim(),
+            name: cloneTextValue(figure && figure.name),
             role: isLocalizedText(figure && figure.role)
               ? deepClone(figure.role)
               : String(figure && figure.role ? figure.role : '').trim(),
           }))
-          .filter((figure) => figure.name || figure.role);
+          .filter((figure) => localizedText(figure.name) || localizedText(figure.role));
       }
 
       // 同步视频：将含元数据的对象写入 resources/videos/{key}.json，
@@ -986,10 +986,11 @@ const routes = {
           };
 
         // 人物：计算增删
-        const evFigNames  = new Set((ev.figures || []).map(f => f.name));
-        const appFigNames = new Set((applied.figures || []).map(f => f.name));
-        const figsAdded   = (ev.figures || []).filter(f => !appFigNames.has(f.name)).map(f => f.name);
-        const figsRemoved = (applied.figures || []).filter(f => !evFigNames.has(f.name)).map(f => f.name);
+        const figureName = f => localizedText(f.name);
+        const evFigNames  = new Set((ev.figures || []).map(figureName));
+        const appFigNames = new Set((applied.figures || []).map(figureName));
+        const figsAdded   = (ev.figures || []).filter(f => !appFigNames.has(figureName(f))).map(figureName);
+        const figsRemoved = (applied.figures || []).filter(f => !evFigNames.has(figureName(f))).map(figureName);
         if (figsAdded.length || figsRemoved.length)
           changes.figures = { added: figsAdded, removed: figsRemoved };
 

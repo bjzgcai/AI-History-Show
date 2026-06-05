@@ -40,6 +40,30 @@ const avatarRegistry = loadAvatarRegistry();
 const researchCandidates = loadResearchCandidates();
 const quoteCandidates = loadQuoteCandidates(QUOTE_CANDIDATES_PATH);
 
+const ZH_QUOTE_ATTRIBUTIONS = {
+  '1956-dartmouth': '《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农',
+  '1957-perceptron': '《感知机：一种用于大脑信息存储与组织的概率模型》，弗兰克·罗森布拉特',
+  '1969-ai-winter': '《感知机：计算几何导论》，马文·明斯基、西摩·派珀特',
+  '1986-backpropagation': '《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯',
+  '1989-cnn': '《基于梯度的学习在文档识别中的应用》，杨立昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳',
+  '1986-rnn': '《在时间中发现结构》，杰弗里·埃尔曼',
+  '1997-lstm': '《长短期记忆》，塞普·霍赫赖特、尤尔根·施密德胡伯',
+  '2012-alexnet': '《使用深度卷积神经网络进行 ImageNet 分类》，亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿',
+  '2014-highway-network': '《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯',
+  '2015-resnet': '《用于图像识别的深度残差学习》，何恺明、张祥雨、任少卿、孙剑',
+  '2016-densenet': '《密集连接卷积网络》，黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格',
+  '2014-gan': '《生成对抗网络》，伊恩·古德费洛等',
+  '2014-attention': '《通过联合学习对齐与翻译的神经机器翻译》，德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥',
+  '2017-transformer': '《注意力就是你所需要的一切》，阿希什·瓦斯瓦尼等',
+  '2018-bert': '《BERT：用于语言理解的深度双向 Transformer 预训练》，雅各布·德夫林等',
+  '2018-gpt': '《通过生成式预训练改进语言理解》，亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维',
+  '2023-agents': '《ReAct：在语言模型中协同推理与行动》，姚顺雨等',
+  '2025-llm-competition': '《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等',
+  '2020-alphafold': '《使用 AlphaFold 进行高精度蛋白质结构预测》，约翰·江珀等',
+  '2019-ai-feynman': '《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克',
+  '2024-ai-scientist': '《AI 科学家》，克里斯·卢等',
+};
+
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
 
 /** 读取 resources/videos/{key}.json，返回 candidate_videos 数组；文件不存在返回 null */
@@ -158,7 +182,7 @@ for (const cat of categories) {
       subtitle:    cat.subtitle,
       location:    ev.location,
       description: ev.description,
-      figures:     (ev.figures || []).map(enrichFigure),
+      figures:     (ev.figures || []).map((figure) => enrichFigure(figure, key)),
       photos:      [],   // 预留字段，暂不使用
       videoUrl:    videos[0] ? (videos[0].embed_url || videos[0].url || '') : '',
       quote:       buildQuote(curatedQuote.text),
@@ -200,15 +224,36 @@ function loadResearchCandidates() {
   }
 }
 
+function figureNameCandidates(figure) {
+  const value = figure && figure.name;
+  const names = isLocalizedText(value)
+    ? [...SUPPORTED_LOCALES.map((locale) => getLocalizedText(value, locale)), ...Object.values(value).map((item) => String(item || '').trim())]
+    : [String(value || '').trim()];
+  return [...new Set(names.filter(Boolean))];
+}
+
+function findAvatarRegistryEntry(figure) {
+  for (const name of figureNameCandidates(figure)) {
+    if (avatarRegistry[name]) return avatarRegistry[name];
+  }
+  return {};
+}
+
 /** 给人物条目补上显式头像信息 */
-function enrichFigure(figure) {
+function enrichFigure(figure, key) {
   const safeFigure = figure && typeof figure === 'object' ? figure : {};
-  const registryEntry = safeFigure.name ? avatarRegistry[safeFigure.name] || {} : {};
+  const registryEntry = findAvatarRegistryEntry(safeFigure);
+  const eventAvatar = key && registryEntry.avatarByEvent
+    ? registryEntry.avatarByEvent[key] || ''
+    : '';
+  const eventAvatarStyle = key && registryEntry.avatarStyleByEvent
+    ? registryEntry.avatarStyleByEvent[key] || ''
+    : '';
 
   return {
     ...safeFigure,
-    avatar: safeFigure.avatar || registryEntry.avatar || '',
-    avatarStyle: safeFigure.avatarStyle || registryEntry.avatarStyle || '',
+    avatar: safeFigure.avatar || eventAvatar || registryEntry.avatar || '',
+    avatarStyle: safeFigure.avatarStyle || eventAvatarStyle || registryEntry.avatarStyle || '',
     figureType: safeFigure.figureType || registryEntry.type || 'person',
   };
 }
@@ -297,7 +342,12 @@ function selectCuratedQuote(key, ev) {
 
   return {
     text: quoteText,
-    attribution: formatQuoteAttribution(effectiveMeta),
+    attribution: ZH_QUOTE_ATTRIBUTIONS[key]
+      ? {
+          en: formatQuoteAttribution(effectiveMeta),
+          zh: ZH_QUOTE_ATTRIBUTIONS[key],
+        }
+      : formatQuoteAttribution(effectiveMeta),
     meta: effectiveMeta,
   };
 }
@@ -334,16 +384,16 @@ function buildOutputContent(now) {
   ].join('\n');
 }
 
-function stripGeneratedTime(content) {
+function normalizeGeneratedTime(content) {
   return String(content || '')
-    .replace(/\r\n?/g, '\n')
-    .replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <stable>');
+    .replace(/\r\n/g, '\n')
+    .replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <preserved>');
 }
 
-function writeOutputIfChanged(file, content) {
+function writeIfMeaningfullyChanged(file, content) {
   if (fs.existsSync(file)) {
-    const current = fs.readFileSync(file, 'utf8');
-    if (stripGeneratedTime(current) === stripGeneratedTime(content)) {
+    const existing = fs.readFileSync(file, 'utf8');
+    if (normalizeGeneratedTime(existing) === normalizeGeneratedTime(content)) {
       return false;
     }
   }
@@ -372,7 +422,7 @@ function validateAvatarAssets(items) {
         missing.push({
           avatar,
           milestoneId: milestone.id,
-          figureName: figure.name || '未知人物',
+          figureName: getLocalizedText(figure.name) || '未知人物',
         });
       }
     }
@@ -384,10 +434,10 @@ function validateAvatarAssets(items) {
 const missingAvatarAssets = validateAvatarAssets(milestones);
 const now     = new Date().toISOString().replace('T', ' ').slice(0, 16);
 const content = buildOutputContent(now);
-
 const writeResults = new Map();
+
 for (const file of OUTPUTS) {
-  writeResults.set(file, writeOutputIfChanged(file, content));
+  writeResults.set(file, writeIfMeaningfullyChanged(file, content));
 }
 
 for (const item of missingAvatarAssets) {
@@ -395,7 +445,8 @@ for (const item of missingAvatarAssets) {
 }
 
 for (const file of OUTPUTS) {
-  console.log(`✓ ${writeResults.get(file) ? '生成完成' : '内容未变化'}：${file}`);
+  const status = writeResults.get(file) ? '生成完成' : '内容未变';
+  console.log(`✓ ${status}：${file}`);
 }
 console.log(`  共 ${categories.length} 个分类，${milestones.length} 个事件`);
 if (missingAvatarAssets.length > 0) {
