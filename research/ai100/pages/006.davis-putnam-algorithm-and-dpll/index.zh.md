@@ -157,12 +157,12 @@ DPLL 仍然是实用自动推理中最容易识别的基础之一。CDCL SAT 求
 
 images:
 
-- resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg
-- resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg
+- photos/1960-davis-putnam-dpll_hilary-putnam.jpg
+- photos/1960-davis-putnam-dpll_sat-search.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg
+- local_image_path: photos/1960-davis-putnam-dpll_hilary-putnam.jpg
 - title: Hilary Putnam 肖像
 - caption: Hilary Putnam 肖像
 - description: Wikimedia Commons 收录的 Hilary Putnam 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。
@@ -172,7 +172,7 @@ imageMeta:
 - copyright_or_license: Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5；Wikimedia VRT 已记录授权。
 - usage: 人物肖像
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg
+- local_image_path: photos/1960-davis-putnam-dpll_sat-search.svg
 - title: Davis-Putnam 与 DPLL SAT 搜索
 - caption: Davis-Putnam 与 DPLL SAT 搜索示意图
 - description: 原创本地解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。

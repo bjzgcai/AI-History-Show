@@ -137,12 +137,12 @@ BenchCouncil 将《Proving theorems by pattern recognition I》列为 173 次引
 
 images:
 
-- resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg
-- resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg
+- photos/1958-wangs-algorithm_hao-wang.jpg
+- photos/1958-wangs-algorithm_pattern-proof.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg
+- local_image_path: photos/1958-wangs-algorithm_hao-wang.jpg
 - title: 王浩肖像
 - caption: 王浩肖像
 - description: 王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。
@@ -152,7 +152,7 @@ imageMeta:
 - copyright_or_license: Historical Photograph Collection preview；页面列出 creator 与 photo credit 为 unknown；未明确复用权利。
 - usage: 人物肖像
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg
+- local_image_path: photos/1958-wangs-algorithm_pattern-proof.svg
 - title: 王氏算法模式证明
 - caption: 王氏算法模式证明示意图
 - description: 原创本地解释图，展示公式规范化、规则匹配、证明归约与分支闭合。

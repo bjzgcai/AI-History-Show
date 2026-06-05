@@ -153,12 +153,12 @@ Today experts usually evaluate Logic Theorist as a founding symbolic AI system. 
 
 images:
 
-- resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg
-- resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg
+- photos/1956-logic-theorist_herbert-simon.jpg
+- photos/1956-logic-theorist_proof-search.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg
+- local_image_path: photos/1956-logic-theorist_herbert-simon.jpg
 - title: Herbert A. Simon portrait
 - caption: Herbert A. Simon portrait
 - description: Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators.
@@ -168,7 +168,7 @@ imageMeta:
 - copyright_or_license: CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.
 - usage: Portrait
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg
+- local_image_path: photos/1956-logic-theorist_proof-search.svg
 - title: Logic Theorist proof search
 - caption: Logic Theorist proof search diagram
 - description: Original local explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain.
