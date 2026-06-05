@@ -111,9 +111,9 @@ module.exports = {
     type: "person",
     status: "ready",
     wikipediaTitle: "Jürgen_Schmidhuber",
-    avatar: "resources/images/figures/historical/juergen-schmidhuber-1996.png",
-    avatarStyle: "transform: scale(1.16); transform-origin: 50% 40%;",
-    note: "改用作者官网 1996 年照片，时间更接近 1997 年 LSTM 论文。"
+    avatar: "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+    avatarStyle: "transform: scale(1.08); transform-origin: 50% 42%;",
+    note: "改用 LSTM 章节的大图，避免旧头像在圆形卡片中过度裁切。"
   },
   "Marvin Minsky": {
     type: "person",
