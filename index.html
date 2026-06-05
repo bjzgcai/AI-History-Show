@@ -6107,6 +6107,239 @@
             ]);
         }
 
+        function buildResolutionDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Resolution proof sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">refutation by clauses</text>
+                    <rect x="42" y="60" width="142" height="44" rx="8" fill="#111827" stroke="#93c5fd"/>
+                    <text x="113" y="88" fill="#e5e7eb" text-anchor="middle" font-size="15">P(x) or Q(x)</text>
+                    <rect x="42" y="138" width="142" height="44" rx="8" fill="#111827" stroke="#93c5fd"/>
+                    <text x="113" y="166" fill="#e5e7eb" text-anchor="middle" font-size="15">not Q(a)</text>
+                    <rect x="260" y="72" width="164" height="44" rx="8" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="342" y="100" fill="#fde68a" text-anchor="middle" font-size="15">unify x := a</text>
+                    <rect x="260" y="156" width="164" height="44" rx="8" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="342" y="184" fill="#d1fae5" text-anchor="middle" font-size="15">P(a)</text>
+                    <circle cx="464" cy="178" r="22" fill="#7f1d1d" stroke="#fca5a5" stroke-width="3"/>
+                    <text x="464" y="184" fill="#fee2e2" text-anchor="middle" font-size="18">empty</text>
+                    <path d="M184 82 C228 82 222 94 260 94 M184 160 C228 160 222 94 260 94 M342 116 V156 M424 178 H442" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <text x="46" y="222" fill="#94a3b8" font-size="13">one inference rule drives proof search</text>
+                </svg>
+            `, [
+                [uiText('proof move', '证明动作'), uiText('Complementary literals disappear after unification, leaving a smaller clause.', '合一后互补文字被消去，留下更小的子句。')],
+                [uiText('interaction', '互动点'), uiText('A clause stack can animate until the empty clause appears.', '可把子句栈做成动画，直到空子句出现。')]
+            ]);
+        }
+
+        function buildPrologDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="PROLOG query proof tree">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">query as proof search</text>
+                    <rect x="40" y="60" width="172" height="132" rx="10" fill="#111827" stroke="#64748b"/>
+                    <text x="58" y="86" fill="#bfdbfe" font-size="14">parent(ann,bob).</text>
+                    <text x="58" y="112" fill="#bfdbfe" font-size="14">parent(bob,cy).</text>
+                    <text x="58" y="142" fill="#fde68a" font-size="14">ancestor(X,Y) :-</text>
+                    <text x="82" y="166" fill="#fde68a" font-size="14">parent(X,Z), ancestor(Z,Y).</text>
+                    <rect x="278" y="58" width="170" height="44" rx="8" fill="#172554" stroke="#93c5fd"/>
+                    <text x="363" y="86" fill="#bfdbfe" text-anchor="middle" font-size="15">?- ancestor(ann, cy)</text>
+                    <circle cx="362" cy="144" r="26" fill="#0f766e" stroke="#99f6e4" stroke-width="3"/>
+                    <text x="362" y="150" fill="#ccfbf1" text-anchor="middle" font-size="16">prove</text>
+                    <rect x="304" y="188" width="116" height="36" rx="8" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="362" y="211" fill="#d1fae5" text-anchor="middle" font-size="16">yes</text>
+                    <path d="M212 126 C250 126 246 80 278 80 M362 102 V118 M362 170 V188" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <path d="M334 140 H286 M390 140 H438" stroke="#f59e0b" stroke-width="3" stroke-dasharray="7 7"/>
+                </svg>
+            `, [
+                [uiText('language cue', '语言线索'), uiText('Facts and rules become a search tree, not a conventional imperative program.', '事实与规则变成搜索树，而不是常规命令式程序。')],
+                [uiText('interaction', '互动点'), uiText('Step through backtracking to show why a query succeeds or fails.', '逐步展示回溯，解释查询为什么成功或失败。')]
+            ]);
+        }
+
+        function buildElizaDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="ELIZA keyword substitution dialog">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">scripted reflection</text>
+                    <rect x="44" y="62" width="186" height="54" rx="10" fill="#172554" stroke="#93c5fd"/>
+                    <text x="62" y="91" fill="#bfdbfe" font-size="15">USER: I feel worried</text>
+                    <rect x="270" y="54" width="146" height="44" rx="8" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="343" y="82" fill="#fde68a" text-anchor="middle" font-size="15">keyword: FEEL</text>
+                    <rect x="270" y="122" width="166" height="48" rx="8" fill="#111827" stroke="#94a3b8"/>
+                    <text x="353" y="151" fill="#e5e7eb" text-anchor="middle" font-size="15">decomposition rule</text>
+                    <rect x="64" y="184" width="360" height="38" rx="10" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="244" y="209" fill="#d1fae5" text-anchor="middle" font-size="15">ELIZA: Why do you feel worried?</text>
+                    <path d="M230 88 H270 M343 98 V122 M270 146 C220 146 200 184 164 184" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <text x="44" y="146" fill="#94a3b8" font-size="13">illusion of understanding from pattern rules</text>
+                </svg>
+            `, [
+                [uiText('artifact cue', '作品线索'), uiText('The visual follows the DOCTOR script: keyword match, decomposition, reassembly.', '视觉对应 DOCTOR 脚本：关键词匹配、分解、重组。')],
+                [uiText('interaction', '互动点'), uiText('Typing a sentence can reveal which rule produced the reply.', '输入一句话即可显示是哪条规则生成了回复。')]
+            ]);
+        }
+
+        function buildHopfieldDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Hopfield attractor memory">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">attractor memory</text>
+                    <g transform="translate(48 58)">
+                        ${[0,1,2,3,4].map((r) => [0,1,2,3,4].map((c) => `<rect x="${c * 24}" y="${r * 24}" width="20" height="20" rx="3" fill="${(r+c)%3===0 ? '#f59e0b' : '#111827'}" stroke="#64748b"/>`).join('')).join('')}
+                        <text x="60" y="146" fill="#e5e7eb" text-anchor="middle" font-size="13">noisy cue</text>
+                    </g>
+                    <path d="M190 126 H250" stroke="#f8fafc" stroke-width="4"/>
+                    <path d="M244 118 L258 126 L244 134" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <path d="M292 198 C330 82 362 214 404 106 C438 20 468 160 488 78" fill="none" stroke="#60a5fa" stroke-width="4"/>
+                    <circle cx="404" cy="106" r="14" fill="#34d399"/>
+                    <text x="334" y="66" fill="#f68900" font-size="14">energy basin</text>
+                    <g transform="translate(294 120)">
+                        ${[0,1,2,3].map((r) => [0,1,2,3].map((c) => `<rect x="${c * 18}" y="${r * 18}" width="15" height="15" rx="2" fill="${r===c || r+c===3 ? '#34d399' : '#111827'}" stroke="#64748b"/>`).join('')).join('')}
+                    </g>
+                </svg>
+            `, [
+                [uiText('memory cue', '记忆线索'), uiText('A noisy pattern relaxes downhill into a stored attractor state.', '带噪图案沿能量下降，收敛到已存储的吸引子状态。')],
+                [uiText('interaction', '互动点'), uiText('Flip cells to show whether the memory is recovered or trapped.', '翻转格子，展示记忆能否恢复或被局部状态困住。')]
+            ]);
+        }
+
+        function buildDropoutDemo() {
+            const edges = [[84,70,220,54],[84,70,220,118],[84,126,220,118],[84,126,220,182],[84,182,220,54],[84,182,220,182],[220,54,360,86],[220,118,360,86],[220,182,360,156]];
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Dropout random mask network">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">train with missing units</text>
+                    ${edges.map(([x1,y1,x2,y2]) => `<path d="M${x1} ${y1} L${x2} ${y2}" stroke="#64748b" stroke-width="2"/>`).join('')}
+                    ${[[84,70],[84,126],[84,182],[220,54],[220,118],[220,182],[360,86],[360,156]].map(([x,y], i) => `<circle cx="${x}" cy="${y}" r="18" fill="${[4,5].includes(i) ? '#1f2937' : '#1d4ed8'}" stroke="${[4,5].includes(i) ? '#ef4444' : '#93c5fd'}" stroke-width="3"/><text x="${x}" y="${y+5}" fill="#e5e7eb" text-anchor="middle" font-size="13">${[4,5].includes(i) ? 'off' : 'on'}</text>`).join('')}
+                    <rect x="410" y="54" width="66" height="112" rx="10" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="443" y="90" fill="#fde68a" text-anchor="middle" font-size="13">many</text>
+                    <text x="443" y="113" fill="#fde68a" text-anchor="middle" font-size="13">thin</text>
+                    <text x="443" y="136" fill="#fde68a" text-anchor="middle" font-size="13">nets</text>
+                    <path d="M378 122 H410" stroke="#f8fafc" stroke-width="3"/>
+                </svg>
+            `, [
+                [uiText('regularizer cue', '正则线索'), uiText('Randomly removed hidden units make co-adaptation harder during training.', '训练时随机移除隐藏单元，降低共同适应。')],
+                [uiText('interaction', '互动点'), uiText('A mask toggle can compare train-time thinning with test-time averaging.', '遮罩开关可对比训练时变薄与测试时平均化。')]
+            ]);
+        }
+
+        function buildYoloDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="YOLO single pass detector">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">single pass detection</text>
+                    <rect x="44" y="58" width="154" height="154" rx="8" fill="#111827" stroke="#64748b"/>
+                    ${[1,2,3].map((n) => `<path d="M${44+n*38.5} 58 V212 M44 ${58+n*38.5} H198" stroke="#334155" stroke-width="2"/>`).join('')}
+                    <rect x="72" y="86" width="54" height="48" fill="none" stroke="#34d399" stroke-width="4"/>
+                    <rect x="124" y="132" width="44" height="54" fill="none" stroke="#f59e0b" stroke-width="4"/>
+                    <path d="M198 135 H268" stroke="#f8fafc" stroke-width="4"/>
+                    <rect x="268" y="74" width="120" height="112" rx="10" fill="#172554" stroke="#93c5fd"/>
+                    <text x="328" y="116" fill="#bfdbfe" text-anchor="middle" font-size="15">CNN</text>
+                    <text x="328" y="140" fill="#bfdbfe" text-anchor="middle" font-size="13">S x S grid</text>
+                    <rect x="420" y="64" width="58" height="42" rx="8" fill="#064e3b" stroke="#6ee7b7"/>
+                    <rect x="420" y="128" width="58" height="42" rx="8" fill="#7c2d12" stroke="#fed7aa"/>
+                    <text x="449" y="90" fill="#d1fae5" text-anchor="middle" font-size="13">box</text>
+                    <text x="449" y="154" fill="#ffedd5" text-anchor="middle" font-size="13">class</text>
+                    <path d="M388 130 H420" stroke="#f8fafc" stroke-width="4"/>
+                </svg>
+            `, [
+                [uiText('detector cue', '检测线索'), uiText('YOLO treats detection as one dense regression problem over grid cells.', 'YOLO 把检测视为网格单元上的一次密集回归问题。')],
+                [uiText('interaction', '互动点'), uiText('Hovering a cell can reveal its boxes, class scores, and confidence.', '悬停网格可显示对应框、类别分数与置信度。')]
+            ]);
+        }
+
+        function buildWord2VecDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Word2Vec vector analogy">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">words as vector geometry</text>
+                    <rect x="44" y="66" width="170" height="116" rx="10" fill="#111827" stroke="#64748b"/>
+                    <text x="70" y="96" fill="#bfdbfe" font-size="14">context: the __ sat</text>
+                    <circle cx="96" cy="132" r="16" fill="#1d4ed8"/>
+                    <circle cx="144" cy="132" r="16" fill="#0f766e"/>
+                    <circle cx="176" cy="132" r="16" fill="#7c2d12"/>
+                    <text x="129" y="168" fill="#e5e7eb" text-anchor="middle" font-size="13">skip-gram window</text>
+                    <path d="M236 194 H462 M260 206 V62" stroke="#64748b" stroke-width="2"/>
+                    <circle cx="308" cy="136" r="8" fill="#60a5fa"/>
+                    <text x="308" y="122" fill="#dbeafe" text-anchor="middle" font-size="13">king</text>
+                    <circle cx="386" cy="86" r="8" fill="#34d399"/>
+                    <text x="386" y="72" fill="#d1fae5" text-anchor="middle" font-size="13">queen</text>
+                    <circle cx="286" cy="172" r="8" fill="#f59e0b"/>
+                    <text x="286" y="158" fill="#fde68a" text-anchor="middle" font-size="13">man</text>
+                    <circle cx="364" cy="122" r="8" fill="#f472b6"/>
+                    <text x="364" y="108" fill="#fce7f3" text-anchor="middle" font-size="13">woman</text>
+                    <path d="M308 136 L386 86 M286 172 L364 122" stroke="#f8fafc" stroke-width="3" stroke-dasharray="8 7"/>
+                </svg>
+            `, [
+                [uiText('embedding cue', '嵌入线索'), uiText('The training task is local prediction; the exhibit shows the global geometry it creates.', '训练任务是局部预测，展项展示它形成的全局几何。')],
+                [uiText('interaction', '互动点'), uiText('A vector handle can show analogy offsets between word pairs.', '向量手柄可展示词对之间的类比偏移。')]
+            ]);
+        }
+
+        function buildImageNetDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="ImageNet hierarchy and benchmark">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">dataset scale to benchmark race</text>
+                    <circle cx="94" cy="72" r="22" fill="#0f766e"/>
+                    <text x="94" y="78" fill="#ccfbf1" text-anchor="middle" font-size="13">entity</text>
+                    ${[[54,138,'dog'],[94,138,'cat'],[134,138,'car']].map(([x,y,label]) => `<circle cx="${x}" cy="${y}" r="19" fill="#1d4ed8"/><text x="${x}" y="${y+5}" fill="#dbeafe" text-anchor="middle" font-size="12">${label}</text>`).join('')}
+                    <path d="M94 94 L54 119 M94 94 V119 M94 94 L134 119" stroke="#f8fafc" stroke-width="3"/>
+                    <rect x="224" y="58" width="92" height="142" rx="10" fill="#111827" stroke="#64748b"/>
+                    ${[0,1,2,3,4].map((r) => [0,1,2].map((c) => `<rect x="${238+c*24}" y="${76+r*22}" width="18" height="16" rx="3" fill="${['#34d399','#60a5fa','#f59e0b'][c]}"/>`).join('')).join('')}
+                    <text x="270" y="188" fill="#e5e7eb" text-anchor="middle" font-size="13">labeled images</text>
+                    <rect x="374" y="76" width="34" height="116" fill="#ef4444"/>
+                    <rect x="418" y="108" width="34" height="84" fill="#f59e0b"/>
+                    <rect x="462" y="142" width="34" height="50" fill="#34d399"/>
+                    <path d="M354 192 H504" stroke="#94a3b8" stroke-width="2"/>
+                    <text x="424" y="62" fill="#f68900" text-anchor="middle" font-size="14">ILSVRC error</text>
+                    <path d="M316 129 H360" stroke="#f8fafc" stroke-width="4"/>
+                </svg>
+            `, [
+                [uiText('dataset cue', '数据集线索'), uiText('The page connects WordNet hierarchy, labeled images, and leaderboard pressure.', '页面把 WordNet 层级、标注图片与排行榜压力连在一起。')],
+                [uiText('interaction', '互动点'), uiText('Drilling into a class can reveal sample diversity and benchmark years.', '进入某一类别可展示样本多样性与历年基准。')]
+            ]);
+        }
+
+        function buildDqnDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="DQN replay and Q control">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">pixels to control</text>
+                    <rect x="44" y="64" width="92" height="92" rx="8" fill="#111827" stroke="#64748b"/>
+                    ${[0,1,2].map((r) => [0,1,2].map((c) => `<rect x="${58+c*24}" y="${78+r*24}" width="18" height="18" rx="3" fill="${r===2 && c===1 ? '#f59e0b' : '#1d4ed8'}"/>`).join('')).join('')}
+                    <rect x="190" y="58" width="116" height="54" rx="10" fill="#172554" stroke="#93c5fd"/>
+                    <text x="248" y="91" fill="#bfdbfe" text-anchor="middle" font-size="15">Q network</text>
+                    <rect x="190" y="146" width="116" height="54" rx="10" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="248" y="179" fill="#fde68a" text-anchor="middle" font-size="15">replay buffer</text>
+                    <rect x="366" y="66" width="94" height="106" rx="10" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="413" y="100" fill="#d1fae5" text-anchor="middle" font-size="14">argmax</text>
+                    <text x="413" y="124" fill="#d1fae5" text-anchor="middle" font-size="14">Q(s,a)</text>
+                    <text x="413" y="148" fill="#d1fae5" text-anchor="middle" font-size="14">action</text>
+                    <path d="M136 110 H190 M306 86 H366 M248 112 V146" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <path d="M366 154 C332 220 176 220 136 154" stroke="#60a5fa" stroke-width="3" fill="none" stroke-dasharray="7 8"/>
+                </svg>
+            `, [
+                [uiText('agent cue', '智能体线索'), uiText('DQN joins convolutional perception, Q learning, replay, and control in one loop.', 'DQN 把卷积感知、Q 学习、经验回放与控制接成一个闭环。')],
+                [uiText('interaction', '互动点'), uiText('Switching games can show the same Q loop learning different policies.', '切换游戏可展示同一 Q 循环学习不同策略。')]
+            ]);
+        }
+
+        function buildLdaDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="LDA topic mixture">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">documents as topic mixtures</text>
+                    <path d="M92 188 L198 64 L286 188 Z" fill="#111827" stroke="#94a3b8" stroke-width="3"/>
+                    <circle cx="154" cy="142" r="11" fill="#34d399"/>
+                    <circle cx="206" cy="112" r="11" fill="#60a5fa"/>
+                    <circle cx="216" cy="162" r="11" fill="#f59e0b"/>
+                    <text x="92" y="212" fill="#d1fae5" text-anchor="middle" font-size="13">topic A</text>
+                    <text x="198" y="54" fill="#dbeafe" text-anchor="middle" font-size="13">topic B</text>
+                    <text x="286" y="212" fill="#fde68a" text-anchor="middle" font-size="13">topic C</text>
+                    <rect x="348" y="64" width="124" height="128" rx="12" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="410" y="92" fill="#fde68a" text-anchor="middle" font-size="14">document</text>
+                    <rect x="370" y="112" width="76" height="12" rx="6" fill="#34d399"/>
+                    <rect x="370" y="136" width="52" height="12" rx="6" fill="#60a5fa"/>
+                    <rect x="370" y="160" width="92" height="12" rx="6" fill="#f59e0b"/>
+                    <path d="M286 138 C322 138 322 128 348 128" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <text x="334" y="218" fill="#94a3b8" font-size="13">latent variables explain word counts</text>
+                </svg>
+            `, [
+                [uiText('model cue', '模型线索'), uiText('The simplex makes visible that every document is a mixture of latent topics.', '单纯形让“每篇文档是潜在主题混合”变得可见。')],
+                [uiText('interaction', '互动点'), uiText('Dragging a document point can update topic-word bars live.', '拖动文档点可实时更新主题词条。')]
+            ]);
+        }
+
         function buildGenericDemo(rawMilestone) {
             const artifact = getAchievementField(rawMilestone, 'artifact', '');
             const demo = getAchievementField(rawMilestone, 'demo', '');
@@ -6158,7 +6391,17 @@
                 cart: buildTreeDemo,
                 annealing: buildAnnealingDemo,
                 lasso: buildLassoDemo,
-                inception: buildInceptionDemo
+                inception: buildInceptionDemo,
+                resolution: buildResolutionDemo,
+                prolog: buildPrologDemo,
+                eliza: buildElizaDemo,
+                hopfield: buildHopfieldDemo,
+                dropout: buildDropoutDemo,
+                yolo: buildYoloDemo,
+                word2vec: buildWord2VecDemo,
+                imagenet: buildImageNetDemo,
+                dqn: buildDqnDemo,
+                lda: buildLdaDemo
             };
             const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
 

@@ -107,7 +107,17 @@ module.exports = {
         "1984-cart",
         "1983-simulated-annealing",
         "1996-lasso",
-        "2015-googlenet-inception"
+        "2015-googlenet-inception",
+        "1965-resolution-method",
+        "1973-prolog",
+        "1966-eliza",
+        "1982-hopfield-network",
+        "2014-dropout",
+        "2016-yolo",
+        "2013-word2vec",
+        "2009-imagenet",
+        "2013-dqn",
+        "2003-lda"
       ]
     }
   ]
