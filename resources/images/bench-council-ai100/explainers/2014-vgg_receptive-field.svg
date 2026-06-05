@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">3x3 receptive-field build-up</title>
+  <desc id="desc">3x3 感受野累积</desc>
+  <rect width="1200" height="720" fill="#101827"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <text x="90" y="120" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">3x3 receptive-field build-up</text>
+  <text x="90" y="164" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">3x3 感受野累积</text>
+  <rect x="230" y="210" width="150" height="150" rx="16" fill="none" stroke="#94a3b8" stroke-width="8"/><text x="305" y="402" fill="#e5e7eb" text-anchor="middle" font-size="28">3x3</text><rect x="410" y="230" width="150" height="150" rx="16" fill="none" stroke="#38bdf8" stroke-width="8"/><text x="485" y="422" fill="#e5e7eb" text-anchor="middle" font-size="28">5x5</text><rect x="590" y="250" width="150" height="150" rx="16" fill="none" stroke="#f59e0b" stroke-width="8"/><text x="665" y="442" fill="#e5e7eb" text-anchor="middle" font-size="28">7x7</text><path d="M378 285 H410 M558 320 H590" stroke="#f8fafc" stroke-width="8"/>
+  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Filters · local redraw from source material</text>
+</svg>
