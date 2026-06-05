@@ -174,6 +174,336 @@ module.exports = {
                 zh: 'DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。'
             },
             ['sat', 'search', 'theorem-proving']
+        ),
+        '2014-adam': quiz(
+            {
+                "en": "What made Adam especially convenient for deep-network training?",
+                "zh": "Adam 为什么特别适合深度网络训练？"
+            },
+            [
+                {
+                    "en": "It adapts parameter updates from first and second gradient moments",
+                    "zh": "它根据梯度的一阶和二阶矩自适应调整参数更新"
+                },
+                {
+                    "en": "It removes gradients from learning entirely",
+                    "zh": "它完全移除了梯度"
+                },
+                {
+                    "en": "It requires a hand-written rule for every weight",
+                    "zh": "它要求为每个权重手写规则"
+                },
+                {
+                    "en": "It only works on decision trees",
+                    "zh": "它只适用于决策树"
+                }
+            ],
+            0,
+            {
+                "en": "Adam combines momentum-like gradient averages with squared-gradient scaling, reducing the amount of manual learning-rate tuning needed in many settings.",
+                "zh": "Adam 将类似动量的梯度平均与梯度平方缩放结合起来，在许多场景中减少手工学习率调参。"
+            },
+            [
+                "optimization",
+                "deep-learning"
+            ]
+        ),
+        '2014-vgg': quiz(
+            {
+                "en": "What architectural habit is VGG best remembered for?",
+                "zh": "VGG 最著名的架构习惯是什么？"
+            },
+            [
+                {
+                    "en": "Stacking many small 3x3 convolutional layers",
+                    "zh": "堆叠大量小型 3x3 卷积层"
+                },
+                {
+                    "en": "Using no convolution at all",
+                    "zh": "完全不使用卷积"
+                },
+                {
+                    "en": "Replacing images with text tokens only",
+                    "zh": "只把图像换成文本 token"
+                },
+                {
+                    "en": "Training a single decision stump",
+                    "zh": "训练单个决策树桩"
+                }
+            ],
+            0,
+            {
+                "en": "VGG made a very regular stack of small convolutions a strong and reusable computer-vision architecture.",
+                "zh": "VGG 把小卷积核的规则堆叠做成了强大且可复用的视觉架构。"
+            },
+            [
+                "vision",
+                "cnn"
+            ]
+        ),
+        '1975-genetic-algorithm': quiz(
+            {
+                "en": "What does a genetic algorithm evolve over time?",
+                "zh": "遗传算法随时间演化的是什么？"
+            },
+            [
+                {
+                    "en": "A population of candidate solutions",
+                    "zh": "一组候选解种群"
+                },
+                {
+                    "en": "Only a single fixed answer",
+                    "zh": "只有一个固定答案"
+                },
+                {
+                    "en": "A handwritten theorem proof only",
+                    "zh": "仅一个手写定理证明"
+                },
+                {
+                    "en": "The monitor resolution",
+                    "zh": "显示器分辨率"
+                }
+            ],
+            0,
+            {
+                "en": "Genetic algorithms maintain many candidates, select fitter ones, recombine them, and mutate them to continue search.",
+                "zh": "遗传算法维护多个候选解，选择表现更好的个体，进行重组和变异来继续搜索。"
+            },
+            [
+                "search",
+                "optimization"
+            ]
+        ),
+        '2015-u-net': quiz(
+            {
+                "en": "Why are skip connections central to U-Net?",
+                "zh": "为什么跳跃连接是 U-Net 的核心？"
+            },
+            [
+                {
+                    "en": "They carry fine localization detail from encoder to decoder",
+                    "zh": "它们把精细定位信息从编码器传给解码器"
+                },
+                {
+                    "en": "They delete the decoder entirely",
+                    "zh": "它们完全删除了解码器"
+                },
+                {
+                    "en": "They make every pixel the same class",
+                    "zh": "它们让每个像素都是同一类"
+                },
+                {
+                    "en": "They replace images with audio",
+                    "zh": "它们用音频替代图像"
+                }
+            ],
+            0,
+            {
+                "en": "U-Net’s skip connections combine high-level context with early-layer spatial detail, which is crucial for segmentation boundaries.",
+                "zh": "U-Net 的跳跃连接把高级上下文与早期空间细节结合起来，这对分割边界很关键。"
+            },
+            [
+                "vision",
+                "segmentation"
+            ]
+        ),
+        '2015-faster-r-cnn': quiz(
+            {
+                "en": "What bottleneck did Faster R-CNN address?",
+                "zh": "Faster R-CNN 主要解决了什么瓶颈？"
+            },
+            [
+                {
+                    "en": "External region proposal generation",
+                    "zh": "外部候选区域生成"
+                },
+                {
+                    "en": "The need for all images to be grayscale",
+                    "zh": "所有图像都必须是灰度图"
+                },
+                {
+                    "en": "The absence of any neural network",
+                    "zh": "完全没有神经网络"
+                },
+                {
+                    "en": "Sorting labels alphabetically",
+                    "zh": "按字母顺序排序标签"
+                }
+            ],
+            0,
+            {
+                "en": "The Region Proposal Network learns proposals from shared convolutional features, removing a major external bottleneck.",
+                "zh": "区域建议网络从共享卷积特征中学习候选框，移除了一个主要外部瓶颈。"
+            },
+            [
+                "vision",
+                "detection"
+            ]
+        ),
+        '1992-svm': quiz(
+            {
+                "en": "What boundary does an SVM prefer?",
+                "zh": "SVM 偏好什么样的分类边界？"
+            },
+            [
+                {
+                    "en": "A boundary with the largest margin to nearby examples",
+                    "zh": "与附近样本间隔最大的边界"
+                },
+                {
+                    "en": "A boundary chosen by image brightness",
+                    "zh": "按图像亮度选择的边界"
+                },
+                {
+                    "en": "A boundary that ignores all labels",
+                    "zh": "忽略所有标签的边界"
+                },
+                {
+                    "en": "A random line with no objective",
+                    "zh": "没有目标函数的随机直线"
+                }
+            ],
+            0,
+            {
+                "en": "The maximum-margin principle is the core of SVM classification and links the method to statistical learning theory.",
+                "zh": "最大间隔原则是 SVM 分类的核心，也把它与统计学习理论连接起来。"
+            },
+            [
+                "machine-learning",
+                "classification"
+            ]
+        ),
+        '1984-cart': quiz(
+            {
+                "en": "What does CART use pruning for?",
+                "zh": "CART 为什么使用剪枝？"
+            },
+            [
+                {
+                    "en": "To reduce overfitting after growing a tree",
+                    "zh": "在生成树后减少过拟合"
+                },
+                {
+                    "en": "To make every split random forever",
+                    "zh": "让所有划分永远随机"
+                },
+                {
+                    "en": "To remove all features from data",
+                    "zh": "从数据中移除所有特征"
+                },
+                {
+                    "en": "To turn trees into images only",
+                    "zh": "把树只变成图像"
+                }
+            ],
+            0,
+            {
+                "en": "CART can grow a large tree and then prune it back to balance accuracy and simplicity.",
+                "zh": "CART 可以先生成较大的树，再通过剪枝平衡准确性和简洁性。"
+            },
+            [
+                "decision-trees",
+                "machine-learning"
+            ]
+        ),
+        '1983-simulated-annealing': quiz(
+            {
+                "en": "Why can simulated annealing accept a worse move?",
+                "zh": "模拟退火为什么会接受较差移动？"
+            },
+            [
+                {
+                    "en": "To escape local optima while temperature is still high",
+                    "zh": "在温度较高时逃离局部最优"
+                },
+                {
+                    "en": "Because it never evaluates solutions",
+                    "zh": "因为它从不评估解"
+                },
+                {
+                    "en": "To force every answer to be wrong",
+                    "zh": "为了强制所有答案错误"
+                },
+                {
+                    "en": "Because it only sorts text",
+                    "zh": "因为它只排序文本"
+                }
+            ],
+            0,
+            {
+                "en": "Early exploration allows uphill moves with some probability; cooling gradually makes the search more selective.",
+                "zh": "早期探索允许以一定概率进行上坡移动；降温会逐渐让搜索更挑剔。"
+            },
+            [
+                "optimization",
+                "search"
+            ]
+        ),
+        '1996-lasso': quiz(
+            {
+                "en": "What does the L1 penalty in lasso often do to coefficients?",
+                "zh": "Lasso 中的 L1 惩罚通常会让系数发生什么？"
+            },
+            [
+                {
+                    "en": "It drives some coefficients exactly to zero",
+                    "zh": "它会把部分系数精确压到零"
+                },
+                {
+                    "en": "It makes every coefficient infinite",
+                    "zh": "它让所有系数变成无穷大"
+                },
+                {
+                    "en": "It removes the training data",
+                    "zh": "它移除训练数据"
+                },
+                {
+                    "en": "It converts regression into video playback",
+                    "zh": "它把回归变成视频播放"
+                }
+            ],
+            0,
+            {
+                "en": "The L1 penalty encourages sparsity, so lasso performs variable selection while fitting a model.",
+                "zh": "L1 惩罚鼓励稀疏性，因此 Lasso 在拟合模型时同时进行变量选择。"
+            },
+            [
+                "statistics",
+                "regularization"
+            ]
+        ),
+        '2015-googlenet-inception': quiz(
+            {
+                "en": "What is the key idea of an Inception module?",
+                "zh": "Inception 模块的关键思想是什么？"
+            },
+            [
+                {
+                    "en": "Run multiple filter paths in parallel and combine them",
+                    "zh": "并行运行多个滤波路径并合并输出"
+                },
+                {
+                    "en": "Use only a single pixel as input",
+                    "zh": "只使用一个像素作为输入"
+                },
+                {
+                    "en": "Ban convolution from the model",
+                    "zh": "禁止模型使用卷积"
+                },
+                {
+                    "en": "Make every layer a decision tree",
+                    "zh": "把每一层都变成决策树"
+                }
+            ],
+            0,
+            {
+                "en": "Inception modules combine parallel convolution and pooling paths, often with 1x1 bottlenecks for efficiency.",
+                "zh": "Inception 模块结合并行卷积和池化路径，并常用 1x1 瓶颈层提高效率。"
+            },
+            [
+                "vision",
+                "cnn"
+            ]
         )
     }
 };

@@ -2384,6 +2384,52 @@
             font-weight: 700;
         }
 
+        .bench-paper-demo {
+            min-height: 100%;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 180px;
+            gap: 14px;
+            align-items: stretch;
+        }
+
+        .bench-paper-svg {
+            width: 100%;
+            height: 100%;
+            min-height: 190px;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background:
+                radial-gradient(circle at 16% 12%, rgba(246, 137, 0, 0.12), transparent 30%),
+                rgba(255, 255, 255, 0.028);
+        }
+
+        .bench-paper-notes {
+            min-width: 0;
+            display: grid;
+            align-content: center;
+            gap: 10px;
+        }
+
+        .bench-paper-note {
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.034);
+            padding: 10px;
+            color: rgba(244, 239, 229, 0.86);
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.28;
+        }
+
+        .bench-paper-note strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--accent);
+            font-size: 10px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
         .bench-source-list {
             display: grid;
             align-content: start;
@@ -2960,7 +3006,8 @@
             }
 
             .bench-transcript-grid,
-            .bench-go-layout {
+            .bench-go-layout,
+            .bench-paper-demo {
                 grid-template-columns: 1fr;
             }
 
@@ -3447,11 +3494,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260602-popquiz-modal"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260604-ai100-three-images"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260602-popquiz-modal" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260604-ai100-three-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -4157,6 +4204,10 @@
             });
 
             const configuredModules = getAchievementVisualModules(vm.raw);
+            if (configuredModules.length > 0 && photos.length >= 2) {
+                return [...photos.slice(0, 2), configuredModules[0]].slice(0, 3);
+            }
+
             return [...photos, ...configuredModules].slice(0, 3);
         }
 
@@ -5719,6 +5770,9 @@
         }
 
         function getAchievementRelatedItems(rawMilestone) {
+            const demoSteps = getAchievementDemoSteps(rawMilestone);
+            if (demoSteps.length > 0) return demoSteps.slice(0, 3);
+
             const achievement = rawMilestone && rawMilestone.achievement ? rawMilestone.achievement : {};
             const relatedAchievements = Array.isArray(achievement.relatedAchievements) ? achievement.relatedAchievements : [];
             const relatedRegions = Array.isArray(achievement.relatedRegions) ? achievement.relatedRegions : [];
@@ -5846,6 +5900,220 @@
             `;
         }
 
+        function buildPaperDemo(svg, notes) {
+            const noteHtml = notes.map(([label, body]) => `
+                <div class="bench-paper-note">
+                    <strong>${escapeHtml(label)}</strong>
+                    ${escapeHtml(body)}
+                </div>
+            `).join('');
+            return `
+                <div class="bench-paper-demo">
+                    ${svg}
+                    <div class="bench-paper-notes">${noteHtml}</div>
+                </div>
+            `;
+        }
+
+        function buildAdamDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Adam update sketch">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">Algorithm 1: Adam</text>
+                    <rect x="28" y="62" width="170" height="40" rx="8" fill="#1f2937" stroke="#6ee7b7"/>
+                    <text x="45" y="87" fill="#e5e7eb" font-size="16">g_t = grad f(theta)</text>
+                    <rect x="260" y="48" width="210" height="52" rx="10" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="278" y="72" fill="#fde68a" font-size="15">m_t = beta1 m + (1-beta1)g</text>
+                    <text x="278" y="91" fill="#fde68a" font-size="15">v_t = beta2 v + (1-beta2)g^2</text>
+                    <path d="M198 82 C230 82 228 74 260 74" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <rect x="86" y="150" width="175" height="48" rx="10" fill="#172554" stroke="#93c5fd"/>
+                    <text x="104" y="180" fill="#bfdbfe" font-size="16">bias correction</text>
+                    <rect x="310" y="144" width="150" height="62" rx="12" fill="#064e3b" stroke="#34d399"/>
+                    <text x="335" y="169" fill="#d1fae5" font-size="15">theta update</text>
+                    <text x="330" y="190" fill="#d1fae5" font-size="13">alpha * m / sqrt(v)</text>
+                    <path d="M365 100 C365 122 174 122 174 150" stroke="#f8fafc" stroke-width="3" fill="none" stroke-dasharray="7 8"/>
+                    <path d="M261 174 H310" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Redrawn from the optimizer pseudocode rather than a generic moment diagram.', '按优化器伪代码重画，而不是通用矩图。')],
+                [uiText('interaction', '互动点'), uiText('Expose alpha, beta1, beta2 as tunable controls in future versions.', '后续可把 alpha、beta1、beta2 做成可调控件。')]
+            ]);
+        }
+
+        function buildVggDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="VGG depth table sketch">
+                    <text x="28" y="36" fill="#f68900" font-size="16" font-weight="800">ConvNet configurations</text>
+                    ${[0,1,2,3,4].map((col) => `<rect x="${52 + col * 86}" y="${58 + col * 6}" width="54" height="${128 + col * 8}" rx="8" fill="${col % 2 ? '#1d4ed8' : '#0f766e'}" opacity="0.9"/>`).join('')}
+                    ${[0,1,2,3,4].map((col) => `<text x="${79 + col * 86}" y="220" fill="#e5e7eb" text-anchor="middle" font-size="15">VGG-${11 + col * 2}</text>`).join('')}
+                    <path d="M60 55 H420" stroke="#f8fafc" stroke-width="2" stroke-dasharray="5 8"/>
+                    <text x="440" y="62" fill="#f8fafc" font-size="13">3x3 filters</text>
+                    <text x="440" y="192" fill="#f8fafc" font-size="13">depth</text>
+                    <path d="M458 76 V174" stroke="#f59e0b" stroke-width="4"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Based on the VGG configuration table: same small filters, increasing depth.', '依据 VGG 配置表：小卷积核不变，深度递增。')],
+                [uiText('contrast', '对比点'), uiText('The interface can compare VGG-16 and VGG-19 instead of showing a generic CNN box.', '界面可对比 VGG-16 与 VGG-19，而不是通用 CNN 方块。')]
+            ]);
+        }
+
+        function buildEvolutionDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Genetic algorithm cycle">
+                    <text x="30" y="36" fill="#f68900" font-size="16" font-weight="800">schema / population cycle</text>
+                    ${[0,1,2,3].map((row) => `<g transform="translate(44 ${62 + row * 32})"><rect width="132" height="20" rx="10" fill="#111827" stroke="#94a3b8"/><rect x="${8 + row * 8}" y="4" width="28" height="12" rx="6" fill="#34d399"/><rect x="${52 - row * 4}" y="4" width="22" height="12" rx="6" fill="#f59e0b"/><rect x="${92 + row * 3}" y="4" width="24" height="12" rx="6" fill="#60a5fa"/></g>`).join('')}
+                    <circle cx="330" cy="128" r="72" fill="none" stroke="#f8fafc" stroke-width="3" stroke-dasharray="12 9"/>
+                    <text x="330" y="80" fill="#e5e7eb" text-anchor="middle" font-size="14">select</text>
+                    <text x="405" y="132" fill="#e5e7eb" text-anchor="middle" font-size="14">cross</text>
+                    <text x="330" y="188" fill="#e5e7eb" text-anchor="middle" font-size="14">mutate</text>
+                    <text x="252" y="132" fill="#e5e7eb" text-anchor="middle" font-size="14">score</text>
+                    <path d="M176 126 H250" stroke="#f59e0b" stroke-width="4"/>
+                </svg>
+            `, [
+                [uiText('literature cue', '文献线索'), uiText('Holland’s adaptation frame becomes a population loop, not a one-way flowchart.', 'Holland 的适应性框架被表达为种群循环，而非单向流程图。')],
+                [uiText('interaction', '互动点'), uiText('A slider could alter mutation rate and show diversity collapsing or recovering.', '可用滑杆改变变异率，显示多样性收缩或恢复。')]
+            ]);
+        }
+
+        function buildUnetDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="U-Net architecture sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">U-shaped segmentation network</text>
+                    ${[0,1,2,3].map((i) => `<rect x="${54 + i * 60}" y="${62 + i * 30}" width="46" height="38" rx="6" fill="#0f766e" stroke="#99f6e4"/>`).join('')}
+                    ${[0,1,2,3].map((i) => `<rect x="${326 + i * 42}" y="${152 - i * 30}" width="46" height="38" rx="6" fill="#7c2d12" stroke="#fed7aa"/>`).join('')}
+                    <rect x="244" y="166" width="48" height="44" rx="8" fill="#1e1b4b" stroke="#c4b5fd"/>
+                    ${[0,1,2,3].map((i) => `<path d="M${100 + i * 60} ${82 + i * 30} C260 ${78 + i * 12}, 300 ${78 + i * 12}, ${326 + i * 42} ${172 - i * 30}" stroke="#f8fafc" stroke-width="2" fill="none" stroke-dasharray="6 7"/>`).join('')}
+                    <text x="72" y="224" fill="#e5e7eb" font-size="13">contract</text>
+                    <text x="394" y="224" fill="#e5e7eb" font-size="13">expand</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Mirrors the original U-Net Figure 1: contracting path, bottleneck, expanding path.', '对应 U-Net 原论文图 1：收缩路径、瓶颈、扩张路径。')],
+                [uiText('visual story', '视觉叙事'), uiText('The skip arcs make boundary detail visibly travel across the U.', '跳跃弧线让边界细节跨过 U 形结构变得可见。')]
+            ]);
+        }
+
+        function buildDetectorDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Faster R-CNN RPN sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">Region Proposal Network</text>
+                    <rect x="40" y="62" width="142" height="120" rx="8" fill="#111827" stroke="#64748b"/>
+                    <rect x="70" y="88" width="48" height="42" fill="none" stroke="#34d399" stroke-width="4"/>
+                    <rect x="110" y="116" width="50" height="38" fill="none" stroke="#f59e0b" stroke-width="4"/>
+                    <rect x="230" y="76" width="116" height="86" rx="8" fill="#172554" stroke="#93c5fd"/>
+                    <text x="288" y="112" fill="#bfdbfe" font-size="15" text-anchor="middle">shared conv</text>
+                    <text x="288" y="134" fill="#bfdbfe" font-size="15" text-anchor="middle">features</text>
+                    <rect x="392" y="70" width="86" height="38" rx="6" fill="#064e3b" stroke="#6ee7b7"/>
+                    <rect x="392" y="128" width="86" height="38" rx="6" fill="#7f1d1d" stroke="#fca5a5"/>
+                    <text x="435" y="94" fill="#d1fae5" text-anchor="middle" font-size="14">cls</text>
+                    <text x="435" y="152" fill="#fee2e2" text-anchor="middle" font-size="14">box</text>
+                    <path d="M182 122 H230 M346 120 H392" stroke="#f8fafc" stroke-width="4"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('RPN replaces external proposal code with learned anchors sharing convolutional features.', 'RPN 用共享卷积特征上的学习型 anchors 取代外部候选框代码。')],
+                [uiText('interaction', '互动点'), uiText('Future state: hover anchors to see objectness and box regression separate.', '后续可悬停 anchor 分别看 objectness 与框回归。')]
+            ]);
+        }
+
+        function buildSvmDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="SVM margin sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">optimal margin classifier</text>
+                    <path d="M90 202 L420 60" stroke="#f8fafc" stroke-width="4"/>
+                    <path d="M118 214 L448 72" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+                    <path d="M62 190 L392 48" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+                    ${[[116,158],[150,132],[190,134],[246,100],[302,92]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="8" fill="#34d399"/>`).join('')}
+                    ${[[286,164],[330,138],[356,176],[394,130],[424,154]].map(([x,y])=>`<rect x="${x-8}" y="${y-8}" width="16" height="16" rx="3" fill="#f59e0b"/>`).join('')}
+                    <circle cx="190" cy="134" r="15" fill="none" stroke="#f8fafc" stroke-width="2"/>
+                    <rect x="278" y="156" width="32" height="32" rx="5" fill="none" stroke="#f8fafc" stroke-width="2"/>
+                    <text x="360" y="214" fill="#e5e7eb" font-size="13">support vectors set the margin</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Uses the optimal-margin decision-boundary idea instead of a general classifier icon.', '用最优间隔决策边界，而不是泛化分类器图标。')],
+                [uiText('interaction', '互动点'), uiText('Dragging a support vector would visibly rotate the separating hyperplane.', '拖动支持向量可以让分隔超平面可见地旋转。')]
+            ]);
+        }
+
+        function buildTreeDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="CART pruning sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">right-sized tree</text>
+                    <rect x="48" y="64" width="150" height="130" rx="8" fill="#111827" stroke="#64748b"/>
+                    <path d="M48 118 H198 M122 64 V194" stroke="#94a3b8" stroke-width="2"/>
+                    <circle cx="300" cy="70" r="20" fill="#0f766e"/>
+                    <circle cx="246" cy="138" r="18" fill="#1d4ed8"/>
+                    <circle cx="354" cy="138" r="18" fill="#1d4ed8"/>
+                    <circle cx="220" cy="204" r="16" fill="#f59e0b"/>
+                    <circle cx="272" cy="204" r="16" fill="#f59e0b"/>
+                    <circle cx="354" cy="204" r="16" fill="#f59e0b" opacity="0.38"/>
+                    <path d="M288 88 L256 122 M312 88 L344 122 M240 154 L226 188 M258 154 L268 188 M354 156 V188" stroke="#f8fafc" stroke-width="3"/>
+                    <path d="M340 190 L370 218" stroke="#ef4444" stroke-width="4"/>
+                    <path d="M370 190 L340 218" stroke="#ef4444" stroke-width="4"/>
+                </svg>
+            `, [
+                [uiText('book cue', '专著线索'), uiText('Routledge describes CART as tree-structured rules plus right-sized pruning.', 'Routledge 页面强调 CART 的树结构规则与合适规模剪枝。')],
+                [uiText('interaction', '互动点'), uiText('A split slider can show how overgrown branches are pruned away.', '划分滑杆可展示过度生长的分支如何被剪掉。')]
+            ]);
+        }
+
+        function buildAnnealingDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Simulated annealing energy sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">cooling over an energy landscape</text>
+                    <path d="M42 184 C90 92 128 220 178 132 C232 42 266 214 326 126 C382 52 420 122 474 82" fill="none" stroke="#e5e7eb" stroke-width="4"/>
+                    <circle cx="110" cy="148" r="11" fill="#f59e0b"/>
+                    <circle cx="206" cy="91" r="11" fill="#f59e0b"/>
+                    <circle cx="330" cy="124" r="11" fill="#34d399"/>
+                    <path d="M110 148 C142 94 168 82 206 91" stroke="#f59e0b" stroke-width="3" stroke-dasharray="7 7" fill="none"/>
+                    <path d="M206 91 C238 142 282 156 330 124" stroke="#34d399" stroke-width="3" stroke-dasharray="7 7" fill="none"/>
+                    <path d="M70 216 H450" stroke="#64748b" stroke-width="2"/>
+                    <path d="M70 216 C170 186 300 196 450 220" stroke="#60a5fa" stroke-width="4" fill="none"/>
+                    <text x="362" y="206" fill="#bfdbfe" font-size="13">temperature</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('The Science paper’s physical analogy becomes an energy-landscape search.', 'Science 论文的物理类比被转化为能量地形搜索。')],
+                [uiText('interaction', '互动点'), uiText('Show worse moves accepted early, then rejected as the curve cools.', '展示早期接受较差移动，降温后逐渐拒绝。')]
+            ]);
+        }
+
+        function buildLassoDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Lasso constraint sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">L1 constraint geometry</text>
+                    <path d="M130 126 L210 50 L290 126 L210 202 Z" fill="#0f766e" opacity="0.42" stroke="#5eead4" stroke-width="3"/>
+                    <ellipse cx="252" cy="96" rx="88" ry="44" fill="none" stroke="#f59e0b" stroke-width="3" transform="rotate(-26 252 96)"/>
+                    <ellipse cx="252" cy="96" rx="124" ry="62" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5" transform="rotate(-26 252 96)"/>
+                    <circle cx="210" cy="50" r="8" fill="#f8fafc"/>
+                    <path d="M210 126 H420" stroke="#64748b" stroke-width="2"/>
+                    <path d="M210 126 V32" stroke="#64748b" stroke-width="2"/>
+                    <rect x="366" y="72" width="26" height="120" fill="#1d4ed8"/>
+                    <rect x="402" y="132" width="26" height="60" fill="#1d4ed8" opacity="0.55"/>
+                    <rect x="438" y="190" width="26" height="2" fill="#ef4444"/>
+                    <text x="352" y="214" fill="#e5e7eb" font-size="13">some beta = 0</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Redraws the lasso-vs-ridge estimation picture around the L1 diamond.', '围绕 L1 菱形重画 lasso 与 ridge 的估计图。')],
+                [uiText('interaction', '互动点'), uiText('Move the constraint corner to show coefficients snapping to zero.', '移动约束角点可展示系数如何归零。')]
+            ]);
+        }
+
+        function buildInceptionDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Inception module sketch">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">Inception module</text>
+                    <rect x="54" y="104" width="92" height="42" rx="8" fill="#111827" stroke="#94a3b8"/>
+                    <text x="100" y="130" fill="#e5e7eb" text-anchor="middle" font-size="14">input</text>
+                    ${[[202,52,'1x1','#0f766e'],[202,102,'3x3','#1d4ed8'],[202,152,'5x5','#7c2d12'],[202,202,'pool','#4c1d95']].map(([x,y,label,color])=>`<rect x="${x}" y="${y}" width="76" height="34" rx="8" fill="${color}" stroke="#e5e7eb"/><text x="${x+38}" y="${y+22}" fill="#f8fafc" text-anchor="middle" font-size="13">${label}</text>`).join('')}
+                    <rect x="358" y="92" width="96" height="86" rx="10" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="406" y="130" fill="#fde68a" text-anchor="middle" font-size="15">concat</text>
+                    <text x="406" y="150" fill="#fde68a" text-anchor="middle" font-size="13">channels</text>
+                    <path d="M146 125 C172 66 174 66 202 69 M146 125 H202 M146 125 C174 168 174 168 202 169 M146 125 C172 216 174 216 202 219" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <path d="M278 69 C318 76 326 96 358 108 M278 119 H358 M278 169 C318 160 326 148 358 148 M278 219 C326 210 332 172 358 164" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Follows the CVPR Inception module: parallel filters plus channel concatenation.', '对应 CVPR Inception 模块：并行滤波器加通道拼接。')],
+                [uiText('interaction', '互动点'), uiText('Toggle branches to show how multi-scale evidence accumulates.', '可切换分支，展示多尺度证据如何汇合。')]
+            ]);
+        }
+
         function buildGenericDemo(rawMilestone) {
             const artifact = getAchievementField(rawMilestone, 'artifact', '');
             const demo = getAchievementField(rawMilestone, 'demo', '');
@@ -5884,13 +6152,22 @@
             const raw = vm.raw || {};
             const visual = getAchievementVisual(raw);
             const steps = getAchievementRelatedItems(raw);
-            const visualHtml = visual === 'transcript'
-                ? buildTranscriptDemo(raw)
-                : visual === 'eval'
-                  ? buildEvalDemo()
-                  : visual === 'go'
-                    ? buildGoDemo()
-                    : buildGenericDemo(raw);
+            const visualBuilders = {
+                transcript: () => buildTranscriptDemo(raw),
+                eval: buildEvalDemo,
+                go: buildGoDemo,
+                adam: buildAdamDemo,
+                vgg: buildVggDemo,
+                evolution: buildEvolutionDemo,
+                unet: buildUnetDemo,
+                detector: buildDetectorDemo,
+                svm: buildSvmDemo,
+                cart: buildTreeDemo,
+                annealing: buildAnnealingDemo,
+                lasso: buildLassoDemo,
+                inception: buildInceptionDemo
+            };
+            const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
 
             const stepHtml = steps.length > 0
                 ? steps.map((step, index) => `

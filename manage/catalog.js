@@ -97,7 +97,17 @@ module.exports = {
         "1971-vc-theory",
         "1956-logic-theorist",
         "1958-wangs-algorithm",
-        "1960-davis-putnam-dpll"
+        "1960-davis-putnam-dpll",
+        "2014-adam",
+        "2014-vgg",
+        "1975-genetic-algorithm",
+        "2015-u-net",
+        "2015-faster-r-cnn",
+        "1992-svm",
+        "1984-cart",
+        "1983-simulated-annealing",
+        "1996-lasso",
+        "2015-googlenet-inception"
       ]
     }
   ]
