@@ -1,11 +1,11 @@
 # 人物头像缺口报告
 
-生成时间：2026-05-26T16:25:44.569Z
+生成时间：2026-06-05T01:16:50.395Z
 
 ## 摘要
 - 章节事件数：21
-- 去重人物/团队数：31
-- 已有可用头像：31
+- 去重人物/团队数：33
+- 已有可用头像：33
 - 仍缺可用头像：0
 - 章节覆盖：完整 21 / 部分 0 / 空缺 0
 
@@ -23,6 +23,7 @@
 | Sakana AI团队 | team | ready | resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png | ok | Sakana_AI | 2024-ai-scientist | 当前使用团队合照，适合作为团队型条目的头像。 |
 | 亚历克·拉德福德 (Alec Radford) | person | ready | resources/images/figures/alec-radford.png | ok |  | 2018-bert, 2018-gpt | 沿用 GPT 章节现有头像，后续可继续补充更明确的来源备注。 |
 | 亚历克斯·克里热夫斯基 (Alex Krizhevsky) | person | ready | resources/images/figures/historical/alex-krizhevsky-2013.png | ok | Alex_Krizhevsky | 2012-alexnet | 来自多伦多大学 2013 年 AlexNet 团队照片裁剪。 |
+| 任少卿 (Shaoqing Ren) | person | unregistered | resources/images/2015-resnet/people/2015-resnet_people_02.png | ok |  | 2015-resnet |  |
 | 伊恩·古德费洛 (Ian Goodfellow) | person | ready | resources/images/figures/ian-goodfellow.jpg | ok | Ian_Goodfellow | 2014-attention, 2014-gan, 2014-highway-network | 来自 Wikipedia/Wikimedia Commons 头像。 |
 | 伯克利团队 | team | ready | resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png | ok |  | 2024-ai-scientist | 当前使用团队实验室照片，后续可细化为具体作者头像。 |
 | 何恺明 (Kaiming He) | person | ready | resources/images/figures/kaiming-he.jpg | ok | Kaiming_He | 2015-resnet | 双语事件名映射，头像同何恺明。 |
@@ -30,8 +31,9 @@
 | 塞普·霍赫赖特 (Sepp Hochreiter) | person | ready | resources/images/figures/sepp-hochreiter.jpg | ok | Sepp_Hochreiter | 1997-lstm | 来自 Wikipedia/Wikimedia Commons 头像。 |
 | 大卫·鲁梅尔哈特 (David Rumelhart) | person | ready | resources/images/figures/david-rumelhart.jpg | ok | David_Rumelhart | 1986-backpropagation | 来自 Wikipedia/Wikimedia Commons 头像。 |
 | 孙剑 (Jian Sun) | person | ready | resources/images/figures/sun-jian.png | ok |  | 2015-resnet | 双语事件名映射，头像同孙剑。 |
-| 尤尔根·施密德胡伯 (Jürgen Schmidhuber) | person | ready | resources/images/figures/historical/juergen-schmidhuber-1996.png | ok | Jürgen_Schmidhuber | 1997-lstm | 改用作者官网 1996 年照片，时间更接近 1997 年 LSTM 论文。 |
+| 尤尔根·施密德胡伯 (Jürgen Schmidhuber) | person | ready | resources/images/1997-lstm/people/1997-lstm_people_01.png | ok | Jürgen_Schmidhuber | 1997-lstm | 改用 LSTM 章节的大图，避免旧头像在圆形卡片中过度裁切。 |
 | 弗兰克·罗森布拉特 (Frank Rosenblatt) | person | ready | resources/images/figures/frank-rosenblatt.png | ok | Frank_Rosenblatt | 1957-perceptron | 由感知机章节原始照片裁剪出的独立头像。 |
+| 张祥雨 (Xiangyu Zhang) | person | unregistered | resources/images/2015-resnet/people/2015-resnet_people_03.png | ok |  | 2015-resnet |  |
 | 彼得·诺维格 (Peter Norvig) | person | ready | resources/images/figures/peter-norvig.jpg | ok | Peter_Norvig | 2023-agents | 来自 Wikipedia/Wikimedia Commons 头像。 |
 | 戴密斯·哈萨比斯 (Demis Hassabis) | person | ready | resources/images/2020-alphafold/people/2020-alphafold_people_02.png | ok | Demis_Hassabis | 2020-alphafold | 本地已有可用人物照片。 |
 | 斯图尔特·罗素 (Stuart Russell) | person | ready | resources/images/figures/stuart-russell.jpg | ok | Stuart_J._Russell | 2023-agents | 来自 Wikipedia/Wikimedia Commons 头像。 |

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-05 01:04
+// 生成时间: 2026-06-05 01:16
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -1760,7 +1760,7 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "In 2015, Kaiming He and Jian Sun introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
+      "en": "In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun at Microsoft Research Asia introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
       "zh": "2015年，何恺明、张祥雨、任少卿和孙剑提出残差网络，通过加入恒等捷径通路，有效缓解了深层网络中的退化和梯度传播问题。它结构简单、工程友好，后来成为深度学习领域引用率极高的基础架构。技术上，残差网络可以看作门控近似恒开的高速网络，最初训练到 152 层，后来扩展到 1202 层。"
     },
     "figures": [
@@ -1770,10 +1770,36 @@ const milestones = [
           "zh": "何恺明 (Kaiming He)"
         },
         "role": {
-          "en": "ResNet author",
-          "zh": "ResNet作者"
+          "en": "ResNet first author",
+          "zh": "ResNet第一作者"
         },
-        "avatar": "resources/images/figures/kaiming-he.jpg",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Xiangyu Zhang",
+          "zh": "张祥雨 (Xiangyu Zhang)"
+        },
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet共同作者"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Shaoqing Ren",
+          "zh": "任少卿 (Shaoqing Ren)"
+        },
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet共同作者"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -1783,10 +1809,10 @@ const milestones = [
           "zh": "孙剑 (Jian Sun)"
         },
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet共同作者"
+          "en": "ResNet senior author",
+          "zh": "ResNet通讯作者"
         },
-        "avatar": "resources/images/figures/sun-jian.png",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1836,12 +1862,12 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
-        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_04.png"
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png"
       ],
       "imageMeta": {
         "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
@@ -1850,8 +1876,8 @@ const milestones = [
             "zh": "任少卿"
           },
           "subcaption": {
-            "en": "ResNet co-author",
-            "zh": "ResNet 共同作者"
+            "en": "ResNet co-author; now VP of R&D at NIO",
+            "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
@@ -1860,8 +1886,8 @@ const milestones = [
             "zh": "孙剑"
           },
           "subcaption": {
-            "en": "ResNet senior author",
-            "zh": "ResNet 通讯作者"
+            "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)",
+            "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）"
           }
         },
         "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
@@ -1870,8 +1896,8 @@ const milestones = [
             "zh": "张祥雨"
           },
           "subcaption": {
-            "en": "ResNet co-author",
-            "zh": "ResNet 共同作者"
+            "en": "ResNet co-author; later at Megvii, now at StepFun",
+            "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰"
           }
         },
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
@@ -1900,8 +1926,8 @@ const milestones = [
             "zh": "何恺明"
           },
           "subcaption": {
-            "en": "ResNet first author",
-            "zh": "ResNet 第一作者"
+            "en": "ResNet first author; Associate Professor at MIT EECS",
+            "zh": "ResNet 第一作者，现任 MIT 电气工程与计算机科学系副教授"
           }
         }
       },
