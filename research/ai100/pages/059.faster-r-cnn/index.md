@@ -106,7 +106,7 @@ BenchCouncil AI100 records 65,754 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever region proposal network with shared features became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 65,754 citations. Faster R-CNN shaped detection benchmarks, annotation tools, autonomous-driving perception, robotics, and medical-imaging pipelines.
 

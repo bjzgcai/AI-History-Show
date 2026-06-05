@@ -121,7 +121,7 @@ BenchCouncil lists "The Logic Theory Machine: A complex information processing s
 
 Logic Theorist was not a commercial product, but its ideas shaped the engineering of symbolic AI systems: representing knowledge as symbolic structures, searching through possible transformations, and using heuristics to reduce combinatorial explosion. Those patterns later appeared in theorem provers, planning systems, expert systems, and AI programming languages.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The Logic Theorist is remembered as one of the first AI programs and an early demonstration that machines could perform symbolic reasoning. Its legacy is not a single product interface, but a design pattern: intelligence as search over symbolic representations guided by heuristics.
 

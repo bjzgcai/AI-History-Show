@@ -101,7 +101,7 @@ BenchCouncil AI100 records 71,959 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever encoder-decoder segmentation with skip connections became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 71,959 citations. U-Net became a default mental model for segmentation and a structural ancestor of many image-to-image and diffusion architectures.
 

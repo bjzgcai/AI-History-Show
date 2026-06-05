@@ -91,7 +91,7 @@ BenchCouncil AI100 records 55,395 citations for the canonical source associated 
 
 The method influenced practical software stacks, benchmarks, and engineering workflows wherever l1-regularized regression and selection became useful.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 The AI100 list records 55,395 citations. Lasso remains central in high-dimensional statistics, sparse learning, genomics, and interpretable baseline modeling.
 
