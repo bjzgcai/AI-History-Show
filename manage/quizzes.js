@@ -834,6 +834,335 @@ module.exports = {
           "probabilistic-models",
           "topic-modeling"
 ]
+        ),
+        '1970-shrdlu': quiz(
+            {
+          "en": "Why could SHRDLU appear so fluent in dialogue?",
+          "zh": "为什么 SHRDLU 在对话中显得很流畅？"
+},
+            [
+          {
+                    "en": "It grounded language in a small blocks world with explicit actions",
+                    "zh": "它把语言落地到一个小型积木世界和明确动作中"
+          },
+          {
+                    "en": "It trained on the full web",
+                    "zh": "它在整个网络上训练"
+          },
+          {
+                    "en": "It used ImageNet labels",
+                    "zh": "它使用 ImageNet 标签"
+          },
+          {
+                    "en": "It played chess by hardware search",
+                    "zh": "它用硬件搜索下棋"
+          }
+],
+            0,
+            {
+          "en": "SHRDLU worked because language, objects, memory, and plans were all represented inside one constrained microworld.",
+          "zh": "SHRDLU 有效是因为语言、对象、记忆和计划都表示在同一个受限微世界里。"
+},
+            [
+          "nlp",
+          "microworld"
+]
+        ),
+        '1997-deep-blue': quiz(
+            {
+          "en": "What was Deep Blue especially built to do?",
+          "zh": "Deep Blue 尤其被构建来做什么？"
+},
+            [
+          {
+                    "en": "Search and evaluate chess positions at massive scale",
+                    "zh": "大规模搜索并评估国际象棋局面"
+          },
+          {
+                    "en": "Generate word embeddings",
+                    "zh": "生成词嵌入"
+          },
+          {
+                    "en": "Cluster image pixels with t-SNE",
+                    "zh": "用 t-SNE 聚类图像像素"
+          },
+          {
+                    "en": "Infer Bayesian network structure from text only",
+                    "zh": "只从文本推断贝叶斯网络结构"
+          }
+],
+            0,
+            {
+          "en": "Deep Blue combined alpha-beta search, handcrafted chess evaluation, and specialized hardware.",
+          "zh": "Deep Blue 结合了 alpha-beta 搜索、手工棋局评估和专用硬件。"
+},
+            [
+          "game-ai",
+          "search"
+]
+        ),
+        '1974-frame': quiz(
+            {
+          "en": "What is a frame mainly used for?",
+          "zh": "框架主要用来做什么？"
+},
+            [
+          {
+                    "en": "Represent a stereotyped situation with slots and defaults",
+                    "zh": "用槽和默认值表示典型情境"
+          },
+          {
+                    "en": "Normalize neural activations by minibatch",
+                    "zh": "按小批量归一化神经激活"
+          },
+          {
+                    "en": "Search chess moves on custom chips",
+                    "zh": "在定制芯片上搜索棋步"
+          },
+          {
+                    "en": "Draw t-SNE scatter plots only",
+                    "zh": "只绘制 t-SNE 散点图"
+          }
+],
+            0,
+            {
+          "en": "Frames organize contextual knowledge into slots, default assumptions, and inherited structure.",
+          "zh": "框架把上下文知识组织成槽、默认假设和继承结构。"
+},
+            [
+          "knowledge-representation"
+]
+        ),
+        '1965-dendral': quiz(
+            {
+          "en": "What made DENDRAL historically important?",
+          "zh": "DENDRAL 的历史重要性主要是什么？"
+},
+            [
+          {
+                    "en": "It used expert chemical knowledge to guide scientific inference",
+                    "zh": "它用专家化学知识引导科学推断"
+          },
+          {
+                    "en": "It invented t-SNE visualization",
+                    "zh": "它发明了 t-SNE 可视化"
+          },
+          {
+                    "en": "It normalized neural activations",
+                    "zh": "它归一化神经激活"
+          },
+          {
+                    "en": "It won at Go with Monte Carlo tree search",
+                    "zh": "它用蒙特卡洛树搜索赢围棋"
+          }
+],
+            0,
+            {
+          "en": "DENDRAL helped show that knowledge-rich expert systems could solve practical scientific tasks.",
+          "zh": "DENDRAL 表明富知识专家系统可以解决实际科学任务。"
+},
+            [
+          "expert-system",
+          "science"
+]
+        ),
+        '1999-sift': quiz(
+            {
+          "en": "What does SIFT try to make stable?",
+          "zh": "SIFT 试图让什么保持稳定？"
+},
+            [
+          {
+                    "en": "Local image keypoints and descriptors across scale and rotation",
+                    "zh": "跨尺度和旋转的局部图像关键点与描述子"
+          },
+          {
+                    "en": "A chess opening book",
+                    "zh": "国际象棋开局库"
+          },
+          {
+                    "en": "A Bayesian network prior",
+                    "zh": "贝叶斯网络先验"
+          },
+          {
+                    "en": "A natural-language chatbot script",
+                    "zh": "自然语言聊天脚本"
+          }
+],
+            0,
+            {
+          "en": "SIFT detects local features designed to remain matchable despite common image transformations.",
+          "zh": "SIFT 检测设计为在常见图像变换下仍可匹配的局部特征。"
+},
+            [
+          "vision",
+          "features"
+]
+        ),
+        '2008-tsne': quiz(
+            {
+          "en": "What kind of structure does t-SNE mainly try to preserve?",
+          "zh": "t-SNE 主要试图保留哪类结构？"
+},
+            [
+          {
+                    "en": "Local neighborhood relationships",
+                    "zh": "局部邻域关系"
+          },
+          {
+                    "en": "Exact global distances everywhere",
+                    "zh": "所有位置的精确全局距离"
+          },
+          {
+                    "en": "Chess move legality tables",
+                    "zh": "国际象棋走法合法性表"
+          },
+          {
+                    "en": "Chemical mass spectra only",
+                    "zh": "仅化学质谱"
+          }
+],
+            0,
+            {
+          "en": "t-SNE is best understood as a local-neighborhood visualization method, not a faithful global map.",
+          "zh": "t-SNE 最适合理解为局部邻域可视化方法，而不是忠实全局地图。"
+},
+            [
+          "visualization",
+          "dimensionality-reduction"
+]
+        ),
+        '1958-rosenblatt-perceptron': quiz(
+            {
+          "en": "What is the basic computation in a perceptron?",
+          "zh": "感知机的基本计算是什么？"
+},
+            [
+          {
+                    "en": "A weighted sum followed by a threshold decision",
+                    "zh": "加权求和后进行阈值决策"
+          },
+          {
+                    "en": "A t-SNE perplexity search",
+                    "zh": "t-SNE 困惑度搜索"
+          },
+          {
+                    "en": "A Bayesian network message pass only",
+                    "zh": "仅贝叶斯网络消息传递"
+          },
+          {
+                    "en": "A molecular mass spectrum filter",
+                    "zh": "分子质谱过滤器"
+          }
+],
+            0,
+            {
+          "en": "A perceptron classifies by summing weighted inputs and comparing the result to a threshold.",
+          "zh": "感知机通过输入加权求和并与阈值比较来分类。"
+},
+            [
+          "neural-network",
+          "classification"
+]
+        ),
+        '2006-dbn': quiz(
+            {
+          "en": "What training idea made early deep belief networks practical?",
+          "zh": "什么训练思想让早期深度置信网络变得实用？"
+},
+            [
+          {
+                    "en": "Greedy layer-wise pretraining",
+                    "zh": "贪心逐层预训练"
+          },
+          {
+                    "en": "One-shot chess hardware search",
+                    "zh": "一次性国际象棋硬件搜索"
+          },
+          {
+                    "en": "Frame slot inheritance only",
+                    "zh": "仅框架槽继承"
+          },
+          {
+                    "en": "Mass-spectrum molecule filtering",
+                    "zh": "质谱分子过滤"
+          }
+],
+            0,
+            {
+          "en": "DBNs trained layers one at a time to obtain useful representations before task-specific fine-tuning.",
+          "zh": "DBN 逐层训练以获得有用表示，然后再针对任务微调。"
+},
+            [
+          "deep-learning",
+          "pretraining"
+]
+        ),
+        '1988-td-update': quiz(
+            {
+          "en": "What does a TD update compare?",
+          "zh": "TD 更新比较什么？"
+},
+            [
+          {
+                    "en": "The current value estimate with reward plus next value estimate",
+                    "zh": "当前价值估计与“奖励加下一价值估计”"
+          },
+          {
+                    "en": "Two unrelated image captions",
+                    "zh": "两个无关图像标题"
+          },
+          {
+                    "en": "A molecule with a chess position",
+                    "zh": "一个分子与一个棋局"
+          },
+          {
+                    "en": "Only final episode reward after all learning stops",
+                    "zh": "学习停止后才看的最终回合奖励"
+          }
+],
+            0,
+            {
+          "en": "TD learning bootstraps by using the next prediction as part of the learning target.",
+          "zh": "TD 学习用下一步预测作为学习目标的一部分来进行自举。"
+},
+            [
+          "reinforcement-learning",
+          "value"
+]
+        ),
+        '1985-bayesian-network': quiz(
+            {
+          "en": "What does a Bayesian network combine?",
+          "zh": "贝叶斯网络结合了什么？"
+},
+            [
+          {
+                    "en": "A directed graph and conditional probabilities",
+                    "zh": "有向图与条件概率"
+          },
+          {
+                    "en": "A chess chip and opening book only",
+                    "zh": "只有棋类芯片和开局库"
+          },
+          {
+                    "en": "A scale-space image descriptor only",
+                    "zh": "只有尺度空间图像描述子"
+          },
+          {
+                    "en": "A blocks-world parser without uncertainty",
+                    "zh": "没有不确定性的积木世界解析器"
+          }
+],
+            0,
+            {
+          "en": "The graph expresses dependency structure, and the probabilities support belief updating under evidence.",
+          "zh": "图表达依赖结构，概率支持在证据下更新信念。"
+},
+            [
+          "probabilistic-ai",
+          "knowledge-representation"
+]
         )
     }
 };

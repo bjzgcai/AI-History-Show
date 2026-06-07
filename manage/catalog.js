@@ -117,7 +117,17 @@ module.exports = {
         "2013-word2vec",
         "2009-imagenet",
         "2013-dqn",
-        "2003-lda"
+        "2003-lda",
+        "1970-shrdlu",
+        "1997-deep-blue",
+        "1974-frame",
+        "1965-dendral",
+        "1999-sift",
+        "2008-tsne",
+        "1958-rosenblatt-perceptron",
+        "2006-dbn",
+        "1988-td-update",
+        "1985-bayesian-network"
       ]
     }
   ]

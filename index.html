@@ -6715,6 +6715,191 @@
             ]);
         }
 
+        function buildShrdluDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="SHRDLU blocks-world language grounding">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">language grounded in blocks</text>
+                    <rect x="48" y="148" width="62" height="62" rx="6" fill="#2563eb"/>
+                    <rect x="116" y="148" width="62" height="62" rx="6" fill="#f59e0b"/>
+                    <rect x="82" y="92" width="62" height="56" rx="6" fill="#16a34a"/>
+                    <rect x="238" y="64" width="230" height="54" rx="10" fill="#172554" stroke="#93c5fd"/>
+                    <text x="253" y="97" fill="#bfdbfe" font-size="15">put green on orange</text>
+                    <rect x="262" y="162" width="178" height="46" rx="10" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="351" y="191" fill="#d1fae5" text-anchor="middle" font-size="15">PLAN: move(block)</text>
+                    <path d="M178 178 C218 178 206 91 238 91 M353 118 V162" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                </svg>
+            `, [
+                [uiText('microworld cue', '微世界线索'), uiText('The language works because every noun and action is grounded in a tiny world.', '语言有效，是因为每个名词和动作都落在一个小世界中。')],
+                [uiText('interaction', '互动点'), uiText('A command editor can highlight the object, relation, and planned move.', '命令编辑器可高亮对象、关系和计划动作。')]
+            ]);
+        }
+
+        function buildDeepBlueDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Deep Blue chess search tree">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">hardware search under the board</text>
+                    <rect x="42" y="64" width="120" height="120" rx="8" fill="#111827" stroke="#94a3b8"/>
+                    ${[1,2,3].map((n) => `<path d="M${42+n*30} 64 V184 M42 ${64+n*30} H162" stroke="#334155" stroke-width="2"/>`).join('')}
+                    <circle cx="270" cy="72" r="22" fill="#60a5fa"/>
+                    ${[[210,138],[270,138],[330,138]].map(([x,y]) => `<circle cx="${x}" cy="${y}" r="18" fill="#f59e0b"/>`).join('')}
+                    ${[[190,202],[250,202],[330,202],[390,202]].map(([x,y], i) => `<circle cx="${x}" cy="${y}" r="13" fill="${i % 2 ? '#22c55e' : '#ef4444'}"/>`).join('')}
+                    <path d="M162 124 H206 M260 90 L218 122 M270 94 V120 M282 90 L322 122 M210 156 L194 190 M270 156 L254 190 M330 156 L334 190 M330 156 L384 190" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                    <rect x="408" y="78" width="70" height="92" rx="10" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="443" y="118" fill="#d1fae5" text-anchor="middle" font-size="13">VLSI</text>
+                    <text x="443" y="140" fill="#d1fae5" text-anchor="middle" font-size="13">score</text>
+                </svg>
+            `, [
+                [uiText('search cue', '搜索线索'), uiText('Deep Blue joined alpha-beta search with chess-specific scoring hardware.', 'Deep Blue 把 alpha-beta 搜索与棋类专用评分硬件接在一起。')],
+                [uiText('interaction', '互动点'), uiText('Branch toggles can show which continuations are pruned away.', '分支开关可展示哪些后续被剪枝。')]
+            ]);
+        }
+
+        function buildFrameDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Frame slots and defaults">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">slot defaults for a situation</text>
+                    <rect x="52" y="62" width="190" height="150" rx="12" fill="#111827" stroke="#f59e0b"/>
+                    <text x="78" y="92" fill="#fde68a" font-size="15">restaurant frame</text>
+                    ${['role: waiter','object: menu','default: pay later','script: order food'].map((line, i) => `<text x="78" y="${124+i*24}" fill="#e5e7eb" font-size="14">${line}</text>`).join('')}
+                    <rect x="326" y="70" width="132" height="46" rx="10" fill="#172554" stroke="#93c5fd"/>
+                    <text x="392" y="99" fill="#bfdbfe" text-anchor="middle" font-size="15">specific cafe</text>
+                    <rect x="326" y="154" width="132" height="46" rx="10" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="392" y="182" fill="#d1fae5" text-anchor="middle" font-size="15">override slot</text>
+                    <path d="M242 136 H326 M392 116 V154" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                </svg>
+            `, [
+                [uiText('knowledge cue', '知识线索'), uiText('Frames store what is usually true, then let evidence override defaults.', '框架存储通常成立的内容，再让证据覆盖默认值。')],
+                [uiText('interaction', '互动点'), uiText('Slot cards can flip between inherited and overridden values.', '槽卡片可在继承值与覆盖值之间切换。')]
+            ]);
+        }
+
+        function buildDendralDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="DENDRAL mass spectrum expert rules">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">chemical evidence plus expert rules</text>
+                    <path d="M50 198 H226" stroke="#64748b" stroke-width="2"/>
+                    ${[[66,96],[94,156],[126,76],[160,132],[204,102]].map(([x,y]) => `<path d="M${x} 198 V${y}" stroke="#f59e0b" stroke-width="8"/>`).join('')}
+                    <rect x="282" y="60" width="150" height="52" rx="10" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="357" y="92" fill="#fde68a" text-anchor="middle" font-size="15">expert rules</text>
+                    <path d="M226 144 H282" stroke="#f8fafc" stroke-width="3"/>
+                    <g transform="translate(310 150)">
+                        <circle cx="0" cy="0" r="16" fill="#60a5fa"/><circle cx="58" cy="-24" r="16" fill="#22c55e"/><circle cx="96" cy="28" r="16" fill="#a78bfa"/>
+                        <path d="M14 -6 L44 -18 M70 -12 L86 16" stroke="#f8fafc" stroke-width="4"/>
+                    </g>
+                </svg>
+            `, [
+                [uiText('expert cue', '专家线索'), uiText('DENDRAL narrows molecule candidates using chemical constraints.', 'DENDRAL 用化学约束缩小分子候选。')],
+                [uiText('interaction', '互动点'), uiText('Rule chips can show why one candidate survives and another is rejected.', '规则标签可展示一个候选为何保留、另一个为何被拒绝。')]
+            ]);
+        }
+
+        function buildSiftDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="SIFT scale-space descriptor">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">stable keypoints across scale</text>
+                    <rect x="58" y="66" width="112" height="92" rx="8" fill="#111827" stroke="#64748b"/>
+                    <rect x="138" y="104" width="142" height="114" rx="8" fill="#111827" stroke="#93c5fd"/>
+                    <circle cx="124" cy="112" r="14" fill="#22c55e"/>
+                    <circle cx="210" cy="156" r="22" fill="#22c55e"/>
+                    <path d="M294 194 H470 M318 204 V78" stroke="#64748b" stroke-width="2"/>
+                    ${[0,1,2,3,4,5].map((i) => `<rect x="${330+i*24}" y="${180-((i%3)+1)*26}" width="14" height="${((i%3)+1)*26}" fill="${i%2 ? '#60a5fa' : '#f59e0b'}"/>`).join('')}
+                    <text x="364" y="66" fill="#f68900" font-size="13">descriptor</text>
+                </svg>
+            `, [
+                [uiText('vision cue', '视觉线索'), uiText('SIFT first finds repeatable points, then describes nearby gradients.', 'SIFT 先找到可重复关键点，再描述附近梯度。')],
+                [uiText('interaction', '互动点'), uiText('Scale handles can show the same feature surviving zoom changes.', '尺度手柄可展示同一特征如何穿过缩放变化。')]
+            ]);
+        }
+
+        function buildTsneDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="t-SNE local neighbor map">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">neighbors become a 2D map</text>
+                    <circle cx="118" cy="126" r="26" fill="#f59e0b"/>
+                    ${[[74,86],[78,164],[160,84],[168,166]].map(([x,y]) => `<circle cx="${x}" cy="${y}" r="13" fill="#60a5fa"/>`).join('')}
+                    <circle cx="118" cy="126" r="78" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 7"/>
+                    <path d="M220 126 H282" stroke="#f8fafc" stroke-width="4"/>
+                    ${[[332,92,'#60a5fa'],[362,118,'#60a5fa'],[322,134,'#60a5fa'],[424,98,'#22c55e'],[454,128,'#22c55e'],[414,148,'#22c55e'],[382,190,'#f59e0b'],[416,202,'#f59e0b']].map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="13" fill="${c}"/>`).join('')}
+                    <path d="M302 220 H478 M302 220 V62" stroke="#64748b" stroke-width="2"/>
+                </svg>
+            `, [
+                [uiText('map cue', '地图线索'), uiText('t-SNE preserves local neighborhoods more than global distances.', 't-SNE 更强调局部邻域，而不是全局距离。')],
+                [uiText('interaction', '互动点'), uiText('A perplexity slider can change neighborhood size and cluster shape.', '困惑度滑杆可改变邻域大小与簇形状。')]
+            ]);
+        }
+
+        function buildPerceptronDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Perceptron threshold classifier">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">weighted sum crosses a threshold</text>
+                    <rect x="50" y="74" width="98" height="98" rx="8" fill="#111827" stroke="#93c5fd"/>
+                    ${[0,1,2].map((r) => [0,1,2].map((c) => `<rect x="${62+c*28}" y="${86+r*28}" width="18" height="18" rx="3" fill="${(r+c)%2 ? '#60a5fa' : '#f59e0b'}"/>`).join('')).join('')}
+                    <circle cx="286" cy="123" r="50" fill="#064e3b" stroke="#6ee7b7" stroke-width="4"/>
+                    <text x="286" y="129" fill="#d1fae5" text-anchor="middle" font-size="15">sum &gt; theta</text>
+                    <path d="M148 123 H236 M336 123 H440" stroke="#f8fafc" stroke-width="4"/>
+                    <rect x="440" y="96" width="58" height="54" rx="10" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="469" y="128" fill="#fde68a" text-anchor="middle" font-size="14">class</text>
+                    <path d="M80 218 L372 62" stroke="#ef4444" stroke-width="3" stroke-dasharray="8 7"/>
+                </svg>
+            `, [
+                [uiText('learning cue', '学习线索'), uiText('Mistakes move the weights until a linear boundary separates examples.', '错误会移动权重，直到线性边界分开样本。')],
+                [uiText('interaction', '互动点'), uiText('Dragging points can reveal when a single threshold unit fails.', '拖动点可显示单个阈值单元何时失败。')]
+            ]);
+        }
+
+        function buildDbnDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Deep belief network layer-wise pretraining">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">pretrain deep stacks one layer at a time</text>
+                    ${[0,1,2,3].map((layer) => [0,1,2,3].map((i) => `<circle cx="${94+layer*104}" cy="${78+i*42}" r="13" fill="${['#60a5fa','#22c55e','#f59e0b','#a78bfa'][layer]}"/>`).join('')).join('')}
+                    ${[0,1,2].map((layer) => `<path d="M${110+layer*104} 98 H${182+layer*104} M${110+layer*104} 140 H${182+layer*104}" stroke="#334155" stroke-width="3"/>`).join('')}
+                    <rect x="338" y="176" width="128" height="42" rx="10" fill="#064e3b" stroke="#6ee7b7"/>
+                    <text x="402" y="202" fill="#d1fae5" text-anchor="middle" font-size="14">fine-tune</text>
+                    <path d="M400 162 V176" stroke="#f8fafc" stroke-width="3"/>
+                </svg>
+            `, [
+                [uiText('pretraining cue', '预训练线索'), uiText('DBNs made deep stacks trainable with greedy layer-wise learning.', 'DBN 用贪心逐层学习让深层堆栈更容易训练。')],
+                [uiText('interaction', '互动点'), uiText('Layer toggles can separate unsupervised pretraining from supervised tuning.', '层开关可区分无监督预训练与监督微调。')]
+            ]);
+        }
+
+        function buildTdDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Temporal difference update">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">learn from the next prediction</text>
+                    <path d="M64 158 H438" stroke="#64748b" stroke-width="3"/>
+                    <circle cx="108" cy="158" r="24" fill="#60a5fa"/>
+                    <circle cx="244" cy="158" r="24" fill="#f59e0b"/>
+                    <circle cx="380" cy="158" r="24" fill="#22c55e"/>
+                    <text x="108" y="102" fill="#dbeafe" text-anchor="middle" font-size="14">V(s)</text>
+                    <text x="244" y="102" fill="#fde68a" text-anchor="middle" font-size="14">reward</text>
+                    <text x="380" y="102" fill="#d1fae5" text-anchor="middle" font-size="14">V(s')</text>
+                    <path d="M380 132 C312 58 176 58 108 132" stroke="#f8fafc" stroke-width="3" fill="none" stroke-dasharray="8 7"/>
+                    <rect x="170" y="204" width="170" height="30" rx="8" fill="#402c1b"/>
+                    <text x="255" y="224" fill="#fde68a" text-anchor="middle" font-size="13">TD error nudges value</text>
+                </svg>
+            `, [
+                [uiText('value cue', '价值线索'), uiText('TD bootstraps: one prediction learns from the next prediction.', 'TD 是自举式的：一个预测从下一个预测中学习。')],
+                [uiText('interaction', '互动点'), uiText('Reward edits can show the value estimate moving step by step.', '奖励编辑可展示价值估计如何逐步移动。')]
+            ]);
+        }
+
+        function buildBayesNetDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Bayesian network belief update">
+                    <text x="28" y="34" fill="#f68900" font-size="16" font-weight="800">uncertainty as a directed graph</text>
+                    ${[[136,76,'rain','#60a5fa'],[88,158,'sprinkler','#f59e0b'],[230,158,'wet grass','#22c55e'],[372,158,'slip','#a78bfa']].map(([x,y,label,c]) => `<circle cx="${x}" cy="${y}" r="28" fill="${c}"/><text x="${x}" y="${y+48}" fill="#e5e7eb" text-anchor="middle" font-size="12">${label}</text>`).join('')}
+                    <path d="M124 102 L100 132 M160 98 L214 136 M258 158 H344" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <rect x="318" y="58" width="146" height="48" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="391" y="87" fill="#dbeafe" text-anchor="middle" font-size="14">P(node | parents)</text>
+                    <path d="M391 106 V132" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 6"/>
+                </svg>
+            `, [
+                [uiText('probability cue', '概率线索'), uiText('The graph says which conditional probabilities are needed.', '图结构说明需要哪些条件概率。')],
+                [uiText('interaction', '互动点'), uiText('Evidence toggles can ripple updated beliefs through the graph.', '证据开关可让更新后的信念沿图传播。')]
+            ]);
+        }
+
         function buildGenericDemo(rawMilestone) {
             const artifact = getAchievementField(rawMilestone, 'artifact', '');
             const demo = getAchievementField(rawMilestone, 'demo', '');
@@ -6776,7 +6961,17 @@
                 word2vec: buildWord2VecDemo,
                 imagenet: buildImageNetDemo,
                 dqn: buildDqnDemo,
-                lda: buildLdaDemo
+                lda: buildLdaDemo,
+                shrdlu: buildShrdluDemo,
+                deepblue: buildDeepBlueDemo,
+                frame: buildFrameDemo,
+                dendral: buildDendralDemo,
+                sift: buildSiftDemo,
+                tsne: buildTsneDemo,
+                perceptron: buildPerceptronDemo,
+                dbn: buildDbnDemo,
+                td: buildTdDemo,
+                bayesnet: buildBayesNetDemo
             };
             const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
 
