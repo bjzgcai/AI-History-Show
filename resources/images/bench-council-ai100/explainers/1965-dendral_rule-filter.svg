@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Rule-filtered molecule search</text>
+  <rect x="88" y="112" width="260" height="260" rx="18" fill="#111827" stroke="#94a3b8" stroke-width="4"/><text x="120" y="160" fill="#dbeafe" font-family="Arial" font-size="25">candidates</text><circle cx="145" cy="245" r="28" fill="#1d4ed8"/><path d="M145 245l40 -44" stroke="#f8fafc" stroke-width="4"/><circle cx="217" cy="245" r="28" fill="#1d4ed8"/><path d="M217 245l40 50" stroke="#f8fafc" stroke-width="4"/><circle cx="289" cy="245" r="28" fill="#1d4ed8"/><path d="M289 245l40 -44" stroke="#f8fafc" stroke-width="4"/><rect x="500" y="132" width="270" height="82" rx="16" fill="#402c1b" stroke="#f59e0b" stroke-width="4"/><text x="635" y="182" fill="#fde68a" text-anchor="middle" font-family="Arial" font-size="26">expert rules</text><rect x="548" y="290" width="170" height="60" rx="14" fill="#064e3b" stroke="#6ee7b7" stroke-width="4"/><text x="633" y="328" fill="#d1fae5" text-anchor="middle" font-family="Arial" font-size="25">survivors</text><path d="M348 245H500M635 214v76" stroke="#f8fafc" stroke-width="6"/>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>

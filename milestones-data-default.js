@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-05 19:56
+// 生成时间: 2026-06-09 20:32
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -8247,7 +8247,7 @@ const milestones = [
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/kaiming-he.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -8273,7 +8273,7 @@ const milestones = [
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/sun-jian.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -12581,7 +12581,7 @@ const milestones = [
           "en": "Co-author and deep learning pioneer",
           "zh": "共同作者，深度学习先驱"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -14673,7 +14673,7 @@ const milestones = [
           "en": "Co-author and probabilistic ML researcher",
           "zh": "共同作者，概率机器学习研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/michael-i-jordan.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -15034,6 +15034,4044 @@ const milestones = [
         "tags": [
           "probabilistic-models",
           "topic-modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1970-shrdlu",
+    "year": "1970",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "SHRDLU",
+      "zh": "SHRDLU"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "MIT Artificial Intelligence Laboratory",
+        "zh": "MIT 人工智能实验室"
+      },
+      "country": {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.</p>",
+      "zh": "<p>SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Terry Winograd",
+          "zh": "Terry Winograd"
+        },
+        "role": {
+          "en": "Creator of SHRDLU",
+          "zh": "SHRDLU 创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Blocks-world language understanding\"",
+      "zh": "\"积木世界语言理解\""
+    },
+    "quoteAttribution": "《SHRDLU dissertation record》, Terry Winograd",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "SHRDLU dissertation record",
+      "workAuthors": "Terry Winograd",
+      "sourceLabel": "",
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Natural language understanding / SHRDLU",
+      "zh": "BenchCouncil AI100：自然语言理解 / SHRDLU"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Early language programs often handled isolated sentences. SHRDLU made language, reference, memory, and action share one miniature world.",
+          "zh": "早期语言程序往往只处理孤立句子。SHRDLU 让语言、指称、记忆和动作共享同一个微型世界。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene.",
+          "zh": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "SHRDLU became a classic example of both the promise and the brittleness of microworld AI.",
+          "zh": "SHRDLU 成为微世界 AI 的希望与脆弱性的经典案例。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+        "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+        "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg": {
+          "caption": {
+            "en": "Terry Winograd portrait",
+            "zh": "Terry Winograd 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from Stanford Computer Science profile.",
+            "zh": "来自 Stanford Computer Science 个人资料页的人物图。"
+          },
+          "sourceName": "Stanford Computer Science",
+          "source": "https://www.cs.stanford.edu/people/terry-winograd",
+          "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+          "originalImageUrl": "https://www.cs.stanford.edu/sites/g/files/sbiybj28076/files/styles/large_square/public/media/person/terry-winograd1509560558940.jpg",
+          "license": "Stanford profile image; reuse rights not stated.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg": {
+          "caption": {
+            "en": "Blocks-world command grounding",
+            "zh": "积木世界命令落地"
+          },
+          "subcaption": {
+            "en": "Local redraw for SHRDLU, based on the listed source material.",
+            "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "MIT DSpace",
+          "source": "https://dspace.mit.edu/handle/1721.1/7095",
+          "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg": {
+          "caption": {
+            "en": "Parser to planner path",
+            "zh": "解析器到规划器路径"
+          },
+          "subcaption": {
+            "en": "Local redraw for SHRDLU, based on the listed source material.",
+            "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "MIT DSpace",
+          "source": "https://dspace.mit.edu/handle/1721.1/7095",
+          "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Natural language understanding",
+        "zh": "自然语言理解"
+      },
+      "method": {
+        "en": "Blocks-world language understanding",
+        "zh": "积木世界语言理解"
+      },
+      "artifact": {
+        "en": "Interactive blocks-world dialogue system",
+        "zh": "交互式积木世界对话系统"
+      },
+      "material": {
+        "en": "MIT thesis and AI Lab reports",
+        "zh": "MIT 论文与 AI Lab 报告"
+      },
+      "demo": {
+        "en": "Parse language into plans over visible blocks",
+        "zh": "把语言解析为可见积木上的计划"
+      },
+      "visual": "shrdlu",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Microworld",
+            "zh": "微世界"
+          },
+          "text": {
+            "en": "A narrow environment makes language and action tractable.",
+            "zh": "受限环境让语言和动作变得可处理。"
+          }
+        },
+        {
+          "label": {
+            "en": "Procedural Semantics",
+            "zh": "过程语义"
+          },
+          "text": {
+            "en": "Meaning is tied to procedures the system can run.",
+            "zh": "意义绑定到系统可执行的过程。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reference Resolution",
+            "zh": "指称消解"
+          },
+          "text": {
+            "en": "The system maps words like \"the red block\" to objects in the scene.",
+            "zh": "系统把“红色积木”等表达映射到场景对象。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ELIZA",
+          "zh": "ELIZA"
+        },
+        {
+          "en": "Frame",
+          "zh": "框架"
+        },
+        {
+          "en": "Natural language understanding",
+          "zh": "自然语言理解"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Massachusetts, United States",
+          "zh": "美国马萨诸塞州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Parse command",
+          "zh": "解析命令"
+        },
+        {
+          "en": "Resolve object",
+          "zh": "解析指称"
+        },
+        {
+          "en": "Plan block action",
+          "zh": "规划积木动作"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "MIT DSpace",
+          "title": {
+            "en": "SHRDLU dissertation record",
+            "zh": "SHRDLU 学位论文记录"
+          },
+          "description": {
+            "en": "Repository record for Winograd's language-understanding work.",
+            "zh": "Winograd 语言理解工作的 MIT 仓储记录。"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/7095",
+          "source": "https://dspace.mit.edu/handle/1721.1/7095",
+          "license": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open MIT record",
+            "zh": "打开 MIT 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Thesis",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+            "zh": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/7095"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Terry Winograd, Stanford Computer Science",
+            "zh": "Terry Winograd, Stanford Computer Science"
+          },
+          "url": "https://www.cs.stanford.edu/people/terry-winograd"
+        },
+        {
+          "type": {
+            "en": "Oral history",
+            "zh": "口述史"
+          },
+          "label": {
+            "en": "Terry Winograd oral history, CBI",
+            "zh": "Terry Winograd oral history, CBI"
+          },
+          "url": "https://hdl.handle.net/11299/107717"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1970-shrdlu-quiz-1",
+      "question": {
+        "en": "Why could SHRDLU appear so fluent in dialogue?",
+        "zh": "为什么 SHRDLU 在对话中显得很流畅？"
+      },
+      "options": [
+        {
+          "en": "It grounded language in a small blocks world with explicit actions",
+          "zh": "它把语言落地到一个小型积木世界和明确动作中"
+        },
+        {
+          "en": "It trained on the full web",
+          "zh": "它在整个网络上训练"
+        },
+        {
+          "en": "It used ImageNet labels",
+          "zh": "它使用 ImageNet 标签"
+        },
+        {
+          "en": "It played chess by hardware search",
+          "zh": "它用硬件搜索下棋"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "SHRDLU worked because language, objects, memory, and plans were all represented inside one constrained microworld.",
+        "zh": "SHRDLU 有效是因为语言、对象、记忆和计划都表示在同一个受限微世界里。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "nlp",
+        "microworld"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1970-shrdlu-quiz-1",
+        "question": {
+          "en": "Why could SHRDLU appear so fluent in dialogue?",
+          "zh": "为什么 SHRDLU 在对话中显得很流畅？"
+        },
+        "options": [
+          {
+            "en": "It grounded language in a small blocks world with explicit actions",
+            "zh": "它把语言落地到一个小型积木世界和明确动作中"
+          },
+          {
+            "en": "It trained on the full web",
+            "zh": "它在整个网络上训练"
+          },
+          {
+            "en": "It used ImageNet labels",
+            "zh": "它使用 ImageNet 标签"
+          },
+          {
+            "en": "It played chess by hardware search",
+            "zh": "它用硬件搜索下棋"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SHRDLU worked because language, objects, memory, and plans were all represented inside one constrained microworld.",
+          "zh": "SHRDLU 有效是因为语言、对象、记忆和计划都表示在同一个受限微世界里。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "nlp",
+          "microworld"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1997-deep-blue",
+    "year": "1997",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Deep Blue",
+      "zh": "Deep Blue"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "IBM Research",
+        "zh": "IBM Research"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      },
+      "coordinates": [
+        41.2108,
+        -73.8035
+      ]
+    },
+    "description": {
+      "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>",
+      "zh": "<p>Deep Blue 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Murray Campbell",
+          "zh": "Murray Campbell"
+        },
+        "role": {
+          "en": "Deep Blue team member",
+          "zh": "Deep Blue 团队成员"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Specialized chess search hardware\"",
+      "zh": "\"专用国际象棋搜索硬件\""
+    },
+    "quoteAttribution": "《Deep Blue journal article》, Murray Campbell",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Deep Blue journal article",
+      "workAuthors": "Murray Campbell",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / Deep Blue",
+      "zh": "BenchCouncil AI100：博弈 AI / Deep Blue"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage.",
+          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。Deep Blue 把这条路线带到全球舞台。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Deep Blue shaped public expectations for AI milestones and became a reference point for later game systems such as AlphaGo.",
+          "zh": "Deep Blue 影响了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+        "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+          "caption": {
+            "en": "Murray Campbell portrait",
+            "zh": "Murray Campbell 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from IBM Research profile.",
+            "zh": "来自 IBM Research 人物资料页的人物图。"
+          },
+          "sourceName": "IBM Research",
+          "source": "https://research.ibm.com/people/murray-campbell",
+          "sourceUrl": "https://research.ibm.com/people/murray-campbell",
+          "originalImageUrl": "https://research-website-prod-ibmers-images.s3.us-east.cloud-object-storage.appdomain.cloud/3729",
+          "license": "IBM Research profile image; reuse rights not stated.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
+          "caption": {
+            "en": "Chess search tree",
+            "zh": "国际象棋搜索树"
+          },
+          "subcaption": {
+            "en": "Local redraw for Deep Blue, based on the listed source material.",
+            "zh": "Deep Blue 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Artificial Intelligence",
+          "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
+          "caption": {
+            "en": "Hardware-assisted board evaluation",
+            "zh": "硬件辅助棋盘评估"
+          },
+          "subcaption": {
+            "en": "Local redraw for Deep Blue, based on the listed source material.",
+            "zh": "Deep Blue 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Artificial Intelligence",
+          "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Game AI",
+        "zh": "博弈 AI"
+      },
+      "method": {
+        "en": "Specialized chess search hardware",
+        "zh": "专用国际象棋搜索硬件"
+      },
+      "artifact": {
+        "en": "World-champion chess match system",
+        "zh": "世界冠军对弈系统"
+      },
+      "material": {
+        "en": "IBM Research profile and Deep Blue histories",
+        "zh": "IBM Research 人物资料与 Deep Blue 史料"
+      },
+      "demo": {
+        "en": "Search millions of chess positions with evaluation hardware",
+        "zh": "用评估硬件搜索数百万棋局位置"
+      },
+      "visual": "deepblue",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Alpha-Beta Search",
+            "zh": "Alpha-Beta 搜索"
+          },
+          "text": {
+            "en": "A pruning method that avoids searching branches that cannot change the decision.",
+            "zh": "一种剪枝方法，避免搜索不会改变决策的分支。"
+          }
+        },
+        {
+          "label": {
+            "en": "Evaluation Function",
+            "zh": "评估函数"
+          },
+          "text": {
+            "en": "Chess knowledge assigns a score to positions when search stops.",
+            "zh": "搜索停止时，棋类知识为局面赋分。"
+          }
+        },
+        {
+          "label": {
+            "en": "Custom Hardware",
+            "zh": "定制硬件"
+          },
+          "text": {
+            "en": "Special chips accelerated chess move generation and evaluation.",
+            "zh": "专用芯片加速走法生成和局面评估。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        },
+        {
+          "en": "Game AI",
+          "zh": "博弈 AI"
+        },
+        {
+          "en": "Search",
+          "zh": "搜索"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New York, United States",
+          "zh": "美国纽约州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Generate moves",
+          "zh": "生成走法"
+        },
+        {
+          "en": "Prune branches",
+          "zh": "剪枝分支"
+        },
+        {
+          "en": "Score end leaves",
+          "zh": "评估叶节点"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Artificial Intelligence",
+          "title": {
+            "en": "Deep Blue journal article",
+            "zh": "Deep Blue 期刊论文"
+          },
+          "description": {
+            "en": "AI journal article record on Deep Blue as a chess-playing system.",
+            "zh": "关于 Deep Blue 国际象棋系统的 AI 期刊记录。"
+          },
+          "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open article record",
+            "zh": "打开论文记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Murray Campbell, IBM Research",
+            "zh": "Murray Campbell, IBM Research"
+          },
+          "url": "https://research.ibm.com/people/murray-campbell"
+        },
+        {
+          "type": {
+            "en": "Museum",
+            "zh": "博物馆"
+          },
+          "label": {
+            "en": "Mastering the Game, Computer History Museum",
+            "zh": "Mastering the Game, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "IBM100: Deep Blue",
+            "zh": "IBM100: Deep Blue"
+          },
+          "url": "https://www.ibm.com/history/deep-blue"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1997-deep-blue-quiz-1",
+      "question": {
+        "en": "What was Deep Blue especially built to do?",
+        "zh": "Deep Blue 尤其被构建来做什么？"
+      },
+      "options": [
+        {
+          "en": "Search and evaluate chess positions at massive scale",
+          "zh": "大规模搜索并评估国际象棋局面"
+        },
+        {
+          "en": "Generate word embeddings",
+          "zh": "生成词嵌入"
+        },
+        {
+          "en": "Cluster image pixels with t-SNE",
+          "zh": "用 t-SNE 聚类图像像素"
+        },
+        {
+          "en": "Infer Bayesian network structure from text only",
+          "zh": "只从文本推断贝叶斯网络结构"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Deep Blue combined alpha-beta search, handcrafted chess evaluation, and specialized hardware.",
+        "zh": "Deep Blue 结合了 alpha-beta 搜索、手工棋局评估和专用硬件。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "game-ai",
+        "search"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1997-deep-blue-quiz-1",
+        "question": {
+          "en": "What was Deep Blue especially built to do?",
+          "zh": "Deep Blue 尤其被构建来做什么？"
+        },
+        "options": [
+          {
+            "en": "Search and evaluate chess positions at massive scale",
+            "zh": "大规模搜索并评估国际象棋局面"
+          },
+          {
+            "en": "Generate word embeddings",
+            "zh": "生成词嵌入"
+          },
+          {
+            "en": "Cluster image pixels with t-SNE",
+            "zh": "用 t-SNE 聚类图像像素"
+          },
+          {
+            "en": "Infer Bayesian network structure from text only",
+            "zh": "只从文本推断贝叶斯网络结构"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Deep Blue combined alpha-beta search, handcrafted chess evaluation, and specialized hardware.",
+          "zh": "Deep Blue 结合了 alpha-beta 搜索、手工棋局评估和专用硬件。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "game-ai",
+          "search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1974-frame",
+    "year": "1974",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Frame",
+      "zh": "框架"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "MIT Artificial Intelligence Laboratory",
+        "zh": "MIT 人工智能实验室"
+      },
+      "country": {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>",
+      "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "Marvin Minsky"
+        },
+        "role": {
+          "en": "Author of the frame representation proposal",
+          "zh": "框架表示思想提出者"
+        },
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Structured slots with defaults and inheritance\"",
+      "zh": "\"带默认值和继承的槽结构\""
+    },
+    "quoteAttribution": "《A Framework for Representing Knowledge》, Marvin Minsky",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "A Framework for Representing Knowledge",
+      "workAuthors": "Marvin Minsky",
+      "sourceLabel": "",
+      "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Knowledge representation / Frame",
+      "zh": "BenchCouncil AI100：知识表示 / 框架"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Symbolic AI needed richer structures than flat predicate lists. Frames offered reusable templates for scenes and concepts.",
+          "zh": "符号 AI 需要比扁平谓词列表更丰富的结构。框架为场景和概念提供可复用模板。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations.",
+          "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Frames became a central knowledge-representation idea and foreshadowed object-like AI data structures.",
+          "zh": "框架成为知识表示核心思想之一，并预示了类似对象的 AI 数据结构。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+        "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+        "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg": {
+          "caption": {
+            "en": "Marvin Minsky portrait",
+            "zh": "Marvin Minsky 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from MIT News obituary.",
+            "zh": "来自 MIT News 讣闻的人物图。"
+          },
+          "sourceName": "MIT News",
+          "source": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+          "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+          "originalImageUrl": "https://news.mit.edu/sites/default/files/images/201601/HP-MIT-Marvin-Minsky-02.jpg",
+          "license": "MIT News image; terms stated on MIT News media page.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg": {
+          "caption": {
+            "en": "Slot-default frame card",
+            "zh": "槽与默认值框架卡"
+          },
+          "subcaption": {
+            "en": "Local redraw for Frame, based on the listed source material.",
+            "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "MIT Media Lab course archive",
+          "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg": {
+          "caption": {
+            "en": "Frame inheritance sketch",
+            "zh": "框架继承草图"
+          },
+          "subcaption": {
+            "en": "Local redraw for Frame, based on the listed source material.",
+            "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "MIT Media Lab course archive",
+          "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Knowledge representation",
+        "zh": "知识表示"
+      },
+      "method": {
+        "en": "Structured slots with defaults and inheritance",
+        "zh": "带默认值和继承的槽结构"
+      },
+      "artifact": {
+        "en": "Frame representation",
+        "zh": "框架知识表示"
+      },
+      "material": {
+        "en": "Minsky frame paper and MIT historical material",
+        "zh": "Minsky 框架论文与 MIT 史料"
+      },
+      "demo": {
+        "en": "Fill slots and inherit defaults for a situation",
+        "zh": "为情境填槽并继承默认值"
+      },
+      "visual": "frame",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Slot",
+            "zh": "槽"
+          },
+          "text": {
+            "en": "A named field in a frame, such as color, owner, or expected part.",
+            "zh": "框架中的命名字段，例如颜色、拥有者或预期部件。"
+          }
+        },
+        {
+          "label": {
+            "en": "Default Value",
+            "zh": "默认值"
+          },
+          "text": {
+            "en": "A typical assumption used until evidence says otherwise.",
+            "zh": "在证据出现前使用的典型假设。"
+          }
+        },
+        {
+          "label": {
+            "en": "Inheritance",
+            "zh": "继承"
+          },
+          "text": {
+            "en": "Specific frames can reuse knowledge from more general frames.",
+            "zh": "具体框架可以复用更一般框架的知识。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SHRDLU",
+          "zh": "SHRDLU"
+        },
+        {
+          "en": "Cyc",
+          "zh": "Cyc"
+        },
+        {
+          "en": "Knowledge representation",
+          "zh": "知识表示"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Massachusetts, United States",
+          "zh": "美国马萨诸塞州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Choose situation",
+          "zh": "选择情境"
+        },
+        {
+          "en": "Fill slots",
+          "zh": "填充槽"
+        },
+        {
+          "en": "Override defaults",
+          "zh": "覆盖默认值"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "MIT Media Lab course archive",
+          "title": {
+            "en": "A Framework for Representing Knowledge",
+            "zh": "A Framework for Representing Knowledge"
+          },
+          "description": {
+            "en": "Course-hosted copy of Minsky's frame proposal.",
+            "zh": "课程资料中保存的 Minsky 框架论文。"
+          },
+          "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open paper PDF",
+            "zh": "打开论文 PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Framework for Representing Knowledge",
+            "zh": "A Framework for Representing Knowledge"
+          },
+          "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Marvin Minsky obituary, MIT News",
+            "zh": "Marvin Minsky obituary, MIT News"
+          },
+          "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125"
+        },
+        {
+          "type": {
+            "en": "Reference",
+            "zh": "参考资料"
+          },
+          "label": {
+            "en": "Frame, MIT AI memo bibliographic record",
+            "zh": "Frame, MIT AI memo bibliographic record"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/6089"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1974-frame-quiz-1",
+      "question": {
+        "en": "What is a frame mainly used for?",
+        "zh": "框架主要用来做什么？"
+      },
+      "options": [
+        {
+          "en": "Represent a stereotyped situation with slots and defaults",
+          "zh": "用槽和默认值表示典型情境"
+        },
+        {
+          "en": "Normalize neural activations by minibatch",
+          "zh": "按小批量归一化神经激活"
+        },
+        {
+          "en": "Search chess moves on custom chips",
+          "zh": "在定制芯片上搜索棋步"
+        },
+        {
+          "en": "Draw t-SNE scatter plots only",
+          "zh": "只绘制 t-SNE 散点图"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Frames organize contextual knowledge into slots, default assumptions, and inherited structure.",
+        "zh": "框架把上下文知识组织成槽、默认假设和继承结构。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "knowledge-representation"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1974-frame-quiz-1",
+        "question": {
+          "en": "What is a frame mainly used for?",
+          "zh": "框架主要用来做什么？"
+        },
+        "options": [
+          {
+            "en": "Represent a stereotyped situation with slots and defaults",
+            "zh": "用槽和默认值表示典型情境"
+          },
+          {
+            "en": "Normalize neural activations by minibatch",
+            "zh": "按小批量归一化神经激活"
+          },
+          {
+            "en": "Search chess moves on custom chips",
+            "zh": "在定制芯片上搜索棋步"
+          },
+          {
+            "en": "Draw t-SNE scatter plots only",
+            "zh": "只绘制 t-SNE 散点图"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Frames organize contextual knowledge into slots, default assumptions, and inherited structure.",
+          "zh": "框架把上下文知识组织成槽、默认假设和继承结构。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "knowledge-representation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1965-dendral",
+    "year": "1965",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "DENDRAL",
+      "zh": "DENDRAL"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>",
+      "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Edward Feigenbaum",
+          "zh": "Edward Feigenbaum"
+        },
+        "role": {
+          "en": "Leader in expert-system AI",
+          "zh": "专家系统 AI 代表人物"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Rule-guided chemical structure inference\"",
+      "zh": "\"规则引导的化学结构推断\""
+    },
+    "quoteAttribution": "《Chemical inference paper record》, Edward Feigenbaum",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Chemical inference paper record",
+      "workAuthors": "Edward Feigenbaum",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1021/ci60034a002"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Expert systems / DENDRAL",
+      "zh": "BenchCouncil AI100：专家系统 / DENDRAL"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "General-purpose problem solving was not enough for hard scientific tasks. DENDRAL showed that carefully encoded expertise could focus search.",
+          "zh": "通用问题求解不足以处理困难科学任务。DENDRAL 表明，精心编码的专业知识可以聚焦搜索。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints.",
+          "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "DENDRAL helped launch the expert-system era and influenced knowledge engineering in medicine, chemistry, and enterprise systems.",
+          "zh": "DENDRAL 推动了专家系统时代，并影响了医学、化学和企业系统中的知识工程。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
+        "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg",
+        "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg": {
+          "caption": {
+            "en": "Edward Feigenbaum portrait",
+            "zh": "Edward Feigenbaum 肖像"
+          },
+          "subcaption": {
+            "en": "Turing laureate photo from Wikimedia Commons.",
+            "zh": "来自 Wikimedia Commons 的图灵奖得主照片。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2012-06-15%201994%20Turing%20Laureate%20Ed%20Feigenbaum.jpg",
+          "license": "Creative Commons license stated on Commons file page.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg": {
+          "caption": {
+            "en": "Mass spectrum to fragments",
+            "zh": "质谱到片段"
+          },
+          "subcaption": {
+            "en": "Local redraw for DENDRAL, based on the listed source material.",
+            "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "ACS Publications",
+          "source": "https://doi.org/10.1021/ci60034a002",
+          "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg": {
+          "caption": {
+            "en": "Rule-filtered molecule search",
+            "zh": "规则筛选分子搜索"
+          },
+          "subcaption": {
+            "en": "Local redraw for DENDRAL, based on the listed source material.",
+            "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "ACS Publications",
+          "source": "https://doi.org/10.1021/ci60034a002",
+          "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Expert systems",
+        "zh": "专家系统"
+      },
+      "method": {
+        "en": "Rule-guided chemical structure inference",
+        "zh": "规则引导的化学结构推断"
+      },
+      "artifact": {
+        "en": "DENDRAL expert system",
+        "zh": "DENDRAL 专家系统"
+      },
+      "material": {
+        "en": "Chemical inference papers and Turing Award histories",
+        "zh": "化学推断论文与图灵奖史料"
+      },
+      "demo": {
+        "en": "Use expert rules to narrow molecular structures",
+        "zh": "用专家规则缩小分子结构候选"
+      },
+      "visual": "dendral",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Knowledge Engineering",
+            "zh": "知识工程"
+          },
+          "text": {
+            "en": "Experts help encode rules that guide the system.",
+            "zh": "专家帮助编码规则以引导系统。"
+          }
+        },
+        {
+          "label": {
+            "en": "Generate and Test",
+            "zh": "生成与检验"
+          },
+          "text": {
+            "en": "Candidate structures are generated, then filtered by constraints.",
+            "zh": "先生成候选结构，再用约束筛选。"
+          }
+        },
+        {
+          "label": {
+            "en": "Mass Spectrum",
+            "zh": "质谱"
+          },
+          "text": {
+            "en": "Chemical evidence supplies clues about molecular fragments.",
+            "zh": "化学证据提供关于分子片段的线索。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Expert systems",
+          "zh": "专家系统"
+        },
+        {
+          "en": "Cyc",
+          "zh": "Cyc"
+        },
+        {
+          "en": "AI for Science",
+          "zh": "AI for Science"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "California, United States",
+          "zh": "美国加利福尼亚州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Read spectrum",
+          "zh": "读取质谱"
+        },
+        {
+          "en": "Apply rules",
+          "zh": "应用规则"
+        },
+        {
+          "en": "Rank molecules",
+          "zh": "排序分子"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "ACS Publications",
+          "title": {
+            "en": "Chemical inference paper record",
+            "zh": "化学推断论文记录"
+          },
+          "description": {
+            "en": "Primary literature record for early DENDRAL chemical inference.",
+            "zh": "早期 DENDRAL 化学推断工作的原始文献记录。"
+          },
+          "url": "https://doi.org/10.1021/ci60034a002",
+          "source": "https://doi.org/10.1021/ci60034a002",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Applications of Artificial Intelligence for Chemical Inference",
+            "zh": "Applications of Artificial Intelligence for Chemical Inference"
+          },
+          "url": "https://doi.org/10.1021/ci60034a002"
+        },
+        {
+          "type": {
+            "en": "Award",
+            "zh": "奖项资料"
+          },
+          "label": {
+            "en": "ACM Turing Award profile for Edward Feigenbaum",
+            "zh": "ACM Turing Award profile for Edward Feigenbaum"
+          },
+          "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "Stanford Knowledge Systems Laboratory history",
+            "zh": "Stanford Knowledge Systems Laboratory history"
+          },
+          "url": "http://ksl-web.stanford.edu/"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1965-dendral-quiz-1",
+      "question": {
+        "en": "What made DENDRAL historically important?",
+        "zh": "DENDRAL 的历史重要性主要是什么？"
+      },
+      "options": [
+        {
+          "en": "It used expert chemical knowledge to guide scientific inference",
+          "zh": "它用专家化学知识引导科学推断"
+        },
+        {
+          "en": "It invented t-SNE visualization",
+          "zh": "它发明了 t-SNE 可视化"
+        },
+        {
+          "en": "It normalized neural activations",
+          "zh": "它归一化神经激活"
+        },
+        {
+          "en": "It won at Go with Monte Carlo tree search",
+          "zh": "它用蒙特卡洛树搜索赢围棋"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DENDRAL helped show that knowledge-rich expert systems could solve practical scientific tasks.",
+        "zh": "DENDRAL 表明富知识专家系统可以解决实际科学任务。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "expert-system",
+        "science"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1965-dendral-quiz-1",
+        "question": {
+          "en": "What made DENDRAL historically important?",
+          "zh": "DENDRAL 的历史重要性主要是什么？"
+        },
+        "options": [
+          {
+            "en": "It used expert chemical knowledge to guide scientific inference",
+            "zh": "它用专家化学知识引导科学推断"
+          },
+          {
+            "en": "It invented t-SNE visualization",
+            "zh": "它发明了 t-SNE 可视化"
+          },
+          {
+            "en": "It normalized neural activations",
+            "zh": "它归一化神经激活"
+          },
+          {
+            "en": "It won at Go with Monte Carlo tree search",
+            "zh": "它用蒙特卡洛树搜索赢围棋"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DENDRAL helped show that knowledge-rich expert systems could solve practical scientific tasks.",
+          "zh": "DENDRAL 表明富知识专家系统可以解决实际科学任务。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "expert-system",
+          "science"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1999-sift",
+    "year": "1999",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "SIFT",
+      "zh": "SIFT"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of British Columbia",
+        "zh": "不列颠哥伦比亚大学"
+      },
+      "country": {
+        "en": "British Columbia, Canada",
+        "zh": "加拿大不列颠哥伦比亚省"
+      },
+      "coordinates": [
+        49.2606,
+        -123.246
+      ]
+    },
+    "description": {
+      "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>",
+      "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Lowe",
+          "zh": "David Lowe"
+        },
+        "role": {
+          "en": "Inventor of SIFT",
+          "zh": "SIFT 发明者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Scale-invariant local features\"",
+      "zh": "\"尺度不变局部特征\""
+    },
+    "quoteAttribution": "《SIFT ICCV paper PDF》, David Lowe",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "SIFT ICCV paper PDF",
+      "workAuthors": "David Lowe",
+      "sourceLabel": "",
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer vision feature extraction / SIFT",
+      "zh": "BenchCouncil AI100：计算机视觉特征提取 / SIFT"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes.",
+          "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor.",
+          "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "SIFT influenced feature engineering, structure-from-motion pipelines, and many benchmarks for local descriptors.",
+          "zh": "SIFT 影响了特征工程、运动恢复结构流程和许多局部描述子基准。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
+        "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+        "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg": {
+          "caption": {
+            "en": "David Lowe portrait",
+            "zh": "David Lowe 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from UBC Computer Science profile.",
+            "zh": "来自 UBC Computer Science 个人资料页的人物图。"
+          },
+          "sourceName": "University of British Columbia",
+          "source": "https://www.cs.ubc.ca/people/david-lowe",
+          "sourceUrl": "https://www.cs.ubc.ca/people/david-lowe",
+          "originalImageUrl": "https://www.cs.ubc.ca/sites/default/files/styles/profile_page/public/people/lowe.jpg",
+          "license": "UBC profile image; reuse rights not stated.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg": {
+          "caption": {
+            "en": "Scale-space keypoints",
+            "zh": "尺度空间关键点"
+          },
+          "subcaption": {
+            "en": "Local redraw for SIFT, based on the listed source material.",
+            "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "UBC Laboratory for Computational Intelligence",
+          "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg": {
+          "caption": {
+            "en": "Gradient descriptor histogram",
+            "zh": "梯度描述子直方图"
+          },
+          "subcaption": {
+            "en": "Local redraw for SIFT, based on the listed source material.",
+            "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "UBC Laboratory for Computational Intelligence",
+          "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Computer vision feature extraction",
+        "zh": "计算机视觉特征提取"
+      },
+      "method": {
+        "en": "Scale-invariant local features",
+        "zh": "尺度不变局部特征"
+      },
+      "artifact": {
+        "en": "SIFT keypoint descriptor",
+        "zh": "SIFT 关键点描述子"
+      },
+      "material": {
+        "en": "ICCV paper and IJCV article",
+        "zh": "ICCV 论文与 IJCV 文章"
+      },
+      "demo": {
+        "en": "Find stable keypoints across scale and rotation",
+        "zh": "跨尺度与旋转寻找稳定关键点"
+      },
+      "visual": "sift",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Scale Space",
+            "zh": "尺度空间"
+          },
+          "text": {
+            "en": "The image is examined at multiple blur levels to find stable structures.",
+            "zh": "图像在多个模糊尺度上被检查，以寻找稳定结构。"
+          }
+        },
+        {
+          "label": {
+            "en": "Keypoint",
+            "zh": "关键点"
+          },
+          "text": {
+            "en": "A repeatable local point that can be matched across images.",
+            "zh": "可在多张图像间重复匹配的局部点。"
+          }
+        },
+        {
+          "label": {
+            "en": "Descriptor",
+            "zh": "描述子"
+          },
+          "text": {
+            "en": "Gradient histograms summarize the nearby appearance.",
+            "zh": "梯度直方图概括邻域外观。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "HOG",
+          "zh": "HOG"
+        },
+        {
+          "en": "SURF",
+          "zh": "SURF"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "British Columbia, Canada",
+          "zh": "加拿大不列颠哥伦比亚省"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Build scale space",
+          "zh": "构建尺度空间"
+        },
+        {
+          "en": "Pick keypoints",
+          "zh": "选择关键点"
+        },
+        {
+          "en": "Match descriptors",
+          "zh": "匹配描述子"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "UBC Laboratory for Computational Intelligence",
+          "title": {
+            "en": "SIFT ICCV paper PDF",
+            "zh": "SIFT ICCV 论文 PDF"
+          },
+          "description": {
+            "en": "UBC-hosted PDF for the original SIFT conference paper.",
+            "zh": "UBC 托管的 SIFT 原始会议论文 PDF。"
+          },
+          "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open paper PDF",
+            "zh": "打开论文 PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Object Recognition from Local Scale-Invariant Features",
+            "zh": "Object Recognition from Local Scale-Invariant Features"
+          },
+          "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+        },
+        {
+          "type": {
+            "en": "Journal article",
+            "zh": "期刊论文"
+          },
+          "label": {
+            "en": "Distinctive Image Features from Scale-Invariant Keypoints",
+            "zh": "Distinctive Image Features from Scale-Invariant Keypoints"
+          },
+          "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "David Lowe, UBC Computer Science",
+            "zh": "David Lowe, UBC Computer Science"
+          },
+          "url": "https://www.cs.ubc.ca/people/david-lowe"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1999-sift-quiz-1",
+      "question": {
+        "en": "What does SIFT try to make stable?",
+        "zh": "SIFT 试图让什么保持稳定？"
+      },
+      "options": [
+        {
+          "en": "Local image keypoints and descriptors across scale and rotation",
+          "zh": "跨尺度和旋转的局部图像关键点与描述子"
+        },
+        {
+          "en": "A chess opening book",
+          "zh": "国际象棋开局库"
+        },
+        {
+          "en": "A Bayesian network prior",
+          "zh": "贝叶斯网络先验"
+        },
+        {
+          "en": "A natural-language chatbot script",
+          "zh": "自然语言聊天脚本"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "SIFT detects local features designed to remain matchable despite common image transformations.",
+        "zh": "SIFT 检测设计为在常见图像变换下仍可匹配的局部特征。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "vision",
+        "features"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1999-sift-quiz-1",
+        "question": {
+          "en": "What does SIFT try to make stable?",
+          "zh": "SIFT 试图让什么保持稳定？"
+        },
+        "options": [
+          {
+            "en": "Local image keypoints and descriptors across scale and rotation",
+            "zh": "跨尺度和旋转的局部图像关键点与描述子"
+          },
+          {
+            "en": "A chess opening book",
+            "zh": "国际象棋开局库"
+          },
+          {
+            "en": "A Bayesian network prior",
+            "zh": "贝叶斯网络先验"
+          },
+          {
+            "en": "A natural-language chatbot script",
+            "zh": "自然语言聊天脚本"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SIFT detects local features designed to remain matchable despite common image transformations.",
+          "zh": "SIFT 检测设计为在常见图像变换下仍可匹配的局部特征。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "vision",
+          "features"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-2008-tsne",
+    "year": "2008",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "t-SNE",
+      "zh": "t-SNE"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Tilburg University / University of Toronto",
+        "zh": "蒂尔堡大学 / 多伦多大学"
+      },
+      "country": {
+        "en": "Netherlands and Canada",
+        "zh": "荷兰与加拿大"
+      },
+      "coordinates": [
+        51.5633,
+        5.0431
+      ]
+    },
+    "description": {
+      "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>",
+      "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Laurens van der Maaten",
+          "zh": "Laurens van der Maaten"
+        },
+        "role": {
+          "en": "Co-author of t-SNE",
+          "zh": "t-SNE 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Neighbor-preserving nonlinear embedding\"",
+      "zh": "\"保持邻域的非线性嵌入\""
+    },
+    "quoteAttribution": "《Visualizing Data using t-SNE》, Laurens van der Maaten",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Visualizing Data using t-SNE",
+      "workAuthors": "Laurens van der Maaten",
+      "sourceLabel": "",
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Dimensionality reduction / t-SNE",
+      "zh": "BenchCouncil AI100：降维 / t-SNE"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data.",
+          "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map.",
+          "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "It became a standard exploratory visualization, while also teaching users to treat cluster maps carefully.",
+          "zh": "它成为标准探索性可视化工具，同时也提醒用户谨慎解读簇图。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+        "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+        "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png": {
+          "caption": {
+            "en": "Laurens van der Maaten portrait",
+            "zh": "Laurens van der Maaten 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from van der Maaten homepage.",
+            "zh": "来自 van der Maaten 个人主页的人物图。"
+          },
+          "sourceName": "Laurens van der Maaten homepage",
+          "source": "https://lvdmaaten.github.io/",
+          "sourceUrl": "https://lvdmaaten.github.io/",
+          "originalImageUrl": "https://lvdmaaten.github.io/images/laurens.png",
+          "license": "Personal website image; reuse rights not stated.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg": {
+          "caption": {
+            "en": "Neighbor probability matching",
+            "zh": "邻域概率匹配"
+          },
+          "subcaption": {
+            "en": "Local redraw for t-SNE, based on the listed source material.",
+            "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Journal of Machine Learning Research",
+          "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg": {
+          "caption": {
+            "en": "2D cluster map",
+            "zh": "二维簇图"
+          },
+          "subcaption": {
+            "en": "Local redraw for t-SNE, based on the listed source material.",
+            "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Journal of Machine Learning Research",
+          "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimensionality reduction",
+        "zh": "降维"
+      },
+      "method": {
+        "en": "Neighbor-preserving nonlinear embedding",
+        "zh": "保持邻域的非线性嵌入"
+      },
+      "artifact": {
+        "en": "t-distributed stochastic neighbor embedding",
+        "zh": "t 分布随机邻域嵌入"
+      },
+      "material": {
+        "en": "JMLR paper and author materials",
+        "zh": "JMLR 论文与作者资料"
+      },
+      "demo": {
+        "en": "Turn high-dimensional neighborhoods into 2D clusters",
+        "zh": "把高维邻域转为二维簇"
+      },
+      "visual": "tsne",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Perplexity",
+            "zh": "困惑度"
+          },
+          "text": {
+            "en": "A parameter that roughly controls neighborhood size.",
+            "zh": "一个大致控制邻域大小的参数。"
+          }
+        },
+        {
+          "label": {
+            "en": "Local Neighborhood",
+            "zh": "局部邻域"
+          },
+          "text": {
+            "en": "The method emphasizes nearby points more than global distances.",
+            "zh": "该方法更强调邻近点，而非全局距离。"
+          }
+        },
+        {
+          "label": {
+            "en": "Crowding Problem",
+            "zh": "拥挤问题"
+          },
+          "text": {
+            "en": "Heavy tails help separate groups in the low-dimensional map.",
+            "zh": "重尾分布帮助低维图中群组分开。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Isomap",
+          "zh": "Isomap"
+        },
+        {
+          "en": "Locally linear embedding",
+          "zh": "局部线性嵌入"
+        },
+        {
+          "en": "Embedding visualization",
+          "zh": "嵌入可视化"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Netherlands and Canada",
+          "zh": "荷兰与加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Compute neighbors",
+          "zh": "计算邻域"
+        },
+        {
+          "en": "Match probabilities",
+          "zh": "匹配概率"
+        },
+        {
+          "en": "Relax map",
+          "zh": "松弛地图"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Journal of Machine Learning Research",
+          "title": {
+            "en": "Visualizing Data using t-SNE",
+            "zh": "Visualizing Data using t-SNE"
+          },
+          "description": {
+            "en": "JMLR article page for the canonical t-SNE paper.",
+            "zh": "t-SNE 经典论文的 JMLR 页面。"
+          },
+          "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open JMLR page",
+            "zh": "打开 JMLR 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Visualizing Data using t-SNE",
+            "zh": "Visualizing Data using t-SNE"
+          },
+          "url": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+        },
+        {
+          "type": {
+            "en": "Author page",
+            "zh": "作者页面"
+          },
+          "label": {
+            "en": "Laurens van der Maaten homepage",
+            "zh": "Laurens van der Maaten homepage"
+          },
+          "url": "https://lvdmaaten.github.io/"
+        },
+        {
+          "type": {
+            "en": "Guide",
+            "zh": "指南"
+          },
+          "label": {
+            "en": "How to Use t-SNE Effectively, Distill",
+            "zh": "How to Use t-SNE Effectively, Distill"
+          },
+          "url": "https://distill.pub/2016/misread-tsne/"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "2008-tsne-quiz-1",
+      "question": {
+        "en": "What kind of structure does t-SNE mainly try to preserve?",
+        "zh": "t-SNE 主要试图保留哪类结构？"
+      },
+      "options": [
+        {
+          "en": "Local neighborhood relationships",
+          "zh": "局部邻域关系"
+        },
+        {
+          "en": "Exact global distances everywhere",
+          "zh": "所有位置的精确全局距离"
+        },
+        {
+          "en": "Chess move legality tables",
+          "zh": "国际象棋走法合法性表"
+        },
+        {
+          "en": "Chemical mass spectra only",
+          "zh": "仅化学质谱"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "t-SNE is best understood as a local-neighborhood visualization method, not a faithful global map.",
+        "zh": "t-SNE 最适合理解为局部邻域可视化方法，而不是忠实全局地图。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "visualization",
+        "dimensionality-reduction"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "2008-tsne-quiz-1",
+        "question": {
+          "en": "What kind of structure does t-SNE mainly try to preserve?",
+          "zh": "t-SNE 主要试图保留哪类结构？"
+        },
+        "options": [
+          {
+            "en": "Local neighborhood relationships",
+            "zh": "局部邻域关系"
+          },
+          {
+            "en": "Exact global distances everywhere",
+            "zh": "所有位置的精确全局距离"
+          },
+          {
+            "en": "Chess move legality tables",
+            "zh": "国际象棋走法合法性表"
+          },
+          {
+            "en": "Chemical mass spectra only",
+            "zh": "仅化学质谱"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "t-SNE is best understood as a local-neighborhood visualization method, not a faithful global map.",
+          "zh": "t-SNE 最适合理解为局部邻域可视化方法，而不是忠实全局地图。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "visualization",
+          "dimensionality-reduction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1958-rosenblatt-perceptron",
+    "year": "1958",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Rosenblatt Perceptron",
+      "zh": "Rosenblatt 感知机"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Cornell Aeronautical Laboratory",
+        "zh": "康奈尔航空实验室"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      },
+      "coordinates": [
+        42.8864,
+        -78.8784
+      ]
+    },
+    "description": {
+      "en": "<p>Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. It promised machines that could learn from examples rather than being programmed only by explicit rules. The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification.</p>",
+      "zh": "<p>Rosenblatt 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Frank Rosenblatt",
+          "zh": "Frank Rosenblatt"
+        },
+        "role": {
+          "en": "Inventor of the perceptron",
+          "zh": "感知机发明者"
+        },
+        "avatar": "resources/images/figures/frank-rosenblatt.png",
+        "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Linear threshold learning machine\"",
+      "zh": "\"线性阈值学习机\""
+    },
+    "quoteAttribution": "《The perceptron paper record》, Frank Rosenblatt",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "The perceptron paper record",
+      "workAuthors": "Frank Rosenblatt",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1037/h0042519"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural networks / Rosenblatt Perceptron",
+      "zh": "BenchCouncil AI100：神经网络 / Rosenblatt 感知机"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception.",
+          "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates.",
+          "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "The perceptron shaped neural-network history, including later debates about linear separability and multilayer learning.",
+          "zh": "感知机塑造了神经网络史，包括后来关于线性可分性和多层学习的争论。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+        "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+        "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg": {
+          "caption": {
+            "en": "Frank Rosenblatt with perceptron hardware",
+            "zh": "Frank Rosenblatt 与感知机硬件"
+          },
+          "subcaption": {
+            "en": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
+            "zh": "Cornell 关于 Rosenblatt 与感知机谱系的历史图片。"
+          },
+          "sourceName": "Cornell Chronicle",
+          "source": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "originalImageUrl": "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2019-09/0925_rosenblatt_main.jpg",
+          "license": "Cornell historical image; reuse rights not stated on extracted image URL.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg": {
+          "caption": {
+            "en": "Threshold learning line",
+            "zh": "阈值学习边界"
+          },
+          "subcaption": {
+            "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+            "zh": "Rosenblatt 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Psychological Review",
+          "source": "https://doi.org/10.1037/h0042519",
+          "sourceUrl": "https://doi.org/10.1037/h0042519",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg": {
+          "caption": {
+            "en": "Sensor grid to neuron",
+            "zh": "传感器网格到神经元"
+          },
+          "subcaption": {
+            "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+            "zh": "Rosenblatt 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Psychological Review",
+          "source": "https://doi.org/10.1037/h0042519",
+          "sourceUrl": "https://doi.org/10.1037/h0042519",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Linear threshold learning machine",
+        "zh": "线性阈值学习机"
+      },
+      "artifact": {
+        "en": "Mark I Perceptron lineage",
+        "zh": "Mark I 感知机谱系"
+      },
+      "material": {
+        "en": "Cornell historical record and original paper",
+        "zh": "Cornell 史料与原始论文"
+      },
+      "demo": {
+        "en": "Adjust weights until a threshold separates classes",
+        "zh": "调整权重直到阈值分开类别"
+      },
+      "visual": "perceptron",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Threshold Unit",
+            "zh": "阈值单元"
+          },
+          "text": {
+            "en": "A neuron-like unit outputs one class when a weighted sum crosses a boundary.",
+            "zh": "类似神经元的单元在加权和越过边界时输出一个类别。"
+          }
+        },
+        {
+          "label": {
+            "en": "Weight Update",
+            "zh": "权重更新"
+          },
+          "text": {
+            "en": "Errors change the weights so future predictions improve.",
+            "zh": "错误会改变权重，使未来预测更好。"
+          }
+        },
+        {
+          "label": {
+            "en": "Linear Separability",
+            "zh": "线性可分"
+          },
+          "text": {
+            "en": "A single perceptron succeeds only when a straight boundary can separate classes.",
+            "zh": "单个感知机只有在直线边界可分时才成功。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "McCulloch-Pitts neuron",
+          "zh": "McCulloch-Pitts 神经元"
+        },
+        {
+          "en": "Back-propagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "Neural networks",
+          "zh": "神经网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New York, United States",
+          "zh": "美国纽约州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Read sensors",
+          "zh": "读取传感器"
+        },
+        {
+          "en": "Sum weights",
+          "zh": "求加权和"
+        },
+        {
+          "en": "Move boundary",
+          "zh": "移动边界"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Psychological Review",
+          "title": {
+            "en": "The perceptron paper record",
+            "zh": "感知机论文记录"
+          },
+          "description": {
+            "en": "Canonical paper record for Rosenblatt's probabilistic model.",
+            "zh": "Rosenblatt 概率模型经典论文记录。"
+          },
+          "url": "https://doi.org/10.1037/h0042519",
+          "source": "https://doi.org/10.1037/h0042519",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+            "zh": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          },
+          "url": "https://doi.org/10.1037/h0042519"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "Cornell Chronicle perceptron retrospective",
+            "zh": "Cornell Chronicle perceptron retrospective"
+          },
+          "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
+        },
+        {
+          "type": {
+            "en": "Museum",
+            "zh": "博物馆"
+          },
+          "label": {
+            "en": "Smithsonian Mark I Perceptron object record",
+            "zh": "Smithsonian Mark I Perceptron object record"
+          },
+          "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1958-rosenblatt-perceptron-quiz-1",
+      "question": {
+        "en": "What is the basic computation in a perceptron?",
+        "zh": "感知机的基本计算是什么？"
+      },
+      "options": [
+        {
+          "en": "A weighted sum followed by a threshold decision",
+          "zh": "加权求和后进行阈值决策"
+        },
+        {
+          "en": "A t-SNE perplexity search",
+          "zh": "t-SNE 困惑度搜索"
+        },
+        {
+          "en": "A Bayesian network message pass only",
+          "zh": "仅贝叶斯网络消息传递"
+        },
+        {
+          "en": "A molecular mass spectrum filter",
+          "zh": "分子质谱过滤器"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "A perceptron classifies by summing weighted inputs and comparing the result to a threshold.",
+        "zh": "感知机通过输入加权求和并与阈值比较来分类。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "neural-network",
+        "classification"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1958-rosenblatt-perceptron-quiz-1",
+        "question": {
+          "en": "What is the basic computation in a perceptron?",
+          "zh": "感知机的基本计算是什么？"
+        },
+        "options": [
+          {
+            "en": "A weighted sum followed by a threshold decision",
+            "zh": "加权求和后进行阈值决策"
+          },
+          {
+            "en": "A t-SNE perplexity search",
+            "zh": "t-SNE 困惑度搜索"
+          },
+          {
+            "en": "A Bayesian network message pass only",
+            "zh": "仅贝叶斯网络消息传递"
+          },
+          {
+            "en": "A molecular mass spectrum filter",
+            "zh": "分子质谱过滤器"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "A perceptron classifies by summing weighted inputs and comparing the result to a threshold.",
+          "zh": "感知机通过输入加权求和并与阈值比较来分类。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "neural-network",
+          "classification"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-2006-dbn",
+    "year": "2006",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Deep Belief Network",
+      "zh": "深度置信网络"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Ontario, Canada",
+        "zh": "加拿大安大略省"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>",
+      "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。Hinton 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "Geoffrey Hinton"
+        },
+        "role": {
+          "en": "Co-author of deep belief net learning",
+          "zh": "深度置信网络学习共同作者"
+        },
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Layer-wise unsupervised pretraining\"",
+      "zh": "\"逐层无监督预训练\""
+    },
+    "quoteAttribution": "《Fast learning algorithm for deep belief nets》, Geoffrey Hinton",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Fast learning algorithm for deep belief nets",
+      "workAuthors": "Geoffrey Hinton",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Deep learning / Deep Belief Network",
+      "zh": "BenchCouncil AI100：深度学习 / 深度置信网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Deep neural networks were hard to optimize with ordinary supervised training. Layer-wise pretraining offered a practical route.",
+          "zh": "深层神经网络用普通监督训练很难优化。逐层预训练提供了一条实用路线。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network.",
+          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "DBNs helped reopen deep learning research and influenced later representation-learning work.",
+          "zh": "DBN 帮助重新打开深度学习研究，并影响了后来的表示学习工作。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+        "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+        "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg": {
+          "caption": {
+            "en": "Geoffrey Hinton portrait",
+            "zh": "Geoffrey Hinton 肖像"
+          },
+          "subcaption": {
+            "en": "Photo from Hinton's University of Toronto page.",
+            "zh": "来自 Hinton 多伦多大学页面的人物图。"
+          },
+          "sourceName": "University of Toronto",
+          "source": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+          "sourceUrl": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+          "originalImageUrl": "https://www.cs.toronto.edu/~hinton/geoff1.jpg",
+          "license": "University personal photo page; reuse rights not stated.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg": {
+          "caption": {
+            "en": "Stacked RBM pretraining",
+            "zh": "堆叠 RBM 预训练"
+          },
+          "subcaption": {
+            "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+            "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Neural Computation",
+          "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg": {
+          "caption": {
+            "en": "Pretrain then fine-tune",
+            "zh": "预训练后微调"
+          },
+          "subcaption": {
+            "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+            "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Neural Computation",
+          "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      },
+      "method": {
+        "en": "Layer-wise unsupervised pretraining",
+        "zh": "逐层无监督预训练"
+      },
+      "artifact": {
+        "en": "Deep belief net training recipe",
+        "zh": "深度置信网络训练方案"
+      },
+      "material": {
+        "en": "Neural Computation paper and University of Toronto materials",
+        "zh": "Neural Computation 论文与多伦多大学资料"
+      },
+      "demo": {
+        "en": "Pretrain stacked RBMs before supervised fine-tuning",
+        "zh": "先预训练堆叠 RBM，再监督微调"
+      },
+      "visual": "dbn",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Restricted Boltzmann Machine",
+            "zh": "受限玻尔兹曼机"
+          },
+          "text": {
+            "en": "A two-layer generative model used for pretraining.",
+            "zh": "用于预训练的双层生成模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Greedy Layer Training",
+            "zh": "贪心逐层训练"
+          },
+          "text": {
+            "en": "Train one layer at a time before tuning the whole model.",
+            "zh": "先一次训练一层，再微调整体模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Fine-Tuning",
+            "zh": "微调"
+          },
+          "text": {
+            "en": "Supervised training adjusts the pretrained stack for a target task.",
+            "zh": "监督训练把预训练堆栈调整到目标任务。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Back-propagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "Dropout",
+          "zh": "Dropout"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Ontario, Canada",
+          "zh": "加拿大安大略省"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Train RBM 1",
+          "zh": "训练 RBM 1"
+        },
+        {
+          "en": "Stack features",
+          "zh": "堆叠特征"
+        },
+        {
+          "en": "Fine-tune labels",
+          "zh": "标签微调"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Neural Computation",
+          "title": {
+            "en": "Fast learning algorithm for deep belief nets",
+            "zh": "深度置信网络快速学习算法"
+          },
+          "description": {
+            "en": "Neural Computation paper record for deep belief nets.",
+            "zh": "深度置信网络 Neural Computation 论文记录。"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Fast Learning Algorithm for Deep Belief Nets",
+            "zh": "A Fast Learning Algorithm for Deep Belief Nets"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527"
+        },
+        {
+          "type": {
+            "en": "Science article",
+            "zh": "Science 文章"
+          },
+          "label": {
+            "en": "Reducing the Dimensionality of Data with Neural Networks",
+            "zh": "Reducing the Dimensionality of Data with Neural Networks"
+          },
+          "url": "https://doi.org/10.1126/science.1127647"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Geoffrey Hinton photo page",
+            "zh": "Geoffrey Hinton photo page"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "2006-dbn-quiz-1",
+      "question": {
+        "en": "What training idea made early deep belief networks practical?",
+        "zh": "什么训练思想让早期深度置信网络变得实用？"
+      },
+      "options": [
+        {
+          "en": "Greedy layer-wise pretraining",
+          "zh": "贪心逐层预训练"
+        },
+        {
+          "en": "One-shot chess hardware search",
+          "zh": "一次性国际象棋硬件搜索"
+        },
+        {
+          "en": "Frame slot inheritance only",
+          "zh": "仅框架槽继承"
+        },
+        {
+          "en": "Mass-spectrum molecule filtering",
+          "zh": "质谱分子过滤"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DBNs trained layers one at a time to obtain useful representations before task-specific fine-tuning.",
+        "zh": "DBN 逐层训练以获得有用表示，然后再针对任务微调。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "deep-learning",
+        "pretraining"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "2006-dbn-quiz-1",
+        "question": {
+          "en": "What training idea made early deep belief networks practical?",
+          "zh": "什么训练思想让早期深度置信网络变得实用？"
+        },
+        "options": [
+          {
+            "en": "Greedy layer-wise pretraining",
+            "zh": "贪心逐层预训练"
+          },
+          {
+            "en": "One-shot chess hardware search",
+            "zh": "一次性国际象棋硬件搜索"
+          },
+          {
+            "en": "Frame slot inheritance only",
+            "zh": "仅框架槽继承"
+          },
+          {
+            "en": "Mass-spectrum molecule filtering",
+            "zh": "质谱分子过滤"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DBNs trained layers one at a time to obtain useful representations before task-specific fine-tuning.",
+          "zh": "DBN 逐层训练以获得有用表示，然后再针对任务微调。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "deep-learning",
+          "pretraining"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1988-td-update",
+    "year": "1988",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Temporal-Difference Update",
+      "zh": "时序差分更新"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "GTE Laboratories / University of Massachusetts lineage",
+        "zh": "GTE 实验室 / 麻省大学学术谱系"
+      },
+      "country": {
+        "en": "United States and Canada",
+        "zh": "美国与加拿大"
+      },
+      "coordinates": [
+        42.3732,
+        -72.5199
+      ]
+    },
+    "description": {
+      "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>",
+      "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Richard Sutton",
+          "zh": "Richard Sutton"
+        },
+        "role": {
+          "en": "Author of temporal-difference learning",
+          "zh": "时序差分学习提出者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Bootstrapped value prediction\"",
+      "zh": "\"自举式价值预测\""
+    },
+    "quoteAttribution": "《Learning to predict by temporal differences》, Richard Sutton",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Learning to predict by temporal differences",
+      "workAuthors": "Richard Sutton",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00115009"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
+      "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "TD learning is a cornerstone of modern reinforcement learning and value-based control.",
+          "zh": "TD 学习是现代强化学习和值函数控制的基石。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+        "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+        "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
+          "caption": {
+            "en": "Richard Sutton portrait",
+            "zh": "Richard Sutton 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from Sutton's personal homepage.",
+            "zh": "来自 Sutton 个人主页的人物图。"
+          },
+          "sourceName": "Richard Sutton homepage",
+          "source": "http://incompleteideas.net/",
+          "sourceUrl": "http://incompleteideas.net/",
+          "originalImageUrl": "http://incompleteideas.net/sutton-head12.jpg",
+          "license": "Personal website image; reuse rights not stated.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
+          "caption": {
+            "en": "Value timeline update",
+            "zh": "价值时间线更新"
+          },
+          "subcaption": {
+            "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+            "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Machine Learning",
+          "source": "https://doi.org/10.1007/BF00115009",
+          "sourceUrl": "https://doi.org/10.1007/BF00115009",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg": {
+          "caption": {
+            "en": "TD error meter",
+            "zh": "TD 误差仪表"
+          },
+          "subcaption": {
+            "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+            "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "Machine Learning",
+          "source": "https://doi.org/10.1007/BF00115009",
+          "sourceUrl": "https://doi.org/10.1007/BF00115009",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Bootstrapped value prediction",
+        "zh": "自举式价值预测"
+      },
+      "artifact": {
+        "en": "TD learning update rule",
+        "zh": "TD 学习更新规则"
+      },
+      "material": {
+        "en": "Machine Learning paper and RL histories",
+        "zh": "Machine Learning 论文与强化学习史料"
+      },
+      "demo": {
+        "en": "Update a value estimate from the next prediction and reward",
+        "zh": "用下一步预测和奖励更新价值估计"
+      },
+      "visual": "td",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "TD Error",
+            "zh": "TD 误差"
+          },
+          "text": {
+            "en": "The gap between current prediction and one-step bootstrapped target.",
+            "zh": "当前预测与一步自举目标之间的差距。"
+          }
+        },
+        {
+          "label": {
+            "en": "Bootstrapping",
+            "zh": "自举"
+          },
+          "text": {
+            "en": "A prediction is updated using another prediction.",
+            "zh": "用另一个预测来更新一个预测。"
+          }
+        },
+        {
+          "label": {
+            "en": "Value Function",
+            "zh": "价值函数"
+          },
+          "text": {
+            "en": "A function estimates expected future reward from a state.",
+            "zh": "估计从某状态出发的预期未来奖励。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Q Learning",
+          "zh": "Q Learning"
+        },
+        {
+          "en": "Actor-Critic",
+          "zh": "Actor-Critic"
+        },
+        {
+          "en": "Deep Q Network",
+          "zh": "深度 Q 网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States and Canada",
+          "zh": "美国与加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Observe reward",
+          "zh": "观察奖励"
+        },
+        {
+          "en": "Compare next value",
+          "zh": "比较下一价值"
+        },
+        {
+          "en": "Nudge estimate",
+          "zh": "推进估计"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Machine Learning",
+          "title": {
+            "en": "Learning to predict by temporal differences",
+            "zh": "用时序差分学习预测"
+          },
+          "description": {
+            "en": "Canonical Machine Learning paper record for TD learning.",
+            "zh": "TD 学习经典 Machine Learning 论文记录。"
+          },
+          "url": "https://doi.org/10.1007/BF00115009",
+          "source": "https://doi.org/10.1007/BF00115009",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Learning to Predict by the Methods of Temporal Differences",
+            "zh": "Learning to Predict by the Methods of Temporal Differences"
+          },
+          "url": "https://doi.org/10.1007/BF00115009"
+        },
+        {
+          "type": {
+            "en": "Homepage",
+            "zh": "个人主页"
+          },
+          "label": {
+            "en": "Richard Sutton homepage",
+            "zh": "Richard Sutton homepage"
+          },
+          "url": "http://incompleteideas.net/"
+        },
+        {
+          "type": {
+            "en": "Award",
+            "zh": "奖项资料"
+          },
+          "label": {
+            "en": "ACM 2024 Turing Award announcement",
+            "zh": "ACM 2024 Turing Award announcement"
+          },
+          "url": "https://awards.acm.org/about/2024-turing"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1988-td-update-quiz-1",
+      "question": {
+        "en": "What does a TD update compare?",
+        "zh": "TD 更新比较什么？"
+      },
+      "options": [
+        {
+          "en": "The current value estimate with reward plus next value estimate",
+          "zh": "当前价值估计与“奖励加下一价值估计”"
+        },
+        {
+          "en": "Two unrelated image captions",
+          "zh": "两个无关图像标题"
+        },
+        {
+          "en": "A molecule with a chess position",
+          "zh": "一个分子与一个棋局"
+        },
+        {
+          "en": "Only final episode reward after all learning stops",
+          "zh": "学习停止后才看的最终回合奖励"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "TD learning bootstraps by using the next prediction as part of the learning target.",
+        "zh": "TD 学习用下一步预测作为学习目标的一部分来进行自举。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "reinforcement-learning",
+        "value"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1988-td-update-quiz-1",
+        "question": {
+          "en": "What does a TD update compare?",
+          "zh": "TD 更新比较什么？"
+        },
+        "options": [
+          {
+            "en": "The current value estimate with reward plus next value estimate",
+            "zh": "当前价值估计与“奖励加下一价值估计”"
+          },
+          {
+            "en": "Two unrelated image captions",
+            "zh": "两个无关图像标题"
+          },
+          {
+            "en": "A molecule with a chess position",
+            "zh": "一个分子与一个棋局"
+          },
+          {
+            "en": "Only final episode reward after all learning stops",
+            "zh": "学习停止后才看的最终回合奖励"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "TD learning bootstraps by using the next prediction as part of the learning target.",
+          "zh": "TD 学习用下一步预测作为学习目标的一部分来进行自举。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "reinforcement-learning",
+          "value"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1985-bayesian-network",
+    "year": "1985",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Bayesian Network",
+      "zh": "贝叶斯网络"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of California, Los Angeles",
+        "zh": "加州大学洛杉矶分校"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        34.0689,
+        -118.4452
+      ]
+    },
+    "description": {
+      "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>",
+      "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Judea Pearl",
+          "zh": "Judea Pearl"
+        },
+        "role": {
+          "en": "Pioneer of Bayesian networks and causal AI",
+          "zh": "贝叶斯网络与因果 AI 先驱"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Directed acyclic graph plus conditional probabilities\"",
+      "zh": "\"有向无环图加条件概率\""
+    },
+    "quoteAttribution": "《Bayesian Networks technical paper》, Judea Pearl",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Bayesian Networks technical paper",
+      "workAuthors": "Judea Pearl",
+      "sourceLabel": "",
+      "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Probabilistic graphical models / Bayesian Network",
+      "zh": "BenchCouncil AI100：概率图模型 / 贝叶斯网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Symbolic AI struggled with uncertainty. Probabilistic graphical models connected knowledge representation with statistical inference.",
+          "zh": "符号 AI 难以处理不确定性。概率图模型把知识表示与统计推断连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular.",
+          "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Bayesian networks shaped probabilistic AI and later causal reasoning frameworks.",
+          "zh": "贝叶斯网络塑造了概率 AI，并影响了后来的因果推理框架。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+        "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+        "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg": {
+          "caption": {
+            "en": "Judea Pearl portrait",
+            "zh": "Judea Pearl 肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from Wikimedia Commons NIPS 2013 image.",
+            "zh": "来自 Wikimedia Commons NIPS 2013 图片的人物图。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Judea%20Pearl%20at%20NIPS%202013%20%28117881981594%29%20%28cropped%29.jpg",
+          "license": "Creative Commons license stated on Commons file page.",
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg": {
+          "caption": {
+            "en": "Bayesian network DAG",
+            "zh": "贝叶斯网络 DAG"
+          },
+          "subcaption": {
+            "en": "Local redraw for Bayesian Network, based on the listed source material.",
+            "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "UCLA Computer Science",
+          "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg": {
+          "caption": {
+            "en": "Evidence message passing",
+            "zh": "证据消息传递"
+          },
+          "subcaption": {
+            "en": "Local redraw for Bayesian Network, based on the listed source material.",
+            "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+          },
+          "sourceName": "UCLA Computer Science",
+          "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Supporting image / Distinct explainer graphic",
+            "zh": "辅助图片 / 独立解释图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Probabilistic graphical models",
+        "zh": "概率图模型"
+      },
+      "method": {
+        "en": "Directed acyclic graph plus conditional probabilities",
+        "zh": "有向无环图加条件概率"
+      },
+      "artifact": {
+        "en": "Bayesian network representation",
+        "zh": "贝叶斯网络表示"
+      },
+      "material": {
+        "en": "UCLA technical reports and Pearl references",
+        "zh": "UCLA 技术报告与 Pearl 资料"
+      },
+      "demo": {
+        "en": "Pass probabilistic messages through a causal graph",
+        "zh": "在因果图中传递概率消息"
+      },
+      "visual": "bayesnet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Directed Acyclic Graph",
+            "zh": "有向无环图"
+          },
+          "text": {
+            "en": "Nodes are variables and arrows express dependency structure.",
+            "zh": "节点是变量，箭头表达依赖结构。"
+          }
+        },
+        {
+          "label": {
+            "en": "Conditional Probability Table",
+            "zh": "条件概率表"
+          },
+          "text": {
+            "en": "Each node stores probabilities given its parents.",
+            "zh": "每个节点存储在父节点条件下的概率。"
+          }
+        },
+        {
+          "label": {
+            "en": "Belief Updating",
+            "zh": "信念更新"
+          },
+          "text": {
+            "en": "Evidence changes probabilities throughout the graph.",
+            "zh": "证据会改变图中各处概率。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "LDA",
+          "zh": "LDA"
+        },
+        {
+          "en": "CRF",
+          "zh": "CRF"
+        },
+        {
+          "en": "Causal reasoning",
+          "zh": "因果推理"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "California, United States",
+          "zh": "美国加利福尼亚州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Observe evidence",
+          "zh": "观察证据"
+        },
+        {
+          "en": "Pass messages",
+          "zh": "传递消息"
+        },
+        {
+          "en": "Update beliefs",
+          "zh": "更新信念"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "UCLA Computer Science",
+          "title": {
+            "en": "Bayesian Networks technical paper",
+            "zh": "贝叶斯网络技术论文"
+          },
+          "description": {
+            "en": "UCLA-hosted PDF on Bayesian networks by Judea Pearl.",
+            "zh": "UCLA 托管的 Judea Pearl 贝叶斯网络 PDF。"
+          },
+          "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open UCLA PDF",
+            "zh": "打开 UCLA PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Bayesian Networks",
+            "zh": "Bayesian Networks"
+          },
+          "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+        },
+        {
+          "type": {
+            "en": "Homepage",
+            "zh": "个人主页"
+          },
+          "label": {
+            "en": "Judea Pearl homepage",
+            "zh": "Judea Pearl homepage"
+          },
+          "url": "https://bayes.cs.ucla.edu/home.htm"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Judea Pearl, UCLA Samueli",
+            "zh": "Judea Pearl, UCLA Samueli"
+          },
+          "url": "https://samueli.ucla.edu/judea-pearl/"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "1985-bayesian-network-quiz-1",
+      "question": {
+        "en": "What does a Bayesian network combine?",
+        "zh": "贝叶斯网络结合了什么？"
+      },
+      "options": [
+        {
+          "en": "A directed graph and conditional probabilities",
+          "zh": "有向图与条件概率"
+        },
+        {
+          "en": "A chess chip and opening book only",
+          "zh": "只有棋类芯片和开局库"
+        },
+        {
+          "en": "A scale-space image descriptor only",
+          "zh": "只有尺度空间图像描述子"
+        },
+        {
+          "en": "A blocks-world parser without uncertainty",
+          "zh": "没有不确定性的积木世界解析器"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The graph expresses dependency structure, and the probabilities support belief updating under evidence.",
+        "zh": "图表达依赖结构，概率支持在证据下更新信念。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "probabilistic-ai",
+        "knowledge-representation"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1985-bayesian-network-quiz-1",
+        "question": {
+          "en": "What does a Bayesian network combine?",
+          "zh": "贝叶斯网络结合了什么？"
+        },
+        "options": [
+          {
+            "en": "A directed graph and conditional probabilities",
+            "zh": "有向图与条件概率"
+          },
+          {
+            "en": "A chess chip and opening book only",
+            "zh": "只有棋类芯片和开局库"
+          },
+          {
+            "en": "A scale-space image descriptor only",
+            "zh": "只有尺度空间图像描述子"
+          },
+          {
+            "en": "A blocks-world parser without uncertainty",
+            "zh": "没有不确定性的积木世界解析器"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The graph expresses dependency structure, and the probabilities support belief updating under evidence.",
+          "zh": "图表达依赖结构，概率支持在证据下更新信念。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "probabilistic-ai",
+          "knowledge-representation"
         ]
       }
     ]
