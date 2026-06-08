@@ -150,7 +150,9 @@
         const year = item && item.year != null ? String(item.year) : '';
         if (!year || !duplicateYears.has(year)) return year;
 
-        const detailedLabel = normalizeTimelineDate(item.timelineDate || item.date || item.publishedAt || item.publishedDate);
+        const detailedLabel = normalizeTimelineDate(
+            item.timelineDate || item.date || item.publishedAt || item.publishedDate
+        );
         return detailedLabel || year;
     }
 
@@ -160,7 +162,9 @@
             if (year) counts.set(year, (counts.get(year) || 0) + 1);
             return counts;
         }, new Map());
-        const duplicateYears = new Set([...yearCounts.entries()].filter(([, count]) => count > 1).map(([year]) => year));
+        const duplicateYears = new Set(
+            [...yearCounts.entries()].filter(([, count]) => count > 1).map(([year]) => year)
+        );
 
         return allMilestones.map((item, index) => ({
             year: item.year,
