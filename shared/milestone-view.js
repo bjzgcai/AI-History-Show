@@ -130,11 +130,24 @@
     }
 
     function toTimelineItems(allMilestones, currentIndex) {
-        return allMilestones.map((item, index) => ({
-            year: item.year,
-            title: localize(item.title),
-            active: index === currentIndex
-        }));
+        const yearCounts = allMilestones.reduce((counts, item) => {
+            const year = item && item.year != null ? String(item.year) : '';
+            if (year) counts.set(year, (counts.get(year) || 0) + 1);
+            return counts;
+        }, new Map());
+        const seenYears = new Map();
+
+        return allMilestones.map((item, index) => {
+            const year = item && item.year != null ? String(item.year) : '';
+            const sequence = (seenYears.get(year) || 0) + 1;
+            if (year) seenYears.set(year, sequence);
+            return {
+                year: item.year,
+                label: yearCounts.get(year) > 1 ? `${year}(${sequence})` : year,
+                title: localize(item.title),
+                active: index === currentIndex
+            };
+        });
     }
 
     function normalizeMilestone(milestone, currentIndex, allMilestones) {

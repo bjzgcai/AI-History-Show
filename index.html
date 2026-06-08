@@ -2217,12 +2217,29 @@
                 quotePage: String(safeMilestone.quotePage || '').trim(),
                 commentaryOverrideSections: Array.isArray(safeMilestone.commentarySections) ? safeMilestone.commentarySections : [],
                 commentarySections,
-                timeline: milestoneList.map((item, itemIndex) => ({
-                    year: item.year,
-                    title: item.title,
-                    active: itemIndex === index
-                }))
+                timeline: buildTimelineItems(milestoneList, index)
             };
+        }
+
+        function buildTimelineItems(items, activeIndex) {
+            const yearCounts = items.reduce((counts, item) => {
+                const year = item && item.year != null ? String(item.year) : '';
+                if (year) counts.set(year, (counts.get(year) || 0) + 1);
+                return counts;
+            }, new Map());
+            const seenYears = new Map();
+
+            return items.map((item, itemIndex) => {
+                const year = item && item.year != null ? String(item.year) : '';
+                const sequence = (seenYears.get(year) || 0) + 1;
+                if (year) seenYears.set(year, sequence);
+                return {
+                    year: item.year,
+                    label: yearCounts.get(year) > 1 ? `${year}(${sequence})` : year,
+                    title: item.title,
+                    active: itemIndex === activeIndex
+                };
+            });
         }
 
         function getVm(index) {
@@ -3671,7 +3688,7 @@
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
                 <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
-                    <span>${escapeHtml(item.year || '')}</span>
+                    <span>${escapeHtml(item.label || item.year || '')}</span>
                 </button>
             `).join('');
 
