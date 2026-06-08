@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-05 01:16
+// 生成时间: 2026-06-08 18:26
 // 数据来源: manage/catalog.js  +  manage/events.js  +  resources/videos/
 
 const milestones = [
@@ -1454,6 +1454,7 @@ const milestones = [
   {
     "id": "milestone-2014-gan",
     "year": 2014,
+    "timelineDate": "2014-06-10",
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
       "zh": "深度学习与范式归一 (2010s-2020s)"
@@ -1588,6 +1589,7 @@ const milestones = [
   {
     "id": "milestone-2014-attention",
     "year": 2014,
+    "timelineDate": "2014-09-01",
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
       "zh": "深度学习与范式归一 (2010s-2020s)"

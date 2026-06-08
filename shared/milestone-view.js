@@ -129,9 +129,42 @@
         return sections.slice(0, 3);
     }
 
+    function normalizeTimelineDate(value) {
+        if (value == null) return '';
+        const text = String(value).trim();
+        if (!text) return '';
+
+        const match = text.match(/^(\d{4})(?:[-/.](\d{1,2}))?(?:[-/.](\d{1,2}))?$/);
+        if (!match) return '';
+
+        const year = match[1];
+        const month = match[2] ? Number(match[2]) : 0;
+        const day = match[3] ? Number(match[3]) : 0;
+        if (!month) return year;
+        if (month < 1 || month > 12) return '';
+        if (day && (day < 1 || day > 31)) return '';
+        return `${year}.${String(month).padStart(2, '0')}`;
+    }
+
+    function getTimelineLabel(item, duplicateYears) {
+        const year = item && item.year != null ? String(item.year) : '';
+        if (!year || !duplicateYears.has(year)) return year;
+
+        const detailedLabel = normalizeTimelineDate(item.timelineDate || item.date || item.publishedAt || item.publishedDate);
+        return detailedLabel || year;
+    }
+
     function toTimelineItems(allMilestones, currentIndex) {
+        const yearCounts = allMilestones.reduce((counts, item) => {
+            const year = item && item.year != null ? String(item.year) : '';
+            if (year) counts.set(year, (counts.get(year) || 0) + 1);
+            return counts;
+        }, new Map());
+        const duplicateYears = new Set([...yearCounts.entries()].filter(([, count]) => count > 1).map(([year]) => year));
+
         return allMilestones.map((item, index) => ({
             year: item.year,
+            label: getTimelineLabel(item, duplicateYears),
             title: localize(item.title),
             active: index === currentIndex
         }));
@@ -174,6 +207,7 @@
     global.MilestoneView = {
         normalizeMilestone,
         collectPhotos,
+        getTimelineLabel,
         splitDescription,
         stripHtml
     };

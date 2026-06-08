@@ -177,6 +177,7 @@ for (const cat of categories) {
     milestones.push({
       id:          `${MILESTONE_ID_PREFIX}${key}`,
       year:        ev.year,
+      ...(ev.timelineDate ? { timelineDate: ev.timelineDate } : {}),
       category:    cat.name,
       title:       ev.title,
       subtitle:    cat.subtitle,
