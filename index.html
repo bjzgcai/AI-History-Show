@@ -2217,12 +2217,45 @@
                 quotePage: String(safeMilestone.quotePage || '').trim(),
                 commentaryOverrideSections: Array.isArray(safeMilestone.commentarySections) ? safeMilestone.commentarySections : [],
                 commentarySections,
-                timeline: milestoneList.map((item, itemIndex) => ({
-                    year: item.year,
-                    title: item.title,
-                    active: itemIndex === index
-                }))
+                timeline: buildTimelineItems(milestoneList, index)
             };
+        }
+
+        function normalizeTimelineDate(value) {
+            if (value == null) return '';
+            const text = String(value).trim();
+            if (!text) return '';
+            const match = text.match(/^(\d{4})(?:[-/.](\d{1,2}))?(?:[-/.](\d{1,2}))?$/);
+            if (!match) return '';
+            const year = match[1];
+            const month = match[2] ? Number(match[2]) : 0;
+            const day = match[3] ? Number(match[3]) : 0;
+            if (!month) return year;
+            if (month < 1 || month > 12) return '';
+            if (day && (day < 1 || day > 31)) return '';
+            return `${year}.${String(month).padStart(2, '0')}`;
+        }
+
+        function buildTimelineItems(items, activeIndex) {
+            const yearCounts = items.reduce((counts, item) => {
+                const year = item && item.year != null ? String(item.year) : '';
+                if (year) counts.set(year, (counts.get(year) || 0) + 1);
+                return counts;
+            }, new Map());
+            const duplicateYears = new Set([...yearCounts.entries()].filter(([, count]) => count > 1).map(([year]) => year));
+
+            return items.map((item, itemIndex) => {
+                const year = item && item.year != null ? String(item.year) : '';
+                const detailedLabel = duplicateYears.has(year)
+                    ? normalizeTimelineDate(item.timelineDate || item.date || item.publishedAt || item.publishedDate)
+                    : '';
+                return {
+                    year: item.year,
+                    label: detailedLabel || year,
+                    title: item.title,
+                    active: itemIndex === activeIndex
+                };
+            });
         }
 
         function getVm(index) {
@@ -3671,7 +3704,7 @@
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
                 <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
-                    <span>${escapeHtml(item.year || '')}</span>
+                    <span>${escapeHtml(item.label || item.year || '')}</span>
                 </button>
             `).join('');
 

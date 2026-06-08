@@ -1141,6 +1141,7 @@ module.exports = {
   },
   "2014-gan": {
     "year": 2014,
+    "timelineDate": "2014-06-10",
     "title": {
       "en": "GANs: Generative Adversarial Networks",
       "zh": "GAN（生成对抗网路）"
@@ -1214,6 +1215,7 @@ module.exports = {
   },
   "2014-attention": {
     "year": 2014,
+    "timelineDate": "2014-09-01",
     "title": {
       "en": "Autoregressive Models and Attention",
       "zh": "自回归模型和注意力机制"
