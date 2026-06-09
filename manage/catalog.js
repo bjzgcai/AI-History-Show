@@ -92,7 +92,12 @@ module.exports = {
       "events": [
         "1950-turing-test",
         "1958-lisp",
-        "2016-alphago"
+        "2016-alphago",
+        "1971-complexity-theory",
+        "1971-vc-theory",
+        "1956-logic-theorist",
+        "1958-wangs-algorithm",
+        "1960-davis-putnam-dpll"
       ]
     }
   ]

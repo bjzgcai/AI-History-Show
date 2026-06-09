@@ -2383,11 +2383,11 @@ module.exports = {
       ]
     },
     "images": [
-      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
-      "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
+      "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
+      "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png"
     ],
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
+      "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg": {
         "caption": {
           "en": "Alan Turing portrait",
           "zh": "Alan Turing 肖像"
@@ -2402,7 +2402,7 @@ module.exports = {
         "originalImageUrl": "Not available",
         "license": "Public domain"
       },
-      "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
+      "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png": {
         "caption": {
           "en": "Turing test diagram",
           "zh": "图灵测试结构图"
@@ -2619,11 +2619,11 @@ module.exports = {
       ]
     },
     "images": [
-      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
-      "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
+      "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
+      "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg"
     ],
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
+      "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg": {
         "caption": {
           "en": "John McCarthy portrait",
           "zh": "John McCarthy 肖像"
@@ -2638,7 +2638,7 @@ module.exports = {
         "originalImageUrl": "Not available",
         "license": "CC BY-SA 2.0"
       },
-      "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
+      "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg": {
         "caption": {
           "en": "S-expression evaluator",
           "zh": "S 表达式求值流程"
@@ -2875,11 +2875,11 @@ module.exports = {
       ]
     },
     "images": [
-      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
+      "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+      "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg"
     ],
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
+      "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
           "en": "Lee Sedol portrait",
           "zh": "李世石肖像"
@@ -2894,7 +2894,7 @@ module.exports = {
         "originalImageUrl": "Not available",
         "license": "CC BY 2.0"
       },
-      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
+      "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
         "caption": {
           "en": "Policy-value-search explainer",
           "zh": "策略-价值-搜索解释图"
@@ -2908,6 +2908,1366 @@ module.exports = {
         "sourceUrl": "https://www.nature.com/articles/nature16961",
         "originalImageUrl": "Local original explainer",
         "license": "Original local explainer; publisher figure reuse rights not used.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1971-complexity-theory": {
+    "year": 1971,
+    "title": {
+      "en": "NP-Completeness",
+      "zh": "NP 完全性"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Toronto, Canada",
+        "zh": "加拿大，多伦多"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "en": "<p>Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.</p>",
+      "zh": "<p>计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Stephen A. Cook",
+          "zh": "斯蒂芬·A·库克 (Stephen A. Cook)"
+        },
+        "role": {
+          "en": "Introduced NP-completeness",
+          "zh": "提出 NP 完全性"
+        }
+      },
+      {
+        "name": {
+          "en": "Leonid Levin",
+          "zh": "列昂尼德·列文 (Leonid Levin)"
+        },
+        "role": {
+          "en": "Independently formulated related NP-completeness ideas",
+          "zh": "独立提出相关 NP 完全性思想"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "laid the foundations for the theory of NP-Completeness",
+      "zh": "奠定了 NP 完全性理论的基础"
+    },
+    "quoteMeta": {
+      "workTitle": "Stephen A. Cook A.M. Turing Award citation",
+      "workAuthors": "Association for Computing Machinery, 1982",
+      "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Theory / Complexity theory",
+      "zh": "BenchCouncil AI100：理论 / 计算复杂性理论"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "Cook's 1971 STOC paper made Boolean satisfiability a canonical problem for comparing computational hardness. It showed that many different-looking problems can be connected by efficient reductions.",
+          "zh": "Cook 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reduction Logic",
+          "zh": "归约逻辑"
+        },
+        "html": {
+          "en": "The exhibit should emphasize the move from isolated hard problems to a shared map of hardness. If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently.",
+          "zh": "这个展项应突出从“单个难题”到“困难性地图”的转变。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Experts usually treat Cook's contribution as a founding event of theoretical computer science. NP-completeness did not just solve a problem; it created a durable framework for comparing computational hardness.",
+          "zh": "专家通常把 Cook 的贡献视为理论计算机科学的奠基事件。NP 完全性不只是解决了一个问题，而是建立了一套持久的计算困难性比较框架。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Theory",
+        "zh": "理论"
+      },
+      "method": {
+        "en": "Polynomial-time reductions",
+        "zh": "多项式时间归约"
+      },
+      "artifact": {
+        "en": "NP-completeness framework",
+        "zh": "NP 完全性框架"
+      },
+      "material": {
+        "en": "STOC paper + Clay problem",
+        "zh": "STOC 论文 + Clay 难题"
+      },
+      "demo": {
+        "en": "Reduction map",
+        "zh": "归约地图"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "P versus NP",
+            "zh": "P versus NP"
+          },
+          "text": {
+            "en": "P contains problems that can be solved quickly, while NP contains problems whose proposed answers can be checked quickly. The open question is whether quick checking always implies quick solving.",
+            "zh": "P 包含可以快速求解的问题，NP 包含给出答案后可以快速验证的问题。核心未解问题是：快速验证是否总意味着也能快速求解。"
+          }
+        },
+        {
+          "label": {
+            "en": "NP-Completeness",
+            "zh": "NP 完全性"
+          },
+          "text": {
+            "en": "An NP-complete problem is among the hardest problems in NP. If one NP-complete problem can be solved efficiently, then every problem in NP can be solved efficiently.",
+            "zh": "NP 完全问题属于 NP 中最困难的一类。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。"
+          }
+        },
+        {
+          "label": {
+            "en": "Polynomial-Time Reduction",
+            "zh": "多项式时间归约"
+          },
+          "text": {
+            "en": "A reduction translates one problem into another efficiently. It lets researchers compare difficulty across very different-looking problems without solving them directly.",
+            "zh": "归约把一个问题高效转换成另一个问题。它让研究者无需直接求解，也能比较外表差异很大的问题之间的困难性。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Turing machines",
+          "zh": "图灵机"
+        },
+        {
+          "en": "SAT solving",
+          "zh": "SAT 求解"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "ACM Digital Library",
+          "title": {
+            "en": "The Complexity of Theorem-Proving Procedures",
+            "zh": "《The Complexity of Theorem-Proving Procedures》"
+          },
+          "description": {
+            "en": "Official ACM page for Cook's 1971 STOC paper introducing NP-completeness.",
+            "zh": "ACM 官方论文页，收录 Cook 1971 年提出 NP 完全性的 STOC 论文。"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+          "source": "https://dl.acm.org/doi/10.1145/800157.805047",
+          "license": "ACM article page; reuse rights are controlled by ACM.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open ACM paper",
+            "zh": "打开 ACM 论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "The Complexity of Theorem-Proving Procedures",
+            "zh": "The Complexity of Theorem-Proving Procedures"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/800157.805047"
+        },
+        {
+          "type": {
+            "en": "Award",
+            "zh": "奖项"
+          },
+          "label": {
+            "en": "Stephen A. Cook ACM A.M. Turing Award",
+            "zh": "Stephen A. Cook ACM A.M. Turing Award"
+          },
+          "url": "https://awards.acm.org/award_winners/cook_N991950"
+        },
+        {
+          "type": {
+            "en": "Problem",
+            "zh": "难题"
+          },
+          "label": {
+            "en": "Clay Mathematics Institute P vs NP",
+            "zh": "Clay Mathematics Institute P vs NP"
+          },
+          "url": "https://www.claymath.org/millennium/p-vs-np/"
+        }
+      ]
+    },
+    "images": [
+      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg"
+    ],
+    "imageMeta": {
+      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg": {
+        "caption": {
+          "en": "Stephen A. Cook portrait",
+          "zh": "Stephen A. Cook 肖像"
+        },
+        "subcaption": {
+          "en": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012.",
+          "zh": "Stephen A. Cook 摄于 2012 年图灵百年纪念活动。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/2012-06-15_Stephen_A._Cook.jpg",
+        "license": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+        "usage": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        }
+      },
+      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg": {
+        "caption": {
+          "en": "NP-completeness reduction map",
+          "zh": "NP 完全性归约地图"
+        },
+        "subcaption": {
+          "en": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description.",
+          "zh": "根据 Cook 1971 年论文与 Clay P versus NP 难题说明制作的原创解释图。"
+        },
+        "sourceName": "ACM / Clay Mathematics Institute",
+        "source": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "sourceUrl": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "originalImageUrl": "Local original explainer",
+        "license": "Original local explainer; source article reuse rights not used.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1971-vc-theory": {
+    "year": 1971,
+    "title": {
+      "en": "VC Theory",
+      "zh": "VC 理论"
+    },
+    "location": {
+      "name": {
+        "en": "Institute of Control Sciences, Moscow",
+        "zh": "莫斯科控制科学研究所"
+      },
+      "country": {
+        "en": "Moscow, Russia",
+        "zh": "俄罗斯，莫斯科"
+      },
+      "coordinates": [
+        55.7558,
+        37.6173
+      ]
+    },
+    "description": {
+      "en": "<p>VC theory explains why a model trained on limited examples can sometimes perform well on data it has never seen. Vapnik and Chervonenkis connected learning, probability, and model capacity through measures such as VC dimension. Their work became a foundation for statistical learning theory and shaped how machine learning thinks about generalization.</p>",
+      "zh": "<p>VC 理论解释了为什么模型只用有限样本训练后，有时仍能在未见数据上表现可靠。瓦普尼克和切尔沃年基斯用 VC 维等概念把学习、概率和模型容量联系起来。它成为统计学习理论的基础，也深刻影响了机器学习对泛化能力的理解。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Vladimir N. Vapnik",
+          "zh": "弗拉基米尔·N·瓦普尼克 (Vladimir N. Vapnik)"
+        },
+        "role": {
+          "en": "Co-developed VC theory",
+          "zh": "VC 理论共同创建者"
+        }
+      },
+      {
+        "name": {
+          "en": "Alexey Ya. Chervonenkis",
+          "zh": "阿列克谢·雅·切尔沃年基斯 (Alexey Ya. Chervonenkis)"
+        },
+        "role": {
+          "en": "Co-developed VC theory",
+          "zh": "VC 理论共同创建者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Statistical learning theory was introduced in the late 1960's.",
+      "zh": "统计学习理论是在 20 世纪 60 年代末提出的。"
+    },
+    "quoteMeta": {
+      "workTitle": "An Overview of Statistical Learning Theory",
+      "workAuthors": "Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Theory / VC theory",
+      "zh": "BenchCouncil AI100：理论 / VC 理论"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "The 1971 Vapnik-Chervonenkis paper made generalization a mathematical question about uniform convergence across a whole class of events or hypotheses. Vapnik's 1995 book later synthesized the framework for statistical learning theory.",
+          "zh": "Vapnik 和 Chervonenkis 1971 年论文把泛化变成了关于一整类事件或假设上一致收敛的数学问题。Vapnik 1995 年著作随后系统总结了统计学习理论框架。"
+        }
+      },
+      {
+        "label": {
+          "en": "Capacity Logic",
+          "zh": "容量逻辑"
+        },
+        "html": {
+          "en": "The key display idea is the gap between fitting examples and performing on unseen data. VC dimension gives a way to reason about when model flexibility helps and when it becomes overfitting risk.",
+          "zh": "关键展示点是“拟合样本”和“在未见数据上表现”之间的差距。VC 维提供了一种方法，用来理解模型灵活性何时有帮助、何时会带来过拟合风险。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Experts usually evaluate VC theory as one of the mathematical foundations of machine learning. Classical VC bounds can be conservative for modern deep learning, but the framework remains central to thinking about generalization.",
+          "zh": "专家通常认为 VC 理论是机器学习的数学基础之一。经典 VC 界对现代深度学习可能偏保守，但这一框架仍然是理解泛化问题的核心参照。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Theory",
+        "zh": "理论"
+      },
+      "method": {
+        "en": "Statistical learning",
+        "zh": "统计学习"
+      },
+      "artifact": {
+        "en": "VC dimension",
+        "zh": "VC 维"
+      },
+      "material": {
+        "en": "Paper + book + overview",
+        "zh": "论文 + 著作 + 综述"
+      },
+      "demo": {
+        "en": "Capacity vs generalization",
+        "zh": "容量与泛化"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "VC Dimension",
+            "zh": "VC 维"
+          },
+          "text": {
+            "en": "VC dimension measures how flexible a class of classifiers is. A high-capacity class can fit many label patterns, so it usually needs more data to generalize reliably.",
+            "zh": "VC 维衡量一类分类器有多灵活。容量越高，越能拟合多种标签模式，通常也需要更多数据才能可靠泛化。"
+          }
+        },
+        {
+          "label": {
+            "en": "Uniform Convergence",
+            "zh": "一致收敛"
+          },
+          "text": {
+            "en": "Uniform convergence asks whether training-sample measurements stay close to true probabilities across a whole model class. This bridges training performance and expected test performance.",
+            "zh": "一致收敛关注训练样本上的测量是否能在整个模型类上接近真实概率。它连接了训练表现和预期测试表现。"
+          }
+        },
+        {
+          "label": {
+            "en": "Structural Risk Minimization",
+            "zh": "结构风险最小化"
+          },
+          "text": {
+            "en": "Structural risk minimization balances training error against model capacity. It explains why the best learner is not always the one that fits the training data most tightly.",
+            "zh": "结构风险最小化在训练误差和模型容量之间取平衡。它说明最好的学习器不一定是最贴合训练数据的那个。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Complexity theory",
+          "zh": "计算复杂性理论"
+        },
+        {
+          "en": "Support vector machines",
+          "zh": "支持向量机"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Russia",
+          "zh": "俄罗斯"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "SIAM",
+          "title": {
+            "en": "On the Uniform Convergence of Relative Frequencies",
+            "zh": "《On the Uniform Convergence of Relative Frequencies》"
+          },
+          "description": {
+            "en": "Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.",
+            "zh": "SIAM 官方页面，收录 Vapnik-Chervonenkis 1971 年论文的英文版本。"
+          },
+          "url": "https://epubs.siam.org/doi/10.1137/1116025",
+          "source": "https://epubs.siam.org/doi/10.1137/1116025",
+          "license": "SIAM publication page; reuse requires checking SIAM rights.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open SIAM paper",
+            "zh": "打开 SIAM 论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "On the Uniform Convergence of Relative Frequencies",
+            "zh": "On the Uniform Convergence of Relative Frequencies"
+          },
+          "url": "https://epubs.siam.org/doi/10.1137/1116025"
+        },
+        {
+          "type": {
+            "en": "Book",
+            "zh": "图书"
+          },
+          "label": {
+            "en": "The Nature of Statistical Learning Theory",
+            "zh": "The Nature of Statistical Learning Theory"
+          },
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0"
+        },
+        {
+          "type": {
+            "en": "Overview",
+            "zh": "综述"
+          },
+          "label": {
+            "en": "An Overview of Statistical Learning Theory",
+            "zh": "An Overview of Statistical Learning Theory"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+        }
+      ]
+    },
+    "images": [
+      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg"
+    ],
+    "imageMeta": {
+      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png": {
+        "caption": {
+          "en": "Vladimir Vapnik portrait",
+          "zh": "Vladimir Vapnik 肖像"
+        },
+        "subcaption": {
+          "en": "Vladimir Vapnik profile portrait from the Simons Foundation.",
+          "zh": "Simons Foundation 人物页中的 Vladimir Vapnik 肖像。"
+        },
+        "sourceName": "Simons Foundation",
+        "source": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+        "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+        "originalImageUrl": "https://simonsfoundation.imgix.net/wp-content/uploads/2017/08/15112731/vald1.png",
+        "license": "Simons Foundation profile image; page does not state an open reuse license.",
+        "usage": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        }
+      },
+      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg": {
+        "caption": {
+          "en": "VC theory generalization diagram",
+          "zh": "VC 理论泛化示意图"
+        },
+        "subcaption": {
+          "en": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources.",
+          "zh": "根据 Vapnik 与 Chervonenkis 的学习理论资料制作的原创解释图。"
+        },
+        "sourceName": "SIAM / Springer / IEEE",
+        "source": "https://epubs.siam.org/doi/10.1137/1116025",
+        "sourceUrl": "https://epubs.siam.org/doi/10.1137/1116025",
+        "originalImageUrl": "Local original explainer",
+        "license": "Original local explainer; source article and book figure reuse rights not used.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1956-logic-theorist": {
+    "year": 1956,
+    "title": {
+      "en": "Logic Theorist",
+      "zh": "逻辑理论家"
+    },
+    "location": {
+      "name": {
+        "en": "RAND Corporation / Carnegie Institute of Technology",
+        "zh": "RAND Corporation / 卡内基理工学院"
+      },
+      "country": {
+        "en": "Santa Monica and Pittsburgh, United States",
+        "zh": "美国，圣塔莫尼卡与匹兹堡"
+      },
+      "coordinates": [
+        34.0195,
+        -118.4912
+      ]
+    },
+    "description": {
+      "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>",
+      "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J. C. Shaw 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Allen Newell",
+          "zh": "艾伦·纽厄尔 (Allen Newell)"
+        },
+        "role": {
+          "en": "Logic Theorist co-creator",
+          "zh": "Logic Theorist 共同创建者"
+        }
+      },
+      {
+        "name": {
+          "en": "Herbert A. Simon",
+          "zh": "赫伯特·A·西蒙 (Herbert A. Simon)"
+        },
+        "role": {
+          "en": "Logic Theorist co-creator",
+          "zh": "Logic Theorist 共同创建者"
+        }
+      },
+      {
+        "name": {
+          "en": "J. C. Shaw",
+          "zh": "J. C. Shaw"
+        },
+        "role": {
+          "en": "Programmer and co-developer",
+          "zh": "程序员与共同开发者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "capable of discovering proofs for theorems in symbolic logic",
+      "zh": "能够发现符号逻辑中定理的证明"
+    },
+    "quoteMeta": {
+      "workTitle": "The Logic Theory Machine: A Complex Information Processing System",
+      "workAuthors": "Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Logic Theorist",
+      "zh": "BenchCouncil AI100：自动定理证明 / Logic Theorist"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Paper",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition.",
+          "zh": "Newell 和 Simon 1956 年论文描述了一个能在符号逻辑中发现证明的系统。Google Books 保存了书目信息和摘要，Carnegie Mellon Archives 记录了 1956 年修订版。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reasoning Logic",
+          "zh": "推理逻辑"
+        },
+        "html": {
+          "en": "The display idea is proof search: start with a goal theorem, try symbolic transformations, and use heuristics to avoid blind enumeration. This makes reasoning visible as a sequence of choices.",
+          "zh": "展示重点是证明搜索：从目标定理出发，尝试符号变换，并用启发式规则避免盲目穷举。这让推理成为一串可见的选择过程。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Experts usually treat Logic Theorist as a founding symbolic AI system. Its legacy is the combination of theorem proving, heuristic search, symbolic programming, and cognitive modeling.",
+          "zh": "专家通常把 Logic Theorist 视为符号 AI 的奠基系统之一。它的遗产在于把定理证明、启发式搜索、符号编程和认知建模结合起来。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Automated Theorem Proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "Heuristic proof search",
+        "zh": "启发式证明搜索"
+      },
+      "artifact": {
+        "en": "Logic Theory Machine",
+        "zh": "逻辑理论机器"
+      },
+      "material": {
+        "en": "Paper + archive",
+        "zh": "论文 + 档案"
+      },
+      "demo": {
+        "en": "Proof search loop",
+        "zh": "证明搜索循环"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Heuristic Search",
+            "zh": "启发式搜索"
+          },
+          "text": {
+            "en": "Logic Theorist used rules of thumb to guide proof search. This made reasoning a selective process rather than brute-force enumeration.",
+            "zh": "Logic Theorist 用经验规则引导证明搜索。这让推理成为选择性过程，而不是暴力穷举。"
+          }
+        },
+        {
+          "label": {
+            "en": "Symbolic Reasoning",
+            "zh": "符号推理"
+          },
+          "text": {
+            "en": "The program manipulated logical expressions as symbols. That became a central pattern in early AI systems.",
+            "zh": "程序把逻辑表达式作为符号来操作。这成为早期 AI 系统的核心模式之一。"
+          }
+        },
+        {
+          "label": {
+            "en": "Automated Theorem Proving",
+            "zh": "自动定理证明"
+          },
+          "text": {
+            "en": "The system attempted to discover proof chains for mathematical logic statements. It helped establish theorem proving as a major AI task.",
+            "zh": "系统尝试为数理逻辑命题发现证明链。它帮助确立了定理证明作为 AI 重要任务的地位。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "General Problem Solver",
+          "zh": "General Problem Solver"
+        },
+        {
+          "en": "LISP",
+          "zh": "LISP"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Google Books",
+          "title": {
+            "en": "The Logic Theory Machine",
+            "zh": "《The Logic Theory Machine》"
+          },
+          "description": {
+            "en": "Bibliographic page for the 1956 Logic Theory Machine publication, including abstract and publication details.",
+            "zh": "1956 年 Logic Theory Machine 出版物的书目页面，包含摘要和出版信息。"
+          },
+          "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+          "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+          "license": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open book record",
+            "zh": "打开书目记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "The Logic Theory Machine",
+            "zh": "The Logic Theory Machine"
+          },
+          "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Carnegie Mellon University Archives",
+            "zh": "Carnegie Mellon University Archives"
+          },
+          "url": "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555"
+        },
+        {
+          "type": {
+            "en": "Award",
+            "zh": "奖项"
+          },
+          "label": {
+            "en": "Allen Newell ACM A.M. Turing Award",
+            "zh": "Allen Newell ACM A.M. Turing Award"
+          },
+          "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm"
+        }
+      ]
+    },
+    "images": [
+      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg"
+    ],
+    "imageMeta": {
+      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg": {
+        "caption": {
+          "en": "Herbert A. Simon portrait",
+          "zh": "Herbert A. Simon 肖像"
+        },
+        "subcaption": {
+          "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators.",
+          "zh": "Wikimedia Commons 收录的 Herbert A. Simon 肖像，他是 Logic Theorist 共同创建者之一。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Herbert_simon_red_complete.jpg",
+        "license": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+        "usage": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        }
+      },
+      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg": {
+        "caption": {
+          "en": "Logic Theorist proof search",
+          "zh": "Logic Theorist 证明搜索"
+        },
+        "subcaption": {
+          "en": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain.",
+          "zh": "原创解释图，展示目标定理、启发式搜索、符号变换和证明链。"
+        },
+        "sourceName": "Local explainer based on Newell and Simon 1956",
+        "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "originalImageUrl": "Local original explainer",
+        "license": "Original local explainer; source text and figure reuse rights not used.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1958-wangs-algorithm": {
+    "year": "1958-1961",
+    "title": {
+      "en": "Wang's Algorithm",
+      "zh": "王氏算法"
+    },
+    "location": {
+      "name": {
+        "en": "Bell Telephone Laboratories",
+        "zh": "贝尔电话实验室"
+      },
+      "country": {
+        "en": "Murray Hill, United States",
+        "zh": "美国，新泽西州默里山"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4018
+      ]
+    },
+    "description": {
+      "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>",
+      "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 Bell System Technical Journal 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Hao Wang",
+          "zh": "王浩 (Hao Wang)"
+        },
+        "role": {
+          "en": "Developed pattern-recognition theorem-proving procedures",
+          "zh": "提出基于模式识别的定理证明过程"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "A proof procedure for the predicate calculus is given",
+      "zh": "给出了一个谓词演算的证明过程"
+    },
+    "quoteMeta": {
+      "workTitle": "Proving Theorems by Pattern Recognition - II",
+      "workAuthors": "Hao Wang, Bell System Technical Journal, 1961",
+      "sourceUrl": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Wang's algorithm",
+      "zh": "BenchCouncil AI100：自动定理证明 / 王氏算法"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Papers",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases.",
+          "zh": "第一篇论文发表于 1960 年 4 月 Communications of the ACM，DOI 为 10.1145/367177.367224。Bell Labs 档案保存了 1961 年续篇，其中 Wang 讨论了谓词演算证明过程及相关判定问题情形。"
+        }
+      },
+      {
+        "label": {
+          "en": "Pattern Logic",
+          "zh": "模式逻辑"
+        },
+        "html": {
+          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears.",
+          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Wang's algorithm is usually treated as an early milestone in automated theorem proving. It made the gap between formal logic and machine execution smaller, and it influenced later work on proof procedures and SAT-style reasoning.",
+          "zh": "王氏算法通常被视为自动定理证明的早期里程碑。它缩小了形式逻辑与机器执行之间的距离，也影响了后来的证明过程与 SAT 式推理研究。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Automated Theorem Proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "Pattern-guided proof procedure",
+        "zh": "模式引导证明过程"
+      },
+      "artifact": {
+        "en": "Wang theorem-proving procedure",
+        "zh": "王氏定理证明过程"
+      },
+      "material": {
+        "en": "CACM paper + Bell Labs article",
+        "zh": "CACM 论文 + Bell Labs 文章"
+      },
+      "demo": {
+        "en": "Pattern proof loop",
+        "zh": "模式证明循环"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Pattern Recognition",
+            "zh": "模式识别"
+          },
+          "text": {
+            "en": "The procedure looks for logical forms that match known rule patterns. Matching turns theorem proving into a sequence of recognizable transformations.",
+            "zh": "该过程寻找能够匹配已知规则模式的逻辑形式。匹配让定理证明变成一串可识别的变换。"
+          }
+        },
+        {
+          "label": {
+            "en": "Proof Reduction",
+            "zh": "证明归约"
+          },
+          "text": {
+            "en": "A complex formula is reduced into smaller subgoals until branches close or require further search. This helped avoid pure truth-table enumeration.",
+            "zh": "复杂公式被归约成更小的子目标，直到分支闭合或继续搜索。这有助于避免纯真值表枚举。"
+          }
+        },
+        {
+          "label": {
+            "en": "Mechanical Mathematics",
+            "zh": "机械数学"
+          },
+          "text": {
+            "en": "Wang's work framed mathematical proof as something machines could perform using symbolic rules and carefully designed procedures.",
+            "zh": "王浩的工作把数学证明表述为机器可以通过符号规则和精心设计的过程来执行的任务。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Logic Theorist",
+          "zh": "Logic Theorist"
+        },
+        {
+          "en": "Davis-Putnam algorithm and DPLL",
+          "zh": "Davis-Putnam 算法与 DPLL"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Communications of the ACM",
+          "title": {
+            "en": "Proving theorems by pattern recognition I",
+            "zh": "《Proving theorems by pattern recognition I》"
+          },
+          "description": {
+            "en": "Official CACM page for Wang's 1960 article, including DOI, issue, and page information.",
+            "zh": "CACM 官方页面，列出 Wang 1960 年论文的 DOI、期号与页码信息。"
+          },
+          "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open CACM record",
+            "zh": "打开 CACM 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Proving theorems by pattern recognition I",
+            "zh": "Proving theorems by pattern recognition I"
+          },
+          "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Proving Theorems by Pattern Recognition - II",
+            "zh": "Proving Theorems by Pattern Recognition - II"
+          },
+          "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+        },
+        {
+          "type": {
+            "en": "Photo",
+            "zh": "照片"
+          },
+          "label": {
+            "en": "Rockefeller University Digital Commons: Wang, Hao",
+            "zh": "Rockefeller University Digital Commons: Wang, Hao"
+          },
+          "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/"
+        }
+      ]
+    },
+    "images": [
+      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg"
+    ],
+    "imageMeta": {
+      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg": {
+        "caption": {
+          "en": "Hao Wang portrait",
+          "zh": "王浩肖像"
+        },
+        "subcaption": {
+          "en": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection.",
+          "zh": "王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。"
+        },
+        "sourceName": "The Rockefeller University Digital Commons",
+        "source": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+        "sourceUrl": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+        "originalImageUrl": "https://digitalcommons.rockefeller.edu/faculty-members/1109/preview.jpg",
+        "license": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+        "usage": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        }
+      },
+      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg": {
+        "caption": {
+          "en": "Wang algorithm pattern proof",
+          "zh": "王氏算法模式证明"
+        },
+        "subcaption": {
+          "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure.",
+          "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。"
+        },
+        "sourceName": "Local explainer based on Wang 1960 and Wang 1961",
+        "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "sourceUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "originalImageUrl": "Local original explainer",
+        "license": "Original local explainer; source article images not reused.",
+        "usage": {
+          "en": "Supporting image / Explainer graphic",
+          "zh": "辅助说明图 / 解释性图形"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1960-davis-putnam-dpll": {
+    "year": "1960-1962",
+    "title": {
+      "en": "Davis-Putnam & DPLL",
+      "zh": "DP/DPLL 算法"
+    },
+    "location": {
+      "name": {
+        "en": "New York University / Princeton University / RPI",
+        "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
+      },
+      "country": {
+        "en": "New York and Princeton, United States",
+        "zh": "美国，纽约与普林斯顿"
+      },
+      "coordinates": [
+        40.7295,
+        -73.9965
+      ]
+    },
+    "description": {
+      "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>",
+      "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 JACM 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Martin Davis",
+          "zh": "马丁·戴维斯 (Martin Davis)"
+        },
+        "role": {
+          "en": "Co-developed Davis-Putnam and DPLL procedures",
+          "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
+        }
+      },
+      {
+        "name": {
+          "en": "Hilary Putnam",
+          "zh": "希拉里·普特南 (Hilary Putnam)"
+        },
+        "role": {
+          "en": "Co-authored the 1960 Davis-Putnam procedure",
+          "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
+        }
+      },
+      {
+        "name": {
+          "en": "George Logemann",
+          "zh": "乔治·洛格曼 (George Logemann)"
+        },
+        "role": {
+          "en": "Co-authored the 1962 DPLL program paper",
+          "zh": "共同撰写 1962 年 DPLL 程序论文"
+        }
+      },
+      {
+        "name": {
+          "en": "Donald W. Loveland",
+          "zh": "唐纳德·W·洛夫兰 (Donald W. Loveland)"
+        },
+        "role": {
+          "en": "Co-authored the 1962 DPLL program paper",
+          "zh": "共同撰写 1962 年 DPLL 程序论文"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "a uniform proof procedure for quantification theory is given",
+      "zh": "给出了量词理论的统一证明过程"
+    },
+    "quoteMeta": {
+      "workTitle": "A Computing Procedure for Quantification Theory",
+      "workAuthors": "Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Davis-Putnam algorithm & DPLL",
+      "zh": "BenchCouncil AI100：自动定理证明 / Davis-Putnam 算法与 DPLL"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Published Papers",
+          "zh": "论文材料"
+        },
+        "html": {
+          "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage.",
+          "zh": "Davis 和 Putnam 1960 年 JACM 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 Communications of the ACM 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。"
+        }
+      },
+      {
+        "label": {
+          "en": "SAT Search",
+          "zh": "SAT 搜索"
+        },
+        "html": {
+          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible.",
+          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "DPLL is usually evaluated as one of the foundational algorithms behind practical SAT solving. Modern solvers add learning, watched literals, restarts, and heuristics, but the core search-and-propagate structure remains recognizable.",
+          "zh": "DPLL 通常被视为实用 SAT 求解背后的基础算法之一。现代求解器加入学习、watched literals、重启与启发式策略，但搜索与传播的核心结构仍清晰可见。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Automated Theorem Proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "SAT search with propagation",
+        "zh": "带传播的 SAT 搜索"
+      },
+      "artifact": {
+        "en": "Davis-Putnam / DPLL procedure",
+        "zh": "Davis-Putnam / DPLL 过程"
+      },
+      "material": {
+        "en": "JACM paper + CACM program",
+        "zh": "JACM 论文 + CACM 程序"
+      },
+      "demo": {
+        "en": "Branch, propagate, backtrack",
+        "zh": "分支、传播、回溯"
+      },
+      "visual": "transcript",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Davis-Putnam Procedure",
+            "zh": "Davis-Putnam 过程"
+          },
+          "text": {
+            "en": "The 1960 procedure used logical transformations to attack quantification theory and propositional satisfiability. It made proof search more systematic than earlier brute-force attempts.",
+            "zh": "1960 年过程用逻辑变换处理量词理论和命题可满足性。它让证明搜索比早期暴力尝试更系统。"
+          }
+        },
+        {
+          "label": {
+            "en": "DPLL Search",
+            "zh": "DPLL 搜索"
+          },
+          "text": {
+            "en": "DPLL refines SAT solving into recursive branching plus simplification. Each choice either builds a model or reveals a contradiction that prunes the branch.",
+            "zh": "DPLL 把 SAT 求解改进为递归分支加简化。每次选择要么构造模型，要么暴露矛盾并剪去分支。"
+          }
+        },
+        {
+          "label": {
+            "en": "Unit Propagation",
+            "zh": "单子句传播"
+          },
+          "text": {
+            "en": "When a clause has only one possible literal left, the solver must assign it. This forced move can trigger a cascade of simplifications.",
+            "zh": "当一个子句只剩一个可能文字时，求解器必须赋值。这个被迫动作可能触发一连串简化。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Wang's algorithm",
+          "zh": "王氏算法"
+        },
+        {
+          "en": "Resolution method",
+          "zh": "归结方法"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Communications of the ACM",
+          "title": {
+            "en": "A machine program for theorem-proving",
+            "zh": "《A machine program for theorem-proving》"
+          },
+          "description": {
+            "en": "CACM article page for the 1962 Davis, Logemann, and Loveland theorem-proving program.",
+            "zh": "CACM 文章页，收录 Davis、Logemann 与 Loveland 1962 年的定理证明程序论文。"
+          },
+          "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+          "source": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open CACM record",
+            "zh": "打开 CACM 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Computing Procedure for Quantification Theory",
+            "zh": "A Computing Procedure for Quantification Theory"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/321033.321034"
+        },
+        {
+          "type": {
+            "en": "Program",
+            "zh": "程序"
+          },
+          "label": {
+            "en": "A machine program for theorem-proving",
+            "zh": "A machine program for theorem-proving"
+          },
+          "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/"
+        },
+        {
+          "type": {
+            "en": "Photo",
+            "zh": "照片"
+          },
+          "label": {
+            "en": "Wikimedia Commons: Hilary Putnam",
+            "zh": "Wikimedia Commons: Hilary Putnam"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
+        }
+      ]
+    },
+    "images": [
+      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg"
+    ],
+    "imageMeta": {
+      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
+        "caption": {
+          "en": "Hilary Putnam portrait",
+          "zh": "Hilary Putnam 肖像"
+        },
+        "subcaption": {
+          "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.",
+          "zh": "Wikimedia Commons 收录的 Hilary Putnam 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Hilary_Putnam.jpg",
+        "license": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+        "usage": {
+          "en": "Portrait",
+          "zh": "人物肖像"
+        }
+      },
+      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg": {
+        "caption": {
+          "en": "Davis-Putnam and DPLL SAT search",
+          "zh": "Davis-Putnam 与 DPLL SAT 搜索"
+        },
+        "subcaption": {
+          "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance.",
+          "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。"
+        },
+        "sourceName": "Local explainer based on Davis-Putnam 1960 and Davis-Logemann-Loveland 1962",
+        "source": "https://dl.acm.org/doi/10.1145/321033.321034",
+        "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034",
+        "originalImageUrl": "Local original explainer",
+        "license": "Original local explainer; source article images not reused.",
         "usage": {
           "en": "Supporting image / Explainer graphic",
           "zh": "辅助说明图 / 解释性图形"

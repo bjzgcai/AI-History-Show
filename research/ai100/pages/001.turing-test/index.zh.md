@@ -147,12 +147,12 @@ BenchCouncil 在 AI100 表中列出《Computing Machinery and Intelligence》的
 
 images:
 
-- resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
-- resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+- photos/1950-turing-test_alan-turing.jpg
+- photos/1950-turing-test_diagram.png
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg
+- local_image_path: photos/1950-turing-test_alan-turing.jpg
 - title: 艾伦·图灵肖像
 - caption: 艾伦·图灵肖像
 - description: 艾伦·图灵肖像照，1951 年 3 月 29 日。
@@ -162,7 +162,7 @@ imageMeta:
 - copyright_or_license: Public domain
 - usage: 人物肖像
 
-- local_image_path: resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png
+- local_image_path: photos/1950-turing-test_diagram.png
 - title: 图灵测试结构图
 - caption: 图灵测试结构图
 - description: 观察者 C 只通过文字回答判断隐藏的人类与机器。
