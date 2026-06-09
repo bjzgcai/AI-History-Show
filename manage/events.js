@@ -4275,5 +4275,9337 @@ module.exports = {
       }
     },
     "videos": []
+  },
+  "2014-adam": {
+    "year": "2014",
+    "title": {
+      "en": "Adam Optimizer",
+      "zh": "Adam 优化器"
+    },
+    "location": {
+      "name": {
+        "en": "University of Amsterdam / University of Toronto",
+        "zh": "阿姆斯特丹大学 / 多伦多大学"
+      },
+      "country": {
+        "en": "Amsterdam, Netherlands and Toronto, Canada",
+        "zh": "荷兰阿姆斯特丹与加拿大多伦多"
+      },
+      "coordinates": [
+        52.3558,
+        4.9558
+      ]
+    },
+    "description": {
+      "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>",
+      "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。Kingma 与 Ba 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Diederik P. Kingma",
+          "zh": "Diederik P. Kingma"
+        },
+        "role": {
+          "en": "Co-author of Adam",
+          "zh": "Adam 共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Jimmy Ba",
+          "zh": "Jimmy Ba"
+        },
+        "role": {
+          "en": "Co-author of Adam",
+          "zh": "Adam 共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "straightforward to implement, computationally efficient",
+      "zh": "易于实现且计算高效"
+    },
+    "quoteMeta": {
+      "workTitle": "Adam: A Method for Stochastic Optimization",
+      "workAuthors": "Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "sourceUrl": "https://arxiv.org/abs/1412.6980"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Optimization / Adam",
+      "zh": "BenchCouncil AI100：优化算法 / Adam 优化器"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "By 2014, deep networks were becoming larger and noisier to train. Researchers needed optimizers that reduced hand-tuning while still working with minibatches, sparse gradients, and nonstationary objectives.",
+          "zh": "到 2014 年，深度网络越来越大，训练噪声也越来越明显。研究者需要一种减少手工调参、同时能处理小批量、稀疏梯度和非平稳目标的优化器。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly.",
+          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Adam as a practical default rather than a universal optimum. It remains valued for fast, stable training, while current recipes often modify it through AdamW, careful schedules, and task-specific tuning.",
+          "zh": "今天的专家通常把 Adam 视为实用默认选择，而不是万能最优解。它仍因训练快速、稳定而受到重视，但当前配方往往会通过 AdamW、精细学习率计划和任务特定调参来修正它。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Optimization",
+        "zh": "优化算法"
+      },
+      "method": {
+        "en": "Adaptive first- and second-moment updates",
+        "zh": "一阶与二阶矩自适应更新"
+      },
+      "artifact": {
+        "en": "Adam stochastic optimizer",
+        "zh": "Adam 随机优化器"
+      },
+      "material": {
+        "en": "arXiv paper and optimizer implementations",
+        "zh": "arXiv 论文与优化器实现"
+      },
+      "demo": {
+        "en": "Momentum plus per-parameter scaling",
+        "zh": "动量加逐参数缩放"
+      },
+      "visual": "adam",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "First Moment",
+            "zh": "一阶矩"
+          },
+          "text": {
+            "en": "A running average of gradients behaves like momentum, keeping updates aligned with persistent descent directions.",
+            "zh": "梯度的滑动平均类似动量，让更新方向跟随持续出现的下降方向。"
+          }
+        },
+        {
+          "label": {
+            "en": "Second Moment",
+            "zh": "二阶矩"
+          },
+          "text": {
+            "en": "A running average of squared gradients rescales each parameter so frequent large gradients do not dominate every step.",
+            "zh": "梯度平方的滑动平均会缩放每个参数，使频繁出现的大梯度不至于支配所有更新。"
+          }
+        },
+        {
+          "label": {
+            "en": "Bias Correction",
+            "zh": "偏差校正"
+          },
+          "text": {
+            "en": "Adam corrects early moving averages that start near zero, making the first optimization steps less distorted.",
+            "zh": "Adam 会校正初期接近零的滑动平均，让训练开始阶段的步伐不被过度扭曲。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Backpropagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "RMSProp",
+          "zh": "RMSProp"
+        },
+        {
+          "en": "Transformer training",
+          "zh": "Transformer 训练"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Netherlands",
+          "zh": "荷兰"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "arXiv / ICLR",
+          "title": {
+            "en": "Adam paper and Algorithm 1",
+            "zh": "Adam paper and Algorithm 1"
+          },
+          "description": {
+            "en": "Primary paper record for Adam; local images are redrawn from equations and pseudocode.",
+            "zh": "Primary paper record for Adam; local images are redrawn from equations and pseudocode."
+          },
+          "url": "https://arxiv.org/abs/1412.6980",
+          "source": "https://arxiv.org/abs/1412.6980",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "Open paper"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "Adam: A Method for Stochastic Optimization",
+            "zh": "Adam: A Method for Stochastic Optimization"
+          },
+          "url": "https://arxiv.org/abs/1412.6980"
+        },
+        {
+          "type": {
+            "en": "Implementation",
+            "zh": "Implementation"
+          },
+          "label": {
+            "en": "PyTorch torch.optim.Adam",
+            "zh": "PyTorch torch.optim.Adam"
+          },
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html"
+        },
+        {
+          "type": {
+            "en": "Framework docs",
+            "zh": "Framework docs"
+          },
+          "label": {
+            "en": "TensorFlow Keras Adam optimizer",
+            "zh": "TensorFlow Keras Adam optimizer"
+          },
+          "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Gradient sample",
+          "zh": "梯度样本"
+        },
+        {
+          "en": "Moment estimates",
+          "zh": "矩估计"
+        },
+        {
+          "en": "Bias-corrected update",
+          "zh": "偏差校正更新"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+      "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
+      "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg": {
+        "caption": {
+          "en": "Loss landscape trajectory",
+          "zh": "损失地形轨迹"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+          "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "arXiv / ICLR",
+        "source": "https://arxiv.org/abs/1412.6980",
+        "sourceUrl": "https://arxiv.org/abs/1412.6980",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2014-adam_beta-schedule.svg": {
+        "caption": {
+          "en": "Beta memory schedule",
+          "zh": "Beta 记忆权重"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+          "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "arXiv / ICLR",
+        "source": "https://arxiv.org/abs/1412.6980",
+        "sourceUrl": "https://arxiv.org/abs/1412.6980",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg": {
+        "caption": {
+          "en": "Adam moment traces",
+          "zh": "Adam 一阶/二阶矩曲线"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+          "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "arXiv / ICLR",
+        "source": "https://arxiv.org/abs/1412.6980",
+        "sourceUrl": "https://arxiv.org/abs/1412.6980",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg": {
+        "caption": {
+          "en": "Diederik P. Kingma portrait",
+          "zh": "Diederik P. Kingma 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Kingma's personal website.",
+          "zh": "来自 Kingma 个人网站的人物照片。"
+        },
+        "sourceName": "Diederik P. Kingma personal website",
+        "source": "https://dpkingma.com/",
+        "sourceUrl": "https://dpkingma.com/",
+        "originalImageUrl": "https://dpkingma.com/files/portrait.jpg",
+        "license": "Personal website photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Co-author portrait",
+          "zh": "历史人物 / 共同作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2014-vgg": {
+    "year": "2014",
+    "title": {
+      "en": "VGG Networks",
+      "zh": "VGG 网络"
+    },
+    "location": {
+      "name": {
+        "en": "Visual Geometry Group, University of Oxford",
+        "zh": "牛津大学视觉几何组"
+      },
+      "country": {
+        "en": "Oxford, United Kingdom",
+        "zh": "英国牛津"
+      },
+      "coordinates": [
+        51.7548,
+        -1.2544
+      ]
+    },
+    "description": {
+      "en": "<p>VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.</p>",
+      "zh": "<p>VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Karen Simonyan",
+          "zh": "Karen Simonyan"
+        },
+        "role": {
+          "en": "Co-author of the VGG paper",
+          "zh": "VGG 论文共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Andrew Zisserman",
+          "zh": "Andrew Zisserman"
+        },
+        "role": {
+          "en": "Co-author and Visual Geometry Group lead",
+          "zh": "共同作者，视觉几何组负责人"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "very deep convolutional networks",
+      "zh": "非常深的卷积网络"
+    },
+    "quoteMeta": {
+      "workTitle": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+      "workAuthors": "Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "sourceUrl": "https://arxiv.org/abs/1409.1556"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer Vision / VGG",
+      "zh": "BenchCouncil AI100：计算机视觉 / VGG 网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "After AlexNet, the field knew that large CNNs could win ImageNet, but the design space was still messy. VGG asked how far a simple homogeneous design could go if depth was increased carefully.",
+          "zh": "AlexNet 之后，研究者知道大型 CNN 能赢得 ImageNet，但架构设计空间仍然混乱。VGG 追问：如果谨慎增加深度，一个简单同质化设计能走多远？"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Instead of mixing many filter sizes, VGG stacks small convolutions in a regular pattern. The network becomes deeper without turning the architecture into a collection of special cases.",
+          "zh": "VGG 不混用大量卷积核尺寸，而是按规则堆叠小卷积。网络因此变深，同时架构仍保持统一。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its value is clarity: it still helps explain depth, pretrained visual features, and baseline comparisons even though newer models are more efficient.",
+          "zh": "今天的专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的价值在于清晰性：即使新模型更高效，它仍有助于解释网络深度、预训练视觉特征和基线比较。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Computer Vision",
+        "zh": "计算机视觉"
+      },
+      "method": {
+        "en": "Very deep stacks of 3x3 convolutions",
+        "zh": "由 3x3 卷积堆叠出的很深网络"
+      },
+      "artifact": {
+        "en": "VGG-16 and VGG-19 architectures",
+        "zh": "VGG-16 与 VGG-19 架构"
+      },
+      "material": {
+        "en": "ImageNet recognition model",
+        "zh": "ImageNet 识别模型"
+      },
+      "demo": {
+        "en": "Depth through small filters",
+        "zh": "用小卷积核堆叠深度"
+      },
+      "visual": "vgg",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "3x3 Filters",
+            "zh": "3x3 卷积核"
+          },
+          "text": {
+            "en": "VGG repeatedly uses small filters, letting several layers build a larger effective receptive field while adding nonlinearities.",
+            "zh": "VGG 反复使用小卷积核，让多层组合出更大的有效感受野，同时插入更多非线性。"
+          }
+        },
+        {
+          "label": {
+            "en": "Network Depth",
+            "zh": "网络深度"
+          },
+          "text": {
+            "en": "The paper systematically increased depth and showed that deeper convolutional stacks improved large-scale recognition.",
+            "zh": "论文系统增加网络深度，并展示更深卷积堆叠能提升大规模识别。"
+          }
+        },
+        {
+          "label": {
+            "en": "Transfer Features",
+            "zh": "迁移特征"
+          },
+          "text": {
+            "en": "Pretrained VGG features became a common starting point for detection, segmentation, style transfer, and visualization.",
+            "zh": "预训练 VGG 特征后来成为检测、分割、风格迁移和可视化的常用起点。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "GoogLeNet / Inception",
+          "zh": "GoogLeNet / Inception"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Oxford VGG",
+          "title": {
+            "en": "Very Deep ConvNets project",
+            "zh": "Very Deep ConvNets project"
+          },
+          "description": {
+            "en": "Official VGG project page with model release notes and source material.",
+            "zh": "Official VGG project page with model release notes and source material."
+          },
+          "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "Open project page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "zh": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1409.1556"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "Project"
+          },
+          "label": {
+            "en": "Oxford VGG Very Deep ConvNets",
+            "zh": "Oxford VGG Very Deep ConvNets"
+          },
+          "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "TorchVision VGG model family",
+            "zh": "TorchVision VGG model family"
+          },
+          "url": "https://pytorch.org/vision/stable/models/vgg.html"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "3x3 filters",
+          "zh": "3x3 卷积核"
+        },
+        {
+          "en": "16-19 weight layers",
+          "zh": "16-19 个权重层"
+        },
+        {
+          "en": "Released models",
+          "zh": "公开模型"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+      "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+      "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
+        "caption": {
+          "en": "3x3 receptive-field build-up",
+          "zh": "3x3 感受野累积"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Oxford VGG",
+        "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2014-vgg_model-release.svg": {
+        "caption": {
+          "en": "VGG-16 / VGG-19 release card",
+          "zh": "VGG-16 / VGG-19 发布卡"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Oxford VGG",
+        "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg": {
+        "caption": {
+          "en": "VGG depth comparison",
+          "zh": "VGG 深度配置对比"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Oxford VGG",
+        "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg": {
+        "caption": {
+          "en": "Andrew Zisserman portrait",
+          "zh": "Andrew Zisserman 肖像"
+        },
+        "subcaption": {
+          "en": "Profile photo from the ELLIS Oxford / University of Oxford page.",
+          "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。"
+        },
+        "sourceName": "ELLIS Oxford / University of Oxford",
+        "source": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+        "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+        "originalImageUrl": "https://www.ellis.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/ellis/images/person/andrew_zisserman.jpg?itok=_Y3KBWur",
+        "license": "Institution profile photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Co-author portrait",
+          "zh": "历史人物 / 共同作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1975-genetic-algorithm": {
+    "year": "1975",
+    "title": {
+      "en": "Genetic Algorithms",
+      "zh": "遗传算法"
+    },
+    "location": {
+      "name": {
+        "en": "University of Michigan",
+        "zh": "密歇根大学"
+      },
+      "country": {
+        "en": "Ann Arbor, United States",
+        "zh": "美国安娜堡"
+      },
+      "coordinates": [
+        42.278,
+        -83.7382
+      ]
+    },
+    "description": {
+      "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>",
+      "zh": "<p>John Holland 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John H. Holland",
+          "zh": "John H. Holland"
+        },
+        "role": {
+          "en": "Developed the genetic algorithm framework",
+          "zh": "提出遗传算法框架"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "adaptation in natural and artificial systems",
+      "zh": "自然与人工系统中的适应"
+    },
+    "quoteMeta": {
+      "workTitle": "Adaptation in Natural and Artificial Systems",
+      "workAuthors": "John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Search and Optimization / Genetic Algorithm",
+      "zh": "BenchCouncil AI100：搜索与优化 / 遗传算法"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Before deep learning dominated AI, search was one of the field’s central metaphors. Holland brought biological adaptation into computation, making it possible to study learning and optimization in artificial populations.",
+          "zh": "在深度学习主导 AI 之前，搜索是这个领域的核心隐喻之一。Holland 将生物适应引入计算，使研究人工种群中的学习与优化成为可能。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates.",
+          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. Their strength is population-based exploration, especially when gradients are unavailable or objectives are awkward to optimize.",
+          "zh": "今天的专家通常把遗传算法视为困难设计空间中的有用搜索启发式方法，而不是通用智能理论。它们的优势在于基于种群的探索，尤其适用于没有梯度或目标函数难以优化的场景。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Search and Optimization",
+        "zh": "搜索与优化"
+      },
+      "method": {
+        "en": "Population-based evolutionary search",
+        "zh": "基于种群的进化搜索"
+      },
+      "artifact": {
+        "en": "Genetic algorithm framework",
+        "zh": "遗传算法框架"
+      },
+      "material": {
+        "en": "Adaptation in Natural and Artificial Systems",
+        "zh": "《自然与人工系统中的适应》"
+      },
+      "demo": {
+        "en": "Select, recombine, mutate",
+        "zh": "选择、重组、变异"
+      },
+      "visual": "evolution",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Population Search",
+            "zh": "种群搜索"
+          },
+          "text": {
+            "en": "The algorithm keeps many candidates at once, so search can explore multiple regions instead of following one path.",
+            "zh": "算法同时保留多个候选解，因此可以探索多个区域，而不是只沿一条路径前进。"
+          }
+        },
+        {
+          "label": {
+            "en": "Crossover",
+            "zh": "交叉"
+          },
+          "text": {
+            "en": "Parts of successful candidates are recombined, allowing useful partial structures to move into new solutions.",
+            "zh": "成功候选解的片段会被重组，使有用的局部结构进入新解。"
+          }
+        },
+        {
+          "label": {
+            "en": "Mutation",
+            "zh": "变异"
+          },
+          "text": {
+            "en": "Random changes preserve diversity and let the population escape premature convergence.",
+            "zh": "随机变化保持多样性，并帮助种群避免过早收敛。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Simulated annealing",
+          "zh": "模拟退火"
+        },
+        {
+          "en": "Reinforcement learning",
+          "zh": "强化学习"
+        },
+        {
+          "en": "AutoML",
+          "zh": "自动机器学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "MIT Press",
+          "title": {
+            "en": "Adaptation in Natural and Artificial Systems",
+            "zh": "Adaptation in Natural and Artificial Systems"
+          },
+          "description": {
+            "en": "Book record for Holland’s foundational genetic-algorithm treatment.",
+            "zh": "Book record for Holland’s foundational genetic-algorithm treatment."
+          },
+          "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+          "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open book record",
+            "zh": "Open book record"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Book",
+            "zh": "Book"
+          },
+          "label": {
+            "en": "Adaptation in Natural and Artificial Systems",
+            "zh": "Adaptation in Natural and Artificial Systems"
+          },
+          "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
+        },
+        {
+          "type": {
+            "en": "Toolkit",
+            "zh": "Toolkit"
+          },
+          "label": {
+            "en": "DEAP evolutionary computation framework",
+            "zh": "DEAP evolutionary computation framework"
+          },
+          "url": "https://deap.readthedocs.io/en/master/"
+        },
+        {
+          "type": {
+            "en": "Toolkit",
+            "zh": "Toolkit"
+          },
+          "label": {
+            "en": "ECJ evolutionary computation system",
+            "zh": "ECJ evolutionary computation system"
+          },
+          "url": "https://cs.gmu.edu/~eclab/projects/ecj/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Population",
+          "zh": "种群"
+        },
+        {
+          "en": "Crossover + mutation",
+          "zh": "交叉 + 变异"
+        },
+        {
+          "en": "Fitness feedback",
+          "zh": "适应度反馈"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg": {
+        "caption": {
+          "en": "Chromosome crossover",
+          "zh": "染色体交叉"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+          "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "MIT Press",
+        "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_fitness-selection.svg": {
+        "caption": {
+          "en": "Fitness selection board",
+          "zh": "适应度选择板"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+          "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "MIT Press",
+        "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg": {
+        "caption": {
+          "en": "Population adaptation loop",
+          "zh": "种群适应循环"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+          "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "MIT Press",
+        "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg": {
+        "caption": {
+          "en": "John Henry Holland portrait",
+          "zh": "John Henry Holland 肖像"
+        },
+        "subcaption": {
+          "en": "Physics Today history article photo, credited there to Santa Fe Institute.",
+          "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。"
+        },
+        "sourceName": "Physics Today",
+        "source": "https://physicstoday.aip.org/news/john-henry-holland",
+        "sourceUrl": "https://physicstoday.aip.org/news/john-henry-holland",
+        "originalImageUrl": "https://aip.brightspotcdn.com/dims4/default/811cb1a/2147483647/strip/true/crop/600x396+0+0/resize/600x396!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F9290%2Fpt-5-031409.jpg",
+        "license": "Physics Today article photo; photo credit: Santa Fe Institute.",
+        "usage": {
+          "en": "Historical figure / Genetic algorithms pioneer",
+          "zh": "历史人物 / 遗传算法先驱"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2015-u-net": {
+    "year": "2015",
+    "title": {
+      "en": "U-Net",
+      "zh": "U-Net"
+    },
+    "location": {
+      "name": {
+        "en": "University of Freiburg",
+        "zh": "弗赖堡大学"
+      },
+      "country": {
+        "en": "Freiburg, Germany",
+        "zh": "德国弗赖堡"
+      },
+      "coordinates": [
+        47.999,
+        7.8421
+      ]
+    },
+    "description": {
+      "en": "<p>U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.</p>",
+      "zh": "<p>U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Olaf Ronneberger",
+          "zh": "Olaf Ronneberger"
+        },
+        "role": {
+          "en": "Co-author of U-Net",
+          "zh": "U-Net 共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Philipp Fischer",
+          "zh": "Philipp Fischer"
+        },
+        "role": {
+          "en": "Co-author of U-Net",
+          "zh": "U-Net 共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Thomas Brox",
+          "zh": "Thomas Brox"
+        },
+        "role": {
+          "en": "Co-author of U-Net",
+          "zh": "U-Net 共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "convolutional networks for biomedical image segmentation",
+      "zh": "用于生物医学图像分割的卷积网络"
+    },
+    "quoteMeta": {
+      "workTitle": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "workAuthors": "Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "sourceUrl": "https://arxiv.org/abs/1505.04597"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer Vision / U-net",
+      "zh": "BenchCouncil AI100：计算机视觉 / U-Net"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Biomedical imaging needed models that could learn from limited annotations while preserving small structures. Plain classification CNNs were not enough because the output had to align with every pixel.",
+          "zh": "生物医学图像需要模型在有限标注下学习，并保留细小结构。普通分类 CNN 不够，因为输出必须与每个像素对齐。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "U-Net pairs a context-gathering path with a resolution-restoring path. Skip connections reunite semantic context with local detail.",
+          "zh": "U-Net 将收集上下文的路径与恢复分辨率的路径配对。跳跃连接把语义上下文与局部细节重新合在一起。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat U-Net as a canonical architecture for dense prediction and restoration. Its encoder-decoder shape with skip connections remains influential beyond biomedical segmentation, including image restoration and diffusion-model backbones.",
+          "zh": "今天的专家通常把 U-Net 视为密集预测和图像复原的经典架构。它带跳跃连接的编码器-解码器形态仍然影响着生物医学分割之外的领域，包括图像复原和扩散模型骨干网络。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Computer Vision",
+        "zh": "计算机视觉"
+      },
+      "method": {
+        "en": "Encoder-decoder segmentation with skip connections",
+        "zh": "带跳跃连接的编码器-解码器分割"
+      },
+      "artifact": {
+        "en": "U-shaped biomedical segmentation network",
+        "zh": "U 形生物医学分割网络"
+      },
+      "material": {
+        "en": "MICCAI paper and open architecture",
+        "zh": "MICCAI 论文与开放架构"
+      },
+      "demo": {
+        "en": "Contracting path plus expanding path",
+        "zh": "收缩路径加扩张路径"
+      },
+      "visual": "unet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Encoder-Decoder",
+            "zh": "编码器-解码器"
+          },
+          "text": {
+            "en": "The encoder compresses the image into context; the decoder expands it back to pixel-level predictions.",
+            "zh": "编码器把图像压缩成上下文表示，解码器再把它扩展回像素级预测。"
+          }
+        },
+        {
+          "label": {
+            "en": "Skip Connections",
+            "zh": "跳跃连接"
+          },
+          "text": {
+            "en": "Feature maps from early layers are copied to matching decoder layers so localization details are not lost.",
+            "zh": "早期层的特征图会复制到对应解码层，避免定位细节丢失。"
+          }
+        },
+        {
+          "label": {
+            "en": "Dense Prediction",
+            "zh": "密集预测"
+          },
+          "text": {
+            "en": "U-Net predicts a label for each pixel, making it a landmark for segmentation rather than only classification.",
+            "zh": "U-Net 为每个像素预测标签，因此成为分割任务而非单纯分类任务的里程碑。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Fully convolutional networks",
+          "zh": "全卷积网络"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "Diffusion models",
+          "zh": "扩散模型"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Germany",
+          "zh": "德国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Freiburg CVL",
+          "title": {
+            "en": "U-Net release page",
+            "zh": "U-Net release page"
+          },
+          "description": {
+            "en": "Project page and downloadable implementation materials from the Freiburg group.",
+            "zh": "Project page and downloadable implementation materials from the Freiburg group."
+          },
+          "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+          "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "Open project page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+            "zh": "U-Net: Convolutional Networks for Biomedical Image Segmentation"
+          },
+          "url": "https://arxiv.org/abs/1505.04597"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "Project"
+          },
+          "label": {
+            "en": "Freiburg U-Net release page",
+            "zh": "Freiburg U-Net release page"
+          },
+          "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/"
+        },
+        {
+          "type": {
+            "en": "Toolkit",
+            "zh": "Toolkit"
+          },
+          "label": {
+            "en": "nnU-Net implementation project",
+            "zh": "nnU-Net implementation project"
+          },
+          "url": "https://github.com/MIC-DKFZ/nnUNet"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Contracting path",
+          "zh": "收缩路径"
+        },
+        {
+          "en": "Skip-copy detail",
+          "zh": "跳跃复制细节"
+        },
+        {
+          "en": "Pixel mask output",
+          "zh": "像素掩码输出"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
+      "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
+      "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2015-u-net_skip-copy.svg": {
+        "caption": {
+          "en": "Skip-copy feature bridge",
+          "zh": "跳跃复制特征桥"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for U-Net, based on the related source material.",
+          "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Freiburg CVL",
+        "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg": {
+        "caption": {
+          "en": "Biomedical mask output",
+          "zh": "生物医学分割掩码"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for U-Net, based on the related source material.",
+          "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Freiburg CVL",
+        "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg": {
+        "caption": {
+          "en": "U-shaped encoder-decoder",
+          "zh": "U 形编码器-解码器"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for U-Net, based on the related source material.",
+          "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Freiburg CVL",
+        "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg": {
+        "caption": {
+          "en": "Olaf Ronneberger portrait",
+          "zh": "Olaf Ronneberger 肖像"
+        },
+        "subcaption": {
+          "en": "Researcher profile photo from the Freiburg LMB page.",
+          "zh": "来自 Freiburg LMB 研究者主页的人物照片。"
+        },
+        "sourceName": "University of Freiburg LMB",
+        "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+        "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+        "originalImageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/Ronneberger_Portrait.jpg",
+        "license": "Institution profile photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / U-Net co-author portrait",
+          "zh": "历史人物 / U-Net 共同作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2015-faster-r-cnn": {
+    "year": "2015",
+    "title": {
+      "en": "Faster R-CNN",
+      "zh": "Faster R-CNN"
+    },
+    "location": {
+      "name": {
+        "en": "Microsoft Research Asia",
+        "zh": "微软亚洲研究院"
+      },
+      "country": {
+        "en": "Beijing, China",
+        "zh": "中国北京"
+      },
+      "coordinates": [
+        39.9042,
+        116.4074
+      ]
+    },
+    "description": {
+      "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>",
+      "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Shaoqing Ren",
+          "zh": "任少卿 (Shaoqing Ren)"
+        },
+        "role": {
+          "en": "Co-author of Faster R-CNN",
+          "zh": "Faster R-CNN 共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Kaiming He",
+          "zh": "何恺明 (Kaiming He)"
+        },
+        "role": {
+          "en": "Co-author of Faster R-CNN",
+          "zh": "Faster R-CNN 共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Ross Girshick",
+          "zh": "Ross Girshick"
+        },
+        "role": {
+          "en": "Co-author of Faster R-CNN",
+          "zh": "Faster R-CNN 共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Jian Sun",
+          "zh": "孙剑 (Jian Sun)"
+        },
+        "role": {
+          "en": "Co-author of Faster R-CNN",
+          "zh": "Faster R-CNN 共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "towards real-time object detection",
+      "zh": "迈向实时目标检测"
+    },
+    "quoteMeta": {
+      "workTitle": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "workAuthors": "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "sourceUrl": "https://arxiv.org/abs/1506.01497"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Object Detection / Faster r-cnn",
+      "zh": "BenchCouncil AI100：目标检测 / Faster R-CNN"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Object detection had made large accuracy gains with R-CNN, but external proposal generation made the pipeline slower and less elegant.",
+          "zh": "R-CNN 已经大幅提升目标检测精度，但外部候选区域生成让流水线变慢且不够统一。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Faster R-CNN trains the network to propose boxes while it is already computing visual features. Detection becomes a learned pipeline rather than a hand-off between unrelated modules.",
+          "zh": "Faster R-CNN 让网络在计算视觉特征的同时学习提出候选框。检测因此成为学习型流水线，而不是无关模块之间的交接。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Faster R-CNN as a turning point that made object detection more end-to-end and learnable. It is no longer the only dominant detector style, but its proposal-and-recognition split still frames how researchers explain detection tradeoffs.",
+          "zh": "今天的专家通常把 Faster R-CNN 视为让目标检测更端到端、更可学习的转折点。它不再是唯一主导的检测器风格，但“候选区域 + 识别”的划分仍帮助研究者解释检测中的权衡。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Object Detection",
+        "zh": "目标检测"
+      },
+      "method": {
+        "en": "Region Proposal Network with shared features",
+        "zh": "共享特征的区域建议网络"
+      },
+      "artifact": {
+        "en": "Two-stage detector with learned proposals",
+        "zh": "带学习型候选区域的两阶段检测器"
+      },
+      "material": {
+        "en": "NeurIPS paper and detection pipeline",
+        "zh": "NeurIPS 论文与检测流水线"
+      },
+      "demo": {
+        "en": "Propose boxes, classify objects",
+        "zh": "提出候选框并分类目标"
+      },
+      "visual": "detector",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Region Proposal Network",
+            "zh": "区域建议网络"
+          },
+          "text": {
+            "en": "An RPN predicts likely object boxes directly from convolutional features instead of relying on a separate proposal method.",
+            "zh": "RPN 直接从卷积特征预测可能的目标框，而不是依赖外部候选区域方法。"
+          }
+        },
+        {
+          "label": {
+            "en": "Shared Features",
+            "zh": "共享特征"
+          },
+          "text": {
+            "en": "Proposal generation and object classification reuse the same feature maps, improving speed and consistency.",
+            "zh": "候选区域生成与目标分类复用同一组特征图，提高速度和一致性。"
+          }
+        },
+        {
+          "label": {
+            "en": "Two-Stage Detection",
+            "zh": "两阶段检测"
+          },
+          "text": {
+            "en": "The system first proposes candidate boxes and then refines class labels and bounding boxes.",
+            "zh": "系统先提出候选框，再细化类别标签和边界框。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "R-CNN",
+          "zh": "R-CNN"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "YOLO",
+          "zh": "YOLO"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "China",
+          "zh": "中国"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "GitHub",
+          "title": {
+            "en": "ShaoqingRen/faster_rcnn",
+            "zh": "ShaoqingRen/faster_rcnn"
+          },
+          "description": {
+            "en": "Author-linked MATLAB implementation repository for Faster R-CNN.",
+            "zh": "Author-linked MATLAB implementation repository for Faster R-CNN."
+          },
+          "url": "https://github.com/ShaoqingRen/faster_rcnn",
+          "source": "https://github.com/ShaoqingRen/faster_rcnn",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open code repository",
+            "zh": "Open code repository"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+            "zh": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
+          },
+          "url": "https://arxiv.org/abs/1506.01497"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "Code"
+          },
+          "label": {
+            "en": "ShaoqingRen/faster_rcnn",
+            "zh": "ShaoqingRen/faster_rcnn"
+          },
+          "url": "https://github.com/ShaoqingRen/faster_rcnn"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "TorchVision Faster R-CNN model",
+            "zh": "TorchVision Faster R-CNN model"
+          },
+          "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Shared conv map",
+          "zh": "共享卷积特征图"
+        },
+        {
+          "en": "Anchors propose boxes",
+          "zh": "Anchors 提出候选框"
+        },
+        {
+          "en": "Class + box heads",
+          "zh": "分类与框回归头"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_anchor-grid.svg": {
+        "caption": {
+          "en": "Anchor grid over feature map",
+          "zh": "特征图 Anchor 网格"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+          "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "GitHub",
+        "source": "https://github.com/ShaoqingRen/faster_rcnn",
+        "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg": {
+        "caption": {
+          "en": "Detection output boxes",
+          "zh": "检测输出框"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+          "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "GitHub",
+        "source": "https://github.com/ShaoqingRen/faster_rcnn",
+        "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg": {
+        "caption": {
+          "en": "Region proposal network",
+          "zh": "区域建议网络"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+          "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "GitHub",
+        "source": "https://github.com/ShaoqingRen/faster_rcnn",
+        "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+        "caption": {
+          "en": "Kaiming He portrait",
+          "zh": "Kaiming He 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Kaiming He's MIT-hosted personal page.",
+          "zh": "来自 Kaiming He 的 MIT 托管个人主页。"
+        },
+        "sourceName": "Kaiming He personal page",
+        "source": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "originalImageUrl": "https://people.csail.mit.edu/kaiming/img/kmh2024fall.jpg",
+        "license": "Personal website photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Faster R-CNN co-author portrait",
+          "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1992-svm": {
+    "year": "1992",
+    "title": {
+      "en": "Support Vector Machines",
+      "zh": "支持向量机"
+    },
+    "location": {
+      "name": {
+        "en": "Bell Laboratories",
+        "zh": "贝尔实验室"
+      },
+      "country": {
+        "en": "Murray Hill, United States",
+        "zh": "美国默里山"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4018
+      ]
+    },
+    "description": {
+      "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>",
+      "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Vladimir Vapnik",
+          "zh": "Vladimir Vapnik"
+        },
+        "role": {
+          "en": "Co-developed optimal-margin classifiers and statistical learning theory",
+          "zh": "共同发展最优间隔分类器与统计学习理论"
+        }
+      },
+      {
+        "name": {
+          "en": "Bernhard Boser",
+          "zh": "Bernhard Boser"
+        },
+        "role": {
+          "en": "Co-author of the 1992 optimal-margin classifier paper",
+          "zh": "1992 年最优间隔分类器论文共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Isabelle Guyon",
+          "zh": "Isabelle Guyon"
+        },
+        "role": {
+          "en": "Co-author of the 1992 optimal-margin classifier paper",
+          "zh": "1992 年最优间隔分类器论文共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "optimal margin classifiers",
+      "zh": "最优间隔分类器"
+    },
+    "quoteMeta": {
+      "workTitle": "A Training Algorithm for Optimal Margin Classifiers",
+      "workAuthors": "Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Statistical Learning / SVM",
+      "zh": "BenchCouncil AI100：统计学习 / 支持向量机"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "In the early 1990s, machine learning needed methods that could generalize from limited data with clear mathematical guarantees. SVMs translated VC-style capacity control into a practical classifier.",
+          "zh": "20 世纪 90 年代初，机器学习需要能在有限数据上泛化并具有清晰数学保证的方法。SVM 将 VC 式容量控制转化为实用分类器。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "SVMs prefer a boundary that is not merely correct on training data, but comfortably separated from the closest examples. Kernels make nonlinear boundaries possible while preserving a convex optimization problem.",
+          "zh": "SVM 偏好不只是训练集正确、而且离最近样本足够远的边界。核函数让非线性边界成为可能，同时保留凸优化问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat SVMs as a mature classical method whose conceptual importance exceeds its role in modern deep learning pipelines. The margin idea remains central for teaching generalization, kernels, and robust decision boundaries.",
+          "zh": "今天的专家通常把 SVM 视为成熟的经典方法，其概念重要性超过了它在现代深度学习流水线中的实际角色。间隔思想仍是讲解泛化、核方法和稳健决策边界的核心。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Statistical Learning",
+        "zh": "统计学习"
+      },
+      "method": {
+        "en": "Maximum-margin classification with kernels",
+        "zh": "带核函数的最大间隔分类"
+      },
+      "artifact": {
+        "en": "Support vector machine",
+        "zh": "支持向量机"
+      },
+      "material": {
+        "en": "COLT paper and statistical learning theory",
+        "zh": "COLT 论文与统计学习理论"
+      },
+      "demo": {
+        "en": "Find the widest separating margin",
+        "zh": "寻找最宽分类间隔"
+      },
+      "visual": "svm",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Maximum Margin",
+            "zh": "最大间隔"
+          },
+          "text": {
+            "en": "The classifier chooses the separating boundary with the widest gap to the nearest training examples.",
+            "zh": "分类器选择与最近训练样本之间间隔最宽的分隔边界。"
+          }
+        },
+        {
+          "label": {
+            "en": "Support Vectors",
+            "zh": "支持向量"
+          },
+          "text": {
+            "en": "Only the closest examples define the boundary, making the model depend on critical cases rather than all points equally.",
+            "zh": "只有最接近边界的样本定义分类面，使模型依赖关键样本，而不是同等依赖所有点。"
+          }
+        },
+        {
+          "label": {
+            "en": "Kernel Trick",
+            "zh": "核技巧"
+          },
+          "text": {
+            "en": "Kernels compute similarity as if data had been mapped into a richer space, without explicitly constructing that space.",
+            "zh": "核函数像是在更丰富空间中计算相似度，却不需要显式构造那个空间。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "VC theory",
+          "zh": "VC 理论"
+        },
+        {
+          "en": "Kernel methods",
+          "zh": "核方法"
+        },
+        {
+          "en": "Lasso",
+          "zh": "Lasso"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "ACM COLT",
+          "title": {
+            "en": "Optimal margin classifiers",
+            "zh": "Optimal margin classifiers"
+          },
+          "description": {
+            "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
+            "zh": "Original ACM record for the 1992 optimal-margin classifier paper."
+          },
+          "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+          "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open ACM record",
+            "zh": "Open ACM record"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "A Training Algorithm for Optimal Margin Classifiers",
+            "zh": "A Training Algorithm for Optimal Margin Classifiers"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/130385.130401"
+        },
+        {
+          "type": {
+            "en": "Toolkit",
+            "zh": "Toolkit"
+          },
+          "label": {
+            "en": "LIBSVM project page",
+            "zh": "LIBSVM project page"
+          },
+          "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "scikit-learn SVC",
+            "zh": "scikit-learn SVC"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Support vectors",
+          "zh": "支持向量"
+        },
+        {
+          "en": "Widest margin",
+          "zh": "最宽间隔"
+        },
+        {
+          "en": "Kernel boundary",
+          "zh": "核边界"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+      "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+      "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg": {
+        "caption": {
+          "en": "Kernel feature lift",
+          "zh": "核函数特征提升"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+          "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "ACM COLT",
+        "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1992-svm_support-vectors.svg": {
+        "caption": {
+          "en": "Support-vector set",
+          "zh": "支持向量集合"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+          "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "ACM COLT",
+        "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg": {
+        "caption": {
+          "en": "Maximum-margin classifier",
+          "zh": "最大间隔分类器"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+          "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "ACM COLT",
+        "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
+        "caption": {
+          "en": "Isabelle Guyon portrait",
+          "zh": "Isabelle Guyon 肖像"
+        },
+        "subcaption": {
+          "en": "University Paris-Saclay article image about Guyon and support vector machines.",
+          "zh": "Université Paris-Saclay 关于 Guyon 与支持向量机工作的文章配图。"
+        },
+        "sourceName": "Université Paris-Saclay",
+        "source": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+        "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+        "originalImageUrl": "https://www.universite-paris-saclay.fr/sites/default/files/2020-05/IsabelleGuyon.jpg",
+        "license": "University news image; rights not stated.",
+        "usage": {
+          "en": "Historical figure / SVM co-inventor portrait",
+          "zh": "历史人物 / SVM 共同发明者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1984-cart": {
+    "year": "1984",
+    "title": {
+      "en": "CART",
+      "zh": "CART 决策树"
+    },
+    "location": {
+      "name": {
+        "en": "University of California, Berkeley",
+        "zh": "加州大学伯克利分校"
+      },
+      "country": {
+        "en": "Berkeley, United States",
+        "zh": "美国伯克利"
+      },
+      "coordinates": [
+        37.8715,
+        -122.273
+      ]
+    },
+    "description": {
+      "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>",
+      "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Leo Breiman",
+          "zh": "Leo Breiman"
+        },
+        "role": {
+          "en": "Co-author of the CART monograph",
+          "zh": "CART 专著共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Jerome Friedman",
+          "zh": "Jerome Friedman"
+        },
+        "role": {
+          "en": "Co-author of the CART monograph",
+          "zh": "CART 专著共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Richard Olshen",
+          "zh": "Richard Olshen"
+        },
+        "role": {
+          "en": "Co-author of the CART monograph",
+          "zh": "CART 专著共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Charles Stone",
+          "zh": "Charles Stone"
+        },
+        "role": {
+          "en": "Co-author of the CART monograph",
+          "zh": "CART 专著共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "classification and regression trees",
+      "zh": "分类与回归树"
+    },
+    "quoteMeta": {
+      "workTitle": "Classification and Regression Trees",
+      "workAuthors": "Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+      "sourceUrl": "https://www.routledge.com/Classification-and-Regression-Trees/Breiman-Friedman-Olshen-Stone/p/book/9780412048418"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Decision Trees / CART",
+      "zh": "BenchCouncil AI100：决策树 / CART 决策树"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Decision rules were attractive because they were interpretable, but they needed a disciplined statistical procedure. CART supplied that procedure for both categorical and numeric outcomes.",
+          "zh": "决策规则很有吸引力，因为它们可解释，但它们需要有纪律的统计过程。CART 为分类与数值输出都提供了这样的过程。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "CART grows a tree by choosing splits that make child nodes more homogeneous. It then prunes the tree so the final model balances fit and simplicity.",
+          "zh": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat CART as a foundational interpretable model and as the basic unit behind stronger tree ensembles. Single trees are often too limited for peak accuracy, but their split-and-prune logic remains essential for explanation and tabular modeling.",
+          "zh": "今天的专家通常把 CART 视为基础性的可解释模型，也是更强树集成方法背后的基本单元。单棵树在最高精度上常常有限，但其划分与剪枝逻辑仍是解释和表格建模的关键。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Decision Trees",
+        "zh": "决策树"
+      },
+      "method": {
+        "en": "Recursive partitioning with pruning",
+        "zh": "递归划分与剪枝"
+      },
+      "artifact": {
+        "en": "Classification and regression trees",
+        "zh": "分类与回归树"
+      },
+      "material": {
+        "en": "CART monograph",
+        "zh": "CART 专著"
+      },
+      "demo": {
+        "en": "Split data, prune tree",
+        "zh": "划分数据并剪枝"
+      },
+      "visual": "cart",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Recursive Partitioning",
+            "zh": "递归划分"
+          },
+          "text": {
+            "en": "The tree repeatedly splits the feature space into simpler regions where predictions become easier.",
+            "zh": "树反复把特征空间划分为更简单的区域，使预测变得更容易。"
+          }
+        },
+        {
+          "label": {
+            "en": "Impurity",
+            "zh": "不纯度"
+          },
+          "text": {
+            "en": "Measures such as Gini impurity guide which split best separates classes or reduces prediction error.",
+            "zh": "Gini 不纯度等指标指导哪个划分最能分开类别或降低预测误差。"
+          }
+        },
+        {
+          "label": {
+            "en": "Pruning",
+            "zh": "剪枝"
+          },
+          "text": {
+            "en": "A large tree is cut back to reduce overfitting and improve performance on unseen data.",
+            "zh": "先生成的大树会被裁剪，以减少过拟合并提升未见数据表现。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Random forests",
+          "zh": "随机森林"
+        },
+        {
+          "en": "Gradient boosting",
+          "zh": "梯度提升"
+        },
+        {
+          "en": "Lasso",
+          "zh": "Lasso"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Routledge",
+          "title": {
+            "en": "Classification and Regression Trees",
+            "zh": "Classification and Regression Trees"
+          },
+          "description": {
+            "en": "Publisher book record for the CART monograph.",
+            "zh": "Publisher book record for the CART monograph."
+          },
+          "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+          "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open book record",
+            "zh": "Open book record"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Book",
+            "zh": "Book"
+          },
+          "label": {
+            "en": "Classification and Regression Trees",
+            "zh": "Classification and Regression Trees"
+          },
+          "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "scikit-learn DecisionTreeClassifier",
+            "zh": "scikit-learn DecisionTreeClassifier"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html"
+        },
+        {
+          "type": {
+            "en": "Package",
+            "zh": "Package"
+          },
+          "label": {
+            "en": "R rpart package",
+            "zh": "R rpart package"
+          },
+          "url": "https://cran.r-project.org/web/packages/rpart/index.html"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Recursive split",
+          "zh": "递归划分"
+        },
+        {
+          "en": "Impurity score",
+          "zh": "不纯度评分"
+        },
+        {
+          "en": "Prune to size",
+          "zh": "剪枝到合适规模"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+      "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg": {
+        "caption": {
+          "en": "Cost-complexity pruning curve",
+          "zh": "代价复杂度剪枝曲线"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for CART, based on the related source material.",
+          "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Routledge",
+        "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+        "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1984-cart_terminal-regions.svg": {
+        "caption": {
+          "en": "Terminal regions map",
+          "zh": "终端区域图"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for CART, based on the related source material.",
+          "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Routledge",
+        "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+        "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg": {
+        "caption": {
+          "en": "Feature-space splits",
+          "zh": "特征空间划分"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for CART, based on the related source material.",
+          "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Routledge",
+        "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+        "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+        "caption": {
+          "en": "Leo Breiman portrait",
+          "zh": "Leo Breiman 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from the University of York Portraits of Statisticians archive.",
+          "zh": "来自 University of York “Portraits of Statisticians” 档案的人物照片。"
+        },
+        "sourceName": "University of York / Portraits of Statisticians",
+        "source": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+        "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+        "originalImageUrl": "http://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "license": "Archive portrait; rights not stated.",
+        "usage": {
+          "en": "Historical figure / CART co-author portrait",
+          "zh": "历史人物 / CART 共同作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1983-simulated-annealing": {
+    "year": "1983",
+    "title": {
+      "en": "Simulated Annealing",
+      "zh": "模拟退火"
+    },
+    "location": {
+      "name": {
+        "en": "IBM Thomas J. Watson Research Center",
+        "zh": "IBM Thomas J. Watson 研究中心"
+      },
+      "country": {
+        "en": "Yorktown Heights, United States",
+        "zh": "美国约克敦高地"
+      },
+      "coordinates": [
+        41.2107,
+        -73.8021
+      ]
+    },
+    "description": {
+      "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>",
+      "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。Kirkpatrick、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Scott Kirkpatrick",
+          "zh": "Scott Kirkpatrick"
+        },
+        "role": {
+          "en": "Co-author of the 1983 simulated annealing paper",
+          "zh": "1983 年模拟退火论文共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "C. Daniel Gelatt Jr.",
+          "zh": "C. Daniel Gelatt Jr."
+        },
+        "role": {
+          "en": "Co-author of the 1983 simulated annealing paper",
+          "zh": "1983 年模拟退火论文共同作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Mario P. Vecchi",
+          "zh": "Mario P. Vecchi"
+        },
+        "role": {
+          "en": "Co-author of the 1983 simulated annealing paper",
+          "zh": "1983 年模拟退火论文共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "optimization by simulated annealing",
+      "zh": "通过模拟退火进行优化"
+    },
+    "quoteMeta": {
+      "workTitle": "Optimization by Simulated Annealing",
+      "workAuthors": "Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Optimization / Simulated annealing",
+      "zh": "BenchCouncil AI100：优化算法 / 模拟退火"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Many AI and engineering problems had enormous search spaces where greedy improvement got stuck. Simulated annealing offered a principled way to make controlled uphill moves.",
+          "zh": "许多 AI 与工程问题都有巨大搜索空间，贪心改进很容易卡住。模拟退火提供了一种有原则地进行受控“上坡”移动的方法。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "At high temperature, the algorithm explores boldly. As the system cools, it increasingly commits to lower-cost states, imitating the settling of physical materials.",
+          "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat simulated annealing as a classic metaheuristic for escaping local optima. It is not a guarantee of easy global optimization, but the cooling metaphor remains useful for scheduling, routing, placement, and other hard combinatorial problems.",
+          "zh": "今天的专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法。它不能保证轻松找到全局最优，但降温隐喻仍适用于调度、路径规划、布局和其他困难组合问题。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Optimization",
+        "zh": "优化算法"
+      },
+      "method": {
+        "en": "Probabilistic search with a cooling schedule",
+        "zh": "带降温计划的概率搜索"
+      },
+      "artifact": {
+        "en": "Simulated annealing algorithm",
+        "zh": "模拟退火算法"
+      },
+      "material": {
+        "en": "Science paper on optimization by annealing",
+        "zh": "Science 模拟退火优化论文"
+      },
+      "demo": {
+        "en": "Accept some worse moves early, cool over time",
+        "zh": "早期接受部分坏移动，逐步降温"
+      },
+      "visual": "annealing",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Temperature",
+            "zh": "温度"
+          },
+          "text": {
+            "en": "A temperature parameter controls how willing the algorithm is to accept worse moves.",
+            "zh": "温度参数控制算法接受较差移动的意愿。"
+          }
+        },
+        {
+          "label": {
+            "en": "Cooling Schedule",
+            "zh": "降温计划"
+          },
+          "text": {
+            "en": "The schedule gradually lowers temperature so the search shifts from exploration to refinement.",
+            "zh": "降温计划逐渐降低温度，使搜索从探索转向精修。"
+          }
+        },
+        {
+          "label": {
+            "en": "Local Optima",
+            "zh": "局部最优"
+          },
+          "text": {
+            "en": "Accepting occasional worse moves helps the search escape solutions that are good nearby but not globally best.",
+            "zh": "偶尔接受较差移动可以帮助搜索逃离局部看起来不错但全局并非最优的解。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Genetic algorithms",
+          "zh": "遗传算法"
+        },
+        {
+          "en": "Monte Carlo methods",
+          "zh": "蒙特卡洛方法"
+        },
+        {
+          "en": "Search algorithms",
+          "zh": "搜索算法"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Science",
+          "title": {
+            "en": "Optimization by Simulated Annealing",
+            "zh": "Optimization by Simulated Annealing"
+          },
+          "description": {
+            "en": "Original Science record for the physical annealing analogy applied to optimization.",
+            "zh": "Original Science record for the physical annealing analogy applied to optimization."
+          },
+          "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+          "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open Science record",
+            "zh": "Open Science record"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "Optimization by Simulated Annealing",
+            "zh": "Optimization by Simulated Annealing"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.220.4598.671"
+        },
+        {
+          "type": {
+            "en": "Optimizer docs",
+            "zh": "Optimizer docs"
+          },
+          "label": {
+            "en": "SciPy dual_annealing",
+            "zh": "SciPy dual_annealing"
+          },
+          "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html"
+        },
+        {
+          "type": {
+            "en": "Notebook",
+            "zh": "Notebook"
+          },
+          "label": {
+            "en": "Hedibert course PDF mirror",
+            "zh": "Hedibert course PDF mirror"
+          },
+          "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "High temperature",
+          "zh": "高温探索"
+        },
+        {
+          "en": "Occasional uphill move",
+          "zh": "偶尔上坡移动"
+        },
+        {
+          "en": "Cooling schedule",
+          "zh": "降温计划"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg",
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg": {
+        "caption": {
+          "en": "Temperature schedule",
+          "zh": "温度计划"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Science",
+        "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_acceptance-rule.svg": {
+        "caption": {
+          "en": "Acceptance probability rule",
+          "zh": "接受概率规则"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Science",
+        "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg": {
+        "caption": {
+          "en": "Energy landscape search",
+          "zh": "能量地形搜索"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "Science",
+        "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif": {
+        "caption": {
+          "en": "Scott Kirkpatrick portrait",
+          "zh": "Scott Kirkpatrick 肖像"
+        },
+        "subcaption": {
+          "en": "Workshop participant page photo for Scott Kirkpatrick.",
+          "zh": "Collective Cognition Workshop 参与者页面中的 Scott Kirkpatrick 照片。"
+        },
+        "sourceName": "Collective Cognition Workshop / UC Davis CSC",
+        "source": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+        "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+        "originalImageUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/images/kirkpatrick_pic.gif",
+        "license": "Workshop profile photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Simulated annealing co-author portrait",
+          "zh": "历史人物 / 模拟退火共同作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1996-lasso": {
+    "year": "1996",
+    "title": {
+      "en": "Lasso",
+      "zh": "Lasso 回归"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Toronto, Canada",
+        "zh": "加拿大多伦多"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "en": "<p>The lasso gave statisticians and machine-learning practitioners a clean way to build sparse linear models. By penalizing the absolute size of coefficients, it both regularizes predictions and performs variable selection. Its ideas now appear in sparse modeling, high-dimensional statistics, compressed sensing, bioinformatics, and interpretable ML.</p>",
+      "zh": "<p>Lasso 为统计学家和机器学习实践者提供了一种构建稀疏线性模型的清晰方法。通过惩罚系数绝对值，它既正则化预测，又完成变量选择。其思想后来出现在稀疏建模、高维统计、压缩感知、生物信息学和可解释机器学习中。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Robert Tibshirani",
+          "zh": "Robert Tibshirani"
+        },
+        "role": {
+          "en": "Introduced the lasso method",
+          "zh": "提出 Lasso 方法"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "regression shrinkage and selection",
+      "zh": "回归收缩与选择"
+    },
+    "quoteMeta": {
+      "workTitle": "Regression Shrinkage and Selection via the Lasso",
+      "workAuthors": "Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+      "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Statistical Learning / Lasso",
+      "zh": "BenchCouncil AI100：统计学习 / Lasso 回归"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "As datasets grew wider, analysts needed models that could avoid overfitting and identify useful variables. Ridge regression shrank coefficients, but it did not usually set them to zero.",
+          "zh": "随着数据维度增加，分析者需要既能避免过拟合、又能识别有用变量的模型。岭回归能收缩系数，但通常不会把它们变成零。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The lasso adds an L1 penalty to regression. The geometry of that penalty naturally creates exact zeros, so prediction and selection are tied together.",
+          "zh": "Lasso 在回归中加入 L1 惩罚。该惩罚的几何形状自然产生精确零系数，因此预测与选择被绑定在一起。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Lasso as a standard tool for sparse, interpretable linear modeling. Its assumptions can be restrictive, but the idea of regularization-driven feature selection remains central in high-dimensional statistics and genomics.",
+          "zh": "今天的专家通常把 Lasso 视为稀疏、可解释线性建模的标准工具。它的假设可能较强，但由正则化驱动的特征选择思想仍是高维统计和基因组学的核心。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Statistical Learning",
+        "zh": "统计学习"
+      },
+      "method": {
+        "en": "L1-regularized regression and selection",
+        "zh": "L1 正则化回归与选择"
+      },
+      "artifact": {
+        "en": "Least absolute shrinkage and selection operator",
+        "zh": "最小绝对收缩与选择算子"
+      },
+      "material": {
+        "en": "Royal Statistical Society paper",
+        "zh": "皇家统计学会论文"
+      },
+      "demo": {
+        "en": "Shrink coefficients to zero",
+        "zh": "将系数收缩到零"
+      },
+      "visual": "lasso",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "L1 Penalty",
+            "zh": "L1 惩罚"
+          },
+          "text": {
+            "en": "The sum of absolute coefficient values is penalized, encouraging some coefficients to become exactly zero.",
+            "zh": "惩罚系数绝对值之和，鼓励部分系数精确变为零。"
+          }
+        },
+        {
+          "label": {
+            "en": "Sparsity",
+            "zh": "稀疏性"
+          },
+          "text": {
+            "en": "A sparse model uses only a subset of variables, which can improve interpretability and robustness.",
+            "zh": "稀疏模型只使用一部分变量，因此可能提升可解释性和稳健性。"
+          }
+        },
+        {
+          "label": {
+            "en": "Variable Selection",
+            "zh": "变量选择"
+          },
+          "text": {
+            "en": "Lasso chooses predictors as part of fitting the model instead of requiring a separate feature-selection step.",
+            "zh": "Lasso 在拟合模型时同时选择预测变量，而不需要单独的特征选择步骤。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SVM",
+          "zh": "支持向量机"
+        },
+        {
+          "en": "CART",
+          "zh": "CART"
+        },
+        {
+          "en": "Compressed sensing",
+          "zh": "压缩感知"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "JRSS / Wiley",
+          "title": {
+            "en": "Regression Shrinkage and Selection via the Lasso",
+            "zh": "Regression Shrinkage and Selection via the Lasso"
+          },
+          "description": {
+            "en": "Publisher DOI page for Tibshirani’s 1996 lasso paper.",
+            "zh": "Publisher DOI page for Tibshirani’s 1996 lasso paper."
+          },
+          "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+          "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open DOI page",
+            "zh": "Open DOI page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "Regression Shrinkage and Selection via the Lasso",
+            "zh": "Regression Shrinkage and Selection via the Lasso"
+          },
+          "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "scikit-learn Lasso",
+            "zh": "scikit-learn Lasso"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html"
+        },
+        {
+          "type": {
+            "en": "Toolkit",
+            "zh": "Toolkit"
+          },
+          "label": {
+            "en": "glmnet project",
+            "zh": "glmnet project"
+          },
+          "url": "https://glmnet.stanford.edu/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "L1 diamond",
+          "zh": "L1 菱形约束"
+        },
+        {
+          "en": "Shrink coefficients",
+          "zh": "收缩系数"
+        },
+        {
+          "en": "Set some to zero",
+          "zh": "部分系数归零"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+      "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+      "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg": {
+        "caption": {
+          "en": "Coefficient path",
+          "zh": "系数路径"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Lasso, based on the related source material.",
+          "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "JRSS / Wiley",
+        "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1996-lasso_feature-selection.svg": {
+        "caption": {
+          "en": "Feature-selection panel",
+          "zh": "特征选择面板"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Lasso, based on the related source material.",
+          "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "JRSS / Wiley",
+        "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg": {
+        "caption": {
+          "en": "L1 constraint geometry",
+          "zh": "L1 约束几何"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for Lasso, based on the related source material.",
+          "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "JRSS / Wiley",
+        "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg": {
+        "caption": {
+          "en": "Robert Tibshirani portrait",
+          "zh": "Robert Tibshirani 肖像"
+        },
+        "subcaption": {
+          "en": "Profile photo from Stanford Profiles.",
+          "zh": "来自 Stanford Profiles 的人物照片。"
+        },
+        "sourceName": "Stanford Profiles",
+        "source": "https://profiles.stanford.edu/robert-tibshirani",
+        "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+        "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/4688/resources/profilephoto/350x350.1509552478140.jpg",
+        "license": "Institution profile photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Lasso author portrait",
+          "zh": "历史人物 / Lasso 作者肖像"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2015-googlenet-inception": {
+    "year": "2014-2015",
+    "title": {
+      "en": "GoogLeNet / Inception",
+      "zh": "GoogLeNet / Inception"
+    },
+    "location": {
+      "name": {
+        "en": "Google",
+        "zh": "Google"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>",
+      "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Christian Szegedy",
+          "zh": "Christian Szegedy"
+        },
+        "role": {
+          "en": "Lead author of the GoogLeNet paper",
+          "zh": "GoogLeNet 论文第一作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Google research team",
+          "zh": "Google 研究团队"
+        },
+        "role": {
+          "en": "Developed the Inception architecture",
+          "zh": "开发 Inception 架构"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "going deeper with convolutions",
+      "zh": "用卷积走得更深"
+    },
+    "quoteMeta": {
+      "workTitle": "Going Deeper with Convolutions",
+      "workAuthors": "Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer Vision / GoogLeNet",
+      "zh": "BenchCouncil AI100：计算机视觉 / GoogLeNet / Inception"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "After AlexNet and VGG, CNNs were becoming deeper and more compute-hungry. Google’s team explored how to increase representational power without simply scaling every layer.",
+          "zh": "AlexNet 和 VGG 之后，CNN 变得更深也更耗算力。Google 团队探索如何提升表示能力，而不是简单放大每一层。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "An Inception module asks the network to choose among several receptive-field sizes at once. 1x1 bottlenecks keep this multi-branch design affordable.",
+          "zh": "Inception 模块让网络同时使用多种感受野尺寸。1x1 瓶颈层让这种多分支设计在计算上可承受。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Inception as a milestone in efficient modular CNN design. Its exact modules are less central now, but its emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs shaped later architecture search and block design.",
+          "zh": "今天的专家通常把 Inception 视为高效模块化 CNN 设计的里程碑。它的具体模块如今不再最核心，但并行分支、瓶颈层和明确计算权衡影响了后来的架构搜索与模块设计。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Computer Vision",
+        "zh": "计算机视觉"
+      },
+      "method": {
+        "en": "Multi-scale Inception modules",
+        "zh": "多尺度 Inception 模块"
+      },
+      "artifact": {
+        "en": "GoogLeNet architecture",
+        "zh": "GoogLeNet 架构"
+      },
+      "material": {
+        "en": "CVPR paper and ImageNet-winning model",
+        "zh": "CVPR 论文与 ImageNet 冠军模型"
+      },
+      "demo": {
+        "en": "Parallel filters, efficient depth",
+        "zh": "并行滤波器与高效深度"
+      },
+      "visual": "inception",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Inception Module",
+            "zh": "Inception 模块"
+          },
+          "text": {
+            "en": "Several convolution and pooling paths run in parallel, letting the network capture patterns at multiple scales.",
+            "zh": "多个卷积与池化路径并行运行，让网络捕捉多尺度模式。"
+          }
+        },
+        {
+          "label": {
+            "en": "Bottleneck Layers",
+            "zh": "瓶颈层"
+          },
+          "text": {
+            "en": "1x1 convolutions reduce channel counts before expensive operations, improving computational efficiency.",
+            "zh": "1x1 卷积在昂贵操作前减少通道数，提高计算效率。"
+          }
+        },
+        {
+          "label": {
+            "en": "Parameter Efficiency",
+            "zh": "参数效率"
+          },
+          "text": {
+            "en": "The architecture increases depth and width while controlling memory and compute cost.",
+            "zh": "该架构在增加深度与宽度的同时控制内存和计算成本。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "CVF Open Access",
+          "title": {
+            "en": "Going Deeper with Convolutions",
+            "zh": "Going Deeper with Convolutions"
+          },
+          "description": {
+            "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
+            "zh": "Open-access CVPR page for GoogLeNet and the Inception block."
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open CVF paper",
+            "zh": "Open CVF paper"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "Paper"
+          },
+          "label": {
+            "en": "Going Deeper with Convolutions",
+            "zh": "Going Deeper with Convolutions"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "TorchVision GoogLeNet",
+            "zh": "TorchVision GoogLeNet"
+          },
+          "url": "https://pytorch.org/vision/stable/models/googlenet.html"
+        },
+        {
+          "type": {
+            "en": "Model docs",
+            "zh": "Model docs"
+          },
+          "label": {
+            "en": "TensorFlow Keras InceptionV3",
+            "zh": "TensorFlow Keras InceptionV3"
+          },
+          "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "1x1 bottleneck",
+          "zh": "1x1 瓶颈"
+        },
+        {
+          "en": "Parallel filters",
+          "zh": "并行滤波器"
+        },
+        {
+          "en": "Concatenate channels",
+          "zh": "拼接通道"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
+        "caption": {
+          "en": "1x1 bottleneck reduction",
+          "zh": "1x1 瓶颈降维"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "CVF Open Access",
+        "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_aux-classifier.svg": {
+        "caption": {
+          "en": "Auxiliary classifier path",
+          "zh": "辅助分类器路径"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "CVF Open Access",
+        "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg": {
+        "caption": {
+          "en": "Multi-branch Inception module",
+          "zh": "多分支 Inception 模块"
+        },
+        "subcaption": {
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+        },
+        "sourceName": "CVF Open Access",
+        "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct visual card",
+          "zh": "辅助图片 / 独立视觉卡片"
+        }
+      },
+      "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
+        "caption": {
+          "en": "Christian Szegedy episode portrait",
+          "zh": "Christian Szegedy 节目人物图"
+        },
+        "subcaption": {
+          "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
+          "zh": "TWIML 的 Christian Szegedy 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
+        },
+        "sourceName": "The TWIML AI Podcast",
+        "source": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+        "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+        "originalImageUrl": "https://twimlai.com/images/at/shows/twiml-christian-szegedy-autoformalization-verifiable-superintelligence-fhd.jpg",
+        "license": "Podcast episode artwork; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Inception author portrait",
+          "zh": "历史人物 / Inception 作者人物图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1965-resolution-method": {
+    "year": "1965",
+    "title": {
+      "en": "Resolution Method",
+      "zh": "归结方法"
+    },
+    "location": {
+      "name": {
+        "en": "Argonne National Laboratory / Syracuse University",
+        "zh": "阿贡国家实验室 / 雪城大学"
+      },
+      "country": {
+        "en": "Illinois and New York, United States",
+        "zh": "美国伊利诺伊州与纽约州"
+      },
+      "coordinates": [
+        41.7181,
+        -87.9798
+      ]
+    },
+    "description": {
+      "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>",
+      "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John Alan Robinson",
+          "zh": "John Alan Robinson"
+        },
+        "role": {
+          "en": "Inventor of the resolution principle",
+          "zh": "归结原理提出者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "the resolution principle",
+      "zh": "归结原理"
+    },
+    "quoteMeta": {
+      "workTitle": "A Machine-Oriented Logic Based on the Resolution Principle",
+      "workAuthors": "John Alan Robinson, Journal of the ACM, 1965",
+      "sourceUrl": "https://doi.org/10.1145/321250.321253"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Resolution method",
+      "zh": "BenchCouncil AI100：自动定理证明 / 归结方法"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Earlier theorem provers often needed many specialized inference rules. Resolution reduced proof search to a small number of clause operations, making mechanized logic less ad hoc.",
+          "zh": "早期定理证明器往往依赖许多专门推理规则。归结把证明搜索压缩为少量子句操作，让机械化逻辑不再那么临时拼装。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The key move is refutation: assume the claim is false, then repeatedly resolve complementary literals until the empty clause appears.",
+          "zh": "关键动作是反驳：先假设结论为假，再不断归结互补文字，直到推出空子句。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat resolution as a foundational proof method for symbolic AI and automated reasoning. It is not how most modern AI systems reason, but it remains central to theorem proving, logic programming, and constraint-based systems.",
+          "zh": "今天的专家通常把归结法视为符号 AI 和自动推理的基础证明方法。它并不是多数现代 AI 系统的推理方式，但仍是定理证明、逻辑程序设计和基于约束系统的核心。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Automated theorem proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "Clause refutation with unification",
+        "zh": "带合一的子句反驳"
+      },
+      "artifact": {
+        "en": "Resolution proof procedure",
+        "zh": "归结证明过程"
+      },
+      "material": {
+        "en": "Journal of the ACM paper and theorem-proving histories",
+        "zh": "JACM 论文与自动证明史料"
+      },
+      "demo": {
+        "en": "Resolve clauses until contradiction appears",
+        "zh": "不断归结子句直到出现矛盾"
+      },
+      "visual": "resolution",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Clause Form",
+            "zh": "子句形式"
+          },
+          "text": {
+            "en": "Statements are converted into disjunctions of literals so one inference rule can operate repeatedly.",
+            "zh": "命题被转成文字析取子句，使同一条推理规则可以反复作用。"
+          }
+        },
+        {
+          "label": {
+            "en": "Unification",
+            "zh": "合一"
+          },
+          "text": {
+            "en": "Variables are matched by substitutions, allowing one rule to handle many concrete formulas.",
+            "zh": "变量通过替换匹配，让一条规则能处理大量具体公式。"
+          }
+        },
+        {
+          "label": {
+            "en": "Empty Clause",
+            "zh": "空子句"
+          },
+          "text": {
+            "en": "Deriving the empty clause means the negated goal is inconsistent with the premises.",
+            "zh": "推出空子句意味着否定目标与前提不相容。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "DPLL",
+          "zh": "DPLL"
+        },
+        {
+          "en": "PROLOG",
+          "zh": "PROLOG"
+        },
+        {
+          "en": "Automated theorem proving",
+          "zh": "自动定理证明"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Journal of the ACM",
+          "title": {
+            "en": "Resolution principle paper",
+            "zh": "归结原理论文"
+          },
+          "description": {
+            "en": "Canonical source for resolution; local diagrams redraw clause operations and refutation flow.",
+            "zh": "归结方法的经典来源；本地图重画子句操作和反驳流程。"
+          },
+          "url": "https://doi.org/10.1145/321250.321253",
+          "source": "https://doi.org/10.1145/321250.321253",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open DOI",
+            "zh": "打开 DOI"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Machine-Oriented Logic Based on the Resolution Principle",
+            "zh": "A Machine-Oriented Logic Based on the Resolution Principle"
+          },
+          "url": "https://doi.org/10.1145/321250.321253"
+        },
+        {
+          "type": {
+            "en": "Review",
+            "zh": "评述"
+          },
+          "label": {
+            "en": "Journal of Symbolic Logic review record",
+            "zh": "Journal of Symbolic Logic review record"
+          },
+          "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Stanford Encyclopedia: Automated Reasoning",
+            "zh": "Stanford Encyclopedia: Automated Reasoning"
+          },
+          "url": "https://plato.stanford.edu/entries/reasoning-automated/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Clause Form",
+          "zh": "子句形式"
+        },
+        {
+          "en": "Unification",
+          "zh": "合一"
+        },
+        {
+          "en": "Empty Clause",
+          "zh": "空子句"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+      "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+      "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg": {
+        "caption": {
+          "en": "John Alan Robinson portrait",
+          "zh": "John Alan Robinson 肖像"
+        },
+        "subcaption": {
+          "en": "Robinson in 2012; Wikimedia Commons portrait.",
+          "zh": "2012 年的 Robinson；Wikimedia Commons 人物照片。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+        "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Alan_Robinson_IMG_0493.jpg",
+        "license": "Creative Commons license stated on Commons file page.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg": {
+        "caption": {
+          "en": "Clause refutation ladder",
+          "zh": "子句反驳阶梯"
+        },
+        "subcaption": {
+          "en": "Local redraw for Resolution Method, based on the listed source material.",
+          "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Journal of the ACM",
+        "source": "https://doi.org/10.1145/321250.321253",
+        "sourceUrl": "https://doi.org/10.1145/321250.321253",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg": {
+        "caption": {
+          "en": "Unification map",
+          "zh": "合一映射图"
+        },
+        "subcaption": {
+          "en": "Local redraw for Resolution Method, based on the listed source material.",
+          "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Journal of the ACM",
+        "source": "https://doi.org/10.1145/321250.321253",
+        "sourceUrl": "https://doi.org/10.1145/321250.321253",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1973-prolog": {
+    "year": "1973",
+    "title": {
+      "en": "PROLOG",
+      "zh": "PROLOG"
+    },
+    "location": {
+      "name": {
+        "en": "Aix-Marseille University and University of Edinburgh",
+        "zh": "艾克斯-马赛大学与爱丁堡大学"
+      },
+      "country": {
+        "en": "Marseille, France and Edinburgh, United Kingdom",
+        "zh": "法国马赛与英国爱丁堡"
+      },
+      "coordinates": [
+        43.3047,
+        5.3771
+      ]
+    },
+    "description": {
+      "en": "<p>PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.</p>",
+      "zh": "<p>PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alain Colmerauer",
+          "zh": "Alain Colmerauer"
+        },
+        "role": {
+          "en": "Creator of the first Prolog implementation",
+          "zh": "早期 Prolog 实现创建者"
+        }
+      },
+      {
+        "name": {
+          "en": "Robert Kowalski",
+          "zh": "Robert Kowalski"
+        },
+        "role": {
+          "en": "Logic programming theorist",
+          "zh": "逻辑程序设计理论贡献者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "logic programming",
+      "zh": "逻辑程序设计"
+    },
+    "quoteMeta": {
+      "workTitle": "The Birth of Prolog",
+      "workAuthors": "Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "sourceUrl": "https://doi.org/10.1145/155360.155362"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Language / PROLOG",
+      "zh": "BenchCouncil AI100：语言 / PROLOG"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "By the early 1970s, symbolic AI needed languages that could express rules, relations, and search without burying them under procedural code.",
+          "zh": "到 1970 年代初，符号 AI 需要能表达规则、关系和搜索的语言，而不是把它们埋在过程式代码里。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A Prolog program is a database of relations. Query evaluation becomes a controlled search through logical consequences.",
+          "zh": "Prolog 程序是关系数据库。查询求值变成对逻辑后果的受控搜索。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Prolog as a landmark in logic programming and declarative computation. It is no longer the mainstream AI implementation language, but it remains important for explaining rule-based reasoning, constraints, and symbolic representation.",
+          "zh": "今天的专家通常把 Prolog 视为逻辑程序设计和声明式计算的标志性成果。它已不是主流 AI 实现语言，但对于解释基于规则的推理、约束和符号表示仍然重要。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Language",
+        "zh": "语言"
+      },
+      "method": {
+        "en": "Unification plus backtracking over Horn clauses",
+        "zh": "Horn 子句上的合一与回溯"
+      },
+      "artifact": {
+        "en": "Logic programming language",
+        "zh": "逻辑程序设计语言"
+      },
+      "material": {
+        "en": "History paper and Prolog heritage archives",
+        "zh": "历史论文与 Prolog Heritage 档案"
+      },
+      "demo": {
+        "en": "Facts and rules answer a query",
+        "zh": "事实与规则回答查询"
+      },
+      "visual": "prolog",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Facts",
+            "zh": "事实"
+          },
+          "text": {
+            "en": "Base relations such as parent(alice,bob) define the world the program knows.",
+            "zh": "像 parent(alice,bob) 这样的基本关系定义程序已知世界。"
+          }
+        },
+        {
+          "label": {
+            "en": "Rules",
+            "zh": "规则"
+          },
+          "text": {
+            "en": "Rules describe how new relations follow from existing ones.",
+            "zh": "规则描述新关系如何从已有关系推出。"
+          }
+        },
+        {
+          "label": {
+            "en": "Backtracking",
+            "zh": "回溯"
+          },
+          "text": {
+            "en": "When one path fails, Prolog returns to a choice point and tries another proof.",
+            "zh": "当一条路径失败时，Prolog 回到选择点尝试另一条证明路径。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Resolution Method",
+          "zh": "归结方法"
+        },
+        {
+          "en": "LISP",
+          "zh": "LISP"
+        },
+        {
+          "en": "Expert systems",
+          "zh": "专家系统"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "France",
+          "zh": "法国"
+        },
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "ACM SIGPLAN Notices",
+          "title": {
+            "en": "The Birth of Prolog",
+            "zh": "Prolog 的诞生"
+          },
+          "description": {
+            "en": "Historical account of Prolog; local visuals redraw query resolution rather than copying figures.",
+            "zh": "Prolog 历史叙述；本地图重画查询求解过程，不复制原图。"
+          },
+          "url": "https://doi.org/10.1145/155360.155362",
+          "source": "https://doi.org/10.1145/155360.155362",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open ACM record",
+            "zh": "打开 ACM 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史"
+          },
+          "label": {
+            "en": "The Birth of Prolog",
+            "zh": "The Birth of Prolog"
+          },
+          "url": "https://doi.org/10.1145/155360.155362"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "Prolog Heritage",
+            "zh": "Prolog Heritage"
+          },
+          "url": "https://www.prolog-heritage.org/en/Prolog_50.html"
+        },
+        {
+          "type": {
+            "en": "Language docs",
+            "zh": "语言文档"
+          },
+          "label": {
+            "en": "SWI-Prolog documentation",
+            "zh": "SWI-Prolog documentation"
+          },
+          "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Facts",
+          "zh": "事实"
+        },
+        {
+          "en": "Rules",
+          "zh": "规则"
+        },
+        {
+          "en": "Backtracking",
+          "zh": "回溯"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+      "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+      "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg": {
+        "caption": {
+          "en": "Alain Colmerauer portrait",
+          "zh": "Alain Colmerauer 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category.",
+          "zh": "来自 Wikimedia Commons 的 Alain Colmerauer 相关人物图。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+        "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/A-Colmerauer%20web-800x423.jpg",
+        "license": "License stated on Commons file page.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg": {
+        "caption": {
+          "en": "Query proof tree",
+          "zh": "查询证明树"
+        },
+        "subcaption": {
+          "en": "Local redraw for PROLOG, based on the listed source material.",
+          "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "ACM SIGPLAN Notices",
+        "source": "https://doi.org/10.1145/155360.155362",
+        "sourceUrl": "https://doi.org/10.1145/155360.155362",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg": {
+        "caption": {
+          "en": "Unification trace",
+          "zh": "合一轨迹"
+        },
+        "subcaption": {
+          "en": "Local redraw for PROLOG, based on the listed source material.",
+          "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "ACM SIGPLAN Notices",
+        "source": "https://doi.org/10.1145/155360.155362",
+        "sourceUrl": "https://doi.org/10.1145/155360.155362",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1966-eliza": {
+    "year": "1966",
+    "title": {
+      "en": "ELIZA",
+      "zh": "ELIZA"
+    },
+    "location": {
+      "name": {
+        "en": "MIT Artificial Intelligence Laboratory",
+        "zh": "MIT 人工智能实验室"
+      },
+      "country": {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>ELIZA showed how far simple language pattern matching could go in producing the feeling of conversation. Its DOCTOR script reflected user phrases back as questions, making the interaction memorable precisely because the mechanism was shallow. The program became a landmark in chatbot history and in debates about anthropomorphizing machines.</p>",
+      "zh": "<p>ELIZA 展示了简单语言模式匹配在制造“对话感”方面能走多远。它的 DOCTOR 脚本会把用户短语改写成问题反射回来，机制很浅，却让互动令人印象深刻。它成为聊天机器人史和“机器拟人化”争论中的标志性案例。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Joseph Weizenbaum",
+          "zh": "Joseph Weizenbaum"
+        },
+        "role": {
+          "en": "Creator of ELIZA",
+          "zh": "ELIZA 创建者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "communication between man and machine",
+      "zh": "人与机器之间的交流"
+    },
+    "quoteMeta": {
+      "workTitle": "ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine",
+      "workAuthors": "Joseph Weizenbaum, Communications of the ACM, 1966",
+      "sourceUrl": "https://doi.org/10.1145/365153.365168"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: ChatBot / ELIZA",
+      "zh": "BenchCouncil AI100：聊天机器人 / ELIZA"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "In the 1960s, AI language systems were mostly symbolic and hand-built. ELIZA tested whether a small set of scripts could sustain the impression of natural conversation.",
+          "zh": "20 世纪 60 年代，AI 语言系统多为手工构建的符号系统。ELIZA 测试少量脚本能否维持自然对话的印象。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue.",
+          "zh": "DOCTOR 脚本并不理解心理治疗；它把识别到的模式转成反问式提示，诱导用户继续说下去。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat ELIZA as a cautionary and historically important demonstration of conversational illusion. It was not deep understanding, but it showed how interaction design, expectation, and user projection can shape judgments about AI.",
+          "zh": "今天的专家通常把 ELIZA 视为具有警示意义和历史重要性的对话幻觉展示。它并不具备深层理解，但揭示了交互设计、期待和用户投射如何影响人们对 AI 的判断。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "ChatBot",
+        "zh": "聊天机器人"
+      },
+      "method": {
+        "en": "Pattern matching and scripted reflection",
+        "zh": "模式匹配与脚本反射"
+      },
+      "artifact": {
+        "en": "Early conversational chatbot",
+        "zh": "早期对话机器人"
+      },
+      "material": {
+        "en": "CACM paper, MIT obituary, and ELIZA reconstruction materials",
+        "zh": "CACM 论文、MIT 讣闻与 ELIZA 复原材料"
+      },
+      "demo": {
+        "en": "Reflect the user phrase into a question",
+        "zh": "把用户短语反射成问题"
+      },
+      "visual": "eliza",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Script",
+            "zh": "脚本"
+          },
+          "text": {
+            "en": "A script defines keywords and response templates for a conversational role.",
+            "zh": "脚本定义某种对话角色的关键词和回应模板。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reflection",
+            "zh": "反射"
+          },
+          "text": {
+            "en": "ELIZA often turns a user statement back into a question using the user’s own words.",
+            "zh": "ELIZA 常用用户自己的词把陈述改写成问题。"
+          }
+        },
+        {
+          "label": {
+            "en": "ELIZA Effect",
+            "zh": "ELIZA 效应"
+          },
+          "text": {
+            "en": "People may attribute understanding to a system that only follows simple conversational rules.",
+            "zh": "人们可能把理解能力归因给只执行简单对话规则的系统。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Turing Test",
+          "zh": "图灵测试"
+        },
+        {
+          "en": "Chatbots",
+          "zh": "聊天机器人"
+        },
+        {
+          "en": "Large language models",
+          "zh": "大语言模型"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Germany",
+          "zh": "德国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Communications of the ACM",
+          "title": {
+            "en": "ELIZA paper",
+            "zh": "ELIZA 论文"
+          },
+          "description": {
+            "en": "Canonical paper for ELIZA; local visuals redraw the DOCTOR-style rewrite loop.",
+            "zh": "ELIZA 的经典论文；本地图重画 DOCTOR 风格改写循环。"
+          },
+          "url": "https://doi.org/10.1145/365153.365168",
+          "source": "https://doi.org/10.1145/365153.365168",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open DOI",
+            "zh": "打开 DOI"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "ELIZA CACM paper",
+            "zh": "ELIZA CACM paper"
+          },
+          "url": "https://doi.org/10.1145/365153.365168"
+        },
+        {
+          "type": {
+            "en": "Institution",
+            "zh": "机构"
+          },
+          "label": {
+            "en": "MIT News obituary for Joseph Weizenbaum",
+            "zh": "MIT News obituary for Joseph Weizenbaum"
+          },
+          "url": "https://news.mit.edu/2008/obit-weizenbaum-0310"
+        },
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "ELIZA source reconstruction project",
+            "zh": "ELIZA source reconstruction project"
+          },
+          "url": "https://sites.google.com/view/elizagen-org/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Script",
+          "zh": "脚本"
+        },
+        {
+          "en": "Reflection",
+          "zh": "反射"
+        },
+        {
+          "en": "ELIZA Effect",
+          "zh": "ELIZA 效应"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
+      "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+      "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg": {
+        "caption": {
+          "en": "Joseph Weizenbaum portrait",
+          "zh": "Joseph Weizenbaum 肖像"
+        },
+        "subcaption": {
+          "en": "MIT News portrait used in Weizenbaum’s obituary.",
+          "zh": "MIT News 在 Weizenbaum 讣闻中使用的人物图。"
+        },
+        "sourceName": "MIT News",
+        "source": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+        "sourceUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+        "originalImageUrl": "https://news.mit.edu/sites/default/files/images/200803/200908311113135495.jpg",
+        "license": "MIT News image; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg": {
+        "caption": {
+          "en": "DOCTOR script rewrite",
+          "zh": "DOCTOR 脚本改写"
+        },
+        "subcaption": {
+          "en": "Local redraw for ELIZA, based on the listed source material.",
+          "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Communications of the ACM",
+        "source": "https://doi.org/10.1145/365153.365168",
+        "sourceUrl": "https://doi.org/10.1145/365153.365168",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg": {
+        "caption": {
+          "en": "Terminal dialog",
+          "zh": "终端对话"
+        },
+        "subcaption": {
+          "en": "Local redraw for ELIZA, based on the listed source material.",
+          "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Communications of the ACM",
+        "source": "https://doi.org/10.1145/365153.365168",
+        "sourceUrl": "https://doi.org/10.1145/365153.365168",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1982-hopfield-network": {
+    "year": "1982",
+    "title": {
+      "en": "Hopfield Network",
+      "zh": "Hopfield 网络"
+    },
+    "location": {
+      "name": {
+        "en": "California Institute of Technology",
+        "zh": "加州理工学院"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        34.1377,
+        -118.1253
+      ]
+    },
+    "description": {
+      "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>",
+      "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John J. Hopfield",
+          "zh": "John J. Hopfield"
+        },
+        "role": {
+          "en": "Inventor of Hopfield networks",
+          "zh": "Hopfield 网络提出者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "neural networks and physical systems",
+      "zh": "神经网络与物理系统"
+    },
+    "quoteMeta": {
+      "workTitle": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+      "workAuthors": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / Hopfield network",
+      "zh": "BenchCouncil AI100：神经网络 / Hopfield 网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Before deep learning, researchers were already asking how large sets of simple units could compute collectively. Hopfield gave this question an energy-based formulation.",
+          "zh": "在深度学习之前，研究者已经在追问大量简单单元如何集体计算。Hopfield 给这个问题提供了基于能量的表述。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The network updates units to reduce an energy function, so stored memories become stable attractors.",
+          "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Hopfield networks as historically central to energy-based neural computation. Modern systems rarely use the original form directly, but the connection between memory, optimization, and statistical physics remains influential.",
+          "zh": "今天的专家通常把 Hopfield 网络视为基于能量的神经计算中的历史核心。现代系统很少直接使用其原始形式，但记忆、优化和统计物理之间的联系仍然具有影响力。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Attractor dynamics and energy minimization",
+        "zh": "吸引子动力学与能量最小化"
+      },
+      "artifact": {
+        "en": "Recurrent associative memory network",
+        "zh": "递归联想记忆网络"
+      },
+      "material": {
+        "en": "PNAS paper and Nobel Prize profile",
+        "zh": "PNAS 论文与诺贝尔奖人物资料"
+      },
+      "demo": {
+        "en": "Noisy pattern settles into a stored memory",
+        "zh": "带噪模式收敛到已存记忆"
+      },
+      "visual": "hopfield",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Attractor",
+            "zh": "吸引子"
+          },
+          "text": {
+            "en": "A stored pattern is a stable state that nearby noisy patterns tend to approach.",
+            "zh": "已存模式是稳定状态，附近的带噪模式倾向于靠近它。"
+          }
+        },
+        {
+          "label": {
+            "en": "Energy Function",
+            "zh": "能量函数"
+          },
+          "text": {
+            "en": "The network changes state in a direction that lowers energy.",
+            "zh": "网络沿着降低能量的方向改变状态。"
+          }
+        },
+        {
+          "label": {
+            "en": "Associative Memory",
+            "zh": "联想记忆"
+          },
+          "text": {
+            "en": "Partial or corrupted inputs can recover a complete stored pattern.",
+            "zh": "部分或损坏输入可以恢复完整存储模式。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Boltzmann machines",
+          "zh": "玻尔兹曼机"
+        },
+        {
+          "en": "Energy-based models",
+          "zh": "能量模型"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Physics",
+          "zh": "物理学"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "PNAS",
+          "title": {
+            "en": "Hopfield network paper",
+            "zh": "Hopfield 网络论文"
+          },
+          "description": {
+            "en": "Primary source for recurrent associative memory; local images redraw energy and attractor dynamics.",
+            "zh": "递归联想记忆的原始来源；本地图重画能量与吸引子动力学。"
+          },
+          "url": "https://doi.org/10.1073/pnas.79.8.2554",
+          "source": "https://doi.org/10.1073/pnas.79.8.2554",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open PNAS DOI",
+            "zh": "打开 PNAS DOI"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Neural Networks and Physical Systems",
+            "zh": "Neural Networks and Physical Systems"
+          },
+          "url": "https://doi.org/10.1073/pnas.79.8.2554"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Nobel Prize: John J. Hopfield facts",
+            "zh": "Nobel Prize: John J. Hopfield facts"
+          },
+          "url": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/"
+        },
+        {
+          "type": {
+            "en": "Institution",
+            "zh": "机构"
+          },
+          "label": {
+            "en": "Princeton Neuroscience Institute profile",
+            "zh": "Princeton Neuroscience Institute profile"
+          },
+          "url": "https://pni.princeton.edu/people/john-j-hopfield"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Attractor",
+          "zh": "吸引子"
+        },
+        {
+          "en": "Energy Function",
+          "zh": "能量函数"
+        },
+        {
+          "en": "Associative Memory",
+          "zh": "联想记忆"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg": {
+        "caption": {
+          "en": "John J. Hopfield portrait",
+          "zh": "John J. Hopfield 肖像"
+        },
+        "subcaption": {
+          "en": "Nobel Prize profile portrait for Hopfield.",
+          "zh": "诺贝尔奖官网的 Hopfield 人物图。"
+        },
+        "sourceName": "Nobel Prize",
+        "source": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+        "sourceUrl": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+        "originalImageUrl": "https://www.nobelprize.org/images/165779-portrait-medium.jpg",
+        "license": "Nobel Prize image; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg": {
+        "caption": {
+          "en": "Energy basin",
+          "zh": "能量盆地"
+        },
+        "subcaption": {
+          "en": "Local redraw for Hopfield Network, based on the listed source material.",
+          "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "PNAS",
+        "source": "https://doi.org/10.1073/pnas.79.8.2554",
+        "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg": {
+        "caption": {
+          "en": "Associative memory grid",
+          "zh": "联想记忆网格"
+        },
+        "subcaption": {
+          "en": "Local redraw for Hopfield Network, based on the listed source material.",
+          "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "PNAS",
+        "source": "https://doi.org/10.1073/pnas.79.8.2554",
+        "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2014-dropout": {
+    "year": "2014",
+    "title": {
+      "en": "Dropout",
+      "zh": "Dropout"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Toronto, Canada",
+        "zh": "加拿大多伦多"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>",
+      "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Nitish Srivastava",
+          "zh": "Nitish Srivastava"
+        },
+        "role": {
+          "en": "First author of the JMLR dropout paper",
+          "zh": "JMLR Dropout 论文第一作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "Geoffrey Hinton"
+        },
+        "role": {
+          "en": "Co-author and deep learning pioneer",
+          "zh": "共同作者，深度学习先驱"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "prevent neural networks from overfitting",
+      "zh": "防止神经网络过拟合"
+    },
+    "quoteMeta": {
+      "workTitle": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "workAuthors": "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / Dropout",
+      "zh": "BenchCouncil AI100：神经网络 / Dropout"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "As networks grew larger, memorization became a practical training problem. Dropout offered a simple intervention that did not require changing the dataset.",
+          "zh": "随着网络变大，记忆训练集成为实际问题。Dropout 提供了不必改变数据集的简单干预方式。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other.",
+          "zh": "核心思想是在训练时随机隐藏单元，使隐藏特征不能过度依赖彼此。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat dropout as a simple, effective regularization idea whose role depends on architecture and scale. It remains common in APIs and teaching, even though modern systems often combine it with normalization, data augmentation, and other regularizers.",
+          "zh": "今天的专家通常把 Dropout 视为简单有效的正则化思想，但其作用取决于架构和规模。它仍常见于 API 和教学中，尽管现代系统往往会把它与归一化、数据增强和其他正则化方法结合。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Randomly thinned networks for regularization",
+        "zh": "随机变薄网络进行正则化"
+      },
+      "artifact": {
+        "en": "Dropout training and inference rule",
+        "zh": "Dropout 训练与推理规则"
+      },
+      "material": {
+        "en": "JMLR paper and framework documentation",
+        "zh": "JMLR 论文与框架文档"
+      },
+      "demo": {
+        "en": "Mask units in training, scale predictions at test time",
+        "zh": "训练时遮蔽单元，测试时缩放预测"
+      },
+      "visual": "dropout",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Random Mask",
+            "zh": "随机掩码"
+          },
+          "text": {
+            "en": "Each update keeps only a sampled subset of units active.",
+            "zh": "每次更新只保留采样出的部分单元活跃。"
+          }
+        },
+        {
+          "label": {
+            "en": "Co-adaptation",
+            "zh": "共适应"
+          },
+          "text": {
+            "en": "Dropout discourages features from relying on exact partners being present.",
+            "zh": "Dropout 阻止特征过度依赖某些固定伙伴同时存在。"
+          }
+        },
+        {
+          "label": {
+            "en": "Approximate Ensemble",
+            "zh": "近似集成"
+          },
+          "text": {
+            "en": "Test-time scaling approximates averaging many thinned networks.",
+            "zh": "测试时缩放近似于平均许多变薄网络。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "Regularization",
+          "zh": "正则化"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "JMLR",
+          "title": {
+            "en": "Dropout paper",
+            "zh": "Dropout 论文"
+          },
+          "description": {
+            "en": "Primary JMLR source; local images redraw masks and model averaging.",
+            "zh": "JMLR 原始论文；本地图重画掩码和模型平均。"
+          },
+          "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+          "source": "https://jmlr.org/papers/v15/srivastava14a.html",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open JMLR paper",
+            "zh": "打开 JMLR 论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+            "zh": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+          },
+          "url": "https://jmlr.org/papers/v15/srivastava14a.html"
+        },
+        {
+          "type": {
+            "en": "Preprint",
+            "zh": "预印本"
+          },
+          "label": {
+            "en": "Improving neural networks by preventing co-adaptation",
+            "zh": "Improving neural networks by preventing co-adaptation"
+          },
+          "url": "https://arxiv.org/abs/1207.0580"
+        },
+        {
+          "type": {
+            "en": "Framework docs",
+            "zh": "框架文档"
+          },
+          "label": {
+            "en": "PyTorch torch.nn.Dropout",
+            "zh": "PyTorch torch.nn.Dropout"
+          },
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Random Mask",
+          "zh": "随机掩码"
+        },
+        {
+          "en": "Co-adaptation",
+          "zh": "共适应"
+        },
+        {
+          "en": "Approximate Ensemble",
+          "zh": "近似集成"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+      "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
+      "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg": {
+        "caption": {
+          "en": "Nitish Srivastava portrait",
+          "zh": "Nitish Srivastava 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Srivastava’s University of Toronto page.",
+          "zh": "来自 Srivastava 多伦多大学个人页的人物图。"
+        },
+        "sourceName": "University of Toronto personal page",
+        "source": "https://www.cs.utoronto.ca/~nitish/",
+        "sourceUrl": "https://www.cs.utoronto.ca/~nitish/",
+        "originalImageUrl": "https://www.cs.utoronto.ca/~nitish/pic.JPG",
+        "license": "Personal website photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg": {
+        "caption": {
+          "en": "Random unit mask",
+          "zh": "随机单元掩码"
+        },
+        "subcaption": {
+          "en": "Local redraw for Dropout, based on the listed source material.",
+          "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "JMLR",
+        "source": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg": {
+        "caption": {
+          "en": "Approximate ensemble",
+          "zh": "近似集成"
+        },
+        "subcaption": {
+          "en": "Local redraw for Dropout, based on the listed source material.",
+          "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "JMLR",
+        "source": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2016-yolo": {
+    "year": "2016",
+    "title": {
+      "en": "YOLO",
+      "zh": "YOLO"
+    },
+    "location": {
+      "name": {
+        "en": "University of Washington / Allen Institute for AI",
+        "zh": "华盛顿大学 / Allen Institute for AI"
+      },
+      "country": {
+        "en": "Seattle, United States",
+        "zh": "美国西雅图"
+      },
+      "coordinates": [
+        47.6553,
+        -122.3035
+      ]
+    },
+    "description": {
+      "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>",
+      "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Joseph Redmon",
+          "zh": "Joseph Redmon"
+        },
+        "role": {
+          "en": "First author of YOLO",
+          "zh": "YOLO 第一作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Ali Farhadi",
+          "zh": "Ali Farhadi"
+        },
+        "role": {
+          "en": "Co-author of YOLO",
+          "zh": "YOLO 共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "You Only Look Once",
+      "zh": "只看一次"
+    },
+    "quoteMeta": {
+      "workTitle": "You Only Look Once: Unified, Real-Time Object Detection",
+      "workAuthors": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "sourceUrl": "https://arxiv.org/abs/1506.02640"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / YOLO",
+      "zh": "BenchCouncil AI100：神经网络 / YOLO"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Before YOLO, high-accuracy detectors often relied on multi-stage pipelines. YOLO asked what would happen if detection became one dense prediction problem.",
+          "zh": "YOLO 之前，高精度检测器常依赖多阶段管线。YOLO 追问：如果检测变成一个稠密预测问题会怎样？"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass.",
+          "zh": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat YOLO as the system that made real-time detection a central benchmark goal. Its later family is broad and uneven, but the original contribution remains the framing of detection as fast single-pass prediction.",
+          "zh": "今天的专家通常把 YOLO 视为让实时检测成为核心基准目标的系统。它后续家族庞大且质量不一，但原始贡献仍在于把检测表述为快速的单次前向预测。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Single-shot grid-based object detection",
+        "zh": "基于网格的单阶段目标检测"
+      },
+      "artifact": {
+        "en": "Real-time YOLO detector",
+        "zh": "实时 YOLO 检测器"
+      },
+      "material": {
+        "en": "CVPR paper, Darknet project, and open-access paper page",
+        "zh": "CVPR 论文、Darknet 项目与开放论文页"
+      },
+      "demo": {
+        "en": "Grid cells predict boxes and classes at once",
+        "zh": "网格单元同时预测框和类别"
+      },
+      "visual": "yolo",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Grid Prediction",
+            "zh": "网格预测"
+          },
+          "text": {
+            "en": "Each grid cell is responsible for objects whose centers fall inside it.",
+            "zh": "每个网格单元负责中心落在其中的目标。"
+          }
+        },
+        {
+          "label": {
+            "en": "One Forward Pass",
+            "zh": "一次前向传播"
+          },
+          "text": {
+            "en": "Detection happens in a single network pass instead of a proposal cascade.",
+            "zh": "检测在一次网络前向传播中完成，而不是候选区域级联。"
+          }
+        },
+        {
+          "label": {
+            "en": "Real Time",
+            "zh": "实时性"
+          },
+          "text": {
+            "en": "Speed becomes part of the model’s identity, not a later deployment detail.",
+            "zh": "速度成为模型身份的一部分，而不是后期部署细节。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        },
+        {
+          "en": "SSD",
+          "zh": "SSD"
+        },
+        {
+          "en": "Real-time vision",
+          "zh": "实时视觉"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "CVPR / arXiv",
+          "title": {
+            "en": "YOLO paper",
+            "zh": "YOLO 论文"
+          },
+          "description": {
+            "en": "Canonical paper for single-shot real-time detection; local graphics redraw grid and box prediction.",
+            "zh": "单阶段实时检测的经典论文；本地图重画网格和框预测。"
+          },
+          "url": "https://arxiv.org/abs/1506.02640",
+          "source": "https://arxiv.org/abs/1506.02640",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "You Only Look Once: Unified, Real-Time Object Detection",
+            "zh": "You Only Look Once: Unified, Real-Time Object Detection"
+          },
+          "url": "https://arxiv.org/abs/1506.02640"
+        },
+        {
+          "type": {
+            "en": "Open access",
+            "zh": "开放论文"
+          },
+          "label": {
+            "en": "CVPR open-access paper page",
+            "zh": "CVPR open-access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Darknet YOLO project page",
+            "zh": "Darknet YOLO project page"
+          },
+          "url": "https://pjreddie.com/darknet/yolo/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Grid Prediction",
+          "zh": "网格预测"
+        },
+        {
+          "en": "One Forward Pass",
+          "zh": "一次前向传播"
+        },
+        {
+          "en": "Real Time",
+          "zh": "实时性"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+      "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
+      "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg": {
+        "caption": {
+          "en": "Joseph Redmon portrait",
+          "zh": "Joseph Redmon 肖像"
+        },
+        "subcaption": {
+          "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship.",
+          "zh": "Allen School 关于 Redmon 获 Google Ph.D. Fellowship 的新闻照片。"
+        },
+        "sourceName": "University of Washington Allen School",
+        "source": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+        "sourceUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+        "originalImageUrl": "https://news.cs.washington.edu/wp-content/uploads/2018/04/joseph-redmon-allen-school.jpg",
+        "license": "Institution news image; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg": {
+        "caption": {
+          "en": "Grid detector",
+          "zh": "网格检测器"
+        },
+        "subcaption": {
+          "en": "Local redraw for YOLO, based on the listed source material.",
+          "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "CVPR / arXiv",
+        "source": "https://arxiv.org/abs/1506.02640",
+        "sourceUrl": "https://arxiv.org/abs/1506.02640",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg": {
+        "caption": {
+          "en": "Single-pass pipeline",
+          "zh": "单次前向管线"
+        },
+        "subcaption": {
+          "en": "Local redraw for YOLO, based on the listed source material.",
+          "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "CVPR / arXiv",
+        "source": "https://arxiv.org/abs/1506.02640",
+        "sourceUrl": "https://arxiv.org/abs/1506.02640",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2013-word2vec": {
+    "year": "2013",
+    "title": {
+      "en": "Word2Vec",
+      "zh": "Word2Vec"
+    },
+    "location": {
+      "name": {
+        "en": "Google Brain",
+        "zh": "Google Brain"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>",
+      "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Tomas Mikolov",
+          "zh": "Tomas Mikolov"
+        },
+        "role": {
+          "en": "Lead author of word2vec papers",
+          "zh": "word2vec 论文主要作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "distributed representations of words",
+      "zh": "词的分布式表示"
+    },
+    "quoteMeta": {
+      "workTitle": "Distributed Representations of Words and Phrases and their Compositionality",
+      "workAuthors": "Tomas Mikolov et al., NeurIPS, 2013",
+      "sourceUrl": "https://arxiv.org/abs/1301.3781"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / Word2Vec",
+      "zh": "BenchCouncil AI100：神经网络 / Word2Vec"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Before word2vec, many NLP systems relied on sparse counts or hand-built features. Word2vec made dense vectors practical at web scale.",
+          "zh": "Word2Vec 之前，许多 NLP 系统依赖稀疏计数或手工特征。Word2Vec 让密集向量在网页规模上变得实用。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space.",
+          "zh": "模型要么由词预测上下文，要么由上下文预测词，从而迫使相关词占据向量空间的相近区域。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat Word2Vec as a foundational embedding method that made distributional semantics operational at scale. Its vectors are simpler than contextual language-model representations, but the geometric view of meaning still underlies retrieval and representation learning.",
+          "zh": "今天的专家通常把 Word2Vec 视为基础性的嵌入方法，它让分布式语义能够在规模化系统中运作。它的向量比上下文语言模型表示更简单，但意义的几何观仍支撑着检索和表示学习。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Skip-gram and CBOW neural word embeddings",
+        "zh": "Skip-gram 与 CBOW 神经词嵌入"
+      },
+      "artifact": {
+        "en": "Word2Vec embedding toolkit",
+        "zh": "Word2Vec 嵌入工具"
+      },
+      "material": {
+        "en": "NeurIPS paper, arXiv preprint, and Google code archive",
+        "zh": "NeurIPS 论文、arXiv 预印本与 Google 代码档案"
+      },
+      "demo": {
+        "en": "Move through a semantic vector space",
+        "zh": "在语义向量空间中移动"
+      },
+      "visual": "word2vec",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Skip-gram",
+            "zh": "Skip-gram"
+          },
+          "text": {
+            "en": "Predicts neighboring words from a center word.",
+            "zh": "由中心词预测邻近词。"
+          }
+        },
+        {
+          "label": {
+            "en": "Negative Sampling",
+            "zh": "负采样"
+          },
+          "text": {
+            "en": "Speeds training by contrasting observed word-context pairs with sampled alternatives.",
+            "zh": "通过对比真实词-上下文对和采样负例来加速训练。"
+          }
+        },
+        {
+          "label": {
+            "en": "Vector Analogy",
+            "zh": "向量类比"
+          },
+          "text": {
+            "en": "Relations such as gender or capital-city can appear as vector offsets.",
+            "zh": "性别、首都等关系可表现为向量偏移。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        },
+        {
+          "en": "GloVe",
+          "zh": "GloVe"
+        },
+        {
+          "en": "Transformer embeddings",
+          "zh": "Transformer 嵌入"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Czech Republic",
+          "zh": "捷克"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "NeurIPS / arXiv",
+          "title": {
+            "en": "Word2Vec papers",
+            "zh": "Word2Vec 论文"
+          },
+          "description": {
+            "en": "Primary word embedding sources; local images redraw skip-gram windows and vector analogies.",
+            "zh": "词嵌入原始来源；本地图重画 skip-gram 窗口和向量类比。"
+          },
+          "url": "https://arxiv.org/abs/1301.3781",
+          "source": "https://arxiv.org/abs/1301.3781",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open preprint",
+            "zh": "打开预印本"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Preprint",
+            "zh": "预印本"
+          },
+          "label": {
+            "en": "Efficient Estimation of Word Representations in Vector Space",
+            "zh": "Efficient Estimation of Word Representations in Vector Space"
+          },
+          "url": "https://arxiv.org/abs/1301.3781"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Distributed Representations of Words and Phrases and their Compositionality",
+            "zh": "Distributed Representations of Words and Phrases and their Compositionality"
+          },
+          "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality"
+        },
+        {
+          "type": {
+            "en": "Code archive",
+            "zh": "代码档案"
+          },
+          "label": {
+            "en": "Google Code archive: word2vec",
+            "zh": "Google Code archive: word2vec"
+          },
+          "url": "https://code.google.com/archive/p/word2vec/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Skip-gram",
+          "zh": "Skip-gram"
+        },
+        {
+          "en": "Negative Sampling",
+          "zh": "负采样"
+        },
+        {
+          "en": "Vector Analogy",
+          "zh": "向量类比"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+      "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
+      "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg": {
+        "caption": {
+          "en": "Tomas Mikolov portrait",
+          "zh": "Tomas Mikolov 肖像"
+        },
+        "subcaption": {
+          "en": "IEEE Signal Processing Society newsletter image for Mikolov.",
+          "zh": "IEEE Signal Processing Society 访谈页面中的 Mikolov 人物图。"
+        },
+        "sourceName": "IEEE Signal Processing Society",
+        "source": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+        "sourceUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+        "originalImageUrl": "https://signalprocessingsociety.org/sites/default/files/uploads/newsletter/images/Tomas_Mikolov.jpg",
+        "license": "IEEE SPS newsletter image; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg": {
+        "caption": {
+          "en": "Skip-gram context window",
+          "zh": "Skip-gram 上下文窗口"
+        },
+        "subcaption": {
+          "en": "Local redraw for Word2Vec, based on the listed source material.",
+          "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "NeurIPS / arXiv",
+        "source": "https://arxiv.org/abs/1301.3781",
+        "sourceUrl": "https://arxiv.org/abs/1301.3781",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg": {
+        "caption": {
+          "en": "Vector analogy",
+          "zh": "向量类比"
+        },
+        "subcaption": {
+          "en": "Local redraw for Word2Vec, based on the listed source material.",
+          "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "NeurIPS / arXiv",
+        "source": "https://arxiv.org/abs/1301.3781",
+        "sourceUrl": "https://arxiv.org/abs/1301.3781",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2009-imagenet": {
+    "year": "2009",
+    "title": {
+      "en": "ImageNet",
+      "zh": "ImageNet"
+    },
+    "location": {
+      "name": {
+        "en": "Princeton University / Stanford University",
+        "zh": "普林斯顿大学 / 斯坦福大学"
+      },
+      "country": {
+        "en": "New Jersey and California, United States",
+        "zh": "美国新泽西州与加利福尼亚州"
+      },
+      "coordinates": [
+        40.3431,
+        -74.6551
+      ]
+    },
+    "description": {
+      "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>",
+      "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Fei-Fei Li",
+          "zh": "李飞飞"
+        },
+        "role": {
+          "en": "ImageNet project leader",
+          "zh": "ImageNet 项目主要推动者"
+        }
+      },
+      {
+        "name": {
+          "en": "Jia Deng",
+          "zh": "邓嘉"
+        },
+        "role": {
+          "en": "First author of ImageNet paper",
+          "zh": "ImageNet 论文第一作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "large-scale hierarchical image database",
+      "zh": "大规模层级图像数据库"
+    },
+    "quoteMeta": {
+      "workTitle": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "workAuthors": "Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / ImageNet",
+      "zh": "BenchCouncil AI100：神经网络 / ImageNet"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Before ImageNet, vision datasets were smaller and often specialized. ImageNet made general object recognition a data-scale challenge.",
+          "zh": "ImageNet 之前，视觉数据集更小且常常领域化。ImageNet 把通用目标识别变成数据规模挑战。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution.",
+          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. It helped reveal deep learning’s power in vision, while also showing how datasets, labels, and leaderboards shape what the field optimizes.",
+          "zh": "今天的专家通常把 ImageNet 同时视为决定性基准和基准局限的提醒。它帮助揭示了深度学习在视觉中的力量，也显示出数据集、标签和排行榜会塑造领域优化的目标。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Large-scale hierarchical image annotation",
+        "zh": "大规模层级图像标注"
+      },
+      "artifact": {
+        "en": "ImageNet dataset and ILSVRC benchmark",
+        "zh": "ImageNet 数据集与 ILSVRC 基准"
+      },
+      "material": {
+        "en": "CVPR paper, project site, and Stanford profile",
+        "zh": "CVPR 论文、项目网站与 Stanford 人物页"
+      },
+      "demo": {
+        "en": "Labels move from WordNet hierarchy to benchmark leaderboard",
+        "zh": "标签从 WordNet 层级走向基准排行榜"
+      },
+      "visual": "imagenet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Synset",
+            "zh": "Synset"
+          },
+          "text": {
+            "en": "A WordNet concept anchors each visual category.",
+            "zh": "每个视觉类别由一个 WordNet 概念锚定。"
+          }
+        },
+        {
+          "label": {
+            "en": "Scale",
+            "zh": "规模"
+          },
+          "text": {
+            "en": "Millions of labeled images changed what training and evaluation could measure.",
+            "zh": "数百万标注图像改变了训练和评测能衡量的东西。"
+          }
+        },
+        {
+          "label": {
+            "en": "Benchmark",
+            "zh": "基准"
+          },
+          "text": {
+            "en": "ILSVRC turned progress into a shared annual comparison.",
+            "zh": "ILSVRC 把进展变成共同年度比较。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "CVPR / IEEE",
+          "title": {
+            "en": "ImageNet paper",
+            "zh": "ImageNet 论文"
+          },
+          "description": {
+            "en": "Primary ImageNet paper; local visuals redraw hierarchy and benchmark signals.",
+            "zh": "ImageNet 原始论文；本地图重画层级和基准信号。"
+          },
+          "url": "https://ieeexplore.ieee.org/document/5206848",
+          "source": "https://ieeexplore.ieee.org/document/5206848",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open IEEE record",
+            "zh": "打开 IEEE 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "ImageNet: A Large-Scale Hierarchical Image Database",
+            "zh": "ImageNet: A Large-Scale Hierarchical Image Database"
+          },
+          "url": "https://ieeexplore.ieee.org/document/5206848"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "ImageNet project website",
+            "zh": "ImageNet project website"
+          },
+          "url": "https://www.image-net.org/"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Stanford Profile: Fei-Fei Li",
+            "zh": "Stanford Profile: Fei-Fei Li"
+          },
+          "url": "https://profiles.stanford.edu/fei-fei-li"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Synset",
+          "zh": "Synset"
+        },
+        {
+          "en": "Scale",
+          "zh": "规模"
+        },
+        {
+          "en": "Benchmark",
+          "zh": "基准"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg": {
+        "caption": {
+          "en": "Fei-Fei Li portrait",
+          "zh": "李飞飞肖像"
+        },
+        "subcaption": {
+          "en": "Stanford Profiles portrait for Fei-Fei Li.",
+          "zh": "Stanford Profiles 中的李飞飞人物图。"
+        },
+        "sourceName": "Stanford Profiles",
+        "source": "https://profiles.stanford.edu/fei-fei-li",
+        "sourceUrl": "https://profiles.stanford.edu/fei-fei-li",
+        "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/15052/resources/profilephoto/350x350.1550534393295.jpg",
+        "license": "Institution profile photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg": {
+        "caption": {
+          "en": "WordNet hierarchy",
+          "zh": "WordNet 层级"
+        },
+        "subcaption": {
+          "en": "Local redraw for ImageNet, based on the listed source material.",
+          "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "CVPR / IEEE",
+        "source": "https://ieeexplore.ieee.org/document/5206848",
+        "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg": {
+        "caption": {
+          "en": "ILSVRC benchmark",
+          "zh": "ILSVRC 基准"
+        },
+        "subcaption": {
+          "en": "Local redraw for ImageNet, based on the listed source material.",
+          "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "CVPR / IEEE",
+        "source": "https://ieeexplore.ieee.org/document/5206848",
+        "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2013-dqn": {
+    "year": "2013",
+    "title": {
+      "en": "Deep Q Network",
+      "zh": "深度 Q 网络"
+    },
+    "location": {
+      "name": {
+        "en": "DeepMind",
+        "zh": "DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国伦敦"
+      },
+      "coordinates": [
+        51.523,
+        -0.128
+      ]
+    },
+    "description": {
+      "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>",
+      "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Volodymyr Mnih",
+          "zh": "Volodymyr Mnih"
+        },
+        "role": {
+          "en": "First author of DQN work",
+          "zh": "DQN 工作第一作者"
+        }
+      },
+      {
+        "name": {
+          "en": "David Silver",
+          "zh": "David Silver"
+        },
+        "role": {
+          "en": "DeepMind reinforcement learning researcher",
+          "zh": "DeepMind 强化学习研究者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "playing Atari with deep reinforcement learning",
+      "zh": "用深度强化学习玩 Atari"
+    },
+    "quoteMeta": {
+      "workTitle": "Playing Atari with Deep Reinforcement Learning",
+      "workAuthors": "Volodymyr Mnih et al., DeepMind, 2013",
+      "sourceUrl": "https://arxiv.org/abs/1312.5602"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
+      "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Classic reinforcement learning had strong theory, but scaling from raw pixels to control remained difficult. DQN made that scaling visible.",
+          "zh": "经典强化学习有坚实理论，但从原始像素扩展到控制任务仍然困难。DQN 让这种扩展变得可见。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. It is limited by sample efficiency and stability challenges, but it showed that perception, action, and reward could be learned in one neural loop.",
+          "zh": "今天的专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。它受到样本效率和稳定性问题限制，但证明了感知、行动和奖励可以在同一个神经学习循环中结合。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Reinforce learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Q-learning with convolutional networks, replay, and target networks",
+        "zh": "结合卷积网络、经验回放与目标网络的 Q 学习"
+      },
+      "artifact": {
+        "en": "Atari-playing Deep Q Network",
+        "zh": "能玩 Atari 的深度 Q 网络"
+      },
+      "material": {
+        "en": "arXiv paper, Nature paper, and DeepMind blog",
+        "zh": "arXiv 论文、Nature 论文与 DeepMind 博客"
+      },
+      "demo": {
+        "en": "Pixels enter replay; Q-values choose actions",
+        "zh": "像素进入回放；Q 值选择动作"
+      },
+      "visual": "dqn",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Experience Replay",
+            "zh": "经验回放"
+          },
+          "text": {
+            "en": "Past transitions are sampled again to make learning more stable and data-efficient.",
+            "zh": "过去转移会被再次采样，使学习更稳定也更省数据。"
+          }
+        },
+        {
+          "label": {
+            "en": "Target Network",
+            "zh": "目标网络"
+          },
+          "text": {
+            "en": "A delayed copy of the value network reduces moving-target instability.",
+            "zh": "价值网络的延迟副本减少移动目标的不稳定。"
+          }
+        },
+        {
+          "label": {
+            "en": "Q-value",
+            "zh": "Q 值"
+          },
+          "text": {
+            "en": "The network estimates future return for each action.",
+            "zh": "网络估计每个动作的未来回报。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Q Learning",
+          "zh": "Q 学习"
+        },
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        },
+        {
+          "en": "A3C",
+          "zh": "A3C"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "arXiv / Nature",
+          "title": {
+            "en": "DQN paper",
+            "zh": "DQN 论文"
+          },
+          "description": {
+            "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
+            "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
+          },
+          "url": "https://arxiv.org/abs/1312.5602",
+          "source": "https://arxiv.org/abs/1312.5602",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open preprint",
+            "zh": "打开预印本"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Preprint",
+            "zh": "预印本"
+          },
+          "label": {
+            "en": "Playing Atari with Deep Reinforcement Learning",
+            "zh": "Playing Atari with Deep Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/1312.5602"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Human-level control through deep reinforcement learning",
+            "zh": "Human-level control through deep reinforcement learning"
+          },
+          "url": "https://www.nature.com/articles/nature14236"
+        },
+        {
+          "type": {
+            "en": "Project note",
+            "zh": "项目说明"
+          },
+          "label": {
+            "en": "Google DeepMind: Deep Reinforcement Learning",
+            "zh": "Google DeepMind: Deep Reinforcement Learning"
+          },
+          "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Experience Replay",
+          "zh": "经验回放"
+        },
+        {
+          "en": "Target Network",
+          "zh": "目标网络"
+        },
+        {
+          "en": "Q-value",
+          "zh": "Q 值"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+      "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
+        "caption": {
+          "en": "Volodymyr Mnih portrait",
+          "zh": "Volodymyr Mnih 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Mnih’s University of Toronto-hosted personal page.",
+          "zh": "来自 Mnih 多伦多大学托管个人页的人物图。"
+        },
+        "sourceName": "University of Toronto personal page",
+        "source": "https://www.cs.utoronto.ca/~vmnih/",
+        "sourceUrl": "https://www.cs.utoronto.ca/~vmnih/",
+        "originalImageUrl": "https://www.cs.utoronto.ca/~vmnih/paris.jpg",
+        "license": "Personal website photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
+        "caption": {
+          "en": "Replay buffer",
+          "zh": "经验回放池"
+        },
+        "subcaption": {
+          "en": "Local redraw for Deep Q Network, based on the listed source material.",
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "arXiv / Nature",
+        "source": "https://arxiv.org/abs/1312.5602",
+        "sourceUrl": "https://arxiv.org/abs/1312.5602",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
+        "caption": {
+          "en": "Q-value control loop",
+          "zh": "Q 值控制循环"
+        },
+        "subcaption": {
+          "en": "Local redraw for Deep Q Network, based on the listed source material.",
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "arXiv / Nature",
+        "source": "https://arxiv.org/abs/1312.5602",
+        "sourceUrl": "https://arxiv.org/abs/1312.5602",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2003-lda": {
+    "year": "2003",
+    "title": {
+      "en": "Latent Dirichlet Allocation",
+      "zh": "潜在狄利克雷分配"
+    },
+    "location": {
+      "name": {
+        "en": "UC Berkeley / Stanford University",
+        "zh": "加州大学伯克利分校 / 斯坦福大学"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        37.8715,
+        -122.273
+      ]
+    },
+    "description": {
+      "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>",
+      "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Blei",
+          "zh": "David Blei"
+        },
+        "role": {
+          "en": "First author of LDA",
+          "zh": "LDA 第一作者"
+        }
+      },
+      {
+        "name": {
+          "en": "Michael Jordan",
+          "zh": "Michael Jordan"
+        },
+        "role": {
+          "en": "Co-author and probabilistic ML researcher",
+          "zh": "共同作者，概率机器学习研究者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "latent Dirichlet allocation",
+      "zh": "潜在狄利克雷分配"
+    },
+    "quoteMeta": {
+      "workTitle": "Latent Dirichlet Allocation",
+      "workAuthors": "David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Probabilistic graphical model / LDA",
+      "zh": "BenchCouncil AI100：概率图模型 / LDA"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Text collections needed methods that discovered structure without hand-labeling every theme. LDA made the hidden-topic assumption explicit and probabilistic.",
+          "zh": "文本集合需要无需手工标注每个主题就能发现结构的方法。LDA 把隐藏主题假设明确写成概率模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution.",
+          "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expert Evaluation",
+          "zh": "专家评价"
+        },
+        "html": {
+          "en": "Today experts usually treat LDA as a classic probabilistic topic model and a teaching example for generative modeling. Neural embeddings and transformers often perform better in modern applications, but LDA remains valuable for interpretability and Bayesian inference concepts.",
+          "zh": "今天的专家通常把 LDA 视为经典概率主题模型，也是讲解生成式建模的教学范例。神经嵌入和 Transformer 在现代应用中往往表现更好，但 LDA 对可解释性和贝叶斯推断概念仍有价值。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Probabilistic graphical model",
+        "zh": "概率图模型"
+      },
+      "method": {
+        "en": "Bayesian topic model with Dirichlet priors",
+        "zh": "带 Dirichlet 先验的贝叶斯主题模型"
+      },
+      "artifact": {
+        "en": "LDA topic model",
+        "zh": "LDA 主题模型"
+      },
+      "material": {
+        "en": "JMLR paper, author page, and implementation docs",
+        "zh": "JMLR 论文、作者主页与实现文档"
+      },
+      "demo": {
+        "en": "Documents mix topics; topics emit words",
+        "zh": "文档混合主题；主题生成词"
+      },
+      "visual": "lda",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Topic Mixture",
+            "zh": "主题混合"
+          },
+          "text": {
+            "en": "A document can combine several themes instead of belonging to one class.",
+            "zh": "一篇文档可以组合多个主题，而不是只属于一个类别。"
+          }
+        },
+        {
+          "label": {
+            "en": "Word Distribution",
+            "zh": "词分布"
+          },
+          "text": {
+            "en": "Each topic is represented as probabilities over words.",
+            "zh": "每个主题表示为词上的概率分布。"
+          }
+        },
+        {
+          "label": {
+            "en": "Variational Inference",
+            "zh": "变分推断"
+          },
+          "text": {
+            "en": "Approximate inference estimates hidden topic assignments from observed words.",
+            "zh": "近似推断从可见词估计隐藏主题分配。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Bayesian network",
+          "zh": "贝叶斯网络"
+        },
+        {
+          "en": "Neural language models",
+          "zh": "神经语言模型"
+        },
+        {
+          "en": "Topic modeling",
+          "zh": "主题模型"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Text mining",
+          "zh": "文本挖掘"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "JMLR",
+          "title": {
+            "en": "LDA paper",
+            "zh": "LDA 论文"
+          },
+          "description": {
+            "en": "Primary JMLR source for LDA; local images redraw topic mixtures and plate notation.",
+            "zh": "LDA 的 JMLR 原始来源；本地图重画主题混合和 plate notation。"
+          },
+          "url": "https://jmlr.org/papers/v3/blei03a.html",
+          "source": "https://jmlr.org/papers/v3/blei03a.html",
+          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open JMLR paper",
+            "zh": "打开 JMLR 论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Latent Dirichlet Allocation",
+            "zh": "Latent Dirichlet Allocation"
+          },
+          "url": "https://jmlr.org/papers/v3/blei03a.html"
+        },
+        {
+          "type": {
+            "en": "Author",
+            "zh": "作者"
+          },
+          "label": {
+            "en": "David M. Blei homepage",
+            "zh": "David M. Blei homepage"
+          },
+          "url": "https://www.cs.columbia.edu/~blei/"
+        },
+        {
+          "type": {
+            "en": "Implementation",
+            "zh": "实现"
+          },
+          "label": {
+            "en": "scikit-learn LatentDirichletAllocation",
+            "zh": "scikit-learn LatentDirichletAllocation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Topic Mixture",
+          "zh": "主题混合"
+        },
+        {
+          "en": "Word Distribution",
+          "zh": "词分布"
+        },
+        {
+          "en": "Variational Inference",
+          "zh": "变分推断"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
+      "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg",
+      "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg": {
+        "caption": {
+          "en": "David M. Blei portrait",
+          "zh": "David M. Blei 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Blei’s Columbia University homepage.",
+          "zh": "来自 Blei 哥伦比亚大学个人主页的人物图。"
+        },
+        "sourceName": "Columbia University personal page",
+        "source": "https://www.cs.columbia.edu/~blei/",
+        "sourceUrl": "https://www.cs.columbia.edu/~blei/",
+        "originalImageUrl": "https://www.cs.columbia.edu/~blei/static/blei-hi-res.jpg",
+        "license": "Personal website photo; rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg": {
+        "caption": {
+          "en": "Topic mixture simplex",
+          "zh": "主题混合单纯形"
+        },
+        "subcaption": {
+          "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
+          "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "JMLR",
+        "source": "https://jmlr.org/papers/v3/blei03a.html",
+        "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg": {
+        "caption": {
+          "en": "Plate model sketch",
+          "zh": "Plate 模型草图"
+        },
+        "subcaption": {
+          "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
+          "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "JMLR",
+        "source": "https://jmlr.org/papers/v3/blei03a.html",
+        "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1970-shrdlu": {
+    "year": "1970",
+    "title": {
+      "en": "SHRDLU",
+      "zh": "SHRDLU"
+    },
+    "location": {
+      "name": {
+        "en": "MIT Artificial Intelligence Laboratory",
+        "zh": "MIT 人工智能实验室"
+      },
+      "country": {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.</p>",
+      "zh": "<p>SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Terry Winograd",
+          "zh": "Terry Winograd"
+        },
+        "role": {
+          "en": "Creator of SHRDLU",
+          "zh": "SHRDLU 创建者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Blocks-world language understanding",
+      "zh": "积木世界语言理解"
+    },
+    "quoteMeta": {
+      "workTitle": "SHRDLU dissertation record",
+      "workAuthors": "Terry Winograd",
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Natural language understanding / SHRDLU",
+      "zh": "BenchCouncil AI100：自然语言理解 / SHRDLU"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Early language programs often handled isolated sentences. SHRDLU made language, reference, memory, and action share one miniature world.",
+          "zh": "早期语言程序往往只处理孤立句子。SHRDLU 让语言、指称、记忆和动作共享同一个微型世界。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene.",
+          "zh": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "SHRDLU became a classic example of both the promise and the brittleness of microworld AI.",
+          "zh": "SHRDLU 成为微世界 AI 的希望与脆弱性的经典案例。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Natural language understanding",
+        "zh": "自然语言理解"
+      },
+      "method": {
+        "en": "Blocks-world language understanding",
+        "zh": "积木世界语言理解"
+      },
+      "artifact": {
+        "en": "Interactive blocks-world dialogue system",
+        "zh": "交互式积木世界对话系统"
+      },
+      "material": {
+        "en": "MIT thesis and AI Lab reports",
+        "zh": "MIT 论文与 AI Lab 报告"
+      },
+      "demo": {
+        "en": "Parse language into plans over visible blocks",
+        "zh": "把语言解析为可见积木上的计划"
+      },
+      "visual": "shrdlu",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Microworld",
+            "zh": "微世界"
+          },
+          "text": {
+            "en": "A narrow environment makes language and action tractable.",
+            "zh": "受限环境让语言和动作变得可处理。"
+          }
+        },
+        {
+          "label": {
+            "en": "Procedural Semantics",
+            "zh": "过程语义"
+          },
+          "text": {
+            "en": "Meaning is tied to procedures the system can run.",
+            "zh": "意义绑定到系统可执行的过程。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reference Resolution",
+            "zh": "指称消解"
+          },
+          "text": {
+            "en": "The system maps words like \"the red block\" to objects in the scene.",
+            "zh": "系统把“红色积木”等表达映射到场景对象。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ELIZA",
+          "zh": "ELIZA"
+        },
+        {
+          "en": "Frame",
+          "zh": "框架"
+        },
+        {
+          "en": "Natural language understanding",
+          "zh": "自然语言理解"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Massachusetts, United States",
+          "zh": "美国马萨诸塞州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Parse command",
+          "zh": "解析命令"
+        },
+        {
+          "en": "Resolve object",
+          "zh": "解析指称"
+        },
+        {
+          "en": "Plan block action",
+          "zh": "规划积木动作"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "MIT DSpace",
+          "title": {
+            "en": "SHRDLU dissertation record",
+            "zh": "SHRDLU 学位论文记录"
+          },
+          "description": {
+            "en": "Repository record for Winograd's language-understanding work.",
+            "zh": "Winograd 语言理解工作的 MIT 仓储记录。"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/7095",
+          "source": "https://dspace.mit.edu/handle/1721.1/7095",
+          "license": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open MIT record",
+            "zh": "打开 MIT 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Thesis",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+            "zh": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/7095"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Terry Winograd, Stanford Computer Science",
+            "zh": "Terry Winograd, Stanford Computer Science"
+          },
+          "url": "https://www.cs.stanford.edu/people/terry-winograd"
+        },
+        {
+          "type": {
+            "en": "Oral history",
+            "zh": "口述史"
+          },
+          "label": {
+            "en": "Terry Winograd oral history, CBI",
+            "zh": "Terry Winograd oral history, CBI"
+          },
+          "url": "https://hdl.handle.net/11299/107717"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+      "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+      "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg": {
+        "caption": {
+          "en": "Terry Winograd portrait",
+          "zh": "Terry Winograd 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Stanford Computer Science profile.",
+          "zh": "来自 Stanford Computer Science 个人资料页的人物图。"
+        },
+        "sourceName": "Stanford Computer Science",
+        "source": "https://www.cs.stanford.edu/people/terry-winograd",
+        "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+        "originalImageUrl": "https://www.cs.stanford.edu/sites/g/files/sbiybj28076/files/styles/large_square/public/media/person/terry-winograd1509560558940.jpg",
+        "license": "Stanford profile image; reuse rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg": {
+        "caption": {
+          "en": "Blocks-world command grounding",
+          "zh": "积木世界命令落地"
+        },
+        "subcaption": {
+          "en": "Local redraw for SHRDLU, based on the listed source material.",
+          "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "MIT DSpace",
+        "source": "https://dspace.mit.edu/handle/1721.1/7095",
+        "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg": {
+        "caption": {
+          "en": "Parser to planner path",
+          "zh": "解析器到规划器路径"
+        },
+        "subcaption": {
+          "en": "Local redraw for SHRDLU, based on the listed source material.",
+          "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "MIT DSpace",
+        "source": "https://dspace.mit.edu/handle/1721.1/7095",
+        "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1997-deep-blue": {
+    "year": "1997",
+    "title": {
+      "en": "Deep Blue",
+      "zh": "Deep Blue"
+    },
+    "location": {
+      "name": {
+        "en": "IBM Research",
+        "zh": "IBM Research"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      },
+      "coordinates": [
+        41.2108,
+        -73.8035
+      ]
+    },
+    "description": {
+      "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>",
+      "zh": "<p>Deep Blue 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Murray Campbell",
+          "zh": "Murray Campbell"
+        },
+        "role": {
+          "en": "Deep Blue team member",
+          "zh": "Deep Blue 团队成员"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Specialized chess search hardware",
+      "zh": "专用国际象棋搜索硬件"
+    },
+    "quoteMeta": {
+      "workTitle": "Deep Blue journal article",
+      "workAuthors": "Murray Campbell",
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / Deep Blue",
+      "zh": "BenchCouncil AI100：博弈 AI / Deep Blue"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage.",
+          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。Deep Blue 把这条路线带到全球舞台。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Deep Blue shaped public expectations for AI milestones and became a reference point for later game systems such as AlphaGo.",
+          "zh": "Deep Blue 影响了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Game AI",
+        "zh": "博弈 AI"
+      },
+      "method": {
+        "en": "Specialized chess search hardware",
+        "zh": "专用国际象棋搜索硬件"
+      },
+      "artifact": {
+        "en": "World-champion chess match system",
+        "zh": "世界冠军对弈系统"
+      },
+      "material": {
+        "en": "IBM Research profile and Deep Blue histories",
+        "zh": "IBM Research 人物资料与 Deep Blue 史料"
+      },
+      "demo": {
+        "en": "Search millions of chess positions with evaluation hardware",
+        "zh": "用评估硬件搜索数百万棋局位置"
+      },
+      "visual": "deepblue",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Alpha-Beta Search",
+            "zh": "Alpha-Beta 搜索"
+          },
+          "text": {
+            "en": "A pruning method that avoids searching branches that cannot change the decision.",
+            "zh": "一种剪枝方法，避免搜索不会改变决策的分支。"
+          }
+        },
+        {
+          "label": {
+            "en": "Evaluation Function",
+            "zh": "评估函数"
+          },
+          "text": {
+            "en": "Chess knowledge assigns a score to positions when search stops.",
+            "zh": "搜索停止时，棋类知识为局面赋分。"
+          }
+        },
+        {
+          "label": {
+            "en": "Custom Hardware",
+            "zh": "定制硬件"
+          },
+          "text": {
+            "en": "Special chips accelerated chess move generation and evaluation.",
+            "zh": "专用芯片加速走法生成和局面评估。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        },
+        {
+          "en": "Game AI",
+          "zh": "博弈 AI"
+        },
+        {
+          "en": "Search",
+          "zh": "搜索"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New York, United States",
+          "zh": "美国纽约州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Generate moves",
+          "zh": "生成走法"
+        },
+        {
+          "en": "Prune branches",
+          "zh": "剪枝分支"
+        },
+        {
+          "en": "Score end leaves",
+          "zh": "评估叶节点"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Artificial Intelligence",
+          "title": {
+            "en": "Deep Blue journal article",
+            "zh": "Deep Blue 期刊论文"
+          },
+          "description": {
+            "en": "AI journal article record on Deep Blue as a chess-playing system.",
+            "zh": "关于 Deep Blue 国际象棋系统的 AI 期刊记录。"
+          },
+          "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open article record",
+            "zh": "打开论文记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Murray Campbell, IBM Research",
+            "zh": "Murray Campbell, IBM Research"
+          },
+          "url": "https://research.ibm.com/people/murray-campbell"
+        },
+        {
+          "type": {
+            "en": "Museum",
+            "zh": "博物馆"
+          },
+          "label": {
+            "en": "Mastering the Game, Computer History Museum",
+            "zh": "Mastering the Game, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "IBM100: Deep Blue",
+            "zh": "IBM100: Deep Blue"
+          },
+          "url": "https://www.ibm.com/history/deep-blue"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+        "caption": {
+          "en": "Murray Campbell portrait",
+          "zh": "Murray Campbell 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from IBM Research profile.",
+          "zh": "来自 IBM Research 人物资料页的人物图。"
+        },
+        "sourceName": "IBM Research",
+        "source": "https://research.ibm.com/people/murray-campbell",
+        "sourceUrl": "https://research.ibm.com/people/murray-campbell",
+        "originalImageUrl": "https://research-website-prod-ibmers-images.s3.us-east.cloud-object-storage.appdomain.cloud/3729",
+        "license": "IBM Research profile image; reuse rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
+        "caption": {
+          "en": "Chess search tree",
+          "zh": "国际象棋搜索树"
+        },
+        "subcaption": {
+          "en": "Local redraw for Deep Blue, based on the listed source material.",
+          "zh": "Deep Blue 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Artificial Intelligence",
+        "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
+        "caption": {
+          "en": "Hardware-assisted board evaluation",
+          "zh": "硬件辅助棋盘评估"
+        },
+        "subcaption": {
+          "en": "Local redraw for Deep Blue, based on the listed source material.",
+          "zh": "Deep Blue 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Artificial Intelligence",
+        "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1974-frame": {
+    "year": "1974",
+    "title": {
+      "en": "Frame",
+      "zh": "框架"
+    },
+    "location": {
+      "name": {
+        "en": "MIT Artificial Intelligence Laboratory",
+        "zh": "MIT 人工智能实验室"
+      },
+      "country": {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>",
+      "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "Marvin Minsky"
+        },
+        "role": {
+          "en": "Author of the frame representation proposal",
+          "zh": "框架表示思想提出者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Structured slots with defaults and inheritance",
+      "zh": "带默认值和继承的槽结构"
+    },
+    "quoteMeta": {
+      "workTitle": "A Framework for Representing Knowledge",
+      "workAuthors": "Marvin Minsky",
+      "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Knowledge representation / Frame",
+      "zh": "BenchCouncil AI100：知识表示 / 框架"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Symbolic AI needed richer structures than flat predicate lists. Frames offered reusable templates for scenes and concepts.",
+          "zh": "符号 AI 需要比扁平谓词列表更丰富的结构。框架为场景和概念提供可复用模板。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations.",
+          "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Frames became a central knowledge-representation idea and foreshadowed object-like AI data structures.",
+          "zh": "框架成为知识表示核心思想之一，并预示了类似对象的 AI 数据结构。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Knowledge representation",
+        "zh": "知识表示"
+      },
+      "method": {
+        "en": "Structured slots with defaults and inheritance",
+        "zh": "带默认值和继承的槽结构"
+      },
+      "artifact": {
+        "en": "Frame representation",
+        "zh": "框架知识表示"
+      },
+      "material": {
+        "en": "Minsky frame paper and MIT historical material",
+        "zh": "Minsky 框架论文与 MIT 史料"
+      },
+      "demo": {
+        "en": "Fill slots and inherit defaults for a situation",
+        "zh": "为情境填槽并继承默认值"
+      },
+      "visual": "frame",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Slot",
+            "zh": "槽"
+          },
+          "text": {
+            "en": "A named field in a frame, such as color, owner, or expected part.",
+            "zh": "框架中的命名字段，例如颜色、拥有者或预期部件。"
+          }
+        },
+        {
+          "label": {
+            "en": "Default Value",
+            "zh": "默认值"
+          },
+          "text": {
+            "en": "A typical assumption used until evidence says otherwise.",
+            "zh": "在证据出现前使用的典型假设。"
+          }
+        },
+        {
+          "label": {
+            "en": "Inheritance",
+            "zh": "继承"
+          },
+          "text": {
+            "en": "Specific frames can reuse knowledge from more general frames.",
+            "zh": "具体框架可以复用更一般框架的知识。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SHRDLU",
+          "zh": "SHRDLU"
+        },
+        {
+          "en": "Cyc",
+          "zh": "Cyc"
+        },
+        {
+          "en": "Knowledge representation",
+          "zh": "知识表示"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Massachusetts, United States",
+          "zh": "美国马萨诸塞州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Choose situation",
+          "zh": "选择情境"
+        },
+        {
+          "en": "Fill slots",
+          "zh": "填充槽"
+        },
+        {
+          "en": "Override defaults",
+          "zh": "覆盖默认值"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "MIT Media Lab course archive",
+          "title": {
+            "en": "A Framework for Representing Knowledge",
+            "zh": "A Framework for Representing Knowledge"
+          },
+          "description": {
+            "en": "Course-hosted copy of Minsky's frame proposal.",
+            "zh": "课程资料中保存的 Minsky 框架论文。"
+          },
+          "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open paper PDF",
+            "zh": "打开论文 PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Framework for Representing Knowledge",
+            "zh": "A Framework for Representing Knowledge"
+          },
+          "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Marvin Minsky obituary, MIT News",
+            "zh": "Marvin Minsky obituary, MIT News"
+          },
+          "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125"
+        },
+        {
+          "type": {
+            "en": "Reference",
+            "zh": "参考资料"
+          },
+          "label": {
+            "en": "Frame, MIT AI memo bibliographic record",
+            "zh": "Frame, MIT AI memo bibliographic record"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/6089"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+      "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+      "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg": {
+        "caption": {
+          "en": "Marvin Minsky portrait",
+          "zh": "Marvin Minsky 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from MIT News obituary.",
+          "zh": "来自 MIT News 讣闻的人物图。"
+        },
+        "sourceName": "MIT News",
+        "source": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+        "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+        "originalImageUrl": "https://news.mit.edu/sites/default/files/images/201601/HP-MIT-Marvin-Minsky-02.jpg",
+        "license": "MIT News image; terms stated on MIT News media page.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg": {
+        "caption": {
+          "en": "Slot-default frame card",
+          "zh": "槽与默认值框架卡"
+        },
+        "subcaption": {
+          "en": "Local redraw for Frame, based on the listed source material.",
+          "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "MIT Media Lab course archive",
+        "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg": {
+        "caption": {
+          "en": "Frame inheritance sketch",
+          "zh": "框架继承草图"
+        },
+        "subcaption": {
+          "en": "Local redraw for Frame, based on the listed source material.",
+          "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "MIT Media Lab course archive",
+        "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1965-dendral": {
+    "year": "1965",
+    "title": {
+      "en": "DENDRAL",
+      "zh": "DENDRAL"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>",
+      "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Edward Feigenbaum",
+          "zh": "Edward Feigenbaum"
+        },
+        "role": {
+          "en": "Leader in expert-system AI",
+          "zh": "专家系统 AI 代表人物"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Rule-guided chemical structure inference",
+      "zh": "规则引导的化学结构推断"
+    },
+    "quoteMeta": {
+      "workTitle": "Chemical inference paper record",
+      "workAuthors": "Edward Feigenbaum",
+      "sourceUrl": "https://doi.org/10.1021/ci60034a002"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Expert systems / DENDRAL",
+      "zh": "BenchCouncil AI100：专家系统 / DENDRAL"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "General-purpose problem solving was not enough for hard scientific tasks. DENDRAL showed that carefully encoded expertise could focus search.",
+          "zh": "通用问题求解不足以处理困难科学任务。DENDRAL 表明，精心编码的专业知识可以聚焦搜索。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints.",
+          "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "DENDRAL helped launch the expert-system era and influenced knowledge engineering in medicine, chemistry, and enterprise systems.",
+          "zh": "DENDRAL 推动了专家系统时代，并影响了医学、化学和企业系统中的知识工程。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Expert systems",
+        "zh": "专家系统"
+      },
+      "method": {
+        "en": "Rule-guided chemical structure inference",
+        "zh": "规则引导的化学结构推断"
+      },
+      "artifact": {
+        "en": "DENDRAL expert system",
+        "zh": "DENDRAL 专家系统"
+      },
+      "material": {
+        "en": "Chemical inference papers and Turing Award histories",
+        "zh": "化学推断论文与图灵奖史料"
+      },
+      "demo": {
+        "en": "Use expert rules to narrow molecular structures",
+        "zh": "用专家规则缩小分子结构候选"
+      },
+      "visual": "dendral",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Knowledge Engineering",
+            "zh": "知识工程"
+          },
+          "text": {
+            "en": "Experts help encode rules that guide the system.",
+            "zh": "专家帮助编码规则以引导系统。"
+          }
+        },
+        {
+          "label": {
+            "en": "Generate and Test",
+            "zh": "生成与检验"
+          },
+          "text": {
+            "en": "Candidate structures are generated, then filtered by constraints.",
+            "zh": "先生成候选结构，再用约束筛选。"
+          }
+        },
+        {
+          "label": {
+            "en": "Mass Spectrum",
+            "zh": "质谱"
+          },
+          "text": {
+            "en": "Chemical evidence supplies clues about molecular fragments.",
+            "zh": "化学证据提供关于分子片段的线索。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Expert systems",
+          "zh": "专家系统"
+        },
+        {
+          "en": "Cyc",
+          "zh": "Cyc"
+        },
+        {
+          "en": "AI for Science",
+          "zh": "AI for Science"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "California, United States",
+          "zh": "美国加利福尼亚州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Read spectrum",
+          "zh": "读取质谱"
+        },
+        {
+          "en": "Apply rules",
+          "zh": "应用规则"
+        },
+        {
+          "en": "Rank molecules",
+          "zh": "排序分子"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "ACS Publications",
+          "title": {
+            "en": "Chemical inference paper record",
+            "zh": "化学推断论文记录"
+          },
+          "description": {
+            "en": "Primary literature record for early DENDRAL chemical inference.",
+            "zh": "早期 DENDRAL 化学推断工作的原始文献记录。"
+          },
+          "url": "https://doi.org/10.1021/ci60034a002",
+          "source": "https://doi.org/10.1021/ci60034a002",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Applications of Artificial Intelligence for Chemical Inference",
+            "zh": "Applications of Artificial Intelligence for Chemical Inference"
+          },
+          "url": "https://doi.org/10.1021/ci60034a002"
+        },
+        {
+          "type": {
+            "en": "Award",
+            "zh": "奖项资料"
+          },
+          "label": {
+            "en": "ACM Turing Award profile for Edward Feigenbaum",
+            "zh": "ACM Turing Award profile for Edward Feigenbaum"
+          },
+          "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "Stanford Knowledge Systems Laboratory history",
+            "zh": "Stanford Knowledge Systems Laboratory history"
+          },
+          "url": "http://ksl-web.stanford.edu/"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
+      "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg",
+      "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg": {
+        "caption": {
+          "en": "Edward Feigenbaum portrait",
+          "zh": "Edward Feigenbaum 肖像"
+        },
+        "subcaption": {
+          "en": "Turing laureate photo from Wikimedia Commons.",
+          "zh": "来自 Wikimedia Commons 的图灵奖得主照片。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+        "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2012-06-15%201994%20Turing%20Laureate%20Ed%20Feigenbaum.jpg",
+        "license": "Creative Commons license stated on Commons file page.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg": {
+        "caption": {
+          "en": "Mass spectrum to fragments",
+          "zh": "质谱到片段"
+        },
+        "subcaption": {
+          "en": "Local redraw for DENDRAL, based on the listed source material.",
+          "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "ACS Publications",
+        "source": "https://doi.org/10.1021/ci60034a002",
+        "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg": {
+        "caption": {
+          "en": "Rule-filtered molecule search",
+          "zh": "规则筛选分子搜索"
+        },
+        "subcaption": {
+          "en": "Local redraw for DENDRAL, based on the listed source material.",
+          "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "ACS Publications",
+        "source": "https://doi.org/10.1021/ci60034a002",
+        "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1999-sift": {
+    "year": "1999",
+    "title": {
+      "en": "SIFT",
+      "zh": "SIFT"
+    },
+    "location": {
+      "name": {
+        "en": "University of British Columbia",
+        "zh": "不列颠哥伦比亚大学"
+      },
+      "country": {
+        "en": "British Columbia, Canada",
+        "zh": "加拿大不列颠哥伦比亚省"
+      },
+      "coordinates": [
+        49.2606,
+        -123.246
+      ]
+    },
+    "description": {
+      "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>",
+      "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Lowe",
+          "zh": "David Lowe"
+        },
+        "role": {
+          "en": "Inventor of SIFT",
+          "zh": "SIFT 发明者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Scale-invariant local features",
+      "zh": "尺度不变局部特征"
+    },
+    "quoteMeta": {
+      "workTitle": "SIFT ICCV paper PDF",
+      "workAuthors": "David Lowe",
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer vision feature extraction / SIFT",
+      "zh": "BenchCouncil AI100：计算机视觉特征提取 / SIFT"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes.",
+          "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor.",
+          "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "SIFT influenced feature engineering, structure-from-motion pipelines, and many benchmarks for local descriptors.",
+          "zh": "SIFT 影响了特征工程、运动恢复结构流程和许多局部描述子基准。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Computer vision feature extraction",
+        "zh": "计算机视觉特征提取"
+      },
+      "method": {
+        "en": "Scale-invariant local features",
+        "zh": "尺度不变局部特征"
+      },
+      "artifact": {
+        "en": "SIFT keypoint descriptor",
+        "zh": "SIFT 关键点描述子"
+      },
+      "material": {
+        "en": "ICCV paper and IJCV article",
+        "zh": "ICCV 论文与 IJCV 文章"
+      },
+      "demo": {
+        "en": "Find stable keypoints across scale and rotation",
+        "zh": "跨尺度与旋转寻找稳定关键点"
+      },
+      "visual": "sift",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Scale Space",
+            "zh": "尺度空间"
+          },
+          "text": {
+            "en": "The image is examined at multiple blur levels to find stable structures.",
+            "zh": "图像在多个模糊尺度上被检查，以寻找稳定结构。"
+          }
+        },
+        {
+          "label": {
+            "en": "Keypoint",
+            "zh": "关键点"
+          },
+          "text": {
+            "en": "A repeatable local point that can be matched across images.",
+            "zh": "可在多张图像间重复匹配的局部点。"
+          }
+        },
+        {
+          "label": {
+            "en": "Descriptor",
+            "zh": "描述子"
+          },
+          "text": {
+            "en": "Gradient histograms summarize the nearby appearance.",
+            "zh": "梯度直方图概括邻域外观。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "HOG",
+          "zh": "HOG"
+        },
+        {
+          "en": "SURF",
+          "zh": "SURF"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "British Columbia, Canada",
+          "zh": "加拿大不列颠哥伦比亚省"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Build scale space",
+          "zh": "构建尺度空间"
+        },
+        {
+          "en": "Pick keypoints",
+          "zh": "选择关键点"
+        },
+        {
+          "en": "Match descriptors",
+          "zh": "匹配描述子"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "UBC Laboratory for Computational Intelligence",
+          "title": {
+            "en": "SIFT ICCV paper PDF",
+            "zh": "SIFT ICCV 论文 PDF"
+          },
+          "description": {
+            "en": "UBC-hosted PDF for the original SIFT conference paper.",
+            "zh": "UBC 托管的 SIFT 原始会议论文 PDF。"
+          },
+          "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open paper PDF",
+            "zh": "打开论文 PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Object Recognition from Local Scale-Invariant Features",
+            "zh": "Object Recognition from Local Scale-Invariant Features"
+          },
+          "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+        },
+        {
+          "type": {
+            "en": "Journal article",
+            "zh": "期刊论文"
+          },
+          "label": {
+            "en": "Distinctive Image Features from Scale-Invariant Keypoints",
+            "zh": "Distinctive Image Features from Scale-Invariant Keypoints"
+          },
+          "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "David Lowe, UBC Computer Science",
+            "zh": "David Lowe, UBC Computer Science"
+          },
+          "url": "https://www.cs.ubc.ca/people/david-lowe"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
+      "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+      "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg": {
+        "caption": {
+          "en": "David Lowe portrait",
+          "zh": "David Lowe 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from UBC Computer Science profile.",
+          "zh": "来自 UBC Computer Science 个人资料页的人物图。"
+        },
+        "sourceName": "University of British Columbia",
+        "source": "https://www.cs.ubc.ca/people/david-lowe",
+        "sourceUrl": "https://www.cs.ubc.ca/people/david-lowe",
+        "originalImageUrl": "https://www.cs.ubc.ca/sites/default/files/styles/profile_page/public/people/lowe.jpg",
+        "license": "UBC profile image; reuse rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg": {
+        "caption": {
+          "en": "Scale-space keypoints",
+          "zh": "尺度空间关键点"
+        },
+        "subcaption": {
+          "en": "Local redraw for SIFT, based on the listed source material.",
+          "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "UBC Laboratory for Computational Intelligence",
+        "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg": {
+        "caption": {
+          "en": "Gradient descriptor histogram",
+          "zh": "梯度描述子直方图"
+        },
+        "subcaption": {
+          "en": "Local redraw for SIFT, based on the listed source material.",
+          "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "UBC Laboratory for Computational Intelligence",
+        "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2008-tsne": {
+    "year": "2008",
+    "title": {
+      "en": "t-SNE",
+      "zh": "t-SNE"
+    },
+    "location": {
+      "name": {
+        "en": "Tilburg University / University of Toronto",
+        "zh": "蒂尔堡大学 / 多伦多大学"
+      },
+      "country": {
+        "en": "Netherlands and Canada",
+        "zh": "荷兰与加拿大"
+      },
+      "coordinates": [
+        51.5633,
+        5.0431
+      ]
+    },
+    "description": {
+      "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>",
+      "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Laurens van der Maaten",
+          "zh": "Laurens van der Maaten"
+        },
+        "role": {
+          "en": "Co-author of t-SNE",
+          "zh": "t-SNE 共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Neighbor-preserving nonlinear embedding",
+      "zh": "保持邻域的非线性嵌入"
+    },
+    "quoteMeta": {
+      "workTitle": "Visualizing Data using t-SNE",
+      "workAuthors": "Laurens van der Maaten",
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Dimensionality reduction / t-SNE",
+      "zh": "BenchCouncil AI100：降维 / t-SNE"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data.",
+          "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map.",
+          "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "It became a standard exploratory visualization, while also teaching users to treat cluster maps carefully.",
+          "zh": "它成为标准探索性可视化工具，同时也提醒用户谨慎解读簇图。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Dimensionality reduction",
+        "zh": "降维"
+      },
+      "method": {
+        "en": "Neighbor-preserving nonlinear embedding",
+        "zh": "保持邻域的非线性嵌入"
+      },
+      "artifact": {
+        "en": "t-distributed stochastic neighbor embedding",
+        "zh": "t 分布随机邻域嵌入"
+      },
+      "material": {
+        "en": "JMLR paper and author materials",
+        "zh": "JMLR 论文与作者资料"
+      },
+      "demo": {
+        "en": "Turn high-dimensional neighborhoods into 2D clusters",
+        "zh": "把高维邻域转为二维簇"
+      },
+      "visual": "tsne",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Perplexity",
+            "zh": "困惑度"
+          },
+          "text": {
+            "en": "A parameter that roughly controls neighborhood size.",
+            "zh": "一个大致控制邻域大小的参数。"
+          }
+        },
+        {
+          "label": {
+            "en": "Local Neighborhood",
+            "zh": "局部邻域"
+          },
+          "text": {
+            "en": "The method emphasizes nearby points more than global distances.",
+            "zh": "该方法更强调邻近点，而非全局距离。"
+          }
+        },
+        {
+          "label": {
+            "en": "Crowding Problem",
+            "zh": "拥挤问题"
+          },
+          "text": {
+            "en": "Heavy tails help separate groups in the low-dimensional map.",
+            "zh": "重尾分布帮助低维图中群组分开。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Isomap",
+          "zh": "Isomap"
+        },
+        {
+          "en": "Locally linear embedding",
+          "zh": "局部线性嵌入"
+        },
+        {
+          "en": "Embedding visualization",
+          "zh": "嵌入可视化"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Netherlands and Canada",
+          "zh": "荷兰与加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Compute neighbors",
+          "zh": "计算邻域"
+        },
+        {
+          "en": "Match probabilities",
+          "zh": "匹配概率"
+        },
+        {
+          "en": "Relax map",
+          "zh": "松弛地图"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Journal of Machine Learning Research",
+          "title": {
+            "en": "Visualizing Data using t-SNE",
+            "zh": "Visualizing Data using t-SNE"
+          },
+          "description": {
+            "en": "JMLR article page for the canonical t-SNE paper.",
+            "zh": "t-SNE 经典论文的 JMLR 页面。"
+          },
+          "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open JMLR page",
+            "zh": "打开 JMLR 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Visualizing Data using t-SNE",
+            "zh": "Visualizing Data using t-SNE"
+          },
+          "url": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+        },
+        {
+          "type": {
+            "en": "Author page",
+            "zh": "作者页面"
+          },
+          "label": {
+            "en": "Laurens van der Maaten homepage",
+            "zh": "Laurens van der Maaten homepage"
+          },
+          "url": "https://lvdmaaten.github.io/"
+        },
+        {
+          "type": {
+            "en": "Guide",
+            "zh": "指南"
+          },
+          "label": {
+            "en": "How to Use t-SNE Effectively, Distill",
+            "zh": "How to Use t-SNE Effectively, Distill"
+          },
+          "url": "https://distill.pub/2016/misread-tsne/"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+      "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+      "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png": {
+        "caption": {
+          "en": "Laurens van der Maaten portrait",
+          "zh": "Laurens van der Maaten 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from van der Maaten homepage.",
+          "zh": "来自 van der Maaten 个人主页的人物图。"
+        },
+        "sourceName": "Laurens van der Maaten homepage",
+        "source": "https://lvdmaaten.github.io/",
+        "sourceUrl": "https://lvdmaaten.github.io/",
+        "originalImageUrl": "https://lvdmaaten.github.io/images/laurens.png",
+        "license": "Personal website image; reuse rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg": {
+        "caption": {
+          "en": "Neighbor probability matching",
+          "zh": "邻域概率匹配"
+        },
+        "subcaption": {
+          "en": "Local redraw for t-SNE, based on the listed source material.",
+          "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Journal of Machine Learning Research",
+        "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg": {
+        "caption": {
+          "en": "2D cluster map",
+          "zh": "二维簇图"
+        },
+        "subcaption": {
+          "en": "Local redraw for t-SNE, based on the listed source material.",
+          "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Journal of Machine Learning Research",
+        "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1958-rosenblatt-perceptron": {
+    "year": "1958",
+    "title": {
+      "en": "Rosenblatt Perceptron",
+      "zh": "Rosenblatt 感知机"
+    },
+    "location": {
+      "name": {
+        "en": "Cornell Aeronautical Laboratory",
+        "zh": "康奈尔航空实验室"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      },
+      "coordinates": [
+        42.8864,
+        -78.8784
+      ]
+    },
+    "description": {
+      "en": "<p>Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. It promised machines that could learn from examples rather than being programmed only by explicit rules. The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification.</p>",
+      "zh": "<p>Rosenblatt 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Frank Rosenblatt",
+          "zh": "Frank Rosenblatt"
+        },
+        "role": {
+          "en": "Inventor of the perceptron",
+          "zh": "感知机发明者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Linear threshold learning machine",
+      "zh": "线性阈值学习机"
+    },
+    "quoteMeta": {
+      "workTitle": "The perceptron paper record",
+      "workAuthors": "Frank Rosenblatt",
+      "sourceUrl": "https://doi.org/10.1037/h0042519"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural networks / Rosenblatt Perceptron",
+      "zh": "BenchCouncil AI100：神经网络 / Rosenblatt 感知机"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception.",
+          "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates.",
+          "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "The perceptron shaped neural-network history, including later debates about linear separability and multilayer learning.",
+          "zh": "感知机塑造了神经网络史，包括后来关于线性可分性和多层学习的争论。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Linear threshold learning machine",
+        "zh": "线性阈值学习机"
+      },
+      "artifact": {
+        "en": "Mark I Perceptron lineage",
+        "zh": "Mark I 感知机谱系"
+      },
+      "material": {
+        "en": "Cornell historical record and original paper",
+        "zh": "Cornell 史料与原始论文"
+      },
+      "demo": {
+        "en": "Adjust weights until a threshold separates classes",
+        "zh": "调整权重直到阈值分开类别"
+      },
+      "visual": "perceptron",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Threshold Unit",
+            "zh": "阈值单元"
+          },
+          "text": {
+            "en": "A neuron-like unit outputs one class when a weighted sum crosses a boundary.",
+            "zh": "类似神经元的单元在加权和越过边界时输出一个类别。"
+          }
+        },
+        {
+          "label": {
+            "en": "Weight Update",
+            "zh": "权重更新"
+          },
+          "text": {
+            "en": "Errors change the weights so future predictions improve.",
+            "zh": "错误会改变权重，使未来预测更好。"
+          }
+        },
+        {
+          "label": {
+            "en": "Linear Separability",
+            "zh": "线性可分"
+          },
+          "text": {
+            "en": "A single perceptron succeeds only when a straight boundary can separate classes.",
+            "zh": "单个感知机只有在直线边界可分时才成功。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "McCulloch-Pitts neuron",
+          "zh": "McCulloch-Pitts 神经元"
+        },
+        {
+          "en": "Back-propagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "Neural networks",
+          "zh": "神经网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New York, United States",
+          "zh": "美国纽约州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Read sensors",
+          "zh": "读取传感器"
+        },
+        {
+          "en": "Sum weights",
+          "zh": "求加权和"
+        },
+        {
+          "en": "Move boundary",
+          "zh": "移动边界"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Psychological Review",
+          "title": {
+            "en": "The perceptron paper record",
+            "zh": "感知机论文记录"
+          },
+          "description": {
+            "en": "Canonical paper record for Rosenblatt's probabilistic model.",
+            "zh": "Rosenblatt 概率模型经典论文记录。"
+          },
+          "url": "https://doi.org/10.1037/h0042519",
+          "source": "https://doi.org/10.1037/h0042519",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+            "zh": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          },
+          "url": "https://doi.org/10.1037/h0042519"
+        },
+        {
+          "type": {
+            "en": "History",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "Cornell Chronicle perceptron retrospective",
+            "zh": "Cornell Chronicle perceptron retrospective"
+          },
+          "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
+        },
+        {
+          "type": {
+            "en": "Museum",
+            "zh": "博物馆"
+          },
+          "label": {
+            "en": "Smithsonian Mark I Perceptron object record",
+            "zh": "Smithsonian Mark I Perceptron object record"
+          },
+          "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg": {
+        "caption": {
+          "en": "Frank Rosenblatt with perceptron hardware",
+          "zh": "Frank Rosenblatt 与感知机硬件"
+        },
+        "subcaption": {
+          "en": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
+          "zh": "Cornell 关于 Rosenblatt 与感知机谱系的历史图片。"
+        },
+        "sourceName": "Cornell Chronicle",
+        "source": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+        "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+        "originalImageUrl": "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2019-09/0925_rosenblatt_main.jpg",
+        "license": "Cornell historical image; reuse rights not stated on extracted image URL.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg": {
+        "caption": {
+          "en": "Threshold learning line",
+          "zh": "阈值学习边界"
+        },
+        "subcaption": {
+          "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+          "zh": "Rosenblatt 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Psychological Review",
+        "source": "https://doi.org/10.1037/h0042519",
+        "sourceUrl": "https://doi.org/10.1037/h0042519",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg": {
+        "caption": {
+          "en": "Sensor grid to neuron",
+          "zh": "传感器网格到神经元"
+        },
+        "subcaption": {
+          "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+          "zh": "Rosenblatt 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Psychological Review",
+        "source": "https://doi.org/10.1037/h0042519",
+        "sourceUrl": "https://doi.org/10.1037/h0042519",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "2006-dbn": {
+    "year": "2006",
+    "title": {
+      "en": "Deep Belief Network",
+      "zh": "深度置信网络"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Ontario, Canada",
+        "zh": "加拿大安大略省"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>",
+      "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。Hinton 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "Geoffrey Hinton"
+        },
+        "role": {
+          "en": "Co-author of deep belief net learning",
+          "zh": "深度置信网络学习共同作者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Layer-wise unsupervised pretraining",
+      "zh": "逐层无监督预训练"
+    },
+    "quoteMeta": {
+      "workTitle": "Fast learning algorithm for deep belief nets",
+      "workAuthors": "Geoffrey Hinton",
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Deep learning / Deep Belief Network",
+      "zh": "BenchCouncil AI100：深度学习 / 深度置信网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Deep neural networks were hard to optimize with ordinary supervised training. Layer-wise pretraining offered a practical route.",
+          "zh": "深层神经网络用普通监督训练很难优化。逐层预训练提供了一条实用路线。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network.",
+          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "DBNs helped reopen deep learning research and influenced later representation-learning work.",
+          "zh": "DBN 帮助重新打开深度学习研究，并影响了后来的表示学习工作。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      },
+      "method": {
+        "en": "Layer-wise unsupervised pretraining",
+        "zh": "逐层无监督预训练"
+      },
+      "artifact": {
+        "en": "Deep belief net training recipe",
+        "zh": "深度置信网络训练方案"
+      },
+      "material": {
+        "en": "Neural Computation paper and University of Toronto materials",
+        "zh": "Neural Computation 论文与多伦多大学资料"
+      },
+      "demo": {
+        "en": "Pretrain stacked RBMs before supervised fine-tuning",
+        "zh": "先预训练堆叠 RBM，再监督微调"
+      },
+      "visual": "dbn",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Restricted Boltzmann Machine",
+            "zh": "受限玻尔兹曼机"
+          },
+          "text": {
+            "en": "A two-layer generative model used for pretraining.",
+            "zh": "用于预训练的双层生成模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Greedy Layer Training",
+            "zh": "贪心逐层训练"
+          },
+          "text": {
+            "en": "Train one layer at a time before tuning the whole model.",
+            "zh": "先一次训练一层，再微调整体模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Fine-Tuning",
+            "zh": "微调"
+          },
+          "text": {
+            "en": "Supervised training adjusts the pretrained stack for a target task.",
+            "zh": "监督训练把预训练堆栈调整到目标任务。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Back-propagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "Dropout",
+          "zh": "Dropout"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Ontario, Canada",
+          "zh": "加拿大安大略省"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Train RBM 1",
+          "zh": "训练 RBM 1"
+        },
+        {
+          "en": "Stack features",
+          "zh": "堆叠特征"
+        },
+        {
+          "en": "Fine-tune labels",
+          "zh": "标签微调"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Neural Computation",
+          "title": {
+            "en": "Fast learning algorithm for deep belief nets",
+            "zh": "深度置信网络快速学习算法"
+          },
+          "description": {
+            "en": "Neural Computation paper record for deep belief nets.",
+            "zh": "深度置信网络 Neural Computation 论文记录。"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Fast Learning Algorithm for Deep Belief Nets",
+            "zh": "A Fast Learning Algorithm for Deep Belief Nets"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527"
+        },
+        {
+          "type": {
+            "en": "Science article",
+            "zh": "Science 文章"
+          },
+          "label": {
+            "en": "Reducing the Dimensionality of Data with Neural Networks",
+            "zh": "Reducing the Dimensionality of Data with Neural Networks"
+          },
+          "url": "https://doi.org/10.1126/science.1127647"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Geoffrey Hinton photo page",
+            "zh": "Geoffrey Hinton photo page"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+      "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+      "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg": {
+        "caption": {
+          "en": "Geoffrey Hinton portrait",
+          "zh": "Geoffrey Hinton 肖像"
+        },
+        "subcaption": {
+          "en": "Photo from Hinton's University of Toronto page.",
+          "zh": "来自 Hinton 多伦多大学页面的人物图。"
+        },
+        "sourceName": "University of Toronto",
+        "source": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+        "sourceUrl": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+        "originalImageUrl": "https://www.cs.toronto.edu/~hinton/geoff1.jpg",
+        "license": "University personal photo page; reuse rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg": {
+        "caption": {
+          "en": "Stacked RBM pretraining",
+          "zh": "堆叠 RBM 预训练"
+        },
+        "subcaption": {
+          "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+          "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Neural Computation",
+        "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg": {
+        "caption": {
+          "en": "Pretrain then fine-tune",
+          "zh": "预训练后微调"
+        },
+        "subcaption": {
+          "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+          "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Neural Computation",
+        "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1988-td-update": {
+    "year": "1988",
+    "title": {
+      "en": "Temporal-Difference Update",
+      "zh": "时序差分更新"
+    },
+    "location": {
+      "name": {
+        "en": "GTE Laboratories / University of Massachusetts lineage",
+        "zh": "GTE 实验室 / 麻省大学学术谱系"
+      },
+      "country": {
+        "en": "United States and Canada",
+        "zh": "美国与加拿大"
+      },
+      "coordinates": [
+        42.3732,
+        -72.5199
+      ]
+    },
+    "description": {
+      "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>",
+      "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Richard Sutton",
+          "zh": "Richard Sutton"
+        },
+        "role": {
+          "en": "Author of temporal-difference learning",
+          "zh": "时序差分学习提出者"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Bootstrapped value prediction",
+      "zh": "自举式价值预测"
+    },
+    "quoteMeta": {
+      "workTitle": "Learning to predict by temporal differences",
+      "workAuthors": "Richard Sutton",
+      "sourceUrl": "https://doi.org/10.1007/BF00115009"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
+      "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "TD learning is a cornerstone of modern reinforcement learning and value-based control.",
+          "zh": "TD 学习是现代强化学习和值函数控制的基石。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Bootstrapped value prediction",
+        "zh": "自举式价值预测"
+      },
+      "artifact": {
+        "en": "TD learning update rule",
+        "zh": "TD 学习更新规则"
+      },
+      "material": {
+        "en": "Machine Learning paper and RL histories",
+        "zh": "Machine Learning 论文与强化学习史料"
+      },
+      "demo": {
+        "en": "Update a value estimate from the next prediction and reward",
+        "zh": "用下一步预测和奖励更新价值估计"
+      },
+      "visual": "td",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "TD Error",
+            "zh": "TD 误差"
+          },
+          "text": {
+            "en": "The gap between current prediction and one-step bootstrapped target.",
+            "zh": "当前预测与一步自举目标之间的差距。"
+          }
+        },
+        {
+          "label": {
+            "en": "Bootstrapping",
+            "zh": "自举"
+          },
+          "text": {
+            "en": "A prediction is updated using another prediction.",
+            "zh": "用另一个预测来更新一个预测。"
+          }
+        },
+        {
+          "label": {
+            "en": "Value Function",
+            "zh": "价值函数"
+          },
+          "text": {
+            "en": "A function estimates expected future reward from a state.",
+            "zh": "估计从某状态出发的预期未来奖励。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Q Learning",
+          "zh": "Q Learning"
+        },
+        {
+          "en": "Actor-Critic",
+          "zh": "Actor-Critic"
+        },
+        {
+          "en": "Deep Q Network",
+          "zh": "深度 Q 网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States and Canada",
+          "zh": "美国与加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Observe reward",
+          "zh": "观察奖励"
+        },
+        {
+          "en": "Compare next value",
+          "zh": "比较下一价值"
+        },
+        {
+          "en": "Nudge estimate",
+          "zh": "推进估计"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Machine Learning",
+          "title": {
+            "en": "Learning to predict by temporal differences",
+            "zh": "用时序差分学习预测"
+          },
+          "description": {
+            "en": "Canonical Machine Learning paper record for TD learning.",
+            "zh": "TD 学习经典 Machine Learning 论文记录。"
+          },
+          "url": "https://doi.org/10.1007/BF00115009",
+          "source": "https://doi.org/10.1007/BF00115009",
+          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Learning to Predict by the Methods of Temporal Differences",
+            "zh": "Learning to Predict by the Methods of Temporal Differences"
+          },
+          "url": "https://doi.org/10.1007/BF00115009"
+        },
+        {
+          "type": {
+            "en": "Homepage",
+            "zh": "个人主页"
+          },
+          "label": {
+            "en": "Richard Sutton homepage",
+            "zh": "Richard Sutton homepage"
+          },
+          "url": "http://incompleteideas.net/"
+        },
+        {
+          "type": {
+            "en": "Award",
+            "zh": "奖项资料"
+          },
+          "label": {
+            "en": "ACM 2024 Turing Award announcement",
+            "zh": "ACM 2024 Turing Award announcement"
+          },
+          "url": "https://awards.acm.org/about/2024-turing"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+      "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+      "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
+        "caption": {
+          "en": "Richard Sutton portrait",
+          "zh": "Richard Sutton 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Sutton's personal homepage.",
+          "zh": "来自 Sutton 个人主页的人物图。"
+        },
+        "sourceName": "Richard Sutton homepage",
+        "source": "http://incompleteideas.net/",
+        "sourceUrl": "http://incompleteideas.net/",
+        "originalImageUrl": "http://incompleteideas.net/sutton-head12.jpg",
+        "license": "Personal website image; reuse rights not stated.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
+        "caption": {
+          "en": "Value timeline update",
+          "zh": "价值时间线更新"
+        },
+        "subcaption": {
+          "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+          "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Machine Learning",
+        "source": "https://doi.org/10.1007/BF00115009",
+        "sourceUrl": "https://doi.org/10.1007/BF00115009",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg": {
+        "caption": {
+          "en": "TD error meter",
+          "zh": "TD 误差仪表"
+        },
+        "subcaption": {
+          "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+          "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "Machine Learning",
+        "source": "https://doi.org/10.1007/BF00115009",
+        "sourceUrl": "https://doi.org/10.1007/BF00115009",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
+  },
+  "1985-bayesian-network": {
+    "year": "1985",
+    "title": {
+      "en": "Bayesian Network",
+      "zh": "贝叶斯网络"
+    },
+    "location": {
+      "name": {
+        "en": "University of California, Los Angeles",
+        "zh": "加州大学洛杉矶分校"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        34.0689,
+        -118.4452
+      ]
+    },
+    "description": {
+      "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>",
+      "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Judea Pearl",
+          "zh": "Judea Pearl"
+        },
+        "role": {
+          "en": "Pioneer of Bayesian networks and causal AI",
+          "zh": "贝叶斯网络与因果 AI 先驱"
+        }
+      }
+    ],
+    "quoteText": {
+      "en": "Directed acyclic graph plus conditional probabilities",
+      "zh": "有向无环图加条件概率"
+    },
+    "quoteMeta": {
+      "workTitle": "Bayesian Networks technical paper",
+      "workAuthors": "Judea Pearl",
+      "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Probabilistic graphical models / Bayesian Network",
+      "zh": "BenchCouncil AI100：概率图模型 / 贝叶斯网络"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Symbolic AI struggled with uncertainty. Probabilistic graphical models connected knowledge representation with statistical inference.",
+          "zh": "符号 AI 难以处理不确定性。概率图模型把知识表示与统计推断连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular.",
+          "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Bayesian networks shaped probabilistic AI and later causal reasoning frameworks.",
+          "zh": "贝叶斯网络塑造了概率 AI，并影响了后来的因果推理框架。"
+        }
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Probabilistic graphical models",
+        "zh": "概率图模型"
+      },
+      "method": {
+        "en": "Directed acyclic graph plus conditional probabilities",
+        "zh": "有向无环图加条件概率"
+      },
+      "artifact": {
+        "en": "Bayesian network representation",
+        "zh": "贝叶斯网络表示"
+      },
+      "material": {
+        "en": "UCLA technical reports and Pearl references",
+        "zh": "UCLA 技术报告与 Pearl 资料"
+      },
+      "demo": {
+        "en": "Pass probabilistic messages through a causal graph",
+        "zh": "在因果图中传递概率消息"
+      },
+      "visual": "bayesnet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Directed Acyclic Graph",
+            "zh": "有向无环图"
+          },
+          "text": {
+            "en": "Nodes are variables and arrows express dependency structure.",
+            "zh": "节点是变量，箭头表达依赖结构。"
+          }
+        },
+        {
+          "label": {
+            "en": "Conditional Probability Table",
+            "zh": "条件概率表"
+          },
+          "text": {
+            "en": "Each node stores probabilities given its parents.",
+            "zh": "每个节点存储在父节点条件下的概率。"
+          }
+        },
+        {
+          "label": {
+            "en": "Belief Updating",
+            "zh": "信念更新"
+          },
+          "text": {
+            "en": "Evidence changes probabilities throughout the graph.",
+            "zh": "证据会改变图中各处概率。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "LDA",
+          "zh": "LDA"
+        },
+        {
+          "en": "CRF",
+          "zh": "CRF"
+        },
+        {
+          "en": "Causal reasoning",
+          "zh": "因果推理"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "California, United States",
+          "zh": "美国加利福尼亚州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Observe evidence",
+          "zh": "观察证据"
+        },
+        {
+          "en": "Pass messages",
+          "zh": "传递消息"
+        },
+        {
+          "en": "Update beliefs",
+          "zh": "更新信念"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "UCLA Computer Science",
+          "title": {
+            "en": "Bayesian Networks technical paper",
+            "zh": "贝叶斯网络技术论文"
+          },
+          "description": {
+            "en": "UCLA-hosted PDF on Bayesian networks by Judea Pearl.",
+            "zh": "UCLA 托管的 Judea Pearl 贝叶斯网络 PDF。"
+          },
+          "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open UCLA PDF",
+            "zh": "打开 UCLA PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Bayesian Networks",
+            "zh": "Bayesian Networks"
+          },
+          "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+        },
+        {
+          "type": {
+            "en": "Homepage",
+            "zh": "个人主页"
+          },
+          "label": {
+            "en": "Judea Pearl homepage",
+            "zh": "Judea Pearl homepage"
+          },
+          "url": "https://bayes.cs.ucla.edu/home.htm"
+        },
+        {
+          "type": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Judea Pearl, UCLA Samueli",
+            "zh": "Judea Pearl, UCLA Samueli"
+          },
+          "url": "https://samueli.ucla.edu/judea-pearl/"
+        }
+      ]
+    },
+    "images": [
+      "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+      "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+      "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg"
+    ],
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg": {
+        "caption": {
+          "en": "Judea Pearl portrait",
+          "zh": "Judea Pearl 肖像"
+        },
+        "subcaption": {
+          "en": "Portrait from Wikimedia Commons NIPS 2013 image.",
+          "zh": "来自 Wikimedia Commons NIPS 2013 图片的人物图。"
+        },
+        "sourceName": "Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+        "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Judea%20Pearl%20at%20NIPS%202013%20%28117881981594%29%20%28cropped%29.jpg",
+        "license": "Creative Commons license stated on Commons file page.",
+        "usage": {
+          "en": "Historical figure / Key contributor portrait",
+          "zh": "历史人物 / 关键贡献者肖像"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg": {
+        "caption": {
+          "en": "Bayesian network DAG",
+          "zh": "贝叶斯网络 DAG"
+        },
+        "subcaption": {
+          "en": "Local redraw for Bayesian Network, based on the listed source material.",
+          "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "UCLA Computer Science",
+        "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+        "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      },
+      "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg": {
+        "caption": {
+          "en": "Evidence message passing",
+          "zh": "证据消息传递"
+        },
+        "subcaption": {
+          "en": "Local redraw for Bayesian Network, based on the listed source material.",
+          "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+        },
+        "sourceName": "UCLA Computer Science",
+        "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+        "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+        "originalImageUrl": "Local original redraw",
+        "license": "Original local SVG redraw; source figures are not copied.",
+        "usage": {
+          "en": "Supporting image / Distinct explainer graphic",
+          "zh": "辅助图片 / 独立解释图"
+        }
+      }
+    },
+    "videos": []
   }
 };
