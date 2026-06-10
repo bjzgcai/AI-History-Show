@@ -1163,6 +1163,336 @@ module.exports = {
           "probabilistic-ai",
           "knowledge-representation"
 ]
+        ),
+        '1990-otter': quiz(
+            {
+          "en": "What was central to Otter's practical theorem-proving style?",
+          "zh": "Otter 实用定理证明风格的核心是什么？"
+},
+            [
+          {
+                    "en": "A controlled given-clause search with resolution and paramodulation",
+                    "zh": "结合归结与参数调解的受控 given-clause 搜索"
+          },
+          {
+                    "en": "Only a fixed chess opening book",
+                    "zh": "只有固定的棋类开局库"
+          },
+          {
+                    "en": "A neural image classifier",
+                    "zh": "神经图像分类器"
+          },
+          {
+                    "en": "A random text generator",
+                    "zh": "随机文本生成器"
+          }
+],
+            0,
+            {
+          "en": "Otter searched first-order clause spaces using resolution-style inference, equality reasoning, indexing, and search-control heuristics.",
+          "zh": "Otter 用归结式推理、等式推理、索引和搜索控制启发式来搜索一阶子句空间。"
+},
+            [
+          "theorem-proving",
+          "symbolic-ai"
+]
+        ),
+        '2011-ibm-watson': quiz(
+            {
+          "en": "How did Watson choose a Jeopardy! answer?",
+          "zh": "Watson 如何选择 Jeopardy! 答案？"
+},
+            [
+          {
+                    "en": "It generated candidate answers and ranked them by evidence and confidence",
+                    "zh": "它生成候选答案，并按证据与置信度排序"
+          },
+          {
+                    "en": "It opened the internet during the show",
+                    "zh": "它在节目中实时打开互联网"
+          },
+          {
+                    "en": "It followed a fixed first answer every time",
+                    "zh": "它每次都采用固定第一个答案"
+          },
+          {
+                    "en": "It only counted image pixels",
+                    "zh": "它只统计图像像素"
+          }
+],
+            0,
+            {
+          "en": "DeepQA combined many analysis and scoring components, then merged their evidence into answer confidence.",
+          "zh": "DeepQA 组合大量分析与评分组件，再把它们的证据合并为答案置信度。"
+},
+            [
+          "question-answering",
+          "nlp"
+]
+        ),
+        '1951-strachey-draughts': quiz(
+            {
+          "en": "Why is Strachey's draughts program important to AI history?",
+          "zh": "Strachey 的跳棋程序为什么对 AI 历史重要？"
+},
+            [
+          {
+                    "en": "It showed an early computer choosing moves in a non-numerical game",
+                    "zh": "它展示了早期计算机在非数值游戏中选择走法"
+          },
+          {
+                    "en": "It trained a modern transformer",
+                    "zh": "它训练了现代 Transformer"
+          },
+          {
+                    "en": "It solved protein folding",
+                    "zh": "它解决了蛋白质折叠"
+          },
+          {
+                    "en": "It clustered images with DBSCAN",
+                    "zh": "它用 DBSCAN 聚类图像"
+          }
+],
+            0,
+            {
+          "en": "The program used board representation, legal move generation, and evaluation on early stored-program computers.",
+          "zh": "该程序在早期存储程序计算机上使用棋盘表示、合法走法生成和局面评估。"
+},
+            [
+          "game-ai",
+          "early-computing"
+]
+        ),
+        '1994-chinook': quiz(
+            {
+          "en": "What did Chinook eventually prove about checkers?",
+          "zh": "Chinook 最终证明了跳棋的什么性质？"
+},
+            [
+          {
+                    "en": "Perfect play from both sides leads to a draw",
+                    "zh": "双方完美对弈会导致和棋"
+          },
+          {
+                    "en": "Every game is won by the first move",
+                    "zh": "每局都由第一步直接获胜"
+          },
+          {
+                    "en": "Search is unnecessary in games",
+                    "zh": "游戏中不需要搜索"
+          },
+          {
+                    "en": "Only language models can play checkers",
+                    "zh": "只有语言模型能下跳棋"
+          }
+],
+            0,
+            {
+          "en": "The Chinook team used search and endgame databases to weakly solve checkers as a draw under perfect play.",
+          "zh": "Chinook 团队用搜索和残局数据库弱求解跳棋，证明完美对弈下为和棋。"
+},
+            [
+          "game-ai",
+          "search"
+]
+        ),
+        '1959-pandemonium': quiz(
+            {
+          "en": "What is the core idea of Pandemonium-style perception?",
+          "zh": "Pandemonium 式感知的核心思想是什么？"
+},
+            [
+          {
+                    "en": "Many simple feature recognizers vote toward higher-level patterns",
+                    "zh": "许多简单特征识别器向高层模式投票"
+          },
+          {
+                    "en": "One fixed rule answers every image",
+                    "zh": "一个固定规则回答所有图像"
+          },
+          {
+                    "en": "A database deletes all uncertain evidence",
+                    "zh": "数据库删除所有不确定证据"
+          },
+          {
+                    "en": "A chess engine searches only openings",
+                    "zh": "棋类引擎只搜索开局"
+          }
+],
+            0,
+            {
+          "en": "Selfridge's architecture treated recognition as layered, distributed evidence accumulation.",
+          "zh": "Selfridge 的架构把识别看作分层、分布式的证据累积。"
+},
+            [
+          "perception",
+          "pattern-recognition"
+]
+        ),
+        '1984-cyc': quiz(
+            {
+          "en": "What did Cyc try to make explicit for AI systems?",
+          "zh": "Cyc 试图为 AI 系统显式表示什么？"
+},
+            [
+          {
+                    "en": "Common-sense knowledge as an ontology and rule base",
+                    "zh": "作为本体与规则库的常识知识"
+          },
+          {
+                    "en": "Only raw image pixels",
+                    "zh": "只有原始图像像素"
+          },
+          {
+                    "en": "Only endgame checkers tables",
+                    "zh": "只有跳棋残局表"
+          },
+          {
+                    "en": "A single gradient update",
+                    "zh": "单个梯度更新"
+          }
+],
+            0,
+            {
+          "en": "Cyc is a long-running symbolic AI project centered on explicit common-sense knowledge and inference.",
+          "zh": "Cyc 是长期运行的符号 AI 项目，核心是显式常识知识与推理。"
+},
+            [
+          "knowledge-representation",
+          "common-sense"
+]
+        ),
+        '1980-xcon-r1': quiz(
+            {
+          "en": "What did XCON/R1 configure?",
+          "zh": "XCON/R1 主要配置什么？"
+},
+            [
+          {
+                    "en": "DEC VAX computer orders using production rules",
+                    "zh": "用产生式规则配置 DEC VAX 计算机订单"
+          },
+          {
+                    "en": "Protein folds using diffusion",
+                    "zh": "用扩散模型预测蛋白质折叠"
+          },
+          {
+                    "en": "Image clusters with eigenvectors",
+                    "zh": "用特征向量聚类图像"
+          },
+          {
+                    "en": "Jeopardy! clues with endgame tables",
+                    "zh": "用残局表回答 Jeopardy! 线索"
+          }
+],
+            0,
+            {
+          "en": "R1/XCON encoded configuration expertise as rules that assembled valid VAX component orders.",
+          "zh": "R1/XCON 把配置专长编码为规则，用来装配有效的 VAX 组件订单。"
+},
+            [
+          "expert-system",
+          "production-rules"
+]
+        ),
+        '1957-kmeans': quiz(
+            {
+          "en": "What does Lloyd's k-means loop alternate between?",
+          "zh": "Lloyd 的 k-means 循环在什么之间交替？"
+},
+            [
+          {
+                    "en": "Assigning points to nearest centers and updating centers to means",
+                    "zh": "把样本分配给最近中心，并把中心更新为均值"
+          },
+          {
+                    "en": "Writing theorem clauses and proving equality",
+                    "zh": "书写定理子句并证明等式"
+          },
+          {
+                    "en": "Playing endgames and parsing Jeopardy! clues",
+                    "zh": "下残局并解析 Jeopardy! 线索"
+          },
+          {
+                    "en": "Deleting all clusters as noise",
+                    "zh": "把所有簇都删除为噪声"
+          }
+],
+            0,
+            {
+          "en": "K-means minimizes within-cluster squared distances through repeated assignment and centroid update steps.",
+          "zh": "K-means 通过反复分配样本和更新质心来最小化簇内平方距离。"
+},
+            [
+          "clustering",
+          "unsupervised-learning"
+]
+        ),
+        '1996-dbscan': quiz(
+            {
+          "en": "What does DBSCAN do with low-density points?",
+          "zh": "DBSCAN 如何处理低密度点？"
+},
+            [
+          {
+                    "en": "It can label them as noise instead of forcing them into a cluster",
+                    "zh": "它可以把它们标为噪声，而不是强行归入簇"
+          },
+          {
+                    "en": "It always creates one cluster per point",
+                    "zh": "它总是为每个点创建一个簇"
+          },
+          {
+                    "en": "It turns them into theorem clauses",
+                    "zh": "它把它们变成定理子句"
+          },
+          {
+                    "en": "It uses a chess opening book",
+                    "zh": "它使用棋类开局库"
+          }
+],
+            0,
+            {
+          "en": "DBSCAN forms clusters from dense neighborhoods and can leave sparse outliers outside the clusters.",
+          "zh": "DBSCAN 从密集邻域形成簇，并可把稀疏离群点留在簇外。"
+},
+            [
+          "clustering",
+          "density"
+]
+        ),
+        '2000-spectral-clustering': quiz(
+            {
+          "en": "What does spectral clustering build before using eigenvectors?",
+          "zh": "谱聚类在使用特征向量前先构建什么？"
+},
+            [
+          {
+                    "en": "A graph whose edges encode similarities between points",
+                    "zh": "一个用边编码样本相似度的图"
+          },
+          {
+                    "en": "A Jeopardy! answer database only",
+                    "zh": "只有 Jeopardy! 答案数据库"
+          },
+          {
+                    "en": "A VAX parts order form only",
+                    "zh": "只有 VAX 零件订单表"
+          },
+          {
+                    "en": "A theorem prover's proof certificate only",
+                    "zh": "只有定理证明器的证明证书"
+          }
+],
+            0,
+            {
+          "en": "Spectral clustering represents data as an affinity graph, then uses graph-matrix eigenvectors to expose separable structure.",
+          "zh": "谱聚类把数据表示为亲和图，再用图矩阵特征向量显露可分结构。"
+},
+            [
+          "clustering",
+          "graphs"
+]
         )
     }
 };

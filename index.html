@@ -2694,6 +2694,31 @@
             font-size: 11px;
         }
 
+        .bench-demo-source-link {
+            align-items: start;
+            text-decoration: none;
+        }
+
+        .bench-demo-source-link:hover,
+        .bench-demo-source-link:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            outline: none;
+        }
+
+        .bench-demo-source-body {
+            min-width: 0;
+            display: grid;
+            gap: 5px;
+        }
+
+        .bench-demo-source-type {
+            color: var(--accent);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
         .bench-transcript-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2771,6 +2796,39 @@
             display: grid;
             align-content: center;
             gap: 14px;
+        }
+
+        .bench-code-flow.has-media {
+            align-content: stretch;
+            grid-template-rows: minmax(0, 1fr) auto auto;
+        }
+
+        .bench-code-media {
+            min-height: 170px;
+            overflow: hidden;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.92);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bench-code-media img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            max-height: 260px;
+            object-fit: contain;
+        }
+
+        .bench-code-media-caption {
+            margin-top: -2px;
+            color: rgba(244, 239, 229, 0.62);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
 
         .bench-code-line {
@@ -4017,11 +4075,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260604-ai100-three-images"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260610-ai100-source-refresh"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260604-ai100-three-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260610-ai100-source-refresh" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -6740,6 +6798,27 @@
             return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.visual || '').trim();
         }
 
+        function getAchievementDemoPanel(rawMilestone) {
+            return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.demoPanel || '').trim();
+        }
+
+        function buildBenchDemoSourceLinks(rawMilestone) {
+            const sources = getAchievementSources(rawMilestone).slice(0, 3);
+            if (!sources.length) {
+                return `<div class="bench-demo-step"><span>1</span><strong>${escapeHtml(tx('noAdditionalInfo'))}</strong></div>`;
+            }
+
+            return sources.map((source, index) => `
+                <a class="bench-demo-step bench-demo-source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
+                    <span>${index + 1}</span>
+                    <span class="bench-demo-source-body">
+                        <small class="bench-demo-source-type">${escapeHtml(lx(source.type) || tx('source'))}</small>
+                        <strong>${escapeHtml(lx(source.label) || source.url)}</strong>
+                    </span>
+                </a>
+            `).join('');
+        }
+
         function renderBenchMapList() {
             const regionLabel = activeRegionFilter ? getRegionLabel(activeRegionFilter) : uiText('All regions', '全部地区');
             const regionNode = `
@@ -7480,12 +7559,51 @@
         function buildGenericDemo(rawMilestone) {
             const artifact = getAchievementField(rawMilestone, 'artifact', '');
             const demo = getAchievementField(rawMilestone, 'demo', '');
+            const mediaUrl = getGenericDemoImage(rawMilestone);
+            const mediaMeta = mediaUrl ? getConfiguredImageMeta({ raw: rawMilestone }, mediaUrl) : null;
+            const mediaTitle = mediaMeta && mediaMeta.caption ? mediaMeta.caption : artifact;
+            const mediaHtml = mediaUrl ? `
+                <div class="bench-code-media">
+                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}">
+                </div>
+                ${mediaTitle ? `<div class="bench-code-media-caption">${escapeHtml(mediaTitle)}</div>` : ''}
+            ` : '';
             return `
-                <div class="bench-code-flow">
+                <div class="bench-code-flow${mediaUrl ? ' has-media' : ''}">
+                    ${mediaHtml}
                     <div class="bench-code-label">${escapeHtml(artifact || tx('historicalEvent'))}</div>
                     <div class="bench-code-line">${escapeHtml(demo || stripHtml(lx(rawMilestone.description) || ''))}</div>
                 </div>
             `;
+        }
+
+        function getGenericDemoImage(rawMilestone) {
+            const images = rawMilestone && rawMilestone.resources && Array.isArray(rawMilestone.resources.images)
+                ? rawMilestone.resources.images.filter(Boolean)
+                : [];
+            const heroImages = new Set(sortPhotosForDisplay(images).slice(0, 3));
+            const configuredDemoImage = rawMilestone && rawMilestone.achievement
+                ? String(rawMilestone.achievement.demoImage || '').trim()
+                : '';
+            if (configuredDemoImage && !heroImages.has(configuredDemoImage)) {
+                return configuredDemoImage;
+            }
+            const demoCandidates = images.filter((url) => !heroImages.has(url));
+            if (!demoCandidates.length) return '';
+
+            const scored = demoCandidates.map((url, index) => {
+                const meta = getConfiguredImageMeta({ raw: rawMilestone }, url) || {};
+                const haystack = `${url} ${meta.caption || ''} ${meta.subcaption || ''} ${meta.usage || ''}`.toLowerCase();
+                let score = 0;
+                if (/\/explainers\/|diagram|explainer|architecture|flow|graph|cluster|clause|rule|pipeline|ranking|search|density|eigen|centroid|board|database/.test(haystack)) score += 20;
+                if (/profile|portrait|photo|headshot|people/.test(haystack)) score -= 10;
+                if (/paper|source|archive|manual|reference/.test(haystack)) score -= 3;
+                return { url, index, score };
+            });
+
+            return scored
+                .sort((a, b) => b.score - a.score || a.index - b.index)
+                .map((entry) => entry.url)[0] || '';
         }
 
         function renderBenchHeroVisual(vm) {
@@ -7551,8 +7669,11 @@
                 bayesnet: buildBayesNetDemo
             };
             const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
+            const useSourcePanel = getAchievementDemoPanel(raw) === 'sources';
 
-            const stepHtml = steps.length > 0
+            const stepHtml = useSourcePanel
+                ? buildBenchDemoSourceLinks(raw)
+                : steps.length > 0
                 ? steps.map((step, index) => `
                     <div class="bench-demo-step">
                         <span>${index + 1}</span>
