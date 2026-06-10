@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-10 17:05
+// 生成时间: 2026-06-10 19:10
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -8,7 +8,7 @@ const milestones = [
     "year": 1956,
     "category": {
       "en": "Genesis of AI (1950s-1970s)",
-      "zh": "AI创世纪 (1950s-1970s)"
+      "zh": "AI创世纪（20世纪50年代至70年代）"
     },
     "title": {
       "en": "Dartmouth Workshop - AI Is Born!",
@@ -34,11 +34,14 @@ const milestones = [
     },
     "description": {
       "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field.",
-      "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（John McCarthy）、马文·明斯基（Marvin Minsky）、克劳德·香农（Claude Shannon）、纳撒尼尔·罗切斯特（Nathaniel Rochester） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"Artificial Intelligence\" 这个名称"
+      "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（约翰·麦卡锡）、马文·明斯基（马文·明斯基）、克劳德·香农（克劳德·香农）、纳撒尼尔·罗切斯特（纳撒尼尔·罗切斯特） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"人工智能\" 这个名称"
     },
     "figures": [
       {
-        "name": "John McCarthy",
+        "name": {
+          "en": "John McCarthy",
+          "zh": "约翰·麦卡锡"
+        },
         "role": {
           "en": "Coined the term \"AI\"",
           "zh": "提出\"AI\"术语"
@@ -48,7 +51,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Marvin Minsky",
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "马文·明斯基"
+        },
         "role": {
           "en": "Cognitive scientist",
           "zh": "认知科学家"
@@ -58,7 +64,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Claude Shannon",
+        "name": {
+          "en": "Claude Shannon",
+          "zh": "克劳德·香农"
+        },
         "role": {
           "en": "Founder of information theory",
           "zh": "信息论创始人"
@@ -68,10 +77,13 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Nathaniel Rochester",
+        "name": {
+          "en": "Nathaniel Rochester",
+          "zh": "纳撒尼尔·罗切斯特"
+        },
         "role": {
           "en": "IBM architect",
-          "zh": "IBM架构师"
+          "zh": "IBM 架构师"
         },
         "avatar": "resources/images/figures/nathaniel-rochester.jpg",
         "avatarStyle": "",
@@ -84,12 +96,27 @@ const milestones = [
       "en": "\"Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.\"",
       "zh": "\"学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。\""
     },
-    "quoteAttribution": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
+    "quoteAttribution": {
+      "en": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
+      "zh": "《达特茅斯人工智能夏季研究项目提案》, 约翰·麦卡锡、马文·L·明斯基、纳撒尼尔·罗切斯特、克劳德·E·香农"
+    },
     "quoteMeta": {
-      "speaker": "John McCarthy et al.",
-      "workTitle": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
-      "workAuthors": "John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
-      "sourceLabel": "Dartmouth official page quoting the 1955 proposal",
+      "speaker": {
+        "en": "John McCarthy et al.",
+        "zh": "约翰·麦卡锡等"
+      },
+      "workTitle": {
+        "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
+        "zh": "达特茅斯人工智能夏季研究项目提案"
+      },
+      "workAuthors": {
+        "en": "John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
+        "zh": "约翰·麦卡锡、马文·L·明斯基、纳撒尼尔·罗切斯特、克劳德·E·香农"
+      },
+      "sourceLabel": {
+        "en": "Dartmouth official page quoting the 1955 proposal",
+        "zh": "达特茅斯官方页面引用 1955 年提案"
+      },
       "sourceUrl": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth"
     },
     "quotePage": {
@@ -186,7 +213,7 @@ const milestones = [
     "year": 1957,
     "category": {
       "en": "Genesis of AI (1950s-1970s)",
-      "zh": "AI创世纪 (1950s-1970s)"
+      "zh": "AI创世纪（20世纪50年代至70年代）"
     },
     "title": {
       "en": "The Perceptron and Connectionism",
@@ -212,11 +239,14 @@ const milestones = [
     },
     "description": {
       "en": "In 1957, Frank Rosenblatt designed the perceptron, one of the first artificial neural networks, to model aspects of human cognition. It became the first physical implementation of an artificial neural network and an early landmark for connectionist AI.",
-      "zh": "1957年，Rosenblatt设计了第一个人工神经网络（感知机），可以模拟人类大脑的思考过程。这是人工神经网络的首个物理实现，也是连接主义的代表性工作。"
+      "zh": "1957年，罗森布拉特设计了第一个人工神经网络（感知机），可以模拟人类大脑的思考过程。这是人工神经网络的首个物理实现，也是连接主义的代表性工作。"
     },
     "figures": [
       {
-        "name": "Frank Rosenblatt",
+        "name": {
+          "en": "Frank Rosenblatt",
+          "zh": "弗兰克·罗森布拉特"
+        },
         "role": {
           "en": "Inventor of the perceptron",
           "zh": "感知机发明者"
@@ -232,12 +262,27 @@ const milestones = [
       "en": "\"The theory serves as a bridge between biophysics and psychology.\"",
       "zh": "\"这一理论在生物物理学和心理学之间架起了一座桥梁。\""
     },
-    "quoteAttribution": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
+    "quoteAttribution": {
+      "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
+      "zh": "《感知机：大脑中信息存储与组织的概率模型》, 弗兰克·罗森布拉特"
+    },
     "quoteMeta": {
-      "speaker": "Frank Rosenblatt",
-      "workTitle": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
-      "workAuthors": "Frank Rosenblatt",
-      "sourceLabel": "Psychological Review abstract preview",
+      "speaker": {
+        "en": "Frank Rosenblatt",
+        "zh": "弗兰克·罗森布拉特"
+      },
+      "workTitle": {
+        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "zh": "感知机：大脑中信息存储与组织的概率模型"
+      },
+      "workAuthors": {
+        "en": "Frank Rosenblatt",
+        "zh": "弗兰克·罗森布拉特"
+      },
+      "sourceLabel": {
+        "en": "Psychological Review abstract preview",
+        "zh": "《心理学评论》摘要预览"
+      },
       "sourceUrl": "https://www.researchgate.net/publication/221996769_The_perceptron_A_probabilistic_model_for_information_storage_and_organization_in_the_brain"
     },
     "quotePage": {
@@ -302,7 +347,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
-            "zh": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》"
+            "zh": "《感知机：大脑中信息存储与组织的概率模型》"
           }
         },
         "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
@@ -345,7 +390,7 @@ const milestones = [
     "year": 1969,
     "category": {
       "en": "Genesis of AI (1950s-1970s)",
-      "zh": "AI创世纪 (1950s-1970s)"
+      "zh": "AI创世纪（20世纪50年代至70年代）"
     },
     "title": {
       "en": "The First AI Winter Arrives",
@@ -371,11 +416,14 @@ const milestones = [
     },
     "description": {
       "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
-      "zh": "1969 年, Minsky 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
+      "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
     },
     "figures": [
       {
-        "name": "Marvin Minsky",
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "马文·明斯基"
+        },
         "role": {
           "en": "Author of Perceptrons",
           "zh": "《感知器》作者"
@@ -391,12 +439,27 @@ const milestones = [
       "en": "\"Their rigorous work and brilliant technique does not make the perceptron look very good.\"",
       "zh": "\"他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。\""
     },
-    "quoteAttribution": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
+    "quoteAttribution": {
+      "en": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
+      "zh": "《感知机：计算几何导论》, 马文·明斯基、西摩尔·帕普特"
+    },
     "quoteMeta": {
-      "speaker": "Léon Bottou",
-      "workTitle": "Perceptrons: An Introduction to Computational Geometry",
-      "workAuthors": "Marvin Minsky, Seymour Papert",
-      "sourceLabel": "MIT Press foreword excerpt on Perceptrons",
+      "speaker": {
+        "en": "Léon Bottou",
+        "zh": "莱昂·博图"
+      },
+      "workTitle": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "感知机：计算几何导论"
+      },
+      "workAuthors": {
+        "en": "Marvin Minsky, Seymour Papert",
+        "zh": "马文·明斯基、西摩尔·帕普特"
+      },
+      "sourceLabel": {
+        "en": "MIT Press foreword excerpt on Perceptrons",
+        "zh": "麻省理工学院出版社《感知机》前言摘录"
+      },
       "sourceUrl": "https://mitpress.mit.edu/9780262534772/perceptrons/"
     },
     "quotePage": {
@@ -482,7 +545,7 @@ const milestones = [
     "year": 1986,
     "category": {
       "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-      "zh": "神经网络与连接主义的复兴 (1980s-2000s)"
+      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
     },
     "title": {
       "en": "Backpropagation",
@@ -508,11 +571,14 @@ const milestones = [
     },
     "description": {
       "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks.",
-      "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， Rumelhart、Hinton和 Williams发表了著名的《Learning representations by back-propagating errors》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。"
+      "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。"
     },
     "figures": [
       {
-        "name": "David Rumelhart",
+        "name": {
+          "en": "David Rumelhart",
+          "zh": "戴维·鲁梅尔哈特"
+        },
         "role": {
           "en": "Backpropagation author",
           "zh": "BP算法作者"
@@ -522,7 +588,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Geoffrey Hinton",
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
+        },
         "role": {
           "en": "Pioneer of deep learning",
           "zh": "深度学习之父"
@@ -532,7 +601,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Ronald Williams",
+        "name": {
+          "en": "Ronald Williams",
+          "zh": "罗纳德·威廉姆斯"
+        },
         "role": {
           "en": "Backpropagation co-author",
           "zh": "BP算法共同作者"
@@ -548,12 +620,27 @@ const milestones = [
       "en": "\"The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.\"",
       "zh": "\"能够创造有用的新特征，使反向传播区别于更早、更简单的方法。\""
     },
-    "quoteAttribution": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+    "quoteAttribution": {
+      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+      "zh": "《通过误差反向传播学习表示》, 戴维·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯"
+    },
     "quoteMeta": {
-      "speaker": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
-      "workTitle": "Learning representations by back-propagating errors",
-      "workAuthors": "David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
-      "sourceLabel": "Nature abstract",
+      "speaker": {
+        "en": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
+        "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
+      },
+      "workTitle": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "通过误差反向传播学习表示"
+      },
+      "workAuthors": {
+        "en": "David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+        "zh": "戴维·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯"
+      },
+      "sourceLabel": {
+        "en": "Nature abstract",
+        "zh": "《自然》摘要"
+      },
       "sourceUrl": "https://www.nature.com/articles/323533a0"
     },
     "quotePage": {
@@ -661,7 +748,7 @@ const milestones = [
     "year": 1986,
     "category": {
       "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-      "zh": "神经网络与连接主义的复兴 (1980s-2000s)"
+      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
     },
     "title": {
       "en": "Recurrent Neural Networks",
@@ -687,24 +774,30 @@ const milestones = [
     },
     "description": {
       "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling.",
-      "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，Elman和Jordan分别提出了Simple RNN和Jordan Network，引入context units作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。"
+      "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。"
     },
     "figures": [
       {
-        "name": "Jeffrey Elman",
+        "name": {
+          "en": "Jeffrey Elman",
+          "zh": "杰弗里·埃尔曼"
+        },
         "role": {
           "en": "The creator of Simple RNN",
-          "zh": "Simple RNN提出者"
+          "zh": "简单循环神经网络提出者"
         },
         "avatar": "resources/images/figures/jeffrey-elman.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
-        "name": "Michael Jordan",
+        "name": {
+          "en": "Michael Jordan",
+          "zh": "迈克尔·乔丹"
+        },
         "role": {
           "en": "The creator of Jordan Network",
-          "zh": "Jordan Network提出者"
+          "zh": "乔丹网络提出者"
         },
         "avatar": "resources/images/figures/michael-i-jordan.jpg",
         "avatarStyle": "",
@@ -717,12 +810,27 @@ const milestones = [
       "en": "\"The current report develops a proposal ... to provide networks with a dynamic memory.\"",
       "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
     },
-    "quoteAttribution": "《Finding Structure in Time》, Jeffrey L. Elman",
+    "quoteAttribution": {
+      "en": "《Finding Structure in Time》, Jeffrey L. Elman",
+      "zh": "《在时间中发现结构》, 杰弗里·L·埃尔曼"
+    },
     "quoteMeta": {
-      "speaker": "Jeffrey Elman",
-      "workTitle": "Finding Structure in Time",
-      "workAuthors": "Jeffrey L. Elman",
-      "sourceLabel": "ScienceDirect abstract page",
+      "speaker": {
+        "en": "Jeffrey Elman",
+        "zh": "杰弗里·埃尔曼"
+      },
+      "workTitle": {
+        "en": "Finding Structure in Time",
+        "zh": "在时间中发现结构"
+      },
+      "workAuthors": {
+        "en": "Jeffrey L. Elman",
+        "zh": "杰弗里·L·埃尔曼"
+      },
+      "sourceLabel": {
+        "en": "ScienceDirect abstract page",
+        "zh": "ScienceDirect 摘要页面"
+      },
       "sourceUrl": "https://www.sciencedirect.com/science/article/abs/pii/036402139090002E"
     },
     "quotePage": {
@@ -797,7 +905,7 @@ const milestones = [
     "year": 1989,
     "category": {
       "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-      "zh": "神经网络与连接主义的复兴 (1980s-2000s)"
+      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
     },
     "title": {
       "en": "Convolutional Neural Networks",
@@ -823,11 +931,14 @@ const milestones = [
     },
     "description": {
       "en": "Convolutional neural networks draw inspiration from biological vision: local receptive fields and filters exploit the spatial structure of images. In 1989, Yann LeCun applied backpropagation to train CNNs for handwritten digit recognition, opening the path to modern computer vision.",
-      "zh": "卷积神经网络的结构设计受生物机理启发 视觉皮质只对局部区域敏感，通过堆叠覆盖整个 视野；皮质细胞起到滤波器作用，适合利用自然 图像的强局部相关性 1989年， LeCun将反向传播算法应用于训练卷积神经网络， 实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。"
+      "zh": "卷积神经网络的结构设计受生物机理启发 视觉皮质只对局部区域敏感，通过堆叠覆盖整个 视野；皮质细胞起到滤波器作用，适合利用自然 图像的强局部相关性 1989年， 勒昆将反向传播算法应用于训练卷积神经网络， 实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。"
     },
     "figures": [
       {
-        "name": "Yann LeCun",
+        "name": {
+          "en": "Yann LeCun",
+          "zh": "扬·勒昆"
+        },
         "role": {
           "en": "Pioneer of CNNs",
           "zh": "CNN之父"
@@ -843,12 +954,27 @@ const milestones = [
       "en": "\"Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.\"",
       "zh": "\"专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。\""
     },
-    "quoteAttribution": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
+    "quoteAttribution": {
+      "en": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
+      "zh": "《基于梯度的学习在文档识别中的应用》, 扬·勒昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
+    },
     "quoteMeta": {
-      "speaker": "Yann LeCun et al.",
-      "workTitle": "Gradient-Based Learning Applied to Document Recognition",
-      "workAuthors": "Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
-      "sourceLabel": "NYU Scholars abstract page",
+      "speaker": {
+        "en": "Yann LeCun et al.",
+        "zh": "扬·勒昆等"
+      },
+      "workTitle": {
+        "en": "Gradient-Based Learning Applied to Document Recognition",
+        "zh": "基于梯度的学习在文档识别中的应用"
+      },
+      "workAuthors": {
+        "en": "Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
+        "zh": "扬·勒昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
+      },
+      "sourceLabel": {
+        "en": "NYU Scholars abstract page",
+        "zh": "纽约大学学者库摘要页面"
+      },
       "sourceUrl": "https://nyuscholars.nyu.edu/en/publications/gradient-based-learning-applied-to-document-recognition"
     },
     "quotePage": {
@@ -934,7 +1060,7 @@ const milestones = [
     "year": 1997,
     "category": {
       "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-      "zh": "神经网络与连接主义的复兴 (1980s-2000s)"
+      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
     },
     "title": {
       "en": "LSTM and Gating Mechanisms",
@@ -960,11 +1086,14 @@ const milestones = [
     },
     "description": {
       "en": "In 1997, Sepp Hochreiter and Juergen Schmidhuber proposed Long Short-Term Memory networks. LSTM introduced gates that preserve long-range information flow, helping recurrent networks overcome vanishing gradients and enabling later breakthroughs in speech and language.",
-      "zh": "1997年，Hochreiter与Schmidhuber提出了长短期记忆网络（LSTM），通过引入门控机制 保持长距离信息流，用以解决RNN的梯度消失困境。 导数：与遗忘门Ft有关，接近于1"
+      "zh": "1997年，霍赫赖特与施密德胡伯提出了长短期记忆网络（LSTM），通过引入门控机制 保持长距离信息流，用以解决RNN的梯度消失困境。 导数：与遗忘门Ft有关，接近于1"
     },
     "figures": [
       {
-        "name": "Sepp Hochreiter",
+        "name": {
+          "en": "Sepp Hochreiter",
+          "zh": "塞普·霍赫赖特"
+        },
         "role": {
           "en": "LSTM inventor",
           "zh": "LSTM发明者"
@@ -974,7 +1103,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Jürgen Schmidhuber",
+        "name": {
+          "en": "Jürgen Schmidhuber",
+          "zh": "于尔根·施密德胡伯"
+        },
         "role": {
           "en": "LSTM co-inventor",
           "zh": "LSTM共同发明者"
@@ -990,12 +1122,27 @@ const milestones = [
       "en": "\"We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).\"",
       "zh": "\"长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。\""
     },
-    "quoteAttribution": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
+    "quoteAttribution": {
+      "en": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
+      "zh": "《长短期记忆》, 塞普·霍赫赖特、于尔根·施密德胡伯"
+    },
     "quoteMeta": {
-      "speaker": "Sepp Hochreiter, Jürgen Schmidhuber",
-      "workTitle": "Long Short-Term Memory",
-      "workAuthors": "Sepp Hochreiter, Jürgen Schmidhuber",
-      "sourceLabel": "CiNii abstract description",
+      "speaker": {
+        "en": "Sepp Hochreiter, Jürgen Schmidhuber",
+        "zh": "塞普·霍赫赖特、于尔根·施密德胡伯"
+      },
+      "workTitle": {
+        "en": "Long Short-Term Memory",
+        "zh": "长短期记忆"
+      },
+      "workAuthors": {
+        "en": "Sepp Hochreiter, Jürgen Schmidhuber",
+        "zh": "塞普·霍赫赖特、于尔根·施密德胡伯"
+      },
+      "sourceLabel": {
+        "en": "CiNii abstract description",
+        "zh": "CiNii 摘要说明"
+      },
       "sourceUrl": "https://cir.nii.ac.jp/crid/1363951795376009728"
     },
     "quotePage": {
@@ -1081,7 +1228,7 @@ const milestones = [
     "year": 2012,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
@@ -1107,11 +1254,14 @@ const milestones = [
     },
     "description": {
       "en": "From 2012 to 2014, AlexNet, VGG and GoogLeNet won ImageNet with deep neural networks. Their success came from the convergence of data, GPUs and engineering, proving that deep learning could dominate large-scale visual recognition.",
-      "zh": "2012-2014年，获得ImageNet冠军的AlexNet、VGG、GoogleNet，其成功并非源于全新的算法（核心算法与20年前的LeNet并无多大差别），而是大数据（ImageNet）、大算力（GPU）和算法优化（ReLU, Dropout）的结合。"
+      "zh": "2012-2014年，获得ImageNet冠军的AlexNet、VGG、GoogLeNet，其成功并非源于全新的算法（核心算法与20年前的LeNet并无多大差别），而是大数据（ImageNet）、大算力（GPU）和算法优化（ReLU, Dropout）的结合。"
     },
     "figures": [
       {
-        "name": "Alex Krizhevsky",
+        "name": {
+          "en": "Alex Krizhevsky",
+          "zh": "亚历克斯·克里热夫斯基"
+        },
         "role": {
           "en": "AlexNet author",
           "zh": "AlexNet作者"
@@ -1121,7 +1271,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Geoffrey Hinton",
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
+        },
         "role": {
           "en": "Advisor",
           "zh": "导师"
@@ -1137,12 +1290,27 @@ const milestones = [
       "en": "\"We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.\"",
       "zh": "\"我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。\""
     },
-    "quoteAttribution": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
+    "quoteAttribution": {
+      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·E·辛顿"
+    },
     "quoteMeta": {
-      "speaker": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
-      "workTitle": "ImageNet Classification with Deep Convolutional Neural Networks",
-      "workAuthors": "Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
-      "sourceLabel": "NIPS 2012 paper abstract",
+      "speaker": {
+        "en": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
+        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿"
+      },
+      "workTitle": {
+        "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+      },
+      "workAuthors": {
+        "en": "Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
+        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·E·辛顿"
+      },
+      "sourceLabel": {
+        "en": "NIPS 2012 paper abstract",
+        "zh": "NIPS 2012 论文摘要"
+      },
       "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
     },
     "quotePage": {
@@ -1228,11 +1396,11 @@ const milestones = [
     "year": 2014,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "Highway Networks",
-      "zh": "Highway Network"
+      "zh": "高速网络"
     },
     "subtitle": {
       "en": "Deep Learning and Unified Paradigms",
@@ -1254,11 +1422,14 @@ const milestones = [
     },
     "description": {
       "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures.",
-      "zh": "Highway Networks 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。"
+      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。"
     },
     "figures": [
       {
-        "name": "Ian Goodfellow",
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛"
+        },
         "role": {
           "en": "GAN inventor",
           "zh": "GAN发明者"
@@ -1268,7 +1439,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Yoshua Bengio",
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥"
+        },
         "role": {
           "en": "Proposer of Attention Mechanism ",
           "zh": "注意力机制提出者"
@@ -1284,12 +1458,27 @@ const milestones = [
       "en": "\"The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.\"",
       "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
     },
-    "quoteAttribution": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+    "quoteAttribution": {
+      "en": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+      "zh": "《高速网络》, 鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+    },
     "quoteMeta": {
-      "speaker": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-      "workTitle": "Highway Networks",
-      "workAuthors": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-      "sourceLabel": "arXiv abstract",
+      "speaker": {
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+        "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+      },
+      "workTitle": {
+        "en": "Highway Networks",
+        "zh": "高速网络"
+      },
+      "workAuthors": {
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+        "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+      },
+      "sourceLabel": {
+        "en": "arXiv abstract",
+        "zh": "arXiv 摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/1505.00387"
     },
     "quotePage": {
@@ -1331,7 +1520,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Highway Networks diagram",
-            "zh": "Highway Network 架构图"
+            "zh": "高速网络 架构图"
           }
         },
         "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
@@ -1364,7 +1553,7 @@ const milestones = [
     "year": 2014,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "GANs: Generative Adversarial Networks",
@@ -1390,11 +1579,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2014, Ian Goodfellow introduced Generative Adversarial Networks, in which a generator and discriminator learn through an adversarial game. GANs became a major framework for learning data distributions and generating realistic images and media.",
-      "zh": "2014 年Goodfellow提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被Schmidhuber等人提出过：一个网络作为\"控制器\"尝试产生输出，另一个网络作为\"预测器\"尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 Goodfellow对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的\"流行即发明\"案例。"
+      "zh": "2014 年古德费洛提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被施密德胡伯等人提出过：一个网络作为\"控制器\"尝试产生输出，另一个网络作为\"预测器\"尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 古德费洛对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的\"流行即发明\"案例。"
     },
     "figures": [
       {
-        "name": "Ian Goodfellow",
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛"
+        },
         "role": {
           "en": "GAN inventor",
           "zh": "GAN发明者"
@@ -1404,7 +1596,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Yoshua Bengio",
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥"
+        },
         "role": {
           "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
@@ -1420,12 +1615,27 @@ const milestones = [
       "en": "\"We propose a new framework for estimating generative models via adversarial nets.\"",
       "zh": "\"我们提出一种通过对抗过程估计生成模型的新框架。\""
     },
-    "quoteAttribution": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
+    "quoteAttribution": {
+      "en": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
+      "zh": "《生成对抗网络》, 伊恩·J·古德费洛等"
+    },
     "quoteMeta": {
-      "speaker": "Ian Goodfellow et al.",
-      "workTitle": "Generative Adversarial Nets",
-      "workAuthors": "Ian J. Goodfellow et al.",
-      "sourceLabel": "NeurIPS 2014 abstract",
+      "speaker": {
+        "en": "Ian Goodfellow et al.",
+        "zh": "伊恩·古德费洛等"
+      },
+      "workTitle": {
+        "en": "Generative Adversarial Nets",
+        "zh": "生成对抗网络"
+      },
+      "workAuthors": {
+        "en": "Ian J. Goodfellow et al.",
+        "zh": "伊恩·J·古德费洛等"
+      },
+      "sourceLabel": {
+        "en": "NeurIPS 2014 abstract",
+        "zh": "NeurIPS 2014 摘要"
+      },
       "sourceUrl": "https://proceedings.neurips.cc/paper/5423-generative-adversarial-nets"
     },
     "quotePage": {
@@ -1489,7 +1699,7 @@ const milestones = [
     "year": 2014,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "Autoregressive Models and Attention",
@@ -1515,11 +1725,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2014, the neural machine translation work by Bahdanau, Cho and Bengio introduced attention as a way to align and translate jointly. Attention let models focus on relevant input parts and became a central mechanism for sequence modeling.",
-      "zh": "2014年，Bengio在《Neural Machine Translation by Jointly Learning to Align and Translate》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。"
+      "zh": "2014年，本吉奥在《通过联合学习对齐与翻译的神经机器翻译》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。"
     },
     "figures": [
       {
-        "name": "Ian Goodfellow",
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛"
+        },
         "role": {
           "en": "GAN inventor",
           "zh": "GAN发明者"
@@ -1529,7 +1742,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Yoshua Bengio",
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥"
+        },
         "role": {
           "en": "Proposer of Attention Mechanism",
           "zh": "注意力机制提出者"
@@ -1545,12 +1761,27 @@ const milestones = [
       "en": "\"We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.\"",
       "zh": "\"我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。\""
     },
-    "quoteAttribution": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+    "quoteAttribution": {
+      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+      "zh": "《通过联合学习对齐与翻译的神经机器翻译》, 德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
+    },
     "quoteMeta": {
-      "speaker": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
-      "workTitle": "Neural Machine Translation by Jointly Learning to Align and Translate",
-      "workAuthors": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
-      "sourceLabel": "arXiv abstract",
+      "speaker": {
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+        "zh": "德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
+      },
+      "workTitle": {
+        "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "zh": "通过联合学习对齐与翻译的神经机器翻译"
+      },
+      "workAuthors": {
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+        "zh": "德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
+      },
+      "sourceLabel": {
+        "en": "arXiv abstract",
+        "zh": "arXiv 摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/1409.0473"
     },
     "quotePage": {
@@ -1625,7 +1856,7 @@ const milestones = [
     "year": 2015,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "ResNet",
@@ -1651,11 +1882,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun at Microsoft Research Asia introduced ResNet, using identity shortcut connections to solve degradation and gradient-flow problems in very deep networks. Its simple, engineering-friendly design became a core architecture across deep learning.",
-      "zh": "2015年，微软亚洲研究院的何恺明、张祥雨、任少卿、孙剑团队提出 ResNet，通过直接加 identity 通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 Highway Network。 2015年训练到152层 后来最多训练到1202层"
+      "zh": "2015年，微软亚洲研究院的何恺明、张祥雨、任少卿、孙剑团队提出 ResNet，通过直接加 恒等 通路，\"简单粗暴\"但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做\"最优门控≈1\"的 高速网络。 2015年训练到152层 后来最多训练到1202层"
     },
     "figures": [
       {
-        "name": "何恺明 (Kaiming He)",
+        "name": {
+          "en": "Kaiming He",
+          "zh": "何恺明"
+        },
         "role": {
           "en": "ResNet first author",
           "zh": "ResNet第一作者"
@@ -1665,7 +1899,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "张祥雨 (Xiangyu Zhang)",
+        "name": {
+          "en": "Xiangyu Zhang",
+          "zh": "张祥雨"
+        },
         "role": {
           "en": "ResNet co-author",
           "zh": "ResNet共同作者"
@@ -1675,7 +1912,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "任少卿 (Shaoqing Ren)",
+        "name": {
+          "en": "Shaoqing Ren",
+          "zh": "任少卿"
+        },
         "role": {
           "en": "ResNet co-author",
           "zh": "ResNet共同作者"
@@ -1685,7 +1925,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "孙剑 (Jian Sun)",
+        "name": {
+          "en": "Jian Sun",
+          "zh": "孙剑"
+        },
         "role": {
           "en": "ResNet senior author",
           "zh": "ResNet通讯作者"
@@ -1701,12 +1944,27 @@ const milestones = [
       "en": "\"We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.\"",
       "zh": "\"我们提出一种残差学习框架，以便训练比以前深得多的网络。\""
     },
-    "quoteAttribution": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+    "quoteAttribution": {
+      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+      "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑"
+    },
     "quoteMeta": {
-      "speaker": "Kaiming He et al.",
-      "workTitle": "Deep Residual Learning for Image Recognition",
-      "workAuthors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
-      "sourceLabel": "CVPR 2016 open access abstract",
+      "speaker": {
+        "en": "Kaiming He et al.",
+        "zh": "何恺明等"
+      },
+      "workTitle": {
+        "en": "Deep Residual Learning for Image Recognition",
+        "zh": "用于图像识别的深度残差学习"
+      },
+      "workAuthors": {
+        "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+        "zh": "何恺明、张祥雨、任少卿、孙剑"
+      },
+      "sourceLabel": {
+        "en": "CVPR 2016 open access abstract",
+        "zh": "CVPR 2016 开放论文摘要"
+      },
       "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
     },
     "quotePage": {
@@ -1802,7 +2060,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "ResNet first author; Associate Professor at MIT EECS",
-            "zh": "ResNet 第一作者，现任 MIT 电气工程与计算机科学系副教授"
+            "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授"
           }
         }
       },
@@ -1825,7 +2083,7 @@ const milestones = [
     "year": 2016,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "DenseNet",
@@ -1851,16 +2109,19 @@ const milestones = [
     },
     "description": {
       "en": "In 2016, Gao Huang and collaborators proposed DenseNet, connecting each layer to every later layer. By making all previous feature states directly visible, DenseNet increased gradient paths, improved feature reuse and influenced efficient network design.",
-      "zh": "2016年，黄高提出了DenseNet，不只是 identity通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。 最多训练到201层"
+      "zh": "2016年，黄高提出了DenseNet，不只是 恒等通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。 最多训练到201层"
     },
     "figures": [
       {
-        "name": "黄高 (Gao Huang)",
+        "name": {
+          "en": "Gao Huang",
+          "zh": "黄高"
+        },
         "role": {
           "en": "DenseNet author",
           "zh": "DenseNet作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1871,12 +2132,27 @@ const milestones = [
       "en": "\"DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.\"",
       "zh": "\"DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。\""
     },
-    "quoteAttribution": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
+    "quoteAttribution": {
+      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
+      "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·Q·温伯格"
+    },
     "quoteMeta": {
-      "speaker": "Gao Huang et al.",
-      "workTitle": "Densely Connected Convolutional Networks",
-      "workAuthors": "Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
-      "sourceLabel": "CVPR 2017 open access abstract",
+      "speaker": {
+        "en": "Gao Huang et al.",
+        "zh": "黄高等"
+      },
+      "workTitle": {
+        "en": "Densely Connected Convolutional Networks",
+        "zh": "密集连接卷积网络"
+      },
+      "workAuthors": {
+        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
+        "zh": "黄高、刘壮、劳伦斯·范德马滕、基利安·Q·温伯格"
+      },
+      "sourceLabel": {
+        "en": "CVPR 2017 open access abstract",
+        "zh": "CVPR 2017 开放论文摘要"
+      },
       "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
     },
     "quotePage": {
@@ -1962,7 +2238,7 @@ const milestones = [
     "year": 2017,
     "category": {
       "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一 (2010s-2020s)"
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
     },
     "title": {
       "en": "Transformer",
@@ -1975,7 +2251,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google Brain",
-        "zh": "Google Brain"
+        "zh": "谷歌大脑"
       },
       "country": {
         "en": "CA, United States",
@@ -1988,11 +2264,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
-      "zh": "2017 年，Vaswani 等人在《Attention is All You Need》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
+      "zh": "2017 年，瓦斯瓦尼 等人在《注意力就是你所需要的一切》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
     },
     "figures": [
       {
-        "name": "Ashish Vaswani",
+        "name": {
+          "en": "Ashish Vaswani",
+          "zh": "阿希什·瓦斯瓦尼"
+        },
         "role": {
           "en": "Transformer author",
           "zh": "Transformer作者"
@@ -2008,12 +2287,27 @@ const milestones = [
       "en": "\"We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.\"",
       "zh": "\"我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。\""
     },
-    "quoteAttribution": "《Attention Is All You Need》, Ashish Vaswani et al.",
+    "quoteAttribution": {
+      "en": "《Attention Is All You Need》, Ashish Vaswani et al.",
+      "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等"
+    },
     "quoteMeta": {
-      "speaker": "Ashish Vaswani et al.",
-      "workTitle": "Attention Is All You Need",
-      "workAuthors": "Ashish Vaswani et al.",
-      "sourceLabel": "arXiv abstract",
+      "speaker": {
+        "en": "Ashish Vaswani et al.",
+        "zh": "阿希什·瓦斯瓦尼等"
+      },
+      "workTitle": {
+        "en": "Attention Is All You Need",
+        "zh": "注意力就是你所需要的一切"
+      },
+      "workAuthors": {
+        "en": "Ashish Vaswani et al.",
+        "zh": "阿希什·瓦斯瓦尼等"
+      },
+      "sourceLabel": {
+        "en": "arXiv abstract",
+        "zh": "arXiv 摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/1706.03762"
     },
     "quotePage": {
@@ -2076,7 +2370,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Attention Is All You Need",
-            "zh": "《Attention Is All You Need》"
+            "zh": "《注意力就是你所需要的一切》"
           }
         }
       },
@@ -2112,7 +2406,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google AI Language",
-        "zh": "OpenAI / Google AI"
+        "zh": "OpenAI / 谷歌 AI"
       },
       "country": {
         "en": "CA, United States",
@@ -2125,11 +2419,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2018, Google introduced BERT, bringing large-scale pretraining plus fine-tuning into mainstream NLP. Based on the Transformer encoder, BERT learned bidirectional representations and achieved state-of-the-art results across many language tasks.",
-      "zh": "2018年，Google提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。 BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（Masked Language Model）和下一句预测（Next Sentence Prediction）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。"
+      "zh": "2018年，谷歌提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。 BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（掩码语言模型）和下一句预测（下一句预测）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。"
     },
     "figures": [
       {
-        "name": "Jacob Devlin",
+        "name": {
+          "en": "Jacob Devlin",
+          "zh": "雅各布·德夫林"
+        },
         "role": {
           "en": "BERT author",
           "zh": "BERT作者"
@@ -2139,7 +2436,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Alec Radford",
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德"
+        },
         "role": {
           "en": "GPT author",
           "zh": "GPT作者"
@@ -2155,12 +2455,27 @@ const milestones = [
       "en": "\"BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.\"",
       "zh": "\"BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。\""
     },
-    "quoteAttribution": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
+    "quoteAttribution": {
+      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
+      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等"
+    },
     "quoteMeta": {
-      "speaker": "Jacob Devlin et al.",
-      "workTitle": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-      "workAuthors": "Jacob Devlin et al.",
-      "sourceLabel": "ACL Anthology abstract",
+      "speaker": {
+        "en": "Jacob Devlin et al.",
+        "zh": "雅各布·德夫林等"
+      },
+      "workTitle": {
+        "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+      },
+      "workAuthors": {
+        "en": "Jacob Devlin et al.",
+        "zh": "雅各布·德夫林等"
+      },
+      "sourceLabel": {
+        "en": "ACL Anthology abstract",
+        "zh": "ACL Anthology 摘要"
+      },
       "sourceUrl": "https://aclanthology.org/N19-1423/"
     },
     "quotePage": {
@@ -2259,7 +2574,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "OpenAI",
-        "zh": "OpenAI / Google AI"
+        "zh": "OpenAI / 谷歌 AI"
       },
       "country": {
         "en": "CA, United States",
@@ -2272,11 +2587,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2018, OpenAI introduced GPT as another pretraining-and-fine-tuning paradigm. GPT used a unidirectional Transformer decoder trained with next-token prediction, showing that generative pretraining could transfer effectively to many NLP tasks.",
-      "zh": "2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。 GPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（Next Token Prediction）进行训练。 虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。 2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。"
+      "zh": "2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。 GPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（下一个词元预测）进行训练。 虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。 2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。"
     },
     "figures": [
       {
-        "name": "Jacob Devlin",
+        "name": {
+          "en": "Jacob Devlin",
+          "zh": "雅各布·德夫林"
+        },
         "role": {
           "en": "BERT author",
           "zh": "BERT作者"
@@ -2286,7 +2604,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Alec Radford",
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德"
+        },
         "role": {
           "en": "GPT author",
           "zh": "GPT作者"
@@ -2302,12 +2623,27 @@ const milestones = [
       "en": "\"We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.\"",
       "zh": "\"我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。\""
     },
-    "quoteAttribution": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
+    "quoteAttribution": {
+      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
+      "zh": "《通过生成式预训练改进语言理解》, 亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
+    },
     "quoteMeta": {
-      "speaker": "Alec Radford et al.",
-      "workTitle": "Improving Language Understanding by Generative Pre-Training",
-      "workAuthors": "Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
-      "sourceLabel": "OpenAI GPT paper abstract",
+      "speaker": {
+        "en": "Alec Radford et al.",
+        "zh": "亚历克·拉德福德等"
+      },
+      "workTitle": {
+        "en": "Improving Language Understanding by Generative Pre-Training",
+        "zh": "通过生成式预训练改进语言理解"
+      },
+      "workAuthors": {
+        "en": "Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
+        "zh": "亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
+      },
+      "sourceLabel": {
+        "en": "OpenAI GPT paper abstract",
+        "zh": "OpenAI GPT 论文摘要"
+      },
       "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
     },
     "quotePage": {
@@ -2441,11 +2777,14 @@ const milestones = [
     },
     "description": {
       "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
-      "zh": "2019年，MIT的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（Symmetry）和量纲分析（Dimensional Analysis）作为约束，使用符号回归（Symbolic regression），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。"
+      "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。"
     },
     "figures": [
       {
-        "name": "Max Tegmark",
+        "name": {
+          "en": "Max Tegmark",
+          "zh": "马克斯·泰格马克"
+        },
         "role": {
           "en": "AI Feynman author",
           "zh": "AI Feynman作者"
@@ -2461,12 +2800,27 @@ const milestones = [
       "en": "\"We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.\"",
       "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
     },
-    "quoteAttribution": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
+    "quoteAttribution": {
+      "en": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
+      "zh": "《AI 费曼：受物理启发的符号回归方法》, 西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+    },
     "quoteMeta": {
-      "speaker": "Silviu-Marian Udrescu, Max Tegmark",
-      "workTitle": "AI Feynman: a physics-inspired method for symbolic regression",
-      "workAuthors": "Silviu-Marian Udrescu, Max Tegmark",
-      "sourceLabel": "arXiv abstract",
+      "speaker": {
+        "en": "Silviu-Marian Udrescu, Max Tegmark",
+        "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+      },
+      "workTitle": {
+        "en": "AI Feynman: a physics-inspired method for symbolic regression",
+        "zh": "AI 费曼：受物理启发的符号回归方法"
+      },
+      "workAuthors": {
+        "en": "Silviu-Marian Udrescu, Max Tegmark",
+        "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+      },
+      "sourceLabel": {
+        "en": "arXiv abstract",
+        "zh": "arXiv 摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/1905.11481"
     },
     "quotePage": {
@@ -2530,7 +2884,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "AI Feynman: a physics-inspired method for symbolic regression",
-            "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
+            "zh": "《AI 费曼：受物理启发的符号回归方法》"
           }
         },
         "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png": {
@@ -2540,7 +2894,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "AI Feynman: a physics-inspired method for symbolic regression",
-            "zh": "《AI Feynman: a physics-inspired method for symbolic regression》"
+            "zh": "《AI 费曼：受物理启发的符号回归方法》"
           }
         }
       },
@@ -2593,17 +2947,23 @@ const milestones = [
     },
     "figures": [
       {
-        "name": "Demis Hassabis",
+        "name": {
+          "en": "Demis Hassabis",
+          "zh": "戴密斯·哈萨比斯"
+        },
         "role": {
           "en": "DeepMind CEO",
-          "zh": "DeepMind CEO"
+          "zh": "DeepMind 首席执行官"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
-        "name": "John Jumper",
+        "name": {
+          "en": "John Jumper",
+          "zh": "约翰·江珀"
+        },
         "role": {
           "en": "AlphaFold Co-Chief Scientists",
           "zh": "AlphaFold 2首席科学家"
@@ -2619,12 +2979,27 @@ const milestones = [
       "en": "\"Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.\"",
       "zh": "\"在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。\""
     },
-    "quoteAttribution": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
+    "quoteAttribution": {
+      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等"
+    },
     "quoteMeta": {
-      "speaker": "John Jumper et al.",
-      "workTitle": "Highly accurate protein structure prediction with AlphaFold",
-      "workAuthors": "John Jumper et al.",
-      "sourceLabel": "Nature abstract",
+      "speaker": {
+        "en": "John Jumper et al.",
+        "zh": "约翰·江珀等"
+      },
+      "workTitle": {
+        "en": "Highly accurate protein structure prediction with AlphaFold",
+        "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+      },
+      "workAuthors": {
+        "en": "John Jumper et al.",
+        "zh": "约翰·江珀等"
+      },
+      "sourceLabel": {
+        "en": "Nature abstract",
+        "zh": "《自然》摘要"
+      },
       "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2"
     },
     "quotePage": {
@@ -2711,7 +3086,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Highly accurate protein structure prediction with AlphaFold",
-            "zh": "《Highly accurate protein structure prediction with AlphaFold》"
+            "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》"
           }
         },
         "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
@@ -2780,11 +3155,14 @@ const milestones = [
     },
     "description": {
       "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction.",
-      "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（Agentic AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如Chain-of-Thought）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。"
+      "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。"
     },
     "figures": [
       {
-        "name": "Stuart Russell",
+        "name": {
+          "en": "Stuart Russell",
+          "zh": "斯图尔特·罗素"
+        },
         "role": {
           "en": "Founder of Agent Theory",
           "zh": "智能体理论奠基人"
@@ -2794,17 +3172,23 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "Peter Norvig",
+        "name": {
+          "en": "Peter Norvig",
+          "zh": "彼得·诺维格"
+        },
         "role": {
           "en": "AIMA author",
-          "zh": "AIMA作者"
+          "zh": "《人工智能：一种现代方法》作者"
         },
         "avatar": "resources/images/figures/peter-norvig.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
-        "name": "Michael Wooldridge",
+        "name": {
+          "en": "Michael Wooldridge",
+          "zh": "迈克尔·伍尔德里奇"
+        },
         "role": {
           "en": "Expert in Multi-Agent Systems",
           "zh": "多智能体系统专家"
@@ -2820,12 +3204,27 @@ const milestones = [
       "en": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
       "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
     },
-    "quoteAttribution": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
+    "quoteAttribution": {
+      "en": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
+      "zh": "《ReAct：在语言模型中协同推理与行动》, 姚顺雨等"
+    },
     "quoteMeta": {
-      "speaker": "Shunyu Yao et al.",
-      "workTitle": "ReAct: Synergizing Reasoning and Acting in Language Models",
-      "workAuthors": "Shunyu Yao et al.",
-      "sourceLabel": "ReAct abstract",
+      "speaker": {
+        "en": "Shunyu Yao et al.",
+        "zh": "姚顺雨等"
+      },
+      "workTitle": {
+        "en": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "zh": "ReAct：在语言模型中协同推理与行动"
+      },
+      "workAuthors": {
+        "en": "Shunyu Yao et al.",
+        "zh": "姚顺雨等"
+      },
+      "sourceLabel": {
+        "en": "ReAct abstract",
+        "zh": "ReAct 摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/2210.03629"
     },
     "quotePage": {
@@ -2943,18 +3342,21 @@ const milestones = [
     },
     "description": {
       "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments.",
-      "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for Science进入新阶段。"
+      "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。"
     },
     "figures": [
       {
-        "name": "Sakana AI团队",
+        "name": {
+          "en": "Sakana AI team",
+          "zh": "Sakana AI 团队"
+        },
         "role": {
           "en": "AI Scientist Developer",
           "zh": "AI Scientist开发者"
         },
-        "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
+        "avatar": "",
         "avatarStyle": "",
-        "figureType": "team"
+        "figureType": "person"
       },
       {
         "name": "伯克利团队",
@@ -2973,12 +3375,27 @@ const milestones = [
       "en": "\"This paper presents the first comprehensive framework for fully automatic scientific discovery.\"",
       "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
     },
-    "quoteAttribution": "《The AI Scientist》, Chris Lu et al.",
+    "quoteAttribution": {
+      "en": "《The AI Scientist》, Chris Lu et al.",
+      "zh": "《AI 科学家》, 克里斯·卢等"
+    },
     "quoteMeta": {
-      "speaker": "Chris Lu et al.",
-      "workTitle": "The AI Scientist",
-      "workAuthors": "Chris Lu et al.",
-      "sourceLabel": "arXiv abstract",
+      "speaker": {
+        "en": "Chris Lu et al.",
+        "zh": "克里斯·卢等"
+      },
+      "workTitle": {
+        "en": "The AI Scientist",
+        "zh": "AI 科学家"
+      },
+      "workAuthors": {
+        "en": "Chris Lu et al.",
+        "zh": "克里斯·卢等"
+      },
+      "sourceLabel": {
+        "en": "arXiv abstract",
+        "zh": "arXiv 摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/2408.06292"
     },
     "quotePage": {
@@ -3043,7 +3460,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "The AI Scientist",
-            "zh": "《The AI Scientist》"
+            "zh": "《AI 科学家》"
           }
         },
         "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
@@ -3146,12 +3563,27 @@ const milestones = [
       "en": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
       "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
     },
-    "quoteAttribution": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
+    "quoteAttribution": {
+      "en": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
+      "zh": "《聊天机器人竞技场：基于人类偏好评估大语言模型的开放平台》, 蒋维霖等"
+    },
     "quoteMeta": {
-      "speaker": "Wei-Lin Chiang et al.",
-      "workTitle": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
-      "workAuthors": "Wei-Lin Chiang et al.",
-      "sourceLabel": "Chatbot Arena abstract",
+      "speaker": {
+        "en": "Wei-Lin Chiang et al.",
+        "zh": "蒋维霖等"
+      },
+      "workTitle": {
+        "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+        "zh": "聊天机器人竞技场：基于人类偏好评估大语言模型的开放平台"
+      },
+      "workAuthors": {
+        "en": "Wei-Lin Chiang et al.",
+        "zh": "蒋维霖等"
+      },
+      "sourceLabel": {
+        "en": "Chatbot Arena abstract",
+        "zh": "聊天机器人竞技场摘要"
+      },
       "sourceUrl": "https://arxiv.org/abs/2403.04132"
     },
     "quotePage": {
@@ -3280,7 +3712,7 @@ const milestones = [
       {
         "name": {
           "en": "Alan Turing",
-          "zh": "艾伦·图灵 (Alan Turing)"
+          "zh": "艾伦·图灵"
         },
         "role": {
           "en": "Proposed the imitation game",
@@ -3297,11 +3729,20 @@ const milestones = [
       "en": "\"I propose to consider the question, 'Can machines think?'\"",
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
     },
-    "quoteAttribution": "《Computing Machinery and Intelligence》, Alan M. Turing, Mind, 1950",
+    "quoteAttribution": {
+      "en": "《Computing Machinery and Intelligence》, Alan M. Turing, Mind, 1950",
+      "zh": "《计算机器与智能》, 艾伦·M·图灵, 《心灵》, 1950"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Computing Machinery and Intelligence",
-      "workAuthors": "Alan M. Turing, Mind, 1950",
+      "workTitle": {
+        "en": "Computing Machinery and Intelligence",
+        "zh": "计算机器与智能"
+      },
+      "workAuthors": {
+        "en": "Alan M. Turing, Mind, 1950",
+        "zh": "艾伦·M·图灵, 《心灵》, 1950"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://academic.oup.com/mind/article/LIX/236/433/986238"
     },
@@ -3317,7 +3758,7 @@ const milestones = [
         },
         "html": {
           "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols.",
-          "zh": "Turing 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。Turing Digital Archive 也保存了这篇原文，适合与现代评测协议并置展示。"
+          "zh": "图灵 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。图灵数字档案 也保存了这篇原文，适合与现代评测协议并置展示。"
         }
       },
       {
@@ -3332,8 +3773,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat the Turing Test as historically foundational and philosophically fertile, but not as a complete modern definition of intelligence. Its strongest legacy is methodological: it made machine intelligence discussable through observable interaction.",
@@ -3350,13 +3791,16 @@ const milestones = [
         "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg": {
           "caption": {
             "en": "Alan Turing portrait",
-            "zh": "Alan Turing 肖像"
+            "zh": "艾伦·图灵 肖像"
           },
           "subcaption": {
             "en": "Photograph portrait of Alan Turing, 29 March 1951",
-            "zh": "Alan Turing 肖像照，1951 年 3 月 29 日"
+            "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
           "originalImageUrl": "Not available",
@@ -3371,7 +3815,10 @@ const milestones = [
             "en": "Observer C judges hidden human and machine replies through text only.",
             "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
           "originalImageUrl": "Not available",
@@ -3468,18 +3915,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Internet Archive",
+          "site": {
+            "en": "Internet Archive",
+            "zh": "互联网档案馆"
+          },
           "title": {
             "en": "Computing Machinery and Intelligence archive preview",
-            "zh": "《Computing Machinery and Intelligence》档案预览"
+            "zh": "《计算机器与智能》档案预览"
           },
           "description": {
             "en": "Digitized access page for Turing's 1950 Mind paper, showing the title, author, publication date and download options.",
-            "zh": "Turing 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
+            "zh": "图灵 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
           },
           "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
           "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
-          "license": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+          "license": {
+            "en": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+            "zh": "Rights unclear; 互联网档案馆 provides digital access, but the page does not state a clear commercial license."
+          },
           "usage": {
             "en": "Source material image / Archival reference",
             "zh": "原始材料入口 / 档案参考"
@@ -3498,7 +3951,7 @@ const milestones = [
           },
           "label": {
             "en": "Computing Machinery and Intelligence",
-            "zh": "Computing Machinery and Intelligence"
+            "zh": "计算机器与智能"
           },
           "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
         },
@@ -3509,7 +3962,7 @@ const milestones = [
           },
           "label": {
             "en": "Turing Digital Archive",
-            "zh": "Turing Digital Archive"
+            "zh": "图灵数字档案"
           },
           "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence"
         },
@@ -3520,7 +3973,7 @@ const milestones = [
           },
           "label": {
             "en": "Internet Archive digital preview",
-            "zh": "Internet Archive 数字化预览"
+            "zh": "互联网档案馆 数字化预览"
           },
           "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up"
         },
@@ -3531,7 +3984,7 @@ const milestones = [
           },
           "label": {
             "en": "Stanford Encyclopedia of Philosophy",
-            "zh": "Stanford Encyclopedia of Philosophy"
+            "zh": "斯坦福哲学百科全书"
           },
           "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
         }
@@ -3657,7 +4110,7 @@ const milestones = [
       {
         "name": {
           "en": "John McCarthy",
-          "zh": "约翰·麦卡锡 (John McCarthy)"
+          "zh": "约翰·麦卡锡"
         },
         "role": {
           "en": "Designer of LISP",
@@ -3674,11 +4127,20 @@ const milestones = [
       "en": "\"Recursive functions of symbolic expressions became a working language for artificial intelligence.\"",
       "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
     },
-    "quoteAttribution": "《Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I》, John McCarthy, Communications of the ACM, 1960",
+    "quoteAttribution": {
+      "en": "《Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I》, John McCarthy, Communications of the ACM, 1960",
+      "zh": "《符号表达式的递归函数及其机器计算（第一部分）》, 约翰·麦卡锡, 《ACM 通讯》, 1960"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I",
-      "workAuthors": "John McCarthy, Communications of the ACM, 1960",
+      "workTitle": {
+        "en": "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I",
+        "zh": "符号表达式的递归函数及其机器计算（第一部分）"
+      },
+      "workAuthors": {
+        "en": "John McCarthy, Communications of the ACM, 1960",
+        "zh": "约翰·麦卡锡, 《ACM 通讯》, 1960"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive.html"
     },
@@ -3694,7 +4156,7 @@ const milestones = [
         },
         "html": {
           "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool.",
-          "zh": "McCarthy 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I Programmer's Manual 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。"
+          "zh": "麦卡锡 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I 程序员手册 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。"
         }
       },
       {
@@ -3727,13 +4189,16 @@ const milestones = [
         "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg": {
           "caption": {
             "en": "John McCarthy portrait",
-            "zh": "John McCarthy 肖像"
+            "zh": "约翰·麦卡锡 肖像"
           },
           "subcaption": {
             "en": "John McCarthy at Stanford, 2006",
-            "zh": "John McCarthy 于 Stanford，2006 年"
+            "zh": "约翰·麦卡锡 于 斯坦福大学，2006 年"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
           "originalImageUrl": "Not available",
@@ -3746,9 +4211,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives.",
-            "zh": "根据 McCarthy 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
+            "zh": "根据 麦卡锡 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
           },
-          "sourceName": "Stanford / John McCarthy",
+          "sourceName": {
+            "en": "Stanford / John McCarthy",
+            "zh": "斯坦福大学 / 约翰·麦卡锡"
+          },
           "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
           "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
           "originalImageUrl": "Local original explainer",
@@ -3823,14 +4291,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Stanford / John McCarthy",
+          "site": {
+            "en": "Stanford / John McCarthy",
+            "zh": "斯坦福大学 / 约翰·麦卡锡"
+          },
           "title": {
             "en": "Recursive Functions of Symbolic Expressions",
-            "zh": "《Recursive Functions of Symbolic Expressions》原文"
+            "zh": "《符号表达式的递归函数》原文"
           },
           "description": {
             "en": "Author-hosted Stanford page for McCarthy's original LISP paper, first published in Communications of the ACM in April 1960.",
-            "zh": "McCarthy 在 Stanford 个人站点保存的 LISP 原始论文页面，论文最初发表于 1960 年 4 月的 Communications of the ACM。"
+            "zh": "麦卡锡 在 斯坦福大学 个人站点保存的 LISP 原始论文页面，论文最初发表于 1960 年 4 月的 《ACM 通讯》。"
           },
           "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
           "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
@@ -3853,7 +4324,7 @@ const milestones = [
           },
           "label": {
             "en": "Recursive Functions of Symbolic Expressions",
-            "zh": "Recursive Functions of Symbolic Expressions"
+            "zh": "符号表达式的递归函数"
           },
           "url": "https://www-formal.stanford.edu/jmc/recursive.html"
         },
@@ -3864,7 +4335,7 @@ const milestones = [
           },
           "label": {
             "en": "LISP I Programmer's Manual",
-            "zh": "LISP I Programmer's Manual"
+            "zh": "LISP I 程序员手册"
           },
           "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view"
         },
@@ -3875,7 +4346,7 @@ const milestones = [
           },
           "label": {
             "en": "History of Lisp",
-            "zh": "History of Lisp"
+            "zh": "Lisp 史"
           },
           "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
         }
@@ -3982,7 +4453,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google DeepMind",
-        "zh": "Google DeepMind"
+        "zh": "谷歌 DeepMind"
       },
       "country": {
         "en": "London, United Kingdom",
@@ -4001,7 +4472,7 @@ const milestones = [
       {
         "name": {
           "en": "David Silver",
-          "zh": "大卫·席尔瓦 (David Silver)"
+          "zh": "大卫·席尔瓦"
         },
         "role": {
           "en": "AlphaGo lead researcher",
@@ -4014,7 +4485,7 @@ const milestones = [
       {
         "name": {
           "en": "Demis Hassabis",
-          "zh": "戴密斯·哈萨比斯 (Demis Hassabis)"
+          "zh": "戴密斯·哈萨比斯"
         },
         "role": {
           "en": "DeepMind co-founder",
@@ -4027,7 +4498,7 @@ const milestones = [
       {
         "name": {
           "en": "Aja Huang",
-          "zh": "黄士杰 (Aja Huang)"
+          "zh": "黄士杰"
         },
         "role": {
           "en": "AlphaGo researcher",
@@ -4044,11 +4515,20 @@ const milestones = [
       "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
-    "quoteAttribution": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
+    "quoteAttribution": {
+      "en": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
-      "workAuthors": "David Silver et al., Nature, 2016",
+      "workTitle": {
+        "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+        "zh": "用深度神经网络和树搜索掌握围棋"
+      },
+      "workAuthors": {
+        "en": "David Silver et al., Nature, 2016",
+        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
     },
@@ -4064,7 +4544,7 @@ const milestones = [
         },
         "html": {
           "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "Nature 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -4103,7 +4583,10 @@ const milestones = [
             "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
             "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "originalImageUrl": "Not available",
@@ -4116,9 +4599,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
-            "zh": "根据 Nature AlphaGo 论文与 Google DeepMind AlphaGo 官方材料制作的解释图。"
+            "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
           },
-          "sourceName": "Nature / Google DeepMind",
+          "sourceName": {
+            "en": "Nature / Google DeepMind",
+            "zh": "《自然》 / 谷歌 DeepMind"
+          },
           "source": "https://www.nature.com/articles/nature16961",
           "sourceUrl": "https://www.nature.com/articles/nature16961",
           "originalImageUrl": "Local original explainer",
@@ -4153,7 +4639,7 @@ const milestones = [
       },
       "material": {
         "en": "Nature paper + blog + SGF/API",
-        "zh": "Nature 论文 + 博客 + 棋谱/API"
+        "zh": "《自然》 论文 + 博客 + 棋谱/API"
       },
       "demo": {
         "en": "Move 37 board explainer",
@@ -4193,25 +4679,31 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Nature",
+          "site": {
+            "en": "Nature",
+            "zh": "《自然》"
+          },
           "title": {
             "en": "Mastering the game of Go with deep neural networks and tree search",
-            "zh": "《Mastering the game of Go with deep neural networks and tree search》"
+            "zh": "《用深度神经网络和树搜索掌握围棋》"
           },
           "description": {
             "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
-            "zh": "Nature 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+            "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "source": "https://www.nature.com/articles/nature16961",
-          "license": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+          "license": {
+            "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+            "zh": "《自然》 article access page; reuse rights for article figures are restricted by publisher terms."
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
           },
           "action": {
             "en": "Open Nature paper",
-            "zh": "打开 Nature 论文"
+            "zh": "打开 《自然》 论文"
           }
         }
       ],
@@ -4223,7 +4715,7 @@ const milestones = [
           },
           "label": {
             "en": "Nature 2016 AlphaGo paper",
-            "zh": "Nature 2016 AlphaGo 论文"
+            "zh": "《自然》 2016 AlphaGo 论文"
           },
           "url": "https://www.nature.com/articles/nature16961"
         },
@@ -4234,7 +4726,7 @@ const milestones = [
           },
           "label": {
             "en": "Google DeepMind AlphaGo",
-            "zh": "Google DeepMind AlphaGo"
+            "zh": "谷歌 DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/"
         },
@@ -4371,7 +4863,7 @@ const milestones = [
       {
         "name": {
           "en": "Stephen A. Cook",
-          "zh": "斯蒂芬·A·库克 (Stephen A. Cook)"
+          "zh": "斯蒂芬·A·库克"
         },
         "role": {
           "en": "Introduced NP-completeness",
@@ -4384,7 +4876,7 @@ const milestones = [
       {
         "name": {
           "en": "Leonid Levin",
-          "zh": "列昂尼德·列文 (Leonid Levin)"
+          "zh": "列昂尼德·列文"
         },
         "role": {
           "en": "Independently formulated related NP-completeness ideas",
@@ -4401,11 +4893,20 @@ const milestones = [
       "en": "\"laid the foundations for the theory of NP-Completeness\"",
       "zh": "\"奠定了 NP 完全性理论的基础\""
     },
-    "quoteAttribution": "《Stephen A. Cook A.M. Turing Award citation》, Association for Computing Machinery, 1982",
+    "quoteAttribution": {
+      "en": "《Stephen A. Cook A.M. Turing Award citation》, Association for Computing Machinery, 1982",
+      "zh": "《斯蒂芬·A·库克 ACM 图灵奖获奖说明》, 美国计算机协会, 1982"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Stephen A. Cook A.M. Turing Award citation",
-      "workAuthors": "Association for Computing Machinery, 1982",
+      "workTitle": {
+        "en": "Stephen A. Cook A.M. Turing Award citation",
+        "zh": "斯蒂芬·A·库克 ACM 图灵奖获奖说明"
+      },
+      "workAuthors": {
+        "en": "Association for Computing Machinery, 1982",
+        "zh": "美国计算机协会, 1982"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950"
     },
@@ -4421,7 +4922,7 @@ const milestones = [
         },
         "html": {
           "en": "Cook's 1971 STOC paper made Boolean satisfiability a canonical problem for comparing computational hardness. It showed that many different-looking problems can be connected by efficient reductions.",
-          "zh": "Cook 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。"
+          "zh": "库克 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。"
         }
       },
       {
@@ -4436,12 +4937,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Experts usually treat Cook's contribution as a founding event of theoretical computer science. NP-completeness did not just solve a problem; it created a durable framework for comparing computational hardness.",
-          "zh": "专家通常把 Cook 的贡献视为理论计算机科学的奠基事件。NP 完全性不只是解决了一个问题，而是建立了一套持久的计算困难性比较框架。"
+          "zh": "专家通常把 库克 的贡献视为理论计算机科学的奠基事件。NP 完全性不只是解决了一个问题，而是建立了一套持久的计算困难性比较框架。"
         }
       }
     ],
@@ -4454,13 +4955,16 @@ const milestones = [
         "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg": {
           "caption": {
             "en": "Stephen A. Cook portrait",
-            "zh": "Stephen A. Cook 肖像"
+            "zh": "斯蒂芬·A·库克 肖像"
           },
           "subcaption": {
             "en": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012.",
-            "zh": "Stephen A. Cook 摄于 2012 年图灵百年纪念活动。"
+            "zh": "斯蒂芬·A·库克 摄于 2012 年图灵百年纪念活动。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/2012-06-15_Stephen_A._Cook.jpg",
@@ -4477,7 +4981,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description.",
-            "zh": "根据 Cook 1971 年论文与 Clay P versus NP 难题说明制作的原创解释图。"
+            "zh": "根据 库克 1971 年论文与 Clay P 与 NP 难题说明制作的原创解释图。"
           },
           "sourceName": "ACM / Clay Mathematics Institute",
           "source": "https://dl.acm.org/doi/10.1145/800157.805047",
@@ -4525,7 +5029,7 @@ const milestones = [
         {
           "label": {
             "en": "P versus NP",
-            "zh": "P versus NP"
+            "zh": "P 与 NP"
           },
           "text": {
             "en": "P contains problems that can be solved quickly, while NP contains problems whose proposed answers can be checked quickly. The open question is whether quick checking always implies quick solving.",
@@ -4575,11 +5079,11 @@ const milestones = [
           "site": "ACM Digital Library",
           "title": {
             "en": "The Complexity of Theorem-Proving Procedures",
-            "zh": "《The Complexity of Theorem-Proving Procedures》"
+            "zh": "《定理证明过程的复杂性》"
           },
           "description": {
             "en": "Official ACM page for Cook's 1971 STOC paper introducing NP-completeness.",
-            "zh": "ACM 官方论文页，收录 Cook 1971 年提出 NP 完全性的 STOC 论文。"
+            "zh": "ACM 官方论文页，收录 库克 1971 年提出 NP 完全性的 STOC 论文。"
           },
           "url": "https://dl.acm.org/doi/10.1145/800157.805047",
           "source": "https://dl.acm.org/doi/10.1145/800157.805047",
@@ -4602,7 +5106,7 @@ const milestones = [
           },
           "label": {
             "en": "The Complexity of Theorem-Proving Procedures",
-            "zh": "The Complexity of Theorem-Proving Procedures"
+            "zh": "定理证明过程的复杂性"
           },
           "url": "https://dl.acm.org/doi/10.1145/800157.805047"
         },
@@ -4613,7 +5117,7 @@ const milestones = [
           },
           "label": {
             "en": "Stephen A. Cook ACM A.M. Turing Award",
-            "zh": "Stephen A. Cook ACM A.M. Turing Award"
+            "zh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award"
           },
           "url": "https://awards.acm.org/award_winners/cook_N991950"
         },
@@ -4624,7 +5128,7 @@ const milestones = [
           },
           "label": {
             "en": "Clay Mathematics Institute P vs NP",
-            "zh": "Clay Mathematics Institute P vs NP"
+            "zh": "克雷数学研究所 P 与 NP 问题"
           },
           "url": "https://www.claymath.org/millennium/p-vs-np/"
         }
@@ -4750,7 +5254,7 @@ const milestones = [
       {
         "name": {
           "en": "Vladimir N. Vapnik",
-          "zh": "弗拉基米尔·N·瓦普尼克 (Vladimir N. Vapnik)"
+          "zh": "弗拉基米尔·N·瓦普尼克"
         },
         "role": {
           "en": "Co-developed VC theory",
@@ -4763,7 +5267,7 @@ const milestones = [
       {
         "name": {
           "en": "Alexey Ya. Chervonenkis",
-          "zh": "阿列克谢·雅·切尔沃年基斯 (Alexey Ya. Chervonenkis)"
+          "zh": "阿列克谢·雅·切尔沃年基斯"
         },
         "role": {
           "en": "Co-developed VC theory",
@@ -4780,11 +5284,20 @@ const milestones = [
       "en": "\"Statistical learning theory was introduced in the late 1960's.\"",
       "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
     },
-    "quoteAttribution": "《An Overview of Statistical Learning Theory》, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+    "quoteAttribution": {
+      "en": "《An Overview of Statistical Learning Theory》, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "zh": "《统计学习理论概览》, 弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "An Overview of Statistical Learning Theory",
-      "workAuthors": "Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "workTitle": {
+        "en": "An Overview of Statistical Learning Theory",
+        "zh": "统计学习理论概览"
+      },
+      "workAuthors": {
+        "en": "Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+        "zh": "弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
     },
@@ -4800,7 +5313,7 @@ const milestones = [
         },
         "html": {
           "en": "The 1971 Vapnik-Chervonenkis paper made generalization a mathematical question about uniform convergence across a whole class of events or hypotheses. Vapnik's 1995 book later synthesized the framework for statistical learning theory.",
-          "zh": "Vapnik 和 Chervonenkis 1971 年论文把泛化变成了关于一整类事件或假设上一致收敛的数学问题。Vapnik 1995 年著作随后系统总结了统计学习理论框架。"
+          "zh": "瓦普尼克 和 切尔沃年基斯 1971 年论文把泛化变成了关于一整类事件或假设上一致收敛的数学问题。瓦普尼克 1995 年著作随后系统总结了统计学习理论框架。"
         }
       },
       {
@@ -4815,8 +5328,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Experts usually evaluate VC theory as one of the mathematical foundations of machine learning. Classical VC bounds can be conservative for modern deep learning, but the framework remains central to thinking about generalization.",
@@ -4833,17 +5346,23 @@ const milestones = [
         "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png": {
           "caption": {
             "en": "Vladimir Vapnik portrait",
-            "zh": "Vladimir Vapnik 肖像"
+            "zh": "弗拉基米尔·瓦普尼克 肖像"
           },
           "subcaption": {
             "en": "Vladimir Vapnik profile portrait from the Simons Foundation.",
-            "zh": "Simons Foundation 人物页中的 Vladimir Vapnik 肖像。"
+            "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。"
           },
-          "sourceName": "Simons Foundation",
+          "sourceName": {
+            "en": "Simons Foundation",
+            "zh": "西蒙斯基金会"
+          },
           "source": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
           "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
           "originalImageUrl": "https://simonsfoundation.imgix.net/wp-content/uploads/2017/08/15112731/vald1.png",
-          "license": "Simons Foundation profile image; page does not state an open reuse license.",
+          "license": {
+            "en": "Simons Foundation profile image; page does not state an open reuse license.",
+            "zh": "西蒙斯基金会 profile image; page does not state an open reuse license."
+          },
           "usage": {
             "en": "Portrait",
             "zh": "人物肖像"
@@ -4856,7 +5375,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources.",
-            "zh": "根据 Vapnik 与 Chervonenkis 的学习理论资料制作的原创解释图。"
+            "zh": "根据 瓦普尼克 与 切尔沃年基斯 的学习理论资料制作的原创解释图。"
           },
           "sourceName": "SIAM / Springer / IEEE",
           "source": "https://epubs.siam.org/doi/10.1137/1116025",
@@ -4954,11 +5473,11 @@ const milestones = [
           "site": "SIAM",
           "title": {
             "en": "On the Uniform Convergence of Relative Frequencies",
-            "zh": "《On the Uniform Convergence of Relative Frequencies》"
+            "zh": "《相对频率的一致收敛》"
           },
           "description": {
             "en": "Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.",
-            "zh": "SIAM 官方页面，收录 Vapnik-Chervonenkis 1971 年论文的英文版本。"
+            "zh": "SIAM 官方页面，收录 瓦普尼克-切尔沃年基斯 1971 年论文的英文版本。"
           },
           "url": "https://epubs.siam.org/doi/10.1137/1116025",
           "source": "https://epubs.siam.org/doi/10.1137/1116025",
@@ -4981,7 +5500,7 @@ const milestones = [
           },
           "label": {
             "en": "On the Uniform Convergence of Relative Frequencies",
-            "zh": "On the Uniform Convergence of Relative Frequencies"
+            "zh": "相对频率的一致收敛"
           },
           "url": "https://epubs.siam.org/doi/10.1137/1116025"
         },
@@ -4992,7 +5511,7 @@ const milestones = [
           },
           "label": {
             "en": "The Nature of Statistical Learning Theory",
-            "zh": "The Nature of Statistical Learning Theory"
+            "zh": "统计学习理论的本质"
           },
           "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0"
         },
@@ -5003,7 +5522,7 @@ const milestones = [
           },
           "label": {
             "en": "An Overview of Statistical Learning Theory",
-            "zh": "An Overview of Statistical Learning Theory"
+            "zh": "统计学习理论概览"
           },
           "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
         }
@@ -5123,13 +5642,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>",
-      "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J. C. Shaw 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>"
+      "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Allen Newell",
-          "zh": "艾伦·纽厄尔 (Allen Newell)"
+          "zh": "艾伦·纽厄尔"
         },
         "role": {
           "en": "Logic Theorist co-creator",
@@ -5142,7 +5661,7 @@ const milestones = [
       {
         "name": {
           "en": "Herbert A. Simon",
-          "zh": "赫伯特·A·西蒙 (Herbert A. Simon)"
+          "zh": "赫伯特·A·西蒙"
         },
         "role": {
           "en": "Logic Theorist co-creator",
@@ -5155,7 +5674,7 @@ const milestones = [
       {
         "name": {
           "en": "J. C. Shaw",
-          "zh": "J. C. Shaw"
+          "zh": "J·C·肖"
         },
         "role": {
           "en": "Programmer and co-developer",
@@ -5172,11 +5691,20 @@ const milestones = [
       "en": "\"capable of discovering proofs for theorems in symbolic logic\"",
       "zh": "\"能够发现符号逻辑中定理的证明\""
     },
-    "quoteAttribution": "《The Logic Theory Machine: A Complex Information Processing System》, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+    "quoteAttribution": {
+      "en": "《The Logic Theory Machine: A Complex Information Processing System》, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "zh": "《逻辑理论机：一个复杂信息处理系统》, 艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "The Logic Theory Machine: A Complex Information Processing System",
-      "workAuthors": "Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "workTitle": {
+        "en": "The Logic Theory Machine: A Complex Information Processing System",
+        "zh": "逻辑理论机：一个复杂信息处理系统"
+      },
+      "workAuthors": {
+        "en": "Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+        "zh": "艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
     },
@@ -5192,7 +5720,7 @@ const milestones = [
         },
         "html": {
           "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition.",
-          "zh": "Newell 和 Simon 1956 年论文描述了一个能在符号逻辑中发现证明的系统。Google Books 保存了书目信息和摘要，Carnegie Mellon Archives 记录了 1956 年修订版。"
+          "zh": "Newell 和 Simon 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌 图书s 保存了书目信息和摘要，Carnegie Mellon Archives 记录了 1956 年修订版。"
         }
       },
       {
@@ -5207,8 +5735,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Experts usually treat Logic Theorist as a founding symbolic AI system. Its legacy is the combination of theorem proving, heuristic search, symbolic programming, and cognitive modeling.",
@@ -5225,13 +5753,16 @@ const milestones = [
         "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg": {
           "caption": {
             "en": "Herbert A. Simon portrait",
-            "zh": "Herbert A. Simon 肖像"
+            "zh": "赫伯特·A·西蒙 肖像"
           },
           "subcaption": {
             "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators.",
-            "zh": "Wikimedia Commons 收录的 Herbert A. Simon 肖像，他是 Logic Theorist 共同创建者之一。"
+            "zh": "维基共享资源 收录的 赫伯特·A·西蒙 肖像，他是 Logic Theorist 共同创建者之一。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Herbert_simon_red_complete.jpg",
@@ -5343,10 +5874,13 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Google Books",
+          "site": {
+            "en": "Google Books",
+            "zh": "谷歌 图书s"
+          },
           "title": {
             "en": "The Logic Theory Machine",
-            "zh": "《The Logic Theory Machine》"
+            "zh": "《逻辑理论机》"
           },
           "description": {
             "en": "Bibliographic page for the 1956 Logic Theory Machine publication, including abstract and publication details.",
@@ -5354,7 +5888,10 @@ const milestones = [
           },
           "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
           "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
-          "license": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
+          "license": {
+            "en": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
+            "zh": "谷歌 图书s bibliographic preview; reuse rights for book scans are not stated."
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -5373,7 +5910,7 @@ const milestones = [
           },
           "label": {
             "en": "The Logic Theory Machine",
-            "zh": "The Logic Theory Machine"
+            "zh": "逻辑理论机"
           },
           "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
         },
@@ -5395,7 +5932,7 @@ const milestones = [
           },
           "label": {
             "en": "Allen Newell ACM A.M. Turing Award",
-            "zh": "Allen Newell ACM A.M. Turing Award"
+            "zh": "艾伦·纽厄尔 ACM A.M. 图灵 Award"
           },
           "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm"
         }
@@ -5515,13 +6052,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>",
-      "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 Bell System Technical Journal 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>"
+      "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 《贝尔系统技术期刊》 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Hao Wang",
-          "zh": "王浩 (Hao Wang)"
+          "zh": "王浩"
         },
         "role": {
           "en": "Developed pattern-recognition theorem-proving procedures",
@@ -5538,11 +6075,20 @@ const milestones = [
       "en": "\"A proof procedure for the predicate calculus is given\"",
       "zh": "\"给出了一个谓词演算的证明过程\""
     },
-    "quoteAttribution": "《Proving Theorems by Pattern Recognition - II》, Hao Wang, Bell System Technical Journal, 1961",
+    "quoteAttribution": {
+      "en": "《Proving Theorems by Pattern Recognition - II》, Hao Wang, Bell System Technical Journal, 1961",
+      "zh": "《通过模式识别证明定理（二）》, 王浩, 《贝尔系统技术期刊》, 1961"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Proving Theorems by Pattern Recognition - II",
-      "workAuthors": "Hao Wang, Bell System Technical Journal, 1961",
+      "workTitle": {
+        "en": "Proving Theorems by Pattern Recognition - II",
+        "zh": "通过模式识别证明定理（二）"
+      },
+      "workAuthors": {
+        "en": "Hao Wang, Bell System Technical Journal, 1961",
+        "zh": "王浩, 《贝尔系统技术期刊》, 1961"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
     },
@@ -5558,7 +6104,7 @@ const milestones = [
         },
         "html": {
           "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases.",
-          "zh": "第一篇论文发表于 1960 年 4 月 Communications of the ACM，DOI 为 10.1145/367177.367224。Bell Labs 档案保存了 1961 年续篇，其中 Wang 讨论了谓词演算证明过程及相关判定问题情形。"
+          "zh": "第一篇论文发表于 1960 年 4 月 《ACM 通讯》，DOI 为 10.1145/367177.367224。贝尔实验室 档案保存了 1961 年续篇，其中 王浩 讨论了谓词演算证明过程及相关判定问题情形。"
         }
       },
       {
@@ -5573,8 +6119,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Wang's algorithm is usually treated as an early milestone in automated theorem proving. It made the gap between formal logic and machine execution smaller, and it influenced later work on proof procedures and SAT-style reasoning.",
@@ -5616,7 +6162,10 @@ const milestones = [
             "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure.",
             "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。"
           },
-          "sourceName": "Local explainer based on Wang 1960 and Wang 1961",
+          "sourceName": {
+            "en": "Local explainer based on Wang 1960 and Wang 1961",
+            "zh": "Local explainer based on 王浩 1960 and 王浩 1961"
+          },
           "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
           "sourceUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
           "originalImageUrl": "Local original explainer",
@@ -5651,7 +6200,7 @@ const milestones = [
       },
       "material": {
         "en": "CACM paper + Bell Labs article",
-        "zh": "CACM 论文 + Bell Labs 文章"
+        "zh": "CACM 论文 + 贝尔实验室 文章"
       },
       "demo": {
         "en": "Pattern proof loop",
@@ -5709,14 +6258,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Communications of the ACM",
+          "site": {
+            "en": "Communications of the ACM",
+            "zh": "《ACM 通讯》"
+          },
           "title": {
             "en": "Proving theorems by pattern recognition I",
-            "zh": "《Proving theorems by pattern recognition I》"
+            "zh": "《通过模式识别证明定理 I》"
           },
           "description": {
             "en": "Official CACM page for Wang's 1960 article, including DOI, issue, and page information.",
-            "zh": "CACM 官方页面，列出 Wang 1960 年论文的 DOI、期号与页码信息。"
+            "zh": "CACM 官方页面，列出 王浩 1960 年论文的 DOI、期号与页码信息。"
           },
           "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
           "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
@@ -5739,7 +6291,7 @@ const milestones = [
           },
           "label": {
             "en": "Proving theorems by pattern recognition I",
-            "zh": "Proving theorems by pattern recognition I"
+            "zh": "通过模式识别证明定理 I"
           },
           "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/"
         },
@@ -5750,7 +6302,7 @@ const milestones = [
           },
           "label": {
             "en": "Proving Theorems by Pattern Recognition - II",
-            "zh": "Proving Theorems by Pattern Recognition - II"
+            "zh": "通过模式识别证明定理（二）"
           },
           "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
         },
@@ -5761,7 +6313,7 @@ const milestones = [
           },
           "label": {
             "en": "Rockefeller University Digital Commons: Wang, Hao",
-            "zh": "Rockefeller University Digital Commons: Wang, Hao"
+            "zh": "Rockefeller University Digital Commons: 王浩, Hao"
           },
           "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/"
         }
@@ -5794,7 +6346,7 @@ const milestones = [
       "answerIndex": 0,
       "explanation": {
         "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments.",
-        "zh": "王浩把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
+        "zh": "Wang把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
       },
       "source": {
         "label": {
@@ -5835,7 +6387,7 @@ const milestones = [
         "answerIndex": 0,
         "explanation": {
           "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments.",
-          "zh": "王浩把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
+          "zh": "Wang把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
         },
         "source": {
           "label": {
@@ -5881,13 +6433,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>",
-      "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 JACM 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>"
+      "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 《ACM 杂志》 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Martin Davis",
-          "zh": "马丁·戴维斯 (Martin Davis)"
+          "zh": "马丁·戴维斯"
         },
         "role": {
           "en": "Co-developed Davis-Putnam and DPLL procedures",
@@ -5900,7 +6452,7 @@ const milestones = [
       {
         "name": {
           "en": "Hilary Putnam",
-          "zh": "希拉里·普特南 (Hilary Putnam)"
+          "zh": "希拉里·普特南"
         },
         "role": {
           "en": "Co-authored the 1960 Davis-Putnam procedure",
@@ -5913,7 +6465,7 @@ const milestones = [
       {
         "name": {
           "en": "George Logemann",
-          "zh": "乔治·洛格曼 (George Logemann)"
+          "zh": "乔治·洛格曼"
         },
         "role": {
           "en": "Co-authored the 1962 DPLL program paper",
@@ -5926,7 +6478,7 @@ const milestones = [
       {
         "name": {
           "en": "Donald W. Loveland",
-          "zh": "唐纳德·W·洛夫兰 (Donald W. Loveland)"
+          "zh": "唐纳德·W·洛夫兰"
         },
         "role": {
           "en": "Co-authored the 1962 DPLL program paper",
@@ -5943,11 +6495,20 @@ const milestones = [
       "en": "\"a uniform proof procedure for quantification theory is given\"",
       "zh": "\"给出了量词理论的统一证明过程\""
     },
-    "quoteAttribution": "《A Computing Procedure for Quantification Theory》, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+    "quoteAttribution": {
+      "en": "《A Computing Procedure for Quantification Theory》, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "zh": "《量词理论的计算过程》, 马丁·戴维斯、希拉里·普特南, 《ACM 杂志》, 1960"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "A Computing Procedure for Quantification Theory",
-      "workAuthors": "Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "workTitle": {
+        "en": "A Computing Procedure for Quantification Theory",
+        "zh": "量词理论的计算过程"
+      },
+      "workAuthors": {
+        "en": "Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+        "zh": "马丁·戴维斯、希拉里·普特南, 《ACM 杂志》, 1960"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034"
     },
@@ -5963,7 +6524,7 @@ const milestones = [
         },
         "html": {
           "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage.",
-          "zh": "Davis 和 Putnam 1960 年 JACM 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 Communications of the ACM 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。"
+          "zh": "Davis 和 Putnam 1960 年 《ACM 杂志》 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 《ACM 通讯》 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。"
         }
       },
       {
@@ -5978,8 +6539,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "DPLL is usually evaluated as one of the foundational algorithms behind practical SAT solving. Modern solvers add learning, watched literals, restarts, and heuristics, but the core search-and-propagate structure remains recognizable.",
@@ -5996,13 +6557,16 @@ const milestones = [
         "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
           "caption": {
             "en": "Hilary Putnam portrait",
-            "zh": "Hilary Putnam 肖像"
+            "zh": "希拉里·普特南 肖像"
           },
           "subcaption": {
             "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.",
-            "zh": "Wikimedia Commons 收录的 Hilary Putnam 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。"
+            "zh": "维基共享资源 收录的 希拉里·普特南 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Hilary_Putnam.jpg",
@@ -6056,7 +6620,7 @@ const milestones = [
       },
       "material": {
         "en": "JACM paper + CACM program",
-        "zh": "JACM 论文 + CACM 程序"
+        "zh": "《ACM 杂志》 论文 + CACM 程序"
       },
       "demo": {
         "en": "Branch, propagate, backtrack",
@@ -6114,10 +6678,13 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Communications of the ACM",
+          "site": {
+            "en": "Communications of the ACM",
+            "zh": "《ACM 通讯》"
+          },
           "title": {
             "en": "A machine program for theorem-proving",
-            "zh": "《A machine program for theorem-proving》"
+            "zh": "《用于定理证明的机器程序》"
           },
           "description": {
             "en": "CACM article page for the 1962 Davis, Logemann, and Loveland theorem-proving program.",
@@ -6144,7 +6711,7 @@ const milestones = [
           },
           "label": {
             "en": "A Computing Procedure for Quantification Theory",
-            "zh": "A Computing Procedure for Quantification Theory"
+            "zh": "量词理论的计算过程"
           },
           "url": "https://dl.acm.org/doi/10.1145/321033.321034"
         },
@@ -6155,7 +6722,7 @@ const milestones = [
           },
           "label": {
             "en": "A machine program for theorem-proving",
-            "zh": "A machine program for theorem-proving"
+            "zh": "用于定理证明的机器程序"
           },
           "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/"
         },
@@ -6166,7 +6733,7 @@ const milestones = [
           },
           "label": {
             "en": "Wikimedia Commons: Hilary Putnam",
-            "zh": "Wikimedia Commons: Hilary Putnam"
+            "zh": "维基共享资源: 希拉里·普特南"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
         }
@@ -6288,13 +6855,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>",
-      "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。Kingma 与 Ba 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>"
+      "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Diederik P. Kingma",
-          "zh": "Diederik P. Kingma"
+          "zh": "迪德里克·P·金马"
         },
         "role": {
           "en": "Co-author of Adam",
@@ -6307,7 +6874,7 @@ const milestones = [
       {
         "name": {
           "en": "Jimmy Ba",
-          "zh": "Jimmy Ba"
+          "zh": "吉米·巴"
         },
         "role": {
           "en": "Co-author of Adam",
@@ -6324,11 +6891,20 @@ const milestones = [
       "en": "\"straightforward to implement, computationally efficient\"",
       "zh": "\"易于实现且计算高效\""
     },
-    "quoteAttribution": "《Adam: A Method for Stochastic Optimization》, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+    "quoteAttribution": {
+      "en": "《Adam: A Method for Stochastic Optimization》, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "zh": "《Adam：一种随机优化方法》, 迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Adam: A Method for Stochastic Optimization",
-      "workAuthors": "Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "workTitle": {
+        "en": "Adam: A Method for Stochastic Optimization",
+        "zh": "Adam：一种随机优化方法"
+      },
+      "workAuthors": {
+        "en": "Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+        "zh": "迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1412.6980"
     },
@@ -6359,8 +6935,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Adam as a practical default rather than a universal optimum. It remains valued for fast, stable training, while current recipes often modify it through AdamW, careful schedules, and task-specific tuning.",
@@ -6435,13 +7011,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg": {
           "caption": {
             "en": "Diederik P. Kingma portrait",
-            "zh": "Diederik P. Kingma 肖像"
+            "zh": "迪德里克·P·金马 肖像"
           },
           "subcaption": {
             "en": "Portrait from Kingma's personal website.",
-            "zh": "来自 Kingma 个人网站的人物照片。"
+            "zh": "来自 金马 个人网站的人物照片。"
           },
-          "sourceName": "Diederik P. Kingma personal website",
+          "sourceName": {
+            "en": "Diederik P. Kingma personal website",
+            "zh": "迪德里克·P·金马 personal website"
+          },
           "source": "https://dpkingma.com/",
           "sourceUrl": "https://dpkingma.com/",
           "originalImageUrl": "https://dpkingma.com/files/portrait.jpg",
@@ -6560,7 +7139,7 @@ const milestones = [
           },
           "action": {
             "en": "Open paper",
-            "zh": "Open paper"
+            "zh": "打开论文"
           }
         }
       ],
@@ -6568,11 +7147,11 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "Adam: A Method for Stochastic Optimization",
-            "zh": "Adam: A Method for Stochastic Optimization"
+            "zh": "Adam：一种随机优化方法"
           },
           "url": "https://arxiv.org/abs/1412.6980"
         },
@@ -6734,7 +7313,7 @@ const milestones = [
       {
         "name": {
           "en": "Karen Simonyan",
-          "zh": "Karen Simonyan"
+          "zh": "卡伦·西莫尼扬"
         },
         "role": {
           "en": "Co-author of the VGG paper",
@@ -6747,7 +7326,7 @@ const milestones = [
       {
         "name": {
           "en": "Andrew Zisserman",
-          "zh": "Andrew Zisserman"
+          "zh": "安德鲁·齐瑟曼"
         },
         "role": {
           "en": "Co-author and Visual Geometry Group lead",
@@ -6764,11 +7343,20 @@ const milestones = [
       "en": "\"very deep convolutional networks\"",
       "zh": "\"非常深的卷积网络\""
     },
-    "quoteAttribution": "《Very Deep Convolutional Networks for Large-Scale Image Recognition》, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+    "quoteAttribution": {
+      "en": "《Very Deep Convolutional Networks for Large-Scale Image Recognition》, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "zh": "《用于大规模图像识别的超深卷积网络》, 卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
-      "workAuthors": "Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "workTitle": {
+        "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "zh": "用于大规模图像识别的超深卷积网络"
+      },
+      "workAuthors": {
+        "en": "Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+        "zh": "卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1409.1556"
     },
@@ -6799,8 +7387,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its value is clarity: it still helps explain depth, pretrained visual features, and baseline comparisons even though newer models are more efficient.",
@@ -6875,7 +7463,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg": {
           "caption": {
             "en": "Andrew Zisserman portrait",
-            "zh": "Andrew Zisserman 肖像"
+            "zh": "安德鲁·齐瑟曼 肖像"
           },
           "subcaption": {
             "en": "Profile photo from the ELLIS Oxford / University of Oxford page.",
@@ -7004,18 +7592,18 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
-            "zh": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+            "zh": "用于大规模图像识别的超深卷积网络"
           },
           "url": "https://arxiv.org/abs/1409.1556"
         },
         {
           "type": {
             "en": "Project",
-            "zh": "Project"
+            "zh": "项目"
           },
           "label": {
             "en": "Oxford VGG Very Deep ConvNets",
@@ -7026,7 +7614,7 @@ const milestones = [
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "TorchVision VGG model family",
@@ -7164,13 +7752,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>",
-      "zh": "<p>John Holland 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>"
+      "zh": "<p>John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "John H. Holland",
-          "zh": "John H. Holland"
+          "zh": "约翰·H·霍兰德"
         },
         "role": {
           "en": "Developed the genetic algorithm framework",
@@ -7187,11 +7775,20 @@ const milestones = [
       "en": "\"adaptation in natural and artificial systems\"",
       "zh": "\"自然与人工系统中的适应\""
     },
-    "quoteAttribution": "《Adaptation in Natural and Artificial Systems》, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+    "quoteAttribution": {
+      "en": "《Adaptation in Natural and Artificial Systems》, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "zh": "《自然系统与人工系统中的适应》, 约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Adaptation in Natural and Artificial Systems",
-      "workAuthors": "John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "workTitle": {
+        "en": "Adaptation in Natural and Artificial Systems",
+        "zh": "自然系统与人工系统中的适应"
+      },
+      "workAuthors": {
+        "en": "John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+        "zh": "约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
     },
@@ -7207,7 +7804,7 @@ const milestones = [
         },
         "html": {
           "en": "Before deep learning dominated AI, search was one of the field’s central metaphors. Holland brought biological adaptation into computation, making it possible to study learning and optimization in artificial populations.",
-          "zh": "在深度学习主导 AI 之前，搜索是这个领域的核心隐喻之一。Holland 将生物适应引入计算，使研究人工种群中的学习与优化成为可能。"
+          "zh": "在深度学习主导 AI 之前，搜索是这个领域的核心隐喻之一。霍兰德 将生物适应引入计算，使研究人工种群中的学习与优化成为可能。"
         }
       },
       {
@@ -7222,8 +7819,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. Their strength is population-based exploration, especially when gradients are unavailable or objectives are awkward to optimize.",
@@ -7247,7 +7844,10 @@ const milestones = [
             "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
             "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "MIT Press",
+          "sourceName": {
+            "en": "MIT Press",
+            "zh": "麻省理工学院 Press"
+          },
           "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "originalImageUrl": "Local original redraw",
@@ -7266,7 +7866,10 @@ const milestones = [
             "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
             "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "MIT Press",
+          "sourceName": {
+            "en": "MIT Press",
+            "zh": "麻省理工学院 Press"
+          },
           "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "originalImageUrl": "Local original redraw",
@@ -7285,7 +7888,10 @@ const milestones = [
             "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
             "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "MIT Press",
+          "sourceName": {
+            "en": "MIT Press",
+            "zh": "麻省理工学院 Press"
+          },
           "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "originalImageUrl": "Local original redraw",
@@ -7298,7 +7904,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg": {
           "caption": {
             "en": "John Henry Holland portrait",
-            "zh": "John Henry Holland 肖像"
+            "zh": "John Henry 霍兰德 肖像"
           },
           "subcaption": {
             "en": "Physics Today history article photo, credited there to Santa Fe Institute.",
@@ -7401,14 +8007,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "MIT Press",
+          "site": {
+            "en": "MIT Press",
+            "zh": "麻省理工学院 Press"
+          },
           "title": {
             "en": "Adaptation in Natural and Artificial Systems",
-            "zh": "Adaptation in Natural and Artificial Systems"
+            "zh": "自然系统与人工系统中的适应"
           },
           "description": {
             "en": "Book record for Holland’s foundational genetic-algorithm treatment.",
-            "zh": "Book record for Holland’s foundational genetic-algorithm treatment."
+            "zh": "图书 record for 霍兰德’s foundational genetic-algorithm treatment."
           },
           "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
@@ -7419,7 +8028,7 @@ const milestones = [
           },
           "action": {
             "en": "Open book record",
-            "zh": "Open book record"
+            "zh": "打开图书记录"
           }
         }
       ],
@@ -7427,18 +8036,18 @@ const milestones = [
         {
           "type": {
             "en": "Book",
-            "zh": "Book"
+            "zh": "图书"
           },
           "label": {
             "en": "Adaptation in Natural and Artificial Systems",
-            "zh": "Adaptation in Natural and Artificial Systems"
+            "zh": "自然系统与人工系统中的适应"
           },
           "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
         },
         {
           "type": {
             "en": "Toolkit",
-            "zh": "Toolkit"
+            "zh": "工具包"
           },
           "label": {
             "en": "DEAP evolutionary computation framework",
@@ -7449,7 +8058,7 @@ const milestones = [
         {
           "type": {
             "en": "Toolkit",
-            "zh": "Toolkit"
+            "zh": "工具包"
           },
           "label": {
             "en": "ECJ evolutionary computation system",
@@ -7593,7 +8202,7 @@ const milestones = [
       {
         "name": {
           "en": "Olaf Ronneberger",
-          "zh": "Olaf Ronneberger"
+          "zh": "奥拉夫·龙讷贝格"
         },
         "role": {
           "en": "Co-author of U-Net",
@@ -7606,7 +8215,7 @@ const milestones = [
       {
         "name": {
           "en": "Philipp Fischer",
-          "zh": "Philipp Fischer"
+          "zh": "菲利普·菲舍尔"
         },
         "role": {
           "en": "Co-author of U-Net",
@@ -7619,7 +8228,7 @@ const milestones = [
       {
         "name": {
           "en": "Thomas Brox",
-          "zh": "Thomas Brox"
+          "zh": "托马斯·布洛克斯"
         },
         "role": {
           "en": "Co-author of U-Net",
@@ -7636,11 +8245,20 @@ const milestones = [
       "en": "\"convolutional networks for biomedical image segmentation\"",
       "zh": "\"用于生物医学图像分割的卷积网络\""
     },
-    "quoteAttribution": "《U-Net: Convolutional Networks for Biomedical Image Segmentation》, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+    "quoteAttribution": {
+      "en": "《U-Net: Convolutional Networks for Biomedical Image Segmentation》, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "zh": "《U-Net：用于生物医学图像分割的卷积网络》, 奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
-      "workAuthors": "Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "workTitle": {
+        "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "zh": "U-Net：用于生物医学图像分割的卷积网络"
+      },
+      "workAuthors": {
+        "en": "Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+        "zh": "奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1505.04597"
     },
@@ -7671,8 +8289,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat U-Net as a canonical architecture for dense prediction and restoration. Its encoder-decoder shape with skip connections remains influential beyond biomedical segmentation, including image restoration and diffusion-model backbones.",
@@ -7696,7 +8314,10 @@ const milestones = [
             "en": "Distinct local redraw for U-Net, based on the related source material.",
             "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Freiburg CVL",
+          "sourceName": {
+            "en": "Freiburg CVL",
+            "zh": "弗赖堡 CVL"
+          },
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "originalImageUrl": "Local original redraw",
@@ -7715,7 +8336,10 @@ const milestones = [
             "en": "Distinct local redraw for U-Net, based on the related source material.",
             "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Freiburg CVL",
+          "sourceName": {
+            "en": "Freiburg CVL",
+            "zh": "弗赖堡 CVL"
+          },
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "originalImageUrl": "Local original redraw",
@@ -7734,7 +8358,10 @@ const milestones = [
             "en": "Distinct local redraw for U-Net, based on the related source material.",
             "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Freiburg CVL",
+          "sourceName": {
+            "en": "Freiburg CVL",
+            "zh": "弗赖堡 CVL"
+          },
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "originalImageUrl": "Local original redraw",
@@ -7747,13 +8374,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg": {
           "caption": {
             "en": "Olaf Ronneberger portrait",
-            "zh": "Olaf Ronneberger 肖像"
+            "zh": "奥拉夫·龙讷贝格 肖像"
           },
           "subcaption": {
             "en": "Researcher profile photo from the Freiburg LMB page.",
-            "zh": "来自 Freiburg LMB 研究者主页的人物照片。"
+            "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。"
           },
-          "sourceName": "University of Freiburg LMB",
+          "sourceName": {
+            "en": "University of Freiburg LMB",
+            "zh": "University of 弗赖堡 LMB"
+          },
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
           "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
           "originalImageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/Ronneberger_Portrait.jpg",
@@ -7850,14 +8480,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Freiburg CVL",
+          "site": {
+            "en": "Freiburg CVL",
+            "zh": "弗赖堡 CVL"
+          },
           "title": {
             "en": "U-Net release page",
             "zh": "U-Net release page"
           },
           "description": {
             "en": "Project page and downloadable implementation materials from the Freiburg group.",
-            "zh": "Project page and downloadable implementation materials from the Freiburg group."
+            "zh": "项目 page and downloadable implementation materials from the 弗赖堡 group."
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
@@ -7876,29 +8509,29 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
-            "zh": "U-Net: Convolutional Networks for Biomedical Image Segmentation"
+            "zh": "U-Net：用于生物医学图像分割的卷积网络"
           },
           "url": "https://arxiv.org/abs/1505.04597"
         },
         {
           "type": {
             "en": "Project",
-            "zh": "Project"
+            "zh": "项目"
           },
           "label": {
             "en": "Freiburg U-Net release page",
-            "zh": "Freiburg U-Net release page"
+            "zh": "弗赖堡 U-Net release page"
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/"
         },
         {
           "type": {
             "en": "Toolkit",
-            "zh": "Toolkit"
+            "zh": "工具包"
           },
           "label": {
             "en": "nnU-Net implementation project",
@@ -8042,7 +8675,7 @@ const milestones = [
       {
         "name": {
           "en": "Shaoqing Ren",
-          "zh": "任少卿 (Shaoqing Ren)"
+          "zh": "任少卿"
         },
         "role": {
           "en": "Co-author of Faster R-CNN",
@@ -8055,20 +8688,20 @@ const milestones = [
       {
         "name": {
           "en": "Kaiming He",
-          "zh": "何恺明 (Kaiming He)"
+          "zh": "何恺明"
         },
         "role": {
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/kaiming-he.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
         "name": {
           "en": "Ross Girshick",
-          "zh": "Ross Girshick"
+          "zh": "罗斯·格希克"
         },
         "role": {
           "en": "Co-author of Faster R-CNN",
@@ -8081,13 +8714,13 @@ const milestones = [
       {
         "name": {
           "en": "Jian Sun",
-          "zh": "孙剑 (Jian Sun)"
+          "zh": "孙剑"
         },
         "role": {
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/sun-jian.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -8098,11 +8731,20 @@ const milestones = [
       "en": "\"towards real-time object detection\"",
       "zh": "\"迈向实时目标检测\""
     },
-    "quoteAttribution": "《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+    "quoteAttribution": {
+      "en": "《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》, 任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
-      "workAuthors": "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "workTitle": {
+        "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+        "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测"
+      },
+      "workAuthors": {
+        "en": "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+        "zh": "任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1506.01497"
     },
@@ -8133,8 +8775,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Faster R-CNN as a turning point that made object detection more end-to-end and learnable. It is no longer the only dominant detector style, but its proposal-and-recognition split still frames how researchers explain detection tradeoffs.",
@@ -8213,7 +8855,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Portrait from Kaiming He's MIT-hosted personal page.",
-            "zh": "来自 Kaiming He 的 MIT 托管个人主页。"
+            "zh": "来自 Kaiming He 的 麻省理工学院 托管个人主页。"
           },
           "sourceName": "Kaiming He personal page",
           "source": "https://people.csail.mit.edu/kaiming/",
@@ -8250,7 +8892,7 @@ const milestones = [
       },
       "material": {
         "en": "NeurIPS paper and detection pipeline",
-        "zh": "NeurIPS 论文与检测流水线"
+        "zh": "神经信息处理系统大会 论文与检测流水线"
       },
       "demo": {
         "en": "Propose boxes, classify objects",
@@ -8323,7 +8965,7 @@ const milestones = [
           },
           "description": {
             "en": "Author-linked MATLAB implementation repository for Faster R-CNN.",
-            "zh": "Author-linked MATLAB implementation repository for Faster R-CNN."
+            "zh": "作者关联的 MATLAB 实现仓库： Faster R-CNN."
           },
           "url": "https://github.com/ShaoqingRen/faster_rcnn",
           "source": "https://github.com/ShaoqingRen/faster_rcnn",
@@ -8342,18 +8984,18 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
-            "zh": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
+            "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测"
           },
           "url": "https://arxiv.org/abs/1506.01497"
         },
         {
           "type": {
             "en": "Code",
-            "zh": "Code"
+            "zh": "代码"
           },
           "label": {
             "en": "ShaoqingRen/faster_rcnn",
@@ -8364,7 +9006,7 @@ const milestones = [
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "TorchVision Faster R-CNN model",
@@ -8508,7 +9150,7 @@ const milestones = [
       {
         "name": {
           "en": "Vladimir Vapnik",
-          "zh": "Vladimir Vapnik"
+          "zh": "弗拉基米尔·瓦普尼克"
         },
         "role": {
           "en": "Co-developed optimal-margin classifiers and statistical learning theory",
@@ -8521,7 +9163,7 @@ const milestones = [
       {
         "name": {
           "en": "Bernhard Boser",
-          "zh": "Bernhard Boser"
+          "zh": "伯恩哈德·博泽尔"
         },
         "role": {
           "en": "Co-author of the 1992 optimal-margin classifier paper",
@@ -8534,7 +9176,7 @@ const milestones = [
       {
         "name": {
           "en": "Isabelle Guyon",
-          "zh": "Isabelle Guyon"
+          "zh": "伊莎贝尔·居永"
         },
         "role": {
           "en": "Co-author of the 1992 optimal-margin classifier paper",
@@ -8551,11 +9193,20 @@ const milestones = [
       "en": "\"optimal margin classifiers\"",
       "zh": "\"最优间隔分类器\""
     },
-    "quoteAttribution": "《A Training Algorithm for Optimal Margin Classifiers》, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+    "quoteAttribution": {
+      "en": "《A Training Algorithm for Optimal Margin Classifiers》, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "zh": "《最优间隔分类器的训练算法》, 伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "A Training Algorithm for Optimal Margin Classifiers",
-      "workAuthors": "Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "workTitle": {
+        "en": "A Training Algorithm for Optimal Margin Classifiers",
+        "zh": "最优间隔分类器的训练算法"
+      },
+      "workAuthors": {
+        "en": "Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+        "zh": "伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401"
     },
@@ -8586,8 +9237,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat SVMs as a mature classical method whose conceptual importance exceeds its role in modern deep learning pipelines. The margin idea remains central for teaching generalization, kernels, and robust decision boundaries.",
@@ -8662,13 +9313,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
           "caption": {
             "en": "Isabelle Guyon portrait",
-            "zh": "Isabelle Guyon 肖像"
+            "zh": "伊莎贝尔·居永 肖像"
           },
           "subcaption": {
             "en": "University Paris-Saclay article image about Guyon and support vector machines.",
-            "zh": "Université Paris-Saclay 关于 Guyon 与支持向量机工作的文章配图。"
+            "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。"
           },
-          "sourceName": "Université Paris-Saclay",
+          "sourceName": {
+            "en": "Université Paris-Saclay",
+            "zh": "巴黎-萨克雷大学"
+          },
           "source": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
           "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
           "originalImageUrl": "https://www.universite-paris-saclay.fr/sites/default/files/2020-05/IsabelleGuyon.jpg",
@@ -8768,11 +9422,11 @@ const milestones = [
           "site": "ACM COLT",
           "title": {
             "en": "Optimal margin classifiers",
-            "zh": "Optimal margin classifiers"
+            "zh": "最优间隔分类器"
           },
           "description": {
             "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
-            "zh": "Original ACM record for the 1992 optimal-margin classifier paper."
+            "zh": "ACM 原始记录： the 1992 optimal-margin classifier paper."
           },
           "url": "https://dl.acm.org/doi/10.1145/130385.130401",
           "source": "https://dl.acm.org/doi/10.1145/130385.130401",
@@ -8783,7 +9437,7 @@ const milestones = [
           },
           "action": {
             "en": "Open ACM record",
-            "zh": "Open ACM record"
+            "zh": "打开 ACM 记录"
           }
         }
       ],
@@ -8791,18 +9445,18 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "A Training Algorithm for Optimal Margin Classifiers",
-            "zh": "A Training Algorithm for Optimal Margin Classifiers"
+            "zh": "最优间隔分类器的训练算法"
           },
           "url": "https://dl.acm.org/doi/10.1145/130385.130401"
         },
         {
           "type": {
             "en": "Toolkit",
-            "zh": "Toolkit"
+            "zh": "工具包"
           },
           "label": {
             "en": "LIBSVM project page",
@@ -8813,7 +9467,7 @@ const milestones = [
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "scikit-learn SVC",
@@ -8957,7 +9611,7 @@ const milestones = [
       {
         "name": {
           "en": "Leo Breiman",
-          "zh": "Leo Breiman"
+          "zh": "利奥·布雷曼"
         },
         "role": {
           "en": "Co-author of the CART monograph",
@@ -8970,7 +9624,7 @@ const milestones = [
       {
         "name": {
           "en": "Jerome Friedman",
-          "zh": "Jerome Friedman"
+          "zh": "杰罗姆·弗里德曼"
         },
         "role": {
           "en": "Co-author of the CART monograph",
@@ -8983,7 +9637,7 @@ const milestones = [
       {
         "name": {
           "en": "Richard Olshen",
-          "zh": "Richard Olshen"
+          "zh": "理查德·奥尔申"
         },
         "role": {
           "en": "Co-author of the CART monograph",
@@ -8996,7 +9650,7 @@ const milestones = [
       {
         "name": {
           "en": "Charles Stone",
-          "zh": "Charles Stone"
+          "zh": "查尔斯·斯通"
         },
         "role": {
           "en": "Co-author of the CART monograph",
@@ -9013,11 +9667,20 @@ const milestones = [
       "en": "\"classification and regression trees\"",
       "zh": "\"分类与回归树\""
     },
-    "quoteAttribution": "《Classification and Regression Trees》, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+    "quoteAttribution": {
+      "en": "《Classification and Regression Trees》, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+      "zh": "《分类与回归树》, 利奥·布雷曼, 杰罗姆·H·弗里德曼、理查德·A·奥尔申、查尔斯·J·斯通, 沃兹沃思 / 劳特利奇专著, 1984"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Classification and Regression Trees",
-      "workAuthors": "Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+      "workTitle": {
+        "en": "Classification and Regression Trees",
+        "zh": "分类与回归树"
+      },
+      "workAuthors": {
+        "en": "Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+        "zh": "利奥·布雷曼, 杰罗姆·H·弗里德曼、理查德·A·奥尔申、查尔斯·J·斯通, 沃兹沃思 / 劳特利奇专著, 1984"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.routledge.com/Classification-and-Regression-Trees/Breiman-Friedman-Olshen-Stone/p/book/9780412048418"
     },
@@ -9048,8 +9711,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat CART as a foundational interpretable model and as the basic unit behind stronger tree ensembles. Single trees are often too limited for peak accuracy, but their split-and-prune logic remains essential for explanation and tabular modeling.",
@@ -9124,13 +9787,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
           "caption": {
             "en": "Leo Breiman portrait",
-            "zh": "Leo Breiman 肖像"
+            "zh": "利奥·布雷曼 肖像"
           },
           "subcaption": {
             "en": "Portrait from the University of York Portraits of Statisticians archive.",
-            "zh": "来自 University of York “Portraits of Statisticians” 档案的人物照片。"
+            "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。"
           },
-          "sourceName": "University of York / Portraits of Statisticians",
+          "sourceName": {
+            "en": "University of York / Portraits of Statisticians",
+            "zh": "约克大学 / Portraits of Statisticians"
+          },
           "source": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
           "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
           "originalImageUrl": "http://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
@@ -9230,11 +9896,11 @@ const milestones = [
           "site": "Routledge",
           "title": {
             "en": "Classification and Regression Trees",
-            "zh": "Classification and Regression Trees"
+            "zh": "分类与回归树"
           },
           "description": {
             "en": "Publisher book record for the CART monograph.",
-            "zh": "Publisher book record for the CART monograph."
+            "zh": "出版社图书记录： the CART monograph."
           },
           "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
           "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
@@ -9245,7 +9911,7 @@ const milestones = [
           },
           "action": {
             "en": "Open book record",
-            "zh": "Open book record"
+            "zh": "打开图书记录"
           }
         }
       ],
@@ -9253,18 +9919,18 @@ const milestones = [
         {
           "type": {
             "en": "Book",
-            "zh": "Book"
+            "zh": "图书"
           },
           "label": {
             "en": "Classification and Regression Trees",
-            "zh": "Classification and Regression Trees"
+            "zh": "分类与回归树"
           },
           "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418"
         },
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "scikit-learn DecisionTreeClassifier",
@@ -9275,7 +9941,7 @@ const milestones = [
         {
           "type": {
             "en": "Package",
-            "zh": "Package"
+            "zh": "软件包"
           },
           "label": {
             "en": "R rpart package",
@@ -9400,7 +10066,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "IBM Thomas J. Watson Research Center",
-        "zh": "IBM Thomas J. Watson 研究中心"
+        "zh": "IBM 托马斯·J·沃森 研究中心"
       },
       "country": {
         "en": "Yorktown Heights, United States",
@@ -9413,13 +10079,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>",
-      "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。Kirkpatrick、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>"
+      "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Scott Kirkpatrick",
-          "zh": "Scott Kirkpatrick"
+          "zh": "斯科特·柯克帕特里克"
         },
         "role": {
           "en": "Co-author of the 1983 simulated annealing paper",
@@ -9432,7 +10098,7 @@ const milestones = [
       {
         "name": {
           "en": "C. Daniel Gelatt Jr.",
-          "zh": "C. Daniel Gelatt Jr."
+          "zh": "C·丹尼尔·格拉特 Jr."
         },
         "role": {
           "en": "Co-author of the 1983 simulated annealing paper",
@@ -9445,7 +10111,7 @@ const milestones = [
       {
         "name": {
           "en": "Mario P. Vecchi",
-          "zh": "Mario P. Vecchi"
+          "zh": "马里奥·P·维基"
         },
         "role": {
           "en": "Co-author of the 1983 simulated annealing paper",
@@ -9462,11 +10128,20 @@ const milestones = [
       "en": "\"optimization by simulated annealing\"",
       "zh": "\"通过模拟退火进行优化\""
     },
-    "quoteAttribution": "《Optimization by Simulated Annealing》, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+    "quoteAttribution": {
+      "en": "《Optimization by Simulated Annealing》, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+      "zh": "《模拟退火优化》, 斯科特·柯克帕特里克, C·丹尼尔·格拉特 Jr.、马里奥·P·维基, 《科学》, 1983"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Optimization by Simulated Annealing",
-      "workAuthors": "Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+      "workTitle": {
+        "en": "Optimization by Simulated Annealing",
+        "zh": "模拟退火优化"
+      },
+      "workAuthors": {
+        "en": "Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+        "zh": "斯科特·柯克帕特里克, C·丹尼尔·格拉特 Jr.、马里奥·P·维基, 《科学》, 1983"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671"
     },
@@ -9497,8 +10172,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat simulated annealing as a classic metaheuristic for escaping local optima. It is not a guarantee of easy global optimization, but the cooling metaphor remains useful for scheduling, routing, placement, and other hard combinatorial problems.",
@@ -9522,7 +10197,10 @@ const milestones = [
             "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
             "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Science",
+          "sourceName": {
+            "en": "Science",
+            "zh": "《科学》"
+          },
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "originalImageUrl": "Local original redraw",
@@ -9541,7 +10219,10 @@ const milestones = [
             "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
             "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Science",
+          "sourceName": {
+            "en": "Science",
+            "zh": "《科学》"
+          },
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "originalImageUrl": "Local original redraw",
@@ -9560,7 +10241,10 @@ const milestones = [
             "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
             "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Science",
+          "sourceName": {
+            "en": "Science",
+            "zh": "《科学》"
+          },
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "originalImageUrl": "Local original redraw",
@@ -9573,11 +10257,11 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif": {
           "caption": {
             "en": "Scott Kirkpatrick portrait",
-            "zh": "Scott Kirkpatrick 肖像"
+            "zh": "斯科特·柯克帕特里克 肖像"
           },
           "subcaption": {
             "en": "Workshop participant page photo for Scott Kirkpatrick.",
-            "zh": "Collective Cognition Workshop 参与者页面中的 Scott Kirkpatrick 照片。"
+            "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。"
           },
           "sourceName": "Collective Cognition Workshop / UC Davis CSC",
           "source": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
@@ -9614,7 +10298,7 @@ const milestones = [
       },
       "material": {
         "en": "Science paper on optimization by annealing",
-        "zh": "Science 模拟退火优化论文"
+        "zh": "《科学》 模拟退火优化论文"
       },
       "demo": {
         "en": "Accept some worse moves early, cool over time",
@@ -9676,14 +10360,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Science",
+          "site": {
+            "en": "Science",
+            "zh": "《科学》"
+          },
           "title": {
             "en": "Optimization by Simulated Annealing",
-            "zh": "Optimization by Simulated Annealing"
+            "zh": "模拟退火优化"
           },
           "description": {
             "en": "Original Science record for the physical annealing analogy applied to optimization.",
-            "zh": "Original Science record for the physical annealing analogy applied to optimization."
+            "zh": "《科学》 原始记录： the physical annealing analogy applied to optimization."
           },
           "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
@@ -9694,7 +10381,7 @@ const milestones = [
           },
           "action": {
             "en": "Open Science record",
-            "zh": "Open Science record"
+            "zh": "打开 《科学》 记录"
           }
         }
       ],
@@ -9702,18 +10389,18 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "Optimization by Simulated Annealing",
-            "zh": "Optimization by Simulated Annealing"
+            "zh": "模拟退火优化"
           },
           "url": "https://www.science.org/doi/10.1126/science.220.4598.671"
         },
         {
           "type": {
             "en": "Optimizer docs",
-            "zh": "Optimizer docs"
+            "zh": "优化器文档"
           },
           "label": {
             "en": "SciPy dual_annealing",
@@ -9724,7 +10411,7 @@ const milestones = [
         {
           "type": {
             "en": "Notebook",
-            "zh": "Notebook"
+            "zh": "笔记本"
           },
           "label": {
             "en": "Hedibert course PDF mirror",
@@ -9868,7 +10555,7 @@ const milestones = [
       {
         "name": {
           "en": "Robert Tibshirani",
-          "zh": "Robert Tibshirani"
+          "zh": "罗伯特·蒂布希拉尼"
         },
         "role": {
           "en": "Introduced the lasso method",
@@ -9885,11 +10572,20 @@ const milestones = [
       "en": "\"regression shrinkage and selection\"",
       "zh": "\"回归收缩与选择\""
     },
-    "quoteAttribution": "《Regression Shrinkage and Selection via the Lasso》, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+    "quoteAttribution": {
+      "en": "《Regression Shrinkage and Selection via the Lasso》, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+      "zh": "《通过 Lasso 进行回归收缩与选择》, 罗伯特·蒂布希拉尼, 《皇家统计学会期刊 B辑》, 1996"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Regression Shrinkage and Selection via the Lasso",
-      "workAuthors": "Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+      "workTitle": {
+        "en": "Regression Shrinkage and Selection via the Lasso",
+        "zh": "通过 Lasso 进行回归收缩与选择"
+      },
+      "workAuthors": {
+        "en": "Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+        "zh": "罗伯特·蒂布希拉尼, 《皇家统计学会期刊 B辑》, 1996"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x"
     },
@@ -9920,8 +10616,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Lasso as a standard tool for sparse, interpretable linear modeling. Its assumptions can be restrictive, but the idea of regularization-driven feature selection remains central in high-dimensional statistics and genomics.",
@@ -9996,13 +10692,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg": {
           "caption": {
             "en": "Robert Tibshirani portrait",
-            "zh": "Robert Tibshirani 肖像"
+            "zh": "罗伯特·蒂布希拉尼 肖像"
           },
           "subcaption": {
             "en": "Profile photo from Stanford Profiles.",
-            "zh": "来自 Stanford Profiles 的人物照片。"
+            "zh": "来自 斯坦福个人资料库 的人物照片。"
           },
-          "sourceName": "Stanford Profiles",
+          "sourceName": {
+            "en": "Stanford Profiles",
+            "zh": "斯坦福个人资料库"
+          },
           "source": "https://profiles.stanford.edu/robert-tibshirani",
           "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
           "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/4688/resources/profilephoto/350x350.1509552478140.jpg",
@@ -10106,11 +10805,11 @@ const milestones = [
           "site": "JRSS / Wiley",
           "title": {
             "en": "Regression Shrinkage and Selection via the Lasso",
-            "zh": "Regression Shrinkage and Selection via the Lasso"
+            "zh": "通过 Lasso 进行回归收缩与选择"
           },
           "description": {
             "en": "Publisher DOI page for Tibshirani’s 1996 lasso paper.",
-            "zh": "Publisher DOI page for Tibshirani’s 1996 lasso paper."
+            "zh": "出版社 DOI 页面： Tibshirani’s 1996 lasso paper."
           },
           "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
           "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
@@ -10129,18 +10828,18 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "Regression Shrinkage and Selection via the Lasso",
-            "zh": "Regression Shrinkage and Selection via the Lasso"
+            "zh": "通过 Lasso 进行回归收缩与选择"
           },
           "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x"
         },
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "scikit-learn Lasso",
@@ -10151,7 +10850,7 @@ const milestones = [
         {
           "type": {
             "en": "Toolkit",
-            "zh": "Toolkit"
+            "zh": "工具包"
           },
           "label": {
             "en": "glmnet project",
@@ -10276,7 +10975,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google",
-        "zh": "Google"
+        "zh": "谷歌"
       },
       "country": {
         "en": "Mountain View, United States",
@@ -10295,7 +10994,7 @@ const milestones = [
       {
         "name": {
           "en": "Christian Szegedy",
-          "zh": "Christian Szegedy"
+          "zh": "克里斯蒂安·塞格迪"
         },
         "role": {
           "en": "Lead author of the GoogLeNet paper",
@@ -10308,7 +11007,7 @@ const milestones = [
       {
         "name": {
           "en": "Google research team",
-          "zh": "Google 研究团队"
+          "zh": "谷歌 研究团队"
         },
         "role": {
           "en": "Developed the Inception architecture",
@@ -10325,11 +11024,20 @@ const milestones = [
       "en": "\"going deeper with convolutions\"",
       "zh": "\"用卷积走得更深\""
     },
-    "quoteAttribution": "《Going Deeper with Convolutions》, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+    "quoteAttribution": {
+      "en": "《Going Deeper with Convolutions》, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "zh": "《用卷积走得更深》, 克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Going Deeper with Convolutions",
-      "workAuthors": "Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "workTitle": {
+        "en": "Going Deeper with Convolutions",
+        "zh": "用卷积走得更深"
+      },
+      "workAuthors": {
+        "en": "Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+        "zh": "克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
     },
@@ -10345,7 +11053,7 @@ const milestones = [
         },
         "html": {
           "en": "After AlexNet and VGG, CNNs were becoming deeper and more compute-hungry. Google’s team explored how to increase representational power without simply scaling every layer.",
-          "zh": "AlexNet 和 VGG 之后，CNN 变得更深也更耗算力。Google 团队探索如何提升表示能力，而不是简单放大每一层。"
+          "zh": "AlexNet 和 VGG 之后，CNN 变得更深也更耗算力。谷歌 团队探索如何提升表示能力，而不是简单放大每一层。"
         }
       },
       {
@@ -10360,8 +11068,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Inception as a milestone in efficient modular CNN design. Its exact modules are less central now, but its emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs shaped later architecture search and block design.",
@@ -10436,11 +11144,11 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
           "caption": {
             "en": "Christian Szegedy episode portrait",
-            "zh": "Christian Szegedy 节目人物图"
+            "zh": "克里斯蒂安·塞格迪 节目人物图"
           },
           "subcaption": {
             "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
-            "zh": "TWIML 的 Christian Szegedy 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
+            "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
           },
           "sourceName": "The TWIML AI Podcast",
           "source": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
@@ -10477,7 +11185,7 @@ const milestones = [
       },
       "material": {
         "en": "CVPR paper and ImageNet-winning model",
-        "zh": "CVPR 论文与 ImageNet 冠军模型"
+        "zh": "计算机视觉与模式识别会议 论文与 ImageNet 冠军模型"
       },
       "demo": {
         "en": "Parallel filters, efficient depth",
@@ -10542,11 +11250,11 @@ const milestones = [
           "site": "CVF Open Access",
           "title": {
             "en": "Going Deeper with Convolutions",
-            "zh": "Going Deeper with Convolutions"
+            "zh": "用卷积走得更深"
           },
           "description": {
             "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
-            "zh": "Open-access CVPR page for GoogLeNet and the Inception block."
+            "zh": "Open-access 计算机视觉与模式识别会议 page for GoogLeNet and the Inception block."
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
           "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
@@ -10565,18 +11273,18 @@ const milestones = [
         {
           "type": {
             "en": "Paper",
-            "zh": "Paper"
+            "zh": "论文"
           },
           "label": {
             "en": "Going Deeper with Convolutions",
-            "zh": "Going Deeper with Convolutions"
+            "zh": "用卷积走得更深"
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
         },
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "TorchVision GoogLeNet",
@@ -10587,7 +11295,7 @@ const milestones = [
         {
           "type": {
             "en": "Model docs",
-            "zh": "Model docs"
+            "zh": "模型文档"
           },
           "label": {
             "en": "TensorFlow Keras InceptionV3",
@@ -10731,7 +11439,7 @@ const milestones = [
       {
         "name": {
           "en": "John Alan Robinson",
-          "zh": "John Alan Robinson"
+          "zh": "约翰·艾伦·罗宾逊"
         },
         "role": {
           "en": "Inventor of the resolution principle",
@@ -10748,11 +11456,20 @@ const milestones = [
       "en": "\"the resolution principle\"",
       "zh": "\"归结原理\""
     },
-    "quoteAttribution": "《A Machine-Oriented Logic Based on the Resolution Principle》, John Alan Robinson, Journal of the ACM, 1965",
+    "quoteAttribution": {
+      "en": "《A Machine-Oriented Logic Based on the Resolution Principle》, John Alan Robinson, Journal of the ACM, 1965",
+      "zh": "《基于归结原理的机器导向逻辑》, 约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "A Machine-Oriented Logic Based on the Resolution Principle",
-      "workAuthors": "John Alan Robinson, Journal of the ACM, 1965",
+      "workTitle": {
+        "en": "A Machine-Oriented Logic Based on the Resolution Principle",
+        "zh": "基于归结原理的机器导向逻辑"
+      },
+      "workAuthors": {
+        "en": "John Alan Robinson, Journal of the ACM, 1965",
+        "zh": "约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1145/321250.321253"
     },
@@ -10783,8 +11500,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat resolution as a foundational proof method for symbolic AI and automated reasoning. It is not how most modern AI systems reason, but it remains central to theorem proving, logic programming, and constraint-based systems.",
@@ -10802,13 +11519,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg": {
           "caption": {
             "en": "John Alan Robinson portrait",
-            "zh": "John Alan Robinson 肖像"
+            "zh": "约翰·艾伦·罗宾逊 肖像"
           },
           "subcaption": {
             "en": "Robinson in 2012; Wikimedia Commons portrait.",
-            "zh": "2012 年的 Robinson；Wikimedia Commons 人物照片。"
+            "zh": "2012 年的 Robinson；维基共享资源 人物照片。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
           "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Alan_Robinson_IMG_0493.jpg",
@@ -10827,7 +11547,10 @@ const milestones = [
             "en": "Local redraw for Resolution Method, based on the listed source material.",
             "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Journal of the ACM",
+          "sourceName": {
+            "en": "Journal of the ACM",
+            "zh": "《ACM 杂志》"
+          },
           "source": "https://doi.org/10.1145/321250.321253",
           "sourceUrl": "https://doi.org/10.1145/321250.321253",
           "originalImageUrl": "Local original redraw",
@@ -10846,7 +11569,10 @@ const milestones = [
             "en": "Local redraw for Resolution Method, based on the listed source material.",
             "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Journal of the ACM",
+          "sourceName": {
+            "en": "Journal of the ACM",
+            "zh": "《ACM 杂志》"
+          },
           "source": "https://doi.org/10.1145/321250.321253",
           "sourceUrl": "https://doi.org/10.1145/321250.321253",
           "originalImageUrl": "Local original redraw",
@@ -10881,7 +11607,7 @@ const milestones = [
       },
       "material": {
         "en": "Journal of the ACM paper and theorem-proving histories",
-        "zh": "JACM 论文与自动证明史料"
+        "zh": "《ACM 杂志》 论文与自动证明史料"
       },
       "demo": {
         "en": "Resolve clauses until contradiction appears",
@@ -10947,7 +11673,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Journal of the ACM",
+          "site": {
+            "en": "Journal of the ACM",
+            "zh": "《ACM 杂志》"
+          },
           "title": {
             "en": "Resolution principle paper",
             "zh": "归结原理论文"
@@ -10977,7 +11706,7 @@ const milestones = [
           },
           "label": {
             "en": "A Machine-Oriented Logic Based on the Resolution Principle",
-            "zh": "A Machine-Oriented Logic Based on the Resolution Principle"
+            "zh": "基于归结原理的机器导向逻辑"
           },
           "url": "https://doi.org/10.1145/321250.321253"
         },
@@ -10999,7 +11728,7 @@ const milestones = [
           },
           "label": {
             "en": "Stanford Encyclopedia: Automated Reasoning",
-            "zh": "Stanford Encyclopedia: Automated Reasoning"
+            "zh": "斯坦福大学 Encyclopedia: Automated Reasoning"
           },
           "url": "https://plato.stanford.edu/entries/reasoning-automated/"
         }
@@ -11139,7 +11868,7 @@ const milestones = [
       {
         "name": {
           "en": "Alain Colmerauer",
-          "zh": "Alain Colmerauer"
+          "zh": "阿兰·科尔梅罗尔"
         },
         "role": {
           "en": "Creator of the first Prolog implementation",
@@ -11152,7 +11881,7 @@ const milestones = [
       {
         "name": {
           "en": "Robert Kowalski",
-          "zh": "Robert Kowalski"
+          "zh": "罗伯特·科瓦尔斯基"
         },
         "role": {
           "en": "Logic programming theorist",
@@ -11169,11 +11898,20 @@ const milestones = [
       "en": "\"logic programming\"",
       "zh": "\"逻辑程序设计\""
     },
-    "quoteAttribution": "《The Birth of Prolog》, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+    "quoteAttribution": {
+      "en": "《The Birth of Prolog》, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "zh": "《Prolog 的诞生》, 阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "The Birth of Prolog",
-      "workAuthors": "Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "workTitle": {
+        "en": "The Birth of Prolog",
+        "zh": "Prolog 的诞生"
+      },
+      "workAuthors": {
+        "en": "Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+        "zh": "阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1145/155360.155362"
     },
@@ -11204,8 +11942,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Prolog as a landmark in logic programming and declarative computation. It is no longer the mainstream AI implementation language, but it remains important for explaining rule-based reasoning, constraints, and symbolic representation.",
@@ -11223,13 +11961,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg": {
           "caption": {
             "en": "Alain Colmerauer portrait",
-            "zh": "Alain Colmerauer 肖像"
+            "zh": "阿兰·科尔梅罗尔 肖像"
           },
           "subcaption": {
             "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category.",
-            "zh": "来自 Wikimedia Commons 的 Alain Colmerauer 相关人物图。"
+            "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
           "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
           "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/A-Colmerauer%20web-800x423.jpg",
@@ -11248,7 +11989,10 @@ const milestones = [
             "en": "Local redraw for PROLOG, based on the listed source material.",
             "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "ACM SIGPLAN Notices",
+          "sourceName": {
+            "en": "ACM SIGPLAN Notices",
+            "zh": "《ACM SIGPLAN 通讯》"
+          },
           "source": "https://doi.org/10.1145/155360.155362",
           "sourceUrl": "https://doi.org/10.1145/155360.155362",
           "originalImageUrl": "Local original redraw",
@@ -11267,7 +12011,10 @@ const milestones = [
             "en": "Local redraw for PROLOG, based on the listed source material.",
             "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "ACM SIGPLAN Notices",
+          "sourceName": {
+            "en": "ACM SIGPLAN Notices",
+            "zh": "《ACM SIGPLAN 通讯》"
+          },
           "source": "https://doi.org/10.1145/155360.155362",
           "sourceUrl": "https://doi.org/10.1145/155360.155362",
           "originalImageUrl": "Local original redraw",
@@ -11368,7 +12115,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "ACM SIGPLAN Notices",
+          "site": {
+            "en": "ACM SIGPLAN Notices",
+            "zh": "《ACM SIGPLAN 通讯》"
+          },
           "title": {
             "en": "The Birth of Prolog",
             "zh": "Prolog 的诞生"
@@ -11398,7 +12148,7 @@ const milestones = [
           },
           "label": {
             "en": "The Birth of Prolog",
-            "zh": "The Birth of Prolog"
+            "zh": "Prolog 的诞生"
           },
           "url": "https://doi.org/10.1145/155360.155362"
         },
@@ -11541,7 +12291,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "MIT Artificial Intelligence Laboratory",
-        "zh": "MIT 人工智能实验室"
+        "zh": "麻省理工学院 人工智能实验室"
       },
       "country": {
         "en": "Massachusetts, United States",
@@ -11560,7 +12310,7 @@ const milestones = [
       {
         "name": {
           "en": "Joseph Weizenbaum",
-          "zh": "Joseph Weizenbaum"
+          "zh": "约瑟夫·魏岑鲍姆"
         },
         "role": {
           "en": "Creator of ELIZA",
@@ -11577,11 +12327,20 @@ const milestones = [
       "en": "\"communication between man and machine\"",
       "zh": "\"人与机器之间的交流\""
     },
-    "quoteAttribution": "《ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine》, Joseph Weizenbaum, Communications of the ACM, 1966",
+    "quoteAttribution": {
+      "en": "《ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine》, Joseph Weizenbaum, Communications of the ACM, 1966",
+      "zh": "《ELIZA：研究人与机器之间自然语言交流的计算机程序》, 约瑟夫·魏岑鲍姆, 《ACM 通讯》, 1966"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine",
-      "workAuthors": "Joseph Weizenbaum, Communications of the ACM, 1966",
+      "workTitle": {
+        "en": "ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine",
+        "zh": "ELIZA：研究人与机器之间自然语言交流的计算机程序"
+      },
+      "workAuthors": {
+        "en": "Joseph Weizenbaum, Communications of the ACM, 1966",
+        "zh": "约瑟夫·魏岑鲍姆, 《ACM 通讯》, 1966"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1145/365153.365168"
     },
@@ -11612,8 +12371,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat ELIZA as a cautionary and historically important demonstration of conversational illusion. It was not deep understanding, but it showed how interaction design, expectation, and user projection can shape judgments about AI.",
@@ -11631,17 +12390,23 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg": {
           "caption": {
             "en": "Joseph Weizenbaum portrait",
-            "zh": "Joseph Weizenbaum 肖像"
+            "zh": "约瑟夫·魏岑鲍姆 肖像"
           },
           "subcaption": {
             "en": "MIT News portrait used in Weizenbaum’s obituary.",
-            "zh": "MIT News 在 Weizenbaum 讣闻中使用的人物图。"
+            "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。"
           },
-          "sourceName": "MIT News",
+          "sourceName": {
+            "en": "MIT News",
+            "zh": "麻省理工学院 新闻"
+          },
           "source": "https://news.mit.edu/2008/obit-weizenbaum-0310",
           "sourceUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
           "originalImageUrl": "https://news.mit.edu/sites/default/files/images/200803/200908311113135495.jpg",
-          "license": "MIT News image; rights not stated.",
+          "license": {
+            "en": "MIT News image; rights not stated.",
+            "zh": "麻省理工学院 新闻 image; rights not stated."
+          },
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
@@ -11656,7 +12421,10 @@ const milestones = [
             "en": "Local redraw for ELIZA, based on the listed source material.",
             "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Communications of the ACM",
+          "sourceName": {
+            "en": "Communications of the ACM",
+            "zh": "《ACM 通讯》"
+          },
           "source": "https://doi.org/10.1145/365153.365168",
           "sourceUrl": "https://doi.org/10.1145/365153.365168",
           "originalImageUrl": "Local original redraw",
@@ -11675,7 +12443,10 @@ const milestones = [
             "en": "Local redraw for ELIZA, based on the listed source material.",
             "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Communications of the ACM",
+          "sourceName": {
+            "en": "Communications of the ACM",
+            "zh": "《ACM 通讯》"
+          },
           "source": "https://doi.org/10.1145/365153.365168",
           "sourceUrl": "https://doi.org/10.1145/365153.365168",
           "originalImageUrl": "Local original redraw",
@@ -11710,7 +12481,7 @@ const milestones = [
       },
       "material": {
         "en": "CACM paper, MIT obituary, and ELIZA reconstruction materials",
-        "zh": "CACM 论文、MIT 讣闻与 ELIZA 复原材料"
+        "zh": "CACM 论文、麻省理工学院 讣闻与 ELIZA 复原材料"
       },
       "demo": {
         "en": "Reflect the user phrase into a question",
@@ -11776,7 +12547,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Communications of the ACM",
+          "site": {
+            "en": "Communications of the ACM",
+            "zh": "《ACM 通讯》"
+          },
           "title": {
             "en": "ELIZA paper",
             "zh": "ELIZA 论文"
@@ -11817,7 +12591,7 @@ const milestones = [
           },
           "label": {
             "en": "MIT News obituary for Joseph Weizenbaum",
-            "zh": "MIT News obituary for Joseph Weizenbaum"
+            "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆"
           },
           "url": "https://news.mit.edu/2008/obit-weizenbaum-0310"
         },
@@ -11968,7 +12742,7 @@ const milestones = [
       {
         "name": {
           "en": "John J. Hopfield",
-          "zh": "John J. Hopfield"
+          "zh": "约翰·J·霍普菲尔德"
         },
         "role": {
           "en": "Inventor of Hopfield networks",
@@ -11985,11 +12759,20 @@ const milestones = [
       "en": "\"neural networks and physical systems\"",
       "zh": "\"神经网络与物理系统\""
     },
-    "quoteAttribution": "《Neural Networks and Physical Systems with Emergent Collective Computational Abilities》, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+    "quoteAttribution": {
+      "en": "《Neural Networks and Physical Systems with Emergent Collective Computational Abilities》, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "zh": "《具有涌现集体计算能力的神经网络与物理系统》, 约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
-      "workAuthors": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "workTitle": {
+        "en": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+        "zh": "具有涌现集体计算能力的神经网络与物理系统"
+      },
+      "workAuthors": {
+        "en": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+        "zh": "约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554"
     },
@@ -12020,8 +12803,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Hopfield networks as historically central to energy-based neural computation. Modern systems rarely use the original form directly, but the connection between memory, optimization, and statistical physics remains influential.",
@@ -12039,7 +12822,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg": {
           "caption": {
             "en": "John J. Hopfield portrait",
-            "zh": "John J. Hopfield 肖像"
+            "zh": "约翰·J·霍普菲尔德 肖像"
           },
           "subcaption": {
             "en": "Nobel Prize profile portrait for Hopfield.",
@@ -12214,7 +12997,7 @@ const milestones = [
           },
           "label": {
             "en": "Neural Networks and Physical Systems",
-            "zh": "Neural Networks and Physical Systems"
+            "zh": "神经网络与物理系统"
           },
           "url": "https://doi.org/10.1073/pnas.79.8.2554"
         },
@@ -12225,7 +13008,7 @@ const milestones = [
           },
           "label": {
             "en": "Nobel Prize: John J. Hopfield facts",
-            "zh": "Nobel Prize: John J. Hopfield facts"
+            "zh": "Nobel Prize: 约翰·J·霍普菲尔德 facts"
           },
           "url": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/"
         },
@@ -12376,11 +13159,11 @@ const milestones = [
       {
         "name": {
           "en": "Nitish Srivastava",
-          "zh": "Nitish Srivastava"
+          "zh": "尼蒂什·斯里瓦斯塔瓦"
         },
         "role": {
           "en": "First author of the JMLR dropout paper",
-          "zh": "JMLR Dropout 论文第一作者"
+          "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -12389,7 +13172,7 @@ const milestones = [
       {
         "name": {
           "en": "Geoffrey Hinton",
-          "zh": "Geoffrey Hinton"
+          "zh": "杰弗里·辛顿"
         },
         "role": {
           "en": "Co-author and deep learning pioneer",
@@ -12406,11 +13189,20 @@ const milestones = [
       "en": "\"prevent neural networks from overfitting\"",
       "zh": "\"防止神经网络过拟合\""
     },
-    "quoteAttribution": "《Dropout: A Simple Way to Prevent Neural Networks from Overfitting》, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+    "quoteAttribution": {
+      "en": "《Dropout: A Simple Way to Prevent Neural Networks from Overfitting》, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "zh": "《Dropout：防止神经网络过拟合的简单方法》, 尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
-      "workAuthors": "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "workTitle": {
+        "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+        "zh": "Dropout：防止神经网络过拟合的简单方法"
+      },
+      "workAuthors": {
+        "en": "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+        "zh": "尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html"
     },
@@ -12441,8 +13233,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat dropout as a simple, effective regularization idea whose role depends on architecture and scale. It remains common in APIs and teaching, even though modern systems often combine it with normalization, data augmentation, and other regularizers.",
@@ -12460,7 +13252,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg": {
           "caption": {
             "en": "Nitish Srivastava portrait",
-            "zh": "Nitish Srivastava 肖像"
+            "zh": "尼蒂什·斯里瓦斯塔瓦 肖像"
           },
           "subcaption": {
             "en": "Portrait from Srivastava’s University of Toronto page.",
@@ -12485,7 +13277,10 @@ const milestones = [
             "en": "Local redraw for Dropout, based on the listed source material.",
             "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "JMLR",
+          "sourceName": {
+            "en": "JMLR",
+            "zh": "《机器学习研究杂志》"
+          },
           "source": "https://jmlr.org/papers/v15/srivastava14a.html",
           "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
           "originalImageUrl": "Local original redraw",
@@ -12504,7 +13299,10 @@ const milestones = [
             "en": "Local redraw for Dropout, based on the listed source material.",
             "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "JMLR",
+          "sourceName": {
+            "en": "JMLR",
+            "zh": "《机器学习研究杂志》"
+          },
           "source": "https://jmlr.org/papers/v15/srivastava14a.html",
           "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
           "originalImageUrl": "Local original redraw",
@@ -12539,7 +13337,7 @@ const milestones = [
       },
       "material": {
         "en": "JMLR paper and framework documentation",
-        "zh": "JMLR 论文与框架文档"
+        "zh": "《机器学习研究杂志》 论文与框架文档"
       },
       "demo": {
         "en": "Mask units in training, scale predictions at test time",
@@ -12605,14 +13403,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "JMLR",
+          "site": {
+            "en": "JMLR",
+            "zh": "《机器学习研究杂志》"
+          },
           "title": {
             "en": "Dropout paper",
             "zh": "Dropout 论文"
           },
           "description": {
             "en": "Primary JMLR source; local images redraw masks and model averaging.",
-            "zh": "JMLR 原始论文；本地图重画掩码和模型平均。"
+            "zh": "《机器学习研究杂志》 原始论文；本地图重画掩码和模型平均。"
           },
           "url": "https://jmlr.org/papers/v15/srivastava14a.html",
           "source": "https://jmlr.org/papers/v15/srivastava14a.html",
@@ -12623,7 +13424,7 @@ const milestones = [
           },
           "action": {
             "en": "Open JMLR paper",
-            "zh": "打开 JMLR 论文"
+            "zh": "打开 《机器学习研究杂志》 论文"
           }
         }
       ],
@@ -12635,7 +13436,7 @@ const milestones = [
           },
           "label": {
             "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
-            "zh": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+            "zh": "Dropout：防止神经网络过拟合的简单方法"
           },
           "url": "https://jmlr.org/papers/v15/srivastava14a.html"
         },
@@ -12797,7 +13598,7 @@ const milestones = [
       {
         "name": {
           "en": "Joseph Redmon",
-          "zh": "Joseph Redmon"
+          "zh": "约瑟夫·雷德蒙"
         },
         "role": {
           "en": "First author of YOLO",
@@ -12810,7 +13611,7 @@ const milestones = [
       {
         "name": {
           "en": "Ali Farhadi",
-          "zh": "Ali Farhadi"
+          "zh": "阿里·法哈迪"
         },
         "role": {
           "en": "Co-author of YOLO",
@@ -12827,11 +13628,20 @@ const milestones = [
       "en": "\"You Only Look Once\"",
       "zh": "\"只看一次\""
     },
-    "quoteAttribution": "《You Only Look Once: Unified, Real-Time Object Detection》, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+    "quoteAttribution": {
+      "en": "《You Only Look Once: Unified, Real-Time Object Detection》, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "zh": "《你只看一次：统一的实时目标检测》, 约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "You Only Look Once: Unified, Real-Time Object Detection",
-      "workAuthors": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "workTitle": {
+        "en": "You Only Look Once: Unified, Real-Time Object Detection",
+        "zh": "你只看一次：统一的实时目标检测"
+      },
+      "workAuthors": {
+        "en": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+        "zh": "约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1506.02640"
     },
@@ -12862,8 +13672,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat YOLO as the system that made real-time detection a central benchmark goal. Its later family is broad and uneven, but the original contribution remains the framing of detection as fast single-pass prediction.",
@@ -12881,11 +13691,11 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg": {
           "caption": {
             "en": "Joseph Redmon portrait",
-            "zh": "Joseph Redmon 肖像"
+            "zh": "约瑟夫·雷德蒙 肖像"
           },
           "subcaption": {
             "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship.",
-            "zh": "Allen School 关于 Redmon 获 Google Ph.D. Fellowship 的新闻照片。"
+            "zh": "Allen School 关于 Redmon 获 谷歌 Ph.D. Fellowship 的新闻照片。"
           },
           "sourceName": "University of Washington Allen School",
           "source": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
@@ -12906,7 +13716,10 @@ const milestones = [
             "en": "Local redraw for YOLO, based on the listed source material.",
             "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "CVPR / arXiv",
+          "sourceName": {
+            "en": "CVPR / arXiv",
+            "zh": "计算机视觉与模式识别会议 / arXiv"
+          },
           "source": "https://arxiv.org/abs/1506.02640",
           "sourceUrl": "https://arxiv.org/abs/1506.02640",
           "originalImageUrl": "Local original redraw",
@@ -12925,7 +13738,10 @@ const milestones = [
             "en": "Local redraw for YOLO, based on the listed source material.",
             "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "CVPR / arXiv",
+          "sourceName": {
+            "en": "CVPR / arXiv",
+            "zh": "计算机视觉与模式识别会议 / arXiv"
+          },
           "source": "https://arxiv.org/abs/1506.02640",
           "sourceUrl": "https://arxiv.org/abs/1506.02640",
           "originalImageUrl": "Local original redraw",
@@ -12960,7 +13776,7 @@ const milestones = [
       },
       "material": {
         "en": "CVPR paper, Darknet project, and open-access paper page",
-        "zh": "CVPR 论文、Darknet 项目与开放论文页"
+        "zh": "计算机视觉与模式识别会议 论文、Darknet 项目与开放论文页"
       },
       "demo": {
         "en": "Grid cells predict boxes and classes at once",
@@ -13026,7 +13842,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "CVPR / arXiv",
+          "site": {
+            "en": "CVPR / arXiv",
+            "zh": "计算机视觉与模式识别会议 / arXiv"
+          },
           "title": {
             "en": "YOLO paper",
             "zh": "YOLO 论文"
@@ -13056,7 +13875,7 @@ const milestones = [
           },
           "label": {
             "en": "You Only Look Once: Unified, Real-Time Object Detection",
-            "zh": "You Only Look Once: Unified, Real-Time Object Detection"
+            "zh": "你只看一次：统一的实时目标检测"
           },
           "url": "https://arxiv.org/abs/1506.02640"
         },
@@ -13067,7 +13886,7 @@ const milestones = [
           },
           "label": {
             "en": "CVPR open-access paper page",
-            "zh": "CVPR open-access paper page"
+            "zh": "计算机视觉与模式识别会议 open-access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html"
         },
@@ -13199,7 +14018,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google Brain",
-        "zh": "Google Brain"
+        "zh": "谷歌大脑"
       },
       "country": {
         "en": "Mountain View, United States",
@@ -13218,7 +14037,7 @@ const milestones = [
       {
         "name": {
           "en": "Tomas Mikolov",
-          "zh": "Tomas Mikolov"
+          "zh": "托马斯·米科洛夫"
         },
         "role": {
           "en": "Lead author of word2vec papers",
@@ -13235,11 +14054,20 @@ const milestones = [
       "en": "\"distributed representations of words\"",
       "zh": "\"词的分布式表示\""
     },
-    "quoteAttribution": "《Distributed Representations of Words and Phrases and their Compositionality》, Tomas Mikolov et al., NeurIPS, 2013",
+    "quoteAttribution": {
+      "en": "《Distributed Representations of Words and Phrases and their Compositionality》, Tomas Mikolov et al., NeurIPS, 2013",
+      "zh": "《词与短语的分布式表示及其组合性》, 托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Distributed Representations of Words and Phrases and their Compositionality",
-      "workAuthors": "Tomas Mikolov et al., NeurIPS, 2013",
+      "workTitle": {
+        "en": "Distributed Representations of Words and Phrases and their Compositionality",
+        "zh": "词与短语的分布式表示及其组合性"
+      },
+      "workAuthors": {
+        "en": "Tomas Mikolov et al., NeurIPS, 2013",
+        "zh": "托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1301.3781"
     },
@@ -13270,8 +14098,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat Word2Vec as a foundational embedding method that made distributional semantics operational at scale. Its vectors are simpler than contextual language-model representations, but the geometric view of meaning still underlies retrieval and representation learning.",
@@ -13289,7 +14117,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg": {
           "caption": {
             "en": "Tomas Mikolov portrait",
-            "zh": "Tomas Mikolov 肖像"
+            "zh": "托马斯·米科洛夫 肖像"
           },
           "subcaption": {
             "en": "IEEE Signal Processing Society newsletter image for Mikolov.",
@@ -13314,7 +14142,10 @@ const milestones = [
             "en": "Local redraw for Word2Vec, based on the listed source material.",
             "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "NeurIPS / arXiv",
+          "sourceName": {
+            "en": "NeurIPS / arXiv",
+            "zh": "神经信息处理系统大会 / arXiv"
+          },
           "source": "https://arxiv.org/abs/1301.3781",
           "sourceUrl": "https://arxiv.org/abs/1301.3781",
           "originalImageUrl": "Local original redraw",
@@ -13333,7 +14164,10 @@ const milestones = [
             "en": "Local redraw for Word2Vec, based on the listed source material.",
             "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "NeurIPS / arXiv",
+          "sourceName": {
+            "en": "NeurIPS / arXiv",
+            "zh": "神经信息处理系统大会 / arXiv"
+          },
           "source": "https://arxiv.org/abs/1301.3781",
           "sourceUrl": "https://arxiv.org/abs/1301.3781",
           "originalImageUrl": "Local original redraw",
@@ -13368,7 +14202,7 @@ const milestones = [
       },
       "material": {
         "en": "NeurIPS paper, arXiv preprint, and Google code archive",
-        "zh": "NeurIPS 论文、arXiv 预印本与 Google 代码档案"
+        "zh": "神经信息处理系统大会 论文、arXiv 预印本与 谷歌 代码档案"
       },
       "demo": {
         "en": "Move through a semantic vector space",
@@ -13434,7 +14268,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "NeurIPS / arXiv",
+          "site": {
+            "en": "NeurIPS / arXiv",
+            "zh": "神经信息处理系统大会 / arXiv"
+          },
           "title": {
             "en": "Word2Vec papers",
             "zh": "Word2Vec 论文"
@@ -13464,7 +14301,7 @@ const milestones = [
           },
           "label": {
             "en": "Efficient Estimation of Word Representations in Vector Space",
-            "zh": "Efficient Estimation of Word Representations in Vector Space"
+            "zh": "向量空间中词表示的高效估计"
           },
           "url": "https://arxiv.org/abs/1301.3781"
         },
@@ -13475,7 +14312,7 @@ const milestones = [
           },
           "label": {
             "en": "Distributed Representations of Words and Phrases and their Compositionality",
-            "zh": "Distributed Representations of Words and Phrases and their Compositionality"
+            "zh": "词与短语的分布式表示及其组合性"
           },
           "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality"
         },
@@ -13486,7 +14323,7 @@ const milestones = [
           },
           "label": {
             "en": "Google Code archive: word2vec",
-            "zh": "Google Code archive: word2vec"
+            "zh": "谷歌 代码 archive: word2vec"
           },
           "url": "https://code.google.com/archive/p/word2vec/"
         }
@@ -13656,11 +14493,20 @@ const milestones = [
       "en": "\"large-scale hierarchical image database\"",
       "zh": "\"大规模层级图像数据库\""
     },
-    "quoteAttribution": "《ImageNet: A Large-Scale Hierarchical Image Database》, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+    "quoteAttribution": {
+      "en": "《ImageNet: A Large-Scale Hierarchical Image Database》, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "zh": "《ImageNet：大规模层级图像数据库》, 邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "ImageNet: A Large-Scale Hierarchical Image Database",
-      "workAuthors": "Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "workTitle": {
+        "en": "ImageNet: A Large-Scale Hierarchical Image Database",
+        "zh": "ImageNet：大规模层级图像数据库"
+      },
+      "workAuthors": {
+        "en": "Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+        "zh": "邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://ieeexplore.ieee.org/document/5206848"
     },
@@ -13691,8 +14537,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. It helped reveal deep learning’s power in vision, while also showing how datasets, labels, and leaderboards shape what the field optimizes.",
@@ -13714,9 +14560,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Stanford Profiles portrait for Fei-Fei Li.",
-            "zh": "Stanford Profiles 中的李飞飞人物图。"
+            "zh": "斯坦福个人资料库 中的李飞飞人物图。"
           },
-          "sourceName": "Stanford Profiles",
+          "sourceName": {
+            "en": "Stanford Profiles",
+            "zh": "斯坦福个人资料库"
+          },
           "source": "https://profiles.stanford.edu/fei-fei-li",
           "sourceUrl": "https://profiles.stanford.edu/fei-fei-li",
           "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/15052/resources/profilephoto/350x350.1550534393295.jpg",
@@ -13735,7 +14584,10 @@ const milestones = [
             "en": "Local redraw for ImageNet, based on the listed source material.",
             "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "CVPR / IEEE",
+          "sourceName": {
+            "en": "CVPR / IEEE",
+            "zh": "计算机视觉与模式识别会议 / IEEE"
+          },
           "source": "https://ieeexplore.ieee.org/document/5206848",
           "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
           "originalImageUrl": "Local original redraw",
@@ -13754,7 +14606,10 @@ const milestones = [
             "en": "Local redraw for ImageNet, based on the listed source material.",
             "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "CVPR / IEEE",
+          "sourceName": {
+            "en": "CVPR / IEEE",
+            "zh": "计算机视觉与模式识别会议 / IEEE"
+          },
           "source": "https://ieeexplore.ieee.org/document/5206848",
           "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
           "originalImageUrl": "Local original redraw",
@@ -13789,7 +14644,7 @@ const milestones = [
       },
       "material": {
         "en": "CVPR paper, project site, and Stanford profile",
-        "zh": "CVPR 论文、项目网站与 Stanford 人物页"
+        "zh": "计算机视觉与模式识别会议 论文、项目网站与 斯坦福大学 人物页"
       },
       "demo": {
         "en": "Labels move from WordNet hierarchy to benchmark leaderboard",
@@ -13855,7 +14710,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "CVPR / IEEE",
+          "site": {
+            "en": "CVPR / IEEE",
+            "zh": "计算机视觉与模式识别会议 / IEEE"
+          },
           "title": {
             "en": "ImageNet paper",
             "zh": "ImageNet 论文"
@@ -13885,7 +14743,7 @@ const milestones = [
           },
           "label": {
             "en": "ImageNet: A Large-Scale Hierarchical Image Database",
-            "zh": "ImageNet: A Large-Scale Hierarchical Image Database"
+            "zh": "ImageNet：大规模层级图像数据库"
           },
           "url": "https://ieeexplore.ieee.org/document/5206848"
         },
@@ -13907,7 +14765,7 @@ const milestones = [
           },
           "label": {
             "en": "Stanford Profile: Fei-Fei Li",
-            "zh": "Stanford Profile: Fei-Fei Li"
+            "zh": "斯坦福大学 Profile: Fei-Fei Li"
           },
           "url": "https://profiles.stanford.edu/fei-fei-li"
         }
@@ -14047,7 +14905,7 @@ const milestones = [
       {
         "name": {
           "en": "Volodymyr Mnih",
-          "zh": "Volodymyr Mnih"
+          "zh": "沃洛迪米尔·姆尼赫"
         },
         "role": {
           "en": "First author of DQN work",
@@ -14060,7 +14918,7 @@ const milestones = [
       {
         "name": {
           "en": "David Silver",
-          "zh": "David Silver"
+          "zh": "戴维·席尔瓦"
         },
         "role": {
           "en": "DeepMind reinforcement learning researcher",
@@ -14077,11 +14935,20 @@ const milestones = [
       "en": "\"playing Atari with deep reinforcement learning\"",
       "zh": "\"用深度强化学习玩 Atari\""
     },
-    "quoteAttribution": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
+    "quoteAttribution": {
+      "en": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
+      "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Playing Atari with Deep Reinforcement Learning",
-      "workAuthors": "Volodymyr Mnih et al., DeepMind, 2013",
+      "workTitle": {
+        "en": "Playing Atari with Deep Reinforcement Learning",
+        "zh": "用深度强化学习玩 Atari"
+      },
+      "workAuthors": {
+        "en": "Volodymyr Mnih et al., DeepMind, 2013",
+        "zh": "沃洛迪米尔·姆尼赫等, DeepMind，2013"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1312.5602"
     },
@@ -14112,8 +14979,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. It is limited by sample efficiency and stability challenges, but it showed that perception, action, and reward could be learned in one neural loop.",
@@ -14131,7 +14998,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
           "caption": {
             "en": "Volodymyr Mnih portrait",
-            "zh": "Volodymyr Mnih 肖像"
+            "zh": "沃洛迪米尔·姆尼赫 肖像"
           },
           "subcaption": {
             "en": "Portrait from Mnih’s University of Toronto-hosted personal page.",
@@ -14156,7 +15023,10 @@ const milestones = [
             "en": "Local redraw for Deep Q Network, based on the listed source material.",
             "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "arXiv / Nature",
+          "sourceName": {
+            "en": "arXiv / Nature",
+            "zh": "arXiv / 《自然》"
+          },
           "source": "https://arxiv.org/abs/1312.5602",
           "sourceUrl": "https://arxiv.org/abs/1312.5602",
           "originalImageUrl": "Local original redraw",
@@ -14175,7 +15045,10 @@ const milestones = [
             "en": "Local redraw for Deep Q Network, based on the listed source material.",
             "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "arXiv / Nature",
+          "sourceName": {
+            "en": "arXiv / Nature",
+            "zh": "arXiv / 《自然》"
+          },
           "source": "https://arxiv.org/abs/1312.5602",
           "sourceUrl": "https://arxiv.org/abs/1312.5602",
           "originalImageUrl": "Local original redraw",
@@ -14210,7 +15083,7 @@ const milestones = [
       },
       "material": {
         "en": "arXiv paper, Nature paper, and DeepMind blog",
-        "zh": "arXiv 论文、Nature 论文与 DeepMind 博客"
+        "zh": "arXiv 论文、《自然》 论文与 DeepMind 博客"
       },
       "demo": {
         "en": "Pixels enter replay; Q-values choose actions",
@@ -14276,7 +15149,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "arXiv / Nature",
+          "site": {
+            "en": "arXiv / Nature",
+            "zh": "arXiv / 《自然》"
+          },
           "title": {
             "en": "DQN paper",
             "zh": "DQN 论文"
@@ -14306,7 +15182,7 @@ const milestones = [
           },
           "label": {
             "en": "Playing Atari with Deep Reinforcement Learning",
-            "zh": "Playing Atari with Deep Reinforcement Learning"
+            "zh": "用深度强化学习玩 Atari"
           },
           "url": "https://arxiv.org/abs/1312.5602"
         },
@@ -14328,7 +15204,7 @@ const milestones = [
           },
           "label": {
             "en": "Google DeepMind: Deep Reinforcement Learning",
-            "zh": "Google DeepMind: Deep Reinforcement Learning"
+            "zh": "谷歌 DeepMind: Deep Reinforcement Learning"
           },
           "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/"
         }
@@ -14468,7 +15344,7 @@ const milestones = [
       {
         "name": {
           "en": "David Blei",
-          "zh": "David Blei"
+          "zh": "戴维·布莱"
         },
         "role": {
           "en": "First author of LDA",
@@ -14481,7 +15357,7 @@ const milestones = [
       {
         "name": {
           "en": "Michael Jordan",
-          "zh": "Michael Jordan"
+          "zh": "迈克尔·乔丹"
         },
         "role": {
           "en": "Co-author and probabilistic ML researcher",
@@ -14498,11 +15374,20 @@ const milestones = [
       "en": "\"latent Dirichlet allocation\"",
       "zh": "\"潜在狄利克雷分配\""
     },
-    "quoteAttribution": "《Latent Dirichlet Allocation》, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+    "quoteAttribution": {
+      "en": "《Latent Dirichlet Allocation》, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "zh": "《潜在狄利克雷分配》, 戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Latent Dirichlet Allocation",
-      "workAuthors": "David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "workTitle": {
+        "en": "Latent Dirichlet Allocation",
+        "zh": "潜在狄利克雷分配"
+      },
+      "workAuthors": {
+        "en": "David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+        "zh": "戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html"
     },
@@ -14533,8 +15418,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Expert Evaluation",
-          "zh": "专家评价"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
           "en": "Today experts usually treat LDA as a classic probabilistic topic model and a teaching example for generative modeling. Neural embeddings and transformers often perform better in modern applications, but LDA remains valuable for interpretability and Bayesian inference concepts.",
@@ -14552,7 +15437,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg": {
           "caption": {
             "en": "David M. Blei portrait",
-            "zh": "David M. Blei 肖像"
+            "zh": "戴维·M·布莱 肖像"
           },
           "subcaption": {
             "en": "Portrait from Blei’s Columbia University homepage.",
@@ -14577,7 +15462,10 @@ const milestones = [
             "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
             "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "JMLR",
+          "sourceName": {
+            "en": "JMLR",
+            "zh": "《机器学习研究杂志》"
+          },
           "source": "https://jmlr.org/papers/v3/blei03a.html",
           "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
           "originalImageUrl": "Local original redraw",
@@ -14596,7 +15484,10 @@ const milestones = [
             "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
             "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "JMLR",
+          "sourceName": {
+            "en": "JMLR",
+            "zh": "《机器学习研究杂志》"
+          },
           "source": "https://jmlr.org/papers/v3/blei03a.html",
           "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
           "originalImageUrl": "Local original redraw",
@@ -14631,7 +15522,7 @@ const milestones = [
       },
       "material": {
         "en": "JMLR paper, author page, and implementation docs",
-        "zh": "JMLR 论文、作者主页与实现文档"
+        "zh": "《机器学习研究杂志》 论文、作者主页与实现文档"
       },
       "demo": {
         "en": "Documents mix topics; topics emit words",
@@ -14697,14 +15588,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "JMLR",
+          "site": {
+            "en": "JMLR",
+            "zh": "《机器学习研究杂志》"
+          },
           "title": {
             "en": "LDA paper",
             "zh": "LDA 论文"
           },
           "description": {
             "en": "Primary JMLR source for LDA; local images redraw topic mixtures and plate notation.",
-            "zh": "LDA 的 JMLR 原始来源；本地图重画主题混合和 plate notation。"
+            "zh": "LDA 的 《机器学习研究杂志》 原始来源；本地图重画主题混合和 plate notation。"
           },
           "url": "https://jmlr.org/papers/v3/blei03a.html",
           "source": "https://jmlr.org/papers/v3/blei03a.html",
@@ -14715,7 +15609,7 @@ const milestones = [
           },
           "action": {
             "en": "Open JMLR paper",
-            "zh": "打开 JMLR 论文"
+            "zh": "打开 《机器学习研究杂志》 论文"
           }
         }
       ],
@@ -14727,7 +15621,7 @@ const milestones = [
           },
           "label": {
             "en": "Latent Dirichlet Allocation",
-            "zh": "Latent Dirichlet Allocation"
+            "zh": "潜在狄利克雷分配"
           },
           "url": "https://jmlr.org/papers/v3/blei03a.html"
         },
@@ -14738,7 +15632,7 @@ const milestones = [
           },
           "label": {
             "en": "David M. Blei homepage",
-            "zh": "David M. Blei homepage"
+            "zh": "戴维·M·布莱 homepage"
           },
           "url": "https://www.cs.columbia.edu/~blei/"
         },
@@ -14870,7 +15764,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "MIT Artificial Intelligence Laboratory",
-        "zh": "MIT 人工智能实验室"
+        "zh": "麻省理工学院 人工智能实验室"
       },
       "country": {
         "en": "Massachusetts, United States",
@@ -14889,7 +15783,7 @@ const milestones = [
       {
         "name": {
           "en": "Terry Winograd",
-          "zh": "Terry Winograd"
+          "zh": "特里·维诺格拉德"
         },
         "role": {
           "en": "Creator of SHRDLU",
@@ -14906,11 +15800,20 @@ const milestones = [
       "en": "\"Blocks-world language understanding\"",
       "zh": "\"积木世界语言理解\""
     },
-    "quoteAttribution": "《SHRDLU dissertation record》, Terry Winograd",
+    "quoteAttribution": {
+      "en": "《SHRDLU dissertation record》, Terry Winograd",
+      "zh": "《SHRDLU 博士论文记录》, 特里·维诺格拉德"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "SHRDLU dissertation record",
-      "workAuthors": "Terry Winograd",
+      "workTitle": {
+        "en": "SHRDLU dissertation record",
+        "zh": "SHRDLU 博士论文记录"
+      },
+      "workAuthors": {
+        "en": "Terry Winograd",
+        "zh": "特里·维诺格拉德"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095"
     },
@@ -14960,17 +15863,23 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg": {
           "caption": {
             "en": "Terry Winograd portrait",
-            "zh": "Terry Winograd 肖像"
+            "zh": "特里·维诺格拉德 肖像"
           },
           "subcaption": {
             "en": "Portrait from Stanford Computer Science profile.",
-            "zh": "来自 Stanford Computer Science 个人资料页的人物图。"
+            "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。"
           },
-          "sourceName": "Stanford Computer Science",
+          "sourceName": {
+            "en": "Stanford Computer Science",
+            "zh": "斯坦福大学 Computer 《科学》"
+          },
           "source": "https://www.cs.stanford.edu/people/terry-winograd",
           "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
           "originalImageUrl": "https://www.cs.stanford.edu/sites/g/files/sbiybj28076/files/styles/large_square/public/media/person/terry-winograd1509560558940.jpg",
-          "license": "Stanford profile image; reuse rights not stated.",
+          "license": {
+            "en": "Stanford profile image; reuse rights not stated.",
+            "zh": "斯坦福大学 profile image; reuse rights not stated."
+          },
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
@@ -14985,7 +15894,10 @@ const milestones = [
             "en": "Local redraw for SHRDLU, based on the listed source material.",
             "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "MIT DSpace",
+          "sourceName": {
+            "en": "MIT DSpace",
+            "zh": "麻省理工学院 DSpace"
+          },
           "source": "https://dspace.mit.edu/handle/1721.1/7095",
           "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
           "originalImageUrl": "Local original redraw",
@@ -15004,7 +15916,10 @@ const milestones = [
             "en": "Local redraw for SHRDLU, based on the listed source material.",
             "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "MIT DSpace",
+          "sourceName": {
+            "en": "MIT DSpace",
+            "zh": "麻省理工学院 DSpace"
+          },
           "source": "https://dspace.mit.edu/handle/1721.1/7095",
           "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
           "originalImageUrl": "Local original redraw",
@@ -15039,7 +15954,7 @@ const milestones = [
       },
       "material": {
         "en": "MIT thesis and AI Lab reports",
-        "zh": "MIT 论文与 AI Lab 报告"
+        "zh": "麻省理工学院 论文与 AI Lab 报告"
       },
       "demo": {
         "en": "Parse language into plans over visible blocks",
@@ -15115,14 +16030,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "MIT DSpace",
+          "site": {
+            "en": "MIT DSpace",
+            "zh": "麻省理工学院 DSpace"
+          },
           "title": {
             "en": "SHRDLU dissertation record",
             "zh": "SHRDLU 学位论文记录"
           },
           "description": {
             "en": "Repository record for Winograd's language-understanding work.",
-            "zh": "Winograd 语言理解工作的 MIT 仓储记录。"
+            "zh": "Winograd 语言理解工作的 麻省理工学院 仓储记录。"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/7095",
           "source": "https://dspace.mit.edu/handle/1721.1/7095",
@@ -15133,7 +16051,7 @@ const milestones = [
           },
           "action": {
             "en": "Open MIT record",
-            "zh": "打开 MIT 记录"
+            "zh": "打开 麻省理工学院 记录"
           }
         }
       ],
@@ -15145,7 +16063,7 @@ const milestones = [
           },
           "label": {
             "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
-            "zh": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language"
+            "zh": "在理解自然语言的计算机程序中把过程作为数据表示"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/7095"
         },
@@ -15156,7 +16074,7 @@ const milestones = [
           },
           "label": {
             "en": "Terry Winograd, Stanford Computer Science",
-            "zh": "Terry Winograd, Stanford Computer Science"
+            "zh": "特里·维诺格拉德, 斯坦福大学 Computer 《科学》"
           },
           "url": "https://www.cs.stanford.edu/people/terry-winograd"
         },
@@ -15167,7 +16085,7 @@ const milestones = [
           },
           "label": {
             "en": "Terry Winograd oral history, CBI",
-            "zh": "Terry Winograd oral history, CBI"
+            "zh": "特里·维诺格拉德 oral history, CBI"
           },
           "url": "https://hdl.handle.net/11299/107717"
         }
@@ -15265,7 +16183,7 @@ const milestones = [
     },
     "title": {
       "en": "Deep Blue",
-      "zh": "Deep Blue"
+      "zh": "深蓝"
     },
     "subtitle": {
       "en": "AI Top 100 Achievements",
@@ -15274,7 +16192,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "IBM Research",
-        "zh": "IBM Research"
+        "zh": "IBM 研究院"
       },
       "country": {
         "en": "New York, United States",
@@ -15287,17 +16205,17 @@ const milestones = [
     },
     "description": {
       "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>",
-      "zh": "<p>Deep Blue 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>"
+      "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Murray Campbell",
-          "zh": "Murray Campbell"
+          "zh": "默里·坎贝尔"
         },
         "role": {
           "en": "Deep Blue team member",
-          "zh": "Deep Blue 团队成员"
+          "zh": "深蓝 团队成员"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -15310,17 +16228,26 @@ const milestones = [
       "en": "\"Specialized chess search hardware\"",
       "zh": "\"专用国际象棋搜索硬件\""
     },
-    "quoteAttribution": "《Deep Blue journal article》, Murray Campbell",
+    "quoteAttribution": {
+      "en": "《Deep Blue journal article》, Murray Campbell",
+      "zh": "《深蓝期刊论文》, 默里·坎贝尔"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Deep Blue journal article",
-      "workAuthors": "Murray Campbell",
+      "workTitle": {
+        "en": "Deep Blue journal article",
+        "zh": "深蓝期刊论文"
+      },
+      "workAuthors": {
+        "en": "Murray Campbell",
+        "zh": "默里·坎贝尔"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
     },
     "quotePage": {
       "en": "BenchCouncil AI100: Game AI / Deep Blue",
-      "zh": "BenchCouncil AI100：博弈 AI / Deep Blue"
+      "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
     },
     "commentarySections": [
       {
@@ -15330,7 +16257,7 @@ const milestones = [
         },
         "html": {
           "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage.",
-          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。Deep Blue 把这条路线带到全球舞台。"
+          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。"
         }
       },
       {
@@ -15350,7 +16277,7 @@ const milestones = [
         },
         "html": {
           "en": "Deep Blue shaped public expectations for AI milestones and became a reference point for later game systems such as AlphaGo.",
-          "zh": "Deep Blue 影响了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。"
+          "zh": "深蓝 影响了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。"
         }
       }
     ],
@@ -15364,17 +16291,23 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
           "caption": {
             "en": "Murray Campbell portrait",
-            "zh": "Murray Campbell 肖像"
+            "zh": "默里·坎贝尔 肖像"
           },
           "subcaption": {
             "en": "Portrait from IBM Research profile.",
-            "zh": "来自 IBM Research 人物资料页的人物图。"
+            "zh": "来自 IBM 研究院 人物资料页的人物图。"
           },
-          "sourceName": "IBM Research",
+          "sourceName": {
+            "en": "IBM Research",
+            "zh": "IBM 研究院"
+          },
           "source": "https://research.ibm.com/people/murray-campbell",
           "sourceUrl": "https://research.ibm.com/people/murray-campbell",
           "originalImageUrl": "https://research-website-prod-ibmers-images.s3.us-east.cloud-object-storage.appdomain.cloud/3729",
-          "license": "IBM Research profile image; reuse rights not stated.",
+          "license": {
+            "en": "IBM Research profile image; reuse rights not stated.",
+            "zh": "IBM 研究院 profile image; reuse rights not stated."
+          },
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
@@ -15387,9 +16320,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Local redraw for Deep Blue, based on the listed source material.",
-            "zh": "Deep Blue 的本地重绘图，依据页面列出的来源材料制作。"
+            "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Artificial Intelligence",
+          "sourceName": {
+            "en": "Artificial Intelligence",
+            "zh": "人工智能"
+          },
           "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "originalImageUrl": "Local original redraw",
@@ -15406,9 +16342,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Local redraw for Deep Blue, based on the listed source material.",
-            "zh": "Deep Blue 的本地重绘图，依据页面列出的来源材料制作。"
+            "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Artificial Intelligence",
+          "sourceName": {
+            "en": "Artificial Intelligence",
+            "zh": "人工智能"
+          },
           "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "originalImageUrl": "Local original redraw",
@@ -15443,7 +16382,7 @@ const milestones = [
       },
       "material": {
         "en": "IBM Research profile and Deep Blue histories",
-        "zh": "IBM Research 人物资料与 Deep Blue 史料"
+        "zh": "IBM 研究院 人物资料与 深蓝 史料"
       },
       "demo": {
         "en": "Search millions of chess positions with evaluation hardware",
@@ -15519,14 +16458,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Artificial Intelligence",
+          "site": {
+            "en": "Artificial Intelligence",
+            "zh": "人工智能"
+          },
           "title": {
             "en": "Deep Blue journal article",
-            "zh": "Deep Blue 期刊论文"
+            "zh": "深蓝 期刊论文"
           },
           "description": {
             "en": "AI journal article record on Deep Blue as a chess-playing system.",
-            "zh": "关于 Deep Blue 国际象棋系统的 AI 期刊记录。"
+            "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
           },
           "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
@@ -15549,7 +16491,7 @@ const milestones = [
           },
           "label": {
             "en": "Murray Campbell, IBM Research",
-            "zh": "Murray Campbell, IBM Research"
+            "zh": "默里·坎贝尔, IBM 研究院"
           },
           "url": "https://research.ibm.com/people/murray-campbell"
         },
@@ -15571,7 +16513,7 @@ const milestones = [
           },
           "label": {
             "en": "IBM100: Deep Blue",
-            "zh": "IBM100: Deep Blue"
+            "zh": "IBM100: 深蓝"
           },
           "url": "https://www.ibm.com/history/deep-blue"
         }
@@ -15678,7 +16620,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "MIT Artificial Intelligence Laboratory",
-        "zh": "MIT 人工智能实验室"
+        "zh": "麻省理工学院 人工智能实验室"
       },
       "country": {
         "en": "Massachusetts, United States",
@@ -15697,7 +16639,7 @@ const milestones = [
       {
         "name": {
           "en": "Marvin Minsky",
-          "zh": "Marvin Minsky"
+          "zh": "马文·明斯基"
         },
         "role": {
           "en": "Author of the frame representation proposal",
@@ -15714,11 +16656,20 @@ const milestones = [
       "en": "\"Structured slots with defaults and inheritance\"",
       "zh": "\"带默认值和继承的槽结构\""
     },
-    "quoteAttribution": "《A Framework for Representing Knowledge》, Marvin Minsky",
+    "quoteAttribution": {
+      "en": "《A Framework for Representing Knowledge》, Marvin Minsky",
+      "zh": "《表示知识的一种框架》, 马文·明斯基"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "A Framework for Representing Knowledge",
-      "workAuthors": "Marvin Minsky",
+      "workTitle": {
+        "en": "A Framework for Representing Knowledge",
+        "zh": "表示知识的一种框架"
+      },
+      "workAuthors": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
     },
@@ -15768,17 +16719,23 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg": {
           "caption": {
             "en": "Marvin Minsky portrait",
-            "zh": "Marvin Minsky 肖像"
+            "zh": "马文·明斯基 肖像"
           },
           "subcaption": {
             "en": "Portrait from MIT News obituary.",
-            "zh": "来自 MIT News 讣闻的人物图。"
+            "zh": "来自 麻省理工学院 新闻 讣闻的人物图。"
           },
-          "sourceName": "MIT News",
+          "sourceName": {
+            "en": "MIT News",
+            "zh": "麻省理工学院 新闻"
+          },
           "source": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
           "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
           "originalImageUrl": "https://news.mit.edu/sites/default/files/images/201601/HP-MIT-Marvin-Minsky-02.jpg",
-          "license": "MIT News image; terms stated on MIT News media page.",
+          "license": {
+            "en": "MIT News image; terms stated on MIT News media page.",
+            "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page."
+          },
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
@@ -15793,7 +16750,10 @@ const milestones = [
             "en": "Local redraw for Frame, based on the listed source material.",
             "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "MIT Media Lab course archive",
+          "sourceName": {
+            "en": "MIT Media Lab course archive",
+            "zh": "麻省理工学院 Media Lab course archive"
+          },
           "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "originalImageUrl": "Local original redraw",
@@ -15812,7 +16772,10 @@ const milestones = [
             "en": "Local redraw for Frame, based on the listed source material.",
             "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "MIT Media Lab course archive",
+          "sourceName": {
+            "en": "MIT Media Lab course archive",
+            "zh": "麻省理工学院 Media Lab course archive"
+          },
           "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "originalImageUrl": "Local original redraw",
@@ -15847,7 +16810,7 @@ const milestones = [
       },
       "material": {
         "en": "Minsky frame paper and MIT historical material",
-        "zh": "Minsky 框架论文与 MIT 史料"
+        "zh": "明斯基 框架论文与 麻省理工学院 史料"
       },
       "demo": {
         "en": "Fill slots and inherit defaults for a situation",
@@ -15923,14 +16886,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "MIT Media Lab course archive",
+          "site": {
+            "en": "MIT Media Lab course archive",
+            "zh": "麻省理工学院 Media Lab course archive"
+          },
           "title": {
             "en": "A Framework for Representing Knowledge",
-            "zh": "A Framework for Representing Knowledge"
+            "zh": "表示知识的一种框架"
           },
           "description": {
             "en": "Course-hosted copy of Minsky's frame proposal.",
-            "zh": "课程资料中保存的 Minsky 框架论文。"
+            "zh": "课程资料中保存的 明斯基 框架论文。"
           },
           "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
@@ -15953,7 +16919,7 @@ const milestones = [
           },
           "label": {
             "en": "A Framework for Representing Knowledge",
-            "zh": "A Framework for Representing Knowledge"
+            "zh": "表示知识的一种框架"
           },
           "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
         },
@@ -15964,7 +16930,7 @@ const milestones = [
           },
           "label": {
             "en": "Marvin Minsky obituary, MIT News",
-            "zh": "Marvin Minsky obituary, MIT News"
+            "zh": "马文·明斯基 obituary, 麻省理工学院 新闻"
           },
           "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125"
         },
@@ -15975,7 +16941,7 @@ const milestones = [
           },
           "label": {
             "en": "Frame, MIT AI memo bibliographic record",
-            "zh": "Frame, MIT AI memo bibliographic record"
+            "zh": "Frame, 麻省理工学院 AI memo bibliographic record"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/6089"
         }
@@ -16099,7 +17065,7 @@ const milestones = [
       {
         "name": {
           "en": "Edward Feigenbaum",
-          "zh": "Edward Feigenbaum"
+          "zh": "爱德华·费根鲍姆"
         },
         "role": {
           "en": "Leader in expert-system AI",
@@ -16116,11 +17082,20 @@ const milestones = [
       "en": "\"Rule-guided chemical structure inference\"",
       "zh": "\"规则引导的化学结构推断\""
     },
-    "quoteAttribution": "《Chemical inference paper record》, Edward Feigenbaum",
+    "quoteAttribution": {
+      "en": "《Chemical inference paper record》, Edward Feigenbaum",
+      "zh": "《化学推断论文记录》, 爱德华·费根鲍姆"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Chemical inference paper record",
-      "workAuthors": "Edward Feigenbaum",
+      "workTitle": {
+        "en": "Chemical inference paper record",
+        "zh": "化学推断论文记录"
+      },
+      "workAuthors": {
+        "en": "Edward Feigenbaum",
+        "zh": "爱德华·费根鲍姆"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1021/ci60034a002"
     },
@@ -16170,13 +17145,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg": {
           "caption": {
             "en": "Edward Feigenbaum portrait",
-            "zh": "Edward Feigenbaum 肖像"
+            "zh": "爱德华·费根鲍姆 肖像"
           },
           "subcaption": {
             "en": "Turing laureate photo from Wikimedia Commons.",
-            "zh": "来自 Wikimedia Commons 的图灵奖得主照片。"
+            "zh": "来自 维基共享资源 的图灵奖得主照片。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
           "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2012-06-15%201994%20Turing%20Laureate%20Ed%20Feigenbaum.jpg",
@@ -16299,7 +17277,7 @@ const milestones = [
         },
         {
           "en": "AI for Science",
-          "zh": "AI for Science"
+          "zh": "AI for 《科学》"
         }
       ],
       "relatedRegions": [
@@ -16355,7 +17333,7 @@ const milestones = [
           },
           "label": {
             "en": "Applications of Artificial Intelligence for Chemical Inference",
-            "zh": "Applications of Artificial Intelligence for Chemical Inference"
+            "zh": "人工智能在化学推断中的应用"
           },
           "url": "https://doi.org/10.1021/ci60034a002"
         },
@@ -16366,7 +17344,7 @@ const milestones = [
           },
           "label": {
             "en": "ACM Turing Award profile for Edward Feigenbaum",
-            "zh": "ACM Turing Award profile for Edward Feigenbaum"
+            "zh": "ACM 图灵 Award profile for 爱德华·费根鲍姆"
           },
           "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235"
         },
@@ -16377,7 +17355,7 @@ const milestones = [
           },
           "label": {
             "en": "Stanford Knowledge Systems Laboratory history",
-            "zh": "Stanford Knowledge Systems Laboratory history"
+            "zh": "斯坦福大学 Knowledge Systems Laboratory history"
           },
           "url": "http://ksl-web.stanford.edu/"
         }
@@ -16503,7 +17481,7 @@ const milestones = [
       {
         "name": {
           "en": "David Lowe",
-          "zh": "David Lowe"
+          "zh": "戴维·洛"
         },
         "role": {
           "en": "Inventor of SIFT",
@@ -16520,11 +17498,20 @@ const milestones = [
       "en": "\"Scale-invariant local features\"",
       "zh": "\"尺度不变局部特征\""
     },
-    "quoteAttribution": "《SIFT ICCV paper PDF》, David Lowe",
+    "quoteAttribution": {
+      "en": "《SIFT ICCV paper PDF》, David Lowe",
+      "zh": "《SIFT 国际计算机视觉会议论文 PDF》, 戴维·洛"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "SIFT ICCV paper PDF",
-      "workAuthors": "David Lowe",
+      "workTitle": {
+        "en": "SIFT ICCV paper PDF",
+        "zh": "SIFT 国际计算机视觉会议论文 PDF"
+      },
+      "workAuthors": {
+        "en": "David Lowe",
+        "zh": "戴维·洛"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
     },
@@ -16574,11 +17561,11 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg": {
           "caption": {
             "en": "David Lowe portrait",
-            "zh": "David Lowe 肖像"
+            "zh": "戴维·洛 肖像"
           },
           "subcaption": {
             "en": "Portrait from UBC Computer Science profile.",
-            "zh": "来自 UBC Computer Science 个人资料页的人物图。"
+            "zh": "来自 UBC Computer 《科学》 个人资料页的人物图。"
           },
           "sourceName": "University of British Columbia",
           "source": "https://www.cs.ubc.ca/people/david-lowe",
@@ -16770,7 +17757,7 @@ const milestones = [
           },
           "label": {
             "en": "Distinctive Image Features from Scale-Invariant Keypoints",
-            "zh": "Distinctive Image Features from Scale-Invariant Keypoints"
+            "zh": "来自尺度不变关键点的区分性图像特征"
           },
           "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94"
         },
@@ -16781,7 +17768,7 @@ const milestones = [
           },
           "label": {
             "en": "David Lowe, UBC Computer Science",
-            "zh": "David Lowe, UBC Computer Science"
+            "zh": "戴维·洛, UBC Computer 《科学》"
           },
           "url": "https://www.cs.ubc.ca/people/david-lowe"
         }
@@ -16907,7 +17894,7 @@ const milestones = [
       {
         "name": {
           "en": "Laurens van der Maaten",
-          "zh": "Laurens van der Maaten"
+          "zh": "劳伦斯·范德马滕"
         },
         "role": {
           "en": "Co-author of t-SNE",
@@ -16924,11 +17911,20 @@ const milestones = [
       "en": "\"Neighbor-preserving nonlinear embedding\"",
       "zh": "\"保持邻域的非线性嵌入\""
     },
-    "quoteAttribution": "《Visualizing Data using t-SNE》, Laurens van der Maaten",
+    "quoteAttribution": {
+      "en": "《Visualizing Data using t-SNE》, Laurens van der Maaten",
+      "zh": "《使用 t-SNE 可视化数据》, 劳伦斯·范德马滕"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Visualizing Data using t-SNE",
-      "workAuthors": "Laurens van der Maaten",
+      "workTitle": {
+        "en": "Visualizing Data using t-SNE",
+        "zh": "使用 t-SNE 可视化数据"
+      },
+      "workAuthors": {
+        "en": "Laurens van der Maaten",
+        "zh": "劳伦斯·范德马滕"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html"
     },
@@ -16978,13 +17974,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png": {
           "caption": {
             "en": "Laurens van der Maaten portrait",
-            "zh": "Laurens van der Maaten 肖像"
+            "zh": "劳伦斯·范德马滕 肖像"
           },
           "subcaption": {
             "en": "Portrait from van der Maaten homepage.",
             "zh": "来自 van der Maaten 个人主页的人物图。"
           },
-          "sourceName": "Laurens van der Maaten homepage",
+          "sourceName": {
+            "en": "Laurens van der Maaten homepage",
+            "zh": "劳伦斯·范德马滕 homepage"
+          },
           "source": "https://lvdmaaten.github.io/",
           "sourceUrl": "https://lvdmaaten.github.io/",
           "originalImageUrl": "https://lvdmaaten.github.io/images/laurens.png",
@@ -17003,7 +18002,10 @@ const milestones = [
             "en": "Local redraw for t-SNE, based on the listed source material.",
             "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Journal of Machine Learning Research",
+          "sourceName": {
+            "en": "Journal of Machine Learning Research",
+            "zh": "《机器学习研究杂志》"
+          },
           "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "originalImageUrl": "Local original redraw",
@@ -17022,7 +18024,10 @@ const milestones = [
             "en": "Local redraw for t-SNE, based on the listed source material.",
             "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "Journal of Machine Learning Research",
+          "sourceName": {
+            "en": "Journal of Machine Learning Research",
+            "zh": "《机器学习研究杂志》"
+          },
           "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "originalImageUrl": "Local original redraw",
@@ -17057,7 +18062,7 @@ const milestones = [
       },
       "material": {
         "en": "JMLR paper and author materials",
-        "zh": "JMLR 论文与作者资料"
+        "zh": "《机器学习研究杂志》 论文与作者资料"
       },
       "demo": {
         "en": "Turn high-dimensional neighborhoods into 2D clusters",
@@ -17133,14 +18138,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Journal of Machine Learning Research",
+          "site": {
+            "en": "Journal of Machine Learning Research",
+            "zh": "《机器学习研究杂志》"
+          },
           "title": {
             "en": "Visualizing Data using t-SNE",
-            "zh": "Visualizing Data using t-SNE"
+            "zh": "使用 t-SNE 可视化数据"
           },
           "description": {
             "en": "JMLR article page for the canonical t-SNE paper.",
-            "zh": "t-SNE 经典论文的 JMLR 页面。"
+            "zh": "t-SNE 经典论文的 《机器学习研究杂志》 页面。"
           },
           "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
@@ -17151,7 +18159,7 @@ const milestones = [
           },
           "action": {
             "en": "Open JMLR page",
-            "zh": "打开 JMLR 页面"
+            "zh": "打开 《机器学习研究杂志》 页面"
           }
         }
       ],
@@ -17163,7 +18171,7 @@ const milestones = [
           },
           "label": {
             "en": "Visualizing Data using t-SNE",
-            "zh": "Visualizing Data using t-SNE"
+            "zh": "使用 t-SNE 可视化数据"
           },
           "url": "https://jmlr.org/papers/v9/vandermaaten08a.html"
         },
@@ -17174,7 +18182,7 @@ const milestones = [
           },
           "label": {
             "en": "Laurens van der Maaten homepage",
-            "zh": "Laurens van der Maaten homepage"
+            "zh": "劳伦斯·范德马滕 homepage"
           },
           "url": "https://lvdmaaten.github.io/"
         },
@@ -17283,7 +18291,7 @@ const milestones = [
     },
     "title": {
       "en": "Rosenblatt Perceptron",
-      "zh": "Rosenblatt 感知机"
+      "zh": "罗森布拉特 感知机"
     },
     "subtitle": {
       "en": "AI Top 100 Achievements",
@@ -17305,13 +18313,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. It promised machines that could learn from examples rather than being programmed only by explicit rules. The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification.</p>",
-      "zh": "<p>Rosenblatt 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>"
+      "zh": "<p>罗森布拉特 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Frank Rosenblatt",
-          "zh": "Frank Rosenblatt"
+          "zh": "弗兰克·罗森布拉特"
         },
         "role": {
           "en": "Inventor of the perceptron",
@@ -17328,17 +18336,26 @@ const milestones = [
       "en": "\"Linear threshold learning machine\"",
       "zh": "\"线性阈值学习机\""
     },
-    "quoteAttribution": "《The perceptron paper record》, Frank Rosenblatt",
+    "quoteAttribution": {
+      "en": "《The perceptron paper record》, Frank Rosenblatt",
+      "zh": "《感知机论文记录》, 弗兰克·罗森布拉特"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "The perceptron paper record",
-      "workAuthors": "Frank Rosenblatt",
+      "workTitle": {
+        "en": "The perceptron paper record",
+        "zh": "感知机论文记录"
+      },
+      "workAuthors": {
+        "en": "Frank Rosenblatt",
+        "zh": "弗兰克·罗森布拉特"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1037/h0042519"
     },
     "quotePage": {
       "en": "BenchCouncil AI100: Neural networks / Rosenblatt Perceptron",
-      "zh": "BenchCouncil AI100：神经网络 / Rosenblatt 感知机"
+      "zh": "BenchCouncil AI100：神经网络 / 罗森布拉特 感知机"
     },
     "commentarySections": [
       {
@@ -17382,17 +18399,23 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg": {
           "caption": {
             "en": "Frank Rosenblatt with perceptron hardware",
-            "zh": "Frank Rosenblatt 与感知机硬件"
+            "zh": "弗兰克·罗森布拉特 与感知机硬件"
           },
           "subcaption": {
             "en": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
-            "zh": "Cornell 关于 Rosenblatt 与感知机谱系的历史图片。"
+            "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。"
           },
-          "sourceName": "Cornell Chronicle",
+          "sourceName": {
+            "en": "Cornell Chronicle",
+            "zh": "康奈尔大学 Chronicle"
+          },
           "source": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
           "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
           "originalImageUrl": "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2019-09/0925_rosenblatt_main.jpg",
-          "license": "Cornell historical image; reuse rights not stated on extracted image URL.",
+          "license": {
+            "en": "Cornell historical image; reuse rights not stated on extracted image URL.",
+            "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL."
+          },
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
@@ -17405,7 +18428,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
-            "zh": "Rosenblatt 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+            "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
           },
           "sourceName": "Psychological Review",
           "source": "https://doi.org/10.1037/h0042519",
@@ -17424,7 +18447,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
-            "zh": "Rosenblatt 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+            "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
           },
           "sourceName": "Psychological Review",
           "source": "https://doi.org/10.1037/h0042519",
@@ -17461,7 +18484,7 @@ const milestones = [
       },
       "material": {
         "en": "Cornell historical record and original paper",
-        "zh": "Cornell 史料与原始论文"
+        "zh": "康奈尔大学 史料与原始论文"
       },
       "demo": {
         "en": "Adjust weights until a threshold separates classes",
@@ -17544,7 +18567,7 @@ const milestones = [
           },
           "description": {
             "en": "Canonical paper record for Rosenblatt's probabilistic model.",
-            "zh": "Rosenblatt 概率模型经典论文记录。"
+            "zh": "罗森布拉特 概率模型经典论文记录。"
           },
           "url": "https://doi.org/10.1037/h0042519",
           "source": "https://doi.org/10.1037/h0042519",
@@ -17567,7 +18590,7 @@ const milestones = [
           },
           "label": {
             "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
-            "zh": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+            "zh": "感知机：大脑中信息存储与组织的概率模型"
           },
           "url": "https://doi.org/10.1037/h0042519"
         },
@@ -17578,7 +18601,7 @@ const milestones = [
           },
           "label": {
             "en": "Cornell Chronicle perceptron retrospective",
-            "zh": "Cornell Chronicle perceptron retrospective"
+            "zh": "康奈尔大学 Chronicle perceptron retrospective"
           },
           "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
         },
@@ -17709,13 +18732,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>",
-      "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。Hinton 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>"
+      "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。辛顿 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Geoffrey Hinton",
-          "zh": "Geoffrey Hinton"
+          "zh": "杰弗里·辛顿"
         },
         "role": {
           "en": "Co-author of deep belief net learning",
@@ -17732,11 +18755,20 @@ const milestones = [
       "en": "\"Layer-wise unsupervised pretraining\"",
       "zh": "\"逐层无监督预训练\""
     },
-    "quoteAttribution": "《Fast learning algorithm for deep belief nets》, Geoffrey Hinton",
+    "quoteAttribution": {
+      "en": "《Fast learning algorithm for deep belief nets》, Geoffrey Hinton",
+      "zh": "《深度置信网络的快速学习算法》, 杰弗里·辛顿"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Fast learning algorithm for deep belief nets",
-      "workAuthors": "Geoffrey Hinton",
+      "workTitle": {
+        "en": "Fast learning algorithm for deep belief nets",
+        "zh": "深度置信网络的快速学习算法"
+      },
+      "workAuthors": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
     },
@@ -17786,11 +18818,11 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg": {
           "caption": {
             "en": "Geoffrey Hinton portrait",
-            "zh": "Geoffrey Hinton 肖像"
+            "zh": "杰弗里·辛顿 肖像"
           },
           "subcaption": {
             "en": "Photo from Hinton's University of Toronto page.",
-            "zh": "来自 Hinton 多伦多大学页面的人物图。"
+            "zh": "来自 辛顿 多伦多大学页面的人物图。"
           },
           "sourceName": "University of Toronto",
           "source": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
@@ -17978,7 +19010,7 @@ const milestones = [
         {
           "type": {
             "en": "Science article",
-            "zh": "Science 文章"
+            "zh": "《科学》 文章"
           },
           "label": {
             "en": "Reducing the Dimensionality of Data with Neural Networks",
@@ -17993,7 +19025,7 @@ const milestones = [
           },
           "label": {
             "en": "Geoffrey Hinton photo page",
-            "zh": "Geoffrey Hinton photo page"
+            "zh": "杰弗里·辛顿 photo page"
           },
           "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html"
         }
@@ -18119,7 +19151,7 @@ const milestones = [
       {
         "name": {
           "en": "Richard Sutton",
-          "zh": "Richard Sutton"
+          "zh": "理查德·萨顿"
         },
         "role": {
           "en": "Author of temporal-difference learning",
@@ -18136,11 +19168,20 @@ const milestones = [
       "en": "\"Bootstrapped value prediction\"",
       "zh": "\"自举式价值预测\""
     },
-    "quoteAttribution": "《Learning to predict by temporal differences》, Richard Sutton",
+    "quoteAttribution": {
+      "en": "《Learning to predict by temporal differences》, Richard Sutton",
+      "zh": "《通过时序差分学习预测》, 理查德·萨顿"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Learning to predict by temporal differences",
-      "workAuthors": "Richard Sutton",
+      "workTitle": {
+        "en": "Learning to predict by temporal differences",
+        "zh": "通过时序差分学习预测"
+      },
+      "workAuthors": {
+        "en": "Richard Sutton",
+        "zh": "理查德·萨顿"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1007/BF00115009"
     },
@@ -18190,13 +19231,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
           "caption": {
             "en": "Richard Sutton portrait",
-            "zh": "Richard Sutton 肖像"
+            "zh": "理查德·萨顿 肖像"
           },
           "subcaption": {
             "en": "Portrait from Sutton's personal homepage.",
             "zh": "来自 Sutton 个人主页的人物图。"
           },
-          "sourceName": "Richard Sutton homepage",
+          "sourceName": {
+            "en": "Richard Sutton homepage",
+            "zh": "理查德·萨顿 homepage"
+          },
           "source": "http://incompleteideas.net/",
           "sourceUrl": "http://incompleteideas.net/",
           "originalImageUrl": "http://incompleteideas.net/sutton-head12.jpg",
@@ -18386,7 +19430,7 @@ const milestones = [
           },
           "label": {
             "en": "Richard Sutton homepage",
-            "zh": "Richard Sutton homepage"
+            "zh": "理查德·萨顿 homepage"
           },
           "url": "http://incompleteideas.net/"
         },
@@ -18397,7 +19441,7 @@ const milestones = [
           },
           "label": {
             "en": "ACM 2024 Turing Award announcement",
-            "zh": "ACM 2024 Turing Award announcement"
+            "zh": "ACM 2024 图灵 Award announcement"
           },
           "url": "https://awards.acm.org/about/2024-turing"
         }
@@ -18523,7 +19567,7 @@ const milestones = [
       {
         "name": {
           "en": "Judea Pearl",
-          "zh": "Judea Pearl"
+          "zh": "朱迪亚·珀尔"
         },
         "role": {
           "en": "Pioneer of Bayesian networks and causal AI",
@@ -18540,11 +19584,20 @@ const milestones = [
       "en": "\"Directed acyclic graph plus conditional probabilities\"",
       "zh": "\"有向无环图加条件概率\""
     },
-    "quoteAttribution": "《Bayesian Networks technical paper》, Judea Pearl",
+    "quoteAttribution": {
+      "en": "《Bayesian Networks technical paper》, Judea Pearl",
+      "zh": "《贝叶斯网络技术论文》, 朱迪亚·珀尔"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Bayesian Networks technical paper",
-      "workAuthors": "Judea Pearl",
+      "workTitle": {
+        "en": "Bayesian Networks technical paper",
+        "zh": "贝叶斯网络技术论文"
+      },
+      "workAuthors": {
+        "en": "Judea Pearl",
+        "zh": "朱迪亚·珀尔"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
     },
@@ -18594,13 +19647,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg": {
           "caption": {
             "en": "Judea Pearl portrait",
-            "zh": "Judea Pearl 肖像"
+            "zh": "朱迪亚·珀尔 肖像"
           },
           "subcaption": {
             "en": "Portrait from Wikimedia Commons NIPS 2013 image.",
-            "zh": "来自 Wikimedia Commons NIPS 2013 图片的人物图。"
+            "zh": "来自 维基共享资源 NIPS 2013 图片的人物图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
           "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Judea%20Pearl%20at%20NIPS%202013%20%28117881981594%29%20%28cropped%29.jpg",
@@ -18619,7 +19675,10 @@ const milestones = [
             "en": "Local redraw for Bayesian Network, based on the listed source material.",
             "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "UCLA Computer Science",
+          "sourceName": {
+            "en": "UCLA Computer Science",
+            "zh": "加州大学洛杉矶分校 Computer 《科学》"
+          },
           "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "originalImageUrl": "Local original redraw",
@@ -18638,7 +19697,10 @@ const milestones = [
             "en": "Local redraw for Bayesian Network, based on the listed source material.",
             "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
           },
-          "sourceName": "UCLA Computer Science",
+          "sourceName": {
+            "en": "UCLA Computer Science",
+            "zh": "加州大学洛杉矶分校 Computer 《科学》"
+          },
           "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "originalImageUrl": "Local original redraw",
@@ -18673,7 +19735,7 @@ const milestones = [
       },
       "material": {
         "en": "UCLA technical reports and Pearl references",
-        "zh": "UCLA 技术报告与 Pearl 资料"
+        "zh": "加州大学洛杉矶分校 技术报告与 Pearl 资料"
       },
       "demo": {
         "en": "Pass probabilistic messages through a causal graph",
@@ -18749,14 +19811,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "UCLA Computer Science",
+          "site": {
+            "en": "UCLA Computer Science",
+            "zh": "加州大学洛杉矶分校 Computer 《科学》"
+          },
           "title": {
             "en": "Bayesian Networks technical paper",
             "zh": "贝叶斯网络技术论文"
           },
           "description": {
             "en": "UCLA-hosted PDF on Bayesian networks by Judea Pearl.",
-            "zh": "UCLA 托管的 Judea Pearl 贝叶斯网络 PDF。"
+            "zh": "加州大学洛杉矶分校 托管的 朱迪亚·珀尔 贝叶斯网络 PDF。"
           },
           "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
@@ -18767,7 +19832,7 @@ const milestones = [
           },
           "action": {
             "en": "Open UCLA PDF",
-            "zh": "打开 UCLA PDF"
+            "zh": "打开 加州大学洛杉矶分校 PDF"
           }
         }
       ],
@@ -18779,7 +19844,7 @@ const milestones = [
           },
           "label": {
             "en": "Bayesian Networks",
-            "zh": "Bayesian Networks"
+            "zh": "贝叶斯网络"
           },
           "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
         },
@@ -18790,7 +19855,7 @@ const milestones = [
           },
           "label": {
             "en": "Judea Pearl homepage",
-            "zh": "Judea Pearl homepage"
+            "zh": "朱迪亚·珀尔 homepage"
           },
           "url": "https://bayes.cs.ucla.edu/home.htm"
         },
@@ -18801,7 +19866,7 @@ const milestones = [
           },
           "label": {
             "en": "Judea Pearl, UCLA Samueli",
-            "zh": "Judea Pearl, UCLA Samueli"
+            "zh": "朱迪亚·珀尔, 加州大学洛杉矶分校 Samueli"
           },
           "url": "https://samueli.ucla.edu/judea-pearl/"
         }
@@ -18927,7 +19992,7 @@ const milestones = [
       {
         "name": {
           "en": "William McCune",
-          "zh": "William McCune"
+          "zh": "威廉·麦丘恩"
         },
         "role": {
           "en": "Creator of Otter",
@@ -18944,11 +20009,20 @@ const milestones = [
       "en": "\"Resolution-style proof search made practical\"",
       "zh": "\"让归结式证明搜索变得实用\""
     },
-    "quoteAttribution": "《OTTER 3.3 Reference Manual》, William McCune",
+    "quoteAttribution": {
+      "en": "《OTTER 3.3 Reference Manual》, William McCune",
+      "zh": "《OTTER 3.3 参考手册》, 威廉·麦丘恩"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "OTTER 3.3 Reference Manual",
-      "workAuthors": "William McCune",
+      "workTitle": {
+        "en": "OTTER 3.3 Reference Manual",
+        "zh": "OTTER 3.3 参考手册"
+      },
+      "workAuthors": {
+        "en": "William McCune",
+        "zh": "威廉·麦丘恩"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/cs/0310056"
     },
@@ -19005,7 +20079,10 @@ const milestones = [
             "en": "Original local explainer for turning assumptions and goals into Otter clause lists.",
             "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。"
           },
-          "sourceName": "OTTER 3.3 Reference Manual",
+          "sourceName": {
+            "en": "OTTER 3.3 Reference Manual",
+            "zh": "OTTER 3.3 参考手册"
+          },
           "source": "https://arxiv.org/abs/cs/0310056",
           "sourceUrl": "https://arxiv.org/abs/cs/0310056",
           "originalImageUrl": "Local original redraw",
@@ -19024,7 +20101,10 @@ const milestones = [
             "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction.",
             "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。"
           },
-          "sourceName": "OTTER 3.3 Reference Manual",
+          "sourceName": {
+            "en": "OTTER 3.3 Reference Manual",
+            "zh": "OTTER 3.3 参考手册"
+          },
           "source": "https://arxiv.org/abs/cs/0310056",
           "sourceUrl": "https://arxiv.org/abs/cs/0310056",
           "originalImageUrl": "Local original redraw",
@@ -19041,9 +20121,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
-            "zh": "依据 OTTER 3.3 Reference Manual 制作的本地解释图。"
+            "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
           },
-          "sourceName": "OTTER 3.3 Reference Manual",
+          "sourceName": {
+            "en": "OTTER 3.3 Reference Manual",
+            "zh": "OTTER 3.3 参考手册"
+          },
           "source": "https://arxiv.org/abs/cs/0310056",
           "sourceUrl": "https://arxiv.org/abs/cs/0310056",
           "originalImageUrl": "Local original redraw",
@@ -19060,9 +20143,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
-            "zh": "依据 OTTER 3.3 Reference Manual 制作的本地解释图。"
+            "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
           },
-          "sourceName": "OTTER 3.3 Reference Manual",
+          "sourceName": {
+            "en": "OTTER 3.3 Reference Manual",
+            "zh": "OTTER 3.3 参考手册"
+          },
           "source": "https://arxiv.org/abs/cs/0310056",
           "sourceUrl": "https://arxiv.org/abs/cs/0310056",
           "originalImageUrl": "Local original redraw",
@@ -19174,11 +20260,20 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": "Reference",
-          "title": "OTTER 3.3 Reference Manual",
-          "description": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
+          "title": {
+            "en": "OTTER 3.3 Reference Manual",
+            "zh": "OTTER 3.3 参考手册"
+          },
+          "description": {
+            "en": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
+            "zh": "主要手册： Otter input syntax, inference rules, and proof-search controls."
+          },
           "url": "https://arxiv.org/abs/cs/0310056",
           "source": "https://arxiv.org/abs/cs/0310056",
-          "action": "Open reference"
+          "action": {
+            "en": "Open reference",
+            "zh": "打开参考资料"
+          }
         }
       ],
       "sources": [
@@ -19189,7 +20284,7 @@ const milestones = [
           },
           "label": {
             "en": "OTTER 3.3 Reference Manual",
-            "zh": "OTTER 3.3 Reference Manual"
+            "zh": "OTTER 3.3 参考手册"
           },
           "url": "https://arxiv.org/abs/cs/0310056"
         },
@@ -19200,7 +20295,7 @@ const milestones = [
           },
           "label": {
             "en": "A Spectrum of Applications of Automated Reasoning",
-            "zh": "A Spectrum of Applications of Automated Reasoning"
+            "zh": "自动推理应用谱系"
           },
           "url": "https://arxiv.org/abs/cs/0205078"
         },
@@ -19211,7 +20306,7 @@ const milestones = [
           },
           "label": {
             "en": "Checking Clinical Guidelines using Automated Reasoning Tools",
-            "zh": "Checking Clinical Guidelines using Automated Reasoning Tools"
+            "zh": "使用自动推理工具检查临床指南"
           },
           "url": "https://arxiv.org/abs/0806.0250"
         }
@@ -19320,7 +20415,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "IBM Thomas J. Watson Research Center",
-        "zh": "IBM Thomas J. Watson 研究中心"
+        "zh": "IBM 托马斯·J·沃森 研究中心"
       },
       "country": {
         "en": "New York, United States",
@@ -19339,7 +20434,7 @@ const milestones = [
       {
         "name": {
           "en": "David Ferrucci",
-          "zh": "David Ferrucci"
+          "zh": "戴维·费鲁奇"
         },
         "role": {
           "en": "Principal investigator of the Watson / DeepQA team",
@@ -19369,11 +20464,20 @@ const milestones = [
       "en": "\"Generate hypotheses, score evidence, rank answers\"",
       "zh": "\"生成假设、评分证据、排序答案\""
     },
-    "quoteAttribution": "《Watson: Beyond Jeopardy!》, David Ferrucci et al.",
+    "quoteAttribution": {
+      "en": "《Watson: Beyond Jeopardy!》, David Ferrucci et al.",
+      "zh": "《沃森：超越《危险边缘！》》, 戴维·费鲁奇等"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Watson: Beyond Jeopardy!",
-      "workAuthors": "David Ferrucci et al.",
+      "workTitle": {
+        "en": "Watson: Beyond Jeopardy!",
+        "zh": "沃森：超越《危险边缘！》"
+      },
+      "workAuthors": {
+        "en": "David Ferrucci et al.",
+        "zh": "戴维·费鲁奇等"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009"
     },
@@ -19389,7 +20493,7 @@ const milestones = [
         },
         "html": {
           "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered.",
-          "zh": "Deep Blue 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。"
+          "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。"
         }
       },
       {
@@ -19424,13 +20528,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg": {
           "caption": {
             "en": "David Ferrucci portrait",
-            "zh": "David Ferrucci 人物照片"
+            "zh": "戴维·费鲁奇 人物照片"
           },
           "subcaption": {
             "en": "Principal investigator of the IBM Watson / DeepQA team.",
             "zh": "IBM Watson / DeepQA 团队负责人。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
@@ -19449,7 +20556,10 @@ const milestones = [
             "en": "Watson hardware display photographed in 2011.",
             "zh": "2011 年拍摄的 Watson 系统硬件展示。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
@@ -19468,7 +20578,10 @@ const milestones = [
             "en": "Commons diagram based on the AI Magazine Watson overview.",
             "zh": "依据 AI Magazine Watson 综述绘制的 Commons 架构图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
@@ -19485,9 +20598,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Watson: Beyond Jeopardy!.",
-            "zh": "依据 Watson: Beyond Jeopardy! 制作的本地解释图。"
+            "zh": "依据 沃森：超越《危险边缘！》 制作的本地解释图。"
           },
-          "sourceName": "Watson: Beyond Jeopardy!",
+          "sourceName": {
+            "en": "Watson: Beyond Jeopardy!",
+            "zh": "沃森：超越《危险边缘！》"
+          },
           "source": "https://doi.org/10.1016/j.artint.2012.06.009",
           "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009",
           "originalImageUrl": "Local original redraw",
@@ -19564,7 +20680,7 @@ const milestones = [
       "relatedAchievements": [
         {
           "en": "Deep Blue",
-          "zh": "Deep Blue"
+          "zh": "深蓝"
         },
         {
           "en": "ELIZA",
@@ -19598,12 +20714,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Paper",
-          "title": "Watson: Beyond Jeopardy!",
-          "description": "Original Artificial Intelligence paper on the post-Jeopardy Watson system and its technical arc.",
+          "site": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "title": {
+            "en": "Watson: Beyond Jeopardy!",
+            "zh": "沃森：超越《危险边缘！》"
+          },
+          "description": {
+            "en": "Original Artificial Intelligence paper on the post-Jeopardy Watson system and its technical arc.",
+            "zh": "《人工智能》期刊原文：介绍 Jeopardy! 之后的沃森系统及其技术脉络。"
+          },
           "url": "https://doi.org/10.1016/j.artint.2012.06.009",
           "source": "https://doi.org/10.1016/j.artint.2012.06.009",
-          "action": "Open paper"
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
         }
       ],
       "sources": [
@@ -19614,7 +20742,7 @@ const milestones = [
           },
           "label": {
             "en": "Watson: Beyond Jeopardy!",
-            "zh": "Watson: Beyond Jeopardy!"
+            "zh": "沃森：超越《危险边缘！》"
           },
           "url": "https://doi.org/10.1016/j.artint.2012.06.009"
         },
@@ -19625,7 +20753,7 @@ const milestones = [
           },
           "label": {
             "en": "Building Watson: An Overview of the DeepQA Project",
-            "zh": "Building Watson: An Overview of the DeepQA Project"
+            "zh": "构建沃森：DeepQA 项目概览"
           },
           "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303"
         },
@@ -19647,7 +20775,7 @@ const milestones = [
           },
           "label": {
             "en": "David Ferrucci portrait",
-            "zh": "David Ferrucci 人物照片"
+            "zh": "戴维·费鲁奇 人物照片"
           },
           "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg"
         }
@@ -19747,7 +20875,7 @@ const milestones = [
     },
     "title": {
       "en": "Christopher Strachey's Draughts",
-      "zh": "Christopher Strachey 的跳棋程序"
+      "zh": "克里斯托弗·斯特雷奇 的跳棋程序"
     },
     "subtitle": {
       "en": "AI Top 100 Achievements",
@@ -19769,13 +20897,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>",
-      "zh": "<p>Christopher Strachey 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>"
+      "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Christopher Strachey",
-          "zh": "Christopher Strachey"
+          "zh": "克里斯托弗·斯特雷奇"
         },
         "role": {
           "en": "Developer of the early draughts program",
@@ -19792,17 +20920,26 @@ const milestones = [
       "en": "\"Non-numerical programs could play\"",
       "zh": "\"非数值程序也可以对弈\""
     },
-    "quoteAttribution": "《Logical or non-mathematical programmes》, Christopher Strachey",
+    "quoteAttribution": {
+      "en": "《Logical or non-mathematical programmes》, Christopher Strachey",
+      "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Logical or non-mathematical programmes",
-      "workAuthors": "Christopher Strachey",
+      "workTitle": {
+        "en": "Logical or non-mathematical programmes",
+        "zh": "逻辑或非数学程序"
+      },
+      "workAuthors": {
+        "en": "Christopher Strachey",
+        "zh": "克里斯托弗·斯特雷奇"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277"
     },
     "quotePage": {
       "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
-      "zh": "BenchCouncil AI100：游戏 / Christopher Strachey 的跳棋程序"
+      "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
     },
     "commentarySections": [
       {
@@ -19847,13 +20984,16 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
           "caption": {
             "en": "Christopher Strachey's draughts program",
-            "zh": "Christopher Strachey 跳棋程序截图"
+            "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
           },
           "subcaption": {
             "en": "Screenshot of the early draughts program attributed to Strachey.",
-            "zh": "Christopher Strachey 早期跳棋程序截图。"
+            "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
@@ -19872,7 +21012,10 @@ const milestones = [
             "en": "Physical checkers board used as visual context for game-playing AI.",
             "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
@@ -19889,9 +21032,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Logical or non-mathematical programmes.",
-            "zh": "依据 Logical or non-mathematical programmes 制作的本地解释图。"
+            "zh": "依据 逻辑或非数学程序 制作的本地解释图。"
           },
-          "sourceName": "Logical or non-mathematical programmes",
+          "sourceName": {
+            "en": "Logical or non-mathematical programmes",
+            "zh": "逻辑或非数学程序"
+          },
           "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
           "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
           "originalImageUrl": "Local original redraw",
@@ -19908,9 +21054,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Logical or non-mathematical programmes.",
-            "zh": "依据 Logical or non-mathematical programmes 制作的本地解释图。"
+            "zh": "依据 逻辑或非数学程序 制作的本地解释图。"
           },
-          "sourceName": "Logical or non-mathematical programmes",
+          "sourceName": {
+            "en": "Logical or non-mathematical programmes",
+            "zh": "逻辑或非数学程序"
+          },
           "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
           "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
           "originalImageUrl": "Local original redraw",
@@ -19945,7 +21094,7 @@ const milestones = [
       },
       "material": {
         "en": "Historical accounts and Strachey's 1952 program report",
-        "zh": "历史记录与 Strachey 1952 年程序报告"
+        "zh": "历史记录与 斯特雷奇 1952 年程序报告"
       },
       "demo": {
         "en": "Evaluate legal draughts moves on a tiny memory budget",
@@ -19991,7 +21140,7 @@ const milestones = [
         },
         {
           "en": "Deep Blue",
-          "zh": "Deep Blue"
+          "zh": "深蓝"
         },
         {
           "en": "Chinook",
@@ -20021,12 +21170,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Paper",
-          "title": "Logical or non-mathematical programmes",
-          "description": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+          "site": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "title": {
+            "en": "Logical or non-mathematical programmes",
+            "zh": "逻辑或非数学程序"
+          },
+          "description": {
+            "en": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+            "zh": "ACM 记录：斯特雷奇早期博弈程序与非数值计算论述。"
+          },
           "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
           "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
-          "action": "Open ACM record"
+          "action": {
+            "en": "Open ACM record",
+            "zh": "打开 ACM 记录"
+          }
         }
       ],
       "sources": [
@@ -20037,7 +21198,7 @@ const milestones = [
           },
           "label": {
             "en": "Logical or non-mathematical programmes",
-            "zh": "Logical or non-mathematical programmes"
+            "zh": "逻辑或非数学程序"
           },
           "url": "https://dl.acm.org/doi/10.1145/1455270.1455277"
         },
@@ -20048,7 +21209,7 @@ const milestones = [
           },
           "label": {
             "en": "Computer Pioneers - Christopher Strachey",
-            "zh": "Computer Pioneers - Christopher Strachey"
+            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇"
           },
           "url": "https://history.computer.org/pioneers/strachey.html"
         },
@@ -20059,7 +21220,7 @@ const milestones = [
           },
           "label": {
             "en": "Strachey draughts program screenshot",
-            "zh": "Strachey 跳棋程序截图"
+            "zh": "斯特雷奇 跳棋程序截图"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png"
         },
@@ -20082,7 +21243,7 @@ const milestones = [
       "id": "1951-strachey-draughts-quiz-1",
       "question": {
         "en": "Why is Strachey's draughts program important to AI history?",
-        "zh": "Strachey 的跳棋程序为什么对 AI 历史重要？"
+        "zh": "斯特雷奇 的跳棋程序为什么对 AI 历史重要？"
       },
       "options": [
         {
@@ -20123,7 +21284,7 @@ const milestones = [
         "id": "1951-strachey-draughts-quiz-1",
         "question": {
           "en": "Why is Strachey's draughts program important to AI history?",
-          "zh": "Strachey 的跳棋程序为什么对 AI 历史重要？"
+          "zh": "斯特雷奇 的跳棋程序为什么对 AI 历史重要？"
         },
         "options": [
           {
@@ -20198,7 +21359,7 @@ const milestones = [
       {
         "name": {
           "en": "Jonathan Schaeffer",
-          "zh": "Jonathan Schaeffer"
+          "zh": "乔纳森·谢弗"
         },
         "role": {
           "en": "Leader of the Chinook team",
@@ -20215,11 +21376,20 @@ const milestones = [
       "en": "\"Perfect play in checkers is a draw\"",
       "zh": "\"跳棋完美对弈结果为和棋\""
     },
-    "quoteAttribution": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
+    "quoteAttribution": {
+      "en": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
+      "zh": "《跳棋已被求解》, 乔纳森·谢弗等"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Checkers Is Solved",
-      "workAuthors": "Jonathan Schaeffer et al.",
+      "workTitle": {
+        "en": "Checkers Is Solved",
+        "zh": "跳棋已被求解"
+      },
+      "workAuthors": {
+        "en": "Jonathan Schaeffer et al.",
+        "zh": "乔纳森·谢弗等"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079"
     },
@@ -20270,13 +21440,16 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
           "caption": {
             "en": "Jonathan Schaeffer portrait",
-            "zh": "Jonathan Schaeffer 人物照片"
+            "zh": "乔纳森·谢弗 人物照片"
           },
           "subcaption": {
             "en": "Leader of the Chinook checkers project.",
             "zh": "Chinook 跳棋项目负责人。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
@@ -20312,9 +21485,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Checkers Is Solved.",
-            "zh": "依据 Checkers Is Solved 制作的本地解释图。"
+            "zh": "依据 跳棋已被求解 制作的本地解释图。"
           },
-          "sourceName": "Checkers Is Solved",
+          "sourceName": {
+            "en": "Checkers Is Solved",
+            "zh": "跳棋已被求解"
+          },
           "source": "https://www.science.org/doi/10.1126/science.1144079",
           "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
           "originalImageUrl": "Local original redraw",
@@ -20331,9 +21507,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Checkers Is Solved.",
-            "zh": "依据 Checkers Is Solved 制作的本地解释图。"
+            "zh": "依据 跳棋已被求解 制作的本地解释图。"
           },
-          "sourceName": "Checkers Is Solved",
+          "sourceName": {
+            "en": "Checkers Is Solved",
+            "zh": "跳棋已被求解"
+          },
           "source": "https://www.science.org/doi/10.1126/science.1144079",
           "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
           "originalImageUrl": "Local original redraw",
@@ -20368,7 +21547,7 @@ const milestones = [
       },
       "material": {
         "en": "University of Alberta Chinook pages and Science paper",
-        "zh": "阿尔伯塔大学 Chinook 页面与 Science 论文"
+        "zh": "阿尔伯塔大学 Chinook 页面与 《科学》 论文"
       },
       "demo": {
         "en": "Connect a move to a solved endgame table",
@@ -20410,11 +21589,11 @@ const milestones = [
       "relatedAchievements": [
         {
           "en": "Deep Blue",
-          "zh": "Deep Blue"
+          "zh": "深蓝"
         },
         {
           "en": "Strachey's Draughts",
-          "zh": "Strachey 跳棋程序"
+          "zh": "斯特雷奇 跳棋程序"
         },
         {
           "en": "AlphaGo",
@@ -20444,12 +21623,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Science",
-          "title": "Checkers Is Solved",
-          "description": "Science record for the weak solution of checkers and Chinook's endgame database work.",
+          "site": {
+            "en": "Science",
+            "zh": "《科学》"
+          },
+          "title": {
+            "en": "Checkers Is Solved",
+            "zh": "跳棋已被求解"
+          },
+          "description": {
+            "en": "Science record for the weak solution of checkers and Chinook's endgame database work.",
+            "zh": "《科学》 记录：跳棋弱求解与 Chinook 残局数据库工作。"
+          },
           "url": "https://www.science.org/doi/10.1126/science.1144079",
           "source": "https://www.science.org/doi/10.1126/science.1144079",
-          "action": "Open Science record"
+          "action": {
+            "en": "Open Science record",
+            "zh": "打开 《科学》 记录"
+          }
         }
       ],
       "sources": [
@@ -20471,7 +21662,7 @@ const milestones = [
           },
           "label": {
             "en": "Checkers Is Solved",
-            "zh": "Checkers Is Solved"
+            "zh": "跳棋已被求解"
           },
           "url": "https://www.science.org/doi/10.1126/science.1144079"
         },
@@ -20493,7 +21684,7 @@ const milestones = [
           },
           "label": {
             "en": "Jonathan Schaeffer portrait",
-            "zh": "Jonathan Schaeffer 人物照片"
+            "zh": "乔纳森·谢弗 人物照片"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg"
         }
@@ -20602,7 +21793,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "MIT Lincoln Laboratory",
-        "zh": "MIT 林肯实验室"
+        "zh": "麻省理工学院 林肯实验室"
       },
       "country": {
         "en": "Massachusetts, United States",
@@ -20621,7 +21812,7 @@ const milestones = [
       {
         "name": {
           "en": "Oliver Selfridge",
-          "zh": "Oliver Selfridge"
+          "zh": "奥利弗·塞尔弗里奇"
         },
         "role": {
           "en": "Author of the Pandemonium architecture",
@@ -20638,11 +21829,20 @@ const milestones = [
       "en": "\"Layered feature voters build perception\"",
       "zh": "\"分层特征投票构成感知\""
     },
-    "quoteAttribution": "《Pandemonium: A Paradigm for Learning》, Oliver G. Selfridge",
+    "quoteAttribution": {
+      "en": "《Pandemonium: A Paradigm for Learning》, Oliver G. Selfridge",
+      "zh": "《群魔殿：一种学习范式》, 奥利弗·G·塞尔弗里奇"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Pandemonium: A Paradigm for Learning",
-      "workAuthors": "Oliver G. Selfridge",
+      "workTitle": {
+        "en": "Pandemonium: A Paradigm for Learning",
+        "zh": "群魔殿：一种学习范式"
+      },
+      "workAuthors": {
+        "en": "Oliver G. Selfridge",
+        "zh": "奥利弗·G·塞尔弗里奇"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4"
     },
@@ -20693,13 +21893,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg": {
           "caption": {
             "en": "Oliver Selfridge portrait",
-            "zh": "Oliver Selfridge 人物照片"
+            "zh": "奥利弗·塞尔弗里奇 人物照片"
           },
           "subcaption": {
             "en": "Author of the Pandemonium architecture.",
             "zh": "Pandemonium 架构提出者。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Oliver_Selfridge_at_BBN.jpg",
@@ -20718,7 +21921,10 @@ const milestones = [
             "en": "Illustration associated with the Pandemonium architecture.",
             "zh": "与 Pandemonium 架构相关的公开图片。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
@@ -20735,9 +21941,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
-            "zh": "依据 Pandemonium: A Paradigm for Learning 制作的本地解释图。"
+            "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。"
           },
-          "sourceName": "Pandemonium: A Paradigm for Learning",
+          "sourceName": {
+            "en": "Pandemonium: A Paradigm for Learning",
+            "zh": "群魔殿：一种学习范式"
+          },
           "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
           "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
           "originalImageUrl": "Local original redraw",
@@ -20754,9 +21963,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
-            "zh": "依据 Pandemonium: A Paradigm for Learning 制作的本地解释图。"
+            "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。"
           },
-          "sourceName": "Pandemonium: A Paradigm for Learning",
+          "sourceName": {
+            "en": "Pandemonium: A Paradigm for Learning",
+            "zh": "群魔殿：一种学习范式"
+          },
           "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
           "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
           "originalImageUrl": "Local original redraw",
@@ -20867,12 +22079,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Paper",
-          "title": "Pandemonium: A Paradigm for Learning",
-          "description": "Primary paper for Selfridge's layered demon architecture and feature-vote recognition metaphor.",
+          "site": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "title": {
+            "en": "Pandemonium: A Paradigm for Learning",
+            "zh": "群魔殿：一种学习范式"
+          },
+          "description": {
+            "en": "Primary paper for Selfridge's layered demon architecture and feature-vote recognition metaphor.",
+            "zh": "主要论文： 塞尔弗里奇的分层“魔鬼”架构与特征投票识别隐喻。"
+          },
           "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
           "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
-          "action": "Open paper"
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
         }
       ],
       "sources": [
@@ -20883,7 +22107,7 @@ const milestones = [
           },
           "label": {
             "en": "Pandemonium: A Paradigm for Learning",
-            "zh": "Pandemonium: A Paradigm for Learning"
+            "zh": "群魔殿：一种学习范式"
           },
           "url": "https://doi.org/10.1007/978-1-4899-1221-6_4"
         },
@@ -20905,7 +22129,7 @@ const milestones = [
           },
           "label": {
             "en": "Oliver Selfridge portrait",
-            "zh": "Oliver Selfridge 人物照片"
+            "zh": "奥利弗·塞尔弗里奇 人物照片"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg"
         },
@@ -20916,7 +22140,7 @@ const milestones = [
           },
           "label": {
             "en": "Oliver Selfridge obituary, The Guardian",
-            "zh": "Oliver Selfridge 讣告，The Guardian"
+            "zh": "奥利弗·塞尔弗里奇 讣告，卫报"
           },
           "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary"
         }
@@ -21044,7 +22268,7 @@ const milestones = [
       {
         "name": {
           "en": "Douglas Lenat",
-          "zh": "Douglas Lenat"
+          "zh": "道格拉斯·莱纳特"
         },
         "role": {
           "en": "Founder of the Cyc project",
@@ -21057,7 +22281,7 @@ const milestones = [
       {
         "name": {
           "en": "R. V. Guha",
-          "zh": "R. V. Guha"
+          "zh": "R·V·古哈"
         },
         "role": {
           "en": "Co-author of core Cyc representation work",
@@ -21074,11 +22298,20 @@ const milestones = [
       "en": "\"Common sense as explicit knowledge\"",
       "zh": "\"把常识显式化为知识\""
     },
-    "quoteAttribution": "《Building Large Knowledge-Based Systems》, Douglas B. Lenat and R. V. Guha",
+    "quoteAttribution": {
+      "en": "《Building Large Knowledge-Based Systems》, Douglas B. Lenat and R. V. Guha",
+      "zh": "《构建大型知识系统》, 道格拉斯·B·莱纳特、R·V·古哈"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Building Large Knowledge-Based Systems",
-      "workAuthors": "Douglas B. Lenat and R. V. Guha",
+      "workTitle": {
+        "en": "Building Large Knowledge-Based Systems",
+        "zh": "构建大型知识系统"
+      },
+      "workAuthors": {
+        "en": "Douglas B. Lenat and R. V. Guha",
+        "zh": "道格拉斯·B·莱纳特、R·V·古哈"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571"
     },
@@ -21129,13 +22362,16 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg": {
           "caption": {
             "en": "Douglas Lenat portrait",
-            "zh": "Douglas Lenat 人物照片"
+            "zh": "道格拉斯·莱纳特 人物照片"
           },
           "subcaption": {
             "en": "Founder of the Cyc project.",
             "zh": "Cyc 项目创始人。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Dbl4.jpg",
@@ -21154,7 +22390,10 @@ const milestones = [
             "en": "Public image of Cyc project logos.",
             "zh": "Cyc 项目标识公开图片。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
@@ -21171,9 +22410,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Building Large Knowledge-Based Systems.",
-            "zh": "依据 Building Large Knowledge-Based Systems 制作的本地解释图。"
+            "zh": "依据 构建大型知识系统 制作的本地解释图。"
           },
-          "sourceName": "Building Large Knowledge-Based Systems",
+          "sourceName": {
+            "en": "Building Large Knowledge-Based Systems",
+            "zh": "构建大型知识系统"
+          },
           "source": "https://dl.acm.org/doi/book/10.5555/70571",
           "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571",
           "originalImageUrl": "Local original redraw",
@@ -21190,9 +22432,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on The Evolution of CycL.",
-            "zh": "依据 The Evolution of CycL 制作的本地解释图。"
+            "zh": "依据 CycL 的演化 制作的本地解释图。"
           },
-          "sourceName": "The Evolution of CycL",
+          "sourceName": {
+            "en": "The Evolution of CycL",
+            "zh": "CycL 的演化"
+          },
           "source": "https://dl.acm.org/doi/10.1145/122296.122308",
           "sourceUrl": "https://dl.acm.org/doi/10.1145/122296.122308",
           "originalImageUrl": "Local original redraw",
@@ -21303,12 +22548,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Book",
-          "title": "Building Large Knowledge-Based Systems",
-          "description": "Foundational book record for Cyc and its large common-sense knowledge engineering program.",
+          "site": {
+            "en": "Book",
+            "zh": "图书"
+          },
+          "title": {
+            "en": "Building Large Knowledge-Based Systems",
+            "zh": "构建大型知识系统"
+          },
+          "description": {
+            "en": "Foundational book record for Cyc and its large common-sense knowledge engineering program.",
+            "zh": "Cyc 及其大型常识知识工程项目的奠基著作记录。"
+          },
           "url": "https://dl.acm.org/doi/book/10.5555/70571",
           "source": "https://dl.acm.org/doi/book/10.5555/70571",
-          "action": "Open book record"
+          "action": {
+            "en": "Open book record",
+            "zh": "打开图书记录"
+          }
         }
       ],
       "sources": [
@@ -21319,7 +22576,7 @@ const milestones = [
           },
           "label": {
             "en": "Building Large Knowledge-Based Systems",
-            "zh": "Building Large Knowledge-Based Systems"
+            "zh": "构建大型知识系统"
           },
           "url": "https://dl.acm.org/doi/book/10.5555/70571"
         },
@@ -21330,7 +22587,7 @@ const milestones = [
           },
           "label": {
             "en": "The Evolution of CycL",
-            "zh": "The Evolution of CycL"
+            "zh": "CycL 的演化"
           },
           "url": "https://dl.acm.org/doi/10.1145/122296.122308"
         },
@@ -21480,7 +22737,7 @@ const milestones = [
       {
         "name": {
           "en": "John McDermott",
-          "zh": "John McDermott"
+          "zh": "约翰·麦克德莫特"
         },
         "role": {
           "en": "Developer of R1/XCON",
@@ -21497,11 +22754,20 @@ const milestones = [
       "en": "\"Production rules configured real orders\"",
       "zh": "\"产生式规则配置真实订单\""
     },
-    "quoteAttribution": "《R1: An Expert in the Computer Systems Domain》, John McDermott",
+    "quoteAttribution": {
+      "en": "《R1: An Expert in the Computer Systems Domain》, John McDermott",
+      "zh": "《R1：计算机系统领域的专家》, 约翰·麦克德莫特"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "R1: An Expert in the Computer Systems Domain",
-      "workAuthors": "John McDermott",
+      "workTitle": {
+        "en": "R1: An Expert in the Computer Systems Domain",
+        "zh": "R1：计算机系统领域的专家"
+      },
+      "workAuthors": {
+        "en": "John McDermott",
+        "zh": "约翰·麦克德莫特"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
     },
@@ -21558,7 +22824,10 @@ const milestones = [
             "en": "Representative VAX system class configured by R1/XCON.",
             "zh": "R1/XCON 所配置的 VAX 系统类别代表照片。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
@@ -21577,7 +22846,10 @@ const milestones = [
             "en": "Hardware detail from the VAX-11/780 family.",
             "zh": "VAX-11/780 系列硬件细节。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
@@ -21594,9 +22866,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain.",
-            "zh": "依据 R1: An Expert in the Computer Systems Domain 制作的本地解释图。"
+            "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。"
           },
-          "sourceName": "R1: An Expert in the Computer Systems Domain",
+          "sourceName": {
+            "en": "R1: An Expert in the Computer Systems Domain",
+            "zh": "R1：计算机系统领域的专家"
+          },
           "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
           "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
           "originalImageUrl": "Local original redraw",
@@ -21613,9 +22888,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches.",
-            "zh": "依据 R1 Revisited: Four Years in the Trenches 制作的本地解释图。"
+            "zh": "依据 重访 R1：一线四年 制作的本地解释图。"
           },
-          "sourceName": "R1 Revisited: Four Years in the Trenches",
+          "sourceName": {
+            "en": "R1 Revisited: Four Years in the Trenches",
+            "zh": "重访 R1：一线四年"
+          },
           "source": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
           "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
           "originalImageUrl": "Local original redraw",
@@ -21650,7 +22928,7 @@ const milestones = [
       },
       "material": {
         "en": "AAAI and Artificial Intelligence expert-system papers",
-        "zh": "AAAI 与 Artificial Intelligence 专家系统论文"
+        "zh": "AAAI 与 人工智能 专家系统论文"
       },
       "demo": {
         "en": "Turn customer requirements into a valid component list",
@@ -21726,12 +23004,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "AAAI Paper",
-          "title": "R1: An Expert in the Computer Systems Domain",
-          "description": "AAAI paper describing the rule-based configuration expert system behind XCON/R1.",
+          "site": {
+            "en": "AAAI Paper",
+            "zh": "AAAI 论文"
+          },
+          "title": {
+            "en": "R1: An Expert in the Computer Systems Domain",
+            "zh": "R1：计算机系统领域的专家"
+          },
+          "description": {
+            "en": "AAAI paper describing the rule-based configuration expert system behind XCON/R1.",
+            "zh": "介绍 XCON/R1 背后基于规则的配置专家系统的 AAAI 论文。"
+          },
           "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
           "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
-          "action": "Open AAAI record"
+          "action": {
+            "en": "Open AAAI record",
+            "zh": "打开 AAAI 记录"
+          }
         }
       ],
       "sources": [
@@ -21742,7 +23032,7 @@ const milestones = [
           },
           "label": {
             "en": "R1: An Expert in the Computer Systems Domain",
-            "zh": "R1: An Expert in the Computer Systems Domain"
+            "zh": "R1：计算机系统领域的专家"
           },
           "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
         },
@@ -21753,7 +23043,7 @@ const milestones = [
           },
           "label": {
             "en": "R1 Revisited: Four Years in the Trenches",
-            "zh": "R1 Revisited: Four Years in the Trenches"
+            "zh": "重访 R1：一线四年"
           },
           "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445"
         },
@@ -21897,17 +23187,17 @@ const milestones = [
     },
     "description": {
       "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>",
-      "zh": "<p>K-means 让无监督分组简单到成为默认工具。Lloyd 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>"
+      "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Stuart Lloyd",
-          "zh": "Stuart Lloyd"
+          "zh": "斯图尔特·劳埃德"
         },
         "role": {
           "en": "Author of Lloyd's k-means-style quantization method",
-          "zh": "Lloyd 式 k-means 量化方法作者"
+          "zh": "劳埃德 式 k-means 量化方法作者"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -21920,11 +23210,20 @@ const milestones = [
       "en": "\"Assign points, update centroids, repeat\"",
       "zh": "\"分配样本、更新质心、反复迭代\""
     },
-    "quoteAttribution": "《Least squares quantization in PCM》, Stuart Lloyd",
+    "quoteAttribution": {
+      "en": "《Least squares quantization in PCM》, Stuart Lloyd",
+      "zh": "《PCM 中的最小二乘量化》, 斯图尔特·劳埃德"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Least squares quantization in PCM",
-      "workAuthors": "Stuart Lloyd",
+      "workTitle": {
+        "en": "Least squares quantization in PCM",
+        "zh": "PCM 中的最小二乘量化"
+      },
+      "workAuthors": {
+        "en": "Stuart Lloyd",
+        "zh": "斯图尔特·劳埃德"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489"
     },
@@ -21979,9 +23278,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Bell Labs visual context for Lloyd-style quantization work.",
-            "zh": "Lloyd 量化方法相关的贝尔实验室背景图。"
+            "zh": "劳埃德 量化方法相关的贝尔实验室背景图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
@@ -22000,7 +23302,10 @@ const milestones = [
             "en": "Public-domain k-means clustering illustration.",
             "zh": "公有领域的 k-means 聚类示意图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
@@ -22017,9 +23322,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Least squares quantization in PCM.",
-            "zh": "依据 Least squares quantization in PCM 制作的本地解释图。"
+            "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。"
           },
-          "sourceName": "Least squares quantization in PCM",
+          "sourceName": {
+            "en": "Least squares quantization in PCM",
+            "zh": "PCM 中的最小二乘量化"
+          },
           "source": "https://doi.org/10.1109/TIT.1982.1056489",
           "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489",
           "originalImageUrl": "Local original redraw",
@@ -22069,7 +23377,7 @@ const milestones = [
       },
       "artifact": {
         "en": "Lloyd / k-means clustering loop",
-        "zh": "Lloyd / k-means 聚类循环"
+        "zh": "劳埃德 / k-means 聚类循环"
       },
       "material": {
         "en": "Bell Labs manuscript and IEEE paper",
@@ -22149,12 +23457,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Paper",
-          "title": "Least squares quantization in PCM",
-          "description": "IEEE record for Lloyd's least-squares quantization algorithm, later known as k-means.",
+          "site": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "title": {
+            "en": "Least squares quantization in PCM",
+            "zh": "PCM 中的最小二乘量化"
+          },
+          "description": {
+            "en": "IEEE record for Lloyd's least-squares quantization algorithm, later known as k-means.",
+            "zh": "IEEE 记录：劳埃德的最小二乘量化算法，后来称为 k-means。"
+          },
           "url": "https://doi.org/10.1109/TIT.1982.1056489",
           "source": "https://doi.org/10.1109/TIT.1982.1056489",
-          "action": "Open IEEE record"
+          "action": {
+            "en": "Open IEEE record",
+            "zh": "打开 IEEE 记录"
+          }
         }
       ],
       "sources": [
@@ -22165,7 +23485,7 @@ const milestones = [
           },
           "label": {
             "en": "Least squares quantization in PCM",
-            "zh": "Least squares quantization in PCM"
+            "zh": "PCM 中的最小二乘量化"
           },
           "url": "https://doi.org/10.1109/TIT.1982.1056489"
         },
@@ -22176,7 +23496,7 @@ const milestones = [
           },
           "label": {
             "en": "Bell Labs k-means history note",
-            "zh": "Bell Labs k-means 历史资料"
+            "zh": "贝尔实验室 k-means 历史资料"
           },
           "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/"
         },
@@ -22326,7 +23646,7 @@ const milestones = [
       {
         "name": {
           "en": "Martin Ester",
-          "zh": "Martin Ester"
+          "zh": "马丁·埃斯特"
         },
         "role": {
           "en": "Co-author of DBSCAN",
@@ -22339,7 +23659,7 @@ const milestones = [
       {
         "name": {
           "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
-          "zh": "Hans-Peter Kriegel、Jorg Sander、Xiaowei Xu"
+          "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
         },
         "role": {
           "en": "DBSCAN research team",
@@ -22356,11 +23676,20 @@ const milestones = [
       "en": "\"Clusters are dense regions separated by sparse noise\"",
       "zh": "\"簇是被稀疏噪声隔开的密集区域\""
     },
-    "quoteAttribution": "《A density-based algorithm for discovering clusters in large spatial databases with noise》, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+    "quoteAttribution": {
+      "en": "《A density-based algorithm for discovering clusters in large spatial databases with noise》, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "zh": "《一种在含噪大型空间数据库中发现簇的基于密度的算法》, 马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "A density-based algorithm for discovering clusters in large spatial databases with noise",
-      "workAuthors": "Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "workTitle": {
+        "en": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+        "zh": "一种在含噪大型空间数据库中发现簇的基于密度的算法"
+      },
+      "workAuthors": {
+        "en": "Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "zh": "马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507"
     },
@@ -22411,13 +23740,16 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg": {
           "caption": {
             "en": "Martin Ester portrait",
-            "zh": "Martin Ester 人物照片"
+            "zh": "马丁·埃斯特 人物照片"
           },
           "subcaption": {
             "en": "Co-author of DBSCAN.",
             "zh": "DBSCAN 共同作者。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
@@ -22436,7 +23768,10 @@ const milestones = [
             "en": "Public DBSCAN density illustration.",
             "zh": "公开 DBSCAN 密度示意图。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
@@ -22453,9 +23788,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on A density-based algorithm for discovering clusters.",
-            "zh": "依据 A density-based algorithm for discovering clusters 制作的本地解释图。"
+            "zh": "依据 一种发现簇的基于密度的算法 制作的本地解释图。"
           },
-          "sourceName": "A density-based algorithm for discovering clusters",
+          "sourceName": {
+            "en": "A density-based algorithm for discovering clusters",
+            "zh": "一种发现簇的基于密度的算法"
+          },
           "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
           "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507",
           "originalImageUrl": "Local original redraw",
@@ -22472,9 +23810,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on DBSCAN Revisited, Revisited.",
-            "zh": "依据 DBSCAN Revisited, Revisited 制作的本地解释图。"
+            "zh": "依据 再访 DBSCAN，再访 制作的本地解释图。"
           },
-          "sourceName": "DBSCAN Revisited, Revisited",
+          "sourceName": {
+            "en": "DBSCAN Revisited, Revisited",
+            "zh": "再访 DBSCAN，再访"
+          },
           "source": "https://doi.org/10.1145/3068335",
           "sourceUrl": "https://doi.org/10.1145/3068335",
           "originalImageUrl": "Local original redraw",
@@ -22585,12 +23926,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "KDD Paper",
-          "title": "A density-based algorithm for discovering clusters",
-          "description": "Original KDD paper introducing DBSCAN's density reachability and noise-aware clustering.",
+          "site": {
+            "en": "KDD Paper",
+            "zh": "KDD 论文"
+          },
+          "title": {
+            "en": "A density-based algorithm for discovering clusters",
+            "zh": "一种发现簇的基于密度的算法"
+          },
+          "description": {
+            "en": "Original KDD paper introducing DBSCAN's density reachability and noise-aware clustering.",
+            "zh": "KDD 原始论文：介绍 DBSCAN 的密度可达与噪声感知聚类。"
+          },
           "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
           "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
-          "action": "Open paper record"
+          "action": {
+            "en": "Open paper record",
+            "zh": "打开论文记录"
+          }
         }
       ],
       "sources": [
@@ -22601,7 +23954,7 @@ const milestones = [
           },
           "label": {
             "en": "A density-based algorithm for discovering clusters",
-            "zh": "A density-based algorithm for discovering clusters"
+            "zh": "一种发现簇的基于密度的算法"
           },
           "url": "https://dl.acm.org/doi/10.5555/3001460.3001507"
         },
@@ -22612,7 +23965,7 @@ const milestones = [
           },
           "label": {
             "en": "DBSCAN Revisited, Revisited",
-            "zh": "DBSCAN Revisited, Revisited"
+            "zh": "再访 DBSCAN，再访"
           },
           "url": "https://doi.org/10.1145/3068335"
         },
@@ -22634,7 +23987,7 @@ const milestones = [
           },
           "label": {
             "en": "Martin Ester portrait",
-            "zh": "Martin Ester 人物照片"
+            "zh": "马丁·埃斯特 人物照片"
           },
           "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg"
         }
@@ -22762,7 +24115,7 @@ const milestones = [
       {
         "name": {
           "en": "Jianbo Shi",
-          "zh": "Jianbo Shi"
+          "zh": "史建波"
         },
         "role": {
           "en": "Co-author of normalized cuts",
@@ -22775,7 +24128,7 @@ const milestones = [
       {
         "name": {
           "en": "Jitendra Malik, Andrew Ng, Yair Weiss",
-          "zh": "Jitendra Malik、Andrew Ng、Yair Weiss"
+          "zh": "吉滕德拉·马利克、吴恩达、亚伊尔·魏斯"
         },
         "role": {
           "en": "Key contributors to spectral clustering formulations",
@@ -22792,11 +24145,20 @@ const milestones = [
       "en": "\"Cut the graph through its spectrum\"",
       "zh": "\"通过图的谱来切分图\""
     },
-    "quoteAttribution": "《Normalized Cuts and Image Segmentation》, Jianbo Shi and Jitendra Malik",
+    "quoteAttribution": {
+      "en": "《Normalized Cuts and Image Segmentation》, Jianbo Shi and Jitendra Malik",
+      "zh": "《归一化切分与图像分割》, 史建波、吉滕德拉·马利克"
+    },
     "quoteMeta": {
       "speaker": "",
-      "workTitle": "Normalized Cuts and Image Segmentation",
-      "workAuthors": "Jianbo Shi and Jitendra Malik",
+      "workTitle": {
+        "en": "Normalized Cuts and Image Segmentation",
+        "zh": "归一化切分与图像分割"
+      },
+      "workAuthors": {
+        "en": "Jianbo Shi and Jitendra Malik",
+        "zh": "史建波、吉滕德拉·马利克"
+      },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1109/34.868688"
     },
@@ -22847,13 +24209,16 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg": {
           "caption": {
             "en": "Andrew Ng portrait",
-            "zh": "Andrew Ng 人物照片"
+            "zh": "吴恩达 人物照片"
           },
           "subcaption": {
             "en": "Co-author of influential spectral clustering analysis.",
             "zh": "谱聚类分析论文共同作者。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
@@ -22872,7 +24237,10 @@ const milestones = [
             "en": "Public graph illustration used on the spectral clustering article.",
             "zh": "谱聚类条目使用的公开图示。"
           },
-          "sourceName": "Wikimedia Commons",
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
           "source": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
           "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
@@ -22889,9 +24257,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on Normalized Cuts and Image Segmentation.",
-            "zh": "依据 Normalized Cuts and Image Segmentation 制作的本地解释图。"
+            "zh": "依据 归一化切分与图像分割 制作的本地解释图。"
           },
-          "sourceName": "Normalized Cuts and Image Segmentation",
+          "sourceName": {
+            "en": "Normalized Cuts and Image Segmentation",
+            "zh": "归一化切分与图像分割"
+          },
           "source": "https://doi.org/10.1109/34.868688",
           "sourceUrl": "https://doi.org/10.1109/34.868688",
           "originalImageUrl": "Local original redraw",
@@ -22908,9 +24279,12 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm.",
-            "zh": "依据 On Spectral Clustering: Analysis and an algorithm 制作的本地解释图。"
+            "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。"
           },
-          "sourceName": "On Spectral Clustering: Analysis and an algorithm",
+          "sourceName": {
+            "en": "On Spectral Clustering: Analysis and an algorithm",
+            "zh": "论谱聚类：分析与算法"
+          },
           "source": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
           "sourceUrl": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
           "originalImageUrl": "Local original redraw",
@@ -23021,12 +24395,24 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Paper",
-          "title": "Normalized Cuts and Image Segmentation",
-          "description": "IEEE paper connecting graph cuts, eigenvectors, and segmentation for spectral clustering.",
+          "site": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "title": {
+            "en": "Normalized Cuts and Image Segmentation",
+            "zh": "归一化切分与图像分割"
+          },
+          "description": {
+            "en": "IEEE paper connecting graph cuts, eigenvectors, and segmentation for spectral clustering.",
+            "zh": "IEEE 论文：将图切分、特征向量和分割与谱聚类联系起来。"
+          },
           "url": "https://doi.org/10.1109/34.868688",
           "source": "https://doi.org/10.1109/34.868688",
-          "action": "Open IEEE record"
+          "action": {
+            "en": "Open IEEE record",
+            "zh": "打开 IEEE 记录"
+          }
         }
       ],
       "sources": [
@@ -23037,7 +24423,7 @@ const milestones = [
           },
           "label": {
             "en": "Normalized Cuts and Image Segmentation",
-            "zh": "Normalized Cuts and Image Segmentation"
+            "zh": "归一化切分与图像分割"
           },
           "url": "https://doi.org/10.1109/34.868688"
         },
@@ -23048,7 +24434,7 @@ const milestones = [
           },
           "label": {
             "en": "On Spectral Clustering: Analysis and an algorithm",
-            "zh": "On Spectral Clustering: Analysis and an algorithm"
+            "zh": "论谱聚类：分析与算法"
           },
           "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html"
         },
