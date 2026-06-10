@@ -1232,15 +1232,12 @@ function renderFigures(key) {
   const figs = ev.figures || [];
   list.innerHTML = figs.map((f, i) => `
     <div class="dyn-row">
-      <input value="${esc(f.name||'')}" placeholder="姓名" oninput="setFigure('${key}',${i},'name',this.value)">
+      <input value="${esc(mlText(f.name, 'zh'))}" placeholder="中文姓名/团队" oninput="setFigureMl('${key}',${i},'name','zh',this.value)">
+      <input value="${esc(mlText(f.name, 'en'))}" placeholder="English name/team" oninput="setFigureMl('${key}',${i},'name','en',this.value)">
       <input value="${esc(mlText(f.role, 'zh'))}" placeholder="中文角色" oninput="setFigureMl('${key}',${i},'role','zh',this.value)">
       <input value="${esc(mlText(f.role, 'en'))}" placeholder="English role" oninput="setFigureMl('${key}',${i},'role','en',this.value)">
       <button class="btn btn-danger btn-icon" onclick="removeFigure('${key}',${i})">×</button>
     </div>`).join('');
-}
-function setFigure(key, i, field, val) {
-  if (!events[key].figures) events[key].figures = [];
-  events[key].figures[i][field] = val;
 }
 function setFigureMl(key, i, field, locale, val) {
   if (!events[key].figures) events[key].figures = [];
@@ -1250,7 +1247,7 @@ function setFigureMl(key, i, field, locale, val) {
 function addFigure() {
   if (!currentEventKey) return;
   if (!events[currentEventKey].figures) events[currentEventKey].figures = [];
-  events[currentEventKey].figures.push({ name: '', role: '' });
+  events[currentEventKey].figures.push({ name: { zh: '', en: '' }, role: { zh: '', en: '' } });
   renderFigures(currentEventKey);
 }
 function removeFigure(key, i) {

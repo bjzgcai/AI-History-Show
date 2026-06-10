@@ -164,7 +164,7 @@ for (const cat of categories) {
             subtitle: cat.subtitle,
             location: ev.location,
             description: ev.description,
-            figures: (ev.figures || []).map(enrichFigure),
+            figures: (ev.figures || []).map((figure) => enrichFigure(figure, key)),
             photos: [], // 预留字段，暂不使用
             videoUrl: videos[0] ? videos[0].embed_url || videos[0].url || '' : '',
             quote: buildQuote(curatedQuote.text),
@@ -268,20 +268,32 @@ function selectQuizzes(key, ev) {
         .filter(Boolean);
 }
 
+function figureNameCandidates(figure) {
+  const value = figure && figure.name;
+  const names = isLocalizedText(value)
+    ? [...SUPPORTED_LOCALES.map((locale) => getLocalizedText(value, locale)), ...Object.values(value).map((item) => String(item || '').trim())]
+    : [String(value || '').trim()];
+  return [...new Set(names.filter(Boolean))];
+}
+
+function findAvatarRegistryEntry(figure) {
+  for (const name of figureNameCandidates(figure)) {
+    if (avatarRegistry[name]) return avatarRegistry[name];
+  }
+  return {};
+}
+
 /** 给人物条目补上显式头像信息 */
-function enrichFigure(figure) {
+function enrichFigure(figure, key) {
     const safeFigure = figure && typeof figure === 'object' ? figure : {};
-    const nameCandidates = [
-        getLocalizedText(safeFigure.name, 'en'),
-        getLocalizedText(safeFigure.name, 'zh'),
-        typeof safeFigure.name === 'string' ? safeFigure.name : ''
-    ].filter(Boolean);
-    const registryEntry = nameCandidates.map((name) => avatarRegistry[name]).find(Boolean) || {};
+    const registryEntry = findAvatarRegistryEntry(safeFigure);
+    const eventAvatar = key && registryEntry.avatarByEvent ? registryEntry.avatarByEvent[key] || '' : '';
+    const eventAvatarStyle = key && registryEntry.avatarStyleByEvent ? registryEntry.avatarStyleByEvent[key] || '' : '';
 
     return {
         ...safeFigure,
-        avatar: safeFigure.avatar || registryEntry.avatar || '',
-        avatarStyle: safeFigure.avatarStyle || registryEntry.avatarStyle || '',
+        avatar: safeFigure.avatar || eventAvatar || registryEntry.avatar || '',
+        avatarStyle: safeFigure.avatarStyle || eventAvatarStyle || registryEntry.avatarStyle || '',
         figureType: safeFigure.figureType || registryEntry.type || 'person'
     };
 }
@@ -403,16 +415,16 @@ function buildOutputContent(now) {
     ].join('\n');
 }
 
-function stripGeneratedTime(content) {
+function normalizeGeneratedTime(content) {
   return String(content || '')
-    .replace(/\r\n?/g, '\n')
-    .replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <stable>');
+    .replace(/\r\n/g, '\n')
+    .replace(/^\/\/ 生成时间: .+$/m, '// 生成时间: <preserved>');
 }
 
-function writeOutputIfChanged(file, content) {
+function writeIfMeaningfullyChanged(file, content) {
   if (fs.existsSync(file)) {
-    const current = fs.readFileSync(file, 'utf8');
-    if (stripGeneratedTime(current) === stripGeneratedTime(content)) {
+    const existing = fs.readFileSync(file, 'utf8');
+    if (normalizeGeneratedTime(existing) === normalizeGeneratedTime(content)) {
       return false;
     }
   }
@@ -451,10 +463,10 @@ function validateAvatarAssets(items) {
 const missingAvatarAssets = validateAvatarAssets(milestones);
 const now = new Date().toISOString().replace('T', ' ').slice(0, 16);
 const content = buildOutputContent(now);
-
 const writeResults = new Map();
+
 for (const file of OUTPUTS) {
-    writeResults.set(file, writeOutputIfChanged(file, content));
+    writeResults.set(file, writeIfMeaningfullyChanged(file, content));
 }
 
 for (const item of missingAvatarAssets) {

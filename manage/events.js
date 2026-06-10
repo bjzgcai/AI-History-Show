@@ -78,9 +78,9 @@ module.exports = {
       "zh": "摘自PPT第1页"
     },
     "images": [
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
     ],
     "videos": [
@@ -186,22 +186,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Frank Rosenblatt",
+          "zh": "弗兰克·罗森布拉特"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Perceptron inventor",
+          "zh": "感知机发明者"
         }
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Frank Rosenblatt",
+          "zh": "弗兰克·罗森布拉特"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Perceptron inventor and early demonstration photo",
+          "zh": "感知机发明者与早期演示资料"
         }
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
@@ -291,12 +291,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Marvin Minsky",
+          "zh": "马文·明斯基"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Co-author of Perceptrons",
+          "zh": "《感知器》作者"
         }
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
@@ -386,10 +386,10 @@ module.exports = {
       "zh": "摘自PPT第9页"
     },
     "images": [
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
-      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
     ],
     "videos": [
@@ -408,32 +408,32 @@ module.exports = {
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Backpropagation co-author and deep learning pioneer",
+          "zh": "反向传播共同作者，深度学习先驱"
         }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "David Rumelhart",
+          "zh": "大卫·鲁梅尔哈特"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Lead author of the backpropagation paper",
+          "zh": "反向传播论文主要作者"
         }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Backpropagation co-author in the 1980s",
+          "zh": "反向传播共同作者，1980 年代影像"
         }
       },
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
@@ -503,22 +503,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Yann LeCun",
+          "zh": "杨立昆"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "CNN pioneer and LeNet researcher",
+          "zh": "CNN 先驱，LeNet 研究者"
         }
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Yann LeCun",
+          "zh": "杨立昆"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "CNN pioneer and LeNet researcher",
+          "zh": "CNN 先驱，LeNet 研究者"
         }
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
@@ -607,12 +607,12 @@ module.exports = {
       },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Jeffrey Elman",
+          "zh": "杰弗里·埃尔曼"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Creator of the Simple RNN / Elman network",
+          "zh": "Simple RNN / Elman 网络提出者"
         }
       }
     }
@@ -672,6 +672,7 @@ module.exports = {
       "zh": "摘自PPT第19页"
     },
     "images": [
+      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
       "resources/images/1997-lstm/people/1997-lstm_people_01.png"
@@ -680,6 +681,16 @@ module.exports = {
       "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4"
     ],
     "imageMeta": {
+      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg": {
+        "caption": {
+          "en": "Jürgen Schmidhuber",
+          "zh": "尤尔根·施密德胡伯"
+        },
+        "subcaption": {
+          "en": "LSTM co-inventor, 1997 photo",
+          "zh": "LSTM 共同发明者，1997 年照片"
+        }
+      },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
           "en": "Architecture",
@@ -702,12 +713,12 @@ module.exports = {
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Jürgen Schmidhuber",
+          "zh": "尤尔根·施密德胡伯"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "LSTM co-inventor",
+          "zh": "LSTM 共同发明者"
         }
       }
     }
@@ -777,12 +788,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Alex Krizhevsky",
+          "zh": "亚历克斯·克里热夫斯基"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "AlexNet first author in team context",
+          "zh": "AlexNet 主要作者与团队资料"
         }
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
@@ -881,12 +892,12 @@ module.exports = {
       },
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Jürgen Schmidhuber",
+          "zh": "尤尔根·施密德胡伯"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Highway Network co-author",
+          "zh": "高速网络共同作者"
         }
       }
     }
@@ -895,7 +906,7 @@ module.exports = {
     "year": 2015,
     "title": {
       "en": "ResNet",
-      "zh": "ResNet"
+      "zh": "残差网络"
     },
     "location": {
       "name": {
@@ -1047,7 +1058,7 @@ module.exports = {
     "year": 2016,
     "title": {
       "en": "DenseNet",
-      "zh": "DenseNet"
+      "zh": "密集连接网络"
     },
     "location": {
       "name": {
@@ -1098,22 +1109,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Gao Huang",
+          "zh": "黄高"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "DenseNet author",
+          "zh": "DenseNet 作者"
         }
       },
       "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Gao Huang",
+          "zh": "黄高"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "DenseNet author",
+          "zh": "DenseNet 作者"
         }
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
@@ -1275,12 +1286,12 @@ module.exports = {
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Attention mechanism researcher",
+          "zh": "注意力机制研究者"
         }
       }
     }
@@ -1289,7 +1300,7 @@ module.exports = {
     "year": 2017,
     "title": {
       "en": "Transformer",
-      "zh": "Transformer"
+      "zh": "转换器架构"
     },
     "location": {
       "name": {
@@ -1374,7 +1385,7 @@ module.exports = {
     "year": 2018,
     "title": {
       "en": "BERT",
-      "zh": "BERT"
+      "zh": "双向编码预训练模型"
     },
     "location": {
       "name": {
@@ -1425,7 +1436,7 @@ module.exports = {
       "zh": "摘自PPT第37页"
     },
     "images": [
-      "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
     ],
@@ -1433,14 +1444,14 @@ module.exports = {
       "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4"
     ],
     "imageMeta": {
-      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
+      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Jacob Devlin",
+          "zh": "雅各布·德夫林"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "Lead author of the BERT paper",
+          "zh": "BERT 论文主要作者"
         }
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
@@ -1469,7 +1480,7 @@ module.exports = {
     "year": 2018,
     "title": {
       "en": "GPT",
-      "zh": "GPT"
+      "zh": "生成式预训练模型"
     },
     "location": {
       "name": {
@@ -1557,27 +1568,27 @@ module.exports = {
         },
         "subcaption": {
           "en": "GPT",
-          "zh": "GPT"
+          "zh": "生成式预训练 Transformer"
         }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "GPT paper author",
+          "zh": "GPT 论文作者"
         }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Sam Altman",
+          "zh": "萨姆·奥特曼"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "OpenAI CEO in GPT-era media footage",
+          "zh": "GPT 时代 OpenAI 相关媒体影像"
         }
       }
     }
@@ -1723,11 +1734,14 @@ module.exports = {
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22"
+      "zh": "到2025年，大语言模型进入百花齐放的竞争阶段。公开竞技场和评测榜单持续记录各类模型在推理、多模态、工具使用和部署效率上的快速进展，模型比较也从一次性论文结果转向持续公开观察。"
     },
     "figures": [
       {
-        "name": "研究机构",
+        "name": {
+          "en": "Research Organizations",
+          "zh": "研究机构"
+        },
         "role": {
           "en": "Leading-edge model R&D organization",
           "zh": "前沿模型研发机构"
@@ -1743,46 +1757,35 @@ module.exports = {
       "zh": "摘自PPT第39页"
     },
     "images": [
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg",
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg",
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4"
     ],
     "imageMeta": {
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg": {
         "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
+          "en": "Leaderboard",
+          "zh": "榜单示意"
         },
         "subcaption": {
-          "en": "A Flourishing Competition Among Large Language Models",
-          "zh": "大语言模型百花齐放"
+          "en": "LLM leaderboard snapshot",
+          "zh": "大语言模型榜单示意"
         }
       },
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg": {
         "caption": {
           "en": "Architecture",
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "A Flourishing Competition Among Large Language Models",
-          "zh": "大语言模型百花齐放 架构图"
+          "en": "Large language model development pipeline",
+          "zh": "大语言模型发展流程示意"
         }
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
-        "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
-        },
-        "subcaption": {
-          "en": "A Flourishing Competition Among Large Language Models",
-          "zh": "大语言模型百花齐放"
-        }
-      },
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"
@@ -1815,8 +1818,8 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
-      "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
+      "en": "AlphaFold is DeepMind's protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+      "zh": "AlphaFold 是 DeepMind 开发的蛋白质结构预测系统。第二代系统在 2020 年的国际蛋白质结构预测竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质三维结构，解决了长期困扰生物学界的重大难题。"
     },
     "figures": [
       {
@@ -1913,22 +1916,22 @@ module.exports = {
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "John Jumper",
+          "zh": "约翰·江珀"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "AlphaFold 2 lead scientist",
+          "zh": "AlphaFold 2 首席科学家"
         }
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Demis Hassabis",
+          "zh": "戴密斯·哈萨比斯"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "DeepMind CEO",
+          "zh": "DeepMind CEO"
         }
       }
     }
@@ -1989,12 +1992,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Max Tegmark",
+          "zh": "马克斯·泰格马克"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "AI Feynman author",
+          "zh": "AI Feynman 作者"
         }
       },
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
@@ -2071,7 +2074,10 @@ module.exports = {
         }
       },
       {
-        "name": "伯克利团队",
+        "name": {
+          "en": "UC Berkeley Team",
+          "zh": "伯克利团队"
+        },
         "role": {
           "en": "A-Lab Developer",
           "zh": "A-Lab开发者"
@@ -2129,22 +2135,22 @@ module.exports = {
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "UC Berkeley Team",
+          "zh": "伯克利团队"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "A-Lab developer team",
+          "zh": "A-Lab 开发团队"
         }
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
         "caption": {
-          "en": "Portrait",
-          "zh": "人物肖像"
+          "en": "Sakana AI Team",
+          "zh": "Sakana AI 团队"
         },
         "subcaption": {
-          "en": "Relevant researcher photo",
-          "zh": "相关研究者照片"
+          "en": "AI Scientist developer team",
+          "zh": "AI Scientist 开发团队"
         }
       }
     }
