@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUTPUT = path.join(ROOT, 'manage', 'figure-avatar-report.md');
 const AVATAR_REGISTRY_PATH = path.join(ROOT, 'manage', 'figure-avatars.js');
 
+const { SUPPORTED_LOCALES, getLocalizedText, isLocalizedText } = require(path.join(ROOT, 'shared', 'utils.js'));
 const events = require(path.join(ROOT, 'manage', 'events.js'));
 const avatarRegistry = loadAvatarRegistry();
 
@@ -17,8 +18,31 @@ function escapeCell(value) {
         .replace(/\n/g, '<br>');
 }
 
-function getRegistryEntry(name) {
-    return avatarRegistry[name] || null;
+function textCandidates(value) {
+    const names = isLocalizedText(value)
+        ? [
+              ...SUPPORTED_LOCALES.map((locale) => getLocalizedText(value, locale)),
+              ...Object.values(value).map((item) => String(item || '').trim())
+          ]
+        : [String(value || '').trim()];
+    return [...new Set(names.filter(Boolean))];
+}
+
+function figureDisplayName(figure) {
+    const value = figure && figure.name;
+    return getLocalizedText(value, 'zh') || getLocalizedText(value, 'en') || textCandidates(value)[0] || '';
+}
+
+function figureDisplayRole(figure) {
+    const value = figure && figure.role;
+    return getLocalizedText(value, 'zh') || getLocalizedText(value, 'en') || '';
+}
+
+function getRegistryEntry(figure) {
+    for (const name of textCandidates(figure && figure.name)) {
+        if (avatarRegistry[name]) return avatarRegistry[name];
+    }
+    return null;
 }
 
 function loadAvatarRegistry() {
@@ -36,7 +60,25 @@ function resolveAvatarPath(avatarPath) {
     return path.isAbsolute(trimmed) ? trimmed : path.join(ROOT, trimmed);
 }
 
-function getAvatarInfo(name, figure) {
+function normalizeGeneratedTime(content) {
+    return String(content || '')
+        .replace(/\r\n/g, '\n')
+        .replace(/^生成时间：.+$/m, '生成时间：<preserved>');
+}
+
+function writeIfMeaningfullyChanged(file, content) {
+    if (fs.existsSync(file)) {
+        const existing = fs.readFileSync(file, 'utf8');
+        if (normalizeGeneratedTime(existing) === normalizeGeneratedTime(content)) {
+            return false;
+        }
+    }
+
+    fs.writeFileSync(file, content, 'utf8');
+    return true;
+}
+
+function getAvatarInfo(figure, eventKey) {
     if (figure && typeof figure.avatar === 'string' && figure.avatar.trim()) {
         const avatar = figure.avatar.trim();
         return {
@@ -44,8 +86,9 @@ function getAvatarInfo(name, figure) {
             exists: fs.existsSync(resolveAvatarPath(avatar))
         };
     }
-    const entry = getRegistryEntry(name);
-    const avatar = entry && entry.avatar ? String(entry.avatar).trim() : '';
+    const entry = getRegistryEntry(figure);
+    const eventAvatar = String(entry?.avatarByEvent?.[eventKey] || '').trim();
+    const avatar = eventAvatar || (entry && entry.avatar ? String(entry.avatar).trim() : '');
     return {
         avatar,
         exists: avatar ? fs.existsSync(resolveAvatarPath(avatar)) : false
@@ -61,7 +104,7 @@ const eventRows = [];
 
 for (const [key, event] of Object.entries(events)) {
     const figures = Array.isArray(event.figures) ? event.figures.filter(Boolean) : [];
-    const readyCount = figures.filter((figure) => getAvatarInfo(figure.name, figure).exists).length;
+    const readyCount = figures.filter((figure) => getAvatarInfo(figure, key).exists).length;
     const totalCount = figures.length;
     const legacyPeopleCount = getLegacyPeopleCount(event);
     const state =
@@ -69,7 +112,7 @@ for (const [key, event] of Object.entries(events)) {
 
     eventRows.push({
         key,
-        title: event.title || key,
+        title: getLocalizedText(event.title, 'zh') || getLocalizedText(event.title, 'en') || key,
         totalCount,
         readyCount,
         legacyPeopleCount,
@@ -78,11 +121,11 @@ for (const [key, event] of Object.entries(events)) {
     });
 
     figures.forEach((figure) => {
-        const name = String((figure || {}).name || '').trim();
+        const name = figureDisplayName(figure);
         if (!name) return;
 
         if (!figureMap.has(name)) {
-            const entry = getRegistryEntry(name) || {};
+            const entry = getRegistryEntry(figure) || {};
             figureMap.set(name, {
                 name,
                 type: entry.type || 'person',
@@ -97,8 +140,9 @@ for (const [key, event] of Object.entries(events)) {
         }
 
         const item = figureMap.get(name);
-        const avatarInfo = getAvatarInfo(name, figure);
-        if (figure.role) item.roles.add(figure.role);
+        const avatarInfo = getAvatarInfo(figure, key);
+        const role = figureDisplayRole(figure);
+        if (role) item.roles.add(role);
         item.events.add(key);
         if (!item.avatar && avatarInfo.avatar) item.avatar = avatarInfo.avatar;
         item.avatarExists = item.avatarExists || avatarInfo.exists;
@@ -169,9 +213,9 @@ figureRows.forEach((item) => {
 
 lines.push('');
 
-fs.writeFileSync(OUTPUT, `${lines.join('\n')}\n`, 'utf8');
+const didWrite = writeIfMeaningfullyChanged(OUTPUT, `${lines.join('\n')}\n`);
 
-console.log(`已写入 ${path.relative(ROOT, OUTPUT)}`);
+console.log(`${didWrite ? '已写入' : '内容未变'} ${path.relative(ROOT, OUTPUT)}`);
 console.log(
     `人物/团队: ${summary.uniqueFigureCount}, 已有可用头像: ${summary.readyFigureCount}, 缺失: ${summary.missingFigureCount}`
 );
