@@ -271,7 +271,12 @@ function selectQuizzes(key, ev) {
 /** 给人物条目补上显式头像信息 */
 function enrichFigure(figure) {
     const safeFigure = figure && typeof figure === 'object' ? figure : {};
-    const registryEntry = safeFigure.name ? avatarRegistry[safeFigure.name] || {} : {};
+    const nameCandidates = [
+        getLocalizedText(safeFigure.name, 'en'),
+        getLocalizedText(safeFigure.name, 'zh'),
+        typeof safeFigure.name === 'string' ? safeFigure.name : ''
+    ].filter(Boolean);
+    const registryEntry = nameCandidates.map((name) => avatarRegistry[name]).find(Boolean) || {};
 
     return {
         ...safeFigure,

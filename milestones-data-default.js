@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-07 22:45
+// 生成时间: 2026-06-10 01:26
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -3663,7 +3663,7 @@ const milestones = [
           "en": "Designer of LISP",
           "zh": "LISP 设计者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/john-mccarthy.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -4020,7 +4020,7 @@ const milestones = [
           "en": "DeepMind co-founder",
           "zh": "DeepMind 联合创始人"
         },
-        "avatar": "",
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -12395,7 +12395,7 @@ const milestones = [
           "en": "Co-author and deep learning pioneer",
           "zh": "共同作者，深度学习先驱"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -14487,7 +14487,7 @@ const milestones = [
           "en": "Co-author and probabilistic ML researcher",
           "zh": "共同作者，概率机器学习研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/michael-i-jordan.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -15703,7 +15703,7 @@ const milestones = [
           "en": "Author of the frame representation proposal",
           "zh": "框架表示思想提出者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -17317,7 +17317,7 @@ const milestones = [
           "en": "Inventor of the perceptron",
           "zh": "感知机发明者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/frank-rosenblatt.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -17721,7 +17721,7 @@ const milestones = [
           "en": "Co-author of deep belief net learning",
           "zh": "深度置信网络学习共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -18886,6 +18886,4177 @@ const milestones = [
         "tags": [
           "probabilistic-ai",
           "knowledge-representation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1990-otter",
+    "year": "1990s",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Otter",
+      "zh": "Otter 自动定理证明器"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Argonne National Laboratory",
+        "zh": "阿贡国家实验室"
+      },
+      "country": {
+        "en": "Illinois, United States",
+        "zh": "美国伊利诺伊州"
+      },
+      "coordinates": [
+        41.7106,
+        -87.9789
+      ]
+    },
+    "description": {
+      "en": "<p>Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.</p>",
+      "zh": "<p>Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "William McCune",
+          "zh": "William McCune"
+        },
+        "role": {
+          "en": "Creator of Otter",
+          "zh": "Otter 创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Resolution-style proof search made practical\"",
+      "zh": "\"让归结式证明搜索变得实用\""
+    },
+    "quoteAttribution": "《OTTER 3.3 Reference Manual》, William McCune",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "OTTER 3.3 Reference Manual",
+      "workAuthors": "William McCune",
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Automated theorem proving / Otter",
+      "zh": "BenchCouncil AI100：自动定理证明 / Otter 自动定理证明器"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Automated reasoning systems had powerful inference rules but often struggled with search explosion. Otter focused on practical control of that search.",
+          "zh": "自动推理系统拥有强大的推理规则，但常常受困于搜索爆炸。Otter 的重点是以工程化方式控制这种搜索。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The prover repeatedly selects a promising clause, generates consequences through inference rules, and uses indexing and simplification to keep the search tractable.",
+          "zh": "证明器反复选择有希望的子句，用推理规则生成后果，并通过索引和化简让搜索保持可控。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Otter influenced later automated reasoning tools, including Prover9, and helped prove or simplify results in algebra, logic, and formal mathematics.",
+          "zh": "Otter 影响了后来的自动推理工具，包括 Prover9，并帮助在代数、逻辑和形式化数学中证明或简化结果。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
+        "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
+        "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
+        "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg": {
+          "caption": {
+            "en": "Otter input clauses",
+            "zh": "Otter 输入子句"
+          },
+          "subcaption": {
+            "en": "Original local explainer for turning assumptions and goals into Otter clause lists.",
+            "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。"
+          },
+          "sourceName": "OTTER 3.3 Reference Manual",
+          "source": "https://arxiv.org/abs/cs/0310056",
+          "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Input-format diagram",
+            "zh": "输入格式图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg": {
+          "caption": {
+            "en": "Otter proof trace",
+            "zh": "Otter 证明轨迹"
+          },
+          "subcaption": {
+            "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction.",
+            "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。"
+          },
+          "sourceName": "OTTER 3.3 Reference Manual",
+          "source": "https://arxiv.org/abs/cs/0310056",
+          "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Proof-trace diagram",
+            "zh": "证明轨迹图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg": {
+          "caption": {
+            "en": "Given-clause proof loop",
+            "zh": "given-clause 证明循环"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+            "zh": "依据 OTTER 3.3 Reference Manual 制作的本地解释图。"
+          },
+          "sourceName": "OTTER 3.3 Reference Manual",
+          "source": "https://arxiv.org/abs/cs/0310056",
+          "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Proof-search diagram",
+            "zh": "证明搜索图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg": {
+          "caption": {
+            "en": "Clause indexing map",
+            "zh": "子句索引地图"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+            "zh": "依据 OTTER 3.3 Reference Manual 制作的本地解释图。"
+          },
+          "sourceName": "OTTER 3.3 Reference Manual",
+          "source": "https://arxiv.org/abs/cs/0310056",
+          "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Indexing diagram",
+            "zh": "索引图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Automated theorem proving",
+        "zh": "自动定理证明"
+      },
+      "method": {
+        "en": "Given-clause resolution and paramodulation",
+        "zh": "given-clause 归结与参数调解"
+      },
+      "artifact": {
+        "en": "Otter theorem prover",
+        "zh": "Otter 定理证明器"
+      },
+      "material": {
+        "en": "Argonne technical manual and theorem-proving software",
+        "zh": "阿贡技术手册与定理证明软件"
+      },
+      "demo": {
+        "en": "Watch clauses move from usable facts to a proof",
+        "zh": "观察子句从可用事实推进到证明"
+      },
+      "visual": "otter",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Given-Clause Loop",
+            "zh": "given-clause 循环"
+          },
+          "text": {
+            "en": "A selected clause drives each round of saturation search.",
+            "zh": "每轮饱和搜索由被选中的子句驱动。"
+          }
+        },
+        {
+          "label": {
+            "en": "Paramodulation",
+            "zh": "参数调解"
+          },
+          "text": {
+            "en": "Equality reasoning rewrites terms inside clauses.",
+            "zh": "等式推理会在子句内部重写项。"
+          }
+        },
+        {
+          "label": {
+            "en": "Term Indexing",
+            "zh": "项索引"
+          },
+          "text": {
+            "en": "Indexes speed up finding clauses that can participate in an inference.",
+            "zh": "索引加速寻找可参与推理的子句。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Resolution method",
+          "zh": "归结方法"
+        },
+        {
+          "en": "DPLL",
+          "zh": "DPLL"
+        },
+        {
+          "en": "Prover9",
+          "zh": "Prover9"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Illinois, United States",
+          "zh": "美国伊利诺伊州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Select clause",
+          "zh": "选择子句"
+        },
+        {
+          "en": "Infer and simplify",
+          "zh": "推理并化简"
+        },
+        {
+          "en": "Close proof",
+          "zh": "闭合证明"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Reference",
+            "zh": "参考文献"
+          },
+          "label": {
+            "en": "OTTER 3.3 Reference Manual",
+            "zh": "OTTER 3.3 Reference Manual"
+          },
+          "url": "https://arxiv.org/abs/cs/0310056"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Spectrum of Applications of Automated Reasoning",
+            "zh": "A Spectrum of Applications of Automated Reasoning"
+          },
+          "url": "https://arxiv.org/abs/cs/0205078"
+        },
+        {
+          "type": {
+            "en": "Application paper",
+            "zh": "应用论文"
+          },
+          "label": {
+            "en": "Checking Clinical Guidelines using Automated Reasoning Tools",
+            "zh": "Checking Clinical Guidelines using Automated Reasoning Tools"
+          },
+          "url": "https://arxiv.org/abs/0806.0250"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1990-otter-quiz-1",
+      "question": {
+        "en": "What was central to Otter's practical theorem-proving style?",
+        "zh": "Otter 实用定理证明风格的核心是什么？"
+      },
+      "options": [
+        {
+          "en": "A controlled given-clause search with resolution and paramodulation",
+          "zh": "结合归结与参数调解的受控 given-clause 搜索"
+        },
+        {
+          "en": "Only a fixed chess opening book",
+          "zh": "只有固定的棋类开局库"
+        },
+        {
+          "en": "A neural image classifier",
+          "zh": "神经图像分类器"
+        },
+        {
+          "en": "A random text generator",
+          "zh": "随机文本生成器"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Otter searched first-order clause spaces using resolution-style inference, equality reasoning, indexing, and search-control heuristics.",
+        "zh": "Otter 用归结式推理、等式推理、索引和搜索控制启发式来搜索一阶子句空间。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "theorem-proving",
+        "symbolic-ai"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1990-otter-quiz-1",
+        "question": {
+          "en": "What was central to Otter's practical theorem-proving style?",
+          "zh": "Otter 实用定理证明风格的核心是什么？"
+        },
+        "options": [
+          {
+            "en": "A controlled given-clause search with resolution and paramodulation",
+            "zh": "结合归结与参数调解的受控 given-clause 搜索"
+          },
+          {
+            "en": "Only a fixed chess opening book",
+            "zh": "只有固定的棋类开局库"
+          },
+          {
+            "en": "A neural image classifier",
+            "zh": "神经图像分类器"
+          },
+          {
+            "en": "A random text generator",
+            "zh": "随机文本生成器"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Otter searched first-order clause spaces using resolution-style inference, equality reasoning, indexing, and search-control heuristics.",
+          "zh": "Otter 用归结式推理、等式推理、索引和搜索控制启发式来搜索一阶子句空间。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "theorem-proving",
+          "symbolic-ai"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-2011-ibm-watson",
+    "year": "2006-2011",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "IBM Watson",
+      "zh": "IBM Watson"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "IBM Thomas J. Watson Research Center",
+        "zh": "IBM Thomas J. Watson 研究中心"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      },
+      "coordinates": [
+        41.2101,
+        -73.8037
+      ]
+    },
+    "description": {
+      "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>",
+      "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Ferrucci",
+          "zh": "David Ferrucci"
+        },
+        "role": {
+          "en": "Principal investigator of the Watson / DeepQA team",
+          "zh": "Watson / DeepQA 团队负责人"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "IBM DeepQA team",
+          "zh": "IBM DeepQA 团队"
+        },
+        "role": {
+          "en": "Built the question-answering system",
+          "zh": "构建问答系统"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Generate hypotheses, score evidence, rank answers\"",
+      "zh": "\"生成假设、评分证据、排序答案\""
+    },
+    "quoteAttribution": "《Watson: Beyond Jeopardy!》, David Ferrucci et al.",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Watson: Beyond Jeopardy!",
+      "workAuthors": "David Ferrucci et al.",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Question answering / IBM Watson",
+      "zh": "BenchCouncil AI100：开放域问答 / IBM Watson"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered.",
+          "zh": "Deep Blue 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Watson did not rely on a single parser or database. It generated hypotheses, searched sources, scored evidence, and merged rankings into a final answer with confidence.",
+          "zh": "Watson 不依赖单一解析器或数据库。它生成假设、检索来源、评分证据，并把多路排序合并为带置信度的最终答案。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Watson became a landmark for industrial natural-language AI, while also revealing how difficult it is to turn showcase question answering into robust domain products.",
+          "zh": "Watson 成为工业自然语言 AI 的标志性事件，同时也揭示了把展示型问答转化为稳健领域产品的困难。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+        "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg": {
+          "caption": {
+            "en": "David Ferrucci portrait",
+            "zh": "David Ferrucci 人物照片"
+          },
+          "subcaption": {
+            "en": "Principal investigator of the IBM Watson / DeepQA team.",
+            "zh": "IBM Watson / DeepQA 团队负责人。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "license": "CC BY 2.0",
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg": {
+          "caption": {
+            "en": "IBM Watson system",
+            "zh": "IBM Watson 系统照片"
+          },
+          "subcaption": {
+            "en": "Watson hardware display photographed in 2011.",
+            "zh": "2011 年拍摄的 Watson 系统硬件展示。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+          "license": "CC BY 3.0",
+          "usage": {
+            "en": "System photo",
+            "zh": "系统照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg": {
+          "caption": {
+            "en": "DeepQA architecture",
+            "zh": "DeepQA 架构图"
+          },
+          "subcaption": {
+            "en": "Commons diagram based on the AI Magazine Watson overview.",
+            "zh": "依据 AI Magazine Watson 综述绘制的 Commons 架构图。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+          "license": "CC0",
+          "usage": {
+            "en": "Architecture diagram",
+            "zh": "架构图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg": {
+          "caption": {
+            "en": "Evidence ranking stack",
+            "zh": "证据排序栈"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Watson: Beyond Jeopardy!.",
+            "zh": "依据 Watson: Beyond Jeopardy! 制作的本地解释图。"
+          },
+          "sourceName": "Watson: Beyond Jeopardy!",
+          "source": "https://doi.org/10.1016/j.artint.2012.06.009",
+          "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Scoring diagram",
+            "zh": "评分图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Question answering",
+        "zh": "开放域问答"
+      },
+      "method": {
+        "en": "DeepQA evidence-ranking pipeline",
+        "zh": "DeepQA 证据排序流水线"
+      },
+      "artifact": {
+        "en": "Watson Jeopardy! system",
+        "zh": "Watson Jeopardy! 系统"
+      },
+      "material": {
+        "en": "IBM papers, AI Magazine overview, and Jeopardy! system reports",
+        "zh": "IBM 论文、AI Magazine 综述与 Jeopardy! 系统报告"
+      },
+      "demo": {
+        "en": "Rank competing answers from many evidence signals",
+        "zh": "根据多路证据信号排序候选答案"
+      },
+      "visual": "watson",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Hypothesis Generation",
+            "zh": "假设生成"
+          },
+          "text": {
+            "en": "Candidate answers are generated from many interpretations of the clue.",
+            "zh": "从线索的多种解释中生成候选答案。"
+          }
+        },
+        {
+          "label": {
+            "en": "Evidence Scoring",
+            "zh": "证据评分"
+          },
+          "text": {
+            "en": "Independent scorers measure support from passages, entities, dates, and relations.",
+            "zh": "独立评分器从段落、实体、日期和关系中衡量支持度。"
+          }
+        },
+        {
+          "label": {
+            "en": "Confidence Ranking",
+            "zh": "置信度排序"
+          },
+          "text": {
+            "en": "Watson decides whether to answer based on merged confidence.",
+            "zh": "Watson 根据合并置信度决定是否作答。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Deep Blue",
+          "zh": "Deep Blue"
+        },
+        {
+          "en": "ELIZA",
+          "zh": "ELIZA"
+        },
+        {
+          "en": "BERT",
+          "zh": "BERT"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New York, United States",
+          "zh": "美国纽约州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Parse clue",
+          "zh": "解析线索"
+        },
+        {
+          "en": "Score evidence",
+          "zh": "评分证据"
+        },
+        {
+          "en": "Buzz with confidence",
+          "zh": "带置信度抢答"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Watson: Beyond Jeopardy!",
+            "zh": "Watson: Beyond Jeopardy!"
+          },
+          "url": "https://doi.org/10.1016/j.artint.2012.06.009"
+        },
+        {
+          "type": {
+            "en": "Overview",
+            "zh": "综述"
+          },
+          "label": {
+            "en": "Building Watson: An Overview of the DeepQA Project",
+            "zh": "Building Watson: An Overview of the DeepQA Project"
+          },
+          "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "IBM Watson system photo",
+            "zh": "IBM Watson 系统照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "David Ferrucci portrait",
+            "zh": "David Ferrucci 人物照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "2011-ibm-watson-quiz-1",
+      "question": {
+        "en": "How did Watson choose a Jeopardy! answer?",
+        "zh": "Watson 如何选择 Jeopardy! 答案？"
+      },
+      "options": [
+        {
+          "en": "It generated candidate answers and ranked them by evidence and confidence",
+          "zh": "它生成候选答案，并按证据与置信度排序"
+        },
+        {
+          "en": "It opened the internet during the show",
+          "zh": "它在节目中实时打开互联网"
+        },
+        {
+          "en": "It followed a fixed first answer every time",
+          "zh": "它每次都采用固定第一个答案"
+        },
+        {
+          "en": "It only counted image pixels",
+          "zh": "它只统计图像像素"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DeepQA combined many analysis and scoring components, then merged their evidence into answer confidence.",
+        "zh": "DeepQA 组合大量分析与评分组件，再把它们的证据合并为答案置信度。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "question-answering",
+        "nlp"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "2011-ibm-watson-quiz-1",
+        "question": {
+          "en": "How did Watson choose a Jeopardy! answer?",
+          "zh": "Watson 如何选择 Jeopardy! 答案？"
+        },
+        "options": [
+          {
+            "en": "It generated candidate answers and ranked them by evidence and confidence",
+            "zh": "它生成候选答案，并按证据与置信度排序"
+          },
+          {
+            "en": "It opened the internet during the show",
+            "zh": "它在节目中实时打开互联网"
+          },
+          {
+            "en": "It followed a fixed first answer every time",
+            "zh": "它每次都采用固定第一个答案"
+          },
+          {
+            "en": "It only counted image pixels",
+            "zh": "它只统计图像像素"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DeepQA combined many analysis and scoring components, then merged their evidence into answer confidence.",
+          "zh": "DeepQA 组合大量分析与评分组件，再把它们的证据合并为答案置信度。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "question-answering",
+          "nlp"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1951-strachey-draughts",
+    "year": "1951-1952",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Christopher Strachey's Draughts",
+      "zh": "Christopher Strachey 的跳棋程序"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "National Physical Laboratory",
+        "zh": "英国国家物理实验室"
+      },
+      "country": {
+        "en": "Teddington, United Kingdom",
+        "zh": "英国特丁顿"
+      },
+      "coordinates": [
+        51.4245,
+        -0.3426
+      ]
+    },
+    "description": {
+      "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>",
+      "zh": "<p>Christopher Strachey 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Christopher Strachey",
+          "zh": "Christopher Strachey"
+        },
+        "role": {
+          "en": "Developer of the early draughts program",
+          "zh": "早期跳棋程序开发者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Non-numerical programs could play\"",
+      "zh": "\"非数值程序也可以对弈\""
+    },
+    "quoteAttribution": "《Logical or non-mathematical programmes》, Christopher Strachey",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Logical or non-mathematical programmes",
+      "workAuthors": "Christopher Strachey",
+      "sourceLabel": "",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
+      "zh": "BenchCouncil AI100：游戏 / Christopher Strachey 的跳棋程序"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "It helped establish board games as controlled environments for search, evaluation, and machine intelligence demonstrations.",
+          "zh": "它帮助把棋类游戏确立为研究搜索、评估和机器智能演示的受控环境。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+          "caption": {
+            "en": "Christopher Strachey's draughts program",
+            "zh": "Christopher Strachey 跳棋程序截图"
+          },
+          "subcaption": {
+            "en": "Screenshot of the early draughts program attributed to Strachey.",
+            "zh": "Christopher Strachey 早期跳棋程序截图。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+          "license": "Public domain",
+          "usage": {
+            "en": "Program screenshot",
+            "zh": "程序截图"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+          "caption": {
+            "en": "Checkers board",
+            "zh": "跳棋棋盘照片"
+          },
+          "subcaption": {
+            "en": "Physical checkers board used as visual context for game-playing AI.",
+            "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+          "license": "CC BY 3.0",
+          "usage": {
+            "en": "Game-board photo",
+            "zh": "棋盘照片"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
+          "caption": {
+            "en": "Draughts board search",
+            "zh": "跳棋棋盘搜索"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Logical or non-mathematical programmes.",
+            "zh": "依据 Logical or non-mathematical programmes 制作的本地解释图。"
+          },
+          "sourceName": "Logical or non-mathematical programmes",
+          "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Search diagram",
+            "zh": "搜索图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
+          "caption": {
+            "en": "Early game-program flow",
+            "zh": "早期游戏程序流程"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Logical or non-mathematical programmes.",
+            "zh": "依据 Logical or non-mathematical programmes 制作的本地解释图。"
+          },
+          "sourceName": "Logical or non-mathematical programmes",
+          "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Program-flow diagram",
+            "zh": "程序流程图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Game",
+        "zh": "游戏"
+      },
+      "method": {
+        "en": "Board-state search and evaluation",
+        "zh": "棋盘状态搜索与评估"
+      },
+      "artifact": {
+        "en": "Pilot ACE / Ferranti Mark 1 draughts program",
+        "zh": "Pilot ACE / Ferranti Mark 1 跳棋程序"
+      },
+      "material": {
+        "en": "Historical accounts and Strachey's 1952 program report",
+        "zh": "历史记录与 Strachey 1952 年程序报告"
+      },
+      "demo": {
+        "en": "Evaluate legal draughts moves on a tiny memory budget",
+        "zh": "在极小内存预算下评估合法跳棋走法"
+      },
+      "visual": "draughts",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Board Representation",
+            "zh": "棋盘表示"
+          },
+          "text": {
+            "en": "A game state becomes data the computer can inspect.",
+            "zh": "棋局状态变成计算机可检查的数据。"
+          }
+        },
+        {
+          "label": {
+            "en": "Move Generation",
+            "zh": "走法生成"
+          },
+          "text": {
+            "en": "The program enumerates legal moves instead of following a fixed script.",
+            "zh": "程序枚举合法走法，而不是沿用固定脚本。"
+          }
+        },
+        {
+          "label": {
+            "en": "Evaluation",
+            "zh": "局面评估"
+          },
+          "text": {
+            "en": "Candidate positions are scored so the machine can choose.",
+            "zh": "候选局面被评分，机器据此选择。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Turing Test",
+          "zh": "图灵测试"
+        },
+        {
+          "en": "Deep Blue",
+          "zh": "Deep Blue"
+        },
+        {
+          "en": "Chinook",
+          "zh": "Chinook"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Teddington, United Kingdom",
+          "zh": "英国特丁顿"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Represent board",
+          "zh": "表示棋盘"
+        },
+        {
+          "en": "Generate moves",
+          "zh": "生成走法"
+        },
+        {
+          "en": "Choose move",
+          "zh": "选择走法"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Logical or non-mathematical programmes",
+            "zh": "Logical or non-mathematical programmes"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+        },
+        {
+          "type": {
+            "en": "Biography",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Computer Pioneers - Christopher Strachey",
+            "zh": "Computer Pioneers - Christopher Strachey"
+          },
+          "url": "https://history.computer.org/pioneers/strachey.html"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Strachey draughts program screenshot",
+            "zh": "Strachey 跳棋程序截图"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Checkers board photo",
+            "zh": "跳棋棋盘照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1951-strachey-draughts-quiz-1",
+      "question": {
+        "en": "Why is Strachey's draughts program important to AI history?",
+        "zh": "Strachey 的跳棋程序为什么对 AI 历史重要？"
+      },
+      "options": [
+        {
+          "en": "It showed an early computer choosing moves in a non-numerical game",
+          "zh": "它展示了早期计算机在非数值游戏中选择走法"
+        },
+        {
+          "en": "It trained a modern transformer",
+          "zh": "它训练了现代 Transformer"
+        },
+        {
+          "en": "It solved protein folding",
+          "zh": "它解决了蛋白质折叠"
+        },
+        {
+          "en": "It clustered images with DBSCAN",
+          "zh": "它用 DBSCAN 聚类图像"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The program used board representation, legal move generation, and evaluation on early stored-program computers.",
+        "zh": "该程序在早期存储程序计算机上使用棋盘表示、合法走法生成和局面评估。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "game-ai",
+        "early-computing"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1951-strachey-draughts-quiz-1",
+        "question": {
+          "en": "Why is Strachey's draughts program important to AI history?",
+          "zh": "Strachey 的跳棋程序为什么对 AI 历史重要？"
+        },
+        "options": [
+          {
+            "en": "It showed an early computer choosing moves in a non-numerical game",
+            "zh": "它展示了早期计算机在非数值游戏中选择走法"
+          },
+          {
+            "en": "It trained a modern transformer",
+            "zh": "它训练了现代 Transformer"
+          },
+          {
+            "en": "It solved protein folding",
+            "zh": "它解决了蛋白质折叠"
+          },
+          {
+            "en": "It clustered images with DBSCAN",
+            "zh": "它用 DBSCAN 聚类图像"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The program used board representation, legal move generation, and evaluation on early stored-program computers.",
+          "zh": "该程序在早期存储程序计算机上使用棋盘表示、合法走法生成和局面评估。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "game-ai",
+          "early-computing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1994-chinook",
+    "year": "1989-2007",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Chinook",
+      "zh": "Chinook 跳棋程序"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Alberta",
+        "zh": "阿尔伯塔大学"
+      },
+      "country": {
+        "en": "Alberta, Canada",
+        "zh": "加拿大阿尔伯塔省"
+      },
+      "coordinates": [
+        53.5232,
+        -113.5263
+      ]
+    },
+    "description": {
+      "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>",
+      "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jonathan Schaeffer",
+          "zh": "Jonathan Schaeffer"
+        },
+        "role": {
+          "en": "Leader of the Chinook team",
+          "zh": "Chinook 团队负责人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Perfect play in checkers is a draw\"",
+      "zh": "\"跳棋完美对弈结果为和棋\""
+    },
+    "quoteAttribution": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Checkers Is Solved",
+      "workAuthors": "Jonathan Schaeffer et al.",
+      "sourceLabel": "",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game / Chinook",
+      "zh": "BenchCouncil AI100：游戏 / Chinook 跳棋程序"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "It became a landmark for game-solving research and for measuring how far exhaustive computation and heuristic search can go together.",
+          "zh": "它成为游戏求解研究的里程碑，也衡量了穷举计算与启发式搜索结合后能走多远。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+        "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
+        "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
+        "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
+          "caption": {
+            "en": "Jonathan Schaeffer portrait",
+            "zh": "Jonathan Schaeffer 人物照片"
+          },
+          "subcaption": {
+            "en": "Leader of the Chinook checkers project.",
+            "zh": "Chinook 跳棋项目负责人。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+          "license": "CC BY 2.0",
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          }
+        },
+        "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+          "caption": {
+            "en": "Chinook official project page",
+            "zh": "Chinook 官方项目页面"
+          },
+          "subcaption": {
+            "en": "Screenshot of the cited source page: Chinook project home.",
+            "zh": "引用来源页面截图：Chinook project home。"
+          },
+          "sourceName": "Chinook project home",
+          "source": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "sourceUrl": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "originalImageUrl": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "license": "Source page screenshot for citation preview; rights remain with the source site.",
+          "usage": {
+            "en": "Source page screenshot",
+            "zh": "来源页面截图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
+          "caption": {
+            "en": "Endgame database table",
+            "zh": "残局数据库表"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Checkers Is Solved.",
+            "zh": "依据 Checkers Is Solved 制作的本地解释图。"
+          },
+          "sourceName": "Checkers Is Solved",
+          "source": "https://www.science.org/doi/10.1126/science.1144079",
+          "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Endgame database diagram",
+            "zh": "残局数据库图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg": {
+          "caption": {
+            "en": "Perfect-play proof path",
+            "zh": "完美对弈证明路径"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Checkers Is Solved.",
+            "zh": "依据 Checkers Is Solved 制作的本地解释图。"
+          },
+          "sourceName": "Checkers Is Solved",
+          "source": "https://www.science.org/doi/10.1126/science.1144079",
+          "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Proof diagram",
+            "zh": "证明图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Game",
+        "zh": "游戏"
+      },
+      "method": {
+        "en": "Alpha-beta search plus endgame databases",
+        "zh": "alpha-beta 搜索加残局数据库"
+      },
+      "artifact": {
+        "en": "Chinook checkers system",
+        "zh": "Chinook 跳棋系统"
+      },
+      "material": {
+        "en": "University of Alberta Chinook pages and Science paper",
+        "zh": "阿尔伯塔大学 Chinook 页面与 Science 论文"
+      },
+      "demo": {
+        "en": "Connect a move to a solved endgame table",
+        "zh": "把一步棋连接到已求解残局表"
+      },
+      "visual": "chinook",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Opening Book",
+            "zh": "开局库"
+          },
+          "text": {
+            "en": "Human and computer game knowledge narrows early choices.",
+            "zh": "人类与计算机棋谱知识缩小早期选择。"
+          }
+        },
+        {
+          "label": {
+            "en": "Endgame Database",
+            "zh": "残局数据库"
+          },
+          "text": {
+            "en": "Late positions are precomputed to proven outcomes.",
+            "zh": "后期局面被预计算为可证明结果。"
+          }
+        },
+        {
+          "label": {
+            "en": "Weak Solution",
+            "zh": "弱求解"
+          },
+          "text": {
+            "en": "The game-theoretic value is known from the starting position.",
+            "zh": "从初始局面可知游戏理论值。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Deep Blue",
+          "zh": "Deep Blue"
+        },
+        {
+          "en": "Strachey's Draughts",
+          "zh": "Strachey 跳棋程序"
+        },
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Alberta, Canada",
+          "zh": "加拿大阿尔伯塔省"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Search moves",
+          "zh": "搜索走法"
+        },
+        {
+          "en": "Probe table",
+          "zh": "查询残局表"
+        },
+        {
+          "en": "Prove draw",
+          "zh": "证明和棋"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Official page",
+            "zh": "官方页面"
+          },
+          "label": {
+            "en": "Chinook project home",
+            "zh": "Chinook 项目主页"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Checkers Is Solved",
+            "zh": "Checkers Is Solved"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.1144079"
+        },
+        {
+          "type": {
+            "en": "Publications",
+            "zh": "论文列表"
+          },
+          "label": {
+            "en": "Chinook publications",
+            "zh": "Chinook 论文列表"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Jonathan Schaeffer portrait",
+            "zh": "Jonathan Schaeffer 人物照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1994-chinook-quiz-1",
+      "question": {
+        "en": "What did Chinook eventually prove about checkers?",
+        "zh": "Chinook 最终证明了跳棋的什么性质？"
+      },
+      "options": [
+        {
+          "en": "Perfect play from both sides leads to a draw",
+          "zh": "双方完美对弈会导致和棋"
+        },
+        {
+          "en": "Every game is won by the first move",
+          "zh": "每局都由第一步直接获胜"
+        },
+        {
+          "en": "Search is unnecessary in games",
+          "zh": "游戏中不需要搜索"
+        },
+        {
+          "en": "Only language models can play checkers",
+          "zh": "只有语言模型能下跳棋"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The Chinook team used search and endgame databases to weakly solve checkers as a draw under perfect play.",
+        "zh": "Chinook 团队用搜索和残局数据库弱求解跳棋，证明完美对弈下为和棋。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "game-ai",
+        "search"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1994-chinook-quiz-1",
+        "question": {
+          "en": "What did Chinook eventually prove about checkers?",
+          "zh": "Chinook 最终证明了跳棋的什么性质？"
+        },
+        "options": [
+          {
+            "en": "Perfect play from both sides leads to a draw",
+            "zh": "双方完美对弈会导致和棋"
+          },
+          {
+            "en": "Every game is won by the first move",
+            "zh": "每局都由第一步直接获胜"
+          },
+          {
+            "en": "Search is unnecessary in games",
+            "zh": "游戏中不需要搜索"
+          },
+          {
+            "en": "Only language models can play checkers",
+            "zh": "只有语言模型能下跳棋"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The Chinook team used search and endgame databases to weakly solve checkers as a draw under perfect play.",
+          "zh": "Chinook 团队用搜索和残局数据库弱求解跳棋，证明完美对弈下为和棋。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "game-ai",
+          "search"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1959-pandemonium",
+    "year": "1959",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Pandemonium",
+      "zh": "Pandemonium 感知架构"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "MIT Lincoln Laboratory",
+        "zh": "MIT 林肯实验室"
+      },
+      "country": {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.4595,
+        -71.2677
+      ]
+    },
+    "description": {
+      "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>",
+      "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Oliver Selfridge",
+          "zh": "Oliver Selfridge"
+        },
+        "role": {
+          "en": "Author of the Pandemonium architecture",
+          "zh": "Pandemonium 架构提出者"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Layered feature voters build perception\"",
+      "zh": "\"分层特征投票构成感知\""
+    },
+    "quoteAttribution": "《Pandemonium: A Paradigm for Learning》, Oliver G. Selfridge",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Pandemonium: A Paradigm for Learning",
+      "workAuthors": "Oliver G. Selfridge",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Perception / Pandemonium",
+      "zh": "BenchCouncil AI100：感知 / Pandemonium 感知架构"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates.",
+          "zh": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges.",
+          "zh": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "The architecture became a classic reference for distributed recognition and for thinking about perception as evidence accumulation.",
+          "zh": "该架构成为分布式识别的经典参考，也帮助人们把感知识别理解为证据累积。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+        "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
+        "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg": {
+          "caption": {
+            "en": "Oliver Selfridge portrait",
+            "zh": "Oliver Selfridge 人物照片"
+          },
+          "subcaption": {
+            "en": "Author of the Pandemonium architecture.",
+            "zh": "Pandemonium 架构提出者。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Oliver_Selfridge_at_BBN.jpg",
+          "license": "CC0",
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg": {
+          "caption": {
+            "en": "Pandemonium architecture image",
+            "zh": "Pandemonium 架构图片"
+          },
+          "subcaption": {
+            "en": "Illustration associated with the Pandemonium architecture.",
+            "zh": "与 Pandemonium 架构相关的公开图片。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+          "license": "CC BY-SA 3.0",
+          "usage": {
+            "en": "Architecture image",
+            "zh": "架构图片"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg": {
+          "caption": {
+            "en": "Feature-vote cascade",
+            "zh": "特征投票级联"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
+            "zh": "依据 Pandemonium: A Paradigm for Learning 制作的本地解释图。"
+          },
+          "sourceName": "Pandemonium: A Paradigm for Learning",
+          "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Voting diagram",
+            "zh": "投票图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg": {
+          "caption": {
+            "en": "Layered recognition demons",
+            "zh": "分层识别小程序"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
+            "zh": "依据 Pandemonium: A Paradigm for Learning 制作的本地解释图。"
+          },
+          "sourceName": "Pandemonium: A Paradigm for Learning",
+          "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Layered-recognition diagram",
+            "zh": "分层识别图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Perception",
+        "zh": "感知"
+      },
+      "method": {
+        "en": "Layered feature detection and voting",
+        "zh": "分层特征检测与投票"
+      },
+      "artifact": {
+        "en": "Pandemonium architecture",
+        "zh": "Pandemonium 架构"
+      },
+      "material": {
+        "en": "1959 Mechanisation of Thought Processes paper",
+        "zh": "1959 年 Mechanisation of Thought Processes 论文"
+      },
+      "demo": {
+        "en": "Aggregate feature votes into a pattern decision",
+        "zh": "把特征投票聚合成模式决策"
+      },
+      "visual": "pandemonium",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Feature Detectors",
+            "zh": "特征检测器"
+          },
+          "text": {
+            "en": "Small recognizers fire for local evidence.",
+            "zh": "小型识别器针对局部证据激活。"
+          }
+        },
+        {
+          "label": {
+            "en": "Layered Competition",
+            "zh": "分层竞争"
+          },
+          "text": {
+            "en": "Higher-level hypotheses compete using lower-level signals.",
+            "zh": "高层假设利用低层信号竞争。"
+          }
+        },
+        {
+          "label": {
+            "en": "Evidence Accumulation",
+            "zh": "证据累积"
+          },
+          "text": {
+            "en": "Recognition emerges from many partial votes.",
+            "zh": "识别来自许多局部投票的汇聚。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Perceptron",
+          "zh": "感知机"
+        },
+        {
+          "en": "SIFT",
+          "zh": "SIFT"
+        },
+        {
+          "en": "CNN",
+          "zh": "CNN"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Massachusetts, United States",
+          "zh": "美国马萨诸塞州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Detect features",
+          "zh": "检测特征"
+        },
+        {
+          "en": "Vote upward",
+          "zh": "向上投票"
+        },
+        {
+          "en": "Choose pattern",
+          "zh": "选择模式"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Pandemonium: A Paradigm for Learning",
+            "zh": "Pandemonium: A Paradigm for Learning"
+          },
+          "url": "https://doi.org/10.1007/978-1-4899-1221-6_4"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Pandemonium architecture image",
+            "zh": "Pandemonium 架构图片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Oliver Selfridge portrait",
+            "zh": "Oliver Selfridge 人物照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg"
+        },
+        {
+          "type": {
+            "en": "Obituary",
+            "zh": "人物资料"
+          },
+          "label": {
+            "en": "Oliver Selfridge obituary, The Guardian",
+            "zh": "Oliver Selfridge 讣告，The Guardian"
+          },
+          "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1959-pandemonium-quiz-1",
+      "question": {
+        "en": "What is the core idea of Pandemonium-style perception?",
+        "zh": "Pandemonium 式感知的核心思想是什么？"
+      },
+      "options": [
+        {
+          "en": "Many simple feature recognizers vote toward higher-level patterns",
+          "zh": "许多简单特征识别器向高层模式投票"
+        },
+        {
+          "en": "One fixed rule answers every image",
+          "zh": "一个固定规则回答所有图像"
+        },
+        {
+          "en": "A database deletes all uncertain evidence",
+          "zh": "数据库删除所有不确定证据"
+        },
+        {
+          "en": "A chess engine searches only openings",
+          "zh": "棋类引擎只搜索开局"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Selfridge's architecture treated recognition as layered, distributed evidence accumulation.",
+        "zh": "Selfridge 的架构把识别看作分层、分布式的证据累积。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "perception",
+        "pattern-recognition"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1959-pandemonium-quiz-1",
+        "question": {
+          "en": "What is the core idea of Pandemonium-style perception?",
+          "zh": "Pandemonium 式感知的核心思想是什么？"
+        },
+        "options": [
+          {
+            "en": "Many simple feature recognizers vote toward higher-level patterns",
+            "zh": "许多简单特征识别器向高层模式投票"
+          },
+          {
+            "en": "One fixed rule answers every image",
+            "zh": "一个固定规则回答所有图像"
+          },
+          {
+            "en": "A database deletes all uncertain evidence",
+            "zh": "数据库删除所有不确定证据"
+          },
+          {
+            "en": "A chess engine searches only openings",
+            "zh": "棋类引擎只搜索开局"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Selfridge's architecture treated recognition as layered, distributed evidence accumulation.",
+          "zh": "Selfridge 的架构把识别看作分层、分布式的证据累积。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "perception",
+          "pattern-recognition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1984-cyc",
+    "year": "1984",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Cyc",
+      "zh": "Cyc 常识知识库"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Microelectronics and Computer Technology Corporation",
+        "zh": "微电子与计算机技术公司（MCC）"
+      },
+      "country": {
+        "en": "Texas, United States",
+        "zh": "美国得克萨斯州"
+      },
+      "coordinates": [
+        30.2672,
+        -97.7431
+      ]
+    },
+    "description": {
+      "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>",
+      "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Douglas Lenat",
+          "zh": "Douglas Lenat"
+        },
+        "role": {
+          "en": "Founder of the Cyc project",
+          "zh": "Cyc 项目创始人"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "R. V. Guha",
+          "zh": "R. V. Guha"
+        },
+        "role": {
+          "en": "Co-author of core Cyc representation work",
+          "zh": "Cyc 核心表示工作的共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Common sense as explicit knowledge\"",
+      "zh": "\"把常识显式化为知识\""
+    },
+    "quoteAttribution": "《Building Large Knowledge-Based Systems》, Douglas B. Lenat and R. V. Guha",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Building Large Knowledge-Based Systems",
+      "workAuthors": "Douglas B. Lenat and R. V. Guha",
+      "sourceLabel": "",
+      "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Knowledge representation / Cyc",
+      "zh": "BenchCouncil AI100：知识表示 / Cyc 常识知识库"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing.",
+          "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure.",
+          "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Cyc remains a touchstone for debates about symbolic AI, common sense, hybrid reasoning, and the limits of data-only learning.",
+          "zh": "Cyc 仍是关于符号 AI、常识、混合推理以及纯数据学习局限性的关键参照。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+        "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
+        "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg": {
+          "caption": {
+            "en": "Douglas Lenat portrait",
+            "zh": "Douglas Lenat 人物照片"
+          },
+          "subcaption": {
+            "en": "Founder of the Cyc project.",
+            "zh": "Cyc 项目创始人。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Dbl4.jpg",
+          "license": "CC BY-SA 4.0",
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png": {
+          "caption": {
+            "en": "Cyc projects logos",
+            "zh": "Cyc 项目标识"
+          },
+          "subcaption": {
+            "en": "Public image of Cyc project logos.",
+            "zh": "Cyc 项目标识公开图片。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+          "license": "CC BY-SA 4.0",
+          "usage": {
+            "en": "Project image",
+            "zh": "项目图片"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg": {
+          "caption": {
+            "en": "Cyc microtheories",
+            "zh": "Cyc 微理论"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Building Large Knowledge-Based Systems.",
+            "zh": "依据 Building Large Knowledge-Based Systems 制作的本地解释图。"
+          },
+          "sourceName": "Building Large Knowledge-Based Systems",
+          "source": "https://dl.acm.org/doi/book/10.5555/70571",
+          "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Knowledge-base diagram",
+            "zh": "知识库图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg": {
+          "caption": {
+            "en": "Common-sense rule frame",
+            "zh": "常识规则框架"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on The Evolution of CycL.",
+            "zh": "依据 The Evolution of CycL 制作的本地解释图。"
+          },
+          "sourceName": "The Evolution of CycL",
+          "source": "https://dl.acm.org/doi/10.1145/122296.122308",
+          "sourceUrl": "https://dl.acm.org/doi/10.1145/122296.122308",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Rule diagram",
+            "zh": "规则图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Knowledge representation",
+        "zh": "知识表示"
+      },
+      "method": {
+        "en": "Large symbolic ontology and microtheories",
+        "zh": "大型符号本体与微理论"
+      },
+      "artifact": {
+        "en": "Cyc knowledge base and CycL",
+        "zh": "Cyc 知识库与 CycL"
+      },
+      "material": {
+        "en": "Cyc project publications and Cycorp materials",
+        "zh": "Cyc 项目出版物与 Cycorp 材料"
+      },
+      "demo": {
+        "en": "Trace common-sense inference through microtheories",
+        "zh": "沿微理论追踪常识推理"
+      },
+      "visual": "cyc",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Ontology",
+            "zh": "本体"
+          },
+          "text": {
+            "en": "Concepts and relations are encoded explicitly.",
+            "zh": "概念与关系被显式编码。"
+          }
+        },
+        {
+          "label": {
+            "en": "Microtheory",
+            "zh": "微理论"
+          },
+          "text": {
+            "en": "Context-specific assumptions keep reasoning organized.",
+            "zh": "上下文特定假设让推理保持有序。"
+          }
+        },
+        {
+          "label": {
+            "en": "Common Sense",
+            "zh": "常识"
+          },
+          "text": {
+            "en": "Background knowledge is treated as a first-class AI resource.",
+            "zh": "背景知识被视为一等 AI 资源。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Frame",
+          "zh": "框架"
+        },
+        {
+          "en": "XCON/R1",
+          "zh": "XCON/R1"
+        },
+        {
+          "en": "Knowledge graphs",
+          "zh": "知识图谱"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Texas, United States",
+          "zh": "美国得克萨斯州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Assert facts",
+          "zh": "断言事实"
+        },
+        {
+          "en": "Select context",
+          "zh": "选择上下文"
+        },
+        {
+          "en": "Infer answer",
+          "zh": "推理答案"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Book",
+            "zh": "专著"
+          },
+          "label": {
+            "en": "Building Large Knowledge-Based Systems",
+            "zh": "Building Large Knowledge-Based Systems"
+          },
+          "url": "https://dl.acm.org/doi/book/10.5555/70571"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "The Evolution of CycL",
+            "zh": "The Evolution of CycL"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/122296.122308"
+        },
+        {
+          "type": {
+            "en": "Official page",
+            "zh": "官方页面"
+          },
+          "label": {
+            "en": "Cyc",
+            "zh": "Cyc"
+          },
+          "url": "https://cyc.com/"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Cyc projects logo image",
+            "zh": "Cyc 项目标识图片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1984-cyc-quiz-1",
+      "question": {
+        "en": "What did Cyc try to make explicit for AI systems?",
+        "zh": "Cyc 试图为 AI 系统显式表示什么？"
+      },
+      "options": [
+        {
+          "en": "Common-sense knowledge as an ontology and rule base",
+          "zh": "作为本体与规则库的常识知识"
+        },
+        {
+          "en": "Only raw image pixels",
+          "zh": "只有原始图像像素"
+        },
+        {
+          "en": "Only endgame checkers tables",
+          "zh": "只有跳棋残局表"
+        },
+        {
+          "en": "A single gradient update",
+          "zh": "单个梯度更新"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Cyc is a long-running symbolic AI project centered on explicit common-sense knowledge and inference.",
+        "zh": "Cyc 是长期运行的符号 AI 项目，核心是显式常识知识与推理。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "knowledge-representation",
+        "common-sense"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1984-cyc-quiz-1",
+        "question": {
+          "en": "What did Cyc try to make explicit for AI systems?",
+          "zh": "Cyc 试图为 AI 系统显式表示什么？"
+        },
+        "options": [
+          {
+            "en": "Common-sense knowledge as an ontology and rule base",
+            "zh": "作为本体与规则库的常识知识"
+          },
+          {
+            "en": "Only raw image pixels",
+            "zh": "只有原始图像像素"
+          },
+          {
+            "en": "Only endgame checkers tables",
+            "zh": "只有跳棋残局表"
+          },
+          {
+            "en": "A single gradient update",
+            "zh": "单个梯度更新"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Cyc is a long-running symbolic AI project centered on explicit common-sense knowledge and inference.",
+          "zh": "Cyc 是长期运行的符号 AI 项目，核心是显式常识知识与推理。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "knowledge-representation",
+          "common-sense"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1980-xcon-r1",
+    "year": "1978-1980",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "XCON-R1",
+      "zh": "XCON / R1 专家系统"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Carnegie Mellon University",
+        "zh": "卡内基梅隆大学"
+      },
+      "country": {
+        "en": "Pennsylvania, United States",
+        "zh": "美国宾夕法尼亚州"
+      },
+      "coordinates": [
+        40.4433,
+        -79.9436
+      ]
+    },
+    "description": {
+      "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>",
+      "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John McDermott",
+          "zh": "John McDermott"
+        },
+        "role": {
+          "en": "Developer of R1/XCON",
+          "zh": "R1/XCON 开发者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Production rules configured real orders\"",
+      "zh": "\"产生式规则配置真实订单\""
+    },
+    "quoteAttribution": "《R1: An Expert in the Computer Systems Domain》, John McDermott",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "R1: An Expert in the Computer Systems Domain",
+      "workAuthors": "John McDermott",
+      "sourceLabel": "",
+      "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Expert system / XCON-R1",
+      "zh": "BenchCouncil AI100：专家系统 / XCON / R1 专家系统"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders.",
+          "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration.",
+          "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "XCON became a standard case study for knowledge engineering, expert-system maintenance, and AI's early business value.",
+          "zh": "XCON 成为知识工程、专家系统维护和 AI 早期商业价值的标准案例。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+        "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
+        "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg": {
+          "caption": {
+            "en": "DEC VAX-11/780 system",
+            "zh": "DEC VAX-11/780 系统照片"
+          },
+          "subcaption": {
+            "en": "Representative VAX system class configured by R1/XCON.",
+            "zh": "R1/XCON 所配置的 VAX 系统类别代表照片。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+          "license": "CC BY-SA 3.0",
+          "usage": {
+            "en": "Hardware photo",
+            "zh": "硬件照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg": {
+          "caption": {
+            "en": "VAX-11/780 CPU backplane",
+            "zh": "VAX-11/780 CPU 背板"
+          },
+          "subcaption": {
+            "en": "Hardware detail from the VAX-11/780 family.",
+            "zh": "VAX-11/780 系列硬件细节。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+          "license": "CC BY 4.0",
+          "usage": {
+            "en": "Hardware detail",
+            "zh": "硬件细节"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg": {
+          "caption": {
+            "en": "Rule-based configurator",
+            "zh": "规则式配置器"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain.",
+            "zh": "依据 R1: An Expert in the Computer Systems Domain 制作的本地解释图。"
+          },
+          "sourceName": "R1: An Expert in the Computer Systems Domain",
+          "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+          "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Rule diagram",
+            "zh": "规则图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg": {
+          "caption": {
+            "en": "Computer-order flow",
+            "zh": "计算机订单流程"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches.",
+            "zh": "依据 R1 Revisited: Four Years in the Trenches 制作的本地解释图。"
+          },
+          "sourceName": "R1 Revisited: Four Years in the Trenches",
+          "source": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+          "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Order-flow diagram",
+            "zh": "订单流程图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Expert system",
+        "zh": "专家系统"
+      },
+      "method": {
+        "en": "OPS5 production-rule configuration",
+        "zh": "OPS5 产生式规则配置"
+      },
+      "artifact": {
+        "en": "R1/XCON VAX configurator",
+        "zh": "R1/XCON VAX 配置器"
+      },
+      "material": {
+        "en": "AAAI and Artificial Intelligence expert-system papers",
+        "zh": "AAAI 与 Artificial Intelligence 专家系统论文"
+      },
+      "demo": {
+        "en": "Turn customer requirements into a valid component list",
+        "zh": "把客户需求转化为有效组件清单"
+      },
+      "visual": "xcon",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Production Rule",
+            "zh": "产生式规则"
+          },
+          "text": {
+            "en": "If-then rules encode configuration expertise.",
+            "zh": "if-then 规则编码配置专长。"
+          }
+        },
+        {
+          "label": {
+            "en": "Working Memory",
+            "zh": "工作记忆"
+          },
+          "text": {
+            "en": "Current order facts are updated as rules fire.",
+            "zh": "规则触发时持续更新当前订单事实。"
+          }
+        },
+        {
+          "label": {
+            "en": "Knowledge Engineering",
+            "zh": "知识工程"
+          },
+          "text": {
+            "en": "Expert knowledge is elicited, encoded, and maintained.",
+            "zh": "专家知识被获取、编码并维护。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "DENDRAL",
+          "zh": "DENDRAL"
+        },
+        {
+          "en": "MYCIN",
+          "zh": "MYCIN"
+        },
+        {
+          "en": "Cyc",
+          "zh": "Cyc"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Pennsylvania, United States",
+          "zh": "美国宾夕法尼亚州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Read order",
+          "zh": "读取订单"
+        },
+        {
+          "en": "Fire rules",
+          "zh": "触发规则"
+        },
+        {
+          "en": "Emit config",
+          "zh": "输出配置"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "R1: An Expert in the Computer Systems Domain",
+            "zh": "R1: An Expert in the Computer Systems Domain"
+          },
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
+        },
+        {
+          "type": {
+            "en": "Retrospective",
+            "zh": "回顾"
+          },
+          "label": {
+            "en": "R1 Revisited: Four Years in the Trenches",
+            "zh": "R1 Revisited: Four Years in the Trenches"
+          },
+          "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445"
+        },
+        {
+          "type": {
+            "en": "Overview",
+            "zh": "概览"
+          },
+          "label": {
+            "en": "XCON overview",
+            "zh": "XCON 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Xcon"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "DEC VAX-11/780 photo",
+            "zh": "DEC VAX-11/780 照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1980-xcon-r1-quiz-1",
+      "question": {
+        "en": "What did XCON/R1 configure?",
+        "zh": "XCON/R1 主要配置什么？"
+      },
+      "options": [
+        {
+          "en": "DEC VAX computer orders using production rules",
+          "zh": "用产生式规则配置 DEC VAX 计算机订单"
+        },
+        {
+          "en": "Protein folds using diffusion",
+          "zh": "用扩散模型预测蛋白质折叠"
+        },
+        {
+          "en": "Image clusters with eigenvectors",
+          "zh": "用特征向量聚类图像"
+        },
+        {
+          "en": "Jeopardy! clues with endgame tables",
+          "zh": "用残局表回答 Jeopardy! 线索"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "R1/XCON encoded configuration expertise as rules that assembled valid VAX component orders.",
+        "zh": "R1/XCON 把配置专长编码为规则，用来装配有效的 VAX 组件订单。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "expert-system",
+        "production-rules"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1980-xcon-r1-quiz-1",
+        "question": {
+          "en": "What did XCON/R1 configure?",
+          "zh": "XCON/R1 主要配置什么？"
+        },
+        "options": [
+          {
+            "en": "DEC VAX computer orders using production rules",
+            "zh": "用产生式规则配置 DEC VAX 计算机订单"
+          },
+          {
+            "en": "Protein folds using diffusion",
+            "zh": "用扩散模型预测蛋白质折叠"
+          },
+          {
+            "en": "Image clusters with eigenvectors",
+            "zh": "用特征向量聚类图像"
+          },
+          {
+            "en": "Jeopardy! clues with endgame tables",
+            "zh": "用残局表回答 Jeopardy! 线索"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "R1/XCON encoded configuration expertise as rules that assembled valid VAX component orders.",
+          "zh": "R1/XCON 把配置专长编码为规则，用来装配有效的 VAX 组件订单。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "expert-system",
+          "production-rules"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1957-kmeans",
+    "year": "1957 / 1982",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "K-means",
+      "zh": "K-means 聚类"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Bell Labs",
+        "zh": "贝尔实验室"
+      },
+      "country": {
+        "en": "New Jersey, United States",
+        "zh": "美国新泽西州"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4013
+      ]
+    },
+    "description": {
+      "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>",
+      "zh": "<p>K-means 让无监督分组简单到成为默认工具。Lloyd 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Stuart Lloyd",
+          "zh": "Stuart Lloyd"
+        },
+        "role": {
+          "en": "Author of Lloyd's k-means-style quantization method",
+          "zh": "Lloyd 式 k-means 量化方法作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Assign points, update centroids, repeat\"",
+      "zh": "\"分配样本、更新质心、反复迭代\""
+    },
+    "quoteAttribution": "《Least squares quantization in PCM》, Stuart Lloyd",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Least squares quantization in PCM",
+      "workAuthors": "Stuart Lloyd",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Cluster, Classification, Regression / K-means",
+      "zh": "BenchCouncil AI100：聚类、分类与回归 / K-means 聚类"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Signal quantization and pattern analysis both needed compact representatives for many observations.",
+          "zh": "信号量化和模式分析都需要为大量观测找到紧凑代表。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The algorithm repeatedly assigns each point to its closest centroid, then updates each centroid to the mean of its cluster.",
+          "zh": "算法反复把每个点分配给最近质心，再把每个质心更新为该簇的均值。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "K-means remains a baseline for clustering, compression, initialization, vector quantization, and exploratory data analysis.",
+          "zh": "K-means 仍是聚类、压缩、初始化、向量量化和探索性数据分析的基线方法。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+        "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
+        "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg": {
+          "caption": {
+            "en": "Bell Labs Holmdel",
+            "zh": "贝尔实验室 Holmdel"
+          },
+          "subcaption": {
+            "en": "Bell Labs visual context for Lloyd-style quantization work.",
+            "zh": "Lloyd 量化方法相关的贝尔实验室背景图。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+          "license": "CC BY-SA 2.0",
+          "usage": {
+            "en": "Institution photo",
+            "zh": "机构照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg": {
+          "caption": {
+            "en": "Iris k-means clustering graphic",
+            "zh": "鸢尾花 k-means 聚类图"
+          },
+          "subcaption": {
+            "en": "Public-domain k-means clustering illustration.",
+            "zh": "公有领域的 k-means 聚类示意图。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+          "license": "Public domain",
+          "usage": {
+            "en": "Clustering diagram",
+            "zh": "聚类图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
+          "caption": {
+            "en": "Centroid assignment loop",
+            "zh": "质心分配循环"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Least squares quantization in PCM.",
+            "zh": "依据 Least squares quantization in PCM 制作的本地解释图。"
+          },
+          "sourceName": "Least squares quantization in PCM",
+          "source": "https://doi.org/10.1109/TIT.1982.1056489",
+          "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Algorithm diagram",
+            "zh": "算法图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg": {
+          "caption": {
+            "en": "Cluster update step",
+            "zh": "簇更新步骤"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on scikit-learn KMeans documentation.",
+            "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。"
+          },
+          "sourceName": "scikit-learn KMeans documentation",
+          "source": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+          "sourceUrl": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Update diagram",
+            "zh": "更新图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Cluster, Classification, Regression",
+        "zh": "聚类、分类与回归"
+      },
+      "method": {
+        "en": "Alternating centroid optimization",
+        "zh": "交替质心优化"
+      },
+      "artifact": {
+        "en": "Lloyd / k-means clustering loop",
+        "zh": "Lloyd / k-means 聚类循环"
+      },
+      "material": {
+        "en": "Bell Labs manuscript and IEEE paper",
+        "zh": "贝尔实验室手稿与 IEEE 论文"
+      },
+      "demo": {
+        "en": "Move cluster centers until assignments stabilize",
+        "zh": "移动簇中心直到分配稳定"
+      },
+      "visual": "kmeans",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Centroid",
+            "zh": "质心"
+          },
+          "text": {
+            "en": "Each cluster is represented by its mean point.",
+            "zh": "每个簇由其均值点表示。"
+          }
+        },
+        {
+          "label": {
+            "en": "Assignment Step",
+            "zh": "分配步骤"
+          },
+          "text": {
+            "en": "Points join the closest center.",
+            "zh": "样本加入最近中心。"
+          }
+        },
+        {
+          "label": {
+            "en": "Update Step",
+            "zh": "更新步骤"
+          },
+          "text": {
+            "en": "Centers move to the average of assigned points.",
+            "zh": "中心移动到所属样本均值。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "DBSCAN",
+          "zh": "DBSCAN"
+        },
+        {
+          "en": "Spectral clustering",
+          "zh": "谱聚类"
+        },
+        {
+          "en": "Lasso",
+          "zh": "Lasso"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New Jersey, United States",
+          "zh": "美国新泽西州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Pick centers",
+          "zh": "选择中心"
+        },
+        {
+          "en": "Assign points",
+          "zh": "分配样本"
+        },
+        {
+          "en": "Move means",
+          "zh": "移动均值"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Least squares quantization in PCM",
+            "zh": "Least squares quantization in PCM"
+          },
+          "url": "https://doi.org/10.1109/TIT.1982.1056489"
+        },
+        {
+          "type": {
+            "en": "History note",
+            "zh": "历史资料"
+          },
+          "label": {
+            "en": "Bell Labs k-means history note",
+            "zh": "Bell Labs k-means 历史资料"
+          },
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn KMeans documentation",
+            "zh": "scikit-learn KMeans 文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Iris Flowers k-means clustering graphic",
+            "zh": "鸢尾花 k-means 聚类图"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1957-kmeans-quiz-1",
+      "question": {
+        "en": "What does Lloyd's k-means loop alternate between?",
+        "zh": "Lloyd 的 k-means 循环在什么之间交替？"
+      },
+      "options": [
+        {
+          "en": "Assigning points to nearest centers and updating centers to means",
+          "zh": "把样本分配给最近中心，并把中心更新为均值"
+        },
+        {
+          "en": "Writing theorem clauses and proving equality",
+          "zh": "书写定理子句并证明等式"
+        },
+        {
+          "en": "Playing endgames and parsing Jeopardy! clues",
+          "zh": "下残局并解析 Jeopardy! 线索"
+        },
+        {
+          "en": "Deleting all clusters as noise",
+          "zh": "把所有簇都删除为噪声"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "K-means minimizes within-cluster squared distances through repeated assignment and centroid update steps.",
+        "zh": "K-means 通过反复分配样本和更新质心来最小化簇内平方距离。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "clustering",
+        "unsupervised-learning"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1957-kmeans-quiz-1",
+        "question": {
+          "en": "What does Lloyd's k-means loop alternate between?",
+          "zh": "Lloyd 的 k-means 循环在什么之间交替？"
+        },
+        "options": [
+          {
+            "en": "Assigning points to nearest centers and updating centers to means",
+            "zh": "把样本分配给最近中心，并把中心更新为均值"
+          },
+          {
+            "en": "Writing theorem clauses and proving equality",
+            "zh": "书写定理子句并证明等式"
+          },
+          {
+            "en": "Playing endgames and parsing Jeopardy! clues",
+            "zh": "下残局并解析 Jeopardy! 线索"
+          },
+          {
+            "en": "Deleting all clusters as noise",
+            "zh": "把所有簇都删除为噪声"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "K-means minimizes within-cluster squared distances through repeated assignment and centroid update steps.",
+          "zh": "K-means 通过反复分配样本和更新质心来最小化簇内平方距离。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "clustering",
+          "unsupervised-learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-1996-dbscan",
+    "year": "1996",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "DBSCAN",
+      "zh": "DBSCAN 密度聚类"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Munich",
+        "zh": "慕尼黑大学"
+      },
+      "country": {
+        "en": "Munich, Germany",
+        "zh": "德国慕尼黑"
+      },
+      "coordinates": [
+        48.1508,
+        11.58
+      ]
+    },
+    "description": {
+      "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>",
+      "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Martin Ester",
+          "zh": "Martin Ester"
+        },
+        "role": {
+          "en": "Co-author of DBSCAN",
+          "zh": "DBSCAN 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+          "zh": "Hans-Peter Kriegel、Jorg Sander、Xiaowei Xu"
+        },
+        "role": {
+          "en": "DBSCAN research team",
+          "zh": "DBSCAN 研究团队"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Clusters are dense regions separated by sparse noise\"",
+      "zh": "\"簇是被稀疏噪声隔开的密集区域\""
+    },
+    "quoteAttribution": "《A density-based algorithm for discovering clusters in large spatial databases with noise》, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+      "workAuthors": "Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "sourceLabel": "",
+      "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Cluster, Classification, Regression / DBSCAN",
+      "zh": "BenchCouncil AI100：聚类、分类与回归 / DBSCAN 密度聚类"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis.",
+          "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability.",
+          "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "DBSCAN became a standard method for spatial data, anomaly handling, and clustering with arbitrary shapes.",
+          "zh": "DBSCAN 成为处理空间数据、异常点和任意形状簇的标准方法。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+        "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
+        "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg": {
+          "caption": {
+            "en": "Martin Ester portrait",
+            "zh": "Martin Ester 人物照片"
+          },
+          "subcaption": {
+            "en": "Co-author of DBSCAN.",
+            "zh": "DBSCAN 共同作者。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+          "license": "CC BY 2.0",
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg": {
+          "caption": {
+            "en": "DBSCAN density data",
+            "zh": "DBSCAN 密度数据图"
+          },
+          "subcaption": {
+            "en": "Public DBSCAN density illustration.",
+            "zh": "公开 DBSCAN 密度示意图。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+          "license": "CC BY-SA 3.0",
+          "usage": {
+            "en": "Density diagram",
+            "zh": "密度图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg": {
+          "caption": {
+            "en": "Density reachability",
+            "zh": "密度可达性"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on A density-based algorithm for discovering clusters.",
+            "zh": "依据 A density-based algorithm for discovering clusters 制作的本地解释图。"
+          },
+          "sourceName": "A density-based algorithm for discovering clusters",
+          "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+          "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Reachability diagram",
+            "zh": "可达性图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg": {
+          "caption": {
+            "en": "Core, border, noise points",
+            "zh": "核心点、边界点与噪声点"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on DBSCAN Revisited, Revisited.",
+            "zh": "依据 DBSCAN Revisited, Revisited 制作的本地解释图。"
+          },
+          "sourceName": "DBSCAN Revisited, Revisited",
+          "source": "https://doi.org/10.1145/3068335",
+          "sourceUrl": "https://doi.org/10.1145/3068335",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Point-type diagram",
+            "zh": "点类型图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Cluster, Classification, Regression",
+        "zh": "聚类、分类与回归"
+      },
+      "method": {
+        "en": "Density reachability with epsilon and MinPts",
+        "zh": "基于 epsilon 与 MinPts 的密度可达"
+      },
+      "artifact": {
+        "en": "DBSCAN clustering algorithm",
+        "zh": "DBSCAN 聚类算法"
+      },
+      "material": {
+        "en": "KDD 1996 paper and later density-clustering references",
+        "zh": "KDD 1996 论文与后续密度聚类资料"
+      },
+      "demo": {
+        "en": "Grow clusters from core points and mark noise",
+        "zh": "从核心点生长簇并标记噪声"
+      },
+      "visual": "dbscan",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Core Point",
+            "zh": "核心点"
+          },
+          "text": {
+            "en": "A point with enough neighbors in an epsilon radius.",
+            "zh": "epsilon 半径内邻居足够多的点。"
+          }
+        },
+        {
+          "label": {
+            "en": "Density Reachability",
+            "zh": "密度可达"
+          },
+          "text": {
+            "en": "Clusters grow by connecting dense neighborhoods.",
+            "zh": "簇通过连接密集邻域生长。"
+          }
+        },
+        {
+          "label": {
+            "en": "Noise",
+            "zh": "噪声"
+          },
+          "text": {
+            "en": "Sparse points can remain outside all clusters.",
+            "zh": "稀疏点可以不属于任何簇。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "K-means",
+          "zh": "K-means"
+        },
+        {
+          "en": "Spectral clustering",
+          "zh": "谱聚类"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Munich, Germany",
+          "zh": "德国慕尼黑"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Find neighbors",
+          "zh": "寻找邻居"
+        },
+        {
+          "en": "Expand core",
+          "zh": "扩展核心点"
+        },
+        {
+          "en": "Label noise",
+          "zh": "标记噪声"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A density-based algorithm for discovering clusters",
+            "zh": "A density-based algorithm for discovering clusters"
+          },
+          "url": "https://dl.acm.org/doi/10.5555/3001460.3001507"
+        },
+        {
+          "type": {
+            "en": "Retrospective",
+            "zh": "回顾"
+          },
+          "label": {
+            "en": "DBSCAN Revisited, Revisited",
+            "zh": "DBSCAN Revisited, Revisited"
+          },
+          "url": "https://doi.org/10.1145/3068335"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn DBSCAN documentation",
+            "zh": "scikit-learn DBSCAN 文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#dbscan"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Martin Ester portrait",
+            "zh": "Martin Ester 人物照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "1996-dbscan-quiz-1",
+      "question": {
+        "en": "What does DBSCAN do with low-density points?",
+        "zh": "DBSCAN 如何处理低密度点？"
+      },
+      "options": [
+        {
+          "en": "It can label them as noise instead of forcing them into a cluster",
+          "zh": "它可以把它们标为噪声，而不是强行归入簇"
+        },
+        {
+          "en": "It always creates one cluster per point",
+          "zh": "它总是为每个点创建一个簇"
+        },
+        {
+          "en": "It turns them into theorem clauses",
+          "zh": "它把它们变成定理子句"
+        },
+        {
+          "en": "It uses a chess opening book",
+          "zh": "它使用棋类开局库"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DBSCAN forms clusters from dense neighborhoods and can leave sparse outliers outside the clusters.",
+        "zh": "DBSCAN 从密集邻域形成簇，并可把稀疏离群点留在簇外。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "clustering",
+        "density"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "1996-dbscan-quiz-1",
+        "question": {
+          "en": "What does DBSCAN do with low-density points?",
+          "zh": "DBSCAN 如何处理低密度点？"
+        },
+        "options": [
+          {
+            "en": "It can label them as noise instead of forcing them into a cluster",
+            "zh": "它可以把它们标为噪声，而不是强行归入簇"
+          },
+          {
+            "en": "It always creates one cluster per point",
+            "zh": "它总是为每个点创建一个簇"
+          },
+          {
+            "en": "It turns them into theorem clauses",
+            "zh": "它把它们变成定理子句"
+          },
+          {
+            "en": "It uses a chess opening book",
+            "zh": "它使用棋类开局库"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DBSCAN forms clusters from dense neighborhoods and can leave sparse outliers outside the clusters.",
+          "zh": "DBSCAN 从密集邻域形成簇，并可把稀疏离群点留在簇外。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "clustering",
+          "density"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-2000-spectral-clustering",
+    "year": "2000",
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Spectral Clustering",
+      "zh": "谱聚类"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of California, Berkeley",
+        "zh": "加州大学伯克利分校"
+      },
+      "country": {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        37.8719,
+        -122.2585
+      ]
+    },
+    "description": {
+      "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>",
+      "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jianbo Shi",
+          "zh": "Jianbo Shi"
+        },
+        "role": {
+          "en": "Co-author of normalized cuts",
+          "zh": "Normalized Cuts 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jitendra Malik, Andrew Ng, Yair Weiss",
+          "zh": "Jitendra Malik、Andrew Ng、Yair Weiss"
+        },
+        "role": {
+          "en": "Key contributors to spectral clustering formulations",
+          "zh": "谱聚类形式化的重要贡献者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Cut the graph through its spectrum\"",
+      "zh": "\"通过图的谱来切分图\""
+    },
+    "quoteAttribution": "《Normalized Cuts and Image Segmentation》, Jianbo Shi and Jitendra Malik",
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": "Normalized Cuts and Image Segmentation",
+      "workAuthors": "Jianbo Shi and Jitendra Malik",
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1109/34.868688"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Cluster, Classification, Regression / Spectral Clustering",
+      "zh": "BenchCouncil AI100：聚类、分类与回归 / 谱聚类"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry.",
+          "zh": "图像分割与数据聚类需要能分离非凸群组的方法，而不假设簇是球形。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space.",
+          "zh": "该方法构建亲和图，从图拉普拉斯特征向量计算谱嵌入，再在嵌入空间中聚类或切分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Spectral methods shaped image segmentation, manifold learning, graph clustering, and modern graph-based data analysis.",
+          "zh": "谱方法塑造了图像分割、流形学习、图聚类和现代图数据分析。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+        "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
+        "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg": {
+          "caption": {
+            "en": "Andrew Ng portrait",
+            "zh": "Andrew Ng 人物照片"
+          },
+          "subcaption": {
+            "en": "Co-author of influential spectral clustering analysis.",
+            "zh": "谱聚类分析论文共同作者。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "license": "CC BY 2.0",
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg": {
+          "caption": {
+            "en": "Spectral graph illustration",
+            "zh": "谱聚类图示"
+          },
+          "subcaption": {
+            "en": "Public graph illustration used on the spectral clustering article.",
+            "zh": "谱聚类条目使用的公开图示。"
+          },
+          "sourceName": "Wikimedia Commons",
+          "source": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+          "license": "Public domain",
+          "usage": {
+            "en": "Graph diagram",
+            "zh": "图结构图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg": {
+          "caption": {
+            "en": "Normalized graph cut",
+            "zh": "归一化图切分"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on Normalized Cuts and Image Segmentation.",
+            "zh": "依据 Normalized Cuts and Image Segmentation 制作的本地解释图。"
+          },
+          "sourceName": "Normalized Cuts and Image Segmentation",
+          "source": "https://doi.org/10.1109/34.868688",
+          "sourceUrl": "https://doi.org/10.1109/34.868688",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Graph-cut diagram",
+            "zh": "图切分图"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg": {
+          "caption": {
+            "en": "Eigenvector embedding",
+            "zh": "特征向量嵌入"
+          },
+          "subcaption": {
+            "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm.",
+            "zh": "依据 On Spectral Clustering: Analysis and an algorithm 制作的本地解释图。"
+          },
+          "sourceName": "On Spectral Clustering: Analysis and an algorithm",
+          "source": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+          "sourceUrl": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
+          "usage": {
+            "en": "Embedding diagram",
+            "zh": "嵌入图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Cluster, Classification, Regression",
+        "zh": "聚类、分类与回归"
+      },
+      "method": {
+        "en": "Graph Laplacian eigenvector embedding",
+        "zh": "图拉普拉斯特征向量嵌入"
+      },
+      "artifact": {
+        "en": "Normalized cuts and spectral clustering methods",
+        "zh": "Normalized Cuts 与谱聚类方法"
+      },
+      "material": {
+        "en": "PAMI normalized-cuts paper and spectral clustering analysis",
+        "zh": "PAMI Normalized Cuts 论文与谱聚类分析"
+      },
+      "demo": {
+        "en": "Turn similarities into a graph and split by eigenvectors",
+        "zh": "把相似度转成图并用特征向量切分"
+      },
+      "visual": "spectral",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Affinity Graph",
+            "zh": "亲和图"
+          },
+          "text": {
+            "en": "Edges encode similarity between data points.",
+            "zh": "边编码样本之间的相似度。"
+          }
+        },
+        {
+          "label": {
+            "en": "Graph Laplacian",
+            "zh": "图拉普拉斯"
+          },
+          "text": {
+            "en": "A matrix representation exposes connectivity structure.",
+            "zh": "矩阵表示揭示连通结构。"
+          }
+        },
+        {
+          "label": {
+            "en": "Spectral Embedding",
+            "zh": "谱嵌入"
+          },
+          "text": {
+            "en": "Eigenvectors place points in a space where clusters separate.",
+            "zh": "特征向量把样本放入更易分离的空间。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "K-means",
+          "zh": "K-means"
+        },
+        {
+          "en": "DBSCAN",
+          "zh": "DBSCAN"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "California, United States",
+          "zh": "美国加利福尼亚州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Build graph",
+          "zh": "构建图"
+        },
+        {
+          "en": "Compute spectrum",
+          "zh": "计算谱"
+        },
+        {
+          "en": "Cut clusters",
+          "zh": "切分簇"
+        }
+      ],
+      "visualModules": [],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Normalized Cuts and Image Segmentation",
+            "zh": "Normalized Cuts and Image Segmentation"
+          },
+          "url": "https://doi.org/10.1109/34.868688"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "On Spectral Clustering: Analysis and an algorithm",
+            "zh": "On Spectral Clustering: Analysis and an algorithm"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn spectral clustering documentation",
+            "zh": "scikit-learn 谱聚类文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#spectral-clustering"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Spectral graph illustration",
+            "zh": "谱聚类图示"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+      "demoPanel": "sources"
+    },
+    "quiz": {
+      "id": "2000-spectral-clustering-quiz-1",
+      "question": {
+        "en": "What does spectral clustering build before using eigenvectors?",
+        "zh": "谱聚类在使用特征向量前先构建什么？"
+      },
+      "options": [
+        {
+          "en": "A graph whose edges encode similarities between points",
+          "zh": "一个用边编码样本相似度的图"
+        },
+        {
+          "en": "A Jeopardy! answer database only",
+          "zh": "只有 Jeopardy! 答案数据库"
+        },
+        {
+          "en": "A VAX parts order form only",
+          "zh": "只有 VAX 零件订单表"
+        },
+        {
+          "en": "A theorem prover's proof certificate only",
+          "zh": "只有定理证明器的证明证书"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Spectral clustering represents data as an affinity graph, then uses graph-matrix eigenvectors to expose separable structure.",
+        "zh": "谱聚类把数据表示为亲和图，再用图矩阵特征向量显露可分结构。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "clustering",
+        "graphs"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "2000-spectral-clustering-quiz-1",
+        "question": {
+          "en": "What does spectral clustering build before using eigenvectors?",
+          "zh": "谱聚类在使用特征向量前先构建什么？"
+        },
+        "options": [
+          {
+            "en": "A graph whose edges encode similarities between points",
+            "zh": "一个用边编码样本相似度的图"
+          },
+          {
+            "en": "A Jeopardy! answer database only",
+            "zh": "只有 Jeopardy! 答案数据库"
+          },
+          {
+            "en": "A VAX parts order form only",
+            "zh": "只有 VAX 零件订单表"
+          },
+          {
+            "en": "A theorem prover's proof certificate only",
+            "zh": "只有定理证明器的证明证书"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Spectral clustering represents data as an affinity graph, then uses graph-matrix eigenvectors to expose separable structure.",
+          "zh": "谱聚类把数据表示为亲和图，再用图矩阵特征向量显露可分结构。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "clustering",
+          "graphs"
         ]
       }
     ]

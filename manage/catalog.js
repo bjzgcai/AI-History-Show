@@ -127,7 +127,17 @@ module.exports = {
         "1958-rosenblatt-perceptron",
         "2006-dbn",
         "1988-td-update",
-        "1985-bayesian-network"
+        "1985-bayesian-network",
+        "1990-otter",
+        "2011-ibm-watson",
+        "1951-strachey-draughts",
+        "1994-chinook",
+        "1959-pandemonium",
+        "1984-cyc",
+        "1980-xcon-r1",
+        "1957-kmeans",
+        "1996-dbscan",
+        "2000-spectral-clustering"
       ]
     }
   ]
