@@ -2276,19 +2276,6 @@
             gap: 12px;
         }
 
-        .bench-hero-visual.has-photo::before {
-            content: "";
-            position: absolute;
-            inset: -18px;
-            z-index: 0;
-            background-image: var(--bench-photo);
-            background-size: cover;
-            background-position: center;
-            filter: blur(18px);
-            opacity: 0.42;
-            transform: scale(1.08);
-        }
-
         .bench-hero-visual::after {
             content: "";
             position: absolute;
@@ -6937,6 +6924,201 @@
             `;
         }
 
+        function buildOtterDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Otter given-clause proof search">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">given-clause proof search</text>
+                    <rect x="34" y="70" width="130" height="52" rx="9" fill="#172554" stroke="#60a5fa"/>
+                    <text x="99" y="101" fill="#dbeafe" text-anchor="middle" font-size="14">usable clauses</text>
+                    <rect x="206" y="70" width="118" height="52" rx="9" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="265" y="101" fill="#fde68a" text-anchor="middle" font-size="14">given clause</text>
+                    <rect x="368" y="70" width="118" height="52" rx="9" fill="#14532d" stroke="#4ade80"/>
+                    <text x="427" y="101" fill="#dcfce7" text-anchor="middle" font-size="14">new clauses</text>
+                    <path d="M164 96 C186 96 184 96 206 96 M324 96 C346 96 346 96 368 96" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <rect x="76" y="160" width="368" height="42" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="260" y="185" fill="#e5e7eb" text-anchor="middle" font-size="14">index, simplify, infer, keep the shortest proof path</text>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('The manual turns inference control into a given-clause loop.', 'The manual turns inference control into a given-clause loop.')],
+                [uiText('interaction', 'interaction'), uiText('Follow one selected clause as it creates candidates and closes a proof.', 'Follow one selected clause as it creates candidates and closes a proof.')]
+            ]);
+        }
+
+        function buildWatsonDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Watson evidence ranking">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">evidence ranking stack</text>
+                    <rect x="34" y="76" width="118" height="52" rx="8" fill="#172554" stroke="#60a5fa"/>
+                    <text x="93" y="106" fill="#dbeafe" text-anchor="middle" font-size="14">question</text>
+                    <rect x="202" y="58" width="118" height="88" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="261" y="88" fill="#e5e7eb" text-anchor="middle" font-size="14">hypotheses</text>
+                    <path d="M224 112 H298 M224 128 H284" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+                    <rect x="366" y="76" width="118" height="52" rx="8" fill="#14532d" stroke="#4ade80"/>
+                    <text x="425" y="106" fill="#dcfce7" text-anchor="middle" font-size="14">confidence</text>
+                    <path d="M152 102 C174 102 178 102 202 102 M320 102 C342 102 344 102 366 102" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <path d="M80 188 H430" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="330" cy="188" r="13" fill="#f59e0b"/>
+                    <text x="330" y="222" fill="#e5e7eb" text-anchor="middle" font-size="13">answer only when confidence clears the buzzer line</text>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('DeepQA ranks many answer candidates with independent evidence scorers.', 'DeepQA ranks many answer candidates with independent evidence scorers.')],
+                [uiText('interaction', 'interaction'), uiText('Move the confidence threshold and watch the winning answer change.', 'Move the confidence threshold and watch the winning answer change.')]
+            ]);
+        }
+
+        function buildDraughtsDemo() {
+            const cells = Array.from({ length: 32 }, (_, i) => {
+                const row = Math.floor(i / 4);
+                const col = i % 4;
+                const x = 52 + col * 42 + (row % 2 ? 0 : 21);
+                const y = 62 + row * 22;
+                return `<rect x="${x}" y="${y}" width="42" height="22" fill="${(row + col) % 2 ? '#1f2937' : '#0f172a'}"/>`;
+            }).join('');
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Strachey draughts move search">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">tiny-memory move search</text>
+                    <g stroke="#475569">${cells}</g>
+                    <circle cx="115" cy="106" r="12" fill="#f59e0b"/>
+                    <circle cx="220" cy="150" r="12" fill="#60a5fa"/>
+                    <path d="M115 106 C152 108 174 126 220 150" stroke="#f8fafc" stroke-width="4" fill="none" marker-end="url(#arrowDraughts)"/>
+                    <defs><marker id="arrowDraughts" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#f8fafc"/></marker></defs>
+                    <rect x="318" y="64" width="144" height="112" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="390" y="92" fill="#e5e7eb" text-anchor="middle" font-size="14">evaluate</text>
+                    <text x="390" y="122" fill="#a7f3d0" text-anchor="middle" font-size="13">material</text>
+                    <text x="390" y="146" fill="#bfdbfe" text-anchor="middle" font-size="13">mobility</text>
+                    <text x="390" y="170" fill="#fde68a" text-anchor="middle" font-size="13">king row</text>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('Early game play meant search, evaluation, and memory discipline.', 'Early game play meant search, evaluation, and memory discipline.')],
+                [uiText('interaction', 'interaction'), uiText('Step through legal moves and show the score that picks a reply.', 'Step through legal moves and show the score that picks a reply.')]
+            ]);
+        }
+
+        function buildChinookDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Chinook endgame database">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">search meets solved endgames</text>
+                    <path d="M76 62 L154 104 L96 146 L180 190" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <path d="M154 104 L224 78 M154 104 L234 132 M96 146 L224 166" stroke="#64748b" stroke-width="3" fill="none"/>
+                    ${[[76,62,'#f59e0b'],[154,104,'#60a5fa'],[96,146,'#60a5fa'],[180,190,'#22c55e'],[224,78,'#475569'],[234,132,'#475569'],[224,166,'#475569']].map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="11" fill="${c}"/>`).join('')}
+                    <rect x="306" y="62" width="160" height="128" rx="12" fill="#111827" stroke="#94a3b8"/>
+                    <text x="386" y="92" fill="#e5e7eb" text-anchor="middle" font-size="14">endgame DB</text>
+                    <path d="M336 122 H436 M336 146 H420 M336 170 H446" stroke="#4ade80" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M234 132 C270 132 270 126 306 126" stroke="#f59e0b" stroke-width="4" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('Chinook combined alpha-beta search with perfect-play tablebases.', 'Chinook combined alpha-beta search with perfect-play tablebases.')],
+                [uiText('interaction', 'interaction'), uiText('Click a branch to see whether search or the database decides it.', 'Click a branch to see whether search or the database decides it.')]
+            ]);
+        }
+
+        function buildPandemoniumDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Pandemonium feature voters">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">feature voters build perception</text>
+                    ${[[70,86,'edge'],[70,138,'curve'],[70,190,'corner']].map(([x,y,t]) => `<rect x="${x}" y="${y}" width="92" height="30" rx="8" fill="#172554" stroke="#60a5fa"/><text x="${x+46}" y="${y+20}" fill="#dbeafe" text-anchor="middle" font-size="12">${t}</text>`).join('')}
+                    ${[[230,72,'letter'],[230,128,'shape'],[230,184,'word']].map(([x,y,t]) => `<rect x="${x}" y="${y}" width="92" height="30" rx="8" fill="#402c1b" stroke="#f59e0b"/><text x="${x+46}" y="${y+20}" fill="#fde68a" text-anchor="middle" font-size="12">${t}</text>`).join('')}
+                    <rect x="382" y="108" width="100" height="52" rx="10" fill="#14532d" stroke="#4ade80"/>
+                    <text x="432" y="139" fill="#dcfce7" text-anchor="middle" font-size="14">winner</text>
+                    <path d="M162 101 C188 96 204 86 230 87 M162 153 C188 150 204 141 230 143 M322 87 C350 96 360 120 382 130 M322 143 C350 142 360 136 382 134 M322 199 C350 184 360 152 382 140" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('Selfridge frames recognition as layered competition among small detectors.', 'Selfridge frames recognition as layered competition among small detectors.')],
+                [uiText('interaction', 'interaction'), uiText('Raise one feature vote and watch the winning pattern switch.', 'Raise one feature vote and watch the winning pattern switch.')]
+            ]);
+        }
+
+        function buildCycDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Cyc microtheory inference">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">microtheory inference bridge</text>
+                    <rect x="44" y="78" width="118" height="74" rx="12" fill="#172554" stroke="#60a5fa"/>
+                    <text x="103" y="110" fill="#dbeafe" text-anchor="middle" font-size="14">facts</text>
+                    <text x="103" y="132" fill="#dbeafe" text-anchor="middle" font-size="12">isa, partOf</text>
+                    <rect x="206" y="58" width="118" height="114" rx="12" fill="#111827" stroke="#94a3b8"/>
+                    <text x="265" y="88" fill="#e5e7eb" text-anchor="middle" font-size="14">microtheory</text>
+                    <path d="M234 116 H296 M234 138 H286" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+                    <rect x="370" y="78" width="118" height="74" rx="12" fill="#14532d" stroke="#4ade80"/>
+                    <text x="429" y="110" fill="#dcfce7" text-anchor="middle" font-size="14">inference</text>
+                    <text x="429" y="132" fill="#dcfce7" text-anchor="middle" font-size="12">new claim</text>
+                    <path d="M162 116 C184 116 184 116 206 116 M324 116 C346 116 348 116 370 116" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('Cyc organizes common-sense assertions into contexts before reasoning.', 'Cyc organizes common-sense assertions into contexts before reasoning.')],
+                [uiText('interaction', 'interaction'), uiText('Toggle a context and show which inference remains valid.', 'Toggle a context and show which inference remains valid.')]
+            ]);
+        }
+
+        function buildXconDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="XCON rule configurator">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">rule-based configuration path</text>
+                    <rect x="44" y="76" width="110" height="52" rx="8" fill="#172554" stroke="#60a5fa"/>
+                    <text x="99" y="106" fill="#dbeafe" text-anchor="middle" font-size="14">order</text>
+                    <rect x="206" y="76" width="110" height="52" rx="8" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="261" y="106" fill="#fde68a" text-anchor="middle" font-size="14">rules</text>
+                    <rect x="368" y="68" width="112" height="112" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <path d="M390 96 H458 M390 122 H458 M390 148 H458" stroke="#4ade80" stroke-width="8" stroke-linecap="round"/>
+                    <text x="424" y="202" fill="#e5e7eb" text-anchor="middle" font-size="13">valid VAX layout</text>
+                    <path d="M154 102 C178 102 182 102 206 102 M316 102 C338 102 344 102 368 102" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('R1 turns customer constraints into a consistent component list.', 'R1 turns customer constraints into a consistent component list.')],
+                [uiText('interaction', 'interaction'), uiText('Add an option and show the rule that repairs the configuration.', 'Add an option and show the rule that repairs the configuration.')]
+            ]);
+        }
+
+        function buildKmeansDemo() {
+            const points = [[84,105,'#60a5fa'],[106,120,'#60a5fa'],[128,92,'#60a5fa'],[330,98,'#4ade80'],[356,126,'#4ade80'],[386,102,'#4ade80'],[248,178,'#f59e0b'],[272,196,'#f59e0b'],[292,170,'#f59e0b']];
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="K-means assignment and centroid update">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">assign points, move centers</text>
+                    ${points.map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="6" fill="${c}" opacity="0.9"/>`).join('')}
+                    <path d="M104 112 L132 128 L154 110 M352 110 L322 138 L294 170 M270 184 L238 160 L212 170" stroke="#64748b" stroke-width="2" fill="none"/>
+                    ${[[122,110,'#bfdbfe'],[352,112,'#bbf7d0'],[270,182,'#fde68a']].map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="16" fill="none" stroke="${c}" stroke-width="5"/><circle cx="${x+28}" cy="${y-20}" r="7" fill="${c}"/>`).join('')}
+                    <path d="M122 110 C134 104 140 98 150 92 M352 112 C340 108 332 100 324 92 M270 182 C260 174 252 166 244 156" stroke="#f8fafc" stroke-width="3" stroke-dasharray="7 6" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('Lloyd iteration alternates assignment and centroid recomputation.', 'Lloyd iteration alternates assignment and centroid recomputation.')],
+                [uiText('interaction', 'interaction'), uiText('Drag a center and let the Voronoi-style assignments settle.', 'Drag a center and let the Voronoi-style assignments settle.')]
+            ]);
+        }
+
+        function buildDbscanDemo() {
+            const dots = [[92,104,'#60a5fa'],[112,92,'#60a5fa'],[132,116,'#60a5fa'],[152,100,'#60a5fa'],[292,88,'#4ade80'],[318,104,'#4ade80'],[340,128,'#4ade80'],[364,150,'#4ade80'],[318,172,'#4ade80'],[414,72,'#94a3b8'],[78,178,'#94a3b8'],[442,182,'#94a3b8']];
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="DBSCAN core border noise clustering">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">core, border, noise</text>
+                    <path d="M72 80 C118 42 190 70 184 126 C176 180 94 174 70 130 C62 114 60 96 72 80 Z" fill="#1d4ed8" opacity="0.24"/>
+                    <path d="M272 62 C338 38 402 102 398 158 C394 214 302 206 270 158 C246 122 242 82 272 62 Z" fill="#15803d" opacity="0.26"/>
+                    ${dots.map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="6" fill="${c}"/>`).join('')}
+                    <circle cx="132" cy="116" r="34" fill="none" stroke="#93c5fd" stroke-width="3" stroke-dasharray="6 6"/>
+                    <circle cx="340" cy="128" r="38" fill="none" stroke="#86efac" stroke-width="3" stroke-dasharray="6 6"/>
+                    <text x="132" y="172" fill="#bfdbfe" text-anchor="middle" font-size="13">dense reachability</text>
+                    <text x="414" y="98" fill="#cbd5e1" text-anchor="middle" font-size="13">noise</text>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('The KDD paper separates core, border, and noise by neighborhood density.', 'The KDD paper separates core, border, and noise by neighborhood density.')],
+                [uiText('interaction', 'interaction'), uiText('Adjust epsilon to show clusters joining or points becoming noise.', 'Adjust epsilon to show clusters joining or points becoming noise.')]
+            ]);
+        }
+
+        function buildSpectralDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Spectral clustering graph cut">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">graph cut through eigenvectors</text>
+                    ${[[96,96],[142,70],[176,118],[116,150],[338,82],[390,106],[352,154],[420,160]].map(([x,y], i) => `<circle cx="${x}" cy="${y}" r="13" fill="${i < 4 ? '#60a5fa' : '#4ade80'}"/>`).join('')}
+                    <path d="M96 96 L142 70 L176 118 L116 150 L96 96 M338 82 L390 106 L420 160 L352 154 L338 82 M176 118 C220 100 278 100 338 82 M116 150 C220 178 282 174 352 154" stroke="#cbd5e1" stroke-width="3" fill="none" opacity="0.78"/>
+                    <path d="M256 58 V188" stroke="#f59e0b" stroke-width="5" stroke-dasharray="9 8"/>
+                    <path d="M82 210 C142 178 186 218 236 194 C278 172 314 224 374 190 C408 172 430 182 454 160" stroke="#93c5fd" stroke-width="4" fill="none"/>
+                    <text x="256" y="42" fill="#fde68a" text-anchor="middle" font-size="13">low normalized cut</text>
+                </svg>
+            `, [
+                [uiText('paper cue', 'paper cue'), uiText('Normalized cuts convert image grouping into a graph partition problem.', 'Normalized cuts convert image grouping into a graph partition problem.')],
+                [uiText('interaction', 'interaction'), uiText('Move the cut and show the eigenvector score behind the split.', 'Move the cut and show the eigenvector score behind the split.')]
+            ]);
+        }
+
         function buildAdamDemo() {
             return buildPaperDemo(`
                 <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Adam update sketch">
@@ -7607,20 +7789,12 @@
         function renderBenchHeroVisual(vm) {
             if (!refs.benchHeroVisual) return;
             const items = buildBenchVisualItems(vm);
-            const backgroundItem = items.find((item) => item && item.type === 'image');
-            const backgroundPhoto = backgroundItem ? backgroundItem.url : '';
             refs.benchHeroVisual.classList.toggle('is-empty', items.length === 0);
-            refs.benchHeroVisual.classList.toggle('has-photo', Boolean(backgroundPhoto));
+            refs.benchHeroVisual.classList.remove('has-photo');
+            refs.benchHeroVisual.style.removeProperty('--bench-photo');
             if (!items.length) {
-                refs.benchHeroVisual.style.removeProperty('--bench-photo');
                 refs.benchHeroVisual.innerHTML = '';
                 return;
-            }
-
-            if (backgroundPhoto) {
-                refs.benchHeroVisual.style.setProperty('--bench-photo', `url("${backgroundPhoto.replace(/"/g, '\\"')}")`);
-            } else {
-                refs.benchHeroVisual.style.removeProperty('--bench-photo');
             }
 
             const placeholders = Array.from({ length: Math.max(0, 3 - items.length) }, () => null);
@@ -7664,7 +7838,17 @@
                 perceptron: buildPerceptronDemo,
                 dbn: buildDbnDemo,
                 td: buildTdDemo,
-                bayesnet: buildBayesNetDemo
+                bayesnet: buildBayesNetDemo,
+                otter: buildOtterDemo,
+                watson: buildWatsonDemo,
+                draughts: buildDraughtsDemo,
+                chinook: buildChinookDemo,
+                pandemonium: buildPandemoniumDemo,
+                cyc: buildCycDemo,
+                xcon: buildXconDemo,
+                kmeans: buildKmeansDemo,
+                dbscan: buildDbscanDemo,
+                spectral: buildSpectralDemo
             };
             const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
             const useSourcePanel = getAchievementDemoPanel(raw) === 'sources';

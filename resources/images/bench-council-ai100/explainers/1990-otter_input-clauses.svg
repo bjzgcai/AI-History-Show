@@ -1,28 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
   <title id="title">Otter input clauses</title>
-  <desc id="desc">Otter theorem-proving input as weighted clauses and strategy controls.</desc>
-  <rect width="1200" height="720" fill="#f3f4f6"/>
-  <rect x="70" y="64" width="1060" height="592" rx="24" fill="#111827"/>
-  <text x="112" y="126" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Otter input clauses</text>
-  <text x="112" y="168" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">把目标转成可搜索的子句集合</text>
+  <desc id="desc">A light document-style view of Otter's input clauses, strategy settings, and goal clause.</desc>
+  <rect width="1200" height="720" fill="#e7ecf3"/>
+  <rect x="88" y="52" width="1024" height="616" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="88" y="52" width="1024" height="82" rx="14" fill="#eef2ff"/>
+  <rect x="88" y="110" width="1024" height="24" fill="#eef2ff"/>
+  <text x="132" y="104" fill="#111827" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">OTTER 3.3 input worksheet</text>
+  <text x="132" y="164" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">从假设、等式和目标生成可搜索的 clause set</text>
 
-  <rect x="112" y="214" width="448" height="338" rx="18" fill="#0b1120" stroke="#334155" stroke-width="3"/>
-  <text x="142" y="260" fill="#93c5fd" font-family="Consolas, monospace" font-size="23" font-weight="700">set(hyper_res).</text>
-  <text x="142" y="306" fill="#93c5fd" font-family="Consolas, monospace" font-size="23" font-weight="700">assign(max_weight, 20).</text>
-  <text x="142" y="370" fill="#f8fafc" font-family="Consolas, monospace" font-size="22">list(usable).</text>
-  <text x="168" y="416" fill="#fbbf24" font-family="Consolas, monospace" font-size="22">P(x) | Q(x).</text>
-  <text x="168" y="462" fill="#fbbf24" font-family="Consolas, monospace" font-size="22">-Q(a) | R(a).</text>
-  <text x="168" y="508" fill="#f87171" font-family="Consolas, monospace" font-size="22">-R(a).</text>
+  <line x1="132" y1="208" x2="1068" y2="208" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="132" y="254" fill="#1e3a8a" font-family="Consolas, 'Courier New', monospace" font-size="25" font-weight="700">set(hyper_res).</text>
+  <text x="132" y="296" fill="#1e3a8a" font-family="Consolas, 'Courier New', monospace" font-size="25" font-weight="700">assign(max_weight, 20).</text>
 
-  <path d="M596 382 C660 310 712 310 760 382" stroke="#e5e7eb" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <path d="M752 382 C816 454 868 454 916 382" stroke="#e5e7eb" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <rect x="132" y="334" width="426" height="220" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="158" y="374" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">usable clauses</text>
+  <text x="158" y="422" fill="#334155" font-family="Consolas, 'Courier New', monospace" font-size="23">1. P(x) | Q(x)</text>
+  <text x="158" y="468" fill="#334155" font-family="Consolas, 'Courier New', monospace" font-size="23">2. -Q(a) | R(a)</text>
+  <text x="158" y="514" fill="#b91c1c" font-family="Consolas, 'Courier New', monospace" font-size="23">3. -R(a)</text>
 
-  <rect x="666" y="314" width="160" height="82" rx="18" fill="#60a5fa"/>
-  <text x="746" y="365" text-anchor="middle" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">usable</text>
-  <rect x="700" y="438" width="160" height="82" rx="18" fill="#f59e0b"/>
-  <text x="780" y="489" text-anchor="middle" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">sos</text>
-  <rect x="910" y="376" width="160" height="82" rx="18" fill="#22c55e"/>
-  <text x="990" y="427" text-anchor="middle" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">proof</text>
+  <rect x="642" y="334" width="426" height="220" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="3"/>
+  <text x="668" y="374" fill="#9a3412" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">search controls</text>
+  <text x="668" y="422" fill="#7c2d12" font-family="Consolas, 'Courier New', monospace" font-size="23">pick_given_ratio = 4</text>
+  <text x="668" y="468" fill="#7c2d12" font-family="Consolas, 'Courier New', monospace" font-size="23">demodulators = on</text>
+  <text x="668" y="514" fill="#7c2d12" font-family="Consolas, 'Courier New', monospace" font-size="23">index_terms = on</text>
 
-  <text x="112" y="612" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Based on OTTER 3.3 Reference Manual · input strategy view</text>
+  <path d="M558 444 H642" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M623 424 L650 444 L623 464" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="132" y="620" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">Source: OTTER 3.3 Reference Manual · visualized as an input sheet, not a copied figure</text>
 </svg>
