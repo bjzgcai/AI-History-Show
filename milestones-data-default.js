@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-10 01:26
+// 生成时间: 2026-06-10 17:05
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -19170,7 +19170,17 @@ const milestones = [
           "zh": "闭合证明"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Reference",
+          "title": "OTTER 3.3 Reference Manual",
+          "description": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
+          "url": "https://arxiv.org/abs/cs/0310056",
+          "source": "https://arxiv.org/abs/cs/0310056",
+          "action": "Open reference"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -19585,7 +19595,17 @@ const milestones = [
           "zh": "带置信度抢答"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Paper",
+          "title": "Watson: Beyond Jeopardy!",
+          "description": "Original Artificial Intelligence paper on the post-Jeopardy Watson system and its technical arc.",
+          "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+          "source": "https://doi.org/10.1016/j.artint.2012.06.009",
+          "action": "Open paper"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -19998,7 +20018,17 @@ const milestones = [
           "zh": "选择走法"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Paper",
+          "title": "Logical or non-mathematical programmes",
+          "description": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+          "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "action": "Open ACM record"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -20411,7 +20441,17 @@ const milestones = [
           "zh": "证明和棋"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Science",
+          "title": "Checkers Is Solved",
+          "description": "Science record for the weak solution of checkers and Chinook's endgame database work.",
+          "url": "https://www.science.org/doi/10.1126/science.1144079",
+          "source": "https://www.science.org/doi/10.1126/science.1144079",
+          "action": "Open Science record"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -20824,7 +20864,17 @@ const milestones = [
           "zh": "选择模式"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Paper",
+          "title": "Pandemonium: A Paradigm for Learning",
+          "description": "Primary paper for Selfridge's layered demon architecture and feature-vote recognition metaphor.",
+          "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "action": "Open paper"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -21250,7 +21300,17 @@ const milestones = [
           "zh": "推理答案"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Book",
+          "title": "Building Large Knowledge-Based Systems",
+          "description": "Foundational book record for Cyc and its large common-sense knowledge engineering program.",
+          "url": "https://dl.acm.org/doi/book/10.5555/70571",
+          "source": "https://dl.acm.org/doi/book/10.5555/70571",
+          "action": "Open book record"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -21663,7 +21723,17 @@ const milestones = [
           "zh": "输出配置"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "AAAI Paper",
+          "title": "R1: An Expert in the Computer Systems Domain",
+          "description": "AAAI paper describing the rule-based configuration expert system behind XCON/R1.",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+          "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+          "action": "Open AAAI record"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -22076,7 +22146,17 @@ const milestones = [
           "zh": "移动均值"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Paper",
+          "title": "Least squares quantization in PCM",
+          "description": "IEEE record for Lloyd's least-squares quantization algorithm, later known as k-means.",
+          "url": "https://doi.org/10.1109/TIT.1982.1056489",
+          "source": "https://doi.org/10.1109/TIT.1982.1056489",
+          "action": "Open IEEE record"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -22502,7 +22582,17 @@ const milestones = [
           "zh": "标记噪声"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "KDD Paper",
+          "title": "A density-based algorithm for discovering clusters",
+          "description": "Original KDD paper introducing DBSCAN's density reachability and noise-aware clustering.",
+          "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+          "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+          "action": "Open paper record"
+        }
+      ],
       "sources": [
         {
           "type": {
@@ -22928,7 +23018,17 @@ const milestones = [
           "zh": "切分簇"
         }
       ],
-      "visualModules": [],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Paper",
+          "title": "Normalized Cuts and Image Segmentation",
+          "description": "IEEE paper connecting graph cuts, eigenvectors, and segmentation for spectral clustering.",
+          "url": "https://doi.org/10.1109/34.868688",
+          "source": "https://doi.org/10.1109/34.868688",
+          "action": "Open IEEE record"
+        }
+      ],
       "sources": [
         {
           "type": {
