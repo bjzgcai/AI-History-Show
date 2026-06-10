@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-10 19:10
+// 生成时间: 2026-06-10 19:23
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -3777,8 +3777,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat the Turing Test as historically foundational and philosophically fertile, but not as a complete modern definition of intelligence. Its strongest legacy is methodological: it made machine intelligence discussable through observable interaction.",
-          "zh": "今天的专家通常认为，图灵测试在历史上具有奠基意义，在哲学上也非常富有启发性，但它并不是现代智能的完整定义。它最持久的遗产是方法论层面的：它让机器智能能够通过可观察互动来讨论。"
+          "en": "Experts generally treat the Turing Test as historically foundational and philosophically fertile, even though it is not a complete modern definition of intelligence. Its long-term legacy is methodological: it made machine intelligence discussable through observable interaction, human judgment, and comparison.",
+          "zh": "专家通常认为，图灵测试在历史上具有奠基意义，在哲学上也富有启发性，但它并不是现代智能的完整定义。它的长期影响主要体现在方法论上：它让机器智能能够通过可观察互动、人类判断和比较来讨论。"
         }
       }
     ],
@@ -4171,12 +4171,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Demo Hook",
-          "zh": "展示钩子"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
-          "en": "Show an expression entering an EVAL machine: a nested list flows through QUOTE, CAR/CDR and COND until the symbolic expression reduces to an answer. The point is to make code-as-data visible.",
-          "zh": "可做成“EVAL 机器”：嵌套表进入系统，经过 QUOTE、CAR/CDR 与 COND，一步步归约成结果。展示重点是让“代码即数据”变得可见。"
+          "en": "Experts generally treat LISP as one of the defining languages of symbolic AI and interactive programming. Its long-term legacy is the code-as-data idea, recursive symbolic processing, and an ecosystem of AI systems that shaped later programming-language design.",
+          "zh": "专家通常把 LISP 视为符号 AI 和交互式编程的定义性语言之一。它的长期影响在于“代码即数据”、递归符号处理，以及由此形成并影响后续编程语言设计的 AI 系统生态。"
         }
       }
     ],
@@ -4559,12 +4559,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Demo Hook",
-          "zh": "展示钩子"
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
         },
         "html": {
-          "en": "Use a Go-board explainer around Move 37: contrast human prior, policy suggestion, search tree and later board consequence. It turns a single move into a visible story about learned intuition plus planning.",
-          "zh": "可围绕第 37 手做围棋棋盘解释器：对比人类先验、策略网络建议、搜索树和后续局面影响。这样能把一个落子变成“学习直觉 + 规划搜索”的可见故事。"
+          "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
+          "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。"
         }
       }
     ],
@@ -4941,8 +4941,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Experts usually treat Cook's contribution as a founding event of theoretical computer science. NP-completeness did not just solve a problem; it created a durable framework for comparing computational hardness.",
-          "zh": "专家通常把 库克 的贡献视为理论计算机科学的奠基事件。NP 完全性不只是解决了一个问题，而是建立了一套持久的计算困难性比较框架。"
+          "en": "Experts generally treat Cook's NP-completeness result as a founding event of theoretical computer science. Its long-term legacy is a durable framework for comparing computational hardness across algorithms, optimization, cryptography, and AI search.",
+          "zh": "专家通常把库克的 NP 完全性结果视为理论计算机科学的奠基事件。它的长期影响在于建立了一套持久框架，用来比较算法、优化、密码学和 AI 搜索中的计算困难性。"
         }
       }
     ],
@@ -5332,8 +5332,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Experts usually evaluate VC theory as one of the mathematical foundations of machine learning. Classical VC bounds can be conservative for modern deep learning, but the framework remains central to thinking about generalization.",
-          "zh": "专家通常认为 VC 理论是机器学习的数学基础之一。经典 VC 界对现代深度学习可能偏保守，但这一框架仍然是理解泛化问题的核心参照。"
+          "en": "Experts generally treat VC theory as one of the mathematical foundations of machine learning, while noting that classical bounds can be conservative for modern deep networks. Its long-term legacy is the language it gave researchers for model capacity, generalization, and learning from finite samples.",
+          "zh": "专家通常把 VC 理论视为机器学习的数学基础之一，同时也指出经典界对现代深度网络可能偏保守。它的长期影响在于为模型容量、泛化能力和有限样本学习提供了共同语言。"
         }
       }
     ],
@@ -5739,8 +5739,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Experts usually treat Logic Theorist as a founding symbolic AI system. Its legacy is the combination of theorem proving, heuristic search, symbolic programming, and cognitive modeling.",
-          "zh": "专家通常把 Logic Theorist 视为符号 AI 的奠基系统之一。它的遗产在于把定理证明、启发式搜索、符号编程和认知建模结合起来。"
+          "en": "Experts generally treat Logic Theorist as a founding symbolic AI system and an early proof that heuristic search could model reasoning. Its long-term legacy is the combination of theorem proving, symbolic programming, cognitive modeling, and search as a practical AI pattern.",
+          "zh": "专家通常把 Logic Theorist 视为符号 AI 的奠基系统之一，也是启发式搜索能够模拟推理的早期证据。它的长期影响在于把定理证明、符号编程、认知建模和搜索组织成一种实用 AI 模式。"
         }
       }
     ],
@@ -6123,8 +6123,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Wang's algorithm is usually treated as an early milestone in automated theorem proving. It made the gap between formal logic and machine execution smaller, and it influenced later work on proof procedures and SAT-style reasoning.",
-          "zh": "王氏算法通常被视为自动定理证明的早期里程碑。它缩小了形式逻辑与机器执行之间的距离，也影响了后来的证明过程与 SAT 式推理研究。"
+          "en": "Experts generally treat Wang's algorithm as an early milestone in automated theorem proving. Its long-term legacy is that it narrowed the gap between formal logic and machine execution, influencing later proof procedures and SAT-style reasoning.",
+          "zh": "专家通常把王氏算法视为自动定理证明的早期里程碑。它的长期影响在于缩小了形式逻辑与机器执行之间的距离，并影响了后来的证明过程和 SAT 式推理。"
         }
       }
     ],
@@ -6543,8 +6543,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "DPLL is usually evaluated as one of the foundational algorithms behind practical SAT solving. Modern solvers add learning, watched literals, restarts, and heuristics, but the core search-and-propagate structure remains recognizable.",
-          "zh": "DPLL 通常被视为实用 SAT 求解背后的基础算法之一。现代求解器加入学习、watched literals、重启与启发式策略，但搜索与传播的核心结构仍清晰可见。"
+          "en": "Experts generally treat Davis-Putnam and DPLL as foundational work behind practical SAT solving. Their long-term legacy is the search-and-propagate structure that still underlies modern solvers, even after learning, restarts, watched literals, and heuristics were added.",
+          "zh": "专家通常把 Davis-Putnam 和 DPLL 视为实用 SAT 求解背后的基础工作。它们的长期影响在于搜索与传播结构至今仍支撑现代求解器，即使后来加入了学习、重启、watched literals 和启发式策略。"
         }
       }
     ],
@@ -6939,8 +6939,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Adam as a practical default rather than a universal optimum. It remains valued for fast, stable training, while current recipes often modify it through AdamW, careful schedules, and task-specific tuning.",
-          "zh": "今天的专家通常把 Adam 视为实用默认选择，而不是万能最优解。它仍因训练快速、稳定而受到重视，但当前配方往往会通过 AdamW、精细学习率计划和任务特定调参来修正它。"
+          "en": "Experts generally treat Adam as a practical default optimizer rather than a universal optimum. Its long-term legacy is fast and stable neural-network training, plus a family of descendants such as AdamW and schedule-aware training recipes.",
+          "zh": "专家通常把 Adam 视为实用默认优化器，而不是万能最优解。它的长期影响在于推动了快速、稳定的神经网络训练，并催生了 AdamW 和结合学习率计划的训练配方。"
         }
       }
     ],
@@ -7391,8 +7391,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its value is clarity: it still helps explain depth, pretrained visual features, and baseline comparisons even though newer models are more efficient.",
-          "zh": "今天的专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的价值在于清晰性：即使新模型更高效，它仍有助于解释网络深度、预训练视觉特征和基线比较。"
+          "en": "Experts generally treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its long-term legacy is clarity: it still teaches depth, pretrained visual features, and baseline comparison even though newer models are more efficient.",
+          "zh": "专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的长期影响在于清晰性：即使新模型更高效，它仍适合讲解网络深度、预训练视觉特征和基线比较。"
         }
       }
     ],
@@ -7823,8 +7823,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. Their strength is population-based exploration, especially when gradients are unavailable or objectives are awkward to optimize.",
-          "zh": "今天的专家通常把遗传算法视为困难设计空间中的有用搜索启发式方法，而不是通用智能理论。它们的优势在于基于种群的探索，尤其适用于没有梯度或目标函数难以优化的场景。"
+          "en": "Experts generally treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. Their long-term legacy is population-based exploration for problems where gradients are unavailable, objectives are awkward, or candidate designs must be evolved.",
+          "zh": "专家通常把遗传算法视为困难设计空间中的有用搜索启发式方法，而不是通用智能理论。它们的长期影响在于基于种群的探索，适用于没有梯度、目标函数棘手或候选设计需要演化的任务。"
         }
       }
     ],
@@ -8293,8 +8293,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat U-Net as a canonical architecture for dense prediction and restoration. Its encoder-decoder shape with skip connections remains influential beyond biomedical segmentation, including image restoration and diffusion-model backbones.",
-          "zh": "今天的专家通常把 U-Net 视为密集预测和图像复原的经典架构。它带跳跃连接的编码器-解码器形态仍然影响着生物医学分割之外的领域，包括图像复原和扩散模型骨干网络。"
+          "en": "Experts generally treat U-Net as a canonical architecture for dense prediction and image restoration. Its long-term legacy is the encoder-decoder pattern with skip connections, which spread from biomedical segmentation to restoration, generative models, and diffusion backbones.",
+          "zh": "专家通常把 U-Net 视为密集预测和图像复原的经典架构。它的长期影响在于带跳跃连接的编码器-解码器模式，从生物医学分割扩展到图像复原、生成模型和扩散模型骨干网络。"
         }
       }
     ],
@@ -8779,8 +8779,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Faster R-CNN as a turning point that made object detection more end-to-end and learnable. It is no longer the only dominant detector style, but its proposal-and-recognition split still frames how researchers explain detection tradeoffs.",
-          "zh": "今天的专家通常把 Faster R-CNN 视为让目标检测更端到端、更可学习的转折点。它不再是唯一主导的检测器风格，但“候选区域 + 识别”的划分仍帮助研究者解释检测中的权衡。"
+          "en": "Experts generally treat Faster R-CNN as a turning point that made object detection more end-to-end and learnable. Its long-term legacy is the proposal-and-recognition framework that still shapes how researchers explain accuracy, speed, and localization tradeoffs.",
+          "zh": "专家通常把 Faster R-CNN 视为让目标检测更端到端、更可学习的转折点。它的长期影响在于“候选区域 + 识别”框架仍塑造着研究者对精度、速度和定位权衡的解释。"
         }
       }
     ],
@@ -9241,8 +9241,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat SVMs as a mature classical method whose conceptual importance exceeds its role in modern deep learning pipelines. The margin idea remains central for teaching generalization, kernels, and robust decision boundaries.",
-          "zh": "今天的专家通常把 SVM 视为成熟的经典方法，其概念重要性超过了它在现代深度学习流水线中的实际角色。间隔思想仍是讲解泛化、核方法和稳健决策边界的核心。"
+          "en": "Experts generally treat SVMs as mature classical methods whose conceptual importance exceeds their role in most modern deep-learning pipelines. Their long-term legacy is the margin-and-kernel view of generalization, robust boundaries, and nonlinear classification.",
+          "zh": "专家通常把 SVM 视为成熟的经典方法，其概念重要性超过了它在多数现代深度学习流水线中的实际角色。它的长期影响在于用间隔和核方法理解泛化、稳健边界和非线性分类。"
         }
       }
     ],
@@ -9715,8 +9715,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat CART as a foundational interpretable model and as the basic unit behind stronger tree ensembles. Single trees are often too limited for peak accuracy, but their split-and-prune logic remains essential for explanation and tabular modeling.",
-          "zh": "今天的专家通常把 CART 视为基础性的可解释模型，也是更强树集成方法背后的基本单元。单棵树在最高精度上常常有限，但其划分与剪枝逻辑仍是解释和表格建模的关键。"
+          "en": "Experts generally treat CART as a foundational interpretable model and the basic unit behind stronger tree ensembles. Its long-term legacy is the split-and-prune logic used in explanation, tabular modeling, random forests, and gradient boosting.",
+          "zh": "专家通常把 CART 视为基础性的可解释模型，也是更强树集成方法背后的基本单元。它的长期影响在于划分与剪枝逻辑被用于解释、表格建模、随机森林和梯度提升。"
         }
       }
     ],
@@ -10176,8 +10176,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat simulated annealing as a classic metaheuristic for escaping local optima. It is not a guarantee of easy global optimization, but the cooling metaphor remains useful for scheduling, routing, placement, and other hard combinatorial problems.",
-          "zh": "今天的专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法。它不能保证轻松找到全局最优，但降温隐喻仍适用于调度、路径规划、布局和其他困难组合问题。"
+          "en": "Experts generally treat simulated annealing as a classic metaheuristic for escaping local optima, not as a guarantee of easy global optimization. Its long-term legacy is the cooling metaphor for scheduling, routing, placement, and other hard combinatorial searches.",
+          "zh": "专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法，而不是轻松获得全局最优的保证。它的长期影响在于降温隐喻被用于调度、路径规划、布局和其他困难组合搜索。"
         }
       }
     ],
@@ -10620,8 +10620,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Lasso as a standard tool for sparse, interpretable linear modeling. Its assumptions can be restrictive, but the idea of regularization-driven feature selection remains central in high-dimensional statistics and genomics.",
-          "zh": "今天的专家通常把 Lasso 视为稀疏、可解释线性建模的标准工具。它的假设可能较强，但由正则化驱动的特征选择思想仍是高维统计和基因组学的核心。"
+          "en": "Experts generally treat Lasso as a standard tool for sparse, interpretable linear modeling. Its long-term legacy is regularization-driven feature selection, especially in high-dimensional statistics, genomics, and transparent predictive modeling.",
+          "zh": "专家通常把 Lasso 视为稀疏、可解释线性建模的标准工具。它的长期影响在于由正则化驱动的特征选择，尤其影响高维统计、基因组学和透明预测建模。"
         }
       }
     ],
@@ -11072,8 +11072,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Inception as a milestone in efficient modular CNN design. Its exact modules are less central now, but its emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs shaped later architecture search and block design.",
-          "zh": "今天的专家通常把 Inception 视为高效模块化 CNN 设计的里程碑。它的具体模块如今不再最核心，但并行分支、瓶颈层和明确计算权衡影响了后来的架构搜索与模块设计。"
+          "en": "Experts generally treat Inception as a milestone in efficient modular CNN design. Its long-term legacy is the emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs that influenced later block design and architecture search.",
+          "zh": "专家通常把 Inception 视为高效模块化 CNN 设计的里程碑。它的长期影响在于强调并行分支、瓶颈层和明确计算权衡，并影响了后来的模块设计与架构搜索。"
         }
       }
     ],
@@ -11504,8 +11504,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat resolution as a foundational proof method for symbolic AI and automated reasoning. It is not how most modern AI systems reason, but it remains central to theorem proving, logic programming, and constraint-based systems.",
-          "zh": "今天的专家通常把归结法视为符号 AI 和自动推理的基础证明方法。它并不是多数现代 AI 系统的推理方式，但仍是定理证明、逻辑程序设计和基于约束系统的核心。"
+          "en": "Experts generally treat resolution as a foundational proof method for symbolic AI and automated reasoning. Its long-term legacy is visible in theorem proving, logic programming, SAT/SMT lineages, and constraint-based reasoning systems.",
+          "zh": "专家通常把归结法视为符号 AI 和自动推理的基础证明方法。它的长期影响体现在定理证明、逻辑程序设计、SAT/SMT 谱系和基于约束的推理系统中。"
         }
       }
     ],
@@ -11946,8 +11946,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Prolog as a landmark in logic programming and declarative computation. It is no longer the mainstream AI implementation language, but it remains important for explaining rule-based reasoning, constraints, and symbolic representation.",
-          "zh": "今天的专家通常把 Prolog 视为逻辑程序设计和声明式计算的标志性成果。它已不是主流 AI 实现语言，但对于解释基于规则的推理、约束和符号表示仍然重要。"
+          "en": "Experts generally treat Prolog as a landmark in logic programming and declarative computation. Its long-term legacy is the durable idea that facts, rules, unification, and backtracking can form an executable reasoning system.",
+          "zh": "专家通常把 Prolog 视为逻辑程序设计和声明式计算的标志性成果。它的长期影响在于证明事实、规则、合一和回溯可以组成可执行推理系统。"
         }
       }
     ],
@@ -12375,8 +12375,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat ELIZA as a cautionary and historically important demonstration of conversational illusion. It was not deep understanding, but it showed how interaction design, expectation, and user projection can shape judgments about AI.",
-          "zh": "今天的专家通常把 ELIZA 视为具有警示意义和历史重要性的对话幻觉展示。它并不具备深层理解，但揭示了交互设计、期待和用户投射如何影响人们对 AI 的判断。"
+          "en": "Experts generally treat ELIZA as both historically important and cautionary: it produced conversational illusion without deep understanding. Its long-term legacy is the reminder that interaction design, expectation, and user projection strongly shape judgments about AI.",
+          "zh": "专家通常认为 ELIZA 既具有历史重要性，也具有警示意义：它没有深层理解，却能制造对话幻觉。它的长期影响在于提醒人们，交互设计、期待和用户投射会强烈影响对 AI 的判断。"
         }
       }
     ],
@@ -12807,8 +12807,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Hopfield networks as historically central to energy-based neural computation. Modern systems rarely use the original form directly, but the connection between memory, optimization, and statistical physics remains influential.",
-          "zh": "今天的专家通常把 Hopfield 网络视为基于能量的神经计算中的历史核心。现代系统很少直接使用其原始形式，但记忆、优化和统计物理之间的联系仍然具有影响力。"
+          "en": "Experts generally treat Hopfield networks as central to the history of energy-based neural computation. Their long-term legacy is the connection between memory, optimization, attractor dynamics, and statistical physics.",
+          "zh": "专家通常把 Hopfield 网络视为基于能量的神经计算史中的核心成果。它的长期影响在于连接了记忆、优化、吸引子动力学和统计物理。"
         }
       }
     ],
@@ -13237,8 +13237,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat dropout as a simple, effective regularization idea whose role depends on architecture and scale. It remains common in APIs and teaching, even though modern systems often combine it with normalization, data augmentation, and other regularizers.",
-          "zh": "今天的专家通常把 Dropout 视为简单有效的正则化思想，但其作用取决于架构和规模。它仍常见于 API 和教学中，尽管现代系统往往会把它与归一化、数据增强和其他正则化方法结合。"
+          "en": "Experts generally treat dropout as a simple and effective regularization idea whose value depends on architecture and scale. Its long-term legacy is the training-time noise principle, now taught alongside normalization, augmentation, and other regularizers.",
+          "zh": "专家通常把 Dropout 视为简单有效的正则化思想，但其价值取决于架构和规模。它的长期影响在于训练时引入噪声这一原则，如今常与归一化、数据增强和其他正则化方法一起讲解。"
         }
       }
     ],
@@ -13676,8 +13676,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat YOLO as the system that made real-time detection a central benchmark goal. Its later family is broad and uneven, but the original contribution remains the framing of detection as fast single-pass prediction.",
-          "zh": "今天的专家通常把 YOLO 视为让实时检测成为核心基准目标的系统。它后续家族庞大且质量不一，但原始贡献仍在于把检测表述为快速的单次前向预测。"
+          "en": "Experts generally treat YOLO as the system that made real-time object detection a central benchmark goal. Its long-term legacy is the framing of detection as fast single-pass prediction, influencing many later detector families and deployment expectations.",
+          "zh": "专家通常把 YOLO 视为让实时目标检测成为核心基准目标的系统。它的长期影响在于把检测表述为快速的单次前向预测，并影响了许多后续检测器家族和部署预期。"
         }
       }
     ],
@@ -14102,8 +14102,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat Word2Vec as a foundational embedding method that made distributional semantics operational at scale. Its vectors are simpler than contextual language-model representations, but the geometric view of meaning still underlies retrieval and representation learning.",
-          "zh": "今天的专家通常把 Word2Vec 视为基础性的嵌入方法，它让分布式语义能够在规模化系统中运作。它的向量比上下文语言模型表示更简单，但意义的几何观仍支撑着检索和表示学习。"
+          "en": "Experts generally treat Word2Vec as a foundational embedding method that made distributional semantics operational at scale. Its long-term legacy is the geometric view of meaning that still informs retrieval, representation learning, and vector databases.",
+          "zh": "专家通常把 Word2Vec 视为基础性的嵌入方法，它让分布式语义能够规模化运行。它的长期影响在于意义的几何观仍影响检索、表示学习和向量数据库。"
         }
       }
     ],
@@ -14541,8 +14541,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. It helped reveal deep learning’s power in vision, while also showing how datasets, labels, and leaderboards shape what the field optimizes.",
-          "zh": "今天的专家通常把 ImageNet 同时视为决定性基准和基准局限的提醒。它帮助揭示了深度学习在视觉中的力量，也显示出数据集、标签和排行榜会塑造领域优化的目标。"
+          "en": "Experts generally treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. Its long-term legacy is showing how dataset scale, labels, leaderboards, and compute pressure can redirect an entire research field.",
+          "zh": "专家通常把 ImageNet 同时视为决定性基准和基准局限的提醒。它的长期影响在于展示了数据规模、标签、排行榜和算力压力如何重塑整个研究领域。"
         }
       }
     ],
@@ -14983,8 +14983,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. It is limited by sample efficiency and stability challenges, but it showed that perception, action, and reward could be learned in one neural loop.",
-          "zh": "今天的专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。它受到样本效率和稳定性问题限制，但证明了感知、行动和奖励可以在同一个神经学习循环中结合。"
+          "en": "Experts generally treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. Its long-term legacy is the neural loop connecting perception, action, reward, replay, and value learning, despite ongoing sample-efficiency and stability challenges.",
+          "zh": "专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。它的长期影响在于把感知、行动、奖励、经验回放和价值学习接成神经循环，尽管样本效率和稳定性问题仍存在。"
         }
       }
     ],
@@ -15422,8 +15422,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Today experts usually treat LDA as a classic probabilistic topic model and a teaching example for generative modeling. Neural embeddings and transformers often perform better in modern applications, but LDA remains valuable for interpretability and Bayesian inference concepts.",
-          "zh": "今天的专家通常把 LDA 视为经典概率主题模型，也是讲解生成式建模的教学范例。神经嵌入和 Transformer 在现代应用中往往表现更好，但 LDA 对可解释性和贝叶斯推断概念仍有价值。"
+          "en": "Experts generally treat LDA as a classic probabilistic topic model and a teaching example for generative modeling. Its long-term legacy is interpretability through latent structure, which remains useful even when neural embeddings and transformers perform better in many applications.",
+          "zh": "专家通常把 LDA 视为经典概率主题模型，也是讲解生成式建模的教学范例。它的长期影响在于通过潜在结构提供可解释性，即使神经嵌入和 Transformer 在许多应用中表现更好，这一点仍有价值。"
         }
       }
     ],
@@ -15848,8 +15848,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "SHRDLU became a classic example of both the promise and the brittleness of microworld AI.",
-          "zh": "SHRDLU 成为微世界 AI 的希望与脆弱性的经典案例。"
+          "en": "Experts generally treat SHRDLU as a classic demonstration of both the promise and brittleness of microworld AI. Its long-term legacy is showing that language understanding can look powerful when grounded in a tightly constrained world model, while also exposing the limits of that constraint.",
+          "zh": "专家通常把 SHRDLU 视为微世界 AI 的希望与脆弱性的经典展示。它的长期影响在于说明语言理解在受限世界模型中可以显得很强大，同时也暴露了这种限制本身的边界。"
         }
       }
     ],
@@ -16276,8 +16276,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Deep Blue shaped public expectations for AI milestones and became a reference point for later game systems such as AlphaGo.",
-          "zh": "深蓝 影响了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。"
+          "en": "Experts generally treat Deep Blue as a landmark in specialized search, evaluation, and high-performance game AI. Its long-term legacy is shaping public expectations for AI milestones and serving as a reference point for later game systems such as AlphaGo.",
+          "zh": "专家通常把深蓝视为专用搜索、局面评估和高性能游戏 AI 的标志性成果。它的长期影响在于塑造了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。"
         }
       }
     ],
@@ -16704,8 +16704,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Frames became a central knowledge-representation idea and foreshadowed object-like AI data structures.",
-          "zh": "框架成为知识表示核心思想之一，并预示了类似对象的 AI 数据结构。"
+          "en": "Experts generally treat frames as a central knowledge-representation idea from symbolic AI. Their long-term legacy is the object-like organization of defaults, slots, and inheritance that influenced later knowledge bases, schemas, and semantic systems.",
+          "zh": "专家通常把框架视为符号 AI 中核心的知识表示思想。它的长期影响在于用类似对象的方式组织默认值、槽和继承，并影响了后来的知识库、模式和语义系统。"
         }
       }
     ],
@@ -17130,8 +17130,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "DENDRAL helped launch the expert-system era and influenced knowledge engineering in medicine, chemistry, and enterprise systems.",
-          "zh": "DENDRAL 推动了专家系统时代，并影响了医学、化学和企业系统中的知识工程。"
+          "en": "Experts generally treat DENDRAL as one of the first convincing demonstrations that domain knowledge could make AI useful. Its long-term legacy is the expert-system and knowledge-engineering tradition in chemistry, medicine, and enterprise decision support.",
+          "zh": "专家通常把 DENDRAL 视为最早有力证明领域知识能让 AI 变得有用的系统之一。它的长期影响在于推动了化学、医学和企业决策支持中的专家系统与知识工程传统。"
         }
       }
     ],
@@ -17546,8 +17546,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "SIFT influenced feature engineering, structure-from-motion pipelines, and many benchmarks for local descriptors.",
-          "zh": "SIFT 影响了特征工程、运动恢复结构流程和许多局部描述子基准。"
+          "en": "Experts generally treat SIFT as a landmark handcrafted feature for pre-deep-learning computer vision. Its long-term legacy is the feature-engineering mindset behind local descriptors, structure-from-motion pipelines, matching benchmarks, and robust visual correspondence.",
+          "zh": "专家通常把 SIFT 视为深度学习之前计算机视觉中标志性的手工特征。它的长期影响在于塑造了局部描述子、运动恢复结构流程、匹配基准和稳健视觉对应背后的特征工程思路。"
         }
       }
     ],
@@ -17959,8 +17959,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "It became a standard exploratory visualization, while also teaching users to treat cluster maps carefully.",
-          "zh": "它成为标准探索性可视化工具，同时也提醒用户谨慎解读簇图。"
+          "en": "Experts generally treat t-SNE as a powerful exploratory visualization tool that must be interpreted carefully. Its long-term legacy is making high-dimensional embeddings visually inspectable, while teaching users that cluster maps can be persuasive but not definitive evidence.",
+          "zh": "专家通常把 t-SNE 视为强大的探索性可视化工具，但也强调必须谨慎解读。它的长期影响在于让高维嵌入变得可视化可检查，同时提醒用户簇图有说服力但不是决定性证据。"
         }
       }
     ],
@@ -18384,8 +18384,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "The perceptron shaped neural-network history, including later debates about linear separability and multilayer learning.",
-          "zh": "感知机塑造了神经网络史，包括后来关于线性可分性和多层学习的争论。"
+          "en": "Experts generally treat Rosenblatt's perceptron as a foundational neural-learning model and a symbol of early connectionist optimism. Its long-term legacy is the debate over linear separability and the path from single threshold units to multilayer representation learning.",
+          "zh": "专家通常把罗森布拉特感知机视为基础性的神经学习模型，也是早期连接主义乐观精神的象征。它的长期影响在于引发关于线性可分性的讨论，并铺垫了从单个阈值单元到多层表示学习的道路。"
         }
       }
     ],
@@ -18803,8 +18803,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "DBNs helped reopen deep learning research and influenced later representation-learning work.",
-          "zh": "DBN 帮助重新打开深度学习研究，并影响了后来的表示学习工作。"
+          "en": "Experts generally treat deep belief networks as a key step in the pre-2012 revival of deep learning. Their long-term legacy is showing that deep stacks could be trained layer by layer, helping reopen representation-learning research before large-scale GPU training took over.",
+          "zh": "专家通常把深度置信网络视为 2012 年之前深度学习复兴中的关键一步。它的长期影响在于证明深层堆栈可以逐层训练，并在大规模 GPU 训练成为主流前重新打开了表示学习研究。"
         }
       }
     ],
@@ -19216,8 +19216,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "TD learning is a cornerstone of modern reinforcement learning and value-based control.",
-          "zh": "TD 学习是现代强化学习和值函数控制的基石。"
+          "en": "Experts generally treat temporal-difference learning as a cornerstone of reinforcement learning. Its long-term legacy is the bootstrapping idea that value estimates can learn from later predictions, supporting Q-learning, actor-critic methods, and modern value-based control.",
+          "zh": "专家通常把时序差分学习视为强化学习的基石。它的长期影响在于提出价值估计可以从后续预测中自举学习，并支撑了 Q-learning、actor-critic 方法和现代基于价值的控制。"
         }
       }
     ],
@@ -19632,8 +19632,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Bayesian networks shaped probabilistic AI and later causal reasoning frameworks.",
-          "zh": "贝叶斯网络塑造了概率 AI，并影响了后来的因果推理框架。"
+          "en": "Experts generally treat Bayesian networks as a foundational language for uncertain reasoning. Their long-term legacy is the graphical connection between probability, evidence, and dependency structure, which later influenced causal reasoning and decision support.",
+          "zh": "专家通常把贝叶斯网络视为不确定推理的基础语言。它的长期影响在于用图结构连接概率、证据和依赖关系，并影响了后来的因果推理和决策支持。"
         }
       }
     ],
@@ -20057,8 +20057,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Otter influenced later automated reasoning tools, including Prover9, and helped prove or simplify results in algebra, logic, and formal mathematics.",
-          "zh": "Otter 影响了后来的自动推理工具，包括 Prover9，并帮助在代数、逻辑和形式化数学中证明或简化结果。"
+          "en": "Experts generally treat Otter as a workhorse system in automated theorem proving and formal reasoning. Its long-term legacy is practical given-clause search, equality reasoning, and proof automation that influenced later tools including Prover9.",
+          "zh": "专家通常把 Otter 视为自动定理证明和形式推理中的主力系统。它的长期影响在于实用的 given-clause 搜索、等式推理和证明自动化，并影响了包括 Prover9 在内的后续工具。"
         }
       }
     ],
@@ -20512,8 +20512,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Watson became a landmark for industrial natural-language AI, while also revealing how difficult it is to turn showcase question answering into robust domain products.",
-          "zh": "Watson 成为工业自然语言 AI 的标志性事件，同时也揭示了把展示型问答转化为稳健领域产品的困难。"
+          "en": "Experts generally treat IBM Watson as a landmark in engineered question answering rather than a general understanding system. Its long-term legacy is both the evidence-ranking architecture for language-heavy AI and the lesson that showcase demos are hard to turn into robust domain products.",
+          "zh": "专家通常把 IBM Watson 视为工程化问答的标志性系统，而不是通用理解系统。它的长期影响既包括面向语言密集型 AI 的证据排序架构，也包括展示型系统难以转化为稳健领域产品的教训。"
         }
       }
     ],
@@ -20968,8 +20968,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "It helped establish board games as controlled environments for search, evaluation, and machine intelligence demonstrations.",
-          "zh": "它帮助把棋类游戏确立为研究搜索、评估和机器智能演示的受控环境。"
+          "en": "Experts generally treat Strachey's draughts program as an early proof that stored-program computers could attempt non-numerical play and choice. Its long-term legacy is helping establish board games as controlled environments for search, evaluation, and machine-intelligence demonstrations.",
+          "zh": "专家通常把斯特雷奇的跳棋程序视为早期证据，说明存储程序计算机可以尝试非数值对弈和选择。它的长期影响在于帮助把棋类游戏确立为研究搜索、评估和机器智能演示的受控环境。"
         }
       }
     ],
@@ -21424,8 +21424,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "It became a landmark for game-solving research and for measuring how far exhaustive computation and heuristic search can go together.",
-          "zh": "它成为游戏求解研究的里程碑，也衡量了穷举计算与启发式搜索结合后能走多远。"
+          "en": "Experts generally treat Chinook as a landmark in game-solving research and high-performance search. Its long-term legacy is showing how expert evaluation, alpha-beta search, opening knowledge, and endgame databases can combine to approach perfect play.",
+          "zh": "专家通常把 Chinook 视为游戏求解研究和高性能搜索的里程碑。它的长期影响在于展示专家评估、alpha-beta 搜索、开局知识和残局数据库如何结合并逼近完美对弈。"
         }
       }
     ],
@@ -21877,8 +21877,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "The architecture became a classic reference for distributed recognition and for thinking about perception as evidence accumulation.",
-          "zh": "该架构成为分布式识别的经典参考，也帮助人们把感知识别理解为证据累积。"
+          "en": "Experts generally treat Pandemonium as an influential early model of distributed pattern recognition. Its long-term legacy is the idea of perception as evidence accumulation across layered detectors, which echoes in ensemble methods and hierarchical recognition systems.",
+          "zh": "专家通常把 Pandemonium 视为有影响力的早期分布式模式识别模型。它的长期影响在于把感知理解为分层检测器之间的证据累积，这一思想在集成方法和分层识别系统中仍有回响。"
         }
       }
     ],
@@ -22346,8 +22346,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Cyc remains a touchstone for debates about symbolic AI, common sense, hybrid reasoning, and the limits of data-only learning.",
-          "zh": "Cyc 仍是关于符号 AI、常识、混合推理以及纯数据学习局限性的关键参照。"
+          "en": "Experts generally treat Cyc as one of the most ambitious symbolic-AI attempts to encode common sense explicitly. Its long-term legacy is keeping debates alive about knowledge engineering, hybrid reasoning, ontologies, and the limits of data-only learning.",
+          "zh": "专家通常把 Cyc 视为最雄心勃勃的符号 AI 尝试之一，目标是显式编码常识。它的长期影响在于持续推动关于知识工程、混合推理、本体和纯数据学习局限性的讨论。"
         }
       }
     ],
@@ -22802,8 +22802,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "XCON became a standard case study for knowledge engineering, expert-system maintenance, and AI's early business value.",
-          "zh": "XCON 成为知识工程、专家系统维护和 AI 早期商业价值的标准案例。"
+          "en": "Experts generally treat XCON/R1 as a landmark industrial expert system and a proof that knowledge engineering could deliver business value. Its long-term legacy is the case-study role it plays in expert-system maintenance, rule management, and applied AI deployment.",
+          "zh": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。它的长期影响在于成为专家系统维护、规则管理和应用 AI 部署的标准案例。"
         }
       }
     ],
@@ -23258,8 +23258,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "K-means remains a baseline for clustering, compression, initialization, vector quantization, and exploratory data analysis.",
-          "zh": "K-means 仍是聚类、压缩、初始化、向量量化和探索性数据分析的基线方法。"
+          "en": "Experts generally treat k-means as a simple but enduring baseline for unsupervised learning. Its long-term legacy is the assignment-and-centroid loop that remains central to clustering, compression, initialization, vector quantization, and exploratory data analysis.",
+          "zh": "专家通常把 k-means 视为简单但持久的无监督学习基线。它的长期影响在于“分配样本 + 更新中心”的循环仍是聚类、压缩、初始化、向量量化和探索性数据分析的核心。"
         }
       }
     ],
@@ -23724,8 +23724,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "DBSCAN became a standard method for spatial data, anomaly handling, and clustering with arbitrary shapes.",
-          "zh": "DBSCAN 成为处理空间数据、异常点和任意形状簇的标准方法。"
+          "en": "Experts generally treat DBSCAN as a standard density-based clustering method, especially for spatial data and irregular cluster shapes. Its long-term legacy is the core-border-noise vocabulary that made outlier handling and arbitrary-shape clusters practical.",
+          "zh": "专家通常把 DBSCAN 视为标准的基于密度聚类方法，尤其适用于空间数据和不规则簇形状。它的长期影响在于核心点、边界点和噪声点的语言让异常处理和任意形状簇变得实用。"
         }
       }
     ],
@@ -24193,8 +24193,8 @@ const milestones = [
           "zh": "长期影响"
         },
         "html": {
-          "en": "Spectral methods shaped image segmentation, manifold learning, graph clustering, and modern graph-based data analysis.",
-          "zh": "谱方法塑造了图像分割、流形学习、图聚类和现代图数据分析。"
+          "en": "Experts generally treat spectral clustering as a major graph-based approach to grouping non-convex data. Its long-term legacy is the use of graph Laplacian eigenvectors to connect image segmentation, manifold learning, graph clustering, and modern graph data analysis.",
+          "zh": "专家通常把谱聚类视为处理非凸数据分组的重要图方法。它的长期影响在于用图拉普拉斯特征向量连接图像分割、流形学习、图聚类和现代图数据分析。"
         }
       }
     ],
