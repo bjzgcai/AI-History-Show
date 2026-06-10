@@ -60,7 +60,8 @@ function normalizeEditableQuoteMeta(meta, options = {}) {
     for (const field of QUOTE_META_FIELDS) {
         const rawValue = source && hasOwn(source, field) ? source[field] : '';
         const value = isLocalizedText(rawValue) ? rawValue : String(rawValue || '').trim();
-        if (isLocalizedText(value) ? SUPPORTED_LOCALES.some((locale) => getLocalizedText(value, locale)) : value) hasValue = true;
+        if (isLocalizedText(value) ? SUPPORTED_LOCALES.some((locale) => getLocalizedText(value, locale)) : value)
+            hasValue = true;
         if (value || preserveKeys) normalized[field] = value;
     }
 
@@ -83,7 +84,8 @@ function mergeEditableQuoteMeta(eventMeta, candidateMeta, options = {}) {
                   ? candidateSource[field]
                   : '';
         const value = isLocalizedText(rawValue) ? rawValue : String(rawValue || '').trim();
-        if (isLocalizedText(value) ? SUPPORTED_LOCALES.some((locale) => getLocalizedText(value, locale)) : value) hasValue = true;
+        if (isLocalizedText(value) ? SUPPORTED_LOCALES.some((locale) => getLocalizedText(value, locale)) : value)
+            hasValue = true;
         if (value || preserveKeys || hasEventMeta) merged[field] = value;
     }
 
