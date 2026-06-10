@@ -7,7 +7,7 @@ module.exports = {
     {
       "name": {
         "en": "Genesis of AI (1950s-1970s)",
-        "zh": "AI创世纪 (1950s-1970s)"
+        "zh": "AI创世纪（20世纪50年代至70年代）"
       },
       "subtitle": {
         "en": "Genesis of AI",
@@ -22,7 +22,7 @@ module.exports = {
     {
       "name": {
         "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-        "zh": "神经网络与连接主义的复兴 (1980s-2000s)"
+        "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
       },
       "subtitle": {
         "en": "Neural Networks and Connectionism",
@@ -38,7 +38,7 @@ module.exports = {
     {
       "name": {
         "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-        "zh": "深度学习与范式归一 (2010s-2020s)"
+        "zh": "深度学习与范式归一（2010年代至2020年代）"
       },
       "subtitle": {
         "en": "Deep Learning and Unified Paradigms",

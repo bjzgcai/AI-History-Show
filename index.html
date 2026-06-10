@@ -207,9 +207,9 @@
 
         .language-toggle.topbar-language-toggle {
             --language-toggle-width: 52px;
-            --language-toggle-height: 31px;
+            --language-toggle-height: 32px;
             justify-self: end;
-            align-self: baseline;
+            align-self: center;
             margin-top: 0;
             width: var(--language-toggle-width);
             height: var(--language-toggle-height);
@@ -3498,7 +3498,7 @@
 
             .language-toggle.topbar-language-toggle {
                 --language-toggle-width: 42px;
-                --language-toggle-height: 25px;
+                --language-toggle-height: 27px;
                 font-size: 18px;
             }
 
@@ -3838,7 +3838,7 @@
                         draggable="false"
                     >
                 </div>
-                <div class="stage-kicker" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
+                <div class="stage-kicker" id="categoryTrack">AI创世纪（20世纪50年代至70年代）</div>
                 <div class="topbar-actions">
                     <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
                     <div class="mode-chip">
@@ -3874,7 +3874,7 @@
 
                     <div class="hero-context-block">
                         <div class="hero-kicker" id="leftKicker">AI创世纪</div>
-                        <div class="hero-context-period" id="heroContextPeriod">(1950s - 1970s)</div>
+                        <div class="hero-context-period" id="heroContextPeriod">（20世纪50年代至70年代）</div>
                     </div>
 
                     <div class="hero-years" id="heroYears" aria-hidden="true"></div>
@@ -3899,7 +3899,7 @@
                     <div class="story-summary" id="summaryBody"></div>
 
                     <section class="figures-section">
-                        <div class="section-heading" data-i18n="keyFiguresArchiveNarrative">Key Figures & Archive Narrative</div>
+                        <div class="section-heading" data-i18n="keyFiguresArchiveNarrative">关键人物与档案叙事</div>
                         <div class="figure-row" id="figureRow"></div>
                     </section>
 
@@ -3944,7 +3944,7 @@
                     </div>
 
                     <div class="video-frame empty" id="videoFrame">
-                        <div class="video-play-tag" aria-hidden="true">Play</div>
+                        <div class="video-play-tag" aria-hidden="true">播放</div>
                         <div class="video-quote-mark" aria-hidden="true">
                             <span class="video-quote-square">m</span>
                             <span class="video-quote-lines">
@@ -3965,7 +3965,7 @@
 
                 <section class="bench-dossier" id="benchDossier" aria-live="polite">
                     <aside class="bench-map-panel">
-                        <div class="bench-panel-heading" id="benchMapHeading">Achievement Map</div>
+                        <div class="bench-panel-heading" id="benchMapHeading">成就地图</div>
                         <div class="bench-map-list" id="benchMapList"></div>
                     </aside>
 
@@ -3981,7 +3981,7 @@
                     </section>
 
                     <aside class="bench-material-panel">
-                        <div class="bench-panel-heading" id="benchMaterialHeading">Materials</div>
+                        <div class="bench-panel-heading" id="benchMaterialHeading">资料来源</div>
                         <div class="bench-source-list" id="benchSourceList"></div>
                         <div class="bench-evidence-list" id="benchEvidenceList"></div>
                     </aside>
@@ -3997,7 +3997,7 @@
 
                 <div class="timeline-block">
                     <div class="timeline-meta">
-                        <div class="timeline-current-year" id="timelineModeLabel">Timeline</div>
+                        <div class="timeline-current-year" id="timelineModeLabel">时间线</div>
                         <div class="footer-status">
                             <div class="footer-status-text" id="statusText">达特茅斯会议 - AI正式诞生！</div>
                             <div class="footer-counter" id="counterText">1 / 21</div>
@@ -4017,8 +4017,8 @@
 
     <div class="quiz-modal is-hidden" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
         <div class="quiz-modal-shell">
-            <button class="quiz-modal-close" id="quizModalClose" type="button" aria-label="Close">×</button>
-            <div class="quiz-modal-eyebrow" id="quizModalEyebrow">Pop Quiz</div>
+            <button class="quiz-modal-close" id="quizModalClose" type="button" aria-label="关闭">×</button>
+            <div class="quiz-modal-eyebrow" id="quizModalEyebrow">快速问答</div>
             <h2 class="quiz-modal-title" id="quizModalTitle"></h2>
             <div class="quiz-modal-subtitle" id="quizModalSubtitle"></div>
             <div class="quiz-modal-content">
@@ -4036,8 +4036,8 @@
 
     <div class="region-modal is-hidden" id="regionModal" role="dialog" aria-modal="true" aria-labelledby="regionModalTitle">
         <div class="region-modal-shell">
-            <button class="region-modal-close" id="regionModalClose" type="button" aria-label="Close">×</button>
-            <div class="region-modal-eyebrow" id="regionModalEyebrow">Region Index</div>
+            <button class="region-modal-close" id="regionModalClose" type="button" aria-label="关闭">×</button>
+            <div class="region-modal-eyebrow" id="regionModalEyebrow">地区索引</div>
             <h2 class="region-modal-title" id="regionModalTitle"></h2>
             <div class="region-modal-subtitle" id="regionModalSubtitle"></div>
             <div class="region-option-grid" id="regionOptionGrid"></div>
@@ -4048,7 +4048,7 @@
         <div class="mobile-quiz-shell">
             <header class="mobile-quiz-header">
                 <div>
-                    <div class="mobile-quiz-eyebrow" id="mobileQuizEyebrow">AI100 Pop Quiz</div>
+                    <div class="mobile-quiz-eyebrow" id="mobileQuizEyebrow">AI100 快速问答</div>
                     <h1 class="mobile-quiz-title" id="mobileQuizTitle"></h1>
                     <div class="mobile-quiz-subtitle" id="mobileQuizSubtitle"></div>
                 </div>
@@ -4883,7 +4883,7 @@
             const site = item.site || tx('historicalArchive');
             const title = item.title || site;
             const description = item.description || item.usage || '';
-            const action = item.action || 'Open archive preview';
+            const action = item.action || uiText('Open archive preview', '打开档案预览');
             return `
                 <a class="bench-photo-frame bench-visual-card bench-archive-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
                     <div class="bench-archive-kicker">${escapeHtml(site)}</div>
@@ -6207,11 +6207,11 @@
             const title = uiText('10-question mobile challenge', '10 题手机挑战');
             const note = uiText(
                 'Scan to enter the mobile pop-quiz. Your score can be used to claim a souvenir.',
-                '扫码进入 10 题手机端 pop-quiz，凭成绩领取纪念品。'
+                '扫码进入 10 题手机端快速问答，凭成绩领取纪念品。'
             );
             const qrAlt = uiText(
                 'QR code for the 10-question mobile pop-quiz mini program',
-                '10 题手机端 pop-quiz 小程序二维码'
+                '10 题手机端快速问答小程序二维码'
             );
             const targetUrl = buildMobileQuizTargetUrl();
 
@@ -6302,7 +6302,7 @@
             const optionLabels = ['A', 'B', 'C', 'D', 'E'];
             const score = getMobileQuizScore();
 
-            refs.mobileQuizEyebrow.textContent = uiText('AI100 Pop Quiz', 'AI100 Pop Quiz');
+            refs.mobileQuizEyebrow.textContent = uiText('AI100 Pop Quiz', 'AI100 快速问答');
             refs.mobileQuizTitle.textContent = uiText('10-question mobile challenge', '10 题手机挑战');
             refs.mobileQuizSubtitle.textContent = uiText(
                 'Answer on your phone. Show the final score to claim a souvenir.',
@@ -6694,7 +6694,7 @@
                 return;
             }
 
-            refs.timelineModeLabel.textContent = 'Timeline';
+            refs.timelineModeLabel.textContent = uiText('Timeline', '时间线');
             refs.timelineTrack.classList.remove('achievement-map-track');
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
