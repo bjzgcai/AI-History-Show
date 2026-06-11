@@ -2,6 +2,8 @@
 // 修改此文件后运行 `node manage/generate.js` 重新生成 milestones-data.js
 
 /* eslint-disable */
+const ai100ExtraEvents = require('./ai100-extra-events.js');
+
 module.exports = {
   "1956-dartmouth": {
     "year": 1956,
@@ -17596,5 +17598,6 @@ module.exports = {
       }
     },
     "videos": []
-  }
+  },
+  ...ai100ExtraEvents
 };
