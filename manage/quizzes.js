@@ -1978,6 +1978,416 @@ module.exports = {
           "graphs"
         ]
       }
+    ],
+    "ai100-1943-mcculloch-pitts-neuron": [
+      {
+        "question": {
+          "en": "What simple idea did the McCulloch-Pitts neuron model use?",
+          "zh": "麦卡洛克-皮茨神经元模型使用了什么简单思想？"
+        },
+        "options": [
+          {
+            "en": "A neuron turns on when inputs cross a threshold",
+            "zh": "输入超过阈值时，神经元被激活"
+          },
+          {
+            "en": "A camera stores every possible image",
+            "zh": "相机存储所有可能图像"
+          },
+          {
+            "en": "A chessboard always chooses the same move",
+            "zh": "棋盘总是选择同一步"
+          },
+          {
+            "en": "A database deletes every rule",
+            "zh": "数据库删除所有规则"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The model treated a neuron like a logical threshold unit: enough input produces an on/off output.",
+          "zh": "这个模型把神经元看作逻辑阈值单元：输入足够时产生开/关输出。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "neural-network",
+          "threshold"
+        ]
+      }
+    ],
+    "ai100-1951-snarc": [
+      {
+        "question": {
+          "en": "What was SNARC built to demonstrate?",
+          "zh": "SNARC 主要用来展示什么？"
+        },
+        "options": [
+          {
+            "en": "Reward-driven learning in early neural-style hardware",
+            "zh": "早期神经式硬件中的奖励驱动学习"
+          },
+          {
+            "en": "A modern image search engine",
+            "zh": "现代图像搜索引擎"
+          },
+          {
+            "en": "A language model writing poems",
+            "zh": "会写诗的语言模型"
+          },
+          {
+            "en": "A fixed paper bibliography",
+            "zh": "固定论文目录"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SNARC modeled maze learning with reward signals and analog neural-style machinery.",
+          "zh": "SNARC 用奖励信号和模拟神经式机器来建模迷宫学习。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "hardware",
+          "reinforcement"
+        ]
+      }
+    ],
+    "ai100-1969-relu": [
+      {
+        "question": {
+          "en": "What does ReLU do to negative input values?",
+          "zh": "ReLU 会怎样处理负输入值？"
+        },
+        "options": [
+          {
+            "en": "It clips them to zero",
+            "zh": "把它们截断为 0"
+          },
+          {
+            "en": "It turns them into images",
+            "zh": "把它们变成图像"
+          },
+          {
+            "en": "It stores them as chess moves",
+            "zh": "把它们存成棋步"
+          },
+          {
+            "en": "It always doubles them",
+            "zh": "总是把它们翻倍"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "ReLU is max(0, x): negative values become zero, and positive values pass through.",
+          "zh": "ReLU 是 max(0, x)：负值变成 0，正值直接通过。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "activation",
+          "deep-learning"
+        ]
+      }
+    ],
+    "ai100-1989-lenet": [
+      {
+        "question": {
+          "en": "What kind of task made LeNet famous?",
+          "zh": "LeNet 因什么任务而闻名？"
+        },
+        "options": [
+          {
+            "en": "Reading handwritten digits or ZIP codes",
+            "zh": "识别手写数字或邮编"
+          },
+          {
+            "en": "Solving every math theorem",
+            "zh": "证明所有数学定理"
+          },
+          {
+            "en": "Playing Go with tree search only",
+            "zh": "只用树搜索下围棋"
+          },
+          {
+            "en": "Sorting books by cover color",
+            "zh": "按封面颜色给书排序"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "LeNet showed that convolutional networks trained end-to-end could recognize handwriting.",
+          "zh": "LeNet 展示了端到端训练的卷积网络可以识别手写内容。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "cnn",
+          "handwriting"
+        ]
+      }
+    ],
+    "ai100-2000-neural-language-model": [
+      {
+        "question": {
+          "en": "What did neural language models learn for words?",
+          "zh": "神经语言模型为词学习了什么？"
+        },
+        "options": [
+          {
+            "en": "Dense vector representations",
+            "zh": "稠密向量表示"
+          },
+          {
+            "en": "Only font colors",
+            "zh": "只有字体颜色"
+          },
+          {
+            "en": "Physical keyboard weight",
+            "zh": "键盘的物理重量"
+          },
+          {
+            "en": "A fixed first sentence",
+            "zh": "固定的第一句话"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Neural language models map words into learned vectors and use context to predict language.",
+          "zh": "神经语言模型把词映射为学习得到的向量，并用上下文预测语言。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "language",
+          "embeddings"
+        ]
+      }
+    ],
+    "ai100-2012-alexnet": [
+      {
+        "question": {
+          "en": "Why was AlexNet a major computer-vision breakthrough?",
+          "zh": "为什么 AlexNet 是计算机视觉的重要突破？"
+        },
+        "options": [
+          {
+            "en": "It showed deep CNNs could win ImageNet at large scale",
+            "zh": "它展示了深度 CNN 可以在大规模 ImageNet 上取胜"
+          },
+          {
+            "en": "It removed all training data",
+            "zh": "它删除了所有训练数据"
+          },
+          {
+            "en": "It only counted word frequency",
+            "zh": "它只统计词频"
+          },
+          {
+            "en": "It was a theorem prover",
+            "zh": "它是一个定理证明器"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation and regularization to sharply improve ImageNet results.",
+          "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "computer-vision",
+          "deep-learning"
+        ]
+      }
+    ],
+    "ai100-2015-resnet": [
+      {
+        "question": {
+          "en": "What is the key idea in ResNet?",
+          "zh": "ResNet 的关键思想是什么？"
+        },
+        "options": [
+          {
+            "en": "Shortcut connections that learn residual changes",
+            "zh": "用捷径连接学习残差变化"
+          },
+          {
+            "en": "Deleting every layer after training",
+            "zh": "训练后删除每一层"
+          },
+          {
+            "en": "Using only one pixel",
+            "zh": "只使用一个像素"
+          },
+          {
+            "en": "Writing programs as S-expressions",
+            "zh": "把程序写成 S 表达式"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Residual shortcuts make very deep networks easier to optimize by adding learned changes back to the input.",
+          "zh": "残差捷径把学习到的变化加回输入，使很深的网络更容易优化。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "vision",
+          "architecture"
+        ]
+      }
+    ],
+    "ai100-2015-batch-normalization": [
+      {
+        "question": {
+          "en": "What does batch normalization help stabilize?",
+          "zh": "批归一化主要帮助稳定什么？"
+        },
+        "options": [
+          {
+            "en": "Deep-network training",
+            "zh": "深度网络训练"
+          },
+          {
+            "en": "The color of a monitor",
+            "zh": "显示器颜色"
+          },
+          {
+            "en": "A chess opening book",
+            "zh": "棋类开局库"
+          },
+          {
+            "en": "A paper citation format only",
+            "zh": "只有论文引用格式"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Batch normalization normalizes intermediate activations, which can make training faster and more stable.",
+          "zh": "批归一化会归一化中间激活值，使训练更快、更稳定。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "normalization",
+          "training"
+        ]
+      }
+    ],
+    "ai100-2017-densenet": [
+      {
+        "question": {
+          "en": "What does DenseNet encourage inside a network?",
+          "zh": "DenseNet 在网络内部鼓励什么？"
+        },
+        "options": [
+          {
+            "en": "Feature reuse through dense connections",
+            "zh": "通过密集连接复用特征"
+          },
+          {
+            "en": "Forgetting all earlier layers",
+            "zh": "忘记所有早期层"
+          },
+          {
+            "en": "Only using handwritten rules",
+            "zh": "只使用手写规则"
+          },
+          {
+            "en": "Replacing images with chess boards",
+            "zh": "用棋盘替换图像"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DenseNet connects layers so later layers can directly use earlier feature maps.",
+          "zh": "DenseNet 连接各层，使后续层可以直接使用早期特征图。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "cnn",
+          "feature-reuse"
+        ]
+      }
+    ],
+    "ai100-2020-vit": [
+      {
+        "question": {
+          "en": "How does Vision Transformer look at an image?",
+          "zh": "视觉 Transformer 如何看待一张图像？"
+        },
+        "options": [
+          {
+            "en": "As a sequence of image patches",
+            "zh": "把图像看作一串图像块"
+          },
+          {
+            "en": "As a list of theorem clauses only",
+            "zh": "只看作定理子句列表"
+          },
+          {
+            "en": "As a single chess move",
+            "zh": "看作一步棋"
+          },
+          {
+            "en": "As a sound recording",
+            "zh": "看作一段录音"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "ViT splits an image into patches, embeds them as tokens, and processes them with transformer attention.",
+          "zh": "ViT 把图像切成图像块，将它们嵌入为令牌，再用 Transformer 注意力处理。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "vision-transformer",
+          "attention"
+        ]
+      }
     ]
   }
 };

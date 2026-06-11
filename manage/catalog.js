@@ -137,7 +137,17 @@ module.exports = {
         "1980-xcon-r1",
         "1957-kmeans",
         "1996-dbscan",
-        "2000-spectral-clustering"
+        "2000-spectral-clustering",
+        "ai100-1943-mcculloch-pitts-neuron",
+        "ai100-1951-snarc",
+        "ai100-1969-relu",
+        "ai100-1989-lenet",
+        "ai100-2000-neural-language-model",
+        "ai100-2012-alexnet",
+        "ai100-2015-resnet",
+        "ai100-2015-batch-normalization",
+        "ai100-2017-densenet",
+        "ai100-2020-vit"
       ]
     }
   ]
