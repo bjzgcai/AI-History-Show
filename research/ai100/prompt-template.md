@@ -277,10 +277,11 @@ London, UK
 
 ```js
 images: [
-  "photos/example.jpg"
+  "photos/person.jpg",
+  "photos/achievement-visual.svg"
 ],
 imageMeta: {
-  "photos/example.jpg": {
+  "photos/person.jpg": {
     caption: {
       en: "",
       zh: ""
@@ -297,9 +298,79 @@ imageMeta: {
       en: "",
       zh: ""
     }
+  },
+  "photos/achievement-visual.svg": {
+    caption: {
+      en: "",
+      zh: ""
+    },
+    subcaption: {
+      en: "",
+      zh: ""
+    },
+    source: "",
+    sourceUrl: "",
+    originalImageUrl: "",
+    license: "",
+    usage: {
+      en: "Achievement visualization",
+      zh: "成就可视化"
+    }
   }
 }
 ```
+
+## AI100 网站页面布局 schema（必须遵守）
+
+AI100 achievement 页面在网站中使用固定展陈布局。生成或整理数据时必须让字段支持以下视觉结构：
+
+### 顶部三联视觉区
+
+`images` 与 `achievement.visualModules` 必须组织成三张并列卡片：
+
+1. 左侧：相关科学家、人物、团队或机构照片。
+   - `images[0]` 必须优先是关键人物 portrait。
+   - 如果确实找不到人物照片，可使用团队、机构或可靠历史照片，但必须在 `imageMeta[images[0]].usage` 中说明原因。
+2. 中间：成就本身的可视化、架构图、算法流程、实验结果、系统截图或本地原创 explainer。
+   - `images[1]` 必须是解释该 achievement 的 visual，不要放第二张人物照。
+   - 优先使用本地原创 SVG/PNG explainer；不要复制论文受版权保护的图。
+3. 右侧：论文、文章、项目页、档案页或官方来源卡片。
+   - 使用 `achievement.visualModules[0]`，类型为 `archiveLink`。
+   - 必须包含 `site/title/description/url/source/action`。
+   - 这个卡片用于显示“article related to it”，不是普通图片。
+
+### 底部互动解释区
+
+每个 AI100 achievement 必须提供 `achievement.visual`，并确保前端能渲染成：
+
+- 左侧：大尺寸 visual/demo 区，展示算法流程、架构、系统路径、数据流或成果可视化。
+- 右侧：两个说明盒。
+  - 第一个盒子说明文献线索、架构线索、历史线索、实验线索或专家线索。
+  - 第二个盒子必须是 “Interaction point / 互动点”，说明观众可以如何交互理解该成就。
+
+不要让新 achievement 落到 generic 纯文本 demo panel。若没有现成 `achievement.visual` renderer，必须新增 renderer 或使用现有 `buildImagePaperDemo` / `buildPaperDemo` 风格的 visual key。
+
+### 右侧文字栏
+
+`commentarySections` 至少包含：
+
+- `Historical Background / 历史背景`
+- `Core Idea / 核心思想`
+- `Long-Term Legacy / 长期影响`
+
+`Long-Term Legacy / 长期影响` 必须包含专家评价，不只是泛泛影响描述。推荐句式：
+
+- English: `Experts generally treat ...`
+- 中文：`专家通常把/认为 ...`
+
+### 双语要求
+
+所有页面可见字段必须有真实双语内容：
+
+- `index.md` 使用英文。
+- `index.zh.md` 使用中文。
+- 转换到网站数据时，`title/description/location/figures/commentarySections/achievement/imageMeta/visualModules/sources` 等所有可见文字都应是 `{ en, zh }`。
+- 不要把英文复制进 `zh` 字段，除非是通用专名、缩写或模型名（例如 ReLU、LeNet、AlexNet、arXiv）。
 
 # Video Clips
 

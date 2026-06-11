@@ -2921,6 +2921,29 @@
                 rgba(255, 255, 255, 0.028);
         }
 
+        .bench-paper-image-demo {
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            overflow: hidden;
+            padding: 12px;
+        }
+
+        .bench-paper-image-demo img {
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+            object-fit: contain;
+            display: block;
+        }
+
+        .bench-paper-image-caption {
+            margin-top: 8px;
+            color: rgba(244, 239, 229, 0.86);
+            font-size: 13px;
+            font-weight: 800;
+            text-align: center;
+        }
+
         .bench-paper-notes {
             min-width: 0;
             display: grid;
@@ -6421,11 +6444,11 @@
         function scoreQuizMaterial(item) {
             const haystack = `${item && item.type ? item.type : ''} ${item && item.url ? item.url : ''} ${item && item.title ? item.title : ''} ${item && item.description ? item.description : ''} ${item && item.usage ? item.usage : ''}`.toLowerCase();
             let score = 0;
-            if (item && item.type === 'image' && /diagram|explainer|eval|policy|value|search|architecture|flow/.test(haystack)) score += 9;
-            if (/diagram|explainer|eval|policy|value|search|architecture|flow|source|archive|paper|manual/.test(haystack)) score += 4;
+            if (item && item.type === 'image') score += 8;
+            if (/portrait|person|people|scientist|researcher|team|institution|group|photo|肖像|人物|团队|机构/.test(haystack)) score += 12;
+            if (item && item.type === 'image' && /diagram|explainer|eval|policy|value|search|architecture|flow/.test(haystack)) score += 3;
+            if (/diagram|explainer|eval|policy|value|search|architecture|flow|source|archive|paper|manual/.test(haystack)) score += 2;
             if (/archive|paper|manual|source/.test(haystack)) score += 2;
-            if (/portrait|photo|alan-turing|john-mccarthy|lee-sedol/.test(haystack)) score -= 5;
-            if (item && item.type === 'image') score += 1;
             return score;
         }
 
@@ -6922,6 +6945,88 @@
                     <div class="bench-paper-notes">${noteHtml}</div>
                 </div>
             `;
+        }
+
+        function buildImagePaperDemo(rawMilestone, notes, fallbackTitle) {
+            const mediaUrl = rawMilestone && rawMilestone.achievement
+                ? String(rawMilestone.achievement.demoImage || '').trim()
+                : '';
+            const mediaMeta = mediaUrl ? getConfiguredImageMeta({ raw: rawMilestone }, mediaUrl) : null;
+            const mediaTitle = mediaMeta && mediaMeta.caption
+                ? mediaMeta.caption
+                : (fallbackTitle || getAchievementField(rawMilestone, 'artifact', tx('archiveImage')));
+            const imageHtml = mediaUrl
+                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}">`
+                : `<div class="bench-code-label">${escapeHtml(mediaTitle || tx('archiveImage'))}</div>`;
+            return buildPaperDemo(`
+                <div class="bench-paper-svg bench-paper-image-demo">
+                    ${imageHtml}
+                    ${mediaTitle ? `<div class="bench-paper-image-caption">${escapeHtml(mediaTitle)}</div>` : ''}
+                </div>
+            `, notes);
+        }
+
+        function buildSnarcVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('hardware cue', '硬件线索'), uiText('SNARC turns a maze and reward signal into an analog learning machine.', 'SNARC 把迷宫与奖励信号转化为模拟学习机器。')],
+                [uiText('interaction', '互动点'), uiText('Change the reward location and watch the preferred path update.', '改变奖励位置，观察偏好路径如何更新。')]
+            ], uiText('SNARC reward loop', 'SNARC 奖励循环'));
+        }
+
+        function buildReluVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('activation cue', '激活线索'), uiText('The nonlinearity is deliberately simple: negative values vanish, positive values pass through.', '这个非线性函数刻意保持简单：负值归零，正值直接通过。')],
+                [uiText('interaction', '互动点'), uiText('Move the input along the axis to show where gradients are blocked or preserved.', '沿坐标轴移动输入，显示梯度何处被阻断或保留。')]
+            ], uiText('ReLU activation curve', 'ReLU 激活曲线'));
+        }
+
+        function buildLenetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('recognition cue', '识别线索'), uiText('LeNet connects pixel crops to learned convolutional features and a digit class.', 'LeNet 将像素裁剪、卷积特征与数字类别连接起来。')],
+                [uiText('interaction', '互动点'), uiText('Swap the handwritten digit and reveal which feature maps respond.', '切换手写数字，展示哪些特征图产生响应。')]
+            ], uiText('LeNet ZIP-code pipeline', 'LeNet 邮编识别流程'));
+        }
+
+        function buildNeuralLanguageModelDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('prediction cue', '预测线索'), uiText('The paper replaces sparse n-gram tables with dense word vectors and a neural predictor.', '论文用稠密词向量与神经预测器取代稀疏 n-gram 表。')],
+                [uiText('interaction', '互动点'), uiText('Edit the context words to show the next-word distribution shift.', '编辑上下文词，展示下一个词的分布如何变化。')]
+            ], uiText('Neural language prediction', '神经语言预测'));
+        }
+
+        function buildAlexNetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('breakthrough cue', '突破线索'), uiText('AlexNet combines deep convolution, ReLU, dropout, augmentation, and GPU training at ImageNet scale.', 'AlexNet 在 ImageNet 规模上结合深层卷积、ReLU、dropout、数据增强与 GPU 训练。')],
+                [uiText('interaction', '互动点'), uiText('Step through layers to see pixels become object-level evidence.', '逐层查看像素如何变成物体级证据。')]
+            ], uiText('AlexNet architecture', 'AlexNet 架构'));
+        }
+
+        function buildResNetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('architecture cue', '架构线索'), uiText('The shortcut path lets a block learn a residual change instead of a full replacement.', '捷径路径让模块学习残差变化，而不是完整替换。')],
+                [uiText('interaction', '互动点'), uiText('Toggle the shortcut to compare residual flow with a plain deep stack.', '切换捷径，对比残差流与普通深层堆栈。')]
+            ], uiText('Residual block', '残差模块'));
+        }
+
+        function buildBatchNormVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('training cue', '训练线索'), uiText('Batch statistics stabilize layer inputs before learned scale and shift restore flexibility.', '批统计量先稳定层输入，再由可学习缩放和平移恢复灵活性。')],
+                [uiText('interaction', '互动点'), uiText('Adjust batch spread to show normalization centering the activations.', '调整批次分布，展示归一化如何居中激活值。')]
+            ], uiText('Batch normalization layer', '批归一化层'));
+        }
+
+        function buildDenseNetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('connection cue', '连接线索'), uiText('Each layer receives earlier feature maps, making reuse visible inside the block.', '每一层接收早期特征图，让块内特征复用可见。')],
+                [uiText('interaction', '互动点'), uiText('Highlight a layer to trace every incoming feature connection.', '高亮某一层，追踪所有输入特征连接。')]
+            ], uiText('Dense connectivity', '密集连接'));
+        }
+
+        function buildVitVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('token cue', '令牌线索'), uiText('ViT treats image patches like a sequence, then lets attention mix distant regions.', 'ViT 将图像块视作序列，再用注意力混合远距离区域。')],
+                [uiText('interaction', '互动点'), uiText('Select a patch token to show which other image regions it attends to.', '选择一个图像块令牌，展示它关注的其他区域。')]
+            ], uiText('Patch tokens to transformer', '图像块令牌到 Transformer'));
         }
 
         function buildOtterDemo() {
@@ -7839,6 +7944,15 @@
                 dbn: buildDbnDemo,
                 td: buildTdDemo,
                 bayesnet: buildBayesNetDemo,
+                snarc: () => buildSnarcVisualDemo(raw),
+                relu: () => buildReluVisualDemo(raw),
+                lenet: () => buildLenetVisualDemo(raw),
+                neuralLm: () => buildNeuralLanguageModelDemo(raw),
+                alexnet: () => buildAlexNetVisualDemo(raw),
+                resnet: () => buildResNetVisualDemo(raw),
+                batchnorm: () => buildBatchNormVisualDemo(raw),
+                densenet: () => buildDenseNetVisualDemo(raw),
+                vit: () => buildVitVisualDemo(raw),
                 otter: buildOtterDemo,
                 watson: buildWatsonDemo,
                 draughts: buildDraughtsDemo,

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="SNARC maze reinforcement">
+  <rect width="720" height="420" fill="#111827"/>
+  <text x="42" y="56" fill="#f59e0b" font-family="Arial" font-size="30" font-weight="700">SNARC reward-driven maze learning</text>
+  <rect x="64" y="94" width="300" height="250" rx="16" fill="#0f172a" stroke="#64748b" stroke-width="4"/>
+  <g stroke="#334155" stroke-width="14" stroke-linecap="round">
+    <path d="M104 130 H318"/><path d="M104 188 H210"/><path d="M258 188 H318"/><path d="M104 248 H318"/><path d="M104 306 H318"/>
+    <path d="M104 130 V306"/><path d="M178 130 V248"/><path d="M250 188 V306"/><path d="M318 130 V306"/>
+  </g>
+  <path d="M105 306 C156 260 174 225 210 188 C238 159 278 146 318 130" fill="none" stroke="#34d399" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="105" cy="306" r="14" fill="#60a5fa"/><circle cx="318" cy="130" r="17" fill="#f59e0b"/>
+  <rect x="430" y="112" width="210" height="70" rx="14" fill="#172554" stroke="#93c5fd" stroke-width="3"/>
+  <text x="535" y="155" fill="#bfdbfe" font-family="Arial" font-size="24" text-anchor="middle">trial path</text>
+  <rect x="430" y="214" width="210" height="70" rx="14" fill="#402c1b" stroke="#f59e0b" stroke-width="3"/>
+  <text x="535" y="257" fill="#fde68a" font-family="Arial" font-size="24" text-anchor="middle">reward pulse</text>
+  <path d="M535 182 V214" stroke="#e5e7eb" stroke-width="5"/><path d="M430 249 C394 249 386 190 364 170" stroke="#e5e7eb" stroke-width="5" fill="none"/>
+  <text x="76" y="382" fill="#94a3b8" font-family="Arial" font-size="22">Repeated reward changes the path preference through the maze.</text>
+</svg>
