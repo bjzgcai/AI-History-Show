@@ -53,6 +53,25 @@ node manage/generate.js
 | `images` | 相对路径数组 |
 | `videos` | `[{id, title, channel, duration}]`，YouTube 视频 |
 
+### AI100 页面布局 schema
+
+BenchCouncil AI100 achievement 页面必须满足固定网页布局：
+
+- 顶部三联视觉区：
+  1. `images[0]` 为相关科学家 / 人物 / 团队 / 机构照片。
+  2. `images[1]` 为成就本身的 visualization / architecture / algorithm explainer。
+  3. `achievement.visualModules[0]` 为相关文章、论文、项目页或档案页卡片（`type: "archiveLink"`）。
+- 底部互动解释区：
+  - `achievement.visual` 必须映射到非 generic 的 demo renderer。
+  - 左侧为大 visual/demo。
+  - 右侧为两个说明盒；第二个说明盒必须是 `Interaction point` / `互动点`。
+- 右侧文字栏：
+  - `commentarySections` 至少包含 `Historical Background`、`Core Idea`、`Long-Term Legacy`。
+  - `Long-Term Legacy / 长期影响` 必须说明专家如何评价该成就，建议包含 “Experts generally treat...” / “专家通常...”。
+- 双语：
+  - 所有页面可见字段必须有真实 `{en, zh}` 内容。
+  - 不要把英文直接复制到 `zh` 字段，除非是通用专名、缩写或模型名（如 ReLU、LeNet、AlexNet、arXiv）。
+
 ### 当前事件（5 分类，21 个）
 
 - **AI创世纪**: 1956-dartmouth, 1957-perceptron, 1969-ai-winter

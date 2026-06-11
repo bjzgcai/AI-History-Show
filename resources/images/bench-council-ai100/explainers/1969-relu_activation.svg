@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="ReLU activation">
+  <rect width="720" height="420" fill="#0f172a"/>
+  <text x="42" y="58" fill="#f59e0b" font-family="Arial" font-size="30" font-weight="700">Rectified linear activation</text>
+  <g transform="translate(90 84)">
+    <path d="M0 250 H520 M260 300 V20" stroke="#64748b" stroke-width="4"/>
+    <path d="M40 250 H260 L505 55" fill="none" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M52 66 L52 250 H508" fill="none" stroke="#334155" stroke-width="2"/>
+    <text x="518" y="266" fill="#cbd5e1" font-family="Arial" font-size="22">x</text>
+    <text x="270" y="34" fill="#cbd5e1" font-family="Arial" font-size="22">f(x)</text>
+    <text x="330" y="112" fill="#d1fae5" font-family="Arial" font-size="32" font-weight="700">max(0, x)</text>
+    <rect x="58" y="178" width="132" height="42" rx="10" fill="#1f2937" stroke="#ef4444"/>
+    <text x="124" y="206" fill="#fee2e2" font-family="Arial" font-size="20" text-anchor="middle">clipped</text>
+  </g>
+</svg>

@@ -24609,6 +24609,4248 @@ const milestones = [
         ]
       }
     ]
+  },
+  {
+    "id": "milestone-ai100-1943-mcculloch-pitts-neuron",
+    "year": 1943,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "McCulloch-Pitts Neuron",
+      "zh": "麦卡洛克-皮茨神经元"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Illinois at Chicago",
+        "zh": "伊利诺伊大学芝加哥分校"
+      },
+      "country": {
+        "en": "Chicago, United States",
+        "zh": "美国芝加哥"
+      },
+      "coordinates": [
+        41.8719,
+        -87.6493
+      ]
+    },
+    "description": {
+      "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>",
+      "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Warren McCulloch",
+          "zh": "沃伦·麦卡洛克"
+        },
+        "role": {
+          "en": "Co-author of the logical neuron model",
+          "zh": "逻辑神经元模型共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Walter Pitts",
+          "zh": "沃尔特·皮茨"
+        },
+        "role": {
+          "en": "Co-author of the logical neuron model",
+          "zh": "逻辑神经元模型共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A logical calculus of the ideas immanent in nervous activity\"",
+      "zh": "\"神经活动内在观念的逻辑演算\""
+    },
+    "quoteAttribution": {
+      "en": "《A Logical Calculus of Ideas Immanent in Nervous Activity》, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+      "zh": "《神经活动内在观念的逻辑演算》, 沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+        "zh": "神经活动内在观念的逻辑演算"
+      },
+      "workAuthors": {
+        "en": "Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+        "zh": "沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF02478259"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.",
+          "zh": "沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Inputs pass through weighted thresholds, producing logical output states.",
+          "zh": "输入经过加权阈值，产生逻辑输出状态。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the McCulloch-Pitts neuron as a founding abstraction for neural computation rather than a realistic brain model. Its long-term legacy is the threshold-unit idea that linked logic, circuits, and later artificial neural networks.",
+          "zh": "专家通常把麦卡洛克-皮茨神经元视为神经计算的奠基抽象，而不是逼真的大脑模型。它的长期影响在于阈值单元思想把逻辑、电路和后来的人工神经网络连接起来。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg",
+        "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg": {
+          "caption": {
+            "en": "Walter Pitts at a blackboard",
+            "zh": "黑板前的沃尔特·皮茨"
+          },
+          "subcaption": {
+            "en": "Co-author of the McCulloch-Pitts neuron.",
+            "zh": "麦卡洛克-皮茨神经元共同作者。"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg": {
+          "caption": {
+            "en": "Threshold logic neuron",
+            "zh": "阈值逻辑神经元"
+          },
+          "subcaption": {
+            "en": "Original local explainer of binary input, threshold, and output.",
+            "zh": "关于二值输入、阈值和输出的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Bulletin of Mathematical Biophysics",
+            "zh": "Bulletin of Mathematical Biophysics"
+          },
+          "source": "https://doi.org/10.1007/BF02478259",
+          "sourceUrl": "https://doi.org/10.1007/BF02478259",
+          "originalImageUrl": "https://doi.org/10.1007/BF02478259",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Binary threshold logic",
+        "zh": "二值阈值逻辑"
+      },
+      "artifact": {
+        "en": "Formal neuron model",
+        "zh": "形式化神经元模型"
+      },
+      "material": {
+        "en": "1943 Bulletin of Mathematical Biophysics paper",
+        "zh": "1943 年《数学生物物理学通报》论文"
+      },
+      "demo": {
+        "en": "Inputs pass through weighted thresholds, producing logical output states.",
+        "zh": "输入经过加权阈值，产生逻辑输出状态。"
+      },
+      "visual": "perceptron",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Threshold Unit",
+            "zh": "阈值单元"
+          },
+          "text": {
+            "en": "A neuron fires when combined inputs cross a threshold.",
+            "zh": "当组合输入越过阈值时，神经元被激活。"
+          }
+        },
+        {
+          "label": {
+            "en": "Logic and Brains",
+            "zh": "逻辑与大脑"
+          },
+          "text": {
+            "en": "Neural activity was expressed as a calculus of propositions.",
+            "zh": "神经活动被表示为命题演算。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Perceptron",
+          "zh": "感知机"
+        },
+        {
+          "en": "Back-propagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "Neural networks",
+          "zh": "神经网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Inputs",
+          "zh": "输入"
+        },
+        {
+          "en": "Threshold",
+          "zh": "阈值"
+        },
+        {
+          "en": "Logical output",
+          "zh": "逻辑输出"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Springer",
+            "zh": "Springer"
+          },
+          "title": {
+            "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+            "zh": "神经活动内在观念的逻辑演算"
+          },
+          "description": {
+            "en": "Canonical paper introducing the formal neuron model.",
+            "zh": "介绍形式化神经元模型的经典论文。"
+          },
+          "url": "https://doi.org/10.1007/BF02478259",
+          "source": "https://doi.org/10.1007/BF02478259",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open DOI",
+            "zh": "打开 DOI"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+            "zh": "《神经活动中内在观念的逻辑演算》"
+          },
+          "url": "https://doi.org/10.1007/BF02478259"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "McCulloch-Pitts neuron overview",
+            "zh": "麦卡洛克-皮茨神经元概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity"
+        },
+        {
+          "type": {
+            "en": "Context",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "History of Information entry",
+            "zh": "History of Information 历史条目"
+          },
+          "url": "https://www.historyofinformation.com/detail.php?id=634"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Walter Pitts blackboard photo",
+            "zh": "沃尔特·皮茨黑板照片"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg"
+    },
+    "quiz": {
+      "id": "ai100-1943-mcculloch-pitts-neuron-quiz-1",
+      "question": {
+        "en": "What simple idea did the McCulloch-Pitts neuron model use?",
+        "zh": "麦卡洛克-皮茨神经元模型使用了什么简单思想？"
+      },
+      "options": [
+        {
+          "en": "A neuron turns on when inputs cross a threshold",
+          "zh": "输入超过阈值时，神经元被激活"
+        },
+        {
+          "en": "A camera stores every possible image",
+          "zh": "相机存储所有可能图像"
+        },
+        {
+          "en": "A chessboard always chooses the same move",
+          "zh": "棋盘总是选择同一步"
+        },
+        {
+          "en": "A database deletes every rule",
+          "zh": "数据库删除所有规则"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The model treated a neuron like a logical threshold unit: enough input produces an on/off output.",
+        "zh": "这个模型把神经元看作逻辑阈值单元：输入足够时产生开/关输出。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "neural-network",
+        "threshold"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1943-mcculloch-pitts-neuron-quiz-1",
+        "question": {
+          "en": "What simple idea did the McCulloch-Pitts neuron model use?",
+          "zh": "麦卡洛克-皮茨神经元模型使用了什么简单思想？"
+        },
+        "options": [
+          {
+            "en": "A neuron turns on when inputs cross a threshold",
+            "zh": "输入超过阈值时，神经元被激活"
+          },
+          {
+            "en": "A camera stores every possible image",
+            "zh": "相机存储所有可能图像"
+          },
+          {
+            "en": "A chessboard always chooses the same move",
+            "zh": "棋盘总是选择同一步"
+          },
+          {
+            "en": "A database deletes every rule",
+            "zh": "数据库删除所有规则"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The model treated a neuron like a logical threshold unit: enough input produces an on/off output.",
+          "zh": "这个模型把神经元看作逻辑阈值单元：输入足够时产生开/关输出。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "neural-network",
+          "threshold"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1951-snarc",
+    "year": 1951,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "SNARC",
+      "zh": "SNARC"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Princeton University",
+        "zh": "普林斯顿大学"
+      },
+      "country": {
+        "en": "Princeton, United States",
+        "zh": "美国普林斯顿"
+      },
+      "coordinates": [
+        40.3431,
+        -74.6551
+      ]
+    },
+    "description": {
+      "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>",
+      "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Marvin Minsky",
+          "zh": "马文·明斯基"
+        },
+        "role": {
+          "en": "Co-builder of SNARC",
+          "zh": "SNARC 共同建造者"
+        },
+        "avatar": "resources/images/figures/marvin-minsky.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Dean Edmonds",
+          "zh": "迪恩·埃德蒙兹"
+        },
+        "role": {
+          "en": "Co-builder of SNARC",
+          "zh": "SNARC 共同建造者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"stochastic neural analog reinforcement calculator\"",
+      "zh": "\"随机神经模拟强化计算器\""
+    },
+    "quoteAttribution": {
+      "en": "《SNARC historical records》, Marvin Minsky and Dean Edmonds, 1951",
+      "zh": "《SNARC 历史记录》, 马文·明斯基、迪恩·埃德蒙兹，1951"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "SNARC historical records",
+        "zh": "SNARC 历史记录"
+      },
+      "workAuthors": {
+        "en": "Marvin Minsky and Dean Edmonds, 1951",
+        "zh": "马文·明斯基、迪恩·埃德蒙兹，1951"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://history-computer.com/snarc/"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.",
+          "zh": "SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+          "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat SNARC as historically important early neural hardware, even though it was not a scalable general AI system. Its long-term legacy is the early demonstration that learning, reward, and neural-style machinery could be combined in a physical device.",
+          "zh": "专家通常把 SNARC 视为具有历史意义的早期神经硬件，尽管它并不是可扩展的通用 AI 系统。它的长期影响在于很早就展示了学习、奖励和神经式机器可以结合到一个物理装置中。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/marvin-minsky.jpg",
+        "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/marvin-minsky.jpg": {
+          "caption": {
+            "en": "Marvin Minsky portrait",
+            "zh": "马文·明斯基肖像"
+          },
+          "subcaption": {
+            "en": "Co-builder of SNARC and later AI pioneer.",
+            "zh": "SNARC 共同建造者，后来的 AI 先驱。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/marvin-minsky.jpg",
+          "sourceUrl": "resources/images/figures/marvin-minsky.jpg",
+          "originalImageUrl": "resources/images/figures/marvin-minsky.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg": {
+          "caption": {
+            "en": "Maze reinforcement loop",
+            "zh": "迷宫强化循环"
+          },
+          "subcaption": {
+            "en": "Original local explainer of SNARC-style reward learning.",
+            "zh": "关于 SNARC 式奖励学习的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "SNARC historical documentation",
+            "zh": "SNARC 历史资料"
+          },
+          "source": "https://history-computer.com/snarc/",
+          "sourceUrl": "https://history-computer.com/snarc/",
+          "originalImageUrl": "https://history-computer.com/snarc/",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Analog reinforcement machine",
+        "zh": "模拟强化学习机器"
+      },
+      "artifact": {
+        "en": "Early neural learning hardware",
+        "zh": "早期神经学习硬件"
+      },
+      "material": {
+        "en": "SNARC historical documentation",
+        "zh": "SNARC 历史资料"
+      },
+      "demo": {
+        "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+        "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+      },
+      "visual": "snarc",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Analog Neurons",
+            "zh": "模拟神经元"
+          },
+          "text": {
+            "en": "Hardware circuits approximated neural behavior before digital deep learning.",
+            "zh": "在数字深度学习之前，硬件电路用来近似神经行为。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reinforcement",
+            "zh": "强化"
+          },
+          "text": {
+            "en": "Reward feedback adjusted the machine behavior over trials.",
+            "zh": "奖励反馈在多次试验中调整机器行为。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Reinforcement learning",
+          "zh": "强化学习"
+        },
+        {
+          "en": "Perceptron",
+          "zh": "感知机"
+        },
+        {
+          "en": "Neural networks",
+          "zh": "神经网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Maze state",
+          "zh": "迷宫状态"
+        },
+        {
+          "en": "Reward signal",
+          "zh": "奖励信号"
+        },
+        {
+          "en": "Adjusted path",
+          "zh": "调整后的路径"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "History Computer",
+            "zh": "History Computer"
+          },
+          "title": {
+            "en": "SNARC",
+            "zh": "SNARC"
+          },
+          "description": {
+            "en": "Historical article on the stochastic neural analog reinforcement calculator.",
+            "zh": "关于随机神经模拟强化计算机的历史文章。"
+          },
+          "url": "https://history-computer.com/snarc/",
+          "source": "https://history-computer.com/snarc/",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Archive",
+            "zh": "档案"
+          },
+          "label": {
+            "en": "SNARC history overview",
+            "zh": "SNARC 历史概览"
+          },
+          "url": "https://history-computer.com/snarc/"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "History of AI SNARC article",
+            "zh": "History of AI 的 SNARC 文章"
+          },
+          "url": "https://historyof.ai/snarc/"
+        },
+        {
+          "type": {
+            "en": "Context",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Stochastic Neural Analog Reinforcement Calculator overview",
+            "zh": "随机神经模拟强化计算机概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator"
+        },
+        {
+          "type": {
+            "en": "Retrospective",
+            "zh": "回顾"
+          },
+          "label": {
+            "en": "History of Information SNARC entry",
+            "zh": "History of Information 的 SNARC 条目"
+          },
+          "url": "https://www.historyofinformation.com/detail.php?id=3884"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg"
+    },
+    "quiz": {
+      "id": "ai100-1951-snarc-quiz-1",
+      "question": {
+        "en": "What was SNARC built to demonstrate?",
+        "zh": "SNARC 主要用来展示什么？"
+      },
+      "options": [
+        {
+          "en": "Reward-driven learning in early neural-style hardware",
+          "zh": "早期神经式硬件中的奖励驱动学习"
+        },
+        {
+          "en": "A modern image search engine",
+          "zh": "现代图像搜索引擎"
+        },
+        {
+          "en": "A language model writing poems",
+          "zh": "会写诗的语言模型"
+        },
+        {
+          "en": "A fixed paper bibliography",
+          "zh": "固定论文目录"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "SNARC modeled maze learning with reward signals and analog neural-style machinery.",
+        "zh": "SNARC 用奖励信号和模拟神经式机器来建模迷宫学习。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "hardware",
+        "reinforcement"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1951-snarc-quiz-1",
+        "question": {
+          "en": "What was SNARC built to demonstrate?",
+          "zh": "SNARC 主要用来展示什么？"
+        },
+        "options": [
+          {
+            "en": "Reward-driven learning in early neural-style hardware",
+            "zh": "早期神经式硬件中的奖励驱动学习"
+          },
+          {
+            "en": "A modern image search engine",
+            "zh": "现代图像搜索引擎"
+          },
+          {
+            "en": "A language model writing poems",
+            "zh": "会写诗的语言模型"
+          },
+          {
+            "en": "A fixed paper bibliography",
+            "zh": "固定论文目录"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SNARC modeled maze learning with reward signals and analog neural-style machinery.",
+          "zh": "SNARC 用奖励信号和模拟神经式机器来建模迷宫学习。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "hardware",
+          "reinforcement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1969-relu",
+    "year": 1969,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "ReLU",
+      "zh": "ReLU"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "NHK Broadcasting Science Research Laboratories",
+        "zh": "NHK 广播科学研究实验室"
+      },
+      "country": {
+        "en": "Tokyo, Japan",
+        "zh": "日本东京"
+      },
+      "coordinates": [
+        35.6762,
+        139.6503
+      ]
+    },
+    "description": {
+      "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>",
+      "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Kunihiko Fukushima",
+          "zh": "福岛邦彦"
+        },
+        "role": {
+          "en": "Early neural vision researcher",
+          "zh": "早期神经视觉研究者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "Yoshua Bengio"
+        },
+        "role": {
+          "en": "Co-author of later deep rectifier analysis",
+          "zh": "后续深度整流函数分析共同作者"
+        },
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"rectified linear units\"",
+      "zh": "\"整流线性单元\""
+    },
+    "quoteAttribution": {
+      "en": "《Deep Sparse Rectifier Neural Networks》, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+      "zh": "《深度稀疏整流神经网络》, Xavier Glorot、Antoine Bordes、Yoshua Bengio，AISTATS，2011"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Sparse Rectifier Neural Networks",
+        "zh": "深度稀疏整流神经网络"
+      },
+      "workAuthors": {
+        "en": "Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+        "zh": "Xavier Glorot、Antoine Bordes、Yoshua Bengio，AISTATS，2011"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.",
+          "zh": "整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+          "zh": "负响应被截断为零，正响应则线性通过。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat ReLU as a simple engineering choice whose impact was larger than its formula suggests. Its long-term legacy is the non-saturating activation pattern that helped deep networks train reliably and became a default component of modern architectures.",
+          "zh": "专家通常把 ReLU 视为一个简单工程选择，但它的影响远大于公式本身。它的长期影响在于非饱和激活模式帮助深层网络更可靠地训练，并成为现代架构的默认组件。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
+          "caption": {
+            "en": "Yoshua Bengio portrait",
+            "zh": "Yoshua Bengio 肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of influential rectifier analysis.",
+            "zh": "有影响力的整流函数分析共同作者。"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg": {
+          "caption": {
+            "en": "Rectified activation",
+            "zh": "整流激活"
+          },
+          "subcaption": {
+            "en": "Original local explainer of the max(0, x) activation.",
+            "zh": "关于 max(0, x) 激活函数的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "AISTATS",
+            "zh": "AISTATS"
+          },
+          "source": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "originalImageUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Piecewise-linear activation",
+        "zh": "分段线性激活"
+      },
+      "artifact": {
+        "en": "Rectified activation function",
+        "zh": "整流激活函数"
+      },
+      "material": {
+        "en": "Neural vision and deep rectifier literature",
+        "zh": "神经视觉与深度整流函数文献"
+      },
+      "demo": {
+        "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+        "zh": "负响应被截断为零，正响应则线性通过。"
+      },
+      "visual": "relu",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Non-saturation",
+            "zh": "非饱和"
+          },
+          "text": {
+            "en": "Positive activations keep gradients from shrinking as quickly.",
+            "zh": "正激活让梯度不那么容易快速缩小。"
+          }
+        },
+        {
+          "label": {
+            "en": "Sparse Activity",
+            "zh": "稀疏活动"
+          },
+          "text": {
+            "en": "Many neurons output exactly zero, simplifying representation.",
+            "zh": "许多神经元输出正好为零，从而简化表示。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Neocognitron",
+          "zh": "新认知机"
+        },
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Japan",
+          "zh": "日本"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input",
+          "zh": "输入"
+        },
+        {
+          "en": "max(0, x)",
+          "zh": "max(0, x)"
+        },
+        {
+          "en": "Sparse activation",
+          "zh": "稀疏激活"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "Deep Sparse Rectifier Neural Networks",
+            "zh": "深度稀疏整流神经网络"
+          },
+          "description": {
+            "en": "Article connecting rectifiers to deep sparse neural networks.",
+            "zh": "将整流函数与深度稀疏神经网络联系起来的文章。"
+          },
+          "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "source": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Deep Sparse Rectifier Neural Networks",
+            "zh": "《深度稀疏整流神经网络》"
+          },
+          "url": "https://proceedings.mlr.press/v15/glorot11a.html"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+            "zh": "《整流线性单元改进受限玻尔兹曼机》"
+          },
+          "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Rectifier activation overview",
+            "zh": "整流激活函数概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Yoshua Bengio profile at Mila",
+            "zh": "Mila 的 Yoshua Bengio 资料"
+          },
+          "url": "https://mila.quebec/en/directory/yoshua-bengio"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg"
+    },
+    "quiz": {
+      "id": "ai100-1969-relu-quiz-1",
+      "question": {
+        "en": "What does ReLU do to negative input values?",
+        "zh": "ReLU 会怎样处理负输入值？"
+      },
+      "options": [
+        {
+          "en": "It clips them to zero",
+          "zh": "把它们截断为 0"
+        },
+        {
+          "en": "It turns them into images",
+          "zh": "把它们变成图像"
+        },
+        {
+          "en": "It stores them as chess moves",
+          "zh": "把它们存成棋步"
+        },
+        {
+          "en": "It always doubles them",
+          "zh": "总是把它们翻倍"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "ReLU is max(0, x): negative values become zero, and positive values pass through.",
+        "zh": "ReLU 是 max(0, x)：负值变成 0，正值直接通过。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "activation",
+        "deep-learning"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1969-relu-quiz-1",
+        "question": {
+          "en": "What does ReLU do to negative input values?",
+          "zh": "ReLU 会怎样处理负输入值？"
+        },
+        "options": [
+          {
+            "en": "It clips them to zero",
+            "zh": "把它们截断为 0"
+          },
+          {
+            "en": "It turns them into images",
+            "zh": "把它们变成图像"
+          },
+          {
+            "en": "It stores them as chess moves",
+            "zh": "把它们存成棋步"
+          },
+          {
+            "en": "It always doubles them",
+            "zh": "总是把它们翻倍"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "ReLU is max(0, x): negative values become zero, and positive values pass through.",
+          "zh": "ReLU 是 max(0, x)：负值变成 0，正值直接通过。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "activation",
+          "deep-learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1989-lenet",
+    "year": 1989,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "LeNet",
+      "zh": "LeNet"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Bell Labs",
+        "zh": "贝尔实验室"
+      },
+      "country": {
+        "en": "New Jersey, United States",
+        "zh": "美国新泽西州"
+      },
+      "coordinates": [
+        40.684,
+        -74.401
+      ]
+    },
+    "description": {
+      "en": "<p>Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.</p>",
+      "zh": "<p>Yann LeCun 及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Yann LeCun",
+          "zh": "Yann LeCun"
+        },
+        "role": {
+          "en": "LeNet lead researcher",
+          "zh": "LeNet 主要研究者"
+        },
+        "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+        "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Backpropagation Applied to Handwritten Zip Code Recognition\"",
+      "zh": "\"反向传播应用于手写邮编识别\""
+    },
+    "quoteAttribution": {
+      "en": "《Backpropagation Applied to Handwritten Zip Code Recognition》, Yann LeCun et al., Neural Computation, 1989",
+      "zh": "《反向传播应用于手写邮编识别》, Yann LeCun 等，《Neural Computation》，1989"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "zh": "反向传播应用于手写邮编识别"
+      },
+      "workAuthors": {
+        "en": "Yann LeCun et al., Neural Computation, 1989",
+        "zh": "Yann LeCun 等，《Neural Computation》，1989"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.",
+          "zh": "Yann LeCun 及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+          "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat LeNet as a canonical early proof that convolution, weight sharing, and backpropagation could solve real perception tasks. Its long-term legacy is the end-to-end CNN pattern that later scaled into modern computer vision.",
+          "zh": "专家通常把 LeNet 视为早期经典证据，证明卷积、权重共享和反向传播可以解决真实感知任务。它的长期影响在于端到端 CNN 模式后来扩展成现代计算机视觉的基础。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+        "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
+          "caption": {
+            "en": "Yann LeCun portrait",
+            "zh": "Yann LeCun 肖像"
+          },
+          "subcaption": {
+            "en": "Lead researcher behind LeNet and early CNN handwriting systems.",
+            "zh": "LeNet 和早期 CNN 手写识别系统的主要研究者。"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
+          "caption": {
+            "en": "ZIP-code CNN pipeline",
+            "zh": "邮编 CNN 流程"
+          },
+          "subcaption": {
+            "en": "Original local explainer of LeNet-style recognition.",
+            "zh": "关于 LeNet 式识别的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Neural Computation",
+            "zh": "Neural Computation"
+          },
+          "source": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "originalImageUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Convolutional character recognition",
+        "zh": "卷积字符识别"
+      },
+      "artifact": {
+        "en": "LeNet handwritten digit network",
+        "zh": "LeNet 手写数字网络"
+      },
+      "material": {
+        "en": "Neural Computation paper",
+        "zh": "《Neural Computation》论文"
+      },
+      "demo": {
+        "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+        "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+      },
+      "visual": "lenet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Shared Weights",
+            "zh": "权重共享"
+          },
+          "text": {
+            "en": "The same filters scan across the image.",
+            "zh": "相同滤波器在整张图像上扫描。"
+          }
+        },
+        {
+          "label": {
+            "en": "End-to-end Learning",
+            "zh": "端到端学习"
+          },
+          "text": {
+            "en": "Feature extraction and classification are trained together.",
+            "zh": "特征提取和分类一起训练。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "CNN",
+          "zh": "CNN"
+        },
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Handwritten image",
+          "zh": "手写图像"
+        },
+        {
+          "en": "Convolution + pooling",
+          "zh": "卷积 + 池化"
+        },
+        {
+          "en": "Digit class",
+          "zh": "数字类别"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "MIT Press Direct",
+            "zh": "MIT Press Direct"
+          },
+          "title": {
+            "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+            "zh": "反向传播应用于手写邮编识别"
+          },
+          "description": {
+            "en": "Canonical LeNet paper record.",
+            "zh": "LeNet 经典论文记录。"
+          },
+          "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "source": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open DOI",
+            "zh": "打开 DOI"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+            "zh": "《反向传播应用于手写邮编识别》"
+          },
+          "url": "https://doi.org/10.1162/neco.1989.1.4.541"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "LeNet-5 demos and documentation",
+            "zh": "LeNet-5 演示与文档"
+          },
+          "url": "https://yann.lecun.com/exdb/lenet/"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Gradient-Based Learning Applied to Document Recognition",
+            "zh": "《基于梯度的文档识别学习》"
+          },
+          "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Yann LeCun's home page",
+            "zh": "Yann LeCun 主页"
+          },
+          "url": "https://yann.lecun.com/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg"
+    },
+    "quiz": {
+      "id": "ai100-1989-lenet-quiz-1",
+      "question": {
+        "en": "What kind of task made LeNet famous?",
+        "zh": "LeNet 因什么任务而闻名？"
+      },
+      "options": [
+        {
+          "en": "Reading handwritten digits or ZIP codes",
+          "zh": "识别手写数字或邮编"
+        },
+        {
+          "en": "Solving every math theorem",
+          "zh": "证明所有数学定理"
+        },
+        {
+          "en": "Playing Go with tree search only",
+          "zh": "只用树搜索下围棋"
+        },
+        {
+          "en": "Sorting books by cover color",
+          "zh": "按封面颜色给书排序"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "LeNet showed that convolutional networks trained end-to-end could recognize handwriting.",
+        "zh": "LeNet 展示了端到端训练的卷积网络可以识别手写内容。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "cnn",
+        "handwriting"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1989-lenet-quiz-1",
+        "question": {
+          "en": "What kind of task made LeNet famous?",
+          "zh": "LeNet 因什么任务而闻名？"
+        },
+        "options": [
+          {
+            "en": "Reading handwritten digits or ZIP codes",
+            "zh": "识别手写数字或邮编"
+          },
+          {
+            "en": "Solving every math theorem",
+            "zh": "证明所有数学定理"
+          },
+          {
+            "en": "Playing Go with tree search only",
+            "zh": "只用树搜索下围棋"
+          },
+          {
+            "en": "Sorting books by cover color",
+            "zh": "按封面颜色给书排序"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "LeNet showed that convolutional networks trained end-to-end could recognize handwriting.",
+          "zh": "LeNet 展示了端到端训练的卷积网络可以识别手写内容。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "cnn",
+          "handwriting"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2000-neural-language-model",
+    "year": 2000,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Neural Language Model",
+      "zh": "神经语言模型"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Montreal",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Montreal, Canada",
+        "zh": "加拿大蒙特利尔"
+      },
+      "coordinates": [
+        45.5019,
+        -73.5674
+      ]
+    },
+    "description": {
+      "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>",
+      "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "Yoshua Bengio"
+        },
+        "role": {
+          "en": "Lead author of the neural probabilistic language model",
+          "zh": "神经概率语言模型主要作者"
+        },
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A Neural Probabilistic Language Model\"",
+      "zh": "\"神经概率语言模型\""
+    },
+    "quoteAttribution": {
+      "en": "《A Neural Probabilistic Language Model》, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+      "zh": "《神经概率语言模型》, Yoshua Bengio、Rejean Ducharme、Pascal Vincent、Christian Janvin，JMLR，2003"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "A Neural Probabilistic Language Model",
+        "zh": "神经概率语言模型"
+      },
+      "workAuthors": {
+        "en": "Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+        "zh": "Yoshua Bengio、Rejean Ducharme、Pascal Vincent、Christian Janvin，JMLR，2003"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.",
+          "zh": "神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+          "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat neural probabilistic language modeling as an important bridge from sparse n-gram methods to learned distributed representations. Its long-term legacy is the idea that language prediction can learn reusable word vectors and context-sensitive representations.",
+          "zh": "专家通常把神经概率语言模型视为从稀疏 n-gram 方法走向学习型分布式表示的重要桥梁。它的长期影响在于证明语言预测可以学习可复用的词向量和上下文表示。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
+          "caption": {
+            "en": "Yoshua Bengio portrait",
+            "zh": "Yoshua Bengio 肖像"
+          },
+          "subcaption": {
+            "en": "Lead author of the neural probabilistic language model.",
+            "zh": "神经概率语言模型主要作者。"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg": {
+          "caption": {
+            "en": "Context prediction",
+            "zh": "上下文预测"
+          },
+          "subcaption": {
+            "en": "Original local explainer of neural language modeling.",
+            "zh": "关于神经语言建模的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "JMLR",
+            "zh": "JMLR"
+          },
+          "source": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "originalImageUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Distributed word embeddings for language prediction",
+        "zh": "用于语言预测的分布式词嵌入"
+      },
+      "artifact": {
+        "en": "Neural probabilistic language model",
+        "zh": "神经概率语言模型"
+      },
+      "material": {
+        "en": "JMLR paper",
+        "zh": "JMLR 论文"
+      },
+      "demo": {
+        "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+        "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+      },
+      "visual": "neuralLm",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Distributed Representation",
+            "zh": "分布式表示"
+          },
+          "text": {
+            "en": "Words become dense vectors rather than isolated IDs.",
+            "zh": "词不再是孤立 ID，而是稠密向量。"
+          }
+        },
+        {
+          "label": {
+            "en": "Next-word Prediction",
+            "zh": "下一个词预测"
+          },
+          "text": {
+            "en": "The model learns language statistics by predicting continuation.",
+            "zh": "模型通过预测后续内容来学习语言统计规律。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Word2vec",
+          "zh": "Word2vec"
+        },
+        {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        {
+          "en": "GPT",
+          "zh": "GPT"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Word vectors",
+          "zh": "词向量"
+        },
+        {
+          "en": "Context window",
+          "zh": "上下文窗口"
+        },
+        {
+          "en": "Next word",
+          "zh": "下一个词"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "JMLR",
+            "zh": "JMLR"
+          },
+          "title": {
+            "en": "A Neural Probabilistic Language Model",
+            "zh": "神经概率语言模型"
+          },
+          "description": {
+            "en": "Open paper record for the neural probabilistic language model.",
+            "zh": "神经概率语言模型的开放论文记录。"
+          },
+          "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "source": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Neural Probabilistic Language Model",
+            "zh": "《神经概率语言模型》"
+          },
+          "url": "https://www.jmlr.org/papers/v3/bengio03a.html"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "JMLR full paper PDF",
+            "zh": "JMLR 完整论文 PDF"
+          },
+          "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf"
+        },
+        {
+          "type": {
+            "en": "Publication index",
+            "zh": "论文索引"
+          },
+          "label": {
+            "en": "DBLP record",
+            "zh": "DBLP 论文记录"
+          },
+          "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Yoshua Bengio profile at Mila",
+            "zh": "Mila 的 Yoshua Bengio 资料"
+          },
+          "url": "https://mila.quebec/en/directory/yoshua-bengio"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg"
+    },
+    "quiz": {
+      "id": "ai100-2000-neural-language-model-quiz-1",
+      "question": {
+        "en": "What did neural language models learn for words?",
+        "zh": "神经语言模型为词学习了什么？"
+      },
+      "options": [
+        {
+          "en": "Dense vector representations",
+          "zh": "稠密向量表示"
+        },
+        {
+          "en": "Only font colors",
+          "zh": "只有字体颜色"
+        },
+        {
+          "en": "Physical keyboard weight",
+          "zh": "键盘的物理重量"
+        },
+        {
+          "en": "A fixed first sentence",
+          "zh": "固定的第一句话"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Neural language models map words into learned vectors and use context to predict language.",
+        "zh": "神经语言模型把词映射为学习得到的向量，并用上下文预测语言。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "language",
+        "embeddings"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2000-neural-language-model-quiz-1",
+        "question": {
+          "en": "What did neural language models learn for words?",
+          "zh": "神经语言模型为词学习了什么？"
+        },
+        "options": [
+          {
+            "en": "Dense vector representations",
+            "zh": "稠密向量表示"
+          },
+          {
+            "en": "Only font colors",
+            "zh": "只有字体颜色"
+          },
+          {
+            "en": "Physical keyboard weight",
+            "zh": "键盘的物理重量"
+          },
+          {
+            "en": "A fixed first sentence",
+            "zh": "固定的第一句话"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Neural language models map words into learned vectors and use context to predict language.",
+          "zh": "神经语言模型把词映射为学习得到的向量，并用上下文预测语言。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "language",
+          "embeddings"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2012-alexnet",
+    "year": 2012,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "AlexNet",
+      "zh": "AlexNet"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Toronto, Canada",
+        "zh": "加拿大多伦多"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "en": "<p>AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.</p>",
+      "zh": "<p>AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alex Krizhevsky",
+          "zh": "Alex Krizhevsky"
+        },
+        "role": {
+          "en": "AlexNet lead author",
+          "zh": "AlexNet 主要作者"
+        },
+        "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
+        "avatarStyle": "transform: scale(1.08); transform-origin: 50% 47%;",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "Geoffrey Hinton"
+        },
+        "role": {
+          "en": "Co-author and advisor",
+          "zh": "共同作者与导师"
+        },
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"ImageNet Classification with Deep Convolutional Neural Networks\"",
+      "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
+    },
+    "quoteAttribution": {
+      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, Alex Krizhevsky、Ilya Sutskever、Geoffrey Hinton，NeurIPS，2012"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+      },
+      "workAuthors": {
+        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+        "zh": "Alex Krizhevsky、Ilya Sutskever、Geoffrey Hinton，NeurIPS，2012"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
+          "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research.",
+          "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/alex-krizhevsky.jpg",
+        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png"
+      ],
+      "imageMeta": {
+        "resources/images/figures/alex-krizhevsky.jpg": {
+          "caption": {
+            "en": "Alex Krizhevsky portrait",
+            "zh": "Alex Krizhevsky 肖像"
+          },
+          "subcaption": {
+            "en": "Lead author of AlexNet.",
+            "zh": "AlexNet 主要作者。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/alex-krizhevsky.jpg",
+          "sourceUrl": "resources/images/figures/alex-krizhevsky.jpg",
+          "originalImageUrl": "resources/images/figures/alex-krizhevsky.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
+          "caption": {
+            "en": "AlexNet architecture",
+            "zh": "AlexNet 架构"
+          },
+          "subcaption": {
+            "en": "Architecture visual used by the project.",
+            "zh": "项目使用的架构图。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+          "sourceUrl": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+          "originalImageUrl": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "GPU-trained deep convolutional network",
+        "zh": "GPU 训练的深度卷积网络"
+      },
+      "artifact": {
+        "en": "ImageNet-winning CNN",
+        "zh": "赢得 ImageNet 的卷积网络"
+      },
+      "material": {
+        "en": "NeurIPS paper",
+        "zh": "NeurIPS 论文"
+      },
+      "demo": {
+        "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+        "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+      },
+      "visual": "alexnet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "GPU Scale",
+            "zh": "GPU 规模化"
+          },
+          "text": {
+            "en": "Parallel GPU training made larger CNNs practical.",
+            "zh": "并行 GPU 训练让更大的 CNN 变得可行。"
+          }
+        },
+        {
+          "label": {
+            "en": "ImageNet Breakthrough",
+            "zh": "ImageNet 突破"
+          },
+          "text": {
+            "en": "The model sharply reduced classification error on ILSVRC.",
+            "zh": "该模型大幅降低了 ILSVRC 分类错误率。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Images",
+          "zh": "图像"
+        },
+        {
+          "en": "Deep CNN",
+          "zh": "深度 CNN"
+        },
+        {
+          "en": "Classes",
+          "zh": "类别"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "NeurIPS",
+            "zh": "NeurIPS"
+          },
+          "title": {
+            "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+          },
+          "description": {
+            "en": "Paper record for the AlexNet breakthrough.",
+            "zh": "AlexNet 突破性工作的论文记录。"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "source": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "NeurIPS full paper PDF",
+            "zh": "NeurIPS 完整论文 PDF"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "ImageNet 大规模视觉识别挑战赛"
+          },
+          "url": "https://www.image-net.org/challenges/LSVRC/index.php"
+        },
+        {
+          "type": {
+            "en": "Context",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "AlexNet overview",
+            "zh": "AlexNet 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/AlexNet"
+        }
+      ],
+      "demoImage": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png"
+    },
+    "quiz": {
+      "id": "ai100-2012-alexnet-quiz-1",
+      "question": {
+        "en": "Why was AlexNet a major computer-vision breakthrough?",
+        "zh": "为什么 AlexNet 是计算机视觉的重要突破？"
+      },
+      "options": [
+        {
+          "en": "It showed deep CNNs could win ImageNet at large scale",
+          "zh": "它展示了深度 CNN 可以在大规模 ImageNet 上取胜"
+        },
+        {
+          "en": "It removed all training data",
+          "zh": "它删除了所有训练数据"
+        },
+        {
+          "en": "It only counted word frequency",
+          "zh": "它只统计词频"
+        },
+        {
+          "en": "It was a theorem prover",
+          "zh": "它是一个定理证明器"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation and regularization to sharply improve ImageNet results.",
+        "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "computer-vision",
+        "deep-learning"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2012-alexnet-quiz-1",
+        "question": {
+          "en": "Why was AlexNet a major computer-vision breakthrough?",
+          "zh": "为什么 AlexNet 是计算机视觉的重要突破？"
+        },
+        "options": [
+          {
+            "en": "It showed deep CNNs could win ImageNet at large scale",
+            "zh": "它展示了深度 CNN 可以在大规模 ImageNet 上取胜"
+          },
+          {
+            "en": "It removed all training data",
+            "zh": "它删除了所有训练数据"
+          },
+          {
+            "en": "It only counted word frequency",
+            "zh": "它只统计词频"
+          },
+          {
+            "en": "It was a theorem prover",
+            "zh": "它是一个定理证明器"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation and regularization to sharply improve ImageNet results.",
+          "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "computer-vision",
+          "deep-learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-resnet",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "ResNet",
+      "zh": "ResNet"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Microsoft Research Asia",
+        "zh": "微软亚洲研究院"
+      },
+      "country": {
+        "en": "Beijing, China",
+        "zh": "中国北京"
+      },
+      "coordinates": [
+        39.9042,
+        116.4074
+      ]
+    },
+    "description": {
+      "en": "<p>ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.</p>",
+      "zh": "<p>ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Kaiming He",
+          "zh": "何恺明"
+        },
+        "role": {
+          "en": "Lead author of ResNet",
+          "zh": "ResNet 主要作者"
+        },
+        "avatar": "resources/images/figures/kaiming-he.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jian Sun",
+          "zh": "孙剑"
+        },
+        "role": {
+          "en": "Co-author of ResNet",
+          "zh": "ResNet 共同作者"
+        },
+        "avatar": "resources/images/figures/sun-jian.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Deep Residual Learning for Image Recognition\"",
+      "zh": "\"用于图像识别的深度残差学习\""
+    },
+    "quoteAttribution": {
+      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+      "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Residual Learning for Image Recognition",
+        "zh": "用于图像识别的深度残差学习"
+      },
+      "workAuthors": {
+        "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+        "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1512.03385"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.",
+          "zh": "ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A shortcut path adds the input back to a learned residual transformation.",
+          "zh": "捷径路径把输入加回学习得到的残差变换。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat ResNet as a turning point in very deep network design. Its long-term legacy is residual learning: the shortcut-connection pattern that made depth easier to optimize and became a standard backbone idea across vision and beyond.",
+          "zh": "专家通常把 ResNet 视为超深网络设计的转折点。它的长期影响在于残差学习：捷径连接让深度更容易优化，并成为视觉及其他领域的标准骨干思想。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/kaiming-he.jpg",
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png"
+      ],
+      "imageMeta": {
+        "resources/images/figures/kaiming-he.jpg": {
+          "caption": {
+            "en": "Kaiming He portrait",
+            "zh": "何恺明肖像"
+          },
+          "subcaption": {
+            "en": "Lead author of ResNet.",
+            "zh": "ResNet 主要作者。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/kaiming-he.jpg",
+          "sourceUrl": "resources/images/figures/kaiming-he.jpg",
+          "originalImageUrl": "resources/images/figures/kaiming-he.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
+          "caption": {
+            "en": "Residual block",
+            "zh": "残差模块"
+          },
+          "subcaption": {
+            "en": "Architecture visual used by the project.",
+            "zh": "项目使用的架构图。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+          "sourceUrl": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+          "originalImageUrl": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Residual learning with shortcut connections",
+        "zh": "带捷径连接的残差学习"
+      },
+      "artifact": {
+        "en": "Deep residual network",
+        "zh": "深度残差网络"
+      },
+      "material": {
+        "en": "CVPR paper",
+        "zh": "CVPR 论文"
+      },
+      "demo": {
+        "en": "A shortcut path adds the input back to a learned residual transformation.",
+        "zh": "捷径路径把输入加回学习得到的残差变换。"
+      },
+      "visual": "resnet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Shortcut Connection",
+            "zh": "捷径连接"
+          },
+          "text": {
+            "en": "The input can flow around a block and be added back.",
+            "zh": "输入可以绕过模块并被加回输出。"
+          }
+        },
+        {
+          "label": {
+            "en": "Residual Function",
+            "zh": "残差函数"
+          },
+          "text": {
+            "en": "The network learns changes to features rather than replacing them entirely.",
+            "zh": "网络学习特征变化，而不是完全替换特征。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "DenseNet",
+          "zh": "DenseNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "China",
+          "zh": "中国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input",
+          "zh": "输入"
+        },
+        {
+          "en": "Residual block",
+          "zh": "残差模块"
+        },
+        {
+          "en": "Add shortcut",
+          "zh": "加入捷径"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Deep Residual Learning for Image Recognition",
+            "zh": "用于图像识别的深度残差学习"
+          },
+          "description": {
+            "en": "Open paper for residual networks.",
+            "zh": "残差网络的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1512.03385",
+          "source": "https://arxiv.org/abs/1512.03385",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Deep Residual Learning for Image Recognition",
+            "zh": "《用于图像识别的深度残差学习》"
+          },
+          "url": "https://arxiv.org/abs/1512.03385"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "CVF Open Access paper page",
+            "zh": "CVF 开放论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "CVPR full paper PDF",
+            "zh": "CVPR 完整论文 PDF"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Kaiming He profile at MIT CSAIL",
+            "zh": "MIT CSAIL 的何恺明资料"
+          },
+          "url": "https://people.csail.mit.edu/kaiming/"
+        }
+      ],
+      "demoImage": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png"
+    },
+    "quiz": {
+      "id": "ai100-2015-resnet-quiz-1",
+      "question": {
+        "en": "What is the key idea in ResNet?",
+        "zh": "ResNet 的关键思想是什么？"
+      },
+      "options": [
+        {
+          "en": "Shortcut connections that learn residual changes",
+          "zh": "用捷径连接学习残差变化"
+        },
+        {
+          "en": "Deleting every layer after training",
+          "zh": "训练后删除每一层"
+        },
+        {
+          "en": "Using only one pixel",
+          "zh": "只使用一个像素"
+        },
+        {
+          "en": "Writing programs as S-expressions",
+          "zh": "把程序写成 S 表达式"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Residual shortcuts make very deep networks easier to optimize by adding learned changes back to the input.",
+        "zh": "残差捷径把学习到的变化加回输入，使很深的网络更容易优化。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "vision",
+        "architecture"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-resnet-quiz-1",
+        "question": {
+          "en": "What is the key idea in ResNet?",
+          "zh": "ResNet 的关键思想是什么？"
+        },
+        "options": [
+          {
+            "en": "Shortcut connections that learn residual changes",
+            "zh": "用捷径连接学习残差变化"
+          },
+          {
+            "en": "Deleting every layer after training",
+            "zh": "训练后删除每一层"
+          },
+          {
+            "en": "Using only one pixel",
+            "zh": "只使用一个像素"
+          },
+          {
+            "en": "Writing programs as S-expressions",
+            "zh": "把程序写成 S 表达式"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Residual shortcuts make very deep networks easier to optimize by adding learned changes back to the input.",
+          "zh": "残差捷径把学习到的变化加回输入，使很深的网络更容易优化。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "vision",
+          "architecture"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-batch-normalization",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Batch Normalization",
+      "zh": "批归一化"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google",
+        "zh": "Google"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>",
+      "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Sergey Ioffe",
+          "zh": "Sergey Ioffe"
+        },
+        "role": {
+          "en": "Co-author of Batch Normalization",
+          "zh": "批归一化共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Christian Szegedy",
+          "zh": "Christian Szegedy"
+        },
+        "role": {
+          "en": "Co-author of Batch Normalization",
+          "zh": "批归一化共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift\"",
+      "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""
+    },
+    "quoteAttribution": {
+      "en": "《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》, Sergey Ioffe and Christian Szegedy, ICML, 2015",
+      "zh": "《批归一化：通过减少内部协变量偏移加速深度网络训练》, Sergey Ioffe、Christian Szegedy，ICML，2015"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+        "zh": "批归一化：通过减少内部协变量偏移加速深度网络训练"
+      },
+      "workAuthors": {
+        "en": "Sergey Ioffe and Christian Szegedy, ICML, 2015",
+        "zh": "Sergey Ioffe、Christian Szegedy，ICML，2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.",
+          "zh": "批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+          "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat batch normalization as a practical training stabilizer, while noting that later architectures sometimes replace it with other normalization methods. Its long-term legacy is making activation statistics an explicit part of deep-network optimization.",
+          "zh": "专家通常把批归一化视为实用的训练稳定器，同时也指出后来的架构有时会用其他归一化方法替代它。它的长期影响在于把激活统计量明确纳入深度网络优化过程。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+        "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg"
+      ],
+      "imageMeta": {
+        "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
+          "caption": {
+            "en": "Christian Szegedy portrait",
+            "zh": "Christian Szegedy 肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of Batch Normalization.",
+            "zh": "批归一化共同作者。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "sourceUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "originalImageUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg": {
+          "caption": {
+            "en": "Activation normalization",
+            "zh": "激活归一化"
+          },
+          "subcaption": {
+            "en": "Original local explainer of batch statistics and learned scale.",
+            "zh": "关于批统计量与可学习缩放的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "source": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "originalImageUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Mini-batch activation normalization",
+        "zh": "小批量激活归一化"
+      },
+      "artifact": {
+        "en": "Batch normalization layer",
+        "zh": "批归一化层"
+      },
+      "material": {
+        "en": "ICML paper",
+        "zh": "ICML 论文"
+      },
+      "demo": {
+        "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+        "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+      },
+      "visual": "batchnorm",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Normalize Activations",
+            "zh": "归一化激活"
+          },
+          "text": {
+            "en": "Layer inputs are standardized over each mini-batch.",
+            "zh": "层输入在每个小批量上被标准化。"
+          }
+        },
+        {
+          "label": {
+            "en": "Learned Scale and Shift",
+            "zh": "可学习缩放和平移"
+          },
+          "text": {
+            "en": "The model can recover useful activation ranges after normalization.",
+            "zh": "模型可以在归一化后恢复有用的激活范围。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Inception",
+          "zh": "Inception"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Batch statistics",
+          "zh": "批统计量"
+        },
+        {
+          "en": "Normalize",
+          "zh": "归一化"
+        },
+        {
+          "en": "Scale + shift",
+          "zh": "缩放 + 平移"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "Batch Normalization",
+            "zh": "批归一化"
+          },
+          "description": {
+            "en": "Open ICML paper page for batch normalization.",
+            "zh": "批归一化的 ICML 开放论文页面。"
+          },
+          "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "source": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Batch Normalization",
+            "zh": "《批归一化》"
+          },
+          "url": "https://proceedings.mlr.press/v37/ioffe15.html"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Batch Normalization on arXiv",
+            "zh": "arXiv 上的批归一化论文"
+          },
+          "url": "https://arxiv.org/abs/1502.03167"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Google Research publication page",
+            "zh": "Google Research 出版页面"
+          },
+          "url": "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Google Research archived PDF",
+            "zh": "Google Research 归档 PDF"
+          },
+          "url": "https://research.google.com/pubs/archive/43442.pdf"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg"
+    },
+    "quiz": {
+      "id": "ai100-2015-batch-normalization-quiz-1",
+      "question": {
+        "en": "What does batch normalization help stabilize?",
+        "zh": "批归一化主要帮助稳定什么？"
+      },
+      "options": [
+        {
+          "en": "Deep-network training",
+          "zh": "深度网络训练"
+        },
+        {
+          "en": "The color of a monitor",
+          "zh": "显示器颜色"
+        },
+        {
+          "en": "A chess opening book",
+          "zh": "棋类开局库"
+        },
+        {
+          "en": "A paper citation format only",
+          "zh": "只有论文引用格式"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Batch normalization normalizes intermediate activations, which can make training faster and more stable.",
+        "zh": "批归一化会归一化中间激活值，使训练更快、更稳定。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "normalization",
+        "training"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-batch-normalization-quiz-1",
+        "question": {
+          "en": "What does batch normalization help stabilize?",
+          "zh": "批归一化主要帮助稳定什么？"
+        },
+        "options": [
+          {
+            "en": "Deep-network training",
+            "zh": "深度网络训练"
+          },
+          {
+            "en": "The color of a monitor",
+            "zh": "显示器颜色"
+          },
+          {
+            "en": "A chess opening book",
+            "zh": "棋类开局库"
+          },
+          {
+            "en": "A paper citation format only",
+            "zh": "只有论文引用格式"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Batch normalization normalizes intermediate activations, which can make training faster and more stable.",
+          "zh": "批归一化会归一化中间激活值，使训练更快、更稳定。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "normalization",
+          "training"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2017-densenet",
+    "year": 2017,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "DenseNet",
+      "zh": "DenseNet"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Cornell University",
+        "zh": "康奈尔大学"
+      },
+      "country": {
+        "en": "Ithaca, United States",
+        "zh": "美国伊萨卡"
+      },
+      "coordinates": [
+        42.4534,
+        -76.4735
+      ]
+    },
+    "description": {
+      "en": "<p>DenseNet connected each layer to every later layer within a dense block. This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper.</p>",
+      "zh": "<p>DenseNet 在密集块中把每一层连接到后续所有层。这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Gao Huang",
+          "zh": "黄高"
+        },
+        "role": {
+          "en": "Lead author of DenseNet",
+          "zh": "DenseNet 主要作者"
+        },
+        "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+        "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Zhuang Liu",
+          "zh": "刘壮"
+        },
+        "role": {
+          "en": "Co-author of DenseNet",
+          "zh": "DenseNet 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Densely Connected Convolutional Networks\"",
+      "zh": "\"密集连接卷积网络\""
+    },
+    "quoteAttribution": {
+      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+      "zh": "《密集连接卷积网络》, 黄高、刘壮、Laurens van der Maaten、Kilian Weinberger，CVPR，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Densely Connected Convolutional Networks",
+        "zh": "密集连接卷积网络"
+      },
+      "workAuthors": {
+        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+        "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Weinberger，CVPR，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1608.06993"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "DenseNet connected each layer to every later layer within a dense block. This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper.",
+          "zh": "DenseNet 在密集块中把每一层连接到后续所有层。这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Every layer receives the feature maps of all earlier layers in the same block.",
+          "zh": "每一层都会接收同一块中所有早期层的特征图。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat DenseNet as an influential architecture for feature reuse and gradient flow, even when newer backbones are preferred in deployment. Its long-term legacy is the dense-connectivity pattern that clarified how short paths and reused features can improve deep CNNs.",
+          "zh": "专家通常把 DenseNet 视为对特征复用和梯度流动有重要影响的架构，即使部署中常使用更新的骨干网络。它的长期影响在于密集连接模式阐明了短路径和复用特征如何改进深度 CNN。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+        "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png"
+      ],
+      "imageMeta": {
+        "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
+          "caption": {
+            "en": "DenseNet author group",
+            "zh": "DenseNet 作者团队"
+          },
+          "subcaption": {
+            "en": "Researchers behind DenseNet.",
+            "zh": "DenseNet 背后的研究者。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "sourceUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "originalImageUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
+          "caption": {
+            "en": "Dense connectivity",
+            "zh": "密集连接"
+          },
+          "subcaption": {
+            "en": "Architecture visual used by the project.",
+            "zh": "项目使用的架构图。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+          "sourceUrl": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+          "originalImageUrl": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Dense feature reuse connections",
+        "zh": "密集特征复用连接"
+      },
+      "artifact": {
+        "en": "Densely connected convolutional network",
+        "zh": "密集连接卷积网络"
+      },
+      "material": {
+        "en": "CVPR paper",
+        "zh": "CVPR 论文"
+      },
+      "demo": {
+        "en": "Every layer receives the feature maps of all earlier layers in the same block.",
+        "zh": "每一层都会接收同一块中所有早期层的特征图。"
+      },
+      "visual": "densenet",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Feature Reuse",
+            "zh": "特征复用"
+          },
+          "text": {
+            "en": "Later layers can directly use earlier features.",
+            "zh": "后续层可以直接使用早期特征。"
+          }
+        },
+        {
+          "label": {
+            "en": "Dense Connectivity",
+            "zh": "密集连接"
+          },
+          "text": {
+            "en": "Many short paths help gradient flow through the network.",
+            "zh": "许多短路径帮助梯度在网络中流动。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "CNN",
+          "zh": "CNN"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "China",
+          "zh": "中国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Layer 1",
+          "zh": "第 1 层"
+        },
+        {
+          "en": "Concatenate features",
+          "zh": "拼接特征"
+        },
+        {
+          "en": "Layer N",
+          "zh": "第 N 层"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Densely Connected Convolutional Networks",
+            "zh": "密集连接卷积网络"
+          },
+          "description": {
+            "en": "Open paper for DenseNet.",
+            "zh": "DenseNet 的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1608.06993",
+          "source": "https://arxiv.org/abs/1608.06993",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Densely Connected Convolutional Networks",
+            "zh": "《密集连接卷积网络》"
+          },
+          "url": "https://arxiv.org/abs/1608.06993"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "CVF Open Access paper page",
+            "zh": "CVF 开放论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "Original DenseNet code repository",
+            "zh": "DenseNet 原始代码仓库"
+          },
+          "url": "https://github.com/liuzhuang13/DenseNet"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Meta AI publication page",
+            "zh": "Meta AI 出版页面"
+          },
+          "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/"
+        }
+      ],
+      "demoImage": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png"
+    },
+    "quiz": {
+      "id": "ai100-2017-densenet-quiz-1",
+      "question": {
+        "en": "What does DenseNet encourage inside a network?",
+        "zh": "DenseNet 在网络内部鼓励什么？"
+      },
+      "options": [
+        {
+          "en": "Feature reuse through dense connections",
+          "zh": "通过密集连接复用特征"
+        },
+        {
+          "en": "Forgetting all earlier layers",
+          "zh": "忘记所有早期层"
+        },
+        {
+          "en": "Only using handwritten rules",
+          "zh": "只使用手写规则"
+        },
+        {
+          "en": "Replacing images with chess boards",
+          "zh": "用棋盘替换图像"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DenseNet connects layers so later layers can directly use earlier feature maps.",
+        "zh": "DenseNet 连接各层，使后续层可以直接使用早期特征图。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "cnn",
+        "feature-reuse"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2017-densenet-quiz-1",
+        "question": {
+          "en": "What does DenseNet encourage inside a network?",
+          "zh": "DenseNet 在网络内部鼓励什么？"
+        },
+        "options": [
+          {
+            "en": "Feature reuse through dense connections",
+            "zh": "通过密集连接复用特征"
+          },
+          {
+            "en": "Forgetting all earlier layers",
+            "zh": "忘记所有早期层"
+          },
+          {
+            "en": "Only using handwritten rules",
+            "zh": "只使用手写规则"
+          },
+          {
+            "en": "Replacing images with chess boards",
+            "zh": "用棋盘替换图像"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DenseNet connects layers so later layers can directly use earlier feature maps.",
+          "zh": "DenseNet 连接各层，使后续层可以直接使用早期特征图。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "cnn",
+          "feature-reuse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2020-vit",
+    "year": 2020,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Vision Transformer",
+      "zh": "视觉 Transformer"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google Research",
+        "zh": "Google Research"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>",
+      "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alexey Dosovitskiy",
+          "zh": "Alexey Dosovitskiy"
+        },
+        "role": {
+          "en": "Lead author of Vision Transformer",
+          "zh": "视觉 Transformer 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Google Research",
+          "zh": "Google Research"
+        },
+        "role": {
+          "en": "Research organization",
+          "zh": "研究机构"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"An Image is Worth 16x16 Words\"",
+      "zh": "\"一张图像价值 16x16 个词\""
+    },
+    "quoteAttribution": {
+      "en": "《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》, Alexey Dosovitskiy et al., ICLR, 2021",
+      "zh": "《一张图像价值 16x16 个词：用于大规模图像识别的 Transformer》, Alexey Dosovitskiy 等，ICLR，2021"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+        "zh": "一张图像价值 16x16 个词：用于大规模图像识别的 Transformer"
+      },
+      "workAuthors": {
+        "en": "Alexey Dosovitskiy et al., ICLR, 2021",
+        "zh": "Alexey Dosovitskiy 等，ICLR，2021"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/2010.11929"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.",
+          "zh": "视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "An image is split into patches, embedded as tokens, and processed by transformer attention.",
+          "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Vision Transformer as a major shift that brought transformer-style scaling into computer vision, while noting its appetite for data and compute. Its long-term legacy is the patch-token view of images and the spread of attention-based vision backbones.",
+          "zh": "专家通常把视觉 Transformer 视为把 Transformer 式规模化带入计算机视觉的重要转变，同时也指出它对数据和算力需求较高。它的长期影响在于图像块令牌视角以及基于注意力的视觉骨干网络的扩散。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/research-institution.png",
+        "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/research-institution.png": {
+          "caption": {
+            "en": "Google Research",
+            "zh": "Google Research"
+          },
+          "subcaption": {
+            "en": "Research group behind the Vision Transformer paper.",
+            "zh": "视觉 Transformer 论文背后的研究团队。"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/research-institution.png",
+          "sourceUrl": "resources/images/figures/research-institution.png",
+          "originalImageUrl": "resources/images/figures/research-institution.png",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg": {
+          "caption": {
+            "en": "Patch tokens to transformer",
+            "zh": "图像块令牌到 Transformer"
+          },
+          "subcaption": {
+            "en": "Original local explainer of ViT patch tokenization.",
+            "zh": "关于 ViT 图像块令牌化的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/2010.11929",
+          "sourceUrl": "https://arxiv.org/abs/2010.11929",
+          "originalImageUrl": "https://arxiv.org/abs/2010.11929",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Patch-token transformer for images",
+        "zh": "面向图像的块令牌 Transformer"
+      },
+      "artifact": {
+        "en": "Vision Transformer classifier",
+        "zh": "视觉 Transformer 分类器"
+      },
+      "material": {
+        "en": "ICLR paper",
+        "zh": "ICLR 论文"
+      },
+      "demo": {
+        "en": "An image is split into patches, embedded as tokens, and processed by transformer attention.",
+        "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
+      },
+      "visual": "vit",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Patch Tokens",
+            "zh": "图像块令牌"
+          },
+          "text": {
+            "en": "Fixed-size image patches become a sequence like words.",
+            "zh": "固定大小的图像块像词一样变成序列。"
+          }
+        },
+        {
+          "label": {
+            "en": "Self-attention",
+            "zh": "自注意力"
+          },
+          "text": {
+            "en": "The model learns relationships between distant image regions.",
+            "zh": "模型学习远距离图像区域之间的关系。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        },
+        {
+          "en": "Swin Transformer",
+          "zh": "Swin Transformer"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Split patches",
+          "zh": "切分图像块"
+        },
+        {
+          "en": "Add positions",
+          "zh": "加入位置"
+        },
+        {
+          "en": "Transformer encoder",
+          "zh": "Transformer 编码器"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "An Image is Worth 16x16 Words",
+            "zh": "一张图像价值 16x16 个词"
+          },
+          "description": {
+            "en": "Open paper for Vision Transformer.",
+            "zh": "视觉 Transformer 的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/2010.11929",
+          "source": "https://arxiv.org/abs/2010.11929",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "An Image is Worth 16x16 Words",
+            "zh": "《一张图像价值 16x16 个词》"
+          },
+          "url": "https://arxiv.org/abs/2010.11929"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR OpenReview page",
+            "zh": "ICLR OpenReview 页面"
+          },
+          "url": "https://openreview.net/forum?id=YicbFdNTTy"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "OpenReview full paper PDF",
+            "zh": "OpenReview 完整论文 PDF"
+          },
+          "url": "https://openreview.net/pdf?id=YicbFdNTTy"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Google Research publication page",
+            "zh": "Google Research 出版页面"
+          },
+          "url": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
+    },
+    "quiz": {
+      "id": "ai100-2020-vit-quiz-1",
+      "question": {
+        "en": "How does Vision Transformer look at an image?",
+        "zh": "视觉 Transformer 如何看待一张图像？"
+      },
+      "options": [
+        {
+          "en": "As a sequence of image patches",
+          "zh": "把图像看作一串图像块"
+        },
+        {
+          "en": "As a list of theorem clauses only",
+          "zh": "只看作定理子句列表"
+        },
+        {
+          "en": "As a single chess move",
+          "zh": "看作一步棋"
+        },
+        {
+          "en": "As a sound recording",
+          "zh": "看作一段录音"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "ViT splits an image into patches, embeds them as tokens, and processes them with transformer attention.",
+        "zh": "ViT 把图像切成图像块，将它们嵌入为令牌，再用 Transformer 注意力处理。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "vision-transformer",
+        "attention"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2020-vit-quiz-1",
+        "question": {
+          "en": "How does Vision Transformer look at an image?",
+          "zh": "视觉 Transformer 如何看待一张图像？"
+        },
+        "options": [
+          {
+            "en": "As a sequence of image patches",
+            "zh": "把图像看作一串图像块"
+          },
+          {
+            "en": "As a list of theorem clauses only",
+            "zh": "只看作定理子句列表"
+          },
+          {
+            "en": "As a single chess move",
+            "zh": "看作一步棋"
+          },
+          {
+            "en": "As a sound recording",
+            "zh": "看作一段录音"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "ViT splits an image into patches, embeds them as tokens, and processes them with transformer attention.",
+          "zh": "ViT 把图像切成图像块，将它们嵌入为令牌，再用 Transformer 注意力处理。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "vision-transformer",
+          "attention"
+        ]
+      }
+    ]
   }
 ];
 
