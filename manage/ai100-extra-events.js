@@ -650,7 +650,7 @@ function event({
   year, title, zhTitle, location, country, coordinates, description, zhDescription,
   figures, quote, quoteWork, quoteAuthors, quoteUrl, area, method, artifact, material,
   demo, zhDemo, visual, keyConcepts, relatedAchievements, relatedRegions, demoSteps, sources,
-  zhArea, zhMethod, zhArtifact, zhMaterial, zhLegacy,
+  zhArea, zhMethod, zhArtifact, zhMaterial, zhLegacy, demoNotes,
   portrait, portraitCaption, portraitSubcaption, portraitSourceName, portraitSource, portraitLicense,
   visualImage, visualCaption, visualSubcaption, visualSourceName, visualSource,
   article
@@ -679,7 +679,10 @@ function event({
       },
       {
         label: l('Core Idea', '核心思想'),
-        html: l(demo, zhDemo || z(demo))
+        html: l(
+          `${demo} The interactive demo focuses on the steps that connect the source material to the visible system behavior.`,
+          `${zhDemo || z(demo)} 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。`
+        )
       },
       {
         label: l('Long-Term Legacy', '长期影响'),
@@ -705,7 +708,17 @@ function event({
       demoSteps: demoSteps.map((item) => lz(item)),
       visualModules: [article],
       sources,
-      demoImage: visualImage
+      demoImage: visualImage,
+      demoNotes: demoNotes || [
+        {
+          label: l('Source cue', '资料线索'),
+          text: l(material, zhMaterial || z(material))
+        },
+        {
+          label: l('Interaction point', '互动点'),
+          text: l(demo, zhDemo || z(demo))
+        }
+      ]
     },
     images: [portrait, visualImage],
     imageMeta: {
@@ -2251,3 +2264,669 @@ module.exports = {
     article: archive(l('Segment Anything', 'Segment Anything'), l('Segment Anything project page', 'Segment Anything 项目页面'), l('Official project page with paper, model, dataset, and demo links.', '官方项目页面，包含论文、模型、数据集和演示链接。'), 'https://segment-anything.com/', l('Open project page', '打开项目页面'))
   }),
 };
+
+const lateAi100 = [
+  {
+    key: 'ai100-2021-swin-transformer', year: 2021, title: 'Swin Transformer', zhTitle: 'Swin Transformer',
+    location: 'Microsoft Research Asia', country: 'Beijing, China', coordinates: [39.9042, 116.4074],
+    figures: [figure('Ze Liu', 'Swin Transformer lead author', '刘泽', 'Swin Transformer 主要作者')],
+    area: l('Neural Network', '神经网络'), method: l('Shifted-window hierarchical attention', '移位窗口层级注意力'),
+    artifact: l('Swin Transformer vision backbone', 'Swin Transformer 视觉骨干网络'), material: l('ICCV paper and official code release', 'ICCV 论文与官方代码发布'),
+    quote: l('Hierarchical vision Transformer using shifted windows', '使用移位窗口的层级视觉 Transformer'),
+    quoteWork: l('Swin Transformer: Hierarchical Vision Transformer using Shifted Windows', 'Swin Transformer：使用移位窗口的层级视觉 Transformer'),
+    quoteAuthors: l('Ze Liu et al., ICCV, 2021', '刘泽等，ICCV，2021'), quoteUrl: 'https://arxiv.org/abs/2103.14030',
+    description: l('Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.', 'Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。'),
+    demo: l('Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers.', '图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。'),
+    legacy: l('Experts generally treat Swin Transformer as a key step in making vision transformers competitive beyond image classification. Its long-term legacy is the hierarchical shifted-window design used by many dense prediction systems.', '专家通常把 Swin Transformer 视为让视觉 Transformer 超越图像分类并进入密集预测的重要一步。它的长期影响在于层级移位窗口设计被许多密集预测系统复用。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg',
+    concepts: [[l('Shifted Windows', '移位窗口'), l('Local attention windows are offset between stages.', '局部注意力窗口在阶段之间错位。')], [l('Hierarchy', '层级结构'), l('Patch merging builds multi-scale feature maps.', '图像块合并构建多尺度特征图。')]],
+    related: [l('Vision Transformer', '视觉 Transformer'), l('ImageNet', 'ImageNet'), l('FPN', 'FPN')], regions: [l('China', '中国')],
+    steps: [l('Patch grid', '图像块网格'), l('Window attention', '窗口注意力'), l('Shift and merge', '移位与合并')],
+    sources: [
+      source('Paper', 'Swin Transformer: Hierarchical Vision Transformer using Shifted Windows', 'https://arxiv.org/abs/2103.14030', '论文', '《Swin Transformer：使用移位窗口的层级视觉 Transformer》'),
+      source('Conference paper', 'ICCV open-access paper page', 'https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html', '会议论文', 'ICCV 开放论文页面'),
+      source('Code', 'Microsoft Swin Transformer repository', 'https://github.com/microsoft/Swin-Transformer', '代码', 'Microsoft Swin Transformer 代码仓库')
+    ], articleSite: l('CVF Open Access', 'CVF 开放论文库'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2014-glove', year: 2014, title: 'GloVe', zhTitle: 'GloVe',
+    location: 'Stanford University', country: 'Stanford, United States', coordinates: [37.4275, -122.1697],
+    figures: [figure('Jeffrey Pennington', 'GloVe lead author', '杰弗里·彭宁顿', 'GloVe 主要作者')],
+    area: l('Neural Network', '神经网络'), method: l('Global word-vector factorization', '全局词向量分解'),
+    artifact: l('GloVe word embeddings', 'GloVe 词嵌入'), material: l('EMNLP paper and Stanford project page', 'EMNLP 论文与斯坦福项目页面'),
+    quote: l('Global vectors for word representation', '用于词表示的全局向量'), quoteWork: l('GloVe: Global Vectors for Word Representation', 'GloVe：用于词表示的全局向量'),
+    quoteAuthors: l('Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014', '杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014'), quoteUrl: 'https://aclanthology.org/D14-1162/',
+    description: l('GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.', 'GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。'),
+    demo: l('A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.', '共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。'),
+    legacy: l('Experts generally treat GloVe as an influential bridge between distributional statistics and embedding models. Its long-term legacy is the global co-occurrence view that remained useful even after contextual language models became dominant.', '专家通常把 GloVe 视为连接分布统计和嵌入模型的重要桥梁。它的长期影响在于全局共现视角即使在上下文语言模型占主导后仍然有用。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg',
+    concepts: [[l('Co-occurrence', '共现'), l('Word counts preserve corpus-level association.', '词共现计数保留语料级关联。')], [l('Vector Analogy', '向量类比'), l('Linear directions capture useful relations.', '线性方向捕获有用关系。')]],
+    related: [l('Word2vec', 'Word2vec'), l('Neural Language Model', '神经语言模型'), l('BERT', 'BERT')], regions: [l('United States', '美国')],
+    steps: [l('Count pairs', '统计词对'), l('Fit vectors', '拟合向量'), l('Compare meanings', '比较语义')],
+    sources: [
+      source('Paper', 'GloVe: Global Vectors for Word Representation', 'https://aclanthology.org/D14-1162/', '论文', '《GloVe：用于词表示的全局向量》'),
+      source('Project', 'Stanford GloVe project page', 'https://nlp.stanford.edu/projects/glove/', '项目', '斯坦福 GloVe 项目页面'),
+      source('Paper PDF', 'ACL Anthology PDF', 'https://aclanthology.org/D14-1162.pdf', '论文 PDF', 'ACL Anthology 论文 PDF')
+    ], articleSite: l('ACL Anthology', 'ACL Anthology'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2014-conditional-gan', year: 2014, title: 'Conditional GAN', zhTitle: 'Conditional GAN',
+    location: 'University of Montreal', country: 'Montreal, Canada', coordinates: [45.5019, -73.5674],
+    figures: [figure('Mehdi Mirza', 'Conditional GAN lead author', '迈赫迪·米尔扎', 'Conditional GAN 主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Conditioned adversarial training', '条件化对抗训练'),
+    artifact: l('Conditional GAN formulation', 'Conditional GAN 公式化方法'), material: l('arXiv paper introducing conditional adversarial nets', '提出条件化对抗网络的 arXiv 论文'),
+    quote: l('Conditional generative adversarial nets', '条件生成对抗网络'), quoteWork: l('Conditional Generative Adversarial Nets', '条件生成对抗网络'),
+    quoteAuthors: l('Mehdi Mirza and Simon Osindero, 2014', '迈赫迪·米尔扎、西蒙·奥辛德罗，2014'), quoteUrl: 'https://arxiv.org/abs/1411.1784',
+    description: l('Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.', 'Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。'),
+    demo: l('A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.', '条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。'),
+    legacy: l('Experts generally treat conditional GANs as a foundational control mechanism for generative models. Its long-term legacy is the conditioning pattern reused by image translation, text-to-image, and controllable synthesis systems.', '专家通常把 Conditional GAN 视为生成模型控制机制的基础。它的长期影响在于条件化模式被图像转换、文生图和可控合成系统反复使用。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg',
+    concepts: [[l('Condition Signal', '条件信号'), l('Labels steer generated samples.', '标签引导生成样本。')], [l('Adversarial Loss', '对抗损失'), l('The discriminator checks both realism and condition match.', '判别器同时检查真实感和条件匹配。')]],
+    related: [l('GAN', 'GAN'), l('Pix2Pix', 'Pix2Pix'), l('DALL-E', 'DALL-E')], regions: [l('Canada', '加拿大')],
+    steps: [l('Noise + label', '噪声 + 标签'), l('Generator', '生成器'), l('Conditioned sample', '条件样本')],
+    sources: [
+      source('Paper', 'Conditional Generative Adversarial Nets', 'https://arxiv.org/abs/1411.1784', '论文', '《条件生成对抗网络》'),
+      source('Background', 'Generative adversarial network overview', 'https://en.wikipedia.org/wiki/Generative_adversarial_network', '背景', '生成对抗网络概览'),
+      source('Related paper', 'Generative Adversarial Nets', 'https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html', '相关论文', '《生成对抗网络》')
+    ], articleSite: l('arXiv', 'arXiv'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2015-dcgan', year: 2015, title: 'DCGAN', zhTitle: 'DCGAN',
+    location: 'Facebook AI Research', country: 'New York, United States', coordinates: [40.7128, -74.006],
+    figures: [figure('Alec Radford', 'DCGAN lead author', '亚历克·拉德福德', 'DCGAN 主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Convolutional adversarial architecture', '卷积式对抗架构'),
+    artifact: l('Deep convolutional GAN design', '深度卷积 GAN 设计'), material: l('ICLR paper and code examples', 'ICLR 论文与代码示例'),
+    quote: l('Unsupervised representation learning with deep convolutional generative adversarial networks', '使用深度卷积生成对抗网络进行无监督表示学习'),
+    quoteWork: l('Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks', '使用深度卷积生成对抗网络进行无监督表示学习'),
+    quoteAuthors: l('Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016', '亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016'), quoteUrl: 'https://arxiv.org/abs/1511.06434',
+    description: l('DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.', 'DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。'),
+    demo: l('A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.', '潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。'),
+    legacy: l('Experts generally treat DCGAN as the architecture recipe that made GAN images easier to reproduce and study. Its long-term legacy is the convolutional generator-discriminator pattern used in many later image synthesis systems.', '专家通常把 DCGAN 视为让 GAN 图像生成更容易复现和研究的架构配方。它的长期影响在于卷积生成器-判别器模式被许多后续图像合成系统采用。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg',
+    concepts: [[l('Transposed Convolution', '转置卷积'), l('Latent vectors become image grids.', '潜向量变成图像网格。')], [l('Representation Learning', '表示学习'), l('The discriminator learns reusable visual features.', '判别器学习可复用视觉特征。')]],
+    related: [l('GAN', 'GAN'), l('Conditional GAN', 'Conditional GAN'), l('StyleGAN', 'StyleGAN')], regions: [l('United States', '美国')],
+    steps: [l('Latent code', '潜编码'), l('Upsample', '上采样'), l('Synthetic image', '合成图像')],
+    sources: [
+      source('Paper', 'Unsupervised Representation Learning with Deep Convolutional GANs', 'https://arxiv.org/abs/1511.06434', '论文', '《使用深度卷积 GAN 进行无监督表示学习》'),
+      source('Code', 'PyTorch DCGAN tutorial', 'https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html', '代码', 'PyTorch DCGAN 教程'),
+      source('Background', 'DCGAN overview', 'https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network', '背景', 'DCGAN 概览')
+    ],
+    portrait: 'resources/images/figures/alec-radford.png',
+    portraitCaption: l('Alec Radford portrait', '亚历克·拉德福德肖像'),
+    portraitSubcaption: l('DCGAN lead author', 'DCGAN 主要作者'),
+    portraitSourceName: l('Local project asset', '本地项目素材'),
+    portraitSource: 'resources/images/figures/alec-radford.png',
+    portraitLicense: l('Local project image; reuse rights inherited from existing project asset metadata.', '本地项目图片；复用权利沿用现有项目素材元数据。'),
+    articleSite: l('arXiv', 'arXiv'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2017-wasserstein-gan', year: 2017, title: 'Wasserstein GAN', zhTitle: 'Wasserstein GAN',
+    location: 'Courant Institute and Facebook AI Research', country: 'New York, United States', coordinates: [40.7295, -73.9965],
+    figures: [figure('Martin Arjovsky', 'Wasserstein GAN lead author', '马丁·阿尔乔夫斯基', 'Wasserstein GAN 主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Earth-mover distance adversarial learning', '基于推土机距离的对抗学习'),
+    artifact: l('Wasserstein GAN objective', 'Wasserstein GAN 目标函数'), material: l('ICML paper and improved WGAN follow-up', 'ICML 论文与改进 WGAN 后续研究'),
+    quote: l('Wasserstein generative adversarial networks', 'Wasserstein 生成对抗网络'), quoteWork: l('Wasserstein Generative Adversarial Networks', 'Wasserstein 生成对抗网络'),
+    quoteAuthors: l('Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017', '马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017'), quoteUrl: 'https://proceedings.mlr.press/v70/arjovsky17a.html',
+    description: l('Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.', 'Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。'),
+    demo: l('A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator.', 'critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。'),
+    legacy: l('Experts generally treat Wasserstein GAN as a conceptual advance in understanding why GAN training can fail. Its long-term legacy is the use of transport-inspired distances and critic constraints in generative modeling.', '专家通常把 Wasserstein GAN 视为理解 GAN 训练为何会失败的概念进展。它的长期影响在于把受传输启发的距离和 critic 约束引入生成式建模。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg',
+    concepts: [[l('Critic', 'Critic'), l('The critic scores samples instead of outputting a probability.', 'critic 给样本打分，而不是输出概率。')], [l('Transport Distance', '传输距离'), l('Training follows a smoother distribution distance.', '训练跟随更平滑的分布距离。')]],
+    related: [l('GAN', 'GAN'), l('DCGAN', 'DCGAN'), l('Diffusion Model', '扩散模型')], regions: [l('United States', '美国')],
+    steps: [l('Real samples', '真实样本'), l('Critic distance', 'critic 距离'), l('Generator update', '生成器更新')],
+    sources: [
+      source('Paper', 'Wasserstein Generative Adversarial Networks', 'https://proceedings.mlr.press/v70/arjovsky17a.html', '论文', '《Wasserstein 生成对抗网络》'),
+      source('Paper', 'Improved Training of Wasserstein GANs', 'https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html', '论文', '《Wasserstein GAN 的改进训练》'),
+      source('Background', 'Wasserstein GAN overview', 'https://en.wikipedia.org/wiki/Wasserstein_GAN', '背景', 'Wasserstein GAN 概览')
+    ], articleSite: l('PMLR', 'PMLR'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2017-cyclegan', year: 2017, title: 'CycleGAN', zhTitle: 'CycleGAN',
+    location: 'UC Berkeley', country: 'Berkeley, United States', coordinates: [37.8715, -122.273],
+    figures: [figure('Jun-Yan Zhu', 'CycleGAN lead author', '朱俊彦', 'CycleGAN 主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Cycle-consistent image translation', '循环一致图像转换'),
+    artifact: l('Unpaired image-to-image translation system', '非配对图像到图像转换系统'), material: l('ICCV paper, project page, and code', 'ICCV 论文、项目页面与代码'),
+    quote: l('Unpaired image-to-image translation using cycle-consistent adversarial networks', '使用循环一致对抗网络进行非配对图像到图像转换'),
+    quoteWork: l('Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks', '使用循环一致对抗网络进行非配对图像到图像转换'),
+    quoteAuthors: l('Jun-Yan Zhu et al., ICCV, 2017', '朱俊彦等，ICCV，2017'), quoteUrl: 'https://arxiv.org/abs/1703.10593',
+    description: l('CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.', 'CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。'),
+    demo: l('An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered.', '图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。'),
+    legacy: l('Experts generally treat CycleGAN as a landmark in unpaired translation and controllable visual synthesis. Its long-term legacy is the cycle-consistency idea used whenever paired supervision is expensive or unavailable.', '专家通常把 CycleGAN 视为非配对转换和可控视觉合成的里程碑。它的长期影响在于循环一致性思想被用于配对监督昂贵或缺失的场景。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg',
+    concepts: [[l('Unpaired Domains', '非配对领域'), l('Training uses two image collections without matched pairs.', '训练使用两组没有逐一匹配的图像。')], [l('Cycle Loss', '循环损失'), l('Returning to the source domain should reconstruct the input.', '返回源域时应重建输入。')]],
+    related: [l('Pix2Pix', 'Pix2Pix'), l('GAN', 'GAN'), l('Conditional GAN', 'Conditional GAN')], regions: [l('United States', '美国')],
+    steps: [l('Domain A', '领域 A'), l('Translate', '转换'), l('Cycle back', '循环返回')],
+    sources: [
+      source('Paper', 'Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks', 'https://arxiv.org/abs/1703.10593', '论文', '《使用循环一致对抗网络进行非配对图像到图像转换》'),
+      source('Conference paper', 'ICCV open-access paper page', 'https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html', '会议论文', 'ICCV 开放论文页面'),
+      source('Project', 'CycleGAN project page', 'https://junyanz.github.io/CycleGAN/', '项目', 'CycleGAN 项目页面')
+    ], articleSite: l('Project page', '项目页面'), articleAction: l('Open project page', '打开项目页面')
+  },
+  {
+    key: 'ai100-2017-pix2pix', year: 2017, title: 'Pix2Pix', zhTitle: 'Pix2Pix',
+    location: 'UC Berkeley', country: 'Berkeley, United States', coordinates: [37.8715, -122.273],
+    figures: [figure('Phillip Isola', 'Pix2Pix lead author', '菲利普·伊索拉', 'Pix2Pix 主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Paired conditional image translation', '配对条件图像转换'),
+    artifact: l('Pix2Pix image-to-image translation framework', 'Pix2Pix 图像到图像转换框架'), material: l('CVPR paper, project page, and code', 'CVPR 论文、项目页面与代码'),
+    quote: l('Image-to-image translation with conditional adversarial networks', '使用条件对抗网络进行图像到图像转换'),
+    quoteWork: l('Image-to-Image Translation with Conditional Adversarial Networks', '使用条件对抗网络进行图像到图像转换'),
+    quoteAuthors: l('Phillip Isola et al., CVPR, 2017', '菲利普·伊索拉等，CVPR，2017'), quoteUrl: 'https://arxiv.org/abs/1611.07004',
+    description: l('Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.', 'Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。'),
+    demo: l('The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.', '模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。'),
+    legacy: l('Experts generally treat Pix2Pix as a practical template for supervised image translation. Its long-term legacy is the conditional image-to-image framing that influenced creative tools and later diffusion-based editing workflows.', '专家通常把 Pix2Pix 视为监督式图像转换的实用模板。它的长期影响在于条件图像到图像框架影响了创意工具和后来的扩散式编辑工作流。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg',
+    concepts: [[l('Paired Supervision', '配对监督'), l('Examples show the desired input-output mapping.', '样本展示期望的输入输出映射。')], [l('Conditional Discriminator', '条件判别器'), l('Realism is judged relative to the input.', '真实感相对于输入进行判断。')]],
+    related: [l('Conditional GAN', 'Conditional GAN'), l('CycleGAN', 'CycleGAN'), l('Stable Diffusion', 'Stable Diffusion')], regions: [l('United States', '美国')],
+    steps: [l('Input image', '输入图像'), l('cGAN translator', 'cGAN 转换器'), l('Output image', '输出图像')],
+    sources: [
+      source('Paper', 'Image-to-Image Translation with Conditional Adversarial Networks', 'https://arxiv.org/abs/1611.07004', '论文', '《使用条件对抗网络进行图像到图像转换》'),
+      source('Conference paper', 'CVPR open-access paper page', 'https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html', '会议论文', 'CVPR 开放论文页面'),
+      source('Project', 'Pix2Pix project page', 'https://phillipi.github.io/pix2pix/', '项目', 'Pix2Pix 项目页面')
+    ], articleSite: l('Project page', '项目页面'), articleAction: l('Open project page', '打开项目页面')
+  },
+  {
+    key: 'ai100-2019-stylegan', year: 2019, title: 'StyleGAN', zhTitle: 'StyleGAN',
+    location: 'NVIDIA', country: 'Santa Clara, United States', coordinates: [37.3541, -121.9552],
+    figures: [figure('Tero Karras', 'StyleGAN lead author', '特罗·卡拉斯', 'StyleGAN 主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Style-modulated generator architecture', '风格调制生成器架构'),
+    artifact: l('StyleGAN generator', 'StyleGAN 生成器'), material: l('CVPR paper and NVIDIA code release', 'CVPR 论文与 NVIDIA 代码发布'),
+    quote: l('A style-based generator architecture for generative adversarial networks', '面向生成对抗网络的基于风格的生成器架构'),
+    quoteWork: l('A Style-Based Generator Architecture for Generative Adversarial Networks', '面向生成对抗网络的基于风格的生成器架构'),
+    quoteAuthors: l('Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019', '特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019'), quoteUrl: 'https://arxiv.org/abs/1812.04948',
+    description: l('StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.', 'StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。'),
+    demo: l('A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.', '潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。'),
+    legacy: l('Experts generally treat StyleGAN as a benchmark for high-fidelity controllable image synthesis. Its long-term legacy is the style-space interface that shaped face generation, latent editing, and generative media research.', '专家通常把 StyleGAN 视为高保真可控图像合成的基准。它的长期影响在于风格空间接口塑造了人脸生成、潜空间编辑和生成媒体研究。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg',
+    concepts: [[l('Style Space', '风格空间'), l('A mapping network controls synthesis layers.', '映射网络控制合成层。')], [l('Layer Control', '分层控制'), l('Different layers affect pose, shape, or texture.', '不同层影响姿态、形状或纹理。')]],
+    related: [l('GAN', 'GAN'), l('DCGAN', 'DCGAN'), l('Stable Diffusion', 'Stable Diffusion')], regions: [l('United States', '美国')],
+    steps: [l('Latent code', '潜编码'), l('Style modulation', '风格调制'), l('Generated image', '生成图像')],
+    sources: [
+      source('Paper', 'A Style-Based Generator Architecture for GANs', 'https://arxiv.org/abs/1812.04948', '论文', '《面向 GAN 的基于风格的生成器架构》'),
+      source('Conference paper', 'CVPR open-access paper page', 'https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html', '会议论文', 'CVPR 开放论文页面'),
+      source('Code', 'NVIDIA StyleGAN repository', 'https://github.com/NVlabs/stylegan', '代码', 'NVIDIA StyleGAN 代码仓库')
+    ], articleSite: l('CVF Open Access', 'CVF 开放论文库'), articleAction: l('Open paper', '打开论文')
+  }
+];
+
+lateAi100.push(
+  {
+    key: 'ai100-2013-variational-autoencoder', year: 2013, title: 'Variational Autoencoder', zhTitle: '变分自编码器',
+    location: 'University of Amsterdam', country: 'Amsterdam, Netherlands', coordinates: [52.3676, 4.9041],
+    figures: [figure('Diederik Kingma', 'Variational autoencoder co-author', '迪德里克·金马', '变分自编码器共同作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Variational latent-variable learning', '变分潜变量学习'),
+    artifact: l('Auto-Encoding Variational Bayes', '自动编码变分贝叶斯'), material: l('ICLR paper and reparameterization trick', 'ICLR 论文与重参数化技巧'),
+    quote: l('Auto-encoding variational Bayes', '自动编码变分贝叶斯'), quoteWork: l('Auto-Encoding Variational Bayes', '自动编码变分贝叶斯'),
+    quoteAuthors: l('Diederik Kingma and Max Welling, ICLR, 2014', '迪德里克·金马、马克斯·韦林，ICLR，2014'), quoteUrl: 'https://arxiv.org/abs/1312.6114',
+    description: l('The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.', '变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。'),
+    demo: l('The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data.', '编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。'),
+    legacy: l('Experts generally treat VAEs as a central bridge between deep learning and probabilistic inference. Its long-term legacy is the latent-variable training pattern used in representation learning, generation, and later diffusion autoencoders.', '专家通常把 VAE 视为连接深度学习与概率推断的核心桥梁。它的长期影响在于潜变量训练模式被用于表示学习、生成建模和后来的扩散自编码器。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg',
+    concepts: [[l('Latent Distribution', '潜变量分布'), l('The encoder predicts mean and variance.', '编码器预测均值和方差。')], [l('Reparameterization', '重参数化'), l('Sampling is written so gradients can flow.', '采样被改写为可传递梯度的形式。')]],
+    related: [l('GAN', 'GAN'), l('Diffusion Model', '扩散模型'), l('Neural Language Model', '神经语言模型')], regions: [l('Netherlands', '荷兰')],
+    steps: [l('Encode', '编码'), l('Sample latent', '采样潜变量'), l('Decode', '解码')],
+    sources: [
+      source('Paper', 'Auto-Encoding Variational Bayes', 'https://arxiv.org/abs/1312.6114', '论文', '《自动编码变分贝叶斯》'),
+      source('Conference paper', 'ICLR paper record', 'https://openreview.net/forum?id=33X9fd2-9FyZd', '会议论文', 'ICLR 论文记录'),
+      source('Background', 'Variational autoencoder overview', 'https://en.wikipedia.org/wiki/Variational_autoencoder', '背景', '变分自编码器概览')
+    ], articleSite: l('arXiv', 'arXiv'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2015-diffusion-model', year: 2015, title: 'Diffusion Model', zhTitle: '扩散模型',
+    location: 'Stanford University', country: 'Stanford, United States', coordinates: [37.4275, -122.1697],
+    figures: [figure('Jascha Sohl-Dickstein', 'Diffusion model lead author', '雅沙·索尔-迪克斯坦', '扩散模型主要作者')],
+    area: l('Generative modeling', '生成式建模'), method: l('Forward noising and learned reverse denoising', '正向加噪与学习型反向去噪'),
+    artifact: l('Nonequilibrium thermodynamics diffusion model', '非平衡热力学扩散模型'), material: l('ICML paper and later denoising diffusion work', 'ICML 论文与后续去噪扩散工作'),
+    quote: l('Deep unsupervised learning using nonequilibrium thermodynamics', '使用非平衡热力学进行深度无监督学习'), quoteWork: l('Deep Unsupervised Learning using Nonequilibrium Thermodynamics', '使用非平衡热力学进行深度无监督学习'),
+    quoteAuthors: l('Jascha Sohl-Dickstein et al., ICML, 2015', '雅沙·索尔-迪克斯坦等，ICML，2015'), quoteUrl: 'https://proceedings.mlr.press/v37/sohl-dickstein15.html',
+    description: l('Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.', '扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。'),
+    demo: l('Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.', '训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。'),
+    legacy: l('Experts generally treat diffusion models as one of the major generative-model families after GANs and VAEs. Its long-term legacy is the iterative denoising recipe that powers many high-quality image, audio, and video generators.', '专家通常把扩散模型视为 GAN 和 VAE 之后的主要生成模型家族之一。它的长期影响在于迭代去噪配方支撑了许多高质量图像、音频和视频生成器。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg',
+    concepts: [[l('Forward Process', '正向过程'), l('Noise is added through many small steps.', '噪声通过许多小步骤加入。')], [l('Reverse Process', '反向过程'), l('A model learns to denoise step by step.', '模型学习逐步去噪。')]],
+    related: [l('Stable Diffusion', 'Stable Diffusion'), l('DALL-E', 'DALL-E'), l('Variational Autoencoder', '变分自编码器')], regions: [l('United States', '美国')],
+    steps: [l('Add noise', '加入噪声'), l('Learn reverse', '学习反向过程'), l('Generate sample', '生成样本')],
+    sources: [
+      source('Paper', 'Deep Unsupervised Learning using Nonequilibrium Thermodynamics', 'https://proceedings.mlr.press/v37/sohl-dickstein15.html', '论文', '《使用非平衡热力学进行深度无监督学习》'),
+      source('Paper', 'Denoising Diffusion Probabilistic Models', 'https://arxiv.org/abs/2006.11239', '论文', '《去噪扩散概率模型》'),
+      source('Background', 'Diffusion model overview', 'https://en.wikipedia.org/wiki/Diffusion_model', '背景', '扩散模型概览')
+    ], articleSite: l('PMLR', 'PMLR'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2005-gnn', year: 2005, title: 'Graph Neural Network', zhTitle: '图神经网络',
+    location: 'University of Siena', country: 'Siena, Italy', coordinates: [43.3188, 11.3308],
+    figures: [figure('Franco Scarselli', 'Graph neural network co-author', '弗兰科·斯卡塞利', '图神经网络共同作者')],
+    area: l('Graph learning', '图学习'), method: l('Iterative message passing on graphs', '图上的迭代消息传递'),
+    artifact: l('Graph neural network model', '图神经网络模型'), material: l('IEEE Transactions paper', 'IEEE Transactions 论文'),
+    quote: l('A new model for learning in graph domains', '一种用于图领域学习的新模型'), quoteWork: l('The Graph Neural Network Model', '图神经网络模型'),
+    quoteAuthors: l('Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009', '弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009'), quoteUrl: 'https://doi.org/10.1109/TNN.2008.2005605',
+    description: l('Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures.', '图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。'),
+    demo: l('Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round.', '每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。'),
+    legacy: l('Experts generally treat GNNs as the foundational deep-learning framework for relational data. Its long-term legacy is message passing, now used in chemistry, recommender systems, knowledge graphs, and scientific modeling.', '专家通常把 GNN 视为关系数据深度学习的基础框架。它的长期影响在于消息传递机制，如今用于化学、推荐系统、知识图谱和科学建模。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg',
+    concepts: [[l('Message Passing', '消息传递'), l('Neighbors exchange learned information.', '邻居交换学习得到的信息。')], [l('Graph State', '图状态'), l('Node states summarize local structure.', '节点状态概括局部结构。')]],
+    related: [l('GCN', 'GCN'), l('GAT', 'GAT'), l('Spectral clustering', '谱聚类')], regions: [l('Italy', '意大利')],
+    steps: [l('Node features', '节点特征'), l('Neighbor messages', '邻居消息'), l('Updated states', '更新状态')],
+    sources: [
+      source('Paper', 'The Graph Neural Network Model', 'https://doi.org/10.1109/TNN.2008.2005605', '论文', '《图神经网络模型》'),
+      source('Paper', 'A new model for learning in graph domains', 'https://ieeexplore.ieee.org/document/4700287', '论文', '《一种用于图领域学习的新模型》'),
+      source('Background', 'Graph neural network overview', 'https://en.wikipedia.org/wiki/Graph_neural_network', '背景', '图神经网络概览')
+    ], articleSite: l('IEEE Xplore', 'IEEE Xplore'), articleAction: l('Open DOI page', '打开 DOI 页面')
+  },
+  {
+    key: 'ai100-2016-gcn', year: 2016, title: 'GCN', zhTitle: 'GCN',
+    location: 'University of Amsterdam', country: 'Amsterdam, Netherlands', coordinates: [52.3676, 4.9041],
+    figures: [figure('Thomas Kipf', 'GCN lead author', '托马斯·基普夫', 'GCN 主要作者')],
+    area: l('Graph learning', '图学习'), method: l('Graph convolutional propagation rule', '图卷积传播规则'),
+    artifact: l('Graph convolutional network for semi-supervised classification', '用于半监督分类的图卷积网络'), material: l('ICLR paper and reference implementation', 'ICLR 论文与参考实现'),
+    quote: l('Semi-supervised classification with graph convolutional networks', '使用图卷积网络进行半监督分类'), quoteWork: l('Semi-Supervised Classification with Graph Convolutional Networks', '使用图卷积网络进行半监督分类'),
+    quoteAuthors: l('Thomas Kipf and Max Welling, ICLR, 2017', '托马斯·基普夫、马克斯·韦林，ICLR，2017'), quoteUrl: 'https://arxiv.org/abs/1609.02907',
+    description: l('GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.', 'GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。'),
+    demo: l('Node features are averaged through normalized graph neighborhoods and transformed into class predictions.', '节点特征通过归一化图邻域进行聚合，并转换为类别预测。'),
+    legacy: l('Experts generally treat GCN as the model that made graph neural networks accessible to a broad machine-learning audience. Its long-term legacy is the normalized-neighbor aggregation layer used as a reference point for later graph models.', '专家通常把 GCN 视为让图神经网络进入更广泛机器学习社群的模型。它的长期影响在于归一化邻居聚合层成为后续图模型的参照点。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg',
+    concepts: [[l('Neighborhood Aggregation', '邻域聚合'), l('Each node mixes information from nearby nodes.', '每个节点混合附近节点的信息。')], [l('Semi-supervision', '半监督'), l('Few labels guide predictions across the graph.', '少量标签引导整张图上的预测。')]],
+    related: [l('Graph Neural Network', '图神经网络'), l('GAT', 'GAT'), l('Spectral clustering', '谱聚类')], regions: [l('Netherlands', '荷兰')],
+    steps: [l('Graph features', '图特征'), l('GCN layer', 'GCN 层'), l('Node labels', '节点标签')],
+    sources: [
+      source('Paper', 'Semi-Supervised Classification with Graph Convolutional Networks', 'https://arxiv.org/abs/1609.02907', '论文', '《使用图卷积网络进行半监督分类》'),
+      source('Conference paper', 'ICLR OpenReview record', 'https://openreview.net/forum?id=SJU4ayYgl', '会议论文', 'ICLR OpenReview 记录'),
+      source('Code', 'Kipf GCN repository', 'https://github.com/tkipf/gcn', '代码', 'Kipf GCN 代码仓库')
+    ], articleSite: l('OpenReview', 'OpenReview'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2017-gat', year: 2017, title: 'GAT', zhTitle: 'GAT',
+    location: 'University of Cambridge', country: 'Cambridge, United Kingdom', coordinates: [52.2053, 0.1218],
+    figures: [figure('Petar Velickovic', 'GAT lead author', '佩塔尔·韦利奇科维奇', 'GAT 主要作者')],
+    area: l('Graph learning', '图学习'), method: l('Attention-weighted graph aggregation', '注意力加权图聚合'),
+    artifact: l('Graph Attention Network', '图注意力网络'), material: l('ICLR paper and implementation', 'ICLR 论文与实现'),
+    quote: l('Graph attention networks', '图注意力网络'), quoteWork: l('Graph Attention Networks', '图注意力网络'),
+    quoteAuthors: l('Petar Velickovic et al., ICLR, 2018', '佩塔尔·韦利奇科维奇等，ICLR，2018'), quoteUrl: 'https://arxiv.org/abs/1710.10903',
+    description: l('GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.', 'GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。'),
+    demo: l('A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state.', '节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。'),
+    legacy: l('Experts generally treat GAT as a defining attention-based graph model. Its long-term legacy is the idea that graph neighborhoods can be weighted dynamically instead of only by graph degree or fixed normalization.', '专家通常把 GAT 视为注意力式图模型的代表。它的长期影响在于图邻域可以动态加权，而不只依赖节点度或固定归一化。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg',
+    concepts: [[l('Neighbor Attention', '邻居注意力'), l('Important neighbors receive larger weights.', '重要邻居获得更大权重。')], [l('Multi-head Attention', '多头注意力'), l('Several attention heads stabilize learning.', '多个注意力头稳定学习。')]],
+    related: [l('GCN', 'GCN'), l('Graph Neural Network', '图神经网络'), l('Transformer', 'Transformer')], regions: [l('United Kingdom', '英国'), l('Canada', '加拿大')],
+    steps: [l('Score neighbors', '邻居打分'), l('Normalize weights', '归一化权重'), l('Update node', '更新节点')],
+    sources: [
+      source('Paper', 'Graph Attention Networks', 'https://arxiv.org/abs/1710.10903', '论文', '《图注意力网络》'),
+      source('Conference paper', 'ICLR OpenReview record', 'https://openreview.net/forum?id=rJXMpikCZ', '会议论文', 'ICLR OpenReview 记录'),
+      source('Code', 'Original GAT repository', 'https://github.com/PetarV-/GAT', '代码', '原始 GAT 代码仓库')
+    ], articleSite: l('OpenReview', 'OpenReview'), articleAction: l('Open paper', '打开论文')
+  }
+);
+
+lateAi100.push(
+  {
+    key: 'ai100-2016-nas', year: 2016, title: 'Neural Architecture Search', zhTitle: '神经架构搜索',
+    location: 'Google Brain', country: 'Mountain View, United States', coordinates: [37.3861, -122.0839],
+    figures: [figure('Barret Zoph', 'Neural architecture search lead author', '巴雷特·佐夫', '神经架构搜索主要作者')],
+    area: l('Automated machine learning', '自动机器学习'), method: l('Controller-based architecture search', '基于控制器的架构搜索'),
+    artifact: l('Neural architecture search with reinforcement learning', '基于强化学习的神经架构搜索'), material: l('ICLR paper and AutoML lineage', 'ICLR 论文与 AutoML 脉络'),
+    quote: l('Neural architecture search with reinforcement learning', '基于强化学习的神经架构搜索'), quoteWork: l('Neural Architecture Search with Reinforcement Learning', '基于强化学习的神经架构搜索'),
+    quoteAuthors: l('Barret Zoph and Quoc V. Le, ICLR, 2017', '巴雷特·佐夫、黎国威，ICLR，2017'), quoteUrl: 'https://arxiv.org/abs/1611.01578',
+    description: l('Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.', '神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。'),
+    demo: l('A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures.', '控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。'),
+    legacy: l('Experts generally treat NAS as a milestone in automating parts of model design, while noting its high compute cost. Its long-term legacy is the search-space and controller framing behind later efficient AutoML systems.', '专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg',
+    concepts: [[l('Search Space', '搜索空间'), l('Candidate networks are sampled from design choices.', '候选网络从设计选择中采样。')], [l('Reward Signal', '奖励信号'), l('Validation results guide the controller.', '验证结果引导控制器。')]],
+    related: [l('Reinforcement learning', '强化学习'), l('MobileNets', 'MobileNets'), l('Efficient model design', '高效模型设计')], regions: [l('United States', '美国')],
+    steps: [l('Sample architecture', '采样架构'), l('Train and score', '训练并评分'), l('Update controller', '更新控制器')],
+    sources: [
+      source('Paper', 'Neural Architecture Search with Reinforcement Learning', 'https://arxiv.org/abs/1611.01578', '论文', '《基于强化学习的神经架构搜索》'),
+      source('Conference paper', 'ICLR OpenReview record', 'https://openreview.net/forum?id=r1Ue8Hcxg', '会议论文', 'ICLR OpenReview 记录'),
+      source('Background', 'Google AI AutoML overview', 'https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html', '背景', 'Google AI AutoML 概览')
+    ], articleSite: l('OpenReview', 'OpenReview'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2015-deep-compression', year: 2015, title: 'Deep Compression', zhTitle: '深度压缩',
+    location: 'Stanford University', country: 'Stanford, United States', coordinates: [37.4275, -122.1697],
+    figures: [figure('Song Han', 'Deep Compression lead author', '韩松', 'Deep Compression 主要作者')],
+    area: l('Model efficiency', '模型效率'), method: l('Pruning, quantization, and Huffman coding', '剪枝、量化与霍夫曼编码'),
+    artifact: l('Deep Compression pipeline', '深度压缩流程'), material: l('ICLR paper and efficient inference work', 'ICLR 论文与高效推理研究'),
+    quote: l('Compressing deep neural networks with pruning, trained quantization and Huffman coding', '用剪枝、训练型量化和霍夫曼编码压缩深度神经网络'),
+    quoteWork: l('Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding', '深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络'),
+    quoteAuthors: l('Song Han, Huizi Mao, and William Dally, ICLR, 2016', '韩松、毛慧子、威廉·达利，ICLR，2016'), quoteUrl: 'https://arxiv.org/abs/1510.00149',
+    description: l('Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.', '深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。'),
+    demo: l('A trained network is pruned, retrained with shared quantized weights, and encoded so it fits smaller memory and deployment budgets.', '训练好的网络被剪枝，再用共享量化权重重新训练，并编码到更小的内存和部署预算中。'),
+    legacy: l('Experts generally treat Deep Compression as a landmark in practical neural network efficiency. Its long-term legacy is the compression toolkit that influenced edge inference, accelerators, pruning, and quantization workflows.', '专家通常把深度压缩视为实用神经网络效率研究的里程碑。它的长期影响在于压缩工具箱影响了边缘推理、加速器、剪枝和量化工作流。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg',
+    concepts: [[l('Pruning', '剪枝'), l('Unimportant weights are removed.', '不重要权重被移除。')], [l('Quantization', '量化'), l('Weights share a smaller set of values.', '权重共享更小的数值集合。')]],
+    related: [l('AlexNet', 'AlexNet'), l('MobileNets', 'MobileNets'), l('Knowledge Distillation', '知识蒸馏')], regions: [l('United States', '美国'), l('China', '中国')],
+    steps: [l('Prune', '剪枝'), l('Quantize', '量化'), l('Code', '编码')],
+    sources: [
+      source('Paper', 'Deep Compression', 'https://arxiv.org/abs/1510.00149', '论文', '《深度压缩》'),
+      source('Conference paper', 'ICLR OpenReview record', 'https://openreview.net/forum?id=n4Bp24yb5L', '会议论文', 'ICLR OpenReview 记录'),
+      source('Project', 'Song Han efficient AI research page', 'https://hanlab.mit.edu/projects/deep-compression', '项目', '韩松实验室深度压缩项目页面')
+    ], articleSite: l('Project page', '项目页面'), articleAction: l('Open project page', '打开项目页面')
+  },
+  {
+    key: 'ai100-2015-knowledge-distillation', year: 2015, title: 'Knowledge Distillation', zhTitle: '知识蒸馏',
+    location: 'Google', country: 'Mountain View, United States', coordinates: [37.3861, -122.0839],
+    figures: [figure('Geoffrey Hinton', 'Knowledge distillation co-author', '杰弗里·辛顿', '知识蒸馏共同作者')],
+    area: l('Model efficiency', '模型效率'), method: l('Teacher-student soft-target training', '教师-学生软目标训练'),
+    artifact: l('Distillation training recipe', '蒸馏训练配方'), material: l('NIPS workshop paper', 'NIPS 研讨会论文'),
+    quote: l('Distilling the knowledge in a neural network', '蒸馏神经网络中的知识'), quoteWork: l('Distilling the Knowledge in a Neural Network', '蒸馏神经网络中的知识'),
+    quoteAuthors: l('Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015', '杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015'), quoteUrl: 'https://arxiv.org/abs/1503.02531',
+    description: l('Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.', '知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。'),
+    demo: l('A teacher produces softened logits, and the student learns from both those soft targets and the original labels.', '教师产生软化 logits，学生同时从这些软目标和原始标签中学习。'),
+    legacy: l('Experts generally treat knowledge distillation as a standard model-compression and transfer technique. Its long-term legacy is the teacher-student pattern now used for efficient inference, ensembles, and large-model adaptation.', '专家通常把知识蒸馏视为标准的模型压缩和迁移技术。它的长期影响在于教师-学生模式如今用于高效推理、集成模型和大模型适配。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg',
+    concepts: [[l('Soft Targets', '软目标'), l('Probabilities reveal similarity between classes.', '概率揭示类别之间的相似性。')], [l('Student Model', '学生模型'), l('A smaller model imitates the teacher behavior.', '较小模型模仿教师行为。')]],
+    related: [l('Deep Compression', '深度压缩'), l('GPT', 'GPT'), l('BERT', 'BERT')], regions: [l('United States', '美国')],
+    steps: [l('Teacher logits', '教师 logits'), l('Soft targets', '软目标'), l('Student update', '学生更新')],
+    sources: [
+      source('Paper', 'Distilling the Knowledge in a Neural Network', 'https://arxiv.org/abs/1503.02531', '论文', '《蒸馏神经网络中的知识》'),
+      source('Background', 'Knowledge distillation overview', 'https://en.wikipedia.org/wiki/Knowledge_distillation', '背景', '知识蒸馏概览'),
+      source('People', 'Geoffrey Hinton profile', 'https://www.cs.toronto.edu/~hinton/', '人物', '杰弗里·辛顿资料')
+    ], articleSite: l('arXiv', 'arXiv'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-2014-ms-coco', year: 2014, title: 'MS COCO', zhTitle: 'MS COCO',
+    location: 'Microsoft Research', country: 'Redmond, United States', coordinates: [47.674, -122.1215],
+    figures: [figure('Tsung-Yi Lin', 'MS COCO lead author', '林宗毅', 'MS COCO 主要作者')],
+    area: l('Computer Vision Dataset', '计算机视觉数据集'), method: l('Objects in context benchmark', '上下文中的目标基准'),
+    artifact: l('Microsoft COCO dataset', 'Microsoft COCO 数据集'), material: l('ECCV paper and dataset website', 'ECCV 论文与数据集网站'),
+    quote: l('Common objects in context', '上下文中的常见物体'), quoteWork: l('Microsoft COCO: Common Objects in Context', 'Microsoft COCO：上下文中的常见物体'),
+    quoteAuthors: l('Tsung-Yi Lin et al., ECCV, 2014', '林宗毅等，ECCV，2014'), quoteUrl: 'https://arxiv.org/abs/1405.0312',
+    description: l('MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.', 'MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。'),
+    demo: l('Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.', '图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。'),
+    legacy: l('Experts generally treat MS COCO as one of the most important datasets for modern computer vision. Its long-term legacy is the multi-task benchmark culture that shaped object detection, segmentation, and captioning progress.', '专家通常把 MS COCO 视为现代计算机视觉最重要的数据集之一。它的长期影响在于多任务基准文化塑造了目标检测、分割和字幕生成的进展。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg',
+    concepts: [[l('Context', '上下文'), l('Objects are labeled inside everyday scenes.', '物体在日常场景中被标注。')], [l('Multi-task Labels', '多任务标签'), l('Detection, masks, captions, and keypoints share one dataset.', '检测、掩码、字幕和关键点共享同一数据集。')]],
+    related: [l('ImageNet', 'ImageNet'), l('Faster R-CNN', 'Faster R-CNN'), l('Segment Anything', 'Segment Anything')], regions: [l('United States', '美国')],
+    steps: [l('Scene image', '场景图像'), l('Object labels', '物体标签'), l('Benchmark tasks', '基准任务')],
+    sources: [
+      source('Paper', 'Microsoft COCO: Common Objects in Context', 'https://arxiv.org/abs/1405.0312', '论文', '《Microsoft COCO：上下文中的常见物体》'),
+      source('Dataset', 'COCO dataset website', 'https://cocodataset.org/', '数据集', 'COCO 数据集网站'),
+      source('Conference paper', 'ECCV Springer record', 'https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48', '会议论文', 'ECCV Springer 记录')
+    ], articleSite: l('COCO Dataset', 'COCO 数据集'), articleAction: l('Open dataset', '打开数据集')
+  },
+  {
+    key: 'ai100-1989-q-learning', year: 1989, title: 'Q-Learning', zhTitle: 'Q-Learning',
+    location: "King's College Cambridge", country: 'Cambridge, United Kingdom', coordinates: [52.2043, 0.1166],
+    figures: [figure('Christopher Watkins', 'Q-learning lead author', '克里斯托弗·沃特金斯', 'Q-learning 主要作者')],
+    area: l('Reinforcement learning', '强化学习'), method: l('Off-policy temporal-difference control', '离策略时序差分控制'),
+    artifact: l('Q-learning update rule', 'Q-learning 更新规则'), material: l('PhD thesis and Machine Learning paper', '博士论文与《Machine Learning》论文'),
+    quote: l('Learning from delayed rewards', '从延迟奖励中学习'), quoteWork: l('Learning from Delayed Rewards', '从延迟奖励中学习'),
+    quoteAuthors: l('Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992', '克里斯托弗·沃特金斯，博士论文，1989；沃特金斯和彼得·戴扬，1992'), quoteUrl: 'https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf',
+    description: l('Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.', 'Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。'),
+    demo: l('The agent observes a reward and next state, then updates the current state-action value toward a Bellman target.', '智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。'),
+    legacy: l('Experts generally treat Q-learning as a foundational control algorithm for reinforcement learning. Its long-term legacy is the Bellman-error update pattern that later scaled into Deep Q Networks and many value-based agents.', '专家通常把 Q-learning 视为强化学习控制算法的基础。它的长期影响在于 Bellman 误差更新模式后来扩展到深度 Q 网络和许多基于价值的智能体。'),
+    visual: 'resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg',
+    concepts: [[l('Action Value', '动作价值'), l('Q estimates future return for a state-action pair.', 'Q 估计状态-动作对的未来回报。')], [l('Off-policy', '离策略'), l('Learning can target a greedy policy while exploring differently.', '学习可以指向贪心策略，同时用不同方式探索。')]],
+    related: [l('Temporal-difference update', '时序差分更新'), l('Deep Q Network', '深度 Q 网络'), l('SARSA', 'SARSA')], regions: [l('United Kingdom', '英国')],
+    steps: [l('State action', '状态动作'), l('Reward + next state', '奖励 + 下一状态'), l('Q update', 'Q 更新')],
+    sources: [
+      source('Thesis', 'Learning from Delayed Rewards', 'https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf', '博士论文', '《从延迟奖励中学习》'),
+      source('Paper', 'Q-learning', 'https://link.springer.com/article/10.1007/BF00992698', '论文', '《Q-learning》'),
+      source('Background', 'Q-learning overview', 'https://en.wikipedia.org/wiki/Q-learning', '背景', 'Q-learning 概览')
+    ], articleSite: l('Royal Holloway', '伦敦大学皇家霍洛威学院'), articleAction: l('Open thesis', '打开博士论文')
+  },
+  {
+    key: 'ai100-2015-ddpg', year: 2015, title: 'DDPG', zhTitle: 'DDPG',
+    location: 'DeepMind', country: 'London, United Kingdom', coordinates: [51.5072, -0.1276],
+    figures: [figure('Timothy Lillicrap', 'DDPG lead author', '蒂莫西·利利克拉普', 'DDPG 主要作者')],
+    area: l('Reinforcement learning', '强化学习'), method: l('Deterministic actor-critic for continuous control', '用于连续控制的确定性 actor-critic'),
+    artifact: l('Deep Deterministic Policy Gradient', '深度确定性策略梯度'), material: l('ICLR paper and continuous-control benchmarks', 'ICLR 论文与连续控制基准'),
+    quote: l('Continuous control with deep reinforcement learning', '使用深度强化学习进行连续控制'), quoteWork: l('Continuous Control with Deep Reinforcement Learning', '使用深度强化学习进行连续控制'),
+    quoteAuthors: l('Timothy Lillicrap et al., ICLR, 2016', '蒂莫西·利利克拉普等，ICLR，2016'), quoteUrl: 'https://arxiv.org/abs/1509.02971',
+    description: l('DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.', 'DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。'),
+    demo: l('The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.', 'actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。'),
+    legacy: l('Experts generally treat DDPG as an important early deep RL algorithm for continuous control, even though later methods improved stability. Its long-term legacy is the actor-critic template behind TD3, SAC, and many robotics agents.', '专家通常把 DDPG 视为早期连续控制深度强化学习的重要算法，尽管后续方法提高了稳定性。它的长期影响在于 actor-critic 模板影响了 TD3、SAC 和许多机器人智能体。'),
+    visual: 'resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg',
+    concepts: [[l('Actor', 'Actor'), l('The policy outputs a continuous action.', '策略输出连续动作。')], [l('Critic', 'Critic'), l('The value model supplies policy gradients.', '价值模型提供策略梯度。')]],
+    related: [l('Actor-Critic', 'Actor-Critic'), l('Deep Q Network', '深度 Q 网络'), l('Policy gradient theorem', '策略梯度定理')], regions: [l('United Kingdom', '英国')],
+    steps: [l('Actor action', 'actor 动作'), l('Critic value', 'critic 价值'), l('Policy update', '策略更新')],
+    sources: [
+      source('Paper', 'Continuous Control with Deep Reinforcement Learning', 'https://arxiv.org/abs/1509.02971', '论文', '《使用深度强化学习进行连续控制》'),
+      source('Conference paper', 'ICLR OpenReview record', 'https://openreview.net/forum?id=Rx4nmj8j6G', '会议论文', 'ICLR OpenReview 记录'),
+      source('Background', 'Deep deterministic policy gradient overview', 'https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient', '背景', '深度确定性策略梯度概览')
+    ], articleSite: l('arXiv', 'arXiv'), articleAction: l('Open paper', '打开论文')
+  },
+  {
+    key: 'ai100-1983-actor-critic', year: 1983, title: 'Actor-Critic', zhTitle: 'Actor-Critic',
+    location: 'University of Massachusetts Amherst', country: 'Amherst, United States', coordinates: [42.3868, -72.5301],
+    figures: [figure('Andrew Barto', 'Actor-Critic co-author', '安德鲁·巴托', 'Actor-Critic 共同作者')],
+    area: l('Reinforcement learning', '强化学习'), method: l('Separate policy and value learning', '分离的策略与价值学习'),
+    artifact: l('Actor-critic reinforcement-learning architecture', 'Actor-Critic 强化学习架构'), material: l('IEEE Systems, Man, and Cybernetics paper', 'IEEE Systems, Man, and Cybernetics 论文'),
+    quote: l('Neuronlike adaptive elements that can solve difficult learning control problems', '能够解决困难学习控制问题的类神经自适应元件'),
+    quoteWork: l('Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems', '能够解决困难学习控制问题的类神经自适应元件'),
+    quoteAuthors: l('Andrew Barto, Richard Sutton, and Charles Anderson, 1983', '安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983'), quoteUrl: 'https://doi.org/10.1109/TSMC.1983.6313077',
+    description: l('Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.', 'Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。'),
+    demo: l('The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.', 'actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。'),
+    legacy: l('Experts generally treat actor-critic as a core architecture for modern reinforcement learning. Its long-term legacy is the policy-value split that underlies A3C, DDPG, PPO-style training, and many game or robotics agents.', '专家通常把 Actor-Critic 视为现代强化学习的核心架构。它的长期影响在于策略-价值分离支撑了 A3C、DDPG、PPO 式训练以及许多游戏或机器人智能体。'),
+    visual: 'resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg',
+    concepts: [[l('Actor', 'Actor'), l('The policy chooses actions.', '策略选择动作。')], [l('Critic', 'Critic'), l('The value estimate evaluates the action.', '价值估计评价动作。')]],
+    related: [l('Temporal-difference update', '时序差分更新'), l('Q-Learning', 'Q-Learning'), l('DDPG', 'DDPG')], regions: [l('United States', '美国')],
+    steps: [l('Act', '行动'), l('Critique', '评价'), l('Improve policy', '改进策略')],
+    sources: [
+      source('Paper', 'Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems', 'https://doi.org/10.1109/TSMC.1983.6313077', '论文', '《能够解决困难学习控制问题的类神经自适应元件》'),
+      source('Book', 'Reinforcement Learning: An Introduction', 'http://incompleteideas.net/book/the-book-2nd.html', '书籍', '《强化学习导论》'),
+      source('Background', 'Actor-critic model overview', 'https://en.wikipedia.org/wiki/Actor-critic_model', '背景', 'Actor-Critic 模型概览')
+    ], articleSite: l('IEEE Xplore', 'IEEE Xplore'), articleAction: l('Open DOI page', '打开 DOI 页面')
+  }
+);
+
+const lateAi100Portraits = {
+  'ai100-2021-swin-transformer': {
+    portrait: 'https://zeliu98.github.io/images/zeliu.jpg',
+    portraitCaption: l('Ze Liu portrait', '刘泽肖像'),
+    portraitSubcaption: l('Swin Transformer lead author', 'Swin Transformer 主要作者'),
+    portraitSourceName: l('Ze Liu homepage', '刘泽个人主页'),
+    portraitSource: 'https://zeliu98.github.io/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2014-glove': {
+    portrait: 'https://nlp.stanford.edu/~jpennin/images/photo.jpeg',
+    portraitCaption: l('Jeffrey Pennington portrait', '杰弗里·彭宁顿肖像'),
+    portraitSubcaption: l('GloVe lead author', 'GloVe 主要作者'),
+    portraitSourceName: l('Stanford NLP profile', '斯坦福 NLP 个人页面'),
+    portraitSource: 'https://nlp.stanford.edu/~jpennin/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2014-conditional-gan': {
+    portrait: 'https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg',
+    portraitCaption: l('Simon Osindero portrait', '西蒙·奥辛德罗肖像'),
+    portraitSubcaption: l('Conditional GAN co-author', 'Conditional GAN 共同作者'),
+    portraitSourceName: l('Kaptur interview', 'Kaptur 访谈'),
+    portraitSource: 'https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/',
+    portraitLicense: l('Article image; reuse rights not stated.', '文章配图；未说明复用权利。')
+  },
+  'ai100-2015-dcgan': {
+    portrait: 'resources/images/figures/alec-radford.png',
+    portraitCaption: l('Alec Radford portrait', '亚历克·拉德福德肖像'),
+    portraitSubcaption: l('DCGAN lead author', 'DCGAN 主要作者'),
+    portraitSourceName: l('Local project asset', '本地项目素材'),
+    portraitSource: 'resources/images/figures/alec-radford.png',
+    portraitLicense: l('Local project image; reuse rights inherited from existing project asset metadata.', '本地项目图片；复用权利沿用现有项目素材元数据。')
+  },
+  'ai100-2017-wasserstein-gan': {
+    portrait: 'https://leon.bottou.org/_media/bottou_75.jpg',
+    portraitCaption: l('Leon Bottou portrait', '莱昂·博图肖像'),
+    portraitSubcaption: l('Wasserstein GAN co-author', 'Wasserstein GAN 共同作者'),
+    portraitSourceName: l('Leon Bottou homepage', '莱昂·博图个人主页'),
+    portraitSource: 'https://leon.bottou.org/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2017-cyclegan': {
+    portrait: 'https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg',
+    portraitCaption: l('Jun-Yan Zhu portrait', '朱俊彦肖像'),
+    portraitSubcaption: l('CycleGAN lead author', 'CycleGAN 主要作者'),
+    portraitSourceName: l('Jun-Yan Zhu homepage', '朱俊彦个人主页'),
+    portraitSource: 'https://www.cs.cmu.edu/~junyanz/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2017-pix2pix': {
+    portrait: 'https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg',
+    portraitCaption: l('Phillip Isola portrait', '菲利普·伊索拉肖像'),
+    portraitSubcaption: l('Pix2Pix lead author', 'Pix2Pix 主要作者'),
+    portraitSourceName: l('Phillip Isola homepage', '菲利普·伊索拉个人主页'),
+    portraitSource: 'https://web.mit.edu/phillipi/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2019-stylegan': {
+    portrait: 'https://research.nvidia.com/sites/default/files/person/tero-karras.png',
+    portraitCaption: l('Tero Karras portrait', '泰罗·卡拉斯肖像'),
+    portraitSubcaption: l('StyleGAN lead author', 'StyleGAN 主要作者'),
+    portraitSourceName: l('NVIDIA Research profile', 'NVIDIA Research 个人资料'),
+    portraitSource: 'https://research.nvidia.com/person/tero-karras',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2013-variational-autoencoder': {
+    portrait: 'https://dpkingma.com/files/portrait.jpg',
+    portraitCaption: l('Diederik Kingma portrait', '迪德里克·金马肖像'),
+    portraitSubcaption: l('VAE lead author', 'VAE 主要作者'),
+    portraitSourceName: l('Diederik Kingma homepage', '迪德里克·金马个人主页'),
+    portraitSource: 'https://dpkingma.com/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2015-diffusion-model': {
+    portrait: 'https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png',
+    portraitCaption: l('Jascha Sohl-Dickstein portrait', '雅沙·索尔-迪克斯坦肖像'),
+    portraitSubcaption: l('Diffusion model lead author', '扩散模型主要作者'),
+    portraitSourceName: l('Jascha Sohl-Dickstein homepage', '雅沙·索尔-迪克斯坦个人主页'),
+    portraitSource: 'https://sohldickstein.com/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2005-gnn': {
+    portrait: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2',
+    portraitCaption: l('Franco Scarselli portrait', '弗朗科·斯卡尔塞利肖像'),
+    portraitSubcaption: l('Graph neural network co-author', '图神经网络共同作者'),
+    portraitSourceName: l('Google Scholar profile', 'Google Scholar 个人资料'),
+    portraitSource: 'https://scholar.google.com/citations?user=MdCY3T8AAAAJ',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2016-gcn': {
+    portrait: 'https://tkipf.github.io/images/photo.jpg',
+    portraitCaption: l('Thomas Kipf portrait', '托马斯·基普夫肖像'),
+    portraitSubcaption: l('GCN lead author', 'GCN 主要作者'),
+    portraitSourceName: l('Thomas Kipf homepage', '托马斯·基普夫个人主页'),
+    portraitSource: 'https://tkipf.github.io/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2017-gat': {
+    portrait: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1',
+    portraitCaption: l('Petar Velickovic portrait', '彼得·维利奇科维奇肖像'),
+    portraitSubcaption: l('Graph Attention Networks lead author', '图注意力网络主要作者'),
+    portraitSourceName: l('Google Scholar profile', 'Google Scholar 个人资料'),
+    portraitSource: 'https://scholar.google.com/citations?user=kcTK_FAAAAAJ',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2016-nas': {
+    portrait: 'https://barretzoph.github.io/images/headshot.jpg',
+    portraitCaption: l('Barret Zoph portrait', '巴雷特·佐夫肖像'),
+    portraitSubcaption: l('Neural architecture search lead author', '神经架构搜索主要作者'),
+    portraitSourceName: l('Barret Zoph homepage', '巴雷特·佐夫个人主页'),
+    portraitSource: 'https://barretzoph.github.io/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2015-deep-compression': {
+    portrait: 'https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg',
+    portraitCaption: l('Song Han portrait', '韩松肖像'),
+    portraitSubcaption: l('Deep Compression lead author', '深度压缩主要作者'),
+    portraitSourceName: l('Han Lab profile', '韩松实验室个人资料'),
+    portraitSource: 'https://hanlab.mit.edu/songhan',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2015-knowledge-distillation': {
+    portrait: 'resources/images/figures/geoffrey-hinton.jpg',
+    portraitCaption: l('Geoffrey Hinton portrait', '杰弗里·辛顿肖像'),
+    portraitSubcaption: l('Knowledge distillation co-author', '知识蒸馏共同作者'),
+    portraitSourceName: l('Local project asset', '本地项目素材'),
+    portraitSource: 'resources/images/figures/geoffrey-hinton.jpg',
+    portraitLicense: l('Local project image; reuse rights inherited from existing project asset metadata.', '本地项目图片；复用权利沿用现有项目素材元数据。')
+  },
+  'ai100-2014-ms-coco': {
+    portrait: 'https://tsungyilin.info/images/tsungyi.jpeg',
+    portraitCaption: l('Tsung-Yi Lin portrait', '林宗毅肖像'),
+    portraitSubcaption: l('MS COCO lead author', 'MS COCO 主要作者'),
+    portraitSourceName: l('Tsung-Yi Lin homepage', '林宗毅个人主页'),
+    portraitSource: 'https://tsungyilin.info/',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-1989-q-learning': {
+    portrait: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1',
+    portraitCaption: l('Christopher Watkins portrait', '克里斯托弗·沃特金斯肖像'),
+    portraitSubcaption: l('Q-learning lead author', 'Q-learning 主要作者'),
+    portraitSourceName: l('Google Scholar profile', 'Google Scholar 个人资料'),
+    portraitSource: 'https://scholar.google.com/citations?user=v8QhiOwAAAAJ',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  },
+  'ai100-2015-ddpg': {
+    portrait: 'https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png',
+    portraitCaption: l('Timothy Lillicrap portrait', '蒂莫西·利利克拉普肖像'),
+    portraitSubcaption: l('DDPG lead author', 'DDPG 主要作者'),
+    portraitSourceName: l('Stanford Wu Tsai Neurosciences Institute event page', '斯坦福吴蔡神经科学研究所活动页面'),
+    portraitSource: 'https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy',
+    portraitLicense: l('Event profile image; reuse rights not stated.', '活动资料图片；未说明复用权利。')
+  },
+  'ai100-1983-actor-critic': {
+    portrait: 'https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM',
+    portraitCaption: l('Andrew Barto portrait', '安德鲁·巴托肖像'),
+    portraitSubcaption: l('Actor-Critic co-author', 'Actor-Critic 共同作者'),
+    portraitSourceName: l('UMass Amherst profile', '马萨诸塞大学阿默斯特分校个人资料'),
+    portraitSource: 'https://www.cs.umass.edu/about/directory/andrew-g-barto',
+    portraitLicense: l('Profile image; reuse rights not stated.', '个人资料图片；未说明复用权利。')
+  }
+};
+
+Object.assign(module.exports, Object.fromEntries(lateAi100.map((item) => {
+  const portraitMeta = lateAi100Portraits[item.key] || item;
+  const paperUrl = item.quoteUrl || (item.sources && item.sources[0] && item.sources[0].url);
+  const title = item.title;
+  return [item.key, event({
+    year: item.year,
+    title,
+    zhTitle: item.zhTitle,
+    location: item.location,
+    country: item.country,
+    coordinates: item.coordinates,
+    description: item.description.en,
+    zhDescription: item.description.zh,
+    figures: item.figures,
+    quote: item.quote,
+    quoteWork: item.quoteWork,
+    quoteAuthors: item.quoteAuthors,
+    quoteUrl: item.quoteUrl,
+    area: item.area.en,
+    zhArea: item.area.zh,
+    method: item.method.en,
+    zhMethod: item.method.zh,
+    artifact: item.artifact.en,
+    zhArtifact: item.artifact.zh,
+    material: item.material.en,
+    zhMaterial: item.material.zh,
+    demo: item.demo.en,
+    zhDemo: item.demo.zh,
+    zhLegacy: item.legacy,
+    visual: 'configuredPaper',
+    keyConcepts: item.concepts.map(([label, text]) => [label.en, text.en, label.zh, text.zh]),
+    relatedAchievements: item.related,
+    relatedRegions: item.regions,
+    demoSteps: item.steps,
+    sources: item.sources,
+    demoNotes: [
+      {
+        label: l('Source cue', '资料线索'),
+        text: item.material
+      },
+      {
+        label: l('Interaction point', '互动点'),
+        text: item.demo
+      }
+    ],
+    portrait: portraitMeta.portrait || 'resources/images/figures/research-institution.png',
+    portraitCaption: portraitMeta.portraitCaption || l(`${title} research context`, `${item.zhTitle} 研究背景图`),
+    portraitSubcaption: portraitMeta.portraitSubcaption || l(`${title} authors and institutions`, `${item.zhTitle} 作者与机构背景`),
+    portraitSourceName: portraitMeta.portraitSourceName || l('Local project asset', '本地项目素材'),
+    portraitSource: portraitMeta.portraitSource || 'resources/images/figures/research-institution.png',
+    portraitLicense: portraitMeta.portraitLicense || l('Local institutional placeholder; replace with verified portrait if one is available.', '本地机构占位图；如有可靠人物肖像可替换。'),
+    visualImage: item.visual,
+    visualCaption: l(`${title} explainer`, `${item.zhTitle} 解释图`),
+    visualSubcaption: l('Original local explainer for the achievement flow.', '关于该成就流程的本地原创解释图。'),
+    visualSourceName: item.articleSite,
+    visualSource: paperUrl,
+    article: archive(item.articleSite, item.quoteWork, l(`${item.articleSite.en} source card for ${title}.`, `${item.articleSite.zh} 的${item.zhTitle}资料卡片。`), paperUrl, item.articleAction)
+  })];
+})));

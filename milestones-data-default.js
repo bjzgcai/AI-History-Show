@@ -24835,8 +24835,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A query point receives the label most common among nearby training examples.",
-          "zh": "查询点获得附近训练样本中最常见的标签。"
+          "en": "A query point receives the label most common among nearby training examples. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "查询点获得附近训练样本中最常见的标签。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -25071,7 +25071,29 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/neighbors.html"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "IEEE Transactions on Information Theory paper",
+            "zh": "《IEEE Transactions on Information Theory》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A query point receives the label most common among nearby training examples.",
+            "zh": "查询点获得附近训练样本中最常见的标签。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1967-knn-quiz-1",
@@ -25261,8 +25283,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
-          "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
+          "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -25497,7 +25519,29 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Technometrics paper",
+            "zh": "《Technometrics》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
+            "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1970-ridge-quiz-1",
@@ -25687,8 +25731,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier.",
-          "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
+          "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -25923,7 +25967,29 @@ const milestones = [
           "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper",
+            "zh": "CVPR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier.",
+            "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2005-hog-quiz-1",
@@ -26113,8 +26179,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
-          "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+          "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -26349,7 +26415,29 @@ const milestones = [
           "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ECCV paper",
+            "zh": "ECCV 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+            "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2006-surf-quiz-1",
@@ -26539,8 +26627,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
-          "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
+          "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -26775,7 +26863,29 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Neural Computation paper",
+            "zh": "《Neural Computation》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
+            "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1997-kernel-pca-quiz-1",
@@ -26965,8 +27075,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
-          "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+          "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -27201,7 +27311,29 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Nature paper",
+            "zh": "《Nature》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+            "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1999-nmf-quiz-1",
@@ -27391,8 +27523,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold.",
-          "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
+          "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -27627,7 +27759,29 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/manifold.html#isomap"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Science paper",
+            "zh": "《Science》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold.",
+            "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2000-isomap-quiz-1",
@@ -27817,8 +27971,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
-          "zh": "每个点由邻居重建，低维映射保持这些权重。"
+          "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "每个点由邻居重建，低维映射保持这些权重。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -28053,7 +28207,29 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Science paper",
+            "zh": "《Science》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+            "zh": "每个点由邻居重建，低维映射保持这些权重。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2000-lle-quiz-1",
@@ -28243,8 +28419,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Inputs pass through weighted thresholds, producing logical output states.",
-          "zh": "输入经过加权阈值，产生逻辑输出状态。"
+          "en": "Inputs pass through weighted thresholds, producing logical output states. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "输入经过加权阈值，产生逻辑输出状态。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -28479,7 +28655,29 @@ const milestones = [
           "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "1943 Bulletin of Mathematical Biophysics paper",
+            "zh": "1943 年《数学生物物理学通报》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Inputs pass through weighted thresholds, producing logical output states.",
+            "zh": "输入经过加权阈值，产生逻辑输出状态。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1943-mcculloch-pitts-neuron-quiz-1",
@@ -28669,8 +28867,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
-          "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+          "en": "A simulated rat receives reinforcement and changes path preferences through a maze. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -28905,7 +29103,29 @@ const milestones = [
           "url": "https://www.historyofinformation.com/detail.php?id=3884"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "SNARC historical documentation",
+            "zh": "SNARC 历史资料"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+            "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1951-snarc-quiz-1",
@@ -29082,8 +29302,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
-          "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
+          "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -29318,7 +29538,29 @@ const milestones = [
           "url": "https://doi.org/10.1016/j.neunet.2012.09.018"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Biological Cybernetics paper",
+            "zh": "《Biological Cybernetics》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
+            "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1982-som-quiz-1",
@@ -29508,8 +29750,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Output error is differentiated backward through the network so each weight receives an update.",
-          "zh": "输出误差沿网络反向求导，使每个权重获得更新量。"
+          "en": "Output error is differentiated backward through the network so each weight receives an update. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "输出误差沿网络反向求导，使每个权重获得更新量。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -29748,7 +29990,29 @@ const milestones = [
           "url": "https://en.wikipedia.org/wiki/Backpropagation"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Nature paper and earlier adaptive classifier literature",
+            "zh": "Nature 论文与更早的自适应分类器文献"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Output error is differentiated backward through the network so each weight receives an update.",
+            "zh": "输出误差沿网络反向求导，使每个权重获得更新量。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1967-back-propagation-quiz-1",
@@ -29938,8 +30202,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
-          "zh": "负响应被截断为零，正响应则线性通过。"
+          "en": "Negative responses are clipped to zero while positive responses pass through linearly. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "负响应被截断为零，正响应则线性通过。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -30178,7 +30442,29 @@ const milestones = [
           "url": "https://mila.quebec/en/directory/yoshua-bengio"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Neural vision and deep rectifier literature",
+            "zh": "神经视觉与深度整流函数文献"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+            "zh": "负响应被截断为零，正响应则线性通过。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1969-relu-quiz-1",
@@ -30355,8 +30641,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
-          "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+          "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -30591,7 +30877,29 @@ const milestones = [
           "url": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Biological Cybernetics paper",
+            "zh": "《Biological Cybernetics》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+            "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1980-neocognitron-quiz-1",
@@ -30768,8 +31076,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
-          "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+          "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -31004,7 +31312,29 @@ const milestones = [
           "url": "https://yann.lecun.com/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Neural Computation paper",
+            "zh": "《Neural Computation》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+            "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1989-lenet-quiz-1",
@@ -31181,8 +31511,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
-          "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+          "en": "Words are mapped into vectors, combined as context, and used to predict the next word. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "词被映射为向量，与上下文组合后用于预测下一个词。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -31417,7 +31747,29 @@ const milestones = [
           "url": "https://mila.quebec/en/directory/yoshua-bengio"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "JMLR paper",
+            "zh": "JMLR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+            "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2000-neural-language-model-quiz-1",
@@ -31607,8 +31959,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
-          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -31843,7 +32195,29 @@ const milestones = [
           "url": "https://en.wikipedia.org/wiki/AlexNet"
         }
       ],
-      "demoImage": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png"
+      "demoImage": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NeurIPS paper",
+            "zh": "NeurIPS 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+            "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2012-alexnet-quiz-1",
@@ -32033,8 +32407,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A shortcut path adds the input back to a learned residual transformation.",
-          "zh": "捷径路径把输入加回学习得到的残差变换。"
+          "en": "A shortcut path adds the input back to a learned residual transformation. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "捷径路径把输入加回学习得到的残差变换。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -32269,7 +32643,29 @@ const milestones = [
           "url": "https://people.csail.mit.edu/kaiming/"
         }
       ],
-      "demoImage": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png"
+      "demoImage": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper",
+            "zh": "CVPR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A shortcut path adds the input back to a learned residual transformation.",
+            "zh": "捷径路径把输入加回学习得到的残差变换。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2015-resnet-quiz-1",
@@ -32459,8 +32855,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
-          "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+          "en": "Activations are centered, scaled, then shifted by learned parameters inside the network. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -32695,7 +33091,29 @@ const milestones = [
           "url": "https://research.google.com/pubs/archive/43442.pdf"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICML paper",
+            "zh": "ICML 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+            "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2015-batch-normalization-quiz-1",
@@ -32885,8 +33303,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Every layer receives the feature maps of all earlier layers in the same block.",
-          "zh": "每一层都会接收同一块中所有早期层的特征图。"
+          "en": "Every layer receives the feature maps of all earlier layers in the same block. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "每一层都会接收同一块中所有早期层的特征图。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -33125,7 +33543,29 @@ const milestones = [
           "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/"
         }
       ],
-      "demoImage": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png"
+      "demoImage": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper",
+            "zh": "CVPR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Every layer receives the feature maps of all earlier layers in the same block.",
+            "zh": "每一层都会接收同一块中所有早期层的特征图。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2017-densenet-quiz-1",
@@ -33315,8 +33755,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
-          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -33555,7 +33995,29 @@ const milestones = [
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NeurIPS paper",
+            "zh": "NeurIPS 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+            "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2017-transformer-quiz-1",
@@ -33745,8 +34207,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "An image is split into patches, embedded as tokens, and processed by transformer attention.",
-          "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
+          "en": "An image is split into patches, embedded as tokens, and processed by transformer attention. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -33981,7 +34443,29 @@ const milestones = [
           "url": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper",
+            "zh": "ICLR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "An image is split into patches, embedded as tokens, and processed by transformer attention.",
+            "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2020-vit-quiz-1",
@@ -34171,8 +34655,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
-          "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+          "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -34411,7 +34895,29 @@ const milestones = [
           "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Neural Computation paper",
+            "zh": "《Neural Computation》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+            "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-1997-lstm-quiz-1",
@@ -34601,8 +35107,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
-          "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+          "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -34841,7 +35347,29 @@ const milestones = [
           "url": "https://www.iangoodfellow.com/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NeurIPS paper",
+            "zh": "NeurIPS 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+            "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2014-gan-quiz-1",
@@ -35031,8 +35559,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
-          "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+          "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -35267,7 +35795,29 @@ const milestones = [
           "url": "https://mila.quebec/en/person/yoshua-bengio/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper",
+            "zh": "ICLR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+            "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2014-neural-machine-translation-attention-quiz-1",
@@ -35444,8 +35994,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction.",
-          "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
+          "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -35680,7 +36230,29 @@ const milestones = [
           "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NAACL paper and Google release",
+            "zh": "NAACL 论文与 Google 发布材料"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction.",
+            "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2018-bert-quiz-1",
@@ -35857,8 +36429,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks.",
-          "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
+          "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -36093,7 +36665,29 @@ const milestones = [
           "url": "https://openai.com/research/"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "OpenAI technical paper",
+            "zh": "OpenAI 技术论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks.",
+            "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2018-gpt-quiz-1",
@@ -36283,8 +36877,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
-          "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+          "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -36519,7 +37113,29 @@ const milestones = [
           "url": "https://github.com/google-deepmind/alphafold"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Nature paper and AlphaFold Protein Structure Database",
+            "zh": "《Nature》论文与 AlphaFold 蛋白质结构数据库"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+            "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2020-alphafold2-quiz-1",
@@ -36696,8 +37312,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings.",
-          "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
+          "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -36932,7 +37548,29 @@ const milestones = [
           "url": "https://github.com/openai/CLIP"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICML paper and OpenAI release",
+            "zh": "ICML 论文与 OpenAI 发布材料"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings.",
+            "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2021-clip-quiz-1",
@@ -37109,8 +37747,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images.",
-          "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
+          "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -37345,7 +37983,29 @@ const milestones = [
           "url": "https://en.wikipedia.org/wiki/DALL-E"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICML paper and OpenAI release",
+            "zh": "ICML 论文与 OpenAI 发布材料"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images.",
+            "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2021-dalle-quiz-1",
@@ -37522,8 +38182,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical.",
-          "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
+          "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -37762,7 +38422,29 @@ const milestones = [
           "url": "https://stability.ai/stable-image"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper and model release",
+            "zh": "CVPR 论文与模型发布"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical.",
+            "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2022-stable-diffusion-quiz-1",
@@ -37939,8 +38621,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image.",
-          "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
+          "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
         }
       },
       {
@@ -38175,7 +38857,29 @@ const milestones = [
           "url": "https://github.com/facebookresearch/segment-anything"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg"
+      "demoImage": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICCV paper, model, and SA-1B dataset",
+            "zh": "ICCV 论文、模型与 SA-1B 数据集"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image.",
+            "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
+          }
+        }
+      ]
     },
     "quiz": {
       "id": "ai100-2023-segment-anything-quiz-1",
@@ -38256,6 +38960,9346 @@ const milestones = [
         "tags": [
           "segment-anything",
           "vision"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2021-swin-transformer",
+    "year": 2021,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Swin Transformer",
+      "zh": "Swin Transformer"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Microsoft Research Asia",
+        "zh": "微软亚洲研究院"
+      },
+      "country": {
+        "en": "Beijing, China",
+        "zh": "中国北京"
+      },
+      "coordinates": [
+        39.9042,
+        116.4074
+      ]
+    },
+    "description": {
+      "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>",
+      "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Ze Liu",
+          "zh": "刘泽"
+        },
+        "role": {
+          "en": "Swin Transformer lead author",
+          "zh": "Swin Transformer 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Hierarchical vision Transformer using shifted windows\"",
+      "zh": "\"使用移位窗口的层级视觉 Transformer\""
+    },
+    "quoteAttribution": {
+      "en": "《Swin Transformer: Hierarchical Vision Transformer using Shifted Windows》, Ze Liu et al., ICCV, 2021",
+      "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》, 刘泽等，ICCV，2021"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+        "zh": "Swin Transformer：使用移位窗口的层级视觉 Transformer"
+      },
+      "workAuthors": {
+        "en": "Ze Liu et al., ICCV, 2021",
+        "zh": "刘泽等，ICCV，2021"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/2103.14030"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.",
+          "zh": "Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Swin Transformer as a key step in making vision transformers competitive beyond image classification. Its long-term legacy is the hierarchical shifted-window design used by many dense prediction systems.",
+          "zh": "专家通常把 Swin Transformer 视为让视觉 Transformer 超越图像分类并进入密集预测的重要一步。它的长期影响在于层级移位窗口设计被许多密集预测系统复用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://zeliu98.github.io/images/zeliu.jpg",
+        "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg"
+      ],
+      "imageMeta": {
+        "https://zeliu98.github.io/images/zeliu.jpg": {
+          "caption": {
+            "en": "Ze Liu portrait",
+            "zh": "刘泽肖像"
+          },
+          "subcaption": {
+            "en": "Swin Transformer lead author",
+            "zh": "Swin Transformer 主要作者"
+          },
+          "sourceName": {
+            "en": "Ze Liu homepage",
+            "zh": "刘泽个人主页"
+          },
+          "source": "https://zeliu98.github.io/",
+          "sourceUrl": "https://zeliu98.github.io/",
+          "originalImageUrl": "https://zeliu98.github.io/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg": {
+          "caption": {
+            "en": "Swin Transformer explainer",
+            "zh": "Swin Transformer 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放论文库"
+          },
+          "source": "https://arxiv.org/abs/2103.14030",
+          "sourceUrl": "https://arxiv.org/abs/2103.14030",
+          "originalImageUrl": "https://arxiv.org/abs/2103.14030",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Shifted-window hierarchical attention",
+        "zh": "移位窗口层级注意力"
+      },
+      "artifact": {
+        "en": "Swin Transformer vision backbone",
+        "zh": "Swin Transformer 视觉骨干网络"
+      },
+      "material": {
+        "en": "ICCV paper and official code release",
+        "zh": "ICCV 论文与官方代码发布"
+      },
+      "demo": {
+        "en": "Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers.",
+        "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Shifted Windows",
+            "zh": "移位窗口"
+          },
+          "text": {
+            "en": "Local attention windows are offset between stages.",
+            "zh": "局部注意力窗口在阶段之间错位。"
+          }
+        },
+        {
+          "label": {
+            "en": "Hierarchy",
+            "zh": "层级结构"
+          },
+          "text": {
+            "en": "Patch merging builds multi-scale feature maps.",
+            "zh": "图像块合并构建多尺度特征图。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Vision Transformer",
+            "zh": "视觉 Transformer"
+          },
+          "zh": {
+            "en": "Vision Transformer",
+            "zh": "视觉 Transformer"
+          }
+        },
+        {
+          "en": {
+            "en": "ImageNet",
+            "zh": "ImageNet"
+          },
+          "zh": {
+            "en": "ImageNet",
+            "zh": "ImageNet"
+          }
+        },
+        {
+          "en": {
+            "en": "FPN",
+            "zh": "FPN"
+          },
+          "zh": {
+            "en": "FPN",
+            "zh": "FPN"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "China",
+            "zh": "中国"
+          },
+          "zh": {
+            "en": "China",
+            "zh": "中国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Patch grid",
+            "zh": "图像块网格"
+          },
+          "zh": {
+            "en": "Patch grid",
+            "zh": "图像块网格"
+          }
+        },
+        {
+          "en": {
+            "en": "Window attention",
+            "zh": "窗口注意力"
+          },
+          "zh": {
+            "en": "Window attention",
+            "zh": "窗口注意力"
+          }
+        },
+        {
+          "en": {
+            "en": "Shift and merge",
+            "zh": "移位与合并"
+          },
+          "zh": {
+            "en": "Shift and merge",
+            "zh": "移位与合并"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放论文库"
+          },
+          "title": {
+            "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+            "zh": "Swin Transformer：使用移位窗口的层级视觉 Transformer"
+          },
+          "description": {
+            "en": "CVF Open Access source card for Swin Transformer.",
+            "zh": "CVF 开放论文库 的Swin Transformer资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/2103.14030",
+          "source": "https://arxiv.org/abs/2103.14030",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+            "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》"
+          },
+          "url": "https://arxiv.org/abs/2103.14030"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICCV open-access paper page",
+            "zh": "ICCV 开放论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "Microsoft Swin Transformer repository",
+            "zh": "Microsoft Swin Transformer 代码仓库"
+          },
+          "url": "https://github.com/microsoft/Swin-Transformer"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICCV paper and official code release",
+            "zh": "ICCV 论文与官方代码发布"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers.",
+            "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2021-swin-transformer-quiz-1",
+      "question": {
+        "en": "What makes Swin Transformer efficient for dense vision tasks?",
+        "zh": "Swin Transformer 为什么适合密集视觉任务？"
+      },
+      "options": [
+        {
+          "en": "Shifted local attention windows",
+          "zh": "移位局部注意力窗口"
+        },
+        {
+          "en": "A fixed chess opening",
+          "zh": "固定棋类开局"
+        },
+        {
+          "en": "Only handwritten digit labels",
+          "zh": "只有手写数字标签"
+        },
+        {
+          "en": "A chemical rule table",
+          "zh": "化学规则表"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Shifted windows let local attention exchange information across neighboring image regions.",
+        "zh": "移位窗口让局部注意力在相邻图像区域之间交换信息。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "swin-transformer",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2021-swin-transformer-quiz-1",
+        "question": {
+          "en": "What makes Swin Transformer efficient for dense vision tasks?",
+          "zh": "Swin Transformer 为什么适合密集视觉任务？"
+        },
+        "options": [
+          {
+            "en": "Shifted local attention windows",
+            "zh": "移位局部注意力窗口"
+          },
+          {
+            "en": "A fixed chess opening",
+            "zh": "固定棋类开局"
+          },
+          {
+            "en": "Only handwritten digit labels",
+            "zh": "只有手写数字标签"
+          },
+          {
+            "en": "A chemical rule table",
+            "zh": "化学规则表"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Shifted windows let local attention exchange information across neighboring image regions.",
+          "zh": "移位窗口让局部注意力在相邻图像区域之间交换信息。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "swin-transformer",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2014-glove",
+    "year": 2014,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "GloVe",
+      "zh": "GloVe"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "Stanford, United States",
+        "zh": "美国斯坦福"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>",
+      "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jeffrey Pennington",
+          "zh": "杰弗里·彭宁顿"
+        },
+        "role": {
+          "en": "GloVe lead author",
+          "zh": "GloVe 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Global vectors for word representation\"",
+      "zh": "\"用于词表示的全局向量\""
+    },
+    "quoteAttribution": {
+      "en": "《GloVe: Global Vectors for Word Representation》, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+      "zh": "《GloVe：用于词表示的全局向量》, 杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "GloVe: Global Vectors for Word Representation",
+        "zh": "GloVe：用于词表示的全局向量"
+      },
+      "workAuthors": {
+        "en": "Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+        "zh": "杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://aclanthology.org/D14-1162/"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.",
+          "zh": "GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat GloVe as an influential bridge between distributional statistics and embedding models. Its long-term legacy is the global co-occurrence view that remained useful even after contextual language models became dominant.",
+          "zh": "专家通常把 GloVe 视为连接分布统计和嵌入模型的重要桥梁。它的长期影响在于全局共现视角即使在上下文语言模型占主导后仍然有用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+        "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg"
+      ],
+      "imageMeta": {
+        "https://nlp.stanford.edu/~jpennin/images/photo.jpeg": {
+          "caption": {
+            "en": "Jeffrey Pennington portrait",
+            "zh": "杰弗里·彭宁顿肖像"
+          },
+          "subcaption": {
+            "en": "GloVe lead author",
+            "zh": "GloVe 主要作者"
+          },
+          "sourceName": {
+            "en": "Stanford NLP profile",
+            "zh": "斯坦福 NLP 个人页面"
+          },
+          "source": "https://nlp.stanford.edu/~jpennin/",
+          "sourceUrl": "https://nlp.stanford.edu/~jpennin/",
+          "originalImageUrl": "https://nlp.stanford.edu/~jpennin/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg": {
+          "caption": {
+            "en": "GloVe explainer",
+            "zh": "GloVe 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "ACL Anthology",
+            "zh": "ACL Anthology"
+          },
+          "source": "https://aclanthology.org/D14-1162/",
+          "sourceUrl": "https://aclanthology.org/D14-1162/",
+          "originalImageUrl": "https://aclanthology.org/D14-1162/",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Global word-vector factorization",
+        "zh": "全局词向量分解"
+      },
+      "artifact": {
+        "en": "GloVe word embeddings",
+        "zh": "GloVe 词嵌入"
+      },
+      "material": {
+        "en": "EMNLP paper and Stanford project page",
+        "zh": "EMNLP 论文与斯坦福项目页面"
+      },
+      "demo": {
+        "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.",
+        "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Co-occurrence",
+            "zh": "共现"
+          },
+          "text": {
+            "en": "Word counts preserve corpus-level association.",
+            "zh": "词共现计数保留语料级关联。"
+          }
+        },
+        {
+          "label": {
+            "en": "Vector Analogy",
+            "zh": "向量类比"
+          },
+          "text": {
+            "en": "Linear directions capture useful relations.",
+            "zh": "线性方向捕获有用关系。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Word2vec",
+            "zh": "Word2vec"
+          },
+          "zh": {
+            "en": "Word2vec",
+            "zh": "Word2vec"
+          }
+        },
+        {
+          "en": {
+            "en": "Neural Language Model",
+            "zh": "神经语言模型"
+          },
+          "zh": {
+            "en": "Neural Language Model",
+            "zh": "神经语言模型"
+          }
+        },
+        {
+          "en": {
+            "en": "BERT",
+            "zh": "BERT"
+          },
+          "zh": {
+            "en": "BERT",
+            "zh": "BERT"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Count pairs",
+            "zh": "统计词对"
+          },
+          "zh": {
+            "en": "Count pairs",
+            "zh": "统计词对"
+          }
+        },
+        {
+          "en": {
+            "en": "Fit vectors",
+            "zh": "拟合向量"
+          },
+          "zh": {
+            "en": "Fit vectors",
+            "zh": "拟合向量"
+          }
+        },
+        {
+          "en": {
+            "en": "Compare meanings",
+            "zh": "比较语义"
+          },
+          "zh": {
+            "en": "Compare meanings",
+            "zh": "比较语义"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "ACL Anthology",
+            "zh": "ACL Anthology"
+          },
+          "title": {
+            "en": "GloVe: Global Vectors for Word Representation",
+            "zh": "GloVe：用于词表示的全局向量"
+          },
+          "description": {
+            "en": "ACL Anthology source card for GloVe.",
+            "zh": "ACL Anthology 的GloVe资料卡片。"
+          },
+          "url": "https://aclanthology.org/D14-1162/",
+          "source": "https://aclanthology.org/D14-1162/",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "GloVe: Global Vectors for Word Representation",
+            "zh": "《GloVe：用于词表示的全局向量》"
+          },
+          "url": "https://aclanthology.org/D14-1162/"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Stanford GloVe project page",
+            "zh": "斯坦福 GloVe 项目页面"
+          },
+          "url": "https://nlp.stanford.edu/projects/glove/"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "ACL Anthology PDF",
+            "zh": "ACL Anthology 论文 PDF"
+          },
+          "url": "https://aclanthology.org/D14-1162.pdf"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "EMNLP paper and Stanford project page",
+            "zh": "EMNLP 论文与斯坦福项目页面"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.",
+            "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2014-glove-quiz-1",
+      "question": {
+        "en": "What does GloVe use to learn word vectors?",
+        "zh": "GloVe 用什么来学习词向量？"
+      },
+      "options": [
+        {
+          "en": "Global word co-occurrence statistics",
+          "zh": "全局词共现统计"
+        },
+        {
+          "en": "Only image masks",
+          "zh": "只有图像掩码"
+        },
+        {
+          "en": "Robot joint torque",
+          "zh": "机器人关节力矩"
+        },
+        {
+          "en": "A theorem prover trace",
+          "zh": "定理证明轨迹"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "GloVe fits vectors to weighted word co-occurrence information from a corpus.",
+        "zh": "GloVe 根据语料中的加权词共现信息拟合词向量。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "glove",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2014-glove-quiz-1",
+        "question": {
+          "en": "What does GloVe use to learn word vectors?",
+          "zh": "GloVe 用什么来学习词向量？"
+        },
+        "options": [
+          {
+            "en": "Global word co-occurrence statistics",
+            "zh": "全局词共现统计"
+          },
+          {
+            "en": "Only image masks",
+            "zh": "只有图像掩码"
+          },
+          {
+            "en": "Robot joint torque",
+            "zh": "机器人关节力矩"
+          },
+          {
+            "en": "A theorem prover trace",
+            "zh": "定理证明轨迹"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "GloVe fits vectors to weighted word co-occurrence information from a corpus.",
+          "zh": "GloVe 根据语料中的加权词共现信息拟合词向量。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "glove",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2014-conditional-gan",
+    "year": 2014,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Conditional GAN",
+      "zh": "Conditional GAN"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Montreal",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Montreal, Canada",
+        "zh": "加拿大蒙特利尔"
+      },
+      "coordinates": [
+        45.5019,
+        -73.5674
+      ]
+    },
+    "description": {
+      "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>",
+      "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Mehdi Mirza",
+          "zh": "迈赫迪·米尔扎"
+        },
+        "role": {
+          "en": "Conditional GAN lead author",
+          "zh": "Conditional GAN 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Conditional generative adversarial nets\"",
+      "zh": "\"条件生成对抗网络\""
+    },
+    "quoteAttribution": {
+      "en": "《Conditional Generative Adversarial Nets》, Mehdi Mirza and Simon Osindero, 2014",
+      "zh": "《条件生成对抗网络》, 迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Conditional Generative Adversarial Nets",
+        "zh": "条件生成对抗网络"
+      },
+      "workAuthors": {
+        "en": "Mehdi Mirza and Simon Osindero, 2014",
+        "zh": "迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1411.1784"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.",
+          "zh": "Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat conditional GANs as a foundational control mechanism for generative models. Its long-term legacy is the conditioning pattern reused by image translation, text-to-image, and controllable synthesis systems.",
+          "zh": "专家通常把 Conditional GAN 视为生成模型控制机制的基础。它的长期影响在于条件化模式被图像转换、文生图和可控合成系统反复使用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+        "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg"
+      ],
+      "imageMeta": {
+        "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg": {
+          "caption": {
+            "en": "Simon Osindero portrait",
+            "zh": "西蒙·奥辛德罗肖像"
+          },
+          "subcaption": {
+            "en": "Conditional GAN co-author",
+            "zh": "Conditional GAN 共同作者"
+          },
+          "sourceName": {
+            "en": "Kaptur interview",
+            "zh": "Kaptur 访谈"
+          },
+          "source": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+          "sourceUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+          "originalImageUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+          "license": {
+            "en": "Article image; reuse rights not stated.",
+            "zh": "文章配图；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg": {
+          "caption": {
+            "en": "Conditional GAN explainer",
+            "zh": "Conditional GAN 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1411.1784",
+          "sourceUrl": "https://arxiv.org/abs/1411.1784",
+          "originalImageUrl": "https://arxiv.org/abs/1411.1784",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Conditioned adversarial training",
+        "zh": "条件化对抗训练"
+      },
+      "artifact": {
+        "en": "Conditional GAN formulation",
+        "zh": "Conditional GAN 公式化方法"
+      },
+      "material": {
+        "en": "arXiv paper introducing conditional adversarial nets",
+        "zh": "提出条件化对抗网络的 arXiv 论文"
+      },
+      "demo": {
+        "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.",
+        "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Condition Signal",
+            "zh": "条件信号"
+          },
+          "text": {
+            "en": "Labels steer generated samples.",
+            "zh": "标签引导生成样本。"
+          }
+        },
+        {
+          "label": {
+            "en": "Adversarial Loss",
+            "zh": "对抗损失"
+          },
+          "text": {
+            "en": "The discriminator checks both realism and condition match.",
+            "zh": "判别器同时检查真实感和条件匹配。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GAN",
+            "zh": "GAN"
+          },
+          "zh": {
+            "en": "GAN",
+            "zh": "GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Pix2Pix",
+            "zh": "Pix2Pix"
+          },
+          "zh": {
+            "en": "Pix2Pix",
+            "zh": "Pix2Pix"
+          }
+        },
+        {
+          "en": {
+            "en": "DALL-E",
+            "zh": "DALL-E"
+          },
+          "zh": {
+            "en": "DALL-E",
+            "zh": "DALL-E"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "Canada",
+            "zh": "加拿大"
+          },
+          "zh": {
+            "en": "Canada",
+            "zh": "加拿大"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Noise + label",
+            "zh": "噪声 + 标签"
+          },
+          "zh": {
+            "en": "Noise + label",
+            "zh": "噪声 + 标签"
+          }
+        },
+        {
+          "en": {
+            "en": "Generator",
+            "zh": "生成器"
+          },
+          "zh": {
+            "en": "Generator",
+            "zh": "生成器"
+          }
+        },
+        {
+          "en": {
+            "en": "Conditioned sample",
+            "zh": "条件样本"
+          },
+          "zh": {
+            "en": "Conditioned sample",
+            "zh": "条件样本"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Conditional Generative Adversarial Nets",
+            "zh": "条件生成对抗网络"
+          },
+          "description": {
+            "en": "arXiv source card for Conditional GAN.",
+            "zh": "arXiv 的Conditional GAN资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1411.1784",
+          "source": "https://arxiv.org/abs/1411.1784",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Conditional Generative Adversarial Nets",
+            "zh": "《条件生成对抗网络》"
+          },
+          "url": "https://arxiv.org/abs/1411.1784"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Generative adversarial network overview",
+            "zh": "生成对抗网络概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+        },
+        {
+          "type": {
+            "en": "Related paper",
+            "zh": "相关论文"
+          },
+          "label": {
+            "en": "Generative Adversarial Nets",
+            "zh": "《生成对抗网络》"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "arXiv paper introducing conditional adversarial nets",
+            "zh": "提出条件化对抗网络的 arXiv 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.",
+            "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2014-conditional-gan-quiz-1",
+      "question": {
+        "en": "What does a conditional GAN add to ordinary GAN generation?",
+        "zh": "Conditional GAN 在普通 GAN 生成中加入什么？"
+      },
+      "options": [
+        {
+          "en": "A label or condition signal",
+          "zh": "标签或条件信号"
+        },
+        {
+          "en": "Only a database password",
+          "zh": "只有数据库密码"
+        },
+        {
+          "en": "A fixed Go board",
+          "zh": "固定围棋棋盘"
+        },
+        {
+          "en": "A hand-coded theorem",
+          "zh": "手写定理"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The condition steers the generator and discriminator toward requested classes or attributes.",
+        "zh": "条件信号引导生成器和判别器关注指定类别或属性。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "conditional-gan",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2014-conditional-gan-quiz-1",
+        "question": {
+          "en": "What does a conditional GAN add to ordinary GAN generation?",
+          "zh": "Conditional GAN 在普通 GAN 生成中加入什么？"
+        },
+        "options": [
+          {
+            "en": "A label or condition signal",
+            "zh": "标签或条件信号"
+          },
+          {
+            "en": "Only a database password",
+            "zh": "只有数据库密码"
+          },
+          {
+            "en": "A fixed Go board",
+            "zh": "固定围棋棋盘"
+          },
+          {
+            "en": "A hand-coded theorem",
+            "zh": "手写定理"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The condition steers the generator and discriminator toward requested classes or attributes.",
+          "zh": "条件信号引导生成器和判别器关注指定类别或属性。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "conditional-gan",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-dcgan",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "DCGAN",
+      "zh": "DCGAN"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Facebook AI Research",
+        "zh": "Facebook AI Research"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "New York, United States"
+      },
+      "coordinates": [
+        40.7128,
+        -74.006
+      ]
+    },
+    "description": {
+      "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>",
+      "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德"
+        },
+        "role": {
+          "en": "DCGAN lead author",
+          "zh": "DCGAN 主要作者"
+        },
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Unsupervised representation learning with deep convolutional generative adversarial networks\"",
+      "zh": "\"使用深度卷积生成对抗网络进行无监督表示学习\""
+    },
+    "quoteAttribution": {
+      "en": "《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+      "zh": "《使用深度卷积生成对抗网络进行无监督表示学习》, 亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+        "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+      },
+      "workAuthors": {
+        "en": "Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+        "zh": "亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1511.06434"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.",
+          "zh": "DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat DCGAN as the architecture recipe that made GAN images easier to reproduce and study. Its long-term legacy is the convolutional generator-discriminator pattern used in many later image synthesis systems.",
+          "zh": "专家通常把 DCGAN 视为让 GAN 图像生成更容易复现和研究的架构配方。它的长期影响在于卷积生成器-判别器模式被许多后续图像合成系统采用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/alec-radford.png",
+        "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/alec-radford.png": {
+          "caption": {
+            "en": "Alec Radford portrait",
+            "zh": "亚历克·拉德福德肖像"
+          },
+          "subcaption": {
+            "en": "DCGAN lead author",
+            "zh": "DCGAN 主要作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/alec-radford.png",
+          "sourceUrl": "resources/images/figures/alec-radford.png",
+          "originalImageUrl": "resources/images/figures/alec-radford.png",
+          "license": {
+            "en": "Local project image; reuse rights inherited from existing project asset metadata.",
+            "zh": "本地项目图片；复用权利沿用现有项目素材元数据。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg": {
+          "caption": {
+            "en": "DCGAN explainer",
+            "zh": "DCGAN 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1511.06434",
+          "sourceUrl": "https://arxiv.org/abs/1511.06434",
+          "originalImageUrl": "https://arxiv.org/abs/1511.06434",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Convolutional adversarial architecture",
+        "zh": "卷积式对抗架构"
+      },
+      "artifact": {
+        "en": "Deep convolutional GAN design",
+        "zh": "深度卷积 GAN 设计"
+      },
+      "material": {
+        "en": "ICLR paper and code examples",
+        "zh": "ICLR 论文与代码示例"
+      },
+      "demo": {
+        "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+        "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Transposed Convolution",
+            "zh": "转置卷积"
+          },
+          "text": {
+            "en": "Latent vectors become image grids.",
+            "zh": "潜向量变成图像网格。"
+          }
+        },
+        {
+          "label": {
+            "en": "Representation Learning",
+            "zh": "表示学习"
+          },
+          "text": {
+            "en": "The discriminator learns reusable visual features.",
+            "zh": "判别器学习可复用视觉特征。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GAN",
+            "zh": "GAN"
+          },
+          "zh": {
+            "en": "GAN",
+            "zh": "GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Conditional GAN",
+            "zh": "Conditional GAN"
+          },
+          "zh": {
+            "en": "Conditional GAN",
+            "zh": "Conditional GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "StyleGAN",
+            "zh": "StyleGAN"
+          },
+          "zh": {
+            "en": "StyleGAN",
+            "zh": "StyleGAN"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Latent code",
+            "zh": "潜编码"
+          },
+          "zh": {
+            "en": "Latent code",
+            "zh": "潜编码"
+          }
+        },
+        {
+          "en": {
+            "en": "Upsample",
+            "zh": "上采样"
+          },
+          "zh": {
+            "en": "Upsample",
+            "zh": "上采样"
+          }
+        },
+        {
+          "en": {
+            "en": "Synthetic image",
+            "zh": "合成图像"
+          },
+          "zh": {
+            "en": "Synthetic image",
+            "zh": "合成图像"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+            "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+          },
+          "description": {
+            "en": "arXiv source card for DCGAN.",
+            "zh": "arXiv 的DCGAN资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1511.06434",
+          "source": "https://arxiv.org/abs/1511.06434",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Unsupervised Representation Learning with Deep Convolutional GANs",
+            "zh": "《使用深度卷积 GAN 进行无监督表示学习》"
+          },
+          "url": "https://arxiv.org/abs/1511.06434"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "PyTorch DCGAN tutorial",
+            "zh": "PyTorch DCGAN 教程"
+          },
+          "url": "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "DCGAN overview",
+            "zh": "DCGAN 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and code examples",
+            "zh": "ICLR 论文与代码示例"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+            "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2015-dcgan-quiz-1",
+      "question": {
+        "en": "What architecture idea made DCGAN important?",
+        "zh": "DCGAN 的重要架构思想是什么？"
+      },
+      "options": [
+        {
+          "en": "Using convolutional generator and discriminator networks",
+          "zh": "使用卷积式生成器和判别器网络"
+        },
+        {
+          "en": "Replacing images with spreadsheets",
+          "zh": "用电子表格替代图像"
+        },
+        {
+          "en": "Removing all learned features",
+          "zh": "移除所有学习特征"
+        },
+        {
+          "en": "Using only symbolic rules",
+          "zh": "只使用符号规则"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DCGAN gave practical convolutional design rules for image-generating GANs.",
+        "zh": "DCGAN 为图像生成 GAN 提供了实用的卷积设计规则。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "dcgan",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-dcgan-quiz-1",
+        "question": {
+          "en": "What architecture idea made DCGAN important?",
+          "zh": "DCGAN 的重要架构思想是什么？"
+        },
+        "options": [
+          {
+            "en": "Using convolutional generator and discriminator networks",
+            "zh": "使用卷积式生成器和判别器网络"
+          },
+          {
+            "en": "Replacing images with spreadsheets",
+            "zh": "用电子表格替代图像"
+          },
+          {
+            "en": "Removing all learned features",
+            "zh": "移除所有学习特征"
+          },
+          {
+            "en": "Using only symbolic rules",
+            "zh": "只使用符号规则"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DCGAN gave practical convolutional design rules for image-generating GANs.",
+          "zh": "DCGAN 为图像生成 GAN 提供了实用的卷积设计规则。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "dcgan",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2017-wasserstein-gan",
+    "year": 2017,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Wasserstein GAN",
+      "zh": "Wasserstein GAN"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Courant Institute and Facebook AI Research",
+        "zh": "Courant Institute and Facebook AI Research"
+      },
+      "country": {
+        "en": "New York, United States",
+        "zh": "New York, United States"
+      },
+      "coordinates": [
+        40.7295,
+        -73.9965
+      ]
+    },
+    "description": {
+      "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>",
+      "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Martin Arjovsky",
+          "zh": "马丁·阿尔乔夫斯基"
+        },
+        "role": {
+          "en": "Wasserstein GAN lead author",
+          "zh": "Wasserstein GAN 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Wasserstein generative adversarial networks\"",
+      "zh": "\"Wasserstein 生成对抗网络\""
+    },
+    "quoteAttribution": {
+      "en": "《Wasserstein Generative Adversarial Networks》, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+      "zh": "《Wasserstein 生成对抗网络》, 马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Wasserstein Generative Adversarial Networks",
+        "zh": "Wasserstein 生成对抗网络"
+      },
+      "workAuthors": {
+        "en": "Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+        "zh": "马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.",
+          "zh": "Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Wasserstein GAN as a conceptual advance in understanding why GAN training can fail. Its long-term legacy is the use of transport-inspired distances and critic constraints in generative modeling.",
+          "zh": "专家通常把 Wasserstein GAN 视为理解 GAN 训练为何会失败的概念进展。它的长期影响在于把受传输启发的距离和 critic 约束引入生成式建模。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://leon.bottou.org/_media/bottou_75.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg"
+      ],
+      "imageMeta": {
+        "https://leon.bottou.org/_media/bottou_75.jpg": {
+          "caption": {
+            "en": "Leon Bottou portrait",
+            "zh": "莱昂·博图肖像"
+          },
+          "subcaption": {
+            "en": "Wasserstein GAN co-author",
+            "zh": "Wasserstein GAN 共同作者"
+          },
+          "sourceName": {
+            "en": "Leon Bottou homepage",
+            "zh": "莱昂·博图个人主页"
+          },
+          "source": "https://leon.bottou.org/",
+          "sourceUrl": "https://leon.bottou.org/",
+          "originalImageUrl": "https://leon.bottou.org/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg": {
+          "caption": {
+            "en": "Wasserstein GAN explainer",
+            "zh": "Wasserstein GAN 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "source": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "sourceUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "originalImageUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Earth-mover distance adversarial learning",
+        "zh": "基于推土机距离的对抗学习"
+      },
+      "artifact": {
+        "en": "Wasserstein GAN objective",
+        "zh": "Wasserstein GAN 目标函数"
+      },
+      "material": {
+        "en": "ICML paper and improved WGAN follow-up",
+        "zh": "ICML 论文与改进 WGAN 后续研究"
+      },
+      "demo": {
+        "en": "A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator.",
+        "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Critic",
+            "zh": "Critic"
+          },
+          "text": {
+            "en": "The critic scores samples instead of outputting a probability.",
+            "zh": "critic 给样本打分，而不是输出概率。"
+          }
+        },
+        {
+          "label": {
+            "en": "Transport Distance",
+            "zh": "传输距离"
+          },
+          "text": {
+            "en": "Training follows a smoother distribution distance.",
+            "zh": "训练跟随更平滑的分布距离。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GAN",
+            "zh": "GAN"
+          },
+          "zh": {
+            "en": "GAN",
+            "zh": "GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "DCGAN",
+            "zh": "DCGAN"
+          },
+          "zh": {
+            "en": "DCGAN",
+            "zh": "DCGAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Diffusion Model",
+            "zh": "扩散模型"
+          },
+          "zh": {
+            "en": "Diffusion Model",
+            "zh": "扩散模型"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Real samples",
+            "zh": "真实样本"
+          },
+          "zh": {
+            "en": "Real samples",
+            "zh": "真实样本"
+          }
+        },
+        {
+          "en": {
+            "en": "Critic distance",
+            "zh": "critic 距离"
+          },
+          "zh": {
+            "en": "Critic distance",
+            "zh": "critic 距离"
+          }
+        },
+        {
+          "en": {
+            "en": "Generator update",
+            "zh": "生成器更新"
+          },
+          "zh": {
+            "en": "Generator update",
+            "zh": "生成器更新"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "Wasserstein Generative Adversarial Networks",
+            "zh": "Wasserstein 生成对抗网络"
+          },
+          "description": {
+            "en": "PMLR source card for Wasserstein GAN.",
+            "zh": "PMLR 的Wasserstein GAN资料卡片。"
+          },
+          "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "source": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Wasserstein Generative Adversarial Networks",
+            "zh": "《Wasserstein 生成对抗网络》"
+          },
+          "url": "https://proceedings.mlr.press/v70/arjovsky17a.html"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Improved Training of Wasserstein GANs",
+            "zh": "《Wasserstein GAN 的改进训练》"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Wasserstein GAN overview",
+            "zh": "Wasserstein GAN 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICML paper and improved WGAN follow-up",
+            "zh": "ICML 论文与改进 WGAN 后续研究"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator.",
+            "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2017-wasserstein-gan-quiz-1",
+      "question": {
+        "en": "What does Wasserstein GAN change about GAN training?",
+        "zh": "Wasserstein GAN 改变了 GAN 训练中的什么？"
+      },
+      "options": [
+        {
+          "en": "It uses a smoother distribution-distance objective",
+          "zh": "它使用更平滑的分布距离目标"
+        },
+        {
+          "en": "It removes the generator",
+          "zh": "它移除生成器"
+        },
+        {
+          "en": "It trains only decision trees",
+          "zh": "它只训练决策树"
+        },
+        {
+          "en": "It labels protein atoms",
+          "zh": "它标注蛋白质原子"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The critic estimates a transport-inspired distance between real and generated distributions.",
+        "zh": "critic 估计真实分布和生成分布之间受传输启发的距离。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "wasserstein-gan",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2017-wasserstein-gan-quiz-1",
+        "question": {
+          "en": "What does Wasserstein GAN change about GAN training?",
+          "zh": "Wasserstein GAN 改变了 GAN 训练中的什么？"
+        },
+        "options": [
+          {
+            "en": "It uses a smoother distribution-distance objective",
+            "zh": "它使用更平滑的分布距离目标"
+          },
+          {
+            "en": "It removes the generator",
+            "zh": "它移除生成器"
+          },
+          {
+            "en": "It trains only decision trees",
+            "zh": "它只训练决策树"
+          },
+          {
+            "en": "It labels protein atoms",
+            "zh": "它标注蛋白质原子"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The critic estimates a transport-inspired distance between real and generated distributions.",
+          "zh": "critic 估计真实分布和生成分布之间受传输启发的距离。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "wasserstein-gan",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2017-cyclegan",
+    "year": 2017,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "CycleGAN",
+      "zh": "CycleGAN"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "UC Berkeley",
+        "zh": "UC Berkeley"
+      },
+      "country": {
+        "en": "Berkeley, United States",
+        "zh": "Berkeley, United States"
+      },
+      "coordinates": [
+        37.8715,
+        -122.273
+      ]
+    },
+    "description": {
+      "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>",
+      "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jun-Yan Zhu",
+          "zh": "朱俊彦"
+        },
+        "role": {
+          "en": "CycleGAN lead author",
+          "zh": "CycleGAN 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Unpaired image-to-image translation using cycle-consistent adversarial networks\"",
+      "zh": "\"使用循环一致对抗网络进行非配对图像到图像转换\""
+    },
+    "quoteAttribution": {
+      "en": "《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》, Jun-Yan Zhu et al., ICCV, 2017",
+      "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》, 朱俊彦等，ICCV，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+        "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+      },
+      "workAuthors": {
+        "en": "Jun-Yan Zhu et al., ICCV, 2017",
+        "zh": "朱俊彦等，ICCV，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1703.10593"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.",
+          "zh": "CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat CycleGAN as a landmark in unpaired translation and controllable visual synthesis. Its long-term legacy is the cycle-consistency idea used whenever paired supervision is expensive or unavailable.",
+          "zh": "专家通常把 CycleGAN 视为非配对转换和可控视觉合成的里程碑。它的长期影响在于循环一致性思想被用于配对监督昂贵或缺失的场景。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg"
+      ],
+      "imageMeta": {
+        "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg": {
+          "caption": {
+            "en": "Jun-Yan Zhu portrait",
+            "zh": "朱俊彦肖像"
+          },
+          "subcaption": {
+            "en": "CycleGAN lead author",
+            "zh": "CycleGAN 主要作者"
+          },
+          "sourceName": {
+            "en": "Jun-Yan Zhu homepage",
+            "zh": "朱俊彦个人主页"
+          },
+          "source": "https://www.cs.cmu.edu/~junyanz/",
+          "sourceUrl": "https://www.cs.cmu.edu/~junyanz/",
+          "originalImageUrl": "https://www.cs.cmu.edu/~junyanz/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg": {
+          "caption": {
+            "en": "CycleGAN explainer",
+            "zh": "CycleGAN 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Project page",
+            "zh": "项目页面"
+          },
+          "source": "https://arxiv.org/abs/1703.10593",
+          "sourceUrl": "https://arxiv.org/abs/1703.10593",
+          "originalImageUrl": "https://arxiv.org/abs/1703.10593",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Cycle-consistent image translation",
+        "zh": "循环一致图像转换"
+      },
+      "artifact": {
+        "en": "Unpaired image-to-image translation system",
+        "zh": "非配对图像到图像转换系统"
+      },
+      "material": {
+        "en": "ICCV paper, project page, and code",
+        "zh": "ICCV 论文、项目页面与代码"
+      },
+      "demo": {
+        "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered.",
+        "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Unpaired Domains",
+            "zh": "非配对领域"
+          },
+          "text": {
+            "en": "Training uses two image collections without matched pairs.",
+            "zh": "训练使用两组没有逐一匹配的图像。"
+          }
+        },
+        {
+          "label": {
+            "en": "Cycle Loss",
+            "zh": "循环损失"
+          },
+          "text": {
+            "en": "Returning to the source domain should reconstruct the input.",
+            "zh": "返回源域时应重建输入。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Pix2Pix",
+            "zh": "Pix2Pix"
+          },
+          "zh": {
+            "en": "Pix2Pix",
+            "zh": "Pix2Pix"
+          }
+        },
+        {
+          "en": {
+            "en": "GAN",
+            "zh": "GAN"
+          },
+          "zh": {
+            "en": "GAN",
+            "zh": "GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Conditional GAN",
+            "zh": "Conditional GAN"
+          },
+          "zh": {
+            "en": "Conditional GAN",
+            "zh": "Conditional GAN"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Domain A",
+            "zh": "领域 A"
+          },
+          "zh": {
+            "en": "Domain A",
+            "zh": "领域 A"
+          }
+        },
+        {
+          "en": {
+            "en": "Translate",
+            "zh": "转换"
+          },
+          "zh": {
+            "en": "Translate",
+            "zh": "转换"
+          }
+        },
+        {
+          "en": {
+            "en": "Cycle back",
+            "zh": "循环返回"
+          },
+          "zh": {
+            "en": "Cycle back",
+            "zh": "循环返回"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Project page",
+            "zh": "项目页面"
+          },
+          "title": {
+            "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+            "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+          },
+          "description": {
+            "en": "Project page source card for CycleGAN.",
+            "zh": "项目页面 的CycleGAN资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1703.10593",
+          "source": "https://arxiv.org/abs/1703.10593",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+            "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》"
+          },
+          "url": "https://arxiv.org/abs/1703.10593"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICCV open-access paper page",
+            "zh": "ICCV 开放论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "CycleGAN project page",
+            "zh": "CycleGAN 项目页面"
+          },
+          "url": "https://junyanz.github.io/CycleGAN/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICCV paper, project page, and code",
+            "zh": "ICCV 论文、项目页面与代码"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered.",
+            "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2017-cyclegan-quiz-1",
+      "question": {
+        "en": "Why does CycleGAN use a cycle-consistency loss?",
+        "zh": "CycleGAN 为什么使用循环一致性损失？"
+      },
+      "options": [
+        {
+          "en": "To preserve content when translating there and back",
+          "zh": "为了在来回转换时保留内容"
+        },
+        {
+          "en": "To sort words alphabetically",
+          "zh": "为了按字母排序单词"
+        },
+        {
+          "en": "To choose a chess move",
+          "zh": "为了选择棋步"
+        },
+        {
+          "en": "To delete the input image",
+          "zh": "为了删除输入图像"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Cycle consistency checks that translating from one domain and back reconstructs the original structure.",
+        "zh": "循环一致性检查从一个域转换到另一个域再转回时能否重建原始结构。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "cyclegan",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2017-cyclegan-quiz-1",
+        "question": {
+          "en": "Why does CycleGAN use a cycle-consistency loss?",
+          "zh": "CycleGAN 为什么使用循环一致性损失？"
+        },
+        "options": [
+          {
+            "en": "To preserve content when translating there and back",
+            "zh": "为了在来回转换时保留内容"
+          },
+          {
+            "en": "To sort words alphabetically",
+            "zh": "为了按字母排序单词"
+          },
+          {
+            "en": "To choose a chess move",
+            "zh": "为了选择棋步"
+          },
+          {
+            "en": "To delete the input image",
+            "zh": "为了删除输入图像"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Cycle consistency checks that translating from one domain and back reconstructs the original structure.",
+          "zh": "循环一致性检查从一个域转换到另一个域再转回时能否重建原始结构。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "cyclegan",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2017-pix2pix",
+    "year": 2017,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Pix2Pix",
+      "zh": "Pix2Pix"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "UC Berkeley",
+        "zh": "UC Berkeley"
+      },
+      "country": {
+        "en": "Berkeley, United States",
+        "zh": "Berkeley, United States"
+      },
+      "coordinates": [
+        37.8715,
+        -122.273
+      ]
+    },
+    "description": {
+      "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>",
+      "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Phillip Isola",
+          "zh": "菲利普·伊索拉"
+        },
+        "role": {
+          "en": "Pix2Pix lead author",
+          "zh": "Pix2Pix 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Image-to-image translation with conditional adversarial networks\"",
+      "zh": "\"使用条件对抗网络进行图像到图像转换\""
+    },
+    "quoteAttribution": {
+      "en": "《Image-to-Image Translation with Conditional Adversarial Networks》, Phillip Isola et al., CVPR, 2017",
+      "zh": "《使用条件对抗网络进行图像到图像转换》, 菲利普·伊索拉等，CVPR，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+        "zh": "使用条件对抗网络进行图像到图像转换"
+      },
+      "workAuthors": {
+        "en": "Phillip Isola et al., CVPR, 2017",
+        "zh": "菲利普·伊索拉等，CVPR，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1611.07004"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.",
+          "zh": "Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Pix2Pix as a practical template for supervised image translation. Its long-term legacy is the conditional image-to-image framing that influenced creative tools and later diffusion-based editing workflows.",
+          "zh": "专家通常把 Pix2Pix 视为监督式图像转换的实用模板。它的长期影响在于条件图像到图像框架影响了创意工具和后来的扩散式编辑工作流。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+        "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg"
+      ],
+      "imageMeta": {
+        "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg": {
+          "caption": {
+            "en": "Phillip Isola portrait",
+            "zh": "菲利普·伊索拉肖像"
+          },
+          "subcaption": {
+            "en": "Pix2Pix lead author",
+            "zh": "Pix2Pix 主要作者"
+          },
+          "sourceName": {
+            "en": "Phillip Isola homepage",
+            "zh": "菲利普·伊索拉个人主页"
+          },
+          "source": "https://web.mit.edu/phillipi/",
+          "sourceUrl": "https://web.mit.edu/phillipi/",
+          "originalImageUrl": "https://web.mit.edu/phillipi/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg": {
+          "caption": {
+            "en": "Pix2Pix explainer",
+            "zh": "Pix2Pix 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Project page",
+            "zh": "项目页面"
+          },
+          "source": "https://arxiv.org/abs/1611.07004",
+          "sourceUrl": "https://arxiv.org/abs/1611.07004",
+          "originalImageUrl": "https://arxiv.org/abs/1611.07004",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Paired conditional image translation",
+        "zh": "配对条件图像转换"
+      },
+      "artifact": {
+        "en": "Pix2Pix image-to-image translation framework",
+        "zh": "Pix2Pix 图像到图像转换框架"
+      },
+      "material": {
+        "en": "CVPR paper, project page, and code",
+        "zh": "CVPR 论文、项目页面与代码"
+      },
+      "demo": {
+        "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.",
+        "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Paired Supervision",
+            "zh": "配对监督"
+          },
+          "text": {
+            "en": "Examples show the desired input-output mapping.",
+            "zh": "样本展示期望的输入输出映射。"
+          }
+        },
+        {
+          "label": {
+            "en": "Conditional Discriminator",
+            "zh": "条件判别器"
+          },
+          "text": {
+            "en": "Realism is judged relative to the input.",
+            "zh": "真实感相对于输入进行判断。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Conditional GAN",
+            "zh": "Conditional GAN"
+          },
+          "zh": {
+            "en": "Conditional GAN",
+            "zh": "Conditional GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "CycleGAN",
+            "zh": "CycleGAN"
+          },
+          "zh": {
+            "en": "CycleGAN",
+            "zh": "CycleGAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          },
+          "zh": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Input image",
+            "zh": "输入图像"
+          },
+          "zh": {
+            "en": "Input image",
+            "zh": "输入图像"
+          }
+        },
+        {
+          "en": {
+            "en": "cGAN translator",
+            "zh": "cGAN 转换器"
+          },
+          "zh": {
+            "en": "cGAN translator",
+            "zh": "cGAN 转换器"
+          }
+        },
+        {
+          "en": {
+            "en": "Output image",
+            "zh": "输出图像"
+          },
+          "zh": {
+            "en": "Output image",
+            "zh": "输出图像"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Project page",
+            "zh": "项目页面"
+          },
+          "title": {
+            "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+            "zh": "使用条件对抗网络进行图像到图像转换"
+          },
+          "description": {
+            "en": "Project page source card for Pix2Pix.",
+            "zh": "项目页面 的Pix2Pix资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1611.07004",
+          "source": "https://arxiv.org/abs/1611.07004",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+            "zh": "《使用条件对抗网络进行图像到图像转换》"
+          },
+          "url": "https://arxiv.org/abs/1611.07004"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "CVPR open-access paper page",
+            "zh": "CVPR 开放论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Pix2Pix project page",
+            "zh": "Pix2Pix 项目页面"
+          },
+          "url": "https://phillipi.github.io/pix2pix/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper, project page, and code",
+            "zh": "CVPR 论文、项目页面与代码"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.",
+            "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2017-pix2pix-quiz-1",
+      "question": {
+        "en": "What kind of supervision does Pix2Pix mainly use?",
+        "zh": "Pix2Pix 主要使用哪种监督？"
+      },
+      "options": [
+        {
+          "en": "Paired input-output image examples",
+          "zh": "配对的输入输出图像样本"
+        },
+        {
+          "en": "Only unlabeled graph nodes",
+          "zh": "只有未标注图节点"
+        },
+        {
+          "en": "Only theorem clauses",
+          "zh": "只有定理子句"
+        },
+        {
+          "en": "A hidden reward table only",
+          "zh": "只有隐藏奖励表"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Pix2Pix learns image-to-image translation from matched source and target examples.",
+        "zh": "Pix2Pix 从匹配的源图像和目标图像样本学习图像转换。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "pix2pix",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2017-pix2pix-quiz-1",
+        "question": {
+          "en": "What kind of supervision does Pix2Pix mainly use?",
+          "zh": "Pix2Pix 主要使用哪种监督？"
+        },
+        "options": [
+          {
+            "en": "Paired input-output image examples",
+            "zh": "配对的输入输出图像样本"
+          },
+          {
+            "en": "Only unlabeled graph nodes",
+            "zh": "只有未标注图节点"
+          },
+          {
+            "en": "Only theorem clauses",
+            "zh": "只有定理子句"
+          },
+          {
+            "en": "A hidden reward table only",
+            "zh": "只有隐藏奖励表"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Pix2Pix learns image-to-image translation from matched source and target examples.",
+          "zh": "Pix2Pix 从匹配的源图像和目标图像样本学习图像转换。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "pix2pix",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2019-stylegan",
+    "year": 2019,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "StyleGAN",
+      "zh": "StyleGAN"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "NVIDIA",
+        "zh": "NVIDIA"
+      },
+      "country": {
+        "en": "Santa Clara, United States",
+        "zh": "Santa Clara, United States"
+      },
+      "coordinates": [
+        37.3541,
+        -121.9552
+      ]
+    },
+    "description": {
+      "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>",
+      "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Tero Karras",
+          "zh": "特罗·卡拉斯"
+        },
+        "role": {
+          "en": "StyleGAN lead author",
+          "zh": "StyleGAN 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A style-based generator architecture for generative adversarial networks\"",
+      "zh": "\"面向生成对抗网络的基于风格的生成器架构\""
+    },
+    "quoteAttribution": {
+      "en": "《A Style-Based Generator Architecture for Generative Adversarial Networks》, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+      "zh": "《面向生成对抗网络的基于风格的生成器架构》, 特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+        "zh": "面向生成对抗网络的基于风格的生成器架构"
+      },
+      "workAuthors": {
+        "en": "Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+        "zh": "特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1812.04948"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.",
+          "zh": "StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat StyleGAN as a benchmark for high-fidelity controllable image synthesis. Its long-term legacy is the style-space interface that shaped face generation, latent editing, and generative media research.",
+          "zh": "专家通常把 StyleGAN 视为高保真可控图像合成的基准。它的长期影响在于风格空间接口塑造了人脸生成、潜空间编辑和生成媒体研究。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+        "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg"
+      ],
+      "imageMeta": {
+        "https://research.nvidia.com/sites/default/files/person/tero-karras.png": {
+          "caption": {
+            "en": "Tero Karras portrait",
+            "zh": "泰罗·卡拉斯肖像"
+          },
+          "subcaption": {
+            "en": "StyleGAN lead author",
+            "zh": "StyleGAN 主要作者"
+          },
+          "sourceName": {
+            "en": "NVIDIA Research profile",
+            "zh": "NVIDIA Research 个人资料"
+          },
+          "source": "https://research.nvidia.com/person/tero-karras",
+          "sourceUrl": "https://research.nvidia.com/person/tero-karras",
+          "originalImageUrl": "https://research.nvidia.com/person/tero-karras",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg": {
+          "caption": {
+            "en": "StyleGAN explainer",
+            "zh": "StyleGAN 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放论文库"
+          },
+          "source": "https://arxiv.org/abs/1812.04948",
+          "sourceUrl": "https://arxiv.org/abs/1812.04948",
+          "originalImageUrl": "https://arxiv.org/abs/1812.04948",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Style-modulated generator architecture",
+        "zh": "风格调制生成器架构"
+      },
+      "artifact": {
+        "en": "StyleGAN generator",
+        "zh": "StyleGAN 生成器"
+      },
+      "material": {
+        "en": "CVPR paper and NVIDIA code release",
+        "zh": "CVPR 论文与 NVIDIA 代码发布"
+      },
+      "demo": {
+        "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.",
+        "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Style Space",
+            "zh": "风格空间"
+          },
+          "text": {
+            "en": "A mapping network controls synthesis layers.",
+            "zh": "映射网络控制合成层。"
+          }
+        },
+        {
+          "label": {
+            "en": "Layer Control",
+            "zh": "分层控制"
+          },
+          "text": {
+            "en": "Different layers affect pose, shape, or texture.",
+            "zh": "不同层影响姿态、形状或纹理。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GAN",
+            "zh": "GAN"
+          },
+          "zh": {
+            "en": "GAN",
+            "zh": "GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "DCGAN",
+            "zh": "DCGAN"
+          },
+          "zh": {
+            "en": "DCGAN",
+            "zh": "DCGAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          },
+          "zh": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Latent code",
+            "zh": "潜编码"
+          },
+          "zh": {
+            "en": "Latent code",
+            "zh": "潜编码"
+          }
+        },
+        {
+          "en": {
+            "en": "Style modulation",
+            "zh": "风格调制"
+          },
+          "zh": {
+            "en": "Style modulation",
+            "zh": "风格调制"
+          }
+        },
+        {
+          "en": {
+            "en": "Generated image",
+            "zh": "生成图像"
+          },
+          "zh": {
+            "en": "Generated image",
+            "zh": "生成图像"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放论文库"
+          },
+          "title": {
+            "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+            "zh": "面向生成对抗网络的基于风格的生成器架构"
+          },
+          "description": {
+            "en": "CVF Open Access source card for StyleGAN.",
+            "zh": "CVF 开放论文库 的StyleGAN资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1812.04948",
+          "source": "https://arxiv.org/abs/1812.04948",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Style-Based Generator Architecture for GANs",
+            "zh": "《面向 GAN 的基于风格的生成器架构》"
+          },
+          "url": "https://arxiv.org/abs/1812.04948"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "CVPR open-access paper page",
+            "zh": "CVPR 开放论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "NVIDIA StyleGAN repository",
+            "zh": "NVIDIA StyleGAN 代码仓库"
+          },
+          "url": "https://github.com/NVlabs/stylegan"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper and NVIDIA code release",
+            "zh": "CVPR 论文与 NVIDIA 代码发布"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.",
+            "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2019-stylegan-quiz-1",
+      "question": {
+        "en": "What does StyleGAN use to control image synthesis?",
+        "zh": "StyleGAN 用什么控制图像合成？"
+      },
+      "options": [
+        {
+          "en": "Style vectors that modulate generator layers",
+          "zh": "调制生成器层的风格向量"
+        },
+        {
+          "en": "Only nearest-neighbor votes",
+          "zh": "只有最近邻投票"
+        },
+        {
+          "en": "A fixed theorem list",
+          "zh": "固定定理列表"
+        },
+        {
+          "en": "Only edge histograms",
+          "zh": "只有边缘直方图"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "StyleGAN maps latent codes into styles that control different synthesis layers.",
+        "zh": "StyleGAN 把潜编码映射为控制不同合成层的风格。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "stylegan",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2019-stylegan-quiz-1",
+        "question": {
+          "en": "What does StyleGAN use to control image synthesis?",
+          "zh": "StyleGAN 用什么控制图像合成？"
+        },
+        "options": [
+          {
+            "en": "Style vectors that modulate generator layers",
+            "zh": "调制生成器层的风格向量"
+          },
+          {
+            "en": "Only nearest-neighbor votes",
+            "zh": "只有最近邻投票"
+          },
+          {
+            "en": "A fixed theorem list",
+            "zh": "固定定理列表"
+          },
+          {
+            "en": "Only edge histograms",
+            "zh": "只有边缘直方图"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "StyleGAN maps latent codes into styles that control different synthesis layers.",
+          "zh": "StyleGAN 把潜编码映射为控制不同合成层的风格。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "stylegan",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2013-variational-autoencoder",
+    "year": 2013,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Variational Autoencoder",
+      "zh": "变分自编码器"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Amsterdam",
+        "zh": "University of Amsterdam"
+      },
+      "country": {
+        "en": "Amsterdam, Netherlands",
+        "zh": "Amsterdam, Netherlands"
+      },
+      "coordinates": [
+        52.3676,
+        4.9041
+      ]
+    },
+    "description": {
+      "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>",
+      "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Diederik Kingma",
+          "zh": "迪德里克·金马"
+        },
+        "role": {
+          "en": "Variational autoencoder co-author",
+          "zh": "变分自编码器共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Auto-encoding variational Bayes\"",
+      "zh": "\"自动编码变分贝叶斯\""
+    },
+    "quoteAttribution": {
+      "en": "《Auto-Encoding Variational Bayes》, Diederik Kingma and Max Welling, ICLR, 2014",
+      "zh": "《自动编码变分贝叶斯》, 迪德里克·金马、马克斯·韦林，ICLR，2014"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Auto-Encoding Variational Bayes",
+        "zh": "自动编码变分贝叶斯"
+      },
+      "workAuthors": {
+        "en": "Diederik Kingma and Max Welling, ICLR, 2014",
+        "zh": "迪德里克·金马、马克斯·韦林，ICLR，2014"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1312.6114"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.",
+          "zh": "变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat VAEs as a central bridge between deep learning and probabilistic inference. Its long-term legacy is the latent-variable training pattern used in representation learning, generation, and later diffusion autoencoders.",
+          "zh": "专家通常把 VAE 视为连接深度学习与概率推断的核心桥梁。它的长期影响在于潜变量训练模式被用于表示学习、生成建模和后来的扩散自编码器。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://dpkingma.com/files/portrait.jpg",
+        "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg"
+      ],
+      "imageMeta": {
+        "https://dpkingma.com/files/portrait.jpg": {
+          "caption": {
+            "en": "Diederik Kingma portrait",
+            "zh": "迪德里克·金马肖像"
+          },
+          "subcaption": {
+            "en": "VAE lead author",
+            "zh": "VAE 主要作者"
+          },
+          "sourceName": {
+            "en": "Diederik Kingma homepage",
+            "zh": "迪德里克·金马个人主页"
+          },
+          "source": "https://dpkingma.com/",
+          "sourceUrl": "https://dpkingma.com/",
+          "originalImageUrl": "https://dpkingma.com/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg": {
+          "caption": {
+            "en": "Variational Autoencoder explainer",
+            "zh": "变分自编码器 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1312.6114",
+          "sourceUrl": "https://arxiv.org/abs/1312.6114",
+          "originalImageUrl": "https://arxiv.org/abs/1312.6114",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Variational latent-variable learning",
+        "zh": "变分潜变量学习"
+      },
+      "artifact": {
+        "en": "Auto-Encoding Variational Bayes",
+        "zh": "自动编码变分贝叶斯"
+      },
+      "material": {
+        "en": "ICLR paper and reparameterization trick",
+        "zh": "ICLR 论文与重参数化技巧"
+      },
+      "demo": {
+        "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data.",
+        "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Latent Distribution",
+            "zh": "潜变量分布"
+          },
+          "text": {
+            "en": "The encoder predicts mean and variance.",
+            "zh": "编码器预测均值和方差。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reparameterization",
+            "zh": "重参数化"
+          },
+          "text": {
+            "en": "Sampling is written so gradients can flow.",
+            "zh": "采样被改写为可传递梯度的形式。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GAN",
+            "zh": "GAN"
+          },
+          "zh": {
+            "en": "GAN",
+            "zh": "GAN"
+          }
+        },
+        {
+          "en": {
+            "en": "Diffusion Model",
+            "zh": "扩散模型"
+          },
+          "zh": {
+            "en": "Diffusion Model",
+            "zh": "扩散模型"
+          }
+        },
+        {
+          "en": {
+            "en": "Neural Language Model",
+            "zh": "神经语言模型"
+          },
+          "zh": {
+            "en": "Neural Language Model",
+            "zh": "神经语言模型"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "Netherlands",
+            "zh": "荷兰"
+          },
+          "zh": {
+            "en": "Netherlands",
+            "zh": "荷兰"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Encode",
+            "zh": "编码"
+          },
+          "zh": {
+            "en": "Encode",
+            "zh": "编码"
+          }
+        },
+        {
+          "en": {
+            "en": "Sample latent",
+            "zh": "采样潜变量"
+          },
+          "zh": {
+            "en": "Sample latent",
+            "zh": "采样潜变量"
+          }
+        },
+        {
+          "en": {
+            "en": "Decode",
+            "zh": "解码"
+          },
+          "zh": {
+            "en": "Decode",
+            "zh": "解码"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Auto-Encoding Variational Bayes",
+            "zh": "自动编码变分贝叶斯"
+          },
+          "description": {
+            "en": "arXiv source card for Variational Autoencoder.",
+            "zh": "arXiv 的变分自编码器资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1312.6114",
+          "source": "https://arxiv.org/abs/1312.6114",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Auto-Encoding Variational Bayes",
+            "zh": "《自动编码变分贝叶斯》"
+          },
+          "url": "https://arxiv.org/abs/1312.6114"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR paper record",
+            "zh": "ICLR 论文记录"
+          },
+          "url": "https://openreview.net/forum?id=33X9fd2-9FyZd"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Variational autoencoder overview",
+            "zh": "变分自编码器概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Variational_autoencoder"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and reparameterization trick",
+            "zh": "ICLR 论文与重参数化技巧"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data.",
+            "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2013-variational-autoencoder-quiz-1",
+      "question": {
+        "en": "What is central to a variational autoencoder?",
+        "zh": "变分自编码器的核心是什么？"
+      },
+      "options": [
+        {
+          "en": "A learned latent distribution with encoder and decoder",
+          "zh": "带编码器和解码器的学习型潜变量分布"
+        },
+        {
+          "en": "Only a hand-built search tree",
+          "zh": "只有手工搜索树"
+        },
+        {
+          "en": "A fixed object dataset",
+          "zh": "固定物体数据集"
+        },
+        {
+          "en": "Only a word count table",
+          "zh": "只有词频表"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "A VAE encodes data into a latent distribution, samples from it, and decodes the sample.",
+        "zh": "VAE 把数据编码为潜变量分布，从中采样，再解码样本。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "variational-autoencoder",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2013-variational-autoencoder-quiz-1",
+        "question": {
+          "en": "What is central to a variational autoencoder?",
+          "zh": "变分自编码器的核心是什么？"
+        },
+        "options": [
+          {
+            "en": "A learned latent distribution with encoder and decoder",
+            "zh": "带编码器和解码器的学习型潜变量分布"
+          },
+          {
+            "en": "Only a hand-built search tree",
+            "zh": "只有手工搜索树"
+          },
+          {
+            "en": "A fixed object dataset",
+            "zh": "固定物体数据集"
+          },
+          {
+            "en": "Only a word count table",
+            "zh": "只有词频表"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "A VAE encodes data into a latent distribution, samples from it, and decodes the sample.",
+          "zh": "VAE 把数据编码为潜变量分布，从中采样，再解码样本。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "variational-autoencoder",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-diffusion-model",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Diffusion Model",
+      "zh": "扩散模型"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "Stanford, United States",
+        "zh": "美国斯坦福"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>",
+      "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jascha Sohl-Dickstein",
+          "zh": "雅沙·索尔-迪克斯坦"
+        },
+        "role": {
+          "en": "Diffusion model lead author",
+          "zh": "扩散模型主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Deep unsupervised learning using nonequilibrium thermodynamics\"",
+      "zh": "\"使用非平衡热力学进行深度无监督学习\""
+    },
+    "quoteAttribution": {
+      "en": "《Deep Unsupervised Learning using Nonequilibrium Thermodynamics》, Jascha Sohl-Dickstein et al., ICML, 2015",
+      "zh": "《使用非平衡热力学进行深度无监督学习》, 雅沙·索尔-迪克斯坦等，ICML，2015"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+        "zh": "使用非平衡热力学进行深度无监督学习"
+      },
+      "workAuthors": {
+        "en": "Jascha Sohl-Dickstein et al., ICML, 2015",
+        "zh": "雅沙·索尔-迪克斯坦等，ICML，2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.",
+          "zh": "扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat diffusion models as one of the major generative-model families after GANs and VAEs. Its long-term legacy is the iterative denoising recipe that powers many high-quality image, audio, and video generators.",
+          "zh": "专家通常把扩散模型视为 GAN 和 VAE 之后的主要生成模型家族之一。它的长期影响在于迭代去噪配方支撑了许多高质量图像、音频和视频生成器。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
+        "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
+      ],
+      "imageMeta": {
+        "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png": {
+          "caption": {
+            "en": "Jascha Sohl-Dickstein portrait",
+            "zh": "雅沙·索尔-迪克斯坦肖像"
+          },
+          "subcaption": {
+            "en": "Diffusion model lead author",
+            "zh": "扩散模型主要作者"
+          },
+          "sourceName": {
+            "en": "Jascha Sohl-Dickstein homepage",
+            "zh": "雅沙·索尔-迪克斯坦个人主页"
+          },
+          "source": "https://sohldickstein.com/",
+          "sourceUrl": "https://sohldickstein.com/",
+          "originalImageUrl": "https://sohldickstein.com/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg": {
+          "caption": {
+            "en": "Diffusion Model explainer",
+            "zh": "扩散模型 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "source": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "originalImageUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Forward noising and learned reverse denoising",
+        "zh": "正向加噪与学习型反向去噪"
+      },
+      "artifact": {
+        "en": "Nonequilibrium thermodynamics diffusion model",
+        "zh": "非平衡热力学扩散模型"
+      },
+      "material": {
+        "en": "ICML paper and later denoising diffusion work",
+        "zh": "ICML 论文与后续去噪扩散工作"
+      },
+      "demo": {
+        "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+        "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Forward Process",
+            "zh": "正向过程"
+          },
+          "text": {
+            "en": "Noise is added through many small steps.",
+            "zh": "噪声通过许多小步骤加入。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reverse Process",
+            "zh": "反向过程"
+          },
+          "text": {
+            "en": "A model learns to denoise step by step.",
+            "zh": "模型学习逐步去噪。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          },
+          "zh": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          }
+        },
+        {
+          "en": {
+            "en": "DALL-E",
+            "zh": "DALL-E"
+          },
+          "zh": {
+            "en": "DALL-E",
+            "zh": "DALL-E"
+          }
+        },
+        {
+          "en": {
+            "en": "Variational Autoencoder",
+            "zh": "变分自编码器"
+          },
+          "zh": {
+            "en": "Variational Autoencoder",
+            "zh": "变分自编码器"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Add noise",
+            "zh": "加入噪声"
+          },
+          "zh": {
+            "en": "Add noise",
+            "zh": "加入噪声"
+          }
+        },
+        {
+          "en": {
+            "en": "Learn reverse",
+            "zh": "学习反向过程"
+          },
+          "zh": {
+            "en": "Learn reverse",
+            "zh": "学习反向过程"
+          }
+        },
+        {
+          "en": {
+            "en": "Generate sample",
+            "zh": "生成样本"
+          },
+          "zh": {
+            "en": "Generate sample",
+            "zh": "生成样本"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+            "zh": "使用非平衡热力学进行深度无监督学习"
+          },
+          "description": {
+            "en": "PMLR source card for Diffusion Model.",
+            "zh": "PMLR 的扩散模型资料卡片。"
+          },
+          "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "source": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+            "zh": "《使用非平衡热力学进行深度无监督学习》"
+          },
+          "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Denoising Diffusion Probabilistic Models",
+            "zh": "《去噪扩散概率模型》"
+          },
+          "url": "https://arxiv.org/abs/2006.11239"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Diffusion model overview",
+            "zh": "扩散模型概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Diffusion_model"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICML paper and later denoising diffusion work",
+            "zh": "ICML 论文与后续去噪扩散工作"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+            "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2015-diffusion-model-quiz-1",
+      "question": {
+        "en": "What does a diffusion model learn to reverse?",
+        "zh": "扩散模型学习逆转什么？"
+      },
+      "options": [
+        {
+          "en": "A gradual noising process",
+          "zh": "逐步加噪过程"
+        },
+        {
+          "en": "A database migration",
+          "zh": "数据库迁移"
+        },
+        {
+          "en": "A chess tournament bracket",
+          "zh": "棋类赛程表"
+        },
+        {
+          "en": "Only a dictionary sort",
+          "zh": "只有字典排序"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Diffusion models learn denoising steps that turn noise back into samples.",
+        "zh": "扩散模型学习把噪声还原为样本的去噪步骤。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "diffusion-model",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-diffusion-model-quiz-1",
+        "question": {
+          "en": "What does a diffusion model learn to reverse?",
+          "zh": "扩散模型学习逆转什么？"
+        },
+        "options": [
+          {
+            "en": "A gradual noising process",
+            "zh": "逐步加噪过程"
+          },
+          {
+            "en": "A database migration",
+            "zh": "数据库迁移"
+          },
+          {
+            "en": "A chess tournament bracket",
+            "zh": "棋类赛程表"
+          },
+          {
+            "en": "Only a dictionary sort",
+            "zh": "只有字典排序"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Diffusion models learn denoising steps that turn noise back into samples.",
+          "zh": "扩散模型学习把噪声还原为样本的去噪步骤。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "diffusion-model",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2005-gnn",
+    "year": 2005,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Graph Neural Network",
+      "zh": "图神经网络"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Siena",
+        "zh": "University of Siena"
+      },
+      "country": {
+        "en": "Siena, Italy",
+        "zh": "Siena, Italy"
+      },
+      "coordinates": [
+        43.3188,
+        11.3308
+      ]
+    },
+    "description": {
+      "en": "<p>Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures.</p>",
+      "zh": "<p>图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Franco Scarselli",
+          "zh": "弗兰科·斯卡塞利"
+        },
+        "role": {
+          "en": "Graph neural network co-author",
+          "zh": "图神经网络共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A new model for learning in graph domains\"",
+      "zh": "\"一种用于图领域学习的新模型\""
+    },
+    "quoteAttribution": {
+      "en": "《The Graph Neural Network Model》, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
+      "zh": "《图神经网络模型》, 弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "The Graph Neural Network Model",
+        "zh": "图神经网络模型"
+      },
+      "workAuthors": {
+        "en": "Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
+        "zh": "弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1109/TNN.2008.2005605"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures.",
+          "zh": "图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat GNNs as the foundational deep-learning framework for relational data. Its long-term legacy is message passing, now used in chemistry, recommender systems, knowledge graphs, and scientific modeling.",
+          "zh": "专家通常把 GNN 视为关系数据深度学习的基础框架。它的长期影响在于消息传递机制，如今用于化学、推荐系统、知识图谱和科学建模。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
+        "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg"
+      ],
+      "imageMeta": {
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2": {
+          "caption": {
+            "en": "Franco Scarselli portrait",
+            "zh": "弗朗科·斯卡尔塞利肖像"
+          },
+          "subcaption": {
+            "en": "Graph neural network co-author",
+            "zh": "图神经网络共同作者"
+          },
+          "sourceName": {
+            "en": "Google Scholar profile",
+            "zh": "Google Scholar 个人资料"
+          },
+          "source": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+          "sourceUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+          "originalImageUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg": {
+          "caption": {
+            "en": "Graph Neural Network explainer",
+            "zh": "图神经网络 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "IEEE Xplore",
+            "zh": "IEEE Xplore"
+          },
+          "source": "https://doi.org/10.1109/TNN.2008.2005605",
+          "sourceUrl": "https://doi.org/10.1109/TNN.2008.2005605",
+          "originalImageUrl": "https://doi.org/10.1109/TNN.2008.2005605",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Graph learning",
+        "zh": "图学习"
+      },
+      "method": {
+        "en": "Iterative message passing on graphs",
+        "zh": "图上的迭代消息传递"
+      },
+      "artifact": {
+        "en": "Graph neural network model",
+        "zh": "图神经网络模型"
+      },
+      "material": {
+        "en": "IEEE Transactions paper",
+        "zh": "IEEE Transactions 论文"
+      },
+      "demo": {
+        "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round.",
+        "zh": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Message Passing",
+            "zh": "消息传递"
+          },
+          "text": {
+            "en": "Neighbors exchange learned information.",
+            "zh": "邻居交换学习得到的信息。"
+          }
+        },
+        {
+          "label": {
+            "en": "Graph State",
+            "zh": "图状态"
+          },
+          "text": {
+            "en": "Node states summarize local structure.",
+            "zh": "节点状态概括局部结构。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GCN",
+            "zh": "GCN"
+          },
+          "zh": {
+            "en": "GCN",
+            "zh": "GCN"
+          }
+        },
+        {
+          "en": {
+            "en": "GAT",
+            "zh": "GAT"
+          },
+          "zh": {
+            "en": "GAT",
+            "zh": "GAT"
+          }
+        },
+        {
+          "en": {
+            "en": "Spectral clustering",
+            "zh": "谱聚类"
+          },
+          "zh": {
+            "en": "Spectral clustering",
+            "zh": "谱聚类"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "Italy",
+            "zh": "意大利"
+          },
+          "zh": {
+            "en": "Italy",
+            "zh": "意大利"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Node features",
+            "zh": "节点特征"
+          },
+          "zh": {
+            "en": "Node features",
+            "zh": "节点特征"
+          }
+        },
+        {
+          "en": {
+            "en": "Neighbor messages",
+            "zh": "邻居消息"
+          },
+          "zh": {
+            "en": "Neighbor messages",
+            "zh": "邻居消息"
+          }
+        },
+        {
+          "en": {
+            "en": "Updated states",
+            "zh": "更新状态"
+          },
+          "zh": {
+            "en": "Updated states",
+            "zh": "更新状态"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "IEEE Xplore",
+            "zh": "IEEE Xplore"
+          },
+          "title": {
+            "en": "The Graph Neural Network Model",
+            "zh": "图神经网络模型"
+          },
+          "description": {
+            "en": "IEEE Xplore source card for Graph Neural Network.",
+            "zh": "IEEE Xplore 的图神经网络资料卡片。"
+          },
+          "url": "https://doi.org/10.1109/TNN.2008.2005605",
+          "source": "https://doi.org/10.1109/TNN.2008.2005605",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open DOI page",
+            "zh": "打开 DOI 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "The Graph Neural Network Model",
+            "zh": "《图神经网络模型》"
+          },
+          "url": "https://doi.org/10.1109/TNN.2008.2005605"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A new model for learning in graph domains",
+            "zh": "《一种用于图领域学习的新模型》"
+          },
+          "url": "https://ieeexplore.ieee.org/document/4700287"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Graph neural network overview",
+            "zh": "图神经网络概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Graph_neural_network"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "IEEE Transactions paper",
+            "zh": "IEEE Transactions 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round.",
+            "zh": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2005-gnn-quiz-1",
+      "question": {
+        "en": "What does a graph neural network pass between nodes?",
+        "zh": "图神经网络在节点之间传递什么？"
+      },
+      "options": [
+        {
+          "en": "Learned messages from neighbors",
+          "zh": "来自邻居的学习型消息"
+        },
+        {
+          "en": "Only raw pixels",
+          "zh": "只有原始像素"
+        },
+        {
+          "en": "Spreadsheet colors",
+          "zh": "电子表格颜色"
+        },
+        {
+          "en": "A fixed audio codec",
+          "zh": "固定音频编码"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "GNNs update node states by exchanging messages along graph edges.",
+        "zh": "GNN 沿图边交换消息来更新节点状态。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "gnn",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2005-gnn-quiz-1",
+        "question": {
+          "en": "What does a graph neural network pass between nodes?",
+          "zh": "图神经网络在节点之间传递什么？"
+        },
+        "options": [
+          {
+            "en": "Learned messages from neighbors",
+            "zh": "来自邻居的学习型消息"
+          },
+          {
+            "en": "Only raw pixels",
+            "zh": "只有原始像素"
+          },
+          {
+            "en": "Spreadsheet colors",
+            "zh": "电子表格颜色"
+          },
+          {
+            "en": "A fixed audio codec",
+            "zh": "固定音频编码"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "GNNs update node states by exchanging messages along graph edges.",
+          "zh": "GNN 沿图边交换消息来更新节点状态。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "gnn",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2016-gcn",
+    "year": 2016,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "GCN",
+      "zh": "GCN"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Amsterdam",
+        "zh": "University of Amsterdam"
+      },
+      "country": {
+        "en": "Amsterdam, Netherlands",
+        "zh": "Amsterdam, Netherlands"
+      },
+      "coordinates": [
+        52.3676,
+        4.9041
+      ]
+    },
+    "description": {
+      "en": "<p>GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.</p>",
+      "zh": "<p>GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Thomas Kipf",
+          "zh": "托马斯·基普夫"
+        },
+        "role": {
+          "en": "GCN lead author",
+          "zh": "GCN 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Semi-supervised classification with graph convolutional networks\"",
+      "zh": "\"使用图卷积网络进行半监督分类\""
+    },
+    "quoteAttribution": {
+      "en": "《Semi-Supervised Classification with Graph Convolutional Networks》, Thomas Kipf and Max Welling, ICLR, 2017",
+      "zh": "《使用图卷积网络进行半监督分类》, 托马斯·基普夫、马克斯·韦林，ICLR，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Semi-Supervised Classification with Graph Convolutional Networks",
+        "zh": "使用图卷积网络进行半监督分类"
+      },
+      "workAuthors": {
+        "en": "Thomas Kipf and Max Welling, ICLR, 2017",
+        "zh": "托马斯·基普夫、马克斯·韦林，ICLR，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1609.02907"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.",
+          "zh": "GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Node features are averaged through normalized graph neighborhoods and transformed into class predictions. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "节点特征通过归一化图邻域进行聚合，并转换为类别预测。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat GCN as the model that made graph neural networks accessible to a broad machine-learning audience. Its long-term legacy is the normalized-neighbor aggregation layer used as a reference point for later graph models.",
+          "zh": "专家通常把 GCN 视为让图神经网络进入更广泛机器学习社群的模型。它的长期影响在于归一化邻居聚合层成为后续图模型的参照点。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://tkipf.github.io/images/photo.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg"
+      ],
+      "imageMeta": {
+        "https://tkipf.github.io/images/photo.jpg": {
+          "caption": {
+            "en": "Thomas Kipf portrait",
+            "zh": "托马斯·基普夫肖像"
+          },
+          "subcaption": {
+            "en": "GCN lead author",
+            "zh": "GCN 主要作者"
+          },
+          "sourceName": {
+            "en": "Thomas Kipf homepage",
+            "zh": "托马斯·基普夫个人主页"
+          },
+          "source": "https://tkipf.github.io/",
+          "sourceUrl": "https://tkipf.github.io/",
+          "originalImageUrl": "https://tkipf.github.io/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg": {
+          "caption": {
+            "en": "GCN explainer",
+            "zh": "GCN 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "OpenReview",
+            "zh": "OpenReview"
+          },
+          "source": "https://arxiv.org/abs/1609.02907",
+          "sourceUrl": "https://arxiv.org/abs/1609.02907",
+          "originalImageUrl": "https://arxiv.org/abs/1609.02907",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Graph learning",
+        "zh": "图学习"
+      },
+      "method": {
+        "en": "Graph convolutional propagation rule",
+        "zh": "图卷积传播规则"
+      },
+      "artifact": {
+        "en": "Graph convolutional network for semi-supervised classification",
+        "zh": "用于半监督分类的图卷积网络"
+      },
+      "material": {
+        "en": "ICLR paper and reference implementation",
+        "zh": "ICLR 论文与参考实现"
+      },
+      "demo": {
+        "en": "Node features are averaged through normalized graph neighborhoods and transformed into class predictions.",
+        "zh": "节点特征通过归一化图邻域进行聚合，并转换为类别预测。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Neighborhood Aggregation",
+            "zh": "邻域聚合"
+          },
+          "text": {
+            "en": "Each node mixes information from nearby nodes.",
+            "zh": "每个节点混合附近节点的信息。"
+          }
+        },
+        {
+          "label": {
+            "en": "Semi-supervision",
+            "zh": "半监督"
+          },
+          "text": {
+            "en": "Few labels guide predictions across the graph.",
+            "zh": "少量标签引导整张图上的预测。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Graph Neural Network",
+            "zh": "图神经网络"
+          },
+          "zh": {
+            "en": "Graph Neural Network",
+            "zh": "图神经网络"
+          }
+        },
+        {
+          "en": {
+            "en": "GAT",
+            "zh": "GAT"
+          },
+          "zh": {
+            "en": "GAT",
+            "zh": "GAT"
+          }
+        },
+        {
+          "en": {
+            "en": "Spectral clustering",
+            "zh": "谱聚类"
+          },
+          "zh": {
+            "en": "Spectral clustering",
+            "zh": "谱聚类"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "Netherlands",
+            "zh": "荷兰"
+          },
+          "zh": {
+            "en": "Netherlands",
+            "zh": "荷兰"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Graph features",
+            "zh": "图特征"
+          },
+          "zh": {
+            "en": "Graph features",
+            "zh": "图特征"
+          }
+        },
+        {
+          "en": {
+            "en": "GCN layer",
+            "zh": "GCN 层"
+          },
+          "zh": {
+            "en": "GCN layer",
+            "zh": "GCN 层"
+          }
+        },
+        {
+          "en": {
+            "en": "Node labels",
+            "zh": "节点标签"
+          },
+          "zh": {
+            "en": "Node labels",
+            "zh": "节点标签"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenReview",
+            "zh": "OpenReview"
+          },
+          "title": {
+            "en": "Semi-Supervised Classification with Graph Convolutional Networks",
+            "zh": "使用图卷积网络进行半监督分类"
+          },
+          "description": {
+            "en": "OpenReview source card for GCN.",
+            "zh": "OpenReview 的GCN资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1609.02907",
+          "source": "https://arxiv.org/abs/1609.02907",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Semi-Supervised Classification with Graph Convolutional Networks",
+            "zh": "《使用图卷积网络进行半监督分类》"
+          },
+          "url": "https://arxiv.org/abs/1609.02907"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR OpenReview record",
+            "zh": "ICLR OpenReview 记录"
+          },
+          "url": "https://openreview.net/forum?id=SJU4ayYgl"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "Kipf GCN repository",
+            "zh": "Kipf GCN 代码仓库"
+          },
+          "url": "https://github.com/tkipf/gcn"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and reference implementation",
+            "zh": "ICLR 论文与参考实现"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Node features are averaged through normalized graph neighborhoods and transformed into class predictions.",
+            "zh": "节点特征通过归一化图邻域进行聚合，并转换为类别预测。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2016-gcn-quiz-1",
+      "question": {
+        "en": "What does a GCN layer combine?",
+        "zh": "GCN 层组合什么？"
+      },
+      "options": [
+        {
+          "en": "Node features from normalized graph neighborhoods",
+          "zh": "归一化图邻域中的节点特征"
+        },
+        {
+          "en": "Only text prompts",
+          "zh": "只有文本提示"
+        },
+        {
+          "en": "Only protein names",
+          "zh": "只有蛋白质名称"
+        },
+        {
+          "en": "A random password list",
+          "zh": "随机密码列表"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "GCN aggregates nearby node features through a normalized graph propagation rule.",
+        "zh": "GCN 通过归一化图传播规则聚合附近节点特征。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "gcn",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2016-gcn-quiz-1",
+        "question": {
+          "en": "What does a GCN layer combine?",
+          "zh": "GCN 层组合什么？"
+        },
+        "options": [
+          {
+            "en": "Node features from normalized graph neighborhoods",
+            "zh": "归一化图邻域中的节点特征"
+          },
+          {
+            "en": "Only text prompts",
+            "zh": "只有文本提示"
+          },
+          {
+            "en": "Only protein names",
+            "zh": "只有蛋白质名称"
+          },
+          {
+            "en": "A random password list",
+            "zh": "随机密码列表"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "GCN aggregates nearby node features through a normalized graph propagation rule.",
+          "zh": "GCN 通过归一化图传播规则聚合附近节点特征。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "gcn",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2017-gat",
+    "year": 2017,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "GAT",
+      "zh": "GAT"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Cambridge",
+        "zh": "University of Cambridge"
+      },
+      "country": {
+        "en": "Cambridge, United Kingdom",
+        "zh": "Cambridge, United Kingdom"
+      },
+      "coordinates": [
+        52.2053,
+        0.1218
+      ]
+    },
+    "description": {
+      "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>",
+      "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Petar Velickovic",
+          "zh": "佩塔尔·韦利奇科维奇"
+        },
+        "role": {
+          "en": "GAT lead author",
+          "zh": "GAT 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Graph attention networks\"",
+      "zh": "\"图注意力网络\""
+    },
+    "quoteAttribution": {
+      "en": "《Graph Attention Networks》, Petar Velickovic et al., ICLR, 2018",
+      "zh": "《图注意力网络》, 佩塔尔·韦利奇科维奇等，ICLR，2018"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Graph Attention Networks",
+        "zh": "图注意力网络"
+      },
+      "workAuthors": {
+        "en": "Petar Velickovic et al., ICLR, 2018",
+        "zh": "佩塔尔·韦利奇科维奇等，ICLR，2018"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1710.10903"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.",
+          "zh": "GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat GAT as a defining attention-based graph model. Its long-term legacy is the idea that graph neighborhoods can be weighted dynamically instead of only by graph degree or fixed normalization.",
+          "zh": "专家通常把 GAT 视为注意力式图模型的代表。它的长期影响在于图邻域可以动态加权，而不只依赖节点度或固定归一化。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
+        "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg"
+      ],
+      "imageMeta": {
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1": {
+          "caption": {
+            "en": "Petar Velickovic portrait",
+            "zh": "彼得·维利奇科维奇肖像"
+          },
+          "subcaption": {
+            "en": "Graph Attention Networks lead author",
+            "zh": "图注意力网络主要作者"
+          },
+          "sourceName": {
+            "en": "Google Scholar profile",
+            "zh": "Google Scholar 个人资料"
+          },
+          "source": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+          "sourceUrl": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+          "originalImageUrl": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg": {
+          "caption": {
+            "en": "GAT explainer",
+            "zh": "GAT 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "OpenReview",
+            "zh": "OpenReview"
+          },
+          "source": "https://arxiv.org/abs/1710.10903",
+          "sourceUrl": "https://arxiv.org/abs/1710.10903",
+          "originalImageUrl": "https://arxiv.org/abs/1710.10903",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Graph learning",
+        "zh": "图学习"
+      },
+      "method": {
+        "en": "Attention-weighted graph aggregation",
+        "zh": "注意力加权图聚合"
+      },
+      "artifact": {
+        "en": "Graph Attention Network",
+        "zh": "图注意力网络"
+      },
+      "material": {
+        "en": "ICLR paper and implementation",
+        "zh": "ICLR 论文与实现"
+      },
+      "demo": {
+        "en": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state.",
+        "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Neighbor Attention",
+            "zh": "邻居注意力"
+          },
+          "text": {
+            "en": "Important neighbors receive larger weights.",
+            "zh": "重要邻居获得更大权重。"
+          }
+        },
+        {
+          "label": {
+            "en": "Multi-head Attention",
+            "zh": "多头注意力"
+          },
+          "text": {
+            "en": "Several attention heads stabilize learning.",
+            "zh": "多个注意力头稳定学习。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "GCN",
+            "zh": "GCN"
+          },
+          "zh": {
+            "en": "GCN",
+            "zh": "GCN"
+          }
+        },
+        {
+          "en": {
+            "en": "Graph Neural Network",
+            "zh": "图神经网络"
+          },
+          "zh": {
+            "en": "Graph Neural Network",
+            "zh": "图神经网络"
+          }
+        },
+        {
+          "en": {
+            "en": "Transformer",
+            "zh": "Transformer"
+          },
+          "zh": {
+            "en": "Transformer",
+            "zh": "Transformer"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United Kingdom",
+            "zh": "英国"
+          },
+          "zh": {
+            "en": "United Kingdom",
+            "zh": "英国"
+          }
+        },
+        {
+          "en": {
+            "en": "Canada",
+            "zh": "加拿大"
+          },
+          "zh": {
+            "en": "Canada",
+            "zh": "加拿大"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Score neighbors",
+            "zh": "邻居打分"
+          },
+          "zh": {
+            "en": "Score neighbors",
+            "zh": "邻居打分"
+          }
+        },
+        {
+          "en": {
+            "en": "Normalize weights",
+            "zh": "归一化权重"
+          },
+          "zh": {
+            "en": "Normalize weights",
+            "zh": "归一化权重"
+          }
+        },
+        {
+          "en": {
+            "en": "Update node",
+            "zh": "更新节点"
+          },
+          "zh": {
+            "en": "Update node",
+            "zh": "更新节点"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenReview",
+            "zh": "OpenReview"
+          },
+          "title": {
+            "en": "Graph Attention Networks",
+            "zh": "图注意力网络"
+          },
+          "description": {
+            "en": "OpenReview source card for GAT.",
+            "zh": "OpenReview 的GAT资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1710.10903",
+          "source": "https://arxiv.org/abs/1710.10903",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Graph Attention Networks",
+            "zh": "《图注意力网络》"
+          },
+          "url": "https://arxiv.org/abs/1710.10903"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR OpenReview record",
+            "zh": "ICLR OpenReview 记录"
+          },
+          "url": "https://openreview.net/forum?id=rJXMpikCZ"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "Original GAT repository",
+            "zh": "原始 GAT 代码仓库"
+          },
+          "url": "https://github.com/PetarV-/GAT"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and implementation",
+            "zh": "ICLR 论文与实现"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state.",
+            "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2017-gat-quiz-1",
+      "question": {
+        "en": "How does GAT choose which neighbors matter?",
+        "zh": "GAT 如何选择哪些邻居更重要？"
+      },
+      "options": [
+        {
+          "en": "It learns attention weights over neighbors",
+          "zh": "它学习邻居上的注意力权重"
+        },
+        {
+          "en": "It ignores all edges",
+          "zh": "它忽略所有边"
+        },
+        {
+          "en": "It uses only image brightness",
+          "zh": "它只使用图像亮度"
+        },
+        {
+          "en": "It picks the oldest node",
+          "zh": "它选择最老节点"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "GAT dynamically weights neighboring nodes before combining their features.",
+        "zh": "GAT 在合并邻居特征前动态为邻居加权。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "gat",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2017-gat-quiz-1",
+        "question": {
+          "en": "How does GAT choose which neighbors matter?",
+          "zh": "GAT 如何选择哪些邻居更重要？"
+        },
+        "options": [
+          {
+            "en": "It learns attention weights over neighbors",
+            "zh": "它学习邻居上的注意力权重"
+          },
+          {
+            "en": "It ignores all edges",
+            "zh": "它忽略所有边"
+          },
+          {
+            "en": "It uses only image brightness",
+            "zh": "它只使用图像亮度"
+          },
+          {
+            "en": "It picks the oldest node",
+            "zh": "它选择最老节点"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "GAT dynamically weights neighboring nodes before combining their features.",
+          "zh": "GAT 在合并邻居特征前动态为邻居加权。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "gat",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2016-nas",
+    "year": 2016,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Neural Architecture Search",
+      "zh": "神经架构搜索"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google Brain",
+        "zh": "Google Brain"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.3861,
+        -122.0839
+      ]
+    },
+    "description": {
+      "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>",
+      "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Barret Zoph",
+          "zh": "巴雷特·佐夫"
+        },
+        "role": {
+          "en": "Neural architecture search lead author",
+          "zh": "神经架构搜索主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Neural architecture search with reinforcement learning\"",
+      "zh": "\"基于强化学习的神经架构搜索\""
+    },
+    "quoteAttribution": {
+      "en": "《Neural Architecture Search with Reinforcement Learning》, Barret Zoph and Quoc V. Le, ICLR, 2017",
+      "zh": "《基于强化学习的神经架构搜索》, 巴雷特·佐夫、黎国威，ICLR，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Neural Architecture Search with Reinforcement Learning",
+        "zh": "基于强化学习的神经架构搜索"
+      },
+      "workAuthors": {
+        "en": "Barret Zoph and Quoc V. Le, ICLR, 2017",
+        "zh": "巴雷特·佐夫、黎国威，ICLR，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1611.01578"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.",
+          "zh": "神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat NAS as a milestone in automating parts of model design, while noting its high compute cost. Its long-term legacy is the search-space and controller framing behind later efficient AutoML systems.",
+          "zh": "专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://barretzoph.github.io/images/headshot.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg"
+      ],
+      "imageMeta": {
+        "https://barretzoph.github.io/images/headshot.jpg": {
+          "caption": {
+            "en": "Barret Zoph portrait",
+            "zh": "巴雷特·佐夫肖像"
+          },
+          "subcaption": {
+            "en": "Neural architecture search lead author",
+            "zh": "神经架构搜索主要作者"
+          },
+          "sourceName": {
+            "en": "Barret Zoph homepage",
+            "zh": "巴雷特·佐夫个人主页"
+          },
+          "source": "https://barretzoph.github.io/",
+          "sourceUrl": "https://barretzoph.github.io/",
+          "originalImageUrl": "https://barretzoph.github.io/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg": {
+          "caption": {
+            "en": "Neural Architecture Search explainer",
+            "zh": "神经架构搜索 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "OpenReview",
+            "zh": "OpenReview"
+          },
+          "source": "https://arxiv.org/abs/1611.01578",
+          "sourceUrl": "https://arxiv.org/abs/1611.01578",
+          "originalImageUrl": "https://arxiv.org/abs/1611.01578",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Automated machine learning",
+        "zh": "自动机器学习"
+      },
+      "method": {
+        "en": "Controller-based architecture search",
+        "zh": "基于控制器的架构搜索"
+      },
+      "artifact": {
+        "en": "Neural architecture search with reinforcement learning",
+        "zh": "基于强化学习的神经架构搜索"
+      },
+      "material": {
+        "en": "ICLR paper and AutoML lineage",
+        "zh": "ICLR 论文与 AutoML 脉络"
+      },
+      "demo": {
+        "en": "A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures.",
+        "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Search Space",
+            "zh": "搜索空间"
+          },
+          "text": {
+            "en": "Candidate networks are sampled from design choices.",
+            "zh": "候选网络从设计选择中采样。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reward Signal",
+            "zh": "奖励信号"
+          },
+          "text": {
+            "en": "Validation results guide the controller.",
+            "zh": "验证结果引导控制器。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Reinforcement learning",
+            "zh": "强化学习"
+          },
+          "zh": {
+            "en": "Reinforcement learning",
+            "zh": "强化学习"
+          }
+        },
+        {
+          "en": {
+            "en": "MobileNets",
+            "zh": "MobileNets"
+          },
+          "zh": {
+            "en": "MobileNets",
+            "zh": "MobileNets"
+          }
+        },
+        {
+          "en": {
+            "en": "Efficient model design",
+            "zh": "高效模型设计"
+          },
+          "zh": {
+            "en": "Efficient model design",
+            "zh": "高效模型设计"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Sample architecture",
+            "zh": "采样架构"
+          },
+          "zh": {
+            "en": "Sample architecture",
+            "zh": "采样架构"
+          }
+        },
+        {
+          "en": {
+            "en": "Train and score",
+            "zh": "训练并评分"
+          },
+          "zh": {
+            "en": "Train and score",
+            "zh": "训练并评分"
+          }
+        },
+        {
+          "en": {
+            "en": "Update controller",
+            "zh": "更新控制器"
+          },
+          "zh": {
+            "en": "Update controller",
+            "zh": "更新控制器"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenReview",
+            "zh": "OpenReview"
+          },
+          "title": {
+            "en": "Neural Architecture Search with Reinforcement Learning",
+            "zh": "基于强化学习的神经架构搜索"
+          },
+          "description": {
+            "en": "OpenReview source card for Neural Architecture Search.",
+            "zh": "OpenReview 的神经架构搜索资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1611.01578",
+          "source": "https://arxiv.org/abs/1611.01578",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Neural Architecture Search with Reinforcement Learning",
+            "zh": "《基于强化学习的神经架构搜索》"
+          },
+          "url": "https://arxiv.org/abs/1611.01578"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR OpenReview record",
+            "zh": "ICLR OpenReview 记录"
+          },
+          "url": "https://openreview.net/forum?id=r1Ue8Hcxg"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Google AI AutoML overview",
+            "zh": "Google AI AutoML 概览"
+          },
+          "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and AutoML lineage",
+            "zh": "ICLR 论文与 AutoML 脉络"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures.",
+            "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2016-nas-quiz-1",
+      "question": {
+        "en": "What is being searched in neural architecture search?",
+        "zh": "神经架构搜索在搜索什么？"
+      },
+      "options": [
+        {
+          "en": "Model designs or architectures",
+          "zh": "模型设计或架构"
+        },
+        {
+          "en": "A list of email addresses",
+          "zh": "邮箱地址列表"
+        },
+        {
+          "en": "Only theorem names",
+          "zh": "只有定理名称"
+        },
+        {
+          "en": "The color of a robot",
+          "zh": "机器人的颜色"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "NAS evaluates candidate neural network designs and uses scores to guide the next proposals.",
+        "zh": "NAS 评估候选神经网络设计，并用评分引导下一批提案。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "nas",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2016-nas-quiz-1",
+        "question": {
+          "en": "What is being searched in neural architecture search?",
+          "zh": "神经架构搜索在搜索什么？"
+        },
+        "options": [
+          {
+            "en": "Model designs or architectures",
+            "zh": "模型设计或架构"
+          },
+          {
+            "en": "A list of email addresses",
+            "zh": "邮箱地址列表"
+          },
+          {
+            "en": "Only theorem names",
+            "zh": "只有定理名称"
+          },
+          {
+            "en": "The color of a robot",
+            "zh": "机器人的颜色"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "NAS evaluates candidate neural network designs and uses scores to guide the next proposals.",
+          "zh": "NAS 评估候选神经网络设计，并用评分引导下一批提案。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "nas",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-deep-compression",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Deep Compression",
+      "zh": "深度压缩"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "Stanford, United States",
+        "zh": "美国斯坦福"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>",
+      "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Song Han",
+          "zh": "韩松"
+        },
+        "role": {
+          "en": "Deep Compression lead author",
+          "zh": "Deep Compression 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Compressing deep neural networks with pruning, trained quantization and Huffman coding\"",
+      "zh": "\"用剪枝、训练型量化和霍夫曼编码压缩深度神经网络\""
+    },
+    "quoteAttribution": {
+      "en": "《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》, Song Han, Huizi Mao, and William Dally, ICLR, 2016",
+      "zh": "《深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络》, 韩松、毛慧子、威廉·达利，ICLR，2016"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+        "zh": "深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络"
+      },
+      "workAuthors": {
+        "en": "Song Han, Huizi Mao, and William Dally, ICLR, 2016",
+        "zh": "韩松、毛慧子、威廉·达利，ICLR，2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1510.00149"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.",
+          "zh": "深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A trained network is pruned, retrained with shared quantized weights, and encoded so it fits smaller memory and deployment budgets. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "训练好的网络被剪枝，再用共享量化权重重新训练，并编码到更小的内存和部署预算中。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Deep Compression as a landmark in practical neural network efficiency. Its long-term legacy is the compression toolkit that influenced edge inference, accelerators, pruning, and quantization workflows.",
+          "zh": "专家通常把深度压缩视为实用神经网络效率研究的里程碑。它的长期影响在于压缩工具箱影响了边缘推理、加速器、剪枝和量化工作流。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+        "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg"
+      ],
+      "imageMeta": {
+        "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg": {
+          "caption": {
+            "en": "Song Han portrait",
+            "zh": "韩松肖像"
+          },
+          "subcaption": {
+            "en": "Deep Compression lead author",
+            "zh": "深度压缩主要作者"
+          },
+          "sourceName": {
+            "en": "Han Lab profile",
+            "zh": "韩松实验室个人资料"
+          },
+          "source": "https://hanlab.mit.edu/songhan",
+          "sourceUrl": "https://hanlab.mit.edu/songhan",
+          "originalImageUrl": "https://hanlab.mit.edu/songhan",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg": {
+          "caption": {
+            "en": "Deep Compression explainer",
+            "zh": "深度压缩 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Project page",
+            "zh": "项目页面"
+          },
+          "source": "https://arxiv.org/abs/1510.00149",
+          "sourceUrl": "https://arxiv.org/abs/1510.00149",
+          "originalImageUrl": "https://arxiv.org/abs/1510.00149",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Model efficiency",
+        "zh": "模型效率"
+      },
+      "method": {
+        "en": "Pruning, quantization, and Huffman coding",
+        "zh": "剪枝、量化与霍夫曼编码"
+      },
+      "artifact": {
+        "en": "Deep Compression pipeline",
+        "zh": "深度压缩流程"
+      },
+      "material": {
+        "en": "ICLR paper and efficient inference work",
+        "zh": "ICLR 论文与高效推理研究"
+      },
+      "demo": {
+        "en": "A trained network is pruned, retrained with shared quantized weights, and encoded so it fits smaller memory and deployment budgets.",
+        "zh": "训练好的网络被剪枝，再用共享量化权重重新训练，并编码到更小的内存和部署预算中。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Pruning",
+            "zh": "剪枝"
+          },
+          "text": {
+            "en": "Unimportant weights are removed.",
+            "zh": "不重要权重被移除。"
+          }
+        },
+        {
+          "label": {
+            "en": "Quantization",
+            "zh": "量化"
+          },
+          "text": {
+            "en": "Weights share a smaller set of values.",
+            "zh": "权重共享更小的数值集合。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "AlexNet",
+            "zh": "AlexNet"
+          },
+          "zh": {
+            "en": "AlexNet",
+            "zh": "AlexNet"
+          }
+        },
+        {
+          "en": {
+            "en": "MobileNets",
+            "zh": "MobileNets"
+          },
+          "zh": {
+            "en": "MobileNets",
+            "zh": "MobileNets"
+          }
+        },
+        {
+          "en": {
+            "en": "Knowledge Distillation",
+            "zh": "知识蒸馏"
+          },
+          "zh": {
+            "en": "Knowledge Distillation",
+            "zh": "知识蒸馏"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        },
+        {
+          "en": {
+            "en": "China",
+            "zh": "中国"
+          },
+          "zh": {
+            "en": "China",
+            "zh": "中国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Prune",
+            "zh": "剪枝"
+          },
+          "zh": {
+            "en": "Prune",
+            "zh": "剪枝"
+          }
+        },
+        {
+          "en": {
+            "en": "Quantize",
+            "zh": "量化"
+          },
+          "zh": {
+            "en": "Quantize",
+            "zh": "量化"
+          }
+        },
+        {
+          "en": {
+            "en": "Code",
+            "zh": "编码"
+          },
+          "zh": {
+            "en": "Code",
+            "zh": "编码"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Project page",
+            "zh": "项目页面"
+          },
+          "title": {
+            "en": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+            "zh": "深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络"
+          },
+          "description": {
+            "en": "Project page source card for Deep Compression.",
+            "zh": "项目页面 的深度压缩资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1510.00149",
+          "source": "https://arxiv.org/abs/1510.00149",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Deep Compression",
+            "zh": "《深度压缩》"
+          },
+          "url": "https://arxiv.org/abs/1510.00149"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR OpenReview record",
+            "zh": "ICLR OpenReview 记录"
+          },
+          "url": "https://openreview.net/forum?id=n4Bp24yb5L"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Song Han efficient AI research page",
+            "zh": "韩松实验室深度压缩项目页面"
+          },
+          "url": "https://hanlab.mit.edu/projects/deep-compression"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and efficient inference work",
+            "zh": "ICLR 论文与高效推理研究"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A trained network is pruned, retrained with shared quantized weights, and encoded so it fits smaller memory and deployment budgets.",
+            "zh": "训练好的网络被剪枝，再用共享量化权重重新训练，并编码到更小的内存和部署预算中。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2015-deep-compression-quiz-1",
+      "question": {
+        "en": "Which three ideas are central to Deep Compression?",
+        "zh": "深度压缩的三个核心思想是什么？"
+      },
+      "options": [
+        {
+          "en": "Pruning, quantization, and coding",
+          "zh": "剪枝、量化和编码"
+        },
+        {
+          "en": "Parsing, printing, and sorting",
+          "zh": "解析、打印和排序"
+        },
+        {
+          "en": "Chatting, translating, and voting",
+          "zh": "聊天、翻译和投票"
+        },
+        {
+          "en": "Cropping, rotating, and blurring",
+          "zh": "裁剪、旋转和模糊"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Deep Compression shrinks networks through pruning, trained quantization, and Huffman coding.",
+        "zh": "深度压缩通过剪枝、训练型量化和霍夫曼编码缩小网络。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "deep-compression",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-deep-compression-quiz-1",
+        "question": {
+          "en": "Which three ideas are central to Deep Compression?",
+          "zh": "深度压缩的三个核心思想是什么？"
+        },
+        "options": [
+          {
+            "en": "Pruning, quantization, and coding",
+            "zh": "剪枝、量化和编码"
+          },
+          {
+            "en": "Parsing, printing, and sorting",
+            "zh": "解析、打印和排序"
+          },
+          {
+            "en": "Chatting, translating, and voting",
+            "zh": "聊天、翻译和投票"
+          },
+          {
+            "en": "Cropping, rotating, and blurring",
+            "zh": "裁剪、旋转和模糊"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Deep Compression shrinks networks through pruning, trained quantization, and Huffman coding.",
+          "zh": "深度压缩通过剪枝、训练型量化和霍夫曼编码缩小网络。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "deep-compression",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-knowledge-distillation",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Knowledge Distillation",
+      "zh": "知识蒸馏"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google",
+        "zh": "Google"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.3861,
+        -122.0839
+      ]
+    },
+    "description": {
+      "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>",
+      "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
+        },
+        "role": {
+          "en": "Knowledge distillation co-author",
+          "zh": "知识蒸馏共同作者"
+        },
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Distilling the knowledge in a neural network\"",
+      "zh": "\"蒸馏神经网络中的知识\""
+    },
+    "quoteAttribution": {
+      "en": "《Distilling the Knowledge in a Neural Network》, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+      "zh": "《蒸馏神经网络中的知识》, 杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Distilling the Knowledge in a Neural Network",
+        "zh": "蒸馏神经网络中的知识"
+      },
+      "workAuthors": {
+        "en": "Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+        "zh": "杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1503.02531"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.",
+          "zh": "知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat knowledge distillation as a standard model-compression and transfer technique. Its long-term legacy is the teacher-student pattern now used for efficient inference, ensembles, and large-model adaptation.",
+          "zh": "专家通常把知识蒸馏视为标准的模型压缩和迁移技术。它的长期影响在于教师-学生模式如今用于高效推理、集成模型和大模型适配。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/geoffrey-hinton.jpg",
+        "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/geoffrey-hinton.jpg": {
+          "caption": {
+            "en": "Geoffrey Hinton portrait",
+            "zh": "杰弗里·辛顿肖像"
+          },
+          "subcaption": {
+            "en": "Knowledge distillation co-author",
+            "zh": "知识蒸馏共同作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/geoffrey-hinton.jpg",
+          "sourceUrl": "resources/images/figures/geoffrey-hinton.jpg",
+          "originalImageUrl": "resources/images/figures/geoffrey-hinton.jpg",
+          "license": {
+            "en": "Local project image; reuse rights inherited from existing project asset metadata.",
+            "zh": "本地项目图片；复用权利沿用现有项目素材元数据。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg": {
+          "caption": {
+            "en": "Knowledge Distillation explainer",
+            "zh": "知识蒸馏 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1503.02531",
+          "sourceUrl": "https://arxiv.org/abs/1503.02531",
+          "originalImageUrl": "https://arxiv.org/abs/1503.02531",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Model efficiency",
+        "zh": "模型效率"
+      },
+      "method": {
+        "en": "Teacher-student soft-target training",
+        "zh": "教师-学生软目标训练"
+      },
+      "artifact": {
+        "en": "Distillation training recipe",
+        "zh": "蒸馏训练配方"
+      },
+      "material": {
+        "en": "NIPS workshop paper",
+        "zh": "NIPS 研讨会论文"
+      },
+      "demo": {
+        "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels.",
+        "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Soft Targets",
+            "zh": "软目标"
+          },
+          "text": {
+            "en": "Probabilities reveal similarity between classes.",
+            "zh": "概率揭示类别之间的相似性。"
+          }
+        },
+        {
+          "label": {
+            "en": "Student Model",
+            "zh": "学生模型"
+          },
+          "text": {
+            "en": "A smaller model imitates the teacher behavior.",
+            "zh": "较小模型模仿教师行为。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Deep Compression",
+            "zh": "深度压缩"
+          },
+          "zh": {
+            "en": "Deep Compression",
+            "zh": "深度压缩"
+          }
+        },
+        {
+          "en": {
+            "en": "GPT",
+            "zh": "GPT"
+          },
+          "zh": {
+            "en": "GPT",
+            "zh": "GPT"
+          }
+        },
+        {
+          "en": {
+            "en": "BERT",
+            "zh": "BERT"
+          },
+          "zh": {
+            "en": "BERT",
+            "zh": "BERT"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Teacher logits",
+            "zh": "教师 logits"
+          },
+          "zh": {
+            "en": "Teacher logits",
+            "zh": "教师 logits"
+          }
+        },
+        {
+          "en": {
+            "en": "Soft targets",
+            "zh": "软目标"
+          },
+          "zh": {
+            "en": "Soft targets",
+            "zh": "软目标"
+          }
+        },
+        {
+          "en": {
+            "en": "Student update",
+            "zh": "学生更新"
+          },
+          "zh": {
+            "en": "Student update",
+            "zh": "学生更新"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Distilling the Knowledge in a Neural Network",
+            "zh": "蒸馏神经网络中的知识"
+          },
+          "description": {
+            "en": "arXiv source card for Knowledge Distillation.",
+            "zh": "arXiv 的知识蒸馏资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1503.02531",
+          "source": "https://arxiv.org/abs/1503.02531",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Distilling the Knowledge in a Neural Network",
+            "zh": "《蒸馏神经网络中的知识》"
+          },
+          "url": "https://arxiv.org/abs/1503.02531"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Knowledge distillation overview",
+            "zh": "知识蒸馏概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Knowledge_distillation"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Geoffrey Hinton profile",
+            "zh": "杰弗里·辛顿资料"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NIPS workshop paper",
+            "zh": "NIPS 研讨会论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels.",
+            "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2015-knowledge-distillation-quiz-1",
+      "question": {
+        "en": "What does a student model learn from in knowledge distillation?",
+        "zh": "知识蒸馏中的学生模型从什么学习？"
+      },
+      "options": [
+        {
+          "en": "Soft outputs from a larger teacher model",
+          "zh": "来自较大教师模型的软输出"
+        },
+        {
+          "en": "Only board-game rules",
+          "zh": "只有棋类规则"
+        },
+        {
+          "en": "Raw database indexes",
+          "zh": "原始数据库索引"
+        },
+        {
+          "en": "A deleted training set",
+          "zh": "已删除训练集"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Soft teacher probabilities transfer information beyond hard labels.",
+        "zh": "教师的软概率传递了硬标签之外的信息。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "knowledge-distillation",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-knowledge-distillation-quiz-1",
+        "question": {
+          "en": "What does a student model learn from in knowledge distillation?",
+          "zh": "知识蒸馏中的学生模型从什么学习？"
+        },
+        "options": [
+          {
+            "en": "Soft outputs from a larger teacher model",
+            "zh": "来自较大教师模型的软输出"
+          },
+          {
+            "en": "Only board-game rules",
+            "zh": "只有棋类规则"
+          },
+          {
+            "en": "Raw database indexes",
+            "zh": "原始数据库索引"
+          },
+          {
+            "en": "A deleted training set",
+            "zh": "已删除训练集"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Soft teacher probabilities transfer information beyond hard labels.",
+          "zh": "教师的软概率传递了硬标签之外的信息。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "knowledge-distillation",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2014-ms-coco",
+    "year": 2014,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "MS COCO",
+      "zh": "MS COCO"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Microsoft Research",
+        "zh": "Microsoft Research"
+      },
+      "country": {
+        "en": "Redmond, United States",
+        "zh": "Redmond, United States"
+      },
+      "coordinates": [
+        47.674,
+        -122.1215
+      ]
+    },
+    "description": {
+      "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>",
+      "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Tsung-Yi Lin",
+          "zh": "林宗毅"
+        },
+        "role": {
+          "en": "MS COCO lead author",
+          "zh": "MS COCO 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Common objects in context\"",
+      "zh": "\"上下文中的常见物体\""
+    },
+    "quoteAttribution": {
+      "en": "《Microsoft COCO: Common Objects in Context》, Tsung-Yi Lin et al., ECCV, 2014",
+      "zh": "《Microsoft COCO：上下文中的常见物体》, 林宗毅等，ECCV，2014"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Microsoft COCO: Common Objects in Context",
+        "zh": "Microsoft COCO：上下文中的常见物体"
+      },
+      "workAuthors": {
+        "en": "Tsung-Yi Lin et al., ECCV, 2014",
+        "zh": "林宗毅等，ECCV，2014"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1405.0312"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.",
+          "zh": "MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat MS COCO as one of the most important datasets for modern computer vision. Its long-term legacy is the multi-task benchmark culture that shaped object detection, segmentation, and captioning progress.",
+          "zh": "专家通常把 MS COCO 视为现代计算机视觉最重要的数据集之一。它的长期影响在于多任务基准文化塑造了目标检测、分割和字幕生成的进展。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://tsungyilin.info/images/tsungyi.jpeg",
+        "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg"
+      ],
+      "imageMeta": {
+        "https://tsungyilin.info/images/tsungyi.jpeg": {
+          "caption": {
+            "en": "Tsung-Yi Lin portrait",
+            "zh": "林宗毅肖像"
+          },
+          "subcaption": {
+            "en": "MS COCO lead author",
+            "zh": "MS COCO 主要作者"
+          },
+          "sourceName": {
+            "en": "Tsung-Yi Lin homepage",
+            "zh": "林宗毅个人主页"
+          },
+          "source": "https://tsungyilin.info/",
+          "sourceUrl": "https://tsungyilin.info/",
+          "originalImageUrl": "https://tsungyilin.info/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg": {
+          "caption": {
+            "en": "MS COCO explainer",
+            "zh": "MS COCO 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "COCO Dataset",
+            "zh": "COCO 数据集"
+          },
+          "source": "https://arxiv.org/abs/1405.0312",
+          "sourceUrl": "https://arxiv.org/abs/1405.0312",
+          "originalImageUrl": "https://arxiv.org/abs/1405.0312",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Computer Vision Dataset",
+        "zh": "计算机视觉数据集"
+      },
+      "method": {
+        "en": "Objects in context benchmark",
+        "zh": "上下文中的目标基准"
+      },
+      "artifact": {
+        "en": "Microsoft COCO dataset",
+        "zh": "Microsoft COCO 数据集"
+      },
+      "material": {
+        "en": "ECCV paper and dataset website",
+        "zh": "ECCV 论文与数据集网站"
+      },
+      "demo": {
+        "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.",
+        "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Context",
+            "zh": "上下文"
+          },
+          "text": {
+            "en": "Objects are labeled inside everyday scenes.",
+            "zh": "物体在日常场景中被标注。"
+          }
+        },
+        {
+          "label": {
+            "en": "Multi-task Labels",
+            "zh": "多任务标签"
+          },
+          "text": {
+            "en": "Detection, masks, captions, and keypoints share one dataset.",
+            "zh": "检测、掩码、字幕和关键点共享同一数据集。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "ImageNet",
+            "zh": "ImageNet"
+          },
+          "zh": {
+            "en": "ImageNet",
+            "zh": "ImageNet"
+          }
+        },
+        {
+          "en": {
+            "en": "Faster R-CNN",
+            "zh": "Faster R-CNN"
+          },
+          "zh": {
+            "en": "Faster R-CNN",
+            "zh": "Faster R-CNN"
+          }
+        },
+        {
+          "en": {
+            "en": "Segment Anything",
+            "zh": "Segment Anything"
+          },
+          "zh": {
+            "en": "Segment Anything",
+            "zh": "Segment Anything"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Scene image",
+            "zh": "场景图像"
+          },
+          "zh": {
+            "en": "Scene image",
+            "zh": "场景图像"
+          }
+        },
+        {
+          "en": {
+            "en": "Object labels",
+            "zh": "物体标签"
+          },
+          "zh": {
+            "en": "Object labels",
+            "zh": "物体标签"
+          }
+        },
+        {
+          "en": {
+            "en": "Benchmark tasks",
+            "zh": "基准任务"
+          },
+          "zh": {
+            "en": "Benchmark tasks",
+            "zh": "基准任务"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "COCO Dataset",
+            "zh": "COCO 数据集"
+          },
+          "title": {
+            "en": "Microsoft COCO: Common Objects in Context",
+            "zh": "Microsoft COCO：上下文中的常见物体"
+          },
+          "description": {
+            "en": "COCO Dataset source card for MS COCO.",
+            "zh": "COCO 数据集 的MS COCO资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1405.0312",
+          "source": "https://arxiv.org/abs/1405.0312",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open dataset",
+            "zh": "打开数据集"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Microsoft COCO: Common Objects in Context",
+            "zh": "《Microsoft COCO：上下文中的常见物体》"
+          },
+          "url": "https://arxiv.org/abs/1405.0312"
+        },
+        {
+          "type": {
+            "en": "Dataset",
+            "zh": "数据集"
+          },
+          "label": {
+            "en": "COCO dataset website",
+            "zh": "COCO 数据集网站"
+          },
+          "url": "https://cocodataset.org/"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ECCV Springer record",
+            "zh": "ECCV Springer 记录"
+          },
+          "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ECCV paper and dataset website",
+            "zh": "ECCV 论文与数据集网站"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.",
+            "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2014-ms-coco-quiz-1",
+      "question": {
+        "en": "What made MS COCO especially useful for vision benchmarks?",
+        "zh": "MS COCO 对视觉基准特别有用的原因是什么？"
+      },
+      "options": [
+        {
+          "en": "Objects in context with multiple annotation types",
+          "zh": "上下文中的物体和多种标注类型"
+        },
+        {
+          "en": "Only synthetic chess boards",
+          "zh": "只有合成棋盘"
+        },
+        {
+          "en": "Only unstructured audio",
+          "zh": "只有非结构化音频"
+        },
+        {
+          "en": "A single theorem proof",
+          "zh": "单个定理证明"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "COCO supports detection, segmentation, captions, and related tasks on everyday scenes.",
+        "zh": "COCO 在日常场景上支持检测、分割、字幕等任务。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "ms-coco",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2014-ms-coco-quiz-1",
+        "question": {
+          "en": "What made MS COCO especially useful for vision benchmarks?",
+          "zh": "MS COCO 对视觉基准特别有用的原因是什么？"
+        },
+        "options": [
+          {
+            "en": "Objects in context with multiple annotation types",
+            "zh": "上下文中的物体和多种标注类型"
+          },
+          {
+            "en": "Only synthetic chess boards",
+            "zh": "只有合成棋盘"
+          },
+          {
+            "en": "Only unstructured audio",
+            "zh": "只有非结构化音频"
+          },
+          {
+            "en": "A single theorem proof",
+            "zh": "单个定理证明"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "COCO supports detection, segmentation, captions, and related tasks on everyday scenes.",
+          "zh": "COCO 在日常场景上支持检测、分割、字幕等任务。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "ms-coco",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1989-q-learning",
+    "year": 1989,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Q-Learning",
+      "zh": "Q-Learning"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "King's College Cambridge",
+        "zh": "King's College Cambridge"
+      },
+      "country": {
+        "en": "Cambridge, United Kingdom",
+        "zh": "Cambridge, United Kingdom"
+      },
+      "coordinates": [
+        52.2043,
+        0.1166
+      ]
+    },
+    "description": {
+      "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>",
+      "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Christopher Watkins",
+          "zh": "克里斯托弗·沃特金斯"
+        },
+        "role": {
+          "en": "Q-learning lead author",
+          "zh": "Q-learning 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Learning from delayed rewards\"",
+      "zh": "\"从延迟奖励中学习\""
+    },
+    "quoteAttribution": {
+      "en": "《Learning from Delayed Rewards》, Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
+      "zh": "《从延迟奖励中学习》, 克里斯托弗·沃特金斯，博士论文，1989；沃特金斯和彼得·戴扬，1992"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Learning from Delayed Rewards",
+        "zh": "从延迟奖励中学习"
+      },
+      "workAuthors": {
+        "en": "Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
+        "zh": "克里斯托弗·沃特金斯，博士论文，1989；沃特金斯和彼得·戴扬，1992"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.",
+          "zh": "Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Q-learning as a foundational control algorithm for reinforcement learning. Its long-term legacy is the Bellman-error update pattern that later scaled into Deep Q Networks and many value-based agents.",
+          "zh": "专家通常把 Q-learning 视为强化学习控制算法的基础。它的长期影响在于 Bellman 误差更新模式后来扩展到深度 Q 网络和许多基于价值的智能体。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+        "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg"
+      ],
+      "imageMeta": {
+        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1": {
+          "caption": {
+            "en": "Christopher Watkins portrait",
+            "zh": "克里斯托弗·沃特金斯肖像"
+          },
+          "subcaption": {
+            "en": "Q-learning lead author",
+            "zh": "Q-learning 主要作者"
+          },
+          "sourceName": {
+            "en": "Google Scholar profile",
+            "zh": "Google Scholar 个人资料"
+          },
+          "source": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+          "sourceUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+          "originalImageUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg": {
+          "caption": {
+            "en": "Q-Learning explainer",
+            "zh": "Q-Learning 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Royal Holloway",
+            "zh": "伦敦大学皇家霍洛威学院"
+          },
+          "source": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "originalImageUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Off-policy temporal-difference control",
+        "zh": "离策略时序差分控制"
+      },
+      "artifact": {
+        "en": "Q-learning update rule",
+        "zh": "Q-learning 更新规则"
+      },
+      "material": {
+        "en": "PhD thesis and Machine Learning paper",
+        "zh": "博士论文与《Machine Learning》论文"
+      },
+      "demo": {
+        "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target.",
+        "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Action Value",
+            "zh": "动作价值"
+          },
+          "text": {
+            "en": "Q estimates future return for a state-action pair.",
+            "zh": "Q 估计状态-动作对的未来回报。"
+          }
+        },
+        {
+          "label": {
+            "en": "Off-policy",
+            "zh": "离策略"
+          },
+          "text": {
+            "en": "Learning can target a greedy policy while exploring differently.",
+            "zh": "学习可以指向贪心策略，同时用不同方式探索。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Temporal-difference update",
+            "zh": "时序差分更新"
+          },
+          "zh": {
+            "en": "Temporal-difference update",
+            "zh": "时序差分更新"
+          }
+        },
+        {
+          "en": {
+            "en": "Deep Q Network",
+            "zh": "深度 Q 网络"
+          },
+          "zh": {
+            "en": "Deep Q Network",
+            "zh": "深度 Q 网络"
+          }
+        },
+        {
+          "en": {
+            "en": "SARSA",
+            "zh": "SARSA"
+          },
+          "zh": {
+            "en": "SARSA",
+            "zh": "SARSA"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United Kingdom",
+            "zh": "英国"
+          },
+          "zh": {
+            "en": "United Kingdom",
+            "zh": "英国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "State action",
+            "zh": "状态动作"
+          },
+          "zh": {
+            "en": "State action",
+            "zh": "状态动作"
+          }
+        },
+        {
+          "en": {
+            "en": "Reward + next state",
+            "zh": "奖励 + 下一状态"
+          },
+          "zh": {
+            "en": "Reward + next state",
+            "zh": "奖励 + 下一状态"
+          }
+        },
+        {
+          "en": {
+            "en": "Q update",
+            "zh": "Q 更新"
+          },
+          "zh": {
+            "en": "Q update",
+            "zh": "Q 更新"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Royal Holloway",
+            "zh": "伦敦大学皇家霍洛威学院"
+          },
+          "title": {
+            "en": "Learning from Delayed Rewards",
+            "zh": "从延迟奖励中学习"
+          },
+          "description": {
+            "en": "Royal Holloway source card for Q-Learning.",
+            "zh": "伦敦大学皇家霍洛威学院 的Q-Learning资料卡片。"
+          },
+          "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "source": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open thesis",
+            "zh": "打开博士论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Thesis",
+            "zh": "博士论文"
+          },
+          "label": {
+            "en": "Learning from Delayed Rewards",
+            "zh": "《从延迟奖励中学习》"
+          },
+          "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Q-learning",
+            "zh": "《Q-learning》"
+          },
+          "url": "https://link.springer.com/article/10.1007/BF00992698"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Q-learning overview",
+            "zh": "Q-learning 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Q-learning"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "PhD thesis and Machine Learning paper",
+            "zh": "博士论文与《Machine Learning》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target.",
+            "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-1989-q-learning-quiz-1",
+      "question": {
+        "en": "What value does Q-learning update?",
+        "zh": "Q-learning 更新什么价值？"
+      },
+      "options": [
+        {
+          "en": "The value of a state-action pair",
+          "zh": "状态-动作对的价值"
+        },
+        {
+          "en": "The color of an image",
+          "zh": "图像颜色"
+        },
+        {
+          "en": "Only a word spelling",
+          "zh": "只有单词拼写"
+        },
+        {
+          "en": "A fixed theorem title",
+          "zh": "固定定理标题"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Q-learning updates Q values toward a Bellman target from reward and next-state information.",
+        "zh": "Q-learning 根据奖励和下一状态信息把 Q 值朝 Bellman 目标更新。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "q-learning",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1989-q-learning-quiz-1",
+        "question": {
+          "en": "What value does Q-learning update?",
+          "zh": "Q-learning 更新什么价值？"
+        },
+        "options": [
+          {
+            "en": "The value of a state-action pair",
+            "zh": "状态-动作对的价值"
+          },
+          {
+            "en": "The color of an image",
+            "zh": "图像颜色"
+          },
+          {
+            "en": "Only a word spelling",
+            "zh": "只有单词拼写"
+          },
+          {
+            "en": "A fixed theorem title",
+            "zh": "固定定理标题"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Q-learning updates Q values toward a Bellman target from reward and next-state information.",
+          "zh": "Q-learning 根据奖励和下一状态信息把 Q 值朝 Bellman 目标更新。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "q-learning",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2015-ddpg",
+    "year": 2015,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "DDPG",
+      "zh": "DDPG"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "DeepMind",
+        "zh": "DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国伦敦"
+      },
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>",
+      "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Timothy Lillicrap",
+          "zh": "蒂莫西·利利克拉普"
+        },
+        "role": {
+          "en": "DDPG lead author",
+          "zh": "DDPG 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Continuous control with deep reinforcement learning\"",
+      "zh": "\"使用深度强化学习进行连续控制\""
+    },
+    "quoteAttribution": {
+      "en": "《Continuous Control with Deep Reinforcement Learning》, Timothy Lillicrap et al., ICLR, 2016",
+      "zh": "《使用深度强化学习进行连续控制》, 蒂莫西·利利克拉普等，ICLR，2016"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Continuous Control with Deep Reinforcement Learning",
+        "zh": "使用深度强化学习进行连续控制"
+      },
+      "workAuthors": {
+        "en": "Timothy Lillicrap et al., ICLR, 2016",
+        "zh": "蒂莫西·利利克拉普等，ICLR，2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1509.02971"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.",
+          "zh": "DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat DDPG as an important early deep RL algorithm for continuous control, even though later methods improved stability. Its long-term legacy is the actor-critic template behind TD3, SAC, and many robotics agents.",
+          "zh": "专家通常把 DDPG 视为早期连续控制深度强化学习的重要算法，尽管后续方法提高了稳定性。它的长期影响在于 actor-critic 模板影响了 TD3、SAC 和许多机器人智能体。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+        "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg"
+      ],
+      "imageMeta": {
+        "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png": {
+          "caption": {
+            "en": "Timothy Lillicrap portrait",
+            "zh": "蒂莫西·利利克拉普肖像"
+          },
+          "subcaption": {
+            "en": "DDPG lead author",
+            "zh": "DDPG 主要作者"
+          },
+          "sourceName": {
+            "en": "Stanford Wu Tsai Neurosciences Institute event page",
+            "zh": "斯坦福吴蔡神经科学研究所活动页面"
+          },
+          "source": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+          "sourceUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+          "originalImageUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+          "license": {
+            "en": "Event profile image; reuse rights not stated.",
+            "zh": "活动资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg": {
+          "caption": {
+            "en": "DDPG explainer",
+            "zh": "DDPG 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1509.02971",
+          "sourceUrl": "https://arxiv.org/abs/1509.02971",
+          "originalImageUrl": "https://arxiv.org/abs/1509.02971",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Deterministic actor-critic for continuous control",
+        "zh": "用于连续控制的确定性 actor-critic"
+      },
+      "artifact": {
+        "en": "Deep Deterministic Policy Gradient",
+        "zh": "深度确定性策略梯度"
+      },
+      "material": {
+        "en": "ICLR paper and continuous-control benchmarks",
+        "zh": "ICLR 论文与连续控制基准"
+      },
+      "demo": {
+        "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
+        "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Actor",
+            "zh": "Actor"
+          },
+          "text": {
+            "en": "The policy outputs a continuous action.",
+            "zh": "策略输出连续动作。"
+          }
+        },
+        {
+          "label": {
+            "en": "Critic",
+            "zh": "Critic"
+          },
+          "text": {
+            "en": "The value model supplies policy gradients.",
+            "zh": "价值模型提供策略梯度。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Actor-Critic",
+            "zh": "Actor-Critic"
+          },
+          "zh": {
+            "en": "Actor-Critic",
+            "zh": "Actor-Critic"
+          }
+        },
+        {
+          "en": {
+            "en": "Deep Q Network",
+            "zh": "深度 Q 网络"
+          },
+          "zh": {
+            "en": "Deep Q Network",
+            "zh": "深度 Q 网络"
+          }
+        },
+        {
+          "en": {
+            "en": "Policy gradient theorem",
+            "zh": "策略梯度定理"
+          },
+          "zh": {
+            "en": "Policy gradient theorem",
+            "zh": "策略梯度定理"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United Kingdom",
+            "zh": "英国"
+          },
+          "zh": {
+            "en": "United Kingdom",
+            "zh": "英国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Actor action",
+            "zh": "actor 动作"
+          },
+          "zh": {
+            "en": "Actor action",
+            "zh": "actor 动作"
+          }
+        },
+        {
+          "en": {
+            "en": "Critic value",
+            "zh": "critic 价值"
+          },
+          "zh": {
+            "en": "Critic value",
+            "zh": "critic 价值"
+          }
+        },
+        {
+          "en": {
+            "en": "Policy update",
+            "zh": "策略更新"
+          },
+          "zh": {
+            "en": "Policy update",
+            "zh": "策略更新"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Continuous Control with Deep Reinforcement Learning",
+            "zh": "使用深度强化学习进行连续控制"
+          },
+          "description": {
+            "en": "arXiv source card for DDPG.",
+            "zh": "arXiv 的DDPG资料卡片。"
+          },
+          "url": "https://arxiv.org/abs/1509.02971",
+          "source": "https://arxiv.org/abs/1509.02971",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Continuous Control with Deep Reinforcement Learning",
+            "zh": "《使用深度强化学习进行连续控制》"
+          },
+          "url": "https://arxiv.org/abs/1509.02971"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR OpenReview record",
+            "zh": "ICLR OpenReview 记录"
+          },
+          "url": "https://openreview.net/forum?id=Rx4nmj8j6G"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Deep deterministic policy gradient overview",
+            "zh": "深度确定性策略梯度概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICLR paper and continuous-control benchmarks",
+            "zh": "ICLR 论文与连续控制基准"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
+            "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-2015-ddpg-quiz-1",
+      "question": {
+        "en": "Why is DDPG associated with continuous control?",
+        "zh": "DDPG 为什么与连续控制相关？"
+      },
+      "options": [
+        {
+          "en": "Its actor outputs continuous actions",
+          "zh": "它的 actor 输出连续动作"
+        },
+        {
+          "en": "It only plays word games",
+          "zh": "它只玩文字游戏"
+        },
+        {
+          "en": "It removes the critic",
+          "zh": "它移除 critic"
+        },
+        {
+          "en": "It trains no policy",
+          "zh": "它不训练策略"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DDPG uses an actor-critic setup where the actor proposes continuous actions.",
+        "zh": "DDPG 使用 actor-critic 设置，其中 actor 提出连续动作。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "ddpg",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2015-ddpg-quiz-1",
+        "question": {
+          "en": "Why is DDPG associated with continuous control?",
+          "zh": "DDPG 为什么与连续控制相关？"
+        },
+        "options": [
+          {
+            "en": "Its actor outputs continuous actions",
+            "zh": "它的 actor 输出连续动作"
+          },
+          {
+            "en": "It only plays word games",
+            "zh": "它只玩文字游戏"
+          },
+          {
+            "en": "It removes the critic",
+            "zh": "它移除 critic"
+          },
+          {
+            "en": "It trains no policy",
+            "zh": "它不训练策略"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DDPG uses an actor-critic setup where the actor proposes continuous actions.",
+          "zh": "DDPG 使用 actor-critic 设置，其中 actor 提出连续动作。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "ddpg",
+          "ai100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1983-actor-critic",
+    "year": 1983,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Actor-Critic",
+      "zh": "Actor-Critic"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Massachusetts Amherst",
+        "zh": "University of Massachusetts Amherst"
+      },
+      "country": {
+        "en": "Amherst, United States",
+        "zh": "Amherst, United States"
+      },
+      "coordinates": [
+        42.3868,
+        -72.5301
+      ]
+    },
+    "description": {
+      "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>",
+      "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Andrew Barto",
+          "zh": "安德鲁·巴托"
+        },
+        "role": {
+          "en": "Actor-Critic co-author",
+          "zh": "Actor-Critic 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Neuronlike adaptive elements that can solve difficult learning control problems\"",
+      "zh": "\"能够解决困难学习控制问题的类神经自适应元件\""
+    },
+    "quoteAttribution": {
+      "en": "《Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems》, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+      "zh": "《能够解决困难学习控制问题的类神经自适应元件》, 安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+        "zh": "能够解决困难学习控制问题的类神经自适应元件"
+      },
+      "workAuthors": {
+        "en": "Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+        "zh": "安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.",
+          "zh": "Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat actor-critic as a core architecture for modern reinforcement learning. Its long-term legacy is the policy-value split that underlies A3C, DDPG, PPO-style training, and many game or robotics agents.",
+          "zh": "专家通常把 Actor-Critic 视为现代强化学习的核心架构。它的长期影响在于策略-价值分离支撑了 A3C、DDPG、PPO 式训练以及许多游戏或机器人智能体。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+        "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg"
+      ],
+      "imageMeta": {
+        "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM": {
+          "caption": {
+            "en": "Andrew Barto portrait",
+            "zh": "安德鲁·巴托肖像"
+          },
+          "subcaption": {
+            "en": "Actor-Critic co-author",
+            "zh": "Actor-Critic 共同作者"
+          },
+          "sourceName": {
+            "en": "UMass Amherst profile",
+            "zh": "马萨诸塞大学阿默斯特分校个人资料"
+          },
+          "source": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+          "sourceUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+          "originalImageUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg": {
+          "caption": {
+            "en": "Actor-Critic explainer",
+            "zh": "Actor-Critic 解释图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the achievement flow.",
+            "zh": "关于该成就流程的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "IEEE Xplore",
+            "zh": "IEEE Xplore"
+          },
+          "source": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "originalImageUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Separate policy and value learning",
+        "zh": "分离的策略与价值学习"
+      },
+      "artifact": {
+        "en": "Actor-critic reinforcement-learning architecture",
+        "zh": "Actor-Critic 强化学习架构"
+      },
+      "material": {
+        "en": "IEEE Systems, Man, and Cybernetics paper",
+        "zh": "IEEE Systems, Man, and Cybernetics 论文"
+      },
+      "demo": {
+        "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.",
+        "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Actor",
+            "zh": "Actor"
+          },
+          "text": {
+            "en": "The policy chooses actions.",
+            "zh": "策略选择动作。"
+          }
+        },
+        {
+          "label": {
+            "en": "Critic",
+            "zh": "Critic"
+          },
+          "text": {
+            "en": "The value estimate evaluates the action.",
+            "zh": "价值估计评价动作。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Temporal-difference update",
+            "zh": "时序差分更新"
+          },
+          "zh": {
+            "en": "Temporal-difference update",
+            "zh": "时序差分更新"
+          }
+        },
+        {
+          "en": {
+            "en": "Q-Learning",
+            "zh": "Q-Learning"
+          },
+          "zh": {
+            "en": "Q-Learning",
+            "zh": "Q-Learning"
+          }
+        },
+        {
+          "en": {
+            "en": "DDPG",
+            "zh": "DDPG"
+          },
+          "zh": {
+            "en": "DDPG",
+            "zh": "DDPG"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Act",
+            "zh": "行动"
+          },
+          "zh": {
+            "en": "Act",
+            "zh": "行动"
+          }
+        },
+        {
+          "en": {
+            "en": "Critique",
+            "zh": "评价"
+          },
+          "zh": {
+            "en": "Critique",
+            "zh": "评价"
+          }
+        },
+        {
+          "en": {
+            "en": "Improve policy",
+            "zh": "改进策略"
+          },
+          "zh": {
+            "en": "Improve policy",
+            "zh": "改进策略"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "IEEE Xplore",
+            "zh": "IEEE Xplore"
+          },
+          "title": {
+            "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+            "zh": "能够解决困难学习控制问题的类神经自适应元件"
+          },
+          "description": {
+            "en": "IEEE Xplore source card for Actor-Critic.",
+            "zh": "IEEE Xplore 的Actor-Critic资料卡片。"
+          },
+          "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "source": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open DOI page",
+            "zh": "打开 DOI 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+            "zh": "《能够解决困难学习控制问题的类神经自适应元件》"
+          },
+          "url": "https://doi.org/10.1109/TSMC.1983.6313077"
+        },
+        {
+          "type": {
+            "en": "Book",
+            "zh": "书籍"
+          },
+          "label": {
+            "en": "Reinforcement Learning: An Introduction",
+            "zh": "《强化学习导论》"
+          },
+          "url": "http://incompleteideas.net/book/the-book-2nd.html"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Actor-critic model overview",
+            "zh": "Actor-Critic 模型概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Actor-critic_model"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "IEEE Systems, Man, and Cybernetics paper",
+            "zh": "IEEE Systems, Man, and Cybernetics 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.",
+            "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
+          }
+        }
+      ]
+    },
+    "quiz": {
+      "id": "ai100-1983-actor-critic-quiz-1",
+      "question": {
+        "en": "What are the two parts of an actor-critic method?",
+        "zh": "Actor-Critic 方法的两个部分是什么？"
+      },
+      "options": [
+        {
+          "en": "A policy actor and a value critic",
+          "zh": "策略 actor 和价值 critic"
+        },
+        {
+          "en": "A parser and a printer",
+          "zh": "解析器和打印机"
+        },
+        {
+          "en": "A caption and a camera only",
+          "zh": "只有字幕和相机"
+        },
+        {
+          "en": "A password and a database",
+          "zh": "密码和数据库"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The actor chooses actions while the critic evaluates them with value feedback.",
+        "zh": "actor 选择动作，critic 用价值反馈评价动作。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "actor-critic",
+        "ai100"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1983-actor-critic-quiz-1",
+        "question": {
+          "en": "What are the two parts of an actor-critic method?",
+          "zh": "Actor-Critic 方法的两个部分是什么？"
+        },
+        "options": [
+          {
+            "en": "A policy actor and a value critic",
+            "zh": "策略 actor 和价值 critic"
+          },
+          {
+            "en": "A parser and a printer",
+            "zh": "解析器和打印机"
+          },
+          {
+            "en": "A caption and a camera only",
+            "zh": "只有字幕和相机"
+          },
+          {
+            "en": "A password and a database",
+            "zh": "密码和数据库"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The actor chooses actions while the critic evaluates them with value feedback.",
+          "zh": "actor 选择动作，critic 用价值反馈评价动作。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "actor-critic",
+          "ai100"
         ]
       }
     ]
