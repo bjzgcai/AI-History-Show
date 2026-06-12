@@ -2331,7 +2331,7 @@ module.exports = {
           "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
           "license": {
             "en": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
-            "zh": "Rights unclear; 互联网档案馆 provides digital access, but the page does not state a clear commercial license."
+            "zh": "权利状态不明确；互联网档案馆提供数字访问，但页面未说明清晰的商业复用许可。"
           },
           "usage": {
             "en": "Source material image / Archival reference",
@@ -2594,7 +2594,10 @@ module.exports = {
           },
           "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
           "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
-          "license": "Author-hosted web access; reuse rights for the text are not stated.",
+          "license": {
+            "en": "Author-hosted web access; reuse rights for the text are not stated.",
+            "zh": "作者托管的网页访问版本；文本复用权利未说明。"
+          },
           "usage": {
             "en": "Source material / Original paper reference",
             "zh": "原始材料入口 / 原始论文参考"
@@ -2867,7 +2870,7 @@ module.exports = {
           "source": "https://www.nature.com/articles/nature16961",
           "license": {
             "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
-            "zh": "《自然》 article access page; reuse rights for article figures are restricted by publisher terms."
+            "zh": "《自然》文章访问页；论文图表的复用受出版方条款限制。"
           },
           "usage": {
             "en": "Source material / Published paper reference",
@@ -3133,7 +3136,10 @@ module.exports = {
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "ACM Digital Library",
+          "site": {
+            "en": "ACM Digital Library",
+            "zh": "ACM 数字图书馆"
+          },
           "title": {
             "en": "The Complexity of Theorem-Proving Procedures",
             "zh": "《定理证明过程的复杂性》"
@@ -3144,7 +3150,10 @@ module.exports = {
           },
           "url": "https://dl.acm.org/doi/10.1145/800157.805047",
           "source": "https://dl.acm.org/doi/10.1145/800157.805047",
-          "license": "ACM article page; reuse rights are controlled by ACM.",
+          "license": {
+            "en": "ACM article page; reuse rights are controlled by ACM.",
+            "zh": "ACM 文章页面；复用权利由 ACM 条款控制。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -3421,7 +3430,10 @@ module.exports = {
           },
           "url": "https://epubs.siam.org/doi/10.1137/1116025",
           "source": "https://epubs.siam.org/doi/10.1137/1116025",
-          "license": "SIAM publication page; reuse requires checking SIAM rights.",
+          "license": {
+            "en": "SIAM publication page; reuse requires checking SIAM rights.",
+            "zh": "SIAM 出版页面；复用需要核查 SIAM 权利条款。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -3603,7 +3615,7 @@ module.exports = {
         },
         "html": {
           "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition.",
-          "zh": "Newell 和 Simon 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌 图书s 保存了书目信息和摘要，Carnegie Mellon Archives 记录了 1956 年修订版。"
+          "zh": "纽厄尔和西蒙 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌图书保存了书目信息和摘要，卡内基梅隆大学档案记录了 1956 年修订版。"
         }
       },
       {
@@ -3702,7 +3714,7 @@ module.exports = {
           "type": "archiveLink",
           "site": {
             "en": "Google Books",
-            "zh": "谷歌 图书s"
+            "zh": "谷歌图书"
           },
           "title": {
             "en": "The Logic Theory Machine",
@@ -3716,7 +3728,7 @@ module.exports = {
           "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
           "license": {
             "en": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
-            "zh": "谷歌 图书s bibliographic preview; reuse rights for book scans are not stated."
+            "zh": "谷歌图书书目预览页；书籍扫描内容的复用权利未说明。"
           },
           "usage": {
             "en": "Source material / Published paper reference",
@@ -3987,7 +3999,10 @@ module.exports = {
           },
           "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
           "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
-          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "license": {
+            "en": "CACM article page; reuse rights are controlled by ACM.",
+            "zh": "《ACM 通讯》文章页面；复用权利由 ACM 条款控制。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -4069,7 +4084,7 @@ module.exports = {
         },
         "sourceName": {
           "en": "Local explainer based on Wang 1960 and Wang 1961",
-          "zh": "Local explainer based on 王浩 1960 and 王浩 1961"
+          "zh": "基于王浩 1960 年和 1961 年论文制作的本地解释图"
         },
         "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
         "sourceUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
@@ -4287,7 +4302,10 @@ module.exports = {
           },
           "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
           "source": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
-          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "license": {
+            "en": "CACM article page; reuse rights are controlled by ACM.",
+            "zh": "《ACM 通讯》文章页面；复用权利由 ACM 条款控制。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -4564,15 +4582,18 @@ module.exports = {
           "site": "arXiv / ICLR",
           "title": {
             "en": "Adam paper and Algorithm 1",
-            "zh": "Adam paper and Algorithm 1"
+            "zh": "Adam 论文与算法 1"
           },
           "description": {
             "en": "Primary paper record for Adam; local images are redrawn from equations and pseudocode.",
-            "zh": "Primary paper record for Adam; local images are redrawn from equations and pseudocode."
+            "zh": "Adam 的主要论文记录；本地图片依据公式和伪代码重绘。"
           },
           "url": "https://arxiv.org/abs/1412.6980",
           "source": "https://arxiv.org/abs/1412.6980",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -4898,22 +4919,25 @@ module.exports = {
           "site": "Oxford VGG",
           "title": {
             "en": "Very Deep ConvNets project",
-            "zh": "Very Deep ConvNets project"
+            "zh": "超深卷积网络项目"
           },
           "description": {
             "en": "Official VGG project page with model release notes and source material.",
-            "zh": "Official VGG project page with model release notes and source material."
+            "zh": "VGG 官方项目页，包含模型发布说明和相关资料。"
           },
           "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
           "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open project page",
-            "zh": "Open project page"
+            "zh": "打开项目页面"
           }
         }
       ],
@@ -5218,7 +5242,7 @@ module.exports = {
           "type": "archiveLink",
           "site": {
             "en": "MIT Press",
-            "zh": "麻省理工学院 Press"
+            "zh": "麻省理工学院出版社"
           },
           "title": {
             "en": "Adaptation in Natural and Artificial Systems",
@@ -5226,11 +5250,14 @@ module.exports = {
           },
           "description": {
             "en": "Book record for Holland’s foundational genetic-algorithm treatment.",
-            "zh": "图书 record for 霍兰德’s foundational genetic-algorithm treatment."
+            "zh": "霍兰德遗传算法奠基著作的图书记录。"
           },
           "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -5571,26 +5598,29 @@ module.exports = {
           "type": "archiveLink",
           "site": {
             "en": "Freiburg CVL",
-            "zh": "弗赖堡 CVL"
+            "zh": "弗赖堡计算机视觉实验室"
           },
           "title": {
             "en": "U-Net release page",
-            "zh": "U-Net release page"
+            "zh": "U-Net 项目发布页"
           },
           "description": {
             "en": "Project page and downloadable implementation materials from the Freiburg group.",
-            "zh": "项目 page and downloadable implementation materials from the 弗赖堡 group."
+            "zh": "弗赖堡团队的项目页面，提供 U-Net 实现材料下载。"
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open project page",
-            "zh": "Open project page"
+            "zh": "打开项目页面"
           }
         }
       ],
@@ -5613,7 +5643,7 @@ module.exports = {
           },
           "label": {
             "en": "Freiburg U-Net release page",
-            "zh": "弗赖堡 U-Net release page"
+            "zh": "弗赖堡 U-Net 项目发布页"
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/"
         },
@@ -5624,7 +5654,7 @@ module.exports = {
           },
           "label": {
             "en": "nnU-Net implementation project",
-            "zh": "nnU-Net implementation project"
+            "zh": "nnU-Net 实现项目"
           },
           "url": "https://github.com/MIC-DKFZ/nnUNet"
         }
@@ -5942,22 +5972,25 @@ module.exports = {
           "site": "GitHub",
           "title": {
             "en": "ShaoqingRen/faster_rcnn",
-            "zh": "ShaoqingRen/faster_rcnn"
+            "zh": "任少卿/faster_rcnn"
           },
           "description": {
             "en": "Author-linked MATLAB implementation repository for Faster R-CNN.",
-            "zh": "作者关联的 MATLAB 实现仓库： Faster R-CNN."
+            "zh": "Faster R-CNN 作者关联的 MATLAB 实现仓库。"
           },
           "url": "https://github.com/ShaoqingRen/faster_rcnn",
           "source": "https://github.com/ShaoqingRen/faster_rcnn",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open code repository",
-            "zh": "Open code repository"
+            "zh": "打开代码仓库"
           }
         }
       ],
@@ -5980,7 +6013,7 @@ module.exports = {
           },
           "label": {
             "en": "ShaoqingRen/faster_rcnn",
-            "zh": "ShaoqingRen/faster_rcnn"
+            "zh": "任少卿/faster_rcnn"
           },
           "url": "https://github.com/ShaoqingRen/faster_rcnn"
         },
@@ -5991,7 +6024,7 @@ module.exports = {
           },
           "label": {
             "en": "TorchVision Faster R-CNN model",
-            "zh": "TorchVision Faster R-CNN model"
+            "zh": "TorchVision Faster R-CNN 模型"
           },
           "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html"
         }
@@ -6077,17 +6110,23 @@ module.exports = {
       "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
         "caption": {
           "en": "Kaiming He portrait",
-          "zh": "Kaiming He 肖像"
+          "zh": "何恺明肖像"
         },
         "subcaption": {
           "en": "Portrait from Kaiming He's MIT-hosted personal page.",
-          "zh": "来自 Kaiming He 的 麻省理工学院 托管个人主页。"
+          "zh": "Faster R-CNN 共同作者"
         },
-        "sourceName": "Kaiming He personal page",
+        "sourceName": {
+          "en": "Kaiming He personal page",
+          "zh": "何恺明个人主页"
+        },
         "source": "https://people.csail.mit.edu/kaiming/",
         "sourceUrl": "https://people.csail.mit.edu/kaiming/",
         "originalImageUrl": "https://people.csail.mit.edu/kaiming/img/kmh2024fall.jpg",
-        "license": "Personal website photo; rights not stated.",
+        "license": {
+          "en": "Personal website photo; rights not stated.",
+          "zh": "个人网站照片；未说明复用权利。"
+        },
         "usage": {
           "en": "Historical figure / Faster R-CNN co-author portrait",
           "zh": "历史人物 / Faster R-CNN 共同作者肖像"
@@ -6287,11 +6326,14 @@ module.exports = {
           },
           "description": {
             "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
-            "zh": "ACM 原始记录： the 1992 optimal-margin classifier paper."
+            "zh": "ACM 原始记录：1992 年最优间隔分类器论文。"
           },
           "url": "https://dl.acm.org/doi/10.1145/130385.130401",
           "source": "https://dl.acm.org/doi/10.1145/130385.130401",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -6641,11 +6683,14 @@ module.exports = {
           },
           "description": {
             "en": "Publisher book record for the CART monograph.",
-            "zh": "出版社图书记录： the CART monograph."
+            "zh": "出版社图书记录：CART 专著。"
           },
           "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
           "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -6988,11 +7033,14 @@ module.exports = {
           },
           "description": {
             "en": "Original Science record for the physical annealing analogy applied to optimization.",
-            "zh": "《科学》 原始记录： the physical annealing analogy applied to optimization."
+            "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
           },
           "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -7322,18 +7370,21 @@ module.exports = {
           },
           "description": {
             "en": "Publisher DOI page for Tibshirani’s 1996 lasso paper.",
-            "zh": "出版社 DOI 页面： Tibshirani’s 1996 lasso paper."
+            "zh": "出版社 DOI 页面：蒂布希拉尼 1996 年的 Lasso 论文。"
           },
           "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
           "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open DOI page",
-            "zh": "Open DOI page"
+            "zh": "打开 DOI 页面"
           }
         }
       ],
@@ -7649,25 +7700,31 @@ module.exports = {
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "CVF Open Access",
+          "site": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放访问"
+          },
           "title": {
             "en": "Going Deeper with Convolutions",
             "zh": "用卷积走得更深"
           },
           "description": {
             "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
-            "zh": "Open-access 计算机视觉与模式识别会议 page for GoogLeNet and the Inception block."
+            "zh": "CVPR 开放访问页面，介绍 GoogLeNet 与 Inception 模块。"
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
           "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open CVF paper",
-            "zh": "Open CVF paper"
+            "zh": "打开 CVF 论文"
           }
         }
       ],
@@ -7988,7 +8045,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1145/321250.321253",
           "source": "https://doi.org/10.1145/321250.321253",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -8316,7 +8376,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1145/155360.155362",
           "source": "https://doi.org/10.1145/155360.155362",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -8634,7 +8697,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1145/365153.365168",
           "source": "https://doi.org/10.1145/365153.365168",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -8952,7 +9018,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1073/pnas.79.8.2554",
           "source": "https://doi.org/10.1073/pnas.79.8.2554",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -9271,7 +9340,10 @@ module.exports = {
           },
           "url": "https://jmlr.org/papers/v15/srivastava14a.html",
           "source": "https://jmlr.org/papers/v15/srivastava14a.html",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -9596,7 +9668,10 @@ module.exports = {
           },
           "url": "https://arxiv.org/abs/1506.02640",
           "source": "https://arxiv.org/abs/1506.02640",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -9911,7 +9986,10 @@ module.exports = {
           },
           "url": "https://arxiv.org/abs/1301.3781",
           "source": "https://arxiv.org/abs/1301.3781",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -10236,7 +10314,10 @@ module.exports = {
           },
           "url": "https://ieeexplore.ieee.org/document/5206848",
           "source": "https://ieeexplore.ieee.org/document/5206848",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -10564,7 +10645,10 @@ module.exports = {
           },
           "url": "https://arxiv.org/abs/1312.5602",
           "source": "https://arxiv.org/abs/1312.5602",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -10889,7 +10973,10 @@ module.exports = {
           },
           "url": "https://jmlr.org/papers/v3/blei03a.html",
           "source": "https://jmlr.org/papers/v3/blei03a.html",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -11210,11 +11297,14 @@ module.exports = {
           },
           "description": {
             "en": "Repository record for Winograd's language-understanding work.",
-            "zh": "Winograd 语言理解工作的 麻省理工学院 仓储记录。"
+            "zh": "麻省理工学院仓储记录，收录维诺格拉德的语言理解工作。"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/7095",
           "source": "https://dspace.mit.edu/handle/1721.1/7095",
-          "license": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -11531,7 +11621,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -11836,7 +11929,7 @@ module.exports = {
           "type": "archiveLink",
           "site": {
             "en": "MIT Media Lab course archive",
-            "zh": "麻省理工学院 Media Lab course archive"
+            "zh": "麻省理工学院媒体实验室课程档案"
           },
           "title": {
             "en": "A Framework for Representing Knowledge",
@@ -11848,7 +11941,10 @@ module.exports = {
           },
           "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -11878,7 +11974,7 @@ module.exports = {
           },
           "label": {
             "en": "Marvin Minsky obituary, MIT News",
-            "zh": "马文·明斯基 obituary, 麻省理工学院 新闻"
+            "zh": "马文·明斯基讣告，麻省理工学院新闻"
           },
           "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125"
         },
@@ -11889,7 +11985,7 @@ module.exports = {
           },
           "label": {
             "en": "Frame, MIT AI memo bibliographic record",
-            "zh": "Frame, 麻省理工学院 AI memo bibliographic record"
+            "zh": "框架论文：麻省理工学院 AI 备忘录书目记录"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/6089"
         }
@@ -12162,7 +12258,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1021/ci60034a002",
           "source": "https://doi.org/10.1021/ci60034a002",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -12467,7 +12566,10 @@ module.exports = {
           },
           "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
           "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -12772,7 +12874,10 @@ module.exports = {
           },
           "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -13083,7 +13188,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1037/h0042519",
           "source": "https://doi.org/10.1037/h0042519",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -13391,7 +13499,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
           "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -13693,7 +13804,10 @@ module.exports = {
           },
           "url": "https://doi.org/10.1007/BF00115009",
           "source": "https://doi.org/10.1007/BF00115009",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -13989,7 +14103,7 @@ module.exports = {
           "type": "archiveLink",
           "site": {
             "en": "UCLA Computer Science",
-            "zh": "加州大学洛杉矶分校 Computer 《科学》"
+            "zh": "加州大学洛杉矶分校计算机科学系"
           },
           "title": {
             "en": "Bayesian Networks technical paper",
@@ -14001,14 +14115,17 @@ module.exports = {
           },
           "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
           },
           "action": {
             "en": "Open UCLA PDF",
-            "zh": "打开 加州大学洛杉矶分校 PDF"
+            "zh": "打开 UCLA PDF"
           }
         }
       ],
@@ -14301,14 +14418,17 @@ module.exports = {
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Reference",
+          "site": {
+            "en": "Reference",
+            "zh": "参考资料"
+          },
           "title": {
             "en": "OTTER 3.3 Reference Manual",
             "zh": "OTTER 3.3 参考手册"
           },
           "description": {
             "en": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
-            "zh": "主要手册： Otter input syntax, inference rules, and proof-search controls."
+            "zh": "主要手册：介绍 Otter 的输入语法、推理规则和证明搜索控制。"
           },
           "url": "https://arxiv.org/abs/cs/0310056",
           "source": "https://arxiv.org/abs/cs/0310056",
