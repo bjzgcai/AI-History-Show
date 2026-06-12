@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Self-organizing map topology explainer">
+  <rect width="720" height="420" rx="24" fill="#0f172a"/>
+  <text x="36" y="54" fill="#f59e0b" font-family="Arial, sans-serif" font-size="24" font-weight="700">winning unit pulls its neighborhood</text>
+  <g transform="translate(88 92)" stroke="#334155" stroke-width="3">
+    <path d="M0 0H250V250H0Z" fill="#111827"/>
+    <path d="M50 0V250M100 0V250M150 0V250M200 0V250M0 50H250M0 100H250M0 150H250M0 200H250"/>
+  </g>
+  <circle cx="238" cy="192" r="22" fill="#f97316"/>
+  <circle cx="238" cy="192" r="74" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="9 8"/>
+  <g fill="#60a5fa"><circle cx="188" cy="142" r="12"/><circle cx="238" cy="142" r="12"/><circle cx="288" cy="192" r="12"/><circle cx="188" cy="242" r="12"/><circle cx="238" cy="242" r="12"/></g>
+  <path d="M390 208H452" stroke="#f8fafc" stroke-width="5"/>
+  <g transform="translate(486 106)">
+    <path d="M0 170C44 88 104 218 178 54" fill="none" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="98" cy="112" r="20" fill="#f97316"/>
+    <text x="92" y="232" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="15">topology-preserving map</text>
+  </g>
+</svg>
