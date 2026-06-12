@@ -85,8 +85,11 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 #### 3. 右侧文字栏
 
 - `commentarySections` 至少包含 `Historical Background`、`Core Idea`、`Long-Term Legacy`。
+- 以上三个 context sections 的英文和中文正文都必须至少 2 个完整句子；不要只写一句定义或一句影响概述。
+- 第一句应交代历史/技术背景或问题，第二句应说明为什么这个成就重要、如何工作、或它和相邻 AI 成就的关系。
 - `Long-Term Legacy / 长期影响` 必须说明专家如何评价该成就，不能只写普通影响描述。
 - 推荐包含类似句式：`Experts generally treat...` / `专家通常把/认为...`。
+- 人物/portrait 卡片的 `imageMeta.subcaption` 仍应保持短句，只说明人物与成就的关系（如 `Isomap 主要作者`），不要把这里当作 context 段落。
 
 #### 4. 资料来源
 

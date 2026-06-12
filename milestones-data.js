@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-11 18:58
+// 生成时间: 2026-06-12 20:59
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -3937,7 +3937,7 @@ const milestones = [
           "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
           "license": {
             "en": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
-            "zh": "Rights unclear; 互联网档案馆 provides digital access, but the page does not state a clear commercial license."
+            "zh": "权利状态不明确；互联网档案馆提供数字访问，但页面未说明清晰的商业复用许可。"
           },
           "usage": {
             "en": "Source material image / Archival reference",
@@ -4311,7 +4311,10 @@ const milestones = [
           },
           "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
           "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
-          "license": "Author-hosted web access; reuse rights for the text are not stated.",
+          "license": {
+            "en": "Author-hosted web access; reuse rights for the text are not stated.",
+            "zh": "作者托管的网页访问版本；文本复用权利未说明。"
+          },
           "usage": {
             "en": "Source material / Original paper reference",
             "zh": "原始材料入口 / 原始论文参考"
@@ -4701,7 +4704,7 @@ const milestones = [
           "source": "https://www.nature.com/articles/nature16961",
           "license": {
             "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
-            "zh": "《自然》 article access page; reuse rights for article figures are restricted by publisher terms."
+            "zh": "《自然》文章访问页；论文图表的复用受出版方条款限制。"
           },
           "usage": {
             "en": "Source material / Published paper reference",
@@ -5082,7 +5085,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "ACM Digital Library",
+          "site": {
+            "en": "ACM Digital Library",
+            "zh": "ACM 数字图书馆"
+          },
           "title": {
             "en": "The Complexity of Theorem-Proving Procedures",
             "zh": "《定理证明过程的复杂性》"
@@ -5093,7 +5099,10 @@ const milestones = [
           },
           "url": "https://dl.acm.org/doi/10.1145/800157.805047",
           "source": "https://dl.acm.org/doi/10.1145/800157.805047",
-          "license": "ACM article page; reuse rights are controlled by ACM.",
+          "license": {
+            "en": "ACM article page; reuse rights are controlled by ACM.",
+            "zh": "ACM 文章页面；复用权利由 ACM 条款控制。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -5487,7 +5496,10 @@ const milestones = [
           },
           "url": "https://epubs.siam.org/doi/10.1137/1116025",
           "source": "https://epubs.siam.org/doi/10.1137/1116025",
-          "license": "SIAM publication page; reuse requires checking SIAM rights.",
+          "license": {
+            "en": "SIAM publication page; reuse requires checking SIAM rights.",
+            "zh": "SIAM 出版页面；复用需要核查 SIAM 权利条款。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -5726,7 +5738,7 @@ const milestones = [
         },
         "html": {
           "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition.",
-          "zh": "Newell 和 Simon 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌 图书s 保存了书目信息和摘要，Carnegie Mellon Archives 记录了 1956 年修订版。"
+          "zh": "纽厄尔和西蒙 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌图书保存了书目信息和摘要，卡内基梅隆大学档案记录了 1956 年修订版。"
         }
       },
       {
@@ -5882,7 +5894,7 @@ const milestones = [
           "type": "archiveLink",
           "site": {
             "en": "Google Books",
-            "zh": "谷歌 图书s"
+            "zh": "谷歌图书"
           },
           "title": {
             "en": "The Logic Theory Machine",
@@ -5896,7 +5908,7 @@ const milestones = [
           "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
           "license": {
             "en": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
-            "zh": "谷歌 图书s bibliographic preview; reuse rights for book scans are not stated."
+            "zh": "谷歌图书书目预览页；书籍扫描内容的复用权利未说明。"
           },
           "usage": {
             "en": "Source material / Published paper reference",
@@ -6170,7 +6182,7 @@ const milestones = [
           },
           "sourceName": {
             "en": "Local explainer based on Wang 1960 and Wang 1961",
-            "zh": "Local explainer based on 王浩 1960 and 王浩 1961"
+            "zh": "基于王浩 1960 年和 1961 年论文制作的本地解释图"
           },
           "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
           "sourceUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
@@ -6278,7 +6290,10 @@ const milestones = [
           },
           "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
           "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
-          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "license": {
+            "en": "CACM article page; reuse rights are controlled by ACM.",
+            "zh": "《ACM 通讯》文章页面；复用权利由 ACM 条款控制。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -6698,7 +6713,10 @@ const milestones = [
           },
           "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
           "source": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
-          "license": "CACM article page; reuse rights are controlled by ACM.",
+          "license": {
+            "en": "CACM article page; reuse rights are controlled by ACM.",
+            "zh": "《ACM 通讯》文章页面；复用权利由 ACM 条款控制。"
+          },
           "usage": {
             "en": "Source material / Published paper reference",
             "zh": "原始材料入口 / 发表论文参考"
@@ -7130,15 +7148,18 @@ const milestones = [
           "site": "arXiv / ICLR",
           "title": {
             "en": "Adam paper and Algorithm 1",
-            "zh": "Adam paper and Algorithm 1"
+            "zh": "Adam 论文与算法 1"
           },
           "description": {
             "en": "Primary paper record for Adam; local images are redrawn from equations and pseudocode.",
-            "zh": "Primary paper record for Adam; local images are redrawn from equations and pseudocode."
+            "zh": "Adam 的主要论文记录；本地图片依据公式和伪代码重绘。"
           },
           "url": "https://arxiv.org/abs/1412.6980",
           "source": "https://arxiv.org/abs/1412.6980",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -7575,22 +7596,25 @@ const milestones = [
           "site": "Oxford VGG",
           "title": {
             "en": "Very Deep ConvNets project",
-            "zh": "Very Deep ConvNets project"
+            "zh": "超深卷积网络项目"
           },
           "description": {
             "en": "Official VGG project page with model release notes and source material.",
-            "zh": "Official VGG project page with model release notes and source material."
+            "zh": "VGG 官方项目页，包含模型发布说明和相关资料。"
           },
           "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
           "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open project page",
-            "zh": "Open project page"
+            "zh": "打开项目页面"
           }
         }
       ],
@@ -8015,7 +8039,7 @@ const milestones = [
           "type": "archiveLink",
           "site": {
             "en": "MIT Press",
-            "zh": "麻省理工学院 Press"
+            "zh": "麻省理工学院出版社"
           },
           "title": {
             "en": "Adaptation in Natural and Artificial Systems",
@@ -8023,11 +8047,14 @@ const milestones = [
           },
           "description": {
             "en": "Book record for Holland’s foundational genetic-algorithm treatment.",
-            "zh": "图书 record for 霍兰德’s foundational genetic-algorithm treatment."
+            "zh": "霍兰德遗传算法奠基著作的图书记录。"
           },
           "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -8488,26 +8515,29 @@ const milestones = [
           "type": "archiveLink",
           "site": {
             "en": "Freiburg CVL",
-            "zh": "弗赖堡 CVL"
+            "zh": "弗赖堡计算机视觉实验室"
           },
           "title": {
             "en": "U-Net release page",
-            "zh": "U-Net release page"
+            "zh": "U-Net 项目发布页"
           },
           "description": {
             "en": "Project page and downloadable implementation materials from the Freiburg group.",
-            "zh": "项目 page and downloadable implementation materials from the 弗赖堡 group."
+            "zh": "弗赖堡团队的项目页面，提供 U-Net 实现材料下载。"
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
           "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open project page",
-            "zh": "Open project page"
+            "zh": "打开项目页面"
           }
         }
       ],
@@ -8530,7 +8560,7 @@ const milestones = [
           },
           "label": {
             "en": "Freiburg U-Net release page",
-            "zh": "弗赖堡 U-Net release page"
+            "zh": "弗赖堡 U-Net 项目发布页"
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/"
         },
@@ -8541,7 +8571,7 @@ const milestones = [
           },
           "label": {
             "en": "nnU-Net implementation project",
-            "zh": "nnU-Net implementation project"
+            "zh": "nnU-Net 实现项目"
           },
           "url": "https://github.com/MIC-DKFZ/nnUNet"
         }
@@ -8857,17 +8887,23 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
           "caption": {
             "en": "Kaiming He portrait",
-            "zh": "Kaiming He 肖像"
+            "zh": "何恺明肖像"
           },
           "subcaption": {
             "en": "Portrait from Kaiming He's MIT-hosted personal page.",
-            "zh": "来自 Kaiming He 的 麻省理工学院 托管个人主页。"
+            "zh": "Faster R-CNN 共同作者"
           },
-          "sourceName": "Kaiming He personal page",
+          "sourceName": {
+            "en": "Kaiming He personal page",
+            "zh": "何恺明个人主页"
+          },
           "source": "https://people.csail.mit.edu/kaiming/",
           "sourceUrl": "https://people.csail.mit.edu/kaiming/",
           "originalImageUrl": "https://people.csail.mit.edu/kaiming/img/kmh2024fall.jpg",
-          "license": "Personal website photo; rights not stated.",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "个人网站照片；未说明复用权利。"
+          },
           "usage": {
             "en": "Historical figure / Faster R-CNN co-author portrait",
             "zh": "历史人物 / Faster R-CNN 共同作者肖像"
@@ -8967,22 +9003,25 @@ const milestones = [
           "site": "GitHub",
           "title": {
             "en": "ShaoqingRen/faster_rcnn",
-            "zh": "ShaoqingRen/faster_rcnn"
+            "zh": "任少卿/faster_rcnn"
           },
           "description": {
             "en": "Author-linked MATLAB implementation repository for Faster R-CNN.",
-            "zh": "作者关联的 MATLAB 实现仓库： Faster R-CNN."
+            "zh": "Faster R-CNN 作者关联的 MATLAB 实现仓库。"
           },
           "url": "https://github.com/ShaoqingRen/faster_rcnn",
           "source": "https://github.com/ShaoqingRen/faster_rcnn",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open code repository",
-            "zh": "Open code repository"
+            "zh": "打开代码仓库"
           }
         }
       ],
@@ -9005,7 +9044,7 @@ const milestones = [
           },
           "label": {
             "en": "ShaoqingRen/faster_rcnn",
-            "zh": "ShaoqingRen/faster_rcnn"
+            "zh": "任少卿/faster_rcnn"
           },
           "url": "https://github.com/ShaoqingRen/faster_rcnn"
         },
@@ -9016,7 +9055,7 @@ const milestones = [
           },
           "label": {
             "en": "TorchVision Faster R-CNN model",
-            "zh": "TorchVision Faster R-CNN model"
+            "zh": "TorchVision Faster R-CNN 模型"
           },
           "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html"
         }
@@ -9432,11 +9471,14 @@ const milestones = [
           },
           "description": {
             "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
-            "zh": "ACM 原始记录： the 1992 optimal-margin classifier paper."
+            "zh": "ACM 原始记录：1992 年最优间隔分类器论文。"
           },
           "url": "https://dl.acm.org/doi/10.1145/130385.130401",
           "source": "https://dl.acm.org/doi/10.1145/130385.130401",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -9906,11 +9948,14 @@ const milestones = [
           },
           "description": {
             "en": "Publisher book record for the CART monograph.",
-            "zh": "出版社图书记录： the CART monograph."
+            "zh": "出版社图书记录：CART 专著。"
           },
           "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
           "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -10376,11 +10421,14 @@ const milestones = [
           },
           "description": {
             "en": "Original Science record for the physical annealing analogy applied to optimization.",
-            "zh": "《科学》 原始记录： the physical annealing analogy applied to optimization."
+            "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
           },
           "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -10815,18 +10863,21 @@ const milestones = [
           },
           "description": {
             "en": "Publisher DOI page for Tibshirani’s 1996 lasso paper.",
-            "zh": "出版社 DOI 页面： Tibshirani’s 1996 lasso paper."
+            "zh": "出版社 DOI 页面：蒂布希拉尼 1996 年的 Lasso 论文。"
           },
           "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
           "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open DOI page",
-            "zh": "Open DOI page"
+            "zh": "打开 DOI 页面"
           }
         }
       ],
@@ -11253,25 +11304,31 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "CVF Open Access",
+          "site": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放访问"
+          },
           "title": {
             "en": "Going Deeper with Convolutions",
             "zh": "用卷积走得更深"
           },
           "description": {
             "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
-            "zh": "Open-access 计算机视觉与模式识别会议 page for GoogLeNet and the Inception block."
+            "zh": "CVPR 开放访问页面，介绍 GoogLeNet 与 Inception 模块。"
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
           "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
-          "license": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
           },
           "action": {
             "en": "Open CVF paper",
-            "zh": "Open CVF paper"
+            "zh": "打开 CVF 论文"
           }
         }
       ],
@@ -11693,7 +11750,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1145/321250.321253",
           "source": "https://doi.org/10.1145/321250.321253",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -12135,7 +12195,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1145/155360.155362",
           "source": "https://doi.org/10.1145/155360.155362",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -12567,7 +12630,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1145/365153.365168",
           "source": "https://doi.org/10.1145/365153.365168",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -12984,7 +13050,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1073/pnas.79.8.2554",
           "source": "https://doi.org/10.1073/pnas.79.8.2554",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -13423,7 +13492,10 @@ const milestones = [
           },
           "url": "https://jmlr.org/papers/v15/srivastava14a.html",
           "source": "https://jmlr.org/papers/v15/srivastava14a.html",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -13862,7 +13934,10 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1506.02640",
           "source": "https://arxiv.org/abs/1506.02640",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -14288,7 +14363,10 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1301.3781",
           "source": "https://arxiv.org/abs/1301.3781",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -14730,7 +14808,10 @@ const milestones = [
           },
           "url": "https://ieeexplore.ieee.org/document/5206848",
           "source": "https://ieeexplore.ieee.org/document/5206848",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -15169,7 +15250,10 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1312.5602",
           "source": "https://arxiv.org/abs/1312.5602",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -15608,7 +15692,10 @@ const milestones = [
           },
           "url": "https://jmlr.org/papers/v3/blei03a.html",
           "source": "https://jmlr.org/papers/v3/blei03a.html",
-          "license": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Literature reference link",
             "zh": "文献参考链接"
@@ -16046,11 +16133,14 @@ const milestones = [
           },
           "description": {
             "en": "Repository record for Winograd's language-understanding work.",
-            "zh": "Winograd 语言理解工作的 麻省理工学院 仓储记录。"
+            "zh": "麻省理工学院仓储记录，收录维诺格拉德的语言理解工作。"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/7095",
           "source": "https://dspace.mit.edu/handle/1721.1/7095",
-          "license": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -16478,7 +16568,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
           "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -16894,7 +16987,7 @@ const milestones = [
           "type": "archiveLink",
           "site": {
             "en": "MIT Media Lab course archive",
-            "zh": "麻省理工学院 Media Lab course archive"
+            "zh": "麻省理工学院媒体实验室课程档案"
           },
           "title": {
             "en": "A Framework for Representing Knowledge",
@@ -16906,7 +16999,10 @@ const milestones = [
           },
           "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
           "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -16936,7 +17032,7 @@ const milestones = [
           },
           "label": {
             "en": "Marvin Minsky obituary, MIT News",
-            "zh": "马文·明斯基 obituary, 麻省理工学院 新闻"
+            "zh": "马文·明斯基讣告，麻省理工学院新闻"
           },
           "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125"
         },
@@ -16947,7 +17043,7 @@ const milestones = [
           },
           "label": {
             "en": "Frame, MIT AI memo bibliographic record",
-            "zh": "Frame, 麻省理工学院 AI memo bibliographic record"
+            "zh": "框架论文：麻省理工学院 AI 备忘录书目记录"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/6089"
         }
@@ -17320,7 +17416,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1021/ci60034a002",
           "source": "https://doi.org/10.1021/ci60034a002",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -17733,7 +17832,10 @@ const milestones = [
           },
           "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
           "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -18158,7 +18260,10 @@ const milestones = [
           },
           "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
           "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -18577,7 +18682,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1037/h0042519",
           "source": "https://doi.org/10.1037/h0042519",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -18990,7 +19098,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
           "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -19406,7 +19517,10 @@ const milestones = [
           },
           "url": "https://doi.org/10.1007/BF00115009",
           "source": "https://doi.org/10.1007/BF00115009",
-          "license": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
@@ -19819,7 +19933,7 @@ const milestones = [
           "type": "archiveLink",
           "site": {
             "en": "UCLA Computer Science",
-            "zh": "加州大学洛杉矶分校 Computer 《科学》"
+            "zh": "加州大学洛杉矶分校计算机科学系"
           },
           "title": {
             "en": "Bayesian Networks technical paper",
@@ -19831,14 +19945,17 @@ const milestones = [
           },
           "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
           "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
-          "license": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+          },
           "usage": {
             "en": "Source material image / Literature reference",
             "zh": "原始材料入口 / 文献参考"
           },
           "action": {
             "en": "Open UCLA PDF",
-            "zh": "打开 加州大学洛杉矶分校 PDF"
+            "zh": "打开 UCLA PDF"
           }
         }
       ],
@@ -20265,14 +20382,17 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Reference",
+          "site": {
+            "en": "Reference",
+            "zh": "参考资料"
+          },
           "title": {
             "en": "OTTER 3.3 Reference Manual",
             "zh": "OTTER 3.3 参考手册"
           },
           "description": {
             "en": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
-            "zh": "主要手册： Otter input syntax, inference rules, and proof-search controls."
+            "zh": "主要手册：介绍 Otter 的输入语法、推理规则和证明搜索控制。"
           },
           "url": "https://arxiv.org/abs/cs/0310056",
           "source": "https://arxiv.org/abs/cs/0310056",
@@ -24554,6 +24674,3414 @@ const milestones = [
     ]
   },
   {
+    "id": "milestone-ai100-1967-knn",
+    "year": 1967,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "KNN",
+      "zh": "KNN 最近邻"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "Stanford, United States",
+        "zh": "美国斯坦福"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>",
+      "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Thomas Cover",
+          "zh": "托马斯·科弗"
+        },
+        "role": {
+          "en": "Co-author of nearest-neighbor classification",
+          "zh": "最近邻分类共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Peter Hart",
+          "zh": "彼得·哈特"
+        },
+        "role": {
+          "en": "Co-author of nearest-neighbor classification",
+          "zh": "最近邻分类共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Nearest neighbor pattern classification\"",
+      "zh": "\"最近邻模式分类\""
+    },
+    "quoteAttribution": {
+      "en": "《Nearest Neighbor Pattern Classification》, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+      "zh": "《最近邻模式分类》, 托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Nearest Neighbor Pattern Classification",
+        "zh": "最近邻模式分类"
+      },
+      "workAuthors": {
+        "en": "Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+        "zh": "托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.",
+          "zh": "托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A query point receives the label most common among nearby training examples.",
+          "zh": "查询点获得附近训练样本中最常见的标签。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat KNN as a foundational nonparametric baseline: simple, interpretable, and surprisingly strong when distance is meaningful. Its long-term legacy is the idea that stored examples and local similarity can be a model, not just training data.",
+          "zh": "专家通常把 KNN 视为基础性的非参数基线：简单、可解释，并且在距离有意义时表现很强。它的长期影响在于说明存储样本和局部相似性本身就可以构成模型，而不只是训练数据。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+        "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg"
+      ],
+      "imageMeta": {
+        "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg": {
+          "caption": {
+            "en": "Thomas Cover portrait",
+            "zh": "托马斯·科弗肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of nearest-neighbor classification",
+            "zh": "最近邻分类共同作者"
+          },
+          "sourceName": {
+            "en": "Stanford Report",
+            "zh": "Stanford Report"
+          },
+          "source": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+          "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+          "originalImageUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+          "license": {
+            "en": "Stanford Report image; reuse rights not stated.",
+            "zh": "Stanford Report 图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg": {
+          "caption": {
+            "en": "Nearest-neighbor vote",
+            "zh": "最近邻投票"
+          },
+          "subcaption": {
+            "en": "Original local explainer of nearest-neighbor voting.",
+            "zh": "关于最近邻投票的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "IEEE Transactions on Information Theory",
+            "zh": "IEEE Transactions on Information Theory"
+          },
+          "source": "https://doi.org/10.1109/TIT.1967.1053964",
+          "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+          "originalImageUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Cluster, Classification, Regression",
+        "zh": "聚类、分类与回归"
+      },
+      "method": {
+        "en": "Instance-based local voting",
+        "zh": "基于实例的局部投票"
+      },
+      "artifact": {
+        "en": "Nearest-neighbor classifier",
+        "zh": "最近邻分类器"
+      },
+      "material": {
+        "en": "IEEE Transactions on Information Theory paper",
+        "zh": "《IEEE Transactions on Information Theory》论文"
+      },
+      "demo": {
+        "en": "A query point receives the label most common among nearby training examples.",
+        "zh": "查询点获得附近训练样本中最常见的标签。"
+      },
+      "visual": "knn",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Local Voting",
+            "zh": "局部投票"
+          },
+          "text": {
+            "en": "Classification comes from nearby examples.",
+            "zh": "分类来自附近样本。"
+          }
+        },
+        {
+          "label": {
+            "en": "Nonparametric Memory",
+            "zh": "非参数记忆"
+          },
+          "text": {
+            "en": "The training set remains part of the model.",
+            "zh": "训练集本身保留为模型的一部分。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SVM",
+          "zh": "SVM"
+        },
+        {
+          "en": "K-means",
+          "zh": "K-means"
+        },
+        {
+          "en": "Decision Trees",
+          "zh": "决策树"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Query point",
+          "zh": "查询点"
+        },
+        {
+          "en": "Nearest examples",
+          "zh": "最近样本"
+        },
+        {
+          "en": "Majority label",
+          "zh": "多数标签"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "IEEE",
+            "zh": "IEEE"
+          },
+          "title": {
+            "en": "Nearest Neighbor Pattern Classification",
+            "zh": "最近邻模式分类"
+          },
+          "description": {
+            "en": "Paper record for the nearest-neighbor classification result.",
+            "zh": "最近邻分类结果的论文记录。"
+          },
+          "url": "https://doi.org/10.1109/TIT.1967.1053964",
+          "source": "https://doi.org/10.1109/TIT.1967.1053964",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Nearest Neighbor Pattern Classification",
+            "zh": "《最近邻模式分类》"
+          },
+          "url": "https://doi.org/10.1109/TIT.1967.1053964"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Stanford-hosted paper PDF",
+            "zh": "斯坦福托管论文 PDF"
+          },
+          "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "k-nearest neighbors algorithm overview",
+            "zh": "k 近邻算法概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn nearest neighbors documentation",
+            "zh": "scikit-learn 最近邻文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg"
+    },
+    "quiz": {
+      "id": "ai100-1967-knn-quiz-1",
+      "question": {
+        "en": "How does KNN classify a new point?",
+        "zh": "KNN 如何给一个新点分类？"
+      },
+      "options": [
+        {
+          "en": "By voting among nearby labeled examples",
+          "zh": "让附近已标注样本投票"
+        },
+        {
+          "en": "By translating a sentence",
+          "zh": "通过翻译句子"
+        },
+        {
+          "en": "By pruning a chess tree",
+          "zh": "通过剪枝棋类搜索树"
+        },
+        {
+          "en": "By hiding every input feature",
+          "zh": "通过隐藏所有输入特征"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "KNN is instance-based: the label comes from nearby training examples.",
+        "zh": "KNN 是基于实例的方法：标签来自附近的训练样本。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "knn",
+        "classification"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1967-knn-quiz-1",
+        "question": {
+          "en": "How does KNN classify a new point?",
+          "zh": "KNN 如何给一个新点分类？"
+        },
+        "options": [
+          {
+            "en": "By voting among nearby labeled examples",
+            "zh": "让附近已标注样本投票"
+          },
+          {
+            "en": "By translating a sentence",
+            "zh": "通过翻译句子"
+          },
+          {
+            "en": "By pruning a chess tree",
+            "zh": "通过剪枝棋类搜索树"
+          },
+          {
+            "en": "By hiding every input feature",
+            "zh": "通过隐藏所有输入特征"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "KNN is instance-based: the label comes from nearby training examples.",
+          "zh": "KNN 是基于实例的方法：标签来自附近的训练样本。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "knn",
+          "classification"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1970-ridge",
+    "year": 1970,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Ridge",
+      "zh": "岭回归"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Delaware",
+        "zh": "特拉华大学"
+      },
+      "country": {
+        "en": "Newark, United States",
+        "zh": "美国纽瓦克"
+      },
+      "coordinates": [
+        39.6779,
+        -75.7506
+      ]
+    },
+    "description": {
+      "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>",
+      "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Arthur Hoerl",
+          "zh": "阿瑟·霍尔"
+        },
+        "role": {
+          "en": "Co-author of ridge regression",
+          "zh": "岭回归共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Robert Kennard",
+          "zh": "罗伯特·肯纳德"
+        },
+        "role": {
+          "en": "Co-author of ridge regression",
+          "zh": "岭回归共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Ridge Regression: Biased Estimation for Nonorthogonal Problems\"",
+      "zh": "\"岭回归：非正交问题中的有偏估计\""
+    },
+    "quoteAttribution": {
+      "en": "《Ridge Regression: Biased Estimation for Nonorthogonal Problems》, Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
+      "zh": "《岭回归：非正交问题中的有偏估计》, 阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+        "zh": "岭回归：非正交问题中的有偏估计"
+      },
+      "workAuthors": {
+        "en": "Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
+        "zh": "阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.",
+          "zh": "阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
+          "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat ridge regression as a classic regularization result that made controlled bias a practical tool. Its long-term legacy is the L2 penalty pattern used across statistics, kernel methods, and deep-learning weight decay.",
+          "zh": "专家通常把岭回归视为经典正则化成果，使可控偏差成为实用工具。它的长期影响在于 L2 惩罚模式被统计学习、核方法和深度学习权重衰减广泛采用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+        "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg"
+      ],
+      "imageMeta": {
+        "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg": {
+          "caption": {
+            "en": "Arthur Hoerl family context",
+            "zh": "阿瑟·霍尔家庭背景图"
+          },
+          "subcaption": {
+            "en": "Co-author of ridge regression",
+            "zh": "岭回归共同作者"
+          },
+          "sourceName": {
+            "en": "University of Delaware",
+            "zh": "特拉华大学"
+          },
+          "source": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+          "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+          "originalImageUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+          "license": {
+            "en": "University of Delaware image; reuse rights not stated.",
+            "zh": "特拉华大学图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg": {
+          "caption": {
+            "en": "Ridge shrinkage path",
+            "zh": "岭回归收缩路径"
+          },
+          "subcaption": {
+            "en": "Original local explainer of L2 coefficient shrinkage.",
+            "zh": "关于 L2 系数收缩的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Technometrics",
+            "zh": "Technometrics"
+          },
+          "source": "https://doi.org/10.1080/00401706.1970.10488634",
+          "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+          "originalImageUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Cluster, Classification, Regression",
+        "zh": "聚类、分类与回归"
+      },
+      "method": {
+        "en": "L2-regularized linear regression",
+        "zh": "L2 正则化线性回归"
+      },
+      "artifact": {
+        "en": "Ridge estimator",
+        "zh": "岭估计器"
+      },
+      "material": {
+        "en": "Technometrics paper",
+        "zh": "《Technometrics》论文"
+      },
+      "demo": {
+        "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
+        "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
+      },
+      "visual": "ridge",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "L2 Penalty",
+            "zh": "L2 惩罚"
+          },
+          "text": {
+            "en": "Large coefficients are discouraged.",
+            "zh": "抑制过大的系数。"
+          }
+        },
+        {
+          "label": {
+            "en": "Bias-Variance Tradeoff",
+            "zh": "偏差-方差权衡"
+          },
+          "text": {
+            "en": "A little bias can reduce variance.",
+            "zh": "少量偏差可以降低方差。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Lasso",
+          "zh": "Lasso"
+        },
+        {
+          "en": "SVM",
+          "zh": "SVM"
+        },
+        {
+          "en": "Neural networks",
+          "zh": "神经网络"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Correlated predictors",
+          "zh": "相关预测变量"
+        },
+        {
+          "en": "L2 penalty",
+          "zh": "L2 惩罚"
+        },
+        {
+          "en": "Stable coefficients",
+          "zh": "稳定系数"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Taylor & Francis",
+            "zh": "Taylor & Francis"
+          },
+          "title": {
+            "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+            "zh": "岭回归：非正交问题中的有偏估计"
+          },
+          "description": {
+            "en": "Primary paper record for ridge regression.",
+            "zh": "岭回归的主论文记录。"
+          },
+          "url": "https://doi.org/10.1080/00401706.1970.10488634",
+          "source": "https://doi.org/10.1080/00401706.1970.10488634",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+            "zh": "《岭回归：非正交问题中的有偏估计》"
+          },
+          "url": "https://doi.org/10.1080/00401706.1970.10488634"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Open PDF copy of the Technometrics paper",
+            "zh": "Technometrics 论文开放 PDF"
+          },
+          "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Ridge regression overview",
+            "zh": "岭回归概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Ridge_regression"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn Ridge documentation",
+            "zh": "scikit-learn 岭回归文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg"
+    },
+    "quiz": {
+      "id": "ai100-1970-ridge-quiz-1",
+      "question": {
+        "en": "What does ridge regression add to least squares?",
+        "zh": "岭回归在最小二乘中加入了什么？"
+      },
+      "options": [
+        {
+          "en": "An L2 penalty that shrinks coefficients",
+          "zh": "收缩系数的 L2 惩罚"
+        },
+        {
+          "en": "A Go board",
+          "zh": "围棋棋盘"
+        },
+        {
+          "en": "A chatbot script",
+          "zh": "聊天机器人脚本"
+        },
+        {
+          "en": "A theorem clause only",
+          "zh": "只有一个定理子句"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Ridge regression regularizes coefficients to reduce instability from correlated predictors.",
+        "zh": "岭回归通过正则化系数，降低相关预测变量带来的不稳定性。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "ridge",
+        "regularization"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1970-ridge-quiz-1",
+        "question": {
+          "en": "What does ridge regression add to least squares?",
+          "zh": "岭回归在最小二乘中加入了什么？"
+        },
+        "options": [
+          {
+            "en": "An L2 penalty that shrinks coefficients",
+            "zh": "收缩系数的 L2 惩罚"
+          },
+          {
+            "en": "A Go board",
+            "zh": "围棋棋盘"
+          },
+          {
+            "en": "A chatbot script",
+            "zh": "聊天机器人脚本"
+          },
+          {
+            "en": "A theorem clause only",
+            "zh": "只有一个定理子句"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Ridge regression regularizes coefficients to reduce instability from correlated predictors.",
+          "zh": "岭回归通过正则化系数，降低相关预测变量带来的不稳定性。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "ridge",
+          "regularization"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2005-hog",
+    "year": 2005,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "HOG",
+      "zh": "HOG 方向梯度直方图"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "INRIA",
+        "zh": "INRIA"
+      },
+      "country": {
+        "en": "Grenoble, France",
+        "zh": "法国格勒诺布尔"
+      },
+      "coordinates": [
+        45.1938,
+        5.7681
+      ]
+    },
+    "description": {
+      "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>",
+      "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Navneet Dalal",
+          "zh": "纳夫尼特·达拉尔"
+        },
+        "role": {
+          "en": "Co-author of HOG",
+          "zh": "HOG 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Bill Triggs",
+          "zh": "比尔·特里格斯"
+        },
+        "role": {
+          "en": "Co-author of HOG",
+          "zh": "HOG 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Histograms of Oriented Gradients for Human Detection\"",
+      "zh": "\"用于人体检测的方向梯度直方图\""
+    },
+    "quoteAttribution": {
+      "en": "《Histograms of Oriented Gradients for Human Detection》, Navneet Dalal and Bill Triggs, CVPR, 2005",
+      "zh": "《用于人体检测的方向梯度直方图》, 纳夫尼特·达拉尔、比尔·特里格斯，CVPR，2005"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Histograms of Oriented Gradients for Human Detection",
+        "zh": "用于人体检测的方向梯度直方图"
+      },
+      "workAuthors": {
+        "en": "Navneet Dalal and Bill Triggs, CVPR, 2005",
+        "zh": "纳夫尼特·达拉尔、比尔·特里格斯，CVPR，2005"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.",
+          "zh": "纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier.",
+          "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat HOG as a landmark hand-crafted vision descriptor. Its long-term legacy is the cell-and-block representation pattern that made robust object detection practical before end-to-end learned features took over.",
+          "zh": "专家通常把 HOG 视为手工视觉描述子的标志性成果。它的长期影响在于单元与块的表示模式在端到端学习特征普及前让稳健目标检测变得实用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+        "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
+      ],
+      "imageMeta": {
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280": {
+          "caption": {
+            "en": "Navneet Dalal portrait",
+            "zh": "纳夫尼特·达拉尔肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of HOG",
+            "zh": "HOG 共同作者"
+          },
+          "sourceName": {
+            "en": "Navneet Dalal personal site",
+            "zh": "纳夫尼特·达拉尔个人网站"
+          },
+          "source": "https://sites.google.com/view/navneetdalal/home",
+          "sourceUrl": "https://sites.google.com/view/navneetdalal/home",
+          "originalImageUrl": "https://sites.google.com/view/navneetdalal/home",
+          "license": {
+            "en": "Personal site image; reuse rights not stated.",
+            "zh": "个人网站图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg": {
+          "caption": {
+            "en": "HOG descriptor grid",
+            "zh": "HOG 描述子网格"
+          },
+          "subcaption": {
+            "en": "Original local explainer of gradient-orientation histograms.",
+            "zh": "关于梯度方向直方图的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "CVPR",
+            "zh": "CVPR"
+          },
+          "source": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "sourceUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "originalImageUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Gradient-orientation descriptor",
+        "zh": "梯度方向描述子"
+      },
+      "artifact": {
+        "en": "HOG detector feature",
+        "zh": "HOG 检测特征"
+      },
+      "material": {
+        "en": "CVPR paper",
+        "zh": "CVPR 论文"
+      },
+      "demo": {
+        "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier.",
+        "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
+      },
+      "visual": "hog",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Orientation Histograms",
+            "zh": "方向直方图"
+          },
+          "text": {
+            "en": "Edges vote into local direction bins.",
+            "zh": "边缘投票到局部方向桶。"
+          }
+        },
+        {
+          "label": {
+            "en": "Block Normalization",
+            "zh": "块归一化"
+          },
+          "text": {
+            "en": "Neighboring cells are normalized for illumination robustness.",
+            "zh": "相邻单元归一化以增强光照鲁棒性。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SIFT",
+          "zh": "SIFT"
+        },
+        {
+          "en": "SURF",
+          "zh": "SURF"
+        },
+        {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "France",
+          "zh": "法国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Image window",
+          "zh": "图像窗口"
+        },
+        {
+          "en": "Gradient cells",
+          "zh": "梯度单元"
+        },
+        {
+          "en": "Classifier",
+          "zh": "分类器"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "INRIA",
+            "zh": "INRIA"
+          },
+          "title": {
+            "en": "Histograms of Oriented Gradients for Human Detection",
+            "zh": "用于人体检测的方向梯度直方图"
+          },
+          "description": {
+            "en": "Open PDF of the HOG human-detection paper.",
+            "zh": "HOG 人体检测论文的开放 PDF。"
+          },
+          "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "source": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open PDF",
+            "zh": "打开 PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Histograms of Oriented Gradients for Human Detection",
+            "zh": "《用于人体检测的方向梯度直方图》"
+          },
+          "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "IEEE CVPR paper record",
+            "zh": "IEEE CVPR 论文记录"
+          },
+          "url": "https://doi.org/10.1109/CVPR.2005.177"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Histogram of oriented gradients overview",
+            "zh": "方向梯度直方图概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-image HOG example",
+            "zh": "scikit-image HOG 示例"
+          },
+          "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
+    },
+    "quiz": {
+      "id": "ai100-2005-hog-quiz-1",
+      "question": {
+        "en": "What kind of image evidence does HOG summarize?",
+        "zh": "HOG 汇总哪类图像证据？"
+      },
+      "options": [
+        {
+          "en": "Local gradient directions in cells",
+          "zh": "单元格中的局部梯度方向"
+        },
+        {
+          "en": "Next-word probabilities",
+          "zh": "下一个词概率"
+        },
+        {
+          "en": "Database table joins",
+          "zh": "数据库表连接"
+        },
+        {
+          "en": "Only GPS coordinates",
+          "zh": "只有 GPS 坐标"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "HOG counts edge-orientation votes over local cells and normalized blocks.",
+        "zh": "HOG 在局部单元和归一化块中统计边缘方向投票。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "hog",
+        "vision"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2005-hog-quiz-1",
+        "question": {
+          "en": "What kind of image evidence does HOG summarize?",
+          "zh": "HOG 汇总哪类图像证据？"
+        },
+        "options": [
+          {
+            "en": "Local gradient directions in cells",
+            "zh": "单元格中的局部梯度方向"
+          },
+          {
+            "en": "Next-word probabilities",
+            "zh": "下一个词概率"
+          },
+          {
+            "en": "Database table joins",
+            "zh": "数据库表连接"
+          },
+          {
+            "en": "Only GPS coordinates",
+            "zh": "只有 GPS 坐标"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "HOG counts edge-orientation votes over local cells and normalized blocks.",
+          "zh": "HOG 在局部单元和归一化块中统计边缘方向投票。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "hog",
+          "vision"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2006-surf",
+    "year": 2006,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "SURF",
+      "zh": "SURF 加速稳健特征"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "ETH Zurich",
+        "zh": "苏黎世联邦理工学院"
+      },
+      "country": {
+        "en": "Zurich, Switzerland",
+        "zh": "瑞士苏黎世"
+      },
+      "coordinates": [
+        47.3763,
+        8.5481
+      ]
+    },
+    "description": {
+      "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>",
+      "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Herbert Bay",
+          "zh": "赫伯特·贝"
+        },
+        "role": {
+          "en": "Lead author of SURF",
+          "zh": "SURF 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Tinne Tuytelaars",
+          "zh": "蒂娜·图伊特拉尔斯"
+        },
+        "role": {
+          "en": "Co-author of SURF",
+          "zh": "Co-author of SURF"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"SURF: Speeded Up Robust Features\"",
+      "zh": "\"SURF：加速稳健特征\""
+    },
+    "quoteAttribution": {
+      "en": "《SURF: Speeded Up Robust Features》, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+      "zh": "《SURF：加速稳健特征》, 赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "SURF: Speeded Up Robust Features",
+        "zh": "SURF：加速稳健特征"
+      },
+      "workAuthors": {
+        "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+        "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/11744023_32"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.",
+          "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+          "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat SURF as an important engineering advance in pre-deep-learning local features. Its long-term legacy is the emphasis on robust matching that is fast enough for practical image retrieval, stitching, and robotics pipelines.",
+          "zh": "专家通常把 SURF 视为深度学习前局部特征工程的重要进展。它的长期影响在于强调足够快速的稳健匹配，支撑图像检索、拼接和机器人视觉流程。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+        "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg"
+      ],
+      "imageMeta": {
+        "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png": {
+          "caption": {
+            "en": "Herbert Bay portrait",
+            "zh": "赫伯特·贝肖像"
+          },
+          "subcaption": {
+            "en": "Lead author of SURF",
+            "zh": "SURF 主要作者"
+          },
+          "sourceName": {
+            "en": "Herbert Bay personal site",
+            "zh": "赫伯特·贝个人网站"
+          },
+          "source": "https://herbertbay.com/",
+          "sourceUrl": "https://herbertbay.com/",
+          "originalImageUrl": "https://herbertbay.com/",
+          "license": {
+            "en": "Personal site image; reuse rights not stated.",
+            "zh": "个人网站图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg": {
+          "caption": {
+            "en": "SURF interest points",
+            "zh": "SURF 兴趣点"
+          },
+          "subcaption": {
+            "en": "Original local explainer of SURF-style interest point detection.",
+            "zh": "关于 SURF 式兴趣点检测的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "ECCV",
+            "zh": "ECCV"
+          },
+          "source": "https://doi.org/10.1007/11744023_32",
+          "sourceUrl": "https://doi.org/10.1007/11744023_32",
+          "originalImageUrl": "https://doi.org/10.1007/11744023_32",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Fast local feature descriptor",
+        "zh": "快速局部特征描述子"
+      },
+      "artifact": {
+        "en": "SURF detector and descriptor",
+        "zh": "SURF 检测器与描述子"
+      },
+      "material": {
+        "en": "ECCV paper",
+        "zh": "ECCV 论文"
+      },
+      "demo": {
+        "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+        "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+      },
+      "visual": "surf",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Integral Images",
+            "zh": "积分图"
+          },
+          "text": {
+            "en": "Rectangle responses can be computed quickly.",
+            "zh": "矩形响应可以快速计算。"
+          }
+        },
+        {
+          "label": {
+            "en": "Scale Invariance",
+            "zh": "尺度不变性"
+          },
+          "text": {
+            "en": "Interest points are compared across scales.",
+            "zh": "兴趣点跨尺度比较。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SIFT",
+          "zh": "SIFT"
+        },
+        {
+          "en": "HOG",
+          "zh": "HOG"
+        },
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Switzerland",
+          "zh": "瑞士"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Integral image",
+          "zh": "积分图"
+        },
+        {
+          "en": "Hessian response",
+          "zh": "Hessian 响应"
+        },
+        {
+          "en": "Descriptor match",
+          "zh": "描述子匹配"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Springer",
+            "zh": "Springer"
+          },
+          "title": {
+            "en": "SURF: Speeded Up Robust Features",
+            "zh": "SURF：加速稳健特征"
+          },
+          "description": {
+            "en": "Primary ECCV paper record for SURF.",
+            "zh": "SURF 的 ECCV 主论文记录。"
+          },
+          "url": "https://doi.org/10.1007/11744023_32",
+          "source": "https://doi.org/10.1007/11744023_32",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "SURF: Speeded Up Robust Features",
+            "zh": "《SURF：加速稳健特征》"
+          },
+          "url": "https://doi.org/10.1007/11744023_32"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "ETH SURF paper PDF",
+            "zh": "ETH SURF 论文 PDF"
+          },
+          "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Original SURF project page",
+            "zh": "SURF 原始项目页"
+          },
+          "url": "https://people.ee.ethz.ch/~surf/"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "SURF overview",
+            "zh": "SURF 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg"
+    },
+    "quiz": {
+      "id": "ai100-2006-surf-quiz-1",
+      "question": {
+        "en": "Why was SURF valued in local feature matching?",
+        "zh": "SURF 在局部特征匹配中为什么有价值？"
+      },
+      "options": [
+        {
+          "en": "It made robust feature detection faster",
+          "zh": "它让稳健特征检测更快"
+        },
+        {
+          "en": "It removed all images",
+          "zh": "它删除所有图像"
+        },
+        {
+          "en": "It solved chess endgames",
+          "zh": "它求解棋类残局"
+        },
+        {
+          "en": "It only stored text prompts",
+          "zh": "它只存储文本提示"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "SURF uses ideas such as integral images to speed up robust local feature detection and description.",
+        "zh": "SURF 使用积分图等思想，加速稳健局部特征检测与描述。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "surf",
+        "feature-detection"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2006-surf-quiz-1",
+        "question": {
+          "en": "Why was SURF valued in local feature matching?",
+          "zh": "SURF 在局部特征匹配中为什么有价值？"
+        },
+        "options": [
+          {
+            "en": "It made robust feature detection faster",
+            "zh": "它让稳健特征检测更快"
+          },
+          {
+            "en": "It removed all images",
+            "zh": "它删除所有图像"
+          },
+          {
+            "en": "It solved chess endgames",
+            "zh": "它求解棋类残局"
+          },
+          {
+            "en": "It only stored text prompts",
+            "zh": "它只存储文本提示"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SURF uses ideas such as integral images to speed up robust local feature detection and description.",
+          "zh": "SURF 使用积分图等思想，加速稳健局部特征检测与描述。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "surf",
+          "feature-detection"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1997-kernel-pca",
+    "year": 1997,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Kernel PCA",
+      "zh": "Kernel PCA"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Max Planck Institute for Biological Cybernetics",
+        "zh": "马克斯·普朗克生物控制论研究所"
+      },
+      "country": {
+        "en": "Tuebingen, Germany",
+        "zh": "德国图宾根"
+      },
+      "coordinates": [
+        48.5216,
+        9.0576
+      ]
+    },
+    "description": {
+      "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>",
+      "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Bernhard Scholkopf",
+          "zh": "伯恩哈德·舍尔科普夫"
+        },
+        "role": {
+          "en": "Co-author of Kernel PCA",
+          "zh": "Kernel PCA 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Klaus-Robert Muller",
+          "zh": "克劳斯-罗伯特·穆勒"
+        },
+        "role": {
+          "en": "Co-author of Kernel PCA",
+          "zh": "Kernel PCA 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Nonlinear Component Analysis as a Kernel Eigenvalue Problem\"",
+      "zh": "\"作为核特征值问题的非线性成分分析\""
+    },
+    "quoteAttribution": {
+      "en": "《Nonlinear Component Analysis as a Kernel Eigenvalue Problem》, Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
+      "zh": "《作为核特征值问题的非线性成分分析》, 伯恩哈德·舍尔科普夫、亚历山大·斯莫拉、克劳斯-罗伯特·穆勒，《Neural Computation》，1998"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+        "zh": "作为核特征值问题的非线性成分分析"
+      },
+      "workAuthors": {
+        "en": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
+        "zh": "伯恩哈德·舍尔科普夫、亚历山大·斯莫拉、克劳斯-罗伯特·穆勒，《Neural Computation》，1998"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1162/089976698300017467"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.",
+          "zh": "伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
+          "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Kernel PCA as a clean bridge between classical PCA and kernel methods. Its long-term legacy is showing how nonlinear representation learning can be expressed through similarity matrices before deep embeddings became common.",
+          "zh": "专家通常把 Kernel PCA 视为经典 PCA 与核方法之间的清晰桥梁。它的长期影响在于展示了在深度嵌入普及前，非线性表示学习可以通过相似性矩阵表达。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+        "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png": {
+          "caption": {
+            "en": "Bernhard Scholkopf portrait",
+            "zh": "伯恩哈德·舍尔科普夫肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of Kernel PCA",
+            "zh": "Kernel PCA 共同作者"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+          "license": {
+            "en": "Creative Commons Attribution, per Wikimedia Commons.",
+            "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg": {
+          "caption": {
+            "en": "Kernel eigenmap",
+            "zh": "核特征映射"
+          },
+          "subcaption": {
+            "en": "Original local explainer of kernel PCA embedding.",
+            "zh": "关于 Kernel PCA 嵌入的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Neural Computation",
+            "zh": "Neural Computation"
+          },
+          "source": "https://doi.org/10.1162/089976698300017467",
+          "sourceUrl": "https://doi.org/10.1162/089976698300017467",
+          "originalImageUrl": "https://doi.org/10.1162/089976698300017467",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Kernelized principal component analysis",
+        "zh": "核化主成分分析"
+      },
+      "artifact": {
+        "en": "Kernel PCA embedding",
+        "zh": "Kernel PCA 嵌入"
+      },
+      "material": {
+        "en": "Neural Computation paper",
+        "zh": "《Neural Computation》论文"
+      },
+      "demo": {
+        "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
+        "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
+      },
+      "visual": "kernelPca",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Kernel Trick",
+            "zh": "核技巧"
+          },
+          "text": {
+            "en": "Dot products are replaced by kernel similarities.",
+            "zh": "用核相似性替代点积。"
+          }
+        },
+        {
+          "label": {
+            "en": "Eigenvectors",
+            "zh": "特征向量"
+          },
+          "text": {
+            "en": "Principal directions come from the kernel matrix.",
+            "zh": "主方向来自核矩阵。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SVM",
+          "zh": "SVM"
+        },
+        {
+          "en": "Isomap",
+          "zh": "Isomap"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Germany",
+          "zh": "德国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Pairwise kernel",
+          "zh": "成对核值"
+        },
+        {
+          "en": "Eigenvectors",
+          "zh": "特征向量"
+        },
+        {
+          "en": "Nonlinear components",
+          "zh": "非线性成分"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "MIT Press",
+            "zh": "MIT Press"
+          },
+          "title": {
+            "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+            "zh": "作为核特征值问题的非线性成分分析"
+          },
+          "description": {
+            "en": "Primary paper record for Kernel PCA.",
+            "zh": "Kernel PCA 的主论文记录。"
+          },
+          "url": "https://doi.org/10.1162/089976698300017467",
+          "source": "https://doi.org/10.1162/089976698300017467",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+            "zh": "《作为核特征值问题的非线性成分分析》"
+          },
+          "url": "https://doi.org/10.1162/089976698300017467"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Max Planck publication page",
+            "zh": "马克斯·普朗克出版页面"
+          },
+          "url": "https://is.mpg.de/ei/publications/730"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Open Kernel PCA PDF",
+            "zh": "Kernel PCA 开放 PDF"
+          },
+          "url": "https://www.mlpack.org/papers/kpca.pdf"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn KernelPCA documentation",
+            "zh": "scikit-learn KernelPCA 文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg"
+    },
+    "quiz": {
+      "id": "ai100-1997-kernel-pca-quiz-1",
+      "question": {
+        "en": "What lets Kernel PCA find nonlinear components?",
+        "zh": "Kernel PCA 靠什么找到非线性成分？"
+      },
+      "options": [
+        {
+          "en": "A kernel similarity matrix",
+          "zh": "核相似性矩阵"
+        },
+        {
+          "en": "A random chess opening",
+          "zh": "随机棋类开局"
+        },
+        {
+          "en": "A handwritten rule book only",
+          "zh": "只有手写规则书"
+        },
+        {
+          "en": "A video playlist",
+          "zh": "视频播放列表"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Kernel PCA applies PCA through kernel similarities rather than explicit original coordinates.",
+        "zh": "Kernel PCA 通过核相似性而不是原始显式坐标来执行 PCA。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "kernel-pca",
+        "kernel-methods"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1997-kernel-pca-quiz-1",
+        "question": {
+          "en": "What lets Kernel PCA find nonlinear components?",
+          "zh": "Kernel PCA 靠什么找到非线性成分？"
+        },
+        "options": [
+          {
+            "en": "A kernel similarity matrix",
+            "zh": "核相似性矩阵"
+          },
+          {
+            "en": "A random chess opening",
+            "zh": "随机棋类开局"
+          },
+          {
+            "en": "A handwritten rule book only",
+            "zh": "只有手写规则书"
+          },
+          {
+            "en": "A video playlist",
+            "zh": "视频播放列表"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Kernel PCA applies PCA through kernel similarities rather than explicit original coordinates.",
+          "zh": "Kernel PCA 通过核相似性而不是原始显式坐标来执行 PCA。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "kernel-pca",
+          "kernel-methods"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1999-nmf",
+    "year": 1999,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "NMF",
+      "zh": "非负矩阵分解"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Bell Labs and MIT",
+        "zh": "贝尔实验室与 MIT"
+      },
+      "country": {
+        "en": "New Jersey and Cambridge, United States",
+        "zh": "美国新泽西州与剑桥"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4015
+      ]
+    },
+    "description": {
+      "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>",
+      "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Daniel Lee",
+          "zh": "丹尼尔·李"
+        },
+        "role": {
+          "en": "Co-author of NMF",
+          "zh": "NMF 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "H. Sebastian Seung",
+          "zh": "H. 塞巴斯蒂安·承"
+        },
+        "role": {
+          "en": "Co-author of NMF",
+          "zh": "NMF 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Learning the parts of objects by non-negative matrix factorization\"",
+      "zh": "\"通过非负矩阵分解学习物体部件\""
+    },
+    "quoteAttribution": {
+      "en": "《Learning the parts of objects by non-negative matrix factorization》, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+      "zh": "《通过非负矩阵分解学习物体部件》, 丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Learning the parts of objects by non-negative matrix factorization",
+        "zh": "通过非负矩阵分解学习物体部件"
+      },
+      "workAuthors": {
+        "en": "Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+        "zh": "丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1038/44565"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.",
+          "zh": "丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+          "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat NMF as a foundational method for interpretable latent factors. Its long-term legacy is the parts-based view that influenced topic modeling, source separation, recommender systems, and explainable representation learning.",
+          "zh": "专家通常把 NMF 视为可解释潜在因子的基础方法。它的长期影响在于部件化视角影响了主题建模、源分离、推荐系统和可解释表示学习。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+        "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg"
+      ],
+      "imageMeta": {
+        "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj": {
+          "caption": {
+            "en": "H. Sebastian Seung portrait",
+            "zh": "H. 塞巴斯蒂安·承肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of NMF",
+            "zh": "NMF 共同作者"
+          },
+          "sourceName": {
+            "en": "Princeton Neuroscience Institute",
+            "zh": "普林斯顿神经科学研究所"
+          },
+          "source": "https://pni.princeton.edu/people/h-sebastian-seung",
+          "sourceUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+          "originalImageUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+          "license": {
+            "en": "Princeton profile image; reuse rights not stated.",
+            "zh": "普林斯顿个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg": {
+          "caption": {
+            "en": "Parts-based factorization",
+            "zh": "基于部件的分解"
+          },
+          "subcaption": {
+            "en": "Original local explainer of nonnegative parts-based factorization.",
+            "zh": "关于非负部件分解的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Nature",
+            "zh": "Nature"
+          },
+          "source": "https://doi.org/10.1038/44565",
+          "sourceUrl": "https://doi.org/10.1038/44565",
+          "originalImageUrl": "https://doi.org/10.1038/44565",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Nonnegative matrix factorization",
+        "zh": "非负矩阵分解"
+      },
+      "artifact": {
+        "en": "Parts-based representation",
+        "zh": "基于部件的表示"
+      },
+      "material": {
+        "en": "Nature paper",
+        "zh": "《Nature》论文"
+      },
+      "demo": {
+        "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+        "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+      },
+      "visual": "nmf",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Additive Parts",
+            "zh": "可加部件"
+          },
+          "text": {
+            "en": "Representations combine by addition rather than cancellation.",
+            "zh": "表示通过相加组合，而不是相互抵消。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interpretability",
+            "zh": "可解释性"
+          },
+          "text": {
+            "en": "Basis vectors often align with meaningful parts or topics.",
+            "zh": "基向量常对应有意义的部件或主题。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Kernel PCA",
+          "zh": "Kernel PCA"
+        },
+        {
+          "en": "LDA",
+          "zh": "LDA"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Data matrix",
+          "zh": "数据矩阵"
+        },
+        {
+          "en": "Basis parts",
+          "zh": "基部件"
+        },
+        {
+          "en": "Activations",
+          "zh": "激活值"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Nature",
+            "zh": "Nature"
+          },
+          "title": {
+            "en": "Learning the parts of objects by non-negative matrix factorization",
+            "zh": "通过非负矩阵分解学习物体部件"
+          },
+          "description": {
+            "en": "Primary Nature paper record for NMF.",
+            "zh": "NMF 的 Nature 主论文记录。"
+          },
+          "url": "https://doi.org/10.1038/44565",
+          "source": "https://doi.org/10.1038/44565",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Learning the parts of objects by non-negative matrix factorization",
+            "zh": "《通过非负矩阵分解学习物体部件》"
+          },
+          "url": "https://doi.org/10.1038/44565"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Nature article page",
+            "zh": "Nature 文章页面"
+          },
+          "url": "https://www.nature.com/articles/44565"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "PubMed record for the Nature paper",
+            "zh": "Nature 论文 PubMed 记录"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10548103/"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn NMF documentation",
+            "zh": "scikit-learn NMF 文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg"
+    },
+    "quiz": {
+      "id": "ai100-1999-nmf-quiz-1",
+      "question": {
+        "en": "What does NMF encourage in learned representations?",
+        "zh": "NMF 鼓励学到什么样的表示？"
+      },
+      "options": [
+        {
+          "en": "Additive nonnegative parts",
+          "zh": "可相加的非负部件"
+        },
+        {
+          "en": "Negative-only labels",
+          "zh": "只有负数标签"
+        },
+        {
+          "en": "Tree-search pruning",
+          "zh": "树搜索剪枝"
+        },
+        {
+          "en": "Token self-attention",
+          "zh": "令牌自注意力"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "NMF represents data as nonnegative basis parts combined with nonnegative activations.",
+        "zh": "NMF 将数据表示为非负基部件与非负激活的组合。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "nmf",
+        "factorization"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1999-nmf-quiz-1",
+        "question": {
+          "en": "What does NMF encourage in learned representations?",
+          "zh": "NMF 鼓励学到什么样的表示？"
+        },
+        "options": [
+          {
+            "en": "Additive nonnegative parts",
+            "zh": "可相加的非负部件"
+          },
+          {
+            "en": "Negative-only labels",
+            "zh": "只有负数标签"
+          },
+          {
+            "en": "Tree-search pruning",
+            "zh": "树搜索剪枝"
+          },
+          {
+            "en": "Token self-attention",
+            "zh": "令牌自注意力"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "NMF represents data as nonnegative basis parts combined with nonnegative activations.",
+          "zh": "NMF 将数据表示为非负基部件与非负激活的组合。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "nmf",
+          "factorization"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2000-isomap",
+    "year": 2000,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Isomap",
+      "zh": "Isomap"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
+      },
+      "country": {
+        "en": "Stanford, United States",
+        "zh": "美国斯坦福"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>",
+      "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Joshua Tenenbaum",
+          "zh": "约书亚·特南鲍姆"
+        },
+        "role": {
+          "en": "Lead author of Isomap",
+          "zh": "Isomap 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "John Langford",
+          "zh": "约翰·兰福德"
+        },
+        "role": {
+          "en": "Co-author of Isomap",
+          "zh": "Co-author of Isomap"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A Global Geometric Framework for Nonlinear Dimensionality Reduction\"",
+      "zh": "\"非线性降维的全局几何框架\""
+    },
+    "quoteAttribution": {
+      "en": "《A Global Geometric Framework for Nonlinear Dimensionality Reduction》, Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
+      "zh": "《非线性降维的全局几何框架》, 约书亚·B·特南鲍姆、维恩·德席尔瓦、约翰·C·兰福德，《Science》，2000"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+        "zh": "非线性降维的全局几何框架"
+      },
+      "workAuthors": {
+        "en": "Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
+        "zh": "约书亚·B·特南鲍姆、维恩·德席尔瓦、约翰·C·兰福德，《Science》，2000"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2319"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.",
+          "zh": "约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold.",
+          "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Isomap as a landmark manifold-learning method because it made global nonlinear geometry operational. Its long-term legacy is the graph-distance view of representation learning, later echoed in visualization and graph-based learning methods.",
+          "zh": "专家通常把 Isomap 视为流形学习的标志性方法，因为它使全局非线性几何变得可操作。它的长期影响在于图距离表示学习视角，后来影响了可视化和图学习方法。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+        "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg"
+      ],
+      "imageMeta": {
+        "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY": {
+          "caption": {
+            "en": "Joshua Tenenbaum portrait",
+            "zh": "约书亚·特南鲍姆肖像"
+          },
+          "subcaption": {
+            "en": "Lead author of Isomap",
+            "zh": "Isomap 主要作者"
+          },
+          "sourceName": {
+            "en": "MIT Quest for Intelligence",
+            "zh": "MIT Quest for Intelligence"
+          },
+          "source": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+          "sourceUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+          "originalImageUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+          "license": {
+            "en": "MIT profile image; reuse rights not stated.",
+            "zh": "MIT 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg": {
+          "caption": {
+            "en": "Geodesic manifold map",
+            "zh": "测地流形映射"
+          },
+          "subcaption": {
+            "en": "Original local explainer of Isomap geodesic embedding.",
+            "zh": "关于 Isomap 测地嵌入的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Science",
+            "zh": "Science"
+          },
+          "source": "https://doi.org/10.1126/science.290.5500.2319",
+          "sourceUrl": "https://doi.org/10.1126/science.290.5500.2319",
+          "originalImageUrl": "https://doi.org/10.1126/science.290.5500.2319",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Geodesic manifold embedding",
+        "zh": "测地流形嵌入"
+      },
+      "artifact": {
+        "en": "Isomap embedding",
+        "zh": "Isomap 嵌入"
+      },
+      "material": {
+        "en": "Science paper",
+        "zh": "《Science》论文"
+      },
+      "demo": {
+        "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold.",
+        "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
+      },
+      "visual": "isomap",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Neighbor Graph",
+            "zh": "邻居图"
+          },
+          "text": {
+            "en": "Nearby points form the manifold graph.",
+            "zh": "近邻点形成流形图。"
+          }
+        },
+        {
+          "label": {
+            "en": "Geodesic Distance",
+            "zh": "测地距离"
+          },
+          "text": {
+            "en": "Shortest paths approximate distance along the surface.",
+            "zh": "最短路径近似曲面上的距离。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Kernel PCA",
+          "zh": "Kernel PCA"
+        },
+        {
+          "en": "Locally Linear Embedding",
+          "zh": "局部线性嵌入"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Neighbor graph",
+          "zh": "邻居图"
+        },
+        {
+          "en": "Shortest paths",
+          "zh": "最短路径"
+        },
+        {
+          "en": "Low-dimensional map",
+          "zh": "低维地图"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Science",
+            "zh": "Science"
+          },
+          "title": {
+            "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+            "zh": "非线性降维的全局几何框架"
+          },
+          "description": {
+            "en": "Primary Science paper record for Isomap.",
+            "zh": "Isomap 的 Science 主论文记录。"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2319",
+          "source": "https://doi.org/10.1126/science.290.5500.2319",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+            "zh": "《非线性降维的全局几何框架》"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2319"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Science article page",
+            "zh": "Science 文章页面"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.290.5500.2319"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "PubMed record for Isomap",
+            "zh": "Isomap 的 PubMed 记录"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn Isomap documentation",
+            "zh": "scikit-learn Isomap 文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/manifold.html#isomap"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg"
+    },
+    "quiz": {
+      "id": "ai100-2000-isomap-quiz-1",
+      "question": {
+        "en": "What distance does Isomap try to preserve?",
+        "zh": "Isomap 试图保持哪种距离？"
+      },
+      "options": [
+        {
+          "en": "Geodesic distance along a neighbor graph",
+          "zh": "邻居图上的测地距离"
+        },
+        {
+          "en": "The distance between two websites",
+          "zh": "两个网站之间的距离"
+        },
+        {
+          "en": "A chatbot response delay",
+          "zh": "聊天机器人响应延迟"
+        },
+        {
+          "en": "Only image brightness",
+          "zh": "只有图像亮度"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Isomap estimates distances along the manifold through shortest paths on a neighbor graph.",
+        "zh": "Isomap 通过邻居图上的最短路径估计沿流形的距离。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "isomap",
+        "manifold-learning"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2000-isomap-quiz-1",
+        "question": {
+          "en": "What distance does Isomap try to preserve?",
+          "zh": "Isomap 试图保持哪种距离？"
+        },
+        "options": [
+          {
+            "en": "Geodesic distance along a neighbor graph",
+            "zh": "邻居图上的测地距离"
+          },
+          {
+            "en": "The distance between two websites",
+            "zh": "两个网站之间的距离"
+          },
+          {
+            "en": "A chatbot response delay",
+            "zh": "聊天机器人响应延迟"
+          },
+          {
+            "en": "Only image brightness",
+            "zh": "只有图像亮度"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Isomap estimates distances along the manifold through shortest paths on a neighbor graph.",
+          "zh": "Isomap 通过邻居图上的最短路径估计沿流形的距离。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "isomap",
+          "manifold-learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2000-lle",
+    "year": 2000,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Locally Linear Embedding",
+      "zh": "局部线性嵌入"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "AT&T Labs",
+        "zh": "AT&T 实验室"
+      },
+      "country": {
+        "en": "Florham Park, United States",
+        "zh": "美国弗洛勒姆帕克"
+      },
+      "coordinates": [
+        40.7879,
+        -74.3882
+      ]
+    },
+    "description": {
+      "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>",
+      "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Sam Roweis",
+          "zh": "萨姆·罗维斯"
+        },
+        "role": {
+          "en": "Co-author of LLE",
+          "zh": "LLE 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Lawrence Saul",
+          "zh": "劳伦斯·索尔"
+        },
+        "role": {
+          "en": "Co-author of LLE",
+          "zh": "LLE 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Nonlinear Dimensionality Reduction by Locally Linear Embedding\"",
+      "zh": "\"通过局部线性嵌入进行非线性降维\""
+    },
+    "quoteAttribution": {
+      "en": "《Nonlinear Dimensionality Reduction by Locally Linear Embedding》, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+      "zh": "《通过局部线性嵌入进行非线性降维》, 萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+        "zh": "通过局部线性嵌入进行非线性降维"
+      },
+      "workAuthors": {
+        "en": "Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+        "zh": "萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.",
+          "zh": "萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+          "zh": "每个点由邻居重建，低维映射保持这些权重。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat LLE as a key manifold-learning method complementary to Isomap. Its long-term legacy is the idea that preserving local reconstruction relations can reveal nonlinear structure without an explicit global model.",
+          "zh": "专家通常把 LLE 视为与 Isomap 互补的关键流形学习方法。它的长期影响在于说明保持局部重建关系可以在没有显式全局模型的情况下揭示非线性结构。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+        "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg"
+      ],
+      "imageMeta": {
+        "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg": {
+          "caption": {
+            "en": "Sam Roweis collaboration photo",
+            "zh": "萨姆·罗维斯合作照片"
+          },
+          "subcaption": {
+            "en": "Co-author of LLE",
+            "zh": "LLE 共同作者"
+          },
+          "sourceName": {
+            "en": "NYU Computer Science",
+            "zh": "纽约大学计算机科学系"
+          },
+          "source": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+          "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+          "originalImageUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+          "license": {
+            "en": "NYU memorial image; reuse rights not stated.",
+            "zh": "NYU 纪念页图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg": {
+          "caption": {
+            "en": "Locally linear embedding",
+            "zh": "局部线性嵌入"
+          },
+          "subcaption": {
+            "en": "Original local explainer of LLE neighborhood reconstruction.",
+            "zh": "关于 LLE 邻域重建的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Science",
+            "zh": "Science"
+          },
+          "source": "https://doi.org/10.1126/science.290.5500.2323",
+          "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323",
+          "originalImageUrl": "https://doi.org/10.1126/science.290.5500.2323",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Neighborhood-preserving embedding",
+        "zh": "保持邻域的嵌入"
+      },
+      "artifact": {
+        "en": "LLE embedding",
+        "zh": "LLE 嵌入"
+      },
+      "material": {
+        "en": "Science paper",
+        "zh": "《Science》论文"
+      },
+      "demo": {
+        "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+        "zh": "每个点由邻居重建，低维映射保持这些权重。"
+      },
+      "visual": "lle",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Local Reconstruction",
+            "zh": "局部重建"
+          },
+          "text": {
+            "en": "A point is expressed by nearby points.",
+            "zh": "一个点由附近点表示。"
+          }
+        },
+        {
+          "label": {
+            "en": "Global Coordinates",
+            "zh": "全局坐标"
+          },
+          "text": {
+            "en": "Local weights are preserved in a shared map.",
+            "zh": "局部权重在共享地图中保持。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Isomap",
+          "zh": "Isomap"
+        },
+        {
+          "en": "Kernel PCA",
+          "zh": "Kernel PCA"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Find neighbors",
+          "zh": "寻找邻居"
+        },
+        {
+          "en": "Reconstruction weights",
+          "zh": "重建权重"
+        },
+        {
+          "en": "Embedding",
+          "zh": "嵌入"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Science",
+            "zh": "Science"
+          },
+          "title": {
+            "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+            "zh": "通过局部线性嵌入进行非线性降维"
+          },
+          "description": {
+            "en": "Primary Science paper record for LLE.",
+            "zh": "LLE 的 Science 主论文记录。"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2323",
+          "source": "https://doi.org/10.1126/science.290.5500.2323",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+            "zh": "《通过局部线性嵌入进行非线性降维》"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2323"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Science article page",
+            "zh": "Science 文章页面"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.290.5500.2323"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "PubMed record for LLE",
+            "zh": "LLE 的 PubMed 记录"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11125150/"
+        },
+        {
+          "type": {
+            "en": "Documentation",
+            "zh": "文档"
+          },
+          "label": {
+            "en": "scikit-learn LLE documentation",
+            "zh": "scikit-learn LLE 文档"
+          },
+          "url": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg"
+    },
+    "quiz": {
+      "id": "ai100-2000-lle-quiz-1",
+      "question": {
+        "en": "What relationship does LLE preserve?",
+        "zh": "LLE 保持什么关系？"
+      },
+      "options": [
+        {
+          "en": "Local reconstruction from nearest neighbors",
+          "zh": "由最近邻进行局部重建"
+        },
+        {
+          "en": "Only chronological order",
+          "zh": "只有时间顺序"
+        },
+        {
+          "en": "A game score table",
+          "zh": "游戏分数表"
+        },
+        {
+          "en": "A random password",
+          "zh": "随机密码"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "LLE keeps the weights that reconstruct each point from its nearby neighbors.",
+        "zh": "LLE 保持每个点由附近邻居重建时的权重。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "lle",
+        "manifold-learning"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2000-lle-quiz-1",
+        "question": {
+          "en": "What relationship does LLE preserve?",
+          "zh": "LLE 保持什么关系？"
+        },
+        "options": [
+          {
+            "en": "Local reconstruction from nearest neighbors",
+            "zh": "由最近邻进行局部重建"
+          },
+          {
+            "en": "Only chronological order",
+            "zh": "只有时间顺序"
+          },
+          {
+            "en": "A game score table",
+            "zh": "游戏分数表"
+          },
+          {
+            "en": "A random password",
+            "zh": "随机密码"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "LLE keeps the weights that reconstruct each point from its nearby neighbors.",
+          "zh": "LLE 保持每个点由附近邻居重建时的权重。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "lle",
+          "manifold-learning"
+        ]
+      }
+    ]
+  },
+  {
     "id": "milestone-ai100-1943-mcculloch-pitts-neuron",
     "year": 1943,
     "category": {
@@ -25111,8 +28639,8 @@ const milestones = [
             "zh": "马文·明斯基肖像"
           },
           "subcaption": {
-            "en": "Co-builder of SNARC and later AI pioneer.",
-            "zh": "SNARC 共同建造者，后来的 AI 先驱。"
+            "en": "Co-builder of SNARC.",
+            "zh": "SNARC 共同建造者。"
           },
           "sourceName": {
             "en": "Local project asset",
@@ -25406,6 +28934,849 @@ const milestones = [
     ]
   },
   {
+    "id": "milestone-ai100-1982-som",
+    "year": 1982,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Self-organizing Map",
+      "zh": "自组织映射"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Helsinki University of Technology",
+        "zh": "赫尔辛基理工大学"
+      },
+      "country": {
+        "en": "Espoo, Finland",
+        "zh": "芬兰埃斯波"
+      },
+      "coordinates": [
+        60.1841,
+        24.8301
+      ]
+    },
+    "description": {
+      "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>",
+      "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Teuvo Kohonen",
+          "zh": "泰沃·科霍宁"
+        },
+        "role": {
+          "en": "Creator of self-organizing maps",
+          "zh": "自组织映射提出者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Self-organized formation of topologically correct feature maps\"",
+      "zh": "\"拓扑正确特征映射的自组织形成\""
+    },
+    "quoteAttribution": {
+      "en": "《Self-organized formation of topologically correct feature maps》, Teuvo Kohonen, Biological Cybernetics, 1982",
+      "zh": "《拓扑正确特征映射的自组织形成》, 泰沃·科霍宁，《Biological Cybernetics》，1982"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Self-organized formation of topologically correct feature maps",
+        "zh": "拓扑正确特征映射的自组织形成"
+      },
+      "workAuthors": {
+        "en": "Teuvo Kohonen, Biological Cybernetics, 1982",
+        "zh": "泰沃·科霍宁，《Biological Cybernetics》，1982"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00337288"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.",
+          "zh": "泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
+          "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat self-organizing maps as a classic unsupervised neural model for visualization and topology preservation. Its long-term legacy is the competitive-learning map, still used to explain clustering, vector quantization, and interpretable low-dimensional organization.",
+          "zh": "专家通常把自组织映射视为用于可视化和拓扑保持的经典无监督神经模型。它的长期影响在于竞争学习地图仍被用于解释聚类、向量量化和可解释低维组织。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+        "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg"
+      ],
+      "imageMeta": {
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg": {
+          "caption": {
+            "en": "Teuvo Kohonen portrait",
+            "zh": "泰沃·科霍宁肖像"
+          },
+          "subcaption": {
+            "en": "Creator of self-organizing maps",
+            "zh": "自组织映射提出者"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+          "license": {
+            "en": "Creative Commons Attribution, per Wikimedia Commons.",
+            "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg": {
+          "caption": {
+            "en": "Kohonen map adaptation",
+            "zh": "科霍宁映射调整"
+          },
+          "subcaption": {
+            "en": "Original local explainer of self-organizing map adaptation.",
+            "zh": "关于自组织映射调整的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Biological Cybernetics",
+            "zh": "Biological Cybernetics"
+          },
+          "source": "https://doi.org/10.1007/BF00337288",
+          "sourceUrl": "https://doi.org/10.1007/BF00337288",
+          "originalImageUrl": "https://doi.org/10.1007/BF00337288",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Unsupervised competitive learning",
+        "zh": "无监督竞争学习"
+      },
+      "artifact": {
+        "en": "Kohonen self-organizing map",
+        "zh": "科霍宁自组织映射"
+      },
+      "material": {
+        "en": "Biological Cybernetics paper",
+        "zh": "《Biological Cybernetics》论文"
+      },
+      "demo": {
+        "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
+        "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
+      },
+      "visual": "som",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Best-Matching Unit",
+            "zh": "最佳匹配单元"
+          },
+          "text": {
+            "en": "One grid unit wins for each input.",
+            "zh": "每个输入对应一个获胜网格单元。"
+          }
+        },
+        {
+          "label": {
+            "en": "Neighborhood Adaptation",
+            "zh": "邻域调整"
+          },
+          "text": {
+            "en": "Nearby units adapt together.",
+            "zh": "相邻单元一起调整。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Neural networks",
+          "zh": "神经网络"
+        },
+        {
+          "en": "K-means",
+          "zh": "K-means"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Finland",
+          "zh": "芬兰"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input vector",
+          "zh": "输入向量"
+        },
+        {
+          "en": "Winning unit",
+          "zh": "获胜单元"
+        },
+        {
+          "en": "Topology map",
+          "zh": "拓扑地图"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Springer",
+            "zh": "Springer"
+          },
+          "title": {
+            "en": "Self-organized formation of topologically correct feature maps",
+            "zh": "拓扑正确特征映射的自组织形成"
+          },
+          "description": {
+            "en": "Primary paper record for self-organizing maps.",
+            "zh": "自组织映射的主论文记录。"
+          },
+          "url": "https://doi.org/10.1007/BF00337288",
+          "source": "https://doi.org/10.1007/BF00337288",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Self-organized formation of topologically correct feature maps",
+            "zh": "《拓扑正确特征映射的自组织形成》"
+          },
+          "url": "https://doi.org/10.1007/BF00337288"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Open SOM paper PDF",
+            "zh": "SOM 论文开放 PDF"
+          },
+          "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Self-organizing map overview",
+            "zh": "自组织映射概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Self-organizing_map"
+        },
+        {
+          "type": {
+            "en": "Retrospective",
+            "zh": "回顾"
+          },
+          "label": {
+            "en": "Essentials of the self-organizing map",
+            "zh": "自组织映射要点回顾"
+          },
+          "url": "https://doi.org/10.1016/j.neunet.2012.09.018"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg"
+    },
+    "quiz": {
+      "id": "ai100-1982-som-quiz-1",
+      "question": {
+        "en": "What does a self-organizing map arrange?",
+        "zh": "自组织映射会排列什么？"
+      },
+      "options": [
+        {
+          "en": "Output units into a topology-preserving grid",
+          "zh": "把输出单元排列成保持拓扑的网格"
+        },
+        {
+          "en": "A list of chess openings",
+          "zh": "棋类开局列表"
+        },
+        {
+          "en": "Only theorem names",
+          "zh": "只有定理名称"
+        },
+        {
+          "en": "A fixed movie playlist",
+          "zh": "固定电影播放列表"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "SOM learning adapts a grid so nearby units represent nearby input patterns.",
+        "zh": "SOM 学习会调整网格，使相邻单元表示相近的输入模式。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "som",
+        "unsupervised-learning"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1982-som-quiz-1",
+        "question": {
+          "en": "What does a self-organizing map arrange?",
+          "zh": "自组织映射会排列什么？"
+        },
+        "options": [
+          {
+            "en": "Output units into a topology-preserving grid",
+            "zh": "把输出单元排列成保持拓扑的网格"
+          },
+          {
+            "en": "A list of chess openings",
+            "zh": "棋类开局列表"
+          },
+          {
+            "en": "Only theorem names",
+            "zh": "只有定理名称"
+          },
+          {
+            "en": "A fixed movie playlist",
+            "zh": "固定电影播放列表"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SOM learning adapts a grid so nearby units represent nearby input patterns.",
+          "zh": "SOM 学习会调整网格，使相邻单元表示相近的输入模式。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "som",
+          "unsupervised-learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1967-back-propagation",
+    "year": 1967,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Back-propagation",
+      "zh": "反向传播"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Kyushu University and UC San Diego",
+        "zh": "九州大学与加州大学圣迭戈分校"
+      },
+      "country": {
+        "en": "Fukuoka and San Diego",
+        "zh": "福冈与圣迭戈"
+      },
+      "coordinates": [
+        32.8731,
+        130.742
+      ]
+    },
+    "description": {
+      "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>",
+      "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Shunichi Amari",
+          "zh": "甘利俊一"
+        },
+        "role": {
+          "en": "Early contributor to adaptive neural learning",
+          "zh": "自适应神经学习早期贡献者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "David Rumelhart",
+          "zh": "大卫·鲁梅尔哈特"
+        },
+        "role": {
+          "en": "Co-author of the 1986 back-propagation paper",
+          "zh": "1986 年反向传播论文共同作者"
+        },
+        "avatar": "resources/images/figures/david-rumelhart.jpg",
+        "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Learning representations by back-propagating errors\"",
+      "zh": "\"通过反向传播误差学习表示\""
+    },
+    "quoteAttribution": {
+      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+      "zh": "《通过反向传播误差学习表示》, 大卫·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯，《Nature》，1986"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "通过反向传播误差学习表示"
+      },
+      "workAuthors": {
+        "en": "David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+        "zh": "大卫·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯，《Nature》，1986"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1038/323533a0"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.",
+          "zh": "反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Output error is differentiated backward through the network so each weight receives an update.",
+          "zh": "输出误差沿网络反向求导，使每个权重获得更新量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat back-propagation as the optimization workhorse of neural networks, while acknowledging its multi-decade rediscovery history. Its long-term legacy is making deep layered representations trainable at scale.",
+          "zh": "专家通常把反向传播视为神经网络优化的核心工具，同时也承认它经历了多阶段重新发现。它的长期影响在于让深层表示能够大规模训练。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/david-rumelhart.jpg",
+        "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/david-rumelhart.jpg": {
+          "caption": {
+            "en": "David Rumelhart portrait",
+            "zh": "大卫·鲁梅尔哈特肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of the 1986 back-propagation paper",
+            "zh": "1986 年反向传播论文共同作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/david-rumelhart.jpg",
+          "sourceUrl": "resources/images/figures/david-rumelhart.jpg",
+          "originalImageUrl": "resources/images/figures/david-rumelhart.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg": {
+          "caption": {
+            "en": "Error signal flow",
+            "zh": "误差信号流"
+          },
+          "subcaption": {
+            "en": "Original local explainer of back-propagation error flow.",
+            "zh": "关于反向传播误差流的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Nature",
+            "zh": "Nature"
+          },
+          "source": "https://doi.org/10.1038/323533a0",
+          "sourceUrl": "https://doi.org/10.1038/323533a0",
+          "originalImageUrl": "https://doi.org/10.1038/323533a0",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Gradient propagation through layers",
+        "zh": "跨层梯度传播"
+      },
+      "artifact": {
+        "en": "Back-propagation learning rule",
+        "zh": "反向传播学习规则"
+      },
+      "material": {
+        "en": "Nature paper and earlier adaptive classifier literature",
+        "zh": "Nature 论文与更早的自适应分类器文献"
+      },
+      "demo": {
+        "en": "Output error is differentiated backward through the network so each weight receives an update.",
+        "zh": "输出误差沿网络反向求导，使每个权重获得更新量。"
+      },
+      "visual": "backprop",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Chain Rule",
+            "zh": "链式法则"
+          },
+          "text": {
+            "en": "Layer gradients are linked by derivatives.",
+            "zh": "层间梯度由导数连接。"
+          }
+        },
+        {
+          "label": {
+            "en": "Credit Assignment",
+            "zh": "信用分配"
+          },
+          "text": {
+            "en": "Hidden weights receive blame for output error.",
+            "zh": "隐藏层权重为输出误差分配责任。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Perceptron",
+          "zh": "感知机"
+        },
+        {
+          "en": "LeNet",
+          "zh": "LeNet"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Japan",
+          "zh": "日本"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Forward output",
+          "zh": "前向输出"
+        },
+        {
+          "en": "Loss gradient",
+          "zh": "损失梯度"
+        },
+        {
+          "en": "Weight update",
+          "zh": "权重更新"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Nature",
+            "zh": "Nature"
+          },
+          "title": {
+            "en": "Learning representations by back-propagating errors",
+            "zh": "通过反向传播误差学习表示"
+          },
+          "description": {
+            "en": "Primary Nature paper record for modern back-propagation.",
+            "zh": "现代反向传播的 Nature 主论文记录。"
+          },
+          "url": "https://doi.org/10.1038/323533a0",
+          "source": "https://doi.org/10.1038/323533a0",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Learning representations by back-propagating errors",
+            "zh": "《通过反向传播误差学习表示》"
+          },
+          "url": "https://doi.org/10.1038/323533a0"
+        },
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "A Theory of Adaptive Pattern Classifiers",
+            "zh": "《自适应模式分类器理论》"
+          },
+          "url": "https://doi.org/10.1109/PGEC.1967.264666"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Hinton-hosted Nature back-propagation PDF",
+            "zh": "辛顿托管 Nature 论文 PDF"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Backpropagation overview",
+            "zh": "反向传播概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Backpropagation"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg"
+    },
+    "quiz": {
+      "id": "ai100-1967-back-propagation-quiz-1",
+      "question": {
+        "en": "What does back-propagation send backward through a network?",
+        "zh": "反向传播把什么沿网络向后传递？"
+      },
+      "options": [
+        {
+          "en": "Error gradients for weight updates",
+          "zh": "用于权重更新的误差梯度"
+        },
+        {
+          "en": "Raw video frames only",
+          "zh": "只有原始视频帧"
+        },
+        {
+          "en": "A list of database columns",
+          "zh": "数据库列列表"
+        },
+        {
+          "en": "The final answer without training",
+          "zh": "不训练直接给最终答案"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Back-propagation uses gradients to assign credit or blame to earlier weights.",
+        "zh": "反向传播用梯度把贡献或责任分配给更早的权重。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "backpropagation",
+        "neural-networks"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1967-back-propagation-quiz-1",
+        "question": {
+          "en": "What does back-propagation send backward through a network?",
+          "zh": "反向传播把什么沿网络向后传递？"
+        },
+        "options": [
+          {
+            "en": "Error gradients for weight updates",
+            "zh": "用于权重更新的误差梯度"
+          },
+          {
+            "en": "Raw video frames only",
+            "zh": "只有原始视频帧"
+          },
+          {
+            "en": "A list of database columns",
+            "zh": "数据库列列表"
+          },
+          {
+            "en": "The final answer without training",
+            "zh": "不训练直接给最终答案"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Back-propagation uses gradients to assign credit or blame to earlier weights.",
+          "zh": "反向传播用梯度把贡献或责任分配给更早的权重。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "backpropagation",
+          "neural-networks"
+        ]
+      }
+    ]
+  },
+  {
     "id": "milestone-ai100-1969-relu",
     "year": 1969,
     "category": {
@@ -25455,7 +29826,7 @@ const milestones = [
       {
         "name": {
           "en": "Yoshua Bengio",
-          "zh": "Yoshua Bengio"
+          "zh": "约书亚·本吉奥"
         },
         "role": {
           "en": "Co-author of later deep rectifier analysis",
@@ -25474,7 +29845,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《Deep Sparse Rectifier Neural Networks》, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
-      "zh": "《深度稀疏整流神经网络》, Xavier Glorot、Antoine Bordes、Yoshua Bengio，AISTATS，2011"
+      "zh": "《深度稀疏整流神经网络》, 泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
     },
     "quoteMeta": {
       "speaker": "",
@@ -25484,7 +29855,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
-        "zh": "Xavier Glorot、Antoine Bordes、Yoshua Bengio，AISTATS，2011"
+        "zh": "泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
       },
       "sourceLabel": "",
       "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html"
@@ -25534,7 +29905,7 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
           "caption": {
             "en": "Yoshua Bengio portrait",
-            "zh": "Yoshua Bengio 肖像"
+            "zh": "约书亚·本吉奥肖像"
           },
           "subcaption": {
             "en": "Co-author of influential rectifier analysis.",
@@ -25745,7 +30116,7 @@ const milestones = [
           },
           "label": {
             "en": "Yoshua Bengio profile at Mila",
-            "zh": "Mila 的 Yoshua Bengio 资料"
+            "zh": "Mila 的约书亚·本吉奥资料"
           },
           "url": "https://mila.quebec/en/directory/yoshua-bengio"
         }
@@ -25836,6 +30207,419 @@ const milestones = [
     ]
   },
   {
+    "id": "milestone-ai100-1980-neocognitron",
+    "year": 1980,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Neocognitron",
+      "zh": "新认知机"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "NHK Broadcasting Science Research Laboratories",
+        "zh": "NHK 广播科学研究实验室"
+      },
+      "country": {
+        "en": "Tokyo, Japan",
+        "zh": "日本东京"
+      },
+      "coordinates": [
+        35.6762,
+        139.6503
+      ]
+    },
+    "description": {
+      "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>",
+      "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Kunihiko Fukushima",
+          "zh": "福岛邦彦"
+        },
+        "role": {
+          "en": "Creator of the neocognitron",
+          "zh": "Neocognitron 提出者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position\"",
+      "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
+    },
+    "quoteAttribution": {
+      "en": "《Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position》, Kunihiko Fukushima, Biological Cybernetics, 1980",
+      "zh": "《Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型》, 福岛邦彦，《Biological Cybernetics》，1980"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+        "zh": "Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型"
+      },
+      "workAuthors": {
+        "en": "Kunihiko Fukushima, Biological Cybernetics, 1980",
+        "zh": "福岛邦彦，《Biological Cybernetics》，1980"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00344251"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.",
+          "zh": "福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+          "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the neocognitron as a major ancestor of convolutional vision networks, even though modern CNNs use different training procedures. Its long-term legacy is the hierarchical feature-and-pooling pattern for shift-tolerant recognition.",
+          "zh": "专家通常把 Neocognitron 视为卷积视觉网络的重要先祖，尽管现代 CNN 使用不同训练流程。它的长期影响在于用于抗平移识别的层级特征与池化模式。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+        "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
+      ],
+      "imageMeta": {
+        "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg": {
+          "caption": {
+            "en": "Kunihiko Fukushima portrait",
+            "zh": "福岛邦彦肖像"
+          },
+          "subcaption": {
+            "en": "Creator of the neocognitron",
+            "zh": "Neocognitron 提出者"
+          },
+          "sourceName": {
+            "en": "NEC C&C Foundation",
+            "zh": "NEC C&C Foundation"
+          },
+          "source": "https://www.candc.or.jp/en/2021/group_a.html",
+          "sourceUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+          "originalImageUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+          "license": {
+            "en": "NEC C&C Foundation image; reuse rights not stated.",
+            "zh": "NEC C&C Foundation 图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg": {
+          "caption": {
+            "en": "Hierarchical visual layers",
+            "zh": "层级视觉网络"
+          },
+          "subcaption": {
+            "en": "Original local explainer of neocognitron hierarchy.",
+            "zh": "关于 Neocognitron 层级结构的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Biological Cybernetics",
+            "zh": "Biological Cybernetics"
+          },
+          "source": "https://doi.org/10.1007/BF00344251",
+          "sourceUrl": "https://doi.org/10.1007/BF00344251",
+          "originalImageUrl": "https://doi.org/10.1007/BF00344251",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Hierarchical shift-tolerant vision network",
+        "zh": "层级抗平移视觉网络"
+      },
+      "artifact": {
+        "en": "Neocognitron architecture",
+        "zh": "Neocognitron 架构"
+      },
+      "material": {
+        "en": "Biological Cybernetics paper",
+        "zh": "《Biological Cybernetics》论文"
+      },
+      "demo": {
+        "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+        "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+      },
+      "visual": "neocognitron",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Hierarchical Vision",
+            "zh": "层级视觉"
+          },
+          "text": {
+            "en": "Simple features are composed into larger patterns.",
+            "zh": "简单特征组合成更大的模式。"
+          }
+        },
+        {
+          "label": {
+            "en": "Shift Tolerance",
+            "zh": "平移容忍"
+          },
+          "text": {
+            "en": "Later layers reduce sensitivity to position changes.",
+            "zh": "后续层降低对位置变化的敏感性。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "CNN",
+          "zh": "CNN"
+        },
+        {
+          "en": "LeNet",
+          "zh": "LeNet"
+        },
+        {
+          "en": "ReLU",
+          "zh": "ReLU"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Japan",
+          "zh": "日本"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input pattern",
+          "zh": "输入图案"
+        },
+        {
+          "en": "Feature layers",
+          "zh": "特征层"
+        },
+        {
+          "en": "Stable category",
+          "zh": "稳定类别"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Springer",
+            "zh": "Springer"
+          },
+          "title": {
+            "en": "Neocognitron",
+            "zh": "新认知机"
+          },
+          "description": {
+            "en": "Primary paper record for the neocognitron.",
+            "zh": "Neocognitron 的主论文记录。"
+          },
+          "url": "https://doi.org/10.1007/BF00344251",
+          "source": "https://doi.org/10.1007/BF00344251",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Neocognitron",
+            "zh": "《Neocognitron》"
+          },
+          "url": "https://doi.org/10.1007/BF00344251"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Open Neocognitron PDF",
+            "zh": "Neocognitron 开放 PDF"
+          },
+          "url": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Scholarpedia Neocognitron article",
+            "zh": "Scholarpedia 的 Neocognitron 文章"
+          },
+          "url": "https://www.scholarpedia.org/article/Neocognitron"
+        },
+        {
+          "type": {
+            "en": "Context",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Semantic Scholar paper record",
+            "zh": "Semantic Scholar 论文记录"
+          },
+          "url": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
+    },
+    "quiz": {
+      "id": "ai100-1980-neocognitron-quiz-1",
+      "question": {
+        "en": "What later family of models did the neocognitron anticipate?",
+        "zh": "Neocognitron 预示了后来的哪类模型？"
+      },
+      "options": [
+        {
+          "en": "Convolutional vision networks",
+          "zh": "卷积视觉网络"
+        },
+        {
+          "en": "Spreadsheet formulas only",
+          "zh": "只有电子表格公式"
+        },
+        {
+          "en": "Audio compression codecs",
+          "zh": "音频压缩编码"
+        },
+        {
+          "en": "A theorem database only",
+          "zh": "只有定理数据库"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Its hierarchical feature and tolerance layers foreshadowed CNN-style visual processing.",
+        "zh": "它的层级特征层和容忍层预示了 CNN 式视觉处理。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "neocognitron",
+        "cnn"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1980-neocognitron-quiz-1",
+        "question": {
+          "en": "What later family of models did the neocognitron anticipate?",
+          "zh": "Neocognitron 预示了后来的哪类模型？"
+        },
+        "options": [
+          {
+            "en": "Convolutional vision networks",
+            "zh": "卷积视觉网络"
+          },
+          {
+            "en": "Spreadsheet formulas only",
+            "zh": "只有电子表格公式"
+          },
+          {
+            "en": "Audio compression codecs",
+            "zh": "音频压缩编码"
+          },
+          {
+            "en": "A theorem database only",
+            "zh": "只有定理数据库"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Its hierarchical feature and tolerance layers foreshadowed CNN-style visual processing.",
+          "zh": "它的层级特征层和容忍层预示了 CNN 式视觉处理。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "neocognitron",
+          "cnn"
+        ]
+      }
+    ]
+  },
+  {
     "id": "milestone-ai100-1989-lenet",
     "year": 1989,
     "category": {
@@ -25866,13 +30650,13 @@ const milestones = [
     },
     "description": {
       "en": "<p>Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.</p>",
-      "zh": "<p>Yann LeCun 及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。</p>"
+      "zh": "<p>扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Yann LeCun",
-          "zh": "Yann LeCun"
+          "zh": "扬·勒昆"
         },
         "role": {
           "en": "LeNet lead researcher",
@@ -25891,7 +30675,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《Backpropagation Applied to Handwritten Zip Code Recognition》, Yann LeCun et al., Neural Computation, 1989",
-      "zh": "《反向传播应用于手写邮编识别》, Yann LeCun 等，《Neural Computation》，1989"
+      "zh": "《反向传播应用于手写邮编识别》, 扬·勒昆等，《Neural Computation》，1989"
     },
     "quoteMeta": {
       "speaker": "",
@@ -25901,7 +30685,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Yann LeCun et al., Neural Computation, 1989",
-        "zh": "Yann LeCun 等，《Neural Computation》，1989"
+        "zh": "扬·勒昆等，《Neural Computation》，1989"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
@@ -25918,7 +30702,7 @@ const milestones = [
         },
         "html": {
           "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.",
-          "zh": "Yann LeCun 及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。"
+          "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。"
         }
       },
       {
@@ -25951,11 +30735,11 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
           "caption": {
             "en": "Yann LeCun portrait",
-            "zh": "Yann LeCun 肖像"
+            "zh": "扬·勒昆肖像"
           },
           "subcaption": {
-            "en": "Lead researcher behind LeNet and early CNN handwriting systems.",
-            "zh": "LeNet 和早期 CNN 手写识别系统的主要研究者。"
+            "en": "LeNet lead researcher",
+            "zh": "LeNet 主要研究者"
           },
           "sourceName": {
             "en": "Wikimedia Commons",
@@ -26158,7 +30942,7 @@ const milestones = [
           },
           "label": {
             "en": "Yann LeCun's home page",
-            "zh": "Yann LeCun 主页"
+            "zh": "扬·勒昆主页"
           },
           "url": "https://yann.lecun.com/"
         }
@@ -26285,7 +31069,7 @@ const milestones = [
       {
         "name": {
           "en": "Yoshua Bengio",
-          "zh": "Yoshua Bengio"
+          "zh": "约书亚·本吉奥"
         },
         "role": {
           "en": "Lead author of the neural probabilistic language model",
@@ -26304,7 +31088,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《A Neural Probabilistic Language Model》, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
-      "zh": "《神经概率语言模型》, Yoshua Bengio、Rejean Ducharme、Pascal Vincent、Christian Janvin，JMLR，2003"
+      "zh": "《神经概率语言模型》, 约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
     },
     "quoteMeta": {
       "speaker": "",
@@ -26314,7 +31098,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
-        "zh": "Yoshua Bengio、Rejean Ducharme、Pascal Vincent、Christian Janvin，JMLR，2003"
+        "zh": "约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html"
@@ -26364,7 +31148,7 @@ const milestones = [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
           "caption": {
             "en": "Yoshua Bengio portrait",
-            "zh": "Yoshua Bengio 肖像"
+            "zh": "约书亚·本吉奥肖像"
           },
           "subcaption": {
             "en": "Lead author of the neural probabilistic language model.",
@@ -26571,7 +31355,7 @@ const milestones = [
           },
           "label": {
             "en": "Yoshua Bengio profile at Mila",
-            "zh": "Mila 的 Yoshua Bengio 资料"
+            "zh": "Mila 的约书亚·本吉奥资料"
           },
           "url": "https://mila.quebec/en/directory/yoshua-bengio"
         }
@@ -26698,7 +31482,7 @@ const milestones = [
       {
         "name": {
           "en": "Alex Krizhevsky",
-          "zh": "Alex Krizhevsky"
+          "zh": "亚历克斯·克里泽夫斯基"
         },
         "role": {
           "en": "AlexNet lead author",
@@ -26711,7 +31495,7 @@ const milestones = [
       {
         "name": {
           "en": "Geoffrey Hinton",
-          "zh": "Geoffrey Hinton"
+          "zh": "杰弗里·辛顿"
         },
         "role": {
           "en": "Co-author and advisor",
@@ -26730,7 +31514,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
-      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, Alex Krizhevsky、Ilya Sutskever、Geoffrey Hinton，NeurIPS，2012"
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
     },
     "quoteMeta": {
       "speaker": "",
@@ -26740,7 +31524,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
-        "zh": "Alex Krizhevsky、Ilya Sutskever、Geoffrey Hinton，NeurIPS，2012"
+        "zh": "亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
       },
       "sourceLabel": "",
       "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
@@ -26790,7 +31574,7 @@ const milestones = [
         "resources/images/figures/alex-krizhevsky.jpg": {
           "caption": {
             "en": "Alex Krizhevsky portrait",
-            "zh": "Alex Krizhevsky 肖像"
+            "zh": "亚历克斯·克里泽夫斯基肖像"
           },
           "subcaption": {
             "en": "Lead author of AlexNet.",
@@ -27550,7 +32334,7 @@ const milestones = [
       {
         "name": {
           "en": "Sergey Ioffe",
-          "zh": "Sergey Ioffe"
+          "zh": "谢尔盖·约费"
         },
         "role": {
           "en": "Co-author of Batch Normalization",
@@ -27563,7 +32347,7 @@ const milestones = [
       {
         "name": {
           "en": "Christian Szegedy",
-          "zh": "Christian Szegedy"
+          "zh": "克里斯蒂安·塞格迪"
         },
         "role": {
           "en": "Co-author of Batch Normalization",
@@ -27582,7 +32366,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》, Sergey Ioffe and Christian Szegedy, ICML, 2015",
-      "zh": "《批归一化：通过减少内部协变量偏移加速深度网络训练》, Sergey Ioffe、Christian Szegedy，ICML，2015"
+      "zh": "《批归一化：通过减少内部协变量偏移加速深度网络训练》, 谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
     },
     "quoteMeta": {
       "speaker": "",
@@ -27592,7 +32376,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Sergey Ioffe and Christian Szegedy, ICML, 2015",
-        "zh": "Sergey Ioffe、Christian Szegedy，ICML，2015"
+        "zh": "谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
       },
       "sourceLabel": "",
       "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html"
@@ -27642,7 +32426,7 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
           "caption": {
             "en": "Christian Szegedy portrait",
-            "zh": "Christian Szegedy 肖像"
+            "zh": "克里斯蒂安·塞格迪肖像"
           },
           "subcaption": {
             "en": "Co-author of Batch Normalization.",
@@ -28008,7 +32792,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
-      "zh": "《密集连接卷积网络》, 黄高、刘壮、Laurens van der Maaten、Kilian Weinberger，CVPR，2017"
+      "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
     },
     "quoteMeta": {
       "speaker": "",
@@ -28018,7 +32802,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
-        "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Weinberger，CVPR，2017"
+        "zh": "黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1608.06993"
@@ -28370,6 +33154,436 @@ const milestones = [
     ]
   },
   {
+    "id": "milestone-ai100-2017-transformer",
+    "year": 2017,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Transformer",
+      "zh": "Transformer"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google Brain",
+        "zh": "Google Brain"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "en": "<p>The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.</p>",
+      "zh": "<p>Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Ashish Vaswani",
+          "zh": "阿希什·瓦斯瓦尼"
+        },
+        "role": {
+          "en": "Co-author of the Transformer paper",
+          "zh": "Transformer 论文共同作者"
+        },
+        "avatar": "resources/images/figures/ashish-vaswani.jpg",
+        "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Noam Shazeer",
+          "zh": "诺姆·沙泽尔"
+        },
+        "role": {
+          "en": "Co-author of the Transformer paper",
+          "zh": "Transformer 论文共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Attention Is All You Need\"",
+      "zh": "\"Attention Is All You Need\""
+    },
+    "quoteAttribution": {
+      "en": "《Attention Is All You Need》, Ashish Vaswani et al., NeurIPS, 2017",
+      "zh": "《Attention Is All You Need》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Attention Is All You Need",
+        "zh": "Attention Is All You Need"
+      },
+      "workAuthors": {
+        "en": "Ashish Vaswani et al., NeurIPS, 2017",
+        "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1706.03762"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
+          "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
+          "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/ashish-vaswani.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/ashish-vaswani.jpg": {
+          "caption": {
+            "en": "Ashish Vaswani portrait",
+            "zh": "阿希什·瓦斯瓦尼肖像"
+          },
+          "subcaption": {
+            "en": "Co-author of the Transformer paper",
+            "zh": "Transformer 论文共同作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/ashish-vaswani.jpg",
+          "sourceUrl": "resources/images/figures/ashish-vaswani.jpg",
+          "originalImageUrl": "resources/images/figures/ashish-vaswani.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
+          "caption": {
+            "en": "Self-attention stack",
+            "zh": "自注意力堆栈"
+          },
+          "subcaption": {
+            "en": "Original local explainer of transformer self-attention.",
+            "zh": "关于 Transformer 自注意力的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "NeurIPS",
+            "zh": "NeurIPS"
+          },
+          "source": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "originalImageUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Self-attention sequence architecture",
+        "zh": "自注意力序列架构"
+      },
+      "artifact": {
+        "en": "Transformer architecture",
+        "zh": "Transformer 架构"
+      },
+      "material": {
+        "en": "NeurIPS paper",
+        "zh": "NeurIPS 论文"
+      },
+      "demo": {
+        "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+        "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+      },
+      "visual": "transformer",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Self-attention",
+            "zh": "自注意力"
+          },
+          "text": {
+            "en": "Tokens exchange information through learned attention weights.",
+            "zh": "令牌通过学习到的注意力权重交换信息。"
+          }
+        },
+        {
+          "label": {
+            "en": "Parallel Training",
+            "zh": "并行训练"
+          },
+          "text": {
+            "en": "Sequence positions can be processed without recurrence.",
+            "zh": "序列位置无需循环即可处理。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Attention",
+          "zh": "注意力机制"
+        },
+        {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        {
+          "en": "GPT",
+          "zh": "GPT"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Token embeddings",
+          "zh": "令牌嵌入"
+        },
+        {
+          "en": "Self-attention",
+          "zh": "自注意力"
+        },
+        {
+          "en": "Feed-forward stack",
+          "zh": "前馈堆栈"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Attention Is All You Need",
+            "zh": "Attention Is All You Need"
+          },
+          "description": {
+            "en": "Open paper for the Transformer architecture.",
+            "zh": "Transformer 架构的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1706.03762",
+          "source": "https://arxiv.org/abs/1706.03762",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》"
+          },
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "NeurIPS paper page",
+            "zh": "NeurIPS 论文页面"
+          },
+          "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Google Research publication page",
+            "zh": "Google Research 出版页面"
+          },
+          "url": "https://research.google/pubs/attention-is-all-you-need/"
+        },
+        {
+          "type": {
+            "en": "Retrospective",
+            "zh": "回顾"
+          },
+          "label": {
+            "en": "Google Research Transformer blog post",
+            "zh": "Google Research Transformer 博客"
+          },
+          "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
+    },
+    "quiz": {
+      "id": "ai100-2017-transformer-quiz-1",
+      "question": {
+        "en": "What is the Transformer built around?",
+        "zh": "Transformer 主要围绕什么构建？"
+      },
+      "options": [
+        {
+          "en": "Self-attention over tokens",
+          "zh": "令牌之间的自注意力"
+        },
+        {
+          "en": "Only nearest-neighbor voting",
+          "zh": "只有最近邻投票"
+        },
+        {
+          "en": "A chemical expert rule",
+          "zh": "化学专家规则"
+        },
+        {
+          "en": "A fixed decision tree",
+          "zh": "固定决策树"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing.",
+        "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "transformer",
+        "attention"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2017-transformer-quiz-1",
+        "question": {
+          "en": "What is the Transformer built around?",
+          "zh": "Transformer 主要围绕什么构建？"
+        },
+        "options": [
+          {
+            "en": "Self-attention over tokens",
+            "zh": "令牌之间的自注意力"
+          },
+          {
+            "en": "Only nearest-neighbor voting",
+            "zh": "只有最近邻投票"
+          },
+          {
+            "en": "A chemical expert rule",
+            "zh": "化学专家规则"
+          },
+          {
+            "en": "A fixed decision tree",
+            "zh": "固定决策树"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing.",
+          "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "transformer",
+          "attention"
+        ]
+      }
+    ]
+  },
+  {
     "id": "milestone-ai100-2020-vit",
     "year": 2020,
     "category": {
@@ -28387,7 +33601,7 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google Research",
-        "zh": "Google Research"
+        "zh": "Google 研究院"
       },
       "country": {
         "en": "Mountain View, United States",
@@ -28406,7 +33620,7 @@ const milestones = [
       {
         "name": {
           "en": "Alexey Dosovitskiy",
-          "zh": "Alexey Dosovitskiy"
+          "zh": "阿列克谢·多索维茨基"
         },
         "role": {
           "en": "Lead author of Vision Transformer",
@@ -28419,7 +33633,7 @@ const milestones = [
       {
         "name": {
           "en": "Google Research",
-          "zh": "Google Research"
+          "zh": "Google 研究院"
         },
         "role": {
           "en": "Research organization",
@@ -28438,7 +33652,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》, Alexey Dosovitskiy et al., ICLR, 2021",
-      "zh": "《一张图像价值 16x16 个词：用于大规模图像识别的 Transformer》, Alexey Dosovitskiy 等，ICLR，2021"
+      "zh": "《一张图像价值 16x16 个词：用于大规模图像识别的 Transformer》, 阿列克谢·多索维茨基等，ICLR，2021"
     },
     "quoteMeta": {
       "speaker": "",
@@ -28448,7 +33662,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Alexey Dosovitskiy et al., ICLR, 2021",
-        "zh": "Alexey Dosovitskiy 等，ICLR，2021"
+        "zh": "阿列克谢·多索维茨基等，ICLR，2021"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/2010.11929"
@@ -28491,29 +33705,29 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/figures/research-institution.png",
+        "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
         "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
       ],
       "imageMeta": {
-        "resources/images/figures/research-institution.png": {
+        "https://www.eml-munich.de/team/alexey-dosovitskiy.png": {
           "caption": {
-            "en": "Google Research",
-            "zh": "Google Research"
+            "en": "Alexey Dosovitskiy portrait",
+            "zh": "阿列克谢·多索维茨基肖像"
           },
           "subcaption": {
-            "en": "Research group behind the Vision Transformer paper.",
-            "zh": "视觉 Transformer 论文背后的研究团队。"
+            "en": "Lead author of Vision Transformer",
+            "zh": "视觉 Transformer 主要作者"
           },
           "sourceName": {
-            "en": "Local project asset",
-            "zh": "本地项目素材"
+            "en": "EML Munich",
+            "zh": "EML Munich"
           },
-          "source": "resources/images/figures/research-institution.png",
-          "sourceUrl": "resources/images/figures/research-institution.png",
-          "originalImageUrl": "resources/images/figures/research-institution.png",
+          "source": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+          "sourceUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+          "originalImageUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
           "license": {
-            "en": "Reference image",
-            "zh": "参考图片"
+            "en": "EML Munich profile image; reuse rights not stated.",
+            "zh": "EML Munich 个人资料图片；未说明复用权利。"
           },
           "usage": {
             "en": "Achievement visual material",
