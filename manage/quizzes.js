@@ -2568,6 +2568,156 @@ module.exports = {
         "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
         "tags": ["transformer", "attention"]
       }
+    ],
+    "ai100-1997-lstm": [
+      {
+        "question": { "en": "What does an LSTM cell use to preserve long-range sequence information?", "zh": "LSTM 单元用什么保留长程序列信息？" },
+        "options": [
+          { "en": "Gates and a persistent memory state", "zh": "门控和持久记忆状态" },
+          { "en": "Only a nearest-neighbor vote", "zh": "只有最近邻投票" },
+          { "en": "A fixed chess opening", "zh": "固定棋类开局" },
+          { "en": "A chemical mass spectrum", "zh": "化学质谱" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "LSTM regulates memory with gates that decide what to write, keep, and expose.", "zh": "LSTM 用门决定写入、保留和输出哪些记忆。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["lstm", "sequence-modeling"]
+      }
+    ],
+    "ai100-2014-gan": [
+      {
+        "question": { "en": "What are the two main players in a GAN?", "zh": "GAN 中的两个主要参与者是什么？" },
+        "options": [
+          { "en": "A generator and a discriminator", "zh": "生成器和判别器" },
+          { "en": "A theorem prover and a Go board", "zh": "定理证明器和围棋棋盘" },
+          { "en": "A database row and a spreadsheet cell", "zh": "数据库行和电子表格单元" },
+          { "en": "A parser and a printer only", "zh": "只有解析器和打印机" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "The generator makes samples while the discriminator learns to distinguish real from generated data.", "zh": "生成器制造样本，判别器学习区分真实数据和生成数据。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["gan", "generative-ai"]
+      }
+    ],
+    "ai100-2014-neural-machine-translation-attention": [
+      {
+        "question": { "en": "What did neural attention add to machine translation?", "zh": "神经注意力为机器翻译加入了什么？" },
+        "options": [
+          { "en": "Learned alignment between source and target words", "zh": "源词与目标词之间的学习型对齐" },
+          { "en": "A fixed list of chess moves", "zh": "固定棋步列表" },
+          { "en": "Only image denoising", "zh": "只有图像去噪" },
+          { "en": "A chemical rule database", "zh": "化学规则数据库" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Attention lets the decoder weight source positions differently for each target word.", "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["attention", "translation"]
+      }
+    ],
+    "ai100-2018-bert": [
+      {
+        "question": { "en": "How is BERT mainly pre-trained?", "zh": "BERT 主要如何预训练？" },
+        "options": [
+          { "en": "By predicting masked words from bidirectional context", "zh": "从双向上下文预测被遮盖的词" },
+          { "en": "By sorting protein atoms only", "zh": "只给蛋白质原子排序" },
+          { "en": "By pruning a chess search tree", "zh": "剪枝棋类搜索树" },
+          { "en": "By counting only edge gradients", "zh": "只统计边缘梯度" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "BERT hides some tokens and learns to reconstruct them using both left and right context.", "zh": "BERT 遮盖部分令牌，并利用左右上下文重建它们。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["bert", "language-models"]
+      }
+    ],
+    "ai100-2018-gpt": [
+      {
+        "question": { "en": "What prediction task drives GPT-style pre-training?", "zh": "GPT 式预训练主要依靠什么预测任务？" },
+        "options": [
+          { "en": "Predicting the next token", "zh": "预测下一个令牌" },
+          { "en": "Finding a protein bond angle only", "zh": "只寻找蛋白质键角" },
+          { "en": "Voting among nearby points", "zh": "让邻近点投票" },
+          { "en": "Choosing a fixed database key", "zh": "选择固定数据库键" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "GPT uses a decoder transformer trained to continue text sequences.", "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["gpt", "language-models"]
+      }
+    ],
+    "ai100-2020-alphafold2": [
+      {
+        "question": { "en": "What problem did AlphaFold2 transform?", "zh": "AlphaFold2 改变了什么问题？" },
+        "options": [
+          { "en": "Protein structure prediction", "zh": "蛋白质结构预测" },
+          { "en": "Chatbot small talk only", "zh": "只有聊天机器人闲聊" },
+          { "en": "Spreadsheet formatting", "zh": "电子表格格式设置" },
+          { "en": "Theorem clause ordering only", "zh": "只有定理子句排序" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features.", "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["alphafold", "ai-for-science"]
+      }
+    ],
+    "ai100-2021-clip": [
+      {
+        "question": { "en": "What does CLIP learn to match?", "zh": "CLIP 学习匹配什么？" },
+        "options": [
+          { "en": "Images and natural-language text", "zh": "图像和自然语言文本" },
+          { "en": "Only chess positions", "zh": "只有棋类局面" },
+          { "en": "Only theorem clauses", "zh": "只有定理子句" },
+          { "en": "Only audio waveforms", "zh": "只有音频波形" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "CLIP uses contrastive learning so matching images and captions are close in embedding space.", "zh": "CLIP 通过对比学习让匹配图像和文字说明在嵌入空间中靠近。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["clip", "multimodal"]
+      }
+    ],
+    "ai100-2021-dalle": [
+      {
+        "question": { "en": "What does DALL-E generate from a text prompt?", "zh": "DALL-E 根据文本提示生成什么？" },
+        "options": [
+          { "en": "Images", "zh": "图像" },
+          { "en": "Only theorem proofs", "zh": "只有定理证明" },
+          { "en": "Only database indexes", "zh": "只有数据库索引" },
+          { "en": "Only Go endgames", "zh": "只有围棋残局" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "DALL-E showed how language-conditioned models could synthesize visual scenes.", "zh": "DALL-E 展示了语言条件模型如何合成视觉场景。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["dalle", "text-to-image"]
+      }
+    ],
+    "ai100-2022-stable-diffusion": [
+      {
+        "question": { "en": "Where does Stable Diffusion perform most of its denoising?", "zh": "Stable Diffusion 主要在哪里执行去噪？" },
+        "options": [
+          { "en": "In a compressed latent space", "zh": "在压缩潜空间中" },
+          { "en": "Only on a chess board", "zh": "只在棋盘上" },
+          { "en": "Inside a theorem database", "zh": "在定理数据库中" },
+          { "en": "Only in a spreadsheet row", "zh": "只在电子表格行中" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Latent diffusion denoises compact image representations under text guidance.", "zh": "潜扩散在文本引导下对压缩图像表示进行去噪。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["diffusion", "text-to-image"]
+      }
+    ],
+    "ai100-2023-segment-anything": [
+      {
+        "question": { "en": "How can users guide Segment Anything?", "zh": "用户如何引导 Segment Anything？" },
+        "options": [
+          { "en": "With prompts such as points or boxes", "zh": "用点或框等提示" },
+          { "en": "Only with a hidden chess score", "zh": "只用隐藏棋类分数" },
+          { "en": "Only by changing a protein sequence", "zh": "只通过改变蛋白质序列" },
+          { "en": "Only by deleting the image", "zh": "只通过删除图像" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "SAM uses point, box, or mask prompts to produce segmentation masks from reusable image features.", "zh": "SAM 使用点、框或掩码提示，根据可复用图像特征生成分割掩码。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["segment-anything", "vision"]
+      }
     ]
   }
 };

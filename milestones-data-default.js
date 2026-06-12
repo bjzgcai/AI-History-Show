@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-12 20:59
+// 生成时间: 2026-06-12 21:55
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -34005,6 +34005,4200 @@ const milestones = [
         "tags": [
           "vision-transformer",
           "attention"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-1997-lstm",
+    "year": 1997,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "LSTM",
+      "zh": "长短期记忆网络"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Technical University of Munich",
+        "zh": "慕尼黑工业大学"
+      },
+      "country": {
+        "en": "Munich, Germany",
+        "zh": "德国慕尼黑"
+      },
+      "coordinates": [
+        48.1496,
+        11.5677
+      ]
+    },
+    "description": {
+      "en": "<p>Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs.</p>",
+      "zh": "<p>塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Sepp Hochreiter",
+          "zh": "塞普·霍赫赖特"
+        },
+        "role": {
+          "en": "Co-author of LSTM",
+          "zh": "LSTM 共同作者"
+        },
+        "avatar": "resources/images/figures/sepp-hochreiter.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Juergen Schmidhuber",
+          "zh": "尤尔根·施密德胡伯"
+        },
+        "role": {
+          "en": "Co-author of LSTM",
+          "zh": "LSTM 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Long short-term memory\"",
+      "zh": "\"长短期记忆\""
+    },
+    "quoteAttribution": {
+      "en": "《Long Short-Term Memory》, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+      "zh": "《长短期记忆》, 塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Long Short-Term Memory",
+        "zh": "长短期记忆"
+      },
+      "workAuthors": {
+        "en": "Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+        "zh": "塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs.",
+          "zh": "塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+          "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat LSTM as the recurrent architecture that made long-range sequence learning practical before attention became dominant. Its long-term legacy is the gated-memory pattern that shaped speech, handwriting, translation, and early neural language systems.",
+          "zh": "专家通常把 LSTM 视为注意力机制占据主导前，使长程序列学习变得实用的循环架构。它的长期影响在于门控记忆模式塑造了语音、手写识别、翻译和早期神经语言系统。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/sepp-hochreiter.jpg",
+        "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/sepp-hochreiter.jpg": {
+          "caption": {
+            "en": "Sepp Hochreiter portrait",
+            "zh": "塞普·霍赫赖特肖像"
+          },
+          "subcaption": {
+            "en": "LSTM co-author",
+            "zh": "LSTM 共同作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/sepp-hochreiter.jpg",
+          "sourceUrl": "resources/images/figures/sepp-hochreiter.jpg",
+          "originalImageUrl": "resources/images/figures/sepp-hochreiter.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg": {
+          "caption": {
+            "en": "LSTM gated memory cell",
+            "zh": "LSTM 门控记忆单元"
+          },
+          "subcaption": {
+            "en": "Original local explainer of gated sequence memory.",
+            "zh": "关于门控序列记忆的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Neural Computation",
+            "zh": "《Neural Computation》"
+          },
+          "source": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "originalImageUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Gated recurrent memory",
+        "zh": "门控循环记忆"
+      },
+      "artifact": {
+        "en": "LSTM cell",
+        "zh": "LSTM 单元"
+      },
+      "material": {
+        "en": "Neural Computation paper",
+        "zh": "《Neural Computation》论文"
+      },
+      "demo": {
+        "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+        "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+      },
+      "visual": "lstm",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Memory Cell",
+            "zh": "记忆单元"
+          },
+          "text": {
+            "en": "A persistent state carries sequence information.",
+            "zh": "持久状态携带序列信息。"
+          }
+        },
+        {
+          "label": {
+            "en": "Gates",
+            "zh": "门控机制"
+          },
+          "text": {
+            "en": "Learned gates decide what to write, keep, or expose.",
+            "zh": "学习到的门决定写入、保留或输出哪些信息。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "RNN",
+          "zh": "RNN"
+        },
+        {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Germany",
+          "zh": "德国"
+        },
+        {
+          "en": "Switzerland",
+          "zh": "瑞士"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Sequence input",
+          "zh": "Sequence input"
+        },
+        {
+          "en": "Gated memory cell",
+          "zh": "Gated memory cell"
+        },
+        {
+          "en": "Long-range state",
+          "zh": "Long-range state"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "MIT Press",
+            "zh": "麻省理工学院出版社"
+          },
+          "title": {
+            "en": "Long Short-Term Memory",
+            "zh": "长短期记忆"
+          },
+          "description": {
+            "en": "Primary paper record for the LSTM architecture.",
+            "zh": "LSTM 架构的主论文记录。"
+          },
+          "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "source": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open DOI page",
+            "zh": "打开 DOI 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Long Short-Term Memory",
+            "zh": "《长短期记忆》"
+          },
+          "url": "https://doi.org/10.1162/neco.1997.9.8.1735"
+        },
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Author-hosted LSTM paper PDF",
+            "zh": "作者托管的 LSTM 论文 PDF"
+          },
+          "url": "https://www.bioinf.jku.at/publications/older/2604.pdf"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "LSTM overview",
+            "zh": "LSTM 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Sepp Hochreiter profile",
+            "zh": "塞普·霍赫赖特个人资料"
+          },
+          "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg"
+    },
+    "quiz": {
+      "id": "ai100-1997-lstm-quiz-1",
+      "question": {
+        "en": "What does an LSTM cell use to preserve long-range sequence information?",
+        "zh": "LSTM 单元用什么保留长程序列信息？"
+      },
+      "options": [
+        {
+          "en": "Gates and a persistent memory state",
+          "zh": "门控和持久记忆状态"
+        },
+        {
+          "en": "Only a nearest-neighbor vote",
+          "zh": "只有最近邻投票"
+        },
+        {
+          "en": "A fixed chess opening",
+          "zh": "固定棋类开局"
+        },
+        {
+          "en": "A chemical mass spectrum",
+          "zh": "化学质谱"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "LSTM regulates memory with gates that decide what to write, keep, and expose.",
+        "zh": "LSTM 用门决定写入、保留和输出哪些记忆。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "lstm",
+        "sequence-modeling"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-1997-lstm-quiz-1",
+        "question": {
+          "en": "What does an LSTM cell use to preserve long-range sequence information?",
+          "zh": "LSTM 单元用什么保留长程序列信息？"
+        },
+        "options": [
+          {
+            "en": "Gates and a persistent memory state",
+            "zh": "门控和持久记忆状态"
+          },
+          {
+            "en": "Only a nearest-neighbor vote",
+            "zh": "只有最近邻投票"
+          },
+          {
+            "en": "A fixed chess opening",
+            "zh": "固定棋类开局"
+          },
+          {
+            "en": "A chemical mass spectrum",
+            "zh": "化学质谱"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "LSTM regulates memory with gates that decide what to write, keep, and expose.",
+          "zh": "LSTM 用门决定写入、保留和输出哪些记忆。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "lstm",
+          "sequence-modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2014-gan",
+    "year": 2014,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Generative Adversarial Network",
+      "zh": "生成对抗网络"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Montreal",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Montreal, Canada",
+        "zh": "加拿大蒙特利尔"
+      },
+      "coordinates": [
+        45.5056,
+        -73.6139
+      ]
+    },
+    "description": {
+      "en": "<p>Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI.</p>",
+      "zh": "<p>伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Ian Goodfellow",
+          "zh": "伊恩·古德费洛"
+        },
+        "role": {
+          "en": "Lead author of the GAN paper",
+          "zh": "GAN 论文主要作者"
+        },
+        "avatar": "resources/images/figures/ian-goodfellow.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥"
+        },
+        "role": {
+          "en": "Co-author and advisor",
+          "zh": "共同作者与导师"
+        },
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Generative adversarial nets\"",
+      "zh": "\"生成对抗网络\""
+    },
+    "quoteAttribution": {
+      "en": "《Generative Adversarial Nets》, Ian Goodfellow et al., NeurIPS, 2014",
+      "zh": "《生成对抗网络》, 伊恩·古德费洛等，NeurIPS，2014"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Generative Adversarial Nets",
+        "zh": "生成对抗网络"
+      },
+      "workAuthors": {
+        "en": "Ian Goodfellow et al., NeurIPS, 2014",
+        "zh": "伊恩·古德费洛等，NeurIPS，2014"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1406.2661"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI.",
+          "zh": "伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+          "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat GANs as a defining breakthrough in neural generative modeling, even though diffusion models later became preferred for many deployments. Their long-term legacy is adversarial training as a reusable idea for synthesis, domain transfer, and representation learning.",
+          "zh": "专家通常把 GAN 视为神经生成式建模的标志性突破，尽管扩散模型后来在许多部署中更受青睐。它的长期影响在于对抗训练成为合成、领域迁移和表示学习中可复用的思想。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/ian-goodfellow.jpg",
+        "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/ian-goodfellow.jpg": {
+          "caption": {
+            "en": "Ian Goodfellow portrait",
+            "zh": "伊恩·古德费洛肖像"
+          },
+          "subcaption": {
+            "en": "GAN lead author",
+            "zh": "GAN 主要作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/ian-goodfellow.jpg",
+          "sourceUrl": "resources/images/figures/ian-goodfellow.jpg",
+          "originalImageUrl": "resources/images/figures/ian-goodfellow.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg": {
+          "caption": {
+            "en": "GAN adversarial loop",
+            "zh": "GAN 对抗循环"
+          },
+          "subcaption": {
+            "en": "Original local explainer of generator-discriminator training.",
+            "zh": "关于生成器-判别器训练的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "NeurIPS",
+            "zh": "NeurIPS"
+          },
+          "source": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "originalImageUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Adversarial generator-discriminator training",
+        "zh": "生成器-判别器对抗训练"
+      },
+      "artifact": {
+        "en": "GAN framework",
+        "zh": "GAN 框架"
+      },
+      "material": {
+        "en": "NeurIPS paper",
+        "zh": "NeurIPS 论文"
+      },
+      "demo": {
+        "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+        "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+      },
+      "visual": "gan",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Generator",
+            "zh": "生成器"
+          },
+          "text": {
+            "en": "A model maps noise to candidate samples.",
+            "zh": "模型把噪声映射为候选样本。"
+          }
+        },
+        {
+          "label": {
+            "en": "Discriminator",
+            "zh": "判别器"
+          },
+          "text": {
+            "en": "A classifier provides adversarial feedback.",
+            "zh": "分类器提供对抗反馈。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "Diffusion models",
+          "zh": "扩散模型"
+        },
+        {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Noise vector",
+          "zh": "Noise vector"
+        },
+        {
+          "en": "Generator",
+          "zh": "Generator"
+        },
+        {
+          "en": "Discriminator feedback",
+          "zh": "Discriminator feedback"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Generative Adversarial Nets",
+            "zh": "生成对抗网络"
+          },
+          "description": {
+            "en": "Open paper for the original GAN framework.",
+            "zh": "原始 GAN 框架的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1406.2661",
+          "source": "https://arxiv.org/abs/1406.2661",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Generative Adversarial Nets",
+            "zh": "《生成对抗网络》"
+          },
+          "url": "https://arxiv.org/abs/1406.2661"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "NeurIPS paper page",
+            "zh": "NeurIPS 论文页面"
+          },
+          "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Goodfellow GAN tutorial",
+            "zh": "古德费洛 GAN 教程"
+          },
+          "url": "https://arxiv.org/abs/1701.00160"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Ian Goodfellow profile",
+            "zh": "伊恩·古德费洛个人网站"
+          },
+          "url": "https://www.iangoodfellow.com/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg"
+    },
+    "quiz": {
+      "id": "ai100-2014-gan-quiz-1",
+      "question": {
+        "en": "What are the two main players in a GAN?",
+        "zh": "GAN 中的两个主要参与者是什么？"
+      },
+      "options": [
+        {
+          "en": "A generator and a discriminator",
+          "zh": "生成器和判别器"
+        },
+        {
+          "en": "A theorem prover and a Go board",
+          "zh": "定理证明器和围棋棋盘"
+        },
+        {
+          "en": "A database row and a spreadsheet cell",
+          "zh": "数据库行和电子表格单元"
+        },
+        {
+          "en": "A parser and a printer only",
+          "zh": "只有解析器和打印机"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "The generator makes samples while the discriminator learns to distinguish real from generated data.",
+        "zh": "生成器制造样本，判别器学习区分真实数据和生成数据。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "gan",
+        "generative-ai"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2014-gan-quiz-1",
+        "question": {
+          "en": "What are the two main players in a GAN?",
+          "zh": "GAN 中的两个主要参与者是什么？"
+        },
+        "options": [
+          {
+            "en": "A generator and a discriminator",
+            "zh": "生成器和判别器"
+          },
+          {
+            "en": "A theorem prover and a Go board",
+            "zh": "定理证明器和围棋棋盘"
+          },
+          {
+            "en": "A database row and a spreadsheet cell",
+            "zh": "数据库行和电子表格单元"
+          },
+          {
+            "en": "A parser and a printer only",
+            "zh": "只有解析器和打印机"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "The generator makes samples while the discriminator learns to distinguish real from generated data.",
+          "zh": "生成器制造样本，判别器学习区分真实数据和生成数据。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "gan",
+          "generative-ai"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2014-neural-machine-translation-attention",
+    "year": 2014,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Neural Machine Translation with Attention",
+      "zh": "带注意力机制的神经机器翻译"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "University of Montreal",
+        "zh": "蒙特利尔大学"
+      },
+      "country": {
+        "en": "Montreal, Canada",
+        "zh": "加拿大蒙特利尔"
+      },
+      "coordinates": [
+        45.5056,
+        -73.6139
+      ]
+    },
+    "description": {
+      "en": "<p>Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. This made alignment a learned, differentiable part of sequence-to-sequence modeling.</p>",
+      "zh": "<p>兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Yoshua Bengio",
+          "zh": "约书亚·本吉奥"
+        },
+        "role": {
+          "en": "Co-author of the neural attention paper",
+          "zh": "神经注意力论文共同作者"
+        },
+        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Kyunghyun Cho",
+          "zh": "赵京贤"
+        },
+        "role": {
+          "en": "Co-author of the neural attention paper",
+          "zh": "神经注意力论文共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Neural machine translation by jointly learning to align and translate\"",
+      "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
+    },
+    "quoteAttribution": {
+      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+      "zh": "《通过联合学习对齐与翻译实现神经机器翻译》, 兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+      },
+      "workAuthors": {
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+        "zh": "兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1409.0473"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. This made alignment a learned, differentiable part of sequence-to-sequence modeling.",
+          "zh": "兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+          "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat neural attention for translation as the bridge from recurrent encoder-decoder systems to transformer-style architectures. Its long-term legacy is making learned token-to-token relevance a central operation in language, vision, and multimodal AI.",
+          "zh": "专家通常把神经翻译中的注意力视为从循环编码器-解码器系统走向 Transformer 式架构的桥梁。它的长期影响在于让学习得到的令牌相关性成为语言、视觉和多模态 AI 的核心操作。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/geoffrey-hinton.jpg",
+        "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/geoffrey-hinton.jpg": {
+          "caption": {
+            "en": "Montreal deep learning research context",
+            "zh": "蒙特利尔深度学习研究背景图"
+          },
+          "subcaption": {
+            "en": "Institutional context for neural attention research",
+            "zh": "神经注意力研究的机构背景"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/geoffrey-hinton.jpg",
+          "sourceUrl": "resources/images/figures/geoffrey-hinton.jpg",
+          "originalImageUrl": "resources/images/figures/geoffrey-hinton.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
+          "caption": {
+            "en": "Attention alignment map",
+            "zh": "注意力对齐图"
+          },
+          "subcaption": {
+            "en": "Original local explainer of source-token attention.",
+            "zh": "关于源令牌注意力的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "ICLR",
+            "zh": "ICLR"
+          },
+          "source": "https://arxiv.org/abs/1409.0473",
+          "sourceUrl": "https://arxiv.org/abs/1409.0473",
+          "originalImageUrl": "https://arxiv.org/abs/1409.0473",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural machine translation",
+        "zh": "神经机器翻译"
+      },
+      "method": {
+        "en": "Differentiable alignment attention",
+        "zh": "可微分对齐注意力"
+      },
+      "artifact": {
+        "en": "Additive attention mechanism",
+        "zh": "加性注意力机制"
+      },
+      "material": {
+        "en": "ICLR paper",
+        "zh": "ICLR 论文"
+      },
+      "demo": {
+        "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+        "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+      },
+      "visual": "attentionSeq",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Alignment",
+            "zh": "对齐"
+          },
+          "text": {
+            "en": "The model learns which source words matter for a target word.",
+            "zh": "模型学习目标词对应哪些源词。"
+          }
+        },
+        {
+          "label": {
+            "en": "Context Vector",
+            "zh": "上下文向量"
+          },
+          "text": {
+            "en": "Weighted source states guide decoding.",
+            "zh": "加权源状态指导解码。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "LSTM",
+          "zh": "LSTM"
+        },
+        {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        {
+          "en": "BERT",
+          "zh": "BERT"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Encoder states",
+          "zh": "Encoder states"
+        },
+        {
+          "en": "Attention weights",
+          "zh": "Attention weights"
+        },
+        {
+          "en": "Decoder word",
+          "zh": "Decoder word"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+            "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+          },
+          "description": {
+            "en": "Open paper introducing learned attention for neural translation.",
+            "zh": "介绍神经翻译学习型注意力的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1409.0473",
+          "source": "https://arxiv.org/abs/1409.0473",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+            "zh": "《通过联合学习对齐与翻译实现神经机器翻译》"
+          },
+          "url": "https://arxiv.org/abs/1409.0473"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICLR 2015 paper page",
+            "zh": "ICLR 2015 论文页面"
+          },
+          "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "Attention mechanism overview",
+            "zh": "注意力机制概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Yoshua Bengio lab profile",
+            "zh": "约书亚·本吉奥 Mila 资料"
+          },
+          "url": "https://mila.quebec/en/person/yoshua-bengio/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg"
+    },
+    "quiz": {
+      "id": "ai100-2014-neural-machine-translation-attention-quiz-1",
+      "question": {
+        "en": "What did neural attention add to machine translation?",
+        "zh": "神经注意力为机器翻译加入了什么？"
+      },
+      "options": [
+        {
+          "en": "Learned alignment between source and target words",
+          "zh": "源词与目标词之间的学习型对齐"
+        },
+        {
+          "en": "A fixed list of chess moves",
+          "zh": "固定棋步列表"
+        },
+        {
+          "en": "Only image denoising",
+          "zh": "只有图像去噪"
+        },
+        {
+          "en": "A chemical rule database",
+          "zh": "化学规则数据库"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Attention lets the decoder weight source positions differently for each target word.",
+        "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "attention",
+        "translation"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2014-neural-machine-translation-attention-quiz-1",
+        "question": {
+          "en": "What did neural attention add to machine translation?",
+          "zh": "神经注意力为机器翻译加入了什么？"
+        },
+        "options": [
+          {
+            "en": "Learned alignment between source and target words",
+            "zh": "源词与目标词之间的学习型对齐"
+          },
+          {
+            "en": "A fixed list of chess moves",
+            "zh": "固定棋步列表"
+          },
+          {
+            "en": "Only image denoising",
+            "zh": "只有图像去噪"
+          },
+          {
+            "en": "A chemical rule database",
+            "zh": "化学规则数据库"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Attention lets the decoder weight source positions differently for each target word.",
+          "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "attention",
+          "translation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2018-bert",
+    "year": 2018,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "BERT",
+      "zh": "BERT"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Google",
+        "zh": "Google"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "en": "<p>Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. It made pre-training then fine-tuning a dominant recipe for natural language understanding.</p>",
+      "zh": "<p>雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jacob Devlin",
+          "zh": "雅各布·德夫林"
+        },
+        "role": {
+          "en": "Lead author of BERT",
+          "zh": "BERT 主要作者"
+        },
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Pre-training of deep bidirectional transformers for language understanding\"",
+      "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
+    },
+    "quoteAttribution": {
+      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al., NAACL, 2019",
+      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，NAACL，2019"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+      },
+      "workAuthors": {
+        "en": "Jacob Devlin et al., NAACL, 2019",
+        "zh": "雅各布·德夫林等，NAACL，2019"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1810.04805"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. It made pre-training then fine-tuning a dominant recipe for natural language understanding.",
+          "zh": "雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction.",
+          "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat BERT as the milestone that standardized transformer pre-training for language understanding. Its long-term legacy is the encoder foundation-model pattern used for search, classification, extraction, retrieval, and domain adaptation.",
+          "zh": "专家通常把 BERT 视为把 Transformer 预训练标准化用于语言理解的里程碑。它的长期影响在于编码器基础模型模式被用于搜索、分类、抽取、检索和领域适配。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/jacob-devlin.jpg",
+        "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/jacob-devlin.jpg": {
+          "caption": {
+            "en": "Jacob Devlin portrait",
+            "zh": "雅各布·德夫林肖像"
+          },
+          "subcaption": {
+            "en": "BERT lead author",
+            "zh": "BERT 主要作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/jacob-devlin.jpg",
+          "sourceUrl": "resources/images/figures/jacob-devlin.jpg",
+          "originalImageUrl": "resources/images/figures/jacob-devlin.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg": {
+          "caption": {
+            "en": "BERT masked language modeling",
+            "zh": "BERT 掩码语言建模"
+          },
+          "subcaption": {
+            "en": "Original local explainer of bidirectional pre-training.",
+            "zh": "关于双向预训练的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "NAACL",
+            "zh": "NAACL"
+          },
+          "source": "https://aclanthology.org/N19-1423/",
+          "sourceUrl": "https://aclanthology.org/N19-1423/",
+          "originalImageUrl": "https://aclanthology.org/N19-1423/",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Natural language understanding",
+        "zh": "自然语言理解"
+      },
+      "method": {
+        "en": "Masked bidirectional transformer pre-training",
+        "zh": "掩码双向 Transformer 预训练"
+      },
+      "artifact": {
+        "en": "BERT model family",
+        "zh": "BERT 模型族"
+      },
+      "material": {
+        "en": "NAACL paper and Google release",
+        "zh": "NAACL 论文与 Google 发布材料"
+      },
+      "demo": {
+        "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction.",
+        "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
+      },
+      "visual": "bert",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Masked LM",
+            "zh": "掩码语言模型"
+          },
+          "text": {
+            "en": "Random tokens are hidden and reconstructed.",
+            "zh": "随机令牌被遮盖并重建。"
+          }
+        },
+        {
+          "label": {
+            "en": "Fine-tuning",
+            "zh": "微调"
+          },
+          "text": {
+            "en": "One pre-trained encoder adapts to many tasks.",
+            "zh": "一个预训练编码器适配多种任务。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        {
+          "en": "GPT",
+          "zh": "GPT"
+        },
+        {
+          "en": "Word2Vec",
+          "zh": "Word2Vec"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Mask tokens",
+          "zh": "Mask tokens"
+        },
+        {
+          "en": "Bidirectional encoder",
+          "zh": "Bidirectional encoder"
+        },
+        {
+          "en": "Task head",
+          "zh": "Task head"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+          },
+          "description": {
+            "en": "Open paper for BERT pre-training.",
+            "zh": "BERT 预训练的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1810.04805",
+          "source": "https://arxiv.org/abs/1810.04805",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "BERT",
+            "zh": "《BERT》"
+          },
+          "url": "https://arxiv.org/abs/1810.04805"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ACL Anthology BERT paper",
+            "zh": "ACL Anthology BERT 论文"
+          },
+          "url": "https://aclanthology.org/N19-1423/"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "Google Research BERT repository",
+            "zh": "Google Research BERT 代码仓库"
+          },
+          "url": "https://github.com/google-research/bert"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "Google AI BERT blog post",
+            "zh": "Google AI BERT 博客"
+          },
+          "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg"
+    },
+    "quiz": {
+      "id": "ai100-2018-bert-quiz-1",
+      "question": {
+        "en": "How is BERT mainly pre-trained?",
+        "zh": "BERT 主要如何预训练？"
+      },
+      "options": [
+        {
+          "en": "By predicting masked words from bidirectional context",
+          "zh": "从双向上下文预测被遮盖的词"
+        },
+        {
+          "en": "By sorting protein atoms only",
+          "zh": "只给蛋白质原子排序"
+        },
+        {
+          "en": "By pruning a chess search tree",
+          "zh": "剪枝棋类搜索树"
+        },
+        {
+          "en": "By counting only edge gradients",
+          "zh": "只统计边缘梯度"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "BERT hides some tokens and learns to reconstruct them using both left and right context.",
+        "zh": "BERT 遮盖部分令牌，并利用左右上下文重建它们。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "bert",
+        "language-models"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2018-bert-quiz-1",
+        "question": {
+          "en": "How is BERT mainly pre-trained?",
+          "zh": "BERT 主要如何预训练？"
+        },
+        "options": [
+          {
+            "en": "By predicting masked words from bidirectional context",
+            "zh": "从双向上下文预测被遮盖的词"
+          },
+          {
+            "en": "By sorting protein atoms only",
+            "zh": "只给蛋白质原子排序"
+          },
+          {
+            "en": "By pruning a chess search tree",
+            "zh": "剪枝棋类搜索树"
+          },
+          {
+            "en": "By counting only edge gradients",
+            "zh": "只统计边缘梯度"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "BERT hides some tokens and learns to reconstruct them using both left and right context.",
+          "zh": "BERT 遮盖部分令牌，并利用左右上下文重建它们。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "bert",
+          "language-models"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2018-gpt",
+    "year": 2018,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "GPT",
+      "zh": "GPT"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "country": {
+        "en": "San Francisco, United States",
+        "zh": "美国旧金山"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "en": "<p>Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.</p>",
+      "zh": "<p>亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德"
+        },
+        "role": {
+          "en": "Lead author of the GPT paper",
+          "zh": "GPT 论文主要作者"
+        },
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Improving language understanding by generative pre-training\"",
+      "zh": "\"通过生成式预训练改进语言理解\""
+    },
+    "quoteAttribution": {
+      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford et al., OpenAI, 2018",
+      "zh": "《通过生成式预训练改进语言理解》, 亚历克·拉德福德等，OpenAI，2018"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Improving Language Understanding by Generative Pre-Training",
+        "zh": "通过生成式预训练改进语言理解"
+      },
+      "workAuthors": {
+        "en": "Alec Radford et al., OpenAI, 2018",
+        "zh": "亚历克·拉德福德等，OpenAI，2018"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.",
+          "zh": "亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks.",
+          "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models. Its long-term legacy is the generative pre-training recipe that turned next-token prediction into a broad interface for language tasks.",
+          "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/alec-radford.png",
+        "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/alec-radford.png": {
+          "caption": {
+            "en": "Alec Radford portrait",
+            "zh": "亚历克·拉德福德肖像"
+          },
+          "subcaption": {
+            "en": "GPT lead author",
+            "zh": "GPT 主要作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/alec-radford.png",
+          "sourceUrl": "resources/images/figures/alec-radford.png",
+          "originalImageUrl": "resources/images/figures/alec-radford.png",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg": {
+          "caption": {
+            "en": "GPT next-token pre-training",
+            "zh": "GPT 下一个令牌预训练"
+          },
+          "subcaption": {
+            "en": "Original local explainer of decoder-only generative pre-training.",
+            "zh": "关于解码器式生成预训练的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "OpenAI",
+            "zh": "OpenAI"
+          },
+          "source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "originalImageUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Large language models",
+        "zh": "大语言模型"
+      },
+      "method": {
+        "en": "Decoder-only generative pre-training",
+        "zh": "解码器式生成预训练"
+      },
+      "artifact": {
+        "en": "Generative Pre-trained Transformer",
+        "zh": "生成式预训练 Transformer"
+      },
+      "material": {
+        "en": "OpenAI technical paper",
+        "zh": "OpenAI 技术论文"
+      },
+      "demo": {
+        "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks.",
+        "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
+      },
+      "visual": "gpt",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Next-token Prediction",
+            "zh": "下一个令牌预测"
+          },
+          "text": {
+            "en": "The model learns by predicting continuation.",
+            "zh": "模型通过预测后续内容来学习。"
+          }
+        },
+        {
+          "label": {
+            "en": "Transfer",
+            "zh": "迁移"
+          },
+          "text": {
+            "en": "Task behavior emerges from pre-trained representations and examples.",
+            "zh": "任务行为来自预训练表示和样例。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Text corpus",
+          "zh": "Text corpus"
+        },
+        {
+          "en": "Decoder transformer",
+          "zh": "Decoder transformer"
+        },
+        {
+          "en": "Task prompt",
+          "zh": "Task prompt"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenAI",
+            "zh": "OpenAI"
+          },
+          "title": {
+            "en": "Improving Language Understanding by Generative Pre-Training",
+            "zh": "通过生成式预训练改进语言理解"
+          },
+          "description": {
+            "en": "OpenAI technical paper describing the first GPT model.",
+            "zh": "描述第一代 GPT 模型的 OpenAI 技术论文。"
+          },
+          "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open PDF",
+            "zh": "打开 PDF"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "label": {
+            "en": "Improving Language Understanding by Generative Pre-Training",
+            "zh": "《通过生成式预训练改进语言理解》"
+          },
+          "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "OpenAI language unsupervised page",
+            "zh": "OpenAI 无监督语言页面"
+          },
+          "url": "https://openai.com/index/language-unsupervised/"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "GPT model overview",
+            "zh": "GPT 模型概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer"
+        },
+        {
+          "type": {
+            "en": "People",
+            "zh": "人物"
+          },
+          "label": {
+            "en": "Alec Radford research context",
+            "zh": "亚历克·拉德福德研究背景"
+          },
+          "url": "https://openai.com/research/"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg"
+    },
+    "quiz": {
+      "id": "ai100-2018-gpt-quiz-1",
+      "question": {
+        "en": "What prediction task drives GPT-style pre-training?",
+        "zh": "GPT 式预训练主要依靠什么预测任务？"
+      },
+      "options": [
+        {
+          "en": "Predicting the next token",
+          "zh": "预测下一个令牌"
+        },
+        {
+          "en": "Finding a protein bond angle only",
+          "zh": "只寻找蛋白质键角"
+        },
+        {
+          "en": "Voting among nearby points",
+          "zh": "让邻近点投票"
+        },
+        {
+          "en": "Choosing a fixed database key",
+          "zh": "选择固定数据库键"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "GPT uses a decoder transformer trained to continue text sequences.",
+        "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "gpt",
+        "language-models"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2018-gpt-quiz-1",
+        "question": {
+          "en": "What prediction task drives GPT-style pre-training?",
+          "zh": "GPT 式预训练主要依靠什么预测任务？"
+        },
+        "options": [
+          {
+            "en": "Predicting the next token",
+            "zh": "预测下一个令牌"
+          },
+          {
+            "en": "Finding a protein bond angle only",
+            "zh": "只寻找蛋白质键角"
+          },
+          {
+            "en": "Voting among nearby points",
+            "zh": "让邻近点投票"
+          },
+          {
+            "en": "Choosing a fixed database key",
+            "zh": "选择固定数据库键"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "GPT uses a decoder transformer trained to continue text sequences.",
+          "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "gpt",
+          "language-models"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2020-alphafold2",
+    "year": 2020,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "AlphaFold2",
+      "zh": "AlphaFold2"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "DeepMind",
+        "zh": "DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国伦敦"
+      },
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "en": "<p>DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. It showed how deep learning could transform a long-standing scientific problem.</p>",
+      "zh": "<p>DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John Jumper",
+          "zh": "约翰·江珀"
+        },
+        "role": {
+          "en": "AlphaFold2 lead researcher",
+          "zh": "AlphaFold2 主要研究者"
+        },
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Demis Hassabis",
+          "zh": "德米斯·哈萨比斯"
+        },
+        "role": {
+          "en": "DeepMind co-founder and AlphaFold leader",
+          "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
+        },
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Highly accurate protein structure prediction with AlphaFold\"",
+      "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
+    },
+    "quoteAttribution": {
+      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al., Nature, 2021",
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，《Nature》，2021"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Highly accurate protein structure prediction with AlphaFold",
+        "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+      },
+      "workAuthors": {
+        "en": "John Jumper et al., Nature, 2021",
+        "zh": "约翰·江珀等，《Nature》，2021"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. It showed how deep learning could transform a long-standing scientific problem.",
+          "zh": "DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+          "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat AlphaFold2 as a landmark in scientific machine learning because it changed what biologists could routinely look up and test. Its long-term legacy is the expectation that AI systems can act as infrastructure for discovery, not only as benchmark models.",
+          "zh": "专家通常把 AlphaFold2 视为科学机器学习的标志性成果，因为它改变了生物学家能够常规查询和检验的内容。它的长期影响在于让人们期待 AI 系统不仅是基准模型，也能成为发现基础设施。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+        "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg"
+      ],
+      "imageMeta": {
+        "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
+          "caption": {
+            "en": "John Jumper portrait",
+            "zh": "约翰·江珀肖像"
+          },
+          "subcaption": {
+            "en": "AlphaFold2 lead researcher",
+            "zh": "AlphaFold2 主要研究者"
+          },
+          "sourceName": {
+            "en": "Vanderbilt University",
+            "zh": "范德堡大学"
+          },
+          "source": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+          "sourceUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+          "originalImageUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+          "license": {
+            "en": "Vanderbilt University image; reuse rights not stated.",
+            "zh": "范德堡大学图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
+          "caption": {
+            "en": "AlphaFold2 structure pipeline",
+            "zh": "AlphaFold2 结构预测流程"
+          },
+          "subcaption": {
+            "en": "Original local explainer of sequence-to-structure prediction.",
+            "zh": "关于从序列到结构预测的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Nature",
+            "zh": "《Nature》"
+          },
+          "source": "https://doi.org/10.1038/s41586-021-03819-2",
+          "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2",
+          "originalImageUrl": "https://doi.org/10.1038/s41586-021-03819-2",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI for Science",
+        "zh": "AI for Science"
+      },
+      "method": {
+        "en": "Attention-based protein structure prediction",
+        "zh": "基于注意力的蛋白质结构预测"
+      },
+      "artifact": {
+        "en": "AlphaFold2 system",
+        "zh": "AlphaFold2 系统"
+      },
+      "material": {
+        "en": "Nature paper and AlphaFold Protein Structure Database",
+        "zh": "《Nature》论文与 AlphaFold 蛋白质结构数据库"
+      },
+      "demo": {
+        "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+        "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+      },
+      "visual": "alphafold",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Evolutionary Signal",
+            "zh": "进化信号"
+          },
+          "text": {
+            "en": "Related sequences provide constraints on residue pairs.",
+            "zh": "相关序列为残基对提供约束。"
+          }
+        },
+        {
+          "label": {
+            "en": "Structure Module",
+            "zh": "结构模块"
+          },
+          "text": {
+            "en": "The network refines coordinates into a 3D model.",
+            "zh": "网络把坐标优化成三维模型。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        {
+          "en": "AI for Science",
+          "zh": "AI for Science"
+        },
+        {
+          "en": "Protein structure prediction",
+          "zh": "蛋白质结构预测"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Amino-acid sequence",
+          "zh": "Amino-acid sequence"
+        },
+        {
+          "en": "Pair representation",
+          "zh": "Pair representation"
+        },
+        {
+          "en": "3D structure",
+          "zh": "3D structure"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Nature",
+            "zh": "《Nature》"
+          },
+          "title": {
+            "en": "Highly accurate protein structure prediction with AlphaFold",
+            "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+          },
+          "description": {
+            "en": "Primary Nature paper for AlphaFold2.",
+            "zh": "AlphaFold2 的 Nature 主论文。"
+          },
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "source": "https://doi.org/10.1038/s41586-021-03819-2",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open DOI page",
+            "zh": "打开 DOI 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Highly accurate protein structure prediction with AlphaFold",
+            "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》"
+          },
+          "url": "https://doi.org/10.1038/s41586-021-03819-2"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "DeepMind AlphaFold page",
+            "zh": "DeepMind AlphaFold 页面"
+          },
+          "url": "https://deepmind.google/technologies/alphafold/"
+        },
+        {
+          "type": {
+            "en": "Dataset",
+            "zh": "数据集"
+          },
+          "label": {
+            "en": "AlphaFold Protein Structure Database",
+            "zh": "AlphaFold 蛋白质结构数据库"
+          },
+          "url": "https://alphafold.ebi.ac.uk/"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "AlphaFold GitHub repository",
+            "zh": "AlphaFold GitHub 代码仓库"
+          },
+          "url": "https://github.com/google-deepmind/alphafold"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg"
+    },
+    "quiz": {
+      "id": "ai100-2020-alphafold2-quiz-1",
+      "question": {
+        "en": "What problem did AlphaFold2 transform?",
+        "zh": "AlphaFold2 改变了什么问题？"
+      },
+      "options": [
+        {
+          "en": "Protein structure prediction",
+          "zh": "蛋白质结构预测"
+        },
+        {
+          "en": "Chatbot small talk only",
+          "zh": "只有聊天机器人闲聊"
+        },
+        {
+          "en": "Spreadsheet formatting",
+          "zh": "电子表格格式设置"
+        },
+        {
+          "en": "Theorem clause ordering only",
+          "zh": "只有定理子句排序"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features.",
+        "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "alphafold",
+        "ai-for-science"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2020-alphafold2-quiz-1",
+        "question": {
+          "en": "What problem did AlphaFold2 transform?",
+          "zh": "AlphaFold2 改变了什么问题？"
+        },
+        "options": [
+          {
+            "en": "Protein structure prediction",
+            "zh": "蛋白质结构预测"
+          },
+          {
+            "en": "Chatbot small talk only",
+            "zh": "只有聊天机器人闲聊"
+          },
+          {
+            "en": "Spreadsheet formatting",
+            "zh": "电子表格格式设置"
+          },
+          {
+            "en": "Theorem clause ordering only",
+            "zh": "只有定理子句排序"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features.",
+          "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "alphafold",
+          "ai-for-science"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2021-clip",
+    "year": 2021,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "CLIP",
+      "zh": "CLIP"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "country": {
+        "en": "San Francisco, United States",
+        "zh": "美国旧金山"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>",
+      "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alec Radford",
+          "zh": "亚历克·拉德福德"
+        },
+        "role": {
+          "en": "Lead author of CLIP",
+          "zh": "CLIP 主要作者"
+        },
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Learning transferable visual models from natural language supervision\"",
+      "zh": "\"从自然语言监督中学习可迁移视觉模型\""
+    },
+    "quoteAttribution": {
+      "en": "《Learning Transferable Visual Models From Natural Language Supervision》, Alec Radford et al., ICML, 2021",
+      "zh": "《从自然语言监督中学习可迁移视觉模型》, 亚历克·拉德福德等，ICML，2021"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Learning Transferable Visual Models From Natural Language Supervision",
+        "zh": "从自然语言监督中学习可迁移视觉模型"
+      },
+      "workAuthors": {
+        "en": "Alec Radford et al., ICML, 2021",
+        "zh": "亚历克·拉德福德等，ICML，2021"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/2103.00020"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.",
+          "zh": "OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings.",
+          "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat CLIP as a key step in making web-scale language supervision useful for vision. Its long-term legacy is the shared image-text embedding pattern behind retrieval, zero-shot classification, and many text-to-image systems.",
+          "zh": "专家通常把 CLIP 视为让网页规模语言监督服务于视觉任务的关键一步。它的长期影响在于共享图文嵌入模式支撑了检索、零样本分类以及许多文生图系统。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/alec-radford.png",
+        "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg"
+      ],
+      "imageMeta": {
+        "resources/images/figures/alec-radford.png": {
+          "caption": {
+            "en": "Alec Radford portrait",
+            "zh": "亚历克·拉德福德肖像"
+          },
+          "subcaption": {
+            "en": "CLIP lead author",
+            "zh": "CLIP 主要作者"
+          },
+          "sourceName": {
+            "en": "Local project asset",
+            "zh": "本地项目素材"
+          },
+          "source": "resources/images/figures/alec-radford.png",
+          "sourceUrl": "resources/images/figures/alec-radford.png",
+          "originalImageUrl": "resources/images/figures/alec-radford.png",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg": {
+          "caption": {
+            "en": "CLIP contrastive pairs",
+            "zh": "CLIP 对比图文对"
+          },
+          "subcaption": {
+            "en": "Original local explainer of image-text contrastive learning.",
+            "zh": "关于图文对比学习的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "ICML",
+            "zh": "ICML"
+          },
+          "source": "https://proceedings.mlr.press/v139/radford21a.html",
+          "sourceUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+          "originalImageUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Multimodal learning",
+        "zh": "多模态学习"
+      },
+      "method": {
+        "en": "Image-text contrastive pre-training",
+        "zh": "图文对比预训练"
+      },
+      "artifact": {
+        "en": "CLIP model",
+        "zh": "CLIP 模型"
+      },
+      "material": {
+        "en": "ICML paper and OpenAI release",
+        "zh": "ICML 论文与 OpenAI 发布材料"
+      },
+      "demo": {
+        "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings.",
+        "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
+      },
+      "visual": "clip",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Shared Embedding",
+            "zh": "共享嵌入"
+          },
+          "text": {
+            "en": "Images and captions occupy one comparison space.",
+            "zh": "图像和文字说明进入同一个比较空间。"
+          }
+        },
+        {
+          "label": {
+            "en": "Zero-shot",
+            "zh": "零样本"
+          },
+          "text": {
+            "en": "Labels can be written as text prompts.",
+            "zh": "标签可以写成文本提示。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "GPT",
+          "zh": "GPT"
+        },
+        {
+          "en": "Vision Transformer",
+          "zh": "视觉 Transformer"
+        },
+        {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Image encoder",
+          "zh": "Image encoder"
+        },
+        {
+          "en": "Text encoder",
+          "zh": "Text encoder"
+        },
+        {
+          "en": "Contrastive match",
+          "zh": "Contrastive match"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenAI",
+            "zh": "OpenAI"
+          },
+          "title": {
+            "en": "CLIP: Connecting text and images",
+            "zh": "CLIP：连接文本与图像"
+          },
+          "description": {
+            "en": "OpenAI project page explaining CLIP and zero-shot transfer.",
+            "zh": "解释 CLIP 与零样本迁移的 OpenAI 项目页面。"
+          },
+          "url": "https://openai.com/index/clip/",
+          "source": "https://openai.com/index/clip/",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Learning Transferable Visual Models From Natural Language Supervision",
+            "zh": "《从自然语言监督中学习可迁移视觉模型》"
+          },
+          "url": "https://arxiv.org/abs/2103.00020"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICML CLIP paper page",
+            "zh": "ICML CLIP 论文页面"
+          },
+          "url": "https://proceedings.mlr.press/v139/radford21a.html"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "OpenAI CLIP blog post",
+            "zh": "OpenAI CLIP 博客"
+          },
+          "url": "https://openai.com/index/clip/"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "OpenAI CLIP GitHub repository",
+            "zh": "OpenAI CLIP 代码仓库"
+          },
+          "url": "https://github.com/openai/CLIP"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg"
+    },
+    "quiz": {
+      "id": "ai100-2021-clip-quiz-1",
+      "question": {
+        "en": "What does CLIP learn to match?",
+        "zh": "CLIP 学习匹配什么？"
+      },
+      "options": [
+        {
+          "en": "Images and natural-language text",
+          "zh": "图像和自然语言文本"
+        },
+        {
+          "en": "Only chess positions",
+          "zh": "只有棋类局面"
+        },
+        {
+          "en": "Only theorem clauses",
+          "zh": "只有定理子句"
+        },
+        {
+          "en": "Only audio waveforms",
+          "zh": "只有音频波形"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "CLIP uses contrastive learning so matching images and captions are close in embedding space.",
+        "zh": "CLIP 通过对比学习让匹配图像和文字说明在嵌入空间中靠近。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "clip",
+        "multimodal"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2021-clip-quiz-1",
+        "question": {
+          "en": "What does CLIP learn to match?",
+          "zh": "CLIP 学习匹配什么？"
+        },
+        "options": [
+          {
+            "en": "Images and natural-language text",
+            "zh": "图像和自然语言文本"
+          },
+          {
+            "en": "Only chess positions",
+            "zh": "只有棋类局面"
+          },
+          {
+            "en": "Only theorem clauses",
+            "zh": "只有定理子句"
+          },
+          {
+            "en": "Only audio waveforms",
+            "zh": "只有音频波形"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "CLIP uses contrastive learning so matching images and captions are close in embedding space.",
+          "zh": "CLIP 通过对比学习让匹配图像和文字说明在嵌入空间中靠近。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "clip",
+          "multimodal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2021-dalle",
+    "year": 2021,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "DALL-E",
+      "zh": "DALL-E"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "country": {
+        "en": "San Francisco, United States",
+        "zh": "美国旧金山"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>",
+      "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Aditya Ramesh",
+          "zh": "阿迪蒂亚·拉梅什"
+        },
+        "role": {
+          "en": "Lead author and creator of DALL-E",
+          "zh": "DALL-E 主要作者与创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Zero-shot text-to-image generation\"",
+      "zh": "\"零样本文本到图像生成\""
+    },
+    "quoteAttribution": {
+      "en": "《Zero-Shot Text-to-Image Generation》, Aditya Ramesh et al., ICML, 2021",
+      "zh": "《零样本文本到图像生成》, 阿迪蒂亚·拉梅什等，ICML，2021"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Zero-Shot Text-to-Image Generation",
+        "zh": "零样本文本到图像生成"
+      },
+      "workAuthors": {
+        "en": "Aditya Ramesh et al., ICML, 2021",
+        "zh": "阿迪蒂亚·拉梅什等，ICML，2021"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/2102.12092"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.",
+          "zh": "OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images.",
+          "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat DALL-E as a turning point in public awareness of text-conditioned image synthesis. Its long-term legacy is the prompt-driven creative interface later refined by diffusion models and multimodal foundation systems.",
+          "zh": "专家通常把 DALL-E 视为公众认识文本条件图像合成的转折点。它的长期影响在于提示驱动的创作界面后来被扩散模型和多模态基础系统进一步完善。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+        "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg"
+      ],
+      "imageMeta": {
+        "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png": {
+          "caption": {
+            "en": "Aditya Ramesh portrait",
+            "zh": "阿迪蒂亚·拉梅什肖像"
+          },
+          "subcaption": {
+            "en": "DALL-E lead author and creator",
+            "zh": "DALL-E 主要作者与创建者"
+          },
+          "sourceName": {
+            "en": "VentureBeat / OpenAI via BAAI Hub",
+            "zh": "VentureBeat / OpenAI，经智源社区转载"
+          },
+          "source": "https://hub.baai.ac.cn/view/23577",
+          "sourceUrl": "https://hub.baai.ac.cn/view/23577",
+          "originalImageUrl": "https://hub.baai.ac.cn/view/23577",
+          "license": {
+            "en": "OpenAI image republished by BAAI Hub; reuse rights not stated.",
+            "zh": "OpenAI 图片，经智源社区转载；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg": {
+          "caption": {
+            "en": "DALL-E text-to-image flow",
+            "zh": "DALL-E 文生图流程"
+          },
+          "subcaption": {
+            "en": "Original local explainer of prompt-conditioned image generation.",
+            "zh": "关于提示词条件图像生成的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "ICML",
+            "zh": "ICML"
+          },
+          "source": "https://proceedings.mlr.press/v139/ramesh21a.html",
+          "sourceUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+          "originalImageUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Autoregressive text-to-image generation",
+        "zh": "自回归文本到图像生成"
+      },
+      "artifact": {
+        "en": "DALL-E text-to-image system",
+        "zh": "DALL-E 文生图系统"
+      },
+      "material": {
+        "en": "ICML paper and OpenAI release",
+        "zh": "ICML 论文与 OpenAI 发布材料"
+      },
+      "demo": {
+        "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images.",
+        "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
+      },
+      "visual": "dalle",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Prompt Control",
+            "zh": "提示控制"
+          },
+          "text": {
+            "en": "Text specifies objects, relations, and style cues.",
+            "zh": "文本指定对象、关系和风格线索。"
+          }
+        },
+        {
+          "label": {
+            "en": "Image Tokens",
+            "zh": "图像令牌"
+          },
+          "text": {
+            "en": "Images are generated as discrete visual tokens.",
+            "zh": "图像以离散视觉令牌形式生成。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "GPT",
+          "zh": "GPT"
+        },
+        {
+          "en": "CLIP",
+          "zh": "CLIP"
+        },
+        {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Text prompt",
+          "zh": "Text prompt"
+        },
+        {
+          "en": "Image tokens",
+          "zh": "Image tokens"
+        },
+        {
+          "en": "Generated image",
+          "zh": "Generated image"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenAI",
+            "zh": "OpenAI"
+          },
+          "title": {
+            "en": "DALL-E: Creating images from text",
+            "zh": "DALL-E：从文本创建图像"
+          },
+          "description": {
+            "en": "OpenAI project page introducing text-to-image generation.",
+            "zh": "介绍文本到图像生成的 OpenAI 项目页面。"
+          },
+          "url": "https://openai.com/index/dall-e/",
+          "source": "https://openai.com/index/dall-e/",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Zero-Shot Text-to-Image Generation",
+            "zh": "《零样本文本到图像生成》"
+          },
+          "url": "https://arxiv.org/abs/2102.12092"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICML DALL-E paper page",
+            "zh": "ICML DALL-E 论文页面"
+          },
+          "url": "https://proceedings.mlr.press/v139/ramesh21a.html"
+        },
+        {
+          "type": {
+            "en": "Publication",
+            "zh": "出版页"
+          },
+          "label": {
+            "en": "OpenAI DALL-E blog post",
+            "zh": "OpenAI DALL-E 博客"
+          },
+          "url": "https://openai.com/index/dall-e/"
+        },
+        {
+          "type": {
+            "en": "Background",
+            "zh": "背景"
+          },
+          "label": {
+            "en": "DALL-E overview",
+            "zh": "DALL-E 概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/DALL-E"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg"
+    },
+    "quiz": {
+      "id": "ai100-2021-dalle-quiz-1",
+      "question": {
+        "en": "What does DALL-E generate from a text prompt?",
+        "zh": "DALL-E 根据文本提示生成什么？"
+      },
+      "options": [
+        {
+          "en": "Images",
+          "zh": "图像"
+        },
+        {
+          "en": "Only theorem proofs",
+          "zh": "只有定理证明"
+        },
+        {
+          "en": "Only database indexes",
+          "zh": "只有数据库索引"
+        },
+        {
+          "en": "Only Go endgames",
+          "zh": "只有围棋残局"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "DALL-E showed how language-conditioned models could synthesize visual scenes.",
+        "zh": "DALL-E 展示了语言条件模型如何合成视觉场景。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "dalle",
+        "text-to-image"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2021-dalle-quiz-1",
+        "question": {
+          "en": "What does DALL-E generate from a text prompt?",
+          "zh": "DALL-E 根据文本提示生成什么？"
+        },
+        "options": [
+          {
+            "en": "Images",
+            "zh": "图像"
+          },
+          {
+            "en": "Only theorem proofs",
+            "zh": "只有定理证明"
+          },
+          {
+            "en": "Only database indexes",
+            "zh": "只有数据库索引"
+          },
+          {
+            "en": "Only Go endgames",
+            "zh": "只有围棋残局"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "DALL-E showed how language-conditioned models could synthesize visual scenes.",
+          "zh": "DALL-E 展示了语言条件模型如何合成视觉场景。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "dalle",
+          "text-to-image"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2022-stable-diffusion",
+    "year": 2022,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Stable Diffusion",
+      "zh": "Stable Diffusion"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "LMU Munich and Stability AI",
+        "zh": "慕尼黑大学与 Stability AI"
+      },
+      "country": {
+        "en": "Munich, Germany",
+        "zh": "德国慕尼黑"
+      },
+      "coordinates": [
+        48.1508,
+        11.5802
+      ]
+    },
+    "description": {
+      "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>",
+      "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Robin Rombach",
+          "zh": "罗宾·罗姆巴赫"
+        },
+        "role": {
+          "en": "Lead author of latent diffusion models",
+          "zh": "潜扩散模型主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"High-resolution image synthesis with latent diffusion models\"",
+      "zh": "\"使用潜扩散模型进行高分辨率图像合成\""
+    },
+    "quoteAttribution": {
+      "en": "《High-Resolution Image Synthesis with Latent Diffusion Models》, Robin Rombach et al., CVPR, 2022",
+      "zh": "《使用潜扩散模型进行高分辨率图像合成》, 罗宾·罗姆巴赫等，CVPR，2022"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+        "zh": "使用潜扩散模型进行高分辨率图像合成"
+      },
+      "workAuthors": {
+        "en": "Robin Rombach et al., CVPR, 2022",
+        "zh": "罗宾·罗姆巴赫等，CVPR，2022"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/2112.10752"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.",
+          "zh": "Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical.",
+          "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Stable Diffusion as the release that made latent diffusion widely accessible outside a small number of labs. Its long-term legacy is the open text-to-image ecosystem of checkpoints, adapters, workflows, and creative applications.",
+          "zh": "专家通常把 Stable Diffusion 视为让潜扩散模型走出少数实验室、广泛可用的发布。它的长期影响在于形成了由检查点、适配器、工作流和创意应用组成的开放文生图生态。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+        "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg"
+      ],
+      "imageMeta": {
+        "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg": {
+          "caption": {
+            "en": "Robin Rombach portrait",
+            "zh": "罗宾·罗姆巴赫肖像"
+          },
+          "subcaption": {
+            "en": "Lead author of latent diffusion models",
+            "zh": "潜扩散模型主要作者"
+          },
+          "sourceName": {
+            "en": "Latent Labs",
+            "zh": "Latent Labs"
+          },
+          "source": "https://www.latentlabs.com/our-dna/",
+          "sourceUrl": "https://www.latentlabs.com/our-dna/",
+          "originalImageUrl": "https://www.latentlabs.com/our-dna/",
+          "license": {
+            "en": "Latent Labs profile image; reuse rights not stated.",
+            "zh": "Latent Labs 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg": {
+          "caption": {
+            "en": "Latent diffusion denoising",
+            "zh": "潜扩散去噪"
+          },
+          "subcaption": {
+            "en": "Original local explainer of text-guided latent denoising.",
+            "zh": "关于文本引导潜空间去噪的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "CVPR",
+            "zh": "CVPR"
+          },
+          "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "originalImageUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Text-conditioned latent diffusion",
+        "zh": "文本条件潜扩散"
+      },
+      "artifact": {
+        "en": "Stable Diffusion model release",
+        "zh": "Stable Diffusion 模型发布"
+      },
+      "material": {
+        "en": "CVPR paper and model release",
+        "zh": "CVPR 论文与模型发布"
+      },
+      "demo": {
+        "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical.",
+        "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
+      },
+      "visual": "diffusion",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Latent Space",
+            "zh": "潜空间"
+          },
+          "text": {
+            "en": "Denoising happens in a compressed representation.",
+            "zh": "去噪发生在压缩表示中。"
+          }
+        },
+        {
+          "label": {
+            "en": "Guidance",
+            "zh": "引导"
+          },
+          "text": {
+            "en": "Text conditioning steers each denoising step.",
+            "zh": "文本条件引导每一步去噪。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        },
+        {
+          "en": "CLIP",
+          "zh": "CLIP"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Germany",
+          "zh": "德国"
+        },
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Prompt",
+          "zh": "Prompt"
+        },
+        {
+          "en": "Latent noise",
+          "zh": "Latent noise"
+        },
+        {
+          "en": "Denoised image",
+          "zh": "Denoised image"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放论文库"
+          },
+          "title": {
+            "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "zh": "使用潜扩散模型进行高分辨率图像合成"
+          },
+          "description": {
+            "en": "Open CVPR paper for latent diffusion models.",
+            "zh": "潜扩散模型的 CVPR 开放论文。"
+          },
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "zh": "《使用潜扩散模型进行高分辨率图像合成》"
+          },
+          "url": "https://arxiv.org/abs/2112.10752"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "CVPR paper page",
+            "zh": "CVPR 论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "CompVis latent diffusion repository",
+            "zh": "CompVis 潜扩散代码仓库"
+          },
+          "url": "https://github.com/CompVis/latent-diffusion"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Stability AI Stable Diffusion page",
+            "zh": "Stability AI Stable Diffusion 页面"
+          },
+          "url": "https://stability.ai/stable-image"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg"
+    },
+    "quiz": {
+      "id": "ai100-2022-stable-diffusion-quiz-1",
+      "question": {
+        "en": "Where does Stable Diffusion perform most of its denoising?",
+        "zh": "Stable Diffusion 主要在哪里执行去噪？"
+      },
+      "options": [
+        {
+          "en": "In a compressed latent space",
+          "zh": "在压缩潜空间中"
+        },
+        {
+          "en": "Only on a chess board",
+          "zh": "只在棋盘上"
+        },
+        {
+          "en": "Inside a theorem database",
+          "zh": "在定理数据库中"
+        },
+        {
+          "en": "Only in a spreadsheet row",
+          "zh": "只在电子表格行中"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "Latent diffusion denoises compact image representations under text guidance.",
+        "zh": "潜扩散在文本引导下对压缩图像表示进行去噪。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "diffusion",
+        "text-to-image"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2022-stable-diffusion-quiz-1",
+        "question": {
+          "en": "Where does Stable Diffusion perform most of its denoising?",
+          "zh": "Stable Diffusion 主要在哪里执行去噪？"
+        },
+        "options": [
+          {
+            "en": "In a compressed latent space",
+            "zh": "在压缩潜空间中"
+          },
+          {
+            "en": "Only on a chess board",
+            "zh": "只在棋盘上"
+          },
+          {
+            "en": "Inside a theorem database",
+            "zh": "在定理数据库中"
+          },
+          {
+            "en": "Only in a spreadsheet row",
+            "zh": "只在电子表格行中"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "Latent diffusion denoises compact image representations under text guidance.",
+          "zh": "潜扩散在文本引导下对压缩图像表示进行去噪。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "diffusion",
+          "text-to-image"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "milestone-ai100-2023-segment-anything",
+    "year": 2023,
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "title": {
+      "en": "Segment Anything",
+      "zh": "Segment Anything"
+    },
+    "subtitle": {
+      "en": "AI Top 100 Achievements",
+      "zh": "AI 百大成就"
+    },
+    "location": {
+      "name": {
+        "en": "Meta AI",
+        "zh": "Meta AI"
+      },
+      "country": {
+        "en": "Menlo Park, United States",
+        "zh": "美国门洛帕克"
+      },
+      "coordinates": [
+        37.4848,
+        -122.1484
+      ]
+    },
+    "description": {
+      "en": "<p>Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.</p>",
+      "zh": "<p>Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alexander Kirillov",
+          "zh": "亚历山大·基里洛夫"
+        },
+        "role": {
+          "en": "Lead author of Segment Anything",
+          "zh": "Segment Anything 主要作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Segment anything\"",
+      "zh": "\"分割一切\""
+    },
+    "quoteAttribution": {
+      "en": "《Segment Anything》, Alexander Kirillov et al., ICCV, 2023",
+      "zh": "《Segment Anything》, 亚历山大·基里洛夫等，ICCV，2023"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Segment Anything",
+        "zh": "Segment Anything"
+      },
+      "workAuthors": {
+        "en": "Alexander Kirillov et al., ICCV, 2023",
+        "zh": "亚历山大·基里洛夫等，ICCV，2023"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/2304.02643"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.",
+          "zh": "Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image.",
+          "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Segment Anything as an important example of foundation-model thinking in computer vision. Its long-term legacy is the promptable segmentation interface and dataset scale that made interactive masks reusable across many domains.",
+          "zh": "专家通常把 Segment Anything 视为计算机视觉中基础模型思路的重要例子。它的长期影响在于可提示分割接口和数据规模让交互式掩码能在许多领域复用。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+        "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg"
+      ],
+      "imageMeta": {
+        "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg": {
+          "caption": {
+            "en": "Alexander Kirillov portrait",
+            "zh": "亚历山大·基里洛夫肖像"
+          },
+          "subcaption": {
+            "en": "Segment Anything lead author",
+            "zh": "Segment Anything 主要作者"
+          },
+          "sourceName": {
+            "en": "Alexander Kirillov personal site",
+            "zh": "亚历山大·基里洛夫个人网站"
+          },
+          "source": "https://alexander-kirillov.github.io/",
+          "sourceUrl": "https://alexander-kirillov.github.io/",
+          "originalImageUrl": "https://alexander-kirillov.github.io/",
+          "license": {
+            "en": "Personal site profile image; reuse rights not stated.",
+            "zh": "个人网站资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg": {
+          "caption": {
+            "en": "Promptable segmentation flow",
+            "zh": "可提示分割流程"
+          },
+          "subcaption": {
+            "en": "Original local explainer of prompt-to-mask segmentation.",
+            "zh": "关于从提示到掩码分割的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "ICCV",
+            "zh": "ICCV"
+          },
+          "source": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+          "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+          "originalImageUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "bench-council-ai100",
+      "name": {
+        "en": "AI Top 100 Achievements (BenchCouncil)",
+        "zh": "AI 百大成就（BenchCouncil）"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Computer Vision",
+        "zh": "计算机视觉"
+      },
+      "method": {
+        "en": "Promptable foundation model for segmentation",
+        "zh": "用于分割的可提示基础模型"
+      },
+      "artifact": {
+        "en": "Segment Anything Model",
+        "zh": "Segment Anything Model"
+      },
+      "material": {
+        "en": "ICCV paper, model, and SA-1B dataset",
+        "zh": "ICCV 论文、模型与 SA-1B 数据集"
+      },
+      "demo": {
+        "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image.",
+        "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
+      },
+      "visual": "sam",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Promptable Segmentation",
+            "zh": "可提示分割"
+          },
+          "text": {
+            "en": "Users can request masks with points or boxes.",
+            "zh": "用户可用点或框请求掩码。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reusable Image Features",
+            "zh": "可复用图像特征"
+          },
+          "text": {
+            "en": "One image embedding supports many mask prompts.",
+            "zh": "一个图像嵌入支持多种掩码提示。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "U-Net",
+          "zh": "U-Net"
+        },
+        {
+          "en": "Vision Transformer",
+          "zh": "视觉 Transformer"
+        },
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Image embedding",
+          "zh": "Image embedding"
+        },
+        {
+          "en": "Point or box prompt",
+          "zh": "Point or box prompt"
+        },
+        {
+          "en": "Mask decoder",
+          "zh": "Mask decoder"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Segment Anything",
+            "zh": "Segment Anything"
+          },
+          "title": {
+            "en": "Segment Anything project page",
+            "zh": "Segment Anything 项目页面"
+          },
+          "description": {
+            "en": "Official project page with paper, model, dataset, and demo links.",
+            "zh": "官方项目页面，包含论文、模型、数据集和演示链接。"
+          },
+          "url": "https://segment-anything.com/",
+          "source": "https://segment-anything.com/",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Segment Anything",
+            "zh": "《Segment Anything》"
+          },
+          "url": "https://arxiv.org/abs/2304.02643"
+        },
+        {
+          "type": {
+            "en": "Conference paper",
+            "zh": "会议论文"
+          },
+          "label": {
+            "en": "ICCV paper page",
+            "zh": "ICCV 论文页面"
+          },
+          "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html"
+        },
+        {
+          "type": {
+            "en": "Project",
+            "zh": "项目"
+          },
+          "label": {
+            "en": "Segment Anything project page",
+            "zh": "Segment Anything 项目页面"
+          },
+          "url": "https://segment-anything.com/"
+        },
+        {
+          "type": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "label": {
+            "en": "Segment Anything GitHub repository",
+            "zh": "Segment Anything GitHub 代码仓库"
+          },
+          "url": "https://github.com/facebookresearch/segment-anything"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg"
+    },
+    "quiz": {
+      "id": "ai100-2023-segment-anything-quiz-1",
+      "question": {
+        "en": "How can users guide Segment Anything?",
+        "zh": "用户如何引导 Segment Anything？"
+      },
+      "options": [
+        {
+          "en": "With prompts such as points or boxes",
+          "zh": "用点或框等提示"
+        },
+        {
+          "en": "Only with a hidden chess score",
+          "zh": "只用隐藏棋类分数"
+        },
+        {
+          "en": "Only by changing a protein sequence",
+          "zh": "只通过改变蛋白质序列"
+        },
+        {
+          "en": "Only by deleting the image",
+          "zh": "只通过删除图像"
+        }
+      ],
+      "answerIndex": 0,
+      "explanation": {
+        "en": "SAM uses point, box, or mask prompts to produce segmentation masks from reusable image features.",
+        "zh": "SAM 使用点、框或掩码提示，根据可复用图像特征生成分割掩码。"
+      },
+      "source": {
+        "label": {
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
+        }
+      },
+      "tags": [
+        "segment-anything",
+        "vision"
+      ]
+    },
+    "quizzes": [
+      {
+        "id": "ai100-2023-segment-anything-quiz-1",
+        "question": {
+          "en": "How can users guide Segment Anything?",
+          "zh": "用户如何引导 Segment Anything？"
+        },
+        "options": [
+          {
+            "en": "With prompts such as points or boxes",
+            "zh": "用点或框等提示"
+          },
+          {
+            "en": "Only with a hidden chess score",
+            "zh": "只用隐藏棋类分数"
+          },
+          {
+            "en": "Only by changing a protein sequence",
+            "zh": "只通过改变蛋白质序列"
+          },
+          {
+            "en": "Only by deleting the image",
+            "zh": "只通过删除图像"
+          }
+        ],
+        "answerIndex": 0,
+        "explanation": {
+          "en": "SAM uses point, box, or mask prompts to produce segmentation masks from reusable image features.",
+          "zh": "SAM 使用点、框或掩码提示，根据可复用图像特征生成分割掩码。"
+        },
+        "source": {
+          "label": {
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
+          }
+        },
+        "tags": [
+          "segment-anything",
+          "vision"
         ]
       }
     ]
