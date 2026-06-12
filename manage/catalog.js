@@ -159,7 +159,17 @@ module.exports = {
         "ai100-2015-batch-normalization",
         "ai100-2017-densenet",
         "ai100-2017-transformer",
-        "ai100-2020-vit"
+        "ai100-2020-vit",
+        "ai100-1997-lstm",
+        "ai100-2014-gan",
+        "ai100-2014-neural-machine-translation-attention",
+        "ai100-2018-bert",
+        "ai100-2018-gpt",
+        "ai100-2020-alphafold2",
+        "ai100-2021-clip",
+        "ai100-2021-dalle",
+        "ai100-2022-stable-diffusion",
+        "ai100-2023-segment-anything"
       ]
     }
   ]

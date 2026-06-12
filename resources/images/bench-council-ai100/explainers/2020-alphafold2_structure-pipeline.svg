@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">AlphaFold2 structure pipeline</title>
+  <desc id="desc">Protein sequence and pair representation are refined into a folded 3D structure.</desc>
+  <rect width="640" height="360" rx="24" fill="#0f172a"/>
+  <text x="40" y="54" fill="#f59e0b" font-family="Arial" font-size="28" font-weight="700">sequence to structure</text>
+  <rect x="52" y="128" width="146" height="70" rx="14" fill="#1e3a8a" stroke="#93c5fd" stroke-width="4"/>
+  <text x="125" y="169" fill="#dbeafe" text-anchor="middle" font-family="Arial" font-size="18">amino acids</text>
+  <rect x="252" y="112" width="146" height="102" rx="16" fill="#14532d" stroke="#86efac" stroke-width="4"/>
+  <text x="325" y="153" fill="#dcfce7" text-anchor="middle" font-family="Arial" font-size="18">pair</text>
+  <text x="325" y="178" fill="#dcfce7" text-anchor="middle" font-family="Arial" font-size="18">representation</text>
+  <path d="M470 118C530 88 580 122 548 172C522 214 460 206 448 164C442 142 452 128 470 118Z" fill="none" stroke="#f59e0b" stroke-width="8"/>
+  <circle cx="486" cy="128" r="8" fill="#f59e0b"/><circle cx="540" cy="178" r="8" fill="#f59e0b"/><circle cx="466" cy="188" r="8" fill="#f59e0b"/>
+  <path d="M198 163H252M398 163H448" stroke="#f8fafc" stroke-width="5"/>
+  <text x="498" y="256" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="18">folded 3D model</text>
+</svg>

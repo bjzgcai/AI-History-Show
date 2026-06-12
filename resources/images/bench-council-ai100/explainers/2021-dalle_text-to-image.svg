@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">DALL-E text-to-image flow</title>
+  <desc id="desc">A text prompt controls image-token generation.</desc>
+  <rect width="640" height="360" rx="24" fill="#0f172a"/>
+  <text x="40" y="54" fill="#f59e0b" font-family="Arial" font-size="28" font-weight="700">prompt conditioned image tokens</text>
+  <rect x="56" y="128" width="176" height="74" rx="14" fill="#111827" stroke="#93c5fd" stroke-width="4"/>
+  <text x="144" y="158" fill="#dbeafe" text-anchor="middle" font-family="Arial" font-size="16">"red chair</text>
+  <text x="144" y="181" fill="#dbeafe" text-anchor="middle" font-family="Arial" font-size="16">on the moon"</text>
+  <rect x="292" y="104" width="116" height="122" rx="16" fill="#14532d" stroke="#86efac" stroke-width="4"/>
+  <text x="350" y="154" fill="#dcfce7" text-anchor="middle" font-family="Arial" font-size="18">image</text>
+  <text x="350" y="180" fill="#dcfce7" text-anchor="middle" font-family="Arial" font-size="18">tokens</text>
+  <rect x="472" y="108" width="118" height="118" rx="18" fill="#1e3a8a" stroke="#93c5fd" stroke-width="4"/>
+  <path d="M492 204h78l-18-46-18 26-14-20z" fill="#22c55e"/><circle cx="520" cy="142" r="14" fill="#f59e0b"/>
+  <path d="M232 165H292M408 165H472" stroke="#f8fafc" stroke-width="5"/>
+  <text x="531" y="268" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="18">generated image</text>
+</svg>
