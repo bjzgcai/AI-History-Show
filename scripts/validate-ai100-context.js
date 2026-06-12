@@ -37,9 +37,7 @@ const failures = [];
 
 for (const milestone of milestones) {
     const storylineId =
-        typeof milestone.storyline === 'string'
-            ? milestone.storyline
-            : milestone.storyline && milestone.storyline.id;
+        typeof milestone.storyline === 'string' ? milestone.storyline : milestone.storyline && milestone.storyline.id;
 
     if (storylineId !== 'bench-council-ai100') continue;
 
@@ -66,9 +64,7 @@ for (const milestone of milestones) {
 if (failures.length > 0) {
     console.log(`AI100 context sections below 2 sentences: ${failures.length}`);
     for (const item of failures.slice(0, 80)) {
-        console.log(
-            `- ${item.id} / ${item.label} / ${item.locale}: ${item.count} sentence(s) (${item.title})`
-        );
+        console.log(`- ${item.id} / ${item.label} / ${item.locale}: ${item.count} sentence(s) (${item.title})`);
     }
     if (failures.length > 80) {
         console.log(`...and ${failures.length - 80} more`);
