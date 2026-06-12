@@ -169,7 +169,27 @@ module.exports = {
         "ai100-2021-clip",
         "ai100-2021-dalle",
         "ai100-2022-stable-diffusion",
-        "ai100-2023-segment-anything"
+        "ai100-2023-segment-anything",
+        "ai100-2021-swin-transformer",
+        "ai100-2014-glove",
+        "ai100-2014-conditional-gan",
+        "ai100-2015-dcgan",
+        "ai100-2017-wasserstein-gan",
+        "ai100-2017-cyclegan",
+        "ai100-2017-pix2pix",
+        "ai100-2019-stylegan",
+        "ai100-2013-variational-autoencoder",
+        "ai100-2015-diffusion-model",
+        "ai100-2005-gnn",
+        "ai100-2016-gcn",
+        "ai100-2017-gat",
+        "ai100-2016-nas",
+        "ai100-2015-deep-compression",
+        "ai100-2015-knowledge-distillation",
+        "ai100-2014-ms-coco",
+        "ai100-1989-q-learning",
+        "ai100-2015-ddpg",
+        "ai100-1983-actor-critic"
       ]
     }
   ]
