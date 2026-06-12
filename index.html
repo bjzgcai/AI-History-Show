@@ -7225,6 +7225,19 @@
             ], uiText('Promptable segmentation flow', '可提示分割流程'));
         }
 
+        function buildConfiguredPaperVisualDemo(raw) {
+            const notes = raw && raw.achievement && Array.isArray(raw.achievement.demoNotes)
+                ? raw.achievement.demoNotes
+                    .map((note) => [lx(note && note.label), lx(note && note.text)])
+                    .filter(([label, text]) => label || text)
+                : [];
+            const fallbackNotes = notes.length >= 2 ? notes : [
+                [uiText('source cue', '资料线索'), getAchievementField(raw, 'material', uiText('Primary source and local redraw.', '主资料与本地重绘图。'))],
+                [uiText('interaction', '互动点'), getAchievementField(raw, 'demo', uiText('Step through the visual flow to connect inputs, method, and result.', '逐步查看视觉流程，连接输入、方法和结果。'))]
+            ];
+            return buildImagePaperDemo(raw, fallbackNotes, getAchievementField(raw, 'artifact', tx('archiveImage')));
+        }
+
         function buildOtterDemo() {
             return buildPaperDemo(`
                 <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Otter given-clause proof search">
@@ -8171,6 +8184,7 @@
                 dalle: () => buildDalleVisualDemo(raw),
                 diffusion: () => buildDiffusionVisualDemo(raw),
                 sam: () => buildSamVisualDemo(raw),
+                configuredPaper: () => buildConfiguredPaperVisualDemo(raw),
                 otter: buildOtterDemo,
                 watson: buildWatsonDemo,
                 draughts: buildDraughtsDemo,
