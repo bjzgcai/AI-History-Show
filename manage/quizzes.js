@@ -2721,3 +2721,44 @@ module.exports = {
     ]
   }
 };
+
+const extraAi100QuizItems = [
+  ['ai100-2021-swin-transformer', 'What makes Swin Transformer efficient for dense vision tasks?', 'Swin Transformer 为什么适合密集视觉任务？', 'Shifted local attention windows', '移位局部注意力窗口', 'A fixed chess opening', '固定棋类开局', 'Only handwritten digit labels', '只有手写数字标签', 'A chemical rule table', '化学规则表', 'Shifted windows let local attention exchange information across neighboring image regions.', '移位窗口让局部注意力在相邻图像区域之间交换信息。'],
+  ['ai100-2014-glove', 'What does GloVe use to learn word vectors?', 'GloVe 用什么来学习词向量？', 'Global word co-occurrence statistics', '全局词共现统计', 'Only image masks', '只有图像掩码', 'Robot joint torque', '机器人关节力矩', 'A theorem prover trace', '定理证明轨迹', 'GloVe fits vectors to weighted word co-occurrence information from a corpus.', 'GloVe 根据语料中的加权词共现信息拟合词向量。'],
+  ['ai100-2014-conditional-gan', 'What does a conditional GAN add to ordinary GAN generation?', 'Conditional GAN 在普通 GAN 生成中加入什么？', 'A label or condition signal', '标签或条件信号', 'Only a database password', '只有数据库密码', 'A fixed Go board', '固定围棋棋盘', 'A hand-coded theorem', '手写定理', 'The condition steers the generator and discriminator toward requested classes or attributes.', '条件信号引导生成器和判别器关注指定类别或属性。'],
+  ['ai100-2015-dcgan', 'What architecture idea made DCGAN important?', 'DCGAN 的重要架构思想是什么？', 'Using convolutional generator and discriminator networks', '使用卷积式生成器和判别器网络', 'Replacing images with spreadsheets', '用电子表格替代图像', 'Removing all learned features', '移除所有学习特征', 'Using only symbolic rules', '只使用符号规则', 'DCGAN gave practical convolutional design rules for image-generating GANs.', 'DCGAN 为图像生成 GAN 提供了实用的卷积设计规则。'],
+  ['ai100-2017-wasserstein-gan', 'What does Wasserstein GAN change about GAN training?', 'Wasserstein GAN 改变了 GAN 训练中的什么？', 'It uses a smoother distribution-distance objective', '它使用更平滑的分布距离目标', 'It removes the generator', '它移除生成器', 'It trains only decision trees', '它只训练决策树', 'It labels protein atoms', '它标注蛋白质原子', 'The critic estimates a transport-inspired distance between real and generated distributions.', 'critic 估计真实分布和生成分布之间受传输启发的距离。'],
+  ['ai100-2017-cyclegan', 'Why does CycleGAN use a cycle-consistency loss?', 'CycleGAN 为什么使用循环一致性损失？', 'To preserve content when translating there and back', '为了在来回转换时保留内容', 'To sort words alphabetically', '为了按字母排序单词', 'To choose a chess move', '为了选择棋步', 'To delete the input image', '为了删除输入图像', 'Cycle consistency checks that translating from one domain and back reconstructs the original structure.', '循环一致性检查从一个域转换到另一个域再转回时能否重建原始结构。'],
+  ['ai100-2017-pix2pix', 'What kind of supervision does Pix2Pix mainly use?', 'Pix2Pix 主要使用哪种监督？', 'Paired input-output image examples', '配对的输入输出图像样本', 'Only unlabeled graph nodes', '只有未标注图节点', 'Only theorem clauses', '只有定理子句', 'A hidden reward table only', '只有隐藏奖励表', 'Pix2Pix learns image-to-image translation from matched source and target examples.', 'Pix2Pix 从匹配的源图像和目标图像样本学习图像转换。'],
+  ['ai100-2019-stylegan', 'What does StyleGAN use to control image synthesis?', 'StyleGAN 用什么控制图像合成？', 'Style vectors that modulate generator layers', '调制生成器层的风格向量', 'Only nearest-neighbor votes', '只有最近邻投票', 'A fixed theorem list', '固定定理列表', 'Only edge histograms', '只有边缘直方图', 'StyleGAN maps latent codes into styles that control different synthesis layers.', 'StyleGAN 把潜编码映射为控制不同合成层的风格。'],
+  ['ai100-2013-variational-autoencoder', 'What is central to a variational autoencoder?', '变分自编码器的核心是什么？', 'A learned latent distribution with encoder and decoder', '带编码器和解码器的学习型潜变量分布', 'Only a hand-built search tree', '只有手工搜索树', 'A fixed object dataset', '固定物体数据集', 'Only a word count table', '只有词频表', 'A VAE encodes data into a latent distribution, samples from it, and decodes the sample.', 'VAE 把数据编码为潜变量分布，从中采样，再解码样本。'],
+  ['ai100-2015-diffusion-model', 'What does a diffusion model learn to reverse?', '扩散模型学习逆转什么？', 'A gradual noising process', '逐步加噪过程', 'A database migration', '数据库迁移', 'A chess tournament bracket', '棋类赛程表', 'Only a dictionary sort', '只有字典排序', 'Diffusion models learn denoising steps that turn noise back into samples.', '扩散模型学习把噪声还原为样本的去噪步骤。'],
+  ['ai100-2005-gnn', 'What does a graph neural network pass between nodes?', '图神经网络在节点之间传递什么？', 'Learned messages from neighbors', '来自邻居的学习型消息', 'Only raw pixels', '只有原始像素', 'Spreadsheet colors', '电子表格颜色', 'A fixed audio codec', '固定音频编码', 'GNNs update node states by exchanging messages along graph edges.', 'GNN 沿图边交换消息来更新节点状态。'],
+  ['ai100-2016-gcn', 'What does a GCN layer combine?', 'GCN 层组合什么？', 'Node features from normalized graph neighborhoods', '归一化图邻域中的节点特征', 'Only text prompts', '只有文本提示', 'Only protein names', '只有蛋白质名称', 'A random password list', '随机密码列表', 'GCN aggregates nearby node features through a normalized graph propagation rule.', 'GCN 通过归一化图传播规则聚合附近节点特征。'],
+  ['ai100-2017-gat', 'How does GAT choose which neighbors matter?', 'GAT 如何选择哪些邻居更重要？', 'It learns attention weights over neighbors', '它学习邻居上的注意力权重', 'It ignores all edges', '它忽略所有边', 'It uses only image brightness', '它只使用图像亮度', 'It picks the oldest node', '它选择最老节点', 'GAT dynamically weights neighboring nodes before combining their features.', 'GAT 在合并邻居特征前动态为邻居加权。'],
+  ['ai100-2016-nas', 'What is being searched in neural architecture search?', '神经架构搜索在搜索什么？', 'Model designs or architectures', '模型设计或架构', 'A list of email addresses', '邮箱地址列表', 'Only theorem names', '只有定理名称', 'The color of a robot', '机器人的颜色', 'NAS evaluates candidate neural network designs and uses scores to guide the next proposals.', 'NAS 评估候选神经网络设计，并用评分引导下一批提案。'],
+  ['ai100-2015-deep-compression', 'Which three ideas are central to Deep Compression?', '深度压缩的三个核心思想是什么？', 'Pruning, quantization, and coding', '剪枝、量化和编码', 'Parsing, printing, and sorting', '解析、打印和排序', 'Chatting, translating, and voting', '聊天、翻译和投票', 'Cropping, rotating, and blurring', '裁剪、旋转和模糊', 'Deep Compression shrinks networks through pruning, trained quantization, and Huffman coding.', '深度压缩通过剪枝、训练型量化和霍夫曼编码缩小网络。'],
+  ['ai100-2015-knowledge-distillation', 'What does a student model learn from in knowledge distillation?', '知识蒸馏中的学生模型从什么学习？', 'Soft outputs from a larger teacher model', '来自较大教师模型的软输出', 'Only board-game rules', '只有棋类规则', 'Raw database indexes', '原始数据库索引', 'A deleted training set', '已删除训练集', 'Soft teacher probabilities transfer information beyond hard labels.', '教师的软概率传递了硬标签之外的信息。'],
+  ['ai100-2014-ms-coco', 'What made MS COCO especially useful for vision benchmarks?', 'MS COCO 对视觉基准特别有用的原因是什么？', 'Objects in context with multiple annotation types', '上下文中的物体和多种标注类型', 'Only synthetic chess boards', '只有合成棋盘', 'Only unstructured audio', '只有非结构化音频', 'A single theorem proof', '单个定理证明', 'COCO supports detection, segmentation, captions, and related tasks on everyday scenes.', 'COCO 在日常场景上支持检测、分割、字幕等任务。'],
+  ['ai100-1989-q-learning', 'What value does Q-learning update?', 'Q-learning 更新什么价值？', 'The value of a state-action pair', '状态-动作对的价值', 'The color of an image', '图像颜色', 'Only a word spelling', '只有单词拼写', 'A fixed theorem title', '固定定理标题', 'Q-learning updates Q values toward a Bellman target from reward and next-state information.', 'Q-learning 根据奖励和下一状态信息把 Q 值朝 Bellman 目标更新。'],
+  ['ai100-2015-ddpg', 'Why is DDPG associated with continuous control?', 'DDPG 为什么与连续控制相关？', 'Its actor outputs continuous actions', '它的 actor 输出连续动作', 'It only plays word games', '它只玩文字游戏', 'It removes the critic', '它移除 critic', 'It trains no policy', '它不训练策略', 'DDPG uses an actor-critic setup where the actor proposes continuous actions.', 'DDPG 使用 actor-critic 设置，其中 actor 提出连续动作。'],
+  ['ai100-1983-actor-critic', 'What are the two parts of an actor-critic method?', 'Actor-Critic 方法的两个部分是什么？', 'A policy actor and a value critic', '策略 actor 和价值 critic', 'A parser and a printer', '解析器和打印机', 'A caption and a camera only', '只有字幕和相机', 'A password and a database', '密码和数据库', 'The actor chooses actions while the critic evaluates them with value feedback.', 'actor 选择动作，critic 用价值反馈评价动作。']
+];
+
+for (const [key, qEn, qZh, aEn, aZh, bEn, bZh, cEn, cZh, dEn, dZh, eEn, eZh] of extraAi100QuizItems) {
+  module.exports.events[key] = [
+    {
+      question: { en: qEn, zh: qZh },
+      options: [
+        { en: aEn, zh: aZh },
+        { en: bEn, zh: bZh },
+        { en: cEn, zh: cZh },
+        { en: dEn, zh: dZh }
+      ],
+      answerIndex: 0,
+      explanation: { en: eEn, zh: eZh },
+      source: { label: { en: 'BenchCouncil AI100 achievement notes', zh: 'BenchCouncil AI100 成就内容' } },
+      tags: [key.replace(/^ai100-\d+-/, ''), 'ai100']
+    }
+  ];
+}

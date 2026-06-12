@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Wasserstein GAN explainer</title>
+  <desc id="desc">Original local schematic for Wasserstein GAN: real distribution to critic distance to generated distribution.</desc>
+  <rect width="720" height="420" rx="28" fill="#f8fafc"/>
+  <rect x="36" y="36" width="648" height="348" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="62" y="82" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Wasserstein GAN</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <rect x="66" y="160" width="160" height="86" rx="16" fill="#ecfeff" stroke="#be123c" stroke-width="3"/>
+    <text x="146" y="196" fill="#0f172a">real distribution</text><text x="146" y="222" fill="#475569">input</text>
+    <rect x="280" y="142" width="160" height="122" rx="16" fill="#fefce8" stroke="#ca8a04" stroke-width="3"/>
+    <text x="360" y="194" fill="#0f172a">critic distance</text><text x="360" y="222" fill="#475569">mechanism</text>
+    <rect x="494" y="160" width="160" height="86" rx="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="3"/>
+    <text x="574" y="196" fill="#0f172a">generated distribution</text><text x="574" y="222" fill="#475569">result</text>
+  </g>
+  <path d="M232 203 H270" stroke="#64748b" stroke-width="5" stroke-linecap="round"/><path d="M258 192 L274 203 L258 214" fill="none" stroke="#64748b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M446 203 H484" stroke="#64748b" stroke-width="5" stroke-linecap="round"/><path d="M472 192 L488 203 L472 214" fill="none" stroke="#64748b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="none" stroke="#be123c" stroke-width="3" opacity="0.55">
+    <circle cx="130" cy="314" r="16"/><circle cx="190" cy="316" r="12"/><circle cx="250" cy="312" r="18"/><path d="M146 314 L178 316 L232 312"/>
+    <path d="M326 318 C356 286 394 286 424 318"/><path d="M326 318 C356 350 394 350 424 318"/>
+    <rect x="510" y="296" width="90" height="48" rx="12"/><path d="M526 324 L548 306 L572 330 L590 314"/>
+  </g>
+  <text x="62" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#64748b">Original local SVG redraw; source figures are not copied.</text>
+</svg>
