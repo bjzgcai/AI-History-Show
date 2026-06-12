@@ -4105,7 +4105,7 @@
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260610-ai100-source-refresh" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260612-ai100-photo-refresh" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -7155,6 +7155,76 @@
             ], uiText('Self-attention stack', '自注意力堆栈'));
         }
 
+        function buildLstmVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('memory cue', '记忆线索'), uiText('The cell state creates a protected path for information across long sequences.', '单元状态为长序列信息提供受保护的通路。')],
+                [uiText('interaction', '互动点'), uiText('Toggle each gate to show what is written, forgotten, or exposed at the next step.', '切换每个门，显示下一步写入、遗忘或输出哪些信息。')]
+            ], uiText('LSTM gated memory cell', 'LSTM 门控记忆单元'));
+        }
+
+        function buildGanVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('training cue', '训练线索'), uiText('The generator improves because the discriminator keeps changing the target.', '生成器会改进，是因为判别器不断改变目标。')],
+                [uiText('interaction', '互动点'), uiText('Move the discriminator threshold to see when fake samples start passing as real.', '移动判别阈值，观察生成样本何时开始被判为真实。')]
+            ], uiText('GAN adversarial loop', 'GAN 对抗循环'));
+        }
+
+        function buildAttentionSeqVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('alignment cue', '对齐线索'), uiText('Attention makes source-target alignment a learned part of translation.', '注意力让源句与目标词的对齐成为可学习过程。')],
+                [uiText('interaction', '互动点'), uiText('Select a target word to highlight which source tokens receive the largest weights.', '选择一个目标词，突出显示权重最高的源语言令牌。')]
+            ], uiText('Attention alignment map', '注意力对齐图'));
+        }
+
+        function buildBertVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('pre-training cue', '预训练线索'), uiText('Masked words are predicted from both left and right context inside a transformer encoder.', '被遮盖的词由 Transformer 编码器中的左右上下文共同预测。')],
+                [uiText('interaction', '互动点'), uiText('Mask a different token to show how the bidirectional context changes the prediction.', '遮盖不同令牌，展示双向上下文如何改变预测。')]
+            ], uiText('BERT masked language modeling', 'BERT 掩码语言建模'));
+        }
+
+        function buildGptVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('prediction cue', '预测线索'), uiText('A decoder-only transformer learns by predicting the next token from previous tokens.', '解码器式 Transformer 通过根据前文预测下一个令牌来学习。')],
+                [uiText('interaction', '互动点'), uiText('Edit the prompt prefix to show the next-token distribution shift.', '编辑提示前缀，展示下一个令牌分布如何变化。')]
+            ], uiText('GPT next-token pre-training', 'GPT 下一个令牌预训练'));
+        }
+
+        function buildAlphaFoldVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('science cue', '科学线索'), uiText('Sequence and evolutionary features are turned into pair representations and 3D coordinates.', '序列与进化特征被转化为成对表示和三维坐标。')],
+                [uiText('interaction', '互动点'), uiText('Step through sequence, pair map, and folded structure to connect data with the final model.', '依次查看序列、成对图和折叠结构，把数据与最终模型连接起来。')]
+            ], uiText('AlphaFold2 structure pipeline', 'AlphaFold2 结构预测流程'));
+        }
+
+        function buildClipVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('contrastive cue', '对比线索'), uiText('Matching image-text pairs are pulled together while mismatches are pushed apart.', '匹配的图文对被拉近，不匹配的图文对被推远。')],
+                [uiText('interaction', '互动点'), uiText('Swap a caption to show how zero-shot labels become text comparisons.', '替换文字说明，展示零样本标签如何变成文本比较。')]
+            ], uiText('CLIP contrastive pairs', 'CLIP 对比图文对'));
+        }
+
+        function buildDalleVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('generation cue', '生成线索'), uiText('A text prompt conditions a sequence of image tokens that form a visual scene.', '文本提示条件化一串图像令牌，形成视觉场景。')],
+                [uiText('interaction', '互动点'), uiText('Change one prompt phrase to reveal which generated objects or relations should change.', '改变提示词中的一个短语，观察生成对象或关系应如何变化。')]
+            ], uiText('DALL-E text-to-image flow', 'DALL-E 文生图流程'));
+        }
+
+        function buildDiffusionVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('denoising cue', '去噪线索'), uiText('Stable Diffusion repeatedly denoises a compact latent representation under text guidance.', 'Stable Diffusion 在文本引导下反复去噪压缩潜表示。')],
+                [uiText('interaction', '互动点'), uiText('Scrub through denoising steps to see noise turn into prompt-aligned structure.', '拖动去噪步骤，观察噪声如何变成符合提示的结构。')]
+            ], uiText('Latent diffusion denoising', '潜扩散去噪'));
+        }
+
+        function buildSamVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('prompt cue', '提示线索'), uiText('SAM separates reusable image features from point, box, or mask prompts.', 'SAM 将可复用图像特征与点、框或掩码提示分离。')],
+                [uiText('interaction', '互动点'), uiText('Click a point or drag a box to compare how the mask decoder changes the selected object.', '点击一个点或拖动一个框，对比掩码解码器如何改变选中对象。')]
+            ], uiText('Promptable segmentation flow', '可提示分割流程'));
+        }
+
         function buildOtterDemo() {
             return buildPaperDemo(`
                 <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Otter given-clause proof search">
@@ -8091,6 +8161,16 @@
                 backprop: () => buildBackpropVisualDemo(raw),
                 neocognitron: () => buildNeocognitronVisualDemo(raw),
                 transformer: () => buildTransformerVisualDemo(raw),
+                lstm: () => buildLstmVisualDemo(raw),
+                gan: () => buildGanVisualDemo(raw),
+                attentionSeq: () => buildAttentionSeqVisualDemo(raw),
+                bert: () => buildBertVisualDemo(raw),
+                gpt: () => buildGptVisualDemo(raw),
+                alphafold: () => buildAlphaFoldVisualDemo(raw),
+                clip: () => buildClipVisualDemo(raw),
+                dalle: () => buildDalleVisualDemo(raw),
+                diffusion: () => buildDiffusionVisualDemo(raw),
+                sam: () => buildSamVisualDemo(raw),
                 otter: buildOtterDemo,
                 watson: buildWatsonDemo,
                 draughts: buildDraughtsDemo,
