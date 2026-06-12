@@ -68,8 +68,11 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
      - 不能放第二张人物照。
      - 优先本地原创 SVG/PNG explainer；不要直接复制受版权保护的论文图。
   3. `achievement.visualModules[0]` 为相关文章、论文、项目页或档案页卡片（`type: "archiveLink"`）。
-     - 必须包含 `site/title/description/url/source/action`。
+     - 必须包含 `site/title/description/url/source/action`，并推荐包含 `license/usage`。
      - 这是右侧 article/source 卡片，不是普通图片。
+     - `site/title/description/license/action/usage` 都必须支持 `{en, zh}`；中文页不能出现 `Open project page`、`Reference link only`、`downloadable implementation materials`、`paper record` 这类英文 UI 句子。
+     - `zh` 字段必须写成中文用户能直接理解的自然句，例如 `打开项目页面`、`仅作为参考链接；本地图片为重绘，不复制出版方图形。`、`弗赖堡团队的项目页面，提供 U-Net 实现材料下载。`
+     - 允许保留通用专名、论文标题、代码仓库名、缩写和模型名（如 GitHub、arXiv、U-Net、Faster R-CNN、DOI），但周围解释文字必须是中文。
 
 #### 2. 底部互动解释区
 
@@ -113,11 +116,18 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 - 中文页显示中文，英文页显示英文。
 - 不要把英文直接复制到 `zh` 字段，除非是通用专名、缩写或模型名（如 ReLU、LeNet、AlexNet、arXiv）。
 - 需要覆盖：`title/description/location/figures/commentarySections/achievement/imageMeta/visualModules/sources/quizzes`。
+- 人名在中文页必须用中文译名或中文可读形式：例如 `Kaiming He` 应显示为 `何恺明`，`Shaoqing Ren` 应显示为 `任少卿`。仓库路径、论文标题或机构英文专名可保留，但人物显示名和人物说明不能只用英文。
+- `imageMeta.caption/subcaption/sourceName/license/usage` 必须双语；portrait 卡片的中文 caption 应类似 `何恺明肖像`，subcaption 应是一句短关系说明，如 `Faster R-CNN 共同作者`，不要写长段落。
+- `achievement.visualModules` 右侧卡片也属于页面可见字段，必须完整本地化 `site/title/description/license/action/usage`。不要出现中英混杂句子，如 `项目 page and downloadable implementation materials from the 弗赖堡 group`。
+- 地区索引 / region picker 在中文页必须显示中文，且只显示国家级地区，不显示城市组合，如 `Tokyo, Japan`、`Fukuoka and San Diego`、`Zurich, Switzerland`。地区筛选应使用国家（如 `日本`、`美国`、`瑞士`），不要把城市字符串当作可选地区。
+- 中文来源标签也要自然本地化，例如 `ACM Digital Library` → `ACM 数字图书馆`，`MIT Press` → `麻省理工学院出版社`，`Open DOI page` → `打开 DOI 页面`。
 
 #### 7. 生成与验证
 
 - 修改 source 后必须运行 `node manage/generate.js`。
 - 至少运行 `npm run lint` 和 `npm test`。
+- 新增或大批修改 AI100 achievement 时，运行 `npm run validate:ai100-context`，确保主要 context sections 满足至少两句要求。
+- 新增 archive/right-side cards 后，应抽查生成后的 `milestones-data.js`，确认 `visualModules` 的中文字段没有英文 UI 句子残留。
 - 若影响启动或页面加载，运行 `npm run validate:startup`。
 - 不要手动编辑 `milestones-data.js`；它由生成脚本输出。
 
