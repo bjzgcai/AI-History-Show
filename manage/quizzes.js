@@ -2388,6 +2388,186 @@ module.exports = {
           "attention"
         ]
       }
+    ],
+    "ai100-1967-knn": [
+      {
+        "question": { "en": "How does KNN classify a new point?", "zh": "KNN 如何给一个新点分类？" },
+        "options": [
+          { "en": "By voting among nearby labeled examples", "zh": "让附近已标注样本投票" },
+          { "en": "By translating a sentence", "zh": "通过翻译句子" },
+          { "en": "By pruning a chess tree", "zh": "通过剪枝棋类搜索树" },
+          { "en": "By hiding every input feature", "zh": "通过隐藏所有输入特征" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "KNN is instance-based: the label comes from nearby training examples.", "zh": "KNN 是基于实例的方法：标签来自附近的训练样本。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["knn", "classification"]
+      }
+    ],
+    "ai100-1970-ridge": [
+      {
+        "question": { "en": "What does ridge regression add to least squares?", "zh": "岭回归在最小二乘中加入了什么？" },
+        "options": [
+          { "en": "An L2 penalty that shrinks coefficients", "zh": "收缩系数的 L2 惩罚" },
+          { "en": "A Go board", "zh": "围棋棋盘" },
+          { "en": "A chatbot script", "zh": "聊天机器人脚本" },
+          { "en": "A theorem clause only", "zh": "只有一个定理子句" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Ridge regression regularizes coefficients to reduce instability from correlated predictors.", "zh": "岭回归通过正则化系数，降低相关预测变量带来的不稳定性。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["ridge", "regularization"]
+      }
+    ],
+    "ai100-2005-hog": [
+      {
+        "question": { "en": "What kind of image evidence does HOG summarize?", "zh": "HOG 汇总哪类图像证据？" },
+        "options": [
+          { "en": "Local gradient directions in cells", "zh": "单元格中的局部梯度方向" },
+          { "en": "Next-word probabilities", "zh": "下一个词概率" },
+          { "en": "Database table joins", "zh": "数据库表连接" },
+          { "en": "Only GPS coordinates", "zh": "只有 GPS 坐标" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "HOG counts edge-orientation votes over local cells and normalized blocks.", "zh": "HOG 在局部单元和归一化块中统计边缘方向投票。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["hog", "vision"]
+      }
+    ],
+    "ai100-2006-surf": [
+      {
+        "question": { "en": "Why was SURF valued in local feature matching?", "zh": "SURF 在局部特征匹配中为什么有价值？" },
+        "options": [
+          { "en": "It made robust feature detection faster", "zh": "它让稳健特征检测更快" },
+          { "en": "It removed all images", "zh": "它删除所有图像" },
+          { "en": "It solved chess endgames", "zh": "它求解棋类残局" },
+          { "en": "It only stored text prompts", "zh": "它只存储文本提示" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "SURF uses ideas such as integral images to speed up robust local feature detection and description.", "zh": "SURF 使用积分图等思想，加速稳健局部特征检测与描述。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["surf", "feature-detection"]
+      }
+    ],
+    "ai100-1997-kernel-pca": [
+      {
+        "question": { "en": "What lets Kernel PCA find nonlinear components?", "zh": "Kernel PCA 靠什么找到非线性成分？" },
+        "options": [
+          { "en": "A kernel similarity matrix", "zh": "核相似性矩阵" },
+          { "en": "A random chess opening", "zh": "随机棋类开局" },
+          { "en": "A handwritten rule book only", "zh": "只有手写规则书" },
+          { "en": "A video playlist", "zh": "视频播放列表" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Kernel PCA applies PCA through kernel similarities rather than explicit original coordinates.", "zh": "Kernel PCA 通过核相似性而不是原始显式坐标来执行 PCA。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["kernel-pca", "kernel-methods"]
+      }
+    ],
+    "ai100-1999-nmf": [
+      {
+        "question": { "en": "What does NMF encourage in learned representations?", "zh": "NMF 鼓励学到什么样的表示？" },
+        "options": [
+          { "en": "Additive nonnegative parts", "zh": "可相加的非负部件" },
+          { "en": "Negative-only labels", "zh": "只有负数标签" },
+          { "en": "Tree-search pruning", "zh": "树搜索剪枝" },
+          { "en": "Token self-attention", "zh": "令牌自注意力" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "NMF represents data as nonnegative basis parts combined with nonnegative activations.", "zh": "NMF 将数据表示为非负基部件与非负激活的组合。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["nmf", "factorization"]
+      }
+    ],
+    "ai100-2000-isomap": [
+      {
+        "question": { "en": "What distance does Isomap try to preserve?", "zh": "Isomap 试图保持哪种距离？" },
+        "options": [
+          { "en": "Geodesic distance along a neighbor graph", "zh": "邻居图上的测地距离" },
+          { "en": "The distance between two websites", "zh": "两个网站之间的距离" },
+          { "en": "A chatbot response delay", "zh": "聊天机器人响应延迟" },
+          { "en": "Only image brightness", "zh": "只有图像亮度" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Isomap estimates distances along the manifold through shortest paths on a neighbor graph.", "zh": "Isomap 通过邻居图上的最短路径估计沿流形的距离。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["isomap", "manifold-learning"]
+      }
+    ],
+    "ai100-2000-lle": [
+      {
+        "question": { "en": "What relationship does LLE preserve?", "zh": "LLE 保持什么关系？" },
+        "options": [
+          { "en": "Local reconstruction from nearest neighbors", "zh": "由最近邻进行局部重建" },
+          { "en": "Only chronological order", "zh": "只有时间顺序" },
+          { "en": "A game score table", "zh": "游戏分数表" },
+          { "en": "A random password", "zh": "随机密码" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "LLE keeps the weights that reconstruct each point from its nearby neighbors.", "zh": "LLE 保持每个点由附近邻居重建时的权重。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["lle", "manifold-learning"]
+      }
+    ],
+    "ai100-1982-som": [
+      {
+        "question": { "en": "What does a self-organizing map arrange?", "zh": "自组织映射会排列什么？" },
+        "options": [
+          { "en": "Output units into a topology-preserving grid", "zh": "把输出单元排列成保持拓扑的网格" },
+          { "en": "A list of chess openings", "zh": "棋类开局列表" },
+          { "en": "Only theorem names", "zh": "只有定理名称" },
+          { "en": "A fixed movie playlist", "zh": "固定电影播放列表" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "SOM learning adapts a grid so nearby units represent nearby input patterns.", "zh": "SOM 学习会调整网格，使相邻单元表示相近的输入模式。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["som", "unsupervised-learning"]
+      }
+    ],
+    "ai100-1967-back-propagation": [
+      {
+        "question": { "en": "What does back-propagation send backward through a network?", "zh": "反向传播把什么沿网络向后传递？" },
+        "options": [
+          { "en": "Error gradients for weight updates", "zh": "用于权重更新的误差梯度" },
+          { "en": "Raw video frames only", "zh": "只有原始视频帧" },
+          { "en": "A list of database columns", "zh": "数据库列列表" },
+          { "en": "The final answer without training", "zh": "不训练直接给最终答案" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Back-propagation uses gradients to assign credit or blame to earlier weights.", "zh": "反向传播用梯度把贡献或责任分配给更早的权重。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["backpropagation", "neural-networks"]
+      }
+    ],
+    "ai100-1980-neocognitron": [
+      {
+        "question": { "en": "What later family of models did the neocognitron anticipate?", "zh": "Neocognitron 预示了后来的哪类模型？" },
+        "options": [
+          { "en": "Convolutional vision networks", "zh": "卷积视觉网络" },
+          { "en": "Spreadsheet formulas only", "zh": "只有电子表格公式" },
+          { "en": "Audio compression codecs", "zh": "音频压缩编码" },
+          { "en": "A theorem database only", "zh": "只有定理数据库" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Its hierarchical feature and tolerance layers foreshadowed CNN-style visual processing.", "zh": "它的层级特征层和容忍层预示了 CNN 式视觉处理。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["neocognitron", "cnn"]
+      }
+    ],
+    "ai100-2017-transformer": [
+      {
+        "question": { "en": "What is the Transformer built around?", "zh": "Transformer 主要围绕什么构建？" },
+        "options": [
+          { "en": "Self-attention over tokens", "zh": "令牌之间的自注意力" },
+          { "en": "Only nearest-neighbor voting", "zh": "只有最近邻投票" },
+          { "en": "A chemical expert rule", "zh": "化学专家规则" },
+          { "en": "A fixed decision tree", "zh": "固定决策树" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing.", "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["transformer", "attention"]
+      }
     ]
   }
 };
