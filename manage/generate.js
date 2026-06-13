@@ -33,7 +33,9 @@ const {
     normalizeQuoteText
 } = require('../shared/utils.js');
 
-const { categories } = require('./catalog.js');
+const catalogConfig = require('./catalog.js');
+const categories = Array.isArray(catalogConfig.categories) ? catalogConfig.categories : [];
+const branches = Array.isArray(catalogConfig.branches) ? catalogConfig.branches : [];
 const eventsMap = require('./events.js');
 const avatarRegistry = loadAvatarRegistry();
 const researchCandidates = loadResearchCandidates();
@@ -79,11 +81,13 @@ function lookupVideo(catalog, id, key) {
 
 const milestones = [];
 
-for (const cat of categories) {
-    for (const key of cat.events) {
+function appendMilestonesFromGroup(group, groupKind) {
+    const events = Array.isArray(group.events) ? group.events : [];
+
+    for (const key of events) {
         const ev = eventsMap[key];
         if (!ev) {
-            console.warn(`[警告] catalog.js 中引用了 "${key}"，但 events.js 中不存在该事件，已跳过。`);
+            console.warn(`[警告] catalog.js ${groupKind} 中引用了 "${key}"，但 events.js 中不存在该事件，已跳过。`);
             continue;
         }
 
@@ -153,15 +157,19 @@ for (const cat of categories) {
         }
 
         const commentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
-        const storyline = ev.storyline || cat.storyline || null;
+        const groupStoryline = group.storyline || (groupKind === 'branch' && group.id ? {
+            id: group.id,
+            name: group.name
+        } : null);
+        const storyline = ev.storyline || groupStoryline || null;
         const storylineId = typeof storyline === 'string' ? storyline : (storyline && storyline.id) || '';
         const quizzes = storylineId === QUIZ_STORYLINE_ID ? selectQuizzes(key, ev) : [];
         const milestone = {
             id: `${MILESTONE_ID_PREFIX}${key}`,
             year: ev.year,
-            category: cat.name,
+            category: group.name,
             title: ev.title,
-            subtitle: cat.subtitle,
+            subtitle: group.subtitle || group.name,
             location: ev.location,
             description: ev.description,
             figures: (ev.figures || []).map((figure) => enrichFigure(figure, key)),
@@ -180,6 +188,14 @@ for (const cat of categories) {
         };
 
         if (storyline) milestone.storyline = storyline;
+        if (groupKind === 'branch' && group.id) {
+            milestone.branch = {
+                id: group.id,
+                name: group.name
+            };
+        }
+        if (ev.analysis) milestone.analysis = ev.analysis;
+        if (ev.papers) milestone.papers = ev.papers;
         if (ev.achievement) milestone.achievement = ev.achievement;
         if (quizzes.length > 0) {
             milestone.quiz = quizzes[0];
@@ -189,6 +205,9 @@ for (const cat of categories) {
         milestones.push(milestone);
     }
 }
+
+categories.forEach((cat) => appendMilestonesFromGroup(cat, 'category'));
+branches.forEach((branch) => appendMilestonesFromGroup(branch, 'branch'));
 
 // ─── 辅助函数 ────────────────────────────────────────────────────────────────
 
@@ -476,7 +495,7 @@ for (const item of missingAvatarAssets) {
 for (const file of OUTPUTS) {
     console.log(`✓ ${writeResults.get(file) ? '生成完成' : '内容未变化'}：${file}`);
 }
-console.log(`  共 ${categories.length} 个分类，${milestones.length} 个事件`);
+console.log(`  共 ${categories.length} 个分类，${branches.length} 个分支，${milestones.length} 个事件`);
 if (missingAvatarAssets.length > 0) {
     console.log(`  头像资源缺失：${missingAvatarAssets.length}`);
 }

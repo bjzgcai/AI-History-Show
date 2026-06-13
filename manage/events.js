@@ -2773,6 +2773,32 @@ module.exports = {
       "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
       "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
     },
+    "analysis": {
+      "what": {
+        "en": "AlphaGo defeated Lee Sedol and showed that AI could master Go, a game whose state space had long resisted brute-force search.",
+        "zh": "AlphaGo 击败李世石，证明 AI 可以掌握长期被认为难以靠蛮力搜索解决的围棋。"
+      },
+      "how": {
+        "en": "It combined policy networks, value networks, reinforcement learning from self-play and Monte Carlo tree search into one decision loop.",
+        "zh": "它把策略网络、价值网络、自我对弈强化学习和蒙特卡洛树搜索结合成一个决策闭环。"
+      },
+      "why": {
+        "en": "Go was too large for exhaustive enumeration. Neural networks supplied learned intuition, while tree search converted that intuition into concrete plans.",
+        "zh": "围棋空间过大，无法穷举。神经网络提供学习到的直觉，树搜索再把这种直觉转化为具体计划。"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+          "zh": "Mastering the Game of Go with Deep Neural Networks and Tree Search"
+        },
+        "authors": "David Silver et al.",
+        "journal": "Nature",
+        "year": 2016,
+        "url": "https://www.nature.com/articles/nature16961"
+      }
+    ],
     "commentarySections": [
       {
         "label": {
@@ -11490,6 +11516,32 @@ module.exports = {
       "en": "BenchCouncil AI100: Game AI / Deep Blue",
       "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
     },
+    "analysis": {
+      "what": {
+        "en": "Deep Blue defeated reigning world chess champion Garry Kasparov in a regulation match, turning computer chess into a public AI milestone.",
+        "zh": "Deep Blue 在正式比赛中击败卫冕世界冠军加里·卡斯帕罗夫，使计算机国际象棋成为公众熟知的 AI 里程碑。"
+      },
+      "how": {
+        "en": "It used massively parallel alpha-beta search, chess-specific evaluation, opening and endgame knowledge, and custom chips for move generation and scoring.",
+        "zh": "它使用大规模并行 alpha-beta 搜索、国际象棋专用评估、开局与残局知识，并用定制芯片加速走法生成和局面评分。"
+      },
+      "why": {
+        "en": "Human champions relied on selective intuition. Deep Blue won by pushing calculation depth and chess-specific hardware beyond human tactical reach.",
+        "zh": "人类冠军依靠选择性直觉。Deep Blue 通过远超人类战术覆盖范围的计算深度和棋类专用硬件取得突破。"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Deep Blue",
+          "zh": "Deep Blue"
+        },
+        "authors": "Murray Campbell, A. Joseph Hoane Jr., Feng-hsiung Hsu",
+        "journal": "Artificial Intelligence",
+        "year": 2002,
+        "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
+      }
+    ],
     "commentarySections": [
       {
         "label": {
@@ -15335,6 +15387,32 @@ module.exports = {
       "en": "BenchCouncil AI100: Game / Chinook",
       "zh": "BenchCouncil AI100：游戏 / Chinook 跳棋程序"
     },
+    "analysis": {
+      "what": {
+        "en": "Chinook became the first computer program to win the world checkers championship and later helped prove that perfect play in checkers ends in a draw.",
+        "zh": "Chinook 成为首个赢得世界跳棋冠军的计算机程序，随后帮助证明跳棋在完美对弈下结果为和棋。"
+      },
+      "how": {
+        "en": "It combined opening books, alpha-beta search, hand-tuned evaluation and very large endgame databases that mapped late positions to proven outcomes.",
+        "zh": "它结合开局库、alpha-beta 搜索、人工调校评估函数，以及把后期局面映射到可证明结果的大规模残局数据库。"
+      },
+      "why": {
+        "en": "Earlier programs could search but still became uncertain near the endgame. Chinook made the endgame exact, so search could terminate in verified game-theoretic results.",
+        "zh": "早期程序虽能搜索，但残局阶段仍不确定。Chinook 把残局做成精确数据库，让搜索能落到经验证的博弈论结果上。"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Checkers Is Solved",
+          "zh": "Checkers Is Solved"
+        },
+        "authors": "Jonathan Schaeffer, Neil Burch, Yngvi Bjornsson, Akihiro Kishimoto, Martin Muller, Robert Lake, Paul Lu, Steve Sutphen",
+        "journal": "Science",
+        "year": 2007,
+        "url": "https://www.science.org/doi/10.1126/science.1144079"
+      }
+    ],
     "commentarySections": [
       {
         "label": {
