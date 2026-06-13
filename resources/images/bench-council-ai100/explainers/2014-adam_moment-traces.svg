@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Adam moment traces</title>
+  <desc id="desc">Adam 一阶/二阶矩曲线</desc>
+  <rect width="1200" height="720" fill="#101827"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <text x="90" y="120" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Adam moment traces</text>
+  <text x="90" y="164" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">Adam 一阶/二阶矩曲线</text>
+  <path d="M90 390 C190 210 275 430 390 245 C510 70 650 390 805 180 C900 80 980 125 1070 90" fill="none" stroke="#f59e0b" stroke-width="16"/><path d="M90 500 C260 430 420 470 590 360 C735 265 885 280 1070 210" fill="none" stroke="#38bdf8" stroke-width="12" stroke-dasharray="24 18"/>
+  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Trace · local redraw from source material</text>
+</svg>

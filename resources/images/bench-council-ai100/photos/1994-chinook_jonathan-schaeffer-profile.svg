@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Jonathan Schaeffer profile card</title>
+  <desc id="desc">A local profile card for Jonathan Schaeffer and the Chinook checkers system.</desc>
+  <rect width="960" height="640" fill="#172554"/>
+  <rect x="48" y="48" width="864" height="544" rx="28" fill="#f8fafc"/>
+  <g transform="translate(92 98)">
+    <rect width="302" height="302" rx="24" fill="#e0f2fe"/>
+    <g transform="translate(45 45)">
+      <rect width="212" height="212" fill="#bae6fd"/>
+      <g fill="#0c4a6e">
+        <rect x="0" y="0" width="53" height="53"/>
+        <rect x="106" y="0" width="53" height="53"/>
+        <rect x="53" y="53" width="53" height="53"/>
+        <rect x="159" y="53" width="53" height="53"/>
+        <rect x="0" y="106" width="53" height="53"/>
+        <rect x="106" y="106" width="53" height="53"/>
+        <rect x="53" y="159" width="53" height="53"/>
+        <rect x="159" y="159" width="53" height="53"/>
+      </g>
+      <circle cx="80" cy="80" r="24" fill="#f97316"/>
+      <circle cx="133" cy="133" r="24" fill="#f97316"/>
+    </g>
+  </g>
+  <circle cx="243" cy="456" r="62" fill="#1d4ed8"/>
+  <path d="M188 548c10-60 41-92 55-92s45 32 55 92" fill="#93c5fd"/>
+  <text x="434" y="154" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800">Jonathan Schaeffer</text>
+  <text x="434" y="212" fill="#0369a1" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Chinook checkers system</text>
+  <text x="434" y="292" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="25">Game-search researcher</text>
+  <text x="434" y="338" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="25">Opening books, alpha-beta, endgame tables</text>
+  <path d="M436 430h118l38 42h126" fill="none" stroke="#0ea5e9" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="436" cy="430" r="18" fill="#f97316"/>
+  <circle cx="592" cy="472" r="18" fill="#f97316"/>
+  <circle cx="718" cy="472" r="18" fill="#f97316"/>
+  <text x="92" y="574" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="20">Local profile card, not a source photograph</text>
+</svg>
