@@ -110,6 +110,1171 @@
                 1fr;
         }
 
+        html.branch-timeline-active,
+        html.branch-timeline-active body {
+            height: 100%;
+            min-height: 100%;
+            overflow: hidden;
+            background: #f4f0e8;
+            color: #181716;
+        }
+
+        html.branch-timeline-active body::before {
+            display: none;
+        }
+
+        .stage-viewport.is-branch-timeline {
+            height: 100vh;
+            min-height: 100vh;
+            overflow: hidden;
+            background: #f4f0e8;
+        }
+
+        .single-stage.is-branch-timeline {
+            position: relative;
+            left: auto;
+            top: auto;
+            width: 100%;
+            height: 100vh;
+            min-height: 100vh;
+            transform: none;
+            display: block;
+            padding: 0;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 82% 14%, rgba(216, 112, 76, 0.12), transparent 22%),
+                #f4f0e8;
+            color: #181716;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+        }
+
+        .single-stage.is-branch-timeline .stage-grid,
+        .single-stage.is-branch-timeline .stage-footer {
+            display: none;
+        }
+
+        .single-stage.is-branch-timeline .stage-topbar {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 28px 32px 0;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            gap: 28px;
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup {
+            width: auto;
+            min-width: 0;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #201d1a;
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup::before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background:
+                linear-gradient(90deg, transparent 42%, #d86f4b 42% 58%, transparent 58%),
+                linear-gradient(0deg, transparent 42%, #d86f4b 42% 58%, transparent 58%),
+                linear-gradient(45deg, transparent 42%, #d86f4b 42% 58%, transparent 58%),
+                linear-gradient(-45deg, transparent 42%, #d86f4b 42% 58%, transparent 58%);
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup::after {
+            content: "AI History Show";
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .single-stage.is-branch-timeline .brand-image {
+            display: none;
+        }
+
+        .single-stage.is-branch-timeline .topbar-actions {
+            justify-self: end;
+            gap: 10px;
+        }
+
+        .single-stage.is-branch-timeline .storyline-select {
+            width: 330px;
+            border-color: rgba(32, 29, 26, 0.22);
+            background: rgba(255, 255, 255, 0.42);
+            color: #3d3934;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            text-transform: none;
+        }
+
+        .single-stage.is-branch-timeline .storyline-select option {
+            background: #f4f0e8;
+            color: #181716;
+        }
+
+        .single-stage.is-branch-timeline .mode-chip-label {
+            color: #3c3834;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .single-stage.is-branch-timeline .language-toggle.topbar-language-toggle {
+            border-color: rgba(32, 29, 26, 0.28);
+            color: #3c3834;
+            background: rgba(255, 255, 255, 0.34);
+        }
+
+        .branch-timeline-page {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 142px 32px 104px;
+            color: #181716;
+            overflow: hidden;
+        }
+
+        .branch-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 330px;
+            gap: 64px;
+            align-items: center;
+            min-height: 360px;
+        }
+
+        .branch-hero-title {
+            max-width: 760px;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            color: #171514;
+            font-size: clamp(58px, 7vw, 104px);
+            font-weight: 600;
+            line-height: 0.98;
+            letter-spacing: -0.035em;
+        }
+
+        .branch-hero-title .accent {
+            color: #d87350;
+        }
+
+        .branch-hero-subtitle {
+            max-width: 620px;
+            margin-top: 28px;
+            color: #5d5650;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.75;
+        }
+
+        .branch-pixel-scene {
+            justify-self: center;
+            width: 340px;
+            height: 214px;
+            position: relative;
+            image-rendering: pixelated;
+            transform: scale(0.86);
+            transform-origin: center;
+        }
+
+        .branch-pixel-scene::before,
+        .branch-pixel-scene::after {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+
+        .branch-pixel-scene::before {
+            left: 28px;
+            top: 42px;
+            width: 264px;
+            height: 118px;
+            background:
+                linear-gradient(90deg, #d87350 0 24px, transparent 24px 48px, #d87350 48px 72px, transparent 72px 96px, #d87350 96px 120px, transparent 120px 144px, #d87350 144px 168px, transparent 168px 192px, #d87350 192px 216px, transparent 216px 240px, #d87350 240px 264px),
+                linear-gradient(#d87350, #d87350);
+            box-shadow:
+                -42px 72px 0 #d87350,
+                46px -22px 0 #d87350,
+                84px -22px 0 #bb6548,
+                168px -22px 0 #d87350,
+                206px -22px 0 #bb6548;
+        }
+
+        .branch-pixel-scene::after {
+            left: 86px;
+            top: 86px;
+            width: 120px;
+            height: 42px;
+            background:
+                linear-gradient(90deg, #171514 0 12px, transparent 12px 24px, #171514 24px 36px, transparent 36px 72px, #171514 72px 84px, transparent 84px 96px, #171514 96px 108px, transparent 108px),
+                linear-gradient(#171514, #171514);
+            clip-path: polygon(0 0, 34% 0, 34% 100%, 0 100%, 0 70%, 12% 70%, 12% 30%, 0 30%, 0 0, 66% 0, 100% 0, 100% 30%, 88% 30%, 88% 70%, 100% 70%, 100% 100%, 66% 100%, 66% 0);
+        }
+
+        .branch-order-link {
+            display: block;
+            width: max-content;
+            margin: 72px auto 26px;
+            color: #b96f57;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid currentColor;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 14px;
+            cursor: default;
+        }
+
+        .branch-timeline {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(var(--branch-count, 3), minmax(360px, 1fr));
+            gap: 28px;
+            padding: 44px 4px 42px;
+            overflow-x: auto;
+            overflow-y: visible;
+            scroll-snap-type: x proximity;
+            scrollbar-color: rgba(216, 115, 80, 0.56) rgba(112, 100, 88, 0.12);
+        }
+
+        .branch-timeline::before {
+            content: "";
+            position: absolute;
+            top: 52px;
+            left: 8px;
+            right: 8px;
+            bottom: auto;
+            width: auto;
+            height: 1px;
+            background: rgba(112, 100, 88, 0.28);
+        }
+
+        .branch-event {
+            position: relative;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: auto auto auto;
+            align-items: start;
+            gap: 20px;
+            min-width: 0;
+            scroll-snap-align: start;
+        }
+
+        .branch-event-dot {
+            position: relative;
+            z-index: 2;
+            grid-column: 1;
+            justify-self: start;
+            margin-left: 20px;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d87350;
+            border-radius: 50%;
+            background: #f4f0e8;
+        }
+
+        .branch-event-content {
+            display: grid;
+            gap: 16px;
+            max-width: 520px;
+        }
+
+        .branch-event.is-left .branch-event-content {
+            grid-column: 1;
+            justify-self: stretch;
+            text-align: left;
+        }
+
+        .branch-event.is-right .branch-event-content {
+            grid-column: 1;
+            justify-self: stretch;
+            text-align: left;
+        }
+
+        .branch-event-visual {
+            grid-column: 1;
+            grid-row: auto;
+            width: 100%;
+            height: 150px;
+            min-height: 140px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+
+        .branch-event.is-left .branch-event-visual {
+            grid-column: 1;
+            justify-self: stretch;
+        }
+
+        .branch-event.is-right .branch-event-visual {
+            grid-column: 1;
+            justify-self: stretch;
+        }
+
+        .branch-event-visual img {
+            display: block;
+            width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+            filter: saturate(0.9) sepia(0.08);
+        }
+
+        .branch-event.is-visual-first .branch-event-visual {
+            grid-row: 2;
+        }
+
+        .branch-event.is-visual-first .branch-event-content {
+            grid-row: 3;
+        }
+
+        .branch-event.is-content-first .branch-event-content {
+            grid-row: 2;
+        }
+
+        .branch-event.is-content-first .branch-event-visual {
+            grid-row: 3;
+        }
+
+        .branch-event-visual.is-photo img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            mix-blend-mode: normal;
+            filter: sepia(0.2) saturate(0.85);
+        }
+
+        .branch-illustration {
+            position: relative;
+            width: 360px;
+            height: 260px;
+            color: #171514;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .branch-illustration::before {
+            content: "";
+            position: absolute;
+            inset: 24px 12px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(216, 115, 80, 0.22), transparent 62%);
+            filter: blur(10px);
+        }
+
+        .branch-checker-board {
+            position: absolute;
+            left: 76px;
+            top: 30px;
+            width: 204px;
+            height: 204px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            border: 6px solid #d87350;
+            background: #eadcca;
+            transform: rotate(-7deg);
+            box-shadow: 18px 20px 0 rgba(216, 115, 80, 0.18);
+        }
+
+        .branch-checker-cell {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .branch-checker-cell.dark {
+            background: #d87350;
+        }
+
+        .branch-disc {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #171514;
+            box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.12);
+        }
+
+        .branch-disc.one {
+            left: 116px;
+            top: 75px;
+        }
+
+        .branch-disc.two {
+            left: 194px;
+            top: 125px;
+            background: #f4f0e8;
+            border: 4px solid #171514;
+        }
+
+        .branch-disc.three {
+            left: 154px;
+            top: 176px;
+            background: #d87350;
+        }
+
+        .branch-tree-rail {
+            position: absolute;
+            left: 58px;
+            top: 38px;
+            width: 250px;
+            height: 170px;
+        }
+
+        .branch-tree-rail::before,
+        .branch-tree-rail::after {
+            content: "";
+            position: absolute;
+            left: 70px;
+            width: 150px;
+            height: 2px;
+            background: #d87350;
+            transform-origin: left center;
+        }
+
+        .branch-tree-rail::before {
+            top: 70px;
+            transform: rotate(-24deg);
+        }
+
+        .branch-tree-rail::after {
+            top: 72px;
+            transform: rotate(24deg);
+        }
+
+        .branch-node {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #d87350;
+            color: #171514;
+            font-size: 22px;
+            font-weight: 900;
+            box-shadow: 0 12px 0 rgba(216, 115, 80, 0.18);
+        }
+
+        .branch-node.root {
+            left: 40px;
+            top: 52px;
+        }
+
+        .branch-node.a {
+            left: 184px;
+            top: 0;
+            background: #171514;
+            color: #f4f0e8;
+        }
+
+        .branch-node.b {
+            left: 184px;
+            top: 112px;
+        }
+
+        .branch-prune {
+            position: absolute;
+            right: 36px;
+            top: 74px;
+            width: 78px;
+            height: 78px;
+            border: 8px solid #d87350;
+            border-radius: 50%;
+        }
+
+        .branch-prune::before {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: -12px;
+            width: 8px;
+            height: 94px;
+            background: #d87350;
+            transform: rotate(-45deg);
+        }
+
+        .branch-go-board {
+            position: absolute;
+            left: 60px;
+            top: 26px;
+            width: 228px;
+            height: 228px;
+            border: 6px solid #d87350;
+            border-radius: 4px;
+            background:
+                linear-gradient(rgba(23, 21, 20, 0.24) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(23, 21, 20, 0.24) 1px, transparent 1px),
+                #ecdac5;
+            background-size: calc(100% / 8) calc(100% / 8);
+            transform: rotate(4deg);
+            box-shadow: -20px 20px 0 rgba(216, 115, 80, 0.16);
+        }
+
+        .branch-go-stone {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background: #171514;
+        }
+
+        .branch-go-stone.white {
+            background: #f9f3e9;
+            border: 3px solid #171514;
+        }
+
+        .branch-go-stone.move {
+            background: #d87350;
+            box-shadow: 0 0 0 8px rgba(216, 115, 80, 0.22);
+        }
+
+        .branch-meta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #746b62;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .branch-event.is-right .branch-meta {
+            justify-content: flex-start;
+        }
+
+        .branch-chip {
+            border: 1px solid rgba(116, 107, 98, 0.38);
+            border-radius: 999px;
+            padding: 2px 10px 3px;
+            color: #8a8178;
+            background: rgba(255, 255, 255, 0.25);
+            font-weight: 500;
+        }
+
+        .branch-event-title {
+            color: #171514;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-size: clamp(28px, 3vw, 38px);
+            font-weight: 600;
+            line-height: 1.08;
+            letter-spacing: -0.02em;
+        }
+
+        .branch-event-summary,
+        .branch-analysis-item {
+            color: #3f3a35;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .branch-analysis {
+            display: grid;
+            gap: 8px;
+            margin-top: 2px;
+        }
+
+        .branch-analysis-item strong {
+            color: #c56b4b;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .branch-source-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 4px;
+        }
+
+        .branch-event.is-right .branch-source-row {
+            justify-content: flex-start;
+        }
+
+        .branch-source-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            border: 1px solid rgba(116, 107, 98, 0.28);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.46);
+            color: #2d2925;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 650;
+        }
+
+        .branch-source-link:hover,
+        .branch-source-link:focus-visible {
+            border-color: #d87350;
+            color: #a74f35;
+            outline: none;
+        }
+
+        .branch-elements {
+            display: grid;
+            gap: 12px;
+            margin-top: 2px;
+        }
+
+        .branch-element-group {
+            display: grid;
+            gap: 7px;
+        }
+
+        .branch-element-label {
+            color: #b96f57;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .branch-element-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .branch-element-item {
+            display: inline-flex;
+            max-width: 100%;
+            flex-direction: column;
+            gap: 2px;
+            border: 1px solid rgba(116, 107, 98, 0.24);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.36);
+            color: #2d2925;
+            padding: 7px 9px;
+            text-decoration: none;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .branch-element-item strong {
+            overflow: hidden;
+            color: inherit;
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1.25;
+            text-overflow: ellipsis;
+        }
+
+        .branch-element-item small {
+            color: #746b62;
+            font-size: 11px;
+            font-weight: 650;
+            line-height: 1.25;
+        }
+
+        a.branch-element-item:hover,
+        a.branch-element-item:focus-visible {
+            border-color: #d87350;
+            color: #a74f35;
+            outline: none;
+        }
+
+        @media (max-width: 900px) {
+            .single-stage.is-branch-timeline .stage-topbar {
+                grid-template-columns: 1fr;
+                padding: 22px 20px 0;
+            }
+
+            .single-stage.is-branch-timeline .topbar-actions {
+                justify-self: stretch;
+                align-items: stretch;
+            }
+
+            .single-stage.is-branch-timeline .storyline-select {
+                width: 100%;
+            }
+
+            .branch-timeline-page {
+                padding: 86px 20px 72px;
+            }
+
+            .branch-hero {
+                grid-template-columns: 1fr;
+                gap: 44px;
+                min-height: 0;
+            }
+
+            .branch-hero-title {
+                font-size: clamp(44px, 14vw, 68px);
+            }
+
+            .branch-pixel-scene {
+                width: 280px;
+                transform: scale(0.86);
+                transform-origin: center;
+            }
+
+            .branch-timeline {
+                grid-template-columns: none;
+                grid-auto-flow: column;
+                grid-auto-columns: minmax(280px, 82vw);
+                gap: 18px;
+                padding: 40px 2px 34px;
+            }
+
+            .branch-timeline::before {
+                top: 48px;
+                left: 8px;
+                right: 8px;
+            }
+
+            .branch-event {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 16px;
+                align-items: start;
+            }
+
+            .branch-event-dot {
+                grid-column: 1;
+                margin-top: 0;
+                margin-left: 18px;
+            }
+
+            .branch-event.is-left .branch-event-content,
+            .branch-event.is-right .branch-event-content {
+                grid-column: 1;
+                justify-self: stretch;
+                text-align: left;
+            }
+
+            .branch-event.is-left .branch-meta,
+            .branch-event.is-right .branch-meta,
+            .branch-event.is-left .branch-source-row,
+            .branch-event.is-right .branch-source-row,
+            .branch-event.is-left .branch-element-list,
+            .branch-event.is-right .branch-element-list {
+                justify-content: flex-start;
+            }
+
+            .branch-event-visual {
+                grid-column: 1 !important;
+                grid-row: auto;
+                justify-self: stretch !important;
+                margin-top: 0;
+            }
+        }
+
+        html.branch-timeline-active,
+        html.branch-timeline-active body {
+            background: #000;
+            color: var(--text);
+        }
+
+        html.branch-timeline-active body::before {
+            display: block;
+        }
+
+        .stage-viewport.is-branch-timeline {
+            background: #000;
+        }
+
+        .single-stage.is-branch-timeline {
+            background:
+                radial-gradient(circle at 78% 16%, rgba(246, 137, 0, 0.16), transparent 24%),
+                radial-gradient(circle at 20% 10%, rgba(79, 4, 4, 0.34), transparent 30%),
+                #000;
+            color: var(--text);
+            font-family: var(--ui-font);
+        }
+
+        .single-stage.is-branch-timeline .stage-topbar {
+            max-width: 1680px;
+            padding: 24px 42px 0;
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup {
+            width: 431px;
+            color: var(--text);
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup::before,
+        .single-stage.is-branch-timeline .brand-lockup::after {
+            display: none;
+        }
+
+        .single-stage.is-branch-timeline .brand-image {
+            display: block;
+            width: 431px;
+        }
+
+        .single-stage.is-branch-timeline .storyline-select {
+            border-color: rgba(244, 239, 229, 0.24);
+            background: rgba(0, 0, 0, 0.34);
+            color: rgba(244, 239, 229, 0.78);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+        }
+
+        .single-stage.is-branch-timeline .storyline-select option {
+            background: #0b0b0b;
+            color: #f4efe5;
+        }
+
+        .single-stage.is-branch-timeline .mode-chip-label {
+            color: rgba(244, 239, 229, 0.56);
+            font-size: 23px;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .single-stage.is-branch-timeline .language-toggle.topbar-language-toggle {
+            border-color: rgba(244, 239, 229, 0.34);
+            background: transparent;
+            color: rgba(244, 239, 229, 0.42);
+        }
+
+        .branch-timeline-page {
+            max-width: 1680px;
+            height: calc(100vh - 82px);
+            padding: 8px 42px 30px;
+            color: var(--text);
+            display: grid;
+            grid-template-rows: 132px minmax(0, 1fr);
+            align-content: stretch;
+        }
+
+        .branch-timeline-page[hidden] {
+            display: none !important;
+        }
+
+        .branch-hero {
+            display: flex;
+            grid-template-columns: 1fr;
+            gap: 0;
+            align-items: center;
+            min-height: 0;
+        }
+
+        .branch-hero-title {
+            max-width: none;
+            color: var(--text);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: clamp(34px, 3.5vw, 58px);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        .branch-hero-title .accent {
+            color: var(--accent);
+        }
+
+        .branch-hero-subtitle {
+            max-width: 740px;
+            margin-top: 12px;
+            color: var(--text-soft);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.45;
+        }
+
+        .branch-hero > .branch-pixel-scene {
+            display: none;
+        }
+
+        .branch-pixel-scene {
+            width: 292px;
+            height: 158px;
+            transform: none;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background:
+                linear-gradient(90deg, rgba(246, 137, 0, 0.2), transparent 1px),
+                linear-gradient(rgba(246, 137, 0, 0.16), transparent 1px),
+                rgba(255, 255, 255, 0.035);
+            background-size: 42px 42px;
+        }
+
+        .branch-pixel-scene::before {
+            left: 46px;
+            top: 48px;
+            width: 198px;
+            height: 62px;
+            border: 1px solid rgba(246, 137, 0, 0.58);
+            border-radius: 7px;
+            background:
+                radial-gradient(circle at 18% 50%, var(--accent) 0 8px, transparent 9px),
+                radial-gradient(circle at 50% 50%, rgba(244, 239, 229, 0.9) 0 6px, transparent 7px),
+                radial-gradient(circle at 82% 50%, var(--accent) 0 8px, transparent 9px),
+                rgba(0, 0, 0, 0.52);
+            box-shadow: 0 0 36px rgba(246, 137, 0, 0.18);
+        }
+
+        .branch-pixel-scene::after {
+            left: 72px;
+            top: 79px;
+            width: 148px;
+            height: 2px;
+            background: rgba(246, 137, 0, 0.72);
+            clip-path: none;
+        }
+
+        .branch-order-link {
+            display: none;
+        }
+
+        .branch-timeline {
+            gap: 24px;
+            min-height: 0;
+            height: 100%;
+            padding: 0 4px;
+            align-items: stretch;
+            scroll-behavior: smooth;
+            overscroll-behavior-x: contain;
+            scrollbar-width: none;
+        }
+
+        .branch-timeline::before {
+            display: none;
+        }
+
+        .branch-timeline::-webkit-scrollbar {
+            display: none;
+        }
+
+        .branch-event-dot {
+            display: none;
+        }
+
+        .branch-event {
+            gap: 12px;
+            height: 100%;
+            grid-template-rows: 176px minmax(0, 1fr);
+        }
+
+        .branch-event.is-visual-first .branch-event-visual,
+        .branch-event.is-content-first .branch-event-visual {
+            grid-row: 1;
+        }
+
+        .branch-event.is-visual-first .branch-event-content,
+        .branch-event.is-content-first .branch-event-content {
+            grid-row: 2;
+        }
+
+        .branch-event.is-content-first .branch-event-content {
+            grid-row: 2;
+        }
+
+        .branch-event.is-content-first .branch-event-visual {
+            grid-row: 1;
+        }
+
+        .branch-event-visual {
+            height: 176px;
+            min-height: 176px;
+            overflow: visible;
+        }
+
+        .branch-event-visual img {
+            max-height: 176px;
+        }
+
+        .branch-event-content {
+            max-width: 600px;
+            min-height: 0;
+            height: 100%;
+            max-height: none;
+            overflow: hidden;
+            align-content: start;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.064), rgba(255, 255, 255, 0.018)),
+                rgba(0, 0, 0, 0.58);
+            padding: 16px;
+            text-align: left;
+        }
+
+        .branch-event.is-left .branch-event-content,
+        .branch-event.is-right .branch-event-content {
+            text-align: left;
+        }
+
+        .branch-meta,
+        .branch-event.is-right .branch-meta {
+            justify-content: flex-start;
+            color: var(--text-muted);
+        }
+
+        .branch-chip {
+            border-color: rgba(246, 137, 0, 0.42);
+            background: rgba(246, 137, 0, 0.08);
+            color: var(--accent);
+            font-weight: 850;
+        }
+
+        .branch-event-title {
+            color: var(--text);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: clamp(21px, 1.75vw, 28px);
+            font-weight: 900;
+            line-height: 1.12;
+            letter-spacing: 0;
+        }
+
+        .branch-event-summary,
+        .branch-analysis-item {
+            color: var(--text-soft);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .branch-event-summary {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .branch-analysis {
+            display: none;
+        }
+
+        .branch-analysis-item strong {
+            color: var(--accent);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .branch-source-row,
+        .branch-event.is-right .branch-source-row {
+            justify-content: flex-start;
+        }
+
+        .branch-source-link {
+            border-color: rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(244, 239, 229, 0.84);
+            font-weight: 800;
+        }
+
+        .branch-source-link:hover,
+        .branch-source-link:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            color: var(--accent);
+        }
+
+        .branch-element-label {
+            color: var(--accent);
+        }
+
+        .branch-element-item {
+            border-color: rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(244, 239, 229, 0.88);
+            padding: 5px 8px;
+        }
+
+        .branch-element-item small {
+            color: var(--text-muted);
+        }
+
+        a.branch-element-item:hover,
+        a.branch-element-item:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            color: var(--accent);
+        }
+
+        .branch-illustration {
+            color: var(--text);
+            transform: scale(0.62);
+            transform-origin: center;
+        }
+
+        .branch-illustration::before {
+            background: radial-gradient(circle, rgba(246, 137, 0, 0.16), transparent 62%);
+        }
+
+        .branch-checker-board,
+        .branch-go-board {
+            border-color: var(--accent);
+            background-color: rgba(244, 239, 229, 0.08);
+            box-shadow: 18px 20px 0 rgba(246, 137, 0, 0.09);
+        }
+
+        .branch-checker-cell {
+            background: rgba(244, 239, 229, 0.1);
+        }
+
+        .branch-checker-cell.dark,
+        .branch-disc.three,
+        .branch-node,
+        .branch-go-stone.move {
+            background: var(--accent);
+        }
+
+        .branch-disc {
+            background: var(--text);
+        }
+
+        .branch-disc.two,
+        .branch-go-stone.white {
+            background: #050505;
+            border-color: var(--text);
+        }
+
+        .branch-tree-rail::before,
+        .branch-tree-rail::after,
+        .branch-prune::before {
+            background: var(--accent);
+        }
+
+        .branch-node {
+            color: #050505;
+        }
+
+        .branch-node.a {
+            background: var(--text);
+            color: #050505;
+        }
+
+        .branch-prune {
+            border-color: var(--accent);
+        }
+
+        .branch-go-board {
+            background:
+                linear-gradient(rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                rgba(244, 239, 229, 0.07);
+        }
+
+        @media (max-width: 900px) {
+            .single-stage.is-branch-timeline .stage-topbar {
+                padding: 22px 20px 0;
+            }
+
+            .single-stage.is-branch-timeline .brand-lockup,
+            .single-stage.is-branch-timeline .brand-image {
+                width: min(431px, 100%);
+            }
+
+            .branch-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .branch-event-content {
+                padding: 20px;
+            }
+        }
+
         .empty-state {
             display: grid;
             place-items: center;
@@ -4025,6 +5190,8 @@
                 </section>
             </main>
 
+            <main class="branch-timeline-page" id="branchTimelinePage" hidden></main>
+
             <footer class="stage-footer">
                 <button class="nav-button" id="prevBtn" type="button" aria-label="上一页">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -4101,7 +5268,7 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260610-ai100-source-refresh"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260611-gaming-ai-sample"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
@@ -4146,14 +5313,15 @@
                 }
             },
             {
-                id: 'board-games-card-games',
+                id: 'gaming-ai',
+                layout: 'branch-timeline',
                 label: {
-                    en: 'AI & Board/Card Games',
-                    zh: 'AI 与棋类 / 牌类游戏'
+                    en: 'AI in Board & Tabletop Games',
+                    zh: 'AI 在棋牌与博弈论的演进'
                 },
                 note: {
-                    en: 'Future storyline from game benchmarks and matches',
-                    zh: '待扩展：游戏基准与经典对局故事线'
+                    en: 'Sample branch from search to neural planning',
+                    zh: '从搜索到神经规划的样本分支'
                 }
             },
             {
@@ -4281,6 +5449,7 @@
             storylineSelect: document.getElementById('storylineSelect'),
             timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
+            branchTimelinePage: document.getElementById('branchTimelinePage'),
             globeStage: document.getElementById('globeStage'),
             globeShell: document.getElementById('globeShell'),
             singleGlobeContainer: document.getElementById('singleGlobeContainer'),
@@ -4491,6 +5660,11 @@
         function isAchievementMapActive() {
             const option = getActiveStorylineOption();
             return Boolean(option && option.layout === 'achievement-map');
+        }
+
+        function isBranchTimelineActive() {
+            const option = getActiveStorylineOption();
+            return Boolean(option && option.layout === 'branch-timeline');
         }
 
         function isResearchDossierActive() {
@@ -4999,13 +6173,14 @@
 
         function buildRightCommentarySections(vm) {
             const defaultLabels = [tx('quoteExcerpt'), tx('background'), tx('extension')];
-            const sourceSections = Array.isArray(vm.commentarySections)
+            const analysisSections = buildAnalysisSections(vm.raw);
+            const sourceSections = analysisSections.length > 0 ? analysisSections : (Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
-                : [];
+                : []);
             const maxSections = sourceSections.length > 3 ? 4 : 3;
             const sections = sourceSections.slice(0, maxSections).map((section, index) => ({
                 label: section.label || defaultLabels[index] || tx('contentInterpretation'),
-                text: stripHtml(section.html || ''),
+                text: section.text || stripHtml(section.html || ''),
                 link: section.link || null
             }));
 
@@ -5022,6 +6197,325 @@
             }
 
             return sections.slice(0, maxSections);
+        }
+
+        function buildAnalysisSections(rawMilestone) {
+            const analysis = rawMilestone && rawMilestone.analysis;
+            if (!analysis || typeof analysis !== 'object') return [];
+
+            return [
+                ['what', tx('analysisWhat')],
+                ['how', tx('analysisHow')],
+                ['why', tx('analysisWhy')]
+            ].map(([key, label]) => {
+                const text = String(lx(analysis[key]) || '').trim();
+                if (!text) return null;
+                return { label, text };
+            }).filter(Boolean);
+        }
+
+        function buildBranchHeroTitle(title) {
+            const safeTitle = escapeHtml(title || tx('branchGaming'));
+            if ((window.I18n && window.I18n.getLocale && window.I18n.getLocale()) === 'zh') {
+                return safeTitle.replace('博弈论', '<span class="accent">博弈论</span>');
+            }
+            return safeTitle.replace('Games', '<span class="accent">Games</span>');
+        }
+
+        function getBranchVisualImage(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const images = raw && raw.resources && Array.isArray(raw.resources.images)
+                ? raw.resources.images.filter(Boolean)
+                : [];
+            const demoImage = raw && raw.achievement ? String(raw.achievement.demoImage || '').trim() : '';
+            if (demoImage) return demoImage;
+
+            const explainer = images.find((url) => /\/explainers\/|explainer|diagram|search|database|policy|value|mcts|tree|perfect-play/i.test(String(url || '')));
+            if (explainer) return explainer;
+
+            return images.find(Boolean) || '';
+        }
+
+        function buildCheckerBoardCells() {
+            return Array.from({ length: 64 }, (_, index) => {
+                const row = Math.floor(index / 8);
+                const col = index % 8;
+                const dark = (row + col) % 2 === 1 ? ' dark' : '';
+                return `<span class="branch-checker-cell${dark}"></span>`;
+            }).join('');
+        }
+
+        function buildBranchIllustration(vm) {
+            const visual = getAchievementVisual(vm && vm.raw ? vm.raw : {});
+            if (visual === 'chinook') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-checker-board">${buildCheckerBoardCells()}</div>
+                        <span class="branch-disc one"></span>
+                        <span class="branch-disc two"></span>
+                        <span class="branch-disc three"></span>
+                    </div>
+                `;
+            }
+
+            if (visual === 'deepblue') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-tree-rail">
+                            <span class="branch-node root">K</span>
+                            <span class="branch-node a">Q</span>
+                            <span class="branch-node b">R</span>
+                        </div>
+                        <span class="branch-prune"></span>
+                    </div>
+                `;
+            }
+
+            if (visual === 'go') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-go-board">
+                            <span class="branch-go-stone" style="left:30%;top:34%"></span>
+                            <span class="branch-go-stone white" style="left:48%;top:42%"></span>
+                            <span class="branch-go-stone" style="left:65%;top:48%"></span>
+                            <span class="branch-go-stone white" style="left:38%;top:62%"></span>
+                            <span class="branch-go-stone move" style="left:24%;top:66%"></span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            return '';
+        }
+
+        function buildBranchVisual(vm) {
+            const illustration = buildBranchIllustration(vm);
+            if (illustration) {
+                return `<figure class="branch-event-visual">${illustration}</figure>`;
+            }
+
+            const image = getBranchVisualImage(vm);
+            if (!image) {
+                return `<div class="branch-event-visual"><div class="branch-pixel-scene" aria-hidden="true"></div></div>`;
+            }
+
+            const meta = buildArchivePhotoMeta(vm, image);
+            const photoClass = isPortraitLikePhoto(image) ? ' is-photo' : '';
+            return `
+                <figure class="branch-event-visual${photoClass}">
+                    <img src="${escapeHtml(image)}" alt="${escapeHtml(meta.name || vm.title || tx('archiveImage'))}">
+                </figure>
+            `;
+        }
+
+        function buildBranchSourceLinks(rawMilestone) {
+            const sources = getAchievementSources(rawMilestone).slice(0, 3);
+            if (!sources.length) return '';
+
+            return `
+                <div class="branch-source-row">
+                    ${sources.map((source) => `
+                        <a class="branch-source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
+                            ${escapeHtml(lx(source.label) || tx('source'))}
+                        </a>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function getBranchSourceTypeText(source) {
+            const type = source && source.type;
+            const values = [
+                lx(type),
+                type && typeof type === 'object' ? type.en : '',
+                type && typeof type === 'object' ? type.zh : '',
+                lx(source && source.label)
+            ];
+            return values.map((value) => String(value || '').toLowerCase()).join(' ');
+        }
+
+        function isBranchPaperSource(source) {
+            return /paper|publication|journal|doi|arxiv|pdf|\u8bba\u6587|\u6587\u732e|\u671f\u520a/.test(getBranchSourceTypeText(source));
+        }
+
+        function isBranchImageOnlySource(source) {
+            return /image source|portrait|photo|profile|api|github|engine|\u56fe\u7247|\u56fe\u50cf|\u7167\u7247|\u4eba\u7269\u8d44\u6599/.test(getBranchSourceTypeText(source));
+        }
+
+        function dedupeBranchItems(items) {
+            const seen = new Set();
+            return (items || []).filter((item) => {
+                const label = String(lx(item && item.label) || item && item.label || '').trim();
+                const url = String(item && item.url || '').trim();
+                const key = `${label.toLowerCase()}|${url}`;
+                if (!label || seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        }
+
+        function getBranchPeopleItems(vm) {
+            const figures = Array.isArray(vm && vm.figures) ? vm.figures : [];
+            return dedupeBranchItems(figures.map((figure) => ({
+                label: figure && figure.name,
+                detail: figure && figure.role
+            }))).slice(0, 3);
+        }
+
+        function getBranchPaperItems(rawMilestone) {
+            const papers = rawMilestone && Array.isArray(rawMilestone.papers) ? rawMilestone.papers : [];
+            return dedupeBranchItems(papers.map((paper) => {
+                const detail = [
+                    paper && paper.authors,
+                    paper && paper.journal,
+                    paper && paper.year
+                ].map((value) => String(lx(value) || value || '').trim()).filter(Boolean).join(' / ');
+
+                return {
+                    label: paper && paper.title,
+                    detail,
+                    url: paper && paper.url
+                };
+            })).slice(0, 3);
+        }
+
+        function getBranchReportItems(rawMilestone) {
+            const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
+                ? rawMilestone.achievement.sources
+                : [];
+            return dedupeBranchItems(sources
+                .filter((source) => !isBranchPaperSource(source) && !isBranchImageOnlySource(source))
+                .map((source) => ({
+                    label: source && source.label,
+                    detail: lx(source && source.type) || uiText('Report', '\u62a5\u9053'),
+                    url: source && source.url
+                }))).slice(0, 3);
+        }
+
+        function buildBranchElementGroup(label, items) {
+            const safeItems = dedupeBranchItems(items);
+            if (!safeItems.length) return '';
+
+            return `
+                <div class="branch-element-group">
+                    <div class="branch-element-label">${escapeHtml(label)}</div>
+                    <div class="branch-element-list">
+                        ${safeItems.map((item) => {
+                            const itemLabel = String(lx(item.label) || item.label || '').trim();
+                            const detail = String(lx(item.detail) || item.detail || '').trim();
+                            const detailHtml = detail ? `<small>${escapeHtml(detail)}</small>` : '';
+                            const body = `<strong>${escapeHtml(itemLabel)}</strong>${detailHtml}`;
+                            const url = String(item.url || '').trim();
+                            return url
+                                ? `<a class="branch-element-item" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${body}</a>`
+                                : `<span class="branch-element-item">${body}</span>`;
+                        }).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildBranchMilestoneElements(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const groups = [
+                {
+                    label: uiText('People', '\u4eba\u7269'),
+                    items: getBranchPeopleItems(vm)
+                },
+                {
+                    label: uiText('Papers', '\u8bba\u6587'),
+                    items: getBranchPaperItems(raw)
+                },
+                {
+                    label: uiText('News reports', '\u65b0\u95fb\u62a5\u9053'),
+                    items: getBranchReportItems(raw)
+                }
+            ].map((group) => buildBranchElementGroup(group.label, group.items)).filter(Boolean);
+
+            return groups.length ? `<div class="branch-elements">${groups.join('')}</div>` : '';
+        }
+
+        function bindBranchTimelineWheel() {
+            const page = refs.branchTimelinePage;
+            if (!page || page.dataset.wheelBound === 'true') return;
+
+            page.dataset.wheelBound = 'true';
+            page.addEventListener('wheel', (event) => {
+                if (!isBranchTimelineActive()) return;
+
+                const timeline = page.querySelector('.branch-timeline');
+                if (!timeline) return;
+
+                const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+                if (maxScroll <= 1) return;
+
+                const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY)
+                    ? event.deltaX
+                    : event.deltaY;
+                if (!delta) return;
+
+                const atStart = timeline.scrollLeft <= 0;
+                const atEnd = timeline.scrollLeft >= maxScroll - 1;
+                if ((delta < 0 && atStart) || (delta > 0 && atEnd)) return;
+
+                event.preventDefault();
+                timeline.scrollLeft = Math.min(maxScroll, Math.max(0, timeline.scrollLeft + delta));
+            }, { passive: false });
+        }
+
+        function buildBranchEventCard(vm, index) {
+            const raw = vm.raw || {};
+            const sideClass = index % 2 === 0 ? 'is-left' : 'is-right';
+            const stackClass = index % 2 === 0 ? 'is-visual-first' : 'is-content-first';
+            const area = getAchievementField(raw, 'area', vm.category || tx('aiHistory'));
+            const summary = stripHtml(lx(raw.description) || vm.descriptionText || '');
+            const analysisSections = buildAnalysisSections(raw).slice(0, 3);
+            const elementsHtml = buildBranchMilestoneElements(vm);
+            const analysisHtml = analysisSections.length
+                ? `<div class="branch-analysis">${analysisSections.map((section) => `
+                    <div class="branch-analysis-item"><strong>${escapeHtml(section.label)}</strong> ${escapeHtml(section.text)}</div>
+                `).join('')}</div>`
+                : '';
+
+            return `
+                <article class="branch-event ${sideClass} ${stackClass}">
+                    <span class="branch-event-dot" aria-hidden="true"></span>
+                    <div class="branch-event-content">
+                        <div class="branch-meta">
+                            <span class="branch-chip">${escapeHtml(area)}</span>
+                            <span>${escapeHtml(String(vm.year || ''))}</span>
+                        </div>
+                        <h2 class="branch-event-title">${escapeHtml(vm.title || tx('aiHistoryEvent'))}</h2>
+                        <p class="branch-event-summary">${escapeHtml(summary)}</p>
+                        ${elementsHtml}
+                        ${analysisHtml}
+                    </div>
+                    ${buildBranchVisual(vm)}
+                </article>
+            `;
+        }
+
+        function renderBranchTimelinePage() {
+            if (!refs.branchTimelinePage) return;
+
+            const option = getActiveStorylineOption();
+            const title = getStorylineLabel(option) || tx('branchGaming');
+            const note = getStorylineNote(option);
+            const cards = milestoneList.map((_, index) => buildBranchEventCard(getVm(index), index)).join('');
+
+            refs.branchTimelinePage.innerHTML = `
+                <section class="branch-hero">
+                    <div>
+                        <h1 class="branch-hero-title">${buildBranchHeroTitle(title)}</h1>
+                        <p class="branch-hero-subtitle">${escapeHtml(note || uiText('A focused branch showing game AI as a testbed for search, learning and planning.', '一条聚焦分支：用棋牌游戏展示搜索、学习与规划如何演进。'))}</p>
+                    </div>
+                    <div class="branch-pixel-scene" aria-hidden="true"></div>
+                </section>
+                <section class="branch-timeline" style="--branch-count: ${Math.max(1, milestoneList.length)}" aria-label="${escapeHtml(title)}">
+                    ${cards || `<div class="empty-state">${escapeHtml(tx('noMilestones'))}</div>`}
+                </section>
+            `;
+            bindBranchTimelineWheel();
         }
 
         function buildCommentaryBodyHtml(section) {
@@ -6777,10 +8271,31 @@
         }
 
         function getAchievementSources(rawMilestone) {
+            const papers = rawMilestone && Array.isArray(rawMilestone.papers)
+                ? rawMilestone.papers.map((paper) => ({
+                    type: paper.journal
+                        ? {
+                            en: `Paper · ${paper.journal}`,
+                            zh: `论文 · ${paper.journal}`
+                        }
+                        : {
+                            en: 'Paper',
+                            zh: '论文'
+                        },
+                    label: paper.title,
+                    url: paper.url
+                }))
+                : [];
             const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
                 ? rawMilestone.achievement.sources
                 : [];
-            return sources.filter((source) => source && source.url && lx(source.label));
+            const seenUrls = new Set();
+            return [...papers, ...sources].filter((source) => {
+                if (!source || !source.url || !lx(source.label)) return false;
+                if (seenUrls.has(source.url)) return false;
+                seenUrls.add(source.url);
+                return true;
+            });
         }
 
         function getAchievementDemoSteps(rawMilestone) {
@@ -8327,7 +9842,27 @@
             const vm = getVm(index);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
+            const branchTimelineActive = isBranchTimelineActive();
+            document.documentElement.classList.toggle('branch-timeline-active', branchTimelineActive);
+            document.body.classList.toggle('branch-timeline-active', branchTimelineActive);
+            if (refs.viewport) refs.viewport.classList.toggle('is-branch-timeline', branchTimelineActive);
+            refs.stage.classList.toggle('is-branch-timeline', branchTimelineActive);
             refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
+            if (refs.branchTimelinePage) {
+                refs.branchTimelinePage.hidden = !branchTimelineActive;
+                if (!branchTimelineActive) {
+                    refs.branchTimelinePage.innerHTML = '';
+                }
+            }
+            if (branchTimelineActive) {
+                clearGlobeMarkers();
+                resetOrbitOverlay();
+                resetInlineMedia();
+                renderBranchTimelinePage();
+                document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || vm.title}`;
+                preloadAdjacentAssets(index);
+                return;
+            }
             renderHeader(vm);
             if (isResearchDossierActive()) {
                 clearGlobeMarkers();

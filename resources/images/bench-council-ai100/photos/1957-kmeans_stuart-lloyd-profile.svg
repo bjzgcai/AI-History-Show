@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Stuart Lloyd profile card</title>
+  <desc id="desc">A local profile card for Stuart Lloyd and the k-means clustering loop.</desc>
+  <rect width="960" height="640" fill="#052e16"/>
+  <rect x="48" y="48" width="864" height="544" rx="32" fill="#f0fdf4"/>
+  <g transform="translate(88 108)">
+    <rect width="330" height="360" rx="28" fill="#dcfce7"/>
+    <circle cx="164" cy="132" r="76" fill="#bbf7d0"/>
+    <path d="M96 314c12-78 51-120 68-120s56 42 68 120" fill="#86efac"/>
+    <circle cx="68" cy="76" r="13" fill="#16a34a"/>
+    <circle cx="276" cy="92" r="13" fill="#2563eb"/>
+    <circle cx="70" cy="292" r="13" fill="#16a34a"/>
+    <circle cx="284" cy="284" r="13" fill="#2563eb"/>
+    <path d="M68 76 164 132 276 92M70 292l94-160 120 152" stroke="#15803d" stroke-width="5" stroke-dasharray="10 10" fill="none"/>
+  </g>
+  <text x="458" y="154" fill="#052e16" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">Stuart Lloyd</text>
+  <text x="458" y="214" fill="#15803d" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Lloyd / k-means iteration</text>
+  <text x="458" y="292" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="25">Signal quantization and clustering</text>
+  <text x="458" y="338" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="25">Assign points, update centroids, repeat</text>
+  <g>
+    <circle cx="514" cy="450" r="30" fill="#22c55e"/>
+    <circle cx="626" cy="450" r="30" fill="#3b82f6"/>
+    <circle cx="738" cy="450" r="30" fill="#f59e0b"/>
+    <path d="M544 450h52m60 0h52" stroke="#166534" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="88" y="568" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="20">Local profile card, not a source photograph</text>
+</svg>
