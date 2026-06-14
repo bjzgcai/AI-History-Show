@@ -207,9 +207,9 @@
 
         .language-toggle.topbar-language-toggle {
             --language-toggle-width: 52px;
-            --language-toggle-height: 31px;
+            --language-toggle-height: 32px;
             justify-self: end;
-            align-self: baseline;
+            align-self: center;
             margin-top: 0;
             width: var(--language-toggle-width);
             height: var(--language-toggle-height);
@@ -2276,19 +2276,6 @@
             gap: 12px;
         }
 
-        .bench-hero-visual.has-photo::before {
-            content: "";
-            position: absolute;
-            inset: -18px;
-            z-index: 0;
-            background-image: var(--bench-photo);
-            background-size: cover;
-            background-position: center;
-            filter: blur(18px);
-            opacity: 0.42;
-            transform: scale(1.08);
-        }
-
         .bench-hero-visual::after {
             content: "";
             position: absolute;
@@ -2696,6 +2683,31 @@
             font-size: 11px;
         }
 
+        .bench-demo-source-link {
+            align-items: start;
+            text-decoration: none;
+        }
+
+        .bench-demo-source-link:hover,
+        .bench-demo-source-link:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            outline: none;
+        }
+
+        .bench-demo-source-body {
+            min-width: 0;
+            display: grid;
+            gap: 5px;
+        }
+
+        .bench-demo-source-type {
+            color: var(--accent);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
         .bench-transcript-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2773,6 +2785,39 @@
             display: grid;
             align-content: center;
             gap: 14px;
+        }
+
+        .bench-code-flow.has-media {
+            align-content: stretch;
+            grid-template-rows: minmax(0, 1fr) auto auto;
+        }
+
+        .bench-code-media {
+            min-height: 170px;
+            overflow: hidden;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.92);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bench-code-media img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            max-height: 260px;
+            object-fit: contain;
+        }
+
+        .bench-code-media-caption {
+            margin-top: -2px;
+            color: rgba(244, 239, 229, 0.62);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
 
         .bench-code-line {
@@ -2874,6 +2919,29 @@
             background:
                 radial-gradient(circle at 16% 12%, rgba(246, 137, 0, 0.12), transparent 30%),
                 rgba(255, 255, 255, 0.028);
+        }
+
+        .bench-paper-image-demo {
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            overflow: hidden;
+            padding: 12px;
+        }
+
+        .bench-paper-image-demo img {
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+            object-fit: contain;
+            display: block;
+        }
+
+        .bench-paper-image-caption {
+            margin-top: 8px;
+            color: rgba(244, 239, 229, 0.86);
+            font-size: 13px;
+            font-weight: 800;
+            text-align: center;
         }
 
         .bench-paper-notes {
@@ -3453,7 +3521,7 @@
 
             .language-toggle.topbar-language-toggle {
                 --language-toggle-width: 42px;
-                --language-toggle-height: 25px;
+                --language-toggle-height: 27px;
                 font-size: 18px;
             }
 
@@ -3793,7 +3861,7 @@
                         draggable="false"
                     >
                 </div>
-                <div class="stage-kicker" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
+                <div class="stage-kicker" id="categoryTrack">AI创世纪（20世纪50年代至70年代）</div>
                 <div class="topbar-actions">
                     <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
                     <div class="mode-chip">
@@ -3829,7 +3897,7 @@
 
                     <div class="hero-context-block">
                         <div class="hero-kicker" id="leftKicker">AI创世纪</div>
-                        <div class="hero-context-period" id="heroContextPeriod">(1950s - 1970s)</div>
+                        <div class="hero-context-period" id="heroContextPeriod">（20世纪50年代至70年代）</div>
                     </div>
 
                     <div class="hero-years" id="heroYears" aria-hidden="true"></div>
@@ -3854,7 +3922,7 @@
                     <div class="story-summary" id="summaryBody"></div>
 
                     <section class="figures-section">
-                        <div class="section-heading" data-i18n="keyFiguresArchiveNarrative">Key Figures & Archive Narrative</div>
+                        <div class="section-heading" data-i18n="keyFiguresArchiveNarrative">关键人物与档案叙事</div>
                         <div class="figure-row" id="figureRow"></div>
                     </section>
 
@@ -3899,7 +3967,7 @@
                     </div>
 
                     <div class="video-frame empty" id="videoFrame">
-                        <div class="video-play-tag" aria-hidden="true">Play</div>
+                        <div class="video-play-tag" aria-hidden="true">播放</div>
                         <div class="video-quote-mark" aria-hidden="true">
                             <span class="video-quote-square">m</span>
                             <span class="video-quote-lines">
@@ -3920,7 +3988,7 @@
 
                 <section class="bench-dossier" id="benchDossier" aria-live="polite">
                     <aside class="bench-map-panel">
-                        <div class="bench-panel-heading" id="benchMapHeading">Achievement Map</div>
+                        <div class="bench-panel-heading" id="benchMapHeading">成就地图</div>
                         <div class="bench-map-list" id="benchMapList"></div>
                     </aside>
 
@@ -3936,7 +4004,7 @@
                     </section>
 
                     <aside class="bench-material-panel">
-                        <div class="bench-panel-heading" id="benchMaterialHeading">Materials</div>
+                        <div class="bench-panel-heading" id="benchMaterialHeading">资料来源</div>
                         <div class="bench-source-list" id="benchSourceList"></div>
                         <div class="bench-evidence-list" id="benchEvidenceList"></div>
                     </aside>
@@ -3952,7 +4020,7 @@
 
                 <div class="timeline-block">
                     <div class="timeline-meta">
-                        <div class="timeline-current-year" id="timelineModeLabel">Timeline</div>
+                        <div class="timeline-current-year" id="timelineModeLabel">时间线</div>
                         <div class="footer-status">
                             <div class="footer-status-text" id="statusText">达特茅斯会议 - AI正式诞生！</div>
                             <div class="footer-counter" id="counterText">1 / 21</div>
@@ -3972,8 +4040,8 @@
 
     <div class="quiz-modal is-hidden" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
         <div class="quiz-modal-shell">
-            <button class="quiz-modal-close" id="quizModalClose" type="button" aria-label="Close">×</button>
-            <div class="quiz-modal-eyebrow" id="quizModalEyebrow">Pop Quiz</div>
+            <button class="quiz-modal-close" id="quizModalClose" type="button" aria-label="关闭">×</button>
+            <div class="quiz-modal-eyebrow" id="quizModalEyebrow">快速问答</div>
             <h2 class="quiz-modal-title" id="quizModalTitle"></h2>
             <div class="quiz-modal-subtitle" id="quizModalSubtitle"></div>
             <div class="quiz-modal-content">
@@ -3991,8 +4059,8 @@
 
     <div class="region-modal is-hidden" id="regionModal" role="dialog" aria-modal="true" aria-labelledby="regionModalTitle">
         <div class="region-modal-shell">
-            <button class="region-modal-close" id="regionModalClose" type="button" aria-label="Close">×</button>
-            <div class="region-modal-eyebrow" id="regionModalEyebrow">Region Index</div>
+            <button class="region-modal-close" id="regionModalClose" type="button" aria-label="关闭">×</button>
+            <div class="region-modal-eyebrow" id="regionModalEyebrow">地区索引</div>
             <h2 class="region-modal-title" id="regionModalTitle"></h2>
             <div class="region-modal-subtitle" id="regionModalSubtitle"></div>
             <div class="region-option-grid" id="regionOptionGrid"></div>
@@ -4003,7 +4071,7 @@
         <div class="mobile-quiz-shell">
             <header class="mobile-quiz-header">
                 <div>
-                    <div class="mobile-quiz-eyebrow" id="mobileQuizEyebrow">AI100 Pop Quiz</div>
+                    <div class="mobile-quiz-eyebrow" id="mobileQuizEyebrow">AI100 快速问答</div>
                     <h1 class="mobile-quiz-title" id="mobileQuizTitle"></h1>
                     <div class="mobile-quiz-subtitle" id="mobileQuizSubtitle"></div>
                 </div>
@@ -4019,11 +4087,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260604-ai100-three-images"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260610-ai100-source-refresh"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260604-ai100-three-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260610-ai100-source-refresh" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -4838,7 +4906,7 @@
             const site = item.site || tx('historicalArchive');
             const title = item.title || site;
             const description = item.description || item.usage || '';
-            const action = item.action || 'Open archive preview';
+            const action = item.action || uiText('Open archive preview', '打开档案预览');
             return `
                 <a class="bench-photo-frame bench-visual-card bench-archive-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
                     <div class="bench-archive-kicker">${escapeHtml(site)}</div>
@@ -6162,11 +6230,11 @@
             const title = uiText('10-question mobile challenge', '10 题手机挑战');
             const note = uiText(
                 'Scan to enter the mobile pop-quiz. Your score can be used to claim a souvenir.',
-                '扫码进入 10 题手机端 pop-quiz，凭成绩领取纪念品。'
+                '扫码进入 10 题手机端快速问答，凭成绩领取纪念品。'
             );
             const qrAlt = uiText(
                 'QR code for the 10-question mobile pop-quiz mini program',
-                '10 题手机端 pop-quiz 小程序二维码'
+                '10 题手机端快速问答小程序二维码'
             );
             const targetUrl = buildMobileQuizTargetUrl();
 
@@ -6257,7 +6325,7 @@
             const optionLabels = ['A', 'B', 'C', 'D', 'E'];
             const score = getMobileQuizScore();
 
-            refs.mobileQuizEyebrow.textContent = uiText('AI100 Pop Quiz', 'AI100 Pop Quiz');
+            refs.mobileQuizEyebrow.textContent = uiText('AI100 Pop Quiz', 'AI100 快速问答');
             refs.mobileQuizTitle.textContent = uiText('10-question mobile challenge', '10 题手机挑战');
             refs.mobileQuizSubtitle.textContent = uiText(
                 'Answer on your phone. Show the final score to claim a souvenir.',
@@ -6376,11 +6444,11 @@
         function scoreQuizMaterial(item) {
             const haystack = `${item && item.type ? item.type : ''} ${item && item.url ? item.url : ''} ${item && item.title ? item.title : ''} ${item && item.description ? item.description : ''} ${item && item.usage ? item.usage : ''}`.toLowerCase();
             let score = 0;
-            if (item && item.type === 'image' && /diagram|explainer|eval|policy|value|search|architecture|flow/.test(haystack)) score += 9;
-            if (/diagram|explainer|eval|policy|value|search|architecture|flow|source|archive|paper|manual/.test(haystack)) score += 4;
+            if (item && item.type === 'image') score += 8;
+            if (/portrait|person|people|scientist|researcher|team|institution|group|photo|肖像|人物|团队|机构/.test(haystack)) score += 12;
+            if (item && item.type === 'image' && /diagram|explainer|eval|policy|value|search|architecture|flow/.test(haystack)) score += 3;
+            if (/diagram|explainer|eval|policy|value|search|architecture|flow|source|archive|paper|manual/.test(haystack)) score += 2;
             if (/archive|paper|manual|source/.test(haystack)) score += 2;
-            if (/portrait|photo|alan-turing|john-mccarthy|lee-sedol/.test(haystack)) score -= 5;
-            if (item && item.type === 'image') score += 1;
             return score;
         }
 
@@ -6649,7 +6717,7 @@
                 return;
             }
 
-            refs.timelineModeLabel.textContent = 'Timeline';
+            refs.timelineModeLabel.textContent = uiText('Timeline', '时间线');
             refs.timelineTrack.classList.remove('achievement-map-track');
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
@@ -6736,6 +6804,27 @@
 
         function getAchievementVisual(rawMilestone) {
             return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.visual || '').trim();
+        }
+
+        function getAchievementDemoPanel(rawMilestone) {
+            return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.demoPanel || '').trim();
+        }
+
+        function buildBenchDemoSourceLinks(rawMilestone) {
+            const sources = getAchievementSources(rawMilestone).slice(0, 3);
+            if (!sources.length) {
+                return `<div class="bench-demo-step"><span>1</span><strong>${escapeHtml(tx('noAdditionalInfo'))}</strong></div>`;
+            }
+
+            return sources.map((source, index) => `
+                <a class="bench-demo-step bench-demo-source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
+                    <span>${index + 1}</span>
+                    <span class="bench-demo-source-body">
+                        <small class="bench-demo-source-type">${escapeHtml(lx(source.type) || tx('source'))}</small>
+                        <strong>${escapeHtml(lx(source.label) || source.url)}</strong>
+                    </span>
+                </a>
+            `).join('');
         }
 
         function renderBenchMapList() {
@@ -6856,6 +6945,283 @@
                     <div class="bench-paper-notes">${noteHtml}</div>
                 </div>
             `;
+        }
+
+        function buildImagePaperDemo(rawMilestone, notes, fallbackTitle) {
+            const mediaUrl = rawMilestone && rawMilestone.achievement
+                ? String(rawMilestone.achievement.demoImage || '').trim()
+                : '';
+            const mediaMeta = mediaUrl ? getConfiguredImageMeta({ raw: rawMilestone }, mediaUrl) : null;
+            const mediaTitle = mediaMeta && mediaMeta.caption
+                ? mediaMeta.caption
+                : (fallbackTitle || getAchievementField(rawMilestone, 'artifact', tx('archiveImage')));
+            const imageHtml = mediaUrl
+                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}">`
+                : `<div class="bench-code-label">${escapeHtml(mediaTitle || tx('archiveImage'))}</div>`;
+            return buildPaperDemo(`
+                <div class="bench-paper-svg bench-paper-image-demo">
+                    ${imageHtml}
+                    ${mediaTitle ? `<div class="bench-paper-image-caption">${escapeHtml(mediaTitle)}</div>` : ''}
+                </div>
+            `, notes);
+        }
+
+        function buildSnarcVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('hardware cue', '硬件线索'), uiText('SNARC turns a maze and reward signal into an analog learning machine.', 'SNARC 把迷宫与奖励信号转化为模拟学习机器。')],
+                [uiText('interaction', '互动点'), uiText('Change the reward location and watch the preferred path update.', '改变奖励位置，观察偏好路径如何更新。')]
+            ], uiText('SNARC reward loop', 'SNARC 奖励循环'));
+        }
+
+        function buildReluVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('activation cue', '激活线索'), uiText('The nonlinearity is deliberately simple: negative values vanish, positive values pass through.', '这个非线性函数刻意保持简单：负值归零，正值直接通过。')],
+                [uiText('interaction', '互动点'), uiText('Move the input along the axis to show where gradients are blocked or preserved.', '沿坐标轴移动输入，显示梯度何处被阻断或保留。')]
+            ], uiText('ReLU activation curve', 'ReLU 激活曲线'));
+        }
+
+        function buildLenetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('recognition cue', '识别线索'), uiText('LeNet connects pixel crops to learned convolutional features and a digit class.', 'LeNet 将像素裁剪、卷积特征与数字类别连接起来。')],
+                [uiText('interaction', '互动点'), uiText('Swap the handwritten digit and reveal which feature maps respond.', '切换手写数字，展示哪些特征图产生响应。')]
+            ], uiText('LeNet ZIP-code pipeline', 'LeNet 邮编识别流程'));
+        }
+
+        function buildNeuralLanguageModelDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('prediction cue', '预测线索'), uiText('The paper replaces sparse n-gram tables with dense word vectors and a neural predictor.', '论文用稠密词向量与神经预测器取代稀疏 n-gram 表。')],
+                [uiText('interaction', '互动点'), uiText('Edit the context words to show the next-word distribution shift.', '编辑上下文词，展示下一个词的分布如何变化。')]
+            ], uiText('Neural language prediction', '神经语言预测'));
+        }
+
+        function buildAlexNetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('breakthrough cue', '突破线索'), uiText('AlexNet combines deep convolution, ReLU, dropout, augmentation, and GPU training at ImageNet scale.', 'AlexNet 在 ImageNet 规模上结合深层卷积、ReLU、dropout、数据增强与 GPU 训练。')],
+                [uiText('interaction', '互动点'), uiText('Step through layers to see pixels become object-level evidence.', '逐层查看像素如何变成物体级证据。')]
+            ], uiText('AlexNet architecture', 'AlexNet 架构'));
+        }
+
+        function buildResNetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('architecture cue', '架构线索'), uiText('The shortcut path lets a block learn a residual change instead of a full replacement.', '捷径路径让模块学习残差变化，而不是完整替换。')],
+                [uiText('interaction', '互动点'), uiText('Toggle the shortcut to compare residual flow with a plain deep stack.', '切换捷径，对比残差流与普通深层堆栈。')]
+            ], uiText('Residual block', '残差模块'));
+        }
+
+        function buildBatchNormVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('training cue', '训练线索'), uiText('Batch statistics stabilize layer inputs before learned scale and shift restore flexibility.', '批统计量先稳定层输入，再由可学习缩放和平移恢复灵活性。')],
+                [uiText('interaction', '互动点'), uiText('Adjust batch spread to show normalization centering the activations.', '调整批次分布，展示归一化如何居中激活值。')]
+            ], uiText('Batch normalization layer', '批归一化层'));
+        }
+
+        function buildDenseNetVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('connection cue', '连接线索'), uiText('Each layer receives earlier feature maps, making reuse visible inside the block.', '每一层接收早期特征图，让块内特征复用可见。')],
+                [uiText('interaction', '互动点'), uiText('Highlight a layer to trace every incoming feature connection.', '高亮某一层，追踪所有输入特征连接。')]
+            ], uiText('Dense connectivity', '密集连接'));
+        }
+
+        function buildVitVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('token cue', '令牌线索'), uiText('ViT treats image patches like a sequence, then lets attention mix distant regions.', 'ViT 将图像块视作序列，再用注意力混合远距离区域。')],
+                [uiText('interaction', '互动点'), uiText('Select a patch token to show which other image regions it attends to.', '选择一个图像块令牌，展示它关注的其他区域。')]
+            ], uiText('Patch tokens to transformer', '图像块令牌到 Transformer'));
+        }
+
+        function buildOtterDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Otter given-clause proof search">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">given-clause proof search</text>
+                    <rect x="34" y="70" width="130" height="52" rx="9" fill="#172554" stroke="#60a5fa"/>
+                    <text x="99" y="101" fill="#dbeafe" text-anchor="middle" font-size="14">usable clauses</text>
+                    <rect x="206" y="70" width="118" height="52" rx="9" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="265" y="101" fill="#fde68a" text-anchor="middle" font-size="14">given clause</text>
+                    <rect x="368" y="70" width="118" height="52" rx="9" fill="#14532d" stroke="#4ade80"/>
+                    <text x="427" y="101" fill="#dcfce7" text-anchor="middle" font-size="14">new clauses</text>
+                    <path d="M164 96 C186 96 184 96 206 96 M324 96 C346 96 346 96 368 96" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <rect x="76" y="160" width="368" height="42" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="260" y="185" fill="#e5e7eb" text-anchor="middle" font-size="14">index, simplify, infer, keep the shortest proof path</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('The manual turns inference control into a given-clause loop.', '手册把推理控制转化为 given-clause 循环。')],
+                [uiText('interaction', '互动点'), uiText('Follow one selected clause as it creates candidates and closes a proof.', '跟随一个被选中的子句，观察它如何生成候选并闭合证明。')]
+            ]);
+        }
+
+        function buildWatsonDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Watson evidence ranking">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">evidence ranking stack</text>
+                    <rect x="34" y="76" width="118" height="52" rx="8" fill="#172554" stroke="#60a5fa"/>
+                    <text x="93" y="106" fill="#dbeafe" text-anchor="middle" font-size="14">question</text>
+                    <rect x="202" y="58" width="118" height="88" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="261" y="88" fill="#e5e7eb" text-anchor="middle" font-size="14">hypotheses</text>
+                    <path d="M224 112 H298 M224 128 H284" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+                    <rect x="366" y="76" width="118" height="52" rx="8" fill="#14532d" stroke="#4ade80"/>
+                    <text x="425" y="106" fill="#dcfce7" text-anchor="middle" font-size="14">confidence</text>
+                    <path d="M152 102 C174 102 178 102 202 102 M320 102 C342 102 344 102 366 102" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <path d="M80 188 H430" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="330" cy="188" r="13" fill="#f59e0b"/>
+                    <text x="330" y="222" fill="#e5e7eb" text-anchor="middle" font-size="13">answer only when confidence clears the buzzer line</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('DeepQA ranks many answer candidates with independent evidence scorers.', 'DeepQA 用多个独立证据评分器排序候选答案。')],
+                [uiText('interaction', '互动点'), uiText('Move the confidence threshold and watch the winning answer change.', '移动置信度阈值，观察胜出答案如何变化。')]
+            ]);
+        }
+
+        function buildDraughtsDemo() {
+            const cells = Array.from({ length: 32 }, (_, i) => {
+                const row = Math.floor(i / 4);
+                const col = i % 4;
+                const x = 52 + col * 42 + (row % 2 ? 0 : 21);
+                const y = 62 + row * 22;
+                return `<rect x="${x}" y="${y}" width="42" height="22" fill="${(row + col) % 2 ? '#1f2937' : '#0f172a'}"/>`;
+            }).join('');
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Strachey draughts move search">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">tiny-memory move search</text>
+                    <g stroke="#475569">${cells}</g>
+                    <circle cx="115" cy="106" r="12" fill="#f59e0b"/>
+                    <circle cx="220" cy="150" r="12" fill="#60a5fa"/>
+                    <path d="M115 106 C152 108 174 126 220 150" stroke="#f8fafc" stroke-width="4" fill="none" marker-end="url(#arrowDraughts)"/>
+                    <defs><marker id="arrowDraughts" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#f8fafc"/></marker></defs>
+                    <rect x="318" y="64" width="144" height="112" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <text x="390" y="92" fill="#e5e7eb" text-anchor="middle" font-size="14">evaluate</text>
+                    <text x="390" y="122" fill="#a7f3d0" text-anchor="middle" font-size="13">material</text>
+                    <text x="390" y="146" fill="#bfdbfe" text-anchor="middle" font-size="13">mobility</text>
+                    <text x="390" y="170" fill="#fde68a" text-anchor="middle" font-size="13">king row</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Early game play meant search, evaluation, and memory discipline.', '早期游戏程序意味着搜索、评估和内存纪律。')],
+                [uiText('interaction', '互动点'), uiText('Step through legal moves and show the score that picks a reply.', '逐步查看合法走法，并展示选择回应的评分。')]
+            ]);
+        }
+
+        function buildChinookDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Chinook endgame database">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">search meets solved endgames</text>
+                    <path d="M76 62 L154 104 L96 146 L180 190" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                    <path d="M154 104 L224 78 M154 104 L234 132 M96 146 L224 166" stroke="#64748b" stroke-width="3" fill="none"/>
+                    ${[[76,62,'#f59e0b'],[154,104,'#60a5fa'],[96,146,'#60a5fa'],[180,190,'#22c55e'],[224,78,'#475569'],[234,132,'#475569'],[224,166,'#475569']].map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="11" fill="${c}"/>`).join('')}
+                    <rect x="306" y="62" width="160" height="128" rx="12" fill="#111827" stroke="#94a3b8"/>
+                    <text x="386" y="92" fill="#e5e7eb" text-anchor="middle" font-size="14">endgame DB</text>
+                    <path d="M336 122 H436 M336 146 H420 M336 170 H446" stroke="#4ade80" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M234 132 C270 132 270 126 306 126" stroke="#f59e0b" stroke-width="4" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Chinook combined alpha-beta search with perfect-play tablebases.', 'Chinook 将 alpha-beta 搜索与完美对弈表库结合起来。')],
+                [uiText('interaction', '互动点'), uiText('Click a branch to see whether search or the database decides it.', '点击一个分支，查看它由搜索还是数据库决定。')]
+            ]);
+        }
+
+        function buildPandemoniumDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Pandemonium feature voters">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">feature voters build perception</text>
+                    ${[[70,86,'edge'],[70,138,'curve'],[70,190,'corner']].map(([x,y,t]) => `<rect x="${x}" y="${y}" width="92" height="30" rx="8" fill="#172554" stroke="#60a5fa"/><text x="${x+46}" y="${y+20}" fill="#dbeafe" text-anchor="middle" font-size="12">${t}</text>`).join('')}
+                    ${[[230,72,'letter'],[230,128,'shape'],[230,184,'word']].map(([x,y,t]) => `<rect x="${x}" y="${y}" width="92" height="30" rx="8" fill="#402c1b" stroke="#f59e0b"/><text x="${x+46}" y="${y+20}" fill="#fde68a" text-anchor="middle" font-size="12">${t}</text>`).join('')}
+                    <rect x="382" y="108" width="100" height="52" rx="10" fill="#14532d" stroke="#4ade80"/>
+                    <text x="432" y="139" fill="#dcfce7" text-anchor="middle" font-size="14">winner</text>
+                    <path d="M162 101 C188 96 204 86 230 87 M162 153 C188 150 204 141 230 143 M322 87 C350 96 360 120 382 130 M322 143 C350 142 360 136 382 134 M322 199 C350 184 360 152 382 140" stroke="#f8fafc" stroke-width="3" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Selfridge frames recognition as layered competition among small detectors.', 'Selfridge 将识别描述为小型检测器之间的分层竞争。')],
+                [uiText('interaction', '互动点'), uiText('Raise one feature vote and watch the winning pattern switch.', '提高一个特征投票，观察胜出的模式如何切换。')]
+            ]);
+        }
+
+        function buildCycDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Cyc microtheory inference">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">microtheory inference bridge</text>
+                    <rect x="44" y="78" width="118" height="74" rx="12" fill="#172554" stroke="#60a5fa"/>
+                    <text x="103" y="110" fill="#dbeafe" text-anchor="middle" font-size="14">facts</text>
+                    <text x="103" y="132" fill="#dbeafe" text-anchor="middle" font-size="12">isa, partOf</text>
+                    <rect x="206" y="58" width="118" height="114" rx="12" fill="#111827" stroke="#94a3b8"/>
+                    <text x="265" y="88" fill="#e5e7eb" text-anchor="middle" font-size="14">microtheory</text>
+                    <path d="M234 116 H296 M234 138 H286" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+                    <rect x="370" y="78" width="118" height="74" rx="12" fill="#14532d" stroke="#4ade80"/>
+                    <text x="429" y="110" fill="#dcfce7" text-anchor="middle" font-size="14">inference</text>
+                    <text x="429" y="132" fill="#dcfce7" text-anchor="middle" font-size="12">new claim</text>
+                    <path d="M162 116 C184 116 184 116 206 116 M324 116 C346 116 348 116 370 116" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Cyc organizes common-sense assertions into contexts before reasoning.', 'Cyc 在推理前把常识断言组织进不同语境。')],
+                [uiText('interaction', '互动点'), uiText('Toggle a context and show which inference remains valid.', '切换语境，展示哪些推理仍然有效。')]
+            ]);
+        }
+
+        function buildXconDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="XCON rule configurator">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">rule-based configuration path</text>
+                    <rect x="44" y="76" width="110" height="52" rx="8" fill="#172554" stroke="#60a5fa"/>
+                    <text x="99" y="106" fill="#dbeafe" text-anchor="middle" font-size="14">order</text>
+                    <rect x="206" y="76" width="110" height="52" rx="8" fill="#402c1b" stroke="#f59e0b"/>
+                    <text x="261" y="106" fill="#fde68a" text-anchor="middle" font-size="14">rules</text>
+                    <rect x="368" y="68" width="112" height="112" rx="10" fill="#111827" stroke="#94a3b8"/>
+                    <path d="M390 96 H458 M390 122 H458 M390 148 H458" stroke="#4ade80" stroke-width="8" stroke-linecap="round"/>
+                    <text x="424" y="202" fill="#e5e7eb" text-anchor="middle" font-size="13">valid VAX layout</text>
+                    <path d="M154 102 C178 102 182 102 206 102 M316 102 C338 102 344 102 368 102" stroke="#f8fafc" stroke-width="4" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('R1 turns customer constraints into a consistent component list.', 'R1 将客户约束转化为一致的组件清单。')],
+                [uiText('interaction', '互动点'), uiText('Add an option and show the rule that repairs the configuration.', '添加一个选项，展示修复配置的规则。')]
+            ]);
+        }
+
+        function buildKmeansDemo() {
+            const points = [[84,105,'#60a5fa'],[106,120,'#60a5fa'],[128,92,'#60a5fa'],[330,98,'#4ade80'],[356,126,'#4ade80'],[386,102,'#4ade80'],[248,178,'#f59e0b'],[272,196,'#f59e0b'],[292,170,'#f59e0b']];
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="K-means assignment and centroid update">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">assign points, move centers</text>
+                    ${points.map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="6" fill="${c}" opacity="0.9"/>`).join('')}
+                    <path d="M104 112 L132 128 L154 110 M352 110 L322 138 L294 170 M270 184 L238 160 L212 170" stroke="#64748b" stroke-width="2" fill="none"/>
+                    ${[[122,110,'#bfdbfe'],[352,112,'#bbf7d0'],[270,182,'#fde68a']].map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="16" fill="none" stroke="${c}" stroke-width="5"/><circle cx="${x+28}" cy="${y-20}" r="7" fill="${c}"/>`).join('')}
+                    <path d="M122 110 C134 104 140 98 150 92 M352 112 C340 108 332 100 324 92 M270 182 C260 174 252 166 244 156" stroke="#f8fafc" stroke-width="3" stroke-dasharray="7 6" fill="none"/>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Lloyd iteration alternates assignment and centroid recomputation.', 'Lloyd 迭代在样本分配和中心重算之间交替。')],
+                [uiText('interaction', '互动点'), uiText('Drag a center and let the Voronoi-style assignments settle.', '拖动一个中心点，让类似 Voronoi 的分配重新稳定。')]
+            ]);
+        }
+
+        function buildDbscanDemo() {
+            const dots = [[92,104,'#60a5fa'],[112,92,'#60a5fa'],[132,116,'#60a5fa'],[152,100,'#60a5fa'],[292,88,'#4ade80'],[318,104,'#4ade80'],[340,128,'#4ade80'],[364,150,'#4ade80'],[318,172,'#4ade80'],[414,72,'#94a3b8'],[78,178,'#94a3b8'],[442,182,'#94a3b8']];
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="DBSCAN core border noise clustering">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">core, border, noise</text>
+                    <path d="M72 80 C118 42 190 70 184 126 C176 180 94 174 70 130 C62 114 60 96 72 80 Z" fill="#1d4ed8" opacity="0.24"/>
+                    <path d="M272 62 C338 38 402 102 398 158 C394 214 302 206 270 158 C246 122 242 82 272 62 Z" fill="#15803d" opacity="0.26"/>
+                    ${dots.map(([x,y,c]) => `<circle cx="${x}" cy="${y}" r="6" fill="${c}"/>`).join('')}
+                    <circle cx="132" cy="116" r="34" fill="none" stroke="#93c5fd" stroke-width="3" stroke-dasharray="6 6"/>
+                    <circle cx="340" cy="128" r="38" fill="none" stroke="#86efac" stroke-width="3" stroke-dasharray="6 6"/>
+                    <text x="132" y="172" fill="#bfdbfe" text-anchor="middle" font-size="13">dense reachability</text>
+                    <text x="414" y="98" fill="#cbd5e1" text-anchor="middle" font-size="13">noise</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('The KDD paper separates core, border, and noise by neighborhood density.', 'KDD 论文用邻域密度区分核心点、边界点和噪声点。')],
+                [uiText('interaction', '互动点'), uiText('Adjust epsilon to show clusters joining or points becoming noise.', '调节 epsilon，展示簇如何合并或点如何变成噪声。')]
+            ]);
+        }
+
+        function buildSpectralDemo() {
+            return buildPaperDemo(`
+                <svg class="bench-paper-svg" viewBox="0 0 520 250" role="img" aria-label="Spectral clustering graph cut">
+                    <text x="28" y="38" fill="#f68900" font-size="17" font-weight="800">graph cut through eigenvectors</text>
+                    ${[[96,96],[142,70],[176,118],[116,150],[338,82],[390,106],[352,154],[420,160]].map(([x,y], i) => `<circle cx="${x}" cy="${y}" r="13" fill="${i < 4 ? '#60a5fa' : '#4ade80'}"/>`).join('')}
+                    <path d="M96 96 L142 70 L176 118 L116 150 L96 96 M338 82 L390 106 L420 160 L352 154 L338 82 M176 118 C220 100 278 100 338 82 M116 150 C220 178 282 174 352 154" stroke="#cbd5e1" stroke-width="3" fill="none" opacity="0.78"/>
+                    <path d="M256 58 V188" stroke="#f59e0b" stroke-width="5" stroke-dasharray="9 8"/>
+                    <path d="M82 210 C142 178 186 218 236 194 C278 172 314 224 374 190 C408 172 430 182 454 160" stroke="#93c5fd" stroke-width="4" fill="none"/>
+                    <text x="256" y="42" fill="#fde68a" text-anchor="middle" font-size="13">low normalized cut</text>
+                </svg>
+            `, [
+                [uiText('paper cue', '文献线索'), uiText('Normalized cuts convert image grouping into a graph partition problem.', '归一化切分把图像分组转化为图划分问题。')],
+                [uiText('interaction', '互动点'), uiText('Move the cut and show the eigenvector score behind the split.', '移动切分线，展示分割背后的特征向量得分。')]
+            ]);
         }
 
         function buildAdamDemo() {
@@ -7478,31 +7844,62 @@
         function buildGenericDemo(rawMilestone) {
             const artifact = getAchievementField(rawMilestone, 'artifact', '');
             const demo = getAchievementField(rawMilestone, 'demo', '');
+            const mediaUrl = getGenericDemoImage(rawMilestone);
+            const mediaMeta = mediaUrl ? getConfiguredImageMeta({ raw: rawMilestone }, mediaUrl) : null;
+            const mediaTitle = mediaMeta && mediaMeta.caption ? mediaMeta.caption : artifact;
+            const mediaHtml = mediaUrl ? `
+                <div class="bench-code-media">
+                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}">
+                </div>
+                ${mediaTitle ? `<div class="bench-code-media-caption">${escapeHtml(mediaTitle)}</div>` : ''}
+            ` : '';
             return `
-                <div class="bench-code-flow">
+                <div class="bench-code-flow${mediaUrl ? ' has-media' : ''}">
+                    ${mediaHtml}
                     <div class="bench-code-label">${escapeHtml(artifact || tx('historicalEvent'))}</div>
                     <div class="bench-code-line">${escapeHtml(demo || stripHtml(lx(rawMilestone.description) || ''))}</div>
                 </div>
             `;
         }
 
+        function getGenericDemoImage(rawMilestone) {
+            const images = rawMilestone && rawMilestone.resources && Array.isArray(rawMilestone.resources.images)
+                ? rawMilestone.resources.images.filter(Boolean)
+                : [];
+            const heroImages = new Set(sortPhotosForDisplay(images).slice(0, 3));
+            const configuredDemoImage = rawMilestone && rawMilestone.achievement
+                ? String(rawMilestone.achievement.demoImage || '').trim()
+                : '';
+            if (configuredDemoImage && !heroImages.has(configuredDemoImage)) {
+                return configuredDemoImage;
+            }
+            const demoCandidates = images.filter((url) => !heroImages.has(url));
+            if (!demoCandidates.length) return '';
+
+            const scored = demoCandidates.map((url, index) => {
+                const meta = getConfiguredImageMeta({ raw: rawMilestone }, url) || {};
+                const haystack = `${url} ${meta.caption || ''} ${meta.subcaption || ''} ${meta.usage || ''}`.toLowerCase();
+                let score = 0;
+                if (/\/explainers\/|diagram|explainer|architecture|flow|graph|cluster|clause|rule|pipeline|ranking|search|density|eigen|centroid|board|database/.test(haystack)) score += 20;
+                if (/profile|portrait|photo|headshot|people/.test(haystack)) score -= 10;
+                if (/paper|source|archive|manual|reference/.test(haystack)) score -= 3;
+                return { url, index, score };
+            });
+
+            return scored
+                .sort((a, b) => b.score - a.score || a.index - b.index)
+                .map((entry) => entry.url)[0] || '';
+        }
+
         function renderBenchHeroVisual(vm) {
             if (!refs.benchHeroVisual) return;
             const items = buildBenchVisualItems(vm);
-            const backgroundItem = items.find((item) => item && item.type === 'image');
-            const backgroundPhoto = backgroundItem ? backgroundItem.url : '';
             refs.benchHeroVisual.classList.toggle('is-empty', items.length === 0);
-            refs.benchHeroVisual.classList.toggle('has-photo', Boolean(backgroundPhoto));
+            refs.benchHeroVisual.classList.remove('has-photo');
+            refs.benchHeroVisual.style.removeProperty('--bench-photo');
             if (!items.length) {
-                refs.benchHeroVisual.style.removeProperty('--bench-photo');
                 refs.benchHeroVisual.innerHTML = '';
                 return;
-            }
-
-            if (backgroundPhoto) {
-                refs.benchHeroVisual.style.setProperty('--bench-photo', `url("${backgroundPhoto.replace(/"/g, '\\"')}")`);
-            } else {
-                refs.benchHeroVisual.style.removeProperty('--bench-photo');
             }
 
             const placeholders = Array.from({ length: Math.max(0, 3 - items.length) }, () => null);
@@ -7546,11 +7943,33 @@
                 perceptron: buildPerceptronDemo,
                 dbn: buildDbnDemo,
                 td: buildTdDemo,
-                bayesnet: buildBayesNetDemo
+                bayesnet: buildBayesNetDemo,
+                snarc: () => buildSnarcVisualDemo(raw),
+                relu: () => buildReluVisualDemo(raw),
+                lenet: () => buildLenetVisualDemo(raw),
+                neuralLm: () => buildNeuralLanguageModelDemo(raw),
+                alexnet: () => buildAlexNetVisualDemo(raw),
+                resnet: () => buildResNetVisualDemo(raw),
+                batchnorm: () => buildBatchNormVisualDemo(raw),
+                densenet: () => buildDenseNetVisualDemo(raw),
+                vit: () => buildVitVisualDemo(raw),
+                otter: buildOtterDemo,
+                watson: buildWatsonDemo,
+                draughts: buildDraughtsDemo,
+                chinook: buildChinookDemo,
+                pandemonium: buildPandemoniumDemo,
+                cyc: buildCycDemo,
+                xcon: buildXconDemo,
+                kmeans: buildKmeansDemo,
+                dbscan: buildDbscanDemo,
+                spectral: buildSpectralDemo
             };
             const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
+            const useSourcePanel = getAchievementDemoPanel(raw) === 'sources';
 
-            const stepHtml = steps.length > 0
+            const stepHtml = useSourcePanel
+                ? buildBenchDemoSourceLinks(raw)
+                : steps.length > 0
                 ? steps.map((step, index) => `
                     <div class="bench-demo-step">
                         <span>${index + 1}</span>
