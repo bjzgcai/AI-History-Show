@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Isomap geodesic manifold explainer">
+  <rect width="720" height="420" rx="24" fill="#0f172a"/>
+  <text x="36" y="54" fill="#f59e0b" font-family="Arial, sans-serif" font-size="24" font-weight="700">neighbor graph preserves geodesics</text>
+  <path d="M80 286C140 102 248 326 336 130C404 258 498 84 636 218" fill="none" stroke="#334155" stroke-width="34" stroke-linecap="round"/>
+  <path d="M80 286C140 102 248 326 336 130C404 258 498 84 636 218" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#f8fafc">
+    <circle cx="80" cy="286" r="11"/><circle cx="150" cy="162" r="11"/><circle cx="248" cy="294" r="11"/><circle cx="336" cy="130" r="11"/><circle cx="428" cy="238" r="11"/><circle cx="530" cy="122" r="11"/><circle cx="636" cy="218" r="11"/>
+  </g>
+  <path d="M80 286H636" stroke="#f97316" stroke-width="4" stroke-dasharray="10 9"/>
+  <text x="358" y="342" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="17">shortest path along the surface beats straight-line distance</text>
+</svg>

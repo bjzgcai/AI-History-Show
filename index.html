@@ -2457,6 +2457,20 @@
             white-space: nowrap;
         }
 
+        .bench-visual-card .bench-hero-caption {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .bench-visual-card .bench-hero-caption small {
+            display: -webkit-box;
+            text-align: left;
+            white-space: normal;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
         .bench-map-list,
         .bench-source-list,
         .bench-evidence-list {
@@ -4091,7 +4105,7 @@
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260610-ai100-source-refresh" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260612-ai100-photo-refresh" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -4360,7 +4374,10 @@
             'Netherlands',
             'Germany',
             'China',
-            'France'
+            'France',
+            'Japan',
+            'Finland',
+            'Switzerland'
         ];
 
         const ACHIEVEMENT_REGION_LABELS = {
@@ -4371,7 +4388,10 @@
             Netherlands: '荷兰',
             Germany: '德国',
             China: '中国',
-            France: '法国'
+            France: '法国',
+            Japan: '日本',
+            Finland: '芬兰',
+            Switzerland: '瑞士'
         };
 
         function uiText(en, zh) {
@@ -4379,12 +4399,32 @@
             return locale === 'zh' ? zh : en;
         }
 
+        function localizeRightsNote(value) {
+            const localized = String(lx(value || '')).trim();
+            if (!localized || uiText('en', 'zh') !== 'zh') return localized;
+
+            const normalized = localized.toLowerCase().replace(/\s+/g, ' ').trim();
+            const rightsNotes = {
+                'reference link only; local images are redrawn and do not reuse publisher figures.': '仅作为参考链接；本地图片为重绘，不复用出版方图形。',
+                'reference link only; local images are redrawn and do not copy publisher figures.': '仅作为参考链接；本地图片为重绘，不复制出版方图形。',
+                'reference link only; local visual is redrawn and does not reuse publisher figures.': '仅作为参考链接；本地视觉图为重绘，不复用出版方图形。',
+                'reference link only; local visual is redrawn and does not reuse paper figures.': '仅作为参考链接；本地视觉图为重绘，不复用论文图形。',
+                'reference link only; local visual is redrawn and does not reuse thesis figures.': '仅作为参考链接；本地视觉图为重绘，不复用论文图形。',
+                'reference link only; local explainers are original redraws.': '仅作为参考链接；本地解释图为原创重绘。'
+            };
+
+            return rightsNotes[normalized] || localized;
+        }
+
         function getMilestoneRegions(milestone) {
             const country = milestone && milestone.location && milestone.location.country;
             const rawCountry = String(country && typeof country === 'object' ? country.en : country || '').trim();
-            if (!rawCountry) return [];
-            const matched = ACHIEVEMENT_REGION_NAMES.filter((region) => rawCountry.includes(region));
-            return matched.length > 0 ? matched : [rawCountry];
+            const relatedRegions = milestone && milestone.achievement && Array.isArray(milestone.achievement.relatedRegions)
+                ? milestone.achievement.relatedRegions.map((region) => String(region && typeof region === 'object' ? region.en : region || '').trim())
+                : [];
+            const haystack = [rawCountry, ...relatedRegions].filter(Boolean).join(' ');
+            if (!haystack) return [];
+            return ACHIEVEMENT_REGION_NAMES.filter((region) => haystack.includes(region));
         }
 
         function getRegionLabel(region) {
@@ -4768,7 +4808,7 @@
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
             const subcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || entry.role || '')).trim();
             const source = String(entry.sourceUrl || entry.source || entry.url || '').trim();
-            const license = String(lx(entry.license || '')).trim();
+            const license = localizeRightsNote(entry.license || '');
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
             if (!caption && !subcaption && !source && !license && !usage) return null;
             return { caption, subcaption, source, license, usage };
@@ -4856,7 +4896,7 @@
                         site: String(lx(module.site || module.label || '')).trim(),
                         title: String(lx(module.title || '')).trim(),
                         description: String(lx(module.description || module.subcaption || '')).trim(),
-                        license: String(lx(module.license || '')).trim(),
+                        license: localizeRightsNote(module.license || ''),
                         usage: String(lx(module.usage || '')).trim(),
                         action: String(lx(module.action || '')).trim()
                     };
@@ -4889,6 +4929,7 @@
 
         function buildBenchImageVisualCard(item) {
             const title = item.title || tx('archiveImage');
+            const description = item.description || item.usage || '';
             const isDiagram = /diagram|explainer/i.test(`${item.url || ''} ${title || ''} ${item.usage || ''}`);
             return `
                 <div class="bench-photo-frame bench-visual-card has-image">
@@ -4897,6 +4938,7 @@
                     </div>
                     <div class="bench-hero-caption">
                         <span>${escapeHtml(title)}</span>
+                        ${description ? `<small>${escapeHtml(description)}</small>` : ''}
                     </div>
                 </div>
             `;
@@ -6605,7 +6647,7 @@
             refs.regionModalEyebrow.textContent = uiText('Region Index', '地区索引');
             refs.regionModalTitle.textContent = uiText('Choose a Region', '选择地区');
             refs.regionModalSubtitle.textContent = activeRegionFilter
-                ? uiText(`Current filter: ${activeRegionFilter}`, `当前筛选：${activeRegionFilter}`)
+                ? uiText(`Current filter: ${getRegionLabel(activeRegionFilter)}`, `当前筛选：${getRegionLabel(activeRegionFilter)}`)
                 : uiText('Showing all AI100 achievements.', '正在显示全部 AI100 成就。');
             refs.regionOptionGrid.innerHTML = [
                 { region: '', count: allCount, label: uiText('All regions', '全部地区') },
@@ -7027,6 +7069,173 @@
                 [uiText('token cue', '令牌线索'), uiText('ViT treats image patches like a sequence, then lets attention mix distant regions.', 'ViT 将图像块视作序列，再用注意力混合远距离区域。')],
                 [uiText('interaction', '互动点'), uiText('Select a patch token to show which other image regions it attends to.', '选择一个图像块令牌，展示它关注的其他区域。')]
             ], uiText('Patch tokens to transformer', '图像块令牌到 Transformer'));
+        }
+
+        function buildKnnVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('neighbor cue', '邻居线索'), uiText('KNN classifies a query by looking at nearby labeled examples instead of fitting a global model.', 'KNN 通过查看附近的已标注样本来分类查询点，而不是拟合全局模型。')],
+                [uiText('interaction', '互动点'), uiText('Change k and watch the local vote boundary move around the query.', '改变 k 值，观察查询点周围的局部投票边界如何移动。')]
+            ], uiText('Nearest-neighbor vote', '最近邻投票'));
+        }
+
+        function buildRidgeVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('regularization cue', '正则化线索'), uiText('Ridge regression shrinks unstable least-squares coefficients by adding an L2 penalty.', '岭回归通过加入 L2 惩罚来收缩不稳定的最小二乘系数。')],
+                [uiText('interaction', '互动点'), uiText('Move the penalty slider to compare variance reduction with coefficient shrinkage.', '移动惩罚滑杆，对比方差降低与系数收缩。')]
+            ], uiText('Ridge shrinkage path', '岭回归收缩路径'));
+        }
+
+        function buildHogVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('descriptor cue', '描述子线索'), uiText('HOG turns local edge orientations into normalized cell histograms for detection.', 'HOG 将局部边缘方向转化为用于检测的归一化单元直方图。')],
+                [uiText('interaction', '互动点'), uiText('Brush over a cell to reveal its gradient-orientation vote.', '划过一个单元格，显示它的梯度方向投票。')]
+            ], uiText('HOG descriptor grid', 'HOG 描述子网格'));
+        }
+
+        function buildSurfVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('speed cue', '速度线索'), uiText('SURF accelerates robust feature detection with integral images and Hessian-style responses.', 'SURF 用积分图和 Hessian 式响应加速稳健特征检测。')],
+                [uiText('interaction', '互动点'), uiText('Toggle scale levels to show which interest points remain stable.', '切换尺度层级，展示哪些兴趣点保持稳定。')]
+            ], uiText('SURF interest points', 'SURF 兴趣点'));
+        }
+
+        function buildKernelPcaVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('kernel cue', '核方法线索'), uiText('Kernel PCA performs PCA in an implicit feature space defined by pairwise kernel values.', 'Kernel PCA 在由成对核值定义的隐式特征空间中执行 PCA。')],
+                [uiText('interaction', '互动点'), uiText('Switch kernels to show how a curved structure becomes separable in feature space.', '切换核函数，展示弯曲结构如何在特征空间中变得可分。')]
+            ], uiText('Kernel eigenmap', '核特征映射'));
+        }
+
+        function buildNmfVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('parts cue', '部件线索'), uiText('NMF factorizes nonnegative data into additive basis parts and activations.', 'NMF 将非负数据分解为可相加的基部件与激活。')],
+                [uiText('interaction', '互动点'), uiText('Adjust one component weight to see a face or topic reconstructed from parts.', '调整一个成分权重，观察面孔或主题如何由部件重建。')]
+            ], uiText('Parts-based factorization', '基于部件的分解'));
+        }
+
+        function buildIsomapVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('manifold cue', '流形线索'), uiText('Isomap estimates geodesic distances on a neighbor graph before embedding globally.', 'Isomap 先在邻居图上估计测地距离，再进行全局嵌入。')],
+                [uiText('interaction', '互动点'), uiText('Add or remove neighbor edges to see the unfolded map change.', '添加或移除邻居边，观察展开后的地图如何变化。')]
+            ], uiText('Geodesic manifold map', '测地流形映射'));
+        }
+
+        function buildLleVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('local cue', '局部线索'), uiText('LLE preserves each point as a weighted reconstruction from its nearest neighbors.', 'LLE 保持每个点由其最近邻加权重建的局部关系。')],
+                [uiText('interaction', '互动点'), uiText('Drag a neighborhood size control to reveal where local geometry holds or breaks.', '拖动邻域大小控件，显示局部几何何处保持或失效。')]
+            ], uiText('Locally linear embedding', '局部线性嵌入'));
+        }
+
+        function buildSomVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('map cue', '映射线索'), uiText('A self-organizing map lets nearby output units compete and adapt into a topology-preserving grid.', '自组织映射让相邻输出单元竞争并调整成保持拓扑的网格。')],
+                [uiText('interaction', '互动点'), uiText('Move an input point and watch the winning unit pull its neighborhood with it.', '移动输入点，观察获胜单元如何带动其邻域一起调整。')]
+            ], uiText('Kohonen map adaptation', 'Kohonen 映射调整'));
+        }
+
+        function buildBackpropVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('gradient cue', '梯度线索'), uiText('Back-propagation sends output error backward through layers to update weights efficiently.', '反向传播把输出误差沿层向后传递，从而高效更新权重。')],
+                [uiText('interaction', '互动点'), uiText('Step from loss to hidden layer to see gradients assigned to each connection.', '从损失逐步回到隐藏层，查看梯度如何分配给每条连接。')]
+            ], uiText('Error signal flow', '误差信号流'));
+        }
+
+        function buildNeocognitronVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('vision cue', '视觉线索'), uiText('The neocognitron stacks local feature extraction and tolerance layers for shift-robust pattern recognition.', 'Neocognitron 堆叠局部特征提取层与容忍层，实现抗平移的模式识别。')],
+                [uiText('interaction', '互动点'), uiText('Shift the input pattern and show how later layers keep the category stable.', '平移输入图案，展示后续层如何保持类别稳定。')]
+            ], uiText('Hierarchical visual layers', '层级视觉网络'));
+        }
+
+        function buildTransformerVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('attention cue', '注意力线索'), uiText('The Transformer replaces recurrence with self-attention blocks that mix all token positions in parallel.', 'Transformer 用自注意力模块替代循环结构，并行混合所有令牌位置。')],
+                [uiText('interaction', '互动点'), uiText('Select a token to reveal its query-key attention links across the sequence.', '选择一个令牌，显示它在序列中的 query-key 注意力连接。')]
+            ], uiText('Self-attention stack', '自注意力堆栈'));
+        }
+
+        function buildLstmVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('memory cue', '记忆线索'), uiText('The cell state creates a protected path for information across long sequences.', '单元状态为长序列信息提供受保护的通路。')],
+                [uiText('interaction', '互动点'), uiText('Toggle each gate to show what is written, forgotten, or exposed at the next step.', '切换每个门，显示下一步写入、遗忘或输出哪些信息。')]
+            ], uiText('LSTM gated memory cell', 'LSTM 门控记忆单元'));
+        }
+
+        function buildGanVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('training cue', '训练线索'), uiText('The generator improves because the discriminator keeps changing the target.', '生成器会改进，是因为判别器不断改变目标。')],
+                [uiText('interaction', '互动点'), uiText('Move the discriminator threshold to see when fake samples start passing as real.', '移动判别阈值，观察生成样本何时开始被判为真实。')]
+            ], uiText('GAN adversarial loop', 'GAN 对抗循环'));
+        }
+
+        function buildAttentionSeqVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('alignment cue', '对齐线索'), uiText('Attention makes source-target alignment a learned part of translation.', '注意力让源句与目标词的对齐成为可学习过程。')],
+                [uiText('interaction', '互动点'), uiText('Select a target word to highlight which source tokens receive the largest weights.', '选择一个目标词，突出显示权重最高的源语言令牌。')]
+            ], uiText('Attention alignment map', '注意力对齐图'));
+        }
+
+        function buildBertVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('pre-training cue', '预训练线索'), uiText('Masked words are predicted from both left and right context inside a transformer encoder.', '被遮盖的词由 Transformer 编码器中的左右上下文共同预测。')],
+                [uiText('interaction', '互动点'), uiText('Mask a different token to show how the bidirectional context changes the prediction.', '遮盖不同令牌，展示双向上下文如何改变预测。')]
+            ], uiText('BERT masked language modeling', 'BERT 掩码语言建模'));
+        }
+
+        function buildGptVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('prediction cue', '预测线索'), uiText('A decoder-only transformer learns by predicting the next token from previous tokens.', '解码器式 Transformer 通过根据前文预测下一个令牌来学习。')],
+                [uiText('interaction', '互动点'), uiText('Edit the prompt prefix to show the next-token distribution shift.', '编辑提示前缀，展示下一个令牌分布如何变化。')]
+            ], uiText('GPT next-token pre-training', 'GPT 下一个令牌预训练'));
+        }
+
+        function buildAlphaFoldVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('science cue', '科学线索'), uiText('Sequence and evolutionary features are turned into pair representations and 3D coordinates.', '序列与进化特征被转化为成对表示和三维坐标。')],
+                [uiText('interaction', '互动点'), uiText('Step through sequence, pair map, and folded structure to connect data with the final model.', '依次查看序列、成对图和折叠结构，把数据与最终模型连接起来。')]
+            ], uiText('AlphaFold2 structure pipeline', 'AlphaFold2 结构预测流程'));
+        }
+
+        function buildClipVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('contrastive cue', '对比线索'), uiText('Matching image-text pairs are pulled together while mismatches are pushed apart.', '匹配的图文对被拉近，不匹配的图文对被推远。')],
+                [uiText('interaction', '互动点'), uiText('Swap a caption to show how zero-shot labels become text comparisons.', '替换文字说明，展示零样本标签如何变成文本比较。')]
+            ], uiText('CLIP contrastive pairs', 'CLIP 对比图文对'));
+        }
+
+        function buildDalleVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('generation cue', '生成线索'), uiText('A text prompt conditions a sequence of image tokens that form a visual scene.', '文本提示条件化一串图像令牌，形成视觉场景。')],
+                [uiText('interaction', '互动点'), uiText('Change one prompt phrase to reveal which generated objects or relations should change.', '改变提示词中的一个短语，观察生成对象或关系应如何变化。')]
+            ], uiText('DALL-E text-to-image flow', 'DALL-E 文生图流程'));
+        }
+
+        function buildDiffusionVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('denoising cue', '去噪线索'), uiText('Stable Diffusion repeatedly denoises a compact latent representation under text guidance.', 'Stable Diffusion 在文本引导下反复去噪压缩潜表示。')],
+                [uiText('interaction', '互动点'), uiText('Scrub through denoising steps to see noise turn into prompt-aligned structure.', '拖动去噪步骤，观察噪声如何变成符合提示的结构。')]
+            ], uiText('Latent diffusion denoising', '潜扩散去噪'));
+        }
+
+        function buildSamVisualDemo(raw) {
+            return buildImagePaperDemo(raw, [
+                [uiText('prompt cue', '提示线索'), uiText('SAM separates reusable image features from point, box, or mask prompts.', 'SAM 将可复用图像特征与点、框或掩码提示分离。')],
+                [uiText('interaction', '互动点'), uiText('Click a point or drag a box to compare how the mask decoder changes the selected object.', '点击一个点或拖动一个框，对比掩码解码器如何改变选中对象。')]
+            ], uiText('Promptable segmentation flow', '可提示分割流程'));
+        }
+
+        function buildConfiguredPaperVisualDemo(raw) {
+            const notes = raw && raw.achievement && Array.isArray(raw.achievement.demoNotes)
+                ? raw.achievement.demoNotes
+                    .map((note) => [lx(note && note.label), lx(note && note.text)])
+                    .filter(([label, text]) => label || text)
+                : [];
+            const fallbackNotes = notes.length >= 2 ? notes : [
+                [uiText('source cue', '资料线索'), getAchievementField(raw, 'material', uiText('Primary source and local redraw.', '主资料与本地重绘图。'))],
+                [uiText('interaction', '互动点'), getAchievementField(raw, 'demo', uiText('Step through the visual flow to connect inputs, method, and result.', '逐步查看视觉流程，连接输入、方法和结果。'))]
+            ];
+            return buildImagePaperDemo(raw, fallbackNotes, getAchievementField(raw, 'artifact', tx('archiveImage')));
         }
 
         function buildOtterDemo() {
@@ -7953,6 +8162,29 @@
                 batchnorm: () => buildBatchNormVisualDemo(raw),
                 densenet: () => buildDenseNetVisualDemo(raw),
                 vit: () => buildVitVisualDemo(raw),
+                knn: () => buildKnnVisualDemo(raw),
+                ridge: () => buildRidgeVisualDemo(raw),
+                hog: () => buildHogVisualDemo(raw),
+                surf: () => buildSurfVisualDemo(raw),
+                kernelPca: () => buildKernelPcaVisualDemo(raw),
+                nmf: () => buildNmfVisualDemo(raw),
+                isomap: () => buildIsomapVisualDemo(raw),
+                lle: () => buildLleVisualDemo(raw),
+                som: () => buildSomVisualDemo(raw),
+                backprop: () => buildBackpropVisualDemo(raw),
+                neocognitron: () => buildNeocognitronVisualDemo(raw),
+                transformer: () => buildTransformerVisualDemo(raw),
+                lstm: () => buildLstmVisualDemo(raw),
+                gan: () => buildGanVisualDemo(raw),
+                attentionSeq: () => buildAttentionSeqVisualDemo(raw),
+                bert: () => buildBertVisualDemo(raw),
+                gpt: () => buildGptVisualDemo(raw),
+                alphafold: () => buildAlphaFoldVisualDemo(raw),
+                clip: () => buildClipVisualDemo(raw),
+                dalle: () => buildDalleVisualDemo(raw),
+                diffusion: () => buildDiffusionVisualDemo(raw),
+                sam: () => buildSamVisualDemo(raw),
+                configuredPaper: () => buildConfiguredPaperVisualDemo(raw),
                 otter: buildOtterDemo,
                 watson: buildWatsonDemo,
                 draughts: buildDraughtsDemo,
