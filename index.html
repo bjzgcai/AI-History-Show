@@ -2005,8 +2005,10 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="milestones-data.js?v=20260526-i18n-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="resources/pq-quiz-data.js?v=20260608"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
+    <script src="shared/pq-quiz.js?v=20260608"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
     <script>
@@ -2029,6 +2031,7 @@
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
+        let inlineIframePlaying = false;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
 
@@ -3607,6 +3610,7 @@
         function resetInlineMedia() {
             const iframe = ensureMediaIframe();
             const player = ensureMediaPlayer();
+            inlineIframePlaying = false;
 
             iframe.style.display = 'none';
             iframe.src = 'about:blank';
@@ -3621,9 +3625,13 @@
             if (!url) return;
             refs.videoFrame.classList.add('is-playing');
             refs.videoFrame.onclick = null;
+            if (window.PQQuiz && typeof window.PQQuiz.handleVideoStarted === 'function') {
+                window.PQQuiz.handleVideoStarted();
+            }
             if (isDirectVideoMedia(url)) {
                 const iframe = ensureMediaIframe();
                 const player = ensureMediaPlayer();
+                inlineIframePlaying = false;
                 iframe.style.display = 'none';
                 iframe.src = 'about:blank';
                 player.src = url;
@@ -3637,6 +3645,7 @@
 
             const iframe = ensureMediaIframe();
             const player = ensureMediaPlayer();
+            inlineIframePlaying = true;
             player.pause();
             player.removeAttribute('src');
             player.style.display = 'none';
@@ -3681,6 +3690,24 @@
                     jumpTo(index);
                 });
             });
+        }
+
+        function getCurrentQuizMilestoneKey() {
+            const vm = getVm(currentIndex);
+            return vm && vm.raw && vm.raw.id ? vm.raw.id.replace(/^milestone-/, '') : '';
+        }
+
+        function isQuizVideoPlaying() {
+            const player = refs.videoFrame ? refs.videoFrame.querySelector('video') : null;
+            return Boolean(
+                inlineIframePlaying
+                || (player && player.style.display !== 'none' && !player.paused && !player.ended)
+            );
+        }
+
+        function scheduleQuizForCurrentPage() {
+            if (!window.PQQuiz || typeof window.PQQuiz.schedule !== 'function') return;
+            window.PQQuiz.schedule(getCurrentQuizMilestoneKey());
         }
 
         function bindPhotoClicks() {
@@ -3759,6 +3786,7 @@
             bindPhotoClicks();
             document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             preloadAdjacentAssets(index);
+            scheduleQuizForCurrentPage();
         }
 
         function isPortraitStackLayout() {
@@ -4093,6 +4121,16 @@
             syncStageScale();
             initGlobe();
             initSwipeNavigation();
+            if (window.PQQuiz && typeof window.PQQuiz.init === 'function') {
+                window.PQQuiz.init({
+                    getMilestoneTitle() {
+                        const vm = getVm(currentIndex);
+                        return vm && vm.title ? vm.title : '';
+                    },
+                    isVideoPlaying: isQuizVideoPlaying,
+                    videoSelector: '#mediaVideoPlayer'
+                });
+            }
             renderPage(currentIndex);
         }
     </script>
