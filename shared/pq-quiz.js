@@ -1,11 +1,13 @@
 (function (global) {
     const DEFAULT_QR_IMAGE = 'resources/pq.png';
     const IDLE_TRIGGER_MS = 10000;
+    const POPUP_IDLE_DISMISS_MS = 15000;
     const VIDEO_RESUME_DELAY_MS = 1200;
     const ACTIVITY_EVENTS = ['pointerdown', 'wheel', 'keydown', 'touchstart'];
 
     const state = {
         timer: 0,
+        visibleTimer: 0,
         resumeTimer: 0,
         milestoneKey: '',
         visible: false,
@@ -650,6 +652,7 @@
                 state.answered = true;
                 state.selectedOptionIndex = Number(button.dataset.pqOption);
                 render();
+                restartVisibleTimer();
             });
         });
 
@@ -670,6 +673,7 @@
                 state.answered = false;
                 state.selectedOptionIndex = -1;
                 render();
+                restartVisibleTimer();
             });
         });
 
@@ -701,10 +705,13 @@
         state.answered = false;
         state.selectedOptionIndex = -1;
         render();
+        restartVisibleTimer();
     }
 
     function hide(options = {}) {
         state.visible = false;
+        window.clearTimeout(state.visibleTimer);
+        state.visibleTimer = 0;
         const overlay = state.overlay;
         if (!overlay) return;
         overlay.classList.remove('is-visible');
@@ -725,8 +732,10 @@
 
     function clearTimers() {
         window.clearTimeout(state.timer);
+        window.clearTimeout(state.visibleTimer);
         window.clearTimeout(state.resumeTimer);
         state.timer = 0;
+        state.visibleTimer = 0;
         state.resumeTimer = 0;
     }
 
@@ -742,10 +751,26 @@
         state.timer = window.setTimeout(show, IDLE_TRIGGER_MS);
     }
 
+    function restartVisibleTimer() {
+        window.clearTimeout(state.visibleTimer);
+        state.visibleTimer = 0;
+
+        if (!state.visible || state.answered || state.dismissed) return;
+        state.visibleTimer = window.setTimeout(() => {
+            if (state.visible && !state.answered) {
+                dismiss();
+            }
+        }, POPUP_IDLE_DISMISS_MS);
+    }
+
     function handlePageActivity() {
         state.pendingBecauseVideo = false;
         window.clearTimeout(state.resumeTimer);
         state.resumeTimer = 0;
+        if (state.visible) {
+            restartVisibleTimer();
+            return;
+        }
         restartIdleTimer();
     }
 
