@@ -1,8 +1,8 @@
 (function (global) {
     const DEFAULT_QR_IMAGE = 'resources/pq.png';
-    const TRIGGER_MIN_MS = 15000;
-    const TRIGGER_JITTER_MS = 5000;
+    const IDLE_TRIGGER_MS = 10000;
     const VIDEO_RESUME_DELAY_MS = 1200;
+    const ACTIVITY_EVENTS = ['pointerdown', 'wheel', 'keydown', 'touchstart'];
 
     const state = {
         timer: 0,
@@ -18,7 +18,8 @@
         config: null,
         overlay: null,
         styleInjected: false,
-        outsideClickBound: false
+        outsideClickBound: false,
+        activityBound: false
     };
 
     function localize(value) {
@@ -729,6 +730,25 @@
         state.resumeTimer = 0;
     }
 
+    function hasScheduledQuiz() {
+        return Boolean(state.milestoneKey && getGroupsForMilestone(state.milestoneKey).length);
+    }
+
+    function restartIdleTimer() {
+        window.clearTimeout(state.timer);
+        state.timer = 0;
+
+        if (!hasScheduledQuiz() || state.visible || state.dismissed) return;
+        state.timer = window.setTimeout(show, IDLE_TRIGGER_MS);
+    }
+
+    function handlePageActivity() {
+        state.pendingBecauseVideo = false;
+        window.clearTimeout(state.resumeTimer);
+        state.resumeTimer = 0;
+        restartIdleTimer();
+    }
+
     function schedule(milestoneKey) {
         const key = normalizeMilestoneKey(milestoneKey);
         clearTimers();
@@ -743,10 +763,7 @@
         state.answered = false;
         state.selectedOptionIndex = -1;
 
-        if (!key || !getGroupsForMilestone(key).length) return;
-
-        const delay = TRIGGER_MIN_MS + Math.floor(Math.random() * TRIGGER_JITTER_MS);
-        state.timer = window.setTimeout(show, delay);
+        restartIdleTimer();
     }
 
     function handleVideoStarted() {
@@ -761,7 +778,8 @@
         window.clearTimeout(state.resumeTimer);
         state.resumeTimer = window.setTimeout(() => {
             if (!state.dismissed && state.pendingBecauseVideo) {
-                show();
+                state.pendingBecauseVideo = false;
+                restartIdleTimer();
             }
         }, VIDEO_RESUME_DELAY_MS);
     }
@@ -812,11 +830,20 @@
         state.outsideClickBound = true;
     }
 
+    function bindPageActivity() {
+        if (state.activityBound || !document) return;
+        ACTIVITY_EVENTS.forEach((eventName) => {
+            document.addEventListener(eventName, handlePageActivity, { capture: true, passive: true });
+        });
+        state.activityBound = true;
+    }
+
     function init(config) {
         state.config = config || {};
         injectStyles();
         bindDirectVideoEvents();
         bindOutsideClickDismiss();
+        bindPageActivity();
         if (global.addEventListener) {
             global.addEventListener('languageChanged', () => {
                 if (state.visible) render();
