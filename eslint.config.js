@@ -38,7 +38,7 @@ module.exports = [
     },
     js.configs.recommended,
     {
-        files: ['**/*.js'],
+        files: ['**/*.{js,mjs}'],
         languageOptions: {
             ecmaVersion: 'latest',
             sourceType: 'script',
@@ -56,6 +56,12 @@ module.exports = [
                 }
             ],
             'no-useless-escape': 'off'
+        }
+    },
+    {
+        files: ['**/*.mjs'],
+        languageOptions: {
+            sourceType: 'module'
         }
     },
     {
