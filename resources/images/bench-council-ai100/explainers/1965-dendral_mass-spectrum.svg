@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Mass spectrum to fragments</text>
+  <path d="M105 376H820" stroke="#64748b" stroke-width="4"/><path d="M120 376V150M190 376V260M250 376V100M330 376V210M430 376V130M540 376V250M660 376V178M760 376V310" stroke="#f59e0b" stroke-width="12"/><text x="108" y="418" fill="#e5e7eb" font-family="Arial" font-size="23">mass spectrum peaks</text><path d="M650 150 C720 145 740 220 700 268 C655 322 580 290 590 220 C596 178 620 156 650 150" fill="none" stroke="#6ee7b7" stroke-width="6"/><circle cx="650" cy="150" r="12" fill="#6ee7b7"/><circle cx="700" cy="268" r="12" fill="#6ee7b7"/>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>

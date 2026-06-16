@@ -58,8 +58,10 @@ function normalizeEditableQuoteMeta(meta, options = {}) {
     let hasValue = false;
 
     for (const field of QUOTE_META_FIELDS) {
-        const value = source && hasOwn(source, field) ? String(source[field] || '').trim() : '';
-        if (value) hasValue = true;
+        const rawValue = source && hasOwn(source, field) ? source[field] : '';
+        const value = isLocalizedText(rawValue) ? rawValue : String(rawValue || '').trim();
+        if (isLocalizedText(value) ? SUPPORTED_LOCALES.some((locale) => getLocalizedText(value, locale)) : value)
+            hasValue = true;
         if (value || preserveKeys) normalized[field] = value;
     }
 
@@ -81,8 +83,9 @@ function mergeEditableQuoteMeta(eventMeta, candidateMeta, options = {}) {
                 : candidateSource && hasOwn(candidateSource, field)
                   ? candidateSource[field]
                   : '';
-        const value = String(rawValue || '').trim();
-        if (value) hasValue = true;
+        const value = isLocalizedText(rawValue) ? rawValue : String(rawValue || '').trim();
+        if (isLocalizedText(value) ? SUPPORTED_LOCALES.some((locale) => getLocalizedText(value, locale)) : value)
+            hasValue = true;
         if (value || preserveKeys || hasEventMeta) merged[field] = value;
     }
 
@@ -91,15 +94,28 @@ function mergeEditableQuoteMeta(eventMeta, candidateMeta, options = {}) {
 
 function formatQuoteAttribution(candidate) {
     const safeCandidate = candidate && typeof candidate === 'object' ? candidate : {};
-    const workTitle = String(safeCandidate.workTitle || '').trim();
-    const workAuthors = String(safeCandidate.workAuthors || '').trim();
-    const speaker = String(safeCandidate.speaker || '').trim();
+    const hasLocalizedMeta = QUOTE_META_FIELDS.some((field) => isLocalizedText(safeCandidate[field]));
 
-    if (workTitle) {
-        return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
+    const formatForLocale = (locale) => {
+        const workTitle = getLocalizedText(safeCandidate.workTitle, locale);
+        const workAuthors = getLocalizedText(safeCandidate.workAuthors, locale);
+        const speaker = getLocalizedText(safeCandidate.speaker, locale);
+
+        if (workTitle) {
+            return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
+        }
+
+        return speaker;
+    };
+
+    if (hasLocalizedMeta) {
+        return SUPPORTED_LOCALES.reduce((result, locale) => {
+            result[locale] = formatForLocale(locale);
+            return result;
+        }, {});
     }
 
-    return speaker;
+    return formatForLocale(DEFAULT_LOCALE);
 }
 
 function loadQuoteCandidates(filePath, options = {}) {
