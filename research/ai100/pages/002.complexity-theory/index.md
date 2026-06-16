@@ -161,12 +161,12 @@ Today experts generally evaluate Cook's 1971 contribution as a founding event of
 
 images:
 
-- resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
-- resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
+- photos/1971-complexity-theory_stephen-cook.jpg
+- photos/1971-complexity-theory_reduction-map.svg
 
 imageMeta:
 
-- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg
+- local_image_path: photos/1971-complexity-theory_stephen-cook.jpg
 - title: Stephen A. Cook portrait
 - caption: Stephen A. Cook
 - description: Official or institutional profile image connected to Cook's work on NP-completeness.
@@ -176,15 +176,15 @@ imageMeta:
 - copyright_or_license: ACM award page; use requires checking ACM image permissions.
 - usage: Portrait
 
-- local_image_path: resources/images/bench-council-ai100/photos/1971-complexity-theory_p-vs-np.jpg
-- title: P versus NP Millennium Problem
-- caption: P versus NP Millennium Problem
-- description: Official Clay Mathematics Institute page for the P versus NP Millennium Prize Problem.
-- source_name: Clay Mathematics Institute
-- source_page_url: https://www.claymath.org/millennium/p-vs-np/
-- original_image_url: Not available
-- copyright_or_license: Clay page credits Stephen Cook photo by Jiri Janicek, CC BY-SA 3.0.
-- usage: Source material / Historical context
+- local_image_path: photos/1971-complexity-theory_reduction-map.svg
+- title: NP-completeness reduction map
+- caption: Reduction map
+- description: Local explainer showing how reductions connect computational problems when reasoning about NP-completeness.
+- source_name: Local explainer based on Cook 1971 and Karp 1972
+- source_page_url: https://doi.org/10.1145/321921.321924
+- original_image_url: Local original explainer
+- copyright_or_license: Original local explainer; source text and figure reuse rights not used.
+- usage: Explainer graphic
 
 # Video Clips
 
