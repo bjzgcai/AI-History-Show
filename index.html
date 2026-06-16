@@ -2027,10 +2027,15 @@
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
         const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, iframe';
+        const AUTOPLAY_INTERVAL_MS = 10000;
+        const AUTOPLAY_IDLE_DELAY_MS = 5 * 60 * 1000;
         const milestoneList = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
+        let isAutoplaying = false;
+        let autoplayTimer = null;
+        let idleTimer = null;
         let inlineIframePlaying = false;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
@@ -4056,8 +4061,26 @@
             releasePortraitEdgeGesture();
         }
 
+        function clearAutoplayTimer() {
+            if (autoplayTimer) {
+                window.clearTimeout(autoplayTimer);
+                autoplayTimer = null;
+            }
+        }
+
+        function clearIdleTimer() {
+            if (idleTimer) {
+                window.clearTimeout(idleTimer);
+                idleTimer = null;
+            }
+        }
+
+        function getNextAutoplayIndex() {
+            return currentIndex === milestoneList.length - 1 ? 0 : currentIndex + 1;
+        }
+
         function jumpTo(index, options = {}) {
-            const { portraitScrollAnchor = 'top' } = options;
+            const { portraitScrollAnchor = 'top', resetAutoplay = true } = options;
             if (index < 0 || index >= milestoneList.length || index === currentIndex) return;
             preloadMilestoneAssets(index);
             currentIndex = index;
@@ -4067,6 +4090,9 @@
             } else {
                 resetPortraitScrollPosition();
             }
+            if (resetAutoplay) {
+                resetAutoplayTimer();
+            }
         }
 
         function navigate(direction, options = {}) {
@@ -4075,6 +4101,61 @@
                 ? Math.min(currentIndex + 1, milestoneList.length - 1)
                 : Math.max(currentIndex - 1, 0);
             jumpTo(nextIndex, options);
+        }
+
+        function scheduleAutoplayTick() {
+            clearAutoplayTimer();
+            if (!isAutoplaying || milestoneList.length <= 1) return;
+
+            autoplayTimer = window.setTimeout(() => {
+                jumpTo(getNextAutoplayIndex(), { resetAutoplay: false });
+                scheduleAutoplayTick();
+            }, AUTOPLAY_INTERVAL_MS);
+        }
+
+        function setAutoplayState(nextState, options = {}) {
+            const { advanceImmediately = false } = options;
+            const shouldAutoplay = Boolean(nextState) && milestoneList.length > 1;
+            if (isAutoplaying === shouldAutoplay) {
+                if (!shouldAutoplay) {
+                    clearAutoplayTimer();
+                }
+                return;
+            }
+
+            isAutoplaying = shouldAutoplay;
+            if (isAutoplaying) {
+                clearIdleTimer();
+                if (advanceImmediately) {
+                    jumpTo(getNextAutoplayIndex(), { resetAutoplay: false });
+                }
+                scheduleAutoplayTick();
+            } else {
+                clearAutoplayTimer();
+            }
+        }
+
+        function resetAutoplayTimer() {
+            if (isAutoplaying) {
+                scheduleAutoplayTick();
+            }
+        }
+
+        function restartIdleCountdown() {
+            clearIdleTimer();
+            if (milestoneList.length <= 1) return;
+
+            idleTimer = window.setTimeout(() => {
+                setAutoplayState(true, { advanceImmediately: true });
+            }, AUTOPLAY_IDLE_DELAY_MS);
+        }
+
+        function registerUserActivity(event) {
+            if (event && event.isTrusted === false) return;
+            if (isAutoplaying) {
+                setAutoplayState(false);
+            }
+            restartIdleCountdown();
         }
 
         function initSwipeNavigation() {
@@ -4098,6 +4179,27 @@
             refs.nextBtn.addEventListener('click', () => navigate('next'));
 
             window.addEventListener('resize', debounce(syncStageScale, 120));
+            window.addEventListener('beforeunload', () => {
+                clearAutoplayTimer();
+                clearIdleTimer();
+            });
+
+            document.addEventListener('pointerdown', (event) => {
+                registerUserActivity(event);
+            }, { passive: true });
+
+            document.addEventListener('click', (event) => {
+                registerUserActivity(event);
+            }, { passive: true });
+
+            document.addEventListener('wheel', (event) => {
+                registerUserActivity(event);
+            }, { passive: true });
+
+            document.addEventListener('touchstart', (event) => {
+                registerUserActivity(event);
+            }, { passive: true });
+
             document.addEventListener('touchstart', handlePortraitEdgeTouchStart, { passive: true });
             document.addEventListener('touchmove', handlePortraitEdgeTouchMove, { passive: false });
             document.addEventListener('touchend', handlePortraitEdgeTouchEnd, { passive: true });
@@ -4108,6 +4210,7 @@
             document.addEventListener('pointercancel', releasePortraitEdgeGesture, { passive: true });
 
             document.addEventListener('keydown', (event) => {
+                registerUserActivity(event);
                 if (hasOpenPhotoViewer()) return;
                 if (event.key === 'ArrowRight') navigate('next');
                 if (event.key === 'ArrowLeft') navigate('prev');
@@ -4132,6 +4235,7 @@
                 });
             }
             renderPage(currentIndex);
+            restartIdleCountdown();
         }
     </script>
 </body>
