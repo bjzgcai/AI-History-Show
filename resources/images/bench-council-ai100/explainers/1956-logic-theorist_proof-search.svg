@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Logic Theorist proof search diagram</title>
+  <desc id="desc">A conceptual diagram showing a theorem goal, heuristic search, symbolic transformations, and a proof chain.</desc>
+  <rect width="900" height="520" fill="#151515"/>
+  <rect x="52" y="54" width="796" height="412" rx="18" fill="#202020" stroke="#5a3a12" stroke-width="2"/>
+  <text x="80" y="104" fill="#f68900" font-family="Arial, sans-serif" font-size="26" font-weight="700">LOGIC THEORIST</text>
+  <text x="80" y="142" fill="#f4efe5" font-family="Arial, sans-serif" font-size="19">A theorem prover that searched for symbolic proof chains.</text>
+  <rect x="88" y="204" width="196" height="92" rx="14" fill="#2b2b2b" stroke="#666"/>
+  <text x="186" y="241" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Goal theorem</text>
+  <text x="186" y="270" fill="#d8d1c4" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">Principia statement</text>
+  <rect x="352" y="176" width="196" height="148" rx="14" fill="#2a1f12" stroke="#6f4308"/>
+  <text x="450" y="218" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Heuristic</text>
+  <text x="450" y="250" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">search</text>
+  <text x="450" y="288" fill="#d8d1c4" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">try promising moves first</text>
+  <rect x="616" y="204" width="196" height="92" rx="14" fill="#2b2b2b" stroke="#666"/>
+  <text x="714" y="241" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Proof chain</text>
+  <text x="714" y="270" fill="#d8d1c4" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">axioms → theorem</text>
+  <g stroke="#f68900" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M290 250 L340 250"/>
+    <path d="M558 250 L606 250"/>
+    <path d="M714 302 C704 396 508 420 450 334"/>
+  </g>
+  <g fill="#303030" stroke="#666">
+    <rect x="140" y="354" width="150" height="42" rx="8"/>
+    <rect x="322" y="354" width="150" height="42" rx="8"/>
+    <rect x="504" y="354" width="150" height="42" rx="8"/>
+  </g>
+  <g fill="#f4efe5" font-family="Arial, sans-serif" font-size="16" font-weight="700">
+    <text x="215" y="381" text-anchor="middle">Substitution</text>
+    <text x="397" y="381" text-anchor="middle">Detachment</text>
+    <text x="579" y="381" text-anchor="middle">Matching</text>
+  </g>
+  <rect x="80" y="426" width="650" height="40" rx="8" fill="#201915" stroke="#4b3320"/>
+  <text x="405" y="452" fill="#f4efe5" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">The system made reasoning visible as search through symbolic transformations.</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f68900"/>
+    </marker>
+  </defs>
+</svg>
