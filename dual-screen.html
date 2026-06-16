@@ -2407,7 +2407,8 @@
             }, AUTOPLAY_INTERVAL_MS);
         }
 
-        function setAutoplayState(nextState) {
+        function setAutoplayState(nextState, options = {}) {
+            const { advanceImmediately = false } = options;
             const shouldAutoplay = Boolean(nextState) && milestones.length > 1;
             if (isAutoplaying === shouldAutoplay) {
                 if (!shouldAutoplay) {
@@ -2419,6 +2420,10 @@
             isAutoplaying = shouldAutoplay;
             if (isAutoplaying) {
                 clearIdleTimer();
+                if (advanceImmediately) {
+                    const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
+                    jumpTo(nextIndex, { resetAutoplay: false });
+                }
                 scheduleAutoplayTick();
             } else {
                 clearAutoplayTimer();
@@ -2436,7 +2441,7 @@
             if (milestones.length <= 1) return;
 
             idleTimer = window.setTimeout(() => {
-                setAutoplayState(true);
+                setAutoplayState(true, { advanceImmediately: true });
             }, AUTOPLAY_IDLE_DELAY_MS);
         }
 
