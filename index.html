@@ -101,6 +101,12 @@
             box-shadow: none;
         }
 
+        .single-stage.is-bench-dossier {
+            grid-template-rows:
+                calc(var(--screen-height) * var(--stage-topbar-ratio))
+                1fr;
+        }
+
         .empty-state {
             display: grid;
             place-items: center;
@@ -155,8 +161,36 @@
         .topbar-actions {
             justify-self: end;
             display: inline-flex;
-            align-items: baseline;
+            align-items: center;
             gap: 12px;
+        }
+
+        .storyline-select {
+            width: 334px;
+            height: 32px;
+            min-width: 0;
+            border: 1px solid rgba(244, 239, 229, 0.24);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.34);
+            color: rgba(244, 239, 229, 0.78);
+            padding: 0 32px 0 10px;
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .storyline-select:focus-visible {
+            border-color: rgba(246, 137, 0, 0.78);
+            outline: none;
+        }
+
+        .storyline-select option {
+            background: #0b0b0b;
+            color: #f4efe5;
         }
 
         .mode-chip-label {
@@ -1226,6 +1260,703 @@
             line-height: 1.52;
         }
 
+        .commentary-body a,
+        .bench-evidence-body a {
+            color: var(--accent);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .commentary-body a:hover,
+        .commentary-body a:focus-visible,
+        .bench-evidence-body a:hover,
+        .bench-evidence-body a:focus-visible {
+            text-decoration: underline;
+        }
+
+        .bench-dossier {
+            display: none;
+            grid-column: 1 / -1;
+            min-height: 0;
+            grid-template-columns: 330px minmax(0, 1fr) 410px;
+            gap: calc(100% * var(--stage-grid-gap-ratio));
+        }
+
+        .single-stage.is-bench-dossier .stage-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .single-stage.is-bench-dossier .stage-footer {
+            display: none;
+        }
+
+        .single-stage.is-bench-dossier .hero-panel,
+        .single-stage.is-bench-dossier .story-panel,
+        .single-stage.is-bench-dossier .media-panel {
+            display: none;
+        }
+
+        .single-stage.is-bench-dossier .bench-dossier {
+            display: grid;
+        }
+
+        .bench-map-panel,
+        .bench-core-panel,
+        .bench-material-panel {
+            min-height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background:
+                radial-gradient(circle at 80% 0%, rgba(246, 137, 0, 0.08), transparent 26%),
+                linear-gradient(180deg, rgba(20, 20, 20, 0.98), rgba(9, 9, 9, 0.99));
+            box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0.026),
+                0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .bench-map-panel,
+        .bench-material-panel {
+            padding: 20px 18px;
+            display: grid;
+            gap: 18px;
+        }
+
+        .bench-map-panel {
+            grid-template-rows: auto minmax(0, 1fr);
+            gap: 16px;
+        }
+
+        .bench-material-panel {
+            grid-template-rows: auto 235px minmax(0, 1fr);
+        }
+
+        .bench-core-panel {
+            position: relative;
+            padding: 28px 30px;
+            display: grid;
+            grid-template-rows: auto auto minmax(88px, auto) 265px minmax(0, 1fr);
+            gap: 18px;
+        }
+
+        .bench-panel-heading,
+        .bench-core-area {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-core-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        }
+
+        .bench-core-year {
+            color: rgba(244, 239, 229, 0.44);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .bench-core-title {
+            max-width: 92%;
+            color: rgba(255, 255, 255, 0.96);
+            font-size: 56px;
+            line-height: 1.02;
+            font-weight: 850;
+            letter-spacing: 0;
+            text-wrap: balance;
+        }
+
+        .bench-core-summary {
+            position: relative;
+            max-height: 132px;
+            overflow: auto;
+            padding: 16px 8px 0 0;
+            color: rgba(244, 239, 229, 0.9);
+            font-size: 18px;
+            line-height: 1.48;
+        }
+
+        .bench-core-summary::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(246, 137, 0, 0.7), rgba(246, 137, 0, 0.06));
+            pointer-events: none;
+        }
+
+        .bench-core-summary p + p {
+            margin-top: 0.7em;
+        }
+
+        .bench-hero-visual {
+            min-height: 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(0, 0, 0, 0.24);
+            padding: 12px;
+            display: grid;
+            grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.28fr) minmax(0, 1fr);
+            gap: 12px;
+        }
+
+        .bench-hero-visual.has-photo::before {
+            content: "";
+            position: absolute;
+            inset: -18px;
+            z-index: 0;
+            background-image: var(--bench-photo);
+            background-size: cover;
+            background-position: center;
+            filter: blur(18px);
+            opacity: 0.42;
+            transform: scale(1.08);
+        }
+
+        .bench-hero-visual::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 2;
+            box-shadow: inset 0 0 44px rgba(0, 0, 0, 0.42);
+        }
+
+        .bench-photo-frame {
+            position: relative;
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+            border: 1px solid rgba(244, 239, 229, 0.14);
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.28);
+        }
+
+        .bench-visual-card {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .bench-photo-frame.has-image {
+            background: rgba(0, 0, 0, 0.34);
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 0;
+            padding: 10px 10px 0;
+        }
+
+        .bench-photo-frame.is-placeholder {
+            background:
+                linear-gradient(135deg, rgba(244, 239, 229, 0.08), transparent 34%),
+                linear-gradient(315deg, rgba(246, 137, 0, 0.08), transparent 38%),
+                rgba(255, 255, 255, 0.024);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.026);
+        }
+
+        .bench-photo-frame.is-placeholder::before,
+        .bench-photo-frame.is-placeholder::after {
+            content: "";
+            position: absolute;
+            inset: 14px;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 4px;
+        }
+
+        .bench-photo-frame.is-placeholder::after {
+            inset: 0;
+            border: none;
+            background:
+                linear-gradient(90deg, transparent 0 48%, rgba(244, 239, 229, 0.08) 48% 52%, transparent 52% 100%),
+                linear-gradient(0deg, transparent 0 48%, rgba(244, 239, 229, 0.08) 48% 52%, transparent 52% 100%);
+            opacity: 0.38;
+        }
+
+        .bench-image-stage {
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .bench-image-stage img {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            box-sizing: border-box;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .bench-image-stage.is-diagram {
+            padding: 4px;
+            background: rgba(255, 255, 255, 0.92);
+        }
+
+        .bench-archive-card {
+            isolation: isolate;
+            padding: 14px;
+            display: grid;
+            align-content: start;
+            gap: 9px;
+            background:
+                linear-gradient(135deg, rgba(244, 239, 229, 0.12), rgba(244, 239, 229, 0.02) 42%),
+                radial-gradient(circle at 84% 12%, rgba(246, 137, 0, 0.18), transparent 35%),
+                rgba(0, 0, 0, 0.38);
+        }
+
+        .bench-archive-card:hover {
+            border-color: rgba(246, 137, 0, 0.64);
+        }
+
+        .bench-archive-kicker,
+        .bench-archive-action {
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-archive-title {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 18px;
+            font-weight: 850;
+            line-height: 1.08;
+        }
+
+        .bench-archive-description {
+            color: rgba(244, 239, 229, 0.76);
+            font-size: 13px;
+            font-weight: 650;
+            line-height: 1.42;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .bench-archive-license {
+            color: rgba(244, 239, 229, 0.52);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.35;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .bench-archive-action {
+            align-self: end;
+            margin-top: 2px;
+        }
+
+        .bench-hero-visual.is-empty {
+            display: none;
+        }
+
+        .bench-hero-caption {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            z-index: 3;
+            min-height: 38px;
+            padding: 8px 10px;
+            background: rgba(0, 0, 0, 0.72);
+            color: rgba(244, 239, 229, 0.88);
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .bench-hero-caption span:first-child {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            overflow-wrap: anywhere;
+        }
+
+        .bench-hero-caption small {
+            min-width: 0;
+            color: rgba(244, 239, 229, 0.72);
+            font-size: 11px;
+            font-weight: 700;
+            text-align: right;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .bench-map-list,
+        .bench-source-list,
+        .bench-evidence-list {
+            min-height: 0;
+            overflow: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+        }
+
+        .bench-map-list {
+            display: grid;
+            align-content: start;
+            gap: 10px;
+        }
+
+        .bench-map-item {
+            position: relative;
+            min-height: 104px;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.032);
+            color: rgba(244, 239, 229, 0.76);
+            padding: 12px 12px 12px 48px;
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            gap: 7px;
+            text-align: left;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .bench-map-item:hover,
+        .bench-map-item.active {
+            border-color: rgba(246, 137, 0, 0.72);
+            background: rgba(246, 137, 0, 0.09);
+        }
+
+        .bench-map-item:hover {
+            transform: translateX(2px);
+        }
+
+        .bench-map-index {
+            position: absolute;
+            left: 12px;
+            top: 14px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--accent);
+            border: 1px solid rgba(246, 137, 0, 0.44);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            background: rgba(0, 0, 0, 0.26);
+        }
+
+        .bench-map-area {
+            color: rgba(244, 239, 229, 0.48);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-map-title {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 1.16;
+        }
+
+        .bench-map-method {
+            align-self: end;
+            color: rgba(244, 239, 229, 0.6);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .bench-demo-surface {
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 230px;
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        .bench-demo-visual,
+        .bench-demo-steps {
+            min-height: 0;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(0, 0, 0, 0.24);
+        }
+
+        .bench-demo-visual {
+            padding: 16px;
+            overflow: hidden;
+            display: grid;
+        }
+
+        .bench-demo-steps {
+            padding: 16px;
+            display: grid;
+            align-content: stretch;
+            gap: 12px;
+        }
+
+        .bench-demo-step {
+            min-height: 0;
+            border: 1px solid rgba(244, 239, 229, 0.08);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.028);
+            padding: 11px 10px;
+            display: grid;
+            grid-template-columns: 24px minmax(0, 1fr);
+            align-items: center;
+            gap: 10px;
+            color: rgba(244, 239, 229, 0.86);
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .bench-demo-step span:first-child {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--accent);
+            border: 1px solid rgba(246, 137, 0, 0.4);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 11px;
+        }
+
+        .bench-transcript-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 14px;
+            height: 100%;
+        }
+
+        .bench-transcript-column {
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            padding: 16px;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            align-content: start;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .bench-transcript-ruling {
+            grid-column: 1 / -1;
+            border: 1px solid rgba(246, 137, 0, 0.24);
+            border-radius: 7px;
+            background: rgba(246, 137, 0, 0.055);
+            padding: 13px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        }
+
+        .bench-transcript-ruling span {
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-transcript-ruling strong {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 16px;
+            line-height: 1.25;
+            text-align: right;
+        }
+
+        .bench-transcript-label,
+        .bench-code-label,
+        .bench-go-label {
+            color: rgba(244, 239, 229, 0.52);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bench-transcript-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 17px;
+            font-weight: 750;
+            line-height: 1.35;
+        }
+
+        .bench-transcript-chip,
+        .bench-source-type {
+            justify-self: start;
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .bench-code-flow {
+            display: grid;
+            align-content: center;
+            gap: 14px;
+        }
+
+        .bench-code-line {
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.034);
+            color: rgba(255, 255, 255, 0.94);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 18px;
+            line-height: 1.28;
+            white-space: pre-wrap;
+        }
+
+        .bench-primitive-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .bench-primitive {
+            border: 1px solid rgba(246, 137, 0, 0.32);
+            border-radius: 999px;
+            padding: 6px 10px;
+            color: rgba(244, 239, 229, 0.84);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .bench-go-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 18px;
+            align-items: center;
+        }
+
+        .bench-go-board {
+            width: 250px;
+            aspect-ratio: 1 / 1;
+            border: 1px solid rgba(246, 137, 0, 0.3);
+            border-radius: 7px;
+            background:
+                linear-gradient(rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                #191511;
+            background-size: calc(100% / 8) calc(100% / 8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bench-go-stone {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background: #0a0a0a;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16), 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .bench-go-stone.white {
+            background: #eee7d8;
+        }
+
+        .bench-go-stone.move37 {
+            background: var(--accent);
+            box-shadow: 0 0 0 6px rgba(246, 137, 0, 0.12), 0 0 28px rgba(246, 137, 0, 0.46);
+        }
+
+        .bench-go-notes {
+            display: grid;
+            gap: 12px;
+        }
+
+        .bench-go-note {
+            border-left: 2px solid rgba(246, 137, 0, 0.58);
+            padding-left: 12px;
+            color: rgba(244, 239, 229, 0.88);
+            font-size: 15px;
+            line-height: 1.35;
+            font-weight: 700;
+        }
+
+        .bench-source-list {
+            display: grid;
+            align-content: start;
+            gap: 10px;
+            padding-right: 3px;
+        }
+
+        .bench-source-item {
+            display: grid;
+            gap: 6px;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.032);
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .bench-source-item:hover,
+        .bench-source-item:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            outline: none;
+        }
+
+        .bench-source-label {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .bench-evidence-list {
+            display: grid;
+            align-content: start;
+            gap: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bench-evidence-item {
+            display: grid;
+            gap: 8px;
+        }
+
+        .bench-evidence-label {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .bench-evidence-body {
+            color: rgba(244, 239, 229, 0.88);
+            font-size: 13.5px;
+            line-height: 1.48;
+        }
+
         .stage-footer {
             display: grid;
             grid-template-columns:
@@ -1406,6 +2137,107 @@
             font-size: 18px;
         }
 
+        .timeline-track.achievement-map-track {
+            height: 64px;
+            grid-auto-columns: minmax(0, 1fr);
+            align-items: stretch;
+            gap: 12px;
+            overflow: visible;
+            cursor: default;
+        }
+
+        .timeline-track.achievement-map-track::before {
+            left: 40px;
+            right: 40px;
+            top: 31px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(246, 137, 0, 0), rgba(246, 137, 0, 0.44), rgba(246, 137, 0, 0));
+            opacity: 1;
+        }
+
+        .achievement-map-node {
+            position: relative;
+            z-index: 1;
+            min-width: 0;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018)),
+                rgba(10, 10, 10, 0.88);
+            color: rgba(244, 239, 229, 0.76);
+            padding: 8px 10px 8px 48px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: 3px;
+            text-align: left;
+            cursor: pointer;
+            overflow: hidden;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .achievement-map-node:hover,
+        .achievement-map-node.active {
+            border-color: rgba(246, 137, 0, 0.7);
+            background:
+                linear-gradient(180deg, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.04)),
+                rgba(14, 10, 6, 0.94);
+        }
+
+        .achievement-map-node:hover {
+            transform: translateY(-1px);
+        }
+
+        .achievement-map-index {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(246, 137, 0, 0.42);
+            color: var(--accent);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1;
+            background: rgba(0, 0, 0, 0.44);
+        }
+
+        .achievement-map-area {
+            color: rgba(244, 239, 229, 0.5);
+            font-size: 10px;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .achievement-map-title {
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 15px;
+            font-weight: 800;
+            line-height: 1.12;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .achievement-map-method {
+            color: rgba(244, 239, 229, 0.54);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         .footer-status {
             min-width: 0;
             margin-left: auto;
@@ -1573,6 +2405,16 @@
 
             .topbar-actions {
                 gap: 8px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+
+            .storyline-select {
+                width: 184px;
+                height: 27px;
+                padding-left: 8px;
+                padding-right: 24px;
+                font-size: 11px;
             }
 
             .mode-chip-label {
@@ -1590,6 +2432,63 @@
                 gap: 16px;
                 padding-top: 0;
                 padding-bottom: 0;
+            }
+
+            .bench-dossier {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .bench-map-panel,
+            .bench-core-panel,
+            .bench-material-panel {
+                padding: 18px;
+            }
+
+            .bench-core-panel {
+                grid-template-rows: auto auto auto auto auto;
+            }
+
+            .bench-core-title {
+                max-width: none;
+                font-size: 30px;
+            }
+
+            .bench-core-summary {
+                max-height: none;
+                overflow: visible;
+            }
+
+            .bench-hero-visual {
+                min-height: 180px;
+                grid-template-columns: 1fr;
+            }
+
+            .bench-photo-frame {
+                min-height: 150px;
+            }
+
+            .bench-demo-surface {
+                grid-template-columns: 1fr;
+            }
+
+            .bench-transcript-grid,
+            .bench-go-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .bench-transcript-ruling {
+                grid-column: auto;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .bench-transcript-ruling strong {
+                text-align: left;
+            }
+
+            .bench-go-board {
+                width: min(100%, 300px);
             }
 
             .hero-panel,
@@ -1828,6 +2727,23 @@
                 height: 44px;
             }
 
+            .timeline-track.achievement-map-track {
+                height: auto;
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .timeline-track.achievement-map-track::before {
+                display: none;
+            }
+
+            .achievement-map-node {
+                min-height: 54px;
+                padding: 8px 10px 8px 44px;
+            }
+
             .timeline-tick span {
                 font-size: 0;
             }
@@ -1848,6 +2764,7 @@
                 </div>
                 <div class="stage-kicker" id="categoryTrack">AI创世纪 (1950s-1970s)</div>
                 <div class="topbar-actions">
+                    <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
                     <div class="mode-chip">
                         <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
                     </div>
@@ -1969,6 +2886,30 @@
 
                     <div class="commentary-list" id="commentaryList"></div>
                 </aside>
+
+                <section class="bench-dossier" id="benchDossier" aria-live="polite">
+                    <aside class="bench-map-panel">
+                        <div class="bench-panel-heading" id="benchMapHeading">Achievement Map</div>
+                        <div class="bench-map-list" id="benchMapList"></div>
+                    </aside>
+
+                    <section class="bench-core-panel">
+                        <div class="bench-core-meta">
+                            <div class="bench-core-area" id="benchCoreArea"></div>
+                            <div class="bench-core-year" id="benchCoreYear"></div>
+                        </div>
+                        <h1 class="bench-core-title" id="benchCoreTitle"></h1>
+                        <div class="bench-core-summary" id="benchCoreSummary"></div>
+                        <div class="bench-hero-visual" id="benchHeroVisual"></div>
+                        <div class="bench-demo-surface" id="benchDemoSurface"></div>
+                    </section>
+
+                    <aside class="bench-material-panel">
+                        <div class="bench-panel-heading" id="benchMaterialHeading">Materials</div>
+                        <div class="bench-source-list" id="benchSourceList"></div>
+                        <div class="bench-evidence-list" id="benchEvidenceList"></div>
+                    </aside>
+                </section>
             </main>
 
             <footer class="stage-footer">
@@ -1980,7 +2921,7 @@
 
                 <div class="timeline-block">
                     <div class="timeline-meta">
-                        <div class="timeline-current-year">Timeline</div>
+                        <div class="timeline-current-year" id="timelineModeLabel">Timeline</div>
                         <div class="footer-status">
                             <div class="footer-status-text" id="statusText">达特茅斯会议 - AI正式诞生！</div>
                             <div class="footer-counter" id="counterText">1 / 21</div>
@@ -2000,11 +2941,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260526-i18n-images"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260602-turing-visuals"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260526-i18n-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260602-turing-visuals" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -2024,8 +2965,80 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, iframe';
-        const milestoneList = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, iframe, .storyline-select';
+        const DEFAULT_STORYLINE_ID = 'deep-learning-history';
+        const STORYLINE_OPTIONS = [
+            {
+                id: DEFAULT_STORYLINE_ID,
+                label: {
+                    en: 'Current: AI History (Deep Learning)',
+                    zh: '当前：AI 历史（深度学习）'
+                },
+                note: {
+                    en: '1956-now, centered on deep learning milestones',
+                    zh: '1956 至今，聚焦深度学习里程碑'
+                }
+            },
+            {
+                id: 'board-games-card-games',
+                label: {
+                    en: 'AI & Board/Card Games',
+                    zh: 'AI 与棋类 / 牌类游戏'
+                },
+                note: {
+                    en: 'Future storyline from game benchmarks and matches',
+                    zh: '待扩展：游戏基准与经典对局故事线'
+                }
+            },
+            {
+                id: 'culture-humanity-ethics',
+                label: {
+                    en: 'AI, Culture, Humanity & Ethics',
+                    zh: 'AI、文化、人文与伦理'
+                },
+                note: {
+                    en: 'Future storyline for social and cultural impact',
+                    zh: '待扩展：社会、文化与伦理影响故事线'
+                }
+            },
+            {
+                id: 'bench-council-ai100',
+                layout: 'achievement-map',
+                label: {
+                    en: 'AI Top 100 Achievements (BenchCouncil)',
+                    zh: 'AI 百大成就（BenchCouncil）'
+                },
+                note: {
+                    en: 'Pilot storyline from the BenchCouncil AI100 list',
+                    zh: '来自 BenchCouncil AI100 榜单的试点故事线'
+                }
+            }
+        ];
+        const allMilestones = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
+        const getMilestoneStorylineId = (milestone) => {
+            const storyline = milestone && milestone.storyline;
+            if (typeof storyline === 'string') return storyline || DEFAULT_STORYLINE_ID;
+            if (storyline && typeof storyline === 'object' && storyline.id) return storyline.id;
+            return DEFAULT_STORYLINE_ID;
+        };
+        const getStorylineMilestones = (storylineId) => allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId);
+        const getStorylineOption = (storylineId) => STORYLINE_OPTIONS.find((option) => option.id === storylineId) || null;
+        const hasStorylineMilestones = (storylineId) => getStorylineMilestones(storylineId).length > 0;
+        const getRequestedStorylineId = () => {
+            try {
+                return new URLSearchParams(window.location.search).get('storyline') || '';
+            } catch (_) {
+                return '';
+            }
+        };
+        const getFallbackStorylineId = () => hasStorylineMilestones(DEFAULT_STORYLINE_ID)
+            ? DEFAULT_STORYLINE_ID
+            : (STORYLINE_OPTIONS.find((option) => hasStorylineMilestones(option.id)) || {}).id || DEFAULT_STORYLINE_ID;
+        const requestedStorylineId = getRequestedStorylineId();
+        let activeStorylineId = requestedStorylineId && hasStorylineMilestones(requestedStorylineId)
+            ? requestedStorylineId
+            : getFallbackStorylineId();
+        let milestoneList = getStorylineMilestones(activeStorylineId);
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
@@ -2091,6 +3104,8 @@
             counterText: document.getElementById('counterText'),
             prevBtn: document.getElementById('prevBtn'),
             nextBtn: document.getElementById('nextBtn'),
+            storylineSelect: document.getElementById('storylineSelect'),
+            timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
             globeStage: document.getElementById('globeStage'),
             globeShell: document.getElementById('globeShell'),
@@ -2099,7 +3114,19 @@
             orbitSvg: document.getElementById('orbitSvg'),
             orbitPath: document.getElementById('orbitPath'),
             orbitStartDot: document.getElementById('orbitStartDot'),
-            orbitDot: document.getElementById('orbitDot')
+            orbitDot: document.getElementById('orbitDot'),
+            benchDossier: document.getElementById('benchDossier'),
+            benchMapHeading: document.getElementById('benchMapHeading'),
+            benchMapList: document.getElementById('benchMapList'),
+            benchCoreArea: document.getElementById('benchCoreArea'),
+            benchCoreYear: document.getElementById('benchCoreYear'),
+            benchCoreTitle: document.getElementById('benchCoreTitle'),
+            benchCoreSummary: document.getElementById('benchCoreSummary'),
+            benchHeroVisual: document.getElementById('benchHeroVisual'),
+            benchDemoSurface: document.getElementById('benchDemoSurface'),
+            benchMaterialHeading: document.getElementById('benchMaterialHeading'),
+            benchSourceList: document.getElementById('benchSourceList'),
+            benchEvidenceList: document.getElementById('benchEvidenceList')
         };
 
         function escapeHtml(value) {
@@ -2142,6 +3169,11 @@
             return window.I18n && typeof window.I18n.localize === 'function' ? window.I18n.localize(value) : (value == null ? '' : value);
         }
 
+        function uiText(en, zh) {
+            const locale = window.I18n && typeof window.I18n.getLocale === 'function' ? window.I18n.getLocale() : window.currentLocale;
+            return locale === 'zh' ? zh : en;
+        }
+
         function applyStaticTranslations() {
             document.querySelectorAll('[data-i18n]').forEach((element) => {
                 element.textContent = tx(element.dataset.i18n);
@@ -2151,6 +3183,86 @@
             });
             refs.prevBtn.setAttribute('aria-label', tx('previousPage'));
             refs.nextBtn.setAttribute('aria-label', tx('nextPage'));
+        }
+
+        function getStorylineLabel(option) {
+            return String(lx(option && option.label) || (option && option.id) || '').trim();
+        }
+
+        function getStorylineNote(option) {
+            return String(lx(option && option.note) || '').trim();
+        }
+
+        function getStorylineStatus(option, count) {
+            if (count <= 0) return uiText('planned', '规划中');
+            if (option && option.id === 'bench-council-ai100') {
+                return uiText(`${count}/100 pilot`, `${count}/100 试点`);
+            }
+            return uiText(`${count} events`, `${count} 个事件`);
+        }
+
+        function getActiveStorylineOption() {
+            return getStorylineOption(activeStorylineId);
+        }
+
+        function isAchievementMapActive() {
+            const option = getActiveStorylineOption();
+            return Boolean(option && option.layout === 'achievement-map');
+        }
+
+        function isResearchDossierActive() {
+            return isAchievementMapActive();
+        }
+
+        function updateStorylineUrl(storylineId) {
+            if (!window.history || !window.location) return;
+            try {
+                const url = new URL(window.location.href);
+                if (storylineId && storylineId !== DEFAULT_STORYLINE_ID) {
+                    url.searchParams.set('storyline', storylineId);
+                } else {
+                    url.searchParams.delete('storyline');
+                }
+                window.history.replaceState(null, '', url);
+            } catch (_) {}
+        }
+
+        function renderStorylineSelect() {
+            if (!refs.storylineSelect) return;
+
+            refs.storylineSelect.setAttribute('aria-label', tx('storylineSelector'));
+            refs.storylineSelect.innerHTML = STORYLINE_OPTIONS.map((option) => {
+                const count = getStorylineMilestones(option.id).length;
+                const disabled = count <= 0 ? ' disabled' : '';
+                const selected = option.id === activeStorylineId ? ' selected' : '';
+                const label = getStorylineLabel(option);
+                const suffix = ` (${getStorylineStatus(option, count)})`;
+                return `<option value="${escapeHtml(option.id)}"${selected}${disabled}>${escapeHtml(label + suffix)}</option>`;
+            }).join('');
+
+            const activeOption = getActiveStorylineOption();
+            refs.storylineSelect.title = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
+        }
+
+        function setActiveStoryline(storylineId, options = {}) {
+            const nextMilestones = getStorylineMilestones(storylineId);
+            if (!nextMilestones.length) {
+                renderStorylineSelect();
+                return;
+            }
+
+            activeStorylineId = storylineId;
+            milestoneList = nextMilestones;
+            currentIndex = 0;
+            currentArchiveIndex = 0;
+            vmCache.clear();
+            resetInlineMedia();
+            renderStorylineSelect();
+            if (options.updateUrl) {
+                updateStorylineUrl(activeStorylineId);
+            }
+            renderPage(currentIndex);
+            resetPortraitScrollPosition();
         }
 
         function buildFallbackVm(milestone, index) {
@@ -2183,7 +3295,8 @@
                 customSections.forEach((section) => {
                     commentarySections.push({
                         label: lx(section.label) || tx('contentInterpretation'),
-                        html: lx(section.html)
+                        html: lx(section.html),
+                        link: section.link || null
                     });
                 });
             } else if (descriptionText) {
@@ -2400,8 +3513,11 @@
 
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
             const subcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || entry.role || '')).trim();
-            if (!caption && !subcaption) return null;
-            return { caption, subcaption };
+            const source = String(entry.source || entry.url || '').trim();
+            const license = String(lx(entry.license || '')).trim();
+            const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
+            if (!caption && !subcaption && !source && !license && !usage) return null;
+            return { caption, subcaption, source, license, usage };
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -2467,6 +3583,89 @@
             };
         }
 
+        function getAchievementVisualModules(rawMilestone) {
+            const raw = rawMilestone || {};
+            const modules = raw && raw.achievement && Array.isArray(raw.achievement.visualModules)
+                ? raw.achievement.visualModules
+                : [];
+
+            return modules
+                .map((module) => {
+                    if (!module || typeof module !== 'object') return null;
+                    const type = String(module.type || '').trim();
+                    const url = String(module.url || module.source || '').trim();
+                    if (!type || !url) return null;
+
+                    return {
+                        type,
+                        url,
+                        site: String(lx(module.site || module.label || '')).trim(),
+                        title: String(lx(module.title || '')).trim(),
+                        description: String(lx(module.description || module.subcaption || '')).trim(),
+                        license: String(lx(module.license || '')).trim(),
+                        usage: String(lx(module.usage || '')).trim(),
+                        action: String(lx(module.action || '')).trim()
+                    };
+                })
+                .filter(Boolean);
+        }
+
+        function buildBenchVisualItems(vm) {
+            const photos = sortPhotosForDisplay(vm.photos).slice(0, 3).map((photo) => {
+                const meta = buildArchivePhotoMeta(vm, photo);
+                const configured = getConfiguredImageMeta(vm, photo) || {};
+                return {
+                    type: 'image',
+                    url: photo,
+                    title: meta.name || configured.caption || tx('archiveImage'),
+                    description: meta.role || configured.subcaption || '',
+                    source: configured.source || '',
+                    license: configured.license || '',
+                    usage: configured.usage || ''
+                };
+            });
+
+            const configuredModules = getAchievementVisualModules(vm.raw);
+            return [...photos, ...configuredModules].slice(0, 3);
+        }
+
+        function buildBenchImageVisualCard(item) {
+            const title = item.title || tx('archiveImage');
+            const isDiagram = /diagram|explainer/i.test(`${item.url || ''} ${title || ''} ${item.usage || ''}`);
+            return `
+                <div class="bench-photo-frame bench-visual-card has-image">
+                    <div class="bench-image-stage${isDiagram ? ' is-diagram' : ''}">
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}">
+                    </div>
+                    <div class="bench-hero-caption">
+                        <span>${escapeHtml(title)}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildBenchArchiveVisualCard(item) {
+            const site = item.site || tx('historicalArchive');
+            const title = item.title || site;
+            const description = item.description || item.usage || '';
+            const action = item.action || 'Open archive preview';
+            return `
+                <a class="bench-photo-frame bench-visual-card bench-archive-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
+                    <div class="bench-archive-kicker">${escapeHtml(site)}</div>
+                    <div class="bench-archive-title">${escapeHtml(title)}</div>
+                    ${description ? `<div class="bench-archive-description">${escapeHtml(description)}</div>` : ''}
+                    ${item.license ? `<div class="bench-archive-license">${escapeHtml(item.license)}</div>` : ''}
+                    <div class="bench-archive-action">${escapeHtml(action)}</div>
+                </a>
+            `;
+        }
+
+        function buildBenchVisualCard(item) {
+            if (!item) return '<div class="bench-photo-frame is-placeholder" aria-hidden="true"></div>';
+            if (item.type === 'image') return buildBenchImageVisualCard(item);
+            return buildBenchArchiveVisualCard(item);
+        }
+
         function extractVideoQuote(vm) {
             const candidates = [
                 vm.quoteHtml,
@@ -2503,9 +3702,11 @@
             const sourceSections = Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
                 : [];
-            const sections = sourceSections.slice(0, 3).map((section, index) => ({
+            const maxSections = sourceSections.length > 3 ? 4 : 3;
+            const sections = sourceSections.slice(0, maxSections).map((section, index) => ({
                 label: section.label || defaultLabels[index] || tx('contentInterpretation'),
-                text: stripHtml(section.html || '')
+                text: stripHtml(section.html || ''),
+                link: section.link || null
             }));
 
             const fallbackText = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
@@ -2520,7 +3721,17 @@
                 fillerIndex += 1;
             }
 
-            return sections.slice(0, 3);
+            return sections.slice(0, maxSections);
+        }
+
+        function buildCommentaryBodyHtml(section) {
+            const text = escapeHtml(section.text || tx('noAdditionalInfo'));
+            const rawLink = section && section.link ? section.link : null;
+            const url = rawLink && rawLink.url ? String(rawLink.url).trim() : '';
+            if (!url) return text;
+
+            const label = String(lx(rawLink.label) || url).trim();
+            return `${text} <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
         }
 
         function scorePhoto(url) {
@@ -2528,6 +3739,8 @@
             if (!value) return -999;
             if (value.includes('/historical/')) return 5;
             if (value.includes('/people/')) return 4;
+            if (value.includes('/photos/')) return 4;
+            if (value.includes('/explainers/')) return 3;
             if (value.includes('/architecture/')) return 2;
             if (value.includes('/papers/')) return 1;
             return 3;
@@ -3662,12 +4875,51 @@
             refs.commentaryList.innerHTML = sections.map((section) => `
                 <article class="commentary-item">
                     <div class="commentary-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
-                    <div class="commentary-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
+                    <div class="commentary-body">${buildCommentaryBodyHtml(section)}</div>
                 </article>
             `).join('');
         }
 
+        function getAchievementField(milestone, field, fallback = '') {
+            return String(lx(milestone && milestone.achievement && milestone.achievement[field]) || fallback || '').trim();
+        }
+
+        function renderAchievementMap() {
+            refs.timelineModeLabel.textContent = tx('achievementMap');
+            refs.timelineTrack.classList.add('achievement-map-track');
+            refs.timelineTrack.innerHTML = milestoneList.map((item, index) => {
+                const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
+                const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
+                const method = getAchievementField(item, 'method', String(item.year || ''));
+                const material = getAchievementField(item, 'material', '');
+                const active = index === currentIndex ? ' active' : '';
+                const titleText = [area, title, method, material].filter(Boolean).join(' · ');
+                return `
+                    <button class="achievement-map-node${active}" type="button" data-index="${index}" title="${escapeHtml(titleText)}">
+                        <span class="achievement-map-index">${String(index + 1).padStart(2, '0')}</span>
+                        <span class="achievement-map-area">${escapeHtml(area || tx('aiHistory'))}</span>
+                        <span class="achievement-map-title">${escapeHtml(title)}</span>
+                        <span class="achievement-map-method">${escapeHtml(method || material || String(item.year || ''))}</span>
+                    </button>
+                `;
+            }).join('');
+
+            refs.timelineTrack.querySelectorAll('.achievement-map-node').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = Number(button.dataset.index);
+                    jumpTo(index);
+                });
+            });
+        }
+
         function renderTimeline(vm) {
+            if (isAchievementMapActive()) {
+                renderAchievementMap();
+                return;
+            }
+
+            refs.timelineModeLabel.textContent = 'Timeline';
+            refs.timelineTrack.classList.remove('achievement-map-track');
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
                 <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
@@ -3681,6 +4933,206 @@
                     jumpTo(index);
                 });
             });
+        }
+
+        function getAchievementSources(rawMilestone) {
+            const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
+                ? rawMilestone.achievement.sources
+                : [];
+            return sources.filter((source) => source && source.url && lx(source.label));
+        }
+
+        function getAchievementDemoSteps(rawMilestone) {
+            const steps = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.demoSteps)
+                ? rawMilestone.achievement.demoSteps
+                : [];
+            return steps.map((step) => String(lx(step) || '').trim()).filter(Boolean);
+        }
+
+        function getAchievementVisual(rawMilestone) {
+            return String(rawMilestone && rawMilestone.achievement && rawMilestone.achievement.visual || '').trim();
+        }
+
+        function renderBenchMapList() {
+            refs.benchMapList.innerHTML = milestoneList.map((item, index) => {
+                const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
+                const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
+                const method = getAchievementField(item, 'method', String(item.year || ''));
+                const active = index === currentIndex ? ' active' : '';
+                return `
+                    <button class="bench-map-item${active}" type="button" data-index="${index}">
+                        <span class="bench-map-index">${String(index + 1).padStart(2, '0')}</span>
+                        <span class="bench-map-area">${escapeHtml(area || tx('aiHistory'))}</span>
+                        <span class="bench-map-title">${escapeHtml(title)}</span>
+                        <span class="bench-map-method">${escapeHtml(method || String(item.year || ''))}</span>
+                    </button>
+                `;
+            }).join('');
+
+            refs.benchMapList.querySelectorAll('.bench-map-item').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = Number(button.dataset.index);
+                    jumpTo(index);
+                });
+            });
+        }
+
+        function buildTranscriptDemo() {
+            return `
+                <div class="bench-transcript-grid">
+                    <article class="bench-transcript-column">
+                        <div class="bench-transcript-label">${escapeHtml(uiText('Channel A', '通道 A'))}</div>
+                        <div class="bench-transcript-text">${escapeHtml(uiText('Answers arrive as text. Identity is hidden; behavior becomes the evidence.', '回答只以文本出现。身份被遮蔽，行为成为证据。'))}</div>
+                        <div class="bench-transcript-chip">${escapeHtml(uiText('Judge', '判断者'))}</div>
+                    </article>
+                    <article class="bench-transcript-column">
+                        <div class="bench-transcript-label">${escapeHtml(uiText('Channel B', '通道 B'))}</div>
+                        <div class="bench-transcript-text">${escapeHtml(uiText('The protocol does the work: same interface, same task, competing interpretations.', '协议本身在工作：同一界面、同一任务、不同解释彼此竞争。'))}</div>
+                        <div class="bench-transcript-chip">${escapeHtml(uiText('Protocol', '协议'))}</div>
+                    </article>
+                    <div class="bench-transcript-ruling">
+                        <span>${escapeHtml(uiText('Evaluation object', '评估对象'))}</span>
+                        <strong>${escapeHtml(uiText('Behavior under a controlled interface', '受控界面下的行为表现'))}</strong>
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildEvalDemo() {
+            return `
+                <div class="bench-code-flow">
+                    <div class="bench-code-label">${escapeHtml(uiText('Symbolic evaluation path', '符号求值路径'))}</div>
+                    <div class="bench-code-line">(EVAL '(COND ((ATOM X) X) (T (CAR X))))</div>
+                    <div class="bench-primitive-row">
+                        <span class="bench-primitive">QUOTE</span>
+                        <span class="bench-primitive">CONS</span>
+                        <span class="bench-primitive">CAR</span>
+                        <span class="bench-primitive">CDR</span>
+                        <span class="bench-primitive">COND</span>
+                        <span class="bench-primitive">EVAL</span>
+                    </div>
+                    <div class="bench-code-line">${escapeHtml(uiText('program == data == symbolic expression', '程序 == 数据 == 符号表达式'))}</div>
+                </div>
+            `;
+        }
+
+        function buildGoDemo() {
+            const stones = [
+                ['black', 28, 32], ['white', 40, 30], ['black', 52, 36], ['white', 64, 30],
+                ['black', 36, 48], ['white', 49, 51], ['black', 61, 48], ['white', 72, 56],
+                ['black', 44, 66], ['white', 57, 68], ['move37', 31, 61]
+            ].map(([color, x, y]) => `<span class="bench-go-stone ${color}" style="left:${x}%;top:${y}%"></span>`).join('');
+
+            return `
+                <div class="bench-go-layout">
+                    <div class="bench-go-board" aria-hidden="true">${stones}</div>
+                    <div class="bench-go-notes">
+                        <div class="bench-go-label">${escapeHtml(uiText('Move 37 explainer', '第 37 手解释器'))}</div>
+                        <div class="bench-go-note">${escapeHtml(uiText('Policy network proposes candidates.', '策略网络提出候选落子。'))}</div>
+                        <div class="bench-go-note">${escapeHtml(uiText('Value network estimates the position.', '价值网络评估局面。'))}</div>
+                        <div class="bench-go-note">${escapeHtml(uiText('Tree search turns learned intuition into a move.', '树搜索把学习到的直觉转化为落子。'))}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildGenericDemo(rawMilestone) {
+            const artifact = getAchievementField(rawMilestone, 'artifact', '');
+            const demo = getAchievementField(rawMilestone, 'demo', '');
+            return `
+                <div class="bench-code-flow">
+                    <div class="bench-code-label">${escapeHtml(artifact || tx('historicalEvent'))}</div>
+                    <div class="bench-code-line">${escapeHtml(demo || stripHtml(lx(rawMilestone.description) || ''))}</div>
+                </div>
+            `;
+        }
+
+        function renderBenchHeroVisual(vm) {
+            if (!refs.benchHeroVisual) return;
+            const items = buildBenchVisualItems(vm);
+            const backgroundItem = items.find((item) => item && item.type === 'image');
+            const backgroundPhoto = backgroundItem ? backgroundItem.url : '';
+            refs.benchHeroVisual.classList.toggle('is-empty', items.length === 0);
+            refs.benchHeroVisual.classList.toggle('has-photo', Boolean(backgroundPhoto));
+            if (!items.length) {
+                refs.benchHeroVisual.style.removeProperty('--bench-photo');
+                refs.benchHeroVisual.innerHTML = '';
+                return;
+            }
+
+            if (backgroundPhoto) {
+                refs.benchHeroVisual.style.setProperty('--bench-photo', `url("${backgroundPhoto.replace(/"/g, '\\"')}")`);
+            } else {
+                refs.benchHeroVisual.style.removeProperty('--bench-photo');
+            }
+
+            const placeholders = Array.from({ length: Math.max(0, 3 - items.length) }, () => null);
+            refs.benchHeroVisual.innerHTML = [...items, ...placeholders].map(buildBenchVisualCard).join('');
+        }
+
+        function renderBenchDemo(vm) {
+            const raw = vm.raw || {};
+            const visual = getAchievementVisual(raw);
+            const steps = getAchievementDemoSteps(raw);
+            const visualHtml = visual === 'transcript'
+                ? buildTranscriptDemo()
+                : visual === 'eval'
+                  ? buildEvalDemo()
+                  : visual === 'go'
+                    ? buildGoDemo()
+                    : buildGenericDemo(raw);
+
+            const stepHtml = steps.length > 0
+                ? steps.map((step, index) => `
+                    <div class="bench-demo-step">
+                        <span>${index + 1}</span>
+                        <strong>${escapeHtml(step)}</strong>
+                    </div>
+                `).join('')
+                : `<div class="bench-demo-step"><span>1</span><strong>${escapeHtml(getAchievementField(raw, 'demo', tx('historicalEvent')))}</strong></div>`;
+
+            refs.benchDemoSurface.innerHTML = `
+                <div class="bench-demo-visual">${visualHtml}</div>
+                <div class="bench-demo-steps">${stepHtml}</div>
+            `;
+        }
+
+        function renderBenchSources(rawMilestone) {
+            const sources = getAchievementSources(rawMilestone);
+            refs.benchSourceList.innerHTML = sources.length > 0
+                ? sources.map((source) => `
+                    <a class="bench-source-item" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
+                        <span class="bench-source-type">${escapeHtml(lx(source.type) || tx('source'))}</span>
+                        <span class="bench-source-label">${escapeHtml(lx(source.label) || source.url)}</span>
+                    </a>
+                `).join('')
+                : `<div class="bench-source-item"><span class="bench-source-label">${escapeHtml(tx('noAdditionalInfo'))}</span></div>`;
+        }
+
+        function renderBenchEvidence(vm) {
+            const sections = buildRightCommentarySections(vm);
+            refs.benchEvidenceList.innerHTML = sections.map((section) => `
+                <article class="bench-evidence-item">
+                    <div class="bench-evidence-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
+                    <div class="bench-evidence-body">${buildCommentaryBodyHtml(section)}</div>
+                </article>
+            `).join('');
+        }
+
+        function renderBenchDossier(vm) {
+            if (!refs.benchDossier) return;
+            const raw = vm.raw || {};
+            refs.benchMapHeading.textContent = tx('achievementMap');
+            refs.benchMaterialHeading.textContent = tx('sourceMaterials');
+            refs.benchCoreArea.textContent = getAchievementField(raw, 'area', vm.category || vm.subtitle || tx('aiHistory'));
+            refs.benchCoreYear.textContent = String(vm.year || '');
+            refs.benchCoreTitle.textContent = vm.title || '';
+            refs.benchCoreSummary.innerHTML = buildSummaryHtml(vm);
+            renderBenchMapList();
+            renderBenchHeroVisual(vm);
+            renderBenchDemo(vm);
+            renderBenchSources(raw);
+            renderBenchEvidence(vm);
         }
 
         function bindPhotoClicks() {
@@ -3749,14 +5201,22 @@
             const vm = getVm(index);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
+            refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
             renderHeader(vm);
-            renderHero(vm);
-            renderStory(vm);
-            renderFigures(vm);
-            renderArchive(vm);
-            renderCommentary(vm);
+            if (isResearchDossierActive()) {
+                clearGlobeMarkers();
+                resetOrbitOverlay();
+                resetInlineMedia();
+                renderBenchDossier(vm);
+            } else {
+                renderHero(vm);
+                renderStory(vm);
+                renderFigures(vm);
+                renderArchive(vm);
+                renderCommentary(vm);
+                bindPhotoClicks();
+            }
             renderTimeline(vm);
-            bindPhotoClicks();
             document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             preloadAdjacentAssets(index);
         }
@@ -4066,6 +5526,12 @@
         if (!milestoneList.length) {
             refs.stage.innerHTML = '<div class="empty-state">暂无里程碑数据</div>';
         } else {
+            renderStorylineSelect();
+            if (refs.storylineSelect) {
+                refs.storylineSelect.addEventListener('change', () => {
+                    setActiveStoryline(refs.storylineSelect.value, { updateUrl: true });
+                });
+            }
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
             refs.nextBtn.addEventListener('click', () => navigate('next'));
 
@@ -4087,6 +5553,7 @@
 
             window.addEventListener('languageChanged', () => {
                 vmCache.clear();
+                renderStorylineSelect();
                 renderPage(currentIndex);
             });
 
