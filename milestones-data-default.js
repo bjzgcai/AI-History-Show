@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-13 00:46
+// 生成时间: 2026-06-16 01:21
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -4739,6 +4739,43 @@ const milestones = [
           "action": {
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "AlphaGo game evolution",
+            "zh": "AlphaGo 棋局演化"
+          },
+          "description": {
+            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
+            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
+          },
+          "url": "resources/videos/game-evolution/2016-alphago.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -15086,8 +15123,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。"
         }
       },
       {
@@ -15104,6 +15141,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
@@ -15125,6 +15163,31 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg": {
+          "caption": {
+            "en": "Atari control loop",
+            "zh": "Atari 控制循环"
+          },
+          "subcaption": {
+            "en": "Local game-screen explainer showing pixels, replay, Q-values, and action choice.",
+            "zh": "本地游戏画面解释图，展示像素、回放、Q 值与动作选择。"
+          },
+          "sourceName": {
+            "en": "Playing Atari with Deep Reinforcement Learning",
+            "zh": "《用深度强化学习玩 Atari》"
+          },
+          "source": "https://arxiv.org/abs/1312.5602",
+          "sourceUrl": "https://arxiv.org/abs/1312.5602",
+          "originalImageUrl": "Local original redraw",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Game-control explainer",
+            "zh": "游戏控制解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
@@ -15203,6 +15266,7 @@ const milestones = [
         "zh": "像素进入回放；Q 值选择动作"
       },
       "visual": "dqn",
+      "demoImage": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "keyConcepts": [
         {
           "label": {
@@ -15287,6 +15351,43 @@ const milestones = [
           "action": {
             "en": "Open preprint",
             "zh": "打开预印本"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "DQN game evolution",
+            "zh": "DQN 棋局演化"
+          },
+          "description": {
+            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
+            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
+          },
+          "url": "resources/videos/game-evolution/2013-dqn.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -16631,6 +16732,43 @@ const milestones = [
           "action": {
             "en": "Open article record",
             "zh": "打开论文记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Deep Blue game evolution",
+            "zh": "深蓝 棋局演化"
+          },
+          "description": {
+            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
+            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -19365,8 +19503,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。"
         }
       },
       {
@@ -19375,8 +19513,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。"
         }
       },
       {
@@ -19393,6 +19531,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
@@ -19417,6 +19556,31 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg": {
+          "caption": {
+            "en": "TD update over a game trajectory",
+            "zh": "游戏轨迹上的 TD 更新"
+          },
+          "subcaption": {
+            "en": "Local board-game explainer linking TD learning to game-state prediction.",
+            "zh": "本地棋类解释图，把 TD 学习与游戏状态预测联系起来。"
+          },
+          "sourceName": {
+            "en": "Learning to Predict by the Methods of Temporal Differences",
+            "zh": "《用时序差分方法学习预测》"
+          },
+          "source": "https://doi.org/10.1007/BF00115009",
+          "sourceUrl": "https://doi.org/10.1007/BF00115009",
+          "originalImageUrl": "Local original redraw",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Board-game trajectory explainer",
+            "zh": "棋类轨迹解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
@@ -19489,6 +19653,7 @@ const milestones = [
         "zh": "用下一步预测和奖励更新价值估计"
       },
       "visual": "td",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "keyConcepts": [
         {
           "label": {
@@ -19580,6 +19745,43 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "TD-Gammon trajectory game evolution",
+            "zh": "TD-Gammon 轨迹 棋局演化"
+          },
+          "description": {
+            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
+            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
+          },
+          "url": "resources/videos/game-evolution/1988-td-update.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -21126,8 +21328,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。"
         }
       },
       {
@@ -21136,8 +21338,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. That pattern made search and evaluation visible as computational ingredients of intelligent play.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。这种模式让搜索与评估成为智能对弈中可见的计算要素。"
         }
       },
       {
@@ -21153,54 +21355,34 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
       "imageMeta": {
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
           "caption": {
-            "en": "Christopher Strachey's draughts program",
-            "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
+            "en": "Christopher Strachey profile card",
+            "zh": "克里斯托弗·斯特雷奇人物卡"
           },
           "subcaption": {
-            "en": "Screenshot of the early draughts program attributed to Strachey.",
-            "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
+            "en": "Local portrait-style card for the draughts program developer.",
+            "zh": "跳棋程序开发者的本地人物卡。"
           },
           "sourceName": {
-            "en": "Wikimedia Commons",
-            "zh": "维基共享资源"
+            "en": "Local original profile card",
+            "zh": "本地原创人物卡"
           },
-          "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
-          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-          "license": "Public domain",
+          "source": "https://history.computer.org/pioneers/strachey.html",
+          "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+          "originalImageUrl": "Local original SVG profile card",
+          "license": {
+            "en": "Original local SVG profile card; no source photograph is copied.",
+            "zh": "本地原创 SVG 人物卡；未复制来源照片。"
+          },
           "usage": {
-            "en": "Program screenshot",
-            "zh": "程序截图"
-          }
-        },
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
-          "caption": {
-            "en": "Checkers board",
-            "zh": "跳棋棋盘照片"
-          },
-          "subcaption": {
-            "en": "Physical checkers board used as visual context for game-playing AI.",
-            "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
-          },
-          "sourceName": {
-            "en": "Wikimedia Commons",
-            "zh": "维基共享资源"
-          },
-          "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
-          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
-          "license": "CC BY 3.0",
-          "usage": {
-            "en": "Game-board photo",
-            "zh": "棋盘照片"
+            "en": "Historical figure profile image",
+            "zh": "历史人物资料图"
           }
         },
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -21366,6 +21548,43 @@ const milestones = [
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Strachey's draughts game evolution",
+            "zh": "斯特雷奇跳棋 棋局演化"
+          },
+          "description": {
+            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
+            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1951-strachey-draughts.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -21414,7 +21633,7 @@ const milestones = [
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
       "demoPanel": "sources"
     },
     "quiz": {
@@ -21844,6 +22063,43 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Chinook game evolution",
+            "zh": "Chinook 棋局演化"
+          },
+          "description": {
+            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
+            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1994-chinook.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -48407,8 +48663,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。"
         }
       },
       {
@@ -48417,8 +48673,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. That pattern made search and evaluation visible as computational ingredients of intelligent play.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。这种模式让搜索与评估成为智能对弈中可见的计算要素。"
         }
       },
       {
@@ -48434,54 +48690,34 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
       "imageMeta": {
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
           "caption": {
-            "en": "Christopher Strachey's draughts program",
-            "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
+            "en": "Christopher Strachey profile card",
+            "zh": "克里斯托弗·斯特雷奇人物卡"
           },
           "subcaption": {
-            "en": "Screenshot of the early draughts program attributed to Strachey.",
-            "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
+            "en": "Local portrait-style card for the draughts program developer.",
+            "zh": "跳棋程序开发者的本地人物卡。"
           },
           "sourceName": {
-            "en": "Wikimedia Commons",
-            "zh": "维基共享资源"
+            "en": "Local original profile card",
+            "zh": "本地原创人物卡"
           },
-          "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
-          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-          "license": "Public domain",
+          "source": "https://history.computer.org/pioneers/strachey.html",
+          "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+          "originalImageUrl": "Local original SVG profile card",
+          "license": {
+            "en": "Original local SVG profile card; no source photograph is copied.",
+            "zh": "本地原创 SVG 人物卡；未复制来源照片。"
+          },
           "usage": {
-            "en": "Program screenshot",
-            "zh": "程序截图"
-          }
-        },
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
-          "caption": {
-            "en": "Checkers board",
-            "zh": "跳棋棋盘照片"
-          },
-          "subcaption": {
-            "en": "Physical checkers board used as visual context for game-playing AI.",
-            "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
-          },
-          "sourceName": {
-            "en": "Wikimedia Commons",
-            "zh": "维基共享资源"
-          },
-          "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
-          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
-          "license": "CC BY 3.0",
-          "usage": {
-            "en": "Game-board photo",
-            "zh": "棋盘照片"
+            "en": "Historical figure profile image",
+            "zh": "历史人物资料图"
           }
         },
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -48654,6 +48890,43 @@ const milestones = [
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Strachey's draughts game evolution",
+            "zh": "斯特雷奇跳棋 棋局演化"
+          },
+          "description": {
+            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
+            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1951-strachey-draughts.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -48702,7 +48975,7 @@ const milestones = [
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
       "demoPanel": "sources"
     }
   },
@@ -48788,8 +49061,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。"
         }
       },
       {
@@ -48798,8 +49071,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。"
         }
       },
       {
@@ -48816,6 +49089,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
@@ -48840,6 +49114,31 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg": {
+          "caption": {
+            "en": "TD update over a game trajectory",
+            "zh": "游戏轨迹上的 TD 更新"
+          },
+          "subcaption": {
+            "en": "Local board-game explainer linking TD learning to game-state prediction.",
+            "zh": "本地棋类解释图，把 TD 学习与游戏状态预测联系起来。"
+          },
+          "sourceName": {
+            "en": "Learning to Predict by the Methods of Temporal Differences",
+            "zh": "《用时序差分方法学习预测》"
+          },
+          "source": "https://doi.org/10.1007/BF00115009",
+          "sourceUrl": "https://doi.org/10.1007/BF00115009",
+          "originalImageUrl": "Local original redraw",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Board-game trajectory explainer",
+            "zh": "棋类轨迹解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
@@ -48919,6 +49218,7 @@ const milestones = [
         "zh": "用下一步预测和奖励更新价值估计"
       },
       "visual": "td",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "keyConcepts": [
         {
           "label": {
@@ -49010,6 +49310,43 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "TD-Gammon trajectory game evolution",
+            "zh": "TD-Gammon 轨迹 棋局演化"
+          },
+          "description": {
+            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
+            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
+          },
+          "url": "resources/videos/game-evolution/1988-td-update.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -49401,6 +49738,43 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Chinook game evolution",
+            "zh": "Chinook 棋局演化"
+          },
+          "description": {
+            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
+            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1994-chinook.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -49797,6 +50171,43 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Deep Blue game evolution",
+            "zh": "深蓝 棋局演化"
+          },
+          "description": {
+            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
+            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -49941,8 +50352,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。"
         }
       },
       {
@@ -49959,6 +50370,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
@@ -49980,6 +50392,31 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg": {
+          "caption": {
+            "en": "Atari control loop",
+            "zh": "Atari 控制循环"
+          },
+          "subcaption": {
+            "en": "Local game-screen explainer showing pixels, replay, Q-values, and action choice.",
+            "zh": "本地游戏画面解释图，展示像素、回放、Q 值与动作选择。"
+          },
+          "sourceName": {
+            "en": "Playing Atari with Deep Reinforcement Learning",
+            "zh": "《用深度强化学习玩 Atari》"
+          },
+          "source": "https://arxiv.org/abs/1312.5602",
+          "sourceUrl": "https://arxiv.org/abs/1312.5602",
+          "originalImageUrl": "Local original redraw",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          },
+          "usage": {
+            "en": "Game-control explainer",
+            "zh": "游戏控制解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
@@ -50065,6 +50502,7 @@ const milestones = [
         "zh": "像素进入回放；Q 值选择动作"
       },
       "visual": "dqn",
+      "demoImage": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "keyConcepts": [
         {
           "label": {
@@ -50149,6 +50587,43 @@ const milestones = [
           "action": {
             "en": "Open preprint",
             "zh": "打开预印本"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "DQN game evolution",
+            "zh": "DQN 棋局演化"
+          },
+          "description": {
+            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
+            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
+          },
+          "url": "resources/videos/game-evolution/2013-dqn.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -50506,6 +50981,43 @@ const milestones = [
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "AlphaGo game evolution",
+            "zh": "AlphaGo 棋局演化"
+          },
+          "description": {
+            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
+            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
+          },
+          "url": "resources/videos/game-evolution/2016-alphago.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -50541,6 +51053,1055 @@ const milestones = [
             "zh": "KataGo 分析引擎"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-2017-alphazero",
+    "year": "2017-2018",
+    "category": {
+      "en": "AI in Board & Tabletop Games",
+      "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "title": {
+      "en": "AlphaZero",
+      "zh": "AlphaZero"
+    },
+    "subtitle": {
+      "en": "Game AI as a Testbed for Search, Learning and Planning",
+      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+    },
+    "location": {
+      "name": {
+        "en": "DeepMind",
+        "zh": "DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国伦敦"
+      },
+      "coordinates": [
+        51.523,
+        -0.128
+      ]
+    },
+    "description": {
+      "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>",
+      "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "David Silver",
+          "zh": "大卫·席尔瓦"
+        },
+        "role": {
+          "en": "DeepMind reinforcement learning lead",
+          "zh": "DeepMind 强化学习负责人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Demis Hassabis",
+          "zh": "德米斯·哈萨比斯"
+        },
+        "role": {
+          "en": "DeepMind co-founder",
+          "zh": "DeepMind 联合创始人"
+        },
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"a general reinforcement learning algorithm\"",
+      "zh": "\"一种通用强化学习算法\""
+    },
+    "quoteAttribution": {
+      "en": "《A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play》, David Silver et al., Science, 2018",
+      "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
+        "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
+      },
+      "workAuthors": {
+        "en": "David Silver et al., Science, 2018",
+        "zh": "David Silver 等，Science，2018"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / AlphaZero",
+      "zh": "BenchCouncil AI100：游戏 AI / AlphaZero"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "AlphaGo still used human expert games and Go-specific training stages. AlphaZero asked whether self-play could carry more of the burden by itself.",
+          "zh": "AlphaGo 仍使用人类专家棋谱和围棋专用训练阶段。AlphaZero 进一步追问：自我博弈能否承担更多学习负担。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A neural network predicts move probabilities and game outcomes; tree search improves action choice; self-play generates the next training data.",
+          "zh": "神经网络预测落子概率与胜负结果；树搜索改进动作选择；自我博弈继续产生下一轮训练数据。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "branch": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+          "zh": "用通用强化学习算法通过自我博弈掌握国际象棋与将棋"
+        },
+        "authors": {
+          "en": "David Silver et al.",
+          "zh": "David Silver 等"
+        },
+        "journal": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "year": "2017",
+        "url": "https://arxiv.org/abs/1712.01815"
+      },
+      {
+        "title": {
+          "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
+          "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
+        },
+        "authors": {
+          "en": "David Silver et al.",
+          "zh": "David Silver 等"
+        },
+        "journal": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "year": "2018",
+        "url": "https://www.science.org/doi/10.1126/science.aar6404"
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "General game reinforcement learning",
+        "zh": "通用游戏强化学习"
+      },
+      "method": {
+        "en": "Self-play policy-value learning with Monte Carlo tree search",
+        "zh": "自我博弈策略-价值学习与蒙特卡洛树搜索"
+      },
+      "artifact": {
+        "en": "One algorithm for Go, chess, and shogi",
+        "zh": "面向围棋、国际象棋和将棋的一套算法"
+      },
+      "material": {
+        "en": "arXiv preprint and Science paper",
+        "zh": "arXiv 预印本与 Science 论文"
+      },
+      "demo": {
+        "en": "Self-play creates games, search improves moves, the network absorbs both",
+        "zh": "自我博弈生成棋局，搜索改进落子，网络吸收两者"
+      },
+      "visual": "go",
+      "visualModules": [
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "AlphaZero game evolution",
+            "zh": "AlphaZero 棋局演化"
+          },
+          "description": {
+            "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
+            "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2017-alphazero.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Science paper",
+            "zh": "Science 论文"
+          },
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.aar6404"
+        },
+        {
+          "label": {
+            "en": "arXiv preprint",
+            "zh": "arXiv 预印本"
+          },
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "url": "https://arxiv.org/abs/1712.01815"
+        },
+        {
+          "label": {
+            "en": "DeepMind AlphaZero blog",
+            "zh": "DeepMind AlphaZero 博客"
+          },
+          "type": {
+            "en": "Blog",
+            "zh": "博客"
+          },
+          "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        },
+        {
+          "en": "Monte Carlo Tree Search",
+          "zh": "蒙特卡洛树搜索"
+        },
+        {
+          "en": "MuZero",
+          "zh": "MuZero"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-2017-libratus",
+    "year": "2017",
+    "category": {
+      "en": "AI in Board & Tabletop Games",
+      "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "title": {
+      "en": "Libratus",
+      "zh": "Libratus"
+    },
+    "subtitle": {
+      "en": "Game AI as a Testbed for Search, Learning and Planning",
+      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+    },
+    "location": {
+      "name": {
+        "en": "Carnegie Mellon University",
+        "zh": "卡内基梅隆大学"
+      },
+      "country": {
+        "en": "Pittsburgh, United States",
+        "zh": "美国匹兹堡"
+      },
+      "coordinates": [
+        40.4433,
+        -79.9436
+      ]
+    },
+    "description": {
+      "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day's play, proving that game AI could move beyond perfect-information boards.</p>",
+      "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Tuomas Sandholm",
+          "zh": "托马斯·桑德霍姆"
+        },
+        "role": {
+          "en": "CMU professor and Libratus co-creator",
+          "zh": "CMU 教授，Libratus 共同创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Noam Brown",
+          "zh": "诺姆·布朗"
+        },
+        "role": {
+          "en": "Libratus co-creator",
+          "zh": "Libratus 共同创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"superhuman AI for heads-up no-limit poker\"",
+      "zh": "\"面向一对一无限注扑克的超人 AI\""
+    },
+    "quoteAttribution": {
+      "en": "《Superhuman AI for heads-up no-limit poker: Libratus beats top professionals》, Noam Brown and Tuomas Sandholm, Science, 2017",
+      "zh": "《一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手》, Noam Brown 与 Tuomas Sandholm，Science，2017"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
+        "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
+      },
+      "workAuthors": {
+        "en": "Noam Brown and Tuomas Sandholm, Science, 2017",
+        "zh": "Noam Brown 与 Tuomas Sandholm，Science，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.aao1733"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / Libratus",
+      "zh": "BenchCouncil AI100：游戏 AI / Libratus"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Poker added hidden cards, bluffing, and uncertainty, forcing AI to reason about strategies instead of visible board positions alone.",
+          "zh": "扑克加入了暗牌、诈唬和不确定性，迫使 AI 不只推理可见棋盘位置，还要推理策略分布。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The system solved an abstract strategy before play, then refined difficult subgames in real time and patched weaknesses between sessions.",
+          "zh": "系统赛前求解抽象策略，比赛中实时细化困难子局，并在每日赛后修补弱点。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "branch": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
+          "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
+        },
+        "authors": {
+          "en": "Noam Brown, Tuomas Sandholm",
+          "zh": "Noam Brown，Tuomas Sandholm"
+        },
+        "journal": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "year": "2017",
+        "url": "https://www.science.org/doi/10.1126/science.aao1733"
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Imperfect-information game AI",
+        "zh": "不完全信息博弈 AI"
+      },
+      "method": {
+        "en": "Abstraction, endgame solving, and self-improving strategy repair",
+        "zh": "抽象、残局求解与自我改进策略修复"
+      },
+      "artifact": {
+        "en": "Heads-up no-limit Texas hold'em poker agent",
+        "zh": "一对一无限注德州扑克智能体"
+      },
+      "material": {
+        "en": "Science paper and CMU release",
+        "zh": "Science 论文与 CMU 新闻稿"
+      },
+      "demo": {
+        "en": "Hidden cards require equilibrium reasoning rather than direct board search",
+        "zh": "暗牌要求均衡策略推理，而不只是直接棋盘搜索"
+      },
+      "visual": "poker",
+      "visualModules": [
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Libratus game evolution",
+            "zh": "Libratus 棋局演化"
+          },
+          "description": {
+            "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
+            "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2017-libratus.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Science paper",
+            "zh": "Science 论文"
+          },
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.aao1733"
+        },
+        {
+          "label": {
+            "en": "CMU Libratus release",
+            "zh": "CMU Libratus 新闻稿"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Counterfactual Regret Minimization",
+          "zh": "反事实遗憾最小化"
+        },
+        {
+          "en": "Pluribus",
+          "zh": "Pluribus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-2019-pluribus",
+    "year": "2019",
+    "category": {
+      "en": "AI in Board & Tabletop Games",
+      "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "title": {
+      "en": "Pluribus",
+      "zh": "Pluribus"
+    },
+    "subtitle": {
+      "en": "Game AI as a Testbed for Search, Learning and Planning",
+      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+    },
+    "location": {
+      "name": {
+        "en": "Carnegie Mellon University and Facebook AI Research",
+        "zh": "卡内基梅隆大学与 Facebook AI Research"
+      },
+      "country": {
+        "en": "Pittsburgh and Menlo Park, United States",
+        "zh": "美国匹兹堡与门洛帕克"
+      },
+      "coordinates": [
+        40.4433,
+        -79.9436
+      ]
+    },
+    "description": {
+      "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used search over a blueprint strategy and real-time reasoning to handle multiple opponents, moving game AI toward messy multiplayer settings where no single opponent model is enough.</p>",
+      "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它在蓝图策略上进行搜索，并用实时推理处理多个对手，把游戏 AI 推向更接近真实世界的多人复杂环境。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Noam Brown",
+          "zh": "诺姆·布朗"
+        },
+        "role": {
+          "en": "Pluribus co-creator",
+          "zh": "Pluribus 共同创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Tuomas Sandholm",
+          "zh": "托马斯·桑德霍姆"
+        },
+        "role": {
+          "en": "Pluribus co-creator",
+          "zh": "Pluribus 共同创建者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"superhuman AI for multiplayer poker\"",
+      "zh": "\"面向多人扑克的超人 AI\""
+    },
+    "quoteAttribution": {
+      "en": "《Superhuman AI for multiplayer poker》, Noam Brown and Tuomas Sandholm, Science, 2019",
+      "zh": "《面向多人扑克的超人 AI》, Noam Brown 与 Tuomas Sandholm，Science，2019"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Superhuman AI for multiplayer poker",
+        "zh": "面向多人扑克的超人 AI"
+      },
+      "workAuthors": {
+        "en": "Noam Brown and Tuomas Sandholm, Science, 2019",
+        "zh": "Noam Brown 与 Tuomas Sandholm，Science，2019"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.aay2400"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / Pluribus",
+      "zh": "BenchCouncil AI100：游戏 AI / Pluribus"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Many real strategic settings are neither two-player nor zero-sum in the clean chess sense. Multiplayer poker made that gap concrete.",
+          "zh": "许多真实策略场景并不是干净的两人零和棋局。多人扑克把这个差距具体化了。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A compact blueprint strategy is refined by search during play, allowing the system to respond without solving the whole game from scratch.",
+          "zh": "紧凑的蓝图策略在对局中由搜索进一步细化，让系统无需从头求解整个游戏也能响应局势。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "branch": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Superhuman AI for multiplayer poker",
+          "zh": "面向多人扑克的超人 AI"
+        },
+        "authors": {
+          "en": "Noam Brown, Tuomas Sandholm",
+          "zh": "Noam Brown，Tuomas Sandholm"
+        },
+        "journal": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "year": "2019",
+        "url": "https://www.science.org/doi/10.1126/science.aay2400"
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Multiplayer imperfect-information game AI",
+        "zh": "多人不完全信息博弈 AI"
+      },
+      "method": {
+        "en": "Blueprint strategy with limited-lookahead search",
+        "zh": "蓝图策略与有限前瞻搜索"
+      },
+      "artifact": {
+        "en": "Six-player no-limit Texas hold'em poker agent",
+        "zh": "六人无限注德州扑克智能体"
+      },
+      "material": {
+        "en": "Science paper, CMU release, and Meta AI report",
+        "zh": "Science 论文、CMU 新闻稿与 Meta AI 报道"
+      },
+      "demo": {
+        "en": "A compact strategy is refined while several opponents act at once",
+        "zh": "多个对手同时行动时，紧凑策略被实时细化"
+      },
+      "visual": "poker",
+      "visualModules": [
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Pluribus game evolution",
+            "zh": "Pluribus 棋局演化"
+          },
+          "description": {
+            "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
+            "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2019-pluribus.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Science paper",
+            "zh": "Science 论文"
+          },
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.aay2400"
+        },
+        {
+          "label": {
+            "en": "Meta AI Pluribus report",
+            "zh": "Meta AI Pluribus 报道"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/"
+        },
+        {
+          "label": {
+            "en": "CMU Pluribus release",
+            "zh": "CMU Pluribus 新闻稿"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Libratus",
+          "zh": "Libratus"
+        },
+        {
+          "en": "Imperfect-information games",
+          "zh": "不完全信息博弈"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-2019-muzero",
+    "year": "2019-2020",
+    "category": {
+      "en": "AI in Board & Tabletop Games",
+      "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "title": {
+      "en": "MuZero",
+      "zh": "MuZero"
+    },
+    "subtitle": {
+      "en": "Game AI as a Testbed for Search, Learning and Planning",
+      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+    },
+    "location": {
+      "name": {
+        "en": "DeepMind",
+        "zh": "DeepMind"
+      },
+      "country": {
+        "en": "London, United Kingdom",
+        "zh": "英国伦敦"
+      },
+      "coordinates": [
+        51.523,
+        -0.128
+      ]
+    },
+    "description": {
+      "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>",
+      "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Julian Schrittwieser",
+          "zh": "Julian Schrittwieser"
+        },
+        "role": {
+          "en": "MuZero first author",
+          "zh": "MuZero 第一作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "David Silver",
+          "zh": "大卫·席尔瓦"
+        },
+        "role": {
+          "en": "DeepMind reinforcement learning lead",
+          "zh": "DeepMind 强化学习负责人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"planning with a learned model\"",
+      "zh": "\"用学习到的模型进行规划\""
+    },
+    "quoteAttribution": {
+      "en": "《Mastering Atari, Go, chess and shogi by planning with a learned model》, Julian Schrittwieser et al., Nature, 2020",
+      "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》, Julian Schrittwieser 等，Nature，2020"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+        "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+      },
+      "workAuthors": {
+        "en": "Julian Schrittwieser et al., Nature, 2020",
+        "zh": "Julian Schrittwieser 等，Nature，2020"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.nature.com/articles/s41586-020-03051-4"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / MuZero",
+      "zh": "BenchCouncil AI100：游戏 AI / MuZero"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "AlphaZero searched using known rules. Reinforcement learning agents in Atari learned from pixels but often lacked explicit lookahead. MuZero bridged those two worlds.",
+          "zh": "AlphaZero 依赖已知规则搜索；Atari 强化学习智能体从像素学习但通常缺少显式前瞻。MuZero 把这两个世界连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Instead of predicting every future observation, MuZero learns a latent dynamics model useful for rewards, values, policies, and search.",
+          "zh": "MuZero 不预测每个未来观测，而是学习对奖励、价值、策略和搜索有用的潜在动力学模型。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [],
+      "imageMeta": {},
+      "videos": []
+    },
+    "storyline": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "branch": {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+          "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+        },
+        "authors": {
+          "en": "Julian Schrittwieser et al.",
+          "zh": "Julian Schrittwieser 等"
+        },
+        "journal": {
+          "en": "Nature",
+          "zh": "Nature"
+        },
+        "year": "2020",
+        "url": "https://www.nature.com/articles/s41586-020-03051-4"
+      },
+      {
+        "title": {
+          "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+          "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+        },
+        "authors": {
+          "en": "Julian Schrittwieser et al.",
+          "zh": "Julian Schrittwieser 等"
+        },
+        "journal": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "year": "2019",
+        "url": "https://arxiv.org/abs/1911.08265"
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Learned-model planning",
+        "zh": "学习模型的规划"
+      },
+      "method": {
+        "en": "Latent dynamics, policy-value prediction, and tree search",
+        "zh": "潜在动力学、策略-价值预测与树搜索"
+      },
+      "artifact": {
+        "en": "Planning agent for board games and Atari",
+        "zh": "面向棋类游戏与 Atari 的规划智能体"
+      },
+      "material": {
+        "en": "Nature paper, arXiv preprint, and DeepMind blog",
+        "zh": "Nature 论文、arXiv 预印本与 DeepMind 博客"
+      },
+      "demo": {
+        "en": "A learned latent model lets search operate without handcrafted rules",
+        "zh": "学习到的潜在模型让搜索不再依赖手工规则"
+      },
+      "visual": "deepblue",
+      "visualModules": [
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "MuZero game evolution",
+            "zh": "MuZero 棋局演化"
+          },
+          "description": {
+            "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
+            "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2019-muzero.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Nature paper",
+            "zh": "Nature 论文"
+          },
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "url": "https://www.nature.com/articles/s41586-020-03051-4"
+        },
+        {
+          "label": {
+            "en": "arXiv preprint",
+            "zh": "arXiv 预印本"
+          },
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "url": "https://arxiv.org/abs/1911.08265"
+        },
+        {
+          "label": {
+            "en": "DeepMind MuZero blog",
+            "zh": "DeepMind MuZero 博客"
+          },
+          "type": {
+            "en": "Blog",
+            "zh": "博客"
+          },
+          "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlphaZero",
+          "zh": "AlphaZero"
+        },
+        {
+          "en": "DQN",
+          "zh": "DQN"
+        },
+        {
+          "en": "Model-based reinforcement learning",
+          "zh": "基于模型的强化学习"
         }
       ]
     }

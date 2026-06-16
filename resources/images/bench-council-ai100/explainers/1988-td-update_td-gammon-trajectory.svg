@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">TD update over a game trajectory</title>
+  <desc id="desc">A local explainer showing temporal-difference learning over a backgammon-style board trajectory.</desc>
+  <rect width="960" height="540" fill="#0f172a"/>
+  <rect x="38" y="34" width="884" height="472" rx="24" fill="#151a26" stroke="#334155" stroke-width="3"/>
+  <text x="72" y="82" fill="#f68900" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">TD update on a game trajectory</text>
+  <text x="72" y="116" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">reward plus the next prediction adjusts the current value</text>
+  <g transform="translate(72 158)">
+    <rect x="0" y="0" width="330" height="210" rx="14" fill="#1f2937" stroke="#64748b" stroke-width="3"/>
+    <rect x="20" y="22" width="290" height="166" rx="8" fill="#7c2d12"/>
+    <path d="M165 22V188" stroke="#f8fafc" stroke-width="3" opacity=".8"/>
+    <g>
+      <polygon points="30,22 54,94 78,22" fill="#fed7aa"/>
+      <polygon points="78,188 102,116 126,188" fill="#fed7aa"/>
+      <polygon points="126,22 150,94 174,22" fill="#fed7aa"/>
+      <polygon points="186,188 210,116 234,188" fill="#fed7aa"/>
+      <polygon points="234,22 258,94 282,22" fill="#fed7aa"/>
+    </g>
+    <circle cx="66" cy="76" r="14" fill="#0f172a" stroke="#e5e7eb" stroke-width="3"/>
+    <circle cx="66" cy="108" r="14" fill="#0f172a" stroke="#e5e7eb" stroke-width="3"/>
+    <circle cx="246" cy="132" r="14" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+    <circle cx="246" cy="164" r="14" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+    <rect x="138" y="82" width="54" height="46" rx="8" fill="#f8fafc"/>
+    <circle cx="154" cy="98" r="4" fill="#111827"/>
+    <circle cx="176" cy="112" r="4" fill="#111827"/>
+    <path d="M102 108 C132 126 184 134 226 148" fill="none" stroke="#22c55e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M213 136 L228 148 L208 153" fill="#22c55e"/>
+    <text x="165" y="235" fill="#94a3b8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18">state s</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="462" y="174" width="140" height="80" rx="16" fill="#172554" stroke="#93c5fd" stroke-width="3"/>
+    <text x="532" y="209" fill="#dbeafe" text-anchor="middle" font-size="21" font-weight="700">V(s)</text>
+    <text x="532" y="235" fill="#bfdbfe" text-anchor="middle" font-size="18">0.42</text>
+    <rect x="650" y="174" width="140" height="80" rx="16" fill="#064e3b" stroke="#6ee7b7" stroke-width="3"/>
+    <text x="720" y="209" fill="#d1fae5" text-anchor="middle" font-size="21" font-weight="700">r + gamma V(s')</text>
+    <text x="720" y="235" fill="#bbf7d0" text-anchor="middle" font-size="18">0.57</text>
+    <path d="M602 214H650" stroke="#f8fafc" stroke-width="5" marker-end="url(#arrow)"/>
+    <rect x="514" y="322" width="224" height="78" rx="18" fill="#402c1b" stroke="#f59e0b" stroke-width="3"/>
+    <text x="626" y="354" fill="#fde68a" text-anchor="middle" font-size="22" font-weight="700">TD error</text>
+    <text x="626" y="382" fill="#fef3c7" text-anchor="middle" font-size="18">target - current prediction</text>
+    <path d="M532 254 C532 288 574 302 626 322" fill="none" stroke="#60a5fa" stroke-width="4" stroke-dasharray="9 9"/>
+    <path d="M720 254 C720 288 678 302 626 322" fill="none" stroke="#22c55e" stroke-width="4" stroke-dasharray="9 9"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#f8fafc"/>
+    </marker>
+  </defs>
+  <text x="72" y="466" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="18">Local original SVG redraw; no publisher figure is copied.</text>
+</svg>
