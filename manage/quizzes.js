@@ -2388,6 +2388,377 @@ module.exports = {
           "attention"
         ]
       }
+    ],
+    "ai100-1967-knn": [
+      {
+        "question": { "en": "How does KNN classify a new point?", "zh": "KNN 如何给一个新点分类？" },
+        "options": [
+          { "en": "By voting among nearby labeled examples", "zh": "让附近已标注样本投票" },
+          { "en": "By translating a sentence", "zh": "通过翻译句子" },
+          { "en": "By pruning a chess tree", "zh": "通过剪枝棋类搜索树" },
+          { "en": "By hiding every input feature", "zh": "通过隐藏所有输入特征" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "KNN is instance-based: the label comes from nearby training examples.", "zh": "KNN 是基于实例的方法：标签来自附近的训练样本。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["knn", "classification"]
+      }
+    ],
+    "ai100-1970-ridge": [
+      {
+        "question": { "en": "What does ridge regression add to least squares?", "zh": "岭回归在最小二乘中加入了什么？" },
+        "options": [
+          { "en": "An L2 penalty that shrinks coefficients", "zh": "收缩系数的 L2 惩罚" },
+          { "en": "A Go board", "zh": "围棋棋盘" },
+          { "en": "A chatbot script", "zh": "聊天机器人脚本" },
+          { "en": "A theorem clause only", "zh": "只有一个定理子句" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Ridge regression regularizes coefficients to reduce instability from correlated predictors.", "zh": "岭回归通过正则化系数，降低相关预测变量带来的不稳定性。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["ridge", "regularization"]
+      }
+    ],
+    "ai100-2005-hog": [
+      {
+        "question": { "en": "What kind of image evidence does HOG summarize?", "zh": "HOG 汇总哪类图像证据？" },
+        "options": [
+          { "en": "Local gradient directions in cells", "zh": "单元格中的局部梯度方向" },
+          { "en": "Next-word probabilities", "zh": "下一个词概率" },
+          { "en": "Database table joins", "zh": "数据库表连接" },
+          { "en": "Only GPS coordinates", "zh": "只有 GPS 坐标" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "HOG counts edge-orientation votes over local cells and normalized blocks.", "zh": "HOG 在局部单元和归一化块中统计边缘方向投票。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["hog", "vision"]
+      }
+    ],
+    "ai100-2006-surf": [
+      {
+        "question": { "en": "Why was SURF valued in local feature matching?", "zh": "SURF 在局部特征匹配中为什么有价值？" },
+        "options": [
+          { "en": "It made robust feature detection faster", "zh": "它让稳健特征检测更快" },
+          { "en": "It removed all images", "zh": "它删除所有图像" },
+          { "en": "It solved chess endgames", "zh": "它求解棋类残局" },
+          { "en": "It only stored text prompts", "zh": "它只存储文本提示" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "SURF uses ideas such as integral images to speed up robust local feature detection and description.", "zh": "SURF 使用积分图等思想，加速稳健局部特征检测与描述。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["surf", "feature-detection"]
+      }
+    ],
+    "ai100-1997-kernel-pca": [
+      {
+        "question": { "en": "What lets Kernel PCA find nonlinear components?", "zh": "Kernel PCA 靠什么找到非线性成分？" },
+        "options": [
+          { "en": "A kernel similarity matrix", "zh": "核相似性矩阵" },
+          { "en": "A random chess opening", "zh": "随机棋类开局" },
+          { "en": "A handwritten rule book only", "zh": "只有手写规则书" },
+          { "en": "A video playlist", "zh": "视频播放列表" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Kernel PCA applies PCA through kernel similarities rather than explicit original coordinates.", "zh": "Kernel PCA 通过核相似性而不是原始显式坐标来执行 PCA。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["kernel-pca", "kernel-methods"]
+      }
+    ],
+    "ai100-1999-nmf": [
+      {
+        "question": { "en": "What does NMF encourage in learned representations?", "zh": "NMF 鼓励学到什么样的表示？" },
+        "options": [
+          { "en": "Additive nonnegative parts", "zh": "可相加的非负部件" },
+          { "en": "Negative-only labels", "zh": "只有负数标签" },
+          { "en": "Tree-search pruning", "zh": "树搜索剪枝" },
+          { "en": "Token self-attention", "zh": "令牌自注意力" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "NMF represents data as nonnegative basis parts combined with nonnegative activations.", "zh": "NMF 将数据表示为非负基部件与非负激活的组合。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["nmf", "factorization"]
+      }
+    ],
+    "ai100-2000-isomap": [
+      {
+        "question": { "en": "What distance does Isomap try to preserve?", "zh": "Isomap 试图保持哪种距离？" },
+        "options": [
+          { "en": "Geodesic distance along a neighbor graph", "zh": "邻居图上的测地距离" },
+          { "en": "The distance between two websites", "zh": "两个网站之间的距离" },
+          { "en": "A chatbot response delay", "zh": "聊天机器人响应延迟" },
+          { "en": "Only image brightness", "zh": "只有图像亮度" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Isomap estimates distances along the manifold through shortest paths on a neighbor graph.", "zh": "Isomap 通过邻居图上的最短路径估计沿流形的距离。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["isomap", "manifold-learning"]
+      }
+    ],
+    "ai100-2000-lle": [
+      {
+        "question": { "en": "What relationship does LLE preserve?", "zh": "LLE 保持什么关系？" },
+        "options": [
+          { "en": "Local reconstruction from nearest neighbors", "zh": "由最近邻进行局部重建" },
+          { "en": "Only chronological order", "zh": "只有时间顺序" },
+          { "en": "A game score table", "zh": "游戏分数表" },
+          { "en": "A random password", "zh": "随机密码" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "LLE keeps the weights that reconstruct each point from its nearby neighbors.", "zh": "LLE 保持每个点由附近邻居重建时的权重。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["lle", "manifold-learning"]
+      }
+    ],
+    "ai100-1982-som": [
+      {
+        "question": { "en": "What does a self-organizing map arrange?", "zh": "自组织映射会排列什么？" },
+        "options": [
+          { "en": "Output units into a topology-preserving grid", "zh": "把输出单元排列成保持拓扑的网格" },
+          { "en": "A list of chess openings", "zh": "棋类开局列表" },
+          { "en": "Only theorem names", "zh": "只有定理名称" },
+          { "en": "A fixed movie playlist", "zh": "固定电影播放列表" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "SOM learning adapts a grid so nearby units represent nearby input patterns.", "zh": "SOM 学习会调整网格，使相邻单元表示相近的输入模式。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["som", "unsupervised-learning"]
+      }
+    ],
+    "ai100-1967-back-propagation": [
+      {
+        "question": { "en": "What does back-propagation send backward through a network?", "zh": "反向传播把什么沿网络向后传递？" },
+        "options": [
+          { "en": "Error gradients for weight updates", "zh": "用于权重更新的误差梯度" },
+          { "en": "Raw video frames only", "zh": "只有原始视频帧" },
+          { "en": "A list of database columns", "zh": "数据库列列表" },
+          { "en": "The final answer without training", "zh": "不训练直接给最终答案" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Back-propagation uses gradients to assign credit or blame to earlier weights.", "zh": "反向传播用梯度把贡献或责任分配给更早的权重。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["backpropagation", "neural-networks"]
+      }
+    ],
+    "ai100-1980-neocognitron": [
+      {
+        "question": { "en": "What later family of models did the neocognitron anticipate?", "zh": "Neocognitron 预示了后来的哪类模型？" },
+        "options": [
+          { "en": "Convolutional vision networks", "zh": "卷积视觉网络" },
+          { "en": "Spreadsheet formulas only", "zh": "只有电子表格公式" },
+          { "en": "Audio compression codecs", "zh": "音频压缩编码" },
+          { "en": "A theorem database only", "zh": "只有定理数据库" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Its hierarchical feature and tolerance layers foreshadowed CNN-style visual processing.", "zh": "它的层级特征层和容忍层预示了 CNN 式视觉处理。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["neocognitron", "cnn"]
+      }
+    ],
+    "ai100-2017-transformer": [
+      {
+        "question": { "en": "What is the Transformer built around?", "zh": "Transformer 主要围绕什么构建？" },
+        "options": [
+          { "en": "Self-attention over tokens", "zh": "令牌之间的自注意力" },
+          { "en": "Only nearest-neighbor voting", "zh": "只有最近邻投票" },
+          { "en": "A chemical expert rule", "zh": "化学专家规则" },
+          { "en": "A fixed decision tree", "zh": "固定决策树" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing.", "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["transformer", "attention"]
+      }
+    ],
+    "ai100-1997-lstm": [
+      {
+        "question": { "en": "What does an LSTM cell use to preserve long-range sequence information?", "zh": "LSTM 单元用什么保留长程序列信息？" },
+        "options": [
+          { "en": "Gates and a persistent memory state", "zh": "门控和持久记忆状态" },
+          { "en": "Only a nearest-neighbor vote", "zh": "只有最近邻投票" },
+          { "en": "A fixed chess opening", "zh": "固定棋类开局" },
+          { "en": "A chemical mass spectrum", "zh": "化学质谱" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "LSTM regulates memory with gates that decide what to write, keep, and expose.", "zh": "LSTM 用门决定写入、保留和输出哪些记忆。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["lstm", "sequence-modeling"]
+      }
+    ],
+    "ai100-2014-gan": [
+      {
+        "question": { "en": "What are the two main players in a GAN?", "zh": "GAN 中的两个主要参与者是什么？" },
+        "options": [
+          { "en": "A generator and a discriminator", "zh": "生成器和判别器" },
+          { "en": "A theorem prover and a Go board", "zh": "定理证明器和围棋棋盘" },
+          { "en": "A database row and a spreadsheet cell", "zh": "数据库行和电子表格单元" },
+          { "en": "A parser and a printer only", "zh": "只有解析器和打印机" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "The generator makes samples while the discriminator learns to distinguish real from generated data.", "zh": "生成器制造样本，判别器学习区分真实数据和生成数据。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["gan", "generative-ai"]
+      }
+    ],
+    "ai100-2014-neural-machine-translation-attention": [
+      {
+        "question": { "en": "What did neural attention add to machine translation?", "zh": "神经注意力为机器翻译加入了什么？" },
+        "options": [
+          { "en": "Learned alignment between source and target words", "zh": "源词与目标词之间的学习型对齐" },
+          { "en": "A fixed list of chess moves", "zh": "固定棋步列表" },
+          { "en": "Only image denoising", "zh": "只有图像去噪" },
+          { "en": "A chemical rule database", "zh": "化学规则数据库" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Attention lets the decoder weight source positions differently for each target word.", "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["attention", "translation"]
+      }
+    ],
+    "ai100-2018-bert": [
+      {
+        "question": { "en": "How is BERT mainly pre-trained?", "zh": "BERT 主要如何预训练？" },
+        "options": [
+          { "en": "By predicting masked words from bidirectional context", "zh": "从双向上下文预测被遮盖的词" },
+          { "en": "By sorting protein atoms only", "zh": "只给蛋白质原子排序" },
+          { "en": "By pruning a chess search tree", "zh": "剪枝棋类搜索树" },
+          { "en": "By counting only edge gradients", "zh": "只统计边缘梯度" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "BERT hides some tokens and learns to reconstruct them using both left and right context.", "zh": "BERT 遮盖部分令牌，并利用左右上下文重建它们。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["bert", "language-models"]
+      }
+    ],
+    "ai100-2018-gpt": [
+      {
+        "question": { "en": "What prediction task drives GPT-style pre-training?", "zh": "GPT 式预训练主要依靠什么预测任务？" },
+        "options": [
+          { "en": "Predicting the next token", "zh": "预测下一个令牌" },
+          { "en": "Finding a protein bond angle only", "zh": "只寻找蛋白质键角" },
+          { "en": "Voting among nearby points", "zh": "让邻近点投票" },
+          { "en": "Choosing a fixed database key", "zh": "选择固定数据库键" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "GPT uses a decoder transformer trained to continue text sequences.", "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["gpt", "language-models"]
+      }
+    ],
+    "ai100-2020-alphafold2": [
+      {
+        "question": { "en": "What problem did AlphaFold2 transform?", "zh": "AlphaFold2 改变了什么问题？" },
+        "options": [
+          { "en": "Protein structure prediction", "zh": "蛋白质结构预测" },
+          { "en": "Chatbot small talk only", "zh": "只有聊天机器人闲聊" },
+          { "en": "Spreadsheet formatting", "zh": "电子表格格式设置" },
+          { "en": "Theorem clause ordering only", "zh": "只有定理子句排序" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features.", "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["alphafold", "ai-for-science"]
+      }
+    ],
+    "ai100-2021-clip": [
+      {
+        "question": { "en": "What does CLIP learn to match?", "zh": "CLIP 学习匹配什么？" },
+        "options": [
+          { "en": "Images and natural-language text", "zh": "图像和自然语言文本" },
+          { "en": "Only chess positions", "zh": "只有棋类局面" },
+          { "en": "Only theorem clauses", "zh": "只有定理子句" },
+          { "en": "Only audio waveforms", "zh": "只有音频波形" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "CLIP uses contrastive learning so matching images and captions are close in embedding space.", "zh": "CLIP 通过对比学习让匹配图像和文字说明在嵌入空间中靠近。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["clip", "multimodal"]
+      }
+    ],
+    "ai100-2021-dalle": [
+      {
+        "question": { "en": "What does DALL-E generate from a text prompt?", "zh": "DALL-E 根据文本提示生成什么？" },
+        "options": [
+          { "en": "Images", "zh": "图像" },
+          { "en": "Only theorem proofs", "zh": "只有定理证明" },
+          { "en": "Only database indexes", "zh": "只有数据库索引" },
+          { "en": "Only Go endgames", "zh": "只有围棋残局" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "DALL-E showed how language-conditioned models could synthesize visual scenes.", "zh": "DALL-E 展示了语言条件模型如何合成视觉场景。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["dalle", "text-to-image"]
+      }
+    ],
+    "ai100-2022-stable-diffusion": [
+      {
+        "question": { "en": "Where does Stable Diffusion perform most of its denoising?", "zh": "Stable Diffusion 主要在哪里执行去噪？" },
+        "options": [
+          { "en": "In a compressed latent space", "zh": "在压缩潜空间中" },
+          { "en": "Only on a chess board", "zh": "只在棋盘上" },
+          { "en": "Inside a theorem database", "zh": "在定理数据库中" },
+          { "en": "Only in a spreadsheet row", "zh": "只在电子表格行中" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "Latent diffusion denoises compact image representations under text guidance.", "zh": "潜扩散在文本引导下对压缩图像表示进行去噪。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["diffusion", "text-to-image"]
+      }
+    ],
+    "ai100-2023-segment-anything": [
+      {
+        "question": { "en": "How can users guide Segment Anything?", "zh": "用户如何引导 Segment Anything？" },
+        "options": [
+          { "en": "With prompts such as points or boxes", "zh": "用点或框等提示" },
+          { "en": "Only with a hidden chess score", "zh": "只用隐藏棋类分数" },
+          { "en": "Only by changing a protein sequence", "zh": "只通过改变蛋白质序列" },
+          { "en": "Only by deleting the image", "zh": "只通过删除图像" }
+        ],
+        "answerIndex": 0,
+        "explanation": { "en": "SAM uses point, box, or mask prompts to produce segmentation masks from reusable image features.", "zh": "SAM 使用点、框或掩码提示，根据可复用图像特征生成分割掩码。" },
+        "source": { "label": { "en": "BenchCouncil AI100 achievement notes", "zh": "BenchCouncil AI100 成就内容" } },
+        "tags": ["segment-anything", "vision"]
+      }
     ]
   }
 };
+
+const extraAi100QuizItems = [
+  ['ai100-2021-swin-transformer', 'What makes Swin Transformer efficient for dense vision tasks?', 'Swin Transformer 为什么适合密集视觉任务？', 'Shifted local attention windows', '移位局部注意力窗口', 'A fixed chess opening', '固定棋类开局', 'Only handwritten digit labels', '只有手写数字标签', 'A chemical rule table', '化学规则表', 'Shifted windows let local attention exchange information across neighboring image regions.', '移位窗口让局部注意力在相邻图像区域之间交换信息。'],
+  ['ai100-2014-glove', 'What does GloVe use to learn word vectors?', 'GloVe 用什么来学习词向量？', 'Global word co-occurrence statistics', '全局词共现统计', 'Only image masks', '只有图像掩码', 'Robot joint torque', '机器人关节力矩', 'A theorem prover trace', '定理证明轨迹', 'GloVe fits vectors to weighted word co-occurrence information from a corpus.', 'GloVe 根据语料中的加权词共现信息拟合词向量。'],
+  ['ai100-2014-conditional-gan', 'What does a conditional GAN add to ordinary GAN generation?', 'Conditional GAN 在普通 GAN 生成中加入什么？', 'A label or condition signal', '标签或条件信号', 'Only a database password', '只有数据库密码', 'A fixed Go board', '固定围棋棋盘', 'A hand-coded theorem', '手写定理', 'The condition steers the generator and discriminator toward requested classes or attributes.', '条件信号引导生成器和判别器关注指定类别或属性。'],
+  ['ai100-2015-dcgan', 'What architecture idea made DCGAN important?', 'DCGAN 的重要架构思想是什么？', 'Using convolutional generator and discriminator networks', '使用卷积式生成器和判别器网络', 'Replacing images with spreadsheets', '用电子表格替代图像', 'Removing all learned features', '移除所有学习特征', 'Using only symbolic rules', '只使用符号规则', 'DCGAN gave practical convolutional design rules for image-generating GANs.', 'DCGAN 为图像生成 GAN 提供了实用的卷积设计规则。'],
+  ['ai100-2017-wasserstein-gan', 'What does Wasserstein GAN change about GAN training?', 'Wasserstein GAN 改变了 GAN 训练中的什么？', 'It uses a smoother distribution-distance objective', '它使用更平滑的分布距离目标', 'It removes the generator', '它移除生成器', 'It trains only decision trees', '它只训练决策树', 'It labels protein atoms', '它标注蛋白质原子', 'The critic estimates a transport-inspired distance between real and generated distributions.', 'critic 估计真实分布和生成分布之间受传输启发的距离。'],
+  ['ai100-2017-cyclegan', 'Why does CycleGAN use a cycle-consistency loss?', 'CycleGAN 为什么使用循环一致性损失？', 'To preserve content when translating there and back', '为了在来回转换时保留内容', 'To sort words alphabetically', '为了按字母排序单词', 'To choose a chess move', '为了选择棋步', 'To delete the input image', '为了删除输入图像', 'Cycle consistency checks that translating from one domain and back reconstructs the original structure.', '循环一致性检查从一个域转换到另一个域再转回时能否重建原始结构。'],
+  ['ai100-2017-pix2pix', 'What kind of supervision does Pix2Pix mainly use?', 'Pix2Pix 主要使用哪种监督？', 'Paired input-output image examples', '配对的输入输出图像样本', 'Only unlabeled graph nodes', '只有未标注图节点', 'Only theorem clauses', '只有定理子句', 'A hidden reward table only', '只有隐藏奖励表', 'Pix2Pix learns image-to-image translation from matched source and target examples.', 'Pix2Pix 从匹配的源图像和目标图像样本学习图像转换。'],
+  ['ai100-2019-stylegan', 'What does StyleGAN use to control image synthesis?', 'StyleGAN 用什么控制图像合成？', 'Style vectors that modulate generator layers', '调制生成器层的风格向量', 'Only nearest-neighbor votes', '只有最近邻投票', 'A fixed theorem list', '固定定理列表', 'Only edge histograms', '只有边缘直方图', 'StyleGAN maps latent codes into styles that control different synthesis layers.', 'StyleGAN 把潜编码映射为控制不同合成层的风格。'],
+  ['ai100-2013-variational-autoencoder', 'What is central to a variational autoencoder?', '变分自编码器的核心是什么？', 'A learned latent distribution with encoder and decoder', '带编码器和解码器的学习型潜变量分布', 'Only a hand-built search tree', '只有手工搜索树', 'A fixed object dataset', '固定物体数据集', 'Only a word count table', '只有词频表', 'A VAE encodes data into a latent distribution, samples from it, and decodes the sample.', 'VAE 把数据编码为潜变量分布，从中采样，再解码样本。'],
+  ['ai100-2015-diffusion-model', 'What does a diffusion model learn to reverse?', '扩散模型学习逆转什么？', 'A gradual noising process', '逐步加噪过程', 'A database migration', '数据库迁移', 'A chess tournament bracket', '棋类赛程表', 'Only a dictionary sort', '只有字典排序', 'Diffusion models learn denoising steps that turn noise back into samples.', '扩散模型学习把噪声还原为样本的去噪步骤。'],
+  ['ai100-2005-gnn', 'What does a graph neural network pass between nodes?', '图神经网络在节点之间传递什么？', 'Learned messages from neighbors', '来自邻居的学习型消息', 'Only raw pixels', '只有原始像素', 'Spreadsheet colors', '电子表格颜色', 'A fixed audio codec', '固定音频编码', 'GNNs update node states by exchanging messages along graph edges.', 'GNN 沿图边交换消息来更新节点状态。'],
+  ['ai100-2016-gcn', 'What does a GCN layer combine?', 'GCN 层组合什么？', 'Node features from normalized graph neighborhoods', '归一化图邻域中的节点特征', 'Only text prompts', '只有文本提示', 'Only protein names', '只有蛋白质名称', 'A random password list', '随机密码列表', 'GCN aggregates nearby node features through a normalized graph propagation rule.', 'GCN 通过归一化图传播规则聚合附近节点特征。'],
+  ['ai100-2017-gat', 'How does GAT choose which neighbors matter?', 'GAT 如何选择哪些邻居更重要？', 'It learns attention weights over neighbors', '它学习邻居上的注意力权重', 'It ignores all edges', '它忽略所有边', 'It uses only image brightness', '它只使用图像亮度', 'It picks the oldest node', '它选择最老节点', 'GAT dynamically weights neighboring nodes before combining their features.', 'GAT 在合并邻居特征前动态为邻居加权。'],
+  ['ai100-2016-nas', 'What is being searched in neural architecture search?', '神经架构搜索在搜索什么？', 'Model designs or architectures', '模型设计或架构', 'A list of email addresses', '邮箱地址列表', 'Only theorem names', '只有定理名称', 'The color of a robot', '机器人的颜色', 'NAS evaluates candidate neural network designs and uses scores to guide the next proposals.', 'NAS 评估候选神经网络设计，并用评分引导下一批提案。'],
+  ['ai100-2015-deep-compression', 'Which three ideas are central to Deep Compression?', '深度压缩的三个核心思想是什么？', 'Pruning, quantization, and coding', '剪枝、量化和编码', 'Parsing, printing, and sorting', '解析、打印和排序', 'Chatting, translating, and voting', '聊天、翻译和投票', 'Cropping, rotating, and blurring', '裁剪、旋转和模糊', 'Deep Compression shrinks networks through pruning, trained quantization, and Huffman coding.', '深度压缩通过剪枝、训练型量化和霍夫曼编码缩小网络。'],
+  ['ai100-2015-knowledge-distillation', 'What does a student model learn from in knowledge distillation?', '知识蒸馏中的学生模型从什么学习？', 'Soft outputs from a larger teacher model', '来自较大教师模型的软输出', 'Only board-game rules', '只有棋类规则', 'Raw database indexes', '原始数据库索引', 'A deleted training set', '已删除训练集', 'Soft teacher probabilities transfer information beyond hard labels.', '教师的软概率传递了硬标签之外的信息。'],
+  ['ai100-2014-ms-coco', 'What made MS COCO especially useful for vision benchmarks?', 'MS COCO 对视觉基准特别有用的原因是什么？', 'Objects in context with multiple annotation types', '上下文中的物体和多种标注类型', 'Only synthetic chess boards', '只有合成棋盘', 'Only unstructured audio', '只有非结构化音频', 'A single theorem proof', '单个定理证明', 'COCO supports detection, segmentation, captions, and related tasks on everyday scenes.', 'COCO 在日常场景上支持检测、分割、字幕等任务。'],
+  ['ai100-1989-q-learning', 'What value does Q-learning update?', 'Q-learning 更新什么价值？', 'The value of a state-action pair', '状态-动作对的价值', 'The color of an image', '图像颜色', 'Only a word spelling', '只有单词拼写', 'A fixed theorem title', '固定定理标题', 'Q-learning updates Q values toward a Bellman target from reward and next-state information.', 'Q-learning 根据奖励和下一状态信息把 Q 值朝 Bellman 目标更新。'],
+  ['ai100-2015-ddpg', 'Why is DDPG associated with continuous control?', 'DDPG 为什么与连续控制相关？', 'Its actor outputs continuous actions', '它的 actor 输出连续动作', 'It only plays word games', '它只玩文字游戏', 'It removes the critic', '它移除 critic', 'It trains no policy', '它不训练策略', 'DDPG uses an actor-critic setup where the actor proposes continuous actions.', 'DDPG 使用 actor-critic 设置，其中 actor 提出连续动作。'],
+  ['ai100-1983-actor-critic', 'What are the two parts of an actor-critic method?', 'Actor-Critic 方法的两个部分是什么？', 'A policy actor and a value critic', '策略 actor 和价值 critic', 'A parser and a printer', '解析器和打印机', 'A caption and a camera only', '只有字幕和相机', 'A password and a database', '密码和数据库', 'The actor chooses actions while the critic evaluates them with value feedback.', 'actor 选择动作，critic 用价值反馈评价动作。']
+];
+
+for (const [key, qEn, qZh, aEn, aZh, bEn, bZh, cEn, cZh, dEn, dZh, eEn, eZh] of extraAi100QuizItems) {
+  module.exports.events[key] = [
+    {
+      question: { en: qEn, zh: qZh },
+      options: [
+        { en: aEn, zh: aZh },
+        { en: bEn, zh: bZh },
+        { en: cEn, zh: cZh },
+        { en: dEn, zh: dZh }
+      ],
+      answerIndex: 0,
+      explanation: { en: eEn, zh: eZh },
+      source: { label: { en: 'BenchCouncil AI100 achievement notes', zh: 'BenchCouncil AI100 成就内容' } },
+      tags: [key.replace(/^ai100-\d+-/, ''), 'ai100']
+    }
+  ];
+}

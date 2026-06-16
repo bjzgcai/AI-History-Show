@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">BERT masked language modeling</title>
+  <desc id="desc">Masked tokens are predicted using bidirectional transformer context.</desc>
+  <rect width="640" height="360" rx="24" fill="#0f172a"/>
+  <text x="40" y="54" fill="#f59e0b" font-family="Arial" font-size="28" font-weight="700">bidirectional masked pre-training</text>
+  <g font-family="Arial" font-size="17" text-anchor="middle">
+    <rect x="60" y="120" width="86" height="48" rx="9" fill="#1e293b" stroke="#64748b"/><text x="103" y="150" fill="#e5e7eb">the</text>
+    <rect x="168" y="120" width="96" height="48" rx="9" fill="#f59e0b"/><text x="216" y="150" fill="#111827">[MASK]</text>
+    <rect x="286" y="120" width="86" height="48" rx="9" fill="#1e293b" stroke="#64748b"/><text x="329" y="150" fill="#e5e7eb">reads</text>
+    <rect x="394" y="120" width="108" height="48" rx="9" fill="#1e293b" stroke="#64748b"/><text x="448" y="150" fill="#e5e7eb">context</text>
+    <rect x="186" y="234" width="268" height="60" rx="16" fill="#14532d" stroke="#86efac"/><text x="320" y="270" fill="#dcfce7">predict masked word</text>
+  </g>
+  <path d="M103 168C130 222 198 234 246 234M448 168C420 222 366 234 320 234" fill="none" stroke="#93c5fd" stroke-width="5"/>
+  <text x="320" y="205" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="17">left and right context</text>
+</svg>

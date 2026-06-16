@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">GPT next-token pre-training</title>
+  <desc id="desc">A decoder transformer predicts the next token from previous tokens.</desc>
+  <rect width="640" height="360" rx="24" fill="#0f172a"/>
+  <text x="40" y="54" fill="#f59e0b" font-family="Arial" font-size="28" font-weight="700">generative pre-training</text>
+  <g font-family="Arial" font-size="17" text-anchor="middle">
+    <rect x="70" y="130" width="80" height="50" rx="10" fill="#1e293b" stroke="#64748b"/><text x="110" y="161" fill="#e5e7eb">AI</text>
+    <rect x="170" y="130" width="94" height="50" rx="10" fill="#1e293b" stroke="#64748b"/><text x="217" y="161" fill="#e5e7eb">history</text>
+    <rect x="284" y="130" width="86" height="50" rx="10" fill="#1e293b" stroke="#64748b"/><text x="327" y="161" fill="#e5e7eb">shows</text>
+    <rect x="414" y="114" width="154" height="82" rx="16" fill="#14532d" stroke="#86efac"/><text x="491" y="148" fill="#dcfce7">decoder</text><text x="491" y="174" fill="#dcfce7">transformer</text>
+    <rect x="430" y="252" width="126" height="52" rx="12" fill="#f59e0b"/><text x="493" y="284" fill="#111827">next token</text>
+  </g>
+  <path d="M370 155H414M491 196V252" stroke="#f8fafc" stroke-width="5"/>
+  <text x="228" y="230" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="18">only previous tokens are visible</text>
+</svg>
