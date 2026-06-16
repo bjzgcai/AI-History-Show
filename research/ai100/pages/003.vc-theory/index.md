@@ -138,7 +138,7 @@ VC theory influenced computational learning theory, statistical learning theory,
 
 VC theory directly influenced the rise of support vector machines, which were widely used in text classification, bioinformatics, computer vision, handwriting recognition, spam filtering, and small-to-medium data classification problems before deep learning became dominant. The theory also shaped model selection practices, regularization thinking, and evaluation discipline in industrial machine learning.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 VC theory is still taught as a foundation of machine learning theory. Its direct numerical bounds are often loose for large modern neural networks, but the framework remains historically and conceptually important because it made generalization a precise mathematical question rather than a purely empirical hope.
 

@@ -130,7 +130,7 @@ BenchCouncil lists "A Computing Procedure for Quantification Theory" with 4,358 
 
 Modern SAT and SMT solvers are used in hardware verification, software analysis, planning, scheduling, model checking, security analysis, package dependency solving, and configuration. They are far more advanced than early DPLL, but they retain the basic idea of structured search with aggressive simplification.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 DPLL remains one of the most recognizable foundations of practical automated reasoning. CDCL SAT solvers add conflict learning, watched literals, restarts, and branching heuristics, but their core still traces to DPLL-style search.
 

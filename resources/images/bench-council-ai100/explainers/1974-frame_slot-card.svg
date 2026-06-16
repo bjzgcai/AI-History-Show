@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Slot-default frame card</text>
+  <rect x="110" y="112" width="300" height="300" rx="20" fill="#111827" stroke="#f59e0b" stroke-width="4"/><text x="140" y="164" fill="#fde68a" font-family="Arial" font-size="27">RESTAURANT FRAME</text><rect x="140" y="196" width="240" height="34" rx="9" fill="#1f2937"/><text x="156" y="221" fill="#e5e7eb" font-family="Arial" font-size="20">roles: waiter, diner</text><rect x="140" y="250" width="240" height="34" rx="9" fill="#1f2937"/><text x="156" y="275" fill="#e5e7eb" font-family="Arial" font-size="20">props: menu, table</text><rect x="140" y="304" width="240" height="34" rx="9" fill="#1f2937"/><text x="156" y="329" fill="#e5e7eb" font-family="Arial" font-size="20">default: pay after meal</text><rect x="140" y="358" width="240" height="34" rx="9" fill="#1f2937"/><text x="156" y="383" fill="#e5e7eb" font-family="Arial" font-size="20">if missing: infer script</text><text x="510" y="190" fill="#dbeafe" font-family="Arial" font-size="26">slots make context explicit</text><path d="M410 260H700" stroke="#93c5fd" stroke-width="6"/>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>
