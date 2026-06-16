@@ -53,6 +53,71 @@ node manage/generate.js
 | `images` | 相对路径数组 |
 | `videos` | `[{id, title, channel, duration}]`，YouTube 视频 |
 
+### AI100 成就新增 schema（必须遵守）
+
+以后新增 BenchCouncil AI100 achievement 时，必须一次性满足以下内容与网页布局要求，避免后续反复返工：
+
+#### 1. 顶部三联视觉区
+
+AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
+
+  1. `images[0]` 为相关科学家 / 人物 / 团队 / 机构照片。
+     - 优先真人 portrait；如果没有可靠 portrait，可用团队、机构、实验室或历史照片。
+     - 必须在 `imageMeta[images[0]]` 写清 caption、subcaption、source、sourceUrl、license/usage。
+  2. `images[1]` 为成就本身的 visualization / architecture / algorithm explainer。
+     - 不能放第二张人物照。
+     - 优先本地原创 SVG/PNG explainer；不要直接复制受版权保护的论文图。
+  3. `achievement.visualModules[0]` 为相关文章、论文、项目页或档案页卡片（`type: "archiveLink"`）。
+     - 必须包含 `site/title/description/url/source/action`。
+     - 这是右侧 article/source 卡片，不是普通图片。
+
+#### 2. 底部互动解释区
+
+底部必须是旧 achievement 那种 paper-demo / visual-demo 布局：
+
+- `achievement.visual` 必须映射到非 generic 的 demo renderer。
+- 左侧为大 visual/demo，用于展示算法流程、架构、数据流、系统路径或成果可视化。
+- 右侧为两个说明盒：
+  - 第一个盒子说明文献线索、架构线索、历史线索、实验线索或专家线索。
+  - 第二个盒子必须是 `Interaction point` / `互动点`，说明观众可以怎样交互理解该成就。
+- 如果没有现成 visual renderer，必须新增 renderer 或使用 `buildImagePaperDemo` / `buildPaperDemo` 风格实现，不要让页面退回到只有一句文字的 generic demo。
+
+#### 3. 右侧文字栏
+
+- `commentarySections` 至少包含 `Historical Background`、`Core Idea`、`Long-Term Legacy`。
+- `Long-Term Legacy / 长期影响` 必须说明专家如何评价该成就，不能只写普通影响描述。
+- 推荐包含类似句式：`Experts generally treat...` / `专家通常把/认为...`。
+
+#### 4. 资料来源
+
+- `achievement.sources` 至少 3 条，推荐 4 条，风格参考旧 achievement。
+- 必须包含主论文 / 原始资料。
+- 还应补充背景、项目页、人物资料、机构资料、代码、图片来源、历史回顾或官方出版页面等，按该成就实际情况选择。
+- 每个 source 必须有 `type`、`label`、`url`，并提供真实 `{en, zh}` 双语文字。
+- 不要只放一条论文链接。
+
+#### 5. Quiz
+
+- 每个新增 AI100 achievement 必须同步在 `manage/quizzes.js` 添加 quiz。
+- Quiz 布局必须匹配旧 achievement 的浏览检查点：左侧相关材料，右侧快速挑战，包含 4 个选项。
+- 题目必须简单、清楚，适合普通观众，不要考冷门细节。
+- 选项源数据可以保持固定顺序；前端会随机显示答案顺序。
+- Quiz 相关材料必须有图片或资料，不要缺图、缺信息。
+
+#### 6. 双语与页面语言
+
+- 所有页面可见字段必须有真实 `{en, zh}` 内容。
+- 中文页显示中文，英文页显示英文。
+- 不要把英文直接复制到 `zh` 字段，除非是通用专名、缩写或模型名（如 ReLU、LeNet、AlexNet、arXiv）。
+- 需要覆盖：`title/description/location/figures/commentarySections/achievement/imageMeta/visualModules/sources/quizzes`。
+
+#### 7. 生成与验证
+
+- 修改 source 后必须运行 `node manage/generate.js`。
+- 至少运行 `npm run lint` 和 `npm test`。
+- 若影响启动或页面加载，运行 `npm run validate:startup`。
+- 不要手动编辑 `milestones-data.js`；它由生成脚本输出。
+
 ### 当前事件（5 分类，21 个）
 
 - **AI创世纪**: 1956-dartmouth, 1957-perceptron, 1969-ai-winter

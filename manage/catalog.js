@@ -7,7 +7,7 @@ module.exports = {
     {
       "name": {
         "en": "Genesis of AI (1950s-1970s)",
-        "zh": "AI创世纪 (1950s-1970s)"
+        "zh": "AI创世纪（20世纪50年代至70年代）"
       },
       "subtitle": {
         "en": "Genesis of AI",
@@ -22,7 +22,7 @@ module.exports = {
     {
       "name": {
         "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-        "zh": "神经网络与连接主义的复兴 (1980s-2000s)"
+        "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
       },
       "subtitle": {
         "en": "Neural Networks and Connectionism",
@@ -38,7 +38,7 @@ module.exports = {
     {
       "name": {
         "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-        "zh": "深度学习与范式归一 (2010s-2020s)"
+        "zh": "深度学习与范式归一（2010年代至2020年代）"
       },
       "subtitle": {
         "en": "Deep Learning and Unified Paradigms",
@@ -127,7 +127,27 @@ module.exports = {
         "1958-rosenblatt-perceptron",
         "2006-dbn",
         "1988-td-update",
-        "1985-bayesian-network"
+        "1985-bayesian-network",
+        "1990-otter",
+        "2011-ibm-watson",
+        "1951-strachey-draughts",
+        "1994-chinook",
+        "1959-pandemonium",
+        "1984-cyc",
+        "1980-xcon-r1",
+        "1957-kmeans",
+        "1996-dbscan",
+        "2000-spectral-clustering",
+        "ai100-1943-mcculloch-pitts-neuron",
+        "ai100-1951-snarc",
+        "ai100-1969-relu",
+        "ai100-1989-lenet",
+        "ai100-2000-neural-language-model",
+        "ai100-2012-alexnet",
+        "ai100-2015-resnet",
+        "ai100-2015-batch-normalization",
+        "ai100-2017-densenet",
+        "ai100-2020-vit"
       ]
     }
   ]
