@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Value timeline update</text>
+  <path d="M120 330H780" stroke="#64748b" stroke-width="5"/><circle cx="190" cy="330" r="28" fill="#60a5fa"/><circle cx="390" cy="330" r="28" fill="#f59e0b"/><circle cx="590" cy="330" r="28" fill="#22c55e"/><text x="190" y="260" fill="#dbeafe" text-anchor="middle" font-family="Arial" font-size="24">V(s)</text><text x="390" y="260" fill="#fde68a" text-anchor="middle" font-family="Arial" font-size="24">r</text><text x="590" y="260" fill="#d1fae5" text-anchor="middle" font-family="Arial" font-size="24">V(s')</text><path d="M590 285 C500 160 280 160 190 285" fill="none" stroke="#f8fafc" stroke-width="5" stroke-dasharray="12 12"/><text x="300" y="150" fill="#e5e7eb" font-family="Arial" font-size="25">bootstrap target</text>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>

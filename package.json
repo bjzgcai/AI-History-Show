@@ -15,6 +15,8 @@
         "test": "node scripts/test-layout-router.js && node scripts/test-swipe-navigation.js",
         "quality": "npm run lint && npm run format:check && npm test",
         "validate:startup": "node scripts/validate-startup.js",
+        "validate:ai100-context": "node scripts/validate-ai100-context.js",
+        "validate:ai100-quizzes": "node scripts/validate-ai100-quizzes-grounded.js",
         "validate:deployment": "npm run generate && npm test && npm run validate:startup"
     },
     "devDependencies": {

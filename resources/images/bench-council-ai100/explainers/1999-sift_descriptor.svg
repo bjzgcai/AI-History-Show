@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Gradient descriptor histogram</text>
+  <rect x="145" y="191.09703106344728" width="34" height="148.90296893655275" fill="#f59e0b"/><rect x="207" y="186.34918012220226" width="34" height="153.65081987779772" fill="#60a5fa"/><rect x="269" y="240.1215994358093" width="34" height="99.87840056419071" fill="#f59e0b"/><rect x="331" y="302.976174671555" width="34" height="37.02382532844503" fill="#60a5fa"/><rect x="393" y="317.1246992264197" width="34" height="22.875300773580307" fill="#f59e0b"/><rect x="455" y="269.5590848739248" width="34" height="70.4409151260752" fill="#60a5fa"/><rect x="517" y="204.01093808968477" width="34" height="135.98906191031523" fill="#f59e0b"/><rect x="579" y="180.74492273636326" width="34" height="159.25507726363674" fill="#60a5fa"/><circle cx="330" cy="190" r="74" fill="none" stroke="#6ee7b7" stroke-width="5"/><path d="M330 190l70-30M330 190l-20 80M330 190l-80-20" stroke="#f8fafc" stroke-width="5"/><text x="94" y="430" fill="#dbeafe" font-family="Arial" font-size="24">gradient directions become a descriptor vector</text>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Back-propagation error flow explainer">
+  <rect width="720" height="420" rx="24" fill="#0f172a"/>
+  <text x="36" y="54" fill="#f59e0b" font-family="Arial, sans-serif" font-size="24" font-weight="700">error flows backward through layers</text>
+  <g stroke="#475569" stroke-width="3">
+    <path d="M150 140L330 104M150 140L330 184M150 250L330 184M150 250L330 290M330 104L520 170M330 184L520 170M330 290L520 244"/>
+  </g>
+  <g fill="#60a5fa"><circle cx="150" cy="140" r="22"/><circle cx="150" cy="250" r="22"/></g>
+  <g fill="#22c55e"><circle cx="330" cy="104" r="22"/><circle cx="330" cy="184" r="22"/><circle cx="330" cy="290" r="22"/></g>
+  <g fill="#f97316"><circle cx="520" cy="170" r="24"/><circle cx="520" cy="244" r="24"/></g>
+  <path d="M552 210C610 210 610 126 552 126" fill="none" stroke="#ef4444" stroke-width="5" marker-end="url(#bpArrow)"/>
+  <path d="M500 210C438 210 420 176 360 176M310 176C246 176 226 144 174 144" fill="none" stroke="#f8fafc" stroke-width="4" stroke-dasharray="8 7"/>
+  <defs><marker id="bpArrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#ef4444"/></marker></defs>
+  <text x="586" y="214" fill="#fecaca" font-family="Arial, sans-serif" font-size="16">loss</text>
+</svg>
