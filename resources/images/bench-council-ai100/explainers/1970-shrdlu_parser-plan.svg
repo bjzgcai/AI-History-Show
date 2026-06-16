@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Parser to planner path</text>
+  <rect x="92" y="122" width="220" height="72" rx="14" fill="#172554" stroke="#93c5fd" stroke-width="3"/><text x="202" y="166" text-anchor="middle" fill="#bfdbfe" font-family="Arial" font-size="25">parser</text><rect x="390" y="122" width="220" height="72" rx="14" fill="#402c1b" stroke="#f59e0b" stroke-width="3"/><text x="500" y="166" text-anchor="middle" fill="#fde68a" font-family="Arial" font-size="25">planner</text><rect x="688" y="122" width="140" height="72" rx="14" fill="#064e3b" stroke="#6ee7b7" stroke-width="3"/><text x="758" y="166" text-anchor="middle" fill="#d1fae5" font-family="Arial" font-size="25">move</text><path d="M312 158H390M610 158H688" stroke="#f8fafc" stroke-width="5"/><text x="146" y="292" fill="#e5e7eb" font-family="Arial" font-size="24">sentence -> reference -> action</text>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>

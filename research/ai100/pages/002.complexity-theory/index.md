@@ -129,7 +129,7 @@ Complexity theory does not behave like a product feature, but it influences indu
 
 Companies do not "use NP-completeness" as a single algorithm; they use it as a map of where exact efficient solutions are unlikely and where approximations, restrictions, randomized methods, or specialized solvers are needed.
 
-## Long-Term Legacy
+## Expert Evaluation
 
 NP-completeness remains standard theory in computer science education and research. P versus NP remains unresolved and is one of the Clay Mathematics Institute Millennium Prize Problems. The legacy is not only a famous open problem, but a whole vocabulary for classifying computational difficulty.
 
