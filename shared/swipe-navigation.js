@@ -10,6 +10,8 @@
         'iframe',
         '.timeline-track',
         '.timeline-block',
+        '.branch-timeline',
+        '.branch-timeline-page',
         '.left-timeline',
         '.archive-stage',
         '.archive-bottomline',

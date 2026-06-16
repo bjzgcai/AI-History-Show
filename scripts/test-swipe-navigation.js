@@ -49,6 +49,19 @@ assert.equal(
 );
 console.log('PASS active target detection');
 
+const branchTimelineTarget = {
+    nodeType: 1,
+    closest(selector) {
+        return selector.includes('.branch-timeline') ? {} : null;
+    }
+};
+assert.equal(
+    swipe.shouldIgnoreSwipeTarget(branchTimelineTarget),
+    true,
+    'branch timeline should use local horizontal drag instead of global swipe navigation'
+);
+console.log('PASS branch timeline swipe exclusion');
+
 assert.equal(swipe.isTouchLikePointer('touch'), true, 'touch pointer should be accepted');
 assert.equal(swipe.isTouchLikePointer('pen'), true, 'pen pointer should be accepted');
 assert.equal(swipe.isTouchLikePointer('mouse'), false, 'mouse pointer should be ignored');

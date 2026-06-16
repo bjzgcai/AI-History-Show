@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Libratus poker-hand evolution</title>
+  <desc id="desc">A local explainer poster for a heads-up poker state evolving from private cards to subgame solving.</desc>
+  <rect width="960" height="540" fill="#0c0a08"/>
+  <rect x="70" y="58" width="820" height="424" rx="28" fill="#142019" stroke="#f68900" stroke-width="3"/>
+  <ellipse cx="480" cy="270" rx="318" ry="154" fill="#163b2b" stroke="#6ee7b7" stroke-width="3"/>
+  <g fill="#f4efe5" font-family="Arial, sans-serif" font-weight="800">
+    <text x="92" y="104" font-size="30" fill="#f68900">Libratus hand trajectory</text>
+    <text x="92" y="140" font-size="17" fill="#cbd5e1">private cards -> public actions -> refined subgame</text>
+  </g>
+  <g transform="translate(210 198)">
+    <rect x="0" y="0" width="86" height="122" rx="10" fill="#f8fafc"/>
+    <rect x="18" y="18" width="50" height="86" rx="7" fill="#ef4444"/>
+    <text x="43" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#f8fafc">A</text>
+    <rect x="42" y="18" width="86" height="122" rx="10" fill="#f8fafc"/>
+    <rect x="60" y="36" width="50" height="86" rx="7" fill="#111827"/>
+    <text x="85" y="91" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#f8fafc">K</text>
+  </g>
+  <g transform="translate(390 224)">
+    <rect x="0" y="0" width="180" height="74" rx="16" fill="#0f172a" stroke="#93c5fd" stroke-width="3"/>
+    <text x="90" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#bfdbfe">BET / CALL</text>
+    <text x="90" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#bfdbfe">ACTION TRACE</text>
+  </g>
+  <g transform="translate(648 184)">
+    <rect x="0" y="0" width="154" height="152" rx="18" fill="#3b2614" stroke="#fbbf24" stroke-width="3"/>
+    <text x="77" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#fde68a">SUBGAME</text>
+    <path d="M36 76 H118 M48 104 H106" stroke="#fde68a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path d="M338 258 H380 M570 258 H636" fill="none" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="360" cy="258" r="9" fill="#f68900"/>
+  <circle cx="612" cy="258" r="9" fill="#f68900"/>
+</svg>
