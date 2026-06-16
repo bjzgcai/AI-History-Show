@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Neighbor probability matching</text>
+  <circle cx="260" cy="260" r="34" fill="#f59e0b"/><circle cx="176" cy="192" r="18" fill="#60a5fa"/><circle cx="205" cy="320" r="18" fill="#60a5fa"/><circle cx="340" cy="210" r="18" fill="#60a5fa"/><circle cx="408" cy="330" r="18" fill="#64748b"/><circle cx="120" cy="380" r="18" fill="#64748b"/><circle cx="260" cy="260" r="120" fill="none" stroke="#f59e0b" stroke-width="4" stroke-dasharray="10 12"/><text x="520" y="230" fill="#e5e7eb" font-family="Arial" font-size="27">neighbors become probabilities</text>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>
