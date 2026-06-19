@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "content-assistance-eval/v1",
+  "purpose": "Small seed set for comparing deterministic and future LLM-backed metadata generation.",
+  "cases": [
+    {
+      "id": "image-architecture-transformer",
+      "task": "image_metadata",
+      "eventKey": "2017-transformer",
+      "event": {
+        "year": 2017,
+        "title": "Transformer",
+        "quoteMeta": {
+          "workTitle": "Attention Is All You Need"
+        }
+      },
+      "imagePath": "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+      "expected": {
+        "caption": "结构示意",
+        "subcaption": "Transformer 架构图",
+        "traceRuleId": "path-architecture"
+      }
+    },
+    {
+      "id": "image-paper-backpropagation",
+      "task": "image_metadata",
+      "eventKey": "1986-backpropagation",
+      "event": {
+        "year": 1986,
+        "title": "反向传播算法",
+        "quoteMeta": {
+          "workTitle": "Learning representations by back-propagating errors"
+        }
+      },
+      "imagePath": "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png",
+      "expected": {
+        "caption": "论文页面",
+        "subcaption": "《Learning representations by back-propagating errors》",
+        "traceRuleId": "path-document"
+      }
+    },
+    {
+      "id": "image-people-perceptron",
+      "task": "image_metadata",
+      "eventKey": "1957-perceptron",
+      "event": {
+        "year": 1957,
+        "title": "感知机与连接主义"
+      },
+      "imagePath": "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
+      "expected": {
+        "caption": "人物肖像",
+        "subcaption": "相关研究者照片",
+        "traceRuleId": "path-people"
+      }
+    },
+    {
+      "id": "image-historical-dartmouth",
+      "task": "image_metadata",
+      "eventKey": "1956-dartmouth",
+      "event": {
+        "year": 1956,
+        "title": "达特茅斯会议 - AI正式诞生！"
+      },
+      "imagePath": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+      "expected": {
+        "caption": "历史照片",
+        "subcaption": "达特茅斯会议 - AI正式诞生！",
+        "traceRuleId": "path-historical"
+      }
+    },
+    {
+      "id": "image-explainer-ai100-turing-test",
+      "task": "image_metadata",
+      "eventKey": "1950-turing-test",
+      "event": {
+        "year": 1950,
+        "title": "图灵测试"
+      },
+      "imagePath": "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png",
+      "expected": {
+        "caption": "概念示意",
+        "subcaption": "图灵测试 概念示意图",
+        "traceRuleId": "path-explainer"
+      }
+    },
+    {
+      "id": "event-description-agentic-ai",
+      "task": "event_description",
+      "eventKey": "2023-agents",
+      "inputs": {
+        "eventTitle": "智能体：LLM驱动的自主系统",
+        "quoteCandidate": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
+        "researchCandidateLabel": "背景解读"
+      },
+      "expectedReviewCriteria": [
+        "Mentions LLM-backed planning or tool use",
+        "Keeps historical framing distinct from hype",
+        "Does not replace human-approved event.description without review"
+      ]
+    }
+  ]
+}

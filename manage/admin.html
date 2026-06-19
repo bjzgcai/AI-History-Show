@@ -138,6 +138,37 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
   font-size: 12px;
   padding: 6px 8px;
 }
+.img-meta-suggestion {
+  margin-top: 6px;
+  padding: 7px 8px;
+  border: 1px dashed rgba(255,209,102,.45);
+  border-radius: var(--radius);
+  background: rgba(255,209,102,.06);
+  font-size: 12px;
+}
+.img-meta-suggestion-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.img-meta-suggestion-main {
+  flex: 1;
+  min-width: 0;
+  color: var(--text);
+}
+.img-meta-trace {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.img-meta-approved {
+  margin-top: 4px;
+  color: var(--success);
+  font-size: 11px;
+}
 
 /* ── Event list in sidebar ───────────────────────── */
 .event-search {
@@ -416,6 +447,7 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
 <div id="toast"></div>
 
 <script src="/resources/quote-candidates.js"></script>
+<script src="/resources/content-assistance.js"></script>
 <script>
 'use strict';
 
@@ -1331,11 +1363,6 @@ function renderImagePicker(key) {
   renderManualImages(key);
 }
 
-function extractWorkTitleFromAttribution(attribution) {
-  const match = String(attribution || '').match(/《([^》]+)》/);
-  return match ? String(match[1] || '').trim() : '';
-}
-
 function formatQuoteAttribution(meta) {
   const safeMeta = meta && typeof meta === 'object' ? meta : {};
   const workTitle = String(safeMeta.workTitle || '').trim();
@@ -1353,75 +1380,52 @@ function quoteMetaSummary(meta) {
   ].filter(Boolean).join(' · ');
 }
 
-function getQuoteCandidateWorkTitle(key) {
+function suggestImageMeta(key, path) {
+  const ev = { ...(events[key] || {}) };
   try {
     const entry = window.quoteCandidates && window.quoteCandidates.events
       ? window.quoteCandidates.events[key]
       : null;
     const first = Array.isArray(entry) && entry.length > 0 ? entry[0] : null;
-    return first && first.workTitle ? String(first.workTitle).trim() : '';
-  } catch {
-    return '';
-  }
-}
-
-function imageMetaSuggestion(captionZh, subcaptionZh, captionEn, subcaptionEn) {
-  return {
-    caption: { zh: captionZh, en: captionEn || captionZh },
-    subcaption: { zh: subcaptionZh, en: subcaptionEn || subcaptionZh },
-  };
-}
-
-function suggestImageMeta(key, path) {
-  const ev = events[key] || {};
-  const title = mlText(ev.title) || String(key || '').trim();
-  const titleEn = mlText(ev.title, 'en') || title;
-  const quoteWork = String(((ev.quoteMeta || {}).workTitle) || '').trim() || getQuoteCandidateWorkTitle(key);
-
-  const value = String(path || '');
-  if (/\/people\//i.test(value) || /portrait|headshot|avatar|人物|人像/i.test(value)) {
-    return imageMetaSuggestion('人物肖像', '相关研究者照片', 'Portrait', 'Researcher photo');
-  }
-  if (/\/architecture\//i.test(value) || /_architecture_/i.test(value)) {
-    return imageMetaSuggestion(
-      '结构示意',
-      title ? `${title} 架构图` : '模型架构图',
-      'Architecture',
-      titleEn ? `${titleEn} architecture diagram` : 'Model architecture',
-    );
-  }
-  if (/\/papers\//i.test(value) || /_papers_/i.test(value) || /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(value)) {
-    return imageMetaSuggestion(
-      '论文页面',
-      quoteWork ? `《${quoteWork}》` : (title || '原文截图或摘要'),
-      'Paper page',
-      quoteWork || titleEn || 'Original screenshot or abstract',
-    );
-  }
-  if (/\/historical\//i.test(value) || /_historical_/i.test(value)) {
-    return imageMetaSuggestion('历史照片', title || '事件相关档案', 'Historical photo', titleEn || 'Event archive');
-  }
-  return imageMetaSuggestion('档案图片', title || '事件相关资料', 'Archive image', titleEn || 'Event material');
+    if (first && first.workTitle && !((ev.quoteMeta || {}).workTitle)) {
+      ev.quoteMeta = { ...(ev.quoteMeta || {}), workTitle: first.workTitle };
+    }
+  } catch (_) {}
+  return window.contentAssistance.buildImageMetadataSuggestion(key, ev, path);
 }
 
 function autoFillImageMeta(key) {
   if (!events[key]) return;
   const ev = events[key];
-  if (!ev.imageMeta) ev.imageMeta = {};
+  if (!ev.imageMetaSuggestions) ev.imageMetaSuggestions = {};
   const list = ev.images || [];
+  let created = 0;
   for (const p of list) {
     if (!p) continue;
-    const existing = ev.imageMeta[p] || {};
+    const existing = (ev.imageMeta || {})[p] || {};
     const hasCaption = hasMlText(existing.caption);
     const hasSubcaption = hasMlText(existing.subcaption);
     if (hasCaption && hasSubcaption) continue;
-    const suggestion = suggestImageMeta(key, p);
-    ev.imageMeta[p] = {
-      ...existing,
-      caption: hasCaption ? existing.caption : suggestion.caption,
-      subcaption: hasSubcaption ? existing.subcaption : suggestion.subcaption,
-    };
+    ev.imageMetaSuggestions[p] = suggestImageMeta(key, p);
+    created++;
   }
+  renderManualImages(key);
+  toast(created ? `已生成 ${created} 条待审核描述` : '没有需要生成的图片描述', 'success');
+}
+
+function approveImageMetaSuggestion(key, path) {
+  if (!events[key]) return;
+  const suggestion = events[key].imageMetaSuggestions && events[key].imageMetaSuggestions[path];
+  if (!suggestion) return;
+  if (!events[key].imageMeta) events[key].imageMeta = {};
+  events[key].imageMeta[path] = window.contentAssistance.approveImageMetadataSuggestion(suggestion, 'admin-ui');
+  delete events[key].imageMetaSuggestions[path];
+  renderManualImages(key);
+}
+
+function dismissImageMetaSuggestion(key, path) {
+  if (!events[key] || !events[key].imageMetaSuggestions) return;
+  delete events[key].imageMetaSuggestions[path];
   renderManualImages(key);
 }
 
@@ -1515,6 +1519,9 @@ function setImageMeta(key, path, field, val) {
   if (!events[key].imageMeta) events[key].imageMeta = {};
   if (!events[key].imageMeta[path]) events[key].imageMeta[path] = {};
   events[key].imageMeta[path][field] = val;
+  if (!events[key].imageMeta[path].approval) {
+    events[key].imageMeta[path].approval = { status: 'human-edited', approvedBy: 'admin-ui' };
+  }
 
   const entry = events[key].imageMeta[path] || {};
   if (!hasMlText(entry.caption) && !hasMlText(entry.subcaption)) {
@@ -1527,6 +1534,9 @@ function setImageMetaMl(key, path, field, locale, val) {
   if (!events[key].imageMeta[path]) events[key].imageMeta[path] = {};
   events[key].imageMeta[path][field] = ensureMlObject(events[key].imageMeta[path][field]);
   events[key].imageMeta[path][field][locale] = val;
+  if (!events[key].imageMeta[path].approval) {
+    events[key].imageMeta[path].approval = { status: 'human-edited', approvedBy: 'admin-ui' };
+  }
 
   const entry = events[key].imageMeta[path] || {};
   if (!hasMlText(entry.caption) && !hasMlText(entry.subcaption)) {
@@ -1540,8 +1550,29 @@ function renderManualImages(key) {
   const paths = events[key].images || [];
   if (!paths.length) { el.innerHTML = `<div style="font-size:12px;color:var(--muted)">（无）</div>`; return; }
   const metaMap = events[key].imageMeta || {};
+  const suggestions = events[key].imageMetaSuggestions || {};
   el.innerHTML = paths.map((p, i) => {
     const meta = metaMap[p] || {};
+    const suggestion = suggestions[p] || null;
+    const traceSummary = suggestion && suggestion.trace
+      ? `${suggestion.generatedBy || ''} · ${suggestion.trace.ruleId || ''} · ${((suggestion.trace.sources || []).map(s => `${s.field}:${s.value}`).join(' | '))}`
+      : '';
+    const approvedStatus = meta.approval && meta.approval.status
+      ? `<div class="img-meta-approved">${esc(meta.approval.status)}</div>`
+      : '';
+    const suggestionHtml = suggestion ? `
+        <div class="img-meta-suggestion">
+          <div class="img-meta-suggestion-row">
+            <div class="img-meta-suggestion-main">
+              <strong>${esc(mlText(suggestion.caption))}</strong>
+              <span style="color:var(--muted)"> · ${esc(mlText(suggestion.subcaption))}</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="approveImageMetaSuggestion('${key}','${p}')">采纳</button>
+            <button class="btn btn-secondary btn-sm" onclick="dismissImageMetaSuggestion('${key}','${p}')">忽略</button>
+          </div>
+          <div class="img-meta-trace" title="${esc(traceSummary)}">${esc(traceSummary)}</div>
+        </div>
+      ` : '';
     return `
       <div class="img-meta-item">
         <div class="dyn-row">
@@ -1561,6 +1592,8 @@ function renderManualImages(key) {
           <input value="${esc(mlText(meta.subcaption, 'en'))}" placeholder="English description (optional)"
             oninput="setImageMetaMl('${key}','${p}','subcaption','en',this.value)">
         </div>
+        ${approvedStatus}
+        ${suggestionHtml}
       </div>
     `;
   }).join('');
