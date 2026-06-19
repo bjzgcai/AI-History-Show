@@ -8,6 +8,7 @@
                 appTitleSingle: 'AI History Exhibition - Single Screen',
                 appTitleDual: 'AI History Exhibition - Dual Screen',
                 aiHistory: 'AI History',
+                aiHistoryMode: 'AI HISTORY',
                 aiHistoryReview: 'AI History Exhibition',
                 switchLanguageToEnglish: 'Switch to English',
                 switchLanguageToChinese: 'Switch to Chinese',
@@ -48,12 +49,17 @@
                 originalScreenshot: 'Original screenshot or abstract',
                 signature: 'Attribution',
                 keyFiguresArchiveNarrative: 'Key Figures & Archive Narrative',
-                commentaryMedia: 'Commentary & Media'
+                commentaryMedia: 'Commentary & Media',
+                storylineSelector: 'Storyline',
+                achievementMap: 'Achievement Map',
+                researchDossier: 'Research Dossier',
+                sourceMaterials: 'Source Materials'
             },
             zh: {
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
                 appTitleDual: 'AI 历史回顾展览 - 双屏模式',
                 aiHistory: 'AI 历史',
+                aiHistoryMode: '人工智能历史',
                 aiHistoryReview: 'AI 历史回顾',
                 switchLanguageToEnglish: '切换到英文',
                 switchLanguageToChinese: '切换到中文',
@@ -94,7 +100,11 @@
                 originalScreenshot: '原文截图或摘要',
                 signature: '署名',
                 keyFiguresArchiveNarrative: '关键人物与档案叙事',
-                commentaryMedia: '评论与媒体'
+                commentaryMedia: '评论与媒体',
+                storylineSelector: '故事线',
+                achievementMap: '成就地图',
+                researchDossier: '研究档案',
+                sourceMaterials: '资料来源'
             }
         }
     };

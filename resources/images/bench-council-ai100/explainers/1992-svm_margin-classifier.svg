@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Maximum-margin classifier</title>
+  <desc id="desc">最大间隔分类器</desc>
+  <rect width="1200" height="720" fill="#101827"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <text x="90" y="120" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Maximum-margin classifier</text>
+  <text x="90" y="164" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">最大间隔分类器</text>
+  <path d="M230 570 L930 165" stroke="#f8fafc" stroke-width="10"/><path d="M180 515 L880 110 M280 640 L980 235" stroke="#94a3b8" stroke-width="5" stroke-dasharray="18 16"/><circle cx="420" cy="390" r="42" fill="none" stroke="#f8fafc" stroke-width="5"/><rect x="640" y="440" width="84" height="84" rx="10" fill="none" stroke="#f8fafc" stroke-width="5"/>
+  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Margin · local redraw from source material</text>
+</svg>

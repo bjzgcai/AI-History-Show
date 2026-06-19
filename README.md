@@ -1,102 +1,122 @@
-# AI 历史回顾展览
+# AI History Exhibition
 
-展厅大屏互动式前端应用，展示人工智能发展的重要里程碑。
+**English** | [简体中文](README.zh.md)
 
-## 代码仓库
+An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. Supports both Chinese and English (with an in-page language switch), and adapts automatically between single-screen, mobile, and dual-screen layouts.
 
-- Gitee：`ssh://git@z.gitee.cn:223/zgca/AI-History-Show.git`
-- GitHub：`git@github.com:bjzgcai/AI-History-Show.git`
+## Repositories
 
-## 快速开始
+- Gitee: `ssh://git@z.gitee.cn:223/zgca/AI-History-Show.git`
+- GitHub: `git@github.com:bjzgcai/AI-History-Show.git`
+
+## Quick Start
 
 ```bash
-# 本地预览展示页
-python3 -m http.server 8000
-# 访问 http://localhost:8000
+# Install dependencies from the lockfile
+npm ci
 
-# 校验单双屏自适应路由
-node scripts/test-layout-router.js
+# Preview the exhibition page locally
+npm run start:static
+# Open http://localhost:8000
 
-# 校验触摸滑动翻页规则
-node scripts/test-swipe-navigation.js
+# Run the local demo server entry
+npm run start:demo
 
-# 运行完整质量门禁（lint + format check + tests）
-npm install
+# Validate generated data, tests, and startup behavior
+npm run validate:deployment
+
+# Run the full quality gate (lint + format check + tests)
 npm run quality
 
-# 本地运行内容管理服务
-node manage/server.js
-# 访问 http://localhost:3001/admin
+# Run the content management server locally
+npm run start:admin
+# Open http://localhost:3001/admin
 ```
 
-> **安全提示**：管理服务（端口 3001）无认证保护，仅供本地使用，**切勿直接暴露到公网**。生产环境请通过 SSH 隧道或 Nginx Basic Auth 访问，详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
-
-云服务器部署（Nginx + PM2）、静态托管、SSH 隧道访问管理后台等详见 [DEPLOYMENT.md](DEPLOYMENT.md)。
-
-## 质量门禁
-
-在提交 Pull Request 或合并改动前，请运行：
+Containerized preview:
 
 ```bash
-npm install
+docker build -t ai-history-show .
+docker run --rm -p 8000:8000 ai-history-show
+
+# Or run the Nginx presentation service with Compose
+docker compose up --build
+
+# Include the local admin service when needed
+docker compose --profile admin up --build
+```
+
+> **Security notice**: The management service (port 3001) has no authentication and is intended for **local use only**. **Never expose it directly to the public internet.** For production, access it through an SSH tunnel or behind Nginx Basic Auth — see [DEPLOYMENT.md](DEPLOYMENT.md) for details.
+
+Cloud deployment (Nginx + PM2), static hosting, and SSH-tunnel access to the admin console are all covered in [DEPLOYMENT.md](DEPLOYMENT.md).
+
+## Internationalization (i18n)
+
+The exhibition ships with built-in Chinese/English support:
+
+- Language dictionary and runtime switching: [shared/i18n.js](shared/i18n.js)
+- Default locale is Chinese; the active locale is persisted in `localStorage` under the key `ai-history-locale`
+- A language toggle button is rendered in both single- and dual-screen layouts
+- Milestone content fields (titles, descriptions, quotes, etc.) support a bilingual object form `{ zh: "...", en: "..." }`; missing locales fall back gracefully
+
+When authoring content, you can mix plain strings (treated as Chinese) and bilingual objects in the same event. The build step in `manage/generate.js` normalizes both forms into the final `milestones-data.js`.
+
+## Quality Gate
+
+Before opening a Pull Request or merging changes, please run:
+
+```bash
+npm ci
 npm run quality
+npm run validate:deployment
 ```
 
-质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。GitHub Actions 会在 push 和 Pull Request 时运行同一套命令。
+The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. Deployment validation regenerates the milestone data, runs tests, starts the presentation/admin services, builds the Docker image, and validates the Compose configuration in CI.
 
-后续优先补充测试覆盖的模块：
+Modules that should be prioritized for additional test coverage:
 
-- `manage/generate.js`：生成后的里程碑数据结构、引言选择、视频查找、缺失资源警告。
-- `shared/milestone-view.js`：多语言渲染兜底逻辑，以及媒体元数据规范化。
-- `manage/server.js`：`/api/generate/diff`、`/api/events`，以及图片/视频元数据规范化。
+- `manage/generate.js`: generated milestone data structure, quote selection, video lookup, missing-asset warnings.
+- `shared/milestone-view.js`: multilingual rendering fallbacks and media metadata normalization.
+- `manage/server.js`: `/api/generate/diff`, `/api/events`, and image/video metadata normalization.
 
-## 代码同步
+## Code Sync
 
-本地当前配置了两个远端：
-
-```bash
-# 推送到 Gitee
-git push origin master
-
-# 推送到 GitHub
-git push github master
-```
-
-日常改动建议先确认工作区，再按需提交和同步：
+The default `origin` remote points to GitHub (`main` branch):
 
 ```bash
 git status --short
 git add <files>
-git commit -m "描述本次改动"
-git push origin master
-git push github master
+git commit -m "Describe this change"
+git push origin main
 ```
 
-## 展厅双屏演示
+If you also configure a Gitee remote locally (e.g. `git remote add gitee ssh://git@z.gitee.cn:223/zgca/AI-History-Show.git`), push with `git push gitee master` — Gitee's default branch is `master`. See [DEPLOYMENT.md](DEPLOYMENT.md) for the canonical remote setup.
 
-- 自适应入口：`http://localhost:8000/`
-- `index.html` 会根据当前浏览器视口自动切换到单屏/移动端或双屏布局
-- 双屏固定入口：`http://localhost:8000/dual-screen.html`
-- 如需手动强制模式，可在 URL 后追加 `?layout=single` 或 `?layout=dual`
-- Windows 现场演示推荐先用 `msedge --app="http://localhost:8000/dual-screen.html"` 验证页面，再根据显卡控制软件决定是否合成超宽屏后进入 `F11` 或 `--kiosk`
-- 多显示器全屏演示、Edge app/kiosk、Intel/NVIDIA 合屏、DisplayFusion 限制等详细说明见 [DEPLOYMENT.md](DEPLOYMENT.md)
+## Dual-Screen Exhibition Demo
+
+- Adaptive entry: `http://localhost:8000/`
+- `index.html` automatically switches to single-screen/mobile or dual-screen layout based on the current viewport
+- Fixed dual-screen entry: `http://localhost:8000/dual-screen.html`
+- To force a mode manually, append `?layout=single` or `?layout=dual` to the URL
+- For Windows on-site demos, first verify the page with `msedge --app="http://localhost:8000/dual-screen.html"`, then decide whether to compose an ultrawide display via the GPU control software before switching to `F11` or `--kiosk`
+- Multi-monitor full-screen demos, Edge app/kiosk modes, Intel/NVIDIA display composition, DisplayFusion caveats, etc. are documented in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
 
-## 内容管理工作流
+## Content Management Workflow
 
-### 方式 A：可视化管理页面（推荐）
+### Option A: Visual admin page (recommended)
 
 ```bash
 node manage/server.js
-# 访问 http://localhost:3001/admin
+# Open http://localhost:3001/admin
 ```
 
-在浏览器中直接编辑分类、事件内容，点击「保存」后再点「▶ 应用数据」即可。
+Edit categories and event content directly in the browser, click **Save**, then click **▶ Apply data**. The admin UI preserves bilingual fields and writes them back into `manage/events.js`.
 
-### 方式 B：直接编辑文件 + CLI
+### Option B: Edit files directly + CLI
 
-> 修改配置文件 → 运行脚本 → 刷新浏览器
+> Edit config files → run the script → refresh the browser
 
 ```
 manage/catalog.js   ─┐
@@ -109,11 +129,11 @@ resources/videos/   ─┘
 node manage/generate.js
 ```
 
-无需安装任何依赖，直接运行。若脚本运行失败（或尚未运行），页面会自动回退至 `milestones-data-default.js`。输出示例：
+No dependencies need to be installed — run it directly. If the script fails (or has not yet been run), the page automatically falls back to `milestones-data-default.js`. Example output:
 
 ```
-✓ 生成完成：milestones-data.js
-  共 5 个分类，21 个事件
+✓ Generated: milestones-data.js
+  5 categories, 21 events total
 ```
 
 ### Content assistance checks
@@ -134,97 +154,127 @@ Related artifacts:
 
 ---
 
-### 文件 A：`manage/catalog.js` — 展示目录
+### File A: `manage/catalog.js` — display catalog
 
-控制**展示哪些分类、哪些事件、以及展示顺序**。
+Controls **which categories and events are shown, and in what order**.
 
 ```javascript
 module.exports = {
   categories: [
     {
-      name: "AI创世纪 (1950s-1970s)",   // 完整分类名
-      subtitle: "AI创世纪",              // 页面显示用的短标题
+      // Both `name` and `subtitle` are bilingual objects.
+      name: {
+        en: "Genesis of AI (1950s-1970s)",   // Full category name
+        zh: "AI创世纪 (1950s-1970s)"
+      },
+      subtitle: {
+        en: "Genesis of AI",                  // Short title shown on the page
+        zh: "AI创世纪"
+      },
       events: [
-        "1956-dartmouth",               // 事件 key，需在 events.js 中存在
+        "1956-dartmouth",                     // Event key — must exist in events.js
         "1957-perceptron",
-        "1969-ai-winter",
+        "1969-ai-winter"
       ]
     },
-    // ... 更多分类
+    // ... more categories
   ]
 };
 ```
 
-**当前分类（4个，共21个事件）：**
+**Current categories (4 categories, 21 events):**
 
-| 分类 | 事件数 | 时间跨度 |
-|------|--------|---------|
-| AI创世纪 | 3 | 1950s–1970s |
-| 神经网络复兴 | 4 | 1980s–2000s |
-| 深度学习与范式归一 | 7 | 2010s–2020s |
-| 大模型与科学智能 | 7 | 2018–2025 |
+| Category | Events | Timespan |
+|----------|--------|----------|
+| Genesis of AI | 3 | 1950s–1970s |
+| Neural Networks and Connectionism | 4 | 1980s–2000s |
+| Deep Learning and Unified Paradigms | 7 | 2010s–2020s |
+| Large Models and Scientific Intelligence | 7 | 2018–2025 |
 
 ---
 
-### 文件 B：`manage/events.js` — 事件内容
+### File B: `manage/events.js` — event content
 
-每个事件 key 对应一个完整的内容对象：
+Each event key corresponds to a complete content object. Text fields accept either a plain string (treated as Chinese) or a bilingual object `{ zh, en }`:
 
 ```javascript
 module.exports = {
   "1956-dartmouth": {
     year: 1956,
-    title: "达特茅斯会议",
+    title: { zh: "达特茅斯会议", en: "Dartmouth Workshop" },
 
     location: {
-      name: "达特茅斯学院",
-      country: "美国，新罕布什尔州",
-      coordinates: [43.7044, -72.2887]   // [纬度, 经度]
+      name: { zh: "达特茅斯学院", en: "Dartmouth College" },
+      country: { zh: "美国，新罕布什尔州", en: "Hanover, New Hampshire, USA" },
+      coordinates: [43.7044, -72.2887]   // [latitude, longitude]
     },
 
-    description: `详细描述文字，支持 HTML 标签。`,
+    description: { zh: `中文详细描述，支持 HTML。`, en: `English description, HTML allowed.` },
 
     figures: [
-      { name: "John McCarthy", role: "会议发起人" },
-      { name: "Marvin Minsky", role: "联合发起人" }
+      { name: "John McCarthy", role: { zh: "会议发起人", en: "Workshop organizer" } },
+      { name: "Marvin Minsky", role: { zh: "联合发起人", en: "Co-organizer" } }
     ],
 
-    commentaryVideo: "评论视频 URL（.mp4 格式）",
+    commentaryVideo: "URL of the commentary video (.mp4)",
 
-    quoteText: "引言正文\n支持换行（\\n 会转为 <br>）",
-    quotePage: "— 引用来源",
+    quoteText: { zh: "引言正文\n支持换行", en: "Quote text\nNewlines become <br>" },
+    quotePage: "— Citation source",
 
     images: [
       "resources/images/1956-dartmouth/photo1.jpg",
     ],
 
-    videos: ["dQw4w9WgXcQ"],   // YouTube 视频 ID，需在 resources/videos/ 中有对应 JSON
+    videos: ["dQw4w9WgXcQ"],   // YouTube video ID — must have matching JSON in resources/videos/
   },
 
-  // ... 更多事件
+  // ... more events
 };
 ```
 
-**字段说明：**
+**Field reference:**
 
-| 字段 | 类型 | 说明 |
-|------|------|------|
-| `year` | number | 年份 |
-| `title` | string | 事件标题 |
-| `location` | object | 地点名、国家、经纬度坐标 |
-| `description` | string | 详细描述，支持 HTML |
-| `figures` | array | 关键人物列表 `[{name, role}]` |
-| `commentaryVideo` | string | 讲解视频 URL（.mp4） |
-| `quoteText` | string | 引言文字，`\n` 自动转 `<br>` |
-| `quotePage` | string | 引言来源/归属 |
-| `images` | array | 图片相对路径列表 |
-| `videos` | array | YouTube 视频 ID 列表（需有对应 JSON 元数据） |
+| Field | Type | Description |
+|-------|------|-------------|
+| `year` | number | Year |
+| `title` | string \| `{zh, en}` | Event title |
+| `location` | object | Place name, country, latitude/longitude coordinates |
+| `description` | string \| `{zh, en}` | Detailed description; HTML allowed |
+| `figures` | array | Key figures `[{name, role}]` |
+| `commentaryVideo` | string | Commentary video URL (.mp4) |
+| `quoteText` | string \| `{zh, en}` | Quote text; `\n` becomes `<br>` automatically |
+| `quotePage` | string | Quote source / attribution |
+| `images` | array | List of relative image paths |
+| `videos` | array | List of YouTube video IDs (matching JSON metadata required) |
 
 ---
 
-### 视频元数据：`resources/videos/{key}.json`
+### Figure avatars: `manage/figure-avatars.js`
 
-每个事件的 YouTube 视频元数据单独存放，格式：
+A canonical registry of portraits used in chapter data. Each entry maps a figure's name to a local avatar image and optional metadata:
+
+```javascript
+"Alec Radford": {
+  type: "person",
+  status: "ready",
+  wikipediaTitle: "",
+  avatar: "resources/images/figures/alec-radford.png",
+  note: "Source notes for future maintenance."
+}
+```
+
+`manage/generate.js` consults this registry to fill in avatars across events. To audit which figures are missing portraits or notes, run:
+
+```bash
+node scripts/report-figure-avatars.js
+# Output: manage/figure-avatar-report.md
+```
+
+---
+
+### Video metadata: `resources/videos/{key}.json`
+
+YouTube video metadata for each event is stored in its own file. Format:
 
 ```json
 {
@@ -233,8 +283,8 @@ module.exports = {
       "id": "dQw4w9WgXcQ",
       "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       "embed_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "title": "视频标题",
-      "channel": "频道名",
+      "title": "Video title",
+      "channel": "Channel name",
       "duration": "10:23",
       "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
       "source": "YouTube"
@@ -243,58 +293,70 @@ module.exports = {
 }
 ```
 
-生成脚本会按 `events.js` 中的视频 ID 从对应 JSON 中查找并写入输出。
+The generator looks up each video ID listed in `events.js` and writes the matched metadata into the output.
 
 ---
 
-## 文件结构
+## File Structure
 
 ```
 AI-History-Show/
-├── index.html                   # 主展示页面（Three.js 地球 + 里程碑展示）
+├── index.html                   # Adaptive entry (Three.js globe + milestone view)
+├── dual-screen.html             # Fixed dual-screen entry
 │
-├── milestones-data.js           # ⚠️ 自动生成，请勿手动编辑（generate.js 输出）
-├── milestones-data-default.js   # 默认兜底数据（generate.js 失败时自动回退）
+├── milestones-data.js           # ⚠️ Auto-generated; do not hand-edit (output of generate.js)
+├── milestones-data-default.js   # Default fallback data (used when generate.js fails)
 │
-├── manage/                      # 内容管理目录
-│   ├── catalog.js               # 文件A：分类与事件目录
-│   ├── events.js                # 文件B：每个事件的详细内容
-│   ├── generate.js              # 生成脚本（无依赖，直接运行）
-│   ├── server.js                # 可视化管理服务器（node manage/server.js）
-│   └── admin.html               # 管理页面（由 server.js 提供）
+├── manage/                      # Content management directory
+│   ├── catalog.js               # File A: category and event catalog
+│   ├── events.js                # File B: per-event content
+│   ├── figure-avatars.js        # Canonical figure-avatar registry
+│   ├── generate.js              # Generator script (no dependencies)
+│   ├── server.js                # Visual admin server (node manage/server.js)
+│   └── admin.html               # Admin page (served by server.js)
 │
-├── shared/                      # 单屏/双屏共用前端逻辑
-├── scripts/                     # 本地校验脚本
+├── shared/                      # Shared frontend logic across single/dual screen
+│   ├── i18n.js                  # Bilingual dictionary and runtime locale switching
+│   ├── milestone-view.js        # Milestone rendering
+│   ├── layout-router.js         # Adaptive single/dual-screen routing
+│   ├── swipe-navigation.js      # Touch swipe paging
+│   └── utils.js
+│
+├── scripts/                     # Local verification and reporting scripts
+│   ├── test-layout-router.js
+│   ├── test-swipe-navigation.js
+│   └── report-figure-avatars.js
 │
 ├── resources/
-│   ├── images/                  # 事件图片（按事件 key 分文件夹）
-│   └── videos/                  # YouTube 视频元数据 JSON（每个事件一个文件）
+│   ├── images/                  # Event images (subfolders per event key)
+│   └── videos/                  # YouTube metadata JSON (one file per event)
 │
-├── DEPLOYMENT.md                # 部署指南（Nginx / Gitee Pages）
-└── README.md                    # 本文件
+├── DEPLOYMENT.md                # Deployment guide (Nginx / Gitee Pages)
+└── README.md                    # This file
 ```
 
 ---
 
-## 功能特性
+## Features
 
-- **3D 地球**：Three.js 渲染，自动定位到当前事件的地理坐标
-- **页面切换**：按钮或键盘方向键（`←` / `→`）
-- **双屏展陈自动翻页**：`dual-screen.html` 支持“开始/停止自动播放”，默认关闭，开启后每 10 秒循环翻页
-- **视频播放**：内嵌 YouTube 视频 + 本地讲解视频
-- **图片浏览**：点击进入全屏，支持左右切换（`←` / `→` / `Esc`）
-- **响应式**：适配大屏（4K/2K/1080p）与移动端
-
----
-
-## 技术栈
-
-- **纯前端**：HTML5 + CSS3 + JavaScript ES6+，无构建工具、无前端运行时 npm 依赖
-- **Three.js**（CDN 加载）：3D 地球渲染
-- **Node.js**（仅用于内容生成脚本）：运行 `manage/generate.js`
+- **3D globe**: Three.js rendering, auto-locates to the geographic coordinates of the current event
+- **Bilingual UI**: Switch between Chinese and English at any time; the choice persists across sessions
+- **Page navigation**: Buttons or keyboard arrows (`←` / `→`)
+- **Dual-screen auto paging**: `dual-screen.html` supports "Start/Stop auto play" — off by default; once enabled, pages cycle every 10 seconds
+- **Video playback**: Embedded YouTube videos plus local commentary videos
+- **Image viewer**: Click to enter fullscreen, navigate with `←` / `→` / `Esc`
+- **Responsive**: Adapts to large screens (4K/2K/1080p) and mobile devices
 
 ---
 
-## 许可证
+## Tech Stack
+
+- **Pure frontend**: HTML5 + CSS3 + JavaScript ES6+, no build tool and no runtime npm dependencies on the frontend
+- **Three.js** (loaded via CDN): 3D globe rendering
+- **Node.js** (used only for content generation): runs `manage/generate.js`
+
+---
+
+## License
 
 Apache License 2.0

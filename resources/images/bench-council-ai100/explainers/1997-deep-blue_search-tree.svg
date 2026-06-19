@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">Chess search tree</text>
+  <circle cx="470" cy="120" r="34" fill="#60a5fa"/><circle cx="300" cy="230" r="28" fill="#f59e0b"/><circle cx="470" cy="230" r="28" fill="#22c55e"/><circle cx="640" cy="230" r="28" fill="#f59e0b"/><circle cx="220" cy="350" r="22" fill="#ef4444"/><circle cx="300" cy="350" r="22" fill="#22c55e"/><circle cx="560" cy="350" r="22" fill="#ef4444"/><circle cx="640" cy="350" r="22" fill="#22c55e"/><path d="M450 148L318 210M470 154v72M492 148l118 92M292 256l-58 88M306 256l-6 72M632 256l-58 88M646 256l-6 72" stroke="#f8fafc" stroke-width="5"/><text x="96" y="438" fill="#dbeafe" font-family="Arial" font-size="24">alpha-beta pruning trims losing branches</text>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>
