@@ -56,6 +56,10 @@
     return /\/architecture\//i.test(asString(imagePath)) || /_architecture_/i.test(asString(imagePath));
   }
 
+  function hasExplainerSignal(imagePath) {
+    return /\/explainers?\//i.test(asString(imagePath)) || /_explainer_/i.test(asString(imagePath));
+  }
+
   function hasDocumentSignal(imagePath) {
     return (
       /\/papers\//i.test(asString(imagePath)) ||
@@ -102,6 +106,14 @@
       subcaption = localizedText('相关研究者照片', 'Researcher photo');
       ruleId = 'path-people';
       matchedSignals.push('/people/', 'portrait');
+    } else if (hasExplainerSignal(pathValue)) {
+      caption = localizedText('概念示意', 'Concept diagram');
+      subcaption = localizedText(
+        title ? `${title} 概念示意图` : '概念示意图',
+        titleEn ? `${titleEn} concept diagram` : 'Concept diagram'
+      );
+      ruleId = 'path-explainer';
+      matchedSignals.push('/explainers/', '_explainer_');
     } else if (hasArchitectureSignal(pathValue)) {
       caption = localizedText('结构示意', 'Architecture');
       subcaption = localizedText(

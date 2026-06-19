@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">GAN adversarial loop</title>
+  <desc id="desc">Noise enters a generator, fake samples are judged by a discriminator against real data.</desc>
+  <rect width="640" height="360" rx="24" fill="#0f172a"/>
+  <text x="40" y="54" fill="#f59e0b" font-family="Arial" font-size="28" font-weight="700">generator vs discriminator</text>
+  <rect x="58" y="136" width="112" height="70" rx="14" fill="#1e3a8a" stroke="#93c5fd" stroke-width="4"/>
+  <text x="114" y="178" fill="#dbeafe" text-anchor="middle" font-family="Arial" font-size="18">noise</text>
+  <rect x="228" y="116" width="142" height="110" rx="18" fill="#14532d" stroke="#86efac" stroke-width="4"/>
+  <text x="299" y="166" fill="#dcfce7" text-anchor="middle" font-family="Arial" font-size="19">generator</text>
+  <text x="299" y="190" fill="#dcfce7" text-anchor="middle" font-family="Arial" font-size="15">fake sample</text>
+  <rect x="452" y="116" width="142" height="110" rx="18" fill="#7f1d1d" stroke="#fca5a5" stroke-width="4"/>
+  <text x="523" y="166" fill="#fee2e2" text-anchor="middle" font-family="Arial" font-size="19">discriminator</text>
+  <text x="523" y="190" fill="#fee2e2" text-anchor="middle" font-family="Arial" font-size="15">real or fake?</text>
+  <path d="M170 171H228M370 171H452M523 226C500 288 306 304 270 228" fill="none" stroke="#f8fafc" stroke-width="5"/>
+  <text x="396" y="300" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="17">feedback improves both players</text>
+</svg>

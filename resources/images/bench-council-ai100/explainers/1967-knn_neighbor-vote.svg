@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="KNN nearest-neighbor vote explainer">
+  <rect width="720" height="420" rx="24" fill="#0f172a"/>
+  <text x="36" y="54" fill="#f59e0b" font-family="Arial, sans-serif" font-size="24" font-weight="700">nearest-neighbor vote</text>
+  <g stroke="#334155" stroke-width="1">
+    <path d="M80 90H660M80 150H660M80 210H660M80 270H660M80 330H660"/>
+    <path d="M120 70V360M220 70V360M320 70V360M420 70V360M520 70V360M620 70V360"/>
+  </g>
+  <circle cx="382" cy="210" r="88" fill="none" stroke="#f8fafc" stroke-width="3" stroke-dasharray="10 8"/>
+  <circle cx="382" cy="210" r="14" fill="#f8fafc"/>
+  <text x="400" y="205" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="15">query</text>
+  <g fill="#60a5fa">
+    <circle cx="312" cy="170" r="13"/><circle cx="340" cy="248" r="13"/><circle cx="452" cy="176" r="13"/><circle cx="210" cy="126" r="13"/><circle cx="180" cy="292" r="13"/>
+  </g>
+  <g fill="#f97316">
+    <rect x="432" y="246" width="26" height="26" rx="6"/><rect x="500" y="222" width="26" height="26" rx="6"/><rect x="546" y="126" width="26" height="26" rx="6"/><rect x="248" y="304" width="26" height="26" rx="6"/>
+  </g>
+  <path d="M382 210L312 170M382 210L340 248M382 210L452 176M382 210L445 259" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round"/>
+  <rect x="470" y="300" width="168" height="54" rx="12" fill="#111827" stroke="#64748b"/>
+  <text x="554" y="322" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="14">k = 4</text>
+  <text x="554" y="344" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="15">majority label wins</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Segment Anything prompt-to-mask flow</title>
+  <desc id="desc">Point and box prompts guide a mask decoder over reusable image features.</desc>
+  <rect width="640" height="360" rx="24" fill="#0f172a"/>
+  <text x="40" y="54" fill="#f59e0b" font-family="Arial" font-size="28" font-weight="700">promptable segmentation</text>
+  <rect x="64" y="108" width="170" height="150" rx="18" fill="#1e3a8a" stroke="#93c5fd" stroke-width="4"/>
+  <path d="M94 226l42-50 28 24 30-48 24 74z" fill="#22c55e"/><circle cx="126" cy="146" r="16" fill="#f59e0b"/>
+  <circle cx="152" cy="184" r="8" fill="#ef4444" stroke="#fee2e2" stroke-width="3"/>
+  <rect x="120" y="138" width="78" height="82" rx="6" fill="none" stroke="#fde68a" stroke-width="5" stroke-dasharray="8 6"/>
+  <rect x="310" y="124" width="108" height="118" rx="16" fill="#111827" stroke="#64748b" stroke-width="4"/>
+  <text x="364" y="174" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="17">mask</text>
+  <text x="364" y="198" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="17">decoder</text>
+  <path d="M492 122C562 138 578 214 520 246C466 276 426 220 446 170C454 150 470 132 492 122Z" fill="#22c55e" opacity=".78" stroke="#86efac" stroke-width="5"/>
+  <path d="M234 183H310M418 183H456" stroke="#f8fafc" stroke-width="5"/>
+  <text x="512" y="286" fill="#e5e7eb" text-anchor="middle" font-family="Arial" font-size="18">object mask</text>
+</svg>

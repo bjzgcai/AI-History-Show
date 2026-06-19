@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">U-shaped encoder-decoder</title>
+  <desc id="desc">U 形编码器-解码器</desc>
+  <rect width="1200" height="720" fill="#101827"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <text x="90" y="120" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">U-shaped encoder-decoder</text>
+  <text x="90" y="164" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">U 形编码器-解码器</text>
+  <path d="M170 200 L430 520 H770 L1030 200" fill="none" stroke="#f8fafc" stroke-width="12"/><path d="M250 220 C500 160 700 160 950 220" fill="none" stroke="#f59e0b" stroke-width="8" stroke-dasharray="18 16"/><rect x="170" y="190" width="82" height="58" rx="10" fill="#0f766e"/><rect x="880" y="190" width="82" height="58" rx="10" fill="#7c2d12"/><rect x="275" y="270" width="82" height="58" rx="10" fill="#0f766e"/><rect x="775" y="270" width="82" height="58" rx="10" fill="#7c2d12"/><rect x="380" y="350" width="82" height="58" rx="10" fill="#0f766e"/><rect x="670" y="350" width="82" height="58" rx="10" fill="#7c2d12"/><rect x="485" y="430" width="82" height="58" rx="10" fill="#0f766e"/><rect x="565" y="430" width="82" height="58" rx="10" fill="#7c2d12"/>
+  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Architecture · local redraw from source material</text>
+</svg>

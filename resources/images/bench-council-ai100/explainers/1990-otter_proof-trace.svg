@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Otter proof trace</title>
+  <desc id="desc">A terminal-style proof log showing clause selection, inference, simplification, and contradiction.</desc>
+  <rect width="1200" height="720" fill="#020617"/>
+  <rect x="74" y="58" width="1052" height="604" rx="22" fill="#030712" stroke="#1f2937" stroke-width="5"/>
+  <rect x="74" y="58" width="1052" height="58" rx="22" fill="#111827"/>
+  <circle cx="116" cy="88" r="10" fill="#ef4444"/>
+  <circle cx="150" cy="88" r="10" fill="#f59e0b"/>
+  <circle cx="184" cy="88" r="10" fill="#22c55e"/>
+  <text x="226" y="96" fill="#d1d5db" font-family="Consolas, 'Courier New', monospace" font-size="22" font-weight="700">otter proof.log</text>
+
+  <text x="116" y="164" fill="#a7f3d0" font-family="Consolas, 'Courier New', monospace" font-size="24">OTTER 3.3: given-clause loop started</text>
+  <text x="116" y="214" fill="#93c5fd" font-family="Consolas, 'Courier New', monospace" font-size="24">[pick] clause 17: P(a) | Q(a)</text>
+  <text x="116" y="264" fill="#fcd34d" font-family="Consolas, 'Courier New', monospace" font-size="24">[resolve] clause 17 with clause 31 =&gt; Q(a)</text>
+  <text x="116" y="314" fill="#fcd34d" font-family="Consolas, 'Courier New', monospace" font-size="24">[paramod] rewrite equal terms; weight = 8</text>
+  <text x="116" y="364" fill="#93c5fd" font-family="Consolas, 'Courier New', monospace" font-size="24">[index] retrieve partner clauses by term path</text>
+  <text x="116" y="414" fill="#fda4af" font-family="Consolas, 'Courier New', monospace" font-size="24">[simplify] Q(a), -Q(a) closes branch</text>
+
+  <rect x="116" y="472" width="968" height="86" rx="14" fill="#052e16" stroke="#22c55e" stroke-width="3"/>
+  <text x="150" y="526" fill="#bbf7d0" font-family="Consolas, 'Courier New', monospace" font-size="32" font-weight="800">PROOF FOUND: contradiction $F derived</text>
+
+  <text x="116" y="620" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">Source: OTTER 3.3 Reference Manual · terminal-style reconstruction of the proof trace</text>
+</svg>

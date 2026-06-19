@@ -69,6 +69,21 @@
       }
     },
     {
+      "id": "image-explainer-ai100-turing-test",
+      "task": "image_metadata",
+      "eventKey": "1950-turing-test",
+      "event": {
+        "year": 1950,
+        "title": "图灵测试"
+      },
+      "imagePath": "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png",
+      "expected": {
+        "caption": "概念示意",
+        "subcaption": "图灵测试 概念示意图",
+        "traceRuleId": "path-explainer"
+      }
+    },
+    {
       "id": "event-description-agentic-ai",
       "task": "event_description",
       "eventKey": "2023-agents",
