@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">AlphaZero self-play loop</title>
+  <desc id="desc">A local original diagram showing rules, self-play, MCTS, and policy-value training.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="64" y="64" width="832" height="512" rx="24" fill="#0f172a" stroke="#22c55e" stroke-width="3"/>
+  <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">AlphaZero self-play recipe</text>
+  <text x="96" y="160" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="18">rules only -> games -> search targets -> policy-value network</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <circle cx="250" cy="318" r="82" fill="#1d4ed8"/><text x="250" y="307" fill="#fff" font-size="25">Rules</text><text x="250" y="338" fill="#dbeafe" font-size="16">Go / chess / shogi</text>
+    <circle cx="480" cy="210" r="82" fill="#16a34a"/><text x="480" y="200" fill="#fff" font-size="25">Self-play</text><text x="480" y="230" fill="#dcfce7" font-size="16">new games</text>
+    <circle cx="710" cy="318" r="82" fill="#ea580c"/><text x="710" y="307" fill="#fff" font-size="25">MCTS</text><text x="710" y="338" fill="#ffedd5" font-size="16">improved moves</text>
+    <circle cx="480" cy="430" r="82" fill="#7c3aed"/><text x="480" y="419" fill="#fff" font-size="25">Network</text><text x="480" y="450" fill="#ede9fe" font-size="16">policy + value</text>
+  </g>
+  <g stroke="#f8fafc" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M324 284C366 246 394 228 411 220"/>
+    <path d="M558 226C600 246 629 266 653 286"/>
+    <path d="M671 382C631 410 594 425 560 430"/>
+    <path d="M401 430C360 416 326 394 296 360"/>
+  </g>
+  <g fill="#f8fafc">
+    <path d="M402 202l34 9-25 24z"/>
+    <path d="M644 264l31 18-31 16z"/>
+    <path d="M577 411l-25 23 34 7z"/>
+    <path d="M317 383l-32-15 30-19z"/>
+  </g>
+  <text x="96" y="548" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: step through one loop to see how search becomes training data.</text>
+</svg>

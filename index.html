@@ -6802,6 +6802,34 @@
                 );
             }
 
+            if (key === '1997-logistello') {
+                return buildBranchSvgFrame(
+                    'Logistello learning',
+                    'Logistello 学习',
+                    'Othello patterns tune search',
+                    '黑白棋模式调校搜索',
+                    `
+                        <rect class="svg-panel" x="44" y="80" width="126" height="126" rx="8"></rect>
+                        ${Array.from({ length: 8 }).map((_, row) => Array.from({ length: 8 }).map((__, col) => {
+                            const x = 54 + col * 14;
+                            const y = 90 + row * 14;
+                            const dark = (row + col) % 2 === 0;
+                            return `<rect class="${dark ? 'svg-cell-dark' : 'svg-cell-light'}" x="${x}" y="${y}" width="12" height="12" rx="2"></rect>`;
+                        }).join('')).join('')}
+                        <circle class="svg-dot-dark" cx="82" cy="118" r="8"></circle>
+                        <circle class="svg-dot-light" cx="110" cy="132" r="8"></circle>
+                        <circle class="svg-dot-dark" cx="124" cy="146" r="8"></circle>
+                        <circle class="svg-dot" cx="96" cy="160" r="8"></circle>
+                        <path class="svg-line" d="M178 142 C206 116 224 102 252 92"></path>
+                        <path class="svg-line-soft" d="M178 142 C210 148 230 154 258 166"></path>
+                        <rect class="svg-panel-strong" x="244" y="72" width="82" height="42" rx="10"></rect>
+                        <rect class="svg-panel" x="250" y="148" width="76" height="46" rx="10"></rect>
+                        <text class="svg-label-soft" x="258" y="98">${branchSvgLabel('Weights', '权重')}</text>
+                        <text class="svg-label-soft" x="264" y="175">${branchSvgLabel('ProbCut', '概率剪枝')}</text>
+                    `
+                );
+            }
+
             if (key === '1997-deep-blue') {
                 return buildBranchSvgFrame(
                     'Deep Blue search',
@@ -6825,6 +6853,31 @@
                         <circle class="svg-panel-strong" cx="296" cy="134" r="30"></circle>
                         <path class="svg-line" d="M278 152 L314 116"></path>
                         <text class="svg-label-soft" x="274" y="178">${branchSvgLabel('Prune', '\u526a\u679d')}</text>
+                    `
+                );
+            }
+
+            if (key === '2000s-alphacat') {
+                return buildBranchSvgFrame(
+                    'Xiangqi engine',
+                    '象棋引擎',
+                    'cannon screens and tactical search',
+                    '炮架、九宫与战术搜索',
+                    `
+                        <rect class="svg-panel" x="40" y="72" width="132" height="148" rx="8"></rect>
+                        ${Array.from({ length: 9 }).map((_, col) => `<path class="svg-line-soft" d="M54 ${88 + col * 14} H158"></path>`).join('')}
+                        ${Array.from({ length: 7 }).map((_, col) => `<path class="svg-line-soft" d="M${54 + col * 17} 88 V200"></path>`).join('')}
+                        <path class="svg-line" d="M88 88 L124 124 M124 88 L88 124 M88 164 L124 200 M124 164 L88 200"></path>
+                        <circle class="svg-dot-dark" cx="71" cy="102" r="10"></circle>
+                        <circle class="svg-dot" cx="122" cy="144" r="10"></circle>
+                        <circle class="svg-dot-light" cx="139" cy="172" r="10"></circle>
+                        <text class="svg-label-soft" x="61" y="233">${branchSvgLabel('cannon screen', '炮架')}</text>
+                        <path class="svg-line" d="M176 146 H222"></path>
+                        <rect class="svg-panel-strong" x="222" y="88" width="98" height="44" rx="10"></rect>
+                        <rect class="svg-panel" x="222" y="154" width="98" height="44" rx="10"></rect>
+                        <text class="svg-label-soft" x="240" y="116">${branchSvgLabel('Minimax', '极小极大')}</text>
+                        <text class="svg-label-soft" x="243" y="182">${branchSvgLabel('Eval map', '评估矩阵')}</text>
+                        <path class="svg-line-soft" d="M270 132 V154"></path>
                     `
                 );
             }
@@ -6959,6 +7012,30 @@
                         <path class="svg-line-soft" d="M180 180 L180 74 M180 180 L252 94 M180 180 L286 150 M180 180 L226 210 M180 180 L134 210 M180 180 L74 150"></path>
                         <text class="svg-label" x="140" y="101">${branchSvgLabel('Six seats', '\u516d\u5ea7')}</text>
                         <text class="svg-label-soft" x="128" y="235">${branchSvgLabel('Shared policy', '\u5171\u4eab\u7b56\u7565')}</text>
+                    `
+                );
+            }
+
+            if (key === '2019-suphx') {
+                return buildBranchSvgFrame(
+                    'Suphx mahjong',
+                    'Suphx 麻将',
+                    'hidden tiles and reward prediction',
+                    '隐藏牌与奖励预测',
+                    `
+                        <rect class="svg-panel" x="42" y="92" width="126" height="88" rx="16"></rect>
+                        ${[0, 1, 2, 3, 4].map((i) => `<rect class="${i === 2 ? 'svg-panel-strong' : 'svg-panel'}" x="${58 + i * 20}" y="116" width="16" height="42" rx="4"></rect>`).join('')}
+                        <rect class="svg-dot-dark" x="78" y="190" width="18" height="28" rx="4"></rect>
+                        <rect class="svg-dot-light" x="104" y="190" width="18" height="28" rx="4"></rect>
+                        <text class="svg-label-soft" x="61" y="70">${branchSvgLabel('visible discards', '公开弃牌')}</text>
+                        <path class="svg-line" d="M174 138 C204 110 222 96 250 92"></path>
+                        <path class="svg-line-soft" d="M174 138 C206 146 226 158 252 178"></path>
+                        <rect class="svg-panel-strong" x="248" y="72" width="86" height="42" rx="10"></rect>
+                        <rect class="svg-panel" x="248" y="158" width="86" height="50" rx="10"></rect>
+                        <text class="svg-label-soft" x="262" y="98">${branchSvgLabel('Policy', '策略')}</text>
+                        <text class="svg-label-soft" x="260" y="181">${branchSvgLabel('Reward', '奖励')}</text>
+                        <text class="svg-label-soft" x="268" y="198">${branchSvgLabel('risk', '风险')}</text>
+                        <circle class="svg-dot" cx="174" cy="138" r="12"></circle>
                     `
                 );
             }
