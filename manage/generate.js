@@ -19,6 +19,7 @@ const RESEARCH_CANDIDATES_PATH = path.join(ROOT, 'resources', 'research-candidat
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
 const QUIZ_CATALOG_PATH = path.join(__dirname, 'quizzes.js');
 const QUIZ_STORYLINE_ID = 'bench-council-ai100';
+const QUIZ_STORYLINE_IDS = new Set([QUIZ_STORYLINE_ID, 'gaming-ai']);
 const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
@@ -163,7 +164,7 @@ function appendMilestonesFromGroup(group, groupKind) {
         } : null);
         const storyline = ev.storyline || groupStoryline || null;
         const storylineId = typeof storyline === 'string' ? storyline : (storyline && storyline.id) || '';
-        const quizzes = storylineId === QUIZ_STORYLINE_ID ? selectQuizzes(key, ev) : [];
+        const quizzes = QUIZ_STORYLINE_IDS.has(storylineId) ? selectQuizzes(key, ev) : [];
         const milestone = {
             id: `${MILESTONE_ID_PREFIX}${key}`,
             year: ev.year,

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">MuZero learned model explainer</title>
+  <desc id="desc">A local original diagram showing observation encoding, latent dynamics, reward prediction, and planning.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="64" y="64" width="832" height="512" rx="24" fill="#162033" stroke="#60a5fa" stroke-width="3"/>
+  <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">MuZero: planning with a learned model</text>
+  <text x="96" y="160" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="18">observation -> latent state -> imagined rewards, values, policies</text>
+  <g transform="translate(112 246)" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <rect width="132" height="132" rx="20" fill="#0f172a" stroke="#94a3b8" stroke-width="3"/>
+    <text x="66" y="60" fill="#f8fafc" font-size="22">pixels</text>
+    <text x="66" y="92" fill="#dbeafe" font-size="17">or board</text>
+  </g>
+  <path d="M266 312H350" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M332 292L360 312L332 332" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(382 220)" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <circle cx="96" cy="92" r="86" fill="#1d4ed8"/>
+    <text x="96" y="86" fill="#f8fafc" font-size="25">latent</text>
+    <text x="96" y="118" fill="#dbeafe" font-size="18">state</text>
+    <path d="M58 168C28 224 52 270 104 278C162 286 204 238 184 184" stroke="#93c5fd" stroke-width="6" fill="none" stroke-dasharray="12 10"/>
+    <text x="116" y="250" fill="#dbeafe" font-size="18">dynamics</text>
+  </g>
+  <path d="M578 312H660" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M642 292L670 312L642 332" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(696 206)" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <rect width="142" height="66" rx="16" fill="#16a34a"/><text x="71" y="40" fill="#fff" font-size="22">policy</text>
+    <rect y="94" width="142" height="66" rx="16" fill="#7c3aed"/><text x="71" y="134" fill="#fff" font-size="22">value</text>
+    <rect y="188" width="142" height="66" rx="16" fill="#ea580c"/><text x="71" y="228" fill="#fff" font-size="22">reward</text>
+  </g>
+  <text x="96" y="548" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: compare rule-based simulation with the compact latent model used by search.</text>
+</svg>
