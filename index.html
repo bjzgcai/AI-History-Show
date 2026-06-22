@@ -4120,6 +4120,7 @@
         const POP_QUIZ_MOBILE_QUESTION_COUNT = 10;
         const POP_QUIZ_MOBILE_PUBLIC_URL = 'https://bjzgcai.github.io/AI-History-Show/?storyline=bench-council-ai100&quiz=mobile';
         const POP_QUIZ_MOBILE_QR_URL = 'resources/images/ui/ai100-pop-quiz-qr-v2.svg?v=20260608';
+        const COMPLETION_QUIZ_MIN_VIEW_MS = 15 * 1000;
         const GLOBE_TEXTURE_URLS = {
             water: `resources/textures/earth-water.png?v=${GLOBE_TEXTURE_VERSION}`,
             topo: `resources/textures/earth-topology.png?v=${GLOBE_TEXTURE_VERSION}`,
@@ -4215,6 +4216,7 @@
         let pendingQuizAction = null;
         let mobileQuizState = null;
         let idleAdvanceTimer = null;
+        let currentMilestoneViewedAt = Date.now();
         const vmCache = new Map();
         const imagePreloadCache = new Map();
         const completedQuizMilestoneKeys = new Set();
@@ -6677,6 +6679,7 @@
 
         function maybeOpenCompletionQuiz(onComplete) {
             if (!isTopAchievementStorylineActive()) return false;
+            if (Date.now() - currentMilestoneViewedAt < COMPLETION_QUIZ_MIN_VIEW_MS) return false;
             const vm = getVm(currentIndex);
             const quizKey = getCompletionQuizKey(vm);
             if (!quizKey || completedQuizMilestoneKeys.has(quizKey) || getQuizItems(vm).length === 0) {
@@ -8325,6 +8328,7 @@
 
         function renderPage(index) {
             const vm = getVm(index);
+            currentMilestoneViewedAt = Date.now();
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
             refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
