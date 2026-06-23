@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-14 04:47
+// 生成时间: 2026-06-23 19:35
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -3816,8 +3816,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols.",
@@ -3826,8 +3826,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Evaluation Logic",
-          "zh": "评估逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance.",
@@ -4214,8 +4214,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool.",
@@ -4224,8 +4224,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "API-Like Primitives",
-          "zh": "类 API 原语"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems.",
@@ -4605,8 +4605,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
@@ -4615,8 +4615,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Blog / API Materials",
-          "zh": "博客 / API 材料"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
@@ -4983,8 +4983,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Cook's 1971 STOC paper made Boolean satisfiability a canonical problem for comparing computational hardness. It showed that many different-looking problems can be connected by efficient reductions.",
@@ -4993,8 +4993,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Reduction Logic",
-          "zh": "归约逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The exhibit should emphasize the move from isolated hard problems to a shared map of hardness. If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently.",
@@ -5380,8 +5380,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "The 1971 Vapnik-Chervonenkis paper made generalization a mathematical question about uniform convergence across a whole class of events or hypotheses. Vapnik's 1995 book later synthesized the framework for statistical learning theory.",
@@ -5390,8 +5390,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Capacity Logic",
-          "zh": "容量逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The key display idea is the gap between fitting examples and performing on unseen data. VC dimension gives a way to reason about when model flexibility helps and when it becomes overfitting risk.",
@@ -5790,8 +5790,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition.",
@@ -5800,8 +5800,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Reasoning Logic",
-          "zh": "推理逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The display idea is proof search: start with a goal theorem, try symbolic transformations, and use heuristics to avoid blind enumeration. This makes reasoning visible as a sequence of choices.",
@@ -6174,8 +6174,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Papers",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases.",
@@ -6184,12 +6184,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Pattern Logic",
-          "zh": "模式逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
-          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears.",
-          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。"
+          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears. The key mechanism is Pattern-guided proof procedure, which links the source material to the visible demo behavior.",
+          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。 关键机制是模式引导证明过程，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -6597,8 +6597,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Papers",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage.",
@@ -6607,12 +6607,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "SAT Search",
-          "zh": "SAT 搜索"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
-          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible.",
-          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。"
+          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible. The key mechanism is SAT search with propagation, which links the source material to the visible demo behavior.",
+          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。 关键机制是带传播的 SAT 搜索，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -7011,7 +7011,7 @@ const milestones = [
         },
         "html": {
           "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly.",
-          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。"
+          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。 关键机制是一阶与二阶矩自适应更新，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -7901,7 +7901,7 @@ const milestones = [
         },
         "html": {
           "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates.",
-          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。"
+          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。 关键机制是基于种群的进化搜索，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -8852,8 +8852,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Object detection had made large accuracy gains with R-CNN, but external proposal generation made the pipeline slower and less elegant.",
-          "zh": "R-CNN 已经大幅提升目标检测精度，但外部候选区域生成让流水线变慢且不够统一。"
+          "en": "Object detection had made large accuracy gains with R-CNN, but external proposal generation made the pipeline slower and less elegant. This context helps viewers place Faster R-CNN in the technical problems and research priorities of its time.",
+          "zh": "R-CNN 已经大幅提升目标检测精度，但外部候选区域生成让流水线变慢且不够统一。 这段背景帮助观众把Faster R-CNN放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -9811,7 +9811,7 @@ const milestones = [
         },
         "html": {
           "en": "CART grows a tree by choosing splits that make child nodes more homogeneous. It then prunes the tree so the final model balances fit and simplicity.",
-          "zh": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。"
+          "zh": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。 关键机制是递归划分与剪枝，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -10275,7 +10275,7 @@ const milestones = [
         },
         "html": {
           "en": "At high temperature, the algorithm explores boldly. As the system cools, it increasingly commits to lower-cost states, imitating the settling of physical materials.",
-          "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。"
+          "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。 关键机制是带降温计划的概率搜索，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -11614,8 +11614,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The key move is refutation: assume the claim is false, then repeatedly resolve complementary literals until the empty clause appears.",
-          "zh": "关键动作是反驳：先假设结论为假，再不断归结互补文字，直到推出空子句。"
+          "en": "The key move is refutation: assume the claim is false, then repeatedly resolve complementary literals until the empty clause appears. The key mechanism is Clause refutation with unification, which links the source material to the visible demo behavior.",
+          "zh": "关键动作是反驳：先假设结论为假，再不断归结互补文字，直到推出空子句。 关键机制是带合一的子句反驳，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -12049,8 +12049,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "By the early 1970s, symbolic AI needed languages that could express rules, relations, and search without burying them under procedural code.",
-          "zh": "到 1970 年代初，符号 AI 需要能表达规则、关系和搜索的语言，而不是把它们埋在过程式代码里。"
+          "en": "By the early 1970s, symbolic AI needed languages that could express rules, relations, and search without burying them under procedural code. This context helps viewers place PROLOG in the technical problems and research priorities of its time.",
+          "zh": "到 1970 年代初，符号 AI 需要能表达规则、关系和搜索的语言，而不是把它们埋在过程式代码里。 这段背景帮助观众把PROLOG放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -12491,8 +12491,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue.",
-          "zh": "DOCTOR 脚本并不理解心理治疗；它把识别到的模式转成反问式提示，诱导用户继续说下去。"
+          "en": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue. The key mechanism is Pattern matching and scripted reflection, which links the source material to the visible demo behavior.",
+          "zh": "DOCTOR 脚本并不理解心理治疗；它把识别到的模式转成反问式提示，诱导用户继续说下去。 关键机制是模式匹配与脚本反射，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -12926,8 +12926,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The network updates units to reduce an energy function, so stored memories become stable attractors.",
-          "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。"
+          "en": "The network updates units to reduce an energy function, so stored memories become stable attractors. The key mechanism is Attractor dynamics and energy minimization, which links the source material to the visible demo behavior.",
+          "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。 关键机制是吸引子动力学与能量最小化，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -13359,8 +13359,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other.",
-          "zh": "核心思想是在训练时随机隐藏单元，使隐藏特征不能过度依赖彼此。"
+          "en": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other. The key mechanism is Randomly thinned networks for regularization, which links the source material to the visible demo behavior.",
+          "zh": "核心思想是在训练时随机隐藏单元，使隐藏特征不能过度依赖彼此。 关键机制是随机变薄网络进行正则化，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -13801,8 +13801,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass.",
-          "zh": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。"
+          "en": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass. The key mechanism is Single-shot grid-based object detection, which links the source material to the visible demo behavior.",
+          "zh": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。 关键机制是基于网格的单阶段目标检测，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -14230,8 +14230,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space.",
-          "zh": "模型要么由词预测上下文，要么由上下文预测词，从而迫使相关词占据向量空间的相近区域。"
+          "en": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space. The key mechanism is Skip-gram and CBOW neural word embeddings, which links the source material to the visible demo behavior.",
+          "zh": "模型要么由词预测上下文，要么由上下文预测词，从而迫使相关词占据向量空间的相近区域。 关键机制是Skip-gram 与 CBOW 神经词嵌入，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -14672,8 +14672,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution.",
-          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。"
+          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution. The key mechanism is Large-scale hierarchical image annotation, which links the source material to the visible demo behavior.",
+          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。 关键机制是大规模层级图像标注，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -15117,8 +15117,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. The key mechanism is Q-learning with convolutional networks, replay, and target networks, which links the source material to the visible demo behavior.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。 关键机制是结合卷积网络、经验回放与目标网络的 Q 学习，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -15559,8 +15559,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution.",
-          "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。"
+          "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution. The key mechanism is Bayesian topic model with Dirichlet priors, which links the source material to the visible demo behavior.",
+          "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。 关键机制是带 Dirichlet 先验的贝叶斯主题模型，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -15988,8 +15988,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene.",
-          "zh": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。"
+          "en": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene. The key mechanism is Blocks-world language understanding, which links the source material to the visible demo behavior.",
+          "zh": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。 关键机制是积木世界语言理解，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -16419,8 +16419,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. The key mechanism is Specialized chess search hardware, which links the source material to the visible demo behavior.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。 关键机制是专用国际象棋搜索硬件，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -16664,8 +16664,8 @@ const milestones = [
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
@@ -16850,8 +16850,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations.",
-          "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。"
+          "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations. The key mechanism is Structured slots with defaults and inheritance, which links the source material to the visible demo behavior.",
+          "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。 关键机制是带默认值和继承的槽结构，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -17279,8 +17279,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints.",
-          "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。"
+          "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints. The key mechanism is Rule-guided chemical structure inference, which links the source material to the visible demo behavior.",
+          "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。 关键机制是规则引导的化学结构推断，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -17688,8 +17688,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes.",
-          "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。"
+          "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes. This context helps viewers place SIFT in the technical problems and research priorities of its time.",
+          "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。 这段背景帮助观众把SIFT放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -17698,8 +17698,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor.",
-          "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。"
+          "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor. The key mechanism is Scale-invariant local features, which links the source material to the visible demo behavior.",
+          "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。 关键机制是尺度不变局部特征，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -18104,8 +18104,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data.",
-          "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。"
+          "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data. This context helps viewers place t-SNE in the technical problems and research priorities of its time.",
+          "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。 这段背景帮助观众把t-SNE放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -18114,8 +18114,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map.",
-          "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。"
+          "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map. The key mechanism is Neighbor-preserving nonlinear embedding, which links the source material to the visible demo behavior.",
+          "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。 关键机制是保持邻域的非线性嵌入，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -18532,8 +18532,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception.",
-          "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。"
+          "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception. This context helps viewers place Rosenblatt Perceptron in the technical problems and research priorities of its time.",
+          "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。 这段背景帮助观众把罗森布拉特 感知机放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -18542,8 +18542,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates.",
-          "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。"
+          "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates. The key mechanism is Linear threshold learning machine, which links the source material to the visible demo behavior.",
+          "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。 关键机制是线性阈值学习机，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -18964,8 +18964,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network.",
-          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。"
+          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network. The key mechanism is Layer-wise unsupervised pretraining, which links the source material to the visible demo behavior.",
+          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。 关键机制是逐层无监督预训练，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -19370,8 +19370,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. This context helps viewers place Temporal-Difference Update in the technical problems and research priorities of its time.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。 这段背景帮助观众把时序差分更新放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -19380,8 +19380,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. The key mechanism is Bootstrapped value prediction, which links the source material to the visible demo behavior.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。 关键机制是自举式价值预测，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -19799,8 +19799,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular.",
-          "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。"
+          "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular. The key mechanism is Directed acyclic graph plus conditional probabilities, which links the source material to the visible demo behavior.",
+          "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。 关键机制是有向无环图加条件概率，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -20227,8 +20227,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The prover repeatedly selects a promising clause, generates consequences through inference rules, and uses indexing and simplification to keep the search tractable.",
-          "zh": "证明器反复选择有希望的子句，用推理规则生成后果，并通过索引和化简让搜索保持可控。"
+          "en": "The prover repeatedly selects a promising clause, generates consequences through inference rules, and uses indexing and simplification to keep the search tractable. The key mechanism is Given-clause resolution and paramodulation, which links the source material to the visible demo behavior.",
+          "zh": "证明器反复选择有希望的子句，用推理规则生成后果，并通过索引和化简让搜索保持可控。 关键机制是given-clause 归结与参数调解，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -20675,8 +20675,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered.",
-          "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。"
+          "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered. This context helps viewers place IBM Watson in the technical problems and research priorities of its time.",
+          "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。 这段背景帮助观众把IBM Watson放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -21131,8 +21131,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. This context helps viewers place Christopher Strachey's Draughts in the technical problems and research priorities of its time.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。 这段背景帮助观众把克里斯托弗·斯特雷奇 的跳棋程序放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -21141,8 +21141,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. The key mechanism is Board-state search and evaluation, which links the source material to the visible demo behavior.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。 关键机制是棋盘状态搜索与评估，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -21587,8 +21587,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. This context helps viewers place Chinook in the technical problems and research priorities of its time.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。 这段背景帮助观众把Chinook 跳棋程序放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -21597,8 +21597,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The key mechanism is Alpha-beta search plus endgame databases, which links the source material to the visible demo behavior.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。 关键机制是alpha-beta 搜索加残局数据库，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -22040,8 +22040,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates.",
-          "zh": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。"
+          "en": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates. This context helps viewers place Pandemonium in the technical problems and research priorities of its time.",
+          "zh": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。 这段背景帮助观众把Pandemonium 感知架构放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -22050,8 +22050,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges.",
-          "zh": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。"
+          "en": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges. The key mechanism is Layered feature detection and voting, which links the source material to the visible demo behavior.",
+          "zh": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。 关键机制是分层特征检测与投票，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -22509,8 +22509,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing.",
-          "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。"
+          "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing. This context helps viewers place Cyc in the technical problems and research priorities of its time.",
+          "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。 这段背景帮助观众把Cyc 常识知识库放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -22519,8 +22519,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure.",
-          "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。"
+          "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure. The key mechanism is Large symbolic ontology and microtheories, which links the source material to the visible demo behavior.",
+          "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。 关键机制是大型符号本体与微理论，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -22965,8 +22965,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders.",
-          "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。"
+          "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders. This context helps viewers place XCON-R1 in the technical problems and research priorities of its time.",
+          "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。 这段背景帮助观众把XCON / R1 专家系统放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -22975,8 +22975,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration.",
-          "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。"
+          "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration. The key mechanism is OPS5 production-rule configuration, which links the source material to the visible demo behavior.",
+          "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。 关键机制是OPS5 产生式规则配置，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -23421,8 +23421,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Signal quantization and pattern analysis both needed compact representatives for many observations.",
-          "zh": "信号量化和模式分析都需要为大量观测找到紧凑代表。"
+          "en": "Signal quantization and pattern analysis both needed compact representatives for many observations. This context helps viewers place K-means in the technical problems and research priorities of its time.",
+          "zh": "信号量化和模式分析都需要为大量观测找到紧凑代表。 这段背景帮助观众把K-means 聚类放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -23431,8 +23431,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The algorithm repeatedly assigns each point to its closest centroid, then updates each centroid to the mean of its cluster.",
-          "zh": "算法反复把每个点分配给最近质心，再把每个质心更新为该簇的均值。"
+          "en": "The algorithm repeatedly assigns each point to its closest centroid, then updates each centroid to the mean of its cluster. The key mechanism is Alternating centroid optimization, which links the source material to the visible demo behavior.",
+          "zh": "算法反复把每个点分配给最近质心，再把每个质心更新为该簇的均值。 关键机制是交替质心优化，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -23887,8 +23887,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis.",
-          "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。"
+          "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis. This context helps viewers place DBSCAN in the technical problems and research priorities of its time.",
+          "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。 这段背景帮助观众把DBSCAN 密度聚类放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -23897,8 +23897,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability.",
-          "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。"
+          "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability. The key mechanism is Density reachability with epsilon and MinPts, which links the source material to the visible demo behavior.",
+          "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。 关键机制是基于 epsilon 与 MinPts 的密度可达，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -24356,8 +24356,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry.",
-          "zh": "图像分割与数据聚类需要能分离非凸群组的方法，而不假设簇是球形。"
+          "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry. This context helps viewers place Spectral Clustering in the technical problems and research priorities of its time.",
+          "zh": "图像分割与数据聚类需要能分离非凸群组的方法，而不假设簇是球形。 这段背景帮助观众把谱聚类放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -24366,8 +24366,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space.",
-          "zh": "该方法构建亲和图，从图拉普拉斯特征向量计算谱嵌入，再在嵌入空间中聚类或切分。"
+          "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space. The key mechanism is Graph Laplacian eigenvector embedding, which links the source material to the visible demo behavior.",
+          "zh": "该方法构建亲和图，从图拉普拉斯特征向量计算谱嵌入，再在嵌入空间中聚类或切分。 关键机制是图拉普拉斯特征向量嵌入，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
