@@ -234,6 +234,11 @@ function localizedTextEquals(a, b) {
   return SUPPORTED_LOCALES.every((locale) => localizedText(a, locale) === localizedText(b, locale));
 }
 
+function localizedDisplayValue(value) {
+  if (!isLocalizedText(value)) return localizedText(value);
+  return Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, localizedText(value, locale)]));
+}
+
 function loadAppliedMilestones() {
   const milestonePath = path.join(ROOT, 'milestones-data.js');
   if (!fs.existsSync(milestonePath)) return [];
@@ -319,11 +324,22 @@ function getEffectiveQuoteMeta(candidatesMap, key, ev, options = {}) {
 }
 
 function quoteMetaHasAnyValue(meta) {
-  return QUOTE_META_FIELDS.some((field) => String((meta || {})[field] || '').trim());
+  return QUOTE_META_FIELDS.some((field) => {
+    const value = (meta || {})[field];
+    if (isLocalizedText(value)) return SUPPORTED_LOCALES.some((locale) => localizedText(value, locale));
+    return String(value || '').trim();
+  });
 }
 
 function quoteMetaEquals(a, b) {
-  return QUOTE_META_FIELDS.every((field) => String((a || {})[field] || '').trim() === String((b || {})[field] || '').trim());
+  return QUOTE_META_FIELDS.every((field) => {
+    const left = (a || {})[field];
+    const right = (b || {})[field];
+    if (isLocalizedText(left) || isLocalizedText(right)) {
+      return SUPPORTED_LOCALES.every((locale) => localizedText(left, locale) === localizedText(right, locale));
+    }
+    return String(left || '').trim() === String(right || '').trim();
+  });
 }
 
 function extractQuoteMetaFromAttribution(attribution, options = {}) {
@@ -918,20 +934,23 @@ const routes = {
 
         // 引言文本和页码来源：分别比较，兼容旧版把 quotePage 拼进 quote HTML 的数据
         const evQuoteTextValue = getEffectiveQuoteText(quoteCandidates, key, ev.quoteText);
-        const evQuoteText = normalizeQuoteText(localizedText(evQuoteTextValue, 'en'));
-        const evQuotePage = localizedText(ev.quotePage, 'en');
+        const evQuoteText = isLocalizedText(evQuoteTextValue)
+          ? Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, normalizeQuoteText(localizedText(evQuoteTextValue, locale))]))
+          : normalizeQuoteText(evQuoteTextValue);
         const rebuildQuote = (text) => {
           if (!text) return '';
           const body = text.replace(/\n/g, '<br>');
           return `"${body}"`;
         };
+        const rebuildQuoteValue = (value) => isLocalizedText(value)
+          ? Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, rebuildQuote(localizedText(value, locale))]))
+          : rebuildQuote(value);
         const appliedQuoteState = extractAppliedQuoteState(applied);
-        const rebuiltQuote = rebuildQuote(evQuoteText);
-        if (rebuiltQuote !== appliedQuoteState.quote)
-          changes.quote = { from: appliedQuoteState.quote || '', quoteText: evQuoteText };
-        const appliedQuotePage = localizedText(appliedQuoteState.quotePage, 'en');
-        if (evQuotePage !== appliedQuotePage)
-          changes.quotePage = { from: appliedQuotePage || '', to: evQuotePage };
+        const rebuiltQuote = rebuildQuoteValue(evQuoteText);
+        if (!localizedTextEquals(rebuiltQuote, appliedQuoteState.quote))
+          changes.quote = { from: localizedDisplayValue(appliedQuoteState.quote || ''), quoteText: localizedDisplayValue(evQuoteText) };
+        if (!localizedTextEquals(ev.quotePage, appliedQuoteState.quotePage))
+          changes.quotePage = { from: localizedDisplayValue(appliedQuoteState.quotePage || ''), to: localizedDisplayValue(ev.quotePage) };
 
         const evQuoteMeta = getEffectiveQuoteMeta(quoteCandidates, key, ev, { preserveKeys: true });
         const appliedHasStructuredQuoteMeta = Boolean(applied.quoteMeta && typeof applied.quoteMeta === 'object');
@@ -939,14 +958,16 @@ const routes = {
           ? normalizeEditableQuoteMeta(applied.quoteMeta, { preserveKeys: true })
           : extractQuoteMetaFromAttribution(applied.quoteAttribution, { preserveKeys: true });
         const evQuoteAttribution = formatQuoteAttribution(evQuoteMeta);
-        const appliedQuoteAttribution = String(applied.quoteAttribution || '').trim() || formatQuoteAttribution(appliedQuoteMeta);
-        if (
-          evQuoteAttribution !== appliedQuoteAttribution ||
-          (appliedHasStructuredQuoteMeta && !quoteMetaEquals(evQuoteMeta, appliedQuoteMeta))
-        ) {
+        const appliedQuoteAttribution = localizedText(applied.quoteAttribution)
+          ? applied.quoteAttribution
+          : formatQuoteAttribution(appliedQuoteMeta);
+        const quoteMetaChanged = appliedHasStructuredQuoteMeta
+          ? !quoteMetaEquals(evQuoteMeta, appliedQuoteMeta)
+          : !localizedTextEquals(evQuoteAttribution, appliedQuoteAttribution);
+        if (quoteMetaChanged) {
           changes.quoteMeta = {
-            fromAttribution: appliedQuoteAttribution,
-            toAttribution: evQuoteAttribution,
+            fromAttribution: localizedDisplayValue(appliedQuoteAttribution),
+            toAttribution: localizedDisplayValue(evQuoteAttribution),
             from: appliedHasStructuredQuoteMeta ? appliedQuoteMeta : null,
             to: evQuoteMeta,
           };
@@ -1090,9 +1111,13 @@ const routes = {
       if (!fs.existsSync(src)) { err(res, '备份文件不存在', 404); return; }
       // 判断恢复到哪个目标文件
       const base   = name.replace(/\.\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}\.bak$/, '');
-      const allowed = ['catalog.js', 'events.js'];
-      if (!allowed.includes(base)) { err(res, '只支持恢复 catalog.js / events.js', 400); return; }
-      const dest = path.join(MANAGE, base);
+      const managedFiles = new Set(['catalog.js', 'events.js']);
+      const generatedFiles = new Set(['milestones-data.js', 'milestones-data-default.js']);
+      if (!managedFiles.has(base) && !generatedFiles.has(base)) {
+        err(res, '只支持恢复 catalog.js / events.js / milestones-data.js / milestones-data-default.js', 400);
+        return;
+      }
+      const dest = managedFiles.has(base) ? path.join(MANAGE, base) : path.join(ROOT, base);
       backupFile(dest); // 恢复前先备份当前版本
       fs.copyFileSync(src, dest);
       json(res, { ok: true, restored: base });

@@ -23,7 +23,8 @@ function isLocalizedText(value) {
 
 function getLocalizedText(value, locale = DEFAULT_LOCALE) {
     if (!isLocalizedText(value)) return String(value || '').trim();
-    return String(value[locale] || value[DEFAULT_LOCALE] || value.en || value.zh || '').trim();
+    const selected = value[locale] || value[DEFAULT_LOCALE] || value.en || value.zh || '';
+    return isLocalizedText(selected) ? getLocalizedText(selected, locale) : String(selected || '').trim();
 }
 
 function detectVideoSource(url) {
