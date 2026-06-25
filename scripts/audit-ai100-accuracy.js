@@ -11,6 +11,10 @@ const STORYLINE_ID = 'bench-council-ai100';
 const OUT_DIR = path.join(__dirname, '..', 'reports');
 const OUT_JSON = path.join(OUT_DIR, 'ai100-accuracy-audit.json');
 const OUT_MD = path.join(OUT_DIR, 'ai100-accuracy-audit.md');
+const OUT_WEAK_JSON = path.join(OUT_DIR, 'ai100-weak-claims-review.json');
+const OUT_WEAK_MD = path.join(OUT_DIR, 'ai100-weak-claims-review.md');
+const OUT_RISK_JSON = path.join(OUT_DIR, 'ai100-risk-claims.json');
+const OUT_RISK_MD = path.join(OUT_DIR, 'ai100-risk-claims.md');
 const STRICT = process.argv.includes('--strict');
 
 const REQUIRED_CONTEXT_LABELS = new Set(['Historical Background', 'Core Idea', 'Long-Term Legacy']);
@@ -36,24 +40,43 @@ const PRIMARY_SOURCE_HINTS = [
     'openreview',
     'jmlr'
 ];
-const RISK_WORDS = [
-    'first',
-    ' 최초',
-    '第一个',
-    '首次',
-    'only',
-    '唯一',
-    'proved',
-    '证明了',
-    'solved',
-    '解决了',
-    'revolutionized',
-    '彻底改变',
-    'state-of-the-art',
-    'best',
-    '最优',
-    '专家通常',
-    'experts generally'
+const RISK_PATTERNS = [
+    /\bfirst(?!-)\b/i,
+    /\bone of the first\b/i,
+    /\bearliest\b/i,
+    /\bonly\b/i,
+    /\bproved\b|\bproven\b|\bproof that\b|\bearly proof\b|\bas a proof\b/i,
+    /\bsolved\b/i,
+    /\brevolutionized\b/i,
+    /\bstate-of-the-art\b/i,
+    /\bbest\b/i,
+    /\bexperts generally\b/i,
+    /第一个|首次|唯一|最早|证明了|解决了|彻底改变|最优|专家通常/
+];
+const MANUAL_REVIEW_RULES = [
+    {
+        reason: 'absolute-first-or-only wording',
+        pattern: /\bfirst(?!-)\b|\bonly\b|\bearliest\b|第一个|首次|唯一|最早/i,
+        applies: (claim) => !claim.text.match(/\b(not only|rather than only)\b/i)
+    },
+    {
+        reason: 'proof/solved wording',
+        pattern:
+            /\b(proved|proven|solved|guarantee|guaranteed)\b|\bproof that\b|\bearly proof\b|\bas a proof\b|证明|解决|保证/i
+    },
+    {
+        reason: 'superlative or benchmark wording',
+        pattern: /\b(best|state-of-the-art|most|widely usable)\b|最优|最先进|最有|最广/i
+    },
+    {
+        reason: 'non-legacy risk claim',
+        pattern: /.+/,
+        applies: (claim) =>
+            claim.risk &&
+            !claim.field.includes('Long-Term Legacy') &&
+            !claim.field.startsWith('quote-work') &&
+            !claim.text.match(/\b(first-order|you only look once)\b/i)
+    }
 ];
 
 function localizedText(value, locale = 'en') {
@@ -123,8 +146,17 @@ function isPrimarySource(source) {
 }
 
 function hasRiskWording(text) {
-    const normalized = String(text || '').toLowerCase();
-    return RISK_WORDS.some((word) => normalized.includes(word.toLowerCase()));
+    const value = String(text || '');
+    return RISK_PATTERNS.some((pattern) => pattern.test(value));
+}
+
+function manualReviewReasons(claim) {
+    if (!claim.risk) return [];
+    if (claim.field.startsWith('quote-work')) return [];
+    return MANUAL_REVIEW_RULES.filter((rule) => {
+        if (rule.applies && !rule.applies(claim)) return false;
+        return rule.pattern.test(claim.text);
+    }).map((rule) => rule.reason);
 }
 
 function collectSources(milestone) {
@@ -153,7 +185,7 @@ function collectClaims(milestone) {
             locale,
             text: clean,
             risk: hasRiskWording(clean),
-            status: 'needs-human-verification'
+            status: 'pending-audit-classification'
         });
     };
 
@@ -200,9 +232,22 @@ function collectClaims(milestone) {
     return claims;
 }
 
+function classifyClaims(claims) {
+    return claims.map((claim) => {
+        const reasons = manualReviewReasons(claim);
+        return {
+            ...claim,
+            manualReview: reasons.length > 0,
+            reviewReasons: reasons,
+            status:
+                reasons.length > 0 ? 'needs-manual-source-review' : claim.risk ? 'low-priority-risk' : 'structural-only'
+        };
+    });
+}
+
 function checkMilestone(milestone) {
     const sources = collectSources(milestone);
-    const claims = collectClaims(milestone);
+    const claims = classifyClaims(collectClaims(milestone));
     const issues = [];
 
     if (sources.length < 3) {
@@ -236,6 +281,7 @@ function checkMilestone(milestone) {
     }
 
     const riskyClaims = claims.filter((claim) => claim.risk);
+    const weakClaims = claims.filter((claim) => claim.manualReview);
     return {
         id: milestone.id,
         year: milestone.year,
@@ -245,6 +291,7 @@ function checkMilestone(milestone) {
         primarySourceCount: sources.filter((source) => source.primaryCandidate).length,
         claimCount: claims.length,
         riskyClaimCount: riskyClaims.length,
+        weakClaimCount: weakClaims.length,
         issues,
         sources,
         claims
@@ -258,7 +305,7 @@ function renderMarkdown(audit) {
     lines.push(`Generated from \`milestones-data.js\`.`);
     lines.push('');
     lines.push(
-        'This report is an evidence-audit worklist. It does not certify historical accuracy by itself; each claim remains `needs-human-verification` until a reviewer checks it against the listed sources.'
+        'This report is an evidence-audit worklist. It does not certify historical accuracy by itself. Manual review is required only for claims marked `needs-manual-source-review`; lower-priority risk claims are kept for traceability but do not need immediate rewriting.'
     );
     lines.push('');
     lines.push('## Summary');
@@ -267,14 +314,15 @@ function renderMarkdown(audit) {
     lines.push(`- Claims extracted: ${audit.summary.claims}`);
     lines.push(`- Milestones with issues: ${audit.summary.milestonesWithIssues}`);
     lines.push(`- Risk-word claims: ${audit.summary.riskyClaims}`);
+    lines.push(`- Weak/manual-review claims: ${audit.summary.weakClaims}`);
     lines.push('');
     lines.push('## Milestone Checklist');
     lines.push('');
-    lines.push('| ID | Title | Sources | Primary | Claims | Risk Claims | Issues |');
-    lines.push('| --- | --- | ---: | ---: | ---: | ---: | --- |');
+    lines.push('| ID | Title | Sources | Primary | Claims | Risk Claims | Weak Claims | Issues |');
+    lines.push('| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |');
     for (const item of audit.items) {
         lines.push(
-            `| ${item.id} | ${compact(item.titleEn)} | ${item.sourceCount} | ${item.primarySourceCount} | ${item.claimCount} | ${item.riskyClaimCount} | ${item.issues.length ? compact(item.issues.join('; ')) : 'ready for source review'} |`
+            `| ${item.id} | ${compact(item.titleEn)} | ${item.sourceCount} | ${item.primarySourceCount} | ${item.claimCount} | ${item.riskyClaimCount} | ${item.weakClaimCount} | ${item.issues.length ? compact(item.issues.join('; ')) : 'ready for source review'} |`
         );
     }
     lines.push('');
@@ -284,9 +332,11 @@ function renderMarkdown(audit) {
         '1. Open the primary source candidate first and verify year, title, authors, venue, and core contribution.'
     );
     lines.push(
-        '2. Check description and commentary claims against primary sources plus at least one independent context source.'
+        '2. Manually review only claims marked `needs-manual-source-review`, prioritizing absolute, first/only, proof/solved, superlative, and strong legacy wording.'
     );
-    lines.push('3. Mark ambiguous, overstated, or source-missing claims in the JSON report or fix the source content.');
+    lines.push(
+        '3. Low-priority risk claims do not need rewriting unless a reviewer spots an unsupported source chain.'
+    );
     lines.push('4. Re-run `npm run generate && npm run audit:ai100-accuracy` after edits.');
     lines.push('');
     lines.push('## Claim Worklist');
@@ -300,14 +350,56 @@ function renderMarkdown(audit) {
             lines.push(`- [${compact(source.labelEn)}](${source.url}) (${compact(source.typeEn)}${primary})`);
         }
         lines.push('');
-        lines.push('| Field | Locale | Risk | Claim | Status |');
-        lines.push('| --- | --- | --- | --- | --- |');
+        lines.push('| Field | Locale | Risk | Manual Review | Claim | Status |');
+        lines.push('| --- | --- | --- | --- | --- | --- |');
         for (const claim of item.claims) {
             lines.push(
-                `| ${compact(claim.field)} | ${claim.locale} | ${claim.risk ? 'yes' : 'no'} | ${claim.text} | ${claim.status} |`
+                `| ${compact(claim.field)} | ${claim.locale} | ${claim.risk ? 'yes' : 'no'} | ${claim.manualReview ? compact(claim.reviewReasons.join('; ')) : 'no'} | ${claim.text} | ${claim.status} |`
             );
         }
     }
+    lines.push('');
+    return `${lines.join('\n')}\n`;
+}
+
+function claimReportItems(audit) {
+    const rows = [];
+    for (const item of audit.items) {
+        for (const claim of item.claims) {
+            rows.push({
+                milestoneId: item.id,
+                year: item.year,
+                titleEn: item.titleEn,
+                titleZh: item.titleZh,
+                field: claim.field,
+                locale: claim.locale,
+                claim: claim.text,
+                risk: claim.risk,
+                manualReview: claim.manualReview,
+                reasons: claim.reviewReasons,
+                status: claim.status,
+                sources: item.sources
+            });
+        }
+    }
+    return rows;
+}
+
+function renderClaimsMarkdown(rows, { title, intro }) {
+    const lines = [];
+    lines.push(`# ${title}`);
+    lines.push('');
+    lines.push(`Total claims: ${rows.length}`);
+    lines.push('');
+    lines.push(intro);
+    lines.push('');
+    lines.push('| # | Milestone | Field | Locale | Manual Review | Reason | Claim |');
+    lines.push('| ---: | --- | --- | --- | --- | --- | --- |');
+    rows.forEach((row, index) => {
+        lines.push(
+            `| ${index + 1} | ${row.milestoneId} / ${compact(row.titleEn)} | ${compact(row.field)} | ${row.locale} | ${row.manualReview ? 'yes' : 'no'} | ${row.reasons.length ? compact(row.reasons.join('; ')) : 'low-priority risk'} | ${compact(row.claim)} |`
+        );
+    });
     lines.push('');
     return `${lines.join('\n')}\n`;
 }
@@ -325,19 +417,39 @@ const audit = {
         milestones: items.length,
         claims: items.reduce((sum, item) => sum + item.claimCount, 0),
         milestonesWithIssues: items.filter((item) => item.issues.length > 0).length,
-        riskyClaims: items.reduce((sum, item) => sum + item.riskyClaimCount, 0)
+        riskyClaims: items.reduce((sum, item) => sum + item.riskyClaimCount, 0),
+        weakClaims: items.reduce((sum, item) => sum + item.weakClaimCount, 0)
     },
     items
 };
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
+const riskClaims = claimReportItems(audit).filter((claim) => claim.risk);
+const weakClaims = riskClaims.filter((claim) => claim.manualReview);
 fs.writeFileSync(OUT_JSON, `${JSON.stringify(audit, null, 2)}\n`);
 fs.writeFileSync(OUT_MD, renderMarkdown(audit));
+fs.writeFileSync(OUT_RISK_JSON, `${JSON.stringify(riskClaims, null, 2)}\n`);
+fs.writeFileSync(
+    OUT_RISK_MD,
+    renderClaimsMarkdown(riskClaims, {
+        title: 'AI100 Risk Claims',
+        intro: 'These claims contain risk wording and are kept for traceability. Manual review is only required when the Manual Review column is `yes`.'
+    })
+);
+fs.writeFileSync(OUT_WEAK_JSON, `${JSON.stringify(weakClaims, null, 2)}\n`);
+fs.writeFileSync(
+    OUT_WEAK_MD,
+    renderClaimsMarkdown(weakClaims, {
+        title: 'AI100 Weak Claims For Manual Review',
+        intro: 'These are the risk-word claims most likely to need a human source check. Low-priority risk claims are intentionally excluded.'
+    })
+);
 
 console.log(`AI100 accuracy audit written to ${path.relative(process.cwd(), OUT_MD)}`);
 console.log(`Machine-readable audit written to ${path.relative(process.cwd(), OUT_JSON)}`);
+console.log(`Weak-claims review queue written to ${path.relative(process.cwd(), OUT_WEAK_MD)}`);
 console.log(
-    `Milestones: ${audit.summary.milestones}; claims: ${audit.summary.claims}; issues: ${audit.summary.milestonesWithIssues}; risk claims: ${audit.summary.riskyClaims}`
+    `Milestones: ${audit.summary.milestones}; claims: ${audit.summary.claims}; issues: ${audit.summary.milestonesWithIssues}; risk claims: ${audit.summary.riskyClaims}; weak claims: ${audit.summary.weakClaims}`
 );
 
 if (STRICT && audit.summary.milestonesWithIssues > 0) {
