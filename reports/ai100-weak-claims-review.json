@@ -1,0 +1,2646 @@
+[
+  {
+    "milestoneId": "milestone-1950-turing-test",
+    "year": 1950,
+    "titleEn": "Turing Test",
+    "titleZh": "图灵测试",
+    "field": "commentary:Core Idea",
+    "locale": "en",
+    "claim": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Computing Machinery and Intelligence",
+        "labelZh": "计算机器与智能",
+        "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Turing Digital Archive",
+        "labelZh": "图灵数字档案",
+        "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Internet Archive digital preview",
+        "labelZh": "互联网档案馆 数字化预览",
+        "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Context",
+        "typeZh": "背景",
+        "labelEn": "Stanford Encyclopedia of Philosophy",
+        "labelZh": "斯坦福哲学百科全书",
+        "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1951-strachey-draughts",
+    "year": "1951-1952",
+    "titleEn": "Christopher Strachey's Draughts",
+    "titleZh": "克里斯托弗·斯特雷奇 的跳棋程序",
+    "field": "description",
+    "locale": "en",
+    "claim": "It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Logical or non-mathematical programmes",
+        "labelZh": "逻辑或非数学程序",
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Biography",
+        "typeZh": "人物资料",
+        "labelEn": "Computer Pioneers - Christopher Strachey",
+        "labelZh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+        "url": "https://history.computer.org/pioneers/strachey.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Strachey draughts program screenshot",
+        "labelZh": "斯特雷奇 跳棋程序截图",
+        "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Checkers board photo",
+        "labelZh": "跳棋棋盘照片",
+        "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1951-strachey-draughts",
+    "year": "1951-1952",
+    "titleEn": "Christopher Strachey's Draughts",
+    "titleZh": "克里斯托弗·斯特雷奇 的跳棋程序",
+    "field": "description",
+    "locale": "zh",
+    "claim": "它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Logical or non-mathematical programmes",
+        "labelZh": "逻辑或非数学程序",
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Biography",
+        "typeZh": "人物资料",
+        "labelEn": "Computer Pioneers - Christopher Strachey",
+        "labelZh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+        "url": "https://history.computer.org/pioneers/strachey.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Strachey draughts program screenshot",
+        "labelZh": "斯特雷奇 跳棋程序截图",
+        "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Checkers board photo",
+        "labelZh": "跳棋棋盘照片",
+        "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1951-strachey-draughts",
+    "year": "1951-1952",
+    "titleEn": "Christopher Strachey's Draughts",
+    "titleZh": "克里斯托弗·斯特雷奇 的跳棋程序",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat Strachey's draughts program as an early proof that stored-program computers could attempt non-numerical play and choice.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Logical or non-mathematical programmes",
+        "labelZh": "逻辑或非数学程序",
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Biography",
+        "typeZh": "人物资料",
+        "labelEn": "Computer Pioneers - Christopher Strachey",
+        "labelZh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+        "url": "https://history.computer.org/pioneers/strachey.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Strachey draughts program screenshot",
+        "labelZh": "斯特雷奇 跳棋程序截图",
+        "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Checkers board photo",
+        "labelZh": "跳棋棋盘照片",
+        "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1956-logic-theorist",
+    "year": 1956,
+    "titleEn": "Logic Theorist",
+    "titleZh": "逻辑理论家",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat Logic Theorist as a founding symbolic AI system and an early proof that heuristic search could model reasoning.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "The Logic Theory Machine",
+        "labelZh": "逻辑理论机",
+        "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Carnegie Mellon University Archives",
+        "labelZh": "Carnegie Mellon University Archives",
+        "url": "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Award",
+        "typeZh": "奖项",
+        "labelEn": "Allen Newell ACM A.M. Turing Award",
+        "labelZh": "艾伦·纽厄尔 ACM A.M. 图灵 Award",
+        "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1958-rosenblatt-perceptron",
+    "year": "1958",
+    "titleEn": "Rosenblatt Perceptron",
+    "titleZh": "罗森布拉特 感知机",
+    "field": "description",
+    "locale": "en",
+    "claim": "It promised machines that could learn from examples rather than being programmed only by explicit rules.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "labelZh": "感知机：大脑中信息存储与组织的概率模型",
+        "url": "https://doi.org/10.1037/h0042519",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "History",
+        "typeZh": "历史资料",
+        "labelEn": "Cornell Chronicle perceptron retrospective",
+        "labelZh": "康奈尔大学 Chronicle perceptron retrospective",
+        "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Museum",
+        "typeZh": "博物馆",
+        "labelEn": "Smithsonian Mark I Perceptron object record",
+        "labelZh": "Smithsonian Mark I Perceptron object record",
+        "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1958-wangs-algorithm",
+    "year": "1958-1961",
+    "titleEn": "Wang's Algorithm",
+    "titleZh": "王氏算法",
+    "field": "commentary:Historical Background",
+    "locale": "en",
+    "claim": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Proving theorems by pattern recognition I",
+        "labelZh": "通过模式识别证明定理 I",
+        "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Proving Theorems by Pattern Recognition - II",
+        "labelZh": "通过模式识别证明定理（二）",
+        "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Photo",
+        "typeZh": "照片",
+        "labelEn": "Rockefeller University Digital Commons: Wang, Hao",
+        "labelZh": "Rockefeller University Digital Commons: 王浩, Hao",
+        "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1958-wangs-algorithm",
+    "year": "1958-1961",
+    "titleEn": "Wang's Algorithm",
+    "titleZh": "王氏算法",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把王氏算法视为自动定理证明的早期里程碑。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Proving theorems by pattern recognition I",
+        "labelZh": "通过模式识别证明定理 I",
+        "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Proving Theorems by Pattern Recognition - II",
+        "labelZh": "通过模式识别证明定理（二）",
+        "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Photo",
+        "typeZh": "照片",
+        "labelEn": "Rockefeller University Digital Commons: Wang, Hao",
+        "labelZh": "Rockefeller University Digital Commons: 王浩, Hao",
+        "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1965-dendral",
+    "year": "1965",
+    "titleEn": "DENDRAL",
+    "titleZh": "DENDRAL",
+    "field": "description",
+    "locale": "en",
+    "claim": "DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Applications of Artificial Intelligence for Chemical Inference",
+        "labelZh": "人工智能在化学推断中的应用",
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Award",
+        "typeZh": "奖项资料",
+        "labelEn": "ACM Turing Award profile for Edward Feigenbaum",
+        "labelZh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
+        "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "History",
+        "typeZh": "历史资料",
+        "labelEn": "Stanford Knowledge Systems Laboratory history",
+        "labelZh": "斯坦福大学 Knowledge Systems Laboratory history",
+        "url": "http://ksl-web.stanford.edu/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1965-dendral",
+    "year": "1965",
+    "titleEn": "DENDRAL",
+    "titleZh": "DENDRAL",
+    "field": "description",
+    "locale": "zh",
+    "claim": "DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Applications of Artificial Intelligence for Chemical Inference",
+        "labelZh": "人工智能在化学推断中的应用",
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Award",
+        "typeZh": "奖项资料",
+        "labelEn": "ACM Turing Award profile for Edward Feigenbaum",
+        "labelZh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
+        "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "History",
+        "typeZh": "历史资料",
+        "labelEn": "Stanford Knowledge Systems Laboratory history",
+        "labelZh": "斯坦福大学 Knowledge Systems Laboratory history",
+        "url": "http://ksl-web.stanford.edu/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1965-dendral",
+    "year": "1965",
+    "titleEn": "DENDRAL",
+    "titleZh": "DENDRAL",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat DENDRAL as one of the first convincing demonstrations that domain knowledge could make AI useful.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Applications of Artificial Intelligence for Chemical Inference",
+        "labelZh": "人工智能在化学推断中的应用",
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Award",
+        "typeZh": "奖项资料",
+        "labelEn": "ACM Turing Award profile for Edward Feigenbaum",
+        "labelZh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
+        "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "History",
+        "typeZh": "历史资料",
+        "labelEn": "Stanford Knowledge Systems Laboratory history",
+        "labelZh": "斯坦福大学 Knowledge Systems Laboratory history",
+        "url": "http://ksl-web.stanford.edu/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1965-dendral",
+    "year": "1965",
+    "titleEn": "DENDRAL",
+    "titleZh": "DENDRAL",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把 DENDRAL 视为最早有力证明领域知识能让 AI 变得有用的系统之一。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Applications of Artificial Intelligence for Chemical Inference",
+        "labelZh": "人工智能在化学推断中的应用",
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Award",
+        "typeZh": "奖项资料",
+        "labelEn": "ACM Turing Award profile for Edward Feigenbaum",
+        "labelZh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
+        "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "History",
+        "typeZh": "历史资料",
+        "labelEn": "Stanford Knowledge Systems Laboratory history",
+        "labelZh": "斯坦福大学 Knowledge Systems Laboratory history",
+        "url": "http://ksl-web.stanford.edu/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1965-resolution-method",
+    "year": "1965",
+    "titleEn": "Resolution Method",
+    "titleZh": "归结方法",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把归结法视为符号 AI 和自动推理的基础证明方法。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "A Machine-Oriented Logic Based on the Resolution Principle",
+        "labelZh": "基于归结原理的机器导向逻辑",
+        "url": "https://doi.org/10.1145/321250.321253",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Review",
+        "typeZh": "评述",
+        "labelEn": "Journal of Symbolic Logic review record",
+        "labelZh": "Journal of Symbolic Logic review record",
+        "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "Stanford Encyclopedia: Automated Reasoning",
+        "labelZh": "斯坦福大学 Encyclopedia: Automated Reasoning",
+        "url": "https://plato.stanford.edu/entries/reasoning-automated/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1971-complexity-theory",
+    "year": 1971,
+    "titleEn": "NP-Completeness",
+    "titleZh": "NP 完全性",
+    "field": "commentary:Core Idea",
+    "locale": "en",
+    "claim": "If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "The Complexity of Theorem-Proving Procedures",
+        "labelZh": "定理证明过程的复杂性",
+        "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Award",
+        "typeZh": "奖项",
+        "labelEn": "Stephen A. Cook ACM A.M. Turing Award",
+        "labelZh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award",
+        "url": "https://awards.acm.org/award_winners/cook_N991950",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Problem",
+        "typeZh": "难题",
+        "labelEn": "Clay Mathematics Institute P vs NP",
+        "labelZh": "克雷数学研究所 P 与 NP 问题",
+        "url": "https://www.claymath.org/millennium/p-vs-np/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1973-prolog",
+    "year": "1973",
+    "titleEn": "PROLOG",
+    "titleZh": "PROLOG",
+    "field": "figure",
+    "locale": "en",
+    "claim": "Alain Colmerauer - Creator of the first Prolog implementation",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "History",
+        "typeZh": "历史",
+        "labelEn": "The Birth of Prolog",
+        "labelZh": "Prolog 的诞生",
+        "url": "https://doi.org/10.1145/155360.155362",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Prolog Heritage",
+        "labelZh": "Prolog Heritage",
+        "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Language docs",
+        "typeZh": "语言文档",
+        "labelEn": "SWI-Prolog documentation",
+        "labelZh": "SWI-Prolog documentation",
+        "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1973-prolog",
+    "year": "1973",
+    "titleEn": "PROLOG",
+    "titleZh": "PROLOG",
+    "field": "description",
+    "locale": "en",
+    "claim": "Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "History",
+        "typeZh": "历史",
+        "labelEn": "The Birth of Prolog",
+        "labelZh": "Prolog 的诞生",
+        "url": "https://doi.org/10.1145/155360.155362",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Archive",
+        "typeZh": "档案",
+        "labelEn": "Prolog Heritage",
+        "labelZh": "Prolog Heritage",
+        "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Language docs",
+        "typeZh": "语言文档",
+        "labelEn": "SWI-Prolog documentation",
+        "labelZh": "SWI-Prolog documentation",
+        "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1980-xcon-r1",
+    "year": "1978-1980",
+    "titleEn": "XCON-R1",
+    "titleZh": "XCON / R1 专家系统",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat XCON/R1 as a landmark industrial expert system and a proof that knowledge engineering could deliver business value.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "R1: An Expert in the Computer Systems Domain",
+        "labelZh": "R1：计算机系统领域的专家",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Retrospective",
+        "typeZh": "回顾",
+        "labelEn": "R1 Revisited: Four Years in the Trenches",
+        "labelZh": "重访 R1：一线四年",
+        "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Overview",
+        "typeZh": "概览",
+        "labelEn": "XCON overview",
+        "labelZh": "XCON 概览",
+        "url": "https://en.wikipedia.org/wiki/Xcon",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "DEC VAX-11/780 photo",
+        "labelZh": "DEC VAX-11/780 照片",
+        "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1980-xcon-r1",
+    "year": "1978-1980",
+    "titleEn": "XCON-R1",
+    "titleZh": "XCON / R1 专家系统",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "R1: An Expert in the Computer Systems Domain",
+        "labelZh": "R1：计算机系统领域的专家",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Retrospective",
+        "typeZh": "回顾",
+        "labelEn": "R1 Revisited: Four Years in the Trenches",
+        "labelZh": "重访 R1：一线四年",
+        "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Overview",
+        "typeZh": "概览",
+        "labelEn": "XCON overview",
+        "labelZh": "XCON 概览",
+        "url": "https://en.wikipedia.org/wiki/Xcon",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "DEC VAX-11/780 photo",
+        "labelZh": "DEC VAX-11/780 照片",
+        "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1983-simulated-annealing",
+    "year": "1983",
+    "titleEn": "Simulated Annealing",
+    "titleZh": "模拟退火",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat simulated annealing as a classic metaheuristic for escaping local optima, not as a guarantee of easy global optimization.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Optimization by Simulated Annealing",
+        "labelZh": "模拟退火优化",
+        "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Optimizer docs",
+        "typeZh": "优化器文档",
+        "labelEn": "SciPy dual_annealing",
+        "labelZh": "SciPy dual_annealing",
+        "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Notebook",
+        "typeZh": "笔记本",
+        "labelEn": "Hedibert course PDF mirror",
+        "labelZh": "Hedibert course PDF mirror",
+        "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1983-simulated-annealing",
+    "year": "1983",
+    "titleEn": "Simulated Annealing",
+    "titleZh": "模拟退火",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法，而不是轻松获得全局最优的保证。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording",
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Optimization by Simulated Annealing",
+        "labelZh": "模拟退火优化",
+        "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Optimizer docs",
+        "typeZh": "优化器文档",
+        "labelEn": "SciPy dual_annealing",
+        "labelZh": "SciPy dual_annealing",
+        "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Notebook",
+        "typeZh": "笔记本",
+        "labelEn": "Hedibert course PDF mirror",
+        "labelZh": "Hedibert course PDF mirror",
+        "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1984-cyc",
+    "year": "1984",
+    "titleEn": "Cyc",
+    "titleZh": "Cyc 常识知识库",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat Cyc as one of the most ambitious symbolic-AI attempts to encode common sense explicitly.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Book",
+        "typeZh": "专著",
+        "labelEn": "Building Large Knowledge-Based Systems",
+        "labelZh": "构建大型知识系统",
+        "url": "https://dl.acm.org/doi/book/10.5555/70571",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "The Evolution of CycL",
+        "labelZh": "CycL 的演化",
+        "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Official page",
+        "typeZh": "官方页面",
+        "labelEn": "Cyc",
+        "labelZh": "Cyc",
+        "url": "https://cyc.com/",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Cyc projects logo image",
+        "labelZh": "Cyc 项目标识图片",
+        "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1984-cyc",
+    "year": "1984",
+    "titleEn": "Cyc",
+    "titleZh": "Cyc 常识知识库",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Its long-term legacy is keeping debates alive about knowledge engineering, hybrid reasoning, ontologies, and the limits of data-only learning.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Book",
+        "typeZh": "专著",
+        "labelEn": "Building Large Knowledge-Based Systems",
+        "labelZh": "构建大型知识系统",
+        "url": "https://dl.acm.org/doi/book/10.5555/70571",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "The Evolution of CycL",
+        "labelZh": "CycL 的演化",
+        "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Official page",
+        "typeZh": "官方页面",
+        "labelEn": "Cyc",
+        "labelZh": "Cyc",
+        "url": "https://cyc.com/",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Cyc projects logo image",
+        "labelZh": "Cyc 项目标识图片",
+        "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1990-otter",
+    "year": "1990s",
+    "titleEn": "Otter",
+    "titleZh": "Otter 自动定理证明器",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把 Otter 视为自动定理证明和形式推理中的主力系统。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Reference",
+        "typeZh": "参考文献",
+        "labelEn": "OTTER 3.3 Reference Manual",
+        "labelZh": "OTTER 3.3 参考手册",
+        "url": "https://arxiv.org/abs/cs/0310056",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "A Spectrum of Applications of Automated Reasoning",
+        "labelZh": "自动推理应用谱系",
+        "url": "https://arxiv.org/abs/cs/0205078",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Application paper",
+        "typeZh": "应用论文",
+        "labelEn": "Checking Clinical Guidelines using Automated Reasoning Tools",
+        "labelZh": "使用自动推理工具检查临床指南",
+        "url": "https://arxiv.org/abs/0806.0250",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1992-svm",
+    "year": "1992",
+    "titleEn": "Support Vector Machines",
+    "titleZh": "支持向量机",
+    "field": "figure",
+    "locale": "zh",
+    "claim": "弗拉基米尔·瓦普尼克 - 共同发展最优间隔分类器与统计学习理论",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "A Training Algorithm for Optimal Margin Classifiers",
+        "labelZh": "最优间隔分类器的训练算法",
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Toolkit",
+        "typeZh": "工具包",
+        "labelEn": "LIBSVM project page",
+        "labelZh": "LIBSVM project page",
+        "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Model docs",
+        "typeZh": "模型文档",
+        "labelEn": "scikit-learn SVC",
+        "labelZh": "scikit-learn SVC",
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1992-svm",
+    "year": "1992",
+    "titleEn": "Support Vector Machines",
+    "titleZh": "支持向量机",
+    "field": "figure",
+    "locale": "zh",
+    "claim": "伯恩哈德·博泽尔 - 1992 年最优间隔分类器论文共同作者",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "A Training Algorithm for Optimal Margin Classifiers",
+        "labelZh": "最优间隔分类器的训练算法",
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Toolkit",
+        "typeZh": "工具包",
+        "labelEn": "LIBSVM project page",
+        "labelZh": "LIBSVM project page",
+        "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Model docs",
+        "typeZh": "模型文档",
+        "labelEn": "scikit-learn SVC",
+        "labelZh": "scikit-learn SVC",
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1992-svm",
+    "year": "1992",
+    "titleEn": "Support Vector Machines",
+    "titleZh": "支持向量机",
+    "field": "figure",
+    "locale": "zh",
+    "claim": "伊莎贝尔·居永 - 1992 年最优间隔分类器论文共同作者",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "A Training Algorithm for Optimal Margin Classifiers",
+        "labelZh": "最优间隔分类器的训练算法",
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Toolkit",
+        "typeZh": "工具包",
+        "labelEn": "LIBSVM project page",
+        "labelZh": "LIBSVM project page",
+        "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Model docs",
+        "typeZh": "模型文档",
+        "labelEn": "scikit-learn SVC",
+        "labelZh": "scikit-learn SVC",
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1992-svm",
+    "year": "1992",
+    "titleEn": "Support Vector Machines",
+    "titleZh": "支持向量机",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat SVMs as mature classical methods whose conceptual importance exceeds their role in most modern deep-learning pipelines.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "A Training Algorithm for Optimal Margin Classifiers",
+        "labelZh": "最优间隔分类器的训练算法",
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Toolkit",
+        "typeZh": "工具包",
+        "labelEn": "LIBSVM project page",
+        "labelZh": "LIBSVM project page",
+        "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Model docs",
+        "typeZh": "模型文档",
+        "labelEn": "scikit-learn SVC",
+        "labelZh": "scikit-learn SVC",
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1994-chinook",
+    "year": "1989-2007",
+    "titleEn": "Chinook",
+    "titleZh": "Chinook 跳棋程序",
+    "field": "commentary:Core Idea",
+    "locale": "en",
+    "claim": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Official page",
+        "typeZh": "官方页面",
+        "labelEn": "Chinook project home",
+        "labelZh": "Chinook 项目主页",
+        "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Checkers Is Solved",
+        "labelZh": "跳棋已被求解",
+        "url": "https://www.science.org/doi/10.1126/science.1144079",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Publications",
+        "typeZh": "论文列表",
+        "labelEn": "Chinook publications",
+        "labelZh": "Chinook 论文列表",
+        "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Image source",
+        "typeZh": "图片来源",
+        "labelEn": "Jonathan Schaeffer portrait",
+        "labelZh": "乔纳森·谢弗 人物照片",
+        "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1997-deep-blue",
+    "year": "1997",
+    "titleEn": "Deep Blue",
+    "titleZh": "深蓝",
+    "field": "description",
+    "locale": "en",
+    "claim": "Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Profile",
+        "typeZh": "人物资料",
+        "labelEn": "Murray Campbell, IBM Research",
+        "labelZh": "默里·坎贝尔, IBM 研究院",
+        "url": "https://research.ibm.com/people/murray-campbell",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Museum",
+        "typeZh": "博物馆",
+        "labelEn": "Mastering the Game, Computer History Museum",
+        "labelZh": "Mastering the Game, Computer History Museum",
+        "url": "https://www.computerhistory.org/chess/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Official history",
+        "typeZh": "官方历史资料",
+        "labelEn": "IBM100: Deep Blue",
+        "labelZh": "IBM100: 深蓝",
+        "url": "https://www.ibm.com/history/deep-blue",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-1997-deep-blue",
+    "year": "1997",
+    "titleEn": "Deep Blue",
+    "titleZh": "深蓝",
+    "field": "description",
+    "locale": "zh",
+    "claim": "深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Profile",
+        "typeZh": "人物资料",
+        "labelEn": "Murray Campbell, IBM Research",
+        "labelZh": "默里·坎贝尔, IBM 研究院",
+        "url": "https://research.ibm.com/people/murray-campbell",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Museum",
+        "typeZh": "博物馆",
+        "labelEn": "Mastering the Game, Computer History Museum",
+        "labelZh": "Mastering the Game, Computer History Museum",
+        "url": "https://www.computerhistory.org/chess/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Official history",
+        "typeZh": "官方历史资料",
+        "labelEn": "IBM100: Deep Blue",
+        "labelZh": "IBM100: 深蓝",
+        "url": "https://www.ibm.com/history/deep-blue",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2003-lda",
+    "year": "2003",
+    "titleEn": "Latent Dirichlet Allocation",
+    "titleZh": "潜在狄利克雷分配",
+    "field": "figure",
+    "locale": "en",
+    "claim": "David Blei - First author of LDA",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Latent Dirichlet Allocation",
+        "labelZh": "潜在狄利克雷分配",
+        "url": "https://jmlr.org/papers/v3/blei03a.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Author",
+        "typeZh": "作者",
+        "labelEn": "David M. Blei homepage",
+        "labelZh": "戴维·M·布莱 homepage",
+        "url": "https://www.cs.columbia.edu/~blei/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Implementation",
+        "typeZh": "实现",
+        "labelEn": "scikit-learn LatentDirichletAllocation",
+        "labelZh": "scikit-learn LatentDirichletAllocation",
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2009-imagenet",
+    "year": "2009",
+    "titleEn": "ImageNet",
+    "titleZh": "ImageNet",
+    "field": "figure",
+    "locale": "en",
+    "claim": "Jia Deng - First author of ImageNet paper",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "ImageNet: A Large-Scale Hierarchical Image Database",
+        "labelZh": "ImageNet：大规模层级图像数据库",
+        "url": "https://ieeexplore.ieee.org/document/5206848",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Project",
+        "typeZh": "项目",
+        "labelEn": "ImageNet project website",
+        "labelZh": "ImageNet project website",
+        "url": "https://www.image-net.org/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Profile",
+        "typeZh": "人物",
+        "labelEn": "Stanford Profile: Fei-Fei Li",
+        "labelZh": "斯坦福大学 Profile: Fei-Fei Li",
+        "url": "https://profiles.stanford.edu/fei-fei-li",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2013-dqn",
+    "year": "2013",
+    "titleEn": "Deep Q Network",
+    "titleZh": "深度 Q 网络",
+    "field": "figure",
+    "locale": "en",
+    "claim": "Volodymyr Mnih - First author of DQN work",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Preprint",
+        "typeZh": "预印本",
+        "labelEn": "Playing Atari with Deep Reinforcement Learning",
+        "labelZh": "用深度强化学习玩 Atari",
+        "url": "https://arxiv.org/abs/1312.5602",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Human-level control through deep reinforcement learning",
+        "labelZh": "Human-level control through deep reinforcement learning",
+        "url": "https://www.nature.com/articles/nature14236",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Project note",
+        "typeZh": "项目说明",
+        "labelEn": "Google DeepMind: Deep Reinforcement Learning",
+        "labelZh": "谷歌 DeepMind: Deep Reinforcement Learning",
+        "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2014-adam",
+    "year": "2014",
+    "titleEn": "Adam Optimizer",
+    "titleZh": "Adam 优化器",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把 Adam 视为实用默认优化器，而不是万能最优解。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Adam: A Method for Stochastic Optimization",
+        "labelZh": "Adam：一种随机优化方法",
+        "url": "https://arxiv.org/abs/1412.6980",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Implementation",
+        "typeZh": "Implementation",
+        "labelEn": "PyTorch torch.optim.Adam",
+        "labelZh": "PyTorch torch.optim.Adam",
+        "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Framework docs",
+        "typeZh": "Framework docs",
+        "labelEn": "TensorFlow Keras Adam optimizer",
+        "labelZh": "TensorFlow Keras Adam optimizer",
+        "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2014-dropout",
+    "year": "2014",
+    "titleEn": "Dropout",
+    "titleZh": "Dropout",
+    "field": "figure",
+    "locale": "en",
+    "claim": "Nitish Srivastava - First author of the JMLR dropout paper",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+        "labelZh": "Dropout：防止神经网络过拟合的简单方法",
+        "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Preprint",
+        "typeZh": "预印本",
+        "labelEn": "Improving neural networks by preventing co-adaptation",
+        "labelZh": "Improving neural networks by preventing co-adaptation",
+        "url": "https://arxiv.org/abs/1207.0580",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Framework docs",
+        "typeZh": "框架文档",
+        "labelEn": "PyTorch torch.nn.Dropout",
+        "labelZh": "PyTorch torch.nn.Dropout",
+        "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2014-vgg",
+    "year": "2014",
+    "titleEn": "VGG Networks",
+    "titleZh": "VGG 网络",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat VGG as an important reference architecture, not a state-of-the-art deployment choice.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "labelZh": "用于大规模图像识别的超深卷积网络",
+        "url": "https://arxiv.org/abs/1409.1556",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Project",
+        "typeZh": "项目",
+        "labelEn": "Oxford VGG Very Deep ConvNets",
+        "labelZh": "Oxford VGG Very Deep ConvNets",
+        "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Model docs",
+        "typeZh": "模型文档",
+        "labelEn": "TorchVision VGG model family",
+        "labelZh": "TorchVision VGG model family",
+        "url": "https://pytorch.org/vision/stable/models/vgg.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2014-vgg",
+    "year": "2014",
+    "titleEn": "VGG Networks",
+    "titleZh": "VGG 网络",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "labelZh": "用于大规模图像识别的超深卷积网络",
+        "url": "https://arxiv.org/abs/1409.1556",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Project",
+        "typeZh": "项目",
+        "labelEn": "Oxford VGG Very Deep ConvNets",
+        "labelZh": "Oxford VGG Very Deep ConvNets",
+        "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Model docs",
+        "typeZh": "模型文档",
+        "labelEn": "TorchVision VGG model family",
+        "labelZh": "TorchVision VGG model family",
+        "url": "https://pytorch.org/vision/stable/models/vgg.html",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-1982-som",
+    "year": 1982,
+    "titleEn": "Self-organizing Map",
+    "titleZh": "自组织映射",
+    "field": "commentary:Core Idea",
+    "locale": "en",
+    "claim": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Self-organized formation of topologically correct feature maps",
+        "labelZh": "《拓扑正确特征映射的自组织形成》",
+        "url": "https://doi.org/10.1007/BF00337288",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper PDF",
+        "typeZh": "论文 PDF",
+        "labelEn": "Open SOM paper PDF",
+        "labelZh": "SOM 论文开放 PDF",
+        "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "Self-organizing map overview",
+        "labelZh": "自组织映射概览",
+        "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "Retrospective",
+        "typeZh": "回顾",
+        "labelEn": "Essentials of the self-organizing map",
+        "labelZh": "自组织映射要点回顾",
+        "url": "https://doi.org/10.1016/j.neunet.2012.09.018",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-1989-lenet",
+    "year": 1989,
+    "titleEn": "LeNet",
+    "titleZh": "LeNet",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat LeNet as a canonical early proof that convolution, weight sharing, and backpropagation could solve real perception tasks.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "labelZh": "《反向传播应用于手写邮编识别》",
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Project",
+        "typeZh": "项目",
+        "labelEn": "LeNet-5 demos and documentation",
+        "labelZh": "LeNet-5 演示与文档",
+        "url": "https://yann.lecun.com/exdb/lenet/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Gradient-Based Learning Applied to Document Recognition",
+        "labelZh": "《基于梯度的文档识别学习》",
+        "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Yann LeCun's home page",
+        "labelZh": "扬·勒昆主页",
+        "url": "https://yann.lecun.com/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-1989-lenet",
+    "year": 1989,
+    "titleEn": "LeNet",
+    "titleZh": "LeNet",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "zh",
+    "claim": "专家通常把 LeNet 视为早期经典证据，证明卷积、权重共享和反向传播可以解决真实感知任务。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "proof/solved wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "labelZh": "《反向传播应用于手写邮编识别》",
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Project",
+        "typeZh": "项目",
+        "labelEn": "LeNet-5 demos and documentation",
+        "labelZh": "LeNet-5 演示与文档",
+        "url": "https://yann.lecun.com/exdb/lenet/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Gradient-Based Learning Applied to Document Recognition",
+        "labelZh": "《基于梯度的文档识别学习》",
+        "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Yann LeCun's home page",
+        "labelZh": "扬·勒昆主页",
+        "url": "https://yann.lecun.com/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2014-conditional-gan",
+    "year": 2014,
+    "titleEn": "Conditional GAN",
+    "titleZh": "Conditional GAN",
+    "field": "description",
+    "locale": "en",
+    "claim": "This made adversarial generation controllable rather than only sampling from an undirected data distribution.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Conditional Generative Adversarial Nets",
+        "labelZh": "《条件生成对抗网络》",
+        "url": "https://arxiv.org/abs/1411.1784",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "Generative adversarial network overview",
+        "labelZh": "生成对抗网络概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Related paper",
+        "typeZh": "相关论文",
+        "labelEn": "Generative Adversarial Nets",
+        "labelZh": "《生成对抗网络》",
+        "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2014-conditional-gan",
+    "year": 2014,
+    "titleEn": "Conditional GAN",
+    "titleZh": "Conditional GAN",
+    "field": "commentary:Historical Background",
+    "locale": "en",
+    "claim": "This made adversarial generation controllable rather than only sampling from an undirected data distribution.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Conditional Generative Adversarial Nets",
+        "labelZh": "《条件生成对抗网络》",
+        "url": "https://arxiv.org/abs/1411.1784",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "Generative adversarial network overview",
+        "labelZh": "生成对抗网络概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Related paper",
+        "typeZh": "相关论文",
+        "labelEn": "Generative Adversarial Nets",
+        "labelZh": "《生成对抗网络》",
+        "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2014-ms-coco",
+    "year": 2014,
+    "titleEn": "MS COCO",
+    "titleZh": "MS COCO",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat MS COCO as one of the most important datasets for modern computer vision.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Microsoft COCO: Common Objects in Context",
+        "labelZh": "《Microsoft COCO：上下文中的常见物体》",
+        "url": "https://arxiv.org/abs/1405.0312",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Dataset",
+        "typeZh": "数据集",
+        "labelEn": "COCO dataset website",
+        "labelZh": "COCO 数据集网站",
+        "url": "https://cocodataset.org/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Conference paper",
+        "typeZh": "会议论文",
+        "labelEn": "ECCV Springer record",
+        "labelZh": "ECCV Springer 记录",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48",
+        "primaryCandidate": true,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-2016-yolo",
+    "year": "2016",
+    "titleEn": "YOLO",
+    "titleZh": "YOLO",
+    "field": "figure",
+    "locale": "en",
+    "claim": "Joseph Redmon - First author of YOLO",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "You Only Look Once: Unified, Real-Time Object Detection",
+        "labelZh": "你只看一次：统一的实时目标检测",
+        "url": "https://arxiv.org/abs/1506.02640",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Open access",
+        "typeZh": "开放论文",
+        "labelEn": "CVPR open-access paper page",
+        "labelZh": "计算机视觉与模式识别会议 open-access paper page",
+        "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Project",
+        "typeZh": "项目",
+        "labelEn": "Darknet YOLO project page",
+        "labelZh": "Darknet YOLO project page",
+        "url": "https://pjreddie.com/darknet/yolo/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2017-gat",
+    "year": 2017,
+    "titleEn": "GAT",
+    "titleZh": "GAT",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Its long-term legacy is the idea that graph neighborhoods can be weighted dynamically instead of only by graph degree or fixed normalization.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Graph Attention Networks",
+        "labelZh": "《图注意力网络》",
+        "url": "https://arxiv.org/abs/1710.10903",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Conference paper",
+        "typeZh": "会议论文",
+        "labelEn": "ICLR OpenReview record",
+        "labelZh": "ICLR OpenReview 记录",
+        "url": "https://openreview.net/forum?id=rJXMpikCZ",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Code",
+        "typeZh": "代码",
+        "labelEn": "Original GAT repository",
+        "labelZh": "原始 GAT 代码仓库",
+        "url": "https://github.com/PetarV-/GAT",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2017-wasserstein-gan",
+    "year": 2017,
+    "titleEn": "Wasserstein GAN",
+    "titleZh": "Wasserstein GAN",
+    "field": "description",
+    "locale": "zh",
+    "claim": "Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Wasserstein Generative Adversarial Networks",
+        "labelZh": "《Wasserstein 生成对抗网络》",
+        "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Improved Training of Wasserstein GANs",
+        "labelZh": "《Wasserstein GAN 的改进训练》",
+        "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "Wasserstein GAN overview",
+        "labelZh": "Wasserstein GAN 概览",
+        "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2017-wasserstein-gan",
+    "year": 2017,
+    "titleEn": "Wasserstein GAN",
+    "titleZh": "Wasserstein GAN",
+    "field": "commentary:Historical Background",
+    "locale": "zh",
+    "claim": "Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "superlative or benchmark wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Wasserstein Generative Adversarial Networks",
+        "labelZh": "《Wasserstein 生成对抗网络》",
+        "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Paper",
+        "typeZh": "论文",
+        "labelEn": "Improved Training of Wasserstein GANs",
+        "labelZh": "《Wasserstein GAN 的改进训练》",
+        "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "Wasserstein GAN overview",
+        "labelZh": "Wasserstein GAN 概览",
+        "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2018-gpt",
+    "year": 2018,
+    "titleEn": "GPT",
+    "titleZh": "GPT",
+    "field": "description",
+    "locale": "en",
+    "claim": "Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper PDF",
+        "typeZh": "论文 PDF",
+        "labelEn": "Improving Language Understanding by Generative Pre-Training",
+        "labelZh": "《通过生成式预训练改进语言理解》",
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Publication",
+        "typeZh": "出版页",
+        "labelEn": "OpenAI language unsupervised page",
+        "labelZh": "OpenAI 无监督语言页面",
+        "url": "https://openai.com/index/language-unsupervised/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "GPT model overview",
+        "labelZh": "GPT 模型概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Alec Radford research context",
+        "labelZh": "亚历克·拉德福德研究背景",
+        "url": "https://openai.com/research/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2018-gpt",
+    "year": 2018,
+    "titleEn": "GPT",
+    "titleZh": "GPT",
+    "field": "description",
+    "locale": "en",
+    "claim": "It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper PDF",
+        "typeZh": "论文 PDF",
+        "labelEn": "Improving Language Understanding by Generative Pre-Training",
+        "labelZh": "《通过生成式预训练改进语言理解》",
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Publication",
+        "typeZh": "出版页",
+        "labelEn": "OpenAI language unsupervised page",
+        "labelZh": "OpenAI 无监督语言页面",
+        "url": "https://openai.com/index/language-unsupervised/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "GPT model overview",
+        "labelZh": "GPT 模型概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Alec Radford research context",
+        "labelZh": "亚历克·拉德福德研究背景",
+        "url": "https://openai.com/research/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2018-gpt",
+    "year": 2018,
+    "titleEn": "GPT",
+    "titleZh": "GPT",
+    "field": "commentary:Historical Background",
+    "locale": "en",
+    "claim": "Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper PDF",
+        "typeZh": "论文 PDF",
+        "labelEn": "Improving Language Understanding by Generative Pre-Training",
+        "labelZh": "《通过生成式预训练改进语言理解》",
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Publication",
+        "typeZh": "出版页",
+        "labelEn": "OpenAI language unsupervised page",
+        "labelZh": "OpenAI 无监督语言页面",
+        "url": "https://openai.com/index/language-unsupervised/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "GPT model overview",
+        "labelZh": "GPT 模型概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Alec Radford research context",
+        "labelZh": "亚历克·拉德福德研究背景",
+        "url": "https://openai.com/research/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2018-gpt",
+    "year": 2018,
+    "titleEn": "GPT",
+    "titleZh": "GPT",
+    "field": "commentary:Historical Background",
+    "locale": "en",
+    "claim": "It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording",
+      "non-legacy risk claim"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper PDF",
+        "typeZh": "论文 PDF",
+        "labelEn": "Improving Language Understanding by Generative Pre-Training",
+        "labelZh": "《通过生成式预训练改进语言理解》",
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Publication",
+        "typeZh": "出版页",
+        "labelEn": "OpenAI language unsupervised page",
+        "labelZh": "OpenAI 无监督语言页面",
+        "url": "https://openai.com/index/language-unsupervised/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "GPT model overview",
+        "labelZh": "GPT 模型概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Alec Radford research context",
+        "labelZh": "亚历克·拉德福德研究背景",
+        "url": "https://openai.com/research/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  },
+  {
+    "milestoneId": "milestone-ai100-2018-gpt",
+    "year": 2018,
+    "titleEn": "GPT",
+    "titleZh": "GPT",
+    "field": "commentary:Long-Term Legacy",
+    "locale": "en",
+    "claim": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models.",
+    "risk": true,
+    "manualReview": true,
+    "reasons": [
+      "absolute-first-or-only wording"
+    ],
+    "status": "needs-manual-source-review",
+    "sources": [
+      {
+        "index": 1,
+        "typeEn": "Paper PDF",
+        "typeZh": "论文 PDF",
+        "labelEn": "Improving Language Understanding by Generative Pre-Training",
+        "labelZh": "《通过生成式预训练改进语言理解》",
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "primaryCandidate": true,
+        "validUrl": true
+      },
+      {
+        "index": 2,
+        "typeEn": "Publication",
+        "typeZh": "出版页",
+        "labelEn": "OpenAI language unsupervised page",
+        "labelZh": "OpenAI 无监督语言页面",
+        "url": "https://openai.com/index/language-unsupervised/",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 3,
+        "typeEn": "Background",
+        "typeZh": "背景",
+        "labelEn": "GPT model overview",
+        "labelZh": "GPT 模型概览",
+        "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+        "primaryCandidate": false,
+        "validUrl": true
+      },
+      {
+        "index": 4,
+        "typeEn": "People",
+        "typeZh": "人物",
+        "labelEn": "Alec Radford research context",
+        "labelZh": "亚历克·拉德福德研究背景",
+        "url": "https://openai.com/research/",
+        "primaryCandidate": false,
+        "validUrl": true
+      }
+    ]
+  }
+]
