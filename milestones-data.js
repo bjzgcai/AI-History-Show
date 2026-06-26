@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-24 11:11
+// 生成时间: 2026-06-26 22:00
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -97,7 +97,7 @@ const milestones = [
       "zh": "\"学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。\""
     },
     "quoteAttribution": {
-      "en": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
+      "en": "<em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
       "zh": "《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农"
     },
     "quoteMeta": {
@@ -263,7 +263,7 @@ const milestones = [
       "zh": "\"这一理论在生物物理学和心理学之间架起了一座桥梁。\""
     },
     "quoteAttribution": {
-      "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
+      "en": "<em>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</em>, Frank Rosenblatt",
       "zh": "《感知机：一种用于大脑信息存储与组织的概率模型》，弗兰克·罗森布拉特"
     },
     "quoteMeta": {
@@ -440,7 +440,7 @@ const milestones = [
       "zh": "\"他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。\""
     },
     "quoteAttribution": {
-      "en": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
+      "en": "<em>Perceptrons: An Introduction to Computational Geometry</em>, Marvin Minsky, Seymour Papert",
       "zh": "《感知机：计算几何导论》，马文·明斯基、西摩·派珀特"
     },
     "quoteMeta": {
@@ -621,7 +621,7 @@ const milestones = [
       "zh": "\"能够创造有用的新特征，使反向传播区别于更早、更简单的方法。\""
     },
     "quoteAttribution": {
-      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+      "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
       "zh": "《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
     },
     "quoteMeta": {
@@ -811,7 +811,7 @@ const milestones = [
       "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
     },
     "quoteAttribution": {
-      "en": "《Finding Structure in Time》, Jeffrey L. Elman",
+      "en": "<em>Finding Structure in Time</em>, Jeffrey L. Elman",
       "zh": "《在时间中发现结构》，杰弗里·埃尔曼"
     },
     "quoteMeta": {
@@ -955,7 +955,7 @@ const milestones = [
       "zh": "\"专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。\""
     },
     "quoteAttribution": {
-      "en": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
+      "en": "<em>Gradient-Based Learning Applied to Document Recognition</em>, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
       "zh": "《基于梯度的学习在文档识别中的应用》，杨立昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
     },
     "quoteMeta": {
@@ -1123,7 +1123,7 @@ const milestones = [
       "zh": "\"长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。\""
     },
     "quoteAttribution": {
-      "en": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
+      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter, Jürgen Schmidhuber",
       "zh": "《长短期记忆》，塞普·霍赫赖特、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
@@ -1291,7 +1291,7 @@ const milestones = [
       "zh": "\"我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。\""
     },
     "quoteAttribution": {
-      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
       "zh": "《使用深度卷积神经网络进行 ImageNet 分类》，亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿"
     },
     "quoteMeta": {
@@ -1459,7 +1459,7 @@ const milestones = [
       "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
     },
     "quoteAttribution": {
-      "en": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+      "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
       "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
@@ -1616,7 +1616,7 @@ const milestones = [
       "zh": "\"我们提出一种通过对抗过程估计生成模型的新框架。\""
     },
     "quoteAttribution": {
-      "en": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
+      "en": "<em>Generative Adversarial Nets</em>, Ian J. Goodfellow et al.",
       "zh": "《生成对抗网络》，伊恩·古德费洛等"
     },
     "quoteMeta": {
@@ -1762,7 +1762,7 @@ const milestones = [
       "zh": "\"我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。\""
     },
     "quoteAttribution": {
-      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
       "zh": "《通过联合学习对齐与翻译的神经机器翻译》，德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
     },
     "quoteMeta": {
@@ -1945,7 +1945,7 @@ const milestones = [
       "zh": "\"我们提出一种残差学习框架，以便训练比以前深得多的网络。\""
     },
     "quoteAttribution": {
-      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+      "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
       "zh": "《用于图像识别的深度残差学习》，何恺明、张祥雨、任少卿、孙剑"
     },
     "quoteMeta": {
@@ -2133,7 +2133,7 @@ const milestones = [
       "zh": "\"DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。\""
     },
     "quoteAttribution": {
-      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
+      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
       "zh": "《密集连接卷积网络》，黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格"
     },
     "quoteMeta": {
@@ -2288,7 +2288,7 @@ const milestones = [
       "zh": "\"我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。\""
     },
     "quoteAttribution": {
-      "en": "《Attention Is All You Need》, Ashish Vaswani et al.",
+      "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al.",
       "zh": "《注意力就是你所需要的一切》，阿希什·瓦斯瓦尼等"
     },
     "quoteMeta": {
@@ -2456,7 +2456,7 @@ const milestones = [
       "zh": "\"BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。\""
     },
     "quoteAttribution": {
-      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
+      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al.",
       "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》，雅各布·德夫林等"
     },
     "quoteMeta": {
@@ -2624,7 +2624,7 @@ const milestones = [
       "zh": "\"我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。\""
     },
     "quoteAttribution": {
-      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
+      "en": "<em>Improving Language Understanding by Generative Pre-Training</em>, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
       "zh": "《通过生成式预训练改进语言理解》，亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
     },
     "quoteMeta": {
@@ -2801,7 +2801,7 @@ const milestones = [
       "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
     },
     "quoteAttribution": {
-      "en": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
+      "en": "<em>AI Feynman: a physics-inspired method for symbolic regression</em>, Silviu-Marian Udrescu, Max Tegmark",
       "zh": "《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
     },
     "quoteMeta": {
@@ -2980,7 +2980,7 @@ const milestones = [
       "zh": "\"在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。\""
     },
     "quoteAttribution": {
-      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
+      "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al.",
       "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》，约翰·江珀等"
     },
     "quoteMeta": {
@@ -3205,7 +3205,7 @@ const milestones = [
       "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
     },
     "quoteAttribution": {
-      "en": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
+      "en": "<em>ReAct: Synergizing Reasoning and Acting in Language Models</em>, Shunyu Yao et al.",
       "zh": "《ReAct：在语言模型中协同推理与行动》，姚顺雨等"
     },
     "quoteMeta": {
@@ -3376,7 +3376,7 @@ const milestones = [
       "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
     },
     "quoteAttribution": {
-      "en": "《The AI Scientist》, Chris Lu et al.",
+      "en": "<em>The AI Scientist</em>, Chris Lu et al.",
       "zh": "《AI 科学家》，克里斯·卢等"
     },
     "quoteMeta": {
@@ -3564,7 +3564,7 @@ const milestones = [
       "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
     },
     "quoteAttribution": {
-      "en": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
+      "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, Wei-Lin Chiang et al.",
       "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
     },
     "quoteMeta": {
@@ -3730,7 +3730,7 @@ const milestones = [
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
     },
     "quoteAttribution": {
-      "en": "《Computing Machinery and Intelligence》, Alan M. Turing, Mind, 1950",
+      "en": "<em>Computing Machinery and Intelligence</em>, Alan M. Turing, Mind, 1950",
       "zh": "《计算机器与智能》, 艾伦·M·图灵, 《心灵》, 1950"
     },
     "quoteMeta": {
@@ -4128,7 +4128,7 @@ const milestones = [
       "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
     },
     "quoteAttribution": {
-      "en": "《Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I》, John McCarthy, Communications of the ACM, 1960",
+      "en": "<em>Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</em>, John McCarthy, Communications of the ACM, 1960",
       "zh": "《符号表达式的递归函数及其机器计算（第一部分）》, 约翰·麦卡锡, 《ACM 通讯》, 1960"
     },
     "quoteMeta": {
@@ -4519,7 +4519,7 @@ const milestones = [
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
     "quoteAttribution": {
-      "en": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
+      "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
       "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
     },
     "quoteMeta": {
@@ -4897,7 +4897,7 @@ const milestones = [
       "zh": "\"奠定了 NP 完全性理论的基础\""
     },
     "quoteAttribution": {
-      "en": "《Stephen A. Cook A.M. Turing Award citation》, Association for Computing Machinery, 1982",
+      "en": "<em>Stephen A. Cook A.M. Turing Award citation</em>, Association for Computing Machinery, 1982",
       "zh": "《斯蒂芬·A·库克 ACM 图灵奖获奖说明》, 美国计算机协会, 1982"
     },
     "quoteMeta": {
@@ -5294,7 +5294,7 @@ const milestones = [
       "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
     },
     "quoteAttribution": {
-      "en": "《An Overview of Statistical Learning Theory》, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "en": "<em>An Overview of Statistical Learning Theory</em>, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
       "zh": "《统计学习理论概览》, 弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
     },
     "quoteMeta": {
@@ -5704,7 +5704,7 @@ const milestones = [
       "zh": "\"能够发现符号逻辑中定理的证明\""
     },
     "quoteAttribution": {
-      "en": "《The Logic Theory Machine: A Complex Information Processing System》, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "en": "<em>The Logic Theory Machine: A Complex Information Processing System</em>, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
       "zh": "《逻辑理论机：一个复杂信息处理系统》, 艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
     },
     "quoteMeta": {
@@ -6088,7 +6088,7 @@ const milestones = [
       "zh": "\"给出了一个谓词演算的证明过程\""
     },
     "quoteAttribution": {
-      "en": "《Proving Theorems by Pattern Recognition - II》, Hao Wang, Bell System Technical Journal, 1961",
+      "en": "<em>Proving Theorems by Pattern Recognition - II</em>, Hao Wang, Bell System Technical Journal, 1961",
       "zh": "《通过模式识别证明定理（二）》, 王浩, 《贝尔系统技术期刊》, 1961"
     },
     "quoteMeta": {
@@ -6511,7 +6511,7 @@ const milestones = [
       "zh": "\"给出了量词理论的统一证明过程\""
     },
     "quoteAttribution": {
-      "en": "《A Computing Procedure for Quantification Theory》, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "en": "<em>A Computing Procedure for Quantification Theory</em>, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
       "zh": "《量词理论的计算过程》, 马丁·戴维斯、希拉里·普特南, 《ACM 杂志》, 1960"
     },
     "quoteMeta": {
@@ -6910,7 +6910,7 @@ const milestones = [
       "zh": "\"易于实现且计算高效\""
     },
     "quoteAttribution": {
-      "en": "《Adam: A Method for Stochastic Optimization》, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "en": "<em>Adam: A Method for Stochastic Optimization</em>, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
       "zh": "《Adam：一种随机优化方法》, 迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
     },
     "quoteMeta": {
@@ -7365,7 +7365,7 @@ const milestones = [
       "zh": "\"非常深的卷积网络\""
     },
     "quoteAttribution": {
-      "en": "《Very Deep Convolutional Networks for Large-Scale Image Recognition》, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "en": "<em>Very Deep Convolutional Networks for Large-Scale Image Recognition</em>, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
       "zh": "《用于大规模图像识别的超深卷积网络》, 卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
     },
     "quoteMeta": {
@@ -7800,7 +7800,7 @@ const milestones = [
       "zh": "\"自然与人工系统中的适应\""
     },
     "quoteAttribution": {
-      "en": "《Adaptation in Natural and Artificial Systems》, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "en": "<em>Adaptation in Natural and Artificial Systems</em>, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
       "zh": "《自然系统与人工系统中的适应》, 约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
     },
     "quoteMeta": {
@@ -8273,7 +8273,7 @@ const milestones = [
       "zh": "\"用于生物医学图像分割的卷积网络\""
     },
     "quoteAttribution": {
-      "en": "《U-Net: Convolutional Networks for Biomedical Image Segmentation》, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "en": "<em>U-Net: Convolutional Networks for Biomedical Image Segmentation</em>, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
       "zh": "《U-Net：用于生物医学图像分割的卷积网络》, 奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
     },
     "quoteMeta": {
@@ -8762,7 +8762,7 @@ const milestones = [
       "zh": "\"迈向实时目标检测\""
     },
     "quoteAttribution": {
-      "en": "《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "en": "<em>Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</em>, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
       "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》, 任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
     },
     "quoteMeta": {
@@ -9233,7 +9233,7 @@ const milestones = [
       "zh": "\"最优间隔分类器\""
     },
     "quoteAttribution": {
-      "en": "《A Training Algorithm for Optimal Margin Classifiers》, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "en": "<em>A Training Algorithm for Optimal Margin Classifiers</em>, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
       "zh": "《最优间隔分类器的训练算法》, 伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
     },
     "quoteMeta": {
@@ -9710,7 +9710,7 @@ const milestones = [
       "zh": "\"分类与回归树\""
     },
     "quoteAttribution": {
-      "en": "《Classification and Regression Trees》, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+      "en": "<em>Classification and Regression Trees</em>, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
       "zh": "《分类与回归树》, 利奥·布雷曼, 杰罗姆·H·弗里德曼、理查德·A·奥尔申、查尔斯·J·斯通, 沃兹沃思 / 劳特利奇专著, 1984"
     },
     "quoteMeta": {
@@ -10174,7 +10174,7 @@ const milestones = [
       "zh": "\"通过模拟退火进行优化\""
     },
     "quoteAttribution": {
-      "en": "《Optimization by Simulated Annealing》, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+      "en": "<em>Optimization by Simulated Annealing</em>, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
       "zh": "《模拟退火优化》, 斯科特·柯克帕特里克, C·丹尼尔·格拉特 Jr.、马里奥·P·维基, 《科学》, 1983"
     },
     "quoteMeta": {
@@ -10621,7 +10621,7 @@ const milestones = [
       "zh": "\"回归收缩与选择\""
     },
     "quoteAttribution": {
-      "en": "《Regression Shrinkage and Selection via the Lasso》, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+      "en": "<em>Regression Shrinkage and Selection via the Lasso</em>, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
       "zh": "《通过 Lasso 进行回归收缩与选择》, 罗伯特·蒂布希拉尼, 《皇家统计学会期刊 B辑》, 1996"
     },
     "quoteMeta": {
@@ -11076,7 +11076,7 @@ const milestones = [
       "zh": "\"用卷积走得更深\""
     },
     "quoteAttribution": {
-      "en": "《Going Deeper with Convolutions》, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "en": "<em>Going Deeper with Convolutions</em>, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
       "zh": "《用卷积走得更深》, 克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
     },
     "quoteMeta": {
@@ -11514,7 +11514,7 @@ const milestones = [
       "zh": "\"归结原理\""
     },
     "quoteAttribution": {
-      "en": "《A Machine-Oriented Logic Based on the Resolution Principle》, John Alan Robinson, Journal of the ACM, 1965",
+      "en": "<em>A Machine-Oriented Logic Based on the Resolution Principle</em>, John Alan Robinson, Journal of the ACM, 1965",
       "zh": "《基于归结原理的机器导向逻辑》, 约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
     },
     "quoteMeta": {
@@ -11959,7 +11959,7 @@ const milestones = [
       "zh": "\"逻辑程序设计\""
     },
     "quoteAttribution": {
-      "en": "《The Birth of Prolog》, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "en": "<em>The Birth of Prolog</em>, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
       "zh": "《Prolog 的诞生》, 阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
     },
     "quoteMeta": {
@@ -12391,7 +12391,7 @@ const milestones = [
       "zh": "\"人与机器之间的交流\""
     },
     "quoteAttribution": {
-      "en": "《ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine》, Joseph Weizenbaum, Communications of the ACM, 1966",
+      "en": "<em>ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine</em>, Joseph Weizenbaum, Communications of the ACM, 1966",
       "zh": "《ELIZA：研究人与机器之间自然语言交流的计算机程序》, 约瑟夫·魏岑鲍姆, 《ACM 通讯》, 1966"
     },
     "quoteMeta": {
@@ -12826,7 +12826,7 @@ const milestones = [
       "zh": "\"神经网络与物理系统\""
     },
     "quoteAttribution": {
-      "en": "《Neural Networks and Physical Systems with Emergent Collective Computational Abilities》, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "en": "<em>Neural Networks and Physical Systems with Emergent Collective Computational Abilities</em>, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
       "zh": "《具有涌现集体计算能力的神经网络与物理系统》, 约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
     },
     "quoteMeta": {
@@ -13259,7 +13259,7 @@ const milestones = [
       "zh": "\"防止神经网络过拟合\""
     },
     "quoteAttribution": {
-      "en": "《Dropout: A Simple Way to Prevent Neural Networks from Overfitting》, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "en": "<em>Dropout: A Simple Way to Prevent Neural Networks from Overfitting</em>, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
       "zh": "《Dropout：防止神经网络过拟合的简单方法》, 尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
     },
     "quoteMeta": {
@@ -13701,7 +13701,7 @@ const milestones = [
       "zh": "\"只看一次\""
     },
     "quoteAttribution": {
-      "en": "《You Only Look Once: Unified, Real-Time Object Detection》, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "en": "<em>You Only Look Once: Unified, Real-Time Object Detection</em>, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
       "zh": "《你只看一次：统一的实时目标检测》, 约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
     },
     "quoteMeta": {
@@ -14130,7 +14130,7 @@ const milestones = [
       "zh": "\"词的分布式表示\""
     },
     "quoteAttribution": {
-      "en": "《Distributed Representations of Words and Phrases and their Compositionality》, Tomas Mikolov et al., NeurIPS, 2013",
+      "en": "<em>Distributed Representations of Words and Phrases and their Compositionality</em>, Tomas Mikolov et al., NeurIPS, 2013",
       "zh": "《词与短语的分布式表示及其组合性》, 托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
     },
     "quoteMeta": {
@@ -14572,7 +14572,7 @@ const milestones = [
       "zh": "\"大规模层级图像数据库\""
     },
     "quoteAttribution": {
-      "en": "《ImageNet: A Large-Scale Hierarchical Image Database》, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "en": "<em>ImageNet: A Large-Scale Hierarchical Image Database</em>, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
       "zh": "《ImageNet：大规模层级图像数据库》, 邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
     },
     "quoteMeta": {
@@ -15017,7 +15017,7 @@ const milestones = [
       "zh": "\"用深度强化学习玩 Atari\""
     },
     "quoteAttribution": {
-      "en": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
+      "en": "<em>Playing Atari with Deep Reinforcement Learning</em>, Volodymyr Mnih et al., DeepMind, 2013",
       "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
     },
     "quoteMeta": {
@@ -15459,7 +15459,7 @@ const milestones = [
       "zh": "\"潜在狄利克雷分配\""
     },
     "quoteAttribution": {
-      "en": "《Latent Dirichlet Allocation》, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "en": "<em>Latent Dirichlet Allocation</em>, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
       "zh": "《潜在狄利克雷分配》, 戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
     },
     "quoteMeta": {
@@ -15888,7 +15888,7 @@ const milestones = [
       "zh": "\"积木世界语言理解\""
     },
     "quoteAttribution": {
-      "en": "《SHRDLU dissertation record》, Terry Winograd",
+      "en": "<em>SHRDLU dissertation record</em>, Terry Winograd",
       "zh": "《SHRDLU 博士论文记录》, 特里·维诺格拉德"
     },
     "quoteMeta": {
@@ -16319,7 +16319,7 @@ const milestones = [
       "zh": "\"专用国际象棋搜索硬件\""
     },
     "quoteAttribution": {
-      "en": "《Deep Blue journal article》, Murray Campbell",
+      "en": "<em>Deep Blue journal article</em>, Murray Campbell",
       "zh": "《深蓝期刊论文》, 默里·坎贝尔"
     },
     "quoteMeta": {
@@ -16750,7 +16750,7 @@ const milestones = [
       "zh": "\"带默认值和继承的槽结构\""
     },
     "quoteAttribution": {
-      "en": "《A Framework for Representing Knowledge》, Marvin Minsky",
+      "en": "<em>A Framework for Representing Knowledge</em>, Marvin Minsky",
       "zh": "《表示知识的一种框架》, 马文·明斯基"
     },
     "quoteMeta": {
@@ -17179,7 +17179,7 @@ const milestones = [
       "zh": "\"规则引导的化学结构推断\""
     },
     "quoteAttribution": {
-      "en": "《Chemical inference paper record》, Edward Feigenbaum",
+      "en": "<em>Chemical inference paper record</em>, Edward Feigenbaum",
       "zh": "《化学推断论文记录》, 爱德华·费根鲍姆"
     },
     "quoteMeta": {
@@ -17598,7 +17598,7 @@ const milestones = [
       "zh": "\"尺度不变局部特征\""
     },
     "quoteAttribution": {
-      "en": "《SIFT ICCV paper PDF》, David Lowe",
+      "en": "<em>SIFT ICCV paper PDF</em>, David Lowe",
       "zh": "《SIFT 国际计算机视觉会议论文 PDF》, 戴维·洛"
     },
     "quoteMeta": {
@@ -18014,7 +18014,7 @@ const milestones = [
       "zh": "\"保持邻域的非线性嵌入\""
     },
     "quoteAttribution": {
-      "en": "《Visualizing Data using t-SNE》, Laurens van der Maaten",
+      "en": "<em>Visualizing Data using t-SNE</em>, Laurens van der Maaten",
       "zh": "《使用 t-SNE 可视化数据》, 劳伦斯·范德马滕"
     },
     "quoteMeta": {
@@ -18442,7 +18442,7 @@ const milestones = [
       "zh": "\"线性阈值学习机\""
     },
     "quoteAttribution": {
-      "en": "《The perceptron paper record》, Frank Rosenblatt",
+      "en": "<em>The perceptron paper record</em>, Frank Rosenblatt",
       "zh": "《感知机论文记录》, 弗兰克·罗森布拉特"
     },
     "quoteMeta": {
@@ -18864,7 +18864,7 @@ const milestones = [
       "zh": "\"逐层无监督预训练\""
     },
     "quoteAttribution": {
-      "en": "《Fast learning algorithm for deep belief nets》, Geoffrey Hinton",
+      "en": "<em>Fast learning algorithm for deep belief nets</em>, Geoffrey Hinton",
       "zh": "《深度置信网络的快速学习算法》, 杰弗里·辛顿"
     },
     "quoteMeta": {
@@ -19280,7 +19280,7 @@ const milestones = [
       "zh": "\"自举式价值预测\""
     },
     "quoteAttribution": {
-      "en": "《Learning to predict by temporal differences》, Richard Sutton",
+      "en": "<em>Learning to predict by temporal differences</em>, Richard Sutton",
       "zh": "《通过时序差分学习预测》, 理查德·萨顿"
     },
     "quoteMeta": {
@@ -19699,7 +19699,7 @@ const milestones = [
       "zh": "\"有向无环图加条件概率\""
     },
     "quoteAttribution": {
-      "en": "《Bayesian Networks technical paper》, Judea Pearl",
+      "en": "<em>Bayesian Networks technical paper</em>, Judea Pearl",
       "zh": "《贝叶斯网络技术论文》, 朱迪亚·珀尔"
     },
     "quoteMeta": {
@@ -20127,7 +20127,7 @@ const milestones = [
       "zh": "\"让归结式证明搜索变得实用\""
     },
     "quoteAttribution": {
-      "en": "《OTTER 3.3 Reference Manual》, William McCune",
+      "en": "<em>OTTER 3.3 Reference Manual</em>, William McCune",
       "zh": "《OTTER 3.3 参考手册》, 威廉·麦丘恩"
     },
     "quoteMeta": {
@@ -20585,7 +20585,7 @@ const milestones = [
       "zh": "\"生成假设、评分证据、排序答案\""
     },
     "quoteAttribution": {
-      "en": "《Watson: Beyond Jeopardy!》, David Ferrucci et al.",
+      "en": "<em>Watson: Beyond Jeopardy!</em>, David Ferrucci et al.",
       "zh": "《沃森：超越《危险边缘！》》, 戴维·费鲁奇等"
     },
     "quoteMeta": {
@@ -21041,7 +21041,7 @@ const milestones = [
       "zh": "\"非数值程序也可以对弈\""
     },
     "quoteAttribution": {
-      "en": "《Logical or non-mathematical programmes》, Christopher Strachey",
+      "en": "<em>Logical or non-mathematical programmes</em>, Christopher Strachey",
       "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
     },
     "quoteMeta": {
@@ -21497,7 +21497,7 @@ const milestones = [
       "zh": "\"跳棋完美对弈结果为和棋\""
     },
     "quoteAttribution": {
-      "en": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
+      "en": "<em>Checkers Is Solved</em>, Jonathan Schaeffer et al.",
       "zh": "《跳棋已被求解》, 乔纳森·谢弗等"
     },
     "quoteMeta": {
@@ -21950,7 +21950,7 @@ const milestones = [
       "zh": "\"分层特征投票构成感知\""
     },
     "quoteAttribution": {
-      "en": "《Pandemonium: A Paradigm for Learning》, Oliver G. Selfridge",
+      "en": "<em>Pandemonium: A Paradigm for Learning</em>, Oliver G. Selfridge",
       "zh": "《群魔殿：一种学习范式》, 奥利弗·G·塞尔弗里奇"
     },
     "quoteMeta": {
@@ -22419,7 +22419,7 @@ const milestones = [
       "zh": "\"把常识显式化为知识\""
     },
     "quoteAttribution": {
-      "en": "《Building Large Knowledge-Based Systems》, Douglas B. Lenat and R. V. Guha",
+      "en": "<em>Building Large Knowledge-Based Systems</em>, Douglas B. Lenat and R. V. Guha",
       "zh": "《构建大型知识系统》, 道格拉斯·B·莱纳特、R·V·古哈"
     },
     "quoteMeta": {
@@ -22875,7 +22875,7 @@ const milestones = [
       "zh": "\"产生式规则配置真实订单\""
     },
     "quoteAttribution": {
-      "en": "《R1: An Expert in the Computer Systems Domain》, John McDermott",
+      "en": "<em>R1: An Expert in the Computer Systems Domain</em>, John McDermott",
       "zh": "《R1：计算机系统领域的专家》, 约翰·麦克德莫特"
     },
     "quoteMeta": {
@@ -23331,7 +23331,7 @@ const milestones = [
       "zh": "\"分配样本、更新质心、反复迭代\""
     },
     "quoteAttribution": {
-      "en": "《Least squares quantization in PCM》, Stuart Lloyd",
+      "en": "<em>Least squares quantization in PCM</em>, Stuart Lloyd",
       "zh": "《PCM 中的最小二乘量化》, 斯图尔特·劳埃德"
     },
     "quoteMeta": {
@@ -23797,7 +23797,7 @@ const milestones = [
       "zh": "\"簇是被稀疏噪声隔开的密集区域\""
     },
     "quoteAttribution": {
-      "en": "《A density-based algorithm for discovering clusters in large spatial databases with noise》, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "en": "<em>A density-based algorithm for discovering clusters in large spatial databases with noise</em>, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
       "zh": "《一种在含噪大型空间数据库中发现簇的基于密度的算法》, 马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
     },
     "quoteMeta": {
@@ -24266,7 +24266,7 @@ const milestones = [
       "zh": "\"通过图的谱来切分图\""
     },
     "quoteAttribution": {
-      "en": "《Normalized Cuts and Image Segmentation》, Jianbo Shi and Jitendra Malik",
+      "en": "<em>Normalized Cuts and Image Segmentation</em>, Jianbo Shi and Jitendra Malik",
       "zh": "《归一化切分与图像分割》, 史建波、吉滕德拉·马利克"
     },
     "quoteMeta": {
@@ -24735,7 +24735,7 @@ const milestones = [
       "zh": "\"最近邻模式分类\""
     },
     "quoteAttribution": {
-      "en": "《Nearest Neighbor Pattern Classification》, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+      "en": "<em>Nearest Neighbor Pattern Classification</em>, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
       "zh": "《最近邻模式分类》, 托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
     },
     "quoteMeta": {
@@ -25183,7 +25183,7 @@ const milestones = [
       "zh": "\"岭回归：非正交问题中的有偏估计\""
     },
     "quoteAttribution": {
-      "en": "《Ridge Regression: Biased Estimation for Nonorthogonal Problems》, Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
+      "en": "<em>Ridge Regression: Biased Estimation for Nonorthogonal Problems</em>, Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
       "zh": "《岭回归：非正交问题中的有偏估计》, 阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970"
     },
     "quoteMeta": {
@@ -25631,7 +25631,7 @@ const milestones = [
       "zh": "\"用于人体检测的方向梯度直方图\""
     },
     "quoteAttribution": {
-      "en": "《Histograms of Oriented Gradients for Human Detection》, Navneet Dalal and Bill Triggs, CVPR, 2005",
+      "en": "<em>Histograms of Oriented Gradients for Human Detection</em>, Navneet Dalal and Bill Triggs, CVPR, 2005",
       "zh": "《用于人体检测的方向梯度直方图》, 纳夫尼特·达拉尔、比尔·特里格斯，CVPR，2005"
     },
     "quoteMeta": {
@@ -26079,7 +26079,7 @@ const milestones = [
       "zh": "\"SURF：加速稳健特征\""
     },
     "quoteAttribution": {
-      "en": "《SURF: Speeded Up Robust Features》, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+      "en": "<em>SURF: Speeded Up Robust Features</em>, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
       "zh": "《SURF：加速稳健特征》, 赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
     },
     "quoteMeta": {
@@ -26527,7 +26527,7 @@ const milestones = [
       "zh": "\"作为核特征值问题的非线性成分分析\""
     },
     "quoteAttribution": {
-      "en": "《Nonlinear Component Analysis as a Kernel Eigenvalue Problem》, Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
+      "en": "<em>Nonlinear Component Analysis as a Kernel Eigenvalue Problem</em>, Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
       "zh": "《作为核特征值问题的非线性成分分析》, 伯恩哈德·舍尔科普夫、亚历山大·斯莫拉、克劳斯-罗伯特·穆勒，《Neural Computation》，1998"
     },
     "quoteMeta": {
@@ -26975,7 +26975,7 @@ const milestones = [
       "zh": "\"通过非负矩阵分解学习物体部件\""
     },
     "quoteAttribution": {
-      "en": "《Learning the parts of objects by non-negative matrix factorization》, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+      "en": "<em>Learning the parts of objects by non-negative matrix factorization</em>, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
       "zh": "《通过非负矩阵分解学习物体部件》, 丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
     },
     "quoteMeta": {
@@ -27423,7 +27423,7 @@ const milestones = [
       "zh": "\"非线性降维的全局几何框架\""
     },
     "quoteAttribution": {
-      "en": "《A Global Geometric Framework for Nonlinear Dimensionality Reduction》, Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
+      "en": "<em>A Global Geometric Framework for Nonlinear Dimensionality Reduction</em>, Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
       "zh": "《非线性降维的全局几何框架》, 约书亚·B·特南鲍姆、维恩·德席尔瓦、约翰·C·兰福德，《Science》，2000"
     },
     "quoteMeta": {
@@ -27871,7 +27871,7 @@ const milestones = [
       "zh": "\"通过局部线性嵌入进行非线性降维\""
     },
     "quoteAttribution": {
-      "en": "《Nonlinear Dimensionality Reduction by Locally Linear Embedding》, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+      "en": "<em>Nonlinear Dimensionality Reduction by Locally Linear Embedding</em>, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
       "zh": "《通过局部线性嵌入进行非线性降维》, 萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
     },
     "quoteMeta": {
@@ -28319,7 +28319,7 @@ const milestones = [
       "zh": "\"神经活动内在观念的逻辑演算\""
     },
     "quoteAttribution": {
-      "en": "《A Logical Calculus of Ideas Immanent in Nervous Activity》, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+      "en": "<em>A Logical Calculus of Ideas Immanent in Nervous Activity</em>, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
       "zh": "《神经活动内在观念的逻辑演算》, 沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
     },
     "quoteMeta": {
@@ -28767,7 +28767,7 @@ const milestones = [
       "zh": "\"随机神经模拟强化计算器\""
     },
     "quoteAttribution": {
-      "en": "《SNARC historical records》, Marvin Minsky and Dean Edmonds, 1951",
+      "en": "<em>SNARC historical records</em>, Marvin Minsky and Dean Edmonds, 1951",
       "zh": "《SNARC 历史记录》, 马文·明斯基、迪恩·埃德蒙兹，1951"
     },
     "quoteMeta": {
@@ -29202,7 +29202,7 @@ const milestones = [
       "zh": "\"拓扑正确特征映射的自组织形成\""
     },
     "quoteAttribution": {
-      "en": "《Self-organized formation of topologically correct feature maps》, Teuvo Kohonen, Biological Cybernetics, 1982",
+      "en": "<em>Self-organized formation of topologically correct feature maps</em>, Teuvo Kohonen, Biological Cybernetics, 1982",
       "zh": "《拓扑正确特征映射的自组织形成》, 泰沃·科霍宁，《Biological Cybernetics》，1982"
     },
     "quoteMeta": {
@@ -29650,7 +29650,7 @@ const milestones = [
       "zh": "\"通过反向传播误差学习表示\""
     },
     "quoteAttribution": {
-      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+      "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
       "zh": "《通过反向传播误差学习表示》, 大卫·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯，《Nature》，1986"
     },
     "quoteMeta": {
@@ -30102,7 +30102,7 @@ const milestones = [
       "zh": "\"整流线性单元\""
     },
     "quoteAttribution": {
-      "en": "《Deep Sparse Rectifier Neural Networks》, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+      "en": "<em>Deep Sparse Rectifier Neural Networks</em>, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
       "zh": "《深度稀疏整流神经网络》, 泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
     },
     "quoteMeta": {
@@ -30541,7 +30541,7 @@ const milestones = [
       "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
     },
     "quoteAttribution": {
-      "en": "《Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position》, Kunihiko Fukushima, Biological Cybernetics, 1980",
+      "en": "<em>Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position</em>, Kunihiko Fukushima, Biological Cybernetics, 1980",
       "zh": "《Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型》, 福岛邦彦，《Biological Cybernetics》，1980"
     },
     "quoteMeta": {
@@ -30976,7 +30976,7 @@ const milestones = [
       "zh": "\"反向传播应用于手写邮编识别\""
     },
     "quoteAttribution": {
-      "en": "《Backpropagation Applied to Handwritten Zip Code Recognition》, Yann LeCun et al., Neural Computation, 1989",
+      "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
       "zh": "《反向传播应用于手写邮编识别》, 扬·勒昆等，《Neural Computation》，1989"
     },
     "quoteMeta": {
@@ -31411,7 +31411,7 @@ const milestones = [
       "zh": "\"神经概率语言模型\""
     },
     "quoteAttribution": {
-      "en": "《A Neural Probabilistic Language Model》, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+      "en": "<em>A Neural Probabilistic Language Model</em>, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
       "zh": "《神经概率语言模型》, 约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
     },
     "quoteMeta": {
@@ -31859,7 +31859,7 @@ const milestones = [
       "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
     },
     "quoteAttribution": {
-      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
       "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
     },
     "quoteMeta": {
@@ -32307,7 +32307,7 @@ const milestones = [
       "zh": "\"用于图像识别的深度残差学习\""
     },
     "quoteAttribution": {
-      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+      "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
       "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
     },
     "quoteMeta": {
@@ -32755,7 +32755,7 @@ const milestones = [
       "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""
     },
     "quoteAttribution": {
-      "en": "《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》, Sergey Ioffe and Christian Szegedy, ICML, 2015",
+      "en": "<em>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</em>, Sergey Ioffe and Christian Szegedy, ICML, 2015",
       "zh": "《批归一化：通过减少内部协变量偏移加速深度网络训练》, 谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
     },
     "quoteMeta": {
@@ -33203,7 +33203,7 @@ const milestones = [
       "zh": "\"密集连接卷积网络\""
     },
     "quoteAttribution": {
-      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
       "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
     },
     "quoteMeta": {
@@ -33655,7 +33655,7 @@ const milestones = [
       "zh": "\"Attention Is All You Need\""
     },
     "quoteAttribution": {
-      "en": "《Attention Is All You Need》, Ashish Vaswani et al., NeurIPS, 2017",
+      "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
       "zh": "《Attention Is All You Need》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
     },
     "quoteMeta": {
@@ -34107,7 +34107,7 @@ const milestones = [
       "zh": "\"一张图像价值 16x16 个词\""
     },
     "quoteAttribution": {
-      "en": "《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》, Alexey Dosovitskiy et al., ICLR, 2021",
+      "en": "<em>An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</em>, Alexey Dosovitskiy et al., ICLR, 2021",
       "zh": "《一张图像价值 16x16 个词：用于大规模图像识别的 Transformer》, 阿列克谢·多索维茨基等，ICLR，2021"
     },
     "quoteMeta": {
@@ -34555,7 +34555,7 @@ const milestones = [
       "zh": "\"长短期记忆\""
     },
     "quoteAttribution": {
-      "en": "《Long Short-Term Memory》, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
       "zh": "《长短期记忆》, 塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
     },
     "quoteMeta": {
@@ -35007,7 +35007,7 @@ const milestones = [
       "zh": "\"生成对抗网络\""
     },
     "quoteAttribution": {
-      "en": "《Generative Adversarial Nets》, Ian Goodfellow et al., NeurIPS, 2014",
+      "en": "<em>Generative Adversarial Nets</em>, Ian Goodfellow et al., NeurIPS, 2014",
       "zh": "《生成对抗网络》, 伊恩·古德费洛等，NeurIPS，2014"
     },
     "quoteMeta": {
@@ -35459,7 +35459,7 @@ const milestones = [
       "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
     },
     "quoteAttribution": {
-      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
       "zh": "《通过联合学习对齐与翻译实现神经机器翻译》, 兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
     },
     "quoteMeta": {
@@ -35894,7 +35894,7 @@ const milestones = [
       "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
     },
     "quoteAttribution": {
-      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al., NAACL, 2019",
+      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al., NAACL, 2019",
       "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，NAACL，2019"
     },
     "quoteMeta": {
@@ -36329,7 +36329,7 @@ const milestones = [
       "zh": "\"通过生成式预训练改进语言理解\""
     },
     "quoteAttribution": {
-      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford et al., OpenAI, 2018",
+      "en": "<em>Improving Language Understanding by Generative Pre-Training</em>, Alec Radford et al., OpenAI, 2018",
       "zh": "《通过生成式预训练改进语言理解》, 亚历克·拉德福德等，OpenAI，2018"
     },
     "quoteMeta": {
@@ -36777,7 +36777,7 @@ const milestones = [
       "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
     },
     "quoteAttribution": {
-      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al., Nature, 2021",
+      "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al., Nature, 2021",
       "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，《Nature》，2021"
     },
     "quoteMeta": {
@@ -37212,7 +37212,7 @@ const milestones = [
       "zh": "\"从自然语言监督中学习可迁移视觉模型\""
     },
     "quoteAttribution": {
-      "en": "《Learning Transferable Visual Models From Natural Language Supervision》, Alec Radford et al., ICML, 2021",
+      "en": "<em>Learning Transferable Visual Models From Natural Language Supervision</em>, Alec Radford et al., ICML, 2021",
       "zh": "《从自然语言监督中学习可迁移视觉模型》, 亚历克·拉德福德等，ICML，2021"
     },
     "quoteMeta": {
@@ -37647,7 +37647,7 @@ const milestones = [
       "zh": "\"零样本文本到图像生成\""
     },
     "quoteAttribution": {
-      "en": "《Zero-Shot Text-to-Image Generation》, Aditya Ramesh et al., ICML, 2021",
+      "en": "<em>Zero-Shot Text-to-Image Generation</em>, Aditya Ramesh et al., ICML, 2021",
       "zh": "《零样本文本到图像生成》, 阿迪蒂亚·拉梅什等，ICML，2021"
     },
     "quoteMeta": {
@@ -38082,7 +38082,7 @@ const milestones = [
       "zh": "\"使用潜扩散模型进行高分辨率图像合成\""
     },
     "quoteAttribution": {
-      "en": "《High-Resolution Image Synthesis with Latent Diffusion Models》, Robin Rombach et al., CVPR, 2022",
+      "en": "<em>High-Resolution Image Synthesis with Latent Diffusion Models</em>, Robin Rombach et al., CVPR, 2022",
       "zh": "《使用潜扩散模型进行高分辨率图像合成》, 罗宾·罗姆巴赫等，CVPR，2022"
     },
     "quoteMeta": {
@@ -38521,7 +38521,7 @@ const milestones = [
       "zh": "\"分割一切\""
     },
     "quoteAttribution": {
-      "en": "《Segment Anything》, Alexander Kirillov et al., ICCV, 2023",
+      "en": "<em>Segment Anything</em>, Alexander Kirillov et al., ICCV, 2023",
       "zh": "《Segment Anything》, 亚历山大·基里洛夫等，ICCV，2023"
     },
     "quoteMeta": {
@@ -38956,7 +38956,7 @@ const milestones = [
       "zh": "\"使用移位窗口的层级视觉 Transformer\""
     },
     "quoteAttribution": {
-      "en": "《Swin Transformer: Hierarchical Vision Transformer using Shifted Windows》, Ze Liu et al., ICCV, 2021",
+      "en": "<em>Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</em>, Ze Liu et al., ICCV, 2021",
       "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》, 刘泽等，ICCV，2021"
     },
     "quoteMeta": {
@@ -39422,7 +39422,7 @@ const milestones = [
       "zh": "\"用于词表示的全局向量\""
     },
     "quoteAttribution": {
-      "en": "《GloVe: Global Vectors for Word Representation》, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+      "en": "<em>GloVe: Global Vectors for Word Representation</em>, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
       "zh": "《GloVe：用于词表示的全局向量》, 杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
     },
     "quoteMeta": {
@@ -39888,7 +39888,7 @@ const milestones = [
       "zh": "\"条件生成对抗网络\""
     },
     "quoteAttribution": {
-      "en": "《Conditional Generative Adversarial Nets》, Mehdi Mirza and Simon Osindero, 2014",
+      "en": "<em>Conditional Generative Adversarial Nets</em>, Mehdi Mirza and Simon Osindero, 2014",
       "zh": "《条件生成对抗网络》, 迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
     },
     "quoteMeta": {
@@ -40354,7 +40354,7 @@ const milestones = [
       "zh": "\"使用深度卷积生成对抗网络进行无监督表示学习\""
     },
     "quoteAttribution": {
-      "en": "《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+      "en": "<em>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</em>, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
       "zh": "《使用深度卷积生成对抗网络进行无监督表示学习》, 亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
     },
     "quoteMeta": {
@@ -40820,7 +40820,7 @@ const milestones = [
       "zh": "\"Wasserstein 生成对抗网络\""
     },
     "quoteAttribution": {
-      "en": "《Wasserstein Generative Adversarial Networks》, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+      "en": "<em>Wasserstein Generative Adversarial Networks</em>, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
       "zh": "《Wasserstein 生成对抗网络》, 马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
     },
     "quoteMeta": {
@@ -41286,7 +41286,7 @@ const milestones = [
       "zh": "\"使用循环一致对抗网络进行非配对图像到图像转换\""
     },
     "quoteAttribution": {
-      "en": "《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》, Jun-Yan Zhu et al., ICCV, 2017",
+      "en": "<em>Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</em>, Jun-Yan Zhu et al., ICCV, 2017",
       "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》, 朱俊彦等，ICCV，2017"
     },
     "quoteMeta": {
@@ -41752,7 +41752,7 @@ const milestones = [
       "zh": "\"使用条件对抗网络进行图像到图像转换\""
     },
     "quoteAttribution": {
-      "en": "《Image-to-Image Translation with Conditional Adversarial Networks》, Phillip Isola et al., CVPR, 2017",
+      "en": "<em>Image-to-Image Translation with Conditional Adversarial Networks</em>, Phillip Isola et al., CVPR, 2017",
       "zh": "《使用条件对抗网络进行图像到图像转换》, 菲利普·伊索拉等，CVPR，2017"
     },
     "quoteMeta": {
@@ -42218,7 +42218,7 @@ const milestones = [
       "zh": "\"面向生成对抗网络的基于风格的生成器架构\""
     },
     "quoteAttribution": {
-      "en": "《A Style-Based Generator Architecture for Generative Adversarial Networks》, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+      "en": "<em>A Style-Based Generator Architecture for Generative Adversarial Networks</em>, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
       "zh": "《面向生成对抗网络的基于风格的生成器架构》, 特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
     },
     "quoteMeta": {
@@ -42684,7 +42684,7 @@ const milestones = [
       "zh": "\"自动编码变分贝叶斯\""
     },
     "quoteAttribution": {
-      "en": "《Auto-Encoding Variational Bayes》, Diederik Kingma and Max Welling, ICLR, 2014",
+      "en": "<em>Auto-Encoding Variational Bayes</em>, Diederik Kingma and Max Welling, ICLR, 2014",
       "zh": "《自动编码变分贝叶斯》, 迪德里克·金马、马克斯·韦林，ICLR，2014"
     },
     "quoteMeta": {
@@ -43150,7 +43150,7 @@ const milestones = [
       "zh": "\"使用非平衡热力学进行深度无监督学习\""
     },
     "quoteAttribution": {
-      "en": "《Deep Unsupervised Learning using Nonequilibrium Thermodynamics》, Jascha Sohl-Dickstein et al., ICML, 2015",
+      "en": "<em>Deep Unsupervised Learning using Nonequilibrium Thermodynamics</em>, Jascha Sohl-Dickstein et al., ICML, 2015",
       "zh": "《使用非平衡热力学进行深度无监督学习》, 雅沙·索尔-迪克斯坦等，ICML，2015"
     },
     "quoteMeta": {
@@ -43616,7 +43616,7 @@ const milestones = [
       "zh": "\"一种用于图领域学习的新模型\""
     },
     "quoteAttribution": {
-      "en": "《The Graph Neural Network Model》, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
+      "en": "<em>The Graph Neural Network Model</em>, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
       "zh": "《图神经网络模型》, 弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
     },
     "quoteMeta": {
@@ -44082,7 +44082,7 @@ const milestones = [
       "zh": "\"使用图卷积网络进行半监督分类\""
     },
     "quoteAttribution": {
-      "en": "《Semi-Supervised Classification with Graph Convolutional Networks》, Thomas Kipf and Max Welling, ICLR, 2017",
+      "en": "<em>Semi-Supervised Classification with Graph Convolutional Networks</em>, Thomas Kipf and Max Welling, ICLR, 2017",
       "zh": "《使用图卷积网络进行半监督分类》, 托马斯·基普夫、马克斯·韦林，ICLR，2017"
     },
     "quoteMeta": {
@@ -44548,7 +44548,7 @@ const milestones = [
       "zh": "\"图注意力网络\""
     },
     "quoteAttribution": {
-      "en": "《Graph Attention Networks》, Petar Velickovic et al., ICLR, 2018",
+      "en": "<em>Graph Attention Networks</em>, Petar Velickovic et al., ICLR, 2018",
       "zh": "《图注意力网络》, 佩塔尔·韦利奇科维奇等，ICLR，2018"
     },
     "quoteMeta": {
@@ -45024,7 +45024,7 @@ const milestones = [
       "zh": "\"基于强化学习的神经架构搜索\""
     },
     "quoteAttribution": {
-      "en": "《Neural Architecture Search with Reinforcement Learning》, Barret Zoph and Quoc V. Le, ICLR, 2017",
+      "en": "<em>Neural Architecture Search with Reinforcement Learning</em>, Barret Zoph and Quoc V. Le, ICLR, 2017",
       "zh": "《基于强化学习的神经架构搜索》, 巴雷特·佐夫、黎国威，ICLR，2017"
     },
     "quoteMeta": {
@@ -45490,7 +45490,7 @@ const milestones = [
       "zh": "\"用剪枝、训练型量化和霍夫曼编码压缩深度神经网络\""
     },
     "quoteAttribution": {
-      "en": "《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》, Song Han, Huizi Mao, and William Dally, ICLR, 2016",
+      "en": "<em>Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding</em>, Song Han, Huizi Mao, and William Dally, ICLR, 2016",
       "zh": "《深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络》, 韩松、毛慧子、威廉·达利，ICLR，2016"
     },
     "quoteMeta": {
@@ -45966,7 +45966,7 @@ const milestones = [
       "zh": "\"蒸馏神经网络中的知识\""
     },
     "quoteAttribution": {
-      "en": "《Distilling the Knowledge in a Neural Network》, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+      "en": "<em>Distilling the Knowledge in a Neural Network</em>, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
       "zh": "《蒸馏神经网络中的知识》, 杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
     },
     "quoteMeta": {
@@ -46432,7 +46432,7 @@ const milestones = [
       "zh": "\"上下文中的常见物体\""
     },
     "quoteAttribution": {
-      "en": "《Microsoft COCO: Common Objects in Context》, Tsung-Yi Lin et al., ECCV, 2014",
+      "en": "<em>Microsoft COCO: Common Objects in Context</em>, Tsung-Yi Lin et al., ECCV, 2014",
       "zh": "《Microsoft COCO：上下文中的常见物体》, 林宗毅等，ECCV，2014"
     },
     "quoteMeta": {
@@ -46898,7 +46898,7 @@ const milestones = [
       "zh": "\"从延迟奖励中学习\""
     },
     "quoteAttribution": {
-      "en": "《Learning from Delayed Rewards》, Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
+      "en": "<em>Learning from Delayed Rewards</em>, Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
       "zh": "《从延迟奖励中学习》, 克里斯托弗·沃特金斯，博士论文，1989；沃特金斯和彼得·戴扬，1992"
     },
     "quoteMeta": {
@@ -47364,7 +47364,7 @@ const milestones = [
       "zh": "\"使用深度强化学习进行连续控制\""
     },
     "quoteAttribution": {
-      "en": "《Continuous Control with Deep Reinforcement Learning》, Timothy Lillicrap et al., ICLR, 2016",
+      "en": "<em>Continuous Control with Deep Reinforcement Learning</em>, Timothy Lillicrap et al., ICLR, 2016",
       "zh": "《使用深度强化学习进行连续控制》, 蒂莫西·利利克拉普等，ICLR，2016"
     },
     "quoteMeta": {
@@ -47830,7 +47830,7 @@ const milestones = [
       "zh": "\"能够解决困难学习控制问题的类神经自适应元件\""
     },
     "quoteAttribution": {
-      "en": "《Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems》, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+      "en": "<em>Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems</em>, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
       "zh": "《能够解决困难学习控制问题的类神经自适应元件》, 安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
     },
     "quoteMeta": {

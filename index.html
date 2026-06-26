@@ -4604,6 +4604,22 @@
                 .trim();
         }
 
+        function isWorkAttribution(value) {
+            const text = String(value || '').trim();
+            return text.startsWith('《') || /^<em\b[^>]*>/i.test(text);
+        }
+
+        function formatInlineTextHtml(value) {
+            const emTokens = [];
+            const tokenized = String(value || '').replace(/<em\b[^>]*>([\s\S]*?)<\/em>/gi, (_, content) => {
+                const token = `\u0000EM${emTokens.length}\u0000`;
+                emTokens.push(stripHtml(content));
+                return token;
+            });
+            return escapeHtml(stripHtml(tokenized))
+                .replace(/\u0000EM(\d+)\u0000/g, (_, index) => `<em>${escapeHtml(emTokens[Number(index)] || '')}</em>`);
+        }
+
         function tx(key) {
             return window.I18n && typeof window.I18n.t === 'function' ? window.I18n.t(key) : key;
         }
@@ -4898,7 +4914,7 @@
             const descriptionText = stripHtml(lx(safeMilestone.description) || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
-                const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? `${tx('source')}：` : `${tx('attribution')}：`;
+                const attributionPrefix = quoteAttribution && isWorkAttribution(quoteAttribution) ? `${tx('source')}：` : `${tx('attribution')}：`;
                 commentarySections.push({
                     label: tx('quoteExcerpt'),
                     html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
@@ -5116,8 +5132,9 @@
         }
 
         function extractWorkTitleFromAttribution(attribution) {
-            const match = String(attribution || '').match(/《([^》]+)》/);
-            return match ? String(match[1] || '').trim() : '';
+            const match = String(attribution || '').match(/《([^》]+)》|<em\b[^>]*>([\s\S]*?)<\/em>/i);
+            if (!match) return '';
+            return match[1] ? String(match[1] || '').trim() : stripHtml(match[2]);
         }
 
         function getConfiguredImageMeta(vm, url) {
@@ -5328,6 +5345,7 @@
             const sections = sourceSections.slice(0, maxSections).map((section, index) => ({
                 label: section.label || defaultLabels[index] || tx('contentInterpretation'),
                 text: stripHtml(section.html || ''),
+                html: section.html || '',
                 link: section.link || null
             }));
 
@@ -5347,7 +5365,9 @@
         }
 
         function buildCommentaryBodyHtml(section) {
-            const text = escapeHtml(section.text || tx('noAdditionalInfo'));
+            const text = section.html
+                ? formatInlineTextHtml(section.html)
+                : escapeHtml(section.text || tx('noAdditionalInfo'));
             const rawLink = section && section.link ? section.link : null;
             const url = rawLink && rawLink.url ? String(rawLink.url).trim() : '';
             if (!url) return text;
