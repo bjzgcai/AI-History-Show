@@ -169,14 +169,18 @@
         }
 
         .storyline-select {
+            display: none;
+        }
+
+        .storyline-trigger {
             width: 334px;
-            height: 32px;
+            min-height: 32px;
             min-width: 0;
-            border: 1px solid rgba(244, 239, 229, 0.24);
+            border: 1px solid rgba(246, 137, 0, 0.72);
             border-radius: 4px;
             background: rgba(0, 0, 0, 0.34);
             color: rgba(244, 239, 229, 0.78);
-            padding: 0 32px 0 10px;
+            padding: 0 10px 0 12px;
             font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
             font-size: 15px;
             font-weight: 700;
@@ -184,16 +188,54 @@
             letter-spacing: 0;
             text-transform: uppercase;
             cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            touch-action: manipulation;
+            box-shadow: 0 0 0 1px rgba(246, 137, 0, 0.08);
         }
 
-        .storyline-select:focus-visible {
+        .storyline-trigger:hover,
+        .storyline-trigger:focus-visible {
             border-color: rgba(246, 137, 0, 0.78);
+            color: rgba(244, 239, 229, 0.94);
+            background: rgba(246, 137, 0, 0.08);
             outline: none;
         }
 
-        .storyline-select option {
-            background: #0b0b0b;
-            color: #f4efe5;
+        .storyline-trigger-copy {
+            min-width: 0;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            overflow: hidden;
+        }
+
+        .storyline-trigger-label,
+        .storyline-trigger-status {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .storyline-trigger-label {
+            color: rgba(244, 239, 229, 0.88);
+        }
+
+        .storyline-trigger-status {
+            color: rgba(244, 239, 229, 0.72);
+        }
+
+        .storyline-trigger-icon {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2.4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         .mode-chip-label {
@@ -2085,6 +2127,153 @@
             text-transform: uppercase;
         }
 
+        .storyline-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 79;
+            display: grid;
+            place-items: center;
+            padding: 32px;
+            background: rgba(0, 0, 0, 0.76);
+            backdrop-filter: blur(10px);
+        }
+
+        .storyline-modal.is-hidden {
+            display: none;
+        }
+
+        .storyline-modal-shell {
+            position: relative;
+            width: min(820px, calc(100vw - 48px));
+            max-height: calc(100vh - 48px);
+            overflow: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(246, 137, 0, 0.38);
+            background:
+                radial-gradient(circle at 84% 0%, rgba(246, 137, 0, 0.16), transparent 35%),
+                linear-gradient(180deg, rgba(22, 19, 15, 0.98), rgba(7, 7, 7, 0.98));
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.58);
+            padding: 28px;
+            display: grid;
+            gap: 18px;
+        }
+
+        .storyline-modal-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid rgba(244, 239, 229, 0.2);
+            background: rgba(0, 0, 0, 0.32);
+            color: rgba(244, 239, 229, 0.72);
+            font-size: 24px;
+            line-height: 1;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+
+        .storyline-modal-close:hover,
+        .storyline-modal-close:focus-visible {
+            border-color: rgba(246, 137, 0, 0.72);
+            color: rgba(244, 239, 229, 0.96);
+            outline: none;
+        }
+
+        .storyline-modal-eyebrow {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .storyline-modal-title {
+            max-width: 88%;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.96);
+            font-size: 31px;
+            font-weight: 900;
+            line-height: 1.08;
+        }
+
+        .storyline-modal-subtitle {
+            color: rgba(244, 239, 229, 0.62);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.38;
+        }
+
+        .storyline-option-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .storyline-option {
+            min-height: 86px;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+                rgba(10, 10, 10, 0.88);
+            color: rgba(244, 239, 229, 0.82);
+            padding: 14px 16px;
+            display: grid;
+            gap: 7px;
+            text-align: left;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+
+        .storyline-option:hover,
+        .storyline-option:focus-visible,
+        .storyline-option.active {
+            border-color: rgba(246, 137, 0, 0.72);
+            background:
+                linear-gradient(180deg, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.045)),
+                rgba(14, 10, 6, 0.94);
+            outline: none;
+        }
+
+        .storyline-option:disabled {
+            cursor: default;
+            opacity: 0.42;
+        }
+
+        .storyline-option-title-row {
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .storyline-option-name {
+            min-width: 0;
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 18px;
+            font-weight: 850;
+            line-height: 1.16;
+        }
+
+        .storyline-option-status {
+            flex: 0 0 auto;
+            color: rgba(246, 137, 0, 0.88);
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .storyline-option-note {
+            color: rgba(244, 239, 229, 0.58);
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1.36;
+        }
+
         @media (max-width: 860px) {
             .quiz-modal {
                 padding: 18px;
@@ -2138,6 +2327,23 @@
             .region-modal-shell {
                 width: min(720px, calc(100vw - 28px));
                 padding: 22px;
+            }
+
+            .storyline-modal {
+                padding: 18px;
+            }
+
+            .storyline-modal-shell {
+                width: min(720px, calc(100vw - 28px));
+                padding: 22px;
+            }
+
+            .storyline-modal-title {
+                font-size: 24px;
+            }
+
+            .storyline-option {
+                min-height: 78px;
             }
         }
 
@@ -3521,12 +3727,22 @@
                 justify-content: flex-end;
             }
 
-            .storyline-select {
+            .storyline-trigger {
                 width: 184px;
-                height: 27px;
+                min-height: 34px;
                 padding-left: 8px;
-                padding-right: 24px;
+                padding-right: 8px;
                 font-size: 11px;
+            }
+
+            .storyline-trigger-copy {
+                gap: 5px;
+            }
+
+            .storyline-trigger-icon {
+                width: 15px;
+                height: 15px;
+                flex-basis: 15px;
             }
 
             .mode-chip-label {
@@ -3877,7 +4093,16 @@
                 </div>
                 <div class="stage-kicker" id="categoryTrack">AI创世纪（20世纪50年代至70年代）</div>
                 <div class="topbar-actions">
-                    <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
+                    <select class="storyline-select" id="storylineSelect" aria-label="Storyline" hidden></select>
+                    <button class="storyline-trigger" id="storylineTrigger" type="button" aria-haspopup="dialog" aria-controls="storylineModal">
+                        <span class="storyline-trigger-copy">
+                            <span class="storyline-trigger-label" id="storylineTriggerLabel"></span>
+                            <span class="storyline-trigger-status" id="storylineTriggerStatus"></span>
+                        </span>
+                        <svg class="storyline-trigger-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
                     <div class="mode-chip">
                         <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
                     </div>
@@ -4071,6 +4296,16 @@
         </div>
     </div>
 
+    <div class="storyline-modal is-hidden" id="storylineModal" role="dialog" aria-modal="true" aria-labelledby="storylineModalTitle">
+        <div class="storyline-modal-shell">
+            <button class="storyline-modal-close" id="storylineModalClose" type="button" aria-label="关闭">×</button>
+            <div class="storyline-modal-eyebrow" id="storylineModalEyebrow">故事线</div>
+            <h2 class="storyline-modal-title" id="storylineModalTitle"></h2>
+            <div class="storyline-modal-subtitle" id="storylineModalSubtitle"></div>
+            <div class="storyline-option-grid" id="storylineOptionGrid"></div>
+        </div>
+    </div>
+
     <div class="region-modal is-hidden" id="regionModal" role="dialog" aria-modal="true" aria-labelledby="regionModalTitle">
         <div class="region-modal-shell">
             <button class="region-modal-close" id="regionModalClose" type="button" aria-label="关闭">×</button>
@@ -4131,7 +4366,7 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, iframe, .storyline-select';
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .region-modal, .mobile-quiz-app, iframe, .storyline-select';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
         const DEFAULT_STORYLINE_ID = 'deep-learning-history';
         const STORYLINE_OPTIONS = [
@@ -4281,6 +4516,15 @@
             prevBtn: document.getElementById('prevBtn'),
             nextBtn: document.getElementById('nextBtn'),
             storylineSelect: document.getElementById('storylineSelect'),
+            storylineTrigger: document.getElementById('storylineTrigger'),
+            storylineTriggerLabel: document.getElementById('storylineTriggerLabel'),
+            storylineTriggerStatus: document.getElementById('storylineTriggerStatus'),
+            storylineModal: document.getElementById('storylineModal'),
+            storylineModalClose: document.getElementById('storylineModalClose'),
+            storylineModalEyebrow: document.getElementById('storylineModalEyebrow'),
+            storylineModalTitle: document.getElementById('storylineModalTitle'),
+            storylineModalSubtitle: document.getElementById('storylineModalSubtitle'),
+            storylineOptionGrid: document.getElementById('storylineOptionGrid'),
             timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
             globeStage: document.getElementById('globeStage'),
@@ -4513,7 +4757,22 @@
         }
 
         function renderStorylineSelect() {
-            if (!refs.storylineSelect) return;
+            const activeOption = getActiveStorylineOption();
+
+            if (refs.storylineTrigger) {
+                const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : milestoneList.length;
+                const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
+                const activeStatus = getStorylineStatus(activeOption, activeCount);
+                refs.storylineTrigger.setAttribute('aria-label', `${tx('storylineSelector')}: ${activeLabel} (${activeStatus})`);
+                refs.storylineTrigger.title = activeLabel;
+                if (refs.storylineTriggerLabel) refs.storylineTriggerLabel.textContent = activeLabel;
+                if (refs.storylineTriggerStatus) refs.storylineTriggerStatus.textContent = `(${activeStatus})`;
+            }
+
+            if (!refs.storylineSelect) {
+                if (hasOpenStorylinePicker()) renderStorylinePickerOptions();
+                return;
+            }
 
             refs.storylineSelect.setAttribute('aria-label', tx('storylineSelector'));
             refs.storylineSelect.innerHTML = STORYLINE_OPTIONS.map((option) => {
@@ -4525,8 +4784,69 @@
                 return `<option value="${escapeHtml(option.id)}"${selected}${disabled}>${escapeHtml(label + suffix)}</option>`;
             }).join('');
 
-            const activeOption = getActiveStorylineOption();
             refs.storylineSelect.title = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
+            if (hasOpenStorylinePicker()) renderStorylinePickerOptions();
+        }
+
+        function hasOpenStorylinePicker() {
+            return Boolean(refs.storylineModal && !refs.storylineModal.classList.contains('is-hidden'));
+        }
+
+        function closeStorylinePicker(options = {}) {
+            if (!refs.storylineModal) return;
+            refs.storylineModal.classList.add('is-hidden');
+            if (!options.skipFocus && refs.storylineTrigger) refs.storylineTrigger.focus();
+        }
+
+        function renderStorylinePickerOptions() {
+            if (!refs.storylineOptionGrid) return;
+
+            if (refs.storylineModalEyebrow) refs.storylineModalEyebrow.textContent = uiText('Storyline', '故事线');
+            if (refs.storylineModalTitle) refs.storylineModalTitle.textContent = uiText('Choose a Storyline', '选择故事线');
+            if (refs.storylineModalSubtitle) {
+                refs.storylineModalSubtitle.textContent = uiText(
+                    'Tap a storyline to switch the exhibition view.',
+                    '点击故事线切换当前展览视图。'
+                );
+            }
+
+            refs.storylineOptionGrid.innerHTML = STORYLINE_OPTIONS.map((option) => {
+                const count = getStorylineMilestones(option.id).length;
+                const label = getStorylineLabel(option);
+                const status = getStorylineStatus(option, count);
+                const note = String(lx(option.note) || '').trim();
+                const active = option.id === activeStorylineId ? ' active' : '';
+                const disabled = count <= 0 ? ' disabled' : '';
+                return `
+                    <button class="storyline-option${active}" type="button" data-storyline-id="${escapeHtml(option.id)}"${disabled}>
+                        <span class="storyline-option-title-row">
+                            <span class="storyline-option-name">${escapeHtml(label)}</span>
+                            <span class="storyline-option-status">${escapeHtml(status)}</span>
+                        </span>
+                        ${note ? `<span class="storyline-option-note">${escapeHtml(note)}</span>` : ''}
+                    </button>
+                `;
+            }).join('');
+
+            refs.storylineOptionGrid.querySelectorAll('.storyline-option').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const storylineId = button.dataset.storylineId || '';
+                    if (!storylineId || button.disabled) return;
+                    closeStorylinePicker({ skipFocus: true });
+                    setActiveStoryline(storylineId, { updateUrl: true });
+                });
+            });
+        }
+
+        function openStorylinePicker() {
+            if (!refs.storylineModal || !refs.storylineOptionGrid) return;
+            renderStorylinePickerOptions();
+            refs.storylineModal.classList.remove('is-hidden');
+            window.requestAnimationFrame(() => {
+                const activeButton = refs.storylineOptionGrid.querySelector('.storyline-option.active')
+                    || refs.storylineOptionGrid.querySelector('.storyline-option:not(:disabled)');
+                if (activeButton) activeButton.focus();
+            });
         }
 
         function setActiveStoryline(storylineId, options = {}) {
@@ -8728,6 +9048,13 @@
                     setActiveStoryline(refs.storylineSelect.value, { updateUrl: true });
                 });
             }
+            if (refs.storylineTrigger) refs.storylineTrigger.addEventListener('click', openStorylinePicker);
+            if (refs.storylineModalClose) refs.storylineModalClose.addEventListener('click', closeStorylinePicker);
+            if (refs.storylineModal) {
+                refs.storylineModal.addEventListener('click', (event) => {
+                    if (event.target === refs.storylineModal) closeStorylinePicker();
+                });
+            }
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
             refs.nextBtn.addEventListener('click', () => navigate('next'));
             if (refs.quizModalClose) refs.quizModalClose.addEventListener('click', completeQuizModal);
@@ -8768,6 +9095,10 @@
                     return;
                 }
                 if (hasOpenPhotoViewer()) return;
+                if (hasOpenStorylinePicker()) {
+                    if (event.key === 'Escape') closeStorylinePicker();
+                    return;
+                }
                 if (hasOpenRegionModal()) {
                     if (event.key === 'Escape') closeRegionPicker();
                     return;
