@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Ridge regression shrinkage explainer">
+  <rect width="720" height="420" rx="24" fill="#0f172a"/>
+  <text x="36" y="54" fill="#f59e0b" font-family="Arial, sans-serif" font-size="24" font-weight="700">L2 shrinkage path</text>
+  <path d="M90 332H650M110 70V350" stroke="#475569" stroke-width="3"/>
+  <path d="M128 95C220 80 305 112 382 172C468 238 540 292 632 318" fill="none" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 322C230 300 330 270 432 220C510 182 570 126 632 84" fill="none" stroke="#f97316" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 210C240 210 350 210 632 210" fill="none" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="524" cy="210" r="62" fill="none" stroke="#f8fafc" stroke-width="3" stroke-dasharray="9 8"/>
+  <text x="524" y="205" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="16">larger lambda</text>
+  <text x="524" y="228" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="16">smaller weights</text>
+  <text x="148" y="372" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">coefficient value</text>
+</svg>

@@ -408,7 +408,7 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
   <div class="diff-page-body" id="diffContent"></div>
   <div class="diff-page-footer">
     <button class="btn btn-secondary" onclick="closeDiffPanel()">取消</button>
-    <button class="btn btn-primary" id="btnConfirmApply" style="opacity:0.5;cursor:not-allowed;">确认应用</button>
+    <button class="btn btn-primary" id="btnConfirmApply" disabled style="opacity:0.5;cursor:not-allowed;">确认应用</button>
   </div>
 </div>
 
@@ -543,13 +543,27 @@ function closeDiffPanel() {
 
 function renderDiffPanel(diff) {
   const el = document.getElementById('diffContent');
-  document.getElementById('btnConfirmApply').onclick = () => { toast('权限未开放', 'error'); };
+  const confirmBtn = document.getElementById('btnConfirmApply');
+  const setConfirmEnabled = (enabled) => {
+    confirmBtn.disabled = !enabled;
+    confirmBtn.style.opacity = enabled ? '1' : '0.5';
+    confirmBtn.style.cursor = enabled ? 'pointer' : 'not-allowed';
+    confirmBtn.onclick = enabled
+      ? async () => {
+          closeDiffPanel();
+          await doGenerate();
+        }
+      : null;
+  };
+
+  setConfirmEnabled(false);
 
   if (diff.firstGeneration) {
     const n = diff.newKeys ? diff.newKeys.length : diff.totalEvents;
     el.innerHTML = `
       <div class="diff-summary">首次生成 milestones-data.js，共 <strong style="color:var(--text)">${n}</strong> 个里程碑事件</div>
     `;
+    setConfirmEnabled(true);
     return;
   }
 
@@ -561,6 +575,8 @@ function renderDiffPanel(diff) {
     </div>`;
     return;
   }
+
+  setConfirmEnabled(true);
 
   const catNote = diff.categoryChanged
     ? `&ensp;·&ensp;<span style="color:var(--accent)">分类顺序已变化（${diff.appliedCategoryOrder.join(' → ')} ⟹ ${diff.newCategoryOrder.join(' → ')}）</span>`
@@ -574,12 +590,12 @@ function renderDiffPanel(diff) {
     html += `<div class="diff-card">
       <div class="diff-card-header">
         <span class="diff-badge added">新增</span>
-        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="font-weight:600">${esc(diffDisplayText(item.title) || item.key)}</span>
         <span style="color:var(--muted);font-size:11px">${item.key}</span>
       </div>
       <div class="diff-card-body" style="font-size:12px;color:var(--muted)">
         ${item.year ? `<span style="color:var(--accent)">${item.year}</span>` : ''}
-        ${item.location ? `&ensp;·&ensp;${esc(item.location)}` : ''}
+        ${item.location ? `&ensp;·&ensp;${esc(diffDisplayText(item.location))}` : ''}
         ${item.figureCount ? `&ensp;·&ensp;${item.figureCount} 人物` : ''}
         ${item.imageCount  ? `&ensp;·&ensp;${item.imageCount} 图片` : ''}
         ${item.videoCount  ? `&ensp;·&ensp;${item.videoCount} 视频` : ''}
@@ -592,7 +608,7 @@ function renderDiffPanel(diff) {
     html += `<div class="diff-card">
       <div class="diff-card-header">
         <span class="diff-badge removed">删除</span>
-        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="font-weight:600">${esc(diffDisplayText(item.title) || item.key)}</span>
         <span style="color:var(--muted);font-size:11px">${item.key}</span>
       </div>
       <div class="diff-card-body" style="font-size:12px;color:var(--muted)">
@@ -611,9 +627,9 @@ function renderDiffPanel(diff) {
       bodyHtml += `<div class="diff-field">
         <div class="diff-field-label">标题</div>
         <div class="diff-inline">
-          <span class="diff-from">${esc(c.title.from)}</span>
+          <span class="diff-from">${esc(diffDisplayText(c.title.from))}</span>
           <span style="color:var(--muted)">→</span>
-          <span class="diff-to">${esc(c.title.to)}</span>
+          <span class="diff-to">${esc(diffDisplayText(c.title.to))}</span>
         </div>
       </div>`;
     }
@@ -631,15 +647,15 @@ function renderDiffPanel(diff) {
       bodyHtml += `<div class="diff-field">
         <div class="diff-field-label">地点</div>
         <div class="diff-inline">
-          <span class="diff-from">${esc(c.location.from)}</span>
+          <span class="diff-from">${esc(diffDisplayText(c.location.from))}</span>
           <span style="color:var(--muted)">→</span>
-          <span class="diff-to">${esc(c.location.to)}</span>
+          <span class="diff-to">${esc(diffDisplayText(c.location.to))}</span>
         </div>
       </div>`;
     }
     if (c.description) {
-      const descFrom = typeof c.description === 'object' ? (c.description.from || '') : '';
-      const descTo   = typeof c.description === 'object' ? (c.description.to   || '') : '';
+      const descFrom = typeof c.description === 'object' ? diffDisplayText(c.description.from) : '';
+      const descTo   = typeof c.description === 'object' ? diffDisplayText(c.description.to) : '';
       bodyHtml += `<div class="diff-field">
         <div class="diff-field-label">描述</div>
         <div class="diff-text-cols">
@@ -656,8 +672,8 @@ function renderDiffPanel(diff) {
     }
     if (c.quote) {
       // 从 HTML 中提取纯文本用于展示（applied.quote 是 HTML）
-      const oldText = (typeof c.quote === 'object' && c.quote.from ? c.quote.from : '').replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ');
-      const newText = c.quote.quoteText || '';
+      const oldText = stripDiffHtml(typeof c.quote === 'object' ? c.quote.from : '');
+      const newText = typeof c.quote === 'object' ? diffDisplayText(c.quote.quoteText) : '';
       bodyHtml += `<div class="diff-field">
         <div class="diff-field-label">引言</div>
         <div class="diff-text-cols">
@@ -676,9 +692,9 @@ function renderDiffPanel(diff) {
       bodyHtml += `<div class="diff-field">
         <div class="diff-field-label">引言页码</div>
         <div class="diff-inline">
-          <span class="diff-from">${esc(c.quotePage.from || '未填写')}</span>
+          <span class="diff-from">${esc(diffDisplayText(c.quotePage.from) || '未填写')}</span>
           <span style="color:var(--muted)">→</span>
-          <span class="diff-to">${esc(c.quotePage.to || '未填写')}</span>
+          <span class="diff-to">${esc(diffDisplayText(c.quotePage.to) || '未填写')}</span>
         </div>
       </div>`;
     }
@@ -690,12 +706,12 @@ function renderDiffPanel(diff) {
         <div class="diff-text-cols">
           <div>
             <div style="font-size:10px;color:var(--danger);margin-bottom:3px">原署名</div>
-            <div class="diff-text-block old">${esc(c.quoteMeta.fromAttribution || '未填写')}</div>
+            <div class="diff-text-block old">${esc(diffDisplayText(c.quoteMeta.fromAttribution) || '未填写')}</div>
             ${oldMeta ? `<div class="diff-text-block old" style="margin-top:6px">${esc(oldMeta)}</div>` : ''}
           </div>
           <div>
             <div style="font-size:10px;color:var(--success);margin-bottom:3px">新署名</div>
-            <div class="diff-text-block new">${esc(c.quoteMeta.toAttribution || '未填写')}</div>
+            <div class="diff-text-block new">${esc(diffDisplayText(c.quoteMeta.toAttribution) || '未填写')}</div>
             ${newMeta ? `<div class="diff-text-block new" style="margin-top:6px">${esc(newMeta)}</div>` : ''}
           </div>
         </div>
@@ -735,7 +751,7 @@ function renderDiffPanel(diff) {
     html += `<div class="diff-card">
       <div class="diff-card-header">
         <span class="diff-badge modified">修改</span>
-        <span style="font-weight:600">${esc(item.title || item.key)}</span>
+        <span style="font-weight:600">${esc(diffDisplayText(item.title) || item.key)}</span>
         <span style="color:var(--muted);font-size:11px">${item.key}</span>
       </div>
       ${bodyHtml ? `<div class="diff-card-body">${bodyHtml}</div>` : ''}
@@ -836,6 +852,8 @@ async function restoreBackup(name, file) {
     } else if (file === 'catalog.js') {
       catalog = await api('GET', '/api/catalog');
       if (currentView === 'catalog') renderCatalog();
+    } else if (file === 'milestones-data.js' || file === 'milestones-data-default.js') {
+      toast(`${file} 已恢复，刷新展示页后生效`, 'success');
     }
     await loadBackupList();
   } catch (e) {
@@ -1338,9 +1356,9 @@ function extractWorkTitleFromAttribution(attribution) {
 
 function formatQuoteAttribution(meta) {
   const safeMeta = meta && typeof meta === 'object' ? meta : {};
-  const workTitle = String(safeMeta.workTitle || '').trim();
-  const workAuthors = String(safeMeta.workAuthors || '').trim();
-  const speaker = String(safeMeta.speaker || '').trim();
+  const workTitle = diffDisplayText(safeMeta.workTitle).trim();
+  const workAuthors = diffDisplayText(safeMeta.workAuthors).trim();
+  const speaker = diffDisplayText(safeMeta.speaker).trim();
   if (workTitle) return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
   return speaker;
 }
@@ -1348,9 +1366,19 @@ function formatQuoteAttribution(meta) {
 function quoteMetaSummary(meta) {
   const safeMeta = meta && typeof meta === 'object' ? meta : {};
   return [
-    safeMeta.sourceLabel ? `标签：${safeMeta.sourceLabel}` : '',
-    safeMeta.sourceUrl ? `链接：${safeMeta.sourceUrl}` : '',
+    safeMeta.sourceLabel ? `标签：${diffDisplayText(safeMeta.sourceLabel)}` : '',
+    safeMeta.sourceUrl ? `链接：${diffDisplayText(safeMeta.sourceUrl)}` : '',
   ].filter(Boolean).join(' · ');
+}
+
+function diffDisplayText(value, locale = 'zh') {
+  if (value == null) return '';
+  if (typeof value === 'object') return mlText(value, locale);
+  return String(value);
+}
+
+function stripDiffHtml(value) {
+  return diffDisplayText(value).replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ');
 }
 
 function getQuoteCandidateWorkTitle(key) {
@@ -2113,7 +2141,8 @@ function isMl(value) {
 }
 function mlText(value, locale = 'zh') {
   if (!isMl(value)) return String(value || '');
-  return String(value[locale] || value.zh || value.en || '');
+  const selected = value[locale] || value.zh || value.en || '';
+  return isMl(selected) ? mlText(selected, locale) : String(selected || '');
 }
 function hasMlText(value) {
   if (isMl(value)) return SUPPORTED_LOCALES.some(locale => mlText(value, locale).trim());
