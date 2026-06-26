@@ -1860,7 +1860,7 @@
     <script src="resources/pq-quiz-data.js?v=20260608"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
-    <script src="shared/pq-quiz.js?v=20260608"></script>
+    <script src="shared/pq-quiz.js?v=20260626"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script>
         const SCREEN_WIDTH = 1920;
@@ -1868,10 +1868,12 @@
         const STAGE_WIDTH = SCREEN_WIDTH * 2;
         const STAGE_HEIGHT = SCREEN_HEIGHT;
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
+        const AUTOPLAY_ADVANCE_MS = 30 * 1000;
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
         let idleAdvanceTimer = null;
+        let isAutoplaying = false;
         let inlineIframePlaying = false;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
@@ -2420,13 +2422,15 @@
         function handleIdleAutoAdvance() {
             if (milestones.length <= 1) {
                 clearIdleAdvanceTimer();
+                isAutoplaying = false;
                 return;
             }
 
+            isAutoplaying = true;
             closeTransientOverlaysForIdleAdvance();
             const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
             jumpTo(nextIndex, { resetAutoplay: false });
-            restartIdleCountdown();
+            idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, AUTOPLAY_ADVANCE_MS);
         }
 
         function resetAutoplayTimer() {
@@ -2435,12 +2439,16 @@
 
         function restartIdleCountdown() {
             clearIdleAdvanceTimer();
+            isAutoplaying = false;
             if (milestones.length <= 1) return;
             idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, IDLE_AUTO_ADVANCE_MS);
         }
 
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
+            if (isAutoplaying) {
+                isAutoplaying = false;
+            }
             restartIdleCountdown();
         }
 
