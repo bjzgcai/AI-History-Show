@@ -103,6 +103,9 @@ function formatQuoteAttribution(candidate) {
         const speaker = getLocalizedText(safeCandidate.speaker, locale);
 
         if (workTitle) {
+            if (locale === 'en') {
+                return workAuthors ? `<em>${workTitle}</em>, ${workAuthors}` : `<em>${workTitle}</em>`;
+            }
             return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
         }
 
