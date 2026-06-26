@@ -1,7 +1,7 @@
 (function (global) {
     const DEFAULT_QR_IMAGE = 'resources/pq.png';
-    const IDLE_TRIGGER_MS = 15000;
-    const POPUP_IDLE_DISMISS_MS = 15000;
+    const IDLE_TRIGGER_MS = 10000;
+    const POPUP_IDLE_DISMISS_MS = 10000;
     const VIDEO_RESUME_DELAY_MS = 1200;
     const ACTIVITY_EVENTS = ['pointerdown', 'wheel', 'keydown', 'touchstart'];
 

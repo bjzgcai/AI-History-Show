@@ -4344,7 +4344,7 @@
     <script src="resources/pq-quiz-data.js?v=20260608"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
-    <script src="shared/pq-quiz.js?v=20260608"></script>
+    <script src="shared/pq-quiz.js?v=20260626"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
     <script>
@@ -4370,6 +4370,7 @@
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
         const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .region-modal, .mobile-quiz-app, iframe, .storyline-select';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
+        const AUTOPLAY_ADVANCE_MS = 30 * 1000;
         const DEFAULT_STORYLINE_ID = 'deep-learning-history';
         const STORYLINE_OPTIONS = [
             {
@@ -4453,6 +4454,7 @@
         let pendingQuizAction = null;
         let mobileQuizState = null;
         let idleAdvanceTimer = null;
+        let isAutoplaying = false;
         let inlineIframePlaying = false;
         let currentMilestoneViewedAt = Date.now();
         const vmCache = new Map();
@@ -6505,6 +6507,10 @@
 
         function schedulePqQuizForCurrentPage() {
             if (!window.PQQuiz || typeof window.PQQuiz.schedule !== 'function') return;
+            if (mobileQuizState || isMobileQuizRequest()) {
+                window.PQQuiz.dismiss();
+                return;
+            }
             window.PQQuiz.schedule(getCurrentQuizMilestoneKey());
         }
 
@@ -6788,6 +6794,9 @@
             clearIdleAdvanceTimer();
             closeQuizModal();
             closeRegionPicker();
+            if (window.PQQuiz && typeof window.PQQuiz.dismiss === 'function') {
+                window.PQQuiz.dismiss();
+            }
             mobileQuizState = { items: buildMobileQuizItems() };
             document.body.classList.add('mobile-quiz-active');
             refs.mobileQuizApp.classList.remove('is-hidden');
@@ -9042,21 +9051,25 @@
         function handleIdleAutoAdvance() {
             if (hasOpenMobileQuiz()) {
                 clearIdleAdvanceTimer();
+                isAutoplaying = false;
                 return;
             }
             if (milestoneList.length <= 1) {
                 clearIdleAdvanceTimer();
+                isAutoplaying = false;
                 return;
             }
 
+            isAutoplaying = true;
             closeTransientOverlaysForIdleAdvance();
             const nextIndex = currentIndex >= milestoneList.length - 1 ? 0 : currentIndex + 1;
             jumpTo(nextIndex, { skipCompletionQuiz: true });
-            restartIdleAdvanceTimer();
+            idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, AUTOPLAY_ADVANCE_MS);
         }
 
         function restartIdleAdvanceTimer() {
             clearIdleAdvanceTimer();
+            isAutoplaying = false;
             if (milestoneList.length <= 1) return;
             idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, IDLE_AUTO_ADVANCE_MS);
         }
@@ -9064,6 +9077,9 @@
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
             if (hasOpenMobileQuiz()) return;
+            if (isAutoplaying) {
+                isAutoplaying = false;
+            }
             restartIdleAdvanceTimer();
         }
 
