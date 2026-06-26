@@ -10,11 +10,13 @@
         "start:demo": "node scripts/static-server.js --host 127.0.0.1 --port 8000",
         "generate": "node manage/generate.js",
         "lint": "eslint .",
-        "format": "prettier --write \"shared/**/*.js\" \"scripts/**/*.js\" \".github/**/*.yml\" \"*.yml\" \"*.json\" \"eslint.config.js\"",
-        "format:check": "prettier --check \"shared/**/*.js\" \"scripts/**/*.js\" \".github/**/*.yml\" \"*.yml\" \"*.json\" \"eslint.config.js\"",
+        "format": "prettier --write \"shared/**/*.js\" \"scripts/**/*.{js,mjs}\" \".github/**/*.yml\" \"*.yml\" \"*.json\" \"eslint.config.js\"",
+        "format:check": "prettier --check \"shared/**/*.js\" \"scripts/**/*.{js,mjs}\" \".github/**/*.yml\" \"*.yml\" \"*.json\" \"eslint.config.js\"",
         "test": "node scripts/test-layout-router.js && node scripts/test-swipe-navigation.js",
         "quality": "npm run lint && npm run format:check && npm test",
         "validate:startup": "node scripts/validate-startup.js",
+        "validate:ai100-context": "node scripts/validate-ai100-context.js",
+        "validate:ai100-quizzes": "node scripts/validate-ai100-quizzes-grounded.js",
         "validate:deployment": "npm run generate && npm test && npm run validate:startup"
     },
     "devDependencies": {

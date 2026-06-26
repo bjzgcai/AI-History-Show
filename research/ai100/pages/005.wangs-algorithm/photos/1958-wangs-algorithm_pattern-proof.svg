@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Wang algorithm pattern proof diagram</title>
+  <desc id="desc">A conceptual diagram showing formulas normalized into patterns, matched by rules, and reduced into a proof.</desc>
+  <rect width="900" height="520" fill="#151515"/>
+  <rect x="52" y="54" width="796" height="412" rx="18" fill="#202020" stroke="#5a3a12" stroke-width="2"/>
+  <text x="80" y="104" fill="#f68900" font-family="Arial, sans-serif" font-size="26" font-weight="700">WANG'S ALGORITHM</text>
+  <text x="80" y="142" fill="#f4efe5" font-family="Arial, sans-serif" font-size="19">Mechanical theorem proving by recognizing logical patterns.</text>
+
+  <rect x="82" y="198" width="190" height="104" rx="14" fill="#2b2b2b" stroke="#666"/>
+  <text x="177" y="235" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">Formula</text>
+  <text x="177" y="266" fill="#d8d1c4" font-family="Consolas, monospace" font-size="16" text-anchor="middle">A1, A2 |- B</text>
+
+  <rect x="334" y="176" width="222" height="148" rx="14" fill="#2a1f12" stroke="#6f4308"/>
+  <text x="445" y="218" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Pattern rules</text>
+  <text x="445" y="252" fill="#d8d1c4" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">split connectives</text>
+  <text x="445" y="282" fill="#d8d1c4" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">move quantifiers</text>
+
+  <rect x="628" y="198" width="190" height="104" rx="14" fill="#2b2b2b" stroke="#666"/>
+  <text x="723" y="235" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">Closed branch</text>
+  <text x="723" y="266" fill="#d8d1c4" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">proof found</text>
+
+  <g stroke="#f68900" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M282 250 L322 250"/>
+    <path d="M566 250 L618 250"/>
+    <path d="M724 312 C704 396 520 418 446 336"/>
+  </g>
+
+  <g fill="#303030" stroke="#666">
+    <rect x="108" y="364" width="146" height="44" rx="8"/>
+    <rect x="292" y="364" width="146" height="44" rx="8"/>
+    <rect x="476" y="364" width="146" height="44" rx="8"/>
+    <rect x="660" y="364" width="146" height="44" rx="8"/>
+  </g>
+  <g fill="#f4efe5" font-family="Arial, sans-serif" font-size="15" font-weight="700">
+    <text x="181" y="392" text-anchor="middle">Normalize</text>
+    <text x="365" y="392" text-anchor="middle">Match</text>
+    <text x="549" y="392" text-anchor="middle">Reduce</text>
+    <text x="733" y="392" text-anchor="middle">Certify</text>
+  </g>
+
+  <rect x="80" y="426" width="650" height="40" rx="8" fill="#201915" stroke="#4b3320"/>
+  <text x="405" y="452" fill="#f4efe5" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">The display turns proof search into repeated recognition of useful logical shapes.</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f68900"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#10131d"/>
+  <rect x="36" y="36" width="888" height="468" rx="18" fill="#151a26" stroke="#2f3a55" stroke-width="3"/>
+  <text x="64" y="78" fill="#f68900" font-family="Arial, sans-serif" font-size="28" font-weight="800">2D cluster map</text>
+  <circle cx="160" cy="160" r="24" fill="#60a5fa"/><circle cx="190" cy="190" r="24" fill="#60a5fa"/><circle cx="150" cy="220" r="24" fill="#60a5fa"/><circle cx="530" cy="150" r="24" fill="#f59e0b"/><circle cx="570" cy="190" r="24" fill="#f59e0b"/><circle cx="510" cy="230" r="24" fill="#f59e0b"/><circle cx="330" cy="350" r="24" fill="#22c55e"/><circle cx="380" cy="380" r="24" fill="#22c55e"/><circle cx="300" cy="405" r="24" fill="#22c55e"/><path d="M110 430H760M110 430V110" stroke="#64748b" stroke-width="4"/><text x="480" y="430" fill="#e5e7eb" font-family="Arial" font-size="25">2D map emphasizes local clusters</text>
+  <text x="64" y="490" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">local redrawn explainer</text>
+</svg>

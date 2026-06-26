@@ -1021,6 +1021,7 @@
         }
 
         .figure-avatar {
+            position: relative;
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -1037,6 +1038,8 @@
         }
 
         .figure-avatar img {
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1569,6 +1572,17 @@
             line-height: 1.42;
         }
 
+        .commentary-body a {
+            color: var(--accent);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .commentary-body a:hover,
+        .commentary-body a:focus-visible {
+            text-decoration: underline;
+        }
+
         .commentary-body p {
             margin-bottom: 0.86em;
         }
@@ -1838,11 +1852,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260526-i18n-images"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260604-ai100-three-images"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260526-i18n-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260604-ai100-three-images" onerror="_loadDefaultMilestones()"></script>
     <script src="resources/pq-quiz-data.js?v=20260608"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -1853,14 +1867,11 @@
         const SCREEN_HEIGHT = 1080;
         const STAGE_WIDTH = SCREEN_WIDTH * 2;
         const STAGE_HEIGHT = SCREEN_HEIGHT;
-        const AUTOPLAY_INTERVAL_MS = 10000;
-        const AUTOPLAY_IDLE_DELAY_MS = 5 * 60 * 1000;
+        const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
-        let isAutoplaying = false;
-        let autoplayTimer = null;
-        let idleTimer = null;
+        let idleAdvanceTimer = null;
         let inlineIframePlaying = false;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
@@ -2032,7 +2043,8 @@
                 customSections.forEach((section) => {
                     commentarySections.push({
                         label: lx(section.label) || tx('contentInterpretation'),
-                        html: lx(section.html)
+                        html: lx(section.html),
+                        link: section.link || null
                     });
                 });
             } else if (descriptionText) {
@@ -2346,9 +2358,11 @@
             const sourceSections = Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
                 : [];
-            const sections = sourceSections.slice(0, 3).map((section) => ({
+            const maxSections = sourceSections.length > 3 ? 4 : 3;
+            const sections = sourceSections.slice(0, maxSections).map((section) => ({
                 label: section.label || '署名',
-                text: stripHtml(section.html || '')
+                text: stripHtml(section.html || ''),
+                link: section.link || null
             }));
 
             const fallbackText = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
@@ -2363,7 +2377,17 @@
                 fillerIndex += 1;
             }
 
-            return sections.slice(0, 3);
+            return sections.slice(0, maxSections);
+        }
+
+        function buildCommentaryBodyHtml(section) {
+            const text = escapeHtml(section.text || tx('noAdditionalInfo'));
+            const rawLink = section && section.link ? section.link : null;
+            const url = rawLink && rawLink.url ? String(rawLink.url).trim() : '';
+            if (!url) return text;
+
+            const label = String(lx(rawLink.label) || url).trim();
+            return `${text} <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
         }
 
         function scorePhoto(url) {
@@ -2382,74 +2406,41 @@
                 .sort((a, b) => scorePhoto(b) - scorePhoto(a));
         }
 
-        function clearAutoplayTimer() {
-            if (autoplayTimer) {
-                window.clearTimeout(autoplayTimer);
-                autoplayTimer = null;
+        function clearIdleAdvanceTimer() {
+            if (idleAdvanceTimer) {
+                window.clearTimeout(idleAdvanceTimer);
+                idleAdvanceTimer = null;
             }
         }
 
-        function clearIdleTimer() {
-            if (idleTimer) {
-                window.clearTimeout(idleTimer);
-                idleTimer = null;
-            }
+        function closeTransientOverlaysForIdleAdvance() {
+            document.querySelectorAll('.photo-viewer').forEach((viewer) => viewer.remove());
         }
 
-        function scheduleAutoplayTick() {
-            clearAutoplayTimer();
-            if (!isAutoplaying || milestones.length <= 1) return;
-
-            autoplayTimer = window.setTimeout(() => {
-                const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
-                jumpTo(nextIndex, { resetAutoplay: false });
-                scheduleAutoplayTick();
-            }, AUTOPLAY_INTERVAL_MS);
-        }
-
-        function setAutoplayState(nextState, options = {}) {
-            const { advanceImmediately = false } = options;
-            const shouldAutoplay = Boolean(nextState) && milestones.length > 1;
-            if (isAutoplaying === shouldAutoplay) {
-                if (!shouldAutoplay) {
-                    clearAutoplayTimer();
-                }
+        function handleIdleAutoAdvance() {
+            if (milestones.length <= 1) {
+                clearIdleAdvanceTimer();
                 return;
             }
 
-            isAutoplaying = shouldAutoplay;
-            if (isAutoplaying) {
-                clearIdleTimer();
-                if (advanceImmediately) {
-                    const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
-                    jumpTo(nextIndex, { resetAutoplay: false });
-                }
-                scheduleAutoplayTick();
-            } else {
-                clearAutoplayTimer();
-            }
+            closeTransientOverlaysForIdleAdvance();
+            const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
+            jumpTo(nextIndex, { resetAutoplay: false });
+            restartIdleCountdown();
         }
 
         function resetAutoplayTimer() {
-            if (isAutoplaying) {
-                scheduleAutoplayTick();
-            }
+            restartIdleCountdown();
         }
 
         function restartIdleCountdown() {
-            clearIdleTimer();
+            clearIdleAdvanceTimer();
             if (milestones.length <= 1) return;
-
-            idleTimer = window.setTimeout(() => {
-                setAutoplayState(true, { advanceImmediately: true });
-            }, AUTOPLAY_IDLE_DELAY_MS);
+            idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, IDLE_AUTO_ADVANCE_MS);
         }
 
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
-            if (isAutoplaying) {
-                setAutoplayState(false);
-            }
             restartIdleCountdown();
         }
 
@@ -3353,13 +3344,14 @@
         }
 
         function renderFigures(vm) {
-            const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
                 ? vm.figures.slice(0, 4)
                 : [{
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
+            const hasFigureAvatars = figures.some((figure) => figure && figure.avatar);
+            const portraitPool = hasFigureAvatars ? [] : sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
 
             refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
@@ -3541,6 +3533,24 @@
             iframe.style.display = 'block';
         }
 
+        function getCurrentQuizMilestoneKey() {
+            const vm = getVm(currentIndex);
+            return vm && vm.raw && vm.raw.id ? vm.raw.id.replace(/^milestone-/, '') : '';
+        }
+
+        function isQuizVideoPlaying() {
+            const player = refs.videoFrame ? refs.videoFrame.querySelector('video') : null;
+            return Boolean(
+                inlineIframePlaying
+                || (player && player.style.display !== 'none' && !player.paused && !player.ended)
+            );
+        }
+
+        function schedulePqQuizForCurrentPage() {
+            if (!window.PQQuiz || typeof window.PQQuiz.schedule !== 'function') return;
+            window.PQQuiz.schedule(getCurrentQuizMilestoneKey());
+        }
+
         function renderCommentary(vm) {
             ensureMediaIframe();
             ensureMediaPlayer();
@@ -3560,7 +3570,7 @@
             refs.commentaryList.innerHTML = sections.map((section) => `
                 <article class="commentary-item">
                     <div class="commentary-label">${escapeHtml(section.label || tx('contentInterpretation'))}</div>
-                    <div class="commentary-body">${escapeHtml(section.text || tx('noAdditionalInfo'))}</div>
+                    <div class="commentary-body">${buildCommentaryBodyHtml(section)}</div>
                 </article>
             `).join('');
         }
@@ -3578,24 +3588,6 @@
             refs.topPrevBtn.disabled = !canNavigate;
             refs.topNextBtn.disabled = !canNavigate;
             refs.rightScaleProgress.style.top = `${milestones.length > 1 ? (currentIndex / (milestones.length - 1)) * 100 : 0}%`;
-        }
-
-        function getCurrentQuizMilestoneKey() {
-            const vm = getVm(currentIndex);
-            return vm && vm.raw && vm.raw.id ? vm.raw.id.replace(/^milestone-/, '') : '';
-        }
-
-        function isQuizVideoPlaying() {
-            const player = refs.videoFrame ? refs.videoFrame.querySelector('video') : null;
-            return Boolean(
-                inlineIframePlaying
-                || (player && player.style.display !== 'none' && !player.paused && !player.ended)
-            );
-        }
-
-        function scheduleQuizForCurrentPage() {
-            if (!window.PQQuiz || typeof window.PQQuiz.schedule !== 'function') return;
-            window.PQQuiz.schedule(getCurrentQuizMilestoneKey());
         }
 
         function bindPhotoClicks() {
@@ -3673,7 +3665,7 @@
             bindPhotoClicks();
             document.title = `${tx('appTitleDual')} - ${vm.year} ${vm.title}`;
             preloadAdjacentAssets(index);
-            scheduleQuizForCurrentPage();
+            schedulePqQuizForCurrentPage();
         }
 
         function jumpTo(index, options = {}) {
@@ -3909,11 +3901,14 @@
 
         window.addEventListener('resize', debounce(syncStageScale, 120));
         window.addEventListener('beforeunload', () => {
-            clearAutoplayTimer();
-            clearIdleTimer();
+            clearIdleAdvanceTimer();
         });
 
         document.addEventListener('pointerdown', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('pointermove', (event) => {
             registerUserActivity(event);
         }, { passive: true });
 
@@ -3922,6 +3917,14 @@
         }, { passive: true });
 
         document.addEventListener('wheel', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('touchstart', (event) => {
+            registerUserActivity(event);
+        }, { passive: true });
+
+        document.addEventListener('touchmove', (event) => {
             registerUserActivity(event);
         }, { passive: true });
 

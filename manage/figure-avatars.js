@@ -267,5 +267,103 @@ module.exports = {
     avatar: "resources/images/2016-densenet/people/2016-densenet_people_02.png",
     avatarStyle: "transform: scale(1.72); transform-origin: 46% 28%;",
     note: "本地已有可用人物照片。"
+  },
+  "Christopher Strachey": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "Christopher_Strachey",
+    avatar: "",
+    note: "未找到可靠可复用人物照片；不要使用本地虚拟人物卡。"
+  },
+  "David Ferrucci": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "David_Ferrucci",
+    avatar: "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+    note: "Wikimedia Commons portrait for the IBM Watson achievement."
+  },
+  "Douglas Lenat": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "Douglas_Lenat",
+    avatar: "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+    note: "Wikimedia Commons portrait for the Cyc achievement."
+  },
+  "Jianbo Shi": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "",
+    avatar: "",
+    note: "未找到可靠可复用人物照片；不要使用本地虚拟人物卡。"
+  },
+  "John McDermott": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "",
+    avatar: "",
+    note: "未找到可靠可复用人物照片；不要使用本地虚拟人物卡。"
+  },
+  "Jonathan Schaeffer": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "Jonathan_Schaeffer",
+    avatar: "",
+    note: "人物照片在事件 hero 图片中引用；头像 registry 不使用外部 URL。"
+  },
+  "Martin Ester": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "Martin_Ester",
+    avatar: "",
+    note: "人物照片在事件 hero 图片中引用；头像 registry 不使用外部 URL。"
+  },
+  "Oliver Selfridge": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "Oliver_Selfridge",
+    avatar: "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+    note: "Wikimedia Commons portrait for the Pandemonium achievement."
+  },
+  "Stuart Lloyd": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "",
+    avatar: "",
+    note: "未找到可靠可复用人物照片；不要使用本地虚拟人物卡。"
+  },
+  "William McCune": {
+    type: "person",
+    status: "missing",
+    wikipediaTitle: "William_McCune",
+    avatar: "",
+    note: "未找到可靠可复用人物照片；不要使用本地虚拟人物卡。"
+  },
+  "Xiangyu Zhang": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+    note: "ResNet 共同作者，沿用 ResNet 章节本地头像。"
+  },
+  "张祥雨": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+    note: "双语事件名映射，头像同 Xiangyu Zhang。"
+  },
+  "Shaoqing Ren": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+    note: "ResNet 共同作者，沿用 ResNet 章节本地头像。"
+  },
+  "任少卿": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+    note: "双语事件名映射，头像同 Shaoqing Ren。"
   }
 };

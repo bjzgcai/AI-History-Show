@@ -19,6 +19,20 @@ const commonGlobals = {
     window: 'readonly'
 };
 
+const commonRules = {
+    'no-console': 'off',
+    'no-empty': ['error', { allowEmptyCatch: true }],
+    'no-unused-vars': [
+        'warn',
+        {
+            argsIgnorePattern: '^_',
+            caughtErrors: 'none',
+            varsIgnorePattern: '^_'
+        }
+    ],
+    'no-useless-escape': 'off'
+};
+
 module.exports = [
     {
         ignores: [
@@ -38,24 +52,31 @@ module.exports = [
     },
     js.configs.recommended,
     {
-        files: ['**/*.js'],
+        files: ['**/*.{js,mjs}'],
         languageOptions: {
             ecmaVersion: 'latest',
             sourceType: 'script',
             globals: commonGlobals
         },
-        rules: {
-            'no-console': 'off',
-            'no-empty': ['error', { allowEmptyCatch: true }],
-            'no-unused-vars': [
-                'warn',
-                {
-                    argsIgnorePattern: '^_',
-                    caughtErrors: 'none',
-                    varsIgnorePattern: '^_'
-                }
-            ],
-            'no-useless-escape': 'off'
+        rules: commonRules
+    },
+    {
+        files: ['**/*.mjs'],
+        languageOptions: {
+            ecmaVersion: 'latest',
+            sourceType: 'module',
+            globals: {
+                ...commonGlobals,
+                URL: 'readonly',
+                URLSearchParams: 'readonly'
+            }
+        },
+        rules: commonRules
+    },
+    {
+        files: ['**/*.mjs'],
+        languageOptions: {
+            sourceType: 'module'
         }
     },
     {

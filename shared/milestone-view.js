@@ -107,7 +107,8 @@
             customSections.forEach((section) => {
                 sections.push({
                     label: localize(section.label) || t('contentInterpretation'),
-                    html: localize(section.html)
+                    html: localize(section.html),
+                    link: section.link || null
                 });
             });
         } else {
@@ -126,7 +127,7 @@
             });
         }
 
-        return sections.slice(0, 3);
+        return sections.slice(0, sections.length > 3 ? 4 : 3);
     }
 
     function toTimelineItems(allMilestones, currentIndex) {
@@ -137,10 +138,17 @@
         }));
     }
 
+    function collectQuizzes(milestone) {
+        if (Array.isArray(milestone.quizzes)) return milestone.quizzes;
+        if (milestone.quiz) return [milestone.quiz];
+        return [];
+    }
+
     function normalizeMilestone(milestone, currentIndex, allMilestones) {
         const figures = Array.isArray(milestone.figures) ? milestone.figures.map(localizeObject) : [];
         const photos = collectPhotos(milestone, 20);
         const timeline = Array.isArray(allMilestones) ? toTimelineItems(allMilestones, currentIndex) : [];
+        const quizzes = collectQuizzes(milestone);
         const commentarySections = buildCommentarySections(milestone);
         const primaryVideo = getPrimaryVideo(milestone);
         const description = localize(milestone.description) || '';
@@ -167,6 +175,7 @@
             quotePage: String(localize(milestone.quotePage) || '').trim(),
             commentaryOverrideSections: Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [],
             commentarySections,
+            quizzes,
             timeline
         };
     }
