@@ -11661,8 +11661,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。"
         }
       },
       {
@@ -11805,6 +11805,17 @@ module.exports = {
         })
       ],
       "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Deep Blue journal article",
+            "zh": "深蓝期刊论文"
+          },
+          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
+        },
         {
           "type": {
             "en": "Profile",
@@ -15584,8 +15595,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。"
         }
       },
       {
@@ -15594,8 +15605,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。"
         }
       },
       {

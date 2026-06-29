@@ -651,7 +651,8 @@ const events = {
     ],
     sources: [
       source('Paper', '论文', 'Science paper', 'Science 论文', 'https://www.science.org/doi/10.1126/science.aao1733'),
-      source('News report', '新闻报道', 'CMU Libratus release', 'CMU Libratus 新闻稿', 'https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html')
+      source('News report', '新闻报道', 'CMU Libratus release', 'CMU Libratus 新闻稿', 'https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html'),
+      source('Preprint', '预印本', 'Safe and Nested Subgame Solving', '安全嵌套子局求解论文', 'https://arxiv.org/abs/1705.02955')
     ],
     demoImage: 'resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg',
     demoCaption: t('Libratus subgame solving', 'Libratus 子局求解'),

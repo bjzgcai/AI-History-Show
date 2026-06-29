@@ -1,0 +1,4439 @@
+{
+  "generatedAt": "2026-06-26T01:28:39.676Z",
+  "sourceFile": "milestones-data.js",
+  "storylineId": "gaming-ai",
+  "summary": {
+    "milestones": 13,
+    "claims": 370,
+    "milestonesWithIssues": 0,
+    "riskyClaims": 64,
+    "weakClaims": 29
+  },
+  "items": [
+    {
+      "id": "milestone-1951-strachey-draughts",
+      "year": "1951-1952",
+      "titleEn": "Christopher Strachey's Draughts",
+      "titleZh": "克里斯托弗·斯特雷奇 的跳棋程序",
+      "sourceCount": 4,
+      "primarySourceCount": 1,
+      "claimCount": 26,
+      "riskyClaimCount": 4,
+      "weakClaimCount": 3,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Logical or non-mathematical programmes",
+          "labelZh": "逻辑或非数学程序",
+          "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Biography",
+          "typeZh": "人物资料",
+          "labelEn": "Computer Pioneers - Christopher Strachey",
+          "labelZh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+          "url": "https://history.computer.org/pioneers/strachey.html",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Image source",
+          "typeZh": "图片来源",
+          "labelEn": "Strachey draughts program screenshot",
+          "labelZh": "斯特雷奇 跳棋程序截图",
+          "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 4,
+          "typeEn": "Image source",
+          "typeZh": "图片来源",
+          "labelEn": "Checkers board photo",
+          "labelZh": "跳棋棋盘照片",
+          "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-1951-strachey-draughts:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "1951-1952: Christopher Strachey's Draughts",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "1951-1952: 克里斯托弗·斯特雷奇 的跳棋程序",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:3",
+          "field": "location",
+          "locale": "en",
+          "text": "National Physical Laboratory, Teddington, United Kingdom",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "英国国家物理实验室，英国特丁顿",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Christopher Strachey - Developer of the early draughts program",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "克里斯托弗·斯特雷奇 - 早期跳棋程序开发者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:7",
+          "field": "description",
+          "locale": "en",
+          "text": "Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:8",
+          "field": "description",
+          "locale": "en",
+          "text": "It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:9",
+          "field": "description",
+          "locale": "zh",
+          "text": "克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:10",
+          "field": "description",
+          "locale": "zh",
+          "text": "它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:11",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:12",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:13",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:14",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:15",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:16",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "That pattern made search and evaluation visible as computational ingredients of intelligent play.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:17",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:18",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "这种模式让搜索与评估成为智能对弈中可见的计算要素。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:19",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Strachey's draughts program as an early proof that stored-program computers could attempt non-numerical play and choice.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "proof/solved wording"
+          ]
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:20",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its long-term legacy is helping establish board games as controlled environments for search, evaluation, and machine-intelligence demonstrations.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把斯特雷奇的跳棋程序视为早期证据，说明存储程序计算机可以尝试非数值对弈和选择。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于帮助把棋类游戏确立为研究搜索、评估和机器智能演示的受控环境。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:23",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Logical or non-mathematical programmes",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:24",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Christopher Strachey",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:25",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "逻辑或非数学程序",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1951-strachey-draughts:26",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "克里斯托弗·斯特雷奇",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-1988-td-update",
+      "year": "1988",
+      "titleEn": "Temporal-Difference Update",
+      "titleZh": "时序差分更新",
+      "sourceCount": 3,
+      "primarySourceCount": 2,
+      "claimCount": 28,
+      "riskyClaimCount": 4,
+      "weakClaimCount": 2,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Learning to Predict by the Methods of Temporal Differences",
+          "labelZh": "Learning to Predict by the Methods of Temporal Differences",
+          "url": "https://doi.org/10.1007/BF00115009",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Homepage",
+          "typeZh": "个人主页",
+          "labelEn": "Richard Sutton homepage",
+          "labelZh": "理查德·萨顿 homepage",
+          "url": "http://incompleteideas.net/",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Award",
+          "typeZh": "奖项资料",
+          "labelEn": "ACM 2024 Turing Award announcement",
+          "labelZh": "ACM 2024 图灵 Award announcement",
+          "url": "https://awards.acm.org/about/2024-turing",
+          "primaryCandidate": true,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-1988-td-update:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "1988: Temporal-Difference Update",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "1988: 时序差分更新",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:3",
+          "field": "location",
+          "locale": "en",
+          "text": "GTE Laboratories / University of Massachusetts lineage, United States and Canada",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "GTE 实验室 / 麻省大学学术谱系，美国与加拿大",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Richard Sutton - Author of temporal-difference learning",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "理查德·萨顿 - 时序差分学习提出者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:7",
+          "field": "description",
+          "locale": "en",
+          "text": "Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:8",
+          "field": "description",
+          "locale": "en",
+          "text": "Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:9",
+          "field": "description",
+          "locale": "en",
+          "text": "This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:10",
+          "field": "description",
+          "locale": "zh",
+          "text": "时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1988-td-update:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "proof/solved wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1988-td-update:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat temporal-difference learning as a cornerstone of reinforcement learning.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its long-term legacy is the bootstrapping idea that value estimates can learn from later predictions, supporting Q-learning, actor-critic methods, and modern value-based control.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把时序差分学习视为强化学习的基石。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于提出价值估计可以从后续预测中自举学习，并支撑了 Q-learning、actor-critic 方法和现代基于价值的控制。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Learning to predict by temporal differences",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Richard Sutton",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "通过时序差分学习预测",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1988-td-update:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "理查德·萨顿",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-1994-chinook",
+      "year": "1989-2007",
+      "titleEn": "Chinook",
+      "titleZh": "Chinook 跳棋程序",
+      "sourceCount": 4,
+      "primarySourceCount": 2,
+      "claimCount": 26,
+      "riskyClaimCount": 6,
+      "weakClaimCount": 2,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Official page",
+          "typeZh": "官方页面",
+          "labelEn": "Chinook project home",
+          "labelZh": "Chinook 项目主页",
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Checkers Is Solved",
+          "labelZh": "跳棋已被求解",
+          "url": "https://www.science.org/doi/10.1126/science.1144079",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Publications",
+          "typeZh": "论文列表",
+          "labelEn": "Chinook publications",
+          "labelZh": "Chinook 论文列表",
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 4,
+          "typeEn": "Image source",
+          "typeZh": "图片来源",
+          "labelEn": "Jonathan Schaeffer portrait",
+          "labelZh": "乔纳森·谢弗 人物照片",
+          "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-1994-chinook:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "1989-2007: Chinook",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "1989-2007: Chinook 跳棋程序",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:3",
+          "field": "location",
+          "locale": "en",
+          "text": "University of Alberta, Alberta, Canada",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "阿尔伯塔大学，加拿大阿尔伯塔省",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Jonathan Schaeffer - Leader of the Chinook team",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "乔纳森·谢弗 - Chinook 团队负责人",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:7",
+          "field": "description",
+          "locale": "en",
+          "text": "Chinook pushed game AI from competitive play toward mathematical solution.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:8",
+          "field": "description",
+          "locale": "en",
+          "text": "The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:9",
+          "field": "description",
+          "locale": "zh",
+          "text": "Chinook 把游戏 AI 从竞技对弈推进到数学求解。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:10",
+          "field": "description",
+          "locale": "zh",
+          "text": "阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "proof/solved wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1994-chinook:11",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:12",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:13",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:14",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:15",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "proof/solved wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1994-chinook:16",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:17",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:18",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:19",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Chinook as a landmark in game-solving research and high-performance search.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:20",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its long-term legacy is showing how expert evaluation, alpha-beta search, opening knowledge, and endgame databases can combine to approach perfect play.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 Chinook 视为游戏求解研究和高性能搜索的里程碑。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于展示专家评估、alpha-beta 搜索、开局知识和残局数据库如何结合并逼近完美对弈。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:23",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Checkers Is Solved",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:24",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Jonathan Schaeffer et al.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:25",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "跳棋已被求解",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1994-chinook:26",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "乔纳森·谢弗等",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-1997-deep-blue",
+      "year": "1997",
+      "titleEn": "Deep Blue",
+      "titleZh": "深蓝",
+      "sourceCount": 4,
+      "primarySourceCount": 1,
+      "claimCount": 28,
+      "riskyClaimCount": 6,
+      "weakClaimCount": 4,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Deep Blue journal article",
+          "labelZh": "深蓝期刊论文",
+          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Profile",
+          "typeZh": "人物资料",
+          "labelEn": "Murray Campbell, IBM Research",
+          "labelZh": "默里·坎贝尔, IBM 研究院",
+          "url": "https://research.ibm.com/people/murray-campbell",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Museum",
+          "typeZh": "博物馆",
+          "labelEn": "Mastering the Game, Computer History Museum",
+          "labelZh": "Mastering the Game, Computer History Museum",
+          "url": "https://www.computerhistory.org/chess/",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 4,
+          "typeEn": "History",
+          "typeZh": "历史资料",
+          "labelEn": "IBM100: Deep Blue",
+          "labelZh": "IBM100: 深蓝",
+          "url": "https://www.ibm.com/history/deep-blue",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-1997-deep-blue:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "1997: Deep Blue",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "1997: 深蓝",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:3",
+          "field": "location",
+          "locale": "en",
+          "text": "IBM Research, New York, United States",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "IBM 研究院，美国纽约州",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Murray Campbell - Deep Blue team member",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "默里·坎贝尔 - 深蓝 团队成员",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:7",
+          "field": "description",
+          "locale": "en",
+          "text": "Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-deep-blue:8",
+          "field": "description",
+          "locale": "en",
+          "text": "The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:9",
+          "field": "description",
+          "locale": "en",
+          "text": "It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-deep-blue:10",
+          "field": "description",
+          "locale": "zh",
+          "text": "深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-deep-blue:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-deep-blue:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Computer chess had advanced for decades through better search, evaluation, and hardware.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Deep Blue made that lineage visible on a global stage.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "深蓝 把这条路线带到全球舞台。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Deep Blue as a landmark in specialized search, evaluation, and high-performance game AI.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its long-term legacy is shaping public expectations for AI milestones and serving as a reference point for later game systems such as AlphaGo.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把深蓝视为专用搜索、局面评估和高性能游戏 AI 的标志性成果。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于塑造了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Deep Blue journal article",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Murray Campbell",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "深蓝期刊论文",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-deep-blue:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "默里·坎贝尔",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-1997-logistello",
+      "year": "1997",
+      "titleEn": "Logistello: Learning Evaluation for Othello",
+      "titleZh": "Logistello：黑白棋评估函数学习",
+      "sourceCount": 4,
+      "primarySourceCount": 3,
+      "claimCount": 28,
+      "riskyClaimCount": 7,
+      "weakClaimCount": 5,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Official page",
+          "typeZh": "官方页面",
+          "labelEn": "Logistello homepage",
+          "labelZh": "Logistello 主页",
+          "url": "https://skatgame.net/mburo/log.html",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Match report",
+          "typeZh": "对局报告",
+          "labelEn": "Murakami vs. Logistello",
+          "labelZh": "村上健对 Logistello",
+          "url": "https://skatgame.net/mburo/event.html",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Statistical Feature Combination",
+          "labelZh": "统计特征组合论文",
+          "url": "https://arxiv.org/abs/cs/9512106",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 4,
+          "typeEn": "Publication list",
+          "typeZh": "论文列表",
+          "labelEn": "Michael Buro publications",
+          "labelZh": "迈克尔·布罗论文列表",
+          "url": "https://skatgame.net/mburo/publications.html",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-1997-logistello:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "1997: Logistello: Learning Evaluation for Othello",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "1997: Logistello：黑白棋评估函数学习",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:3",
+          "field": "location",
+          "locale": "en",
+          "text": "NEC Research Institute, NJ, United States",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "NEC 研究院，美国新泽西州",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Michael Buro - Creator of Logistello",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "迈克尔·布罗 - Logistello 创建者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "Takeshi Murakami - World Othello champion in the 1997 match",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "村上健 - 1997 年对局中的黑白棋世界冠军",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-logistello:9",
+          "field": "description",
+          "locale": "en",
+          "text": "Logistello defeated world champion Takeshi Murakami 6-0 in a 1997 Othello match.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-logistello:10",
+          "field": "description",
+          "locale": "en",
+          "text": "Michael Buro combined selective game-tree search, pattern-based evaluation, statistical feature learning, opening-book learning, and strong endgame solving, showing that learned evaluation could outperform hand-crafted heuristics in a compact board game.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-logistello:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "Logistello 在 1997 年黑白棋对局中以 6 比 0 击败世界冠军村上健。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-logistello:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "Michael Buro 将选择性博弈树搜索、基于棋盘模式的评估、统计特征学习、开局库学习和强残局求解结合起来，说明学习得到的评估函数可以在紧凑棋盘游戏中超过手工启发式规则。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-1997-logistello:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Othello was small enough for deep search but rich enough that shallow material counting failed.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "By the 1990s, the key bottleneck was not just speed but how accurately a program could evaluate unstable midgame positions.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "黑白棋足够紧凑，可以进行深层搜索；但它又足够复杂，不能只靠浅层子数统计。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "到 1990 年代，关键瓶颈不只是速度，而是程序能否准确评估不稳定的中盘局面。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Logistello treated evaluation as a statistical learning problem over board patterns and game phases.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Search still mattered, but the learned evaluator gave search a sharper sense of which positions were strategically promising.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "Logistello 把评估函数看成一个跨棋盘模式和阶段的统计学习问题。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "搜索仍然重要，但学习到的评估器让搜索更清楚哪些局面具有战略潜力。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Logistello as a bridge between classical game-tree search and machine-learned evaluation functions.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its legacy is the lesson that search quality can change dramatically when evaluation parameters are learned from large game-position corpora.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 Logistello 视为经典博弈树搜索与机器学习评估函数之间的桥梁。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于说明：当评估参数来自大规模棋局语料学习时，搜索质量会发生显著变化。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "The Othello Match of the Year",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Michael Buro / NEC Research Institute",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "年度黑白棋对局",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-1997-logistello:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "迈克尔·布罗 / NEC 研究院",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2000s-alphacat",
+      "year": "2000s",
+      "titleEn": "Chinese Chess Engines and AlphaCat",
+      "titleZh": "中国象棋引擎与 AlphaCat",
+      "sourceCount": 3,
+      "primarySourceCount": 2,
+      "claimCount": 28,
+      "riskyClaimCount": 2,
+      "weakClaimCount": 0,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Tournament archive",
+          "typeZh": "赛事档案",
+          "labelEn": "ICGA Chinese Chess page",
+          "labelZh": "ICGA 中国象棋页面",
+          "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Comparison Training for Computer Chinese Chess",
+          "labelZh": "面向计算机中国象棋的比较训练",
+          "url": "https://arxiv.org/abs/1801.07411",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Game rules / background",
+          "typeZh": "规则与背景",
+          "labelEn": "Xiangqi overview",
+          "labelZh": "中国象棋概览",
+          "url": "https://en.wikipedia.org/wiki/Xiangqi",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2000s-alphacat:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2000s: Chinese Chess Engines and AlphaCat",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2000s: 中国象棋引擎与 AlphaCat",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:3",
+          "field": "location",
+          "locale": "en",
+          "text": "Computer Olympiad Chinese Chess track, China and Taiwan",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "计算机奥林匹克中国象棋项目，中国大陆与中国台湾",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Xiangqi engine teams - Programmers behind ICGA Chinese Chess entrants",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "中国象棋引擎团队 - ICGA 中国象棋项目参赛程序背后的开发者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "AlphaCat - Representative system requested by the issue",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "AlphaCat - issue 指定的代表性系统",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:9",
+          "field": "description",
+          "locale": "en",
+          "text": "Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:10",
+          "field": "description",
+          "locale": "en",
+          "text": "The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Xiangqi is close enough to chess that search and evaluation are natural starting points.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "It is also different enough that cannon captures, palace restrictions, river effects, and repetition rules force engine authors to redesign board representation and tactical evaluation.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "中国象棋与国际象棋足够接近，因此搜索和评估是自然起点。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "它又足够不同：炮的隔子打、九宫限制、过河规则和长打规则，迫使引擎作者重新设计棋盘表示和战术评估。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "The practical route was not one universal trick but a stack of domain-aware engineering.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Fast move generation, aggressive alpha-beta pruning, opening knowledge, and tuned evaluation matrices worked together to survive a highly tactical search space.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "实用路线不是一个万能技巧，而是一组面向领域的工程组合。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "快速走法生成、激进 alpha-beta 剪枝、开局知识和调校后的评估矩阵共同作用，才能应对高度战术化的搜索空间。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat strong xiangqi engines as evidence that classical search remains powerful when it is deeply adapted to a game.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "This line also foreshadowed later learned-evaluation work, where handcrafted piece-square matrices were gradually complemented by automatically tuned weights.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把强中国象棋引擎视为证据：只要深度适配具体游戏，经典搜索仍然非常有力。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "这条路线也预示了后来的学习型评估工作，手工兵种位置表逐步被自动调校权重补充。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "ICGA Tournaments: Chinese Chess",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "International Computer Games Association tournament archive",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "ICGA 赛事：中国象棋",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2000s-alphacat:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "国际计算机博弈协会赛事档案",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2013-dqn",
+      "year": "2013",
+      "titleEn": "Deep Q Network",
+      "titleZh": "深度 Q 网络",
+      "sourceCount": 3,
+      "primarySourceCount": 3,
+      "claimCount": 30,
+      "riskyClaimCount": 3,
+      "weakClaimCount": 1,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Preprint",
+          "typeZh": "预印本",
+          "labelEn": "Playing Atari with Deep Reinforcement Learning",
+          "labelZh": "用深度强化学习玩 Atari",
+          "url": "https://arxiv.org/abs/1312.5602",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Human-level control through deep reinforcement learning",
+          "labelZh": "Human-level control through deep reinforcement learning",
+          "url": "https://www.nature.com/articles/nature14236",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Project note",
+          "typeZh": "项目说明",
+          "labelEn": "Google DeepMind: Deep Reinforcement Learning",
+          "labelZh": "谷歌 DeepMind: Deep Reinforcement Learning",
+          "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+          "primaryCandidate": true,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2013-dqn:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2013: Deep Q Network",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2013: 深度 Q 网络",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:3",
+          "field": "location",
+          "locale": "en",
+          "text": "DeepMind, London, United Kingdom",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "DeepMind，英国伦敦",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Volodymyr Mnih - First author of DQN work",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2013-dqn:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "沃洛迪米尔·姆尼赫 - DQN 工作第一作者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "David Silver - DeepMind reinforcement learning researcher",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "戴维·席尔瓦 - DeepMind 强化学习研究者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:9",
+          "field": "description",
+          "locale": "en",
+          "text": "DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:10",
+          "field": "description",
+          "locale": "en",
+          "text": "The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:11",
+          "field": "description",
+          "locale": "en",
+          "text": "It became a central bridge from classic RL to deep RL.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:13",
+          "field": "description",
+          "locale": "zh",
+          "text": "智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:14",
+          "field": "description",
+          "locale": "zh",
+          "text": "它成为经典强化学习走向深度强化学习的关键桥梁。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:15",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Classic reinforcement learning had strong theory, but scaling from raw pixels to control remained difficult.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:16",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "DQN made that scaling visible.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:17",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "经典强化学习有坚实理论，但从原始像素扩展到控制任务仍然困难。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:18",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "DQN 让这种扩展变得可见。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:19",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:20",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:21",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:22",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat DQN as the breakthrough that made deep reinforcement learning visible and concrete.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its long-term legacy is the neural loop connecting perception, action, reward, replay, and value learning, despite ongoing sample-efficiency and stability challenges.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:25",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:26",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于把感知、行动、奖励、经验回放和价值学习接成神经循环，尽管样本效率和稳定性问题仍存在。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:27",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Playing Atari with Deep Reinforcement Learning",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:28",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Volodymyr Mnih et al., DeepMind, 2013",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:29",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "用深度强化学习玩 Atari",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2013-dqn:30",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "沃洛迪米尔·姆尼赫等, DeepMind，2013",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2016-alphago",
+      "year": 2016,
+      "titleEn": "AlphaGo",
+      "titleZh": "AlphaGo",
+      "sourceCount": 3,
+      "primarySourceCount": 1,
+      "claimCount": 32,
+      "riskyClaimCount": 3,
+      "weakClaimCount": 0,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Nature 2016 AlphaGo paper",
+          "labelZh": "《自然》 2016 AlphaGo 论文",
+          "url": "https://www.nature.com/articles/nature16961",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Blog",
+          "typeZh": "博客",
+          "labelEn": "Google DeepMind AlphaGo",
+          "labelZh": "谷歌 DeepMind AlphaGo",
+          "url": "https://deepmind.google/research/alphago/",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "API",
+          "typeZh": "API",
+          "labelEn": "KataGo Analysis Engine",
+          "labelZh": "KataGo 分析引擎",
+          "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2016-alphago:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2016: AlphaGo",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2016: AlphaGo",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:3",
+          "field": "location",
+          "locale": "en",
+          "text": "Google DeepMind, London, United Kingdom",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "谷歌 DeepMind，英国，伦敦",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "David Silver - AlphaGo lead researcher",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "大卫·席尔瓦 - AlphaGo 主要研究者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "Demis Hassabis - DeepMind co-founder",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "戴密斯·哈萨比斯 - DeepMind 联合创始人",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:9",
+          "field": "figure",
+          "locale": "en",
+          "text": "Aja Huang - AlphaGo researcher",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:10",
+          "field": "figure",
+          "locale": "zh",
+          "text": "黄士杰 - AlphaGo 研究者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:11",
+          "field": "description",
+          "locale": "en",
+          "text": "AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:12",
+          "field": "description",
+          "locale": "en",
+          "text": "Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:13",
+          "field": "description",
+          "locale": "en",
+          "text": "The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:14",
+          "field": "description",
+          "locale": "zh",
+          "text": "AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:15",
+          "field": "description",
+          "locale": "zh",
+          "text": "2016 年与李世石的对局让 AI 的战略能力被全球观众看见。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:16",
+          "field": "description",
+          "locale": "zh",
+          "text": "它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:17",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Go had long resisted brute-force AI because its state space was enormous and expert play depended on pattern intuition.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:18",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "AlphaGo made the problem tractable by combining learned intuition with search, turning Go into a public demonstration of modern AI strategy.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:19",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "围棋长期难以被蛮力 AI 攻克，因为状态空间巨大，高手对弈又依赖模式直觉。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:20",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "AlphaGo 通过把学习到的直觉与搜索结合起来，使这个问题变得可处理，并让围棋成为现代 AI 战略能力的公开展示。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:21",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:22",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "AlphaGo Zero later showed how self-play could reduce dependence on expert game data.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:23",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:24",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:25",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:26",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:27",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:28",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:29",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:30",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "David Silver et al., Nature, 2016",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:31",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "用深度神经网络和树搜索掌握围棋",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2016-alphago:32",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "戴维·席尔瓦等, 《自然》, 2016",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2017-alphazero",
+      "year": "2017-2018",
+      "titleEn": "AlphaZero",
+      "titleZh": "AlphaZero",
+      "sourceCount": 3,
+      "primarySourceCount": 2,
+      "claimCount": 28,
+      "riskyClaimCount": 7,
+      "weakClaimCount": 3,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Science paper",
+          "labelZh": "Science 论文",
+          "url": "https://www.science.org/doi/10.1126/science.aar6404",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Preprint",
+          "typeZh": "预印本",
+          "labelEn": "arXiv preprint",
+          "labelZh": "arXiv 预印本",
+          "url": "https://arxiv.org/abs/1712.01815",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Blog",
+          "typeZh": "博客",
+          "labelEn": "DeepMind AlphaZero blog",
+          "labelZh": "DeepMind AlphaZero 博客",
+          "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2017-alphazero:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2017-2018: AlphaZero",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2017-2018: AlphaZero",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:3",
+          "field": "location",
+          "locale": "en",
+          "text": "DeepMind, London, United Kingdom",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "DeepMind，英国伦敦",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "David Silver - DeepMind reinforcement learning lead",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "大卫·席尔瓦 - DeepMind 强化学习负责人",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "Demis Hassabis - DeepMind co-founder",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "德米斯·哈萨比斯 - DeepMind 联合创始人",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:9",
+          "field": "description",
+          "locale": "en",
+          "text": "AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2017-alphazero:10",
+          "field": "description",
+          "locale": "en",
+          "text": "It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2017-alphazero:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "AlphaGo still used human expert games and Go-specific training stages.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "AlphaZero asked whether self-play could carry the learning burden across multiple games with only the rules as input.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2017-alphazero:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "AlphaGo 仍然使用人类专家棋谱和围棋专用训练阶段。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "AlphaZero 进一步追问：自我博弈能否只依靠规则，在多个游戏中承担主要学习负担。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "A neural network predicts move probabilities and game outcomes.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Tree search improves action choice, self-play generates new experience, and the network absorbs the improved behavior in the next training cycle.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "神经网络预测走法概率和胜负结果。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "树搜索改进行动选择，自我博弈产生新经验，网络再在下一轮训练中吸收这些改进行为。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat AlphaZero as the cleanest public statement of the neural-search self-play paradigm.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its legacy is the idea that strong play can emerge from rule-based simulation plus learned policy-value guidance, a pattern that later influenced MuZero and other planning systems.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 AlphaZero 视为神经搜索自我博弈范式最清晰的公开表达。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于提出：强棋力可以从规则仿真与学习型策略-价值引导中涌现，这一模式后来影响了 MuZero 等规划系统。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "David Silver et al., Science, 2018",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-alphazero:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "David Silver 等，Science，2018",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2017-libratus",
+      "year": "2017",
+      "titleEn": "Libratus",
+      "titleZh": "Libratus",
+      "sourceCount": 3,
+      "primarySourceCount": 3,
+      "claimCount": 28,
+      "riskyClaimCount": 8,
+      "weakClaimCount": 4,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Science paper",
+          "labelZh": "Science 论文",
+          "url": "https://www.science.org/doi/10.1126/science.aao1733",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "News report",
+          "typeZh": "新闻报道",
+          "labelEn": "CMU Libratus release",
+          "labelZh": "CMU Libratus 新闻稿",
+          "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Preprint",
+          "typeZh": "预印本",
+          "labelEn": "Safe and Nested Subgame Solving",
+          "labelZh": "安全嵌套子局求解论文",
+          "url": "https://arxiv.org/abs/1705.02955",
+          "primaryCandidate": true,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2017-libratus:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2017: Libratus",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2017: Libratus",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:3",
+          "field": "location",
+          "locale": "en",
+          "text": "Carnegie Mellon University, Pittsburgh, United States",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "卡内基梅隆大学，美国匹兹堡",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Noam Brown - Libratus co-creator",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "诺姆·布朗 - Libratus 共同创建者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "Tuomas Sandholm - CMU professor and Libratus co-creator",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "托马斯·桑德霍姆 - CMU 教授，Libratus 共同创建者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:9",
+          "field": "description",
+          "locale": "en",
+          "text": "Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2017-libratus:10",
+          "field": "description",
+          "locale": "en",
+          "text": "It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2017-libratus:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Poker added hidden cards, bluffing, and uncertainty to the game-AI story.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Unlike chess or Go, the correct action depends on ranges of possible private hands and on what opponents believe you might hold.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "扑克把暗牌、诈唬和不确定性加入了游戏 AI 叙事。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "不同于国际象棋或围棋，正确行动取决于可能暗牌范围，以及对手认为你可能持有什么牌。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Libratus solved a compact abstraction before the match and used real-time subgame solving during difficult hands.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "proof/solved wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2017-libratus:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "It then analyzed each day for exploitable patterns and patched the strategy overnight.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "Libratus 在赛前求解紧凑抽象策略，并在困难手牌中使用实时子局求解。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "它随后分析每天对局中的可利用模式，并在夜间修补策略。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Libratus as a turning point for large imperfect-information games.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its legacy is showing that abstraction, equilibrium reasoning, and targeted repair can defeat elite humans even when the real state is partly hidden.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 Libratus 视为大型不完全信息博弈的转折点。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于证明：即使真实状态部分隐藏，抽象、均衡推理和定向修补仍能击败顶尖人类。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "proof/solved wording",
+            "game result or superhuman-performance wording"
+          ]
+        },
+        {
+          "id": "milestone-2017-libratus:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Noam Brown and Tuomas Sandholm, Science, 2017",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2017-libratus:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "Noam Brown 与 Tuomas Sandholm，Science，2017",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2019-muzero",
+      "year": "2019-2020",
+      "titleEn": "MuZero",
+      "titleZh": "MuZero",
+      "sourceCount": 3,
+      "primarySourceCount": 2,
+      "claimCount": 30,
+      "riskyClaimCount": 5,
+      "weakClaimCount": 2,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Nature paper",
+          "labelZh": "Nature 论文",
+          "url": "https://www.nature.com/articles/s41586-020-03051-4",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "Preprint",
+          "typeZh": "预印本",
+          "labelEn": "arXiv preprint",
+          "labelZh": "arXiv 预印本",
+          "url": "https://arxiv.org/abs/1911.08265",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Blog",
+          "typeZh": "博客",
+          "labelEn": "DeepMind MuZero blog",
+          "labelZh": "DeepMind MuZero 博客",
+          "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
+          "primaryCandidate": false,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2019-muzero:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2019-2020: MuZero",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2019-2020: MuZero",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:3",
+          "field": "location",
+          "locale": "en",
+          "text": "DeepMind, London, United Kingdom",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "DeepMind，英国伦敦",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Julian Schrittwieser - MuZero first author",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2019-muzero:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "朱利安·施里特维泽 - MuZero 第一作者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "David Silver - DeepMind reinforcement learning lead",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "大卫·席尔瓦 - DeepMind 强化学习负责人",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:9",
+          "field": "description",
+          "locale": "en",
+          "text": "MuZero learned to plan without being given the exact rules of the environment.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:10",
+          "field": "description",
+          "locale": "en",
+          "text": "It built a compact internal model only for the quantities needed by search: policy, value, and reward.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2019-muzero:11",
+          "field": "description",
+          "locale": "en",
+          "text": "In board games and Atari, it linked AlphaZero-style planning with model learning from experience.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "MuZero 学会在没有显式环境规则的情况下进行规划。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:13",
+          "field": "description",
+          "locale": "zh",
+          "text": "它只学习搜索所需的紧凑内部模型：策略、价值和奖励。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:14",
+          "field": "description",
+          "locale": "zh",
+          "text": "在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:15",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "AlphaZero searched using known rules, while many reinforcement-learning agents learned from pixels without explicit lookahead.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:16",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "MuZero connected these two worlds by learning a model that was useful for planning even when the exact rules were not supplied.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:17",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "AlphaZero 依赖已知规则搜索，而许多强化学习智能体从像素学习但缺少显式前瞻。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:18",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "MuZero 通过学习一个对规划有用的模型，把这两个世界连接起来，即使没有提供精确规则也能工作。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:19",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Instead of predicting every future observation, MuZero learns a latent dynamics model for rewards, values, policies, and search.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:20",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "The model is judged by whether it helps decisions, not by whether it reconstructs the full world.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:21",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "MuZero 不预测每个未来观测，而是学习面向奖励、价值、策略和搜索的潜在动力学模型。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:22",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "这个模型按是否帮助决策来评价，而不是按是否重建完整世界来评价。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat MuZero as a landmark in learned-model planning.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its legacy is showing that model-based reinforcement learning can combine the strengths of AlphaZero-style search with experience-driven model learning.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:25",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 MuZero 视为学习模型规划的标志性成果。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:26",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于说明：基于模型的强化学习可以结合 AlphaZero 式搜索和经验驱动模型学习的优势。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:27",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:28",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Julian Schrittwieser et al., Nature, 2020",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:29",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-muzero:30",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "Julian Schrittwieser 等，Nature，2020",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2019-pluribus",
+      "year": "2019",
+      "titleEn": "Pluribus",
+      "titleZh": "Pluribus",
+      "sourceCount": 3,
+      "primarySourceCount": 2,
+      "claimCount": 28,
+      "riskyClaimCount": 3,
+      "weakClaimCount": 0,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Science paper",
+          "labelZh": "Science 论文",
+          "url": "https://www.science.org/doi/10.1126/science.aay2400",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "News report",
+          "typeZh": "新闻报道",
+          "labelEn": "Meta AI Pluribus report",
+          "labelZh": "Meta AI Pluribus 报道",
+          "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+          "primaryCandidate": false,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "News report",
+          "typeZh": "新闻报道",
+          "labelEn": "CMU Pluribus release",
+          "labelZh": "CMU Pluribus 新闻稿",
+          "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html",
+          "primaryCandidate": true,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2019-pluribus:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2019: Pluribus",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2019: Pluribus",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:3",
+          "field": "location",
+          "locale": "en",
+          "text": "Carnegie Mellon University and Facebook AI Research, Pittsburgh and Menlo Park, United States",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "卡内基梅隆大学与 Facebook AI Research，美国匹兹堡与门洛帕克",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Noam Brown - Pluribus co-creator",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "诺姆·布朗 - Pluribus 共同创建者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "Tuomas Sandholm - Pluribus co-creator",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "托马斯·桑德霍姆 - Pluribus 共同创建者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:9",
+          "field": "description",
+          "locale": "en",
+          "text": "Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:10",
+          "field": "description",
+          "locale": "en",
+          "text": "It used a compact blueprint strategy plus limited-lookahead search to handle several opponents at once, moving game AI toward multiplayer settings where no single opponent model is enough.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:11",
+          "field": "description",
+          "locale": "zh",
+          "text": "Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:12",
+          "field": "description",
+          "locale": "zh",
+          "text": "它使用紧凑蓝图策略与有限前瞻搜索，同时处理多个对手，把游戏 AI 推向无法只靠单一对手模型的多人场景。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:13",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Many real strategic settings are neither two-player nor zero-sum in the clean chess sense.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:14",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Multiplayer poker made that gap concrete by adding several opponents with private information and shifting incentives.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:15",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "许多真实策略场景并不是干净的两人零和棋局。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:16",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "多人扑克通过多个拥有私人信息、激励不断变化的对手，把这个差距具体化了。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:17",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Pluribus used a compact self-play blueprint as the baseline policy.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:18",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "During play it applied limited-lookahead search to refine decisions without trying to solve the entire six-player game from scratch.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:19",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "Pluribus 使用紧凑自我对弈蓝图作为基准策略。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:20",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "在对局中，它用有限前瞻搜索细化决策，而不是从头求解整个六人游戏。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:21",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Pluribus as an important demonstration that imperfect-information AI can scale beyond two players.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:22",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its legacy is the blueprint-plus-search pattern for messy multi-agent domains where exact equilibrium computation is out of reach.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 Pluribus 视为不完全信息 AI 扩展到两人之外的重要展示。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于提出蓝图加搜索模式，用于那些无法精确计算均衡的复杂多智能体领域。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:25",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Superhuman AI for multiplayer poker",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:26",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Noam Brown and Tuomas Sandholm, Science, 2019",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:27",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "面向多人扑克的超人 AI",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-pluribus:28",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "Noam Brown 与 Tuomas Sandholm，Science，2019",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    },
+    {
+      "id": "milestone-2019-suphx",
+      "year": "2019-2020",
+      "titleEn": "Suphx: Mahjong with Deep Reinforcement Learning",
+      "titleZh": "Suphx：深度强化学习麻将 AI",
+      "sourceCount": 3,
+      "primarySourceCount": 3,
+      "claimCount": 30,
+      "riskyClaimCount": 6,
+      "weakClaimCount": 3,
+      "issues": [],
+      "sources": [
+        {
+          "index": 1,
+          "typeEn": "Paper",
+          "typeZh": "论文",
+          "labelEn": "Suphx arXiv paper",
+          "labelZh": "Suphx arXiv 论文",
+          "url": "https://arxiv.org/abs/2003.13590",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 2,
+          "typeEn": "DOI",
+          "typeZh": "DOI",
+          "labelEn": "arXiv DOI page",
+          "labelZh": "arXiv DOI 页面",
+          "url": "https://doi.org/10.48550/arXiv.2003.13590",
+          "primaryCandidate": true,
+          "validUrl": true
+        },
+        {
+          "index": 3,
+          "typeEn": "Background paper",
+          "typeZh": "背景论文",
+          "labelEn": "Building a Computer Mahjong Player via Deep CNNs",
+          "labelZh": "用深度卷积网络构建麻将程序",
+          "url": "https://arxiv.org/abs/1906.02146",
+          "primaryCandidate": true,
+          "validUrl": true
+        }
+      ],
+      "claims": [
+        {
+          "id": "milestone-2019-suphx:1",
+          "field": "year-title",
+          "locale": "en",
+          "text": "2019-2020: Suphx: Mahjong with Deep Reinforcement Learning",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:2",
+          "field": "year-title",
+          "locale": "zh",
+          "text": "2019-2020: Suphx：深度强化学习麻将 AI",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:3",
+          "field": "location",
+          "locale": "en",
+          "text": "Microsoft Research Asia, Beijing, China",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:4",
+          "field": "location",
+          "locale": "zh",
+          "text": "微软亚洲研究院，中国北京",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:5",
+          "field": "figure",
+          "locale": "en",
+          "text": "Junjie Li - Suphx paper first author",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2019-suphx:6",
+          "field": "figure",
+          "locale": "zh",
+          "text": "李俊杰 - Suphx 论文第一作者",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:7",
+          "field": "figure",
+          "locale": "en",
+          "text": "Tao Qin - Microsoft Research Asia researcher",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:8",
+          "field": "figure",
+          "locale": "zh",
+          "text": "秦涛 - 微软亚洲研究院研究员",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:9",
+          "field": "figure",
+          "locale": "en",
+          "text": "Tie-Yan Liu - Microsoft Research Asia research leader",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:10",
+          "field": "figure",
+          "locale": "zh",
+          "text": "刘铁岩 - 微软亚洲研究院研究负责人",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:11",
+          "field": "description",
+          "locale": "en",
+          "text": "Suphx brought deep reinforcement learning to Japanese mahjong, a four-player imperfect-information game with hidden tiles, stochastic draws, complex scoring, and long-horizon risk tradeoffs.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:12",
+          "field": "description",
+          "locale": "en",
+          "text": "It used supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation to reach a level above most ranked Tenhou players.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:13",
+          "field": "description",
+          "locale": "zh",
+          "text": "Suphx 将深度强化学习带入日本麻将，这是一种四人不完全信息游戏，包含隐藏牌、随机摸牌、复杂计分和长期风险权衡。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:14",
+          "field": "description",
+          "locale": "zh",
+          "text": "它使用监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配，在天凤平台达到超过绝大多数注册段位玩家的水平。",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "game result or superhuman-performance wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2019-suphx:15",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Mahjong is more difficult for direct search than chess-like board games because players see only part of the state.",
+          "risk": true,
+          "status": "needs-manual-source-review",
+          "manualReview": true,
+          "reviewReasons": [
+            "absolute-first-or-only wording",
+            "non-legacy risk claim"
+          ]
+        },
+        {
+          "id": "milestone-2019-suphx:16",
+          "field": "commentary:Historical Background",
+          "locale": "en",
+          "text": "Every discard affects hand value, safety, turn order, and the hidden intentions of three opponents.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:17",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "麻将比类棋盘游戏更难直接搜索，因为玩家只能看到部分状态。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:18",
+          "field": "commentary:Historical Background",
+          "locale": "zh",
+          "text": "每一次打牌都会影响手牌价值、安全性、巡目节奏，以及三个对手的隐藏意图。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:19",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Suphx learned from human games and then improved through reinforcement learning.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:20",
+          "field": "commentary:Core Idea",
+          "locale": "en",
+          "text": "Its additional reward prediction, oracle guiding, and policy adaptation components helped it reason about delayed points, hidden tiles, and changing table context.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:21",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "Suphx 先从人类牌谱学习，再通过强化学习改进。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:22",
+          "field": "commentary:Core Idea",
+          "locale": "zh",
+          "text": "额外的奖励预测、oracle guiding 和策略适配组件，帮助它推理延迟得分、隐藏牌和不断变化的牌桌上下文。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:23",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Experts generally treat Suphx as a signal that deep reinforcement learning can handle multi-player stochastic imperfect-information games beyond poker.",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:24",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "en",
+          "text": "Its legacy is broadening the game-AI testbed from clean boards and two-player equilibrium toward messy cultural games with rich hidden state.",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:25",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "专家通常把 Suphx 视为一个信号：深度强化学习可以处理扑克之外的多人随机不完全信息游戏。",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:26",
+          "field": "commentary:Long-Term Legacy",
+          "locale": "zh",
+          "text": "它的长期影响在于把游戏 AI 试验场从干净棋盘和两人均衡，扩展到具有丰富隐藏状态的复杂文化游戏。",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:27",
+          "field": "quote-work",
+          "locale": "en",
+          "text": "Suphx: Mastering Mahjong with Deep Reinforcement Learning",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:28",
+          "field": "quote-authors",
+          "locale": "en",
+          "text": "Junjie Li et al., arXiv, 2020",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:29",
+          "field": "quote-work",
+          "locale": "zh",
+          "text": "Suphx：用深度强化学习掌握麻将",
+          "risk": true,
+          "status": "low-priority-risk",
+          "manualReview": false,
+          "reviewReasons": []
+        },
+        {
+          "id": "milestone-2019-suphx:30",
+          "field": "quote-authors",
+          "locale": "zh",
+          "text": "Junjie Li 等，arXiv，2020",
+          "risk": false,
+          "status": "structural-only",
+          "manualReview": false,
+          "reviewReasons": []
+        }
+      ]
+    }
+  ]
+}
