@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-23 19:35
+// 生成时间: 2026-06-30 20:45
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -97,10 +97,7 @@ const milestones = [
       "zh": "\"学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
-        "zh": "《达特茅斯人工智能夏季研究项目提案》, 约翰·麦卡锡、马文·L·明斯基、纳撒尼尔·罗切斯特、克劳德·E·香农"
-      },
+      "en": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
       "zh": "《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农"
     },
     "quoteMeta": {
@@ -266,10 +263,7 @@ const milestones = [
       "zh": "\"这一理论在生物物理学和心理学之间架起了一座桥梁。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
-        "zh": "《感知机：大脑中信息存储与组织的概率模型》, 弗兰克·罗森布拉特"
-      },
+      "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
       "zh": "《感知机：一种用于大脑信息存储与组织的概率模型》，弗兰克·罗森布拉特"
     },
     "quoteMeta": {
@@ -446,10 +440,7 @@ const milestones = [
       "zh": "\"他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
-        "zh": "《感知机：计算几何导论》, 马文·明斯基、西摩尔·帕普特"
-      },
+      "en": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
       "zh": "《感知机：计算几何导论》，马文·明斯基、西摩·派珀特"
     },
     "quoteMeta": {
@@ -630,10 +621,7 @@ const milestones = [
       "zh": "\"能够创造有用的新特征，使反向传播区别于更早、更简单的方法。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
-        "zh": "《通过误差反向传播学习表示》, 戴维·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯"
-      },
+      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
       "zh": "《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
     },
     "quoteMeta": {
@@ -823,10 +811,7 @@ const milestones = [
       "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Finding Structure in Time》, Jeffrey L. Elman",
-        "zh": "《在时间中发现结构》, 杰弗里·L·埃尔曼"
-      },
+      "en": "《Finding Structure in Time》, Jeffrey L. Elman",
       "zh": "《在时间中发现结构》，杰弗里·埃尔曼"
     },
     "quoteMeta": {
@@ -970,10 +955,7 @@ const milestones = [
       "zh": "\"专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
-        "zh": "《基于梯度的学习在文档识别中的应用》, 扬·勒昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
-      },
+      "en": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
       "zh": "《基于梯度的学习在文档识别中的应用》，杨立昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
     },
     "quoteMeta": {
@@ -1141,10 +1123,7 @@ const milestones = [
       "zh": "\"长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
-        "zh": "《长短期记忆》, 塞普·霍赫赖特、于尔根·施密德胡伯"
-      },
+      "en": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
       "zh": "《长短期记忆》，塞普·霍赫赖特、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
@@ -1312,10 +1291,7 @@ const milestones = [
       "zh": "\"我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
-        "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·E·辛顿"
-      },
+      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
       "zh": "《使用深度卷积神经网络进行 ImageNet 分类》，亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿"
     },
     "quoteMeta": {
@@ -1483,10 +1459,7 @@ const milestones = [
       "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-        "zh": "《高速网络》, 鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
-      },
+      "en": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
       "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
@@ -1643,10 +1616,7 @@ const milestones = [
       "zh": "\"我们提出一种通过对抗过程估计生成模型的新框架。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
-        "zh": "《生成对抗网络》, 伊恩·J·古德费洛等"
-      },
+      "en": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
       "zh": "《生成对抗网络》，伊恩·古德费洛等"
     },
     "quoteMeta": {
@@ -1792,10 +1762,7 @@ const milestones = [
       "zh": "\"我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
-        "zh": "《通过联合学习对齐与翻译的神经机器翻译》, 德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
-      },
+      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
       "zh": "《通过联合学习对齐与翻译的神经机器翻译》，德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
     },
     "quoteMeta": {
@@ -1978,10 +1945,7 @@ const milestones = [
       "zh": "\"我们提出一种残差学习框架，以便训练比以前深得多的网络。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
-        "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑"
-      },
+      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
       "zh": "《用于图像识别的深度残差学习》，何恺明、张祥雨、任少卿、孙剑"
     },
     "quoteMeta": {
@@ -2169,10 +2133,7 @@ const milestones = [
       "zh": "\"DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
-        "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·Q·温伯格"
-      },
+      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
       "zh": "《密集连接卷积网络》，黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格"
     },
     "quoteMeta": {
@@ -2327,10 +2288,7 @@ const milestones = [
       "zh": "\"我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Attention Is All You Need》, Ashish Vaswani et al.",
-        "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等"
-      },
+      "en": "《Attention Is All You Need》, Ashish Vaswani et al.",
       "zh": "《注意力就是你所需要的一切》，阿希什·瓦斯瓦尼等"
     },
     "quoteMeta": {
@@ -2498,10 +2456,7 @@ const milestones = [
       "zh": "\"BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
-        "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等"
-      },
+      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
       "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》，雅各布·德夫林等"
     },
     "quoteMeta": {
@@ -2669,10 +2624,7 @@ const milestones = [
       "zh": "\"我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
-        "zh": "《通过生成式预训练改进语言理解》, 亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
-      },
+      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
       "zh": "《通过生成式预训练改进语言理解》，亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
     },
     "quoteMeta": {
@@ -2849,10 +2801,7 @@ const milestones = [
       "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
-        "zh": "《AI 费曼：受物理启发的符号回归方法》, 西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
-      },
+      "en": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
       "zh": "《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
     },
     "quoteMeta": {
@@ -3031,10 +2980,7 @@ const milestones = [
       "zh": "\"在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
-        "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等"
-      },
+      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
       "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》，约翰·江珀等"
     },
     "quoteMeta": {
@@ -3259,10 +3205,7 @@ const milestones = [
       "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
-        "zh": "《ReAct：在语言模型中协同推理与行动》, 姚顺雨等"
-      },
+      "en": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
       "zh": "《ReAct：在语言模型中协同推理与行动》，姚顺雨等"
     },
     "quoteMeta": {
@@ -3312,21 +3255,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2023-agents/historical/2023-agents_historical_01.png",
         "resources/images/2023-agents/historical/2023-agents_historical_02.png",
-        "resources/images/2023-agents/historical/2023-agents_historical_03.png"
+        "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+        "resources/images/2023-agents/historical/2023-agents_historical_04.png"
       ],
       "imageMeta": {
-        "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-          "caption": {
-            "en": "Historical photo",
-            "zh": "历史照片"
-          },
-          "subcaption": {
-            "en": "Agents: LLM-Driven Autonomous Systems",
-            "zh": "智能体：LLM驱动的自主系统"
-          }
-        },
         "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
           "caption": {
             "en": "Historical photo",
@@ -3338,6 +3271,16 @@ const milestones = [
           }
         },
         "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+          "caption": {
+            "en": "Historical photo",
+            "zh": "历史照片"
+          },
+          "subcaption": {
+            "en": "Agents: LLM-Driven Autonomous Systems",
+            "zh": "智能体：LLM驱动的自主系统"
+          }
+        },
+        "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
           "caption": {
             "en": "Historical photo",
             "zh": "历史照片"
@@ -3433,10 +3376,7 @@ const milestones = [
       "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《The AI Scientist》, Chris Lu et al.",
-        "zh": "《AI 科学家》, 克里斯·卢等"
-      },
+      "en": "《The AI Scientist》, Chris Lu et al.",
       "zh": "《AI 科学家》，克里斯·卢等"
     },
     "quoteMeta": {
@@ -3624,10 +3564,7 @@ const milestones = [
       "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
     },
     "quoteAttribution": {
-      "en": {
-        "en": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
-        "zh": "《聊天机器人竞技场：基于人类偏好评估大语言模型的开放平台》, 蒋维霖等"
-      },
+      "en": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
       "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
     },
     "quoteMeta": {
@@ -8774,7 +8711,7 @@ const milestones = [
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
