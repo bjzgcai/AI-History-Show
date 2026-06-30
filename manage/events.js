@@ -1649,24 +1649,14 @@ module.exports = {
       "zh": "摘自PPT第45-46页"
     },
     "images": [
-      "resources/images/2023-agents/historical/2023-agents_historical_01.png",
       "resources/images/2023-agents/historical/2023-agents_historical_02.png",
-      "resources/images/2023-agents/historical/2023-agents_historical_03.png"
+      "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4"
     ],
     "imageMeta": {
-      "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-        "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
-        },
-        "subcaption": {
-          "en": "Agents: LLM-Driven Autonomous Systems",
-          "zh": "智能体：LLM驱动的自主系统"
-        }
-      },
       "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
         "caption": {
           "en": "Historical photo",
@@ -1678,6 +1668,16 @@ module.exports = {
         }
       },
       "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Agents: LLM-Driven Autonomous Systems",
+          "zh": "智能体：LLM驱动的自主系统"
+        }
+      },
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"

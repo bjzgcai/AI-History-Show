@@ -531,15 +531,16 @@ function selectCuratedQuote(key, ev) {
               zh: getLocalizedText(eventQuote, 'zh') || candidateQuote || getLocalizedText(eventQuote, 'en')
           }
         : candidateQuote || getLocalizedText(eventQuote);
+    const formattedAttribution = formatQuoteAttribution(effectiveMeta);
 
   return {
     text: quoteText,
     attribution: ZH_QUOTE_ATTRIBUTIONS[key]
       ? {
-          en: formatQuoteAttribution(effectiveMeta),
+          en: getLocalizedText(formattedAttribution, 'en'),
           zh: ZH_QUOTE_ATTRIBUTIONS[key],
         }
-      : formatQuoteAttribution(effectiveMeta),
+      : formattedAttribution,
     meta: effectiveMeta,
   };
 }

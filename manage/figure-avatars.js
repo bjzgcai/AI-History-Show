@@ -337,5 +337,33 @@ module.exports = {
     wikipediaTitle: "William_McCune",
     avatar: "",
     note: "未找到可靠可复用人物照片；不要使用本地虚拟人物卡。"
+  },
+  "Xiangyu Zhang": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+    note: "ResNet 共同作者，沿用 ResNet 章节本地头像。"
+  },
+  "张祥雨": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+    note: "双语事件名映射，头像同 Xiangyu Zhang。"
+  },
+  "Shaoqing Ren": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+    note: "ResNet 共同作者，沿用 ResNet 章节本地头像。"
+  },
+  "任少卿": {
+    type: "person",
+    status: "ready",
+    wikipediaTitle: "",
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+    note: "双语事件名映射，头像同 Shaoqing Ren。"
   }
 };
