@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-26 22:00
+// 生成时间: 2026-06-30 21:01
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -3359,7 +3359,10 @@ const milestones = [
         "figureType": "person"
       },
       {
-        "name": "伯克利团队",
+        "name": {
+          "en": "Berkeley Team",
+          "zh": "伯克利团队"
+        },
         "role": {
           "en": "A-Lab Developer",
           "zh": "A-Lab开发者"
@@ -3543,11 +3546,14 @@ const milestones = [
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22"
+      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。"
     },
     "figures": [
       {
-        "name": "研究机构",
+        "name": {
+          "en": "Research Institutions",
+          "zh": "研究机构"
+        },
         "role": {
           "en": "Leading-edge model R&D organization",
           "zh": "前沿模型研发机构"
