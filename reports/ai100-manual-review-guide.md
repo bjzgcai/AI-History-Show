@@ -251,8 +251,10 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: proof/solved wording
 - Claim to check: 专家通常把归结法视为符号 AI 和自动推理的基础证明方法。
+- Review note: “证明方法”在这里并不错误，归结法确实是逻辑中的证明/推导方法。需要弱化的是“专家通常把...视为”这个未直接证明的元判断；同时用“推导方法”可以避免触发 proof/solved 类歧义。
+- Suggested softer wording: 归结法被广泛视为符号 AI 与自动推理领域的基础性推导方法。
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1971-complexity-theory — NP-Completeness / NP 完全性
 
@@ -271,8 +273,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: proof/solved wording; non-legacy risk claim
 - Claim to check: If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently.
+- Review note: Supported. This is a false positive: “solved efficiently” is precise complexity-theory terminology for the existence of an efficient, polynomial-time algorithm, and the statement matches the standard NP-completeness reduction claim.
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1973-prolog — PROLOG / PROLOG
 
@@ -291,8 +294,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Alain Colmerauer - Creator of the first Prolog implementation
+- Review note: Supported. This is a narrow factual claim about Colmerauer and the Marseille Prolog implementation, not a broad historical ranking claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 16. Proof/solved claim (High priority)
 
@@ -300,8 +304,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: proof/solved wording; non-legacy risk claim
 - Claim to check: Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking.
+- Review note: Supported. This is a false positive: “solved” is being used in the programming-language sense of query resolution, and unification plus backtracking accurately describes Prolog's operational behavior.
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1980-xcon-r1 — XCON-R1 / XCON / R1 专家系统
 
@@ -321,8 +326,10 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: proof/solved wording
 - Claim to check: Experts generally treat XCON/R1 as a landmark industrial expert system and a proof that knowledge engineering could deliver business value.
+- Review note: The landmark industrial expert-system framing is supportable, but “experts generally treat” is an unsourced meta-claim and “proof” overstates the business-value claim. “Demonstrated” is the safer historical wording.
+- Suggested softer wording: XCON/R1 is widely regarded as a landmark industrial expert system that demonstrated knowledge engineering could deliver real business value.
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 18. Proof/solved claim (High priority)
 
@@ -330,8 +337,10 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: proof/solved wording
 - Claim to check: 专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。
+- Review note: 工业专家系统的标志性案例这一点可以支持，但“专家通常把...”是未直接证明的元判断，“证明”也让商业价值表述过强。改成“表明”更稳妥。
+- Suggested softer wording: XCON/R1 被广泛视为工业专家系统的标志性案例，表明知识工程能够产生切实的商业价值。
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1983-simulated-annealing — Simulated Annealing / 模拟退火
 
@@ -350,8 +359,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: proof/solved wording
 - Claim to check: Experts generally treat simulated annealing as a classic metaheuristic for escaping local optima, not as a guarantee of easy global optimization.
+- Review note: Supported. This is a false positive: the claim does not say simulated annealing proves or solves global optimization; it explicitly says it is not a guarantee and frames the method as a classic metaheuristic.
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 20. Proof/solved claim (High priority)
 
@@ -359,8 +369,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: proof/solved wording; superlative or benchmark wording
 - Claim to check: 专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法，而不是轻松获得全局最优的保证。
+- Review note: Supported. This is a false positive: the sentence does not claim that simulated annealing proves or solves global optimization; it explicitly says it is not a guarantee and uses appropriately hedged method-category language.
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1984-cyc — Cyc / Cyc 常识知识库
 
@@ -380,8 +391,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: superlative or benchmark wording
 - Claim to check: Experts generally treat Cyc as one of the most ambitious symbolic-AI attempts to encode common sense explicitly.
+- Review note: Supported. The superlative is well attested in knowledge-representation literature, with sources describing Cyc as among the most ambitious hand-built knowledge-base or knowledge-representation projects.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 22. First/only claim (High priority)
 
@@ -389,8 +401,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording
 - Claim to check: Its long-term legacy is keeping debates alive about knowledge engineering, hybrid reasoning, ontologies, and the limits of data-only learning.
+- Review note: Supported. This is a false positive: the sentence does not make a first/only chronology claim; it characterizes Cyc's continuing influence on debates about symbolic knowledge, hybrid reasoning, and data-only learning.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1990-otter — Otter / Otter 自动定理证明器
 
@@ -409,8 +422,10 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: proof/solved wording
 - Claim to check: 专家通常把 Otter 视为自动定理证明和形式推理中的主力系统。
+- Review note: “主力系统”不是证明/解决类措辞，内容方向可以支持。需要弱化的是“专家通常把...视为”这个未直接证明的元判断。
+- Suggested softer wording: Otter 被广泛视为自动定理证明和形式推理领域的重要系统。
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1992-svm — Support Vector Machines / 支持向量机
 
@@ -429,8 +444,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: superlative or benchmark wording; non-legacy risk claim
 - Claim to check: 弗拉基米尔·瓦普尼克 - 共同发展最优间隔分类器与统计学习理论
+- Review note: Supported. This is a false positive: “最优间隔分类器” is the Chinese rendering of “optimal margin classifier” from the paper title/context, not an independent ranking claim.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 25. Superlative or ranking claim (Medium priority)
 
@@ -438,8 +454,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: superlative or benchmark wording; non-legacy risk claim
 - Claim to check: 伯恩哈德·博泽尔 - 1992 年最优间隔分类器论文共同作者
+- Review note: Supported. This is a false positive: “最优间隔分类器” is the Chinese rendering of “optimal margin classifier” from the paper title/context, not an independent ranking claim.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 26. Superlative or ranking claim (Medium priority)
 
@@ -447,8 +464,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: superlative or benchmark wording; non-legacy risk claim
 - Claim to check: 伊莎贝尔·居永 - 1992 年最优间隔分类器论文共同作者
+- Review note: Supported. This is a false positive: “最优间隔分类器” is the Chinese rendering of “optimal margin classifier” from the paper title/context, not an independent ranking claim.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 27. Superlative or ranking claim (Medium priority)
 
@@ -456,8 +474,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: superlative or benchmark wording
 - Claim to check: Experts generally treat SVMs as mature classical methods whose conceptual importance exceeds their role in most modern deep-learning pipelines.
+- Review note: Supported. The sentence is a qualified characterization of SVMs' conceptual role in machine-learning pedagogy versus current deep-learning deployment, not a claim that SVMs are best or ranked above other methods.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1994-chinook — Chinook / Chinook 跳棋程序
 
@@ -477,8 +496,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: proof/solved wording; non-legacy risk claim
 - Claim to check: Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.
+- Review note: Supported. This is a false positive: “solved” and “proven” are technically precise for checkers endgame tablebases and retrograde analysis, where late-game positions have mathematically determined outcomes.
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-1997-deep-blue — Deep Blue / 深蓝
 
@@ -497,8 +517,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match.
+- Review note: Supported. IBM's history source directly supports the precise scope: first computer system to defeat a reigning world chess champion in a match under standard tournament controls, which distinguishes the 1997 match from the 1996 single-game win.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 30. First/only claim (High priority)
 
@@ -506,8 +527,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: 深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。
+- Review note: Supported. IBM 的历史资料直接支持这个精确范围：深蓝是在标准锦标赛规则下的整场比赛中击败卫冕世界冠军的第一个计算机系统，这与 1996 年的单局胜利相区分。
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2003-lda — Latent Dirichlet Allocation / 潜在狄利克雷分配
 
@@ -526,8 +548,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: David Blei - First author of LDA
+- Review note: Supported. This is a false positive: “first author” is a factual bibliographic authorship-order claim, not a chronological priority claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2009-imagenet — ImageNet / ImageNet
 
@@ -546,8 +569,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Jia Deng - First author of ImageNet paper
+- Review note: Supported. This is a false positive: “first author” is a factual bibliographic authorship-order claim, not a chronological priority claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2013-dqn — Deep Q Network / 深度 Q 网络
 
@@ -566,8 +590,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Volodymyr Mnih - First author of DQN work
+- Review note: Supported. This is a false positive: “first author” is a factual bibliographic authorship-order claim, not a chronological priority claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2014-adam — Adam Optimizer / Adam 优化器
 
@@ -586,8 +611,10 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: superlative or benchmark wording
 - Claim to check: 专家通常把 Adam 视为实用默认优化器，而不是万能最优解。
+- Review note: 主要内容是准确且有保留的，因为它明确说明 Adam 不是万能最优解。需要弱化的是“专家通常把...视为”这个未直接证明的元判断；改成使用情况描述更容易由框架文档和广泛实践支持。
+- Suggested softer wording: Adam 被广泛用作实用的默认优化器，而非万能的最优解。
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2014-dropout — Dropout / Dropout
 
@@ -606,8 +633,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Nitish Srivastava - First author of the JMLR dropout paper
+- Review note: Supported. This is a false positive: “first author” is a factual bibliographic authorship-order claim, not a chronological priority claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2014-vgg — VGG Networks / VGG 网络
 
@@ -686,8 +714,10 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: proof/solved wording
 - Claim to check: 专家通常把 LeNet 视为早期经典证据，证明卷积、权重共享和反向传播可以解决真实感知任务。
+- Review note: “证明...可以解决”属于解释性的 proof 语言，“专家通常把...视为”也是未直接证明的元判断。改成“经典示范 / 表明”更稳妥，同时保留 LeNet 对卷积、权重共享和反向传播实践价值的历史意义。
+- Suggested softer wording: LeNet 被广泛视为早期经典示范，表明卷积、权重共享和反向传播能够应对真实的感知任务。
 - Reviewer task: Check whether this is literal proof/solution language or just evidence/demonstration. If it is interpretive, soften to “showed”, “demonstrated”, or “helped establish”.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-ai100-2014-conditional-gan — Conditional GAN / Conditional GAN
 
@@ -706,8 +736,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: non-legacy risk claim
 - Claim to check: This made adversarial generation controllable rather than only sampling from an undirected data distribution.
+- Review note: Supported. This is a false positive: the sentence describes the technical contrast between conditional and unconditional adversarial generation, not a first/only chronology claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 42. First/only claim (High priority)
 
@@ -715,8 +746,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: non-legacy risk claim
 - Claim to check: This made adversarial generation controllable rather than only sampling from an undirected data distribution.
+- Review note: Supported. This is a false positive: the sentence describes the technical contrast between conditional and unconditional adversarial generation, not a first/only chronology claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-ai100-2014-ms-coco — MS COCO / MS COCO
 
@@ -735,8 +767,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: superlative or benchmark wording
 - Claim to check: Experts generally treat MS COCO as one of the most important datasets for modern computer vision.
+- Review note: Supported. The “one of the most important datasets” characterization is broadly defensible for MS COCO given its central role in object detection, segmentation, captioning, and benchmark practice across computer vision literature.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-2016-yolo — YOLO / YOLO
 
@@ -755,8 +788,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Joseph Redmon - First author of YOLO
+- Review note: Supported. This is a false positive: “first author” is a factual bibliographic authorship-order claim, not a chronological priority claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-ai100-2017-gat — GAT / GAT
 
@@ -775,8 +809,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording
 - Claim to check: Its long-term legacy is the idea that graph neighborhoods can be weighted dynamically instead of only by graph degree or fixed normalization.
+- Review note: Supported. This is a false positive: “only” describes the limitation of fixed graph-degree or normalization-based neighborhood weighting, not a first/only historical claim about GAT.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-ai100-2017-wasserstein-gan — Wasserstein GAN / Wasserstein GAN
 
@@ -795,8 +830,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: superlative or benchmark wording; non-legacy risk claim
 - Claim to check: Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。
+- Review note: Supported. This is a false positive: “最优” is part of the mathematical term “最优传输” (optimal transport), not a ranking or superlative claim.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 47. Superlative or ranking claim (Medium priority)
 
@@ -804,8 +840,9 @@ Recommended sources to open:
 - Language: `zh`
 - Why flagged: superlative or benchmark wording; non-legacy risk claim
 - Claim to check: Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。
+- Review note: Supported. This is a false positive: “最优” is part of the mathematical term “最优传输” (optimal transport), not a ranking or superlative claim.
 - Reviewer task: Check whether the source explicitly supports the ranking. If not, replace with a narrower, sourced description.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 ### milestone-ai100-2018-gpt — GPT / GPT
 
@@ -825,8 +862,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks.
+- Review note: Supported. The “first Generative Pre-trained Transformer” claim is precisely scoped to GPT/GPT-1 and is consistent with the project source context for the 2018 OpenAI model.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 49. First/only claim (High priority)
 
@@ -834,8 +872,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.
+- Review note: Supported. The statement describes the historical model-family pattern from GPT-1 through GPT-2, GPT-3, and later decoder-only large language models; it is not an unsupported first/only chronology claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 50. First/only claim (High priority)
 
@@ -843,8 +882,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks.
+- Review note: Supported. The “first Generative Pre-trained Transformer” claim is precisely scoped to GPT/GPT-1 and is consistent with the project source context for the 2018 OpenAI model.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 51. First/only claim (High priority)
 
@@ -852,8 +892,9 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording; non-legacy risk claim
 - Claim to check: It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.
+- Review note: Supported. The statement describes the historical model-family pattern from GPT-1 through GPT-2, GPT-3, and later decoder-only large language models; it is not an unsupported first/only chronology claim.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[x] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
 
 #### 52. First/only claim (High priority)
 
@@ -861,5 +902,7 @@ Recommended sources to open:
 - Language: `en`
 - Why flagged: absolute-first-or-only wording
 - Claim to check: Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models.
+- Review note: The substance is supportable, but “experts generally treat” is the recurring unsourced meta-claim pattern. A “widely regarded” phrasing keeps the historical point while reducing the unsupported consensus framing.
+- Suggested softer wording: GPT is widely regarded as the start of the decoder-only scaling line that led to today's large language models.
 - Reviewer task: Check whether the source really supports the chronology and scope. If not, soften to “early”, “influential”, or name the exact comparison class.
-- Review outcome: `[ ] Supported` `[ ] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
+- Review outcome: `[ ] Supported` `[x] Needs softer wording` `[ ] Needs better source` `[ ] Incorrect`
