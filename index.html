@@ -3044,12 +3044,22 @@
             display: none;
             grid-column: 1 / -1;
             min-height: 0;
-            grid-template-rows: minmax(0, 1fr) 64px;
+            grid-template-rows: minmax(0, 1fr) 56px;
             gap: 12px;
         }
 
         .single-stage.is-ui-browser .stage-grid {
             grid-template-columns: 1fr;
+            position: relative;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .single-stage.is-ui-browser {
+            grid-template-rows:
+                calc(var(--screen-height) * var(--stage-topbar-ratio))
+                1fr;
+            padding-top: 12px;
         }
 
         .single-stage.is-ui-browser .stage-topbar {
@@ -3060,6 +3070,10 @@
         .single-stage.is-ui-browser .brand-lockup,
         .single-stage.is-ui-browser .brand-image {
             width: 468px;
+        }
+
+        .single-stage.is-ui-browser .brand-lockup {
+            padding-top: 10px;
         }
 
         .single-stage.is-ui-browser .storyline-select {
@@ -3100,10 +3114,24 @@
 
         .single-stage.is-ui-browser .ui-browser {
             display: grid;
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: 7px;
+            bottom: 0;
+            grid-template-rows: minmax(0, 1fr);
         }
 
         .ui-browser-main {
             min-height: 0;
+        }
+
+        .single-stage.is-ui-browser .ui-browser-main {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 28px;
+            height: 900px;
         }
 
         .ui-level-one {
@@ -3132,6 +3160,7 @@
 
         .ui-map-panel,
         .ui-event-panel {
+            position: relative;
             min-height: 0;
             overflow: hidden;
             padding: 22px 24px;
@@ -3148,7 +3177,7 @@
 
         .ui-level-one.is-year-mode .ui-map-panel,
         .ui-level-one.is-region-mode .ui-map-panel {
-            grid-template-rows: auto 92px minmax(0, 1fr);
+            grid-template-rows: auto 154px minmax(0, 1fr) 114px;
             gap: 8px;
         }
 
@@ -3247,6 +3276,7 @@
 
         .ui-map-surface {
             position: relative;
+            z-index: 1;
             min-height: 0;
             border: none;
             border-radius: 4px;
@@ -3283,15 +3313,22 @@
 
         .ui-map-callout-zone {
             position: relative;
+            z-index: 3;
             min-height: 0;
+            overflow: hidden;
+            scrollbar-width: none;
+        }
+
+        .ui-map-callout-zone::-webkit-scrollbar {
+            display: none;
         }
 
         .ui-map-callout-lines {
             position: absolute;
             inset: 0;
-            z-index: 1;
+            z-index: 2;
             width: 100%;
-            height: calc(100% + 330px);
+            height: 100%;
             overflow: visible;
             pointer-events: none;
         }
@@ -3305,10 +3342,9 @@
         }
 
         .ui-map-callout {
-            position: absolute;
+            position: relative;
             z-index: 2;
-            top: 0;
-            width: 148px;
+            width: 100%;
             border: none;
             background: transparent;
             color: rgba(244, 239, 229, 0.82);
@@ -3319,6 +3355,18 @@
             text-align: left;
             font: inherit;
             cursor: pointer;
+        }
+
+        .ui-map-callout-strip {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-auto-rows: 34px;
+            column-gap: 14px;
+            row-gap: 6px;
+            align-items: start;
+            padding: 0 0 4px;
         }
 
         .ui-map-callout-dot {
@@ -3352,6 +3400,11 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        .ui-map-callout-count {
+            color: var(--accent);
+            font-weight: 900;
         }
 
         .ui-map-dot {
@@ -3470,6 +3523,8 @@
             overflow-x: auto;
             overflow-y: hidden;
             padding: 0 0 34px;
+            cursor: grab;
+            touch-action: pan-x;
         }
 
         .ui-event-card {
@@ -3731,6 +3786,15 @@
             overflow: hidden;
         }
 
+        .single-stage.is-ui-browser .ui-browser-timeline {
+            position: absolute;
+            left: 42px;
+            right: 42px;
+            bottom: 0;
+            height: 56px;
+            z-index: 5;
+        }
+
         .ui-browser-timeline::before,
         .ui-browser-timeline::after {
             content: "";
@@ -3785,6 +3849,12 @@
             scrollbar-width: none;
             cursor: grab;
             touch-action: pan-x;
+        }
+
+        .ui-year-track.is-dragging,
+        .ui-level-one .ui-event-list.is-dragging {
+            cursor: grabbing;
+            user-select: none;
         }
 
         .ui-year-track::-webkit-scrollbar,
@@ -3868,67 +3938,97 @@
             height: 100%;
             min-height: 0;
             display: grid;
-            grid-template-columns: 640px minmax(0, 1fr) 360px;
-            gap: 16px;
+            grid-template-columns: minmax(0, 1fr) 588px;
+            gap: 14px;
         }
 
         .ui-detail-panel,
         .ui-side-panel {
             min-height: 0;
             overflow: hidden;
-            padding: 20px;
+            padding: 0;
+        }
+
+        .ui-detail-panel {
+            position: relative;
+            display: grid;
+            grid-template-columns: 564px minmax(0, 1fr);
+            grid-template-rows: 132px 148px 450px auto;
+            column-gap: 67px;
+            row-gap: 10px;
+            align-content: start;
+            padding: 10px 34px 0 16px;
         }
 
         .ui-detail-left {
-            display: grid;
-            grid-template-rows: auto auto minmax(0, 1fr);
-            gap: 18px;
+            display: contents;
         }
 
         .ui-detail-hero {
             display: grid;
-            grid-template-columns: 150px minmax(0, 1fr);
-            gap: 18px;
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            grid-template-columns: 230px 340px minmax(0, 1fr);
+            grid-template-rows: 132px 98px;
+            column-gap: 4px;
+            row-gap: 0;
             align-items: start;
+            padding-top: 0;
         }
 
         .ui-detail-year {
+            grid-column: 1;
+            grid-row: 1;
             color: var(--accent);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
-            font-size: 70px;
+            font-family: "Gotham", "Arial Narrow", "OPPOSans", "PingFang SC", sans-serif;
+            font-size: 80px;
             font-weight: 900;
-            line-height: 0.95;
+            line-height: 0.9;
         }
 
         .ui-detail-place {
-            margin-top: 8px;
-            color: rgba(244, 239, 229, 0.72);
-            font-size: 15px;
-            font-weight: 850;
+            grid-column: 2;
+            grid-row: 1;
+            margin-top: 12px;
+            color: var(--accent);
+            font-size: 30px;
+            font-weight: 900;
             line-height: 1.3;
+            max-height: 2.6em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
         }
 
         .ui-avatar-strip {
-            display: flex;
-            gap: 14px;
+            display: grid;
+            grid-column: 1 / 4;
+            grid-row: 2;
+            grid-template-columns: repeat(3, 232px);
+            gap: 36px;
             overflow: hidden;
+            align-items: start;
+            padding-top: 0;
         }
 
         .ui-avatar {
-            width: 98px;
+            min-width: 0;
             display: grid;
-            justify-items: center;
-            gap: 8px;
-            color: rgba(244, 239, 229, 0.7);
-            font-size: 11px;
-            font-weight: 800;
-            text-align: center;
+            grid-template-columns: 98px minmax(0, 1fr);
+            align-items: center;
+            gap: 18px;
+            color: rgba(244, 239, 229, 0.42);
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.35;
+            text-align: left;
         }
 
         .ui-avatar-face {
-            width: 70px;
-            height: 70px;
-            border: 1px solid rgba(244, 239, 229, 0.16);
+            width: 98px;
+            height: 98px;
+            border: 1px solid rgba(244, 239, 229, 0.35);
             border-radius: 50%;
             overflow: hidden;
             background: rgba(255, 255, 255, 0.05);
@@ -3938,6 +4038,15 @@
             font-size: 18px;
         }
 
+        .ui-avatar-name,
+        .ui-avatar-role {
+            display: block;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
         .ui-avatar-face img {
             width: 100%;
             height: 100%;
@@ -3945,26 +4054,33 @@
         }
 
         .ui-detail-image {
+            grid-column: 1;
+            grid-row: 3 / 5;
             min-height: 0;
-            border: 1px solid rgba(244, 239, 229, 0.12);
-            border-radius: 8px;
-            background: rgba(0, 0, 0, 0.28);
-            overflow: hidden;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            overflow: visible;
             display: grid;
-            grid-template-rows: minmax(0, 1fr) auto;
+            grid-template-rows: 450px auto;
+            gap: 34px;
         }
 
         .ui-detail-image-stage {
+            position: relative;
             min-height: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.035);
+            background: rgba(244, 239, 229, 0.98);
+            padding: 10px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.38);
+            touch-action: pan-y;
+            user-select: none;
         }
 
         .ui-detail-image-stage.is-diagram {
             background: rgba(255, 255, 255, 0.92);
-            padding: 12px;
         }
 
         .ui-detail-image-stage img {
@@ -3975,103 +4091,207 @@
             object-fit: contain;
         }
 
+        .ui-detail-image-nav {
+            width: 7px;
+            height: 7px;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            background: rgba(244, 239, 229, 0.34);
+            cursor: pointer;
+            transition: background 160ms ease, transform 160ms ease;
+        }
+
+        .ui-detail-image-nav.active,
+        .ui-detail-image-nav:hover,
+        .ui-detail-image-nav:focus-visible {
+            background: var(--accent);
+            outline: none;
+            transform: scale(1.08);
+        }
+
+        .ui-detail-image-pager {
+            width: 78px;
+            height: 10px;
+            margin: 12px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+        }
+
         .ui-detail-caption {
-            padding: 11px 13px;
-            color: rgba(244, 239, 229, 0.76);
-            font-size: 13px;
-            font-weight: 800;
-            line-height: 1.35;
-            background: rgba(0, 0, 0, 0.64);
+            padding: 0;
+            color: var(--accent);
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 1.22;
+            text-align: center;
+            background: transparent;
         }
 
         .ui-detail-center {
+            display: contents;
+        }
+
+        .ui-detail-heading {
+            grid-column: 2;
+            grid-row: 1;
             display: grid;
-            grid-template-rows: auto minmax(0, 1fr);
-            gap: 20px;
+            align-content: start;
+            gap: 0;
+            padding-top: 12px;
         }
 
         .ui-detail-title {
             color: rgba(255, 255, 255, 0.96);
-            font-size: 36px;
+            font-size: 30px;
             font-weight: 900;
-            line-height: 1.1;
+            line-height: 1.18;
+            max-width: 380px;
+        }
+
+        .ui-detail-meta-inline {
+            display: none;
+            color: rgba(244, 239, 229, 0.66);
+            font-size: 13px;
+            font-weight: 750;
+            line-height: 1.35;
         }
 
         .ui-detail-description {
+            grid-column: 2;
+            grid-row: 3 / 5;
             min-height: 0;
             overflow: auto;
-            color: rgba(244, 239, 229, 0.88);
+            color: rgba(255, 255, 255, 0.9);
             font-size: 20px;
             font-weight: 650;
-            line-height: 1.52;
-            padding-right: 8px;
+            line-height: 1.5;
+            padding: 0 14px 0 0;
+            max-width: 551px;
         }
 
         .ui-detail-description p + p {
-            margin-top: 0.8em;
+            margin-top: 1.35em;
         }
 
         .ui-side-panel {
             display: grid;
-            grid-template-rows: minmax(0, 0.7fr) minmax(0, 1fr);
-            gap: 16px;
+            grid-template-rows: minmax(0, 140px) minmax(0, 1fr);
+            align-content: stretch;
+            gap: 31px;
+            padding: 18px 38px 18px 20px;
+            position: relative;
+        }
+
+        .ui-side-panel::after {
+            content: "";
+            position: absolute;
+            right: 18px;
+            top: 22px;
+            bottom: 32px;
+            width: 3px;
+            background: linear-gradient(180deg, var(--accent) 0 52%, rgba(244, 239, 229, 0.16) 52% 100%);
+            border-radius: 999px;
         }
 
         .ui-info-card,
         .ui-media-card {
             min-height: 0;
             overflow: auto;
-            padding: 18px;
+            padding: 0 8px 0 0;
             display: grid;
             align-content: start;
-            gap: 12px;
+            gap: 14px;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(246, 137, 0, 0.58) rgba(255, 255, 255, 0.08);
+        }
+
+        .ui-info-card::-webkit-scrollbar,
+        .ui-media-card::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .ui-info-card::-webkit-scrollbar-track,
+        .ui-media-card::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .ui-info-card::-webkit-scrollbar-thumb,
+        .ui-media-card::-webkit-scrollbar-thumb {
+            background: rgba(246, 137, 0, 0.58);
+            border-radius: 999px;
         }
 
         .ui-source-card,
         .ui-concept-card {
-            padding: 13px 14px;
+            padding: 0;
             display: grid;
-            gap: 6px;
+            gap: 8px;
             text-decoration: none;
             color: inherit;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
         }
 
         .ui-source-card:hover,
         .ui-source-card:focus-visible {
-            border-color: rgba(246, 137, 0, 0.66);
+            color: var(--accent);
             outline: none;
         }
 
         .ui-source-type,
         .ui-concept-chip {
             color: var(--accent);
-            font-size: 11px;
+            font-size: 18px;
             font-weight: 900;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+            letter-spacing: 0;
+            text-transform: none;
         }
 
-        .ui-source-label,
+        .ui-source-label {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 1.35;
+        }
+
+        .ui-source-url {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 14px;
+            font-weight: 650;
+            line-height: 1.46;
+            overflow-wrap: anywhere;
+        }
+
         .ui-concept-title {
             color: rgba(255, 255, 255, 0.92);
-            font-size: 15px;
-            font-weight: 900;
-            line-height: 1.25;
+            font-size: 17px;
+            font-weight: 850;
+            line-height: 1.35;
         }
 
-        .ui-source-url,
         .ui-concept-text {
-            color: rgba(244, 239, 229, 0.62);
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 1.36;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 15px;
+            font-weight: 650;
+            line-height: 1.46;
             overflow-wrap: anywhere;
         }
 
         .ui-media-video {
-            min-height: 210px;
-            border: 1px solid rgba(244, 239, 229, 0.12);
-            border-radius: 7px;
+            width: 100%;
+            aspect-ratio: 530 / 298;
+            min-height: 0;
+            border: 1px solid rgba(244, 239, 229, 0.48);
+            border-radius: 0;
             overflow: hidden;
             background: #050505;
         }
@@ -4086,7 +4306,41 @@
 
         .ui-explainer-grid {
             display: grid;
-            gap: 12px;
+            gap: 18px;
+        }
+
+        .ui-side-visual {
+            min-height: 0;
+            display: grid;
+            gap: 8px;
+        }
+
+        .ui-side-visual-stage {
+            width: 100%;
+            min-height: 0;
+            max-height: 220px;
+            border: 1px solid rgba(244, 239, 229, 0.24);
+            background: rgba(255, 255, 255, 0.92);
+            padding: 10px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+
+        .ui-side-visual-stage img {
+            display: block;
+            max-width: 100%;
+            max-height: 200px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .ui-side-visual-caption {
+            color: rgba(244, 239, 229, 0.74);
+            font-size: 13px;
+            font-weight: 750;
+            line-height: 1.35;
         }
 
         .ui-back-button {
@@ -4102,6 +4356,11 @@
             font-size: 12px;
             font-weight: 850;
             cursor: pointer;
+        }
+
+        .ui-detail .ui-back-button {
+            opacity: 0;
+            pointer-events: none;
         }
 
         .ui-back-button:hover,
@@ -5228,7 +5487,7 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, iframe, .storyline-select';
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, iframe, .storyline-select, .ui-detail-image-stage';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = 'deep-learning-history';
@@ -5438,6 +5697,8 @@
         let uiSelectedYear = null;
         let uiSelectedContinent = '';
         let uiSelectedEventId = '';
+        let uiDetailImageIndex = 0;
+        let uiDetailImageEventId = '';
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
@@ -8034,26 +8295,18 @@
             return steps.map((step) => String(lx(step) || '').trim()).filter(Boolean);
         }
 
-        function getAchievementLocationItem(rawMilestone) {
-            return getMilestoneRegions(rawMilestone).map(getRegionLabel).join(' / ');
-        }
-
         function getAchievementRelatedItems(rawMilestone) {
             const demoSteps = getAchievementDemoSteps(rawMilestone);
             const achievement = rawMilestone && rawMilestone.achievement ? rawMilestone.achievement : {};
             const relatedAchievements = Array.isArray(achievement.relatedAchievements) ? achievement.relatedAchievements : [];
             const relatedRegions = Array.isArray(achievement.relatedRegions) ? achievement.relatedRegions : [];
-            const locationItem = getAchievementLocationItem(rawMilestone);
             const items = [
                 ...demoSteps,
                 ...relatedAchievements,
                 ...relatedRegions
             ].map((item) => String(lx(item) || '').trim()).filter(Boolean);
 
-            return [
-                ...items.slice(0, 2),
-                locationItem || items[2] || uiText('Affiliated place pending', '关联地点待补充')
-            ].filter(Boolean).slice(0, 3);
+            return items.slice(0, 3);
         }
 
         function getAchievementKeyConcepts(rawMilestone) {
@@ -8075,15 +8328,6 @@
                     chip: String(lx(concept.chip || concept.type) || uiText('Key concept', '关键概念')).trim()
                 };
             }).filter((concept) => concept.label && concept.text);
-
-            const locationItem = getAchievementLocationItem(rawMilestone);
-            if (locationItem) {
-                conceptItems.push({
-                    label: locationItem,
-                    text: uiText('Affiliated place for this achievement', '该成就关联地点'),
-                    chip: uiText('Affiliated place', '关联地点')
-                });
-            }
 
             return conceptItems.slice(0, 3);
         }
@@ -9571,14 +9815,20 @@
             return milestoneList.filter((item) => Number(item.year) === Number(uiSelectedYear));
         }
 
+        function syncUiCurrentIndexToEvents(events) {
+            const current = milestoneList[currentIndex];
+            if (current && events.some((item) => item.id === current.id)) return;
+            const firstEvent = events[0] || milestoneList[0];
+            if (!firstEvent) return;
+            currentIndex = Math.max(0, milestoneList.findIndex((item) => item.id === firstEvent.id));
+        }
+
         function syncUiBrowserCurrentIndex() {
             if (!isUiBrowserActive()) return;
             ensureUiSelection();
             if (uiBrowserMode === 'detail') return;
             const events = getUiEventsForCurrentMode();
-            const firstEvent = events[0] || milestoneList[0];
-            if (!firstEvent) return;
-            currentIndex = Math.max(0, milestoneList.findIndex((item) => item.id === firstEvent.id));
+            syncUiCurrentIndexToEvents(events);
         }
 
         function getUiYearHighlightSet() {
@@ -9589,10 +9839,20 @@
         }
 
         function getUiPrimaryImage(vm) {
-            const visualItems = buildBenchVisualItems(vm);
-            const imageItem = visualItems.find((item) => item && item.type === 'image') || null;
-            if (imageItem) return imageItem.url;
-            return sortPhotosForDisplay(vm.photos)[0] || '';
+            return getUiDetailImages(vm)[0] || '';
+        }
+
+        function getUiDetailImages(vm) {
+            const visualImages = buildBenchVisualItems(vm)
+                .filter((item) => item && item.type === 'image' && item.url)
+                .map((item) => item.url);
+            const photos = sortPhotosForDisplay(vm.photos);
+            const seen = new Set();
+            return [...visualImages, ...photos].map((url) => String(url || '').trim()).filter((url) => {
+                if (!url || seen.has(url)) return false;
+                seen.add(url);
+                return true;
+            });
         }
 
         function getUiPrimaryImageMeta(vm, imageUrl) {
@@ -9720,11 +9980,14 @@
             const eventDots = [];
             const usedKeys = new Set();
             const locationDots = new Map();
+            const dotLocationKeys = new Map();
             events.forEach((event) => {
                 const target = getUiMapPinPosition(event);
                 const locationKey = getUiMapLocationKey(event, target);
                 if (locationDots.has(locationKey)) {
-                    eventDots.push(locationDots.get(locationKey));
+                    const existingDot = locationDots.get(locationKey);
+                    dotLocationKeys.set(`${existingDot.col}:${existingDot.row}`, locationKey);
+                    eventDots.push(existingDot);
                     return;
                 }
                 const dot = getNearestUiMapDot(target, usedKeys) || getNearestUiMapDot(target, null);
@@ -9732,11 +9995,13 @@
                 const key = `${dot.col}:${dot.row}`;
                 usedKeys.add(key);
                 locationDots.set(locationKey, dot);
+                dotLocationKeys.set(key, locationKey);
                 eventDots.push(dot);
             });
             return {
                 eventDots,
-                activeDots: Array.from(new Map(eventDots.map((dot) => [`${dot.col}:${dot.row}`, dot])).values())
+                activeDots: Array.from(new Map(eventDots.map((dot) => [`${dot.col}:${dot.row}`, dot])).values()),
+                dotLocationKeys
             };
         }
 
@@ -9753,14 +10018,19 @@
         }
 
         function buildUiMapDots(events) {
-            const activeKeys = new Set(getUiMapActiveDots(events).map((point) => `${point.col}:${point.row}`));
+            const { activeDots, dotLocationKeys } = getUiMapDotAssignments(events);
+            const activeKeys = new Set(activeDots.map((point) => `${point.col}:${point.row}`));
             return UI_MAP_DOTS.map((point) => {
-                const active = activeKeys.has(`${point.col}:${point.row}`);
-                return `<span class="ui-map-dot${active ? ' active' : ''}" style="left:${point.x.toFixed(1)}%;top:${point.y.toFixed(1)}%"></span>`;
+                const key = `${point.col}:${point.row}`;
+                const active = activeKeys.has(key);
+                const locationKey = active ? dotLocationKeys.get(key) || '' : '';
+                const dataAttr = locationKey ? ` data-location-key="${escapeHtml(locationKey)}"` : '';
+                return `<span class="ui-map-dot${active ? ' active' : ''}"${dataAttr} style="left:${point.x.toFixed(1)}%;top:${point.y.toFixed(1)}%"></span>`;
             }).join('');
         }
 
         function buildUiMapRoutes(events) {
+            if (uiBrowserMode === 'region') return '';
             const points = getUiMapEventPoints(events);
             if (points.length < 2) return '';
             return points.slice(1).map((point, index) => {
@@ -9772,46 +10042,106 @@
             }).join('');
         }
 
-        function getUiMapCalloutPosition(index, count) {
-            if (count <= 1) return { left: 8, top: 14 };
-            const slots = Math.min(count, 4);
-            return {
-                left: 2 + (index % slots) * (96 / slots),
-                top: Math.floor(index / slots) * 38
-            };
+        const UI_MAP_CALLOUT_TOP_LIMIT = 12;
+        const UI_MAP_CALLOUT_BOTTOM_LIMIT = 9;
+        const UI_MAP_CALLOUT_TOTAL_LIMIT = UI_MAP_CALLOUT_TOP_LIMIT + UI_MAP_CALLOUT_BOTTOM_LIMIT;
+        const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
+        const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
+
+        function getUiMapFeaturedCallouts(events) {
+            const points = getUiMapEventPoints(events);
+            const grouped = new Map();
+            events.forEach((event, index) => {
+                const point = points[index] || getUiMapPinPosition(event);
+                const key = getUiMapLocationKey(event, getUiMapPinPosition(event));
+                if (!grouped.has(key)) {
+                    grouped.set(key, {
+                        event,
+                        events: [],
+                        point,
+                        locationKey: key,
+                        originalIndex: index
+                    });
+                }
+                const group = grouped.get(key);
+                group.events.push(event);
+                if (index < group.originalIndex) {
+                    group.event = event;
+                    group.point = point;
+                    group.originalIndex = index;
+                }
+            });
+            return Array.from(grouped.values()).map((group) => ({
+                ...group,
+                count: group.events.length
+            })).sort((a, b) => {
+                const leftDiff = Number(a.point && a.point.left || 0) - Number(b.point && b.point.left || 0);
+                return leftDiff || a.originalIndex - b.originalIndex;
+            }).slice(0, UI_MAP_CALLOUT_TOTAL_LIMIT);
         }
 
-        function buildUiMapCallouts(events) {
-            return events.slice(0, 3).map((event, index) => {
+        function getUiMapCalloutGridStyle(index) {
+            if (index < UI_MAP_CALLOUT_TOP_LIMIT) {
+                return `grid-column:${index % 3 + 1};grid-row:${Math.floor(index / 3) + 1};`;
+            }
+            const bottomIndex = index - UI_MAP_CALLOUT_TOP_LIMIT;
+            return `grid-column:${bottomIndex % 3 + 1};grid-row:${Math.floor(bottomIndex / 3) + 1};`;
+        }
+
+        function buildUiMapCallouts(events, placement) {
+            const callouts = getUiMapFeaturedCallouts(events);
+            const isBottom = placement === 'bottom';
+            const offset = isBottom ? UI_MAP_CALLOUT_TOP_LIMIT : 0;
+            const visible = isBottom
+                ? callouts.slice(UI_MAP_CALLOUT_TOP_LIMIT)
+                : callouts.slice(0, UI_MAP_CALLOUT_TOP_LIMIT);
+            return visible.map(({ event, count, locationKey }, index) => {
+                const absoluteIndex = offset + index;
                 const vm = getVm(milestoneList.findIndex((item) => item.id === event.id));
                 const locationName = vm.location && vm.location.name ? vm.location.name : (vm.title || tx('aiHistoryEvent'));
                 const locationCountry = vm.location && vm.location.country ? vm.location.country : getUiContinentLabel(getMilestoneContinentId(event));
-                const position = getUiMapCalloutPosition(index, Math.min(events.length, 3));
+                const countHtml = count > 1 ? ` <span class="ui-map-callout-count">×${escapeHtml(count)}</span>` : '';
                 return `
-                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" style="left:${position.left}%;top:${position.top}px">
+                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" data-location-key="${escapeHtml(locationKey || '')}" style="${getUiMapCalloutGridStyle(absoluteIndex)}">
                         <span class="ui-map-callout-dot"></span>
                         <span class="ui-map-callout-text">
                             <strong>${escapeHtml(locationName)}</strong>
-                            <span>${escapeHtml(locationCountry)}</span>
+                            <span>${escapeHtml(locationCountry)}${countHtml}</span>
                         </span>
                     </button>
                 `;
             }).join('');
         }
 
-        function buildUiMapCalloutLines(events) {
-            const points = getUiMapEventPoints(events);
-            return events.slice(0, 3).map((event, index) => {
-                const point = points[index] || getUiMapPinPosition(event);
-                const callout = getUiMapCalloutPosition(index, Math.min(events.length, 3));
-                const calloutX = callout.left + 1.1;
-                const calloutY = callout.top / 92 * 18 + 1.5;
-                const mapX = point.left;
-                const mapY = 22 + point.top * 0.72;
-                const midY = Math.max(calloutY + 6, mapY - 13);
-                const path = `M ${calloutX.toFixed(1)} ${calloutY.toFixed(1)} C ${calloutX.toFixed(1)} ${midY.toFixed(1)}, ${mapX.toFixed(1)} ${midY.toFixed(1)}, ${mapX.toFixed(1)} ${mapY.toFixed(1)}`;
-                return `<path class="ui-map-callout-line" d="${path}"></path>`;
+        function getElementCenterRelativeTo(element, containerRect) {
+            if (!element || !containerRect) return null;
+            const rect = element.getBoundingClientRect();
+            return {
+                x: rect.left + rect.width / 2 - containerRect.left,
+                y: rect.top + rect.height / 2 - containerRect.top
+            };
+        }
+
+        function syncUiMapCalloutLines() {
+            const panel = refs.uiBrowserMain.querySelector('.ui-map-panel');
+            const svg = panel ? panel.querySelector('.ui-map-callout-lines') : null;
+            if (!panel || !svg) return;
+
+            const panelRect = panel.getBoundingClientRect();
+            const callouts = Array.from(panel.querySelectorAll('.ui-map-callout'));
+            const pinsByEventId = new Map(Array.from(panel.querySelectorAll('.ui-map-pin')).map((pin) => [pin.dataset.eventId || '', pin]));
+            const dotsByLocationKey = new Map(Array.from(panel.querySelectorAll('.ui-map-dot.active')).map((dot) => [dot.dataset.locationKey || '', dot]));
+            const paths = callouts.map((callout) => {
+                const eventId = callout.dataset.eventId || '';
+                const locationKey = callout.dataset.locationKey || '';
+                const start = getElementCenterRelativeTo(dotsByLocationKey.get(locationKey) || pinsByEventId.get(eventId), panelRect);
+                const end = getElementCenterRelativeTo(callout.querySelector('.ui-map-callout-dot'), panelRect);
+                if (!start || !end) return '';
+                return `<path class="ui-map-callout-line" d="M ${start.x.toFixed(1)} ${start.y.toFixed(1)} L ${end.x.toFixed(1)} ${end.y.toFixed(1)}"></path>`;
             }).join('');
+
+            svg.setAttribute('viewBox', `0 0 ${Math.max(1, panelRect.width).toFixed(1)} ${Math.max(1, panelRect.height).toFixed(1)}`);
+            svg.innerHTML = paths;
         }
 
         function buildUiLevelOneMap(events, activeLabel, continentCounts) {
@@ -9837,9 +10167,11 @@
                         <div class="ui-map-year">${escapeHtml(activeLabel)}</div>
                         <div class="ui-map-mode">${escapeHtml(uiBrowserMode === 'region' ? uiText('Region', '地区') : uiText('Year', '年份'))}</div>
                     </div>
+                    <svg class="ui-map-callout-lines" aria-hidden="true"></svg>
                     <div class="ui-map-callout-zone">
-                        <svg class="ui-map-callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${buildUiMapCalloutLines(events)}</svg>
-                        ${buildUiMapCallouts(events)}
+                        <div class="ui-map-callout-strip">
+                            ${buildUiMapCallouts(events, 'top')}
+                        </div>
                     </div>
                     <div class="ui-map-surface">
                         <div class="ui-map-dots" aria-hidden="true">${buildUiMapDots(events)}</div>
@@ -9855,6 +10187,11 @@
                             `;
                         }).join('')}
                         ${mapPins}
+                    </div>
+                    <div class="ui-map-callout-zone">
+                        <div class="ui-map-callout-strip">
+                            ${buildUiMapCallouts(events, 'bottom')}
+                        </div>
                     </div>
                 </section>
             `;
@@ -9910,13 +10247,128 @@
             panel.style.setProperty('--ui-event-progress-width', `${progressWidth.toFixed(2)}px`);
         }
 
+        function getScrollCenterLeft(scroller, item) {
+            if (!scroller || !item) return 0;
+            return item.offsetLeft - (scroller.clientWidth - item.offsetWidth) / 2;
+        }
+
+        function scrollElementIntoHorizontalCenter(scroller, item, behavior = 'smooth') {
+            if (!scroller || !item) return;
+            const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+            const left = Math.max(0, Math.min(maxScroll, getScrollCenterLeft(scroller, item)));
+            if (Math.abs(scroller.scrollLeft - left) < 1) return;
+            scroller.scrollTo({ left, behavior });
+        }
+
+        function bindHorizontalDragScroll(scroller, options = {}) {
+            if (!scroller || scroller.dataset.dragScrollBound === 'true') return;
+            scroller.dataset.dragScrollBound = 'true';
+            const dragThreshold = Number(options.threshold || 5);
+            let dragState = null;
+
+            const finishDrag = () => {
+                if (!dragState) return;
+                const wasDragging = dragState.dragging;
+                dragState = null;
+                scroller.classList.remove('is-dragging');
+                scroller.dataset.dragMoved = wasDragging ? 'true' : '';
+                if (wasDragging) {
+                    window.setTimeout(() => {
+                        scroller.dataset.dragMoved = '';
+                    }, 120);
+                }
+            };
+
+            scroller.addEventListener('pointerdown', (event) => {
+                if (event.button !== undefined && event.button !== 0) return;
+                if (scroller.scrollWidth <= scroller.clientWidth + 1) return;
+                dragState = {
+                    pointerId: event.pointerId,
+                    startX: event.clientX,
+                    startLeft: scroller.scrollLeft,
+                    dragging: false
+                };
+                scroller.dataset.dragMoved = '';
+            });
+
+            scroller.addEventListener('pointermove', (event) => {
+                if (!dragState || event.pointerId !== dragState.pointerId) return;
+                const dx = event.clientX - dragState.startX;
+                if (!dragState.dragging && Math.abs(dx) >= dragThreshold) {
+                    dragState.dragging = true;
+                    scroller.classList.add('is-dragging');
+                    if (typeof scroller.setPointerCapture === 'function') {
+                        try {
+                            scroller.setPointerCapture(event.pointerId);
+                        } catch (_) {}
+                    }
+                }
+                if (!dragState.dragging) return;
+                scroller.scrollLeft = dragState.startLeft - dx;
+                if (event.cancelable) event.preventDefault();
+                if (typeof options.onDrag === 'function') options.onDrag(scroller);
+            });
+
+            scroller.addEventListener('pointerup', finishDrag);
+            scroller.addEventListener('pointercancel', finishDrag);
+            scroller.addEventListener('lostpointercapture', finishDrag);
+            scroller.addEventListener('click', (event) => {
+                if (scroller.dataset.dragMoved !== 'true') return;
+                event.preventDefault();
+                event.stopPropagation();
+                scroller.dataset.dragMoved = '';
+            }, true);
+        }
+
+        function syncUiTimelineToSelectedYear(behavior = 'smooth') {
+            const track = refs.uiBrowserTimeline.querySelector('.ui-year-track');
+            if (!track) return;
+            const activeTick = track.querySelector('.ui-year-tick.active')
+                || track.querySelector('.ui-year-tick.highlight')
+                || track.querySelector('.ui-year-tick');
+            scrollElementIntoHorizontalCenter(track, activeTick, behavior);
+        }
+
+        function getUiEventCardAtScrollAnchor(eventList) {
+            if (!eventList) return null;
+            const cards = Array.from(eventList.querySelectorAll('.ui-event-card'));
+            if (!cards.length) return null;
+            const anchor = eventList.scrollLeft + Math.min(eventList.clientWidth * 0.5, eventList.clientWidth - 1);
+            return cards.reduce((closest, card) => {
+                const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+                const distance = Math.abs(cardCenter - anchor);
+                return !closest || distance < closest.distance ? { card, distance } : closest;
+            }, null).card;
+        }
+
+        function syncUiSelectionFromEventScroll(eventList) {
+            if (!eventList || uiBrowserMode !== 'region') return;
+            const card = getUiEventCardAtScrollAnchor(eventList);
+            if (!card) return;
+            const eventId = card.dataset.eventId || '';
+            const milestone = milestoneList.find((item) => item.id === eventId);
+            const year = milestone ? Number(milestone.year) : NaN;
+            if (!Number.isFinite(year) || Number(uiSelectedYear) === year) return;
+            uiSelectedYear = year;
+            renderUiTimeline();
+        }
+
         function bindUiEventProgress() {
             const eventList = refs.uiBrowserMain.querySelector('.ui-event-list');
             if (!eventList) return;
             const update = () => updateUiEventProgress(eventList);
+            let syncTimer = null;
             update();
             requestAnimationFrame(update);
-            eventList.addEventListener('scroll', update, { passive: true });
+            bindHorizontalDragScroll(eventList, { onDrag: update });
+            eventList.addEventListener('scroll', () => {
+                update();
+                if (syncTimer) window.clearTimeout(syncTimer);
+                syncTimer = window.setTimeout(() => {
+                    syncTimer = null;
+                    syncUiSelectionFromEventScroll(eventList);
+                }, 80);
+            }, { passive: true });
         }
 
         function fitUiEventImage(image) {
@@ -9965,12 +10417,14 @@
                 </div>
                 <div class="ui-year-track">
                     ${years.map((year) => {
-                        const active = uiBrowserMode !== 'region' && Number(uiSelectedYear) === year ? ' active' : '';
+                        const active = Number(uiSelectedYear) === year ? ' active' : '';
                         const highlight = highlights.has(year) ? ' highlight' : '';
                         return `<button class="ui-year-tick${active}${highlight}" type="button" data-year="${year}"><span>${year}</span></button>`;
                     }).join('')}
                 </div>
             `;
+            const yearTrack = refs.uiBrowserTimeline.querySelector('.ui-year-track');
+            bindHorizontalDragScroll(yearTrack);
             refs.uiBrowserTimeline.querySelectorAll('.ui-year-tick').forEach((button) => {
                 button.addEventListener('click', () => {
                     uiBrowserMode = 'year';
@@ -9981,13 +10435,13 @@
                     renderPage(currentIndex);
                 });
             });
+            requestAnimationFrame(() => syncUiTimelineToSelectedYear('auto'));
         }
 
         function renderUiLevelOne() {
             ensureUiSelection();
             const events = getUiEventsForCurrentMode();
-            const firstEvent = events[0] || milestoneList[0];
-            if (firstEvent) currentIndex = Math.max(0, milestoneList.findIndex((item) => item.id === firstEvent.id));
+            syncUiCurrentIndexToEvents(events);
             const continentCounts = new Map();
             milestoneList.forEach((item) => {
                 const continentId = getMilestoneContinentId(item);
@@ -10018,6 +10472,7 @@
                     uiSelectedEventId = '';
                     const nextEvents = getUiEventsForCurrentMode();
                     currentIndex = nextEvents[0] ? milestoneList.findIndex((item) => item.id === nextEvents[0].id) : 0;
+                    uiSelectedYear = nextEvents[0] ? Number(nextEvents[0].year) || uiSelectedYear : uiSelectedYear;
                     renderPage(currentIndex);
                 });
             });
@@ -10025,19 +10480,22 @@
                 button.addEventListener('click', () => {
                     uiBrowserMode = 'detail';
                     uiSelectedEventId = button.dataset.eventId || '';
+                    uiDetailImageIndex = 0;
                     const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
                     currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
+                    uiSelectedYear = milestoneList[currentIndex] ? Number(milestoneList[currentIndex].year) || uiSelectedYear : uiSelectedYear;
                     renderPage(currentIndex);
                 });
             });
             bindUiEventProgress();
             fitUiEventImages();
             requestAnimationFrame(fitUiEventImages);
+            requestAnimationFrame(syncUiMapCalloutLines);
         }
 
         function buildUiAvatarHtml(vm) {
             const figures = Array.isArray(vm.figures) && vm.figures.length
-                ? vm.figures.slice(0, 4)
+                ? vm.figures.slice(0, 3)
                 : [{ name: vm.title || tx('aiHistoryEvent'), role: buildLocationLine(vm.location) }];
             const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
             return figures.map((figure, index) => {
@@ -10045,22 +10503,25 @@
                 return `
                     <div class="ui-avatar">
                         <div class="ui-avatar-face">${avatar}</div>
-                        <div>${escapeHtml(figure.name || tx('keyFigure'))}</div>
+                        <div>
+                            <span class="ui-avatar-name">${escapeHtml(figure.name || tx('keyFigure'))}</span>
+                            ${figure.role ? `<span class="ui-avatar-role">${escapeHtml(figure.role)}</span>` : ''}
+                        </div>
                     </div>
                 `;
             }).join('');
         }
 
-        function buildUiSourcesHtml(raw) {
+        function buildUiSourcesHtml(raw, vm) {
             const sources = getAchievementSources(raw).slice(0, 5);
             if (!sources.length) {
-                return `<article class="ui-source-card"><div class="ui-source-label">${escapeHtml(tx('noAdditionalInfo'))}</div></article>`;
+                const fallback = stripHtml((vm && (vm.descriptionHtml || vm.descriptionText)) || '').slice(0, 92) || tx('noAdditionalInfo');
+                return `<article class="ui-source-card"><div class="ui-source-url">${escapeHtml(fallback)}</div></article>`;
             }
             return sources.map((source) => `
                 <a class="ui-source-card" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
-                    <span class="ui-source-type">${escapeHtml(lx(source.type) || tx('source'))}</span>
                     <span class="ui-source-label">${escapeHtml(lx(source.label) || source.url)}</span>
-                    <span class="ui-source-url">${escapeHtml(source.url)}</span>
+                    <span class="ui-source-url">${escapeHtml(lx(source.type) || source.url)}</span>
                 </a>
             `).join('');
         }
@@ -10090,7 +10551,7 @@
             }));
             const visual = buildBenchVisualItems(vm).find((item) => item && item.type === 'image' && isDiagramImage(item.url));
             const visualHtml = visual
-                ? `<div class="ui-detail-image"><div class="ui-detail-image-stage is-diagram"><img src="${escapeHtml(visual.url)}" alt="${escapeHtml(visual.title || tx('archiveImage'))}"></div><div class="ui-detail-caption">${escapeHtml(visual.title || visual.description || tx('archiveImage'))}</div></div>`
+                ? `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(visual.url)}" alt="${escapeHtml(visual.title || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(visual.title || visual.description || tx('archiveImage'))}</div></div>`
                 : '';
             return `
                 ${visualHtml}
@@ -10106,47 +10567,194 @@
             `;
         }
 
+        function setUiDetailImageIndex(nextImageIndex, imageCount) {
+            if (!Number.isFinite(nextImageIndex) || !imageCount) return false;
+            const normalizedIndex = (nextImageIndex + imageCount) % imageCount;
+            if (normalizedIndex === uiDetailImageIndex) return false;
+            uiDetailImageIndex = normalizedIndex;
+            renderUiDetail();
+            return true;
+        }
+
+        function bindUiDetailImageSwipe(imageRoot, imageCount) {
+            if (!imageRoot || imageCount <= 1) return;
+            let gesture = null;
+
+            const startGesture = (pointerId, clientX, clientY) => {
+                gesture = {
+                    pointerId,
+                    startX: clientX,
+                    startY: clientY,
+                    active: false
+                };
+            };
+
+            const updateGesture = (clientX, clientY) => {
+                if (!gesture) return false;
+                const dx = clientX - gesture.startX;
+                const dy = clientY - gesture.startY;
+                if (!gesture.active && Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy) * UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO) {
+                    gesture.active = true;
+                }
+                return gesture.active;
+            };
+
+            const finishGesture = (clientX, clientY) => {
+                if (!gesture) return false;
+                const dx = clientX - gesture.startX;
+                const dy = clientY - gesture.startY;
+                const shouldFlip = Math.abs(dx) >= UI_DETAIL_IMAGE_SWIPE_THRESHOLD
+                    && Math.abs(dx) > Math.abs(dy) * UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO;
+                const nextIndex = dx < 0 ? uiDetailImageIndex + 1 : uiDetailImageIndex - 1;
+                gesture = null;
+                if (!shouldFlip) return false;
+                setUiDetailImageIndex(nextIndex, imageCount);
+                return true;
+            };
+
+            imageRoot.addEventListener('dragstart', (event) => {
+                event.preventDefault();
+            });
+
+            imageRoot.addEventListener('pointerdown', (event) => {
+                if (event.button !== undefined && event.button !== 0) return;
+                startGesture(event.pointerId, event.clientX, event.clientY);
+            });
+
+            imageRoot.addEventListener('pointermove', (event) => {
+                if (!gesture || event.pointerId !== gesture.pointerId) return;
+                const isActive = updateGesture(event.clientX, event.clientY);
+                if (isActive && typeof imageRoot.setPointerCapture === 'function') {
+                    try {
+                        imageRoot.setPointerCapture(event.pointerId);
+                    } catch (_) {}
+                }
+                if (!isActive) return;
+                event.stopPropagation();
+                if (event.cancelable) event.preventDefault();
+            });
+
+            const finishPointerSwipe = (event) => {
+                if (!gesture || event.pointerId !== gesture.pointerId) return;
+                const wasActive = gesture.active;
+                const didFlip = finishGesture(event.clientX, event.clientY);
+                if (didFlip || wasActive) {
+                    event.stopPropagation();
+                    if (event.cancelable) event.preventDefault();
+                }
+                if (wasActive && typeof imageRoot.releasePointerCapture === 'function') {
+                    try {
+                        imageRoot.releasePointerCapture(event.pointerId);
+                    } catch (_) {}
+                }
+            };
+
+            imageRoot.addEventListener('pointerup', finishPointerSwipe);
+            imageRoot.addEventListener('pointercancel', () => {
+                gesture = null;
+            });
+
+            imageRoot.addEventListener('touchstart', (event) => {
+                const touch = event.touches && event.touches[0];
+                if (!touch) return;
+                startGesture(touch.identifier, touch.clientX, touch.clientY);
+            }, { passive: true });
+
+            imageRoot.addEventListener('touchmove', (event) => {
+                const touch = event.touches && event.touches[0];
+                if (!touch || !gesture || touch.identifier !== gesture.pointerId) return;
+                if (!updateGesture(touch.clientX, touch.clientY)) return;
+                event.stopPropagation();
+                if (event.cancelable) event.preventDefault();
+            }, { passive: false });
+
+            imageRoot.addEventListener('touchend', (event) => {
+                const touch = Array.from(event.changedTouches || []).find((item) => gesture && item.identifier === gesture.pointerId);
+                if (!touch) return;
+                if (finishGesture(touch.clientX, touch.clientY)) {
+                    event.stopPropagation();
+                    if (event.cancelable) event.preventDefault();
+                }
+            }, { passive: false });
+
+            imageRoot.addEventListener('touchcancel', () => {
+                gesture = null;
+            }, { passive: true });
+        }
+
+        function buildUiDetailImagePagerHtml(detailImages) {
+            if (!Array.isArray(detailImages) || detailImages.length <= 1) return '';
+            return `
+                <div class="ui-detail-image-pager" aria-label="${escapeHtml(uiText('Image pages', '图片分页'))}">
+                    ${detailImages.map((_, index) => `
+                        <button
+                            class="ui-detail-image-nav${index === uiDetailImageIndex ? ' active' : ''}"
+                            type="button"
+                            data-ui-image-index="${index}"
+                            aria-label="${escapeHtml(uiText(`Image ${index + 1}`, `第 ${index + 1} 张图片`))}"
+                            ${index === uiDetailImageIndex ? 'aria-current="true"' : ''}
+                        ></button>
+                    `).join('')}
+                </div>
+            `;
+        }
+
         function renderUiDetail() {
             ensureUiSelection();
             const vm = getVm(currentIndex);
             const raw = vm.raw || {};
-            const imageUrl = getUiPrimaryImage(vm);
+            const detailImages = getUiDetailImages(vm);
+            const detailEventId = vm.id || raw.id || (milestoneList[currentIndex] && milestoneList[currentIndex].id) || '';
+            if (uiDetailImageEventId !== detailEventId) {
+                uiDetailImageEventId = detailEventId;
+                uiDetailImageIndex = 0;
+            }
+            uiDetailImageIndex = detailImages.length
+                ? Math.min(Math.max(0, uiDetailImageIndex), detailImages.length - 1)
+                : 0;
+            const imageUrl = detailImages[uiDetailImageIndex] || '';
             const imageMeta = getUiPrimaryImageMeta(vm, imageUrl);
             const title = vm.title || tx('aiHistoryEvent');
             const detailImageClass = isDiagramImage(imageUrl) ? ' is-diagram' : '';
+            const mediaTitle = vm.videoEmbedUrl
+                ? uiText('Commentary & Media', '评论与媒体')
+                : uiText('Key Concepts', '关键概念');
+            const imageCaption = [imageMeta.name, imageMeta.role].filter(Boolean).join(' · ') || title;
             refs.uiBrowserMain.innerHTML = `
                 <div class="ui-detail">
-                    <section class="ui-detail-panel ui-detail-left">
-                        <button class="ui-back-button" type="button" data-ui-back="true">${escapeHtml(uiText('Back', '返回'))}</button>
-                        <div class="ui-detail-hero">
-                            <div>
+                    <section class="ui-detail-panel">
+                        <button class="ui-back-button" type="button" data-ui-back="true" tabindex="-1" aria-hidden="true">${escapeHtml(uiText('Back', '返回'))}</button>
+                        <div class="ui-detail-left">
+                            <div class="ui-detail-hero">
                                 <div class="ui-detail-year">${escapeHtml(vm.year || '')}</div>
                                 <div class="ui-detail-place">${buildLocationHtml(vm.location)}</div>
+                                <div class="ui-avatar-strip">${buildUiAvatarHtml(vm)}</div>
                             </div>
-                            <div class="ui-avatar-strip">${buildUiAvatarHtml(vm)}</div>
-                        </div>
-                        <div class="ui-detail-image">
-                            <div class="ui-detail-image-stage${detailImageClass}">
-                                ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}">` : `<span>${escapeHtml(tx('archiveImage'))}</span>`}
+                            <div class="ui-detail-image">
+                                <div class="ui-detail-image-stage${detailImageClass}">
+                                    ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" draggable="false">` : `<span>${escapeHtml(tx('archiveImage'))}</span>`}
+                                </div>
+                                <div class="ui-detail-caption">
+                                    ${escapeHtml(imageCaption)}
+                                    ${buildUiDetailImagePagerHtml(detailImages)}
+                                </div>
                             </div>
-                            <div class="ui-detail-caption">${escapeHtml([imageMeta.name, imageMeta.role].filter(Boolean).join(' · ') || title)}</div>
                         </div>
-                    </section>
-                    <section class="ui-detail-panel ui-detail-center">
-                        <div>
-                            <div class="ui-section-kicker">${escapeHtml(getAchievementField(raw, 'area', vm.category || vm.subtitle || tx('aiHistory')))}</div>
-                            <div class="ui-detail-title">${escapeHtml(title)}</div>
-                            <div class="ui-section-note">${escapeHtml([vm.year, buildLocationLine(vm.location), getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
+                        <div class="ui-detail-center">
+                            <div class="ui-detail-heading">
+                                <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                <div class="ui-detail-meta-inline">${escapeHtml([buildLocationLine(vm.location), getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
+                            </div>
+                            <div class="ui-detail-description">${buildSummaryHtml(vm)}</div>
                         </div>
-                        <div class="ui-detail-description">${buildSummaryHtml(vm)}</div>
                     </section>
                     <aside class="ui-side-panel">
                         <section class="ui-info-card">
                             <div class="ui-section-kicker">${escapeHtml(uiText('Sources', '资料来源'))}</div>
-                            ${buildUiSourcesHtml(raw)}
+                            ${buildUiSourcesHtml(raw, vm)}
                         </section>
                         <section class="ui-media-card">
-                            <div class="ui-section-kicker">${escapeHtml(uiText('Commentary & Media', '评论与媒体'))}</div>
+                            <div class="ui-section-kicker">${escapeHtml(mediaTitle)}</div>
                             ${buildUiMediaHtml(vm)}
                         </section>
                     </aside>
@@ -10160,17 +10768,30 @@
                     renderPage(currentIndex);
                 });
             }
+            refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const nextImageIndex = Number(button.dataset.uiImageIndex);
+                    setUiDetailImageIndex(nextImageIndex, detailImages.length);
+                });
+            });
+            bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
         }
 
         function renderUiBrowser() {
             if (!refs.uiBrowser || !refs.uiBrowserMain || !refs.uiBrowserTimeline) return;
             ensureUiSelection();
+            if (uiBrowserMode === 'detail' && milestoneList[currentIndex]) {
+                uiSelectedYear = Number(milestoneList[currentIndex].year) || uiSelectedYear;
+            }
             if (uiBrowserMode === 'detail') {
                 renderUiDetail();
+                refs.uiBrowserTimeline.innerHTML = '';
+                refs.uiBrowserTimeline.hidden = true;
             } else {
+                refs.uiBrowserTimeline.hidden = false;
                 renderUiLevelOne();
+                renderUiTimeline();
             }
-            renderUiTimeline();
         }
 
         function bindPhotoClicks() {
