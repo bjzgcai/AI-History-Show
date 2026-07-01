@@ -8,11 +8,6 @@ const { URL } = require('node:url');
 const { milestones } = require('../milestones-data.js');
 
 const STORYLINE_CONFIG = {
-    'bench-council-ai100': {
-        slug: 'ai100',
-        title: 'AI100 Accuracy Audit',
-        command: 'npm run generate && npm run audit:ai100-accuracy'
-    },
     'gaming-ai': {
         slug: 'gaming-ai',
         title: 'Gaming AI Accuracy Audit',
@@ -119,7 +114,7 @@ function slugify(value) {
         .replace(/^-+|-+$/g, '');
 }
 
-const STORYLINE_ID = readOption('storyline', process.env.ACCURACY_AUDIT_STORYLINE || 'bench-council-ai100');
+const STORYLINE_ID = readOption('storyline', process.env.ACCURACY_AUDIT_STORYLINE || 'gaming-ai');
 const config = STORYLINE_CONFIG[STORYLINE_ID] || {};
 const REPORT_SLUG = slugify(readOption('slug', config.slug || STORYLINE_ID));
 const REPORT_TITLE = readOption('title', config.title || `${STORYLINE_ID} Accuracy Audit`);
