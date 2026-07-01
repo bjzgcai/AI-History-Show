@@ -4605,6 +4605,9 @@
         }
 
         function isWorkAttribution(value) {
+            if (window.MilestoneView && typeof window.MilestoneView.isWorkAttribution === 'function') {
+                return window.MilestoneView.isWorkAttribution(value);
+            }
             const text = String(value || '').trim();
             return text.startsWith('《') || /^<em\b[^>]*>/i.test(text);
         }
@@ -5055,7 +5058,7 @@
             if (vm.descriptionText) {
                 return `<p>${escapeHtml(vm.descriptionText)}</p>`;
             }
-            return '<p>暂无事件摘要</p>';
+            return `<p>${escapeHtml(tx('eventSummaryPending'))}</p>`;
         }
 
         function initials(name) {
