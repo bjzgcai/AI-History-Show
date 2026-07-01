@@ -3135,7 +3135,7 @@
         }
 
         .ui-level-one {
-            height: 100%;
+            height: 825px;
             min-height: 0;
             display: grid;
             grid-template-columns: minmax(520px, 0.48fr) minmax(0, 1fr);
@@ -3284,14 +3284,22 @@
             background: transparent;
         }
 
-        .ui-map-dots {
+        .ui-map-geo-layer {
             position: absolute;
             left: 50%;
-            top: 42%;
+            top: 34%;
             width: 100%;
             aspect-ratio: 560.64 / 284.85;
             transform: translate(-50%, -50%);
             transform-origin: center center;
+            z-index: 2;
+        }
+
+        .ui-map-dots {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .ui-map-routes {
@@ -3553,9 +3561,9 @@
             grid-template-rows:
                 auto
                 auto
-                clamp(24px, 3.45vh, 38px)
-                clamp(284px, 34vh, 360px)
-                minmax(clamp(36px, 5.4vh, 64px), 1fr)
+                136px
+                296px
+                clamp(112px, 12.2vh, 136px)
                 auto;
             align-content: start;
             gap: 0;
@@ -3590,7 +3598,7 @@
             grid-row: 4;
             order: initial;
             width: min(100%, clamp(280px, 23.5vw, 460px));
-            height: calc(clamp(284px, 34vh, 360px) - (var(--ui-event-image-frame) * 2));
+            height: 296px;
             aspect-ratio: auto;
             border-radius: 0;
             border: none;
@@ -3836,11 +3844,12 @@
         }
 
         .ui-year-track {
+            --ui-year-tick-width: 74px;
             position: relative;
             height: 50px;
             display: grid;
             grid-auto-flow: column;
-            grid-auto-columns: 74px;
+            grid-auto-columns: var(--ui-year-tick-width);
             align-items: end;
             gap: 0;
             overflow-x: auto;
@@ -3866,8 +3875,9 @@
             content: "";
             position: absolute;
             left: 0;
-            right: 0;
+            right: auto;
             top: 22px;
+            width: calc(var(--ui-year-count, 1) * var(--ui-year-tick-width));
             height: 3.5px;
             background: repeating-linear-gradient(
                 90deg,
@@ -9743,21 +9753,31 @@
         }
 
         const UI_CONTINENTS = [
-            { id: 'asia', en: 'Asia', zh: '亚洲', left: 58, top: 36, width: 30, height: 28 },
-            { id: 'europe', en: 'Europe', zh: '欧洲', left: 47, top: 24, width: 23, height: 20 },
-            { id: 'north-america', en: 'North America', zh: '北美洲', left: 15, top: 28, width: 30, height: 25 },
-            { id: 'south-america', en: 'South America', zh: '南美洲', left: 31, top: 60, width: 18, height: 28 },
-            { id: 'oceania', en: 'Oceania', zh: '大洋洲', left: 76, top: 65, width: 18, height: 18 },
-            { id: 'africa', en: 'Africa', zh: '非洲', left: 47, top: 52, width: 22, height: 28 }
+            { id: 'asia', en: 'Asia', zh: '亚洲', left: 64, top: 20, width: 33, height: 38 },
+            { id: 'europe', en: 'Europe', zh: '欧洲', left: 44, top: 18, width: 19, height: 21 },
+            { id: 'north-america', en: 'North America', zh: '北美洲', left: 1, top: 24, width: 43, height: 34 },
+            { id: 'south-america', en: 'South America', zh: '南美洲', left: 26, top: 58, width: 19, height: 38 },
+            { id: 'oceania', en: 'Oceania', zh: '大洋洲', left: 76, top: 64, width: 21, height: 30 },
+            { id: 'africa', en: 'Africa', zh: '非洲', left: 45, top: 39, width: 19, height: 35 }
         ];
 
         const UI_COUNTRY_TO_CONTINENT = [
             [/United States|Canada|Mexico|美国|加拿大|墨西哥/i, 'north-america'],
-            [/United Kingdom|Germany|France|Netherlands|Russia|Finland|Switzerland|Oxford|London|Manchester|英国|德国|法国|荷兰|俄罗斯|芬兰|瑞士|欧洲/i, 'europe'],
+            [/United Kingdom|Germany|France|Netherlands|Russia|Finland|Switzerland|Italy|Oxford|London|Manchester|Siena|英国|德国|法国|荷兰|俄罗斯|芬兰|瑞士|意大利|欧洲/i, 'europe'],
             [/China|Japan|Beijing|中国|日本|北京|亚洲/i, 'asia'],
             [/Australia|New Zealand|澳大利亚|新西兰|大洋洲/i, 'oceania'],
             [/Brazil|Argentina|Chile|南美|巴西|阿根廷|智利/i, 'south-america'],
             [/Africa|South Africa|非洲|南非/i, 'africa']
+        ];
+
+        const UI_GLOBAL_LOCATION_PATTERN = /Global|全球|多个机构|多机构/i;
+        const UI_COORDINATE_CONTINENT_BOUNDS = [
+            { id: 'north-america', lat: [5, 83], lng: [[-170, -50]] },
+            { id: 'south-america', lat: [-60, 15], lng: [[-90, -30]] },
+            { id: 'europe', lat: [35, 72], lng: [[-25, 45]] },
+            { id: 'africa', lat: [-35, 38], lng: [[-20, 55]] },
+            { id: 'oceania', lat: [-50, 0], lng: [[110, 180], [-180, -120]] },
+            { id: 'asia', lat: [-10, 80], lng: [[45, 180]] }
         ];
 
         function getUiContinent(continentId) {
@@ -9769,15 +9789,61 @@
             return uiText(item.en, item.zh);
         }
 
+        function getUiLocationText(value) {
+            const localized = lx(value);
+            if (localized && typeof localized === 'object') {
+                return String(localized.en || localized.zh || '').trim();
+            }
+            return String(localized || '').trim();
+        }
+
+        function getMilestoneLocationSearchText(milestone) {
+            const location = milestone && milestone.location ? milestone.location : {};
+            const relatedRegions = milestone && milestone.achievement && Array.isArray(milestone.achievement.relatedRegions)
+                ? milestone.achievement.relatedRegions
+                : [];
+            return [location.country, location.name, ...relatedRegions]
+                .map(getUiLocationText)
+                .filter(Boolean)
+                .join(' ');
+        }
+
+        function getFirstValidUiCoordinatePair(coordinates) {
+            if (!Array.isArray(coordinates)) return null;
+            if (coordinates.length >= 2 && !Array.isArray(coordinates[0])) {
+                const lat = Number(coordinates[0]);
+                const lng = Number(coordinates[1]);
+                return Number.isFinite(lat) && Number.isFinite(lng) && !(lat === 0 && lng === 0) ? [lat, lng] : null;
+            }
+            for (const item of coordinates) {
+                const pair = getFirstValidUiCoordinatePair(item);
+                if (pair) return pair;
+            }
+            return null;
+        }
+
+        function isUiCoordinateInBounds(lat, lng, bounds) {
+            const [minLat, maxLat] = bounds.lat;
+            return lat >= minLat
+                && lat <= maxLat
+                && bounds.lng.some(([minLng, maxLng]) => lng >= minLng && lng <= maxLng);
+        }
+
+        function getUiContinentIdFromCoordinates(coordinates) {
+            const pair = getFirstValidUiCoordinatePair(coordinates);
+            if (!pair) return '';
+            const [lat, lng] = pair;
+            const match = UI_COORDINATE_CONTINENT_BOUNDS.find((bounds) => isUiCoordinateInBounds(lat, lng, bounds));
+            return match ? match.id : '';
+        }
+
         function getMilestoneContinentId(milestone) {
             const location = milestone && milestone.location ? milestone.location : {};
-            const raw = [
-                location.country,
-                location.name,
-                ...(milestone && milestone.achievement && Array.isArray(milestone.achievement.relatedRegions) ? milestone.achievement.relatedRegions : [])
-            ].map((item) => String(lx(item) || (item && item.en) || item || '')).join(' ');
+            const raw = getMilestoneLocationSearchText(milestone);
+            const coordinateContinent = getUiContinentIdFromCoordinates(location.coordinates);
+            if (UI_GLOBAL_LOCATION_PATTERN.test(raw) && coordinateContinent) return coordinateContinent;
             const match = UI_COUNTRY_TO_CONTINENT.find(([pattern]) => pattern.test(raw));
-            return match ? match[1] : 'asia';
+            return match ? match[1] : coordinateContinent || 'asia';
         }
 
         function getUiYears() {
@@ -9923,10 +9989,9 @@
         };
 
         function projectCoordinatesToUiMap(coordinates) {
-            if (!Array.isArray(coordinates) || coordinates.length < 2) return null;
-            const lat = Number(coordinates[0]);
-            const lng = Number(coordinates[1]);
-            if (!Number.isFinite(lat) || !Number.isFinite(lng) || (lat === 0 && lng === 0)) return null;
+            const pair = getFirstValidUiCoordinatePair(coordinates);
+            if (!pair) return null;
+            const [lat, lng] = pair;
             const left = ((lng + 180) / 360) * 100;
             const mercatorLat = Math.max(-70, Math.min(80, lat));
             const latRad = mercatorLat * Math.PI / 180;
@@ -10174,19 +10239,21 @@
                         </div>
                     </div>
                     <div class="ui-map-surface">
-                        <div class="ui-map-dots" aria-hidden="true">${buildUiMapDots(events)}</div>
+                        <div class="ui-map-geo-layer">
+                            <div class="ui-map-dots" aria-hidden="true">${buildUiMapDots(events)}</div>
+                            ${UI_CONTINENTS.map((continent) => {
+                                const count = continentCounts.get(continent.id) || 0;
+                                const active = uiSelectedContinent === continent.id ? ' active' : '';
+                                return `
+                                    <button class="ui-continent-button${active}" type="button" data-continent="${continent.id}" style="left:${continent.left}%;top:${continent.top}%;width:${continent.width}%;height:${continent.height}%">
+                                        <span class="ui-continent-name">${escapeHtml(uiText(continent.en, continent.zh))}</span>
+                                        <span class="ui-continent-count">${escapeHtml(uiText(`${count} events`, `${count} 个事件`))}</span>
+                                    </button>
+                                `;
+                            }).join('')}
+                            ${mapPins}
+                        </div>
                         <svg class="ui-map-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${buildUiMapRoutes(events)}</svg>
-                        ${UI_CONTINENTS.map((continent) => {
-                            const count = continentCounts.get(continent.id) || 0;
-                            const active = uiSelectedContinent === continent.id ? ' active' : '';
-                            return `
-                                <button class="ui-continent-button${active}" type="button" data-continent="${continent.id}" style="left:${continent.left}%;top:${continent.top}%;width:${continent.width}%;height:${continent.height}%">
-                                    <span class="ui-continent-name">${escapeHtml(uiText(continent.en, continent.zh))}</span>
-                                    <span class="ui-continent-count">${escapeHtml(uiText(`${count} events`, `${count} 个事件`))}</span>
-                                </button>
-                            `;
-                        }).join('')}
-                        ${mapPins}
                     </div>
                     <div class="ui-map-callout-zone">
                         <div class="ui-map-callout-strip">
@@ -10415,7 +10482,7 @@
                     <span>${escapeHtml(label)}</span>
                     <span>${escapeHtml(uiText(`${years.length} years`, `${years.length} 个年份`))}</span>
                 </div>
-                <div class="ui-year-track">
+                <div class="ui-year-track" style="--ui-year-count:${years.length};">
                     ${years.map((year) => {
                         const active = Number(uiSelectedYear) === year ? ' active' : '';
                         const highlight = highlights.has(year) ? ' highlight' : '';
