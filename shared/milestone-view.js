@@ -188,6 +188,7 @@
     global.MilestoneView = {
         normalizeMilestone,
         collectPhotos,
+        isWorkAttribution,
         splitDescription,
         stripHtml
     };
