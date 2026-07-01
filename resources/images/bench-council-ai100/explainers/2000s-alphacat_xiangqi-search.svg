@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Chinese chess search geometry explainer</title>
+  <desc id="desc">A local original diagram showing xiangqi move constraints flowing into search and evaluation.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="64" y="64" width="832" height="512" rx="24" fill="#1f2937" stroke="#f59e0b" stroke-width="3"/>
+  <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Chinese chess engine loop</text>
+  <text x="96" y="160" fill="#fde68a" font-family="Arial, Helvetica, sans-serif" font-size="18">legal geometry + tactical search + asymmetric evaluation</text>
+  <g transform="translate(98 206)">
+    <rect width="270" height="300" rx="14" fill="#fef3c7" stroke="#92400e" stroke-width="4"/>
+    <g stroke="#92400e" stroke-width="2" opacity=".9">
+      <path d="M30 30H240M30 60H240M30 90H240M30 120H240M30 150H240M30 180H240M30 210H240M30 240H240M30 270H240"/>
+      <path d="M30 30V270M60 30V270M90 30V270M120 30V270M150 30V270M180 30V270M210 30V270M240 30V270"/>
+      <path d="M90 30L150 90M150 30L90 90M90 210L150 270M150 210L90 270"/>
+    </g>
+    <text x="135" y="158" fill="#92400e" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle">楚河 / 汉界</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+      <circle cx="60" cy="60" r="19" fill="#b91c1c"/><text x="60" y="68" fill="#fff">炮</text>
+      <circle cx="150" cy="120" r="19" fill="#111827"/><text x="150" y="128" fill="#fff">馬</text>
+      <circle cx="210" cy="210" r="19" fill="#b91c1c"/><text x="210" y="218" fill="#fff">将</text>
+    </g>
+    <path d="M60 60H150H210" stroke="#2563eb" stroke-width="6" fill="none" stroke-dasharray="10 8"/>
+    <text x="48" y="314" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">cannon screen + palace constraints</text>
+  </g>
+  <path d="M398 356H494" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M476 336L504 356L476 376" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(524 218)">
+    <rect width="146" height="94" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/>
+    <text x="73" y="42" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">move</text>
+    <text x="73" y="70" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">generator</text>
+    <rect y="130" width="146" height="94" rx="16" fill="#0f172a" stroke="#a78bfa" stroke-width="3"/>
+    <text x="73" y="170" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">alpha-beta</text>
+    <text x="73" y="198" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">search</text>
+  </g>
+  <path d="M694 356H762" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M744 336L772 356L744 376" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(788 238)">
+    <rect width="72" height="54" rx="12" fill="#b91c1c"/>
+    <rect y="78" width="72" height="54" rx="12" fill="#0369a1"/>
+    <rect y="156" width="72" height="54" rx="12" fill="#65a30d"/>
+    <text x="36" y="34" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">attack</text>
+    <text x="36" y="112" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">safety</text>
+    <text x="36" y="190" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">tempo</text>
+  </g>
+  <text x="96" y="548" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: switch cannon screens, river crossing, and palace rules to reshape legal moves.</text>
+</svg>

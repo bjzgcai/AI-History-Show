@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Suphx mahjong policy loop</title>
+  <desc id="desc">A local original diagram showing hidden tiles, reward prediction, and runtime policy adaptation for mahjong.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="64" y="64" width="832" height="512" rx="24" fill="#172033" stroke="#a78bfa" stroke-width="3"/>
+  <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Suphx: mahjong under hidden information</text>
+  <text x="96" y="160" fill="#ddd6fe" font-family="Arial, Helvetica, sans-serif" font-size="18">public tiles + hidden hands + reward prediction + policy adaptation</text>
+  <g transform="translate(112 226)">
+    <rect width="286" height="132" rx="22" fill="#0f172a" stroke="#ddd6fe" stroke-width="3"/>
+    <text x="32" y="42" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">visible table</text>
+    <g>
+      <rect x="32" y="70" width="30" height="50" rx="5" fill="#f8fafc"/>
+      <rect x="72" y="70" width="30" height="50" rx="5" fill="#f8fafc"/>
+      <rect x="112" y="70" width="30" height="50" rx="5" fill="#f8fafc"/>
+      <rect x="152" y="70" width="30" height="50" rx="5" fill="#f8fafc"/>
+      <rect x="192" y="70" width="30" height="50" rx="5" fill="#f8fafc"/>
+      <text x="47" y="103" fill="#b91c1c" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">一</text>
+      <text x="87" y="103" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">九</text>
+      <text x="127" y="103" fill="#047857" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">發</text>
+      <text x="167" y="103" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">?</text>
+      <text x="207" y="103" fill="#b91c1c" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="middle">中</text>
+    </g>
+    <rect x="40" y="160" width="206" height="78" rx="18" fill="#312e81" stroke="#a78bfa" stroke-width="3"/>
+    <text x="143" y="192" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">hidden state</text>
+    <text x="143" y="220" fill="#ddd6fe" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle">opponent hands + wall</text>
+  </g>
+  <path d="M430 346H520" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M502 326L530 346L502 366" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(554 220)" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <rect width="162" height="74" rx="18" fill="#7c3aed"/><text x="81" y="44" fill="#fff" font-size="22">policy</text>
+    <rect y="104" width="162" height="74" rx="18" fill="#0ea5e9"/><text x="81" y="148" fill="#fff" font-size="22">reward</text>
+    <rect y="208" width="162" height="74" rx="18" fill="#16a34a"/><text x="81" y="252" fill="#fff" font-size="22">adapt</text>
+  </g>
+  <g transform="translate(760 282)">
+    <rect width="78" height="138" rx="14" fill="#f8fafc"/>
+    <text x="39" y="54" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle">打</text>
+    <text x="39" y="90" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle">牌</text>
+    <text x="39" y="164" fill="#ddd6fe" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">discard</text>
+  </g>
+  <path d="M718 362H750" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <text x="96" y="548" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: switch table risk to watch the discard policy adapt.</text>
+</svg>
