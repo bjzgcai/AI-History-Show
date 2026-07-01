@@ -3177,7 +3177,7 @@
 
         .ui-level-one.is-year-mode .ui-map-panel,
         .ui-level-one.is-region-mode .ui-map-panel {
-            grid-template-rows: auto 154px minmax(0, 1fr) 114px;
+            grid-template-rows: auto 154px minmax(0, 1fr) 278px;
             gap: 8px;
         }
 
@@ -10108,7 +10108,7 @@
         }
 
         const UI_MAP_CALLOUT_TOP_LIMIT = 12;
-        const UI_MAP_CALLOUT_BOTTOM_LIMIT = 9;
+        const UI_MAP_CALLOUT_BOTTOM_LIMIT = 21;
         const UI_MAP_CALLOUT_TOTAL_LIMIT = UI_MAP_CALLOUT_TOP_LIMIT + UI_MAP_CALLOUT_BOTTOM_LIMIT;
         const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
         const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
@@ -10145,12 +10145,13 @@
             }).slice(0, UI_MAP_CALLOUT_TOTAL_LIMIT);
         }
 
-        function getUiMapCalloutGridStyle(index) {
-            if (index < UI_MAP_CALLOUT_TOP_LIMIT) {
-                return `grid-column:${index % 3 + 1};grid-row:${Math.floor(index / 3) + 1};`;
+        function getUiMapCalloutGridStyle(index, placement) {
+            const columnCount = 3;
+            if (placement !== 'bottom') {
+                return `grid-column:${index % columnCount + 1};grid-row:${Math.floor(index / columnCount) + 1};`;
             }
             const bottomIndex = index - UI_MAP_CALLOUT_TOP_LIMIT;
-            return `grid-column:${bottomIndex % 3 + 1};grid-row:${Math.floor(bottomIndex / 3) + 1};`;
+            return `grid-column:${bottomIndex % columnCount + 1};grid-row:${Math.floor(bottomIndex / columnCount) + 1};`;
         }
 
         function buildUiMapCallouts(events, placement) {
@@ -10167,7 +10168,7 @@
                 const locationCountry = vm.location && vm.location.country ? vm.location.country : getUiContinentLabel(getMilestoneContinentId(event));
                 const countHtml = count > 1 ? ` <span class="ui-map-callout-count">×${escapeHtml(count)}</span>` : '';
                 return `
-                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" data-location-key="${escapeHtml(locationKey || '')}" style="${getUiMapCalloutGridStyle(absoluteIndex)}">
+                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" data-location-key="${escapeHtml(locationKey || '')}" style="${getUiMapCalloutGridStyle(absoluteIndex, placement)}">
                         <span class="ui-map-callout-dot"></span>
                         <span class="ui-map-callout-text">
                             <strong>${escapeHtml(locationName)}</strong>
