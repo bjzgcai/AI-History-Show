@@ -6,6 +6,12 @@ const path = require('node:path');
 const { URL } = require('node:url');
 
 const { milestones } = require('../milestones-data.js');
+const {
+    countTextSentences,
+    escapeMarkdownTableText,
+    getLocalizedText,
+    splitTextSentences
+} = require('../shared/utils.js');
 
 const STORYLINE_ID = 'bench-council-ai100';
 const OUT_DIR = path.join(__dirname, '..', 'reports');
@@ -79,50 +85,6 @@ const MANUAL_REVIEW_RULES = [
     }
 ];
 
-function localizedText(value, locale = 'en') {
-    if (value && typeof value === 'object' && !Array.isArray(value)) {
-        return String(value[locale] || value.en || value.zh || '').trim();
-    }
-    return String(value || '').trim();
-}
-
-function stripHtml(value) {
-    return String(value || '')
-        .replace(/<[^>]*>/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-}
-
-function sentenceCount(value, locale) {
-    const text = stripHtml(value);
-    if (!text) return 0;
-
-    if (locale === 'zh') {
-        const matches = text.match(/[。！？!?]/g);
-        return matches ? matches.length : 1;
-    }
-
-    const matches = text.match(/[.!?](?:\s|$|["'”’）)])/g);
-    return matches ? matches.length : 1;
-}
-
-function splitSentences(value, locale) {
-    const text = stripHtml(value);
-    if (!text) return [];
-
-    if (locale === 'zh') {
-        return text
-            .split(/(?<=[。！？!?])/)
-            .map((item) => item.trim())
-            .filter(Boolean);
-    }
-
-    return text
-        .split(/(?<=[.!?])\s+/)
-        .map((item) => item.trim())
-        .filter(Boolean);
-}
-
 function isValidUrl(value) {
     try {
         const url = new URL(value);
@@ -132,12 +94,16 @@ function isValidUrl(value) {
     }
 }
 
-function compact(value) {
-    return stripHtml(value).replace(/\|/g, '\\|');
-}
-
 function sourceText(source) {
-    return `${localizedText(source.type)} ${localizedText(source.label)} ${source.url || ''}`.toLowerCase();
+    return [
+        getLocalizedText(source.type, 'en'),
+        getLocalizedText(source.type, 'zh'),
+        getLocalizedText(source.label, 'en'),
+        getLocalizedText(source.label, 'zh'),
+        source.url || ''
+    ]
+        .join(' ')
+        .toLowerCase();
 }
 
 function isPrimarySource(source) {
@@ -164,10 +130,10 @@ function collectSources(milestone) {
         milestone.achievement && Array.isArray(milestone.achievement.sources) ? milestone.achievement.sources : [];
     return sources.map((source, index) => ({
         index: index + 1,
-        typeEn: localizedText(source.type, 'en'),
-        typeZh: localizedText(source.type, 'zh'),
-        labelEn: localizedText(source.label, 'en'),
-        labelZh: localizedText(source.label, 'zh'),
+        typeEn: getLocalizedText(source.type, 'en'),
+        typeZh: getLocalizedText(source.type, 'zh'),
+        labelEn: getLocalizedText(source.label, 'en'),
+        labelZh: getLocalizedText(source.label, 'zh'),
         url: source.url || '',
         primaryCandidate: isPrimarySource(source),
         validUrl: isValidUrl(source.url)
@@ -177,7 +143,7 @@ function collectSources(milestone) {
 function collectClaims(milestone) {
     const claims = [];
     const add = (field, locale, text) => {
-        const clean = compact(text);
+        const clean = escapeMarkdownTableText(text);
         if (!clean) return;
         claims.push({
             id: `${milestone.id}:${claims.length + 1}`,
@@ -189,44 +155,44 @@ function collectClaims(milestone) {
         });
     };
 
-    add('year-title', 'en', `${milestone.year}: ${localizedText(milestone.title, 'en')}`);
-    add('year-title', 'zh', `${milestone.year}: ${localizedText(milestone.title, 'zh')}`);
+    add('year-title', 'en', `${milestone.year}: ${getLocalizedText(milestone.title, 'en')}`);
+    add('year-title', 'zh', `${milestone.year}: ${getLocalizedText(milestone.title, 'zh')}`);
     add(
         'location',
         'en',
-        `${localizedText(milestone.location && milestone.location.name, 'en')}, ${localizedText(milestone.location && milestone.location.country, 'en')}`
+        `${getLocalizedText(milestone.location && milestone.location.name, 'en')}, ${getLocalizedText(milestone.location && milestone.location.country, 'en')}`
     );
     add(
         'location',
         'zh',
-        `${localizedText(milestone.location && milestone.location.name, 'zh')}，${localizedText(milestone.location && milestone.location.country, 'zh')}`
+        `${getLocalizedText(milestone.location && milestone.location.name, 'zh')}，${getLocalizedText(milestone.location && milestone.location.country, 'zh')}`
     );
 
     for (const figure of milestone.figures || []) {
-        add('figure', 'en', `${localizedText(figure.name, 'en')} - ${localizedText(figure.role, 'en')}`);
-        add('figure', 'zh', `${localizedText(figure.name, 'zh')} - ${localizedText(figure.role, 'zh')}`);
+        add('figure', 'en', `${getLocalizedText(figure.name, 'en')} - ${getLocalizedText(figure.role, 'en')}`);
+        add('figure', 'zh', `${getLocalizedText(figure.name, 'zh')} - ${getLocalizedText(figure.role, 'zh')}`);
     }
 
     for (const locale of ['en', 'zh']) {
-        for (const sentence of splitSentences(localizedText(milestone.description, locale), locale)) {
+        for (const sentence of splitTextSentences(getLocalizedText(milestone.description, locale), locale)) {
             add('description', locale, sentence);
         }
     }
 
     for (const section of milestone.commentarySections || []) {
-        const label = localizedText(section.label, 'en') || 'commentary';
+        const label = getLocalizedText(section.label, 'en') || 'commentary';
         for (const locale of ['en', 'zh']) {
-            for (const sentence of splitSentences(localizedText(section.html, locale), locale)) {
+            for (const sentence of splitTextSentences(getLocalizedText(section.html, locale), locale)) {
                 add(`commentary:${label}`, locale, sentence);
             }
         }
     }
 
     if (milestone.quoteMeta) {
-        add('quote-work', 'en', localizedText(milestone.quoteMeta.workTitle, 'en'));
-        add('quote-authors', 'en', localizedText(milestone.quoteMeta.workAuthors, 'en'));
-        add('quote-work', 'zh', localizedText(milestone.quoteMeta.workTitle, 'zh'));
-        add('quote-authors', 'zh', localizedText(milestone.quoteMeta.workAuthors, 'zh'));
+        add('quote-work', 'en', getLocalizedText(milestone.quoteMeta.workTitle, 'en'));
+        add('quote-authors', 'en', getLocalizedText(milestone.quoteMeta.workAuthors, 'en'));
+        add('quote-work', 'zh', getLocalizedText(milestone.quoteMeta.workTitle, 'zh'));
+        add('quote-authors', 'zh', getLocalizedText(milestone.quoteMeta.workAuthors, 'zh'));
     }
 
     return claims;
@@ -267,13 +233,13 @@ function checkMilestone(milestone) {
 
     const sections = Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [];
     for (const requiredLabel of REQUIRED_CONTEXT_LABELS) {
-        const section = sections.find((item) => localizedText(item.label, 'en') === requiredLabel);
+        const section = sections.find((item) => getLocalizedText(item.label, 'en') === requiredLabel);
         if (!section) {
             issues.push(`missing context section: ${requiredLabel}`);
             continue;
         }
         for (const locale of ['en', 'zh']) {
-            const count = sentenceCount(localizedText(section.html, locale), locale);
+            const count = countTextSentences(getLocalizedText(section.html, locale), locale);
             if (count < 2) {
                 issues.push(`${requiredLabel} ${locale} has ${count} sentence(s)`);
             }
@@ -285,8 +251,8 @@ function checkMilestone(milestone) {
     return {
         id: milestone.id,
         year: milestone.year,
-        titleEn: localizedText(milestone.title, 'en'),
-        titleZh: localizedText(milestone.title, 'zh'),
+        titleEn: getLocalizedText(milestone.title, 'en'),
+        titleZh: getLocalizedText(milestone.title, 'zh'),
         sourceCount: sources.length,
         primarySourceCount: sources.filter((source) => source.primaryCandidate).length,
         claimCount: claims.length,
@@ -322,7 +288,7 @@ function renderMarkdown(audit) {
     lines.push('| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |');
     for (const item of audit.items) {
         lines.push(
-            `| ${item.id} | ${compact(item.titleEn)} | ${item.sourceCount} | ${item.primarySourceCount} | ${item.claimCount} | ${item.riskyClaimCount} | ${item.weakClaimCount} | ${item.issues.length ? compact(item.issues.join('; ')) : 'ready for source review'} |`
+            `| ${item.id} | ${escapeMarkdownTableText(item.titleEn)} | ${item.sourceCount} | ${item.primarySourceCount} | ${item.claimCount} | ${item.riskyClaimCount} | ${item.weakClaimCount} | ${item.issues.length ? escapeMarkdownTableText(item.issues.join('; ')) : 'ready for source review'} |`
         );
     }
     lines.push('');
@@ -347,14 +313,16 @@ function renderMarkdown(audit) {
         lines.push('Sources:');
         for (const source of item.sources) {
             const primary = source.primaryCandidate ? ' primary-candidate' : '';
-            lines.push(`- [${compact(source.labelEn)}](${source.url}) (${compact(source.typeEn)}${primary})`);
+            lines.push(
+                `- [${escapeMarkdownTableText(source.labelEn)}](${source.url}) (${escapeMarkdownTableText(source.typeEn)}${primary})`
+            );
         }
         lines.push('');
         lines.push('| Field | Locale | Risk | Manual Review | Claim | Status |');
         lines.push('| --- | --- | --- | --- | --- | --- |');
         for (const claim of item.claims) {
             lines.push(
-                `| ${compact(claim.field)} | ${claim.locale} | ${claim.risk ? 'yes' : 'no'} | ${claim.manualReview ? compact(claim.reviewReasons.join('; ')) : 'no'} | ${claim.text} | ${claim.status} |`
+                `| ${escapeMarkdownTableText(claim.field)} | ${claim.locale} | ${claim.risk ? 'yes' : 'no'} | ${claim.manualReview ? escapeMarkdownTableText(claim.reviewReasons.join('; ')) : 'no'} | ${claim.text} | ${claim.status} |`
             );
         }
     }
@@ -397,7 +365,7 @@ function renderClaimsMarkdown(rows, { title, intro }) {
     lines.push('| ---: | --- | --- | --- | --- | --- | --- |');
     rows.forEach((row, index) => {
         lines.push(
-            `| ${index + 1} | ${row.milestoneId} / ${compact(row.titleEn)} | ${compact(row.field)} | ${row.locale} | ${row.manualReview ? 'yes' : 'no'} | ${row.reasons.length ? compact(row.reasons.join('; ')) : 'low-priority risk'} | ${compact(row.claim)} |`
+            `| ${index + 1} | ${row.milestoneId} / ${escapeMarkdownTableText(row.titleEn)} | ${escapeMarkdownTableText(row.field)} | ${row.locale} | ${row.manualReview ? 'yes' : 'no'} | ${row.reasons.length ? escapeMarkdownTableText(row.reasons.join('; ')) : 'low-priority risk'} | ${escapeMarkdownTableText(row.claim)} |`
         );
     });
     lines.push('');
