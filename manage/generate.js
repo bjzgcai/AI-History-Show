@@ -23,6 +23,7 @@ const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
     backupFile,
+    countTextSentences,
     deriveEmbedUrl,
     detectVideoSource,
     formatQuoteAttribution,
@@ -385,26 +386,6 @@ function buildCommentarySectionsOverride(key) {
         .filter((section) => section.label.zh && section.html.zh);
 }
 
-function stripHtml(value) {
-    return String(value || '')
-        .replace(/<[^>]*>/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-}
-
-function sentenceCount(value, locale) {
-    const text = stripHtml(value);
-    if (!text) return 0;
-
-    if (locale === 'zh') {
-        const matches = text.match(/[。！？!?]/g);
-        return matches ? matches.length : 1;
-    }
-
-    const matches = text.match(/[.!?](?:\s|$|["'”’）)])/g);
-    return matches ? matches.length : 1;
-}
-
 function localizedPair(value) {
     return {
         en: getLocalizedText(value, 'en'),
@@ -502,7 +483,7 @@ function ensureTwoSentences(value, extraSentence, locale) {
     const text = String(value || '').trim();
     const extra = String(extraSentence || '').trim();
     if (!text) return extra;
-    if (sentenceCount(text, locale) >= 2) return text;
+    if (countTextSentences(text, locale) >= 2) return text;
     if (/<\/p>\s*$/i.test(text)) {
         return `${text}<p>${extra}</p>`;
     }
