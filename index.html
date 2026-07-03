@@ -142,6 +142,8 @@
             display: block;
             width: 431px;
             height: auto;
+            opacity: 1;
+            filter: brightness(1.72) contrast(1.16);
             user-select: none;
             pointer-events: none;
         }
@@ -3063,7 +3065,7 @@
         }
 
         .single-stage.is-ui-browser .stage-topbar {
-            border-bottom: 1px solid rgba(244, 239, 229, 0.16);
+            border-bottom: 1px solid rgba(244, 239, 229, 0.58);
             align-items: center;
         }
 
@@ -3287,9 +3289,9 @@
         .ui-map-geo-layer {
             position: absolute;
             left: 50%;
-            top: 34%;
+            top: 50%;
             width: 100%;
-            aspect-ratio: 560.64 / 284.85;
+            height: calc(100% - 16px);
             transform: translate(-50%, -50%);
             transform-origin: center center;
             z-index: 2;
@@ -3803,6 +3805,11 @@
             z-index: 5;
         }
 
+        .single-stage.is-ui-browser.is-ui-detail .ui-browser-timeline {
+            display: none;
+            border-top: none;
+        }
+
         .ui-browser-timeline::before,
         .ui-browser-timeline::after {
             content: "";
@@ -3996,6 +4003,12 @@
             line-height: 0.9;
         }
 
+        .ui-detail-year.is-multiline {
+            font-size: 62px;
+            line-height: 0.82;
+            white-space: pre-line;
+        }
+
         .ui-detail-place {
             grid-column: 2;
             grid-row: 1;
@@ -4123,7 +4136,7 @@
         .ui-detail-image-pager {
             width: 78px;
             height: 10px;
-            margin: 12px auto 0;
+            margin: 20px auto 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -4138,6 +4151,16 @@
             line-height: 1.22;
             text-align: center;
             background: transparent;
+        }
+
+        .ui-detail-caption-title,
+        .ui-detail-caption-detail {
+            display: block;
+            text-align: center;
+        }
+
+        .ui-detail-caption-detail {
+            margin-top: 3px;
         }
 
         .ui-detail-center {
@@ -4188,11 +4211,17 @@
 
         .ui-side-panel {
             display: grid;
-            grid-template-rows: minmax(0, 140px) minmax(0, 1fr);
-            align-content: stretch;
-            gap: 31px;
+            grid-template-rows: auto auto;
+            align-content: start;
+            gap: 56px;
             padding: 18px 38px 18px 20px;
             position: relative;
+            overflow: auto;
+            scrollbar-width: none;
+        }
+
+        .ui-side-panel::-webkit-scrollbar {
+            display: none;
         }
 
         .ui-side-panel::after {
@@ -4209,40 +4238,31 @@
         .ui-info-card,
         .ui-media-card {
             min-height: 0;
-            overflow: auto;
+            overflow: visible;
             padding: 0 8px 0 0;
             display: grid;
             align-content: start;
-            gap: 14px;
+            gap: 16px;
             border: none;
             border-radius: 0;
             background: transparent;
             box-shadow: none;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(246, 137, 0, 0.58) rgba(255, 255, 255, 0.08);
         }
 
-        .ui-info-card::-webkit-scrollbar,
-        .ui-media-card::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        .ui-info-card::-webkit-scrollbar-track,
-        .ui-media-card::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .ui-info-card::-webkit-scrollbar-thumb,
-        .ui-media-card::-webkit-scrollbar-thumb {
-            background: rgba(246, 137, 0, 0.58);
-            border-radius: 999px;
+        .ui-side-panel .ui-section-kicker {
+            color: var(--accent);
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 1.3;
+            letter-spacing: 0;
+            text-transform: none;
         }
 
         .ui-source-card,
         .ui-concept-card {
             padding: 0;
             display: grid;
-            gap: 8px;
+            gap: 6px;
             text-decoration: none;
             color: inherit;
             border: none;
@@ -4270,12 +4290,12 @@
             color: rgba(255, 255, 255, 0.92);
             font-size: 16px;
             font-weight: 800;
-            line-height: 1.35;
+            line-height: 1.42;
         }
 
         .ui-source-url {
             color: rgba(255, 255, 255, 0.78);
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 650;
             line-height: 1.46;
             overflow-wrap: anywhere;
@@ -4283,20 +4303,27 @@
 
         .ui-concept-title {
             color: rgba(255, 255, 255, 0.92);
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 850;
             line-height: 1.35;
         }
 
         .ui-concept-text {
             color: rgba(255, 255, 255, 0.88);
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 650;
             line-height: 1.46;
             overflow-wrap: anywhere;
         }
 
+        .ui-media-card .ui-concept-chip {
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 20px;
+            font-weight: 800;
+        }
+
         .ui-media-video {
+            position: relative;
             width: 100%;
             aspect-ratio: 530 / 298;
             min-height: 0;
@@ -4304,14 +4331,85 @@
             border-radius: 0;
             overflow: hidden;
             background: #050505;
+            color: inherit;
+            padding: 0;
+            display: block;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .ui-media-video::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 14%, transparent 86%, rgba(255, 255, 255, 0.025)),
+                repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.032) 0 1px, transparent 1px 4px);
+            mix-blend-mode: screen;
+            opacity: 0.48;
         }
 
         .ui-media-video iframe,
-        .ui-media-video video {
+        .ui-media-video video,
+        .ui-media-video-media {
             width: 100%;
             height: 100%;
             border: 0;
             display: block;
+        }
+
+        .ui-media-video-play {
+            position: absolute;
+            left: 36px;
+            top: 16px;
+            z-index: 3;
+            color: rgba(244, 239, 229, 0.42);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .ui-media-video-play::after {
+            content: "▸";
+            margin-left: 8px;
+        }
+
+        .ui-media-video-quote {
+            position: absolute;
+            left: 36px;
+            right: 36px;
+            bottom: 54px;
+            z-index: 3;
+            color: #d99a00;
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1.18;
+            text-align: left;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+        }
+
+        .ui-media-video-time {
+            position: absolute;
+            left: 36px;
+            right: 36px;
+            bottom: 18px;
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+            color: rgba(244, 239, 229, 0.42);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
         }
 
         .ui-explainer-grid {
@@ -5694,6 +5792,8 @@
         };
         const getRequestedStorylineId = () => getSearchParam('storyline');
         const getRequestedQuizMode = () => getSearchParam('quiz');
+        const getRequestedUiMode = () => getSearchParam('uiMode');
+        const getRequestedEventId = () => getSearchParam('event');
         const getFallbackStorylineId = () => hasStorylineMilestones(DEFAULT_STORYLINE_ID)
             ? DEFAULT_STORYLINE_ID
             : (STORYLINE_OPTIONS.find((option) => hasStorylineMilestones(option.id)) || {}).id || DEFAULT_STORYLINE_ID;
@@ -5711,6 +5811,17 @@
         let uiDetailImageEventId = '';
 
         let currentIndex = 0;
+        const requestedUiMode = getRequestedUiMode();
+        const requestedEventId = getRequestedEventId();
+        if (requestedUiMode === 'detail' && requestedEventId) {
+            const requestedIndex = milestoneList.findIndex((item) => item && item.id === requestedEventId);
+            if (requestedIndex >= 0) {
+                currentIndex = requestedIndex;
+                uiBrowserMode = 'detail';
+                uiSelectedEventId = requestedEventId;
+                uiSelectedYear = Number(milestoneList[requestedIndex].year) || uiSelectedYear;
+            }
+        }
         let currentArchiveIndex = 0;
         let activeQuizMilestoneKey = '';
         let pendingQuizAction = null;
@@ -10597,11 +10708,15 @@
         function buildUiMediaHtml(vm) {
             const raw = vm.raw || {};
             if (vm.videoEmbedUrl) {
-                const media = isDirectVideoMedia(vm.videoEmbedUrl)
-                    ? `<video controls playsinline preload="metadata" src="${escapeHtml(vm.videoEmbedUrl)}"></video>`
-                    : `<iframe src="${escapeHtml(vm.videoEmbedUrl)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
                 return `
-                    <div class="ui-media-video">${media}</div>
+                    <button class="ui-media-video" type="button" data-ui-media-video="${escapeHtml(vm.videoEmbedUrl)}" aria-label="${escapeHtml(tx('playVideo'))}">
+                        <span class="ui-media-video-play">PLAY</span>
+                        <span class="ui-media-video-quote">${escapeHtml(extractVideoQuote(vm))}</span>
+                        <span class="ui-media-video-time">
+                            <span>SP</span>
+                            <span>00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}</span>
+                        </span>
+                    </button>
                     ${buildRightCommentarySections(vm).slice(0, 2).map((section) => `
                         <article class="ui-concept-card">
                             <span class="ui-concept-chip">${escapeHtml(section.label || tx('contentInterpretation'))}</span>
@@ -10784,17 +10899,21 @@
             const imageMeta = getUiPrimaryImageMeta(vm, imageUrl);
             const title = vm.title || tx('aiHistoryEvent');
             const detailImageClass = isDiagramImage(imageUrl) ? ' is-diagram' : '';
+            const yearText = String(vm.year || '');
+            const detailYearText = yearText.replace(/\s*\/\s*/g, '\n');
+            const detailYearClass = /[\n/-]/.test(detailYearText) ? ' is-multiline' : '';
             const mediaTitle = vm.videoEmbedUrl
                 ? uiText('Commentary & Media', '评论与媒体')
                 : uiText('Key Concepts', '关键概念');
-            const imageCaption = [imageMeta.name, imageMeta.role].filter(Boolean).join(' · ') || title;
+            const imageCaptionTitle = imageMeta.name || title;
+            const imageCaptionDetail = imageMeta.role || '';
             refs.uiBrowserMain.innerHTML = `
                 <div class="ui-detail">
                     <section class="ui-detail-panel">
                         <button class="ui-back-button" type="button" data-ui-back="true" tabindex="-1" aria-hidden="true">${escapeHtml(uiText('Back', '返回'))}</button>
                         <div class="ui-detail-left">
                             <div class="ui-detail-hero">
-                                <div class="ui-detail-year">${escapeHtml(vm.year || '')}</div>
+                                <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
                                 <div class="ui-detail-place">${buildLocationHtml(vm.location)}</div>
                                 <div class="ui-avatar-strip">${buildUiAvatarHtml(vm)}</div>
                             </div>
@@ -10803,7 +10922,8 @@
                                     ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" draggable="false">` : `<span>${escapeHtml(tx('archiveImage'))}</span>`}
                                 </div>
                                 <div class="ui-detail-caption">
-                                    ${escapeHtml(imageCaption)}
+                                    <span class="ui-detail-caption-title">${escapeHtml(imageCaptionTitle)}</span>
+                                    ${imageCaptionDetail ? `<span class="ui-detail-caption-detail">${escapeHtml(imageCaptionDetail)}</span>` : ''}
                                     ${buildUiDetailImagePagerHtml(detailImages)}
                                 </div>
                             </div>
@@ -10841,6 +10961,15 @@
                     const nextImageIndex = Number(button.dataset.uiImageIndex);
                     setUiDetailImageIndex(nextImageIndex, detailImages.length);
                 });
+            });
+            refs.uiBrowserMain.querySelectorAll('[data-ui-media-video]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const videoUrl = button.dataset.uiMediaVideo || '';
+                    const media = isDirectVideoMedia(videoUrl)
+                        ? `<video class="ui-media-video-media" controls autoplay playsinline preload="metadata" src="${escapeHtml(videoUrl)}"></video>`
+                        : `<iframe class="ui-media-video-media" src="${escapeHtml(videoUrl)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                    button.innerHTML = media;
+                }, { once: true });
             });
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
         }
@@ -10940,6 +11069,7 @@
             applyStaticTranslations();
             refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
             refs.stage.classList.toggle('is-ui-browser', isUiBrowserActive());
+            refs.stage.classList.toggle('is-ui-detail', isUiBrowserActive() && uiBrowserMode === 'detail');
             renderHeader(vm);
             if (isUiBrowserActive()) {
                 clearGlobeMarkers();
