@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-06-26 01:27
+// 生成时间: 2026-07-03 11:09
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -50308,6 +50308,10 @@ const milestones = [
       },
       "videos": []
     },
+    "quoteLabel": {
+      "en": "Match record",
+      "zh": "赛事记录"
+    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -51311,6 +51315,10 @@ const milestones = [
         }
       },
       "videos": []
+    },
+    "quoteLabel": {
+      "en": "Tournament archive",
+      "zh": "赛事档案"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -52765,6 +52773,10 @@ const milestones = [
       },
       "videos": []
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -53242,6 +53254,10 @@ const milestones = [
       },
       "videos": []
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -53698,6 +53714,10 @@ const milestones = [
         }
       },
       "videos": []
+    },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -54169,6 +54189,10 @@ const milestones = [
       },
       "videos": []
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -54633,6 +54657,10 @@ const milestones = [
         }
       },
       "videos": []
+    },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",

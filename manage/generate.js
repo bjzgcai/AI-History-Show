@@ -188,6 +188,7 @@ function appendMilestonesFromGroup(group, groupKind) {
             }
         };
 
+        if (ev.quoteLabel) milestone.quoteLabel = ev.quoteLabel;
         if (storyline) milestone.storyline = storyline;
         if (groupKind === 'branch' && group.id) {
             milestone.branch = {

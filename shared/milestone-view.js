@@ -90,6 +90,7 @@
         const sections = [];
         const quoteHtml = String(localize(milestone.quote) || '').trim();
         const quoteAttribution = String(localize(milestone.quoteAttribution) || '').trim();
+        const quoteLabel = String(localize(milestone.quoteLabel) || '').trim();
         const customSections = Array.isArray(milestone.commentarySections)
             ? milestone.commentarySections.filter((section) => stripHtml(localize(section && section.html)))
             : [];
@@ -98,7 +99,7 @@
             const attributionPrefix =
                 quoteAttribution && quoteAttribution.startsWith('《') ? `${t('source')}：` : `${t('attribution')}：`;
             sections.push({
-                label: t('quoteExcerpt'),
+                label: quoteLabel || t('quoteExcerpt'),
                 html: quoteAttribution ? `${quoteHtml}<br>${attributionPrefix}${quoteAttribution}` : quoteHtml
             });
         }
@@ -172,6 +173,7 @@
             videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
             quoteHtml: quote && quote !== '待补充' ? quote : '',
             quoteAttribution: String(localize(milestone.quoteAttribution) || '').trim(),
+            quoteLabel: String(localize(milestone.quoteLabel) || '').trim(),
             quotePage: String(localize(milestone.quotePage) || '').trim(),
             commentaryOverrideSections: Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [],
             commentarySections,
