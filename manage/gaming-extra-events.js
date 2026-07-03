@@ -96,6 +96,7 @@ function makeEvent(config) {
     description: config.description,
     figures: config.figures,
     quoteText: config.quoteText,
+    quoteLabel: config.quoteLabel,
     quoteMeta: config.quoteMeta,
     quotePage: config.quotePage,
     analysis: config.analysis,
@@ -148,6 +149,7 @@ const events = {
       }
     ],
     quoteText: t('Takeshi Murakami (0) vs. Logistello (6)', '村上健 0 比 6 负于 Logistello'),
+    quoteLabel: t('Match record', '赛事记录'),
     quoteMeta: {
       workTitle: t('The Othello Match of the Year', '年度黑白棋对局'),
       workAuthors: t('Michael Buro / NEC Research Institute', '迈克尔·布罗 / NEC 研究院'),
@@ -292,6 +294,7 @@ const events = {
       }
     ],
     quoteText: t('Chinese Chess: 16 tournaments, 38 programs', '中国象棋：16 次赛事，38 个程序'),
+    quoteLabel: t('Tournament archive', '赛事档案'),
     quoteMeta: {
       workTitle: t('ICGA Tournaments: Chinese Chess', 'ICGA 赛事：中国象棋'),
       workAuthors: t('International Computer Games Association tournament archive', '国际计算机博弈协会赛事档案'),
@@ -425,6 +428,7 @@ const events = {
       }
     ],
     quoteText: t('a general reinforcement learning algorithm', '一种通用强化学习算法'),
+    quoteLabel: t('Paper cue', '论文线索'),
     quoteMeta: {
       workTitle: t(
         'A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play',
@@ -560,6 +564,7 @@ const events = {
       }
     ],
     quoteText: t('superhuman AI for heads-up no-limit poker', '面向一对一无限注扑克的超人 AI'),
+    quoteLabel: t('Paper cue', '论文线索'),
     quoteMeta: {
       workTitle: t(
         'Superhuman AI for heads-up no-limit poker: Libratus beats top professionals',
@@ -685,6 +690,7 @@ const events = {
       }
     ],
     quoteText: t('superhuman AI for multiplayer poker', '面向多人扑克的超人 AI'),
+    quoteLabel: t('Paper cue', '论文线索'),
     quoteMeta: {
       workTitle: t('Superhuman AI for multiplayer poker', '面向多人扑克的超人 AI'),
       workAuthors: t('Noam Brown and Tuomas Sandholm, Science, 2019', 'Noam Brown 与 Tuomas Sandholm，Science，2019'),
@@ -811,6 +817,7 @@ const events = {
       }
     ],
     quoteText: t('Mastering Mahjong with Deep Reinforcement Learning', '用深度强化学习掌握麻将'),
+    quoteLabel: t('Paper cue', '论文线索'),
     quoteMeta: {
       workTitle: t('Suphx: Mastering Mahjong with Deep Reinforcement Learning', 'Suphx：用深度强化学习掌握麻将'),
       workAuthors: t('Junjie Li et al., arXiv, 2020', 'Junjie Li 等，arXiv，2020'),
@@ -933,6 +940,7 @@ const events = {
       }
     ],
     quoteText: t('planning with a learned model', '用学习到的模型进行规划'),
+    quoteLabel: t('Paper cue', '论文线索'),
     quoteMeta: {
       workTitle: t(
         'Mastering Atari, Go, chess and shogi by planning with a learned model',

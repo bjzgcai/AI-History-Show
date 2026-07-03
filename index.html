@@ -6277,12 +6277,13 @@
 
             const quote = String(lx(safeMilestone.quote) || '').trim();
             const quoteAttribution = String(lx(safeMilestone.quoteAttribution) || '').trim();
+            const quoteLabel = String(lx(safeMilestone.quoteLabel) || '').trim();
             const descriptionText = stripHtml(lx(safeMilestone.description) || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
                 const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? `${tx('source')}：` : `${tx('attribution')}：`;
                 commentarySections.push({
-                    label: tx('quoteExcerpt'),
+                    label: quoteLabel || tx('quoteExcerpt'),
                     html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
                 });
             }
