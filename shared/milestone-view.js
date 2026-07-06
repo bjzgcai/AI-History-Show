@@ -33,6 +33,11 @@
             .trim();
     }
 
+    function isWorkAttribution(value) {
+        const text = String(value || '').trim();
+        return text.startsWith('《') || /^<em\b[^>]*>/i.test(text);
+    }
+
     function splitDescription(description) {
         const text = stripHtml(description);
         if (!text) return [];
@@ -97,7 +102,7 @@
 
         if (quoteHtml && quoteHtml !== '待补充') {
             const attributionPrefix =
-                quoteAttribution && quoteAttribution.startsWith('《') ? `${t('source')}：` : `${t('attribution')}：`;
+                quoteAttribution && isWorkAttribution(quoteAttribution) ? `${t('source')}：` : `${t('attribution')}：`;
             sections.push({
                 label: quoteLabel || t('quoteExcerpt'),
                 html: quoteAttribution ? `${quoteHtml}<br>${attributionPrefix}${quoteAttribution}` : quoteHtml
@@ -185,6 +190,7 @@
     global.MilestoneView = {
         normalizeMilestone,
         collectPhotos,
+        isWorkAttribution,
         splitDescription,
         stripHtml
     };

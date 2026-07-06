@@ -24,6 +24,7 @@ const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
     backupFile,
+    countTextSentences,
     deriveEmbedUrl,
     detectVideoSource,
     formatQuoteAttribution,
@@ -42,6 +43,30 @@ const avatarRegistry = loadAvatarRegistry();
 const researchCandidates = loadResearchCandidates();
 const quoteCandidates = loadQuoteCandidates(QUOTE_CANDIDATES_PATH);
 const quizCatalog = loadQuizCatalog();
+
+const ZH_QUOTE_ATTRIBUTIONS = {
+  '1956-dartmouth': '《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农',
+  '1957-perceptron': '《感知机：一种用于大脑信息存储与组织的概率模型》，弗兰克·罗森布拉特',
+  '1969-ai-winter': '《感知机：计算几何导论》，马文·明斯基、西摩·派珀特',
+  '1986-backpropagation': '《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯',
+  '1989-cnn': '《基于梯度的学习在文档识别中的应用》，杨立昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳',
+  '1986-rnn': '《在时间中发现结构》，杰弗里·埃尔曼',
+  '1997-lstm': '《长短期记忆》，塞普·霍赫赖特、尤尔根·施密德胡伯',
+  '2012-alexnet': '《使用深度卷积神经网络进行 ImageNet 分类》，亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿',
+  '2014-highway-network': '《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯',
+  '2015-resnet': '《用于图像识别的深度残差学习》，何恺明、张祥雨、任少卿、孙剑',
+  '2016-densenet': '《密集连接卷积网络》，黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格',
+  '2014-gan': '《生成对抗网络》，伊恩·古德费洛等',
+  '2014-attention': '《通过联合学习对齐与翻译的神经机器翻译》，德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥',
+  '2017-transformer': '《注意力就是你所需要的一切》，阿希什·瓦斯瓦尼等',
+  '2018-bert': '《BERT：用于语言理解的深度双向 Transformer 预训练》，雅各布·德夫林等',
+  '2018-gpt': '《通过生成式预训练改进语言理解》，亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维',
+  '2023-agents': '《ReAct：在语言模型中协同推理与行动》，姚顺雨等',
+  '2025-llm-competition': '《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等',
+  '2020-alphafold': '《使用 AlphaFold 进行高精度蛋白质结构预测》，约翰·江珀等',
+  '2019-ai-feynman': '《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克',
+  '2024-ai-scientist': '《AI 科学家》，克里斯·卢等',
+};
 
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
 
@@ -157,16 +182,21 @@ function appendMilestonesFromGroup(group, groupKind) {
             }
         }
 
-        const commentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
+        const rawCommentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
         const groupStoryline = group.storyline || (groupKind === 'branch' && group.id ? {
             id: group.id,
             name: group.name
         } : null);
         const storyline = ev.storyline || groupStoryline || null;
         const storylineId = typeof storyline === 'string' ? storyline : (storyline && storyline.id) || '';
+        const commentarySections = normalizeCommentarySections(rawCommentarySections, ev, storylineId);
         const quizzes = QUIZ_STORYLINE_IDS.has(storylineId) ? selectQuizzes(key, ev) : [];
+        const milestoneId =
+            groupKind === 'branch' && group.id
+                ? `${MILESTONE_ID_PREFIX}${group.id}-${key}`
+                : `${MILESTONE_ID_PREFIX}${key}`;
         const milestone = {
-            id: `${MILESTONE_ID_PREFIX}${key}`,
+            id: milestoneId,
             year: ev.year,
             category: group.name,
             title: ev.title,
@@ -374,6 +404,110 @@ function buildCommentarySectionsOverride(key) {
         .filter((section) => section.label.zh && section.html.zh);
 }
 
+function localizedPair(value) {
+    return {
+        en: getLocalizedText(value, 'en'),
+        zh: getLocalizedText(value, 'zh')
+    };
+}
+
+function normalizeCommentarySections(sections, ev, storylineId) {
+    if (storylineId !== QUIZ_STORYLINE_ID) return sections;
+
+    const sourceSections = Array.isArray(sections) ? sections : [];
+    const normalized = [];
+    const usedIndexes = new Set();
+
+    const findByLabel = (label) =>
+        sourceSections.findIndex((section) => getLocalizedText(section && section.label, 'en') === label);
+    const pickSection = (label, fallbackIndex, fallbackFactory) => {
+        let index = findByLabel(label);
+        if (index < 0) {
+            index = sourceSections.findIndex((_, candidateIndex) => !usedIndexes.has(candidateIndex));
+        }
+        if (index < 0) index = fallbackIndex;
+        if (index >= 0 && sourceSections[index]) {
+            usedIndexes.add(index);
+            return sourceSections[index];
+        }
+        return fallbackFactory();
+    };
+
+    const title = localizedPair(ev.title);
+    const achievement = ev.achievement || {};
+    const method = localizedPair(achievement.method);
+    const demo = localizedPair(achievement.demo);
+    const artifact = localizedPair(achievement.artifact);
+    const description = localizedPair(ev.description);
+
+    const templates = {
+        'Historical Background': {
+            label: { en: 'Historical Background', zh: '历史背景' },
+            fallback: () => ({
+                label: { en: 'Historical Background', zh: '历史背景' },
+                html: description
+            }),
+            extra: {
+                en: `This context helps viewers place ${title.en || 'this achievement'} in the technical problems and research priorities of its time.`,
+                zh: `这段背景帮助观众把${title.zh || '这项成就'}放回当时的技术问题和研究重点中理解。`
+            }
+        },
+        'Core Idea': {
+            label: { en: 'Core Idea', zh: '核心思想' },
+            fallback: () => ({
+                label: { en: 'Core Idea', zh: '核心思想' },
+                html: {
+                    en: demo.en || method.en || artifact.en || description.en,
+                    zh: demo.zh || method.zh || artifact.zh || description.zh
+                }
+            }),
+            extra: {
+                en: `The key mechanism is ${method.en || artifact.en || demo.en || 'the design described in the source material'}, which links the source material to the visible demo behavior.`,
+                zh: `关键机制是${method.zh || artifact.zh || demo.zh || '来源材料中描述的设计'}，它把资料线索与可见的演示行为连接起来。`
+            }
+        },
+        'Long-Term Legacy': {
+            label: { en: 'Long-Term Legacy', zh: '长期影响' },
+            fallback: () => ({
+                label: { en: 'Long-Term Legacy', zh: '长期影响' },
+                html: {
+                    en: `Experts generally treat ${title.en || 'this achievement'} as an important AI milestone.`,
+                    zh: `专家通常把${title.zh || '这项成就'}视为重要 AI 里程碑。`
+                }
+            }),
+            extra: {
+                en: `Its long-term legacy is the vocabulary, benchmark, or system pattern that later AI work reused, compared against, or extended.`,
+                zh: `它的长期影响在于形成了后续 AI 工作复用、比较或扩展的技术词汇、基准或系统模式。`
+            }
+        }
+    };
+
+    for (const [label, config] of Object.entries(templates)) {
+        const section = pickSection(label, -1, config.fallback);
+        const html = localizedPair(section.html || section.text || '');
+        normalized.push({
+            label: config.label,
+            html: {
+                en: ensureTwoSentences(html.en, config.extra.en, 'en'),
+                zh: ensureTwoSentences(html.zh, config.extra.zh, 'zh')
+            }
+        });
+    }
+
+    return normalized;
+}
+
+function ensureTwoSentences(value, extraSentence, locale) {
+    const text = String(value || '').trim();
+    const extra = String(extraSentence || '').trim();
+    if (!text) return extra;
+    if (countTextSentences(text, locale) >= 2) return text;
+    if (/<\/p>\s*$/i.test(text)) {
+        return `${text}<p>${extra}</p>`;
+    }
+    return `${text} ${extra}`;
+}
+
 function mapLocalizedText(value, transform) {
     if (!isLocalizedText(value)) return transform(String(value || ''));
     const result = {};
@@ -397,10 +531,17 @@ function selectCuratedQuote(key, ev) {
           }
         : candidateQuote || getLocalizedText(eventQuote);
 
+    const formattedAttribution = formatQuoteAttribution(effectiveMeta);
+
     return {
         text: quoteText,
-        attribution: formatQuoteAttribution(effectiveMeta),
-        meta: effectiveMeta
+        attribution: ZH_QUOTE_ATTRIBUTIONS[key]
+            ? {
+                  en: getLocalizedText(formattedAttribution, 'en'),
+                  zh: ZH_QUOTE_ATTRIBUTIONS[key],
+              }
+            : formattedAttribution,
+        meta: effectiveMeta,
     };
 }
 
@@ -472,7 +613,7 @@ function validateAvatarAssets(items) {
                 missing.push({
                     avatar,
                     milestoneId: milestone.id,
-                    figureName: figure.name || '未知人物'
+                    figureName: getLocalizedText(figure.name) || '未知人物'
                 });
             }
         }
