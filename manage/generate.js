@@ -68,6 +68,99 @@ const ZH_QUOTE_ATTRIBUTIONS = {
   '2024-ai-scientist': '《AI 科学家》，克里斯·卢等',
 };
 
+const GAMING_BRANCH_EVOLUTION_MODULES = {
+    '1951-strachey-draughts': {
+        enName: "Strachey's draughts",
+        zhName: '斯特雷奇跳棋',
+        poster: 'resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg',
+        description: {
+            en: 'Fast draughts-board evolution slot from legal move generation into an evaluated choice.',
+            zh: '从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。'
+        }
+    },
+    '1988-td-update': {
+        enName: 'TD-Gammon trajectory',
+        zhName: 'TD-Gammon 轨迹',
+        poster: 'resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg',
+        description: {
+            en: 'Fast board-trajectory slot for showing value estimates changing across delayed rewards.',
+            zh: '用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。'
+        }
+    },
+    '1994-chinook': {
+        enName: 'Chinook',
+        zhName: 'Chinook',
+        poster: 'resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg',
+        description: {
+            en: 'Fast checkers evolution slot connecting opening search to solved endgame-table evidence.',
+            zh: '连接开局搜索与已求解残局表证据的跳棋快速演化槽位。'
+        }
+    },
+    '1997-deep-blue': {
+        enName: 'Deep Blue',
+        zhName: '深蓝',
+        poster: 'resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg',
+        description: {
+            en: 'Fast chess-position evolution slot from opening choices into a search-critical phase.',
+            zh: '从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。'
+        }
+    },
+    '2013-dqn': {
+        enName: 'DQN',
+        zhName: 'DQN',
+        poster: 'resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg',
+        description: {
+            en: 'Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.',
+            zh: 'Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。'
+        }
+    },
+    '2016-alphago': {
+        enName: 'AlphaGo',
+        zhName: 'AlphaGo',
+        poster: 'research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg',
+        description: {
+            en: 'SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.',
+            zh: '面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。'
+        }
+    },
+    '2017-alphazero': {
+        enName: 'AlphaZero',
+        zhName: 'AlphaZero',
+        poster: 'resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg',
+        description: {
+            en: 'Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.',
+            zh: '面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。'
+        }
+    },
+    '2017-libratus': {
+        enName: 'Libratus',
+        zhName: 'Libratus',
+        poster: 'resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg',
+        description: {
+            en: 'Fast poker-hand evolution slot from private cards to subgame refinement.',
+            zh: '从暗牌局面推进到子局细化的扑克手牌快速演化槽位。'
+        }
+    },
+    '2019-pluribus': {
+        enName: 'Pluribus',
+        zhName: 'Pluribus',
+        poster: 'resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg',
+        description: {
+            en: 'Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.',
+            zh: '展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。'
+        }
+    },
+    '2019-muzero': {
+        enName: 'MuZero',
+        zhName: 'MuZero',
+        poster: 'resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg',
+        description: {
+            en: 'Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.',
+            zh: '面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。'
+        }
+    }
+};
+
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
 
 /** 读取 resources/videos/{key}.json，返回 candidate_videos 数组；文件不存在返回 null */
@@ -229,6 +322,9 @@ function appendMilestonesFromGroup(group, groupKind) {
         if (ev.analysis) milestone.analysis = ev.analysis;
         if (ev.papers) milestone.papers = ev.papers;
         if (ev.achievement) milestone.achievement = ev.achievement;
+        if (groupKind === 'branch' && group.id === 'gaming-ai') {
+            applyGamingBranchEnhancements(milestone, key);
+        }
         if (quizzes.length > 0) {
             milestone.quiz = quizzes[0];
             milestone.quizzes = quizzes;
@@ -242,6 +338,72 @@ categories.forEach((cat) => appendMilestonesFromGroup(cat, 'category'));
 branches.forEach((branch) => appendMilestonesFromGroup(branch, 'branch'));
 
 // ─── 辅助函数 ────────────────────────────────────────────────────────────────
+
+function gameEvolutionVideo(key, options = {}) {
+    const enName = options.enName || key;
+    const zhName = options.zhName || enName;
+    return {
+        type: 'gameEvolutionVideo',
+        site: {
+            en: 'Game evolution clip',
+            zh: '棋局演化短片'
+        },
+        title: options.title || {
+            en: `${enName} game evolution`,
+            zh: `${zhName} 棋局演化`
+        },
+        description: options.description || {
+            en: 'Fast playback of game states from the opening into a key phase.',
+            zh: '从开局快速推进到关键阶段的棋局状态播放。'
+        },
+        url: options.url || `resources/videos/game-evolution/${key}.mp4`,
+        fallbackUrl: options.fallbackUrl || 'resources/videos/game-evolution/sample-go-game.gif',
+        poster: options.poster || '',
+        sourceSgf: options.sourceSgf || 'examples/sgf/sample-go-game.sgf',
+        generator: 'scripts/sgf_to_video.py',
+        duration: {
+            en: 'about 1 min',
+            zh: '约 1 分钟'
+        },
+        fps: '30',
+        license: {
+            en: 'Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.',
+            zh: '由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。'
+        },
+        usage: {
+            en: 'Playable game-state evolution module',
+            zh: '可播放的棋局状态演化模块'
+        },
+        action: {
+            en: 'Play evolution clip',
+            zh: '播放演化短片'
+        }
+    };
+}
+
+function cloneAchievement(achievement) {
+    if (!achievement || typeof achievement !== 'object') return achievement;
+    return {
+        ...achievement,
+        visualModules: Array.isArray(achievement.visualModules)
+            ? achievement.visualModules.map((module) => ({ ...module }))
+            : []
+    };
+}
+
+function applyGamingBranchEnhancements(milestone, key) {
+    const options = GAMING_BRANCH_EVOLUTION_MODULES[key];
+    if (!options || !milestone.achievement) return;
+
+    const achievement = cloneAchievement(milestone.achievement);
+    const visualModules = Array.isArray(achievement.visualModules) ? achievement.visualModules : [];
+    const hasGameEvolution = visualModules.some((module) => module && module.type === 'gameEvolutionVideo');
+    if (!hasGameEvolution) {
+        visualModules.push(gameEvolutionVideo(key, options));
+    }
+    achievement.visualModules = visualModules;
+    milestone.achievement = achievement;
+}
 
 /** 头像注册表允许缺失，这样生成脚本在资源未准备齐时也不会直接报错 */
 function loadAvatarRegistry() {
