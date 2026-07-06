@@ -23,6 +23,7 @@ const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
     backupFile,
+    countTextSentences,
     deriveEmbedUrl,
     detectVideoSource,
     formatQuoteAttribution,
@@ -176,9 +177,13 @@ for (const cat of categories) {
             }
         }
 
-        const commentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
         const storyline = ev.storyline || cat.storyline || null;
         const storylineId = typeof storyline === 'string' ? storyline : (storyline && storyline.id) || '';
+        const commentarySections = normalizeCommentarySections(
+            ev.commentarySections || buildCommentarySectionsOverride(key),
+            ev,
+            storylineId
+        );
         const quizzes = storylineId === QUIZ_STORYLINE_ID ? selectQuizzes(key, ev) : [];
         const milestone = {
             id: `${MILESTONE_ID_PREFIX}${key}`,
@@ -379,6 +384,110 @@ function buildCommentarySectionsOverride(key) {
             };
         })
         .filter((section) => section.label.zh && section.html.zh);
+}
+
+function localizedPair(value) {
+    return {
+        en: getLocalizedText(value, 'en'),
+        zh: getLocalizedText(value, 'zh')
+    };
+}
+
+function normalizeCommentarySections(sections, ev, storylineId) {
+    if (storylineId !== QUIZ_STORYLINE_ID) return sections;
+
+    const sourceSections = Array.isArray(sections) ? sections : [];
+    const normalized = [];
+    const usedIndexes = new Set();
+
+    const findByLabel = (label) =>
+        sourceSections.findIndex((section) => getLocalizedText(section && section.label, 'en') === label);
+    const pickSection = (label, fallbackIndex, fallbackFactory) => {
+        let index = findByLabel(label);
+        if (index < 0) {
+            index = sourceSections.findIndex((_, candidateIndex) => !usedIndexes.has(candidateIndex));
+        }
+        if (index < 0) index = fallbackIndex;
+        if (index >= 0 && sourceSections[index]) {
+            usedIndexes.add(index);
+            return sourceSections[index];
+        }
+        return fallbackFactory();
+    };
+
+    const title = localizedPair(ev.title);
+    const achievement = ev.achievement || {};
+    const method = localizedPair(achievement.method);
+    const demo = localizedPair(achievement.demo);
+    const artifact = localizedPair(achievement.artifact);
+    const description = localizedPair(ev.description);
+
+    const templates = {
+        'Historical Background': {
+            label: { en: 'Historical Background', zh: '历史背景' },
+            fallback: () => ({
+                label: { en: 'Historical Background', zh: '历史背景' },
+                html: description
+            }),
+            extra: {
+                en: `This context helps viewers place ${title.en || 'this achievement'} in the technical problems and research priorities of its time.`,
+                zh: `这段背景帮助观众把${title.zh || '这项成就'}放回当时的技术问题和研究重点中理解。`
+            }
+        },
+        'Core Idea': {
+            label: { en: 'Core Idea', zh: '核心思想' },
+            fallback: () => ({
+                label: { en: 'Core Idea', zh: '核心思想' },
+                html: {
+                    en: demo.en || method.en || artifact.en || description.en,
+                    zh: demo.zh || method.zh || artifact.zh || description.zh
+                }
+            }),
+            extra: {
+                en: `The key mechanism is ${method.en || artifact.en || demo.en || 'the design described in the source material'}, which links the source material to the visible demo behavior.`,
+                zh: `关键机制是${method.zh || artifact.zh || demo.zh || '来源材料中描述的设计'}，它把资料线索与可见的演示行为连接起来。`
+            }
+        },
+        'Long-Term Legacy': {
+            label: { en: 'Long-Term Legacy', zh: '长期影响' },
+            fallback: () => ({
+                label: { en: 'Long-Term Legacy', zh: '长期影响' },
+                html: {
+                    en: `Experts generally treat ${title.en || 'this achievement'} as an important AI milestone.`,
+                    zh: `专家通常把${title.zh || '这项成就'}视为重要 AI 里程碑。`
+                }
+            }),
+            extra: {
+                en: `Its long-term legacy is the vocabulary, benchmark, or system pattern that later AI work reused, compared against, or extended.`,
+                zh: `它的长期影响在于形成了后续 AI 工作复用、比较或扩展的技术词汇、基准或系统模式。`
+            }
+        }
+    };
+
+    for (const [label, config] of Object.entries(templates)) {
+        const section = pickSection(label, -1, config.fallback);
+        const html = localizedPair(section.html || section.text || '');
+        normalized.push({
+            label: config.label,
+            html: {
+                en: ensureTwoSentences(html.en, config.extra.en, 'en'),
+                zh: ensureTwoSentences(html.zh, config.extra.zh, 'zh')
+            }
+        });
+    }
+
+    return normalized;
+}
+
+function ensureTwoSentences(value, extraSentence, locale) {
+    const text = String(value || '').trim();
+    const extra = String(extraSentence || '').trim();
+    if (!text) return extra;
+    if (countTextSentences(text, locale) >= 2) return text;
+    if (/<\/p>\s*$/i.test(text)) {
+        return `${text}<p>${extra}</p>`;
+    }
+    return `${text} ${extra}`;
 }
 
 function mapLocalizedText(value, transform) {

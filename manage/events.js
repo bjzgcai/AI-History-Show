@@ -11666,8 +11666,8 @@ module.exports = {
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
