@@ -3,6 +3,7 @@
 
 /* eslint-disable */
 const ai100ExtraEvents = require('./ai100-extra-events.js');
+const gamingExtraEvents = require('./gaming-extra-events.js');
 
 function gameEvolutionVideo(key, options = {}) {
   const enName = options.enName || key;
@@ -2800,6 +2801,10 @@ module.exports = {
       "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
       "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
     },
+    "quoteLabel": {
+      "en": "Paper excerpt",
+      "zh": "论文摘录"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
@@ -2844,22 +2849,22 @@ module.exports = {
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
-          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "en": "Go had long resisted brute-force AI because its state space was enormous and expert play depended on pattern intuition. AlphaGo made the problem tractable by combining learned intuition with search, turning Go into a public demonstration of modern AI strategy.",
+          "zh": "围棋长期难以被蛮力 AI 攻克，因为状态空间巨大，高手对弈又依赖模式直觉。AlphaGo 通过把学习到的直觉与搜索结合起来，使这个问题变得可处理，并让围棋成为现代 AI 战略能力的公开展示。"
         }
       },
       {
         "label": {
-          "en": "Blog / API Materials",
-          "zh": "博客 / API 材料"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
-          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
-          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce dependence on expert game data.",
+          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -10586,6 +10591,10 @@ module.exports = {
       "en": "playing Atari with deep reinforcement learning",
       "zh": "用深度强化学习玩 Atari"
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Playing Atari with Deep Reinforcement Learning",
@@ -10600,6 +10609,20 @@ module.exports = {
     "quotePage": {
       "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
       "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
+    },
+    "analysis": {
+      "what": {
+        "en": "DQN showed that one deep reinforcement learning agent could learn control policies directly from Atari pixels across multiple games.",
+        "zh": "DQN 证明一个深度强化学习智能体可以直接从 Atari 像素中学习多款游戏的控制策略。"
+      },
+      "how": {
+        "en": "It combined Q-learning with convolutional networks, experience replay and a target network to stabilize value learning.",
+        "zh": "它把 Q-learning 与卷积网络、经验回放和目标网络结合起来，以稳定价值学习。"
+      },
+      "why": {
+        "en": "It worked where earlier methods struggled because perception and control were trained together from replayed experience.",
+        "zh": "它能突破早期方法的瓶颈，是因为感知和控制可以从回放经验中联合训练。"
+      }
     },
     "commentarySections": [
       {
@@ -11588,6 +11611,10 @@ module.exports = {
       "en": "Specialized chess search hardware",
       "zh": "专用国际象棋搜索硬件"
     },
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Deep Blue journal article",
@@ -11646,8 +11673,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。"
         }
       },
       {
@@ -11790,6 +11817,17 @@ module.exports = {
         })
       ],
       "sources": [
+        {
+          "type": {
+            "en": "Paper",
+            "zh": "论文"
+          },
+          "label": {
+            "en": "Deep Blue journal article",
+            "zh": "深蓝期刊论文"
+          },
+          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
+        },
         {
           "type": {
             "en": "Profile",
@@ -13809,6 +13847,10 @@ module.exports = {
       "en": "Bootstrapped value prediction",
       "zh": "自举式价值预测"
     },
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Learning to predict by temporal differences",
@@ -13823,6 +13865,20 @@ module.exports = {
     "quotePage": {
       "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
       "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
+    },
+    "analysis": {
+      "what": {
+        "en": "Temporal-difference learning made it possible to update value predictions before a full game or episode had finished.",
+        "zh": "时序差分学习使智能体可以在完整对局或回合结束前更新价值预测。"
+      },
+      "how": {
+        "en": "It bootstraps from the next reward and the next prediction, nudging the current value estimate toward a one-step target.",
+        "zh": "它根据下一步奖励和下一步预测自举，把当前价值估计推向一步目标。"
+      },
+      "why": {
+        "en": "It succeeded because delayed rewards no longer had to wait until the final outcome, a key idea for later game-learning agents.",
+        "zh": "它成功的原因在于延迟奖励不必等到最终结果才能产生学习信号，这成为后续游戏学习智能体的关键思想。"
+      }
     },
     "commentarySections": [
       {
@@ -15159,6 +15215,10 @@ module.exports = {
       "en": "Non-numerical programs could play",
       "zh": "非数值程序也可以对弈"
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Logical or non-mathematical programmes",
@@ -15173,6 +15233,20 @@ module.exports = {
     "quotePage": {
       "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
       "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
+    },
+    "analysis": {
+      "what": {
+        "en": "Strachey's draughts program showed that stored-program computers could represent a board game, generate legal moves and choose actions.",
+        "zh": "斯特雷奇的跳棋程序证明，存储程序计算机可以表示棋盘游戏、生成合法走法并选择行动。"
+      },
+      "how": {
+        "en": "It encoded board states and move rules, then used simple evaluation to compare candidate moves on early British hardware.",
+        "zh": "它编码棋盘状态和走法规则，再在早期英国计算机上用简单评估比较候选走法。"
+      },
+      "why": {
+        "en": "It mattered because it moved computing beyond arithmetic into symbolic choice, making games a practical testbed for search and evaluation.",
+        "zh": "它的重要性在于把计算从算术推进到符号选择，使游戏成为搜索和评估的实际试验场。"
+      }
     },
     "commentarySections": [
       {
@@ -15493,6 +15567,10 @@ module.exports = {
       "en": "Perfect play in checkers is a draw",
       "zh": "跳棋完美对弈结果为和棋"
     },
+    "quoteLabel": {
+      "en": "Result summary",
+      "zh": "结果摘要"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Checkers Is Solved",
@@ -15541,8 +15619,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。"
         }
       },
       {
@@ -15551,8 +15629,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。"
         }
       },
       {
@@ -18704,5 +18782,6 @@ module.exports = {
     "images": [],
     "videos": []
   },
+  ...gamingExtraEvents,
   ...ai100ExtraEvents
 };

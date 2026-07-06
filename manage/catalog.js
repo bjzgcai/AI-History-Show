@@ -208,12 +208,15 @@ module.exports = {
         "1951-strachey-draughts",
         "1988-td-update",
         "1994-chinook",
+        "1997-logistello",
         "1997-deep-blue",
+        "2000s-alphacat",
         "2013-dqn",
         "2016-alphago",
         "2017-alphazero",
         "2017-libratus",
         "2019-pluribus",
+        "2019-suphx",
         "2019-muzero"
       ]
     }
