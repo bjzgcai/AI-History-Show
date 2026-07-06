@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Pluribus blueprint and search explainer</title>
+  <desc id="desc">A local original diagram showing a six-player poker table connected to a compact blueprint strategy and local search.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="64" y="64" width="832" height="512" rx="24" fill="#18222f" stroke="#38bdf8" stroke-width="3"/>
+  <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Pluribus: multiplayer poker</text>
+  <text x="96" y="160" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="18">six seats, one compact blueprint, local refinement</text>
+  <g transform="translate(110 204)">
+    <ellipse cx="236" cy="160" rx="210" ry="118" fill="#065f46" stroke="#34d399" stroke-width="5"/>
+    <g fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+      <circle cx="236" cy="20" r="26" fill="#1d4ed8"/><text x="236" y="27">P1</text>
+      <circle cx="380" cy="70" r="26" fill="#b91c1c"/><text x="380" y="77">P2</text>
+      <circle cx="420" cy="202" r="26" fill="#7c3aed"/><text x="420" y="209">P3</text>
+      <circle cx="236" cy="300" r="26" fill="#ca8a04"/><text x="236" y="307">P4</text>
+      <circle cx="52" cy="202" r="26" fill="#0369a1"/><text x="52" y="209">P5</text>
+      <circle cx="92" cy="70" r="26" fill="#16a34a"/><text x="92" y="77">P6</text>
+    </g>
+    <rect x="180" y="126" width="112" height="68" rx="14" fill="#0f172a" stroke="#f8fafc" stroke-width="2"/>
+    <text x="236" y="153" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">blueprint</text>
+    <text x="236" y="178" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle">policy core</text>
+  </g>
+  <g transform="translate(650 232)" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <rect width="178" height="74" rx="18" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/>
+    <text x="89" y="45" fill="#f8fafc" font-size="21">limited lookahead</text>
+    <rect y="116" width="178" height="74" rx="18" fill="#0f172a" stroke="#f97316" stroke-width="3"/>
+    <text x="89" y="160" fill="#f8fafc" font-size="21">real-time refine</text>
+  </g>
+  <path d="M556 360H642" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M624 340L652 360L624 380" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="96" y="548" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: add opponents to see why local refinement replaces full-game solving.</text>
+</svg>

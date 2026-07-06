@@ -2762,3 +2762,129 @@ for (const [key, qEn, qZh, aEn, aZh, bEn, bZh, cEn, cZh, dEn, dZh, eEn, eZh] of 
     }
   ];
 }
+
+const extraGamingQuizItems = [
+  [
+    '1997-logistello',
+    'What made Logistello stronger than older Othello programs?',
+    'Logistello 为什么比早期黑白棋程序更强？',
+    'It learned pattern-based evaluation weights and combined them with selective search',
+    '它学习基于棋盘模式的评估权重，并与选择性搜索结合',
+    'It guessed moves randomly',
+    '它随机猜测走法',
+    'It ignored endgames',
+    '它忽略残局',
+    'It used only speech recognition',
+    '它只使用语音识别',
+    'Logistello paired learned evaluation features with fast search and endgame solving.',
+    'Logistello 将学习型评估特征、快速搜索和残局求解结合起来。'
+  ],
+  [
+    '2000s-alphacat',
+    'Why does Chinese chess need domain-specific engine design?',
+    '为什么中国象棋需要面向领域的引擎设计？',
+    'Its cannons, palace, river, and asymmetric pieces change legal moves and evaluation',
+    '炮、九宫、楚河汉界和非对称兵种会改变合法走法与局面评估',
+    'It has no board',
+    '它没有棋盘',
+    'All pieces move identically',
+    '所有棋子走法完全一样',
+    'Hidden cards decide every move',
+    '每一步都由暗牌决定',
+    'Xiangqi engines must encode the game geometry before search and evaluation can work well.',
+    '中国象棋引擎必须先编码游戏几何，搜索和评估才能有效工作。'
+  ],
+  [
+    '2017-alphazero',
+    'What did AlphaZero remove from the earlier game-AI pipeline?',
+    'AlphaZero 从早期游戏 AI 流程中去掉了什么依赖？',
+    'Human games, opening books, and handcrafted evaluation functions',
+    '人类棋谱、开局库和手工评估函数',
+    'The game rules themselves',
+    '游戏规则本身',
+    'All tree search',
+    '所有树搜索',
+    'Every neural network',
+    '所有神经网络',
+    'AlphaZero still used rules and search, but generated its own training data through self-play.',
+    'AlphaZero 仍使用规则和搜索，但通过自我博弈生成训练数据。'
+  ],
+  [
+    '2017-libratus',
+    'What challenge did Libratus address in poker?',
+    'Libratus 在扑克中主要解决了什么挑战？',
+    'Hidden information and equilibrium reasoning in heads-up no-limit Texas hold\'em',
+    '一对一无限注德州扑克中的隐藏信息与均衡推理',
+    'Recognizing handwritten digits',
+    '识别手写数字',
+    'Solving protein folding',
+    '求解蛋白质折叠',
+    'Sorting images by color',
+    '按颜色排序图像',
+    'Libratus treated poker as an imperfect-information strategy problem rather than a visible-board search task.',
+    'Libratus 把扑克看作不完全信息策略问题，而不是可见棋盘搜索任务。'
+  ],
+  [
+    '2019-pluribus',
+    'What did Pluribus add beyond Libratus?',
+    'Pluribus 相比 Libratus 主要扩展了什么？',
+    'It handled six-player no-limit Texas hold\'em',
+    '它处理六人无限注德州扑克',
+    'It removed all hidden information',
+    '它移除了所有隐藏信息',
+    'It played only checkers',
+    '它只下跳棋',
+    'It used no strategy blueprint',
+    '它不使用策略蓝图',
+    'Pluribus scaled imperfect-information poker AI from heads-up play to a multiplayer table.',
+    'Pluribus 将不完全信息扑克 AI 从一对一扩展到多人牌桌。'
+  ],
+  [
+    '2019-suphx',
+    'Why is Japanese mahjong difficult for AI?',
+    '为什么日本麻将对 AI 很难？',
+    'It combines hidden tiles, stochastic draws, four players, and complex scoring',
+    '它同时包含隐藏牌、随机摸牌、四名玩家和复杂计分',
+    'Every tile is public from the start',
+    '所有牌一开始都是公开的',
+    'There is only one legal move',
+    '每步只有一个合法行动',
+    'The game has no scoring',
+    '这个游戏没有计分',
+    'Suphx used deep reinforcement learning components to reason under hidden information and delayed rewards.',
+    'Suphx 使用深度强化学习组件，在隐藏信息和延迟奖励下进行推理。'
+  ],
+  [
+    '2019-muzero',
+    'What is the key difference between MuZero and AlphaZero?',
+    'MuZero 与 AlphaZero 的关键区别是什么？',
+    'MuZero learns a compact model for planning instead of being given exact environment dynamics',
+    'MuZero 学习用于规划的紧凑模型，而不是直接获得精确环境动力学',
+    'MuZero cannot use search',
+    'MuZero 不能使用搜索',
+    'MuZero only plays poker',
+    'MuZero 只玩扑克',
+    'MuZero requires human opening books',
+    'MuZero 需要人类开局库',
+    'MuZero predicts rewards, values, and policies in a latent model useful for search.',
+    'MuZero 在对搜索有用的潜在模型中预测奖励、价值和策略。'
+  ]
+];
+
+for (const [key, qEn, qZh, aEn, aZh, bEn, bZh, cEn, cZh, dEn, dZh, eEn, eZh] of extraGamingQuizItems) {
+  module.exports.events[key] = [
+    {
+      question: { en: qEn, zh: qZh },
+      options: [
+        { en: aEn, zh: aZh },
+        { en: bEn, zh: bZh },
+        { en: cEn, zh: cZh },
+        { en: dEn, zh: dZh }
+      ],
+      answerIndex: 0,
+      explanation: { en: eEn, zh: eZh },
+      source: { label: { en: 'Gaming AI branch notes', zh: 'AI 棋牌分支内容' } },
+      tags: ['gaming-ai', key]
+    }
+  ];
+}
