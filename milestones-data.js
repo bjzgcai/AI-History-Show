@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-06 08:31
+// 生成时间: 2026-07-06 08:52
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -48576,6 +48576,43 @@ const milestones = [
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Strachey's draughts game evolution",
+            "zh": "斯特雷奇跳棋 棋局演化"
+          },
+          "description": {
+            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
+            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1951-strachey-draughts.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -49014,6 +49051,43 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "TD-Gammon trajectory game evolution",
+            "zh": "TD-Gammon 轨迹 棋局演化"
+          },
+          "description": {
+            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
+            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
+          },
+          "url": "resources/videos/game-evolution/1988-td-update.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -49461,6 +49535,43 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Chinook game evolution",
+            "zh": "Chinook 棋局演化"
+          },
+          "description": {
+            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
+            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1994-chinook.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -50409,6 +50520,43 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Deep Blue game evolution",
+            "zh": "深蓝 棋局演化"
+          },
+          "description": {
+            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
+            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -51313,6 +51461,43 @@ const milestones = [
             "en": "Open preprint",
             "zh": "打开预印本"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "DQN game evolution",
+            "zh": "DQN 棋局演化"
+          },
+          "description": {
+            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
+            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
+          },
+          "url": "resources/videos/game-evolution/2013-dqn.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -51724,6 +51909,43 @@ const milestones = [
           "action": {
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "AlphaGo game evolution",
+            "zh": "AlphaGo 棋局演化"
+          },
+          "description": {
+            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
+            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
+          },
+          "url": "resources/videos/game-evolution/2016-alphago.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -52206,6 +52428,43 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "AlphaZero game evolution",
+            "zh": "AlphaZero 棋局演化"
+          },
+          "description": {
+            "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
+            "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2017-alphazero.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -52667,6 +52926,43 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Libratus game evolution",
+            "zh": "Libratus 棋局演化"
+          },
+          "description": {
+            "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
+            "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2017-libratus.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
+          }
         }
       ],
       "sources": [
@@ -53127,6 +53423,43 @@ const milestones = [
           "usage": {
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "Pluribus game evolution",
+            "zh": "Pluribus 棋局演化"
+          },
+          "description": {
+            "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
+            "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2019-pluribus.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
@@ -54090,6 +54423,43 @@ const milestones = [
           "usage": {
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
+          }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "site": {
+            "en": "Game evolution clip",
+            "zh": "棋局演化短片"
+          },
+          "title": {
+            "en": "MuZero game evolution",
+            "zh": "MuZero 棋局演化"
+          },
+          "description": {
+            "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
+            "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
+          },
+          "url": "resources/videos/game-evolution/2019-muzero.mp4",
+          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+          "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
+          "sourceSgf": "examples/sgf/sample-go-game.sgf",
+          "generator": "scripts/sgf_to_video.py",
+          "duration": {
+            "en": "about 1 min",
+            "zh": "约 1 分钟"
+          },
+          "fps": "30",
+          "license": {
+            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+          },
+          "usage": {
+            "en": "Playable game-state evolution module",
+            "zh": "可播放的棋局状态演化模块"
+          },
+          "action": {
+            "en": "Play evolution clip",
+            "zh": "播放演化短片"
           }
         }
       ],
