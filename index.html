@@ -4168,7 +4168,7 @@
                     <section class="archive-section">
                         <div class="archive-stage">
                             <article class="archive-card archive-card-left">
-                                <button class="archive-thumb" id="archiveThumbPrev" type="button" data-empty-label="暂无图片"></button>
+                                <button class="archive-thumb" id="archiveThumbPrev" type="button" data-empty-label-key="noImage"></button>
                                 <div class="archive-card-caption">
                                     <div class="archive-card-name" id="archivePrevCaption"></div>
                                     <div class="archive-card-role" id="archivePrevSubcaption"></div>
@@ -4176,7 +4176,7 @@
                             </article>
 
                             <article class="archive-card archive-card-main">
-                                <button class="archive-focus media-photo" id="archiveFocusButton" type="button" data-photo-index="0" data-empty-label="暂无档案">
+                                <button class="archive-focus media-photo" id="archiveFocusButton" type="button" data-photo-index="0" data-empty-label-key="noArchive">
                                     <img id="archiveFocus" alt="主档案照片">
                                 </button>
                                 <div class="archive-card-caption">
@@ -4186,7 +4186,7 @@
                             </article>
 
                             <article class="archive-card archive-card-right">
-                                <button class="archive-thumb" id="archiveThumbNext" type="button" data-empty-label="暂无图片"></button>
+                                <button class="archive-thumb" id="archiveThumbNext" type="button" data-empty-label-key="noImage"></button>
                                 <div class="archive-card-caption">
                                     <div class="archive-card-name" id="archiveNextCaption"></div>
                                     <div class="archive-card-role" id="archiveNextSubcaption"></div>
@@ -4206,7 +4206,7 @@
                     </div>
 
                     <div class="video-frame empty" id="videoFrame">
-                        <div class="video-play-tag" aria-hidden="true">播放</div>
+                        <div class="video-play-tag" aria-hidden="true" data-i18n="play">播放</div>
                         <div class="video-quote-mark" aria-hidden="true">
                             <span class="video-quote-square">m</span>
                             <span class="video-quote-lines">
@@ -4604,6 +4604,25 @@
                 .trim();
         }
 
+        function isWorkAttribution(value) {
+            if (window.MilestoneView && typeof window.MilestoneView.isWorkAttribution === 'function') {
+                return window.MilestoneView.isWorkAttribution(value);
+            }
+            const text = String(value || '').trim();
+            return text.startsWith('《') || /^<em\b[^>]*>/i.test(text);
+        }
+
+        function formatInlineTextHtml(value) {
+            const emTokens = [];
+            const tokenized = String(value || '').replace(/<em\b[^>]*>([\s\S]*?)<\/em>/gi, (_, content) => {
+                const token = `\u0000EM${emTokens.length}\u0000`;
+                emTokens.push(stripHtml(content));
+                return token;
+            });
+            return escapeHtml(stripHtml(tokenized))
+                .replace(/\u0000EM(\d+)\u0000/g, (_, index) => `<em>${escapeHtml(emTokens[Number(index)] || '')}</em>`);
+        }
+
         function tx(key) {
             return window.I18n && typeof window.I18n.t === 'function' ? window.I18n.t(key) : key;
         }
@@ -4712,6 +4731,9 @@
             });
             refs.prevBtn.setAttribute('aria-label', tx('previousPage'));
             refs.nextBtn.setAttribute('aria-label', tx('nextPage'));
+            if (refs.storylineModalClose) refs.storylineModalClose.setAttribute('aria-label', tx('close'));
+            if (refs.regionModalClose) refs.regionModalClose.setAttribute('aria-label', tx('close'));
+            if (refs.quizModalClose && !hasOpenQuizModal()) refs.quizModalClose.setAttribute('aria-label', tx('close'));
         }
 
         function getStorylineLabel(option) {
@@ -4898,7 +4920,7 @@
             const descriptionText = stripHtml(lx(safeMilestone.description) || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
-                const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? `${tx('source')}：` : `${tx('attribution')}：`;
+                const attributionPrefix = quoteAttribution && isWorkAttribution(quoteAttribution) ? `${tx('source')}：` : `${tx('attribution')}：`;
                 commentarySections.push({
                     label: tx('quoteExcerpt'),
                     html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
@@ -5036,7 +5058,7 @@
             if (vm.descriptionText) {
                 return `<p>${escapeHtml(vm.descriptionText)}</p>`;
             }
-            return '<p>暂无事件摘要</p>';
+            return `<p>${escapeHtml(tx('eventSummaryPending'))}</p>`;
         }
 
         function initials(name) {
@@ -5116,8 +5138,9 @@
         }
 
         function extractWorkTitleFromAttribution(attribution) {
-            const match = String(attribution || '').match(/《([^》]+)》/);
-            return match ? String(match[1] || '').trim() : '';
+            const match = String(attribution || '').match(/《([^》]+)》|<em\b[^>]*>([\s\S]*?)<\/em>/i);
+            if (!match) return '';
+            return match[1] ? String(match[1] || '').trim() : stripHtml(match[2]);
         }
 
         function getConfiguredImageMeta(vm, url) {
@@ -5328,6 +5351,7 @@
             const sections = sourceSections.slice(0, maxSections).map((section, index) => ({
                 label: section.label || defaultLabels[index] || tx('contentInterpretation'),
                 text: stripHtml(section.html || ''),
+                html: section.html || '',
                 link: section.link || null
             }));
 
@@ -5347,7 +5371,9 @@
         }
 
         function buildCommentaryBodyHtml(section) {
-            const text = escapeHtml(section.text || tx('noAdditionalInfo'));
+            const text = section.html
+                ? formatInlineTextHtml(section.html)
+                : escapeHtml(section.text || tx('noAdditionalInfo'));
             const rawLink = section && section.link ? section.link : null;
             const url = rawLink && rawLink.url ? String(rawLink.url).trim() : '';
             if (!url) return text;
@@ -9040,7 +9066,7 @@
         }
 
         if (!milestoneList.length) {
-            refs.stage.innerHTML = '<div class="empty-state">暂无里程碑数据</div>';
+            refs.stage.innerHTML = `<div class="empty-state">${escapeHtml(tx('noMilestones'))}</div>`;
         } else {
             renderStorylineSelect();
             if (refs.storylineSelect) {
