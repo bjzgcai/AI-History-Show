@@ -3,6 +3,49 @@
 
 /* eslint-disable */
 const ai100ExtraEvents = require('./ai100-extra-events.js');
+const gamingExtraEvents = require('./gaming-extra-events.js');
+
+function gameEvolutionVideo(key, options = {}) {
+  const enName = options.enName || key;
+  const zhName = options.zhName || enName;
+  return {
+    "type": "gameEvolutionVideo",
+    "site": {
+      "en": "Game evolution clip",
+      "zh": "棋局演化短片"
+    },
+    "title": options.title || {
+      "en": `${enName} game evolution`,
+      "zh": `${zhName} 棋局演化`
+    },
+    "description": options.description || {
+      "en": "Fast playback of game states from the opening into a key phase.",
+      "zh": "从开局快速推进到关键阶段的棋局状态播放。"
+    },
+    "url": options.url || `resources/videos/game-evolution/${key}.mp4`,
+    "fallbackUrl": options.fallbackUrl || "resources/videos/game-evolution/sample-go-game.gif",
+    "poster": options.poster || "",
+    "sourceSgf": options.sourceSgf || "examples/sgf/sample-go-game.sgf",
+    "generator": "scripts/sgf_to_video.py",
+    "duration": {
+      "en": "about 1 min",
+      "zh": "约 1 分钟"
+    },
+    "fps": "30",
+    "license": {
+      "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+      "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+    },
+    "usage": {
+      "en": "Playable game-state evolution module",
+      "zh": "可播放的棋局状态演化模块"
+    },
+    "action": {
+      "en": "Play evolution clip",
+      "zh": "播放演化短片"
+    }
+  };
+}
 
 module.exports = {
   "1956-dartmouth": {
@@ -17719,5 +17762,6 @@ module.exports = {
     },
     "videos": []
   },
+  ...gamingExtraEvents,
   ...ai100ExtraEvents
 };

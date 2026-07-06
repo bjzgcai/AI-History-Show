@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Martin Ester profile card</title>
+  <desc id="desc">A local profile card for Martin Ester and DBSCAN density clustering.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="46" y="46" width="868" height="548" rx="28" fill="#f8fafc"/>
+  <rect x="86" y="106" width="322" height="382" rx="30" fill="#e0f2fe"/>
+  <circle cx="246" cy="224" r="72" fill="#bae6fd"/>
+  <path d="M170 428c12-82 57-128 76-128s64 46 76 128" fill="#67e8f9"/>
+  <g fill="#0284c7">
+    <circle cx="138" cy="142" r="10"/>
+    <circle cx="158" cy="172" r="9"/>
+    <circle cx="332" cy="168" r="10"/>
+    <circle cx="350" cy="200" r="9"/>
+    <circle cx="130" cy="360" r="9"/>
+    <circle cx="348" cy="344" r="9"/>
+  </g>
+  <circle cx="146" cy="158" r="54" fill="none" stroke="#38bdf8" stroke-width="5" stroke-dasharray="9 9"/>
+  <circle cx="342" cy="186" r="54" fill="none" stroke="#38bdf8" stroke-width="5" stroke-dasharray="9 9"/>
+  <text x="448" y="156" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">Martin Ester</text>
+  <text x="448" y="214" fill="#0369a1" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">DBSCAN density clustering</text>
+  <text x="448" y="292" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="25">Data mining researcher</text>
+  <text x="448" y="338" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="25">Core points, reachability, noise handling</text>
+  <rect x="448" y="410" width="402" height="74" rx="20" fill="#e0f2fe"/>
+  <text x="474" y="456" fill="#075985" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">PROFILE CARD</text>
+  <text x="86" y="566" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="20">Local profile card, not a source photograph</text>
+</svg>

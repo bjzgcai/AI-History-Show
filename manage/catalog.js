@@ -192,5 +192,33 @@ module.exports = {
         "ai100-1983-actor-critic"
       ]
     }
+  ],
+  "branches": [
+    {
+      "id": "gaming-ai",
+      "name": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+      },
+      "subtitle": {
+        "en": "Game AI as a Testbed for Search, Learning and Planning",
+        "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+      },
+      "events": [
+        "1951-strachey-draughts",
+        "1988-td-update",
+        "1994-chinook",
+        "1997-logistello",
+        "1997-deep-blue",
+        "2000s-alphacat",
+        "2013-dqn",
+        "2016-alphago",
+        "2017-alphazero",
+        "2017-libratus",
+        "2019-pluribus",
+        "2019-suphx",
+        "2019-muzero"
+      ]
+    }
   ]
 };

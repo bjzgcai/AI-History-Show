@@ -110,6 +110,1584 @@
                 1fr;
         }
 
+        html.branch-timeline-active,
+        html.branch-timeline-active body {
+            height: 100%;
+            min-height: 100%;
+            overflow: hidden;
+            background: #f4f0e8;
+            color: #181716;
+        }
+
+        html.branch-timeline-active body::before {
+            display: none;
+        }
+
+        .stage-viewport.is-branch-timeline {
+            height: 100vh;
+            min-height: 100vh;
+            overflow: hidden;
+            background: #f4f0e8;
+        }
+
+        .single-stage.is-branch-timeline {
+            position: relative;
+            left: auto;
+            top: auto;
+            width: 100%;
+            height: 100vh;
+            min-height: 100vh;
+            transform: none;
+            display: block;
+            padding: 0;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 82% 14%, rgba(216, 112, 76, 0.12), transparent 22%),
+                #f4f0e8;
+            color: #181716;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+        }
+
+        .single-stage.is-branch-timeline .stage-grid,
+        .single-stage.is-branch-timeline .stage-footer {
+            display: none;
+        }
+
+        .single-stage.is-branch-timeline .stage-topbar {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 28px 32px 0;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            gap: 28px;
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup {
+            width: auto;
+            min-width: 0;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #201d1a;
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup::before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background:
+                linear-gradient(90deg, transparent 42%, #d86f4b 42% 58%, transparent 58%),
+                linear-gradient(0deg, transparent 42%, #d86f4b 42% 58%, transparent 58%),
+                linear-gradient(45deg, transparent 42%, #d86f4b 42% 58%, transparent 58%),
+                linear-gradient(-45deg, transparent 42%, #d86f4b 42% 58%, transparent 58%);
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup::after {
+            content: "AI History Show";
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .single-stage.is-branch-timeline .brand-image {
+            display: none;
+        }
+
+        .single-stage.is-branch-timeline .topbar-actions {
+            justify-self: end;
+            gap: 10px;
+        }
+
+        .single-stage.is-branch-timeline .storyline-trigger {
+            width: 330px;
+            border-color: rgba(32, 29, 26, 0.22);
+            background: rgba(255, 255, 255, 0.42);
+            color: #3d3934;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            text-transform: none;
+        }
+
+        .single-stage.is-branch-timeline .mode-chip-label {
+            color: #3c3834;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .single-stage.is-branch-timeline .language-toggle.topbar-language-toggle {
+            border-color: rgba(32, 29, 26, 0.28);
+            color: #3c3834;
+            background: rgba(255, 255, 255, 0.34);
+        }
+
+        .branch-timeline-page {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 142px 32px 104px;
+            color: #181716;
+            overflow: hidden;
+        }
+
+        .branch-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 330px;
+            gap: 64px;
+            align-items: center;
+            min-height: 360px;
+        }
+
+        .branch-hero-title {
+            max-width: 760px;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            color: #171514;
+            font-size: clamp(58px, 7vw, 104px);
+            font-weight: 600;
+            line-height: 0.98;
+            letter-spacing: -0.035em;
+        }
+
+        .branch-hero-title .accent {
+            color: #d87350;
+        }
+
+        .branch-hero-subtitle {
+            max-width: 620px;
+            margin-top: 28px;
+            color: #5d5650;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.75;
+        }
+
+        .branch-pixel-scene {
+            justify-self: center;
+            width: 340px;
+            height: 214px;
+            position: relative;
+            image-rendering: pixelated;
+            transform: scale(0.86);
+            transform-origin: center;
+        }
+
+        .branch-pixel-scene::before,
+        .branch-pixel-scene::after {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+
+        .branch-pixel-scene::before {
+            left: 28px;
+            top: 42px;
+            width: 264px;
+            height: 118px;
+            background:
+                linear-gradient(90deg, #d87350 0 24px, transparent 24px 48px, #d87350 48px 72px, transparent 72px 96px, #d87350 96px 120px, transparent 120px 144px, #d87350 144px 168px, transparent 168px 192px, #d87350 192px 216px, transparent 216px 240px, #d87350 240px 264px),
+                linear-gradient(#d87350, #d87350);
+            box-shadow:
+                -42px 72px 0 #d87350,
+                46px -22px 0 #d87350,
+                84px -22px 0 #bb6548,
+                168px -22px 0 #d87350,
+                206px -22px 0 #bb6548;
+        }
+
+        .branch-pixel-scene::after {
+            left: 86px;
+            top: 86px;
+            width: 120px;
+            height: 42px;
+            background:
+                linear-gradient(90deg, #171514 0 12px, transparent 12px 24px, #171514 24px 36px, transparent 36px 72px, #171514 72px 84px, transparent 84px 96px, #171514 96px 108px, transparent 108px),
+                linear-gradient(#171514, #171514);
+            clip-path: polygon(0 0, 34% 0, 34% 100%, 0 100%, 0 70%, 12% 70%, 12% 30%, 0 30%, 0 0, 66% 0, 100% 0, 100% 30%, 88% 30%, 88% 70%, 100% 70%, 100% 100%, 66% 100%, 66% 0);
+        }
+
+        .branch-order-link {
+            display: block;
+            width: max-content;
+            margin: 72px auto 26px;
+            color: #b96f57;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid currentColor;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 14px;
+            cursor: default;
+        }
+
+        .branch-timeline {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(var(--branch-count, 3), minmax(460px, 1fr));
+            gap: 28px;
+            padding: 44px 4px 42px;
+            overflow-x: auto;
+            overflow-y: visible;
+            scroll-snap-type: x proximity;
+            scrollbar-color: rgba(216, 115, 80, 0.56) rgba(112, 100, 88, 0.12);
+        }
+
+        .branch-timeline.is-wheel-scrolling,
+        .branch-timeline.is-drag-scrolling {
+            scroll-behavior: auto;
+            scroll-snap-type: none;
+        }
+
+        .branch-timeline.is-drag-scrolling {
+            cursor: grabbing;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .branch-timeline.is-drag-scrolling * {
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .branch-timeline::before {
+            content: "";
+            position: absolute;
+            top: 52px;
+            left: 8px;
+            right: 8px;
+            bottom: auto;
+            width: auto;
+            height: 1px;
+            background: rgba(112, 100, 88, 0.28);
+        }
+
+        .branch-event {
+            position: relative;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: auto auto auto;
+            align-items: start;
+            gap: 20px;
+            min-width: 0;
+            scroll-snap-align: start;
+        }
+
+        .branch-event-dot {
+            position: relative;
+            z-index: 2;
+            grid-column: 1;
+            justify-self: start;
+            margin-left: 20px;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d87350;
+            border-radius: 50%;
+            background: #f4f0e8;
+        }
+
+        .branch-event-content {
+            display: grid;
+            gap: 16px;
+            max-width: 520px;
+        }
+
+        .branch-event.is-left .branch-event-content {
+            grid-column: 1;
+            justify-self: stretch;
+            text-align: left;
+        }
+
+        .branch-event.is-right .branch-event-content {
+            grid-column: 1;
+            justify-self: stretch;
+            text-align: left;
+        }
+
+        .branch-event-visual {
+            position: relative;
+            grid-column: 1;
+            grid-row: auto;
+            width: 100%;
+            height: 150px;
+            min-height: 140px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+
+        .branch-event.is-left .branch-event-visual {
+            grid-column: 1;
+            justify-self: stretch;
+        }
+
+        .branch-event.is-right .branch-event-visual {
+            grid-column: 1;
+            justify-self: stretch;
+        }
+
+        .branch-event-visual img {
+            display: block;
+            width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+            mix-blend-mode: normal;
+            filter: saturate(1.08) contrast(1.08);
+        }
+
+        .branch-video-trigger {
+            appearance: none;
+            border: none;
+            padding: 0;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .branch-video-trigger:hover,
+        .branch-video-trigger:focus-visible {
+            outline: none;
+        }
+
+        .branch-video-trigger .branch-svg-illustration,
+        .branch-video-trigger img {
+            transition: transform 0.18s ease, filter 0.18s ease;
+        }
+
+        .branch-video-trigger:hover .branch-svg-illustration,
+        .branch-video-trigger:focus-visible .branch-svg-illustration,
+        .branch-video-trigger:hover img,
+        .branch-video-trigger:focus-visible img {
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+        }
+
+        .branch-game-record-trigger {
+            --record-offset: 0px;
+            position: absolute;
+            z-index: 5;
+            left: calc(50% + 104px);
+            top: calc(50% + var(--record-offset));
+            width: 82px;
+            height: 82px;
+            border: 1px solid rgba(216, 115, 80, 0.72);
+            border-radius: 50%;
+            background: rgba(244, 240, 232, 0.92);
+            box-shadow: 0 18px 34px rgba(23, 21, 20, 0.24), 0 0 0 8px rgba(216, 115, 80, 0.12);
+            display: grid;
+            place-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-50%) scale(0.84);
+            transition: opacity 0.16s ease, transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+        }
+
+        .branch-event.is-center .branch-game-record-trigger,
+        .branch-event.is-extra-record-visible .branch-game-record-trigger {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(-50%) scale(1);
+        }
+
+        .branch-game-record-trigger:hover,
+        .branch-game-record-trigger:focus-visible {
+            border-color: rgba(216, 115, 80, 0.96);
+            box-shadow: 0 22px 42px rgba(23, 21, 20, 0.3), 0 0 0 9px rgba(216, 115, 80, 0.18);
+            outline: none;
+        }
+
+        .branch-record-board {
+            position: relative;
+            width: 56px;
+            height: 56px;
+            border: 2px solid #171514;
+            border-radius: 5px;
+            background:
+                conic-gradient(from 90deg, rgba(23, 21, 20, 0.18) 90deg, transparent 0 180deg, rgba(23, 21, 20, 0.18) 0 270deg, transparent 0)
+                0 0 / 25% 25%,
+                #f0dcc2;
+            display: block;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
+        }
+
+        .branch-record-piece {
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: #171514;
+            box-shadow: 0 1px 3px rgba(23, 21, 20, 0.24);
+        }
+
+        .branch-record-piece.one {
+            left: 15px;
+            top: 14px;
+        }
+
+        .branch-record-piece.two {
+            right: 13px;
+            top: 23px;
+            background: #f7f0e4;
+            box-shadow: inset 0 0 0 2px #171514;
+        }
+
+        .branch-record-piece.three {
+            left: 28px;
+            bottom: 12px;
+            background: #d87350;
+        }
+
+        .branch-record-play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 13px solid #171514;
+            filter: drop-shadow(0 1px 3px rgba(244, 240, 232, 0.62));
+            transform: translate(-35%, -50%);
+        }
+
+        .branch-game-record-trigger.is-go .branch-record-board {
+            background:
+                linear-gradient(rgba(23, 21, 20, 0.22) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(23, 21, 20, 0.22) 1px, transparent 1px),
+                #f0dcc2;
+            background-size: calc(100% / 6) calc(100% / 6);
+        }
+
+        .branch-game-record-trigger.is-cards .branch-record-board,
+        .branch-game-record-trigger.is-tiles .branch-record-board {
+            border-radius: 999px;
+            background:
+                radial-gradient(circle at 32% 48%, #f7f0e4 0 6px, transparent 7px),
+                radial-gradient(circle at 62% 48%, #d87350 0 6px, transparent 7px),
+                rgba(23, 21, 20, 0.9);
+        }
+
+        .branch-event.is-visual-first .branch-event-visual {
+            grid-row: 2;
+        }
+
+        .branch-event.is-visual-first .branch-event-content {
+            grid-row: 3;
+        }
+
+        .branch-event.is-content-first .branch-event-visual {
+            grid-row: 2;
+        }
+
+        .branch-event.is-content-first .branch-event-content {
+            grid-row: 3;
+        }
+
+        .branch-event-visual.is-photo img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            mix-blend-mode: normal;
+            filter: sepia(0.2) saturate(0.85);
+        }
+
+        .branch-illustration {
+            position: relative;
+            width: 360px;
+            height: 260px;
+            color: #171514;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .branch-illustration::before {
+            content: "";
+            position: absolute;
+            inset: 24px 12px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(216, 115, 80, 0.22), transparent 62%);
+            filter: blur(10px);
+        }
+
+        .branch-svg-illustration {
+            display: block;
+        }
+
+        .branch-visual-svg {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .branch-visual-svg .svg-shell {
+            fill: rgba(244, 239, 229, 0.08);
+            stroke: rgba(216, 115, 80, 0.46);
+            stroke-width: 2;
+        }
+
+        .branch-visual-svg .svg-panel {
+            fill: rgba(244, 239, 229, 0.1);
+            stroke: rgba(216, 115, 80, 0.36);
+            stroke-width: 2;
+        }
+
+        .branch-visual-svg .svg-panel-strong {
+            fill: rgba(216, 115, 80, 0.18);
+            stroke: rgba(216, 115, 80, 0.7);
+            stroke-width: 2.5;
+        }
+
+        .branch-visual-svg .svg-line {
+            fill: none;
+            stroke: rgba(216, 115, 80, 0.74);
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .branch-visual-svg .svg-line-soft {
+            fill: none;
+            stroke: rgba(244, 240, 232, 0.38);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .branch-visual-svg .svg-dot {
+            fill: #d87350;
+        }
+
+        .branch-visual-svg .svg-dot-dark {
+            fill: #171514;
+        }
+
+        .branch-visual-svg .svg-dot-light {
+            fill: #f4f0e8;
+            stroke: #171514;
+            stroke-width: 3;
+        }
+
+        .branch-visual-svg .svg-cell-light {
+            fill: rgba(244, 240, 232, 0.32);
+        }
+
+        .branch-visual-svg .svg-cell-dark {
+            fill: rgba(216, 115, 80, 0.72);
+        }
+
+        .branch-visual-svg .svg-label {
+            fill: #171514;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .branch-visual-svg .svg-label-soft {
+            fill: rgba(23, 21, 20, 0.66);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+        }
+
+        .branch-visual-svg .svg-number {
+            fill: #171514;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .branch-checker-board {
+            position: absolute;
+            left: 76px;
+            top: 30px;
+            width: 204px;
+            height: 204px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            border: 6px solid #d87350;
+            background: #eadcca;
+            transform: rotate(-7deg);
+            box-shadow: 18px 20px 0 rgba(216, 115, 80, 0.18);
+        }
+
+        .branch-checker-cell {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .branch-checker-cell.dark {
+            background: #d87350;
+        }
+
+        .branch-disc {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #171514;
+            box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.12);
+        }
+
+        .branch-disc.one {
+            left: 116px;
+            top: 75px;
+        }
+
+        .branch-disc.two {
+            left: 194px;
+            top: 125px;
+            background: #f4f0e8;
+            border: 4px solid #171514;
+        }
+
+        .branch-disc.three {
+            left: 154px;
+            top: 176px;
+            background: #d87350;
+        }
+
+        .branch-tree-rail {
+            position: absolute;
+            left: 58px;
+            top: 38px;
+            width: 250px;
+            height: 170px;
+        }
+
+        .branch-tree-rail::before,
+        .branch-tree-rail::after {
+            content: "";
+            position: absolute;
+            left: 70px;
+            width: 150px;
+            height: 2px;
+            background: #d87350;
+            transform-origin: left center;
+        }
+
+        .branch-tree-rail::before {
+            top: 70px;
+            transform: rotate(-24deg);
+        }
+
+        .branch-tree-rail::after {
+            top: 72px;
+            transform: rotate(24deg);
+        }
+
+        .branch-node {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #d87350;
+            color: #171514;
+            font-size: 22px;
+            font-weight: 900;
+            box-shadow: 0 12px 0 rgba(216, 115, 80, 0.18);
+        }
+
+        .branch-node.root {
+            left: 40px;
+            top: 52px;
+        }
+
+        .branch-node.a {
+            left: 184px;
+            top: 0;
+            background: #171514;
+            color: #f4f0e8;
+        }
+
+        .branch-node.b {
+            left: 184px;
+            top: 112px;
+        }
+
+        .branch-prune {
+            position: absolute;
+            right: 36px;
+            top: 74px;
+            width: 78px;
+            height: 78px;
+            border: 8px solid #d87350;
+            border-radius: 50%;
+        }
+
+        .branch-prune::before {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: -12px;
+            width: 8px;
+            height: 94px;
+            background: #d87350;
+            transform: rotate(-45deg);
+        }
+
+        .branch-go-board {
+            position: absolute;
+            left: 60px;
+            top: 26px;
+            width: 228px;
+            height: 228px;
+            border: 6px solid #d87350;
+            border-radius: 4px;
+            background:
+                linear-gradient(rgba(23, 21, 20, 0.24) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(23, 21, 20, 0.24) 1px, transparent 1px),
+                #ecdac5;
+            background-size: calc(100% / 8) calc(100% / 8);
+            transform: rotate(4deg);
+            box-shadow: -20px 20px 0 rgba(216, 115, 80, 0.16);
+        }
+
+        .branch-go-stone {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background: #171514;
+        }
+
+        .branch-go-stone.white {
+            background: #f9f3e9;
+            border: 3px solid #171514;
+        }
+
+        .branch-go-stone.move {
+            background: #d87350;
+            box-shadow: 0 0 0 8px rgba(216, 115, 80, 0.22);
+        }
+
+        .branch-poker-table {
+            position: absolute;
+            left: 42px;
+            top: 50px;
+            width: 276px;
+            height: 158px;
+            border: 6px solid #d87350;
+            border-radius: 999px;
+            background:
+                radial-gradient(circle at 50% 50%, rgba(216, 115, 80, 0.2), transparent 42%),
+                rgba(23, 21, 20, 0.08);
+            transform: rotate(-3deg);
+            box-shadow: 18px 20px 0 rgba(216, 115, 80, 0.14);
+        }
+
+        .branch-playing-card {
+            position: absolute;
+            width: 54px;
+            height: 76px;
+            border: 4px solid #171514;
+            border-radius: 8px;
+            background: #f9f3e9;
+            color: #171514;
+            display: grid;
+            place-items: center;
+            font-size: 28px;
+            font-weight: 900;
+            transform: rotate(var(--card-tilt, -8deg));
+        }
+
+        .branch-playing-card.one {
+            left: 86px;
+            top: 36px;
+            --card-tilt: -10deg;
+        }
+
+        .branch-playing-card.two {
+            left: 132px;
+            top: 34px;
+            --card-tilt: 7deg;
+        }
+
+        .branch-playing-card.hidden {
+            right: 86px;
+            bottom: 36px;
+            background: repeating-linear-gradient(
+                45deg,
+                #171514 0 8px,
+                #d87350 8px 16px
+            );
+            color: transparent;
+            --card-tilt: 9deg;
+        }
+
+        .branch-poker-chip {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 5px solid #f4f0e8;
+            background:
+                linear-gradient(90deg, transparent 42%, #f4f0e8 42% 58%, transparent 58%),
+                linear-gradient(0deg, transparent 42%, #f4f0e8 42% 58%, transparent 58%),
+                #d87350;
+            box-shadow: 0 0 0 4px #d87350;
+        }
+
+        .branch-poker-chip.one {
+            left: 102px;
+            bottom: 46px;
+        }
+
+        .branch-poker-chip.two {
+            right: 112px;
+            top: 72px;
+        }
+
+        .branch-meta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #746b62;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .branch-event.is-right .branch-meta {
+            justify-content: flex-start;
+        }
+
+        .branch-chip {
+            border: 1px solid rgba(116, 107, 98, 0.38);
+            border-radius: 999px;
+            padding: 2px 10px 3px;
+            color: #8a8178;
+            background: rgba(255, 255, 255, 0.25);
+            font-weight: 500;
+        }
+
+        .branch-event-title {
+            color: #171514;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-size: clamp(28px, 3vw, 38px);
+            font-weight: 600;
+            line-height: 1.08;
+            letter-spacing: -0.02em;
+        }
+
+        .branch-event-summary,
+        .branch-analysis-item {
+            color: #3f3a35;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .branch-analysis {
+            display: grid;
+            gap: 8px;
+            margin-top: 2px;
+        }
+
+        .branch-analysis-item strong {
+            color: #c56b4b;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .branch-source-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 4px;
+        }
+
+        .branch-event.is-right .branch-source-row {
+            justify-content: flex-start;
+        }
+
+        .branch-source-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            border: 1px solid rgba(116, 107, 98, 0.28);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.46);
+            color: #2d2925;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 650;
+        }
+
+        .branch-source-link:hover,
+        .branch-source-link:focus-visible {
+            border-color: #d87350;
+            color: #a74f35;
+            outline: none;
+        }
+
+        .branch-elements {
+            display: grid;
+            gap: 12px;
+            margin-top: 2px;
+        }
+
+        .branch-element-group {
+            display: grid;
+            gap: 7px;
+        }
+
+        .branch-element-label {
+            color: #b96f57;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .branch-element-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .branch-element-item {
+            display: inline-flex;
+            max-width: 100%;
+            flex-direction: column;
+            gap: 2px;
+            border: 1px solid rgba(116, 107, 98, 0.24);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.36);
+            color: #2d2925;
+            padding: 7px 9px;
+            text-decoration: none;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .branch-element-item strong {
+            overflow: hidden;
+            color: inherit;
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1.25;
+            text-overflow: ellipsis;
+        }
+
+        .branch-element-item small {
+            color: #746b62;
+            font-size: 11px;
+            font-weight: 650;
+            line-height: 1.25;
+        }
+
+        a.branch-element-item:hover,
+        a.branch-element-item:focus-visible {
+            border-color: #d87350;
+            color: #a74f35;
+            outline: none;
+        }
+
+        @media (max-width: 900px) {
+            .single-stage.is-branch-timeline .stage-topbar {
+                grid-template-columns: 1fr;
+                padding: 22px 20px 0;
+            }
+
+            .single-stage.is-branch-timeline .topbar-actions {
+                justify-self: stretch;
+                align-items: stretch;
+            }
+
+            .single-stage.is-branch-timeline .storyline-trigger {
+                width: 100%;
+            }
+
+            .branch-timeline-page {
+                padding: 86px 20px 72px;
+            }
+
+            .branch-hero {
+                grid-template-columns: 1fr;
+                gap: 44px;
+                min-height: 0;
+            }
+
+            .branch-hero-title {
+                font-size: clamp(44px, 14vw, 68px);
+            }
+
+            .branch-pixel-scene {
+                width: 280px;
+                transform: scale(0.86);
+                transform-origin: center;
+            }
+
+            .branch-timeline {
+                grid-template-columns: none;
+                grid-auto-flow: column;
+                grid-auto-columns: minmax(280px, 82vw);
+                gap: 18px;
+                padding: 40px 2px 34px;
+            }
+
+            .branch-timeline::before {
+                top: 48px;
+                left: 8px;
+                right: 8px;
+            }
+
+            .branch-event {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 16px;
+                align-items: start;
+            }
+
+            .branch-event-dot {
+                grid-column: 1;
+                margin-top: 0;
+                margin-left: 18px;
+            }
+
+            .branch-event.is-left .branch-event-content,
+            .branch-event.is-right .branch-event-content {
+                grid-column: 1;
+                justify-self: stretch;
+                text-align: left;
+            }
+
+            .branch-event.is-left .branch-meta,
+            .branch-event.is-right .branch-meta,
+            .branch-event.is-left .branch-source-row,
+            .branch-event.is-right .branch-source-row,
+            .branch-event.is-left .branch-element-list,
+            .branch-event.is-right .branch-element-list {
+                justify-content: flex-start;
+            }
+
+            .branch-event-visual {
+                grid-column: 1 !important;
+                grid-row: auto;
+                justify-self: stretch !important;
+                margin-top: 0;
+            }
+
+            .branch-game-record-trigger {
+                left: auto;
+                right: 8px;
+                width: 68px;
+                height: 68px;
+            }
+
+            .branch-record-board {
+                width: 46px;
+                height: 46px;
+            }
+        }
+
+        html.branch-timeline-active,
+        html.branch-timeline-active body {
+            background: #000;
+            color: var(--text);
+        }
+
+        html.branch-timeline-active body::before {
+            display: block;
+        }
+
+        .stage-viewport.is-branch-timeline {
+            background: #000;
+        }
+
+        .single-stage.is-branch-timeline {
+            background:
+                radial-gradient(circle at 78% 16%, rgba(246, 137, 0, 0.16), transparent 24%),
+                radial-gradient(circle at 20% 10%, rgba(79, 4, 4, 0.34), transparent 30%),
+                #000;
+            color: var(--text);
+            font-family: var(--ui-font);
+        }
+
+        .single-stage.is-branch-timeline .stage-topbar {
+            max-width: 1680px;
+            padding: 24px 42px 0;
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup {
+            width: 431px;
+            color: var(--text);
+        }
+
+        .single-stage.is-branch-timeline .brand-lockup::before,
+        .single-stage.is-branch-timeline .brand-lockup::after {
+            display: none;
+        }
+
+        .single-stage.is-branch-timeline .brand-image {
+            display: block;
+            width: 431px;
+        }
+
+        .single-stage.is-branch-timeline .storyline-trigger {
+            border-color: rgba(244, 239, 229, 0.24);
+            background: rgba(0, 0, 0, 0.34);
+            color: rgba(244, 239, 229, 0.78);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+        }
+
+        .single-stage.is-branch-timeline .mode-chip-label {
+            color: rgba(244, 239, 229, 0.56);
+            font-size: 23px;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .single-stage.is-branch-timeline .language-toggle.topbar-language-toggle {
+            border-color: rgba(244, 239, 229, 0.34);
+            background: transparent;
+            color: rgba(244, 239, 229, 0.42);
+        }
+
+        .branch-timeline-page {
+            max-width: 1680px;
+            height: calc(100vh - 82px);
+            padding: 8px 42px 22px;
+            color: var(--text);
+            display: grid;
+            grid-template-rows: 86px minmax(0, 1fr);
+            align-content: stretch;
+        }
+
+        .branch-timeline-page[hidden] {
+            display: none !important;
+        }
+
+        .branch-hero {
+            display: flex;
+            grid-template-columns: 1fr;
+            gap: 0;
+            align-items: center;
+            min-height: 0;
+        }
+
+        .branch-hero-title {
+            max-width: none;
+            color: var(--text);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: clamp(34px, 3.5vw, 58px);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        .branch-hero-title .accent {
+            color: var(--accent);
+        }
+
+        .branch-hero-subtitle {
+            max-width: 740px;
+            margin-top: 12px;
+            color: var(--text-soft);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.45;
+        }
+
+        .branch-hero > .branch-pixel-scene {
+            display: none;
+        }
+
+        .branch-pixel-scene {
+            width: 292px;
+            height: 158px;
+            transform: none;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background:
+                linear-gradient(90deg, rgba(246, 137, 0, 0.2), transparent 1px),
+                linear-gradient(rgba(246, 137, 0, 0.16), transparent 1px),
+                rgba(255, 255, 255, 0.035);
+            background-size: 42px 42px;
+        }
+
+        .branch-pixel-scene::before {
+            left: 46px;
+            top: 48px;
+            width: 198px;
+            height: 62px;
+            border: 1px solid rgba(246, 137, 0, 0.58);
+            border-radius: 7px;
+            background:
+                radial-gradient(circle at 18% 50%, var(--accent) 0 8px, transparent 9px),
+                radial-gradient(circle at 50% 50%, rgba(244, 239, 229, 0.9) 0 6px, transparent 7px),
+                radial-gradient(circle at 82% 50%, var(--accent) 0 8px, transparent 9px),
+                rgba(0, 0, 0, 0.52);
+            box-shadow: 0 0 36px rgba(246, 137, 0, 0.18);
+        }
+
+        .branch-pixel-scene::after {
+            left: 72px;
+            top: 79px;
+            width: 148px;
+            height: 2px;
+            background: rgba(246, 137, 0, 0.72);
+            clip-path: none;
+        }
+
+        .branch-order-link {
+            display: none;
+        }
+
+        .branch-timeline {
+            grid-template-columns: repeat(var(--branch-count, 3), minmax(520px, 1fr));
+            gap: 24px;
+            min-height: 0;
+            height: 100%;
+            padding: 0 4px;
+            align-items: stretch;
+            overflow-y: hidden;
+            cursor: grab;
+            scroll-behavior: smooth;
+            overscroll-behavior-x: contain;
+            scrollbar-width: none;
+            touch-action: pan-y;
+        }
+
+        .branch-timeline::before {
+            display: none;
+        }
+
+        .branch-timeline::-webkit-scrollbar {
+            display: none;
+        }
+
+        .branch-event-dot {
+            display: none;
+        }
+
+        .branch-event {
+            gap: 12px;
+            height: 100%;
+            grid-template-rows: 176px minmax(0, 1fr);
+        }
+
+        .branch-event--2017-alphazero {
+            gap: 20px;
+        }
+
+        .branch-event--2017-alphazero .branch-illustration {
+            transform: translateY(-10px) scale(0.56);
+        }
+
+        .branch-event.is-visual-first .branch-event-visual,
+        .branch-event.is-content-first .branch-event-visual {
+            grid-row: 1;
+        }
+
+        .branch-event.is-visual-first .branch-event-content,
+        .branch-event.is-content-first .branch-event-content {
+            grid-row: 2;
+        }
+
+        .branch-event.is-content-first .branch-event-content {
+            grid-row: 2;
+        }
+
+        .branch-event.is-content-first .branch-event-visual {
+            grid-row: 1;
+        }
+
+        .branch-event-visual {
+            height: 176px;
+            min-height: 176px;
+            overflow: visible;
+        }
+
+        .branch-event-visual img {
+            max-height: 176px;
+        }
+
+        .branch-event-content {
+            max-width: 600px;
+            min-height: 0;
+            height: 100%;
+            max-height: none;
+            overflow: hidden;
+            align-content: start;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.064), rgba(255, 255, 255, 0.018)),
+                rgba(0, 0, 0, 0.58);
+            padding: 16px;
+            text-align: left;
+        }
+
+        .branch-event.is-left .branch-event-content,
+        .branch-event.is-right .branch-event-content {
+            text-align: left;
+        }
+
+        .branch-meta,
+        .branch-event.is-right .branch-meta {
+            justify-content: flex-start;
+            color: var(--text-muted);
+        }
+
+        .branch-chip {
+            border-color: rgba(246, 137, 0, 0.42);
+            background: rgba(246, 137, 0, 0.08);
+            color: var(--accent);
+            font-weight: 850;
+        }
+
+        .branch-event-title {
+            color: var(--text);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: clamp(21px, 1.75vw, 28px);
+            font-weight: 900;
+            line-height: 1.12;
+            letter-spacing: 0;
+        }
+
+        .branch-event-summary,
+        .branch-analysis-item {
+            color: var(--text-soft);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .branch-event-summary {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .branch-analysis {
+            display: none;
+        }
+
+        .branch-analysis-item strong {
+            color: var(--accent);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .branch-source-row,
+        .branch-event.is-right .branch-source-row {
+            justify-content: flex-start;
+        }
+
+        .branch-source-link {
+            border-color: rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(244, 239, 229, 0.84);
+            font-weight: 800;
+        }
+
+        .branch-source-link:hover,
+        .branch-source-link:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            color: var(--accent);
+        }
+
+        .branch-element-label {
+            color: var(--accent);
+        }
+
+        .branch-element-item {
+            border-color: rgba(244, 239, 229, 0.12);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(244, 239, 229, 0.88);
+            padding: 5px 8px;
+        }
+
+        .branch-element-item small {
+            color: var(--text-muted);
+        }
+
+        a.branch-element-item:hover,
+        a.branch-element-item:focus-visible {
+            border-color: rgba(246, 137, 0, 0.64);
+            color: var(--accent);
+        }
+
+        .branch-illustration {
+            color: var(--text);
+            transform: scale(0.62);
+            transform-origin: center;
+        }
+
+        .branch-illustration::before {
+            background: radial-gradient(circle, rgba(246, 137, 0, 0.16), transparent 62%);
+        }
+
+        .branch-visual-svg .svg-shell {
+            fill: rgba(244, 239, 229, 0.04);
+            stroke: rgba(246, 137, 0, 0.34);
+        }
+
+        .branch-visual-svg .svg-panel {
+            fill: rgba(244, 239, 229, 0.06);
+            stroke: rgba(246, 137, 0, 0.26);
+        }
+
+        .branch-visual-svg .svg-panel-strong {
+            fill: rgba(246, 137, 0, 0.14);
+            stroke: rgba(246, 137, 0, 0.72);
+        }
+
+        .branch-visual-svg .svg-line {
+            stroke: rgba(246, 137, 0, 0.82);
+        }
+
+        .branch-visual-svg .svg-line-soft {
+            stroke: rgba(244, 239, 229, 0.34);
+        }
+
+        .branch-visual-svg .svg-dot {
+            fill: var(--accent);
+        }
+
+        .branch-visual-svg .svg-dot-dark {
+            fill: #050505;
+            stroke: rgba(244, 239, 229, 0.18);
+            stroke-width: 1;
+        }
+
+        .branch-visual-svg .svg-dot-light {
+            fill: var(--text);
+            stroke: #050505;
+        }
+
+        .branch-visual-svg .svg-cell-light {
+            fill: rgba(244, 239, 229, 0.08);
+        }
+
+        .branch-visual-svg .svg-cell-dark {
+            fill: rgba(246, 137, 0, 0.62);
+        }
+
+        .branch-visual-svg .svg-label,
+        .branch-visual-svg .svg-number {
+            fill: var(--text);
+        }
+
+        .branch-visual-svg .svg-label-soft {
+            fill: var(--text-muted);
+        }
+
+        .branch-checker-board,
+        .branch-go-board,
+        .branch-poker-table {
+            border-color: var(--accent);
+            background-color: rgba(244, 239, 229, 0.08);
+            box-shadow: 18px 20px 0 rgba(246, 137, 0, 0.09);
+        }
+
+        .branch-checker-cell {
+            background: rgba(244, 239, 229, 0.1);
+        }
+
+        .branch-checker-cell.dark,
+        .branch-disc.three,
+        .branch-node,
+        .branch-go-stone.move {
+            background: var(--accent);
+        }
+
+        .branch-disc {
+            background: var(--text);
+        }
+
+        .branch-disc.two,
+        .branch-go-stone.white {
+            background: #050505;
+            border-color: var(--text);
+        }
+
+        .branch-playing-card {
+            border-color: var(--accent);
+            background: var(--text);
+            color: #050505;
+        }
+
+        .branch-playing-card.hidden {
+            background: repeating-linear-gradient(
+                45deg,
+                #050505 0 8px,
+                var(--accent) 8px 16px
+            );
+        }
+
+        .branch-poker-chip {
+            border-color: #050505;
+            background:
+                linear-gradient(90deg, transparent 42%, #050505 42% 58%, transparent 58%),
+                linear-gradient(0deg, transparent 42%, #050505 42% 58%, transparent 58%),
+                var(--accent);
+            box-shadow: 0 0 0 4px var(--accent);
+        }
+
+        .branch-tree-rail::before,
+        .branch-tree-rail::after,
+        .branch-prune::before {
+            background: var(--accent);
+        }
+
+        .branch-node {
+            color: #050505;
+        }
+
+        .branch-node.a {
+            background: var(--text);
+            color: #050505;
+        }
+
+        .branch-prune {
+            border-color: var(--accent);
+        }
+
+        .branch-go-board {
+            background:
+                linear-gradient(rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(244, 239, 229, 0.18) 1px, transparent 1px),
+                rgba(244, 239, 229, 0.07);
+        }
+
+        @media (max-width: 900px) {
+            .single-stage.is-branch-timeline .stage-topbar {
+                padding: 22px 20px 0;
+            }
+
+            .single-stage.is-branch-timeline .brand-lockup,
+            .single-stage.is-branch-timeline .brand-image {
+                width: min(431px, 100%);
+            }
+
+            .branch-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .branch-event-content {
+                padding: 20px;
+            }
+        }
+
         .empty-state {
             display: grid;
             place-items: center;
@@ -2328,23 +3906,6 @@
                 width: min(720px, calc(100vw - 28px));
                 padding: 22px;
             }
-
-            .storyline-modal {
-                padding: 18px;
-            }
-
-            .storyline-modal-shell {
-                width: min(720px, calc(100vw - 28px));
-                padding: 22px;
-            }
-
-            .storyline-modal-title {
-                font-size: 24px;
-            }
-
-            .storyline-option {
-                min-height: 78px;
-            }
         }
 
         .bench-dossier {
@@ -2514,6 +4075,14 @@
             padding: 10px 10px 0;
         }
 
+        .bench-photo-frame.has-video {
+            background: rgba(0, 0, 0, 0.34);
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 0;
+            padding: 10px 10px 0;
+        }
+
         .bench-photo-frame.is-placeholder {
             background:
                 linear-gradient(135deg, rgba(244, 239, 229, 0.08), transparent 34%),
@@ -2564,6 +4133,50 @@
         .bench-image-stage.is-diagram {
             padding: 4px;
             background: rgba(255, 255, 255, 0.92);
+        }
+
+        .bench-video-stage {
+            position: relative;
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+            background: #090807;
+            display: grid;
+        }
+
+        .bench-video-stage video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+            object-fit: cover;
+        }
+
+        .bench-video-stage img,
+        .bench-game-video-fallback {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.92);
+        }
+
+        .bench-video-badge {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 2;
+            border: 1px solid rgba(246, 137, 0, 0.42);
+            border-radius: 999px;
+            padding: 4px 8px;
+            background: rgba(0, 0, 0, 0.62);
+            color: var(--accent);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
         .bench-archive-card {
@@ -3164,6 +4777,26 @@
             text-align: center;
         }
 
+        .bench-game-video-demo {
+            position: relative;
+            min-height: 190px;
+            overflow: hidden;
+            border: 1px solid rgba(244, 239, 229, 0.1);
+            border-radius: 7px;
+            background:
+                radial-gradient(circle at 18% 12%, rgba(246, 137, 0, 0.12), transparent 30%),
+                rgba(0, 0, 0, 0.42);
+            display: grid;
+        }
+
+        .bench-game-video-demo video {
+            width: 100%;
+            height: 100%;
+            min-height: 190px;
+            object-fit: contain;
+            background: #070604;
+        }
+
         .bench-paper-notes {
             min-width: 0;
             display: grid;
@@ -3601,6 +5234,42 @@
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
         }
 
+        .branch-video-panel {
+            width: min(1080px, calc(100vw - 72px));
+            max-height: min(86vh, 760px);
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 14px;
+        }
+
+        .branch-video-player,
+        .branch-video-fallback {
+            width: 100%;
+            max-height: calc(86vh - 90px);
+            border: 1px solid rgba(246, 137, 0, 0.28);
+            border-radius: 8px;
+            background: #070604;
+            object-fit: contain;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .branch-video-meta {
+            display: grid;
+            gap: 4px;
+            color: rgba(244, 239, 229, 0.76);
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1.35;
+            text-align: center;
+        }
+
+        .branch-video-meta strong {
+            color: var(--accent);
+            font-size: 15px;
+            font-weight: 900;
+        }
+
         .photo-prev,
         .photo-next,
         .close-viewer {
@@ -3729,20 +5398,10 @@
 
             .storyline-trigger {
                 width: 184px;
-                min-height: 34px;
+                min-height: 27px;
                 padding-left: 8px;
                 padding-right: 8px;
                 font-size: 11px;
-            }
-
-            .storyline-trigger-copy {
-                gap: 5px;
-            }
-
-            .storyline-trigger-icon {
-                width: 15px;
-                height: 15px;
-                flex-basis: 15px;
             }
 
             .mode-chip-label {
@@ -4168,7 +5827,7 @@
                     <section class="archive-section">
                         <div class="archive-stage">
                             <article class="archive-card archive-card-left">
-                                <button class="archive-thumb" id="archiveThumbPrev" type="button" data-empty-label-key="noImage"></button>
+                                <button class="archive-thumb" id="archiveThumbPrev" type="button" data-empty-label="暂无图片"></button>
                                 <div class="archive-card-caption">
                                     <div class="archive-card-name" id="archivePrevCaption"></div>
                                     <div class="archive-card-role" id="archivePrevSubcaption"></div>
@@ -4176,7 +5835,7 @@
                             </article>
 
                             <article class="archive-card archive-card-main">
-                                <button class="archive-focus media-photo" id="archiveFocusButton" type="button" data-photo-index="0" data-empty-label-key="noArchive">
+                                <button class="archive-focus media-photo" id="archiveFocusButton" type="button" data-photo-index="0" data-empty-label="暂无档案">
                                     <img id="archiveFocus" alt="主档案照片">
                                 </button>
                                 <div class="archive-card-caption">
@@ -4186,7 +5845,7 @@
                             </article>
 
                             <article class="archive-card archive-card-right">
-                                <button class="archive-thumb" id="archiveThumbNext" type="button" data-empty-label-key="noImage"></button>
+                                <button class="archive-thumb" id="archiveThumbNext" type="button" data-empty-label="暂无图片"></button>
                                 <div class="archive-card-caption">
                                     <div class="archive-card-name" id="archiveNextCaption"></div>
                                     <div class="archive-card-role" id="archiveNextSubcaption"></div>
@@ -4206,7 +5865,7 @@
                     </div>
 
                     <div class="video-frame empty" id="videoFrame">
-                        <div class="video-play-tag" aria-hidden="true" data-i18n="play">播放</div>
+                        <div class="video-play-tag" aria-hidden="true">播放</div>
                         <div class="video-quote-mark" aria-hidden="true">
                             <span class="video-quote-square">m</span>
                             <span class="video-quote-lines">
@@ -4250,6 +5909,8 @@
                 </section>
             </main>
 
+            <main class="branch-timeline-page" id="branchTimelinePage" hidden></main>
+
             <footer class="stage-footer">
                 <button class="nav-button" id="prevBtn" type="button" aria-label="上一页">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -4277,6 +5938,16 @@
         </div>
     </div>
 
+    <div class="storyline-modal is-hidden" id="storylineModal" role="dialog" aria-modal="true" aria-labelledby="storylineModalTitle">
+        <div class="storyline-modal-shell">
+            <button class="storyline-modal-close" id="storylineModalClose" type="button" aria-label="关闭">×</button>
+            <div class="storyline-modal-eyebrow" id="storylineModalEyebrow">故事线</div>
+            <h2 class="storyline-modal-title" id="storylineModalTitle"></h2>
+            <div class="storyline-modal-subtitle" id="storylineModalSubtitle"></div>
+            <div class="storyline-option-grid" id="storylineOptionGrid"></div>
+        </div>
+    </div>
+
     <div class="quiz-modal is-hidden" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
         <div class="quiz-modal-shell">
             <button class="quiz-modal-close" id="quizModalClose" type="button" aria-label="关闭">×</button>
@@ -4293,16 +5964,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="storyline-modal is-hidden" id="storylineModal" role="dialog" aria-modal="true" aria-labelledby="storylineModalTitle">
-        <div class="storyline-modal-shell">
-            <button class="storyline-modal-close" id="storylineModalClose" type="button" aria-label="关闭">×</button>
-            <div class="storyline-modal-eyebrow" id="storylineModalEyebrow">故事线</div>
-            <h2 class="storyline-modal-title" id="storylineModalTitle"></h2>
-            <div class="storyline-modal-subtitle" id="storylineModalSubtitle"></div>
-            <div class="storyline-option-grid" id="storylineOptionGrid"></div>
         </div>
     </div>
 
@@ -4336,11 +5997,11 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260610-ai100-source-refresh"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260613-gaming-ai-images"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260612-ai100-photo-refresh" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
@@ -4355,7 +6016,7 @@
         const POP_QUIZ_MOBILE_QUESTION_COUNT = 10;
         const POP_QUIZ_MOBILE_PUBLIC_URL = 'https://bjzgcai.github.io/AI-History-Show/?storyline=bench-council-ai100&quiz=mobile';
         const POP_QUIZ_MOBILE_QR_URL = 'resources/images/ui/ai100-pop-quiz-qr-v2.svg?v=20260608';
-        const COMPLETION_QUIZ_MIN_VIEW_MS = 15 * 1000;
+        const COMPLETION_QUIZ_MIN_DWELL_MS = 15 * 1000;
         const GLOBE_TEXTURE_URLS = {
             water: `resources/textures/earth-water.png?v=${GLOBE_TEXTURE_VERSION}`,
             topo: `resources/textures/earth-topology.png?v=${GLOBE_TEXTURE_VERSION}`,
@@ -4382,14 +6043,11 @@
                 }
             },
             {
-                id: 'board-games-card-games',
+                id: 'gaming-ai',
+                layout: 'branch-timeline',
                 label: {
-                    en: 'AI & Board/Card Games',
-                    zh: 'AI 与棋类 / 牌类游戏'
-                },
-                note: {
-                    en: 'Future storyline from game benchmarks and matches',
-                    zh: '待扩展：游戏基准与经典对局故事线'
+                    en: 'AI in Board & Tabletop Games',
+                    zh: 'AI 在棋牌与博弈论的演进'
                 }
             },
             {
@@ -4451,7 +6109,8 @@
         let pendingQuizAction = null;
         let mobileQuizState = null;
         let idleAdvanceTimer = null;
-        let currentMilestoneViewedAt = Date.now();
+        let completionQuizViewKey = '';
+        let completionQuizViewStartedAt = 0;
         const vmCache = new Map();
         const imagePreloadCache = new Map();
         const completedQuizMilestoneKeys = new Set();
@@ -4527,6 +6186,7 @@
             storylineOptionGrid: document.getElementById('storylineOptionGrid'),
             timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
+            branchTimelinePage: document.getElementById('branchTimelinePage'),
             globeStage: document.getElementById('globeStage'),
             globeShell: document.getElementById('globeShell'),
             singleGlobeContainer: document.getElementById('singleGlobeContainer'),
@@ -4732,8 +6392,6 @@
             refs.prevBtn.setAttribute('aria-label', tx('previousPage'));
             refs.nextBtn.setAttribute('aria-label', tx('nextPage'));
             if (refs.storylineModalClose) refs.storylineModalClose.setAttribute('aria-label', tx('close'));
-            if (refs.regionModalClose) refs.regionModalClose.setAttribute('aria-label', tx('close'));
-            if (refs.quizModalClose && !hasOpenQuizModal()) refs.quizModalClose.setAttribute('aria-label', tx('close'));
         }
 
         function getStorylineLabel(option) {
@@ -4761,6 +6419,11 @@
             return Boolean(option && option.layout === 'achievement-map');
         }
 
+        function isBranchTimelineActive() {
+            const option = getActiveStorylineOption();
+            return Boolean(option && option.layout === 'branch-timeline');
+        }
+
         function isResearchDossierActive() {
             return isAchievementMapActive();
         }
@@ -4780,11 +6443,10 @@
 
         function renderStorylineSelect() {
             const activeOption = getActiveStorylineOption();
-
+            const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : 0;
+            const activeStatus = getStorylineStatus(activeOption, activeCount);
             if (refs.storylineTrigger) {
-                const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : milestoneList.length;
                 const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
-                const activeStatus = getStorylineStatus(activeOption, activeCount);
                 refs.storylineTrigger.setAttribute('aria-label', `${tx('storylineSelector')}: ${activeLabel} (${activeStatus})`);
                 refs.storylineTrigger.title = activeLabel;
                 if (refs.storylineTriggerLabel) refs.storylineTriggerLabel.textContent = activeLabel;
@@ -4828,17 +6490,17 @@
             if (refs.storylineModalSubtitle) {
                 refs.storylineModalSubtitle.textContent = uiText(
                     'Tap a storyline to switch the exhibition view.',
-                    '点击故事线切换当前展览视图。'
+                    '选择一条故事线，切换展览视图。'
                 );
             }
 
             refs.storylineOptionGrid.innerHTML = STORYLINE_OPTIONS.map((option) => {
                 const count = getStorylineMilestones(option.id).length;
+                const disabled = count <= 0 ? ' disabled' : '';
+                const active = option.id === activeStorylineId ? ' active' : '';
                 const label = getStorylineLabel(option);
                 const status = getStorylineStatus(option, count);
-                const note = String(lx(option.note) || '').trim();
-                const active = option.id === activeStorylineId ? ' active' : '';
-                const disabled = count <= 0 ? ' disabled' : '';
+                const note = getStorylineNote(option);
                 return `
                     <button class="storyline-option${active}" type="button" data-storyline-id="${escapeHtml(option.id)}"${disabled}>
                         <span class="storyline-option-title-row">
@@ -4864,11 +6526,11 @@
             if (!refs.storylineModal || !refs.storylineOptionGrid) return;
             renderStorylinePickerOptions();
             refs.storylineModal.classList.remove('is-hidden');
-            window.requestAnimationFrame(() => {
+            window.setTimeout(() => {
                 const activeButton = refs.storylineOptionGrid.querySelector('.storyline-option.active')
                     || refs.storylineOptionGrid.querySelector('.storyline-option:not(:disabled)');
                 if (activeButton) activeButton.focus();
-            });
+            }, 0);
         }
 
         function setActiveStoryline(storylineId, options = {}) {
@@ -4917,12 +6579,13 @@
 
             const quote = String(lx(safeMilestone.quote) || '').trim();
             const quoteAttribution = String(lx(safeMilestone.quoteAttribution) || '').trim();
+            const quoteLabel = String(lx(safeMilestone.quoteLabel) || '').trim();
             const descriptionText = stripHtml(lx(safeMilestone.description) || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
                 const attributionPrefix = quoteAttribution && isWorkAttribution(quoteAttribution) ? `${tx('source')}：` : `${tx('attribution')}：`;
                 commentarySections.push({
-                    label: tx('quoteExcerpt'),
+                    label: quoteLabel || tx('quoteExcerpt'),
                     html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
                 });
             }
@@ -5058,7 +6721,7 @@
             if (vm.descriptionText) {
                 return `<p>${escapeHtml(vm.descriptionText)}</p>`;
             }
-            return `<p>${escapeHtml(tx('eventSummaryPending'))}</p>`;
+            return '<p>暂无事件摘要</p>';
         }
 
         function initials(name) {
@@ -5243,7 +6906,13 @@
                         description: String(lx(module.description || module.subcaption || '')).trim(),
                         license: localizeRightsNote(module.license || ''),
                         usage: String(lx(module.usage || '')).trim(),
-                        action: String(lx(module.action || '')).trim()
+                        action: String(lx(module.action || '')).trim(),
+                        fallbackUrl: String(module.fallbackUrl || module.fallback || '').trim(),
+                        poster: String(module.poster || module.thumbnail || '').trim(),
+                        sourceSgf: String(module.sourceSgf || module.sgf || '').trim(),
+                        generator: String(module.generator || '').trim(),
+                        duration: String(lx(module.duration || '')).trim(),
+                        fps: String(module.fps || '').trim()
                     };
                 })
                 .filter(Boolean);
@@ -5265,11 +6934,13 @@
             });
 
             const configuredModules = getAchievementVisualModules(vm.raw);
-            if (configuredModules.length > 0 && photos.length >= 2) {
-                return [...photos.slice(0, 2), configuredModules[0]].slice(0, 3);
+            const nonVideoModules = configuredModules.filter((module) => module.type !== 'gameEvolutionVideo');
+            const heroModules = nonVideoModules.length > 0 ? nonVideoModules : configuredModules;
+            if (heroModules.length > 0 && photos.length >= 2) {
+                return [...photos.slice(0, 2), heroModules[0]].slice(0, 3);
             }
 
-            return [...photos, ...configuredModules].slice(0, 3);
+            return [...photos, ...heroModules].slice(0, 3);
         }
 
         function buildBenchImageVisualCard(item) {
@@ -5305,9 +6976,29 @@
             `;
         }
 
+        function buildBenchVideoVisualCard(item) {
+            const title = item.title || uiText('Game evolution clip', '棋局演化短片');
+            const description = item.description || item.usage || '';
+            const poster = item.poster ? ` poster="${escapeHtml(item.poster)}"` : '';
+            return `
+                <div class="bench-photo-frame bench-visual-card has-video">
+                    <div class="bench-video-stage">
+                        <video src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
+                        ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" hidden>` : ''}
+                        <span class="bench-video-badge">${escapeHtml(uiText('MP4', 'MP4'))}</span>
+                    </div>
+                    <div class="bench-hero-caption">
+                        <span>${escapeHtml(title)}</span>
+                        ${description ? `<small>${escapeHtml(description)}</small>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
         function buildBenchVisualCard(item) {
             if (!item) return '<div class="bench-photo-frame is-placeholder" aria-hidden="true"></div>';
             if (item.type === 'image') return buildBenchImageVisualCard(item);
+            if (item.type === 'gameEvolutionVideo') return buildBenchVideoVisualCard(item);
             return buildBenchArchiveVisualCard(item);
         }
 
@@ -5344,13 +7035,14 @@
 
         function buildRightCommentarySections(vm) {
             const defaultLabels = [tx('quoteExcerpt'), tx('background'), tx('extension')];
-            const sourceSections = Array.isArray(vm.commentarySections)
+            const analysisSections = buildAnalysisSections(vm.raw);
+            const sourceSections = analysisSections.length > 0 ? analysisSections : (Array.isArray(vm.commentarySections)
                 ? vm.commentarySections.filter((section) => stripHtml(section && section.html))
-                : [];
+                : []);
             const maxSections = sourceSections.length > 3 ? 4 : 3;
             const sections = sourceSections.slice(0, maxSections).map((section, index) => ({
                 label: section.label || defaultLabels[index] || tx('contentInterpretation'),
-                text: stripHtml(section.html || ''),
+                text: section.text || stripHtml(section.html || ''),
                 html: section.html || '',
                 link: section.link || null
             }));
@@ -5368,6 +7060,1124 @@
             }
 
             return sections.slice(0, maxSections);
+        }
+
+        function buildAnalysisSections(rawMilestone) {
+            const analysis = rawMilestone && rawMilestone.analysis;
+            if (!analysis || typeof analysis !== 'object') return [];
+
+            return [
+                ['what', tx('analysisWhat')],
+                ['how', tx('analysisHow')],
+                ['why', tx('analysisWhy')]
+            ].map(([key, label]) => {
+                const text = String(lx(analysis[key]) || '').trim();
+                if (!text) return null;
+                return { label, text };
+            }).filter(Boolean);
+        }
+
+        function buildBranchHeroTitle(title) {
+            const safeTitle = escapeHtml(title || tx('branchGaming'));
+            if ((window.I18n && window.I18n.getLocale && window.I18n.getLocale()) === 'zh') {
+                return safeTitle.replace('博弈论', '<span class="accent">博弈论</span>');
+            }
+            return safeTitle.replace('Games', '<span class="accent">Games</span>');
+        }
+
+        function getBranchVisualImage(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const images = raw && raw.resources && Array.isArray(raw.resources.images)
+                ? raw.resources.images.filter(Boolean)
+                : [];
+            const demoImage = raw && raw.achievement ? String(raw.achievement.demoImage || '').trim() : '';
+            if (demoImage) return demoImage;
+
+            const explainer = images.find((url) => /\/explainers\/|explainer|diagram|search|database|policy|value|mcts|tree|perfect-play/i.test(String(url || '')));
+            if (explainer) return explainer;
+
+            return images.find(Boolean) || '';
+        }
+
+        function buildCheckerBoardCells() {
+            return Array.from({ length: 64 }, (_, index) => {
+                const row = Math.floor(index / 8);
+                const col = index % 8;
+                const dark = (row + col) % 2 === 1 ? ' dark' : '';
+                return `<span class="branch-checker-cell${dark}"></span>`;
+            }).join('');
+        }
+
+        function branchSvgLabel(en, zh) {
+            return escapeHtml(uiText(en, zh));
+        }
+
+        function getBranchEventKey(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            return String(raw.id || raw.key || '').replace(/^milestone-/, '');
+        }
+
+        function buildBranchSvgFrame(titleEn, titleZh, subtitleEn, subtitleZh, body) {
+            return `
+                <div class="branch-illustration branch-svg-illustration" aria-hidden="true">
+                    <svg class="branch-visual-svg" viewBox="0 0 360 260" role="img">
+                        <rect class="svg-shell" x="18" y="18" width="324" height="224" rx="18"></rect>
+                        <circle class="svg-dot" cx="304" cy="48" r="8"></circle>
+                        <text class="svg-label" x="36" y="45">${branchSvgLabel(titleEn, titleZh)}</text>
+                        <text class="svg-label-soft" x="36" y="63">${branchSvgLabel(subtitleEn, subtitleZh)}</text>
+                        ${body}
+                    </svg>
+                </div>
+            `;
+        }
+
+        function buildBranchSvgCheckerCells(x, y, size, cells = 8) {
+            return Array.from({ length: cells * cells }, (_, index) => {
+                const row = Math.floor(index / cells);
+                const col = index % cells;
+                const cls = (row + col) % 2 === 1 ? 'svg-cell-dark' : 'svg-cell-light';
+                return `<rect class="${cls}" x="${x + col * size}" y="${y + row * size}" width="${size}" height="${size}"></rect>`;
+            }).join('');
+        }
+
+        function buildBranchSvgGoGrid(x, y, step, lines = 7) {
+            const span = step * (lines - 1);
+            const grid = Array.from({ length: lines }, (_, index) => {
+                const pos = index * step;
+                return `
+                    <line class="svg-line-soft" x1="${x}" y1="${y + pos}" x2="${x + span}" y2="${y + pos}"></line>
+                    <line class="svg-line-soft" x1="${x + pos}" y1="${y}" x2="${x + pos}" y2="${y + span}"></line>
+                `;
+            }).join('');
+            return `
+                <rect class="svg-panel" x="${x - 12}" y="${y - 12}" width="${span + 24}" height="${span + 24}" rx="8"></rect>
+                ${grid}
+            `;
+        }
+
+        function buildGameBranchIllustration(key) {
+            if (key === '1951-strachey-draughts') {
+                return buildBranchSvgFrame(
+                    'Draughts search',
+                    '\u8df3\u68cb\u641c\u7d22',
+                    'legal moves plus board scores',
+                    '\u5408\u6cd5\u8d70\u6cd5\u4e0e\u68cb\u76d8\u8bc4\u5206',
+                    `
+                        <g transform="rotate(-5 102 150)">
+                            <rect class="svg-panel" x="34" y="82" width="136" height="136" rx="6"></rect>
+                            ${buildBranchSvgCheckerCells(42, 90, 15)}
+                            <circle class="svg-dot-dark" cx="72" cy="120" r="10"></circle>
+                            <circle class="svg-dot-light" cx="117" cy="150" r="10"></circle>
+                            <circle class="svg-dot" cx="102" cy="180" r="10"></circle>
+                        </g>
+                        <path class="svg-line" d="M176 118 C206 92 230 86 258 104"></path>
+                        <path class="svg-line" d="M176 170 C210 178 232 170 260 146"></path>
+                        <rect class="svg-panel-strong" x="238" y="82" width="76" height="42" rx="10"></rect>
+                        <text class="svg-label" x="254" y="108">${branchSvgLabel('Search', '\u641c\u7d22')}</text>
+                        <rect class="svg-panel" x="236" y="140" width="84" height="44" rx="10"></rect>
+                        <text class="svg-label" x="252" y="168">${branchSvgLabel('Score', '\u8bc4\u5206')}</text>
+                    `
+                );
+            }
+
+            if (key === '1988-td-update') {
+                return buildBranchSvgFrame(
+                    'TD learning',
+                    'TD \u5b66\u4e60',
+                    'prediction updates along play',
+                    '\u5bf9\u5c40\u4e2d\u7684\u9884\u6d4b\u66f4\u65b0',
+                    `
+                        <path class="svg-line-soft" d="M52 160 C92 106 132 122 172 94 S252 96 304 70"></path>
+                        <circle class="svg-dot-dark" cx="54" cy="160" r="12"></circle>
+                        <circle class="svg-dot" cx="112" cy="118" r="12"></circle>
+                        <circle class="svg-dot-light" cx="176" cy="96" r="12"></circle>
+                        <circle class="svg-dot" cx="236" cy="98" r="12"></circle>
+                        <circle class="svg-dot-dark" cx="304" cy="70" r="12"></circle>
+                        <rect class="svg-panel-strong" x="64" y="184" width="94" height="36" rx="10"></rect>
+                        <text class="svg-label" x="82" y="207">${branchSvgLabel('Reward', '\u5956\u52b1')}</text>
+                        <rect class="svg-panel" x="190" y="166" width="106" height="48" rx="12"></rect>
+                        <text class="svg-label" x="208" y="187">${branchSvgLabel('TD error', 'TD\u8bef\u5dee')}</text>
+                        <text class="svg-label-soft" x="210" y="205">Vt -> Vt+1</text>
+                        <path class="svg-line" d="M156 184 C174 166 188 158 208 150"></path>
+                    `
+                );
+            }
+
+            if (key === '1994-chinook') {
+                return buildBranchSvgFrame(
+                    'Chinook database',
+                    'Chinook \u6570\u636e\u5e93',
+                    'checkers search meets endgames',
+                    '\u8df3\u68cb\u641c\u7d22\u8fde\u63a5\u6b8b\u5c40\u5e93',
+                    `
+                        <g transform="rotate(4 100 152)">
+                            <rect class="svg-panel" x="38" y="78" width="132" height="132" rx="6"></rect>
+                            ${buildBranchSvgCheckerCells(46, 86, 14)}
+                            <circle class="svg-dot" cx="88" cy="126" r="9"></circle>
+                            <circle class="svg-dot-dark" cx="130" cy="168" r="9"></circle>
+                        </g>
+                        <path class="svg-line" d="M172 142 C198 132 214 128 232 124"></path>
+                        <rect class="svg-panel-strong" x="226" y="78" width="88" height="112" rx="12"></rect>
+                        <rect class="svg-panel" x="240" y="96" width="60" height="16" rx="4"></rect>
+                        <rect class="svg-panel" x="240" y="122" width="60" height="16" rx="4"></rect>
+                        <rect class="svg-panel" x="240" y="148" width="60" height="16" rx="4"></rect>
+                        <text class="svg-label" x="246" y="212">${branchSvgLabel('Proof', '\u8bc1\u660e')}</text>
+                        <text class="svg-number" x="252" y="142">DB</text>
+                    `
+                );
+            }
+
+            if (key === '1997-logistello') {
+                return buildBranchSvgFrame(
+                    'Logistello learning',
+                    'Logistello 学习',
+                    'Othello patterns tune search',
+                    '黑白棋模式调校搜索',
+                    `
+                        <rect class="svg-panel" x="44" y="80" width="126" height="126" rx="8"></rect>
+                        ${Array.from({ length: 8 }).map((_, row) => Array.from({ length: 8 }).map((__, col) => {
+                            const x = 54 + col * 14;
+                            const y = 90 + row * 14;
+                            const dark = (row + col) % 2 === 0;
+                            return `<rect class="${dark ? 'svg-cell-dark' : 'svg-cell-light'}" x="${x}" y="${y}" width="12" height="12" rx="2"></rect>`;
+                        }).join('')).join('')}
+                        <circle class="svg-dot-dark" cx="82" cy="118" r="8"></circle>
+                        <circle class="svg-dot-light" cx="110" cy="132" r="8"></circle>
+                        <circle class="svg-dot-dark" cx="124" cy="146" r="8"></circle>
+                        <circle class="svg-dot" cx="96" cy="160" r="8"></circle>
+                        <path class="svg-line" d="M178 142 C206 116 224 102 252 92"></path>
+                        <path class="svg-line-soft" d="M178 142 C210 148 230 154 258 166"></path>
+                        <rect class="svg-panel-strong" x="244" y="72" width="82" height="42" rx="10"></rect>
+                        <rect class="svg-panel" x="250" y="148" width="76" height="46" rx="10"></rect>
+                        <text class="svg-label-soft" x="258" y="98">${branchSvgLabel('Weights', '权重')}</text>
+                        <text class="svg-label-soft" x="264" y="175">${branchSvgLabel('ProbCut', '概率剪枝')}</text>
+                    `
+                );
+            }
+
+            if (key === '1997-deep-blue') {
+                return buildBranchSvgFrame(
+                    'Deep Blue search',
+                    '\u6df1\u84dd\u641c\u7d22',
+                    'parallel chess tree pruning',
+                    '\u5e76\u884c\u68cb\u6811\u4e0e\u526a\u679d',
+                    `
+                        <rect class="svg-panel" x="42" y="92" width="84" height="84" rx="8"></rect>
+                        ${buildBranchSvgCheckerCells(50, 100, 8, 8)}
+                        <text class="svg-number" x="74" y="156">K</text>
+                        <path class="svg-line" d="M138 134 C172 106 194 96 226 88"></path>
+                        <path class="svg-line" d="M138 134 C176 136 198 136 232 134"></path>
+                        <path class="svg-line" d="M138 134 C172 164 196 176 232 186"></path>
+                        <circle class="svg-dot" cx="138" cy="134" r="17"></circle>
+                        <circle class="svg-dot-dark" cx="236" cy="86" r="18"></circle>
+                        <circle class="svg-dot-light" cx="242" cy="134" r="18"></circle>
+                        <circle class="svg-dot" cx="238" cy="188" r="18"></circle>
+                        <text class="svg-number" x="229" y="94">Q</text>
+                        <text class="svg-number" x="234" y="142">R</text>
+                        <text class="svg-number" x="231" y="196">B</text>
+                        <circle class="svg-panel-strong" cx="296" cy="134" r="30"></circle>
+                        <path class="svg-line" d="M278 152 L314 116"></path>
+                        <text class="svg-label-soft" x="274" y="178">${branchSvgLabel('Prune', '\u526a\u679d')}</text>
+                    `
+                );
+            }
+
+            if (key === '2000s-alphacat') {
+                return buildBranchSvgFrame(
+                    'Xiangqi engine',
+                    '象棋引擎',
+                    'cannon screens and tactical search',
+                    '炮架、九宫与战术搜索',
+                    `
+                        <rect class="svg-panel" x="40" y="72" width="132" height="148" rx="8"></rect>
+                        ${Array.from({ length: 9 }).map((_, col) => `<path class="svg-line-soft" d="M54 ${88 + col * 14} H158"></path>`).join('')}
+                        ${Array.from({ length: 7 }).map((_, col) => `<path class="svg-line-soft" d="M${54 + col * 17} 88 V200"></path>`).join('')}
+                        <path class="svg-line" d="M88 88 L124 124 M124 88 L88 124 M88 164 L124 200 M124 164 L88 200"></path>
+                        <circle class="svg-dot-dark" cx="71" cy="102" r="10"></circle>
+                        <circle class="svg-dot" cx="122" cy="144" r="10"></circle>
+                        <circle class="svg-dot-light" cx="139" cy="172" r="10"></circle>
+                        <text class="svg-label-soft" x="61" y="233">${branchSvgLabel('cannon screen', '炮架')}</text>
+                        <path class="svg-line" d="M176 146 H222"></path>
+                        <rect class="svg-panel-strong" x="222" y="88" width="98" height="44" rx="10"></rect>
+                        <rect class="svg-panel" x="222" y="154" width="98" height="44" rx="10"></rect>
+                        <text class="svg-label-soft" x="240" y="116">${branchSvgLabel('Minimax', '极小极大')}</text>
+                        <text class="svg-label-soft" x="243" y="182">${branchSvgLabel('Eval map', '评估矩阵')}</text>
+                        <path class="svg-line-soft" d="M270 132 V154"></path>
+                    `
+                );
+            }
+
+            if (key === '2013-dqn') {
+                return buildBranchSvgFrame(
+                    'DQN control',
+                    'DQN \u63a7\u5236',
+                    'pixels to replay to Q-values',
+                    '\u50cf\u7d20\u3001\u56de\u653e\u4e0e Q \u503c',
+                    `
+                        <rect class="svg-panel" x="40" y="92" width="76" height="70" rx="9"></rect>
+                        <rect class="svg-cell-dark" x="54" y="106" width="12" height="12"></rect>
+                        <rect class="svg-cell-light" x="72" y="106" width="12" height="12"></rect>
+                        <rect class="svg-cell-dark" x="90" y="106" width="12" height="12"></rect>
+                        <rect class="svg-cell-light" x="54" y="126" width="12" height="12"></rect>
+                        <rect class="svg-cell-dark" x="72" y="126" width="12" height="12"></rect>
+                        <rect class="svg-cell-light" x="90" y="126" width="12" height="12"></rect>
+                        <text class="svg-label-soft" x="56" y="186">${branchSvgLabel('Pixels', '\u50cf\u7d20')}</text>
+                        <path class="svg-line" d="M124 128 H164"></path>
+                        <rect class="svg-panel-strong" x="164" y="82" width="66" height="92" rx="10"></rect>
+                        <rect class="svg-panel" x="178" y="96" width="38" height="12" rx="3"></rect>
+                        <rect class="svg-panel" x="178" y="118" width="38" height="12" rx="3"></rect>
+                        <rect class="svg-panel" x="178" y="140" width="38" height="12" rx="3"></rect>
+                        <text class="svg-label-soft" x="174" y="194">${branchSvgLabel('Replay', '\u56de\u653e')}</text>
+                        <path class="svg-line" d="M232 128 H272"></path>
+                        <rect class="svg-panel" x="274" y="82" width="42" height="100" rx="10"></rect>
+                        <rect class="svg-dot" x="286" y="102" width="18" height="52" rx="7"></rect>
+                        <rect class="svg-dot-light" x="286" y="160" width="18" height="10" rx="5"></rect>
+                        <text class="svg-label-soft" x="274" y="202">${branchSvgLabel('Q values', 'Q\u503c')}</text>
+                    `
+                );
+            }
+
+            if (key === '2016-alphago') {
+                return buildBranchSvgFrame(
+                    'AlphaGo hybrid',
+                    'AlphaGo \u6df7\u5408\u641c\u7d22',
+                    'policy, value and MCTS',
+                    '\u7b56\u7565\u3001\u4ef7\u503c\u4e0e MCTS',
+                    `
+                        ${buildBranchSvgGoGrid(54, 92, 19, 6)}
+                        <circle class="svg-dot-dark" cx="73" cy="111" r="8"></circle>
+                        <circle class="svg-dot-light" cx="92" cy="130" r="8"></circle>
+                        <circle class="svg-dot-dark" cx="130" cy="149" r="8"></circle>
+                        <circle class="svg-dot" cx="111" cy="168" r="9"></circle>
+                        <path class="svg-line" d="M164 140 C190 108 214 96 238 92"></path>
+                        <path class="svg-line" d="M164 140 C190 140 214 140 238 140"></path>
+                        <path class="svg-line" d="M164 140 C190 174 214 190 238 194"></path>
+                        <rect class="svg-panel" x="238" y="74" width="76" height="34" rx="9"></rect>
+                        <rect class="svg-panel-strong" x="238" y="123" width="76" height="34" rx="9"></rect>
+                        <rect class="svg-panel" x="238" y="176" width="76" height="34" rx="9"></rect>
+                        <text class="svg-label" x="252" y="96">${branchSvgLabel('Policy', '\u7b56\u7565')}</text>
+                        <text class="svg-label" x="256" y="145">${branchSvgLabel('Value', '\u4ef7\u503c')}</text>
+                        <text class="svg-label" x="260" y="198">MCTS</text>
+                    `
+                );
+            }
+
+            if (key === '2017-alphazero') {
+                return buildBranchSvgFrame(
+                    'AlphaZero self-play',
+                    'AlphaZero \u81ea\u6211\u5bf9\u5f08',
+                    'one learner, many games',
+                    '\u4e00\u4e2a\u5b66\u4e60\u5668\u8de8\u591a\u79cd\u6e38\u620f',
+                    `
+                        <rect class="svg-panel" x="52" y="86" width="58" height="52" rx="10"></rect>
+                        <text class="svg-number" x="70" y="121">C</text>
+                        <rect class="svg-panel-strong" x="151" y="78" width="58" height="58" rx="12"></rect>
+                        <text class="svg-number" x="170" y="116">G</text>
+                        <rect class="svg-panel" x="250" y="86" width="58" height="52" rx="10"></rect>
+                        <text class="svg-number" x="268" y="121">S</text>
+                        <path class="svg-line-soft" d="M82 142 C108 160 134 169 160 170"></path>
+                        <path class="svg-line-soft" d="M180 140 V162"></path>
+                        <path class="svg-line-soft" d="M278 142 C252 160 226 169 200 170"></path>
+                        <circle class="svg-dot" cx="180" cy="174" r="24"></circle>
+                        <text class="svg-label" x="161" y="178">${branchSvgLabel('RL', '\u5f3a\u5316')}</text>
+                        <rect class="svg-panel" x="96" y="206" width="168" height="26" rx="13"></rect>
+                        <text class="svg-label-soft" x="123" y="224">${branchSvgLabel('self-play update', '\u81ea\u6211\u5bf9\u5f08\u66f4\u65b0')}</text>
+                        <path class="svg-line" d="M116 205 C70 178 72 112 126 95"></path>
+                        <path class="svg-line" d="M244 205 C290 178 288 112 234 95"></path>
+                        <circle class="svg-dot-dark" cx="116" cy="205" r="9"></circle>
+                        <circle class="svg-dot-light" cx="244" cy="205" r="9"></circle>
+                    `
+                );
+            }
+
+            if (key === '2017-libratus') {
+                return buildBranchSvgFrame(
+                    'Libratus poker',
+                    'Libratus \u6251\u514b',
+                    'blueprint plus subgame solving',
+                    '\u84dd\u56fe\u7b56\u7565\u4e0e\u5b50\u5c40\u6c42\u89e3',
+                    `
+                        <ellipse class="svg-panel-strong" cx="128" cy="142" rx="84" ry="50"></ellipse>
+                        <rect class="svg-panel" x="82" y="112" width="32" height="48" rx="6" transform="rotate(-8 98 136)"></rect>
+                        <rect class="svg-panel" x="116" y="110" width="32" height="48" rx="6" transform="rotate(7 132 134)"></rect>
+                        <rect class="svg-dot-dark" x="146" y="128" width="32" height="48" rx="6" transform="rotate(8 162 152)"></rect>
+                        <circle class="svg-dot" cx="94" cy="178" r="10"></circle>
+                        <circle class="svg-dot-light" cx="166" cy="104" r="10"></circle>
+                        <path class="svg-line" d="M214 138 C238 112 252 96 276 86"></path>
+                        <path class="svg-line" d="M214 138 C246 142 264 144 294 146"></path>
+                        <path class="svg-line" d="M214 138 C238 170 254 188 278 200"></path>
+                        <rect class="svg-panel" x="256" y="70" width="70" height="32" rx="9"></rect>
+                        <rect class="svg-panel-strong" x="252" y="128" width="82" height="34" rx="9"></rect>
+                        <rect class="svg-panel" x="256" y="184" width="70" height="32" rx="9"></rect>
+                        <text class="svg-label-soft" x="262" y="91">${branchSvgLabel('Blueprint', '\u84dd\u56fe')}</text>
+                        <text class="svg-label-soft" x="264" y="150">${branchSvgLabel('Subgame', '\u5b50\u5c40')}</text>
+                        <text class="svg-label-soft" x="272" y="205">${branchSvgLabel('Hidden', '\u9690\u724c')}</text>
+                    `
+                );
+            }
+
+            if (key === '2019-pluribus') {
+                return buildBranchSvgFrame(
+                    'Pluribus poker',
+                    'Pluribus \u6251\u514b',
+                    'six-player strategy compression',
+                    '\u516d\u4eba\u5c40\u7b56\u7565\u538b\u7f29',
+                    `
+                        <ellipse class="svg-panel-strong" cx="180" cy="142" rx="108" ry="60"></ellipse>
+                        <circle class="svg-dot" cx="180" cy="74" r="11"></circle>
+                        <circle class="svg-dot-light" cx="252" cy="94" r="11"></circle>
+                        <circle class="svg-dot-dark" cx="286" cy="150" r="11"></circle>
+                        <circle class="svg-dot" cx="226" cy="210" r="11"></circle>
+                        <circle class="svg-dot-light" cx="134" cy="210" r="11"></circle>
+                        <circle class="svg-dot-dark" cx="74" cy="150" r="11"></circle>
+                        <rect class="svg-panel" x="144" y="112" width="72" height="44" rx="10"></rect>
+                        <rect class="svg-panel" x="154" y="128" width="24" height="18" rx="4"></rect>
+                        <rect class="svg-panel" x="184" y="128" width="24" height="18" rx="4"></rect>
+                        <circle class="svg-dot" cx="180" cy="180" r="15"></circle>
+                        <path class="svg-line-soft" d="M180 180 L180 74 M180 180 L252 94 M180 180 L286 150 M180 180 L226 210 M180 180 L134 210 M180 180 L74 150"></path>
+                        <text class="svg-label" x="140" y="101">${branchSvgLabel('Six seats', '\u516d\u5ea7')}</text>
+                        <text class="svg-label-soft" x="128" y="235">${branchSvgLabel('Shared policy', '\u5171\u4eab\u7b56\u7565')}</text>
+                    `
+                );
+            }
+
+            if (key === '2019-suphx') {
+                return buildBranchSvgFrame(
+                    'Suphx mahjong',
+                    'Suphx 麻将',
+                    'hidden tiles and reward prediction',
+                    '隐藏牌与奖励预测',
+                    `
+                        <rect class="svg-panel" x="42" y="92" width="126" height="88" rx="16"></rect>
+                        ${[0, 1, 2, 3, 4].map((i) => `<rect class="${i === 2 ? 'svg-panel-strong' : 'svg-panel'}" x="${58 + i * 20}" y="116" width="16" height="42" rx="4"></rect>`).join('')}
+                        <rect class="svg-dot-dark" x="78" y="190" width="18" height="28" rx="4"></rect>
+                        <rect class="svg-dot-light" x="104" y="190" width="18" height="28" rx="4"></rect>
+                        <text class="svg-label-soft" x="61" y="70">${branchSvgLabel('visible discards', '公开弃牌')}</text>
+                        <path class="svg-line" d="M174 138 C204 110 222 96 250 92"></path>
+                        <path class="svg-line-soft" d="M174 138 C206 146 226 158 252 178"></path>
+                        <rect class="svg-panel-strong" x="248" y="72" width="86" height="42" rx="10"></rect>
+                        <rect class="svg-panel" x="248" y="158" width="86" height="50" rx="10"></rect>
+                        <text class="svg-label-soft" x="262" y="98">${branchSvgLabel('Policy', '策略')}</text>
+                        <text class="svg-label-soft" x="260" y="181">${branchSvgLabel('Reward', '奖励')}</text>
+                        <text class="svg-label-soft" x="268" y="198">${branchSvgLabel('risk', '风险')}</text>
+                        <circle class="svg-dot" cx="174" cy="138" r="12"></circle>
+                    `
+                );
+            }
+
+            if (key === '2019-muzero') {
+                return buildBranchSvgFrame(
+                    'MuZero planning',
+                    'MuZero \u89c4\u5212',
+                    'learned model inside search',
+                    '\u628a\u5b66\u5f97\u6a21\u578b\u653e\u5165\u641c\u7d22',
+                    `
+                        <rect class="svg-panel" x="44" y="104" width="64" height="64" rx="12"></rect>
+                        <text class="svg-label-soft" x="58" y="140">${branchSvgLabel('Obs', '\u89c2\u6d4b')}</text>
+                        <path class="svg-line" d="M112 136 H152"></path>
+                        <circle class="svg-dot" cx="176" cy="136" r="28"></circle>
+                        <text class="svg-label" x="154" y="140">${branchSvgLabel('Latent', '\u9690\u72b6\u6001')}</text>
+                        <path class="svg-line" d="M206 136 C230 94 266 92 292 114"></path>
+                        <path class="svg-line" d="M206 136 C232 176 266 184 294 162"></path>
+                        <rect class="svg-panel-strong" x="260" y="86" width="64" height="44" rx="10"></rect>
+                        <rect class="svg-panel" x="260" y="148" width="64" height="44" rx="10"></rect>
+                        <text class="svg-label-soft" x="272" y="112">${branchSvgLabel('Dynamics', '\u52a8\u6001')}</text>
+                        <text class="svg-label-soft" x="276" y="174">${branchSvgLabel('Rollout', '\u63a8\u6f14')}</text>
+                        <path class="svg-line-soft" d="M292 130 V148"></path>
+                        <circle class="svg-dot-light" cx="292" cy="140" r="8"></circle>
+                    `
+                );
+            }
+
+            return '';
+        }
+
+        function buildBranchIllustration(vm) {
+            const key = getBranchEventKey(vm);
+            const gameIllustration = buildGameBranchIllustration(key);
+            if (gameIllustration) return gameIllustration;
+
+            const visual = getAchievementVisual(vm && vm.raw ? vm.raw : {});
+            if (visual === 'chinook') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-checker-board">${buildCheckerBoardCells()}</div>
+                        <span class="branch-disc one"></span>
+                        <span class="branch-disc two"></span>
+                        <span class="branch-disc three"></span>
+                    </div>
+                `;
+            }
+
+            if (visual === 'deepblue') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-tree-rail">
+                            <span class="branch-node root">K</span>
+                            <span class="branch-node a">Q</span>
+                            <span class="branch-node b">R</span>
+                        </div>
+                        <span class="branch-prune"></span>
+                    </div>
+                `;
+            }
+
+            if (visual === 'go') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-go-board">
+                            <span class="branch-go-stone" style="left:30%;top:34%"></span>
+                            <span class="branch-go-stone white" style="left:48%;top:42%"></span>
+                            <span class="branch-go-stone" style="left:65%;top:48%"></span>
+                            <span class="branch-go-stone white" style="left:38%;top:62%"></span>
+                            <span class="branch-go-stone move" style="left:24%;top:66%"></span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (visual === 'poker') {
+                return `
+                    <div class="branch-illustration" aria-hidden="true">
+                        <div class="branch-poker-table">
+                            <span class="branch-playing-card one">A</span>
+                            <span class="branch-playing-card two">K</span>
+                            <span class="branch-playing-card hidden">?</span>
+                            <span class="branch-poker-chip one"></span>
+                            <span class="branch-poker-chip two"></span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            return '';
+        }
+
+        function getBranchGameRecordBoardType(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const key = getBranchEventKey(vm);
+            const visual = String(getAchievementVisual(raw) || '').toLowerCase();
+            const value = `${key} ${visual}`.toLowerCase();
+            if (/go|alphago|alphazero|muzero/.test(value)) return 'go';
+            if (/poker|libratus|pluribus/.test(value)) return 'cards';
+            if (/mahjong|suphx/.test(value)) return 'tiles';
+            if (/chess|deepblue|xiangqi|alphacat/.test(value)) return 'chess';
+            return 'checkers';
+        }
+
+        const BRANCH_EXTRA_GAME_RECORD_KEYS = {
+            '1988-td-update': ['1951-strachey-draughts']
+        };
+
+        function buildBranchGameRecordTrigger(vm, index, offset = 0) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const module = getAchievementGameEvolutionModule(raw);
+            if (!module) return '';
+
+            const title = module.title || vm.title || uiText('Game record', '\u5bf9\u5f08\u8bb0\u5f55');
+            const boardType = getBranchGameRecordBoardType(vm);
+            const actionLabel = uiText(`Play game record: ${title}`, `\u64ad\u653e\u5bf9\u5f08\u8bb0\u5f55\uff1a${title}`);
+            return `
+                <button class="branch-game-record-trigger branch-video-trigger is-${escapeHtml(boardType)}" type="button" data-branch-video-index="${index}" aria-label="${escapeHtml(actionLabel)}" title="${escapeHtml(title)}" tabindex="-1" aria-hidden="true" style="--record-offset: ${offset}px">
+                    <span class="branch-record-board" aria-hidden="true">
+                        <span class="branch-record-piece one"></span>
+                        <span class="branch-record-piece two"></span>
+                        <span class="branch-record-piece three"></span>
+                        <span class="branch-record-play"></span>
+                    </span>
+                </button>
+            `;
+        }
+
+        function buildBranchGameRecordTriggers(vm, index) {
+            if (!getAchievementGameEvolutionModule(vm && vm.raw ? vm.raw : {})) return '';
+            return buildBranchGameRecordTrigger(vm, index);
+        }
+
+        function buildBranchVisual(vm, index) {
+            const recordTrigger = buildBranchGameRecordTriggers(vm, index);
+            const illustration = buildBranchIllustration(vm);
+            if (illustration) {
+                return `<figure class="branch-event-visual">${illustration}${recordTrigger}</figure>`;
+            }
+
+            const image = getBranchVisualImage(vm);
+            if (!image) {
+                return `<div class="branch-event-visual"><div class="branch-pixel-scene" aria-hidden="true"></div>${recordTrigger}</div>`;
+            }
+
+            const meta = buildArchivePhotoMeta(vm, image);
+            const photoClass = isPortraitLikePhoto(image) ? ' is-photo' : '';
+            return `
+                <figure class="branch-event-visual${photoClass}">
+                    <img src="${escapeHtml(image)}" alt="${escapeHtml(meta.name || vm.title || tx('archiveImage'))}">
+                    ${recordTrigger}
+                </figure>
+            `;
+        }
+
+        function buildBranchSourceLinks(rawMilestone) {
+            const sources = getAchievementSources(rawMilestone).slice(0, 3);
+            if (!sources.length) return '';
+
+            return `
+                <div class="branch-source-row">
+                    ${sources.map((source) => `
+                        <a class="branch-source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
+                            ${escapeHtml(lx(source.label) || tx('source'))}
+                        </a>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function getBranchSourceTypeText(source) {
+            const type = source && source.type;
+            const values = [
+                lx(type),
+                type && typeof type === 'object' ? type.en : '',
+                type && typeof type === 'object' ? type.zh : '',
+                lx(source && source.label)
+            ];
+            return values.map((value) => String(value || '').toLowerCase()).join(' ');
+        }
+
+        function isBranchPaperSource(source) {
+            return /paper|publication|journal|doi|arxiv|pdf|\u8bba\u6587|\u6587\u732e|\u671f\u520a/.test(getBranchSourceTypeText(source));
+        }
+
+        function isBranchImageOnlySource(source) {
+            return /image source|portrait|photo|profile|api|github|engine|\u56fe\u7247|\u56fe\u50cf|\u7167\u7247|\u4eba\u7269\u8d44\u6599/.test(getBranchSourceTypeText(source));
+        }
+
+        function dedupeBranchItems(items) {
+            const seen = new Set();
+            return (items || []).filter((item) => {
+                const label = String(lx(item && item.label) || item && item.label || '').trim();
+                const url = String(item && item.url || '').trim();
+                const key = `${label.toLowerCase()}|${url}`;
+                if (!label || seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        }
+
+        function getBranchPeopleItems(vm) {
+            const figures = Array.isArray(vm && vm.figures) ? vm.figures : [];
+            return dedupeBranchItems(figures.map((figure) => ({
+                label: figure && figure.name,
+                detail: figure && figure.role
+            }))).slice(0, 3);
+        }
+
+        function getBranchPaperItems(rawMilestone) {
+            const papers = rawMilestone && Array.isArray(rawMilestone.papers) ? rawMilestone.papers : [];
+            return dedupeBranchItems(papers.map((paper) => {
+                const detail = [
+                    paper && paper.authors,
+                    paper && paper.journal,
+                    paper && paper.year
+                ].map((value) => String(lx(value) || value || '').trim()).filter(Boolean).join(' / ');
+
+                return {
+                    label: paper && paper.title,
+                    detail,
+                    url: paper && paper.url
+                };
+            })).slice(0, 3);
+        }
+
+        function getBranchReportItems(rawMilestone) {
+            const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
+                ? rawMilestone.achievement.sources
+                : [];
+            return dedupeBranchItems(sources
+                .filter((source) => !isBranchPaperSource(source) && !isBranchImageOnlySource(source))
+                .map((source) => ({
+                    label: source && source.label,
+                    detail: lx(source && source.type) || uiText('Report', '\u62a5\u9053'),
+                    url: source && source.url
+                }))).slice(0, 3);
+        }
+
+        function buildBranchElementGroup(label, items) {
+            const safeItems = dedupeBranchItems(items);
+            if (!safeItems.length) return '';
+
+            return `
+                <div class="branch-element-group">
+                    <div class="branch-element-label">${escapeHtml(label)}</div>
+                    <div class="branch-element-list">
+                        ${safeItems.map((item) => {
+                            const itemLabel = String(lx(item.label) || item.label || '').trim();
+                            const detail = String(lx(item.detail) || item.detail || '').trim();
+                            const detailHtml = detail ? `<small>${escapeHtml(detail)}</small>` : '';
+                            const body = `<strong>${escapeHtml(itemLabel)}</strong>${detailHtml}`;
+                            const url = String(item.url || '').trim();
+                            return url
+                                ? `<a class="branch-element-item" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${body}</a>`
+                                : `<span class="branch-element-item">${body}</span>`;
+                        }).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function buildBranchMilestoneElements(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const groups = [
+                {
+                    label: uiText('People', '\u4eba\u7269'),
+                    items: getBranchPeopleItems(vm)
+                },
+                {
+                    label: uiText('Papers', '\u8bba\u6587'),
+                    items: getBranchPaperItems(raw)
+                },
+                {
+                    label: uiText('News reports', '\u65b0\u95fb\u62a5\u9053'),
+                    items: getBranchReportItems(raw)
+                }
+            ].map((group) => buildBranchElementGroup(group.label, group.items)).filter(Boolean);
+
+            return groups.length ? `<div class="branch-elements">${groups.join('')}</div>` : '';
+        }
+
+        const BRANCH_TIMELINE_DRAG_START_X = 8;
+        const BRANCH_TIMELINE_DRAG_CANCEL_RATIO = 1.2;
+        let branchTimelineWheelSnapTimer = 0;
+        let branchTimelineDragReleaseTimer = 0;
+        let branchTimelineDragGesture = null;
+        let branchTimelineSuppressClickUntil = 0;
+        let branchTimelineCenterRaf = 0;
+
+        function getBranchTimelineCenteredEvent(timeline) {
+            if (!timeline) return null;
+
+            const events = Array.from(timeline.querySelectorAll('.branch-event'));
+            if (!events.length) return null;
+
+            const timelineRect = timeline.getBoundingClientRect();
+            const centerX = timelineRect.left + timelineRect.width / 2;
+            let centeredEvent = events[0];
+            let centeredDistance = Infinity;
+
+            events.forEach((eventCard) => {
+                const rect = eventCard.getBoundingClientRect();
+                const eventCenterX = rect.left + rect.width / 2;
+                const distance = Math.abs(eventCenterX - centerX);
+                if (distance < centeredDistance) {
+                    centeredDistance = distance;
+                    centeredEvent = eventCard;
+                }
+            });
+
+            return centeredEvent;
+        }
+
+        function updateBranchTimelineCenterState(timeline) {
+            if (!timeline || !timeline.isConnected) return;
+
+            const centeredEvent = getBranchTimelineCenteredEvent(timeline);
+            const centeredKey = centeredEvent ? String(centeredEvent.dataset.branchEventKey || '') : '';
+            const extraRecordKeys = new Set(BRANCH_EXTRA_GAME_RECORD_KEYS[centeredKey] || []);
+            timeline.querySelectorAll('.branch-event').forEach((eventCard) => {
+                const isCentered = eventCard === centeredEvent;
+                const isExtraRecordVisible = extraRecordKeys.has(String(eventCard.dataset.branchEventKey || ''));
+                const isRecordVisible = isCentered || isExtraRecordVisible;
+                eventCard.classList.toggle('is-center', isCentered);
+                eventCard.classList.toggle('is-extra-record-visible', isExtraRecordVisible);
+                eventCard.querySelectorAll('.branch-game-record-trigger').forEach((button) => {
+                    button.tabIndex = isRecordVisible ? 0 : -1;
+                    button.setAttribute('aria-hidden', isRecordVisible ? 'false' : 'true');
+                });
+            });
+        }
+
+        function scheduleBranchTimelineCenterUpdate(timeline) {
+            if (!timeline) return;
+            if (branchTimelineCenterRaf) window.cancelAnimationFrame(branchTimelineCenterRaf);
+            branchTimelineCenterRaf = window.requestAnimationFrame(() => {
+                branchTimelineCenterRaf = 0;
+                updateBranchTimelineCenterState(timeline);
+            });
+        }
+
+        function getBranchTimelineWheelDelta(event, timeline) {
+            const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
+            const deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
+            const rawDelta = Math.abs(deltaX) > Math.abs(deltaY) ? deltaX : deltaY;
+            if (!rawDelta) return 0;
+
+            if (event.deltaMode === 1) {
+                return rawDelta * 48;
+            }
+
+            if (event.deltaMode === 2) {
+                return rawDelta * Math.max(320, timeline.clientWidth * 0.82);
+            }
+
+            return rawDelta;
+        }
+
+        function suspendBranchTimelineSnap(timeline) {
+            timeline.classList.add('is-wheel-scrolling');
+            window.clearTimeout(branchTimelineWheelSnapTimer);
+            branchTimelineWheelSnapTimer = window.setTimeout(() => {
+                timeline.classList.remove('is-wheel-scrolling');
+            }, 180);
+        }
+
+        function handleBranchTimelineWheel(event) {
+            if (event.defaultPrevented || !isBranchTimelineActive()) return;
+
+            const page = refs.branchTimelinePage;
+            const timeline = page ? page.querySelector('.branch-timeline') : null;
+            if (!timeline) return;
+
+            const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+            if (maxScroll <= 1) return;
+
+            const delta = getBranchTimelineWheelDelta(event, timeline);
+            if (!delta) return;
+
+            const atStart = timeline.scrollLeft <= 0;
+            const atEnd = timeline.scrollLeft >= maxScroll - 1;
+            if ((delta < 0 && atStart) || (delta > 0 && atEnd)) return;
+
+            event.preventDefault();
+            suspendBranchTimelineSnap(timeline);
+            timeline.scrollLeft = Math.min(maxScroll, Math.max(0, timeline.scrollLeft + delta));
+        }
+
+        function handleBranchTimelinePointerDown(event) {
+            if (!isBranchTimelineActive()) return;
+            if (event.pointerType === 'mouse' && event.button !== 0) return;
+            if (event.target && event.target.closest && event.target.closest('a, button, input, select, textarea')) return;
+
+            const timeline = event.currentTarget;
+            if (!timeline) return;
+
+            const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+            if (maxScroll <= 1) return;
+
+            branchTimelineDragGesture = {
+                timeline,
+                pointerId: event.pointerId,
+                startX: event.clientX,
+                startY: event.clientY,
+                startScrollLeft: timeline.scrollLeft,
+                dragging: false
+            };
+
+            window.clearTimeout(branchTimelineDragReleaseTimer);
+            if (typeof timeline.setPointerCapture === 'function') {
+                try {
+                    timeline.setPointerCapture(event.pointerId);
+                } catch (_) {}
+            }
+        }
+
+        function releaseBranchTimelineDrag(shouldSuppressClick = false) {
+            const gesture = branchTimelineDragGesture;
+            if (!gesture) return;
+
+            const { timeline, pointerId, dragging } = gesture;
+            branchTimelineDragGesture = null;
+
+            if (typeof timeline.releasePointerCapture === 'function') {
+                try {
+                    timeline.releasePointerCapture(pointerId);
+                } catch (_) {}
+            }
+
+            if (dragging || shouldSuppressClick) {
+                branchTimelineSuppressClickUntil = Date.now() + 280;
+            }
+
+            window.clearTimeout(branchTimelineDragReleaseTimer);
+            branchTimelineDragReleaseTimer = window.setTimeout(() => {
+                timeline.classList.remove('is-drag-scrolling');
+            }, dragging ? 140 : 0);
+        }
+
+        function handleBranchTimelinePointerMove(event) {
+            const gesture = branchTimelineDragGesture;
+            if (!gesture || event.pointerId !== gesture.pointerId) return;
+
+            const dx = event.clientX - gesture.startX;
+            const dy = event.clientY - gesture.startY;
+            const absX = Math.abs(dx);
+            const absY = Math.abs(dy);
+
+            if (!gesture.dragging) {
+                if (absX < BRANCH_TIMELINE_DRAG_START_X && absY < BRANCH_TIMELINE_DRAG_START_X) return;
+                if (absY > absX * BRANCH_TIMELINE_DRAG_CANCEL_RATIO) {
+                    releaseBranchTimelineDrag(false);
+                    return;
+                }
+                if (absX < BRANCH_TIMELINE_DRAG_START_X) return;
+
+                gesture.dragging = true;
+                gesture.timeline.classList.add('is-drag-scrolling');
+            }
+
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+
+            const maxScroll = gesture.timeline.scrollWidth - gesture.timeline.clientWidth;
+            gesture.timeline.scrollLeft = Math.min(maxScroll, Math.max(0, gesture.startScrollLeft - dx));
+        }
+
+        function handleBranchTimelinePointerUp(event) {
+            const gesture = branchTimelineDragGesture;
+            if (!gesture || event.pointerId !== gesture.pointerId) return;
+
+            if (gesture.dragging && event.cancelable) {
+                event.preventDefault();
+            }
+
+            releaseBranchTimelineDrag(gesture.dragging);
+        }
+
+        function handleBranchTimelinePointerCancel(event) {
+            const gesture = branchTimelineDragGesture;
+            if (!gesture || event.pointerId !== gesture.pointerId) return;
+            releaseBranchTimelineDrag(false);
+        }
+
+        function handleBranchTimelineClick(event) {
+            if (Date.now() > branchTimelineSuppressClickUntil) return;
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        function appendPlaybackRestartToken(url) {
+            const value = String(url || '').trim();
+            if (!value) return '';
+            const separator = value.includes('?') ? '&' : '?';
+            return `${value}${separator}_restart=${Date.now()}`;
+        }
+
+        async function canLoadBranchVideo(url, hasFallback) {
+            const value = String(url || '').trim();
+            if (!value) return false;
+            if (!hasFallback) return true;
+
+            try {
+                const response = await fetch(value, { method: 'HEAD', cache: 'no-store' });
+                if (response.ok) return true;
+                if (response.status !== 405) return false;
+            } catch (_) {
+                return false;
+            }
+
+            try {
+                const response = await fetch(value, {
+                    method: 'GET',
+                    headers: { Range: 'bytes=0-0' },
+                    cache: 'no-store'
+                });
+                return response.ok || response.status === 206;
+            } catch (_) {
+                return false;
+            }
+        }
+
+        async function openBranchGameEvolutionVideo(vm) {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const module = getAchievementGameEvolutionModule(raw);
+            if (!module) return;
+
+            const title = module.title || vm.title || uiText('Game evolution video', '棋局演化视频');
+            const videoUrl = String(module.url || '').trim();
+            const fallbackUrl = String(module.fallbackUrl || '').trim();
+            const poster = String(module.poster || '').trim();
+            const playableImage = fallbackUrl || poster;
+            const fallbackImageUrl = appendPlaybackRestartToken(playableImage);
+            const shouldUseVideo = await canLoadBranchVideo(videoUrl, Boolean(playableImage));
+            const sourceSgf = String(module.sourceSgf || '').trim();
+            const generator = String(module.generator || '').trim();
+            const sourceLine = sourceSgf
+                ? uiText(`Generated from SGF: ${sourceSgf}`, `由 SGF 棋谱生成：${sourceSgf}`)
+                : uiText('Generated from curated game-state data.', '由策展棋局状态数据生成。');
+            const generatorLine = generator
+                ? uiText(`Renderer: ${generator}`, `生成脚本：${generator}`)
+                : '';
+
+            const viewer = document.createElement('div');
+            viewer.className = 'photo-viewer branch-video-viewer';
+            viewer.innerHTML = `
+                <button class="close-viewer" type="button">×</button>
+                <div class="branch-video-panel">
+                    ${shouldUseVideo ? `<video class="branch-video-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
+                    ${fallbackImageUrl ? `<img class="branch-video-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
+                    <div class="branch-video-meta">
+                        <strong>${escapeHtml(title)}</strong>
+                        <span>${escapeHtml(sourceLine)}</span>
+                        ${generatorLine ? `<span>${escapeHtml(generatorLine)}</span>` : ''}
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(viewer);
+
+            const video = viewer.querySelector('.branch-video-player');
+            const fallback = viewer.querySelector('.branch-video-fallback');
+            if (video && fallback) {
+                video.addEventListener('error', () => {
+                    video.hidden = true;
+                    fallback.src = appendPlaybackRestartToken(playableImage);
+                    fallback.hidden = false;
+                });
+            }
+            if (video) {
+                const restartVideo = () => {
+                    try {
+                        video.currentTime = 0;
+                    } catch (_) {}
+                    if (typeof video.play === 'function') {
+                        video.play().catch(() => {});
+                    }
+                };
+                video.addEventListener('loadedmetadata', restartVideo, { once: true });
+                restartVideo();
+            }
+
+            const closeViewer = () => {
+                if (video && typeof video.pause === 'function') video.pause();
+                viewer.remove();
+            };
+
+            viewer.querySelector('.close-viewer').onclick = closeViewer;
+            viewer.addEventListener('click', (event) => {
+                if (event.target === viewer) closeViewer();
+            });
+
+            const handleKey = (event) => {
+                if (event.key === 'Escape') closeViewer();
+            };
+            document.addEventListener('keydown', handleKey);
+            const observer = new MutationObserver(() => {
+                if (!document.body.contains(viewer)) {
+                    document.removeEventListener('keydown', handleKey);
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true });
+        }
+
+        function bindBranchTimelineInteractions() {
+            const page = refs.branchTimelinePage;
+            if (!page) return;
+
+            if (page.dataset.wheelBound !== 'true') {
+                page.dataset.wheelBound = 'true';
+                page.addEventListener('wheel', handleBranchTimelineWheel, { passive: false, capture: true });
+            }
+
+            const timeline = page.querySelector('.branch-timeline');
+            if (timeline && timeline.dataset.wheelBound !== 'true') {
+                timeline.dataset.wheelBound = 'true';
+                timeline.addEventListener('wheel', handleBranchTimelineWheel, { passive: false });
+            }
+
+            if (timeline && timeline.dataset.dragBound !== 'true') {
+                timeline.dataset.dragBound = 'true';
+                timeline.addEventListener('pointerdown', handleBranchTimelinePointerDown);
+                timeline.addEventListener('pointermove', handleBranchTimelinePointerMove, { passive: false });
+                timeline.addEventListener('pointerup', handleBranchTimelinePointerUp);
+                timeline.addEventListener('pointercancel', handleBranchTimelinePointerCancel);
+                timeline.addEventListener('lostpointercapture', handleBranchTimelinePointerCancel);
+                timeline.addEventListener('click', handleBranchTimelineClick, true);
+            }
+
+            if (timeline && timeline.dataset.centerBound !== 'true') {
+                timeline.dataset.centerBound = 'true';
+                timeline.addEventListener('scroll', () => scheduleBranchTimelineCenterUpdate(timeline), { passive: true });
+            }
+
+            if (page.dataset.centerResizeBound !== 'true') {
+                page.dataset.centerResizeBound = 'true';
+                window.addEventListener('resize', () => {
+                    const activeTimeline = refs.branchTimelinePage ? refs.branchTimelinePage.querySelector('.branch-timeline') : null;
+                    scheduleBranchTimelineCenterUpdate(activeTimeline);
+                });
+            }
+
+            scheduleBranchTimelineCenterUpdate(timeline);
+
+            page.querySelectorAll('.branch-video-trigger').forEach((button) => {
+                if (button.dataset.videoBound === 'true') return;
+                button.dataset.videoBound = 'true';
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    const index = Number(button.dataset.branchVideoIndex || -1);
+                    if (!Number.isInteger(index) || index < 0) return;
+                    openBranchGameEvolutionVideo(getVm(index));
+                });
+            });
+        }
+
+        function buildBranchEventCard(vm, index) {
+            const raw = vm.raw || {};
+            const sideClass = index % 2 === 0 ? 'is-left' : 'is-right';
+            const stackClass = 'is-visual-first';
+            const eventKey = getBranchEventKey(vm);
+            const eventKeyClass = eventKey ? `branch-event--${eventKey.replace(/[^a-z0-9_-]/gi, '-')}` : '';
+            const area = getAchievementField(raw, 'area', vm.category || tx('aiHistory'));
+            const summary = stripHtml(lx(raw.description) || vm.descriptionText || '');
+            const analysisSections = buildAnalysisSections(raw).slice(0, 3);
+            const elementsHtml = buildBranchMilestoneElements(vm);
+            const analysisHtml = analysisSections.length
+                ? `<div class="branch-analysis">${analysisSections.map((section) => `
+                    <div class="branch-analysis-item"><strong>${escapeHtml(section.label)}</strong> ${escapeHtml(section.text)}</div>
+                `).join('')}</div>`
+                : '';
+
+            return `
+                <article class="branch-event ${sideClass} ${stackClass} ${eventKeyClass}" data-branch-event-key="${escapeHtml(eventKey)}">
+                    <span class="branch-event-dot" aria-hidden="true"></span>
+                    <div class="branch-event-content">
+                        <div class="branch-meta">
+                            <span class="branch-chip">${escapeHtml(area)}</span>
+                            <span>${escapeHtml(String(vm.year || ''))}</span>
+                        </div>
+                        <h2 class="branch-event-title">${escapeHtml(vm.title || tx('aiHistoryEvent'))}</h2>
+                        <p class="branch-event-summary">${escapeHtml(summary)}</p>
+                        ${elementsHtml}
+                        ${analysisHtml}
+                    </div>
+                    ${buildBranchVisual(vm, index)}
+                </article>
+            `;
+        }
+
+        function renderBranchTimelinePage() {
+            if (!refs.branchTimelinePage) return;
+
+            const option = getActiveStorylineOption();
+            const title = getStorylineLabel(option) || tx('branchGaming');
+            const note = getStorylineNote(option);
+            const cards = milestoneList.map((_, index) => buildBranchEventCard(getVm(index), index)).join('');
+            const subtitleHtml = note
+                ? `<p class="branch-hero-subtitle">${escapeHtml(note)}</p>`
+                : '';
+
+            refs.branchTimelinePage.innerHTML = `
+                <section class="branch-hero">
+                    <div>
+                        <h1 class="branch-hero-title">${buildBranchHeroTitle(title)}</h1>
+                        ${subtitleHtml}
+                    </div>
+                    <div class="branch-pixel-scene" aria-hidden="true"></div>
+                </section>
+                <section class="branch-timeline" style="--branch-count: ${Math.max(1, milestoneList.length)}" aria-label="${escapeHtml(title)}">
+                    ${cards || `<div class="empty-state">${escapeHtml(tx('noMilestones'))}</div>`}
+                </section>
+            `;
+            bindBranchTimelineInteractions();
         }
 
         function buildCommentaryBodyHtml(section) {
@@ -6906,6 +9716,29 @@
             return rawId || `${activeStorylineId}:${currentIndex}`;
         }
 
+        function getCompletionQuizClock() {
+            return window.performance && typeof window.performance.now === 'function'
+                ? window.performance.now()
+                : Date.now();
+        }
+
+        function markCompletionQuizView(vm) {
+            const quizKey = getCompletionQuizKey(vm);
+            if (quizKey === completionQuizViewKey) return;
+            completionQuizViewKey = quizKey;
+            completionQuizViewStartedAt = getCompletionQuizClock();
+        }
+
+        function hasCompletionQuizDwellElapsed(vm) {
+            const quizKey = getCompletionQuizKey(vm);
+            if (!quizKey) return false;
+            if (quizKey !== completionQuizViewKey) {
+                markCompletionQuizView(vm);
+                return false;
+            }
+            return getCompletionQuizClock() - completionQuizViewStartedAt >= COMPLETION_QUIZ_MIN_DWELL_MS;
+        }
+
         function isTopAchievementStorylineActive() {
             return activeStorylineId === 'bench-council-ai100';
         }
@@ -7025,10 +9858,9 @@
 
         function maybeOpenCompletionQuiz(onComplete) {
             if (!isTopAchievementStorylineActive()) return false;
-            if (Date.now() - currentMilestoneViewedAt < COMPLETION_QUIZ_MIN_VIEW_MS) return false;
             const vm = getVm(currentIndex);
             const quizKey = getCompletionQuizKey(vm);
-            if (!quizKey || completedQuizMilestoneKeys.has(quizKey) || getQuizItems(vm).length === 0) {
+            if (!quizKey || !hasCompletionQuizDwellElapsed(vm) || completedQuizMilestoneKeys.has(quizKey) || getQuizItems(vm).length === 0) {
                 return false;
             }
             return openCompletionQuiz(vm, onComplete);
@@ -7126,10 +9958,31 @@
         }
 
         function getAchievementSources(rawMilestone) {
+            const papers = rawMilestone && Array.isArray(rawMilestone.papers)
+                ? rawMilestone.papers.map((paper) => ({
+                    type: paper.journal
+                        ? {
+                            en: `Paper · ${paper.journal}`,
+                            zh: `论文 · ${paper.journal}`
+                        }
+                        : {
+                            en: 'Paper',
+                            zh: '论文'
+                        },
+                    label: paper.title,
+                    url: paper.url
+                }))
+                : [];
             const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
                 ? rawMilestone.achievement.sources
                 : [];
-            return sources.filter((source) => source && source.url && lx(source.label));
+            const seenUrls = new Set();
+            return [...papers, ...sources].filter((source) => {
+                if (!source || !source.url || !lx(source.label)) return false;
+                if (seenUrls.has(source.url)) return false;
+                seenUrls.add(source.url);
+                return true;
+            });
         }
 
         function getAchievementDemoSteps(rawMilestone) {
@@ -7355,6 +10208,33 @@
                     ${mediaTitle ? `<div class="bench-paper-image-caption">${escapeHtml(mediaTitle)}</div>` : ''}
                 </div>
             `, notes);
+        }
+
+        function getAchievementGameEvolutionModule(rawMilestone) {
+            return getAchievementVisualModules(rawMilestone).find((module) => module.type === 'gameEvolutionVideo') || null;
+        }
+
+        function buildGameEvolutionVideoDemo(rawMilestone, module) {
+            const title = module.title || getAchievementField(rawMilestone, 'artifact', uiText('Game evolution clip', '棋局演化短片'));
+            const poster = module.poster || getGenericDemoImage(rawMilestone);
+            const posterAttr = poster ? ` poster="${escapeHtml(poster)}"` : '';
+            const sourceLine = module.sourceSgf
+                ? uiText(`Generated from SGF: ${module.sourceSgf}`, `由 SGF 生成：${module.sourceSgf}`)
+                : (module.description || uiText('Generated from a curated game record.', '由策展棋谱生成。'));
+            const interactionLine = uiText(
+                'Scrub or replay the clip to watch the opening compress into a critical midgame state.',
+                '拖动或重放短片，观察开局如何快速压缩到关键中盘。'
+            );
+
+            return buildPaperDemo(`
+                <div class="bench-game-video-demo">
+                    <video src="${escapeHtml(module.url)}"${posterAttr} controls muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
+                    ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" hidden>` : ''}
+                </div>
+            `, [
+                [uiText('SGF cue', 'SGF 线索'), sourceLine],
+                [uiText('interaction', '互动点'), interactionLine]
+            ]);
         }
 
         function buildSnarcVisualDemo(raw) {
@@ -8545,7 +11425,10 @@
                 dbscan: buildDbscanDemo,
                 spectral: buildSpectralDemo
             };
-            const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
+            const gameEvolutionModule = getAchievementGameEvolutionModule(raw);
+            const visualHtml = gameEvolutionModule
+                ? buildGameEvolutionVideoDemo(raw, gameEvolutionModule)
+                : (visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw));
             const useSourcePanel = getAchievementDemoPanel(raw) === 'sources';
 
             const stepHtml = useSourcePanel
@@ -8674,10 +11557,30 @@
 
         function renderPage(index) {
             const vm = getVm(index);
-            currentMilestoneViewedAt = Date.now();
+            markCompletionQuizView(vm);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
+            const branchTimelineActive = isBranchTimelineActive();
+            document.documentElement.classList.toggle('branch-timeline-active', branchTimelineActive);
+            document.body.classList.toggle('branch-timeline-active', branchTimelineActive);
+            if (refs.viewport) refs.viewport.classList.toggle('is-branch-timeline', branchTimelineActive);
+            refs.stage.classList.toggle('is-branch-timeline', branchTimelineActive);
             refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
+            if (refs.branchTimelinePage) {
+                refs.branchTimelinePage.hidden = !branchTimelineActive;
+                if (!branchTimelineActive) {
+                    refs.branchTimelinePage.innerHTML = '';
+                }
+            }
+            if (branchTimelineActive) {
+                clearGlobeMarkers();
+                resetOrbitOverlay();
+                resetInlineMedia();
+                renderBranchTimelinePage();
+                document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || vm.title}`;
+                preloadAdjacentAssets(index);
+                return;
+            }
             renderHeader(vm);
             if (isResearchDossierActive()) {
                 clearGlobeMarkers();
@@ -9066,7 +11969,7 @@
         }
 
         if (!milestoneList.length) {
-            refs.stage.innerHTML = `<div class="empty-state">${escapeHtml(tx('noMilestones'))}</div>`;
+            refs.stage.innerHTML = '<div class="empty-state">暂无里程碑数据</div>';
         } else {
             renderStorylineSelect();
             if (refs.storylineSelect) {

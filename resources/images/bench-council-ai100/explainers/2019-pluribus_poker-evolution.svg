@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Pluribus multiplayer poker evolution</title>
+  <desc id="desc">A local explainer poster for six-player poker state evolution around a blueprint strategy.</desc>
+  <rect width="960" height="540" fill="#0c0a08"/>
+  <ellipse cx="480" cy="284" rx="348" ry="188" fill="#173326" stroke="#f68900" stroke-width="4"/>
+  <ellipse cx="480" cy="284" rx="220" ry="108" fill="#0f241b" stroke="#6ee7b7" stroke-width="2"/>
+  <g fill="#f4efe5" font-family="Arial, sans-serif" font-weight="800">
+    <text x="78" y="82" font-size="30" fill="#f68900">Pluribus table trajectory</text>
+    <text x="78" y="118" font-size="17" fill="#cbd5e1">six seats -> public betting path -> limited-lookahead search</text>
+  </g>
+  <g fill="#f8fafc" stroke="#111827" stroke-width="3">
+    <circle cx="480" cy="91" r="34"/>
+    <circle cx="754" cy="210" r="34"/>
+    <circle cx="686" cy="421" r="34"/>
+    <circle cx="274" cy="421" r="34"/>
+    <circle cx="206" cy="210" r="34"/>
+    <circle cx="480" cy="477" r="34"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#0f172a" text-anchor="middle">
+    <text x="480" y="98">P1</text>
+    <text x="754" y="217">P2</text>
+    <text x="686" y="428">P3</text>
+    <text x="274" y="428">P4</text>
+    <text x="206" y="217">P5</text>
+    <text x="480" y="484">P6</text>
+  </g>
+  <g transform="translate(374 226)">
+    <rect x="0" y="0" width="212" height="92" rx="18" fill="#172554" stroke="#93c5fd" stroke-width="3"/>
+    <text x="106" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#bfdbfe">BLUEPRINT</text>
+    <text x="106" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#bfdbfe">STRATEGY</text>
+  </g>
+  <path d="M480 126 V216 M724 232 L592 260 M662 398 L572 318 M298 398 L388 318 M236 232 L368 260 M480 443 V326" fill="none" stroke="#f8fafc" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 10"/>
+  <circle cx="480" cy="272" r="13" fill="#f68900"/>
+</svg>
