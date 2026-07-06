@@ -57,7 +57,12 @@
                 storylineSelector: 'Storyline',
                 achievementMap: 'Achievement Map',
                 researchDossier: 'Research Dossier',
-                sourceMaterials: 'Source Materials'
+                sourceMaterials: 'Source Materials',
+                branchGaming: 'AI in Board & Tabletop Games',
+                analysisWhat: 'The Milestone',
+                analysisHow: 'Technical Approach',
+                analysisWhy: 'Core Breakthrough',
+                readPaper: 'Read Paper'
             },
             zh: {
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
@@ -112,7 +117,12 @@
                 storylineSelector: '故事线',
                 achievementMap: '成就地图',
                 researchDossier: '研究档案',
-                sourceMaterials: '资料来源'
+                sourceMaterials: '资料来源',
+                branchGaming: 'AI 在棋牌与博弈论的演进',
+                analysisWhat: '里程碑成就',
+                analysisHow: '技术底层逻辑',
+                analysisWhy: '核心技术突破',
+                readPaper: '阅读论文'
             }
         }
     };
