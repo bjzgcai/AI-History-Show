@@ -2801,6 +2801,10 @@ module.exports = {
       "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
       "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
     },
+    "quoteLabel": {
+      "en": "Paper excerpt",
+      "zh": "论文摘录"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
@@ -10587,6 +10591,10 @@ module.exports = {
       "en": "playing Atari with deep reinforcement learning",
       "zh": "用深度强化学习玩 Atari"
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Playing Atari with Deep Reinforcement Learning",
@@ -11602,6 +11610,10 @@ module.exports = {
     "quoteText": {
       "en": "Specialized chess search hardware",
       "zh": "专用国际象棋搜索硬件"
+    },
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
     },
     "quoteMeta": {
       "workTitle": {
@@ -13835,6 +13847,10 @@ module.exports = {
       "en": "Bootstrapped value prediction",
       "zh": "自举式价值预测"
     },
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Learning to predict by temporal differences",
@@ -15199,6 +15215,10 @@ module.exports = {
       "en": "Non-numerical programs could play",
       "zh": "非数值程序也可以对弈"
     },
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteMeta": {
       "workTitle": {
         "en": "Logical or non-mathematical programmes",
@@ -15546,6 +15566,10 @@ module.exports = {
     "quoteText": {
       "en": "Perfect play in checkers is a draw",
       "zh": "跳棋完美对弈结果为和棋"
+    },
+    "quoteLabel": {
+      "en": "Result summary",
+      "zh": "结果摘要"
     },
     "quoteMeta": {
       "workTitle": {
