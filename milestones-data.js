@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-06 07:46
+// 生成时间: 2026-07-06 08:31
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -97,8 +97,8 @@ const milestones = [
       "zh": "\"学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。\""
     },
     "quoteAttribution": {
-      "en": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
-      "zh": "《达特茅斯人工智能夏季研究项目提案》, 约翰·麦卡锡、马文·L·明斯基、纳撒尼尔·罗切斯特、克劳德·E·香农"
+      "en": "<em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
+      "zh": "《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农"
     },
     "quoteMeta": {
       "speaker": {
@@ -147,9 +147,9 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
       ],
       "imageMeta": {
@@ -263,8 +263,8 @@ const milestones = [
       "zh": "\"这一理论在生物物理学和心理学之间架起了一座桥梁。\""
     },
     "quoteAttribution": {
-      "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
-      "zh": "《感知机：大脑中信息存储与组织的概率模型》, 弗兰克·罗森布拉特"
+      "en": "<em>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</em>, Frank Rosenblatt",
+      "zh": "《感知机：一种用于大脑信息存储与组织的概率模型》，弗兰克·罗森布拉特"
     },
     "quoteMeta": {
       "speaker": {
@@ -322,22 +322,22 @@ const milestones = [
       "imageMeta": {
         "resources/images/1957-perceptron/people/1957-perceptron_people_02.png": {
           "caption": {
-            "en": "Frank Rosenblatt",
-            "zh": "弗兰克·罗森布拉特"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Perceptron inventor",
-            "zh": "感知机发明者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
           "caption": {
-            "en": "Frank Rosenblatt",
-            "zh": "弗兰克·罗森布拉特"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Perceptron inventor and early demonstration photo",
-            "zh": "感知机发明者与早期演示资料"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
@@ -440,8 +440,8 @@ const milestones = [
       "zh": "\"他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。\""
     },
     "quoteAttribution": {
-      "en": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
-      "zh": "《感知机：计算几何导论》, 马文·明斯基、西摩尔·帕普特"
+      "en": "<em>Perceptrons: An Introduction to Computational Geometry</em>, Marvin Minsky, Seymour Papert",
+      "zh": "《感知机：计算几何导论》，马文·明斯基、西摩·派珀特"
     },
     "quoteMeta": {
       "speaker": {
@@ -497,12 +497,12 @@ const milestones = [
       "imageMeta": {
         "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
           "caption": {
-            "en": "Marvin Minsky",
-            "zh": "马文·明斯基"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Co-author of Perceptrons",
-            "zh": "《感知器》作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
@@ -621,8 +621,8 @@ const milestones = [
       "zh": "\"能够创造有用的新特征，使反向传播区别于更早、更简单的方法。\""
     },
     "quoteAttribution": {
-      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
-      "zh": "《通过误差反向传播学习表示》, 戴维·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯"
+      "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+      "zh": "《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
     },
     "quoteMeta": {
       "speaker": {
@@ -671,10 +671,10 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
         "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
         "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
       ],
       "imageMeta": {
@@ -690,32 +690,32 @@ const milestones = [
         },
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
           "caption": {
-            "en": "Geoffrey Hinton",
-            "zh": "杰弗里·辛顿"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Backpropagation co-author and deep learning pioneer",
-            "zh": "反向传播共同作者，深度学习先驱"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
           "caption": {
-            "en": "David Rumelhart",
-            "zh": "大卫·鲁梅尔哈特"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Lead author of the backpropagation paper",
-            "zh": "反向传播论文主要作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
           "caption": {
-            "en": "Geoffrey Hinton",
-            "zh": "杰弗里·辛顿"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Backpropagation co-author in the 1980s",
-            "zh": "反向传播共同作者，1980 年代影像"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
@@ -811,8 +811,8 @@ const milestones = [
       "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
     },
     "quoteAttribution": {
-      "en": "《Finding Structure in Time》, Jeffrey L. Elman",
-      "zh": "《在时间中发现结构》, 杰弗里·L·埃尔曼"
+      "en": "<em>Finding Structure in Time</em>, Jeffrey L. Elman",
+      "zh": "《在时间中发现结构》，杰弗里·埃尔曼"
     },
     "quoteMeta": {
       "speaker": {
@@ -877,12 +877,12 @@ const milestones = [
         },
         "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
           "caption": {
-            "en": "Jeffrey Elman",
-            "zh": "杰弗里·埃尔曼"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Creator of the Simple RNN / Elman network",
-            "zh": "Simple RNN / Elman 网络提出者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -955,8 +955,8 @@ const milestones = [
       "zh": "\"专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。\""
     },
     "quoteAttribution": {
-      "en": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
-      "zh": "《基于梯度的学习在文档识别中的应用》, 扬·勒昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
+      "en": "<em>Gradient-Based Learning Applied to Document Recognition</em>, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
+      "zh": "《基于梯度的学习在文档识别中的应用》，杨立昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
     },
     "quoteMeta": {
       "speaker": {
@@ -1012,22 +1012,22 @@ const milestones = [
       "imageMeta": {
         "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
           "caption": {
-            "en": "Yann LeCun",
-            "zh": "杨立昆"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "CNN pioneer and LeNet researcher",
-            "zh": "CNN 先驱，LeNet 研究者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
           "caption": {
-            "en": "Yann LeCun",
-            "zh": "杨立昆"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "CNN pioneer and LeNet researcher",
-            "zh": "CNN 先驱，LeNet 研究者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
@@ -1123,8 +1123,8 @@ const milestones = [
       "zh": "\"长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。\""
     },
     "quoteAttribution": {
-      "en": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
-      "zh": "《长短期记忆》, 塞普·霍赫赖特、于尔根·施密德胡伯"
+      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter, Jürgen Schmidhuber",
+      "zh": "《长短期记忆》，塞普·霍赫赖特、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
       "speaker": {
@@ -1173,22 +1173,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg",
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
         "resources/images/1997-lstm/people/1997-lstm_people_01.png"
       ],
       "imageMeta": {
-        "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg": {
-          "caption": {
-            "en": "Jürgen Schmidhuber",
-            "zh": "尤尔根·施密德胡伯"
-          },
-          "subcaption": {
-            "en": "LSTM co-inventor, 1997 photo",
-            "zh": "LSTM 共同发明者，1997 年照片"
-          }
-        },
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
           "caption": {
             "en": "Architecture",
@@ -1211,12 +1200,12 @@ const milestones = [
         },
         "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
           "caption": {
-            "en": "Jürgen Schmidhuber",
-            "zh": "尤尔根·施密德胡伯"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "LSTM co-inventor",
-            "zh": "LSTM 共同发明者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -1302,8 +1291,8 @@ const milestones = [
       "zh": "\"我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。\""
     },
     "quoteAttribution": {
-      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
-      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·E·辛顿"
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》，亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿"
     },
     "quoteMeta": {
       "speaker": {
@@ -1359,12 +1348,12 @@ const milestones = [
       "imageMeta": {
         "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
           "caption": {
-            "en": "Alex Krizhevsky",
-            "zh": "亚历克斯·克里热夫斯基"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AlexNet first author in team context",
-            "zh": "AlexNet 主要作者与团队资料"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
@@ -1470,8 +1459,8 @@ const milestones = [
       "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
     },
     "quoteAttribution": {
-      "en": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-      "zh": "《高速网络》, 鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+      "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+      "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
       "speaker": {
@@ -1536,12 +1525,12 @@ const milestones = [
         },
         "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
           "caption": {
-            "en": "Jürgen Schmidhuber",
-            "zh": "尤尔根·施密德胡伯"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Highway Network co-author",
-            "zh": "高速网络共同作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -1627,8 +1616,8 @@ const milestones = [
       "zh": "\"我们提出一种通过对抗过程估计生成模型的新框架。\""
     },
     "quoteAttribution": {
-      "en": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
-      "zh": "《生成对抗网络》, 伊恩·J·古德费洛等"
+      "en": "<em>Generative Adversarial Nets</em>, Ian J. Goodfellow et al.",
+      "zh": "《生成对抗网络》，伊恩·古德费洛等"
     },
     "quoteMeta": {
       "speaker": {
@@ -1773,8 +1762,8 @@ const milestones = [
       "zh": "\"我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。\""
     },
     "quoteAttribution": {
-      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
-      "zh": "《通过联合学习对齐与翻译的神经机器翻译》, 德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
+      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+      "zh": "《通过联合学习对齐与翻译的神经机器翻译》，德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
     },
     "quoteMeta": {
       "speaker": {
@@ -1839,12 +1828,12 @@ const milestones = [
         },
         "resources/images/2014-attention/people/2014-attention_people_01.png": {
           "caption": {
-            "en": "Yoshua Bengio",
-            "zh": "约书亚·本吉奥"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Attention mechanism researcher",
-            "zh": "注意力机制研究者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -1871,7 +1860,7 @@ const milestones = [
     },
     "title": {
       "en": "ResNet",
-      "zh": "残差网络"
+      "zh": "ResNet"
     },
     "subtitle": {
       "en": "Deep Learning and Unified Paradigms",
@@ -1956,8 +1945,8 @@ const milestones = [
       "zh": "\"我们提出一种残差学习框架，以便训练比以前深得多的网络。\""
     },
     "quoteAttribution": {
-      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
-      "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑"
+      "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+      "zh": "《用于图像识别的深度残差学习》，何恺明、张祥雨、任少卿、孙剑"
     },
     "quoteMeta": {
       "speaker": {
@@ -2098,7 +2087,7 @@ const milestones = [
     },
     "title": {
       "en": "DenseNet",
-      "zh": "密集连接网络"
+      "zh": "DenseNet"
     },
     "subtitle": {
       "en": "Deep Learning and Unified Paradigms",
@@ -2144,8 +2133,8 @@ const milestones = [
       "zh": "\"DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。\""
     },
     "quoteAttribution": {
-      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
-      "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·Q·温伯格"
+      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
+      "zh": "《密集连接卷积网络》，黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格"
     },
     "quoteMeta": {
       "speaker": {
@@ -2201,22 +2190,22 @@ const milestones = [
       "imageMeta": {
         "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
           "caption": {
-            "en": "Gao Huang",
-            "zh": "黄高"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "DenseNet author",
-            "zh": "DenseNet 作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
           "caption": {
-            "en": "Gao Huang",
-            "zh": "黄高"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "DenseNet author",
-            "zh": "DenseNet 作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
@@ -2253,7 +2242,7 @@ const milestones = [
     },
     "title": {
       "en": "Transformer",
-      "zh": "转换器架构"
+      "zh": "Transformer"
     },
     "subtitle": {
       "en": "Deep Learning and Unified Paradigms",
@@ -2299,8 +2288,8 @@ const milestones = [
       "zh": "\"我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。\""
     },
     "quoteAttribution": {
-      "en": "《Attention Is All You Need》, Ashish Vaswani et al.",
-      "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等"
+      "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al.",
+      "zh": "《注意力就是你所需要的一切》，阿希什·瓦斯瓦尼等"
     },
     "quoteMeta": {
       "speaker": {
@@ -2408,7 +2397,7 @@ const milestones = [
     },
     "title": {
       "en": "BERT",
-      "zh": "双向编码预训练模型"
+      "zh": "BERT"
     },
     "subtitle": {
       "en": "Large Models and Scientific Intelligence",
@@ -2467,8 +2456,8 @@ const milestones = [
       "zh": "\"BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。\""
     },
     "quoteAttribution": {
-      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
-      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等"
+      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al.",
+      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》，雅各布·德夫林等"
     },
     "quoteMeta": {
       "speaker": {
@@ -2517,19 +2506,19 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg",
+        "resources/images/2018-bert/people/2018-bert_people_03.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
       ],
       "imageMeta": {
-        "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg": {
+        "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
           "caption": {
-            "en": "Jacob Devlin",
-            "zh": "雅各布·德夫林"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "Lead author of the BERT paper",
-            "zh": "BERT 论文主要作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
@@ -2576,7 +2565,7 @@ const milestones = [
     },
     "title": {
       "en": "GPT",
-      "zh": "生成式预训练模型"
+      "zh": "GPT"
     },
     "subtitle": {
       "en": "Large Models and Scientific Intelligence",
@@ -2635,8 +2624,8 @@ const milestones = [
       "zh": "\"我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。\""
     },
     "quoteAttribution": {
-      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
-      "zh": "《通过生成式预训练改进语言理解》, 亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
+      "en": "<em>Improving Language Understanding by Generative Pre-Training</em>, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
+      "zh": "《通过生成式预训练改进语言理解》，亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
     },
     "quoteMeta": {
       "speaker": {
@@ -2719,27 +2708,27 @@ const milestones = [
           },
           "subcaption": {
             "en": "GPT",
-            "zh": "生成式预训练 Transformer"
+            "zh": "GPT"
           }
         },
         "resources/images/2018-gpt/people/2018-gpt_people_01.png": {
           "caption": {
-            "en": "Alec Radford",
-            "zh": "亚历克·拉德福德"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "GPT paper author",
-            "zh": "GPT 论文作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
           "caption": {
-            "en": "Sam Altman",
-            "zh": "萨姆·奥特曼"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "OpenAI CEO in GPT-era media footage",
-            "zh": "GPT 时代 OpenAI 相关媒体影像"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -2812,8 +2801,8 @@ const milestones = [
       "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
     },
     "quoteAttribution": {
-      "en": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
-      "zh": "《AI 费曼：受物理启发的符号回归方法》, 西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+      "en": "<em>AI Feynman: a physics-inspired method for symbolic regression</em>, Silviu-Marian Udrescu, Max Tegmark",
+      "zh": "《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
     },
     "quoteMeta": {
       "speaker": {
@@ -2870,12 +2859,12 @@ const milestones = [
       "imageMeta": {
         "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
           "caption": {
-            "en": "Max Tegmark",
-            "zh": "马克斯·泰格马克"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AI Feynman author",
-            "zh": "AI Feynman 作者"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
@@ -2953,8 +2942,8 @@ const milestones = [
       ]
     },
     "description": {
-      "en": "AlphaFold is DeepMind's protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
-      "zh": "AlphaFold 是 DeepMind 开发的蛋白质结构预测系统。第二代系统在 2020 年的国际蛋白质结构预测竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质三维结构，解决了长期困扰生物学界的重大难题。"
+      "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+      "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
     },
     "figures": [
       {
@@ -2991,8 +2980,8 @@ const milestones = [
       "zh": "\"在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。\""
     },
     "quoteAttribution": {
-      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
-      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等"
+      "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al.",
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》，约翰·江珀等"
     },
     "quoteMeta": {
       "speaker": {
@@ -3102,22 +3091,22 @@ const milestones = [
         },
         "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
           "caption": {
-            "en": "John Jumper",
-            "zh": "约翰·江珀"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AlphaFold 2 lead scientist",
-            "zh": "AlphaFold 2 首席科学家"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
           "caption": {
-            "en": "Demis Hassabis",
-            "zh": "戴密斯·哈萨比斯"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "DeepMind CEO",
-            "zh": "DeepMind CEO"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -3216,8 +3205,8 @@ const milestones = [
       "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
     },
     "quoteAttribution": {
-      "en": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
-      "zh": "《ReAct：在语言模型中协同推理与行动》, 姚顺雨等"
+      "en": "<em>ReAct: Synergizing Reasoning and Acting in Language Models</em>, Shunyu Yao et al.",
+      "zh": "《ReAct：在语言模型中协同推理与行动》，姚顺雨等"
     },
     "quoteMeta": {
       "speaker": {
@@ -3266,21 +3255,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2023-agents/historical/2023-agents_historical_01.png",
         "resources/images/2023-agents/historical/2023-agents_historical_02.png",
-        "resources/images/2023-agents/historical/2023-agents_historical_03.png"
+        "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+        "resources/images/2023-agents/historical/2023-agents_historical_04.png"
       ],
       "imageMeta": {
-        "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-          "caption": {
-            "en": "Historical photo",
-            "zh": "历史照片"
-          },
-          "subcaption": {
-            "en": "Agents: LLM-Driven Autonomous Systems",
-            "zh": "智能体：LLM驱动的自主系统"
-          }
-        },
         "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
           "caption": {
             "en": "Historical photo",
@@ -3292,6 +3271,16 @@ const milestones = [
           }
         },
         "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+          "caption": {
+            "en": "Historical photo",
+            "zh": "历史照片"
+          },
+          "subcaption": {
+            "en": "Agents: LLM-Driven Autonomous Systems",
+            "zh": "智能体：LLM驱动的自主系统"
+          }
+        },
+        "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
           "caption": {
             "en": "Historical photo",
             "zh": "历史照片"
@@ -3371,7 +3360,7 @@ const milestones = [
       },
       {
         "name": {
-          "en": "UC Berkeley Team",
+          "en": "Berkeley Team",
           "zh": "伯克利团队"
         },
         "role": {
@@ -3390,8 +3379,8 @@ const milestones = [
       "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
     },
     "quoteAttribution": {
-      "en": "《The AI Scientist》, Chris Lu et al.",
-      "zh": "《AI 科学家》, 克里斯·卢等"
+      "en": "<em>The AI Scientist</em>, Chris Lu et al.",
+      "zh": "《AI 科学家》，克里斯·卢等"
     },
     "quoteMeta": {
       "speaker": {
@@ -3479,22 +3468,22 @@ const milestones = [
         },
         "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
           "caption": {
-            "en": "UC Berkeley Team",
-            "zh": "伯克利团队"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "A-Lab developer team",
-            "zh": "A-Lab 开发团队"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         },
         "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
           "caption": {
-            "en": "Sakana AI Team",
-            "zh": "Sakana AI 团队"
+            "en": "Portrait",
+            "zh": "人物肖像"
           },
           "subcaption": {
-            "en": "AI Scientist developer team",
-            "zh": "AI Scientist 开发团队"
+            "en": "Relevant researcher photo",
+            "zh": "相关研究者照片"
           }
         }
       },
@@ -3557,12 +3546,12 @@ const milestones = [
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "到2025年，大语言模型进入百花齐放的竞争阶段。公开竞技场和评测榜单持续记录各类模型在推理、多模态、工具使用和部署效率上的快速进展，模型比较也从一次性论文结果转向持续公开观察。"
+      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。"
     },
     "figures": [
       {
         "name": {
-          "en": "Research Organizations",
+          "en": "Research Institutions",
           "zh": "研究机构"
         },
         "role": {
@@ -3581,8 +3570,8 @@ const milestones = [
       "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
     },
     "quoteAttribution": {
-      "en": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
-      "zh": "《聊天机器人竞技场：基于人类偏好评估大语言模型的开放平台》, 蒋维霖等"
+      "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, Wei-Lin Chiang et al.",
+      "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
     },
     "quoteMeta": {
       "speaker": {
@@ -3631,32 +3620,43 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg",
-        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg",
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png"
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
       ],
       "imageMeta": {
-        "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg": {
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
           "caption": {
-            "en": "Leaderboard",
-            "zh": "榜单示意"
+            "en": "Historical photo",
+            "zh": "历史照片"
           },
           "subcaption": {
-            "en": "LLM leaderboard snapshot",
-            "zh": "大语言模型榜单示意"
+            "en": "A Flourishing Competition Among Large Language Models",
+            "zh": "大语言模型百花齐放"
           }
         },
-        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg": {
+        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
           "caption": {
             "en": "Architecture",
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Large language model development pipeline",
-            "zh": "大语言模型发展流程示意"
+            "en": "A Flourishing Competition Among Large Language Models",
+            "zh": "大语言模型百花齐放 架构图"
           }
         },
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
+          "caption": {
+            "en": "Historical photo",
+            "zh": "历史照片"
+          },
+          "subcaption": {
+            "en": "A Flourishing Competition Among Large Language Models",
+            "zh": "大语言模型百花齐放"
+          }
+        },
+        "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
           "caption": {
             "en": "Historical photo",
             "zh": "历史照片"
@@ -3736,7 +3736,7 @@ const milestones = [
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
     },
     "quoteAttribution": {
-      "en": "《Computing Machinery and Intelligence》, Alan M. Turing, Mind, 1950",
+      "en": "<em>Computing Machinery and Intelligence</em>, Alan M. Turing, Mind, 1950",
       "zh": "《计算机器与智能》, 艾伦·M·图灵, 《心灵》, 1950"
     },
     "quoteMeta": {
@@ -3759,8 +3759,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols.",
@@ -3769,8 +3769,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Evaluation Logic",
-          "zh": "评估逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance.",
@@ -4134,7 +4134,7 @@ const milestones = [
       "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
     },
     "quoteAttribution": {
-      "en": "《Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I》, John McCarthy, Communications of the ACM, 1960",
+      "en": "<em>Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</em>, John McCarthy, Communications of the ACM, 1960",
       "zh": "《符号表达式的递归函数及其机器计算（第一部分）》, 约翰·麦卡锡, 《ACM 通讯》, 1960"
     },
     "quoteMeta": {
@@ -4157,8 +4157,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool.",
@@ -4167,8 +4167,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "API-Like Primitives",
-          "zh": "类 API 原语"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems.",
@@ -4525,7 +4525,7 @@ const milestones = [
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
     "quoteAttribution": {
-      "en": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
+      "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
       "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
     },
     "quoteMeta": {
@@ -4552,8 +4552,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Go had long resisted brute-force AI because its state space was enormous and expert play depended on pattern intuition. AlphaGo made the problem tractable by combining learned intuition with search, turning Go into a public demonstration of modern AI strategy.",
-          "zh": "围棋长期难以被蛮力 AI 攻克，因为状态空间巨大，高手对弈又依赖模式直觉。AlphaGo 通过把学习到的直觉与搜索结合起来，使这个问题变得可处理，并让围棋成为现代 AI 战略能力的公开展示。"
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -4562,8 +4562,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce dependence on expert game data.",
-          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
         }
       },
       {
@@ -4626,10 +4626,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Paper excerpt",
-      "zh": "论文摘录"
-    },
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -4637,32 +4633,6 @@ const milestones = [
         "zh": "AI 百大成就（BenchCouncil）"
       }
     },
-    "analysis": {
-      "what": {
-        "en": "AlphaGo defeated Lee Sedol and showed that AI could master Go, a game whose state space had long resisted brute-force search.",
-        "zh": "AlphaGo 击败李世石，证明 AI 可以掌握长期被认为难以靠蛮力搜索解决的围棋。"
-      },
-      "how": {
-        "en": "It combined policy networks, value networks, reinforcement learning from self-play and Monte Carlo tree search into one decision loop.",
-        "zh": "它把策略网络、价值网络、自我对弈强化学习和蒙特卡洛树搜索结合成一个决策闭环。"
-      },
-      "why": {
-        "en": "Go was too large for exhaustive enumeration. Neural networks supplied learned intuition, while tree search converted that intuition into concrete plans.",
-        "zh": "围棋空间过大，无法穷举。神经网络提供学习到的直觉，树搜索再把这种直觉转化为具体计划。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
-          "zh": "Mastering the Game of Go with Deep Neural Networks and Tree Search"
-        },
-        "authors": "David Silver et al.",
-        "journal": "Nature",
-        "year": 2016,
-        "url": "https://www.nature.com/articles/nature16961"
-      }
-    ],
     "achievement": {
       "area": {
         "en": "Reinforcement Learning",
@@ -4743,43 +4713,6 @@ const milestones = [
           "action": {
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "AlphaGo game evolution",
-            "zh": "AlphaGo 棋局演化"
-          },
-          "description": {
-            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-          },
-          "url": "resources/videos/game-evolution/2016-alphago.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -4970,7 +4903,7 @@ const milestones = [
       "zh": "\"奠定了 NP 完全性理论的基础\""
     },
     "quoteAttribution": {
-      "en": "《Stephen A. Cook A.M. Turing Award citation》, Association for Computing Machinery, 1982",
+      "en": "<em>Stephen A. Cook A.M. Turing Award citation</em>, Association for Computing Machinery, 1982",
       "zh": "《斯蒂芬·A·库克 ACM 图灵奖获奖说明》, 美国计算机协会, 1982"
     },
     "quoteMeta": {
@@ -4993,8 +4926,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Cook's 1971 STOC paper made Boolean satisfiability a canonical problem for comparing computational hardness. It showed that many different-looking problems can be connected by efficient reductions.",
@@ -5003,8 +4936,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Reduction Logic",
-          "zh": "归约逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The exhibit should emphasize the move from isolated hard problems to a shared map of hardness. If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently.",
@@ -5367,7 +5300,7 @@ const milestones = [
       "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
     },
     "quoteAttribution": {
-      "en": "《An Overview of Statistical Learning Theory》, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "en": "<em>An Overview of Statistical Learning Theory</em>, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
       "zh": "《统计学习理论概览》, 弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
     },
     "quoteMeta": {
@@ -5390,8 +5323,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "The 1971 Vapnik-Chervonenkis paper made generalization a mathematical question about uniform convergence across a whole class of events or hypotheses. Vapnik's 1995 book later synthesized the framework for statistical learning theory.",
@@ -5400,8 +5333,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Capacity Logic",
-          "zh": "容量逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The key display idea is the gap between fitting examples and performing on unseen data. VC dimension gives a way to reason about when model flexibility helps and when it becomes overfitting risk.",
@@ -5777,7 +5710,7 @@ const milestones = [
       "zh": "\"能够发现符号逻辑中定理的证明\""
     },
     "quoteAttribution": {
-      "en": "《The Logic Theory Machine: A Complex Information Processing System》, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "en": "<em>The Logic Theory Machine: A Complex Information Processing System</em>, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
       "zh": "《逻辑理论机：一个复杂信息处理系统》, 艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
     },
     "quoteMeta": {
@@ -5800,8 +5733,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition.",
@@ -5810,8 +5743,8 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Reasoning Logic",
-          "zh": "推理逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
           "en": "The display idea is proof search: start with a goal theorem, try symbolic transformations, and use heuristics to avoid blind enumeration. This makes reasoning visible as a sequence of choices.",
@@ -6161,7 +6094,7 @@ const milestones = [
       "zh": "\"给出了一个谓词演算的证明过程\""
     },
     "quoteAttribution": {
-      "en": "《Proving Theorems by Pattern Recognition - II》, Hao Wang, Bell System Technical Journal, 1961",
+      "en": "<em>Proving Theorems by Pattern Recognition - II</em>, Hao Wang, Bell System Technical Journal, 1961",
       "zh": "《通过模式识别证明定理（二）》, 王浩, 《贝尔系统技术期刊》, 1961"
     },
     "quoteMeta": {
@@ -6184,8 +6117,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Papers",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases.",
@@ -6194,12 +6127,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "Pattern Logic",
-          "zh": "模式逻辑"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
-          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears.",
-          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。"
+          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears. The key mechanism is Pattern-guided proof procedure, which links the source material to the visible demo behavior.",
+          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。 关键机制是模式引导证明过程，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -6584,7 +6517,7 @@ const milestones = [
       "zh": "\"给出了量词理论的统一证明过程\""
     },
     "quoteAttribution": {
-      "en": "《A Computing Procedure for Quantification Theory》, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "en": "<em>A Computing Procedure for Quantification Theory</em>, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
       "zh": "《量词理论的计算过程》, 马丁·戴维斯、希拉里·普特南, 《ACM 杂志》, 1960"
     },
     "quoteMeta": {
@@ -6607,8 +6540,8 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Published Papers",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
           "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage.",
@@ -6617,12 +6550,12 @@ const milestones = [
       },
       {
         "label": {
-          "en": "SAT Search",
-          "zh": "SAT 搜索"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
-          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible.",
-          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。"
+          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible. The key mechanism is SAT search with propagation, which links the source material to the visible demo behavior.",
+          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。 关键机制是带传播的 SAT 搜索，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -6983,7 +6916,7 @@ const milestones = [
       "zh": "\"易于实现且计算高效\""
     },
     "quoteAttribution": {
-      "en": "《Adam: A Method for Stochastic Optimization》, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "en": "<em>Adam: A Method for Stochastic Optimization</em>, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
       "zh": "《Adam：一种随机优化方法》, 迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
     },
     "quoteMeta": {
@@ -7021,7 +6954,7 @@ const milestones = [
         },
         "html": {
           "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly.",
-          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。"
+          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。 关键机制是一阶与二阶矩自适应更新，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -7438,7 +7371,7 @@ const milestones = [
       "zh": "\"非常深的卷积网络\""
     },
     "quoteAttribution": {
-      "en": "《Very Deep Convolutional Networks for Large-Scale Image Recognition》, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "en": "<em>Very Deep Convolutional Networks for Large-Scale Image Recognition</em>, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
       "zh": "《用于大规模图像识别的超深卷积网络》, 卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
     },
     "quoteMeta": {
@@ -7873,7 +7806,7 @@ const milestones = [
       "zh": "\"自然与人工系统中的适应\""
     },
     "quoteAttribution": {
-      "en": "《Adaptation in Natural and Artificial Systems》, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "en": "<em>Adaptation in Natural and Artificial Systems</em>, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
       "zh": "《自然系统与人工系统中的适应》, 约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
     },
     "quoteMeta": {
@@ -7911,7 +7844,7 @@ const milestones = [
         },
         "html": {
           "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates.",
-          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。"
+          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。 关键机制是基于种群的进化搜索，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -8346,7 +8279,7 @@ const milestones = [
       "zh": "\"用于生物医学图像分割的卷积网络\""
     },
     "quoteAttribution": {
-      "en": "《U-Net: Convolutional Networks for Biomedical Image Segmentation》, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "en": "<em>U-Net: Convolutional Networks for Biomedical Image Segmentation</em>, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
       "zh": "《U-Net：用于生物医学图像分割的卷积网络》, 奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
     },
     "quoteMeta": {
@@ -8784,7 +8717,7 @@ const milestones = [
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -8835,7 +8768,7 @@ const milestones = [
       "zh": "\"迈向实时目标检测\""
     },
     "quoteAttribution": {
-      "en": "《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "en": "<em>Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</em>, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
       "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》, 任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
     },
     "quoteMeta": {
@@ -8862,8 +8795,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Object detection had made large accuracy gains with R-CNN, but external proposal generation made the pipeline slower and less elegant.",
-          "zh": "R-CNN 已经大幅提升目标检测精度，但外部候选区域生成让流水线变慢且不够统一。"
+          "en": "Object detection had made large accuracy gains with R-CNN, but external proposal generation made the pipeline slower and less elegant. This context helps viewers place Faster R-CNN in the technical problems and research priorities of its time.",
+          "zh": "R-CNN 已经大幅提升目标检测精度，但外部候选区域生成让流水线变慢且不够统一。 这段背景帮助观众把Faster R-CNN放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -9306,7 +9239,7 @@ const milestones = [
       "zh": "\"最优间隔分类器\""
     },
     "quoteAttribution": {
-      "en": "《A Training Algorithm for Optimal Margin Classifiers》, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "en": "<em>A Training Algorithm for Optimal Margin Classifiers</em>, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
       "zh": "《最优间隔分类器的训练算法》, 伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
     },
     "quoteMeta": {
@@ -9783,7 +9716,7 @@ const milestones = [
       "zh": "\"分类与回归树\""
     },
     "quoteAttribution": {
-      "en": "《Classification and Regression Trees》, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+      "en": "<em>Classification and Regression Trees</em>, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
       "zh": "《分类与回归树》, 利奥·布雷曼, 杰罗姆·H·弗里德曼、理查德·A·奥尔申、查尔斯·J·斯通, 沃兹沃思 / 劳特利奇专著, 1984"
     },
     "quoteMeta": {
@@ -9821,7 +9754,7 @@ const milestones = [
         },
         "html": {
           "en": "CART grows a tree by choosing splits that make child nodes more homogeneous. It then prunes the tree so the final model balances fit and simplicity.",
-          "zh": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。"
+          "zh": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。 关键机制是递归划分与剪枝，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -10247,7 +10180,7 @@ const milestones = [
       "zh": "\"通过模拟退火进行优化\""
     },
     "quoteAttribution": {
-      "en": "《Optimization by Simulated Annealing》, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+      "en": "<em>Optimization by Simulated Annealing</em>, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
       "zh": "《模拟退火优化》, 斯科特·柯克帕特里克, C·丹尼尔·格拉特 Jr.、马里奥·P·维基, 《科学》, 1983"
     },
     "quoteMeta": {
@@ -10285,7 +10218,7 @@ const milestones = [
         },
         "html": {
           "en": "At high temperature, the algorithm explores boldly. As the system cools, it increasingly commits to lower-cost states, imitating the settling of physical materials.",
-          "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。"
+          "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。 关键机制是带降温计划的概率搜索，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -10694,7 +10627,7 @@ const milestones = [
       "zh": "\"回归收缩与选择\""
     },
     "quoteAttribution": {
-      "en": "《Regression Shrinkage and Selection via the Lasso》, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+      "en": "<em>Regression Shrinkage and Selection via the Lasso</em>, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
       "zh": "《通过 Lasso 进行回归收缩与选择》, 罗伯特·蒂布希拉尼, 《皇家统计学会期刊 B辑》, 1996"
     },
     "quoteMeta": {
@@ -11149,7 +11082,7 @@ const milestones = [
       "zh": "\"用卷积走得更深\""
     },
     "quoteAttribution": {
-      "en": "《Going Deeper with Convolutions》, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "en": "<em>Going Deeper with Convolutions</em>, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
       "zh": "《用卷积走得更深》, 克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
     },
     "quoteMeta": {
@@ -11587,7 +11520,7 @@ const milestones = [
       "zh": "\"归结原理\""
     },
     "quoteAttribution": {
-      "en": "《A Machine-Oriented Logic Based on the Resolution Principle》, John Alan Robinson, Journal of the ACM, 1965",
+      "en": "<em>A Machine-Oriented Logic Based on the Resolution Principle</em>, John Alan Robinson, Journal of the ACM, 1965",
       "zh": "《基于归结原理的机器导向逻辑》, 约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
     },
     "quoteMeta": {
@@ -11624,8 +11557,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The key move is refutation: assume the claim is false, then repeatedly resolve complementary literals until the empty clause appears.",
-          "zh": "关键动作是反驳：先假设结论为假，再不断归结互补文字，直到推出空子句。"
+          "en": "The key move is refutation: assume the claim is false, then repeatedly resolve complementary literals until the empty clause appears. The key mechanism is Clause refutation with unification, which links the source material to the visible demo behavior.",
+          "zh": "关键动作是反驳：先假设结论为假，再不断归结互补文字，直到推出空子句。 关键机制是带合一的子句反驳，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -12032,7 +11965,7 @@ const milestones = [
       "zh": "\"逻辑程序设计\""
     },
     "quoteAttribution": {
-      "en": "《The Birth of Prolog》, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "en": "<em>The Birth of Prolog</em>, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
       "zh": "《Prolog 的诞生》, 阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
     },
     "quoteMeta": {
@@ -12059,8 +11992,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "By the early 1970s, symbolic AI needed languages that could express rules, relations, and search without burying them under procedural code.",
-          "zh": "到 1970 年代初，符号 AI 需要能表达规则、关系和搜索的语言，而不是把它们埋在过程式代码里。"
+          "en": "By the early 1970s, symbolic AI needed languages that could express rules, relations, and search without burying them under procedural code. This context helps viewers place PROLOG in the technical problems and research priorities of its time.",
+          "zh": "到 1970 年代初，符号 AI 需要能表达规则、关系和搜索的语言，而不是把它们埋在过程式代码里。 这段背景帮助观众把PROLOG放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -12464,7 +12397,7 @@ const milestones = [
       "zh": "\"人与机器之间的交流\""
     },
     "quoteAttribution": {
-      "en": "《ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine》, Joseph Weizenbaum, Communications of the ACM, 1966",
+      "en": "<em>ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine</em>, Joseph Weizenbaum, Communications of the ACM, 1966",
       "zh": "《ELIZA：研究人与机器之间自然语言交流的计算机程序》, 约瑟夫·魏岑鲍姆, 《ACM 通讯》, 1966"
     },
     "quoteMeta": {
@@ -12501,8 +12434,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue.",
-          "zh": "DOCTOR 脚本并不理解心理治疗；它把识别到的模式转成反问式提示，诱导用户继续说下去。"
+          "en": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue. The key mechanism is Pattern matching and scripted reflection, which links the source material to the visible demo behavior.",
+          "zh": "DOCTOR 脚本并不理解心理治疗；它把识别到的模式转成反问式提示，诱导用户继续说下去。 关键机制是模式匹配与脚本反射，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -12899,7 +12832,7 @@ const milestones = [
       "zh": "\"神经网络与物理系统\""
     },
     "quoteAttribution": {
-      "en": "《Neural Networks and Physical Systems with Emergent Collective Computational Abilities》, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "en": "<em>Neural Networks and Physical Systems with Emergent Collective Computational Abilities</em>, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
       "zh": "《具有涌现集体计算能力的神经网络与物理系统》, 约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
     },
     "quoteMeta": {
@@ -12936,8 +12869,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The network updates units to reduce an energy function, so stored memories become stable attractors.",
-          "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。"
+          "en": "The network updates units to reduce an energy function, so stored memories become stable attractors. The key mechanism is Attractor dynamics and energy minimization, which links the source material to the visible demo behavior.",
+          "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。 关键机制是吸引子动力学与能量最小化，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -13332,7 +13265,7 @@ const milestones = [
       "zh": "\"防止神经网络过拟合\""
     },
     "quoteAttribution": {
-      "en": "《Dropout: A Simple Way to Prevent Neural Networks from Overfitting》, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "en": "<em>Dropout: A Simple Way to Prevent Neural Networks from Overfitting</em>, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
       "zh": "《Dropout：防止神经网络过拟合的简单方法》, 尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
     },
     "quoteMeta": {
@@ -13369,8 +13302,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other.",
-          "zh": "核心思想是在训练时随机隐藏单元，使隐藏特征不能过度依赖彼此。"
+          "en": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other. The key mechanism is Randomly thinned networks for regularization, which links the source material to the visible demo behavior.",
+          "zh": "核心思想是在训练时随机隐藏单元，使隐藏特征不能过度依赖彼此。 关键机制是随机变薄网络进行正则化，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -13774,7 +13707,7 @@ const milestones = [
       "zh": "\"只看一次\""
     },
     "quoteAttribution": {
-      "en": "《You Only Look Once: Unified, Real-Time Object Detection》, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "en": "<em>You Only Look Once: Unified, Real-Time Object Detection</em>, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
       "zh": "《你只看一次：统一的实时目标检测》, 约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
     },
     "quoteMeta": {
@@ -13811,8 +13744,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass.",
-          "zh": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。"
+          "en": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass. The key mechanism is Single-shot grid-based object detection, which links the source material to the visible demo behavior.",
+          "zh": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。 关键机制是基于网格的单阶段目标检测，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -14203,7 +14136,7 @@ const milestones = [
       "zh": "\"词的分布式表示\""
     },
     "quoteAttribution": {
-      "en": "《Distributed Representations of Words and Phrases and their Compositionality》, Tomas Mikolov et al., NeurIPS, 2013",
+      "en": "<em>Distributed Representations of Words and Phrases and their Compositionality</em>, Tomas Mikolov et al., NeurIPS, 2013",
       "zh": "《词与短语的分布式表示及其组合性》, 托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
     },
     "quoteMeta": {
@@ -14240,8 +14173,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space.",
-          "zh": "模型要么由词预测上下文，要么由上下文预测词，从而迫使相关词占据向量空间的相近区域。"
+          "en": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space. The key mechanism is Skip-gram and CBOW neural word embeddings, which links the source material to the visible demo behavior.",
+          "zh": "模型要么由词预测上下文，要么由上下文预测词，从而迫使相关词占据向量空间的相近区域。 关键机制是Skip-gram 与 CBOW 神经词嵌入，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -14645,7 +14578,7 @@ const milestones = [
       "zh": "\"大规模层级图像数据库\""
     },
     "quoteAttribution": {
-      "en": "《ImageNet: A Large-Scale Hierarchical Image Database》, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "en": "<em>ImageNet: A Large-Scale Hierarchical Image Database</em>, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
       "zh": "《ImageNet：大规模层级图像数据库》, 邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
     },
     "quoteMeta": {
@@ -14682,8 +14615,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution.",
-          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。"
+          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution. The key mechanism is Large-scale hierarchical image annotation, which links the source material to the visible demo behavior.",
+          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。 关键机制是大规模层级图像标注，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -15090,7 +15023,7 @@ const milestones = [
       "zh": "\"用深度强化学习玩 Atari\""
     },
     "quoteAttribution": {
-      "en": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
+      "en": "<em>Playing Atari with Deep Reinforcement Learning</em>, Volodymyr Mnih et al., DeepMind, 2013",
       "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
     },
     "quoteMeta": {
@@ -15127,8 +15060,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. The key mechanism is Q-learning with convolutional networks, replay, and target networks, which links the source material to the visible demo behavior.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。 关键机制是结合卷积网络、经验回放与目标网络的 Q 学习，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -15145,7 +15078,6 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
@@ -15167,31 +15099,6 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg": {
-          "caption": {
-            "en": "Atari control loop",
-            "zh": "Atari 控制循环"
-          },
-          "subcaption": {
-            "en": "Local game-screen explainer showing pixels, replay, Q-values, and action choice.",
-            "zh": "本地游戏画面解释图，展示像素、回放、Q 值与动作选择。"
-          },
-          "sourceName": {
-            "en": "Playing Atari with Deep Reinforcement Learning",
-            "zh": "《用深度强化学习玩 Atari》"
-          },
-          "source": "https://arxiv.org/abs/1312.5602",
-          "sourceUrl": "https://arxiv.org/abs/1312.5602",
-          "originalImageUrl": "Local original redraw",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          },
-          "usage": {
-            "en": "Game-control explainer",
-            "zh": "游戏控制解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
@@ -15241,29 +15148,11 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
         "en": "AI Top 100 Achievements (BenchCouncil)",
         "zh": "AI 百大成就（BenchCouncil）"
-      }
-    },
-    "analysis": {
-      "what": {
-        "en": "DQN showed that one deep reinforcement learning agent could learn control policies directly from Atari pixels across multiple games.",
-        "zh": "DQN 证明一个深度强化学习智能体可以直接从 Atari 像素中学习多款游戏的控制策略。"
-      },
-      "how": {
-        "en": "It combined Q-learning with convolutional networks, experience replay and a target network to stabilize value learning.",
-        "zh": "它把 Q-learning 与卷积网络、经验回放和目标网络结合起来，以稳定价值学习。"
-      },
-      "why": {
-        "en": "It worked where earlier methods struggled because perception and control were trained together from replayed experience.",
-        "zh": "它能突破早期方法的瓶颈，是因为感知和控制可以从回放经验中联合训练。"
       }
     },
     "achievement": {
@@ -15288,7 +15177,6 @@ const milestones = [
         "zh": "像素进入回放；Q 值选择动作"
       },
       "visual": "dqn",
-      "demoImage": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "keyConcepts": [
         {
           "label": {
@@ -15373,43 +15261,6 @@ const milestones = [
           "action": {
             "en": "Open preprint",
             "zh": "打开预印本"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "DQN game evolution",
-            "zh": "DQN 棋局演化"
-          },
-          "description": {
-            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
-            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
-          },
-          "url": "resources/videos/game-evolution/2013-dqn.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -15614,7 +15465,7 @@ const milestones = [
       "zh": "\"潜在狄利克雷分配\""
     },
     "quoteAttribution": {
-      "en": "《Latent Dirichlet Allocation》, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "en": "<em>Latent Dirichlet Allocation</em>, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
       "zh": "《潜在狄利克雷分配》, 戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
     },
     "quoteMeta": {
@@ -15651,8 +15502,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution.",
-          "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。"
+          "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution. The key mechanism is Bayesian topic model with Dirichlet priors, which links the source material to the visible demo behavior.",
+          "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。 关键机制是带 Dirichlet 先验的贝叶斯主题模型，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -16043,7 +15894,7 @@ const milestones = [
       "zh": "\"积木世界语言理解\""
     },
     "quoteAttribution": {
-      "en": "《SHRDLU dissertation record》, Terry Winograd",
+      "en": "<em>SHRDLU dissertation record</em>, Terry Winograd",
       "zh": "《SHRDLU 博士论文记录》, 特里·维诺格拉德"
     },
     "quoteMeta": {
@@ -16080,8 +15931,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene.",
-          "zh": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。"
+          "en": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene. The key mechanism is Blocks-world language understanding, which links the source material to the visible demo behavior.",
+          "zh": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。 关键机制是积木世界语言理解，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -16474,7 +16325,7 @@ const milestones = [
       "zh": "\"专用国际象棋搜索硬件\""
     },
     "quoteAttribution": {
-      "en": "《Deep Blue journal article》, Murray Campbell",
+      "en": "<em>Deep Blue journal article</em>, Murray Campbell",
       "zh": "《深蓝期刊论文》, 默里·坎贝尔"
     },
     "quoteMeta": {
@@ -16511,8 +16362,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. The key mechanism is Specialized chess search hardware, which links the source material to the visible demo behavior.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。 关键机制是专用国际象棋搜索硬件，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -16605,10 +16456,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -16616,32 +16463,6 @@ const milestones = [
         "zh": "AI 百大成就（BenchCouncil）"
       }
     },
-    "analysis": {
-      "what": {
-        "en": "Deep Blue defeated reigning world chess champion Garry Kasparov in a regulation match, turning computer chess into a public AI milestone.",
-        "zh": "Deep Blue 在正式比赛中击败卫冕世界冠军加里·卡斯帕罗夫，使计算机国际象棋成为公众熟知的 AI 里程碑。"
-      },
-      "how": {
-        "en": "It used massively parallel alpha-beta search, chess-specific evaluation, opening and endgame knowledge, and custom chips for move generation and scoring.",
-        "zh": "它使用大规模并行 alpha-beta 搜索、国际象棋专用评估、开局与残局知识，并用定制芯片加速走法生成和局面评分。"
-      },
-      "why": {
-        "en": "Human champions relied on selective intuition. Deep Blue won by pushing calculation depth and chess-specific hardware beyond human tactical reach.",
-        "zh": "人类冠军依靠选择性直觉。Deep Blue 通过远超人类战术覆盖范围的计算深度和棋类专用硬件取得突破。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Deep Blue",
-          "zh": "Deep Blue"
-        },
-        "authors": "Murray Campbell, A. Joseph Hoane Jr., Feng-hsiung Hsu",
-        "journal": "Artificial Intelligence",
-        "year": 2002,
-        "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-      }
-    ],
     "achievement": {
       "area": {
         "en": "Game AI",
@@ -16759,57 +16580,9 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Deep Blue game evolution",
-            "zh": "深蓝 棋局演化"
-          },
-          "description": {
-            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
-        {
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "label": {
-            "en": "Deep Blue journal article",
-            "zh": "深蓝期刊论文"
-          },
-          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-        },
         {
           "type": {
             "en": "Profile",
@@ -16834,8 +16607,8 @@ const milestones = [
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
@@ -16983,7 +16756,7 @@ const milestones = [
       "zh": "\"带默认值和继承的槽结构\""
     },
     "quoteAttribution": {
-      "en": "《A Framework for Representing Knowledge》, Marvin Minsky",
+      "en": "<em>A Framework for Representing Knowledge</em>, Marvin Minsky",
       "zh": "《表示知识的一种框架》, 马文·明斯基"
     },
     "quoteMeta": {
@@ -17020,8 +16793,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations.",
-          "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。"
+          "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations. The key mechanism is Structured slots with defaults and inheritance, which links the source material to the visible demo behavior.",
+          "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。 关键机制是带默认值和继承的槽结构，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -17412,7 +17185,7 @@ const milestones = [
       "zh": "\"规则引导的化学结构推断\""
     },
     "quoteAttribution": {
-      "en": "《Chemical inference paper record》, Edward Feigenbaum",
+      "en": "<em>Chemical inference paper record</em>, Edward Feigenbaum",
       "zh": "《化学推断论文记录》, 爱德华·费根鲍姆"
     },
     "quoteMeta": {
@@ -17449,8 +17222,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints.",
-          "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。"
+          "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints. The key mechanism is Rule-guided chemical structure inference, which links the source material to the visible demo behavior.",
+          "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。 关键机制是规则引导的化学结构推断，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -17831,7 +17604,7 @@ const milestones = [
       "zh": "\"尺度不变局部特征\""
     },
     "quoteAttribution": {
-      "en": "《SIFT ICCV paper PDF》, David Lowe",
+      "en": "<em>SIFT ICCV paper PDF</em>, David Lowe",
       "zh": "《SIFT 国际计算机视觉会议论文 PDF》, 戴维·洛"
     },
     "quoteMeta": {
@@ -17858,8 +17631,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes.",
-          "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。"
+          "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes. This context helps viewers place SIFT in the technical problems and research priorities of its time.",
+          "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。 这段背景帮助观众把SIFT放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -17868,8 +17641,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor.",
-          "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。"
+          "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor. The key mechanism is Scale-invariant local features, which links the source material to the visible demo behavior.",
+          "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。 关键机制是尺度不变局部特征，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -18247,7 +18020,7 @@ const milestones = [
       "zh": "\"保持邻域的非线性嵌入\""
     },
     "quoteAttribution": {
-      "en": "《Visualizing Data using t-SNE》, Laurens van der Maaten",
+      "en": "<em>Visualizing Data using t-SNE</em>, Laurens van der Maaten",
       "zh": "《使用 t-SNE 可视化数据》, 劳伦斯·范德马滕"
     },
     "quoteMeta": {
@@ -18274,8 +18047,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data.",
-          "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。"
+          "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data. This context helps viewers place t-SNE in the technical problems and research priorities of its time.",
+          "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。 这段背景帮助观众把t-SNE放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -18284,8 +18057,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map.",
-          "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。"
+          "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map. The key mechanism is Neighbor-preserving nonlinear embedding, which links the source material to the visible demo behavior.",
+          "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。 关键机制是保持邻域的非线性嵌入，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -18675,7 +18448,7 @@ const milestones = [
       "zh": "\"线性阈值学习机\""
     },
     "quoteAttribution": {
-      "en": "《The perceptron paper record》, Frank Rosenblatt",
+      "en": "<em>The perceptron paper record</em>, Frank Rosenblatt",
       "zh": "《感知机论文记录》, 弗兰克·罗森布拉特"
     },
     "quoteMeta": {
@@ -18702,8 +18475,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception.",
-          "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。"
+          "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception. This context helps viewers place Rosenblatt Perceptron in the technical problems and research priorities of its time.",
+          "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。 这段背景帮助观众把罗森布拉特 感知机放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -18712,8 +18485,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates.",
-          "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。"
+          "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates. The key mechanism is Linear threshold learning machine, which links the source material to the visible demo behavior.",
+          "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。 关键机制是线性阈值学习机，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -19097,7 +18870,7 @@ const milestones = [
       "zh": "\"逐层无监督预训练\""
     },
     "quoteAttribution": {
-      "en": "《Fast learning algorithm for deep belief nets》, Geoffrey Hinton",
+      "en": "<em>Fast learning algorithm for deep belief nets</em>, Geoffrey Hinton",
       "zh": "《深度置信网络的快速学习算法》, 杰弗里·辛顿"
     },
     "quoteMeta": {
@@ -19134,8 +18907,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network.",
-          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。"
+          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network. The key mechanism is Layer-wise unsupervised pretraining, which links the source material to the visible demo behavior.",
+          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。 关键机制是逐层无监督预训练，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -19513,7 +19286,7 @@ const milestones = [
       "zh": "\"自举式价值预测\""
     },
     "quoteAttribution": {
-      "en": "《Learning to predict by temporal differences》, Richard Sutton",
+      "en": "<em>Learning to predict by temporal differences</em>, Richard Sutton",
       "zh": "《通过时序差分学习预测》, 理查德·萨顿"
     },
     "quoteMeta": {
@@ -19540,8 +19313,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. This context helps viewers place Temporal-Difference Update in the technical problems and research priorities of its time.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。 这段背景帮助观众把时序差分更新放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -19550,8 +19323,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. The key mechanism is Bootstrapped value prediction, which links the source material to the visible demo behavior.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。 关键机制是自举式价值预测，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -19568,7 +19341,6 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
@@ -19593,31 +19365,6 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg": {
-          "caption": {
-            "en": "TD update over a game trajectory",
-            "zh": "游戏轨迹上的 TD 更新"
-          },
-          "subcaption": {
-            "en": "Local board-game explainer linking TD learning to game-state prediction.",
-            "zh": "本地棋类解释图，把 TD 学习与游戏状态预测联系起来。"
-          },
-          "sourceName": {
-            "en": "Learning to Predict by the Methods of Temporal Differences",
-            "zh": "《用时序差分方法学习预测》"
-          },
-          "source": "https://doi.org/10.1007/BF00115009",
-          "sourceUrl": "https://doi.org/10.1007/BF00115009",
-          "originalImageUrl": "Local original redraw",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          },
-          "usage": {
-            "en": "Board-game trajectory explainer",
-            "zh": "棋类轨迹解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
@@ -19661,29 +19408,11 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
         "en": "AI Top 100 Achievements (BenchCouncil)",
         "zh": "AI 百大成就（BenchCouncil）"
-      }
-    },
-    "analysis": {
-      "what": {
-        "en": "Temporal-difference learning made it possible to update value predictions before a full game or episode had finished.",
-        "zh": "时序差分学习使智能体可以在完整对局或回合结束前更新价值预测。"
-      },
-      "how": {
-        "en": "It bootstraps from the next reward and the next prediction, nudging the current value estimate toward a one-step target.",
-        "zh": "它根据下一步奖励和下一步预测自举，把当前价值估计推向一步目标。"
-      },
-      "why": {
-        "en": "It succeeded because delayed rewards no longer had to wait until the final outcome, a key idea for later game-learning agents.",
-        "zh": "它成功的原因在于延迟奖励不必等到最终结果才能产生学习信号，这成为后续游戏学习智能体的关键思想。"
       }
     },
     "achievement": {
@@ -19708,7 +19437,6 @@ const milestones = [
         "zh": "用下一步预测和奖励更新价值估计"
       },
       "visual": "td",
-      "demoImage": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "keyConcepts": [
         {
           "label": {
@@ -19800,43 +19528,6 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "TD-Gammon trajectory game evolution",
-            "zh": "TD-Gammon 轨迹 棋局演化"
-          },
-          "description": {
-            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-          },
-          "url": "resources/videos/game-evolution/1988-td-update.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -20014,7 +19705,7 @@ const milestones = [
       "zh": "\"有向无环图加条件概率\""
     },
     "quoteAttribution": {
-      "en": "《Bayesian Networks technical paper》, Judea Pearl",
+      "en": "<em>Bayesian Networks technical paper</em>, Judea Pearl",
       "zh": "《贝叶斯网络技术论文》, 朱迪亚·珀尔"
     },
     "quoteMeta": {
@@ -20051,8 +19742,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular.",
-          "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。"
+          "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular. The key mechanism is Directed acyclic graph plus conditional probabilities, which links the source material to the visible demo behavior.",
+          "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。 关键机制是有向无环图加条件概率，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -20442,7 +20133,7 @@ const milestones = [
       "zh": "\"让归结式证明搜索变得实用\""
     },
     "quoteAttribution": {
-      "en": "《OTTER 3.3 Reference Manual》, William McCune",
+      "en": "<em>OTTER 3.3 Reference Manual</em>, William McCune",
       "zh": "《OTTER 3.3 参考手册》, 威廉·麦丘恩"
     },
     "quoteMeta": {
@@ -20479,8 +20170,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The prover repeatedly selects a promising clause, generates consequences through inference rules, and uses indexing and simplification to keep the search tractable.",
-          "zh": "证明器反复选择有希望的子句，用推理规则生成后果，并通过索引和化简让搜索保持可控。"
+          "en": "The prover repeatedly selects a promising clause, generates consequences through inference rules, and uses indexing and simplification to keep the search tractable. The key mechanism is Given-clause resolution and paramodulation, which links the source material to the visible demo behavior.",
+          "zh": "证明器反复选择有希望的子句，用推理规则生成后果，并通过索引和化简让搜索保持可控。 关键机制是given-clause 归结与参数调解，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -20900,7 +20591,7 @@ const milestones = [
       "zh": "\"生成假设、评分证据、排序答案\""
     },
     "quoteAttribution": {
-      "en": "《Watson: Beyond Jeopardy!》, David Ferrucci et al.",
+      "en": "<em>Watson: Beyond Jeopardy!</em>, David Ferrucci et al.",
       "zh": "《沃森：超越《危险边缘！》》, 戴维·费鲁奇等"
     },
     "quoteMeta": {
@@ -20927,8 +20618,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered.",
-          "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。"
+          "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered. This context helps viewers place IBM Watson in the technical problems and research priorities of its time.",
+          "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。 这段背景帮助观众把IBM Watson放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -21356,7 +21047,7 @@ const milestones = [
       "zh": "\"非数值程序也可以对弈\""
     },
     "quoteAttribution": {
-      "en": "《Logical or non-mathematical programmes》, Christopher Strachey",
+      "en": "<em>Logical or non-mathematical programmes</em>, Christopher Strachey",
       "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
     },
     "quoteMeta": {
@@ -21383,8 +21074,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. This context helps viewers place Christopher Strachey's Draughts in the technical problems and research priorities of its time.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。 这段背景帮助观众把克里斯托弗·斯特雷奇 的跳棋程序放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -21393,8 +21084,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. That pattern made search and evaluation visible as computational ingredients of intelligent play.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。这种模式让搜索与评估成为智能对弈中可见的计算要素。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. The key mechanism is Board-state search and evaluation, which links the source material to the visible demo behavior.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。 关键机制是棋盘状态搜索与评估，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -21410,34 +21101,54 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
           "caption": {
-            "en": "Christopher Strachey profile card",
-            "zh": "克里斯托弗·斯特雷奇人物卡"
+            "en": "Christopher Strachey's draughts program",
+            "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
           },
           "subcaption": {
-            "en": "Local portrait-style card for the draughts program developer.",
-            "zh": "跳棋程序开发者的本地人物卡。"
+            "en": "Screenshot of the early draughts program attributed to Strachey.",
+            "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
           },
           "sourceName": {
-            "en": "Local original profile card",
-            "zh": "本地原创人物卡"
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
           },
-          "source": "https://history.computer.org/pioneers/strachey.html",
-          "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
-          "originalImageUrl": "Local original SVG profile card",
-          "license": {
-            "en": "Original local SVG profile card; no source photograph is copied.",
-            "zh": "本地原创 SVG 人物卡；未复制来源照片。"
-          },
+          "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+          "license": "Public domain",
           "usage": {
-            "en": "Historical figure profile image",
-            "zh": "历史人物资料图"
+            "en": "Program screenshot",
+            "zh": "程序截图"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+          "caption": {
+            "en": "Checkers board",
+            "zh": "跳棋棋盘照片"
+          },
+          "subcaption": {
+            "en": "Physical checkers board used as visual context for game-playing AI.",
+            "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+          "license": "CC BY 3.0",
+          "usage": {
+            "en": "Game-board photo",
+            "zh": "棋盘照片"
           }
         },
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -21487,29 +21198,11 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
         "en": "AI Top 100 Achievements (BenchCouncil)",
         "zh": "AI 百大成就（BenchCouncil）"
-      }
-    },
-    "analysis": {
-      "what": {
-        "en": "Strachey's draughts program showed that stored-program computers could represent a board game, generate legal moves and choose actions.",
-        "zh": "斯特雷奇的跳棋程序证明，存储程序计算机可以表示棋盘游戏、生成合法走法并选择行动。"
-      },
-      "how": {
-        "en": "It encoded board states and move rules, then used simple evaluation to compare candidate moves on early British hardware.",
-        "zh": "它编码棋盘状态和走法规则，再在早期英国计算机上用简单评估比较候选走法。"
-      },
-      "why": {
-        "en": "It mattered because it moved computing beyond arithmetic into symbolic choice, making games a practical testbed for search and evaluation.",
-        "zh": "它的重要性在于把计算从算术推进到符号选择，使游戏成为搜索和评估的实际试验场。"
       }
     },
     "achievement": {
@@ -21621,43 +21314,6 @@ const milestones = [
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Strachey's draughts game evolution",
-            "zh": "斯特雷奇跳棋 棋局演化"
-          },
-          "description": {
-            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
-            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/1951-strachey-draughts.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -21706,7 +21362,7 @@ const milestones = [
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
       "demoPanel": "sources"
     },
     "quiz": {
@@ -21847,7 +21503,7 @@ const milestones = [
       "zh": "\"跳棋完美对弈结果为和棋\""
     },
     "quoteAttribution": {
-      "en": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
+      "en": "<em>Checkers Is Solved</em>, Jonathan Schaeffer et al.",
       "zh": "《跳棋已被求解》, 乔纳森·谢弗等"
     },
     "quoteMeta": {
@@ -21874,8 +21530,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. This context helps viewers place Chinook in the technical problems and research priorities of its time.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。 这段背景帮助观众把Chinook 跳棋程序放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -21884,8 +21540,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The key mechanism is Alpha-beta search plus endgame databases, which links the source material to the visible demo behavior.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。 关键机制是alpha-beta 搜索加残局数据库，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -21995,10 +21651,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Result summary",
-      "zh": "结果摘要"
-    },
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -22006,32 +21658,6 @@ const milestones = [
         "zh": "AI 百大成就（BenchCouncil）"
       }
     },
-    "analysis": {
-      "what": {
-        "en": "Chinook became the first computer program to win the world checkers championship and later helped prove that perfect play in checkers ends in a draw.",
-        "zh": "Chinook 成为首个赢得世界跳棋冠军的计算机程序，随后帮助证明跳棋在完美对弈下结果为和棋。"
-      },
-      "how": {
-        "en": "It combined opening books, alpha-beta search, hand-tuned evaluation and very large endgame databases that mapped late positions to proven outcomes.",
-        "zh": "它结合开局库、alpha-beta 搜索、人工调校评估函数，以及把后期局面映射到可证明结果的大规模残局数据库。"
-      },
-      "why": {
-        "en": "Earlier programs could search but still became uncertain near the endgame. Chinook made the endgame exact, so search could terminate in verified game-theoretic results.",
-        "zh": "早期程序虽能搜索，但残局阶段仍不确定。Chinook 把残局做成精确数据库，让搜索能落到经验证的博弈论结果上。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Checkers Is Solved",
-          "zh": "Checkers Is Solved"
-        },
-        "authors": "Jonathan Schaeffer, Neil Burch, Yngvi Bjornsson, Akihiro Kishimoto, Martin Muller, Robert Lake, Paul Lu, Steve Sutphen",
-        "journal": "Science",
-        "year": 2007,
-        "url": "https://www.science.org/doi/10.1126/science.1144079"
-      }
-    ],
     "achievement": {
       "area": {
         "en": "Game",
@@ -22140,43 +21766,6 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Chinook game evolution",
-            "zh": "Chinook 棋局演化"
-          },
-          "description": {
-            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/1994-chinook.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -22367,7 +21956,7 @@ const milestones = [
       "zh": "\"分层特征投票构成感知\""
     },
     "quoteAttribution": {
-      "en": "《Pandemonium: A Paradigm for Learning》, Oliver G. Selfridge",
+      "en": "<em>Pandemonium: A Paradigm for Learning</em>, Oliver G. Selfridge",
       "zh": "《群魔殿：一种学习范式》, 奥利弗·G·塞尔弗里奇"
     },
     "quoteMeta": {
@@ -22394,8 +21983,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates.",
-          "zh": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。"
+          "en": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates. This context helps viewers place Pandemonium in the technical problems and research priorities of its time.",
+          "zh": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。 这段背景帮助观众把Pandemonium 感知架构放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -22404,8 +21993,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges.",
-          "zh": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。"
+          "en": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges. The key mechanism is Layered feature detection and voting, which links the source material to the visible demo behavior.",
+          "zh": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。 关键机制是分层特征检测与投票，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -22836,7 +22425,7 @@ const milestones = [
       "zh": "\"把常识显式化为知识\""
     },
     "quoteAttribution": {
-      "en": "《Building Large Knowledge-Based Systems》, Douglas B. Lenat and R. V. Guha",
+      "en": "<em>Building Large Knowledge-Based Systems</em>, Douglas B. Lenat and R. V. Guha",
       "zh": "《构建大型知识系统》, 道格拉斯·B·莱纳特、R·V·古哈"
     },
     "quoteMeta": {
@@ -22863,8 +22452,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing.",
-          "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。"
+          "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing. This context helps viewers place Cyc in the technical problems and research priorities of its time.",
+          "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。 这段背景帮助观众把Cyc 常识知识库放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -22873,8 +22462,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure.",
-          "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。"
+          "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure. The key mechanism is Large symbolic ontology and microtheories, which links the source material to the visible demo behavior.",
+          "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。 关键机制是大型符号本体与微理论，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -23292,7 +22881,7 @@ const milestones = [
       "zh": "\"产生式规则配置真实订单\""
     },
     "quoteAttribution": {
-      "en": "《R1: An Expert in the Computer Systems Domain》, John McDermott",
+      "en": "<em>R1: An Expert in the Computer Systems Domain</em>, John McDermott",
       "zh": "《R1：计算机系统领域的专家》, 约翰·麦克德莫特"
     },
     "quoteMeta": {
@@ -23319,8 +22908,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders.",
-          "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。"
+          "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders. This context helps viewers place XCON-R1 in the technical problems and research priorities of its time.",
+          "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。 这段背景帮助观众把XCON / R1 专家系统放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -23329,8 +22918,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration.",
-          "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。"
+          "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration. The key mechanism is OPS5 production-rule configuration, which links the source material to the visible demo behavior.",
+          "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。 关键机制是OPS5 产生式规则配置，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -23748,7 +23337,7 @@ const milestones = [
       "zh": "\"分配样本、更新质心、反复迭代\""
     },
     "quoteAttribution": {
-      "en": "《Least squares quantization in PCM》, Stuart Lloyd",
+      "en": "<em>Least squares quantization in PCM</em>, Stuart Lloyd",
       "zh": "《PCM 中的最小二乘量化》, 斯图尔特·劳埃德"
     },
     "quoteMeta": {
@@ -23775,8 +23364,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Signal quantization and pattern analysis both needed compact representatives for many observations.",
-          "zh": "信号量化和模式分析都需要为大量观测找到紧凑代表。"
+          "en": "Signal quantization and pattern analysis both needed compact representatives for many observations. This context helps viewers place K-means in the technical problems and research priorities of its time.",
+          "zh": "信号量化和模式分析都需要为大量观测找到紧凑代表。 这段背景帮助观众把K-means 聚类放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -23785,8 +23374,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The algorithm repeatedly assigns each point to its closest centroid, then updates each centroid to the mean of its cluster.",
-          "zh": "算法反复把每个点分配给最近质心，再把每个质心更新为该簇的均值。"
+          "en": "The algorithm repeatedly assigns each point to its closest centroid, then updates each centroid to the mean of its cluster. The key mechanism is Alternating centroid optimization, which links the source material to the visible demo behavior.",
+          "zh": "算法反复把每个点分配给最近质心，再把每个质心更新为该簇的均值。 关键机制是交替质心优化，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -24214,7 +23803,7 @@ const milestones = [
       "zh": "\"簇是被稀疏噪声隔开的密集区域\""
     },
     "quoteAttribution": {
-      "en": "《A density-based algorithm for discovering clusters in large spatial databases with noise》, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "en": "<em>A density-based algorithm for discovering clusters in large spatial databases with noise</em>, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
       "zh": "《一种在含噪大型空间数据库中发现簇的基于密度的算法》, 马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
     },
     "quoteMeta": {
@@ -24241,8 +23830,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis.",
-          "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。"
+          "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis. This context helps viewers place DBSCAN in the technical problems and research priorities of its time.",
+          "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。 这段背景帮助观众把DBSCAN 密度聚类放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -24251,8 +23840,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability.",
-          "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。"
+          "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability. The key mechanism is Density reachability with epsilon and MinPts, which links the source material to the visible demo behavior.",
+          "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。 关键机制是基于 epsilon 与 MinPts 的密度可达，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -24683,7 +24272,7 @@ const milestones = [
       "zh": "\"通过图的谱来切分图\""
     },
     "quoteAttribution": {
-      "en": "《Normalized Cuts and Image Segmentation》, Jianbo Shi and Jitendra Malik",
+      "en": "<em>Normalized Cuts and Image Segmentation</em>, Jianbo Shi and Jitendra Malik",
       "zh": "《归一化切分与图像分割》, 史建波、吉滕德拉·马利克"
     },
     "quoteMeta": {
@@ -24710,8 +24299,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry.",
-          "zh": "图像分割与数据聚类需要能分离非凸群组的方法，而不假设簇是球形。"
+          "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry. This context helps viewers place Spectral Clustering in the technical problems and research priorities of its time.",
+          "zh": "图像分割与数据聚类需要能分离非凸群组的方法，而不假设簇是球形。 这段背景帮助观众把谱聚类放回当时的技术问题和研究重点中理解。"
         }
       },
       {
@@ -24720,8 +24309,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space.",
-          "zh": "该方法构建亲和图，从图拉普拉斯特征向量计算谱嵌入，再在嵌入空间中聚类或切分。"
+          "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space. The key mechanism is Graph Laplacian eigenvector embedding, which links the source material to the visible demo behavior.",
+          "zh": "该方法构建亲和图，从图拉普拉斯特征向量计算谱嵌入，再在嵌入空间中聚类或切分。 关键机制是图拉普拉斯特征向量嵌入，它把资料线索与可见的演示行为连接起来。"
         }
       },
       {
@@ -25152,7 +24741,7 @@ const milestones = [
       "zh": "\"最近邻模式分类\""
     },
     "quoteAttribution": {
-      "en": "《Nearest Neighbor Pattern Classification》, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+      "en": "<em>Nearest Neighbor Pattern Classification</em>, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
       "zh": "《最近邻模式分类》, 托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
     },
     "quoteMeta": {
@@ -25600,7 +25189,7 @@ const milestones = [
       "zh": "\"岭回归：非正交问题中的有偏估计\""
     },
     "quoteAttribution": {
-      "en": "《Ridge Regression: Biased Estimation for Nonorthogonal Problems》, Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
+      "en": "<em>Ridge Regression: Biased Estimation for Nonorthogonal Problems</em>, Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
       "zh": "《岭回归：非正交问题中的有偏估计》, 阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970"
     },
     "quoteMeta": {
@@ -26048,7 +25637,7 @@ const milestones = [
       "zh": "\"用于人体检测的方向梯度直方图\""
     },
     "quoteAttribution": {
-      "en": "《Histograms of Oriented Gradients for Human Detection》, Navneet Dalal and Bill Triggs, CVPR, 2005",
+      "en": "<em>Histograms of Oriented Gradients for Human Detection</em>, Navneet Dalal and Bill Triggs, CVPR, 2005",
       "zh": "《用于人体检测的方向梯度直方图》, 纳夫尼特·达拉尔、比尔·特里格斯，CVPR，2005"
     },
     "quoteMeta": {
@@ -26496,7 +26085,7 @@ const milestones = [
       "zh": "\"SURF：加速稳健特征\""
     },
     "quoteAttribution": {
-      "en": "《SURF: Speeded Up Robust Features》, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+      "en": "<em>SURF: Speeded Up Robust Features</em>, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
       "zh": "《SURF：加速稳健特征》, 赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
     },
     "quoteMeta": {
@@ -26944,7 +26533,7 @@ const milestones = [
       "zh": "\"作为核特征值问题的非线性成分分析\""
     },
     "quoteAttribution": {
-      "en": "《Nonlinear Component Analysis as a Kernel Eigenvalue Problem》, Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
+      "en": "<em>Nonlinear Component Analysis as a Kernel Eigenvalue Problem</em>, Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
       "zh": "《作为核特征值问题的非线性成分分析》, 伯恩哈德·舍尔科普夫、亚历山大·斯莫拉、克劳斯-罗伯特·穆勒，《Neural Computation》，1998"
     },
     "quoteMeta": {
@@ -27392,7 +26981,7 @@ const milestones = [
       "zh": "\"通过非负矩阵分解学习物体部件\""
     },
     "quoteAttribution": {
-      "en": "《Learning the parts of objects by non-negative matrix factorization》, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+      "en": "<em>Learning the parts of objects by non-negative matrix factorization</em>, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
       "zh": "《通过非负矩阵分解学习物体部件》, 丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
     },
     "quoteMeta": {
@@ -27840,7 +27429,7 @@ const milestones = [
       "zh": "\"非线性降维的全局几何框架\""
     },
     "quoteAttribution": {
-      "en": "《A Global Geometric Framework for Nonlinear Dimensionality Reduction》, Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
+      "en": "<em>A Global Geometric Framework for Nonlinear Dimensionality Reduction</em>, Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
       "zh": "《非线性降维的全局几何框架》, 约书亚·B·特南鲍姆、维恩·德席尔瓦、约翰·C·兰福德，《Science》，2000"
     },
     "quoteMeta": {
@@ -28288,7 +27877,7 @@ const milestones = [
       "zh": "\"通过局部线性嵌入进行非线性降维\""
     },
     "quoteAttribution": {
-      "en": "《Nonlinear Dimensionality Reduction by Locally Linear Embedding》, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+      "en": "<em>Nonlinear Dimensionality Reduction by Locally Linear Embedding</em>, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
       "zh": "《通过局部线性嵌入进行非线性降维》, 萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
     },
     "quoteMeta": {
@@ -28736,7 +28325,7 @@ const milestones = [
       "zh": "\"神经活动内在观念的逻辑演算\""
     },
     "quoteAttribution": {
-      "en": "《A Logical Calculus of Ideas Immanent in Nervous Activity》, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+      "en": "<em>A Logical Calculus of Ideas Immanent in Nervous Activity</em>, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
       "zh": "《神经活动内在观念的逻辑演算》, 沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
     },
     "quoteMeta": {
@@ -29184,7 +28773,7 @@ const milestones = [
       "zh": "\"随机神经模拟强化计算器\""
     },
     "quoteAttribution": {
-      "en": "《SNARC historical records》, Marvin Minsky and Dean Edmonds, 1951",
+      "en": "<em>SNARC historical records</em>, Marvin Minsky and Dean Edmonds, 1951",
       "zh": "《SNARC 历史记录》, 马文·明斯基、迪恩·埃德蒙兹，1951"
     },
     "quoteMeta": {
@@ -29619,7 +29208,7 @@ const milestones = [
       "zh": "\"拓扑正确特征映射的自组织形成\""
     },
     "quoteAttribution": {
-      "en": "《Self-organized formation of topologically correct feature maps》, Teuvo Kohonen, Biological Cybernetics, 1982",
+      "en": "<em>Self-organized formation of topologically correct feature maps</em>, Teuvo Kohonen, Biological Cybernetics, 1982",
       "zh": "《拓扑正确特征映射的自组织形成》, 泰沃·科霍宁，《Biological Cybernetics》，1982"
     },
     "quoteMeta": {
@@ -30067,7 +29656,7 @@ const milestones = [
       "zh": "\"通过反向传播误差学习表示\""
     },
     "quoteAttribution": {
-      "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+      "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
       "zh": "《通过反向传播误差学习表示》, 大卫·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯，《Nature》，1986"
     },
     "quoteMeta": {
@@ -30519,7 +30108,7 @@ const milestones = [
       "zh": "\"整流线性单元\""
     },
     "quoteAttribution": {
-      "en": "《Deep Sparse Rectifier Neural Networks》, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+      "en": "<em>Deep Sparse Rectifier Neural Networks</em>, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
       "zh": "《深度稀疏整流神经网络》, 泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
     },
     "quoteMeta": {
@@ -30958,7 +30547,7 @@ const milestones = [
       "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
     },
     "quoteAttribution": {
-      "en": "《Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position》, Kunihiko Fukushima, Biological Cybernetics, 1980",
+      "en": "<em>Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position</em>, Kunihiko Fukushima, Biological Cybernetics, 1980",
       "zh": "《Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型》, 福岛邦彦，《Biological Cybernetics》，1980"
     },
     "quoteMeta": {
@@ -31393,7 +30982,7 @@ const milestones = [
       "zh": "\"反向传播应用于手写邮编识别\""
     },
     "quoteAttribution": {
-      "en": "《Backpropagation Applied to Handwritten Zip Code Recognition》, Yann LeCun et al., Neural Computation, 1989",
+      "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
       "zh": "《反向传播应用于手写邮编识别》, 扬·勒昆等，《Neural Computation》，1989"
     },
     "quoteMeta": {
@@ -31828,7 +31417,7 @@ const milestones = [
       "zh": "\"神经概率语言模型\""
     },
     "quoteAttribution": {
-      "en": "《A Neural Probabilistic Language Model》, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+      "en": "<em>A Neural Probabilistic Language Model</em>, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
       "zh": "《神经概率语言模型》, 约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
     },
     "quoteMeta": {
@@ -32276,7 +31865,7 @@ const milestones = [
       "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
     },
     "quoteAttribution": {
-      "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
       "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
     },
     "quoteMeta": {
@@ -32724,7 +32313,7 @@ const milestones = [
       "zh": "\"用于图像识别的深度残差学习\""
     },
     "quoteAttribution": {
-      "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+      "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
       "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
     },
     "quoteMeta": {
@@ -33172,7 +32761,7 @@ const milestones = [
       "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""
     },
     "quoteAttribution": {
-      "en": "《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》, Sergey Ioffe and Christian Szegedy, ICML, 2015",
+      "en": "<em>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</em>, Sergey Ioffe and Christian Szegedy, ICML, 2015",
       "zh": "《批归一化：通过减少内部协变量偏移加速深度网络训练》, 谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
     },
     "quoteMeta": {
@@ -33620,7 +33209,7 @@ const milestones = [
       "zh": "\"密集连接卷积网络\""
     },
     "quoteAttribution": {
-      "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
       "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
     },
     "quoteMeta": {
@@ -34072,7 +33661,7 @@ const milestones = [
       "zh": "\"Attention Is All You Need\""
     },
     "quoteAttribution": {
-      "en": "《Attention Is All You Need》, Ashish Vaswani et al., NeurIPS, 2017",
+      "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
       "zh": "《Attention Is All You Need》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
     },
     "quoteMeta": {
@@ -34524,7 +34113,7 @@ const milestones = [
       "zh": "\"一张图像价值 16x16 个词\""
     },
     "quoteAttribution": {
-      "en": "《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》, Alexey Dosovitskiy et al., ICLR, 2021",
+      "en": "<em>An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</em>, Alexey Dosovitskiy et al., ICLR, 2021",
       "zh": "《一张图像价值 16x16 个词：用于大规模图像识别的 Transformer》, 阿列克谢·多索维茨基等，ICLR，2021"
     },
     "quoteMeta": {
@@ -34972,7 +34561,7 @@ const milestones = [
       "zh": "\"长短期记忆\""
     },
     "quoteAttribution": {
-      "en": "《Long Short-Term Memory》, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
       "zh": "《长短期记忆》, 塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
     },
     "quoteMeta": {
@@ -35424,7 +35013,7 @@ const milestones = [
       "zh": "\"生成对抗网络\""
     },
     "quoteAttribution": {
-      "en": "《Generative Adversarial Nets》, Ian Goodfellow et al., NeurIPS, 2014",
+      "en": "<em>Generative Adversarial Nets</em>, Ian Goodfellow et al., NeurIPS, 2014",
       "zh": "《生成对抗网络》, 伊恩·古德费洛等，NeurIPS，2014"
     },
     "quoteMeta": {
@@ -35876,7 +35465,7 @@ const milestones = [
       "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
     },
     "quoteAttribution": {
-      "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
       "zh": "《通过联合学习对齐与翻译实现神经机器翻译》, 兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
     },
     "quoteMeta": {
@@ -36311,7 +35900,7 @@ const milestones = [
       "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
     },
     "quoteAttribution": {
-      "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al., NAACL, 2019",
+      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al., NAACL, 2019",
       "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，NAACL，2019"
     },
     "quoteMeta": {
@@ -36746,7 +36335,7 @@ const milestones = [
       "zh": "\"通过生成式预训练改进语言理解\""
     },
     "quoteAttribution": {
-      "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford et al., OpenAI, 2018",
+      "en": "<em>Improving Language Understanding by Generative Pre-Training</em>, Alec Radford et al., OpenAI, 2018",
       "zh": "《通过生成式预训练改进语言理解》, 亚历克·拉德福德等，OpenAI，2018"
     },
     "quoteMeta": {
@@ -37194,7 +36783,7 @@ const milestones = [
       "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
     },
     "quoteAttribution": {
-      "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al., Nature, 2021",
+      "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al., Nature, 2021",
       "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，《Nature》，2021"
     },
     "quoteMeta": {
@@ -37629,7 +37218,7 @@ const milestones = [
       "zh": "\"从自然语言监督中学习可迁移视觉模型\""
     },
     "quoteAttribution": {
-      "en": "《Learning Transferable Visual Models From Natural Language Supervision》, Alec Radford et al., ICML, 2021",
+      "en": "<em>Learning Transferable Visual Models From Natural Language Supervision</em>, Alec Radford et al., ICML, 2021",
       "zh": "《从自然语言监督中学习可迁移视觉模型》, 亚历克·拉德福德等，ICML，2021"
     },
     "quoteMeta": {
@@ -38064,7 +37653,7 @@ const milestones = [
       "zh": "\"零样本文本到图像生成\""
     },
     "quoteAttribution": {
-      "en": "《Zero-Shot Text-to-Image Generation》, Aditya Ramesh et al., ICML, 2021",
+      "en": "<em>Zero-Shot Text-to-Image Generation</em>, Aditya Ramesh et al., ICML, 2021",
       "zh": "《零样本文本到图像生成》, 阿迪蒂亚·拉梅什等，ICML，2021"
     },
     "quoteMeta": {
@@ -38499,7 +38088,7 @@ const milestones = [
       "zh": "\"使用潜扩散模型进行高分辨率图像合成\""
     },
     "quoteAttribution": {
-      "en": "《High-Resolution Image Synthesis with Latent Diffusion Models》, Robin Rombach et al., CVPR, 2022",
+      "en": "<em>High-Resolution Image Synthesis with Latent Diffusion Models</em>, Robin Rombach et al., CVPR, 2022",
       "zh": "《使用潜扩散模型进行高分辨率图像合成》, 罗宾·罗姆巴赫等，CVPR，2022"
     },
     "quoteMeta": {
@@ -38938,7 +38527,7 @@ const milestones = [
       "zh": "\"分割一切\""
     },
     "quoteAttribution": {
-      "en": "《Segment Anything》, Alexander Kirillov et al., ICCV, 2023",
+      "en": "<em>Segment Anything</em>, Alexander Kirillov et al., ICCV, 2023",
       "zh": "《Segment Anything》, 亚历山大·基里洛夫等，ICCV，2023"
     },
     "quoteMeta": {
@@ -39373,7 +38962,7 @@ const milestones = [
       "zh": "\"使用移位窗口的层级视觉 Transformer\""
     },
     "quoteAttribution": {
-      "en": "《Swin Transformer: Hierarchical Vision Transformer using Shifted Windows》, Ze Liu et al., ICCV, 2021",
+      "en": "<em>Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</em>, Ze Liu et al., ICCV, 2021",
       "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》, 刘泽等，ICCV，2021"
     },
     "quoteMeta": {
@@ -39839,7 +39428,7 @@ const milestones = [
       "zh": "\"用于词表示的全局向量\""
     },
     "quoteAttribution": {
-      "en": "《GloVe: Global Vectors for Word Representation》, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+      "en": "<em>GloVe: Global Vectors for Word Representation</em>, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
       "zh": "《GloVe：用于词表示的全局向量》, 杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
     },
     "quoteMeta": {
@@ -40305,7 +39894,7 @@ const milestones = [
       "zh": "\"条件生成对抗网络\""
     },
     "quoteAttribution": {
-      "en": "《Conditional Generative Adversarial Nets》, Mehdi Mirza and Simon Osindero, 2014",
+      "en": "<em>Conditional Generative Adversarial Nets</em>, Mehdi Mirza and Simon Osindero, 2014",
       "zh": "《条件生成对抗网络》, 迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
     },
     "quoteMeta": {
@@ -40771,7 +40360,7 @@ const milestones = [
       "zh": "\"使用深度卷积生成对抗网络进行无监督表示学习\""
     },
     "quoteAttribution": {
-      "en": "《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+      "en": "<em>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</em>, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
       "zh": "《使用深度卷积生成对抗网络进行无监督表示学习》, 亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
     },
     "quoteMeta": {
@@ -41237,7 +40826,7 @@ const milestones = [
       "zh": "\"Wasserstein 生成对抗网络\""
     },
     "quoteAttribution": {
-      "en": "《Wasserstein Generative Adversarial Networks》, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+      "en": "<em>Wasserstein Generative Adversarial Networks</em>, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
       "zh": "《Wasserstein 生成对抗网络》, 马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
     },
     "quoteMeta": {
@@ -41703,7 +41292,7 @@ const milestones = [
       "zh": "\"使用循环一致对抗网络进行非配对图像到图像转换\""
     },
     "quoteAttribution": {
-      "en": "《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》, Jun-Yan Zhu et al., ICCV, 2017",
+      "en": "<em>Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</em>, Jun-Yan Zhu et al., ICCV, 2017",
       "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》, 朱俊彦等，ICCV，2017"
     },
     "quoteMeta": {
@@ -42169,7 +41758,7 @@ const milestones = [
       "zh": "\"使用条件对抗网络进行图像到图像转换\""
     },
     "quoteAttribution": {
-      "en": "《Image-to-Image Translation with Conditional Adversarial Networks》, Phillip Isola et al., CVPR, 2017",
+      "en": "<em>Image-to-Image Translation with Conditional Adversarial Networks</em>, Phillip Isola et al., CVPR, 2017",
       "zh": "《使用条件对抗网络进行图像到图像转换》, 菲利普·伊索拉等，CVPR，2017"
     },
     "quoteMeta": {
@@ -42635,7 +42224,7 @@ const milestones = [
       "zh": "\"面向生成对抗网络的基于风格的生成器架构\""
     },
     "quoteAttribution": {
-      "en": "《A Style-Based Generator Architecture for Generative Adversarial Networks》, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+      "en": "<em>A Style-Based Generator Architecture for Generative Adversarial Networks</em>, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
       "zh": "《面向生成对抗网络的基于风格的生成器架构》, 特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
     },
     "quoteMeta": {
@@ -43101,7 +42690,7 @@ const milestones = [
       "zh": "\"自动编码变分贝叶斯\""
     },
     "quoteAttribution": {
-      "en": "《Auto-Encoding Variational Bayes》, Diederik Kingma and Max Welling, ICLR, 2014",
+      "en": "<em>Auto-Encoding Variational Bayes</em>, Diederik Kingma and Max Welling, ICLR, 2014",
       "zh": "《自动编码变分贝叶斯》, 迪德里克·金马、马克斯·韦林，ICLR，2014"
     },
     "quoteMeta": {
@@ -43567,7 +43156,7 @@ const milestones = [
       "zh": "\"使用非平衡热力学进行深度无监督学习\""
     },
     "quoteAttribution": {
-      "en": "《Deep Unsupervised Learning using Nonequilibrium Thermodynamics》, Jascha Sohl-Dickstein et al., ICML, 2015",
+      "en": "<em>Deep Unsupervised Learning using Nonequilibrium Thermodynamics</em>, Jascha Sohl-Dickstein et al., ICML, 2015",
       "zh": "《使用非平衡热力学进行深度无监督学习》, 雅沙·索尔-迪克斯坦等，ICML，2015"
     },
     "quoteMeta": {
@@ -44033,7 +43622,7 @@ const milestones = [
       "zh": "\"一种用于图领域学习的新模型\""
     },
     "quoteAttribution": {
-      "en": "《The Graph Neural Network Model》, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
+      "en": "<em>The Graph Neural Network Model</em>, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
       "zh": "《图神经网络模型》, 弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
     },
     "quoteMeta": {
@@ -44499,7 +44088,7 @@ const milestones = [
       "zh": "\"使用图卷积网络进行半监督分类\""
     },
     "quoteAttribution": {
-      "en": "《Semi-Supervised Classification with Graph Convolutional Networks》, Thomas Kipf and Max Welling, ICLR, 2017",
+      "en": "<em>Semi-Supervised Classification with Graph Convolutional Networks</em>, Thomas Kipf and Max Welling, ICLR, 2017",
       "zh": "《使用图卷积网络进行半监督分类》, 托马斯·基普夫、马克斯·韦林，ICLR，2017"
     },
     "quoteMeta": {
@@ -44965,7 +44554,7 @@ const milestones = [
       "zh": "\"图注意力网络\""
     },
     "quoteAttribution": {
-      "en": "《Graph Attention Networks》, Petar Velickovic et al., ICLR, 2018",
+      "en": "<em>Graph Attention Networks</em>, Petar Velickovic et al., ICLR, 2018",
       "zh": "《图注意力网络》, 佩塔尔·韦利奇科维奇等，ICLR，2018"
     },
     "quoteMeta": {
@@ -45441,7 +45030,7 @@ const milestones = [
       "zh": "\"基于强化学习的神经架构搜索\""
     },
     "quoteAttribution": {
-      "en": "《Neural Architecture Search with Reinforcement Learning》, Barret Zoph and Quoc V. Le, ICLR, 2017",
+      "en": "<em>Neural Architecture Search with Reinforcement Learning</em>, Barret Zoph and Quoc V. Le, ICLR, 2017",
       "zh": "《基于强化学习的神经架构搜索》, 巴雷特·佐夫、黎国威，ICLR，2017"
     },
     "quoteMeta": {
@@ -45907,7 +45496,7 @@ const milestones = [
       "zh": "\"用剪枝、训练型量化和霍夫曼编码压缩深度神经网络\""
     },
     "quoteAttribution": {
-      "en": "《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》, Song Han, Huizi Mao, and William Dally, ICLR, 2016",
+      "en": "<em>Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding</em>, Song Han, Huizi Mao, and William Dally, ICLR, 2016",
       "zh": "《深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络》, 韩松、毛慧子、威廉·达利，ICLR，2016"
     },
     "quoteMeta": {
@@ -46383,7 +45972,7 @@ const milestones = [
       "zh": "\"蒸馏神经网络中的知识\""
     },
     "quoteAttribution": {
-      "en": "《Distilling the Knowledge in a Neural Network》, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+      "en": "<em>Distilling the Knowledge in a Neural Network</em>, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
       "zh": "《蒸馏神经网络中的知识》, 杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
     },
     "quoteMeta": {
@@ -46849,7 +46438,7 @@ const milestones = [
       "zh": "\"上下文中的常见物体\""
     },
     "quoteAttribution": {
-      "en": "《Microsoft COCO: Common Objects in Context》, Tsung-Yi Lin et al., ECCV, 2014",
+      "en": "<em>Microsoft COCO: Common Objects in Context</em>, Tsung-Yi Lin et al., ECCV, 2014",
       "zh": "《Microsoft COCO：上下文中的常见物体》, 林宗毅等，ECCV，2014"
     },
     "quoteMeta": {
@@ -47315,7 +46904,7 @@ const milestones = [
       "zh": "\"从延迟奖励中学习\""
     },
     "quoteAttribution": {
-      "en": "《Learning from Delayed Rewards》, Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
+      "en": "<em>Learning from Delayed Rewards</em>, Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
       "zh": "《从延迟奖励中学习》, 克里斯托弗·沃特金斯，博士论文，1989；沃特金斯和彼得·戴扬，1992"
     },
     "quoteMeta": {
@@ -47781,7 +47370,7 @@ const milestones = [
       "zh": "\"使用深度强化学习进行连续控制\""
     },
     "quoteAttribution": {
-      "en": "《Continuous Control with Deep Reinforcement Learning》, Timothy Lillicrap et al., ICLR, 2016",
+      "en": "<em>Continuous Control with Deep Reinforcement Learning</em>, Timothy Lillicrap et al., ICLR, 2016",
       "zh": "《使用深度强化学习进行连续控制》, 蒂莫西·利利克拉普等，ICLR，2016"
     },
     "quoteMeta": {
@@ -48247,7 +47836,7 @@ const milestones = [
       "zh": "\"能够解决困难学习控制问题的类神经自适应元件\""
     },
     "quoteAttribution": {
-      "en": "《Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems》, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+      "en": "<em>Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems</em>, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
       "zh": "《能够解决困难学习控制问题的类神经自适应元件》, 安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
     },
     "quoteMeta": {
@@ -48659,7 +48248,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-1951-strachey-draughts",
+    "id": "milestone-gaming-ai-1951-strachey-draughts",
     "year": "1951-1952",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -48713,7 +48302,7 @@ const milestones = [
       "zh": "\"非数值程序也可以对弈\""
     },
     "quoteAttribution": {
-      "en": "《Logical or non-mathematical programmes》, Christopher Strachey",
+      "en": "<em>Logical or non-mathematical programmes</em>, Christopher Strachey",
       "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
     },
     "quoteMeta": {
@@ -48740,8 +48329,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
         }
       },
       {
@@ -48750,8 +48339,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. That pattern made search and evaluation visible as computational ingredients of intelligent play.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。这种模式让搜索与评估成为智能对弈中可见的计算要素。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
         }
       },
       {
@@ -48767,34 +48356,54 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
           "caption": {
-            "en": "Christopher Strachey profile card",
-            "zh": "克里斯托弗·斯特雷奇人物卡"
+            "en": "Christopher Strachey's draughts program",
+            "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
           },
           "subcaption": {
-            "en": "Local portrait-style card for the draughts program developer.",
-            "zh": "跳棋程序开发者的本地人物卡。"
+            "en": "Screenshot of the early draughts program attributed to Strachey.",
+            "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
           },
           "sourceName": {
-            "en": "Local original profile card",
-            "zh": "本地原创人物卡"
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
           },
-          "source": "https://history.computer.org/pioneers/strachey.html",
-          "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
-          "originalImageUrl": "Local original SVG profile card",
-          "license": {
-            "en": "Original local SVG profile card; no source photograph is copied.",
-            "zh": "本地原创 SVG 人物卡；未复制来源照片。"
-          },
+          "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+          "license": "Public domain",
           "usage": {
-            "en": "Historical figure profile image",
-            "zh": "历史人物资料图"
+            "en": "Program screenshot",
+            "zh": "程序截图"
+          }
+        },
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+          "caption": {
+            "en": "Checkers board",
+            "zh": "跳棋棋盘照片"
+          },
+          "subcaption": {
+            "en": "Physical checkers board used as visual context for game-playing AI.",
+            "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+          },
+          "sourceName": {
+            "en": "Wikimedia Commons",
+            "zh": "维基共享资源"
+          },
+          "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+          "license": "CC BY 3.0",
+          "usage": {
+            "en": "Game-board photo",
+            "zh": "棋盘照片"
           }
         },
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -48844,10 +48453,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -48860,20 +48465,6 @@ const milestones = [
       "name": {
         "en": "AI in Board & Tabletop Games",
         "zh": "AI 在棋牌与博弈论的演进"
-      }
-    },
-    "analysis": {
-      "what": {
-        "en": "Strachey's draughts program showed that stored-program computers could represent a board game, generate legal moves and choose actions.",
-        "zh": "斯特雷奇的跳棋程序证明，存储程序计算机可以表示棋盘游戏、生成合法走法并选择行动。"
-      },
-      "how": {
-        "en": "It encoded board states and move rules, then used simple evaluation to compare candidate moves on early British hardware.",
-        "zh": "它编码棋盘状态和走法规则，再在早期英国计算机上用简单评估比较候选走法。"
-      },
-      "why": {
-        "en": "It mattered because it moved computing beyond arithmetic into symbolic choice, making games a practical testbed for search and evaluation.",
-        "zh": "它的重要性在于把计算从算术推进到符号选择，使游戏成为搜索和评估的实际试验场。"
       }
     },
     "achievement": {
@@ -48985,43 +48576,6 @@ const milestones = [
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Strachey's draughts game evolution",
-            "zh": "斯特雷奇跳棋 棋局演化"
-          },
-          "description": {
-            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
-            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/1951-strachey-draughts.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -49070,7 +48624,7 @@ const milestones = [
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
       "demoPanel": "sources"
     },
     "quiz": {
@@ -49157,7 +48711,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-1988-td-update",
+    "id": "milestone-gaming-ai-1988-td-update",
     "year": "1988",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -49211,7 +48765,7 @@ const milestones = [
       "zh": "\"自举式价值预测\""
     },
     "quoteAttribution": {
-      "en": "《Learning to predict by temporal differences》, Richard Sutton",
+      "en": "<em>Learning to predict by temporal differences</em>, Richard Sutton",
       "zh": "《通过时序差分学习预测》, 理查德·萨顿"
     },
     "quoteMeta": {
@@ -49238,8 +48792,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
         }
       },
       {
@@ -49248,8 +48802,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
         }
       },
       {
@@ -49266,7 +48820,6 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
@@ -49291,31 +48844,6 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg": {
-          "caption": {
-            "en": "TD update over a game trajectory",
-            "zh": "游戏轨迹上的 TD 更新"
-          },
-          "subcaption": {
-            "en": "Local board-game explainer linking TD learning to game-state prediction.",
-            "zh": "本地棋类解释图，把 TD 学习与游戏状态预测联系起来。"
-          },
-          "sourceName": {
-            "en": "Learning to Predict by the Methods of Temporal Differences",
-            "zh": "《用时序差分方法学习预测》"
-          },
-          "source": "https://doi.org/10.1007/BF00115009",
-          "sourceUrl": "https://doi.org/10.1007/BF00115009",
-          "originalImageUrl": "Local original redraw",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          },
-          "usage": {
-            "en": "Board-game trajectory explainer",
-            "zh": "棋类轨迹解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
@@ -49359,10 +48887,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -49375,20 +48899,6 @@ const milestones = [
       "name": {
         "en": "AI in Board & Tabletop Games",
         "zh": "AI 在棋牌与博弈论的演进"
-      }
-    },
-    "analysis": {
-      "what": {
-        "en": "Temporal-difference learning made it possible to update value predictions before a full game or episode had finished.",
-        "zh": "时序差分学习使智能体可以在完整对局或回合结束前更新价值预测。"
-      },
-      "how": {
-        "en": "It bootstraps from the next reward and the next prediction, nudging the current value estimate toward a one-step target.",
-        "zh": "它根据下一步奖励和下一步预测自举，把当前价值估计推向一步目标。"
-      },
-      "why": {
-        "en": "It succeeded because delayed rewards no longer had to wait until the final outcome, a key idea for later game-learning agents.",
-        "zh": "它成功的原因在于延迟奖励不必等到最终结果才能产生学习信号，这成为后续游戏学习智能体的关键思想。"
       }
     },
     "achievement": {
@@ -49413,7 +48923,6 @@ const milestones = [
         "zh": "用下一步预测和奖励更新价值估计"
       },
       "visual": "td",
-      "demoImage": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "keyConcepts": [
         {
           "label": {
@@ -49505,43 +49014,6 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "TD-Gammon trajectory game evolution",
-            "zh": "TD-Gammon 轨迹 棋局演化"
-          },
-          "description": {
-            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-          },
-          "url": "resources/videos/game-evolution/1988-td-update.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -49665,7 +49137,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-1994-chinook",
+    "id": "milestone-gaming-ai-1994-chinook",
     "year": "1989-2007",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -49719,7 +49191,7 @@ const milestones = [
       "zh": "\"跳棋完美对弈结果为和棋\""
     },
     "quoteAttribution": {
-      "en": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
+      "en": "<em>Checkers Is Solved</em>, Jonathan Schaeffer et al.",
       "zh": "《跳棋已被求解》, 乔纳森·谢弗等"
     },
     "quoteMeta": {
@@ -49746,8 +49218,8 @@ const milestones = [
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
         }
       },
       {
@@ -49756,8 +49228,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
         }
       },
       {
@@ -49867,10 +49339,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Result summary",
-      "zh": "结果摘要"
-    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -49885,32 +49353,6 @@ const milestones = [
         "zh": "AI 在棋牌与博弈论的演进"
       }
     },
-    "analysis": {
-      "what": {
-        "en": "Chinook became the first computer program to win the world checkers championship and later helped prove that perfect play in checkers ends in a draw.",
-        "zh": "Chinook 成为首个赢得世界跳棋冠军的计算机程序，随后帮助证明跳棋在完美对弈下结果为和棋。"
-      },
-      "how": {
-        "en": "It combined opening books, alpha-beta search, hand-tuned evaluation and very large endgame databases that mapped late positions to proven outcomes.",
-        "zh": "它结合开局库、alpha-beta 搜索、人工调校评估函数，以及把后期局面映射到可证明结果的大规模残局数据库。"
-      },
-      "why": {
-        "en": "Earlier programs could search but still became uncertain near the endgame. Chinook made the endgame exact, so search could terminate in verified game-theoretic results.",
-        "zh": "早期程序虽能搜索，但残局阶段仍不确定。Chinook 把残局做成精确数据库，让搜索能落到经验证的博弈论结果上。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Checkers Is Solved",
-          "zh": "Checkers Is Solved"
-        },
-        "authors": "Jonathan Schaeffer, Neil Burch, Yngvi Bjornsson, Akihiro Kishimoto, Martin Muller, Robert Lake, Paul Lu, Steve Sutphen",
-        "journal": "Science",
-        "year": 2007,
-        "url": "https://www.science.org/doi/10.1126/science.1144079"
-      }
-    ],
     "achievement": {
       "area": {
         "en": "Game",
@@ -50019,43 +49461,6 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Chinook game evolution",
-            "zh": "Chinook 棋局演化"
-          },
-          "description": {
-            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/1994-chinook.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -50192,7 +49597,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-1997-logistello",
+    "id": "milestone-gaming-ai-1997-logistello",
     "year": "1997",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -50259,7 +49664,7 @@ const milestones = [
       "zh": "\"村上健 0 比 6 负于 Logistello\""
     },
     "quoteAttribution": {
-      "en": "《The Othello Match of the Year》, Michael Buro / NEC Research Institute",
+      "en": "<em>The Othello Match of the Year</em>, Michael Buro / NEC Research Institute",
       "zh": "《年度黑白棋对局》, 迈克尔·布罗 / NEC 研究院"
     },
     "quoteMeta": {
@@ -50688,7 +50093,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-1997-deep-blue",
+    "id": "milestone-gaming-ai-1997-deep-blue",
     "year": "1997",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -50742,7 +50147,7 @@ const milestones = [
       "zh": "\"专用国际象棋搜索硬件\""
     },
     "quoteAttribution": {
-      "en": "《Deep Blue journal article》, Murray Campbell",
+      "en": "<em>Deep Blue journal article</em>, Murray Campbell",
       "zh": "《深蓝期刊论文》, 默里·坎贝尔"
     },
     "quoteMeta": {
@@ -50779,8 +50184,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
         }
       },
       {
@@ -50873,10 +50278,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -50891,32 +50292,6 @@ const milestones = [
         "zh": "AI 在棋牌与博弈论的演进"
       }
     },
-    "analysis": {
-      "what": {
-        "en": "Deep Blue defeated reigning world chess champion Garry Kasparov in a regulation match, turning computer chess into a public AI milestone.",
-        "zh": "Deep Blue 在正式比赛中击败卫冕世界冠军加里·卡斯帕罗夫，使计算机国际象棋成为公众熟知的 AI 里程碑。"
-      },
-      "how": {
-        "en": "It used massively parallel alpha-beta search, chess-specific evaluation, opening and endgame knowledge, and custom chips for move generation and scoring.",
-        "zh": "它使用大规模并行 alpha-beta 搜索、国际象棋专用评估、开局与残局知识，并用定制芯片加速走法生成和局面评分。"
-      },
-      "why": {
-        "en": "Human champions relied on selective intuition. Deep Blue won by pushing calculation depth and chess-specific hardware beyond human tactical reach.",
-        "zh": "人类冠军依靠选择性直觉。Deep Blue 通过远超人类战术覆盖范围的计算深度和棋类专用硬件取得突破。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Deep Blue",
-          "zh": "Deep Blue"
-        },
-        "authors": "Murray Campbell, A. Joseph Hoane Jr., Feng-hsiung Hsu",
-        "journal": "Artificial Intelligence",
-        "year": 2002,
-        "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-      }
-    ],
     "achievement": {
       "area": {
         "en": "Game AI",
@@ -51034,57 +50409,9 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Deep Blue game evolution",
-            "zh": "深蓝 棋局演化"
-          },
-          "description": {
-            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
-        {
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "label": {
-            "en": "Deep Blue journal article",
-            "zh": "深蓝期刊论文"
-          },
-          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-        },
         {
           "type": {
             "en": "Profile",
@@ -51109,8 +50436,8 @@ const milestones = [
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
@@ -51204,7 +50531,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2000s-alphacat",
+    "id": "milestone-gaming-ai-2000s-alphacat",
     "year": "2000s",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -51271,7 +50598,7 @@ const milestones = [
       "zh": "\"中国象棋：16 次赛事，38 个程序\""
     },
     "quoteAttribution": {
-      "en": "《ICGA Tournaments: Chinese Chess》, International Computer Games Association tournament archive",
+      "en": "<em>ICGA Tournaments: Chinese Chess</em>, International Computer Games Association tournament archive",
       "zh": "《ICGA 赛事：中国象棋》, 国际计算机博弈协会赛事档案"
     },
     "quoteMeta": {
@@ -51673,7 +51000,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2013-dqn",
+    "id": "milestone-gaming-ai-2013-dqn",
     "year": "2013",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -51740,7 +51067,7 @@ const milestones = [
       "zh": "\"用深度强化学习玩 Atari\""
     },
     "quoteAttribution": {
-      "en": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
+      "en": "<em>Playing Atari with Deep Reinforcement Learning</em>, Volodymyr Mnih et al., DeepMind, 2013",
       "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
     },
     "quoteMeta": {
@@ -51777,8 +51104,8 @@ const milestones = [
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
         }
       },
       {
@@ -51795,7 +51122,6 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
@@ -51817,31 +51143,6 @@ const milestones = [
           "usage": {
             "en": "Historical figure / Key contributor portrait",
             "zh": "历史人物 / 关键贡献者肖像"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg": {
-          "caption": {
-            "en": "Atari control loop",
-            "zh": "Atari 控制循环"
-          },
-          "subcaption": {
-            "en": "Local game-screen explainer showing pixels, replay, Q-values, and action choice.",
-            "zh": "本地游戏画面解释图，展示像素、回放、Q 值与动作选择。"
-          },
-          "sourceName": {
-            "en": "Playing Atari with Deep Reinforcement Learning",
-            "zh": "《用深度强化学习玩 Atari》"
-          },
-          "source": "https://arxiv.org/abs/1312.5602",
-          "sourceUrl": "https://arxiv.org/abs/1312.5602",
-          "originalImageUrl": "Local original redraw",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          },
-          "usage": {
-            "en": "Game-control explainer",
-            "zh": "游戏控制解释图"
           }
         },
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
@@ -51891,10 +51192,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -51907,20 +51204,6 @@ const milestones = [
       "name": {
         "en": "AI in Board & Tabletop Games",
         "zh": "AI 在棋牌与博弈论的演进"
-      }
-    },
-    "analysis": {
-      "what": {
-        "en": "DQN showed that one deep reinforcement learning agent could learn control policies directly from Atari pixels across multiple games.",
-        "zh": "DQN 证明一个深度强化学习智能体可以直接从 Atari 像素中学习多款游戏的控制策略。"
-      },
-      "how": {
-        "en": "It combined Q-learning with convolutional networks, experience replay and a target network to stabilize value learning.",
-        "zh": "它把 Q-learning 与卷积网络、经验回放和目标网络结合起来，以稳定价值学习。"
-      },
-      "why": {
-        "en": "It worked where earlier methods struggled because perception and control were trained together from replayed experience.",
-        "zh": "它能突破早期方法的瓶颈，是因为感知和控制可以从回放经验中联合训练。"
       }
     },
     "achievement": {
@@ -51945,7 +51228,6 @@ const milestones = [
         "zh": "像素进入回放；Q 值选择动作"
       },
       "visual": "dqn",
-      "demoImage": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "keyConcepts": [
         {
           "label": {
@@ -52030,43 +51312,6 @@ const milestones = [
           "action": {
             "en": "Open preprint",
             "zh": "打开预印本"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "DQN game evolution",
-            "zh": "DQN 棋局演化"
-          },
-          "description": {
-            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
-            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
-          },
-          "url": "resources/videos/game-evolution/2013-dqn.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -52204,7 +51449,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2016-alphago",
+    "id": "milestone-gaming-ai-2016-alphago",
     "year": 2016,
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -52284,7 +51529,7 @@ const milestones = [
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
     "quoteAttribution": {
-      "en": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
+      "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
       "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
     },
     "quoteMeta": {
@@ -52307,22 +51552,22 @@ const milestones = [
     "commentarySections": [
       {
         "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
+          "en": "Published Paper",
+          "zh": "论文材料"
         },
         "html": {
-          "en": "Go had long resisted brute-force AI because its state space was enormous and expert play depended on pattern intuition. AlphaGo made the problem tractable by combining learned intuition with search, turning Go into a public demonstration of modern AI strategy.",
-          "zh": "围棋长期难以被蛮力 AI 攻克，因为状态空间巨大，高手对弈又依赖模式直觉。AlphaGo 通过把学习到的直觉与搜索结合起来，使这个问题变得可处理，并让围棋成为现代 AI 战略能力的公开展示。"
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
         "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
+          "en": "Blog / API Materials",
+          "zh": "博客 / API 材料"
         },
         "html": {
-          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce dependence on expert game data.",
-          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
         }
       },
       {
@@ -52385,10 +51630,6 @@ const milestones = [
       },
       "videos": []
     },
-    "quoteLabel": {
-      "en": "Paper excerpt",
-      "zh": "论文摘录"
-    },
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -52403,32 +51644,6 @@ const milestones = [
         "zh": "AI 在棋牌与博弈论的演进"
       }
     },
-    "analysis": {
-      "what": {
-        "en": "AlphaGo defeated Lee Sedol and showed that AI could master Go, a game whose state space had long resisted brute-force search.",
-        "zh": "AlphaGo 击败李世石，证明 AI 可以掌握长期被认为难以靠蛮力搜索解决的围棋。"
-      },
-      "how": {
-        "en": "It combined policy networks, value networks, reinforcement learning from self-play and Monte Carlo tree search into one decision loop.",
-        "zh": "它把策略网络、价值网络、自我对弈强化学习和蒙特卡洛树搜索结合成一个决策闭环。"
-      },
-      "why": {
-        "en": "Go was too large for exhaustive enumeration. Neural networks supplied learned intuition, while tree search converted that intuition into concrete plans.",
-        "zh": "围棋空间过大，无法穷举。神经网络提供学习到的直觉，树搜索再把这种直觉转化为具体计划。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
-          "zh": "Mastering the Game of Go with Deep Neural Networks and Tree Search"
-        },
-        "authors": "David Silver et al.",
-        "journal": "Nature",
-        "year": 2016,
-        "url": "https://www.nature.com/articles/nature16961"
-      }
-    ],
     "achievement": {
       "area": {
         "en": "Reinforcement Learning",
@@ -52509,43 +51724,6 @@ const milestones = [
           "action": {
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "AlphaGo game evolution",
-            "zh": "AlphaGo 棋局演化"
-          },
-          "description": {
-            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-          },
-          "url": "resources/videos/game-evolution/2016-alphago.mp4",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -52669,7 +51847,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2017-alphazero",
+    "id": "milestone-gaming-ai-2017-alphazero",
     "year": "2017-2018",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -52736,7 +51914,7 @@ const milestones = [
       "zh": "\"一种通用强化学习算法\""
     },
     "quoteAttribution": {
-      "en": "《A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play》, David Silver et al., Science, 2018",
+      "en": "<em>A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play</em>, David Silver et al., Science, 2018",
       "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
     },
     "quoteMeta": {
@@ -53150,7 +52328,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2017-libratus",
+    "id": "milestone-gaming-ai-2017-libratus",
     "year": "2017",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -53217,7 +52395,7 @@ const milestones = [
       "zh": "\"面向一对一无限注扑克的超人 AI\""
     },
     "quoteAttribution": {
-      "en": "《Superhuman AI for heads-up no-limit poker: Libratus beats top professionals》, Noam Brown and Tuomas Sandholm, Science, 2017",
+      "en": "<em>Superhuman AI for heads-up no-limit poker: Libratus beats top professionals</em>, Noam Brown and Tuomas Sandholm, Science, 2017",
       "zh": "《一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手》, Noam Brown 与 Tuomas Sandholm，Science，2017"
     },
     "quoteMeta": {
@@ -53611,7 +52789,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2019-pluribus",
+    "id": "milestone-gaming-ai-2019-pluribus",
     "year": "2019",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -53678,7 +52856,7 @@ const milestones = [
       "zh": "\"面向多人扑克的超人 AI\""
     },
     "quoteAttribution": {
-      "en": "《Superhuman AI for multiplayer poker》, Noam Brown and Tuomas Sandholm, Science, 2019",
+      "en": "<em>Superhuman AI for multiplayer poker</em>, Noam Brown and Tuomas Sandholm, Science, 2019",
       "zh": "《面向多人扑克的超人 AI》, Noam Brown 与 Tuomas Sandholm，Science，2019"
     },
     "quoteMeta": {
@@ -54072,7 +53250,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2019-suphx",
+    "id": "milestone-gaming-ai-2019-suphx",
     "year": "2019-2020",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -54152,7 +53330,7 @@ const milestones = [
       "zh": "\"用深度强化学习掌握麻将\""
     },
     "quoteAttribution": {
-      "en": "《Suphx: Mastering Mahjong with Deep Reinforcement Learning》, Junjie Li et al., arXiv, 2020",
+      "en": "<em>Suphx: Mastering Mahjong with Deep Reinforcement Learning</em>, Junjie Li et al., arXiv, 2020",
       "zh": "《Suphx：用深度强化学习掌握麻将》, Junjie Li 等，arXiv，2020"
     },
     "quoteMeta": {
@@ -54554,7 +53732,7 @@ const milestones = [
     ]
   },
   {
-    "id": "milestone-2019-muzero",
+    "id": "milestone-gaming-ai-2019-muzero",
     "year": "2019-2020",
     "category": {
       "en": "AI in Board & Tabletop Games",
@@ -54621,7 +53799,7 @@ const milestones = [
       "zh": "\"用学习到的模型进行规划\""
     },
     "quoteAttribution": {
-      "en": "《Mastering Atari, Go, chess and shogi by planning with a learned model》, Julian Schrittwieser et al., Nature, 2020",
+      "en": "<em>Mastering Atari, Go, chess and shogi by planning with a learned model</em>, Julian Schrittwieser et al., Nature, 2020",
       "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》, Julian Schrittwieser 等，Nature，2020"
     },
     "quoteMeta": {

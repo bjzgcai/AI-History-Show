@@ -123,9 +123,9 @@ module.exports = {
       "zh": "摘自PPT第1页"
     },
     "images": [
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
     ],
     "videos": [
@@ -231,22 +231,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png": {
         "caption": {
-          "en": "Frank Rosenblatt",
-          "zh": "弗兰克·罗森布拉特"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Perceptron inventor",
-          "zh": "感知机发明者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
-          "en": "Frank Rosenblatt",
-          "zh": "弗兰克·罗森布拉特"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Perceptron inventor and early demonstration photo",
-          "zh": "感知机发明者与早期演示资料"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
@@ -336,12 +336,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
         "caption": {
-          "en": "Marvin Minsky",
-          "zh": "马文·明斯基"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Co-author of Perceptrons",
-          "zh": "《感知器》作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
@@ -431,10 +431,10 @@ module.exports = {
       "zh": "摘自PPT第9页"
     },
     "images": [
-      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
     ],
     "videos": [
@@ -453,32 +453,32 @@ module.exports = {
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
         "caption": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation co-author and deep learning pioneer",
-          "zh": "反向传播共同作者，深度学习先驱"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
         "caption": {
-          "en": "David Rumelhart",
-          "zh": "大卫·鲁梅尔哈特"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Lead author of the backpropagation paper",
-          "zh": "反向传播论文主要作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
         "caption": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation co-author in the 1980s",
-          "zh": "反向传播共同作者，1980 年代影像"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
@@ -548,22 +548,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "en": "Yann LeCun",
-          "zh": "杨立昆"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "CNN pioneer and LeNet researcher",
-          "zh": "CNN 先驱，LeNet 研究者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "en": "Yann LeCun",
-          "zh": "杨立昆"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "CNN pioneer and LeNet researcher",
-          "zh": "CNN 先驱，LeNet 研究者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
@@ -652,12 +652,12 @@ module.exports = {
       },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
         "caption": {
-          "en": "Jeffrey Elman",
-          "zh": "杰弗里·埃尔曼"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Creator of the Simple RNN / Elman network",
-          "zh": "Simple RNN / Elman 网络提出者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -717,7 +717,6 @@ module.exports = {
       "zh": "摘自PPT第19页"
     },
     "images": [
-      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
       "resources/images/1997-lstm/people/1997-lstm_people_01.png"
@@ -726,16 +725,6 @@ module.exports = {
       "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4"
     ],
     "imageMeta": {
-      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg": {
-        "caption": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
-        },
-        "subcaption": {
-          "en": "LSTM co-inventor, 1997 photo",
-          "zh": "LSTM 共同发明者，1997 年照片"
-        }
-      },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
           "en": "Architecture",
@@ -758,12 +747,12 @@ module.exports = {
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "LSTM co-inventor",
-          "zh": "LSTM 共同发明者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -833,12 +822,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
-          "en": "Alex Krizhevsky",
-          "zh": "亚历克斯·克里热夫斯基"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AlexNet first author in team context",
-          "zh": "AlexNet 主要作者与团队资料"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
@@ -937,12 +926,12 @@ module.exports = {
       },
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
         "caption": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Highway Network co-author",
-          "zh": "高速网络共同作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -951,7 +940,7 @@ module.exports = {
     "year": 2015,
     "title": {
       "en": "ResNet",
-      "zh": "残差网络"
+      "zh": "ResNet"
     },
     "location": {
       "name": {
@@ -1103,7 +1092,7 @@ module.exports = {
     "year": 2016,
     "title": {
       "en": "DenseNet",
-      "zh": "密集连接网络"
+      "zh": "DenseNet"
     },
     "location": {
       "name": {
@@ -1154,22 +1143,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
         "caption": {
-          "en": "Gao Huang",
-          "zh": "黄高"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DenseNet author",
-          "zh": "DenseNet 作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
         "caption": {
-          "en": "Gao Huang",
-          "zh": "黄高"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DenseNet author",
-          "zh": "DenseNet 作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
@@ -1331,12 +1320,12 @@ module.exports = {
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Attention mechanism researcher",
-          "zh": "注意力机制研究者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -1345,7 +1334,7 @@ module.exports = {
     "year": 2017,
     "title": {
       "en": "Transformer",
-      "zh": "转换器架构"
+      "zh": "Transformer"
     },
     "location": {
       "name": {
@@ -1430,7 +1419,7 @@ module.exports = {
     "year": 2018,
     "title": {
       "en": "BERT",
-      "zh": "双向编码预训练模型"
+      "zh": "BERT"
     },
     "location": {
       "name": {
@@ -1481,7 +1470,7 @@ module.exports = {
       "zh": "摘自PPT第37页"
     },
     "images": [
-      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg",
+      "resources/images/2018-bert/people/2018-bert_people_03.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
     ],
@@ -1489,14 +1478,14 @@ module.exports = {
       "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4"
     ],
     "imageMeta": {
-      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg": {
+      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
         "caption": {
-          "en": "Jacob Devlin",
-          "zh": "雅各布·德夫林"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Lead author of the BERT paper",
-          "zh": "BERT 论文主要作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
@@ -1525,7 +1514,7 @@ module.exports = {
     "year": 2018,
     "title": {
       "en": "GPT",
-      "zh": "生成式预训练模型"
+      "zh": "GPT"
     },
     "location": {
       "name": {
@@ -1613,27 +1602,27 @@ module.exports = {
         },
         "subcaption": {
           "en": "GPT",
-          "zh": "生成式预训练 Transformer"
+          "zh": "GPT"
         }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_01.png": {
         "caption": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "GPT paper author",
-          "zh": "GPT 论文作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
         "caption": {
-          "en": "Sam Altman",
-          "zh": "萨姆·奥特曼"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "OpenAI CEO in GPT-era media footage",
-          "zh": "GPT 时代 OpenAI 相关媒体影像"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -1703,24 +1692,14 @@ module.exports = {
       "zh": "摘自PPT第45-46页"
     },
     "images": [
-      "resources/images/2023-agents/historical/2023-agents_historical_01.png",
       "resources/images/2023-agents/historical/2023-agents_historical_02.png",
-      "resources/images/2023-agents/historical/2023-agents_historical_03.png"
+      "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4"
     ],
     "imageMeta": {
-      "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-        "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
-        },
-        "subcaption": {
-          "en": "Agents: LLM-Driven Autonomous Systems",
-          "zh": "智能体：LLM驱动的自主系统"
-        }
-      },
       "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
         "caption": {
           "en": "Historical photo",
@@ -1732,6 +1711,16 @@ module.exports = {
         }
       },
       "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Agents: LLM-Driven Autonomous Systems",
+          "zh": "智能体：LLM驱动的自主系统"
+        }
+      },
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"
@@ -1779,12 +1768,12 @@ module.exports = {
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "到2025年，大语言模型进入百花齐放的竞争阶段。公开竞技场和评测榜单持续记录各类模型在推理、多模态、工具使用和部署效率上的快速进展，模型比较也从一次性论文结果转向持续公开观察。"
+      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。"
     },
     "figures": [
       {
         "name": {
-          "en": "Research Organizations",
+          "en": "Research Institutions",
           "zh": "研究机构"
         },
         "role": {
@@ -1802,35 +1791,46 @@ module.exports = {
       "zh": "摘自PPT第39页"
     },
     "images": [
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg",
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg",
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png"
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4"
     ],
     "imageMeta": {
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg": {
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
         "caption": {
-          "en": "Leaderboard",
-          "zh": "榜单示意"
+          "en": "Historical photo",
+          "zh": "历史照片"
         },
         "subcaption": {
-          "en": "LLM leaderboard snapshot",
-          "zh": "大语言模型榜单示意"
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
         }
       },
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg": {
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
         "caption": {
           "en": "Architecture",
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Large language model development pipeline",
-          "zh": "大语言模型发展流程示意"
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放 架构图"
         }
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
+        }
+      },
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"
@@ -1863,8 +1863,8 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "AlphaFold is DeepMind's protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
-      "zh": "AlphaFold 是 DeepMind 开发的蛋白质结构预测系统。第二代系统在 2020 年的国际蛋白质结构预测竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质三维结构，解决了长期困扰生物学界的重大难题。"
+      "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+      "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
     },
     "figures": [
       {
@@ -1961,22 +1961,22 @@ module.exports = {
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
-          "en": "John Jumper",
-          "zh": "约翰·江珀"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AlphaFold 2 lead scientist",
-          "zh": "AlphaFold 2 首席科学家"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
-          "en": "Demis Hassabis",
-          "zh": "戴密斯·哈萨比斯"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DeepMind CEO",
-          "zh": "DeepMind CEO"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -2037,12 +2037,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
         "caption": {
-          "en": "Max Tegmark",
-          "zh": "马克斯·泰格马克"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Feynman author",
-          "zh": "AI Feynman 作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
@@ -2120,7 +2120,7 @@ module.exports = {
       },
       {
         "name": {
-          "en": "UC Berkeley Team",
+          "en": "Berkeley Team",
           "zh": "伯克利团队"
         },
         "role": {
@@ -2180,22 +2180,22 @@ module.exports = {
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
         "caption": {
-          "en": "UC Berkeley Team",
-          "zh": "伯克利团队"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "A-Lab developer team",
-          "zh": "A-Lab 开发团队"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
         "caption": {
-          "en": "Sakana AI Team",
-          "zh": "Sakana AI 团队"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Scientist developer team",
-          "zh": "AI Scientist 开发团队"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -2801,10 +2801,6 @@ module.exports = {
       "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
       "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
     },
-    "quoteLabel": {
-      "en": "Paper excerpt",
-      "zh": "论文摘录"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
@@ -2820,51 +2816,25 @@ module.exports = {
       "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
       "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
     },
-    "analysis": {
-      "what": {
-        "en": "AlphaGo defeated Lee Sedol and showed that AI could master Go, a game whose state space had long resisted brute-force search.",
-        "zh": "AlphaGo 击败李世石，证明 AI 可以掌握长期被认为难以靠蛮力搜索解决的围棋。"
-      },
-      "how": {
-        "en": "It combined policy networks, value networks, reinforcement learning from self-play and Monte Carlo tree search into one decision loop.",
-        "zh": "它把策略网络、价值网络、自我对弈强化学习和蒙特卡洛树搜索结合成一个决策闭环。"
-      },
-      "why": {
-        "en": "Go was too large for exhaustive enumeration. Neural networks supplied learned intuition, while tree search converted that intuition into concrete plans.",
-        "zh": "围棋空间过大，无法穷举。神经网络提供学习到的直觉，树搜索再把这种直觉转化为具体计划。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
-          "zh": "Mastering the Game of Go with Deep Neural Networks and Tree Search"
-        },
-        "authors": "David Silver et al.",
-        "journal": "Nature",
-        "year": 2016,
-        "url": "https://www.nature.com/articles/nature16961"
-      }
-    ],
     "commentarySections": [
       {
         "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
+          "en": "Published Paper",
+          "zh": "论文材料"
         },
         "html": {
-          "en": "Go had long resisted brute-force AI because its state space was enormous and expert play depended on pattern intuition. AlphaGo made the problem tractable by combining learned intuition with search, turning Go into a public demonstration of modern AI strategy.",
-          "zh": "围棋长期难以被蛮力 AI 攻克，因为状态空间巨大，高手对弈又依赖模式直觉。AlphaGo 通过把学习到的直觉与搜索结合起来，使这个问题变得可处理，并让围棋成为现代 AI 战略能力的公开展示。"
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
         "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
+          "en": "Blog / API Materials",
+          "zh": "博客 / API 材料"
         },
         "html": {
-          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce dependence on expert game data.",
-          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
         }
       },
       {
@@ -2959,16 +2929,7 @@ module.exports = {
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
-        },
-        gameEvolutionVideo("2016-alphago", {
-          "enName": "AlphaGo",
-          "zhName": "AlphaGo",
-          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
-          "description": {
-            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -10591,10 +10552,6 @@ module.exports = {
       "en": "playing Atari with deep reinforcement learning",
       "zh": "用深度强化学习玩 Atari"
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Playing Atari with Deep Reinforcement Learning",
@@ -10609,20 +10566,6 @@ module.exports = {
     "quotePage": {
       "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
       "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
-    },
-    "analysis": {
-      "what": {
-        "en": "DQN showed that one deep reinforcement learning agent could learn control policies directly from Atari pixels across multiple games.",
-        "zh": "DQN 证明一个深度强化学习智能体可以直接从 Atari 像素中学习多款游戏的控制策略。"
-      },
-      "how": {
-        "en": "It combined Q-learning with convolutional networks, experience replay and a target network to stabilize value learning.",
-        "zh": "它把 Q-learning 与卷积网络、经验回放和目标网络结合起来，以稳定价值学习。"
-      },
-      "why": {
-        "en": "It worked where earlier methods struggled because perception and control were trained together from replayed experience.",
-        "zh": "它能突破早期方法的瓶颈，是因为感知和控制可以从回放经验中联合训练。"
-      }
     },
     "commentarySections": [
       {
@@ -10641,8 +10584,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
         }
       },
       {
@@ -10678,7 +10621,6 @@ module.exports = {
         "zh": "像素进入回放；Q 值选择动作"
       },
       "visual": "dqn",
-      "demoImage": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "keyConcepts": [
         {
           "label": {
@@ -10764,16 +10706,7 @@ module.exports = {
             "en": "Open preprint",
             "zh": "打开预印本"
           }
-        },
-        gameEvolutionVideo("2013-dqn", {
-          "enName": "DQN",
-          "zhName": "DQN",
-          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
-          "description": {
-            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
-            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -10827,7 +10760,6 @@ module.exports = {
     },
     "images": [
       "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-      "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
       "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
     ],
@@ -10849,31 +10781,6 @@ module.exports = {
         "usage": {
           "en": "Historical figure / Key contributor portrait",
           "zh": "历史人物 / 关键贡献者肖像"
-        }
-      },
-      "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg": {
-        "caption": {
-          "en": "Atari control loop",
-          "zh": "Atari 控制循环"
-        },
-        "subcaption": {
-          "en": "Local game-screen explainer showing pixels, replay, Q-values, and action choice.",
-          "zh": "本地游戏画面解释图，展示像素、回放、Q 值与动作选择。"
-        },
-        "sourceName": {
-          "en": "Playing Atari with Deep Reinforcement Learning",
-          "zh": "《用深度强化学习玩 Atari》"
-        },
-        "source": "https://arxiv.org/abs/1312.5602",
-        "sourceUrl": "https://arxiv.org/abs/1312.5602",
-        "originalImageUrl": "Local original redraw",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Game-control explainer",
-          "zh": "游戏控制解释图"
         }
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
@@ -11611,10 +11518,6 @@ module.exports = {
       "en": "Specialized chess search hardware",
       "zh": "专用国际象棋搜索硬件"
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Deep Blue journal article",
@@ -11630,32 +11533,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Game AI / Deep Blue",
       "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
     },
-    "analysis": {
-      "what": {
-        "en": "Deep Blue defeated reigning world chess champion Garry Kasparov in a regulation match, turning computer chess into a public AI milestone.",
-        "zh": "Deep Blue 在正式比赛中击败卫冕世界冠军加里·卡斯帕罗夫，使计算机国际象棋成为公众熟知的 AI 里程碑。"
-      },
-      "how": {
-        "en": "It used massively parallel alpha-beta search, chess-specific evaluation, opening and endgame knowledge, and custom chips for move generation and scoring.",
-        "zh": "它使用大规模并行 alpha-beta 搜索、国际象棋专用评估、开局与残局知识，并用定制芯片加速走法生成和局面评分。"
-      },
-      "why": {
-        "en": "Human champions relied on selective intuition. Deep Blue won by pushing calculation depth and chess-specific hardware beyond human tactical reach.",
-        "zh": "人类冠军依靠选择性直觉。Deep Blue 通过远超人类战术覆盖范围的计算深度和棋类专用硬件取得突破。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Deep Blue",
-          "zh": "Deep Blue"
-        },
-        "authors": "Murray Campbell, A. Joseph Hoane Jr., Feng-hsiung Hsu",
-        "journal": "Artificial Intelligence",
-        "year": 2002,
-        "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-      }
-    ],
     "commentarySections": [
       {
         "label": {
@@ -11673,8 +11550,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
         }
       },
       {
@@ -11805,29 +11682,9 @@ module.exports = {
             "en": "Open article record",
             "zh": "打开论文记录"
           }
-        },
-        gameEvolutionVideo("1997-deep-blue", {
-          "enName": "Deep Blue",
-          "zhName": "深蓝",
-          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-          "description": {
-            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-          }
-        })
+        }
       ],
       "sources": [
-        {
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "label": {
-            "en": "Deep Blue journal article",
-            "zh": "深蓝期刊论文"
-          },
-          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-        },
         {
           "type": {
             "en": "Profile",
@@ -11852,8 +11709,8 @@ module.exports = {
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
@@ -13847,10 +13704,6 @@ module.exports = {
       "en": "Bootstrapped value prediction",
       "zh": "自举式价值预测"
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Learning to predict by temporal differences",
@@ -13866,20 +13719,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
       "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
     },
-    "analysis": {
-      "what": {
-        "en": "Temporal-difference learning made it possible to update value predictions before a full game or episode had finished.",
-        "zh": "时序差分学习使智能体可以在完整对局或回合结束前更新价值预测。"
-      },
-      "how": {
-        "en": "It bootstraps from the next reward and the next prediction, nudging the current value estimate toward a one-step target.",
-        "zh": "它根据下一步奖励和下一步预测自举，把当前价值估计推向一步目标。"
-      },
-      "why": {
-        "en": "It succeeded because delayed rewards no longer had to wait until the final outcome, a key idea for later game-learning agents.",
-        "zh": "它成功的原因在于延迟奖励不必等到最终结果才能产生学习信号，这成为后续游戏学习智能体的关键思想。"
-      }
-    },
     "commentarySections": [
       {
         "label": {
@@ -13887,8 +13726,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
         }
       },
       {
@@ -13897,8 +13736,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
         }
       },
       {
@@ -13934,7 +13773,6 @@ module.exports = {
         "zh": "用下一步预测和奖励更新价值估计"
       },
       "visual": "td",
-      "demoImage": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "keyConcepts": [
         {
           "label": {
@@ -14027,16 +13865,7 @@ module.exports = {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
           }
-        },
-        gameEvolutionVideo("1988-td-update", {
-          "enName": "TD-Gammon trajectory",
-          "zhName": "TD-Gammon 轨迹",
-          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-          "description": {
-            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -14076,7 +13905,6 @@ module.exports = {
     },
     "images": [
       "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-      "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
       "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
     ],
@@ -14101,31 +13929,6 @@ module.exports = {
         "usage": {
           "en": "Historical figure / Key contributor portrait",
           "zh": "历史人物 / 关键贡献者肖像"
-        }
-      },
-      "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg": {
-        "caption": {
-          "en": "TD update over a game trajectory",
-          "zh": "游戏轨迹上的 TD 更新"
-        },
-        "subcaption": {
-          "en": "Local board-game explainer linking TD learning to game-state prediction.",
-          "zh": "本地棋类解释图，把 TD 学习与游戏状态预测联系起来。"
-        },
-        "sourceName": {
-          "en": "Learning to Predict by the Methods of Temporal Differences",
-          "zh": "《用时序差分方法学习预测》"
-        },
-        "source": "https://doi.org/10.1007/BF00115009",
-        "sourceUrl": "https://doi.org/10.1007/BF00115009",
-        "originalImageUrl": "Local original redraw",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Board-game trajectory explainer",
-          "zh": "棋类轨迹解释图"
         }
       },
       "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
@@ -15215,10 +15018,6 @@ module.exports = {
       "en": "Non-numerical programs could play",
       "zh": "非数值程序也可以对弈"
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Logical or non-mathematical programmes",
@@ -15234,20 +15033,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
       "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
     },
-    "analysis": {
-      "what": {
-        "en": "Strachey's draughts program showed that stored-program computers could represent a board game, generate legal moves and choose actions.",
-        "zh": "斯特雷奇的跳棋程序证明，存储程序计算机可以表示棋盘游戏、生成合法走法并选择行动。"
-      },
-      "how": {
-        "en": "It encoded board states and move rules, then used simple evaluation to compare candidate moves on early British hardware.",
-        "zh": "它编码棋盘状态和走法规则，再在早期英国计算机上用简单评估比较候选走法。"
-      },
-      "why": {
-        "en": "It mattered because it moved computing beyond arithmetic into symbolic choice, making games a practical testbed for search and evaluation.",
-        "zh": "它的重要性在于把计算从算术推进到符号选择，使游戏成为搜索和评估的实际试验场。"
-      }
-    },
     "commentarySections": [
       {
         "label": {
@@ -15255,8 +15040,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
         }
       },
       {
@@ -15265,8 +15050,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. That pattern made search and evaluation visible as computational ingredients of intelligent play.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。这种模式让搜索与评估成为智能对弈中可见的计算要素。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
         }
       },
       {
@@ -15389,16 +15174,7 @@ module.exports = {
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
-        },
-        gameEvolutionVideo("1951-strachey-draughts", {
-          "enName": "Strachey's draughts",
-          "zhName": "斯特雷奇跳棋",
-          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-          "description": {
-            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
-            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -15446,38 +15222,58 @@ module.exports = {
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
       "demoPanel": "sources"
     },
     "images": [
-      "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
     ],
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
         "caption": {
-          "en": "Christopher Strachey profile card",
-          "zh": "克里斯托弗·斯特雷奇人物卡"
+          "en": "Christopher Strachey's draughts program",
+          "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
         },
         "subcaption": {
-          "en": "Local portrait-style card for the draughts program developer.",
-          "zh": "跳棋程序开发者的本地人物卡。"
+          "en": "Screenshot of the early draughts program attributed to Strachey.",
+          "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
         },
         "sourceName": {
-          "en": "Local original profile card",
-          "zh": "本地原创人物卡"
+          "en": "Wikimedia Commons",
+          "zh": "维基共享资源"
         },
-        "source": "https://history.computer.org/pioneers/strachey.html",
-        "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
-        "originalImageUrl": "Local original SVG profile card",
-        "license": {
-          "en": "Original local SVG profile card; no source photograph is copied.",
-          "zh": "本地原创 SVG 人物卡；未复制来源照片。"
-        },
+        "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "license": "Public domain",
         "usage": {
-          "en": "Historical figure profile image",
-          "zh": "历史人物资料图"
+          "en": "Program screenshot",
+          "zh": "程序截图"
+        }
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+        "caption": {
+          "en": "Checkers board",
+          "zh": "跳棋棋盘照片"
+        },
+        "subcaption": {
+          "en": "Physical checkers board used as visual context for game-playing AI.",
+          "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+        },
+        "sourceName": {
+          "en": "Wikimedia Commons",
+          "zh": "维基共享资源"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "license": "CC BY 3.0",
+        "usage": {
+          "en": "Game-board photo",
+          "zh": "棋盘照片"
         }
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -15567,10 +15363,6 @@ module.exports = {
       "en": "Perfect play in checkers is a draw",
       "zh": "跳棋完美对弈结果为和棋"
     },
-    "quoteLabel": {
-      "en": "Result summary",
-      "zh": "结果摘要"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Checkers Is Solved",
@@ -15586,32 +15378,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Game / Chinook",
       "zh": "BenchCouncil AI100：游戏 / Chinook 跳棋程序"
     },
-    "analysis": {
-      "what": {
-        "en": "Chinook became the first computer program to win the world checkers championship and later helped prove that perfect play in checkers ends in a draw.",
-        "zh": "Chinook 成为首个赢得世界跳棋冠军的计算机程序，随后帮助证明跳棋在完美对弈下结果为和棋。"
-      },
-      "how": {
-        "en": "It combined opening books, alpha-beta search, hand-tuned evaluation and very large endgame databases that mapped late positions to proven outcomes.",
-        "zh": "它结合开局库、alpha-beta 搜索、人工调校评估函数，以及把后期局面映射到可证明结果的大规模残局数据库。"
-      },
-      "why": {
-        "en": "Earlier programs could search but still became uncertain near the endgame. Chinook made the endgame exact, so search could terminate in verified game-theoretic results.",
-        "zh": "早期程序虽能搜索，但残局阶段仍不确定。Chinook 把残局做成精确数据库，让搜索能落到经验证的博弈论结果上。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Checkers Is Solved",
-          "zh": "Checkers Is Solved"
-        },
-        "authors": "Jonathan Schaeffer, Neil Burch, Yngvi Bjornsson, Akihiro Kishimoto, Martin Muller, Robert Lake, Paul Lu, Steve Sutphen",
-        "journal": "Science",
-        "year": 2007,
-        "url": "https://www.science.org/doi/10.1126/science.1144079"
-      }
-    ],
     "commentarySections": [
       {
         "label": {
@@ -15619,8 +15385,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
         }
       },
       {
@@ -15629,8 +15395,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
         }
       },
       {
@@ -15753,16 +15519,7 @@ module.exports = {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
           }
-        },
-        gameEvolutionVideo("1994-chinook", {
-          "enName": "Chinook",
-          "zhName": "Chinook",
-          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-          "description": {
-            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -18003,783 +17760,6 @@ module.exports = {
         }
       }
     },
-    "videos": []
-  },
-  "2017-alphazero": {
-    "year": "2017-2018",
-    "title": {
-      "en": "AlphaZero",
-      "zh": "AlphaZero"
-    },
-    "location": {
-      "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
-      },
-      "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
-      },
-      "coordinates": [
-        51.523,
-        -0.128
-      ]
-    },
-    "description": {
-      "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>",
-      "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
-        },
-        "role": {
-          "en": "DeepMind reinforcement learning lead",
-          "zh": "DeepMind 强化学习负责人"
-        }
-      },
-      {
-        "name": {
-          "en": "Demis Hassabis",
-          "zh": "德米斯·哈萨比斯"
-        },
-        "role": {
-          "en": "DeepMind co-founder",
-          "zh": "DeepMind 联合创始人"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "a general reinforcement learning algorithm",
-      "zh": "一种通用强化学习算法"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
-        "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
-      },
-      "workAuthors": {
-        "en": "David Silver et al., Science, 2018",
-        "zh": "David Silver 等，Science，2018"
-      },
-      "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / AlphaZero",
-      "zh": "BenchCouncil AI100：游戏 AI / AlphaZero"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
-          "zh": "用通用强化学习算法通过自我博弈掌握国际象棋与将棋"
-        },
-        "authors": {
-          "en": "David Silver et al.",
-          "zh": "David Silver 等"
-        },
-        "journal": {
-          "en": "arXiv",
-          "zh": "arXiv"
-        },
-        "year": "2017",
-        "url": "https://arxiv.org/abs/1712.01815"
-      },
-      {
-        "title": {
-          "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
-          "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
-        },
-        "authors": {
-          "en": "David Silver et al.",
-          "zh": "David Silver 等"
-        },
-        "journal": {
-          "en": "Science",
-          "zh": "Science"
-        },
-        "year": "2018",
-        "url": "https://www.science.org/doi/10.1126/science.aar6404"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "AlphaGo still used human expert games and Go-specific training stages. AlphaZero asked whether self-play could carry more of the burden by itself.",
-          "zh": "AlphaGo 仍使用人类专家棋谱和围棋专用训练阶段。AlphaZero 进一步追问：自我博弈能否承担更多学习负担。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "A neural network predicts move probabilities and game outcomes; tree search improves action choice; self-play generates the next training data.",
-          "zh": "神经网络预测落子概率与胜负结果；树搜索改进动作选择；自我博弈继续产生下一轮训练数据。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "General game reinforcement learning",
-        "zh": "通用游戏强化学习"
-      },
-      "method": {
-        "en": "Self-play policy-value learning with Monte Carlo tree search",
-        "zh": "自我博弈策略-价值学习与蒙特卡洛树搜索"
-      },
-      "artifact": {
-        "en": "One algorithm for Go, chess, and shogi",
-        "zh": "面向围棋、国际象棋和将棋的一套算法"
-      },
-      "material": {
-        "en": "arXiv preprint and Science paper",
-        "zh": "arXiv 预印本与 Science 论文"
-      },
-      "demo": {
-        "en": "Self-play creates games, search improves moves, the network absorbs both",
-        "zh": "自我博弈生成棋局，搜索改进落子，网络吸收两者"
-      },
-      "visual": "go",
-      "visualModules": [
-        gameEvolutionVideo("2017-alphazero", {
-          "enName": "AlphaZero",
-          "zhName": "AlphaZero",
-          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-          "description": {
-            "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-            "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Science paper",
-            "zh": "Science 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.science.org/doi/10.1126/science.aar6404"
-        },
-        {
-          "label": {
-            "en": "arXiv preprint",
-            "zh": "arXiv 预印本"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://arxiv.org/abs/1712.01815"
-        },
-        {
-          "label": {
-            "en": "DeepMind AlphaZero blog",
-            "zh": "DeepMind AlphaZero 博客"
-          },
-          "type": {
-            "en": "Blog",
-            "zh": "博客"
-          },
-          "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "AlphaGo",
-          "zh": "AlphaGo"
-        },
-        {
-          "en": "Monte Carlo Tree Search",
-          "zh": "蒙特卡洛树搜索"
-        },
-        {
-          "en": "MuZero",
-          "zh": "MuZero"
-        }
-      ]
-    },
-    "images": [],
-    "videos": []
-  },
-  "2017-libratus": {
-    "year": "2017",
-    "title": {
-      "en": "Libratus",
-      "zh": "Libratus"
-    },
-    "location": {
-      "name": {
-        "en": "Carnegie Mellon University",
-        "zh": "卡内基梅隆大学"
-      },
-      "country": {
-        "en": "Pittsburgh, United States",
-        "zh": "美国匹兹堡"
-      },
-      "coordinates": [
-        40.4433,
-        -79.9436
-      ]
-    },
-    "description": {
-      "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day's play, proving that game AI could move beyond perfect-information boards.</p>",
-      "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Tuomas Sandholm",
-          "zh": "托马斯·桑德霍姆"
-        },
-        "role": {
-          "en": "CMU professor and Libratus co-creator",
-          "zh": "CMU 教授，Libratus 共同创建者"
-        }
-      },
-      {
-        "name": {
-          "en": "Noam Brown",
-          "zh": "诺姆·布朗"
-        },
-        "role": {
-          "en": "Libratus co-creator",
-          "zh": "Libratus 共同创建者"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "superhuman AI for heads-up no-limit poker",
-      "zh": "面向一对一无限注扑克的超人 AI"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
-        "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
-      },
-      "workAuthors": {
-        "en": "Noam Brown and Tuomas Sandholm, Science, 2017",
-        "zh": "Noam Brown 与 Tuomas Sandholm，Science，2017"
-      },
-      "sourceUrl": "https://www.science.org/doi/10.1126/science.aao1733"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / Libratus",
-      "zh": "BenchCouncil AI100：游戏 AI / Libratus"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
-          "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
-        },
-        "authors": {
-          "en": "Noam Brown, Tuomas Sandholm",
-          "zh": "Noam Brown，Tuomas Sandholm"
-        },
-        "journal": {
-          "en": "Science",
-          "zh": "Science"
-        },
-        "year": "2017",
-        "url": "https://www.science.org/doi/10.1126/science.aao1733"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "Poker added hidden cards, bluffing, and uncertainty, forcing AI to reason about strategies instead of visible board positions alone.",
-          "zh": "扑克加入了暗牌、诈唬和不确定性，迫使 AI 不只推理可见棋盘位置，还要推理策略分布。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The system solved an abstract strategy before play, then refined difficult subgames in real time and patched weaknesses between sessions.",
-          "zh": "系统赛前求解抽象策略，比赛中实时细化困难子局，并在每日赛后修补弱点。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Imperfect-information game AI",
-        "zh": "不完全信息博弈 AI"
-      },
-      "method": {
-        "en": "Abstraction, endgame solving, and self-improving strategy repair",
-        "zh": "抽象、残局求解与自我改进策略修复"
-      },
-      "artifact": {
-        "en": "Heads-up no-limit Texas hold'em poker agent",
-        "zh": "一对一无限注德州扑克智能体"
-      },
-      "material": {
-        "en": "Science paper and CMU release",
-        "zh": "Science 论文与 CMU 新闻稿"
-      },
-      "demo": {
-        "en": "Hidden cards require equilibrium reasoning rather than direct board search",
-        "zh": "暗牌要求均衡策略推理，而不只是直接棋盘搜索"
-      },
-      "visual": "poker",
-      "visualModules": [
-        gameEvolutionVideo("2017-libratus", {
-          "enName": "Libratus",
-          "zhName": "Libratus",
-          "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
-          "description": {
-            "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
-            "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Science paper",
-            "zh": "Science 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.science.org/doi/10.1126/science.aao1733"
-        },
-        {
-          "label": {
-            "en": "CMU Libratus release",
-            "zh": "CMU Libratus 新闻稿"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "Counterfactual Regret Minimization",
-          "zh": "反事实遗憾最小化"
-        },
-        {
-          "en": "Pluribus",
-          "zh": "Pluribus"
-        }
-      ]
-    },
-    "images": [],
-    "videos": []
-  },
-  "2019-pluribus": {
-    "year": "2019",
-    "title": {
-      "en": "Pluribus",
-      "zh": "Pluribus"
-    },
-    "location": {
-      "name": {
-        "en": "Carnegie Mellon University and Facebook AI Research",
-        "zh": "卡内基梅隆大学与 Facebook AI Research"
-      },
-      "country": {
-        "en": "Pittsburgh and Menlo Park, United States",
-        "zh": "美国匹兹堡与门洛帕克"
-      },
-      "coordinates": [
-        40.4433,
-        -79.9436
-      ]
-    },
-    "description": {
-      "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used search over a blueprint strategy and real-time reasoning to handle multiple opponents, moving game AI toward messy multiplayer settings where no single opponent model is enough.</p>",
-      "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它在蓝图策略上进行搜索，并用实时推理处理多个对手，把游戏 AI 推向更接近真实世界的多人复杂环境。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Noam Brown",
-          "zh": "诺姆·布朗"
-        },
-        "role": {
-          "en": "Pluribus co-creator",
-          "zh": "Pluribus 共同创建者"
-        }
-      },
-      {
-        "name": {
-          "en": "Tuomas Sandholm",
-          "zh": "托马斯·桑德霍姆"
-        },
-        "role": {
-          "en": "Pluribus co-creator",
-          "zh": "Pluribus 共同创建者"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "superhuman AI for multiplayer poker",
-      "zh": "面向多人扑克的超人 AI"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "Superhuman AI for multiplayer poker",
-        "zh": "面向多人扑克的超人 AI"
-      },
-      "workAuthors": {
-        "en": "Noam Brown and Tuomas Sandholm, Science, 2019",
-        "zh": "Noam Brown 与 Tuomas Sandholm，Science，2019"
-      },
-      "sourceUrl": "https://www.science.org/doi/10.1126/science.aay2400"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / Pluribus",
-      "zh": "BenchCouncil AI100：游戏 AI / Pluribus"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Superhuman AI for multiplayer poker",
-          "zh": "面向多人扑克的超人 AI"
-        },
-        "authors": {
-          "en": "Noam Brown, Tuomas Sandholm",
-          "zh": "Noam Brown，Tuomas Sandholm"
-        },
-        "journal": {
-          "en": "Science",
-          "zh": "Science"
-        },
-        "year": "2019",
-        "url": "https://www.science.org/doi/10.1126/science.aay2400"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "Many real strategic settings are neither two-player nor zero-sum in the clean chess sense. Multiplayer poker made that gap concrete.",
-          "zh": "许多真实策略场景并不是干净的两人零和棋局。多人扑克把这个差距具体化了。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "A compact blueprint strategy is refined by search during play, allowing the system to respond without solving the whole game from scratch.",
-          "zh": "紧凑的蓝图策略在对局中由搜索进一步细化，让系统无需从头求解整个游戏也能响应局势。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Multiplayer imperfect-information game AI",
-        "zh": "多人不完全信息博弈 AI"
-      },
-      "method": {
-        "en": "Blueprint strategy with limited-lookahead search",
-        "zh": "蓝图策略与有限前瞻搜索"
-      },
-      "artifact": {
-        "en": "Six-player no-limit Texas hold'em poker agent",
-        "zh": "六人无限注德州扑克智能体"
-      },
-      "material": {
-        "en": "Science paper, CMU release, and Meta AI report",
-        "zh": "Science 论文、CMU 新闻稿与 Meta AI 报道"
-      },
-      "demo": {
-        "en": "A compact strategy is refined while several opponents act at once",
-        "zh": "多个对手同时行动时，紧凑策略被实时细化"
-      },
-      "visual": "poker",
-      "visualModules": [
-        gameEvolutionVideo("2019-pluribus", {
-          "enName": "Pluribus",
-          "zhName": "Pluribus",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
-          "description": {
-            "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
-            "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Science paper",
-            "zh": "Science 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.science.org/doi/10.1126/science.aay2400"
-        },
-        {
-          "label": {
-            "en": "Meta AI Pluribus report",
-            "zh": "Meta AI Pluribus 报道"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/"
-        },
-        {
-          "label": {
-            "en": "CMU Pluribus release",
-            "zh": "CMU Pluribus 新闻稿"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "Libratus",
-          "zh": "Libratus"
-        },
-        {
-          "en": "Imperfect-information games",
-          "zh": "不完全信息博弈"
-        }
-      ]
-    },
-    "images": [],
-    "videos": []
-  },
-  "2019-muzero": {
-    "year": "2019-2020",
-    "title": {
-      "en": "MuZero",
-      "zh": "MuZero"
-    },
-    "location": {
-      "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
-      },
-      "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
-      },
-      "coordinates": [
-        51.523,
-        -0.128
-      ]
-    },
-    "description": {
-      "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>",
-      "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Julian Schrittwieser",
-          "zh": "Julian Schrittwieser"
-        },
-        "role": {
-          "en": "MuZero first author",
-          "zh": "MuZero 第一作者"
-        }
-      },
-      {
-        "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
-        },
-        "role": {
-          "en": "DeepMind reinforcement learning lead",
-          "zh": "DeepMind 强化学习负责人"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "planning with a learned model",
-      "zh": "用学习到的模型进行规划"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
-        "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
-      },
-      "workAuthors": {
-        "en": "Julian Schrittwieser et al., Nature, 2020",
-        "zh": "Julian Schrittwieser 等，Nature，2020"
-      },
-      "sourceUrl": "https://www.nature.com/articles/s41586-020-03051-4"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / MuZero",
-      "zh": "BenchCouncil AI100：游戏 AI / MuZero"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
-          "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
-        },
-        "authors": {
-          "en": "Julian Schrittwieser et al.",
-          "zh": "Julian Schrittwieser 等"
-        },
-        "journal": {
-          "en": "Nature",
-          "zh": "Nature"
-        },
-        "year": "2020",
-        "url": "https://www.nature.com/articles/s41586-020-03051-4"
-      },
-      {
-        "title": {
-          "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
-          "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
-        },
-        "authors": {
-          "en": "Julian Schrittwieser et al.",
-          "zh": "Julian Schrittwieser 等"
-        },
-        "journal": {
-          "en": "arXiv",
-          "zh": "arXiv"
-        },
-        "year": "2019",
-        "url": "https://arxiv.org/abs/1911.08265"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "AlphaZero searched using known rules. Reinforcement learning agents in Atari learned from pixels but often lacked explicit lookahead. MuZero bridged those two worlds.",
-          "zh": "AlphaZero 依赖已知规则搜索；Atari 强化学习智能体从像素学习但通常缺少显式前瞻。MuZero 把这两个世界连接起来。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "Instead of predicting every future observation, MuZero learns a latent dynamics model useful for rewards, values, policies, and search.",
-          "zh": "MuZero 不预测每个未来观测，而是学习对奖励、价值、策略和搜索有用的潜在动力学模型。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Learned-model planning",
-        "zh": "学习模型的规划"
-      },
-      "method": {
-        "en": "Latent dynamics, policy-value prediction, and tree search",
-        "zh": "潜在动力学、策略-价值预测与树搜索"
-      },
-      "artifact": {
-        "en": "Planning agent for board games and Atari",
-        "zh": "面向棋类游戏与 Atari 的规划智能体"
-      },
-      "material": {
-        "en": "Nature paper, arXiv preprint, and DeepMind blog",
-        "zh": "Nature 论文、arXiv 预印本与 DeepMind 博客"
-      },
-      "demo": {
-        "en": "A learned latent model lets search operate without handcrafted rules",
-        "zh": "学习到的潜在模型让搜索不再依赖手工规则"
-      },
-      "visual": "deepblue",
-      "visualModules": [
-        gameEvolutionVideo("2019-muzero", {
-          "enName": "MuZero",
-          "zhName": "MuZero",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-          "description": {
-            "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-            "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Nature paper",
-            "zh": "Nature 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.nature.com/articles/s41586-020-03051-4"
-        },
-        {
-          "label": {
-            "en": "arXiv preprint",
-            "zh": "arXiv 预印本"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://arxiv.org/abs/1911.08265"
-        },
-        {
-          "label": {
-            "en": "DeepMind MuZero blog",
-            "zh": "DeepMind MuZero 博客"
-          },
-          "type": {
-            "en": "Blog",
-            "zh": "博客"
-          },
-          "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "AlphaZero",
-          "zh": "AlphaZero"
-        },
-        {
-          "en": "DQN",
-          "zh": "DQN"
-        },
-        {
-          "en": "Model-based reinforcement learning",
-          "zh": "基于模型的强化学习"
-        }
-      ]
-    },
-    "images": [],
     "videos": []
   },
   ...gamingExtraEvents,
