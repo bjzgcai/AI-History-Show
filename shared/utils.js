@@ -27,6 +27,47 @@ function getLocalizedText(value, locale = DEFAULT_LOCALE) {
     return isLocalizedText(selected) ? getLocalizedText(selected, locale) : String(selected || '').trim();
 }
 
+function stripHtml(value) {
+    return String(value || '')
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function countTextSentences(value, locale = DEFAULT_LOCALE) {
+    const text = stripHtml(value);
+    if (!text) return 0;
+
+    if (locale === 'zh') {
+        const matches = text.match(/[。！？!?]/g);
+        return matches ? matches.length : 1;
+    }
+
+    const matches = text.match(/[.!?](?:\s|$|["'”’）)])/g);
+    return matches ? matches.length : 1;
+}
+
+function splitTextSentences(value, locale = DEFAULT_LOCALE) {
+    const text = stripHtml(value);
+    if (!text) return [];
+
+    if (locale === 'zh') {
+        return text
+            .split(/(?<=[。！？!?])/)
+            .map((item) => item.trim())
+            .filter(Boolean);
+    }
+
+    return text
+        .split(/(?<=[.!?])\s+/)
+        .map((item) => item.trim())
+        .filter(Boolean);
+}
+
+function escapeMarkdownTableText(value) {
+    return stripHtml(value).replace(/\|/g, '\\|');
+}
+
 function detectVideoSource(url) {
     if (/youtube\.com|youtu\.be/.test(url)) return 'YouTube';
     if (/bilibili\.com/.test(url)) return 'Bilibili';
@@ -103,6 +144,9 @@ function formatQuoteAttribution(candidate) {
         const speaker = getLocalizedText(safeCandidate.speaker, locale);
 
         if (workTitle) {
+            if (locale === 'en') {
+                return workAuthors ? `<em>${workTitle}</em>, ${workAuthors}` : `<em>${workTitle}</em>`;
+            }
             return workAuthors ? `《${workTitle}》, ${workAuthors}` : `《${workTitle}》`;
         }
 
@@ -164,8 +208,10 @@ module.exports = {
     QUOTE_META_FIELDS,
     SUPPORTED_LOCALES,
     backupFile,
+    countTextSentences,
     deriveEmbedUrl,
     detectVideoSource,
+    escapeMarkdownTableText,
     formatQuoteAttribution,
     getLocalizedText,
     hasOwn,
@@ -173,5 +219,7 @@ module.exports = {
     loadQuoteCandidates,
     mergeEditableQuoteMeta,
     normalizeEditableQuoteMeta,
-    normalizeQuoteText
+    normalizeQuoteText,
+    splitTextSentences,
+    stripHtml
 };

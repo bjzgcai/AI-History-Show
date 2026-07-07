@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">MuZero learned-model rollout</title>
+  <desc id="desc">A local explainer poster for planning through a learned latent model over game states.</desc>
+  <rect width="960" height="540" fill="#0c0a08"/>
+  <g fill="#f4efe5" font-family="Arial, sans-serif" font-weight="800">
+    <text x="76" y="84" font-size="30" fill="#f68900">MuZero latent rollout</text>
+    <text x="76" y="120" font-size="17" fill="#cbd5e1">observation -> learned model -> search states -> policy</text>
+  </g>
+  <rect x="80" y="184" width="160" height="160" rx="18" fill="#111827" stroke="#94a3b8" stroke-width="3"/>
+  <g stroke="#334155" stroke-width="3">
+    <path d="M120 184 V344 M160 184 V344 M200 184 V344 M80 224 H240 M80 264 H240 M80 304 H240"/>
+  </g>
+  <circle cx="120" cy="224" r="13" fill="#f8fafc"/>
+  <circle cx="160" cy="264" r="13" fill="#111827" stroke="#f8fafc" stroke-width="3"/>
+  <circle cx="200" cy="304" r="13" fill="#f68900"/>
+  <rect x="342" y="168" width="204" height="192" rx="22" fill="#172554" stroke="#93c5fd" stroke-width="3"/>
+  <text x="444" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#bfdbfe">LEARNED</text>
+  <text x="444" y="249" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#bfdbfe">DYNAMICS</text>
+  <path d="M382 294 H506" stroke="#93c5fd" stroke-width="8" stroke-linecap="round"/>
+  <path d="M408 324 H480" stroke="#93c5fd" stroke-width="8" stroke-linecap="round"/>
+  <g transform="translate(656 174)">
+    <circle cx="76" cy="40" r="28" fill="#60a5fa"/>
+    <circle cx="32" cy="114" r="23" fill="#f59e0b"/>
+    <circle cx="120" cy="114" r="23" fill="#22c55e"/>
+    <circle cx="0" cy="184" r="18" fill="#ef4444"/>
+    <circle cx="64" cy="184" r="18" fill="#a78bfa"/>
+    <circle cx="152" cy="184" r="18" fill="#34d399"/>
+    <path d="M64 64 L42 94 M88 64 L110 94 M25 134 L8 166 M38 136 L60 166 M126 136 L148 166" stroke="#f8fafc" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <path d="M250 264 H330 M558 264 H640" stroke="#f8fafc" stroke-width="7" stroke-linecap="round"/>
+  <polygon points="330,264 306,249 306,279" fill="#f8fafc"/>
+  <polygon points="640,264 616,249 616,279" fill="#f8fafc"/>
+</svg>

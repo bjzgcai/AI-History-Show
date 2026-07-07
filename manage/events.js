@@ -3,6 +3,49 @@
 
 /* eslint-disable */
 const ai100ExtraEvents = require('./ai100-extra-events.js');
+const gamingExtraEvents = require('./gaming-extra-events.js');
+
+function gameEvolutionVideo(key, options = {}) {
+  const enName = options.enName || key;
+  const zhName = options.zhName || enName;
+  return {
+    "type": "gameEvolutionVideo",
+    "site": {
+      "en": "Game evolution clip",
+      "zh": "棋局演化短片"
+    },
+    "title": options.title || {
+      "en": `${enName} game evolution`,
+      "zh": `${zhName} 棋局演化`
+    },
+    "description": options.description || {
+      "en": "Fast playback of game states from the opening into a key phase.",
+      "zh": "从开局快速推进到关键阶段的棋局状态播放。"
+    },
+    "url": options.url || `resources/videos/game-evolution/${key}.mp4`,
+    "fallbackUrl": options.fallbackUrl || "resources/videos/game-evolution/sample-go-game.gif",
+    "poster": options.poster || "",
+    "sourceSgf": options.sourceSgf || "examples/sgf/sample-go-game.sgf",
+    "generator": "scripts/sgf_to_video.py",
+    "duration": {
+      "en": "about 1 min",
+      "zh": "约 1 分钟"
+    },
+    "fps": "30",
+    "license": {
+      "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+      "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+    },
+    "usage": {
+      "en": "Playable game-state evolution module",
+      "zh": "可播放的棋局状态演化模块"
+    },
+    "action": {
+      "en": "Play evolution clip",
+      "zh": "播放演化短片"
+    }
+  };
+}
 
 module.exports = {
   "1956-dartmouth": {
@@ -1725,11 +1768,14 @@ module.exports = {
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22"
+      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。"
     },
     "figures": [
       {
-        "name": "研究机构",
+        "name": {
+          "en": "Research Institutions",
+          "zh": "研究机构"
+        },
         "role": {
           "en": "Leading-edge model R&D organization",
           "zh": "前沿模型研发机构"
@@ -2073,7 +2119,10 @@ module.exports = {
         }
       },
       {
-        "name": "伯克利团队",
+        "name": {
+          "en": "Berkeley Team",
+          "zh": "伯克利团队"
+        },
         "role": {
           "en": "A-Lab Developer",
           "zh": "A-Lab开发者"
@@ -11660,8 +11709,8 @@ module.exports = {
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
@@ -17713,5 +17762,6 @@ module.exports = {
     },
     "videos": []
   },
+  ...gamingExtraEvents,
   ...ai100ExtraEvents
 };
