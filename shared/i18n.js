@@ -12,6 +12,7 @@
                 aiHistoryReview: 'AI History Exhibition',
                 switchLanguageToEnglish: 'Switch to English',
                 switchLanguageToChinese: 'Switch to Chinese',
+                close: 'Close',
                 previousPage: 'Previous',
                 nextPage: 'Next',
                 autoPlay: 'Auto Play',
@@ -24,6 +25,8 @@
                 contentPending: 'Content in progress',
                 noAdditionalInfo: 'No additional information',
                 noMilestones: 'No milestone data',
+                noImage: 'No image',
+                noArchive: 'No archive',
                 locationPending: 'Location pending',
                 locationInfoPending: 'Location details pending',
                 eventSummaryPending: 'No event summary available',
@@ -40,6 +43,7 @@
                 nextArchive: 'Next archive',
                 noArchivePhotos: 'No archive images available',
                 noMedia: 'No media available',
+                play: 'Play',
                 playVideo: 'Click to play video',
                 portrait: 'Portrait',
                 researcherPhoto: 'Researcher photo',
@@ -53,7 +57,12 @@
                 storylineSelector: 'Storyline',
                 achievementMap: 'Achievement Map',
                 researchDossier: 'Research Dossier',
-                sourceMaterials: 'Source Materials'
+                sourceMaterials: 'Source Materials',
+                branchGaming: 'AI in Board & Tabletop Games',
+                analysisWhat: 'The Milestone',
+                analysisHow: 'Technical Approach',
+                analysisWhy: 'Core Breakthrough',
+                readPaper: 'Read Paper'
             },
             zh: {
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
@@ -63,6 +72,7 @@
                 aiHistoryReview: 'AI 历史回顾',
                 switchLanguageToEnglish: '切换到英文',
                 switchLanguageToChinese: '切换到中文',
+                close: '关闭',
                 previousPage: '上一页',
                 nextPage: '下一页',
                 autoPlay: '自动播放',
@@ -75,6 +85,8 @@
                 contentPending: '内容整理中',
                 noAdditionalInfo: '暂无补充说明',
                 noMilestones: '暂无里程碑数据',
+                noImage: '暂无图片',
+                noArchive: '暂无档案',
                 locationPending: '地点待补充',
                 locationInfoPending: '地点信息待补充',
                 eventSummaryPending: '暂无事件摘要',
@@ -91,6 +103,7 @@
                 nextArchive: '后一张档案',
                 noArchivePhotos: '暂无历史档案图像',
                 noMedia: '暂无媒体资料',
+                play: '播放',
                 playVideo: '点击播放视频',
                 portrait: '人物肖像',
                 researcherPhoto: '相关研究者照片',
@@ -104,7 +117,12 @@
                 storylineSelector: '故事线',
                 achievementMap: '成就地图',
                 researchDossier: '研究档案',
-                sourceMaterials: '资料来源'
+                sourceMaterials: '资料来源',
+                branchGaming: 'AI 在棋牌与博弈论的演进',
+                analysisWhat: '里程碑成就',
+                analysisHow: '技术底层逻辑',
+                analysisWhy: '核心技术突破',
+                readPaper: '阅读论文'
             }
         }
     };

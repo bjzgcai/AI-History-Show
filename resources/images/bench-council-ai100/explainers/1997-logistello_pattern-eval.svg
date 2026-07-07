@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Logistello pattern evaluation explainer</title>
+  <desc id="desc">A local original diagram showing Othello pattern features feeding learned weights and selective search.</desc>
+  <rect width="960" height="640" fill="#111827"/>
+  <rect x="64" y="64" width="832" height="512" rx="24" fill="#172033" stroke="#38bdf8" stroke-width="3"/>
+  <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Logistello: learned Othello evaluation</text>
+  <text x="96" y="160" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="18">patterns + regression weights + selective search</text>
+  <g transform="translate(96 210)">
+    <rect width="232" height="232" rx="12" fill="#063b2f" stroke="#a7f3d0" stroke-width="3"/>
+    <g stroke="#34d399" stroke-width="2" opacity=".7">
+      <path d="M29 0V232M58 0V232M87 0V232M116 0V232M145 0V232M174 0V232M203 0V232"/>
+      <path d="M0 29H232M0 58H232M0 87H232M0 116H232M0 145H232M0 174H232M0 203H232"/>
+    </g>
+    <g>
+      <circle cx="58" cy="58" r="13" fill="#111827" stroke="#f8fafc" stroke-width="2"/>
+      <circle cx="87" cy="87" r="13" fill="#f8fafc" stroke="#111827" stroke-width="2"/>
+      <circle cx="116" cy="116" r="13" fill="#111827" stroke="#f8fafc" stroke-width="2"/>
+      <circle cx="145" cy="145" r="13" fill="#f8fafc" stroke="#111827" stroke-width="2"/>
+      <circle cx="87" cy="145" r="13" fill="#111827" stroke="#f8fafc" stroke-width="2"/>
+      <circle cx="145" cy="87" r="13" fill="#f8fafc" stroke="#111827" stroke-width="2"/>
+    </g>
+    <rect x="18" y="18" width="87" height="87" rx="10" fill="none" stroke="#f97316" stroke-width="5"/>
+    <text x="24" y="270" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">board patterns</text>
+  </g>
+  <path d="M358 326H462" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M444 306L472 326L444 346" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(494 218)">
+    <rect width="172" height="216" rx="18" fill="#0f172a" stroke="#60a5fa" stroke-width="3"/>
+    <text x="36" y="42" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">learned</text>
+    <text x="36" y="68" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">weights</text>
+    <g fill="#38bdf8">
+      <rect x="34" y="98" width="104" height="14" rx="7"/>
+      <rect x="34" y="128" width="72" height="14" rx="7"/>
+      <rect x="34" y="158" width="122" height="14" rx="7"/>
+      <rect x="34" y="188" width="90" height="14" rx="7"/>
+    </g>
+  </g>
+  <path d="M690 326H772" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M754 306L782 326L754 346" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(786 226)">
+    <rect width="76" height="68" rx="12" fill="#0369a1"/>
+    <rect y="86" width="76" height="68" rx="12" fill="#475569"/>
+    <text x="38" y="44" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">keep</text>
+    <text x="38" y="129" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">cut</text>
+    <text x="38" y="194" fill="#bae6fd" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Multi-ProbCut</text>
+  </g>
+  <text x="96" y="526" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: toggle corner, mobility, parity, and endgame weights.</text>
+</svg>

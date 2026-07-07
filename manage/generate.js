@@ -19,10 +19,12 @@ const RESEARCH_CANDIDATES_PATH = path.join(ROOT, 'resources', 'research-candidat
 const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js');
 const QUIZ_CATALOG_PATH = path.join(__dirname, 'quizzes.js');
 const QUIZ_STORYLINE_ID = 'bench-council-ai100';
+const QUIZ_STORYLINE_IDS = new Set([QUIZ_STORYLINE_ID, 'gaming-ai']);
 const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
     backupFile,
+    countTextSentences,
     deriveEmbedUrl,
     detectVideoSource,
     formatQuoteAttribution,
@@ -33,7 +35,9 @@ const {
     normalizeQuoteText
 } = require('../shared/utils.js');
 
-const { categories } = require('./catalog.js');
+const catalogConfig = require('./catalog.js');
+const categories = Array.isArray(catalogConfig.categories) ? catalogConfig.categories : [];
+const branches = Array.isArray(catalogConfig.branches) ? catalogConfig.branches : [];
 const eventsMap = require('./events.js');
 const avatarRegistry = loadAvatarRegistry();
 const researchCandidates = loadResearchCandidates();
@@ -62,6 +66,99 @@ const ZH_QUOTE_ATTRIBUTIONS = {
   '2020-alphafold': '《使用 AlphaFold 进行高精度蛋白质结构预测》，约翰·江珀等',
   '2019-ai-feynman': '《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克',
   '2024-ai-scientist': '《AI 科学家》，克里斯·卢等',
+};
+
+const GAMING_BRANCH_EVOLUTION_MODULES = {
+    '1951-strachey-draughts': {
+        enName: "Strachey's draughts",
+        zhName: '斯特雷奇跳棋',
+        poster: 'resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg',
+        description: {
+            en: 'Fast draughts-board evolution slot from legal move generation into an evaluated choice.',
+            zh: '从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。'
+        }
+    },
+    '1988-td-update': {
+        enName: 'TD-Gammon trajectory',
+        zhName: 'TD-Gammon 轨迹',
+        poster: 'resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg',
+        description: {
+            en: 'Fast board-trajectory slot for showing value estimates changing across delayed rewards.',
+            zh: '用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。'
+        }
+    },
+    '1994-chinook': {
+        enName: 'Chinook',
+        zhName: 'Chinook',
+        poster: 'resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg',
+        description: {
+            en: 'Fast checkers evolution slot connecting opening search to solved endgame-table evidence.',
+            zh: '连接开局搜索与已求解残局表证据的跳棋快速演化槽位。'
+        }
+    },
+    '1997-deep-blue': {
+        enName: 'Deep Blue',
+        zhName: '深蓝',
+        poster: 'resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg',
+        description: {
+            en: 'Fast chess-position evolution slot from opening choices into a search-critical phase.',
+            zh: '从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。'
+        }
+    },
+    '2013-dqn': {
+        enName: 'DQN',
+        zhName: 'DQN',
+        poster: 'resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg',
+        description: {
+            en: 'Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.',
+            zh: 'Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。'
+        }
+    },
+    '2016-alphago': {
+        enName: 'AlphaGo',
+        zhName: 'AlphaGo',
+        poster: 'research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg',
+        description: {
+            en: 'SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.',
+            zh: '面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。'
+        }
+    },
+    '2017-alphazero': {
+        enName: 'AlphaZero',
+        zhName: 'AlphaZero',
+        poster: 'resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg',
+        description: {
+            en: 'Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.',
+            zh: '面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。'
+        }
+    },
+    '2017-libratus': {
+        enName: 'Libratus',
+        zhName: 'Libratus',
+        poster: 'resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg',
+        description: {
+            en: 'Fast poker-hand evolution slot from private cards to subgame refinement.',
+            zh: '从暗牌局面推进到子局细化的扑克手牌快速演化槽位。'
+        }
+    },
+    '2019-pluribus': {
+        enName: 'Pluribus',
+        zhName: 'Pluribus',
+        poster: 'resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg',
+        description: {
+            en: 'Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.',
+            zh: '展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。'
+        }
+    },
+    '2019-muzero': {
+        enName: 'MuZero',
+        zhName: 'MuZero',
+        poster: 'resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg',
+        description: {
+            en: 'Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.',
+            zh: '面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。'
+        }
+    }
 };
 
 // ─── 视频元数据缓存 ──────────────────────────────────────────────────────────
@@ -103,11 +200,13 @@ function lookupVideo(catalog, id, key) {
 
 const milestones = [];
 
-for (const cat of categories) {
-    for (const key of cat.events) {
+function appendMilestonesFromGroup(group, groupKind) {
+    const events = Array.isArray(group.events) ? group.events : [];
+
+    for (const key of events) {
         const ev = eventsMap[key];
         if (!ev) {
-            console.warn(`[警告] catalog.js 中引用了 "${key}"，但 events.js 中不存在该事件，已跳过。`);
+            console.warn(`[警告] catalog.js ${groupKind} 中引用了 "${key}"，但 events.js 中不存在该事件，已跳过。`);
             continue;
         }
 
@@ -176,16 +275,25 @@ for (const cat of categories) {
             }
         }
 
-        const commentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
-        const storyline = ev.storyline || cat.storyline || null;
+        const rawCommentarySections = ev.commentarySections || buildCommentarySectionsOverride(key);
+        const groupStoryline = group.storyline || (groupKind === 'branch' && group.id ? {
+            id: group.id,
+            name: group.name
+        } : null);
+        const storyline = ev.storyline || groupStoryline || null;
         const storylineId = typeof storyline === 'string' ? storyline : (storyline && storyline.id) || '';
-        const quizzes = storylineId === QUIZ_STORYLINE_ID ? selectQuizzes(key, ev) : [];
+        const commentarySections = normalizeCommentarySections(rawCommentarySections, ev, storylineId);
+        const quizzes = QUIZ_STORYLINE_IDS.has(storylineId) ? selectQuizzes(key, ev) : [];
+        const milestoneId =
+            groupKind === 'branch' && group.id
+                ? `${MILESTONE_ID_PREFIX}${group.id}-${key}`
+                : `${MILESTONE_ID_PREFIX}${key}`;
         const milestone = {
-            id: `${MILESTONE_ID_PREFIX}${key}`,
+            id: milestoneId,
             year: ev.year,
-            category: cat.name,
+            category: group.name,
             title: ev.title,
-            subtitle: cat.subtitle,
+            subtitle: group.subtitle || group.name,
             location: ev.location,
             description: ev.description,
             figures: (ev.figures || []).map((figure) => enrichFigure(figure, key)),
@@ -203,8 +311,20 @@ for (const cat of categories) {
             }
         };
 
+        if (ev.quoteLabel) milestone.quoteLabel = ev.quoteLabel;
         if (storyline) milestone.storyline = storyline;
+        if (groupKind === 'branch' && group.id) {
+            milestone.branch = {
+                id: group.id,
+                name: group.name
+            };
+        }
+        if (ev.analysis) milestone.analysis = ev.analysis;
+        if (ev.papers) milestone.papers = ev.papers;
         if (ev.achievement) milestone.achievement = ev.achievement;
+        if (groupKind === 'branch' && group.id === 'gaming-ai') {
+            applyGamingBranchEnhancements(milestone, key);
+        }
         if (quizzes.length > 0) {
             milestone.quiz = quizzes[0];
             milestone.quizzes = quizzes;
@@ -214,7 +334,76 @@ for (const cat of categories) {
     }
 }
 
+categories.forEach((cat) => appendMilestonesFromGroup(cat, 'category'));
+branches.forEach((branch) => appendMilestonesFromGroup(branch, 'branch'));
+
 // ─── 辅助函数 ────────────────────────────────────────────────────────────────
+
+function gameEvolutionVideo(key, options = {}) {
+    const enName = options.enName || key;
+    const zhName = options.zhName || enName;
+    return {
+        type: 'gameEvolutionVideo',
+        site: {
+            en: 'Game evolution clip',
+            zh: '棋局演化短片'
+        },
+        title: options.title || {
+            en: `${enName} game evolution`,
+            zh: `${zhName} 棋局演化`
+        },
+        description: options.description || {
+            en: 'Fast playback of game states from the opening into a key phase.',
+            zh: '从开局快速推进到关键阶段的棋局状态播放。'
+        },
+        url: options.url || `resources/videos/game-evolution/${key}.mp4`,
+        fallbackUrl: options.fallbackUrl || 'resources/videos/game-evolution/sample-go-game.gif',
+        poster: options.poster || '',
+        sourceSgf: options.sourceSgf || 'examples/sgf/sample-go-game.sgf',
+        generator: 'scripts/sgf_to_video.py',
+        duration: {
+            en: 'about 1 min',
+            zh: '约 1 分钟'
+        },
+        fps: '30',
+        license: {
+            en: 'Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.',
+            zh: '由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。'
+        },
+        usage: {
+            en: 'Playable game-state evolution module',
+            zh: '可播放的棋局状态演化模块'
+        },
+        action: {
+            en: 'Play evolution clip',
+            zh: '播放演化短片'
+        }
+    };
+}
+
+function cloneAchievement(achievement) {
+    if (!achievement || typeof achievement !== 'object') return achievement;
+    return {
+        ...achievement,
+        visualModules: Array.isArray(achievement.visualModules)
+            ? achievement.visualModules.map((module) => ({ ...module }))
+            : []
+    };
+}
+
+function applyGamingBranchEnhancements(milestone, key) {
+    const options = GAMING_BRANCH_EVOLUTION_MODULES[key];
+    if (!options || !milestone.achievement) return;
+
+    const achievement = cloneAchievement(milestone.achievement);
+    const visualModules = Array.isArray(achievement.visualModules) ? achievement.visualModules : [];
+    const hasGameEvolution = visualModules.some((module) => module && module.type === 'gameEvolutionVideo');
+    if (!hasGameEvolution) {
+        visualModules.push(gameEvolutionVideo(key, options));
+    }
+    achievement.visualModules = visualModules;
+    milestone.achievement = achievement;
+}
 
 /** 头像注册表允许缺失，这样生成脚本在资源未准备齐时也不会直接报错 */
 function loadAvatarRegistry() {
@@ -309,21 +498,17 @@ function findAvatarRegistryEntry(figure) {
 
 /** 给人物条目补上显式头像信息 */
 function enrichFigure(figure, key) {
-  const safeFigure = figure && typeof figure === 'object' ? figure : {};
-  const registryEntry = findAvatarRegistryEntry(safeFigure);
-  const eventAvatar = key && registryEntry.avatarByEvent
-    ? registryEntry.avatarByEvent[key] || ''
-    : '';
-  const eventAvatarStyle = key && registryEntry.avatarStyleByEvent
-    ? registryEntry.avatarStyleByEvent[key] || ''
-    : '';
+    const safeFigure = figure && typeof figure === 'object' ? figure : {};
+    const registryEntry = findAvatarRegistryEntry(safeFigure);
+    const eventAvatar = key && registryEntry.avatarByEvent ? registryEntry.avatarByEvent[key] || '' : '';
+    const eventAvatarStyle = key && registryEntry.avatarStyleByEvent ? registryEntry.avatarStyleByEvent[key] || '' : '';
 
-  return {
-    ...safeFigure,
-    avatar: safeFigure.avatar || eventAvatar || registryEntry.avatar || '',
-    avatarStyle: safeFigure.avatarStyle || eventAvatarStyle || registryEntry.avatarStyle || '',
-    figureType: safeFigure.figureType || registryEntry.type || 'person',
-  };
+    return {
+        ...safeFigure,
+        avatar: safeFigure.avatar || eventAvatar || registryEntry.avatar || '',
+        avatarStyle: safeFigure.avatarStyle || eventAvatarStyle || registryEntry.avatarStyle || '',
+        figureType: safeFigure.figureType || registryEntry.type || 'person'
+    };
 }
 
 function getExplicitLocalizedText(value, locale) {
@@ -381,6 +566,110 @@ function buildCommentarySectionsOverride(key) {
         .filter((section) => section.label.zh && section.html.zh);
 }
 
+function localizedPair(value) {
+    return {
+        en: getLocalizedText(value, 'en'),
+        zh: getLocalizedText(value, 'zh')
+    };
+}
+
+function normalizeCommentarySections(sections, ev, storylineId) {
+    if (storylineId !== QUIZ_STORYLINE_ID) return sections;
+
+    const sourceSections = Array.isArray(sections) ? sections : [];
+    const normalized = [];
+    const usedIndexes = new Set();
+
+    const findByLabel = (label) =>
+        sourceSections.findIndex((section) => getLocalizedText(section && section.label, 'en') === label);
+    const pickSection = (label, fallbackIndex, fallbackFactory) => {
+        let index = findByLabel(label);
+        if (index < 0) {
+            index = sourceSections.findIndex((_, candidateIndex) => !usedIndexes.has(candidateIndex));
+        }
+        if (index < 0) index = fallbackIndex;
+        if (index >= 0 && sourceSections[index]) {
+            usedIndexes.add(index);
+            return sourceSections[index];
+        }
+        return fallbackFactory();
+    };
+
+    const title = localizedPair(ev.title);
+    const achievement = ev.achievement || {};
+    const method = localizedPair(achievement.method);
+    const demo = localizedPair(achievement.demo);
+    const artifact = localizedPair(achievement.artifact);
+    const description = localizedPair(ev.description);
+
+    const templates = {
+        'Historical Background': {
+            label: { en: 'Historical Background', zh: '历史背景' },
+            fallback: () => ({
+                label: { en: 'Historical Background', zh: '历史背景' },
+                html: description
+            }),
+            extra: {
+                en: `This context helps viewers place ${title.en || 'this achievement'} in the technical problems and research priorities of its time.`,
+                zh: `这段背景帮助观众把${title.zh || '这项成就'}放回当时的技术问题和研究重点中理解。`
+            }
+        },
+        'Core Idea': {
+            label: { en: 'Core Idea', zh: '核心思想' },
+            fallback: () => ({
+                label: { en: 'Core Idea', zh: '核心思想' },
+                html: {
+                    en: demo.en || method.en || artifact.en || description.en,
+                    zh: demo.zh || method.zh || artifact.zh || description.zh
+                }
+            }),
+            extra: {
+                en: `The key mechanism is ${method.en || artifact.en || demo.en || 'the design described in the source material'}, which links the source material to the visible demo behavior.`,
+                zh: `关键机制是${method.zh || artifact.zh || demo.zh || '来源材料中描述的设计'}，它把资料线索与可见的演示行为连接起来。`
+            }
+        },
+        'Long-Term Legacy': {
+            label: { en: 'Long-Term Legacy', zh: '长期影响' },
+            fallback: () => ({
+                label: { en: 'Long-Term Legacy', zh: '长期影响' },
+                html: {
+                    en: `Experts generally treat ${title.en || 'this achievement'} as an important AI milestone.`,
+                    zh: `专家通常把${title.zh || '这项成就'}视为重要 AI 里程碑。`
+                }
+            }),
+            extra: {
+                en: `Its long-term legacy is the vocabulary, benchmark, or system pattern that later AI work reused, compared against, or extended.`,
+                zh: `它的长期影响在于形成了后续 AI 工作复用、比较或扩展的技术词汇、基准或系统模式。`
+            }
+        }
+    };
+
+    for (const [label, config] of Object.entries(templates)) {
+        const section = pickSection(label, -1, config.fallback);
+        const html = localizedPair(section.html || section.text || '');
+        normalized.push({
+            label: config.label,
+            html: {
+                en: ensureTwoSentences(html.en, config.extra.en, 'en'),
+                zh: ensureTwoSentences(html.zh, config.extra.zh, 'zh')
+            }
+        });
+    }
+
+    return normalized;
+}
+
+function ensureTwoSentences(value, extraSentence, locale) {
+    const text = String(value || '').trim();
+    const extra = String(extraSentence || '').trim();
+    if (!text) return extra;
+    if (countTextSentences(text, locale) >= 2) return text;
+    if (/<\/p>\s*$/i.test(text)) {
+        return `${text}<p>${extra}</p>`;
+    }
+    return `${text} ${extra}`;
+}
+
 function mapLocalizedText(value, transform) {
     if (!isLocalizedText(value)) return transform(String(value || ''));
     const result = {};
@@ -403,18 +692,19 @@ function selectCuratedQuote(key, ev) {
               zh: getLocalizedText(eventQuote, 'zh') || candidateQuote || getLocalizedText(eventQuote, 'en')
           }
         : candidateQuote || getLocalizedText(eventQuote);
+
     const formattedAttribution = formatQuoteAttribution(effectiveMeta);
 
-  return {
-    text: quoteText,
-    attribution: ZH_QUOTE_ATTRIBUTIONS[key]
-      ? {
-          en: getLocalizedText(formattedAttribution, 'en'),
-          zh: ZH_QUOTE_ATTRIBUTIONS[key],
-        }
-      : formattedAttribution,
-    meta: effectiveMeta,
-  };
+    return {
+        text: quoteText,
+        attribution: ZH_QUOTE_ATTRIBUTIONS[key]
+            ? {
+                  en: getLocalizedText(formattedAttribution, 'en'),
+                  zh: ZH_QUOTE_ATTRIBUTIONS[key],
+              }
+            : formattedAttribution,
+        meta: effectiveMeta,
+    };
 }
 
 /** 将纯文本引言组装成 HTML 字符串（\n → <br>）*/
@@ -481,13 +771,13 @@ function validateAvatarAssets(items) {
 
             const absolutePath = path.isAbsolute(avatar) ? avatar : path.join(ROOT, avatar);
 
-      if (!fs.existsSync(absolutePath)) {
-        missing.push({
-          avatar,
-          milestoneId: milestone.id,
-          figureName: getLocalizedText(figure.name) || '未知人物',
-        });
-      }
+            if (!fs.existsSync(absolutePath)) {
+                missing.push({
+                    avatar,
+                    milestoneId: milestone.id,
+                    figureName: getLocalizedText(figure.name) || '未知人物'
+                });
+            }
         }
     }
 
@@ -500,7 +790,7 @@ const content = buildOutputContent(now);
 const writeResults = new Map();
 
 for (const file of OUTPUTS) {
-  writeResults.set(file, writeIfMeaningfullyChanged(file, content));
+    writeResults.set(file, writeIfMeaningfullyChanged(file, content));
 }
 
 for (const item of missingAvatarAssets) {
@@ -508,10 +798,9 @@ for (const item of missingAvatarAssets) {
 }
 
 for (const file of OUTPUTS) {
-  const status = writeResults.get(file) ? '生成完成' : '内容未变';
-  console.log(`✓ ${status}：${file}`);
+    console.log(`✓ ${writeResults.get(file) ? '生成完成' : '内容未变化'}：${file}`);
 }
-console.log(`  共 ${categories.length} 个分类，${milestones.length} 个事件`);
+console.log(`  共 ${categories.length} 个分类，${branches.length} 个分支，${milestones.length} 个事件`);
 if (missingAvatarAssets.length > 0) {
     console.log(`  头像资源缺失：${missingAvatarAssets.length}`);
 }
