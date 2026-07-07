@@ -4060,6 +4060,7 @@
         }
 
         .ui-detail {
+            position: relative;
             height: 100%;
             min-height: 0;
             display: grid;
@@ -4177,6 +4178,13 @@
             place-items: center;
             color: var(--accent);
             font-size: 18px;
+            text-align: center;
+            line-height: 1.18;
+        }
+
+        .ui-avatar-face span {
+            max-width: 82px;
+            overflow-wrap: anywhere;
         }
 
         .ui-avatar-name,
@@ -4698,22 +4706,34 @@
 
         .ui-back-button {
             position: absolute;
-            right: 18px;
-            top: 18px;
-            z-index: 4;
-            border: 1px solid rgba(244, 239, 229, 0.18);
-            border-radius: 999px;
-            background: rgba(0, 0, 0, 0.5);
-            color: rgba(244, 239, 229, 0.82);
-            padding: 8px 13px;
-            font-size: 12px;
-            font-weight: 850;
+            right: 36px;
+            bottom: 16px;
+            z-index: 26;
+            width: 44px;
+            height: 30px;
+            border: 1px solid rgba(244, 239, 229, 0.24);
+            border-radius: 2px;
+            background: rgba(0, 0, 0, 0.26);
+            color: rgba(244, 239, 229, 0.56);
+            padding: 0;
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1;
             cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .ui-detail .ui-back-button {
+        .single-stage .ui-back-button {
             opacity: 0;
             pointer-events: none;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .ui-back-button {
+            opacity: 1;
+            pointer-events: auto;
         }
 
         .ui-back-button:hover,
@@ -5583,10 +5603,11 @@
                 <div class="topbar-actions">
                     <select class="storyline-select" id="storylineSelect" aria-label="Storyline"></select>
                     <div class="mode-chip">
-                        <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
+                        <span class="mode-chip-label" data-i18n="aiHistoryMode">AI历史</span>
                     </div>
                 </div>
             </header>
+            <button class="ui-back-button" id="uiBackButton" type="button" data-ui-back="true" aria-label="返回">&lt;</button>
 
             <main class="stage-grid">
                 <section class="panel-shell hero-panel">
@@ -5911,9 +5932,9 @@
             if (storyline && typeof storyline === 'object' && storyline.id) return storyline.id;
             return DEEP_STORYLINE_ID;
         };
-        const getStorylineMilestones = (storylineId) => storylineId === UNIFIED_STORYLINE_ID
+        const getStorylineMilestones = (storylineId) => (storylineId === UNIFIED_STORYLINE_ID
             ? buildUnifiedMilestones()
-            : allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId);
+            : allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId).sort(compareMilestonesByTime));
         const getStorylineOption = (storylineId) => STORYLINE_OPTIONS.find((option) => option.id === storylineId) || null;
         const hasStorylineMilestones = (storylineId) => getStorylineMilestones(storylineId).length > 0;
         let unifiedMilestoneCache = null;
@@ -5933,6 +5954,20 @@
                 .replace(/networks?/g, 'net')
                 .replace(/模型|网络|算法|时代|突破|爆发/g, '')
                 .trim();
+        }
+
+        function getMilestoneSortYear(milestone) {
+            const value = milestone && milestone.year != null ? milestone.year : milestone;
+            const match = String(value || '').match(/\d{3,4}/);
+            return match ? Number(match[0]) : Number(value);
+        }
+
+        function compareMilestonesByTime(a, b) {
+            const yearA = getMilestoneSortYear(a);
+            const yearB = getMilestoneSortYear(b);
+            const safeYearA = Number.isFinite(yearA) ? yearA : Number.MAX_SAFE_INTEGER;
+            const safeYearB = Number.isFinite(yearB) ? yearB : Number.MAX_SAFE_INTEGER;
+            return safeYearA - safeYearB || normalizeKeyText(a && a.title).localeCompare(normalizeKeyText(b && b.title));
         }
 
         function getCanonicalMilestoneSlug(milestone) {
@@ -6025,7 +6060,7 @@
                 bySlug.set(slug, merged);
             });
             unifiedMilestoneCache = Array.from(bySlug.values())
-                .sort((a, b) => Number(a.year || 0) - Number(b.year || 0) || normalizeKeyText(a.title).localeCompare(normalizeKeyText(b.title)));
+                .sort(compareMilestonesByTime);
             return unifiedMilestoneCache;
         }
         const getSearchParam = (name) => {
@@ -6064,7 +6099,7 @@
                 currentIndex = requestedIndex;
                 uiBrowserMode = 'detail';
                 uiSelectedEventId = requestedEventId;
-                uiSelectedYear = Number(milestoneList[requestedIndex].year) || uiSelectedYear;
+                uiSelectedYear = getMilestoneSortYear(milestoneList[requestedIndex]) || uiSelectedYear;
             }
         }
         let currentArchiveIndex = 0;
@@ -6137,6 +6172,7 @@
             prevBtn: document.getElementById('prevBtn'),
             nextBtn: document.getElementById('nextBtn'),
             storylineSelect: document.getElementById('storylineSelect'),
+            uiBackButton: document.getElementById('uiBackButton'),
             timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
             globeStage: document.getElementById('globeStage'),
@@ -6380,6 +6416,7 @@
             if (!refs.storylineSelect) return;
 
             refs.storylineSelect.setAttribute('aria-label', tx('storylineSelector'));
+            if (refs.uiBackButton) refs.uiBackButton.setAttribute('aria-label', uiText('Back', '返回'));
             refs.storylineSelect.innerHTML = STORYLINE_OPTIONS.map((option) => {
                 const count = getStorylineMilestones(option.id).length;
                 const disabled = count <= 0 ? ' disabled' : '';
@@ -6601,10 +6638,16 @@
         }
 
         function initials(name) {
-            const words = String(name || '').trim().split(/\s+/).filter(Boolean);
-            if (words.length === 0) return 'AI';
-            if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
-            return words.slice(0, 2).map((item) => item[0].toUpperCase()).join('');
+            const raw = String(name || '').trim();
+            if (!raw) return 'AI';
+            const localizedName = raw.replace(/\s+/g, ' ');
+            const dividerMatch = localizedName.match(/^([^·・.．。]+)/);
+            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : localizedName).trim();
+            if (/[\u3400-\u9fff]/.test(localizedName)) {
+                return firstPart || localizedName;
+            }
+            const words = firstPart.split(/\s+/).filter(Boolean);
+            return String(words[0] || firstPart || localizedName).toUpperCase();
         }
 
         function getFigureAvatarSource(figure, vm, portraitPool, index) {
@@ -10235,13 +10278,12 @@
         }
 
         function getUiYears() {
-            return Array.from(new Set(milestoneList.map((item) => Number(item.year)).filter((year) => Number.isFinite(year))))
+            return Array.from(new Set(milestoneList.map(getMilestoneSortYear).filter((year) => Number.isFinite(year))))
                 .sort((a, b) => a - b);
         }
 
         function getDefaultUiYear(years) {
-            if (years.includes(1956)) return 1956;
-            return years.find((year) => milestoneList.filter((item) => Number(item.year) === year).length > 1) || years[0];
+            return years[0];
         }
 
         function ensureUiSelection() {
@@ -10266,7 +10308,7 @@
             if (uiBrowserMode === 'region' && uiSelectedContinent) {
                 return milestoneList.filter((item) => getMilestoneContinentId(item) === uiSelectedContinent);
             }
-            return milestoneList.filter((item) => Number(item.year) === Number(uiSelectedYear));
+            return milestoneList.filter((item) => getMilestoneSortYear(item) === Number(uiSelectedYear));
         }
 
         function syncUiCurrentIndexToEvents(events) {
@@ -10289,7 +10331,7 @@
             const events = uiBrowserMode === 'region' && uiSelectedContinent
                 ? getUiEventsForCurrentMode()
                 : [];
-            return new Set(events.map((item) => Number(item.year)).filter((year) => Number.isFinite(year)));
+            return new Set(events.map(getMilestoneSortYear).filter((year) => Number.isFinite(year)));
         }
 
         function getUiPrimaryImage(vm) {
@@ -10318,8 +10360,15 @@
             return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(String(url || ''));
         }
 
+        const UI_MEDIA_VISUAL_OVERRIDES = {
+            'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
+        };
+
         function getUiMediaVisualImage(vm) {
             const images = getUiDetailImages(vm);
+            const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
+            const overrideUrl = UI_MEDIA_VISUAL_OVERRIDES[eventId];
+            if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
             const diagram = images.find((url) => isDiagramImage(url));
             if (diagram) return diagram;
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
@@ -10840,7 +10889,7 @@
             if (!card) return;
             const eventId = card.dataset.eventId || '';
             const milestone = milestoneList.find((item) => item.id === eventId);
-            const year = milestone ? Number(milestone.year) : NaN;
+            const year = milestone ? getMilestoneSortYear(milestone) : NaN;
             if (!Number.isFinite(year) || Number(uiSelectedYear) === year) return;
             uiSelectedYear = year;
             renderUiTimeline();
@@ -10930,7 +10979,7 @@
                     uiSelectedYear = Number(button.dataset.year);
                     uiSelectedContinent = '';
                     uiSelectedEventId = '';
-                    currentIndex = Math.max(0, milestoneList.findIndex((item) => Number(item.year) === uiSelectedYear));
+                    currentIndex = Math.max(0, milestoneList.findIndex((item) => getMilestoneSortYear(item) === uiSelectedYear));
                     renderPage(currentIndex);
                 });
             });
@@ -10972,7 +11021,7 @@
                     uiSelectedEventId = '';
                     const nextEvents = getUiEventsForCurrentMode();
                     currentIndex = nextEvents[0] ? milestoneList.findIndex((item) => item.id === nextEvents[0].id) : 0;
-                    uiSelectedYear = nextEvents[0] ? Number(nextEvents[0].year) || uiSelectedYear : uiSelectedYear;
+                    uiSelectedYear = nextEvents[0] ? getMilestoneSortYear(nextEvents[0]) || uiSelectedYear : uiSelectedYear;
                     renderPage(currentIndex);
                 });
             });
@@ -10983,7 +11032,7 @@
                     uiDetailImageIndex = 0;
                     const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
                     currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
-                    uiSelectedYear = milestoneList[currentIndex] ? Number(milestoneList[currentIndex].year) || uiSelectedYear : uiSelectedYear;
+                    uiSelectedYear = milestoneList[currentIndex] ? getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear : uiSelectedYear;
                     renderPage(currentIndex);
                 });
             });
@@ -11342,7 +11391,6 @@
             refs.uiBrowserMain.innerHTML = `
                 <div class="ui-detail">
                     <section class="ui-detail-panel">
-                        <button class="ui-back-button" type="button" data-ui-back="true" tabindex="-1" aria-hidden="true">${escapeHtml(uiText('Back', '返回'))}</button>
                         <div class="ui-detail-left">
                             <div class="ui-detail-hero${longYearClass}">
                                 <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
@@ -11373,14 +11421,6 @@
                     </aside>
                 </div>
             `;
-            const backButton = refs.uiBrowserMain.querySelector('[data-ui-back="true"]');
-            if (backButton) {
-                backButton.addEventListener('click', () => {
-                    uiBrowserMode = uiSelectedContinent ? 'region' : 'year';
-                    uiSelectedEventId = '';
-                    renderPage(currentIndex);
-                });
-            }
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const nextImageIndex = Number(button.dataset.uiImageIndex);
@@ -11404,7 +11444,7 @@
             if (!refs.uiBrowser || !refs.uiBrowserMain || !refs.uiBrowserTimeline) return;
             ensureUiSelection();
             if (uiBrowserMode === 'detail' && milestoneList[currentIndex]) {
-                uiSelectedYear = Number(milestoneList[currentIndex].year) || uiSelectedYear;
+                uiSelectedYear = getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear;
             }
             if (uiBrowserMode === 'detail') {
                 renderUiDetail();
@@ -11801,7 +11841,7 @@
             if (isUiBrowserActive() && milestoneList[index]) {
                 uiBrowserMode = 'detail';
                 uiSelectedEventId = milestoneList[index].id;
-                uiSelectedYear = Number(milestoneList[index].year) || uiSelectedYear;
+                uiSelectedYear = getMilestoneSortYear(milestoneList[index]) || uiSelectedYear;
                 uiSelectedContinent = '';
             }
             renderPage(currentIndex);
@@ -11824,7 +11864,7 @@
                 uiSelectedYear = years[nextYearIndex] || uiSelectedYear;
                 uiSelectedContinent = '';
                 uiSelectedEventId = '';
-                currentIndex = Math.max(0, milestoneList.findIndex((item) => Number(item.year) === Number(uiSelectedYear)));
+                currentIndex = Math.max(0, milestoneList.findIndex((item) => getMilestoneSortYear(item) === Number(uiSelectedYear)));
                 renderPage(currentIndex);
                 resetPortraitScrollPosition();
                 return;
@@ -11835,7 +11875,7 @@
             if (isUiBrowserActive()) {
                 uiBrowserMode = 'detail';
                 uiSelectedEventId = milestoneList[nextIndex] ? milestoneList[nextIndex].id : uiSelectedEventId;
-                uiSelectedYear = milestoneList[nextIndex] ? Number(milestoneList[nextIndex].year) : uiSelectedYear;
+                uiSelectedYear = milestoneList[nextIndex] ? getMilestoneSortYear(milestoneList[nextIndex]) : uiSelectedYear;
                 uiSelectedContinent = '';
             }
             jumpTo(nextIndex, options);
@@ -11926,6 +11966,13 @@
             }
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
             refs.nextBtn.addEventListener('click', () => navigate('next'));
+            if (refs.uiBackButton) {
+                refs.uiBackButton.addEventListener('click', () => {
+                    uiBrowserMode = uiSelectedContinent ? 'region' : 'year';
+                    uiSelectedEventId = '';
+                    renderPage(currentIndex);
+                });
+            }
             if (refs.quizModalClose) refs.quizModalClose.addEventListener('click', completeQuizModal);
             if (refs.quizModalSkip) refs.quizModalSkip.addEventListener('click', completeQuizModal);
             if (refs.quizModalContinue) refs.quizModalContinue.addEventListener('click', () => {
