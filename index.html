@@ -6,6 +6,14 @@
     <title>AI 历史回顾展览 - 单屏模式</title>
     <script src="shared/layout-router.js"></script>
     <style>
+        @font-face {
+            font-family: "OPPOSans";
+            src: url("./public/fonts/oppo-sans/OPPO Sans 4.0.ttf") format("truetype");
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
         :root {
             --screen-width: 1920px;
             --screen-height: 1080px;
@@ -38,7 +46,7 @@
             --scrollbar-track: rgba(255, 255, 255, 0.045);
             --scrollbar-thumb: rgba(246, 137, 0, 0.42);
             --scrollbar-thumb-hover: rgba(246, 137, 0, 0.68);
-            --ui-font: "PingFang SC", "Microsoft YaHei", sans-serif;
+            --ui-font: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
         }
 
         * {
@@ -3083,12 +3091,13 @@
         }
 
         .single-stage.is-ui-browser .topbar-actions {
-            gap: 34px;
+            gap: 32px;
         }
 
         .single-stage.is-ui-browser .mode-chip {
             position: relative;
             padding-left: 12px;
+            order: 1;
         }
 
         .single-stage.is-ui-browser .mode-chip::before {
@@ -3104,6 +3113,10 @@
         .single-stage.is-ui-browser .mode-chip-label {
             color: rgba(244, 239, 229, 0.92);
             font-size: 20px;
+        }
+
+        .single-stage.is-ui-browser .topbar-language-toggle {
+            order: 2;
         }
 
         .single-stage.is-ui-browser .stage-footer,
@@ -3329,6 +3342,12 @@
             scrollbar-width: none;
         }
 
+        .ui-level-one.is-year-mode .ui-map-callout-zone:last-child,
+        .ui-level-one.is-region-mode .ui-map-callout-zone:last-child {
+            align-self: end;
+            width: 100%;
+        }
+
         .ui-map-callout-zone::-webkit-scrollbar {
             display: none;
         }
@@ -3377,6 +3396,11 @@
             row-gap: 6px;
             align-items: start;
             padding: 0 0 4px;
+        }
+
+        .ui-level-one.is-year-mode .ui-map-callout-zone:last-child .ui-map-callout-strip,
+        .ui-level-one.is-region-mode .ui-map-callout-zone:last-child .ui-map-callout-strip {
+            align-content: end;
         }
 
         .ui-map-callout-dot {
@@ -3537,6 +3561,12 @@
             touch-action: pan-x;
         }
 
+        .ui-level-one.is-single-event .ui-event-list {
+            grid-auto-columns: calc((100% - 32px) / 3);
+            justify-content: center;
+            cursor: default;
+        }
+
         .ui-event-card {
             min-height: 176px;
             border: 1px solid rgba(244, 239, 229, 0.11);
@@ -3607,9 +3637,9 @@
             background: rgba(244, 239, 229, 0.96);
             border: var(--ui-event-image-frame) solid rgba(244, 239, 229, 0.98);
             align-self: start;
-            justify-self: stretch;
-            align-items: start;
-            justify-items: start;
+            justify-self: center;
+            align-items: center;
+            justify-items: center;
             overflow: hidden;
         }
 
@@ -3663,15 +3693,19 @@
             order: 1;
             align-self: start;
             color: var(--accent);
-            font-size: clamp(13px, 1.02vw, 20px);
-            line-height: 1.05;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 15px;
+            line-height: 1.18;
             letter-spacing: 0;
             text-transform: none;
-            display: flex;
-            align-items: baseline;
-            gap: 0.5em;
+            display: grid;
+            align-content: start;
+            gap: 2px;
             min-width: 0;
             overflow: hidden;
+            justify-self: center;
+            text-align: center;
+            width: min(100%, clamp(280px, 23.5vw, 460px));
         }
 
         .ui-event-year {
@@ -3690,13 +3724,14 @@
 
         .ui-level-one.is-year-mode .ui-event-year,
         .ui-level-one.is-region-mode .ui-event-year {
-            font-size: clamp(28px, 2.15vw, 45px);
+            font-size: 42px;
+            line-height: 1.12;
         }
 
         .ui-level-one.is-year-mode .ui-event-location,
         .ui-level-one.is-region-mode .ui-event-location {
-            font-size: clamp(9px, 0.58vw, 13px);
-            line-height: 1.25;
+            font-size: 15px;
+            line-height: 1.18;
             white-space: nowrap;
             display: block;
             overflow: hidden;
@@ -3714,14 +3749,18 @@
         .ui-level-one.is-region-mode .ui-event-title {
             order: 2;
             align-self: start;
-            margin-top: clamp(30px, 3.3vh, 38px);
-            font-size: clamp(16px, 1.02vw, 22px);
-            line-height: 1.12;
+            margin-top: 30px;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 25px;
+            line-height: 1.2;
             min-height: 2.12em;
             display: -webkit-box;
             overflow: hidden;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
+            text-align: center;
+            justify-self: center;
+            width: min(100%, clamp(280px, 23.5vw, 460px));
         }
 
         .ui-event-desc {
@@ -3757,6 +3796,7 @@
         .ui-level-one.is-region-mode .ui-event-caption {
             grid-row: 6;
             align-self: start;
+            justify-self: center;
             margin-top: 0;
             padding-bottom: 0;
             color: rgba(244, 239, 229, 0.82);
@@ -3766,6 +3806,8 @@
             gap: clamp(5px, 0.68vh, 8px);
             overflow: hidden;
             align-content: start;
+            text-align: center;
+            width: min(100%, clamp(280px, 23.5vw, 460px));
         }
 
         .ui-event-caption-title,
@@ -3790,16 +3832,16 @@
             min-height: 0;
             position: relative;
             border-top: 1px solid rgba(244, 239, 229, 0.08);
-            padding: 8px 18px 0;
+            padding: 8px 0 0;
             display: block;
             align-content: start;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .single-stage.is-ui-browser .ui-browser-timeline {
             position: absolute;
-            left: 42px;
-            right: 42px;
+            left: 0;
+            right: 0;
             bottom: 0;
             height: 56px;
             z-index: 5;
@@ -3829,6 +3871,68 @@
         .ui-browser-timeline::after {
             right: 0;
             background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .ui-timeline-nav {
+            position: absolute;
+            top: 21px;
+            z-index: 4;
+            width: 18px;
+            height: 22px;
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .ui-timeline-nav::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            opacity: 0.82;
+            transform: translateY(-50%);
+            transition: opacity 0.2s ease, border-color 0.2s ease;
+        }
+
+        .ui-timeline-nav:hover::before,
+        .ui-timeline-nav:focus-visible::before {
+            opacity: 1;
+        }
+
+        .ui-timeline-nav:focus-visible {
+            outline: 1px solid rgba(246, 137, 0, 0.72);
+            outline-offset: 2px;
+        }
+
+        .ui-timeline-nav:disabled {
+            cursor: default;
+            opacity: 0.32;
+        }
+
+        .ui-timeline-nav:disabled::before {
+            opacity: 0.5;
+        }
+
+        .ui-timeline-nav.prev {
+            left: 0;
+        }
+
+        .ui-timeline-nav.next {
+            right: 0;
+        }
+
+        .ui-timeline-nav.prev::before {
+            left: 0;
+            border-right: 13px solid var(--accent);
+        }
+
+        .ui-timeline-nav.next::before {
+            right: 0;
+            border-left: 13px solid var(--accent);
         }
 
         .ui-timeline-label {
@@ -3861,7 +3965,7 @@
             gap: 0;
             overflow-x: auto;
             overflow-y: hidden;
-            padding: 0 0 2px;
+            padding: 0 42px 2px;
             scrollbar-width: none;
             cursor: grab;
             touch-action: pan-x;
@@ -3884,7 +3988,7 @@
             left: 0;
             right: auto;
             top: 22px;
-            width: calc(var(--ui-year-count, 1) * var(--ui-year-tick-width));
+            width: calc(var(--ui-year-count, 1) * var(--ui-year-tick-width) + 84px);
             height: 3.5px;
             background: repeating-linear-gradient(
                 90deg,
@@ -3951,6 +4055,10 @@
             color: rgba(255, 255, 255, 0.92);
         }
 
+        .ui-year-tick.highlight span {
+            color: var(--accent);
+        }
+
         .ui-detail {
             height: 100%;
             min-height: 0;
@@ -3970,7 +4078,7 @@
             position: relative;
             display: grid;
             grid-template-columns: 564px minmax(0, 1fr);
-            grid-template-rows: 132px 148px 450px auto;
+            grid-template-rows: 132px 114px 450px auto;
             column-gap: 67px;
             row-gap: 10px;
             align-content: start;
@@ -3985,12 +4093,20 @@
             display: grid;
             grid-column: 1 / 3;
             grid-row: 1 / 3;
-            grid-template-columns: 230px 340px minmax(0, 1fr);
+            grid-template-columns: var(--ui-detail-year-column, 300px) 290px minmax(0, 1fr);
             grid-template-rows: 132px 98px;
-            column-gap: 4px;
+            column-gap: 36px;
             row-gap: 0;
             align-items: start;
             padding-top: 0;
+        }
+
+        .ui-detail-hero.has-long-year {
+            --ui-detail-year-column: 395px;
+        }
+
+        .ui-detail-hero.has-extra-long-year {
+            --ui-detail-year-column: 520px;
         }
 
         .ui-detail-year {
@@ -3998,21 +4114,22 @@
             grid-row: 1;
             color: var(--accent);
             font-family: "Gotham", "Arial Narrow", "OPPOSans", "PingFang SC", sans-serif;
-            font-size: 80px;
+            font-size: 92px;
             font-weight: 900;
             line-height: 0.9;
+            white-space: nowrap;
         }
 
         .ui-detail-year.is-multiline {
-            font-size: 62px;
-            line-height: 0.82;
-            white-space: pre-line;
+            font-size: 92px;
+            line-height: 0.9;
+            white-space: nowrap;
         }
 
         .ui-detail-place {
             grid-column: 2;
             grid-row: 1;
-            margin-top: 12px;
+            margin-top: 16px;
             color: var(--accent);
             font-size: 30px;
             font-weight: 900;
@@ -4022,6 +4139,7 @@
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
+            width: 290px;
         }
 
         .ui-avatar-strip {
@@ -4174,14 +4292,27 @@
             align-content: start;
             gap: 0;
             padding-top: 12px;
+            padding-left: 229px;
+        }
+
+        .ui-detail-heading.is-location-overlap-risk {
+            padding-left: 260px;
+        }
+
+        .ui-detail-heading.has-long-year {
+            padding-left: 326px;
+        }
+
+        .ui-detail-heading.has-extra-long-year {
+            padding-left: 430px;
         }
 
         .ui-detail-title {
             color: rgba(255, 255, 255, 0.96);
             font-size: 30px;
             font-weight: 900;
-            line-height: 1.18;
-            max-width: 380px;
+            line-height: 1.2;
+            max-width: 340px;
         }
 
         .ui-detail-meta-inline {
@@ -4198,8 +4329,9 @@
             min-height: 0;
             overflow: auto;
             color: rgba(255, 255, 255, 0.9);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
             font-size: 20px;
-            font-weight: 650;
+            font-weight: 500;
             line-height: 1.5;
             padding: 0 14px 0 0;
             max-width: 551px;
@@ -4210,14 +4342,15 @@
         }
 
         .ui-side-panel {
-            display: grid;
-            grid-template-rows: auto auto;
-            align-content: start;
-            gap: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 42px;
             padding: 18px 38px 18px 20px;
             position: relative;
             overflow: auto;
             scrollbar-width: none;
+            --ui-side-progress: 1;
         }
 
         .ui-side-panel::-webkit-scrollbar {
@@ -4232,17 +4365,29 @@
             bottom: 32px;
             width: 3px;
             background: linear-gradient(180deg, var(--accent) 0 52%, rgba(244, 239, 229, 0.16) 52% 100%);
+            background: linear-gradient(
+                180deg,
+                var(--accent) 0,
+                var(--accent) calc(var(--ui-side-progress) * 100%),
+                rgba(244, 239, 229, 0.16) calc(var(--ui-side-progress) * 100%),
+                rgba(244, 239, 229, 0.16) 100%
+            );
             border-radius: 999px;
+            pointer-events: none;
         }
 
         .ui-info-card,
-        .ui-media-card {
+        .ui-media-card,
+        .ui-concepts-card,
+        .ui-quote-card,
+        .ui-commentary-card {
+            flex: 0 0 auto;
             min-height: 0;
             overflow: visible;
-            padding: 0 8px 0 0;
+            padding: 0;
             display: grid;
             align-content: start;
-            gap: 16px;
+            gap: 10px;
             border: none;
             border-radius: 0;
             background: transparent;
@@ -4277,6 +4422,13 @@
             outline: none;
         }
 
+        .ui-source-card {
+            grid-template-columns: minmax(0, 1fr) max-content;
+            align-items: baseline;
+            column-gap: 14px;
+            max-width: 100%;
+        }
+
         .ui-source-type,
         .ui-concept-chip {
             color: var(--accent);
@@ -4288,31 +4440,50 @@
 
         .ui-source-label {
             color: rgba(255, 255, 255, 0.92);
-            font-size: 16px;
-            font-weight: 800;
-            line-height: 1.42;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.3;
+            min-width: 0;
+            overflow-wrap: anywhere;
         }
 
         .ui-source-url {
             color: rgba(255, 255, 255, 0.78);
-            font-size: 15px;
-            font-weight: 650;
-            line-height: 1.46;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .ui-source-card > .ui-source-url:only-child {
+            color: rgba(255, 255, 255, 0.92);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.3;
+            white-space: normal;
             overflow-wrap: anywhere;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
         }
 
         .ui-concept-title {
             color: rgba(255, 255, 255, 0.92);
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 850;
             line-height: 1.35;
         }
 
         .ui-concept-text {
             color: rgba(255, 255, 255, 0.88);
-            font-size: 18px;
-            font-weight: 650;
-            line-height: 1.46;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.35;
             overflow-wrap: anywhere;
         }
 
@@ -4326,7 +4497,6 @@
             position: relative;
             width: 100%;
             aspect-ratio: 530 / 298;
-            min-height: 0;
             border: 1px solid rgba(244, 239, 229, 0.48);
             border-radius: 0;
             overflow: hidden;
@@ -4414,41 +4584,116 @@
 
         .ui-explainer-grid {
             display: grid;
+            gap: 22px;
+        }
+
+        .ui-concept-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 18px;
+        }
+
+        .ui-concept-feature-card {
+            min-height: 166px;
+            padding: 16px 18px 14px;
+            border: 1px solid rgba(244, 239, 229, 0.18);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.035);
+            display: grid;
+            gap: 10px;
+            align-content: start;
+        }
+
+        .ui-concept-feature-label {
+            color: var(--accent);
+            font-size: 15px;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+
+        .ui-concept-feature-text {
+            color: rgba(255, 255, 255, 0.92);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.38;
+            overflow-wrap: anywhere;
+        }
+
+        .ui-concept-feature-chip,
+        .ui-concept-feature-title {
+            color: rgba(244, 239, 229, 0.58);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.25;
+        }
+
+        .ui-concept-feature-title {
+            color: rgba(244, 239, 229, 0.86);
+            font-size: 20px;
         }
 
         .ui-side-visual {
             min-height: 0;
             display: grid;
-            gap: 8px;
+            gap: 10px;
         }
 
         .ui-side-visual-stage {
             width: 100%;
-            min-height: 0;
-            max-height: 220px;
             border: 1px solid rgba(244, 239, 229, 0.24);
             background: rgba(255, 255, 255, 0.92);
             padding: 10px;
             display: grid;
             place-items: center;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .ui-side-visual-stage img {
             display: block;
-            max-width: 100%;
-            max-height: 200px;
-            width: auto;
+            width: 100%;
             height: auto;
             object-fit: contain;
         }
 
         .ui-side-visual-caption {
             color: rgba(244, 239, 229, 0.74);
-            font-size: 13px;
-            font-weight: 750;
+            font-size: 18px;
+            font-weight: 500;
             line-height: 1.35;
+        }
+
+        .ui-side-demo-visual {
+            display: grid;
+            gap: 10px;
+        }
+
+        .ui-side-demo-visual .bench-paper-demo {
+            display: block;
+            min-height: 0;
+        }
+
+        .ui-side-demo-visual .bench-paper-notes,
+        .ui-side-demo-visual .bench-go-notes {
+            display: none;
+        }
+
+        .ui-side-demo-visual .bench-paper-svg {
+            width: 100%;
+            height: auto;
+            min-height: 0;
+            aspect-ratio: 520 / 250;
+            display: block;
+        }
+
+        .ui-side-demo-visual .bench-paper-image-demo {
+            aspect-ratio: auto;
+        }
+
+        .ui-side-demo-visual .bench-go-layout,
+        .ui-side-demo-visual .bench-transcript-grid,
+        .ui-side-demo-visual .bench-code-flow {
+            min-height: 0;
         }
 
         .ui-back-button {
@@ -6320,6 +6565,19 @@
             return tx('locationPending');
         }
 
+        function shouldOffsetUiDetailHeading(yearText, location) {
+            const locationText = buildLocationLine(location).replace(/\s+/g, '');
+            const normalizedYear = String(yearText || '').replace(/\s+/g, '');
+            return locationText.length >= 18 || (normalizedYear.length >= 8 && locationText.length >= 12);
+        }
+
+        function getUiDetailLongYearClass(yearText) {
+            const normalized = String(yearText || '').replace(/\s+/g, '');
+            if (normalized.length >= 9) return ' has-extra-long-year';
+            if (normalized.length >= 8 || /[-/]/.test(String(yearText || ''))) return ' has-long-year';
+            return '';
+        }
+
         function extractStageContext(vm) {
             const raw = String((vm && (vm.category || vm.subtitle)) || '').replace(/\s+/g, ' ').trim();
             if (!raw) {
@@ -6384,6 +6642,19 @@
 
         function isPortraitLikePhoto(url) {
             return /\/people\/|portrait|headshot|avatar|人物|人像/i.test(String(url || ''));
+        }
+
+        function isPortraitLikeMedia(vm, url) {
+            const value = String(url || '');
+            if (!value) return false;
+            if (isPortraitLikePhoto(value)) return true;
+            const meta = getConfiguredImageMeta(vm, value);
+            const metaText = [
+                meta && meta.caption,
+                meta && meta.subcaption,
+                meta && meta.usage
+            ].filter(Boolean).join(' ');
+            return /portrait|person|figure photo|researcher photo|historical figure|人物|人像|肖像/i.test(metaText);
         }
 
         function isDocumentLikePhoto(url) {
@@ -9724,10 +9995,9 @@
             refs.benchHeroVisual.innerHTML = [...items, ...placeholders].map(buildBenchVisualCard).join('');
         }
 
-        function renderBenchDemo(vm) {
-            const raw = vm.raw || {};
+        function buildAchievementDemoVisualHtml(raw, options = {}) {
             const visual = getAchievementVisual(raw);
-            const steps = getAchievementRelatedItems(raw);
+            if (!visual) return '';
             const visualBuilders = {
                 transcript: () => buildTranscriptDemo(raw),
                 eval: buildEvalDemo,
@@ -9805,7 +10075,14 @@
                 dbscan: buildDbscanDemo,
                 spectral: buildSpectralDemo
             };
-            const visualHtml = visualBuilders[visual] ? visualBuilders[visual]() : buildGenericDemo(raw);
+            if (visualBuilders[visual]) return visualBuilders[visual]();
+            return options.allowGeneric ? buildGenericDemo(raw) : '';
+        }
+
+        function renderBenchDemo(vm) {
+            const raw = vm.raw || {};
+            const steps = getAchievementRelatedItems(raw);
+            const visualHtml = buildAchievementDemoVisualHtml(raw, { allowGeneric: true });
             const useSourcePanel = getAchievementDemoPanel(raw) === 'sources';
 
             const stepHtml = useSourcePanel
@@ -10041,6 +10318,13 @@
             return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(String(url || ''));
         }
 
+        function getUiMediaVisualImage(vm) {
+            const images = getUiDetailImages(vm);
+            const diagram = images.find((url) => isDiagramImage(url));
+            if (diagram) return diagram;
+            return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
+        }
+
         const UI_MAP_DOT_GRID = {
             columns: 45,
             rows: 23,
@@ -10218,7 +10502,7 @@
             }).join('');
         }
 
-        const UI_MAP_CALLOUT_TOP_LIMIT = 12;
+        const UI_MAP_CALLOUT_TOP_LIMIT = 0;
         const UI_MAP_CALLOUT_BOTTOM_LIMIT = 21;
         const UI_MAP_CALLOUT_TOTAL_LIMIT = UI_MAP_CALLOUT_TOP_LIMIT + UI_MAP_CALLOUT_BOTTOM_LIMIT;
         const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
@@ -10314,7 +10598,16 @@
                 const start = getElementCenterRelativeTo(dotsByLocationKey.get(locationKey) || pinsByEventId.get(eventId), panelRect);
                 const end = getElementCenterRelativeTo(callout.querySelector('.ui-map-callout-dot'), panelRect);
                 if (!start || !end) return '';
-                return `<path class="ui-map-callout-line" d="M ${start.x.toFixed(1)} ${start.y.toFixed(1)} L ${end.x.toFixed(1)} ${end.y.toFixed(1)}"></path>`;
+                const dx = end.x - start.x;
+                const dy = end.y - start.y;
+                const length = Math.hypot(dx, dy);
+                const bend = Math.min(126, Math.max(46, length * 0.22));
+                const normalX = length ? -dy / length : 0;
+                const normalY = length ? dx / length : -1;
+                const side = end.x < start.x ? -1 : 1;
+                const controlX = start.x + dx * 0.52 + normalX * bend * side;
+                const controlY = start.y + dy * 0.52 + normalY * bend * side;
+                return `<path class="ui-map-callout-line" d="M ${start.x.toFixed(1)} ${start.y.toFixed(1)} Q ${controlX.toFixed(1)} ${controlY.toFixed(1)} ${end.x.toFixed(1)} ${end.y.toFixed(1)}"></path>`;
             }).join('');
 
             svg.setAttribute('viewBox', `0 0 ${Math.max(1, panelRect.width).toFixed(1)} ${Math.max(1, panelRect.height).toFixed(1)}`);
@@ -10506,6 +10799,27 @@
                 || track.querySelector('.ui-year-tick.highlight')
                 || track.querySelector('.ui-year-tick');
             scrollElementIntoHorizontalCenter(track, activeTick, behavior);
+            requestAnimationFrame(updateUiTimelineNavState);
+        }
+
+        function updateUiTimelineNavState() {
+            const track = refs.uiBrowserTimeline.querySelector('.ui-year-track');
+            const prevButton = refs.uiBrowserTimeline.querySelector('[data-ui-timeline-nav="prev"]');
+            const nextButton = refs.uiBrowserTimeline.querySelector('[data-ui-timeline-nav="next"]');
+            if (!track || !prevButton || !nextButton) return;
+            const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+            prevButton.disabled = track.scrollLeft <= 1;
+            nextButton.disabled = track.scrollLeft >= maxScroll - 1;
+        }
+
+        function scrollUiTimeline(direction) {
+            const track = refs.uiBrowserTimeline.querySelector('.ui-year-track');
+            if (!track) return;
+            const delta = Math.max(track.clientWidth * 0.62, 360);
+            track.scrollBy({
+                left: direction === 'prev' ? -delta : delta,
+                behavior: 'smooth'
+            });
         }
 
         function getUiEventCardAtScrollAnchor(eventList) {
@@ -10594,6 +10908,7 @@
                     <span>${escapeHtml(label)}</span>
                     <span>${escapeHtml(uiText(`${years.length} years`, `${years.length} 个年份`))}</span>
                 </div>
+                <button class="ui-timeline-nav prev" type="button" data-ui-timeline-nav="prev" aria-label="${escapeHtml(uiText('Previous years', '上一组年份'))}"></button>
                 <div class="ui-year-track" style="--ui-year-count:${years.length};">
                     ${years.map((year) => {
                         const active = Number(uiSelectedYear) === year ? ' active' : '';
@@ -10601,9 +10916,14 @@
                         return `<button class="ui-year-tick${active}${highlight}" type="button" data-year="${year}"><span>${year}</span></button>`;
                     }).join('')}
                 </div>
+                <button class="ui-timeline-nav next" type="button" data-ui-timeline-nav="next" aria-label="${escapeHtml(uiText('Next years', '下一组年份'))}"></button>
             `;
             const yearTrack = refs.uiBrowserTimeline.querySelector('.ui-year-track');
-            bindHorizontalDragScroll(yearTrack);
+            bindHorizontalDragScroll(yearTrack, { onDrag: updateUiTimelineNavState });
+            yearTrack.addEventListener('scroll', updateUiTimelineNavState, { passive: true });
+            refs.uiBrowserTimeline.querySelectorAll('[data-ui-timeline-nav]').forEach((button) => {
+                button.addEventListener('click', () => scrollUiTimeline(button.dataset.uiTimelineNav));
+            });
             refs.uiBrowserTimeline.querySelectorAll('.ui-year-tick').forEach((button) => {
                 button.addEventListener('click', () => {
                     uiBrowserMode = 'year';
@@ -10614,6 +10934,7 @@
                     renderPage(currentIndex);
                 });
             });
+            updateUiTimelineNavState();
             requestAnimationFrame(() => syncUiTimelineToSelectedYear('auto'));
         }
 
@@ -10630,7 +10951,7 @@
                 ? getUiContinentLabel(uiSelectedContinent)
                 : String(uiSelectedYear || '');
             refs.uiBrowserMain.innerHTML = `
-                <div class="ui-level-one ${uiBrowserMode === 'region' ? 'is-region-mode' : 'is-year-mode'}">
+                <div class="ui-level-one ${uiBrowserMode === 'region' ? 'is-region-mode' : 'is-year-mode'}${events.length === 1 ? ' is-single-event' : ''}">
                     ${buildUiLevelOneMap(events, activeLabel, continentCounts)}
                     <section class="ui-event-panel">
                         <div class="ui-event-panel-heading">
@@ -10693,16 +11014,61 @@
 
         function buildUiSourcesHtml(raw, vm) {
             const sources = getAchievementSources(raw).slice(0, 5);
-            if (!sources.length) {
-                const fallback = stripHtml((vm && (vm.descriptionHtml || vm.descriptionText)) || '').slice(0, 92) || tx('noAdditionalInfo');
-                return `<article class="ui-source-card"><div class="ui-source-url">${escapeHtml(fallback)}</div></article>`;
-            }
             return sources.map((source) => `
                 <a class="ui-source-card" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">
                     <span class="ui-source-label">${escapeHtml(lx(source.label) || source.url)}</span>
                     <span class="ui-source-url">${escapeHtml(lx(source.type) || source.url)}</span>
                 </a>
             `).join('');
+        }
+
+        function bindUiSidePanelScrollProgress(panel) {
+            if (!panel) return;
+            let frame = 0;
+            const update = () => {
+                frame = 0;
+                const maxScroll = Math.max(0, panel.scrollHeight - panel.clientHeight);
+                const progress = maxScroll <= 1
+                    ? 1
+                    : Math.min(1, Math.max(0, (panel.scrollTop + panel.clientHeight) / panel.scrollHeight));
+                panel.style.setProperty('--ui-side-progress', progress.toFixed(4));
+            };
+            const requestUpdate = () => {
+                if (frame) return;
+                frame = window.requestAnimationFrame(update);
+            };
+            panel.addEventListener('scroll', requestUpdate, { passive: true });
+            window.addEventListener('resize', requestUpdate);
+            update();
+            window.setTimeout(update, 80);
+            window.setTimeout(update, 320);
+        }
+
+        function buildUiConceptFeatureCardsHtml(sections, options = {}) {
+            const hideChip = Boolean(options.hideChip);
+            const items = (sections || []).filter((section) => section && (section.text || section.label || section.title));
+            if (!items.length) return '';
+            return `
+                <div class="ui-concept-feature-grid">
+                    ${items.slice(0, 4).map((concept, index) => {
+                        const defaultChip = uiText(`Concept ${index + 1}`, `关键概念 ${index + 1}`);
+                        const label = concept.label || concept.title || tx('contentInterpretation');
+                        const chip = concept.chip || defaultChip;
+                        const text = concept.text || tx('noAdditionalInfo');
+                        return `
+                            <article class="ui-concept-card ui-concept-feature-card">
+                                ${hideChip ? '' : `<span class="ui-concept-feature-label">${escapeHtml(chip)}</span>`}
+                                <span class="ui-concept-feature-title">${escapeHtml(label)}</span>
+                                <span class="ui-concept-feature-text">${escapeHtml(text)}</span>
+                            </article>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        function getUiFallbackConceptSections(raw) {
+            return getAchievementKeyConcepts(raw);
         }
 
         function buildUiMediaHtml(vm) {
@@ -10717,37 +11083,101 @@
                             <span>00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}</span>
                         </span>
                     </button>
-                    ${buildRightCommentarySections(vm).slice(0, 2).map((section) => `
-                        <article class="ui-concept-card">
-                            <span class="ui-concept-chip">${escapeHtml(section.label || tx('contentInterpretation'))}</span>
-                            <span class="ui-concept-text">${buildCommentaryBodyHtml(section)}</span>
-                        </article>
-                    `).join('')}
                 `;
             }
 
+            const imageUrl = getUiMediaVisualImage(vm);
+            if (imageUrl) {
+                const meta = buildArchivePhotoMeta(vm, imageUrl);
+                return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
+            }
+
+            const fallbackConceptHtml = buildUiConceptFeatureCardsHtml(getUiFallbackConceptSections(raw));
+            if (fallbackConceptHtml) {
+                return fallbackConceptHtml;
+            }
+
+            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
+            if (stripHtml(demoVisualHtml)) {
+                return `
+                    <div class="ui-side-demo-visual">
+                        ${demoVisualHtml}
+                        <div class="ui-side-visual-caption">${escapeHtml(getAchievementField(raw, 'demo', getAchievementField(raw, 'artifact', tx('archiveImage'))))}</div>
+                    </div>
+                `;
+            }
+
+            return '';
+        }
+
+        function buildUiConceptsHtml(vm) {
+            const raw = vm.raw || {};
             const concepts = getAchievementKeyConcepts(raw);
-            const sections = concepts.length ? concepts : buildRightCommentarySections(vm).slice(0, 3).map((section) => ({
-                chip: section.label || tx('contentInterpretation'),
-                label: section.label || tx('contentInterpretation'),
-                text: section.text || stripHtml(section.html || '')
-            }));
-            const visual = buildBenchVisualItems(vm).find((item) => item && item.type === 'image' && isDiagramImage(item.url));
-            const visualHtml = visual
-                ? `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(visual.url)}" alt="${escapeHtml(visual.title || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(visual.title || visual.description || tx('archiveImage'))}</div></div>`
-                : '';
+            return buildUiConceptFeatureCardsHtml(concepts, { hideChip: true });
+        }
+
+        function getUiQuoteSummarySection(vm) {
+            const quote = stripHtml(vm && vm.quoteHtml ? vm.quoteHtml : '');
+            if (!quote) return null;
+            const attribution = stripHtml(vm && vm.quotePage ? vm.quotePage : '');
+            return {
+                label: tx('quoteExcerpt'),
+                text: attribution ? `${quote}\n${tx('source')}：${attribution}` : quote
+            };
+        }
+
+        function getUiBackgroundSections(vm) {
+            const quoteLabel = tx('quoteExcerpt');
+            const sections = Array.isArray(vm && vm.commentarySections)
+                ? vm.commentarySections.filter((section) => {
+                    if (!stripHtml(section && section.html)) return false;
+                    return String(section.label || '') !== quoteLabel;
+                })
+                : [];
+            if (sections.length) {
+                return sections.slice(0, 4).map((section) => ({
+                    label: section.label || tx('background'),
+                    text: stripHtml(section.html || ''),
+                    link: section.link || null
+                })).filter((section) => section.text);
+            }
+
+            const description = stripHtml(vm && (vm.descriptionHtml || vm.descriptionText));
+            return description ? [{ label: tx('background'), text: description }] : [];
+        }
+
+        function buildUiSectionCardsHtml(sections, options = {}) {
+            const hiddenLabels = new Set((options.hiddenLabels || []).filter(Boolean));
+            return sections.map((section) => `
+                <article class="ui-concept-card">
+                    ${hiddenLabels.has(section.label) ? '' : `<span class="ui-concept-chip">${escapeHtml(section.label || tx('contentInterpretation'))}</span>`}
+                    <span class="ui-concept-text">${buildCommentaryBodyHtml(section)}</span>
+                </article>
+            `).join('');
+        }
+
+        function buildUiSideSectionHtml(className, heading, bodyHtml) {
+            const html = String(bodyHtml || '').trim();
+            if (!html) return '';
             return `
-                ${visualHtml}
-                <div class="ui-explainer-grid">
-                    ${sections.slice(0, 4).map((concept, index) => `
-                        <article class="ui-concept-card">
-                            <span class="ui-concept-chip">${escapeHtml(concept.chip || uiText(`Concept ${index + 1}`, `关键概念 ${index + 1}`))}</span>
-                            <span class="ui-concept-title">${escapeHtml(concept.label || concept.title || tx('contentInterpretation'))}</span>
-                            <span class="ui-concept-text">${escapeHtml(concept.text || tx('noAdditionalInfo'))}</span>
-                        </article>
-                    `).join('')}
-                </div>
+                <section class="${className}">
+                    <div class="ui-section-kicker">${escapeHtml(heading)}</div>
+                    ${html}
+                </section>
             `;
+        }
+
+        function buildUiSidePanelHtml(raw, vm) {
+            const quoteSection = getUiQuoteSummarySection(vm);
+            const mediaHtml = buildUiMediaHtml(vm);
+            const mediaUsesConceptFallback = Boolean(mediaHtml && !vm.videoEmbedUrl && !mediaHtml.includes('ui-side-visual') && !mediaHtml.includes('ui-side-demo-visual'));
+            return [
+                buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
+                buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
+                mediaUsesConceptFallback ? '' : buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
+                buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
+                buildUiSideSectionHtml('ui-commentary-card', uiText('Background', '背景解读'), buildUiSectionCardsHtml(getUiBackgroundSections(vm), { hiddenLabels: [tx('background')] }))
+            ].join('');
         }
 
         function setUiDetailImageIndex(nextImageIndex, imageCount) {
@@ -10900,11 +11330,13 @@
             const title = vm.title || tx('aiHistoryEvent');
             const detailImageClass = isDiagramImage(imageUrl) ? ' is-diagram' : '';
             const yearText = String(vm.year || '');
-            const detailYearText = yearText.replace(/\s*\/\s*/g, '\n');
-            const detailYearClass = /[\n/-]/.test(detailYearText) ? ' is-multiline' : '';
-            const mediaTitle = vm.videoEmbedUrl
-                ? uiText('Commentary & Media', '评论与媒体')
-                : uiText('Key Concepts', '关键概念');
+            const detailYearText = yearText.replace(/\s*\/\s*/g, ' / ');
+            const detailYearClass = detailYearText.length > 10 ? ' is-multiline' : '';
+            const longYearClass = getUiDetailLongYearClass(detailYearText);
+            const locationLine = buildLocationLine(vm.location);
+            const detailHeadingClass = shouldOffsetUiDetailHeading(detailYearText, vm.location)
+                ? ' is-location-overlap-risk'
+                : '';
             const imageCaptionTitle = imageMeta.name || title;
             const imageCaptionDetail = imageMeta.role || '';
             refs.uiBrowserMain.innerHTML = `
@@ -10912,7 +11344,7 @@
                     <section class="ui-detail-panel">
                         <button class="ui-back-button" type="button" data-ui-back="true" tabindex="-1" aria-hidden="true">${escapeHtml(uiText('Back', '返回'))}</button>
                         <div class="ui-detail-left">
-                            <div class="ui-detail-hero">
+                            <div class="ui-detail-hero${longYearClass}">
                                 <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
                                 <div class="ui-detail-place">${buildLocationHtml(vm.location)}</div>
                                 <div class="ui-avatar-strip">${buildUiAvatarHtml(vm)}</div>
@@ -10929,22 +11361,15 @@
                             </div>
                         </div>
                         <div class="ui-detail-center">
-                            <div class="ui-detail-heading">
+                            <div class="ui-detail-heading${detailHeadingClass}${longYearClass}">
                                 <div class="ui-detail-title">${escapeHtml(title)}</div>
-                                <div class="ui-detail-meta-inline">${escapeHtml([buildLocationLine(vm.location), getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
+                                <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                             </div>
                             <div class="ui-detail-description">${buildSummaryHtml(vm)}</div>
                         </div>
                     </section>
                     <aside class="ui-side-panel">
-                        <section class="ui-info-card">
-                            <div class="ui-section-kicker">${escapeHtml(uiText('Sources', '资料来源'))}</div>
-                            ${buildUiSourcesHtml(raw, vm)}
-                        </section>
-                        <section class="ui-media-card">
-                            <div class="ui-section-kicker">${escapeHtml(mediaTitle)}</div>
-                            ${buildUiMediaHtml(vm)}
-                        </section>
+                        ${buildUiSidePanelHtml(raw, vm)}
                     </aside>
                 </div>
             `;
@@ -10972,6 +11397,7 @@
                 }, { once: true });
             });
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
+            bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
         }
 
         function renderUiBrowser() {

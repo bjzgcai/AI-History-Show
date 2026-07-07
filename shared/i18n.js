@@ -169,7 +169,7 @@
         const modeChip = global.document.querySelector('.mode-chip');
         if (modeChip && modeChip.parentNode) {
             button.classList.add('topbar-language-toggle');
-            modeChip.parentNode.insertBefore(button, modeChip);
+            modeChip.parentNode.insertBefore(button, modeChip.nextSibling);
         } else {
             button.style.cssText = [
                 'position:fixed',
