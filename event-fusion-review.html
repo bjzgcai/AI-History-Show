@@ -1,0 +1,1358 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>事件融合数据审阅</title>
+<style>
+  :root { color-scheme: dark; --bg:#0b0d10; --panel:#15191f; --panel2:#10141a; --text:#edf2f7; --muted:#9aa6b2; --line:#2b3440; --orange:#ff8a3d; --green:#62d26f; --red:#ff6b6b; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.65 -apple-system,BlinkMacSystemFont,"OPPO Sans",Segoe UI,sans-serif; }
+  a { color:#7cc7ff; word-break: break-all; }
+  code { display:block; color:#a8b3bf; font-size:12px; white-space:normal; word-break:break-all; }
+  .page-head { position:sticky; top:0; z-index:5; padding:20px 28px; background:rgba(11,13,16,.94); border-bottom:1px solid var(--line); backdrop-filter: blur(10px); }
+  .page-head h1 { margin:0 0 6px; font-size:26px; }
+  .page-head p { margin:0; color:var(--muted); }
+  .toc { display:flex; gap:8px; flex-wrap:wrap; padding-top:14px; }
+  .toc a { text-decoration:none; color:var(--text); border:1px solid var(--line); border-radius:999px; padding:3px 10px; background:#111820; }
+  main { padding:24px 28px 60px; }
+  .fusion { margin:0 0 32px; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:var(--panel2); }
+  .fusion-head { display:flex; justify-content:space-between; gap:18px; align-items:flex-start; padding:18px 20px; border-bottom:1px solid var(--line); }
+  .fusion-head h2 { display:inline; margin:0 12px 0 0; font-size:22px; }
+  .fusion-head p { margin:4px 0 0; color:var(--muted); }
+  .index { color:var(--orange); font-weight:700; margin-right:12px; }
+  .badge { white-space:nowrap; border-radius:999px; padding:4px 10px; border:1px solid var(--line); }
+  .badge.ok { color:var(--green); border-color:rgba(98,210,111,.35); }
+  .badge.bad { color:var(--red); border-color:rgba(255,107,107,.35); }
+  .columns { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1px; background:var(--line); }
+  .column { background:var(--panel); padding:18px; min-width:0; }
+  .column.final { background:#171b1d; box-shadow: inset 4px 0 0 var(--orange); }
+  .column header { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; margin-bottom:14px; }
+  .column header span { font-size:18px; font-weight:700; }
+  .column h4 { margin:18px 0 8px; color:#ffd2b8; font-size:13px; letter-spacing:.03em; }
+  .column p { margin:0; color:#d9e1e8; }
+  .description { max-height:170px; overflow:auto; padding-right:4px; }
+  .metrics { display:grid; gap:8px; }
+  .metric { border:1px solid var(--line); border-radius:8px; padding:8px; background:#10161d; }
+  .metric span { display:block; color:var(--muted); font-size:12px; }
+  .metric strong { display:block; font-size:15px; }
+  .figures { display:grid; gap:8px; }
+  .figure { display:grid; grid-template-columns:42px minmax(0,1fr); gap:10px; align-items:center; border:1px solid var(--line); border-radius:8px; padding:8px; background:#10161d; }
+  .avatar { width:42px; height:42px; display:grid; place-items:center; overflow:hidden; border-radius:50%; background:#222b35; color:#fff; font-weight:700; font-size:12px; }
+  .avatar img { width:100%; height:100%; object-fit:cover; }
+  .figure small { display:block; color:var(--muted); }
+  .media-block a { display:block; margin:0 0 2px; }
+  .image-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+  figure { margin:0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:#0f141a; }
+  figure img { width:100%; height:128px; object-fit:contain; display:block; background:#090d12; }
+  figcaption { padding:6px; color:var(--muted); font-size:11px; word-break:break-all; }
+  figcaption b, figcaption span { display:block; font-weight:400; }
+  .sources { padding-left:20px; margin:0; }
+  .sources li { margin-bottom:8px; }
+  .sources span { display:inline-block; color:var(--orange); margin-right:6px; }
+  .concepts, .sections { display:grid; gap:8px; }
+  .concepts div, .sections div { border:1px solid var(--line); border-radius:8px; padding:9px; background:#10161d; }
+  .concepts b, .sections b { display:block; color:#fff; margin-bottom:4px; }
+  .empty { color:var(--muted); font-style:italic; }
+  @media (max-width: 1200px) { .columns { grid-template-columns:1fr; } .page-head { position:static; } }
+</style>
+</head>
+<body>
+<header class="page-head">
+  <h1>事件融合数据审阅</h1>
+  <p>左侧为深度学习分支原始数据，中间为 AI100 原始数据，右侧为当前生成后的最终融合数据。生成时间：2026/7/8 11:44:13</p>
+  <nav class="toc"><a href="#1957-perceptron">01 1957-perceptron</a><a href="#1989-cnn">02 1989-cnn</a><a href="#1997-lstm">03 1997-lstm</a><a href="#2012-alexnet">04 2012-alexnet</a><a href="#2014-gan">05 2014-gan</a><a href="#2014-attention">06 2014-attention</a><a href="#2015-resnet">07 2015-resnet</a><a href="#2016-densenet">08 2016-densenet</a><a href="#2017-transformer">09 2017-transformer</a><a href="#2018-bert">10 2018-bert</a><a href="#2018-gpt">11 2018-gpt</a><a href="#2020-alphafold">12 2020-alphafold</a></nav>
+</header>
+<main><section class="fusion" id="1957-perceptron">
+    <div class="fusion-head">
+      <div><span class="index">01</span><h2>感知机与连接主义</h2><p>1957-perceptron · 1957-perceptron ↔ 1958-rosenblatt-perceptron</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>1957-perceptron</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1957</strong></div>
+      <div class="metric"><span>标题</span><strong>感知机与连接主义</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>康奈尔大学 / 美国, 纽约州</p>
+    <h4>正文描述</h4><p class="description">1957年，罗森布拉特设计了第一个人工神经网络（感知机），可以模拟人类大脑的思考过程。这是人工神经网络的首个物理实现，也是连接主义的代表性工作。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/frank-rosenblatt.png" alt="弗兰克·罗森布拉特" style="transform: scale(1.18); transform-origin: 44% 38%;"></div>
+      <div><b>弗兰克·罗森布拉特</b><small>感知机发明者</small><code>resources/images/figures/frank-rosenblatt.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (5)</h4><div class="image-grid"><figure>
+      <img src="resources/images/1957-perceptron/people/1957-perceptron_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/people/1957-perceptron_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png</b><span>论文页面 · 《感知机：大脑中信息存储与组织的概率模型》</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg</b><span>历史照片 · 感知机与连接主义</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png</b><span>历史照片 · 感知机与连接主义</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">这一理论在生物物理学和心理学之间架起了一座桥梁。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>1958-rosenblatt-perceptron</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1957</strong></div>
+      <div class="metric"><span>标题</span><strong>罗森布拉特 感知机</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>康奈尔航空实验室 / 美国纽约州</p>
+    <h4>正文描述</h4><p class="description">罗森布拉特 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/frank-rosenblatt.png" alt="弗兰克·罗森布拉特" style="transform: scale(1.18); transform-origin: 44% 38%;"></div>
+      <div><b>弗兰克·罗森布拉特</b><small>感知机发明者</small><code>resources/images/figures/frank-rosenblatt.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg</b><span>弗兰克·罗森布拉特 与感知机硬件 · 康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。 · 康奈尔大学 Chronicle</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg</b><span>阈值学习边界 · 罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。 · Psychological Review</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg</b><span>传感器网格到神经元 · 罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。 · Psychological Review</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (3)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1037/h0042519" target="_blank" rel="noreferrer">感知机：大脑中信息存储与组织的概率模型</a><code>https://doi.org/10.1037/h0042519</code></li><li><span>历史资料</span><a href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon" target="_blank" rel="noreferrer">康奈尔大学 Chronicle perceptron retrospective</a><code>https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon</code></li><li><span>博物馆</span><a href="https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414" target="_blank" rel="noreferrer">Smithsonian Mark I Perceptron object record</a><code>https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414</code></li></ol>
+    <h4>关键概念 (3)</h4><div class="concepts"><div><b>阈值单元</b><p>类似神经元的单元在加权和越过边界时输出一个类别。</p></div><div><b>权重更新</b><p>错误会改变权重，使未来预测更好。</p></div><div><b>线性可分</b><p>单个感知机只有在直线边界可分时才成功。</p></div></div>
+    <h4>引言摘要</h4><p class="description">线性阈值学习机</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>1957-perceptron</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1957</strong></div>
+      <div class="metric"><span>标题</span><strong>感知机与连接主义</strong></div>
+      <div class="metric"><span>canonical</span><strong>1957-perceptron</strong></div>
+    </div>
+    <h4>地点</h4><p>康奈尔航空实验室 / 美国纽约州</p>
+    <h4>正文描述</h4><p class="description">1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/frank-rosenblatt.png" alt="弗兰克·罗森布拉特" style="transform: scale(1.18); transform-origin: 44% 38%;"></div>
+      <div><b>弗兰克·罗森布拉特</b><small>感知机发明者</small><code>resources/images/figures/frank-rosenblatt.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (7)</h4><div class="image-grid"><figure>
+      <img src="resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg</b><span>弗兰克·罗森布拉特 与感知机硬件 · 康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。 · 康奈尔大学 Chronicle</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg</b><span>阈值学习边界 · 罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。 · Psychological Review</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg</b><span>传感器网格到神经元 · 罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。 · Psychological Review</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png</b><span>论文页面 · 《感知机：大脑中信息存储与组织的概率模型》</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg</b><span>历史照片 · 感知机与连接主义</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png</b><span>历史照片 · 感知机与连接主义</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (3)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1037/h0042519" target="_blank" rel="noreferrer">感知机：大脑中信息存储与组织的概率模型</a><code>https://doi.org/10.1037/h0042519</code></li><li><span>历史资料</span><a href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon" target="_blank" rel="noreferrer">康奈尔大学 Chronicle perceptron retrospective</a><code>https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon</code></li><li><span>博物馆</span><a href="https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414" target="_blank" rel="noreferrer">Smithsonian Mark I Perceptron object record</a><code>https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414</code></li></ol>
+    <h4>关键概念 (3)</h4><div class="concepts"><div><b>阈值单元</b><p>类似神经元的单元在加权和越过边界时输出一个类别。</p></div><div><b>权重更新</b><p>错误会改变权重，使未来预测更好。</p></div><div><b>线性可分</b><p>单个感知机只有在直线边界可分时才成功。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="1989-cnn">
+    <div class="fusion-head">
+      <div><span class="index">02</span><h2>卷积神经网络与 LeNet</h2><p>1989-cnn · 1989-cnn ↔ ai100-1989-lenet</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>1989-cnn</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1989</strong></div>
+      <div class="metric"><span>标题</span><strong>卷积神经网络</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>贝尔实验室 / 美国, 新泽西州</p>
+    <h4>正文描述</h4><p class="description">卷积神经网络的结构设计受生物机理启发 视觉皮质只对局部区域敏感，通过堆叠覆盖整个 视野；皮质细胞起到滤波器作用，适合利用自然 图像的强局部相关性 1989年， 勒昆将反向传播算法应用于训练卷积神经网络， 实现了手写数字识别（LeNet-5），从此卷积神经网络广泛进入大家的视野。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/1989-cnn/people/1989-cnn_people_02.jpg" alt="扬·勒昆" style="transform: scale(2.28); transform-origin: 52% 43%;"></div>
+      <div><b>扬·勒昆</b><small>CNN之父</small><code>resources/images/1989-cnn/people/1989-cnn_people_02.jpg</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/1989-cnn/people/1989-cnn_people_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1989-cnn/people/1989-cnn_people_01.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1989-cnn/people/1989-cnn_people_02.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1989-cnn/people/1989-cnn_people_02.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg</b><span>结构示意 · 卷积神经网络 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-1989-lenet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1989</strong></div>
+      <div class="metric"><span>标题</span><strong>LeNet</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>贝尔实验室 / 美国新泽西州</p>
+    <h4>正文描述</h4><p class="description">扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/1989-cnn/people/1989-cnn_people_02.jpg" alt="扬·勒昆" style="transform: scale(2.28); transform-origin: 52% 43%;"></div>
+      <div><b>扬·勒昆</b><small>LeNet 主要研究者</small><code>resources/images/1989-cnn/people/1989-cnn_people_02.jpg</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg" loading="lazy" alt="">
+      <figcaption><b>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg</b><span>扬·勒昆肖像 · LeNet 主要研究者 · 维基共享资源</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg</b><span>邮编 CNN 流程 · 关于 LeNet 式识别的本地原创解释图。 · Neural Computation</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1162/neco.1989.1.4.541" target="_blank" rel="noreferrer">《反向传播应用于手写邮编识别》</a><code>https://doi.org/10.1162/neco.1989.1.4.541</code></li><li><span>项目</span><a href="https://yann.lecun.com/exdb/lenet/" target="_blank" rel="noreferrer">LeNet-5 演示与文档</a><code>https://yann.lecun.com/exdb/lenet/</code></li><li><span>论文</span><a href="https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf" target="_blank" rel="noreferrer">《基于梯度的文档识别学习》</a><code>https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf</code></li><li><span>人物</span><a href="https://yann.lecun.com/" target="_blank" rel="noreferrer">扬·勒昆主页</a><code>https://yann.lecun.com/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>权重共享</b><p>相同滤波器在整张图像上扫描。</p></div><div><b>端到端学习</b><p>特征提取和分类一起训练。</p></div></div>
+    <h4>引言摘要</h4><p class="description">反向传播应用于手写邮编识别</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>1989-cnn</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1989</strong></div>
+      <div class="metric"><span>标题</span><strong>卷积神经网络与 LeNet</strong></div>
+      <div class="metric"><span>canonical</span><strong>1989-cnn</strong></div>
+    </div>
+    <h4>地点</h4><p>贝尔实验室 / 美国新泽西州</p>
+    <h4>正文描述</h4><p class="description">1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/1989-cnn/people/1989-cnn_people_02.jpg" alt="扬·勒昆" style="transform: scale(2.28); transform-origin: 52% 43%;"></div>
+      <div><b>扬·勒昆</b><small>LeNet 主要研究者</small><code>resources/images/1989-cnn/people/1989-cnn_people_02.jpg</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (5)</h4><div class="image-grid"><figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg" loading="lazy" alt="">
+      <figcaption><b>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg</b><span>扬·勒昆肖像 · LeNet 主要研究者 · 维基共享资源</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg</b><span>邮编 CNN 流程 · 关于 LeNet 式识别的本地原创解释图。 · Neural Computation</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1989-cnn/people/1989-cnn_people_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1989-cnn/people/1989-cnn_people_01.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1989-cnn/people/1989-cnn_people_02.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1989-cnn/people/1989-cnn_people_02.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg</b><span>结构示意 · 卷积神经网络 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1162/neco.1989.1.4.541" target="_blank" rel="noreferrer">《反向传播应用于手写邮编识别》</a><code>https://doi.org/10.1162/neco.1989.1.4.541</code></li><li><span>项目</span><a href="https://yann.lecun.com/exdb/lenet/" target="_blank" rel="noreferrer">LeNet-5 演示与文档</a><code>https://yann.lecun.com/exdb/lenet/</code></li><li><span>论文</span><a href="https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf" target="_blank" rel="noreferrer">《基于梯度的文档识别学习》</a><code>https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf</code></li><li><span>人物</span><a href="https://yann.lecun.com/" target="_blank" rel="noreferrer">扬·勒昆主页</a><code>https://yann.lecun.com/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>权重共享</b><p>相同滤波器在整张图像上扫描。</p></div><div><b>端到端学习</b><p>特征提取和分类一起训练。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="1997-lstm">
+    <div class="fusion-head">
+      <div><span class="index">03</span><h2>LSTM 与门控记忆</h2><p>1997-lstm · 1997-lstm ↔ ai100-1997-lstm</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>1997-lstm</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1997</strong></div>
+      <div class="metric"><span>标题</span><strong>LSTM与门控机制</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>慕尼黑工业大学 / 德国, 巴伐利亚州</p>
+    <h4>正文描述</h4><p class="description">1997年，霍赫赖特与施密德胡伯提出了长短期记忆网络（LSTM），通过引入门控机制 保持长距离信息流，用以解决RNN的梯度消失困境。 导数：与遗忘门Ft有关，接近于1</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/sepp-hochreiter.jpg" alt="塞普·霍赫赖特" style=""></div>
+      <div><b>塞普·霍赫赖特</b><small>LSTM发明者</small><code>resources/images/figures/sepp-hochreiter.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/1997-lstm/people/1997-lstm_people_01.png" alt="于尔根·施密德胡伯" style="transform: scale(1.08); transform-origin: 50% 42%;"></div>
+      <div><b>于尔根·施密德胡伯</b><small>LSTM共同发明者</small><code>resources/images/1997-lstm/people/1997-lstm_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg</b><span>结构示意 · LSTM与门控机制 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png</b><span>结构示意 · LSTM与门控机制 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1997-lstm/people/1997-lstm_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1997-lstm/people/1997-lstm_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-1997-lstm</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1997</strong></div>
+      <div class="metric"><span>标题</span><strong>长短期记忆网络</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>慕尼黑工业大学 / 德国慕尼黑</p>
+    <h4>正文描述</h4><p class="description">塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/sepp-hochreiter.jpg" alt="塞普·霍赫赖特" style=""></div>
+      <div><b>塞普·霍赫赖特</b><small>LSTM 共同作者</small><code>resources/images/figures/sepp-hochreiter.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar">尤尔根</div>
+      <div><b>尤尔根·施密德胡伯</b><small>LSTM 共同作者</small></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/sepp-hochreiter.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/sepp-hochreiter.jpg</b><span>塞普·霍赫赖特肖像 · LSTM 共同作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg</b><span>LSTM 门控记忆单元 · 关于门控序列记忆的本地原创解释图。 · 《Neural Computation》</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1162/neco.1997.9.8.1735" target="_blank" rel="noreferrer">《长短期记忆》</a><code>https://doi.org/10.1162/neco.1997.9.8.1735</code></li><li><span>论文 PDF</span><a href="https://www.bioinf.jku.at/publications/older/2604.pdf" target="_blank" rel="noreferrer">作者托管的 LSTM 论文 PDF</a><code>https://www.bioinf.jku.at/publications/older/2604.pdf</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/Long_short-term_memory" target="_blank" rel="noreferrer">LSTM 概览</a><code>https://en.wikipedia.org/wiki/Long_short-term_memory</code></li><li><span>人物</span><a href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/" target="_blank" rel="noreferrer">塞普·霍赫赖特个人资料</a><code>https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>记忆单元</b><p>持久状态携带序列信息。</p></div><div><b>门控机制</b><p>学习到的门决定写入、保留或输出哪些信息。</p></div></div>
+    <h4>引言摘要</h4><p class="description">长短期记忆</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>1997-lstm</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>1997</strong></div>
+      <div class="metric"><span>标题</span><strong>LSTM 与门控记忆</strong></div>
+      <div class="metric"><span>canonical</span><strong>1997-lstm</strong></div>
+    </div>
+    <h4>地点</h4><p>慕尼黑工业大学 / 德国慕尼黑</p>
+    <h4>正文描述</h4><p class="description">1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/sepp-hochreiter.jpg" alt="塞普·霍赫赖特" style=""></div>
+      <div><b>塞普·霍赫赖特</b><small>LSTM 共同作者</small><code>resources/images/figures/sepp-hochreiter.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/1997-lstm/people/1997-lstm_people_01.png" alt="尤尔根·施密德胡伯" style="transform: scale(1.08); transform-origin: 50% 42%;"></div>
+      <div><b>尤尔根·施密德胡伯</b><small>LSTM 共同作者</small><code>resources/images/1997-lstm/people/1997-lstm_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (5)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/sepp-hochreiter.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/sepp-hochreiter.jpg</b><span>塞普·霍赫赖特肖像 · LSTM 共同作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg</b><span>LSTM 门控记忆单元 · 关于门控序列记忆的本地原创解释图。 · 《Neural Computation》</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1997-lstm/people/1997-lstm_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1997-lstm/people/1997-lstm_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg</b><span>结构示意 · LSTM与门控机制 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png</b><span>结构示意 · LSTM与门控机制 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1162/neco.1997.9.8.1735" target="_blank" rel="noreferrer">《长短期记忆》</a><code>https://doi.org/10.1162/neco.1997.9.8.1735</code></li><li><span>论文 PDF</span><a href="https://www.bioinf.jku.at/publications/older/2604.pdf" target="_blank" rel="noreferrer">作者托管的 LSTM 论文 PDF</a><code>https://www.bioinf.jku.at/publications/older/2604.pdf</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/Long_short-term_memory" target="_blank" rel="noreferrer">LSTM 概览</a><code>https://en.wikipedia.org/wiki/Long_short-term_memory</code></li><li><span>人物</span><a href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/" target="_blank" rel="noreferrer">塞普·霍赫赖特个人资料</a><code>https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>记忆单元</b><p>持久状态携带序列信息。</p></div><div><b>门控机制</b><p>学习到的门决定写入、保留或输出哪些信息。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2012-alexnet">
+    <div class="fusion-head">
+      <div><span class="index">04</span><h2>AlexNet 与 ImageNet 突破</h2><p>2012-alexnet · 2012-alexnet ↔ ai100-2012-alexnet</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2012-alexnet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2012</strong></div>
+      <div class="metric"><span>标题</span><strong>ImageNet时代：AlexNet与深度学习爆发</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>多伦多大学 / 加拿大, 安大略省</p>
+    <h4>正文描述</h4><p class="description">2012-2014年，获得ImageNet冠军的AlexNet、VGG、GoogLeNet，其成功并非源于全新的算法（核心算法与20年前的LeNet并无多大差别），而是大数据（ImageNet）、大算力（GPU）和算法优化（ReLU, Dropout）的结合。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/historical/alex-krizhevsky-2013.png" alt="亚历克斯·克里热夫斯基" style="transform: scale(1.08); transform-origin: 50% 47%;"></div>
+      <div><b>亚历克斯·克里热夫斯基</b><small>AlexNet作者</small><code>resources/images/figures/historical/alex-krizhevsky-2013.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/geoffrey-hinton.jpg" alt="杰弗里·辛顿" style=""></div>
+      <div><b>杰弗里·辛顿</b><small>导师</small><code>resources/images/figures/geoffrey-hinton.jpg</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png</b><span>结构示意 · ImageNet时代：AlexNet与深度学习爆发 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png</b><span>结构示意 · ImageNet时代：AlexNet与深度学习爆发 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2012-alexnet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2012</strong></div>
+      <div class="metric"><span>标题</span><strong>AlexNet</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>多伦多大学 / 加拿大多伦多</p>
+    <h4>正文描述</h4><p class="description">AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/historical/alex-krizhevsky-2013.png" alt="亚历克斯·克里泽夫斯基" style="transform: scale(1.08); transform-origin: 50% 47%;"></div>
+      <div><b>亚历克斯·克里泽夫斯基</b><small>AlexNet 主要作者</small><code>resources/images/figures/historical/alex-krizhevsky-2013.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/geoffrey-hinton.jpg" alt="杰弗里·辛顿" style=""></div>
+      <div><b>杰弗里·辛顿</b><small>共同作者与导师</small><code>resources/images/figures/geoffrey-hinton.jpg</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/alex-krizhevsky.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/alex-krizhevsky.jpg</b><span>亚历克斯·克里泽夫斯基肖像 · AlexNet 主要作者。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png</b><span>AlexNet 架构 · 项目使用的架构图。 · 本地项目素材</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html" target="_blank" rel="noreferrer">《用深度卷积神经网络进行 ImageNet 分类》</a><code>https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html</code></li><li><span>论文 PDF</span><a href="https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" target="_blank" rel="noreferrer">NeurIPS 完整论文 PDF</a><code>https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</code></li><li><span>背景</span><a href="https://www.image-net.org/challenges/LSVRC/index.php" target="_blank" rel="noreferrer">ImageNet 大规模视觉识别挑战赛</a><code>https://www.image-net.org/challenges/LSVRC/index.php</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/AlexNet" target="_blank" rel="noreferrer">AlexNet 概览</a><code>https://en.wikipedia.org/wiki/AlexNet</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>GPU 规模化</b><p>并行 GPU 训练让更大的 CNN 变得可行。</p></div><div><b>ImageNet 突破</b><p>该模型大幅降低了 ILSVRC 分类错误率。</p></div></div>
+    <h4>引言摘要</h4><p class="description">使用深度卷积神经网络进行 ImageNet 分类</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2012-alexnet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2012</strong></div>
+      <div class="metric"><span>标题</span><strong>AlexNet 与 ImageNet 突破</strong></div>
+      <div class="metric"><span>canonical</span><strong>2012-alexnet</strong></div>
+    </div>
+    <h4>地点</h4><p>多伦多大学 / 加拿大多伦多</p>
+    <h4>正文描述</h4><p class="description">2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。</p>
+    <h4>任务/人物与头像 (3)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/historical/alex-krizhevsky-2013.png" alt="亚历克斯·克里热夫斯基" style="transform: scale(1.08); transform-origin: 50% 47%;"></div>
+      <div><b>亚历克斯·克里热夫斯基</b><small>AlexNet 主要作者</small><code>resources/images/figures/historical/alex-krizhevsky-2013.png</code></div>
+    </div><div class="figure">
+      <div class="avatar">伊利亚</div>
+      <div><b>伊利亚·苏茨克维</b><small>AlexNet 共同作者</small></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/geoffrey-hinton.jpg" alt="杰弗里·辛顿" style=""></div>
+      <div><b>杰弗里·辛顿</b><small>AlexNet 共同作者与导师</small><code>resources/images/figures/geoffrey-hinton.jpg</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (4)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/alex-krizhevsky.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/alex-krizhevsky.jpg</b><span>亚历克斯·克里泽夫斯基肖像 · AlexNet 主要作者。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png</b><span>AlexNet 架构 · 项目使用的架构图。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png</b><span>结构示意 · ImageNet时代：AlexNet与深度学习爆发 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html" target="_blank" rel="noreferrer">《用深度卷积神经网络进行 ImageNet 分类》</a><code>https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html</code></li><li><span>论文 PDF</span><a href="https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" target="_blank" rel="noreferrer">NeurIPS 完整论文 PDF</a><code>https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</code></li><li><span>背景</span><a href="https://www.image-net.org/challenges/LSVRC/index.php" target="_blank" rel="noreferrer">ImageNet 大规模视觉识别挑战赛</a><code>https://www.image-net.org/challenges/LSVRC/index.php</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/AlexNet" target="_blank" rel="noreferrer">AlexNet 概览</a><code>https://en.wikipedia.org/wiki/AlexNet</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>GPU 规模化</b><p>并行 GPU 训练让更大的 CNN 变得可行。</p></div><div><b>ImageNet 突破</b><p>该模型大幅降低了 ILSVRC 分类错误率。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2014-gan">
+    <div class="fusion-head">
+      <div><span class="index">05</span><h2>生成对抗网络</h2><p>2014-gan · 2014-gan ↔ ai100-2014-gan</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2014-gan</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2014</strong></div>
+      <div class="metric"><span>标题</span><strong>GAN（生成对抗网路）</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>蒙特利尔大学 / 加拿大, 魁北克省</p>
+    <h4>正文描述</h4><p class="description">2014 年古德费洛提出的 GAN，利用生成器与判别器的对抗博弈来学习数据分布，产生了很大的影响。 类似的思路早在1990年，就被施密德胡伯等人提出过：一个网络作为&quot;控制器&quot;尝试产生输出，另一个网络作为&quot;预测器&quot;尝试预测环境对这些输出的反应，二者进行博弈。不过当时的数据和算力稀缺，对抗模型无法生成高分辨率图像，并未受到重视。 古德费洛对自己没有引用这些早期工作，辩解称GAN的创新之处在于其特定损失函数的设计以及证明了该博弈过程可以收敛到全局最优解。然而，从历史的角度看，这仍是一个典型的&quot;流行即发明&quot;案例。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ian-goodfellow.jpg" alt="伊恩·古德费洛" style=""></div>
+      <div><b>伊恩·古德费洛</b><small>GAN发明者</small><code>resources/images/figures/ian-goodfellow.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2014-attention/people/2014-attention_people_01.png" alt="约书亚·本吉奥" style=""></div>
+      <div><b>约书亚·本吉奥</b><small>注意力机制提出者</small><code>resources/images/2014-attention/people/2014-attention_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (1)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2014-gan/architecture/2014-gan_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2014-gan/architecture/2014-gan_architecture_01.png</b><span>结构示意 · GAN（生成对抗网路） 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">我们提出一种通过对抗过程估计生成模型的新框架。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2014-gan</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2014</strong></div>
+      <div class="metric"><span>标题</span><strong>生成对抗网络</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>蒙特利尔大学 / 加拿大蒙特利尔</p>
+    <h4>正文描述</h4><p class="description">伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ian-goodfellow.jpg" alt="伊恩·古德费洛" style=""></div>
+      <div><b>伊恩·古德费洛</b><small>GAN 论文主要作者</small><code>resources/images/figures/ian-goodfellow.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2014-attention/people/2014-attention_people_01.png" alt="约书亚·本吉奥" style=""></div>
+      <div><b>约书亚·本吉奥</b><small>共同作者与导师</small><code>resources/images/2014-attention/people/2014-attention_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/ian-goodfellow.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/ian-goodfellow.jpg</b><span>伊恩·古德费洛肖像 · GAN 主要作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg</b><span>GAN 对抗循环 · 关于生成器-判别器训练的本地原创解释图。 · NeurIPS</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1406.2661" target="_blank" rel="noreferrer">《生成对抗网络》</a><code>https://arxiv.org/abs/1406.2661</code></li><li><span>会议论文</span><a href="https://papers.nips.cc/paper/5423-generative-adversarial-nets" target="_blank" rel="noreferrer">NeurIPS 论文页面</a><code>https://papers.nips.cc/paper/5423-generative-adversarial-nets</code></li><li><span>背景</span><a href="https://arxiv.org/abs/1701.00160" target="_blank" rel="noreferrer">古德费洛 GAN 教程</a><code>https://arxiv.org/abs/1701.00160</code></li><li><span>人物</span><a href="https://www.iangoodfellow.com/" target="_blank" rel="noreferrer">伊恩·古德费洛个人网站</a><code>https://www.iangoodfellow.com/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>生成器</b><p>模型把噪声映射为候选样本。</p></div><div><b>判别器</b><p>分类器提供对抗反馈。</p></div></div>
+    <h4>引言摘要</h4><p class="description">生成对抗网络</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2014-gan</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2014</strong></div>
+      <div class="metric"><span>标题</span><strong>生成对抗网络</strong></div>
+      <div class="metric"><span>canonical</span><strong>2014-gan</strong></div>
+    </div>
+    <h4>地点</h4><p>蒙特利尔大学 / 加拿大蒙特利尔</p>
+    <h4>正文描述</h4><p class="description">2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ian-goodfellow.jpg" alt="伊恩·古德费洛" style=""></div>
+      <div><b>伊恩·古德费洛</b><small>GAN 主要作者</small><code>resources/images/figures/ian-goodfellow.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2014-attention/people/2014-attention_people_01.png" alt="约书亚·本吉奥" style=""></div>
+      <div><b>约书亚·本吉奥</b><small>GAN 共同作者与导师</small><code>resources/images/2014-attention/people/2014-attention_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/ian-goodfellow.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/ian-goodfellow.jpg</b><span>伊恩·古德费洛肖像 · GAN 主要作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg</b><span>GAN 对抗循环 · 关于生成器-判别器训练的本地原创解释图。 · NeurIPS</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2014-gan/architecture/2014-gan_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2014-gan/architecture/2014-gan_architecture_01.png</b><span>结构示意 · GAN（生成对抗网路） 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1406.2661" target="_blank" rel="noreferrer">《生成对抗网络》</a><code>https://arxiv.org/abs/1406.2661</code></li><li><span>会议论文</span><a href="https://papers.nips.cc/paper/5423-generative-adversarial-nets" target="_blank" rel="noreferrer">NeurIPS 论文页面</a><code>https://papers.nips.cc/paper/5423-generative-adversarial-nets</code></li><li><span>背景</span><a href="https://arxiv.org/abs/1701.00160" target="_blank" rel="noreferrer">古德费洛 GAN 教程</a><code>https://arxiv.org/abs/1701.00160</code></li><li><span>人物</span><a href="https://www.iangoodfellow.com/" target="_blank" rel="noreferrer">伊恩·古德费洛个人网站</a><code>https://www.iangoodfellow.com/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>生成器</b><p>模型把噪声映射为候选样本。</p></div><div><b>判别器</b><p>分类器提供对抗反馈。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2014-attention">
+    <div class="fusion-head">
+      <div><span class="index">06</span><h2>带注意力机制的神经机器翻译</h2><p>2014-attention · 2014-attention ↔ ai100-2014-neural-machine-translation-attention</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2014-attention</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2014</strong></div>
+      <div class="metric"><span>标题</span><strong>自回归模型和注意力机制</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>蒙特利尔大学 / 加拿大, 魁北克省</p>
+    <h4>正文描述</h4><p class="description">2014年，本吉奥在《通过联合学习对齐与翻译的神经机器翻译》一文中，明确提出并命名注意力机制， 打破 Encoder–Decoder 自回归模型的信息瓶颈，帮助长句翻译质量飞跃。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ian-goodfellow.jpg" alt="伊恩·古德费洛" style=""></div>
+      <div><b>伊恩·古德费洛</b><small>GAN发明者</small><code>resources/images/figures/ian-goodfellow.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2014-attention/people/2014-attention_people_01.png" alt="约书亚·本吉奥" style=""></div>
+      <div><b>约书亚·本吉奥</b><small>注意力机制提出者</small><code>resources/images/2014-attention/people/2014-attention_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2014-attention/architecture/2014-attention_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2014-attention/architecture/2014-attention_architecture_01.png</b><span>结构示意 · 自回归模型和注意力机制 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2014-attention/people/2014-attention_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2014-attention/people/2014-attention_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2014-neural-machine-translation-attention</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2014</strong></div>
+      <div class="metric"><span>标题</span><strong>带注意力机制的神经机器翻译</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>蒙特利尔大学 / 加拿大蒙特利尔</p>
+    <h4>正文描述</h4><p class="description">兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2014-attention/people/2014-attention_people_01.png" alt="约书亚·本吉奥" style=""></div>
+      <div><b>约书亚·本吉奥</b><small>神经注意力论文共同作者</small><code>resources/images/2014-attention/people/2014-attention_people_01.png</code></div>
+    </div><div class="figure">
+      <div class="avatar">赵京贤</div>
+      <div><b>赵京贤</b><small>神经注意力论文共同作者</small></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/geoffrey-hinton.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/geoffrey-hinton.jpg</b><span>蒙特利尔深度学习研究背景图 · 神经注意力研究的机构背景 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg</b><span>注意力对齐图 · 关于源令牌注意力的本地原创解释图。 · ICLR</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1409.0473" target="_blank" rel="noreferrer">《通过联合学习对齐与翻译实现神经机器翻译》</a><code>https://arxiv.org/abs/1409.0473</code></li><li><span>会议论文</span><a href="https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html" target="_blank" rel="noreferrer">ICLR 2015 论文页面</a><code>https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/Attention_(machine_learning)" target="_blank" rel="noreferrer">注意力机制概览</a><code>https://en.wikipedia.org/wiki/Attention_(machine_learning)</code></li><li><span>人物</span><a href="https://mila.quebec/en/person/yoshua-bengio/" target="_blank" rel="noreferrer">约书亚·本吉奥 Mila 资料</a><code>https://mila.quebec/en/person/yoshua-bengio/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>对齐</b><p>模型学习目标词对应哪些源词。</p></div><div><b>上下文向量</b><p>加权源状态指导解码。</p></div></div>
+    <h4>引言摘要</h4><p class="description">通过联合学习对齐与翻译实现神经机器翻译</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2014-attention</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2014</strong></div>
+      <div class="metric"><span>标题</span><strong>带注意力机制的神经机器翻译</strong></div>
+      <div class="metric"><span>canonical</span><strong>2014-attention</strong></div>
+    </div>
+    <h4>地点</h4><p>蒙特利尔大学 / 加拿大蒙特利尔</p>
+    <h4>正文描述</h4><p class="description">2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>
+    <h4>任务/人物与头像 (3)</h4><div class="figures"><div class="figure">
+      <div class="avatar">兹米特</div>
+      <div><b>兹米特里·巴赫达瑙</b><small>神经注意力论文主要作者</small></div>
+    </div><div class="figure">
+      <div class="avatar">赵京贤</div>
+      <div><b>赵京贤</b><small>神经注意力论文共同作者</small></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2014-attention/people/2014-attention_people_01.png" alt="约书亚·本吉奥" style=""></div>
+      <div><b>约书亚·本吉奥</b><small>神经注意力论文共同作者</small><code>resources/images/2014-attention/people/2014-attention_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (4)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/geoffrey-hinton.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/geoffrey-hinton.jpg</b><span>蒙特利尔深度学习研究背景图 · 神经注意力研究的机构背景 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg</b><span>注意力对齐图 · 关于源令牌注意力的本地原创解释图。 · ICLR</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2014-attention/architecture/2014-attention_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2014-attention/architecture/2014-attention_architecture_01.png</b><span>结构示意 · 自回归模型和注意力机制 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2014-attention/people/2014-attention_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2014-attention/people/2014-attention_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1409.0473" target="_blank" rel="noreferrer">《通过联合学习对齐与翻译实现神经机器翻译》</a><code>https://arxiv.org/abs/1409.0473</code></li><li><span>会议论文</span><a href="https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html" target="_blank" rel="noreferrer">ICLR 2015 论文页面</a><code>https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/Attention_(machine_learning)" target="_blank" rel="noreferrer">注意力机制概览</a><code>https://en.wikipedia.org/wiki/Attention_(machine_learning)</code></li><li><span>人物</span><a href="https://mila.quebec/en/person/yoshua-bengio/" target="_blank" rel="noreferrer">约书亚·本吉奥 Mila 资料</a><code>https://mila.quebec/en/person/yoshua-bengio/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>对齐</b><p>模型学习目标词对应哪些源词。</p></div><div><b>上下文向量</b><p>加权源状态指导解码。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2015-resnet">
+    <div class="fusion-head">
+      <div><span class="index">07</span><h2>ResNet</h2><p>2015-resnet · 2015-resnet ↔ ai100-2015-resnet</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2015-resnet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2015</strong></div>
+      <div class="metric"><span>标题</span><strong>ResNet</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>微软研究院 / 中国, 北京</p>
+    <h4>正文描述</h4><p class="description">2015年，微软亚洲研究院的何恺明、张祥雨、任少卿、孙剑团队提出 ResNet，通过直接加 恒等 通路，&quot;简单粗暴&quot;但又非常有效地解决了梯度消失的问题。它网络结构简单，工程友好，后来成为了深度学习领域引用率最高的论文。 技术上，ResNet可以看做&quot;最优门控≈1&quot;的 高速网络。 2015年训练到152层 后来最多训练到1202层</p>
+    <h4>任务/人物与头像 (4)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_04.png" alt="何恺明" style=""></div>
+      <div><b>何恺明</b><small>ResNet第一作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_04.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_03.png" alt="张祥雨" style=""></div>
+      <div><b>张祥雨</b><small>ResNet共同作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_03.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_02.png" alt="任少卿" style=""></div>
+      <div><b>任少卿</b><small>ResNet共同作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_02.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_01.png" alt="孙剑" style=""></div>
+      <div><b>孙剑</b><small>ResNet通讯作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (6)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_04.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_04.png</b><span>何恺明 · ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_03.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_03.png</b><span>张祥雨 · ResNet 共同作者，曾任职旷视，现加入阶跃星辰</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_02.png</b><span>任少卿 · ResNet 共同作者，现任蔚来汽车研发副总裁</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_01.png</b><span>孙剑 · ResNet 通讯作者，原旷视科技首席科学家（1976-2022）</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png</b><span>结构示意 · ResNet 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png</b><span>结构示意 · ResNet 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">我们提出一种残差学习框架，以便训练比以前深得多的网络。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2015-resnet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2015</strong></div>
+      <div class="metric"><span>标题</span><strong>ResNet</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>微软亚洲研究院 / 中国北京</p>
+    <h4>正文描述</h4><p class="description">ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/kaiming-he.jpg" alt="何恺明" style=""></div>
+      <div><b>何恺明</b><small>ResNet 主要作者</small><code>resources/images/figures/kaiming-he.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/sun-jian.png" alt="孙剑" style=""></div>
+      <div><b>孙剑</b><small>ResNet 共同作者</small><code>resources/images/figures/sun-jian.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/kaiming-he.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/kaiming-he.jpg</b><span>何恺明肖像 · ResNet 主要作者。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png</b><span>残差模块 · 项目使用的架构图。 · 本地项目素材</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1512.03385" target="_blank" rel="noreferrer">《用于图像识别的深度残差学习》</a><code>https://arxiv.org/abs/1512.03385</code></li><li><span>会议论文</span><a href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html" target="_blank" rel="noreferrer">CVF 开放论文页面</a><code>https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html</code></li><li><span>论文 PDF</span><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf" target="_blank" rel="noreferrer">CVPR 完整论文 PDF</a><code>https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf</code></li><li><span>人物</span><a href="https://people.csail.mit.edu/kaiming/" target="_blank" rel="noreferrer">MIT CSAIL 的何恺明资料</a><code>https://people.csail.mit.edu/kaiming/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>捷径连接</b><p>输入可以绕过模块并被加回输出。</p></div><div><b>残差函数</b><p>网络学习特征变化，而不是完全替换特征。</p></div></div>
+    <h4>引言摘要</h4><p class="description">用于图像识别的深度残差学习</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2015-resnet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2015</strong></div>
+      <div class="metric"><span>标题</span><strong>ResNet</strong></div>
+      <div class="metric"><span>canonical</span><strong>2015-resnet</strong></div>
+    </div>
+    <h4>地点</h4><p>微软亚洲研究院 / 中国北京</p>
+    <h4>正文描述</h4><p class="description">2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>
+    <h4>任务/人物与头像 (4)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_04.png" alt="何恺明" style=""></div>
+      <div><b>何恺明</b><small>ResNet 第一作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_04.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_03.png" alt="张祥雨" style=""></div>
+      <div><b>张祥雨</b><small>ResNet 共同作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_03.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_02.png" alt="任少卿" style=""></div>
+      <div><b>任少卿</b><small>ResNet 共同作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_02.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2015-resnet/people/2015-resnet_people_01.png" alt="孙剑" style=""></div>
+      <div><b>孙剑</b><small>ResNet 共同作者与通讯作者</small><code>resources/images/2015-resnet/people/2015-resnet_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (7)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/kaiming-he.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/kaiming-he.jpg</b><span>何恺明肖像 · ResNet 主要作者。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png</b><span>残差模块 · 项目使用的架构图。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_04.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_04.png</b><span>何恺明 · ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_03.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_03.png</b><span>张祥雨 · ResNet 共同作者，曾任职旷视，现加入阶跃星辰</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_02.png</b><span>任少卿 · ResNet 共同作者，现任蔚来汽车研发副总裁</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/people/2015-resnet_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/people/2015-resnet_people_01.png</b><span>孙剑 · ResNet 通讯作者，原旷视科技首席科学家（1976-2022）</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png</b><span>结构示意 · ResNet 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1512.03385" target="_blank" rel="noreferrer">《用于图像识别的深度残差学习》</a><code>https://arxiv.org/abs/1512.03385</code></li><li><span>会议论文</span><a href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html" target="_blank" rel="noreferrer">CVF 开放论文页面</a><code>https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html</code></li><li><span>论文 PDF</span><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf" target="_blank" rel="noreferrer">CVPR 完整论文 PDF</a><code>https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf</code></li><li><span>人物</span><a href="https://people.csail.mit.edu/kaiming/" target="_blank" rel="noreferrer">MIT CSAIL 的何恺明资料</a><code>https://people.csail.mit.edu/kaiming/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>捷径连接</b><p>输入可以绕过模块并被加回输出。</p></div><div><b>残差函数</b><p>网络学习特征变化，而不是完全替换特征。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2016-densenet">
+    <div class="fusion-head">
+      <div><span class="index">08</span><h2>DenseNet</h2><p>2016-densenet · 2016-densenet ↔ ai100-2017-densenet</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2016-densenet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2016</strong></div>
+      <div class="metric"><span>标题</span><strong>DenseNet</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>康奈尔大学 / 美国, 纽约州</p>
+    <h4>正文描述</h4><p class="description">2016年，黄高提出了DenseNet，不只是 恒等通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做&quot;无压缩、无遗忘&quot;的极端 LSTM。 最多训练到201层</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2016-densenet/people/2016-densenet_people_02.png" alt="黄高" style="transform: scale(1.72); transform-origin: 46% 28%;"></div>
+      <div><b>黄高</b><small>DenseNet作者</small><code>resources/images/2016-densenet/people/2016-densenet_people_02.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2016-densenet/people/2016-densenet_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/people/2016-densenet_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2016-densenet/people/2016-densenet_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/people/2016-densenet_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png</b><span>结构示意 · DenseNet 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2017-densenet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2016</strong></div>
+      <div class="metric"><span>标题</span><strong>DenseNet</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>康奈尔大学 / 美国伊萨卡</p>
+    <h4>正文描述</h4><p class="description">DenseNet 在密集块中把每一层连接到后续所有层。这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2016-densenet/people/2016-densenet_people_02.png" alt="黄高" style="transform: scale(1.72); transform-origin: 46% 28%;"></div>
+      <div><b>黄高</b><small>DenseNet 主要作者</small><code>resources/images/2016-densenet/people/2016-densenet_people_02.png</code></div>
+    </div><div class="figure">
+      <div class="avatar">刘壮</div>
+      <div><b>刘壮</b><small>DenseNet 共同作者</small></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2016-densenet/people/2016-densenet_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/people/2016-densenet_people_01.png</b><span>DenseNet 作者团队 · DenseNet 背后的研究者。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png</b><span>密集连接 · 项目使用的架构图。 · 本地项目素材</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1608.06993" target="_blank" rel="noreferrer">《密集连接卷积网络》</a><code>https://arxiv.org/abs/1608.06993</code></li><li><span>会议论文</span><a href="https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html" target="_blank" rel="noreferrer">CVF 开放论文页面</a><code>https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html</code></li><li><span>代码</span><a href="https://github.com/liuzhuang13/DenseNet" target="_blank" rel="noreferrer">DenseNet 原始代码仓库</a><code>https://github.com/liuzhuang13/DenseNet</code></li><li><span>出版页</span><a href="https://ai.meta.com/research/publications/densely-connected-convolutional-networks/" target="_blank" rel="noreferrer">Meta AI 出版页面</a><code>https://ai.meta.com/research/publications/densely-connected-convolutional-networks/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>特征复用</b><p>后续层可以直接使用早期特征。</p></div><div><b>密集连接</b><p>许多短路径帮助梯度在网络中流动。</p></div></div>
+    <h4>引言摘要</h4><p class="description">密集连接卷积网络</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2016-densenet</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2016</strong></div>
+      <div class="metric"><span>标题</span><strong>DenseNet</strong></div>
+      <div class="metric"><span>canonical</span><strong>2016-densenet</strong></div>
+    </div>
+    <h4>地点</h4><p>康奈尔大学 / 美国伊萨卡</p>
+    <h4>正文描述</h4><p class="description">DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2016-densenet/people/2016-densenet_people_02.png" alt="黄高" style="transform: scale(1.72); transform-origin: 46% 28%;"></div>
+      <div><b>黄高</b><small>DenseNet 主要作者</small><code>resources/images/2016-densenet/people/2016-densenet_people_02.png</code></div>
+    </div><div class="figure">
+      <div class="avatar">刘壮</div>
+      <div><b>刘壮</b><small>DenseNet 共同作者</small></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2016-densenet/people/2016-densenet_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/people/2016-densenet_people_01.png</b><span>DenseNet 作者团队 · DenseNet 背后的研究者。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png</b><span>密集连接 · 项目使用的架构图。 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2016-densenet/people/2016-densenet_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2016-densenet/people/2016-densenet_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1608.06993" target="_blank" rel="noreferrer">《密集连接卷积网络》</a><code>https://arxiv.org/abs/1608.06993</code></li><li><span>会议论文</span><a href="https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html" target="_blank" rel="noreferrer">CVF 开放论文页面</a><code>https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html</code></li><li><span>代码</span><a href="https://github.com/liuzhuang13/DenseNet" target="_blank" rel="noreferrer">DenseNet 原始代码仓库</a><code>https://github.com/liuzhuang13/DenseNet</code></li><li><span>出版页</span><a href="https://ai.meta.com/research/publications/densely-connected-convolutional-networks/" target="_blank" rel="noreferrer">Meta AI 出版页面</a><code>https://ai.meta.com/research/publications/densely-connected-convolutional-networks/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>特征复用</b><p>后续层可以直接使用早期特征。</p></div><div><b>密集连接</b><p>许多短路径帮助梯度在网络中流动。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2017-transformer">
+    <div class="fusion-head">
+      <div><span class="index">09</span><h2>Transformer</h2><p>2017-transformer · 2017-transformer ↔ ai100-2017-transformer</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2017-transformer</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2017</strong></div>
+      <div class="metric"><span>标题</span><strong>Transformer</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>谷歌大脑 / 美国, 加利福尼亚州</p>
+    <h4>正文描述</h4><p class="description">2017 年，瓦斯瓦尼 等人在《注意力就是你所需要的一切》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的&quot;思想去冗余、结构去先验&quot;的探索。 Transformer已成为目前人工智能领域的主导模型。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ashish-vaswani.jpg" alt="阿希什·瓦斯瓦尼" style="transform: scale(2.05); transform-origin: 50% 33%;"></div>
+      <div><b>阿希什·瓦斯瓦尼</b><small>Transformer作者</small><code>resources/images/figures/ashish-vaswani.jpg</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png</b><span>结构示意 · Transformer 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png</b><span>结构示意 · Transformer 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2017-transformer/papers/2017-transformer_papers_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2017-transformer/papers/2017-transformer_papers_01.png</b><span>论文页面 · 《注意力就是你所需要的一切》</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2017-transformer</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2017</strong></div>
+      <div class="metric"><span>标题</span><strong>Transformer</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>Google Brain / 美国山景城</p>
+    <h4>正文描述</h4><p class="description">Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ashish-vaswani.jpg" alt="阿希什·瓦斯瓦尼" style="transform: scale(2.05); transform-origin: 50% 33%;"></div>
+      <div><b>阿希什·瓦斯瓦尼</b><small>Transformer 论文共同作者</small><code>resources/images/figures/ashish-vaswani.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar">诺姆·</div>
+      <div><b>诺姆·沙泽尔</b><small>Transformer 论文共同作者</small></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/ashish-vaswani.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/ashish-vaswani.jpg</b><span>阿希什·瓦斯瓦尼肖像 · Transformer 论文共同作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg</b><span>自注意力堆栈 · 关于 Transformer 自注意力的本地原创解释图。 · NeurIPS</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noreferrer">《Attention Is All You Need》</a><code>https://arxiv.org/abs/1706.03762</code></li><li><span>会议论文</span><a href="https://papers.nips.cc/paper/7181-attention-is-all-you-need" target="_blank" rel="noreferrer">NeurIPS 论文页面</a><code>https://papers.nips.cc/paper/7181-attention-is-all-you-need</code></li><li><span>出版页</span><a href="https://research.google/pubs/attention-is-all-you-need/" target="_blank" rel="noreferrer">Google Research 出版页面</a><code>https://research.google/pubs/attention-is-all-you-need/</code></li><li><span>回顾</span><a href="https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/" target="_blank" rel="noreferrer">Google Research Transformer 博客</a><code>https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>自注意力</b><p>令牌通过学习到的注意力权重交换信息。</p></div><div><b>并行训练</b><p>序列位置无需循环即可处理。</p></div></div>
+    <h4>引言摘要</h4><p class="description">Attention Is All You Need</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2017-transformer</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2017</strong></div>
+      <div class="metric"><span>标题</span><strong>Transformer</strong></div>
+      <div class="metric"><span>canonical</span><strong>2017-transformer</strong></div>
+    </div>
+    <h4>地点</h4><p>Google Brain / 美国山景城</p>
+    <h4>正文描述</h4><p class="description">2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/ashish-vaswani.jpg" alt="阿希什·瓦斯瓦尼" style="transform: scale(2.05); transform-origin: 50% 33%;"></div>
+      <div><b>阿希什·瓦斯瓦尼</b><small>Transformer 主要作者</small><code>resources/images/figures/ashish-vaswani.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar">诺姆·</div>
+      <div><b>诺姆·沙泽尔</b><small>Transformer 共同作者</small></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (5)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/ashish-vaswani.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/ashish-vaswani.jpg</b><span>阿希什·瓦斯瓦尼肖像 · Transformer 论文共同作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg</b><span>自注意力堆栈 · 关于 Transformer 自注意力的本地原创解释图。 · NeurIPS</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png</b><span>结构示意 · Transformer 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png</b><span>结构示意 · Transformer 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2017-transformer/papers/2017-transformer_papers_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2017-transformer/papers/2017-transformer_papers_01.png</b><span>论文页面 · 《注意力就是你所需要的一切》</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noreferrer">《Attention Is All You Need》</a><code>https://arxiv.org/abs/1706.03762</code></li><li><span>会议论文</span><a href="https://papers.nips.cc/paper/7181-attention-is-all-you-need" target="_blank" rel="noreferrer">NeurIPS 论文页面</a><code>https://papers.nips.cc/paper/7181-attention-is-all-you-need</code></li><li><span>出版页</span><a href="https://research.google/pubs/attention-is-all-you-need/" target="_blank" rel="noreferrer">Google Research 出版页面</a><code>https://research.google/pubs/attention-is-all-you-need/</code></li><li><span>回顾</span><a href="https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/" target="_blank" rel="noreferrer">Google Research Transformer 博客</a><code>https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>自注意力</b><p>令牌通过学习到的注意力权重交换信息。</p></div><div><b>并行训练</b><p>序列位置无需循环即可处理。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2018-bert">
+    <div class="fusion-head">
+      <div><span class="index">10</span><h2>BERT</h2><p>2018-bert · 2018-bert ↔ ai100-2018-bert</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2018-bert</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2018</strong></div>
+      <div class="metric"><span>标题</span><strong>BERT</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>OpenAI / 谷歌 AI / 美国, 加利福尼亚州</p>
+    <h4>正文描述</h4><p class="description">2018年，谷歌提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。 BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（掩码语言模型）和下一句预测（下一句预测）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/jacob-devlin.jpg" alt="雅各布·德夫林" style=""></div>
+      <div><b>雅各布·德夫林</b><small>BERT作者</small><code>resources/images/figures/jacob-devlin.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/alec-radford.png" alt="亚历克·拉德福德" style=""></div>
+      <div><b>亚历克·拉德福德</b><small>GPT作者</small><code>resources/images/figures/alec-radford.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (3)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2018-bert/people/2018-bert_people_03.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-bert/people/2018-bert_people_03.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg</b><span>结构示意 · BERT 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-bert/architecture/2018-bert_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-bert/architecture/2018-bert_architecture_02.png</b><span>结构示意 · BERT 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2018-bert</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2018</strong></div>
+      <div class="metric"><span>标题</span><strong>BERT</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>Google / 美国山景城</p>
+    <h4>正文描述</h4><p class="description">雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/jacob-devlin.jpg" alt="雅各布·德夫林" style=""></div>
+      <div><b>雅各布·德夫林</b><small>BERT 主要作者</small><code>resources/images/figures/jacob-devlin.jpg</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/jacob-devlin.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/jacob-devlin.jpg</b><span>雅各布·德夫林肖像 · BERT 主要作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg</b><span>BERT 掩码语言建模 · 关于双向预训练的本地原创解释图。 · NAACL</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1810.04805" target="_blank" rel="noreferrer">《BERT》</a><code>https://arxiv.org/abs/1810.04805</code></li><li><span>会议论文</span><a href="https://aclanthology.org/N19-1423/" target="_blank" rel="noreferrer">ACL Anthology BERT 论文</a><code>https://aclanthology.org/N19-1423/</code></li><li><span>代码</span><a href="https://github.com/google-research/bert" target="_blank" rel="noreferrer">Google Research BERT 代码仓库</a><code>https://github.com/google-research/bert</code></li><li><span>出版页</span><a href="https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/" target="_blank" rel="noreferrer">Google AI BERT 博客</a><code>https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>掩码语言模型</b><p>随机令牌被遮盖并重建。</p></div><div><b>微调</b><p>一个预训练编码器适配多种任务。</p></div></div>
+    <h4>引言摘要</h4><p class="description">用于语言理解的深度双向 Transformer 预训练</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2018-bert</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2018</strong></div>
+      <div class="metric"><span>标题</span><strong>BERT</strong></div>
+      <div class="metric"><span>canonical</span><strong>2018-bert</strong></div>
+    </div>
+    <h4>地点</h4><p>Google / 美国山景城</p>
+    <h4>正文描述</h4><p class="description">2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/jacob-devlin.jpg" alt="雅各布·德夫林" style=""></div>
+      <div><b>雅各布·德夫林</b><small>BERT 主要作者</small><code>resources/images/figures/jacob-devlin.jpg</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (5)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/jacob-devlin.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/jacob-devlin.jpg</b><span>雅各布·德夫林肖像 · BERT 主要作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg</b><span>BERT 掩码语言建模 · 关于双向预训练的本地原创解释图。 · NAACL</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-bert/people/2018-bert_people_03.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-bert/people/2018-bert_people_03.jpg</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg</b><span>结构示意 · BERT 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-bert/architecture/2018-bert_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-bert/architecture/2018-bert_architecture_02.png</b><span>结构示意 · BERT 架构图</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://arxiv.org/abs/1810.04805" target="_blank" rel="noreferrer">《BERT》</a><code>https://arxiv.org/abs/1810.04805</code></li><li><span>会议论文</span><a href="https://aclanthology.org/N19-1423/" target="_blank" rel="noreferrer">ACL Anthology BERT 论文</a><code>https://aclanthology.org/N19-1423/</code></li><li><span>代码</span><a href="https://github.com/google-research/bert" target="_blank" rel="noreferrer">Google Research BERT 代码仓库</a><code>https://github.com/google-research/bert</code></li><li><span>出版页</span><a href="https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/" target="_blank" rel="noreferrer">Google AI BERT 博客</a><code>https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>掩码语言模型</b><p>随机令牌被遮盖并重建。</p></div><div><b>微调</b><p>一个预训练编码器适配多种任务。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2018-gpt">
+    <div class="fusion-head">
+      <div><span class="index">11</span><h2>GPT</h2><p>2018-gpt · 2018-gpt ↔ ai100-2018-gpt</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2018-gpt</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2018</strong></div>
+      <div class="metric"><span>标题</span><strong>GPT</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>OpenAI / 谷歌 AI / 美国, 加利福尼亚州</p>
+    <h4>正文描述</h4><p class="description">2018年，OpenAI提出的GPT是另一个预训练和后训练相结合的范式。 GPT 是一种基于Transformer的单向解码模型。它通过下一个次元预测（下一个词元预测）进行训练。 虽然BERT更周全、更复杂，但是最终简单的GPT统治了江湖。 2022年11月30日上线的ChatGPT让人们看到了AGI的曙光。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/jacob-devlin.jpg" alt="雅各布·德夫林" style=""></div>
+      <div><b>雅各布·德夫林</b><small>BERT作者</small><code>resources/images/figures/jacob-devlin.jpg</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/alec-radford.png" alt="亚历克·拉德福德" style=""></div>
+      <div><b>亚历克·拉德福德</b><small>GPT作者</small><code>resources/images/figures/alec-radford.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (5)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg</b><span>结构示意 · GPT 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png</b><span>结构示意 · GPT 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/historical/2018-gpt_historical_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/historical/2018-gpt_historical_01.png</b><span>历史照片 · GPT</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/people/2018-gpt_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/people/2018-gpt_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/people/2018-gpt_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/people/2018-gpt_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2018-gpt</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2018</strong></div>
+      <div class="metric"><span>标题</span><strong>GPT</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>OpenAI / 美国旧金山</p>
+    <h4>正文描述</h4><p class="description">亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/alec-radford.png" alt="亚历克·拉德福德" style=""></div>
+      <div><b>亚历克·拉德福德</b><small>GPT 论文主要作者</small><code>resources/images/figures/alec-radford.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/alec-radford.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/alec-radford.png</b><span>亚历克·拉德福德肖像 · GPT 主要作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg</b><span>GPT 下一个令牌预训练 · 关于解码器式生成预训练的本地原创解释图。 · OpenAI</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文 PDF</span><a href="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf" target="_blank" rel="noreferrer">《通过生成式预训练改进语言理解》</a><code>https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf</code></li><li><span>出版页</span><a href="https://openai.com/index/language-unsupervised/" target="_blank" rel="noreferrer">OpenAI 无监督语言页面</a><code>https://openai.com/index/language-unsupervised/</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer" target="_blank" rel="noreferrer">GPT 模型概览</a><code>https://en.wikipedia.org/wiki/Generative_pre-trained_transformer</code></li><li><span>人物</span><a href="https://openai.com/research/" target="_blank" rel="noreferrer">亚历克·拉德福德研究背景</a><code>https://openai.com/research/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>下一个令牌预测</b><p>模型通过预测后续内容来学习。</p></div><div><b>迁移</b><p>任务行为来自预训练表示和样例。</p></div></div>
+    <h4>引言摘要</h4><p class="description">通过生成式预训练改进语言理解</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2018-gpt</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2018</strong></div>
+      <div class="metric"><span>标题</span><strong>GPT</strong></div>
+      <div class="metric"><span>canonical</span><strong>2018-gpt</strong></div>
+    </div>
+    <h4>地点</h4><p>OpenAI / 美国旧金山</p>
+    <h4>正文描述</h4><p class="description">2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>
+    <h4>任务/人物与头像 (1)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/figures/alec-radford.png" alt="亚历克·拉德福德" style=""></div>
+      <div><b>亚历克·拉德福德</b><small>GPT 主要作者</small><code>resources/images/figures/alec-radford.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (6)</h4><div class="image-grid"><figure>
+      <img src="resources/images/figures/alec-radford.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/figures/alec-radford.png</b><span>亚历克·拉德福德肖像 · GPT 主要作者 · 本地项目素材</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg</b><span>GPT 下一个令牌预训练 · 关于解码器式生成预训练的本地原创解释图。 · OpenAI</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg</b><span>结构示意 · GPT 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png</b><span>结构示意 · GPT 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/historical/2018-gpt_historical_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/historical/2018-gpt_historical_01.png</b><span>历史照片 · GPT</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2018-gpt/people/2018-gpt_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2018-gpt/people/2018-gpt_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文 PDF</span><a href="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf" target="_blank" rel="noreferrer">《通过生成式预训练改进语言理解》</a><code>https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf</code></li><li><span>出版页</span><a href="https://openai.com/index/language-unsupervised/" target="_blank" rel="noreferrer">OpenAI 无监督语言页面</a><code>https://openai.com/index/language-unsupervised/</code></li><li><span>背景</span><a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer" target="_blank" rel="noreferrer">GPT 模型概览</a><code>https://en.wikipedia.org/wiki/Generative_pre-trained_transformer</code></li><li><span>人物</span><a href="https://openai.com/research/" target="_blank" rel="noreferrer">亚历克·拉德福德研究背景</a><code>https://openai.com/research/</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>下一个令牌预测</b><p>模型通过预测后续内容来学习。</p></div><div><b>迁移</b><p>任务行为来自预训练表示和样例。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section><section class="fusion" id="2020-alphafold">
+    <div class="fusion-head">
+      <div><span class="index">12</span><h2>AlphaFold2</h2><p>2020-alphafold · 2020-alphafold ↔ ai100-2020-alphafold2</p></div>
+      <span class="badge ok">入口展示一致</span>
+    </div>
+    <div class="columns">
+      <article class="column ">
+    <header><span>深度学习原始数据</span><code>2020-alphafold</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2020</strong></div>
+      <div class="metric"><span>标题</span><strong>AlphaFold: 蛋白质结构预测</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>DeepMind / 英国, 伦敦</p>
+    <h4>正文描述</h4><p class="description">AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2020-alphafold/people/2020-alphafold_people_02.png" alt="戴密斯·哈萨比斯" style=""></div>
+      <div><b>戴密斯·哈萨比斯</b><small>DeepMind 首席执行官</small><code>resources/images/2020-alphafold/people/2020-alphafold_people_02.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2020-alphafold/people/2020-alphafold_people_01.png" alt="约翰·江珀" style=""></div>
+      <div><b>约翰·江珀</b><small>AlphaFold 2首席科学家</small><code>resources/images/2020-alphafold/people/2020-alphafold_people_01.png</code></div>
+    </div></div>
+    <h4>视频 (1)</h4><div class="media-block"><a href="" target="_blank" rel="noreferrer">video</a><code></code></div>
+    <h4>图片 (7)</h4><div class="image-grid"><figure>
+      <img src="resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png</b><span>结构示意 · AlphaFold: 蛋白质结构预测 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg</b><span>历史照片 · AlphaFold: 蛋白质结构预测</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png</b><span>结构示意 · AlphaFold: 蛋白质结构预测 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png</b><span>历史照片 · AlphaFold: 蛋白质结构预测</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png</b><span>论文页面 · 《使用 AlphaFold 进行高精度蛋白质结构预测》</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/people/2020-alphafold_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/people/2020-alphafold_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/people/2020-alphafold_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/people/2020-alphafold_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (0)</h4><p class="empty">无</p>
+    <h4>关键概念 (0)</h4><p class="empty">无</p>
+    <h4>引言摘要</h4><p class="description">在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。</p>
+    <h4>背景解读 (0)</h4><p class="empty">无</p>
+  </article>
+      <article class="column ">
+    <header><span>AI100 原始数据</span><code>ai100-2020-alphafold2</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2020</strong></div>
+      <div class="metric"><span>标题</span><strong>AlphaFold2</strong></div>
+      
+    </div>
+    <h4>地点</h4><p>DeepMind / 英国伦敦</p>
+    <h4>正文描述</h4><p class="description">DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2020-alphafold/people/2020-alphafold_people_01.png" alt="约翰·江珀" style=""></div>
+      <div><b>约翰·江珀</b><small>AlphaFold2 主要研究者</small><code>resources/images/2020-alphafold/people/2020-alphafold_people_01.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2020-alphafold/people/2020-alphafold_people_02.png" alt="德米斯·哈萨比斯" style=""></div>
+      <div><b>德米斯·哈萨比斯</b><small>DeepMind 联合创始人与 AlphaFold 负责人</small><code>resources/images/2020-alphafold/people/2020-alphafold_people_02.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (2)</h4><div class="image-grid"><figure>
+      <img src="https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg" loading="lazy" alt="">
+      <figcaption><b>https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg</b><span>约翰·江珀肖像 · AlphaFold2 主要研究者 · 范德堡大学</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg</b><span>AlphaFold2 结构预测流程 · 关于从序列到结构预测的本地原创解释图。 · 《Nature》</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noreferrer">《使用 AlphaFold 进行高精度蛋白质结构预测》</a><code>https://doi.org/10.1038/s41586-021-03819-2</code></li><li><span>出版页</span><a href="https://deepmind.google/technologies/alphafold/" target="_blank" rel="noreferrer">DeepMind AlphaFold 页面</a><code>https://deepmind.google/technologies/alphafold/</code></li><li><span>数据集</span><a href="https://alphafold.ebi.ac.uk/" target="_blank" rel="noreferrer">AlphaFold 蛋白质结构数据库</a><code>https://alphafold.ebi.ac.uk/</code></li><li><span>代码</span><a href="https://github.com/google-deepmind/alphafold" target="_blank" rel="noreferrer">AlphaFold GitHub 代码仓库</a><code>https://github.com/google-deepmind/alphafold</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>进化信号</b><p>相关序列为残基对提供约束。</p></div><div><b>结构模块</b><p>网络把坐标优化成三维模型。</p></div></div>
+    <h4>引言摘要</h4><p class="description">使用 AlphaFold 进行高精度蛋白质结构预测</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+      <article class="column final">
+    <header><span>融合后最终数据</span><code>2020-alphafold</code></header>
+    <div class="metrics">
+      <div class="metric"><span>年份</span><strong>2020</strong></div>
+      <div class="metric"><span>标题</span><strong>AlphaFold2</strong></div>
+      <div class="metric"><span>canonical</span><strong>2020-alphafold</strong></div>
+    </div>
+    <h4>地点</h4><p>DeepMind / 英国伦敦</p>
+    <h4>正文描述</h4><p class="description">2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>
+    <h4>任务/人物与头像 (2)</h4><div class="figures"><div class="figure">
+      <div class="avatar"><img src="resources/images/2020-alphafold/people/2020-alphafold_people_01.png" alt="约翰·江珀" style=""></div>
+      <div><b>约翰·江珀</b><small>AlphaFold2 主要研究者</small><code>resources/images/2020-alphafold/people/2020-alphafold_people_01.png</code></div>
+    </div><div class="figure">
+      <div class="avatar"><img src="resources/images/2020-alphafold/people/2020-alphafold_people_02.png" alt="德米斯·哈萨比斯" style=""></div>
+      <div><b>德米斯·哈萨比斯</b><small>DeepMind 联合创始人与 AlphaFold 负责人</small><code>resources/images/2020-alphafold/people/2020-alphafold_people_02.png</code></div>
+    </div></div>
+    <h4>视频 (0)</h4><div class="media-block"><p class="empty">无</p></div>
+    <h4>图片 (9)</h4><div class="image-grid"><figure>
+      <img src="https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg" loading="lazy" alt="">
+      <figcaption><b>https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg</b><span>约翰·江珀肖像 · AlphaFold2 主要研究者 · 范德堡大学</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg" loading="lazy" alt="">
+      <figcaption><b>resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg</b><span>AlphaFold2 结构预测流程 · 关于从序列到结构预测的本地原创解释图。 · 《Nature》</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png</b><span>结构示意 · AlphaFold: 蛋白质结构预测 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg</b><span>历史照片 · AlphaFold: 蛋白质结构预测</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png</b><span>结构示意 · AlphaFold: 蛋白质结构预测 架构图</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png</b><span>历史照片 · AlphaFold: 蛋白质结构预测</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png</b><span>论文页面 · 《使用 AlphaFold 进行高精度蛋白质结构预测》</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/people/2020-alphafold_people_01.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/people/2020-alphafold_people_01.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure><figure>
+      <img src="resources/images/2020-alphafold/people/2020-alphafold_people_02.png" loading="lazy" alt="">
+      <figcaption><b>resources/images/2020-alphafold/people/2020-alphafold_people_02.png</b><span>人物肖像 · 相关研究者照片</span></figcaption>
+    </figure></div>
+    <h4>资料来源 (4)</h4><ol class="sources"><li><span>论文</span><a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noreferrer">《使用 AlphaFold 进行高精度蛋白质结构预测》</a><code>https://doi.org/10.1038/s41586-021-03819-2</code></li><li><span>出版页</span><a href="https://deepmind.google/technologies/alphafold/" target="_blank" rel="noreferrer">DeepMind AlphaFold 页面</a><code>https://deepmind.google/technologies/alphafold/</code></li><li><span>数据集</span><a href="https://alphafold.ebi.ac.uk/" target="_blank" rel="noreferrer">AlphaFold 蛋白质结构数据库</a><code>https://alphafold.ebi.ac.uk/</code></li><li><span>代码</span><a href="https://github.com/google-deepmind/alphafold" target="_blank" rel="noreferrer">AlphaFold GitHub 代码仓库</a><code>https://github.com/google-deepmind/alphafold</code></li></ol>
+    <h4>关键概念 (2)</h4><div class="concepts"><div><b>进化信号</b><p>相关序列为残基对提供约束。</p></div><div><b>结构模块</b><p>网络把坐标优化成三维模型。</p></div></div>
+    <h4>引言摘要</h4><p class="description">无</p>
+    <h4>背景解读 (3)</h4><div class="sections"><div><b>历史背景</b><p></p></div><div><b>核心思想</b><p></p></div><div><b>长期影响</b><p></p></div></div>
+  </article>
+    </div>
+  </section></main>
+</body>
+</html>
