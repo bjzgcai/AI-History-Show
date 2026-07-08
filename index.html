@@ -1742,9 +1742,10 @@
             justify-self: end;
             display: inline-flex;
             align-items: center;
+            order: 3;
             color: rgba(244, 239, 229, 0.54);
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 500;
             letter-spacing: 0;
             padding-top: 3px;
         }
@@ -1826,18 +1827,49 @@
             stroke-linejoin: round;
         }
 
+        .about-trigger {
+            width: 94px;
+            min-height: 28px;
+            min-width: 0;
+            order: 2;
+            border: 1px solid rgba(244, 239, 229, 0.34);
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.18);
+            color: rgba(244, 239, 229, 0.56);
+            padding: 0 10px;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+        }
+
+        .about-trigger:hover,
+        .about-trigger:focus-visible {
+            border-color: rgba(246, 137, 0, 0.72);
+            color: rgba(244, 239, 229, 0.92);
+            background: rgba(246, 137, 0, 0.08);
+            outline: none;
+        }
+
         .mode-chip-label {
             font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
             font-size: 23px;
             color: rgba(244, 239, 229, 0.56);
-            font-weight: 800;
+            font-weight: 500;
             letter-spacing: 0;
             white-space: nowrap;
         }
 
         .language-toggle.topbar-language-toggle {
-            --language-toggle-width: 52px;
-            --language-toggle-height: 32px;
+            --language-toggle-width: 44px;
+            --language-toggle-height: 28px;
             justify-self: end;
             align-self: center;
             margin-top: 0;
@@ -1848,14 +1880,15 @@
             border: 1px solid rgba(244, 239, 229, 0.34);
             background: transparent;
             color: rgba(244, 239, 229, 0.42);
-            border-radius: 2px;
+            border-radius: 8px;
             padding: 0;
+            order: 1;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
-            font-size: 23px;
-            font-weight: 700;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 17px;
+            font-weight: 300;
             line-height: 1;
             letter-spacing: 0;
             text-transform: uppercase;
@@ -3862,6 +3895,222 @@
             line-height: 1.36;
         }
 
+        .about-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 80;
+            display: grid;
+            place-items: center;
+            padding: 32px;
+            background: rgba(0, 0, 0, 0.76);
+            backdrop-filter: blur(10px);
+        }
+
+        .about-modal.is-hidden {
+            display: none;
+        }
+
+        .about-modal-shell {
+            position: relative;
+            width: min(960px, calc(100vw - 52px));
+            max-height: calc(100vh - 52px);
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid rgba(246, 137, 0, 0.42);
+            background:
+                radial-gradient(circle at 84% 0%, rgba(246, 137, 0, 0.17), transparent 34%),
+                linear-gradient(180deg, rgba(22, 19, 15, 0.98), rgba(7, 7, 7, 0.99));
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.58);
+            display: grid;
+            grid-template-columns: 310px minmax(0, 1fr);
+            min-height: min(560px, calc(100vh - 52px));
+        }
+
+        .about-modal-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid rgba(244, 239, 229, 0.2);
+            background: rgba(0, 0, 0, 0.32);
+            color: rgba(244, 239, 229, 0.72);
+            font-size: 24px;
+            line-height: 1;
+            cursor: pointer;
+            touch-action: manipulation;
+            z-index: 2;
+        }
+
+        .about-modal-close:hover,
+        .about-modal-close:focus-visible {
+            border-color: rgba(246, 137, 0, 0.72);
+            color: rgba(244, 239, 229, 0.96);
+            outline: none;
+        }
+
+        .about-nav-panel {
+            min-height: 0;
+            padding: 30px 24px 28px;
+            border-right: 1px solid rgba(244, 239, 229, 0.12);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.012)),
+                rgba(0, 0, 0, 0.2);
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: 24px;
+        }
+
+        .about-modal-eyebrow {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .about-modal-title {
+            margin: 8px 0 0;
+            color: rgba(255, 255, 255, 0.96);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        .about-topic-list {
+            align-self: start;
+            display: grid;
+            gap: 10px;
+        }
+
+        .about-topic-button {
+            min-height: 58px;
+            border: 1px solid rgba(244, 239, 229, 0.12);
+            border-radius: 6px;
+            background: rgba(10, 10, 10, 0.52);
+            color: rgba(244, 239, 229, 0.64);
+            padding: 0 14px;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.18;
+            letter-spacing: 0;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            touch-action: manipulation;
+        }
+
+        .about-topic-button::after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-top: 2px solid currentColor;
+            border-right: 2px solid currentColor;
+            transform: rotate(45deg);
+            opacity: 0.46;
+            flex: 0 0 auto;
+        }
+
+        .about-topic-button:hover,
+        .about-topic-button:focus-visible,
+        .about-topic-button.active {
+            border-color: rgba(246, 137, 0, 0.7);
+            background:
+                linear-gradient(180deg, rgba(246, 137, 0, 0.16), rgba(246, 137, 0, 0.045)),
+                rgba(14, 10, 6, 0.92);
+            color: rgba(244, 239, 229, 0.94);
+            outline: none;
+        }
+
+        .about-nav-note {
+            color: rgba(244, 239, 229, 0.48);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.48;
+        }
+
+        .about-content-panel {
+            min-height: 0;
+            padding: 34px 44px 34px 38px;
+            overflow: auto;
+        }
+
+        .about-content {
+            max-width: 560px;
+            display: grid;
+            gap: 18px;
+        }
+
+        .about-content-kicker {
+            color: rgba(246, 137, 0, 0.92);
+            font-size: 13px;
+            font-weight: 850;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .about-content-title {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.96);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.14;
+            letter-spacing: 0;
+        }
+
+        .about-content-body {
+            display: grid;
+            gap: 14px;
+            color: rgba(244, 239, 229, 0.76);
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.68;
+            letter-spacing: 0;
+        }
+
+        .about-content-body p {
+            margin: 0;
+        }
+
+        .about-content-body ul,
+        .about-content-body ol {
+            margin: 0;
+            padding-left: 1.25em;
+            display: grid;
+            gap: 8px;
+        }
+
+        .about-content-body li {
+            padding-left: 0.1em;
+        }
+
+        .about-content-links {
+            margin-top: 8px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(244, 239, 229, 0.12);
+        }
+
+        .about-content-body a {
+            color: rgba(246, 137, 0, 0.94);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(246, 137, 0, 0.34);
+        }
+
+        .about-content-body a:hover,
+        .about-content-body a:focus-visible {
+            color: rgba(255, 190, 96, 0.98);
+            outline: none;
+        }
+
         @media (max-width: 860px) {
             .quiz-modal {
                 padding: 18px;
@@ -3915,6 +4164,32 @@
             .region-modal-shell {
                 width: min(720px, calc(100vw - 28px));
                 padding: 22px;
+            }
+
+            .about-modal {
+                padding: 18px;
+            }
+
+            .about-modal-shell {
+                width: min(720px, calc(100vw - 28px));
+                min-height: 0;
+                grid-template-columns: 1fr;
+                overflow: auto;
+            }
+
+            .about-nav-panel {
+                border-right: none;
+                border-bottom: 1px solid rgba(244, 239, 229, 0.12);
+                grid-template-rows: auto auto;
+            }
+
+            .about-nav-note {
+                display: none;
+            }
+
+            .about-content-panel {
+                overflow: visible;
+                padding: 24px 24px 28px;
             }
         }
 
@@ -4930,13 +5205,17 @@
         }
 
         .single-stage.is-ui-browser .topbar-actions {
-            gap: 32px;
+            gap: 24px;
+        }
+
+        .single-stage.is-ui-browser .about-trigger {
+            order: 2;
         }
 
         .single-stage.is-ui-browser .mode-chip {
             position: relative;
             padding-left: 12px;
-            order: 1;
+            order: 3;
         }
 
         .single-stage.is-ui-browser .mode-chip::before {
@@ -4955,7 +5234,7 @@
         }
 
         .single-stage.is-ui-browser .topbar-language-toggle {
-            order: 2;
+            order: 1;
         }
 
         .single-stage.is-ui-browser .stage-footer,
@@ -7128,14 +7407,21 @@
                 font-size: 11px;
             }
 
+            .about-trigger {
+                width: 62px;
+                min-height: 24px;
+                padding: 0 7px;
+                font-size: 12px;
+            }
+
             .mode-chip-label {
                 font-size: 12px;
             }
 
             .language-toggle.topbar-language-toggle {
-                --language-toggle-width: 42px;
-                --language-toggle-height: 27px;
-                font-size: 18px;
+                --language-toggle-width: 36px;
+                --language-toggle-height: 24px;
+                font-size: 12px;
             }
 
             .stage-grid {
@@ -7486,6 +7772,7 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </button>
+                    <button class="about-trigger" id="aboutTrigger" type="button" aria-haspopup="dialog" aria-controls="aboutModal">ABOUT</button>
                     <div class="mode-chip">
                         <span class="mode-chip-label" data-i18n="aiHistoryMode">AI历史</span>
                     </div>
@@ -7678,6 +7965,23 @@
         </div>
     </div>
 
+    <div class="about-modal is-hidden" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
+        <div class="about-modal-shell">
+            <button class="about-modal-close" id="aboutModalClose" type="button" aria-label="关闭">×</button>
+            <aside class="about-nav-panel">
+                <div>
+                    <div class="about-modal-eyebrow" id="aboutModalEyebrow">ABOUT</div>
+                    <h2 class="about-modal-title" id="aboutModalTitle">AI History Show</h2>
+                </div>
+                <div class="about-topic-list" id="aboutTopicList"></div>
+                <div class="about-nav-note" id="aboutNavNote"></div>
+            </aside>
+            <section class="about-content-panel">
+                <article class="about-content" id="aboutContent"></article>
+            </section>
+        </div>
+    </div>
+
     <div class="quiz-modal is-hidden" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
         <div class="quiz-modal-shell">
             <button class="quiz-modal-close" id="quizModalClose" type="button" aria-label="关闭">×</button>
@@ -7757,7 +8061,7 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .region-modal, .mobile-quiz-app, iframe, .storyline-select, .ui-detail-image-stage';
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .about-modal, .about-trigger, .region-modal, .mobile-quiz-app, iframe, .storyline-select, .ui-detail-image-stage';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = 'deep-learning-history';
@@ -7779,8 +8083,8 @@
                 id: DEEP_STORYLINE_ID,
                 layout: 'ui-browser',
                 label: {
-                    en: 'Current: AI History (Deep Learning)',
-                    zh: '当前：AI 历史（深度学习）'
+                    en: 'AI History (Deep Learning)',
+                    zh: 'AI 历史（深度学习）'
                 },
                 note: {
                     en: '1956-now, centered on deep learning milestones',
@@ -7870,7 +8174,10 @@
                 .replace(/^ai100-/, '');
             const aliases = {
                 '2020-alphafold2': '2020-alphafold',
-                '2014-neural-machine-translation-attention': '2014-attention'
+                '2014-neural-machine-translation-attention': '2014-attention',
+                '1958-rosenblatt-perceptron': '1957-perceptron',
+                '1989-lenet': '1989-cnn',
+                '2017-densenet': '2016-densenet'
             };
             if (aliases[id]) return aliases[id];
             if (id) return id;
@@ -7980,6 +8287,8 @@
         let uiBrowserMode = 'year';
         let uiSelectedYear = null;
         let uiSelectedContinent = '';
+        let uiSelectedLocationKey = '';
+        let uiSelectedLocationEventIds = [];
         let uiSelectedEventId = '';
         let uiDetailImageIndex = 0;
         let uiDetailImageEventId = '';
@@ -8077,6 +8386,14 @@
             storylineModalTitle: document.getElementById('storylineModalTitle'),
             storylineModalSubtitle: document.getElementById('storylineModalSubtitle'),
             storylineOptionGrid: document.getElementById('storylineOptionGrid'),
+            aboutTrigger: document.getElementById('aboutTrigger'),
+            aboutModal: document.getElementById('aboutModal'),
+            aboutModalClose: document.getElementById('aboutModalClose'),
+            aboutModalEyebrow: document.getElementById('aboutModalEyebrow'),
+            aboutModalTitle: document.getElementById('aboutModalTitle'),
+            aboutTopicList: document.getElementById('aboutTopicList'),
+            aboutNavNote: document.getElementById('aboutNavNote'),
+            aboutContent: document.getElementById('aboutContent'),
             timelineModeLabel: document.getElementById('timelineModeLabel'),
             timelineTrack: document.getElementById('timelineTrack'),
             branchTimelinePage: document.getElementById('branchTimelinePage'),
@@ -8127,6 +8444,166 @@
             mobileQuizReset: document.getElementById('mobileQuizReset'),
             mobileQuizExit: document.getElementById('mobileQuizExit')
         };
+
+        const ABOUT_REPOSITORY_URL = 'https://github.com/bjzgcai/AI-History-Show';
+        const ABOUT_EXHIBITION_URL = 'https://museum.bza.edu.cn/ai-history/';
+        const ABOUT_SECTIONS = [
+            {
+                id: 'about-ai-history',
+                label: { en: 'About AI History', zh: '关于 AI History' },
+                kicker: { en: 'Open exhibition archive', zh: '开放展览档案' },
+                title: { en: 'AI History Show', zh: 'AI History Show' },
+                paragraphs: [
+                    {
+                        en: 'AI History Show is an open-source interactive project for exhibitions, classrooms, and public communication.',
+                        zh: 'AI History Show 是一个面向展览、课堂和公共传播场景的开源交互项目。'
+                    },
+                    {
+                        en: 'The project organizes AI history as a knowledge interface rather than a flat list of years. It connects events, people, places, papers, images, sources, and explanations into one navigable experience.',
+                        zh: '它把 AI 发展史整理成一套可探索的知识界面，而不是一串年份列表。事件、人物、地点、论文、图片、资料来源和解释文本，会被组织到同一个可浏览的体验中。'
+                    }
+                ],
+                bullets: [
+                    {
+                        en: 'AI history timeline: builds an overall path from the Turing Test and the Dartmouth Workshop to deep learning and the large model era.',
+                        zh: 'AI 历史主线：按时间顺序串联图灵测试、达特茅斯会议、感知机、专家系统、深度学习和大模型时代，帮助观众建立整体脉络。'
+                    },
+                    {
+                        en: 'Top AI achievements: organizes important algorithms, systems, papers, and applications, with maps, images, sources, and concise interpretation.',
+                        zh: 'AI 百大成就：整理重要算法、系统、论文和应用案例，并为每个成就补充地图位置、图片、资料来源和解释文本。'
+                    },
+                    {
+                        en: 'Thematic storylines: expands into focused topics such as AI for Science, AI in games, AI and education, and AI, society, and ethics.',
+                        zh: '主题故事线：围绕更具体的问题展开专题叙事，例如 AI 与科学、AI 与棋牌博弈、AI 与教育、AI 与社会伦理等方向。'
+                    }
+                ],
+                afterList: [
+                    {
+                        en: 'The goal is to make AI history easier to inspect, verify, and explain: a historical map, a source archive, and an interactive storytelling system.',
+                        zh: '我们的目标，是让 AI 历史更容易被查看、核验和讲述：它既是一张历史地图，也是一个资料档案和交互式讲解系统。'
+                    },
+                    {
+                        en: `GitHub repository: ${ABOUT_REPOSITORY_URL}`,
+                        zh: `GitHub 仓库：${ABOUT_REPOSITORY_URL}`
+                    }
+                ]
+            },
+            {
+                id: 'problem',
+                label: { en: 'What We Explain', zh: '想解决什么问题' },
+                kicker: { en: 'From timeline to knowledge map', zh: '从时间线到知识地图' },
+                title: { en: 'Make AI history explorable', zh: '让 AI 历史变得可探索' },
+                paragraphs: [
+                    {
+                        en: 'AI history is not just a list of years. It is a network of people, institutions, papers, experiments, tools, and social needs.',
+                        zh: 'AI 的历史不是一串孤立的年份，而是一张由人、机构、论文、实验、工具和社会需求共同构成的网络。'
+                    },
+                    {
+                        en: 'The project helps audiences understand when and where events happened, why certain algorithms appeared, what problems they solved, and how later technologies were shaped by them.',
+                        zh: '这个项目希望帮助观众理解事件发生的时间地点、相关人物和机构的联系、算法为什么会在当时出现、它解决了什么问题，以及它如何影响后来的技术。'
+                    }
+                ],
+                bullets: [
+                    {
+                        en: 'Show events through map, timeline, archive images, source records, and readable explanations.',
+                        zh: '通过地图、时间轴、档案图片、资料来源和通俗解释组织事件。'
+                    },
+                    {
+                        en: 'Keep sources visible so facts can be checked, cited, and improved.',
+                        zh: '保留来源信息，方便复核、引用和继续研究。'
+                    },
+                    {
+                        en: 'Help non-specialist audiences understand AI breakthroughs without requiring a technical background.',
+                        zh: '帮助普通观众在不依赖专业背景的情况下理解 AI 突破。'
+                    }
+                ]
+            },
+            {
+                id: 'join',
+                label: { en: 'Join Us', zh: '欢迎加入' },
+                kicker: { en: 'Student-friendly open source', zh: '适合学生参与的开源项目' },
+                title: { en: 'Build it together', zh: '一起把它做可信、做漂亮' },
+                paragraphs: [
+                    {
+                        en: 'We welcome contributors from computer science, AI, design, interaction, history, science communication, frontend development, and translation.',
+                        zh: '我们欢迎计算机、AI、设计、交互、历史、科技传播、前端开发和翻译方向的同学与志愿者加入。'
+                    },
+                    {
+                        en: 'You can start small: check one event, add sources, polish wording, improve layout, contribute images, or create a quiz that helps audiences confirm they understood the story.',
+                        zh: '你可以从小任务开始：校对一个事件、补充资料来源、打磨文案、优化布局、整理图片，或增加帮助观众理解内容的小测验。'
+                    }
+                ],
+                steps: [
+                    {
+                        en: 'Open the GitHub repository and read the README files and existing pages.',
+                        zh: '打开 GitHub 仓库，阅读 README 和现有页面。'
+                    },
+                    {
+                        en: 'Choose an event, person, algorithm, or storyline that interests you.',
+                        zh: '选择一个你感兴趣的事件、人物、算法或故事线。'
+                    },
+                    {
+                        en: 'Create or claim an Issue, then submit a Pull Request with a clear summary and source information.',
+                        zh: '在 Issue 中创建或认领任务，然后提交 Pull Request，并写清楚改动内容和资料来源。'
+                    }
+                ],
+                afterList: [
+                    {
+                        en: `GitHub repository: ${ABOUT_REPOSITORY_URL}`,
+                        zh: `GitHub 项目路径：${ABOUT_REPOSITORY_URL}`
+                    },
+                    {
+                        en: `Project showcase: ${ABOUT_EXHIBITION_URL}`,
+                        zh: `项目展示：${ABOUT_EXHIBITION_URL}`
+                    }
+                ]
+            },
+            {
+                id: 'vision',
+                label: { en: 'Shared Vision', zh: '希望一起完成' },
+                kicker: { en: 'What we hope to build', zh: '我们希望一起完成的事' },
+                title: { en: 'Open infrastructure for AI history exhibitions', zh: '成为开放的 AI 历史展览基础设施' },
+                paragraphs: [
+                    {
+                        en: 'In the long run, we hope AI History Show can become open infrastructure for AI history exhibitions, courses, and public learning.',
+                        zh: '未来，我们希望 AI History Show 成为一个开放的 AI 历史展览基础设施。'
+                    },
+                    {
+                        en: 'AI history is still being written. We want to make it clear, beautiful, traceable, and useful for more classrooms, museums, students, and communities.',
+                        zh: 'AI 的历史还在继续。我们希望和更多课堂、展馆、学生与社区一起，把它讲清楚、做漂亮、做可信。'
+                    }
+                ],
+                bullets: [
+                    {
+                        en: 'Run reliably on large screens in exhibitions.',
+                        zh: '可以在大屏展览中运行。'
+                    },
+                    {
+                        en: 'Support AI courses, public lectures, and guided learning.',
+                        zh: '可以作为 AI 课程和公共讲座的辅助材料。'
+                    },
+                    {
+                        en: 'Help students learn AI history by contributing content and verifying sources.',
+                        zh: '可以让学生通过贡献内容、校对资料来学习 AI 发展史。'
+                    },
+                    {
+                        en: 'Help the public understand where AI came from and where it may be going.',
+                        zh: '可以让公众更好理解 AI 从哪里来、正在走向哪里。'
+                    }
+                ],
+                afterList: [
+                    {
+                        en: `GitHub repository: ${ABOUT_REPOSITORY_URL}`,
+                        zh: `GitHub 项目路径：${ABOUT_REPOSITORY_URL}`
+                    },
+                    {
+                        en: `Project showcase: ${ABOUT_EXHIBITION_URL}`,
+                        zh: `项目展示：${ABOUT_EXHIBITION_URL}`
+                    }
+                ]
+            }
+        ];
+        let activeAboutSectionId = ABOUT_SECTIONS[0].id;
 
         function escapeHtml(value) {
             return String(value == null ? '' : value)
@@ -8426,11 +8903,123 @@
 
         function openStorylinePicker() {
             if (!refs.storylineModal || !refs.storylineOptionGrid) return;
+            closeAboutModal({ skipFocus: true });
             renderStorylinePickerOptions();
             refs.storylineModal.classList.remove('is-hidden');
             window.setTimeout(() => {
                 const activeButton = refs.storylineOptionGrid.querySelector('.storyline-option.active')
                     || refs.storylineOptionGrid.querySelector('.storyline-option:not(:disabled)');
+                if (activeButton) activeButton.focus();
+            }, 0);
+        }
+
+        function getAboutSection(sectionId = activeAboutSectionId) {
+            return ABOUT_SECTIONS.find((section) => section.id === sectionId) || ABOUT_SECTIONS[0];
+        }
+
+        function formatAboutParagraphHtml(text) {
+            const linkUrls = [ABOUT_REPOSITORY_URL, ABOUT_EXHIBITION_URL].filter(Boolean);
+            const tokens = [];
+            let output = String(text || '');
+            linkUrls.forEach((url, index) => {
+                const token = `\u0000ABOUT_LINK_${index}\u0000`;
+                tokens[index] = { token, url };
+                output = output.split(url).join(token);
+            });
+            output = escapeHtml(output);
+            tokens.forEach(({ token, url }) => {
+                output = output.split(token).join(`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>`);
+            });
+            return output;
+        }
+
+        function renderAboutModal() {
+            if (!refs.aboutTopicList || !refs.aboutContent) return;
+
+            const activeSection = getAboutSection();
+            if (refs.aboutTrigger) refs.aboutTrigger.setAttribute('aria-label', uiText('About AI History Show', '关于 AI History Show'));
+            if (refs.aboutModalClose) refs.aboutModalClose.setAttribute('aria-label', tx('close'));
+            if (refs.aboutModalEyebrow) refs.aboutModalEyebrow.textContent = 'ABOUT';
+            if (refs.aboutModalTitle) refs.aboutModalTitle.textContent = 'AI History Show';
+            if (refs.aboutNavNote) {
+                refs.aboutNavNote.textContent = uiText(
+                    'An open archive for AI history exhibitions, courses, and student collaboration.',
+                    '面向展览、课程与学生协作的开放 AI 历史档案。'
+                );
+            }
+
+            refs.aboutTopicList.innerHTML = ABOUT_SECTIONS.map((section) => {
+                const active = section.id === activeSection.id ? ' active' : '';
+                return `
+                    <button class="about-topic-button${active}" type="button" data-about-section="${escapeHtml(section.id)}">
+                        <span>${escapeHtml(lx(section.label))}</span>
+                    </button>
+                `;
+            }).join('');
+
+            refs.aboutTopicList.querySelectorAll('.about-topic-button').forEach((button) => {
+                button.addEventListener('click', () => {
+                    activeAboutSectionId = button.dataset.aboutSection || ABOUT_SECTIONS[0].id;
+                    renderAboutModal();
+                });
+            });
+
+            const bodyParts = [];
+            (activeSection.paragraphs || []).forEach((paragraph) => {
+                const text = String(lx(paragraph) || '').trim();
+                if (!text) return;
+                bodyParts.push(`<p>${formatAboutParagraphHtml(text)}</p>`);
+            });
+            if (Array.isArray(activeSection.bullets) && activeSection.bullets.length) {
+                bodyParts.push(`
+                    <ul>
+                        ${activeSection.bullets.map((item) => `<li>${escapeHtml(lx(item))}</li>`).join('')}
+                    </ul>
+                `);
+            }
+            if (Array.isArray(activeSection.steps) && activeSection.steps.length) {
+                bodyParts.push(`
+                    <ol>
+                        ${activeSection.steps.map((item) => `<li>${escapeHtml(lx(item))}</li>`).join('')}
+                    </ol>
+                `);
+            }
+            const afterParts = (activeSection.afterList || [])
+                .map((paragraph) => String(lx(paragraph) || '').trim())
+                .filter(Boolean)
+                .map((text) => `<p>${formatAboutParagraphHtml(text)}</p>`);
+            if (afterParts.length) {
+                bodyParts.push(`<div class="about-content-links">${afterParts.join('')}</div>`);
+            }
+            if (activeSection.link) {
+                bodyParts.push(`<p><a href="${escapeHtml(activeSection.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(activeSection.link)}</a></p>`);
+            }
+
+            refs.aboutContent.innerHTML = `
+                <div class="about-content-kicker">${escapeHtml(lx(activeSection.kicker))}</div>
+                <h3 class="about-content-title">${escapeHtml(lx(activeSection.title))}</h3>
+                <div class="about-content-body">${bodyParts.join('')}</div>
+            `;
+        }
+
+        function hasOpenAboutModal() {
+            return Boolean(refs.aboutModal && !refs.aboutModal.classList.contains('is-hidden'));
+        }
+
+        function closeAboutModal(options = {}) {
+            if (!refs.aboutModal) return;
+            refs.aboutModal.classList.add('is-hidden');
+            if (!options.skipFocus && refs.aboutTrigger) refs.aboutTrigger.focus();
+        }
+
+        function openAboutModal() {
+            if (!refs.aboutModal) return;
+            closeStorylinePicker({ skipFocus: true });
+            closeRegionPicker({ skipFocus: true });
+            renderAboutModal();
+            refs.aboutModal.classList.remove('is-hidden');
+            window.setTimeout(() => {
+                const activeButton = refs.aboutTopicList && refs.aboutTopicList.querySelector('.about-topic-button.active');
                 if (activeButton) activeButton.focus();
             }, 0);
         }
@@ -8460,6 +9049,8 @@
             uiBrowserMode = 'year';
             uiSelectedYear = null;
             uiSelectedContinent = '';
+            uiSelectedLocationKey = '';
+            uiSelectedLocationEventIds = [];
             uiSelectedEventId = '';
             vmCache.clear();
             resetInlineMedia();
@@ -13531,12 +14122,20 @@
                     currentIndex = detailIndex;
                 }
             }
+            if (uiBrowserMode === 'location' && !getUiLocationGroupEvents(uiSelectedLocationKey).length) {
+                uiBrowserMode = 'year';
+                uiSelectedLocationKey = '';
+                uiSelectedLocationEventIds = [];
+            }
         }
 
         function getUiEventsForCurrentMode() {
             ensureUiSelection();
             if (uiBrowserMode === 'region' && uiSelectedContinent) {
                 return milestoneList.filter((item) => getMilestoneContinentId(item) === uiSelectedContinent);
+            }
+            if (uiBrowserMode === 'location' && uiSelectedLocationKey) {
+                return getUiLocationGroupEvents(uiSelectedLocationKey, uiSelectedLocationEventIds);
             }
             return milestoneList.filter((item) => getMilestoneSortYear(item) === Number(uiSelectedYear));
         }
@@ -13558,7 +14157,7 @@
         }
 
         function getUiYearHighlightSet() {
-            const events = uiBrowserMode === 'region' && uiSelectedContinent
+            const events = (uiBrowserMode === 'region' && uiSelectedContinent) || (uiBrowserMode === 'location' && uiSelectedLocationKey)
                 ? getUiEventsForCurrentMode()
                 : [];
             return new Set(events.map(getMilestoneSortYear).filter((year) => Number.isFinite(year)));
@@ -13781,7 +14380,7 @@
             }).join('');
         }
 
-        const UI_MAP_CALLOUT_TOP_LIMIT = 0;
+        const UI_MAP_CALLOUT_TOP_LIMIT = 12;
         const UI_MAP_CALLOUT_BOTTOM_LIMIT = 21;
         const UI_MAP_CALLOUT_TOTAL_LIMIT = UI_MAP_CALLOUT_TOP_LIMIT + UI_MAP_CALLOUT_BOTTOM_LIMIT;
         const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
@@ -13835,14 +14434,15 @@
             const visible = isBottom
                 ? callouts.slice(UI_MAP_CALLOUT_TOP_LIMIT)
                 : callouts.slice(0, UI_MAP_CALLOUT_TOP_LIMIT);
-            return visible.map(({ event, count, locationKey }, index) => {
+            return visible.map(({ event, events: groupedEvents, count, locationKey }, index) => {
                 const absoluteIndex = offset + index;
                 const vm = getVm(milestoneList.findIndex((item) => item.id === event.id));
                 const locationName = vm.location && vm.location.name ? vm.location.name : (vm.title || tx('aiHistoryEvent'));
                 const locationCountry = vm.location && vm.location.country ? vm.location.country : getUiContinentLabel(getMilestoneContinentId(event));
                 const countHtml = count > 1 ? ` <span class="ui-map-callout-count">×${escapeHtml(count)}</span>` : '';
+                const eventIds = (groupedEvents || [event]).map((item) => item && item.id).filter(Boolean).join(',');
                 return `
-                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" data-location-key="${escapeHtml(locationKey || '')}" style="${getUiMapCalloutGridStyle(absoluteIndex, placement)}">
+                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" data-event-ids="${escapeHtml(eventIds)}" data-location-key="${escapeHtml(locationKey || '')}" style="${getUiMapCalloutGridStyle(absoluteIndex, placement)}">
                         <span class="ui-map-callout-dot"></span>
                         <span class="ui-map-callout-text">
                             <strong>${escapeHtml(locationName)}</strong>
@@ -13851,6 +14451,23 @@
                     </button>
                 `;
             }).join('');
+        }
+
+        function getUiLocationGroupEvents(locationKey, eventIds = []) {
+            const selectedIds = Array.isArray(eventIds) ? eventIds.filter(Boolean) : [];
+            if (selectedIds.length) {
+                const selectedSet = new Set(selectedIds);
+                return milestoneList.filter((item) => selectedSet.has(item.id));
+            }
+            if (!locationKey) return [];
+            return milestoneList.filter((item) => getUiMapLocationKey(item, getUiMapPinPosition(item)) === locationKey);
+        }
+
+        function getUiLocationGroupLabel(locationKey) {
+            const event = getUiLocationGroupEvents(locationKey)[0];
+            if (!event) return uiText('Location', '地址');
+            const vm = getVm(milestoneList.findIndex((item) => item.id === event.id));
+            return vm.location && vm.location.name ? vm.location.name : (vm.title || uiText('Location', '地址'));
         }
 
         function getElementCenterRelativeTo(element, containerRect) {
@@ -13914,7 +14531,7 @@
                 <section class="ui-map-panel">
                     <div class="ui-map-heading">
                         <div class="ui-map-year">${escapeHtml(activeLabel)}</div>
-                        <div class="ui-map-mode">${escapeHtml(uiBrowserMode === 'region' ? uiText('Region', '地区') : uiText('Year', '年份'))}</div>
+                        <div class="ui-map-mode">${escapeHtml(uiBrowserMode === 'region' ? uiText('Region', '地区') : uiBrowserMode === 'location' ? uiText('Location', '地址') : uiText('Year', '年份'))}</div>
                     </div>
                     <svg class="ui-map-callout-lines" aria-hidden="true"></svg>
                     <div class="ui-map-callout-zone">
@@ -14181,6 +14798,8 @@
             const highlights = getUiYearHighlightSet();
             const label = uiBrowserMode === 'region' && uiSelectedContinent
                 ? uiText('Highlighted years in selected region', '高亮所选地区涉及年份')
+                : uiBrowserMode === 'location' && uiSelectedLocationKey
+                ? uiText('Highlighted years at selected location', '高亮所选地址涉及年份')
                 : uiText('Years with events', '存在事件的年份');
             refs.uiBrowserTimeline.innerHTML = `
                 <div class="ui-timeline-label">
@@ -14208,6 +14827,8 @@
                     uiBrowserMode = 'year';
                     uiSelectedYear = Number(button.dataset.year);
                     uiSelectedContinent = '';
+                    uiSelectedLocationKey = '';
+                    uiSelectedLocationEventIds = [];
                     uiSelectedEventId = '';
                     currentIndex = Math.max(0, milestoneList.findIndex((item) => getMilestoneSortYear(item) === uiSelectedYear));
                     renderPage(currentIndex);
@@ -14228,13 +14849,21 @@
             });
             const activeLabel = uiBrowserMode === 'region' && uiSelectedContinent
                 ? getUiContinentLabel(uiSelectedContinent)
+                : uiBrowserMode === 'location' && uiSelectedLocationKey
+                ? getUiLocationGroupLabel(uiSelectedLocationKey)
                 : String(uiSelectedYear || '');
+            const levelOneModeClass = uiBrowserMode === 'region' || uiBrowserMode === 'location' ? 'is-region-mode' : 'is-year-mode';
+            const eventKicker = uiBrowserMode === 'region'
+                ? uiText('Region events', '地区事件')
+                : uiBrowserMode === 'location'
+                ? uiText('Location events', '地址事件')
+                : uiText('Year events', '年份事件');
             refs.uiBrowserMain.innerHTML = `
-                <div class="ui-level-one ${uiBrowserMode === 'region' ? 'is-region-mode' : 'is-year-mode'}${events.length === 1 ? ' is-single-event' : ''}">
+                <div class="ui-level-one ${levelOneModeClass}${events.length === 1 ? ' is-single-event' : ''}">
                     ${buildUiLevelOneMap(events, activeLabel, continentCounts)}
                     <section class="ui-event-panel">
                         <div class="ui-event-panel-heading">
-                            <div class="ui-section-kicker">${escapeHtml(uiBrowserMode === 'region' ? uiText('Region events', '地区事件') : uiText('Year events', '年份事件'))}</div>
+                            <div class="ui-section-kicker">${escapeHtml(eventKicker)}</div>
                             <div class="ui-section-title">${escapeHtml(activeLabel)}</div>
                             <div class="ui-section-note">${escapeHtml(uiText(`Showing ${events.length} events.`, `共 ${events.length} 个事件；默认展示区域容纳 3 个，更多内容可滚动。`))}</div>
                         </div>
@@ -14248,6 +14877,8 @@
                 button.addEventListener('click', () => {
                     uiBrowserMode = 'region';
                     uiSelectedContinent = button.dataset.continent || '';
+                    uiSelectedLocationKey = '';
+                    uiSelectedLocationEventIds = [];
                     uiSelectedEventId = '';
                     const nextEvents = getUiEventsForCurrentMode();
                     currentIndex = nextEvents[0] ? milestoneList.findIndex((item) => item.id === nextEvents[0].id) : 0;
@@ -14255,9 +14886,46 @@
                     renderPage(currentIndex);
                 });
             });
-            refs.uiBrowserMain.querySelectorAll('.ui-event-card, .ui-map-pin, .ui-map-callout').forEach((button) => {
+            refs.uiBrowserMain.querySelectorAll('.ui-map-callout').forEach((button) => {
                 button.addEventListener('click', () => {
+                    const locationKey = button.dataset.locationKey || '';
+                    const groupedEventIds = (button.dataset.eventIds || '')
+                        .split(',')
+                        .map((id) => id.trim())
+                        .filter(Boolean);
+                    const groupedEvents = getUiLocationGroupEvents(locationKey, groupedEventIds);
+                    if (groupedEvents.length > 1) {
+                        uiBrowserMode = 'location';
+                        uiSelectedLocationKey = locationKey;
+                        uiSelectedLocationEventIds = groupedEvents.map((item) => item.id);
+                        uiSelectedContinent = '';
+                        uiSelectedEventId = '';
+                        const firstEvent = groupedEvents[0];
+                        currentIndex = milestoneList.findIndex((item) => item.id === firstEvent.id);
+                        uiSelectedYear = getMilestoneSortYear(firstEvent) || uiSelectedYear;
+                        renderPage(currentIndex >= 0 ? currentIndex : 0);
+                        return;
+                    }
+
                     uiBrowserMode = 'detail';
+                    uiSelectedLocationKey = '';
+                    uiSelectedLocationEventIds = [];
+                    uiSelectedEventId = groupedEvents[0] ? groupedEvents[0].id : (button.dataset.eventId || '');
+                    uiDetailImageIndex = 0;
+                    const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
+                    currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
+                    uiSelectedYear = milestoneList[currentIndex] ? getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear : uiSelectedYear;
+                    renderPage(currentIndex);
+                });
+            });
+            refs.uiBrowserMain.querySelectorAll('.ui-event-card, .ui-map-pin').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const shouldKeepLocationContext = uiBrowserMode === 'location';
+                    uiBrowserMode = 'detail';
+                    if (!shouldKeepLocationContext) {
+                        uiSelectedLocationKey = '';
+                        uiSelectedLocationEventIds = [];
+                    }
                     uiSelectedEventId = button.dataset.eventId || '';
                     uiDetailImageIndex = 0;
                     const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
@@ -15094,6 +15762,8 @@
                 uiSelectedEventId = milestoneList[index].id;
                 uiSelectedYear = getMilestoneSortYear(milestoneList[index]) || uiSelectedYear;
                 uiSelectedContinent = '';
+                uiSelectedLocationKey = '';
+                uiSelectedLocationEventIds = [];
             }
             renderPage(currentIndex);
             if (portraitScrollAnchor === 'bottom') {
@@ -15114,6 +15784,8 @@
                 uiBrowserMode = 'year';
                 uiSelectedYear = years[nextYearIndex] || uiSelectedYear;
                 uiSelectedContinent = '';
+                uiSelectedLocationKey = '';
+                uiSelectedLocationEventIds = [];
                 uiSelectedEventId = '';
                 currentIndex = Math.max(0, milestoneList.findIndex((item) => getMilestoneSortYear(item) === Number(uiSelectedYear)));
                 renderPage(currentIndex);
@@ -15128,6 +15800,8 @@
                 uiSelectedEventId = milestoneList[nextIndex] ? milestoneList[nextIndex].id : uiSelectedEventId;
                 uiSelectedYear = milestoneList[nextIndex] ? getMilestoneSortYear(milestoneList[nextIndex]) : uiSelectedYear;
                 uiSelectedContinent = '';
+                uiSelectedLocationKey = '';
+                uiSelectedLocationEventIds = [];
             }
             jumpTo(nextIndex, options);
         }
@@ -15222,11 +15896,18 @@
                     if (event.target === refs.storylineModal) closeStorylinePicker();
                 });
             }
+            if (refs.aboutTrigger) refs.aboutTrigger.addEventListener('click', openAboutModal);
+            if (refs.aboutModalClose) refs.aboutModalClose.addEventListener('click', closeAboutModal);
+            if (refs.aboutModal) {
+                refs.aboutModal.addEventListener('click', (event) => {
+                    if (event.target === refs.aboutModal) closeAboutModal();
+                });
+            }
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
             refs.nextBtn.addEventListener('click', () => navigate('next'));
             if (refs.uiBackButton) {
                 refs.uiBackButton.addEventListener('click', () => {
-                    uiBrowserMode = uiSelectedContinent ? 'region' : 'year';
+                    uiBrowserMode = uiSelectedLocationKey ? 'location' : uiSelectedContinent ? 'region' : 'year';
                     uiSelectedEventId = '';
                     renderPage(currentIndex);
                 });
@@ -15278,6 +15959,10 @@
                     if (event.key === 'Escape') closeStorylinePicker();
                     return;
                 }
+                if (hasOpenAboutModal()) {
+                    if (event.key === 'Escape') closeAboutModal();
+                    return;
+                }
                 if (hasOpenRegionModal()) {
                     if (event.key === 'Escape') closeRegionPicker();
                     return;
@@ -15296,6 +15981,7 @@
             window.addEventListener('languageChanged', () => {
                 vmCache.clear();
                 renderStorylineSelect();
+                renderAboutModal();
                 renderPage(currentIndex);
                 if (mobileQuizState) renderMobileQuizState();
             });
