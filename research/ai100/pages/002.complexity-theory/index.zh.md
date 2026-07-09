@@ -142,12 +142,11 @@ NP 完全性仍然是计算机科学教育和研究中的标准理论。P versus
 
 # 专家评价
 
-- 引文: "laid the foundations for the theory of NP-Completeness"
-- 译文: “奠定了 NP 完全性理论的基础。”
-- 人物: ACM A.M. 图灵奖页面编辑
-- 机构: 美国计算机协会（ACM）
-- 年份: 1982 年获奖页面
-- 来源 URL: https://awards.acm.org/award_winners/cook_N991950
+- 核心要点: NP 完全性说明，许多看似不同的难题共享同一种困难性：如果能快速解决任何一个 NP 完全问题，就能快速解决所有“答案容易检查”的 NP 问题。
+- 来源作品: Stephen A. Cook, "The Complexity of Theorem-Proving Procedures"
+- 机构: ACM 计算理论研讨会
+- 年份: 1971
+- 来源 URL: https://dl.acm.org/doi/10.1145/800157.805047
 
 - 引文: "Cook's contributions to computational complexity were absolutely foundational."
 - 译文: “库克对计算复杂性的贡献具有绝对的奠基性。”

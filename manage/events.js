@@ -3101,19 +3101,19 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "laid the foundations for the theory of NP-Completeness",
-      "zh": "奠定了 NP 完全性理论的基础"
+      "en": "NP-completeness shows that many hard problems are hard in the same way: if one NP-complete problem can be solved quickly, every problem whose answer can be checked quickly can be solved quickly.",
+      "zh": "NP 完全性说明，许多看似不同的难题共享同一种困难性：如果能快速解决任何一个 NP 完全问题，就能快速解决所有“答案容易检查”的 NP 问题。"
     },
     "quoteMeta": {
       "workTitle": {
-        "en": "Stephen A. Cook A.M. Turing Award citation",
-        "zh": "斯蒂芬·A·库克 ACM 图灵奖获奖说明"
+        "en": "The Complexity of Theorem-Proving Procedures",
+        "zh": "定理证明过程的复杂性"
       },
       "workAuthors": {
-        "en": "Association for Computing Machinery, 1982",
-        "zh": "美国计算机协会, 1982"
+        "en": "Stephen A. Cook, ACM Symposium on Theory of Computing, 1971",
+        "zh": "斯蒂芬·A·库克, ACM 计算理论研讨会, 1971"
       },
-      "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950"
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/800157.805047"
     },
     "quotePage": {
       "en": "BenchCouncil AI100: Theory / Complexity theory",
@@ -4536,8 +4536,8 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "straightforward to implement, computationally efficient",
-      "zh": "易于实现且计算高效"
+      "en": "The method is straightforward to implement, is computationally efficient, has little memory requirements.",
+      "zh": "该方法易于实现，计算高效，并且内存需求较低。"
     },
     "quoteMeta": {
       "workTitle": {

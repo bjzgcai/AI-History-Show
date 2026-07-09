@@ -237,6 +237,38 @@ London, UK
 
 “今天的专家通常如何评价这一成就？”
 
+# Verified Quote or Key Idea
+
+先尝试查找该 achievement 的真实原文引用；找不到可核验原文时，改写为核心要点。
+
+必须输出以下字段，供 `manage/events.js` 使用：
+
+```js
+quoteText: {
+  en: "",
+  zh: ""
+},
+quoteKind: "quote" | "keyIdea",
+quoteMeta: {
+  workTitle: { en: "", zh: "" },
+  workAuthors: { en: "", zh: "" },
+  sourceUrl: ""
+},
+quotePage: {
+  en: "",
+  zh: ""
+}
+```
+
+规则：
+
+- 只有能在可靠原始来源、官方论文页、出版商页面、权威档案页或可核验原文中找到对应文字时，`quoteKind` 才能写 `"quote"`。
+- 论文标题、书名、章节标题、短语标题、SEO 摘要、Google Books 元数据、奖项说明、论文内容转述，都不能标为 quote。
+- 如果没有找到合适原文引用，`quoteText` 写成一句清楚的核心要点，`quoteKind` 写 `"keyIdea"`。
+- 中文 `quoteText.zh` 必须是自然中文翻译或中文核心要点，不要直接复制英文，除非是通用专名、缩写或模型名。
+- `quoteMeta.sourceUrl` 必须指向核验来源；如果是 `keyIdea`，也应指向用于理解该要点的主论文或官方来源。
+- 生成网站数据前运行 `npm run audit:ai100-quotes`；只有 audit 推荐 quote 或人工确认原文可核验后，才能把该条加入 `VERIFIED_AI100_QUOTE_KEYS` 或显式设置 `quoteKind: "quote"`。
+
 ==================================================
 【多媒体】
 ==================================================
@@ -323,6 +355,17 @@ imageMeta: {
 ## AI100 网站页面完整 schema（必须遵守）
 
 AI100 achievement 页面在网站中使用固定展陈布局。生成或整理数据时必须让字段支持以下视觉结构、资料来源、quiz 和双语要求。不要只交付正文内容。
+
+### 引文 / 核心要点
+
+AI100 页面右侧 commentary 的第一块可能显示为 `Quote / 引言摘录`，也可能显示为 `Key idea / 核心要点`。生成数据时必须遵守：
+
+- `quoteText` 不是默认“引文”；它可以是已核验原文引用，也可以是核心要点。
+- `quoteKind: "quote"` 仅用于真实、可验证原文引用。
+- `quoteKind: "keyIdea"` 用于论文标题、短语标题、摘要性短语、转述或无法核验原文的内容。
+- 真正的 quote 会由生成器加引号；key idea 不加引号。
+- 页面 label 由生成器输出为 `quoteLabel: { en: "Quote" | "Key idea", zh: "引言摘录" | "核心要点" }`。
+- 新增或修改后必须运行 `npm run audit:ai100-quotes`，并检查生成后的 `milestones-data.js` 中 `quoteKind/quoteLabel` 是否正确。
 
 ### 顶部三联视觉区
 

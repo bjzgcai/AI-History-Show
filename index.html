@@ -6276,14 +6276,14 @@
             }
 
             const quote = String(lx(safeMilestone.quote) || '').trim();
+            const quoteLabel = String(lx(safeMilestone.quoteLabel) || '').trim() || tx('quoteExcerpt');
             const quoteAttribution = String(lx(safeMilestone.quoteAttribution) || '').trim();
-            const quoteLabel = String(lx(safeMilestone.quoteLabel) || '').trim();
             const descriptionText = stripHtml(lx(safeMilestone.description) || '');
             const commentarySections = [];
             if (quote && quote !== '待补充') {
                 const attributionPrefix = quoteAttribution && quoteAttribution.startsWith('《') ? `${tx('source')}：` : `${tx('attribution')}：`;
                 commentarySections.push({
-                    label: quoteLabel || tx('quoteExcerpt'),
+                    label: quoteLabel,
                     html: quoteAttribution ? `${quote}<br>${attributionPrefix}${quoteAttribution}` : quote
                 });
             }
@@ -6326,6 +6326,7 @@
                 primaryVideo,
                 videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
                 quoteHtml: quote,
+                quoteLabel,
                 quotePage: String(safeMilestone.quotePage || '').trim(),
                 commentaryOverrideSections: Array.isArray(safeMilestone.commentarySections) ? safeMilestone.commentarySections : [],
                 commentarySections,
