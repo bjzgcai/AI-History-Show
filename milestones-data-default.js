@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-06 07:46
+// 生成时间: 2026-07-09 15:33
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -95,6 +95,11 @@ const milestones = [
     "quote": {
       "en": "\"Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.\"",
       "zh": "\"学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence》, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
@@ -261,6 +266,11 @@ const milestones = [
     "quote": {
       "en": "\"The theory serves as a bridge between biophysics and psychology.\"",
       "zh": "\"这一理论在生物物理学和心理学之间架起了一座桥梁。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》, Frank Rosenblatt",
@@ -438,6 +448,11 @@ const milestones = [
     "quote": {
       "en": "\"Their rigorous work and brilliant technique does not make the perceptron look very good.\"",
       "zh": "\"他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Perceptrons: An Introduction to Computational Geometry》, Marvin Minsky, Seymour Papert",
@@ -619,6 +634,11 @@ const milestones = [
     "quote": {
       "en": "\"The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.\"",
       "zh": "\"能够创造有用的新特征，使反向传播区别于更早、更简单的方法。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
@@ -810,6 +830,11 @@ const milestones = [
       "en": "\"The current report develops a proposal ... to provide networks with a dynamic memory.\"",
       "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《Finding Structure in Time》, Jeffrey L. Elman",
       "zh": "《在时间中发现结构》, 杰弗里·L·埃尔曼"
@@ -953,6 +978,11 @@ const milestones = [
     "quote": {
       "en": "\"Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.\"",
       "zh": "\"专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Gradient-Based Learning Applied to Document Recognition》, Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
@@ -1121,6 +1151,11 @@ const milestones = [
     "quote": {
       "en": "\"We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).\"",
       "zh": "\"长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Long Short-Term Memory》, Sepp Hochreiter, Jürgen Schmidhuber",
@@ -1301,6 +1336,11 @@ const milestones = [
       "en": "\"We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.\"",
       "zh": "\"我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton",
       "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·E·辛顿"
@@ -1469,6 +1509,11 @@ const milestones = [
       "en": "\"The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.\"",
       "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《Highway Networks》, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
       "zh": "《高速网络》, 鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
@@ -1626,6 +1671,11 @@ const milestones = [
       "en": "\"We propose a new framework for estimating generative models via adversarial nets.\"",
       "zh": "\"我们提出一种通过对抗过程估计生成模型的新框架。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《Generative Adversarial Nets》, Ian J. Goodfellow et al.",
       "zh": "《生成对抗网络》, 伊恩·J·古德费洛等"
@@ -1771,6 +1821,11 @@ const milestones = [
     "quote": {
       "en": "\"We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.\"",
       "zh": "\"我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
@@ -1954,6 +2009,11 @@ const milestones = [
     "quote": {
       "en": "\"We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.\"",
       "zh": "\"我们提出一种残差学习框架，以便训练比以前深得多的网络。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
@@ -2143,6 +2203,11 @@ const milestones = [
       "en": "\"DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.\"",
       "zh": "\"DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger",
       "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·Q·温伯格"
@@ -2297,6 +2362,11 @@ const milestones = [
     "quote": {
       "en": "\"We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.\"",
       "zh": "\"我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Attention Is All You Need》, Ashish Vaswani et al.",
@@ -2466,6 +2536,11 @@ const milestones = [
       "en": "\"BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.\"",
       "zh": "\"BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al.",
       "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等"
@@ -2633,6 +2708,11 @@ const milestones = [
     "quote": {
       "en": "\"We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.\"",
       "zh": "\"我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever",
@@ -2810,6 +2890,11 @@ const milestones = [
     "quote": {
       "en": "\"We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.\"",
       "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《AI Feynman: a physics-inspired method for symbolic regression》, Silviu-Marian Udrescu, Max Tegmark",
@@ -2989,6 +3074,11 @@ const milestones = [
     "quote": {
       "en": "\"Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.\"",
       "zh": "\"在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al.",
@@ -3215,6 +3305,11 @@ const milestones = [
       "en": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
       "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《ReAct: Synergizing Reasoning and Acting in Language Models》, Shunyu Yao et al.",
       "zh": "《ReAct：在语言模型中协同推理与行动》, 姚顺雨等"
@@ -3388,6 +3483,11 @@ const milestones = [
     "quote": {
       "en": "\"This paper presents the first comprehensive framework for fully automatic scientific discovery.\"",
       "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《The AI Scientist》, Chris Lu et al.",
@@ -3580,6 +3680,11 @@ const milestones = [
       "en": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
       "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
+    },
     "quoteAttribution": {
       "en": "《Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference》, Wei-Lin Chiang et al.",
       "zh": "《聊天机器人竞技场：基于人类偏好评估大语言模型的开放平台》, 蒋维霖等"
@@ -3734,6 +3839,11 @@ const milestones = [
     "quote": {
       "en": "\"I propose to consider the question, 'Can machines think?'\"",
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Computing Machinery and Intelligence》, Alan M. Turing, Mind, 1950",
@@ -4130,8 +4240,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Recursive functions of symbolic expressions became a working language for artificial intelligence.\"",
-      "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
+      "en": "LISP made symbolic AI programmable: lists represented knowledge, and recursive functions let programs manipulate that knowledge directly.",
+      "zh": "LISP 让符号 AI 可以被编程实现：列表用来表示知识，递归函数让程序能直接操作这些知识。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I》, John McCarthy, Communications of the ACM, 1960",
@@ -4524,6 +4639,11 @@ const milestones = [
       "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper excerpt",
+      "zh": "论文摘录"
+    },
     "quoteAttribution": {
       "en": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
       "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
@@ -4625,10 +4745,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper excerpt",
-      "zh": "论文摘录"
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -4966,25 +5082,30 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"laid the foundations for the theory of NP-Completeness\"",
-      "zh": "\"奠定了 NP 完全性理论的基础\""
+      "en": "NP-completeness shows that many hard problems are hard in the same way: if one NP-complete problem can be solved quickly, every problem whose answer can be checked quickly can be solved quickly.",
+      "zh": "NP 完全性说明，许多看似不同的难题共享同一种困难性：如果能快速解决任何一个 NP 完全问题，就能快速解决所有“答案容易检查”的 NP 问题。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
-      "en": "《Stephen A. Cook A.M. Turing Award citation》, Association for Computing Machinery, 1982",
-      "zh": "《斯蒂芬·A·库克 ACM 图灵奖获奖说明》, 美国计算机协会, 1982"
+      "en": "《The Complexity of Theorem-Proving Procedures》, Stephen A. Cook, ACM Symposium on Theory of Computing, 1971",
+      "zh": "《定理证明过程的复杂性》, 斯蒂芬·A·库克, ACM 计算理论研讨会, 1971"
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
-        "en": "Stephen A. Cook A.M. Turing Award citation",
-        "zh": "斯蒂芬·A·库克 ACM 图灵奖获奖说明"
+        "en": "The Complexity of Theorem-Proving Procedures",
+        "zh": "定理证明过程的复杂性"
       },
       "workAuthors": {
-        "en": "Association for Computing Machinery, 1982",
-        "zh": "美国计算机协会, 1982"
+        "en": "Stephen A. Cook, ACM Symposium on Theory of Computing, 1971",
+        "zh": "斯蒂芬·A·库克, ACM 计算理论研讨会, 1971"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950"
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/800157.805047"
     },
     "quotePage": {
       "en": "BenchCouncil AI100: Theory / Complexity theory",
@@ -5365,6 +5486,11 @@ const milestones = [
     "quote": {
       "en": "\"Statistical learning theory was introduced in the late 1960's.\"",
       "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《An Overview of Statistical Learning Theory》, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
@@ -5773,8 +5899,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"capable of discovering proofs for theorems in symbolic logic\"",
-      "zh": "\"能够发现符号逻辑中定理的证明\""
+      "en": "Logic Theorist treated proving as search: it tried symbolic steps until it found a path from assumptions to a theorem.",
+      "zh": "Logic Theorist 把证明看成搜索：程序不断尝试符号推理步骤，直到从前提走到定理。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《The Logic Theory Machine: A Complex Information Processing System》, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
@@ -6159,6 +6290,11 @@ const milestones = [
     "quote": {
       "en": "\"A proof procedure for the predicate calculus is given\"",
       "zh": "\"给出了一个谓词演算的证明过程\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Proving Theorems by Pattern Recognition - II》, Hao Wang, Bell System Technical Journal, 1961",
@@ -6580,8 +6716,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"a uniform proof procedure for quantification theory is given\"",
-      "zh": "\"给出了量词理论的统一证明过程\""
+      "en": "Davis-Putnam and DPLL turned logical satisfiability into a systematic search problem, pruning impossible choices instead of checking every case blindly.",
+      "zh": "Davis-Putnam 与 DPLL 把逻辑可满足性变成系统搜索问题，通过剪掉不可能的选择，避免盲目枚举所有情况。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Computing Procedure for Quantification Theory》, Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
@@ -6979,8 +7120,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"straightforward to implement, computationally efficient\"",
-      "zh": "\"易于实现且计算高效\""
+      "en": "\"The method is straightforward to implement, is computationally efficient, has little memory requirements.\"",
+      "zh": "\"该方法易于实现，计算高效，并且内存需求较低。\""
+    },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Quote",
+      "zh": "引言摘录"
     },
     "quoteAttribution": {
       "en": "《Adam: A Method for Stochastic Optimization》, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
@@ -7434,8 +7580,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"very deep convolutional networks\"",
-      "zh": "\"非常深的卷积网络\""
+      "en": "VGG showed that stacking many small convolution filters can build a simple, deep visual recognizer that learns richer image features layer by layer.",
+      "zh": "VGG 说明，连续堆叠许多小卷积滤波器，也能形成简单而很深的视觉识别器，逐层学习更丰富的图像特征。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Very Deep Convolutional Networks for Large-Scale Image Recognition》, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
@@ -7869,8 +8020,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"adaptation in natural and artificial systems\"",
-      "zh": "\"自然与人工系统中的适应\""
+      "en": "Genetic algorithms search by evolving candidate answers: keep stronger solutions, mix them, mutate them, and repeat.",
+      "zh": "遗传算法通过“进化”候选答案来搜索：保留较好的解，交叉组合，随机变异，然后反复迭代。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Adaptation in Natural and Artificial Systems》, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
@@ -8342,8 +8498,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"convolutional networks for biomedical image segmentation\"",
-      "zh": "\"用于生物医学图像分割的卷积网络\""
+      "en": "U-Net combines a shrinking context path with an expanding detail path so a model can both understand an image and mark precise pixel regions.",
+      "zh": "U-Net 把提取上下文的收缩路径和恢复细节的扩张路径结合起来，让模型既理解图像，又能精确标出像素区域。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《U-Net: Convolutional Networks for Biomedical Image Segmentation》, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
@@ -8831,8 +8992,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"towards real-time object detection\"",
-      "zh": "\"迈向实时目标检测\""
+      "en": "Faster R-CNN learns where objects might be and what they are in one shared network, making proposal-based detection much faster.",
+      "zh": "Faster R-CNN 在同一个共享网络中学习“物体可能在哪里”和“物体是什么”，让基于候选区域的检测大幅加速。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
@@ -9302,8 +9468,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"optimal margin classifiers\"",
-      "zh": "\"最优间隔分类器\""
+      "en": "Support Vector Machines draw the widest possible boundary between classes, using only the critical examples closest to the boundary.",
+      "zh": "支持向量机寻找类别之间尽可能宽的分界线，并主要依靠最靠近边界的关键样本来确定它。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Training Algorithm for Optimal Margin Classifiers》, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
@@ -9779,8 +9950,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"classification and regression trees\"",
-      "zh": "\"分类与回归树\""
+      "en": "CART explains prediction as a sequence of yes-or-no splits, forming a tree that is easy to inspect and prune.",
+      "zh": "CART 把预测解释成一连串是/否分裂，形成一棵容易查看和剪枝的决策树。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Classification and Regression Trees》, Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
@@ -10243,8 +10419,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"optimization by simulated annealing\"",
-      "zh": "\"通过模拟退火进行优化\""
+      "en": "Simulated annealing escapes poor local choices by sometimes accepting worse moves early, then becoming more selective as the search cools.",
+      "zh": "模拟退火在早期有时接受更差的移动来跳出局部最优，随后随着“降温”逐渐变得更挑剔。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Optimization by Simulated Annealing》, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
@@ -10690,8 +10871,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"regression shrinkage and selection\"",
-      "zh": "\"回归收缩与选择\""
+      "en": "Lasso makes models simpler by pushing unneeded coefficients to zero, so prediction and feature selection happen together.",
+      "zh": "Lasso 通过把不需要的系数压到零来简化模型，使预测和特征选择同时发生。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Regression Shrinkage and Selection via the Lasso》, Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
@@ -11145,8 +11331,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"going deeper with convolutions\"",
-      "zh": "\"用卷积走得更深\""
+      "en": "Inception lets a network look at several visual scales in parallel, then combine the useful signals into one compact representation.",
+      "zh": "Inception 让网络并行观察多个视觉尺度，再把有用信号合并成紧凑表示。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Going Deeper with Convolutions》, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
@@ -11583,8 +11774,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"the resolution principle\"",
-      "zh": "\"归结原理\""
+      "en": "Resolution proves statements by contradiction: convert facts into clauses, combine opposing clauses, and search for an inconsistency.",
+      "zh": "归结方法通过反证来证明命题：把事实转成子句，合并相互矛盾的子句，并搜索是否能推出矛盾。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Machine-Oriented Logic Based on the Resolution Principle》, John Alan Robinson, Journal of the ACM, 1965",
@@ -12028,8 +12224,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"logic programming\"",
-      "zh": "\"逻辑程序设计\""
+      "en": "PROLOG lets programmers write facts and rules, then asks the machine to answer queries by logical inference.",
+      "zh": "PROLOG 让程序员写下事实和规则，再让机器通过逻辑推理回答查询。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《The Birth of Prolog》, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
@@ -12460,8 +12661,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"communication between man and machine\"",
-      "zh": "\"人与机器之间的交流\""
+      "en": "ELIZA showed that simple pattern-matching rules can make a computer conversation feel surprisingly human, even without real understanding.",
+      "zh": "ELIZA 说明，简单的模式匹配规则也能让计算机对话显得出人意料地像人，尽管它并不真正理解内容。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine》, Joseph Weizenbaum, Communications of the ACM, 1966",
@@ -12895,8 +13101,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"neural networks and physical systems\"",
-      "zh": "\"神经网络与物理系统\""
+      "en": "A Hopfield network stores patterns as stable states, then cleans up a noisy input by settling into the nearest remembered pattern.",
+      "zh": "Hopfield 网络把模式存成稳定状态，再通过收敛到最近的记忆模式来修复带噪输入。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Neural Networks and Physical Systems with Emergent Collective Computational Abilities》, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
@@ -13328,8 +13539,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"prevent neural networks from overfitting\"",
-      "zh": "\"防止神经网络过拟合\""
+      "en": "Dropout trains a network while randomly hiding neurons, forcing features to work together instead of relying on a few fragile shortcuts.",
+      "zh": "Dropout 在训练时随机隐藏神经元，迫使特征协同工作，而不是依赖少数脆弱捷径。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Dropout: A Simple Way to Prevent Neural Networks from Overfitting》, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
@@ -13770,8 +13986,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"You Only Look Once\"",
-      "zh": "\"只看一次\""
+      "en": "YOLO treats object detection as one fast prediction: divide the image into regions and predict boxes and classes in a single pass.",
+      "zh": "YOLO 把目标检测变成一次快速预测：把图像分成区域，并在一次前向计算中预测边框和类别。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《You Only Look Once: Unified, Real-Time Object Detection》, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
@@ -14199,8 +14420,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"distributed representations of words\"",
-      "zh": "\"词的分布式表示\""
+      "en": "Word2Vec learns word meaning from context, placing words used in similar situations near each other in vector space.",
+      "zh": "Word2Vec 从上下文中学习词义，把使用场景相似的词放到向量空间中相近的位置。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Distributed Representations of Words and Phrases and their Compositionality》, Tomas Mikolov et al., NeurIPS, 2013",
@@ -14641,8 +14867,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"large-scale hierarchical image database\"",
-      "zh": "\"大规模层级图像数据库\""
+      "en": "ImageNet gave computer vision a huge labeled benchmark, making progress measurable and pushing models to learn from real visual variety.",
+      "zh": "ImageNet 为计算机视觉提供了大规模标注基准，让进展可以被衡量，也推动模型从真实多样的图像中学习。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《ImageNet: A Large-Scale Hierarchical Image Database》, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
@@ -15086,8 +15317,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"playing Atari with deep reinforcement learning\"",
-      "zh": "\"用深度强化学习玩 Atari\""
+      "en": "DQN combined Q-learning with deep networks, letting an agent learn game actions from pixels, rewards, and replayed experience.",
+      "zh": "DQN 把 Q-learning 与深度网络结合起来，让智能体从像素、奖励和回放经验中学习游戏动作。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
     },
     "quoteAttribution": {
       "en": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
@@ -15240,10 +15476,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -15610,8 +15842,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"latent Dirichlet allocation\"",
-      "zh": "\"潜在狄利克雷分配\""
+      "en": "LDA explains documents as mixtures of hidden topics, where each topic is a pattern of words that tends to appear together.",
+      "zh": "LDA 把文档解释为隐藏主题的混合，每个主题都是一组经常共同出现的词。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Latent Dirichlet Allocation》, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
@@ -16039,8 +16276,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Blocks-world language understanding\"",
-      "zh": "\"积木世界语言理解\""
+      "en": "SHRDLU connected language to actions in a blocks world, showing how a program could parse commands, reason, and manipulate objects.",
+      "zh": "SHRDLU 把语言和积木世界中的动作连接起来，展示程序如何解析指令、推理并操作物体。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《SHRDLU dissertation record》, Terry Winograd",
@@ -16470,8 +16712,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Specialized chess search hardware\"",
-      "zh": "\"专用国际象棋搜索硬件\""
+      "en": "Deep Blue beat elite chess by combining massive search, chess knowledge, evaluation functions, and specialized hardware.",
+      "zh": "深蓝通过结合大规模搜索、国际象棋知识、局面评估函数和专用硬件，击败顶级棋手。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
     },
     "quoteAttribution": {
       "en": "《Deep Blue journal article》, Murray Campbell",
@@ -16604,10 +16851,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -16979,8 +17222,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Structured slots with defaults and inheritance\"",
-      "zh": "\"带默认值和继承的槽结构\""
+      "en": "Frames organize knowledge as structured objects with slots, defaults, and inheritance, making common-sense facts easier to reuse.",
+      "zh": "框架把知识组织成带槽位、默认值和继承关系的结构化对象，让常识事实更容易复用。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Framework for Representing Knowledge》, Marvin Minsky",
@@ -17408,8 +17656,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Rule-guided chemical structure inference\"",
-      "zh": "\"规则引导的化学结构推断\""
+      "en": "DENDRAL used expert chemical rules to narrow possible molecular structures, showing how knowledge could guide scientific search.",
+      "zh": "DENDRAL 用化学专家规则缩小可能的分子结构范围，展示知识如何引导科学搜索。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Chemical inference paper record》, Edward Feigenbaum",
@@ -17827,8 +18080,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Scale-invariant local features\"",
-      "zh": "\"尺度不变局部特征\""
+      "en": "SIFT finds distinctive local image features that stay recognizable despite changes in scale, rotation, and viewpoint.",
+      "zh": "SIFT 寻找有辨识度的局部图像特征，即使尺度、旋转和视角变化，这些特征仍能被识别。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《SIFT ICCV paper PDF》, David Lowe",
@@ -18243,8 +18501,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Neighbor-preserving nonlinear embedding\"",
-      "zh": "\"保持邻域的非线性嵌入\""
+      "en": "t-SNE maps high-dimensional data into 2D or 3D so nearby points still tend to represent similar examples.",
+      "zh": "t-SNE 把高维数据映射到 2D 或 3D，使相近的点仍大致代表相似样本。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Visualizing Data using t-SNE》, Laurens van der Maaten",
@@ -18671,8 +18934,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Linear threshold learning machine\"",
-      "zh": "\"线性阈值学习机\""
+      "en": "The perceptron learns a linear decision rule by adjusting weights when it makes mistakes.",
+      "zh": "感知机通过在出错时调整权重，学习一条线性决策规则。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《The perceptron paper record》, Frank Rosenblatt",
@@ -19093,8 +19361,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Layer-wise unsupervised pretraining\"",
-      "zh": "\"逐层无监督预训练\""
+      "en": "Deep Belief Networks trained deep layers step by step before fine-tuning, helping revive interest in deep neural networks.",
+      "zh": "深度置信网络先逐层训练深层结构，再整体微调，帮助重新点燃人们对深度神经网络的兴趣。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Fast learning algorithm for deep belief nets》, Geoffrey Hinton",
@@ -19509,8 +19782,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Bootstrapped value prediction\"",
-      "zh": "\"自举式价值预测\""
+      "en": "Temporal-difference learning updates predictions from the difference between what an agent expected and what the next moment suggests.",
+      "zh": "时序差分学习根据“原本预期”和“下一时刻提示”之间的差距来更新预测。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
     },
     "quoteAttribution": {
       "en": "《Learning to predict by temporal differences》, Richard Sutton",
@@ -19660,10 +19938,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -20010,8 +20284,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Directed acyclic graph plus conditional probabilities\"",
-      "zh": "\"有向无环图加条件概率\""
+      "en": "Bayesian networks use a directed graph to show which variables influence others, then update beliefs as evidence arrives.",
+      "zh": "贝叶斯网络用有向图表示变量之间的影响关系，并在新证据出现时更新信念。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Bayesian Networks technical paper》, Judea Pearl",
@@ -20438,8 +20717,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Resolution-style proof search made practical\"",
-      "zh": "\"让归结式证明搜索变得实用\""
+      "en": "Otter made automated theorem proving practical by organizing clauses and repeatedly selecting promising proof steps.",
+      "zh": "Otter 通过组织子句并反复选择有希望的证明步骤，让自动定理证明更实用。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《OTTER 3.3 Reference Manual》, William McCune",
@@ -20896,8 +21180,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Generate hypotheses, score evidence, rank answers\"",
-      "zh": "\"生成假设、评分证据、排序答案\""
+      "en": "IBM Watson answered open-domain questions by generating candidate answers, gathering evidence, and ranking the most supported response.",
+      "zh": "IBM Watson 通过生成候选答案、收集证据并排序，来回答开放领域问题。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Watson: Beyond Jeopardy!》, David Ferrucci et al.",
@@ -21352,8 +21641,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Non-numerical programs could play\"",
-      "zh": "\"非数值程序也可以对弈\""
+      "en": "Strachey showed that computers could run symbolic game-playing programs, not just numerical calculations.",
+      "zh": "斯特雷奇的跳棋程序说明，计算机不仅能做数值计算，也能运行符号化的博弈程序。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
     },
     "quoteAttribution": {
       "en": "《Logical or non-mathematical programmes》, Christopher Strachey",
@@ -21486,10 +21780,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -21843,8 +22133,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Perfect play in checkers is a draw\"",
-      "zh": "\"跳棋完美对弈结果为和棋\""
+      "en": "Chinook combined search, opening knowledge, and endgame databases to push checkers toward perfect play.",
+      "zh": "Chinook 结合搜索、开局知识和残局数据库，把跳棋推进到接近完美对弈。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Result summary",
+      "zh": "结果摘要"
     },
     "quoteAttribution": {
       "en": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
@@ -21994,10 +22289,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Result summary",
-      "zh": "结果摘要"
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -22363,8 +22654,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Layered feature voters build perception\"",
-      "zh": "\"分层特征投票构成感知\""
+      "en": "Pandemonium models perception as many small feature detectors competing and voting until a higher-level interpretation wins.",
+      "zh": "Pandemonium 把感知建模为许多小特征检测器竞争和投票，直到较高层解释胜出。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Pandemonium: A Paradigm for Learning》, Oliver G. Selfridge",
@@ -22832,8 +23128,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Common sense as explicit knowledge\"",
-      "zh": "\"把常识显式化为知识\""
+      "en": "Cyc tried to encode everyday common sense explicitly, so AI systems could reason with facts people usually leave unstated.",
+      "zh": "Cyc 试图显式编码日常常识，让 AI 系统能使用人类通常不会明说的事实进行推理。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Building Large Knowledge-Based Systems》, Douglas B. Lenat and R. V. Guha",
@@ -23288,8 +23589,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Production rules configured real orders\"",
-      "zh": "\"产生式规则配置真实订单\""
+      "en": "XCON used expert rules to configure computer orders, proving that rule-based AI could solve valuable industrial problems.",
+      "zh": "XCON 用专家规则配置计算机订单，证明基于规则的 AI 可以解决有商业价值的工业问题。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《R1: An Expert in the Computer Systems Domain》, John McDermott",
@@ -23744,8 +24050,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Assign points, update centroids, repeat\"",
-      "zh": "\"分配样本、更新质心、反复迭代\""
+      "en": "K-means groups data by repeatedly assigning points to the nearest center and moving each center to the average of its group.",
+      "zh": "K-means 通过反复把点分配给最近中心，并把每个中心移到本组平均位置来聚类数据。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Least squares quantization in PCM》, Stuart Lloyd",
@@ -24210,8 +24521,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Clusters are dense regions separated by sparse noise\"",
-      "zh": "\"簇是被稀疏噪声隔开的密集区域\""
+      "en": "DBSCAN finds clusters as dense neighborhoods and marks isolated points as noise, without needing the number of clusters in advance.",
+      "zh": "DBSCAN 把密集邻域识别为簇，把孤立点标为噪声，而且不需要提前知道簇的数量。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A density-based algorithm for discovering clusters in large spatial databases with noise》, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
@@ -24679,8 +24995,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Cut the graph through its spectrum\"",
-      "zh": "\"通过图的谱来切分图\""
+      "en": "Spectral clustering turns data into a graph, uses eigenvectors to reveal its shape, and cuts the graph into natural groups.",
+      "zh": "谱聚类先把数据变成图，再用特征向量揭示结构，最后把图切分成自然群组。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Normalized Cuts and Image Segmentation》, Jianbo Shi and Jitendra Malik",
@@ -25148,8 +25469,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Nearest neighbor pattern classification\"",
-      "zh": "\"最近邻模式分类\""
+      "en": "KNN predicts by looking at the most similar stored examples and letting their labels vote.",
+      "zh": "KNN 通过查找最相似的已存样本，并让它们的标签投票来做预测。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Nearest Neighbor Pattern Classification》, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
@@ -25596,8 +25922,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Ridge Regression: Biased Estimation for Nonorthogonal Problems\"",
-      "zh": "\"岭回归：非正交问题中的有偏估计\""
+      "en": "Ridge regression keeps linear models stable by shrinking coefficients, especially when features overlap or data is noisy.",
+      "zh": "岭回归通过收缩系数让线性模型更稳定，特别适合特征重叠或数据有噪声的情况。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Ridge Regression: Biased Estimation for Nonorthogonal Problems》, Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
@@ -26044,8 +26375,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Histograms of Oriented Gradients for Human Detection\"",
-      "zh": "\"用于人体检测的方向梯度直方图\""
+      "en": "HOG describes an image by the directions of local edges, making human shapes easier for a classifier to detect.",
+      "zh": "HOG 用局部边缘方向描述图像，让分类器更容易检测人体形状。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Histograms of Oriented Gradients for Human Detection》, Navneet Dalal and Bill Triggs, CVPR, 2005",
@@ -26492,8 +26828,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"SURF: Speeded Up Robust Features\"",
-      "zh": "\"SURF：加速稳健特征\""
+      "en": "SURF detects and describes local image points quickly, helping match the same object across different views.",
+      "zh": "SURF 快速检测并描述局部图像点，帮助在不同视角中匹配同一物体。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《SURF: Speeded Up Robust Features》, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
@@ -26940,8 +27281,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Nonlinear Component Analysis as a Kernel Eigenvalue Problem\"",
-      "zh": "\"作为核特征值问题的非线性成分分析\""
+      "en": "Kernel PCA uses kernel functions to uncover nonlinear structure while still solving an eigenvector problem.",
+      "zh": "核 PCA 用核函数发现非线性结构，同时仍然把问题转化为特征向量求解。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Nonlinear Component Analysis as a Kernel Eigenvalue Problem》, Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
@@ -27388,8 +27734,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Learning the parts of objects by non-negative matrix factorization\"",
-      "zh": "\"通过非负矩阵分解学习物体部件\""
+      "en": "NMF breaks data into additive parts, so images or documents can be explained as combinations of interpretable components.",
+      "zh": "NMF 把数据分解为可相加的部分，使图像或文档能被解释为可理解组件的组合。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Learning the parts of objects by non-negative matrix factorization》, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
@@ -27836,8 +28187,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"A Global Geometric Framework for Nonlinear Dimensionality Reduction\"",
-      "zh": "\"非线性降维的全局几何框架\""
+      "en": "Isomap preserves distances along a curved data manifold, revealing low-dimensional structure that straight-line distances miss.",
+      "zh": "Isomap 保留弯曲数据流形上的距离，揭示直线距离看不到的低维结构。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Global Geometric Framework for Nonlinear Dimensionality Reduction》, Joshua B. Tenenbaum, Vin de Silva, and John C. Langford, Science, 2000",
@@ -28284,8 +28640,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Nonlinear Dimensionality Reduction by Locally Linear Embedding\"",
-      "zh": "\"通过局部线性嵌入进行非线性降维\""
+      "en": "Locally Linear Embedding preserves each point as a mixture of its neighbors, then unfolds the data into fewer dimensions.",
+      "zh": "局部线性嵌入保留每个点由邻居线性组合而成的关系，再把数据展开到更低维空间。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Nonlinear Dimensionality Reduction by Locally Linear Embedding》, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
@@ -28732,8 +29093,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"A logical calculus of the ideas immanent in nervous activity\"",
-      "zh": "\"神经活动内在观念的逻辑演算\""
+      "en": "The McCulloch-Pitts neuron showed how simple on/off units could compute logic, linking brains to computation.",
+      "zh": "麦卡洛克-皮茨神经元说明，简单的开/关单元也能计算逻辑，从而把大脑与计算联系起来。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Logical Calculus of Ideas Immanent in Nervous Activity》, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
@@ -29180,8 +29546,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"stochastic neural analog reinforcement calculator\"",
-      "zh": "\"随机神经模拟强化计算器\""
+      "en": "SNARC used analog circuits and reward feedback to model a machine learning its way through a maze.",
+      "zh": "SNARC 用模拟电路和奖励反馈来模拟机器学习走迷宫的过程。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《SNARC historical records》, Marvin Minsky and Dean Edmonds, 1951",
@@ -29615,8 +29986,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Self-organized formation of topologically correct feature maps\"",
-      "zh": "\"拓扑正确特征映射的自组织形成\""
+      "en": "A self-organizing map arranges similar inputs near each other, turning high-dimensional patterns into a readable map.",
+      "zh": "自组织映射把相似输入排在相邻位置，将高维模式变成更容易阅读的地图。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Self-organized formation of topologically correct feature maps》, Teuvo Kohonen, Biological Cybernetics, 1982",
@@ -30063,8 +30439,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Learning representations by back-propagating errors\"",
-      "zh": "\"通过反向传播误差学习表示\""
+      "en": "Back-propagation sends error signals backward through layers so each weight learns how it contributed to the mistake.",
+      "zh": "反向传播把误差信号沿网络层向后传递，让每个权重知道自己对错误贡献了多少。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Learning representations by back-propagating errors》, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
@@ -30515,8 +30896,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"rectified linear units\"",
-      "zh": "\"整流线性单元\""
+      "en": "ReLU keeps positive signals and clips negative ones to zero, giving deep networks a simple nonlinearity that trains well.",
+      "zh": "ReLU 保留正信号、把负信号截为零，为深层网络提供简单且易训练的非线性。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Deep Sparse Rectifier Neural Networks》, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
@@ -30954,8 +31340,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position\"",
-      "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
+      "en": "Neocognitron used layered local feature detectors to recognize patterns even when their position shifted.",
+      "zh": "Neocognitron 使用分层局部特征检测器，即使图案位置移动也能识别。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position》, Kunihiko Fukushima, Biological Cybernetics, 1980",
@@ -31389,8 +31780,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Backpropagation Applied to Handwritten Zip Code Recognition\"",
-      "zh": "\"反向传播应用于手写邮编识别\""
+      "en": "LeNet showed that a convolutional network could learn visual features and classify handwritten digits end to end.",
+      "zh": "LeNet 证明卷积网络可以端到端学习视觉特征并识别手写数字。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Backpropagation Applied to Handwritten Zip Code Recognition》, Yann LeCun et al., Neural Computation, 1989",
@@ -31824,8 +32220,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"A Neural Probabilistic Language Model\"",
-      "zh": "\"神经概率语言模型\""
+      "en": "Neural language models learn word vectors from context and use them to predict the next word.",
+      "zh": "神经语言模型从上下文中学习词向量，并用它们预测下一个词。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Neural Probabilistic Language Model》, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
@@ -32272,8 +32673,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"ImageNet Classification with Deep Convolutional Neural Networks\"",
-      "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
+      "en": "AlexNet showed that large GPU-trained convolutional networks could dramatically outperform older vision systems on ImageNet.",
+      "zh": "AlexNet 证明，使用 GPU 训练的大型卷积网络能在 ImageNet 上大幅超过旧式视觉系统。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《ImageNet Classification with Deep Convolutional Neural Networks》, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
@@ -32720,8 +33126,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Deep Residual Learning for Image Recognition\"",
-      "zh": "\"用于图像识别的深度残差学习\""
+      "en": "ResNet adds shortcut connections so very deep networks learn corrections to features instead of relearning everything from scratch.",
+      "zh": "ResNet 加入快捷连接，让很深的网络学习对特征的修正，而不是每层都从头重学。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Deep Residual Learning for Image Recognition》, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
@@ -33168,8 +33579,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift\"",
-      "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""
+      "en": "Batch normalization stabilizes training by normalizing layer activations, helping deep networks learn faster and more reliably.",
+      "zh": "批归一化通过规范化层激活来稳定训练，使深度网络学得更快、更可靠。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》, Sergey Ioffe and Christian Szegedy, ICML, 2015",
@@ -33616,8 +34032,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Densely Connected Convolutional Networks\"",
-      "zh": "\"密集连接卷积网络\""
+      "en": "DenseNet connects each layer to many later layers, encouraging feature reuse and improving gradient flow.",
+      "zh": "DenseNet 将每一层连接到许多后续层，促进特征复用并改善梯度流动。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Densely Connected Convolutional Networks》, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
@@ -34068,8 +34489,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Attention Is All You Need\"",
-      "zh": "\"Attention Is All You Need\""
+      "en": "The Transformer replaces recurrence with attention, letting every token directly weigh the relevance of other tokens.",
+      "zh": "Transformer 用注意力取代循环结构，让每个词元直接衡量其他词元与自己的相关性。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Attention Is All You Need》, Ashish Vaswani et al., NeurIPS, 2017",
@@ -34520,8 +34946,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"An Image is Worth 16x16 Words\"",
-      "zh": "\"一张图像价值 16x16 个词\""
+      "en": "Vision Transformer treats an image as a sequence of patches, applying transformer attention to visual tokens.",
+      "zh": "视觉 Transformer 把图像看成一串图像块，对视觉词元应用 Transformer 注意力。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》, Alexey Dosovitskiy et al., ICLR, 2021",
@@ -34968,8 +35399,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Long short-term memory\"",
-      "zh": "\"长短期记忆\""
+      "en": "LSTM uses gates to decide what to remember, forget, and output, helping neural networks learn long-range sequences.",
+      "zh": "LSTM 用门控决定记住什么、忘掉什么、输出什么，帮助神经网络学习长距离序列关系。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Long Short-Term Memory》, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
@@ -35420,8 +35856,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Generative adversarial nets\"",
-      "zh": "\"生成对抗网络\""
+      "en": "A GAN trains a generator and a discriminator against each other, so the generator learns to create more realistic samples.",
+      "zh": "GAN 让生成器和判别器相互对抗训练，使生成器逐渐学会产生更真实的样本。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Generative Adversarial Nets》, Ian Goodfellow et al., NeurIPS, 2014",
@@ -35872,8 +36313,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Neural machine translation by jointly learning to align and translate\"",
-      "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
+      "en": "Attention in neural translation lets the decoder focus on the relevant source words instead of compressing the whole sentence into one vector.",
+      "zh": "神经机器翻译中的注意力让解码器关注相关源词，而不是把整句都压缩进一个向量。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Neural Machine Translation by Jointly Learning to Align and Translate》, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
@@ -36307,8 +36753,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Pre-training of deep bidirectional transformers for language understanding\"",
-      "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
+      "en": "BERT learns language by predicting masked words from both left and right context, then adapts that knowledge to many tasks.",
+      "zh": "BERT 通过左右上下文预测被遮住的词来学习语言，再把这种知识迁移到多种任务。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》, Jacob Devlin et al., NAACL, 2019",
@@ -36742,8 +37193,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Improving language understanding by generative pre-training\"",
-      "zh": "\"通过生成式预训练改进语言理解\""
+      "en": "GPT showed that generative pre-training on large text corpora can produce a language model that adapts to downstream tasks.",
+      "zh": "GPT 证明，在大规模文本上进行生成式预训练，可以得到能适配下游任务的语言模型。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Improving Language Understanding by Generative Pre-Training》, Alec Radford et al., OpenAI, 2018",
@@ -37190,8 +37646,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Highly accurate protein structure prediction with AlphaFold\"",
-      "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
+      "en": "AlphaFold2 predicts protein 3D structure by combining evolutionary signals, attention, and geometry-aware refinement.",
+      "zh": "AlphaFold2 结合进化信号、注意力和几何感知优化来预测蛋白质三维结构。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Highly accurate protein structure prediction with AlphaFold》, John Jumper et al., Nature, 2021",
@@ -37625,8 +38086,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Learning transferable visual models from natural language supervision\"",
-      "zh": "\"从自然语言监督中学习可迁移视觉模型\""
+      "en": "CLIP learns by matching images with natural-language captions, giving one model a shared visual and text understanding.",
+      "zh": "CLIP 通过匹配图像和自然语言说明来学习，让一个模型形成共享的视觉与文本理解。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Learning Transferable Visual Models From Natural Language Supervision》, Alec Radford et al., ICML, 2021",
@@ -38060,8 +38526,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Zero-shot text-to-image generation\"",
-      "zh": "\"零样本文本到图像生成\""
+      "en": "DALL-E showed that a model could generate images from text prompts by learning visual concepts through language.",
+      "zh": "DALL-E 证明模型可以通过语言学习视觉概念，并根据文本提示生成图像。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Zero-Shot Text-to-Image Generation》, Aditya Ramesh et al., ICML, 2021",
@@ -38495,8 +38966,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"High-resolution image synthesis with latent diffusion models\"",
-      "zh": "\"使用潜扩散模型进行高分辨率图像合成\""
+      "en": "Stable Diffusion generates images by denoising a compact latent representation instead of working directly in full pixel space.",
+      "zh": "Stable Diffusion 通过在紧凑潜空间中去噪生成图像，而不是直接在完整像素空间中操作。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《High-Resolution Image Synthesis with Latent Diffusion Models》, Robin Rombach et al., CVPR, 2022",
@@ -38934,8 +39410,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Segment anything\"",
-      "zh": "\"分割一切\""
+      "en": "Segment Anything makes image segmentation promptable: points, boxes, or masks can tell the model what object to cut out.",
+      "zh": "Segment Anything 让图像分割变成可提示任务：点、框或掩码都能告诉模型要切出哪个物体。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Segment Anything》, Alexander Kirillov et al., ICCV, 2023",
@@ -39369,8 +39850,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Hierarchical vision Transformer using shifted windows\"",
-      "zh": "\"使用移位窗口的层级视觉 Transformer\""
+      "en": "Swin Transformer applies attention inside shifted image windows, building hierarchical visual features efficiently.",
+      "zh": "Swin Transformer 在移位图像窗口内应用注意力，高效构建层级视觉特征。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Swin Transformer: Hierarchical Vision Transformer using Shifted Windows》, Ze Liu et al., ICCV, 2021",
@@ -39835,8 +40321,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Global vectors for word representation\"",
-      "zh": "\"用于词表示的全局向量\""
+      "en": "GloVe learns word vectors from global co-occurrence counts, capturing meaning from how often words appear together.",
+      "zh": "GloVe 从全局共现统计中学习词向量，用词语共同出现的频率捕捉语义。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《GloVe: Global Vectors for Word Representation》, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
@@ -40301,8 +40792,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Conditional generative adversarial nets\"",
-      "zh": "\"条件生成对抗网络\""
+      "en": "Conditional GANs guide generation with labels or other conditions, making the output controllable instead of purely random.",
+      "zh": "条件 GAN 用标签或其他条件引导生成，使输出可控，而不是完全随机。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Conditional Generative Adversarial Nets》, Mehdi Mirza and Simon Osindero, 2014",
@@ -40767,8 +41263,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Unsupervised representation learning with deep convolutional generative adversarial networks\"",
-      "zh": "\"使用深度卷积生成对抗网络进行无监督表示学习\""
+      "en": "DCGAN showed that convolutional GANs can learn useful visual features while generating sharper images.",
+      "zh": "DCGAN 证明卷积式 GAN 在生成更清晰图像的同时，也能学到有用的视觉特征。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
@@ -41233,8 +41734,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Wasserstein generative adversarial networks\"",
-      "zh": "\"Wasserstein 生成对抗网络\""
+      "en": "Wasserstein GAN changes the training objective so generator progress is smoother and collapse is easier to diagnose.",
+      "zh": "Wasserstein GAN 改变训练目标，使生成器进展更平滑，也更容易诊断模式崩塌。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Wasserstein Generative Adversarial Networks》, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
@@ -41699,8 +42205,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Unpaired image-to-image translation using cycle-consistent adversarial networks\"",
-      "zh": "\"使用循环一致对抗网络进行非配对图像到图像转换\""
+      "en": "CycleGAN learns to translate between two image domains without paired examples by requiring translations to cycle back consistently.",
+      "zh": "CycleGAN 不需要成对样本也能在两个图像域之间转换，因为它要求转换后还能一致地转回原图。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》, Jun-Yan Zhu et al., ICCV, 2017",
@@ -42165,8 +42676,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Image-to-image translation with conditional adversarial networks\"",
-      "zh": "\"使用条件对抗网络进行图像到图像转换\""
+      "en": "Pix2Pix learns paired image translation, such as turning sketches into photos, by combining conditional generation with a reconstruction target.",
+      "zh": "Pix2Pix 通过条件生成和重建目标学习成对图像转换，例如把草图变成照片。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Image-to-Image Translation with Conditional Adversarial Networks》, Phillip Isola et al., CVPR, 2017",
@@ -42631,8 +43147,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"A style-based generator architecture for generative adversarial networks\"",
-      "zh": "\"面向生成对抗网络的基于风格的生成器架构\""
+      "en": "StyleGAN controls image generation through style variables at different layers, separating coarse structure from fine details.",
+      "zh": "StyleGAN 通过不同层的风格变量控制图像生成，把粗略结构和细节纹理分开。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《A Style-Based Generator Architecture for Generative Adversarial Networks》, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
@@ -43097,8 +43618,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Auto-encoding variational Bayes\"",
-      "zh": "\"自动编码变分贝叶斯\""
+      "en": "A variational autoencoder learns a smooth latent space where new examples can be sampled and decoded.",
+      "zh": "变分自编码器学习平滑的潜空间，可以从中采样并解码生成新样本。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Auto-Encoding Variational Bayes》, Diederik Kingma and Max Welling, ICLR, 2014",
@@ -43563,8 +44089,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Deep unsupervised learning using nonequilibrium thermodynamics\"",
-      "zh": "\"使用非平衡热力学进行深度无监督学习\""
+      "en": "Diffusion models learn to reverse gradual noise corruption, turning random noise back into structured data.",
+      "zh": "扩散模型学习反转逐步加噪过程，把随机噪声还原成有结构的数据。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Deep Unsupervised Learning using Nonequilibrium Thermodynamics》, Jascha Sohl-Dickstein et al., ICML, 2015",
@@ -44029,8 +44560,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"A new model for learning in graph domains\"",
-      "zh": "\"一种用于图领域学习的新模型\""
+      "en": "Graph Neural Networks update each node by exchanging messages with its neighbors, so models can learn from relationships.",
+      "zh": "图神经网络让每个节点与邻居交换信息来更新表示，使模型能从关系结构中学习。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《The Graph Neural Network Model》, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
@@ -44495,8 +45031,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Semi-supervised classification with graph convolutional networks\"",
-      "zh": "\"使用图卷积网络进行半监督分类\""
+      "en": "GCN spreads and transforms features along graph edges, enabling semi-supervised learning from both labels and network structure.",
+      "zh": "GCN 沿图边传播并变换特征，使模型能同时利用标签和网络结构进行半监督学习。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Semi-Supervised Classification with Graph Convolutional Networks》, Thomas Kipf and Max Welling, ICLR, 2017",
@@ -44961,8 +45502,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Graph attention networks\"",
-      "zh": "\"图注意力网络\""
+      "en": "GAT lets each node pay different attention to different neighbors instead of treating every graph edge equally.",
+      "zh": "GAT 让每个节点对不同邻居分配不同注意力，而不是把所有图边一视同仁。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Graph Attention Networks》, Petar Velickovic et al., ICLR, 2018",
@@ -45437,8 +45983,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Neural architecture search with reinforcement learning\"",
-      "zh": "\"基于强化学习的神经架构搜索\""
+      "en": "Neural architecture search automates model design by proposing, training, scoring, and improving candidate networks.",
+      "zh": "神经架构搜索通过提出、训练、评分并改进候选网络，自动化模型设计。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Neural Architecture Search with Reinforcement Learning》, Barret Zoph and Quoc V. Le, ICLR, 2017",
@@ -45903,8 +46454,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Compressing deep neural networks with pruning, trained quantization and Huffman coding\"",
-      "zh": "\"用剪枝、训练型量化和霍夫曼编码压缩深度神经网络\""
+      "en": "Deep Compression makes neural networks smaller by pruning weights, quantizing values, and coding what remains efficiently.",
+      "zh": "深度压缩通过剪枝权重、量化数值并高效编码剩余信息，让神经网络更小。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》, Song Han, Huizi Mao, and William Dally, ICLR, 2016",
@@ -46379,8 +46935,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Distilling the knowledge in a neural network\"",
-      "zh": "\"蒸馏神经网络中的知识\""
+      "en": "Knowledge distillation trains a smaller student model to mimic a larger teacher, transferring behavior into a cheaper model.",
+      "zh": "知识蒸馏训练较小的学生模型模仿较大的教师模型，把行为迁移到更便宜的模型中。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Distilling the Knowledge in a Neural Network》, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
@@ -46845,8 +47406,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Common objects in context\"",
-      "zh": "\"上下文中的常见物体\""
+      "en": "MS COCO made vision models handle everyday objects in context, supporting detection, segmentation, and captioning benchmarks.",
+      "zh": "MS COCO 让视觉模型处理真实语境中的日常物体，支撑检测、分割和图像描述基准。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Microsoft COCO: Common Objects in Context》, Tsung-Yi Lin et al., ECCV, 2014",
@@ -47311,8 +47877,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Learning from delayed rewards\"",
-      "zh": "\"从延迟奖励中学习\""
+      "en": "Q-learning estimates the long-term value of actions, letting an agent learn what to do without knowing the environment rules in advance.",
+      "zh": "Q-learning 估计动作的长期价值，让智能体无需预先知道环境规则也能学习该怎么做。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Learning from Delayed Rewards》, Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
@@ -47777,8 +48348,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Continuous control with deep reinforcement learning\"",
-      "zh": "\"使用深度强化学习进行连续控制\""
+      "en": "DDPG extends deep reinforcement learning to continuous actions by pairing an actor that chooses actions with a critic that scores them.",
+      "zh": "DDPG 通过让 actor 选择动作、critic 评价动作，把深度强化学习扩展到连续动作空间。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Continuous Control with Deep Reinforcement Learning》, Timothy Lillicrap et al., ICLR, 2016",
@@ -48243,8 +48819,13 @@ const milestones = [
     "photos": [],
     "videoUrl": "",
     "quote": {
-      "en": "\"Neuronlike adaptive elements that can solve difficult learning control problems\"",
-      "zh": "\"能够解决困难学习控制问题的类神经自适应元件\""
+      "en": "Actor-Critic splits reinforcement learning into two jobs: an actor chooses actions, and a critic estimates how good those actions were.",
+      "zh": "Actor-Critic 把强化学习分成两项工作：actor 选择动作，critic 估计这些动作有多好。"
+    },
+    "quoteKind": "keyIdea",
+    "quoteLabel": {
+      "en": "Key idea",
+      "zh": "核心要点"
     },
     "quoteAttribution": {
       "en": "《Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems》, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
@@ -48712,6 +49293,11 @@ const milestones = [
       "en": "\"Non-numerical programs could play\"",
       "zh": "\"非数值程序也可以对弈\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《Logical or non-mathematical programmes》, Christopher Strachey",
       "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
@@ -48843,10 +49429,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -49210,6 +49792,11 @@ const milestones = [
       "en": "\"Bootstrapped value prediction\"",
       "zh": "\"自举式价值预测\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
+    },
     "quoteAttribution": {
       "en": "《Learning to predict by temporal differences》, Richard Sutton",
       "zh": "《通过时序差分学习预测》, 理查德·萨顿"
@@ -49358,10 +49945,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -49718,6 +50301,11 @@ const milestones = [
       "en": "\"Perfect play in checkers is a draw\"",
       "zh": "\"跳棋完美对弈结果为和棋\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Result summary",
+      "zh": "结果摘要"
+    },
     "quoteAttribution": {
       "en": "《Checkers Is Solved》, Jonathan Schaeffer et al.",
       "zh": "《跳棋已被求解》, 乔纳森·谢弗等"
@@ -49866,10 +50454,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Result summary",
-      "zh": "结果摘要"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -50258,6 +50842,11 @@ const milestones = [
       "en": "\"Takeshi Murakami (0) vs. Logistello (6)\"",
       "zh": "\"村上健 0 比 6 负于 Logistello\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Match record",
+      "zh": "赛事记录"
+    },
     "quoteAttribution": {
       "en": "《The Othello Match of the Year》, Michael Buro / NEC Research Institute",
       "zh": "《年度黑白棋对局》, 迈克尔·布罗 / NEC 研究院"
@@ -50343,10 +50932,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Match record",
-      "zh": "赛事记录"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -50741,6 +51326,11 @@ const milestones = [
       "en": "\"Specialized chess search hardware\"",
       "zh": "\"专用国际象棋搜索硬件\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Technical cue",
+      "zh": "技术线索"
+    },
     "quoteAttribution": {
       "en": "《Deep Blue journal article》, Murray Campbell",
       "zh": "《深蓝期刊论文》, 默里·坎贝尔"
@@ -50872,10 +51462,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -51270,6 +51856,11 @@ const milestones = [
       "en": "\"Chinese Chess: 16 tournaments, 38 programs\"",
       "zh": "\"中国象棋：16 次赛事，38 个程序\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Tournament archive",
+      "zh": "赛事档案"
+    },
     "quoteAttribution": {
       "en": "《ICGA Tournaments: Chinese Chess》, International Computer Games Association tournament archive",
       "zh": "《ICGA 赛事：中国象棋》, 国际计算机博弈协会赛事档案"
@@ -51355,10 +51946,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Tournament archive",
-      "zh": "赛事档案"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -51739,6 +52326,11 @@ const milestones = [
       "en": "\"playing Atari with deep reinforcement learning\"",
       "zh": "\"用深度强化学习玩 Atari\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《Playing Atari with Deep Reinforcement Learning》, Volodymyr Mnih et al., DeepMind, 2013",
       "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
@@ -51890,10 +52482,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -52283,6 +52871,11 @@ const milestones = [
       "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper excerpt",
+      "zh": "论文摘录"
+    },
     "quoteAttribution": {
       "en": "《Mastering the Game of Go with Deep Neural Networks and Tree Search》, David Silver et al., Nature, 2016",
       "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
@@ -52384,10 +52977,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper excerpt",
-      "zh": "论文摘录"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -52735,6 +53324,11 @@ const milestones = [
       "en": "\"a general reinforcement learning algorithm\"",
       "zh": "\"一种通用强化学习算法\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play》, David Silver et al., Science, 2018",
       "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
@@ -52820,10 +53414,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -53216,6 +53806,11 @@ const milestones = [
       "en": "\"superhuman AI for heads-up no-limit poker\"",
       "zh": "\"面向一对一无限注扑克的超人 AI\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《Superhuman AI for heads-up no-limit poker: Libratus beats top professionals》, Noam Brown and Tuomas Sandholm, Science, 2017",
       "zh": "《一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手》, Noam Brown 与 Tuomas Sandholm，Science，2017"
@@ -53301,10 +53896,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -53677,6 +54268,11 @@ const milestones = [
       "en": "\"superhuman AI for multiplayer poker\"",
       "zh": "\"面向多人扑克的超人 AI\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《Superhuman AI for multiplayer poker》, Noam Brown and Tuomas Sandholm, Science, 2019",
       "zh": "《面向多人扑克的超人 AI》, Noam Brown 与 Tuomas Sandholm，Science，2019"
@@ -53762,10 +54358,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -54151,6 +54743,11 @@ const milestones = [
       "en": "\"Mastering Mahjong with Deep Reinforcement Learning\"",
       "zh": "\"用深度强化学习掌握麻将\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《Suphx: Mastering Mahjong with Deep Reinforcement Learning》, Junjie Li et al., arXiv, 2020",
       "zh": "《Suphx：用深度强化学习掌握麻将》, Junjie Li 等，arXiv，2020"
@@ -54236,10 +54833,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",
@@ -54620,6 +55213,11 @@ const milestones = [
       "en": "\"planning with a learned model\"",
       "zh": "\"用学习到的模型进行规划\""
     },
+    "quoteKind": "quote",
+    "quoteLabel": {
+      "en": "Paper cue",
+      "zh": "论文线索"
+    },
     "quoteAttribution": {
       "en": "《Mastering Atari, Go, chess and shogi by planning with a learned model》, Julian Schrittwieser et al., Nature, 2020",
       "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》, Julian Schrittwieser 等，Nature，2020"
@@ -54705,10 +55303,6 @@ const milestones = [
         }
       },
       "videos": []
-    },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
     },
     "storyline": {
       "id": "gaming-ai",

@@ -202,7 +202,8 @@ module.exports = {
 
     commentaryVideo: "URL of the commentary video (.mp4)",
 
-    quoteText: { zh: "引言正文\n支持换行", en: "Quote text\nNewlines become <br>" },
+    quoteText: { zh: "引言正文或核心要点\n支持换行", en: "Quote text or key idea\nNewlines become <br>" },
+    quoteKind: "quote", // or "keyIdea"; AI100 entries require source verification before using "quote"
     quotePage: "— Citation source",
 
     images: [
@@ -226,7 +227,8 @@ module.exports = {
 | `description` | string \| `{zh, en}` | Detailed description; HTML allowed |
 | `figures` | array | Key figures `[{name, role}]` |
 | `commentaryVideo` | string | Commentary video URL (.mp4) |
-| `quoteText` | string \| `{zh, en}` | Quote text; `\n` becomes `<br>` automatically |
+| `quoteText` | string \| `{zh, en}` | Verified quote text or key idea; `\n` becomes `<br>` automatically |
+| `quoteKind` | `"quote"` \| `"keyIdea"` | Optional display semantics; AI100 quotes must be verified before using `"quote"` |
 | `quotePage` | string | Quote source / attribution |
 | `images` | array | List of relative image paths |
 | `videos` | array | List of YouTube video IDs (matching JSON metadata required) |

@@ -202,7 +202,8 @@ module.exports = {
 
     commentaryVideo: "评论视频 URL（.mp4 格式）",
 
-    quoteText: { zh: "引言正文\n支持换行", en: "Quote text\nNewlines become <br>" },
+    quoteText: { zh: "引言正文或核心要点\n支持换行", en: "Quote text or key idea\nNewlines become <br>" },
+    quoteKind: "quote", // 或 "keyIdea"；AI100 条目使用 "quote" 前必须完成来源核验
     quotePage: "— 引用来源",
 
     images: [
@@ -226,7 +227,8 @@ module.exports = {
 | `description` | string \| `{zh, en}` | 详细描述，支持 HTML |
 | `figures` | array | 关键人物列表 `[{name, role}]` |
 | `commentaryVideo` | string | 讲解视频 URL（.mp4） |
-| `quoteText` | string \| `{zh, en}` | 引言文字，`\n` 自动转 `<br>` |
+| `quoteText` | string \| `{zh, en}` | 已核验引言文字或核心要点，`\n` 自动转 `<br>` |
+| `quoteKind` | `"quote"` \| `"keyIdea"` | 可选展示语义；AI100 使用 `"quote"` 前必须核验原文来源 |
 | `quotePage` | string | 引言来源/归属 |
 | `images` | array | 图片相对路径列表 |
 | `videos` | array | YouTube 视频 ID 列表（需有对应 JSON 元数据） |

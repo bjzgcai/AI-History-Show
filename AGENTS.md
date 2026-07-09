@@ -48,7 +48,8 @@ node manage/generate.js
 | `location` | `{name, country, coordinates: [lat, lng]}` |
 | `description` | 正文描述 |
 | `figures` | `[{name, role}]` |
-| `quoteText` / `quotePage` | 引用文字（`\n` → `<br>`）/ 出处 |
+| `quoteText` / `quotePage` | 引用文字或核心要点（`\n` → `<br>`）/ 出处 |
+| `quoteKind` | 可选：`"quote"` 或 `"keyIdea"`；AI100 默认由生成器按核验名单决定 |
 | `commentaryVideo` | 解说视频 mp4 URL |
 | `images` | 相对路径数组 |
 | `videos` | `[{id, title, channel, duration}]`，YouTube 视频 |
@@ -94,6 +95,18 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 - 推荐包含类似句式：`Experts generally treat...` / `专家通常把/认为...`。
 - 人物/portrait 卡片的 `imageMeta.subcaption` 仍应保持短句，只说明人物与成就的关系（如 `Isomap 主要作者`），不要把这里当作 context 段落。
 
+#### 3a. 引文 / 核心要点规则
+
+- 新增或修改 AI100 achievement 时，必须先尝试为 `quoteText` 查找真实、可验证的原文引用。
+- 只有满足以下全部条件的内容才能标为 `quote` / `引言摘录`：
+  - 能在可靠原始来源、官方论文页、出版商页面、权威档案页或可核验原文中找到对应文字。
+  - 不是论文标题、书名、章节标题、短语标题、SEO 摘要、Google Books 元数据、奖项说明或对论文内容的转述。
+  - `quoteMeta.sourceUrl` 指向可核验来源，`quoteMeta.workTitle/workAuthors` 与来源一致。
+- 找不到合适原文引用时，不要硬造引文；将 `quoteText` 写成该成就的核心要点，并让页面显示为 `Key idea` / `核心要点`。
+- `quoteKind` 可显式写为 `"quote"` 或 `"keyIdea"`；AI100 若未显式指定，生成器会只把 `VERIFIED_AI100_QUOTE_KEYS` 中的条目标为 quote，其余默认标为 key idea。
+- 若核验出新的真实原文引用，必须同步更新 `manage/generate.js` 中的 `VERIFIED_AI100_QUOTE_KEYS`，或给该事件设置明确且有依据的 `quoteKind: "quote"`。
+- 运行 `npm run audit:ai100-quotes` 辅助检查：它会先查来源页面，找到非标题型原文才推荐 quote；标题/短语/转述/PDF 未读内容应继续作为 key idea。
+
 #### 4. 资料来源
 
 - `achievement.sources` 至少 3 条，推荐 4 条，风格参考旧 achievement。
@@ -126,6 +139,7 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 
 - 修改 source 后必须运行 `node manage/generate.js`。
 - 至少运行 `npm run lint` 和 `npm test`。
+- 新增或修改 AI100 引文 / 核心要点时，运行 `npm run audit:ai100-quotes`，并确认生成后的 `quoteKind` / `quoteLabel` 符合核验结果。
 - 新增或大批修改 AI100 achievement 时，运行 `npm run validate:ai100-context`，确保主要 context sections 满足至少两句要求。
 - 新增 archive/right-side cards 后，应抽查生成后的 `milestones-data.js`，确认 `visualModules` 的中文字段没有英文 UI 句子残留。
 - 若影响启动或页面加载，运行 `npm run validate:startup`。

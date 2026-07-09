@@ -139,11 +139,11 @@ NP-completeness remains standard theory in computer science education and resear
 
 # Expert Evaluations
 
-- Quote: "laid the foundations for the theory of NP-Completeness"
-- Person: ACM A.M. Turing Award citation editors
-- Organization: Association for Computing Machinery
-- Year: 1982 award page
-- Source URL: https://awards.acm.org/award_winners/cook_N991950
+- Key idea: NP-completeness shows that many hard problems are hard in the same way: if one NP-complete problem can be solved quickly, every problem whose answer can be checked quickly can be solved quickly.
+- Source work: Stephen A. Cook, "The Complexity of Theorem-Proving Procedures"
+- Organization: ACM Symposium on Theory of Computing
+- Year: 1971
+- Source URL: https://dl.acm.org/doi/10.1145/800157.805047
 
 - Quote: "Cook's contributions to computational complexity were absolutely foundational."
 - Person: Scott Aaronson

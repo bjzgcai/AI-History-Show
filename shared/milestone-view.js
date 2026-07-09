@@ -89,8 +89,8 @@
     function buildCommentarySections(milestone) {
         const sections = [];
         const quoteHtml = String(localize(milestone.quote) || '').trim();
+        const quoteLabel = String(localize(milestone.quoteLabel) || '').trim() || t('quoteExcerpt');
         const quoteAttribution = String(localize(milestone.quoteAttribution) || '').trim();
-        const quoteLabel = String(localize(milestone.quoteLabel) || '').trim();
         const customSections = Array.isArray(milestone.commentarySections)
             ? milestone.commentarySections.filter((section) => stripHtml(localize(section && section.html)))
             : [];
@@ -99,7 +99,7 @@
             const attributionPrefix =
                 quoteAttribution && quoteAttribution.startsWith('《') ? `${t('source')}：` : `${t('attribution')}：`;
             sections.push({
-                label: quoteLabel || t('quoteExcerpt'),
+                label: quoteLabel,
                 html: quoteAttribution ? `${quoteHtml}<br>${attributionPrefix}${quoteAttribution}` : quoteHtml
             });
         }
@@ -155,6 +155,7 @@
         const description = localize(milestone.description) || '';
         const location = localizeObject(milestone.location || { name: '', country: '', coordinates: [] });
         const quote = String(localize(milestone.quote) || '').trim();
+        const quoteLabel = String(localize(milestone.quoteLabel) || '').trim() || t('quoteExcerpt');
 
         return {
             raw: milestone,
@@ -172,8 +173,8 @@
             primaryVideo,
             videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
             quoteHtml: quote && quote !== '待补充' ? quote : '',
+            quoteLabel,
             quoteAttribution: String(localize(milestone.quoteAttribution) || '').trim(),
-            quoteLabel: String(localize(milestone.quoteLabel) || '').trim(),
             quotePage: String(localize(milestone.quotePage) || '').trim(),
             commentaryOverrideSections: Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [],
             commentarySections,
