@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:21.004Z",
+  "eventKey": "1994-chinook",
+  "year": "1989-2007",
+  "title": {
+    "en": "Chinook",
+    "zh": "Chinook 跳棋程序"
+  },
+  "location": {
+    "name": {
+      "en": "University of Alberta",
+      "zh": "阿尔伯塔大学"
+    },
+    "country": {
+      "en": "Alberta, Canada",
+      "zh": "加拿大阿尔伯塔省"
+    },
+    "coordinates": [
+      53.5232,
+      -113.5263
+    ]
+  },
+  "description": {
+    "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>",
+    "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Jonathan Schaeffer portrait",
+        "zh": "乔纳森·谢弗 人物照片"
+      },
+      "subcaption": {
+        "en": "Leader of the Chinook checkers project.",
+        "zh": "Chinook 跳棋项目负责人。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Chinook official project page",
+        "zh": "Chinook 官方项目页面"
+      },
+      "subcaption": {
+        "en": "Screenshot of the cited source page: Chinook project home.",
+        "zh": "引用来源页面截图：Chinook project home。"
+      },
+      "sourceName": {
+        "en": "Chinook project home",
+        "zh": "Chinook project home"
+      },
+      "sourceUrl": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+      "license": {
+        "en": "Source page screenshot for citation preview; rights remain with the source site.",
+        "zh": "Source page screenshot for citation preview; rights remain with the source site."
+      },
+      "usage": {
+        "en": "Source page screenshot",
+        "zh": "来源页面截图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Endgame database table",
+        "zh": "残局数据库表"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Checkers Is Solved.",
+        "zh": "依据 跳棋已被求解 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Checkers Is Solved",
+        "zh": "跳棋已被求解"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Endgame database diagram",
+        "zh": "残局数据库图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Perfect-play proof path",
+        "zh": "完美对弈证明路径"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Checkers Is Solved.",
+        "zh": "依据 跳棋已被求解 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Checkers Is Solved",
+        "zh": "跳棋已被求解"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Proof diagram",
+        "zh": "证明图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Jonathan Schaeffer",
+        "type": "portrait-search",
+        "label": "Jonathan Schaeffer portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jonathan%20Schaeffer%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jonathan Schaeffer",
+        "type": "commons-portrait-search",
+        "label": "Jonathan Schaeffer Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jonathan%20Schaeffer%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Chinook event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1989-2007%20Chinook%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Chinook Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Chinook%201989-2007&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Chinook Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Chinook%201989-2007",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Chinook publication search",
+        "url": "https://www.google.com/search?q=1989-2007%20Chinook%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Chinook scholar search",
+        "url": "https://scholar.google.com/scholar?q=1989-2007%20Chinook%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

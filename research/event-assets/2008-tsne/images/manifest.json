@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:47.080Z",
+  "eventKey": "2008-tsne",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2008-tsne",
+      "label": "Portrait from van der Maaten homepage.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://lvdmaaten.github.io/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-van-der-maaten-homepage.png",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 187299,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Personal website image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:50:46.777Z"
+    },
+    {
+      "eventKey": "2008-tsne",
+      "label": "Local redraw for t-SNE, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-t-sne-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1029,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:50:47.080Z"
+    }
+  ]
+}

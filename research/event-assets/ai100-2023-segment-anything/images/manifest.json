@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:15.199Z",
+  "eventKey": "ai100-2023-segment-anything",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2023-segment-anything",
+      "label": "Segment Anything lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://alexander-kirillov.github.io/",
+      "imageUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+      "finalImageUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+      "localPath": "images/001.segment-anything-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 9044,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Personal site profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:05:14.894Z"
+    },
+    {
+      "eventKey": "ai100-2023-segment-anything",
+      "label": "Original local explainer of prompt-to-mask segmentation.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-prompt-to-mask-segmentation.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1551,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:05:15.199Z"
+    }
+  ]
+}

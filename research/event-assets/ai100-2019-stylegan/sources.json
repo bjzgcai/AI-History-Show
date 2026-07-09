@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:56.344Z",
+  "eventKey": "ai100-2019-stylegan",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "A Style-Based Generator Architecture for GANs",
+      "url": "https://arxiv.org/abs/1812.04948",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "CVPR open-access paper page",
+      "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "NVIDIA StyleGAN repository",
+      "url": "https://github.com/NVlabs/stylegan",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "NVIDIA Research profile",
+      "url": "https://research.nvidia.com/person/tero-karras",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tero Karras Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tero%20Karras%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "StyleGAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=StyleGAN%202019&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "StyleGAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=StyleGAN%202019",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2019%20StyleGAN%20Tero%20Karras%20AI%20history%20source%20images",
+      "query": "2019 StyleGAN Tero Karras AI history source images",
+      "eventKey": "ai100-2019-stylegan"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2019%20StyleGAN%20Tero%20Karras%20AI%20history%20source%20images",
+      "query": "2019 StyleGAN Tero Karras AI history source images",
+      "eventKey": "ai100-2019-stylegan"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2019%20StyleGAN%20Tero%20Karras%20AI%20history%20source%20images",
+      "query": "2019 StyleGAN Tero Karras AI history source images",
+      "eventKey": "ai100-2019-stylegan"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Tero Karras portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Tero%20Karras%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tero Karras Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tero%20Karras%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Tero Karras official biography search",
+      "url": "https://www.google.com/search?q=Tero%20Karras%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "StyleGAN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2019%20StyleGAN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "StyleGAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=StyleGAN%202019&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "StyleGAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=StyleGAN%202019",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "StyleGAN publication search",
+      "url": "https://www.google.com/search?q=2019%20StyleGAN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "StyleGAN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2019%20StyleGAN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "A Style-Based Generator Architecture for GANs",
+      "sourceUrl": "https://arxiv.org/abs/1812.04948",
+      "finalUrl": "https://arxiv.org/abs/1812.04948",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1812.04948] A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "savedPath": "pages/001.a-style-based-generator-architecture-for-gans.html",
+      "fetchedAt": "2026-07-03T12:06:56.719Z"
+    },
+    {
+      "label": "CVPR open-access paper page",
+      "sourceUrl": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
+      "finalUrl": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "CVPR 2019 Open Access Repository",
+      "savedPath": "pages/002.cvpr-open-access-paper-page.html",
+      "fetchedAt": "2026-07-03T12:06:57.812Z"
+    },
+    {
+      "label": "NVIDIA StyleGAN repository",
+      "sourceUrl": "https://github.com/NVlabs/stylegan",
+      "finalUrl": "https://github.com/NVlabs/stylegan",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - NVlabs/stylegan: StyleGAN - Official TensorFlow Implementation · GitHub",
+      "savedPath": "pages/003.nvidia-stylegan-repository.html",
+      "fetchedAt": "2026-07-03T12:06:58.954Z"
+    },
+    {
+      "label": "NVIDIA Research profile",
+      "sourceUrl": "https://research.nvidia.com/person/tero-karras",
+      "finalUrl": "https://research.nvidia.com/person/tero-karras",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Tero Karras | Research",
+      "savedPath": "pages/004.nvidia-research-profile.html",
+      "fetchedAt": "2026-07-03T12:07:02.077Z"
+    },
+    {
+      "label": "Tero Karras Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Tero%20Karras%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Tero%20Karras%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.tero-karras-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:03.687Z"
+    },
+    {
+      "label": "StyleGAN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=StyleGAN%202019&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=StyleGAN%202019&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.stylegan-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:07:06.611Z"
+    },
+    {
+      "label": "StyleGAN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=StyleGAN%202019",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=StyleGAN%202019",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.stylegan-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:07.393Z"
+    }
+  ]
+}

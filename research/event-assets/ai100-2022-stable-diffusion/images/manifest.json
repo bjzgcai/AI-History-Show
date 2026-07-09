@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:05.626Z",
+  "eventKey": "ai100-2022-stable-diffusion",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2022-stable-diffusion",
+      "label": "Lead author of latent diffusion models",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.latentlabs.com/our-dna/",
+      "imageUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+      "finalImageUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+      "localPath": "images/001.lead-author-of-latent-diffusion-models.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 1024640,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Latent Labs profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:05:05.321Z"
+    },
+    {
+      "eventKey": "ai100-2022-stable-diffusion",
+      "label": "Original local explainer of text-guided latent denoising.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-text-guided-latent-denoising.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1440,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:05:05.626Z"
+    }
+  ]
+}

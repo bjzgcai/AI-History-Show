@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:55:32.567Z",
+  "eventKey": "1957-kmeans",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Least squares quantization in PCM",
+      "url": "https://doi.org/10.1109/TIT.1982.1056489",
+      "usage": ""
+    },
+    {
+      "type": "History note",
+      "label": "Bell Labs k-means history note",
+      "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+      "usage": ""
+    },
+    {
+      "type": "Documentation",
+      "label": "scikit-learn KMeans documentation",
+      "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Iris Flowers k-means clustering graphic",
+      "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+      "usage": "Institution photo"
+    },
+    {
+      "type": "primary",
+      "label": "MacQueen k-means proceedings record",
+      "url": "https://projecteuclid.org/euclid.bsmsp/1200512992",
+      "usage": "Primary source for the k-means term and clustering method.",
+      "status": "seed"
+    },
+    {
+      "type": "artifact",
+      "label": "Bell Labs Holmdel Complex overview",
+      "url": "https://en.wikipedia.org/wiki/Bell_Labs_Holmdel_Complex",
+      "usage": "Bell Labs location/background image lead; use file page for rights review.",
+      "status": "seed"
+    },
+    {
+      "type": "background",
+      "label": "Bell System Technical Journal archive copy",
+      "url": "https://archive.org/details/sim_bell-system-technical-journal_1982-03_61_2",
+      "usage": "Archive browsing source for Lloyd paper context.",
+      "status": "seed"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Stuart Lloyd Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Lloyd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "K-means Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=K-means%201957%20%2F%201982&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "K-means Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=K-means%201957%20%2F%201982",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1957%20%2F%201982%20K-means%20Stuart%20Lloyd%20AI%20history%20source%20images",
+      "query": "1957 / 1982 K-means Stuart Lloyd AI history source images",
+      "eventKey": "1957-kmeans"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1957%20%2F%201982%20K-means%20Stuart%20Lloyd%20AI%20history%20source%20images",
+      "query": "1957 / 1982 K-means Stuart Lloyd AI history source images",
+      "eventKey": "1957-kmeans"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1957%20%2F%201982%20K-means%20Stuart%20Lloyd%20AI%20history%20source%20images",
+      "query": "1957 / 1982 K-means Stuart Lloyd AI history source images",
+      "eventKey": "1957-kmeans"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Stuart Lloyd Bell Labs portrait search",
+      "url": "https://www.google.com/search?tbm=isch&q=Stuart%20Lloyd%20Bell%20Labs%20portrait",
+      "query": "",
+      "usage": "Use as lead only; verify original source and rights."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Stuart Lloyd portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Stuart%20Lloyd%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Stuart Lloyd Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Lloyd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Stuart Lloyd official biography search",
+      "url": "https://www.google.com/search?q=Stuart%20Lloyd%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "institution-photo",
+      "label": "Bell Labs Holmdel Complex image lead",
+      "url": "https://en.wikipedia.org/wiki/Bell_Labs_Holmdel_Complex",
+      "query": "",
+      "usage": "Institution/background image lead; review linked file page before production use."
+    },
+    {
+      "type": "diagram-file",
+      "label": "Iris k-means clustering graphic - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+      "query": "",
+      "usage": "Open visual candidate for explaining clustering."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "K-means event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1957%20%2F%201982%20K-means%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "K-means Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=K-means%201957%20%2F%201982&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "K-means Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=K-means%201957%20%2F%201982",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-record",
+      "label": "MacQueen k-means proceedings record",
+      "url": "https://projecteuclid.org/euclid.bsmsp/1200512992",
+      "query": "",
+      "usage": "Primary source for the k-means term."
+    },
+    {
+      "type": "publication-record",
+      "label": "Lloyd quantization paper DOI",
+      "url": "https://doi.org/10.1109/TIT.1982.1056489",
+      "query": "",
+      "usage": "Canonical Lloyd algorithm publication record."
+    },
+    {
+      "type": "publication-search",
+      "label": "K-means publication search",
+      "url": "https://www.google.com/search?q=1957%20%2F%201982%20K-means%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "K-means scholar search",
+      "url": "https://scholar.google.com/scholar?q=1957%20%2F%201982%20K-means%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Least squares quantization in PCM",
+      "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489",
+      "finalUrl": "https://ieeexplore.ieee.org/document/1056489/",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/001.least-squares-quantization-in-pcm.html",
+      "fetchedAt": "2026-07-03T11:55:33.720Z"
+    },
+    {
+      "label": "Bell Labs k-means history note",
+      "sourceUrl": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+      "finalUrl": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+      "ok": false,
+      "status": 404,
+      "contentType": "",
+      "title": "",
+      "savedPath": "pages/002.bell-labs-k-means-history-note.html",
+      "fetchedAt": "2026-07-03T11:55:36.447Z"
+    },
+    {
+      "label": "scikit-learn KMeans documentation",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+      "finalUrl": "https://scikit-learn.org/stable/modules/clustering.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "2.3. Clustering &#8212; scikit-learn 1.9.0 documentation",
+      "savedPath": "pages/003.scikit-learn-kmeans-documentation.html",
+      "fetchedAt": "2026-07-03T11:55:37.871Z"
+    },
+    {
+      "label": "Iris Flowers k-means clustering graphic",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Iris Flowers Clustering kMeans.svg - Wikimedia Commons",
+      "savedPath": "pages/004.iris-flowers-k-means-clustering-graphic.html",
+      "fetchedAt": "2026-07-03T11:55:38.711Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Bell Labs Holmdel.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:55:39.812Z"
+    },
+    {
+      "label": "MacQueen k-means proceedings record",
+      "sourceUrl": "https://projecteuclid.org/euclid.bsmsp/1200512992",
+      "finalUrl": "https://projecteuclid.org/euclid.bsmsp/1200512992",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "",
+      "savedPath": "pages/006.macqueen-k-means-proceedings-record.html",
+      "fetchedAt": "2026-07-03T11:55:41.424Z"
+    },
+    {
+      "label": "Bell Labs Holmdel Complex overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bell_Labs_Holmdel_Complex",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:55:42.122Z"
+    },
+    {
+      "label": "Bell System Technical Journal archive copy",
+      "sourceUrl": "https://archive.org/details/sim_bell-system-technical-journal_1982-03_61_2",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:55:52.944Z"
+    },
+    {
+      "label": "Stuart Lloyd Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Lloyd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Lloyd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/009.stuart-lloyd-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:55:54.306Z"
+    },
+    {
+      "label": "K-means Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=K-means%201957%20%2F%201982&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=K-means%201957%20%2F%201982&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/010.k-means-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:55:55.436Z"
+    },
+    {
+      "label": "K-means Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=K-means%201957%20%2F%201982",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=K-means%201957%20%2F%201982",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/011.k-means-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:55:56.059Z"
+    }
+  ]
+}

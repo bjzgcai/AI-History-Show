@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:58.629Z",
+  "eventKey": "1960-davis-putnam-dpll",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1960-davis-putnam-dpll",
+      "label": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.wikimedia-commons-portrait-of-hilary-putnam-co-author-of-the-1960-davis-putnam-procedure.jpg",
+      "originalLocalPath": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 426221,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+      "downloadedAt": "2026-07-03T10:37:58.327Z"
+    },
+    {
+      "eventKey": "1960-davis-putnam-dpll",
+      "label": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://dl.acm.org/doi/10.1145/321033.321034",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-explainer-showing-cnf-clauses-propagation-branching-conflict-pruning-and-model-acceptan.svg",
+      "originalLocalPath": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 3710,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Explainer graphic",
+      "rights": "Original local explainer; source article images not reused.",
+      "downloadedAt": "2026-07-03T10:37:58.629Z"
+    }
+  ]
+}

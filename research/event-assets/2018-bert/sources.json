@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:23.110Z",
+  "eventKey": "2018-bert",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jacob Devlin Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jacob%20Devlin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alec Radford Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "BERT Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=BERT%202018&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "BERT Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=BERT%202018",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2018%20BERT%20Jacob%20Devlin%20Alec%20Radford%20AI%20history%20source%20images",
+      "query": "2018 BERT Jacob Devlin Alec Radford AI history source images",
+      "eventKey": "2018-bert"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2018%20BERT%20Jacob%20Devlin%20Alec%20Radford%20AI%20history%20source%20images",
+      "query": "2018 BERT Jacob Devlin Alec Radford AI history source images",
+      "eventKey": "2018-bert"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2018%20BERT%20Jacob%20Devlin%20Alec%20Radford%20AI%20history%20source%20images",
+      "query": "2018 BERT Jacob Devlin Alec Radford AI history source images",
+      "eventKey": "2018-bert"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jacob Devlin portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jacob%20Devlin%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jacob Devlin Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jacob%20Devlin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jacob Devlin official biography search",
+      "url": "https://www.google.com/search?q=Jacob%20Devlin%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alec Radford portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alec%20Radford%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alec Radford Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alec Radford official biography search",
+      "url": "https://www.google.com/search?q=Alec%20Radford%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "BERT event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2018%20BERT%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "BERT Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=BERT%202018&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "BERT Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=BERT%202018",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "BERT publication search",
+      "url": "https://www.google.com/search?q=2018%20BERT%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "BERT scholar search",
+      "url": "https://scholar.google.com/scholar?q=2018%20BERT%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Jacob Devlin Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jacob%20Devlin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jacob%20Devlin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.jacob-devlin-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:24.737Z"
+    },
+    {
+      "label": "Alec Radford Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.alec-radford-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:26.329Z"
+    },
+    {
+      "label": "BERT Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=BERT%202018&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=BERT%202018&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/003.bert-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:31:29.431Z"
+    },
+    {
+      "label": "BERT Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=BERT%202018",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=BERT%202018",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/004.bert-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:30.105Z"
+    }
+  ]
+}

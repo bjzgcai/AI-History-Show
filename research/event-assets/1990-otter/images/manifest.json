@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:39.597Z",
+  "eventKey": "1990-otter",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1990-otter",
+      "label": "Original local explainer for turning assumptions and goals into Otter clause lists.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/cs/0310056",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.original-local-explainer-for-turning-assumptions-and-goals-into-otter-clause-lists.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2984,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Input-format diagram",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:53:39.597Z"
+    }
+  ]
+}

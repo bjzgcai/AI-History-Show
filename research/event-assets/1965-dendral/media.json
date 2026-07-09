@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:16.402Z",
+  "eventKey": "1965-dendral",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Edward Feigenbaum",
+      "role": "Leader in expert-system AI",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Edward Feigenbaum portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Edward%20Feigenbaum%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Edward Feigenbaum Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Edward%20Feigenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Edward Feigenbaum official biography search",
+          "url": "https://www.google.com/search?q=Edward%20Feigenbaum%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "DENDRAL event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1965%20DENDRAL%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "DENDRAL Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DENDRAL%201965&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DENDRAL Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DENDRAL%201965",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "DENDRAL publication search",
+      "url": "https://www.google.com/search?q=1965%20DENDRAL%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "DENDRAL scholar search",
+      "url": "https://scholar.google.com/scholar?q=1965%20DENDRAL%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Edward Feigenbaum portrait",
+        "zh": "爱德华·费根鲍姆 肖像"
+      },
+      "subcaption": {
+        "en": "Turing laureate photo from Wikimedia Commons.",
+        "zh": "来自 维基共享资源 的图灵奖得主照片。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "Creative Commons license stated on Commons file page.",
+        "zh": "Creative Commons license stated on Commons file page."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Mass spectrum to fragments",
+        "zh": "质谱到片段"
+      },
+      "subcaption": {
+        "en": "Local redraw for DENDRAL, based on the listed source material.",
+        "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+      "sourceLabel": "Applications of Artificial Intelligence for Chemical Inference",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Rule-filtered molecule search",
+        "zh": "规则筛选分子搜索"
+      },
+      "subcaption": {
+        "en": "Local redraw for DENDRAL, based on the listed source material.",
+        "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+      "sourceLabel": "Applications of Artificial Intelligence for Chemical Inference",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+        "usage": "Historical figure / Key contributor portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Applications of Artificial Intelligence for Chemical Inference",
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "usage": ""
+      },
+      {
+        "type": "History",
+        "label": "Stanford Knowledge Systems Laboratory history",
+        "url": "http://ksl-web.stanford.edu/",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

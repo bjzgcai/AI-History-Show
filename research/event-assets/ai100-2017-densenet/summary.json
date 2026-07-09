@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:02:09.635Z",
+  "eventKey": "ai100-2017-densenet",
+  "year": 2017,
+  "title": {
+    "en": "DenseNet",
+    "zh": "DenseNet"
+  },
+  "location": {
+    "name": {
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
+    },
+    "country": {
+      "en": "Ithaca, United States",
+      "zh": "美国伊萨卡"
+    },
+    "coordinates": [
+      42.4534,
+      -76.4735
+    ]
+  },
+  "description": {
+    "en": "<p>DenseNet connected each layer to every later layer within a dense block. This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper.</p>",
+    "zh": "<p>DenseNet 在密集块中把每一层连接到后续所有层。这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "DenseNet author group",
+        "zh": "DenseNet 作者团队"
+      },
+      "subcaption": {
+        "en": "Researchers behind DenseNet.",
+        "zh": "DenseNet 背后的研究者。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Dense connectivity",
+        "zh": "密集连接"
+      },
+      "subcaption": {
+        "en": "Architecture visual used by the project.",
+        "zh": "项目使用的架构图。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Gao Huang",
+        "type": "portrait-search",
+        "label": "Gao Huang portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Gao%20Huang%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Gao Huang",
+        "type": "commons-portrait-search",
+        "label": "Gao Huang Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Gao%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Zhuang Liu",
+        "type": "portrait-search",
+        "label": "Zhuang Liu portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Zhuang%20Liu%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Zhuang Liu",
+        "type": "commons-portrait-search",
+        "label": "Zhuang Liu Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Zhuang%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "DenseNet event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2017%20DenseNet%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "DenseNet Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=DenseNet%202017&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "DenseNet Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=DenseNet%202017",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "DenseNet publication search",
+        "url": "https://www.google.com/search?q=2017%20DenseNet%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "DenseNet scholar search",
+        "url": "https://scholar.google.com/scholar?q=2017%20DenseNet%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

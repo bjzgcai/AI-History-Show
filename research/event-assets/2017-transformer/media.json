@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:16.948Z",
+  "eventKey": "2017-transformer",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Ashish Vaswani",
+      "role": "Transformer author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Ashish Vaswani portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Ashish%20Vaswani%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Ashish Vaswani Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Ashish Vaswani official biography search",
+          "url": "https://www.google.com/search?q=Ashish%20Vaswani%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Transformer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Transformer publication search",
+      "url": "https://www.google.com/search?q=2017%20Transformer%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Transformer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Transformer diagram",
+        "zh": "Transformer 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Transformer diagram",
+        "zh": "Transformer 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Attention Is All You Need",
+        "zh": "《注意力就是你所需要的一切》"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

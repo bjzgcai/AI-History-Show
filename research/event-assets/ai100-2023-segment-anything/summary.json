@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:05.630Z",
+  "eventKey": "ai100-2023-segment-anything",
+  "year": 2023,
+  "title": {
+    "en": "Segment Anything",
+    "zh": "Segment Anything"
+  },
+  "location": {
+    "name": {
+      "en": "Meta AI",
+      "zh": "Meta AI"
+    },
+    "country": {
+      "en": "Menlo Park, United States",
+      "zh": "美国门洛帕克"
+    },
+    "coordinates": [
+      37.4848,
+      -122.1484
+    ]
+  },
+  "description": {
+    "en": "<p>Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.</p>",
+    "zh": "<p>Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Alexander Kirillov portrait",
+        "zh": "亚历山大·基里洛夫肖像"
+      },
+      "subcaption": {
+        "en": "Segment Anything lead author",
+        "zh": "Segment Anything 主要作者"
+      },
+      "sourceName": {
+        "en": "Alexander Kirillov personal site",
+        "zh": "亚历山大·基里洛夫个人网站"
+      },
+      "sourceUrl": "https://alexander-kirillov.github.io/",
+      "license": {
+        "en": "Personal site profile image; reuse rights not stated.",
+        "zh": "个人网站资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Promptable segmentation flow",
+        "zh": "可提示分割流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer of prompt-to-mask segmentation.",
+        "zh": "关于从提示到掩码分割的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "ICCV",
+        "zh": "ICCV"
+      },
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Alexander Kirillov",
+        "type": "portrait-search",
+        "label": "Alexander Kirillov portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alexander%20Kirillov%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alexander Kirillov",
+        "type": "commons-portrait-search",
+        "label": "Alexander Kirillov Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alexander%20Kirillov%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Segment Anything event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2023%20Segment%20Anything%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Segment Anything Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Segment%20Anything%202023&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Segment Anything Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Segment%20Anything%202023",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Segment Anything publication search",
+        "url": "https://www.google.com/search?q=2023%20Segment%20Anything%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Segment Anything scholar search",
+        "url": "https://scholar.google.com/scholar?q=2023%20Segment%20Anything%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

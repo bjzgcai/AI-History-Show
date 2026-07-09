@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:04.610Z",
+  "eventKey": "ai100-1970-ridge",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "url": "https://doi.org/10.1080/00401706.1970.10488634",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "Open PDF copy of the Technometrics paper",
+      "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Ridge regression overview",
+      "url": "https://en.wikipedia.org/wiki/Ridge_regression",
+      "usage": ""
+    },
+    {
+      "type": "Documentation",
+      "label": "scikit-learn Ridge documentation",
+      "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "University of Delaware",
+      "url": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Arthur Hoerl Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Arthur%20Hoerl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Robert Kennard Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kennard%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Ridge Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ridge%201970&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Ridge Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Ridge%201970",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1970%20Ridge%20Arthur%20Hoerl%20Robert%20Kennard%20AI%20history%20source%20images",
+      "query": "1970 Ridge Arthur Hoerl Robert Kennard AI history source images",
+      "eventKey": "ai100-1970-ridge"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1970%20Ridge%20Arthur%20Hoerl%20Robert%20Kennard%20AI%20history%20source%20images",
+      "query": "1970 Ridge Arthur Hoerl Robert Kennard AI history source images",
+      "eventKey": "ai100-1970-ridge"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1970%20Ridge%20Arthur%20Hoerl%20Robert%20Kennard%20AI%20history%20source%20images",
+      "query": "1970 Ridge Arthur Hoerl Robert Kennard AI history source images",
+      "eventKey": "ai100-1970-ridge"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Arthur Hoerl portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Arthur%20Hoerl%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Arthur Hoerl Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Arthur%20Hoerl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Arthur Hoerl official biography search",
+      "url": "https://www.google.com/search?q=Arthur%20Hoerl%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Robert Kennard portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Robert%20Kennard%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Robert Kennard Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kennard%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Robert Kennard official biography search",
+      "url": "https://www.google.com/search?q=Robert%20Kennard%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Ridge event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1970%20Ridge%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Ridge Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ridge%201970&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Ridge Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Ridge%201970",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Ridge publication search",
+      "url": "https://www.google.com/search?q=1970%20Ridge%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Ridge scholar search",
+      "url": "https://scholar.google.com/scholar?q=1970%20Ridge%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+      "finalUrl": "https://www.tandfonline.com/doi/full/10.1080/00401706.1970.10488634",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.ridge-regression-biased-estimation-for-nonorthogonal-problems.html",
+      "fetchedAt": "2026-07-03T11:57:06.586Z"
+    },
+    {
+      "label": "Open PDF copy of the Technometrics paper",
+      "sourceUrl": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+      "finalUrl": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.open-pdf-copy-of-the-technometrics-paper.html",
+      "fetchedAt": "2026-07-03T11:57:11.012Z"
+    },
+    {
+      "label": "Ridge regression overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ridge_regression",
+      "finalUrl": "https://en.wikipedia.org/wiki/Ridge_regression",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Ridge regression - Wikipedia",
+      "savedPath": "pages/003.ridge-regression-overview.html",
+      "fetchedAt": "2026-07-03T11:57:12.071Z"
+    },
+    {
+      "label": "scikit-learn Ridge documentation",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+      "finalUrl": "https://scikit-learn.org/stable/modules/linear_model.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "1.1. Linear Models &#8212; scikit-learn 1.9.0 documentation",
+      "savedPath": "pages/004.scikit-learn-ridge-documentation.html",
+      "fetchedAt": "2026-07-03T11:57:12.835Z"
+    },
+    {
+      "label": "University of Delaware",
+      "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+      "finalUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Big Data - Ridge Regression | UD Magazine | UDaily",
+      "savedPath": "pages/005.university-of-delaware.html",
+      "fetchedAt": "2026-07-03T11:57:14.765Z"
+    },
+    {
+      "label": "Arthur Hoerl Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Arthur%20Hoerl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Arthur%20Hoerl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.arthur-hoerl-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:16.100Z"
+    },
+    {
+      "label": "Robert Kennard Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kennard%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kennard%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.robert-kennard-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:17.410Z"
+    },
+    {
+      "label": "Ridge Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ridge%201970&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ridge%201970&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.ridge-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:57:20.355Z"
+    },
+    {
+      "label": "Ridge Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Ridge%201970",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Ridge%201970",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.ridge-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:21.085Z"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:24.713Z",
+  "eventKey": "ai100-2015-knowledge-distillation",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Distilling the Knowledge in a Neural Network",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Knowledge distillation overview",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "usage": ""
+    },
+    {
+      "type": "People",
+      "label": "Geoffrey Hinton profile",
+      "url": "https://www.cs.toronto.edu/~hinton/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/figures/geoffrey-hinton.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Knowledge Distillation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Knowledge%20Distillation%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Knowledge Distillation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Knowledge%20Distillation%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20Knowledge%20Distillation%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2015 Knowledge Distillation Geoffrey Hinton AI history source images",
+      "eventKey": "ai100-2015-knowledge-distillation"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Knowledge%20Distillation%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2015 Knowledge Distillation Geoffrey Hinton AI history source images",
+      "eventKey": "ai100-2015-knowledge-distillation"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Knowledge%20Distillation%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2015 Knowledge Distillation Geoffrey Hinton AI history source images",
+      "eventKey": "ai100-2015-knowledge-distillation"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Geoffrey Hinton portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Geoffrey Hinton official biography search",
+      "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Knowledge Distillation event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Knowledge%20Distillation%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Knowledge Distillation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Knowledge%20Distillation%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Knowledge Distillation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Knowledge%20Distillation%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Knowledge Distillation publication search",
+      "url": "https://www.google.com/search?q=2015%20Knowledge%20Distillation%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Knowledge Distillation scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Knowledge%20Distillation%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Distilling the Knowledge in a Neural Network",
+      "sourceUrl": "https://arxiv.org/abs/1503.02531",
+      "finalUrl": "https://arxiv.org/abs/1503.02531",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1503.02531] Distilling the Knowledge in a Neural Network",
+      "savedPath": "pages/001.distilling-the-knowledge-in-a-neural-network.html",
+      "fetchedAt": "2026-07-03T12:08:25.088Z"
+    },
+    {
+      "label": "Knowledge distillation overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "finalUrl": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Knowledge distillation - Wikipedia",
+      "savedPath": "pages/002.knowledge-distillation-overview.html",
+      "fetchedAt": "2026-07-03T12:08:25.596Z"
+    },
+    {
+      "label": "Geoffrey Hinton profile",
+      "sourceUrl": "https://www.cs.toronto.edu/~hinton/",
+      "finalUrl": "https://www.cs.toronto.edu/~hinton/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Geoffrey Hinton",
+      "savedPath": "pages/003.geoffrey-hinton-profile.html",
+      "fetchedAt": "2026-07-03T12:08:26.729Z"
+    },
+    {
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.geoffrey-hinton-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:28.546Z"
+    },
+    {
+      "label": "Knowledge Distillation Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Knowledge%20Distillation%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Knowledge%20Distillation%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.knowledge-distillation-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:08:30.388Z"
+    },
+    {
+      "label": "Knowledge Distillation Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Knowledge%20Distillation%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Knowledge%20Distillation%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.knowledge-distillation-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:31.073Z"
+    }
+  ]
+}

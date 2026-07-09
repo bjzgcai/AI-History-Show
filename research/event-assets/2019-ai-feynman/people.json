@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Max Tegmark",
+        "zh": "马克斯·泰格马克"
+      },
+      "role": {
+        "en": "AI Feynman author",
+        "zh": "AI Feynman作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

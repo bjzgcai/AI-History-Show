@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:24.417Z",
+  "eventKey": "1973-prolog",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1973-prolog",
+      "label": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-wikimedia-commons-associated-with-the-alain-colmerauer-category.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 18880,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "License stated on Commons file page.",
+      "downloadedAt": "2026-07-03T11:04:24.112Z"
+    },
+    {
+      "eventKey": "1973-prolog",
+      "label": "Local redraw for PROLOG, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1145/155360.155362",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-prolog-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 990,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:04:24.417Z"
+    }
+  ]
+}

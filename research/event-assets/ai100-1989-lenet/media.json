@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:02.784Z",
+  "eventKey": "ai100-1989-lenet",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Yann LeCun",
+      "role": "LeNet lead researcher",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Yann LeCun portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Yann%20LeCun%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Yann LeCun Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Yann%20LeCun%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Yann LeCun official biography search",
+          "url": "https://www.google.com/search?q=Yann%20LeCun%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "LeNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1989%20LeNet%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "LeNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=LeNet%201989&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "LeNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=LeNet%201989",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "LeNet publication search",
+      "url": "https://www.google.com/search?q=1989%20LeNet%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "LeNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=1989%20LeNet%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Yann LeCun portrait",
+        "zh": "扬·勒昆肖像"
+      },
+      "subcaption": {
+        "en": "LeNet lead researcher",
+        "zh": "LeNet 主要研究者"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "ZIP-code CNN pipeline",
+        "zh": "邮编 CNN 流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer of LeNet-style recognition.",
+        "zh": "关于 LeNet 式识别的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "sourceLabel": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "usage": ""
+      },
+      {
+        "type": "Paper",
+        "label": "Gradient-Based Learning Applied to Document Recognition",
+        "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

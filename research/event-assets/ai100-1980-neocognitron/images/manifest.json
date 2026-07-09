@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:02.779Z",
+  "eventKey": "ai100-1980-neocognitron",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1980-neocognitron",
+      "label": "Creator of the neocognitron",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+      "imageUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+      "finalImageUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+      "localPath": "images/001.creator-of-the-neocognitron.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 736653,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "NEC C&C Foundation image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:01:02.475Z"
+    },
+    {
+      "eventKey": "ai100-1980-neocognitron",
+      "label": "Original local explainer of neocognitron hierarchy.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1007/BF00344251",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-neocognitron-hierarchy.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1805,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:01:02.779Z"
+    }
+  ]
+}

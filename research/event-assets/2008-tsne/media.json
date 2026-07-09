@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:39.420Z",
+  "eventKey": "2008-tsne",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Laurens van der Maaten",
+      "role": "Co-author of t-SNE",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Laurens van der Maaten portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Laurens%20van%20der%20Maaten%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Laurens van der Maaten Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Laurens%20van%20der%20Maaten%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Laurens van der Maaten official biography search",
+          "url": "https://www.google.com/search?q=Laurens%20van%20der%20Maaten%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "t-SNE event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2008%20t-SNE%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "t-SNE Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=t-SNE%202008&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "t-SNE Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=t-SNE%202008",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "t-SNE publication search",
+      "url": "https://www.google.com/search?q=2008%20t-SNE%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "t-SNE scholar search",
+      "url": "https://scholar.google.com/scholar?q=2008%20t-SNE%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Laurens van der Maaten portrait",
+        "zh": "劳伦斯·范德马滕 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from van der Maaten homepage.",
+        "zh": "来自 van der Maaten 个人主页的人物图。"
+      },
+      "sourceUrl": "https://lvdmaaten.github.io/",
+      "sourceLabel": "Laurens van der Maaten homepage",
+      "license": {
+        "en": "Personal website image; reuse rights not stated.",
+        "zh": "Personal website image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Neighbor probability matching",
+        "zh": "邻域概率匹配"
+      },
+      "subcaption": {
+        "en": "Local redraw for t-SNE, based on the listed source material.",
+        "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "sourceLabel": "Visualizing Data using t-SNE",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "2D cluster map",
+        "zh": "二维簇图"
+      },
+      "subcaption": {
+        "en": "Local redraw for t-SNE, based on the listed source material.",
+        "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "sourceLabel": "Visualizing Data using t-SNE",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Visualizing Data using t-SNE",
+        "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

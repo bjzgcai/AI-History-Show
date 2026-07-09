@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:02.784Z",
+  "eventKey": "ai100-1989-lenet",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "LeNet-5 demos and documentation",
+      "url": "https://yann.lecun.com/exdb/lenet/",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Gradient-Based Learning Applied to Document Recognition",
+      "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+      "usage": ""
+    },
+    {
+      "type": "People",
+      "label": "Yann LeCun's home page",
+      "url": "https://yann.lecun.com/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Yann LeCun Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Yann%20LeCun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "LeNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=LeNet%201989&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "LeNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=LeNet%201989",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1989%20LeNet%20Yann%20LeCun%20AI%20history%20source%20images",
+      "query": "1989 LeNet Yann LeCun AI history source images",
+      "eventKey": "ai100-1989-lenet"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1989%20LeNet%20Yann%20LeCun%20AI%20history%20source%20images",
+      "query": "1989 LeNet Yann LeCun AI history source images",
+      "eventKey": "ai100-1989-lenet"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1989%20LeNet%20Yann%20LeCun%20AI%20history%20source%20images",
+      "query": "1989 LeNet Yann LeCun AI history source images",
+      "eventKey": "ai100-1989-lenet"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Yann LeCun portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Yann%20LeCun%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Yann LeCun Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Yann%20LeCun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Yann LeCun official biography search",
+      "url": "https://www.google.com/search?q=Yann%20LeCun%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "LeNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1989%20LeNet%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "LeNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=LeNet%201989&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "LeNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=LeNet%201989",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "LeNet publication search",
+      "url": "https://www.google.com/search?q=1989%20LeNet%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "LeNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=1989%20LeNet%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "finalUrl": "https://direct.mit.edu/neco/article/1/4/541-551/5515",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.backpropagation-applied-to-handwritten-zip-code-recognition.html",
+      "fetchedAt": "2026-07-03T12:01:03.912Z"
+    },
+    {
+      "label": "LeNet-5 demos and documentation",
+      "sourceUrl": "https://yann.lecun.com/exdb/lenet/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:01:04.745Z"
+    },
+    {
+      "label": "Gradient-Based Learning Applied to Document Recognition",
+      "sourceUrl": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:01:06.066Z"
+    },
+    {
+      "label": "Yann LeCun's home page",
+      "sourceUrl": "https://yann.lecun.com/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:01:06.616Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Laura Chaubard &amp; Yann Le Cun - 2024 (53814052697) (cropped).jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T12:01:08.151Z"
+    },
+    {
+      "label": "Yann LeCun Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Yann%20LeCun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Yann%20LeCun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.yann-lecun-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:09.697Z"
+    },
+    {
+      "label": "LeNet Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=LeNet%201989&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=LeNet%201989&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.lenet-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:01:12.028Z"
+    },
+    {
+      "label": "LeNet Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=LeNet%201989",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=LeNet%201989",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.lenet-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:12.633Z"
+    }
+  ]
+}

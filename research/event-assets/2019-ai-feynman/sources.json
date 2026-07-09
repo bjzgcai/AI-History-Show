@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:38.169Z",
+  "eventKey": "2019-ai-feynman",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Max Tegmark Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Max%20Tegmark%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20Max%20Tegmark%20AI%20history%20source%20images",
+      "query": "2019 AI Feynman: Autonomous Discovery of Scientific Laws Max Tegmark AI history source images",
+      "eventKey": "2019-ai-feynman"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20Max%20Tegmark%20AI%20history%20source%20images",
+      "query": "2019 AI Feynman: Autonomous Discovery of Scientific Laws Max Tegmark AI history source images",
+      "eventKey": "2019-ai-feynman"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20Max%20Tegmark%20AI%20history%20source%20images",
+      "query": "2019 AI Feynman: Autonomous Discovery of Scientific Laws Max Tegmark AI history source images",
+      "eventKey": "2019-ai-feynman"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Max Tegmark portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Max%20Tegmark%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Max Tegmark Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Max%20Tegmark%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Max Tegmark official biography search",
+      "url": "https://www.google.com/search?q=Max%20Tegmark%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws publication search",
+      "url": "https://www.google.com/search?q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws scholar search",
+      "url": "https://scholar.google.com/scholar?q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Max Tegmark Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Max%20Tegmark%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Max%20Tegmark%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.max-tegmark-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:39.677Z"
+    },
+    {
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.ai-feynman-autonomous-discovery-of-scientific-laws-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:31:41.293Z"
+    },
+    {
+      "label": "AI Feynman: Autonomous Discovery of Scientific Laws Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/003.ai-feynman-autonomous-discovery-of-scientific-laws-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:41.901Z"
+    }
+  ]
+}

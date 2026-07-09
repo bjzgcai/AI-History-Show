@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Navneet Dalal",
+        "zh": "纳夫尼特·达拉尔"
+      },
+      "role": {
+        "en": "Co-author of HOG",
+        "zh": "HOG 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+          "sourceUrl": "https://sites.google.com/view/navneetdalal/home",
+          "license": {
+            "en": "Personal site image; reuse rights not stated.",
+            "zh": "个人网站图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Bill Triggs",
+        "zh": "比尔·特里格斯"
+      },
+      "role": {
+        "en": "Co-author of HOG",
+        "zh": "HOG 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+          "sourceUrl": "https://sites.google.com/view/navneetdalal/home",
+          "license": {
+            "en": "Personal site image; reuse rights not stated.",
+            "zh": "个人网站图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

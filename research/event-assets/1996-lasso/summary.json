@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:25.692Z",
+  "eventKey": "1996-lasso",
+  "year": "1996",
+  "title": {
+    "en": "Lasso",
+    "zh": "Lasso 回归"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "description": {
+    "en": "<p>The lasso gave statisticians and machine-learning practitioners a clean way to build sparse linear models. By penalizing the absolute size of coefficients, it both regularizes predictions and performs variable selection. Its ideas now appear in sparse modeling, high-dimensional statistics, compressed sensing, bioinformatics, and interpretable ML.</p>",
+    "zh": "<p>Lasso 为统计学家和机器学习实践者提供了一种构建稀疏线性模型的清晰方法。通过惩罚系数绝对值，它既正则化预测，又完成变量选择。其思想后来出现在稀疏建模、高维统计、压缩感知、生物信息学和可解释机器学习中。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Robert Tibshirani portrait",
+        "zh": "罗伯特·蒂布希拉尼 肖像"
+      },
+      "subcaption": {
+        "en": "Profile photo from Stanford Profiles.",
+        "zh": "来自 斯坦福个人资料库 的人物照片。"
+      },
+      "sourceName": {
+        "en": "Stanford Profiles",
+        "zh": "斯坦福个人资料库"
+      },
+      "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+      "license": {
+        "en": "Institution profile photo; rights not stated.",
+        "zh": "Institution profile photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Lasso author portrait",
+        "zh": "历史人物 / Lasso 作者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "L1 constraint geometry",
+        "zh": "L1 约束几何"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Lasso, based on the related source material.",
+        "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "JRSS / Wiley",
+        "zh": "JRSS / Wiley"
+      },
+      "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Coefficient path",
+        "zh": "系数路径"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Lasso, based on the related source material.",
+        "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "JRSS / Wiley",
+        "zh": "JRSS / Wiley"
+      },
+      "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Robert Tibshirani",
+        "type": "portrait-search",
+        "label": "Robert Tibshirani portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Robert%20Tibshirani%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Robert Tibshirani",
+        "type": "commons-portrait-search",
+        "label": "Robert Tibshirani Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Tibshirani%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Lasso event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1996%20Lasso%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Lasso Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Lasso%201996&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Lasso Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Lasso%201996",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Lasso publication search",
+        "url": "https://www.google.com/search?q=1996%20Lasso%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Lasso scholar search",
+        "url": "https://scholar.google.com/scholar?q=1996%20Lasso%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:11.165Z",
+  "eventKey": "1973-prolog",
+  "sources": [
+    {
+      "type": "History",
+      "label": "The Birth of Prolog",
+      "url": "https://doi.org/10.1145/155360.155362",
+      "usage": ""
+    },
+    {
+      "type": "Archive",
+      "label": "Prolog Heritage",
+      "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
+      "usage": ""
+    },
+    {
+      "type": "Language docs",
+      "label": "SWI-Prolog documentation",
+      "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alain Colmerauer Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alain%20Colmerauer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Robert Kowalski Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kowalski%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "PROLOG Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=PROLOG%201973&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "PROLOG Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=PROLOG%201973",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1973%20PROLOG%20Alain%20Colmerauer%20Robert%20Kowalski%20AI%20history%20source%20images",
+      "query": "1973 PROLOG Alain Colmerauer Robert Kowalski AI history source images",
+      "eventKey": "1973-prolog"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1973%20PROLOG%20Alain%20Colmerauer%20Robert%20Kowalski%20AI%20history%20source%20images",
+      "query": "1973 PROLOG Alain Colmerauer Robert Kowalski AI history source images",
+      "eventKey": "1973-prolog"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1973%20PROLOG%20Alain%20Colmerauer%20Robert%20Kowalski%20AI%20history%20source%20images",
+      "query": "1973 PROLOG Alain Colmerauer Robert Kowalski AI history source images",
+      "eventKey": "1973-prolog"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alain Colmerauer portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alain%20Colmerauer%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alain Colmerauer Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alain%20Colmerauer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alain Colmerauer official biography search",
+      "url": "https://www.google.com/search?q=Alain%20Colmerauer%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Robert Kowalski portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Robert%20Kowalski%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Robert Kowalski Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kowalski%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Robert Kowalski official biography search",
+      "url": "https://www.google.com/search?q=Robert%20Kowalski%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "PROLOG event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1973%20PROLOG%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "PROLOG Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=PROLOG%201973&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "PROLOG Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=PROLOG%201973",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "PROLOG publication search",
+      "url": "https://www.google.com/search?q=1973%20PROLOG%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "PROLOG scholar search",
+      "url": "https://scholar.google.com/scholar?q=1973%20PROLOG%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "The Birth of Prolog",
+      "sourceUrl": "https://doi.org/10.1145/155360.155362",
+      "finalUrl": "https://dl.acm.org/doi/10.1145/155360.155362",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.the-birth-of-prolog.html",
+      "fetchedAt": "2026-07-03T11:04:12.019Z"
+    },
+    {
+      "label": "Prolog Heritage",
+      "sourceUrl": "https://www.prolog-heritage.org/en/Prolog_50.html",
+      "finalUrl": "https://www.prolog-heritage.org/en/Prolog_50.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Prolog Heritage",
+      "savedPath": "pages/002.prolog-heritage.html",
+      "fetchedAt": "2026-07-03T11:04:13.807Z"
+    },
+    {
+      "label": "SWI-Prolog documentation",
+      "sourceUrl": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+      "finalUrl": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "manual",
+      "savedPath": "pages/003.swi-prolog-documentation.html",
+      "fetchedAt": "2026-07-03T11:04:16.250Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+      "finalUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Category:Alain Colmerauer - Wikimedia Commons",
+      "savedPath": "pages/004.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:04:18.287Z"
+    },
+    {
+      "label": "Alain Colmerauer Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alain%20Colmerauer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alain%20Colmerauer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.alain-colmerauer-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:19.800Z"
+    },
+    {
+      "label": "Robert Kowalski Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kowalski%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kowalski%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.robert-kowalski-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:21.646Z"
+    },
+    {
+      "label": "PROLOG Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=PROLOG%201973&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=PROLOG%201973&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.prolog-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:04:23.267Z"
+    },
+    {
+      "label": "PROLOG Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=PROLOG%201973",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=PROLOG%201973",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.prolog-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:23.807Z"
+    }
+  ]
+}

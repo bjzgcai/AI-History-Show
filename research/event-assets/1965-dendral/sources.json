@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:16.402Z",
+  "eventKey": "1965-dendral",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Applications of Artificial Intelligence for Chemical Inference",
+      "url": "https://doi.org/10.1021/ci60034a002",
+      "usage": ""
+    },
+    {
+      "type": "Award",
+      "label": "ACM Turing Award profile for Edward Feigenbaum",
+      "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+      "usage": ""
+    },
+    {
+      "type": "History",
+      "label": "Stanford Knowledge Systems Laboratory history",
+      "url": "http://ksl-web.stanford.edu/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Edward Feigenbaum Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Edward%20Feigenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "DENDRAL Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DENDRAL%201965&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DENDRAL Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DENDRAL%201965",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1965%20DENDRAL%20Edward%20Feigenbaum%20AI%20history%20source%20images",
+      "query": "1965 DENDRAL Edward Feigenbaum AI history source images",
+      "eventKey": "1965-dendral"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1965%20DENDRAL%20Edward%20Feigenbaum%20AI%20history%20source%20images",
+      "query": "1965 DENDRAL Edward Feigenbaum AI history source images",
+      "eventKey": "1965-dendral"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1965%20DENDRAL%20Edward%20Feigenbaum%20AI%20history%20source%20images",
+      "query": "1965 DENDRAL Edward Feigenbaum AI history source images",
+      "eventKey": "1965-dendral"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Edward Feigenbaum portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Edward%20Feigenbaum%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Edward Feigenbaum Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Edward%20Feigenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Edward Feigenbaum official biography search",
+      "url": "https://www.google.com/search?q=Edward%20Feigenbaum%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "DENDRAL event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1965%20DENDRAL%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "DENDRAL Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DENDRAL%201965&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DENDRAL Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DENDRAL%201965",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "DENDRAL publication search",
+      "url": "https://www.google.com/search?q=1965%20DENDRAL%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "DENDRAL scholar search",
+      "url": "https://scholar.google.com/scholar?q=1965%20DENDRAL%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Applications of Artificial Intelligence for Chemical Inference",
+      "sourceUrl": "https://doi.org/10.1021/ci60034a002",
+      "finalUrl": "https://doi.org/10.1021/ci60034a002",
+      "ok": false,
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Error: DOI Not Found",
+      "savedPath": "pages/001.applications-of-artificial-intelligence-for-chemical-inference.html",
+      "fetchedAt": "2026-07-03T11:50:17.150Z"
+    },
+    {
+      "label": "ACM Turing Award profile for Edward Feigenbaum",
+      "sourceUrl": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+      "finalUrl": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "savedPath": "pages/002.acm-turing-award-profile-for-edward-feigenbaum.html",
+      "fetchedAt": "2026-07-03T11:50:18.748Z"
+    },
+    {
+      "label": "Stanford Knowledge Systems Laboratory history",
+      "sourceUrl": "http://ksl-web.stanford.edu/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:50:20.292Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:2012-06-15 1994 Turing Laureate Ed Feigenbaum.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:50:21.407Z"
+    },
+    {
+      "label": "Edward Feigenbaum Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Edward%20Feigenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Edward%20Feigenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.edward-feigenbaum-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:23.209Z"
+    },
+    {
+      "label": "DENDRAL Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=DENDRAL%201965&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=DENDRAL%201965&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.dendral-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:50:24.498Z"
+    },
+    {
+      "label": "DENDRAL Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=DENDRAL%201965",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=DENDRAL%201965",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.dendral-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:25.103Z"
+    }
+  ]
+}

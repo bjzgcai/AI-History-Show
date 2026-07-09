@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:36.531Z",
+  "eventKey": "ai100-2015-resnet",
+  "year": 2015,
+  "title": {
+    "en": "ResNet",
+    "zh": "ResNet"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "description": {
+    "en": "<p>ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.</p>",
+    "zh": "<p>ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/kaiming-he.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Kaiming He portrait",
+        "zh": "何恺明肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of ResNet.",
+        "zh": "ResNet 主要作者。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/kaiming-he.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Residual block",
+        "zh": "残差模块"
+      },
+      "subcaption": {
+        "en": "Architecture visual used by the project.",
+        "zh": "项目使用的架构图。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Kaiming He",
+        "type": "portrait-search",
+        "label": "Kaiming He portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Kaiming%20He%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Kaiming He",
+        "type": "commons-portrait-search",
+        "label": "Kaiming He Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Jian Sun",
+        "type": "portrait-search",
+        "label": "Jian Sun portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jian%20Sun%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jian Sun",
+        "type": "commons-portrait-search",
+        "label": "Jian Sun Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "ResNet event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2015%20ResNet%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "ResNet Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=ResNet%202015&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "ResNet Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=ResNet%202015",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "ResNet publication search",
+        "url": "https://www.google.com/search?q=2015%20ResNet%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "ResNet scholar search",
+        "url": "https://scholar.google.com/scholar?q=2015%20ResNet%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

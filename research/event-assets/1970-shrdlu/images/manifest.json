@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:29.163Z",
+  "eventKey": "1970-shrdlu",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1970-shrdlu",
+      "label": "Portrait from Stanford Computer Science profile.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-stanford-computer-science-profile.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 30634,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Stanford profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:49:28.860Z"
+    },
+    {
+      "eventKey": "1970-shrdlu",
+      "label": "Local redraw for SHRDLU, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-shrdlu-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1090,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:49:29.163Z"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:06.484Z",
+  "eventKey": "1983-simulated-annealing",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Scott Kirkpatrick",
+      "role": "Co-author of the 1983 simulated annealing paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Scott Kirkpatrick portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Scott%20Kirkpatrick%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Scott Kirkpatrick Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Scott%20Kirkpatrick%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Scott Kirkpatrick official biography search",
+          "url": "https://www.google.com/search?q=Scott%20Kirkpatrick%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "C. Daniel Gelatt Jr.",
+      "role": "Co-author of the 1983 simulated annealing paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "C. Daniel Gelatt Jr. portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=C.%20Daniel%20Gelatt%20Jr.%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "C. Daniel Gelatt Jr. Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=C.%20Daniel%20Gelatt%20Jr.%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "C. Daniel Gelatt Jr. official biography search",
+          "url": "https://www.google.com/search?q=C.%20Daniel%20Gelatt%20Jr.%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Mario P. Vecchi",
+      "role": "Co-author of the 1983 simulated annealing paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Mario P. Vecchi portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Mario%20P.%20Vecchi%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Mario P. Vecchi Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Mario%20P.%20Vecchi%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Mario P. Vecchi official biography search",
+          "url": "https://www.google.com/search?q=Mario%20P.%20Vecchi%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Simulated Annealing event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1983%20Simulated%20Annealing%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Simulated Annealing Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Simulated%20Annealing%201983&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Simulated Annealing Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Simulated%20Annealing%201983",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Simulated Annealing publication search",
+      "url": "https://www.google.com/search?q=1983%20Simulated%20Annealing%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Simulated Annealing scholar search",
+      "url": "https://scholar.google.com/scholar?q=1983%20Simulated%20Annealing%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Scott Kirkpatrick portrait",
+        "zh": "斯科特·柯克帕特里克 肖像"
+      },
+      "subcaption": {
+        "en": "Workshop participant page photo for Scott Kirkpatrick.",
+        "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。"
+      },
+      "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+      "sourceLabel": "Collective Cognition Workshop / UC Davis CSC",
+      "license": {
+        "en": "Workshop profile photo; rights not stated.",
+        "zh": "Workshop profile photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Simulated annealing co-author portrait",
+        "zh": "历史人物 / 模拟退火共同作者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Energy landscape search",
+        "zh": "能量地形搜索"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+        "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+      "sourceLabel": "Optimization by Simulated Annealing",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Temperature schedule",
+        "zh": "温度计划"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+        "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+      "sourceLabel": "Optimization by Simulated Annealing",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Collective Cognition Workshop / UC Davis CSC",
+        "url": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+        "usage": "Historical figure / Simulated annealing co-author portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Optimization by Simulated Annealing",
+        "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

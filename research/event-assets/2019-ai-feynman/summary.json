@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:38.169Z",
+  "eventKey": "2019-ai-feynman",
+  "year": 2019,
+  "title": {
+    "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+    "zh": "AI Feynman：自主科学规律发现"
+  },
+  "location": {
+    "name": {
+      "en": "MIT",
+      "zh": "麻省理工学院"
+    },
+    "country": {
+      "en": "MA, United States",
+      "zh": "美国, 马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "description": {
+    "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery.",
+    "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "AI Feynman: Autonomous Discovery of Scientific Laws",
+        "zh": "AI Feynman：自主科学规律发现 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "AI Feynman: a physics-inspired method for symbolic regression",
+        "zh": "《AI 费曼：受物理启发的符号回归方法》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "AI Feynman: a physics-inspired method for symbolic regression",
+        "zh": "《AI 费曼：受物理启发的符号回归方法》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Max Tegmark",
+        "type": "portrait-search",
+        "label": "Max Tegmark portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Max%20Tegmark%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Max Tegmark",
+        "type": "commons-portrait-search",
+        "label": "Max Tegmark Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Max%20Tegmark%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "AI Feynman: Autonomous Discovery of Scientific Laws event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "AI Feynman: Autonomous Discovery of Scientific Laws Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "AI Feynman: Autonomous Discovery of Scientific Laws Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%202019",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "AI Feynman: Autonomous Discovery of Scientific Laws publication search",
+        "url": "https://www.google.com/search?q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "AI Feynman: Autonomous Discovery of Scientific Laws scholar search",
+        "url": "https://scholar.google.com/scholar?q=2019%20AI%20Feynman%3A%20Autonomous%20Discovery%20of%20Scientific%20Laws%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 4,
+    "manifest": "images/manifest.json"
+  }
+}

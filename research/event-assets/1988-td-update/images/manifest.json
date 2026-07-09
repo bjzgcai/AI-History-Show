@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:20.883Z",
+  "eventKey": "1988-td-update",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1988-td-update",
+      "label": "Portrait from Sutton's personal homepage.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "http://incompleteideas.net/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-sutton-s-personal-homepage.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1109321,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Personal website image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:53:20.580Z"
+    },
+    {
+      "eventKey": "1988-td-update",
+      "label": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1007/BF00115009",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-temporal-difference-update-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1238,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:53:20.883Z"
+    }
+  ]
+}

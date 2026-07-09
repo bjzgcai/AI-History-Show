@@ -1,0 +1,104 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+          "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+          "license": {
+            "en": "Archive portrait; rights not stated.",
+            "zh": "Archive portrait; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / CART co-author portrait",
+            "zh": "历史人物 / CART 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jerome Friedman",
+        "zh": "杰罗姆·弗里德曼"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+          "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+          "license": {
+            "en": "Archive portrait; rights not stated.",
+            "zh": "Archive portrait; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / CART co-author portrait",
+            "zh": "历史人物 / CART 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Richard Olshen",
+        "zh": "理查德·奥尔申"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+          "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+          "license": {
+            "en": "Archive portrait; rights not stated.",
+            "zh": "Archive portrait; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / CART co-author portrait",
+            "zh": "历史人物 / CART 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Charles Stone",
+        "zh": "查尔斯·斯通"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+          "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+          "license": {
+            "en": "Archive portrait; rights not stated.",
+            "zh": "Archive portrait; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / CART co-author portrait",
+            "zh": "历史人物 / CART 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

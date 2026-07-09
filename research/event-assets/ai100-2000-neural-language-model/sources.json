@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:13.615Z",
+  "eventKey": "ai100-2000-neural-language-model",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "A Neural Probabilistic Language Model",
+      "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "JMLR full paper PDF",
+      "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Publication index",
+      "label": "DBLP record",
+      "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+      "usage": ""
+    },
+    {
+      "type": "People",
+      "label": "Yoshua Bengio profile at Mila",
+      "url": "https://mila.quebec/en/directory/yoshua-bengio",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Yoshua Bengio Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neural Language Model Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neural%20Language%20Model%202000&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neural Language Model Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neural%20Language%20Model%202000",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2000%20Neural%20Language%20Model%20Yoshua%20Bengio%20AI%20history%20source%20images",
+      "query": "2000 Neural Language Model Yoshua Bengio AI history source images",
+      "eventKey": "ai100-2000-neural-language-model"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Neural%20Language%20Model%20Yoshua%20Bengio%20AI%20history%20source%20images",
+      "query": "2000 Neural Language Model Yoshua Bengio AI history source images",
+      "eventKey": "ai100-2000-neural-language-model"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Neural%20Language%20Model%20Yoshua%20Bengio%20AI%20history%20source%20images",
+      "query": "2000 Neural Language Model Yoshua Bengio AI history source images",
+      "eventKey": "ai100-2000-neural-language-model"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Yoshua Bengio portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Yoshua%20Bengio%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Yoshua Bengio Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Yoshua Bengio official biography search",
+      "url": "https://www.google.com/search?q=Yoshua%20Bengio%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Neural Language Model event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Neural%20Language%20Model%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neural Language Model Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neural%20Language%20Model%202000&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neural Language Model Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neural%20Language%20Model%202000",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Neural Language Model publication search",
+      "url": "https://www.google.com/search?q=2000%20Neural%20Language%20Model%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Neural Language Model scholar search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Neural%20Language%20Model%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "A Neural Probabilistic Language Model",
+      "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "finalUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "",
+      "savedPath": "pages/001.a-neural-probabilistic-language-model.html",
+      "fetchedAt": "2026-07-03T12:01:14.284Z"
+    },
+    {
+      "label": "JMLR full paper PDF",
+      "sourceUrl": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+      "finalUrl": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.jmlr-full-paper-pdf.html",
+      "fetchedAt": "2026-07-03T12:01:14.895Z"
+    },
+    {
+      "label": "DBLP record",
+      "sourceUrl": "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+      "finalUrl": "https://dblp.org/rec/journals/jmlr/BengioDVJ03.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "dblp: A Neural Probabilistic Language Model.",
+      "savedPath": "pages/003.dblp-record.html",
+      "fetchedAt": "2026-07-03T12:01:17.058Z"
+    },
+    {
+      "label": "Yoshua Bengio profile at Mila",
+      "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio",
+      "finalUrl": "https://mila.quebec/en/directory/yoshua-bengio",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Yoshua Bengio | Mila",
+      "savedPath": "pages/004.yoshua-bengio-profile-at-mila.html",
+      "fetchedAt": "2026-07-03T12:01:18.859Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:ICLR 2025 - Yoshua Bengio 02.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T12:01:19.553Z"
+    },
+    {
+      "label": "Yoshua Bengio Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.yoshua-bengio-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:21.035Z"
+    },
+    {
+      "label": "Neural Language Model Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Neural%20Language%20Model%202000&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Neural%20Language%20Model%202000&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.neural-language-model-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:01:22.342Z"
+    },
+    {
+      "label": "Neural Language Model Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Neural%20Language%20Model%202000",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Neural%20Language%20Model%202000",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.neural-language-model-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:23.158Z"
+    }
+  ]
+}

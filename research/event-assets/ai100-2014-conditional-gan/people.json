@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Mehdi Mirza",
+        "zh": "迈赫迪·米尔扎"
+      },
+      "role": {
+        "en": "Conditional GAN lead author",
+        "zh": "Conditional GAN 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+          "sourceUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+          "license": {
+            "en": "Article image; reuse rights not stated.",
+            "zh": "文章配图；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

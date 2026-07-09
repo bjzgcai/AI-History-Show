@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:18.687Z",
+  "eventKey": "1970-shrdlu",
+  "sources": [
+    {
+      "type": "Thesis",
+      "label": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+      "url": "https://dspace.mit.edu/handle/1721.1/7095",
+      "usage": ""
+    },
+    {
+      "type": "Profile",
+      "label": "Terry Winograd, Stanford Computer Science",
+      "url": "https://www.cs.stanford.edu/people/terry-winograd",
+      "usage": ""
+    },
+    {
+      "type": "Oral history",
+      "label": "Terry Winograd oral history, CBI",
+      "url": "https://hdl.handle.net/11299/107717",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Terry Winograd Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Terry%20Winograd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "SHRDLU Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SHRDLU%201970&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SHRDLU Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SHRDLU%201970",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1970%20SHRDLU%20Terry%20Winograd%20AI%20history%20source%20images",
+      "query": "1970 SHRDLU Terry Winograd AI history source images",
+      "eventKey": "1970-shrdlu"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1970%20SHRDLU%20Terry%20Winograd%20AI%20history%20source%20images",
+      "query": "1970 SHRDLU Terry Winograd AI history source images",
+      "eventKey": "1970-shrdlu"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1970%20SHRDLU%20Terry%20Winograd%20AI%20history%20source%20images",
+      "query": "1970 SHRDLU Terry Winograd AI history source images",
+      "eventKey": "1970-shrdlu"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Terry Winograd portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Terry%20Winograd%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Terry Winograd Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Terry%20Winograd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Terry Winograd official biography search",
+      "url": "https://www.google.com/search?q=Terry%20Winograd%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "SHRDLU event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1970%20SHRDLU%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "SHRDLU Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SHRDLU%201970&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SHRDLU Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SHRDLU%201970",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "SHRDLU publication search",
+      "url": "https://www.google.com/search?q=1970%20SHRDLU%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "SHRDLU scholar search",
+      "url": "https://scholar.google.com/scholar?q=1970%20SHRDLU%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "finalUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "ok": false,
+      "status": 405,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Human Verification",
+      "savedPath": "pages/001.procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-natural-language.html",
+      "fetchedAt": "2026-07-03T11:49:19.647Z"
+    },
+    {
+      "label": "Terry Winograd, Stanford Computer Science",
+      "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+      "finalUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Terry Winograd | Computer Science",
+      "savedPath": "pages/002.terry-winograd-stanford-computer-science.html",
+      "fetchedAt": "2026-07-03T11:49:21.678Z"
+    },
+    {
+      "label": "Terry Winograd oral history, CBI",
+      "sourceUrl": "https://hdl.handle.net/11299/107717",
+      "finalUrl": "https://conservancy.umn.edu/handle/11299/107717",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html",
+      "title": "Azure WAF",
+      "savedPath": "pages/003.terry-winograd-oral-history-cbi.html",
+      "fetchedAt": "2026-07-03T11:49:24.381Z"
+    },
+    {
+      "label": "Terry Winograd Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Terry%20Winograd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Terry%20Winograd%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.terry-winograd-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:49:26.388Z"
+    },
+    {
+      "label": "SHRDLU Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=SHRDLU%201970&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=SHRDLU%201970&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.shrdlu-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:49:27.876Z"
+    },
+    {
+      "label": "SHRDLU Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=SHRDLU%201970",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=SHRDLU%201970",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.shrdlu-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:49:28.556Z"
+    }
+  ]
+}

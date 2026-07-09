@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:50.573Z",
+  "eventKey": "ai100-2000-lle",
+  "year": 2000,
+  "title": {
+    "en": "Locally Linear Embedding",
+    "zh": "局部线性嵌入"
+  },
+  "location": {
+    "name": {
+      "en": "AT&T Labs",
+      "zh": "AT&T 实验室"
+    },
+    "country": {
+      "en": "Florham Park, United States",
+      "zh": "美国弗洛勒姆帕克"
+    },
+    "coordinates": [
+      40.7879,
+      -74.3882
+    ]
+  },
+  "description": {
+    "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>",
+    "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Sam Roweis collaboration photo",
+        "zh": "萨姆·罗维斯合作照片"
+      },
+      "subcaption": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      },
+      "sourceName": {
+        "en": "NYU Computer Science",
+        "zh": "纽约大学计算机科学系"
+      },
+      "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+      "license": {
+        "en": "NYU memorial image; reuse rights not stated.",
+        "zh": "NYU 纪念页图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Locally linear embedding",
+        "zh": "局部线性嵌入"
+      },
+      "subcaption": {
+        "en": "Original local explainer of LLE neighborhood reconstruction.",
+        "zh": "关于 LLE 邻域重建的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Science",
+        "zh": "Science"
+      },
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Sam Roweis",
+        "type": "portrait-search",
+        "label": "Sam Roweis portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Sam%20Roweis%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Sam Roweis",
+        "type": "commons-portrait-search",
+        "label": "Sam Roweis Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Sam%20Roweis%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Lawrence Saul",
+        "type": "portrait-search",
+        "label": "Lawrence Saul portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Lawrence%20Saul%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Lawrence Saul",
+        "type": "commons-portrait-search",
+        "label": "Lawrence Saul Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Lawrence%20Saul%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Locally Linear Embedding event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2000%20Locally%20Linear%20Embedding%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Locally Linear Embedding Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Locally%20Linear%20Embedding%202000&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Locally Linear Embedding Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Locally%20Linear%20Embedding%202000",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Locally Linear Embedding publication search",
+        "url": "https://www.google.com/search?q=2000%20Locally%20Linear%20Embedding%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Locally Linear Embedding scholar search",
+        "url": "https://scholar.google.com/scholar?q=2000%20Locally%20Linear%20Embedding%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

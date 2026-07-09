@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "John H. Holland",
+        "zh": "约翰·H·霍兰德"
+      },
+      "role": {
+        "en": "Developed the genetic algorithm framework",
+        "zh": "提出遗传算法框架"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+          "sourceUrl": "https://physicstoday.aip.org/news/john-henry-holland",
+          "license": {
+            "en": "Physics Today article photo; photo credit: Santa Fe Institute.",
+            "zh": "Physics Today article photo; photo credit: Santa Fe Institute."
+          },
+          "usage": {
+            "en": "Historical figure / Genetic algorithms pioneer",
+            "zh": "历史人物 / 遗传算法先驱"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

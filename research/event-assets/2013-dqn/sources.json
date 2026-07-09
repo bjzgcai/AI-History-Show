@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:17.612Z",
+  "eventKey": "2013-dqn",
+  "sources": [
+    {
+      "type": "Preprint",
+      "label": "Playing Atari with Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1312.5602",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Human-level control through deep reinforcement learning",
+      "url": "https://www.nature.com/articles/nature14236",
+      "usage": ""
+    },
+    {
+      "type": "Project note",
+      "label": "Google DeepMind: Deep Reinforcement Learning",
+      "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "University of Toronto personal page",
+      "url": "https://www.cs.utoronto.ca/~vmnih/",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Volodymyr Mnih Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Volodymyr%20Mnih%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Silver Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Q Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Q%20Network%202013&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Q Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Q%20Network%202013",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2013%20Deep%20Q%20Network%20Volodymyr%20Mnih%20David%20Silver%20AI%20history%20source%20images",
+      "query": "2013 Deep Q Network Volodymyr Mnih David Silver AI history source images",
+      "eventKey": "2013-dqn"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2013%20Deep%20Q%20Network%20Volodymyr%20Mnih%20David%20Silver%20AI%20history%20source%20images",
+      "query": "2013 Deep Q Network Volodymyr Mnih David Silver AI history source images",
+      "eventKey": "2013-dqn"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2013%20Deep%20Q%20Network%20Volodymyr%20Mnih%20David%20Silver%20AI%20history%20source%20images",
+      "query": "2013 Deep Q Network Volodymyr Mnih David Silver AI history source images",
+      "eventKey": "2013-dqn"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Volodymyr Mnih portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Volodymyr%20Mnih%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Volodymyr Mnih Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Volodymyr%20Mnih%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Volodymyr Mnih official biography search",
+      "url": "https://www.google.com/search?q=Volodymyr%20Mnih%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "David Silver portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=David%20Silver%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Silver Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "David Silver official biography search",
+      "url": "https://www.google.com/search?q=David%20Silver%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Deep Q Network event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2013%20Deep%20Q%20Network%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Q Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Q%20Network%202013&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Q Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Q%20Network%202013",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Deep Q Network publication search",
+      "url": "https://www.google.com/search?q=2013%20Deep%20Q%20Network%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Deep Q Network scholar search",
+      "url": "https://scholar.google.com/scholar?q=2013%20Deep%20Q%20Network%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Playing Atari with Deep Reinforcement Learning",
+      "sourceUrl": "https://arxiv.org/abs/1312.5602",
+      "finalUrl": "https://arxiv.org/abs/1312.5602",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1312.5602] Playing Atari with Deep Reinforcement Learning",
+      "savedPath": "pages/001.playing-atari-with-deep-reinforcement-learning.html",
+      "fetchedAt": "2026-07-03T11:17:17.986Z"
+    },
+    {
+      "label": "Human-level control through deep reinforcement learning",
+      "sourceUrl": "https://www.nature.com/articles/nature14236",
+      "finalUrl": "https://www.nature.com/articles/nature14236?error=cookies_not_supported&code=83e934f4-23d9-4019-abab-510e546ddb46",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=\"UTF-8\"",
+      "title": "Human-level control through deep reinforcement learning | Nature",
+      "savedPath": "pages/002.human-level-control-through-deep-reinforcement-learning.html",
+      "fetchedAt": "2026-07-03T11:17:22.201Z"
+    },
+    {
+      "label": "Google DeepMind: Deep Reinforcement Learning",
+      "sourceUrl": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+      "finalUrl": "https://deepmind.google/blog/deep-reinforcement-learning/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Deep Reinforcement Learning — Google DeepMind",
+      "savedPath": "pages/003.google-deepmind-deep-reinforcement-learning.html",
+      "fetchedAt": "2026-07-03T11:17:24.846Z"
+    },
+    {
+      "label": "University of Toronto personal page",
+      "sourceUrl": "https://www.cs.utoronto.ca/~vmnih/",
+      "finalUrl": "https://www.cs.utoronto.ca/~vmnih/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Vlad Mnih",
+      "savedPath": "pages/004.university-of-toronto-personal-page.html",
+      "fetchedAt": "2026-07-03T11:17:26.418Z"
+    },
+    {
+      "label": "Volodymyr Mnih Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Volodymyr%20Mnih%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Volodymyr%20Mnih%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.volodymyr-mnih-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:28.017Z"
+    },
+    {
+      "label": "David Silver Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.david-silver-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:30.309Z"
+    },
+    {
+      "label": "Deep Q Network Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Deep%20Q%20Network%202013&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Deep%20Q%20Network%202013&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.deep-q-network-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:17:32.055Z"
+    },
+    {
+      "label": "Deep Q Network Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Deep%20Q%20Network%202013",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Deep%20Q%20Network%202013",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.deep-q-network-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:32.770Z"
+    }
+  ]
+}

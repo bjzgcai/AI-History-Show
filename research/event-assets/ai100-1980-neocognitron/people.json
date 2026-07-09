@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
+      "role": {
+        "en": "Creator of the neocognitron",
+        "zh": "Neocognitron 提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+          "sourceUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+          "license": {
+            "en": "NEC C&C Foundation image; reuse rights not stated.",
+            "zh": "NEC C&C Foundation 图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

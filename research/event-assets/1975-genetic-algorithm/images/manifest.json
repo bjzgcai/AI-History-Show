@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:45:43.668Z",
+  "eventKey": "1975-genetic-algorithm",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1975-genetic-algorithm",
+      "label": "Physics Today history article photo, credited there to Santa Fe Institute.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://physicstoday.aip.org/news/john-henry-holland",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.physics-today-history-article-photo-credited-there-to-santa-fe-institute.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 68818,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Genetic algorithms pioneer",
+      "rights": "Physics Today article photo; photo credit: Santa Fe Institute.",
+      "downloadedAt": "2026-07-03T10:45:43.363Z"
+    },
+    {
+      "eventKey": "1975-genetic-algorithm",
+      "label": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-genetic-algorithms-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2606,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T10:45:43.668Z"
+    }
+  ]
+}

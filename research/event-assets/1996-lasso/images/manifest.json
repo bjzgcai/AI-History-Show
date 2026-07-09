@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:37.681Z",
+  "eventKey": "1996-lasso",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1996-lasso",
+      "label": "Profile photo from Stanford Profiles.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://profiles.stanford.edu/robert-tibshirani",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.profile-photo-from-stanford-profiles.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 12400,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Lasso author portrait",
+      "rights": "Institution profile photo; rights not stated.",
+      "downloadedAt": "2026-07-03T11:03:37.378Z"
+    },
+    {
+      "eventKey": "1996-lasso",
+      "label": "Distinct local redraw for Lasso, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-lasso-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1116,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:03:37.681Z"
+    }
+  ]
+}

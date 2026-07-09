@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:31.688Z",
+  "eventKey": "ai100-2014-ms-coco",
+  "year": 2014,
+  "title": {
+    "en": "MS COCO",
+    "zh": "MS COCO"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research",
+      "zh": "Microsoft Research"
+    },
+    "country": {
+      "en": "Redmond, United States",
+      "zh": "Redmond, United States"
+    },
+    "coordinates": [
+      47.674,
+      -122.1215
+    ]
+  },
+  "description": {
+    "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>",
+    "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://tsungyilin.info/images/tsungyi.jpeg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Tsung-Yi Lin portrait",
+        "zh": "林宗毅肖像"
+      },
+      "subcaption": {
+        "en": "MS COCO lead author",
+        "zh": "MS COCO 主要作者"
+      },
+      "sourceName": {
+        "en": "Tsung-Yi Lin homepage",
+        "zh": "林宗毅个人主页"
+      },
+      "sourceUrl": "https://tsungyilin.info/",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "MS COCO explainer",
+        "zh": "MS COCO 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "COCO Dataset",
+        "zh": "COCO 数据集"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1405.0312",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Tsung-Yi Lin",
+        "type": "portrait-search",
+        "label": "Tsung-Yi Lin portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Tsung-Yi%20Lin%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Tsung-Yi Lin",
+        "type": "commons-portrait-search",
+        "label": "Tsung-Yi Lin Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Tsung-Yi%20Lin%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "MS COCO event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2014%20MS%20COCO%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "MS COCO Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=MS%20COCO%202014&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "MS COCO Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=MS%20COCO%202014",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "MS COCO publication search",
+        "url": "https://www.google.com/search?q=2014%20MS%20COCO%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "MS COCO scholar search",
+        "url": "https://scholar.google.com/scholar?q=2014%20MS%20COCO%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

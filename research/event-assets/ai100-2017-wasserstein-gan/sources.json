@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:11.832Z",
+  "eventKey": "ai100-2017-wasserstein-gan",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Wasserstein Generative Adversarial Networks",
+      "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Improved Training of Wasserstein GANs",
+      "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Wasserstein GAN overview",
+      "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Leon Bottou homepage",
+      "url": "https://leon.bottou.org/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Martin Arjovsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Martin%20Arjovsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Wasserstein GAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Wasserstein%20GAN%202017&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Wasserstein GAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Wasserstein%20GAN%202017",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2017%20Wasserstein%20GAN%20Martin%20Arjovsky%20AI%20history%20source%20images",
+      "query": "2017 Wasserstein GAN Martin Arjovsky AI history source images",
+      "eventKey": "ai100-2017-wasserstein-gan"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Wasserstein%20GAN%20Martin%20Arjovsky%20AI%20history%20source%20images",
+      "query": "2017 Wasserstein GAN Martin Arjovsky AI history source images",
+      "eventKey": "ai100-2017-wasserstein-gan"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Wasserstein%20GAN%20Martin%20Arjovsky%20AI%20history%20source%20images",
+      "query": "2017 Wasserstein GAN Martin Arjovsky AI history source images",
+      "eventKey": "ai100-2017-wasserstein-gan"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Martin Arjovsky portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Martin%20Arjovsky%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Martin Arjovsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Martin%20Arjovsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Martin Arjovsky official biography search",
+      "url": "https://www.google.com/search?q=Martin%20Arjovsky%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Wasserstein GAN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Wasserstein%20GAN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Wasserstein GAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Wasserstein%20GAN%202017&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Wasserstein GAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Wasserstein%20GAN%202017",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Wasserstein GAN publication search",
+      "url": "https://www.google.com/search?q=2017%20Wasserstein%20GAN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Wasserstein GAN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Wasserstein%20GAN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Wasserstein Generative Adversarial Networks",
+      "sourceUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+      "finalUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Wasserstein Generative Adversarial Networks",
+      "savedPath": "pages/001.wasserstein-generative-adversarial-networks.html",
+      "fetchedAt": "2026-07-03T12:06:12.440Z"
+    },
+    {
+      "label": "Improved Training of Wasserstein GANs",
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+      "finalUrl": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Improved Training of Wasserstein GANs",
+      "savedPath": "pages/002.improved-training-of-wasserstein-gans.html",
+      "fetchedAt": "2026-07-03T12:06:13.504Z"
+    },
+    {
+      "label": "Wasserstein GAN overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+      "finalUrl": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Wasserstein GAN - Wikipedia",
+      "savedPath": "pages/003.wasserstein-gan-overview.html",
+      "fetchedAt": "2026-07-03T12:06:14.121Z"
+    },
+    {
+      "label": "Leon Bottou homepage",
+      "sourceUrl": "https://leon.bottou.org/",
+      "finalUrl": "https://leon.bottou.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "start [leon.bottou.org]",
+      "savedPath": "pages/004.leon-bottou-homepage.html",
+      "fetchedAt": "2026-07-03T12:06:19.026Z"
+    },
+    {
+      "label": "Martin Arjovsky Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Martin%20Arjovsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Martin%20Arjovsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.martin-arjovsky-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:06:20.761Z"
+    },
+    {
+      "label": "Wasserstein GAN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Wasserstein%20GAN%202017&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Wasserstein%20GAN%202017&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.wasserstein-gan-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:06:22.209Z"
+    },
+    {
+      "label": "Wasserstein GAN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Wasserstein%20GAN%202017",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Wasserstein%20GAN%202017",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.wasserstein-gan-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:06:22.959Z"
+    }
+  ]
+}

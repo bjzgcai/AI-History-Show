@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:32:09.633Z",
+  "eventKey": "2025-llm-competition",
+  "year": 2025,
+  "title": {
+    "en": "A Flourishing Competition Among Large Language Models",
+    "zh": "大语言模型百花齐放"
+  },
+  "location": {
+    "name": {
+      "en": "Global AI Industry",
+      "zh": "全球研究"
+    },
+    "country": {
+      "en": "Global",
+      "zh": "美国 / 中国"
+    },
+    "coordinates": [
+      [
+        37.7749,
+        -122.4194
+      ],
+      [
+        37.422,
+        -122.0841
+      ],
+      [
+        39.9042,
+        116.4074
+      ],
+      [
+        30.2741,
+        120.1551
+      ]
+    ]
+  },
+  "description": {
+    "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
+    "zh": "注释： 榜单来源：LMArena 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 LLM Leaderboard 2025.12.22"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "研究机构",
+        "type": "portrait-search",
+        "label": "研究机构 portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "研究机构",
+        "type": "commons-portrait-search",
+        "label": "研究机构 Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "A Flourishing Competition Among Large Language Models event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "A Flourishing Competition Among Large Language Models Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "A Flourishing Competition Among Large Language Models Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "A Flourishing Competition Among Large Language Models publication search",
+        "url": "https://www.google.com/search?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "A Flourishing Competition Among Large Language Models scholar search",
+        "url": "https://scholar.google.com/scholar?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 4,
+    "manifest": "images/manifest.json"
+  }
+}

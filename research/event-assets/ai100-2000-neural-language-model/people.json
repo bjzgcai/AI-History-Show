@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Lead author of the neural probabilistic language model",
+        "zh": "神经概率语言模型主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

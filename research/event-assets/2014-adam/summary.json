@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:58.634Z",
+  "eventKey": "2014-adam",
+  "year": "2014",
+  "title": {
+    "en": "Adam Optimizer",
+    "zh": "Adam 优化器"
+  },
+  "location": {
+    "name": {
+      "en": "University of Amsterdam / University of Toronto",
+      "zh": "阿姆斯特丹大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Amsterdam, Netherlands and Toronto, Canada",
+      "zh": "荷兰阿姆斯特丹与加拿大多伦多"
+    },
+    "coordinates": [
+      52.3558,
+      4.9558
+    ]
+  },
+  "description": {
+    "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>",
+    "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Diederik P. Kingma portrait",
+        "zh": "迪德里克·P·金马 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Kingma's personal website.",
+        "zh": "来自 金马 个人网站的人物照片。"
+      },
+      "sourceName": {
+        "en": "Diederik P. Kingma personal website",
+        "zh": "迪德里克·P·金马 personal website"
+      },
+      "sourceUrl": "https://dpkingma.com/",
+      "license": {
+        "en": "Personal website photo; rights not stated.",
+        "zh": "Personal website photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Co-author portrait",
+        "zh": "历史人物 / 共同作者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Adam moment traces",
+        "zh": "Adam 一阶/二阶矩曲线"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+        "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "arXiv / ICLR",
+        "zh": "arXiv / ICLR"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1412.6980",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Loss landscape trajectory",
+        "zh": "损失地形轨迹"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+        "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "arXiv / ICLR",
+        "zh": "arXiv / ICLR"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1412.6980",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Diederik P. Kingma",
+        "type": "portrait-search",
+        "label": "Diederik P. Kingma portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Diederik%20P.%20Kingma%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Diederik P. Kingma",
+        "type": "commons-portrait-search",
+        "label": "Diederik P. Kingma Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Diederik%20P.%20Kingma%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Jimmy Ba",
+        "type": "portrait-search",
+        "label": "Jimmy Ba portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jimmy%20Ba%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jimmy Ba",
+        "type": "commons-portrait-search",
+        "label": "Jimmy Ba Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jimmy%20Ba%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Adam Optimizer event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2014%20Adam%20Optimizer%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Adam Optimizer Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Adam%20Optimizer%202014&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Adam Optimizer Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Adam%20Optimizer%202014",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Adam Optimizer publication search",
+        "url": "https://www.google.com/search?q=2014%20Adam%20Optimizer%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Adam Optimizer scholar search",
+        "url": "https://scholar.google.com/scholar?q=2014%20Adam%20Optimizer%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

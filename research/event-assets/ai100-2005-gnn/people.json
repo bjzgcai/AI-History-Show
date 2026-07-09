@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Franco Scarselli",
+        "zh": "弗兰科·斯卡塞利"
+      },
+      "role": {
+        "en": "Graph neural network co-author",
+        "zh": "图神经网络共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
+          "sourceUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

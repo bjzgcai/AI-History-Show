@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:41.206Z",
+  "eventKey": "ai100-2021-dalle",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Zero-Shot Text-to-Image Generation",
+      "url": "https://arxiv.org/abs/2102.12092",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICML DALL-E paper page",
+      "url": "https://proceedings.mlr.press/v139/ramesh21a.html",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "OpenAI DALL-E blog post",
+      "url": "https://openai.com/index/dall-e/",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "DALL-E overview",
+      "url": "https://en.wikipedia.org/wiki/DALL-E",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "VentureBeat / OpenAI via BAAI Hub",
+      "url": "https://hub.baai.ac.cn/view/23577",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Aditya Ramesh Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Aditya%20Ramesh%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "DALL-E Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DALL-E%202021&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DALL-E Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DALL-E%202021",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2021%20DALL-E%20Aditya%20Ramesh%20AI%20history%20source%20images",
+      "query": "2021 DALL-E Aditya Ramesh AI history source images",
+      "eventKey": "ai100-2021-dalle"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20DALL-E%20Aditya%20Ramesh%20AI%20history%20source%20images",
+      "query": "2021 DALL-E Aditya Ramesh AI history source images",
+      "eventKey": "ai100-2021-dalle"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2021%20DALL-E%20Aditya%20Ramesh%20AI%20history%20source%20images",
+      "query": "2021 DALL-E Aditya Ramesh AI history source images",
+      "eventKey": "ai100-2021-dalle"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Aditya Ramesh portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Aditya%20Ramesh%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Aditya Ramesh Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Aditya%20Ramesh%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Aditya Ramesh official biography search",
+      "url": "https://www.google.com/search?q=Aditya%20Ramesh%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "DALL-E event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20DALL-E%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "DALL-E Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DALL-E%202021&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DALL-E Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DALL-E%202021",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "DALL-E publication search",
+      "url": "https://www.google.com/search?q=2021%20DALL-E%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "DALL-E scholar search",
+      "url": "https://scholar.google.com/scholar?q=2021%20DALL-E%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Zero-Shot Text-to-Image Generation",
+      "sourceUrl": "https://arxiv.org/abs/2102.12092",
+      "finalUrl": "https://arxiv.org/abs/2102.12092",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[2102.12092] Zero-Shot Text-to-Image Generation",
+      "savedPath": "pages/001.zero-shot-text-to-image-generation.html",
+      "fetchedAt": "2026-07-03T12:04:41.581Z"
+    },
+    {
+      "label": "ICML DALL-E paper page",
+      "sourceUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+      "finalUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Zero-Shot Text-to-Image Generation",
+      "savedPath": "pages/002.icml-dall-e-paper-page.html",
+      "fetchedAt": "2026-07-03T12:04:42.169Z"
+    },
+    {
+      "label": "OpenAI DALL-E blog post",
+      "sourceUrl": "https://openai.com/index/dall-e/",
+      "finalUrl": "https://openai.com/index/dall-e/",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/003.openai-dall-e-blog-post.html",
+      "fetchedAt": "2026-07-03T12:04:42.538Z"
+    },
+    {
+      "label": "DALL-E overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DALL-E",
+      "finalUrl": "https://en.wikipedia.org/wiki/DALL-E",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "DALL-E - Wikipedia",
+      "savedPath": "pages/004.dall-e-overview.html",
+      "fetchedAt": "2026-07-03T12:04:43.187Z"
+    },
+    {
+      "label": "VentureBeat / OpenAI via BAAI Hub",
+      "sourceUrl": "https://hub.baai.ac.cn/view/23577",
+      "finalUrl": "https://hub.baai.ac.cn/view/23577",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "DALL-E发明者受访：我对其两年来产生的影响感到惊讶 - 智源社区",
+      "savedPath": "pages/005.venturebeat-openai-via-baai-hub.html",
+      "fetchedAt": "2026-07-03T12:04:43.933Z"
+    },
+    {
+      "label": "Aditya Ramesh Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Aditya%20Ramesh%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Aditya%20Ramesh%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.aditya-ramesh-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:45.507Z"
+    },
+    {
+      "label": "DALL-E Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=DALL-E%202021&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=DALL-E%202021&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.dall-e-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:04:48.069Z"
+    },
+    {
+      "label": "DALL-E Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=DALL-E%202021",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=DALL-E%202021",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.dall-e-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:48.672Z"
+    }
+  ]
+}

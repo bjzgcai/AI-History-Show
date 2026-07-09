@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Judea Pearl",
+        "zh": "朱迪亚·珀尔"
+      },
+      "role": {
+        "en": "Pioneer of Bayesian networks and causal AI",
+        "zh": "贝叶斯网络与因果 AI 先驱"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+          "license": {
+            "en": "Creative Commons license stated on Commons file page.",
+            "zh": "Creative Commons license stated on Commons file page."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

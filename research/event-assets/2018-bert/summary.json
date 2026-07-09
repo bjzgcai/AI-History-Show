@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:23.110Z",
+  "eventKey": "2018-bert",
+  "year": 2018,
+  "title": {
+    "en": "BERT",
+    "zh": "BERT"
+  },
+  "location": {
+    "name": {
+      "en": "Google AI Language",
+      "zh": "OpenAI / 谷歌 AI"
+    },
+    "country": {
+      "en": "CA, United States",
+      "zh": "美国, 加利福尼亚州"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "description": {
+    "en": "In 2018, Google introduced BERT, bringing large-scale pretraining plus fine-tuning into mainstream NLP. Based on the Transformer encoder, BERT learned bidirectional representations and achieved state-of-the-art results across many language tasks.",
+    "zh": "2018年，谷歌提出的BERT第一次把大规模预训练和后训练（微调）范式引入人工智能领域，横扫了当年所有NLP任务。 BERT 是一种基于Transformer的双向编码模型。它通过掩码语言模型（掩码语言模型）和下一句预测（下一句预测）进行训练，能够同时考虑上下文信息， 在文本理解任务中表现出色。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "BERT diagram",
+        "zh": "BERT 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2018-bert/architecture/2018-bert_architecture_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "BERT diagram",
+        "zh": "BERT 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Jacob Devlin",
+        "type": "portrait-search",
+        "label": "Jacob Devlin portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jacob%20Devlin%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jacob Devlin",
+        "type": "commons-portrait-search",
+        "label": "Jacob Devlin Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jacob%20Devlin%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Alec Radford",
+        "type": "portrait-search",
+        "label": "Alec Radford portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alec%20Radford%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alec Radford",
+        "type": "commons-portrait-search",
+        "label": "Alec Radford Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "BERT event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2018%20BERT%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "BERT Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=BERT%202018&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "BERT Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=BERT%202018",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "BERT publication search",
+        "url": "https://www.google.com/search?q=2018%20BERT%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "BERT scholar search",
+        "url": "https://scholar.google.com/scholar?q=2018%20BERT%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

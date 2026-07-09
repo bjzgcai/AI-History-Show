@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:34.867Z",
+  "eventKey": "ai100-2016-gcn",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "url": "https://arxiv.org/abs/1609.02907",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICLR OpenReview record",
+      "url": "https://openreview.net/forum?id=SJU4ayYgl",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "Kipf GCN repository",
+      "url": "https://github.com/tkipf/gcn",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Thomas Kipf homepage",
+      "url": "https://tkipf.github.io/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Thomas Kipf Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Kipf%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "GCN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GCN%202016&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GCN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GCN%202016",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2016%20GCN%20Thomas%20Kipf%20AI%20history%20source%20images",
+      "query": "2016 GCN Thomas Kipf AI history source images",
+      "eventKey": "ai100-2016-gcn"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20GCN%20Thomas%20Kipf%20AI%20history%20source%20images",
+      "query": "2016 GCN Thomas Kipf AI history source images",
+      "eventKey": "ai100-2016-gcn"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2016%20GCN%20Thomas%20Kipf%20AI%20history%20source%20images",
+      "query": "2016 GCN Thomas Kipf AI history source images",
+      "eventKey": "ai100-2016-gcn"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Thomas Kipf portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Kipf%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Thomas Kipf Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Kipf%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Thomas Kipf official biography search",
+      "url": "https://www.google.com/search?q=Thomas%20Kipf%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "GCN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20GCN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "GCN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GCN%202016&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GCN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GCN%202016",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "GCN publication search",
+      "url": "https://www.google.com/search?q=2016%20GCN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "GCN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2016%20GCN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "sourceUrl": "https://arxiv.org/abs/1609.02907",
+      "finalUrl": "https://arxiv.org/abs/1609.02907",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1609.02907] Semi-Supervised Classification with Graph Convolutional Networks",
+      "savedPath": "pages/001.semi-supervised-classification-with-graph-convolutional-networks.html",
+      "fetchedAt": "2026-07-03T12:07:35.245Z"
+    },
+    {
+      "label": "ICLR OpenReview record",
+      "sourceUrl": "https://openreview.net/forum?id=SJU4ayYgl",
+      "finalUrl": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DSJU4ayYgl",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Verifying your browser | OpenReview",
+      "savedPath": "pages/002.iclr-openreview-record.html",
+      "fetchedAt": "2026-07-03T12:07:35.997Z"
+    },
+    {
+      "label": "Kipf GCN repository",
+      "sourceUrl": "https://github.com/tkipf/gcn",
+      "finalUrl": "https://github.com/tkipf/gcn",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - tkipf/gcn: Implementation of Graph Convolutional Networks in TensorFlow · GitHub",
+      "savedPath": "pages/003.kipf-gcn-repository.html",
+      "fetchedAt": "2026-07-03T12:07:37.369Z"
+    },
+    {
+      "label": "Thomas Kipf homepage",
+      "sourceUrl": "https://tkipf.github.io/",
+      "finalUrl": "https://tkipf.github.io/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Thomas Kipf | Senior Staff Research Scientist @ Google DeepMind",
+      "savedPath": "pages/004.thomas-kipf-homepage.html",
+      "fetchedAt": "2026-07-03T12:07:38.298Z"
+    },
+    {
+      "label": "Thomas Kipf Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Kipf%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Kipf%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.thomas-kipf-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:39.689Z"
+    },
+    {
+      "label": "GCN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=GCN%202016&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=GCN%202016&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.gcn-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:07:41.977Z"
+    },
+    {
+      "label": "GCN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=GCN%202016",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=GCN%202016",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.gcn-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:42.586Z"
+    }
+  ]
+}

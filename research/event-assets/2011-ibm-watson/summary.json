@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:39.601Z",
+  "eventKey": "2011-ibm-watson",
+  "year": "2006-2011",
+  "title": {
+    "en": "IBM Watson",
+    "zh": "IBM Watson"
+  },
+  "location": {
+    "name": {
+      "en": "IBM Thomas J. Watson Research Center",
+      "zh": "IBM 托马斯·J·沃森 研究中心"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2101,
+      -73.8037
+    ]
+  },
+  "description": {
+    "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>",
+    "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "David Ferrucci portrait",
+        "zh": "戴维·费鲁奇 人物照片"
+      },
+      "subcaption": {
+        "en": "Principal investigator of the IBM Watson / DeepQA team.",
+        "zh": "IBM Watson / DeepQA 团队负责人。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      }
+    },
+    {
+      "index": 1,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "IBM Watson system",
+        "zh": "IBM Watson 系统照片"
+      },
+      "subcaption": {
+        "en": "Watson hardware display photographed in 2011.",
+        "zh": "2011 年拍摄的 Watson 系统硬件展示。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+      "license": {
+        "en": "CC BY 3.0",
+        "zh": "CC BY 3.0"
+      },
+      "usage": {
+        "en": "System photo",
+        "zh": "系统照片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+      "existsLocally": false,
+      "caption": {
+        "en": "DeepQA architecture",
+        "zh": "DeepQA 架构图"
+      },
+      "subcaption": {
+        "en": "Commons diagram based on the AI Magazine Watson overview.",
+        "zh": "依据 AI Magazine Watson 综述绘制的 Commons 架构图。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+      "license": {
+        "en": "CC0",
+        "zh": "CC0"
+      },
+      "usage": {
+        "en": "Architecture diagram",
+        "zh": "架构图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Evidence ranking stack",
+        "zh": "证据排序栈"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Watson: Beyond Jeopardy!.",
+        "zh": "依据 沃森：超越《危险边缘！》 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Watson: Beyond Jeopardy!",
+        "zh": "沃森：超越《危险边缘！》"
+      },
+      "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Scoring diagram",
+        "zh": "评分图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "David Ferrucci",
+        "type": "portrait-search",
+        "label": "David Ferrucci portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=David%20Ferrucci%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "David Ferrucci",
+        "type": "commons-portrait-search",
+        "label": "David Ferrucci Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=David%20Ferrucci%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "IBM DeepQA team",
+        "type": "portrait-search",
+        "label": "IBM DeepQA team portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=IBM%20DeepQA%20team%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "IBM DeepQA team",
+        "type": "commons-portrait-search",
+        "label": "IBM DeepQA team Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=IBM%20DeepQA%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "IBM Watson event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2006-2011%20IBM%20Watson%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "IBM Watson Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=IBM%20Watson%202006-2011&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "IBM Watson Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=IBM%20Watson%202006-2011",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "IBM Watson publication search",
+        "url": "https://www.google.com/search?q=2006-2011%20IBM%20Watson%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "IBM Watson scholar search",
+        "url": "https://scholar.google.com/scholar?q=2006-2011%20IBM%20Watson%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 4,
+    "manifest": "images/manifest.json"
+  }
+}

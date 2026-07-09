@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Tomas Mikolov",
+        "zh": "托马斯·米科洛夫"
+      },
+      "role": {
+        "en": "Lead author of word2vec papers",
+        "zh": "word2vec 论文主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+          "sourceUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+          "license": {
+            "en": "IEEE SPS newsletter image; rights not stated.",
+            "zh": "IEEE SPS newsletter image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

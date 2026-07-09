@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Alex Krizhevsky",
+        "zh": "亚历克斯·克里泽夫斯基"
+      },
+      "role": {
+        "en": "AlexNet lead author",
+        "zh": "AlexNet 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/alex-krizhevsky.jpg",
+          "sourceUrl": "resources/images/figures/alex-krizhevsky.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author and advisor",
+        "zh": "共同作者与导师"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/alex-krizhevsky.jpg",
+          "sourceUrl": "resources/images/figures/alex-krizhevsky.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

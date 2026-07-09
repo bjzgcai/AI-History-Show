@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:00:24.134Z",
+  "eventKey": "ai100-1980-neocognitron",
+  "year": 1980,
+  "title": {
+    "en": "Neocognitron",
+    "zh": "新认知机"
+  },
+  "location": {
+    "name": {
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "NHK 广播科学研究实验室"
+    },
+    "country": {
+      "en": "Tokyo, Japan",
+      "zh": "日本东京"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "description": {
+    "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>",
+    "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Kunihiko Fukushima portrait",
+        "zh": "福岛邦彦肖像"
+      },
+      "subcaption": {
+        "en": "Creator of the neocognitron",
+        "zh": "Neocognitron 提出者"
+      },
+      "sourceName": {
+        "en": "NEC C&C Foundation",
+        "zh": "NEC C&C Foundation"
+      },
+      "sourceUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+      "license": {
+        "en": "NEC C&C Foundation image; reuse rights not stated.",
+        "zh": "NEC C&C Foundation 图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Hierarchical visual layers",
+        "zh": "层级视觉网络"
+      },
+      "subcaption": {
+        "en": "Original local explainer of neocognitron hierarchy.",
+        "zh": "关于 Neocognitron 层级结构的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Biological Cybernetics",
+        "zh": "Biological Cybernetics"
+      },
+      "sourceUrl": "https://doi.org/10.1007/BF00344251",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Kunihiko Fukushima",
+        "type": "portrait-search",
+        "label": "Kunihiko Fukushima portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Kunihiko%20Fukushima%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Kunihiko Fukushima",
+        "type": "commons-portrait-search",
+        "label": "Kunihiko Fukushima Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Neocognitron event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1980%20Neocognitron%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Neocognitron Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Neocognitron%201980&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Neocognitron Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Neocognitron%201980",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Neocognitron publication search",
+        "url": "https://www.google.com/search?q=1980%20Neocognitron%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Neocognitron scholar search",
+        "url": "https://scholar.google.com/scholar?q=1980%20Neocognitron%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

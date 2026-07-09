@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:40.535Z",
+  "eventKey": "ai100-2005-hog",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2005-hog",
+      "label": "Co-author of HOG",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://sites.google.com/view/navneetdalal/home",
+      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+      "status": "not-direct-image-url",
+      "usage": "Achievement visual material",
+      "pageSnapshot": ""
+    },
+    {
+      "eventKey": "ai100-2005-hog",
+      "label": "Original local explainer of gradient-orientation histograms.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-gradient-orientation-histograms.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1298,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:57:40.535Z"
+    }
+  ]
+}

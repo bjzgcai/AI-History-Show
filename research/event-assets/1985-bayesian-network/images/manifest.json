@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:33.753Z",
+  "eventKey": "1985-bayesian-network",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1985-bayesian-network",
+      "label": "Portrait from Wikimedia Commons NIPS 2013 image.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-wikimedia-commons-nips-2013-image.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 83648,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Creative Commons license stated on Commons file page.",
+      "downloadedAt": "2026-07-03T11:53:33.449Z"
+    },
+    {
+      "eventKey": "1985-bayesian-network",
+      "label": "Local redraw for Bayesian Network, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-bayesian-network-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 908,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:53:33.753Z"
+    }
+  ]
+}

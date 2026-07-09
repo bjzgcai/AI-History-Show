@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:31.688Z",
+  "eventKey": "ai100-2014-ms-coco",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Microsoft COCO: Common Objects in Context",
+      "url": "https://arxiv.org/abs/1405.0312",
+      "usage": ""
+    },
+    {
+      "type": "Dataset",
+      "label": "COCO dataset website",
+      "url": "https://cocodataset.org/",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ECCV Springer record",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Tsung-Yi Lin homepage",
+      "url": "https://tsungyilin.info/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tsung-Yi Lin Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tsung-Yi%20Lin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "MS COCO Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=MS%20COCO%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "MS COCO Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=MS%20COCO%202014",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2014%20MS%20COCO%20Tsung-Yi%20Lin%20AI%20history%20source%20images",
+      "query": "2014 MS COCO Tsung-Yi Lin AI history source images",
+      "eventKey": "ai100-2014-ms-coco"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20MS%20COCO%20Tsung-Yi%20Lin%20AI%20history%20source%20images",
+      "query": "2014 MS COCO Tsung-Yi Lin AI history source images",
+      "eventKey": "ai100-2014-ms-coco"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2014%20MS%20COCO%20Tsung-Yi%20Lin%20AI%20history%20source%20images",
+      "query": "2014 MS COCO Tsung-Yi Lin AI history source images",
+      "eventKey": "ai100-2014-ms-coco"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Tsung-Yi Lin portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Tsung-Yi%20Lin%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tsung-Yi Lin Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tsung-Yi%20Lin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Tsung-Yi Lin official biography search",
+      "url": "https://www.google.com/search?q=Tsung-Yi%20Lin%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "MS COCO event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20MS%20COCO%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "MS COCO Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=MS%20COCO%202014&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "MS COCO Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=MS%20COCO%202014",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "MS COCO publication search",
+      "url": "https://www.google.com/search?q=2014%20MS%20COCO%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "MS COCO scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20MS%20COCO%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Microsoft COCO: Common Objects in Context",
+      "sourceUrl": "https://arxiv.org/abs/1405.0312",
+      "finalUrl": "https://arxiv.org/abs/1405.0312",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1405.0312] Microsoft COCO: Common Objects in Context",
+      "savedPath": "pages/001.microsoft-coco-common-objects-in-context.html",
+      "fetchedAt": "2026-07-03T12:08:32.061Z"
+    },
+    {
+      "label": "COCO dataset website",
+      "sourceUrl": "https://cocodataset.org/",
+      "finalUrl": "https://cocodataset.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "COCO - Common Objects in Context",
+      "savedPath": "pages/002.coco-dataset-website.html",
+      "fetchedAt": "2026-07-03T12:08:33.945Z"
+    },
+    {
+      "label": "ECCV Springer record",
+      "sourceUrl": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48",
+      "finalUrl": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48?error=cookies_not_supported&code=26340fde-fee8-45c8-bc8b-21d49654b8f6",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Microsoft COCO: Common Objects in Context | Springer Nature Link",
+      "savedPath": "pages/003.eccv-springer-record.html",
+      "fetchedAt": "2026-07-03T12:08:37.150Z"
+    },
+    {
+      "label": "Tsung-Yi Lin homepage",
+      "sourceUrl": "https://tsungyilin.info/",
+      "finalUrl": "https://tsungyilin.info/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Tsung-Yi Lin",
+      "savedPath": "pages/004.tsung-yi-lin-homepage.html",
+      "fetchedAt": "2026-07-03T12:08:39.240Z"
+    },
+    {
+      "label": "Tsung-Yi Lin Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Tsung-Yi%20Lin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Tsung-Yi%20Lin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.tsung-yi-lin-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:40.522Z"
+    },
+    {
+      "label": "MS COCO Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=MS%20COCO%202014&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=MS%20COCO%202014&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.ms-coco-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:08:42.876Z"
+    },
+    {
+      "label": "MS COCO Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=MS%20COCO%202014",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=MS%20COCO%202014",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.ms-coco-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:43.616Z"
+    }
+  ]
+}

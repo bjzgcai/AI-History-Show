@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:38.364Z",
+  "eventKey": "ai100-2014-conditional-gan",
+  "year": 2014,
+  "title": {
+    "en": "Conditional GAN",
+    "zh": "Conditional GAN"
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  },
+  "description": {
+    "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>",
+    "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Simon Osindero portrait",
+        "zh": "西蒙·奥辛德罗肖像"
+      },
+      "subcaption": {
+        "en": "Conditional GAN co-author",
+        "zh": "Conditional GAN 共同作者"
+      },
+      "sourceName": {
+        "en": "Kaptur interview",
+        "zh": "Kaptur 访谈"
+      },
+      "sourceUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+      "license": {
+        "en": "Article image; reuse rights not stated.",
+        "zh": "文章配图；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Conditional GAN explainer",
+        "zh": "Conditional GAN 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1411.1784",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Mehdi Mirza",
+        "type": "portrait-search",
+        "label": "Mehdi Mirza portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Mehdi%20Mirza%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Mehdi Mirza",
+        "type": "commons-portrait-search",
+        "label": "Mehdi Mirza Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Mehdi%20Mirza%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Conditional GAN event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2014%20Conditional%20GAN%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Conditional GAN Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Conditional%20GAN%202014&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Conditional GAN Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Conditional%20GAN%202014",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Conditional GAN publication search",
+        "url": "https://www.google.com/search?q=2014%20Conditional%20GAN%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Conditional GAN scholar search",
+        "url": "https://scholar.google.com/scholar?q=2014%20Conditional%20GAN%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:22.414Z",
+  "eventKey": "ai100-1970-ridge",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1970-ridge",
+      "label": "Co-author of ridge regression",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+      "imageUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+      "finalImageUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+      "localPath": "images/001.co-author-of-ridge-regression.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 61759,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "University of Delaware image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:57:22.110Z"
+    },
+    {
+      "eventKey": "ai100-1970-ridge",
+      "label": "Original local explainer of L2 coefficient shrinkage.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-l2-coefficient-shrinkage.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1255,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:57:22.414Z"
+    }
+  ]
+}

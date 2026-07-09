@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:16.186Z",
+  "eventKey": "ai100-1983-actor-critic",
+  "year": 1983,
+  "title": {
+    "en": "Actor-Critic",
+    "zh": "Actor-Critic"
+  },
+  "location": {
+    "name": {
+      "en": "University of Massachusetts Amherst",
+      "zh": "University of Massachusetts Amherst"
+    },
+    "country": {
+      "en": "Amherst, United States",
+      "zh": "Amherst, United States"
+    },
+    "coordinates": [
+      42.3868,
+      -72.5301
+    ]
+  },
+  "description": {
+    "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>",
+    "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+      "existsLocally": false,
+      "caption": {
+        "en": "Andrew Barto portrait",
+        "zh": "安德鲁·巴托肖像"
+      },
+      "subcaption": {
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
+      },
+      "sourceName": {
+        "en": "UMass Amherst profile",
+        "zh": "马萨诸塞大学阿默斯特分校个人资料"
+      },
+      "sourceUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Actor-Critic explainer",
+        "zh": "Actor-Critic 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "IEEE Xplore",
+        "zh": "IEEE Xplore"
+      },
+      "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Andrew Barto",
+        "type": "portrait-search",
+        "label": "Andrew Barto portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Andrew%20Barto%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Andrew Barto",
+        "type": "commons-portrait-search",
+        "label": "Andrew Barto Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Andrew%20Barto%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Actor-Critic event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1983%20Actor-Critic%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Actor-Critic Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Actor-Critic%201983&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Actor-Critic Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Actor-Critic%201983",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Actor-Critic publication search",
+        "url": "https://www.google.com/search?q=1983%20Actor-Critic%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Actor-Critic scholar search",
+        "url": "https://scholar.google.com/scholar?q=1983%20Actor-Critic%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

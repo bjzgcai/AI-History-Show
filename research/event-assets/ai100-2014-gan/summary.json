@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:03:29.329Z",
+  "eventKey": "ai100-2014-gan",
+  "year": 2014,
+  "title": {
+    "en": "Generative Adversarial Network",
+    "zh": "生成对抗网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5056,
+      -73.6139
+    ]
+  },
+  "description": {
+    "en": "<p>Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI.</p>",
+    "zh": "<p>伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/ian-goodfellow.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Ian Goodfellow portrait",
+        "zh": "伊恩·古德费洛肖像"
+      },
+      "subcaption": {
+        "en": "GAN lead author",
+        "zh": "GAN 主要作者"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/ian-goodfellow.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "GAN adversarial loop",
+        "zh": "GAN 对抗循环"
+      },
+      "subcaption": {
+        "en": "Original local explainer of generator-discriminator training.",
+        "zh": "关于生成器-判别器训练的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "NeurIPS",
+        "zh": "NeurIPS"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Ian Goodfellow",
+        "type": "portrait-search",
+        "label": "Ian Goodfellow portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ian%20Goodfellow%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ian Goodfellow",
+        "type": "commons-portrait-search",
+        "label": "Ian Goodfellow Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ian%20Goodfellow%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Yoshua Bengio",
+        "type": "portrait-search",
+        "label": "Yoshua Bengio portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Yoshua%20Bengio%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Yoshua Bengio",
+        "type": "commons-portrait-search",
+        "label": "Yoshua Bengio Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Generative Adversarial Network event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2014%20Generative%20Adversarial%20Network%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Generative Adversarial Network Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Generative%20Adversarial%20Network%202014&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Generative Adversarial Network Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Generative%20Adversarial%20Network%202014",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Generative Adversarial Network publication search",
+        "url": "https://www.google.com/search?q=2014%20Generative%20Adversarial%20Network%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Generative Adversarial Network scholar search",
+        "url": "https://scholar.google.com/scholar?q=2014%20Generative%20Adversarial%20Network%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:07.002Z",
+  "eventKey": "2014-dropout",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Nitish Srivastava",
+      "role": "First author of the JMLR dropout paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Nitish Srivastava portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Nitish%20Srivastava%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Nitish Srivastava Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Nitish%20Srivastava%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Nitish Srivastava official biography search",
+          "url": "https://www.google.com/search?q=Nitish%20Srivastava%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Geoffrey Hinton",
+      "role": "Co-author and deep learning pioneer",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Geoffrey Hinton portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Geoffrey Hinton Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Geoffrey Hinton official biography search",
+          "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Dropout event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Dropout%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Dropout Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Dropout%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Dropout Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dropout%202014",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Dropout publication search",
+      "url": "https://www.google.com/search?q=2014%20Dropout%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Dropout scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Dropout%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Nitish Srivastava portrait",
+        "zh": "尼蒂什·斯里瓦斯塔瓦 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Srivastava’s University of Toronto page.",
+        "zh": "来自 Srivastava 多伦多大学个人页的人物图。"
+      },
+      "sourceUrl": "https://www.cs.utoronto.ca/~nitish/",
+      "sourceLabel": "University of Toronto personal page",
+      "license": {
+        "en": "Personal website photo; rights not stated.",
+        "zh": "Personal website photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Random unit mask",
+        "zh": "随机单元掩码"
+      },
+      "subcaption": {
+        "en": "Local redraw for Dropout, based on the listed source material.",
+        "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "sourceLabel": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Approximate ensemble",
+        "zh": "近似集成"
+      },
+      "subcaption": {
+        "en": "Local redraw for Dropout, based on the listed source material.",
+        "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "sourceLabel": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "University of Toronto personal page",
+        "url": "https://www.cs.utoronto.ca/~nitish/",
+        "usage": "Historical figure / Key contributor portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+        "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

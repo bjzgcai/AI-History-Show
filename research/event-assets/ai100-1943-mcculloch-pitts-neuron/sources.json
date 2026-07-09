@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:01.769Z",
+  "eventKey": "ai100-1943-mcculloch-pitts-neuron",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+      "url": "https://doi.org/10.1007/BF02478259",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "McCulloch-Pitts neuron overview",
+      "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+      "usage": ""
+    },
+    {
+      "type": "Context",
+      "label": "History of Information entry",
+      "url": "https://www.historyofinformation.com/detail.php?id=634",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Walter Pitts blackboard photo",
+      "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Warren McCulloch Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Warren%20McCulloch%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Walter Pitts Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Walter%20Pitts%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "McCulloch-Pitts Neuron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=McCulloch-Pitts%20Neuron%201943&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "McCulloch-Pitts Neuron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=McCulloch-Pitts%20Neuron%201943",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1943%20McCulloch-Pitts%20Neuron%20Warren%20McCulloch%20Walter%20Pitts%20AI%20history%20source%20images",
+      "query": "1943 McCulloch-Pitts Neuron Warren McCulloch Walter Pitts AI history source images",
+      "eventKey": "ai100-1943-mcculloch-pitts-neuron"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1943%20McCulloch-Pitts%20Neuron%20Warren%20McCulloch%20Walter%20Pitts%20AI%20history%20source%20images",
+      "query": "1943 McCulloch-Pitts Neuron Warren McCulloch Walter Pitts AI history source images",
+      "eventKey": "ai100-1943-mcculloch-pitts-neuron"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1943%20McCulloch-Pitts%20Neuron%20Warren%20McCulloch%20Walter%20Pitts%20AI%20history%20source%20images",
+      "query": "1943 McCulloch-Pitts Neuron Warren McCulloch Walter Pitts AI history source images",
+      "eventKey": "ai100-1943-mcculloch-pitts-neuron"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Warren McCulloch portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Warren%20McCulloch%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Warren McCulloch Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Warren%20McCulloch%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Warren McCulloch official biography search",
+      "url": "https://www.google.com/search?q=Warren%20McCulloch%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Walter Pitts portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Walter%20Pitts%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Walter Pitts Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Walter%20Pitts%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Walter Pitts official biography search",
+      "url": "https://www.google.com/search?q=Walter%20Pitts%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "McCulloch-Pitts Neuron event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1943%20McCulloch-Pitts%20Neuron%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "McCulloch-Pitts Neuron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=McCulloch-Pitts%20Neuron%201943&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "McCulloch-Pitts Neuron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=McCulloch-Pitts%20Neuron%201943",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "McCulloch-Pitts Neuron publication search",
+      "url": "https://www.google.com/search?q=1943%20McCulloch-Pitts%20Neuron%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "McCulloch-Pitts Neuron scholar search",
+      "url": "https://scholar.google.com/scholar?q=1943%20McCulloch-Pitts%20Neuron%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+      "sourceUrl": "https://doi.org/10.1007/BF02478259",
+      "finalUrl": "https://link.springer.com/article/10.1007/BF02478259?error=cookies_not_supported&code=f07018fd-8765-410c-9cc1-343ca81ff09a",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "A logical calculus of the ideas immanent in nervous activity | Bulletin of Mathematical Biology | Springer Nature Link",
+      "savedPath": "pages/001.a-logical-calculus-of-ideas-immanent-in-nervous-activity.html",
+      "fetchedAt": "2026-07-03T11:59:05.992Z"
+    },
+    {
+      "label": "McCulloch-Pitts neuron overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+      "finalUrl": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "A Logical Calculus of the Ideas Immanent in Nervous Activity - Wikipedia",
+      "savedPath": "pages/002.mcculloch-pitts-neuron-overview.html",
+      "fetchedAt": "2026-07-03T11:59:06.608Z"
+    },
+    {
+      "label": "History of Information entry",
+      "sourceUrl": "https://www.historyofinformation.com/detail.php?id=634",
+      "finalUrl": "https://www.historyofinformation.com/detail.php?id=634",
+      "ok": false,
+      "status": 502,
+      "contentType": "text/html",
+      "title": "502 Bad Gateway",
+      "savedPath": "pages/003.history-of-information-entry.html",
+      "fetchedAt": "2026-07-03T11:59:07.992Z"
+    },
+    {
+      "label": "Walter Pitts blackboard photo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:1954 Walter Pitts and a blackboard.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.walter-pitts-blackboard-photo.html",
+      "fetchedAt": "2026-07-03T11:59:09.301Z"
+    },
+    {
+      "label": "Warren McCulloch Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Warren%20McCulloch%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Warren%20McCulloch%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.warren-mcculloch-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:59:11.136Z"
+    },
+    {
+      "label": "Walter Pitts Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Walter%20Pitts%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Walter%20Pitts%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.walter-pitts-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:59:12.523Z"
+    },
+    {
+      "label": "McCulloch-Pitts Neuron Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=McCulloch-Pitts%20Neuron%201943&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=McCulloch-Pitts%20Neuron%201943&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.mcculloch-pitts-neuron-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:59:14.074Z"
+    },
+    {
+      "label": "McCulloch-Pitts Neuron Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=McCulloch-Pitts%20Neuron%201943",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=McCulloch-Pitts%20Neuron%201943",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.mcculloch-pitts-neuron-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:59:14.679Z"
+    }
+  ]
+}

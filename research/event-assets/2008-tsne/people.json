@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Laurens van der Maaten",
+        "zh": "劳伦斯·范德马滕"
+      },
+      "role": {
+        "en": "Co-author of t-SNE",
+        "zh": "t-SNE 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+          "sourceUrl": "https://lvdmaaten.github.io/",
+          "license": {
+            "en": "Personal website image; reuse rights not stated.",
+            "zh": "Personal website image; reuse rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

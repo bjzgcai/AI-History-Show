@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:44.906Z",
+  "eventKey": "1984-cyc",
+  "sources": [
+    {
+      "type": "Book",
+      "label": "Building Large Knowledge-Based Systems",
+      "url": "https://dl.acm.org/doi/book/10.5555/70571",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "The Evolution of CycL",
+      "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+      "usage": ""
+    },
+    {
+      "type": "Official page",
+      "label": "Cyc",
+      "url": "https://cyc.com/",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Cyc projects logo image",
+      "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+      "usage": "Historical figure photo"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Douglas Lenat Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Douglas%20Lenat%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "R. V. Guha Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=R.%20V.%20Guha%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Cyc Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Cyc%201984&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Cyc Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Cyc%201984",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1984%20Cyc%20Douglas%20Lenat%20R.%20V.%20Guha%20AI%20history%20source%20images",
+      "query": "1984 Cyc Douglas Lenat R. V. Guha AI history source images",
+      "eventKey": "1984-cyc"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1984%20Cyc%20Douglas%20Lenat%20R.%20V.%20Guha%20AI%20history%20source%20images",
+      "query": "1984 Cyc Douglas Lenat R. V. Guha AI history source images",
+      "eventKey": "1984-cyc"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1984%20Cyc%20Douglas%20Lenat%20R.%20V.%20Guha%20AI%20history%20source%20images",
+      "query": "1984 Cyc Douglas Lenat R. V. Guha AI history source images",
+      "eventKey": "1984-cyc"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Douglas Lenat portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Douglas%20Lenat%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Douglas Lenat Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Douglas%20Lenat%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Douglas Lenat official biography search",
+      "url": "https://www.google.com/search?q=Douglas%20Lenat%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "R. V. Guha portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=R.%20V.%20Guha%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "R. V. Guha Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=R.%20V.%20Guha%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "R. V. Guha official biography search",
+      "url": "https://www.google.com/search?q=R.%20V.%20Guha%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Cyc event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1984%20Cyc%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Cyc Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Cyc%201984&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Cyc Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Cyc%201984",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Cyc publication search",
+      "url": "https://www.google.com/search?q=1984%20Cyc%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Cyc scholar search",
+      "url": "https://scholar.google.com/scholar?q=1984%20Cyc%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Building Large Knowledge-Based Systems",
+      "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571",
+      "finalUrl": "https://dl.acm.org/doi/book/10.5555/70571",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.building-large-knowledge-based-systems.html",
+      "fetchedAt": "2026-07-03T11:54:45.502Z"
+    },
+    {
+      "label": "The Evolution of CycL",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/122296.122308",
+      "finalUrl": "https://dl.acm.org/doi/10.1145/122296.122308",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/002.the-evolution-of-cycl.html",
+      "fetchedAt": "2026-07-03T11:54:46.259Z"
+    },
+    {
+      "label": "Cyc",
+      "sourceUrl": "https://cyc.com/",
+      "finalUrl": "https://cyc.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Home - Cyc",
+      "savedPath": "pages/003.cyc.html",
+      "fetchedAt": "2026-07-03T11:54:47.919Z"
+    },
+    {
+      "label": "Cyc projects logo image",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Cyc Projects Logos.png - Wikimedia Commons",
+      "savedPath": "pages/004.cyc-projects-logo-image.html",
+      "fetchedAt": "2026-07-03T11:54:48.758Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Dbl4.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:54:50.077Z"
+    },
+    {
+      "label": "Douglas Lenat Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Douglas%20Lenat%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Douglas%20Lenat%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.douglas-lenat-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:51.415Z"
+    },
+    {
+      "label": "R. V. Guha Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=R.%20V.%20Guha%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=R.%20V.%20Guha%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.r.-v.-guha-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:53.743Z"
+    },
+    {
+      "label": "Cyc Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Cyc%201984&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Cyc%201984&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.cyc-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:54:55.041Z"
+    },
+    {
+      "label": "Cyc Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Cyc%201984",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Cyc%201984",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.cyc-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:55.679Z"
+    }
+  ]
+}

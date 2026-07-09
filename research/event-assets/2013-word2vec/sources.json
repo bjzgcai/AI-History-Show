@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:41.390Z",
+  "eventKey": "2013-word2vec",
+  "sources": [
+    {
+      "type": "Preprint",
+      "label": "Efficient Estimation of Word Representations in Vector Space",
+      "url": "https://arxiv.org/abs/1301.3781",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Distributed Representations of Words and Phrases and their Compositionality",
+      "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
+      "usage": ""
+    },
+    {
+      "type": "Code archive",
+      "label": "Google Code archive: word2vec",
+      "url": "https://code.google.com/archive/p/word2vec/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "IEEE Signal Processing Society",
+      "url": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tomas Mikolov Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tomas%20Mikolov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Word2Vec Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Word2Vec%202013&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Word2Vec Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Word2Vec%202013",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2013%20Word2Vec%20Tomas%20Mikolov%20AI%20history%20source%20images",
+      "query": "2013 Word2Vec Tomas Mikolov AI history source images",
+      "eventKey": "2013-word2vec"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2013%20Word2Vec%20Tomas%20Mikolov%20AI%20history%20source%20images",
+      "query": "2013 Word2Vec Tomas Mikolov AI history source images",
+      "eventKey": "2013-word2vec"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2013%20Word2Vec%20Tomas%20Mikolov%20AI%20history%20source%20images",
+      "query": "2013 Word2Vec Tomas Mikolov AI history source images",
+      "eventKey": "2013-word2vec"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Tomas Mikolov portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Tomas%20Mikolov%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tomas Mikolov Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tomas%20Mikolov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Tomas Mikolov official biography search",
+      "url": "https://www.google.com/search?q=Tomas%20Mikolov%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Word2Vec event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2013%20Word2Vec%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Word2Vec Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Word2Vec%202013&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Word2Vec Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Word2Vec%202013",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Word2Vec publication search",
+      "url": "https://www.google.com/search?q=2013%20Word2Vec%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Word2Vec scholar search",
+      "url": "https://scholar.google.com/scholar?q=2013%20Word2Vec%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Efficient Estimation of Word Representations in Vector Space",
+      "sourceUrl": "https://arxiv.org/abs/1301.3781",
+      "finalUrl": "https://arxiv.org/abs/1301.3781",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1301.3781] Efficient Estimation of Word Representations in Vector Space",
+      "savedPath": "pages/001.efficient-estimation-of-word-representations-in-vector-space.html",
+      "fetchedAt": "2026-07-03T11:09:41.766Z"
+    },
+    {
+      "label": "Distributed Representations of Words and Phrases and their Compositionality",
+      "sourceUrl": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
+      "finalUrl": "https://papers.nips.cc/paper_files/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Distributed Representations of Words and Phrases and their Compositionality",
+      "savedPath": "pages/002.distributed-representations-of-words-and-phrases-and-their-compositionality.html",
+      "fetchedAt": "2026-07-03T11:09:44.310Z"
+    },
+    {
+      "label": "Google Code archive: word2vec",
+      "sourceUrl": "https://code.google.com/archive/p/word2vec/",
+      "finalUrl": "https://code.google.com/archive/p/word2vec/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Google Code Archive - Long-term storage for Google Code Project Hosting.",
+      "savedPath": "pages/003.google-code-archive-word2vec.html",
+      "fetchedAt": "2026-07-03T11:09:45.024Z"
+    },
+    {
+      "label": "IEEE Signal Processing Society",
+      "sourceUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+      "finalUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Industry Leaders in Signal Processing and Machine Learning: Tomas Mikolov | IEEE Signal Processing Society",
+      "savedPath": "pages/004.ieee-signal-processing-society.html",
+      "fetchedAt": "2026-07-03T11:09:46.592Z"
+    },
+    {
+      "label": "Tomas Mikolov Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Tomas%20Mikolov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T11:16:59.122Z"
+    },
+    {
+      "label": "Word2Vec Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Word2Vec%202013&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Word2Vec%202013&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.word2vec-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:17:01.812Z"
+    },
+    {
+      "label": "Word2Vec Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Word2Vec%202013",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Word2Vec%202013",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.word2vec-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:03.061Z"
+    }
+  ]
+}

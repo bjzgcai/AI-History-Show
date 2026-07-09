@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Arjovsky",
+        "zh": "马丁·阿尔乔夫斯基"
+      },
+      "role": {
+        "en": "Wasserstein GAN lead author",
+        "zh": "Wasserstein GAN 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://leon.bottou.org/_media/bottou_75.jpg",
+          "sourceUrl": "https://leon.bottou.org/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

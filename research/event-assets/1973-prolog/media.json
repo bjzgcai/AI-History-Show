@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:11.165Z",
+  "eventKey": "1973-prolog",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Alain Colmerauer",
+      "role": "Creator of the first Prolog implementation",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Alain Colmerauer portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Alain%20Colmerauer%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Alain Colmerauer Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Alain%20Colmerauer%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Alain Colmerauer official biography search",
+          "url": "https://www.google.com/search?q=Alain%20Colmerauer%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Robert Kowalski",
+      "role": "Logic programming theorist",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Robert Kowalski portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Robert%20Kowalski%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Robert Kowalski Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kowalski%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Robert Kowalski official biography search",
+          "url": "https://www.google.com/search?q=Robert%20Kowalski%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "PROLOG event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1973%20PROLOG%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "PROLOG Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=PROLOG%201973&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "PROLOG Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=PROLOG%201973",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "PROLOG publication search",
+      "url": "https://www.google.com/search?q=1973%20PROLOG%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "PROLOG scholar search",
+      "url": "https://scholar.google.com/scholar?q=1973%20PROLOG%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Alain Colmerauer portrait",
+        "zh": "阿兰·科尔梅罗尔 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category.",
+        "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "License stated on Commons file page.",
+        "zh": "License stated on Commons file page."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Query proof tree",
+        "zh": "查询证明树"
+      },
+      "subcaption": {
+        "en": "Local redraw for PROLOG, based on the listed source material.",
+        "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1145/155360.155362",
+      "sourceLabel": "The Birth of Prolog",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Unification trace",
+        "zh": "合一轨迹"
+      },
+      "subcaption": {
+        "en": "Local redraw for PROLOG, based on the listed source material.",
+        "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1145/155360.155362",
+      "sourceLabel": "The Birth of Prolog",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+        "usage": "Historical figure / Key contributor portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "History",
+        "label": "The Birth of Prolog",
+        "url": "https://doi.org/10.1145/155360.155362",
+        "usage": ""
+      }
+    ],
+    "institutions": [
+      {
+        "type": "Archive",
+        "label": "Prolog Heritage",
+        "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
+        "usage": ""
+      }
+    ]
+  }
+}

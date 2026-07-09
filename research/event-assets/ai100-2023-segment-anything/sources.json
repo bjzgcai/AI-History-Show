@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:05.630Z",
+  "eventKey": "ai100-2023-segment-anything",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Segment Anything",
+      "url": "https://arxiv.org/abs/2304.02643",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICCV paper page",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "Segment Anything project page",
+      "url": "https://segment-anything.com/",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "Segment Anything GitHub repository",
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Alexander Kirillov personal site",
+      "url": "https://alexander-kirillov.github.io/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alexander Kirillov Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alexander%20Kirillov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Segment Anything Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Segment%20Anything%202023&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Segment Anything Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Segment%20Anything%202023",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2023%20Segment%20Anything%20Alexander%20Kirillov%20AI%20history%20source%20images",
+      "query": "2023 Segment Anything Alexander Kirillov AI history source images",
+      "eventKey": "ai100-2023-segment-anything"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2023%20Segment%20Anything%20Alexander%20Kirillov%20AI%20history%20source%20images",
+      "query": "2023 Segment Anything Alexander Kirillov AI history source images",
+      "eventKey": "ai100-2023-segment-anything"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2023%20Segment%20Anything%20Alexander%20Kirillov%20AI%20history%20source%20images",
+      "query": "2023 Segment Anything Alexander Kirillov AI history source images",
+      "eventKey": "ai100-2023-segment-anything"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alexander Kirillov portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alexander%20Kirillov%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alexander Kirillov Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alexander%20Kirillov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alexander Kirillov official biography search",
+      "url": "https://www.google.com/search?q=Alexander%20Kirillov%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Segment Anything event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2023%20Segment%20Anything%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Segment Anything Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Segment%20Anything%202023&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Segment Anything Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Segment%20Anything%202023",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Segment Anything publication search",
+      "url": "https://www.google.com/search?q=2023%20Segment%20Anything%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Segment Anything scholar search",
+      "url": "https://scholar.google.com/scholar?q=2023%20Segment%20Anything%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Segment Anything",
+      "sourceUrl": "https://arxiv.org/abs/2304.02643",
+      "finalUrl": "https://arxiv.org/abs/2304.02643",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[2304.02643] Segment Anything",
+      "savedPath": "pages/001.segment-anything.html",
+      "fetchedAt": "2026-07-03T12:05:06.012Z"
+    },
+    {
+      "label": "ICCV paper page",
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "ICCV 2023 Open Access Repository",
+      "savedPath": "pages/002.iccv-paper-page.html",
+      "fetchedAt": "2026-07-03T12:05:07.392Z"
+    },
+    {
+      "label": "Segment Anything project page",
+      "sourceUrl": "https://segment-anything.com/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:05:07.773Z"
+    },
+    {
+      "label": "Segment Anything GitHub repository",
+      "sourceUrl": "https://github.com/facebookresearch/segment-anything",
+      "finalUrl": "https://github.com/facebookresearch/segment-anything",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - facebookresearch/segment-anything: The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. · GitHub",
+      "savedPath": "pages/004.segment-anything-github-repository.html",
+      "fetchedAt": "2026-07-03T12:05:08.915Z"
+    },
+    {
+      "label": "Alexander Kirillov personal site",
+      "sourceUrl": "https://alexander-kirillov.github.io/",
+      "finalUrl": "https://alexander-kirillov.github.io/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Alexander Kirillov",
+      "savedPath": "pages/005.alexander-kirillov-personal-site.html",
+      "fetchedAt": "2026-07-03T12:05:10.033Z"
+    },
+    {
+      "label": "Alexander Kirillov Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alexander%20Kirillov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alexander%20Kirillov%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.alexander-kirillov-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:11.652Z"
+    },
+    {
+      "label": "Segment Anything Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Segment%20Anything%202023&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Segment%20Anything%202023&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.segment-anything-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:05:13.673Z"
+    },
+    {
+      "label": "Segment Anything Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Segment%20Anything%202023",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Segment%20Anything%202023",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.segment-anything-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:14.282Z"
+    }
+  ]
+}

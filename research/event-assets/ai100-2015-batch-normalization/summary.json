@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:50.401Z",
+  "eventKey": "ai100-2015-batch-normalization",
+  "year": 2015,
+  "title": {
+    "en": "Batch Normalization",
+    "zh": "批归一化"
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "description": {
+    "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>",
+    "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Christian Szegedy portrait",
+        "zh": "克里斯蒂安·塞格迪肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of Batch Normalization.",
+        "zh": "批归一化共同作者。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Activation normalization",
+        "zh": "激活归一化"
+      },
+      "subcaption": {
+        "en": "Original local explainer of batch statistics and learned scale.",
+        "zh": "关于批统计量与可学习缩放的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "PMLR",
+        "zh": "PMLR"
+      },
+      "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Sergey Ioffe",
+        "type": "portrait-search",
+        "label": "Sergey Ioffe portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Sergey%20Ioffe%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Sergey Ioffe",
+        "type": "commons-portrait-search",
+        "label": "Sergey Ioffe Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Sergey%20Ioffe%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Christian Szegedy",
+        "type": "portrait-search",
+        "label": "Christian Szegedy portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Christian%20Szegedy%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Christian Szegedy",
+        "type": "commons-portrait-search",
+        "label": "Christian Szegedy Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Batch Normalization event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2015%20Batch%20Normalization%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Batch Normalization Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Batch%20Normalization%202015&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Batch Normalization Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Batch%20Normalization%202015",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Batch Normalization publication search",
+        "url": "https://www.google.com/search?q=2015%20Batch%20Normalization%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Batch Normalization scholar search",
+        "url": "https://scholar.google.com/scholar?q=2015%20Batch%20Normalization%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Sam Roweis",
+        "zh": "萨姆·罗维斯"
+      },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+          "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+          "license": {
+            "en": "NYU memorial image; reuse rights not stated.",
+            "zh": "NYU 纪念页图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Lawrence Saul",
+        "zh": "劳伦斯·索尔"
+      },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+          "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+          "license": {
+            "en": "NYU memorial image; reuse rights not stated.",
+            "zh": "NYU 纪念页图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

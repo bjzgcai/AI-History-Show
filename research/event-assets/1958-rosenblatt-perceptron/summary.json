@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:47.085Z",
+  "eventKey": "1958-rosenblatt-perceptron",
+  "year": "1958",
+  "title": {
+    "en": "Rosenblatt Perceptron",
+    "zh": "罗森布拉特 感知机"
+  },
+  "location": {
+    "name": {
+      "en": "Cornell Aeronautical Laboratory",
+      "zh": "康奈尔航空实验室"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      42.8864,
+      -78.8784
+    ]
+  },
+  "description": {
+    "en": "<p>Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. It promised machines that could learn from examples rather than being programmed only by explicit rules. The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification.</p>",
+    "zh": "<p>罗森布拉特 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Frank Rosenblatt with perceptron hardware",
+        "zh": "弗兰克·罗森布拉特 与感知机硬件"
+      },
+      "subcaption": {
+        "en": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
+        "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。"
+      },
+      "sourceName": {
+        "en": "Cornell Chronicle",
+        "zh": "康奈尔大学 Chronicle"
+      },
+      "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+      "license": {
+        "en": "Cornell historical image; reuse rights not stated on extracted image URL.",
+        "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Threshold learning line",
+        "zh": "阈值学习边界"
+      },
+      "subcaption": {
+        "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+        "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Psychological Review",
+        "zh": "Psychological Review"
+      },
+      "sourceUrl": "https://doi.org/10.1037/h0042519",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Sensor grid to neuron",
+        "zh": "传感器网格到神经元"
+      },
+      "subcaption": {
+        "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+        "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Psychological Review",
+        "zh": "Psychological Review"
+      },
+      "sourceUrl": "https://doi.org/10.1037/h0042519",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Frank Rosenblatt",
+        "type": "portrait-search",
+        "label": "Frank Rosenblatt portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Frank Rosenblatt",
+        "type": "commons-portrait-search",
+        "label": "Frank Rosenblatt Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Rosenblatt Perceptron event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1958%20Rosenblatt%20Perceptron%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Rosenblatt Perceptron Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Rosenblatt%20Perceptron%201958&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Rosenblatt Perceptron Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Rosenblatt%20Perceptron%201958",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Rosenblatt Perceptron publication search",
+        "url": "https://www.google.com/search?q=1958%20Rosenblatt%20Perceptron%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Rosenblatt Perceptron scholar search",
+        "url": "https://scholar.google.com/scholar?q=1958%20Rosenblatt%20Perceptron%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

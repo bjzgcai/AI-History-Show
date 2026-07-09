@@ -1,0 +1,15 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Christopher Strachey",
+        "zh": "克里斯托弗·斯特雷奇"
+      },
+      "role": {
+        "en": "Developer of the early draughts program",
+        "zh": "早期跳棋程序开发者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

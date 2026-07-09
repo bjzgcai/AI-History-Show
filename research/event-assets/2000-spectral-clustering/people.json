@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jianbo Shi",
+        "zh": "史建波"
+      },
+      "role": {
+        "en": "Co-author of normalized cuts",
+        "zh": "Normalized Cuts 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jitendra Malik, Andrew Ng, Yair Weiss",
+        "zh": "吉滕德拉·马利克、吴恩达、亚伊尔·魏斯"
+      },
+      "role": {
+        "en": "Key contributors to spectral clustering formulations",
+        "zh": "谱聚类形式化的重要贡献者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

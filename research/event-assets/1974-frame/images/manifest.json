@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:16.397Z",
+  "eventKey": "1974-frame",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1974-frame",
+      "label": "Portrait from MIT News obituary.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-mit-news-obituary.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 45194,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "MIT News image; terms stated on MIT News media page.",
+      "downloadedAt": "2026-07-03T11:50:16.092Z"
+    },
+    {
+      "eventKey": "1974-frame",
+      "label": "Local redraw for Frame, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-frame-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1555,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:50:16.397Z"
+    }
+  ]
+}

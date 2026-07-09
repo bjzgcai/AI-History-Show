@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:45.737Z",
+  "eventKey": "1997-deep-blue",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1997-deep-blue",
+      "label": "Portrait from IBM Research profile.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://research.ibm.com/people/murray-campbell",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-ibm-research-profile.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 62797,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "IBM Research profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:49:45.436Z"
+    },
+    {
+      "eventKey": "1997-deep-blue",
+      "label": "Local redraw for Deep Blue, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-deep-blue-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1164,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:49:45.737Z"
+    }
+  ]
+}

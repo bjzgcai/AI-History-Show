@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:16.017Z",
+  "eventKey": "ai100-2020-alphafold2",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "John Jumper",
+      "role": "AlphaFold2 lead researcher",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "John Jumper portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=John%20Jumper%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "John Jumper Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=John%20Jumper%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "John Jumper official biography search",
+          "url": "https://www.google.com/search?q=John%20Jumper%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Demis Hassabis",
+      "role": "DeepMind co-founder and AlphaFold leader",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Demis Hassabis portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Demis%20Hassabis%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Demis Hassabis Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Demis Hassabis official biography search",
+          "url": "https://www.google.com/search?q=Demis%20Hassabis%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "AlphaFold2 event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2020%20AlphaFold2%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlphaFold2 Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlphaFold2%202020&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlphaFold2 Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlphaFold2%202020",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "AlphaFold2 publication search",
+      "url": "https://www.google.com/search?q=2020%20AlphaFold2%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AlphaFold2 scholar search",
+      "url": "https://scholar.google.com/scholar?q=2020%20AlphaFold2%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "John Jumper portrait",
+        "zh": "约翰·江珀肖像"
+      },
+      "subcaption": {
+        "en": "AlphaFold2 lead researcher",
+        "zh": "AlphaFold2 主要研究者"
+      },
+      "sourceUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+      "sourceLabel": "Vanderbilt University",
+      "license": {
+        "en": "Vanderbilt University image; reuse rights not stated.",
+        "zh": "范德堡大学图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "AlphaFold2 structure pipeline",
+        "zh": "AlphaFold2 结构预测流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer of sequence-to-structure prediction.",
+        "zh": "关于从序列到结构预测的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2",
+      "sourceLabel": "Highly accurate protein structure prediction with AlphaFold",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Vanderbilt University",
+        "url": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Highly accurate protein structure prediction with AlphaFold",
+        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "DeepMind AlphaFold page",
+        "url": "https://deepmind.google/technologies/alphafold/",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

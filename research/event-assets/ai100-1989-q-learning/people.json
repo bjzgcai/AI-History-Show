@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Christopher Watkins",
+        "zh": "克里斯托弗·沃特金斯"
+      },
+      "role": {
+        "en": "Q-learning lead author",
+        "zh": "Q-learning 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+          "sourceUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

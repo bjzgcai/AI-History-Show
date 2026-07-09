@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Alan Turing",
+        "zh": "艾伦·图灵"
+      },
+      "role": {
+        "en": "Proposed the imitation game",
+        "zh": "提出模仿游戏"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+          "license": {
+            "en": "Public domain",
+            "zh": "Public domain"
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

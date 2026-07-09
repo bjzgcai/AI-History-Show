@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:33.759Z",
+  "eventKey": "1990-otter",
+  "year": "1990s",
+  "title": {
+    "en": "Otter",
+    "zh": "Otter 自动定理证明器"
+  },
+  "location": {
+    "name": {
+      "en": "Argonne National Laboratory",
+      "zh": "阿贡国家实验室"
+    },
+    "country": {
+      "en": "Illinois, United States",
+      "zh": "美国伊利诺伊州"
+    },
+    "coordinates": [
+      41.7106,
+      -87.9789
+    ]
+  },
+  "description": {
+    "en": "<p>Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.</p>",
+    "zh": "<p>Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Otter input clauses",
+        "zh": "Otter 输入子句"
+      },
+      "subcaption": {
+        "en": "Original local explainer for turning assumptions and goals into Otter clause lists.",
+        "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。"
+      },
+      "sourceName": {
+        "en": "OTTER 3.3 Reference Manual",
+        "zh": "OTTER 3.3 参考手册"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Input-format diagram",
+        "zh": "输入格式图"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Otter proof trace",
+        "zh": "Otter 证明轨迹"
+      },
+      "subcaption": {
+        "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction.",
+        "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。"
+      },
+      "sourceName": {
+        "en": "OTTER 3.3 Reference Manual",
+        "zh": "OTTER 3.3 参考手册"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Proof-trace diagram",
+        "zh": "证明轨迹图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Given-clause proof loop",
+        "zh": "given-clause 证明循环"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+        "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "OTTER 3.3 Reference Manual",
+        "zh": "OTTER 3.3 参考手册"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Proof-search diagram",
+        "zh": "证明搜索图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Clause indexing map",
+        "zh": "子句索引地图"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+        "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "OTTER 3.3 Reference Manual",
+        "zh": "OTTER 3.3 参考手册"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Indexing diagram",
+        "zh": "索引图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "William McCune",
+        "type": "portrait-search",
+        "label": "William McCune portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=William%20McCune%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "William McCune",
+        "type": "commons-portrait-search",
+        "label": "William McCune Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=William%20McCune%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Otter event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1990s%20Otter%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Otter Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Otter%201990s&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Otter Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Otter%201990s",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Otter publication search",
+        "url": "https://www.google.com/search?q=1990s%20Otter%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Otter scholar search",
+        "url": "https://scholar.google.com/scholar?q=1990s%20Otter%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 1,
+    "manifest": "images/manifest.json"
+  }
+}

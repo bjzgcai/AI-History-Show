@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:54.138Z",
+  "eventKey": "ai100-1969-relu",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Deep Sparse Rectifier Neural Networks",
+      "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+      "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Rectifier activation overview",
+      "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
+      "usage": ""
+    },
+    {
+      "type": "People",
+      "label": "Yoshua Bengio profile at Mila",
+      "url": "https://mila.quebec/en/directory/yoshua-bengio",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kunihiko Fukushima Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Yoshua Bengio Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "ReLU Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ReLU%201969&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ReLU Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ReLU%201969",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1969%20ReLU%20Kunihiko%20Fukushima%20Yoshua%20Bengio%20AI%20history%20source%20images",
+      "query": "1969 ReLU Kunihiko Fukushima Yoshua Bengio AI history source images",
+      "eventKey": "ai100-1969-relu"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1969%20ReLU%20Kunihiko%20Fukushima%20Yoshua%20Bengio%20AI%20history%20source%20images",
+      "query": "1969 ReLU Kunihiko Fukushima Yoshua Bengio AI history source images",
+      "eventKey": "ai100-1969-relu"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1969%20ReLU%20Kunihiko%20Fukushima%20Yoshua%20Bengio%20AI%20history%20source%20images",
+      "query": "1969 ReLU Kunihiko Fukushima Yoshua Bengio AI history source images",
+      "eventKey": "ai100-1969-relu"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Kunihiko Fukushima portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Kunihiko%20Fukushima%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kunihiko Fukushima Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Kunihiko Fukushima official biography search",
+      "url": "https://www.google.com/search?q=Kunihiko%20Fukushima%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Yoshua Bengio portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Yoshua%20Bengio%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Yoshua Bengio Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Yoshua Bengio official biography search",
+      "url": "https://www.google.com/search?q=Yoshua%20Bengio%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "ReLU event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1969%20ReLU%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "ReLU Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ReLU%201969&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ReLU Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ReLU%201969",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "ReLU publication search",
+      "url": "https://www.google.com/search?q=1969%20ReLU%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "ReLU scholar search",
+      "url": "https://scholar.google.com/scholar?q=1969%20ReLU%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Deep Sparse Rectifier Neural Networks",
+      "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+      "finalUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Deep Sparse Rectifier Neural Networks",
+      "savedPath": "pages/001.deep-sparse-rectifier-neural-networks.html",
+      "fetchedAt": "2026-07-03T11:59:55.476Z"
+    },
+    {
+      "label": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+      "sourceUrl": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T12:00:10.778Z"
+    },
+    {
+      "label": "Rectifier activation overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
+      "finalUrl": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Rectified linear unit - Wikipedia",
+      "savedPath": "pages/003.rectifier-activation-overview.html",
+      "fetchedAt": "2026-07-03T12:00:11.494Z"
+    },
+    {
+      "label": "Yoshua Bengio profile at Mila",
+      "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio",
+      "finalUrl": "https://mila.quebec/en/directory/yoshua-bengio",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Yoshua Bengio | Mila",
+      "savedPath": "pages/004.yoshua-bengio-profile-at-mila.html",
+      "fetchedAt": "2026-07-03T12:00:14.243Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:ICLR 2025 - Yoshua Bengio 02.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T12:00:15.632Z"
+    },
+    {
+      "label": "Kunihiko Fukushima Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.kunihiko-fukushima-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:00:17.183Z"
+    },
+    {
+      "label": "Yoshua Bengio Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.yoshua-bengio-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:00:19.438Z"
+    },
+    {
+      "label": "ReLU Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=ReLU%201969&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=ReLU%201969&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.relu-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:00:22.505Z"
+    },
+    {
+      "label": "ReLU Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=ReLU%201969",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=ReLU%201969",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.relu-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:00:23.154Z"
+    }
+  ]
+}

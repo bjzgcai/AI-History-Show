@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:03.844Z",
+  "eventKey": "ai100-1989-q-learning",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1989-q-learning",
+      "label": "Q-learning lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+      "imageUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+      "status": "not-direct-image-url",
+      "usage": "Achievement visual material",
+      "pageSnapshot": ""
+    },
+    {
+      "eventKey": "ai100-1989-q-learning",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2347,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:09:03.844Z"
+    }
+  ]
+}

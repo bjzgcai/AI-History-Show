@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:51.254Z",
+  "eventKey": "ai100-2014-conditional-gan",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2014-conditional-gan",
+      "label": "Conditional GAN co-author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+      "imageUrl": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+      "finalImageUrl": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+      "localPath": "images/001.conditional-gan-co-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 34188,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Article image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:05:50.951Z"
+    },
+    {
+      "eventKey": "ai100-2014-conditional-gan",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1411.1784",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2378,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:05:51.254Z"
+    }
+  ]
+}

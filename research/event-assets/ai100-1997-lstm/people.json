@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Sepp Hochreiter",
+        "zh": "塞普·霍赫赖特"
+      },
+      "role": {
+        "en": "Co-author of LSTM",
+        "zh": "LSTM 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/sepp-hochreiter.jpg",
+          "sourceUrl": "resources/images/figures/sepp-hochreiter.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Juergen Schmidhuber",
+        "zh": "尤尔根·施密德胡伯"
+      },
+      "role": {
+        "en": "Co-author of LSTM",
+        "zh": "LSTM 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/sepp-hochreiter.jpg",
+          "sourceUrl": "resources/images/figures/sepp-hochreiter.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

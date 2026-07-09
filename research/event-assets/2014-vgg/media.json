@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:38:10.322Z",
+  "eventKey": "2014-vgg",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Karen Simonyan",
+      "role": "Co-author of the VGG paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Karen Simonyan portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Karen%20Simonyan%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Karen Simonyan Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Karen%20Simonyan%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Karen Simonyan official biography search",
+          "url": "https://www.google.com/search?q=Karen%20Simonyan%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Andrew Zisserman",
+      "role": "Co-author and Visual Geometry Group lead",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Andrew Zisserman portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Andrew%20Zisserman%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Andrew Zisserman Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Andrew%20Zisserman%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Andrew Zisserman official biography search",
+          "url": "https://www.google.com/search?q=Andrew%20Zisserman%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "VGG Networks event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20VGG%20Networks%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "VGG Networks Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=VGG%20Networks%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "VGG Networks Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=VGG%20Networks%202014",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "VGG Networks publication search",
+      "url": "https://www.google.com/search?q=2014%20VGG%20Networks%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "VGG Networks scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20VGG%20Networks%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Andrew Zisserman portrait",
+        "zh": "安德鲁·齐瑟曼 肖像"
+      },
+      "subcaption": {
+        "en": "Profile photo from the ELLIS Oxford / University of Oxford page.",
+        "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。"
+      },
+      "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+      "sourceLabel": "ELLIS Oxford / University of Oxford",
+      "license": {
+        "en": "Institution profile photo; rights not stated.",
+        "zh": "Institution profile photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Co-author portrait",
+        "zh": "历史人物 / 共同作者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "VGG depth comparison",
+        "zh": "VGG 深度配置对比"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+        "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+      "sourceLabel": "Oxford VGG Very Deep ConvNets",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "3x3 receptive-field build-up",
+        "zh": "3x3 感受野累积"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+        "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+      "sourceLabel": "Oxford VGG Very Deep ConvNets",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "ELLIS Oxford / University of Oxford",
+        "url": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+        "usage": "Historical figure / Co-author portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "url": "https://arxiv.org/abs/1409.1556",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

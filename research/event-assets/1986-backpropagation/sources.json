@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:00.805Z",
+  "eventKey": "1986-backpropagation",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Rumelhart Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ronald Williams Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ronald%20Williams%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Backpropagation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Backpropagation%201986&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Backpropagation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Backpropagation%201986",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1986%20Backpropagation%20David%20Rumelhart%20Geoffrey%20Hinton%20Ronald%20Williams%20AI%20history%20source%20images",
+      "query": "1986 Backpropagation David Rumelhart Geoffrey Hinton Ronald Williams AI history source images",
+      "eventKey": "1986-backpropagation"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1986%20Backpropagation%20David%20Rumelhart%20Geoffrey%20Hinton%20Ronald%20Williams%20AI%20history%20source%20images",
+      "query": "1986 Backpropagation David Rumelhart Geoffrey Hinton Ronald Williams AI history source images",
+      "eventKey": "1986-backpropagation"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1986%20Backpropagation%20David%20Rumelhart%20Geoffrey%20Hinton%20Ronald%20Williams%20AI%20history%20source%20images",
+      "query": "1986 Backpropagation David Rumelhart Geoffrey Hinton Ronald Williams AI history source images",
+      "eventKey": "1986-backpropagation"
+    },
+    {
+      "type": "portrait-search",
+      "label": "David Rumelhart portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=David%20Rumelhart%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Rumelhart Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "David Rumelhart official biography search",
+      "url": "https://www.google.com/search?q=David%20Rumelhart%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Geoffrey Hinton portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Geoffrey Hinton official biography search",
+      "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Ronald Williams portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Ronald%20Williams%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ronald Williams Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ronald%20Williams%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Ronald Williams official biography search",
+      "url": "https://www.google.com/search?q=Ronald%20Williams%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Backpropagation event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1986%20Backpropagation%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Backpropagation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Backpropagation%201986&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Backpropagation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Backpropagation%201986",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Backpropagation publication search",
+      "url": "https://www.google.com/search?q=1986%20Backpropagation%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Backpropagation scholar search",
+      "url": "https://scholar.google.com/scholar?q=1986%20Backpropagation%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "David Rumelhart Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.david-rumelhart-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:02.665Z"
+    },
+    {
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.geoffrey-hinton-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:05.422Z"
+    },
+    {
+      "label": "Ronald Williams Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ronald%20Williams%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ronald%20Williams%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/003.ronald-williams-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:07.672Z"
+    },
+    {
+      "label": "Backpropagation Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Backpropagation%201986&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Backpropagation%201986&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.backpropagation-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:30:09.532Z"
+    },
+    {
+      "label": "Backpropagation Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Backpropagation%201986",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Backpropagation%201986",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/005.backpropagation-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:10.294Z"
+    }
+  ]
+}

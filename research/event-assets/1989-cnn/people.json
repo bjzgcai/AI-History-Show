@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Yann LeCun",
+        "zh": "扬·勒昆"
+      },
+      "role": {
+        "en": "Pioneer of CNNs",
+        "zh": "CNN之父"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    }
+  ]
+}

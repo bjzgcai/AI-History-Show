@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:17.342Z",
+  "eventKey": "ai100-2013-variational-autoencoder",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2013-variational-autoencoder",
+      "label": "VAE lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://dpkingma.com/",
+      "imageUrl": "https://dpkingma.com/files/portrait.jpg",
+      "finalImageUrl": "https://dpkingma.com/files/portrait.jpg",
+      "localPath": "images/001.vae-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 49616,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:07:17.037Z"
+    },
+    {
+      "eventKey": "ai100-2013-variational-autoencoder",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1312.6114",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2372,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:07:17.342Z"
+    }
+  ]
+}

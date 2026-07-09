@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:02:51.658Z",
+  "eventKey": "ai100-2020-vit",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "An Image is Worth 16x16 Words",
+      "url": "https://arxiv.org/abs/2010.11929",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICLR OpenReview page",
+      "url": "https://openreview.net/forum?id=YicbFdNTTy",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "OpenReview full paper PDF",
+      "url": "https://openreview.net/pdf?id=YicbFdNTTy",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "Google Research publication page",
+      "url": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "EML Munich",
+      "url": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alexey Dosovitskiy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Dosovitskiy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Google Research Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Google%20Research%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Vision Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Vision%20Transformer%202020&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Vision Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Vision%20Transformer%202020",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2020%20Vision%20Transformer%20Alexey%20Dosovitskiy%20Google%20Research%20AI%20history%20source%20images",
+      "query": "2020 Vision Transformer Alexey Dosovitskiy Google Research AI history source images",
+      "eventKey": "ai100-2020-vit"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2020%20Vision%20Transformer%20Alexey%20Dosovitskiy%20Google%20Research%20AI%20history%20source%20images",
+      "query": "2020 Vision Transformer Alexey Dosovitskiy Google Research AI history source images",
+      "eventKey": "ai100-2020-vit"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2020%20Vision%20Transformer%20Alexey%20Dosovitskiy%20Google%20Research%20AI%20history%20source%20images",
+      "query": "2020 Vision Transformer Alexey Dosovitskiy Google Research AI history source images",
+      "eventKey": "ai100-2020-vit"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alexey Dosovitskiy portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alexey%20Dosovitskiy%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alexey Dosovitskiy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Dosovitskiy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alexey Dosovitskiy official biography search",
+      "url": "https://www.google.com/search?q=Alexey%20Dosovitskiy%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Google Research portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Google%20Research%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Google Research Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Google%20Research%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Google Research official biography search",
+      "url": "https://www.google.com/search?q=Google%20Research%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Vision Transformer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2020%20Vision%20Transformer%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Vision Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Vision%20Transformer%202020&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Vision Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Vision%20Transformer%202020",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Vision Transformer publication search",
+      "url": "https://www.google.com/search?q=2020%20Vision%20Transformer%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Vision Transformer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2020%20Vision%20Transformer%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "An Image is Worth 16x16 Words",
+      "sourceUrl": "https://arxiv.org/abs/2010.11929",
+      "finalUrl": "https://arxiv.org/abs/2010.11929",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[2010.11929] An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "savedPath": "pages/001.an-image-is-worth-16x16-words.html",
+      "fetchedAt": "2026-07-03T12:02:52.038Z"
+    },
+    {
+      "label": "ICLR OpenReview page",
+      "sourceUrl": "https://openreview.net/forum?id=YicbFdNTTy",
+      "finalUrl": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DYicbFdNTTy",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Verifying your browser | OpenReview",
+      "savedPath": "pages/002.iclr-openreview-page.html",
+      "fetchedAt": "2026-07-03T12:02:53.458Z"
+    },
+    {
+      "label": "OpenReview full paper PDF",
+      "sourceUrl": "https://openreview.net/pdf?id=YicbFdNTTy",
+      "finalUrl": "https://openreview.net/pdf?id=YicbFdNTTy",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html",
+      "title": "Error 403 | OpenReview",
+      "savedPath": "pages/003.openreview-full-paper-pdf.html",
+      "fetchedAt": "2026-07-03T12:02:53.981Z"
+    },
+    {
+      "label": "Google Research publication page",
+      "sourceUrl": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:03:04.800Z"
+    },
+    {
+      "label": "EML Munich",
+      "sourceUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+      "finalUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Menu",
+      "savedPath": "pages/005.eml-munich.html",
+      "fetchedAt": "2026-07-03T12:03:07.809Z"
+    },
+    {
+      "label": "Alexey Dosovitskiy Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Dosovitskiy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Dosovitskiy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.alexey-dosovitskiy-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:03:09.394Z"
+    },
+    {
+      "label": "Google Research Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Google%20Research%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Google%20Research%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.google-research-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:03:12.023Z"
+    },
+    {
+      "label": "Vision Transformer Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Vision%20Transformer%202020&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Vision%20Transformer%202020&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.vision-transformer-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:03:13.501Z"
+    },
+    {
+      "label": "Vision Transformer Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Vision%20Transformer%202020",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Vision%20Transformer%202020",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.vision-transformer-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:03:14.109Z"
+    }
+  ]
+}

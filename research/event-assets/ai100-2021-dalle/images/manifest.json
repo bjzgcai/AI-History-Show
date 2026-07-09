@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:49.928Z",
+  "eventKey": "ai100-2021-dalle",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2021-dalle",
+      "label": "DALL-E lead author and creator",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://hub.baai.ac.cn/view/23577",
+      "imageUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+      "finalImageUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+      "localPath": "images/001.dall-e-lead-author-and-creator.png",
+      "pageSnapshot": "",
+      "contentType": "image/png",
+      "bytes": 370032,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "OpenAI image republished by BAAI Hub; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:04:49.623Z"
+    },
+    {
+      "eventKey": "ai100-2021-dalle",
+      "label": "Original local explainer of prompt-conditioned image generation.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-prompt-conditioned-image-generation.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1491,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:04:49.928Z"
+    }
+  ]
+}

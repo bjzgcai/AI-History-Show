@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:46.939Z",
+  "eventKey": "1960-davis-putnam-dpll",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Martin Davis",
+      "role": "Co-developed Davis-Putnam and DPLL procedures",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Martin Davis portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Martin%20Davis%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Martin Davis Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Martin%20Davis%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Martin Davis official biography search",
+          "url": "https://www.google.com/search?q=Martin%20Davis%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Hilary Putnam",
+      "role": "Co-authored the 1960 Davis-Putnam procedure",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Hilary Putnam portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Hilary%20Putnam%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Hilary Putnam Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Hilary%20Putnam%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Hilary Putnam official biography search",
+          "url": "https://www.google.com/search?q=Hilary%20Putnam%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "George Logemann",
+      "role": "Co-authored the 1962 DPLL program paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "George Logemann portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=George%20Logemann%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "George Logemann Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=George%20Logemann%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "George Logemann official biography search",
+          "url": "https://www.google.com/search?q=George%20Logemann%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Donald W. Loveland",
+      "role": "Co-authored the 1962 DPLL program paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Donald W. Loveland portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Donald%20W.%20Loveland%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Donald W. Loveland Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Donald%20W.%20Loveland%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Donald W. Loveland official biography search",
+          "url": "https://www.google.com/search?q=Donald%20W.%20Loveland%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Davis-Putnam & DPLL event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1960-1962%20Davis-Putnam%20%26%20DPLL%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Davis-Putnam & DPLL Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Davis-Putnam%20%26%20DPLL%201960-1962&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Davis-Putnam & DPLL Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Davis-Putnam%20%26%20DPLL%201960-1962",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Davis-Putnam & DPLL publication search",
+      "url": "https://www.google.com/search?q=1960-1962%20Davis-Putnam%20%26%20DPLL%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Davis-Putnam & DPLL scholar search",
+      "url": "https://scholar.google.com/scholar?q=1960-1962%20Davis-Putnam%20%26%20DPLL%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Hilary Putnam portrait",
+        "zh": "希拉里·普特南 肖像"
+      },
+      "subcaption": {
+        "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.",
+        "zh": "维基共享资源 收录的 希拉里·普特南 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+      "sourceLabel": "Wikimedia Commons: Hilary Putnam",
+      "license": {
+        "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+        "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+      },
+      "usage": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Davis-Putnam and DPLL SAT search",
+        "zh": "Davis-Putnam 与 DPLL SAT 搜索"
+      },
+      "subcaption": {
+        "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance.",
+        "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034",
+      "sourceLabel": "A Computing Procedure for Quantification Theory",
+      "license": {
+        "en": "Original local explainer; source article images not reused.",
+        "zh": "Original local explainer; source article images not reused."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Computing Procedure for Quantification Theory",
+        "url": "https://dl.acm.org/doi/10.1145/321033.321034",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

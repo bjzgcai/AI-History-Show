@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:18.365Z",
+  "eventKey": "2016-yolo",
+  "year": "2016",
+  "title": {
+    "en": "YOLO",
+    "zh": "YOLO"
+  },
+  "location": {
+    "name": {
+      "en": "University of Washington / Allen Institute for AI",
+      "zh": "华盛顿大学 / Allen Institute for AI"
+    },
+    "country": {
+      "en": "Seattle, United States",
+      "zh": "美国西雅图"
+    },
+    "coordinates": [
+      47.6553,
+      -122.3035
+    ]
+  },
+  "description": {
+    "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>",
+    "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Joseph Redmon portrait",
+        "zh": "约瑟夫·雷德蒙 肖像"
+      },
+      "subcaption": {
+        "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship.",
+        "zh": "Allen School 关于 Redmon 获 谷歌 Ph.D. Fellowship 的新闻照片。"
+      },
+      "sourceName": {
+        "en": "University of Washington Allen School",
+        "zh": "University of Washington Allen School"
+      },
+      "sourceUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+      "license": {
+        "en": "Institution news image; rights not stated.",
+        "zh": "Institution news image; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Grid detector",
+        "zh": "网格检测器"
+      },
+      "subcaption": {
+        "en": "Local redraw for YOLO, based on the listed source material.",
+        "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "CVPR / arXiv",
+        "zh": "计算机视觉与模式识别会议 / arXiv"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1506.02640",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Single-pass pipeline",
+        "zh": "单次前向管线"
+      },
+      "subcaption": {
+        "en": "Local redraw for YOLO, based on the listed source material.",
+        "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "CVPR / arXiv",
+        "zh": "计算机视觉与模式识别会议 / arXiv"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1506.02640",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Joseph Redmon",
+        "type": "portrait-search",
+        "label": "Joseph Redmon portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Joseph%20Redmon%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Joseph Redmon",
+        "type": "commons-portrait-search",
+        "label": "Joseph Redmon Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Redmon%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Ali Farhadi",
+        "type": "portrait-search",
+        "label": "Ali Farhadi portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ali%20Farhadi%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ali Farhadi",
+        "type": "commons-portrait-search",
+        "label": "Ali Farhadi Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ali%20Farhadi%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "YOLO event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2016%20YOLO%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "YOLO Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=YOLO%202016&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "YOLO Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=YOLO%202016",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "YOLO publication search",
+        "url": "https://www.google.com/search?q=2016%20YOLO%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "YOLO scholar search",
+        "url": "https://scholar.google.com/scholar?q=2016%20YOLO%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

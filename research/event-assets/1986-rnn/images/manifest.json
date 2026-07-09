@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:18.276Z",
+  "eventKey": "1986-rnn",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1986-rnn",
+      "label": "Recurrent Neural Networks",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.recurrent-neural-networks.png",
+      "originalLocalPath": "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 130184,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Architecture",
+      "rights": "Unverified. Existing event asset still needs source/license review.",
+      "downloadedAt": "2026-07-03T10:30:17.971Z"
+    },
+    {
+      "eventKey": "1986-rnn",
+      "label": "Relevant researcher photo",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.relevant-researcher-photo.png",
+      "originalLocalPath": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 435952,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "Unverified. Existing event asset still needs source/license review.",
+      "downloadedAt": "2026-07-03T10:30:18.276Z"
+    }
+  ]
+}

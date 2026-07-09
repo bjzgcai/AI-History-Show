@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:51.842Z",
+  "eventKey": "ai100-2017-gat",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2017-gat",
+      "label": "Graph Attention Networks lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+      "imageUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
+      "status": "not-direct-image-url",
+      "usage": "Achievement visual material",
+      "pageSnapshot": ""
+    },
+    {
+      "eventKey": "ai100-2017-gat",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1710.10903",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2334,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:07:51.842Z"
+    }
+  ]
+}

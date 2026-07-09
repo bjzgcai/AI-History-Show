@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:45.532Z",
+  "eventKey": "2014-highway-network",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2014-highway-network",
+      "label": "Highway Networks diagram",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.highway-networks-diagram.png",
+      "originalLocalPath": "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 360792,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Architecture",
+      "rights": "Unverified. Existing event asset still needs source/license review.",
+      "downloadedAt": "2026-07-03T10:30:45.226Z"
+    },
+    {
+      "eventKey": "2014-highway-network",
+      "label": "Relevant researcher photo",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/2014-highway-network/people/2014-highway-network_people_01.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.relevant-researcher-photo.png",
+      "originalLocalPath": "resources/images/2014-highway-network/people/2014-highway-network_people_01.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1666755,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "Unverified. Existing event asset still needs source/license review.",
+      "downloadedAt": "2026-07-03T10:30:45.532Z"
+    }
+  ]
+}

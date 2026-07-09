@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:56.338Z",
+  "eventKey": "ai100-2017-pix2pix",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2017-pix2pix",
+      "label": "Pix2Pix lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://web.mit.edu/phillipi/",
+      "imageUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+      "finalImageUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+      "localPath": "images/001.pix2pix-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 270032,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:06:56.035Z"
+    },
+    {
+      "eventKey": "ai100-2017-pix2pix",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1611.07004",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2338,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:06:56.338Z"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:00.537Z",
+  "eventKey": "1958-rosenblatt-perceptron",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1958-rosenblatt-perceptron",
+      "label": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.historical-cornell-image-of-rosenblatt-and-the-perceptron-lineage.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 164330,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Cornell historical image; reuse rights not stated on extracted image URL.",
+      "downloadedAt": "2026-07-03T11:53:00.233Z"
+    },
+    {
+      "eventKey": "1958-rosenblatt-perceptron",
+      "label": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1037/h0042519",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-rosenblatt-perceptron-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1104,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:53:00.537Z"
+    }
+  ]
+}

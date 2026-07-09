@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:45:58.909Z",
+  "eventKey": "2015-faster-r-cnn",
+  "year": "2015",
+  "title": {
+    "en": "Faster R-CNN",
+    "zh": "Faster R-CNN"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "description": {
+    "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>",
+    "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Kaiming He portrait",
+        "zh": "何恺明肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Kaiming He's MIT-hosted personal page.",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "sourceName": {
+        "en": "Kaiming He personal page",
+        "zh": "何恺明个人主页"
+      },
+      "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+      "license": {
+        "en": "Personal website photo; rights not stated.",
+        "zh": "个人网站照片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Historical figure / Faster R-CNN co-author portrait",
+        "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Region proposal network",
+        "zh": "区域建议网络"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+        "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "GitHub",
+        "zh": "GitHub"
+      },
+      "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Detection output boxes",
+        "zh": "检测输出框"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+        "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "GitHub",
+        "zh": "GitHub"
+      },
+      "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Shaoqing Ren",
+        "type": "portrait-search",
+        "label": "Shaoqing Ren portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Shaoqing%20Ren%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Shaoqing Ren",
+        "type": "commons-portrait-search",
+        "label": "Shaoqing Ren Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Shaoqing%20Ren%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Kaiming He",
+        "type": "portrait-search",
+        "label": "Kaiming He portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Kaiming%20He%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Kaiming He",
+        "type": "commons-portrait-search",
+        "label": "Kaiming He Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Ross Girshick",
+        "type": "portrait-search",
+        "label": "Ross Girshick portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ross%20Girshick%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ross Girshick",
+        "type": "commons-portrait-search",
+        "label": "Ross Girshick Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ross%20Girshick%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Jian Sun",
+        "type": "portrait-search",
+        "label": "Jian Sun portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jian%20Sun%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jian Sun",
+        "type": "commons-portrait-search",
+        "label": "Jian Sun Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Faster R-CNN event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2015%20Faster%20R-CNN%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Faster R-CNN Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Faster%20R-CNN%202015&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Faster R-CNN Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Faster%20R-CNN%202015",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Faster R-CNN publication search",
+        "url": "https://www.google.com/search?q=2015%20Faster%20R-CNN%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Faster R-CNN scholar search",
+        "url": "https://scholar.google.com/scholar?q=2015%20Faster%20R-CNN%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

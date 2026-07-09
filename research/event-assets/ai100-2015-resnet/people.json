@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "Lead author of ResNet",
+        "zh": "ResNet 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/kaiming-he.jpg",
+          "sourceUrl": "resources/images/figures/kaiming-he.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "Co-author of ResNet",
+        "zh": "ResNet 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/kaiming-he.jpg",
+          "sourceUrl": "resources/images/figures/kaiming-he.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:52.050Z",
+  "eventKey": "2023-agents",
+  "year": 2023,
+  "title": {
+    "en": "Agents: LLM-Driven Autonomous Systems",
+    "zh": "智能体：LLM驱动的自主系统"
+  },
+  "location": {
+    "name": {
+      "en": "Global AI Labs",
+      "zh": "全球研究"
+    },
+    "country": {
+      "en": "Global",
+      "zh": "多个机构"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "description": {
+    "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction.",
+    "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2023-agents/historical/2023-agents_historical_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "Agents: LLM-Driven Autonomous Systems",
+        "zh": "智能体：LLM驱动的自主系统"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "Agents: LLM-Driven Autonomous Systems",
+        "zh": "智能体：LLM驱动的自主系统"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2023-agents/historical/2023-agents_historical_04.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "Agents: LLM-Driven Autonomous Systems",
+        "zh": "智能体：LLM驱动的自主系统"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Stuart Russell",
+        "type": "portrait-search",
+        "label": "Stuart Russell portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Stuart%20Russell%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Stuart Russell",
+        "type": "commons-portrait-search",
+        "label": "Stuart Russell Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Russell%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Peter Norvig",
+        "type": "portrait-search",
+        "label": "Peter Norvig portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Peter%20Norvig%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Peter Norvig",
+        "type": "commons-portrait-search",
+        "label": "Peter Norvig Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Peter%20Norvig%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Michael Wooldridge",
+        "type": "portrait-search",
+        "label": "Michael Wooldridge portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Michael%20Wooldridge%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Michael Wooldridge",
+        "type": "commons-portrait-search",
+        "label": "Michael Wooldridge Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Wooldridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Agents: LLM-Driven Autonomous Systems event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2023%20Agents%3A%20LLM-Driven%20Autonomous%20Systems%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Agents: LLM-Driven Autonomous Systems Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Agents%3A%20LLM-Driven%20Autonomous%20Systems%202023&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Agents: LLM-Driven Autonomous Systems Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Agents%3A%20LLM-Driven%20Autonomous%20Systems%202023",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Agents: LLM-Driven Autonomous Systems publication search",
+        "url": "https://www.google.com/search?q=2023%20Agents%3A%20LLM-Driven%20Autonomous%20Systems%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Agents: LLM-Driven Autonomous Systems scholar search",
+        "url": "https://scholar.google.com/scholar?q=2023%20Agents%3A%20LLM-Driven%20Autonomous%20Systems%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

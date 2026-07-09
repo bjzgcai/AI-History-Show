@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:35.128Z",
+  "eventKey": "1959-pandemonium",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Pandemonium: A Paradigm for Learning",
+      "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Pandemonium architecture image",
+      "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Oliver Selfridge portrait",
+      "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+      "usage": ""
+    },
+    {
+      "type": "Obituary",
+      "label": "Oliver Selfridge obituary, The Guardian",
+      "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Oliver Selfridge Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Oliver%20Selfridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Pandemonium Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Pandemonium%201959&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Pandemonium Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Pandemonium%201959",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1959%20Pandemonium%20Oliver%20Selfridge%20AI%20history%20source%20images",
+      "query": "1959 Pandemonium Oliver Selfridge AI history source images",
+      "eventKey": "1959-pandemonium"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1959%20Pandemonium%20Oliver%20Selfridge%20AI%20history%20source%20images",
+      "query": "1959 Pandemonium Oliver Selfridge AI history source images",
+      "eventKey": "1959-pandemonium"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1959%20Pandemonium%20Oliver%20Selfridge%20AI%20history%20source%20images",
+      "query": "1959 Pandemonium Oliver Selfridge AI history source images",
+      "eventKey": "1959-pandemonium"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Oliver Selfridge portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Oliver%20Selfridge%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Oliver Selfridge Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Oliver%20Selfridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Oliver Selfridge official biography search",
+      "url": "https://www.google.com/search?q=Oliver%20Selfridge%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Pandemonium event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1959%20Pandemonium%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Pandemonium Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Pandemonium%201959&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Pandemonium Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Pandemonium%201959",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Pandemonium publication search",
+      "url": "https://www.google.com/search?q=1959%20Pandemonium%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Pandemonium scholar search",
+      "url": "https://scholar.google.com/scholar?q=1959%20Pandemonium%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Pandemonium: A Paradigm for Learning",
+      "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+      "finalUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+      "ok": false,
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Error: DOI Not Found",
+      "savedPath": "pages/001.pandemonium-a-paradigm-for-learning.html",
+      "fetchedAt": "2026-07-03T11:54:35.814Z"
+    },
+    {
+      "label": "Pandemonium architecture image",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Original pande2.jpg - Wikimedia Commons",
+      "savedPath": "pages/002.pandemonium-architecture-image.html",
+      "fetchedAt": "2026-07-03T11:54:36.825Z"
+    },
+    {
+      "label": "Oliver Selfridge portrait",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Oliver Selfridge at BBN.jpg - Wikimedia Commons",
+      "savedPath": "pages/003.oliver-selfridge-portrait.html",
+      "fetchedAt": "2026-07-03T11:54:38.232Z"
+    },
+    {
+      "label": "Oliver Selfridge obituary, The Guardian",
+      "sourceUrl": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:54:39.606Z"
+    },
+    {
+      "label": "Oliver Selfridge Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Oliver%20Selfridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Oliver%20Selfridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.oliver-selfridge-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:41.743Z"
+    },
+    {
+      "label": "Pandemonium Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Pandemonium%201959&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Pandemonium%201959&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.pandemonium-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:54:42.993Z"
+    },
+    {
+      "label": "Pandemonium Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Pandemonium%201959",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Pandemonium%201959",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.pandemonium-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:43.597Z"
+    }
+  ]
+}

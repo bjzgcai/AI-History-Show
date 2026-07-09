@@ -1,0 +1,15 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Frank Rosenblatt",
+        "zh": "弗兰克·罗森布拉特"
+      },
+      "role": {
+        "en": "Inventor of the perceptron",
+        "zh": "感知机发明者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

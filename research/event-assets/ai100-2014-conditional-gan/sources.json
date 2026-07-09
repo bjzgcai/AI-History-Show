@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:38.364Z",
+  "eventKey": "ai100-2014-conditional-gan",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Conditional Generative Adversarial Nets",
+      "url": "https://arxiv.org/abs/1411.1784",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Generative adversarial network overview",
+      "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+      "usage": ""
+    },
+    {
+      "type": "Related paper",
+      "label": "Generative Adversarial Nets",
+      "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Kaptur interview",
+      "url": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Mehdi Mirza Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Mehdi%20Mirza%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Conditional GAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Conditional%20GAN%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Conditional GAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Conditional%20GAN%202014",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2014%20Conditional%20GAN%20Mehdi%20Mirza%20AI%20history%20source%20images",
+      "query": "2014 Conditional GAN Mehdi Mirza AI history source images",
+      "eventKey": "ai100-2014-conditional-gan"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Conditional%20GAN%20Mehdi%20Mirza%20AI%20history%20source%20images",
+      "query": "2014 Conditional GAN Mehdi Mirza AI history source images",
+      "eventKey": "ai100-2014-conditional-gan"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Conditional%20GAN%20Mehdi%20Mirza%20AI%20history%20source%20images",
+      "query": "2014 Conditional GAN Mehdi Mirza AI history source images",
+      "eventKey": "ai100-2014-conditional-gan"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Mehdi Mirza portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Mehdi%20Mirza%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Mehdi Mirza Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Mehdi%20Mirza%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Mehdi Mirza official biography search",
+      "url": "https://www.google.com/search?q=Mehdi%20Mirza%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Conditional GAN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Conditional%20GAN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Conditional GAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Conditional%20GAN%202014&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Conditional GAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Conditional%20GAN%202014",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Conditional GAN publication search",
+      "url": "https://www.google.com/search?q=2014%20Conditional%20GAN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Conditional GAN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Conditional%20GAN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Conditional Generative Adversarial Nets",
+      "sourceUrl": "https://arxiv.org/abs/1411.1784",
+      "finalUrl": "https://arxiv.org/abs/1411.1784",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1411.1784] Conditional Generative Adversarial Nets",
+      "savedPath": "pages/001.conditional-generative-adversarial-nets.html",
+      "fetchedAt": "2026-07-03T12:05:38.740Z"
+    },
+    {
+      "label": "Generative adversarial network overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+      "finalUrl": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Generative adversarial network - Wikipedia",
+      "savedPath": "pages/002.generative-adversarial-network-overview.html",
+      "fetchedAt": "2026-07-03T12:05:39.581Z"
+    },
+    {
+      "label": "Generative Adversarial Nets",
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+      "finalUrl": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Generative Adversarial Nets",
+      "savedPath": "pages/003.generative-adversarial-nets.html",
+      "fetchedAt": "2026-07-03T12:05:40.768Z"
+    },
+    {
+      "label": "Kaptur interview",
+      "sourceUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+      "finalUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Simon Osindero - Kaptur",
+      "savedPath": "pages/004.kaptur-interview.html",
+      "fetchedAt": "2026-07-03T12:05:46.392Z"
+    },
+    {
+      "label": "Mehdi Mirza Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Mehdi%20Mirza%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Mehdi%20Mirza%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.mehdi-mirza-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:47.798Z"
+    },
+    {
+      "label": "Conditional GAN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Conditional%20GAN%202014&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Conditional%20GAN%202014&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.conditional-gan-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:05:49.375Z"
+    },
+    {
+      "label": "Conditional GAN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Conditional%20GAN%202014",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Conditional%20GAN%202014",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.conditional-gan-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:50.193Z"
+    }
+  ]
+}

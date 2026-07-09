@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Thomas Cover",
+        "zh": "托马斯·科弗"
+      },
+      "role": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+          "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+          "license": {
+            "en": "Stanford Report image; reuse rights not stated.",
+            "zh": "Stanford Report 图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Peter Hart",
+        "zh": "彼得·哈特"
+      },
+      "role": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+          "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+          "license": {
+            "en": "Stanford Report image; reuse rights not stated.",
+            "zh": "Stanford Report 图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

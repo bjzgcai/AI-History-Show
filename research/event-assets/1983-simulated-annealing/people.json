@@ -1,0 +1,79 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Scott Kirkpatrick",
+        "zh": "斯科特·柯克帕特里克"
+      },
+      "role": {
+        "en": "Co-author of the 1983 simulated annealing paper",
+        "zh": "1983 年模拟退火论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+          "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+          "license": {
+            "en": "Workshop profile photo; rights not stated.",
+            "zh": "Workshop profile photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Simulated annealing co-author portrait",
+            "zh": "历史人物 / 模拟退火共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "C. Daniel Gelatt Jr.",
+        "zh": "C·丹尼尔·格拉特 Jr."
+      },
+      "role": {
+        "en": "Co-author of the 1983 simulated annealing paper",
+        "zh": "1983 年模拟退火论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+          "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+          "license": {
+            "en": "Workshop profile photo; rights not stated.",
+            "zh": "Workshop profile photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Simulated annealing co-author portrait",
+            "zh": "历史人物 / 模拟退火共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Mario P. Vecchi",
+        "zh": "马里奥·P·维基"
+      },
+      "role": {
+        "en": "Co-author of the 1983 simulated annealing paper",
+        "zh": "1983 年模拟退火论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+          "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+          "license": {
+            "en": "Workshop profile photo; rights not stated.",
+            "zh": "Workshop profile photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Simulated annealing co-author portrait",
+            "zh": "历史人物 / 模拟退火共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

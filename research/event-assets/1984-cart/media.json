@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:02:34.991Z",
+  "eventKey": "1984-cart",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Leo Breiman",
+      "role": "Co-author of the CART monograph",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Leo Breiman portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Leo%20Breiman%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Leo Breiman Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Leo%20Breiman%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Leo Breiman official biography search",
+          "url": "https://www.google.com/search?q=Leo%20Breiman%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Jerome Friedman",
+      "role": "Co-author of the CART monograph",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jerome Friedman portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Jerome%20Friedman%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jerome Friedman Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Jerome%20Friedman%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jerome Friedman official biography search",
+          "url": "https://www.google.com/search?q=Jerome%20Friedman%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Richard Olshen",
+      "role": "Co-author of the CART monograph",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Richard Olshen portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Richard%20Olshen%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Richard Olshen Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Richard%20Olshen%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Richard Olshen official biography search",
+          "url": "https://www.google.com/search?q=Richard%20Olshen%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Charles Stone",
+      "role": "Co-author of the CART monograph",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Charles Stone portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Charles%20Stone%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Charles Stone Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Charles%20Stone%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Charles Stone official biography search",
+          "url": "https://www.google.com/search?q=Charles%20Stone%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "CART event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1984%20CART%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "CART Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CART%201984&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CART Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CART%201984",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "CART publication search",
+      "url": "https://www.google.com/search?q=1984%20CART%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "CART scholar search",
+      "url": "https://scholar.google.com/scholar?q=1984%20CART%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Leo Breiman portrait",
+        "zh": "利奥·布雷曼 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from the University of York Portraits of Statisticians archive.",
+        "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。"
+      },
+      "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+      "sourceLabel": "University of York / Portraits of Statisticians",
+      "license": {
+        "en": "Archive portrait; rights not stated.",
+        "zh": "Archive portrait; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / CART co-author portrait",
+        "zh": "历史人物 / CART 共同作者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Feature-space splits",
+        "zh": "特征空间划分"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for CART, based on the related source material.",
+        "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "sourceLabel": "Classification and Regression Trees",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Cost-complexity pruning curve",
+        "zh": "代价复杂度剪枝曲线"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for CART, based on the related source material.",
+        "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "sourceLabel": "Classification and Regression Trees",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "University of York / Portraits of Statisticians",
+        "url": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+        "usage": "Historical figure / CART co-author portrait"
+      }
+    ],
+    "publications": [],
+    "institutions": []
+  }
+}

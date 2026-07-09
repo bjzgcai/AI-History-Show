@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:09.761Z",
+  "eventKey": "1951-strachey-draughts",
+  "year": "1951-1952",
+  "title": {
+    "en": "Christopher Strachey's Draughts",
+    "zh": "克里斯托弗·斯特雷奇 的跳棋程序"
+  },
+  "location": {
+    "name": {
+      "en": "National Physical Laboratory",
+      "zh": "英国国家物理实验室"
+    },
+    "country": {
+      "en": "Teddington, United Kingdom",
+      "zh": "英国特丁顿"
+    },
+    "coordinates": [
+      51.4245,
+      -0.3426
+    ]
+  },
+  "description": {
+    "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>",
+    "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+      "existsLocally": false,
+      "caption": {
+        "en": "Christopher Strachey's draughts program",
+        "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
+      },
+      "subcaption": {
+        "en": "Screenshot of the early draughts program attributed to Strachey.",
+        "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+      "license": {
+        "en": "Public domain",
+        "zh": "Public domain"
+      },
+      "usage": {
+        "en": "Program screenshot",
+        "zh": "程序截图"
+      }
+    },
+    {
+      "index": 1,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Checkers board",
+        "zh": "跳棋棋盘照片"
+      },
+      "subcaption": {
+        "en": "Physical checkers board used as visual context for game-playing AI.",
+        "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+      "license": {
+        "en": "CC BY 3.0",
+        "zh": "CC BY 3.0"
+      },
+      "usage": {
+        "en": "Game-board photo",
+        "zh": "棋盘照片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Draughts board search",
+        "zh": "跳棋棋盘搜索"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Logical or non-mathematical programmes.",
+        "zh": "依据 逻辑或非数学程序 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Logical or non-mathematical programmes",
+        "zh": "逻辑或非数学程序"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Search diagram",
+        "zh": "搜索图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Early game-program flow",
+        "zh": "早期游戏程序流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Logical or non-mathematical programmes.",
+        "zh": "依据 逻辑或非数学程序 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Logical or non-mathematical programmes",
+        "zh": "逻辑或非数学程序"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Program-flow diagram",
+        "zh": "程序流程图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Christopher Strachey",
+        "type": "portrait-search",
+        "label": "Christopher Strachey portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Christopher%20Strachey%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Christopher Strachey",
+        "type": "commons-portrait-search",
+        "label": "Christopher Strachey Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Christopher Strachey's Draughts event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1951-1952%20Christopher%20Strachey's%20Draughts%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Christopher Strachey's Draughts Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey's%20Draughts%201951-1952&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Christopher Strachey's Draughts Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Christopher%20Strachey's%20Draughts%201951-1952",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Christopher Strachey's Draughts publication search",
+        "url": "https://www.google.com/search?q=1951-1952%20Christopher%20Strachey's%20Draughts%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Christopher Strachey's Draughts scholar search",
+        "url": "https://scholar.google.com/scholar?q=1951-1952%20Christopher%20Strachey's%20Draughts%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

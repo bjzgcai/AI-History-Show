@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Yann LeCun",
+        "zh": "扬·勒昆"
+      },
+      "role": {
+        "en": "LeNet lead researcher",
+        "zh": "LeNet 主要研究者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

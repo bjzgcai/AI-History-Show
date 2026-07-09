@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Joshua Tenenbaum",
+        "zh": "约书亚·特南鲍姆"
+      },
+      "role": {
+        "en": "Lead author of Isomap",
+        "zh": "Isomap 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+          "sourceUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+          "license": {
+            "en": "MIT profile image; reuse rights not stated.",
+            "zh": "MIT 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "John Langford",
+        "zh": "约翰·兰福德"
+      },
+      "role": {
+        "en": "Co-author of Isomap",
+        "zh": "Co-author of Isomap"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+          "sourceUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+          "license": {
+            "en": "MIT profile image; reuse rights not stated.",
+            "zh": "MIT 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

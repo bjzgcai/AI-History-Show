@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:12.852Z",
+  "eventKey": "ai100-2015-deep-compression",
+  "year": 2015,
+  "title": {
+    "en": "Deep Compression",
+    "zh": "深度压缩"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "description": {
+    "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>",
+    "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Song Han portrait",
+        "zh": "韩松肖像"
+      },
+      "subcaption": {
+        "en": "Deep Compression lead author",
+        "zh": "深度压缩主要作者"
+      },
+      "sourceName": {
+        "en": "Han Lab profile",
+        "zh": "韩松实验室个人资料"
+      },
+      "sourceUrl": "https://hanlab.mit.edu/songhan",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Deep Compression explainer",
+        "zh": "深度压缩 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1510.00149",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Song Han",
+        "type": "portrait-search",
+        "label": "Song Han portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Song%20Han%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Song Han",
+        "type": "commons-portrait-search",
+        "label": "Song Han Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Song%20Han%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Deep Compression event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2015%20Deep%20Compression%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Deep Compression Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Compression%202015&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Deep Compression Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Deep%20Compression%202015",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Deep Compression publication search",
+        "url": "https://www.google.com/search?q=2015%20Deep%20Compression%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Deep Compression scholar search",
+        "url": "https://scholar.google.com/scholar?q=2015%20Deep%20Compression%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

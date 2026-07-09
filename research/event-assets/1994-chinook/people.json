@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jonathan Schaeffer",
+        "zh": "乔纳森·谢弗"
+      },
+      "role": {
+        "en": "Leader of the Chinook team",
+        "zh": "Chinook 团队负责人"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

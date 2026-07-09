@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:32.890Z",
+  "eventKey": "1958-wangs-algorithm",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Hao Wang",
+      "role": "Developed pattern-recognition theorem-proving procedures",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Hao Wang portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Hao%20Wang%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Hao Wang Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Hao%20Wang%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Hao Wang official biography search",
+          "url": "https://www.google.com/search?q=Hao%20Wang%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Wang's Algorithm event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1958-1961%20Wang's%20Algorithm%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Wang's Algorithm Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Wang's%20Algorithm%201958-1961&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Wang's Algorithm Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Wang's%20Algorithm%201958-1961",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Wang's Algorithm publication search",
+      "url": "https://www.google.com/search?q=1958-1961%20Wang's%20Algorithm%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Wang's Algorithm scholar search",
+      "url": "https://scholar.google.com/scholar?q=1958-1961%20Wang's%20Algorithm%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Hao Wang portrait",
+        "zh": "王浩肖像"
+      },
+      "subcaption": {
+        "en": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection.",
+        "zh": "王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。"
+      },
+      "sourceUrl": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+      "sourceLabel": "Rockefeller University Digital Commons: Wang, Hao",
+      "license": {
+        "en": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+        "zh": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page."
+      },
+      "usage": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Wang algorithm pattern proof",
+        "zh": "王氏算法模式证明"
+      },
+      "subcaption": {
+        "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure.",
+        "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。"
+      },
+      "sourceUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+      "sourceLabel": "Proving theorems by pattern recognition I",
+      "license": {
+        "en": "Original local explainer; source article images not reused.",
+        "zh": "Original local explainer; source article images not reused."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Proving theorems by pattern recognition I",
+        "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "usage": ""
+      }
+    ],
+    "institutions": [
+      {
+        "type": "Archive",
+        "label": "Proving Theorems by Pattern Recognition - II",
+        "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
+        "usage": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:27.639Z",
+  "eventKey": "ai100-2015-diffusion-model",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2015-diffusion-model",
+      "label": "Diffusion model lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://sohldickstein.com/",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
+      "finalImageUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
+      "localPath": "images/001.diffusion-model-lead-author.webp",
+      "pageSnapshot": "",
+      "contentType": "image/webp",
+      "bytes": 220394,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:07:27.334Z"
+    },
+    {
+      "eventKey": "ai100-2015-diffusion-model",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2350,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:07:27.639Z"
+    }
+  ]
+}

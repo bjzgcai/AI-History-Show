@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:09.761Z",
+  "eventKey": "1951-strachey-draughts",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Logical or non-mathematical programmes",
+      "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "usage": ""
+    },
+    {
+      "type": "Biography",
+      "label": "Computer Pioneers - Christopher Strachey",
+      "url": "https://history.computer.org/pioneers/strachey.html",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Strachey draughts program screenshot",
+      "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "Checkers board photo",
+      "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christopher Strachey Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Christopher Strachey's Draughts Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey's%20Draughts%201951-1952&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Christopher Strachey's Draughts Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Christopher%20Strachey's%20Draughts%201951-1952",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1951-1952%20Christopher%20Strachey's%20Draughts%20Christopher%20Strachey%20AI%20history%20source%20images",
+      "query": "1951-1952 Christopher Strachey's Draughts Christopher Strachey AI history source images",
+      "eventKey": "1951-strachey-draughts"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1951-1952%20Christopher%20Strachey's%20Draughts%20Christopher%20Strachey%20AI%20history%20source%20images",
+      "query": "1951-1952 Christopher Strachey's Draughts Christopher Strachey AI history source images",
+      "eventKey": "1951-strachey-draughts"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1951-1952%20Christopher%20Strachey's%20Draughts%20Christopher%20Strachey%20AI%20history%20source%20images",
+      "query": "1951-1952 Christopher Strachey's Draughts Christopher Strachey AI history source images",
+      "eventKey": "1951-strachey-draughts"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Christopher Strachey portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Christopher%20Strachey%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christopher Strachey Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Christopher Strachey official biography search",
+      "url": "https://www.google.com/search?q=Christopher%20Strachey%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Christopher Strachey's Draughts event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1951-1952%20Christopher%20Strachey's%20Draughts%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Christopher Strachey's Draughts Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey's%20Draughts%201951-1952&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Christopher Strachey's Draughts Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Christopher%20Strachey's%20Draughts%201951-1952",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Christopher Strachey's Draughts publication search",
+      "url": "https://www.google.com/search?q=1951-1952%20Christopher%20Strachey's%20Draughts%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Christopher Strachey's Draughts scholar search",
+      "url": "https://scholar.google.com/scholar?q=1951-1952%20Christopher%20Strachey's%20Draughts%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Logical or non-mathematical programmes",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "finalUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.logical-or-non-mathematical-programmes.html",
+      "fetchedAt": "2026-07-03T11:54:11.035Z"
+    },
+    {
+      "label": "Computer Pioneers - Christopher Strachey",
+      "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+      "finalUrl": "https://history.computer.org/pioneers/strachey.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Computer Pioneers - Christopher Strachey",
+      "savedPath": "pages/002.computer-pioneers---christopher-strachey.html",
+      "fetchedAt": "2026-07-03T11:54:12.644Z"
+    },
+    {
+      "label": "Strachey draughts program screenshot",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Christopher Strachey's Draughts Program.png - Wikimedia Commons",
+      "savedPath": "pages/003.strachey-draughts-program-screenshot.html",
+      "fetchedAt": "2026-07-03T11:54:13.498Z"
+    },
+    {
+      "label": "Checkers board photo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:CheckersStandard.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.checkers-board-photo.html",
+      "fetchedAt": "2026-07-03T11:54:14.672Z"
+    },
+    {
+      "label": "Christopher Strachey Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.christopher-strachey-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:16.173Z"
+    },
+    {
+      "label": "Christopher Strachey's Draughts Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey's%20Draughts%201951-1952&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Strachey%27s%20Draughts%201951-1952&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.christopher-strachey-s-draughts-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:54:17.635Z"
+    },
+    {
+      "label": "Christopher Strachey's Draughts Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Christopher%20Strachey's%20Draughts%201951-1952",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Christopher%20Strachey%27s%20Draughts%201951-1952",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.christopher-strachey-s-draughts-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:54:18.406Z"
+    }
+  ]
+}

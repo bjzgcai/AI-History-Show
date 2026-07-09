@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:36.354Z",
+  "eventKey": "ai100-2000-isomap",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Joshua Tenenbaum",
+      "role": "Lead author of Isomap",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Joshua Tenenbaum portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Joshua%20Tenenbaum%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Joshua Tenenbaum Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Joshua%20Tenenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Joshua Tenenbaum official biography search",
+          "url": "https://www.google.com/search?q=Joshua%20Tenenbaum%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "John Langford",
+      "role": "Co-author of Isomap",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "John Langford portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=John%20Langford%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "John Langford Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=John%20Langford%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "John Langford official biography search",
+          "url": "https://www.google.com/search?q=John%20Langford%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Isomap event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Isomap%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Isomap Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Isomap%202000&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Isomap Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Isomap%202000",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Isomap publication search",
+      "url": "https://www.google.com/search?q=2000%20Isomap%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Isomap scholar search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Isomap%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Joshua Tenenbaum portrait",
+        "zh": "约书亚·特南鲍姆肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of Isomap",
+        "zh": "Isomap 主要作者"
+      },
+      "sourceUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+      "sourceLabel": "MIT Quest for Intelligence",
+      "license": {
+        "en": "MIT profile image; reuse rights not stated.",
+        "zh": "MIT 个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Geodesic manifold map",
+        "zh": "测地流形映射"
+      },
+      "subcaption": {
+        "en": "Original local explainer of Isomap geodesic embedding.",
+        "zh": "关于 Isomap 测地嵌入的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2319",
+      "sourceLabel": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "MIT Quest for Intelligence",
+        "url": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+        "url": "https://doi.org/10.1126/science.290.5500.2319",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "Science article page",
+        "url": "https://www.science.org/doi/10.1126/science.290.5500.2319",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

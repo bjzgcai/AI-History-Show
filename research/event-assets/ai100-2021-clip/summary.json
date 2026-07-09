@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:33.585Z",
+  "eventKey": "ai100-2021-clip",
+  "year": 2021,
+  "title": {
+    "en": "CLIP",
+    "zh": "CLIP"
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "description": {
+    "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>",
+    "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/alec-radford.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Alec Radford portrait",
+        "zh": "亚历克·拉德福德肖像"
+      },
+      "subcaption": {
+        "en": "CLIP lead author",
+        "zh": "CLIP 主要作者"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/alec-radford.png",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "CLIP contrastive pairs",
+        "zh": "CLIP 对比图文对"
+      },
+      "subcaption": {
+        "en": "Original local explainer of image-text contrastive learning.",
+        "zh": "关于图文对比学习的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "ICML",
+        "zh": "ICML"
+      },
+      "sourceUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Alec Radford",
+        "type": "portrait-search",
+        "label": "Alec Radford portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alec%20Radford%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alec Radford",
+        "type": "commons-portrait-search",
+        "label": "Alec Radford Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "CLIP event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2021%20CLIP%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "CLIP Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=CLIP%202021&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "CLIP Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=CLIP%202021",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "CLIP publication search",
+        "url": "https://www.google.com/search?q=2021%20CLIP%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "CLIP scholar search",
+        "url": "https://scholar.google.com/scholar?q=2021%20CLIP%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jacob Devlin",
+        "zh": "雅各布·德夫林"
+      },
+      "role": {
+        "en": "BERT author",
+        "zh": "BERT作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "GPT author",
+        "zh": "GPT作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

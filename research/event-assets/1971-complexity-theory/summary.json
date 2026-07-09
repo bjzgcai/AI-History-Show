@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:24.666Z",
+  "eventKey": "1971-complexity-theory",
+  "year": 1971,
+  "title": {
+    "en": "NP-Completeness",
+    "zh": "NP 完全性"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大，多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "description": {
+    "en": "<p>Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.</p>",
+    "zh": "<p>计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Stephen A. Cook portrait",
+        "zh": "斯蒂芬·A·库克 肖像"
+      },
+      "subcaption": {
+        "en": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012.",
+        "zh": "斯蒂芬·A·库克 摄于 2012 年图灵百年纪念活动。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+      "license": {
+        "en": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+        "zh": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton."
+      },
+      "usage": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "NP-completeness reduction map",
+        "zh": "NP 完全性归约地图"
+      },
+      "subcaption": {
+        "en": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description.",
+        "zh": "根据 库克 1971 年论文与 Clay P 与 NP 难题说明制作的原创解释图。"
+      },
+      "sourceName": {
+        "en": "ACM / Clay Mathematics Institute",
+        "zh": "ACM / Clay Mathematics Institute"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/800157.805047",
+      "license": {
+        "en": "Original local explainer; source article reuse rights not used.",
+        "zh": "Original local explainer; source article reuse rights not used."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Stephen A. Cook",
+        "type": "portrait-search",
+        "label": "Stephen A. Cook portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Stephen%20A.%20Cook%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Stephen A. Cook",
+        "type": "commons-portrait-search",
+        "label": "Stephen A. Cook Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Stephen%20A.%20Cook%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Leonid Levin",
+        "type": "portrait-search",
+        "label": "Leonid Levin portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Leonid%20Levin%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Leonid Levin",
+        "type": "commons-portrait-search",
+        "label": "Leonid Levin Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Leonid%20Levin%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "NP-Completeness event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1971%20NP-Completeness%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "NP-Completeness Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=NP-Completeness%201971&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "NP-Completeness Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=NP-Completeness%201971",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "NP-Completeness publication search",
+        "url": "https://www.google.com/search?q=1971%20NP-Completeness%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "NP-Completeness scholar search",
+        "url": "https://scholar.google.com/scholar?q=1971%20NP-Completeness%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Hao Wang",
+        "zh": "王浩"
+      },
+      "role": {
+        "en": "Developed pattern-recognition theorem-proving procedures",
+        "zh": "提出基于模式识别的定理证明过程"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+          "sourceUrl": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+          "license": {
+            "en": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+            "zh": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

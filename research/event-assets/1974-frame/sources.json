@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:45.742Z",
+  "eventKey": "1974-frame",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "A Framework for Representing Knowledge",
+      "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Profile",
+      "label": "Marvin Minsky obituary, MIT News",
+      "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "usage": ""
+    },
+    {
+      "type": "Reference",
+      "label": "Frame, MIT AI memo bibliographic record",
+      "url": "https://dspace.mit.edu/handle/1721.1/6089",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Marvin Minsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Frame Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Frame%201974&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Frame Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Frame%201974",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1974%20Frame%20Marvin%20Minsky%20AI%20history%20source%20images",
+      "query": "1974 Frame Marvin Minsky AI history source images",
+      "eventKey": "1974-frame"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1974%20Frame%20Marvin%20Minsky%20AI%20history%20source%20images",
+      "query": "1974 Frame Marvin Minsky AI history source images",
+      "eventKey": "1974-frame"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1974%20Frame%20Marvin%20Minsky%20AI%20history%20source%20images",
+      "query": "1974 Frame Marvin Minsky AI history source images",
+      "eventKey": "1974-frame"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Marvin Minsky portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Marvin%20Minsky%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Marvin Minsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Marvin Minsky official biography search",
+      "url": "https://www.google.com/search?q=Marvin%20Minsky%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Frame event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1974%20Frame%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Frame Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Frame%201974&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Frame Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Frame%201974",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Frame publication search",
+      "url": "https://www.google.com/search?q=1974%20Frame%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Frame scholar search",
+      "url": "https://scholar.google.com/scholar?q=1974%20Frame%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "A Framework for Representing Knowledge",
+      "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T11:50:08.175Z"
+    },
+    {
+      "label": "Marvin Minsky obituary, MIT News",
+      "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "finalUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Marvin Minsky, “father of artificial intelligence,” dies at 88 | MIT News | Massachusetts Institute of Technology",
+      "savedPath": "pages/002.marvin-minsky-obituary-mit-news.html",
+      "fetchedAt": "2026-07-03T11:50:10.272Z"
+    },
+    {
+      "label": "Frame, MIT AI memo bibliographic record",
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/6089",
+      "finalUrl": "https://dspace.mit.edu/handle/1721.1/6089",
+      "ok": false,
+      "status": 405,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Human Verification",
+      "savedPath": "pages/003.frame-mit-ai-memo-bibliographic-record.html",
+      "fetchedAt": "2026-07-03T11:50:10.640Z"
+    },
+    {
+      "label": "Marvin Minsky Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.marvin-minsky-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:12.505Z"
+    },
+    {
+      "label": "Frame Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Frame%201974&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Frame%201974&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.frame-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:50:15.187Z"
+    },
+    {
+      "label": "Frame Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Frame%201974",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Frame%201974",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.frame-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:15.788Z"
+    }
+  ]
+}

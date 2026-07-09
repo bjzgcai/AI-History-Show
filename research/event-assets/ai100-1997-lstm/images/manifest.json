@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:03:29.324Z",
+  "eventKey": "ai100-1997-lstm",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1997-lstm",
+      "label": "LSTM co-author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/figures/sepp-hochreiter.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.lstm-co-author.jpg",
+      "originalLocalPath": "resources/images/figures/sepp-hochreiter.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 17537,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Reference image",
+      "downloadedAt": "2026-07-03T12:03:29.019Z"
+    },
+    {
+      "eventKey": "ai100-1997-lstm",
+      "label": "Original local explainer of gated sequence memory.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-gated-sequence-memory.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1322,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:03:29.324Z"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:47.085Z",
+  "eventKey": "1958-rosenblatt-perceptron",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Frank Rosenblatt",
+      "role": "Inventor of the perceptron",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Frank Rosenblatt portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Frank Rosenblatt Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Frank Rosenblatt official biography search",
+          "url": "https://www.google.com/search?q=Frank%20Rosenblatt%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Rosenblatt Perceptron event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1958%20Rosenblatt%20Perceptron%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Rosenblatt Perceptron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Rosenblatt%20Perceptron%201958&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Rosenblatt Perceptron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Rosenblatt%20Perceptron%201958",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Rosenblatt Perceptron publication search",
+      "url": "https://www.google.com/search?q=1958%20Rosenblatt%20Perceptron%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Rosenblatt Perceptron scholar search",
+      "url": "https://scholar.google.com/scholar?q=1958%20Rosenblatt%20Perceptron%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Frank Rosenblatt with perceptron hardware",
+        "zh": "弗兰克·罗森布拉特 与感知机硬件"
+      },
+      "subcaption": {
+        "en": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
+        "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。"
+      },
+      "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+      "sourceLabel": "Cornell Chronicle perceptron retrospective",
+      "license": {
+        "en": "Cornell historical image; reuse rights not stated on extracted image URL.",
+        "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Threshold learning line",
+        "zh": "阈值学习边界"
+      },
+      "subcaption": {
+        "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+        "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1037/h0042519",
+      "sourceLabel": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Sensor grid to neuron",
+        "zh": "传感器网格到神经元"
+      },
+      "subcaption": {
+        "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+        "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1037/h0042519",
+      "sourceLabel": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "url": "https://doi.org/10.1037/h0042519",
+        "usage": ""
+      },
+      {
+        "type": "History",
+        "label": "Cornell Chronicle perceptron retrospective",
+        "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+        "usage": ""
+      }
+    ],
+    "institutions": [
+      {
+        "type": "Museum",
+        "label": "Smithsonian Mark I Perceptron object record",
+        "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+        "usage": ""
+      }
+    ]
+  }
+}

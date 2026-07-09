@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:17.962Z",
+  "eventKey": "ai100-1999-nmf",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Daniel Lee",
+      "role": "Co-author of NMF",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Daniel Lee portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Daniel%20Lee%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Daniel Lee Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Daniel%20Lee%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Daniel Lee official biography search",
+          "url": "https://www.google.com/search?q=Daniel%20Lee%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "H. Sebastian Seung",
+      "role": "Co-author of NMF",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "H. Sebastian Seung portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=H.%20Sebastian%20Seung%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "H. Sebastian Seung Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=H.%20Sebastian%20Seung%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "H. Sebastian Seung official biography search",
+          "url": "https://www.google.com/search?q=H.%20Sebastian%20Seung%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "NMF event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1999%20NMF%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "NMF Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=NMF%201999&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "NMF Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=NMF%201999",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "NMF publication search",
+      "url": "https://www.google.com/search?q=1999%20NMF%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "NMF scholar search",
+      "url": "https://scholar.google.com/scholar?q=1999%20NMF%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "H. Sebastian Seung portrait",
+        "zh": "H. 塞巴斯蒂安·承肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "sourceUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+      "sourceLabel": "Princeton Neuroscience Institute",
+      "license": {
+        "en": "Princeton profile image; reuse rights not stated.",
+        "zh": "普林斯顿个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Parts-based factorization",
+        "zh": "基于部件的分解"
+      },
+      "subcaption": {
+        "en": "Original local explainer of nonnegative parts-based factorization.",
+        "zh": "关于非负部件分解的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1038/44565",
+      "sourceLabel": "Learning the parts of objects by non-negative matrix factorization",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Princeton Neuroscience Institute",
+        "url": "https://pni.princeton.edu/people/h-sebastian-seung",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Learning the parts of objects by non-negative matrix factorization",
+        "url": "https://doi.org/10.1038/44565",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "Nature article page",
+        "url": "https://www.nature.com/articles/44565",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

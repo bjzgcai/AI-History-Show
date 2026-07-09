@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:25.687Z",
+  "eventKey": "1983-simulated-annealing",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1983-simulated-annealing",
+      "label": "Workshop participant page photo for Scott Kirkpatrick.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.workshop-participant-page-photo-for-scott-kirkpatrick.gif",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 11962,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Simulated annealing co-author portrait",
+      "rights": "Workshop profile photo; rights not stated.",
+      "downloadedAt": "2026-07-03T11:03:25.382Z"
+    },
+    {
+      "eventKey": "1983-simulated-annealing",
+      "label": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-simulated-annealing-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1252,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:03:25.687Z"
+    }
+  ]
+}

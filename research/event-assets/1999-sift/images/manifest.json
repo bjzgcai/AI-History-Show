@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:39.415Z",
+  "eventKey": "1999-sift",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1999-sift",
+      "label": "Portrait from UBC Computer Science profile.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.ubc.ca/people/david-lowe",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-ubc-computer-science-profile.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 17491,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "UBC profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:50:39.110Z"
+    },
+    {
+      "eventKey": "1999-sift",
+      "label": "Local redraw for SIFT, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-sift-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1082,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:50:39.415Z"
+    }
+  ]
+}

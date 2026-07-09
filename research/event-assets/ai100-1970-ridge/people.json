@@ -1,0 +1,26 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Arthur Hoerl",
+        "zh": "阿瑟·霍尔"
+      },
+      "role": {
+        "en": "Co-author of ridge regression",
+        "zh": "岭回归共同作者"
+      },
+      "portraitCandidates": []
+    },
+    {
+      "name": {
+        "en": "Robert Kennard",
+        "zh": "罗伯特·肯纳德"
+      },
+      "role": {
+        "en": "Co-author of ridge regression",
+        "zh": "岭回归共同作者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

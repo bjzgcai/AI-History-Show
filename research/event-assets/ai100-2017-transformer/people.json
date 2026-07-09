@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Ashish Vaswani",
+        "zh": "阿希什·瓦斯瓦尼"
+      },
+      "role": {
+        "en": "Co-author of the Transformer paper",
+        "zh": "Transformer 论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/ashish-vaswani.jpg",
+          "sourceUrl": "resources/images/figures/ashish-vaswani.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Noam Shazeer",
+        "zh": "诺姆·沙泽尔"
+      },
+      "role": {
+        "en": "Co-author of the Transformer paper",
+        "zh": "Transformer 论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/ashish-vaswani.jpg",
+          "sourceUrl": "resources/images/figures/ashish-vaswani.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

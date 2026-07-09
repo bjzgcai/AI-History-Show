@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:01.855Z",
+  "eventKey": "ai100-1997-kernel-pca",
+  "year": 1997,
+  "title": {
+    "en": "Kernel PCA",
+    "zh": "Kernel PCA"
+  },
+  "location": {
+    "name": {
+      "en": "Max Planck Institute for Biological Cybernetics",
+      "zh": "马克斯·普朗克生物控制论研究所"
+    },
+    "country": {
+      "en": "Tuebingen, Germany",
+      "zh": "德国图宾根"
+    },
+    "coordinates": [
+      48.5216,
+      9.0576
+    ]
+  },
+  "description": {
+    "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>",
+    "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+      "existsLocally": false,
+      "caption": {
+        "en": "Bernhard Scholkopf portrait",
+        "zh": "伯恩哈德·舍尔科普夫肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+      "license": {
+        "en": "Creative Commons Attribution, per Wikimedia Commons.",
+        "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Kernel eigenmap",
+        "zh": "核特征映射"
+      },
+      "subcaption": {
+        "en": "Original local explainer of kernel PCA embedding.",
+        "zh": "关于 Kernel PCA 嵌入的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Neural Computation",
+        "zh": "Neural Computation"
+      },
+      "sourceUrl": "https://doi.org/10.1162/089976698300017467",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Bernhard Scholkopf",
+        "type": "portrait-search",
+        "label": "Bernhard Scholkopf portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Bernhard%20Scholkopf%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Bernhard Scholkopf",
+        "type": "commons-portrait-search",
+        "label": "Bernhard Scholkopf Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Bernhard%20Scholkopf%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Klaus-Robert Muller",
+        "type": "portrait-search",
+        "label": "Klaus-Robert Muller portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Klaus-Robert%20Muller%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Klaus-Robert Muller",
+        "type": "commons-portrait-search",
+        "label": "Klaus-Robert Muller Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Klaus-Robert%20Muller%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Kernel PCA event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1997%20Kernel%20PCA%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Kernel PCA Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Kernel%20PCA%201997&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Kernel PCA Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Kernel%20PCA%201997",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Kernel PCA publication search",
+        "url": "https://www.google.com/search?q=1997%20Kernel%20PCA%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Kernel PCA scholar search",
+        "url": "https://scholar.google.com/scholar?q=1997%20Kernel%20PCA%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

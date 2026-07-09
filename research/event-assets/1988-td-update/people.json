@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Richard Sutton",
+        "zh": "理查德·萨顿"
+      },
+      "role": {
+        "en": "Author of temporal-difference learning",
+        "zh": "时序差分学习提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+          "sourceUrl": "http://incompleteideas.net/",
+          "license": {
+            "en": "Personal website image; reuse rights not stated.",
+            "zh": "Personal website image; reuse rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

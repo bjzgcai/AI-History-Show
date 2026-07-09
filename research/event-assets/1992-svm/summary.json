@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:46:12.494Z",
+  "eventKey": "1992-svm",
+  "year": "1992",
+  "title": {
+    "en": "Support Vector Machines",
+    "zh": "支持向量机"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Laboratories",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "Murray Hill, United States",
+      "zh": "美国默里山"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4018
+    ]
+  },
+  "description": {
+    "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>",
+    "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Isabelle Guyon portrait",
+        "zh": "伊莎贝尔·居永 肖像"
+      },
+      "subcaption": {
+        "en": "University Paris-Saclay article image about Guyon and support vector machines.",
+        "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。"
+      },
+      "sourceName": {
+        "en": "Université Paris-Saclay",
+        "zh": "巴黎-萨克雷大学"
+      },
+      "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+      "license": {
+        "en": "University news image; rights not stated.",
+        "zh": "University news image; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / SVM co-inventor portrait",
+        "zh": "历史人物 / SVM 共同发明者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Maximum-margin classifier",
+        "zh": "最大间隔分类器"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+        "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "ACM COLT",
+        "zh": "ACM COLT"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Kernel feature lift",
+        "zh": "核函数特征提升"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+        "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "ACM COLT",
+        "zh": "ACM COLT"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Vladimir Vapnik",
+        "type": "portrait-search",
+        "label": "Vladimir Vapnik portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Vladimir%20Vapnik%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Vladimir Vapnik",
+        "type": "commons-portrait-search",
+        "label": "Vladimir Vapnik Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Vladimir%20Vapnik%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Bernhard Boser",
+        "type": "portrait-search",
+        "label": "Bernhard Boser portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Bernhard%20Boser%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Bernhard Boser",
+        "type": "commons-portrait-search",
+        "label": "Bernhard Boser Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Bernhard%20Boser%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Isabelle Guyon",
+        "type": "portrait-search",
+        "label": "Isabelle Guyon portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Isabelle%20Guyon%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Isabelle Guyon",
+        "type": "commons-portrait-search",
+        "label": "Isabelle Guyon Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Isabelle%20Guyon%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Support Vector Machines event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1992%20Support%20Vector%20Machines%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Support Vector Machines Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Support%20Vector%20Machines%201992&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Support Vector Machines Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Support%20Vector%20Machines%201992",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Support Vector Machines publication search",
+        "url": "https://www.google.com/search?q=1992%20Support%20Vector%20Machines%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Support Vector Machines scholar search",
+        "url": "https://scholar.google.com/scholar?q=1992%20Support%20Vector%20Machines%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

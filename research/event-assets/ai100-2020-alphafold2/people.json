@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "John Jumper",
+        "zh": "约翰·江珀"
+      },
+      "role": {
+        "en": "AlphaFold2 lead researcher",
+        "zh": "AlphaFold2 主要研究者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+          "sourceUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+          "license": {
+            "en": "Vanderbilt University image; reuse rights not stated.",
+            "zh": "范德堡大学图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "德米斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder and AlphaFold leader",
+        "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+          "sourceUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+          "license": {
+            "en": "Vanderbilt University image; reuse rights not stated.",
+            "zh": "范德堡大学图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

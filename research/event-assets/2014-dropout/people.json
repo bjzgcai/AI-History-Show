@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Nitish Srivastava",
+        "zh": "尼蒂什·斯里瓦斯塔瓦"
+      },
+      "role": {
+        "en": "First author of the JMLR dropout paper",
+        "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+          "sourceUrl": "https://www.cs.utoronto.ca/~nitish/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author and deep learning pioneer",
+        "zh": "共同作者，深度学习先驱"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+          "sourceUrl": "https://www.cs.utoronto.ca/~nitish/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

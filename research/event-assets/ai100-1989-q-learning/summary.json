@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:44.657Z",
+  "eventKey": "ai100-1989-q-learning",
+  "year": 1989,
+  "title": {
+    "en": "Q-Learning",
+    "zh": "Q-Learning"
+  },
+  "location": {
+    "name": {
+      "en": "King's College Cambridge",
+      "zh": "King's College Cambridge"
+    },
+    "country": {
+      "en": "Cambridge, United Kingdom",
+      "zh": "Cambridge, United Kingdom"
+    },
+    "coordinates": [
+      52.2043,
+      0.1166
+    ]
+  },
+  "description": {
+    "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>",
+    "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+      "existsLocally": false,
+      "caption": {
+        "en": "Christopher Watkins portrait",
+        "zh": "克里斯托弗·沃特金斯肖像"
+      },
+      "subcaption": {
+        "en": "Q-learning lead author",
+        "zh": "Q-learning 主要作者"
+      },
+      "sourceName": {
+        "en": "Google Scholar profile",
+        "zh": "Google Scholar 个人资料"
+      },
+      "sourceUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Q-Learning explainer",
+        "zh": "Q-Learning 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Royal Holloway",
+        "zh": "伦敦大学皇家霍洛威学院"
+      },
+      "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Christopher Watkins",
+        "type": "portrait-search",
+        "label": "Christopher Watkins portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Christopher%20Watkins%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Christopher Watkins",
+        "type": "commons-portrait-search",
+        "label": "Christopher Watkins Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Watkins%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Q-Learning event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1989%20Q-Learning%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Q-Learning Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Q-Learning%201989&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Q-Learning Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Q-Learning%201989",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Q-Learning publication search",
+        "url": "https://www.google.com/search?q=1989%20Q-Learning%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Q-Learning scholar search",
+        "url": "https://scholar.google.com/scholar?q=1989%20Q-Learning%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

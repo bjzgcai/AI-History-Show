@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:27.644Z",
+  "eventKey": "ai100-2005-gnn",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "The Graph Neural Network Model",
+      "url": "https://doi.org/10.1109/TNN.2008.2005605",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "A new model for learning in graph domains",
+      "url": "https://ieeexplore.ieee.org/document/4700287",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Graph neural network overview",
+      "url": "https://en.wikipedia.org/wiki/Graph_neural_network",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Google Scholar profile",
+      "url": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Franco Scarselli Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Franco%20Scarselli%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Graph Neural Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Graph%20Neural%20Network%202005&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Graph Neural Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Graph%20Neural%20Network%202005",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2005%20Graph%20Neural%20Network%20Franco%20Scarselli%20AI%20history%20source%20images",
+      "query": "2005 Graph Neural Network Franco Scarselli AI history source images",
+      "eventKey": "ai100-2005-gnn"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2005%20Graph%20Neural%20Network%20Franco%20Scarselli%20AI%20history%20source%20images",
+      "query": "2005 Graph Neural Network Franco Scarselli AI history source images",
+      "eventKey": "ai100-2005-gnn"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2005%20Graph%20Neural%20Network%20Franco%20Scarselli%20AI%20history%20source%20images",
+      "query": "2005 Graph Neural Network Franco Scarselli AI history source images",
+      "eventKey": "ai100-2005-gnn"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Franco Scarselli portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Franco%20Scarselli%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Franco Scarselli Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Franco%20Scarselli%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Franco Scarselli official biography search",
+      "url": "https://www.google.com/search?q=Franco%20Scarselli%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Graph Neural Network event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2005%20Graph%20Neural%20Network%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Graph Neural Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Graph%20Neural%20Network%202005&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Graph Neural Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Graph%20Neural%20Network%202005",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Graph Neural Network publication search",
+      "url": "https://www.google.com/search?q=2005%20Graph%20Neural%20Network%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Graph Neural Network scholar search",
+      "url": "https://scholar.google.com/scholar?q=2005%20Graph%20Neural%20Network%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "The Graph Neural Network Model",
+      "sourceUrl": "https://doi.org/10.1109/TNN.2008.2005605",
+      "finalUrl": "https://ieeexplore.ieee.org/document/4700287/",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/001.the-graph-neural-network-model.html",
+      "fetchedAt": "2026-07-03T12:07:28.678Z"
+    },
+    {
+      "label": "A new model for learning in graph domains",
+      "sourceUrl": "https://ieeexplore.ieee.org/document/4700287",
+      "finalUrl": "https://ieeexplore.ieee.org/document/4700287",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/002.a-new-model-for-learning-in-graph-domains.html",
+      "fetchedAt": "2026-07-03T12:07:29.051Z"
+    },
+    {
+      "label": "Graph neural network overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Graph_neural_network",
+      "finalUrl": "https://en.wikipedia.org/wiki/Graph_neural_network",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Graph neural network - Wikipedia",
+      "savedPath": "pages/003.graph-neural-network-overview.html",
+      "fetchedAt": "2026-07-03T12:07:29.603Z"
+    },
+    {
+      "label": "Google Scholar profile",
+      "sourceUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+      "finalUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "title": "Franco Scarselli - Google Scholar",
+      "savedPath": "pages/004.google-scholar-profile.html",
+      "fetchedAt": "2026-07-03T12:07:30.366Z"
+    },
+    {
+      "label": "Franco Scarselli Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Franco%20Scarselli%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Franco%20Scarselli%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.franco-scarselli-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:31.715Z"
+    },
+    {
+      "label": "Graph Neural Network Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Graph%20Neural%20Network%202005&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Graph%20Neural%20Network%202005&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.graph-neural-network-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:07:33.639Z"
+    },
+    {
+      "label": "Graph Neural Network Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Graph%20Neural%20Network%202005",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Graph%20Neural%20Network%202005",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.graph-neural-network-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:34.256Z"
+    }
+  ]
+}

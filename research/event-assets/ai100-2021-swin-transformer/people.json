@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Ze Liu",
+        "zh": "刘泽"
+      },
+      "role": {
+        "en": "Swin Transformer lead author",
+        "zh": "Swin Transformer 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://zeliu98.github.io/images/zeliu.jpg",
+          "sourceUrl": "https://zeliu98.github.io/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

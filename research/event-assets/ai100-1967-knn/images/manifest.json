@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:04.605Z",
+  "eventKey": "ai100-1967-knn",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1967-knn",
+      "label": "Co-author of nearest-neighbor classification",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+      "imageUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+      "finalImageUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+      "localPath": "images/001.co-author-of-nearest-neighbor-classification.jpg",
+      "pageSnapshot": "",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 7884,
+      "status": "downloaded-http-error",
+      "httpStatus": 403,
+      "usage": "Achievement visual material",
+      "rights": "Stanford Report image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:57:04.300Z"
+    },
+    {
+      "eventKey": "ai100-1967-knn",
+      "label": "Original local explainer of nearest-neighbor voting.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-nearest-neighbor-voting.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1706,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:57:04.605Z"
+    }
+  ]
+}

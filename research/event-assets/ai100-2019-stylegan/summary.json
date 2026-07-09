@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:56.344Z",
+  "eventKey": "ai100-2019-stylegan",
+  "year": 2019,
+  "title": {
+    "en": "StyleGAN",
+    "zh": "StyleGAN"
+  },
+  "location": {
+    "name": {
+      "en": "NVIDIA",
+      "zh": "NVIDIA"
+    },
+    "country": {
+      "en": "Santa Clara, United States",
+      "zh": "Santa Clara, United States"
+    },
+    "coordinates": [
+      37.3541,
+      -121.9552
+    ]
+  },
+  "description": {
+    "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>",
+    "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+      "existsLocally": false,
+      "caption": {
+        "en": "Tero Karras portrait",
+        "zh": "泰罗·卡拉斯肖像"
+      },
+      "subcaption": {
+        "en": "StyleGAN lead author",
+        "zh": "StyleGAN 主要作者"
+      },
+      "sourceName": {
+        "en": "NVIDIA Research profile",
+        "zh": "NVIDIA Research 个人资料"
+      },
+      "sourceUrl": "https://research.nvidia.com/person/tero-karras",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "StyleGAN explainer",
+        "zh": "StyleGAN 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "CVF Open Access",
+        "zh": "CVF 开放论文库"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1812.04948",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Tero Karras",
+        "type": "portrait-search",
+        "label": "Tero Karras portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Tero%20Karras%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Tero Karras",
+        "type": "commons-portrait-search",
+        "label": "Tero Karras Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Tero%20Karras%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "StyleGAN event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2019%20StyleGAN%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "StyleGAN Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=StyleGAN%202019&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "StyleGAN Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=StyleGAN%202019",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "StyleGAN publication search",
+        "url": "https://www.google.com/search?q=2019%20StyleGAN%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "StyleGAN scholar search",
+        "url": "https://scholar.google.com/scholar?q=2019%20StyleGAN%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

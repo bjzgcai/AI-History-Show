@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Andrew Barto",
+        "zh": "安德鲁·巴托"
+      },
+      "role": {
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+          "sourceUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

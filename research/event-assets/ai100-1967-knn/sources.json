@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:56:51.593Z",
+  "eventKey": "ai100-1967-knn",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Nearest Neighbor Pattern Classification",
+      "url": "https://doi.org/10.1109/TIT.1967.1053964",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "Stanford-hosted paper PDF",
+      "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "k-nearest neighbors algorithm overview",
+      "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+      "usage": ""
+    },
+    {
+      "type": "Documentation",
+      "label": "scikit-learn nearest neighbors documentation",
+      "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Stanford Report",
+      "url": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Thomas Cover Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Cover%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Peter Hart Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Peter%20Hart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "KNN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=KNN%201967&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "KNN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=KNN%201967",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1967%20KNN%20Thomas%20Cover%20Peter%20Hart%20AI%20history%20source%20images",
+      "query": "1967 KNN Thomas Cover Peter Hart AI history source images",
+      "eventKey": "ai100-1967-knn"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1967%20KNN%20Thomas%20Cover%20Peter%20Hart%20AI%20history%20source%20images",
+      "query": "1967 KNN Thomas Cover Peter Hart AI history source images",
+      "eventKey": "ai100-1967-knn"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1967%20KNN%20Thomas%20Cover%20Peter%20Hart%20AI%20history%20source%20images",
+      "query": "1967 KNN Thomas Cover Peter Hart AI history source images",
+      "eventKey": "ai100-1967-knn"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Thomas Cover portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Cover%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Thomas Cover Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Cover%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Thomas Cover official biography search",
+      "url": "https://www.google.com/search?q=Thomas%20Cover%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Peter Hart portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Peter%20Hart%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Peter Hart Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Peter%20Hart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Peter Hart official biography search",
+      "url": "https://www.google.com/search?q=Peter%20Hart%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "KNN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1967%20KNN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "KNN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=KNN%201967&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "KNN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=KNN%201967",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "KNN publication search",
+      "url": "https://www.google.com/search?q=1967%20KNN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "KNN scholar search",
+      "url": "https://scholar.google.com/scholar?q=1967%20KNN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Nearest Neighbor Pattern Classification",
+      "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+      "finalUrl": "https://ieeexplore.ieee.org/document/1053964/",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/001.nearest-neighbor-pattern-classification.html",
+      "fetchedAt": "2026-07-03T11:56:52.476Z"
+    },
+    {
+      "label": "Stanford-hosted paper PDF",
+      "sourceUrl": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+      "finalUrl": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.stanford-hosted-paper-pdf.html",
+      "fetchedAt": "2026-07-03T11:56:54.300Z"
+    },
+    {
+      "label": "k-nearest neighbors algorithm overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:56:54.998Z"
+    },
+    {
+      "label": "scikit-learn nearest neighbors documentation",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/neighbors.html",
+      "finalUrl": "https://scikit-learn.org/stable/modules/neighbors.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "1.6. Nearest Neighbors &#8212; scikit-learn 1.9.0 documentation",
+      "savedPath": "pages/004.scikit-learn-nearest-neighbors-documentation.html",
+      "fetchedAt": "2026-07-03T11:56:55.711Z"
+    },
+    {
+      "label": "Stanford Report",
+      "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+      "finalUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/005.stanford-report.html",
+      "fetchedAt": "2026-07-03T11:56:58.565Z"
+    },
+    {
+      "label": "Thomas Cover Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Cover%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Cover%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.thomas-cover-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:00.043Z"
+    },
+    {
+      "label": "Peter Hart Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Peter%20Hart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Peter%20Hart%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.peter-hart-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:01.635Z"
+    },
+    {
+      "label": "KNN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=KNN%201967&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=KNN%201967&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.knn-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:57:02.898Z"
+    },
+    {
+      "label": "KNN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=KNN%201967",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=KNN%201967",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.knn-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:03.678Z"
+    }
+  ]
+}

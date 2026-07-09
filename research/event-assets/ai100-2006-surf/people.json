@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Herbert Bay",
+        "zh": "赫伯特·贝"
+      },
+      "role": {
+        "en": "Lead author of SURF",
+        "zh": "SURF 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+          "sourceUrl": "https://herbertbay.com/",
+          "license": {
+            "en": "Personal site image; reuse rights not stated.",
+            "zh": "个人网站图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Tinne Tuytelaars",
+        "zh": "蒂娜·图伊特拉尔斯"
+      },
+      "role": {
+        "en": "Co-author of SURF",
+        "zh": "Co-author of SURF"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+          "sourceUrl": "https://herbertbay.com/",
+          "license": {
+            "en": "Personal site image; reuse rights not stated.",
+            "zh": "个人网站图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

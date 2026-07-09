@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "David Blei",
+        "zh": "戴维·布莱"
+      },
+      "role": {
+        "en": "First author of LDA",
+        "zh": "LDA 第一作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
+          "sourceUrl": "https://www.cs.columbia.edu/~blei/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Michael Jordan",
+        "zh": "迈克尔·乔丹"
+      },
+      "role": {
+        "en": "Co-author and probabilistic ML researcher",
+        "zh": "共同作者，概率机器学习研究者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
+          "sourceUrl": "https://www.cs.columbia.edu/~blei/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

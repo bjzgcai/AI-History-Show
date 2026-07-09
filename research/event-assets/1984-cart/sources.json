@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:02:34.991Z",
+  "eventKey": "1984-cart",
+  "sources": [
+    {
+      "type": "Book",
+      "label": "Classification and Regression Trees",
+      "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "usage": ""
+    },
+    {
+      "type": "Model docs",
+      "label": "scikit-learn DecisionTreeClassifier",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+      "usage": ""
+    },
+    {
+      "type": "Package",
+      "label": "R rpart package",
+      "url": "https://cran.r-project.org/web/packages/rpart/index.html",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "University of York / Portraits of Statisticians",
+      "url": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+      "usage": "Historical figure / CART co-author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Leo Breiman Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Leo%20Breiman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jerome Friedman Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jerome%20Friedman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Richard Olshen Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Richard%20Olshen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Charles Stone Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Charles%20Stone%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "CART Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CART%201984&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CART Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CART%201984",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1984%20CART%20Leo%20Breiman%20Jerome%20Friedman%20Richard%20Olshen%20Charles%20Stone%20AI%20history%20source%20images",
+      "query": "1984 CART Leo Breiman Jerome Friedman Richard Olshen Charles Stone AI history source images",
+      "eventKey": "1984-cart"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1984%20CART%20Leo%20Breiman%20Jerome%20Friedman%20Richard%20Olshen%20Charles%20Stone%20AI%20history%20source%20images",
+      "query": "1984 CART Leo Breiman Jerome Friedman Richard Olshen Charles Stone AI history source images",
+      "eventKey": "1984-cart"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1984%20CART%20Leo%20Breiman%20Jerome%20Friedman%20Richard%20Olshen%20Charles%20Stone%20AI%20history%20source%20images",
+      "query": "1984 CART Leo Breiman Jerome Friedman Richard Olshen Charles Stone AI history source images",
+      "eventKey": "1984-cart"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Leo Breiman portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Leo%20Breiman%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Leo Breiman Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Leo%20Breiman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Leo Breiman official biography search",
+      "url": "https://www.google.com/search?q=Leo%20Breiman%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jerome Friedman portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jerome%20Friedman%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jerome Friedman Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jerome%20Friedman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jerome Friedman official biography search",
+      "url": "https://www.google.com/search?q=Jerome%20Friedman%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Richard Olshen portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Richard%20Olshen%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Richard Olshen Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Richard%20Olshen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Richard Olshen official biography search",
+      "url": "https://www.google.com/search?q=Richard%20Olshen%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Charles Stone portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Charles%20Stone%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Charles Stone Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Charles%20Stone%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Charles Stone official biography search",
+      "url": "https://www.google.com/search?q=Charles%20Stone%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "CART event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1984%20CART%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "CART Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CART%201984&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CART Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CART%201984",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "CART publication search",
+      "url": "https://www.google.com/search?q=1984%20CART%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "CART scholar search",
+      "url": "https://scholar.google.com/scholar?q=1984%20CART%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Classification and Regression Trees",
+      "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:02:45.815Z"
+    },
+    {
+      "label": "scikit-learn DecisionTreeClassifier",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+      "finalUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "DecisionTreeClassifier &#8212; scikit-learn 1.9.0 documentation",
+      "savedPath": "pages/002.scikit-learn-decisiontreeclassifier.html",
+      "fetchedAt": "2026-07-03T11:02:47.838Z"
+    },
+    {
+      "label": "R rpart package",
+      "sourceUrl": "https://cran.r-project.org/web/packages/rpart/index.html",
+      "finalUrl": "https://cran.r-project.org/web/packages/rpart/index.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "CRAN: Package rpart",
+      "savedPath": "pages/003.r-rpart-package.html",
+      "fetchedAt": "2026-07-03T11:02:50.059Z"
+    },
+    {
+      "label": "University of York / Portraits of Statisticians",
+      "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+      "finalUrl": "https://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Portraits of Statisticians",
+      "savedPath": "pages/004.university-of-york-portraits-of-statisticians.html",
+      "fetchedAt": "2026-07-03T11:02:54.341Z"
+    },
+    {
+      "label": "Leo Breiman Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Leo%20Breiman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Leo%20Breiman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.leo-breiman-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:02:57.040Z"
+    },
+    {
+      "label": "Jerome Friedman Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jerome%20Friedman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jerome%20Friedman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.jerome-friedman-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:02:58.774Z"
+    },
+    {
+      "label": "Richard Olshen Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Richard%20Olshen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Richard%20Olshen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.richard-olshen-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:00.300Z"
+    },
+    {
+      "label": "Charles Stone Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Charles%20Stone%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Charles%20Stone%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.charles-stone-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:02.247Z"
+    },
+    {
+      "label": "CART Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=CART%201984&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=CART%201984&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/009.cart-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:03:05.332Z"
+    },
+    {
+      "label": "CART Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=CART%201984",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=CART%201984",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/010.cart-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:05.868Z"
+    }
+  ]
+}

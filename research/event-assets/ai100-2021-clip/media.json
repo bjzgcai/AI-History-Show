@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:33.585Z",
+  "eventKey": "ai100-2021-clip",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Alec Radford",
+      "role": "Lead author of CLIP",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Alec Radford portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Alec%20Radford%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Alec Radford Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Alec Radford official biography search",
+          "url": "https://www.google.com/search?q=Alec%20Radford%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "CLIP event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20CLIP%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "CLIP Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CLIP%202021&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CLIP Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CLIP%202021",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "CLIP publication search",
+      "url": "https://www.google.com/search?q=2021%20CLIP%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "CLIP scholar search",
+      "url": "https://scholar.google.com/scholar?q=2021%20CLIP%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/figures/alec-radford.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Alec Radford portrait",
+        "zh": "亚历克·拉德福德肖像"
+      },
+      "subcaption": {
+        "en": "CLIP lead author",
+        "zh": "CLIP 主要作者"
+      },
+      "sourceUrl": "resources/images/figures/alec-radford.png",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "CLIP contrastive pairs",
+        "zh": "CLIP 对比图文对"
+      },
+      "subcaption": {
+        "en": "Original local explainer of image-text contrastive learning.",
+        "zh": "关于图文对比学习的本地原创解释图。"
+      },
+      "sourceUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+      "sourceLabel": "ICML CLIP paper page",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/figures/alec-radford.png",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Learning Transferable Visual Models From Natural Language Supervision",
+        "url": "https://arxiv.org/abs/2103.00020",
+        "usage": ""
+      },
+      {
+        "type": "Conference paper",
+        "label": "ICML CLIP paper page",
+        "url": "https://proceedings.mlr.press/v139/radford21a.html",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "OpenAI CLIP blog post",
+        "url": "https://openai.com/index/clip/",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

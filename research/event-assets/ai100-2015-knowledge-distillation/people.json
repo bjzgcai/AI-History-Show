@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Knowledge distillation co-author",
+        "zh": "知识蒸馏共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/geoffrey-hinton.jpg",
+          "sourceUrl": "resources/images/figures/geoffrey-hinton.jpg",
+          "license": {
+            "en": "Local project image; reuse rights inherited from existing project asset metadata.",
+            "zh": "本地项目图片；复用权利沿用现有项目素材元数据。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

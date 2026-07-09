@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:47.085Z",
+  "eventKey": "1958-rosenblatt-perceptron",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+      "url": "https://doi.org/10.1037/h0042519",
+      "usage": ""
+    },
+    {
+      "type": "History",
+      "label": "Cornell Chronicle perceptron retrospective",
+      "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+      "usage": ""
+    },
+    {
+      "type": "Museum",
+      "label": "Smithsonian Mark I Perceptron object record",
+      "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Frank Rosenblatt Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Rosenblatt Perceptron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Rosenblatt%20Perceptron%201958&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Rosenblatt Perceptron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Rosenblatt%20Perceptron%201958",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1958%20Rosenblatt%20Perceptron%20Frank%20Rosenblatt%20AI%20history%20source%20images",
+      "query": "1958 Rosenblatt Perceptron Frank Rosenblatt AI history source images",
+      "eventKey": "1958-rosenblatt-perceptron"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1958%20Rosenblatt%20Perceptron%20Frank%20Rosenblatt%20AI%20history%20source%20images",
+      "query": "1958 Rosenblatt Perceptron Frank Rosenblatt AI history source images",
+      "eventKey": "1958-rosenblatt-perceptron"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1958%20Rosenblatt%20Perceptron%20Frank%20Rosenblatt%20AI%20history%20source%20images",
+      "query": "1958 Rosenblatt Perceptron Frank Rosenblatt AI history source images",
+      "eventKey": "1958-rosenblatt-perceptron"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Frank Rosenblatt portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Frank Rosenblatt Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Frank Rosenblatt official biography search",
+      "url": "https://www.google.com/search?q=Frank%20Rosenblatt%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Rosenblatt Perceptron event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1958%20Rosenblatt%20Perceptron%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Rosenblatt Perceptron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Rosenblatt%20Perceptron%201958&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Rosenblatt Perceptron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Rosenblatt%20Perceptron%201958",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Rosenblatt Perceptron publication search",
+      "url": "https://www.google.com/search?q=1958%20Rosenblatt%20Perceptron%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Rosenblatt Perceptron scholar search",
+      "url": "https://scholar.google.com/scholar?q=1958%20Rosenblatt%20Perceptron%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+      "sourceUrl": "https://doi.org/10.1037/h0042519",
+      "finalUrl": "https://psycnet.apa.org/doiLanding?doi=10.1037/h0042519",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "APA PsycNet",
+      "savedPath": "pages/001.the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in-the-brain.html",
+      "fetchedAt": "2026-07-03T11:50:51.736Z"
+    },
+    {
+      "label": "Cornell Chronicle perceptron retrospective",
+      "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+      "finalUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Professor’s perceptron paved the way for AI – 60 years too soon | Cornell Chronicle",
+      "savedPath": "pages/002.cornell-chronicle-perceptron-retrospective.html",
+      "fetchedAt": "2026-07-03T11:50:52.669Z"
+    },
+    {
+      "label": "Smithsonian Mark I Perceptron object record",
+      "sourceUrl": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+      "finalUrl": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Smithsonian request verification",
+      "savedPath": "pages/003.smithsonian-mark-i-perceptron-object-record.html",
+      "fetchedAt": "2026-07-03T11:50:53.918Z"
+    },
+    {
+      "label": "Frank Rosenblatt Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T11:52:58.866Z"
+    },
+    {
+      "label": "Rosenblatt Perceptron Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Rosenblatt%20Perceptron%201958&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:52:59.323Z"
+    },
+    {
+      "label": "Rosenblatt Perceptron Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Rosenblatt%20Perceptron%201958",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Rosenblatt%20Perceptron%201958",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.rosenblatt-perceptron-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:52:59.928Z"
+    }
+  ]
+}

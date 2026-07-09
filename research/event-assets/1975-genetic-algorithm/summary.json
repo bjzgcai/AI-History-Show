@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:38:23.849Z",
+  "eventKey": "1975-genetic-algorithm",
+  "year": "1975",
+  "title": {
+    "en": "Genetic Algorithms",
+    "zh": "遗传算法"
+  },
+  "location": {
+    "name": {
+      "en": "University of Michigan",
+      "zh": "密歇根大学"
+    },
+    "country": {
+      "en": "Ann Arbor, United States",
+      "zh": "美国安娜堡"
+    },
+    "coordinates": [
+      42.278,
+      -83.7382
+    ]
+  },
+  "description": {
+    "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>",
+    "zh": "<p>John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "John Henry Holland portrait",
+        "zh": "John Henry 霍兰德 肖像"
+      },
+      "subcaption": {
+        "en": "Physics Today history article photo, credited there to Santa Fe Institute.",
+        "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。"
+      },
+      "sourceName": {
+        "en": "Physics Today",
+        "zh": "Physics Today"
+      },
+      "sourceUrl": "https://physicstoday.aip.org/news/john-henry-holland",
+      "license": {
+        "en": "Physics Today article photo; photo credit: Santa Fe Institute.",
+        "zh": "Physics Today article photo; photo credit: Santa Fe Institute."
+      },
+      "usage": {
+        "en": "Historical figure / Genetic algorithms pioneer",
+        "zh": "历史人物 / 遗传算法先驱"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Population adaptation loop",
+        "zh": "种群适应循环"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+        "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "MIT Press",
+        "zh": "麻省理工学院 Press"
+      },
+      "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Chromosome crossover",
+        "zh": "染色体交叉"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+        "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "MIT Press",
+        "zh": "麻省理工学院 Press"
+      },
+      "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "John H. Holland",
+        "type": "portrait-search",
+        "label": "John H. Holland portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=John%20H.%20Holland%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "John H. Holland",
+        "type": "commons-portrait-search",
+        "label": "John H. Holland Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=John%20H.%20Holland%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Genetic Algorithms event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1975%20Genetic%20Algorithms%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Genetic Algorithms Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Genetic%20Algorithms%201975&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Genetic Algorithms Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Genetic%20Algorithms%201975",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Genetic Algorithms publication search",
+        "url": "https://www.google.com/search?q=1975%20Genetic%20Algorithms%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Genetic Algorithms scholar search",
+        "url": "https://scholar.google.com/scholar?q=1975%20Genetic%20Algorithms%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

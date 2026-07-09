@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:52.679Z",
+  "eventKey": "2014-gan",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2014-gan",
+      "label": "GANs: Generative Adversarial Networks",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/2014-gan/architecture/2014-gan_architecture_01.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.gans-generative-adversarial-networks.png",
+      "originalLocalPath": "resources/images/2014-gan/architecture/2014-gan_architecture_01.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 429961,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Architecture",
+      "rights": "Unverified. Existing event asset still needs source/license review.",
+      "downloadedAt": "2026-07-03T10:30:52.679Z"
+    }
+  ]
+}

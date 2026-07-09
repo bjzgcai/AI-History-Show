@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Alexey Dosovitskiy",
+        "zh": "阿列克谢·多索维茨基"
+      },
+      "role": {
+        "en": "Lead author of Vision Transformer",
+        "zh": "视觉 Transformer 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+          "sourceUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+          "license": {
+            "en": "EML Munich profile image; reuse rights not stated.",
+            "zh": "EML Munich 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Google Research",
+        "zh": "Google 研究院"
+      },
+      "role": {
+        "en": "Research organization",
+        "zh": "研究机构"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+          "sourceUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+          "license": {
+            "en": "EML Munich profile image; reuse rights not stated.",
+            "zh": "EML Munich 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

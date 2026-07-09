@@ -1,0 +1,104 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "ResNet first author",
+        "zh": "ResNet第一作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Xiangyu Zhang",
+        "zh": "张祥雨"
+      },
+      "role": {
+        "en": "ResNet co-author",
+        "zh": "ResNet共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "role": {
+        "en": "ResNet co-author",
+        "zh": "ResNet共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "ResNet senior author",
+        "zh": "ResNet通讯作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Alex Krizhevsky",
+        "zh": "亚历克斯·克里热夫斯基"
+      },
+      "role": {
+        "en": "AlexNet author",
+        "zh": "AlexNet作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Advisor",
+        "zh": "导师"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

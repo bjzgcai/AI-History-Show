@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:05.336Z",
+  "eventKey": "2016-alphago",
+  "year": 2016,
+  "title": {
+    "en": "AlphaGo",
+    "zh": "AlphaGo"
+  },
+  "location": {
+    "name": {
+      "en": "Google DeepMind",
+      "zh": "谷歌 DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国，伦敦"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  },
+  "description": {
+    "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
+    "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Lee Sedol portrait",
+        "zh": "李世石肖像"
+      },
+      "subcaption": {
+        "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
+        "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Policy-value-search explainer",
+        "zh": "策略-价值-搜索解释图"
+      },
+      "subcaption": {
+        "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
+        "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+      },
+      "sourceName": {
+        "en": "Nature / Google DeepMind",
+        "zh": "《自然》 / 谷歌 DeepMind"
+      },
+      "sourceUrl": "https://www.nature.com/articles/nature16961",
+      "license": {
+        "en": "Original local explainer; publisher figure reuse rights not used.",
+        "zh": "Original local explainer; publisher figure reuse rights not used."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "David Silver",
+        "type": "portrait-search",
+        "label": "David Silver portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=David%20Silver%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "David Silver",
+        "type": "commons-portrait-search",
+        "label": "David Silver Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Demis Hassabis",
+        "type": "portrait-search",
+        "label": "Demis Hassabis portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Demis%20Hassabis%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Demis Hassabis",
+        "type": "commons-portrait-search",
+        "label": "Demis Hassabis Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Aja Huang",
+        "type": "portrait-search",
+        "label": "Aja Huang portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Aja%20Huang%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Aja Huang",
+        "type": "commons-portrait-search",
+        "label": "Aja Huang Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Aja%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "AlphaGo event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2016%20AlphaGo%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "AlphaGo Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=AlphaGo%202016&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "AlphaGo Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=AlphaGo%202016",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "AlphaGo publication search",
+        "url": "https://www.google.com/search?q=2016%20AlphaGo%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "AlphaGo scholar search",
+        "url": "https://scholar.google.com/scholar?q=2016%20AlphaGo%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

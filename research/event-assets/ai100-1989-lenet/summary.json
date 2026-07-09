@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:02.784Z",
+  "eventKey": "ai100-1989-lenet",
+  "year": 1989,
+  "title": {
+    "en": "LeNet",
+    "zh": "LeNet"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "New Jersey, United States",
+      "zh": "美国新泽西州"
+    },
+    "coordinates": [
+      40.684,
+      -74.401
+    ]
+  },
+  "description": {
+    "en": "<p>Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.</p>",
+    "zh": "<p>扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Yann LeCun portrait",
+        "zh": "扬·勒昆肖像"
+      },
+      "subcaption": {
+        "en": "LeNet lead researcher",
+        "zh": "LeNet 主要研究者"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "ZIP-code CNN pipeline",
+        "zh": "邮编 CNN 流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer of LeNet-style recognition.",
+        "zh": "关于 LeNet 式识别的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Neural Computation",
+        "zh": "Neural Computation"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Yann LeCun",
+        "type": "portrait-search",
+        "label": "Yann LeCun portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Yann%20LeCun%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Yann LeCun",
+        "type": "commons-portrait-search",
+        "label": "Yann LeCun Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Yann%20LeCun%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "LeNet event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1989%20LeNet%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "LeNet Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=LeNet%201989&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "LeNet Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=LeNet%201989",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "LeNet publication search",
+        "url": "https://www.google.com/search?q=1989%20LeNet%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "LeNet scholar search",
+        "url": "https://scholar.google.com/scholar?q=1989%20LeNet%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

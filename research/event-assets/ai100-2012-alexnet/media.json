@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:24.286Z",
+  "eventKey": "ai100-2012-alexnet",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Alex Krizhevsky",
+      "role": "AlexNet lead author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Alex Krizhevsky portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Alex%20Krizhevsky%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Alex Krizhevsky Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Alex Krizhevsky official biography search",
+          "url": "https://www.google.com/search?q=Alex%20Krizhevsky%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Geoffrey Hinton",
+      "role": "Co-author and advisor",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Geoffrey Hinton portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Geoffrey Hinton Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Geoffrey Hinton official biography search",
+          "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "AlexNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2012%20AlexNet%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlexNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlexNet%202012&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlexNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlexNet%202012",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "AlexNet publication search",
+      "url": "https://www.google.com/search?q=2012%20AlexNet%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AlexNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2012%20AlexNet%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/figures/alex-krizhevsky.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Alex Krizhevsky portrait",
+        "zh": "亚历克斯·克里泽夫斯基肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of AlexNet.",
+        "zh": "AlexNet 主要作者。"
+      },
+      "sourceUrl": "resources/images/figures/alex-krizhevsky.jpg",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "AlexNet architecture",
+        "zh": "AlexNet 架构"
+      },
+      "subcaption": {
+        "en": "Architecture visual used by the project.",
+        "zh": "项目使用的架构图。"
+      },
+      "sourceUrl": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/figures/alex-krizhevsky.jpg",
+        "usage": "Achievement visual material"
+      },
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+        "usage": ""
+      },
+      {
+        "type": "Paper PDF",
+        "label": "NeurIPS full paper PDF",
+        "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

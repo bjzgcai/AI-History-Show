@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:03.850Z",
+  "eventKey": "ai100-2015-ddpg",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Continuous Control with Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1509.02971",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICLR OpenReview record",
+      "url": "https://openreview.net/forum?id=Rx4nmj8j6G",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Deep deterministic policy gradient overview",
+      "url": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Stanford Wu Tsai Neurosciences Institute event page",
+      "url": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Timothy Lillicrap Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Timothy%20Lillicrap%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "DDPG Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DDPG%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DDPG Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DDPG%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20DDPG%20Timothy%20Lillicrap%20AI%20history%20source%20images",
+      "query": "2015 DDPG Timothy Lillicrap AI history source images",
+      "eventKey": "ai100-2015-ddpg"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20DDPG%20Timothy%20Lillicrap%20AI%20history%20source%20images",
+      "query": "2015 DDPG Timothy Lillicrap AI history source images",
+      "eventKey": "ai100-2015-ddpg"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20DDPG%20Timothy%20Lillicrap%20AI%20history%20source%20images",
+      "query": "2015 DDPG Timothy Lillicrap AI history source images",
+      "eventKey": "ai100-2015-ddpg"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Timothy Lillicrap portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Timothy%20Lillicrap%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Timothy Lillicrap Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Timothy%20Lillicrap%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Timothy Lillicrap official biography search",
+      "url": "https://www.google.com/search?q=Timothy%20Lillicrap%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "DDPG event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20DDPG%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "DDPG Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DDPG%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DDPG Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DDPG%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "DDPG publication search",
+      "url": "https://www.google.com/search?q=2015%20DDPG%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "DDPG scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20DDPG%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Continuous Control with Deep Reinforcement Learning",
+      "sourceUrl": "https://arxiv.org/abs/1509.02971",
+      "finalUrl": "https://arxiv.org/abs/1509.02971",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1509.02971] Continuous control with deep reinforcement learning",
+      "savedPath": "pages/001.continuous-control-with-deep-reinforcement-learning.html",
+      "fetchedAt": "2026-07-03T12:09:04.224Z"
+    },
+    {
+      "label": "ICLR OpenReview record",
+      "sourceUrl": "https://openreview.net/forum?id=Rx4nmj8j6G",
+      "finalUrl": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DRx4nmj8j6G",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Verifying your browser | OpenReview",
+      "savedPath": "pages/002.iclr-openreview-record.html",
+      "fetchedAt": "2026-07-03T12:09:04.987Z"
+    },
+    {
+      "label": "Deep deterministic policy gradient overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient",
+      "finalUrl": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Reinforcement learning - Wikipedia",
+      "savedPath": "pages/003.deep-deterministic-policy-gradient-overview.html",
+      "fetchedAt": "2026-07-03T12:09:06.596Z"
+    },
+    {
+      "label": "Stanford Wu Tsai Neurosciences Institute event page",
+      "sourceUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+      "finalUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "New models and algorithms for addressing limitations in deep reinforcement learning - Timothy Lillicrap | Wu Tsai Neurosciences Institute",
+      "savedPath": "pages/004.stanford-wu-tsai-neurosciences-institute-event-page.html",
+      "fetchedAt": "2026-07-03T12:09:08.609Z"
+    },
+    {
+      "label": "Timothy Lillicrap Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Timothy%20Lillicrap%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Timothy%20Lillicrap%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.timothy-lillicrap-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:09:09.908Z"
+    },
+    {
+      "label": "DDPG Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=DDPG%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=DDPG%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.ddpg-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:09:11.363Z"
+    },
+    {
+      "label": "DDPG Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=DDPG%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=DDPG%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.ddpg-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:09:11.965Z"
+    }
+  ]
+}

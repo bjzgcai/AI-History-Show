@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:26.843Z",
+  "eventKey": "ai100-1982-som",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Self-organized formation of topologically correct feature maps",
+      "url": "https://doi.org/10.1007/BF00337288",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "Open SOM paper PDF",
+      "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Self-organizing map overview",
+      "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+      "usage": ""
+    },
+    {
+      "type": "Retrospective",
+      "label": "Essentials of the self-organizing map",
+      "url": "https://doi.org/10.1016/j.neunet.2012.09.018",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Teuvo Kohonen Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Teuvo%20Kohonen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Self-organizing Map Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Self-organizing%20Map%201982&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Self-organizing Map Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Self-organizing%20Map%201982",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1982%20Self-organizing%20Map%20Teuvo%20Kohonen%20AI%20history%20source%20images",
+      "query": "1982 Self-organizing Map Teuvo Kohonen AI history source images",
+      "eventKey": "ai100-1982-som"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1982%20Self-organizing%20Map%20Teuvo%20Kohonen%20AI%20history%20source%20images",
+      "query": "1982 Self-organizing Map Teuvo Kohonen AI history source images",
+      "eventKey": "ai100-1982-som"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1982%20Self-organizing%20Map%20Teuvo%20Kohonen%20AI%20history%20source%20images",
+      "query": "1982 Self-organizing Map Teuvo Kohonen AI history source images",
+      "eventKey": "ai100-1982-som"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Teuvo Kohonen portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Teuvo%20Kohonen%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Teuvo Kohonen Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Teuvo%20Kohonen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Teuvo Kohonen official biography search",
+      "url": "https://www.google.com/search?q=Teuvo%20Kohonen%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Self-organizing Map event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1982%20Self-organizing%20Map%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Self-organizing Map Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Self-organizing%20Map%201982&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Self-organizing Map Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Self-organizing%20Map%201982",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Self-organizing Map publication search",
+      "url": "https://www.google.com/search?q=1982%20Self-organizing%20Map%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Self-organizing Map scholar search",
+      "url": "https://scholar.google.com/scholar?q=1982%20Self-organizing%20Map%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Self-organized formation of topologically correct feature maps",
+      "sourceUrl": "https://doi.org/10.1007/BF00337288",
+      "finalUrl": "https://link.springer.com/article/10.1007/BF00337288?error=cookies_not_supported&code=65bb2fbe-bc0f-4009-a6d4-352a425defe7",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Self-organized formation of topologically correct feature maps | Biological Cybernetics | Springer Nature Link",
+      "savedPath": "pages/001.self-organized-formation-of-topologically-correct-feature-maps.html",
+      "fetchedAt": "2026-07-03T11:59:30.974Z"
+    },
+    {
+      "label": "Open SOM paper PDF",
+      "sourceUrl": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+      "finalUrl": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.open-som-paper-pdf.html",
+      "fetchedAt": "2026-07-03T11:59:32.917Z"
+    },
+    {
+      "label": "Self-organizing map overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Self-organizing_map",
+      "finalUrl": "https://en.wikipedia.org/wiki/Self-organizing_map",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Self-organizing map - Wikipedia",
+      "savedPath": "pages/003.self-organizing-map-overview.html",
+      "fetchedAt": "2026-07-03T11:59:33.418Z"
+    },
+    {
+      "label": "Essentials of the self-organizing map",
+      "sourceUrl": "https://doi.org/10.1016/j.neunet.2012.09.018",
+      "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S0893608012002596",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "title": "Redirecting",
+      "savedPath": "pages/004.essentials-of-the-self-organizing-map.html",
+      "fetchedAt": "2026-07-03T11:59:34.509Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Teuvo-Kohonen.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:59:35.861Z"
+    },
+    {
+      "label": "Teuvo Kohonen Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Teuvo%20Kohonen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Teuvo%20Kohonen%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.teuvo-kohonen-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:59:37.539Z"
+    },
+    {
+      "label": "Self-organizing Map Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Self-organizing%20Map%201982&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Self-organizing%20Map%201982&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.self-organizing-map-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:59:39.064Z"
+    },
+    {
+      "label": "Self-organizing Map Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Self-organizing%20Map%201982",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Self-organizing%20Map%201982",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.self-organizing-map-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:59:39.690Z"
+    }
+  ]
+}

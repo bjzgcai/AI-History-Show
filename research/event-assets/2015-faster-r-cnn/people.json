@@ -1,0 +1,104 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+          "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "个人网站照片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Historical figure / Faster R-CNN co-author portrait",
+            "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+          "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "个人网站照片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Historical figure / Faster R-CNN co-author portrait",
+            "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Ross Girshick",
+        "zh": "罗斯·格希克"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+          "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "个人网站照片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Historical figure / Faster R-CNN co-author portrait",
+            "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+          "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "个人网站照片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Historical figure / Faster R-CNN co-author portrait",
+            "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

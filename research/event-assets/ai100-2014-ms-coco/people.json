@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Tsung-Yi Lin",
+        "zh": "林宗毅"
+      },
+      "role": {
+        "en": "MS COCO lead author",
+        "zh": "MS COCO 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://tsungyilin.info/images/tsungyi.jpeg",
+          "sourceUrl": "https://tsungyilin.info/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

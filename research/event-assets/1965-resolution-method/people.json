@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "John Alan Robinson",
+        "zh": "约翰·艾伦·罗宾逊"
+      },
+      "role": {
+        "en": "Inventor of the resolution principle",
+        "zh": "归结原理提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+          "license": {
+            "en": "Creative Commons license stated on Commons file page.",
+            "zh": "Creative Commons license stated on Commons file page."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

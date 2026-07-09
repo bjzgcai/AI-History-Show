@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Robert Tibshirani",
+        "zh": "罗伯特·蒂布希拉尼"
+      },
+      "role": {
+        "en": "Introduced the lasso method",
+        "zh": "提出 Lasso 方法"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+          "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+          "license": {
+            "en": "Institution profile photo; rights not stated.",
+            "zh": "Institution profile photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Lasso author portrait",
+            "zh": "历史人物 / Lasso 作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

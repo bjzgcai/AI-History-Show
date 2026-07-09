@@ -1,0 +1,1096 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:32.066Z",
+  "root": "research/event-assets",
+  "events": [
+    {
+      "eventKey": "1956-dartmouth",
+      "title": "达特茅斯会议 - AI正式诞生！",
+      "sources": 39,
+      "searches": 37,
+      "assets": 4,
+      "fetched": 38,
+      "images": 13
+    },
+    {
+      "eventKey": "1957-perceptron",
+      "title": "感知机与连接主义",
+      "sources": 11,
+      "searches": 17,
+      "assets": 5,
+      "fetched": 10,
+      "images": 5
+    },
+    {
+      "eventKey": "1969-ai-winter",
+      "title": "第一次寒冬的到来",
+      "sources": 4,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 3,
+      "images": 3
+    },
+    {
+      "eventKey": "1986-backpropagation",
+      "title": "反向传播算法",
+      "sources": 6,
+      "searches": 17,
+      "assets": 5,
+      "fetched": 5,
+      "images": 5
+    },
+    {
+      "eventKey": "1986-rnn",
+      "title": "循环神经网络",
+      "sources": 5,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 4,
+      "images": 2
+    },
+    {
+      "eventKey": "1989-cnn",
+      "title": "卷积神经网络",
+      "sources": 4,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 3,
+      "images": 3
+    },
+    {
+      "eventKey": "1997-lstm",
+      "title": "LSTM与门控机制",
+      "sources": 5,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 4,
+      "images": 3
+    },
+    {
+      "eventKey": "2012-alexnet",
+      "title": "ImageNet时代：AlexNet与深度学习爆发",
+      "sources": 5,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 4,
+      "images": 3
+    },
+    {
+      "eventKey": "2014-highway-network",
+      "title": "高速网络",
+      "sources": 5,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 4,
+      "images": 2
+    },
+    {
+      "eventKey": "2014-gan",
+      "title": "GAN（生成对抗网路）",
+      "sources": 5,
+      "searches": 14,
+      "assets": 1,
+      "fetched": 4,
+      "images": 1
+    },
+    {
+      "eventKey": "2014-attention",
+      "title": "自回归模型和注意力机制",
+      "sources": 5,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 4,
+      "images": 2
+    },
+    {
+      "eventKey": "2015-resnet",
+      "title": "ResNet",
+      "sources": 7,
+      "searches": 20,
+      "assets": 6,
+      "fetched": 6,
+      "images": 6
+    },
+    {
+      "eventKey": "2016-densenet",
+      "title": "DenseNet",
+      "sources": 4,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 3,
+      "images": 3
+    },
+    {
+      "eventKey": "2017-transformer",
+      "title": "Transformer",
+      "sources": 4,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 3,
+      "images": 3
+    },
+    {
+      "eventKey": "2018-bert",
+      "title": "BERT",
+      "sources": 5,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 4,
+      "images": 3
+    },
+    {
+      "eventKey": "2018-gpt",
+      "title": "GPT",
+      "sources": 5,
+      "searches": 14,
+      "assets": 5,
+      "fetched": 4,
+      "images": 5
+    },
+    {
+      "eventKey": "2019-ai-feynman",
+      "title": "AI Feynman：自主科学规律发现",
+      "sources": 4,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 3,
+      "images": 4
+    },
+    {
+      "eventKey": "2020-alphafold",
+      "title": "AlphaFold: 蛋白质结构预测",
+      "sources": 5,
+      "searches": 14,
+      "assets": 7,
+      "fetched": 4,
+      "images": 7
+    },
+    {
+      "eventKey": "2023-agents",
+      "title": "智能体：LLM驱动的自主系统",
+      "sources": 6,
+      "searches": 17,
+      "assets": 3,
+      "fetched": 5,
+      "images": 3
+    },
+    {
+      "eventKey": "2024-ai-scientist",
+      "title": "AI科学家与自主实验室",
+      "sources": 5,
+      "searches": 14,
+      "assets": 5,
+      "fetched": 4,
+      "images": 5
+    },
+    {
+      "eventKey": "2025-llm-competition",
+      "title": "大语言模型百花齐放",
+      "sources": 4,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 3,
+      "images": 4
+    },
+    {
+      "eventKey": "1950-turing-test",
+      "title": "图灵测试",
+      "sources": 9,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "1958-lisp",
+      "title": "LISP",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "2016-alphago",
+      "title": "AlphaGo",
+      "sources": 9,
+      "searches": 17,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "1971-complexity-theory",
+      "title": "NP 完全性",
+      "sources": 8,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "1971-vc-theory",
+      "title": "VC 理论",
+      "sources": 8,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "1956-logic-theorist",
+      "title": "逻辑理论家",
+      "sources": 9,
+      "searches": 17,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "1958-wangs-algorithm",
+      "title": "王氏算法",
+      "sources": 6,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1960-davis-putnam-dpll",
+      "title": "DP/DPLL 算法",
+      "sources": 9,
+      "searches": 20,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "2014-adam",
+      "title": "Adam 优化器",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "2014-vgg",
+      "title": "VGG 网络",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "1975-genetic-algorithm",
+      "title": "遗传算法",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "2015-u-net",
+      "title": "U-Net",
+      "sources": 9,
+      "searches": 17,
+      "assets": 3,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "2015-faster-r-cnn",
+      "title": "Faster R-CNN",
+      "sources": 10,
+      "searches": 20,
+      "assets": 3,
+      "fetched": 10,
+      "images": 2
+    },
+    {
+      "eventKey": "1992-svm",
+      "title": "支持向量机",
+      "sources": 9,
+      "searches": 17,
+      "assets": 3,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "1984-cart",
+      "title": "CART 决策树",
+      "sources": 10,
+      "searches": 20,
+      "assets": 3,
+      "fetched": 10,
+      "images": 2
+    },
+    {
+      "eventKey": "1983-simulated-annealing",
+      "title": "模拟退火",
+      "sources": 9,
+      "searches": 17,
+      "assets": 3,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "1996-lasso",
+      "title": "Lasso 回归",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "2015-googlenet-inception",
+      "title": "GoogLeNet / Inception",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "1965-resolution-method",
+      "title": "归结方法",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "1973-prolog",
+      "title": "PROLOG",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "1966-eliza",
+      "title": "ELIZA",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1982-hopfield-network",
+      "title": "Hopfield 网络",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "2014-dropout",
+      "title": "Dropout",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "2016-yolo",
+      "title": "YOLO",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "2013-word2vec",
+      "title": "Word2Vec",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "2009-imagenet",
+      "title": "ImageNet",
+      "sources": 7,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "2013-dqn",
+      "title": "深度 Q 网络",
+      "sources": 8,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "2003-lda",
+      "title": "潜在狄利克雷分配",
+      "sources": 7,
+      "searches": 14,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "1970-shrdlu",
+      "title": "SHRDLU",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1997-deep-blue",
+      "title": "深蓝",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "1974-frame",
+      "title": "框架",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1965-dendral",
+      "title": "DENDRAL",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "1999-sift",
+      "title": "SIFT",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "2008-tsne",
+      "title": "t-SNE",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1958-rosenblatt-perceptron",
+      "title": "罗森布拉特 感知机",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "2006-dbn",
+      "title": "深度置信网络",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1988-td-update",
+      "title": "时序差分更新",
+      "sources": 6,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "1985-bayesian-network",
+      "title": "贝叶斯网络",
+      "sources": 7,
+      "searches": 11,
+      "assets": 3,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "1990-otter",
+      "title": "Otter 自动定理证明器",
+      "sources": 6,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 6,
+      "images": 1
+    },
+    {
+      "eventKey": "2011-ibm-watson",
+      "title": "IBM Watson",
+      "sources": 9,
+      "searches": 14,
+      "assets": 4,
+      "fetched": 9,
+      "images": 4
+    },
+    {
+      "eventKey": "1951-strachey-draughts",
+      "title": "克里斯托弗·斯特雷奇 的跳棋程序",
+      "sources": 7,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 7,
+      "images": 3
+    },
+    {
+      "eventKey": "1994-chinook",
+      "title": "Chinook 跳棋程序",
+      "sources": 7,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 7,
+      "images": 3
+    },
+    {
+      "eventKey": "1959-pandemonium",
+      "title": "Pandemonium 感知架构",
+      "sources": 7,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 7,
+      "images": 3
+    },
+    {
+      "eventKey": "1984-cyc",
+      "title": "Cyc 常识知识库",
+      "sources": 9,
+      "searches": 14,
+      "assets": 4,
+      "fetched": 9,
+      "images": 4
+    },
+    {
+      "eventKey": "1980-xcon-r1",
+      "title": "XCON / R1 专家系统",
+      "sources": 8,
+      "searches": 11,
+      "assets": 4,
+      "fetched": 8,
+      "images": 4
+    },
+    {
+      "eventKey": "1957-kmeans",
+      "title": "K-means 聚类",
+      "sources": 11,
+      "searches": 16,
+      "assets": 4,
+      "fetched": 11,
+      "images": 4
+    },
+    {
+      "eventKey": "1996-dbscan",
+      "title": "DBSCAN 密度聚类",
+      "sources": 9,
+      "searches": 14,
+      "assets": 4,
+      "fetched": 9,
+      "images": 4
+    },
+    {
+      "eventKey": "2000-spectral-clustering",
+      "title": "谱聚类",
+      "sources": 9,
+      "searches": 14,
+      "assets": 4,
+      "fetched": 9,
+      "images": 4
+    },
+    {
+      "eventKey": "ai100-1967-knn",
+      "title": "KNN 最近邻",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1970-ridge",
+      "title": "岭回归",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2005-hog",
+      "title": "HOG 方向梯度直方图",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2006-surf",
+      "title": "SURF 加速稳健特征",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1997-kernel-pca",
+      "title": "Kernel PCA",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1999-nmf",
+      "title": "非负矩阵分解",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2000-isomap",
+      "title": "Isomap",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2000-lle",
+      "title": "局部线性嵌入",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1943-mcculloch-pitts-neuron",
+      "title": "麦卡洛克-皮茨神经元",
+      "sources": 8,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1951-snarc",
+      "title": "SNARC",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1982-som",
+      "title": "自组织映射",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1967-back-propagation",
+      "title": "反向传播",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1969-relu",
+      "title": "ReLU",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1980-neocognitron",
+      "title": "新认知机",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1989-lenet",
+      "title": "LeNet",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2000-neural-language-model",
+      "title": "神经语言模型",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2012-alexnet",
+      "title": "AlexNet",
+      "sources": 10,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-resnet",
+      "title": "ResNet",
+      "sources": 10,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-batch-normalization",
+      "title": "批归一化",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2017-densenet",
+      "title": "DenseNet",
+      "sources": 10,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2017-transformer",
+      "title": "Transformer",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2020-vit",
+      "title": "视觉 Transformer",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1997-lstm",
+      "title": "长短期记忆网络",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2014-gan",
+      "title": "生成对抗网络",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2014-neural-machine-translation-attention",
+      "title": "带注意力机制的神经机器翻译",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2018-bert",
+      "title": "BERT",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2018-gpt",
+      "title": "GPT",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2020-alphafold2",
+      "title": "AlphaFold2",
+      "sources": 9,
+      "searches": 14,
+      "assets": 2,
+      "fetched": 9,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2021-clip",
+      "title": "CLIP",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2021-dalle",
+      "title": "DALL-E",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2022-stable-diffusion",
+      "title": "Stable Diffusion",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2023-segment-anything",
+      "title": "Segment Anything",
+      "sources": 8,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 8,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2021-swin-transformer",
+      "title": "Swin Transformer",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2014-glove",
+      "title": "GloVe",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2014-conditional-gan",
+      "title": "Conditional GAN",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-dcgan",
+      "title": "DCGAN",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2017-wasserstein-gan",
+      "title": "Wasserstein GAN",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2017-cyclegan",
+      "title": "CycleGAN",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2017-pix2pix",
+      "title": "Pix2Pix",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2019-stylegan",
+      "title": "StyleGAN",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2013-variational-autoencoder",
+      "title": "变分自编码器",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-diffusion-model",
+      "title": "扩散模型",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2005-gnn",
+      "title": "图神经网络",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2016-gcn",
+      "title": "GCN",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2017-gat",
+      "title": "GAT",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2016-nas",
+      "title": "神经架构搜索",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-deep-compression",
+      "title": "深度压缩",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-knowledge-distillation",
+      "title": "知识蒸馏",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 6,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2014-ms-coco",
+      "title": "MS COCO",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1989-q-learning",
+      "title": "Q-Learning",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-2015-ddpg",
+      "title": "DDPG",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    },
+    {
+      "eventKey": "ai100-1983-actor-critic",
+      "title": "Actor-Critic",
+      "sources": 7,
+      "searches": 11,
+      "assets": 2,
+      "fetched": 7,
+      "images": 2
+    }
+  ]
+}

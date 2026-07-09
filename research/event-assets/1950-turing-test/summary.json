@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:32:14.861Z",
+  "eventKey": "1950-turing-test",
+  "year": 1950,
+  "title": {
+    "en": "Turing Test",
+    "zh": "图灵测试"
+  },
+  "location": {
+    "name": {
+      "en": "University of Manchester",
+      "zh": "曼彻斯特大学"
+    },
+    "country": {
+      "en": "Manchester, United Kingdom",
+      "zh": "英国，曼彻斯特"
+    },
+    "coordinates": [
+      53.4668,
+      -2.2339
+    ]
+  },
+  "description": {
+    "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>",
+    "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Alan Turing portrait",
+        "zh": "艾伦·图灵 肖像"
+      },
+      "subcaption": {
+        "en": "Photograph portrait of Alan Turing, 29 March 1951",
+        "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+      "license": {
+        "en": "Public domain",
+        "zh": "Public domain"
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Turing test diagram",
+        "zh": "图灵测试结构图"
+      },
+      "subcaption": {
+        "en": "Observer C judges hidden human and machine replies through text only.",
+        "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
+      "license": {
+        "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+        "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Alan Turing",
+        "type": "portrait-search",
+        "label": "Alan Turing portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alan%20Turing%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alan Turing",
+        "type": "commons-portrait-search",
+        "label": "Alan Turing Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alan%20Turing%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Turing Test event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1950%20Turing%20Test%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Turing Test Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Turing%20Test%201950&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Turing Test Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Turing%20Test%201950",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Turing Test publication search",
+        "url": "https://www.google.com/search?q=1950%20Turing%20Test%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Turing Test scholar search",
+        "url": "https://scholar.google.com/scholar?q=1950%20Turing%20Test%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

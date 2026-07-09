@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Stephen A. Cook",
+        "zh": "斯蒂芬·A·库克"
+      },
+      "role": {
+        "en": "Introduced NP-completeness",
+        "zh": "提出 NP 完全性"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+          "license": {
+            "en": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+            "zh": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Leonid Levin",
+        "zh": "列昂尼德·列文"
+      },
+      "role": {
+        "en": "Independently formulated related NP-completeness ideas",
+        "zh": "独立提出相关 NP 完全性思想"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+          "license": {
+            "en": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+            "zh": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

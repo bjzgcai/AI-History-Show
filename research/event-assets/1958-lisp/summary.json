@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:32:42.674Z",
+  "eventKey": "1958-lisp",
+  "year": 1958,
+  "title": {
+    "en": "LISP",
+    "zh": "LISP"
+  },
+  "location": {
+    "name": {
+      "en": "MIT",
+      "zh": "麻省理工学院"
+    },
+    "country": {
+      "en": "MA, United States",
+      "zh": "美国，马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "description": {
+    "en": "<p>John McCarthy's LISP gave symbolic AI a practical programming language. It treated code and data as list structures that could be created, transformed and evaluated recursively. That made it a natural tool for early AI systems built around symbols, rules and programs that manipulate programs.</p>",
+    "zh": "<p>约翰·麦卡锡的 LISP 为符号 AI 提供了实用编程语言。它把代码和数据都表示为表结构，使递归式符号处理成为可执行的工程工具。这让它自然适合早期以符号、规则和“处理程序的程序”为核心的 AI 系统。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "John McCarthy portrait",
+        "zh": "约翰·麦卡锡 肖像"
+      },
+      "subcaption": {
+        "en": "John McCarthy at Stanford, 2006",
+        "zh": "约翰·麦卡锡 于 斯坦福大学，2006 年"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "license": {
+        "en": "CC BY-SA 2.0",
+        "zh": "CC BY-SA 2.0"
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "S-expression evaluator",
+        "zh": "S 表达式求值流程"
+      },
+      "subcaption": {
+        "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives.",
+        "zh": "根据 麦卡锡 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
+      },
+      "sourceName": {
+        "en": "Stanford / John McCarthy",
+        "zh": "斯坦福大学 / 约翰·麦卡锡"
+      },
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+      "license": {
+        "en": "Original local explainer; source text reuse rights not stated.",
+        "zh": "Original local explainer; source text reuse rights not stated."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "John McCarthy",
+        "type": "portrait-search",
+        "label": "John McCarthy portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=John%20McCarthy%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "John McCarthy",
+        "type": "commons-portrait-search",
+        "label": "John McCarthy Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "LISP event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1958%20LISP%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "LISP Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=LISP%201958&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "LISP Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=LISP%201958",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "LISP publication search",
+        "url": "https://www.google.com/search?q=1958%20LISP%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "LISP scholar search",
+        "url": "https://scholar.google.com/scholar?q=1958%20LISP%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

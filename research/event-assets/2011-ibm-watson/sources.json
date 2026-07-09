@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:39.601Z",
+  "eventKey": "2011-ibm-watson",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Watson: Beyond Jeopardy!",
+      "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+      "usage": ""
+    },
+    {
+      "type": "Overview",
+      "label": "Building Watson: An Overview of the DeepQA Project",
+      "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "IBM Watson system photo",
+      "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "David Ferrucci portrait",
+      "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+      "usage": "Architecture diagram"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Ferrucci Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Ferrucci%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "IBM DeepQA team Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=IBM%20DeepQA%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "IBM Watson Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=IBM%20Watson%202006-2011&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "IBM Watson Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=IBM%20Watson%202006-2011",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2006-2011%20IBM%20Watson%20David%20Ferrucci%20IBM%20DeepQA%20team%20AI%20history%20source%20images",
+      "query": "2006-2011 IBM Watson David Ferrucci IBM DeepQA team AI history source images",
+      "eventKey": "2011-ibm-watson"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2006-2011%20IBM%20Watson%20David%20Ferrucci%20IBM%20DeepQA%20team%20AI%20history%20source%20images",
+      "query": "2006-2011 IBM Watson David Ferrucci IBM DeepQA team AI history source images",
+      "eventKey": "2011-ibm-watson"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2006-2011%20IBM%20Watson%20David%20Ferrucci%20IBM%20DeepQA%20team%20AI%20history%20source%20images",
+      "query": "2006-2011 IBM Watson David Ferrucci IBM DeepQA team AI history source images",
+      "eventKey": "2011-ibm-watson"
+    },
+    {
+      "type": "portrait-search",
+      "label": "David Ferrucci portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=David%20Ferrucci%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Ferrucci Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Ferrucci%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "David Ferrucci official biography search",
+      "url": "https://www.google.com/search?q=David%20Ferrucci%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "IBM DeepQA team portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=IBM%20DeepQA%20team%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "IBM DeepQA team Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=IBM%20DeepQA%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "IBM DeepQA team official biography search",
+      "url": "https://www.google.com/search?q=IBM%20DeepQA%20team%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "IBM Watson event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2006-2011%20IBM%20Watson%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "IBM Watson Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=IBM%20Watson%202006-2011&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "IBM Watson Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=IBM%20Watson%202006-2011",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "IBM Watson publication search",
+      "url": "https://www.google.com/search?q=2006-2011%20IBM%20Watson%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "IBM Watson scholar search",
+      "url": "https://scholar.google.com/scholar?q=2006-2011%20IBM%20Watson%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Watson: Beyond Jeopardy!",
+      "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009",
+      "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S0004370212000872",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "title": "Redirecting",
+      "savedPath": "pages/001.watson-beyond-jeopardy.html",
+      "fetchedAt": "2026-07-03T11:53:41.294Z"
+    },
+    {
+      "label": "Building Watson: An Overview of the DeepQA Project",
+      "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:53:42.971Z"
+    },
+    {
+      "label": "IBM Watson system photo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:IBMWatson.jpg - Wikimedia Commons",
+      "savedPath": "pages/003.ibm-watson-system-photo.html",
+      "fetchedAt": "2026-07-03T11:53:44.238Z"
+    },
+    {
+      "label": "David Ferrucci portrait",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:David Ferrucci speaks at TEDx Binghamton University.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.david-ferrucci-portrait.html",
+      "fetchedAt": "2026-07-03T11:53:45.734Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:DeepQA.svg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:53:46.671Z"
+    },
+    {
+      "label": "David Ferrucci Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Ferrucci%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Ferrucci%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.david-ferrucci-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:53:47.903Z"
+    },
+    {
+      "label": "IBM DeepQA team Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=IBM%20DeepQA%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=IBM%20DeepQA%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.ibm-deepqa-team-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:53:49.323Z"
+    },
+    {
+      "label": "IBM Watson Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=IBM%20Watson%202006-2011&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=IBM%20Watson%202006-2011&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.ibm-watson-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:53:50.759Z"
+    },
+    {
+      "label": "IBM Watson Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=IBM%20Watson%202006-2011",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=IBM%20Watson%202006-2011",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.ibm-watson-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:53:51.577Z"
+    }
+  ]
+}

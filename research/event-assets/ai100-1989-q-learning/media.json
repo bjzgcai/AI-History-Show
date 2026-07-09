@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:44.657Z",
+  "eventKey": "ai100-1989-q-learning",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Christopher Watkins",
+      "role": "Q-learning lead author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Christopher Watkins portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Christopher%20Watkins%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Christopher Watkins Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Watkins%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Christopher Watkins official biography search",
+          "url": "https://www.google.com/search?q=Christopher%20Watkins%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Q-Learning event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1989%20Q-Learning%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Q-Learning Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Q-Learning%201989&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Q-Learning Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Q-Learning%201989",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Q-Learning publication search",
+      "url": "https://www.google.com/search?q=1989%20Q-Learning%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Q-Learning scholar search",
+      "url": "https://scholar.google.com/scholar?q=1989%20Q-Learning%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Christopher Watkins portrait",
+        "zh": "克里斯托弗·沃特金斯肖像"
+      },
+      "subcaption": {
+        "en": "Q-learning lead author",
+        "zh": "Q-learning 主要作者"
+      },
+      "sourceUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+      "sourceLabel": "Google Scholar profile",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Q-Learning explainer",
+        "zh": "Q-Learning 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "sourceLabel": "Learning from Delayed Rewards",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Google Scholar profile",
+        "url": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Q-learning",
+        "url": "https://link.springer.com/article/10.1007/BF00992698",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

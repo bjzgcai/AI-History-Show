@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:40.652Z",
+  "eventKey": "ai100-1967-back-propagation",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Shunichi Amari",
+      "role": "Early contributor to adaptive neural learning",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Shunichi Amari portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Shunichi%20Amari%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Shunichi Amari Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Shunichi%20Amari%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Shunichi Amari official biography search",
+          "url": "https://www.google.com/search?q=Shunichi%20Amari%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "David Rumelhart",
+      "role": "Co-author of the 1986 back-propagation paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "David Rumelhart portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=David%20Rumelhart%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "David Rumelhart Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "David Rumelhart official biography search",
+          "url": "https://www.google.com/search?q=David%20Rumelhart%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Back-propagation event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1967%20Back-propagation%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Back-propagation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Back-propagation%201967&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Back-propagation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Back-propagation%201967",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Back-propagation publication search",
+      "url": "https://www.google.com/search?q=1967%20Back-propagation%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Back-propagation scholar search",
+      "url": "https://scholar.google.com/scholar?q=1967%20Back-propagation%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/figures/david-rumelhart.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "David Rumelhart portrait",
+        "zh": "大卫·鲁梅尔哈特肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of the 1986 back-propagation paper",
+        "zh": "1986 年反向传播论文共同作者"
+      },
+      "sourceUrl": "resources/images/figures/david-rumelhart.jpg",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Error signal flow",
+        "zh": "误差信号流"
+      },
+      "subcaption": {
+        "en": "Original local explainer of back-propagation error flow.",
+        "zh": "关于反向传播误差流的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1038/323533a0",
+      "sourceLabel": "Learning representations by back-propagating errors",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/figures/david-rumelhart.jpg",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Learning representations by back-propagating errors",
+        "url": "https://doi.org/10.1038/323533a0",
+        "usage": ""
+      },
+      {
+        "type": "Paper",
+        "label": "A Theory of Adaptive Pattern Classifiers",
+        "url": "https://doi.org/10.1109/PGEC.1967.264666",
+        "usage": ""
+      },
+      {
+        "type": "Paper PDF",
+        "label": "Hinton-hosted Nature back-propagation PDF",
+        "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

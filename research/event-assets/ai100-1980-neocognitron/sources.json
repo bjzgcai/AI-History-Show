@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:00:24.134Z",
+  "eventKey": "ai100-1980-neocognitron",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Neocognitron",
+      "url": "https://doi.org/10.1007/BF00344251",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "Open Neocognitron PDF",
+      "url": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Scholarpedia Neocognitron article",
+      "url": "https://www.scholarpedia.org/article/Neocognitron",
+      "usage": ""
+    },
+    {
+      "type": "Context",
+      "label": "Semantic Scholar paper record",
+      "url": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "NEC C&C Foundation",
+      "url": "https://www.candc.or.jp/en/2021/group_a.html",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kunihiko Fukushima Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neocognitron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neocognitron%201980&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neocognitron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neocognitron%201980",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1980%20Neocognitron%20Kunihiko%20Fukushima%20AI%20history%20source%20images",
+      "query": "1980 Neocognitron Kunihiko Fukushima AI history source images",
+      "eventKey": "ai100-1980-neocognitron"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1980%20Neocognitron%20Kunihiko%20Fukushima%20AI%20history%20source%20images",
+      "query": "1980 Neocognitron Kunihiko Fukushima AI history source images",
+      "eventKey": "ai100-1980-neocognitron"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1980%20Neocognitron%20Kunihiko%20Fukushima%20AI%20history%20source%20images",
+      "query": "1980 Neocognitron Kunihiko Fukushima AI history source images",
+      "eventKey": "ai100-1980-neocognitron"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Kunihiko Fukushima portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Kunihiko%20Fukushima%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kunihiko Fukushima Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Kunihiko Fukushima official biography search",
+      "url": "https://www.google.com/search?q=Kunihiko%20Fukushima%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Neocognitron event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1980%20Neocognitron%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neocognitron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neocognitron%201980&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neocognitron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neocognitron%201980",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Neocognitron publication search",
+      "url": "https://www.google.com/search?q=1980%20Neocognitron%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Neocognitron scholar search",
+      "url": "https://scholar.google.com/scholar?q=1980%20Neocognitron%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Neocognitron",
+      "sourceUrl": "https://doi.org/10.1007/BF00344251",
+      "finalUrl": "https://link.springer.com/article/10.1007/BF00344251?error=cookies_not_supported&code=a8f255ff-97e4-4125-9b6a-228d6dc0a483",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position | Biological Cybernetics | Springer Nature Link",
+      "savedPath": "pages/001.neocognitron.html",
+      "fetchedAt": "2026-07-03T12:00:27.966Z"
+    },
+    {
+      "label": "Open Neocognitron PDF",
+      "sourceUrl": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+      "finalUrl": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.open-neocognitron-pdf.html",
+      "fetchedAt": "2026-07-03T12:00:31.722Z"
+    },
+    {
+      "label": "Scholarpedia Neocognitron article",
+      "sourceUrl": "https://www.scholarpedia.org/article/Neocognitron",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:00:42.209Z"
+    },
+    {
+      "label": "Semantic Scholar paper record",
+      "sourceUrl": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b",
+      "finalUrl": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/004.semantic-scholar-paper-record.html",
+      "fetchedAt": "2026-07-03T12:00:42.826Z"
+    },
+    {
+      "label": "NEC C&C Foundation",
+      "sourceUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+      "finalUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "NEC C&amp;C Foundation",
+      "savedPath": "pages/005.nec-c-c-foundation.html",
+      "fetchedAt": "2026-07-03T12:00:47.109Z"
+    },
+    {
+      "label": "Kunihiko Fukushima Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.kunihiko-fukushima-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:00:48.724Z"
+    },
+    {
+      "label": "Neocognitron Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Neocognitron%201980&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Neocognitron%201980&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.neocognitron-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:00:50.475Z"
+    },
+    {
+      "label": "Neocognitron Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Neocognitron%201980",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Neocognitron%201980",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.neocognitron-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:00:51.121Z"
+    }
+  ]
+}

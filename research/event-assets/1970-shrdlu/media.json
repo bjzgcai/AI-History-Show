@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:18.687Z",
+  "eventKey": "1970-shrdlu",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Terry Winograd",
+      "role": "Creator of SHRDLU",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Terry Winograd portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Terry%20Winograd%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Terry Winograd Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Terry%20Winograd%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Terry Winograd official biography search",
+          "url": "https://www.google.com/search?q=Terry%20Winograd%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "SHRDLU event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1970%20SHRDLU%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "SHRDLU Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SHRDLU%201970&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SHRDLU Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SHRDLU%201970",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "SHRDLU publication search",
+      "url": "https://www.google.com/search?q=1970%20SHRDLU%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "SHRDLU scholar search",
+      "url": "https://scholar.google.com/scholar?q=1970%20SHRDLU%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Terry Winograd portrait",
+        "zh": "特里·维诺格拉德 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Stanford Computer Science profile.",
+        "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。"
+      },
+      "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+      "sourceLabel": "Terry Winograd, Stanford Computer Science",
+      "license": {
+        "en": "Stanford profile image; reuse rights not stated.",
+        "zh": "斯坦福大学 profile image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Blocks-world command grounding",
+        "zh": "积木世界命令落地"
+      },
+      "subcaption": {
+        "en": "Local redraw for SHRDLU, based on the listed source material.",
+        "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "sourceLabel": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Parser to planner path",
+        "zh": "解析器到规划器路径"
+      },
+      "subcaption": {
+        "en": "Local redraw for SHRDLU, based on the listed source material.",
+        "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "sourceLabel": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Oral history",
+        "label": "Terry Winograd oral history, CBI",
+        "url": "https://hdl.handle.net/11299/107717",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:32.884Z",
+  "eventKey": "1956-logic-theorist",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1956-logic-theorist",
+      "label": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.wikimedia-commons-portrait-of-herbert-a.-simon-one-of-the-logic-theorist-co-creators.jpg",
+      "originalLocalPath": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 253429,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+      "downloadedAt": "2026-07-03T10:37:32.580Z"
+    },
+    {
+      "eventKey": "1956-logic-theorist",
+      "label": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-explainer-showing-goal-theorem-heuristic-search-symbolic-transformations-and-proof-chai.svg",
+      "originalLocalPath": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 3167,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Explainer graphic",
+      "rights": "Original local explainer; source text and figure reuse rights not used.",
+      "downloadedAt": "2026-07-03T10:37:32.884Z"
+    }
+  ]
+}

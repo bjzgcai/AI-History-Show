@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:20.888Z",
+  "eventKey": "1985-bayesian-network",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Bayesian Networks",
+      "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Homepage",
+      "label": "Judea Pearl homepage",
+      "url": "https://bayes.cs.ucla.edu/home.htm",
+      "usage": ""
+    },
+    {
+      "type": "Profile",
+      "label": "Judea Pearl, UCLA Samueli",
+      "url": "https://samueli.ucla.edu/judea-pearl/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Judea Pearl Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Judea%20Pearl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Bayesian Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Bayesian%20Network%201985&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Bayesian Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Bayesian%20Network%201985",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1985%20Bayesian%20Network%20Judea%20Pearl%20AI%20history%20source%20images",
+      "query": "1985 Bayesian Network Judea Pearl AI history source images",
+      "eventKey": "1985-bayesian-network"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1985%20Bayesian%20Network%20Judea%20Pearl%20AI%20history%20source%20images",
+      "query": "1985 Bayesian Network Judea Pearl AI history source images",
+      "eventKey": "1985-bayesian-network"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1985%20Bayesian%20Network%20Judea%20Pearl%20AI%20history%20source%20images",
+      "query": "1985 Bayesian Network Judea Pearl AI history source images",
+      "eventKey": "1985-bayesian-network"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Judea Pearl portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Judea%20Pearl%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Judea Pearl Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Judea%20Pearl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Judea Pearl official biography search",
+      "url": "https://www.google.com/search?q=Judea%20Pearl%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Bayesian Network event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1985%20Bayesian%20Network%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Bayesian Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Bayesian%20Network%201985&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Bayesian Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Bayesian%20Network%201985",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Bayesian Network publication search",
+      "url": "https://www.google.com/search?q=1985%20Bayesian%20Network%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Bayesian Network scholar search",
+      "url": "https://scholar.google.com/scholar?q=1985%20Bayesian%20Network%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Bayesian Networks",
+      "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+      "finalUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/001.bayesian-networks.html",
+      "fetchedAt": "2026-07-03T11:53:25.463Z"
+    },
+    {
+      "label": "Judea Pearl homepage",
+      "sourceUrl": "https://bayes.cs.ucla.edu/home.htm",
+      "finalUrl": "https://bayes.cs.ucla.edu/home.htm",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "JUDEA PEARL'S HOMEPAGE",
+      "savedPath": "pages/002.judea-pearl-homepage.html",
+      "fetchedAt": "2026-07-03T11:53:27.379Z"
+    },
+    {
+      "label": "Judea Pearl, UCLA Samueli",
+      "sourceUrl": "https://samueli.ucla.edu/judea-pearl/",
+      "finalUrl": "https://samueli.ucla.edu/judea-pearl/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Judea Pearl, Ph.D. | UCLA Samueli School Of Engineering",
+      "savedPath": "pages/003.judea-pearl-ucla-samueli.html",
+      "fetchedAt": "2026-07-03T11:53:28.419Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Judea Pearl at NIPS 2013 (11781981594) (cropped).jpg - Wikimedia Commons",
+      "savedPath": "pages/004.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:53:29.586Z"
+    },
+    {
+      "label": "Judea Pearl Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Judea%20Pearl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Judea%20Pearl%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.judea-pearl-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:53:30.891Z"
+    },
+    {
+      "label": "Bayesian Network Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Bayesian%20Network%201985&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Bayesian%20Network%201985&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.bayesian-network-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:53:32.357Z"
+    },
+    {
+      "label": "Bayesian Network Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Bayesian%20Network%201985",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Bayesian%20Network%201985",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.bayesian-network-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:53:33.143Z"
+    }
+  ]
+}

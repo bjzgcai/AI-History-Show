@@ -1,0 +1,79 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "大卫·席尔瓦"
+      },
+      "role": {
+        "en": "AlphaGo lead researcher",
+        "zh": "AlphaGo 主要研究者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "戴密斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder",
+        "zh": "DeepMind 联合创始人"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
+      "role": {
+        "en": "AlphaGo researcher",
+        "zh": "AlphaGo 研究者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

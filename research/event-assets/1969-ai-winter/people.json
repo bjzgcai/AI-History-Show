@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Author of Perceptrons",
+        "zh": "《感知器》作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

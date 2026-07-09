@@ -1,0 +1,15 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Stuart Lloyd",
+        "zh": "斯图尔特·劳埃德"
+      },
+      "role": {
+        "en": "Author of Lloyd's k-means-style quantization method",
+        "zh": "劳埃德 式 k-means 量化方法作者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

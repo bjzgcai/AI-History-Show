@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "John McCarthy",
+        "zh": "约翰·麦卡锡"
+      },
+      "role": {
+        "en": "Designer of LISP",
+        "zh": "LISP 设计者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+          "license": {
+            "en": "CC BY-SA 2.0",
+            "zh": "CC BY-SA 2.0"
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

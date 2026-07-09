@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Daniel Lee",
+        "zh": "丹尼尔·李"
+      },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+          "sourceUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+          "license": {
+            "en": "Princeton profile image; reuse rights not stated.",
+            "zh": "普林斯顿个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "H. Sebastian Seung",
+        "zh": "H. 塞巴斯蒂安·承"
+      },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+          "sourceUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+          "license": {
+            "en": "Princeton profile image; reuse rights not stated.",
+            "zh": "普林斯顿个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

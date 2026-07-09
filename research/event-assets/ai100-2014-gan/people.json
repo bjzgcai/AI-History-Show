@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Ian Goodfellow",
+        "zh": "伊恩·古德费洛"
+      },
+      "role": {
+        "en": "Lead author of the GAN paper",
+        "zh": "GAN 论文主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/ian-goodfellow.jpg",
+          "sourceUrl": "resources/images/figures/ian-goodfellow.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author and advisor",
+        "zh": "共同作者与导师"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/ian-goodfellow.jpg",
+          "sourceUrl": "resources/images/figures/ian-goodfellow.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

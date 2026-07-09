@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:18.361Z",
+  "eventKey": "2014-dropout",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2014-dropout",
+      "label": "Portrait from Srivastava’s University of Toronto page.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.utoronto.ca/~nitish/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-srivastava-s-university-of-toronto-page.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 131794,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Personal website photo; rights not stated.",
+      "downloadedAt": "2026-07-03T11:09:18.056Z"
+    },
+    {
+      "eventKey": "2014-dropout",
+      "label": "Local redraw for Dropout, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-dropout-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1610,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:09:18.361Z"
+    }
+  ]
+}

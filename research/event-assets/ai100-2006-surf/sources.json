@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:40.539Z",
+  "eventKey": "ai100-2006-surf",
+  "sources": [
+    {
+      "type": "Conference paper",
+      "label": "SURF: Speeded Up Robust Features",
+      "url": "https://doi.org/10.1007/11744023_32",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "ETH SURF paper PDF",
+      "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "Original SURF project page",
+      "url": "https://people.ee.ethz.ch/~surf/",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "SURF overview",
+      "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Herbert Bay personal site",
+      "url": "https://herbertbay.com/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Herbert Bay Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Herbert%20Bay%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tinne Tuytelaars Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tinne%20Tuytelaars%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "SURF Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SURF%202006&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SURF Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SURF%202006",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2006%20SURF%20Herbert%20Bay%20Tinne%20Tuytelaars%20AI%20history%20source%20images",
+      "query": "2006 SURF Herbert Bay Tinne Tuytelaars AI history source images",
+      "eventKey": "ai100-2006-surf"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2006%20SURF%20Herbert%20Bay%20Tinne%20Tuytelaars%20AI%20history%20source%20images",
+      "query": "2006 SURF Herbert Bay Tinne Tuytelaars AI history source images",
+      "eventKey": "ai100-2006-surf"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2006%20SURF%20Herbert%20Bay%20Tinne%20Tuytelaars%20AI%20history%20source%20images",
+      "query": "2006 SURF Herbert Bay Tinne Tuytelaars AI history source images",
+      "eventKey": "ai100-2006-surf"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Herbert Bay portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Herbert%20Bay%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Herbert Bay Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Herbert%20Bay%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Herbert Bay official biography search",
+      "url": "https://www.google.com/search?q=Herbert%20Bay%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Tinne Tuytelaars portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Tinne%20Tuytelaars%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Tinne Tuytelaars Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Tinne%20Tuytelaars%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Tinne Tuytelaars official biography search",
+      "url": "https://www.google.com/search?q=Tinne%20Tuytelaars%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "SURF event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2006%20SURF%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "SURF Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SURF%202006&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SURF Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SURF%202006",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "SURF publication search",
+      "url": "https://www.google.com/search?q=2006%20SURF%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "SURF scholar search",
+      "url": "https://scholar.google.com/scholar?q=2006%20SURF%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "SURF: Speeded Up Robust Features",
+      "sourceUrl": "https://doi.org/10.1007/11744023_32",
+      "finalUrl": "https://link.springer.com/chapter/10.1007/11744023_32?error=cookies_not_supported&code=c4bbe65f-57c3-4bec-8817-33669bbcdf36",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "SURF: Speeded Up Robust Features | Springer Nature Link",
+      "savedPath": "pages/001.surf-speeded-up-robust-features.html",
+      "fetchedAt": "2026-07-03T11:57:44.700Z"
+    },
+    {
+      "label": "ETH SURF paper PDF",
+      "sourceUrl": "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+      "finalUrl": "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.eth-surf-paper-pdf.html",
+      "fetchedAt": "2026-07-03T11:57:48.377Z"
+    },
+    {
+      "label": "Original SURF project page",
+      "sourceUrl": "https://people.ee.ethz.ch/~surf/",
+      "finalUrl": "https://people.ee.ethz.ch/~surf/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "SURF: Speeded Up Robust Features",
+      "savedPath": "pages/003.original-surf-project-page.html",
+      "fetchedAt": "2026-07-03T11:57:48.829Z"
+    },
+    {
+      "label": "SURF overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Speeded_up_robust_features",
+      "finalUrl": "https://en.wikipedia.org/wiki/Speeded_up_robust_features",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Speeded up robust features - Wikipedia",
+      "savedPath": "pages/004.surf-overview.html",
+      "fetchedAt": "2026-07-03T11:57:49.299Z"
+    },
+    {
+      "label": "Herbert Bay personal site",
+      "sourceUrl": "https://herbertbay.com/",
+      "finalUrl": "https://herbertbay.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Herbert Bay - AI Product & Engineering Leader",
+      "savedPath": "pages/005.herbert-bay-personal-site.html",
+      "fetchedAt": "2026-07-03T11:57:51.595Z"
+    },
+    {
+      "label": "Herbert Bay Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Herbert%20Bay%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Herbert%20Bay%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.herbert-bay-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:54.399Z"
+    },
+    {
+      "label": "Tinne Tuytelaars Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Tinne%20Tuytelaars%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Tinne%20Tuytelaars%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.tinne-tuytelaars-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:55.932Z"
+    },
+    {
+      "label": "SURF Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=SURF%202006&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=SURF%202006&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.surf-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:57:58.497Z"
+    },
+    {
+      "label": "SURF Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=SURF%202006",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=SURF%202006",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.surf-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:57:59.103Z"
+    }
+  ]
+}

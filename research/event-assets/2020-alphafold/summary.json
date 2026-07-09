@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:43.124Z",
+  "eventKey": "2020-alphafold",
+  "year": 2020,
+  "title": {
+    "en": "AlphaFold: Protein Structure Prediction",
+    "zh": "AlphaFold: 蛋白质结构预测"
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "United Kingdom",
+      "zh": "英国, 伦敦"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  },
+  "description": {
+    "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+    "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "AlphaFold: Protein Structure Prediction",
+        "zh": "AlphaFold: 蛋白质结构预测 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "AlphaFold: Protein Structure Prediction",
+        "zh": "AlphaFold: 蛋白质结构预测"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "AlphaFold: Protein Structure Prediction",
+        "zh": "AlphaFold: 蛋白质结构预测 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "AlphaFold: Protein Structure Prediction",
+        "zh": "AlphaFold: 蛋白质结构预测"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 4,
+      "path": "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Highly accurate protein structure prediction with AlphaFold",
+        "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 5,
+      "path": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 6,
+      "path": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Demis Hassabis",
+        "type": "portrait-search",
+        "label": "Demis Hassabis portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Demis%20Hassabis%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Demis Hassabis",
+        "type": "commons-portrait-search",
+        "label": "Demis Hassabis Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "John Jumper",
+        "type": "portrait-search",
+        "label": "John Jumper portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=John%20Jumper%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "John Jumper",
+        "type": "commons-portrait-search",
+        "label": "John Jumper Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=John%20Jumper%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "AlphaFold: Protein Structure Prediction event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2020%20AlphaFold%3A%20Protein%20Structure%20Prediction%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "AlphaFold: Protein Structure Prediction Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=AlphaFold%3A%20Protein%20Structure%20Prediction%202020&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "AlphaFold: Protein Structure Prediction Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=AlphaFold%3A%20Protein%20Structure%20Prediction%202020",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "AlphaFold: Protein Structure Prediction publication search",
+        "url": "https://www.google.com/search?q=2020%20AlphaFold%3A%20Protein%20Structure%20Prediction%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "AlphaFold: Protein Structure Prediction scholar search",
+        "url": "https://scholar.google.com/scholar?q=2020%20AlphaFold%3A%20Protein%20Structure%20Prediction%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 7,
+    "manifest": "images/manifest.json"
+  }
+}

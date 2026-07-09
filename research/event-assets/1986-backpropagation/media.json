@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:00.805Z",
+  "eventKey": "1986-backpropagation",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "David Rumelhart",
+      "role": "Backpropagation author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "David Rumelhart portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=David%20Rumelhart%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "David Rumelhart Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "David Rumelhart official biography search",
+          "url": "https://www.google.com/search?q=David%20Rumelhart%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Geoffrey Hinton",
+      "role": "Pioneer of deep learning",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Geoffrey Hinton portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Geoffrey Hinton Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Geoffrey Hinton official biography search",
+          "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Ronald Williams",
+      "role": "Backpropagation co-author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Ronald Williams portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Ronald%20Williams%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Ronald Williams Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Ronald%20Williams%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Ronald Williams official biography search",
+          "url": "https://www.google.com/search?q=Ronald%20Williams%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Backpropagation event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1986%20Backpropagation%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Backpropagation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Backpropagation%201986&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Backpropagation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Backpropagation%201986",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Backpropagation publication search",
+      "url": "https://www.google.com/search?q=1986%20Backpropagation%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Backpropagation scholar search",
+      "url": "https://scholar.google.com/scholar?q=1986%20Backpropagation%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Backpropagation Algorithm Architecture Diagram",
+        "zh": "反向传播算法 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "《通过反向传播误差来学习表征》"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

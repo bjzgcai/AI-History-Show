@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:45:43.673Z",
+  "eventKey": "2015-u-net",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "url": "https://arxiv.org/abs/1505.04597",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "Freiburg U-Net release page",
+      "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "usage": ""
+    },
+    {
+      "type": "Toolkit",
+      "label": "nnU-Net implementation project",
+      "url": "https://github.com/MIC-DKFZ/nnUNet",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "University of Freiburg LMB",
+      "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+      "usage": "Historical figure / U-Net co-author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Olaf Ronneberger Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Olaf%20Ronneberger%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Philipp Fischer Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Philipp%20Fischer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Thomas Brox Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Brox%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "U-Net Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=U-Net%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "U-Net Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=U-Net%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20U-Net%20Olaf%20Ronneberger%20Philipp%20Fischer%20Thomas%20Brox%20AI%20history%20source%20images",
+      "query": "2015 U-Net Olaf Ronneberger Philipp Fischer Thomas Brox AI history source images",
+      "eventKey": "2015-u-net"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20U-Net%20Olaf%20Ronneberger%20Philipp%20Fischer%20Thomas%20Brox%20AI%20history%20source%20images",
+      "query": "2015 U-Net Olaf Ronneberger Philipp Fischer Thomas Brox AI history source images",
+      "eventKey": "2015-u-net"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20U-Net%20Olaf%20Ronneberger%20Philipp%20Fischer%20Thomas%20Brox%20AI%20history%20source%20images",
+      "query": "2015 U-Net Olaf Ronneberger Philipp Fischer Thomas Brox AI history source images",
+      "eventKey": "2015-u-net"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Olaf Ronneberger portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Olaf%20Ronneberger%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Olaf Ronneberger Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Olaf%20Ronneberger%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Olaf Ronneberger official biography search",
+      "url": "https://www.google.com/search?q=Olaf%20Ronneberger%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Philipp Fischer portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Philipp%20Fischer%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Philipp Fischer Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Philipp%20Fischer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Philipp Fischer official biography search",
+      "url": "https://www.google.com/search?q=Philipp%20Fischer%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Thomas Brox portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Brox%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Thomas Brox Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Brox%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Thomas Brox official biography search",
+      "url": "https://www.google.com/search?q=Thomas%20Brox%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "U-Net event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20U-Net%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "U-Net Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=U-Net%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "U-Net Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=U-Net%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "U-Net publication search",
+      "url": "https://www.google.com/search?q=2015%20U-Net%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "U-Net scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20U-Net%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "sourceUrl": "https://arxiv.org/abs/1505.04597",
+      "finalUrl": "https://arxiv.org/abs/1505.04597",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1505.04597] U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "savedPath": "pages/001.u-net-convolutional-networks-for-biomedical-image-segmentation.html",
+      "fetchedAt": "2026-07-03T10:45:44.049Z"
+    },
+    {
+      "label": "Freiburg U-Net release page",
+      "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "finalUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "savedPath": "pages/002.freiburg-u-net-release-page.html",
+      "fetchedAt": "2026-07-03T10:45:47.227Z"
+    },
+    {
+      "label": "nnU-Net implementation project",
+      "sourceUrl": "https://github.com/MIC-DKFZ/nnUNet",
+      "finalUrl": "https://github.com/MIC-DKFZ/nnUNet",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - MIC-DKFZ/nnUNet · GitHub",
+      "savedPath": "pages/003.nnu-net-implementation-project.html",
+      "fetchedAt": "2026-07-03T10:45:48.348Z"
+    },
+    {
+      "label": "University of Freiburg LMB",
+      "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+      "finalUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "title": "Homepage of Olaf Ronneberger",
+      "savedPath": "pages/004.university-of-freiburg-lmb.html",
+      "fetchedAt": "2026-07-03T10:45:49.547Z"
+    },
+    {
+      "label": "Olaf Ronneberger Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Olaf%20Ronneberger%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Olaf%20Ronneberger%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.olaf-ronneberger-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:45:51.122Z"
+    },
+    {
+      "label": "Philipp Fischer Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Philipp%20Fischer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Philipp%20Fischer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.philipp-fischer-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:45:52.942Z"
+    },
+    {
+      "label": "Thomas Brox Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Brox%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Brox%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.thomas-brox-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:45:54.411Z"
+    },
+    {
+      "label": "U-Net Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=U-Net%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=U-Net%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.u-net-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:45:57.610Z"
+    },
+    {
+      "label": "U-Net Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=U-Net%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=U-Net%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.u-net-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:45:58.294Z"
+    }
+  ]
+}

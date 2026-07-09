@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Teuvo Kohonen",
+        "zh": "泰沃·科霍宁"
+      },
+      "role": {
+        "en": "Creator of self-organizing maps",
+        "zh": "自组织映射提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+          "license": {
+            "en": "Creative Commons Attribution, per Wikimedia Commons.",
+            "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

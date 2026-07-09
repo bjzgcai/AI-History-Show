@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Gao Huang",
+        "zh": "黄高"
+      },
+      "role": {
+        "en": "DenseNet author",
+        "zh": "DenseNet作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    }
+  ]
+}

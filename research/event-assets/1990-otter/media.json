@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:33.758Z",
+  "eventKey": "1990-otter",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "William McCune",
+      "role": "Creator of Otter",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "William McCune portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=William%20McCune%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "William McCune Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=William%20McCune%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "William McCune official biography search",
+          "url": "https://www.google.com/search?q=William%20McCune%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Otter event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1990s%20Otter%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Otter Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Otter%201990s&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Otter Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Otter%201990s",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Otter publication search",
+      "url": "https://www.google.com/search?q=1990s%20Otter%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Otter scholar search",
+      "url": "https://scholar.google.com/scholar?q=1990s%20Otter%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Otter input clauses",
+        "zh": "Otter 输入子句"
+      },
+      "subcaption": {
+        "en": "Original local explainer for turning assumptions and goals into Otter clause lists.",
+        "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "sourceLabel": "OTTER 3.3 Reference Manual",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Input-format diagram",
+        "zh": "输入格式图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Otter proof trace",
+        "zh": "Otter 证明轨迹"
+      },
+      "subcaption": {
+        "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction.",
+        "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "sourceLabel": "OTTER 3.3 Reference Manual",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Proof-trace diagram",
+        "zh": "证明轨迹图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Given-clause proof loop",
+        "zh": "given-clause 证明循环"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+        "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "sourceLabel": "OTTER 3.3 Reference Manual",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Proof-search diagram",
+        "zh": "证明搜索图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Clause indexing map",
+        "zh": "子句索引地图"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+        "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
+      },
+      "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+      "sourceLabel": "OTTER 3.3 Reference Manual",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Indexing diagram",
+        "zh": "索引图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Spectrum of Applications of Automated Reasoning",
+        "url": "https://arxiv.org/abs/cs/0205078",
+        "usage": ""
+      },
+      {
+        "type": "Application paper",
+        "label": "Checking Clinical Guidelines using Automated Reasoning Tools",
+        "url": "https://arxiv.org/abs/0806.0250",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

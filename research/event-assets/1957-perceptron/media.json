@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:29:12.341Z",
+  "eventKey": "1957-perceptron",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Frank Rosenblatt",
+      "role": "Inventor of the perceptron",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Frank Rosenblatt Cornell portrait search",
+          "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20Cornell%20portrait",
+          "usage": "Use as lead only; verify original source and rights."
+        },
+        {
+          "type": "bio-search",
+          "label": "Cornell Frank Rosenblatt biography/photo search",
+          "url": "https://www.google.com/search?q=site%3Acornell.edu%20Frank%20Rosenblatt%20photo",
+          "usage": "Institutional portrait/photo lead."
+        },
+        {
+          "type": "portrait-search",
+          "label": "Frank Rosenblatt portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Frank Rosenblatt Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Frank Rosenblatt official biography search",
+          "url": "https://www.google.com/search?q=Frank%20Rosenblatt%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "artifact-page",
+      "label": "Mark I Perceptron artifact page",
+      "url": "https://en.wikipedia.org/wiki/Mark_I_Perceptron",
+      "usage": "Artifact image lead; review linked file page before production use."
+    },
+    {
+      "type": "institution-photo",
+      "label": "Cornell Chronicle perceptron retrospective photo lead",
+      "url": "https://news.cornell.edu/stories/2019/09/rosenblatts-perceptron-paved-way-ai-60-years-too-soon",
+      "usage": "Likely institution-controlled photo lead; rights must be checked."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "The Perceptron and Connectionism event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1957%20The%20Perceptron%20and%20Connectionism%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "The Perceptron and Connectionism Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=The%20Perceptron%20and%20Connectionism%201957&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "The Perceptron and Connectionism Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=The%20Perceptron%20and%20Connectionism%201957",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-record",
+      "label": "The Perceptron Psychological Review DOI",
+      "url": "https://doi.org/10.1037/h0042519",
+      "usage": "Primary paper record."
+    },
+    {
+      "type": "publication-record",
+      "label": "Principles of Neurodynamics archive record",
+      "url": "https://archive.org/details/principlesofneur00fran",
+      "usage": "Book cover/scan candidate; rights must be checked."
+    },
+    {
+      "type": "publication-search",
+      "label": "The Perceptron and Connectionism publication search",
+      "url": "https://www.google.com/search?q=1957%20The%20Perceptron%20and%20Connectionism%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "The Perceptron and Connectionism scholar search",
+      "url": "https://scholar.google.com/scholar?q=1957%20The%20Perceptron%20and%20Connectionism%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "zh": "《感知机：大脑中信息存储与组织的概率模型》"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "The Perceptron and Connectionism",
+        "zh": "感知机与连接主义"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "The Perceptron and Connectionism",
+        "zh": "感知机与连接主义"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [
+      {
+        "type": "person",
+        "label": "Frank Rosenblatt biography overview",
+        "url": "https://en.wikipedia.org/wiki/Frank_Rosenblatt",
+        "usage": "Biography lead for portrait/source references.",
+        "status": "seed"
+      }
+    ],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "primary",
+        "label": "Rosenblatt perceptron paper DOI",
+        "url": "https://doi.org/10.1037/h0042519",
+        "usage": "Primary paper record for the perceptron.",
+        "status": "seed"
+      },
+      {
+        "type": "primary-report",
+        "label": "The Perceptron: A Perceiving and Recognizing Automaton report",
+        "url": "https://apps.dtic.mil/sti/citations/AD0256582",
+        "usage": "1957 Cornell Aeronautical Laboratory Project PARA report record.",
+        "status": "seed"
+      },
+      {
+        "type": "publication",
+        "label": "Principles of Neurodynamics book record",
+        "url": "https://archive.org/details/principlesofneur00fran",
+        "usage": "Book-length Perceptron source and publication image lead.",
+        "status": "seed"
+      }
+    ],
+    "institutions": [
+      {
+        "type": "institution",
+        "label": "Cornell Chronicle perceptron retrospective",
+        "url": "https://news.cornell.edu/stories/2019/09/rosenblatts-perceptron-paved-way-ai-60-years-too-soon",
+        "usage": "Institutional history and photo lead source.",
+        "status": "seed"
+      }
+    ]
+  }
+}

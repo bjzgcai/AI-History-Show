@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:24.301Z",
+  "eventKey": "ai100-2017-cyclegan",
+  "year": 2017,
+  "title": {
+    "en": "CycleGAN",
+    "zh": "CycleGAN"
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley",
+      "zh": "UC Berkeley"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "Berkeley, United States"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "description": {
+    "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>",
+    "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Jun-Yan Zhu portrait",
+        "zh": "朱俊彦肖像"
+      },
+      "subcaption": {
+        "en": "CycleGAN lead author",
+        "zh": "CycleGAN 主要作者"
+      },
+      "sourceName": {
+        "en": "Jun-Yan Zhu homepage",
+        "zh": "朱俊彦个人主页"
+      },
+      "sourceUrl": "https://www.cs.cmu.edu/~junyanz/",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "CycleGAN explainer",
+        "zh": "CycleGAN 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1703.10593",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Jun-Yan Zhu",
+        "type": "portrait-search",
+        "label": "Jun-Yan Zhu portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jun-Yan%20Zhu%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jun-Yan Zhu",
+        "type": "commons-portrait-search",
+        "label": "Jun-Yan Zhu Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jun-Yan%20Zhu%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "CycleGAN event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2017%20CycleGAN%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "CycleGAN Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=CycleGAN%202017&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "CycleGAN Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=CycleGAN%202017",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "CycleGAN publication search",
+        "url": "https://www.google.com/search?q=2017%20CycleGAN%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "CycleGAN scholar search",
+        "url": "https://scholar.google.com/scholar?q=2017%20CycleGAN%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

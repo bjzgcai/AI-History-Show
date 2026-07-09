@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "DCGAN lead author",
+        "zh": "DCGAN 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/alec-radford.png",
+          "sourceUrl": "resources/images/figures/alec-radford.png",
+          "license": {
+            "en": "Local project image; reuse rights inherited from existing project asset metadata.",
+            "zh": "本地项目图片；复用权利沿用现有项目素材元数据。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

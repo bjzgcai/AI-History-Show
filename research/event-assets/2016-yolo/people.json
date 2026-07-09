@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Joseph Redmon",
+        "zh": "约瑟夫·雷德蒙"
+      },
+      "role": {
+        "en": "First author of YOLO",
+        "zh": "YOLO 第一作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+          "sourceUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+          "license": {
+            "en": "Institution news image; rights not stated.",
+            "zh": "Institution news image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Ali Farhadi",
+        "zh": "阿里·法哈迪"
+      },
+      "role": {
+        "en": "Co-author of YOLO",
+        "zh": "YOLO 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+          "sourceUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+          "license": {
+            "en": "Institution news image; rights not stated.",
+            "zh": "Institution news image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

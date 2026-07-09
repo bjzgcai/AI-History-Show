@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:06.479Z",
+  "eventKey": "1984-cart",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1984-cart",
+      "label": "Portrait from the University of York Portraits of Statisticians archive.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-the-university-of-york-portraits-of-statisticians-archive.gif",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 293815,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / CART co-author portrait",
+      "rights": "Archive portrait; rights not stated.",
+      "downloadedAt": "2026-07-03T11:03:06.174Z"
+    },
+    {
+      "eventKey": "1984-cart",
+      "label": "Distinct local redraw for CART, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-cart-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1378,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:03:06.479Z"
+    }
+  ]
+}

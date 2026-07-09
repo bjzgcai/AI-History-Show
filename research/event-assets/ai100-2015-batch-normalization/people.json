@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Sergey Ioffe",
+        "zh": "谢尔盖·约费"
+      },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "sourceUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "sourceUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

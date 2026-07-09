@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Volodymyr Mnih",
+        "zh": "沃洛迪米尔·姆尼赫"
+      },
+      "role": {
+        "en": "First author of DQN work",
+        "zh": "DQN 工作第一作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+          "sourceUrl": "https://www.cs.utoronto.ca/~vmnih/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "戴维·席尔瓦"
+      },
+      "role": {
+        "en": "DeepMind reinforcement learning researcher",
+        "zh": "DeepMind 强化学习研究者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+          "sourceUrl": "https://www.cs.utoronto.ca/~vmnih/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

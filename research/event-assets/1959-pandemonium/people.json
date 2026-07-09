@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Oliver Selfridge",
+        "zh": "奥利弗·塞尔弗里奇"
+      },
+      "role": {
+        "en": "Author of the Pandemonium architecture",
+        "zh": "Pandemonium 架构提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+          "license": {
+            "en": "CC0",
+            "zh": "CC0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}
