@@ -13049,7 +13049,7 @@ module.exports = {
     "videos": []
   },
   "1958-rosenblatt-perceptron": {
-    "year": "1958",
+    "year": "1957",
     "title": {
       "en": "Rosenblatt Perceptron",
       "zh": "罗森布拉特 感知机"

@@ -1051,7 +1051,7 @@ module.exports = {
     article: archive('PMLR', 'Batch Normalization', 'Open ICML paper page for batch normalization.', 'https://proceedings.mlr.press/v37/ioffe15.html')
   }),
   'ai100-2017-densenet': event({
-    year: 2017,
+    year: 2016,
     title: 'DenseNet',
     location: 'Cornell University',
     country: 'Ithaca, United States',
