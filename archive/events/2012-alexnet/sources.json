@@ -1,0 +1,38 @@
+[
+  {
+    "id": "alexnet-paper",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+  },
+  {
+    "id": "imagenet-site",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "ImageNet Large Scale Visual Recognition Challenge",
+      "zh": "ImageNet 大规模视觉识别挑战"
+    },
+    "url": "https://www.image-net.org/challenges/LSVRC/"
+  },
+  {
+    "id": "hinton-profile",
+    "type": {
+      "en": "Institution profile",
+      "zh": "机构人物资料"
+    },
+    "label": {
+      "en": "University of Toronto: Geoffrey Hinton",
+      "zh": "多伦多大学：杰弗里·辛顿"
+    },
+    "url": "https://www.cs.toronto.edu/~hinton/"
+  }
+]

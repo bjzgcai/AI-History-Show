@@ -1,0 +1,9 @@
+{
+  "kinds": [
+    { "id": "image", "label": { "en": "Image", "zh": "图片" } },
+    { "id": "video", "label": { "en": "Video", "zh": "视频" } },
+    { "id": "paper", "label": { "en": "Paper", "zh": "论文" } },
+    { "id": "page", "label": { "en": "Web page", "zh": "网页" } },
+    { "id": "data", "label": { "en": "Dataset or metadata", "zh": "数据集或元数据" } }
+  ]
+}

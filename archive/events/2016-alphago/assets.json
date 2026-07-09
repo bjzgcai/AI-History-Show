@@ -1,0 +1,55 @@
+[
+  {
+    "id": "alphago-lee-sedol",
+    "kind": "image",
+    "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+    "caption": {
+      "en": "Lee Sedol portrait",
+      "zh": "李世石肖像"
+    },
+    "subcaption": {
+      "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
+      "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
+    },
+    "sourceId": "lee-sedol-photo",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+    "rights": "CC BY 2.0",
+    "usage": {
+      "en": "Portrait card",
+      "zh": "人物资料卡"
+    }
+  },
+  {
+    "id": "alphago-policy-value-search",
+    "kind": "image",
+    "path": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+    "caption": {
+      "en": "Policy-value-search explainer",
+      "zh": "策略-价值-搜索解释图"
+    },
+    "subcaption": {
+      "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
+      "zh": "根据《自然》AlphaGo 论文与谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+    },
+    "sourceId": "alphago-nature-paper",
+    "sourceName": {
+      "en": "Nature / Google DeepMind",
+      "zh": "《自然》 / 谷歌 DeepMind"
+    },
+    "sourceUrl": "https://www.nature.com/articles/nature16961",
+    "originalImageUrl": "Local original explainer",
+    "rights": {
+      "en": "Original local explainer; publisher figure reuse rights not used.",
+      "zh": "本地原创解释图；未复用出版方论文图。"
+    },
+    "usage": {
+      "en": "Supporting image / Explainer graphic",
+      "zh": "辅助说明图 / 解释性图形"
+    }
+  }
+]

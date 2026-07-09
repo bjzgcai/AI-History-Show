@@ -1,0 +1,9 @@
+{
+  "description": {
+    "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+    "zh": "2017 年，瓦斯瓦尼等人在《注意力就是你所需要的一切》一文中提出 Transformer，其中注意力机制不再只是对齐输入输出，而是对序列内部关系建模。Transformer 不再依赖循环或卷积，成为现代大语言模型的重要基础。"
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4"
+  ]
+}

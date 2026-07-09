@@ -1,0 +1,83 @@
+[
+  {
+    "id": "alexnet-portrait",
+    "kind": "image",
+    "path": "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
+    "caption": {
+      "en": "Researcher portrait",
+      "zh": "研究者肖像"
+    },
+    "subcaption": {
+      "en": "AlexNet research team context",
+      "zh": "AlexNet 研究团队相关照片"
+    },
+    "sourceId": "hinton-profile",
+    "sourceName": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "sourceUrl": "https://www.cs.toronto.edu/~hinton/",
+    "rights": {
+      "en": "Reference image used for exhibition context; verify original license before reuse outside this project.",
+      "zh": "作为展览语境参考图使用；在本项目外复用前需核验原始许可。"
+    },
+    "usage": {
+      "en": "Portrait card",
+      "zh": "人物资料卡"
+    }
+  },
+  {
+    "id": "alexnet-architecture-main",
+    "kind": "image",
+    "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+    "caption": {
+      "en": "Architecture",
+      "zh": "结构示意"
+    },
+    "subcaption": {
+      "en": "AlexNet architecture explainer",
+      "zh": "AlexNet 架构解释图"
+    },
+    "sourceId": "alexnet-paper",
+    "sourceName": {
+      "en": "NeurIPS",
+      "zh": "NeurIPS"
+    },
+    "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+    "rights": {
+      "en": "Local exhibition asset based on published architecture descriptions.",
+      "zh": "基于公开论文架构描述整理的本地展览素材。"
+    },
+    "usage": {
+      "en": "Architecture visualization",
+      "zh": "架构可视化"
+    }
+  },
+  {
+    "id": "alexnet-architecture-secondary",
+    "kind": "image",
+    "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png",
+    "caption": {
+      "en": "Architecture",
+      "zh": "结构示意"
+    },
+    "subcaption": {
+      "en": "Deep CNN pipeline illustration",
+      "zh": "深度 CNN 流程示意"
+    },
+    "sourceId": "alexnet-paper",
+    "sourceName": {
+      "en": "NeurIPS",
+      "zh": "NeurIPS"
+    },
+    "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+    "rights": {
+      "en": "Local exhibition asset based on published architecture descriptions.",
+      "zh": "基于公开论文架构描述整理的本地展览素材。"
+    },
+    "usage": {
+      "en": "Supporting architecture image",
+      "zh": "辅助架构图片"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-history-show.local/archive/schemas/claim.schema.json",
+  "title": "Archive Claim",
+  "type": "object",
+  "required": ["id", "text", "sourceIds"],
+  "properties": {
+    "id": { "type": "string" },
+    "text": {
+      "type": "object",
+      "required": ["en", "zh"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "zh": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    }
+  }
+}

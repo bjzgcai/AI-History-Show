@@ -1,0 +1,26 @@
+[
+  {
+    "id": "alphago-hybrid-system",
+    "text": {
+      "en": "AlphaGo combined policy networks, value networks and Monte Carlo tree search.",
+      "zh": "AlphaGo 结合了策略网络、价值网络和蒙特卡洛树搜索。"
+    },
+    "sourceIds": ["alphago-nature-paper"]
+  },
+  {
+    "id": "alphago-lee-sedol-match",
+    "text": {
+      "en": "The 2016 match against Lee Sedol made AlphaGo a public landmark for strategic AI.",
+      "zh": "2016 年与李世石的对局让 AlphaGo 成为战略型 AI 的公众标志事件。"
+    },
+    "sourceIds": ["deepmind-alphago-page"]
+  },
+  {
+    "id": "alphago-interactive-analysis",
+    "text": {
+      "en": "Modern Go analysis engines can expose policy suggestions, win-rate shifts and search variations for interactive demonstrations.",
+      "zh": "现代围棋分析引擎可用于交互演示策略建议、胜率变化和搜索分支。"
+    },
+    "sourceIds": ["katago-analysis-engine"]
+  }
+]

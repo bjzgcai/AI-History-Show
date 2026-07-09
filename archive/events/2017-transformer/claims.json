@@ -1,0 +1,18 @@
+[
+  {
+    "id": "transformer-removes-recurrence",
+    "text": {
+      "en": "The Transformer replaced recurrence and convolution with self-attention as the core sequence modeling mechanism.",
+      "zh": "Transformer 用自注意力作为核心序列建模机制，替代了循环和卷积。"
+    },
+    "sourceIds": ["transformer-paper"]
+  },
+  {
+    "id": "transformer-enables-scalable-pretraining",
+    "text": {
+      "en": "The architecture became a foundation for scalable pretraining and later large language models.",
+      "zh": "该架构成为可扩展预训练和后续大语言模型的重要基础。"
+    },
+    "sourceIds": ["transformer-paper", "google-research-blog"]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "alexnet-imagenet-2012",
+    "text": {
+      "en": "AlexNet won the ImageNet 2012 classification task with a large deep convolutional network trained on GPUs.",
+      "zh": "AlexNet 在 2012 年 ImageNet 分类任务中凭借 GPU 训练的大型深度卷积网络取得突破性成绩。"
+    },
+    "sourceIds": ["alexnet-paper", "imagenet-site"]
+  },
+  {
+    "id": "alexnet-techniques",
+    "text": {
+      "en": "The system combined deep CNNs with ReLU activations, data augmentation, dropout and GPU engineering.",
+      "zh": "该系统结合了深度 CNN、ReLU 激活、数据增强、Dropout 和 GPU 工程优化。"
+    },
+    "sourceIds": ["alexnet-paper"]
+  }
+]

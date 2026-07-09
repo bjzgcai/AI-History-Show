@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-history-show.local/archive/schemas/storyline.schema.json",
+  "title": "Archive Storyline",
+  "type": "object",
+  "required": ["id", "title", "events"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "$ref": "event.schema.json#/$defs/localizedText" },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["eventId"],
+        "properties": {
+          "eventId": { "type": "string" },
+          "variantId": { "type": "string" }
+        }
+      }
+    }
+  }
+}
