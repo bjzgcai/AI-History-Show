@@ -1,0 +1,49 @@
+{
+  "id": "2012-alexnet",
+  "year": 2012,
+  "title": {
+    "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
+    "zh": "ImageNet时代：AlexNet与深度学习爆发"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Canada",
+      "zh": "加拿大"
+    },
+    "coordinates": [43.6629, -79.3957]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alex Krizhevsky",
+        "zh": "亚历克斯·克里热夫斯基"
+      },
+      "role": {
+        "en": "AlexNet author",
+        "zh": "AlexNet 作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Advisor",
+        "zh": "导师"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.",
+    "zh": "我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。"
+  },
+  "quotePage": {
+    "en": "AlexNet paper abstract",
+    "zh": "AlexNet 论文摘要"
+  }
+}

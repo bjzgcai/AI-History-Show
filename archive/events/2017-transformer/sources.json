@@ -1,0 +1,38 @@
+[
+  {
+    "id": "transformer-paper",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Attention Is All You Need",
+      "zh": "《注意力就是你所需要的一切》"
+    },
+    "url": "https://arxiv.org/abs/1706.03762"
+  },
+  {
+    "id": "google-research-blog",
+    "type": {
+      "en": "Blog",
+      "zh": "博客"
+    },
+    "label": {
+      "en": "Google Research: Transformer",
+      "zh": "谷歌研究：Transformer"
+    },
+    "url": "https://research.google/pubs/attention-is-all-you-need/"
+  },
+  {
+    "id": "annotated-transformer",
+    "type": {
+      "en": "Explainer",
+      "zh": "解释文章"
+    },
+    "label": {
+      "en": "The Annotated Transformer",
+      "zh": "The Annotated Transformer 解释文章"
+    },
+    "url": "https://nlp.seas.harvard.edu/annotated-transformer/"
+  }
+]

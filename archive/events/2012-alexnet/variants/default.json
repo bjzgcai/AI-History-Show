@@ -1,0 +1,9 @@
+{
+  "description": {
+    "en": "From 2012 to 2014, AlexNet, VGG and GoogLeNet won ImageNet with deep neural networks. Their success came from the convergence of data, GPUs and engineering, proving that deep learning could dominate large-scale visual recognition.",
+    "zh": "2012-2014年，获得ImageNet冠军的 AlexNet、VGG、GoogLeNet，其成功并非源于全新的算法，而是大数据（ImageNet）、大算力（GPU）和算法优化（ReLU、Dropout）的结合。"
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4"
+  ]
+}

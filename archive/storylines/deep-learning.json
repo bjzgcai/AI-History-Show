@@ -1,0 +1,11 @@
+{
+  "id": "deep-learning",
+  "title": {
+    "en": "Deep Learning and the Unification of Paradigms",
+    "zh": "深度学习与范式归一"
+  },
+  "events": [
+    { "eventId": "2012-alexnet", "variantId": "default" },
+    { "eventId": "2017-transformer", "variantId": "default" }
+  ]
+}

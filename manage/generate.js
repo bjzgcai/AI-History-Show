@@ -39,7 +39,10 @@ const {
 const catalogConfig = require('./catalog.js');
 const categories = Array.isArray(catalogConfig.categories) ? catalogConfig.categories : [];
 const branches = Array.isArray(catalogConfig.branches) ? catalogConfig.branches : [];
-const eventsMap = require('./events.js');
+const legacyEventsMap = require('./events.js');
+const { loadArchiveEvents } = require('../archive/compiler.js');
+const archiveEventsMap = loadArchiveEvents();
+const eventsMap = { ...legacyEventsMap, ...archiveEventsMap };
 const avatarRegistry = loadAvatarRegistry();
 const researchCandidates = loadResearchCandidates();
 const quoteCandidates = loadQuoteCandidates(QUOTE_CANDIDATES_PATH);
@@ -731,7 +734,7 @@ function buildOutputContent(now) {
     return [
         `// AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）`,
         `// 生成时间: ${now}`,
-        `// 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/`,
+        `// 数据来源: archive/  +  manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/`,
         ``,
         `const milestones = ${JSON.stringify(milestones, null, 2)};`,
         ``,

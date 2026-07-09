@@ -1,0 +1,38 @@
+[
+  {
+    "question": {
+      "en": "AlphaGo did not just search harder. What did it learn to guide search?",
+      "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？"
+    },
+    "options": [
+      {
+        "en": "Policy priors and value estimates",
+        "zh": "策略先验和价值估计"
+      },
+      {
+        "en": "The referee's handwriting",
+        "zh": "裁判的笔迹"
+      },
+      {
+        "en": "Only the board color",
+        "zh": "只有棋盘颜色"
+      },
+      {
+        "en": "A fixed first move for every game",
+        "zh": "每盘棋固定第一手"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead.",
+      "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。"
+    },
+    "source": {
+      "label": {
+        "en": "Nature 2016 AlphaGo paper",
+        "zh": "《自然》2016 AlphaGo 论文"
+      }
+    },
+    "tags": ["reinforcement-learning", "games"]
+  }
+]

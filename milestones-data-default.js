@@ -1,6 +1,6 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-08 03:44
-// 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
+// 生成时间: 2026-07-09 21:18
+// 数据来源: archive/  +  manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
   {
@@ -2054,12 +2054,27 @@ const milestones = [
       "imageMeta": {
         "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Researcher portrait",
+            "zh": "研究者肖像"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "AlexNet research team context",
+            "zh": "AlexNet 研究团队相关照片"
+          },
+          "sourceName": {
+            "en": "University of Toronto",
+            "zh": "多伦多大学"
+          },
+          "source": "https://www.cs.toronto.edu/~hinton/",
+          "sourceUrl": "https://www.cs.toronto.edu/~hinton/",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Reference image used for exhibition context; verify original license before reuse outside this project.",
+            "zh": "作为展览语境参考图使用；在本项目外复用前需核验原始许可。"
+          },
+          "usage": {
+            "en": "Portrait card",
+            "zh": "人物资料卡"
           }
         },
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
@@ -2093,8 +2108,23 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
-            "zh": "ImageNet时代：AlexNet与深度学习爆发 架构图"
+            "en": "Deep CNN pipeline illustration",
+            "zh": "深度 CNN 流程示意"
+          },
+          "sourceName": {
+            "en": "NeurIPS",
+            "zh": "NeurIPS"
+          },
+          "source": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Local exhibition asset based on published architecture descriptions.",
+            "zh": "基于公开论文架构描述整理的本地展览素材。"
+          },
+          "usage": {
+            "en": "Supporting architecture image",
+            "zh": "辅助架构图片"
           }
         },
         "resources/images/figures/alex-krizhevsky.jpg": {
@@ -4239,18 +4269,48 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Transformer diagram",
+            "en": "Transformer architecture diagram",
             "zh": "Transformer 架构图"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1706.03762",
+          "sourceUrl": "https://arxiv.org/abs/1706.03762",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Local exhibition asset for architecture explanation.",
+            "zh": "用于架构讲解的本地展览素材。"
+          },
+          "usage": {
+            "en": "Architecture visualization",
+            "zh": "架构可视化"
           }
         },
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
           "caption": {
-            "en": "Architecture",
-            "zh": "结构示意"
+            "en": "Attention explainer",
+            "zh": "注意力解释图"
           },
           "subcaption": {
-            "en": "Transformer diagram",
-            "zh": "Transformer 架构图"
+            "en": "Self-attention flow illustration",
+            "zh": "自注意力流程示意"
+          },
+          "sourceName": {
+            "en": "The Annotated Transformer",
+            "zh": "The Annotated Transformer"
+          },
+          "source": "https://nlp.seas.harvard.edu/annotated-transformer/",
+          "sourceUrl": "https://nlp.seas.harvard.edu/annotated-transformer/",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Local exhibition asset used as an explanatory visualization.",
+            "zh": "作为解释性可视化使用的本地展览素材。"
+          },
+          "usage": {
+            "en": "Supporting explainer image",
+            "zh": "辅助解释图片"
           }
         },
         "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
@@ -4261,6 +4321,21 @@ const milestones = [
           "subcaption": {
             "en": "Attention Is All You Need",
             "zh": "《注意力就是你所需要的一切》"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1706.03762",
+          "sourceUrl": "https://arxiv.org/abs/1706.03762",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Paper reference thumbnail; verify publisher terms for reuse beyond this exhibit.",
+            "zh": "论文参考缩略图；在本展览外复用前需核验出版方条款。"
+          },
+          "usage": {
+            "en": "Paper reference card",
+            "zh": "论文资料卡"
           }
         },
         "resources/images/figures/ashish-vaswani.jpg": {
@@ -7260,8 +7335,8 @@ const milestones = [
         "zh": "谷歌 DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国，伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.5074,
@@ -7321,7 +7396,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等，《自然》，2016"
     },
     "quoteMeta": {
       "speaker": "",
@@ -7331,7 +7406,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+        "zh": "大卫·席尔瓦等，《自然》，2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -7348,7 +7423,7 @@ const milestones = [
         },
         "html": {
           "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -7393,8 +7468,12 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
-          "originalImageUrl": "Not available",
-          "license": "CC BY 2.0"
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "license": "CC BY 2.0",
+          "usage": {
+            "en": "Portrait card",
+            "zh": "人物资料卡"
+          }
         },
         "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
           "caption": {
@@ -7403,7 +7482,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
-            "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+            "zh": "根据《自然》AlphaGo 论文与谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
           },
           "sourceName": {
             "en": "Nature / Google DeepMind",
@@ -7412,7 +7491,10 @@ const milestones = [
           "source": "https://www.nature.com/articles/nature16961",
           "sourceUrl": "https://www.nature.com/articles/nature16961",
           "originalImageUrl": "Local original explainer",
-          "license": "Original local explainer; publisher figure reuse rights not used.",
+          "license": {
+            "en": "Original local explainer; publisher figure reuse rights not used.",
+            "zh": "本地原创解释图；未复用出版方论文图。"
+          },
           "usage": {
             "en": "Supporting image / Explainer graphic",
             "zh": "辅助说明图 / 解释性图形"
@@ -7443,7 +7525,7 @@ const milestones = [
       },
       "material": {
         "en": "Nature paper + blog + SGF/API",
-        "zh": "《自然》 论文 + 博客 + 棋谱/API"
+        "zh": "《自然》论文 + 博客 + 棋谱/API"
       },
       "demo": {
         "en": "Move 37 board explainer",
@@ -7493,7 +7575,7 @@ const milestones = [
           },
           "description": {
             "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
-            "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+            "zh": "《自然》官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "source": "https://www.nature.com/articles/nature16961",
@@ -7507,7 +7589,7 @@ const milestones = [
           },
           "action": {
             "en": "Open Nature paper",
-            "zh": "打开 《自然》 论文"
+            "zh": "打开《自然》论文"
           }
         }
       ],
@@ -7519,31 +7601,42 @@ const milestones = [
           },
           "label": {
             "en": "Nature 2016 AlphaGo paper",
-            "zh": "《自然》 2016 AlphaGo 论文"
+            "zh": "《自然》2016 AlphaGo 论文"
           },
           "url": "https://www.nature.com/articles/nature16961"
         },
         {
           "type": {
-            "en": "Blog",
-            "zh": "博客"
+            "en": "Project",
+            "zh": "项目"
           },
           "label": {
             "en": "Google DeepMind AlphaGo",
             "zh": "谷歌 DeepMind AlphaGo"
           },
-          "url": "https://deepmind.google/research/alphago/"
+          "url": "https://deepmind.google/research/breakthroughs/alphago/"
         },
         {
           "type": {
-            "en": "API",
-            "zh": "API"
+            "en": "Code / API",
+            "zh": "代码 / API"
           },
           "label": {
             "en": "KataGo Analysis Engine",
             "zh": "KataGo 分析引擎"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Wikimedia Commons: Lee Se-Dol",
+            "zh": "维基共享资源：李世石"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg"
         }
       ]
     },
@@ -7578,13 +7671,13 @@ const milestones = [
       },
       "source": {
         "label": {
-          "en": "BenchCouncil AI100 achievement notes",
-          "zh": "BenchCouncil AI100 成就内容"
+          "en": "Nature 2016 AlphaGo paper",
+          "zh": "《自然》2016 AlphaGo 论文"
         }
       },
       "tags": [
-        "games",
-        "search"
+        "reinforcement-learning",
+        "games"
       ]
     },
     "quizzes": [
@@ -7619,13 +7712,13 @@ const milestones = [
         },
         "source": {
           "label": {
-            "en": "BenchCouncil AI100 achievement notes",
-            "zh": "BenchCouncil AI100 成就内容"
+            "en": "Nature 2016 AlphaGo paper",
+            "zh": "《自然》2016 AlphaGo 论文"
           }
         },
         "tags": [
-          "games",
-          "search"
+          "reinforcement-learning",
+          "games"
         ]
       }
     ]
@@ -34836,12 +34929,27 @@ const milestones = [
       "imageMeta": {
         "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
           "caption": {
-            "en": "Portrait",
-            "zh": "人物肖像"
+            "en": "Researcher portrait",
+            "zh": "研究者肖像"
           },
           "subcaption": {
-            "en": "Relevant researcher photo",
-            "zh": "相关研究者照片"
+            "en": "AlexNet research team context",
+            "zh": "AlexNet 研究团队相关照片"
+          },
+          "sourceName": {
+            "en": "University of Toronto",
+            "zh": "多伦多大学"
+          },
+          "source": "https://www.cs.toronto.edu/~hinton/",
+          "sourceUrl": "https://www.cs.toronto.edu/~hinton/",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Reference image used for exhibition context; verify original license before reuse outside this project.",
+            "zh": "作为展览语境参考图使用；在本项目外复用前需核验原始许可。"
+          },
+          "usage": {
+            "en": "Portrait card",
+            "zh": "人物资料卡"
           }
         },
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
@@ -34875,8 +34983,23 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough",
-            "zh": "ImageNet时代：AlexNet与深度学习爆发 架构图"
+            "en": "Deep CNN pipeline illustration",
+            "zh": "深度 CNN 流程示意"
+          },
+          "sourceName": {
+            "en": "NeurIPS",
+            "zh": "NeurIPS"
+          },
+          "source": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Local exhibition asset based on published architecture descriptions.",
+            "zh": "基于公开论文架构描述整理的本地展览素材。"
+          },
+          "usage": {
+            "en": "Supporting architecture image",
+            "zh": "辅助架构图片"
           }
         },
         "resources/images/figures/alex-krizhevsky.jpg": {
@@ -36787,18 +36910,48 @@ const milestones = [
             "zh": "结构示意"
           },
           "subcaption": {
-            "en": "Transformer diagram",
+            "en": "Transformer architecture diagram",
             "zh": "Transformer 架构图"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1706.03762",
+          "sourceUrl": "https://arxiv.org/abs/1706.03762",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Local exhibition asset for architecture explanation.",
+            "zh": "用于架构讲解的本地展览素材。"
+          },
+          "usage": {
+            "en": "Architecture visualization",
+            "zh": "架构可视化"
           }
         },
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
           "caption": {
-            "en": "Architecture",
-            "zh": "结构示意"
+            "en": "Attention explainer",
+            "zh": "注意力解释图"
           },
           "subcaption": {
-            "en": "Transformer diagram",
-            "zh": "Transformer 架构图"
+            "en": "Self-attention flow illustration",
+            "zh": "自注意力流程示意"
+          },
+          "sourceName": {
+            "en": "The Annotated Transformer",
+            "zh": "The Annotated Transformer"
+          },
+          "source": "https://nlp.seas.harvard.edu/annotated-transformer/",
+          "sourceUrl": "https://nlp.seas.harvard.edu/annotated-transformer/",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Local exhibition asset used as an explanatory visualization.",
+            "zh": "作为解释性可视化使用的本地展览素材。"
+          },
+          "usage": {
+            "en": "Supporting explainer image",
+            "zh": "辅助解释图片"
           }
         },
         "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
@@ -36809,6 +36962,21 @@ const milestones = [
           "subcaption": {
             "en": "Attention Is All You Need",
             "zh": "《注意力就是你所需要的一切》"
+          },
+          "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "source": "https://arxiv.org/abs/1706.03762",
+          "sourceUrl": "https://arxiv.org/abs/1706.03762",
+          "originalImageUrl": "",
+          "license": {
+            "en": "Paper reference thumbnail; verify publisher terms for reuse beyond this exhibit.",
+            "zh": "论文参考缩略图；在本展览外复用前需核验出版方条款。"
+          },
+          "usage": {
+            "en": "Paper reference card",
+            "zh": "论文资料卡"
           }
         },
         "resources/images/figures/ashish-vaswani.jpg": {
@@ -55063,8 +55231,8 @@ const milestones = [
         "zh": "谷歌 DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国，伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.5074,
@@ -55124,7 +55292,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等，《自然》，2016"
     },
     "quoteMeta": {
       "speaker": "",
@@ -55134,7 +55302,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+        "zh": "大卫·席尔瓦等，《自然》，2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -55151,7 +55319,7 @@ const milestones = [
         },
         "html": {
           "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -55196,8 +55364,12 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
-          "originalImageUrl": "Not available",
-          "license": "CC BY 2.0"
+          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "license": "CC BY 2.0",
+          "usage": {
+            "en": "Portrait card",
+            "zh": "人物资料卡"
+          }
         },
         "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
           "caption": {
@@ -55206,7 +55378,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
-            "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+            "zh": "根据《自然》AlphaGo 论文与谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
           },
           "sourceName": {
             "en": "Nature / Google DeepMind",
@@ -55215,7 +55387,10 @@ const milestones = [
           "source": "https://www.nature.com/articles/nature16961",
           "sourceUrl": "https://www.nature.com/articles/nature16961",
           "originalImageUrl": "Local original explainer",
-          "license": "Original local explainer; publisher figure reuse rights not used.",
+          "license": {
+            "en": "Original local explainer; publisher figure reuse rights not used.",
+            "zh": "本地原创解释图；未复用出版方论文图。"
+          },
           "usage": {
             "en": "Supporting image / Explainer graphic",
             "zh": "辅助说明图 / 解释性图形"
@@ -55253,7 +55428,7 @@ const milestones = [
       },
       "material": {
         "en": "Nature paper + blog + SGF/API",
-        "zh": "《自然》 论文 + 博客 + 棋谱/API"
+        "zh": "《自然》论文 + 博客 + 棋谱/API"
       },
       "demo": {
         "en": "Move 37 board explainer",
@@ -55303,7 +55478,7 @@ const milestones = [
           },
           "description": {
             "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
-            "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+            "zh": "《自然》官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "source": "https://www.nature.com/articles/nature16961",
@@ -55317,7 +55492,7 @@ const milestones = [
           },
           "action": {
             "en": "Open Nature paper",
-            "zh": "打开 《自然》 论文"
+            "zh": "打开《自然》论文"
           }
         },
         {
@@ -55366,31 +55541,42 @@ const milestones = [
           },
           "label": {
             "en": "Nature 2016 AlphaGo paper",
-            "zh": "《自然》 2016 AlphaGo 论文"
+            "zh": "《自然》2016 AlphaGo 论文"
           },
           "url": "https://www.nature.com/articles/nature16961"
         },
         {
           "type": {
-            "en": "Blog",
-            "zh": "博客"
+            "en": "Project",
+            "zh": "项目"
           },
           "label": {
             "en": "Google DeepMind AlphaGo",
             "zh": "谷歌 DeepMind AlphaGo"
           },
-          "url": "https://deepmind.google/research/alphago/"
+          "url": "https://deepmind.google/research/breakthroughs/alphago/"
         },
         {
           "type": {
-            "en": "API",
-            "zh": "API"
+            "en": "Code / API",
+            "zh": "代码 / API"
           },
           "label": {
             "en": "KataGo Analysis Engine",
             "zh": "KataGo 分析引擎"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+        },
+        {
+          "type": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "label": {
+            "en": "Wikimedia Commons: Lee Se-Dol",
+            "zh": "维基共享资源：李世石"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg"
         }
       ]
     },
@@ -55425,13 +55611,13 @@ const milestones = [
       },
       "source": {
         "label": {
-          "en": "BenchCouncil AI100 achievement notes",
-          "zh": "BenchCouncil AI100 成就内容"
+          "en": "Nature 2016 AlphaGo paper",
+          "zh": "《自然》2016 AlphaGo 论文"
         }
       },
       "tags": [
-        "games",
-        "search"
+        "reinforcement-learning",
+        "games"
       ]
     },
     "quizzes": [
@@ -55466,13 +55652,13 @@ const milestones = [
         },
         "source": {
           "label": {
-            "en": "BenchCouncil AI100 achievement notes",
-            "zh": "BenchCouncil AI100 成就内容"
+            "en": "Nature 2016 AlphaGo paper",
+            "zh": "《自然》2016 AlphaGo 论文"
           }
         },
         "tags": [
-          "games",
-          "search"
+          "reinforcement-learning",
+          "games"
         ]
       }
     ]

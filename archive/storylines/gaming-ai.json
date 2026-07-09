@@ -1,0 +1,10 @@
+{
+  "id": "gaming-ai",
+  "title": {
+    "en": "AI in Board and Tabletop Games",
+    "zh": "AI 在棋牌与博弈论的演进"
+  },
+  "events": [
+    { "eventId": "2016-alphago", "variantId": "default" }
+  ]
+}

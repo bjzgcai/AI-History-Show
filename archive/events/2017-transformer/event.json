@@ -1,0 +1,39 @@
+{
+  "id": "2017-transformer",
+  "year": 2017,
+  "title": {
+    "en": "Transformer",
+    "zh": "Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "谷歌大脑"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [37.422, -122.0841]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ashish Vaswani",
+        "zh": "阿希什·瓦斯瓦尼"
+      },
+      "role": {
+        "en": "Transformer author",
+        "zh": "Transformer 作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+    "zh": "我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。"
+  },
+  "quotePage": {
+    "en": "Attention Is All You Need abstract",
+    "zh": "《注意力就是你所需要的一切》摘要"
+  }
+}

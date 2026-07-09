@@ -1,0 +1,83 @@
+[
+  {
+    "id": "transformer-architecture-main",
+    "kind": "image",
+    "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+    "caption": {
+      "en": "Architecture",
+      "zh": "结构示意"
+    },
+    "subcaption": {
+      "en": "Transformer architecture diagram",
+      "zh": "Transformer 架构图"
+    },
+    "sourceId": "transformer-paper",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1706.03762",
+    "rights": {
+      "en": "Local exhibition asset for architecture explanation.",
+      "zh": "用于架构讲解的本地展览素材。"
+    },
+    "usage": {
+      "en": "Architecture visualization",
+      "zh": "架构可视化"
+    }
+  },
+  {
+    "id": "transformer-attention-visual",
+    "kind": "image",
+    "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
+    "caption": {
+      "en": "Attention explainer",
+      "zh": "注意力解释图"
+    },
+    "subcaption": {
+      "en": "Self-attention flow illustration",
+      "zh": "自注意力流程示意"
+    },
+    "sourceId": "annotated-transformer",
+    "sourceName": {
+      "en": "The Annotated Transformer",
+      "zh": "The Annotated Transformer"
+    },
+    "sourceUrl": "https://nlp.seas.harvard.edu/annotated-transformer/",
+    "rights": {
+      "en": "Local exhibition asset used as an explanatory visualization.",
+      "zh": "作为解释性可视化使用的本地展览素材。"
+    },
+    "usage": {
+      "en": "Supporting explainer image",
+      "zh": "辅助解释图片"
+    }
+  },
+  {
+    "id": "transformer-paper-page",
+    "kind": "image",
+    "path": "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
+    "caption": {
+      "en": "Paper page",
+      "zh": "论文页面"
+    },
+    "subcaption": {
+      "en": "Attention Is All You Need",
+      "zh": "《注意力就是你所需要的一切》"
+    },
+    "sourceId": "transformer-paper",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1706.03762",
+    "rights": {
+      "en": "Paper reference thumbnail; verify publisher terms for reuse beyond this exhibit.",
+      "zh": "论文参考缩略图；在本展览外复用前需核验出版方条款。"
+    },
+    "usage": {
+      "en": "Paper reference card",
+      "zh": "论文资料卡"
+    }
+  }
+]

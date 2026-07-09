@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-history-show.local/archive/schemas/asset.schema.json",
+  "title": "Archive Asset",
+  "type": "object",
+  "required": ["id", "kind", "path", "caption", "rights", "usage"],
+  "properties": {
+    "id": { "type": "string" },
+    "kind": { "enum": ["image", "video", "paper", "page", "data"] },
+    "path": { "type": "string" },
+    "caption": { "$ref": "event.schema.json#/$defs/localizedText" },
+    "subcaption": { "$ref": "event.schema.json#/$defs/localizedText" },
+    "sourceId": { "type": "string" },
+    "sourceUrl": { "type": "string" },
+    "rights": {},
+    "usage": { "$ref": "event.schema.json#/$defs/localizedText" }
+  }
+}

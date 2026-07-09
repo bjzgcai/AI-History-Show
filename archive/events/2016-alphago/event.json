@@ -1,0 +1,70 @@
+{
+  "id": "2016-alphago",
+  "year": 2016,
+  "title": {
+    "en": "AlphaGo",
+    "zh": "AlphaGo"
+  },
+  "location": {
+    "name": {
+      "en": "Google DeepMind",
+      "zh": "谷歌 DeepMind"
+    },
+    "country": {
+      "en": "United Kingdom",
+      "zh": "英国"
+    },
+    "coordinates": [51.5074, -0.1278]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "大卫·席尔瓦"
+      },
+      "role": {
+        "en": "AlphaGo lead researcher",
+        "zh": "AlphaGo 主要研究者"
+      }
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "戴密斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder",
+        "zh": "DeepMind 联合创始人"
+      }
+    },
+    {
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
+      "role": {
+        "en": "AlphaGo researcher",
+        "zh": "AlphaGo 研究者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
+    "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+      "zh": "用深度神经网络和树搜索掌握围棋"
+    },
+    "workAuthors": {
+      "en": "David Silver et al., Nature, 2016",
+      "zh": "大卫·席尔瓦等，《自然》，2016"
+    },
+    "sourceUrl": "https://www.nature.com/articles/nature16961"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
+    "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-history-show.local/archive/schemas/event.schema.json",
+  "title": "Archive Event",
+  "type": "object",
+  "required": ["id", "year", "title", "location"],
+  "properties": {
+    "id": { "type": "string" },
+    "year": { "type": "integer" },
+    "title": { "$ref": "#/$defs/localizedText" },
+    "location": {
+      "type": "object",
+      "required": ["name", "country", "coordinates"],
+      "properties": {
+        "name": { "$ref": "#/$defs/localizedText" },
+        "country": { "$ref": "#/$defs/localizedText" },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "number" }
+        }
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "role"],
+        "properties": {
+          "name": { "$ref": "#/$defs/localizedText" },
+          "role": { "$ref": "#/$defs/localizedText" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "zh"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "zh": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
