@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:44.657Z",
+  "eventKey": "ai100-1989-q-learning",
+  "sources": [
+    {
+      "type": "Thesis",
+      "label": "Learning from Delayed Rewards",
+      "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Q-learning",
+      "url": "https://link.springer.com/article/10.1007/BF00992698",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Q-learning overview",
+      "url": "https://en.wikipedia.org/wiki/Q-learning",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Google Scholar profile",
+      "url": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christopher Watkins Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Watkins%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Q-Learning Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Q-Learning%201989&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Q-Learning Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Q-Learning%201989",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1989%20Q-Learning%20Christopher%20Watkins%20AI%20history%20source%20images",
+      "query": "1989 Q-Learning Christopher Watkins AI history source images",
+      "eventKey": "ai100-1989-q-learning"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1989%20Q-Learning%20Christopher%20Watkins%20AI%20history%20source%20images",
+      "query": "1989 Q-Learning Christopher Watkins AI history source images",
+      "eventKey": "ai100-1989-q-learning"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1989%20Q-Learning%20Christopher%20Watkins%20AI%20history%20source%20images",
+      "query": "1989 Q-Learning Christopher Watkins AI history source images",
+      "eventKey": "ai100-1989-q-learning"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Christopher Watkins portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Christopher%20Watkins%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christopher Watkins Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Watkins%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Christopher Watkins official biography search",
+      "url": "https://www.google.com/search?q=Christopher%20Watkins%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Q-Learning event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1989%20Q-Learning%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Q-Learning Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Q-Learning%201989&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Q-Learning Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Q-Learning%201989",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Q-Learning publication search",
+      "url": "https://www.google.com/search?q=1989%20Q-Learning%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Q-Learning scholar search",
+      "url": "https://scholar.google.com/scholar?q=1989%20Q-Learning%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Learning from Delayed Rewards",
+      "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "finalUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/001.learning-from-delayed-rewards.html",
+      "fetchedAt": "2026-07-03T12:08:55.255Z"
+    },
+    {
+      "label": "Q-learning",
+      "sourceUrl": "https://link.springer.com/article/10.1007/BF00992698",
+      "finalUrl": "https://link.springer.com/article/10.1007/BF00992698?error=cookies_not_supported&code=d81b8166-366e-456c-bc2d-8c81294bf21d",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Q-learning | Machine Learning | Springer Nature Link",
+      "savedPath": "pages/002.q-learning.html",
+      "fetchedAt": "2026-07-03T12:08:58.166Z"
+    },
+    {
+      "label": "Q-learning overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Q-learning",
+      "finalUrl": "https://en.wikipedia.org/wiki/Q-learning",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Q-learning - Wikipedia",
+      "savedPath": "pages/003.q-learning-overview.html",
+      "fetchedAt": "2026-07-03T12:08:58.687Z"
+    },
+    {
+      "label": "Google Scholar profile",
+      "sourceUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+      "finalUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "title": "Chris Watkins - Google Scholar",
+      "savedPath": "pages/004.google-scholar-profile.html",
+      "fetchedAt": "2026-07-03T12:08:59.270Z"
+    },
+    {
+      "label": "Christopher Watkins Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Watkins%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Christopher%20Watkins%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.christopher-watkins-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:09:01.033Z"
+    },
+    {
+      "label": "Q-Learning Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Q-Learning%201989&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Q-Learning%201989&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.q-learning-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:09:02.626Z"
+    },
+    {
+      "label": "Q-Learning Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Q-Learning%201989",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Q-Learning%201989",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.q-learning-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:09:03.237Z"
+    }
+  ]
+}

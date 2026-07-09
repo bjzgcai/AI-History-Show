@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:11.827Z",
+  "eventKey": "ai100-2015-dcgan",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2015-dcgan",
+      "label": "DCGAN lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/figures/alec-radford.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.dcgan-lead-author.png",
+      "originalLocalPath": "resources/images/figures/alec-radford.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 232058,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Local project image; reuse rights inherited from existing project asset metadata.",
+      "downloadedAt": "2026-07-03T12:06:11.525Z"
+    },
+    {
+      "eventKey": "ai100-2015-dcgan",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1511.06434",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2352,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:06:11.827Z"
+    }
+  ]
+}

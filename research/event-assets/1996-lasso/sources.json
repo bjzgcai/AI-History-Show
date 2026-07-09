@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:25.692Z",
+  "eventKey": "1996-lasso",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Regression Shrinkage and Selection via the Lasso",
+      "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "usage": ""
+    },
+    {
+      "type": "Model docs",
+      "label": "scikit-learn Lasso",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+      "usage": ""
+    },
+    {
+      "type": "Toolkit",
+      "label": "glmnet project",
+      "url": "https://glmnet.stanford.edu/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Stanford Profiles",
+      "url": "https://profiles.stanford.edu/robert-tibshirani",
+      "usage": "Historical figure / Lasso author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Robert Tibshirani Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Tibshirani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Lasso Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Lasso%201996&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Lasso Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Lasso%201996",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1996%20Lasso%20Robert%20Tibshirani%20AI%20history%20source%20images",
+      "query": "1996 Lasso Robert Tibshirani AI history source images",
+      "eventKey": "1996-lasso"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1996%20Lasso%20Robert%20Tibshirani%20AI%20history%20source%20images",
+      "query": "1996 Lasso Robert Tibshirani AI history source images",
+      "eventKey": "1996-lasso"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1996%20Lasso%20Robert%20Tibshirani%20AI%20history%20source%20images",
+      "query": "1996 Lasso Robert Tibshirani AI history source images",
+      "eventKey": "1996-lasso"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Robert Tibshirani portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Robert%20Tibshirani%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Robert Tibshirani Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Tibshirani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Robert Tibshirani official biography search",
+      "url": "https://www.google.com/search?q=Robert%20Tibshirani%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Lasso event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1996%20Lasso%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Lasso Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Lasso%201996&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Lasso Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Lasso%201996",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Lasso publication search",
+      "url": "https://www.google.com/search?q=1996%20Lasso%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Lasso scholar search",
+      "url": "https://scholar.google.com/scholar?q=1996%20Lasso%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Regression Shrinkage and Selection via the Lasso",
+      "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "finalUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.regression-shrinkage-and-selection-via-the-lasso.html",
+      "fetchedAt": "2026-07-03T11:03:27.014Z"
+    },
+    {
+      "label": "scikit-learn Lasso",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+      "finalUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Lasso &#8212; scikit-learn 1.9.0 documentation",
+      "savedPath": "pages/002.scikit-learn-lasso.html",
+      "fetchedAt": "2026-07-03T11:03:27.767Z"
+    },
+    {
+      "label": "glmnet project",
+      "sourceUrl": "https://glmnet.stanford.edu/",
+      "finalUrl": "https://glmnet.stanford.edu/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Lasso and Elastic-Net Regularized Generalized Linear Models • glmnet",
+      "savedPath": "pages/003.glmnet-project.html",
+      "fetchedAt": "2026-07-03T11:03:29.847Z"
+    },
+    {
+      "label": "Stanford Profiles",
+      "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+      "finalUrl": "https://profiles.stanford.edu/robert-tibshirani",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Robert Tibshirani's Profile | Stanford Profiles",
+      "savedPath": "pages/004.stanford-profiles.html",
+      "fetchedAt": "2026-07-03T11:03:32.673Z"
+    },
+    {
+      "label": "Robert Tibshirani Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Robert%20Tibshirani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Robert%20Tibshirani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.robert-tibshirani-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:34.134Z"
+    },
+    {
+      "label": "Lasso Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Lasso%201996&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Lasso%201996&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.lasso-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:03:36.418Z"
+    },
+    {
+      "label": "Lasso Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Lasso%201996",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Lasso%201996",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.lasso-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:37.074Z"
+    }
+  ]
+}

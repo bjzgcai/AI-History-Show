@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:17.612Z",
+  "eventKey": "2013-dqn",
+  "year": "2013",
+  "title": {
+    "en": "Deep Q Network",
+    "zh": "深度 Q 网络"
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国伦敦"
+    },
+    "coordinates": [
+      51.523,
+      -0.128
+    ]
+  },
+  "description": {
+    "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>",
+    "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Volodymyr Mnih portrait",
+        "zh": "沃洛迪米尔·姆尼赫 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Mnih’s University of Toronto-hosted personal page.",
+        "zh": "来自 Mnih 多伦多大学托管个人页的人物图。"
+      },
+      "sourceName": {
+        "en": "University of Toronto personal page",
+        "zh": "University of Toronto personal page"
+      },
+      "sourceUrl": "https://www.cs.utoronto.ca/~vmnih/",
+      "license": {
+        "en": "Personal website photo; rights not stated.",
+        "zh": "Personal website photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Replay buffer",
+        "zh": "经验回放池"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Q Network, based on the listed source material.",
+        "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "arXiv / Nature",
+        "zh": "arXiv / 《自然》"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1312.5602",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Q-value control loop",
+        "zh": "Q 值控制循环"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Q Network, based on the listed source material.",
+        "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "arXiv / Nature",
+        "zh": "arXiv / 《自然》"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1312.5602",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Volodymyr Mnih",
+        "type": "portrait-search",
+        "label": "Volodymyr Mnih portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Volodymyr%20Mnih%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Volodymyr Mnih",
+        "type": "commons-portrait-search",
+        "label": "Volodymyr Mnih Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Volodymyr%20Mnih%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "David Silver",
+        "type": "portrait-search",
+        "label": "David Silver portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=David%20Silver%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "David Silver",
+        "type": "commons-portrait-search",
+        "label": "David Silver Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Deep Q Network event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2013%20Deep%20Q%20Network%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Deep Q Network Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Q%20Network%202013&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Deep Q Network Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Deep%20Q%20Network%202013",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Deep Q Network publication search",
+        "url": "https://www.google.com/search?q=2013%20Deep%20Q%20Network%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Deep Q Network scholar search",
+        "url": "https://scholar.google.com/scholar?q=2013%20Deep%20Q%20Network%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

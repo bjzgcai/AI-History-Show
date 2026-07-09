@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:45:58.903Z",
+  "eventKey": "2015-u-net",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2015-u-net",
+      "label": "Researcher profile photo from the Freiburg LMB page.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.researcher-profile-photo-from-the-freiburg-lmb-page.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 31471,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / U-Net co-author portrait",
+      "rights": "Institution profile photo; rights not stated.",
+      "downloadedAt": "2026-07-03T10:45:58.599Z"
+    },
+    {
+      "eventKey": "2015-u-net",
+      "label": "Distinct local redraw for U-Net, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-u-net-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1623,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T10:45:58.903Z"
+    }
+  ]
+}

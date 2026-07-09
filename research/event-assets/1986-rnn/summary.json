@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:11.821Z",
+  "eventKey": "1986-rnn",
+  "year": 1986,
+  "title": {
+    "en": "Recurrent Neural Networks",
+    "zh": "循环神经网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, San Diego",
+      "zh": "加州大学圣地亚哥分校"
+    },
+    "country": {
+      "en": "CA, United States",
+      "zh": "美国, 加利福尼亚州"
+    },
+    "coordinates": [
+      32.8801,
+      -117.234
+    ]
+  },
+  "description": {
+    "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling.",
+    "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Recurrent Neural Networks",
+        "zh": "循环神经网络 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Jeffrey Elman",
+        "type": "portrait-search",
+        "label": "Jeffrey Elman portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jeffrey%20Elman%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jeffrey Elman",
+        "type": "commons-portrait-search",
+        "label": "Jeffrey Elman Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Elman%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Michael Jordan",
+        "type": "portrait-search",
+        "label": "Michael Jordan portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Michael%20Jordan%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Michael Jordan",
+        "type": "commons-portrait-search",
+        "label": "Michael Jordan Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Recurrent Neural Networks event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1986%20Recurrent%20Neural%20Networks%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Recurrent Neural Networks Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Recurrent%20Neural%20Networks%201986&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Recurrent Neural Networks Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Recurrent%20Neural%20Networks%201986",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Recurrent Neural Networks publication search",
+        "url": "https://www.google.com/search?q=1986%20Recurrent%20Neural%20Networks%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Recurrent Neural Networks scholar search",
+        "url": "https://scholar.google.com/scholar?q=1986%20Recurrent%20Neural%20Networks%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

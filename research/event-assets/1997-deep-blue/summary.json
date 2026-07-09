@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:29.168Z",
+  "eventKey": "1997-deep-blue",
+  "year": "1997",
+  "title": {
+    "en": "Deep Blue",
+    "zh": "深蓝"
+  },
+  "location": {
+    "name": {
+      "en": "IBM Research",
+      "zh": "IBM 研究院"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2108,
+      -73.8035
+    ]
+  },
+  "description": {
+    "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>",
+    "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Murray Campbell portrait",
+        "zh": "默里·坎贝尔 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from IBM Research profile.",
+        "zh": "来自 IBM 研究院 人物资料页的人物图。"
+      },
+      "sourceName": {
+        "en": "IBM Research",
+        "zh": "IBM 研究院"
+      },
+      "sourceUrl": "https://research.ibm.com/people/murray-campbell",
+      "license": {
+        "en": "IBM Research profile image; reuse rights not stated.",
+        "zh": "IBM 研究院 profile image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Chess search tree",
+        "zh": "国际象棋搜索树"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Blue, based on the listed source material.",
+        "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Artificial Intelligence",
+        "zh": "人工智能"
+      },
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Hardware-assisted board evaluation",
+        "zh": "硬件辅助棋盘评估"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Blue, based on the listed source material.",
+        "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Artificial Intelligence",
+        "zh": "人工智能"
+      },
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Murray Campbell",
+        "type": "portrait-search",
+        "label": "Murray Campbell portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Murray%20Campbell%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Murray Campbell",
+        "type": "commons-portrait-search",
+        "label": "Murray Campbell Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Murray%20Campbell%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Deep Blue event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1997%20Deep%20Blue%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Deep Blue Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Blue%201997&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Deep Blue Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Deep%20Blue%201997",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Deep Blue publication search",
+        "url": "https://www.google.com/search?q=1997%20Deep%20Blue%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Deep Blue scholar search",
+        "url": "https://scholar.google.com/scholar?q=1997%20Deep%20Blue%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

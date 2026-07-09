@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:50.573Z",
+  "eventKey": "ai100-2000-lle",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "url": "https://doi.org/10.1126/science.290.5500.2323",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "Science article page",
+      "url": "https://www.science.org/doi/10.1126/science.290.5500.2323",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "PubMed record for LLE",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11125150/",
+      "usage": ""
+    },
+    {
+      "type": "Documentation",
+      "label": "scikit-learn LLE documentation",
+      "url": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "NYU Computer Science",
+      "url": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Sam Roweis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Sam%20Roweis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Lawrence Saul Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Lawrence%20Saul%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Locally Linear Embedding Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Locally%20Linear%20Embedding%202000&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Locally Linear Embedding Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Locally%20Linear%20Embedding%202000",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2000%20Locally%20Linear%20Embedding%20Sam%20Roweis%20Lawrence%20Saul%20AI%20history%20source%20images",
+      "query": "2000 Locally Linear Embedding Sam Roweis Lawrence Saul AI history source images",
+      "eventKey": "ai100-2000-lle"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Locally%20Linear%20Embedding%20Sam%20Roweis%20Lawrence%20Saul%20AI%20history%20source%20images",
+      "query": "2000 Locally Linear Embedding Sam Roweis Lawrence Saul AI history source images",
+      "eventKey": "ai100-2000-lle"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Locally%20Linear%20Embedding%20Sam%20Roweis%20Lawrence%20Saul%20AI%20history%20source%20images",
+      "query": "2000 Locally Linear Embedding Sam Roweis Lawrence Saul AI history source images",
+      "eventKey": "ai100-2000-lle"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Sam Roweis portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Sam%20Roweis%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Sam Roweis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Sam%20Roweis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Sam Roweis official biography search",
+      "url": "https://www.google.com/search?q=Sam%20Roweis%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Lawrence Saul portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Lawrence%20Saul%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Lawrence Saul Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Lawrence%20Saul%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Lawrence Saul official biography search",
+      "url": "https://www.google.com/search?q=Lawrence%20Saul%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Locally Linear Embedding event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Locally%20Linear%20Embedding%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Locally Linear Embedding Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Locally%20Linear%20Embedding%202000&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Locally Linear Embedding Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Locally%20Linear%20Embedding%202000",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Locally Linear Embedding publication search",
+      "url": "https://www.google.com/search?q=2000%20Locally%20Linear%20Embedding%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Locally Linear Embedding scholar search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Locally%20Linear%20Embedding%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323",
+      "finalUrl": "https://www.science.org/doi/10.1126/science.290.5500.2323",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.nonlinear-dimensionality-reduction-by-locally-linear-embedding.html",
+      "fetchedAt": "2026-07-03T11:58:51.346Z"
+    },
+    {
+      "label": "Science article page",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.290.5500.2323",
+      "finalUrl": "https://www.science.org/doi/10.1126/science.290.5500.2323",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/002.science-article-page.html",
+      "fetchedAt": "2026-07-03T11:58:51.719Z"
+    },
+    {
+      "label": "PubMed record for LLE",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11125150/",
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/11125150/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Nonlinear dimensionality reduction by locally linear embedding - PubMed",
+      "savedPath": "pages/003.pubmed-record-for-lle.html",
+      "fetchedAt": "2026-07-03T11:58:52.574Z"
+    },
+    {
+      "label": "scikit-learn LLE documentation",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding",
+      "finalUrl": "https://scikit-learn.org/stable/modules/manifold.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "2.2. Manifold learning &#8212; scikit-learn 1.9.0 documentation",
+      "savedPath": "pages/004.scikit-learn-lle-documentation.html",
+      "fetchedAt": "2026-07-03T11:58:53.113Z"
+    },
+    {
+      "label": "NYU Computer Science",
+      "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+      "finalUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Obituary Page of Sam Roweis | NYU Computer Science",
+      "savedPath": "pages/005.nyu-computer-science.html",
+      "fetchedAt": "2026-07-03T11:58:55.089Z"
+    },
+    {
+      "label": "Sam Roweis Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Sam%20Roweis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Sam%20Roweis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.sam-roweis-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:58:56.421Z"
+    },
+    {
+      "label": "Lawrence Saul Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Lawrence%20Saul%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Lawrence%20Saul%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.lawrence-saul-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:58:58.055Z"
+    },
+    {
+      "label": "Locally Linear Embedding Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Locally%20Linear%20Embedding%202000&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Locally%20Linear%20Embedding%202000&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.locally-linear-embedding-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:58:59.756Z"
+    },
+    {
+      "label": "Locally Linear Embedding Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Locally%20Linear%20Embedding%202000",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Locally%20Linear%20Embedding%202000",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.locally-linear-embedding-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:59:00.415Z"
+    }
+  ]
+}

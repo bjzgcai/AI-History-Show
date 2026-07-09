@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:32:09.633Z",
+  "eventKey": "2025-llm-competition",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "研究机构 Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "A Flourishing Competition Among Large Language Models Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "A Flourishing Competition Among Large Language Models Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20AI%20history%20source%20images",
+      "query": "2025 A Flourishing Competition Among Large Language Models 研究机构 AI history source images",
+      "eventKey": "2025-llm-competition"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20AI%20history%20source%20images",
+      "query": "2025 A Flourishing Competition Among Large Language Models 研究机构 AI history source images",
+      "eventKey": "2025-llm-competition"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20AI%20history%20source%20images",
+      "query": "2025 A Flourishing Competition Among Large Language Models 研究机构 AI history source images",
+      "eventKey": "2025-llm-competition"
+    },
+    {
+      "type": "portrait-search",
+      "label": "研究机构 portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "研究机构 Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "研究机构 official biography search",
+      "url": "https://www.google.com/search?q=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "A Flourishing Competition Among Large Language Models event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "A Flourishing Competition Among Large Language Models Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "A Flourishing Competition Among Large Language Models Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "A Flourishing Competition Among Large Language Models publication search",
+      "url": "https://www.google.com/search?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "A Flourishing Competition Among Large Language Models scholar search",
+      "url": "https://scholar.google.com/scholar?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "研究机构 Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:32:11.106Z"
+    },
+    {
+      "label": "A Flourishing Competition Among Large Language Models Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.a-flourishing-competition-among-large-language-models-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:32:13.029Z"
+    },
+    {
+      "label": "A Flourishing Competition Among Large Language Models Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/003.a-flourishing-competition-among-large-language-models-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:32:13.637Z"
+    }
+  ]
+}

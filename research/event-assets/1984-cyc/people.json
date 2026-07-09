@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Douglas Lenat",
+        "zh": "道格拉斯·莱纳特"
+      },
+      "role": {
+        "en": "Founder of the Cyc project",
+        "zh": "Cyc 项目创始人"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+          "license": {
+            "en": "CC BY-SA 4.0",
+            "zh": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "R. V. Guha",
+        "zh": "R·V·古哈"
+      },
+      "role": {
+        "en": "Co-author of core Cyc representation work",
+        "zh": "Cyc 核心表示工作的共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+          "license": {
+            "en": "CC BY-SA 4.0",
+            "zh": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

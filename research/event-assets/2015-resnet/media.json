@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:59.030Z",
+  "eventKey": "2015-resnet",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Kaiming He",
+      "role": "ResNet first author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Kaiming He portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Kaiming%20He%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Kaiming He Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Kaiming He official biography search",
+          "url": "https://www.google.com/search?q=Kaiming%20He%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Xiangyu Zhang",
+      "role": "ResNet co-author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Xiangyu Zhang portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Xiangyu%20Zhang%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Xiangyu Zhang Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Xiangyu%20Zhang%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Xiangyu Zhang official biography search",
+          "url": "https://www.google.com/search?q=Xiangyu%20Zhang%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Shaoqing Ren",
+      "role": "ResNet co-author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Shaoqing Ren portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Shaoqing%20Ren%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Shaoqing Ren Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Shaoqing%20Ren%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Shaoqing Ren official biography search",
+          "url": "https://www.google.com/search?q=Shaoqing%20Ren%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Jian Sun",
+      "role": "ResNet senior author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jian Sun portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Jian%20Sun%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jian Sun Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jian Sun official biography search",
+          "url": "https://www.google.com/search?q=Jian%20Sun%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "ResNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20ResNet%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "ResNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ResNet%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ResNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ResNet%202015",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "ResNet publication search",
+      "url": "https://www.google.com/search?q=2015%20ResNet%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "ResNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20ResNet%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "subcaption": {
+        "en": "ResNet first author; Associate Professor at MIT EECS",
+        "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Xiangyu Zhang",
+        "zh": "张祥雨"
+      },
+      "subcaption": {
+        "en": "ResNet co-author; later at Megvii, now at StepFun",
+        "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "subcaption": {
+        "en": "ResNet co-author; now VP of R&D at NIO",
+        "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "subcaption": {
+        "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)",
+        "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "ResNet diagram",
+        "zh": "ResNet 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "ResNet diagram",
+        "zh": "ResNet 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

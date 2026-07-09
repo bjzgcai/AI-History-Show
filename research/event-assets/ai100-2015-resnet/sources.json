@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:36.531Z",
+  "eventKey": "ai100-2015-resnet",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Deep Residual Learning for Image Recognition",
+      "url": "https://arxiv.org/abs/1512.03385",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "CVF Open Access paper page",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "CVPR full paper PDF",
+      "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+      "usage": ""
+    },
+    {
+      "type": "People",
+      "label": "Kaiming He profile at MIT CSAIL",
+      "url": "https://people.csail.mit.edu/kaiming/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/figures/kaiming-he.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kaiming He Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jian Sun Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "ResNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ResNet%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ResNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ResNet%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20ResNet%20Kaiming%20He%20Jian%20Sun%20AI%20history%20source%20images",
+      "query": "2015 ResNet Kaiming He Jian Sun AI history source images",
+      "eventKey": "ai100-2015-resnet"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20ResNet%20Kaiming%20He%20Jian%20Sun%20AI%20history%20source%20images",
+      "query": "2015 ResNet Kaiming He Jian Sun AI history source images",
+      "eventKey": "ai100-2015-resnet"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20ResNet%20Kaiming%20He%20Jian%20Sun%20AI%20history%20source%20images",
+      "query": "2015 ResNet Kaiming He Jian Sun AI history source images",
+      "eventKey": "ai100-2015-resnet"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Kaiming He portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Kaiming%20He%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kaiming He Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Kaiming He official biography search",
+      "url": "https://www.google.com/search?q=Kaiming%20He%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jian Sun portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jian%20Sun%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jian Sun Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jian Sun official biography search",
+      "url": "https://www.google.com/search?q=Jian%20Sun%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "ResNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20ResNet%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "ResNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ResNet%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ResNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ResNet%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "ResNet publication search",
+      "url": "https://www.google.com/search?q=2015%20ResNet%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "ResNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20ResNet%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Deep Residual Learning for Image Recognition",
+      "sourceUrl": "https://arxiv.org/abs/1512.03385",
+      "finalUrl": "https://arxiv.org/abs/1512.03385",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1512.03385] Deep Residual Learning for Image Recognition",
+      "savedPath": "pages/001.deep-residual-learning-for-image-recognition.html",
+      "fetchedAt": "2026-07-03T12:01:36.905Z"
+    },
+    {
+      "label": "CVF Open Access paper page",
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+      "finalUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "CVPR 2016 Open Access Repository",
+      "savedPath": "pages/002.cvf-open-access-paper-page.html",
+      "fetchedAt": "2026-07-03T12:01:38.192Z"
+    },
+    {
+      "label": "CVPR full paper PDF",
+      "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+      "finalUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/003.cvpr-full-paper-pdf.html",
+      "fetchedAt": "2026-07-03T12:01:42.172Z"
+    },
+    {
+      "label": "Kaiming He profile at MIT CSAIL",
+      "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+      "finalUrl": "https://people.csail.mit.edu/kaiming/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Kaiming He",
+      "savedPath": "pages/004.kaiming-he-profile-at-mit-csail.html",
+      "fetchedAt": "2026-07-03T12:01:43.845Z"
+    },
+    {
+      "label": "Kaiming He Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.kaiming-he-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:45.619Z"
+    },
+    {
+      "label": "Jian Sun Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.jian-sun-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:47.114Z"
+    },
+    {
+      "label": "ResNet Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=ResNet%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=ResNet%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.resnet-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:01:49.107Z"
+    },
+    {
+      "label": "ResNet Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=ResNet%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=ResNet%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.resnet-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:49.782Z"
+    }
+  ]
+}

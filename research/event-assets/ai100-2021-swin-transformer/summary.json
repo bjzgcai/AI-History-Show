@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:15.204Z",
+  "eventKey": "ai100-2021-swin-transformer",
+  "year": 2021,
+  "title": {
+    "en": "Swin Transformer",
+    "zh": "Swin Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "description": {
+    "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>",
+    "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://zeliu98.github.io/images/zeliu.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Ze Liu portrait",
+        "zh": "刘泽肖像"
+      },
+      "subcaption": {
+        "en": "Swin Transformer lead author",
+        "zh": "Swin Transformer 主要作者"
+      },
+      "sourceName": {
+        "en": "Ze Liu homepage",
+        "zh": "刘泽个人主页"
+      },
+      "sourceUrl": "https://zeliu98.github.io/",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Swin Transformer explainer",
+        "zh": "Swin Transformer 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "CVF Open Access",
+        "zh": "CVF 开放论文库"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2103.14030",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Ze Liu",
+        "type": "portrait-search",
+        "label": "Ze Liu portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ze%20Liu%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ze Liu",
+        "type": "commons-portrait-search",
+        "label": "Ze Liu Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ze%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Swin Transformer event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2021%20Swin%20Transformer%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Swin Transformer Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Swin%20Transformer%202021&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Swin Transformer Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Swin%20Transformer%202021",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Swin Transformer publication search",
+        "url": "https://www.google.com/search?q=2021%20Swin%20Transformer%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Swin Transformer scholar search",
+        "url": "https://scholar.google.com/scholar?q=2021%20Swin%20Transformer%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

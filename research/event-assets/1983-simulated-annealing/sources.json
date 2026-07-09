@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:06.484Z",
+  "eventKey": "1983-simulated-annealing",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Optimization by Simulated Annealing",
+      "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+      "usage": ""
+    },
+    {
+      "type": "Optimizer docs",
+      "label": "SciPy dual_annealing",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+      "usage": ""
+    },
+    {
+      "type": "Notebook",
+      "label": "Hedibert course PDF mirror",
+      "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Collective Cognition Workshop / UC Davis CSC",
+      "url": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+      "usage": "Historical figure / Simulated annealing co-author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Scott Kirkpatrick Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Scott%20Kirkpatrick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "C. Daniel Gelatt Jr. Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=C.%20Daniel%20Gelatt%20Jr.%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Mario P. Vecchi Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Mario%20P.%20Vecchi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Simulated Annealing Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Simulated%20Annealing%201983&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Simulated Annealing Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Simulated%20Annealing%201983",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1983%20Simulated%20Annealing%20Scott%20Kirkpatrick%20C.%20Daniel%20Gelatt%20Jr.%20Mario%20P.%20Vecchi%20AI%20history%20source%20images",
+      "query": "1983 Simulated Annealing Scott Kirkpatrick C. Daniel Gelatt Jr. Mario P. Vecchi AI history source images",
+      "eventKey": "1983-simulated-annealing"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1983%20Simulated%20Annealing%20Scott%20Kirkpatrick%20C.%20Daniel%20Gelatt%20Jr.%20Mario%20P.%20Vecchi%20AI%20history%20source%20images",
+      "query": "1983 Simulated Annealing Scott Kirkpatrick C. Daniel Gelatt Jr. Mario P. Vecchi AI history source images",
+      "eventKey": "1983-simulated-annealing"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1983%20Simulated%20Annealing%20Scott%20Kirkpatrick%20C.%20Daniel%20Gelatt%20Jr.%20Mario%20P.%20Vecchi%20AI%20history%20source%20images",
+      "query": "1983 Simulated Annealing Scott Kirkpatrick C. Daniel Gelatt Jr. Mario P. Vecchi AI history source images",
+      "eventKey": "1983-simulated-annealing"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Scott Kirkpatrick portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Scott%20Kirkpatrick%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Scott Kirkpatrick Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Scott%20Kirkpatrick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Scott Kirkpatrick official biography search",
+      "url": "https://www.google.com/search?q=Scott%20Kirkpatrick%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "C. Daniel Gelatt Jr. portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=C.%20Daniel%20Gelatt%20Jr.%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "C. Daniel Gelatt Jr. Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=C.%20Daniel%20Gelatt%20Jr.%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "C. Daniel Gelatt Jr. official biography search",
+      "url": "https://www.google.com/search?q=C.%20Daniel%20Gelatt%20Jr.%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Mario P. Vecchi portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Mario%20P.%20Vecchi%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Mario P. Vecchi Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Mario%20P.%20Vecchi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Mario P. Vecchi official biography search",
+      "url": "https://www.google.com/search?q=Mario%20P.%20Vecchi%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Simulated Annealing event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1983%20Simulated%20Annealing%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Simulated Annealing Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Simulated%20Annealing%201983&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Simulated Annealing Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Simulated%20Annealing%201983",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Simulated Annealing publication search",
+      "url": "https://www.google.com/search?q=1983%20Simulated%20Annealing%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Simulated Annealing scholar search",
+      "url": "https://scholar.google.com/scholar?q=1983%20Simulated%20Annealing%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Optimization by Simulated Annealing",
+      "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+      "finalUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.optimization-by-simulated-annealing.html",
+      "fetchedAt": "2026-07-03T11:03:07.060Z"
+    },
+    {
+      "label": "SciPy dual_annealing",
+      "sourceUrl": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+      "finalUrl": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "dual_annealing &#8212; SciPy v1.18.0 Manual",
+      "savedPath": "pages/002.scipy-dual_annealing.html",
+      "fetchedAt": "2026-07-03T11:03:09.103Z"
+    },
+    {
+      "label": "Hedibert course PDF mirror",
+      "sourceUrl": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+      "finalUrl": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/003.hedibert-course-pdf-mirror.html",
+      "fetchedAt": "2026-07-03T11:03:16.626Z"
+    },
+    {
+      "label": "Collective Cognition Workshop / UC Davis CSC",
+      "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+      "finalUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Collective Cognition Workshop",
+      "savedPath": "pages/004.collective-cognition-workshop-uc-davis-csc.html",
+      "fetchedAt": "2026-07-03T11:03:18.020Z"
+    },
+    {
+      "label": "Scott Kirkpatrick Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Scott%20Kirkpatrick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Scott%20Kirkpatrick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.scott-kirkpatrick-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:19.573Z"
+    },
+    {
+      "label": "C. Daniel Gelatt Jr. Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=C.%20Daniel%20Gelatt%20Jr.%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=C.%20Daniel%20Gelatt%20Jr.%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.c.-daniel-gelatt-jr.-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:21.234Z"
+    },
+    {
+      "label": "Mario P. Vecchi Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Mario%20P.%20Vecchi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Mario%20P.%20Vecchi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.mario-p.-vecchi-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:22.945Z"
+    },
+    {
+      "label": "Simulated Annealing Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Simulated%20Annealing%201983&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Simulated%20Annealing%201983&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.simulated-annealing-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:03:24.509Z"
+    },
+    {
+      "label": "Simulated Annealing Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Simulated%20Annealing%201983",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Simulated%20Annealing%201983",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.simulated-annealing-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:25.078Z"
+    }
+  ]
+}

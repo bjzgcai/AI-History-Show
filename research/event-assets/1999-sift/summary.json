@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:25.717Z",
+  "eventKey": "1999-sift",
+  "year": "1999",
+  "title": {
+    "en": "SIFT",
+    "zh": "SIFT"
+  },
+  "location": {
+    "name": {
+      "en": "University of British Columbia",
+      "zh": "不列颠哥伦比亚大学"
+    },
+    "country": {
+      "en": "British Columbia, Canada",
+      "zh": "加拿大不列颠哥伦比亚省"
+    },
+    "coordinates": [
+      49.2606,
+      -123.246
+    ]
+  },
+  "description": {
+    "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>",
+    "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "David Lowe portrait",
+        "zh": "戴维·洛 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from UBC Computer Science profile.",
+        "zh": "来自 UBC Computer 《科学》 个人资料页的人物图。"
+      },
+      "sourceName": {
+        "en": "University of British Columbia",
+        "zh": "University of British Columbia"
+      },
+      "sourceUrl": "https://www.cs.ubc.ca/people/david-lowe",
+      "license": {
+        "en": "UBC profile image; reuse rights not stated.",
+        "zh": "UBC profile image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Scale-space keypoints",
+        "zh": "尺度空间关键点"
+      },
+      "subcaption": {
+        "en": "Local redraw for SIFT, based on the listed source material.",
+        "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "UBC Laboratory for Computational Intelligence",
+        "zh": "UBC Laboratory for Computational Intelligence"
+      },
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Gradient descriptor histogram",
+        "zh": "梯度描述子直方图"
+      },
+      "subcaption": {
+        "en": "Local redraw for SIFT, based on the listed source material.",
+        "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "UBC Laboratory for Computational Intelligence",
+        "zh": "UBC Laboratory for Computational Intelligence"
+      },
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "David Lowe",
+        "type": "portrait-search",
+        "label": "David Lowe portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=David%20Lowe%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "David Lowe",
+        "type": "commons-portrait-search",
+        "label": "David Lowe Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=David%20Lowe%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "SIFT event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1999%20SIFT%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "SIFT Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=SIFT%201999&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "SIFT Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=SIFT%201999",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "SIFT publication search",
+        "url": "https://www.google.com/search?q=1999%20SIFT%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "SIFT scholar search",
+        "url": "https://scholar.google.com/scholar?q=1999%20SIFT%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

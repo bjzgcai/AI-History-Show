@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:37.686Z",
+  "eventKey": "2015-googlenet-inception",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Going Deeper with Convolutions",
+      "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Model docs",
+      "label": "TorchVision GoogLeNet",
+      "url": "https://pytorch.org/vision/stable/models/googlenet.html",
+      "usage": ""
+    },
+    {
+      "type": "Model docs",
+      "label": "TensorFlow Keras InceptionV3",
+      "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "The TWIML AI Podcast",
+      "url": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+      "usage": "Historical figure / Inception author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christian Szegedy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Google research team Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Google%20research%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "GoogLeNet / Inception Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GoogLeNet%20%2F%20Inception%202014-2015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GoogLeNet / Inception Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GoogLeNet%20%2F%20Inception%202014-2015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2014-2015%20GoogLeNet%20%2F%20Inception%20Christian%20Szegedy%20Google%20research%20team%20AI%20history%20source%20images",
+      "query": "2014-2015 GoogLeNet / Inception Christian Szegedy Google research team AI history source images",
+      "eventKey": "2015-googlenet-inception"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014-2015%20GoogLeNet%20%2F%20Inception%20Christian%20Szegedy%20Google%20research%20team%20AI%20history%20source%20images",
+      "query": "2014-2015 GoogLeNet / Inception Christian Szegedy Google research team AI history source images",
+      "eventKey": "2015-googlenet-inception"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2014-2015%20GoogLeNet%20%2F%20Inception%20Christian%20Szegedy%20Google%20research%20team%20AI%20history%20source%20images",
+      "query": "2014-2015 GoogLeNet / Inception Christian Szegedy Google research team AI history source images",
+      "eventKey": "2015-googlenet-inception"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Christian Szegedy portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Christian%20Szegedy%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christian Szegedy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Christian Szegedy official biography search",
+      "url": "https://www.google.com/search?q=Christian%20Szegedy%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Google research team portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Google%20research%20team%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Google research team Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Google%20research%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Google research team official biography search",
+      "url": "https://www.google.com/search?q=Google%20research%20team%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "GoogLeNet / Inception event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014-2015%20GoogLeNet%20%2F%20Inception%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "GoogLeNet / Inception Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GoogLeNet%20%2F%20Inception%202014-2015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GoogLeNet / Inception Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GoogLeNet%20%2F%20Inception%202014-2015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "GoogLeNet / Inception publication search",
+      "url": "https://www.google.com/search?q=2014-2015%20GoogLeNet%20%2F%20Inception%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "GoogLeNet / Inception scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014-2015%20GoogLeNet%20%2F%20Inception%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Going Deeper with Convolutions",
+      "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "finalUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "CVPR 2015 Open Access Repository",
+      "savedPath": "pages/001.going-deeper-with-convolutions.html",
+      "fetchedAt": "2026-07-03T11:03:41.052Z"
+    },
+    {
+      "label": "TorchVision GoogLeNet",
+      "sourceUrl": "https://pytorch.org/vision/stable/models/googlenet.html",
+      "finalUrl": "https://docs.pytorch.org/vision/stable/models/googlenet.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GoogLeNet &mdash; Torchvision 0.27 documentation",
+      "savedPath": "pages/002.torchvision-googlenet.html",
+      "fetchedAt": "2026-07-03T11:03:42.443Z"
+    },
+    {
+      "label": "TensorFlow Keras InceptionV3",
+      "sourceUrl": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+      "finalUrl": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "tf.keras.applications.InceptionV3 &nbsp;|&nbsp; TensorFlow v2.16.1",
+      "savedPath": "pages/003.tensorflow-keras-inceptionv3.html",
+      "fetchedAt": "2026-07-03T11:03:43.665Z"
+    },
+    {
+      "label": "The TWIML AI Podcast",
+      "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+      "finalUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Autoformalization and Verifiable Superintelligence | TWIML - The Voice of Machine Learning &amp; AI",
+      "savedPath": "pages/004.the-twiml-ai-podcast.html",
+      "fetchedAt": "2026-07-03T11:03:45.847Z"
+    },
+    {
+      "label": "Christian Szegedy Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.christian-szegedy-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:47.558Z"
+    },
+    {
+      "label": "Google research team Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Google%20research%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Google%20research%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.google-research-team-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:49.567Z"
+    },
+    {
+      "label": "GoogLeNet / Inception Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=GoogLeNet%20%2F%20Inception%202014-2015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=GoogLeNet%20%2F%20Inception%202014-2015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.googlenet-inception-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:03:51.321Z"
+    },
+    {
+      "label": "GoogLeNet / Inception Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=GoogLeNet%20%2F%20Inception%202014-2015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=GoogLeNet%20%2F%20Inception%202014-2015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.googlenet-inception-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:03:51.906Z"
+    }
+  ]
+}

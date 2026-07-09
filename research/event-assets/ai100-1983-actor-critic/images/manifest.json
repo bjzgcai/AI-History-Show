@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:32.062Z",
+  "eventKey": "ai100-1983-actor-critic",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1983-actor-critic",
+      "label": "Actor-Critic co-author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+      "imageUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+      "finalImageUrl": "https://www.cics.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+      "localPath": "images/001.actor-critic-co-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 17193,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:09:31.758Z"
+    },
+    {
+      "eventKey": "ai100-1983-actor-critic",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2333,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:09:32.062Z"
+    }
+  ]
+}

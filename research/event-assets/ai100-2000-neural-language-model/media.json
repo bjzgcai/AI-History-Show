@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:13.615Z",
+  "eventKey": "ai100-2000-neural-language-model",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Yoshua Bengio",
+      "role": "Lead author of the neural probabilistic language model",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Yoshua Bengio portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Yoshua%20Bengio%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Yoshua Bengio Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Yoshua Bengio official biography search",
+          "url": "https://www.google.com/search?q=Yoshua%20Bengio%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Neural Language Model event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Neural%20Language%20Model%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neural Language Model Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neural%20Language%20Model%202000&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neural Language Model Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neural%20Language%20Model%202000",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Neural Language Model publication search",
+      "url": "https://www.google.com/search?q=2000%20Neural%20Language%20Model%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Neural Language Model scholar search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Neural%20Language%20Model%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Yoshua Bengio portrait",
+        "zh": "约书亚·本吉奥肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of the neural probabilistic language model.",
+        "zh": "神经概率语言模型主要作者。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Context prediction",
+        "zh": "上下文预测"
+      },
+      "subcaption": {
+        "en": "Original local explainer of neural language modeling.",
+        "zh": "关于神经语言建模的本地原创解释图。"
+      },
+      "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "sourceLabel": "A Neural Probabilistic Language Model",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Neural Probabilistic Language Model",
+        "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+        "usage": ""
+      },
+      {
+        "type": "Paper PDF",
+        "label": "JMLR full paper PDF",
+        "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+        "usage": ""
+      },
+      {
+        "type": "Publication index",
+        "label": "DBLP record",
+        "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

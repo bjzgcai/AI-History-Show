@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:56:38.488Z",
+  "eventKey": "2000-spectral-clustering",
+  "year": "2000",
+  "title": {
+    "en": "Spectral Clustering",
+    "zh": "谱聚类"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, Berkeley",
+      "zh": "加州大学伯克利分校"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  },
+  "description": {
+    "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>",
+    "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Andrew Ng portrait",
+        "zh": "吴恩达 人物照片"
+      },
+      "subcaption": {
+        "en": "Co-author of influential spectral clustering analysis.",
+        "zh": "谱聚类分析论文共同作者。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      }
+    },
+    {
+      "index": 1,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Spectral graph illustration",
+        "zh": "谱聚类图示"
+      },
+      "subcaption": {
+        "en": "Public graph illustration used on the spectral clustering article.",
+        "zh": "谱聚类条目使用的公开图示。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+      "license": {
+        "en": "Public domain",
+        "zh": "Public domain"
+      },
+      "usage": {
+        "en": "Graph diagram",
+        "zh": "图结构图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Normalized graph cut",
+        "zh": "归一化图切分"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Normalized Cuts and Image Segmentation.",
+        "zh": "依据 归一化切分与图像分割 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Normalized Cuts and Image Segmentation",
+        "zh": "归一化切分与图像分割"
+      },
+      "sourceUrl": "https://doi.org/10.1109/34.868688",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Graph-cut diagram",
+        "zh": "图切分图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Eigenvector embedding",
+        "zh": "特征向量嵌入"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm.",
+        "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "On Spectral Clustering: Analysis and an algorithm",
+        "zh": "论谱聚类：分析与算法"
+      },
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Embedding diagram",
+        "zh": "嵌入图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Jianbo Shi",
+        "type": "portrait-search",
+        "label": "Jianbo Shi portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jianbo%20Shi%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jianbo Shi",
+        "type": "commons-portrait-search",
+        "label": "Jianbo Shi Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jianbo%20Shi%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Jitendra Malik, Andrew Ng, Yair Weiss",
+        "type": "portrait-search",
+        "label": "Jitendra Malik, Andrew Ng, Yair Weiss portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jitendra%20Malik%2C%20Andrew%20Ng%2C%20Yair%20Weiss%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jitendra Malik, Andrew Ng, Yair Weiss",
+        "type": "commons-portrait-search",
+        "label": "Jitendra Malik, Andrew Ng, Yair Weiss Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jitendra%20Malik%2C%20Andrew%20Ng%2C%20Yair%20Weiss%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Spectral Clustering event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2000%20Spectral%20Clustering%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Spectral Clustering Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Spectral%20Clustering%202000&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Spectral Clustering Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Spectral%20Clustering%202000",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Spectral Clustering publication search",
+        "url": "https://www.google.com/search?q=2000%20Spectral%20Clustering%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Spectral Clustering scholar search",
+        "url": "https://scholar.google.com/scholar?q=2000%20Spectral%20Clustering%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 4,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir Vapnik",
+        "zh": "弗拉基米尔·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed optimal-margin classifiers and statistical learning theory",
+        "zh": "共同发展最优间隔分类器与统计学习理论"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+          "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+          "license": {
+            "en": "University news image; rights not stated.",
+            "zh": "University news image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / SVM co-inventor portrait",
+            "zh": "历史人物 / SVM 共同发明者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Bernhard Boser",
+        "zh": "伯恩哈德·博泽尔"
+      },
+      "role": {
+        "en": "Co-author of the 1992 optimal-margin classifier paper",
+        "zh": "1992 年最优间隔分类器论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+          "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+          "license": {
+            "en": "University news image; rights not stated.",
+            "zh": "University news image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / SVM co-inventor portrait",
+            "zh": "历史人物 / SVM 共同发明者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Isabelle Guyon",
+        "zh": "伊莎贝尔·居永"
+      },
+      "role": {
+        "en": "Co-author of the 1992 optimal-margin classifier paper",
+        "zh": "1992 年最优间隔分类器论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+          "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+          "license": {
+            "en": "University news image; rights not stated.",
+            "zh": "University news image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / SVM co-inventor portrait",
+            "zh": "历史人物 / SVM 共同发明者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

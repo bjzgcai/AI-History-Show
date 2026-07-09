@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:56:51.593Z",
+  "eventKey": "ai100-1967-knn",
+  "year": 1967,
+  "title": {
+    "en": "KNN",
+    "zh": "KNN 最近邻"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "description": {
+    "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>",
+    "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Thomas Cover portrait",
+        "zh": "托马斯·科弗肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      },
+      "sourceName": {
+        "en": "Stanford Report",
+        "zh": "Stanford Report"
+      },
+      "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+      "license": {
+        "en": "Stanford Report image; reuse rights not stated.",
+        "zh": "Stanford Report 图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Nearest-neighbor vote",
+        "zh": "最近邻投票"
+      },
+      "subcaption": {
+        "en": "Original local explainer of nearest-neighbor voting.",
+        "zh": "关于最近邻投票的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "IEEE Transactions on Information Theory",
+        "zh": "IEEE Transactions on Information Theory"
+      },
+      "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Thomas Cover",
+        "type": "portrait-search",
+        "label": "Thomas Cover portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Cover%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Thomas Cover",
+        "type": "commons-portrait-search",
+        "label": "Thomas Cover Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Cover%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Peter Hart",
+        "type": "portrait-search",
+        "label": "Peter Hart portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Peter%20Hart%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Peter Hart",
+        "type": "commons-portrait-search",
+        "label": "Peter Hart Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Peter%20Hart%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "KNN event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1967%20KNN%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "KNN Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=KNN%201967&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "KNN Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=KNN%201967",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "KNN publication search",
+        "url": "https://www.google.com/search?q=1967%20KNN%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "KNN scholar search",
+        "url": "https://scholar.google.com/scholar?q=1967%20KNN%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

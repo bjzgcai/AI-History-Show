@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:17.347Z",
+  "eventKey": "ai100-2015-diffusion-model",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Denoising Diffusion Probabilistic Models",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Diffusion model overview",
+      "url": "https://en.wikipedia.org/wiki/Diffusion_model",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Jascha Sohl-Dickstein homepage",
+      "url": "https://sohldickstein.com/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jascha Sohl-Dickstein Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jascha%20Sohl-Dickstein%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Diffusion Model Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Diffusion%20Model%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Diffusion Model Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Diffusion%20Model%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20Diffusion%20Model%20Jascha%20Sohl-Dickstein%20AI%20history%20source%20images",
+      "query": "2015 Diffusion Model Jascha Sohl-Dickstein AI history source images",
+      "eventKey": "ai100-2015-diffusion-model"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Diffusion%20Model%20Jascha%20Sohl-Dickstein%20AI%20history%20source%20images",
+      "query": "2015 Diffusion Model Jascha Sohl-Dickstein AI history source images",
+      "eventKey": "ai100-2015-diffusion-model"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Diffusion%20Model%20Jascha%20Sohl-Dickstein%20AI%20history%20source%20images",
+      "query": "2015 Diffusion Model Jascha Sohl-Dickstein AI history source images",
+      "eventKey": "ai100-2015-diffusion-model"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jascha Sohl-Dickstein portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jascha%20Sohl-Dickstein%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jascha Sohl-Dickstein Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jascha%20Sohl-Dickstein%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jascha Sohl-Dickstein official biography search",
+      "url": "https://www.google.com/search?q=Jascha%20Sohl-Dickstein%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Diffusion Model event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Diffusion%20Model%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Diffusion Model Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Diffusion%20Model%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Diffusion Model Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Diffusion%20Model%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Diffusion Model publication search",
+      "url": "https://www.google.com/search?q=2015%20Diffusion%20Model%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Diffusion Model scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Diffusion%20Model%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+      "finalUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "savedPath": "pages/001.deep-unsupervised-learning-using-nonequilibrium-thermodynamics.html",
+      "fetchedAt": "2026-07-03T12:07:17.934Z"
+    },
+    {
+      "label": "Denoising Diffusion Probabilistic Models",
+      "sourceUrl": "https://arxiv.org/abs/2006.11239",
+      "finalUrl": "https://arxiv.org/abs/2006.11239",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[2006.11239] Denoising Diffusion Probabilistic Models",
+      "savedPath": "pages/002.denoising-diffusion-probabilistic-models.html",
+      "fetchedAt": "2026-07-03T12:07:18.311Z"
+    },
+    {
+      "label": "Diffusion model overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Diffusion_model",
+      "finalUrl": "https://en.wikipedia.org/wiki/Diffusion_model",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Diffusion model - Wikipedia",
+      "savedPath": "pages/003.diffusion-model-overview.html",
+      "fetchedAt": "2026-07-03T12:07:18.917Z"
+    },
+    {
+      "label": "Jascha Sohl-Dickstein homepage",
+      "sourceUrl": "https://sohldickstein.com/",
+      "finalUrl": "https://sohldickstein.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Jascha Sohl-Dickstein",
+      "savedPath": "pages/004.jascha-sohl-dickstein-homepage.html",
+      "fetchedAt": "2026-07-03T12:07:20.495Z"
+    },
+    {
+      "label": "Jascha Sohl-Dickstein Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jascha%20Sohl-Dickstein%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jascha%20Sohl-Dickstein%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.jascha-sohl-dickstein-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:21.984Z"
+    },
+    {
+      "label": "Diffusion Model Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Diffusion%20Model%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Diffusion%20Model%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.diffusion-model-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:07:24.841Z"
+    },
+    {
+      "label": "Diffusion Model Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Diffusion%20Model%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Diffusion%20Model%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.diffusion-model-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:07:25.448Z"
+    }
+  ]
+}

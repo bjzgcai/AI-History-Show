@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:22.419Z",
+  "eventKey": "ai100-2005-hog",
+  "year": 2005,
+  "title": {
+    "en": "HOG",
+    "zh": "HOG 方向梯度直方图"
+  },
+  "location": {
+    "name": {
+      "en": "INRIA",
+      "zh": "INRIA"
+    },
+    "country": {
+      "en": "Grenoble, France",
+      "zh": "法国格勒诺布尔"
+    },
+    "coordinates": [
+      45.1938,
+      5.7681
+    ]
+  },
+  "description": {
+    "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>",
+    "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+      "existsLocally": false,
+      "caption": {
+        "en": "Navneet Dalal portrait",
+        "zh": "纳夫尼特·达拉尔肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of HOG",
+        "zh": "HOG 共同作者"
+      },
+      "sourceName": {
+        "en": "Navneet Dalal personal site",
+        "zh": "纳夫尼特·达拉尔个人网站"
+      },
+      "sourceUrl": "https://sites.google.com/view/navneetdalal/home",
+      "license": {
+        "en": "Personal site image; reuse rights not stated.",
+        "zh": "个人网站图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "HOG descriptor grid",
+        "zh": "HOG 描述子网格"
+      },
+      "subcaption": {
+        "en": "Original local explainer of gradient-orientation histograms.",
+        "zh": "关于梯度方向直方图的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "CVPR",
+        "zh": "CVPR"
+      },
+      "sourceUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Navneet Dalal",
+        "type": "portrait-search",
+        "label": "Navneet Dalal portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Navneet%20Dalal%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Navneet Dalal",
+        "type": "commons-portrait-search",
+        "label": "Navneet Dalal Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Navneet%20Dalal%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Bill Triggs",
+        "type": "portrait-search",
+        "label": "Bill Triggs portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Bill%20Triggs%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Bill Triggs",
+        "type": "commons-portrait-search",
+        "label": "Bill Triggs Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Bill%20Triggs%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "HOG event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2005%20HOG%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "HOG Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=HOG%202005&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "HOG Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=HOG%202005",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "HOG publication search",
+        "url": "https://www.google.com/search?q=2005%20HOG%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "HOG scholar search",
+        "url": "https://scholar.google.com/scholar?q=2005%20HOG%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

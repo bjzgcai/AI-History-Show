@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Sakana AI team",
+        "zh": "Sakana AI 团队"
+      },
+      "role": {
+        "en": "AI Scientist Developer",
+        "zh": "AI Scientist开发者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "伯克利团队",
+        "zh": "伯克利团队"
+      },
+      "role": {
+        "en": "A-Lab Developer",
+        "zh": "A-Lab开发者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    }
+  ]
+}

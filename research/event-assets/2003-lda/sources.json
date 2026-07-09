@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:33.383Z",
+  "eventKey": "2003-lda",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Latent Dirichlet Allocation",
+      "url": "https://jmlr.org/papers/v3/blei03a.html",
+      "usage": ""
+    },
+    {
+      "type": "Author",
+      "label": "David M. Blei homepage",
+      "url": "https://www.cs.columbia.edu/~blei/",
+      "usage": ""
+    },
+    {
+      "type": "Implementation",
+      "label": "scikit-learn LatentDirichletAllocation",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Blei Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Blei%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Michael Jordan Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Latent Dirichlet Allocation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Latent%20Dirichlet%20Allocation%202003&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Latent Dirichlet Allocation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Latent%20Dirichlet%20Allocation%202003",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2003%20Latent%20Dirichlet%20Allocation%20David%20Blei%20Michael%20Jordan%20AI%20history%20source%20images",
+      "query": "2003 Latent Dirichlet Allocation David Blei Michael Jordan AI history source images",
+      "eventKey": "2003-lda"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2003%20Latent%20Dirichlet%20Allocation%20David%20Blei%20Michael%20Jordan%20AI%20history%20source%20images",
+      "query": "2003 Latent Dirichlet Allocation David Blei Michael Jordan AI history source images",
+      "eventKey": "2003-lda"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2003%20Latent%20Dirichlet%20Allocation%20David%20Blei%20Michael%20Jordan%20AI%20history%20source%20images",
+      "query": "2003 Latent Dirichlet Allocation David Blei Michael Jordan AI history source images",
+      "eventKey": "2003-lda"
+    },
+    {
+      "type": "portrait-search",
+      "label": "David Blei portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=David%20Blei%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Blei Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Blei%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "David Blei official biography search",
+      "url": "https://www.google.com/search?q=David%20Blei%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Michael Jordan portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Michael%20Jordan%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Michael Jordan Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Michael Jordan official biography search",
+      "url": "https://www.google.com/search?q=Michael%20Jordan%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Latent Dirichlet Allocation event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2003%20Latent%20Dirichlet%20Allocation%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Latent Dirichlet Allocation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Latent%20Dirichlet%20Allocation%202003&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Latent Dirichlet Allocation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Latent%20Dirichlet%20Allocation%202003",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Latent Dirichlet Allocation publication search",
+      "url": "https://www.google.com/search?q=2003%20Latent%20Dirichlet%20Allocation%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Latent Dirichlet Allocation scholar search",
+      "url": "https://scholar.google.com/scholar?q=2003%20Latent%20Dirichlet%20Allocation%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Latent Dirichlet Allocation",
+      "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+      "finalUrl": "https://jmlr.org/papers/v3/blei03a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "",
+      "savedPath": "pages/001.latent-dirichlet-allocation.html",
+      "fetchedAt": "2026-07-03T11:33:00.016Z"
+    },
+    {
+      "label": "David M. Blei homepage",
+      "sourceUrl": "https://www.cs.columbia.edu/~blei/",
+      "finalUrl": "https://www.cs.columbia.edu/~blei/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "David M. Blei",
+      "savedPath": "pages/002.david-m.-blei-homepage.html",
+      "fetchedAt": "2026-07-03T11:33:04.468Z"
+    },
+    {
+      "label": "scikit-learn LatentDirichletAllocation",
+      "sourceUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T11:33:19.761Z"
+    },
+    {
+      "label": "David Blei Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Blei%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T11:33:35.059Z"
+    },
+    {
+      "label": "Michael Jordan Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T11:49:05.945Z"
+    },
+    {
+      "label": "Latent Dirichlet Allocation Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Latent%20Dirichlet%20Allocation%202003&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:49:16.800Z"
+    },
+    {
+      "label": "Latent Dirichlet Allocation Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Latent%20Dirichlet%20Allocation%202003",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Latent%20Dirichlet%20Allocation%202003",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.latent-dirichlet-allocation-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:49:18.071Z"
+    }
+  ]
+}

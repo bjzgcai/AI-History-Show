@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:52.524Z",
+  "eventKey": "1965-resolution-method",
+  "year": "1965",
+  "title": {
+    "en": "Resolution Method",
+    "zh": "归结方法"
+  },
+  "location": {
+    "name": {
+      "en": "Argonne National Laboratory / Syracuse University",
+      "zh": "阿贡国家实验室 / 雪城大学"
+    },
+    "country": {
+      "en": "Illinois and New York, United States",
+      "zh": "美国伊利诺伊州与纽约州"
+    },
+    "coordinates": [
+      41.7181,
+      -87.9798
+    ]
+  },
+  "description": {
+    "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>",
+    "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "John Alan Robinson portrait",
+        "zh": "约翰·艾伦·罗宾逊 肖像"
+      },
+      "subcaption": {
+        "en": "Robinson in 2012; Wikimedia Commons portrait.",
+        "zh": "2012 年的 Robinson；维基共享资源 人物照片。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+      "license": {
+        "en": "Creative Commons license stated on Commons file page.",
+        "zh": "Creative Commons license stated on Commons file page."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Clause refutation ladder",
+        "zh": "子句反驳阶梯"
+      },
+      "subcaption": {
+        "en": "Local redraw for Resolution Method, based on the listed source material.",
+        "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Journal of the ACM",
+        "zh": "《ACM 杂志》"
+      },
+      "sourceUrl": "https://doi.org/10.1145/321250.321253",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Unification map",
+        "zh": "合一映射图"
+      },
+      "subcaption": {
+        "en": "Local redraw for Resolution Method, based on the listed source material.",
+        "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Journal of the ACM",
+        "zh": "《ACM 杂志》"
+      },
+      "sourceUrl": "https://doi.org/10.1145/321250.321253",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "John Alan Robinson",
+        "type": "portrait-search",
+        "label": "John Alan Robinson portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=John%20Alan%20Robinson%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "John Alan Robinson",
+        "type": "commons-portrait-search",
+        "label": "John Alan Robinson Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=John%20Alan%20Robinson%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Resolution Method event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1965%20Resolution%20Method%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Resolution Method Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Resolution%20Method%201965&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Resolution Method Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Resolution%20Method%201965",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Resolution Method publication search",
+        "url": "https://www.google.com/search?q=1965%20Resolution%20Method%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Resolution Method scholar search",
+        "url": "https://scholar.google.com/scholar?q=1965%20Resolution%20Method%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

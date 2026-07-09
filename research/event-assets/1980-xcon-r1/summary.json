@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:57.282Z",
+  "eventKey": "1980-xcon-r1",
+  "year": "1978-1980",
+  "title": {
+    "en": "XCON-R1",
+    "zh": "XCON / R1 专家系统"
+  },
+  "location": {
+    "name": {
+      "en": "Carnegie Mellon University",
+      "zh": "卡内基梅隆大学"
+    },
+    "country": {
+      "en": "Pennsylvania, United States",
+      "zh": "美国宾夕法尼亚州"
+    },
+    "coordinates": [
+      40.4433,
+      -79.9436
+    ]
+  },
+  "description": {
+    "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>",
+    "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "DEC VAX-11/780 system",
+        "zh": "DEC VAX-11/780 系统照片"
+      },
+      "subcaption": {
+        "en": "Representative VAX system class configured by R1/XCON.",
+        "zh": "R1/XCON 所配置的 VAX 系统类别代表照片。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+      "license": {
+        "en": "CC BY-SA 3.0",
+        "zh": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "en": "Hardware photo",
+        "zh": "硬件照片"
+      }
+    },
+    {
+      "index": 1,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "VAX-11/780 CPU backplane",
+        "zh": "VAX-11/780 CPU 背板"
+      },
+      "subcaption": {
+        "en": "Hardware detail from the VAX-11/780 family.",
+        "zh": "VAX-11/780 系列硬件细节。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+      "license": {
+        "en": "CC BY 4.0",
+        "zh": "CC BY 4.0"
+      },
+      "usage": {
+        "en": "Hardware detail",
+        "zh": "硬件细节"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Rule-based configurator",
+        "zh": "规则式配置器"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain.",
+        "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "R1: An Expert in the Computer Systems Domain",
+        "zh": "R1：计算机系统领域的专家"
+      },
+      "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Rule diagram",
+        "zh": "规则图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Computer-order flow",
+        "zh": "计算机订单流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches.",
+        "zh": "依据 重访 R1：一线四年 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "R1 Revisited: Four Years in the Trenches",
+        "zh": "重访 R1：一线四年"
+      },
+      "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Order-flow diagram",
+        "zh": "订单流程图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "John McDermott",
+        "type": "portrait-search",
+        "label": "John McDermott portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=John%20McDermott%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "John McDermott",
+        "type": "commons-portrait-search",
+        "label": "John McDermott Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=John%20McDermott%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "XCON-R1 event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1978-1980%20XCON-R1%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "XCON-R1 Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=XCON-R1%201978-1980&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "XCON-R1 Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=XCON-R1%201978-1980",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "XCON-R1 publication search",
+        "url": "https://www.google.com/search?q=1978-1980%20XCON-R1%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "XCON-R1 scholar search",
+        "url": "https://scholar.google.com/scholar?q=1978-1980%20XCON-R1%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 4,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:34.867Z",
+  "eventKey": "ai100-2016-gcn",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Thomas Kipf",
+      "role": "GCN lead author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Thomas Kipf portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Kipf%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Thomas Kipf Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Kipf%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Thomas Kipf official biography search",
+          "url": "https://www.google.com/search?q=Thomas%20Kipf%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "GCN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20GCN%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "GCN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GCN%202016&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GCN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GCN%202016",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "GCN publication search",
+      "url": "https://www.google.com/search?q=2016%20GCN%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "GCN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2016%20GCN%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://tkipf.github.io/images/photo.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Thomas Kipf portrait",
+        "zh": "托马斯·基普夫肖像"
+      },
+      "subcaption": {
+        "en": "GCN lead author",
+        "zh": "GCN 主要作者"
+      },
+      "sourceUrl": "https://tkipf.github.io/",
+      "sourceLabel": "Thomas Kipf homepage",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "GCN explainer",
+        "zh": "GCN 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1609.02907",
+      "sourceLabel": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Thomas Kipf homepage",
+        "url": "https://tkipf.github.io/",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Semi-Supervised Classification with Graph Convolutional Networks",
+        "url": "https://arxiv.org/abs/1609.02907",
+        "usage": ""
+      },
+      {
+        "type": "Conference paper",
+        "label": "ICLR OpenReview record",
+        "url": "https://openreview.net/forum?id=SJU4ayYgl",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

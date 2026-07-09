@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:24.708Z",
+  "eventKey": "ai100-2015-deep-compression",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2015-deep-compression",
+      "label": "Deep Compression lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://hanlab.mit.edu/songhan",
+      "imageUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+      "finalImageUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+      "localPath": "images/001.deep-compression-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 10042,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:08:24.404Z"
+    },
+    {
+      "eventKey": "ai100-2015-deep-compression",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1510.00149",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2363,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:08:24.708Z"
+    }
+  ]
+}

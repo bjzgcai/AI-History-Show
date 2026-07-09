@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Robin Rombach",
+        "zh": "罗宾·罗姆巴赫"
+      },
+      "role": {
+        "en": "Lead author of latent diffusion models",
+        "zh": "潜扩散模型主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+          "sourceUrl": "https://www.latentlabs.com/our-dna/",
+          "license": {
+            "en": "Latent Labs profile image; reuse rights not stated.",
+            "zh": "Latent Labs 个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

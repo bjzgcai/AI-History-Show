@@ -1,0 +1,79 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Allen Newell",
+        "zh": "艾伦·纽厄尔"
+      },
+      "role": {
+        "en": "Logic Theorist co-creator",
+        "zh": "Logic Theorist 共同创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+          "license": {
+            "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+            "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Herbert A. Simon",
+        "zh": "赫伯特·A·西蒙"
+      },
+      "role": {
+        "en": "Logic Theorist co-creator",
+        "zh": "Logic Theorist 共同创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+          "license": {
+            "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+            "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "J. C. Shaw",
+        "zh": "J·C·肖"
+      },
+      "role": {
+        "en": "Programmer and co-developer",
+        "zh": "程序员与共同开发者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+          "license": {
+            "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+            "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

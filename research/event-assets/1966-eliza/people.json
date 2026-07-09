@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Joseph Weizenbaum",
+        "zh": "约瑟夫·魏岑鲍姆"
+      },
+      "role": {
+        "en": "Creator of ELIZA",
+        "zh": "ELIZA 创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
+          "sourceUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+          "license": {
+            "en": "MIT News image; rights not stated.",
+            "zh": "麻省理工学院 新闻 image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

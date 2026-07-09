@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:32:09.632Z",
+  "eventKey": "2025-llm-competition",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "研究机构",
+      "role": "Leading-edge model R&D organization",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "研究机构 portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "研究机构 Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "研究机构 official biography search",
+          "url": "https://www.google.com/search?q=%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "A Flourishing Competition Among Large Language Models event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "A Flourishing Competition Among Large Language Models Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "A Flourishing Competition Among Large Language Models Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%202025",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "A Flourishing Competition Among Large Language Models publication search",
+      "url": "https://www.google.com/search?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "A Flourishing Competition Among Large Language Models scholar search",
+      "url": "https://scholar.google.com/scholar?q=2025%20A%20Flourishing%20Competition%20Among%20Large%20Language%20Models%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "A Flourishing Competition Among Large Language Models",
+        "zh": "大语言模型百花齐放"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

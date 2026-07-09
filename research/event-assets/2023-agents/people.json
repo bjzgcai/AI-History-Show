@@ -1,0 +1,37 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Stuart Russell",
+        "zh": "斯图尔特·罗素"
+      },
+      "role": {
+        "en": "Founder of Agent Theory",
+        "zh": "智能体理论奠基人"
+      },
+      "portraitCandidates": []
+    },
+    {
+      "name": {
+        "en": "Peter Norvig",
+        "zh": "彼得·诺维格"
+      },
+      "role": {
+        "en": "AIMA author",
+        "zh": "《人工智能：一种现代方法》作者"
+      },
+      "portraitCandidates": []
+    },
+    {
+      "name": {
+        "en": "Michael Wooldridge",
+        "zh": "迈克尔·伍尔德里奇"
+      },
+      "role": {
+        "en": "Expert in Multi-Agent Systems",
+        "zh": "多智能体系统专家"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

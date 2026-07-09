@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:15.204Z",
+  "eventKey": "ai100-2021-swin-transformer",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Ze Liu",
+      "role": "Swin Transformer lead author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Ze Liu portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Ze%20Liu%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Ze Liu Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Ze%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Ze Liu official biography search",
+          "url": "https://www.google.com/search?q=Ze%20Liu%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Swin Transformer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20Swin%20Transformer%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Swin Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Swin%20Transformer%202021&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Swin Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Swin%20Transformer%202021",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Swin Transformer publication search",
+      "url": "https://www.google.com/search?q=2021%20Swin%20Transformer%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Swin Transformer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2021%20Swin%20Transformer%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://zeliu98.github.io/images/zeliu.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Ze Liu portrait",
+        "zh": "刘泽肖像"
+      },
+      "subcaption": {
+        "en": "Swin Transformer lead author",
+        "zh": "Swin Transformer 主要作者"
+      },
+      "sourceUrl": "https://zeliu98.github.io/",
+      "sourceLabel": "Ze Liu homepage",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Swin Transformer explainer",
+        "zh": "Swin Transformer 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2103.14030",
+      "sourceLabel": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Ze Liu homepage",
+        "url": "https://zeliu98.github.io/",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+        "url": "https://arxiv.org/abs/2103.14030",
+        "usage": ""
+      },
+      {
+        "type": "Conference paper",
+        "label": "ICCV open-access paper page",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

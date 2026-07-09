@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:01.855Z",
+  "eventKey": "ai100-1997-kernel-pca",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Bernhard Scholkopf",
+      "role": "Co-author of Kernel PCA",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Bernhard Scholkopf portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Bernhard%20Scholkopf%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Bernhard Scholkopf Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Bernhard%20Scholkopf%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Bernhard Scholkopf official biography search",
+          "url": "https://www.google.com/search?q=Bernhard%20Scholkopf%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Klaus-Robert Muller",
+      "role": "Co-author of Kernel PCA",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Klaus-Robert Muller portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Klaus-Robert%20Muller%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Klaus-Robert Muller Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Klaus-Robert%20Muller%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Klaus-Robert Muller official biography search",
+          "url": "https://www.google.com/search?q=Klaus-Robert%20Muller%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Kernel PCA event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1997%20Kernel%20PCA%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Kernel PCA Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kernel%20PCA%201997&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Kernel PCA Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Kernel%20PCA%201997",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Kernel PCA publication search",
+      "url": "https://www.google.com/search?q=1997%20Kernel%20PCA%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Kernel PCA scholar search",
+      "url": "https://scholar.google.com/scholar?q=1997%20Kernel%20PCA%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Bernhard Scholkopf portrait",
+        "zh": "伯恩哈德·舍尔科普夫肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "Creative Commons Attribution, per Wikimedia Commons.",
+        "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Kernel eigenmap",
+        "zh": "核特征映射"
+      },
+      "subcaption": {
+        "en": "Original local explainer of kernel PCA embedding.",
+        "zh": "关于 Kernel PCA 嵌入的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1162/089976698300017467",
+      "sourceLabel": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+        "url": "https://doi.org/10.1162/089976698300017467",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "Max Planck publication page",
+        "url": "https://is.mpg.de/ei/publications/730",
+        "usage": ""
+      },
+      {
+        "type": "Paper PDF",
+        "label": "Open Kernel PCA PDF",
+        "url": "https://www.mlpack.org/papers/kpca.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:24.422Z",
+  "eventKey": "1966-eliza",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "ELIZA CACM paper",
+      "url": "https://doi.org/10.1145/365153.365168",
+      "usage": ""
+    },
+    {
+      "type": "Institution",
+      "label": "MIT News obituary for Joseph Weizenbaum",
+      "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+      "usage": ""
+    },
+    {
+      "type": "Archive",
+      "label": "ELIZA source reconstruction project",
+      "url": "https://sites.google.com/view/elizagen-org/",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Joseph Weizenbaum Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Weizenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "ELIZA Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ELIZA%201966&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ELIZA Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ELIZA%201966",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1966%20ELIZA%20Joseph%20Weizenbaum%20AI%20history%20source%20images",
+      "query": "1966 ELIZA Joseph Weizenbaum AI history source images",
+      "eventKey": "1966-eliza"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1966%20ELIZA%20Joseph%20Weizenbaum%20AI%20history%20source%20images",
+      "query": "1966 ELIZA Joseph Weizenbaum AI history source images",
+      "eventKey": "1966-eliza"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1966%20ELIZA%20Joseph%20Weizenbaum%20AI%20history%20source%20images",
+      "query": "1966 ELIZA Joseph Weizenbaum AI history source images",
+      "eventKey": "1966-eliza"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Joseph Weizenbaum portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Joseph%20Weizenbaum%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Joseph Weizenbaum Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Weizenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Joseph Weizenbaum official biography search",
+      "url": "https://www.google.com/search?q=Joseph%20Weizenbaum%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "ELIZA event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1966%20ELIZA%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "ELIZA Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ELIZA%201966&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ELIZA Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ELIZA%201966",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "ELIZA publication search",
+      "url": "https://www.google.com/search?q=1966%20ELIZA%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "ELIZA scholar search",
+      "url": "https://scholar.google.com/scholar?q=1966%20ELIZA%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "ELIZA CACM paper",
+      "sourceUrl": "https://doi.org/10.1145/365153.365168",
+      "finalUrl": "https://dl.acm.org/doi/10.1145/365153.365168",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.eliza-cacm-paper.html",
+      "fetchedAt": "2026-07-03T11:04:25.292Z"
+    },
+    {
+      "label": "MIT News obituary for Joseph Weizenbaum",
+      "sourceUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+      "finalUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Joseph Weizenbaum, professor emeritus of computer science, 85 | MIT News | Massachusetts Institute of Technology",
+      "savedPath": "pages/002.mit-news-obituary-for-joseph-weizenbaum.html",
+      "fetchedAt": "2026-07-03T11:04:26.643Z"
+    },
+    {
+      "label": "ELIZA source reconstruction project",
+      "sourceUrl": "https://sites.google.com/view/elizagen-org/",
+      "finalUrl": "https://sites.google.com/view/elizagen-org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "ELIZAGEN",
+      "savedPath": "pages/003.eliza-source-reconstruction-project.html",
+      "fetchedAt": "2026-07-03T11:04:27.623Z"
+    },
+    {
+      "label": "Joseph Weizenbaum Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Weizenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Weizenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.joseph-weizenbaum-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:29.578Z"
+    },
+    {
+      "label": "ELIZA Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=ELIZA%201966&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=ELIZA%201966&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.eliza-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:04:32.147Z"
+    },
+    {
+      "label": "ELIZA Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=ELIZA%201966",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=ELIZA%201966",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.eliza-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:32.690Z"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jacob Devlin",
+        "zh": "雅各布·德夫林"
+      },
+      "role": {
+        "en": "Lead author of BERT",
+        "zh": "BERT 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/jacob-devlin.jpg",
+          "sourceUrl": "resources/images/figures/jacob-devlin.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

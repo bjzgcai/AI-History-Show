@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:50.397Z",
+  "eventKey": "ai100-2015-resnet",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2015-resnet",
+      "label": "Lead author of ResNet.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/figures/kaiming-he.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.lead-author-of-resnet.jpg",
+      "originalLocalPath": "resources/images/figures/kaiming-he.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 908566,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Reference image",
+      "downloadedAt": "2026-07-03T12:01:50.090Z"
+    },
+    {
+      "eventKey": "ai100-2015-resnet",
+      "label": "Architecture visual used by the project.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.architecture-visual-used-by-the-project.png",
+      "originalLocalPath": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 181456,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:01:50.397Z"
+    }
+  ]
+}

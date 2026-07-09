@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:00.542Z",
+  "eventKey": "2006-dbn",
+  "year": "2006",
+  "title": {
+    "en": "Deep Belief Network",
+    "zh": "深度置信网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Ontario, Canada",
+      "zh": "加拿大安大略省"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "description": {
+    "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>",
+    "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。辛顿 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Geoffrey Hinton portrait",
+        "zh": "杰弗里·辛顿 肖像"
+      },
+      "subcaption": {
+        "en": "Photo from Hinton's University of Toronto page.",
+        "zh": "来自 辛顿 多伦多大学页面的人物图。"
+      },
+      "sourceName": {
+        "en": "University of Toronto",
+        "zh": "University of Toronto"
+      },
+      "sourceUrl": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+      "license": {
+        "en": "University personal photo page; reuse rights not stated.",
+        "zh": "University personal photo page; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Stacked RBM pretraining",
+        "zh": "堆叠 RBM 预训练"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+        "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Neural Computation",
+        "zh": "Neural Computation"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Pretrain then fine-tune",
+        "zh": "预训练后微调"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+        "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Neural Computation",
+        "zh": "Neural Computation"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Geoffrey Hinton",
+        "type": "portrait-search",
+        "label": "Geoffrey Hinton portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Geoffrey Hinton",
+        "type": "commons-portrait-search",
+        "label": "Geoffrey Hinton Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Deep Belief Network event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2006%20Deep%20Belief%20Network%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Deep Belief Network Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Belief%20Network%202006&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Deep Belief Network Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Deep%20Belief%20Network%202006",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Deep Belief Network publication search",
+        "url": "https://www.google.com/search?q=2006%20Deep%20Belief%20Network%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Deep Belief Network scholar search",
+        "url": "https://scholar.google.com/scholar?q=2006%20Deep%20Belief%20Network%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

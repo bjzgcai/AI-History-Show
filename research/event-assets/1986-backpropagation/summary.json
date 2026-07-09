@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:00.805Z",
+  "eventKey": "1986-backpropagation",
+  "year": 1986,
+  "title": {
+    "en": "Backpropagation",
+    "zh": "反向传播算法"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, San Diego",
+      "zh": "加州大学圣地亚哥分校"
+    },
+    "country": {
+      "en": "CA, United States",
+      "zh": "美国, 加利福尼亚州"
+    },
+    "coordinates": [
+      32.8801,
+      -117.234
+    ]
+  },
+  "description": {
+    "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks.",
+    "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Backpropagation Algorithm Architecture Diagram",
+        "zh": "反向传播算法 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 4,
+      "path": "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "《通过反向传播误差来学习表征》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "David Rumelhart",
+        "type": "portrait-search",
+        "label": "David Rumelhart portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=David%20Rumelhart%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "David Rumelhart",
+        "type": "commons-portrait-search",
+        "label": "David Rumelhart Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Geoffrey Hinton",
+        "type": "portrait-search",
+        "label": "Geoffrey Hinton portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Geoffrey Hinton",
+        "type": "commons-portrait-search",
+        "label": "Geoffrey Hinton Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Ronald Williams",
+        "type": "portrait-search",
+        "label": "Ronald Williams portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ronald%20Williams%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ronald Williams",
+        "type": "commons-portrait-search",
+        "label": "Ronald Williams Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ronald%20Williams%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Backpropagation event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1986%20Backpropagation%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Backpropagation Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Backpropagation%201986&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Backpropagation Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Backpropagation%201986",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Backpropagation publication search",
+        "url": "https://www.google.com/search?q=1986%20Backpropagation%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Backpropagation scholar search",
+        "url": "https://scholar.google.com/scholar?q=1986%20Backpropagation%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 5,
+    "manifest": "images/manifest.json"
+  }
+}

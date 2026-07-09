@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:56:38.488Z",
+  "eventKey": "2000-spectral-clustering",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Jianbo Shi",
+      "role": "Co-author of normalized cuts",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jianbo Shi portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Jianbo%20Shi%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jianbo Shi Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Jianbo%20Shi%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jianbo Shi official biography search",
+          "url": "https://www.google.com/search?q=Jianbo%20Shi%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Jitendra Malik, Andrew Ng, Yair Weiss",
+      "role": "Key contributors to spectral clustering formulations",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jitendra Malik, Andrew Ng, Yair Weiss portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Jitendra%20Malik%2C%20Andrew%20Ng%2C%20Yair%20Weiss%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jitendra Malik, Andrew Ng, Yair Weiss Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Jitendra%20Malik%2C%20Andrew%20Ng%2C%20Yair%20Weiss%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jitendra Malik, Andrew Ng, Yair Weiss official biography search",
+          "url": "https://www.google.com/search?q=Jitendra%20Malik%2C%20Andrew%20Ng%2C%20Yair%20Weiss%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Spectral Clustering event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2000%20Spectral%20Clustering%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Spectral Clustering Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Spectral%20Clustering%202000&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Spectral Clustering Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Spectral%20Clustering%202000",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Spectral Clustering publication search",
+      "url": "https://www.google.com/search?q=2000%20Spectral%20Clustering%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Spectral Clustering scholar search",
+      "url": "https://scholar.google.com/scholar?q=2000%20Spectral%20Clustering%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Andrew Ng portrait",
+        "zh": "吴恩达 人物照片"
+      },
+      "subcaption": {
+        "en": "Co-author of influential spectral clustering analysis.",
+        "zh": "谱聚类分析论文共同作者。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Spectral graph illustration",
+        "zh": "谱聚类图示"
+      },
+      "subcaption": {
+        "en": "Public graph illustration used on the spectral clustering article.",
+        "zh": "谱聚类条目使用的公开图示。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+      "sourceLabel": "Spectral graph illustration",
+      "license": {
+        "en": "Public domain",
+        "zh": "Public domain"
+      },
+      "usage": {
+        "en": "Graph diagram",
+        "zh": "图结构图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Normalized graph cut",
+        "zh": "归一化图切分"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Normalized Cuts and Image Segmentation.",
+        "zh": "依据 归一化切分与图像分割 制作的本地解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1109/34.868688",
+      "sourceLabel": "Normalized Cuts and Image Segmentation",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Graph-cut diagram",
+        "zh": "图切分图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Eigenvector embedding",
+        "zh": "特征向量嵌入"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm.",
+        "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。"
+      },
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+      "sourceLabel": "On Spectral Clustering: Analysis and an algorithm",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Embedding diagram",
+        "zh": "嵌入图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+        "usage": "Historical figure photo"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Normalized Cuts and Image Segmentation",
+        "url": "https://doi.org/10.1109/34.868688",
+        "usage": ""
+      },
+      {
+        "type": "Paper",
+        "label": "On Spectral Clustering: Analysis and an algorithm",
+        "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

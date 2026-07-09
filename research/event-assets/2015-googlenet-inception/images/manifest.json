@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:52.518Z",
+  "eventKey": "2015-googlenet-inception",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2015-googlenet-inception",
+      "label": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.twiml-episode-art-for-christian-szegedy-first-author-of-the-googlenet-inception-paper.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1228332,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Inception author portrait",
+      "rights": "Podcast episode artwork; rights not stated.",
+      "downloadedAt": "2026-07-03T11:03:52.214Z"
+    },
+    {
+      "eventKey": "2015-googlenet-inception",
+      "label": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-googlenet-inception-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1480,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:03:52.518Z"
+    }
+  ]
+}

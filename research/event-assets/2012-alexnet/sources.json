@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:30.200Z",
+  "eventKey": "2012-alexnet",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alex Krizhevsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2012%20The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%20Alex%20Krizhevsky%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2012 The ImageNet Era: AlexNet and the Deep Learning Breakthrough Alex Krizhevsky Geoffrey Hinton AI history source images",
+      "eventKey": "2012-alexnet"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2012%20The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%20Alex%20Krizhevsky%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2012 The ImageNet Era: AlexNet and the Deep Learning Breakthrough Alex Krizhevsky Geoffrey Hinton AI history source images",
+      "eventKey": "2012-alexnet"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2012%20The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%20Alex%20Krizhevsky%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2012 The ImageNet Era: AlexNet and the Deep Learning Breakthrough Alex Krizhevsky Geoffrey Hinton AI history source images",
+      "eventKey": "2012-alexnet"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alex Krizhevsky portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alex%20Krizhevsky%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alex Krizhevsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alex Krizhevsky official biography search",
+      "url": "https://www.google.com/search?q=Alex%20Krizhevsky%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Geoffrey Hinton portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Geoffrey Hinton official biography search",
+      "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2012%20The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough publication search",
+      "url": "https://www.google.com/search?q=2012%20The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough scholar search",
+      "url": "https://scholar.google.com/scholar?q=2012%20The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Alex Krizhevsky Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.alex-krizhevsky-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:31.650Z"
+    },
+    {
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.geoffrey-hinton-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:33.640Z"
+    },
+    {
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/003.the-imagenet-era-alexnet-and-the-deep-learning-breakthrough-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:30:35.657Z"
+    },
+    {
+      "label": "The ImageNet Era: AlexNet and the Deep Learning Breakthrough Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=The%20ImageNet%20Era%3A%20AlexNet%20and%20the%20Deep%20Learning%20Breakthrough%202012",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/004.the-imagenet-era-alexnet-and-the-deep-learning-breakthrough-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:36.265Z"
+    }
+  ]
+}

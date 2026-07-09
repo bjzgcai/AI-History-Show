@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:38.359Z",
+  "eventKey": "ai100-2014-glove",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2014-glove",
+      "label": "GloVe lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://nlp.stanford.edu/~jpennin/",
+      "imageUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+      "finalImageUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+      "localPath": "images/001.glove-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 30005,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:05:38.054Z"
+    },
+    {
+      "eventKey": "ai100-2014-glove",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://aclanthology.org/D14-1162/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2362,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:05:38.359Z"
+    }
+  ]
+}

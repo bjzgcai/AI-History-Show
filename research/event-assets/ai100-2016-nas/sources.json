@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:51.848Z",
+  "eventKey": "ai100-2016-nas",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Neural Architecture Search with Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1611.01578",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICLR OpenReview record",
+      "url": "https://openreview.net/forum?id=r1Ue8Hcxg",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Google AI AutoML overview",
+      "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Barret Zoph homepage",
+      "url": "https://barretzoph.github.io/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Barret Zoph Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Barret%20Zoph%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neural Architecture Search Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neural%20Architecture%20Search%202016&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neural Architecture Search Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neural%20Architecture%20Search%202016",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2016%20Neural%20Architecture%20Search%20Barret%20Zoph%20AI%20history%20source%20images",
+      "query": "2016 Neural Architecture Search Barret Zoph AI history source images",
+      "eventKey": "ai100-2016-nas"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20Neural%20Architecture%20Search%20Barret%20Zoph%20AI%20history%20source%20images",
+      "query": "2016 Neural Architecture Search Barret Zoph AI history source images",
+      "eventKey": "ai100-2016-nas"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2016%20Neural%20Architecture%20Search%20Barret%20Zoph%20AI%20history%20source%20images",
+      "query": "2016 Neural Architecture Search Barret Zoph AI history source images",
+      "eventKey": "ai100-2016-nas"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Barret Zoph portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Barret%20Zoph%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Barret Zoph Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Barret%20Zoph%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Barret Zoph official biography search",
+      "url": "https://www.google.com/search?q=Barret%20Zoph%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Neural Architecture Search event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20Neural%20Architecture%20Search%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Neural Architecture Search Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Neural%20Architecture%20Search%202016&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Neural Architecture Search Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Neural%20Architecture%20Search%202016",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Neural Architecture Search publication search",
+      "url": "https://www.google.com/search?q=2016%20Neural%20Architecture%20Search%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Neural Architecture Search scholar search",
+      "url": "https://scholar.google.com/scholar?q=2016%20Neural%20Architecture%20Search%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Neural Architecture Search with Reinforcement Learning",
+      "sourceUrl": "https://arxiv.org/abs/1611.01578",
+      "finalUrl": "https://arxiv.org/abs/1611.01578",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1611.01578] Neural Architecture Search with Reinforcement Learning",
+      "savedPath": "pages/001.neural-architecture-search-with-reinforcement-learning.html",
+      "fetchedAt": "2026-07-03T12:07:52.222Z"
+    },
+    {
+      "label": "ICLR OpenReview record",
+      "sourceUrl": "https://openreview.net/forum?id=r1Ue8Hcxg",
+      "finalUrl": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dr1Ue8Hcxg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Verifying your browser | OpenReview",
+      "savedPath": "pages/002.iclr-openreview-record.html",
+      "fetchedAt": "2026-07-03T12:07:53.001Z"
+    },
+    {
+      "label": "Google AI AutoML overview",
+      "sourceUrl": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:08:07.022Z"
+    },
+    {
+      "label": "Barret Zoph homepage",
+      "sourceUrl": "https://barretzoph.github.io/",
+      "finalUrl": "https://barretzoph.github.io/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Barret Zoph",
+      "savedPath": "pages/004.barret-zoph-homepage.html",
+      "fetchedAt": "2026-07-03T12:08:08.098Z"
+    },
+    {
+      "label": "Barret Zoph Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Barret%20Zoph%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Barret%20Zoph%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.barret-zoph-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:09.482Z"
+    },
+    {
+      "label": "Neural Architecture Search Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Neural%20Architecture%20Search%202016&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Neural%20Architecture%20Search%202016&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.neural-architecture-search-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:08:10.781Z"
+    },
+    {
+      "label": "Neural Architecture Search Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Neural%20Architecture%20Search%202016",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Neural%20Architecture%20Search%202016",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.neural-architecture-search-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:11.503Z"
+    }
+  ]
+}

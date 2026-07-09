@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:44.601Z",
+  "eventKey": "ai100-2017-cyclegan",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2017-cyclegan",
+      "label": "CycleGAN lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.cmu.edu/~junyanz/",
+      "imageUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+      "finalImageUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+      "localPath": "images/001.cyclegan-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 522018,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:06:44.298Z"
+    },
+    {
+      "eventKey": "ai100-2017-cyclegan",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1703.10593",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2331,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:06:44.601Z"
+    }
+  ]
+}

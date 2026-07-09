@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:16.181Z",
+  "eventKey": "ai100-2015-ddpg",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2015-ddpg",
+      "label": "DDPG lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+      "imageUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+      "finalImageUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+      "localPath": "images/001.ddpg-lead-author.png",
+      "pageSnapshot": "",
+      "contentType": "image/png",
+      "bytes": 6601036,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Event profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:09:15.876Z"
+    },
+    {
+      "eventKey": "ai100-2015-ddpg",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1509.02971",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2343,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:09:16.181Z"
+    }
+  ]
+}

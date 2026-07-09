@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:54.132Z",
+  "eventKey": "ai100-1967-back-propagation",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1967-back-propagation",
+      "label": "Co-author of the 1986 back-propagation paper",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/figures/david-rumelhart.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.co-author-of-the-1986-back-propagation-paper.jpg",
+      "originalLocalPath": "resources/images/figures/david-rumelhart.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 43465,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Reference image",
+      "downloadedAt": "2026-07-03T11:59:53.828Z"
+    },
+    {
+      "eventKey": "ai100-1967-back-propagation",
+      "label": "Original local explainer of back-propagation error flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1038/323533a0",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-back-propagation-error-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1345,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:59:54.132Z"
+    }
+  ]
+}

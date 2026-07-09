@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:23.370Z",
+  "eventKey": "1997-lstm",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Sepp Hochreiter",
+      "role": "LSTM inventor",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Sepp Hochreiter portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Sepp%20Hochreiter%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Sepp Hochreiter Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Sepp%20Hochreiter%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Sepp Hochreiter official biography search",
+          "url": "https://www.google.com/search?q=Sepp%20Hochreiter%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Jürgen Schmidhuber",
+      "role": "LSTM co-inventor",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jürgen Schmidhuber portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=J%C3%BCrgen%20Schmidhuber%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jürgen Schmidhuber Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=J%C3%BCrgen%20Schmidhuber%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jürgen Schmidhuber official biography search",
+          "url": "https://www.google.com/search?q=J%C3%BCrgen%20Schmidhuber%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "LSTM and Gating Mechanisms event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1997%20LSTM%20and%20Gating%20Mechanisms%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "LSTM and Gating Mechanisms Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=LSTM%20and%20Gating%20Mechanisms%201997&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "LSTM and Gating Mechanisms Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=LSTM%20and%20Gating%20Mechanisms%201997",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "LSTM and Gating Mechanisms publication search",
+      "url": "https://www.google.com/search?q=1997%20LSTM%20and%20Gating%20Mechanisms%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "LSTM and Gating Mechanisms scholar search",
+      "url": "https://scholar.google.com/scholar?q=1997%20LSTM%20and%20Gating%20Mechanisms%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "LSTM and Gating Mechanisms",
+        "zh": "LSTM与门控机制 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "LSTM and Gating Mechanisms",
+        "zh": "LSTM与门控机制 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

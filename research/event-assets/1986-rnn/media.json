@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:11.821Z",
+  "eventKey": "1986-rnn",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Jeffrey Elman",
+      "role": "The creator of Simple RNN",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jeffrey Elman portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Jeffrey%20Elman%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jeffrey Elman Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Elman%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jeffrey Elman official biography search",
+          "url": "https://www.google.com/search?q=Jeffrey%20Elman%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Michael Jordan",
+      "role": "The creator of Jordan Network",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Michael Jordan portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Michael%20Jordan%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Michael Jordan Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Michael Jordan official biography search",
+          "url": "https://www.google.com/search?q=Michael%20Jordan%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Recurrent Neural Networks event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1986%20Recurrent%20Neural%20Networks%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Recurrent Neural Networks Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Recurrent%20Neural%20Networks%201986&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Recurrent Neural Networks Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Recurrent%20Neural%20Networks%201986",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Recurrent Neural Networks publication search",
+      "url": "https://www.google.com/search?q=1986%20Recurrent%20Neural%20Networks%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Recurrent Neural Networks scholar search",
+      "url": "https://scholar.google.com/scholar?q=1986%20Recurrent%20Neural%20Networks%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Recurrent Neural Networks",
+        "zh": "循环神经网络 架构图"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

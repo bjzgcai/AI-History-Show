@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:29.168Z",
+  "eventKey": "1997-deep-blue",
+  "sources": [
+    {
+      "type": "Profile",
+      "label": "Murray Campbell, IBM Research",
+      "url": "https://research.ibm.com/people/murray-campbell",
+      "usage": ""
+    },
+    {
+      "type": "Museum",
+      "label": "Mastering the Game, Computer History Museum",
+      "url": "https://www.computerhistory.org/chess/",
+      "usage": ""
+    },
+    {
+      "type": "History",
+      "label": "IBM100: Deep Blue",
+      "url": "https://www.ibm.com/history/deep-blue",
+      "usage": ""
+    },
+    {
+      "type": "archiveLink",
+      "label": "Deep Blue journal article",
+      "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "usage": "Source material image / Literature reference"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Murray Campbell Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Murray%20Campbell%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Blue Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Blue%201997&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Blue Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Blue%201997",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1997%20Deep%20Blue%20Murray%20Campbell%20AI%20history%20source%20images",
+      "query": "1997 Deep Blue Murray Campbell AI history source images",
+      "eventKey": "1997-deep-blue"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1997%20Deep%20Blue%20Murray%20Campbell%20AI%20history%20source%20images",
+      "query": "1997 Deep Blue Murray Campbell AI history source images",
+      "eventKey": "1997-deep-blue"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1997%20Deep%20Blue%20Murray%20Campbell%20AI%20history%20source%20images",
+      "query": "1997 Deep Blue Murray Campbell AI history source images",
+      "eventKey": "1997-deep-blue"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Murray Campbell portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Murray%20Campbell%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Murray Campbell Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Murray%20Campbell%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Murray Campbell official biography search",
+      "url": "https://www.google.com/search?q=Murray%20Campbell%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Deep Blue event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1997%20Deep%20Blue%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Blue Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Blue%201997&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Blue Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Blue%201997",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Deep Blue publication search",
+      "url": "https://www.google.com/search?q=1997%20Deep%20Blue%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Deep Blue scholar search",
+      "url": "https://scholar.google.com/scholar?q=1997%20Deep%20Blue%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Murray Campbell, IBM Research",
+      "sourceUrl": "https://research.ibm.com/people/murray-campbell",
+      "finalUrl": "https://research.ibm.com/people/murray-campbell",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Murray Campbell - IBM Research",
+      "savedPath": "pages/001.murray-campbell-ibm-research.html",
+      "fetchedAt": "2026-07-03T11:49:31.232Z"
+    },
+    {
+      "label": "Mastering the Game, Computer History Museum",
+      "sourceUrl": "https://www.computerhistory.org/chess/",
+      "finalUrl": "https://www.computerhistory.org/chess/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Welcome | Mastering the Game | Computer History Museum",
+      "savedPath": "pages/002.mastering-the-game-computer-history-museum.html",
+      "fetchedAt": "2026-07-03T11:49:32.624Z"
+    },
+    {
+      "label": "IBM100: Deep Blue",
+      "sourceUrl": "https://www.ibm.com/history/deep-blue",
+      "finalUrl": "https://www.ibm.com/history/deep-blue",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Deep Blue | IBM",
+      "savedPath": "pages/003.ibm100-deep-blue.html",
+      "fetchedAt": "2026-07-03T11:49:38.951Z"
+    },
+    {
+      "label": "Deep Blue journal article",
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "finalUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "ok": false,
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Error: DOI Not Found",
+      "savedPath": "pages/004.deep-blue-journal-article.html",
+      "fetchedAt": "2026-07-03T11:49:40.368Z"
+    },
+    {
+      "label": "Murray Campbell Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Murray%20Campbell%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Murray%20Campbell%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.murray-campbell-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:49:42.043Z"
+    },
+    {
+      "label": "Deep Blue Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Deep%20Blue%201997&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Deep%20Blue%201997&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.deep-blue-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:49:44.419Z"
+    },
+    {
+      "label": "Deep Blue Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Deep%20Blue%201997",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Deep%20Blue%201997",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.deep-blue-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:49:45.130Z"
+    }
+  ]
+}

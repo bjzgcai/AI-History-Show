@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:44.606Z",
+  "eventKey": "ai100-2017-pix2pix",
+  "year": 2017,
+  "title": {
+    "en": "Pix2Pix",
+    "zh": "Pix2Pix"
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley",
+      "zh": "UC Berkeley"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "Berkeley, United States"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "description": {
+    "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>",
+    "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Phillip Isola portrait",
+        "zh": "菲利普·伊索拉肖像"
+      },
+      "subcaption": {
+        "en": "Pix2Pix lead author",
+        "zh": "Pix2Pix 主要作者"
+      },
+      "sourceName": {
+        "en": "Phillip Isola homepage",
+        "zh": "菲利普·伊索拉个人主页"
+      },
+      "sourceUrl": "https://web.mit.edu/phillipi/",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Pix2Pix explainer",
+        "zh": "Pix2Pix 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1611.07004",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Phillip Isola",
+        "type": "portrait-search",
+        "label": "Phillip Isola portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Phillip%20Isola%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Phillip Isola",
+        "type": "commons-portrait-search",
+        "label": "Phillip Isola Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Phillip%20Isola%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Pix2Pix event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2017%20Pix2Pix%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Pix2Pix Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Pix2Pix%202017&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Pix2Pix Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Pix2Pix%202017",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Pix2Pix publication search",
+        "url": "https://www.google.com/search?q=2017%20Pix2Pix%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Pix2Pix scholar search",
+        "url": "https://scholar.google.com/scholar?q=2017%20Pix2Pix%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

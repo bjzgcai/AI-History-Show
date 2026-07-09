@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Timothy Lillicrap",
+        "zh": "蒂莫西·利利克拉普"
+      },
+      "role": {
+        "en": "DDPG lead author",
+        "zh": "DDPG 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+          "sourceUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+          "license": {
+            "en": "Event profile image; reuse rights not stated.",
+            "zh": "活动资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

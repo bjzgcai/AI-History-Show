@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:05.336Z",
+  "eventKey": "2016-alphago",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "David Silver",
+      "role": "AlphaGo lead researcher",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "David Silver portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=David%20Silver%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "David Silver Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "David Silver official biography search",
+          "url": "https://www.google.com/search?q=David%20Silver%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Demis Hassabis",
+      "role": "DeepMind co-founder",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Demis Hassabis portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Demis%20Hassabis%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Demis Hassabis Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Demis Hassabis official biography search",
+          "url": "https://www.google.com/search?q=Demis%20Hassabis%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Aja Huang",
+      "role": "AlphaGo researcher",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Aja Huang portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Aja%20Huang%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Aja Huang Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Aja%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Aja Huang official biography search",
+          "url": "https://www.google.com/search?q=Aja%20Huang%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "AlphaGo event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20AlphaGo%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlphaGo Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlphaGo%202016&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlphaGo Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlphaGo%202016",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "AlphaGo publication search",
+      "url": "https://www.google.com/search?q=2016%20AlphaGo%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AlphaGo scholar search",
+      "url": "https://scholar.google.com/scholar?q=2016%20AlphaGo%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Lee Sedol portrait",
+        "zh": "李世石肖像"
+      },
+      "subcaption": {
+        "en": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
+        "zh": "李世石，摄于 2016 年 AlphaGo 对局时期之后"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Policy-value-search explainer",
+        "zh": "策略-价值-搜索解释图"
+      },
+      "subcaption": {
+        "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
+        "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+      },
+      "sourceUrl": "https://www.nature.com/articles/nature16961",
+      "sourceLabel": "Nature 2016 AlphaGo paper",
+      "license": {
+        "en": "Original local explainer; publisher figure reuse rights not used.",
+        "zh": "Original local explainer; publisher figure reuse rights not used."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+        "usage": "CC BY 2.0"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Nature 2016 AlphaGo paper",
+        "url": "https://www.nature.com/articles/nature16961",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

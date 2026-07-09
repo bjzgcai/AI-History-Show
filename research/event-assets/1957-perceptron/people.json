@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Frank Rosenblatt",
+        "zh": "弗兰克·罗森布拉特"
+      },
+      "role": {
+        "en": "Inventor of the perceptron",
+        "zh": "感知机发明者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    }
+  ]
+}

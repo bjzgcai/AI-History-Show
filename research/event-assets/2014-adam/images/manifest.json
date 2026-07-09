@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:38:10.316Z",
+  "eventKey": "2014-adam",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2014-adam",
+      "label": "Portrait from Kingma's personal website.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://dpkingma.com/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.portrait-from-kingma-s-personal-website.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 49616,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Co-author portrait",
+      "rights": "Personal website photo; rights not stated.",
+      "downloadedAt": "2026-07-03T10:38:10.012Z"
+    },
+    {
+      "eventKey": "2014-adam",
+      "label": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1412.6980",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-adam-optimizer-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1132,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T10:38:10.316Z"
+    }
+  ]
+}

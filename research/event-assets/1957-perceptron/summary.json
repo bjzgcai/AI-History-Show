@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:29:12.341Z",
+  "eventKey": "1957-perceptron",
+  "year": 1957,
+  "title": {
+    "en": "The Perceptron and Connectionism",
+    "zh": "感知机与连接主义"
+  },
+  "location": {
+    "name": {
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
+    },
+    "country": {
+      "en": "NY, United States",
+      "zh": "美国, 纽约州"
+    },
+    "coordinates": [
+      42.4534,
+      -76.4735
+    ]
+  },
+  "description": {
+    "en": "In 1957, Frank Rosenblatt designed the perceptron, one of the first artificial neural networks, to model aspects of human cognition. It became the first physical implementation of an artificial neural network and an early landmark for connectionist AI.",
+    "zh": "1957年，罗森布拉特设计了第一个人工神经网络（感知机），可以模拟人类大脑的思考过程。这是人工神经网络的首个物理实现，也是连接主义的代表性工作。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "zh": "《感知机：大脑中信息存储与组织的概率模型》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "The Perceptron and Connectionism",
+        "zh": "感知机与连接主义"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 4,
+      "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "The Perceptron and Connectionism",
+        "zh": "感知机与连接主义"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Frank Rosenblatt",
+        "type": "portrait-search",
+        "label": "Frank Rosenblatt Cornell portrait search",
+        "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20Cornell%20portrait",
+        "usage": "Use as lead only; verify original source and rights."
+      },
+      {
+        "person": "Frank Rosenblatt",
+        "type": "portrait-search",
+        "label": "Frank Rosenblatt portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Frank%20Rosenblatt%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Frank Rosenblatt",
+        "type": "commons-portrait-search",
+        "label": "Frank Rosenblatt Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Frank%20Rosenblatt%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "artifact-page",
+        "label": "Mark I Perceptron artifact page",
+        "url": "https://en.wikipedia.org/wiki/Mark_I_Perceptron",
+        "usage": "Artifact image lead; review linked file page before production use."
+      },
+      {
+        "type": "institution-photo",
+        "label": "Cornell Chronicle perceptron retrospective photo lead",
+        "url": "https://news.cornell.edu/stories/2019/09/rosenblatts-perceptron-paved-way-ai-60-years-too-soon",
+        "usage": "Likely institution-controlled photo lead; rights must be checked."
+      },
+      {
+        "type": "event-photo-search",
+        "label": "The Perceptron and Connectionism event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1957%20The%20Perceptron%20and%20Connectionism%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "The Perceptron and Connectionism Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=The%20Perceptron%20and%20Connectionism%201957&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "The Perceptron and Connectionism Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=The%20Perceptron%20and%20Connectionism%201957",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-record",
+        "label": "The Perceptron Psychological Review DOI",
+        "url": "https://doi.org/10.1037/h0042519",
+        "usage": "Primary paper record."
+      },
+      {
+        "type": "publication-record",
+        "label": "Principles of Neurodynamics archive record",
+        "url": "https://archive.org/details/principlesofneur00fran",
+        "usage": "Book cover/scan candidate; rights must be checked."
+      },
+      {
+        "type": "publication-search",
+        "label": "The Perceptron and Connectionism publication search",
+        "url": "https://www.google.com/search?q=1957%20The%20Perceptron%20and%20Connectionism%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "The Perceptron and Connectionism scholar search",
+        "url": "https://scholar.google.com/scholar?q=1957%20The%20Perceptron%20and%20Connectionism%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 5,
+    "manifest": "images/manifest.json"
+  }
+}

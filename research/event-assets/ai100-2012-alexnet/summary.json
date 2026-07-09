@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:24.286Z",
+  "eventKey": "ai100-2012-alexnet",
+  "year": 2012,
+  "title": {
+    "en": "AlexNet",
+    "zh": "AlexNet"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "description": {
+    "en": "<p>AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.</p>",
+    "zh": "<p>AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/alex-krizhevsky.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Alex Krizhevsky portrait",
+        "zh": "亚历克斯·克里泽夫斯基肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of AlexNet.",
+        "zh": "AlexNet 主要作者。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/alex-krizhevsky.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "AlexNet architecture",
+        "zh": "AlexNet 架构"
+      },
+      "subcaption": {
+        "en": "Architecture visual used by the project.",
+        "zh": "项目使用的架构图。"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Alex Krizhevsky",
+        "type": "portrait-search",
+        "label": "Alex Krizhevsky portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alex%20Krizhevsky%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alex Krizhevsky",
+        "type": "commons-portrait-search",
+        "label": "Alex Krizhevsky Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Geoffrey Hinton",
+        "type": "portrait-search",
+        "label": "Geoffrey Hinton portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Geoffrey Hinton",
+        "type": "commons-portrait-search",
+        "label": "Geoffrey Hinton Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "AlexNet event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2012%20AlexNet%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "AlexNet Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=AlexNet%202012&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "AlexNet Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=AlexNet%202012",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "AlexNet publication search",
+        "url": "https://www.google.com/search?q=2012%20AlexNet%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "AlexNet scholar search",
+        "url": "https://scholar.google.com/scholar?q=2012%20AlexNet%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

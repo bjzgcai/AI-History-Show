@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir N. Vapnik",
+        "zh": "弗拉基米尔·N·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+          "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+          "license": {
+            "en": "Simons Foundation profile image; page does not state an open reuse license.",
+            "zh": "西蒙斯基金会 profile image; page does not state an open reuse license."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Alexey Ya. Chervonenkis",
+        "zh": "阿列克谢·雅·切尔沃年基斯"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+          "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+          "license": {
+            "en": "Simons Foundation profile image; page does not state an open reuse license.",
+            "zh": "西蒙斯基金会 profile image; page does not state an open reuse license."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

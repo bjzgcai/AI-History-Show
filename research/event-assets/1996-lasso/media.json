@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:25.692Z",
+  "eventKey": "1996-lasso",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Robert Tibshirani",
+      "role": "Introduced the lasso method",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Robert Tibshirani portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Robert%20Tibshirani%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Robert Tibshirani Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Tibshirani%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Robert Tibshirani official biography search",
+          "url": "https://www.google.com/search?q=Robert%20Tibshirani%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Lasso event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1996%20Lasso%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Lasso Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Lasso%201996&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Lasso Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Lasso%201996",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Lasso publication search",
+      "url": "https://www.google.com/search?q=1996%20Lasso%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Lasso scholar search",
+      "url": "https://scholar.google.com/scholar?q=1996%20Lasso%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Robert Tibshirani portrait",
+        "zh": "罗伯特·蒂布希拉尼 肖像"
+      },
+      "subcaption": {
+        "en": "Profile photo from Stanford Profiles.",
+        "zh": "来自 斯坦福个人资料库 的人物照片。"
+      },
+      "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+      "sourceLabel": "Stanford Profiles",
+      "license": {
+        "en": "Institution profile photo; rights not stated.",
+        "zh": "Institution profile photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Lasso author portrait",
+        "zh": "历史人物 / Lasso 作者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "L1 constraint geometry",
+        "zh": "L1 约束几何"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Lasso, based on the related source material.",
+        "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "sourceLabel": "Regression Shrinkage and Selection via the Lasso",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Coefficient path",
+        "zh": "系数路径"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Lasso, based on the related source material.",
+        "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "sourceLabel": "Regression Shrinkage and Selection via the Lasso",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Stanford Profiles",
+        "url": "https://profiles.stanford.edu/robert-tibshirani",
+        "usage": "Historical figure / Lasso author portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Regression Shrinkage and Selection via the Lasso",
+        "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

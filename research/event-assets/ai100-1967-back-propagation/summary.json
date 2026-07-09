@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:40.652Z",
+  "eventKey": "ai100-1967-back-propagation",
+  "year": 1967,
+  "title": {
+    "en": "Back-propagation",
+    "zh": "反向传播"
+  },
+  "location": {
+    "name": {
+      "en": "Kyushu University and UC San Diego",
+      "zh": "九州大学与加州大学圣迭戈分校"
+    },
+    "country": {
+      "en": "Fukuoka and San Diego",
+      "zh": "福冈与圣迭戈"
+    },
+    "coordinates": [
+      32.8731,
+      130.742
+    ]
+  },
+  "description": {
+    "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>",
+    "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/david-rumelhart.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "David Rumelhart portrait",
+        "zh": "大卫·鲁梅尔哈特肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of the 1986 back-propagation paper",
+        "zh": "1986 年反向传播论文共同作者"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/david-rumelhart.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Error signal flow",
+        "zh": "误差信号流"
+      },
+      "subcaption": {
+        "en": "Original local explainer of back-propagation error flow.",
+        "zh": "关于反向传播误差流的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Nature",
+        "zh": "Nature"
+      },
+      "sourceUrl": "https://doi.org/10.1038/323533a0",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Shunichi Amari",
+        "type": "portrait-search",
+        "label": "Shunichi Amari portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Shunichi%20Amari%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Shunichi Amari",
+        "type": "commons-portrait-search",
+        "label": "Shunichi Amari Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Shunichi%20Amari%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "David Rumelhart",
+        "type": "portrait-search",
+        "label": "David Rumelhart portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=David%20Rumelhart%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "David Rumelhart",
+        "type": "commons-portrait-search",
+        "label": "David Rumelhart Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=David%20Rumelhart%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Back-propagation event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1967%20Back-propagation%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Back-propagation Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Back-propagation%201967&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Back-propagation Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Back-propagation%201967",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Back-propagation publication search",
+        "url": "https://www.google.com/search?q=1967%20Back-propagation%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Back-propagation scholar search",
+        "url": "https://scholar.google.com/scholar?q=1967%20Back-propagation%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

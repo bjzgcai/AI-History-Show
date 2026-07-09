@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:45:43.673Z",
+  "eventKey": "2015-u-net",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Olaf Ronneberger",
+      "role": "Co-author of U-Net",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Olaf Ronneberger portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Olaf%20Ronneberger%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Olaf Ronneberger Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Olaf%20Ronneberger%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Olaf Ronneberger official biography search",
+          "url": "https://www.google.com/search?q=Olaf%20Ronneberger%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Philipp Fischer",
+      "role": "Co-author of U-Net",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Philipp Fischer portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Philipp%20Fischer%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Philipp Fischer Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Philipp%20Fischer%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Philipp Fischer official biography search",
+          "url": "https://www.google.com/search?q=Philipp%20Fischer%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Thomas Brox",
+      "role": "Co-author of U-Net",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Thomas Brox portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Brox%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Thomas Brox Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Brox%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Thomas Brox official biography search",
+          "url": "https://www.google.com/search?q=Thomas%20Brox%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "U-Net event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20U-Net%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "U-Net Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=U-Net%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "U-Net Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=U-Net%202015",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "U-Net publication search",
+      "url": "https://www.google.com/search?q=2015%20U-Net%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "U-Net scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20U-Net%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Olaf Ronneberger portrait",
+        "zh": "奥拉夫·龙讷贝格 肖像"
+      },
+      "subcaption": {
+        "en": "Researcher profile photo from the Freiburg LMB page.",
+        "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。"
+      },
+      "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+      "sourceLabel": "University of Freiburg LMB",
+      "license": {
+        "en": "Institution profile photo; rights not stated.",
+        "zh": "Institution profile photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / U-Net co-author portrait",
+        "zh": "历史人物 / U-Net 共同作者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "U-shaped encoder-decoder",
+        "zh": "U 形编码器-解码器"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for U-Net, based on the related source material.",
+        "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "sourceLabel": "Freiburg U-Net release page",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Biomedical mask output",
+        "zh": "生物医学分割掩码"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for U-Net, based on the related source material.",
+        "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "sourceLabel": "Freiburg U-Net release page",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "University of Freiburg LMB",
+        "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+        "usage": "Historical figure / U-Net co-author portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "url": "https://arxiv.org/abs/1505.04597",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

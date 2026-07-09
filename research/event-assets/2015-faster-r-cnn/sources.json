@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:45:58.909Z",
+  "eventKey": "2015-faster-r-cnn",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "url": "https://arxiv.org/abs/1506.01497",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "ShaoqingRen/faster_rcnn",
+      "url": "https://github.com/ShaoqingRen/faster_rcnn",
+      "usage": ""
+    },
+    {
+      "type": "Model docs",
+      "label": "TorchVision Faster R-CNN model",
+      "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Kaiming He personal page",
+      "url": "https://people.csail.mit.edu/kaiming/",
+      "usage": "Historical figure / Faster R-CNN co-author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Shaoqing Ren Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Shaoqing%20Ren%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kaiming He Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ross Girshick Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ross%20Girshick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jian Sun Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Faster R-CNN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Faster%20R-CNN%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Faster R-CNN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Faster%20R-CNN%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20Faster%20R-CNN%20Shaoqing%20Ren%20Kaiming%20He%20Ross%20Girshick%20Jian%20Sun%20AI%20history%20source%20images",
+      "query": "2015 Faster R-CNN Shaoqing Ren Kaiming He Ross Girshick Jian Sun AI history source images",
+      "eventKey": "2015-faster-r-cnn"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Faster%20R-CNN%20Shaoqing%20Ren%20Kaiming%20He%20Ross%20Girshick%20Jian%20Sun%20AI%20history%20source%20images",
+      "query": "2015 Faster R-CNN Shaoqing Ren Kaiming He Ross Girshick Jian Sun AI history source images",
+      "eventKey": "2015-faster-r-cnn"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Faster%20R-CNN%20Shaoqing%20Ren%20Kaiming%20He%20Ross%20Girshick%20Jian%20Sun%20AI%20history%20source%20images",
+      "query": "2015 Faster R-CNN Shaoqing Ren Kaiming He Ross Girshick Jian Sun AI history source images",
+      "eventKey": "2015-faster-r-cnn"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Shaoqing Ren portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Shaoqing%20Ren%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Shaoqing Ren Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Shaoqing%20Ren%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Shaoqing Ren official biography search",
+      "url": "https://www.google.com/search?q=Shaoqing%20Ren%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Kaiming He portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Kaiming%20He%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Kaiming He Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Kaiming He official biography search",
+      "url": "https://www.google.com/search?q=Kaiming%20He%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Ross Girshick portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Ross%20Girshick%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ross Girshick Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ross%20Girshick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Ross Girshick official biography search",
+      "url": "https://www.google.com/search?q=Ross%20Girshick%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jian Sun portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jian%20Sun%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jian Sun Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jian Sun official biography search",
+      "url": "https://www.google.com/search?q=Jian%20Sun%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Faster R-CNN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Faster%20R-CNN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Faster R-CNN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Faster%20R-CNN%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Faster R-CNN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Faster%20R-CNN%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Faster R-CNN publication search",
+      "url": "https://www.google.com/search?q=2015%20Faster%20R-CNN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Faster R-CNN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Faster%20R-CNN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "sourceUrl": "https://arxiv.org/abs/1506.01497",
+      "finalUrl": "https://arxiv.org/abs/1506.01497",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1506.01497] Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "savedPath": "pages/001.faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.html",
+      "fetchedAt": "2026-07-03T10:45:59.430Z"
+    },
+    {
+      "label": "ShaoqingRen/faster_rcnn",
+      "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+      "finalUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - ShaoqingRen/faster_rcnn: Faster R-CNN · GitHub",
+      "savedPath": "pages/002.shaoqingren-faster_rcnn.html",
+      "fetchedAt": "2026-07-03T10:46:00.597Z"
+    },
+    {
+      "label": "TorchVision Faster R-CNN model",
+      "sourceUrl": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+      "finalUrl": "https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "fasterrcnn_resnet50_fpn &mdash; Torchvision 0.27 documentation",
+      "savedPath": "pages/003.torchvision-faster-r-cnn-model.html",
+      "fetchedAt": "2026-07-03T10:46:01.843Z"
+    },
+    {
+      "label": "Kaiming He personal page",
+      "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+      "finalUrl": "https://people.csail.mit.edu/kaiming/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Kaiming He",
+      "savedPath": "pages/004.kaiming-he-personal-page.html",
+      "fetchedAt": "2026-07-03T10:46:03.295Z"
+    },
+    {
+      "label": "Shaoqing Ren Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Shaoqing%20Ren%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Shaoqing%20Ren%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.shaoqing-ren-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:46:04.594Z"
+    },
+    {
+      "label": "Kaiming He Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Kaiming%20He%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.kaiming-he-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:46:05.876Z"
+    },
+    {
+      "label": "Ross Girshick Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ross%20Girshick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ross%20Girshick%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.ross-girshick-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:46:07.696Z"
+    },
+    {
+      "label": "Jian Sun Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jian%20Sun%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.jian-sun-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:46:09.621Z"
+    },
+    {
+      "label": "Faster R-CNN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Faster%20R-CNN%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Faster%20R-CNN%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/009.faster-r-cnn-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:46:11.340Z"
+    },
+    {
+      "label": "Faster R-CNN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Faster%20R-CNN%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Faster%20R-CNN%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/010.faster-r-cnn-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:46:11.883Z"
+    }
+  ]
+}

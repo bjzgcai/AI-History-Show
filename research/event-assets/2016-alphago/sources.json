@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:05.336Z",
+  "eventKey": "2016-alphago",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Nature 2016 AlphaGo paper",
+      "url": "https://www.nature.com/articles/nature16961",
+      "usage": ""
+    },
+    {
+      "type": "Blog",
+      "label": "Google DeepMind AlphaGo",
+      "url": "https://deepmind.google/research/alphago/",
+      "usage": ""
+    },
+    {
+      "type": "API",
+      "label": "KataGo Analysis Engine",
+      "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+      "usage": "CC BY 2.0"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Silver Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Demis Hassabis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Aja Huang Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Aja%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlphaGo Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlphaGo%202016&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlphaGo Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlphaGo%202016",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2016%20AlphaGo%20David%20Silver%20Demis%20Hassabis%20Aja%20Huang%20AI%20history%20source%20images",
+      "query": "2016 AlphaGo David Silver Demis Hassabis Aja Huang AI history source images",
+      "eventKey": "2016-alphago"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20AlphaGo%20David%20Silver%20Demis%20Hassabis%20Aja%20Huang%20AI%20history%20source%20images",
+      "query": "2016 AlphaGo David Silver Demis Hassabis Aja Huang AI history source images",
+      "eventKey": "2016-alphago"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2016%20AlphaGo%20David%20Silver%20Demis%20Hassabis%20Aja%20Huang%20AI%20history%20source%20images",
+      "query": "2016 AlphaGo David Silver Demis Hassabis Aja Huang AI history source images",
+      "eventKey": "2016-alphago"
+    },
+    {
+      "type": "portrait-search",
+      "label": "David Silver portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=David%20Silver%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Silver Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "David Silver official biography search",
+      "url": "https://www.google.com/search?q=David%20Silver%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Demis Hassabis portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Demis%20Hassabis%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Demis Hassabis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Demis Hassabis official biography search",
+      "url": "https://www.google.com/search?q=Demis%20Hassabis%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Aja Huang portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Aja%20Huang%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Aja Huang Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Aja%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Aja Huang official biography search",
+      "url": "https://www.google.com/search?q=Aja%20Huang%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "AlphaGo event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20AlphaGo%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlphaGo Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlphaGo%202016&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlphaGo Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlphaGo%202016",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "AlphaGo publication search",
+      "url": "https://www.google.com/search?q=2016%20AlphaGo%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AlphaGo scholar search",
+      "url": "https://scholar.google.com/scholar?q=2016%20AlphaGo%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Nature 2016 AlphaGo paper",
+      "sourceUrl": "https://www.nature.com/articles/nature16961",
+      "finalUrl": "https://www.nature.com/articles/nature16961?error=cookies_not_supported&code=3c7a0a4f-104a-401e-858b-3ce85b67b0c1",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=\"UTF-8\"",
+      "title": "Mastering the game of Go with deep neural networks and tree search | Nature",
+      "savedPath": "pages/001.nature-2016-alphago-paper.html",
+      "fetchedAt": "2026-07-03T10:34:10.159Z"
+    },
+    {
+      "label": "Google DeepMind AlphaGo",
+      "sourceUrl": "https://deepmind.google/research/alphago/",
+      "finalUrl": "https://deepmind.google/research/alphago/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "AlphaGo — Google DeepMind",
+      "savedPath": "pages/002.google-deepmind-alphago.html",
+      "fetchedAt": "2026-07-03T10:34:11.945Z"
+    },
+    {
+      "label": "KataGo Analysis Engine",
+      "sourceUrl": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+      "finalUrl": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "KataGo/docs/Analysis_Engine.md at master · lightvector/KataGo · GitHub",
+      "savedPath": "pages/003.katago-analysis-engine.html",
+      "fetchedAt": "2026-07-03T10:34:13.167Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Lee Se-Dol.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T10:34:14.575Z"
+    },
+    {
+      "label": "David Silver Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Silver%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.david-silver-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:17.108Z"
+    },
+    {
+      "label": "Demis Hassabis Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.demis-hassabis-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:18.484Z"
+    },
+    {
+      "label": "Aja Huang Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Aja%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Aja%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.aja-huang-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:20.482Z"
+    },
+    {
+      "label": "AlphaGo Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=AlphaGo%202016&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=AlphaGo%202016&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.alphago-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:34:23.433Z"
+    },
+    {
+      "label": "AlphaGo Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=AlphaGo%202016",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=AlphaGo%202016",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.alphago-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:24.049Z"
+    }
+  ]
+}

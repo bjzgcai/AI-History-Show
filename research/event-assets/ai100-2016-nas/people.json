@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Barret Zoph",
+        "zh": "巴雷特·佐夫"
+      },
+      "role": {
+        "en": "Neural architecture search lead author",
+        "zh": "神经架构搜索主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://barretzoph.github.io/images/headshot.jpg",
+          "sourceUrl": "https://barretzoph.github.io/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

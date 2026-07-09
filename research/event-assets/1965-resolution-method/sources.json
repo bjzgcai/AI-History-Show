@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:52.524Z",
+  "eventKey": "1965-resolution-method",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "A Machine-Oriented Logic Based on the Resolution Principle",
+      "url": "https://doi.org/10.1145/321250.321253",
+      "usage": ""
+    },
+    {
+      "type": "Review",
+      "label": "Journal of Symbolic Logic review record",
+      "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Stanford Encyclopedia: Automated Reasoning",
+      "url": "https://plato.stanford.edu/entries/reasoning-automated/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John Alan Robinson Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20Alan%20Robinson%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Resolution Method Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Resolution%20Method%201965&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Resolution Method Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Resolution%20Method%201965",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1965%20Resolution%20Method%20John%20Alan%20Robinson%20AI%20history%20source%20images",
+      "query": "1965 Resolution Method John Alan Robinson AI history source images",
+      "eventKey": "1965-resolution-method"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1965%20Resolution%20Method%20John%20Alan%20Robinson%20AI%20history%20source%20images",
+      "query": "1965 Resolution Method John Alan Robinson AI history source images",
+      "eventKey": "1965-resolution-method"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1965%20Resolution%20Method%20John%20Alan%20Robinson%20AI%20history%20source%20images",
+      "query": "1965 Resolution Method John Alan Robinson AI history source images",
+      "eventKey": "1965-resolution-method"
+    },
+    {
+      "type": "portrait-search",
+      "label": "John Alan Robinson portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=John%20Alan%20Robinson%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John Alan Robinson Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20Alan%20Robinson%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "John Alan Robinson official biography search",
+      "url": "https://www.google.com/search?q=John%20Alan%20Robinson%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Resolution Method event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1965%20Resolution%20Method%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Resolution Method Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Resolution%20Method%201965&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Resolution Method Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Resolution%20Method%201965",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Resolution Method publication search",
+      "url": "https://www.google.com/search?q=1965%20Resolution%20Method%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Resolution Method scholar search",
+      "url": "https://scholar.google.com/scholar?q=1965%20Resolution%20Method%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "A Machine-Oriented Logic Based on the Resolution Principle",
+      "sourceUrl": "https://doi.org/10.1145/321250.321253",
+      "finalUrl": "https://dl.acm.org/doi/10.1145/321250.321253",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.a-machine-oriented-logic-based-on-the-resolution-principle.html",
+      "fetchedAt": "2026-07-03T11:03:54.302Z"
+    },
+    {
+      "label": "Journal of Symbolic Logic review record",
+      "sourceUrl": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+      "finalUrl": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "J. A. Robinson. A machine-oriented logic based on the resolution principle. Journal of the Association for Computing Machinery, vol. 12 (1965), pp. 23–41. | The Journal of Symbolic Logic | Cambridge Core",
+      "savedPath": "pages/002.journal-of-symbolic-logic-review-record.html",
+      "fetchedAt": "2026-07-03T11:03:59.940Z"
+    },
+    {
+      "label": "Stanford Encyclopedia: Automated Reasoning",
+      "sourceUrl": "https://plato.stanford.edu/entries/reasoning-automated/",
+      "finalUrl": "https://plato.stanford.edu/entries/reasoning-automated/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Automated Reasoning (Stanford Encyclopedia of Philosophy)",
+      "savedPath": "pages/003.stanford-encyclopedia-automated-reasoning.html",
+      "fetchedAt": "2026-07-03T11:04:01.788Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:John Alan Robinson IMG 0493.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:04:03.581Z"
+    },
+    {
+      "label": "John Alan Robinson Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=John%20Alan%20Robinson%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=John%20Alan%20Robinson%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.john-alan-robinson-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:05.240Z"
+    },
+    {
+      "label": "Resolution Method Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Resolution%20Method%201965&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Resolution%20Method%201965&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.resolution-method-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:04:09.958Z"
+    },
+    {
+      "label": "Resolution Method Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Resolution%20Method%201965",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Resolution%20Method%201965",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.resolution-method-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:04:10.549Z"
+    }
+  ]
+}

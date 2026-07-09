@@ -1,0 +1,15 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "John McDermott",
+        "zh": "约翰·麦克德莫特"
+      },
+      "role": {
+        "en": "Developer of R1/XCON",
+        "zh": "R1/XCON 开发者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

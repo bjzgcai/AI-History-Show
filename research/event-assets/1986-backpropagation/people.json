@@ -1,0 +1,79 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "David Rumelhart",
+        "zh": "戴维·鲁梅尔哈特"
+      },
+      "role": {
+        "en": "Backpropagation author",
+        "zh": "BP算法作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Pioneer of deep learning",
+        "zh": "深度学习之父"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Ronald Williams",
+        "zh": "罗纳德·威廉姆斯"
+      },
+      "role": {
+        "en": "Backpropagation co-author",
+        "zh": "BP算法共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "low"
+        }
+      ]
+    }
+  ]
+}

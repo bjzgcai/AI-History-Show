@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Petar Velickovic",
+        "zh": "佩塔尔·韦利奇科维奇"
+      },
+      "role": {
+        "en": "GAT lead author",
+        "zh": "GAT 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
+          "sourceUrl": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

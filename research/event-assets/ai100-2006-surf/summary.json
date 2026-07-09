@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:40.539Z",
+  "eventKey": "ai100-2006-surf",
+  "year": 2006,
+  "title": {
+    "en": "SURF",
+    "zh": "SURF 加速稳健特征"
+  },
+  "location": {
+    "name": {
+      "en": "ETH Zurich",
+      "zh": "苏黎世联邦理工学院"
+    },
+    "country": {
+      "en": "Zurich, Switzerland",
+      "zh": "瑞士苏黎世"
+    },
+    "coordinates": [
+      47.3763,
+      8.5481
+    ]
+  },
+  "description": {
+    "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>",
+    "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+      "existsLocally": false,
+      "caption": {
+        "en": "Herbert Bay portrait",
+        "zh": "赫伯特·贝肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of SURF",
+        "zh": "SURF 主要作者"
+      },
+      "sourceName": {
+        "en": "Herbert Bay personal site",
+        "zh": "赫伯特·贝个人网站"
+      },
+      "sourceUrl": "https://herbertbay.com/",
+      "license": {
+        "en": "Personal site image; reuse rights not stated.",
+        "zh": "个人网站图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "SURF interest points",
+        "zh": "SURF 兴趣点"
+      },
+      "subcaption": {
+        "en": "Original local explainer of SURF-style interest point detection.",
+        "zh": "关于 SURF 式兴趣点检测的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "ECCV",
+        "zh": "ECCV"
+      },
+      "sourceUrl": "https://doi.org/10.1007/11744023_32",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Herbert Bay",
+        "type": "portrait-search",
+        "label": "Herbert Bay portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Herbert%20Bay%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Herbert Bay",
+        "type": "commons-portrait-search",
+        "label": "Herbert Bay Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Herbert%20Bay%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Tinne Tuytelaars",
+        "type": "portrait-search",
+        "label": "Tinne Tuytelaars portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Tinne%20Tuytelaars%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Tinne Tuytelaars",
+        "type": "commons-portrait-search",
+        "label": "Tinne Tuytelaars Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Tinne%20Tuytelaars%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "SURF event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2006%20SURF%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "SURF Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=SURF%202006&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "SURF Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=SURF%202006",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "SURF publication search",
+        "url": "https://www.google.com/search?q=2006%20SURF%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "SURF scholar search",
+        "url": "https://scholar.google.com/scholar?q=2006%20SURF%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

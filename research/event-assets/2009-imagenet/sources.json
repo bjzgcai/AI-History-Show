@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:03.675Z",
+  "eventKey": "2009-imagenet",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "url": "https://ieeexplore.ieee.org/document/5206848",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "ImageNet project website",
+      "url": "https://www.image-net.org/",
+      "usage": ""
+    },
+    {
+      "type": "Profile",
+      "label": "Stanford Profile: Fei-Fei Li",
+      "url": "https://profiles.stanford.edu/fei-fei-li",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Fei-Fei Li Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Fei-Fei%20Li%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jia Deng Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jia%20Deng%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "ImageNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ImageNet%202009&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ImageNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ImageNet%202009",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2009%20ImageNet%20Fei-Fei%20Li%20Jia%20Deng%20AI%20history%20source%20images",
+      "query": "2009 ImageNet Fei-Fei Li Jia Deng AI history source images",
+      "eventKey": "2009-imagenet"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2009%20ImageNet%20Fei-Fei%20Li%20Jia%20Deng%20AI%20history%20source%20images",
+      "query": "2009 ImageNet Fei-Fei Li Jia Deng AI history source images",
+      "eventKey": "2009-imagenet"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2009%20ImageNet%20Fei-Fei%20Li%20Jia%20Deng%20AI%20history%20source%20images",
+      "query": "2009 ImageNet Fei-Fei Li Jia Deng AI history source images",
+      "eventKey": "2009-imagenet"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Fei-Fei Li portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Fei-Fei%20Li%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Fei-Fei Li Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Fei-Fei%20Li%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Fei-Fei Li official biography search",
+      "url": "https://www.google.com/search?q=Fei-Fei%20Li%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jia Deng portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jia%20Deng%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jia Deng Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jia%20Deng%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jia Deng official biography search",
+      "url": "https://www.google.com/search?q=Jia%20Deng%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "ImageNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2009%20ImageNet%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "ImageNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ImageNet%202009&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ImageNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ImageNet%202009",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "ImageNet publication search",
+      "url": "https://www.google.com/search?q=2009%20ImageNet%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "ImageNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2009%20ImageNet%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+      "finalUrl": "https://ieeexplore.ieee.org/document/5206848",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/001.imagenet-a-large-scale-hierarchical-image-database.html",
+      "fetchedAt": "2026-07-03T11:17:04.266Z"
+    },
+    {
+      "label": "ImageNet project website",
+      "sourceUrl": "https://www.image-net.org/",
+      "finalUrl": "https://www.image-net.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "ImageNet",
+      "savedPath": "pages/002.imagenet-project-website.html",
+      "fetchedAt": "2026-07-03T11:17:07.116Z"
+    },
+    {
+      "label": "Stanford Profile: Fei-Fei Li",
+      "sourceUrl": "https://profiles.stanford.edu/fei-fei-li",
+      "finalUrl": "https://profiles.stanford.edu/fei-fei-li",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "title": "Fei-Fei Li's Profile | Stanford Profiles",
+      "savedPath": "pages/003.stanford-profile-fei-fei-li.html",
+      "fetchedAt": "2026-07-03T11:17:09.810Z"
+    },
+    {
+      "label": "Fei-Fei Li Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Fei-Fei%20Li%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Fei-Fei%20Li%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.fei-fei-li-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:11.977Z"
+    },
+    {
+      "label": "Jia Deng Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jia%20Deng%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jia%20Deng%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.jia-deng-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:13.727Z"
+    },
+    {
+      "label": "ImageNet Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=ImageNet%202009&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=ImageNet%202009&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.imagenet-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:17:16.342Z"
+    },
+    {
+      "label": "ImageNet Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=ImageNet%202009",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=ImageNet%202009",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.imagenet-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:17:16.996Z"
+    }
+  ]
+}

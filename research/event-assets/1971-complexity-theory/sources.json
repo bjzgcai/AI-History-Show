@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:24.666Z",
+  "eventKey": "1971-complexity-theory",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "The Complexity of Theorem-Proving Procedures",
+      "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+      "usage": ""
+    },
+    {
+      "type": "Award",
+      "label": "Stephen A. Cook ACM A.M. Turing Award",
+      "url": "https://awards.acm.org/award_winners/cook_N991950",
+      "usage": ""
+    },
+    {
+      "type": "Problem",
+      "label": "Clay Mathematics Institute P vs NP",
+      "url": "https://www.claymath.org/millennium/p-vs-np/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+      "usage": "Portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Stephen A. Cook Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Stephen%20A.%20Cook%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Leonid Levin Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Leonid%20Levin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "NP-Completeness Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=NP-Completeness%201971&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "NP-Completeness Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=NP-Completeness%201971",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1971%20NP-Completeness%20Stephen%20A.%20Cook%20Leonid%20Levin%20AI%20history%20source%20images",
+      "query": "1971 NP-Completeness Stephen A. Cook Leonid Levin AI history source images",
+      "eventKey": "1971-complexity-theory"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1971%20NP-Completeness%20Stephen%20A.%20Cook%20Leonid%20Levin%20AI%20history%20source%20images",
+      "query": "1971 NP-Completeness Stephen A. Cook Leonid Levin AI history source images",
+      "eventKey": "1971-complexity-theory"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1971%20NP-Completeness%20Stephen%20A.%20Cook%20Leonid%20Levin%20AI%20history%20source%20images",
+      "query": "1971 NP-Completeness Stephen A. Cook Leonid Levin AI history source images",
+      "eventKey": "1971-complexity-theory"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Stephen A. Cook portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Stephen%20A.%20Cook%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Stephen A. Cook Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Stephen%20A.%20Cook%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Stephen A. Cook official biography search",
+      "url": "https://www.google.com/search?q=Stephen%20A.%20Cook%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Leonid Levin portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Leonid%20Levin%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Leonid Levin Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Leonid%20Levin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Leonid Levin official biography search",
+      "url": "https://www.google.com/search?q=Leonid%20Levin%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "NP-Completeness event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1971%20NP-Completeness%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "NP-Completeness Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=NP-Completeness%201971&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "NP-Completeness Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=NP-Completeness%201971",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "NP-Completeness publication search",
+      "url": "https://www.google.com/search?q=1971%20NP-Completeness%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "NP-Completeness scholar search",
+      "url": "https://scholar.google.com/scholar?q=1971%20NP-Completeness%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "The Complexity of Theorem-Proving Procedures",
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/800157.805047",
+      "finalUrl": "https://dl.acm.org/doi/10.1145/800157.805047",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.the-complexity-of-theorem-proving-procedures.html",
+      "fetchedAt": "2026-07-03T10:34:25.706Z"
+    },
+    {
+      "label": "Stephen A. Cook ACM A.M. Turing Award",
+      "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950",
+      "finalUrl": "https://awards.acm.org/award_winners/cook_N991950",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "savedPath": "pages/002.stephen-a.-cook-acm-a.m.-turing-award.html",
+      "fetchedAt": "2026-07-03T10:34:27.194Z"
+    },
+    {
+      "label": "Clay Mathematics Institute P vs NP",
+      "sourceUrl": "https://www.claymath.org/millennium/p-vs-np/",
+      "finalUrl": "https://www.claymath.org/millennium/p-vs-np/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "P vs NP - Clay Mathematics Institute",
+      "savedPath": "pages/003.clay-mathematics-institute-p-vs-np.html",
+      "fetchedAt": "2026-07-03T10:34:29.476Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:2012-06-15 Stephen A. Cook.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T10:34:30.943Z"
+    },
+    {
+      "label": "Stephen A. Cook Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Stephen%20A.%20Cook%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Stephen%20A.%20Cook%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.stephen-a.-cook-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:34.070Z"
+    },
+    {
+      "label": "Leonid Levin Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Leonid%20Levin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Leonid%20Levin%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.leonid-levin-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:36.597Z"
+    },
+    {
+      "label": "NP-Completeness Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=NP-Completeness%201971&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=NP-Completeness%201971&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.np-completeness-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:34:39.569Z"
+    },
+    {
+      "label": "NP-Completeness Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=NP-Completeness%201971",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=NP-Completeness%201971",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.np-completeness-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:34:40.244Z"
+    }
+  ]
+}

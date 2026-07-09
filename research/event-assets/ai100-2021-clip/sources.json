@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:33.585Z",
+  "eventKey": "ai100-2021-clip",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Learning Transferable Visual Models From Natural Language Supervision",
+      "url": "https://arxiv.org/abs/2103.00020",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICML CLIP paper page",
+      "url": "https://proceedings.mlr.press/v139/radford21a.html",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "OpenAI CLIP blog post",
+      "url": "https://openai.com/index/clip/",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "OpenAI CLIP GitHub repository",
+      "url": "https://github.com/openai/CLIP",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/figures/alec-radford.png",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alec Radford Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "CLIP Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CLIP%202021&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CLIP Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CLIP%202021",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2021%20CLIP%20Alec%20Radford%20AI%20history%20source%20images",
+      "query": "2021 CLIP Alec Radford AI history source images",
+      "eventKey": "ai100-2021-clip"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20CLIP%20Alec%20Radford%20AI%20history%20source%20images",
+      "query": "2021 CLIP Alec Radford AI history source images",
+      "eventKey": "ai100-2021-clip"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2021%20CLIP%20Alec%20Radford%20AI%20history%20source%20images",
+      "query": "2021 CLIP Alec Radford AI history source images",
+      "eventKey": "ai100-2021-clip"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alec Radford portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alec%20Radford%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alec Radford Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alec Radford official biography search",
+      "url": "https://www.google.com/search?q=Alec%20Radford%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "CLIP event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20CLIP%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "CLIP Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CLIP%202021&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CLIP Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CLIP%202021",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "CLIP publication search",
+      "url": "https://www.google.com/search?q=2021%20CLIP%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "CLIP scholar search",
+      "url": "https://scholar.google.com/scholar?q=2021%20CLIP%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Learning Transferable Visual Models From Natural Language Supervision",
+      "sourceUrl": "https://arxiv.org/abs/2103.00020",
+      "finalUrl": "https://arxiv.org/abs/2103.00020",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[2103.00020] Learning Transferable Visual Models From Natural Language Supervision",
+      "savedPath": "pages/001.learning-transferable-visual-models-from-natural-language-supervision.html",
+      "fetchedAt": "2026-07-03T12:04:33.960Z"
+    },
+    {
+      "label": "ICML CLIP paper page",
+      "sourceUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+      "finalUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "savedPath": "pages/002.icml-clip-paper-page.html",
+      "fetchedAt": "2026-07-03T12:04:34.571Z"
+    },
+    {
+      "label": "OpenAI CLIP blog post",
+      "sourceUrl": "https://openai.com/index/clip/",
+      "finalUrl": "https://openai.com/index/clip/",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/003.openai-clip-blog-post.html",
+      "fetchedAt": "2026-07-03T12:04:34.946Z"
+    },
+    {
+      "label": "OpenAI CLIP GitHub repository",
+      "sourceUrl": "https://github.com/openai/CLIP",
+      "finalUrl": "https://github.com/openai/CLIP",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining), Predict the most relevant text snippet given an image · GitHub",
+      "savedPath": "pages/004.openai-clip-github-repository.html",
+      "fetchedAt": "2026-07-03T12:04:35.873Z"
+    },
+    {
+      "label": "Alec Radford Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.alec-radford-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:37.066Z"
+    },
+    {
+      "label": "CLIP Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=CLIP%202021&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=CLIP%202021&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.clip-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:04:39.983Z"
+    },
+    {
+      "label": "CLIP Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=CLIP%202021",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=CLIP%202021",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.clip-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:40.591Z"
+    }
+  ]
+}

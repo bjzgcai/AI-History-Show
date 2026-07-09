@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:16.948Z",
+  "eventKey": "2017-transformer",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ashish Vaswani Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2017%20Transformer%20Ashish%20Vaswani%20AI%20history%20source%20images",
+      "query": "2017 Transformer Ashish Vaswani AI history source images",
+      "eventKey": "2017-transformer"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20Ashish%20Vaswani%20AI%20history%20source%20images",
+      "query": "2017 Transformer Ashish Vaswani AI history source images",
+      "eventKey": "2017-transformer"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20Ashish%20Vaswani%20AI%20history%20source%20images",
+      "query": "2017 Transformer Ashish Vaswani AI history source images",
+      "eventKey": "2017-transformer"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Ashish Vaswani portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Ashish%20Vaswani%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ashish Vaswani Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Ashish Vaswani official biography search",
+      "url": "https://www.google.com/search?q=Ashish%20Vaswani%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Transformer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Transformer publication search",
+      "url": "https://www.google.com/search?q=2017%20Transformer%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Transformer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Ashish Vaswani Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.ashish-vaswani-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:18.656Z"
+    },
+    {
+      "label": "Transformer Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.transformer-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:31:21.580Z"
+    },
+    {
+      "label": "Transformer Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/003.transformer-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:31:22.193Z"
+    }
+  ]
+}

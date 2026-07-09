@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:50.401Z",
+  "eventKey": "ai100-2015-batch-normalization",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Batch Normalization",
+      "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper",
+      "label": "Batch Normalization on arXiv",
+      "url": "https://arxiv.org/abs/1502.03167",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "Google Research publication page",
+      "url": "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "Google Research archived PDF",
+      "url": "https://research.google.com/pubs/archive/43442.pdf",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Sergey Ioffe Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Sergey%20Ioffe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christian Szegedy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Batch Normalization Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Batch%20Normalization%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Batch Normalization Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Batch%20Normalization%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20Batch%20Normalization%20Sergey%20Ioffe%20Christian%20Szegedy%20AI%20history%20source%20images",
+      "query": "2015 Batch Normalization Sergey Ioffe Christian Szegedy AI history source images",
+      "eventKey": "ai100-2015-batch-normalization"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Batch%20Normalization%20Sergey%20Ioffe%20Christian%20Szegedy%20AI%20history%20source%20images",
+      "query": "2015 Batch Normalization Sergey Ioffe Christian Szegedy AI history source images",
+      "eventKey": "ai100-2015-batch-normalization"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Batch%20Normalization%20Sergey%20Ioffe%20Christian%20Szegedy%20AI%20history%20source%20images",
+      "query": "2015 Batch Normalization Sergey Ioffe Christian Szegedy AI history source images",
+      "eventKey": "ai100-2015-batch-normalization"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Sergey Ioffe portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Sergey%20Ioffe%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Sergey Ioffe Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Sergey%20Ioffe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Sergey Ioffe official biography search",
+      "url": "https://www.google.com/search?q=Sergey%20Ioffe%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Christian Szegedy portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Christian%20Szegedy%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Christian Szegedy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Christian Szegedy official biography search",
+      "url": "https://www.google.com/search?q=Christian%20Szegedy%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Batch Normalization event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Batch%20Normalization%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Batch Normalization Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Batch%20Normalization%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Batch Normalization Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Batch%20Normalization%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Batch Normalization publication search",
+      "url": "https://www.google.com/search?q=2015%20Batch%20Normalization%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Batch Normalization scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Batch%20Normalization%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Batch Normalization",
+      "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+      "finalUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "savedPath": "pages/001.batch-normalization.html",
+      "fetchedAt": "2026-07-03T12:01:51.004Z"
+    },
+    {
+      "label": "Batch Normalization on arXiv",
+      "sourceUrl": "https://arxiv.org/abs/1502.03167",
+      "finalUrl": "https://arxiv.org/abs/1502.03167",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1502.03167] Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "savedPath": "pages/002.batch-normalization-on-arxiv.html",
+      "fetchedAt": "2026-07-03T12:01:51.380Z"
+    },
+    {
+      "label": "Google Research publication page",
+      "sourceUrl": "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:02:02.204Z"
+    },
+    {
+      "label": "Google Research archived PDF",
+      "sourceUrl": "https://research.google.com/pubs/archive/43442.pdf",
+      "finalUrl": "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43442.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/004.google-research-archived-pdf.html",
+      "fetchedAt": "2026-07-03T12:02:03.353Z"
+    },
+    {
+      "label": "Sergey Ioffe Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Sergey%20Ioffe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Sergey%20Ioffe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.sergey-ioffe-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:02:05.552Z"
+    },
+    {
+      "label": "Christian Szegedy Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.christian-szegedy-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:02:06.876Z"
+    },
+    {
+      "label": "Batch Normalization Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Batch%20Normalization%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Batch%20Normalization%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.batch-normalization-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:02:08.414Z"
+    },
+    {
+      "label": "Batch Normalization Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Batch%20Normalization%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Batch%20Normalization%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.batch-normalization-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:02:09.020Z"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:44.653Z",
+  "eventKey": "ai100-2014-ms-coco",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2014-ms-coco",
+      "label": "MS COCO lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://tsungyilin.info/",
+      "imageUrl": "https://tsungyilin.info/images/tsungyi.jpeg",
+      "finalImageUrl": "https://tsungyilin.info/images/tsungyi.jpeg",
+      "localPath": "images/001.ms-coco-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 15763,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:08:44.350Z"
+    },
+    {
+      "eventKey": "ai100-2014-ms-coco",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1405.0312",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2346,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:08:44.653Z"
+    }
+  ]
+}

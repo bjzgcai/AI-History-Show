@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:25.717Z",
+  "eventKey": "1999-sift",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "David Lowe",
+      "role": "Inventor of SIFT",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "David Lowe portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=David%20Lowe%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "David Lowe Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=David%20Lowe%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "David Lowe official biography search",
+          "url": "https://www.google.com/search?q=David%20Lowe%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "SIFT event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1999%20SIFT%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "SIFT Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SIFT%201999&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SIFT Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SIFT%201999",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "SIFT publication search",
+      "url": "https://www.google.com/search?q=1999%20SIFT%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "SIFT scholar search",
+      "url": "https://scholar.google.com/scholar?q=1999%20SIFT%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "David Lowe portrait",
+        "zh": "戴维·洛 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from UBC Computer Science profile.",
+        "zh": "来自 UBC Computer 《科学》 个人资料页的人物图。"
+      },
+      "sourceUrl": "https://www.cs.ubc.ca/people/david-lowe",
+      "sourceLabel": "David Lowe, UBC Computer Science",
+      "license": {
+        "en": "UBC profile image; reuse rights not stated.",
+        "zh": "UBC profile image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Scale-space keypoints",
+        "zh": "尺度空间关键点"
+      },
+      "subcaption": {
+        "en": "Local redraw for SIFT, based on the listed source material.",
+        "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "sourceLabel": "Object Recognition from Local Scale-Invariant Features",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Gradient descriptor histogram",
+        "zh": "梯度描述子直方图"
+      },
+      "subcaption": {
+        "en": "Local redraw for SIFT, based on the listed source material.",
+        "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "sourceLabel": "Object Recognition from Local Scale-Invariant Features",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Object Recognition from Local Scale-Invariant Features",
+        "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

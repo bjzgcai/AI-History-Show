@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:58.635Z",
+  "eventKey": "2014-adam",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Adam: A Method for Stochastic Optimization",
+      "url": "https://arxiv.org/abs/1412.6980",
+      "usage": ""
+    },
+    {
+      "type": "Implementation",
+      "label": "PyTorch torch.optim.Adam",
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+      "usage": ""
+    },
+    {
+      "type": "Framework docs",
+      "label": "TensorFlow Keras Adam optimizer",
+      "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Diederik P. Kingma personal website",
+      "url": "https://dpkingma.com/",
+      "usage": "Historical figure / Co-author portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Diederik P. Kingma Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Diederik%20P.%20Kingma%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jimmy Ba Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jimmy%20Ba%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Adam Optimizer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Adam%20Optimizer%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Adam Optimizer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Adam%20Optimizer%202014",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2014%20Adam%20Optimizer%20Diederik%20P.%20Kingma%20Jimmy%20Ba%20AI%20history%20source%20images",
+      "query": "2014 Adam Optimizer Diederik P. Kingma Jimmy Ba AI history source images",
+      "eventKey": "2014-adam"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Adam%20Optimizer%20Diederik%20P.%20Kingma%20Jimmy%20Ba%20AI%20history%20source%20images",
+      "query": "2014 Adam Optimizer Diederik P. Kingma Jimmy Ba AI history source images",
+      "eventKey": "2014-adam"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Adam%20Optimizer%20Diederik%20P.%20Kingma%20Jimmy%20Ba%20AI%20history%20source%20images",
+      "query": "2014 Adam Optimizer Diederik P. Kingma Jimmy Ba AI history source images",
+      "eventKey": "2014-adam"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Diederik P. Kingma portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Diederik%20P.%20Kingma%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Diederik P. Kingma Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Diederik%20P.%20Kingma%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Diederik P. Kingma official biography search",
+      "url": "https://www.google.com/search?q=Diederik%20P.%20Kingma%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jimmy Ba portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jimmy%20Ba%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jimmy Ba Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jimmy%20Ba%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jimmy Ba official biography search",
+      "url": "https://www.google.com/search?q=Jimmy%20Ba%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Adam Optimizer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Adam%20Optimizer%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Adam Optimizer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Adam%20Optimizer%202014&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Adam Optimizer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Adam%20Optimizer%202014",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Adam Optimizer publication search",
+      "url": "https://www.google.com/search?q=2014%20Adam%20Optimizer%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Adam Optimizer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Adam%20Optimizer%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Adam: A Method for Stochastic Optimization",
+      "sourceUrl": "https://arxiv.org/abs/1412.6980",
+      "finalUrl": "https://arxiv.org/abs/1412.6980",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1412.6980] Adam: A Method for Stochastic Optimization",
+      "savedPath": "pages/001.adam-a-method-for-stochastic-optimization.html",
+      "fetchedAt": "2026-07-03T10:37:59.283Z"
+    },
+    {
+      "label": "PyTorch torch.optim.Adam",
+      "sourceUrl": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+      "finalUrl": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Redirecting&hellip;",
+      "savedPath": "pages/002.pytorch-torch.optim.adam.html",
+      "fetchedAt": "2026-07-03T10:38:00.984Z"
+    },
+    {
+      "label": "TensorFlow Keras Adam optimizer",
+      "sourceUrl": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+      "finalUrl": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "tf.keras.optimizers.Adam &nbsp;|&nbsp; TensorFlow v2.16.1",
+      "savedPath": "pages/003.tensorflow-keras-adam-optimizer.html",
+      "fetchedAt": "2026-07-03T10:38:02.734Z"
+    },
+    {
+      "label": "Diederik P. Kingma personal website",
+      "sourceUrl": "https://dpkingma.com/",
+      "finalUrl": "https://dpkingma.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Diederik P. (Durk) Kingma",
+      "savedPath": "pages/004.diederik-p.-kingma-personal-website.html",
+      "fetchedAt": "2026-07-03T10:38:04.420Z"
+    },
+    {
+      "label": "Diederik P. Kingma Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Diederik%20P.%20Kingma%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Diederik%20P.%20Kingma%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.diederik-p.-kingma-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:38:05.633Z"
+    },
+    {
+      "label": "Jimmy Ba Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jimmy%20Ba%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jimmy%20Ba%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.jimmy-ba-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:38:07.242Z"
+    },
+    {
+      "label": "Adam Optimizer Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Adam%20Optimizer%202014&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Adam%20Optimizer%202014&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.adam-optimizer-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:38:09.044Z"
+    },
+    {
+      "label": "Adam Optimizer Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Adam%20Optimizer%202014",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Adam%20Optimizer%202014",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.adam-optimizer-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:38:09.707Z"
+    }
+  ]
+}

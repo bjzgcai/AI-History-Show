@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:36.354Z",
+  "eventKey": "ai100-2000-isomap",
+  "year": 2000,
+  "title": {
+    "en": "Isomap",
+    "zh": "Isomap"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "description": {
+    "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>",
+    "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+      "existsLocally": false,
+      "caption": {
+        "en": "Joshua Tenenbaum portrait",
+        "zh": "约书亚·特南鲍姆肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of Isomap",
+        "zh": "Isomap 主要作者"
+      },
+      "sourceName": {
+        "en": "MIT Quest for Intelligence",
+        "zh": "MIT Quest for Intelligence"
+      },
+      "sourceUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+      "license": {
+        "en": "MIT profile image; reuse rights not stated.",
+        "zh": "MIT 个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Geodesic manifold map",
+        "zh": "测地流形映射"
+      },
+      "subcaption": {
+        "en": "Original local explainer of Isomap geodesic embedding.",
+        "zh": "关于 Isomap 测地嵌入的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Science",
+        "zh": "Science"
+      },
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2319",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Joshua Tenenbaum",
+        "type": "portrait-search",
+        "label": "Joshua Tenenbaum portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Joshua%20Tenenbaum%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Joshua Tenenbaum",
+        "type": "commons-portrait-search",
+        "label": "Joshua Tenenbaum Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Joshua%20Tenenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "John Langford",
+        "type": "portrait-search",
+        "label": "John Langford portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=John%20Langford%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "John Langford",
+        "type": "commons-portrait-search",
+        "label": "John Langford Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=John%20Langford%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Isomap event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2000%20Isomap%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Isomap Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Isomap%202000&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Isomap Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Isomap%202000",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Isomap publication search",
+        "url": "https://www.google.com/search?q=2000%20Isomap%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Isomap scholar search",
+        "url": "https://scholar.google.com/scholar?q=2000%20Isomap%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

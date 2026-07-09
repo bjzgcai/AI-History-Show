@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:52.050Z",
+  "eventKey": "2023-agents",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Stuart Russell",
+      "role": "Founder of Agent Theory",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Stuart Russell portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Stuart%20Russell%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Stuart Russell Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Russell%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Stuart Russell official biography search",
+          "url": "https://www.google.com/search?q=Stuart%20Russell%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Peter Norvig",
+      "role": "AIMA author",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Peter Norvig portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Peter%20Norvig%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Peter Norvig Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Peter%20Norvig%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Peter Norvig official biography search",
+          "url": "https://www.google.com/search?q=Peter%20Norvig%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Michael Wooldridge",
+      "role": "Expert in Multi-Agent Systems",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Michael Wooldridge portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Michael%20Wooldridge%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Michael Wooldridge Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Wooldridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Michael Wooldridge official biography search",
+          "url": "https://www.google.com/search?q=Michael%20Wooldridge%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Agents: LLM-Driven Autonomous Systems event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2023%20Agents%3A%20LLM-Driven%20Autonomous%20Systems%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Agents: LLM-Driven Autonomous Systems Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Agents%3A%20LLM-Driven%20Autonomous%20Systems%202023&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Agents: LLM-Driven Autonomous Systems Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Agents%3A%20LLM-Driven%20Autonomous%20Systems%202023",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Agents: LLM-Driven Autonomous Systems publication search",
+      "url": "https://www.google.com/search?q=2023%20Agents%3A%20LLM-Driven%20Autonomous%20Systems%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Agents: LLM-Driven Autonomous Systems scholar search",
+      "url": "https://scholar.google.com/scholar?q=2023%20Agents%3A%20LLM-Driven%20Autonomous%20Systems%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/2023-agents/historical/2023-agents_historical_02.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "Agents: LLM-Driven Autonomous Systems",
+        "zh": "智能体：LLM驱动的自主系统"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "Agents: LLM-Driven Autonomous Systems",
+        "zh": "智能体：LLM驱动的自主系统"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/2023-agents/historical/2023-agents_historical_04.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Historical photo",
+        "zh": "历史照片"
+      },
+      "subcaption": {
+        "en": "Agents: LLM-Driven Autonomous Systems",
+        "zh": "智能体：LLM驱动的自主系统"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

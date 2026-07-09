@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:03.675Z",
+  "eventKey": "2009-imagenet",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Fei-Fei Li",
+      "role": "ImageNet project leader",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Fei-Fei Li portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Fei-Fei%20Li%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Fei-Fei Li Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Fei-Fei%20Li%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Fei-Fei Li official biography search",
+          "url": "https://www.google.com/search?q=Fei-Fei%20Li%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Jia Deng",
+      "role": "First author of ImageNet paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Jia Deng portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Jia%20Deng%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Jia Deng Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Jia%20Deng%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Jia Deng official biography search",
+          "url": "https://www.google.com/search?q=Jia%20Deng%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "ImageNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2009%20ImageNet%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "ImageNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=ImageNet%202009&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "ImageNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=ImageNet%202009",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "ImageNet publication search",
+      "url": "https://www.google.com/search?q=2009%20ImageNet%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "ImageNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2009%20ImageNet%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Fei-Fei Li portrait",
+        "zh": "李飞飞肖像"
+      },
+      "subcaption": {
+        "en": "Stanford Profiles portrait for Fei-Fei Li.",
+        "zh": "斯坦福个人资料库 中的李飞飞人物图。"
+      },
+      "sourceUrl": "https://profiles.stanford.edu/fei-fei-li",
+      "sourceLabel": "Stanford Profile: Fei-Fei Li",
+      "license": {
+        "en": "Institution profile photo; rights not stated.",
+        "zh": "Institution profile photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "WordNet hierarchy",
+        "zh": "WordNet 层级"
+      },
+      "subcaption": {
+        "en": "Local redraw for ImageNet, based on the listed source material.",
+        "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+      "sourceLabel": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "ILSVRC benchmark",
+        "zh": "ILSVRC 基准"
+      },
+      "subcaption": {
+        "en": "Local redraw for ImageNet, based on the listed source material.",
+        "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+      "sourceLabel": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "ImageNet: A Large-Scale Hierarchical Image Database",
+        "url": "https://ieeexplore.ieee.org/document/5206848",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:39.421Z",
+  "eventKey": "2008-tsne",
+  "year": "2008",
+  "title": {
+    "en": "t-SNE",
+    "zh": "t-SNE"
+  },
+  "location": {
+    "name": {
+      "en": "Tilburg University / University of Toronto",
+      "zh": "蒂尔堡大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Netherlands and Canada",
+      "zh": "荷兰与加拿大"
+    },
+    "coordinates": [
+      51.5633,
+      5.0431
+    ]
+  },
+  "description": {
+    "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>",
+    "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Laurens van der Maaten portrait",
+        "zh": "劳伦斯·范德马滕 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from van der Maaten homepage.",
+        "zh": "来自 van der Maaten 个人主页的人物图。"
+      },
+      "sourceName": {
+        "en": "Laurens van der Maaten homepage",
+        "zh": "劳伦斯·范德马滕 homepage"
+      },
+      "sourceUrl": "https://lvdmaaten.github.io/",
+      "license": {
+        "en": "Personal website image; reuse rights not stated.",
+        "zh": "Personal website image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Neighbor probability matching",
+        "zh": "邻域概率匹配"
+      },
+      "subcaption": {
+        "en": "Local redraw for t-SNE, based on the listed source material.",
+        "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Journal of Machine Learning Research",
+        "zh": "《机器学习研究杂志》"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "2D cluster map",
+        "zh": "二维簇图"
+      },
+      "subcaption": {
+        "en": "Local redraw for t-SNE, based on the listed source material.",
+        "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Journal of Machine Learning Research",
+        "zh": "《机器学习研究杂志》"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Laurens van der Maaten",
+        "type": "portrait-search",
+        "label": "Laurens van der Maaten portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Laurens%20van%20der%20Maaten%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Laurens van der Maaten",
+        "type": "commons-portrait-search",
+        "label": "Laurens van der Maaten Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Laurens%20van%20der%20Maaten%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "t-SNE event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2008%20t-SNE%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "t-SNE Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=t-SNE%202008&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "t-SNE Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=t-SNE%202008",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "t-SNE publication search",
+        "url": "https://www.google.com/search?q=2008%20t-SNE%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "t-SNE scholar search",
+        "url": "https://scholar.google.com/scholar?q=2008%20t-SNE%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

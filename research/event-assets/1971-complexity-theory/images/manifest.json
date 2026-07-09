@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:40.855Z",
+  "eventKey": "1971-complexity-theory",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1971-complexity-theory",
+      "label": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.stephen-a.-cook-photographed-during-the-turing-centenary-celebration-in-2012.jpg",
+      "originalLocalPath": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 577662,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+      "downloadedAt": "2026-07-03T10:34:40.552Z"
+    },
+    {
+      "eventKey": "1971-complexity-theory",
+      "label": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://dl.acm.org/doi/10.1145/800157.805047",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-explainer-derived-from-cook-s-1971-paper-and-the-clay-p-versus-np-problem-description.svg",
+      "originalLocalPath": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2471,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Explainer graphic",
+      "rights": "Original local explainer; source article reuse rights not used.",
+      "downloadedAt": "2026-07-03T10:34:40.855Z"
+    }
+  ]
+}

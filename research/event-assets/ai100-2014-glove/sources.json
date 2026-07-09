@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:24.100Z",
+  "eventKey": "ai100-2014-glove",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "GloVe: Global Vectors for Word Representation",
+      "url": "https://aclanthology.org/D14-1162/",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "Stanford GloVe project page",
+      "url": "https://nlp.stanford.edu/projects/glove/",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "ACL Anthology PDF",
+      "url": "https://aclanthology.org/D14-1162.pdf",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Stanford NLP profile",
+      "url": "https://nlp.stanford.edu/~jpennin/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jeffrey Pennington Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Pennington%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "GloVe Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GloVe%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GloVe Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GloVe%202014",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2014%20GloVe%20Jeffrey%20Pennington%20AI%20history%20source%20images",
+      "query": "2014 GloVe Jeffrey Pennington AI history source images",
+      "eventKey": "ai100-2014-glove"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20GloVe%20Jeffrey%20Pennington%20AI%20history%20source%20images",
+      "query": "2014 GloVe Jeffrey Pennington AI history source images",
+      "eventKey": "ai100-2014-glove"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2014%20GloVe%20Jeffrey%20Pennington%20AI%20history%20source%20images",
+      "query": "2014 GloVe Jeffrey Pennington AI history source images",
+      "eventKey": "ai100-2014-glove"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jeffrey Pennington portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jeffrey%20Pennington%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jeffrey Pennington Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Pennington%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jeffrey Pennington official biography search",
+      "url": "https://www.google.com/search?q=Jeffrey%20Pennington%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "GloVe event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20GloVe%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "GloVe Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GloVe%202014&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GloVe Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GloVe%202014",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "GloVe publication search",
+      "url": "https://www.google.com/search?q=2014%20GloVe%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "GloVe scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20GloVe%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "GloVe: Global Vectors for Word Representation",
+      "sourceUrl": "https://aclanthology.org/D14-1162/",
+      "finalUrl": "https://aclanthology.org/D14-1162/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GloVe: Global Vectors for Word Representation - ACL Anthology",
+      "savedPath": "pages/001.glove-global-vectors-for-word-representation.html",
+      "fetchedAt": "2026-07-03T12:05:25.210Z"
+    },
+    {
+      "label": "Stanford GloVe project page",
+      "sourceUrl": "https://nlp.stanford.edu/projects/glove/",
+      "finalUrl": "https://nlp.stanford.edu/projects/glove/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "GloVe: Global Vectors for Word Representation",
+      "savedPath": "pages/002.stanford-glove-project-page.html",
+      "fetchedAt": "2026-07-03T12:05:26.519Z"
+    },
+    {
+      "label": "ACL Anthology PDF",
+      "sourceUrl": "https://aclanthology.org/D14-1162.pdf",
+      "finalUrl": "https://aclanthology.org/D14-1162.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/003.acl-anthology-pdf.html",
+      "fetchedAt": "2026-07-03T12:05:29.630Z"
+    },
+    {
+      "label": "Stanford NLP profile",
+      "sourceUrl": "https://nlp.stanford.edu/~jpennin/",
+      "finalUrl": "https://nlp.stanford.edu/~jpennin/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Jeffrey Pennington",
+      "savedPath": "pages/004.stanford-nlp-profile.html",
+      "fetchedAt": "2026-07-03T12:05:31.331Z"
+    },
+    {
+      "label": "Jeffrey Pennington Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Pennington%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Pennington%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.jeffrey-pennington-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:33.300Z"
+    },
+    {
+      "label": "GloVe Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=GloVe%202014&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=GloVe%202014&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.glove-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:05:36.122Z"
+    },
+    {
+      "label": "GloVe Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=GloVe%202014",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=GloVe%202014",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.glove-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:36.730Z"
+    }
+  ]
+}

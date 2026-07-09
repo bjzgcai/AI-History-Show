@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:43.641Z",
+  "eventKey": "ai100-2016-gcn",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2016-gcn",
+      "label": "GCN lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://tkipf.github.io/",
+      "imageUrl": "https://tkipf.github.io/images/photo.jpg",
+      "finalImageUrl": "https://tkipf.github.io/images/photo.jpg",
+      "localPath": "images/001.gcn-lead-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 68604,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:07:43.336Z"
+    },
+    {
+      "eventKey": "ai100-2016-gcn",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1609.02907",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2354,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:07:43.641Z"
+    }
+  ]
+}

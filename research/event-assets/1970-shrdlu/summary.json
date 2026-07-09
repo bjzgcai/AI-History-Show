@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:18.687Z",
+  "eventKey": "1970-shrdlu",
+  "year": "1970",
+  "title": {
+    "en": "SHRDLU",
+    "zh": "SHRDLU"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "description": {
+    "en": "<p>SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.</p>",
+    "zh": "<p>SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Terry Winograd portrait",
+        "zh": "特里·维诺格拉德 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Stanford Computer Science profile.",
+        "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。"
+      },
+      "sourceName": {
+        "en": "Stanford Computer Science",
+        "zh": "斯坦福大学 Computer 《科学》"
+      },
+      "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+      "license": {
+        "en": "Stanford profile image; reuse rights not stated.",
+        "zh": "斯坦福大学 profile image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Blocks-world command grounding",
+        "zh": "积木世界命令落地"
+      },
+      "subcaption": {
+        "en": "Local redraw for SHRDLU, based on the listed source material.",
+        "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "MIT DSpace",
+        "zh": "麻省理工学院 DSpace"
+      },
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Parser to planner path",
+        "zh": "解析器到规划器路径"
+      },
+      "subcaption": {
+        "en": "Local redraw for SHRDLU, based on the listed source material.",
+        "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "MIT DSpace",
+        "zh": "麻省理工学院 DSpace"
+      },
+      "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Terry Winograd",
+        "type": "portrait-search",
+        "label": "Terry Winograd portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Terry%20Winograd%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Terry Winograd",
+        "type": "commons-portrait-search",
+        "label": "Terry Winograd Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Terry%20Winograd%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "SHRDLU event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1970%20SHRDLU%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "SHRDLU Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=SHRDLU%201970&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "SHRDLU Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=SHRDLU%201970",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "SHRDLU publication search",
+        "url": "https://www.google.com/search?q=1970%20SHRDLU%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "SHRDLU scholar search",
+        "url": "https://scholar.google.com/scholar?q=1970%20SHRDLU%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:24.295Z",
+  "eventKey": "ai100-2017-wasserstein-gan",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2017-wasserstein-gan",
+      "label": "Wasserstein GAN co-author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://leon.bottou.org/",
+      "imageUrl": "https://leon.bottou.org/_media/bottou_75.jpg",
+      "finalImageUrl": "https://leon.bottou.org/_media/bottou_75.jpg",
+      "localPath": "images/001.wasserstein-gan-co-author.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 2242,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T12:06:23.991Z"
+    },
+    {
+      "eventKey": "ai100-2017-wasserstein-gan",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2402,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:06:24.295Z"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Alexander Kirillov",
+        "zh": "亚历山大·基里洛夫"
+      },
+      "role": {
+        "en": "Lead author of Segment Anything",
+        "zh": "Segment Anything 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+          "sourceUrl": "https://alexander-kirillov.github.io/",
+          "license": {
+            "en": "Personal site profile image; reuse rights not stated.",
+            "zh": "个人网站资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:11.160Z",
+  "eventKey": "1965-resolution-method",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1965-resolution-method",
+      "label": "Robinson in 2012; Wikimedia Commons portrait.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.robinson-in-2012-wikimedia-commons-portrait.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1004944,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Creative Commons license stated on Commons file page.",
+      "downloadedAt": "2026-07-03T11:04:10.856Z"
+    },
+    {
+      "eventKey": "1965-resolution-method",
+      "label": "Local redraw for Resolution Method, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1145/321250.321253",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-resolution-method-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1088,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:04:11.160Z"
+    }
+  ]
+}

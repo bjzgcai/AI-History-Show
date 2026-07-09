@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:24.100Z",
+  "eventKey": "ai100-2014-glove",
+  "year": 2014,
+  "title": {
+    "en": "GloVe",
+    "zh": "GloVe"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "description": {
+    "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>",
+    "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Jeffrey Pennington portrait",
+        "zh": "杰弗里·彭宁顿肖像"
+      },
+      "subcaption": {
+        "en": "GloVe lead author",
+        "zh": "GloVe 主要作者"
+      },
+      "sourceName": {
+        "en": "Stanford NLP profile",
+        "zh": "斯坦福 NLP 个人页面"
+      },
+      "sourceUrl": "https://nlp.stanford.edu/~jpennin/",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "GloVe explainer",
+        "zh": "GloVe 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "ACL Anthology",
+        "zh": "ACL Anthology"
+      },
+      "sourceUrl": "https://aclanthology.org/D14-1162/",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Jeffrey Pennington",
+        "type": "portrait-search",
+        "label": "Jeffrey Pennington portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jeffrey%20Pennington%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jeffrey Pennington",
+        "type": "commons-portrait-search",
+        "label": "Jeffrey Pennington Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Pennington%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "GloVe event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2014%20GloVe%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "GloVe Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=GloVe%202014&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "GloVe Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=GloVe%202014",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "GloVe publication search",
+        "url": "https://www.google.com/search?q=2014%20GloVe%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "GloVe scholar search",
+        "url": "https://scholar.google.com/scholar?q=2014%20GloVe%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

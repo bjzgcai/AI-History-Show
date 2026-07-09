@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Karen Simonyan",
+        "zh": "卡伦·西莫尼扬"
+      },
+      "role": {
+        "en": "Co-author of the VGG paper",
+        "zh": "VGG 论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+          "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+          "license": {
+            "en": "Institution profile photo; rights not stated.",
+            "zh": "Institution profile photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Co-author portrait",
+            "zh": "历史人物 / 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Andrew Zisserman",
+        "zh": "安德鲁·齐瑟曼"
+      },
+      "role": {
+        "en": "Co-author and Visual Geometry Group lead",
+        "zh": "共同作者，视觉几何组负责人"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+          "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+          "license": {
+            "en": "Institution profile photo; rights not stated.",
+            "zh": "Institution profile photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Co-author portrait",
+            "zh": "历史人物 / 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

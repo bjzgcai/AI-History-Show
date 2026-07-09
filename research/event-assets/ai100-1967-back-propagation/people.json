@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Shunichi Amari",
+        "zh": "甘利俊一"
+      },
+      "role": {
+        "en": "Early contributor to adaptive neural learning",
+        "zh": "自适应神经学习早期贡献者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/david-rumelhart.jpg",
+          "sourceUrl": "resources/images/figures/david-rumelhart.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "David Rumelhart",
+        "zh": "大卫·鲁梅尔哈特"
+      },
+      "role": {
+        "en": "Co-author of the 1986 back-propagation paper",
+        "zh": "1986 年反向传播论文共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/david-rumelhart.jpg",
+          "sourceUrl": "resources/images/figures/david-rumelhart.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

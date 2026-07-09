@@ -8,6 +8,12 @@ node_modules/
 # Auto-generated backups
 manage/.backups/
 
+# Research collection cache: keep metadata/manifests, regenerate bulky snapshots locally.
+research/event-assets/**/pages/
+research/event-assets/**/images/*
+!research/event-assets/**/images/
+!research/event-assets/**/images/manifest.json
+
 # OS
 .DS_Store
 Thumbs.db

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:29:56.055Z",
+  "eventKey": "1969-ai-winter",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Marvin Minsky",
+      "role": "Author of Perceptrons",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Marvin Minsky portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Marvin%20Minsky%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Marvin Minsky Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Marvin Minsky official biography search",
+          "url": "https://www.google.com/search?q=Marvin%20Minsky%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "The First AI Winter Arrives event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1969%20The%20First%20AI%20Winter%20Arrives%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "The First AI Winter Arrives Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=The%20First%20AI%20Winter%20Arrives%201969&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "The First AI Winter Arrives Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=The%20First%20AI%20Winter%20Arrives%201969",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "The First AI Winter Arrives publication search",
+      "url": "https://www.google.com/search?q=1969%20The%20First%20AI%20Winter%20Arrives%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "The First AI Winter Arrives scholar search",
+      "url": "https://scholar.google.com/scholar?q=1969%20The%20First%20AI%20Winter%20Arrives%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "《感知机：计算几何学导论》"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    },
+    {
+      "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "《感知机：计算几何学导论》"
+      },
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      },
+      "reviewStatus": "needs-source-and-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [],
+    "institutions": []
+  }
+}

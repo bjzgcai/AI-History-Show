@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:07.002Z",
+  "eventKey": "2014-dropout",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "usage": ""
+    },
+    {
+      "type": "Preprint",
+      "label": "Improving neural networks by preventing co-adaptation",
+      "url": "https://arxiv.org/abs/1207.0580",
+      "usage": ""
+    },
+    {
+      "type": "Framework docs",
+      "label": "PyTorch torch.nn.Dropout",
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "University of Toronto personal page",
+      "url": "https://www.cs.utoronto.ca/~nitish/",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Nitish Srivastava Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Nitish%20Srivastava%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Dropout Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Dropout%202014&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Dropout Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dropout%202014",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2014%20Dropout%20Nitish%20Srivastava%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2014 Dropout Nitish Srivastava Geoffrey Hinton AI history source images",
+      "eventKey": "2014-dropout"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Dropout%20Nitish%20Srivastava%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2014 Dropout Nitish Srivastava Geoffrey Hinton AI history source images",
+      "eventKey": "2014-dropout"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Dropout%20Nitish%20Srivastava%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2014 Dropout Nitish Srivastava Geoffrey Hinton AI history source images",
+      "eventKey": "2014-dropout"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Nitish Srivastava portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Nitish%20Srivastava%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Nitish Srivastava Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Nitish%20Srivastava%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Nitish Srivastava official biography search",
+      "url": "https://www.google.com/search?q=Nitish%20Srivastava%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Geoffrey Hinton portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Geoffrey Hinton official biography search",
+      "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Dropout event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014%20Dropout%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Dropout Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Dropout%202014&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Dropout Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dropout%202014",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Dropout publication search",
+      "url": "https://www.google.com/search?q=2014%20Dropout%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Dropout scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014%20Dropout%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "finalUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "savedPath": "pages/001.dropout-a-simple-way-to-prevent-neural-networks-from-overfitting.html",
+      "fetchedAt": "2026-07-03T11:09:08.638Z"
+    },
+    {
+      "label": "Improving neural networks by preventing co-adaptation",
+      "sourceUrl": "https://arxiv.org/abs/1207.0580",
+      "finalUrl": "https://arxiv.org/abs/1207.0580",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1207.0580] Improving neural networks by preventing co-adaptation of feature detectors",
+      "savedPath": "pages/002.improving-neural-networks-by-preventing-co-adaptation.html",
+      "fetchedAt": "2026-07-03T11:09:09.202Z"
+    },
+    {
+      "label": "PyTorch torch.nn.Dropout",
+      "sourceUrl": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+      "finalUrl": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Redirecting&hellip;",
+      "savedPath": "pages/003.pytorch-torch.nn.dropout.html",
+      "fetchedAt": "2026-07-03T11:09:09.779Z"
+    },
+    {
+      "label": "University of Toronto personal page",
+      "sourceUrl": "https://www.cs.utoronto.ca/~nitish/",
+      "finalUrl": "https://www.cs.utoronto.ca/~nitish/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Nitish Srivastava",
+      "savedPath": "pages/004.university-of-toronto-personal-page.html",
+      "fetchedAt": "2026-07-03T11:09:12.054Z"
+    },
+    {
+      "label": "Nitish Srivastava Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Nitish%20Srivastava%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Nitish%20Srivastava%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.nitish-srivastava-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:09:13.335Z"
+    },
+    {
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.geoffrey-hinton-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:09:15.253Z"
+    },
+    {
+      "label": "Dropout Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Dropout%202014&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Dropout%202014&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.dropout-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:09:17.206Z"
+    },
+    {
+      "label": "Dropout Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Dropout%202014",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Dropout%202014",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.dropout-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:09:17.750Z"
+    }
+  ]
+}

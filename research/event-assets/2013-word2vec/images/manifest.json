@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:03.670Z",
+  "eventKey": "2013-word2vec",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2013-word2vec",
+      "label": "IEEE Signal Processing Society newsletter image for Mikolov.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.ieee-signal-processing-society-newsletter-image-for-mikolov.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 10683,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "IEEE SPS newsletter image; rights not stated.",
+      "downloadedAt": "2026-07-03T11:17:03.366Z"
+    },
+    {
+      "eventKey": "2013-word2vec",
+      "label": "Local redraw for Word2Vec, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1301.3781",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-word2vec-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1300,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:17:03.670Z"
+    }
+  ]
+}

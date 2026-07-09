@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:00.542Z",
+  "eventKey": "2006-dbn",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Geoffrey Hinton",
+      "role": "Co-author of deep belief net learning",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Geoffrey Hinton portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Geoffrey Hinton Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Geoffrey Hinton official biography search",
+          "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Deep Belief Network event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2006%20Deep%20Belief%20Network%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Belief Network Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Belief%20Network%202006&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Belief Network Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Belief%20Network%202006",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Deep Belief Network publication search",
+      "url": "https://www.google.com/search?q=2006%20Deep%20Belief%20Network%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Deep Belief Network scholar search",
+      "url": "https://scholar.google.com/scholar?q=2006%20Deep%20Belief%20Network%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Geoffrey Hinton portrait",
+        "zh": "杰弗里·辛顿 肖像"
+      },
+      "subcaption": {
+        "en": "Photo from Hinton's University of Toronto page.",
+        "zh": "来自 辛顿 多伦多大学页面的人物图。"
+      },
+      "sourceUrl": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+      "sourceLabel": "Geoffrey Hinton photo page",
+      "license": {
+        "en": "University personal photo page; reuse rights not stated.",
+        "zh": "University personal photo page; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Stacked RBM pretraining",
+        "zh": "堆叠 RBM 预训练"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+        "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "sourceLabel": "A Fast Learning Algorithm for Deep Belief Nets",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Pretrain then fine-tune",
+        "zh": "预训练后微调"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+        "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "sourceLabel": "A Fast Learning Algorithm for Deep Belief Nets",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Fast Learning Algorithm for Deep Belief Nets",
+        "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

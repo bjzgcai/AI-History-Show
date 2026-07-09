@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Bernhard Scholkopf",
+        "zh": "伯恩哈德·舍尔科普夫"
+      },
+      "role": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+          "license": {
+            "en": "Creative Commons Attribution, per Wikimedia Commons.",
+            "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Klaus-Robert Muller",
+        "zh": "克劳斯-罗伯特·穆勒"
+      },
+      "role": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+          "license": {
+            "en": "Creative Commons Attribution, per Wikimedia Commons.",
+            "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

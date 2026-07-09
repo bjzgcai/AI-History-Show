@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:11.165Z",
+  "eventKey": "1973-prolog",
+  "year": "1973",
+  "title": {
+    "en": "PROLOG",
+    "zh": "PROLOG"
+  },
+  "location": {
+    "name": {
+      "en": "Aix-Marseille University and University of Edinburgh",
+      "zh": "艾克斯-马赛大学与爱丁堡大学"
+    },
+    "country": {
+      "en": "Marseille, France and Edinburgh, United Kingdom",
+      "zh": "法国马赛与英国爱丁堡"
+    },
+    "coordinates": [
+      43.3047,
+      5.3771
+    ]
+  },
+  "description": {
+    "en": "<p>PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.</p>",
+    "zh": "<p>PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Alain Colmerauer portrait",
+        "zh": "阿兰·科尔梅罗尔 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category.",
+        "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+      "license": {
+        "en": "License stated on Commons file page.",
+        "zh": "License stated on Commons file page."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Query proof tree",
+        "zh": "查询证明树"
+      },
+      "subcaption": {
+        "en": "Local redraw for PROLOG, based on the listed source material.",
+        "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "ACM SIGPLAN Notices",
+        "zh": "《ACM SIGPLAN 通讯》"
+      },
+      "sourceUrl": "https://doi.org/10.1145/155360.155362",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Unification trace",
+        "zh": "合一轨迹"
+      },
+      "subcaption": {
+        "en": "Local redraw for PROLOG, based on the listed source material.",
+        "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "ACM SIGPLAN Notices",
+        "zh": "《ACM SIGPLAN 通讯》"
+      },
+      "sourceUrl": "https://doi.org/10.1145/155360.155362",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Alain Colmerauer",
+        "type": "portrait-search",
+        "label": "Alain Colmerauer portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alain%20Colmerauer%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alain Colmerauer",
+        "type": "commons-portrait-search",
+        "label": "Alain Colmerauer Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alain%20Colmerauer%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Robert Kowalski",
+        "type": "portrait-search",
+        "label": "Robert Kowalski portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Robert%20Kowalski%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Robert Kowalski",
+        "type": "commons-portrait-search",
+        "label": "Robert Kowalski Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kowalski%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "PROLOG event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1973%20PROLOG%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "PROLOG Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=PROLOG%201973&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "PROLOG Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=PROLOG%201973",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "PROLOG publication search",
+        "url": "https://www.google.com/search?q=1973%20PROLOG%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "PROLOG scholar search",
+        "url": "https://scholar.google.com/scholar?q=1973%20PROLOG%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

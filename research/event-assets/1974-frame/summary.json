@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:45.742Z",
+  "eventKey": "1974-frame",
+  "year": "1974",
+  "title": {
+    "en": "Frame",
+    "zh": "框架"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "description": {
+    "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>",
+    "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Marvin Minsky portrait",
+        "zh": "马文·明斯基 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from MIT News obituary.",
+        "zh": "来自 麻省理工学院 新闻 讣闻的人物图。"
+      },
+      "sourceName": {
+        "en": "MIT News",
+        "zh": "麻省理工学院 新闻"
+      },
+      "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "license": {
+        "en": "MIT News image; terms stated on MIT News media page.",
+        "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Slot-default frame card",
+        "zh": "槽与默认值框架卡"
+      },
+      "subcaption": {
+        "en": "Local redraw for Frame, based on the listed source material.",
+        "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "MIT Media Lab course archive",
+        "zh": "麻省理工学院 Media Lab course archive"
+      },
+      "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Frame inheritance sketch",
+        "zh": "框架继承草图"
+      },
+      "subcaption": {
+        "en": "Local redraw for Frame, based on the listed source material.",
+        "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "MIT Media Lab course archive",
+        "zh": "麻省理工学院 Media Lab course archive"
+      },
+      "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Marvin Minsky",
+        "type": "portrait-search",
+        "label": "Marvin Minsky portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Marvin%20Minsky%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Marvin Minsky",
+        "type": "commons-portrait-search",
+        "label": "Marvin Minsky Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Frame event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1974%20Frame%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Frame Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Frame%201974&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Frame Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Frame%201974",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Frame publication search",
+        "url": "https://www.google.com/search?q=1974%20Frame%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Frame scholar search",
+        "url": "https://scholar.google.com/scholar?q=1974%20Frame%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

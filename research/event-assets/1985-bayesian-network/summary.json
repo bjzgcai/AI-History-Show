@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:20.888Z",
+  "eventKey": "1985-bayesian-network",
+  "year": "1985",
+  "title": {
+    "en": "Bayesian Network",
+    "zh": "贝叶斯网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, Los Angeles",
+      "zh": "加州大学洛杉矶分校"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      34.0689,
+      -118.4452
+    ]
+  },
+  "description": {
+    "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>",
+    "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Judea Pearl portrait",
+        "zh": "朱迪亚·珀尔 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Wikimedia Commons NIPS 2013 image.",
+        "zh": "来自 维基共享资源 NIPS 2013 图片的人物图。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+      "license": {
+        "en": "Creative Commons license stated on Commons file page.",
+        "zh": "Creative Commons license stated on Commons file page."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Bayesian network DAG",
+        "zh": "贝叶斯网络 DAG"
+      },
+      "subcaption": {
+        "en": "Local redraw for Bayesian Network, based on the listed source material.",
+        "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "UCLA Computer Science",
+        "zh": "加州大学洛杉矶分校 Computer 《科学》"
+      },
+      "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Evidence message passing",
+        "zh": "证据消息传递"
+      },
+      "subcaption": {
+        "en": "Local redraw for Bayesian Network, based on the listed source material.",
+        "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "UCLA Computer Science",
+        "zh": "加州大学洛杉矶分校 Computer 《科学》"
+      },
+      "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Judea Pearl",
+        "type": "portrait-search",
+        "label": "Judea Pearl portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Judea%20Pearl%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Judea Pearl",
+        "type": "commons-portrait-search",
+        "label": "Judea Pearl Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Judea%20Pearl%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Bayesian Network event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1985%20Bayesian%20Network%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Bayesian Network Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Bayesian%20Network%201985&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Bayesian Network Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Bayesian%20Network%201985",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Bayesian Network publication search",
+        "url": "https://www.google.com/search?q=1985%20Bayesian%20Network%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Bayesian Network scholar search",
+        "url": "https://scholar.google.com/scholar?q=1985%20Bayesian%20Network%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

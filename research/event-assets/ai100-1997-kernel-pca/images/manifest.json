@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:17.956Z",
+  "eventKey": "ai100-1997-kernel-pca",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1997-kernel-pca",
+      "label": "Co-author of Kernel PCA",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+      "finalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+      "localPath": "images/001.co-author-of-kernel-pca.png",
+      "pageSnapshot": "",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 2268,
+      "status": "downloaded-http-error",
+      "httpStatus": 429,
+      "usage": "Achievement visual material",
+      "rights": "Creative Commons Attribution, per Wikimedia Commons.",
+      "downloadedAt": "2026-07-03T11:58:17.651Z"
+    },
+    {
+      "eventKey": "ai100-1997-kernel-pca",
+      "label": "Original local explainer of kernel PCA embedding.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1162/089976698300017467",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-kernel-pca-embedding.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1520,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:58:17.956Z"
+    }
+  ]
+}

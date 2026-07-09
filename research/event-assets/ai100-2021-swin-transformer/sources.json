@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:05:15.204Z",
+  "eventKey": "ai100-2021-swin-transformer",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "url": "https://arxiv.org/abs/2103.14030",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICCV open-access paper page",
+      "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "Microsoft Swin Transformer repository",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Ze Liu homepage",
+      "url": "https://zeliu98.github.io/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ze Liu Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ze%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Swin Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Swin%20Transformer%202021&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Swin Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Swin%20Transformer%202021",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2021%20Swin%20Transformer%20Ze%20Liu%20AI%20history%20source%20images",
+      "query": "2021 Swin Transformer Ze Liu AI history source images",
+      "eventKey": "ai100-2021-swin-transformer"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20Swin%20Transformer%20Ze%20Liu%20AI%20history%20source%20images",
+      "query": "2021 Swin Transformer Ze Liu AI history source images",
+      "eventKey": "ai100-2021-swin-transformer"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2021%20Swin%20Transformer%20Ze%20Liu%20AI%20history%20source%20images",
+      "query": "2021 Swin Transformer Ze Liu AI history source images",
+      "eventKey": "ai100-2021-swin-transformer"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Ze Liu portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Ze%20Liu%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ze Liu Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ze%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Ze Liu official biography search",
+      "url": "https://www.google.com/search?q=Ze%20Liu%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Swin Transformer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2021%20Swin%20Transformer%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Swin Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Swin%20Transformer%202021&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Swin Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Swin%20Transformer%202021",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Swin Transformer publication search",
+      "url": "https://www.google.com/search?q=2021%20Swin%20Transformer%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Swin Transformer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2021%20Swin%20Transformer%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "sourceUrl": "https://arxiv.org/abs/2103.14030",
+      "finalUrl": "https://arxiv.org/abs/2103.14030",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[2103.14030] Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "savedPath": "pages/001.swin-transformer-hierarchical-vision-transformer-using-shifted-windows.html",
+      "fetchedAt": "2026-07-03T12:05:15.582Z"
+    },
+    {
+      "label": "ICCV open-access paper page",
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "ICCV 2021 Open Access Repository",
+      "savedPath": "pages/002.iccv-open-access-paper-page.html",
+      "fetchedAt": "2026-07-03T12:05:16.794Z"
+    },
+    {
+      "label": "Microsoft Swin Transformer repository",
+      "sourceUrl": "https://github.com/microsoft/Swin-Transformer",
+      "finalUrl": "https://github.com/microsoft/Swin-Transformer",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation for &quot;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows&quot;. · GitHub",
+      "savedPath": "pages/003.microsoft-swin-transformer-repository.html",
+      "fetchedAt": "2026-07-03T12:05:18.048Z"
+    },
+    {
+      "label": "Ze Liu homepage",
+      "sourceUrl": "https://zeliu98.github.io/",
+      "finalUrl": "https://zeliu98.github.io/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Ze Liu (刘泽)",
+      "savedPath": "pages/004.ze-liu-homepage.html",
+      "fetchedAt": "2026-07-03T12:05:19.090Z"
+    },
+    {
+      "label": "Ze Liu Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ze%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ze%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.ze-liu-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:20.359Z"
+    },
+    {
+      "label": "Swin Transformer Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Swin%20Transformer%202021&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Swin%20Transformer%202021&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.swin-transformer-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:05:21.649Z"
+    },
+    {
+      "label": "Swin Transformer Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Swin%20Transformer%202021",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Swin%20Transformer%202021",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.swin-transformer-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:05:22.340Z"
+    }
+  ]
+}

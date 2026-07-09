@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:04.610Z",
+  "eventKey": "ai100-1970-ridge",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Arthur Hoerl",
+      "role": "Co-author of ridge regression",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Arthur Hoerl portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Arthur%20Hoerl%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Arthur Hoerl Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Arthur%20Hoerl%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Arthur Hoerl official biography search",
+          "url": "https://www.google.com/search?q=Arthur%20Hoerl%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Robert Kennard",
+      "role": "Co-author of ridge regression",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Robert Kennard portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Robert%20Kennard%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Robert Kennard Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kennard%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Robert Kennard official biography search",
+          "url": "https://www.google.com/search?q=Robert%20Kennard%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Ridge event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1970%20Ridge%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Ridge Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ridge%201970&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Ridge Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Ridge%201970",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Ridge publication search",
+      "url": "https://www.google.com/search?q=1970%20Ridge%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Ridge scholar search",
+      "url": "https://scholar.google.com/scholar?q=1970%20Ridge%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Arthur Hoerl family context",
+        "zh": "阿瑟·霍尔家庭背景图"
+      },
+      "subcaption": {
+        "en": "Co-author of ridge regression",
+        "zh": "岭回归共同作者"
+      },
+      "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+      "sourceLabel": "University of Delaware",
+      "license": {
+        "en": "University of Delaware image; reuse rights not stated.",
+        "zh": "特拉华大学图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Ridge shrinkage path",
+        "zh": "岭回归收缩路径"
+      },
+      "subcaption": {
+        "en": "Original local explainer of L2 coefficient shrinkage.",
+        "zh": "关于 L2 系数收缩的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+      "sourceLabel": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "University of Delaware",
+        "url": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+        "url": "https://doi.org/10.1080/00401706.1970.10488634",
+        "usage": ""
+      },
+      {
+        "type": "Paper PDF",
+        "label": "Open PDF copy of the Technometrics paper",
+        "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

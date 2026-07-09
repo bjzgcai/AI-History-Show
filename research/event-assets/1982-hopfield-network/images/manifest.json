@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:06.998Z",
+  "eventKey": "1982-hopfield-network",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1982-hopfield-network",
+      "label": "Nobel Prize profile portrait for Hopfield.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.nobel-prize-profile-portrait-for-hopfield.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 33913,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Nobel Prize image; rights not stated.",
+      "downloadedAt": "2026-07-03T11:09:06.693Z"
+    },
+    {
+      "eventKey": "1982-hopfield-network",
+      "label": "Local redraw for Hopfield Network, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1073/pnas.79.8.2554",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-hopfield-network-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 836,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:09:06.998Z"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:04:24.422Z",
+  "eventKey": "1966-eliza",
+  "year": "1966",
+  "title": {
+    "en": "ELIZA",
+    "zh": "ELIZA"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "description": {
+    "en": "<p>ELIZA showed how far simple language pattern matching could go in producing the feeling of conversation. Its DOCTOR script reflected user phrases back as questions, making the interaction memorable precisely because the mechanism was shallow. The program became a landmark in chatbot history and in debates about anthropomorphizing machines.</p>",
+    "zh": "<p>ELIZA 展示了简单语言模式匹配在制造“对话感”方面能走多远。它的 DOCTOR 脚本会把用户短语改写成问题反射回来，机制很浅，却让互动令人印象深刻。它成为聊天机器人史和“机器拟人化”争论中的标志性案例。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Joseph Weizenbaum portrait",
+        "zh": "约瑟夫·魏岑鲍姆 肖像"
+      },
+      "subcaption": {
+        "en": "MIT News portrait used in Weizenbaum’s obituary.",
+        "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。"
+      },
+      "sourceName": {
+        "en": "MIT News",
+        "zh": "麻省理工学院 新闻"
+      },
+      "sourceUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+      "license": {
+        "en": "MIT News image; rights not stated.",
+        "zh": "麻省理工学院 新闻 image; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "DOCTOR script rewrite",
+        "zh": "DOCTOR 脚本改写"
+      },
+      "subcaption": {
+        "en": "Local redraw for ELIZA, based on the listed source material.",
+        "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Communications of the ACM",
+        "zh": "《ACM 通讯》"
+      },
+      "sourceUrl": "https://doi.org/10.1145/365153.365168",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Terminal dialog",
+        "zh": "终端对话"
+      },
+      "subcaption": {
+        "en": "Local redraw for ELIZA, based on the listed source material.",
+        "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Communications of the ACM",
+        "zh": "《ACM 通讯》"
+      },
+      "sourceUrl": "https://doi.org/10.1145/365153.365168",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Joseph Weizenbaum",
+        "type": "portrait-search",
+        "label": "Joseph Weizenbaum portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Joseph%20Weizenbaum%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Joseph Weizenbaum",
+        "type": "commons-portrait-search",
+        "label": "Joseph Weizenbaum Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Weizenbaum%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "ELIZA event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1966%20ELIZA%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "ELIZA Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=ELIZA%201966&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "ELIZA Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=ELIZA%201966",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "ELIZA publication search",
+        "url": "https://www.google.com/search?q=1966%20ELIZA%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "ELIZA scholar search",
+        "url": "https://scholar.google.com/scholar?q=1966%20ELIZA%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

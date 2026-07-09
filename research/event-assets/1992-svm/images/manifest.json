@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:02:34.985Z",
+  "eventKey": "1992-svm",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1992-svm",
+      "label": "University Paris-Saclay article image about Guyon and support vector machines.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.university-paris-saclay-article-image-about-guyon-and-support-vector-machines.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 477302,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / SVM co-inventor portrait",
+      "rights": "University news image; rights not stated.",
+      "downloadedAt": "2026-07-03T11:02:34.681Z"
+    },
+    {
+      "eventKey": "1992-svm",
+      "label": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.distinct-local-redraw-for-support-vector-machines-based-on-the-related-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1204,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct visual card",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:02:34.985Z"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:39.421Z",
+  "eventKey": "2008-tsne",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Visualizing Data using t-SNE",
+      "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "usage": ""
+    },
+    {
+      "type": "Author page",
+      "label": "Laurens van der Maaten homepage",
+      "url": "https://lvdmaaten.github.io/",
+      "usage": ""
+    },
+    {
+      "type": "Guide",
+      "label": "How to Use t-SNE Effectively, Distill",
+      "url": "https://distill.pub/2016/misread-tsne/",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Laurens van der Maaten Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Laurens%20van%20der%20Maaten%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "t-SNE Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=t-SNE%202008&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "t-SNE Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=t-SNE%202008",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2008%20t-SNE%20Laurens%20van%20der%20Maaten%20AI%20history%20source%20images",
+      "query": "2008 t-SNE Laurens van der Maaten AI history source images",
+      "eventKey": "2008-tsne"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2008%20t-SNE%20Laurens%20van%20der%20Maaten%20AI%20history%20source%20images",
+      "query": "2008 t-SNE Laurens van der Maaten AI history source images",
+      "eventKey": "2008-tsne"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2008%20t-SNE%20Laurens%20van%20der%20Maaten%20AI%20history%20source%20images",
+      "query": "2008 t-SNE Laurens van der Maaten AI history source images",
+      "eventKey": "2008-tsne"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Laurens van der Maaten portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Laurens%20van%20der%20Maaten%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Laurens van der Maaten Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Laurens%20van%20der%20Maaten%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Laurens van der Maaten official biography search",
+      "url": "https://www.google.com/search?q=Laurens%20van%20der%20Maaten%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "t-SNE event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2008%20t-SNE%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "t-SNE Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=t-SNE%202008&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "t-SNE Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=t-SNE%202008",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "t-SNE publication search",
+      "url": "https://www.google.com/search?q=2008%20t-SNE%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "t-SNE scholar search",
+      "url": "https://scholar.google.com/scholar?q=2008%20t-SNE%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Visualizing Data using t-SNE",
+      "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "finalUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Visualizing Data using t-SNE",
+      "savedPath": "pages/001.visualizing-data-using-t-sne.html",
+      "fetchedAt": "2026-07-03T11:50:40.757Z"
+    },
+    {
+      "label": "Laurens van der Maaten homepage",
+      "sourceUrl": "https://lvdmaaten.github.io/",
+      "finalUrl": "https://lvdmaaten.github.io/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Laurens van der Maaten &#8211; Laurens van der Maaten",
+      "savedPath": "pages/002.laurens-van-der-maaten-homepage.html",
+      "fetchedAt": "2026-07-03T11:50:41.757Z"
+    },
+    {
+      "label": "How to Use t-SNE Effectively, Distill",
+      "sourceUrl": "https://distill.pub/2016/misread-tsne/",
+      "finalUrl": "https://distill.pub/2016/misread-tsne/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Use t-SNE Effectively",
+      "savedPath": "pages/003.how-to-use-t-sne-effectively-distill.html",
+      "fetchedAt": "2026-07-03T11:50:43.237Z"
+    },
+    {
+      "label": "Laurens van der Maaten Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Laurens%20van%20der%20Maaten%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Laurens%20van%20der%20Maaten%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.laurens-van-der-maaten-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:44.744Z"
+    },
+    {
+      "label": "t-SNE Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=t-SNE%202008&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=t-SNE%202008&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.t-sne-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:50:45.869Z"
+    },
+    {
+      "label": "t-SNE Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=t-SNE%202008",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=t-SNE%202008",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.t-sne-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:46.471Z"
+    }
+  ]
+}

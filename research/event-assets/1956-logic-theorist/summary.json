@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:19.820Z",
+  "eventKey": "1956-logic-theorist",
+  "year": 1956,
+  "title": {
+    "en": "Logic Theorist",
+    "zh": "逻辑理论家"
+  },
+  "location": {
+    "name": {
+      "en": "RAND Corporation / Carnegie Institute of Technology",
+      "zh": "RAND Corporation / 卡内基理工学院"
+    },
+    "country": {
+      "en": "Santa Monica and Pittsburgh, United States",
+      "zh": "美国，圣塔莫尼卡与匹兹堡"
+    },
+    "coordinates": [
+      34.0195,
+      -118.4912
+    ]
+  },
+  "description": {
+    "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>",
+    "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Herbert A. Simon portrait",
+        "zh": "赫伯特·A·西蒙 肖像"
+      },
+      "subcaption": {
+        "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators.",
+        "zh": "维基共享资源 收录的 赫伯特·A·西蒙 肖像，他是 Logic Theorist 共同创建者之一。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+      "license": {
+        "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+        "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+      },
+      "usage": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Logic Theorist proof search",
+        "zh": "Logic Theorist 证明搜索"
+      },
+      "subcaption": {
+        "en": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain.",
+        "zh": "原创解释图，展示目标定理、启发式搜索、符号变换和证明链。"
+      },
+      "sourceName": {
+        "en": "Local explainer based on Newell and Simon 1956",
+        "zh": "Local explainer based on Newell and Simon 1956"
+      },
+      "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+      "license": {
+        "en": "Original local explainer; source text and figure reuse rights not used.",
+        "zh": "Original local explainer; source text and figure reuse rights not used."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Allen Newell",
+        "type": "portrait-search",
+        "label": "Allen Newell portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Allen%20Newell%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Allen Newell",
+        "type": "commons-portrait-search",
+        "label": "Allen Newell Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Allen%20Newell%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Herbert A. Simon",
+        "type": "portrait-search",
+        "label": "Herbert A. Simon portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Herbert%20A.%20Simon%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Herbert A. Simon",
+        "type": "commons-portrait-search",
+        "label": "Herbert A. Simon Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Herbert%20A.%20Simon%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "J. C. Shaw",
+        "type": "portrait-search",
+        "label": "J. C. Shaw portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=J.%20C.%20Shaw%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "J. C. Shaw",
+        "type": "commons-portrait-search",
+        "label": "J. C. Shaw Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=J.%20C.%20Shaw%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Logic Theorist event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1956%20Logic%20Theorist%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Logic Theorist Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Logic%20Theorist%201956&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Logic Theorist Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Logic%20Theorist%201956",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Logic Theorist publication search",
+        "url": "https://www.google.com/search?q=1956%20Logic%20Theorist%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Logic Theorist scholar search",
+        "url": "https://scholar.google.com/scholar?q=1956%20Logic%20Theorist%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

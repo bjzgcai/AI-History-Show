@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:01:24.286Z",
+  "eventKey": "ai100-2012-alexnet",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+      "usage": ""
+    },
+    {
+      "type": "Paper PDF",
+      "label": "NeurIPS full paper PDF",
+      "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "ImageNet Large Scale Visual Recognition Challenge",
+      "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+      "usage": ""
+    },
+    {
+      "type": "Context",
+      "label": "AlexNet overview",
+      "url": "https://en.wikipedia.org/wiki/AlexNet",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/figures/alex-krizhevsky.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alex Krizhevsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlexNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlexNet%202012&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlexNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlexNet%202012",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2012%20AlexNet%20Alex%20Krizhevsky%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2012 AlexNet Alex Krizhevsky Geoffrey Hinton AI history source images",
+      "eventKey": "ai100-2012-alexnet"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2012%20AlexNet%20Alex%20Krizhevsky%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2012 AlexNet Alex Krizhevsky Geoffrey Hinton AI history source images",
+      "eventKey": "ai100-2012-alexnet"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2012%20AlexNet%20Alex%20Krizhevsky%20Geoffrey%20Hinton%20AI%20history%20source%20images",
+      "query": "2012 AlexNet Alex Krizhevsky Geoffrey Hinton AI history source images",
+      "eventKey": "ai100-2012-alexnet"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alex Krizhevsky portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alex%20Krizhevsky%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alex Krizhevsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alex Krizhevsky official biography search",
+      "url": "https://www.google.com/search?q=Alex%20Krizhevsky%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Geoffrey Hinton portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Geoffrey%20Hinton%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Geoffrey Hinton official biography search",
+      "url": "https://www.google.com/search?q=Geoffrey%20Hinton%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "AlexNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2012%20AlexNet%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlexNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlexNet%202012&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlexNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlexNet%202012",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "AlexNet publication search",
+      "url": "https://www.google.com/search?q=2012%20AlexNet%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AlexNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2012%20AlexNet%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+      "finalUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "savedPath": "pages/001.imagenet-classification-with-deep-convolutional-neural-networks.html",
+      "fetchedAt": "2026-07-03T12:01:25.414Z"
+    },
+    {
+      "label": "NeurIPS full paper PDF",
+      "sourceUrl": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+      "finalUrl": "https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/002.neurips-full-paper-pdf.html",
+      "fetchedAt": "2026-07-03T12:01:27.839Z"
+    },
+    {
+      "label": "ImageNet Large Scale Visual Recognition Challenge",
+      "sourceUrl": "https://www.image-net.org/challenges/LSVRC/index.php",
+      "finalUrl": "https://www.image-net.org/challenges/LSVRC/index.php",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "ImageNet",
+      "savedPath": "pages/003.imagenet-large-scale-visual-recognition-challenge.html",
+      "fetchedAt": "2026-07-03T12:01:29.725Z"
+    },
+    {
+      "label": "AlexNet overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/AlexNet",
+      "finalUrl": "https://en.wikipedia.org/wiki/AlexNet",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "AlexNet - Wikipedia",
+      "savedPath": "pages/004.alexnet-overview.html",
+      "fetchedAt": "2026-07-03T12:01:30.196Z"
+    },
+    {
+      "label": "Alex Krizhevsky Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Alex%20Krizhevsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.alex-krizhevsky-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:31.350Z"
+    },
+    {
+      "label": "Geoffrey Hinton Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Geoffrey%20Hinton%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.geoffrey-hinton-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:32.689Z"
+    },
+    {
+      "label": "AlexNet Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=AlexNet%202012&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=AlexNet%202012&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.alexnet-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:01:35.304Z"
+    },
+    {
+      "label": "AlexNet Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=AlexNet%202012",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=AlexNet%202012",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.alexnet-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:01:35.915Z"
+    }
+  ]
+}

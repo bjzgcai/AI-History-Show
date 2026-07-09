@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:51.848Z",
+  "eventKey": "ai100-2016-nas",
+  "year": 2016,
+  "title": {
+    "en": "Neural Architecture Search",
+    "zh": "神经架构搜索"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "Google Brain"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.3861,
+      -122.0839
+    ]
+  },
+  "description": {
+    "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>",
+    "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://barretzoph.github.io/images/headshot.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Barret Zoph portrait",
+        "zh": "巴雷特·佐夫肖像"
+      },
+      "subcaption": {
+        "en": "Neural architecture search lead author",
+        "zh": "神经架构搜索主要作者"
+      },
+      "sourceName": {
+        "en": "Barret Zoph homepage",
+        "zh": "巴雷特·佐夫个人主页"
+      },
+      "sourceUrl": "https://barretzoph.github.io/",
+      "license": {
+        "en": "Profile image; reuse rights not stated.",
+        "zh": "个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Neural Architecture Search explainer",
+        "zh": "神经架构搜索 解释图"
+      },
+      "subcaption": {
+        "en": "Original local explainer for the achievement flow.",
+        "zh": "关于该成就流程的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "OpenReview",
+        "zh": "OpenReview"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1611.01578",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Barret Zoph",
+        "type": "portrait-search",
+        "label": "Barret Zoph portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Barret%20Zoph%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Barret Zoph",
+        "type": "commons-portrait-search",
+        "label": "Barret Zoph Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Barret%20Zoph%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Neural Architecture Search event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2016%20Neural%20Architecture%20Search%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Neural Architecture Search Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Neural%20Architecture%20Search%202016&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Neural Architecture Search Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Neural%20Architecture%20Search%202016",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Neural Architecture Search publication search",
+        "url": "https://www.google.com/search?q=2016%20Neural%20Architecture%20Search%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Neural Architecture Search scholar search",
+        "url": "https://scholar.google.com/scholar?q=2016%20Neural%20Architecture%20Search%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

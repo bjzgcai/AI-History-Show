@@ -1,0 +1,26 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Ian Goodfellow",
+        "zh": "伊恩·古德费洛"
+      },
+      "role": {
+        "en": "GAN inventor",
+        "zh": "GAN发明者"
+      },
+      "portraitCandidates": []
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Proposer of Attention Mechanism",
+        "zh": "注意力机制提出者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

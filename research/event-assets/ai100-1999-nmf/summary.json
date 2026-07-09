@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:17.962Z",
+  "eventKey": "ai100-1999-nmf",
+  "year": 1999,
+  "title": {
+    "en": "NMF",
+    "zh": "非负矩阵分解"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs and MIT",
+      "zh": "贝尔实验室与 MIT"
+    },
+    "country": {
+      "en": "New Jersey and Cambridge, United States",
+      "zh": "美国新泽西州与剑桥"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4015
+    ]
+  },
+  "description": {
+    "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>",
+    "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+      "existsLocally": false,
+      "caption": {
+        "en": "H. Sebastian Seung portrait",
+        "zh": "H. 塞巴斯蒂安·承肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "sourceName": {
+        "en": "Princeton Neuroscience Institute",
+        "zh": "普林斯顿神经科学研究所"
+      },
+      "sourceUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+      "license": {
+        "en": "Princeton profile image; reuse rights not stated.",
+        "zh": "普林斯顿个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Parts-based factorization",
+        "zh": "基于部件的分解"
+      },
+      "subcaption": {
+        "en": "Original local explainer of nonnegative parts-based factorization.",
+        "zh": "关于非负部件分解的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Nature",
+        "zh": "Nature"
+      },
+      "sourceUrl": "https://doi.org/10.1038/44565",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Daniel Lee",
+        "type": "portrait-search",
+        "label": "Daniel Lee portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Daniel%20Lee%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Daniel Lee",
+        "type": "commons-portrait-search",
+        "label": "Daniel Lee Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Daniel%20Lee%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "H. Sebastian Seung",
+        "type": "portrait-search",
+        "label": "H. Sebastian Seung portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=H.%20Sebastian%20Seung%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "H. Sebastian Seung",
+        "type": "commons-portrait-search",
+        "label": "H. Sebastian Seung Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=H.%20Sebastian%20Seung%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "NMF event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1999%20NMF%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "NMF Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=NMF%201999&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "NMF Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=NMF%201999",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "NMF publication search",
+        "url": "https://www.google.com/search?q=1999%20NMF%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "NMF scholar search",
+        "url": "https://scholar.google.com/scholar?q=1999%20NMF%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

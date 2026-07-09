@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:57.282Z",
+  "eventKey": "1980-xcon-r1",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "R1: An Expert in the Computer Systems Domain",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+      "usage": ""
+    },
+    {
+      "type": "Retrospective",
+      "label": "R1 Revisited: Four Years in the Trenches",
+      "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+      "usage": ""
+    },
+    {
+      "type": "Overview",
+      "label": "XCON overview",
+      "url": "https://en.wikipedia.org/wiki/Xcon",
+      "usage": ""
+    },
+    {
+      "type": "Image source",
+      "label": "DEC VAX-11/780 photo",
+      "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+      "usage": "Hardware detail"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John McDermott Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20McDermott%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "XCON-R1 Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=XCON-R1%201978-1980&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "XCON-R1 Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=XCON-R1%201978-1980",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1978-1980%20XCON-R1%20John%20McDermott%20AI%20history%20source%20images",
+      "query": "1978-1980 XCON-R1 John McDermott AI history source images",
+      "eventKey": "1980-xcon-r1"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1978-1980%20XCON-R1%20John%20McDermott%20AI%20history%20source%20images",
+      "query": "1978-1980 XCON-R1 John McDermott AI history source images",
+      "eventKey": "1980-xcon-r1"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1978-1980%20XCON-R1%20John%20McDermott%20AI%20history%20source%20images",
+      "query": "1978-1980 XCON-R1 John McDermott AI history source images",
+      "eventKey": "1980-xcon-r1"
+    },
+    {
+      "type": "portrait-search",
+      "label": "John McDermott portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=John%20McDermott%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John McDermott Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20McDermott%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "John McDermott official biography search",
+      "url": "https://www.google.com/search?q=John%20McDermott%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "XCON-R1 event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1978-1980%20XCON-R1%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "XCON-R1 Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=XCON-R1%201978-1980&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "XCON-R1 Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=XCON-R1%201978-1980",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "XCON-R1 publication search",
+      "url": "https://www.google.com/search?q=1978-1980%20XCON-R1%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "XCON-R1 scholar search",
+      "url": "https://scholar.google.com/scholar?q=1978-1980%20XCON-R1%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "R1: An Expert in the Computer Systems Domain",
+      "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:54:58.202Z"
+    },
+    {
+      "label": "R1 Revisited: Four Years in the Trenches",
+      "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:54:59.033Z"
+    },
+    {
+      "label": "XCON overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Xcon",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T11:55:00.003Z"
+    },
+    {
+      "label": "DEC VAX-11/780 photo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:LCM - DEC VAX 11-780-5 - 01.jpg - Wikimedia Commons",
+      "savedPath": "pages/004.dec-vax-11-780-photo.html",
+      "fetchedAt": "2026-07-03T11:55:01.070Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:VAX 11 780 CPU Backplane.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T11:55:02.182Z"
+    },
+    {
+      "label": "John McDermott Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=John%20McDermott%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=John%20McDermott%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.john-mcdermott-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:55:03.937Z"
+    },
+    {
+      "label": "XCON-R1 Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=XCON-R1%201978-1980&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=XCON-R1%201978-1980&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.xcon-r1-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:55:05.304Z"
+    },
+    {
+      "label": "XCON-R1 Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=XCON-R1%201978-1980",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=XCON-R1%201978-1980",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.xcon-r1-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:55:05.913Z"
+    }
+  ]
+}

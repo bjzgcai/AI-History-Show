@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Song Han",
+        "zh": "韩松"
+      },
+      "role": {
+        "en": "Deep Compression lead author",
+        "zh": "Deep Compression 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+          "sourceUrl": "https://hanlab.mit.edu/songhan",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

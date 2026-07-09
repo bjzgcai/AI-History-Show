@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "John J. Hopfield",
+        "zh": "约翰·J·霍普菲尔德"
+      },
+      "role": {
+        "en": "Inventor of Hopfield networks",
+        "zh": "Hopfield 网络提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+          "sourceUrl": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+          "license": {
+            "en": "Nobel Prize image; rights not stated.",
+            "zh": "Nobel Prize image; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

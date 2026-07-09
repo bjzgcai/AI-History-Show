@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:09.397Z",
+  "eventKey": "ai100-2018-gpt",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Alec Radford",
+      "role": "Lead author of the GPT paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Alec Radford portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Alec%20Radford%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Alec Radford Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Alec%20Radford%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Alec Radford official biography search",
+          "url": "https://www.google.com/search?q=Alec%20Radford%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "GPT event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2018%20GPT%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "GPT Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GPT%202018&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GPT Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GPT%202018",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "GPT publication search",
+      "url": "https://www.google.com/search?q=2018%20GPT%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "GPT scholar search",
+      "url": "https://scholar.google.com/scholar?q=2018%20GPT%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/figures/alec-radford.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Alec Radford portrait",
+        "zh": "亚历克·拉德福德肖像"
+      },
+      "subcaption": {
+        "en": "GPT lead author",
+        "zh": "GPT 主要作者"
+      },
+      "sourceUrl": "resources/images/figures/alec-radford.png",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "GPT next-token pre-training",
+        "zh": "GPT 下一个令牌预训练"
+      },
+      "subcaption": {
+        "en": "Original local explainer of decoder-only generative pre-training.",
+        "zh": "关于解码器式生成预训练的本地原创解释图。"
+      },
+      "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+      "sourceLabel": "Improving Language Understanding by Generative Pre-Training",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/figures/alec-radford.png",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper PDF",
+        "label": "Improving Language Understanding by Generative Pre-Training",
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "OpenAI language unsupervised page",
+        "url": "https://openai.com/index/language-unsupervised/",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:11.239Z",
+  "eventKey": "2016-densenet",
+  "year": 2016,
+  "title": {
+    "en": "DenseNet",
+    "zh": "DenseNet"
+  },
+  "location": {
+    "name": {
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
+    },
+    "country": {
+      "en": "NY, United States",
+      "zh": "美国, 纽约州"
+    },
+    "coordinates": [
+      42.4534,
+      -76.4735
+    ]
+  },
+  "description": {
+    "en": "In 2016, Gao Huang and collaborators proposed DenseNet, connecting each layer to every later layer. By making all previous feature states directly visible, DenseNet increased gradient paths, improved feature reuse and influenced efficient network design.",
+    "zh": "2016年，黄高提出了DenseNet，不只是 恒等通路，而是让所有历史状态对下一层网络显式可见，最大化梯度路径数，也在学术界产生了不小的影响。 技术上，DenseNet可以看做\"无压缩、无遗忘\"的极端 LSTM。 最多训练到201层"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "DenseNet diagram",
+        "zh": "DenseNet 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Gao Huang",
+        "type": "portrait-search",
+        "label": "Gao Huang portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Gao%20Huang%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Gao Huang",
+        "type": "commons-portrait-search",
+        "label": "Gao Huang Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Gao%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "DenseNet event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2016%20DenseNet%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "DenseNet Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=DenseNet%202016&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "DenseNet Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=DenseNet%202016",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "DenseNet publication search",
+        "url": "https://www.google.com/search?q=2016%20DenseNet%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "DenseNet scholar search",
+        "url": "https://scholar.google.com/scholar?q=2016%20DenseNet%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

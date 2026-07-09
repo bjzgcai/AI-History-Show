@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jeffrey Elman",
+        "zh": "杰弗里·埃尔曼"
+      },
+      "role": {
+        "en": "The creator of Simple RNN",
+        "zh": "简单循环神经网络提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Michael Jordan",
+        "zh": "迈克尔·乔丹"
+      },
+      "role": {
+        "en": "The creator of Jordan Network",
+        "zh": "乔丹网络提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

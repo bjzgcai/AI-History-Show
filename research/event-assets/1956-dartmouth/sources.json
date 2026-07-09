@@ -1,0 +1,971 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:28:04.788Z",
+  "eventKey": "1956-dartmouth",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "primary",
+      "label": "Dartmouth AI proposal archive",
+      "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+      "usage": "Reference source for the original 1956 proposal text.",
+      "status": "seed"
+    },
+    {
+      "type": "primary-reprint",
+      "label": "Wired reprint of the Dartmouth proposal",
+      "url": "https://www.wired.com/2012/10/dead-media-beat-a-proposal-for-the-dartmouth-summer-research-project-on-artificial-intelligence/",
+      "usage": "Readable reprint of the 1955 proposal; verify against Stanford original.",
+      "status": "seed"
+    },
+    {
+      "type": "institution",
+      "label": "Dartmouth College AI history note",
+      "url": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+      "usage": "Institutional background and exhibit-friendly framing.",
+      "status": "seed"
+    },
+    {
+      "type": "event-photo",
+      "label": "IEEE Spectrum Dartmouth workshop group photo analysis",
+      "url": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+      "usage": "Identifies the 1956 Dartmouth group photo and image credit; permission must be checked before production use.",
+      "status": "seed"
+    },
+    {
+      "type": "retrospective-publication",
+      "label": "AI Magazine report on AI@50",
+      "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1911",
+      "usage": "Published retrospective report for the 50th anniversary Dartmouth AI conference.",
+      "status": "seed"
+    },
+    {
+      "type": "history-paper",
+      "label": "IEEE Annals article on cybernetics and the Dartmouth Conference",
+      "url": "https://doi.org/10.1109/MAHC.2010.44",
+      "usage": "Scholarly historical analysis of the Dartmouth conference context.",
+      "status": "seed"
+    },
+    {
+      "type": "archive",
+      "label": "Ray Solomonoff Dartmouth notes archive",
+      "url": "http://raysolomonoff.com/dartmouth/",
+      "usage": "Archive hub for participant notes, attendance lists, letters, and related materials.",
+      "status": "seed"
+    },
+    {
+      "type": "archive-document",
+      "label": "Ray Solomonoff 1956 participant list PDF",
+      "url": "http://raysolomonoff.com/dartmouth/boxbdart/dart56ray812825who.pdf",
+      "usage": "Participant-list evidence from the Solomonoff archive.",
+      "status": "seed"
+    },
+    {
+      "type": "archive-document",
+      "label": "Trenchard More 1956 Dartmouth notes PDF",
+      "url": "http://raysolomonoff.com/dartmouth/boxa/dart56more5th6thweeks.pdf",
+      "usage": "Workshop notes that help reconstruct sessions and participants.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "ACM A.M. Turing Award profile - John McCarthy",
+      "url": "https://amturing.acm.org/award_winners/mccarthy_1118322.cfm",
+      "usage": "Biographical source for John McCarthy.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "Stanford obituary - John McCarthy",
+      "url": "https://news.stanford.edu/stories/2011/10/john-mccarthy-obit-102511",
+      "usage": "Institutional biography and legacy source for John McCarthy.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "ACM A.M. Turing Award profile - Marvin Minsky",
+      "url": "https://amturing.acm.org/award_winners/minsky_7440781.cfm",
+      "usage": "Biographical source for Marvin Minsky.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "MIT obituary - Marvin Minsky",
+      "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "usage": "Institutional biography and legacy source for Marvin Minsky.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "Computer History Museum fellow profile - Marvin Minsky",
+      "url": "https://computerhistory.org/profile/marvin-minsky/",
+      "usage": "Museum biography and potential portrait lead for Marvin Minsky.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "Claude Shannon profile - IEEE Information Theory Society",
+      "url": "https://www.itsoc.org/about/shannon",
+      "usage": "Biographical source and image lead for Claude Shannon.",
+      "status": "seed"
+    },
+    {
+      "type": "person",
+      "label": "Nathaniel Rochester biography index",
+      "url": "https://en.wikipedia.org/wiki/Nathaniel_Rochester_(computer_scientist)",
+      "usage": "Starting point for Nathaniel Rochester biography and references.",
+      "status": "seed"
+    },
+    {
+      "type": "image-search",
+      "label": "Wikimedia Commons search - Dartmouth AI workshop",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Dartmouth+AI+workshop&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidate search; verify each file page license.",
+      "status": "seed"
+    },
+    {
+      "type": "image-search",
+      "label": "Wikimedia Commons category - Dartmouth Hall",
+      "url": "https://commons.wikimedia.org/wiki/Category:Dartmouth_Hall",
+      "usage": "Venue/background image candidates; verify period relevance and license.",
+      "status": "seed"
+    },
+    {
+      "type": "image-search",
+      "label": "Library of Congress search - Dartmouth College 1956",
+      "url": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College%201956",
+      "usage": "Historical campus image candidate search; verify rights statement.",
+      "status": "seed"
+    },
+    {
+      "type": "portrait-category",
+      "label": "Wikimedia Commons category - John McCarthy",
+      "url": "https://commons.wikimedia.org/wiki/Category:John_McCarthy_(computer_scientist)",
+      "usage": "Commons category with multiple portrait candidates and the Dartmouth proposal PDF.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-file",
+      "label": "John McCarthy Stanford portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "usage": "Candidate portrait file page; verify license and photographer before production use.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-file",
+      "label": "John McCarthy Stanford 2006 - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_(computer_scientist)_Stanford_2006_(272020300).jpg",
+      "usage": "Candidate portrait file page; verify license and date fit.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John McCarthy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-category",
+      "label": "Wikimedia Commons category - Marvin Minsky",
+      "url": "https://commons.wikimedia.org/wiki/Category:Marvin_Minsky",
+      "usage": "Commons category with portrait, patent, and artifact candidates.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-file",
+      "label": "Marvin Minsky cropped portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky_(cropped).jpg",
+      "usage": "Candidate portrait file page; verify license and crop source.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-file",
+      "label": "Marvin Minsky portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky.jpg",
+      "usage": "Candidate portrait file page; verify license and event/date context.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Marvin Minsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-category",
+      "label": "Wikimedia Commons category - Claude Shannon",
+      "url": "https://commons.wikimedia.org/wiki/Category:Claude_Shannon",
+      "usage": "Commons category with portrait, machine, publication, and artifact candidates.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "portrait-file",
+      "label": "C. E. Shannon Tekniska museet portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069_(cropped).jpg",
+      "usage": "Candidate portrait file page; verify museum credit and license.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "artifact-photo",
+      "label": "Theseus Maze by Claude Shannon - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Theseus_Maze_by_Claude_Shannon,_1952_-_MIT_Museum_-_DSC03702.JPG",
+      "usage": "Artifact photo candidate for Shannon context; verify MIT Museum/Commons license.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Claude Shannon Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Claude%20Shannon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Nathaniel Rochester Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Nathaniel%20Rochester%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "campus-photo-category",
+      "label": "Dartmouth College photo candidates - Commons category",
+      "url": "https://commons.wikimedia.org/wiki/Category:Dartmouth_College",
+      "usage": "Campus image pool for contextual backgrounds; verify each file page.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-photo-search",
+      "label": "Library of Congress Dartmouth College photo search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College",
+      "usage": "Historical campus photo search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Dartmouth Workshop - AI Is Born! Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Dartmouth Workshop - AI Is Born! Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "publication-scan",
+      "label": "Dartmouth proposal PDF - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:A_Proposal_for_the_Dartmouth_Summer_Research_Project_on_Artificial_Intelligence,_by_John_McCarthy_et_al,_1955.pdf",
+      "usage": "Candidate source for proposal-cover visual; verify file page license and source.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "publication-image",
+      "label": "The Mathematical Theory of Communication title page - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Mathematical_Theory_Of_Communication_title_page.jpg",
+      "usage": "Contextual publication image for Claude Shannon; verify relevance and license.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1956%20Dartmouth%20Workshop%20-%20AI%20Is%20Born!%20John%20McCarthy%20Marvin%20Minsky%20Claude%20Shannon%20Nathaniel%20Rochester%20AI%20history%20source%20images",
+      "query": "1956 Dartmouth Workshop - AI Is Born! John McCarthy Marvin Minsky Claude Shannon Nathaniel Rochester AI history source images",
+      "eventKey": "1956-dartmouth"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1956%20Dartmouth%20Workshop%20-%20AI%20Is%20Born!%20John%20McCarthy%20Marvin%20Minsky%20Claude%20Shannon%20Nathaniel%20Rochester%20AI%20history%20source%20images",
+      "query": "1956 Dartmouth Workshop - AI Is Born! John McCarthy Marvin Minsky Claude Shannon Nathaniel Rochester AI history source images",
+      "eventKey": "1956-dartmouth"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1956%20Dartmouth%20Workshop%20-%20AI%20Is%20Born!%20John%20McCarthy%20Marvin%20Minsky%20Claude%20Shannon%20Nathaniel%20Rochester%20AI%20history%20source%20images",
+      "query": "1956 Dartmouth Workshop - AI Is Born! John McCarthy Marvin Minsky Claude Shannon Nathaniel Rochester AI history source images",
+      "eventKey": "1956-dartmouth"
+    },
+    {
+      "type": "portrait-category",
+      "label": "Wikimedia Commons category - John McCarthy",
+      "url": "https://commons.wikimedia.org/wiki/Category:John_McCarthy_(computer_scientist)",
+      "query": "",
+      "usage": "Commons category with multiple portrait candidates and the Dartmouth proposal PDF."
+    },
+    {
+      "type": "portrait-file",
+      "label": "John McCarthy Stanford portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "query": "",
+      "usage": "Candidate portrait file page; verify license and photographer before production use."
+    },
+    {
+      "type": "portrait-file",
+      "label": "John McCarthy Stanford 2006 - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_(computer_scientist)_Stanford_2006_(272020300).jpg",
+      "query": "",
+      "usage": "Candidate portrait file page; verify license and date fit."
+    },
+    {
+      "type": "portrait-search",
+      "label": "John McCarthy portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=John%20McCarthy%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John McCarthy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "John McCarthy official biography search",
+      "url": "https://www.google.com/search?q=John%20McCarthy%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-category",
+      "label": "Wikimedia Commons category - Marvin Minsky",
+      "url": "https://commons.wikimedia.org/wiki/Category:Marvin_Minsky",
+      "query": "",
+      "usage": "Commons category with portrait, patent, and artifact candidates."
+    },
+    {
+      "type": "portrait-file",
+      "label": "Marvin Minsky cropped portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky_(cropped).jpg",
+      "query": "",
+      "usage": "Candidate portrait file page; verify license and crop source."
+    },
+    {
+      "type": "portrait-file",
+      "label": "Marvin Minsky portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky.jpg",
+      "query": "",
+      "usage": "Candidate portrait file page; verify license and event/date context."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Marvin Minsky portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Marvin%20Minsky%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Marvin Minsky Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Marvin Minsky official biography search",
+      "url": "https://www.google.com/search?q=Marvin%20Minsky%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-category",
+      "label": "Wikimedia Commons category - Claude Shannon",
+      "url": "https://commons.wikimedia.org/wiki/Category:Claude_Shannon",
+      "query": "",
+      "usage": "Commons category with portrait, machine, publication, and artifact candidates."
+    },
+    {
+      "type": "portrait-file",
+      "label": "C. E. Shannon Tekniska museet portrait - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069_(cropped).jpg",
+      "query": "",
+      "usage": "Candidate portrait file page; verify museum credit and license."
+    },
+    {
+      "type": "artifact-photo",
+      "label": "Theseus Maze by Claude Shannon - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Theseus_Maze_by_Claude_Shannon,_1952_-_MIT_Museum_-_DSC03702.JPG",
+      "query": "",
+      "usage": "Artifact photo candidate for Shannon context; verify MIT Museum/Commons license."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Claude Shannon portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Claude%20Shannon%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Claude Shannon Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Claude%20Shannon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Claude Shannon official biography search",
+      "url": "https://www.google.com/search?q=Claude%20Shannon%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Nathaniel Rochester IBM portrait search",
+      "url": "https://www.google.com/search?tbm=isch&q=Nathaniel%20Rochester%20IBM%20portrait",
+      "query": "",
+      "usage": "No stable open portrait found yet; use as a lead only."
+    },
+    {
+      "type": "archive-search",
+      "label": "IBM Archives search - Nathaniel Rochester",
+      "url": "https://www.ibm.com/search?lang=en&cc=us&q=Nathaniel%20Rochester",
+      "query": "",
+      "usage": "Look for IBM-origin biography or photo leads."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Nathaniel Rochester portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Nathaniel%20Rochester%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Nathaniel Rochester Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Nathaniel%20Rochester%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Nathaniel Rochester official biography search",
+      "url": "https://www.google.com/search?q=Nathaniel%20Rochester%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-group-photo",
+      "label": "1956 Dartmouth workshop group photo - IEEE Spectrum article",
+      "url": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+      "query": "",
+      "usage": "Specific group-photo lead. Use article caption/source to verify people, credit, and permission before production use."
+    },
+    {
+      "type": "venue-photo-category",
+      "label": "Dartmouth Hall venue/background candidates - Commons category",
+      "url": "https://commons.wikimedia.org/wiki/Category:Dartmouth_Hall",
+      "query": "",
+      "usage": "Open-license venue/background candidates; verify exact file license and period fit."
+    },
+    {
+      "type": "campus-photo-category",
+      "label": "Dartmouth College photo candidates - Commons category",
+      "url": "https://commons.wikimedia.org/wiki/Category:Dartmouth_College",
+      "query": "",
+      "usage": "Campus image pool for contextual backgrounds; verify each file page."
+    },
+    {
+      "type": "archive-photo-search",
+      "label": "Library of Congress Dartmouth College photo search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College",
+      "query": "",
+      "usage": "Historical campus photo search; verify rights statement."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Dartmouth Workshop - AI Is Born! event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1956%20Dartmouth%20Workshop%20-%20AI%20Is%20Born!%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Dartmouth Workshop - AI Is Born! Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Dartmouth Workshop - AI Is Born! Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-scan",
+      "label": "Dartmouth proposal PDF - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:A_Proposal_for_the_Dartmouth_Summer_Research_Project_on_Artificial_Intelligence,_by_John_McCarthy_et_al,_1955.pdf",
+      "query": "",
+      "usage": "Candidate source for proposal-cover visual; verify file page license and source."
+    },
+    {
+      "type": "publication-image",
+      "label": "The Mathematical Theory of Communication title page - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Mathematical_Theory_Of_Communication_title_page.jpg",
+      "query": "",
+      "usage": "Contextual publication image for Claude Shannon; verify relevance and license."
+    },
+    {
+      "type": "publication-search",
+      "label": "Dartmouth Workshop - AI Is Born! publication search",
+      "url": "https://www.google.com/search?q=1956%20Dartmouth%20Workshop%20-%20AI%20Is%20Born!%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Dartmouth Workshop - AI Is Born! scholar search",
+      "url": "https://scholar.google.com/scholar?q=1956%20Dartmouth%20Workshop%20-%20AI%20Is%20Born!%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Dartmouth AI proposal archive",
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+      "finalUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "A PROPOSAL FOR THE DARTMOUTH SUMMER RESEARCH PROJECT ON ARTIFICIAL INTELLIGENCE",
+      "savedPath": "pages/001.dartmouth-ai-proposal-archive.html",
+      "fetchedAt": "2026-07-03T10:28:05.899Z"
+    },
+    {
+      "label": "Wired reprint of the Dartmouth proposal",
+      "sourceUrl": "https://www.wired.com/2012/10/dead-media-beat-a-proposal-for-the-dartmouth-summer-research-project-on-artificial-intelligence/",
+      "finalUrl": "https://www.wired.com/2012/10/dead-media-beat-a-proposal-for-the-dartmouth-summer-research-project-on-artificial-intelligence/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Dead Media Beat: A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence | WIRED",
+      "savedPath": "pages/002.wired-reprint-of-the-dartmouth-proposal.html",
+      "fetchedAt": "2026-07-03T10:28:07.772Z"
+    },
+    {
+      "label": "Dartmouth College AI history note",
+      "sourceUrl": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+      "finalUrl": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Artificial Intelligence (AI) Coined at Dartmouth | Dartmouth",
+      "savedPath": "pages/003.dartmouth-college-ai-history-note.html",
+      "fetchedAt": "2026-07-03T10:28:09.056Z"
+    },
+    {
+      "label": "IEEE Spectrum Dartmouth workshop group photo analysis",
+      "sourceUrl": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+      "finalUrl": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "The Meeting of the Minds That Launched AI - IEEE Spectrum",
+      "savedPath": "pages/004.ieee-spectrum-dartmouth-workshop-group-photo-analysis.html",
+      "fetchedAt": "2026-07-03T10:28:11.466Z"
+    },
+    {
+      "label": "AI Magazine report on AI@50",
+      "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1911",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T10:28:12.990Z"
+    },
+    {
+      "label": "IEEE Annals article on cybernetics and the Dartmouth Conference",
+      "sourceUrl": "https://doi.org/10.1109/MAHC.2010.44",
+      "finalUrl": "https://ieeexplore.ieee.org/document/5477410/",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/006.ieee-annals-article-on-cybernetics-and-the-dartmouth-conference.html",
+      "fetchedAt": "2026-07-03T10:28:14.462Z"
+    },
+    {
+      "label": "Ray Solomonoff Dartmouth notes archive",
+      "sourceUrl": "http://raysolomonoff.com/dartmouth/",
+      "finalUrl": "https://raysolomonoff.com/dartmouth/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Dartmouth AI Archives",
+      "savedPath": "pages/007.ray-solomonoff-dartmouth-notes-archive.html",
+      "fetchedAt": "2026-07-03T10:28:16.556Z"
+    },
+    {
+      "label": "Ray Solomonoff 1956 participant list PDF",
+      "sourceUrl": "http://raysolomonoff.com/dartmouth/boxbdart/dart56ray812825who.pdf",
+      "finalUrl": "https://raysolomonoff.com/dartmouth/boxbdart/dart56ray812825who.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/008.ray-solomonoff-1956-participant-list-pdf.html",
+      "fetchedAt": "2026-07-03T10:28:18.533Z"
+    },
+    {
+      "label": "Trenchard More 1956 Dartmouth notes PDF",
+      "sourceUrl": "http://raysolomonoff.com/dartmouth/boxa/dart56more5th6thweeks.pdf",
+      "finalUrl": "https://raysolomonoff.com/dartmouth/boxa/dart56more5th6thweeks.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/009.trenchard-more-1956-dartmouth-notes-pdf.html",
+      "fetchedAt": "2026-07-03T10:28:21.651Z"
+    },
+    {
+      "label": "ACM A.M. Turing Award profile - John McCarthy",
+      "sourceUrl": "https://amturing.acm.org/award_winners/mccarthy_1118322.cfm",
+      "finalUrl": "https://amturing.acm.org/award_winners/mccarthy_1118322.cfm",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "savedPath": "pages/010.acm-a.m.-turing-award-profile---john-mccarthy.html",
+      "fetchedAt": "2026-07-03T10:28:22.994Z"
+    },
+    {
+      "label": "Stanford obituary - John McCarthy",
+      "sourceUrl": "https://news.stanford.edu/stories/2011/10/john-mccarthy-obit-102511",
+      "finalUrl": "https://news.stanford.edu/stories/2011/10/john-mccarthy-obit-102511",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/011.stanford-obituary---john-mccarthy.html",
+      "fetchedAt": "2026-07-03T10:28:25.475Z"
+    },
+    {
+      "label": "ACM A.M. Turing Award profile - Marvin Minsky",
+      "sourceUrl": "https://amturing.acm.org/award_winners/minsky_7440781.cfm",
+      "finalUrl": "https://amturing.acm.org/award_winners/minsky_7440781.cfm",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "savedPath": "pages/012.acm-a.m.-turing-award-profile---marvin-minsky.html",
+      "fetchedAt": "2026-07-03T10:28:25.989Z"
+    },
+    {
+      "label": "MIT obituary - Marvin Minsky",
+      "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "finalUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Marvin Minsky, “father of artificial intelligence,” dies at 88 | MIT News | Massachusetts Institute of Technology",
+      "savedPath": "pages/013.mit-obituary---marvin-minsky.html",
+      "fetchedAt": "2026-07-03T10:28:27.483Z"
+    },
+    {
+      "label": "Computer History Museum fellow profile - Marvin Minsky",
+      "sourceUrl": "https://computerhistory.org/profile/marvin-minsky/",
+      "finalUrl": "https://computerhistory.org/profile/marvin-minsky/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Marvin Minsky - CHM",
+      "savedPath": "pages/014.computer-history-museum-fellow-profile---marvin-minsky.html",
+      "fetchedAt": "2026-07-03T10:28:32.103Z"
+    },
+    {
+      "label": "Claude Shannon profile - IEEE Information Theory Society",
+      "sourceUrl": "https://www.itsoc.org/about/shannon",
+      "finalUrl": "https://www.itsoc.org/about/shannon",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Claude E. Shannon | IEEE Information Theory Society",
+      "savedPath": "pages/015.claude-shannon-profile---ieee-information-theory-society.html",
+      "fetchedAt": "2026-07-03T10:28:33.747Z"
+    },
+    {
+      "label": "Nathaniel Rochester biography index",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nathaniel_Rochester_(computer_scientist)",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T10:28:34.471Z"
+    },
+    {
+      "label": "Wikimedia Commons search - Dartmouth AI workshop",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Dartmouth+AI+workshop&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Dartmouth+AI+workshop&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/017.wikimedia-commons-search---dartmouth-ai-workshop.html",
+      "fetchedAt": "2026-07-03T10:28:36.832Z"
+    },
+    {
+      "label": "Wikimedia Commons category - Dartmouth Hall",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Dartmouth_Hall",
+      "finalUrl": "https://commons.wikimedia.org/wiki/Category:Dartmouth_Hall",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Category:Dartmouth Hall - Wikimedia Commons",
+      "savedPath": "pages/018.wikimedia-commons-category---dartmouth-hall.html",
+      "fetchedAt": "2026-07-03T10:28:37.749Z"
+    },
+    {
+      "label": "Library of Congress search - Dartmouth College 1956",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College%201956",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College%201956",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/019.library-of-congress-search---dartmouth-college-1956.html",
+      "fetchedAt": "2026-07-03T10:28:39.573Z"
+    },
+    {
+      "label": "Wikimedia Commons category - John McCarthy",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:John_McCarthy_(computer_scientist)",
+      "finalUrl": "https://commons.wikimedia.org/wiki/Category:John_McCarthy_(computer_scientist)",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Category:John McCarthy (computer scientist) - Wikimedia Commons",
+      "savedPath": "pages/020.wikimedia-commons-category---john-mccarthy.html",
+      "fetchedAt": "2026-07-03T10:28:40.528Z"
+    },
+    {
+      "label": "John McCarthy Stanford portrait - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:John McCarthy Stanford.jpg - Wikimedia Commons",
+      "savedPath": "pages/021.john-mccarthy-stanford-portrait---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:41.430Z"
+    },
+    {
+      "label": "John McCarthy Stanford 2006 - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_(computer_scientist)_Stanford_2006_(272020300).jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_(computer_scientist)_Stanford_2006_(272020300).jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:John McCarthy (computer scientist) Stanford 2006 (272020300).jpg - Wikimedia Commons",
+      "savedPath": "pages/022.john-mccarthy-stanford-2006---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:42.308Z"
+    },
+    {
+      "label": "John McCarthy Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/023.john-mccarthy-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:28:43.818Z"
+    },
+    {
+      "label": "Wikimedia Commons category - Marvin Minsky",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Marvin_Minsky",
+      "finalUrl": "https://commons.wikimedia.org/wiki/Category:Marvin_Minsky",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Category:Marvin Minsky - Wikimedia Commons",
+      "savedPath": "pages/024.wikimedia-commons-category---marvin-minsky.html",
+      "fetchedAt": "2026-07-03T10:28:44.685Z"
+    },
+    {
+      "label": "Marvin Minsky cropped portrait - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky_(cropped).jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky_(cropped).jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Marvin Minsky (cropped).jpg - Wikimedia Commons",
+      "savedPath": "pages/025.marvin-minsky-cropped-portrait---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:45.532Z"
+    },
+    {
+      "label": "Marvin Minsky portrait - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Marvin Minsky.jpg - Wikimedia Commons",
+      "savedPath": "pages/026.marvin-minsky-portrait---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:46.421Z"
+    },
+    {
+      "label": "Marvin Minsky Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/027.marvin-minsky-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:28:48.315Z"
+    },
+    {
+      "label": "Wikimedia Commons category - Claude Shannon",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Claude_Shannon",
+      "finalUrl": "https://commons.wikimedia.org/wiki/Category:Claude_Shannon",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Category:Claude Shannon - Wikimedia Commons",
+      "savedPath": "pages/028.wikimedia-commons-category---claude-shannon.html",
+      "fetchedAt": "2026-07-03T10:28:49.196Z"
+    },
+    {
+      "label": "C. E. Shannon Tekniska museet portrait - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069_(cropped).jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069_(cropped).jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:C.E. Shannon. Tekniska museet 43069 (cropped).jpg - Wikimedia Commons",
+      "savedPath": "pages/029.c.-e.-shannon-tekniska-museet-portrait---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:50.012Z"
+    },
+    {
+      "label": "Theseus Maze by Claude Shannon - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theseus_Maze_by_Claude_Shannon,_1952_-_MIT_Museum_-_DSC03702.JPG",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Theseus_Maze_by_Claude_Shannon,_1952_-_MIT_Museum_-_DSC03702.JPG",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Theseus Maze by Claude Shannon, 1952 - MIT Museum - DSC03702.JPG - Wikimedia Commons",
+      "savedPath": "pages/030.theseus-maze-by-claude-shannon---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:50.845Z"
+    },
+    {
+      "label": "Claude Shannon Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Claude%20Shannon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Claude%20Shannon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/031.claude-shannon-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:28:52.527Z"
+    },
+    {
+      "label": "Nathaniel Rochester Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Nathaniel%20Rochester%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Nathaniel%20Rochester%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/032.nathaniel-rochester-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:28:54.590Z"
+    },
+    {
+      "label": "Dartmouth College photo candidates - Commons category",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Dartmouth_College",
+      "finalUrl": "https://commons.wikimedia.org/wiki/Category:Dartmouth_College",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Category:Dartmouth College - Wikimedia Commons",
+      "savedPath": "pages/033.dartmouth-college-photo-candidates---commons-category.html",
+      "fetchedAt": "2026-07-03T10:28:55.449Z"
+    },
+    {
+      "label": "Library of Congress Dartmouth College photo search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Dartmouth%20College",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/034.library-of-congress-dartmouth-college-photo-search.html",
+      "fetchedAt": "2026-07-03T10:28:56.157Z"
+    },
+    {
+      "label": "Dartmouth Workshop - AI Is Born! Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/035.dartmouth-workshop---ai-is-born-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:28:57.494Z"
+    },
+    {
+      "label": "Dartmouth Workshop - AI Is Born! Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Dartmouth%20Workshop%20-%20AI%20Is%20Born!%201956",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/036.dartmouth-workshop---ai-is-born-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:28:58.110Z"
+    },
+    {
+      "label": "Dartmouth proposal PDF - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Proposal_for_the_Dartmouth_Summer_Research_Project_on_Artificial_Intelligence,_by_John_McCarthy_et_al,_1955.pdf",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:A_Proposal_for_the_Dartmouth_Summer_Research_Project_on_Artificial_Intelligence,_by_John_McCarthy_et_al,_1955.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence, by John McCarthy et al, 1955.pdf - Wikimedia Commons",
+      "savedPath": "pages/037.dartmouth-proposal-pdf---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:58.942Z"
+    },
+    {
+      "label": "The Mathematical Theory of Communication title page - Commons file",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Mathematical_Theory_Of_Communication_title_page.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:The_Mathematical_Theory_Of_Communication_title_page.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:The Mathematical Theory Of Communication title page.jpg - Wikimedia Commons",
+      "savedPath": "pages/038.the-mathematical-theory-of-communication-title-page---commons-file.html",
+      "fetchedAt": "2026-07-03T10:28:59.739Z"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:03:37.686Z",
+  "eventKey": "2015-googlenet-inception",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Christian Szegedy",
+      "role": "Lead author of the GoogLeNet paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Christian Szegedy portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Christian%20Szegedy%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Christian Szegedy Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Christian%20Szegedy%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Christian Szegedy official biography search",
+          "url": "https://www.google.com/search?q=Christian%20Szegedy%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Google research team",
+      "role": "Developed the Inception architecture",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Google research team portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Google%20research%20team%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Google research team Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Google%20research%20team%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Google research team official biography search",
+          "url": "https://www.google.com/search?q=Google%20research%20team%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "GoogLeNet / Inception event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2014-2015%20GoogLeNet%20%2F%20Inception%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "GoogLeNet / Inception Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=GoogLeNet%20%2F%20Inception%202014-2015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "GoogLeNet / Inception Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=GoogLeNet%20%2F%20Inception%202014-2015",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "GoogLeNet / Inception publication search",
+      "url": "https://www.google.com/search?q=2014-2015%20GoogLeNet%20%2F%20Inception%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "GoogLeNet / Inception scholar search",
+      "url": "https://scholar.google.com/scholar?q=2014-2015%20GoogLeNet%20%2F%20Inception%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Christian Szegedy episode portrait",
+        "zh": "克里斯蒂安·塞格迪 节目人物图"
+      },
+      "subcaption": {
+        "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
+        "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
+      },
+      "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+      "sourceLabel": "The TWIML AI Podcast",
+      "license": {
+        "en": "Podcast episode artwork; rights not stated.",
+        "zh": "Podcast episode artwork; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Inception author portrait",
+        "zh": "历史人物 / Inception 作者人物图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Multi-branch Inception module",
+        "zh": "多分支 Inception 模块"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+        "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "sourceLabel": "Going Deeper with Convolutions",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "1x1 bottleneck reduction",
+        "zh": "1x1 瓶颈降维"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+        "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "sourceLabel": "Going Deeper with Convolutions",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "The TWIML AI Podcast",
+        "url": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+        "usage": "Historical figure / Inception author portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Going Deeper with Convolutions",
+        "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

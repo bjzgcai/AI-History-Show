@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:46.934Z",
+  "eventKey": "1958-wangs-algorithm",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1958-wangs-algorithm",
+      "label": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.hao-wang-circa-1980s-from-the-rockefeller-university-historical-photograph-collection.jpg",
+      "originalLocalPath": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 16304,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+      "downloadedAt": "2026-07-03T10:37:46.630Z"
+    },
+    {
+      "eventKey": "1958-wangs-algorithm",
+      "label": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-explainer-showing-formula-normalization-rule-matching-proof-reduction-and-branch-closur.svg",
+      "originalLocalPath": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 3268,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Explainer graphic",
+      "rights": "Original local explainer; source article images not reused.",
+      "downloadedAt": "2026-07-03T10:37:46.934Z"
+    }
+  ]
+}

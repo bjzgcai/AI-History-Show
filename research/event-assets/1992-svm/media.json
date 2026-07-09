@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:46:12.494Z",
+  "eventKey": "1992-svm",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Vladimir Vapnik",
+      "role": "Co-developed optimal-margin classifiers and statistical learning theory",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Vladimir Vapnik portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Vladimir%20Vapnik%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Vladimir Vapnik Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Vladimir%20Vapnik%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Vladimir Vapnik official biography search",
+          "url": "https://www.google.com/search?q=Vladimir%20Vapnik%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Bernhard Boser",
+      "role": "Co-author of the 1992 optimal-margin classifier paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Bernhard Boser portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Bernhard%20Boser%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Bernhard Boser Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Bernhard%20Boser%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Bernhard Boser official biography search",
+          "url": "https://www.google.com/search?q=Bernhard%20Boser%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Isabelle Guyon",
+      "role": "Co-author of the 1992 optimal-margin classifier paper",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Isabelle Guyon portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Isabelle%20Guyon%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Isabelle Guyon Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Isabelle%20Guyon%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Isabelle Guyon official biography search",
+          "url": "https://www.google.com/search?q=Isabelle%20Guyon%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Support Vector Machines event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1992%20Support%20Vector%20Machines%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Support Vector Machines Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Support%20Vector%20Machines%201992&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Support Vector Machines Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Support%20Vector%20Machines%201992",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Support Vector Machines publication search",
+      "url": "https://www.google.com/search?q=1992%20Support%20Vector%20Machines%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Support Vector Machines scholar search",
+      "url": "https://scholar.google.com/scholar?q=1992%20Support%20Vector%20Machines%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Isabelle Guyon portrait",
+        "zh": "伊莎贝尔·居永 肖像"
+      },
+      "subcaption": {
+        "en": "University Paris-Saclay article image about Guyon and support vector machines.",
+        "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。"
+      },
+      "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+      "sourceLabel": "Université Paris-Saclay",
+      "license": {
+        "en": "University news image; rights not stated.",
+        "zh": "University news image; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / SVM co-inventor portrait",
+        "zh": "历史人物 / SVM 共同发明者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Maximum-margin classifier",
+        "zh": "最大间隔分类器"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+        "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "sourceLabel": "A Training Algorithm for Optimal Margin Classifiers",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Kernel feature lift",
+        "zh": "核函数特征提升"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+        "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "sourceLabel": "A Training Algorithm for Optimal Margin Classifiers",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Université Paris-Saclay",
+        "url": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+        "usage": "Historical figure / SVM co-inventor portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Training Algorithm for Optimal Margin Classifiers",
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

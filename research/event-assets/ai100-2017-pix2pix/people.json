@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Phillip Isola",
+        "zh": "菲利普·伊索拉"
+      },
+      "role": {
+        "en": "Pix2Pix lead author",
+        "zh": "Pix2Pix 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+          "sourceUrl": "https://web.mit.edu/phillipi/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:57:04.610Z",
+  "eventKey": "ai100-1970-ridge",
+  "year": 1970,
+  "title": {
+    "en": "Ridge",
+    "zh": "岭回归"
+  },
+  "location": {
+    "name": {
+      "en": "University of Delaware",
+      "zh": "特拉华大学"
+    },
+    "country": {
+      "en": "Newark, United States",
+      "zh": "美国纽瓦克"
+    },
+    "coordinates": [
+      39.6779,
+      -75.7506
+    ]
+  },
+  "description": {
+    "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>",
+    "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Arthur Hoerl family context",
+        "zh": "阿瑟·霍尔家庭背景图"
+      },
+      "subcaption": {
+        "en": "Co-author of ridge regression",
+        "zh": "岭回归共同作者"
+      },
+      "sourceName": {
+        "en": "University of Delaware",
+        "zh": "特拉华大学"
+      },
+      "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+      "license": {
+        "en": "University of Delaware image; reuse rights not stated.",
+        "zh": "特拉华大学图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Ridge shrinkage path",
+        "zh": "岭回归收缩路径"
+      },
+      "subcaption": {
+        "en": "Original local explainer of L2 coefficient shrinkage.",
+        "zh": "关于 L2 系数收缩的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Technometrics",
+        "zh": "Technometrics"
+      },
+      "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Arthur Hoerl",
+        "type": "portrait-search",
+        "label": "Arthur Hoerl portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Arthur%20Hoerl%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Arthur Hoerl",
+        "type": "commons-portrait-search",
+        "label": "Arthur Hoerl Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Arthur%20Hoerl%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Robert Kennard",
+        "type": "portrait-search",
+        "label": "Robert Kennard portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Robert%20Kennard%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Robert Kennard",
+        "type": "commons-portrait-search",
+        "label": "Robert Kennard Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Robert%20Kennard%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Ridge event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1970%20Ridge%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Ridge Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ridge%201970&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Ridge Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Ridge%201970",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Ridge publication search",
+        "url": "https://www.google.com/search?q=1970%20Ridge%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Ridge scholar search",
+        "url": "https://scholar.google.com/scholar?q=1970%20Ridge%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

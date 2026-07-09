@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:32:42.674Z",
+  "eventKey": "1958-lisp",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Recursive Functions of Symbolic Expressions",
+      "url": "https://www-formal.stanford.edu/jmc/recursive.html",
+      "usage": ""
+    },
+    {
+      "type": "Manual",
+      "label": "LISP I Programmer's Manual",
+      "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
+      "usage": ""
+    },
+    {
+      "type": "History",
+      "label": "History of Lisp",
+      "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html",
+      "usage": ""
+    },
+    {
+      "type": "archiveLink",
+      "label": "Recursive Functions of Symbolic Expressions",
+      "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+      "usage": "Source material / Original paper reference"
+    },
+    {
+      "type": "image-source",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "usage": "CC BY-SA 2.0"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John McCarthy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "LISP Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=LISP%201958&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "LISP Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=LISP%201958",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1958%20LISP%20John%20McCarthy%20AI%20history%20source%20images",
+      "query": "1958 LISP John McCarthy AI history source images",
+      "eventKey": "1958-lisp"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1958%20LISP%20John%20McCarthy%20AI%20history%20source%20images",
+      "query": "1958 LISP John McCarthy AI history source images",
+      "eventKey": "1958-lisp"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1958%20LISP%20John%20McCarthy%20AI%20history%20source%20images",
+      "query": "1958 LISP John McCarthy AI history source images",
+      "eventKey": "1958-lisp"
+    },
+    {
+      "type": "portrait-search",
+      "label": "John McCarthy portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=John%20McCarthy%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John McCarthy Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "John McCarthy official biography search",
+      "url": "https://www.google.com/search?q=John%20McCarthy%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "LISP event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1958%20LISP%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "LISP Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=LISP%201958&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "LISP Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=LISP%201958",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "LISP publication search",
+      "url": "https://www.google.com/search?q=1958%20LISP%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "LISP scholar search",
+      "url": "https://scholar.google.com/scholar?q=1958%20LISP%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Recursive Functions of Symbolic Expressions",
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive.html",
+      "finalUrl": "https://www-formal.stanford.edu/jmc/recursive.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "RECURSIVE FUNCTIONS OF SYMBOLIC EXPRESSIONS AND THEIR COMPUTATION BY MACHINE (Part I) (12-May-1998)",
+      "savedPath": "pages/001.recursive-functions-of-symbolic-expressions.html",
+      "fetchedAt": "2026-07-03T10:32:43.593Z"
+    },
+    {
+      "label": "LISP I Programmer's Manual",
+      "sourceUrl": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
+      "finalUrl": "https://softwarepreservation.computerhistory.org/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view/",
+      "ok": false,
+      "status": 404,
+      "contentType": "text/html",
+      "title": "WebContentNotFound",
+      "savedPath": "pages/002.lisp-i-programmer-s-manual.html",
+      "fetchedAt": "2026-07-03T10:32:46.631Z"
+    },
+    {
+      "label": "History of Lisp",
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html",
+      "finalUrl": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "History of Lisp",
+      "savedPath": "pages/003.history-of-lisp.html",
+      "fetchedAt": "2026-07-03T10:32:47.091Z"
+    },
+    {
+      "label": "Recursive Functions of Symbolic Expressions",
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+      "finalUrl": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I",
+      "savedPath": "pages/004.recursive-functions-of-symbolic-expressions.html",
+      "fetchedAt": "2026-07-03T10:32:47.553Z"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:John McCarthy Stanford.jpg - Wikimedia Commons",
+      "savedPath": "pages/005.wikimedia-commons.html",
+      "fetchedAt": "2026-07-03T10:32:48.415Z"
+    },
+    {
+      "label": "John McCarthy Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=John%20McCarthy%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.john-mccarthy-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:32:49.973Z"
+    },
+    {
+      "label": "LISP Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=LISP%201958&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=LISP%201958&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.lisp-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:32:51.899Z"
+    },
+    {
+      "label": "LISP Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=LISP%201958",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=LISP%201958",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.lisp-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:32:52.573Z"
+    }
+  ]
+}

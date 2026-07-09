@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:03:18.028Z",
+  "eventKey": "ai100-1997-lstm",
+  "year": 1997,
+  "title": {
+    "en": "LSTM",
+    "zh": "长短期记忆网络"
+  },
+  "location": {
+    "name": {
+      "en": "Technical University of Munich",
+      "zh": "慕尼黑工业大学"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1496,
+      11.5677
+    ]
+  },
+  "description": {
+    "en": "<p>Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs.</p>",
+    "zh": "<p>塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/sepp-hochreiter.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Sepp Hochreiter portrait",
+        "zh": "塞普·霍赫赖特肖像"
+      },
+      "subcaption": {
+        "en": "LSTM co-author",
+        "zh": "LSTM 共同作者"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/sepp-hochreiter.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "LSTM gated memory cell",
+        "zh": "LSTM 门控记忆单元"
+      },
+      "subcaption": {
+        "en": "Original local explainer of gated sequence memory.",
+        "zh": "关于门控序列记忆的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Neural Computation",
+        "zh": "《Neural Computation》"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Sepp Hochreiter",
+        "type": "portrait-search",
+        "label": "Sepp Hochreiter portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Sepp%20Hochreiter%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Sepp Hochreiter",
+        "type": "commons-portrait-search",
+        "label": "Sepp Hochreiter Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Sepp%20Hochreiter%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Juergen Schmidhuber",
+        "type": "portrait-search",
+        "label": "Juergen Schmidhuber portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Juergen%20Schmidhuber%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Juergen Schmidhuber",
+        "type": "commons-portrait-search",
+        "label": "Juergen Schmidhuber Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Juergen%20Schmidhuber%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "LSTM event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1997%20LSTM%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "LSTM Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=LSTM%201997&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "LSTM Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=LSTM%201997",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "LSTM publication search",
+        "url": "https://www.google.com/search?q=1997%20LSTM%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "LSTM scholar search",
+        "url": "https://scholar.google.com/scholar?q=1997%20LSTM%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

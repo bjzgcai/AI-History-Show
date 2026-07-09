@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:02:34.991Z",
+  "eventKey": "1984-cart",
+  "year": "1984",
+  "title": {
+    "en": "CART",
+    "zh": "CART 决策树"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, Berkeley",
+      "zh": "加州大学伯克利分校"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "美国伯克利"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "description": {
+    "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>",
+    "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "existsLocally": true,
+      "caption": {
+        "en": "Leo Breiman portrait",
+        "zh": "利奥·布雷曼 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from the University of York Portraits of Statisticians archive.",
+        "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。"
+      },
+      "sourceName": {
+        "en": "University of York / Portraits of Statisticians",
+        "zh": "约克大学 / Portraits of Statisticians"
+      },
+      "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+      "license": {
+        "en": "Archive portrait; rights not stated.",
+        "zh": "Archive portrait; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / CART co-author portrait",
+        "zh": "历史人物 / CART 共同作者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Feature-space splits",
+        "zh": "特征空间划分"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for CART, based on the related source material.",
+        "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Routledge",
+        "zh": "Routledge"
+      },
+      "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Cost-complexity pruning curve",
+        "zh": "代价复杂度剪枝曲线"
+      },
+      "subcaption": {
+        "en": "Distinct local redraw for CART, based on the related source material.",
+        "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+      },
+      "sourceName": {
+        "en": "Routledge",
+        "zh": "Routledge"
+      },
+      "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct visual card",
+        "zh": "辅助图片 / 独立视觉卡片"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Leo Breiman",
+        "type": "portrait-search",
+        "label": "Leo Breiman portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Leo%20Breiman%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Leo Breiman",
+        "type": "commons-portrait-search",
+        "label": "Leo Breiman Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Leo%20Breiman%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Jerome Friedman",
+        "type": "portrait-search",
+        "label": "Jerome Friedman portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Jerome%20Friedman%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Jerome Friedman",
+        "type": "commons-portrait-search",
+        "label": "Jerome Friedman Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Jerome%20Friedman%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Richard Olshen",
+        "type": "portrait-search",
+        "label": "Richard Olshen portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Richard%20Olshen%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Richard Olshen",
+        "type": "commons-portrait-search",
+        "label": "Richard Olshen Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Richard%20Olshen%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Charles Stone",
+        "type": "portrait-search",
+        "label": "Charles Stone portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Charles%20Stone%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Charles Stone",
+        "type": "commons-portrait-search",
+        "label": "Charles Stone Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Charles%20Stone%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "CART event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1984%20CART%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "CART Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=CART%201984&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "CART Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=CART%201984",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "CART publication search",
+        "url": "https://www.google.com/search?q=1984%20CART%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "CART scholar search",
+        "url": "https://scholar.google.com/scholar?q=1984%20CART%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

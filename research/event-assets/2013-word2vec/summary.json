@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:41.390Z",
+  "eventKey": "2013-word2vec",
+  "year": "2013",
+  "title": {
+    "en": "Word2Vec",
+    "zh": "Word2Vec"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "谷歌大脑"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "description": {
+    "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>",
+    "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Tomas Mikolov portrait",
+        "zh": "托马斯·米科洛夫 肖像"
+      },
+      "subcaption": {
+        "en": "IEEE Signal Processing Society newsletter image for Mikolov.",
+        "zh": "IEEE Signal Processing Society 访谈页面中的 Mikolov 人物图。"
+      },
+      "sourceName": {
+        "en": "IEEE Signal Processing Society",
+        "zh": "IEEE Signal Processing Society"
+      },
+      "sourceUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+      "license": {
+        "en": "IEEE SPS newsletter image; rights not stated.",
+        "zh": "IEEE SPS newsletter image; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Skip-gram context window",
+        "zh": "Skip-gram 上下文窗口"
+      },
+      "subcaption": {
+        "en": "Local redraw for Word2Vec, based on the listed source material.",
+        "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "NeurIPS / arXiv",
+        "zh": "神经信息处理系统大会 / arXiv"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1301.3781",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Vector analogy",
+        "zh": "向量类比"
+      },
+      "subcaption": {
+        "en": "Local redraw for Word2Vec, based on the listed source material.",
+        "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceName": {
+        "en": "NeurIPS / arXiv",
+        "zh": "神经信息处理系统大会 / arXiv"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1301.3781",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Tomas Mikolov",
+        "type": "portrait-search",
+        "label": "Tomas Mikolov portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Tomas%20Mikolov%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Tomas Mikolov",
+        "type": "commons-portrait-search",
+        "label": "Tomas Mikolov Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Tomas%20Mikolov%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Word2Vec event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2013%20Word2Vec%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Word2Vec Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Word2Vec%202013&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Word2Vec Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Word2Vec%202013",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Word2Vec publication search",
+        "url": "https://www.google.com/search?q=2013%20Word2Vec%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Word2Vec scholar search",
+        "url": "https://scholar.google.com/scholar?q=2013%20Word2Vec%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:54.138Z",
+  "eventKey": "ai100-1969-relu",
+  "year": 1969,
+  "title": {
+    "en": "ReLU",
+    "zh": "ReLU"
+  },
+  "location": {
+    "name": {
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "NHK 广播科学研究实验室"
+    },
+    "country": {
+      "en": "Tokyo, Japan",
+      "zh": "日本东京"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "description": {
+    "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>",
+    "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Yoshua Bengio portrait",
+        "zh": "约书亚·本吉奥肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of influential rectifier analysis.",
+        "zh": "有影响力的整流函数分析共同作者。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Rectified activation",
+        "zh": "整流激活"
+      },
+      "subcaption": {
+        "en": "Original local explainer of the max(0, x) activation.",
+        "zh": "关于 max(0, x) 激活函数的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "AISTATS",
+        "zh": "AISTATS"
+      },
+      "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Kunihiko Fukushima",
+        "type": "portrait-search",
+        "label": "Kunihiko Fukushima portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Kunihiko%20Fukushima%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Kunihiko Fukushima",
+        "type": "commons-portrait-search",
+        "label": "Kunihiko Fukushima Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Kunihiko%20Fukushima%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Yoshua Bengio",
+        "type": "portrait-search",
+        "label": "Yoshua Bengio portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Yoshua%20Bengio%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Yoshua Bengio",
+        "type": "commons-portrait-search",
+        "label": "Yoshua Bengio Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Yoshua%20Bengio%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "ReLU event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1969%20ReLU%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "ReLU Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=ReLU%201969&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "ReLU Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=ReLU%201969",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "ReLU publication search",
+        "url": "https://www.google.com/search?q=1969%20ReLU%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "ReLU scholar search",
+        "url": "https://scholar.google.com/scholar?q=1969%20ReLU%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

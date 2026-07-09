@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:02:51.658Z",
+  "eventKey": "ai100-2020-vit",
+  "year": 2020,
+  "title": {
+    "en": "Vision Transformer",
+    "zh": "视觉 Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Google Research",
+      "zh": "Google 研究院"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "description": {
+    "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>",
+    "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+      "existsLocally": false,
+      "caption": {
+        "en": "Alexey Dosovitskiy portrait",
+        "zh": "阿列克谢·多索维茨基肖像"
+      },
+      "subcaption": {
+        "en": "Lead author of Vision Transformer",
+        "zh": "视觉 Transformer 主要作者"
+      },
+      "sourceName": {
+        "en": "EML Munich",
+        "zh": "EML Munich"
+      },
+      "sourceUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+      "license": {
+        "en": "EML Munich profile image; reuse rights not stated.",
+        "zh": "EML Munich 个人资料图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Patch tokens to transformer",
+        "zh": "图像块令牌到 Transformer"
+      },
+      "subcaption": {
+        "en": "Original local explainer of ViT patch tokenization.",
+        "zh": "关于 ViT 图像块令牌化的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2010.11929",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Alexey Dosovitskiy",
+        "type": "portrait-search",
+        "label": "Alexey Dosovitskiy portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Alexey%20Dosovitskiy%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Alexey Dosovitskiy",
+        "type": "commons-portrait-search",
+        "label": "Alexey Dosovitskiy Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Dosovitskiy%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Google Research",
+        "type": "portrait-search",
+        "label": "Google Research portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Google%20Research%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Google Research",
+        "type": "commons-portrait-search",
+        "label": "Google Research Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Google%20Research%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Vision Transformer event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2020%20Vision%20Transformer%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Vision Transformer Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Vision%20Transformer%202020&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Vision Transformer Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Vision%20Transformer%202020",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Vision Transformer publication search",
+        "url": "https://www.google.com/search?q=2020%20Vision%20Transformer%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Vision Transformer scholar search",
+        "url": "https://scholar.google.com/scholar?q=2020%20Vision%20Transformer%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Gao Huang",
+        "zh": "黄高"
+      },
+      "role": {
+        "en": "Lead author of DenseNet",
+        "zh": "DenseNet 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "sourceUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Zhuang Liu",
+        "zh": "刘壮"
+      },
+      "role": {
+        "en": "Co-author of DenseNet",
+        "zh": "DenseNet 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "sourceUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

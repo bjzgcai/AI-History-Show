@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:07:34.861Z",
+  "eventKey": "ai100-2005-gnn",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2005-gnn",
+      "label": "Graph neural network co-author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+      "imageUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
+      "status": "not-direct-image-url",
+      "usage": "Achievement visual material",
+      "pageSnapshot": ""
+    },
+    {
+      "eventKey": "ai100-2005-gnn",
+      "label": "Original local explainer for the achievement flow.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1109/TNN.2008.2005605",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-for-the-achievement-flow.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2387,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:07:34.861Z"
+    }
+  ]
+}

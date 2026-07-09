@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:16.008Z",
+  "eventKey": "ai100-2018-gpt",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2018-gpt",
+      "label": "GPT lead author",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "resources/images/figures/alec-radford.png",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.gpt-lead-author.png",
+      "originalLocalPath": "resources/images/figures/alec-radford.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 232058,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Reference image",
+      "downloadedAt": "2026-07-03T12:04:15.702Z"
+    },
+    {
+      "eventKey": "ai100-2018-gpt",
+      "label": "Original local explainer of decoder-only generative pre-training.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-decoder-only-generative-pre-training.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1460,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T12:04:16.008Z"
+    }
+  ]
+}

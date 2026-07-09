@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:19.814Z",
+  "eventKey": "1971-vc-theory",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "1971-vc-theory",
+      "label": "Vladimir Vapnik profile portrait from the Simons Foundation.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.vladimir-vapnik-profile-portrait-from-the-simons-foundation.png",
+      "originalLocalPath": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 450907,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Portrait",
+      "rights": "Simons Foundation profile image; page does not state an open reuse license.",
+      "downloadedAt": "2026-07-03T10:37:19.511Z"
+    },
+    {
+      "eventKey": "1971-vc-theory",
+      "label": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://epubs.siam.org/doi/10.1137/1116025",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-explainer-derived-from-vapnik-and-chervonenkis-s-learning-theory-sources.svg",
+      "originalLocalPath": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 2935,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Explainer graphic",
+      "rights": "Original local explainer; source article and book figure reuse rights not used.",
+      "downloadedAt": "2026-07-03T10:37:19.814Z"
+    }
+  ]
+}

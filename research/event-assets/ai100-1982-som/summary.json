@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:26.843Z",
+  "eventKey": "ai100-1982-som",
+  "year": 1982,
+  "title": {
+    "en": "Self-organizing Map",
+    "zh": "自组织映射"
+  },
+  "location": {
+    "name": {
+      "en": "Helsinki University of Technology",
+      "zh": "赫尔辛基理工大学"
+    },
+    "country": {
+      "en": "Espoo, Finland",
+      "zh": "芬兰埃斯波"
+    },
+    "coordinates": [
+      60.1841,
+      24.8301
+    ]
+  },
+  "description": {
+    "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>",
+    "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Teuvo Kohonen portrait",
+        "zh": "泰沃·科霍宁肖像"
+      },
+      "subcaption": {
+        "en": "Creator of self-organizing maps",
+        "zh": "自组织映射提出者"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+      "license": {
+        "en": "Creative Commons Attribution, per Wikimedia Commons.",
+        "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Kohonen map adaptation",
+        "zh": "科霍宁映射调整"
+      },
+      "subcaption": {
+        "en": "Original local explainer of self-organizing map adaptation.",
+        "zh": "关于自组织映射调整的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "Biological Cybernetics",
+        "zh": "Biological Cybernetics"
+      },
+      "sourceUrl": "https://doi.org/10.1007/BF00337288",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Teuvo Kohonen",
+        "type": "portrait-search",
+        "label": "Teuvo Kohonen portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Teuvo%20Kohonen%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Teuvo Kohonen",
+        "type": "commons-portrait-search",
+        "label": "Teuvo Kohonen Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Teuvo%20Kohonen%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Self-organizing Map event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1982%20Self-organizing%20Map%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Self-organizing Map Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Self-organizing%20Map%201982&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Self-organizing Map Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Self-organizing%20Map%201982",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Self-organizing Map publication search",
+        "url": "https://www.google.com/search?q=1982%20Self-organizing%20Map%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Self-organizing Map scholar search",
+        "url": "https://scholar.google.com/scholar?q=1982%20Self-organizing%20Map%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

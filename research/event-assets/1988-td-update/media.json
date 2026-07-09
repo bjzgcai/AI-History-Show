@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:10.495Z",
+  "eventKey": "1988-td-update",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Richard Sutton",
+      "role": "Author of temporal-difference learning",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Richard Sutton portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Richard%20Sutton%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Richard Sutton Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Richard%20Sutton%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Richard Sutton official biography search",
+          "url": "https://www.google.com/search?q=Richard%20Sutton%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Temporal-Difference Update event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1988%20Temporal-Difference%20Update%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Temporal-Difference Update Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Temporal-Difference%20Update%201988&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Temporal-Difference Update Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Temporal-Difference%20Update%201988",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Temporal-Difference Update publication search",
+      "url": "https://www.google.com/search?q=1988%20Temporal-Difference%20Update%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Temporal-Difference Update scholar search",
+      "url": "https://scholar.google.com/scholar?q=1988%20Temporal-Difference%20Update%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Richard Sutton portrait",
+        "zh": "理查德·萨顿 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Sutton's personal homepage.",
+        "zh": "来自 Sutton 个人主页的人物图。"
+      },
+      "sourceUrl": "http://incompleteideas.net/",
+      "sourceLabel": "Richard Sutton homepage",
+      "license": {
+        "en": "Personal website image; reuse rights not stated.",
+        "zh": "Personal website image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Value timeline update",
+        "zh": "价值时间线更新"
+      },
+      "subcaption": {
+        "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+        "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1007/BF00115009",
+      "sourceLabel": "Learning to Predict by the Methods of Temporal Differences",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "TD error meter",
+        "zh": "TD 误差仪表"
+      },
+      "subcaption": {
+        "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+        "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1007/BF00115009",
+      "sourceLabel": "Learning to Predict by the Methods of Temporal Differences",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Learning to Predict by the Methods of Temporal Differences",
+        "url": "https://doi.org/10.1007/BF00115009",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

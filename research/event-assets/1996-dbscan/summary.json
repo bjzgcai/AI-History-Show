@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:56:19.855Z",
+  "eventKey": "1996-dbscan",
+  "year": "1996",
+  "title": {
+    "en": "DBSCAN",
+    "zh": "DBSCAN 密度聚类"
+  },
+  "location": {
+    "name": {
+      "en": "University of Munich",
+      "zh": "慕尼黑大学"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1508,
+      11.58
+    ]
+  },
+  "description": {
+    "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>",
+    "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Martin Ester portrait",
+        "zh": "马丁·埃斯特 人物照片"
+      },
+      "subcaption": {
+        "en": "Co-author of DBSCAN.",
+        "zh": "DBSCAN 共同作者。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+      "license": {
+        "en": "CC BY 2.0",
+        "zh": "CC BY 2.0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      }
+    },
+    {
+      "index": 1,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+      "existsLocally": false,
+      "caption": {
+        "en": "DBSCAN density data",
+        "zh": "DBSCAN 密度数据图"
+      },
+      "subcaption": {
+        "en": "Public DBSCAN density illustration.",
+        "zh": "公开 DBSCAN 密度示意图。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg",
+      "license": {
+        "en": "CC BY-SA 3.0",
+        "zh": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "en": "Density diagram",
+        "zh": "密度图"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Density reachability",
+        "zh": "密度可达性"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on A density-based algorithm for discovering clusters.",
+        "zh": "依据 一种发现簇的基于密度的算法 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "A density-based algorithm for discovering clusters",
+        "zh": "一种发现簇的基于密度的算法"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Reachability diagram",
+        "zh": "可达性图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Core, border, noise points",
+        "zh": "核心点、边界点与噪声点"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on DBSCAN Revisited, Revisited.",
+        "zh": "依据 再访 DBSCAN，再访 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "DBSCAN Revisited, Revisited",
+        "zh": "再访 DBSCAN，再访"
+      },
+      "sourceUrl": "https://doi.org/10.1145/3068335",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Point-type diagram",
+        "zh": "点类型图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Martin Ester",
+        "type": "portrait-search",
+        "label": "Martin Ester portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Martin%20Ester%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Martin Ester",
+        "type": "commons-portrait-search",
+        "label": "Martin Ester Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Martin%20Ester%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "type": "portrait-search",
+        "label": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Hans-Peter%20Kriegel%2C%20Jorg%20Sander%2C%20Xiaowei%20Xu%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "type": "commons-portrait-search",
+        "label": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Hans-Peter%20Kriegel%2C%20Jorg%20Sander%2C%20Xiaowei%20Xu%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "DBSCAN event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1996%20DBSCAN%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "DBSCAN Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=DBSCAN%201996&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "DBSCAN Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=DBSCAN%201996",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "DBSCAN publication search",
+        "url": "https://www.google.com/search?q=1996%20DBSCAN%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "DBSCAN scholar search",
+        "url": "https://scholar.google.com/scholar?q=1996%20DBSCAN%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 4,
+    "manifest": "images/manifest.json"
+  }
+}

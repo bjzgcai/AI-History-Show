@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/marvin-minsky.jpg",
+          "sourceUrl": "resources/images/figures/marvin-minsky.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Dean Edmonds",
+        "zh": "迪恩·埃德蒙兹"
+      },
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/figures/marvin-minsky.jpg",
+          "sourceUrl": "resources/images/figures/marvin-minsky.jpg",
+          "license": {
+            "en": "Reference image",
+            "zh": "参考图片"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

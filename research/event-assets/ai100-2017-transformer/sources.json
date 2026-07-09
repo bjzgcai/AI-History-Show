@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:02:22.112Z",
+  "eventKey": "ai100-2017-transformer",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "NeurIPS paper page",
+      "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "Google Research publication page",
+      "url": "https://research.google/pubs/attention-is-all-you-need/",
+      "usage": ""
+    },
+    {
+      "type": "Retrospective",
+      "label": "Google Research Transformer blog post",
+      "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Local project asset",
+      "url": "resources/images/figures/ashish-vaswani.jpg",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ashish Vaswani Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Noam Shazeer Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Noam%20Shazeer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2017%20Transformer%20Ashish%20Vaswani%20Noam%20Shazeer%20AI%20history%20source%20images",
+      "query": "2017 Transformer Ashish Vaswani Noam Shazeer AI history source images",
+      "eventKey": "ai100-2017-transformer"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20Ashish%20Vaswani%20Noam%20Shazeer%20AI%20history%20source%20images",
+      "query": "2017 Transformer Ashish Vaswani Noam Shazeer AI history source images",
+      "eventKey": "ai100-2017-transformer"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20Ashish%20Vaswani%20Noam%20Shazeer%20AI%20history%20source%20images",
+      "query": "2017 Transformer Ashish Vaswani Noam Shazeer AI history source images",
+      "eventKey": "ai100-2017-transformer"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Ashish Vaswani portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Ashish%20Vaswani%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ashish Vaswani Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Ashish Vaswani official biography search",
+      "url": "https://www.google.com/search?q=Ashish%20Vaswani%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Noam Shazeer portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Noam%20Shazeer%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Noam Shazeer Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Noam%20Shazeer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Noam Shazeer official biography search",
+      "url": "https://www.google.com/search?q=Noam%20Shazeer%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Transformer event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Transformer Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Transformer Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Transformer publication search",
+      "url": "https://www.google.com/search?q=2017%20Transformer%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Transformer scholar search",
+      "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Attention Is All You Need",
+      "sourceUrl": "https://arxiv.org/abs/1706.03762",
+      "finalUrl": "https://arxiv.org/abs/1706.03762",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1706.03762] Attention Is All You Need",
+      "savedPath": "pages/001.attention-is-all-you-need.html",
+      "fetchedAt": "2026-07-03T12:02:22.490Z"
+    },
+    {
+      "label": "NeurIPS paper page",
+      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+      "finalUrl": "https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Attention is All you Need",
+      "savedPath": "pages/002.neurips-paper-page.html",
+      "fetchedAt": "2026-07-03T12:02:24.251Z"
+    },
+    {
+      "label": "Google Research publication page",
+      "sourceUrl": "https://research.google/pubs/attention-is-all-you-need/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:02:35.069Z"
+    },
+    {
+      "label": "Google Research Transformer blog post",
+      "sourceUrl": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T12:02:45.891Z"
+    },
+    {
+      "label": "Ashish Vaswani Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.ashish-vaswani-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:02:46.921Z"
+    },
+    {
+      "label": "Noam Shazeer Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Noam%20Shazeer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Noam%20Shazeer%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.noam-shazeer-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:02:48.324Z"
+    },
+    {
+      "label": "Transformer Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.transformer-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:02:50.438Z"
+    },
+    {
+      "label": "Transformer Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.transformer-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:02:51.045Z"
+    }
+  ]
+}

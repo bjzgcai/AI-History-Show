@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:35.128Z",
+  "eventKey": "1959-pandemonium",
+  "year": "1959",
+  "title": {
+    "en": "Pandemonium",
+    "zh": "Pandemonium 感知架构"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Lincoln Laboratory",
+      "zh": "麻省理工学院 林肯实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.4595,
+      -71.2677
+    ]
+  },
+  "description": {
+    "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>",
+    "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Oliver Selfridge portrait",
+        "zh": "奥利弗·塞尔弗里奇 人物照片"
+      },
+      "subcaption": {
+        "en": "Author of the Pandemonium architecture.",
+        "zh": "Pandemonium 架构提出者。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+      "license": {
+        "en": "CC0",
+        "zh": "CC0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      }
+    },
+    {
+      "index": 1,
+      "path": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+      "existsLocally": false,
+      "caption": {
+        "en": "Pandemonium architecture image",
+        "zh": "Pandemonium 架构图片"
+      },
+      "subcaption": {
+        "en": "Illustration associated with the Pandemonium architecture.",
+        "zh": "与 Pandemonium 架构相关的公开图片。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+      "license": {
+        "en": "CC BY-SA 3.0",
+        "zh": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "en": "Architecture image",
+        "zh": "架构图片"
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Feature-vote cascade",
+        "zh": "特征投票级联"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
+        "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Pandemonium: A Paradigm for Learning",
+        "zh": "群魔殿：一种学习范式"
+      },
+      "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Voting diagram",
+        "zh": "投票图"
+      }
+    },
+    {
+      "index": 3,
+      "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Layered recognition demons",
+        "zh": "分层识别小程序"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
+        "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。"
+      },
+      "sourceName": {
+        "en": "Pandemonium: A Paradigm for Learning",
+        "zh": "群魔殿：一种学习范式"
+      },
+      "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Layered-recognition diagram",
+        "zh": "分层识别图"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Oliver Selfridge",
+        "type": "portrait-search",
+        "label": "Oliver Selfridge portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Oliver%20Selfridge%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Oliver Selfridge",
+        "type": "commons-portrait-search",
+        "label": "Oliver Selfridge Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Oliver%20Selfridge%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Pandemonium event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1959%20Pandemonium%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Pandemonium Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Pandemonium%201959&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Pandemonium Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Pandemonium%201959",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Pandemonium publication search",
+        "url": "https://www.google.com/search?q=1959%20Pandemonium%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Pandemonium scholar search",
+        "url": "https://scholar.google.com/scholar?q=1959%20Pandemonium%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

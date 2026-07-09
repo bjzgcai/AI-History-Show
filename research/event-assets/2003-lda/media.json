@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:17:33.383Z",
+  "eventKey": "2003-lda",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "David Blei",
+      "role": "First author of LDA",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "David Blei portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=David%20Blei%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "David Blei Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=David%20Blei%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "David Blei official biography search",
+          "url": "https://www.google.com/search?q=David%20Blei%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Michael Jordan",
+      "role": "Co-author and probabilistic ML researcher",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Michael Jordan portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Michael%20Jordan%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Michael Jordan Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Michael Jordan official biography search",
+          "url": "https://www.google.com/search?q=Michael%20Jordan%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Latent Dirichlet Allocation event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2003%20Latent%20Dirichlet%20Allocation%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Latent Dirichlet Allocation Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Latent%20Dirichlet%20Allocation%202003&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Latent Dirichlet Allocation Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Latent%20Dirichlet%20Allocation%202003",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Latent Dirichlet Allocation publication search",
+      "url": "https://www.google.com/search?q=2003%20Latent%20Dirichlet%20Allocation%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Latent Dirichlet Allocation scholar search",
+      "url": "https://scholar.google.com/scholar?q=2003%20Latent%20Dirichlet%20Allocation%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "David M. Blei portrait",
+        "zh": "戴维·M·布莱 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from Blei’s Columbia University homepage.",
+        "zh": "来自 Blei 哥伦比亚大学个人主页的人物图。"
+      },
+      "sourceUrl": "https://www.cs.columbia.edu/~blei/",
+      "sourceLabel": "David M. Blei homepage",
+      "license": {
+        "en": "Personal website photo; rights not stated.",
+        "zh": "Personal website photo; rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Topic mixture simplex",
+        "zh": "主题混合单纯形"
+      },
+      "subcaption": {
+        "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
+        "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+      "sourceLabel": "Latent Dirichlet Allocation",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Plate model sketch",
+        "zh": "Plate 模型草图"
+      },
+      "subcaption": {
+        "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
+        "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+      "sourceLabel": "Latent Dirichlet Allocation",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Latent Dirichlet Allocation",
+        "url": "https://jmlr.org/papers/v3/blei03a.html",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

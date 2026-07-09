@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:24.660Z",
+  "eventKey": "2016-alphago",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2016-alphago",
+      "label": "Lee Sedol, photographed shortly after the AlphaGo match period in 2016",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.lee-sedol-photographed-shortly-after-the-alphago-match-period-in-2016.jpg",
+      "originalLocalPath": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 140385,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Lee Sedol portrait",
+      "rights": "CC BY 2.0",
+      "downloadedAt": "2026-07-03T10:34:24.356Z"
+    },
+    {
+      "eventKey": "2016-alphago",
+      "label": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.nature.com/articles/nature16961",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-explainer-derived-from-the-nature-alphago-paper-and-google-deepmind-alphago-materials.svg",
+      "originalLocalPath": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 3603,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Explainer graphic",
+      "rights": "Original local explainer; publisher figure reuse rights not used.",
+      "downloadedAt": "2026-07-03T10:34:24.660Z"
+    }
+  ]
+}

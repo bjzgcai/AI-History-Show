@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jun-Yan Zhu",
+        "zh": "朱俊彦"
+      },
+      "role": {
+        "en": "CycleGAN lead author",
+        "zh": "CycleGAN 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+          "sourceUrl": "https://www.cs.cmu.edu/~junyanz/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

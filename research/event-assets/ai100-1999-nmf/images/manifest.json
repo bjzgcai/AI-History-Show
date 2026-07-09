@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:58:36.349Z",
+  "eventKey": "ai100-1999-nmf",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-1999-nmf",
+      "label": "Co-author of NMF",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+      "imageUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+      "finalImageUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+      "localPath": "images/001.co-author-of-nmf.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 13805,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "Princeton profile image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:58:36.045Z"
+    },
+    {
+      "eventKey": "ai100-1999-nmf",
+      "label": "Original local explainer of nonnegative parts-based factorization.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1038/44565",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-nonnegative-parts-based-factorization.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1928,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:58:36.349Z"
+    }
+  ]
+}

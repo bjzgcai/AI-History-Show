@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Terry Winograd",
+        "zh": "特里·维诺格拉德"
+      },
+      "role": {
+        "en": "Creator of SHRDLU",
+        "zh": "SHRDLU 创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+          "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+          "license": {
+            "en": "Stanford profile image; reuse rights not stated.",
+            "zh": "斯坦福大学 profile image; reuse rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

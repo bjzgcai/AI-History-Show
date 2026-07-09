@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:06:24.301Z",
+  "eventKey": "ai100-2017-cyclegan",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+      "url": "https://arxiv.org/abs/1703.10593",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICCV open-access paper page",
+      "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "CycleGAN project page",
+      "url": "https://junyanz.github.io/CycleGAN/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Jun-Yan Zhu homepage",
+      "url": "https://www.cs.cmu.edu/~junyanz/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jun-Yan Zhu Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jun-Yan%20Zhu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "CycleGAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CycleGAN%202017&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CycleGAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CycleGAN%202017",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2017%20CycleGAN%20Jun-Yan%20Zhu%20AI%20history%20source%20images",
+      "query": "2017 CycleGAN Jun-Yan Zhu AI history source images",
+      "eventKey": "ai100-2017-cyclegan"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20CycleGAN%20Jun-Yan%20Zhu%20AI%20history%20source%20images",
+      "query": "2017 CycleGAN Jun-Yan Zhu AI history source images",
+      "eventKey": "ai100-2017-cyclegan"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2017%20CycleGAN%20Jun-Yan%20Zhu%20AI%20history%20source%20images",
+      "query": "2017 CycleGAN Jun-Yan Zhu AI history source images",
+      "eventKey": "ai100-2017-cyclegan"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jun-Yan Zhu portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jun-Yan%20Zhu%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jun-Yan Zhu Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jun-Yan%20Zhu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jun-Yan Zhu official biography search",
+      "url": "https://www.google.com/search?q=Jun-Yan%20Zhu%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "CycleGAN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20CycleGAN%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "CycleGAN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=CycleGAN%202017&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "CycleGAN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=CycleGAN%202017",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "CycleGAN publication search",
+      "url": "https://www.google.com/search?q=2017%20CycleGAN%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "CycleGAN scholar search",
+      "url": "https://scholar.google.com/scholar?q=2017%20CycleGAN%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+      "sourceUrl": "https://arxiv.org/abs/1703.10593",
+      "finalUrl": "https://arxiv.org/abs/1703.10593",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1703.10593] Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+      "savedPath": "pages/001.unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks.html",
+      "fetchedAt": "2026-07-03T12:06:24.685Z"
+    },
+    {
+      "label": "ICCV open-access paper page",
+      "sourceUrl": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+      "finalUrl": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+      "ok": false,
+      "status": 404,
+      "contentType": "text/html; charset=iso-8859-1",
+      "title": "404 Not Found",
+      "savedPath": "pages/002.iccv-open-access-paper-page.html",
+      "fetchedAt": "2026-07-03T12:06:26.029Z"
+    },
+    {
+      "label": "CycleGAN project page",
+      "sourceUrl": "https://junyanz.github.io/CycleGAN/",
+      "finalUrl": "https://junyanz.github.io/CycleGAN/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "CycleGAN Project Page",
+      "savedPath": "pages/003.cyclegan-project-page.html",
+      "fetchedAt": "2026-07-03T12:06:27.109Z"
+    },
+    {
+      "label": "Jun-Yan Zhu homepage",
+      "sourceUrl": "https://www.cs.cmu.edu/~junyanz/",
+      "finalUrl": "https://www.cs.cmu.edu/~junyanz/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Jun-Yan Zhu's Homepage",
+      "savedPath": "pages/004.jun-yan-zhu-homepage.html",
+      "fetchedAt": "2026-07-03T12:06:30.127Z"
+    },
+    {
+      "label": "Jun-Yan Zhu Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jun-Yan%20Zhu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jun-Yan%20Zhu%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.jun-yan-zhu-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:06:31.823Z"
+    },
+    {
+      "label": "CycleGAN Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=CycleGAN%202017&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=CycleGAN%202017&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.cyclegan-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:06:33.148Z"
+    },
+    {
+      "label": "CycleGAN Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=CycleGAN%202017",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=CycleGAN%202017",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.cyclegan-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:06:33.755Z"
+    }
+  ]
+}

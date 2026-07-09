@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:49:29.168Z",
+  "eventKey": "1997-deep-blue",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Murray Campbell",
+      "role": "Deep Blue team member",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Murray Campbell portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Murray%20Campbell%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Murray Campbell Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Murray%20Campbell%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Murray Campbell official biography search",
+          "url": "https://www.google.com/search?q=Murray%20Campbell%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Deep Blue event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1997%20Deep%20Blue%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Blue Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Blue%201997&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Blue Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Blue%201997",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Deep Blue publication search",
+      "url": "https://www.google.com/search?q=1997%20Deep%20Blue%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Deep Blue scholar search",
+      "url": "https://scholar.google.com/scholar?q=1997%20Deep%20Blue%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Murray Campbell portrait",
+        "zh": "默里·坎贝尔 肖像"
+      },
+      "subcaption": {
+        "en": "Portrait from IBM Research profile.",
+        "zh": "来自 IBM 研究院 人物资料页的人物图。"
+      },
+      "sourceUrl": "https://research.ibm.com/people/murray-campbell",
+      "sourceLabel": "Murray Campbell, IBM Research",
+      "license": {
+        "en": "IBM Research profile image; reuse rights not stated.",
+        "zh": "IBM 研究院 profile image; reuse rights not stated."
+      },
+      "usage": {
+        "en": "Historical figure / Key contributor portrait",
+        "zh": "历史人物 / 关键贡献者肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Chess search tree",
+        "zh": "国际象棋搜索树"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Blue, based on the listed source material.",
+        "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "sourceLabel": "Deep Blue journal article",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Hardware-assisted board evaluation",
+        "zh": "硬件辅助棋盘评估"
+      },
+      "subcaption": {
+        "en": "Local redraw for Deep Blue, based on the listed source material.",
+        "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
+      },
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "sourceLabel": "Deep Blue journal article",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Supporting image / Distinct explainer graphic",
+        "zh": "辅助图片 / 独立解释图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "History",
+        "label": "IBM100: Deep Blue",
+        "url": "https://www.ibm.com/history/deep-blue",
+        "usage": ""
+      }
+    ],
+    "institutions": [
+      {
+        "type": "Museum",
+        "label": "Mastering the Game, Computer History Museum",
+        "url": "https://www.computerhistory.org/chess/",
+        "usage": ""
+      },
+      {
+        "type": "archiveLink",
+        "label": "Deep Blue journal article",
+        "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "usage": "Source material image / Literature reference"
+      }
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:30:11.821Z",
+  "eventKey": "1986-rnn",
+  "sources": [
+    {
+      "type": "video",
+      "label": "Existing event video",
+      "url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+      "usage": "Already referenced by event data."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jeffrey Elman Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Elman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Michael Jordan Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Recurrent Neural Networks Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Recurrent%20Neural%20Networks%201986&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Recurrent Neural Networks Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Recurrent%20Neural%20Networks%201986",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1986%20Recurrent%20Neural%20Networks%20Jeffrey%20Elman%20Michael%20Jordan%20AI%20history%20source%20images",
+      "query": "1986 Recurrent Neural Networks Jeffrey Elman Michael Jordan AI history source images",
+      "eventKey": "1986-rnn"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1986%20Recurrent%20Neural%20Networks%20Jeffrey%20Elman%20Michael%20Jordan%20AI%20history%20source%20images",
+      "query": "1986 Recurrent Neural Networks Jeffrey Elman Michael Jordan AI history source images",
+      "eventKey": "1986-rnn"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1986%20Recurrent%20Neural%20Networks%20Jeffrey%20Elman%20Michael%20Jordan%20AI%20history%20source%20images",
+      "query": "1986 Recurrent Neural Networks Jeffrey Elman Michael Jordan AI history source images",
+      "eventKey": "1986-rnn"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Jeffrey Elman portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Jeffrey%20Elman%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Jeffrey Elman Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Elman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Jeffrey Elman official biography search",
+      "url": "https://www.google.com/search?q=Jeffrey%20Elman%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Michael Jordan portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Michael%20Jordan%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Michael Jordan Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Michael Jordan official biography search",
+      "url": "https://www.google.com/search?q=Michael%20Jordan%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Recurrent Neural Networks event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1986%20Recurrent%20Neural%20Networks%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Recurrent Neural Networks Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Recurrent%20Neural%20Networks%201986&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Recurrent Neural Networks Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Recurrent%20Neural%20Networks%201986",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Recurrent Neural Networks publication search",
+      "url": "https://www.google.com/search?q=1986%20Recurrent%20Neural%20Networks%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Recurrent Neural Networks scholar search",
+      "url": "https://scholar.google.com/scholar?q=1986%20Recurrent%20Neural%20Networks%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Jeffrey Elman Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Elman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Jeffrey%20Elman%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/001.jeffrey-elman-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:13.574Z"
+    },
+    {
+      "label": "Michael Jordan Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Michael%20Jordan%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/002.michael-jordan-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:15.113Z"
+    },
+    {
+      "label": "Recurrent Neural Networks Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Recurrent%20Neural%20Networks%201986&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Recurrent%20Neural%20Networks%201986&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/003.recurrent-neural-networks-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:30:16.898Z"
+    },
+    {
+      "label": "Recurrent Neural Networks Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Recurrent%20Neural%20Networks%201986",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Recurrent%20Neural%20Networks%201986",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/004.recurrent-neural-networks-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:30:17.667Z"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author of the neural attention paper",
+        "zh": "神经注意力论文共同作者"
+      },
+      "portraitCandidates": []
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Co-author of the neural attention paper",
+        "zh": "神经注意力论文共同作者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

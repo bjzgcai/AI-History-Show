@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:40.859Z",
+  "eventKey": "1971-vc-theory",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Vladimir N. Vapnik",
+      "role": "Co-developed VC theory",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Vladimir N. Vapnik portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Vladimir%20N.%20Vapnik%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Vladimir N. Vapnik Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Vladimir%20N.%20Vapnik%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Vladimir N. Vapnik official biography search",
+          "url": "https://www.google.com/search?q=Vladimir%20N.%20Vapnik%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Alexey Ya. Chervonenkis",
+      "role": "Co-developed VC theory",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Alexey Ya. Chervonenkis portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Alexey%20Ya.%20Chervonenkis%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Alexey Ya. Chervonenkis Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Ya.%20Chervonenkis%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Alexey Ya. Chervonenkis official biography search",
+          "url": "https://www.google.com/search?q=Alexey%20Ya.%20Chervonenkis%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "VC Theory event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1971%20VC%20Theory%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "VC Theory Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=VC%20Theory%201971&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "VC Theory Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=VC%20Theory%201971",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "VC Theory publication search",
+      "url": "https://www.google.com/search?q=1971%20VC%20Theory%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "VC Theory scholar search",
+      "url": "https://scholar.google.com/scholar?q=1971%20VC%20Theory%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Vladimir Vapnik portrait",
+        "zh": "弗拉基米尔·瓦普尼克 肖像"
+      },
+      "subcaption": {
+        "en": "Vladimir Vapnik profile portrait from the Simons Foundation.",
+        "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。"
+      },
+      "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+      "sourceLabel": "Simons Foundation",
+      "license": {
+        "en": "Simons Foundation profile image; page does not state an open reuse license.",
+        "zh": "西蒙斯基金会 profile image; page does not state an open reuse license."
+      },
+      "usage": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "VC theory generalization diagram",
+        "zh": "VC 理论泛化示意图"
+      },
+      "subcaption": {
+        "en": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources.",
+        "zh": "根据 瓦普尼克 与 切尔沃年基斯 的学习理论资料制作的原创解释图。"
+      },
+      "sourceUrl": "https://epubs.siam.org/doi/10.1137/1116025",
+      "sourceLabel": "On the Uniform Convergence of Relative Frequencies",
+      "license": {
+        "en": "Original local explainer; source article and book figure reuse rights not used.",
+        "zh": "Original local explainer; source article and book figure reuse rights not used."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Simons Foundation",
+        "url": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+        "usage": "Portrait"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "On the Uniform Convergence of Relative Frequencies",
+        "url": "https://epubs.siam.org/doi/10.1137/1116025",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:01.764Z",
+  "eventKey": "ai100-2000-lle",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "ai100-2000-lle",
+      "label": "Co-author of LLE",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+      "imageUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+      "finalImageUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+      "localPath": "images/001.co-author-of-lle.jpg",
+      "pageSnapshot": "",
+      "contentType": "image/jpeg",
+      "bytes": 36814,
+      "status": "candidate-review-required",
+      "httpStatus": 200,
+      "usage": "Achievement visual material",
+      "rights": "NYU memorial image; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:59:01.460Z"
+    },
+    {
+      "eventKey": "ai100-2000-lle",
+      "label": "Original local explainer of LLE neighborhood reconstruction.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1126/science.290.5500.2323",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.original-local-explainer-of-lle-neighborhood-reconstruction.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1593,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Achievement visual material",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:59:01.764Z"
+    }
+  ]
+}

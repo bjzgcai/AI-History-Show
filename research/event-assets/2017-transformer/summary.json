@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:31:16.948Z",
+  "eventKey": "2017-transformer",
+  "year": 2017,
+  "title": {
+    "en": "Transformer",
+    "zh": "Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "谷歌大脑"
+    },
+    "country": {
+      "en": "CA, United States",
+      "zh": "美国, 加利福尼亚州"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "description": {
+    "en": "In 2017, Vaswani and collaborators proposed the Transformer in Attention Is All You Need. Self-attention replaced recurrence as the main mechanism for modeling sequences, enabling scalable pretraining and forming the foundation of modern large language models.",
+    "zh": "2017 年，瓦斯瓦尼 等人在《注意力就是你所需要的一切》一文中提出 Transformer模型，其中注意力机制不再只是对齐输入输出，而是对序列内部的关系建模。核心思想是使用动态生成的权重来处理不同输入部分的相关性。 Transformer构架里，不再有循环，不再有卷积，注意力全局可达，是一次工程上的\"思想去冗余、结构去先验\"的探索。 Transformer已成为目前人工智能领域的主导模型。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Transformer diagram",
+        "zh": "Transformer 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Architecture",
+        "zh": "结构示意"
+      },
+      "subcaption": {
+        "en": "Transformer diagram",
+        "zh": "Transformer 架构图"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Attention Is All You Need",
+        "zh": "《注意力就是你所需要的一切》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Ashish Vaswani",
+        "type": "portrait-search",
+        "label": "Ashish Vaswani portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ashish%20Vaswani%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ashish Vaswani",
+        "type": "commons-portrait-search",
+        "label": "Ashish Vaswani Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Transformer event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Transformer Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Transformer Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Transformer publication search",
+        "url": "https://www.google.com/search?q=2017%20Transformer%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Transformer scholar search",
+        "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

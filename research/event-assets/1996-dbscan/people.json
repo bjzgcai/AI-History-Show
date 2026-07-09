@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Ester",
+        "zh": "马丁·埃斯特"
+      },
+      "role": {
+        "en": "Co-author of DBSCAN",
+        "zh": "DBSCAN 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
+      },
+      "role": {
+        "en": "DBSCAN research team",
+        "zh": "DBSCAN 研究团队"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

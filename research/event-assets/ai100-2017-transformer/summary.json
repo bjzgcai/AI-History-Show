@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:02:22.112Z",
+  "eventKey": "ai100-2017-transformer",
+  "year": 2017,
+  "title": {
+    "en": "Transformer",
+    "zh": "Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "Google Brain"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "description": {
+    "en": "<p>The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.</p>",
+    "zh": "<p>Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/figures/ashish-vaswani.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Ashish Vaswani portrait",
+        "zh": "阿希什·瓦斯瓦尼肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of the Transformer paper",
+        "zh": "Transformer 论文共同作者"
+      },
+      "sourceName": {
+        "en": "Local project asset",
+        "zh": "本地项目素材"
+      },
+      "sourceUrl": "resources/images/figures/ashish-vaswani.jpg",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Self-attention stack",
+        "zh": "自注意力堆栈"
+      },
+      "subcaption": {
+        "en": "Original local explainer of transformer self-attention.",
+        "zh": "关于 Transformer 自注意力的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "NeurIPS",
+        "zh": "NeurIPS"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Ashish Vaswani",
+        "type": "portrait-search",
+        "label": "Ashish Vaswani portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Ashish%20Vaswani%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Ashish Vaswani",
+        "type": "commons-portrait-search",
+        "label": "Ashish Vaswani Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Ashish%20Vaswani%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Noam Shazeer",
+        "type": "portrait-search",
+        "label": "Noam Shazeer portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Noam%20Shazeer%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Noam Shazeer",
+        "type": "commons-portrait-search",
+        "label": "Noam Shazeer Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Noam%20Shazeer%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Transformer event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2017%20Transformer%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Transformer Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Transformer%202017&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Transformer Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Transformer%202017",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Transformer publication search",
+        "url": "https://www.google.com/search?q=2017%20Transformer%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Transformer scholar search",
+        "url": "https://scholar.google.com/scholar?q=2017%20Transformer%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

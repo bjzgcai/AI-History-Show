@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Author of the frame representation proposal",
+        "zh": "框架表示思想提出者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+          "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+          "license": {
+            "en": "MIT News image; terms stated on MIT News media page.",
+            "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page."
+          },
+          "usage": {
+            "en": "Historical figure / Key contributor portrait",
+            "zh": "历史人物 / 关键贡献者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

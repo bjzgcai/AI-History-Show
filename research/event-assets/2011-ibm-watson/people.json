@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "David Ferrucci",
+        "zh": "戴维·费鲁奇"
+      },
+      "role": {
+        "en": "Principal investigator of the Watson / DeepQA team",
+        "zh": "Watson / DeepQA 团队负责人"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "IBM DeepQA team",
+        "zh": "IBM DeepQA 团队"
+      },
+      "role": {
+        "en": "Built the question-answering system",
+        "zh": "构建问答系统"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "license": {
+            "en": "CC BY 2.0",
+            "zh": "CC BY 2.0"
+          },
+          "usage": {
+            "en": "Historical figure photo",
+            "zh": "历史人物照片"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

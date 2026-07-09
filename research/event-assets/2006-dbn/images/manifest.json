@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:53:10.489Z",
+  "eventKey": "2006-dbn",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2006-dbn",
+      "label": "Photo from Hinton's University of Toronto page.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.photo-from-hinton-s-university-of-toronto-page.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 498467,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "University personal photo page; reuse rights not stated.",
+      "downloadedAt": "2026-07-03T11:53:10.184Z"
+    },
+    {
+      "eventKey": "2006-dbn",
+      "label": "Local redraw for Deep Belief Network, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-deep-belief-network-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 6254,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:53:10.489Z"
+    }
+  ]
+}

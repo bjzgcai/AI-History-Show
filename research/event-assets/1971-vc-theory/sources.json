@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:34:40.860Z",
+  "eventKey": "1971-vc-theory",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "On the Uniform Convergence of Relative Frequencies",
+      "url": "https://epubs.siam.org/doi/10.1137/1116025",
+      "usage": ""
+    },
+    {
+      "type": "Book",
+      "label": "The Nature of Statistical Learning Theory",
+      "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
+      "usage": ""
+    },
+    {
+      "type": "Overview",
+      "label": "An Overview of Statistical Learning Theory",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Simons Foundation",
+      "url": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+      "usage": "Portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Vladimir N. Vapnik Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Vladimir%20N.%20Vapnik%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alexey Ya. Chervonenkis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Ya.%20Chervonenkis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "VC Theory Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=VC%20Theory%201971&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "VC Theory Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=VC%20Theory%201971",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1971%20VC%20Theory%20Vladimir%20N.%20Vapnik%20Alexey%20Ya.%20Chervonenkis%20AI%20history%20source%20images",
+      "query": "1971 VC Theory Vladimir N. Vapnik Alexey Ya. Chervonenkis AI history source images",
+      "eventKey": "1971-vc-theory"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1971%20VC%20Theory%20Vladimir%20N.%20Vapnik%20Alexey%20Ya.%20Chervonenkis%20AI%20history%20source%20images",
+      "query": "1971 VC Theory Vladimir N. Vapnik Alexey Ya. Chervonenkis AI history source images",
+      "eventKey": "1971-vc-theory"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1971%20VC%20Theory%20Vladimir%20N.%20Vapnik%20Alexey%20Ya.%20Chervonenkis%20AI%20history%20source%20images",
+      "query": "1971 VC Theory Vladimir N. Vapnik Alexey Ya. Chervonenkis AI history source images",
+      "eventKey": "1971-vc-theory"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Vladimir N. Vapnik portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Vladimir%20N.%20Vapnik%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Vladimir N. Vapnik Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Vladimir%20N.%20Vapnik%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Vladimir N. Vapnik official biography search",
+      "url": "https://www.google.com/search?q=Vladimir%20N.%20Vapnik%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Alexey Ya. Chervonenkis portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Alexey%20Ya.%20Chervonenkis%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Alexey Ya. Chervonenkis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Ya.%20Chervonenkis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Alexey Ya. Chervonenkis official biography search",
+      "url": "https://www.google.com/search?q=Alexey%20Ya.%20Chervonenkis%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "VC Theory event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1971%20VC%20Theory%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "VC Theory Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=VC%20Theory%201971&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "VC Theory Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=VC%20Theory%201971",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "VC Theory publication search",
+      "url": "https://www.google.com/search?q=1971%20VC%20Theory%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "VC Theory scholar search",
+      "url": "https://scholar.google.com/scholar?q=1971%20VC%20Theory%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "On the Uniform Convergence of Relative Frequencies",
+      "sourceUrl": "https://epubs.siam.org/doi/10.1137/1116025",
+      "finalUrl": "https://epubs.siam.org/doi/10.1137/1116025",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/001.on-the-uniform-convergence-of-relative-frequencies.html",
+      "fetchedAt": "2026-07-03T10:34:42.227Z"
+    },
+    {
+      "label": "The Nature of Statistical Learning Theory",
+      "sourceUrl": "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
+      "finalUrl": "https://link.springer.com/book/10.1007/978-1-4757-2440-0?error=cookies_not_supported&code=448d381c-8542-4349-9bd3-10de7afb1f40",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "The Nature of Statistical Learning Theory | Springer Nature Link",
+      "savedPath": "pages/002.the-nature-of-statistical-learning-theory.html",
+      "fetchedAt": "2026-07-03T10:34:46.333Z"
+    },
+    {
+      "label": "An Overview of Statistical Learning Theory",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/",
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "An overview of statistical learning theory - PubMed",
+      "savedPath": "pages/003.an-overview-of-statistical-learning-theory.html",
+      "fetchedAt": "2026-07-03T10:34:47.205Z"
+    },
+    {
+      "label": "Simons Foundation",
+      "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+      "finalUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Vladimir Vapnik",
+      "savedPath": "pages/004.simons-foundation.html",
+      "fetchedAt": "2026-07-03T10:34:50.278Z"
+    },
+    {
+      "label": "Vladimir N. Vapnik Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Vladimir%20N.%20Vapnik%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "This operation was aborted",
+      "fetchedAt": "2026-07-03T10:37:16.950Z"
+    },
+    {
+      "label": "Alexey Ya. Chervonenkis Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Alexey%20Ya.%20Chervonenkis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": false,
+      "error": "fetch failed",
+      "fetchedAt": "2026-07-03T10:37:17.323Z"
+    },
+    {
+      "label": "VC Theory Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=VC%20Theory%201971&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=VC%20Theory%201971&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.vc-theory-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T10:37:18.595Z"
+    },
+    {
+      "label": "VC Theory Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=VC%20Theory%201971",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=VC%20Theory%201971",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.vc-theory-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T10:37:19.207Z"
+    }
+  ]
+}

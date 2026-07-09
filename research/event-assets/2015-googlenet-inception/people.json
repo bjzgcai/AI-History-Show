@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
+      "role": {
+        "en": "Lead author of the GoogLeNet paper",
+        "zh": "GoogLeNet 论文第一作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+          "license": {
+            "en": "Podcast episode artwork; rights not stated.",
+            "zh": "Podcast episode artwork; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Inception author portrait",
+            "zh": "历史人物 / Inception 作者人物图"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Google research team",
+        "zh": "谷歌 研究团队"
+      },
+      "role": {
+        "en": "Developed the Inception architecture",
+        "zh": "开发 Inception 架构"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+          "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+          "license": {
+            "en": "Podcast episode artwork; rights not stated.",
+            "zh": "Podcast episode artwork; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Inception author portrait",
+            "zh": "历史人物 / Inception 作者人物图"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

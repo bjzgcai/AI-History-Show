@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Jeffrey Pennington",
+        "zh": "杰弗里·彭宁顿"
+      },
+      "role": {
+        "en": "GloVe lead author",
+        "zh": "GloVe 主要作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+          "sourceUrl": "https://nlp.stanford.edu/~jpennin/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

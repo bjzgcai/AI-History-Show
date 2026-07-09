@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:29:56.055Z",
+  "eventKey": "1969-ai-winter",
+  "year": 1969,
+  "title": {
+    "en": "The First AI Winter Arrives",
+    "zh": "第一次寒冬的到来"
+  },
+  "location": {
+    "name": {
+      "en": "MIT",
+      "zh": "麻省理工学院"
+    },
+    "country": {
+      "en": "MA, United States",
+      "zh": "美国, 马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "description": {
+    "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade.",
+    "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      },
+      "subcaption": {
+        "en": "Relevant researcher photo",
+        "zh": "相关研究者照片"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "《感知机：计算几何学导论》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    },
+    {
+      "index": 2,
+      "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png",
+      "existsLocally": true,
+      "caption": {
+        "en": "Paper page",
+        "zh": "论文页面"
+      },
+      "subcaption": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "《感知机：计算几何学导论》"
+      },
+      "sourceName": {
+        "en": "",
+        "zh": ""
+      },
+      "sourceUrl": "",
+      "license": {
+        "en": "",
+        "zh": ""
+      },
+      "usage": {
+        "en": "",
+        "zh": ""
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Marvin Minsky",
+        "type": "portrait-search",
+        "label": "Marvin Minsky portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Marvin%20Minsky%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Marvin Minsky",
+        "type": "commons-portrait-search",
+        "label": "Marvin Minsky Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Marvin%20Minsky%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "The First AI Winter Arrives event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1969%20The%20First%20AI%20Winter%20Arrives%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "The First AI Winter Arrives Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=The%20First%20AI%20Winter%20Arrives%201969&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "The First AI Winter Arrives Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=The%20First%20AI%20Winter%20Arrives%201969",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "The First AI Winter Arrives publication search",
+        "url": "https://www.google.com/search?q=1969%20The%20First%20AI%20Winter%20Arrives%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "The First AI Winter Arrives scholar search",
+        "url": "https://scholar.google.com/scholar?q=1969%20The%20First%20AI%20Winter%20Arrives%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [
+    "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4"
+  ],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 3,
+    "manifest": "images/manifest.json"
+  }
+}

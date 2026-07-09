@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:16.017Z",
+  "eventKey": "ai100-2020-alphafold2",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Highly accurate protein structure prediction with AlphaFold",
+      "url": "https://doi.org/10.1038/s41586-021-03819-2",
+      "usage": ""
+    },
+    {
+      "type": "Publication",
+      "label": "DeepMind AlphaFold page",
+      "url": "https://deepmind.google/technologies/alphafold/",
+      "usage": ""
+    },
+    {
+      "type": "Dataset",
+      "label": "AlphaFold Protein Structure Database",
+      "url": "https://alphafold.ebi.ac.uk/",
+      "usage": ""
+    },
+    {
+      "type": "Code",
+      "label": "AlphaFold GitHub repository",
+      "url": "https://github.com/google-deepmind/alphafold",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Vanderbilt University",
+      "url": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John Jumper Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20Jumper%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Demis Hassabis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlphaFold2 Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlphaFold2%202020&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlphaFold2 Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlphaFold2%202020",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2020%20AlphaFold2%20John%20Jumper%20Demis%20Hassabis%20AI%20history%20source%20images",
+      "query": "2020 AlphaFold2 John Jumper Demis Hassabis AI history source images",
+      "eventKey": "ai100-2020-alphafold2"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2020%20AlphaFold2%20John%20Jumper%20Demis%20Hassabis%20AI%20history%20source%20images",
+      "query": "2020 AlphaFold2 John Jumper Demis Hassabis AI history source images",
+      "eventKey": "ai100-2020-alphafold2"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2020%20AlphaFold2%20John%20Jumper%20Demis%20Hassabis%20AI%20history%20source%20images",
+      "query": "2020 AlphaFold2 John Jumper Demis Hassabis AI history source images",
+      "eventKey": "ai100-2020-alphafold2"
+    },
+    {
+      "type": "portrait-search",
+      "label": "John Jumper portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=John%20Jumper%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "John Jumper Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=John%20Jumper%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "John Jumper official biography search",
+      "url": "https://www.google.com/search?q=John%20Jumper%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Demis Hassabis portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Demis%20Hassabis%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Demis Hassabis Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Demis Hassabis official biography search",
+      "url": "https://www.google.com/search?q=Demis%20Hassabis%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "AlphaFold2 event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2020%20AlphaFold2%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "AlphaFold2 Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=AlphaFold2%202020&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "AlphaFold2 Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=AlphaFold2%202020",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "AlphaFold2 publication search",
+      "url": "https://www.google.com/search?q=2020%20AlphaFold2%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "AlphaFold2 scholar search",
+      "url": "https://scholar.google.com/scholar?q=2020%20AlphaFold2%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Highly accurate protein structure prediction with AlphaFold",
+      "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2",
+      "finalUrl": "https://www.nature.com/articles/s41586-021-03819-2?error=cookies_not_supported&code=608fe0d6-ec82-40d0-bea3-5352748ad1ba",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=\"UTF-8\"",
+      "title": "Highly accurate protein structure prediction with AlphaFold | Nature",
+      "savedPath": "pages/001.highly-accurate-protein-structure-prediction-with-alphafold.html",
+      "fetchedAt": "2026-07-03T12:04:19.950Z"
+    },
+    {
+      "label": "DeepMind AlphaFold page",
+      "sourceUrl": "https://deepmind.google/technologies/alphafold/",
+      "finalUrl": "https://deepmind.google/science/alphafold/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "AlphaFold — Google DeepMind",
+      "savedPath": "pages/002.deepmind-alphafold-page.html",
+      "fetchedAt": "2026-07-03T12:04:22.218Z"
+    },
+    {
+      "label": "AlphaFold Protein Structure Database",
+      "sourceUrl": "https://alphafold.ebi.ac.uk/",
+      "finalUrl": "https://alphafold.ebi.ac.uk/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "title": "AlphaFold Protein Structure Database",
+      "savedPath": "pages/003.alphafold-protein-structure-database.html",
+      "fetchedAt": "2026-07-03T12:04:24.358Z"
+    },
+    {
+      "label": "AlphaFold GitHub repository",
+      "sourceUrl": "https://github.com/google-deepmind/alphafold",
+      "finalUrl": "https://github.com/google-deepmind/alphafold",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitHub - google-deepmind/alphafold: Open source code for AlphaFold 2. · GitHub",
+      "savedPath": "pages/004.alphafold-github-repository.html",
+      "fetchedAt": "2026-07-03T12:04:25.570Z"
+    },
+    {
+      "label": "Vanderbilt University",
+      "sourceUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+      "finalUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "John M. Jumper, DeepMind researcher and Vanderbilt alumnus, shares 2024 Nobel Prize in chemistry | Vanderbilt University",
+      "savedPath": "pages/005.vanderbilt-university.html",
+      "fetchedAt": "2026-07-03T12:04:28.473Z"
+    },
+    {
+      "label": "John Jumper Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=John%20Jumper%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=John%20Jumper%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.john-jumper-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:29.634Z"
+    },
+    {
+      "label": "Demis Hassabis Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Demis%20Hassabis%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.demis-hassabis-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:30.912Z"
+    },
+    {
+      "label": "AlphaFold2 Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=AlphaFold2%202020&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=AlphaFold2%202020&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/008.alphafold2-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:04:32.076Z"
+    },
+    {
+      "label": "AlphaFold2 Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=AlphaFold2%202020",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=AlphaFold2%202020",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/009.alphafold2-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:04:32.681Z"
+    }
+  ]
+}

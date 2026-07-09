@@ -1,0 +1,26 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Warren McCulloch",
+        "zh": "沃伦·麦卡洛克"
+      },
+      "role": {
+        "en": "Co-author of the logical neuron model",
+        "zh": "逻辑神经元模型共同作者"
+      },
+      "portraitCandidates": []
+    },
+    {
+      "name": {
+        "en": "Walter Pitts",
+        "zh": "沃尔特·皮茨"
+      },
+      "role": {
+        "en": "Co-author of the logical neuron model",
+        "zh": "逻辑神经元模型共同作者"
+      },
+      "portraitCandidates": []
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:55:32.567Z",
+  "eventKey": "1957-kmeans",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Stuart Lloyd",
+      "role": "Author of Lloyd's k-means-style quantization method",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Stuart Lloyd Bell Labs portrait search",
+          "url": "https://www.google.com/search?tbm=isch&q=Stuart%20Lloyd%20Bell%20Labs%20portrait",
+          "usage": "Use as lead only; verify original source and rights."
+        },
+        {
+          "type": "portrait-search",
+          "label": "Stuart Lloyd portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Stuart%20Lloyd%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Stuart Lloyd Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Stuart%20Lloyd%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Stuart Lloyd official biography search",
+          "url": "https://www.google.com/search?q=Stuart%20Lloyd%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "institution-photo",
+      "label": "Bell Labs Holmdel Complex image lead",
+      "url": "https://en.wikipedia.org/wiki/Bell_Labs_Holmdel_Complex",
+      "usage": "Institution/background image lead; review linked file page before production use."
+    },
+    {
+      "type": "diagram-file",
+      "label": "Iris k-means clustering graphic - Commons file",
+      "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+      "usage": "Open visual candidate for explaining clustering."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "K-means event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1957%20%2F%201982%20K-means%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "K-means Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=K-means%201957%20%2F%201982&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "K-means Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=K-means%201957%20%2F%201982",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-record",
+      "label": "MacQueen k-means proceedings record",
+      "url": "https://projecteuclid.org/euclid.bsmsp/1200512992",
+      "usage": "Primary source for the k-means term."
+    },
+    {
+      "type": "publication-record",
+      "label": "Lloyd quantization paper DOI",
+      "url": "https://doi.org/10.1109/TIT.1982.1056489",
+      "usage": "Canonical Lloyd algorithm publication record."
+    },
+    {
+      "type": "publication-search",
+      "label": "K-means publication search",
+      "url": "https://www.google.com/search?q=1957%20%2F%201982%20K-means%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "K-means scholar search",
+      "url": "https://scholar.google.com/scholar?q=1957%20%2F%201982%20K-means%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Bell Labs Holmdel",
+        "zh": "贝尔实验室 Holmdel"
+      },
+      "subcaption": {
+        "en": "Bell Labs visual context for Lloyd-style quantization work.",
+        "zh": "劳埃德 量化方法相关的贝尔实验室背景图。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "CC BY-SA 2.0",
+        "zh": "CC BY-SA 2.0"
+      },
+      "usage": {
+        "en": "Institution photo",
+        "zh": "机构照片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Iris k-means clustering graphic",
+        "zh": "鸢尾花 k-means 聚类图"
+      },
+      "subcaption": {
+        "en": "Public-domain k-means clustering illustration.",
+        "zh": "公有领域的 k-means 聚类示意图。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+      "sourceLabel": "Iris Flowers k-means clustering graphic",
+      "license": {
+        "en": "Public domain",
+        "zh": "Public domain"
+      },
+      "usage": {
+        "en": "Clustering diagram",
+        "zh": "聚类图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Centroid assignment loop",
+        "zh": "质心分配循环"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Least squares quantization in PCM.",
+        "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489",
+      "sourceLabel": "Least squares quantization in PCM",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Algorithm diagram",
+        "zh": "算法图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Cluster update step",
+        "zh": "簇更新步骤"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on scikit-learn KMeans documentation.",
+        "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。"
+      },
+      "sourceUrl": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+      "sourceLabel": "scikit-learn KMeans documentation",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Update diagram",
+        "zh": "更新图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+        "usage": "Institution photo"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Least squares quantization in PCM",
+        "url": "https://doi.org/10.1109/TIT.1982.1056489",
+        "usage": ""
+      },
+      {
+        "type": "History note",
+        "label": "Bell Labs k-means history note",
+        "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+        "usage": ""
+      },
+      {
+        "type": "primary",
+        "label": "MacQueen k-means proceedings record",
+        "url": "https://projecteuclid.org/euclid.bsmsp/1200512992",
+        "usage": "Primary source for the k-means term and clustering method.",
+        "status": "seed"
+      }
+    ],
+    "institutions": []
+  }
+}

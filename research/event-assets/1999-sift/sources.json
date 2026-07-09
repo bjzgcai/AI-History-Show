@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:50:25.717Z",
+  "eventKey": "1999-sift",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Object Recognition from Local Scale-Invariant Features",
+      "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "usage": ""
+    },
+    {
+      "type": "Journal article",
+      "label": "Distinctive Image Features from Scale-Invariant Keypoints",
+      "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
+      "usage": ""
+    },
+    {
+      "type": "Profile",
+      "label": "David Lowe, UBC Computer Science",
+      "url": "https://www.cs.ubc.ca/people/david-lowe",
+      "usage": ""
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Lowe Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Lowe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "SIFT Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SIFT%201999&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SIFT Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SIFT%201999",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1999%20SIFT%20David%20Lowe%20AI%20history%20source%20images",
+      "query": "1999 SIFT David Lowe AI history source images",
+      "eventKey": "1999-sift"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1999%20SIFT%20David%20Lowe%20AI%20history%20source%20images",
+      "query": "1999 SIFT David Lowe AI history source images",
+      "eventKey": "1999-sift"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1999%20SIFT%20David%20Lowe%20AI%20history%20source%20images",
+      "query": "1999 SIFT David Lowe AI history source images",
+      "eventKey": "1999-sift"
+    },
+    {
+      "type": "portrait-search",
+      "label": "David Lowe portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=David%20Lowe%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "David Lowe Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=David%20Lowe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "David Lowe official biography search",
+      "url": "https://www.google.com/search?q=David%20Lowe%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "SIFT event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1999%20SIFT%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "SIFT Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=SIFT%201999&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "SIFT Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=SIFT%201999",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "SIFT publication search",
+      "url": "https://www.google.com/search?q=1999%20SIFT%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "SIFT scholar search",
+      "url": "https://scholar.google.com/scholar?q=1999%20SIFT%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Object Recognition from Local Scale-Invariant Features",
+      "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "finalUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf",
+      "title": "",
+      "savedPath": "pages/001.object-recognition-from-local-scale-invariant-features.html",
+      "fetchedAt": "2026-07-03T11:50:30.922Z"
+    },
+    {
+      "label": "Distinctive Image Features from Scale-Invariant Keypoints",
+      "sourceUrl": "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
+      "finalUrl": "https://link.springer.com/article/10.1023/B:VISI.0000029664.99615.94",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Client Challenge",
+      "savedPath": "pages/002.distinctive-image-features-from-scale-invariant-keypoints.html",
+      "fetchedAt": "2026-07-03T11:50:33.311Z"
+    },
+    {
+      "label": "David Lowe, UBC Computer Science",
+      "sourceUrl": "https://www.cs.ubc.ca/people/david-lowe",
+      "finalUrl": "https://www.cs.ubc.ca/people/david-lowe",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "David Lowe | Computer Science at UBC",
+      "savedPath": "pages/003.david-lowe-ubc-computer-science.html",
+      "fetchedAt": "2026-07-03T11:50:34.690Z"
+    },
+    {
+      "label": "David Lowe Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Lowe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=David%20Lowe%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/004.david-lowe-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:36.246Z"
+    },
+    {
+      "label": "SIFT Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=SIFT%201999&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=SIFT%201999&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.sift-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:50:38.193Z"
+    },
+    {
+      "label": "SIFT Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=SIFT%201999",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=SIFT%201999",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/006.sift-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:50:38.805Z"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:54:44.906Z",
+  "eventKey": "1984-cyc",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Douglas Lenat",
+      "role": "Founder of the Cyc project",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Douglas Lenat portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Douglas%20Lenat%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Douglas Lenat Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Douglas%20Lenat%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Douglas Lenat official biography search",
+          "url": "https://www.google.com/search?q=Douglas%20Lenat%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "R. V. Guha",
+      "role": "Co-author of core Cyc representation work",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "R. V. Guha portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=R.%20V.%20Guha%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "R. V. Guha Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=R.%20V.%20Guha%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "R. V. Guha official biography search",
+          "url": "https://www.google.com/search?q=R.%20V.%20Guha%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "Cyc event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1984%20Cyc%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Cyc Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Cyc%201984&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Cyc Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Cyc%201984",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "Cyc publication search",
+      "url": "https://www.google.com/search?q=1984%20Cyc%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Cyc scholar search",
+      "url": "https://scholar.google.com/scholar?q=1984%20Cyc%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Douglas Lenat portrait",
+        "zh": "道格拉斯·莱纳特 人物照片"
+      },
+      "subcaption": {
+        "en": "Founder of the Cyc project.",
+        "zh": "Cyc 项目创始人。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+      "sourceLabel": "Wikimedia Commons",
+      "license": {
+        "en": "CC BY-SA 4.0",
+        "zh": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "en": "Historical figure photo",
+        "zh": "历史人物照片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Cyc projects logos",
+        "zh": "Cyc 项目标识"
+      },
+      "subcaption": {
+        "en": "Public image of Cyc project logos.",
+        "zh": "Cyc 项目标识公开图片。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+      "sourceLabel": "Cyc projects logo image",
+      "license": {
+        "en": "CC BY-SA 4.0",
+        "zh": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "en": "Project image",
+        "zh": "项目图片"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Cyc microtheories",
+        "zh": "Cyc 微理论"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on Building Large Knowledge-Based Systems.",
+        "zh": "依据 构建大型知识系统 制作的本地解释图。"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571",
+      "sourceLabel": "Building Large Knowledge-Based Systems",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Knowledge-base diagram",
+        "zh": "知识库图"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Common-sense rule frame",
+        "zh": "常识规则框架"
+      },
+      "subcaption": {
+        "en": "Original local explainer based on The Evolution of CycL.",
+        "zh": "依据 CycL 的演化 制作的本地解释图。"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/122296.122308",
+      "sourceLabel": "The Evolution of CycL",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "Original local SVG redraw; source figures are not copied."
+      },
+      "usage": {
+        "en": "Rule diagram",
+        "zh": "规则图"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+        "usage": "Historical figure photo"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "The Evolution of CycL",
+        "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:04:41.206Z",
+  "eventKey": "ai100-2021-dalle",
+  "year": 2021,
+  "title": {
+    "en": "DALL-E",
+    "zh": "DALL-E"
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "description": {
+    "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>",
+    "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+      "existsLocally": false,
+      "caption": {
+        "en": "Aditya Ramesh portrait",
+        "zh": "阿迪蒂亚·拉梅什肖像"
+      },
+      "subcaption": {
+        "en": "DALL-E lead author and creator",
+        "zh": "DALL-E 主要作者与创建者"
+      },
+      "sourceName": {
+        "en": "VentureBeat / OpenAI via BAAI Hub",
+        "zh": "VentureBeat / OpenAI，经智源社区转载"
+      },
+      "sourceUrl": "https://hub.baai.ac.cn/view/23577",
+      "license": {
+        "en": "OpenAI image republished by BAAI Hub; reuse rights not stated.",
+        "zh": "OpenAI 图片，经智源社区转载；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    },
+    {
+      "index": 1,
+      "path": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "DALL-E text-to-image flow",
+        "zh": "DALL-E 文生图流程"
+      },
+      "subcaption": {
+        "en": "Original local explainer of prompt-conditioned image generation.",
+        "zh": "关于提示词条件图像生成的本地原创解释图。"
+      },
+      "sourceName": {
+        "en": "ICML",
+        "zh": "ICML"
+      },
+      "sourceUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Aditya Ramesh",
+        "type": "portrait-search",
+        "label": "Aditya Ramesh portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Aditya%20Ramesh%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Aditya Ramesh",
+        "type": "commons-portrait-search",
+        "label": "Aditya Ramesh Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Aditya%20Ramesh%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "DALL-E event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=2021%20DALL-E%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "DALL-E Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=DALL-E%202021&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "DALL-E Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=DALL-E%202021",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "DALL-E publication search",
+        "url": "https://www.google.com/search?q=2021%20DALL-E%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "DALL-E scholar search",
+        "url": "https://scholar.google.com/scholar?q=2021%20DALL-E%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

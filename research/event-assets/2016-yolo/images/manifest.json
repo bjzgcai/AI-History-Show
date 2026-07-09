@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:41.384Z",
+  "eventKey": "2016-yolo",
+  "storage": "research/event-assets/{eventKey}/images",
+  "guidance": "Downloaded files are research candidates only. Do not move to production resources until rights are reviewed.",
+  "images": [
+    {
+      "eventKey": "2016-yolo",
+      "label": "Allen School news photo for Redmon’s Google Ph.D. Fellowship.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/001.allen-school-news-photo-for-redmon-s-google-ph.d.-fellowship.jpg",
+      "originalLocalPath": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 188589,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Historical figure / Key contributor portrait",
+      "rights": "Institution news image; rights not stated.",
+      "downloadedAt": "2026-07-03T11:09:41.080Z"
+    },
+    {
+      "eventKey": "2016-yolo",
+      "label": "Local redraw for YOLO, based on the listed source material.",
+      "type": "existing-event-asset",
+      "person": "",
+      "sourcePageUrl": "https://arxiv.org/abs/1506.02640",
+      "imageUrl": "",
+      "finalImageUrl": "",
+      "localPath": "images/002.local-redraw-for-yolo-based-on-the-listed-source-material.svg",
+      "originalLocalPath": "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
+      "pageSnapshot": "",
+      "contentType": "",
+      "bytes": 1191,
+      "status": "existing-event-asset-review-required",
+      "httpStatus": 0,
+      "usage": "Supporting image / Distinct explainer graphic",
+      "rights": "Original local SVG redraw; source figures are not copied.",
+      "downloadedAt": "2026-07-03T11:09:41.384Z"
+    }
+  ]
+}

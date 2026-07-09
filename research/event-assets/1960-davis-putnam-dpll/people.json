@@ -1,0 +1,104 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Davis",
+        "zh": "马丁·戴维斯"
+      },
+      "role": {
+        "en": "Co-developed Davis-Putnam and DPLL procedures",
+        "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "license": {
+            "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+            "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Hilary Putnam",
+        "zh": "希拉里·普特南"
+      },
+      "role": {
+        "en": "Co-authored the 1960 Davis-Putnam procedure",
+        "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "license": {
+            "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+            "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "George Logemann",
+        "zh": "乔治·洛格曼"
+      },
+      "role": {
+        "en": "Co-authored the 1962 DPLL program paper",
+        "zh": "共同撰写 1962 年 DPLL 程序论文"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "license": {
+            "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+            "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Donald W. Loveland",
+        "zh": "唐纳德·W·洛夫兰"
+      },
+      "role": {
+        "en": "Co-authored the 1962 DPLL program paper",
+        "zh": "共同撰写 1962 年 DPLL 程序论文"
+      },
+      "portraitCandidates": [
+        {
+          "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "license": {
+            "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+            "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+          },
+          "usage": {
+            "en": "Portrait",
+            "zh": "人物肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

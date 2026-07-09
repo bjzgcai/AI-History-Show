@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T10:37:46.939Z",
+  "eventKey": "1960-davis-putnam-dpll",
+  "year": "1960-1962",
+  "title": {
+    "en": "Davis-Putnam & DPLL",
+    "zh": "DP/DPLL 算法"
+  },
+  "location": {
+    "name": {
+      "en": "New York University / Princeton University / RPI",
+      "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
+    },
+    "country": {
+      "en": "New York and Princeton, United States",
+      "zh": "美国，纽约与普林斯顿"
+    },
+    "coordinates": [
+      40.7295,
+      -73.9965
+    ]
+  },
+  "description": {
+    "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>",
+    "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 《ACM 杂志》 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>"
+  },
+  "currentAssets": [
+    {
+      "index": 0,
+      "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Hilary Putnam portrait",
+        "zh": "希拉里·普特南 肖像"
+      },
+      "subcaption": {
+        "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure.",
+        "zh": "维基共享资源 收录的 希拉里·普特南 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。"
+      },
+      "sourceName": {
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+      "license": {
+        "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+        "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+      },
+      "usage": {
+        "en": "Portrait",
+        "zh": "人物肖像"
+      }
+    },
+    {
+      "index": 1,
+      "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg",
+      "existsLocally": true,
+      "caption": {
+        "en": "Davis-Putnam and DPLL SAT search",
+        "zh": "Davis-Putnam 与 DPLL SAT 搜索"
+      },
+      "subcaption": {
+        "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance.",
+        "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。"
+      },
+      "sourceName": {
+        "en": "Local explainer based on Davis-Putnam 1960 and Davis-Logemann-Loveland 1962",
+        "zh": "Local explainer based on Davis-Putnam 1960 and Davis-Logemann-Loveland 1962"
+      },
+      "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034",
+      "license": {
+        "en": "Original local explainer; source article images not reused.",
+        "zh": "Original local explainer; source article images not reused."
+      },
+      "usage": {
+        "en": "Supporting image / Explainer graphic",
+        "zh": "辅助说明图 / 解释性图形"
+      }
+    }
+  ],
+  "mediaSummary": {
+    "portraits": [
+      {
+        "person": "Martin Davis",
+        "type": "portrait-search",
+        "label": "Martin Davis portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Martin%20Davis%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Martin Davis",
+        "type": "commons-portrait-search",
+        "label": "Martin Davis Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Martin%20Davis%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Hilary Putnam",
+        "type": "portrait-search",
+        "label": "Hilary Putnam portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Hilary%20Putnam%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Hilary Putnam",
+        "type": "commons-portrait-search",
+        "label": "Hilary Putnam Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Hilary%20Putnam%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "George Logemann",
+        "type": "portrait-search",
+        "label": "George Logemann portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=George%20Logemann%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "George Logemann",
+        "type": "commons-portrait-search",
+        "label": "George Logemann Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=George%20Logemann%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      },
+      {
+        "person": "Donald W. Loveland",
+        "type": "portrait-search",
+        "label": "Donald W. Loveland portrait image search",
+        "url": "https://www.google.com/search?tbm=isch&q=Donald%20W.%20Loveland%20portrait",
+        "usage": "Find portrait candidates; open original file page and verify license."
+      },
+      {
+        "person": "Donald W. Loveland",
+        "type": "commons-portrait-search",
+        "label": "Donald W. Loveland Wikimedia Commons image search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Donald%20W.%20Loveland%20computer%20scientist&title=Special:MediaSearch&type=image",
+        "usage": "Prefer files with clear Commons license metadata."
+      }
+    ],
+    "eventImages": [
+      {
+        "type": "event-photo-search",
+        "label": "Davis-Putnam & DPLL event photo search",
+        "url": "https://www.google.com/search?tbm=isch&q=1960-1962%20Davis-Putnam%20%26%20DPLL%20photograph%20participants",
+        "usage": "Look for event photographs, group photos, venue images, or archive scans."
+      },
+      {
+        "type": "open-image-search",
+        "label": "Davis-Putnam & DPLL Wikimedia Commons search",
+        "url": "https://commons.wikimedia.org/w/index.php?search=Davis-Putnam%20%26%20DPLL%201960-1962&title=Special:MediaSearch&type=image",
+        "usage": "Open-license image candidates; verify each file page before using."
+      },
+      {
+        "type": "archive-image-search",
+        "label": "Davis-Putnam & DPLL Library of Congress image search",
+        "url": "https://www.loc.gov/pictures/search/?q=Davis-Putnam%20%26%20DPLL%201960-1962",
+        "usage": "Historical image candidate search; verify rights statement."
+      }
+    ],
+    "publications": [
+      {
+        "type": "publication-search",
+        "label": "Davis-Putnam & DPLL publication search",
+        "url": "https://www.google.com/search?q=1960-1962%20Davis-Putnam%20%26%20DPLL%20paper%20publication%20journal%20proceedings",
+        "usage": "Find paper, journal, proceedings, magazine, or archive records."
+      },
+      {
+        "type": "scholar-publication-search",
+        "label": "Davis-Putnam & DPLL scholar search",
+        "url": "https://scholar.google.com/scholar?q=1960-1962%20Davis-Putnam%20%26%20DPLL%20artificial%20intelligence",
+        "usage": "Find scholarly publications and citation trail."
+      }
+    ]
+  },
+  "videos": [],
+  "review": {
+    "status": "candidate",
+    "imagePolicy": "Do not use new remote images in production until source and license are verified.",
+    "nextSteps": [
+      "Open sources.json and pages/ to verify primary facts.",
+      "Record accepted/rejected image candidates in notes.md.",
+      "Move approved assets into resources/images only after review."
+    ]
+  },
+  "downloadedImages": {
+    "count": 2,
+    "manifest": "images/manifest.json"
+  }
+}

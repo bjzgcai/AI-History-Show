@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:09:16.186Z",
+  "eventKey": "ai100-1983-actor-critic",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+      "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+      "usage": ""
+    },
+    {
+      "type": "Book",
+      "label": "Reinforcement Learning: An Introduction",
+      "url": "http://incompleteideas.net/book/the-book-2nd.html",
+      "usage": ""
+    },
+    {
+      "type": "Background",
+      "label": "Actor-critic model overview",
+      "url": "https://en.wikipedia.org/wiki/Actor-critic_model",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "UMass Amherst profile",
+      "url": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Andrew Barto Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Andrew%20Barto%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Actor-Critic Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Actor-Critic%201983&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Actor-Critic Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Actor-Critic%201983",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=1983%20Actor-Critic%20Andrew%20Barto%20AI%20history%20source%20images",
+      "query": "1983 Actor-Critic Andrew Barto AI history source images",
+      "eventKey": "ai100-1983-actor-critic"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=1983%20Actor-Critic%20Andrew%20Barto%20AI%20history%20source%20images",
+      "query": "1983 Actor-Critic Andrew Barto AI history source images",
+      "eventKey": "ai100-1983-actor-critic"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=1983%20Actor-Critic%20Andrew%20Barto%20AI%20history%20source%20images",
+      "query": "1983 Actor-Critic Andrew Barto AI history source images",
+      "eventKey": "ai100-1983-actor-critic"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Andrew Barto portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Andrew%20Barto%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Andrew Barto Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Andrew%20Barto%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Andrew Barto official biography search",
+      "url": "https://www.google.com/search?q=Andrew%20Barto%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Actor-Critic event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1983%20Actor-Critic%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Actor-Critic Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Actor-Critic%201983&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Actor-Critic Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Actor-Critic%201983",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Actor-Critic publication search",
+      "url": "https://www.google.com/search?q=1983%20Actor-Critic%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Actor-Critic scholar search",
+      "url": "https://scholar.google.com/scholar?q=1983%20Actor-Critic%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+      "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+      "finalUrl": "https://ieeexplore.ieee.org/document/6313077/",
+      "ok": true,
+      "status": 202,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "",
+      "savedPath": "pages/001.neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems.html",
+      "fetchedAt": "2026-07-03T12:09:17.341Z"
+    },
+    {
+      "label": "Reinforcement Learning: An Introduction",
+      "sourceUrl": "http://incompleteideas.net/book/the-book-2nd.html",
+      "finalUrl": "http://incompleteideas.net/book/the-book-2nd.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "title": "Sutton &amp; Barto Book: Reinforcement Learning: An Introduction",
+      "savedPath": "pages/002.reinforcement-learning-an-introduction.html",
+      "fetchedAt": "2026-07-03T12:09:18.922Z"
+    },
+    {
+      "label": "Actor-critic model overview",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Actor-critic_model",
+      "finalUrl": "https://en.wikipedia.org/wiki/Actor-critic_model",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Actor-critic algorithm - Wikipedia",
+      "savedPath": "pages/003.actor-critic-model-overview.html",
+      "fetchedAt": "2026-07-03T12:09:20.190Z"
+    },
+    {
+      "label": "UMass Amherst profile",
+      "sourceUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+      "finalUrl": "https://www.cics.umass.edu/about/directory/andrew-g-barto",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Andrew G. Barto : Manning College of Information &amp; Computer Sciences : UMass Amherst",
+      "savedPath": "pages/004.umass-amherst-profile.html",
+      "fetchedAt": "2026-07-03T12:09:24.444Z"
+    },
+    {
+      "label": "Andrew Barto Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Andrew%20Barto%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Andrew%20Barto%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.andrew-barto-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:09:26.465Z"
+    },
+    {
+      "label": "Actor-Critic Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Actor-Critic%201983&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Actor-Critic%201983&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.actor-critic-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:09:29.341Z"
+    },
+    {
+      "label": "Actor-Critic Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Actor-Critic%201983",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Actor-Critic%201983",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.actor-critic-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:09:30.064Z"
+    }
+  ]
+}

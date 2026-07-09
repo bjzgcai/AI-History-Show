@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:56:51.593Z",
+  "eventKey": "ai100-1967-knn",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Thomas Cover",
+      "role": "Co-author of nearest-neighbor classification",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Thomas Cover portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Thomas%20Cover%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Thomas Cover Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Thomas%20Cover%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Thomas Cover official biography search",
+          "url": "https://www.google.com/search?q=Thomas%20Cover%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Peter Hart",
+      "role": "Co-author of nearest-neighbor classification",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Peter Hart portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Peter%20Hart%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Peter Hart Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Peter%20Hart%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Peter Hart official biography search",
+          "url": "https://www.google.com/search?q=Peter%20Hart%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "KNN event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1967%20KNN%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "KNN Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=KNN%201967&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "KNN Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=KNN%201967",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "KNN publication search",
+      "url": "https://www.google.com/search?q=1967%20KNN%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "KNN scholar search",
+      "url": "https://scholar.google.com/scholar?q=1967%20KNN%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Thomas Cover portrait",
+        "zh": "托马斯·科弗肖像"
+      },
+      "subcaption": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      },
+      "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+      "sourceLabel": "Stanford Report",
+      "license": {
+        "en": "Stanford Report image; reuse rights not stated.",
+        "zh": "Stanford Report 图片；未说明复用权利。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Nearest-neighbor vote",
+        "zh": "最近邻投票"
+      },
+      "subcaption": {
+        "en": "Original local explainer of nearest-neighbor voting.",
+        "zh": "关于最近邻投票的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+      "sourceLabel": "Nearest Neighbor Pattern Classification",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Stanford Report",
+        "url": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Nearest Neighbor Pattern Classification",
+        "url": "https://doi.org/10.1109/TIT.1967.1053964",
+        "usage": ""
+      },
+      {
+        "type": "Paper PDF",
+        "label": "Stanford-hosted paper PDF",
+        "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

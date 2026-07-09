@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Aditya Ramesh",
+        "zh": "阿迪蒂亚·拉梅什"
+      },
+      "role": {
+        "en": "Lead author and creator of DALL-E",
+        "zh": "DALL-E 主要作者与创建者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+          "sourceUrl": "https://hub.baai.ac.cn/view/23577",
+          "license": {
+            "en": "OpenAI image republished by BAAI Hub; reuse rights not stated.",
+            "zh": "OpenAI 图片，经智源社区转载；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

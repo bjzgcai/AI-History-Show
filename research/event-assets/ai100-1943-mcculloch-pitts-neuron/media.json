@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:59:01.769Z",
+  "eventKey": "ai100-1943-mcculloch-pitts-neuron",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Warren McCulloch",
+      "role": "Co-author of the logical neuron model",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Warren McCulloch portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Warren%20McCulloch%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Warren McCulloch Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Warren%20McCulloch%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Warren McCulloch official biography search",
+          "url": "https://www.google.com/search?q=Warren%20McCulloch%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Walter Pitts",
+      "role": "Co-author of the logical neuron model",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Walter Pitts portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Walter%20Pitts%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Walter Pitts Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Walter%20Pitts%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Walter Pitts official biography search",
+          "url": "https://www.google.com/search?q=Walter%20Pitts%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "McCulloch-Pitts Neuron event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=1943%20McCulloch-Pitts%20Neuron%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "McCulloch-Pitts Neuron Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=McCulloch-Pitts%20Neuron%201943&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "McCulloch-Pitts Neuron Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=McCulloch-Pitts%20Neuron%201943",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "McCulloch-Pitts Neuron publication search",
+      "url": "https://www.google.com/search?q=1943%20McCulloch-Pitts%20Neuron%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "McCulloch-Pitts Neuron scholar search",
+      "url": "https://scholar.google.com/scholar?q=1943%20McCulloch-Pitts%20Neuron%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg",
+      "kind": "remote-current-asset",
+      "caption": {
+        "en": "Walter Pitts at a blackboard",
+        "zh": "黑板前的沃尔特·皮茨"
+      },
+      "subcaption": {
+        "en": "Co-author of the McCulloch-Pitts neuron.",
+        "zh": "麦卡洛克-皮茨神经元共同作者。"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+      "sourceLabel": "Walter Pitts blackboard photo",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Threshold logic neuron",
+        "zh": "阈值逻辑神经元"
+      },
+      "subcaption": {
+        "en": "Original local explainer of binary input, threshold, and output.",
+        "zh": "关于二值输入、阈值和输出的本地原创解释图。"
+      },
+      "sourceUrl": "https://doi.org/10.1007/BF02478259",
+      "sourceLabel": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+        "url": "https://doi.org/10.1007/BF02478259",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

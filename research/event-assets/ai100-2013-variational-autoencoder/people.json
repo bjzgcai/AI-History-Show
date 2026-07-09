@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Diederik Kingma",
+        "zh": "迪德里克·金马"
+      },
+      "role": {
+        "en": "Variational autoencoder co-author",
+        "zh": "变分自编码器共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "https://dpkingma.com/files/portrait.jpg",
+          "sourceUrl": "https://dpkingma.com/",
+          "license": {
+            "en": "Profile image; reuse rights not stated.",
+            "zh": "个人资料图片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

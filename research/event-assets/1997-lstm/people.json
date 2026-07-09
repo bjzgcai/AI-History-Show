@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Sepp Hochreiter",
+        "zh": "塞普·霍赫赖特"
+      },
+      "role": {
+        "en": "LSTM inventor",
+        "zh": "LSTM发明者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jürgen Schmidhuber",
+        "zh": "于尔根·施密德胡伯"
+      },
+      "role": {
+        "en": "LSTM co-inventor",
+        "zh": "LSTM共同发明者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+          "sourceUrl": "",
+          "license": {
+            "en": "",
+            "zh": ""
+          },
+          "usage": {
+            "en": "",
+            "zh": ""
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

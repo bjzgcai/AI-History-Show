@@ -1,0 +1,54 @@
+{
+  "figures": [
+    {
+      "name": {
+        "en": "Diederik P. Kingma",
+        "zh": "迪德里克·P·金马"
+      },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+          "sourceUrl": "https://dpkingma.com/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Co-author portrait",
+            "zh": "历史人物 / 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Jimmy Ba",
+        "zh": "吉米·巴"
+      },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      },
+      "portraitCandidates": [
+        {
+          "path": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+          "sourceUrl": "https://dpkingma.com/",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "Personal website photo; rights not stated."
+          },
+          "usage": {
+            "en": "Historical figure / Co-author portrait",
+            "zh": "历史人物 / 共同作者肖像"
+          },
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

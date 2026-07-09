@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:08:12.852Z",
+  "eventKey": "ai100-2015-deep-compression",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "Deep Compression",
+      "url": "https://arxiv.org/abs/1510.00149",
+      "usage": ""
+    },
+    {
+      "type": "Conference paper",
+      "label": "ICLR OpenReview record",
+      "url": "https://openreview.net/forum?id=n4Bp24yb5L",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "Song Han efficient AI research page",
+      "url": "https://hanlab.mit.edu/projects/deep-compression",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "Han Lab profile",
+      "url": "https://hanlab.mit.edu/songhan",
+      "usage": "Achievement visual material"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Song Han Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Song%20Han%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Compression Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Compression%202015&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Compression Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Compression%202015",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2015%20Deep%20Compression%20Song%20Han%20AI%20history%20source%20images",
+      "query": "2015 Deep Compression Song Han AI history source images",
+      "eventKey": "ai100-2015-deep-compression"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Deep%20Compression%20Song%20Han%20AI%20history%20source%20images",
+      "query": "2015 Deep Compression Song Han AI history source images",
+      "eventKey": "ai100-2015-deep-compression"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Deep%20Compression%20Song%20Han%20AI%20history%20source%20images",
+      "query": "2015 Deep Compression Song Han AI history source images",
+      "eventKey": "ai100-2015-deep-compression"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Song Han portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Song%20Han%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Song Han Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Song%20Han%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Song Han official biography search",
+      "url": "https://www.google.com/search?q=Song%20Han%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "Deep Compression event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2015%20Deep%20Compression%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "Deep Compression Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Deep%20Compression%202015&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "Deep Compression Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=Deep%20Compression%202015",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "Deep Compression publication search",
+      "url": "https://www.google.com/search?q=2015%20Deep%20Compression%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "Deep Compression scholar search",
+      "url": "https://scholar.google.com/scholar?q=2015%20Deep%20Compression%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "Deep Compression",
+      "sourceUrl": "https://arxiv.org/abs/1510.00149",
+      "finalUrl": "https://arxiv.org/abs/1510.00149",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1510.00149] Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+      "savedPath": "pages/001.deep-compression.html",
+      "fetchedAt": "2026-07-03T12:08:13.227Z"
+    },
+    {
+      "label": "ICLR OpenReview record",
+      "sourceUrl": "https://openreview.net/forum?id=n4Bp24yb5L",
+      "finalUrl": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dn4Bp24yb5L",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Verifying your browser | OpenReview",
+      "savedPath": "pages/002.iclr-openreview-record.html",
+      "fetchedAt": "2026-07-03T12:08:14.049Z"
+    },
+    {
+      "label": "Song Han efficient AI research page",
+      "sourceUrl": "https://hanlab.mit.edu/projects/deep-compression",
+      "finalUrl": "https://hanlab.mit.edu/projects/deep-compression",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+      "savedPath": "pages/003.song-han-efficient-ai-research-page.html",
+      "fetchedAt": "2026-07-03T12:08:15.930Z"
+    },
+    {
+      "label": "Han Lab profile",
+      "sourceUrl": "https://hanlab.mit.edu/songhan",
+      "finalUrl": "https://hanlab.mit.edu/songhan",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Song Han - Associate Professor, MIT EECS",
+      "savedPath": "pages/004.han-lab-profile.html",
+      "fetchedAt": "2026-07-03T12:08:16.577Z"
+    },
+    {
+      "label": "Song Han Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Song%20Han%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Song%20Han%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.song-han-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:19.559Z"
+    },
+    {
+      "label": "Deep Compression Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Deep%20Compression%202015&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Deep%20Compression%202015&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.deep-compression-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T12:08:22.583Z"
+    },
+    {
+      "label": "Deep Compression Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=Deep%20Compression%202015",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=Deep%20Compression%202015",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/007.deep-compression-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T12:08:23.188Z"
+    }
+  ]
+}

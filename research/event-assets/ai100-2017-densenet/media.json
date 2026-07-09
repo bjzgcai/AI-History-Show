@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:02:09.635Z",
+  "eventKey": "ai100-2017-densenet",
+  "guidance": {
+    "imageUse": "Treat every image as a candidate until the original file page, credit, and license/rights statement are verified.",
+    "preferredOrder": [
+      "official institutional archive",
+      "publisher or DOI landing page for publication facts",
+      "museum/library collection with rights statement",
+      "Wikimedia Commons file page with explicit license",
+      "search result only as a lead, not as a source"
+    ]
+  },
+  "people": [
+    {
+      "name": "Gao Huang",
+      "role": "Lead author of DenseNet",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Gao Huang portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Gao%20Huang%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Gao Huang Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Gao%20Huang%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Gao Huang official biography search",
+          "url": "https://www.google.com/search?q=Gao%20Huang%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    },
+    {
+      "name": "Zhuang Liu",
+      "role": "Co-author of DenseNet",
+      "searches": [
+        {
+          "type": "portrait-search",
+          "label": "Zhuang Liu portrait image search",
+          "url": "https://www.google.com/search?tbm=isch&q=Zhuang%20Liu%20portrait",
+          "usage": "Find portrait candidates; open original file page and verify license."
+        },
+        {
+          "type": "commons-portrait-search",
+          "label": "Zhuang Liu Wikimedia Commons image search",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Zhuang%20Liu%20computer%20scientist&title=Special:MediaSearch&type=image",
+          "usage": "Prefer files with clear Commons license metadata."
+        },
+        {
+          "type": "bio-search",
+          "label": "Zhuang Liu official biography search",
+          "url": "https://www.google.com/search?q=Zhuang%20Liu%20biography%20computer%20scientist%20official",
+          "usage": "Find institutional or award profiles for captions and role verification."
+        }
+      ]
+    }
+  ],
+  "eventImages": [
+    {
+      "type": "event-photo-search",
+      "label": "DenseNet event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2017%20DenseNet%20photograph%20participants",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "DenseNet Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=DenseNet%202017&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "DenseNet Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=DenseNet%202017",
+      "usage": "Historical image candidate search; verify rights statement."
+    }
+  ],
+  "publications": [
+    {
+      "type": "publication-search",
+      "label": "DenseNet publication search",
+      "url": "https://www.google.com/search?q=2017%20DenseNet%20paper%20publication%20journal%20proceedings",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "DenseNet scholar search",
+      "url": "https://scholar.google.com/scholar?q=2017%20DenseNet%20artificial%20intelligence",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "existingAssetAudit": [
+    {
+      "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "DenseNet author group",
+        "zh": "DenseNet 作者团队"
+      },
+      "subcaption": {
+        "en": "Researchers behind DenseNet.",
+        "zh": "DenseNet 背后的研究者。"
+      },
+      "sourceUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Reference image",
+        "zh": "参考图片"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    },
+    {
+      "path": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+      "kind": "local-current-asset",
+      "caption": {
+        "en": "Dense connectivity",
+        "zh": "密集连接"
+      },
+      "subcaption": {
+        "en": "Architecture visual used by the project.",
+        "zh": "项目使用的架构图。"
+      },
+      "sourceUrl": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+      "sourceLabel": "Local project asset",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Achievement visual material",
+        "zh": "成就视觉材料"
+      },
+      "reviewStatus": "source-known-review-license"
+    }
+  ],
+  "sourceBuckets": {
+    "people": [],
+    "eventPhotos": [
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+        "usage": "Achievement visual material"
+      },
+      {
+        "type": "image-source",
+        "label": "Local project asset",
+        "url": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+        "usage": "Achievement visual material"
+      }
+    ],
+    "publications": [
+      {
+        "type": "Paper",
+        "label": "Densely Connected Convolutional Networks",
+        "url": "https://arxiv.org/abs/1608.06993",
+        "usage": ""
+      },
+      {
+        "type": "Conference paper",
+        "label": "CVF Open Access paper page",
+        "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+        "usage": ""
+      },
+      {
+        "type": "Publication",
+        "label": "Meta AI publication page",
+        "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/",
+        "usage": ""
+      }
+    ],
+    "institutions": []
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T11:09:18.365Z",
+  "eventKey": "2016-yolo",
+  "sources": [
+    {
+      "type": "Paper",
+      "label": "You Only Look Once: Unified, Real-Time Object Detection",
+      "url": "https://arxiv.org/abs/1506.02640",
+      "usage": ""
+    },
+    {
+      "type": "Open access",
+      "label": "CVPR open-access paper page",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+      "usage": ""
+    },
+    {
+      "type": "Project",
+      "label": "Darknet YOLO project page",
+      "url": "https://pjreddie.com/darknet/yolo/",
+      "usage": ""
+    },
+    {
+      "type": "image-source",
+      "label": "University of Washington Allen School",
+      "url": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+      "usage": "Historical figure / Key contributor portrait"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Joseph Redmon Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Redmon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ali Farhadi Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ali%20Farhadi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "usage": "Prefer files with clear Commons license metadata.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "open-image-search",
+      "label": "YOLO Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=YOLO%202016&title=Special:MediaSearch&type=image",
+      "usage": "Open-license image candidates; verify each file page before using.",
+      "imageUrl": "",
+      "status": "media-lead"
+    },
+    {
+      "type": "archive-image-search",
+      "label": "YOLO Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=YOLO%202016",
+      "usage": "Historical image candidate search; verify rights statement.",
+      "imageUrl": "",
+      "status": "media-lead"
+    }
+  ],
+  "searchCandidates": [
+    {
+      "type": "web",
+      "label": "General source search",
+      "url": "https://www.google.com/search?q=2016%20YOLO%20Joseph%20Redmon%20Ali%20Farhadi%20AI%20history%20source%20images",
+      "query": "2016 YOLO Joseph Redmon Ali Farhadi AI history source images",
+      "eventKey": "2016-yolo"
+    },
+    {
+      "type": "image",
+      "label": "Image candidate search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20YOLO%20Joseph%20Redmon%20Ali%20Farhadi%20AI%20history%20source%20images",
+      "query": "2016 YOLO Joseph Redmon Ali Farhadi AI history source images",
+      "eventKey": "2016-yolo"
+    },
+    {
+      "type": "scholar",
+      "label": "Scholar source search",
+      "url": "https://scholar.google.com/scholar?q=2016%20YOLO%20Joseph%20Redmon%20Ali%20Farhadi%20AI%20history%20source%20images",
+      "query": "2016 YOLO Joseph Redmon Ali Farhadi AI history source images",
+      "eventKey": "2016-yolo"
+    },
+    {
+      "type": "portrait-search",
+      "label": "Joseph Redmon portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Joseph%20Redmon%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Joseph Redmon Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Redmon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Joseph Redmon official biography search",
+      "url": "https://www.google.com/search?q=Joseph%20Redmon%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "portrait-search",
+      "label": "Ali Farhadi portrait image search",
+      "url": "https://www.google.com/search?tbm=isch&q=Ali%20Farhadi%20portrait",
+      "query": "",
+      "usage": "Find portrait candidates; open original file page and verify license."
+    },
+    {
+      "type": "commons-portrait-search",
+      "label": "Ali Farhadi Wikimedia Commons image search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=Ali%20Farhadi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Prefer files with clear Commons license metadata."
+    },
+    {
+      "type": "bio-search",
+      "label": "Ali Farhadi official biography search",
+      "url": "https://www.google.com/search?q=Ali%20Farhadi%20biography%20computer%20scientist%20official",
+      "query": "",
+      "usage": "Find institutional or award profiles for captions and role verification."
+    },
+    {
+      "type": "event-photo-search",
+      "label": "YOLO event photo search",
+      "url": "https://www.google.com/search?tbm=isch&q=2016%20YOLO%20photograph%20participants",
+      "query": "",
+      "usage": "Look for event photographs, group photos, venue images, or archive scans."
+    },
+    {
+      "type": "open-image-search",
+      "label": "YOLO Wikimedia Commons search",
+      "url": "https://commons.wikimedia.org/w/index.php?search=YOLO%202016&title=Special:MediaSearch&type=image",
+      "query": "",
+      "usage": "Open-license image candidates; verify each file page before using."
+    },
+    {
+      "type": "archive-image-search",
+      "label": "YOLO Library of Congress image search",
+      "url": "https://www.loc.gov/pictures/search/?q=YOLO%202016",
+      "query": "",
+      "usage": "Historical image candidate search; verify rights statement."
+    },
+    {
+      "type": "publication-search",
+      "label": "YOLO publication search",
+      "url": "https://www.google.com/search?q=2016%20YOLO%20paper%20publication%20journal%20proceedings",
+      "query": "",
+      "usage": "Find paper, journal, proceedings, magazine, or archive records."
+    },
+    {
+      "type": "scholar-publication-search",
+      "label": "YOLO scholar search",
+      "url": "https://scholar.google.com/scholar?q=2016%20YOLO%20artificial%20intelligence",
+      "query": "",
+      "usage": "Find scholarly publications and citation trail."
+    }
+  ],
+  "fetchResults": [
+    {
+      "label": "You Only Look Once: Unified, Real-Time Object Detection",
+      "sourceUrl": "https://arxiv.org/abs/1506.02640",
+      "finalUrl": "https://arxiv.org/abs/1506.02640",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "[1506.02640] You Only Look Once: Unified, Real-Time Object Detection",
+      "savedPath": "pages/001.you-only-look-once-unified-real-time-object-detection.html",
+      "fetchedAt": "2026-07-03T11:09:18.744Z"
+    },
+    {
+      "label": "CVPR open-access paper page",
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+      "finalUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "CVPR 2016 Open Access Repository",
+      "savedPath": "pages/002.cvpr-open-access-paper-page.html",
+      "fetchedAt": "2026-07-03T11:09:21.261Z"
+    },
+    {
+      "label": "Darknet YOLO project page",
+      "sourceUrl": "https://pjreddie.com/darknet/yolo/",
+      "finalUrl": "https://pjreddie.com/darknet/yolo/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "YOLO: Real-Time Object Detection",
+      "savedPath": "pages/003.darknet-yolo-project-page.html",
+      "fetchedAt": "2026-07-03T11:09:24.207Z"
+    },
+    {
+      "label": "University of Washington Allen School",
+      "sourceUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+      "finalUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Allen School News Archive &raquo; Allen School’s Joseph Redmon wins Google Ph.D. Fellowship",
+      "savedPath": "pages/004.university-of-washington-allen-school.html",
+      "fetchedAt": "2026-07-03T11:09:35.236Z"
+    },
+    {
+      "label": "Joseph Redmon Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Redmon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Joseph%20Redmon%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/005.joseph-redmon-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:09:36.414Z"
+    },
+    {
+      "label": "Ali Farhadi Wikimedia Commons image search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=Ali%20Farhadi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=Ali%20Farhadi%20computer%20scientist&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/006.ali-farhadi-wikimedia-commons-image-search.html",
+      "fetchedAt": "2026-07-03T11:09:37.595Z"
+    },
+    {
+      "label": "YOLO Wikimedia Commons search",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?search=YOLO%202016&title=Special:MediaSearch&type=image",
+      "finalUrl": "https://commons.wikimedia.org/w/index.php?search=YOLO%202016&title=Special:MediaSearch&type=image",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Search media - Wikimedia Commons",
+      "savedPath": "pages/007.yolo-wikimedia-commons-search.html",
+      "fetchedAt": "2026-07-03T11:09:40.227Z"
+    },
+    {
+      "label": "YOLO Library of Congress image search",
+      "sourceUrl": "https://www.loc.gov/pictures/search/?q=YOLO%202016",
+      "finalUrl": "https://www.loc.gov/pictures/search/?q=YOLO%202016",
+      "ok": false,
+      "status": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "savedPath": "pages/008.yolo-library-of-congress-image-search.html",
+      "fetchedAt": "2026-07-03T11:09:40.774Z"
+    }
+  ]
+}
