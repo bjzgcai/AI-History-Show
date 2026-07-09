@@ -68,7 +68,7 @@
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
                 appTitleDual: 'AI 历史回顾展览 - 双屏模式',
                 aiHistory: 'AI 历史',
-                aiHistoryMode: '人工智能历史',
+                aiHistoryMode: 'AI历史',
                 aiHistoryReview: 'AI 历史回顾',
                 switchLanguageToEnglish: '切换到英文',
                 switchLanguageToChinese: '切换到中文',
@@ -187,7 +187,7 @@
         const modeChip = global.document.querySelector('.mode-chip');
         if (modeChip && modeChip.parentNode) {
             button.classList.add('topbar-language-toggle');
-            modeChip.parentNode.insertBefore(button, modeChip);
+            modeChip.parentNode.insertBefore(button, modeChip.nextSibling);
         } else {
             button.style.cssText = [
                 'position:fixed',

@@ -20,6 +20,7 @@ const QUOTE_CANDIDATES_PATH = path.join(ROOT, 'resources', 'quote-candidates.js'
 const QUIZ_CATALOG_PATH = path.join(__dirname, 'quizzes.js');
 const QUIZ_STORYLINE_ID = 'bench-council-ai100';
 const QUIZ_STORYLINE_IDS = new Set([QUIZ_STORYLINE_ID, 'gaming-ai']);
+const { applyEventFusion } = require('./event-fusions.js');
 const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
@@ -204,13 +205,15 @@ function appendMilestonesFromGroup(group, groupKind) {
     const events = Array.isArray(group.events) ? group.events : [];
 
     for (const key of events) {
-        const ev = eventsMap[key];
-        if (!ev) {
+        const rawEvent = eventsMap[key];
+        if (!rawEvent) {
             console.warn(`[警告] catalog.js ${groupKind} 中引用了 "${key}"，但 events.js 中不存在该事件，已跳过。`);
             continue;
         }
+        const ev = applyEventFusion(key, eventsMap);
+        const quoteKey = ev.fusionQuoteKey || key;
 
-        const curatedQuote = selectCuratedQuote(key, ev);
+        const curatedQuote = selectCuratedQuote(quoteKey, ev);
 
         // 构建视频列表（支持字符串 ID 和 URL 对象两种格式）
         const videos = [];
@@ -311,6 +314,7 @@ function appendMilestonesFromGroup(group, groupKind) {
             }
         };
 
+        if (ev.fusionCanonical) milestone.fusionCanonical = ev.fusionCanonical;
         if (ev.quoteLabel) milestone.quoteLabel = ev.quoteLabel;
         if (storyline) milestone.storyline = storyline;
         if (groupKind === 'branch' && group.id) {
@@ -574,7 +578,7 @@ function localizedPair(value) {
 }
 
 function normalizeCommentarySections(sections, ev, storylineId) {
-    if (storylineId !== QUIZ_STORYLINE_ID) return sections;
+    if (storylineId !== QUIZ_STORYLINE_ID && !(ev && ev.fusionCanonical)) return sections;
 
     const sourceSections = Array.isArray(sections) ? sections : [];
     const normalized = [];
