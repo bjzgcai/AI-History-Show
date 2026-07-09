@@ -61,19 +61,35 @@ function validateRequiredFile(eventDir, filename, issues) {
 
 function validateClaims(eventDir, claims, sourceIds, issues) {
     if (!Array.isArray(claims)) {
-        issues.push(issue('error', 'claims.notArray', path.join(eventDir, 'claims.json'), 'claims.json must be an array'));
+        issues.push(
+            issue('error', 'claims.notArray', path.join(eventDir, 'claims.json'), 'claims.json must be an array')
+        );
         return;
     }
 
     for (const claim of claims) {
         const sourceRefs = Array.isArray(claim.sourceIds) ? claim.sourceIds : [];
         if (sourceRefs.length === 0) {
-            issues.push(issue('error', 'claim.sourceMissing', path.join(eventDir, 'claims.json'), `Claim ${claim.id || '(no id)'} has no sourceIds`));
+            issues.push(
+                issue(
+                    'error',
+                    'claim.sourceMissing',
+                    path.join(eventDir, 'claims.json'),
+                    `Claim ${claim.id || '(no id)'} has no sourceIds`
+                )
+            );
             continue;
         }
         for (const sourceId of sourceRefs) {
             if (!sourceIds.has(sourceId)) {
-                issues.push(issue('error', 'claim.sourceUnknown', path.join(eventDir, 'claims.json'), `Claim ${claim.id || '(no id)'} references unknown source ${sourceId}`));
+                issues.push(
+                    issue(
+                        'error',
+                        'claim.sourceUnknown',
+                        path.join(eventDir, 'claims.json'),
+                        `Claim ${claim.id || '(no id)'} references unknown source ${sourceId}`
+                    )
+                );
             }
         }
     }
@@ -81,29 +97,73 @@ function validateClaims(eventDir, claims, sourceIds, issues) {
 
 function validateAssets(eventDir, assets, sourceIds, issues) {
     if (!Array.isArray(assets)) {
-        issues.push(issue('error', 'assets.notArray', path.join(eventDir, 'assets.json'), 'assets.json must be an array'));
+        issues.push(
+            issue('error', 'assets.notArray', path.join(eventDir, 'assets.json'), 'assets.json must be an array')
+        );
         return;
     }
 
     for (const asset of assets) {
         const assetLabel = asset.id || asset.path || '(no id)';
         if (!existingPath(asset.path)) {
-            issues.push(issue('error', 'asset.resourceMissing', path.join(eventDir, 'assets.json'), `Asset resource is missing: ${asset.path || assetLabel}`));
+            issues.push(
+                issue(
+                    'error',
+                    'asset.resourceMissing',
+                    path.join(eventDir, 'assets.json'),
+                    `Asset resource is missing: ${asset.path || assetLabel}`
+                )
+            );
         }
         if (!localizedComplete(asset.caption)) {
-            issues.push(issue('error', 'asset.captionMissing', path.join(eventDir, 'assets.json'), `Asset ${assetLabel} lacks bilingual caption`));
+            issues.push(
+                issue(
+                    'error',
+                    'asset.captionMissing',
+                    path.join(eventDir, 'assets.json'),
+                    `Asset ${assetLabel} lacks bilingual caption`
+                )
+            );
         }
         if (!asset.sourceId && !asset.sourceUrl) {
-            issues.push(issue('error', 'asset.sourceMissing', path.join(eventDir, 'assets.json'), `Asset ${assetLabel} lacks sourceId/sourceUrl`));
+            issues.push(
+                issue(
+                    'error',
+                    'asset.sourceMissing',
+                    path.join(eventDir, 'assets.json'),
+                    `Asset ${assetLabel} lacks sourceId/sourceUrl`
+                )
+            );
         }
         if (asset.sourceId && !sourceIds.has(asset.sourceId)) {
-            issues.push(issue('error', 'asset.sourceUnknown', path.join(eventDir, 'assets.json'), `Asset ${assetLabel} references unknown source ${asset.sourceId}`));
+            issues.push(
+                issue(
+                    'error',
+                    'asset.sourceUnknown',
+                    path.join(eventDir, 'assets.json'),
+                    `Asset ${assetLabel} references unknown source ${asset.sourceId}`
+                )
+            );
         }
         if (!asset.rights) {
-            issues.push(issue('error', 'asset.rightsMissing', path.join(eventDir, 'assets.json'), `Asset ${assetLabel} lacks rights`));
+            issues.push(
+                issue(
+                    'error',
+                    'asset.rightsMissing',
+                    path.join(eventDir, 'assets.json'),
+                    `Asset ${assetLabel} lacks rights`
+                )
+            );
         }
         if (!localizedComplete(asset.usage)) {
-            issues.push(issue('error', 'asset.usageMissing', path.join(eventDir, 'assets.json'), `Asset ${assetLabel} lacks bilingual usage`));
+            issues.push(
+                issue(
+                    'error',
+                    'asset.usageMissing',
+                    path.join(eventDir, 'assets.json'),
+                    `Asset ${assetLabel} lacks bilingual usage`
+                )
+            );
         }
     }
 }
@@ -119,10 +179,24 @@ function validateEvent(eventId, issues) {
     const sourceIds = new Set(Array.isArray(sources) ? sources.map((source) => source.id).filter(Boolean) : []);
     if (!event) return;
     if (event.id !== eventId) {
-        issues.push(issue('error', 'event.idMismatch', path.join(eventDir, 'event.json'), `event.id must match directory name ${eventId}`));
+        issues.push(
+            issue(
+                'error',
+                'event.idMismatch',
+                path.join(eventDir, 'event.json'),
+                `event.id must match directory name ${eventId}`
+            )
+        );
     }
     if (!localizedComplete(event.title)) {
-        issues.push(issue('error', 'event.titleMissing', path.join(eventDir, 'event.json'), 'Event title must include en and zh'));
+        issues.push(
+            issue(
+                'error',
+                'event.titleMissing',
+                path.join(eventDir, 'event.json'),
+                'Event title must include en and zh'
+            )
+        );
     }
     validateClaims(eventDir, claims || [], sourceIds, issues);
     validateAssets(eventDir, assets || [], sourceIds, issues);
@@ -139,12 +213,21 @@ function validateStorylines(knownEventIds, issues) {
         for (const item of storyline.events || []) {
             const eventId = typeof item === 'string' ? item : item.eventId;
             if (!knownEventIds.has(eventId)) {
-                issues.push(issue('error', 'storyline.eventUnknown', file, `Storyline references unknown event ${eventId}`));
+                issues.push(
+                    issue('error', 'storyline.eventUnknown', file, `Storyline references unknown event ${eventId}`)
+                );
             }
             const variantId = typeof item === 'string' ? 'default' : item.variantId || 'default';
             const variantFile = path.join(EVENTS_DIR, eventId || '', 'variants', `${variantId}.json`);
             if (eventId && knownEventIds.has(eventId) && !fs.existsSync(variantFile)) {
-                issues.push(issue('error', 'storyline.variantUnknown', file, `Storyline references missing variant ${eventId}/${variantId}`));
+                issues.push(
+                    issue(
+                        'error',
+                        'storyline.variantUnknown',
+                        file,
+                        `Storyline references missing variant ${eventId}/${variantId}`
+                    )
+                );
             }
         }
     }
@@ -191,7 +274,9 @@ validateStorylines(new Set(ids), issues);
 writeReport(issues, ids);
 
 if (issues.length > 0) {
-    console.error(`Archive validation failed with ${issues.length} issue(s). See ${path.relative(ROOT, reportMdPath)}.`);
+    console.error(
+        `Archive validation failed with ${issues.length} issue(s). See ${path.relative(ROOT, reportMdPath)}.`
+    );
     process.exitCode = 1;
 } else {
     console.log(`Archive validation passed for ${ids.length} event(s). Report: ${path.relative(ROOT, reportMdPath)}`);
