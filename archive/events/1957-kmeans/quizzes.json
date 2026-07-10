@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1957-kmeans-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Lloyd 的 k-means 循环在什么之间交替？",
+      "en": "What does Lloyd's k-means loop alternate between?"
+    },
+    "options": [
+      {
+        "zh": "把样本分配给最近中心，并把中心更新为均值",
+        "en": "Assigning points to nearest centers and updating centers to means"
+      },
+      {
+        "zh": "书写定理子句并证明等式",
+        "en": "Writing theorem clauses and proving equality"
+      },
+      {
+        "zh": "下残局并解析 Jeopardy! 线索",
+        "en": "Playing endgames and parsing Jeopardy! clues"
+      },
+      {
+        "zh": "把所有簇都删除为噪声",
+        "en": "Deleting all clusters as noise"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "K-means 通过反复分配样本和更新质心来最小化簇内平方距离。",
+      "en": "K-means minimizes within-cluster squared distances through repeated assignment and centroid update steps."
+    },
+    "sourceIds": [
+      "source-least-squares-quantization-in-pcm"
+    ],
+    "assetIds": [
+      "asset-1957-kmeans-centroid-loop"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "id": "2000s-alphacat",
+  "year": "2000s",
+  "date": "2000s",
+  "title": {
+    "zh": "中国象棋引擎与 AlphaCat",
+    "en": "Chinese Chess Engines and AlphaCat"
+  },
+  "summary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "description": {
+    "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
+    "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "zh": "中国大陆与中国台湾",
+      "en": "China and Taiwan"
+    },
+    "place": {
+      "zh": "计算机奥林匹克中国象棋项目",
+      "en": "Computer Olympiad Chinese Chess track"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "topics": [
+    "gaming-ai"
+  ],
+  "achievementTypeIds": [
+    "gaming-ai"
+  ],
+  "figures": [
+    {
+      "figureId": "xiangqi-engine-teams",
+      "role": {
+        "zh": "ICGA 中国象棋项目参赛程序背后的开发者",
+        "en": "Programmers behind ICGA Chinese Chess entrants"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "alphacat",
+      "role": {
+        "zh": "issue 指定的代表性系统",
+        "en": "Representative system requested by the issue"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

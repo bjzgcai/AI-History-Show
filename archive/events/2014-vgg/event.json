@@ -1,0 +1,65 @@
+{
+  "id": "2014-vgg",
+  "year": "2014",
+  "date": "2014",
+  "title": {
+    "zh": "VGG 网络",
+    "en": "VGG Networks"
+  },
+  "summary": {
+    "zh": "<p>VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。</p>",
+    "en": "<p>VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.</p>"
+  },
+  "description": {
+    "zh": "<p>VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。</p>",
+    "en": "<p>VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国牛津",
+      "en": "Oxford, United Kingdom"
+    },
+    "place": {
+      "zh": "牛津大学视觉几何组",
+      "en": "Visual Geometry Group, University of Oxford"
+    },
+    "coordinates": [
+      51.7548,
+      -1.2544
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "computer-vision"
+  ],
+  "figures": [
+    {
+      "figureId": "karen-simonyan",
+      "role": {
+        "zh": "VGG 论文共同作者",
+        "en": "Co-author of the VGG paper"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "andrew-zisserman",
+      "role": {
+        "zh": "共同作者，视觉几何组负责人",
+        "en": "Co-author and Visual Geometry Group lead"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

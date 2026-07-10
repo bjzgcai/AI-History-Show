@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "遗传算法 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "Genetic Algorithms is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-adaptation-in-natural-and-artificial-systems",
+      "source-deap-evolutionary-computation-framework"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "遗传算法 的技术线索包括「基于种群的进化搜索」，代表性产物是「遗传算法框架」。",
+      "en": "Genetic Algorithms is described through the method \"Population-based evolutionary search\" and the artifact \"Genetic algorithm framework\"."
+    },
+    "sourceIds": [
+      "source-adaptation-in-natural-and-artificial-systems",
+      "source-deap-evolutionary-computation-framework"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "遗传算法 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Genetic Algorithms is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-adaptation-in-natural-and-artificial-systems",
+      "source-deap-evolutionary-computation-framework"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>",
+      "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>"
+    },
+    "sourceIds": [
+      "source-adaptation-in-natural-and-artificial-systems",
+      "source-deap-evolutionary-computation-framework"
+    ],
+    "status": "needs-source"
+  }
+]

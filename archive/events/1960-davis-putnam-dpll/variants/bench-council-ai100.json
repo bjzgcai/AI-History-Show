@@ -1,0 +1,82 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1960-davis-putnam-dpll",
+  "displayTitle": {
+    "zh": "DP/DPLL 算法",
+    "en": "Davis-Putnam & DPLL"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1960-davis-putnam-dpll-hilary-putnam",
+    "asset-1960-davis-putnam-dpll-sat-search"
+  ],
+  "sourceIds": [
+    "source-a-computing-procedure-for-quantification-theory",
+    "source-a-machine-program-for-theorem-proving",
+    "source-wikimedia-commons-hilary-putnam"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1960-davis-putnam-dpll-ai100",
+  "commentarySections": [
+    {
+      "id": "published-papers",
+      "label": {
+        "zh": "论文材料",
+        "en": "Published Papers"
+      },
+      "html": {
+        "zh": "Davis 和 Putnam 1960 年 《ACM 杂志》 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 《ACM 通讯》 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。",
+        "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage."
+      },
+      "sourceIds": [
+        "source-a-computing-procedure-for-quantification-theory"
+      ]
+    },
+    {
+      "id": "sat-search",
+      "label": {
+        "zh": "SAT 搜索",
+        "en": "SAT Search"
+      },
+      "html": {
+        "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。",
+        "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible."
+      },
+      "sourceIds": [
+        "source-a-computing-procedure-for-quantification-theory"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Davis-Putnam 和 DPLL 视为实用 SAT 求解背后的基础工作。它们的长期影响在于搜索与传播结构至今仍支撑现代求解器，即使后来加入了学习、重启、watched literals 和启发式策略。",
+        "en": "Experts generally treat Davis-Putnam and DPLL as foundational work behind practical SAT solving. Their long-term legacy is the search-and-propagate structure that still underlies modern solvers, even after learning, restarts, watched literals, and heuristics were added."
+      },
+      "sourceIds": [
+        "source-a-computing-procedure-for-quantification-theory"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

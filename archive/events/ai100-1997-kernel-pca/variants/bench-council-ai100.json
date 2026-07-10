@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1997-kernel-pca",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Kernel PCA",
+    "en": "Kernel PCA"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>",
+    "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "kernelPca",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "MIT Press",
+        "zh": "MIT Press"
+      },
+      "title": {
+        "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+        "zh": "作为核特征值问题的非线性成分分析"
+      },
+      "description": {
+        "en": "Primary paper record for Kernel PCA.",
+        "zh": "Kernel PCA 的主论文记录。"
+      },
+      "url": "https://doi.org/10.1162/089976698300017467",
+      "source": "https://doi.org/10.1162/089976698300017467",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1997-kernel-pca-bernhard-sch-lkopf",
+    "asset-1997-kernel-pca-eigenmap"
+  ],
+  "sourceIds": [
+    "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+    "source-max-planck-publication-page",
+    "source-open-kernel-pca-pdf",
+    "source-scikit-learn-kernelpca-documentation"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1997-kernel-pca-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。",
+        "en": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities."
+      },
+      "sourceIds": [
+        "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Kernel PCA 视为经典 PCA 与核方法之间的清晰桥梁。它的长期影响在于展示了在深度嵌入普及前，非线性表示学习可以通过相似性矩阵表达。",
+        "en": "Experts generally treat Kernel PCA as a clean bridge between classical PCA and kernel methods. Its long-term legacy is showing how nonlinear representation learning can be expressed through similarity matrices before deep embeddings became common."
+      },
+      "sourceIds": [
+        "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

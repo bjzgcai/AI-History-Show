@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2000-lle",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "局部线性嵌入",
+    "en": "Locally Linear Embedding"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>",
+    "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "lle",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Science",
+        "zh": "Science"
+      },
+      "title": {
+        "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+        "zh": "通过局部线性嵌入进行非线性降维"
+      },
+      "description": {
+        "en": "Primary Science paper record for LLE.",
+        "zh": "LLE 的 Science 主论文记录。"
+      },
+      "url": "https://doi.org/10.1126/science.290.5500.2323",
+      "source": "https://doi.org/10.1126/science.290.5500.2323",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
+    "asset-2000-lle-neighbor-reconstruction"
+  ],
+  "sourceIds": [
+    "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+    "source-science-article-page",
+    "source-pubmed-record-for-lle",
+    "source-scikit-learn-lle-documentation"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2000-lle-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。",
+        "en": "Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors."
+      },
+      "sourceIds": [
+        "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "每个点由邻居重建，低维映射保持这些权重。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 LLE 视为与 Isomap 互补的关键流形学习方法。它的长期影响在于说明保持局部重建关系可以在没有显式全局模型的情况下揭示非线性结构。",
+        "en": "Experts generally treat LLE as a key manifold-learning method complementary to Isomap. Its long-term legacy is the idea that preserving local reconstruction relations can reveal nonlinear structure without an explicit global model."
+      },
+      "sourceIds": [
+        "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

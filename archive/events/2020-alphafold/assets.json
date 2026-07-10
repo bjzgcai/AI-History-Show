@@ -1,0 +1,234 @@
+[
+  {
+    "id": "asset-2020-alphafold2-structure-pipeline",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "AlphaFold2 结构预测流程",
+      "en": "AlphaFold2 structure pipeline"
+    },
+    "subcaption": {
+      "zh": "关于从序列到结构预测的本地原创解释图。",
+      "en": "Original local explainer of sequence-to-structure prediction."
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-architecture-01",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "AlphaFold: 蛋白质结构预测 架构图",
+      "en": "AlphaFold: Protein Structure Prediction"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-historical-01",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "AlphaFold: 蛋白质结构预测",
+      "en": "AlphaFold: Protein Structure Prediction"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-architecture-02",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "AlphaFold: 蛋白质结构预测 架构图",
+      "en": "AlphaFold: Protein Structure Prediction"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-historical-02",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "AlphaFold: 蛋白质结构预测",
+      "en": "AlphaFold: Protein Structure Prediction"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-papers-01",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+      "en": "Highly accurate protein structure prediction with AlphaFold"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-people-01",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-people-02",
+    "type": "image",
+    "path": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2020-alphafold-john-jumper-external",
+    "type": "image",
+    "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "John Jumper 外部参考图",
+      "en": "John Jumper external reference image"
+    },
+    "sourceId": "source-deepmind-alphafold-page",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

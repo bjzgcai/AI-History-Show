@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-visualizing-data-using-t-sne",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "使用 t-SNE 可视化数据",
+      "en": "Visualizing Data using t-SNE"
+    },
+    "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-laurens-van-der-maaten-homepage",
+    "type": "reference-only",
+    "label": {
+      "zh": "作者页面",
+      "en": "Author page"
+    },
+    "title": {
+      "zh": "劳伦斯·范德马滕 homepage",
+      "en": "Laurens van der Maaten homepage"
+    },
+    "url": "https://lvdmaaten.github.io/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-how-to-use-t-sne-effectively-distill",
+    "type": "reference-only",
+    "label": {
+      "zh": "指南",
+      "en": "Guide"
+    },
+    "title": {
+      "zh": "How to Use t-SNE Effectively, Distill",
+      "en": "How to Use t-SNE Effectively, Distill"
+    },
+    "url": "https://distill.pub/2016/misread-tsne/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

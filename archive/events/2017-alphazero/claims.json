@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "AlphaZero 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "AlphaZero is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-science-paper",
+      "source-arxiv-preprint"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>",
+      "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>"
+    },
+    "sourceIds": [
+      "source-science-paper",
+      "source-arxiv-preprint"
+    ],
+    "status": "needs-source"
+  }
+]

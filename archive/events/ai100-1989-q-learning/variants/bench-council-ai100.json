@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1989-q-learning",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Q-Learning",
+    "en": "Q-Learning"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>",
+    "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Royal Holloway",
+        "zh": "伦敦大学皇家霍洛威学院"
+      },
+      "title": {
+        "en": "Learning from Delayed Rewards",
+        "zh": "从延迟奖励中学习"
+      },
+      "description": {
+        "en": "Royal Holloway source card for Q-Learning.",
+        "zh": "伦敦大学皇家霍洛威学院 的Q-Learning资料卡片。"
+      },
+      "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "source": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open thesis",
+        "zh": "打开博士论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1989-q-learning-citations",
+    "asset-1989-q-learning-bellman-update"
+  ],
+  "sourceIds": [
+    "source-learning-from-delayed-rewards",
+    "source-q-learning",
+    "source-q-learning-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1989-q-learning-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。",
+        "en": "Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values."
+      },
+      "sourceIds": [
+        "source-learning-from-delayed-rewards"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-learning-from-delayed-rewards"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Q-learning 视为强化学习控制算法的基础。它的长期影响在于 Bellman 误差更新模式后来扩展到深度 Q 网络和许多基于价值的智能体。",
+        "en": "Experts generally treat Q-learning as a foundational control algorithm for reinforcement learning. Its long-term legacy is the Bellman-error update pattern that later scaled into Deep Q Networks and many value-based agents."
+      },
+      "sourceIds": [
+        "source-learning-from-delayed-rewards"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

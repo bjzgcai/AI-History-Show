@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "框架 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Frame is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-framework-for-representing-knowledge",
+      "source-marvin-minsky-obituary-mit-news"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>",
+      "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>"
+    },
+    "sourceIds": [
+      "source-a-framework-for-representing-knowledge",
+      "source-marvin-minsky-obituary-mit-news"
+    ],
+    "status": "needs-source"
+  }
+]

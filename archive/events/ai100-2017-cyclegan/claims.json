@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "CycleGAN 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "CycleGAN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+      "source-iccv-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>",
+      "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>"
+    },
+    "sourceIds": [
+      "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+      "source-iccv-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

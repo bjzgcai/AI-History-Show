@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》",
+      "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"
+    },
+    "url": "https://arxiv.org/abs/1703.10593",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iccv-open-access-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICCV 开放论文页面",
+      "en": "ICCV open-access paper page"
+    },
+    "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cyclegan-project-page",
+    "type": "project-page",
+    "label": {
+      "zh": "项目",
+      "en": "Project"
+    },
+    "title": {
+      "zh": "CycleGAN 项目页面",
+      "en": "CycleGAN project page"
+    },
+    "url": "https://junyanz.github.io/CycleGAN/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

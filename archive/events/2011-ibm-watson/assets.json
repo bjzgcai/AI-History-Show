@@ -1,0 +1,100 @@
+[
+  {
+    "id": "asset-2011-ibm-watson-david-ferrucci",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "戴维·费鲁奇 人物照片",
+      "en": "David Ferrucci portrait"
+    },
+    "subcaption": {
+      "zh": "IBM Watson / DeepQA 团队负责人。",
+      "en": "Principal investigator of the IBM Watson / DeepQA team."
+    },
+    "sourceId": "source-watson-beyond-jeopardy",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "CC BY 2.0",
+        "en": "CC BY 2.0"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2011-ibm-watson-evidence-ranking",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "证据排序栈",
+      "en": "Evidence ranking stack"
+    },
+    "subcaption": {
+      "zh": "依据 沃森：超越《危险边缘！》 制作的本地解释图。",
+      "en": "Original local explainer based on Watson: Beyond Jeopardy!."
+    },
+    "sourceId": "source-watson-beyond-jeopardy",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2011-ibm-watson-ibmwatson",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "IBM Watson 外部参考图",
+      "en": "IBM Watson external reference image"
+    },
+    "sourceId": "source-watson-beyond-jeopardy",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2011-ibm-watson-deepqa",
+    "type": "svg",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+    "role": "external-reference-diagram",
+    "caption": {
+      "zh": "IBM Watson 外部参考图",
+      "en": "IBM Watson external reference image"
+    },
+    "sourceId": "source-watson-beyond-jeopardy",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

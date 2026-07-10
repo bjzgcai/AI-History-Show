@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-continuous-control-with-deep-reinforcement-learning",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用深度强化学习进行连续控制》",
+      "en": "Continuous Control with Deep Reinforcement Learning"
+    },
+    "url": "https://arxiv.org/abs/1509.02971",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iclr-openreview-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICLR OpenReview 记录",
+      "en": "ICLR OpenReview record"
+    },
+    "url": "https://openreview.net/forum?id=Rx4nmj8j6G",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-deep-deterministic-policy-gradient-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "深度确定性策略梯度概览",
+      "en": "Deep deterministic policy gradient overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

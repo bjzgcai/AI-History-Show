@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2013-dqn-volodymyr-mnih",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "沃洛迪米尔·姆尼赫 肖像",
+      "en": "Volodymyr Mnih portrait"
+    },
+    "subcaption": {
+      "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
+      "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
+    },
+    "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Personal website photo; rights not stated.",
+        "en": "Personal website photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2013-dqn-replay-buffer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "经验回放池",
+      "en": "Replay buffer"
+    },
+    "subcaption": {
+      "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Deep Q Network, based on the listed source material."
+    },
+    "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2013-dqn-q-control",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Q 值控制循环",
+      "en": "Q-value control loop"
+    },
+    "subcaption": {
+      "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Deep Q Network, based on the listed source material."
+    },
+    "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

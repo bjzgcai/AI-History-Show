@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2021-clip-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "CLIP 学习匹配什么？",
+      "en": "What does CLIP learn to match?"
+    },
+    "options": [
+      {
+        "zh": "图像和自然语言文本",
+        "en": "Images and natural-language text"
+      },
+      {
+        "zh": "只有棋类局面",
+        "en": "Only chess positions"
+      },
+      {
+        "zh": "只有定理子句",
+        "en": "Only theorem clauses"
+      },
+      {
+        "zh": "只有音频波形",
+        "en": "Only audio waveforms"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "CLIP 通过对比学习让匹配图像和文字说明在嵌入空间中靠近。",
+      "en": "CLIP uses contrastive learning so matching images and captions are close in embedding space."
+    },
+    "sourceIds": [
+      "source-learning-transferable-visual-models-from-natural-language-supervision"
+    ],
+    "assetIds": [
+      "asset-alec-radford"
+    ]
+  }
+]

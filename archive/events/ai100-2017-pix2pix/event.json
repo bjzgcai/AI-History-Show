@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2017-pix2pix",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "zh": "Pix2Pix",
+    "en": "Pix2Pix"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>",
+    "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "Berkeley, United States",
+      "en": "Berkeley, United States"
+    },
+    "place": {
+      "zh": "UC Berkeley",
+      "en": "UC Berkeley"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "phillip-isola",
+      "role": {
+        "zh": "Pix2Pix 主要作者",
+        "en": "Pix2Pix lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

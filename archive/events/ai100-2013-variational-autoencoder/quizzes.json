@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2013-variational-autoencoder-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "变分自编码器的核心是什么？",
+      "en": "What is central to a variational autoencoder?"
+    },
+    "options": [
+      {
+        "zh": "带编码器和解码器的学习型潜变量分布",
+        "en": "A learned latent distribution with encoder and decoder"
+      },
+      {
+        "zh": "只有手工搜索树",
+        "en": "Only a hand-built search tree"
+      },
+      {
+        "zh": "固定物体数据集",
+        "en": "A fixed object dataset"
+      },
+      {
+        "zh": "只有词频表",
+        "en": "Only a word count table"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "VAE 把数据编码为潜变量分布，从中采样，再解码样本。",
+      "en": "A VAE encodes data into a latent distribution, samples from it, and decodes the sample."
+    },
+    "sourceIds": [
+      "source-auto-encoding-variational-bayes"
+    ],
+    "assetIds": [
+      "asset-2013-vae-latent-sampling"
+    ]
+  }
+]

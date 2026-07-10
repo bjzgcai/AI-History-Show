@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "Adam 优化器 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "Adam Optimizer is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-adam-a-method-for-stochastic-optimization",
+      "source-pytorch-torch-optim-adam"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "Adam 优化器 的技术线索包括「一阶与二阶矩自适应更新」，代表性产物是「Adam 随机优化器」。",
+      "en": "Adam Optimizer is described through the method \"Adaptive first- and second-moment updates\" and the artifact \"Adam stochastic optimizer\"."
+    },
+    "sourceIds": [
+      "source-adam-a-method-for-stochastic-optimization",
+      "source-pytorch-torch-optim-adam"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Adam 优化器 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Adam Optimizer is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-adam-a-method-for-stochastic-optimization",
+      "source-pytorch-torch-optim-adam"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>",
+      "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>"
+    },
+    "sourceIds": [
+      "source-adam-a-method-for-stochastic-optimization",
+      "source-pytorch-torch-optim-adam"
+    ],
+    "status": "needs-source"
+  }
+]

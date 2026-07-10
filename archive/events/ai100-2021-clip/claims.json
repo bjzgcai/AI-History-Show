@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "CLIP 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "CLIP is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-learning-transferable-visual-models-from-natural-language-supervision",
+      "source-icml-clip-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>",
+      "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>"
+    },
+    "sourceIds": [
+      "source-learning-transferable-visual-models-from-natural-language-supervision",
+      "source-icml-clip-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

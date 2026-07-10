@@ -1,0 +1,116 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1984-cart",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "CART 决策树",
+    "en": "CART"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>",
+    "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "cart",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "Routledge",
+      "title": {
+        "en": "Classification and Regression Trees",
+        "zh": "分类与回归树"
+      },
+      "description": {
+        "en": "Publisher book record for the CART monograph.",
+        "zh": "出版社图书记录：CART 专著。"
+      },
+      "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open book record",
+        "zh": "打开图书记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1984-cart-leo-breiman",
+    "asset-1984-cart-split-regions",
+    "asset-1984-cart-pruning-curve"
+  ],
+  "sourceIds": [
+    "source-classification-and-regression-trees",
+    "source-scikit-learn-decisiontreeclassifier",
+    "source-r-rpart-package"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1984-cart-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "决策规则很有吸引力，因为它们可解释，但它们需要有纪律的统计过程。CART 为分类与数值输出都提供了这样的过程。",
+        "en": "Decision rules were attractive because they were interpretable, but they needed a disciplined statistical procedure. CART supplied that procedure for both categorical and numeric outcomes."
+      },
+      "sourceIds": [
+        "source-classification-and-regression-trees"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。 关键机制是递归划分与剪枝，它把资料线索与可见的演示行为连接起来。",
+        "en": "CART grows a tree by choosing splits that make child nodes more homogeneous. It then prunes the tree so the final model balances fit and simplicity."
+      },
+      "sourceIds": [
+        "source-classification-and-regression-trees"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 CART 视为基础性的可解释模型，也是更强树集成方法背后的基本单元。它的长期影响在于划分与剪枝逻辑被用于解释、表格建模、随机森林和梯度提升。",
+        "en": "Experts generally treat CART as a foundational interpretable model and the basic unit behind stronger tree ensembles. Its long-term legacy is the split-and-prune logic used in explanation, tabular modeling, random forests, and gradient boosting."
+      },
+      "sourceIds": [
+        "source-classification-and-regression-trees"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

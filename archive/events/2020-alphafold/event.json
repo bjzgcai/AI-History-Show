@@ -1,0 +1,68 @@
+{
+  "id": "2020-alphafold",
+  "year": 2020,
+  "date": "2020",
+  "title": {
+    "zh": "AlphaFold2",
+    "en": "AlphaFold2"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
+    "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国伦敦",
+      "en": "London, United Kingdom"
+    },
+    "place": {
+      "zh": "DeepMind",
+      "en": "DeepMind"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "john-jumper",
+      "role": {
+        "zh": "AlphaFold2 主要研究者",
+        "en": "AlphaFold2 lead researcher"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "demis-hassabis",
+      "role": {
+        "zh": "DeepMind 联合创始人与 AlphaFold 负责人",
+        "en": "DeepMind co-founder and AlphaFold leader"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "ai100-2020-alphafold2"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

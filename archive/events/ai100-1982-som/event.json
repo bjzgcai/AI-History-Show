@@ -1,0 +1,58 @@
+{
+  "id": "ai100-1982-som",
+  "year": 1982,
+  "date": "1982",
+  "title": {
+    "zh": "自组织映射",
+    "en": "Self-organizing Map"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>",
+    "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>"
+  },
+  "location": {
+    "regionId": "espoo-finland",
+    "country": {
+      "zh": "芬兰埃斯波",
+      "en": "Espoo, Finland"
+    },
+    "place": {
+      "zh": "赫尔辛基理工大学",
+      "en": "Helsinki University of Technology"
+    },
+    "coordinates": [
+      60.1841,
+      24.8301
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "teuvo-kohonen",
+      "role": {
+        "zh": "自组织映射提出者",
+        "en": "Creator of self-organizing maps"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

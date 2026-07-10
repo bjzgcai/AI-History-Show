@@ -1,0 +1,38 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2012-alexnet",
+  "displayTitle": {
+    "en": "AlexNet and the ImageNet Breakthrough",
+    "zh": "AlexNet 与 ImageNet 突破"
+  },
+  "displaySummary": {
+    "en": "Deep Learning and Unified Paradigms",
+    "zh": "深度学习与范式归一"
+  },
+  "emphasis": [
+    "deep-learning-breakthrough",
+    "computer-vision",
+    "scaled-training"
+  ],
+  "visual": "alexnet",
+  "assetIds": [
+    "asset-alexnet-portrait",
+    "asset-alexnet-architecture",
+    "asset-alexnet-deep-portrait",
+    "asset-alexnet-architecture-detail"
+  ],
+  "sourceIds": [
+    "source-alexnet-neurips-paper",
+    "source-imagenet-challenge",
+    "source-alexnet-neurips-pdf",
+    "source-alexnet-overview"
+  ],
+  "claimIds": [
+    "claim-imagenet-breakthrough",
+    "claim-scale-recipe"
+  ],
+  "displayDescription": {
+    "en": "<p>In 2012, AlexNet won ImageNet by a large margin and made deep convolutional networks the center of modern computer vision. The deep-learning storyline stresses the combined force of data, GPU computation, ReLU, dropout, and engineering scale; the AI100 account anchors the same event in the NeurIPS paper and the ImageNet challenge, where the result made scale visible to the whole field.</p>",
+    "zh": "<p>2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。</p>"
+  }
+}

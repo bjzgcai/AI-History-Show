@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "DP/DPLL 算法 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "Davis-Putnam & DPLL is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-a-computing-procedure-for-quantification-theory",
+      "source-a-machine-program-for-theorem-proving"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "DP/DPLL 算法 的技术线索包括「带传播的 SAT 搜索」，代表性产物是「Davis-Putnam / DPLL 过程」。",
+      "en": "Davis-Putnam & DPLL is described through the method \"SAT search with propagation\" and the artifact \"Davis-Putnam / DPLL procedure\"."
+    },
+    "sourceIds": [
+      "source-a-computing-procedure-for-quantification-theory",
+      "source-a-machine-program-for-theorem-proving"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DP/DPLL 算法 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Davis-Putnam & DPLL is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-computing-procedure-for-quantification-theory",
+      "source-a-machine-program-for-theorem-proving"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 《ACM 杂志》 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>",
+      "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>"
+    },
+    "sourceIds": [
+      "source-a-computing-procedure-for-quantification-theory",
+      "source-a-machine-program-for-theorem-proving"
+    ],
+    "status": "needs-source"
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-bayesian-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "贝叶斯网络",
+      "en": "Bayesian Networks"
+    },
+    "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-judea-pearl-homepage",
+    "type": "reference-only",
+    "label": {
+      "zh": "个人主页",
+      "en": "Homepage"
+    },
+    "title": {
+      "zh": "朱迪亚·珀尔 homepage",
+      "en": "Judea Pearl homepage"
+    },
+    "url": "https://bayes.cs.ucla.edu/home.htm",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-judea-pearl-ucla-samueli",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "朱迪亚·珀尔, 加州大学洛杉矶分校 Samueli",
+      "en": "Judea Pearl, UCLA Samueli"
+    },
+    "url": "https://samueli.ucla.edu/judea-pearl/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

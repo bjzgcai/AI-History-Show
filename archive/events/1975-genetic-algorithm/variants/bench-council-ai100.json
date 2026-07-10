@@ -1,0 +1,83 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1975-genetic-algorithm",
+  "displayTitle": {
+    "zh": "遗传算法",
+    "en": "Genetic Algorithms"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "evolution",
+  "assetIds": [
+    "asset-1975-genetic-algorithm-john-henry-holland",
+    "asset-1975-genetic-algorithm-population-cycle",
+    "asset-1975-genetic-algorithm-chromosome-crossover"
+  ],
+  "sourceIds": [
+    "source-adaptation-in-natural-and-artificial-systems",
+    "source-deap-evolutionary-computation-framework",
+    "source-ecj-evolutionary-computation-system"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1975-genetic-algorithm-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "在深度学习主导 AI 之前，搜索是这个领域的核心隐喻之一。霍兰德 将生物适应引入计算，使研究人工种群中的学习与优化成为可能。",
+        "en": "Before deep learning dominated AI, search was one of the field’s central metaphors. Holland brought biological adaptation into computation, making it possible to study learning and optimization in artificial populations."
+      },
+      "sourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。",
+        "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates."
+      },
+      "sourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把遗传算法视为困难设计空间中的有用搜索启发式方法，而不是通用智能理论。它们的长期影响在于基于种群的探索，适用于没有梯度、目标函数棘手或候选设计需要演化的任务。",
+        "en": "Experts generally treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. Their long-term legacy is population-based exploration for problems where gradients are unavailable, objectives are awkward, or candidate designs must be evolved."
+      },
+      "sourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

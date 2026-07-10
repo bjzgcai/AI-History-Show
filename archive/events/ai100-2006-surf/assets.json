@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2006-surf-interest-points",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "SURF 兴趣点",
+      "en": "SURF interest points"
+    },
+    "subcaption": {
+      "zh": "关于 SURF 式兴趣点检测的本地原创解释图。",
+      "en": "Original local explainer of SURF-style interest point detection."
+    },
+    "sourceId": "source-surf-speeded-up-robust-features",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2006-surf-herbert-bay-gm",
+    "type": "image",
+    "path": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "SURF 加速稳健特征 外部参考图",
+      "en": "SURF external reference image"
+    },
+    "sourceId": "source-surf-speeded-up-robust-features",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

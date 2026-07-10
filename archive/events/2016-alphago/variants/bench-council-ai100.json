@@ -1,0 +1,82 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2016-alphago",
+  "displayTitle": {
+    "zh": "AlphaGo",
+    "en": "AlphaGo"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "research-breakthrough",
+    "policy-value-network",
+    "mcts"
+  ],
+  "visual": "go",
+  "assetIds": [
+    "asset-alphago-lee-sedol",
+    "asset-alphago-policy-value-search"
+  ],
+  "sourceIds": [
+    "source-alphago-nature-paper",
+    "source-deepmind-alphago-page",
+    "source-katago-analysis-engine"
+  ],
+  "claimIds": [
+    "claim-hybrid-policy-value-search",
+    "claim-lee-sedol-match",
+    "claim-self-play-legacy"
+  ],
+  "quizId": "quiz-2016-alphago-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "围棋长期被视为搜索空间极大、难以依靠蛮力搜索解决的棋类任务。AlphaGo 在 2016 年与李世石的五番棋中获胜，使深度学习、强化学习与搜索结合的能力被全球观众看见。",
+        "en": "Go had long been treated as a board game with a search space too large for brute-force methods. AlphaGo’s 2016 match victory over Lee Sedol made the combination of deep learning, reinforcement learning, and search visible to a global audience."
+      },
+      "sourceIds": [
+        "source-deepmind-alphago-page"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "《自然》论文解释了 AlphaGo 的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
+        "en": "The Nature paper explains AlphaGo’s hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce reliance on expert game data."
+      },
+      "sourceIds": [
+        "source-alphago-nature-paper"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。",
+        "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs."
+      },
+      "sourceIds": [
+        "source-alphago-nature-paper",
+        "source-deepmind-alphago-page"
+      ]
+    }
+  ],
+  "displayDescription": {
+    "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
+    "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
+  }
+}

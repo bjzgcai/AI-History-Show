@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2023-segment-anything-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "用户如何引导 Segment Anything？",
+      "en": "How can users guide Segment Anything?"
+    },
+    "options": [
+      {
+        "zh": "用点或框等提示",
+        "en": "With prompts such as points or boxes"
+      },
+      {
+        "zh": "只用隐藏棋类分数",
+        "en": "Only with a hidden chess score"
+      },
+      {
+        "zh": "只通过改变蛋白质序列",
+        "en": "Only by changing a protein sequence"
+      },
+      {
+        "zh": "只通过删除图像",
+        "en": "Only by deleting the image"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "SAM 使用点、框或掩码提示，根据可复用图像特征生成分割掩码。",
+      "en": "SAM uses point, box, or mask prompts to produce segmentation masks from reusable image features."
+    },
+    "sourceIds": [
+      "source-segment-anything"
+    ],
+    "assetIds": [
+      "asset-2023-segment-anything-prompt-mask"
+    ]
+  }
+]

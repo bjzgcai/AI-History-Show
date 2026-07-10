@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1967-knn-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "KNN 如何给一个新点分类？",
+      "en": "How does KNN classify a new point?"
+    },
+    "options": [
+      {
+        "zh": "让附近已标注样本投票",
+        "en": "By voting among nearby labeled examples"
+      },
+      {
+        "zh": "通过翻译句子",
+        "en": "By translating a sentence"
+      },
+      {
+        "zh": "通过剪枝棋类搜索树",
+        "en": "By pruning a chess tree"
+      },
+      {
+        "zh": "通过隐藏所有输入特征",
+        "en": "By hiding every input feature"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "KNN 是基于实例的方法：标签来自附近的训练样本。",
+      "en": "KNN is instance-based: the label comes from nearby training examples."
+    },
+    "sourceIds": [
+      "source-nearest-neighbor-pattern-classification"
+    ],
+    "assetIds": [
+      "asset-1967-knn-neighbor-vote"
+    ]
+  }
+]

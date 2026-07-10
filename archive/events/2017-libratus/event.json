@@ -1,0 +1,66 @@
+{
+  "id": "2017-libratus",
+  "year": "2017",
+  "date": "2017",
+  "title": {
+    "zh": "Libratus",
+    "en": "Libratus"
+  },
+  "summary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "description": {
+    "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>",
+    "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国匹兹堡",
+      "en": "Pittsburgh, United States"
+    },
+    "place": {
+      "zh": "卡内基梅隆大学",
+      "en": "Carnegie Mellon University"
+    },
+    "coordinates": [
+      40.4433,
+      -79.9436
+    ]
+  },
+  "topics": [
+    "gaming-ai"
+  ],
+  "achievementTypeIds": [
+    "gaming-ai"
+  ],
+  "figures": [
+    {
+      "figureId": "noam-brown",
+      "role": {
+        "zh": "Libratus 共同创建者",
+        "en": "Libratus co-creator"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "tuomas-sandholm",
+      "role": {
+        "zh": "CMU 教授，Libratus 共同创建者",
+        "en": "CMU professor and Libratus co-creator"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

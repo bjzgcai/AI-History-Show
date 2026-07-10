@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1943-mcculloch-pitts-neuron",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "麦卡洛克-皮茨神经元",
+    "en": "McCulloch-Pitts Neuron"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>",
+    "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "perceptron",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Springer",
+        "zh": "Springer"
+      },
+      "title": {
+        "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+        "zh": "神经活动内在观念的逻辑演算"
+      },
+      "description": {
+        "en": "Canonical paper introducing the formal neuron model.",
+        "zh": "介绍形式化神经元模型的经典论文。"
+      },
+      "url": "https://doi.org/10.1007/BF02478259",
+      "source": "https://doi.org/10.1007/BF02478259",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open DOI",
+        "zh": "打开 DOI"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard",
+    "asset-1943-mcculloch-pitts-neuron-threshold-logic"
+  ],
+  "sourceIds": [
+    "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+    "source-mcculloch-pitts-neuron-overview",
+    "source-history-of-information-entry",
+    "source-walter-pitts-blackboard-photo"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1943-mcculloch-pitts-neuron-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。",
+        "en": "Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks."
+      },
+      "sourceIds": [
+        "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "输入经过加权阈值，产生逻辑输出状态。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Inputs pass through weighted thresholds, producing logical output states. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把麦卡洛克-皮茨神经元视为神经计算的奠基抽象，而不是逼真的大脑模型。它的长期影响在于阈值单元思想把逻辑、电路和后来的人工神经网络连接起来。",
+        "en": "Experts generally treat the McCulloch-Pitts neuron as a founding abstraction for neural computation rather than a realistic brain model. Its long-term legacy is the threshold-unit idea that linked logic, circuits, and later artificial neural networks."
+      },
+      "sourceIds": [
+        "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

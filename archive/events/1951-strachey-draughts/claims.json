@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "克里斯托弗·斯特雷奇 的跳棋程序 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Christopher Strachey's Draughts is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-logical-or-non-mathematical-programmes",
+      "source-computer-pioneers-christopher-strachey"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
+      "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+    },
+    "sourceIds": [
+      "source-logical-or-non-mathematical-programmes",
+      "source-computer-pioneers-christopher-strachey"
+    ],
+    "status": "needs-source"
+  }
+]

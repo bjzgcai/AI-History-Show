@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2000-neural-language-model-context-prediction",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "上下文预测",
+      "en": "Context prediction"
+    },
+    "subcaption": {
+      "zh": "关于神经语言建模的本地原创解释图。",
+      "en": "Original local explainer of neural language modeling."
+    },
+    "sourceId": "source-a-neural-probabilistic-language-model",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "神经语言模型 外部参考图",
+      "en": "Neural Language Model external reference image"
+    },
+    "sourceId": "source-a-neural-probabilistic-language-model",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

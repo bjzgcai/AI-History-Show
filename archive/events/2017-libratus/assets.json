@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-2017-libratus-cfr-solving",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Libratus 子局求解",
+      "en": "Libratus subgame solving"
+    },
+    "subcaption": {
+      "zh": "不完全信息扑克搜索的原创解释图。",
+      "en": "Original explainer for imperfect-information poker search."
+    },
+    "sourceId": "source-science-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

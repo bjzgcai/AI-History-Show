@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1971-vc-theory-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "VC 理论主要帮助解释机器学习中的什么问题？",
+      "en": "What does VC theory mainly help explain in machine learning?"
+    },
+    "options": [
+      {
+        "zh": "为什么训练表现可能泛化或不能泛化到未见数据",
+        "en": "Why training performance may or may not generalize to unseen data"
+      },
+      {
+        "zh": "如何把显示器做得更大",
+        "en": "How to make a monitor larger"
+      },
+      {
+        "zh": "为什么所有数据集都有相同标签",
+        "en": "Why all datasets have the same labels"
+      },
+      {
+        "zh": "如何从学习中去掉概率",
+        "en": "How to remove probability from learning"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "VC 维和一致收敛把样本量、模型容量、训练误差与预期测试表现联系起来。",
+      "en": "VC dimension and uniform convergence connect sample size, model capacity, training error and expected test behavior."
+    },
+    "sourceIds": [
+      "source-on-the-uniform-convergence-of-relative-frequencies"
+    ],
+    "assetIds": [
+      "asset-1971-vc-theory-vladimir-vapnik"
+    ]
+  },
+  {
+    "id": "1971-vc-theory-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "VC 理论主要帮助解释机器学习中的什么问题？",
+      "en": "What does VC theory mainly help explain in machine learning?"
+    },
+    "options": [
+      {
+        "zh": "为什么训练表现可能泛化或不能泛化到未见数据",
+        "en": "Why training performance may or may not generalize to unseen data"
+      },
+      {
+        "zh": "如何把显示器做得更大",
+        "en": "How to make a monitor larger"
+      },
+      {
+        "zh": "为什么所有数据集都有相同标签",
+        "en": "Why all datasets have the same labels"
+      },
+      {
+        "zh": "如何从学习中去掉概率",
+        "en": "How to remove probability from learning"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "VC 维和一致收敛把样本量、模型容量、训练误差与预期测试表现联系起来。",
+      "en": "VC dimension and uniform convergence connect sample size, model capacity, training error and expected test behavior."
+    },
+    "sourceIds": [
+      "source-on-the-uniform-convergence-of-relative-frequencies"
+    ],
+    "assetIds": [
+      "asset-1971-vc-theory-vladimir-vapnik"
+    ]
+  }
+]

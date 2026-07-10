@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1970-shrdlu-terry-winograd",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "特里·维诺格拉德 肖像",
+      "en": "Terry Winograd portrait"
+    },
+    "subcaption": {
+      "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。",
+      "en": "Portrait from Stanford Computer Science profile."
+    },
+    "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "斯坦福大学 profile image; reuse rights not stated.",
+        "en": "Stanford profile image; reuse rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1970-shrdlu-blocks-world",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "积木世界命令落地",
+      "en": "Blocks-world command grounding"
+    },
+    "subcaption": {
+      "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for SHRDLU, based on the listed source material."
+    },
+    "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1970-shrdlu-parser-plan",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "解析器到规划器路径",
+      "en": "Parser to planner path"
+    },
+    "subcaption": {
+      "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for SHRDLU, based on the listed source material."
+    },
+    "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

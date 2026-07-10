@@ -1,0 +1,130 @@
+[
+  {
+    "id": "asset-1989-lenet-zip-code-cnn",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "邮编 CNN 流程",
+      "en": "ZIP-code CNN pipeline"
+    },
+    "subcaption": {
+      "zh": "关于 LeNet 式识别的本地原创解释图。",
+      "en": "Original local explainer of LeNet-style recognition."
+    },
+    "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1989-cnn-people-01",
+    "type": "image",
+    "path": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1989-cnn-people-02",
+    "type": "image",
+    "path": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1989-cnn-architecture-01",
+    "type": "image",
+    "path": "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "卷积神经网络 架构图",
+      "en": "Convolutional Neural Networks"
+    },
+    "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1989-cnn-yann-lecun-external",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "扬·勒昆外部参考图",
+      "en": "Yann LeCun external reference image"
+    },
+    "sourceId": "source-yann-lecun-s-home-page",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

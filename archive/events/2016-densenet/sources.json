@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-densely-connected-convolutional-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《密集连接卷积网络》",
+      "en": "Densely Connected Convolutional Networks"
+    },
+    "url": "https://arxiv.org/abs/1608.06993",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cvf-open-access-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "CVF 开放论文页面",
+      "en": "CVF Open Access paper page"
+    },
+    "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-original-densenet-code-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "DenseNet 原始代码仓库",
+      "en": "Original DenseNet code repository"
+    },
+    "url": "https://github.com/liuzhuang13/DenseNet",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-meta-ai-publication-page",
+    "type": "reference-only",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "Meta AI 出版页面",
+      "en": "Meta AI publication page"
+    },
+    "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

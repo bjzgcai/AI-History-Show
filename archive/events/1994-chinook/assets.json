@@ -1,0 +1,104 @@
+[
+  {
+    "id": "asset-1994-chinook-homepage",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
+    "role": "hero-image",
+    "caption": {
+      "zh": "Chinook 官方项目页面",
+      "en": "Chinook official project page"
+    },
+    "subcaption": {
+      "zh": "引用来源页面截图：Chinook project home。",
+      "en": "Screenshot of the cited source page: Chinook project home."
+    },
+    "sourceId": "source-chinook-project-home",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+        "en": "Source page screenshot for citation preview; rights remain with the source site."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1994-chinook-endgame-database",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "残局数据库表",
+      "en": "Endgame database table"
+    },
+    "subcaption": {
+      "zh": "依据 跳棋已被求解 制作的本地解释图。",
+      "en": "Original local explainer based on Checkers Is Solved."
+    },
+    "sourceId": "source-chinook-project-home",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1994-chinook-perfect-play",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "完美对弈证明路径",
+      "en": "Perfect-play proof path"
+    },
+    "subcaption": {
+      "zh": "依据 跳棋已被求解 制作的本地解释图。",
+      "en": "Original local explainer based on Checkers Is Solved."
+    },
+    "sourceId": "source-chinook-project-home",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1994-chinook-jonathan-schaeffer-external",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "乔纳森·谢弗外部参考图",
+      "en": "Jonathan Schaeffer external reference image"
+    },
+    "sourceId": "source-jonathan-schaeffer-portrait",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

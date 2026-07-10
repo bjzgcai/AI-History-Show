@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2005-hog-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "HOG 汇总哪类图像证据？",
+      "en": "What kind of image evidence does HOG summarize?"
+    },
+    "options": [
+      {
+        "zh": "单元格中的局部梯度方向",
+        "en": "Local gradient directions in cells"
+      },
+      {
+        "zh": "下一个词概率",
+        "en": "Next-word probabilities"
+      },
+      {
+        "zh": "数据库表连接",
+        "en": "Database table joins"
+      },
+      {
+        "zh": "只有 GPS 坐标",
+        "en": "Only GPS coordinates"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "HOG 在局部单元和归一化块中统计边缘方向投票。",
+      "en": "HOG counts edge-orientation votes over local cells and normalized blocks."
+    },
+    "sourceIds": [
+      "source-histograms-of-oriented-gradients-for-human-detection"
+    ],
+    "assetIds": [
+      "asset-2005-hog-descriptor-grid"
+    ]
+  }
+]

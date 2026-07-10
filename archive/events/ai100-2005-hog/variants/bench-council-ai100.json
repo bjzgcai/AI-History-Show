@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2005-hog",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "HOG 方向梯度直方图",
+    "en": "HOG"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>",
+    "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "hog",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "INRIA",
+        "zh": "INRIA"
+      },
+      "title": {
+        "en": "Histograms of Oriented Gradients for Human Detection",
+        "zh": "用于人体检测的方向梯度直方图"
+      },
+      "description": {
+        "en": "Open PDF of the HOG human-detection paper.",
+        "zh": "HOG 人体检测论文的开放 PDF。"
+      },
+      "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+      "source": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open PDF",
+        "zh": "打开 PDF"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde",
+    "asset-2005-hog-descriptor-grid"
+  ],
+  "sourceIds": [
+    "source-histograms-of-oriented-gradients-for-human-detection",
+    "source-ieee-cvpr-paper-record",
+    "source-histogram-of-oriented-gradients-overview",
+    "source-scikit-image-hog-example"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2005-hog-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。",
+        "en": "Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant."
+      },
+      "sourceIds": [
+        "source-histograms-of-oriented-gradients-for-human-detection"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-histograms-of-oriented-gradients-for-human-detection"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 HOG 视为手工视觉描述子的标志性成果。它的长期影响在于单元与块的表示模式在端到端学习特征普及前让稳健目标检测变得实用。",
+        "en": "Experts generally treat HOG as a landmark hand-crafted vision descriptor. Its long-term legacy is the cell-and-block representation pattern that made robust object detection practical before end-to-end learned features took over."
+      },
+      "sourceIds": [
+        "source-histograms-of-oriented-gradients-for-human-detection"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

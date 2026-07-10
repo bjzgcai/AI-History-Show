@@ -1,0 +1,71 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2023-agents",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "智能体：LLM驱动的自主系统",
+    "en": "Agents: LLM-Driven Autonomous Systems"
+  },
+  "displaySummary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "displayDescription": {
+    "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
+    "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-2023-agents-historical-02",
+    "asset-2023-agents-historical-03",
+    "asset-2023-agents-historical-04"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "当代 Agentic AI 的关键变化，并不是“会调用工具”这一点本身，而是大语言模型开始同时承担目标分解、状态解释、行动选择与自我修正的认知中枢角色。",
+        "en": "The key change in contemporary agentic AI is not tool use by itself. Large language models began to act as the cognitive center for goal decomposition, state interpretation, action selection, and self-correction."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。",
+        "en": "That turns agents from systems dependent on hand-written planners into open software forms whose behavior strategies can be rebuilt through prompts, memory, toolchains, and feedback loops. It also explains why agent products expanded so quickly after 2023."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-adam-a-method-for-stochastic-optimization",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Adam：一种随机优化方法",
+      "en": "Adam: A Method for Stochastic Optimization"
+    },
+    "url": "https://arxiv.org/abs/1412.6980",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
+      "en": "Primary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-pytorch-torch-optim-adam",
+    "type": "implementation",
+    "label": {
+      "zh": "Implementation",
+      "en": "Implementation"
+    },
+    "title": {
+      "zh": "PyTorch torch.optim.Adam",
+      "en": "PyTorch torch.optim.Adam"
+    },
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-tensorflow-keras-adam-optimizer",
+    "type": "framework-docs",
+    "label": {
+      "zh": "Framework docs",
+      "en": "Framework docs"
+    },
+    "title": {
+      "zh": "TensorFlow Keras Adam optimizer",
+      "en": "TensorFlow Keras Adam optimizer"
+    },
+    "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  }
+]

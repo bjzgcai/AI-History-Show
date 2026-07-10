@@ -1,0 +1,82 @@
+{
+  "id": "1984-cart",
+  "year": "1984",
+  "date": "1984",
+  "title": {
+    "zh": "CART 决策树",
+    "en": "CART"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>",
+    "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国伯克利",
+      "en": "Berkeley, United States"
+    },
+    "place": {
+      "zh": "加州大学伯克利分校",
+      "en": "University of California, Berkeley"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "leo-breiman",
+      "role": {
+        "zh": "CART 专著共同作者",
+        "en": "Co-author of the CART monograph"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jerome-friedman",
+      "role": {
+        "zh": "CART 专著共同作者",
+        "en": "Co-author of the CART monograph"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "richard-olshen",
+      "role": {
+        "zh": "CART 专著共同作者",
+        "en": "Co-author of the CART monograph"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "charles-stone",
+      "role": {
+        "zh": "CART 专著共同作者",
+        "en": "Co-author of the CART monograph"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

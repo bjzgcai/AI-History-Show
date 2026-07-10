@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2015-knowledge-distillation",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "知识蒸馏",
+    "en": "Knowledge Distillation"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>",
+    "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国山景城",
+      "en": "Mountain View, United States"
+    },
+    "place": {
+      "zh": "Google",
+      "en": "Google"
+    },
+    "coordinates": [
+      37.3861,
+      -122.0839
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "geoffrey-hinton",
+      "role": {
+        "zh": "知识蒸馏共同作者",
+        "en": "Knowledge distillation co-author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

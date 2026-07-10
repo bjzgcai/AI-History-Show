@@ -1,0 +1,126 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2020-alphafold",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "AlphaFold2",
+    "en": "AlphaFold2"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
+    "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "alphafold",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Nature",
+        "zh": "《Nature》"
+      },
+      "title": {
+        "en": "Highly accurate protein structure prediction with AlphaFold",
+        "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+      },
+      "description": {
+        "en": "Primary Nature paper for AlphaFold2.",
+        "zh": "AlphaFold2 的 Nature 主论文。"
+      },
+      "url": "https://doi.org/10.1038/s41586-021-03819-2",
+      "source": "https://doi.org/10.1038/s41586-021-03819-2",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open DOI page",
+        "zh": "打开 DOI 页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2020-alphafold-john-jumper-external",
+    "asset-2020-alphafold2-structure-pipeline",
+    "asset-2020-alphafold-architecture-01",
+    "asset-2020-alphafold-historical-01",
+    "asset-2020-alphafold-architecture-02",
+    "asset-2020-alphafold-historical-02",
+    "asset-2020-alphafold-papers-01",
+    "asset-2020-alphafold-people-01",
+    "asset-2020-alphafold-people-02"
+  ],
+  "sourceIds": [
+    "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "source-deepmind-alphafold-page",
+    "source-alphafold-protein-structure-database",
+    "source-alphafold-github-repository"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2020-alphafold2-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。",
+        "en": "DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. It showed how deep learning could transform a long-standing scientific problem."
+      },
+      "sourceIds": [
+        "source-highly-accurate-protein-structure-prediction-with-alphafold"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-highly-accurate-protein-structure-prediction-with-alphafold"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 AlphaFold2 视为科学机器学习的标志性成果，因为它改变了生物学家能够常规查询和检验的内容。它的长期影响在于让人们期待 AI 系统不仅是基准模型，也能成为发现基础设施。",
+        "en": "Experts generally treat AlphaFold2 as a landmark in scientific machine learning because it changed what biologists could routinely look up and test. Its long-term legacy is the expectation that AI systems can act as infrastructure for discovery, not only as benchmark models."
+      },
+      "sourceIds": [
+        "source-highly-accurate-protein-structure-prediction-with-alphafold"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

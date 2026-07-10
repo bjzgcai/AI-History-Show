@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2017-cyclegan",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "CycleGAN",
+    "en": "CycleGAN"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>",
+    "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "title": {
+        "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+        "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+      },
+      "description": {
+        "en": "Project page source card for CycleGAN.",
+        "zh": "项目页面 的CycleGAN资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1703.10593",
+      "source": "https://arxiv.org/abs/1703.10593",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open project page",
+        "zh": "打开项目页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2017-cyclegan-portrait3-lr",
+    "asset-2017-cyclegan-cycle-consistency"
+  ],
+  "sourceIds": [
+    "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+    "source-iccv-open-access-paper-page",
+    "source-cyclegan-project-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2017-cyclegan-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。",
+        "en": "CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content."
+      },
+      "sourceIds": [
+        "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 CycleGAN 视为非配对转换和可控视觉合成的里程碑。它的长期影响在于循环一致性思想被用于配对监督昂贵或缺失的场景。",
+        "en": "Experts generally treat CycleGAN as a landmark in unpaired translation and controllable visual synthesis. Its long-term legacy is the cycle-consistency idea used whenever paired supervision is expensive or unavailable."
+      },
+      "sourceIds": [
+        "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

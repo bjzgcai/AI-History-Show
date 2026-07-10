@@ -1,0 +1,39 @@
+[
+  {
+    "id": "quiz-2012-alexnet-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "为什么 AlexNet 是计算机视觉的重要突破？",
+      "en": "Why was AlexNet a major computer-vision breakthrough?"
+    },
+    "options": [
+      {
+        "zh": "它展示了深度 CNN 可以在大规模 ImageNet 上取胜",
+        "en": "It showed deep CNNs could win ImageNet at large scale"
+      },
+      {
+        "zh": "它删除了所有训练数据",
+        "en": "It removed all training data"
+      },
+      {
+        "zh": "它只统计词频",
+        "en": "It only counted word frequency"
+      },
+      {
+        "zh": "它是一个定理证明器",
+        "en": "It was a theorem prover"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。",
+      "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation, and regularization to sharply improve ImageNet results."
+    },
+    "sourceIds": [
+      "source-alexnet-neurips-paper"
+    ],
+    "assetIds": [
+      "asset-alexnet-architecture"
+    ]
+  }
+]

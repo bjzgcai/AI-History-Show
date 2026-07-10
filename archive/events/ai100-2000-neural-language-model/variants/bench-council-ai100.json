@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2000-neural-language-model",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "神经语言模型",
+    "en": "Neural Language Model"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
+    "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "neuralLm",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "JMLR",
+        "zh": "JMLR"
+      },
+      "title": {
+        "en": "A Neural Probabilistic Language Model",
+        "zh": "神经概率语言模型"
+      },
+      "description": {
+        "en": "Open paper record for the neural probabilistic language model.",
+        "zh": "神经概率语言模型的开放论文记录。"
+      },
+      "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "source": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open article",
+        "zh": "打开文章"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
+    "asset-2000-neural-language-model-context-prediction"
+  ],
+  "sourceIds": [
+    "source-a-neural-probabilistic-language-model",
+    "source-jmlr-full-paper-pdf",
+    "source-dblp-record",
+    "source-yoshua-bengio-profile-at-mila"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2000-neural-language-model-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。",
+        "en": "Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs."
+      },
+      "sourceIds": [
+        "source-a-neural-probabilistic-language-model"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "词被映射为向量，与上下文组合后用于预测下一个词。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Words are mapped into vectors, combined as context, and used to predict the next word. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-a-neural-probabilistic-language-model"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把神经概率语言模型视为从稀疏 n-gram 方法走向学习型分布式表示的重要桥梁。它的长期影响在于证明语言预测可以学习可复用的词向量和上下文表示。",
+        "en": "Experts generally treat neural probabilistic language modeling as an important bridge from sparse n-gram methods to learned distributed representations. Its long-term legacy is the idea that language prediction can learn reusable word vectors and context-sensitive representations."
+      },
+      "sourceIds": [
+        "source-a-neural-probabilistic-language-model"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

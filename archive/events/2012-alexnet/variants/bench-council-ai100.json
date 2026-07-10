@@ -1,0 +1,84 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2012-alexnet",
+  "displayTitle": {
+    "zh": "AlexNet 与 ImageNet 突破",
+    "en": "AlexNet and the ImageNet Breakthrough"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "displayDescription": {
+    "en": "<p>In 2012, AlexNet won ImageNet by a large margin and made deep convolutional networks the center of modern computer vision. The deep-learning storyline stresses the combined force of data, GPU computation, ReLU, dropout, and engineering scale; the AI100 account anchors the same event in the NeurIPS paper and the ImageNet challenge, where the result made scale visible to the whole field.</p>",
+    "zh": "<p>2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。</p>"
+  },
+  "emphasis": [
+    "research-breakthrough",
+    "paper-source",
+    "computer-vision"
+  ],
+  "visual": "alexnet",
+  "assetIds": [
+    "asset-alexnet-portrait",
+    "asset-alexnet-architecture",
+    "asset-alexnet-deep-portrait",
+    "asset-alexnet-architecture-detail"
+  ],
+  "sourceIds": [
+    "source-alexnet-neurips-paper",
+    "source-alexnet-neurips-pdf",
+    "source-imagenet-challenge",
+    "source-alexnet-overview"
+  ],
+  "claimIds": [
+    "claim-imagenet-breakthrough",
+    "claim-scale-recipe"
+  ],
+  "quizId": "quiz-2012-alexnet-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。",
+        "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible."
+      },
+      "sourceIds": [
+        "source-alexnet-neurips-paper",
+        "source-imagenet-challenge"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。互动演示应突出数据、GPU、卷积、ReLU 和正则化如何共同构成可训练系统。",
+        "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The demo should highlight how data, GPUs, convolution, ReLU, and regularization formed a trainable system."
+      },
+      "sourceIds": [
+        "source-alexnet-neurips-paper"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。",
+        "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research."
+      },
+      "sourceIds": [
+        "source-alexnet-neurips-paper"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2018-gpt",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "GPT",
+    "en": "GPT"
+  },
+  "displaySummary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "displayDescription": {
+    "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
+    "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "gpt",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "title": {
+        "en": "Improving Language Understanding by Generative Pre-Training",
+        "zh": "通过生成式预训练改进语言理解"
+      },
+      "description": {
+        "en": "OpenAI technical paper describing the first GPT model.",
+        "zh": "描述第一代 GPT 模型的 OpenAI 技术论文。"
+      },
+      "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+      "source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open PDF",
+        "zh": "打开 PDF"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-alec-radford",
+    "asset-2018-gpt-next-token",
+    "asset-2018-gpt-architecture-01",
+    "asset-2018-gpt-architecture-02",
+    "asset-2018-gpt-historical-01",
+    "asset-2018-gpt-people-02"
+  ],
+  "sourceIds": [
+    "source-improving-language-understanding-by-generative-pre-training",
+    "source-openai-language-unsupervised-page",
+    "source-gpt-model-overview",
+    "source-alec-radford-research-context"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。",
+        "en": "Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models."
+      },
+      "sourceIds": [
+        "source-improving-language-understanding-by-generative-pre-training"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-improving-language-understanding-by-generative-pre-training"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。",
+        "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models. Its long-term legacy is the generative pre-training recipe that turned next-token prediction into a broad interface for language tasks."
+      },
+      "sourceIds": [
+        "source-improving-language-understanding-by-generative-pre-training"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-2019-muzero-learned-model",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "MuZero 学习模型",
+      "en": "MuZero learned model"
+    },
+    "subcaption": {
+      "zh": "潜在模型规划的原创解释图。",
+      "en": "Original explainer for latent-model planning."
+    },
+    "sourceId": "source-nature-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

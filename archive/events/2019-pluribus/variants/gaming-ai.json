@@ -1,0 +1,154 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "2019-pluribus",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Pluribus",
+    "en": "Pluribus"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它使用紧凑蓝图策略与有限前瞻搜索，同时处理多个对手，把游戏 AI 推向无法只靠单一对手模型的多人场景。</p>",
+    "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used a compact blueprint strategy plus limited-lookahead search to handle several opponents at once, moving game AI toward multiplayer settings where no single opponent model is enough.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Meta AI",
+        "zh": "Meta AI"
+      },
+      "title": {
+        "en": "Pluribus report",
+        "zh": "Pluribus 报道"
+      },
+      "description": {
+        "en": "Meta AI report on the first AI to beat professionals in six-player poker.",
+        "zh": "Meta AI 关于首个击败六人扑克职业牌手 AI 的报道。"
+      },
+      "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+      "source": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+      "action": {
+        "en": "Open source page",
+        "zh": "打开资料页面"
+      },
+      "license": {
+        "en": "Reference link only; local exhibition graphics are original redraws.",
+        "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+      },
+      "usage": {
+        "en": "Source card for the gaming AI branch",
+        "zh": "AI 棋牌分支的资料卡片"
+      }
+    },
+    {
+      "type": "gameEvolutionVideo",
+      "site": {
+        "en": "Game evolution clip",
+        "zh": "棋局演化短片"
+      },
+      "title": {
+        "en": "Pluribus game evolution",
+        "zh": "Pluribus 棋局演化"
+      },
+      "description": {
+        "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
+        "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
+      },
+      "url": "resources/videos/game-evolution/2019-pluribus.mp4",
+      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+      "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
+      "sourceSgf": "examples/sgf/sample-go-game.sgf",
+      "generator": "scripts/sgf_to_video.py",
+      "duration": {
+        "en": "about 1 min",
+        "zh": "约 1 分钟"
+      },
+      "fps": "30",
+      "license": {
+        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+      },
+      "usage": {
+        "en": "Playable game-state evolution module",
+        "zh": "可播放的棋局状态演化模块"
+      },
+      "action": {
+        "en": "Play evolution clip",
+        "zh": "播放演化短片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2019-pluribus-blueprint-search"
+  ],
+  "sourceIds": [
+    "source-science-paper",
+    "source-meta-ai-pluribus-report",
+    "source-cmu-pluribus-release"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2019-pluribus-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "许多真实策略场景并不是干净的两人零和棋局。多人扑克通过多个拥有私人信息、激励不断变化的对手，把这个差距具体化了。",
+        "en": "Many real strategic settings are neither two-player nor zero-sum in the clean chess sense. Multiplayer poker made that gap concrete by adding several opponents with private information and shifting incentives."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Pluribus 使用紧凑自我对弈蓝图作为基准策略。在对局中，它用有限前瞻搜索细化决策，而不是从头求解整个六人游戏。",
+        "en": "Pluribus used a compact self-play blueprint as the baseline policy. During play it applied limited-lookahead search to refine decisions without trying to solve the entire six-player game from scratch."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Pluribus 视为不完全信息 AI 扩展到两人之外的重要展示。它的长期影响在于提出蓝图加搜索模式，用于那些无法精确计算均衡的复杂多智能体领域。",
+        "en": "Experts generally treat Pluribus as an important demonstration that imperfect-information AI can scale beyond two players. Its legacy is the blueprint-plus-search pattern for messy multi-agent domains where exact equilibrium computation is out of reach."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

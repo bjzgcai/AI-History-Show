@@ -1,0 +1,68 @@
+{
+  "id": "2014-gan",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "zh": "生成对抗网络",
+    "en": "Generative Adversarial Networks"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
+    "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大蒙特利尔",
+      "en": "Montreal, Canada"
+    },
+    "place": {
+      "zh": "蒙特利尔大学",
+      "en": "University of Montreal"
+    },
+    "coordinates": [
+      45.5056,
+      -73.6139
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "ian-goodfellow",
+      "role": {
+        "zh": "GAN 主要作者",
+        "en": "GAN lead author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "yoshua-bengio",
+      "role": {
+        "zh": "GAN 共同作者与导师",
+        "en": "GAN co-author and advisor"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "ai100-2014-gan"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

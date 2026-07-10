@@ -1,0 +1,113 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1984-cyc",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Cyc 常识知识库",
+    "en": "Cyc"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
+    "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "cyc",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Book",
+        "zh": "图书"
+      },
+      "title": {
+        "en": "Building Large Knowledge-Based Systems",
+        "zh": "构建大型知识系统"
+      },
+      "description": {
+        "en": "Foundational book record for Cyc and its large common-sense knowledge engineering program.",
+        "zh": "Cyc 及其大型常识知识工程项目的奠基著作记录。"
+      },
+      "url": "https://dl.acm.org/doi/book/10.5555/70571",
+      "source": "https://dl.acm.org/doi/book/10.5555/70571",
+      "action": {
+        "en": "Open book record",
+        "zh": "打开图书记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1984-cyc-douglas-lenat",
+    "asset-1984-cyc-cyc-projects-logos",
+    "asset-1984-cyc-microtheories",
+    "asset-1984-cyc-common-sense-rule"
+  ],
+  "sourceIds": [
+    "source-building-large-knowledge-based-systems",
+    "source-the-evolution-of-cycl",
+    "source-cyc",
+    "source-cyc-projects-logo-image"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1984-cyc-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。 这段背景帮助观众把Cyc 常识知识库放回当时的技术问题和研究重点中理解。",
+        "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing. This context helps viewers place Cyc in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-building-large-knowledge-based-systems"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。 关键机制是大型符号本体与微理论，它把资料线索与可见的演示行为连接起来。",
+        "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure. The key mechanism is Large symbolic ontology and microtheories, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-building-large-knowledge-based-systems"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Cyc 视为最雄心勃勃的符号 AI 尝试之一，目标是显式编码常识。它的长期影响在于持续推动关于知识工程、混合推理、本体和纯数据学习局限性的讨论。",
+        "en": "Experts generally treat Cyc as one of the most ambitious symbolic-AI attempts to encode common sense explicitly. Its long-term legacy is keeping debates alive about knowledge engineering, hybrid reasoning, ontologies, and the limits of data-only learning."
+      },
+      "sourceIds": [
+        "source-building-large-knowledge-based-systems"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

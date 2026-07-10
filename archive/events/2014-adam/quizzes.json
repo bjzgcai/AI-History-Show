@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-2014-adam-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "Adam 为什么特别适合深度网络训练？",
+      "en": "What made Adam especially convenient for deep-network training?"
+    },
+    "options": [
+      {
+        "zh": "它根据梯度的一阶和二阶矩自适应调整参数更新",
+        "en": "It adapts parameter updates from first and second gradient moments"
+      },
+      {
+        "zh": "它完全移除了梯度",
+        "en": "It removes gradients from learning entirely"
+      },
+      {
+        "zh": "它要求为每个权重手写规则",
+        "en": "It requires a hand-written rule for every weight"
+      },
+      {
+        "zh": "它只适用于决策树",
+        "en": "It only works on decision trees"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Adam 将类似动量的梯度平均与梯度平方缩放结合起来，在许多场景中减少手工学习率调参。",
+      "en": "Adam combines momentum-like gradient averages with squared-gradient scaling, reducing the amount of manual learning-rate tuning needed in many settings."
+    },
+    "sourceIds": [
+      "source-adam-a-method-for-stochastic-optimization"
+    ],
+    "assetIds": [
+      "asset-2014-adam-diederik-kingma"
+    ]
+  },
+  {
+    "id": "2014-adam-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Adam 为什么特别适合深度网络训练？",
+      "en": "What made Adam especially convenient for deep-network training?"
+    },
+    "options": [
+      {
+        "zh": "它根据梯度的一阶和二阶矩自适应调整参数更新",
+        "en": "It adapts parameter updates from first and second gradient moments"
+      },
+      {
+        "zh": "它完全移除了梯度",
+        "en": "It removes gradients from learning entirely"
+      },
+      {
+        "zh": "它要求为每个权重手写规则",
+        "en": "It requires a hand-written rule for every weight"
+      },
+      {
+        "zh": "它只适用于决策树",
+        "en": "It only works on decision trees"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Adam 将类似动量的梯度平均与梯度平方缩放结合起来，在许多场景中减少手工学习率调参。",
+      "en": "Adam combines momentum-like gradient averages with squared-gradient scaling, reducing the amount of manual learning-rate tuning needed in many settings."
+    },
+    "sourceIds": [
+      "source-adam-a-method-for-stochastic-optimization"
+    ],
+    "assetIds": [
+      "asset-2014-adam-diederik-kingma"
+    ]
+  }
+]

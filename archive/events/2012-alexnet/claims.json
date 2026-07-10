@@ -1,0 +1,27 @@
+[
+  {
+    "id": "claim-imagenet-breakthrough",
+    "importance": "core",
+    "text": {
+      "zh": "AlexNet 在 ImageNet 2012 中以深度卷积网络显著提升图像分类结果。",
+      "en": "AlexNet substantially improved image classification results with a deep convolutional network in ImageNet 2012."
+    },
+    "sourceIds": [
+      "source-alexnet-neurips-paper",
+      "source-imagenet-challenge"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-scale-recipe",
+    "importance": "core",
+    "text": {
+      "zh": "AlexNet 的突破结合了 GPU 训练、ReLU、数据增强和 dropout 等规模化训练要素。",
+      "en": "AlexNet combined scaled training ingredients including GPUs, ReLU, data augmentation, and dropout."
+    },
+    "sourceIds": [
+      "source-alexnet-neurips-paper"
+    ],
+    "status": "verified"
+  }
+]

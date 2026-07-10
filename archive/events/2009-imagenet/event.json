@@ -1,0 +1,66 @@
+{
+  "id": "2009-imagenet",
+  "year": "2009",
+  "date": "2009",
+  "title": {
+    "zh": "ImageNet",
+    "en": "ImageNet"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>",
+    "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国新泽西州与加利福尼亚州",
+      "en": "New Jersey and California, United States"
+    },
+    "place": {
+      "zh": "普林斯顿大学 / 斯坦福大学",
+      "en": "Princeton University / Stanford University"
+    },
+    "coordinates": [
+      40.3431,
+      -74.6551
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "fei-fei-li",
+      "role": {
+        "zh": "ImageNet 项目主要推动者",
+        "en": "ImageNet project leader"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jia-deng",
+      "role": {
+        "zh": "ImageNet 论文第一作者",
+        "en": "First author of ImageNet paper"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

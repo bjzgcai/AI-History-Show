@@ -1,0 +1,26 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "循环神经网络 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Recurrent Neural Networks is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-legacy-event-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
+      "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+    },
+    "sourceIds": [
+      "source-legacy-event-record"
+    ],
+    "status": "needs-source"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "asset-2019-ai-feynman-people-01",
+    "type": "image",
+    "path": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-ai-feynman-historical-01",
+    "type": "image",
+    "path": "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "AI Feynman：自主科学规律发现 架构图",
+      "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-ai-feynman-papers-01",
+    "type": "image",
+    "path": "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《AI 费曼：受物理启发的符号回归方法》",
+      "en": "AI Feynman: a physics-inspired method for symbolic regression"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-ai-feynman-papers-02",
+    "type": "image",
+    "path": "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《AI 费曼：受物理启发的符号回归方法》",
+      "en": "AI Feynman: a physics-inspired method for symbolic regression"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

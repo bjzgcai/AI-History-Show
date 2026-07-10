@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2015-deep-compression-prune-quantize-code",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "深度压缩 解释图",
+      "en": "Deep Compression explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-deep-compression",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
+    "type": "image",
+    "path": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "深度压缩 外部参考图",
+      "en": "Deep Compression external reference image"
+    },
+    "sourceId": "source-deep-compression",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2017-wasserstein-gan",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Wasserstein GAN",
+    "en": "Wasserstein GAN"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>",
+    "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "PMLR",
+        "zh": "PMLR"
+      },
+      "title": {
+        "en": "Wasserstein Generative Adversarial Networks",
+        "zh": "Wasserstein 生成对抗网络"
+      },
+      "description": {
+        "en": "PMLR source card for Wasserstein GAN.",
+        "zh": "PMLR 的Wasserstein GAN资料卡片。"
+      },
+      "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+      "source": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2017-wasserstein-gan-bottou-75",
+    "asset-2017-wasserstein-gan-critic-distance"
+  ],
+  "sourceIds": [
+    "source-wasserstein-generative-adversarial-networks",
+    "source-improved-training-of-wasserstein-gans",
+    "source-wasserstein-gan-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2017-wasserstein-gan-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。",
+        "en": "Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems."
+      },
+      "sourceIds": [
+        "source-wasserstein-generative-adversarial-networks"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-wasserstein-generative-adversarial-networks"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Wasserstein GAN 视为理解 GAN 训练为何会失败的概念进展。它的长期影响在于把受传输启发的距离和 critic 约束引入生成式建模。",
+        "en": "Experts generally treat Wasserstein GAN as a conceptual advance in understanding why GAN training can fail. Its long-term legacy is the use of transport-inspired distances and critic constraints in generative modeling."
+      },
+      "sourceIds": [
+        "source-wasserstein-generative-adversarial-networks"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

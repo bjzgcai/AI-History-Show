@@ -1,0 +1,72 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2025-llm-competition",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "大语言模型百花齐放",
+    "en": "A Flourishing Competition Among Large Language Models"
+  },
+  "displaySummary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "displayDescription": {
+    "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
+    "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-2025-llm-competition-historical-01",
+    "asset-2025-llm-competition-architecture-01",
+    "asset-2025-llm-competition-historical-02",
+    "asset-2025-llm-competition-historical-03"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "大模型竞争的可见化，越来越依赖“活榜单”而不是单次论文成绩：用户偏好投票、公开对战与频繁更新，让模型比较从实验室内部评测走向持续的公共观察。",
+        "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。",
+        "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

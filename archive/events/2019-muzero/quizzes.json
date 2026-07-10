@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2019-muzero-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "MuZero 与 AlphaZero 的关键区别是什么？",
+      "en": "What is the key difference between MuZero and AlphaZero?"
+    },
+    "options": [
+      {
+        "zh": "MuZero 学习用于规划的紧凑模型，而不是直接获得精确环境动力学",
+        "en": "MuZero learns a compact model for planning instead of being given exact environment dynamics"
+      },
+      {
+        "zh": "MuZero 不能使用搜索",
+        "en": "MuZero cannot use search"
+      },
+      {
+        "zh": "MuZero 只玩扑克",
+        "en": "MuZero only plays poker"
+      },
+      {
+        "zh": "MuZero 需要人类开局库",
+        "en": "MuZero requires human opening books"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "MuZero 在对搜索有用的潜在模型中预测奖励、价值和策略。",
+      "en": "MuZero predicts rewards, values, and policies in a latent model useful for search."
+    },
+    "sourceIds": [
+      "source-nature-paper"
+    ],
+    "assetIds": [
+      "asset-2019-muzero-learned-model"
+    ]
+  }
+]

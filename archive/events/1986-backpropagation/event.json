@@ -1,0 +1,74 @@
+{
+  "id": "1986-backpropagation",
+  "year": 1986,
+  "date": "1986",
+  "title": {
+    "zh": "反向传播算法",
+    "en": "Backpropagation"
+  },
+  "summary": {
+    "zh": "神经网络与连接主义的复兴",
+    "en": "Neural Networks and Connectionism"
+  },
+  "description": {
+    "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
+    "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国, 加利福尼亚州",
+      "en": "CA, United States"
+    },
+    "place": {
+      "zh": "加州大学圣地亚哥分校",
+      "en": "University of California, San Diego"
+    },
+    "coordinates": [
+      32.8801,
+      -117.234
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "david-rumelhart",
+      "role": {
+        "zh": "BP算法作者",
+        "en": "Backpropagation author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "geoffrey-hinton",
+      "role": {
+        "zh": "深度学习之父",
+        "en": "Pioneer of deep learning"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ronald-williams",
+      "role": {
+        "zh": "BP算法共同作者",
+        "en": "Backpropagation co-author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

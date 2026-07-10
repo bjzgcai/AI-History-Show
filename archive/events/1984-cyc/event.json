@@ -1,0 +1,66 @@
+{
+  "id": "1984-cyc",
+  "year": "1984",
+  "date": "1984",
+  "title": {
+    "zh": "Cyc 常识知识库",
+    "en": "Cyc"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
+    "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国得克萨斯州",
+      "en": "Texas, United States"
+    },
+    "place": {
+      "zh": "微电子与计算机技术公司（MCC）",
+      "en": "Microelectronics and Computer Technology Corporation"
+    },
+    "coordinates": [
+      30.2672,
+      -97.7431
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "douglas-lenat",
+      "role": {
+        "zh": "Cyc 项目创始人",
+        "en": "Founder of the Cyc project"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "r-v-guha",
+      "role": {
+        "zh": "Cyc 核心表示工作的共同作者",
+        "en": "Co-author of core Cyc representation work"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

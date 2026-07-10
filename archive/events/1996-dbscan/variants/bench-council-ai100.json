@@ -1,0 +1,113 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1996-dbscan",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "DBSCAN 密度聚类",
+    "en": "DBSCAN"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>",
+    "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "dbscan",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "KDD Paper",
+        "zh": "KDD 论文"
+      },
+      "title": {
+        "en": "A density-based algorithm for discovering clusters",
+        "zh": "一种发现簇的基于密度的算法"
+      },
+      "description": {
+        "en": "Original KDD paper introducing DBSCAN's density reachability and noise-aware clustering.",
+        "zh": "KDD 原始论文：介绍 DBSCAN 的密度可达与噪声感知聚类。"
+      },
+      "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+      "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+      "action": {
+        "en": "Open paper record",
+        "zh": "打开论文记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1996-dbscan-sfu-professor-martin-ester-2019",
+    "asset-1996-dbscan-dbscan-density-data",
+    "asset-1996-dbscan-density-reachability",
+    "asset-1996-dbscan-noise-core-border"
+  ],
+  "sourceIds": [
+    "source-a-density-based-algorithm-for-discovering-clusters",
+    "source-dbscan-revisited-revisited",
+    "source-scikit-learn-dbscan-documentation",
+    "source-martin-ester-portrait"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1996-dbscan-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。 这段背景帮助观众把DBSCAN 密度聚类放回当时的技术问题和研究重点中理解。",
+        "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis. This context helps viewers place DBSCAN in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-a-density-based-algorithm-for-discovering-clusters"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。 关键机制是基于 epsilon 与 MinPts 的密度可达，它把资料线索与可见的演示行为连接起来。",
+        "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability. The key mechanism is Density reachability with epsilon and MinPts, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-a-density-based-algorithm-for-discovering-clusters"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 DBSCAN 视为标准的基于密度聚类方法，尤其适用于空间数据和不规则簇形状。它的长期影响在于核心点、边界点和噪声点的语言让异常处理和任意形状簇变得实用。",
+        "en": "Experts generally treat DBSCAN as a standard density-based clustering method, especially for spatial data and irregular cluster shapes. Its long-term legacy is the core-border-noise vocabulary that made outlier handling and arbitrary-shape clusters practical."
+      },
+      "sourceIds": [
+        "source-a-density-based-algorithm-for-discovering-clusters"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ai100-1989-q-learning",
+  "year": 1989,
+  "date": "1989",
+  "title": {
+    "zh": "Q-Learning",
+    "en": "Q-Learning"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>",
+    "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "Cambridge, United Kingdom",
+      "en": "Cambridge, United Kingdom"
+    },
+    "place": {
+      "zh": "King's College Cambridge",
+      "en": "King's College Cambridge"
+    },
+    "coordinates": [
+      52.2043,
+      0.1166
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "christopher-watkins",
+      "role": {
+        "zh": "Q-learning 主要作者",
+        "en": "Q-learning lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1971-complexity-theory-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "NP 完全性帮助研究者比较什么？",
+      "en": "What does NP-completeness help researchers compare?"
+    },
+    "options": [
+      {
+        "zh": "不同问题的计算困难性",
+        "en": "The computational hardness of different problems"
+      },
+      {
+        "zh": "电脑屏幕的亮度",
+        "en": "The brightness of computer screens"
+      },
+      {
+        "zh": "程序员的笔迹风格",
+        "en": "The handwriting style of programmers"
+      },
+      {
+        "zh": "机器的物理重量",
+        "en": "The physical weight of machines"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "多项式时间归约让研究者把不同问题联系起来，并推理它们共享的困难性。",
+      "en": "Polynomial-time reductions let researchers connect different problems and reason about shared hardness."
+    },
+    "sourceIds": [
+      "source-the-complexity-of-theorem-proving-procedures"
+    ],
+    "assetIds": [
+      "asset-1971-complexity-theory-stephen-cook"
+    ]
+  },
+  {
+    "id": "1971-complexity-theory-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "NP 完全性帮助研究者比较什么？",
+      "en": "What does NP-completeness help researchers compare?"
+    },
+    "options": [
+      {
+        "zh": "不同问题的计算困难性",
+        "en": "The computational hardness of different problems"
+      },
+      {
+        "zh": "电脑屏幕的亮度",
+        "en": "The brightness of computer screens"
+      },
+      {
+        "zh": "程序员的笔迹风格",
+        "en": "The handwriting style of programmers"
+      },
+      {
+        "zh": "机器的物理重量",
+        "en": "The physical weight of machines"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "多项式时间归约让研究者把不同问题联系起来，并推理它们共享的困难性。",
+      "en": "Polynomial-time reductions let researchers connect different problems and reason about shared hardness."
+    },
+    "sourceIds": [
+      "source-the-complexity-of-theorem-proving-procedures"
+    ],
+    "assetIds": [
+      "asset-1971-complexity-theory-stephen-cook"
+    ]
+  }
+]

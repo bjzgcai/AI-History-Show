@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "KNN 最近邻 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "KNN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-nearest-neighbor-pattern-classification",
+      "source-stanford-hosted-paper-pdf"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>",
+      "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>"
+    },
+    "sourceIds": [
+      "source-nearest-neighbor-pattern-classification",
+      "source-stanford-hosted-paper-pdf"
+    ],
+    "status": "needs-source"
+  }
+]

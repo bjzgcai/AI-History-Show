@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-geoffrey-hinton",
+    "type": "image",
+    "path": "resources/images/figures/geoffrey-hinton.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "杰弗里·辛顿肖像",
+      "en": "Geoffrey Hinton portrait"
+    },
+    "subcaption": {
+      "zh": "知识蒸馏共同作者",
+      "en": "Knowledge distillation co-author"
+    },
+    "sourceId": "source-distilling-the-knowledge-in-a-neural-network",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地项目图片；复用权利沿用现有项目素材元数据。",
+        "en": "Local project image; reuse rights inherited from existing project asset metadata."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-knowledge-distillation-teacher-student",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "知识蒸馏 解释图",
+      "en": "Knowledge Distillation explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-distilling-the-knowledge-in-a-neural-network",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

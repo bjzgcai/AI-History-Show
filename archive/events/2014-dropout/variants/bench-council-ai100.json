@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2014-dropout",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Dropout",
+    "en": "Dropout"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>",
+    "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "dropout",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "JMLR",
+        "zh": "《机器学习研究杂志》"
+      },
+      "title": {
+        "en": "Dropout paper",
+        "zh": "Dropout 论文"
+      },
+      "description": {
+        "en": "Primary JMLR source; local images redraw masks and model averaging.",
+        "zh": "《机器学习研究杂志》 原始论文；本地图重画掩码和模型平均。"
+      },
+      "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "source": "https://jmlr.org/papers/v15/srivastava14a.html",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open JMLR paper",
+        "zh": "打开 《机器学习研究杂志》 论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2014-dropout-nitish-srivastava",
+    "asset-2014-dropout-random-mask",
+    "asset-2014-dropout-ensemble-average"
+  ],
+  "sourceIds": [
+    "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "source-improving-neural-networks-by-preventing-co-adaptation",
+    "source-pytorch-torch-nn-dropout"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2014-dropout-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "随着网络变大，记忆训练集成为实际问题。Dropout 提供了不必改变数据集的简单干预方式。",
+        "en": "As networks grew larger, memorization became a practical training problem. Dropout offered a simple intervention that did not require changing the dataset."
+      },
+      "sourceIds": [
+        "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "核心思想是在训练时随机隐藏单元，使隐藏特征不能过度依赖彼此。 关键机制是随机变薄网络进行正则化，它把资料线索与可见的演示行为连接起来。",
+        "en": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other. The key mechanism is Randomly thinned networks for regularization, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Dropout 视为简单有效的正则化思想，但其价值取决于架构和规模。它的长期影响在于训练时引入噪声这一原则，如今常与归一化、数据增强和其他正则化方法一起讲解。",
+        "en": "Experts generally treat dropout as a simple and effective regularization idea whose value depends on architecture and scale. Its long-term legacy is the training-time noise principle, now taught alongside normalization, augmentation, and other regularizers."
+      },
+      "sourceIds": [
+        "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

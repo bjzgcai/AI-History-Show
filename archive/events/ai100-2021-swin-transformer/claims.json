@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Swin Transformer 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Swin Transformer is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+      "source-iccv-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>",
+      "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>"
+    },
+    "sourceIds": [
+      "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+      "source-iccv-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

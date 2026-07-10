@@ -1,0 +1,58 @@
+{
+  "id": "ai100-1980-neocognitron",
+  "year": 1980,
+  "date": "1980",
+  "title": {
+    "zh": "新认知机",
+    "en": "Neocognitron"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
+    "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+  },
+  "location": {
+    "regionId": "japan",
+    "country": {
+      "zh": "日本东京",
+      "en": "Tokyo, Japan"
+    },
+    "place": {
+      "zh": "NHK 广播科学研究实验室",
+      "en": "NHK Broadcasting Science Research Laboratories"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "kunihiko-fukushima",
+      "role": {
+        "zh": "Neocognitron 提出者",
+        "en": "Creator of the neocognitron"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

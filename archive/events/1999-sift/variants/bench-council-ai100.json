@@ -1,0 +1,116 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1999-sift",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "SIFT",
+    "en": "SIFT"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>",
+    "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "sift",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "UBC Laboratory for Computational Intelligence",
+      "title": {
+        "en": "SIFT ICCV paper PDF",
+        "zh": "SIFT ICCV 论文 PDF"
+      },
+      "description": {
+        "en": "UBC-hosted PDF for the original SIFT conference paper.",
+        "zh": "UBC 托管的 SIFT 原始会议论文 PDF。"
+      },
+      "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open paper PDF",
+        "zh": "打开论文 PDF"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1999-sift-david-lowe",
+    "asset-1999-sift-scale-space",
+    "asset-1999-sift-descriptor"
+  ],
+  "sourceIds": [
+    "source-object-recognition-from-local-scale-invariant-features",
+    "source-distinctive-image-features-from-scale-invariant-keypoints",
+    "source-david-lowe-ubc-computer-science"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1999-sift-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。 这段背景帮助观众把SIFT放回当时的技术问题和研究重点中理解。",
+        "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes. This context helps viewers place SIFT in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-object-recognition-from-local-scale-invariant-features"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。 关键机制是尺度不变局部特征，它把资料线索与可见的演示行为连接起来。",
+        "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor. The key mechanism is Scale-invariant local features, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-object-recognition-from-local-scale-invariant-features"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 SIFT 视为深度学习之前计算机视觉中标志性的手工特征。它的长期影响在于塑造了局部描述子、运动恢复结构流程、匹配基准和稳健视觉对应背后的特征工程思路。",
+        "en": "Experts generally treat SIFT as a landmark handcrafted feature for pre-deep-learning computer vision. Its long-term legacy is the feature-engineering mindset behind local descriptors, structure-from-motion pipelines, matching benchmarks, and robust visual correspondence."
+      },
+      "sourceIds": [
+        "source-object-recognition-from-local-scale-invariant-features"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1951-snarc-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "SNARC 主要用来展示什么？",
+      "en": "What was SNARC built to demonstrate?"
+    },
+    "options": [
+      {
+        "zh": "早期神经式硬件中的奖励驱动学习",
+        "en": "Reward-driven learning in early neural-style hardware"
+      },
+      {
+        "zh": "现代图像搜索引擎",
+        "en": "A modern image search engine"
+      },
+      {
+        "zh": "会写诗的语言模型",
+        "en": "A language model writing poems"
+      },
+      {
+        "zh": "固定论文目录",
+        "en": "A fixed paper bibliography"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "SNARC 用奖励信号和模拟神经式机器来建模迷宫学习。",
+      "en": "SNARC modeled maze learning with reward signals and analog neural-style machinery."
+    },
+    "sourceIds": [
+      "source-snarc-history-overview"
+    ],
+    "assetIds": [
+      "asset-marvin-minsky"
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1958-lisp-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "LISP 让早期 AI 更可编程，因为代码和数据都可以写成什么？",
+      "en": "LISP made early AI feel programmable because code and data could both be written as..."
+    },
+    "options": [
+      {
+        "zh": "S 表达式",
+        "en": "S-expressions"
+      },
+      {
+        "zh": "照片",
+        "en": "Photographs"
+      },
+      {
+        "zh": "围棋棋子",
+        "en": "Go stones"
+      },
+      {
+        "zh": "只有录音磁带",
+        "en": "Audio tapes only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "S 表达式让符号程序和符号数据共享一种紧凑表示。",
+      "en": "S-expressions made symbolic programs and symbolic data share a compact representation."
+    },
+    "sourceIds": [
+      "source-recursive-functions-of-symbolic-expressions"
+    ],
+    "assetIds": [
+      "asset-1958-lisp-john-mccarthy"
+    ]
+  },
+  {
+    "id": "1958-lisp-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "LISP 让早期 AI 更可编程，因为代码和数据都可以写成什么？",
+      "en": "LISP made early AI feel programmable because code and data could both be written as..."
+    },
+    "options": [
+      {
+        "zh": "S 表达式",
+        "en": "S-expressions"
+      },
+      {
+        "zh": "照片",
+        "en": "Photographs"
+      },
+      {
+        "zh": "围棋棋子",
+        "en": "Go stones"
+      },
+      {
+        "zh": "只有录音磁带",
+        "en": "Audio tapes only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "S 表达式让符号程序和符号数据共享一种紧凑表示。",
+      "en": "S-expressions made symbolic programs and symbolic data share a compact representation."
+    },
+    "sourceIds": [
+      "source-recursive-functions-of-symbolic-expressions"
+    ],
+    "assetIds": [
+      "asset-1958-lisp-john-mccarthy"
+    ]
+  }
+]

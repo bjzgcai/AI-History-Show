@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-going-deeper-with-convolutions",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "用卷积走得更深",
+      "en": "Going Deeper with Convolutions"
+    },
+    "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-torchvision-googlenet",
+    "type": "reference-only",
+    "label": {
+      "zh": "模型文档",
+      "en": "Model docs"
+    },
+    "title": {
+      "zh": "TorchVision GoogLeNet",
+      "en": "TorchVision GoogLeNet"
+    },
+    "url": "https://pytorch.org/vision/stable/models/googlenet.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-tensorflow-keras-inceptionv3",
+    "type": "reference-only",
+    "label": {
+      "zh": "模型文档",
+      "en": "Model docs"
+    },
+    "title": {
+      "zh": "TensorFlow Keras InceptionV3",
+      "en": "TensorFlow Keras InceptionV3"
+    },
+    "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

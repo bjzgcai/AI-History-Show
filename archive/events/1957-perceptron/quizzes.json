@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1958-rosenblatt-perceptron-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "感知机的基本计算是什么？",
+      "en": "What is the basic computation in a perceptron?"
+    },
+    "options": [
+      {
+        "zh": "加权求和后进行阈值决策",
+        "en": "A weighted sum followed by a threshold decision"
+      },
+      {
+        "zh": "t-SNE 困惑度搜索",
+        "en": "A t-SNE perplexity search"
+      },
+      {
+        "zh": "仅贝叶斯网络消息传递",
+        "en": "A Bayesian network message pass only"
+      },
+      {
+        "zh": "分子质谱过滤器",
+        "en": "A molecular mass spectrum filter"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "感知机通过输入加权求和并与阈值比较来分类。",
+      "en": "A perceptron classifies by summing weighted inputs and comparing the result to a threshold."
+    },
+    "sourceIds": [
+      "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
+    ],
+    "assetIds": [
+      "asset-1958-rosenblatt-perceptron-frank-rosenblatt"
+    ]
+  }
+]

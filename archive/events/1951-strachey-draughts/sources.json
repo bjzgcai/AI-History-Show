@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-logical-or-non-mathematical-programmes",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "逻辑或非数学程序",
+      "en": "Logical or non-mathematical programmes"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-computer-pioneers-christopher-strachey",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物资料",
+      "en": "Biography"
+    },
+    "title": {
+      "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+      "en": "Computer Pioneers - Christopher Strachey"
+    },
+    "url": "https://history.computer.org/pioneers/strachey.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-strachey-draughts-program-screenshot",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯特雷奇 跳棋程序截图",
+      "en": "Strachey draughts program screenshot"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-checkers-board-photo",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "跳棋棋盘照片",
+      "en": "Checkers board photo"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

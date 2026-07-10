@@ -1,0 +1,82 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1958-wangs-algorithm",
+  "displayTitle": {
+    "zh": "王氏算法",
+    "en": "Wang's Algorithm"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1958-wangs-algorithm-hao-wang",
+    "asset-1958-wangs-algorithm-pattern-proof"
+  ],
+  "sourceIds": [
+    "source-proving-theorems-by-pattern-recognition-i",
+    "source-proving-theorems-by-pattern-recognition-ii",
+    "source-rockefeller-university-digital-commons-wang-hao"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1958-wangs-algorithm-ai100",
+  "commentarySections": [
+    {
+      "id": "published-papers",
+      "label": {
+        "zh": "论文材料",
+        "en": "Published Papers"
+      },
+      "html": {
+        "zh": "第一篇论文发表于 1960 年 4 月 《ACM 通讯》，DOI 为 10.1145/367177.367224。贝尔实验室 档案保存了 1961 年续篇，其中 王浩 讨论了谓词演算证明过程及相关判定问题情形。",
+        "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases."
+      },
+      "sourceIds": [
+        "source-proving-theorems-by-pattern-recognition-i"
+      ]
+    },
+    {
+      "id": "pattern-logic",
+      "label": {
+        "zh": "模式逻辑",
+        "en": "Pattern Logic"
+      },
+      "html": {
+        "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。",
+        "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears."
+      },
+      "sourceIds": [
+        "source-proving-theorems-by-pattern-recognition-i"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把王氏算法视为自动定理证明的早期里程碑。它的长期影响在于缩小了形式逻辑与机器执行之间的距离，并影响了后来的证明过程和 SAT 式推理。",
+        "en": "Experts generally treat Wang's algorithm as an early milestone in automated theorem proving. Its long-term legacy is that it narrowed the gap between formal logic and machine execution, influencing later proof procedures and SAT-style reasoning."
+      },
+      "sourceIds": [
+        "source-proving-theorems-by-pattern-recognition-i"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

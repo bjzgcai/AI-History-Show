@@ -1,0 +1,66 @@
+{
+  "id": "ai100-2006-surf",
+  "year": 2006,
+  "date": "2006",
+  "title": {
+    "zh": "SURF 加速稳健特征",
+    "en": "SURF"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>",
+    "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>"
+  },
+  "location": {
+    "regionId": "switzerland",
+    "country": {
+      "zh": "瑞士苏黎世",
+      "en": "Zurich, Switzerland"
+    },
+    "place": {
+      "zh": "苏黎世联邦理工学院",
+      "en": "ETH Zurich"
+    },
+    "coordinates": [
+      47.3763,
+      8.5481
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "herbert-bay",
+      "role": {
+        "zh": "SURF 主要作者",
+        "en": "Lead author of SURF"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "tinne-tuytelaars",
+      "role": {
+        "zh": "Co-author of SURF",
+        "en": "Co-author of SURF"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

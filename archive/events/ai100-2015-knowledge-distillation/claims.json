@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "知识蒸馏 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Knowledge Distillation is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-distilling-the-knowledge-in-a-neural-network",
+      "source-knowledge-distillation-overview"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>",
+      "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>"
+    },
+    "sourceIds": [
+      "source-distilling-the-knowledge-in-a-neural-network",
+      "source-knowledge-distillation-overview"
+    ],
+    "status": "needs-source"
+  }
+]

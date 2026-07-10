@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-murray-campbell-ibm-research",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "默里·坎贝尔, IBM 研究院",
+      "en": "Murray Campbell, IBM Research"
+    },
+    "url": "https://research.ibm.com/people/murray-campbell",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-mastering-the-game-computer-history-museum",
+    "type": "reference-only",
+    "label": {
+      "zh": "博物馆",
+      "en": "Museum"
+    },
+    "title": {
+      "zh": "Mastering the Game, Computer History Museum",
+      "en": "Mastering the Game, Computer History Museum"
+    },
+    "url": "https://www.computerhistory.org/chess/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-ibm100-deep-blue",
+    "type": "project-page",
+    "label": {
+      "zh": "官方历史资料",
+      "en": "Official history"
+    },
+    "title": {
+      "zh": "IBM100: 深蓝",
+      "en": "IBM100: Deep Blue"
+    },
+    "url": "https://www.ibm.com/history/deep-blue",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2015-batch-normalization",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "批归一化",
+    "en": "Batch Normalization"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
+    "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "batchnorm",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "PMLR",
+        "zh": "PMLR"
+      },
+      "title": {
+        "en": "Batch Normalization",
+        "zh": "批归一化"
+      },
+      "description": {
+        "en": "Open ICML paper page for batch normalization.",
+        "zh": "批归一化的 ICML 开放论文页面。"
+      },
+      "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+      "source": "https://proceedings.mlr.press/v37/ioffe15.html",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open article",
+        "zh": "打开文章"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2015-googlenet-inception-christian-szegedy",
+    "asset-2015-batch-normalization-activation-scale"
+  ],
+  "sourceIds": [
+    "source-batch-normalization",
+    "source-batch-normalization-on-arxiv",
+    "source-google-research-publication-page",
+    "source-google-research-archived-pdf"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2015-batch-normalization-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。",
+        "en": "Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice."
+      },
+      "sourceIds": [
+        "source-batch-normalization"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Activations are centered, scaled, then shifted by learned parameters inside the network. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-batch-normalization"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把批归一化视为实用的训练稳定器，同时也指出后来的架构有时会用其他归一化方法替代它。它的长期影响在于把激活统计量明确纳入深度网络优化过程。",
+        "en": "Experts generally treat batch normalization as a practical training stabilizer, while noting that later architectures sometimes replace it with other normalization methods. Its long-term legacy is making activation statistics an explicit part of deep-network optimization."
+      },
+      "sourceIds": [
+        "source-batch-normalization"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

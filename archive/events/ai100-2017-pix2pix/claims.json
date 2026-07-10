@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Pix2Pix 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Pix2Pix is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-image-to-image-translation-with-conditional-adversarial-networks",
+      "source-cvpr-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>",
+      "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>"
+    },
+    "sourceIds": [
+      "source-image-to-image-translation-with-conditional-adversarial-networks",
+      "source-cvpr-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

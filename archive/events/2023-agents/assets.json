@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2023-agents-historical-02",
+    "type": "image",
+    "path": "resources/images/2023-agents/historical/2023-agents_historical_02.png",
+    "role": "hero-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "智能体：LLM驱动的自主系统",
+      "en": "Agents: LLM-Driven Autonomous Systems"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2023-agents-historical-03",
+    "type": "image",
+    "path": "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "智能体：LLM驱动的自主系统",
+      "en": "Agents: LLM-Driven Autonomous Systems"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2023-agents-historical-04",
+    "type": "image",
+    "path": "resources/images/2023-agents/historical/2023-agents_historical_04.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "智能体：LLM驱动的自主系统",
+      "en": "Agents: LLM-Driven Autonomous Systems"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

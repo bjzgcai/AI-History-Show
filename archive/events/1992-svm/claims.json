@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "支持向量机 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Support Vector Machines is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-training-algorithm-for-optimal-margin-classifiers",
+      "source-libsvm-project-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>",
+      "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>"
+    },
+    "sourceIds": [
+      "source-a-training-algorithm-for-optimal-margin-classifiers",
+      "source-libsvm-project-page"
+    ],
+    "status": "needs-source"
+  }
+]

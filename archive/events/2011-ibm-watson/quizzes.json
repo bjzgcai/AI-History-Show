@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2011-ibm-watson-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Watson 如何选择 Jeopardy! 答案？",
+      "en": "How did Watson choose a Jeopardy! answer?"
+    },
+    "options": [
+      {
+        "zh": "它生成候选答案，并按证据与置信度排序",
+        "en": "It generated candidate answers and ranked them by evidence and confidence"
+      },
+      {
+        "zh": "它在节目中实时打开互联网",
+        "en": "It opened the internet during the show"
+      },
+      {
+        "zh": "它每次都采用固定第一个答案",
+        "en": "It followed a fixed first answer every time"
+      },
+      {
+        "zh": "它只统计图像像素",
+        "en": "It only counted image pixels"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DeepQA 组合大量分析与评分组件，再把它们的证据合并为答案置信度。",
+      "en": "DeepQA combined many analysis and scoring components, then merged their evidence into answer confidence."
+    },
+    "sourceIds": [
+      "source-watson-beyond-jeopardy"
+    ],
+    "assetIds": [
+      "asset-2011-ibm-watson-david-ferrucci"
+    ]
+  }
+]

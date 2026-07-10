@@ -1,0 +1,66 @@
+{
+  "id": "2003-lda",
+  "year": "2003",
+  "date": "2003",
+  "title": {
+    "zh": "潜在狄利克雷分配",
+    "en": "Latent Dirichlet Allocation"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>",
+    "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国加利福尼亚州",
+      "en": "California, United States"
+    },
+    "place": {
+      "zh": "加州大学伯克利分校 / 斯坦福大学",
+      "en": "UC Berkeley / Stanford University"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "david-blei",
+      "role": {
+        "zh": "LDA 第一作者",
+        "en": "First author of LDA"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "michael-jordan",
+      "role": {
+        "zh": "共同作者，概率机器学习研究者",
+        "en": "Co-author and probabilistic ML researcher"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

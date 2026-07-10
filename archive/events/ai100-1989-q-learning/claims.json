@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Q-Learning 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Q-Learning is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-learning-from-delayed-rewards",
+      "source-q-learning"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>",
+      "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>"
+    },
+    "sourceIds": [
+      "source-learning-from-delayed-rewards",
+      "source-q-learning"
+    ],
+    "status": "needs-source"
+  }
+]

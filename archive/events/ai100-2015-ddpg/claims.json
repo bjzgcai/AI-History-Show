@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DDPG 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "DDPG is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-continuous-control-with-deep-reinforcement-learning",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
+      "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+    },
+    "sourceIds": [
+      "source-continuous-control-with-deep-reinforcement-learning",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  }
+]

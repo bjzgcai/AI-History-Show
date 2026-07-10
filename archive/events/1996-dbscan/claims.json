@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DBSCAN 密度聚类 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "DBSCAN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-density-based-algorithm-for-discovering-clusters",
+      "source-dbscan-revisited-revisited"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>",
+      "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>"
+    },
+    "sourceIds": [
+      "source-a-density-based-algorithm-for-discovering-clusters",
+      "source-dbscan-revisited-revisited"
+    ],
+    "status": "needs-source"
+  }
+]

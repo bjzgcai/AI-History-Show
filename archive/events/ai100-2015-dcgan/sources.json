@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用深度卷积 GAN 进行无监督表示学习》",
+      "en": "Unsupervised Representation Learning with Deep Convolutional GANs"
+    },
+    "url": "https://arxiv.org/abs/1511.06434",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-pytorch-dcgan-tutorial",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "PyTorch DCGAN 教程",
+      "en": "PyTorch DCGAN tutorial"
+    },
+    "url": "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-dcgan-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "DCGAN 概览",
+      "en": "DCGAN overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-optimization-by-simulated-annealing",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "模拟退火优化",
+      "en": "Optimization by Simulated Annealing"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scipy-dual-annealing",
+    "type": "reference-only",
+    "label": {
+      "zh": "优化器文档",
+      "en": "Optimizer docs"
+    },
+    "title": {
+      "zh": "SciPy dual_annealing",
+      "en": "SciPy dual_annealing"
+    },
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-hedibert-course-pdf-mirror",
+    "type": "book",
+    "label": {
+      "zh": "笔记本",
+      "en": "Notebook"
+    },
+    "title": {
+      "zh": "Hedibert course PDF mirror",
+      "en": "Hedibert course PDF mirror"
+    },
+    "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

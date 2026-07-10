@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2015-faster-r-cnn-kaiming-he",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "何恺明肖像",
+      "en": "Kaiming He portrait"
+    },
+    "subcaption": {
+      "zh": "Faster R-CNN 共同作者",
+      "en": "Portrait from Kaiming He's MIT-hosted personal page."
+    },
+    "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "个人网站照片；未说明复用权利。",
+        "en": "Personal website photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-faster-r-cnn-rpn-pipeline",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "区域建议网络",
+      "en": "Region proposal network"
+    },
+    "subcaption": {
+      "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+    },
+    "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-faster-r-cnn-detection-output",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "检测输出框",
+      "en": "Detection output boxes"
+    },
+    "subcaption": {
+      "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+    },
+    "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

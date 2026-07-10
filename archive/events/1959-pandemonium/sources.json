@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-pandemonium-a-paradigm-for-learning",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "群魔殿：一种学习范式",
+      "en": "Pandemonium: A Paradigm for Learning"
+    },
+    "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-pandemonium-architecture-image",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Pandemonium 架构图片",
+      "en": "Pandemonium architecture image"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-oliver-selfridge-portrait",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "奥利弗·塞尔弗里奇 人物照片",
+      "en": "Oliver Selfridge portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-oliver-selfridge-obituary-the-guardian",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物资料",
+      "en": "Obituary"
+    },
+    "title": {
+      "zh": "奥利弗·塞尔弗里奇 讣告，卫报",
+      "en": "Oliver Selfridge obituary, The Guardian"
+    },
+    "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

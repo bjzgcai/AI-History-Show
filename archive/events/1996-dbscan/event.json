@@ -1,0 +1,66 @@
+{
+  "id": "1996-dbscan",
+  "year": "1996",
+  "date": "1996",
+  "title": {
+    "zh": "DBSCAN 密度聚类",
+    "en": "DBSCAN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>",
+    "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>"
+  },
+  "location": {
+    "regionId": "germany",
+    "country": {
+      "zh": "德国慕尼黑",
+      "en": "Munich, Germany"
+    },
+    "place": {
+      "zh": "慕尼黑大学",
+      "en": "University of Munich"
+    },
+    "coordinates": [
+      48.1508,
+      11.58
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "martin-ester",
+      "role": {
+        "zh": "DBSCAN 共同作者",
+        "en": "Co-author of DBSCAN"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "hans-peter-kriegel-jorg-sander-xiaowei-xu",
+      "role": {
+        "zh": "DBSCAN 研究团队",
+        "en": "DBSCAN research team"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

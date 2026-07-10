@@ -1,0 +1,57 @@
+{
+  "id": "1975-genetic-algorithm",
+  "year": "1975",
+  "date": "1975",
+  "title": {
+    "zh": "遗传算法",
+    "en": "Genetic Algorithms"
+  },
+  "summary": {
+    "zh": "<p>John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>",
+    "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>"
+  },
+  "description": {
+    "zh": "<p>John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>",
+    "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国安娜堡",
+      "en": "Ann Arbor, United States"
+    },
+    "place": {
+      "zh": "密歇根大学",
+      "en": "University of Michigan"
+    },
+    "coordinates": [
+      42.278,
+      -83.7382
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "search-and-optimization"
+  ],
+  "figures": [
+    {
+      "figureId": "john-h-holland",
+      "role": {
+        "zh": "提出遗传算法框架",
+        "en": "Developed the genetic algorithm framework"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

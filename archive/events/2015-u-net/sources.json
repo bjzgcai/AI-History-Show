@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "U-Net：用于生物医学图像分割的卷积网络",
+      "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation"
+    },
+    "url": "https://arxiv.org/abs/1505.04597",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-freiburg-u-net-release-page",
+    "type": "project-page",
+    "label": {
+      "zh": "项目",
+      "en": "Project"
+    },
+    "title": {
+      "zh": "弗赖堡 U-Net 项目发布页",
+      "en": "Freiburg U-Net release page"
+    },
+    "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-nnu-net-implementation-project",
+    "type": "project-page",
+    "label": {
+      "zh": "工具包",
+      "en": "Toolkit"
+    },
+    "title": {
+      "zh": "nnU-Net 实现项目",
+      "en": "nnU-Net implementation project"
+    },
+    "url": "https://github.com/MIC-DKFZ/nnUNet",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "asset-kaiming-he",
+    "type": "image",
+    "path": "resources/images/figures/kaiming-he.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "何恺明肖像",
+      "en": "Kaiming He portrait"
+    },
+    "subcaption": {
+      "zh": "ResNet 主要作者。",
+      "en": "Lead author of ResNet."
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-resnet-architecture-01",
+    "type": "image",
+    "path": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "残差模块",
+      "en": "Residual block"
+    },
+    "subcaption": {
+      "zh": "项目使用的架构图。",
+      "en": "Architecture visual used by the project."
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-resnet-people-04",
+    "type": "image",
+    "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "何恺明",
+      "en": "Kaiming He"
+    },
+    "subcaption": {
+      "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授",
+      "en": "ResNet first author; Associate Professor at MIT EECS"
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-resnet-people-03",
+    "type": "image",
+    "path": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "张祥雨",
+      "en": "Xiangyu Zhang"
+    },
+    "subcaption": {
+      "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰",
+      "en": "ResNet co-author; later at Megvii, now at StepFun"
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-resnet-people-02",
+    "type": "image",
+    "path": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "任少卿",
+      "en": "Shaoqing Ren"
+    },
+    "subcaption": {
+      "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁",
+      "en": "ResNet co-author; now VP of R&D at NIO"
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-resnet-people-01",
+    "type": "image",
+    "path": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "孙剑",
+      "en": "Jian Sun"
+    },
+    "subcaption": {
+      "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）",
+      "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)"
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-resnet-architecture-02",
+    "type": "image",
+    "path": "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "ResNet 架构图",
+      "en": "ResNet diagram"
+    },
+    "sourceId": "source-deep-residual-learning-for-image-recognition",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

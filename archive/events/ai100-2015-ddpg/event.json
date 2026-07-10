@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2015-ddpg",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "DDPG",
+    "en": "DDPG"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
+    "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国伦敦",
+      "en": "London, United Kingdom"
+    },
+    "place": {
+      "zh": "DeepMind",
+      "en": "DeepMind"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "timothy-lillicrap",
+      "role": {
+        "zh": "DDPG 主要作者",
+        "en": "DDPG lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

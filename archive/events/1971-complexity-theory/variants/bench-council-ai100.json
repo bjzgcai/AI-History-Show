@@ -1,0 +1,82 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1971-complexity-theory",
+  "displayTitle": {
+    "zh": "NP 完全性",
+    "en": "NP-Completeness"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1971-complexity-theory-stephen-cook",
+    "asset-1971-complexity-theory-reduction-map"
+  ],
+  "sourceIds": [
+    "source-the-complexity-of-theorem-proving-procedures",
+    "source-stephen-a-cook-acm-a-m-turing-award",
+    "source-clay-mathematics-institute-p-vs-np"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1971-complexity-theory-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "论文材料",
+        "en": "Published Paper"
+      },
+      "html": {
+        "zh": "库克 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。",
+        "en": "Cook's 1971 STOC paper made Boolean satisfiability a canonical problem for comparing computational hardness. It showed that many different-looking problems can be connected by efficient reductions."
+      },
+      "sourceIds": [
+        "source-the-complexity-of-theorem-proving-procedures"
+      ]
+    },
+    {
+      "id": "reduction-logic",
+      "label": {
+        "zh": "归约逻辑",
+        "en": "Reduction Logic"
+      },
+      "html": {
+        "zh": "这个展项应突出从“单个难题”到“困难性地图”的转变。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。",
+        "en": "The exhibit should emphasize the move from isolated hard problems to a shared map of hardness. If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently."
+      },
+      "sourceIds": [
+        "source-the-complexity-of-theorem-proving-procedures"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把库克的 NP 完全性结果视为理论计算机科学的奠基事件。它的长期影响在于建立了一套持久框架，用来比较算法、优化、密码学和 AI 搜索中的计算困难性。",
+        "en": "Experts generally treat Cook's NP-completeness result as a founding event of theoretical computer science. Its long-term legacy is a durable framework for comparing computational hardness across algorithms, optimization, cryptography, and AI search."
+      },
+      "sourceIds": [
+        "source-the-complexity-of-theorem-proving-procedures"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

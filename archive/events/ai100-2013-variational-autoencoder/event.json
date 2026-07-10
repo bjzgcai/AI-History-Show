@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2013-variational-autoencoder",
+  "year": 2013,
+  "date": "2013",
+  "title": {
+    "zh": "变分自编码器",
+    "en": "Variational Autoencoder"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>",
+    "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>"
+  },
+  "location": {
+    "regionId": "amsterdam-netherlands",
+    "country": {
+      "zh": "Amsterdam, Netherlands",
+      "en": "Amsterdam, Netherlands"
+    },
+    "place": {
+      "zh": "University of Amsterdam",
+      "en": "University of Amsterdam"
+    },
+    "coordinates": [
+      52.3676,
+      4.9041
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "diederik-kingma",
+      "role": {
+        "zh": "变分自编码器共同作者",
+        "en": "Variational autoencoder co-author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

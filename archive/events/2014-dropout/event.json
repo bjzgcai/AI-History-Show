@@ -1,0 +1,66 @@
+{
+  "id": "2014-dropout",
+  "year": "2014",
+  "date": "2014",
+  "title": {
+    "zh": "Dropout",
+    "en": "Dropout"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>",
+    "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大多伦多",
+      "en": "Toronto, Canada"
+    },
+    "place": {
+      "zh": "多伦多大学",
+      "en": "University of Toronto"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "nitish-srivastava",
+      "role": {
+        "zh": "《机器学习研究杂志》 Dropout 论文第一作者",
+        "en": "First author of the JMLR dropout paper"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "geoffrey-hinton",
+      "role": {
+        "zh": "共同作者，深度学习先驱",
+        "en": "Co-author and deep learning pioneer"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

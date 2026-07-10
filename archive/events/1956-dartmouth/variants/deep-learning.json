@@ -1,0 +1,72 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "1956-dartmouth",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "达特茅斯会议 - AI正式诞生！",
+    "en": "Dartmouth Workshop - AI Is Born!"
+  },
+  "displaySummary": {
+    "zh": "AI创世纪",
+    "en": "Genesis of AI"
+  },
+  "displayDescription": {
+    "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（约翰·麦卡锡）、马文·明斯基（马文·明斯基）、克劳德·香农（克劳德·香农）、纳撒尼尔·罗切斯特（纳撒尼尔·罗切斯特） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"人工智能\" 这个名称",
+    "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-1956-dartmouth-historical-02",
+    "asset-1956-dartmouth-historical-01",
+    "asset-1956-dartmouth-historical-04",
+    "asset-1956-dartmouth-school"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "达特茅斯项目的重要性不只在于一次夏季研讨，而在于它第一次把语言、抽象、学习、神经网络与自我改进放进同一份研究议程中，给分散的研究方向立下了共同问题域。",
+        "en": "The Dartmouth project mattered not just as a summer workshop, but because it brought language, abstraction, learning, neural networks, and self-improvement into one research agenda for the first time, giving scattered lines of work a shared problem space."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "这场会议并没有立刻产出统一理论，却成功完成了一件更深远的事：它把“人工智能”从提案里的命名，变成了一个可以持续聚拢研究者、资金和公众想象的学科标签。",
+        "en": "The meeting did not immediately produce a unified theory, but it achieved something more durable: it turned \"artificial intelligence\" from a phrase in a proposal into a disciplinary label that could keep attracting researchers, funding, and public imagination."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

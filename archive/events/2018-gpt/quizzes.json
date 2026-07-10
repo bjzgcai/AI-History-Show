@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2018-gpt-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "GPT 式预训练主要依靠什么预测任务？",
+      "en": "What prediction task drives GPT-style pre-training?"
+    },
+    "options": [
+      {
+        "zh": "预测下一个令牌",
+        "en": "Predicting the next token"
+      },
+      {
+        "zh": "只寻找蛋白质键角",
+        "en": "Finding a protein bond angle only"
+      },
+      {
+        "zh": "让邻近点投票",
+        "en": "Voting among nearby points"
+      },
+      {
+        "zh": "选择固定数据库键",
+        "en": "Choosing a fixed database key"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。",
+      "en": "GPT uses a decoder transformer trained to continue text sequences."
+    },
+    "sourceIds": [
+      "source-improving-language-understanding-by-generative-pre-training"
+    ],
+    "assetIds": [
+      "asset-alec-radford"
+    ]
+  }
+]

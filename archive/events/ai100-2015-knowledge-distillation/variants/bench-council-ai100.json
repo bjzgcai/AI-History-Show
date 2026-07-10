@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2015-knowledge-distillation",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "知识蒸馏",
+    "en": "Knowledge Distillation"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>",
+    "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "Distilling the Knowledge in a Neural Network",
+        "zh": "蒸馏神经网络中的知识"
+      },
+      "description": {
+        "en": "arXiv source card for Knowledge Distillation.",
+        "zh": "arXiv 的知识蒸馏资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1503.02531",
+      "source": "https://arxiv.org/abs/1503.02531",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-geoffrey-hinton",
+    "asset-2015-knowledge-distillation-teacher-student"
+  ],
+  "sourceIds": [
+    "source-distilling-the-knowledge-in-a-neural-network",
+    "source-knowledge-distillation-overview",
+    "source-geoffrey-hinton-profile"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2015-knowledge-distillation-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。",
+        "en": "Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose."
+      },
+      "sourceIds": [
+        "source-distilling-the-knowledge-in-a-neural-network"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-distilling-the-knowledge-in-a-neural-network"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把知识蒸馏视为标准的模型压缩和迁移技术。它的长期影响在于教师-学生模式如今用于高效推理、集成模型和大模型适配。",
+        "en": "Experts generally treat knowledge distillation as a standard model-compression and transfer technique. Its long-term legacy is the teacher-student pattern now used for efficient inference, ensembles, and large-model adaptation."
+      },
+      "sourceIds": [
+        "source-distilling-the-knowledge-in-a-neural-network"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

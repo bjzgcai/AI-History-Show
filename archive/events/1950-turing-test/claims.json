@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "图灵测试 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "Turing Test is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-computing-machinery-and-intelligence",
+      "source-turing-digital-archive"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "图灵测试 的技术线索包括「行为评估」，代表性产物是「模仿游戏协议」。",
+      "en": "Turing Test is described through the method \"Behavioral evaluation\" and the artifact \"Imitation game protocol\"."
+    },
+    "sourceIds": [
+      "source-computing-machinery-and-intelligence",
+      "source-turing-digital-archive"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "图灵测试 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Turing Test is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-computing-machinery-and-intelligence",
+      "source-turing-digital-archive"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>",
+      "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>"
+    },
+    "sourceIds": [
+      "source-computing-machinery-and-intelligence",
+      "source-turing-digital-archive"
+    ],
+    "status": "needs-source"
+  }
+]

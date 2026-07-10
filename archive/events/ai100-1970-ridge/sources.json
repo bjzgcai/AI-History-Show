@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《岭回归：非正交问题中的有偏估计》",
+      "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems"
+    },
+    "url": "https://doi.org/10.1080/00401706.1970.10488634",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-open-pdf-copy-of-the-technometrics-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "Technometrics 论文开放 PDF",
+      "en": "Open PDF copy of the Technometrics paper"
+    },
+    "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-ridge-regression-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "岭回归概览",
+      "en": "Ridge regression overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Ridge_regression",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-ridge-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn 岭回归文档",
+      "en": "scikit-learn Ridge documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

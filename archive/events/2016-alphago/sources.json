@@ -1,0 +1,54 @@
+[
+  {
+    "id": "source-alphago-nature-paper",
+    "type": "paper",
+    "title": "Mastering the game of Go with deep neural networks and tree search",
+    "authors": [
+      "David Silver",
+      "Aja Huang",
+      "Chris J. Maddison",
+      "Arthur Guez",
+      "Laurent Sifre",
+      "George van den Driessche",
+      "Julian Schrittwieser",
+      "Ioannis Antonoglou",
+      "Veda Panneershelvam",
+      "Marc Lanctot",
+      "Sander Dieleman",
+      "Dominik Grewe",
+      "John Nham",
+      "Nal Kalchbrenner",
+      "Ilya Sutskever",
+      "Timothy Lillicrap",
+      "Madeleine Leach",
+      "Koray Kavukcuoglu",
+      "Thore Graepel",
+      "Demis Hassabis"
+    ],
+    "year": 2016,
+    "url": "https://www.nature.com/articles/nature16961",
+    "doi": "10.1038/nature16961",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-deepmind-alphago-page",
+    "type": "official-page",
+    "title": "Google DeepMind AlphaGo",
+    "url": "https://deepmind.google/research/alphago/",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-katago-analysis-engine",
+    "type": "code",
+    "title": "KataGo Analysis Engine",
+    "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "用于未来互动演示参考，不是 AlphaGo 原始资料。",
+      "en": "Reference for future interactive demos, not an original AlphaGo source."
+    }
+  }
+]

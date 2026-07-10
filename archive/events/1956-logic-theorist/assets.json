@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-1956-logic-theorist-herbert-simon",
+    "type": "image",
+    "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "赫伯特·A·西蒙 肖像",
+      "en": "Herbert A. Simon portrait"
+    },
+    "subcaption": {
+      "zh": "维基共享资源 收录的 赫伯特·A·西蒙 肖像，他是 Logic Theorist 共同创建者之一。",
+      "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators."
+    },
+    "sourceId": "source-the-logic-theory-machine",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+        "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1956-logic-theorist-proof-search",
+    "type": "svg",
+    "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Logic Theorist 证明搜索",
+      "en": "Logic Theorist proof search"
+    },
+    "subcaption": {
+      "zh": "原创解释图，展示目标定理、启发式搜索、符号变换和证明链。",
+      "en": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain."
+    },
+    "sourceId": "source-the-logic-theory-machine",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local explainer; source text and figure reuse rights not used.",
+        "en": "Original local explainer; source text and figure reuse rights not used."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

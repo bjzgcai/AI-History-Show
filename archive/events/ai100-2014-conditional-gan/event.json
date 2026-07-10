@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2014-conditional-gan",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "zh": "Conditional GAN",
+    "en": "Conditional GAN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>",
+    "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大蒙特利尔",
+      "en": "Montreal, Canada"
+    },
+    "place": {
+      "zh": "蒙特利尔大学",
+      "en": "University of Montreal"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "mehdi-mirza",
+      "role": {
+        "zh": "Conditional GAN 主要作者",
+        "en": "Conditional GAN lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

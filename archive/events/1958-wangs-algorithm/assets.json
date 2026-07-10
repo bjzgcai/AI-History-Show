@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-1958-wangs-algorithm-hao-wang",
+    "type": "image",
+    "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "王浩肖像",
+      "en": "Hao Wang portrait"
+    },
+    "subcaption": {
+      "zh": "王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。",
+      "en": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection."
+    },
+    "sourceId": "source-proving-theorems-by-pattern-recognition-i",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+        "en": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1958-wangs-algorithm-pattern-proof",
+    "type": "svg",
+    "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "王氏算法模式证明",
+      "en": "Wang algorithm pattern proof"
+    },
+    "subcaption": {
+      "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。",
+      "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure."
+    },
+    "sourceId": "source-proving-theorems-by-pattern-recognition-i",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local explainer; source article images not reused.",
+        "en": "Original local explainer; source article images not reused."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

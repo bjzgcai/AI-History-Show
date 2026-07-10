@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1958-wangs-algorithm-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "王氏定理证明过程用什么避免盲目真值表枚举？",
+      "en": "What did Wang's theorem-proving procedure use to avoid blind truth-table enumeration?"
+    },
+    "options": [
+      {
+        "zh": "由模式引导的逻辑变换",
+        "en": "Pattern-guided logical transformations"
+      },
+      {
+        "zh": "随机屏幕颜色",
+        "en": "Random screen colors"
+      },
+      {
+        "zh": "只靠手写笔记",
+        "en": "Only handwritten notes"
+      },
+      {
+        "zh": "固定国际象棋开局",
+        "en": "A fixed chess opening"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Wang把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。",
+      "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments."
+    },
+    "sourceIds": [
+      "source-proving-theorems-by-pattern-recognition-i"
+    ],
+    "assetIds": [
+      "asset-1958-wangs-algorithm-hao-wang"
+    ]
+  },
+  {
+    "id": "1958-wangs-algorithm-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "王氏定理证明过程用什么避免盲目真值表枚举？",
+      "en": "What did Wang's theorem-proving procedure use to avoid blind truth-table enumeration?"
+    },
+    "options": [
+      {
+        "zh": "由模式引导的逻辑变换",
+        "en": "Pattern-guided logical transformations"
+      },
+      {
+        "zh": "随机屏幕颜色",
+        "en": "Random screen colors"
+      },
+      {
+        "zh": "只靠手写笔记",
+        "en": "Only handwritten notes"
+      },
+      {
+        "zh": "固定国际象棋开局",
+        "en": "A fixed chess opening"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Wang把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。",
+      "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments."
+    },
+    "sourceIds": [
+      "source-proving-theorems-by-pattern-recognition-i"
+    ],
+    "assetIds": [
+      "asset-1958-wangs-algorithm-hao-wang"
+    ]
+  }
+]

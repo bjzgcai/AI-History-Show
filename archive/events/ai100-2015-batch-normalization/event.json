@@ -1,0 +1,66 @@
+{
+  "id": "ai100-2015-batch-normalization",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "批归一化",
+    "en": "Batch Normalization"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
+    "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国山景城",
+      "en": "Mountain View, United States"
+    },
+    "place": {
+      "zh": "Google",
+      "en": "Google"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "sergey-ioffe",
+      "role": {
+        "zh": "批归一化共同作者",
+        "en": "Co-author of Batch Normalization"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "christian-szegedy",
+      "role": {
+        "zh": "批归一化共同作者",
+        "en": "Co-author of Batch Normalization"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

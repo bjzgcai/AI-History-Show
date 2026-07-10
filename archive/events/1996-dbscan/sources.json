@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-a-density-based-algorithm-for-discovering-clusters",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "一种发现簇的基于密度的算法",
+      "en": "A density-based algorithm for discovering clusters"
+    },
+    "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-dbscan-revisited-revisited",
+    "type": "reference-only",
+    "label": {
+      "zh": "回顾",
+      "en": "Retrospective"
+    },
+    "title": {
+      "zh": "再访 DBSCAN，再访",
+      "en": "DBSCAN Revisited, Revisited"
+    },
+    "url": "https://doi.org/10.1145/3068335",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-dbscan-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn DBSCAN 文档",
+      "en": "scikit-learn DBSCAN documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/clustering.html#dbscan",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-martin-ester-portrait",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "马丁·埃斯特 人物照片",
+      "en": "Martin Ester portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

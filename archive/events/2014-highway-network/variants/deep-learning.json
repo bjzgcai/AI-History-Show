@@ -1,0 +1,70 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2014-highway-network",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "高速网络",
+    "en": "Highway Networks"
+  },
+  "displaySummary": {
+    "zh": "深度学习与范式归一",
+    "en": "Deep Learning and Unified Paradigms"
+  },
+  "displayDescription": {
+    "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+    "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-2014-highway-network-architecture-01",
+    "asset-2014-highway-network-people-01"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。",
+        "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。",
+        "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

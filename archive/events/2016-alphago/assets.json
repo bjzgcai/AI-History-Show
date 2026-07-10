@@ -1,0 +1,49 @@
+[
+  {
+    "id": "asset-alphago-lee-sedol",
+    "type": "image",
+    "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+    "role": "team-photo",
+    "caption": {
+      "zh": "AlphaGo 与李世石比赛资料图",
+      "en": "AlphaGo and Lee Sedol match reference image"
+    },
+    "sourceId": "source-deepmind-alphago-page",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "历史资料图，需保留来源说明。",
+        "en": "Historical reference image; keep source attribution."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-alphago-policy-value-search",
+    "type": "svg",
+    "path": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
+      "en": "AlphaGo policy, value, and search workflow explainer"
+    },
+    "sourceId": "source-alphago-nature-paper",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "根据论文方法本地重绘，不复制原论文图。",
+        "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai",
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

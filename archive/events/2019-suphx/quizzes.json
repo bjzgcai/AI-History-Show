@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2019-suphx-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "为什么日本麻将对 AI 很难？",
+      "en": "Why is Japanese mahjong difficult for AI?"
+    },
+    "options": [
+      {
+        "zh": "它同时包含隐藏牌、随机摸牌、四名玩家和复杂计分",
+        "en": "It combines hidden tiles, stochastic draws, four players, and complex scoring"
+      },
+      {
+        "zh": "所有牌一开始都是公开的",
+        "en": "Every tile is public from the start"
+      },
+      {
+        "zh": "每步只有一个合法行动",
+        "en": "There is only one legal move"
+      },
+      {
+        "zh": "这个游戏没有计分",
+        "en": "The game has no scoring"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Suphx 使用深度强化学习组件，在隐藏信息和延迟奖励下进行推理。",
+      "en": "Suphx used deep reinforcement learning components to reason under hidden information and delayed rewards."
+    },
+    "sourceIds": [
+      "source-suphx-arxiv-paper"
+    ],
+    "assetIds": [
+      "asset-2019-suphx-mahjong-policy"
+    ]
+  }
+]

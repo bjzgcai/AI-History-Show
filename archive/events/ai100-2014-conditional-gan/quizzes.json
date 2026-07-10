@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2014-conditional-gan-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Conditional GAN 在普通 GAN 生成中加入什么？",
+      "en": "What does a conditional GAN add to ordinary GAN generation?"
+    },
+    "options": [
+      {
+        "zh": "标签或条件信号",
+        "en": "A label or condition signal"
+      },
+      {
+        "zh": "只有数据库密码",
+        "en": "Only a database password"
+      },
+      {
+        "zh": "固定围棋棋盘",
+        "en": "A fixed Go board"
+      },
+      {
+        "zh": "手写定理",
+        "en": "A hand-coded theorem"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "条件信号引导生成器和判别器关注指定类别或属性。",
+      "en": "The condition steers the generator and discriminator toward requested classes or attributes."
+    },
+    "sourceIds": [
+      "source-conditional-generative-adversarial-nets"
+    ],
+    "assetIds": [
+      "asset-2014-conditional-gan-conditioned-generator"
+    ]
+  }
+]

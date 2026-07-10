@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1943-mcculloch-pitts-neuron-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "麦卡洛克-皮茨神经元模型使用了什么简单思想？",
+      "en": "What simple idea did the McCulloch-Pitts neuron model use?"
+    },
+    "options": [
+      {
+        "zh": "输入超过阈值时，神经元被激活",
+        "en": "A neuron turns on when inputs cross a threshold"
+      },
+      {
+        "zh": "相机存储所有可能图像",
+        "en": "A camera stores every possible image"
+      },
+      {
+        "zh": "棋盘总是选择同一步",
+        "en": "A chessboard always chooses the same move"
+      },
+      {
+        "zh": "数据库删除所有规则",
+        "en": "A database deletes every rule"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "这个模型把神经元看作逻辑阈值单元：输入足够时产生开/关输出。",
+      "en": "The model treated a neuron like a logical threshold unit: enough input produces an on/off output."
+    },
+    "sourceIds": [
+      "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity"
+    ],
+    "assetIds": [
+      "asset-1943-mcculloch-pitts-neuron-threshold-logic"
+    ]
+  }
+]

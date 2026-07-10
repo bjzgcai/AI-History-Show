@@ -1,0 +1,83 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2014-adam",
+  "displayTitle": {
+    "zh": "Adam 优化器",
+    "en": "Adam Optimizer"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "adam",
+  "assetIds": [
+    "asset-2014-adam-diederik-kingma",
+    "asset-2014-adam-moment-traces",
+    "asset-2014-adam-loss-trajectory"
+  ],
+  "sourceIds": [
+    "source-adam-a-method-for-stochastic-optimization",
+    "source-pytorch-torch-optim-adam",
+    "source-tensorflow-keras-adam-optimizer"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-2014-adam-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "到 2014 年，深度网络越来越大，训练噪声也越来越明显。研究者需要一种减少手工调参、同时能处理小批量、稀疏梯度和非平稳目标的优化器。",
+        "en": "By 2014, deep networks were becoming larger and noisier to train. Researchers needed optimizers that reduced hand-tuning while still working with minibatches, sparse gradients, and nonstationary objectives."
+      },
+      "sourceIds": [
+        "source-adam-a-method-for-stochastic-optimization"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。",
+        "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly."
+      },
+      "sourceIds": [
+        "source-adam-a-method-for-stochastic-optimization"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Adam 视为实用默认优化器，而不是万能最优解。它的长期影响在于推动了快速、稳定的神经网络训练，并催生了 AdamW 和结合学习率计划的训练配方。",
+        "en": "Experts generally treat Adam as a practical default optimizer rather than a universal optimum. Its long-term legacy is fast and stable neural-network training, plus a family of descendants such as AdamW and schedule-aware training recipes."
+      },
+      "sourceIds": [
+        "source-adam-a-method-for-stochastic-optimization"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

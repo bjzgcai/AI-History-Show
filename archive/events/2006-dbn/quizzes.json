@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2006-dbn-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "什么训练思想让早期深度置信网络变得实用？",
+      "en": "What training idea made early deep belief networks practical?"
+    },
+    "options": [
+      {
+        "zh": "贪心逐层预训练",
+        "en": "Greedy layer-wise pretraining"
+      },
+      {
+        "zh": "一次性国际象棋硬件搜索",
+        "en": "One-shot chess hardware search"
+      },
+      {
+        "zh": "仅框架槽继承",
+        "en": "Frame slot inheritance only"
+      },
+      {
+        "zh": "质谱分子过滤",
+        "en": "Mass-spectrum molecule filtering"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DBN 逐层训练以获得有用表示，然后再针对任务微调。",
+      "en": "DBNs trained layers one at a time to obtain useful representations before task-specific fine-tuning."
+    },
+    "sourceIds": [
+      "source-a-fast-learning-algorithm-for-deep-belief-nets"
+    ],
+    "assetIds": [
+      "asset-2006-dbn-geoffrey-hinton"
+    ]
+  }
+]

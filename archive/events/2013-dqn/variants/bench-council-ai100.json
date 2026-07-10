@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2013-dqn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "深度 Q 网络",
+    "en": "Deep Q Network"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
+    "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "dqn",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv / Nature",
+        "zh": "arXiv / 《自然》"
+      },
+      "title": {
+        "en": "DQN paper",
+        "zh": "DQN 论文"
+      },
+      "description": {
+        "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
+        "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
+      },
+      "url": "https://arxiv.org/abs/1312.5602",
+      "source": "https://arxiv.org/abs/1312.5602",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open preprint",
+        "zh": "打开预印本"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2013-dqn-volodymyr-mnih",
+    "asset-2013-dqn-replay-buffer",
+    "asset-2013-dqn-q-control"
+  ],
+  "sourceIds": [
+    "source-playing-atari-with-deep-reinforcement-learning",
+    "source-human-level-control-through-deep-reinforcement-learning",
+    "source-google-deepmind-deep-reinforcement-learning"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2013-dqn-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "经典强化学习有坚实理论，但从原始像素扩展到控制任务仍然困难。DQN 让这种扩展变得可见。",
+        "en": "Classic reinforcement learning had strong theory, but scaling from raw pixels to control remained difficult. DQN made that scaling visible."
+      },
+      "sourceIds": [
+        "source-playing-atari-with-deep-reinforcement-learning"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。 关键机制是结合卷积网络、经验回放与目标网络的 Q 学习，它把资料线索与可见的演示行为连接起来。",
+        "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. The key mechanism is Q-learning with convolutional networks, replay, and target networks, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-playing-atari-with-deep-reinforcement-learning"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。它的长期影响在于把感知、行动、奖励、经验回放和价值学习接成神经循环，尽管样本效率和稳定性问题仍存在。",
+        "en": "Experts generally treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. Its long-term legacy is the neural loop connecting perception, action, reward, replay, and value learning, despite ongoing sample-efficiency and stability challenges."
+      },
+      "sourceIds": [
+        "source-playing-atari-with-deep-reinforcement-learning"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

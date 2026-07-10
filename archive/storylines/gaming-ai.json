@@ -1,0 +1,103 @@
+{
+  "id": "gaming-ai",
+  "title": {
+    "zh": "AI 在棋牌与博弈论的演进",
+    "en": "AI in Board & Tabletop Games"
+  },
+  "subtitle": {
+    "zh": "从搜索、评估函数、自我对弈到学习型规划系统的博弈 AI 演进。",
+    "en": "The evolution of game AI from search, evaluation functions, and self-play to learned planning systems."
+  },
+  "type": "branch-timeline",
+  "description": {
+    "zh": "AI 棋牌分支强调博弈系统的技术谱系、棋局演化、搜索与学习的结合，以及 AlphaGo、AlphaZero、MuZero 等节点之间的关系。",
+    "en": "The gaming AI storyline emphasizes technical lineage, game-state evolution, the combination of search and learning, and relationships among milestones such as AlphaGo, AlphaZero, and MuZero."
+  },
+  "events": [
+    {
+      "eventId": "1951-strachey-draughts",
+      "variant": "gaming-ai",
+      "order": 10,
+      "enabled": true
+    },
+    {
+      "eventId": "2016-alphago",
+      "variant": "gaming-ai",
+      "order": 10,
+      "enabled": true
+    },
+    {
+      "eventId": "1988-td-update",
+      "variant": "gaming-ai",
+      "order": 20,
+      "enabled": true
+    },
+    {
+      "eventId": "1994-chinook",
+      "variant": "gaming-ai",
+      "order": 30,
+      "enabled": true
+    },
+    {
+      "eventId": "1997-logistello",
+      "variant": "gaming-ai",
+      "order": 40,
+      "enabled": true
+    },
+    {
+      "eventId": "1997-deep-blue",
+      "variant": "gaming-ai",
+      "order": 50,
+      "enabled": true
+    },
+    {
+      "eventId": "2000s-alphacat",
+      "variant": "gaming-ai",
+      "order": 60,
+      "enabled": true
+    },
+    {
+      "eventId": "2013-dqn",
+      "variant": "gaming-ai",
+      "order": 70,
+      "enabled": true
+    },
+    {
+      "eventId": "2017-alphazero",
+      "variant": "gaming-ai",
+      "order": 90,
+      "enabled": true
+    },
+    {
+      "eventId": "2017-libratus",
+      "variant": "gaming-ai",
+      "order": 100,
+      "enabled": true
+    },
+    {
+      "eventId": "2019-pluribus",
+      "variant": "gaming-ai",
+      "order": 110,
+      "enabled": true
+    },
+    {
+      "eventId": "2019-suphx",
+      "variant": "gaming-ai",
+      "order": 120,
+      "enabled": true
+    },
+    {
+      "eventId": "2019-muzero",
+      "variant": "gaming-ai",
+      "order": 130,
+      "enabled": true
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 2 初版，仅引用 Step 3 计划迁移的样例事件。",
+      "en": "Step 2 draft that only references the sample events planned for Step 3."
+    }
+  }
+}

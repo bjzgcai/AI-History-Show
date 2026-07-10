@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2014-glove",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "GloVe",
+    "en": "GloVe"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>",
+    "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "ACL Anthology",
+        "zh": "ACL Anthology"
+      },
+      "title": {
+        "en": "GloVe: Global Vectors for Word Representation",
+        "zh": "GloVe：用于词表示的全局向量"
+      },
+      "description": {
+        "en": "ACL Anthology source card for GloVe.",
+        "zh": "ACL Anthology 的GloVe资料卡片。"
+      },
+      "url": "https://aclanthology.org/D14-1162/",
+      "source": "https://aclanthology.org/D14-1162/",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2014-glove-photo",
+    "asset-2014-glove-cooccurrence"
+  ],
+  "sourceIds": [
+    "source-glove-global-vectors-for-word-representation",
+    "source-stanford-glove-project-page",
+    "source-acl-anthology-pdf"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2014-glove-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。",
+        "en": "GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation."
+      },
+      "sourceIds": [
+        "source-glove-global-vectors-for-word-representation"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-glove-global-vectors-for-word-representation"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 GloVe 视为连接分布统计和嵌入模型的重要桥梁。它的长期影响在于全局共现视角即使在上下文语言模型占主导后仍然有用。",
+        "en": "Experts generally treat GloVe as an influential bridge between distributional statistics and embedding models. Its long-term legacy is the global co-occurrence view that remained useful even after contextual language models became dominant."
+      },
+      "sourceIds": [
+        "source-glove-global-vectors-for-word-representation"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

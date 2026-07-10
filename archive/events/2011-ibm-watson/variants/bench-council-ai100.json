@@ -1,0 +1,113 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2011-ibm-watson",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "IBM Watson",
+    "en": "IBM Watson"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>",
+    "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "watson",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Paper",
+        "zh": "论文"
+      },
+      "title": {
+        "en": "Watson: Beyond Jeopardy!",
+        "zh": "沃森：超越《危险边缘！》"
+      },
+      "description": {
+        "en": "Original Artificial Intelligence paper on the post-Jeopardy Watson system and its technical arc.",
+        "zh": "《人工智能》期刊原文：介绍 Jeopardy! 之后的沃森系统及其技术脉络。"
+      },
+      "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+      "source": "https://doi.org/10.1016/j.artint.2012.06.009",
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2011-ibm-watson-david-ferrucci",
+    "asset-2011-ibm-watson-ibmwatson",
+    "asset-2011-ibm-watson-deepqa",
+    "asset-2011-ibm-watson-evidence-ranking"
+  ],
+  "sourceIds": [
+    "source-watson-beyond-jeopardy",
+    "source-building-watson-an-overview-of-the-deepqa-project",
+    "source-ibm-watson-system-photo",
+    "source-david-ferrucci-portrait"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2011-ibm-watson-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。 这段背景帮助观众把IBM Watson放回当时的技术问题和研究重点中理解。",
+        "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered. This context helps viewers place IBM Watson in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-watson-beyond-jeopardy"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Watson 不依赖单一解析器或数据库。它生成假设、检索来源、评分证据，并把多路排序合并为带置信度的最终答案。",
+        "en": "Watson did not rely on a single parser or database. It generated hypotheses, searched sources, scored evidence, and merged rankings into a final answer with confidence."
+      },
+      "sourceIds": [
+        "source-watson-beyond-jeopardy"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 IBM Watson 视为工程化问答的标志性系统，而不是通用理解系统。它的长期影响既包括面向语言密集型 AI 的证据排序架构，也包括展示型系统难以转化为稳健领域产品的教训。",
+        "en": "Experts generally treat IBM Watson as a landmark in engineered question answering rather than a general understanding system. Its long-term legacy is both the evidence-ranking architecture for language-heavy AI and the lesson that showcase demos are hard to turn into robust domain products."
+      },
+      "sourceIds": [
+        "source-watson-beyond-jeopardy"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

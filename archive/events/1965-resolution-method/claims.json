@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "归结方法 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Resolution Method is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+      "source-journal-of-symbolic-logic-review-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>",
+      "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>"
+    },
+    "sourceIds": [
+      "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+      "source-journal-of-symbolic-logic-review-record"
+    ],
+    "status": "needs-source"
+  }
+]

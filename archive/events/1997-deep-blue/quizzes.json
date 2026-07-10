@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1997-deep-blue-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Deep Blue 尤其被构建来做什么？",
+      "en": "What was Deep Blue especially built to do?"
+    },
+    "options": [
+      {
+        "zh": "大规模搜索并评估国际象棋局面",
+        "en": "Search and evaluate chess positions at massive scale"
+      },
+      {
+        "zh": "生成词嵌入",
+        "en": "Generate word embeddings"
+      },
+      {
+        "zh": "用 t-SNE 聚类图像像素",
+        "en": "Cluster image pixels with t-SNE"
+      },
+      {
+        "zh": "只从文本推断贝叶斯网络结构",
+        "en": "Infer Bayesian network structure from text only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Deep Blue 结合了 alpha-beta 搜索、手工棋局评估和专用硬件。",
+      "en": "Deep Blue combined alpha-beta search, handcrafted chess evaluation, and specialized hardware."
+    },
+    "sourceIds": [
+      "source-murray-campbell-ibm-research"
+    ],
+    "assetIds": [
+      "asset-1997-deep-blue-murray-campbell"
+    ]
+  }
+]

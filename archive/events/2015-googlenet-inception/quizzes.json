@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2015-googlenet-inception-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Inception 模块的关键思想是什么？",
+      "en": "What is the key idea of an Inception module?"
+    },
+    "options": [
+      {
+        "zh": "并行运行多个滤波路径并合并输出",
+        "en": "Run multiple filter paths in parallel and combine them"
+      },
+      {
+        "zh": "只使用一个像素作为输入",
+        "en": "Use only a single pixel as input"
+      },
+      {
+        "zh": "禁止模型使用卷积",
+        "en": "Ban convolution from the model"
+      },
+      {
+        "zh": "把每一层都变成决策树",
+        "en": "Make every layer a decision tree"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Inception 模块结合并行卷积和池化路径，并常用 1x1 瓶颈层提高效率。",
+      "en": "Inception modules combine parallel convolution and pooling paths, often with 1x1 bottlenecks for efficiency."
+    },
+    "sourceIds": [
+      "source-going-deeper-with-convolutions"
+    ],
+    "assetIds": [
+      "asset-2015-googlenet-inception-christian-szegedy"
+    ]
+  }
+]

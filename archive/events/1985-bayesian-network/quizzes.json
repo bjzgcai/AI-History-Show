@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1985-bayesian-network-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "贝叶斯网络结合了什么？",
+      "en": "What does a Bayesian network combine?"
+    },
+    "options": [
+      {
+        "zh": "有向图与条件概率",
+        "en": "A directed graph and conditional probabilities"
+      },
+      {
+        "zh": "只有棋类芯片和开局库",
+        "en": "A chess chip and opening book only"
+      },
+      {
+        "zh": "只有尺度空间图像描述子",
+        "en": "A scale-space image descriptor only"
+      },
+      {
+        "zh": "没有不确定性的积木世界解析器",
+        "en": "A blocks-world parser without uncertainty"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "图表达依赖结构，概率支持在证据下更新信念。",
+      "en": "The graph expresses dependency structure, and the probabilities support belief updating under evidence."
+    },
+    "sourceIds": [
+      "source-bayesian-networks"
+    ],
+    "assetIds": [
+      "asset-1985-bayesian-network-judea-pearl"
+    ]
+  }
+]

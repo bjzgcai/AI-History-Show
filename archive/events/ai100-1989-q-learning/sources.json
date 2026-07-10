@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-learning-from-delayed-rewards",
+    "type": "reference-only",
+    "label": {
+      "zh": "博士论文",
+      "en": "Thesis"
+    },
+    "title": {
+      "zh": "《从延迟奖励中学习》",
+      "en": "Learning from Delayed Rewards"
+    },
+    "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-q-learning",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Q-learning》",
+      "en": "Q-learning"
+    },
+    "url": "https://link.springer.com/article/10.1007/BF00992698",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-q-learning-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "Q-learning 概览",
+      "en": "Q-learning overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Q-learning",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

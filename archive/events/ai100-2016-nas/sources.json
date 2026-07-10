@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-neural-architecture-search-with-reinforcement-learning",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《基于强化学习的神经架构搜索》",
+      "en": "Neural Architecture Search with Reinforcement Learning"
+    },
+    "url": "https://arxiv.org/abs/1611.01578",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iclr-openreview-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICLR OpenReview 记录",
+      "en": "ICLR OpenReview record"
+    },
+    "url": "https://openreview.net/forum?id=r1Ue8Hcxg",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-google-ai-automl-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "Google AI AutoML 概览",
+      "en": "Google AI AutoML overview"
+    },
+    "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-1999-nmf-parts-factorization",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "基于部件的分解",
+      "en": "Parts-based factorization"
+    },
+    "subcaption": {
+      "zh": "关于非负部件分解的本地原创解释图。",
+      "en": "Original local explainer of nonnegative parts-based factorization."
+    },
+    "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-1999-nmf-sebastian",
+    "type": "image",
+    "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "非负矩阵分解 外部参考图",
+      "en": "NMF external reference image"
+    },
+    "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]
