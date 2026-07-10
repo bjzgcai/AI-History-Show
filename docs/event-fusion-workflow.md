@@ -16,21 +16,26 @@ The fusion workflow makes these entries display the same final content no matter
 
 Edit these files instead of editing generated data directly.
 
-- `manage/event-fusions.js`
+- `archive/storyline-variants/event-fusions.json`
   - Defines which events are equivalent.
   - Provides the canonical event id.
+  - Stores the deep-learning and BenchCouncil AI100 storyline variant event ids.
   - Stores fused year, title, location, description, and figure/task information.
   - Decides how deep-learning and AI100 fields are merged.
 
-- `manage/event-fusion-assets.js`
+- `archive/storyline-variants/fusion-assets.json`
   - Curates images and media for each fused event.
   - Controls final image order.
   - Supports image filtering with `excludeImages` and `excludeImagePatterns`.
 
+- `manage/event-fusions.js` and `manage/event-fusion-assets.js`
+  - Compatibility adapters for the existing generator and review tooling.
+  - Do not treat these as source files for new fusion edits.
+
 - `manage/figure-avatars.js`
   - Stores reusable person/team avatar mappings.
   - Use this when a figure avatar should change.
-  - Image filtering in `event-fusion-assets.js` does not remove `figure.avatar`.
+  - Image filtering in `fusion-assets.json` does not remove `figure.avatar`.
 
 - `manage/generate.js`
   - Applies event fusion while generating `milestones-data.js`.
@@ -52,15 +57,16 @@ Regenerate them with the commands below.
 
 ## Normal Editing Flow
 
-1. Edit narrative and figures in `manage/event-fusions.js`.
+1. Edit canonical mapping, narrative and figures in `archive/storyline-variants/event-fusions.json`.
 
-2. Edit final image lists in `manage/event-fusion-assets.js`.
+2. Edit final image lists in `archive/storyline-variants/fusion-assets.json`.
 
-3. If an avatar is wrong or missing, edit `manage/figure-avatars.js` or add an explicit `avatar` field in `manage/event-fusions.js`.
+3. If an avatar is wrong or missing, edit `manage/figure-avatars.js` or add an explicit `avatar` field in the fusion `display.figures` entry.
 
 4. Regenerate data:
 
    ```bash
+   npm run validate:archive
    node manage/generate.js
    node manage/generate-event-fusion-review.js
    ```
@@ -77,18 +83,20 @@ The left and middle columns intentionally show original raw data, so excluded im
 
 ## Image Filtering
 
-Use `manage/event-fusion-assets.js` to control final images:
+Use `archive/storyline-variants/fusion-assets.json` to control final images:
 
-```js
-'1957-perceptron': {
-  images: [
-    'resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg',
-    'resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg'
-  ],
-  excludeImages: [
-    'resources/images/1957-perceptron/people/1957-perceptron_people_02.png'
-  ],
-  excludeImagePatterns: []
+```json
+{
+  "assets": {
+    "1957-perceptron": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+        "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg"
+      ],
+      "excludeImages": ["resources/images/1957-perceptron/people/1957-perceptron_people_02.png"],
+      "excludeImagePatterns": []
+    }
+  }
 }
 ```
 
@@ -96,7 +104,7 @@ Notes:
 
 - `images` defines the final order and candidates.
 - `excludeImages` removes exact URLs from final `resources.images`.
-- `excludeImagePatterns` removes URLs containing a string, or matching a RegExp.
+- `excludeImagePatterns` removes URLs containing a string. Regex patterns are represented as objects, for example `{ "regex": "portrait|avatar", "flags": "i" }`.
 - After changing this file, run both generation commands.
 - Excluded images can still appear in the review page raw columns.
 - Excluded images can still appear as avatars if they are referenced by `figure.avatar`.
@@ -135,6 +143,7 @@ After changing fusion data, run:
 ```bash
 node manage/generate.js
 node manage/generate-event-fusion-review.js
+npm run validate:archive
 npm run lint
 npm test
 ```
@@ -159,7 +168,7 @@ Check where it appears:
 
 - Raw column in `event-fusion-review.html`: expected; raw data is not filtered.
 - Right column in `event-fusion-review.html`: run `node manage/generate.js` and `node manage/generate-event-fusion-review.js` again.
-- Avatar circle or figure card: update `manage/figure-avatars.js` or the explicit `figures` entry in `manage/event-fusions.js`.
+- Avatar circle or figure card: update `manage/figure-avatars.js` or the explicit `display.figures` entry in `archive/storyline-variants/event-fusions.json`.
 - Frontend-specific panel: check `index.html` image selection helpers such as `getUiDetailImages()` and `getUiMediaVisualImage()`.
 
 ### The review page and frontend look different
@@ -168,4 +177,4 @@ They use the same generated data, but the frontend selects images for specific U
 
 ### Two entries for the same event do not match
 
-Check that both ids are listed in `manage/event-fusions.js`, then regenerate. The canonical mapping should make both generated milestones share the same fused content.
+Check that both ids are listed in `archive/storyline-variants/event-fusions.json`, then regenerate. The canonical mapping should make both generated milestones share the same fused content.
