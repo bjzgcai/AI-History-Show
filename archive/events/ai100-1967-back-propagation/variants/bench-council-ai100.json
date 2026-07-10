@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1967-back-propagation",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "反向传播",
+    "en": "Back-propagation"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>",
+    "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "backprop",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Nature",
+        "zh": "Nature"
+      },
+      "title": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "通过反向传播误差学习表示"
+      },
+      "description": {
+        "en": "Primary Nature paper record for modern back-propagation.",
+        "zh": "现代反向传播的 Nature 主论文记录。"
+      },
+      "url": "https://doi.org/10.1038/323533a0",
+      "source": "https://doi.org/10.1038/323533a0",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-david-rumelhart",
+    "asset-1967-back-propagation-error-flow"
+  ],
+  "sourceIds": [
+    "source-learning-representations-by-back-propagating-errors",
+    "source-a-theory-of-adaptive-pattern-classifiers",
+    "source-hinton-hosted-nature-back-propagation-pdf",
+    "source-backpropagation-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1967-back-propagation-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。",
+        "en": "Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks."
+      },
+      "sourceIds": [
+        "source-learning-representations-by-back-propagating-errors"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "输出误差沿网络反向求导，使每个权重获得更新量。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Output error is differentiated backward through the network so each weight receives an update. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-learning-representations-by-back-propagating-errors"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把反向传播视为神经网络优化的核心工具，同时也承认它经历了多阶段重新发现。它的长期影响在于让深层表示能够大规模训练。",
+        "en": "Experts generally treat back-propagation as the optimization workhorse of neural networks, while acknowledging its multi-decade rediscovery history. Its long-term legacy is making deep layered representations trainable at scale."
+      },
+      "sourceIds": [
+        "source-learning-representations-by-back-propagating-errors"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "SURF 加速稳健特征 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "SURF is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-surf-speeded-up-robust-features",
+      "source-eth-surf-paper-pdf"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>",
+      "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>"
+    },
+    "sourceIds": [
+      "source-surf-speeded-up-robust-features",
+      "source-eth-surf-paper-pdf"
+    ],
+    "status": "needs-source"
+  }
+]

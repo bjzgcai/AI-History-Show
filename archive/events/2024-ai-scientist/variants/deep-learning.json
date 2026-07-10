@@ -1,0 +1,73 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2024-ai-scientist",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "AI科学家与自主实验室",
+    "en": "AI Scientists and Autonomous Laboratories"
+  },
+  "displaySummary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "displayDescription": {
+    "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
+    "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-2024-ai-scientist-architecture-01",
+    "asset-2024-ai-scientist-architecture-02",
+    "asset-2024-ai-scientist-papers-01",
+    "asset-2024-ai-scientist-people-01",
+    "asset-2024-ai-scientist-people-02"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "这类系统真正新的地方，并不是能写出论文段落，而是把“提出假设、设计流程、调用工具、执行实验、评估结果”连成了闭环，开始触碰科学研究的工作流自动化。",
+        "en": "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "它也意味着 AI for Science 的评价标准正在改变：未来的关键问题不再只是模型能否解释一张图或一个序列，而是它能否持续产出可验证、可复现实验流程，并在反馈中自我改进。",
+        "en": "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2000-isomap-geodesic-map",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "测地流形映射",
+      "en": "Geodesic manifold map"
+    },
+    "subcaption": {
+      "zh": "关于 Isomap 测地嵌入的本地原创解释图。",
+      "en": "Original local explainer of Isomap geodesic embedding."
+    },
+    "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2000-isomap-tenenbaum-2019-profile-240",
+    "type": "image",
+    "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "Isomap 外部参考图",
+      "en": "Isomap external reference image"
+    },
+    "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

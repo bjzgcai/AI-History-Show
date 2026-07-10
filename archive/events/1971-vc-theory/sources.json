@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-on-the-uniform-convergence-of-relative-frequencies",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "相对频率的一致收敛",
+      "en": "On the Uniform Convergence of Relative Frequencies"
+    },
+    "url": "https://epubs.siam.org/doi/10.1137/1116025",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
+      "en": "Primary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-the-nature-of-statistical-learning-theory",
+    "type": "book",
+    "label": {
+      "zh": "图书",
+      "en": "Book"
+    },
+    "title": {
+      "zh": "统计学习理论的本质",
+      "en": "The Nature of Statistical Learning Theory"
+    },
+    "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-an-overview-of-statistical-learning-theory",
+    "type": "overview",
+    "label": {
+      "zh": "综述",
+      "en": "Overview"
+    },
+    "title": {
+      "zh": "统计学习理论概览",
+      "en": "An Overview of Statistical Learning Theory"
+    },
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  }
+]

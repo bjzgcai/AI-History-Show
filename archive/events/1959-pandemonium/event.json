@@ -1,0 +1,58 @@
+{
+  "id": "1959-pandemonium",
+  "year": "1959",
+  "date": "1959",
+  "title": {
+    "zh": "Pandemonium 感知架构",
+    "en": "Pandemonium"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>",
+    "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国马萨诸塞州",
+      "en": "Massachusetts, United States"
+    },
+    "place": {
+      "zh": "麻省理工学院 林肯实验室",
+      "en": "MIT Lincoln Laboratory"
+    },
+    "coordinates": [
+      42.4595,
+      -71.2677
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "oliver-selfridge",
+      "role": {
+        "zh": "Pandemonium 架构提出者",
+        "en": "Author of the Pandemonium architecture"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

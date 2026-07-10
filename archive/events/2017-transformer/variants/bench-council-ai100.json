@@ -1,0 +1,85 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2017-transformer",
+  "displayTitle": {
+    "zh": "Transformer",
+    "en": "Transformer"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "research-breakthrough",
+    "paper-source",
+    "self-attention"
+  ],
+  "visual": "transformer",
+  "assetIds": [
+    "asset-transformer-portrait",
+    "asset-transformer-attention",
+    "asset-transformer-architecture",
+    "asset-transformer-architecture-detail",
+    "asset-transformer-paper-page"
+  ],
+  "sourceIds": [
+    "source-transformer-arxiv",
+    "source-transformer-neurips",
+    "source-google-research-publication",
+    "source-google-transformer-blog"
+  ],
+  "claimIds": [
+    "claim-attention-only-architecture",
+    "claim-foundation-model-legacy"
+  ],
+  "quizId": "quiz-2017-transformer-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。",
+        "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems."
+      },
+      "sourceIds": [
+        "source-transformer-arxiv",
+        "source-google-research-publication"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。互动演示应突出自注意力如何替代循环式处理。",
+        "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The demo should highlight how self-attention replaced recurrent processing."
+      },
+      "sourceIds": [
+        "source-transformer-arxiv"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。",
+        "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research."
+      },
+      "sourceIds": [
+        "source-google-transformer-blog"
+      ]
+    }
+  ],
+  "displayDescription": {
+    "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>",
+    "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>"
+  }
+}

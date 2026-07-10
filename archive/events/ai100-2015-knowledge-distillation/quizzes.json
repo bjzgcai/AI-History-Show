@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-knowledge-distillation-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "知识蒸馏中的学生模型从什么学习？",
+      "en": "What does a student model learn from in knowledge distillation?"
+    },
+    "options": [
+      {
+        "zh": "来自较大教师模型的软输出",
+        "en": "Soft outputs from a larger teacher model"
+      },
+      {
+        "zh": "只有棋类规则",
+        "en": "Only board-game rules"
+      },
+      {
+        "zh": "原始数据库索引",
+        "en": "Raw database indexes"
+      },
+      {
+        "zh": "已删除训练集",
+        "en": "A deleted training set"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "教师的软概率传递了硬标签之外的信息。",
+      "en": "Soft teacher probabilities transfer information beyond hard labels."
+    },
+    "sourceIds": [
+      "source-distilling-the-knowledge-in-a-neural-network"
+    ],
+    "assetIds": [
+      "asset-geoffrey-hinton"
+    ]
+  }
+]

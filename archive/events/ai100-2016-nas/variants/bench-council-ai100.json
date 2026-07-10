@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2016-nas",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "神经架构搜索",
+    "en": "Neural Architecture Search"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>",
+    "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "OpenReview",
+        "zh": "OpenReview"
+      },
+      "title": {
+        "en": "Neural Architecture Search with Reinforcement Learning",
+        "zh": "基于强化学习的神经架构搜索"
+      },
+      "description": {
+        "en": "OpenReview source card for Neural Architecture Search.",
+        "zh": "OpenReview 的神经架构搜索资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1611.01578",
+      "source": "https://arxiv.org/abs/1611.01578",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2016-nas-headshot",
+    "asset-2016-nas-controller-search"
+  ],
+  "sourceIds": [
+    "source-neural-architecture-search-with-reinforcement-learning",
+    "source-iclr-openreview-record",
+    "source-google-ai-automl-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2016-nas-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。",
+        "en": "Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals."
+      },
+      "sourceIds": [
+        "source-neural-architecture-search-with-reinforcement-learning"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-neural-architecture-search-with-reinforcement-learning"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。",
+        "en": "Experts generally treat NAS as a milestone in automating parts of model design, while noting its high compute cost. Its long-term legacy is the search-space and controller framing behind later efficient AutoML systems."
+      },
+      "sourceIds": [
+        "source-neural-architecture-search-with-reinforcement-learning"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

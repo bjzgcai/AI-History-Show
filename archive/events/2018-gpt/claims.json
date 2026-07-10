@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "GPT 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "GPT is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-improving-language-understanding-by-generative-pre-training",
+      "source-openai-language-unsupervised-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
+      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+    },
+    "sourceIds": [
+      "source-improving-language-understanding-by-generative-pre-training",
+      "source-openai-language-unsupervised-page"
+    ],
+    "status": "needs-source"
+  }
+]

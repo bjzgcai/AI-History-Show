@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1969-relu",
+  "year": 1969,
+  "date": "1969",
+  "title": {
+    "zh": "ReLU",
+    "en": "ReLU"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>",
+    "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>"
+  },
+  "location": {
+    "regionId": "japan",
+    "country": {
+      "zh": "日本东京",
+      "en": "Tokyo, Japan"
+    },
+    "place": {
+      "zh": "NHK 广播科学研究实验室",
+      "en": "NHK Broadcasting Science Research Laboratories"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "kunihiko-fukushima",
+      "role": {
+        "zh": "早期神经视觉研究者",
+        "en": "Early neural vision researcher"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "yoshua-bengio",
+      "role": {
+        "zh": "后续深度整流函数分析共同作者",
+        "en": "Co-author of later deep rectifier analysis"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "2024-ai-scientist",
+  "year": 2024,
+  "date": "2024",
+  "title": {
+    "zh": "AI科学家与自主实验室",
+    "en": "AI Scientists and Autonomous Laboratories"
+  },
+  "summary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "description": {
+    "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
+    "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "日本 / 美国",
+      "en": "Japan / United States"
+    },
+    "place": {
+      "zh": "Sakana AI / UC Berkeley",
+      "en": "Sakana AI / UC Berkeley"
+    },
+    "coordinates": [
+      [
+        35.6762,
+        139.6503
+      ],
+      [
+        37.8719,
+        -122.2585
+      ]
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "sakana-ai-team",
+      "role": {
+        "zh": "AI Scientist开发者",
+        "en": "AI Scientist Developer"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "berkeley-team",
+      "role": {
+        "zh": "A-Lab开发者",
+        "en": "A-Lab Developer"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

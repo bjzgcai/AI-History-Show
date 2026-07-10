@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1982-som-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "自组织映射会排列什么？",
+      "en": "What does a self-organizing map arrange?"
+    },
+    "options": [
+      {
+        "zh": "把输出单元排列成保持拓扑的网格",
+        "en": "Output units into a topology-preserving grid"
+      },
+      {
+        "zh": "棋类开局列表",
+        "en": "A list of chess openings"
+      },
+      {
+        "zh": "只有定理名称",
+        "en": "Only theorem names"
+      },
+      {
+        "zh": "固定电影播放列表",
+        "en": "A fixed movie playlist"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "SOM 学习会调整网格，使相邻单元表示相近的输入模式。",
+      "en": "SOM learning adapts a grid so nearby units represent nearby input patterns."
+    },
+    "sourceIds": [
+      "source-self-organized-formation-of-topologically-correct-feature-maps"
+    ],
+    "assetIds": [
+      "asset-1982-som-topology-map"
+    ]
+  }
+]

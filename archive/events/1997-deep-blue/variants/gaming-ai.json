@@ -1,0 +1,156 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "1997-deep-blue",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "深蓝",
+    "en": "Deep Blue"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
+    "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "deepblue",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Artificial Intelligence",
+        "zh": "人工智能"
+      },
+      "title": {
+        "en": "Deep Blue journal article",
+        "zh": "深蓝 期刊论文"
+      },
+      "description": {
+        "en": "AI journal article record on Deep Blue as a chess-playing system.",
+        "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
+      },
+      "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open article record",
+        "zh": "打开论文记录"
+      }
+    },
+    {
+      "type": "gameEvolutionVideo",
+      "site": {
+        "en": "Game evolution clip",
+        "zh": "棋局演化短片"
+      },
+      "title": {
+        "en": "Deep Blue game evolution",
+        "zh": "深蓝 棋局演化"
+      },
+      "description": {
+        "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
+        "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
+      },
+      "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
+      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+      "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+      "sourceSgf": "examples/sgf/sample-go-game.sgf",
+      "generator": "scripts/sgf_to_video.py",
+      "duration": {
+        "en": "about 1 min",
+        "zh": "约 1 分钟"
+      },
+      "fps": "30",
+      "license": {
+        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+      },
+      "usage": {
+        "en": "Playable game-state evolution module",
+        "zh": "可播放的棋局状态演化模块"
+      },
+      "action": {
+        "en": "Play evolution clip",
+        "zh": "播放演化短片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1997-deep-blue-murray-campbell",
+    "asset-1997-deep-blue-search-tree",
+    "asset-1997-deep-blue-chip-board"
+  ],
+  "sourceIds": [
+    "source-murray-campbell-ibm-research",
+    "source-mastering-the-game-computer-history-museum",
+    "source-ibm100-deep-blue"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1997-deep-blue-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。",
+        "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage."
+      },
+      "sourceIds": [
+        "source-murray-campbell-ibm-research"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。",
+        "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge."
+      },
+      "sourceIds": [
+        "source-murray-campbell-ibm-research"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把深蓝视为专用搜索、局面评估和高性能游戏 AI 的标志性成果。它的长期影响在于塑造了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。",
+        "en": "Experts generally treat Deep Blue as a landmark in specialized search, evaluation, and high-performance game AI. Its long-term legacy is shaping public expectations for AI milestones and serving as a reference point for later game systems such as AlphaGo."
+      },
+      "sourceIds": [
+        "source-murray-campbell-ibm-research"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

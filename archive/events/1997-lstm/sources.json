@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-long-short-term-memory",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《长短期记忆》",
+      "en": "Long Short-Term Memory"
+    },
+    "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-author-hosted-lstm-paper-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "作者托管的 LSTM 论文 PDF",
+      "en": "Author-hosted LSTM paper PDF"
+    },
+    "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-lstm-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "LSTM 概览",
+      "en": "LSTM overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-sepp-hochreiter-profile",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物",
+      "en": "People"
+    },
+    "title": {
+      "zh": "塞普·霍赫赖特个人资料",
+      "en": "Sepp Hochreiter profile"
+    },
+    "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

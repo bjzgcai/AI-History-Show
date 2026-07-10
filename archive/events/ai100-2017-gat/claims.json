@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "GAT 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "GAT is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-graph-attention-networks",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>",
+      "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>"
+    },
+    "sourceIds": [
+      "source-graph-attention-networks",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "source-transformer-arxiv",
+    "type": "paper",
+    "title": "Attention Is All You Need",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Lukasz Kaiser",
+      "Illia Polosukhin"
+    ],
+    "year": 2017,
+    "url": "https://arxiv.org/abs/1706.03762",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-transformer-neurips",
+    "type": "paper",
+    "title": "NeurIPS paper page for Attention Is All You Need",
+    "year": 2017,
+    "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-google-research-publication",
+    "type": "official-page",
+    "title": "Google Research publication page for Attention Is All You Need",
+    "url": "https://research.google/pubs/attention-is-all-you-need/",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-google-transformer-blog",
+    "type": "official-page",
+    "title": "Transformer: A Novel Neural Network Architecture for Language Understanding",
+    "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+    "language": "en",
+    "reliability": "secondary"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "MuZero 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "MuZero is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-nature-paper",
+      "source-arxiv-preprint"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
+      "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
+    },
+    "sourceIds": [
+      "source-nature-paper",
+      "source-arxiv-preprint"
+    ],
+    "status": "needs-source"
+  }
+]

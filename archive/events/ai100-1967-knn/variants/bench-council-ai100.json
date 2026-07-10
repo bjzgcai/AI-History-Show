@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1967-knn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "KNN 最近邻",
+    "en": "KNN"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>",
+    "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "knn",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "IEEE",
+        "zh": "IEEE"
+      },
+      "title": {
+        "en": "Nearest Neighbor Pattern Classification",
+        "zh": "最近邻模式分类"
+      },
+      "description": {
+        "en": "Paper record for the nearest-neighbor classification result.",
+        "zh": "最近邻分类结果的论文记录。"
+      },
+      "url": "https://doi.org/10.1109/TIT.1967.1053964",
+      "source": "https://doi.org/10.1109/TIT.1967.1053964",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1967-knn-2012-04-12-obit-cover",
+    "asset-1967-knn-neighbor-vote"
+  ],
+  "sourceIds": [
+    "source-nearest-neighbor-pattern-classification",
+    "source-stanford-hosted-paper-pdf",
+    "source-k-nearest-neighbors-algorithm-overview",
+    "source-scikit-learn-nearest-neighbors-documentation"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1967-knn-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。",
+        "en": "Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning."
+      },
+      "sourceIds": [
+        "source-nearest-neighbor-pattern-classification"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "查询点获得附近训练样本中最常见的标签。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A query point receives the label most common among nearby training examples. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-nearest-neighbor-pattern-classification"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 KNN 视为基础性的非参数基线：简单、可解释，并且在距离有意义时表现很强。它的长期影响在于说明存储样本和局部相似性本身就可以构成模型，而不只是训练数据。",
+        "en": "Experts generally treat KNN as a foundational nonparametric baseline: simple, interpretable, and surprisingly strong when distance is meaningful. Its long-term legacy is the idea that stored examples and local similarity can be a model, not just training data."
+      },
+      "sourceIds": [
+        "source-nearest-neighbor-pattern-classification"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

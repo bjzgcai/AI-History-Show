@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2016-gcn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "GCN",
+    "en": "GCN"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。</p>",
+    "en": "<p>GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "OpenReview",
+        "zh": "OpenReview"
+      },
+      "title": {
+        "en": "Semi-Supervised Classification with Graph Convolutional Networks",
+        "zh": "使用图卷积网络进行半监督分类"
+      },
+      "description": {
+        "en": "OpenReview source card for GCN.",
+        "zh": "OpenReview 的GCN资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1609.02907",
+      "source": "https://arxiv.org/abs/1609.02907",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2016-gcn-photo",
+    "asset-2016-gcn-spectral-convolution"
+  ],
+  "sourceIds": [
+    "source-semi-supervised-classification-with-graph-convolutional-networks",
+    "source-iclr-openreview-record",
+    "source-kipf-gcn-repository"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2016-gcn-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。",
+        "en": "GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning."
+      },
+      "sourceIds": [
+        "source-semi-supervised-classification-with-graph-convolutional-networks"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "节点特征通过归一化图邻域进行聚合，并转换为类别预测。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Node features are averaged through normalized graph neighborhoods and transformed into class predictions. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-semi-supervised-classification-with-graph-convolutional-networks"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 GCN 视为让图神经网络进入更广泛机器学习社群的模型。它的长期影响在于归一化邻居聚合层成为后续图模型的参照点。",
+        "en": "Experts generally treat GCN as the model that made graph neural networks accessible to a broad machine-learning audience. Its long-term legacy is the normalized-neighbor aggregation layer used as a reference point for later graph models."
+      },
+      "sourceIds": [
+        "source-semi-supervised-classification-with-graph-convolutional-networks"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

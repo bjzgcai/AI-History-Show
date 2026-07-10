@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "ELIZA 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "ELIZA is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-eliza-cacm-paper",
+      "source-mit-news-obituary-for-joseph-weizenbaum"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>ELIZA 展示了简单语言模式匹配在制造“对话感”方面能走多远。它的 DOCTOR 脚本会把用户短语改写成问题反射回来，机制很浅，却让互动令人印象深刻。它成为聊天机器人史和“机器拟人化”争论中的标志性案例。</p>",
+      "en": "<p>ELIZA showed how far simple language pattern matching could go in producing the feeling of conversation. Its DOCTOR script reflected user phrases back as questions, making the interaction memorable precisely because the mechanism was shallow. The program became a landmark in chatbot history and in debates about anthropomorphizing machines.</p>"
+    },
+    "sourceIds": [
+      "source-eliza-cacm-paper",
+      "source-mit-news-obituary-for-joseph-weizenbaum"
+    ],
+    "status": "needs-source"
+  }
+]

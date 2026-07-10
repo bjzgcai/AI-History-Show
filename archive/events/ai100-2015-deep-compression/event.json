@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2015-deep-compression",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "深度压缩",
+    "en": "Deep Compression"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
+    "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国斯坦福",
+      "en": "Stanford, United States"
+    },
+    "place": {
+      "zh": "斯坦福大学",
+      "en": "Stanford University"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "song-han",
+      "role": {
+        "zh": "Deep Compression 主要作者",
+        "en": "Deep Compression lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

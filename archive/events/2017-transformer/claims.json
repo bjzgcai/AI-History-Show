@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-attention-only-architecture",
+    "importance": "core",
+    "text": {
+      "zh": "Transformer 提出了一种完全基于注意力机制、去除循环和卷积的序列建模架构。",
+      "en": "The Transformer proposed a sequence modeling architecture based solely on attention mechanisms, dispensing with recurrence and convolutions."
+    },
+    "sourceIds": [
+      "source-transformer-arxiv",
+      "source-transformer-neurips"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-foundation-model-legacy",
+    "importance": "context",
+    "text": {
+      "zh": "Transformer 架构成为 BERT、GPT 式语言模型和许多现代基础模型的重要基础。",
+      "en": "The Transformer architecture became a key foundation for BERT, GPT-style language models, and many modern foundation models."
+    },
+    "sourceIds": [
+      "source-google-transformer-blog",
+      "source-google-research-publication"
+    ],
+    "status": "verified"
+  }
+]

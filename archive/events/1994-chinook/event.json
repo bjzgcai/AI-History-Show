@@ -1,0 +1,58 @@
+{
+  "id": "1994-chinook",
+  "year": "1989-2007",
+  "date": "1989-2007",
+  "title": {
+    "zh": "Chinook 跳棋程序",
+    "en": "Chinook"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
+    "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大阿尔伯塔省",
+      "en": "Alberta, Canada"
+    },
+    "place": {
+      "zh": "阿尔伯塔大学",
+      "en": "University of Alberta"
+    },
+    "coordinates": [
+      53.5232,
+      -113.5263
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jonathan-schaeffer",
+      "role": {
+        "zh": "Chinook 团队负责人",
+        "en": "Leader of the Chinook team"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

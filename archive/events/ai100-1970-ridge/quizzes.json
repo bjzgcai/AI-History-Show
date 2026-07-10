@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1970-ridge-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "岭回归在最小二乘中加入了什么？",
+      "en": "What does ridge regression add to least squares?"
+    },
+    "options": [
+      {
+        "zh": "收缩系数的 L2 惩罚",
+        "en": "An L2 penalty that shrinks coefficients"
+      },
+      {
+        "zh": "围棋棋盘",
+        "en": "A Go board"
+      },
+      {
+        "zh": "聊天机器人脚本",
+        "en": "A chatbot script"
+      },
+      {
+        "zh": "只有一个定理子句",
+        "en": "A theorem clause only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "岭回归通过正则化系数，降低相关预测变量带来的不稳定性。",
+      "en": "Ridge regression regularizes coefficients to reduce instability from correlated predictors."
+    },
+    "sourceIds": [
+      "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
+    ],
+    "assetIds": [
+      "asset-1970-ridge-shrinkage"
+    ]
+  }
+]

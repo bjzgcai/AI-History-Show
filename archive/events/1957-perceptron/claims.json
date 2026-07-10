@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "感知机与连接主义 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "The Perceptron and Connectionism is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+      "source-cornell-chronicle-perceptron-retrospective"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
+      "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+    },
+    "sourceIds": [
+      "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+      "source-cornell-chronicle-perceptron-retrospective"
+    ],
+    "status": "needs-source"
+  }
+]

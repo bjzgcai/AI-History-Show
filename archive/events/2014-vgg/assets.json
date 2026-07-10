@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2014-vgg-andrew-zisserman",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "安德鲁·齐瑟曼 肖像",
+      "en": "Andrew Zisserman portrait"
+    },
+    "subcaption": {
+      "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。",
+      "en": "Profile photo from the ELLIS Oxford / University of Oxford page."
+    },
+    "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Institution profile photo; rights not stated.",
+        "en": "Institution profile photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-vgg-depth-configurations",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "VGG 深度配置对比",
+      "en": "VGG depth comparison"
+    },
+    "subcaption": {
+      "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for VGG Networks, based on the related source material."
+    },
+    "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-vgg-receptive-field",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "3x3 感受野累积",
+      "en": "3x3 receptive-field build-up"
+    },
+    "subcaption": {
+      "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for VGG Networks, based on the related source material."
+    },
+    "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

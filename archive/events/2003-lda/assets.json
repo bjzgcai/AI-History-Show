@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2003-lda-david-blei",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "戴维·M·布莱 肖像",
+      "en": "David M. Blei portrait"
+    },
+    "subcaption": {
+      "zh": "来自 Blei 哥伦比亚大学个人主页的人物图。",
+      "en": "Portrait from Blei’s Columbia University homepage."
+    },
+    "sourceId": "source-latent-dirichlet-allocation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Personal website photo; rights not stated.",
+        "en": "Personal website photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2003-lda-topic-simplex",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "主题混合单纯形",
+      "en": "Topic mixture simplex"
+    },
+    "subcaption": {
+      "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material."
+    },
+    "sourceId": "source-latent-dirichlet-allocation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2003-lda-plate-model",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Plate 模型草图",
+      "en": "Plate model sketch"
+    },
+    "subcaption": {
+      "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material."
+    },
+    "sourceId": "source-latent-dirichlet-allocation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

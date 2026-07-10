@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2019-stylegan",
+  "year": 2019,
+  "date": "2019",
+  "title": {
+    "zh": "StyleGAN",
+    "en": "StyleGAN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>",
+    "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "Santa Clara, United States",
+      "en": "Santa Clara, United States"
+    },
+    "place": {
+      "zh": "NVIDIA",
+      "en": "NVIDIA"
+    },
+    "coordinates": [
+      37.3541,
+      -121.9552
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "tero-karras",
+      "role": {
+        "zh": "StyleGAN 主要作者",
+        "en": "StyleGAN lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

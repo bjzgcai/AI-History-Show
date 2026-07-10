@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1994-chinook-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Chinook 最终证明了跳棋的什么性质？",
+      "en": "What did Chinook eventually prove about checkers?"
+    },
+    "options": [
+      {
+        "zh": "双方完美对弈会导致和棋",
+        "en": "Perfect play from both sides leads to a draw"
+      },
+      {
+        "zh": "每局都由第一步直接获胜",
+        "en": "Every game is won by the first move"
+      },
+      {
+        "zh": "游戏中不需要搜索",
+        "en": "Search is unnecessary in games"
+      },
+      {
+        "zh": "只有语言模型能下跳棋",
+        "en": "Only language models can play checkers"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Chinook 团队用搜索和残局数据库弱求解跳棋，证明完美对弈下为和棋。",
+      "en": "The Chinook team used search and endgame databases to weakly solve checkers as a draw under perfect play."
+    },
+    "sourceIds": [
+      "source-chinook-project-home"
+    ],
+    "assetIds": [
+      "asset-1994-chinook-homepage"
+    ]
+  }
+]

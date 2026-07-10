@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2000-neural-language-model",
+  "year": 2000,
+  "date": "2000",
+  "title": {
+    "zh": "神经语言模型",
+    "en": "Neural Language Model"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
+    "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大蒙特利尔",
+      "en": "Montreal, Canada"
+    },
+    "place": {
+      "zh": "蒙特利尔大学",
+      "en": "University of Montreal"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "yoshua-bengio",
+      "role": {
+        "zh": "神经概率语言模型主要作者",
+        "en": "Lead author of the neural probabilistic language model"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

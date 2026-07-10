@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-semi-supervised-classification-with-graph-convolutional-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用图卷积网络进行半监督分类》",
+      "en": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    "url": "https://arxiv.org/abs/1609.02907",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iclr-openreview-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICLR OpenReview 记录",
+      "en": "ICLR OpenReview record"
+    },
+    "url": "https://openreview.net/forum?id=SJU4ayYgl",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-kipf-gcn-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "Kipf GCN 代码仓库",
+      "en": "Kipf GCN repository"
+    },
+    "url": "https://github.com/tkipf/gcn",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

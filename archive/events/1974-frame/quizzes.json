@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1974-frame-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "框架主要用来做什么？",
+      "en": "What is a frame mainly used for?"
+    },
+    "options": [
+      {
+        "zh": "用槽和默认值表示典型情境",
+        "en": "Represent a stereotyped situation with slots and defaults"
+      },
+      {
+        "zh": "按小批量归一化神经激活",
+        "en": "Normalize neural activations by minibatch"
+      },
+      {
+        "zh": "在定制芯片上搜索棋步",
+        "en": "Search chess moves on custom chips"
+      },
+      {
+        "zh": "只绘制 t-SNE 散点图",
+        "en": "Draw t-SNE scatter plots only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "框架把上下文知识组织成槽、默认假设和继承结构。",
+      "en": "Frames organize contextual knowledge into slots, default assumptions, and inherited structure."
+    },
+    "sourceIds": [
+      "source-a-framework-for-representing-knowledge"
+    ],
+    "assetIds": [
+      "asset-1974-frame-marvin-minsky"
+    ]
+  }
+]

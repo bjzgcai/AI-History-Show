@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-microsoft-coco-common-objects-in-context",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Microsoft COCO：上下文中的常见物体》",
+      "en": "Microsoft COCO: Common Objects in Context"
+    },
+    "url": "https://arxiv.org/abs/1405.0312",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-coco-dataset-website",
+    "type": "reference-only",
+    "label": {
+      "zh": "数据集",
+      "en": "Dataset"
+    },
+    "title": {
+      "zh": "COCO 数据集网站",
+      "en": "COCO dataset website"
+    },
+    "url": "https://cocodataset.org/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-eccv-springer-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ECCV Springer 记录",
+      "en": "ECCV Springer record"
+    },
+    "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

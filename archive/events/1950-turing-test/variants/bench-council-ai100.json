@@ -1,0 +1,83 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1950-turing-test",
+  "displayTitle": {
+    "zh": "图灵测试",
+    "en": "Turing Test"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1950-turing-test-alan-turing",
+    "asset-1950-turing-test-diagram"
+  ],
+  "sourceIds": [
+    "source-computing-machinery-and-intelligence",
+    "source-turing-digital-archive",
+    "source-internet-archive-digital-preview",
+    "source-stanford-encyclopedia-of-philosophy"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1950-turing-test-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "论文材料",
+        "en": "Published Paper"
+      },
+      "html": {
+        "zh": "图灵 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。图灵数字档案 也保存了这篇原文，适合与现代评测协议并置展示。",
+        "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols."
+      },
+      "sourceIds": [
+        "source-computing-machinery-and-intelligence"
+      ]
+    },
+    {
+      "id": "evaluation-logic",
+      "label": {
+        "zh": "评估逻辑",
+        "en": "Evaluation Logic"
+      },
+      "html": {
+        "zh": "图灵测试最值得展示的是评估设计：盲测交互、受限通道、人类判断和明确成功标准。这让它自然连接到红队测试、人类偏好评测和基准治理。",
+        "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance."
+      },
+      "sourceIds": [
+        "source-computing-machinery-and-intelligence"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常认为，图灵测试在历史上具有奠基意义，在哲学上也富有启发性，但它并不是现代智能的完整定义。它的长期影响主要体现在方法论上：它让机器智能能够通过可观察互动、人类判断和比较来讨论。",
+        "en": "Experts generally treat the Turing Test as historically foundational and philosophically fertile, even though it is not a complete modern definition of intelligence. Its long-term legacy is methodological: it made machine intelligence discussable through observable interaction, human judgment, and comparison."
+      },
+      "sourceIds": [
+        "source-computing-machinery-and-intelligence"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

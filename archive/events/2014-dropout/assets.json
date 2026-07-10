@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2014-dropout-nitish-srivastava",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "尼蒂什·斯里瓦斯塔瓦 肖像",
+      "en": "Nitish Srivastava portrait"
+    },
+    "subcaption": {
+      "zh": "来自 Srivastava 多伦多大学个人页的人物图。",
+      "en": "Portrait from Srivastava’s University of Toronto page."
+    },
+    "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Personal website photo; rights not stated.",
+        "en": "Personal website photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-dropout-random-mask",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "随机单元掩码",
+      "en": "Random unit mask"
+    },
+    "subcaption": {
+      "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Dropout, based on the listed source material."
+    },
+    "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-dropout-ensemble-average",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "近似集成",
+      "en": "Approximate ensemble"
+    },
+    "subcaption": {
+      "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Dropout, based on the listed source material."
+    },
+    "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

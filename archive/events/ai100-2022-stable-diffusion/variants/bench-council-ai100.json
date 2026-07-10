@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2022-stable-diffusion",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Stable Diffusion",
+    "en": "Stable Diffusion"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>",
+    "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "diffusion",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "CVF Open Access",
+        "zh": "CVF 开放论文库"
+      },
+      "title": {
+        "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+        "zh": "使用潜扩散模型进行高分辨率图像合成"
+      },
+      "description": {
+        "en": "Open CVPR paper for latent diffusion models.",
+        "zh": "潜扩散模型的 CVPR 开放论文。"
+      },
+      "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+      "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2022-stable-diffusion-robin-update-5",
+    "asset-2022-stable-diffusion-latent-denoise"
+  ],
+  "sourceIds": [
+    "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+    "source-cvpr-paper-page",
+    "source-compvis-latent-diffusion-repository",
+    "source-stability-ai-stable-diffusion-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2022-stable-diffusion-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。",
+        "en": "Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media."
+      },
+      "sourceIds": [
+        "source-high-resolution-image-synthesis-with-latent-diffusion-models"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-high-resolution-image-synthesis-with-latent-diffusion-models"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Stable Diffusion 视为让潜扩散模型走出少数实验室、广泛可用的发布。它的长期影响在于形成了由检查点、适配器、工作流和创意应用组成的开放文生图生态。",
+        "en": "Experts generally treat Stable Diffusion as the release that made latent diffusion widely accessible outside a small number of labs. Its long-term legacy is the open text-to-image ecosystem of checkpoints, adapters, workflows, and creative applications."
+      },
+      "sourceIds": [
+        "source-high-resolution-image-synthesis-with-latent-diffusion-models"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

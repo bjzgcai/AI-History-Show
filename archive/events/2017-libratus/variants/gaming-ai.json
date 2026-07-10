@@ -1,0 +1,154 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "2017-libratus",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Libratus",
+    "en": "Libratus"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>",
+    "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Science",
+        "zh": "Science"
+      },
+      "title": {
+        "en": "Libratus paper",
+        "zh": "Libratus 论文"
+      },
+      "description": {
+        "en": "Science article describing Libratus and heads-up no-limit poker.",
+        "zh": "描述 Libratus 与一对一无限注扑克的 Science 论文。"
+      },
+      "url": "https://www.science.org/doi/10.1126/science.aao1733",
+      "source": "https://www.science.org/doi/10.1126/science.aao1733",
+      "action": {
+        "en": "Open source page",
+        "zh": "打开资料页面"
+      },
+      "license": {
+        "en": "Reference link only; local exhibition graphics are original redraws.",
+        "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+      },
+      "usage": {
+        "en": "Source card for the gaming AI branch",
+        "zh": "AI 棋牌分支的资料卡片"
+      }
+    },
+    {
+      "type": "gameEvolutionVideo",
+      "site": {
+        "en": "Game evolution clip",
+        "zh": "棋局演化短片"
+      },
+      "title": {
+        "en": "Libratus game evolution",
+        "zh": "Libratus 棋局演化"
+      },
+      "description": {
+        "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
+        "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
+      },
+      "url": "resources/videos/game-evolution/2017-libratus.mp4",
+      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+      "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
+      "sourceSgf": "examples/sgf/sample-go-game.sgf",
+      "generator": "scripts/sgf_to_video.py",
+      "duration": {
+        "en": "about 1 min",
+        "zh": "约 1 分钟"
+      },
+      "fps": "30",
+      "license": {
+        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+      },
+      "usage": {
+        "en": "Playable game-state evolution module",
+        "zh": "可播放的棋局状态演化模块"
+      },
+      "action": {
+        "en": "Play evolution clip",
+        "zh": "播放演化短片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2017-libratus-cfr-solving"
+  ],
+  "sourceIds": [
+    "source-science-paper",
+    "source-cmu-libratus-release",
+    "source-safe-and-nested-subgame-solving"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2017-libratus-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "扑克把暗牌、诈唬和不确定性加入了游戏 AI 叙事。不同于国际象棋或围棋，正确行动取决于可能暗牌范围，以及对手认为你可能持有什么牌。",
+        "en": "Poker added hidden cards, bluffing, and uncertainty to the game-AI story. Unlike chess or Go, the correct action depends on ranges of possible private hands and on what opponents believe you might hold."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Libratus 在赛前求解紧凑抽象策略，并在困难手牌中使用实时子局求解。它随后分析每天对局中的可利用模式，并在夜间修补策略。",
+        "en": "Libratus solved a compact abstraction before the match and used real-time subgame solving during difficult hands. It then analyzed each day for exploitable patterns and patched the strategy overnight."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Libratus 视为大型不完全信息博弈的转折点。它的长期影响在于证明：即使真实状态部分隐藏，抽象、均衡推理和定向修补仍能击败顶尖人类。",
+        "en": "Experts generally treat Libratus as a turning point for large imperfect-information games. Its legacy is showing that abstraction, equilibrium reasoning, and targeted repair can defeat elite humans even when the real state is partly hidden."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

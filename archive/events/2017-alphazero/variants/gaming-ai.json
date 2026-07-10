@@ -1,0 +1,154 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "2017-alphazero",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "AlphaZero",
+    "en": "AlphaZero"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>",
+    "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Science",
+        "zh": "Science"
+      },
+      "title": {
+        "en": "AlphaZero Science paper",
+        "zh": "AlphaZero Science 论文"
+      },
+      "description": {
+        "en": "Peer-reviewed article describing AlphaZero across chess, shogi, and Go.",
+        "zh": "描述 AlphaZero 横跨国际象棋、将棋和围棋的同行评议论文。"
+      },
+      "url": "https://www.science.org/doi/10.1126/science.aar6404",
+      "source": "https://www.science.org/doi/10.1126/science.aar6404",
+      "action": {
+        "en": "Open source page",
+        "zh": "打开资料页面"
+      },
+      "license": {
+        "en": "Reference link only; local exhibition graphics are original redraws.",
+        "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+      },
+      "usage": {
+        "en": "Source card for the gaming AI branch",
+        "zh": "AI 棋牌分支的资料卡片"
+      }
+    },
+    {
+      "type": "gameEvolutionVideo",
+      "site": {
+        "en": "Game evolution clip",
+        "zh": "棋局演化短片"
+      },
+      "title": {
+        "en": "AlphaZero game evolution",
+        "zh": "AlphaZero 棋局演化"
+      },
+      "description": {
+        "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
+        "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
+      },
+      "url": "resources/videos/game-evolution/2017-alphazero.mp4",
+      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+      "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+      "sourceSgf": "examples/sgf/sample-go-game.sgf",
+      "generator": "scripts/sgf_to_video.py",
+      "duration": {
+        "en": "about 1 min",
+        "zh": "约 1 分钟"
+      },
+      "fps": "30",
+      "license": {
+        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+      },
+      "usage": {
+        "en": "Playable game-state evolution module",
+        "zh": "可播放的棋局状态演化模块"
+      },
+      "action": {
+        "en": "Play evolution clip",
+        "zh": "播放演化短片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2017-alphazero-self-play-loop"
+  ],
+  "sourceIds": [
+    "source-science-paper",
+    "source-arxiv-preprint",
+    "source-deepmind-alphazero-blog"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2017-alphazero-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "AlphaGo 仍然使用人类专家棋谱和围棋专用训练阶段。AlphaZero 进一步追问：自我博弈能否只依靠规则，在多个游戏中承担主要学习负担。",
+        "en": "AlphaGo still used human expert games and Go-specific training stages. AlphaZero asked whether self-play could carry the learning burden across multiple games with only the rules as input."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "神经网络预测走法概率和胜负结果。树搜索改进行动选择，自我博弈产生新经验，网络再在下一轮训练中吸收这些改进行为。",
+        "en": "A neural network predicts move probabilities and game outcomes. Tree search improves action choice, self-play generates new experience, and the network absorbs the improved behavior in the next training cycle."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 AlphaZero 视为神经搜索自我博弈范式最清晰的公开表达。它的长期影响在于提出：强棋力可以从规则仿真与学习型策略-价值引导中涌现，这一模式后来影响了 MuZero 等规划系统。",
+        "en": "Experts generally treat AlphaZero as the cleanest public statement of the neural-search self-play paradigm. Its legacy is the idea that strong play can emerge from rule-based simulation plus learned policy-value guidance, a pattern that later influenced MuZero and other planning systems."
+      },
+      "sourceIds": [
+        "source-science-paper"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

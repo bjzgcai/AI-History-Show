@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2015-googlenet-inception",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "GoogLeNet / Inception",
+    "en": "GoogLeNet / Inception"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>",
+    "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "inception",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "CVF Open Access",
+        "zh": "CVF 开放访问"
+      },
+      "title": {
+        "en": "Going Deeper with Convolutions",
+        "zh": "用卷积走得更深"
+      },
+      "description": {
+        "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
+        "zh": "CVPR 开放访问页面，介绍 GoogLeNet 与 Inception 模块。"
+      },
+      "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open CVF paper",
+        "zh": "打开 CVF 论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2015-googlenet-inception-christian-szegedy",
+    "asset-2015-googlenet-inception-parallel-branches",
+    "asset-2015-googlenet-inception-bottleneck"
+  ],
+  "sourceIds": [
+    "source-going-deeper-with-convolutions",
+    "source-torchvision-googlenet",
+    "source-tensorflow-keras-inceptionv3"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2015-googlenet-inception-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "AlexNet 和 VGG 之后，CNN 变得更深也更耗算力。谷歌 团队探索如何提升表示能力，而不是简单放大每一层。",
+        "en": "After AlexNet and VGG, CNNs were becoming deeper and more compute-hungry. Google’s team explored how to increase representational power without simply scaling every layer."
+      },
+      "sourceIds": [
+        "source-going-deeper-with-convolutions"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Inception 模块让网络同时使用多种感受野尺寸。1x1 瓶颈层让这种多分支设计在计算上可承受。",
+        "en": "An Inception module asks the network to choose among several receptive-field sizes at once. 1x1 bottlenecks keep this multi-branch design affordable."
+      },
+      "sourceIds": [
+        "source-going-deeper-with-convolutions"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Inception 视为高效模块化 CNN 设计的里程碑。它的长期影响在于强调并行分支、瓶颈层和明确计算权衡，并影响了后来的模块设计与架构搜索。",
+        "en": "Experts generally treat Inception as a milestone in efficient modular CNN design. Its long-term legacy is the emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs that influenced later block design and architecture search."
+      },
+      "sourceIds": [
+        "source-going-deeper-with-convolutions"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

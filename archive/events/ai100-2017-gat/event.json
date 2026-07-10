@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2017-gat",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "zh": "GAT",
+    "en": "GAT"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>",
+    "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "Cambridge, United Kingdom",
+      "en": "Cambridge, United Kingdom"
+    },
+    "place": {
+      "zh": "University of Cambridge",
+      "en": "University of Cambridge"
+    },
+    "coordinates": [
+      52.2053,
+      0.1218
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "petar-velickovic",
+      "role": {
+        "zh": "GAT 主要作者",
+        "en": "GAT lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

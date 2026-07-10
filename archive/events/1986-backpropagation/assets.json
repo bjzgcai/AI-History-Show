@@ -1,0 +1,132 @@
+[
+  {
+    "id": "asset-1986-backpropagation-architecture01",
+    "type": "image",
+    "path": "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "反向传播算法 架构图",
+      "en": "Backpropagation Algorithm Architecture Diagram"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-backpropagation-paper-01",
+    "type": "image",
+    "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-backpropagation-paper-02",
+    "type": "image",
+    "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-backpropagation-paper-03",
+    "type": "image",
+    "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-backpropagation-papers-01",
+    "type": "image",
+    "path": "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《通过反向传播误差来学习表征》",
+      "en": "Learning representations by back-propagating errors"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

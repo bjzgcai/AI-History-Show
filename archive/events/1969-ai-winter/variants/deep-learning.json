@@ -1,0 +1,71 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "1969-ai-winter",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "第一次寒冬的到来",
+    "en": "The First AI Winter Arrives"
+  },
+  "displaySummary": {
+    "zh": "AI创世纪",
+    "en": "Genesis of AI"
+  },
+  "displayDescription": {
+    "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
+    "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-1969-ai-winter-papers-01",
+    "asset-1969-ai-winter-papers-02",
+    "asset-1969-ai-winter-papers-01-2"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "《Perceptrons》真正改变研究方向的地方，在于它把“哪些任务是单层感知机做不到的”说清楚了；学术界随后开始把注意力从神经网络热潮转向更容易形式化和证明的路线。",
+        "en": "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "寒冬并不意味着神经网络从此失效，而是意味着在当时的计算与算法条件下，它的承诺被重新估价；后来 BP、LSTM 与大算力的回归，本质上是在补齐当年缺失的训练机制与资源基础。",
+        "en": "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

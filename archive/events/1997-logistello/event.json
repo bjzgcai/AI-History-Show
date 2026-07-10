@@ -1,0 +1,66 @@
+{
+  "id": "1997-logistello",
+  "year": "1997",
+  "date": "1997",
+  "title": {
+    "zh": "Logistello：黑白棋评估函数学习",
+    "en": "Logistello: Learning Evaluation for Othello"
+  },
+  "summary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "description": {
+    "zh": "<p>Logistello 在 1997 年黑白棋对局中以 6 比 0 击败世界冠军村上健。Michael Buro 将选择性博弈树搜索、基于棋盘模式的评估、统计特征学习、开局库学习和强残局求解结合起来，说明学习得到的评估函数可以在紧凑棋盘游戏中超过手工启发式规则。</p>",
+    "en": "<p>Logistello defeated world champion Takeshi Murakami 6-0 in a 1997 Othello match. Michael Buro combined selective game-tree search, pattern-based evaluation, statistical feature learning, opening-book learning, and strong endgame solving, showing that learned evaluation could outperform hand-crafted heuristics in a compact board game.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国新泽西州",
+      "en": "NJ, United States"
+    },
+    "place": {
+      "zh": "NEC 研究院",
+      "en": "NEC Research Institute"
+    },
+    "coordinates": [
+      40.3493,
+      -74.6593
+    ]
+  },
+  "topics": [
+    "gaming-ai"
+  ],
+  "achievementTypeIds": [
+    "gaming-ai"
+  ],
+  "figures": [
+    {
+      "figureId": "michael-buro",
+      "role": {
+        "zh": "Logistello 创建者",
+        "en": "Creator of Logistello"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "takeshi-murakami",
+      "role": {
+        "zh": "1997 年对局中的黑白棋世界冠军",
+        "en": "World Othello champion in the 1997 match"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2017-cyclegan",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "zh": "CycleGAN",
+    "en": "CycleGAN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>",
+    "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "Berkeley, United States",
+      "en": "Berkeley, United States"
+    },
+    "place": {
+      "zh": "UC Berkeley",
+      "en": "UC Berkeley"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jun-yan-zhu",
+      "role": {
+        "zh": "CycleGAN 主要作者",
+        "en": "CycleGAN lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

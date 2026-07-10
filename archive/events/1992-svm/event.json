@@ -1,0 +1,74 @@
+{
+  "id": "1992-svm",
+  "year": "1992",
+  "date": "1992",
+  "title": {
+    "zh": "支持向量机",
+    "en": "Support Vector Machines"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>",
+    "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国默里山",
+      "en": "Murray Hill, United States"
+    },
+    "place": {
+      "zh": "贝尔实验室",
+      "en": "Bell Laboratories"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4018
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "vladimir-vapnik",
+      "role": {
+        "zh": "共同发展最优间隔分类器与统计学习理论",
+        "en": "Co-developed optimal-margin classifiers and statistical learning theory"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "bernhard-boser",
+      "role": {
+        "zh": "1992 年最优间隔分类器论文共同作者",
+        "en": "Co-author of the 1992 optimal-margin classifier paper"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "isabelle-guyon",
+      "role": {
+        "zh": "1992 年最优间隔分类器论文共同作者",
+        "en": "Co-author of the 1992 optimal-margin classifier paper"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

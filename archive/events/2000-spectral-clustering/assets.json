@@ -1,0 +1,100 @@
+[
+  {
+    "id": "asset-2000-spectral-clustering-graph-cut",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "归一化图切分",
+      "en": "Normalized graph cut"
+    },
+    "subcaption": {
+      "zh": "依据 归一化切分与图像分割 制作的本地解释图。",
+      "en": "Original local explainer based on Normalized Cuts and Image Segmentation."
+    },
+    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2000-spectral-clustering-eigen-map",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "特征向量嵌入",
+      "en": "Eigenvector embedding"
+    },
+    "subcaption": {
+      "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。",
+      "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm."
+    },
+    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "谱聚类 外部参考图",
+      "en": "Spectral Clustering external reference image"
+    },
+    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2000-spectral-clustering-6n-graf",
+    "type": "svg",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+    "role": "external-reference-diagram",
+    "caption": {
+      "zh": "谱聚类 外部参考图",
+      "en": "Spectral Clustering external reference image"
+    },
+    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "id": "1989-cnn",
+  "year": 1989,
+  "date": "1989",
+  "title": {
+    "zh": "卷积神经网络与 LeNet",
+    "en": "Convolutional Networks and LeNet"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
+    "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国新泽西州",
+      "en": "New Jersey, United States"
+    },
+    "place": {
+      "zh": "贝尔实验室",
+      "en": "Bell Labs"
+    },
+    "coordinates": [
+      40.684,
+      -74.401
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "yann-lecun",
+      "role": {
+        "zh": "LeNet 主要研究者",
+        "en": "LeNet lead researcher"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "ai100-1989-lenet"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

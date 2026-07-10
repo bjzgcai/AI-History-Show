@@ -1,0 +1,82 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1958-lisp",
+  "displayTitle": {
+    "zh": "LISP",
+    "en": "LISP"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "eval",
+  "assetIds": [
+    "asset-1958-lisp-john-mccarthy",
+    "asset-1958-lisp-eval-flow"
+  ],
+  "sourceIds": [
+    "source-recursive-functions-of-symbolic-expressions",
+    "source-lisp-i-programmer-s-manual",
+    "source-history-of-lisp"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1958-lisp-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "论文材料",
+        "en": "Published Paper"
+      },
+      "html": {
+        "zh": "麦卡锡 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I 程序员手册 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。",
+        "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool."
+      },
+      "sourceIds": [
+        "source-recursive-functions-of-symbolic-expressions"
+      ]
+    },
+    {
+      "id": "api-like-primitives",
+      "label": {
+        "zh": "类 API 原语",
+        "en": "API-Like Primitives"
+      },
+      "html": {
+        "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。",
+        "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems."
+      },
+      "sourceIds": [
+        "source-recursive-functions-of-symbolic-expressions"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 LISP 视为符号 AI 和交互式编程的定义性语言之一。它的长期影响在于“代码即数据”、递归符号处理，以及由此形成并影响后续编程语言设计的 AI 系统生态。",
+        "en": "Experts generally treat LISP as one of the defining languages of symbolic AI and interactive programming. Its long-term legacy is the code-as-data idea, recursive symbolic processing, and an ecosystem of AI systems that shaped later programming-language design."
+      },
+      "sourceIds": [
+        "source-recursive-functions-of-symbolic-expressions"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

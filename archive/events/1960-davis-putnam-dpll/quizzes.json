@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1960-davis-putnam-dpll-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "DPLL 让 SAT 求解的哪种结构成为核心？",
+      "en": "What SAT-solving structure did DPLL make central?"
+    },
+    "options": [
+      {
+        "zh": "分支、传播与回溯",
+        "en": "Branching, propagation, and backtracking"
+      },
+      {
+        "zh": "给电路板上色",
+        "en": "Painting a circuit board"
+      },
+      {
+        "zh": "按亮度排序肖像",
+        "en": "Sorting portraits by brightness"
+      },
+      {
+        "zh": "用音频信号替代逻辑",
+        "en": "Replacing logic with audio signals"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。",
+      "en": "DPLL recursively branches on assignments, propagates forced literals, and backtracks when a contradiction appears."
+    },
+    "sourceIds": [
+      "source-a-computing-procedure-for-quantification-theory"
+    ],
+    "assetIds": [
+      "asset-1960-davis-putnam-dpll-hilary-putnam"
+    ]
+  },
+  {
+    "id": "1960-davis-putnam-dpll-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DPLL 让 SAT 求解的哪种结构成为核心？",
+      "en": "What SAT-solving structure did DPLL make central?"
+    },
+    "options": [
+      {
+        "zh": "分支、传播与回溯",
+        "en": "Branching, propagation, and backtracking"
+      },
+      {
+        "zh": "给电路板上色",
+        "en": "Painting a circuit board"
+      },
+      {
+        "zh": "按亮度排序肖像",
+        "en": "Sorting portraits by brightness"
+      },
+      {
+        "zh": "用音频信号替代逻辑",
+        "en": "Replacing logic with audio signals"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。",
+      "en": "DPLL recursively branches on assignments, propagates forced literals, and backtracks when a contradiction appears."
+    },
+    "sourceIds": [
+      "source-a-computing-procedure-for-quantification-theory"
+    ],
+    "assetIds": [
+      "asset-1960-davis-putnam-dpll-hilary-putnam"
+    ]
+  }
+]

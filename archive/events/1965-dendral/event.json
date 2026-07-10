@@ -1,0 +1,58 @@
+{
+  "id": "1965-dendral",
+  "year": "1965",
+  "date": "1965",
+  "title": {
+    "zh": "DENDRAL",
+    "en": "DENDRAL"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>",
+    "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国加利福尼亚州",
+      "en": "California, United States"
+    },
+    "place": {
+      "zh": "斯坦福大学",
+      "en": "Stanford University"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "edward-feigenbaum",
+      "role": {
+        "zh": "专家系统 AI 代表人物",
+        "en": "Leader in expert-system AI"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

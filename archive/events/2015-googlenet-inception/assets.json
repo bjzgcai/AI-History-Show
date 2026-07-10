@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2015-googlenet-inception-christian-szegedy",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "克里斯蒂安·塞格迪 节目人物图",
+      "en": "Christian Szegedy episode portrait"
+    },
+    "subcaption": {
+      "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。",
+      "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper."
+    },
+    "sourceId": "source-going-deeper-with-convolutions",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Podcast episode artwork; rights not stated.",
+        "en": "Podcast episode artwork; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-googlenet-inception-parallel-branches",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "多分支 Inception 模块",
+      "en": "Multi-branch Inception module"
+    },
+    "subcaption": {
+      "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+    },
+    "sourceId": "source-going-deeper-with-convolutions",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-googlenet-inception-bottleneck",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "1x1 瓶颈降维",
+      "en": "1x1 bottleneck reduction"
+    },
+    "subcaption": {
+      "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+    },
+    "sourceId": "source-going-deeper-with-convolutions",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

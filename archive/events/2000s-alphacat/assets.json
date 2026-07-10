@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-2000s-alphacat-xiangqi-search",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "中国象棋搜索几何",
+      "en": "Chinese chess search geometry"
+    },
+    "subcaption": {
+      "zh": "中国象棋引擎约束的原创解释图。",
+      "en": "Original explainer for xiangqi engine constraints."
+    },
+    "sourceId": "source-icga-chinese-chess-page",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

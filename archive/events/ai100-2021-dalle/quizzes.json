@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2021-dalle-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DALL-E 根据文本提示生成什么？",
+      "en": "What does DALL-E generate from a text prompt?"
+    },
+    "options": [
+      {
+        "zh": "图像",
+        "en": "Images"
+      },
+      {
+        "zh": "只有定理证明",
+        "en": "Only theorem proofs"
+      },
+      {
+        "zh": "只有数据库索引",
+        "en": "Only database indexes"
+      },
+      {
+        "zh": "只有围棋残局",
+        "en": "Only Go endgames"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DALL-E 展示了语言条件模型如何合成视觉场景。",
+      "en": "DALL-E showed how language-conditioned models could synthesize visual scenes."
+    },
+    "sourceIds": [
+      "source-zero-shot-text-to-image-generation"
+    ],
+    "assetIds": [
+      "asset-2021-dalle-text-to-image"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "AlphaFold2 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "AlphaFold2 is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-highly-accurate-protein-structure-prediction-with-alphafold",
+      "source-deepmind-alphafold-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
+      "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+    },
+    "sourceIds": [
+      "source-highly-accurate-protein-structure-prediction-with-alphafold",
+      "source-deepmind-alphafold-page"
+    ],
+    "status": "needs-source"
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1970-ridge",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "岭回归",
+    "en": "Ridge"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>",
+    "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "ridge",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Taylor & Francis",
+        "zh": "Taylor & Francis"
+      },
+      "title": {
+        "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+        "zh": "岭回归：非正交问题中的有偏估计"
+      },
+      "description": {
+        "en": "Primary paper record for ridge regression.",
+        "zh": "岭回归的主论文记录。"
+      },
+      "url": "https://doi.org/10.1080/00401706.1970.10488634",
+      "source": "https://doi.org/10.1080/00401706.1970.10488634",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1970-ridge-ai-ridge-regression-main",
+    "asset-1970-ridge-shrinkage"
+  ],
+  "sourceIds": [
+    "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+    "source-open-pdf-copy-of-the-technometrics-paper",
+    "source-ridge-regression-overview",
+    "source-scikit-learn-ridge-documentation"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1970-ridge-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。",
+        "en": "Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable."
+      },
+      "sourceIds": [
+        "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把岭回归视为经典正则化成果，使可控偏差成为实用工具。它的长期影响在于 L2 惩罚模式被统计学习、核方法和深度学习权重衰减广泛采用。",
+        "en": "Experts generally treat ridge regression as a classic regularization result that made controlled bias a practical tool. Its long-term legacy is the L2 penalty pattern used across statistics, kernel methods, and deep-learning weight decay."
+      },
+      "sourceIds": [
+        "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

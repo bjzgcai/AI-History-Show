@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+      "en": "Highly accurate protein structure prediction with AlphaFold"
+    },
+    "url": "https://doi.org/10.1038/s41586-021-03819-2",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-deepmind-alphafold-page",
+    "type": "reference-only",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "DeepMind AlphaFold 页面",
+      "en": "DeepMind AlphaFold page"
+    },
+    "url": "https://deepmind.google/technologies/alphafold/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-alphafold-protein-structure-database",
+    "type": "reference-only",
+    "label": {
+      "zh": "数据集",
+      "en": "Dataset"
+    },
+    "title": {
+      "zh": "AlphaFold 蛋白质结构数据库",
+      "en": "AlphaFold Protein Structure Database"
+    },
+    "url": "https://alphafold.ebi.ac.uk/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-alphafold-github-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "AlphaFold GitHub 代码仓库",
+      "en": "AlphaFold GitHub repository"
+    },
+    "url": "https://github.com/google-deepmind/alphafold",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

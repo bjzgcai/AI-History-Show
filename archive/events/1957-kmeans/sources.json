@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-least-squares-quantization-in-pcm",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "PCM 中的最小二乘量化",
+      "en": "Least squares quantization in PCM"
+    },
+    "url": "https://doi.org/10.1109/TIT.1982.1056489",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-bell-labs-k-means-history-note",
+    "type": "reference-only",
+    "label": {
+      "zh": "历史资料",
+      "en": "History note"
+    },
+    "title": {
+      "zh": "贝尔实验室 k-means 历史资料",
+      "en": "Bell Labs k-means history note"
+    },
+    "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-kmeans-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn KMeans 文档",
+      "en": "scikit-learn KMeans documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iris-flowers-k-means-clustering-graphic",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "鸢尾花 k-means 聚类图",
+      "en": "Iris Flowers k-means clustering graphic"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

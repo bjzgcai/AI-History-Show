@@ -1,0 +1,117 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "2000s-alphacat",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "中国象棋引擎与 AlphaCat",
+    "en": "Chinese Chess Engines and AlphaCat"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
+    "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "ICGA Tournaments",
+        "zh": "ICGA 赛事档案"
+      },
+      "title": {
+        "en": "Chinese Chess tournament archive",
+        "zh": "中国象棋赛事档案"
+      },
+      "description": {
+        "en": "Tournament archive listing Chinese Chess competitions and programs in the Computer Olympiad lineage.",
+        "zh": "赛事档案列出计算机奥林匹克中国象棋项目及参赛程序谱系。"
+      },
+      "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+      "source": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+      "action": {
+        "en": "Open source page",
+        "zh": "打开资料页面"
+      },
+      "license": {
+        "en": "Reference link only; local exhibition graphics are original redraws.",
+        "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+      },
+      "usage": {
+        "en": "Source card for the gaming AI branch",
+        "zh": "AI 棋牌分支的资料卡片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2000s-alphacat-xiangqi-search"
+  ],
+  "sourceIds": [
+    "source-icga-chinese-chess-page",
+    "source-comparison-training-for-computer-chinese-chess",
+    "source-xiangqi-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2000s-alphacat-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "中国象棋与国际象棋足够接近，因此搜索和评估是自然起点。它又足够不同：炮的隔子打、九宫限制、过河规则和长打规则，迫使引擎作者重新设计棋盘表示和战术评估。",
+        "en": "Xiangqi is close enough to chess that search and evaluation are natural starting points. It is also different enough that cannon captures, palace restrictions, river effects, and repetition rules force engine authors to redesign board representation and tactical evaluation."
+      },
+      "sourceIds": [
+        "source-icga-chinese-chess-page"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "实用路线不是一个万能技巧，而是一组面向领域的工程组合。快速走法生成、激进 alpha-beta 剪枝、开局知识和调校后的评估矩阵共同作用，才能应对高度战术化的搜索空间。",
+        "en": "The practical route was not one universal trick but a stack of domain-aware engineering. Fast move generation, aggressive alpha-beta pruning, opening knowledge, and tuned evaluation matrices worked together to survive a highly tactical search space."
+      },
+      "sourceIds": [
+        "source-icga-chinese-chess-page"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把强中国象棋引擎视为证据：只要深度适配具体游戏，经典搜索仍然非常有力。这条路线也预示了后来的学习型评估工作，手工兵种位置表逐步被自动调校权重补充。",
+        "en": "Experts generally treat strong xiangqi engines as evidence that classical search remains powerful when it is deeply adapted to a game. This line also foreshadowed later learned-evaluation work, where handcrafted piece-square matrices were gradually complemented by automatically tuned weights."
+      },
+      "sourceIds": [
+        "source-icga-chinese-chess-page"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

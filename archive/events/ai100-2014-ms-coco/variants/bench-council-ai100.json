@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2014-ms-coco",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "MS COCO",
+    "en": "MS COCO"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>",
+    "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "COCO Dataset",
+        "zh": "COCO 数据集"
+      },
+      "title": {
+        "en": "Microsoft COCO: Common Objects in Context",
+        "zh": "Microsoft COCO：上下文中的常见物体"
+      },
+      "description": {
+        "en": "COCO Dataset source card for MS COCO.",
+        "zh": "COCO 数据集 的MS COCO资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1405.0312",
+      "source": "https://arxiv.org/abs/1405.0312",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open dataset",
+        "zh": "打开数据集"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2014-ms-coco-tsungyi",
+    "asset-2014-ms-coco-context-dataset"
+  ],
+  "sourceIds": [
+    "source-microsoft-coco-common-objects-in-context",
+    "source-coco-dataset-website",
+    "source-eccv-springer-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2014-ms-coco-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。",
+        "en": "MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem."
+      },
+      "sourceIds": [
+        "source-microsoft-coco-common-objects-in-context"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-microsoft-coco-common-objects-in-context"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 MS COCO 视为现代计算机视觉最重要的数据集之一。它的长期影响在于多任务基准文化塑造了目标检测、分割和字幕生成的进展。",
+        "en": "Experts generally treat MS COCO as one of the most important datasets for modern computer vision. Its long-term legacy is the multi-task benchmark culture that shaped object detection, segmentation, and captioning progress."
+      },
+      "sourceIds": [
+        "source-microsoft-coco-common-objects-in-context"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

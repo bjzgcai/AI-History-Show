@@ -1,0 +1,72 @@
+{
+  "id": "2025-llm-competition",
+  "year": 2025,
+  "date": "2025",
+  "title": {
+    "zh": "大语言模型百花齐放",
+    "en": "A Flourishing Competition Among Large Language Models"
+  },
+  "summary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "description": {
+    "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
+    "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国 / 中国",
+      "en": "Global"
+    },
+    "place": {
+      "zh": "全球研究",
+      "en": "Global AI Industry"
+    },
+    "coordinates": [
+      [
+        37.7749,
+        -122.4194
+      ],
+      [
+        37.422,
+        -122.0841
+      ],
+      [
+        39.9042,
+        116.4074
+      ],
+      [
+        30.2741,
+        120.1551
+      ]
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "research-institutions",
+      "role": {
+        "zh": "前沿模型研发机构",
+        "en": "Leading-edge model R&D organization"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

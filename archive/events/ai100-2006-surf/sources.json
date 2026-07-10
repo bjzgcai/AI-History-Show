@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-surf-speeded-up-robust-features",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "《SURF：加速稳健特征》",
+      "en": "SURF: Speeded Up Robust Features"
+    },
+    "url": "https://doi.org/10.1007/11744023_32",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-eth-surf-paper-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "ETH SURF 论文 PDF",
+      "en": "ETH SURF paper PDF"
+    },
+    "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-original-surf-project-page",
+    "type": "project-page",
+    "label": {
+      "zh": "项目",
+      "en": "Project"
+    },
+    "title": {
+      "zh": "SURF 原始项目页",
+      "en": "Original SURF project page"
+    },
+    "url": "https://people.ee.ethz.ch/~surf/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-surf-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "SURF 概览",
+      "en": "SURF overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

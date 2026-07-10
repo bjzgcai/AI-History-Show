@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2015-ddpg",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "DDPG",
+    "en": "DDPG"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
+    "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "Continuous Control with Deep Reinforcement Learning",
+        "zh": "使用深度强化学习进行连续控制"
+      },
+      "description": {
+        "en": "arXiv source card for DDPG.",
+        "zh": "arXiv 的DDPG资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1509.02971",
+      "source": "https://arxiv.org/abs/1509.02971",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2015-ddpg-timothy-lillicrap-1",
+    "asset-2015-ddpg-actor-critic"
+  ],
+  "sourceIds": [
+    "source-continuous-control-with-deep-reinforcement-learning",
+    "source-iclr-openreview-record",
+    "source-deep-deterministic-policy-gradient-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2015-ddpg-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。",
+        "en": "DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems."
+      },
+      "sourceIds": [
+        "source-continuous-control-with-deep-reinforcement-learning"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-continuous-control-with-deep-reinforcement-learning"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 DDPG 视为早期连续控制深度强化学习的重要算法，尽管后续方法提高了稳定性。它的长期影响在于 actor-critic 模板影响了 TD3、SAC 和许多机器人智能体。",
+        "en": "Experts generally treat DDPG as an important early deep RL algorithm for continuous control, even though later methods improved stability. Its long-term legacy is the actor-critic template behind TD3, SAC, and many robotics agents."
+      },
+      "sourceIds": [
+        "source-continuous-control-with-deep-reinforcement-learning"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-learning-representations-by-back-propagating-errors",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《通过反向传播误差学习表示》",
+      "en": "Learning representations by back-propagating errors"
+    },
+    "url": "https://doi.org/10.1038/323533a0",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-a-theory-of-adaptive-pattern-classifiers",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《自适应模式分类器理论》",
+      "en": "A Theory of Adaptive Pattern Classifiers"
+    },
+    "url": "https://doi.org/10.1109/PGEC.1967.264666",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-hinton-hosted-nature-back-propagation-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "辛顿托管 Nature 论文 PDF",
+      "en": "Hinton-hosted Nature back-propagation PDF"
+    },
+    "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-backpropagation-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "反向传播概览",
+      "en": "Backpropagation overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Backpropagation",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

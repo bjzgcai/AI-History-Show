@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-watson-beyond-jeopardy",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "沃森：超越《危险边缘！》",
+      "en": "Watson: Beyond Jeopardy!"
+    },
+    "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-building-watson-an-overview-of-the-deepqa-project",
+    "type": "project-page",
+    "label": {
+      "zh": "综述",
+      "en": "Overview"
+    },
+    "title": {
+      "zh": "构建沃森：DeepQA 项目概览",
+      "en": "Building Watson: An Overview of the DeepQA Project"
+    },
+    "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-ibm-watson-system-photo",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "IBM Watson 系统照片",
+      "en": "IBM Watson system photo"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-david-ferrucci-portrait",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "戴维·费鲁奇 人物照片",
+      "en": "David Ferrucci portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

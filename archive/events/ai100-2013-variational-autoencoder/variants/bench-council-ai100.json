@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2013-variational-autoencoder",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "变分自编码器",
+    "en": "Variational Autoencoder"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>",
+    "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "Auto-Encoding Variational Bayes",
+        "zh": "自动编码变分贝叶斯"
+      },
+      "description": {
+        "en": "arXiv source card for Variational Autoencoder.",
+        "zh": "arXiv 的变分自编码器资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1312.6114",
+      "source": "https://arxiv.org/abs/1312.6114",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2013-variational-autoencoder-portrait",
+    "asset-2013-vae-latent-sampling"
+  ],
+  "sourceIds": [
+    "source-auto-encoding-variational-bayes",
+    "source-iclr-paper-record",
+    "source-variational-autoencoder-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2013-variational-autoencoder-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。",
+        "en": "The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent."
+      },
+      "sourceIds": [
+        "source-auto-encoding-variational-bayes"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-auto-encoding-variational-bayes"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 VAE 视为连接深度学习与概率推断的核心桥梁。它的长期影响在于潜变量训练模式被用于表示学习、生成建模和后来的扩散自编码器。",
+        "en": "Experts generally treat VAEs as a central bridge between deep learning and probabilistic inference. Its long-term legacy is the latent-variable training pattern used in representation learning, generation, and later diffusion autoencoders."
+      },
+      "sourceIds": [
+        "source-auto-encoding-variational-bayes"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

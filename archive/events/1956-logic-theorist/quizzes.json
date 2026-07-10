@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1956-logic-theorist-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "是什么让 Logic Theorist 不只是暴力穷举式定理证明器？",
+      "en": "What made Logic Theorist more than a brute-force theorem prover?"
+    },
+    "options": [
+      {
+        "zh": "它用启发式规则引导符号证明搜索",
+        "en": "It used heuristics to guide symbolic proof search"
+      },
+      {
+        "zh": "它只会改变屏幕颜色",
+        "en": "It only changed screen colors"
+      },
+      {
+        "zh": "它完全避开符号逻辑",
+        "en": "It avoided symbolic logic entirely"
+      },
+      {
+        "zh": "它通过下围棋来证明定理",
+        "en": "It solved proofs by playing Go"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Logic Theorist 在符号变换空间中搜索，并用启发式规则选择更有希望的证明路径。",
+      "en": "Logic Theorist searched through symbolic transformations but used heuristics to choose promising proof paths."
+    },
+    "sourceIds": [
+      "source-the-logic-theory-machine"
+    ],
+    "assetIds": [
+      "asset-1956-logic-theorist-herbert-simon"
+    ]
+  },
+  {
+    "id": "1956-logic-theorist-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "是什么让 Logic Theorist 不只是暴力穷举式定理证明器？",
+      "en": "What made Logic Theorist more than a brute-force theorem prover?"
+    },
+    "options": [
+      {
+        "zh": "它用启发式规则引导符号证明搜索",
+        "en": "It used heuristics to guide symbolic proof search"
+      },
+      {
+        "zh": "它只会改变屏幕颜色",
+        "en": "It only changed screen colors"
+      },
+      {
+        "zh": "它完全避开符号逻辑",
+        "en": "It avoided symbolic logic entirely"
+      },
+      {
+        "zh": "它通过下围棋来证明定理",
+        "en": "It solved proofs by playing Go"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Logic Theorist 在符号变换空间中搜索，并用启发式规则选择更有希望的证明路径。",
+      "en": "Logic Theorist searched through symbolic transformations but used heuristics to choose promising proof paths."
+    },
+    "sourceIds": [
+      "source-the-logic-theory-machine"
+    ],
+    "assetIds": [
+      "asset-1956-logic-theorist-herbert-simon"
+    ]
+  }
+]

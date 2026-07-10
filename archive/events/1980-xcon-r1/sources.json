@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-r1-an-expert-in-the-computer-systems-domain",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "R1：计算机系统领域的专家",
+      "en": "R1: An Expert in the Computer Systems Domain"
+    },
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-r1-revisited-four-years-in-the-trenches",
+    "type": "reference-only",
+    "label": {
+      "zh": "回顾",
+      "en": "Retrospective"
+    },
+    "title": {
+      "zh": "重访 R1：一线四年",
+      "en": "R1 Revisited: Four Years in the Trenches"
+    },
+    "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-xcon-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "概览",
+      "en": "Overview"
+    },
+    "title": {
+      "zh": "XCON 概览",
+      "en": "XCON overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Xcon",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-dec-vax-11-780-photo",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "DEC VAX-11/780 照片",
+      "en": "DEC VAX-11/780 photo"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

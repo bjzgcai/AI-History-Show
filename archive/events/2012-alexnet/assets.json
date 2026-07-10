@@ -1,0 +1,96 @@
+[
+  {
+    "id": "asset-alexnet-portrait",
+    "type": "image",
+    "path": "resources/images/figures/alex-krizhevsky.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "亚历克斯·克里热夫斯基肖像",
+      "en": "Alex Krizhevsky portrait"
+    },
+    "subcaption": {
+      "zh": "AlexNet 主要作者",
+      "en": "AlexNet lead author"
+    },
+    "sourceId": "source-alexnet-neurips-paper",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "历史人物资料图，保留来源说明。",
+        "en": "Historical figure reference image; keep attribution."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-alexnet-deep-portrait",
+    "type": "image",
+    "path": "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "AlexNet 相关人物资料图",
+      "en": "AlexNet related figure image"
+    },
+    "sourceId": "source-alexnet-neurips-paper",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "历史资料图，需保留来源说明。",
+        "en": "Historical reference image; keep attribution."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-alexnet-architecture",
+    "type": "image",
+    "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "AlexNet 架构示意",
+      "en": "AlexNet architecture explainer"
+    },
+    "sourceId": "source-alexnet-neurips-paper",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "用于展陈解释的架构资料图。",
+        "en": "Architecture reference image for exhibition explanation."
+      }
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-alexnet-architecture-detail",
+    "type": "image",
+    "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "AlexNet 架构细节图",
+      "en": "AlexNet architecture detail"
+    },
+    "sourceId": "source-alexnet-neurips-paper",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "用于展陈解释的架构资料图。",
+        "en": "Architecture reference image for exhibition explanation."
+      }
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

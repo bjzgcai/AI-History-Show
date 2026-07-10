@@ -1,0 +1,58 @@
+{
+  "id": "1980-xcon-r1",
+  "year": "1978-1980",
+  "date": "1978-1980",
+  "title": {
+    "zh": "XCON / R1 专家系统",
+    "en": "XCON-R1"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>",
+    "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国宾夕法尼亚州",
+      "en": "Pennsylvania, United States"
+    },
+    "place": {
+      "zh": "卡内基梅隆大学",
+      "en": "Carnegie Mellon University"
+    },
+    "coordinates": [
+      40.4433,
+      -79.9436
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "john-mcdermott",
+      "role": {
+        "zh": "R1/XCON 开发者",
+        "en": "Developer of R1/XCON"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "2008-tsne",
+  "year": "2008",
+  "date": "2008",
+  "title": {
+    "zh": "t-SNE",
+    "en": "t-SNE"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>",
+    "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "荷兰与加拿大",
+      "en": "Netherlands and Canada"
+    },
+    "place": {
+      "zh": "蒂尔堡大学 / 多伦多大学",
+      "en": "Tilburg University / University of Toronto"
+    },
+    "coordinates": [
+      51.5633,
+      5.0431
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "laurens-van-der-maaten",
+      "role": {
+        "zh": "t-SNE 共同作者",
+        "en": "Co-author of t-SNE"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

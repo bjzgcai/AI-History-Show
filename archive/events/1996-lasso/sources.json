@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-regression-shrinkage-and-selection-via-the-lasso",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "通过 Lasso 进行回归收缩与选择",
+      "en": "Regression Shrinkage and Selection via the Lasso"
+    },
+    "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-lasso",
+    "type": "reference-only",
+    "label": {
+      "zh": "模型文档",
+      "en": "Model docs"
+    },
+    "title": {
+      "zh": "scikit-learn Lasso",
+      "en": "scikit-learn Lasso"
+    },
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-glmnet-project",
+    "type": "project-page",
+    "label": {
+      "zh": "工具包",
+      "en": "Toolkit"
+    },
+    "title": {
+      "zh": "glmnet project",
+      "en": "glmnet project"
+    },
+    "url": "https://glmnet.stanford.edu/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

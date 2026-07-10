@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2021-dalle",
+  "year": 2021,
+  "date": "2021",
+  "title": {
+    "zh": "DALL-E",
+    "en": "DALL-E"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>",
+    "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国旧金山",
+      "en": "San Francisco, United States"
+    },
+    "place": {
+      "zh": "OpenAI",
+      "en": "OpenAI"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "aditya-ramesh",
+      "role": {
+        "zh": "DALL-E 主要作者与创建者",
+        "en": "Lead author and creator of DALL-E"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

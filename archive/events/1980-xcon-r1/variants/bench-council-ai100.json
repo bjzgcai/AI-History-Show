@@ -1,0 +1,113 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1980-xcon-r1",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "XCON / R1 专家系统",
+    "en": "XCON-R1"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>",
+    "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "xcon",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "AAAI Paper",
+        "zh": "AAAI 论文"
+      },
+      "title": {
+        "en": "R1: An Expert in the Computer Systems Domain",
+        "zh": "R1：计算机系统领域的专家"
+      },
+      "description": {
+        "en": "AAAI paper describing the rule-based configuration expert system behind XCON/R1.",
+        "zh": "介绍 XCON/R1 背后基于规则的配置专家系统的 AAAI 论文。"
+      },
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+      "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+      "action": {
+        "en": "Open AAAI record",
+        "zh": "打开 AAAI 记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
+    "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
+    "asset-1980-xcon-r1-rule-configurator",
+    "asset-1980-xcon-r1-order-flow"
+  ],
+  "sourceIds": [
+    "source-r1-an-expert-in-the-computer-systems-domain",
+    "source-r1-revisited-four-years-in-the-trenches",
+    "source-xcon-overview",
+    "source-dec-vax-11-780-photo"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1980-xcon-r1-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。 这段背景帮助观众把XCON / R1 专家系统放回当时的技术问题和研究重点中理解。",
+        "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders. This context helps viewers place XCON-R1 in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-r1-an-expert-in-the-computer-systems-domain"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。 关键机制是OPS5 产生式规则配置，它把资料线索与可见的演示行为连接起来。",
+        "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration. The key mechanism is OPS5 production-rule configuration, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-r1-an-expert-in-the-computer-systems-domain"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。它的长期影响在于成为专家系统维护、规则管理和应用 AI 部署的标准案例。",
+        "en": "Experts generally treat XCON/R1 as a landmark industrial expert system and a proof that knowledge engineering could deliver business value. Its long-term legacy is the case-study role it plays in expert-system maintenance, rule management, and applied AI deployment."
+      },
+      "sourceIds": [
+        "source-r1-an-expert-in-the-computer-systems-domain"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-1960-davis-putnam-dpll-hilary-putnam",
+    "type": "image",
+    "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "希拉里·普特南 肖像",
+      "en": "Hilary Putnam portrait"
+    },
+    "subcaption": {
+      "zh": "维基共享资源 收录的 希拉里·普特南 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。",
+      "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure."
+    },
+    "sourceId": "source-a-computing-procedure-for-quantification-theory",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+        "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1960-davis-putnam-dpll-sat-search",
+    "type": "svg",
+    "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Davis-Putnam 与 DPLL SAT 搜索",
+      "en": "Davis-Putnam and DPLL SAT search"
+    },
+    "subcaption": {
+      "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。",
+      "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance."
+    },
+    "sourceId": "source-a-computing-procedure-for-quantification-theory",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local explainer; source article images not reused.",
+        "en": "Original local explainer; source article images not reused."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

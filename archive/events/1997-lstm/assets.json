@@ -1,0 +1,132 @@
+[
+  {
+    "id": "asset-sepp-hochreiter",
+    "type": "image",
+    "path": "resources/images/figures/sepp-hochreiter.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "塞普·霍赫赖特肖像",
+      "en": "Sepp Hochreiter portrait"
+    },
+    "subcaption": {
+      "zh": "LSTM 共同作者",
+      "en": "LSTM co-author"
+    },
+    "sourceId": "source-long-short-term-memory",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-lstm-gated-memory",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "LSTM 门控记忆单元",
+      "en": "LSTM gated memory cell"
+    },
+    "subcaption": {
+      "zh": "关于门控序列记忆的本地原创解释图。",
+      "en": "Original local explainer of gated sequence memory."
+    },
+    "sourceId": "source-long-short-term-memory",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-lstm-people-01",
+    "type": "image",
+    "path": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-long-short-term-memory",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-lstm-architecture-01",
+    "type": "image",
+    "path": "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "LSTM与门控机制 架构图",
+      "en": "LSTM and Gating Mechanisms"
+    },
+    "sourceId": "source-long-short-term-memory",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-lstm-architecture-02",
+    "type": "image",
+    "path": "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "LSTM与门控机制 架构图",
+      "en": "LSTM and Gating Mechanisms"
+    },
+    "sourceId": "source-long-short-term-memory",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

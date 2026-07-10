@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-segment-anything",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Segment Anything》",
+      "en": "Segment Anything"
+    },
+    "url": "https://arxiv.org/abs/2304.02643",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iccv-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICCV 论文页面",
+      "en": "ICCV paper page"
+    },
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-segment-anything-project-page",
+    "type": "project-page",
+    "label": {
+      "zh": "项目",
+      "en": "Project"
+    },
+    "title": {
+      "zh": "Segment Anything 项目页面",
+      "en": "Segment Anything project page"
+    },
+    "url": "https://segment-anything.com/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-segment-anything-github-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "Segment Anything GitHub 代码仓库",
+      "en": "Segment Anything GitHub repository"
+    },
+    "url": "https://github.com/facebookresearch/segment-anything",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

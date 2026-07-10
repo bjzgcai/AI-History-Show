@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Kernel PCA 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Kernel PCA is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+      "source-max-planck-publication-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>",
+      "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>"
+    },
+    "sourceIds": [
+      "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+      "source-max-planck-publication-page"
+    ],
+    "status": "needs-source"
+  }
+]

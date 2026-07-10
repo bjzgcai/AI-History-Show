@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1999-nmf",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "非负矩阵分解",
+    "en": "NMF"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>",
+    "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "nmf",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Nature",
+        "zh": "Nature"
+      },
+      "title": {
+        "en": "Learning the parts of objects by non-negative matrix factorization",
+        "zh": "通过非负矩阵分解学习物体部件"
+      },
+      "description": {
+        "en": "Primary Nature paper record for NMF.",
+        "zh": "NMF 的 Nature 主论文记录。"
+      },
+      "url": "https://doi.org/10.1038/44565",
+      "source": "https://doi.org/10.1038/44565",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1999-nmf-sebastian",
+    "asset-1999-nmf-parts-factorization"
+  ],
+  "sourceIds": [
+    "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+    "source-nature-article-page",
+    "source-pubmed-record-for-the-nature-paper",
+    "source-scikit-learn-nmf-documentation"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1999-nmf-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。",
+        "en": "Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations."
+      },
+      "sourceIds": [
+        "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 NMF 视为可解释潜在因子的基础方法。它的长期影响在于部件化视角影响了主题建模、源分离、推荐系统和可解释表示学习。",
+        "en": "Experts generally treat NMF as a foundational method for interpretable latent factors. Its long-term legacy is the parts-based view that influenced topic modeling, source separation, recommender systems, and explainable representation learning."
+      },
+      "sourceIds": [
+        "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

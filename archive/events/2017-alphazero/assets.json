@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-2017-alphazero-self-play-loop",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "AlphaZero 自我博弈循环",
+      "en": "AlphaZero self-play loop"
+    },
+    "subcaption": {
+      "zh": "策略-价值自我博弈的原创解释图。",
+      "en": "Original explainer for policy-value self-play."
+    },
+    "sourceId": "source-science-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

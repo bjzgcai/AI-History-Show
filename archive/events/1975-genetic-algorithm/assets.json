@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1975-genetic-algorithm-john-henry-holland",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "John Henry 霍兰德 肖像",
+      "en": "John Henry Holland portrait"
+    },
+    "subcaption": {
+      "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。",
+      "en": "Physics Today history article photo, credited there to Santa Fe Institute."
+    },
+    "sourceId": "source-adaptation-in-natural-and-artificial-systems",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Physics Today article photo; photo credit: Santa Fe Institute.",
+        "en": "Physics Today article photo; photo credit: Santa Fe Institute."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1975-genetic-algorithm-population-cycle",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "种群适应循环",
+      "en": "Population adaptation loop"
+    },
+    "subcaption": {
+      "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Genetic Algorithms, based on the related source material."
+    },
+    "sourceId": "source-adaptation-in-natural-and-artificial-systems",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1975-genetic-algorithm-chromosome-crossover",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "染色体交叉",
+      "en": "Chromosome crossover"
+    },
+    "subcaption": {
+      "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Genetic Algorithms, based on the related source material."
+    },
+    "sourceId": "source-adaptation-in-natural-and-artificial-systems",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

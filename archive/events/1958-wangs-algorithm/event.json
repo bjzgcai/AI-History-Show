@@ -1,0 +1,57 @@
+{
+  "id": "1958-wangs-algorithm",
+  "year": "1958-1961",
+  "date": "1958-1961",
+  "title": {
+    "zh": "王氏算法",
+    "en": "Wang's Algorithm"
+  },
+  "summary": {
+    "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 《贝尔系统技术期刊》 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>",
+    "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>"
+  },
+  "description": {
+    "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 《贝尔系统技术期刊》 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>",
+    "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国，新泽西州默里山",
+      "en": "Murray Hill, United States"
+    },
+    "place": {
+      "zh": "贝尔电话实验室",
+      "en": "Bell Telephone Laboratories"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4018
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "automated-theorem-proving"
+  ],
+  "figures": [
+    {
+      "figureId": "hao-wang",
+      "role": {
+        "zh": "提出基于模式识别的定理证明过程",
+        "en": "Developed pattern-recognition theorem-proving procedures"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

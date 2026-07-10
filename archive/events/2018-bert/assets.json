@@ -1,0 +1,132 @@
+[
+  {
+    "id": "asset-jacob-devlin",
+    "type": "image",
+    "path": "resources/images/figures/jacob-devlin.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "雅各布·德夫林肖像",
+      "en": "Jacob Devlin portrait"
+    },
+    "subcaption": {
+      "zh": "BERT 主要作者",
+      "en": "BERT lead author"
+    },
+    "sourceId": "source-bert",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-bert-masked-lm",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "BERT 掩码语言建模",
+      "en": "BERT masked language modeling"
+    },
+    "subcaption": {
+      "zh": "关于双向预训练的本地原创解释图。",
+      "en": "Original local explainer of bidirectional pre-training."
+    },
+    "sourceId": "source-bert",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-bert-people-03",
+    "type": "image",
+    "path": "resources/images/2018-bert/people/2018-bert_people_03.jpg",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-bert",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-bert-architecture-01",
+    "type": "image",
+    "path": "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "BERT 架构图",
+      "en": "BERT diagram"
+    },
+    "sourceId": "source-bert",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-bert-architecture-02",
+    "type": "image",
+    "path": "resources/images/2018-bert/architecture/2018-bert_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "BERT 架构图",
+      "en": "BERT diagram"
+    },
+    "sourceId": "source-bert",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

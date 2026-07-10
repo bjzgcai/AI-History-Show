@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1997-kernel-pca",
+  "year": 1997,
+  "date": "1997",
+  "title": {
+    "zh": "Kernel PCA",
+    "en": "Kernel PCA"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>",
+    "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>"
+  },
+  "location": {
+    "regionId": "germany",
+    "country": {
+      "zh": "德国图宾根",
+      "en": "Tuebingen, Germany"
+    },
+    "place": {
+      "zh": "马克斯·普朗克生物控制论研究所",
+      "en": "Max Planck Institute for Biological Cybernetics"
+    },
+    "coordinates": [
+      48.5216,
+      9.0576
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "bernhard-scholkopf",
+      "role": {
+        "zh": "Kernel PCA 共同作者",
+        "en": "Co-author of Kernel PCA"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "klaus-robert-muller",
+      "role": {
+        "zh": "Kernel PCA 共同作者",
+        "en": "Co-author of Kernel PCA"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

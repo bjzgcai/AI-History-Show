@@ -1,0 +1,103 @@
+[
+  {
+    "id": "asset-1984-cyc-douglas-lenat",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "道格拉斯·莱纳特 人物照片",
+      "en": "Douglas Lenat portrait"
+    },
+    "subcaption": {
+      "zh": "Cyc 项目创始人。",
+      "en": "Founder of the Cyc project."
+    },
+    "sourceId": "source-building-large-knowledge-based-systems",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1984-cyc-microtheories",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Cyc 微理论",
+      "en": "Cyc microtheories"
+    },
+    "subcaption": {
+      "zh": "依据 构建大型知识系统 制作的本地解释图。",
+      "en": "Original local explainer based on Building Large Knowledge-Based Systems."
+    },
+    "sourceId": "source-building-large-knowledge-based-systems",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1984-cyc-common-sense-rule",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "常识规则框架",
+      "en": "Common-sense rule frame"
+    },
+    "subcaption": {
+      "zh": "依据 CycL 的演化 制作的本地解释图。",
+      "en": "Original local explainer based on The Evolution of CycL."
+    },
+    "sourceId": "source-building-large-knowledge-based-systems",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1984-cyc-cyc-projects-logos",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "Cyc 常识知识库 外部参考图",
+      "en": "Cyc external reference image"
+    },
+    "sourceId": "source-building-large-knowledge-based-systems",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

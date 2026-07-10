@@ -1,0 +1,68 @@
+{
+  "id": "2016-densenet",
+  "year": 2016,
+  "date": "2016",
+  "title": {
+    "zh": "DenseNet",
+    "en": "DenseNet"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
+    "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国伊萨卡",
+      "en": "Ithaca, United States"
+    },
+    "place": {
+      "zh": "康奈尔大学",
+      "en": "Cornell University"
+    },
+    "coordinates": [
+      42.4534,
+      -76.4735
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "gao-huang",
+      "role": {
+        "zh": "DenseNet 主要作者",
+        "en": "DenseNet lead author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "zhuang-liu",
+      "role": {
+        "zh": "DenseNet 共同作者",
+        "en": "DenseNet co-author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "ai100-2017-densenet"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

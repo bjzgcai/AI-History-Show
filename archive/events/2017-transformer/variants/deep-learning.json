@@ -1,0 +1,39 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2017-transformer",
+  "displayTitle": {
+    "en": "Transformer",
+    "zh": "Transformer"
+  },
+  "displaySummary": {
+    "en": "Deep Learning and Unified Paradigms",
+    "zh": "深度学习与范式归一"
+  },
+  "emphasis": [
+    "attention",
+    "sequence-modeling",
+    "foundation-models"
+  ],
+  "visual": "transformer",
+  "assetIds": [
+    "asset-transformer-portrait",
+    "asset-transformer-attention",
+    "asset-transformer-architecture",
+    "asset-transformer-architecture-detail",
+    "asset-transformer-paper-page"
+  ],
+  "sourceIds": [
+    "source-transformer-arxiv",
+    "source-transformer-neurips",
+    "source-google-research-publication",
+    "source-google-transformer-blog"
+  ],
+  "claimIds": [
+    "claim-attention-only-architecture",
+    "claim-foundation-model-legacy"
+  ],
+  "displayDescription": {
+    "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>",
+    "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>"
+  }
+}

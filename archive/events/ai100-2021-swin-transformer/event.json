@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2021-swin-transformer",
+  "year": 2021,
+  "date": "2021",
+  "title": {
+    "zh": "Swin Transformer",
+    "en": "Swin Transformer"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>",
+    "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>"
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "zh": "中国北京",
+      "en": "Beijing, China"
+    },
+    "place": {
+      "zh": "微软亚洲研究院",
+      "en": "Microsoft Research Asia"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "ze-liu",
+      "role": {
+        "zh": "Swin Transformer 主要作者",
+        "en": "Swin Transformer lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "asset-1958-rosenblatt-perceptron-frank-rosenblatt",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "弗兰克·罗森布拉特 与感知机硬件",
+      "en": "Frank Rosenblatt with perceptron hardware"
+    },
+    "subcaption": {
+      "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。",
+      "en": "Historical Cornell image of Rosenblatt and the perceptron lineage."
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL.",
+        "en": "Cornell historical image; reuse rights not stated on extracted image URL."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1958-rosenblatt-perceptron-threshold",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "阈值学习边界",
+      "en": "Threshold learning line"
+    },
+    "subcaption": {
+      "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1958-rosenblatt-perceptron-sensor-grid",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "传感器网格到神经元",
+      "en": "Sensor grid to neuron"
+    },
+    "subcaption": {
+      "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-perceptron-people-01",
+    "type": "image",
+    "path": "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-perceptron-papers-01",
+    "type": "image",
+    "path": "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《感知机：大脑中信息存储与组织的概率模型》",
+      "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-perceptron-historical-01",
+    "type": "image",
+    "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "感知机与连接主义",
+      "en": "The Perceptron and Connectionism"
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-perceptron-historical-01-2",
+    "type": "image",
+    "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "感知机与连接主义",
+      "en": "The Perceptron and Connectionism"
+    },
+    "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

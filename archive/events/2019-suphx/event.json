@@ -1,0 +1,74 @@
+{
+  "id": "2019-suphx",
+  "year": "2019-2020",
+  "date": "2019-2020",
+  "title": {
+    "zh": "Suphx：深度强化学习麻将 AI",
+    "en": "Suphx: Mahjong with Deep Reinforcement Learning"
+  },
+  "summary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "description": {
+    "zh": "<p>Suphx 将深度强化学习带入日本麻将，这是一种四人不完全信息游戏，包含隐藏牌、随机摸牌、复杂计分和长期风险权衡。它使用监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配，在天凤平台达到超过绝大多数注册段位玩家的水平。</p>",
+    "en": "<p>Suphx brought deep reinforcement learning to Japanese mahjong, a four-player imperfect-information game with hidden tiles, stochastic draws, complex scoring, and long-horizon risk tradeoffs. It used supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation to reach a level above most ranked Tenhou players.</p>"
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "zh": "中国北京",
+      "en": "Beijing, China"
+    },
+    "place": {
+      "zh": "微软亚洲研究院",
+      "en": "Microsoft Research Asia"
+    },
+    "coordinates": [
+      39.9786,
+      116.3317
+    ]
+  },
+  "topics": [
+    "gaming-ai"
+  ],
+  "achievementTypeIds": [
+    "gaming-ai"
+  ],
+  "figures": [
+    {
+      "figureId": "junjie-li",
+      "role": {
+        "zh": "Suphx 论文第一作者",
+        "en": "Suphx paper first author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "tao-qin",
+      "role": {
+        "zh": "微软亚洲研究院研究员",
+        "en": "Microsoft Research Asia researcher"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "tie-yan-liu",
+      "role": {
+        "zh": "微软亚洲研究院研究负责人",
+        "en": "Microsoft Research Asia research leader"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-2014-vgg-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "VGG 最著名的架构习惯是什么？",
+      "en": "What architectural habit is VGG best remembered for?"
+    },
+    "options": [
+      {
+        "zh": "堆叠大量小型 3x3 卷积层",
+        "en": "Stacking many small 3x3 convolutional layers"
+      },
+      {
+        "zh": "完全不使用卷积",
+        "en": "Using no convolution at all"
+      },
+      {
+        "zh": "只把图像换成文本 token",
+        "en": "Replacing images with text tokens only"
+      },
+      {
+        "zh": "训练单个决策树桩",
+        "en": "Training a single decision stump"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "VGG 把小卷积核的规则堆叠做成了强大且可复用的视觉架构。",
+      "en": "VGG made a very regular stack of small convolutions a strong and reusable computer-vision architecture."
+    },
+    "sourceIds": [
+      "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+    ],
+    "assetIds": [
+      "asset-2014-vgg-andrew-zisserman"
+    ]
+  },
+  {
+    "id": "2014-vgg-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "VGG 最著名的架构习惯是什么？",
+      "en": "What architectural habit is VGG best remembered for?"
+    },
+    "options": [
+      {
+        "zh": "堆叠大量小型 3x3 卷积层",
+        "en": "Stacking many small 3x3 convolutional layers"
+      },
+      {
+        "zh": "完全不使用卷积",
+        "en": "Using no convolution at all"
+      },
+      {
+        "zh": "只把图像换成文本 token",
+        "en": "Replacing images with text tokens only"
+      },
+      {
+        "zh": "训练单个决策树桩",
+        "en": "Training a single decision stump"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "VGG 把小卷积核的规则堆叠做成了强大且可复用的视觉架构。",
+      "en": "VGG made a very regular stack of small convolutions a strong and reusable computer-vision architecture."
+    },
+    "sourceIds": [
+      "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+    ],
+    "assetIds": [
+      "asset-2014-vgg-andrew-zisserman"
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1989-cnn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "卷积神经网络与 LeNet",
+    "en": "Convolutional Networks and LeNet"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
+    "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "lenet",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "MIT Press Direct",
+        "zh": "MIT Press Direct"
+      },
+      "title": {
+        "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "zh": "反向传播应用于手写邮编识别"
+      },
+      "description": {
+        "en": "Canonical LeNet paper record.",
+        "zh": "LeNet 经典论文记录。"
+      },
+      "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "source": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open DOI",
+        "zh": "打开 DOI"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1989-cnn-yann-lecun-external",
+    "asset-1989-lenet-zip-code-cnn",
+    "asset-1989-cnn-people-01",
+    "asset-1989-cnn-people-02",
+    "asset-1989-cnn-architecture-01"
+  ],
+  "sourceIds": [
+    "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+    "source-lenet-5-demos-and-documentation",
+    "source-gradient-based-learning-applied-to-document-recognition",
+    "source-yann-lecun-s-home-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1989-lenet-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
+        "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception."
+      },
+      "sourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 LeNet 视为早期经典证据，证明卷积、权重共享和反向传播可以解决真实感知任务。它的长期影响在于端到端 CNN 模式后来扩展成现代计算机视觉的基础。",
+        "en": "Experts generally treat LeNet as a canonical early proof that convolution, weight sharing, and backpropagation could solve real perception tasks. Its long-term legacy is the end-to-end CNN pattern that later scaled into modern computer vision."
+      },
+      "sourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1967-knn",
+  "year": 1967,
+  "date": "1967",
+  "title": {
+    "zh": "KNN 最近邻",
+    "en": "KNN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>",
+    "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国斯坦福",
+      "en": "Stanford, United States"
+    },
+    "place": {
+      "zh": "斯坦福大学",
+      "en": "Stanford University"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "thomas-cover",
+      "role": {
+        "zh": "最近邻分类共同作者",
+        "en": "Co-author of nearest-neighbor classification"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "peter-hart",
+      "role": {
+        "zh": "最近邻分类共同作者",
+        "en": "Co-author of nearest-neighbor classification"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

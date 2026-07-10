@@ -1,0 +1,150 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "1994-chinook",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Chinook 跳棋程序",
+    "en": "Chinook"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
+    "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "chinook",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Science",
+        "zh": "《科学》"
+      },
+      "title": {
+        "en": "Checkers Is Solved",
+        "zh": "跳棋已被求解"
+      },
+      "description": {
+        "en": "Science record for the weak solution of checkers and Chinook's endgame database work.",
+        "zh": "《科学》 记录：跳棋弱求解与 Chinook 残局数据库工作。"
+      },
+      "url": "https://www.science.org/doi/10.1126/science.1144079",
+      "source": "https://www.science.org/doi/10.1126/science.1144079",
+      "action": {
+        "en": "Open Science record",
+        "zh": "打开 《科学》 记录"
+      }
+    },
+    {
+      "type": "gameEvolutionVideo",
+      "site": {
+        "en": "Game evolution clip",
+        "zh": "棋局演化短片"
+      },
+      "title": {
+        "en": "Chinook game evolution",
+        "zh": "Chinook 棋局演化"
+      },
+      "description": {
+        "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
+        "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
+      },
+      "url": "resources/videos/game-evolution/1994-chinook.mp4",
+      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+      "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+      "sourceSgf": "examples/sgf/sample-go-game.sgf",
+      "generator": "scripts/sgf_to_video.py",
+      "duration": {
+        "en": "about 1 min",
+        "zh": "约 1 分钟"
+      },
+      "fps": "30",
+      "license": {
+        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+      },
+      "usage": {
+        "en": "Playable game-state evolution module",
+        "zh": "可播放的棋局状态演化模块"
+      },
+      "action": {
+        "en": "Play evolution clip",
+        "zh": "播放演化短片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1994-chinook-jonathan-schaeffer-external",
+    "asset-1994-chinook-homepage",
+    "asset-1994-chinook-endgame-database",
+    "asset-1994-chinook-perfect-play"
+  ],
+  "sourceIds": [
+    "source-chinook-project-home",
+    "source-checkers-is-solved",
+    "source-chinook-publications",
+    "source-jonathan-schaeffer-portrait"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1994-chinook-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。",
+        "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction."
+      },
+      "sourceIds": [
+        "source-chinook-project-home"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。",
+        "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes."
+      },
+      "sourceIds": [
+        "source-chinook-project-home"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Chinook 视为游戏求解研究和高性能搜索的里程碑。它的长期影响在于展示专家评估、alpha-beta 搜索、开局知识和残局数据库如何结合并逼近完美对弈。",
+        "en": "Experts generally treat Chinook as a landmark in game-solving research and high-performance search. Its long-term legacy is showing how expert evaluation, alpha-beta search, opening knowledge, and endgame databases can combine to approach perfect play."
+      },
+      "sourceIds": [
+        "source-chinook-project-home"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

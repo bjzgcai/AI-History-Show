@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2021-dalle",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "DALL-E",
+    "en": "DALL-E"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>",
+    "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "dalle",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "title": {
+        "en": "DALL-E: Creating images from text",
+        "zh": "DALL-E：从文本创建图像"
+      },
+      "description": {
+        "en": "OpenAI project page introducing text-to-image generation.",
+        "zh": "介绍文本到图像生成的 OpenAI 项目页面。"
+      },
+      "url": "https://openai.com/index/dall-e/",
+      "source": "https://openai.com/index/dall-e/",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open project page",
+        "zh": "打开项目页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c",
+    "asset-2021-dalle-text-to-image"
+  ],
+  "sourceIds": [
+    "source-zero-shot-text-to-image-generation",
+    "source-icml-dall-e-paper-page",
+    "source-openai-dall-e-blog-post",
+    "source-dall-e-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2021-dalle-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。",
+        "en": "OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis."
+      },
+      "sourceIds": [
+        "source-zero-shot-text-to-image-generation"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-zero-shot-text-to-image-generation"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 DALL-E 视为公众认识文本条件图像合成的转折点。它的长期影响在于提示驱动的创作界面后来被扩散模型和多模态基础系统进一步完善。",
+        "en": "Experts generally treat DALL-E as a turning point in public awareness of text-conditioned image synthesis. Its long-term legacy is the prompt-driven creative interface later refined by diffusion models and multimodal foundation systems."
+      },
+      "sourceIds": [
+        "source-zero-shot-text-to-image-generation"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "XCON / R1 专家系统 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "XCON-R1 is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-r1-an-expert-in-the-computer-systems-domain",
+      "source-r1-revisited-four-years-in-the-trenches"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>",
+      "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>"
+    },
+    "sourceIds": [
+      "source-r1-an-expert-in-the-computer-systems-domain",
+      "source-r1-revisited-four-years-in-the-trenches"
+    ],
+    "status": "needs-source"
+  }
+]

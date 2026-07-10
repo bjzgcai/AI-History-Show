@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1965-resolution-method",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "归结方法",
+    "en": "Resolution Method"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>",
+    "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "resolution",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Journal of the ACM",
+        "zh": "《ACM 杂志》"
+      },
+      "title": {
+        "en": "Resolution principle paper",
+        "zh": "归结原理论文"
+      },
+      "description": {
+        "en": "Canonical source for resolution; local diagrams redraw clause operations and refutation flow.",
+        "zh": "归结方法的经典来源；本地图重画子句操作和反驳流程。"
+      },
+      "url": "https://doi.org/10.1145/321250.321253",
+      "source": "https://doi.org/10.1145/321250.321253",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open DOI",
+        "zh": "打开 DOI"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1965-resolution-method-john-alan-robinson",
+    "asset-1965-resolution-method-clause-refutation",
+    "asset-1965-resolution-method-unification-map"
+  ],
+  "sourceIds": [
+    "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+    "source-journal-of-symbolic-logic-review-record",
+    "source-stanford-encyclopedia-automated-reasoning"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1965-resolution-method-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "早期定理证明器往往依赖许多专门推理规则。归结把证明搜索压缩为少量子句操作，让机械化逻辑不再那么临时拼装。",
+        "en": "Earlier theorem provers often needed many specialized inference rules. Resolution reduced proof search to a small number of clause operations, making mechanized logic less ad hoc."
+      },
+      "sourceIds": [
+        "source-a-machine-oriented-logic-based-on-the-resolution-principle"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "关键动作是反驳：先假设结论为假，再不断归结互补文字，直到推出空子句。 关键机制是带合一的子句反驳，它把资料线索与可见的演示行为连接起来。",
+        "en": "The key move is refutation: assume the claim is false, then repeatedly resolve complementary literals until the empty clause appears. The key mechanism is Clause refutation with unification, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-a-machine-oriented-logic-based-on-the-resolution-principle"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把归结法视为符号 AI 和自动推理的基础证明方法。它的长期影响体现在定理证明、逻辑程序设计、SAT/SMT 谱系和基于约束的推理系统中。",
+        "en": "Experts generally treat resolution as a foundational proof method for symbolic AI and automated reasoning. Its long-term legacy is visible in theorem proving, logic programming, SAT/SMT lineages, and constraint-based reasoning systems."
+      },
+      "sourceIds": [
+        "source-a-machine-oriented-logic-based-on-the-resolution-principle"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

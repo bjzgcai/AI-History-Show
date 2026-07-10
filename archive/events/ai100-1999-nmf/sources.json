@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《通过非负矩阵分解学习物体部件》",
+      "en": "Learning the parts of objects by non-negative matrix factorization"
+    },
+    "url": "https://doi.org/10.1038/44565",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-nature-article-page",
+    "type": "reference-only",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "Nature 文章页面",
+      "en": "Nature article page"
+    },
+    "url": "https://www.nature.com/articles/44565",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-pubmed-record-for-the-nature-paper",
+    "type": "paper",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "Nature 论文 PubMed 记录",
+      "en": "PubMed record for the Nature paper"
+    },
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10548103/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-nmf-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn NMF 文档",
+      "en": "scikit-learn NMF documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

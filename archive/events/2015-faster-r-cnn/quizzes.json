@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2015-faster-r-cnn-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Faster R-CNN 主要解决了什么瓶颈？",
+      "en": "What bottleneck did Faster R-CNN address?"
+    },
+    "options": [
+      {
+        "zh": "外部候选区域生成",
+        "en": "External region proposal generation"
+      },
+      {
+        "zh": "所有图像都必须是灰度图",
+        "en": "The need for all images to be grayscale"
+      },
+      {
+        "zh": "完全没有神经网络",
+        "en": "The absence of any neural network"
+      },
+      {
+        "zh": "按字母顺序排序标签",
+        "en": "Sorting labels alphabetically"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "区域建议网络从共享卷积特征中学习候选框，移除了一个主要外部瓶颈。",
+      "en": "The Region Proposal Network learns proposals from shared convolutional features, removing a major external bottleneck."
+    },
+    "sourceIds": [
+      "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks"
+    ],
+    "assetIds": [
+      "asset-2015-faster-r-cnn-kaiming-he"
+    ]
+  }
+]

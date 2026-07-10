@@ -1,0 +1,116 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1996-lasso",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Lasso 回归",
+    "en": "Lasso"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Lasso 为统计学家和机器学习实践者提供了一种构建稀疏线性模型的清晰方法。通过惩罚系数绝对值，它既正则化预测，又完成变量选择。其思想后来出现在稀疏建模、高维统计、压缩感知、生物信息学和可解释机器学习中。</p>",
+    "en": "<p>The lasso gave statisticians and machine-learning practitioners a clean way to build sparse linear models. By penalizing the absolute size of coefficients, it both regularizes predictions and performs variable selection. Its ideas now appear in sparse modeling, high-dimensional statistics, compressed sensing, bioinformatics, and interpretable ML.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "lasso",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "JRSS / Wiley",
+      "title": {
+        "en": "Regression Shrinkage and Selection via the Lasso",
+        "zh": "通过 Lasso 进行回归收缩与选择"
+      },
+      "description": {
+        "en": "Publisher DOI page for Tibshirani’s 1996 lasso paper.",
+        "zh": "出版社 DOI 页面：蒂布希拉尼 1996 年的 Lasso 论文。"
+      },
+      "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open DOI page",
+        "zh": "打开 DOI 页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1996-lasso-robert-tibshirani",
+    "asset-1996-lasso-l1-constraint",
+    "asset-1996-lasso-coefficient-path"
+  ],
+  "sourceIds": [
+    "source-regression-shrinkage-and-selection-via-the-lasso",
+    "source-scikit-learn-lasso",
+    "source-glmnet-project"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1996-lasso-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "随着数据维度增加，分析者需要既能避免过拟合、又能识别有用变量的模型。岭回归能收缩系数，但通常不会把它们变成零。",
+        "en": "As datasets grew wider, analysts needed models that could avoid overfitting and identify useful variables. Ridge regression shrank coefficients, but it did not usually set them to zero."
+      },
+      "sourceIds": [
+        "source-regression-shrinkage-and-selection-via-the-lasso"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Lasso 在回归中加入 L1 惩罚。该惩罚的几何形状自然产生精确零系数，因此预测与选择被绑定在一起。",
+        "en": "The lasso adds an L1 penalty to regression. The geometry of that penalty naturally creates exact zeros, so prediction and selection are tied together."
+      },
+      "sourceIds": [
+        "source-regression-shrinkage-and-selection-via-the-lasso"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Lasso 视为稀疏、可解释线性建模的标准工具。它的长期影响在于由正则化驱动的特征选择，尤其影响高维统计、基因组学和透明预测建模。",
+        "en": "Experts generally treat Lasso as a standard tool for sparse, interpretable linear modeling. Its long-term legacy is regularization-driven feature selection, especially in high-dimensional statistics, genomics, and transparent predictive modeling."
+      },
+      "sourceIds": [
+        "source-regression-shrinkage-and-selection-via-the-lasso"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

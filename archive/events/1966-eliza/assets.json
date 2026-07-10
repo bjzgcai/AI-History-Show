@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1966-eliza-joseph-weizenbaum",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "约瑟夫·魏岑鲍姆 肖像",
+      "en": "Joseph Weizenbaum portrait"
+    },
+    "subcaption": {
+      "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。",
+      "en": "MIT News portrait used in Weizenbaum’s obituary."
+    },
+    "sourceId": "source-eliza-cacm-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "麻省理工学院 新闻 image; rights not stated.",
+        "en": "MIT News image; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1966-eliza-doctor-script",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "DOCTOR 脚本改写",
+      "en": "DOCTOR script rewrite"
+    },
+    "subcaption": {
+      "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for ELIZA, based on the listed source material."
+    },
+    "sourceId": "source-eliza-cacm-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1966-eliza-terminal-dialog",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "终端对话",
+      "en": "Terminal dialog"
+    },
+    "subcaption": {
+      "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for ELIZA, based on the listed source material."
+    },
+    "sourceId": "source-eliza-cacm-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

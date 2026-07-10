@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "变分自编码器 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Variational Autoencoder is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-auto-encoding-variational-bayes",
+      "source-iclr-paper-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>",
+      "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>"
+    },
+    "sourceIds": [
+      "source-auto-encoding-variational-bayes",
+      "source-iclr-paper-record"
+    ],
+    "status": "needs-source"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "SIFT 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "SIFT is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-object-recognition-from-local-scale-invariant-features",
+      "source-distinctive-image-features-from-scale-invariant-keypoints"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>",
+      "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>"
+    },
+    "sourceIds": [
+      "source-object-recognition-from-local-scale-invariant-features",
+      "source-distinctive-image-features-from-scale-invariant-keypoints"
+    ],
+    "status": "needs-source"
+  }
+]

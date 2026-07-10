@@ -1,0 +1,119 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2016-densenet",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "DenseNet",
+    "en": "DenseNet"
+  },
+  "displaySummary": {
+    "zh": "深度学习与范式归一",
+    "en": "Deep Learning and Unified Paradigms"
+  },
+  "displayDescription": {
+    "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
+    "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "densenet",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "Densely Connected Convolutional Networks",
+        "zh": "密集连接卷积网络"
+      },
+      "description": {
+        "en": "Open paper for DenseNet.",
+        "zh": "DenseNet 的开放论文。"
+      },
+      "url": "https://arxiv.org/abs/1608.06993",
+      "source": "https://arxiv.org/abs/1608.06993",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open article",
+        "zh": "打开文章"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2016-densenet-people-01",
+    "asset-2016-densenet-architecture-01",
+    "asset-2016-densenet-people-02"
+  ],
+  "sourceIds": [
+    "source-densely-connected-convolutional-networks",
+    "source-cvf-open-access-paper-page",
+    "source-original-densenet-code-repository",
+    "source-meta-ai-publication-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "DenseNet 在密集块中把每一层连接到后续所有层。这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。",
+        "en": "DenseNet connected each layer to every later layer within a dense block. This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper."
+      },
+      "sourceIds": [
+        "source-densely-connected-convolutional-networks"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "每一层都会接收同一块中所有早期层的特征图。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Every layer receives the feature maps of all earlier layers in the same block. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-densely-connected-convolutional-networks"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 DenseNet 视为对特征复用和梯度流动有重要影响的架构，即使部署中常使用更新的骨干网络。它的长期影响在于密集连接模式阐明了短路径和复用特征如何改进深度 CNN。",
+        "en": "Experts generally treat DenseNet as an influential architecture for feature reuse and gradient flow, even when newer backbones are preferred in deployment. Its long-term legacy is the dense-connectivity pattern that clarified how short paths and reused features can improve deep CNNs."
+      },
+      "sourceIds": [
+        "source-densely-connected-convolutional-networks"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

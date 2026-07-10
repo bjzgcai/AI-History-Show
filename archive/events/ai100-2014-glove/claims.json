@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "GloVe 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "GloVe is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-glove-global-vectors-for-word-representation",
+      "source-stanford-glove-project-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>",
+      "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>"
+    },
+    "sourceIds": [
+      "source-glove-global-vectors-for-word-representation",
+      "source-stanford-glove-project-page"
+    ],
+    "status": "needs-source"
+  }
+]

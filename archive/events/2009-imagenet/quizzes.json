@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2009-imagenet-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "ImageNet 为什么对视觉深度学习如此重要？",
+      "en": "Why was ImageNet so important for deep learning in vision?"
+    },
+    "options": [
+      {
+        "zh": "它提供了大型共享标注数据集和基准",
+        "en": "It provided a large shared labeled dataset and benchmark"
+      },
+      {
+        "zh": "它用 Prolog 替换了所有神经网络",
+        "en": "It replaced every neural network with Prolog"
+      },
+      {
+        "zh": "它用归结证明所有子句",
+        "en": "It proved all clauses by resolution"
+      },
+      {
+        "zh": "它只优化词向量",
+        "en": "It only optimized word vectors"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "ImageNet 给研究者提供共同的大规模训练和评测环境，使模型进展更容易比较。",
+      "en": "ImageNet gave researchers a common large-scale training and evaluation setting, making model progress easier to compare."
+    },
+    "sourceIds": [
+      "source-imagenet-a-large-scale-hierarchical-image-database"
+    ],
+    "assetIds": [
+      "asset-2009-imagenet-fei-fei-li"
+    ]
+  }
+]

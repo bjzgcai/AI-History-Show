@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2000-isomap-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Isomap 试图保持哪种距离？",
+      "en": "What distance does Isomap try to preserve?"
+    },
+    "options": [
+      {
+        "zh": "邻居图上的测地距离",
+        "en": "Geodesic distance along a neighbor graph"
+      },
+      {
+        "zh": "两个网站之间的距离",
+        "en": "The distance between two websites"
+      },
+      {
+        "zh": "聊天机器人响应延迟",
+        "en": "A chatbot response delay"
+      },
+      {
+        "zh": "只有图像亮度",
+        "en": "Only image brightness"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Isomap 通过邻居图上的最短路径估计沿流形的距离。",
+      "en": "Isomap estimates distances along the manifold through shortest paths on a neighbor graph."
+    },
+    "sourceIds": [
+      "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction"
+    ],
+    "assetIds": [
+      "asset-2000-isomap-geodesic-map"
+    ]
+  }
+]

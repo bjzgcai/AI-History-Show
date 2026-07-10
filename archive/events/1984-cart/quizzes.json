@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1984-cart-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "CART 为什么使用剪枝？",
+      "en": "What does CART use pruning for?"
+    },
+    "options": [
+      {
+        "zh": "在生成树后减少过拟合",
+        "en": "To reduce overfitting after growing a tree"
+      },
+      {
+        "zh": "让所有划分永远随机",
+        "en": "To make every split random forever"
+      },
+      {
+        "zh": "从数据中移除所有特征",
+        "en": "To remove all features from data"
+      },
+      {
+        "zh": "把树只变成图像",
+        "en": "To turn trees into images only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "CART 可以先生成较大的树，再通过剪枝平衡准确性和简洁性。",
+      "en": "CART can grow a large tree and then prune it back to balance accuracy and simplicity."
+    },
+    "sourceIds": [
+      "source-classification-and-regression-trees"
+    ],
+    "assetIds": [
+      "asset-1984-cart-leo-breiman"
+    ]
+  }
+]

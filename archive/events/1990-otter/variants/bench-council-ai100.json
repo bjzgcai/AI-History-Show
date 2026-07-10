@@ -1,0 +1,112 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1990-otter",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Otter 自动定理证明器",
+    "en": "Otter"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。</p>",
+    "en": "<p>Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "otter",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Reference",
+        "zh": "参考资料"
+      },
+      "title": {
+        "en": "OTTER 3.3 Reference Manual",
+        "zh": "OTTER 3.3 参考手册"
+      },
+      "description": {
+        "en": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
+        "zh": "主要手册：介绍 Otter 的输入语法、推理规则和证明搜索控制。"
+      },
+      "url": "https://arxiv.org/abs/cs/0310056",
+      "source": "https://arxiv.org/abs/cs/0310056",
+      "action": {
+        "en": "Open reference",
+        "zh": "打开参考资料"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1990-otter-input-clauses",
+    "asset-1990-otter-proof-trace",
+    "asset-1990-otter-given-clause",
+    "asset-1990-otter-clause-index"
+  ],
+  "sourceIds": [
+    "source-otter-3-3-reference-manual",
+    "source-a-spectrum-of-applications-of-automated-reasoning",
+    "source-checking-clinical-guidelines-using-automated-reasoning-tools"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1990-otter-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "自动推理系统拥有强大的推理规则，但常常受困于搜索爆炸。Otter 的重点是以工程化方式控制这种搜索。",
+        "en": "Automated reasoning systems had powerful inference rules but often struggled with search explosion. Otter focused on practical control of that search."
+      },
+      "sourceIds": [
+        "source-otter-3-3-reference-manual"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "证明器反复选择有希望的子句，用推理规则生成后果，并通过索引和化简让搜索保持可控。 关键机制是given-clause 归结与参数调解，它把资料线索与可见的演示行为连接起来。",
+        "en": "The prover repeatedly selects a promising clause, generates consequences through inference rules, and uses indexing and simplification to keep the search tractable. The key mechanism is Given-clause resolution and paramodulation, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-otter-3-3-reference-manual"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Otter 视为自动定理证明和形式推理中的主力系统。它的长期影响在于实用的 given-clause 搜索、等式推理和证明自动化，并影响了包括 Prover9 在内的后续工具。",
+        "en": "Experts generally treat Otter as a workhorse system in automated theorem proving and formal reasoning. Its long-term legacy is practical given-clause search, equality reasoning, and proof automation that influenced later tools including Prover9."
+      },
+      "sourceIds": [
+        "source-otter-3-3-reference-manual"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

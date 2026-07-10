@@ -1,0 +1,26 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "大语言模型百花齐放 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "A Flourishing Competition Among Large Language Models is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-legacy-event-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
+      "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+    },
+    "sourceIds": [
+      "source-legacy-event-record"
+    ],
+    "status": "needs-source"
+  }
+]

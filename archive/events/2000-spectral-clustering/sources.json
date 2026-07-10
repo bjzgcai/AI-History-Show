@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-normalized-cuts-and-image-segmentation",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "归一化切分与图像分割",
+      "en": "Normalized Cuts and Image Segmentation"
+    },
+    "url": "https://doi.org/10.1109/34.868688",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-on-spectral-clustering-analysis-and-an-algorithm",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "论谱聚类：分析与算法",
+      "en": "On Spectral Clustering: Analysis and an algorithm"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-spectral-clustering-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn 谱聚类文档",
+      "en": "scikit-learn spectral clustering documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/clustering.html#spectral-clustering",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-spectral-graph-illustration",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "谱聚类图示",
+      "en": "Spectral graph illustration"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

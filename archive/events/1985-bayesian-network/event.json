@@ -1,0 +1,58 @@
+{
+  "id": "1985-bayesian-network",
+  "year": "1985",
+  "date": "1985",
+  "title": {
+    "zh": "贝叶斯网络",
+    "en": "Bayesian Network"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>",
+    "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国加利福尼亚州",
+      "en": "California, United States"
+    },
+    "place": {
+      "zh": "加州大学洛杉矶分校",
+      "en": "University of California, Los Angeles"
+    },
+    "coordinates": [
+      34.0689,
+      -118.4452
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "judea-pearl",
+      "role": {
+        "zh": "贝叶斯网络与因果 AI 先驱",
+        "en": "Pioneer of Bayesian networks and causal AI"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

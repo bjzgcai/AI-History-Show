@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-cyclegan-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "CycleGAN 为什么使用循环一致性损失？",
+      "en": "Why does CycleGAN use a cycle-consistency loss?"
+    },
+    "options": [
+      {
+        "zh": "为了在来回转换时保留内容",
+        "en": "To preserve content when translating there and back"
+      },
+      {
+        "zh": "为了按字母排序单词",
+        "en": "To sort words alphabetically"
+      },
+      {
+        "zh": "为了选择棋步",
+        "en": "To choose a chess move"
+      },
+      {
+        "zh": "为了删除输入图像",
+        "en": "To delete the input image"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "循环一致性检查从一个域转换到另一个域再转回时能否重建原始结构。",
+      "en": "Cycle consistency checks that translating from one domain and back reconstructs the original structure."
+    },
+    "sourceIds": [
+      "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
+    ],
+    "assetIds": [
+      "asset-2017-cyclegan-cycle-consistency"
+    ]
+  }
+]

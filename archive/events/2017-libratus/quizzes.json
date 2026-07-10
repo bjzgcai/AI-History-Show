@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2017-libratus-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Libratus 在扑克中主要解决了什么挑战？",
+      "en": "What challenge did Libratus address in poker?"
+    },
+    "options": [
+      {
+        "zh": "一对一无限注德州扑克中的隐藏信息与均衡推理",
+        "en": "Hidden information and equilibrium reasoning in heads-up no-limit Texas hold'em"
+      },
+      {
+        "zh": "识别手写数字",
+        "en": "Recognizing handwritten digits"
+      },
+      {
+        "zh": "求解蛋白质折叠",
+        "en": "Solving protein folding"
+      },
+      {
+        "zh": "按颜色排序图像",
+        "en": "Sorting images by color"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Libratus 把扑克看作不完全信息策略问题，而不是可见棋盘搜索任务。",
+      "en": "Libratus treated poker as an imperfect-information strategy problem rather than a visible-board search task."
+    },
+    "sourceIds": [
+      "source-science-paper"
+    ],
+    "assetIds": [
+      "asset-2017-libratus-cfr-solving"
+    ]
+  }
+]

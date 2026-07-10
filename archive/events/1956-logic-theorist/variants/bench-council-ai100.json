@@ -1,0 +1,82 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1956-logic-theorist",
+  "displayTitle": {
+    "zh": "逻辑理论家",
+    "en": "Logic Theorist"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1956-logic-theorist-herbert-simon",
+    "asset-1956-logic-theorist-proof-search"
+  ],
+  "sourceIds": [
+    "source-the-logic-theory-machine",
+    "source-carnegie-mellon-university-archives",
+    "source-allen-newell-acm-a-m-turing-award"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1956-logic-theorist-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "论文材料",
+        "en": "Published Paper"
+      },
+      "html": {
+        "zh": "纽厄尔和西蒙 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌图书保存了书目信息和摘要，卡内基梅隆大学档案记录了 1956 年修订版。",
+        "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition."
+      },
+      "sourceIds": [
+        "source-the-logic-theory-machine"
+      ]
+    },
+    {
+      "id": "reasoning-logic",
+      "label": {
+        "zh": "推理逻辑",
+        "en": "Reasoning Logic"
+      },
+      "html": {
+        "zh": "展示重点是证明搜索：从目标定理出发，尝试符号变换，并用启发式规则避免盲目穷举。这让推理成为一串可见的选择过程。",
+        "en": "The display idea is proof search: start with a goal theorem, try symbolic transformations, and use heuristics to avoid blind enumeration. This makes reasoning visible as a sequence of choices."
+      },
+      "sourceIds": [
+        "source-the-logic-theory-machine"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Logic Theorist 视为符号 AI 的奠基系统之一，也是启发式搜索能够模拟推理的早期证据。它的长期影响在于把定理证明、符号编程、认知建模和搜索组织成一种实用 AI 模式。",
+        "en": "Experts generally treat Logic Theorist as a founding symbolic AI system and an early proof that heuristic search could model reasoning. Its long-term legacy is the combination of theorem proving, symbolic programming, cognitive modeling, and search as a practical AI pattern."
+      },
+      "sourceIds": [
+        "source-the-logic-theory-machine"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  }
+}

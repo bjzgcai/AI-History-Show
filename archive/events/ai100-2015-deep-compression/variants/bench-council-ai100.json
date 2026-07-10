@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2015-deep-compression",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "深度压缩",
+    "en": "Deep Compression"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
+    "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "title": {
+        "en": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+        "zh": "深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络"
+      },
+      "description": {
+        "en": "Project page source card for Deep Compression.",
+        "zh": "项目页面 的深度压缩资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1510.00149",
+      "source": "https://arxiv.org/abs/1510.00149",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open project page",
+        "zh": "打开项目页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
+    "asset-2015-deep-compression-prune-quantize-code"
+  ],
+  "sourceIds": [
+    "source-deep-compression",
+    "source-iclr-openreview-record",
+    "source-song-han-efficient-ai-research-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2015-deep-compression-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。",
+        "en": "Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly."
+      },
+      "sourceIds": [
+        "source-deep-compression"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "训练好的网络被剪枝，再用共享量化权重重新训练，并编码到更小的内存和部署预算中。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A trained network is pruned, retrained with shared quantized weights, and encoded so it fits smaller memory and deployment budgets. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-deep-compression"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把深度压缩视为实用神经网络效率研究的里程碑。它的长期影响在于压缩工具箱影响了边缘推理、加速器、剪枝和量化工作流。",
+        "en": "Experts generally treat Deep Compression as a landmark in practical neural network efficiency. Its long-term legacy is the compression toolkit that influenced edge inference, accelerators, pruning, and quantization workflows."
+      },
+      "sourceIds": [
+        "source-deep-compression"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

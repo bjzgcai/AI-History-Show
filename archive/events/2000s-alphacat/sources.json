@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-icga-chinese-chess-page",
+    "type": "archive",
+    "label": {
+      "zh": "赛事档案",
+      "en": "Tournament archive"
+    },
+    "title": {
+      "zh": "ICGA 中国象棋页面",
+      "en": "ICGA Chinese Chess page"
+    },
+    "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-comparison-training-for-computer-chinese-chess",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "面向计算机中国象棋的比较训练",
+      "en": "Comparison Training for Computer Chinese Chess"
+    },
+    "url": "https://arxiv.org/abs/1801.07411",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-xiangqi-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "规则与背景",
+      "en": "Game rules / background"
+    },
+    "title": {
+      "zh": "中国象棋概览",
+      "en": "Xiangqi overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Xiangqi",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

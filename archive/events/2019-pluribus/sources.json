@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-science-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Science 论文",
+      "en": "Science paper"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.aay2400",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-meta-ai-pluribus-report",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "Meta AI Pluribus 报道",
+      "en": "Meta AI Pluribus report"
+    },
+    "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cmu-pluribus-release",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "CMU Pluribus 新闻稿",
+      "en": "CMU Pluribus release"
+    },
+    "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

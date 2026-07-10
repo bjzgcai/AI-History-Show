@@ -1,0 +1,118 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1983-actor-critic",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Actor-Critic",
+    "en": "Actor-Critic"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>",
+    "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "IEEE Xplore",
+        "zh": "IEEE Xplore"
+      },
+      "title": {
+        "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+        "zh": "能够解决困难学习控制问题的类神经自适应元件"
+      },
+      "description": {
+        "en": "IEEE Xplore source card for Actor-Critic.",
+        "zh": "IEEE Xplore 的Actor-Critic资料卡片。"
+      },
+      "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+      "source": "https://doi.org/10.1109/TSMC.1983.6313077",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open DOI page",
+        "zh": "打开 DOI 页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1983-actor-critic-barto-andrew-square",
+    "asset-1983-actor-critic-two-paths"
+  ],
+  "sourceIds": [
+    "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+    "source-reinforcement-learning-an-introduction",
+    "source-actor-critic-model-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1983-actor-critic-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。",
+        "en": "Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns."
+      },
+      "sourceIds": [
+        "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Actor-Critic 视为现代强化学习的核心架构。它的长期影响在于策略-价值分离支撑了 A3C、DDPG、PPO 式训练以及许多游戏或机器人智能体。",
+        "en": "Experts generally treat actor-critic as a core architecture for modern reinforcement learning. Its long-term legacy is the policy-value split that underlies A3C, DDPG, PPO-style training, and many game or robotics agents."
+      },
+      "sourceIds": [
+        "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

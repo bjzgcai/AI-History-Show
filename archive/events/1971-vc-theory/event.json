@@ -1,0 +1,65 @@
+{
+  "id": "1971-vc-theory",
+  "year": 1971,
+  "date": "1971",
+  "title": {
+    "zh": "VC 理论",
+    "en": "VC Theory"
+  },
+  "summary": {
+    "zh": "<p>VC 理论解释了为什么模型只用有限样本训练后，有时仍能在未见数据上表现可靠。瓦普尼克和切尔沃年基斯用 VC 维等概念把学习、概率和模型容量联系起来。它成为统计学习理论的基础，也深刻影响了机器学习对泛化能力的理解。</p>",
+    "en": "<p>VC theory explains why a model trained on limited examples can sometimes perform well on data it has never seen. Vapnik and Chervonenkis connected learning, probability, and model capacity through measures such as VC dimension. Their work became a foundation for statistical learning theory and shaped how machine learning thinks about generalization.</p>"
+  },
+  "description": {
+    "zh": "<p>VC 理论解释了为什么模型只用有限样本训练后，有时仍能在未见数据上表现可靠。瓦普尼克和切尔沃年基斯用 VC 维等概念把学习、概率和模型容量联系起来。它成为统计学习理论的基础，也深刻影响了机器学习对泛化能力的理解。</p>",
+    "en": "<p>VC theory explains why a model trained on limited examples can sometimes perform well on data it has never seen. Vapnik and Chervonenkis connected learning, probability, and model capacity through measures such as VC dimension. Their work became a foundation for statistical learning theory and shaped how machine learning thinks about generalization.</p>"
+  },
+  "location": {
+    "regionId": "moscow-russia",
+    "country": {
+      "zh": "俄罗斯，莫斯科",
+      "en": "Moscow, Russia"
+    },
+    "place": {
+      "zh": "莫斯科控制科学研究所",
+      "en": "Institute of Control Sciences, Moscow"
+    },
+    "coordinates": [
+      55.7558,
+      37.6173
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "theory"
+  ],
+  "figures": [
+    {
+      "figureId": "vladimir-n-vapnik",
+      "role": {
+        "zh": "VC 理论共同创建者",
+        "en": "Co-developed VC theory"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "alexey-ya-chervonenkis",
+      "role": {
+        "zh": "VC 理论共同创建者",
+        "en": "Co-developed VC theory"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

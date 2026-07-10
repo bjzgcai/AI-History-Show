@@ -1,0 +1,66 @@
+{
+  "id": "ai100-2000-isomap",
+  "year": 2000,
+  "date": "2000",
+  "title": {
+    "zh": "Isomap",
+    "en": "Isomap"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>",
+    "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国斯坦福",
+      "en": "Stanford, United States"
+    },
+    "place": {
+      "zh": "斯坦福大学",
+      "en": "Stanford University"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "joshua-tenenbaum",
+      "role": {
+        "zh": "Isomap 主要作者",
+        "en": "Lead author of Isomap"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "john-langford",
+      "role": {
+        "zh": "Co-author of Isomap",
+        "en": "Co-author of Isomap"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

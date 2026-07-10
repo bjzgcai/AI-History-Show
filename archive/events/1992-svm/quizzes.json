@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1992-svm-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "SVM 偏好什么样的分类边界？",
+      "en": "What boundary does an SVM prefer?"
+    },
+    "options": [
+      {
+        "zh": "与附近样本间隔最大的边界",
+        "en": "A boundary with the largest margin to nearby examples"
+      },
+      {
+        "zh": "按图像亮度选择的边界",
+        "en": "A boundary chosen by image brightness"
+      },
+      {
+        "zh": "忽略所有标签的边界",
+        "en": "A boundary that ignores all labels"
+      },
+      {
+        "zh": "没有目标函数的随机直线",
+        "en": "A random line with no objective"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "最大间隔原则是 SVM 分类的核心，也把它与统计学习理论连接起来。",
+      "en": "The maximum-margin principle is the core of SVM classification and links the method to statistical learning theory."
+    },
+    "sourceIds": [
+      "source-a-training-algorithm-for-optimal-margin-classifiers"
+    ],
+    "assetIds": [
+      "asset-1992-svm-isabelle-guyon"
+    ]
+  }
+]

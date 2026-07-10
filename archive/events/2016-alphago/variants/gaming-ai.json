@@ -1,0 +1,37 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "2016-alphago",
+  "displayTitle": {
+    "en": "AlphaGo",
+    "zh": "AlphaGo"
+  },
+  "displaySummary": {
+    "en": "Game AI as a Testbed for Search, Learning and Planning",
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+  },
+  "emphasis": [
+    "game-ai-lineage",
+    "search",
+    "self-play",
+    "game-record-evolution"
+  ],
+  "visual": "go",
+  "assetIds": [
+    "asset-alphago-lee-sedol",
+    "asset-alphago-policy-value-search"
+  ],
+  "sourceIds": [
+    "source-alphago-nature-paper",
+    "source-deepmind-alphago-page",
+    "source-katago-analysis-engine"
+  ],
+  "claimIds": [
+    "claim-hybrid-policy-value-search",
+    "claim-lee-sedol-match",
+    "claim-self-play-legacy"
+  ],
+  "displayDescription": {
+    "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
+    "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
+  }
+}

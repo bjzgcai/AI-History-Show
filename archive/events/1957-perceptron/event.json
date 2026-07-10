@@ -1,0 +1,60 @@
+{
+  "id": "1957-perceptron",
+  "year": "1957",
+  "date": "1957",
+  "title": {
+    "zh": "感知机与连接主义",
+    "en": "The Perceptron and Connectionism"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
+    "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国纽约州",
+      "en": "New York, United States"
+    },
+    "place": {
+      "zh": "康奈尔航空实验室",
+      "en": "Cornell Aeronautical Laboratory"
+    },
+    "coordinates": [
+      42.8864,
+      -78.8784
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "frank-rosenblatt",
+      "role": {
+        "zh": "感知机发明者",
+        "en": "Inventor of the perceptron"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "1958-rosenblatt-perceptron"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

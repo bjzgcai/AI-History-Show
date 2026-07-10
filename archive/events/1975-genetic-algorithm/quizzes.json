@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1975-genetic-algorithm-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "遗传算法随时间演化的是什么？",
+      "en": "What does a genetic algorithm evolve over time?"
+    },
+    "options": [
+      {
+        "zh": "一组候选解种群",
+        "en": "A population of candidate solutions"
+      },
+      {
+        "zh": "只有一个固定答案",
+        "en": "Only a single fixed answer"
+      },
+      {
+        "zh": "仅一个手写定理证明",
+        "en": "A handwritten theorem proof only"
+      },
+      {
+        "zh": "显示器分辨率",
+        "en": "The monitor resolution"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "遗传算法维护多个候选解，选择表现更好的个体，进行重组和变异来继续搜索。",
+      "en": "Genetic algorithms maintain many candidates, select fitter ones, recombine them, and mutate them to continue search."
+    },
+    "sourceIds": [
+      "source-adaptation-in-natural-and-artificial-systems"
+    ],
+    "assetIds": [
+      "asset-1975-genetic-algorithm-john-henry-holland"
+    ]
+  },
+  {
+    "id": "1975-genetic-algorithm-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "遗传算法随时间演化的是什么？",
+      "en": "What does a genetic algorithm evolve over time?"
+    },
+    "options": [
+      {
+        "zh": "一组候选解种群",
+        "en": "A population of candidate solutions"
+      },
+      {
+        "zh": "只有一个固定答案",
+        "en": "Only a single fixed answer"
+      },
+      {
+        "zh": "仅一个手写定理证明",
+        "en": "A handwritten theorem proof only"
+      },
+      {
+        "zh": "显示器分辨率",
+        "en": "The monitor resolution"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "遗传算法维护多个候选解，选择表现更好的个体，进行重组和变异来继续搜索。",
+      "en": "Genetic algorithms maintain many candidates, select fitter ones, recombine them, and mutate them to continue search."
+    },
+    "sourceIds": [
+      "source-adaptation-in-natural-and-artificial-systems"
+    ],
+    "assetIds": [
+      "asset-1975-genetic-algorithm-john-henry-holland"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "神经架构搜索 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Neural Architecture Search is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-neural-architecture-search-with-reinforcement-learning",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>",
+      "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>"
+    },
+    "sourceIds": [
+      "source-neural-architecture-search-with-reinforcement-learning",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  }
+]

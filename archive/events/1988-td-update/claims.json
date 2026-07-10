@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "时序差分更新 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Temporal-Difference Update is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-learning-to-predict-by-the-methods-of-temporal-differences",
+      "source-richard-sutton-homepage"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
+      "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+    },
+    "sourceIds": [
+      "source-learning-to-predict-by-the-methods-of-temporal-differences",
+      "source-richard-sutton-homepage"
+    ],
+    "status": "needs-source"
+  }
+]

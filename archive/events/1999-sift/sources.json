@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-object-recognition-from-local-scale-invariant-features",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Object Recognition from Local Scale-Invariant Features",
+      "en": "Object Recognition from Local Scale-Invariant Features"
+    },
+    "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-distinctive-image-features-from-scale-invariant-keypoints",
+    "type": "reference-only",
+    "label": {
+      "zh": "期刊论文",
+      "en": "Journal article"
+    },
+    "title": {
+      "zh": "来自尺度不变关键点的区分性图像特征",
+      "en": "Distinctive Image Features from Scale-Invariant Keypoints"
+    },
+    "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-david-lowe-ubc-computer-science",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "戴维·洛, UBC Computer 《科学》",
+      "en": "David Lowe, UBC Computer Science"
+    },
+    "url": "https://www.cs.ubc.ca/people/david-lowe",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

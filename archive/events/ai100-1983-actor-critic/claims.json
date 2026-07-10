@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Actor-Critic 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Actor-Critic is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+      "source-reinforcement-learning-an-introduction"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>",
+      "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>"
+    },
+    "sourceIds": [
+      "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+      "source-reinforcement-learning-an-introduction"
+    ],
+    "status": "needs-source"
+  }
+]

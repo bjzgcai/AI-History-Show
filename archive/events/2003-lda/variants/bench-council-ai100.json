@@ -1,0 +1,119 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2003-lda",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "潜在狄利克雷分配",
+    "en": "Latent Dirichlet Allocation"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>",
+    "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "lda",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "JMLR",
+        "zh": "《机器学习研究杂志》"
+      },
+      "title": {
+        "en": "LDA paper",
+        "zh": "LDA 论文"
+      },
+      "description": {
+        "en": "Primary JMLR source for LDA; local images redraw topic mixtures and plate notation.",
+        "zh": "LDA 的 《机器学习研究杂志》 原始来源；本地图重画主题混合和 plate notation。"
+      },
+      "url": "https://jmlr.org/papers/v3/blei03a.html",
+      "source": "https://jmlr.org/papers/v3/blei03a.html",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open JMLR paper",
+        "zh": "打开 《机器学习研究杂志》 论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2003-lda-david-blei",
+    "asset-2003-lda-topic-simplex",
+    "asset-2003-lda-plate-model"
+  ],
+  "sourceIds": [
+    "source-latent-dirichlet-allocation",
+    "source-david-m-blei-homepage",
+    "source-scikit-learn-latentdirichletallocation"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2003-lda-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "文本集合需要无需手工标注每个主题就能发现结构的方法。LDA 把隐藏主题假设明确写成概率模型。",
+        "en": "Text collections needed methods that discovered structure without hand-labeling every theme. LDA made the hidden-topic assumption explicit and probabilistic."
+      },
+      "sourceIds": [
+        "source-latent-dirichlet-allocation"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。 关键机制是带 Dirichlet 先验的贝叶斯主题模型，它把资料线索与可见的演示行为连接起来。",
+        "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution. The key mechanism is Bayesian topic model with Dirichlet priors, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-latent-dirichlet-allocation"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 LDA 视为经典概率主题模型，也是讲解生成式建模的教学范例。它的长期影响在于通过潜在结构提供可解释性，即使神经嵌入和 Transformer 在许多应用中表现更好，这一点仍有价值。",
+        "en": "Experts generally treat LDA as a classic probabilistic topic model and a teaching example for generative modeling. Its long-term legacy is interpretability through latent structure, which remains useful even when neural embeddings and transformers perform better in many applications."
+      },
+      "sourceIds": [
+        "source-latent-dirichlet-allocation"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

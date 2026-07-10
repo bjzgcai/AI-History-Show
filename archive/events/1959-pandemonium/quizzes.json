@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1959-pandemonium-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Pandemonium 式感知的核心思想是什么？",
+      "en": "What is the core idea of Pandemonium-style perception?"
+    },
+    "options": [
+      {
+        "zh": "许多简单特征识别器向高层模式投票",
+        "en": "Many simple feature recognizers vote toward higher-level patterns"
+      },
+      {
+        "zh": "一个固定规则回答所有图像",
+        "en": "One fixed rule answers every image"
+      },
+      {
+        "zh": "数据库删除所有不确定证据",
+        "en": "A database deletes all uncertain evidence"
+      },
+      {
+        "zh": "棋类引擎只搜索开局",
+        "en": "A chess engine searches only openings"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Selfridge 的架构把识别看作分层、分布式的证据累积。",
+      "en": "Selfridge's architecture treated recognition as layered, distributed evidence accumulation."
+    },
+    "sourceIds": [
+      "source-pandemonium-a-paradigm-for-learning"
+    ],
+    "assetIds": [
+      "asset-1959-pandemonium-oliver-selfridge"
+    ]
+  }
+]

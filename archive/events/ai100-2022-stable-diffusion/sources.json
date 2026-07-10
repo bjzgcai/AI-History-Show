@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用潜扩散模型进行高分辨率图像合成》",
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models"
+    },
+    "url": "https://arxiv.org/abs/2112.10752",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cvpr-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "CVPR 论文页面",
+      "en": "CVPR paper page"
+    },
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-compvis-latent-diffusion-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "CompVis 潜扩散代码仓库",
+      "en": "CompVis latent diffusion repository"
+    },
+    "url": "https://github.com/CompVis/latent-diffusion",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-stability-ai-stable-diffusion-page",
+    "type": "project-page",
+    "label": {
+      "zh": "项目",
+      "en": "Project"
+    },
+    "title": {
+      "zh": "Stability AI Stable Diffusion 页面",
+      "en": "Stability AI Stable Diffusion page"
+    },
+    "url": "https://stability.ai/stable-image",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

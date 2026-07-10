@@ -1,0 +1,72 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2019-ai-feynman",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "AI Feynman：自主科学规律发现",
+    "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+  },
+  "displaySummary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "displayDescription": {
+    "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
+    "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-2019-ai-feynman-people-01",
+    "asset-2019-ai-feynman-historical-01",
+    "asset-2019-ai-feynman-papers-01",
+    "asset-2019-ai-feynman-papers-02"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "AI Feynman 的思路很有代表性：它没有把符号回归完全交给暴力搜索，而是引入对称性、量纲分析等物理先验，缩小候选空间，让“机器发现公式”从玩具问题走向真实规律重建。",
+        "en": "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "这类系统的重要价值在于可解释性。与只给出预测结果的黑盒模型相比，AI Feynman 直接输出人类可读的方程，因此它更像是“可交付给科学共同体”的中间发现工具。",
+        "en": "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  }
+}

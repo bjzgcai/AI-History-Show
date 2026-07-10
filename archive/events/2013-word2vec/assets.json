@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2013-word2vec-tomas-mikolov",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "托马斯·米科洛夫 肖像",
+      "en": "Tomas Mikolov portrait"
+    },
+    "subcaption": {
+      "zh": "IEEE Signal Processing Society 访谈页面中的 Mikolov 人物图。",
+      "en": "IEEE Signal Processing Society newsletter image for Mikolov."
+    },
+    "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "IEEE SPS newsletter image; rights not stated.",
+        "en": "IEEE SPS newsletter image; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2013-word2vec-skipgram-window",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Skip-gram 上下文窗口",
+      "en": "Skip-gram context window"
+    },
+    "subcaption": {
+      "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Word2Vec, based on the listed source material."
+    },
+    "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2013-word2vec-vector-analogy",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "向量类比",
+      "en": "Vector analogy"
+    },
+    "subcaption": {
+      "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Word2Vec, based on the listed source material."
+    },
+    "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]
