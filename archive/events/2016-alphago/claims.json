@@ -1,26 +1,23 @@
 [
   {
-    "id": "alphago-hybrid-system",
+    "id": "2016-alphago-summary",
     "text": {
-      "en": "AlphaGo combined policy networks, value networks and Monte Carlo tree search.",
-      "zh": "AlphaGo 结合了策略网络、价值网络和蒙特卡洛树搜索。"
+      "en": "AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.",
+      "zh": "AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。"
     },
-    "sourceIds": ["alphago-nature-paper"]
+    "sourceIds": [
+      "nature-2016-alphago-paper",
+      "google-deepmind-alphago"
+    ]
   },
   {
-    "id": "alphago-lee-sedol-match",
+    "id": "2016-alphago-quote",
     "text": {
-      "en": "The 2016 match against Lee Sedol made AlphaGo a public landmark for strategic AI.",
-      "zh": "2016 年与李世石的对局让 AlphaGo 成为战略型 AI 的公众标志事件。"
+      "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
+      "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
     },
-    "sourceIds": ["deepmind-alphago-page"]
-  },
-  {
-    "id": "alphago-interactive-analysis",
-    "text": {
-      "en": "Modern Go analysis engines can expose policy suggestions, win-rate shifts and search variations for interactive demonstrations.",
-      "zh": "现代围棋分析引擎可用于交互演示策略建议、胜率变化和搜索分支。"
-    },
-    "sourceIds": ["katago-analysis-engine"]
+    "sourceIds": [
+      "nature-2016-alphago-paper"
+    ]
   }
 ]

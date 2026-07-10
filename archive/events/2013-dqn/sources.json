@@ -1,0 +1,47 @@
+[
+  {
+    "id": "playing-atari-with-deep-reinforcement-learning",
+    "type": {
+      "en": "Preprint",
+      "zh": "预印本"
+    },
+    "label": {
+      "en": "Playing Atari with Deep Reinforcement Learning",
+      "zh": "用深度强化学习玩 Atari"
+    },
+    "url": "https://arxiv.org/abs/1312.5602"
+  },
+  {
+    "id": "human-level-control-through-deep-reinforcement-learning",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Human-level control through deep reinforcement learning",
+      "zh": "Human-level control through deep reinforcement learning"
+    },
+    "url": "https://www.nature.com/articles/nature14236"
+  },
+  {
+    "id": "google-deepmind-deep-reinforcement-learning",
+    "type": {
+      "en": "Project note",
+      "zh": "项目说明"
+    },
+    "label": {
+      "en": "Google DeepMind: Deep Reinforcement Learning",
+      "zh": "谷歌 DeepMind: Deep Reinforcement Learning"
+    },
+    "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/"
+  },
+  {
+    "id": "university-of-toronto-personal-page",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "University of Toronto personal page",
+    "url": "https://www.cs.utoronto.ca/~vmnih/"
+  }
+]

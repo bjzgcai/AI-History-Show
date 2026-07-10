@@ -1,0 +1,50 @@
+[
+  {
+    "id": "deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "zh": "《使用非平衡热力学进行深度无监督学习》"
+    },
+    "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+  },
+  {
+    "id": "denoising-diffusion-probabilistic-models",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Denoising Diffusion Probabilistic Models",
+      "zh": "《去噪扩散概率模型》"
+    },
+    "url": "https://arxiv.org/abs/2006.11239"
+  },
+  {
+    "id": "diffusion-model-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Diffusion model overview",
+      "zh": "扩散模型概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Diffusion_model"
+  },
+  {
+    "id": "jascha-sohl-dickstein-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Jascha Sohl-Dickstein homepage",
+      "zh": "雅沙·索尔-迪克斯坦个人主页"
+    },
+    "url": "https://sohldickstein.com/"
+  }
+]

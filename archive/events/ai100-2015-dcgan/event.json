@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2015-dcgan",
+  "year": 2015,
+  "title": {
+    "en": "DCGAN",
+    "zh": "DCGAN"
+  },
+  "location": {
+    "name": {
+      "en": "Facebook AI Research",
+      "zh": "Facebook AI Research"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "New York, United States"
+    },
+    "coordinates": [
+      40.7128,
+      -74.006
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "DCGAN lead author",
+        "zh": "DCGAN 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Unsupervised representation learning with deep convolutional generative adversarial networks",
+    "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+      "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+    },
+    "workAuthors": {
+      "en": "Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+      "zh": "亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1511.06434"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

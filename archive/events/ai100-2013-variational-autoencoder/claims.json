@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2013-variational-autoencoder-summary",
+    "text": {
+      "en": "The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.",
+      "zh": "变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。"
+    },
+    "sourceIds": [
+      "auto-encoding-variational-bayes",
+      "iclr-paper-record"
+    ]
+  },
+  {
+    "id": "ai100-2013-variational-autoencoder-quote",
+    "text": {
+      "en": "Auto-encoding variational Bayes",
+      "zh": "自动编码变分贝叶斯"
+    },
+    "sourceIds": [
+      "auto-encoding-variational-bayes"
+    ]
+  }
+]

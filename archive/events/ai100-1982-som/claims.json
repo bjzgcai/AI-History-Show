@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1982-som-summary",
+    "text": {
+      "en": "Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.",
+      "zh": "泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。"
+    },
+    "sourceIds": [
+      "self-organized-formation-of-topologically-correct-feature-maps",
+      "open-som-paper-pdf"
+    ]
+  },
+  {
+    "id": "ai100-1982-som-quote",
+    "text": {
+      "en": "Self-organized formation of topologically correct feature maps",
+      "zh": "拓扑正确特征映射的自组织形成"
+    },
+    "sourceIds": [
+      "self-organized-formation-of-topologically-correct-feature-maps"
+    ]
+  }
+]

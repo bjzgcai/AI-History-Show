@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2000-lle",
+  "year": 2000,
+  "title": {
+    "en": "Locally Linear Embedding",
+    "zh": "局部线性嵌入"
+  },
+  "location": {
+    "name": {
+      "en": "AT&T Labs",
+      "zh": "AT&T 实验室"
+    },
+    "country": {
+      "en": "Florham Park, United States",
+      "zh": "美国弗洛勒姆帕克"
+    },
+    "coordinates": [
+      40.7879,
+      -74.3882
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sam Roweis",
+        "zh": "萨姆·罗维斯"
+      },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Lawrence Saul",
+        "zh": "劳伦斯·索尔"
+      },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+    "zh": "通过局部线性嵌入进行非线性降维"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "zh": "通过局部线性嵌入进行非线性降维"
+    },
+    "workAuthors": {
+      "en": "Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+      "zh": "萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+    },
+    "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

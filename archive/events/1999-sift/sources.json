@@ -1,0 +1,38 @@
+[
+  {
+    "id": "object-recognition-from-local-scale-invariant-features",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Object Recognition from Local Scale-Invariant Features",
+      "zh": "Object Recognition from Local Scale-Invariant Features"
+    },
+    "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+  },
+  {
+    "id": "distinctive-image-features-from-scale-invariant-keypoints",
+    "type": {
+      "en": "Journal article",
+      "zh": "期刊论文"
+    },
+    "label": {
+      "en": "Distinctive Image Features from Scale-Invariant Keypoints",
+      "zh": "来自尺度不变关键点的区分性图像特征"
+    },
+    "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94"
+  },
+  {
+    "id": "david-lowe-ubc-computer-science",
+    "type": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "David Lowe, UBC Computer Science",
+      "zh": "戴维·洛, UBC Computer 《科学》"
+    },
+    "url": "https://www.cs.ubc.ca/people/david-lowe"
+  }
+]

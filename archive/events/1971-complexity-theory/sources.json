@@ -1,0 +1,50 @@
+[
+  {
+    "id": "the-complexity-of-theorem-proving-procedures",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "The Complexity of Theorem-Proving Procedures",
+      "zh": "定理证明过程的复杂性"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/800157.805047"
+  },
+  {
+    "id": "stephen-a-cook-acm-a-m-turing-award",
+    "type": {
+      "en": "Award",
+      "zh": "奖项"
+    },
+    "label": {
+      "en": "Stephen A. Cook ACM A.M. Turing Award",
+      "zh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award"
+    },
+    "url": "https://awards.acm.org/award_winners/cook_N991950"
+  },
+  {
+    "id": "clay-mathematics-institute-p-vs-np",
+    "type": {
+      "en": "Problem",
+      "zh": "难题"
+    },
+    "label": {
+      "en": "Clay Mathematics Institute P vs NP",
+      "zh": "克雷数学研究所 P 与 NP 问题"
+    },
+    "url": "https://www.claymath.org/millennium/p-vs-np/"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1983-actor-critic-image-1",
+    "kind": "image",
+    "path": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+    "caption": {
+      "en": "Andrew Barto portrait",
+      "zh": "安德鲁·巴托肖像"
+    },
+    "subcaption": {
+      "en": "Actor-Critic co-author",
+      "zh": "Actor-Critic 共同作者"
+    },
+    "sourceId": "umass-amherst-profile",
+    "sourceName": {
+      "en": "UMass Amherst profile",
+      "zh": "马萨诸塞大学阿默斯特分校个人资料"
+    },
+    "sourceUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+    "originalImageUrl": "https://www.cs.umass.edu/about/directory/andrew-g-barto",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1983-actor-critic-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+    "caption": {
+      "en": "Actor-Critic explainer",
+      "zh": "Actor-Critic 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+    "sourceName": {
+      "en": "IEEE Xplore",
+      "zh": "IEEE Xplore"
+    },
+    "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+    "originalImageUrl": "https://doi.org/10.1109/TSMC.1983.6313077",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

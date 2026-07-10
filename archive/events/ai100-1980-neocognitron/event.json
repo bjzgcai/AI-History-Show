@@ -1,0 +1,53 @@
+{
+  "id": "ai100-1980-neocognitron",
+  "year": 1980,
+  "title": {
+    "en": "Neocognitron",
+    "zh": "新认知机"
+  },
+  "location": {
+    "name": {
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "NHK 广播科学研究实验室"
+    },
+    "country": {
+      "en": "Tokyo, Japan",
+      "zh": "日本东京"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
+      "role": {
+        "en": "Creator of the neocognitron",
+        "zh": "Neocognitron 提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+    "zh": "一种不受位置平移影响的模式识别机制自组织神经网络模型"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+      "zh": "Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型"
+    },
+    "workAuthors": {
+      "en": "Kunihiko Fukushima, Biological Cybernetics, 1980",
+      "zh": "福岛邦彦，《Biological Cybernetics》，1980"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00344251"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

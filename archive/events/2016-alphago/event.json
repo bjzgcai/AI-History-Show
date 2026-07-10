@@ -11,10 +11,13 @@
       "zh": "谷歌 DeepMind"
     },
     "country": {
-      "en": "United Kingdom",
-      "zh": "英国"
+      "en": "London, United Kingdom",
+      "zh": "英国，伦敦"
     },
-    "coordinates": [51.5074, -0.1278]
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
   },
   "figures": [
     {
@@ -59,7 +62,7 @@
     },
     "workAuthors": {
       "en": "David Silver et al., Nature, 2016",
-      "zh": "大卫·席尔瓦等，《自然》，2016"
+      "zh": "戴维·席尔瓦等, 《自然》, 2016"
     },
     "sourceUrl": "https://www.nature.com/articles/nature16961"
   },

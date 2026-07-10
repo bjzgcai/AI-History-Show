@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1997-kernel-pca-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+    "caption": {
+      "en": "Bernhard Scholkopf portrait",
+      "zh": "伯恩哈德·舍尔科普夫肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of Kernel PCA",
+      "zh": "Kernel PCA 共同作者"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Bernhard_Sch%C3%B6lkopf.png",
+    "rights": {
+      "en": "Creative Commons Attribution, per Wikimedia Commons.",
+      "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1997-kernel-pca-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+    "caption": {
+      "en": "Kernel eigenmap",
+      "zh": "核特征映射"
+    },
+    "subcaption": {
+      "en": "Original local explainer of kernel PCA embedding.",
+      "zh": "关于 Kernel PCA 嵌入的本地原创解释图。"
+    },
+    "sourceId": "nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+    "sourceName": {
+      "en": "Neural Computation",
+      "zh": "Neural Computation"
+    },
+    "sourceUrl": "https://doi.org/10.1162/089976698300017467",
+    "originalImageUrl": "https://doi.org/10.1162/089976698300017467",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

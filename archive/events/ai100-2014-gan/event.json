@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2014-gan",
+  "year": 2014,
+  "title": {
+    "en": "Generative Adversarial Network",
+    "zh": "生成对抗网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5056,
+      -73.6139
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ian Goodfellow",
+        "zh": "伊恩·古德费洛"
+      },
+      "role": {
+        "en": "Lead author of the GAN paper",
+        "zh": "GAN 论文主要作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author and advisor",
+        "zh": "共同作者与导师"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Generative adversarial nets",
+    "zh": "生成对抗网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Generative Adversarial Nets",
+      "zh": "生成对抗网络"
+    },
+    "workAuthors": {
+      "en": "Ian Goodfellow et al., NeurIPS, 2014",
+      "zh": "伊恩·古德费洛等，NeurIPS，2014"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1406.2661"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1989-q-learning-summary",
+    "text": {
+      "en": "Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.",
+      "zh": "Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。"
+    },
+    "sourceIds": [
+      "learning-from-delayed-rewards",
+      "q-learning"
+    ]
+  },
+  {
+    "id": "ai100-1989-q-learning-quote",
+    "text": {
+      "en": "Learning from delayed rewards",
+      "zh": "从延迟奖励中学习"
+    },
+    "sourceIds": [
+      "learning-from-delayed-rewards"
+    ]
+  }
+]

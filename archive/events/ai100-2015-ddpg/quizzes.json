@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Why is DDPG associated with continuous control?",
+      "zh": "DDPG 为什么与连续控制相关？"
+    },
+    "options": [
+      {
+        "en": "Its actor outputs continuous actions",
+        "zh": "它的 actor 输出连续动作"
+      },
+      {
+        "en": "It only plays word games",
+        "zh": "它只玩文字游戏"
+      },
+      {
+        "en": "It removes the critic",
+        "zh": "它移除 critic"
+      },
+      {
+        "en": "It trains no policy",
+        "zh": "它不训练策略"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "DDPG uses an actor-critic setup where the actor proposes continuous actions.",
+      "zh": "DDPG 使用 actor-critic 设置，其中 actor 提出连续动作。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "ddpg",
+      "ai100"
+    ]
+  }
+]

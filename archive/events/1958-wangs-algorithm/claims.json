@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1958-wangs-algorithm-summary",
+    "text": {
+      "en": "Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.",
+      "zh": "王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 《贝尔系统技术期刊》 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。"
+    },
+    "sourceIds": [
+      "proving-theorems-by-pattern-recognition-i",
+      "proving-theorems-by-pattern-recognition-ii"
+    ]
+  },
+  {
+    "id": "1958-wangs-algorithm-quote",
+    "text": {
+      "en": "A proof procedure for the predicate calculus is given",
+      "zh": "给出了一个谓词演算的证明过程"
+    },
+    "sourceIds": [
+      "proving-theorems-by-pattern-recognition-i"
+    ]
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>",
+    "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.",
+        "zh": "丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat NMF as a foundational method for interpretable latent factors. Its long-term legacy is the parts-based view that influenced topic modeling, source separation, recommender systems, and explainable representation learning.",
+        "zh": "专家通常把 NMF 视为可解释潜在因子的基础方法。它的长期影响在于部件化视角影响了主题建模、源分离、推荐系统和可解释表示学习。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Nonnegative matrix factorization",
+      "zh": "非负矩阵分解"
+    },
+    "artifact": {
+      "en": "Parts-based representation",
+      "zh": "基于部件的表示"
+    },
+    "material": {
+      "en": "Nature paper",
+      "zh": "《Nature》论文"
+    },
+    "demo": {
+      "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+      "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+    },
+    "visual": "nmf",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Additive Parts",
+          "zh": "可加部件"
+        },
+        "text": {
+          "en": "Representations combine by addition rather than cancellation.",
+          "zh": "表示通过相加组合，而不是相互抵消。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interpretability",
+          "zh": "可解释性"
+        },
+        "text": {
+          "en": "Basis vectors often align with meaningful parts or topics.",
+          "zh": "基向量常对应有意义的部件或主题。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Kernel PCA",
+        "zh": "Kernel PCA"
+      },
+      {
+        "en": "LDA",
+        "zh": "LDA"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Data matrix",
+        "zh": "数据矩阵"
+      },
+      {
+        "en": "Basis parts",
+        "zh": "基部件"
+      },
+      {
+        "en": "Activations",
+        "zh": "激活值"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Nature",
+          "zh": "Nature"
+        },
+        "title": {
+          "en": "Learning the parts of objects by non-negative matrix factorization",
+          "zh": "通过非负矩阵分解学习物体部件"
+        },
+        "description": {
+          "en": "Primary Nature paper record for NMF.",
+          "zh": "NMF 的 Nature 主论文记录。"
+        },
+        "url": "https://doi.org/10.1038/44565",
+        "source": "https://doi.org/10.1038/44565",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Learning the parts of objects by non-negative matrix factorization",
+          "zh": "《通过非负矩阵分解学习物体部件》"
+        },
+        "url": "https://doi.org/10.1038/44565"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "Nature article page",
+          "zh": "Nature 文章页面"
+        },
+        "url": "https://www.nature.com/articles/44565"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "PubMed record for the Nature paper",
+          "zh": "Nature 论文 PubMed 记录"
+        },
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10548103/"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn NMF documentation",
+          "zh": "scikit-learn NMF 文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Nature paper",
+          "zh": "《Nature》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+          "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+        }
+      }
+    ]
+  }
+}

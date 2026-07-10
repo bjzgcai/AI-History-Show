@@ -1,0 +1,50 @@
+[
+  {
+    "id": "learning-from-delayed-rewards",
+    "type": {
+      "en": "Thesis",
+      "zh": "博士论文"
+    },
+    "label": {
+      "en": "Learning from Delayed Rewards",
+      "zh": "《从延迟奖励中学习》"
+    },
+    "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf"
+  },
+  {
+    "id": "q-learning",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Q-learning",
+      "zh": "《Q-learning》"
+    },
+    "url": "https://link.springer.com/article/10.1007/BF00992698"
+  },
+  {
+    "id": "q-learning-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Q-learning overview",
+      "zh": "Q-learning 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Q-learning"
+  },
+  {
+    "id": "google-scholar-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Google Scholar profile",
+      "zh": "Google Scholar 个人资料"
+    },
+    "url": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ"
+  }
+]

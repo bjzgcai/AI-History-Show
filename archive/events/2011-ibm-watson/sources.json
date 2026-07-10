@@ -1,0 +1,62 @@
+[
+  {
+    "id": "watson-beyond-jeopardy",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Watson: Beyond Jeopardy!",
+      "zh": "沃森：超越《危险边缘！》"
+    },
+    "url": "https://doi.org/10.1016/j.artint.2012.06.009"
+  },
+  {
+    "id": "building-watson-an-overview-of-the-deepqa-project",
+    "type": {
+      "en": "Overview",
+      "zh": "综述"
+    },
+    "label": {
+      "en": "Building Watson: An Overview of the DeepQA Project",
+      "zh": "构建沃森：DeepQA 项目概览"
+    },
+    "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303"
+  },
+  {
+    "id": "ibm-watson-system-photo",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "IBM Watson system photo",
+      "zh": "IBM Watson 系统照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg"
+  },
+  {
+    "id": "david-ferrucci-portrait",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "David Ferrucci portrait",
+      "zh": "戴维·费鲁奇 人物照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:DeepQA.svg"
+  }
+]

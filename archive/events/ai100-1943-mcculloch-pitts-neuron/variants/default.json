@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>",
+    "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.",
+        "zh": "沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Inputs pass through weighted thresholds, producing logical output states. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "输入经过加权阈值，产生逻辑输出状态。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat the McCulloch-Pitts neuron as a founding abstraction for neural computation rather than a realistic brain model. Its long-term legacy is the threshold-unit idea that linked logic, circuits, and later artificial neural networks.",
+        "zh": "专家通常把麦卡洛克-皮茨神经元视为神经计算的奠基抽象，而不是逼真的大脑模型。它的长期影响在于阈值单元思想把逻辑、电路和后来的人工神经网络连接起来。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Binary threshold logic",
+      "zh": "二值阈值逻辑"
+    },
+    "artifact": {
+      "en": "Formal neuron model",
+      "zh": "形式化神经元模型"
+    },
+    "material": {
+      "en": "1943 Bulletin of Mathematical Biophysics paper",
+      "zh": "1943 年《数学生物物理学通报》论文"
+    },
+    "demo": {
+      "en": "Inputs pass through weighted thresholds, producing logical output states.",
+      "zh": "输入经过加权阈值，产生逻辑输出状态。"
+    },
+    "visual": "perceptron",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Threshold Unit",
+          "zh": "阈值单元"
+        },
+        "text": {
+          "en": "A neuron fires when combined inputs cross a threshold.",
+          "zh": "当组合输入越过阈值时，神经元被激活。"
+        }
+      },
+      {
+        "label": {
+          "en": "Logic and Brains",
+          "zh": "逻辑与大脑"
+        },
+        "text": {
+          "en": "Neural activity was expressed as a calculus of propositions.",
+          "zh": "神经活动被表示为命题演算。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Perceptron",
+        "zh": "感知机"
+      },
+      {
+        "en": "Back-propagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Inputs",
+        "zh": "输入"
+      },
+      {
+        "en": "Threshold",
+        "zh": "阈值"
+      },
+      {
+        "en": "Logical output",
+        "zh": "逻辑输出"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Springer",
+          "zh": "Springer"
+        },
+        "title": {
+          "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+          "zh": "神经活动内在观念的逻辑演算"
+        },
+        "description": {
+          "en": "Canonical paper introducing the formal neuron model.",
+          "zh": "介绍形式化神经元模型的经典论文。"
+        },
+        "url": "https://doi.org/10.1007/BF02478259",
+        "source": "https://doi.org/10.1007/BF02478259",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI",
+          "zh": "打开 DOI"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+          "zh": "《神经活动中内在观念的逻辑演算》"
+        },
+        "url": "https://doi.org/10.1007/BF02478259"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "McCulloch-Pitts neuron overview",
+          "zh": "麦卡洛克-皮茨神经元概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity"
+      },
+      {
+        "type": {
+          "en": "Context",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "History of Information entry",
+          "zh": "History of Information 历史条目"
+        },
+        "url": "https://www.historyofinformation.com/detail.php?id=634"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Walter Pitts blackboard photo",
+          "zh": "沃尔特·皮茨黑板照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "1943 Bulletin of Mathematical Biophysics paper",
+          "zh": "1943 年《数学生物物理学通报》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Inputs pass through weighted thresholds, producing logical output states.",
+          "zh": "输入经过加权阈值，产生逻辑输出状态。"
+        }
+      }
+    ]
+  }
+}

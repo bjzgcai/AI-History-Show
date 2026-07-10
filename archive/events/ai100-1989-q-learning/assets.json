@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1989-q-learning-image-1",
+    "kind": "image",
+    "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+    "caption": {
+      "en": "Christopher Watkins portrait",
+      "zh": "克里斯托弗·沃特金斯肖像"
+    },
+    "subcaption": {
+      "en": "Q-learning lead author",
+      "zh": "Q-learning 主要作者"
+    },
+    "sourceId": "google-scholar-profile",
+    "sourceName": {
+      "en": "Google Scholar profile",
+      "zh": "Google Scholar 个人资料"
+    },
+    "sourceUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+    "originalImageUrl": "https://scholar.google.com/citations?user=v8QhiOwAAAAJ",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1989-q-learning-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+    "caption": {
+      "en": "Q-Learning explainer",
+      "zh": "Q-Learning 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "learning-from-delayed-rewards",
+    "sourceName": {
+      "en": "Royal Holloway",
+      "zh": "伦敦大学皇家霍洛威学院"
+    },
+    "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+    "originalImageUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

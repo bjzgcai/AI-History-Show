@@ -1,0 +1,198 @@
+{
+  "description": {
+    "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>",
+    "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Object detection had made large accuracy gains with R-CNN, but external proposal generation made the pipeline slower and less elegant.",
+        "zh": "R-CNN 已经大幅提升目标检测精度，但外部候选区域生成让流水线变慢且不够统一。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Faster R-CNN trains the network to propose boxes while it is already computing visual features. Detection becomes a learned pipeline rather than a hand-off between unrelated modules.",
+        "zh": "Faster R-CNN 让网络在计算视觉特征的同时学习提出候选框。检测因此成为学习型流水线，而不是无关模块之间的交接。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Faster R-CNN as a turning point that made object detection more end-to-end and learnable. Its long-term legacy is the proposal-and-recognition framework that still shapes how researchers explain accuracy, speed, and localization tradeoffs.",
+        "zh": "专家通常把 Faster R-CNN 视为让目标检测更端到端、更可学习的转折点。它的长期影响在于“候选区域 + 识别”框架仍塑造着研究者对精度、速度和定位权衡的解释。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Object Detection",
+      "zh": "目标检测"
+    },
+    "method": {
+      "en": "Region Proposal Network with shared features",
+      "zh": "共享特征的区域建议网络"
+    },
+    "artifact": {
+      "en": "Two-stage detector with learned proposals",
+      "zh": "带学习型候选区域的两阶段检测器"
+    },
+    "material": {
+      "en": "NeurIPS paper and detection pipeline",
+      "zh": "神经信息处理系统大会 论文与检测流水线"
+    },
+    "demo": {
+      "en": "Propose boxes, classify objects",
+      "zh": "提出候选框并分类目标"
+    },
+    "visual": "detector",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Region Proposal Network",
+          "zh": "区域建议网络"
+        },
+        "text": {
+          "en": "An RPN predicts likely object boxes directly from convolutional features instead of relying on a separate proposal method.",
+          "zh": "RPN 直接从卷积特征预测可能的目标框，而不是依赖外部候选区域方法。"
+        }
+      },
+      {
+        "label": {
+          "en": "Shared Features",
+          "zh": "共享特征"
+        },
+        "text": {
+          "en": "Proposal generation and object classification reuse the same feature maps, improving speed and consistency.",
+          "zh": "候选区域生成与目标分类复用同一组特征图，提高速度和一致性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Two-Stage Detection",
+          "zh": "两阶段检测"
+        },
+        "text": {
+          "en": "The system first proposes candidate boxes and then refines class labels and bounding boxes.",
+          "zh": "系统先提出候选框，再细化类别标签和边界框。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "R-CNN",
+        "zh": "R-CNN"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "YOLO",
+        "zh": "YOLO"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "China",
+        "zh": "中国"
+      },
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "GitHub",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "ShaoqingRen/faster_rcnn",
+          "zh": "任少卿/faster_rcnn"
+        },
+        "description": {
+          "en": "Author-linked MATLAB implementation repository for Faster R-CNN.",
+          "zh": "Faster R-CNN 作者关联的 MATLAB 实现仓库。"
+        },
+        "url": "https://github.com/ShaoqingRen/faster_rcnn",
+        "source": "https://github.com/ShaoqingRen/faster_rcnn",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open code repository",
+          "zh": "打开代码仓库"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+          "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测"
+        },
+        "url": "https://arxiv.org/abs/1506.01497"
+      },
+      {
+        "type": {
+          "en": "Code",
+          "zh": "代码"
+        },
+        "label": {
+          "en": "ShaoqingRen/faster_rcnn",
+          "zh": "任少卿/faster_rcnn"
+        },
+        "url": "https://github.com/ShaoqingRen/faster_rcnn"
+      },
+      {
+        "type": {
+          "en": "Model docs",
+          "zh": "模型文档"
+        },
+        "label": {
+          "en": "TorchVision Faster R-CNN model",
+          "zh": "TorchVision Faster R-CNN 模型"
+        },
+        "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Shared conv map",
+        "zh": "共享卷积特征图"
+      },
+      {
+        "en": "Anchors propose boxes",
+        "zh": "Anchors 提出候选框"
+      },
+      {
+        "en": "Class + box heads",
+        "zh": "分类与框回归头"
+      }
+    ]
+  }
+}

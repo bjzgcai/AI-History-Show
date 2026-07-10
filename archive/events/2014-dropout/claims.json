@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2014-dropout-summary",
+    "text": {
+      "en": "Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.",
+      "zh": "Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。"
+    },
+    "sourceIds": [
+      "dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+      "improving-neural-networks-by-preventing-co-adaptation"
+    ]
+  },
+  {
+    "id": "2014-dropout-quote",
+    "text": {
+      "en": "prevent neural networks from overfitting",
+      "zh": "防止神经网络过拟合"
+    },
+    "sourceIds": [
+      "dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"
+    ]
+  }
+]

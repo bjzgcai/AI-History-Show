@@ -1,0 +1,62 @@
+[
+  {
+    "id": "generative-adversarial-nets",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Generative Adversarial Nets",
+      "zh": "《生成对抗网络》"
+    },
+    "url": "https://arxiv.org/abs/1406.2661"
+  },
+  {
+    "id": "neurips-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "NeurIPS paper page",
+      "zh": "NeurIPS 论文页面"
+    },
+    "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
+  },
+  {
+    "id": "goodfellow-gan-tutorial",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Goodfellow GAN tutorial",
+      "zh": "古德费洛 GAN 教程"
+    },
+    "url": "https://arxiv.org/abs/1701.00160"
+  },
+  {
+    "id": "ian-goodfellow-profile",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Ian Goodfellow profile",
+      "zh": "伊恩·古德费洛个人网站"
+    },
+    "url": "https://www.iangoodfellow.com/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/ian-goodfellow.jpg"
+  }
+]

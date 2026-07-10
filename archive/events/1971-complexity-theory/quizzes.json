@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does NP-completeness help researchers compare?",
+      "zh": "NP 完全性帮助研究者比较什么？"
+    },
+    "options": [
+      {
+        "en": "The computational hardness of different problems",
+        "zh": "不同问题的计算困难性"
+      },
+      {
+        "en": "The brightness of computer screens",
+        "zh": "电脑屏幕的亮度"
+      },
+      {
+        "en": "The handwriting style of programmers",
+        "zh": "程序员的笔迹风格"
+      },
+      {
+        "en": "The physical weight of machines",
+        "zh": "机器的物理重量"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Polynomial-time reductions let researchers connect different problems and reason about shared hardness.",
+      "zh": "多项式时间归约让研究者把不同问题联系起来，并推理它们共享的困难性。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "complexity",
+      "reductions"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1974-frame-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+    "caption": {
+      "en": "Marvin Minsky portrait",
+      "zh": "马文·明斯基 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from MIT News obituary.",
+      "zh": "来自 麻省理工学院 新闻 讣闻的人物图。"
+    },
+    "sourceId": "marvin-minsky-obituary-mit-news",
+    "sourceName": {
+      "en": "MIT News",
+      "zh": "麻省理工学院 新闻"
+    },
+    "sourceUrl": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+    "originalImageUrl": "https://news.mit.edu/sites/default/files/images/201601/HP-MIT-Marvin-Minsky-02.jpg",
+    "rights": {
+      "en": "MIT News image; terms stated on MIT News media page.",
+      "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page."
+    },
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1974-frame-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+    "caption": {
+      "en": "Slot-default frame card",
+      "zh": "槽与默认值框架卡"
+    },
+    "subcaption": {
+      "en": "Local redraw for Frame, based on the listed source material.",
+      "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "a-framework-for-representing-knowledge",
+    "sourceName": {
+      "en": "MIT Media Lab course archive",
+      "zh": "麻省理工学院 Media Lab course archive"
+    },
+    "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1974-frame-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg",
+    "caption": {
+      "en": "Frame inheritance sketch",
+      "zh": "框架继承草图"
+    },
+    "subcaption": {
+      "en": "Local redraw for Frame, based on the listed source material.",
+      "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "a-framework-for-representing-knowledge",
+    "sourceName": {
+      "en": "MIT Media Lab course archive",
+      "zh": "麻省理工学院 Media Lab course archive"
+    },
+    "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

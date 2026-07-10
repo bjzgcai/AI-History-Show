@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1951-snarc-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/marvin-minsky.jpg",
+    "caption": {
+      "en": "Marvin Minsky portrait",
+      "zh": "马文·明斯基肖像"
+    },
+    "subcaption": {
+      "en": "Co-builder of SNARC.",
+      "zh": "SNARC 共同建造者。"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/marvin-minsky.jpg",
+    "originalImageUrl": "resources/images/figures/marvin-minsky.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1951-snarc-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg",
+    "caption": {
+      "en": "Maze reinforcement loop",
+      "zh": "迷宫强化循环"
+    },
+    "subcaption": {
+      "en": "Original local explainer of SNARC-style reward learning.",
+      "zh": "关于 SNARC 式奖励学习的本地原创解释图。"
+    },
+    "sourceId": "snarc-history-overview",
+    "sourceName": {
+      "en": "SNARC historical documentation",
+      "zh": "SNARC 历史资料"
+    },
+    "sourceUrl": "https://history-computer.com/snarc/",
+    "originalImageUrl": "https://history-computer.com/snarc/",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

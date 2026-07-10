@@ -1,0 +1,38 @@
+[
+  {
+    "id": "proving-theorems-by-pattern-recognition-i",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Proving theorems by pattern recognition I",
+      "zh": "通过模式识别证明定理 I"
+    },
+    "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/"
+  },
+  {
+    "id": "proving-theorems-by-pattern-recognition-ii",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "Proving Theorems by Pattern Recognition - II",
+      "zh": "通过模式识别证明定理（二）"
+    },
+    "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+  },
+  {
+    "id": "rockefeller-university-digital-commons-wang-hao",
+    "type": {
+      "en": "Photo",
+      "zh": "照片"
+    },
+    "label": {
+      "en": "Rockefeller University Digital Commons: Wang, Hao",
+      "zh": "Rockefeller University Digital Commons: 王浩, Hao"
+    },
+    "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/"
+  }
+]

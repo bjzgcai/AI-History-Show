@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a-style-based-generator-architecture-for-gans",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Style-Based Generator Architecture for GANs",
+      "zh": "《面向 GAN 的基于风格的生成器架构》"
+    },
+    "url": "https://arxiv.org/abs/1812.04948"
+  },
+  {
+    "id": "cvpr-open-access-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "CVPR open-access paper page",
+      "zh": "CVPR 开放论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html"
+  },
+  {
+    "id": "nvidia-stylegan-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "NVIDIA StyleGAN repository",
+      "zh": "NVIDIA StyleGAN 代码仓库"
+    },
+    "url": "https://github.com/NVlabs/stylegan"
+  },
+  {
+    "id": "nvidia-research-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "NVIDIA Research profile",
+      "zh": "NVIDIA Research 个人资料"
+    },
+    "url": "https://research.nvidia.com/person/tero-karras"
+  }
+]

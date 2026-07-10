@@ -9,6 +9,7 @@ const REPORTS_DIR = path.join(ROOT, 'reports');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
+const AI100_STORYLINE_ID = 'bench-council-ai100';
 const reportJsonPath = path.join(REPORTS_DIR, 'archive-validation-report.json');
 const reportMdPath = path.join(REPORTS_DIR, 'archive-validation-report.md');
 
@@ -37,8 +38,16 @@ function localizedComplete(value) {
 
 function existingPath(resourcePath) {
     if (!resourcePath || typeof resourcePath !== 'string') return false;
+    if (/^https?:\/\//.test(resourcePath)) return true;
     const absolutePath = path.isAbsolute(resourcePath) ? resourcePath : path.join(ROOT, resourcePath);
     return fs.existsSync(absolutePath);
+}
+
+function isEnglishUiLeak(value) {
+    const text = localizedComplete(value) ? value.zh : '';
+    return /\b(Open|Reference link only|downloadable implementation materials|paper record|project page|source card|Article)\b/.test(
+        text
+    );
 }
 
 function eventIds() {
@@ -168,13 +177,86 @@ function validateAssets(eventDir, assets, sourceIds, issues) {
     }
 }
 
+function validateArchiveLinkModule(eventDir, module, index, issues) {
+    const file = path.join(eventDir, 'variants', 'default.json');
+    const requiredLocalizedFields = ['site', 'title', 'description', 'license', 'action', 'usage'];
+    for (const field of requiredLocalizedFields) {
+        if (!localizedComplete(module[field])) {
+            issues.push(
+                issue(
+                    'error',
+                    'ai100.archiveLinkLocalizationMissing',
+                    file,
+                    `archiveLink #${index + 1} lacks bilingual ${field}`
+                )
+            );
+        } else if (isEnglishUiLeak(module[field])) {
+            issues.push(
+                issue(
+                    'error',
+                    'ai100.archiveLinkZhEnglishLeak',
+                    file,
+                    `archiveLink #${index + 1} has English UI copy in zh.${field}`
+                )
+            );
+        }
+    }
+    if (!module.url) {
+        issues.push(issue('error', 'ai100.archiveLinkUrlMissing', file, `archiveLink #${index + 1} lacks url`));
+    }
+}
+
+function validateAi100Event(eventDir, eventId, sources, assets, quizzes, variant, issues) {
+    const variantFile = path.join(eventDir, 'variants', 'default.json');
+    const achievement = variant && variant.achievement;
+    if (!achievement) {
+        issues.push(issue('error', 'ai100.achievementMissing', variantFile, `${eventId} lacks achievement data`));
+        return;
+    }
+
+    if (!Array.isArray(sources) || sources.length < 3) {
+        issues.push(
+            issue(
+                'error',
+                'ai100.sourcesTooFew',
+                path.join(eventDir, 'sources.json'),
+                `${eventId} needs at least 3 sources`
+            )
+        );
+    }
+    if (!Array.isArray(assets) || assets.length === 0) {
+        issues.push(
+            issue(
+                'error',
+                'ai100.assetsMissing',
+                path.join(eventDir, 'assets.json'),
+                `${eventId} has no archived assets`
+            )
+        );
+    }
+    if (!Array.isArray(quizzes) || quizzes.length === 0) {
+        issues.push(
+            issue('error', 'ai100.quizMissing', path.join(eventDir, 'quizzes.json'), `${eventId} has no archived quiz`)
+        );
+    }
+
+    const modules = Array.isArray(achievement.visualModules) ? achievement.visualModules : [];
+    if (modules.length === 0) {
+        issues.push(issue('error', 'ai100.visualModulesMissing', variantFile, `${eventId} has no visualModules`));
+    }
+    modules
+        .filter((module) => module && module.type === 'archiveLink')
+        .forEach((module, index) => validateArchiveLinkModule(eventDir, module, index, issues));
+}
+
 function validateEvent(eventId, issues) {
     const eventDir = path.join(EVENTS_DIR, eventId);
     const event = validateRequiredFile(eventDir, 'event.json', issues);
     const claims = validateRequiredFile(eventDir, 'claims.json', issues);
     const sources = validateRequiredFile(eventDir, 'sources.json', issues);
     const assets = validateRequiredFile(eventDir, 'assets.json', issues);
-    validateRequiredFile(eventDir, 'quizzes.json', issues);
+    const quizzes = validateRequiredFile(eventDir, 'quizzes.json', issues);
+    const variant = validateRequiredFile(path.join(eventDir, 'variants'), 'default.json', issues);
 
     const sourceIds = new Set(Array.isArray(sources) ? sources.map((source) => source.id).filter(Boolean) : []);
     if (!event) return;
@@ -200,6 +282,20 @@ function validateEvent(eventId, issues) {
     }
     validateClaims(eventDir, claims || [], sourceIds, issues);
     validateAssets(eventDir, assets || [], sourceIds, issues);
+    if (isAi100EventId(eventId)) {
+        validateAi100Event(eventDir, eventId, sources || [], assets || [], quizzes || [], variant || {}, issues);
+    }
+}
+
+function isAi100EventId(eventId) {
+    const storylineFile = path.join(STORYLINES_DIR, `${AI100_STORYLINE_ID}.json`);
+    if (!fs.existsSync(storylineFile)) return eventId === '2016-alphago' || eventId.startsWith('ai100-');
+    try {
+        const storyline = JSON.parse(fs.readFileSync(storylineFile, 'utf8'));
+        return (storyline.events || []).some((item) => item && item.eventId === eventId);
+    } catch (_error) {
+        return eventId === '2016-alphago' || eventId.startsWith('ai100-');
+    }
 }
 
 function validateStorylines(knownEventIds, issues) {

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2014-ms-coco-image-1",
+    "kind": "image",
+    "path": "https://tsungyilin.info/images/tsungyi.jpeg",
+    "caption": {
+      "en": "Tsung-Yi Lin portrait",
+      "zh": "林宗毅肖像"
+    },
+    "subcaption": {
+      "en": "MS COCO lead author",
+      "zh": "MS COCO 主要作者"
+    },
+    "sourceId": "tsung-yi-lin-homepage",
+    "sourceName": {
+      "en": "Tsung-Yi Lin homepage",
+      "zh": "林宗毅个人主页"
+    },
+    "sourceUrl": "https://tsungyilin.info/",
+    "originalImageUrl": "https://tsungyilin.info/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2014-ms-coco-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+    "caption": {
+      "en": "MS COCO explainer",
+      "zh": "MS COCO 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "microsoft-coco-common-objects-in-context",
+    "sourceName": {
+      "en": "COCO Dataset",
+      "zh": "COCO 数据集"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1405.0312",
+    "originalImageUrl": "https://arxiv.org/abs/1405.0312",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

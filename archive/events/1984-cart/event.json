@@ -1,0 +1,83 @@
+{
+  "id": "1984-cart",
+  "year": "1984",
+  "title": {
+    "en": "CART",
+    "zh": "CART 决策树"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, Berkeley",
+      "zh": "加州大学伯克利分校"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "美国伯克利"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Jerome Friedman",
+        "zh": "杰罗姆·弗里德曼"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Richard Olshen",
+        "zh": "理查德·奥尔申"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Charles Stone",
+        "zh": "查尔斯·斯通"
+      },
+      "role": {
+        "en": "Co-author of the CART monograph",
+        "zh": "CART 专著共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "classification and regression trees",
+    "zh": "分类与回归树"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Classification and Regression Trees",
+      "zh": "分类与回归树"
+    },
+    "workAuthors": {
+      "en": "Leo Breiman, Jerome H. Friedman, Richard A. Olshen, and Charles J. Stone, Wadsworth / Routledge monograph, 1984",
+      "zh": "利奥·布雷曼, 杰罗姆·H·弗里德曼、理查德·A·奥尔申、查尔斯·J·斯通, 沃兹沃思 / 劳特利奇专著, 1984"
+    },
+    "sourceUrl": "https://www.routledge.com/Classification-and-Regression-Trees/Breiman-Friedman-Olshen-Stone/p/book/9780412048418"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Decision Trees / CART",
+    "zh": "BenchCouncil AI100：决策树 / CART 决策树"
+  }
+}

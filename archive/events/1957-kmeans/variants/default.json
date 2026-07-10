@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>",
+    "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Signal quantization and pattern analysis both needed compact representatives for many observations.",
+        "zh": "信号量化和模式分析都需要为大量观测找到紧凑代表。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The algorithm repeatedly assigns each point to its closest centroid, then updates each centroid to the mean of its cluster.",
+        "zh": "算法反复把每个点分配给最近质心，再把每个质心更新为该簇的均值。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat k-means as a simple but enduring baseline for unsupervised learning. Its long-term legacy is the assignment-and-centroid loop that remains central to clustering, compression, initialization, vector quantization, and exploratory data analysis.",
+        "zh": "专家通常把 k-means 视为简单但持久的无监督学习基线。它的长期影响在于“分配样本 + 更新中心”的循环仍是聚类、压缩、初始化、向量量化和探索性数据分析的核心。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "Alternating centroid optimization",
+      "zh": "交替质心优化"
+    },
+    "artifact": {
+      "en": "Lloyd / k-means clustering loop",
+      "zh": "劳埃德 / k-means 聚类循环"
+    },
+    "material": {
+      "en": "Bell Labs manuscript and IEEE paper",
+      "zh": "贝尔实验室手稿与 IEEE 论文"
+    },
+    "demo": {
+      "en": "Move cluster centers until assignments stabilize",
+      "zh": "移动簇中心直到分配稳定"
+    },
+    "visual": "kmeans",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Centroid",
+          "zh": "质心"
+        },
+        "text": {
+          "en": "Each cluster is represented by its mean point.",
+          "zh": "每个簇由其均值点表示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Assignment Step",
+          "zh": "分配步骤"
+        },
+        "text": {
+          "en": "Points join the closest center.",
+          "zh": "样本加入最近中心。"
+        }
+      },
+      {
+        "label": {
+          "en": "Update Step",
+          "zh": "更新步骤"
+        },
+        "text": {
+          "en": "Centers move to the average of assigned points.",
+          "zh": "中心移动到所属样本均值。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "DBSCAN",
+        "zh": "DBSCAN"
+      },
+      {
+        "en": "Spectral clustering",
+        "zh": "谱聚类"
+      },
+      {
+        "en": "Lasso",
+        "zh": "Lasso"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New Jersey, United States",
+        "zh": "美国新泽西州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Pick centers",
+        "zh": "选择中心"
+      },
+      {
+        "en": "Assign points",
+        "zh": "分配样本"
+      },
+      {
+        "en": "Move means",
+        "zh": "移动均值"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Least squares quantization in PCM",
+          "zh": "PCM 中的最小二乘量化"
+        },
+        "description": {
+          "en": "IEEE record for Lloyd's least-squares quantization algorithm, later known as k-means.",
+          "zh": "IEEE 记录：劳埃德的最小二乘量化算法，后来称为 k-means。"
+        },
+        "url": "https://doi.org/10.1109/TIT.1982.1056489",
+        "source": "https://doi.org/10.1109/TIT.1982.1056489",
+        "action": {
+          "en": "Open IEEE record",
+          "zh": "打开 IEEE 记录"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Least squares quantization in PCM",
+          "zh": "PCM 中的最小二乘量化"
+        },
+        "url": "https://doi.org/10.1109/TIT.1982.1056489"
+      },
+      {
+        "type": {
+          "en": "History note",
+          "zh": "历史资料"
+        },
+        "label": {
+          "en": "Bell Labs k-means history note",
+          "zh": "贝尔实验室 k-means 历史资料"
+        },
+        "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn KMeans documentation",
+          "zh": "scikit-learn KMeans 文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Iris Flowers k-means clustering graphic",
+          "zh": "鸢尾花 k-means 聚类图"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+    "demoPanel": "sources"
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "id": "bench-council-ai100",
+  "title": {
+    "en": "AI Top 100 Achievements (BenchCouncil)",
+    "zh": "AI 百大成就（BenchCouncil）"
+  },
+  "events": [
+    {
+      "eventId": "1950-turing-test",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1958-lisp",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2016-alphago",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1971-complexity-theory",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1971-vc-theory",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1956-logic-theorist",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1958-wangs-algorithm",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1960-davis-putnam-dpll",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2014-adam",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2014-vgg",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1975-genetic-algorithm",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2015-u-net",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2015-faster-r-cnn",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1992-svm",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1984-cart",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1983-simulated-annealing",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1996-lasso",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2015-googlenet-inception",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1965-resolution-method",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1973-prolog",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1966-eliza",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1982-hopfield-network",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2014-dropout",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2016-yolo",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2013-word2vec",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2009-imagenet",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2013-dqn",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2003-lda",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1970-shrdlu",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1997-deep-blue",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1974-frame",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1965-dendral",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1999-sift",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2008-tsne",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1958-rosenblatt-perceptron",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2006-dbn",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1988-td-update",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1985-bayesian-network",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1990-otter",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2011-ibm-watson",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1951-strachey-draughts",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1994-chinook",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1959-pandemonium",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1984-cyc",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1980-xcon-r1",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1957-kmeans",
+      "variantId": "default"
+    },
+    {
+      "eventId": "1996-dbscan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "2000-spectral-clustering",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1967-knn",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1970-ridge",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2005-hog",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2006-surf",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1997-kernel-pca",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1999-nmf",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2000-isomap",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2000-lle",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1943-mcculloch-pitts-neuron",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1951-snarc",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1982-som",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1967-back-propagation",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1969-relu",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1980-neocognitron",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1989-lenet",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2000-neural-language-model",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2012-alexnet",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-resnet",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-batch-normalization",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2017-densenet",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2017-transformer",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2020-vit",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1997-lstm",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2014-gan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2014-neural-machine-translation-attention",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2018-bert",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2018-gpt",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2020-alphafold2",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2021-clip",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2021-dalle",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2022-stable-diffusion",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2023-segment-anything",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2021-swin-transformer",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2014-glove",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2014-conditional-gan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-dcgan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2017-wasserstein-gan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2017-cyclegan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2017-pix2pix",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2019-stylegan",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2013-variational-autoencoder",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-diffusion-model",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2005-gnn",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2016-gcn",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2017-gat",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2016-nas",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-deep-compression",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-knowledge-distillation",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2014-ms-coco",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1989-q-learning",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-2015-ddpg",
+      "variantId": "default"
+    },
+    {
+      "eventId": "ai100-1983-actor-critic",
+      "variantId": "default"
+    }
+  ]
+}

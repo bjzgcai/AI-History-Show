@@ -1,0 +1,47 @@
+[
+  {
+    "id": "adaptation-in-natural-and-artificial-systems",
+    "type": {
+      "en": "Book",
+      "zh": "图书"
+    },
+    "label": {
+      "en": "Adaptation in Natural and Artificial Systems",
+      "zh": "自然系统与人工系统中的适应"
+    },
+    "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
+  },
+  {
+    "id": "deap-evolutionary-computation-framework",
+    "type": {
+      "en": "Toolkit",
+      "zh": "工具包"
+    },
+    "label": {
+      "en": "DEAP evolutionary computation framework",
+      "zh": "DEAP evolutionary computation framework"
+    },
+    "url": "https://deap.readthedocs.io/en/master/"
+  },
+  {
+    "id": "ecj-evolutionary-computation-system",
+    "type": {
+      "en": "Toolkit",
+      "zh": "工具包"
+    },
+    "label": {
+      "en": "ECJ evolutionary computation system",
+      "zh": "ECJ evolutionary computation system"
+    },
+    "url": "https://cs.gmu.edu/~eclab/projects/ecj/"
+  },
+  {
+    "id": "physics-today",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "Physics Today",
+    "url": "https://physicstoday.aip.org/news/john-henry-holland"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "1980-xcon-r1",
+  "year": "1978-1980",
+  "title": {
+    "en": "XCON-R1",
+    "zh": "XCON / R1 专家系统"
+  },
+  "location": {
+    "name": {
+      "en": "Carnegie Mellon University",
+      "zh": "卡内基梅隆大学"
+    },
+    "country": {
+      "en": "Pennsylvania, United States",
+      "zh": "美国宾夕法尼亚州"
+    },
+    "coordinates": [
+      40.4433,
+      -79.9436
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John McDermott",
+        "zh": "约翰·麦克德莫特"
+      },
+      "role": {
+        "en": "Developer of R1/XCON",
+        "zh": "R1/XCON 开发者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Production rules configured real orders",
+    "zh": "产生式规则配置真实订单"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "R1: An Expert in the Computer Systems Domain",
+      "zh": "R1：计算机系统领域的专家"
+    },
+    "workAuthors": {
+      "en": "John McDermott",
+      "zh": "约翰·麦克德莫特"
+    },
+    "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Expert system / XCON-R1",
+    "zh": "BenchCouncil AI100：专家系统 / XCON / R1 专家系统"
+  }
+}

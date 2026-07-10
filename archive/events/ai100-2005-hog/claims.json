@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2005-hog-summary",
+    "text": {
+      "en": "Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.",
+      "zh": "纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。"
+    },
+    "sourceIds": [
+      "histograms-of-oriented-gradients-for-human-detection",
+      "ieee-cvpr-paper-record"
+    ]
+  },
+  {
+    "id": "ai100-2005-hog-quote",
+    "text": {
+      "en": "Histograms of Oriented Gradients for Human Detection",
+      "zh": "用于人体检测的方向梯度直方图"
+    },
+    "sourceIds": [
+      "histograms-of-oriented-gradients-for-human-detection"
+    ]
+  }
+]

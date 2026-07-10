@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1967-back-propagation",
+  "year": 1967,
+  "title": {
+    "en": "Back-propagation",
+    "zh": "反向传播"
+  },
+  "location": {
+    "name": {
+      "en": "Kyushu University and UC San Diego",
+      "zh": "九州大学与加州大学圣迭戈分校"
+    },
+    "country": {
+      "en": "Fukuoka and San Diego",
+      "zh": "福冈与圣迭戈"
+    },
+    "coordinates": [
+      32.8731,
+      130.742
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Shunichi Amari",
+        "zh": "甘利俊一"
+      },
+      "role": {
+        "en": "Early contributor to adaptive neural learning",
+        "zh": "自适应神经学习早期贡献者"
+      }
+    },
+    {
+      "name": {
+        "en": "David Rumelhart",
+        "zh": "大卫·鲁梅尔哈特"
+      },
+      "role": {
+        "en": "Co-author of the 1986 back-propagation paper",
+        "zh": "1986 年反向传播论文共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Learning representations by back-propagating errors",
+    "zh": "通过反向传播误差学习表示"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Learning representations by back-propagating errors",
+      "zh": "通过反向传播误差学习表示"
+    },
+    "workAuthors": {
+      "en": "David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+      "zh": "大卫·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯，《Nature》，1986"
+    },
+    "sourceUrl": "https://doi.org/10.1038/323533a0"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

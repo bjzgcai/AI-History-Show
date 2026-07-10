@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2017-cyclegan-image-1",
+    "kind": "image",
+    "path": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+    "caption": {
+      "en": "Jun-Yan Zhu portrait",
+      "zh": "朱俊彦肖像"
+    },
+    "subcaption": {
+      "en": "CycleGAN lead author",
+      "zh": "CycleGAN 主要作者"
+    },
+    "sourceId": "jun-yan-zhu-homepage",
+    "sourceName": {
+      "en": "Jun-Yan Zhu homepage",
+      "zh": "朱俊彦个人主页"
+    },
+    "sourceUrl": "https://www.cs.cmu.edu/~junyanz/",
+    "originalImageUrl": "https://www.cs.cmu.edu/~junyanz/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2017-cyclegan-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg",
+    "caption": {
+      "en": "CycleGAN explainer",
+      "zh": "CycleGAN 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+    "sourceName": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1703.10593",
+    "originalImageUrl": "https://arxiv.org/abs/1703.10593",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

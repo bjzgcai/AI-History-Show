@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2015-knowledge-distillation",
+  "year": 2015,
+  "title": {
+    "en": "Knowledge Distillation",
+    "zh": "知识蒸馏"
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.3861,
+      -122.0839
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Knowledge distillation co-author",
+        "zh": "知识蒸馏共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Distilling the knowledge in a neural network",
+    "zh": "蒸馏神经网络中的知识"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Distilling the Knowledge in a Neural Network",
+      "zh": "蒸馏神经网络中的知识"
+    },
+    "workAuthors": {
+      "en": "Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+      "zh": "杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1503.02531"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

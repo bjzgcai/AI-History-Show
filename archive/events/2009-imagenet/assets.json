@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2009-imagenet-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+    "caption": {
+      "en": "Fei-Fei Li portrait",
+      "zh": "李飞飞肖像"
+    },
+    "subcaption": {
+      "en": "Stanford Profiles portrait for Fei-Fei Li.",
+      "zh": "斯坦福个人资料库 中的李飞飞人物图。"
+    },
+    "sourceId": "stanford-profile-fei-fei-li",
+    "sourceName": {
+      "en": "Stanford Profiles",
+      "zh": "斯坦福个人资料库"
+    },
+    "sourceUrl": "https://profiles.stanford.edu/fei-fei-li",
+    "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/15052/resources/profilephoto/350x350.1550534393295.jpg",
+    "rights": "Institution profile photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2009-imagenet-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
+    "caption": {
+      "en": "WordNet hierarchy",
+      "zh": "WordNet 层级"
+    },
+    "subcaption": {
+      "en": "Local redraw for ImageNet, based on the listed source material.",
+      "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "imagenet-a-large-scale-hierarchical-image-database",
+    "sourceName": {
+      "en": "CVPR / IEEE",
+      "zh": "计算机视觉与模式识别会议 / IEEE"
+    },
+    "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2009-imagenet-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg",
+    "caption": {
+      "en": "ILSVRC benchmark",
+      "zh": "ILSVRC 基准"
+    },
+    "subcaption": {
+      "en": "Local redraw for ImageNet, based on the listed source material.",
+      "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "imagenet-a-large-scale-hierarchical-image-database",
+    "sourceName": {
+      "en": "CVPR / IEEE",
+      "zh": "计算机视觉与模式识别会议 / IEEE"
+    },
+    "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

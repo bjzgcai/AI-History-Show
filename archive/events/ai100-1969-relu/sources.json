@@ -1,0 +1,62 @@
+[
+  {
+    "id": "deep-sparse-rectifier-neural-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Deep Sparse Rectifier Neural Networks",
+      "zh": "《深度稀疏整流神经网络》"
+    },
+    "url": "https://proceedings.mlr.press/v15/glorot11a.html"
+  },
+  {
+    "id": "rectified-linear-units-improve-restricted-boltzmann-machines",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+      "zh": "《整流线性单元改进受限玻尔兹曼机》"
+    },
+    "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf"
+  },
+  {
+    "id": "rectifier-activation-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Rectifier activation overview",
+      "zh": "整流激活函数概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"
+  },
+  {
+    "id": "yoshua-bengio-profile-at-mila",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Yoshua Bengio profile at Mila",
+      "zh": "Mila 的约书亚·本吉奥资料"
+    },
+    "url": "https://mila.quebec/en/directory/yoshua-bengio"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg"
+  }
+]

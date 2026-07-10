@@ -1,0 +1,53 @@
+{
+  "id": "1965-dendral",
+  "year": "1965",
+  "title": {
+    "en": "DENDRAL",
+    "zh": "DENDRAL"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Edward Feigenbaum",
+        "zh": "爱德华·费根鲍姆"
+      },
+      "role": {
+        "en": "Leader in expert-system AI",
+        "zh": "专家系统 AI 代表人物"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Rule-guided chemical structure inference",
+    "zh": "规则引导的化学结构推断"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Chemical inference paper record",
+      "zh": "化学推断论文记录"
+    },
+    "workAuthors": {
+      "en": "Edward Feigenbaum",
+      "zh": "爱德华·费根鲍姆"
+    },
+    "sourceUrl": "https://doi.org/10.1021/ci60034a002"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Expert systems / DENDRAL",
+    "zh": "BenchCouncil AI100：专家系统 / DENDRAL"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "question": {
+      "en": "What SAT-solving structure did DPLL make central?",
+      "zh": "DPLL 让 SAT 求解的哪种结构成为核心？"
+    },
+    "options": [
+      {
+        "en": "Branching, propagation, and backtracking",
+        "zh": "分支、传播与回溯"
+      },
+      {
+        "en": "Painting a circuit board",
+        "zh": "给电路板上色"
+      },
+      {
+        "en": "Sorting portraits by brightness",
+        "zh": "按亮度排序肖像"
+      },
+      {
+        "en": "Replacing logic with audio signals",
+        "zh": "用音频信号替代逻辑"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "DPLL recursively branches on assignments, propagates forced literals, and backtracks when a contradiction appears.",
+      "zh": "DPLL 递归选择赋值分支，传播被迫文字，并在出现矛盾时回溯。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "sat",
+      "search",
+      "theorem-proving"
+    ]
+  }
+]

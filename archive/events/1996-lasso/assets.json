@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1996-lasso-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+    "caption": {
+      "en": "Robert Tibshirani portrait",
+      "zh": "罗伯特·蒂布希拉尼 肖像"
+    },
+    "subcaption": {
+      "en": "Profile photo from Stanford Profiles.",
+      "zh": "来自 斯坦福个人资料库 的人物照片。"
+    },
+    "sourceId": "stanford-profiles",
+    "sourceName": {
+      "en": "Stanford Profiles",
+      "zh": "斯坦福个人资料库"
+    },
+    "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+    "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/4688/resources/profilephoto/350x350.1509552478140.jpg",
+    "rights": "Institution profile photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Lasso author portrait",
+      "zh": "历史人物 / Lasso 作者肖像"
+    }
+  },
+  {
+    "id": "1996-lasso-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+    "caption": {
+      "en": "L1 constraint geometry",
+      "zh": "L1 约束几何"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Lasso, based on the related source material.",
+      "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "regression-shrinkage-and-selection-via-the-lasso",
+    "sourceName": "JRSS / Wiley",
+    "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "1996-lasso-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg",
+    "caption": {
+      "en": "Coefficient path",
+      "zh": "系数路径"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Lasso, based on the related source material.",
+      "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "regression-shrinkage-and-selection-via-the-lasso",
+    "sourceName": "JRSS / Wiley",
+    "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

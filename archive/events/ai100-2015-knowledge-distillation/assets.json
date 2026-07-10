@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2015-knowledge-distillation-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/geoffrey-hinton.jpg",
+    "caption": {
+      "en": "Geoffrey Hinton portrait",
+      "zh": "杰弗里·辛顿肖像"
+    },
+    "subcaption": {
+      "en": "Knowledge distillation co-author",
+      "zh": "知识蒸馏共同作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/geoffrey-hinton.jpg",
+    "originalImageUrl": "resources/images/figures/geoffrey-hinton.jpg",
+    "rights": {
+      "en": "Local project image; reuse rights inherited from existing project asset metadata.",
+      "zh": "本地项目图片；复用权利沿用现有项目素材元数据。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2015-knowledge-distillation-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg",
+    "caption": {
+      "en": "Knowledge Distillation explainer",
+      "zh": "知识蒸馏 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "distilling-the-knowledge-in-a-neural-network",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1503.02531",
+    "originalImageUrl": "https://arxiv.org/abs/1503.02531",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

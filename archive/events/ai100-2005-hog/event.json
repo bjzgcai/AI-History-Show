@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2005-hog",
+  "year": 2005,
+  "title": {
+    "en": "HOG",
+    "zh": "HOG 方向梯度直方图"
+  },
+  "location": {
+    "name": {
+      "en": "INRIA",
+      "zh": "INRIA"
+    },
+    "country": {
+      "en": "Grenoble, France",
+      "zh": "法国格勒诺布尔"
+    },
+    "coordinates": [
+      45.1938,
+      5.7681
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Navneet Dalal",
+        "zh": "纳夫尼特·达拉尔"
+      },
+      "role": {
+        "en": "Co-author of HOG",
+        "zh": "HOG 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Bill Triggs",
+        "zh": "比尔·特里格斯"
+      },
+      "role": {
+        "en": "Co-author of HOG",
+        "zh": "HOG 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Histograms of Oriented Gradients for Human Detection",
+    "zh": "用于人体检测的方向梯度直方图"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Histograms of Oriented Gradients for Human Detection",
+      "zh": "用于人体检测的方向梯度直方图"
+    },
+    "workAuthors": {
+      "en": "Navneet Dalal and Bill Triggs, CVPR, 2005",
+      "zh": "纳夫尼特·达拉尔、比尔·特里格斯，CVPR，2005"
+    },
+    "sourceUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2017-gat",
+  "year": 2017,
+  "title": {
+    "en": "GAT",
+    "zh": "GAT"
+  },
+  "location": {
+    "name": {
+      "en": "University of Cambridge",
+      "zh": "University of Cambridge"
+    },
+    "country": {
+      "en": "Cambridge, United Kingdom",
+      "zh": "Cambridge, United Kingdom"
+    },
+    "coordinates": [
+      52.2053,
+      0.1218
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Petar Velickovic",
+        "zh": "佩塔尔·韦利奇科维奇"
+      },
+      "role": {
+        "en": "GAT lead author",
+        "zh": "GAT 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Graph attention networks",
+    "zh": "图注意力网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Graph Attention Networks",
+      "zh": "图注意力网络"
+    },
+    "workAuthors": {
+      "en": "Petar Velickovic et al., ICLR, 2018",
+      "zh": "佩塔尔·韦利奇科维奇等，ICLR，2018"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1710.10903"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

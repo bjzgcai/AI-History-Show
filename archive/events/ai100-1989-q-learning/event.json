@@ -1,0 +1,53 @@
+{
+  "id": "ai100-1989-q-learning",
+  "year": 1989,
+  "title": {
+    "en": "Q-Learning",
+    "zh": "Q-Learning"
+  },
+  "location": {
+    "name": {
+      "en": "King's College Cambridge",
+      "zh": "King's College Cambridge"
+    },
+    "country": {
+      "en": "Cambridge, United Kingdom",
+      "zh": "Cambridge, United Kingdom"
+    },
+    "coordinates": [
+      52.2043,
+      0.1166
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Christopher Watkins",
+        "zh": "克里斯托弗·沃特金斯"
+      },
+      "role": {
+        "en": "Q-learning lead author",
+        "zh": "Q-learning 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Learning from delayed rewards",
+    "zh": "从延迟奖励中学习"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Learning from Delayed Rewards",
+      "zh": "从延迟奖励中学习"
+    },
+    "workAuthors": {
+      "en": "Christopher Watkins, PhD thesis, 1989; Watkins and Dayan, 1992",
+      "zh": "克里斯托弗·沃特金斯，博士论文，1989；沃特金斯和彼得·戴扬，1992"
+    },
+    "sourceUrl": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "description": {
+    "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>",
+    "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Published Paper",
+        "zh": "论文材料"
+      },
+      "html": {
+        "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols.",
+        "zh": "图灵 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。图灵数字档案 也保存了这篇原文，适合与现代评测协议并置展示。"
+      }
+    },
+    {
+      "label": {
+        "en": "Evaluation Logic",
+        "zh": "评估逻辑"
+      },
+      "html": {
+        "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance.",
+        "zh": "图灵测试最值得展示的是评估设计：盲测交互、受限通道、人类判断和明确成功标准。这让它自然连接到红队测试、人类偏好评测和基准治理。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat the Turing Test as historically foundational and philosophically fertile, even though it is not a complete modern definition of intelligence. Its long-term legacy is methodological: it made machine intelligence discussable through observable interaction, human judgment, and comparison.",
+        "zh": "专家通常认为，图灵测试在历史上具有奠基意义，在哲学上也富有启发性，但它并不是现代智能的完整定义。它的长期影响主要体现在方法论上：它让机器智能能够通过可观察互动、人类判断和比较来讨论。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Theory",
+      "zh": "理论"
+    },
+    "method": {
+      "en": "Behavioral evaluation",
+      "zh": "行为评估"
+    },
+    "artifact": {
+      "en": "Imitation game protocol",
+      "zh": "模仿游戏协议"
+    },
+    "material": {
+      "en": "Paper + archive",
+      "zh": "论文 + 档案"
+    },
+    "demo": {
+      "en": "Blind transcript vote",
+      "zh": "匿名对话投票"
+    },
+    "visual": "transcript",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Imitation Game",
+          "zh": "模仿游戏"
+        },
+        "text": {
+          "en": "Turing's setup hides identity and asks a judge to compare typed answers from a human and a machine. It turns intelligence into an observable interaction rather than an internal claim.",
+          "zh": "图灵的设置遮蔽身份，让裁判比较人和机器的文字回答。它把智能变成可观察的互动，而不是关于内部状态的主张。"
+        }
+      },
+      {
+        "label": {
+          "en": "Behavioral Evaluation",
+          "zh": "行为评估"
+        },
+        "text": {
+          "en": "The test judges performance through conversation under a controlled interface. The protocol, not the machine's construction, becomes the evidence.",
+          "zh": "测试在受控界面中通过对话判断表现。成为证据的是评估协议，而不是机器由什么构成。"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Blind channel",
+        "zh": "盲测通道"
+      },
+      {
+        "en": "Human judgment",
+        "zh": "人类判断"
+      },
+      {
+        "en": "Evaluation debate",
+        "zh": "评估争议"
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      },
+      {
+        "en": "IBM Watson",
+        "zh": "IBM Watson"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Internet Archive",
+          "zh": "互联网档案馆"
+        },
+        "title": {
+          "en": "Computing Machinery and Intelligence archive preview",
+          "zh": "《计算机器与智能》档案预览"
+        },
+        "description": {
+          "en": "Digitized access page for Turing's 1950 Mind paper, showing the title, author, publication date and download options.",
+          "zh": "图灵 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
+        },
+        "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+        "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+        "license": {
+          "en": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+          "zh": "权利状态不明确；互联网档案馆提供数字访问，但页面未说明清晰的商业复用许可。"
+        },
+        "usage": {
+          "en": "Source material image / Archival reference",
+          "zh": "原始材料入口 / 档案参考"
+        },
+        "action": {
+          "en": "Open archive preview",
+          "zh": "打开档案预览"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Computing Machinery and Intelligence",
+          "zh": "计算机器与智能"
+        },
+        "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+      },
+      {
+        "type": {
+          "en": "Archive",
+          "zh": "档案"
+        },
+        "label": {
+          "en": "Turing Digital Archive",
+          "zh": "图灵数字档案"
+        },
+        "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence"
+      },
+      {
+        "type": {
+          "en": "Archive",
+          "zh": "档案"
+        },
+        "label": {
+          "en": "Internet Archive digital preview",
+          "zh": "互联网档案馆 数字化预览"
+        },
+        "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up"
+      },
+      {
+        "type": {
+          "en": "Context",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Stanford Encyclopedia of Philosophy",
+          "zh": "斯坦福哲学百科全书"
+        },
+        "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1951-strachey-draughts-summary",
+    "text": {
+      "en": "Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.",
+      "zh": "克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。"
+    },
+    "sourceIds": [
+      "logical-or-non-mathematical-programmes",
+      "computer-pioneers-christopher-strachey"
+    ]
+  },
+  {
+    "id": "1951-strachey-draughts-quote",
+    "text": {
+      "en": "Non-numerical programs could play",
+      "zh": "非数值程序也可以对弈"
+    },
+    "sourceIds": [
+      "logical-or-non-mathematical-programmes"
+    ]
+  }
+]

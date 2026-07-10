@@ -1,0 +1,83 @@
+{
+  "id": "1960-davis-putnam-dpll",
+  "year": "1960-1962",
+  "title": {
+    "en": "Davis-Putnam & DPLL",
+    "zh": "DP/DPLL 算法"
+  },
+  "location": {
+    "name": {
+      "en": "New York University / Princeton University / RPI",
+      "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
+    },
+    "country": {
+      "en": "New York and Princeton, United States",
+      "zh": "美国，纽约与普林斯顿"
+    },
+    "coordinates": [
+      40.7295,
+      -73.9965
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Davis",
+        "zh": "马丁·戴维斯"
+      },
+      "role": {
+        "en": "Co-developed Davis-Putnam and DPLL procedures",
+        "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
+      }
+    },
+    {
+      "name": {
+        "en": "Hilary Putnam",
+        "zh": "希拉里·普特南"
+      },
+      "role": {
+        "en": "Co-authored the 1960 Davis-Putnam procedure",
+        "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
+      }
+    },
+    {
+      "name": {
+        "en": "George Logemann",
+        "zh": "乔治·洛格曼"
+      },
+      "role": {
+        "en": "Co-authored the 1962 DPLL program paper",
+        "zh": "共同撰写 1962 年 DPLL 程序论文"
+      }
+    },
+    {
+      "name": {
+        "en": "Donald W. Loveland",
+        "zh": "唐纳德·W·洛夫兰"
+      },
+      "role": {
+        "en": "Co-authored the 1962 DPLL program paper",
+        "zh": "共同撰写 1962 年 DPLL 程序论文"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "a uniform proof procedure for quantification theory is given",
+    "zh": "给出了量词理论的统一证明过程"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Computing Procedure for Quantification Theory",
+      "zh": "量词理论的计算过程"
+    },
+    "workAuthors": {
+      "en": "Martin Davis and Hilary Putnam, Journal of the ACM, 1960",
+      "zh": "马丁·戴维斯、希拉里·普特南, 《ACM 杂志》, 1960"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/321033.321034"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Davis-Putnam algorithm & DPLL",
+    "zh": "BenchCouncil AI100：自动定理证明 / Davis-Putnam 算法与 DPLL"
+  }
+}

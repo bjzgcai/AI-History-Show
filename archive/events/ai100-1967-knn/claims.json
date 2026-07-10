@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1967-knn-summary",
+    "text": {
+      "en": "Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.",
+      "zh": "托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。"
+    },
+    "sourceIds": [
+      "nearest-neighbor-pattern-classification",
+      "stanford-hosted-paper-pdf"
+    ]
+  },
+  {
+    "id": "ai100-1967-knn-quote",
+    "text": {
+      "en": "Nearest neighbor pattern classification",
+      "zh": "最近邻模式分类"
+    },
+    "sourceIds": [
+      "nearest-neighbor-pattern-classification"
+    ]
+  }
+]

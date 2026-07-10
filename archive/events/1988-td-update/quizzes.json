@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does a TD update compare?",
+      "zh": "TD 更新比较什么？"
+    },
+    "options": [
+      {
+        "en": "The current value estimate with reward plus next value estimate",
+        "zh": "当前价值估计与“奖励加下一价值估计”"
+      },
+      {
+        "en": "Two unrelated image captions",
+        "zh": "两个无关图像标题"
+      },
+      {
+        "en": "A molecule with a chess position",
+        "zh": "一个分子与一个棋局"
+      },
+      {
+        "en": "Only final episode reward after all learning stops",
+        "zh": "学习停止后才看的最终回合奖励"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "TD learning bootstraps by using the next prediction as part of the learning target.",
+      "zh": "TD 学习用下一步预测作为学习目标的一部分来进行自举。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "reinforcement-learning",
+      "value"
+    ]
+  }
+]

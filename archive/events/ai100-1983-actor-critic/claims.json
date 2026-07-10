@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1983-actor-critic-summary",
+    "text": {
+      "en": "Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.",
+      "zh": "Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。"
+    },
+    "sourceIds": [
+      "neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+      "reinforcement-learning-an-introduction"
+    ]
+  },
+  {
+    "id": "ai100-1983-actor-critic-quote",
+    "text": {
+      "en": "Neuronlike adaptive elements that can solve difficult learning control problems",
+      "zh": "能够解决困难学习控制问题的类神经自适应元件"
+    },
+    "sourceIds": [
+      "neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems"
+    ]
+  }
+]

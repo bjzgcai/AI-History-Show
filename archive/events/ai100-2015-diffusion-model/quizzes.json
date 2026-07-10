@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does a diffusion model learn to reverse?",
+      "zh": "扩散模型学习逆转什么？"
+    },
+    "options": [
+      {
+        "en": "A gradual noising process",
+        "zh": "逐步加噪过程"
+      },
+      {
+        "en": "A database migration",
+        "zh": "数据库迁移"
+      },
+      {
+        "en": "A chess tournament bracket",
+        "zh": "棋类赛程表"
+      },
+      {
+        "en": "Only a dictionary sort",
+        "zh": "只有字典排序"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Diffusion models learn denoising steps that turn noise back into samples.",
+      "zh": "扩散模型学习把噪声还原为样本的去噪步骤。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "diffusion-model",
+      "ai100"
+    ]
+  }
+]

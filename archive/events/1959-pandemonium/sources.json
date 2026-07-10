@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pandemonium-a-paradigm-for-learning",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Pandemonium: A Paradigm for Learning",
+      "zh": "群魔殿：一种学习范式"
+    },
+    "url": "https://doi.org/10.1007/978-1-4899-1221-6_4"
+  },
+  {
+    "id": "pandemonium-architecture-image",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Pandemonium architecture image",
+      "zh": "Pandemonium 架构图片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg"
+  },
+  {
+    "id": "oliver-selfridge-portrait",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Oliver Selfridge portrait",
+      "zh": "奥利弗·塞尔弗里奇 人物照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg"
+  },
+  {
+    "id": "oliver-selfridge-obituary-the-guardian",
+    "type": {
+      "en": "Obituary",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "Oliver Selfridge obituary, The Guardian",
+      "zh": "奥利弗·塞尔弗里奇 讣告，卫报"
+    },
+    "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary"
+  }
+]

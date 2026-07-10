@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. This made alignment a learned, differentiable part of sequence-to-sequence modeling.</p>",
+    "zh": "<p>兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. This made alignment a learned, differentiable part of sequence-to-sequence modeling.",
+        "zh": "兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat neural attention for translation as the bridge from recurrent encoder-decoder systems to transformer-style architectures. Its long-term legacy is making learned token-to-token relevance a central operation in language, vision, and multimodal AI.",
+        "zh": "专家通常把神经翻译中的注意力视为从循环编码器-解码器系统走向 Transformer 式架构的桥梁。它的长期影响在于让学习得到的令牌相关性成为语言、视觉和多模态 AI 的核心操作。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural machine translation",
+      "zh": "神经机器翻译"
+    },
+    "method": {
+      "en": "Differentiable alignment attention",
+      "zh": "可微分对齐注意力"
+    },
+    "artifact": {
+      "en": "Additive attention mechanism",
+      "zh": "加性注意力机制"
+    },
+    "material": {
+      "en": "ICLR paper",
+      "zh": "ICLR 论文"
+    },
+    "demo": {
+      "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+      "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+    },
+    "visual": "attentionSeq",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Alignment",
+          "zh": "对齐"
+        },
+        "text": {
+          "en": "The model learns which source words matter for a target word.",
+          "zh": "模型学习目标词对应哪些源词。"
+        }
+      },
+      {
+        "label": {
+          "en": "Context Vector",
+          "zh": "上下文向量"
+        },
+        "text": {
+          "en": "Weighted source states guide decoding.",
+          "zh": "加权源状态指导解码。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "LSTM",
+        "zh": "LSTM"
+      },
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Encoder states",
+        "zh": "Encoder states"
+      },
+      {
+        "en": "Attention weights",
+        "zh": "Attention weights"
+      },
+      {
+        "en": "Decoder word",
+        "zh": "Decoder word"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+        },
+        "description": {
+          "en": "Open paper introducing learned attention for neural translation.",
+          "zh": "介绍神经翻译学习型注意力的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1409.0473",
+        "source": "https://arxiv.org/abs/1409.0473",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "zh": "《通过联合学习对齐与翻译实现神经机器翻译》"
+        },
+        "url": "https://arxiv.org/abs/1409.0473"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "ICLR 2015 paper page",
+          "zh": "ICLR 2015 论文页面"
+        },
+        "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Attention mechanism overview",
+          "zh": "注意力机制概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Yoshua Bengio lab profile",
+          "zh": "约书亚·本吉奥 Mila 资料"
+        },
+        "url": "https://mila.quebec/en/person/yoshua-bengio/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper",
+          "zh": "ICLR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+          "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+        }
+      }
+    ]
+  }
+}

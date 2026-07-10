@@ -1,0 +1,50 @@
+[
+  {
+    "id": "on-the-uniform-convergence-of-relative-frequencies",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "On the Uniform Convergence of Relative Frequencies",
+      "zh": "相对频率的一致收敛"
+    },
+    "url": "https://epubs.siam.org/doi/10.1137/1116025"
+  },
+  {
+    "id": "the-nature-of-statistical-learning-theory",
+    "type": {
+      "en": "Book",
+      "zh": "图书"
+    },
+    "label": {
+      "en": "The Nature of Statistical Learning Theory",
+      "zh": "统计学习理论的本质"
+    },
+    "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0"
+  },
+  {
+    "id": "an-overview-of-statistical-learning-theory",
+    "type": {
+      "en": "Overview",
+      "zh": "综述"
+    },
+    "label": {
+      "en": "An Overview of Statistical Learning Theory",
+      "zh": "统计学习理论概览"
+    },
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+  },
+  {
+    "id": "simons-foundation",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Simons Foundation",
+      "zh": "西蒙斯基金会"
+    },
+    "url": "https://www.simonsfoundation.org/people/vladimir-vapnik/"
+  }
+]

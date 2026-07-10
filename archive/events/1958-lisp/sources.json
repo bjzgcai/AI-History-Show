@@ -1,0 +1,62 @@
+[
+  {
+    "id": "recursive-functions-of-symbolic-expressions",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Recursive Functions of Symbolic Expressions",
+      "zh": "符号表达式的递归函数"
+    },
+    "url": "https://www-formal.stanford.edu/jmc/recursive.html"
+  },
+  {
+    "id": "lisp-i-programmer-s-manual",
+    "type": {
+      "en": "Manual",
+      "zh": "手册"
+    },
+    "label": {
+      "en": "LISP I Programmer's Manual",
+      "zh": "LISP I 程序员手册"
+    },
+    "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view"
+  },
+  {
+    "id": "history-of-lisp",
+    "type": {
+      "en": "History",
+      "zh": "历史"
+    },
+    "label": {
+      "en": "History of Lisp",
+      "zh": "Lisp 史"
+    },
+    "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg"
+  },
+  {
+    "id": "stanford-john-mccarthy",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Stanford / John McCarthy",
+      "zh": "斯坦福大学 / 约翰·麦卡锡"
+    },
+    "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2014-glove",
+  "year": 2014,
+  "title": {
+    "en": "GloVe",
+    "zh": "GloVe"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jeffrey Pennington",
+        "zh": "杰弗里·彭宁顿"
+      },
+      "role": {
+        "en": "GloVe lead author",
+        "zh": "GloVe 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Global vectors for word representation",
+    "zh": "用于词表示的全局向量"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "GloVe: Global Vectors for Word Representation",
+      "zh": "GloVe：用于词表示的全局向量"
+    },
+    "workAuthors": {
+      "en": "Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+      "zh": "杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
+    },
+    "sourceUrl": "https://aclanthology.org/D14-1162/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

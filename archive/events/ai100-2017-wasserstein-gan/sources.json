@@ -1,0 +1,50 @@
+[
+  {
+    "id": "wasserstein-generative-adversarial-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Wasserstein Generative Adversarial Networks",
+      "zh": "《Wasserstein 生成对抗网络》"
+    },
+    "url": "https://proceedings.mlr.press/v70/arjovsky17a.html"
+  },
+  {
+    "id": "improved-training-of-wasserstein-gans",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Improved Training of Wasserstein GANs",
+      "zh": "《Wasserstein GAN 的改进训练》"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html"
+  },
+  {
+    "id": "wasserstein-gan-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Wasserstein GAN overview",
+      "zh": "Wasserstein GAN 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN"
+  },
+  {
+    "id": "leon-bottou-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Leon Bottou homepage",
+      "zh": "莱昂·博图个人主页"
+    },
+    "url": "https://leon.bottou.org/"
+  }
+]

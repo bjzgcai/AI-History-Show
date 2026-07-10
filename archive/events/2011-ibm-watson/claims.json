@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2011-ibm-watson-summary",
+    "text": {
+      "en": "IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.",
+      "zh": "IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。"
+    },
+    "sourceIds": [
+      "watson-beyond-jeopardy",
+      "building-watson-an-overview-of-the-deepqa-project"
+    ]
+  },
+  {
+    "id": "2011-ibm-watson-quote",
+    "text": {
+      "en": "Generate hypotheses, score evidence, rank answers",
+      "zh": "生成假设、评分证据、排序答案"
+    },
+    "sourceIds": [
+      "watson-beyond-jeopardy"
+    ]
+  }
+]

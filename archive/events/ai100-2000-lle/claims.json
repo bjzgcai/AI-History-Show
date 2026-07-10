@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2000-lle-summary",
+    "text": {
+      "en": "Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.",
+      "zh": "萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。"
+    },
+    "sourceIds": [
+      "nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+      "science-article-page"
+    ]
+  },
+  {
+    "id": "ai100-2000-lle-quote",
+    "text": {
+      "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "zh": "通过局部线性嵌入进行非线性降维"
+    },
+    "sourceIds": [
+      "nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+    ]
+  }
+]

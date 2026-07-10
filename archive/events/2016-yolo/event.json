@@ -1,0 +1,63 @@
+{
+  "id": "2016-yolo",
+  "year": "2016",
+  "title": {
+    "en": "YOLO",
+    "zh": "YOLO"
+  },
+  "location": {
+    "name": {
+      "en": "University of Washington / Allen Institute for AI",
+      "zh": "华盛顿大学 / Allen Institute for AI"
+    },
+    "country": {
+      "en": "Seattle, United States",
+      "zh": "美国西雅图"
+    },
+    "coordinates": [
+      47.6553,
+      -122.3035
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Joseph Redmon",
+        "zh": "约瑟夫·雷德蒙"
+      },
+      "role": {
+        "en": "First author of YOLO",
+        "zh": "YOLO 第一作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Ali Farhadi",
+        "zh": "阿里·法哈迪"
+      },
+      "role": {
+        "en": "Co-author of YOLO",
+        "zh": "YOLO 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "You Only Look Once",
+    "zh": "只看一次"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "You Only Look Once: Unified, Real-Time Object Detection",
+      "zh": "你只看一次：统一的实时目标检测"
+    },
+    "workAuthors": {
+      "en": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "zh": "约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1506.02640"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / YOLO",
+    "zh": "BenchCouncil AI100：神经网络 / YOLO"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2016-nas-summary",
+    "text": {
+      "en": "Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.",
+      "zh": "神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。"
+    },
+    "sourceIds": [
+      "neural-architecture-search-with-reinforcement-learning",
+      "iclr-openreview-record"
+    ]
+  },
+  {
+    "id": "ai100-2016-nas-quote",
+    "text": {
+      "en": "Neural architecture search with reinforcement learning",
+      "zh": "基于强化学习的神经架构搜索"
+    },
+    "sourceIds": [
+      "neural-architecture-search-with-reinforcement-learning"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1997-lstm-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/sepp-hochreiter.jpg",
+    "caption": {
+      "en": "Sepp Hochreiter portrait",
+      "zh": "塞普·霍赫赖特肖像"
+    },
+    "subcaption": {
+      "en": "LSTM co-author",
+      "zh": "LSTM 共同作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/sepp-hochreiter.jpg",
+    "originalImageUrl": "resources/images/figures/sepp-hochreiter.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1997-lstm-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+    "caption": {
+      "en": "LSTM gated memory cell",
+      "zh": "LSTM 门控记忆单元"
+    },
+    "subcaption": {
+      "en": "Original local explainer of gated sequence memory.",
+      "zh": "关于门控序列记忆的本地原创解释图。"
+    },
+    "sourceId": "long-short-term-memory",
+    "sourceName": {
+      "en": "Neural Computation",
+      "zh": "《Neural Computation》"
+    },
+    "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "originalImageUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

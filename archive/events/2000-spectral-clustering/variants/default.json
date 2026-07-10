@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>",
+    "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry.",
+        "zh": "图像分割与数据聚类需要能分离非凸群组的方法，而不假设簇是球形。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space.",
+        "zh": "该方法构建亲和图，从图拉普拉斯特征向量计算谱嵌入，再在嵌入空间中聚类或切分。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat spectral clustering as a major graph-based approach to grouping non-convex data. Its long-term legacy is the use of graph Laplacian eigenvectors to connect image segmentation, manifold learning, graph clustering, and modern graph data analysis.",
+        "zh": "专家通常把谱聚类视为处理非凸数据分组的重要图方法。它的长期影响在于用图拉普拉斯特征向量连接图像分割、流形学习、图聚类和现代图数据分析。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "Graph Laplacian eigenvector embedding",
+      "zh": "图拉普拉斯特征向量嵌入"
+    },
+    "artifact": {
+      "en": "Normalized cuts and spectral clustering methods",
+      "zh": "Normalized Cuts 与谱聚类方法"
+    },
+    "material": {
+      "en": "PAMI normalized-cuts paper and spectral clustering analysis",
+      "zh": "PAMI Normalized Cuts 论文与谱聚类分析"
+    },
+    "demo": {
+      "en": "Turn similarities into a graph and split by eigenvectors",
+      "zh": "把相似度转成图并用特征向量切分"
+    },
+    "visual": "spectral",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Affinity Graph",
+          "zh": "亲和图"
+        },
+        "text": {
+          "en": "Edges encode similarity between data points.",
+          "zh": "边编码样本之间的相似度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Graph Laplacian",
+          "zh": "图拉普拉斯"
+        },
+        "text": {
+          "en": "A matrix representation exposes connectivity structure.",
+          "zh": "矩阵表示揭示连通结构。"
+        }
+      },
+      {
+        "label": {
+          "en": "Spectral Embedding",
+          "zh": "谱嵌入"
+        },
+        "text": {
+          "en": "Eigenvectors place points in a space where clusters separate.",
+          "zh": "特征向量把样本放入更易分离的空间。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "K-means",
+        "zh": "K-means"
+      },
+      {
+        "en": "DBSCAN",
+        "zh": "DBSCAN"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Build graph",
+        "zh": "构建图"
+      },
+      {
+        "en": "Compute spectrum",
+        "zh": "计算谱"
+      },
+      {
+        "en": "Cut clusters",
+        "zh": "切分簇"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Normalized Cuts and Image Segmentation",
+          "zh": "归一化切分与图像分割"
+        },
+        "description": {
+          "en": "IEEE paper connecting graph cuts, eigenvectors, and segmentation for spectral clustering.",
+          "zh": "IEEE 论文：将图切分、特征向量和分割与谱聚类联系起来。"
+        },
+        "url": "https://doi.org/10.1109/34.868688",
+        "source": "https://doi.org/10.1109/34.868688",
+        "action": {
+          "en": "Open IEEE record",
+          "zh": "打开 IEEE 记录"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Normalized Cuts and Image Segmentation",
+          "zh": "归一化切分与图像分割"
+        },
+        "url": "https://doi.org/10.1109/34.868688"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "On Spectral Clustering: Analysis and an algorithm",
+          "zh": "论谱聚类：分析与算法"
+        },
+        "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn spectral clustering documentation",
+          "zh": "scikit-learn 谱聚类文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/clustering.html#spectral-clustering"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Spectral graph illustration",
+          "zh": "谱聚类图示"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+    "demoPanel": "sources"
+  }
+}

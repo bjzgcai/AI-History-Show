@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1958-rosenblatt-perceptron-summary",
+    "text": {
+      "en": "Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. It promised machines that could learn from examples rather than being programmed only by explicit rules. The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification.",
+      "zh": "罗森布拉特 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。"
+    },
+    "sourceIds": [
+      "the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+      "cornell-chronicle-perceptron-retrospective"
+    ]
+  },
+  {
+    "id": "1958-rosenblatt-perceptron-quote",
+    "text": {
+      "en": "Linear threshold learning machine",
+      "zh": "线性阈值学习机"
+    },
+    "sourceIds": [
+      "the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
+    ]
+  }
+]

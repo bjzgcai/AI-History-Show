@@ -1,0 +1,73 @@
+{
+  "id": "2015-u-net",
+  "year": "2015",
+  "title": {
+    "en": "U-Net",
+    "zh": "U-Net"
+  },
+  "location": {
+    "name": {
+      "en": "University of Freiburg",
+      "zh": "弗赖堡大学"
+    },
+    "country": {
+      "en": "Freiburg, Germany",
+      "zh": "德国弗赖堡"
+    },
+    "coordinates": [
+      47.999,
+      7.8421
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Olaf Ronneberger",
+        "zh": "奥拉夫·龙讷贝格"
+      },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Philipp Fischer",
+        "zh": "菲利普·菲舍尔"
+      },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Thomas Brox",
+        "zh": "托马斯·布洛克斯"
+      },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "convolutional networks for biomedical image segmentation",
+    "zh": "用于生物医学图像分割的卷积网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "zh": "U-Net：用于生物医学图像分割的卷积网络"
+    },
+    "workAuthors": {
+      "en": "Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "zh": "奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1505.04597"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer Vision / U-net",
+    "zh": "BenchCouncil AI100：计算机视觉 / U-Net"
+  }
+}

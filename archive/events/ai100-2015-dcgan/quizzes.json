@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What architecture idea made DCGAN important?",
+      "zh": "DCGAN 的重要架构思想是什么？"
+    },
+    "options": [
+      {
+        "en": "Using convolutional generator and discriminator networks",
+        "zh": "使用卷积式生成器和判别器网络"
+      },
+      {
+        "en": "Replacing images with spreadsheets",
+        "zh": "用电子表格替代图像"
+      },
+      {
+        "en": "Removing all learned features",
+        "zh": "移除所有学习特征"
+      },
+      {
+        "en": "Using only symbolic rules",
+        "zh": "只使用符号规则"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "DCGAN gave practical convolutional design rules for image-generating GANs.",
+      "zh": "DCGAN 为图像生成 GAN 提供了实用的卷积设计规则。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "dcgan",
+      "ai100"
+    ]
+  }
+]

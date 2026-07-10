@@ -1,0 +1,102 @@
+[
+  {
+    "id": "2011-ibm-watson-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+    "caption": {
+      "en": "David Ferrucci portrait",
+      "zh": "戴维·费鲁奇 人物照片"
+    },
+    "subcaption": {
+      "en": "Principal investigator of the IBM Watson / DeepQA team.",
+      "zh": "IBM Watson / DeepQA 团队负责人。"
+    },
+    "sourceId": "david-ferrucci-portrait",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+    "rights": "CC BY 2.0",
+    "usage": {
+      "en": "Historical figure photo",
+      "zh": "历史人物照片"
+    }
+  },
+  {
+    "id": "2011-ibm-watson-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+    "caption": {
+      "en": "IBM Watson system",
+      "zh": "IBM Watson 系统照片"
+    },
+    "subcaption": {
+      "en": "Watson hardware display photographed in 2011.",
+      "zh": "2011 年拍摄的 Watson 系统硬件展示。"
+    },
+    "sourceId": "ibm-watson-system-photo",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+    "rights": "CC BY 3.0",
+    "usage": {
+      "en": "System photo",
+      "zh": "系统照片"
+    }
+  },
+  {
+    "id": "2011-ibm-watson-image-3",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+    "caption": {
+      "en": "DeepQA architecture",
+      "zh": "DeepQA 架构图"
+    },
+    "subcaption": {
+      "en": "Commons diagram based on the AI Magazine Watson overview.",
+      "zh": "依据 AI Magazine Watson 综述绘制的 Commons 架构图。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeepQA.svg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+    "rights": "CC0",
+    "usage": {
+      "en": "Architecture diagram",
+      "zh": "架构图"
+    }
+  },
+  {
+    "id": "2011-ibm-watson-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+    "caption": {
+      "en": "Evidence ranking stack",
+      "zh": "证据排序栈"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Watson: Beyond Jeopardy!.",
+      "zh": "依据 沃森：超越《危险边缘！》 制作的本地解释图。"
+    },
+    "sourceId": "watson-beyond-jeopardy",
+    "sourceName": {
+      "en": "Watson: Beyond Jeopardy!",
+      "zh": "沃森：超越《危险边缘！》"
+    },
+    "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Scoring diagram",
+      "zh": "评分图"
+    }
+  }
+]

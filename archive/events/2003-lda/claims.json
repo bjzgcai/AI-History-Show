@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2003-lda-summary",
+    "text": {
+      "en": "Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.",
+      "zh": "潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。"
+    },
+    "sourceIds": [
+      "latent-dirichlet-allocation",
+      "david-m-blei-homepage"
+    ]
+  },
+  {
+    "id": "2003-lda-quote",
+    "text": {
+      "en": "latent Dirichlet allocation",
+      "zh": "潜在狄利克雷分配"
+    },
+    "sourceIds": [
+      "latent-dirichlet-allocation"
+    ]
+  }
+]

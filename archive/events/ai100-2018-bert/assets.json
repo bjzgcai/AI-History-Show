@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2018-bert-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/jacob-devlin.jpg",
+    "caption": {
+      "en": "Jacob Devlin portrait",
+      "zh": "雅各布·德夫林肖像"
+    },
+    "subcaption": {
+      "en": "BERT lead author",
+      "zh": "BERT 主要作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/jacob-devlin.jpg",
+    "originalImageUrl": "resources/images/figures/jacob-devlin.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2018-bert-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
+    "caption": {
+      "en": "BERT masked language modeling",
+      "zh": "BERT 掩码语言建模"
+    },
+    "subcaption": {
+      "en": "Original local explainer of bidirectional pre-training.",
+      "zh": "关于双向预训练的本地原创解释图。"
+    },
+    "sourceId": "acl-anthology-bert-paper",
+    "sourceName": {
+      "en": "NAACL",
+      "zh": "NAACL"
+    },
+    "sourceUrl": "https://aclanthology.org/N19-1423/",
+    "originalImageUrl": "https://aclanthology.org/N19-1423/",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

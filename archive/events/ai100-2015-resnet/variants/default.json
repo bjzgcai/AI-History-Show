@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.</p>",
+    "zh": "<p>ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.",
+        "zh": "ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A shortcut path adds the input back to a learned residual transformation. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "捷径路径把输入加回学习得到的残差变换。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat ResNet as a turning point in very deep network design. Its long-term legacy is residual learning: the shortcut-connection pattern that made depth easier to optimize and became a standard backbone idea across vision and beyond.",
+        "zh": "专家通常把 ResNet 视为超深网络设计的转折点。它的长期影响在于残差学习：捷径连接让深度更容易优化，并成为视觉及其他领域的标准骨干思想。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Residual learning with shortcut connections",
+      "zh": "带捷径连接的残差学习"
+    },
+    "artifact": {
+      "en": "Deep residual network",
+      "zh": "深度残差网络"
+    },
+    "material": {
+      "en": "CVPR paper",
+      "zh": "CVPR 论文"
+    },
+    "demo": {
+      "en": "A shortcut path adds the input back to a learned residual transformation.",
+      "zh": "捷径路径把输入加回学习得到的残差变换。"
+    },
+    "visual": "resnet",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Shortcut Connection",
+          "zh": "捷径连接"
+        },
+        "text": {
+          "en": "The input can flow around a block and be added back.",
+          "zh": "输入可以绕过模块并被加回输出。"
+        }
+      },
+      {
+        "label": {
+          "en": "Residual Function",
+          "zh": "残差函数"
+        },
+        "text": {
+          "en": "The network learns changes to features rather than replacing them entirely.",
+          "zh": "网络学习特征变化，而不是完全替换特征。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "VGG",
+        "zh": "VGG"
+      },
+      {
+        "en": "DenseNet",
+        "zh": "DenseNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "China",
+        "zh": "中国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input",
+        "zh": "输入"
+      },
+      {
+        "en": "Residual block",
+        "zh": "残差模块"
+      },
+      {
+        "en": "Add shortcut",
+        "zh": "加入捷径"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Deep Residual Learning for Image Recognition",
+          "zh": "用于图像识别的深度残差学习"
+        },
+        "description": {
+          "en": "Open paper for residual networks.",
+          "zh": "残差网络的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1512.03385",
+        "source": "https://arxiv.org/abs/1512.03385",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Deep Residual Learning for Image Recognition",
+          "zh": "《用于图像识别的深度残差学习》"
+        },
+        "url": "https://arxiv.org/abs/1512.03385"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "CVF Open Access paper page",
+          "zh": "CVF 开放论文页面"
+        },
+        "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "CVPR full paper PDF",
+          "zh": "CVPR 完整论文 PDF"
+        },
+        "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Kaiming He profile at MIT CSAIL",
+          "zh": "MIT CSAIL 的何恺明资料"
+        },
+        "url": "https://people.csail.mit.edu/kaiming/"
+      }
+    ],
+    "demoImage": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper",
+          "zh": "CVPR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A shortcut path adds the input back to a learned residual transformation.",
+          "zh": "捷径路径把输入加回学习得到的残差变换。"
+        }
+      }
+    ]
+  }
+}

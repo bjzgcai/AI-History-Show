@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What did neural language models learn for words?",
+      "zh": "神经语言模型为词学习了什么？"
+    },
+    "options": [
+      {
+        "en": "Dense vector representations",
+        "zh": "稠密向量表示"
+      },
+      {
+        "en": "Only font colors",
+        "zh": "只有字体颜色"
+      },
+      {
+        "en": "Physical keyboard weight",
+        "zh": "键盘的物理重量"
+      },
+      {
+        "en": "A fixed first sentence",
+        "zh": "固定的第一句话"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Neural language models map words into learned vectors and use context to predict language.",
+      "zh": "神经语言模型把词映射为学习得到的向量，并用上下文预测语言。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "language",
+      "embeddings"
+    ]
+  }
+]

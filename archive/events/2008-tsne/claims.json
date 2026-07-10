@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2008-tsne-summary",
+    "text": {
+      "en": "t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.",
+      "zh": "t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。"
+    },
+    "sourceIds": [
+      "visualizing-data-using-t-sne",
+      "laurens-van-der-maaten-homepage"
+    ]
+  },
+  {
+    "id": "2008-tsne-quote",
+    "text": {
+      "en": "Neighbor-preserving nonlinear embedding",
+      "zh": "保持邻域的非线性嵌入"
+    },
+    "sourceIds": [
+      "visualizing-data-using-t-sne"
+    ]
+  }
+]

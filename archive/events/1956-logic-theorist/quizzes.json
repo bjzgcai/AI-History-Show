@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What made Logic Theorist more than a brute-force theorem prover?",
+      "zh": "是什么让 Logic Theorist 不只是暴力穷举式定理证明器？"
+    },
+    "options": [
+      {
+        "en": "It used heuristics to guide symbolic proof search",
+        "zh": "它用启发式规则引导符号证明搜索"
+      },
+      {
+        "en": "It only changed screen colors",
+        "zh": "它只会改变屏幕颜色"
+      },
+      {
+        "en": "It avoided symbolic logic entirely",
+        "zh": "它完全避开符号逻辑"
+      },
+      {
+        "en": "It solved proofs by playing Go",
+        "zh": "它通过下围棋来证明定理"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Logic Theorist searched through symbolic transformations but used heuristics to choose promising proof paths.",
+      "zh": "Logic Theorist 在符号变换空间中搜索，并用启发式规则选择更有希望的证明路径。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "reasoning",
+      "theorem-proving"
+    ]
+  }
+]

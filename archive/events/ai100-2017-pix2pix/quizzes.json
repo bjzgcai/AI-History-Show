@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What kind of supervision does Pix2Pix mainly use?",
+      "zh": "Pix2Pix 主要使用哪种监督？"
+    },
+    "options": [
+      {
+        "en": "Paired input-output image examples",
+        "zh": "配对的输入输出图像样本"
+      },
+      {
+        "en": "Only unlabeled graph nodes",
+        "zh": "只有未标注图节点"
+      },
+      {
+        "en": "Only theorem clauses",
+        "zh": "只有定理子句"
+      },
+      {
+        "en": "A hidden reward table only",
+        "zh": "只有隐藏奖励表"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Pix2Pix learns image-to-image translation from matched source and target examples.",
+      "zh": "Pix2Pix 从匹配的源图像和目标图像样本学习图像转换。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "pix2pix",
+      "ai100"
+    ]
+  }
+]

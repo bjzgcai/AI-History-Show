@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-ddpg-summary",
+    "text": {
+      "en": "DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.",
+      "zh": "DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。"
+    },
+    "sourceIds": [
+      "continuous-control-with-deep-reinforcement-learning",
+      "iclr-openreview-record"
+    ]
+  },
+  {
+    "id": "ai100-2015-ddpg-quote",
+    "text": {
+      "en": "Continuous control with deep reinforcement learning",
+      "zh": "使用深度强化学习进行连续控制"
+    },
+    "sourceIds": [
+      "continuous-control-with-deep-reinforcement-learning"
+    ]
+  }
+]

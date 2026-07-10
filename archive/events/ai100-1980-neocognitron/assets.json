@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1980-neocognitron-image-1",
+    "kind": "image",
+    "path": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+    "caption": {
+      "en": "Kunihiko Fukushima portrait",
+      "zh": "福岛邦彦肖像"
+    },
+    "subcaption": {
+      "en": "Creator of the neocognitron",
+      "zh": "Neocognitron 提出者"
+    },
+    "sourceId": "nec-c-c-foundation",
+    "sourceName": {
+      "en": "NEC C&C Foundation",
+      "zh": "NEC C&C Foundation"
+    },
+    "sourceUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+    "originalImageUrl": "https://www.candc.or.jp/en/2021/group_a.html",
+    "rights": {
+      "en": "NEC C&C Foundation image; reuse rights not stated.",
+      "zh": "NEC C&C Foundation 图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1980-neocognitron-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+    "caption": {
+      "en": "Hierarchical visual layers",
+      "zh": "层级视觉网络"
+    },
+    "subcaption": {
+      "en": "Original local explainer of neocognitron hierarchy.",
+      "zh": "关于 Neocognitron 层级结构的本地原创解释图。"
+    },
+    "sourceId": "neocognitron",
+    "sourceName": {
+      "en": "Biological Cybernetics",
+      "zh": "Biological Cybernetics"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00344251",
+    "originalImageUrl": "https://doi.org/10.1007/BF00344251",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

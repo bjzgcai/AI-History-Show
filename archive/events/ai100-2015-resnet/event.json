@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2015-resnet",
+  "year": 2015,
+  "title": {
+    "en": "ResNet",
+    "zh": "ResNet"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "Lead author of ResNet",
+        "zh": "ResNet 主要作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "Co-author of ResNet",
+        "zh": "ResNet 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Deep Residual Learning for Image Recognition",
+    "zh": "用于图像识别的深度残差学习"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Deep Residual Learning for Image Recognition",
+      "zh": "用于图像识别的深度残差学习"
+    },
+    "workAuthors": {
+      "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+      "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1512.03385"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

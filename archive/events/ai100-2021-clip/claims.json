@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2021-clip-summary",
+    "text": {
+      "en": "OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.",
+      "zh": "OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。"
+    },
+    "sourceIds": [
+      "learning-transferable-visual-models-from-natural-language-supervision",
+      "icml-clip-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2021-clip-quote",
+    "text": {
+      "en": "Learning transferable visual models from natural language supervision",
+      "zh": "从自然语言监督中学习可迁移视觉模型"
+    },
+    "sourceIds": [
+      "learning-transferable-visual-models-from-natural-language-supervision"
+    ]
+  }
+]

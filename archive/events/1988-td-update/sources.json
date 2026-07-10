@@ -1,0 +1,38 @@
+[
+  {
+    "id": "learning-to-predict-by-the-methods-of-temporal-differences",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Learning to Predict by the Methods of Temporal Differences",
+      "zh": "Learning to Predict by the Methods of Temporal Differences"
+    },
+    "url": "https://doi.org/10.1007/BF00115009"
+  },
+  {
+    "id": "richard-sutton-homepage",
+    "type": {
+      "en": "Homepage",
+      "zh": "个人主页"
+    },
+    "label": {
+      "en": "Richard Sutton homepage",
+      "zh": "理查德·萨顿 homepage"
+    },
+    "url": "http://incompleteideas.net/"
+  },
+  {
+    "id": "acm-2024-turing-award-announcement",
+    "type": {
+      "en": "Award",
+      "zh": "奖项资料"
+    },
+    "label": {
+      "en": "ACM 2024 Turing Award announcement",
+      "zh": "ACM 2024 图灵 Award announcement"
+    },
+    "url": "https://awards.acm.org/about/2024-turing"
+  }
+]

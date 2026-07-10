@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What happens to units during dropout training?",
+      "zh": "Dropout 训练时神经元会发生什么？"
+    },
+    "options": [
+      {
+        "en": "A random subset is temporarily removed",
+        "zh": "随机子集会被临时移除"
+      },
+      {
+        "en": "All weights become exactly zero forever",
+        "zh": "所有权重永久变为零"
+      },
+      {
+        "en": "The model stops using gradients",
+        "zh": "模型停止使用梯度"
+      },
+      {
+        "en": "Images become text labels automatically",
+        "zh": "图像自动变成文本标签"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Dropout samples a mask during training, reducing co-adaptation and acting like approximate ensemble learning.",
+      "zh": "Dropout 在训练时采样掩码，减少共适应，并近似于集成学习。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "regularization",
+      "deep-learning"
+    ]
+  }
+]

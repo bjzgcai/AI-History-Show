@@ -1,0 +1,53 @@
+{
+  "id": "1966-eliza",
+  "year": "1966",
+  "title": {
+    "en": "ELIZA",
+    "zh": "ELIZA"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Joseph Weizenbaum",
+        "zh": "约瑟夫·魏岑鲍姆"
+      },
+      "role": {
+        "en": "Creator of ELIZA",
+        "zh": "ELIZA 创建者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "communication between man and machine",
+    "zh": "人与机器之间的交流"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "ELIZA: A Computer Program for the Study of Natural Language Communication Between Man and Machine",
+      "zh": "ELIZA：研究人与机器之间自然语言交流的计算机程序"
+    },
+    "workAuthors": {
+      "en": "Joseph Weizenbaum, Communications of the ACM, 1966",
+      "zh": "约瑟夫·魏岑鲍姆, 《ACM 通讯》, 1966"
+    },
+    "sourceUrl": "https://doi.org/10.1145/365153.365168"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: ChatBot / ELIZA",
+    "zh": "BenchCouncil AI100：聊天机器人 / ELIZA"
+  }
+}

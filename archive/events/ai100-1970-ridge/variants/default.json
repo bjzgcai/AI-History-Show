@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>",
+    "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.",
+        "zh": "阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat ridge regression as a classic regularization result that made controlled bias a practical tool. Its long-term legacy is the L2 penalty pattern used across statistics, kernel methods, and deep-learning weight decay.",
+        "zh": "专家通常把岭回归视为经典正则化成果，使可控偏差成为实用工具。它的长期影响在于 L2 惩罚模式被统计学习、核方法和深度学习权重衰减广泛采用。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "L2-regularized linear regression",
+      "zh": "L2 正则化线性回归"
+    },
+    "artifact": {
+      "en": "Ridge estimator",
+      "zh": "岭估计器"
+    },
+    "material": {
+      "en": "Technometrics paper",
+      "zh": "《Technometrics》论文"
+    },
+    "demo": {
+      "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
+      "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
+    },
+    "visual": "ridge",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "L2 Penalty",
+          "zh": "L2 惩罚"
+        },
+        "text": {
+          "en": "Large coefficients are discouraged.",
+          "zh": "抑制过大的系数。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bias-Variance Tradeoff",
+          "zh": "偏差-方差权衡"
+        },
+        "text": {
+          "en": "A little bias can reduce variance.",
+          "zh": "少量偏差可以降低方差。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Lasso",
+        "zh": "Lasso"
+      },
+      {
+        "en": "SVM",
+        "zh": "SVM"
+      },
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Correlated predictors",
+        "zh": "相关预测变量"
+      },
+      {
+        "en": "L2 penalty",
+        "zh": "L2 惩罚"
+      },
+      {
+        "en": "Stable coefficients",
+        "zh": "稳定系数"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Taylor & Francis",
+          "zh": "Taylor & Francis"
+        },
+        "title": {
+          "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+          "zh": "岭回归：非正交问题中的有偏估计"
+        },
+        "description": {
+          "en": "Primary paper record for ridge regression.",
+          "zh": "岭回归的主论文记录。"
+        },
+        "url": "https://doi.org/10.1080/00401706.1970.10488634",
+        "source": "https://doi.org/10.1080/00401706.1970.10488634",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+          "zh": "《岭回归：非正交问题中的有偏估计》"
+        },
+        "url": "https://doi.org/10.1080/00401706.1970.10488634"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Open PDF copy of the Technometrics paper",
+          "zh": "Technometrics 论文开放 PDF"
+        },
+        "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Ridge regression overview",
+          "zh": "岭回归概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Ridge_regression"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn Ridge documentation",
+          "zh": "scikit-learn 岭回归文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Technometrics paper",
+          "zh": "《Technometrics》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
+          "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does Lloyd's k-means loop alternate between?",
+      "zh": "Lloyd 的 k-means 循环在什么之间交替？"
+    },
+    "options": [
+      {
+        "en": "Assigning points to nearest centers and updating centers to means",
+        "zh": "把样本分配给最近中心，并把中心更新为均值"
+      },
+      {
+        "en": "Writing theorem clauses and proving equality",
+        "zh": "书写定理子句并证明等式"
+      },
+      {
+        "en": "Playing endgames and parsing Jeopardy! clues",
+        "zh": "下残局并解析 Jeopardy! 线索"
+      },
+      {
+        "en": "Deleting all clusters as noise",
+        "zh": "把所有簇都删除为噪声"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "K-means minimizes within-cluster squared distances through repeated assignment and centroid update steps.",
+      "zh": "K-means 通过反复分配样本和更新质心来最小化簇内平方距离。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "clustering",
+      "unsupervised-learning"
+    ]
+  }
+]

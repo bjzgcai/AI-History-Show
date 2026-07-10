@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2020-alphafold2",
+  "year": 2020,
+  "title": {
+    "en": "AlphaFold2",
+    "zh": "AlphaFold2"
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国伦敦"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John Jumper",
+        "zh": "约翰·江珀"
+      },
+      "role": {
+        "en": "AlphaFold2 lead researcher",
+        "zh": "AlphaFold2 主要研究者"
+      }
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "德米斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder and AlphaFold leader",
+        "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Highly accurate protein structure prediction with AlphaFold",
+    "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Highly accurate protein structure prediction with AlphaFold",
+      "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+    },
+    "workAuthors": {
+      "en": "John Jumper et al., Nature, 2021",
+      "zh": "约翰·江珀等，《Nature》，2021"
+    },
+    "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "the-logic-theory-machine",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "The Logic Theory Machine",
+      "zh": "逻辑理论机"
+    },
+    "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
+  },
+  {
+    "id": "carnegie-mellon-university-archives",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "Carnegie Mellon University Archives",
+      "zh": "Carnegie Mellon University Archives"
+    },
+    "url": "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555"
+  },
+  {
+    "id": "allen-newell-acm-a-m-turing-award",
+    "type": {
+      "en": "Award",
+      "zh": "奖项"
+    },
+    "label": {
+      "en": "Allen Newell ACM A.M. Turing Award",
+      "zh": "艾伦·纽厄尔 ACM A.M. 图灵 Award"
+    },
+    "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
+  }
+]

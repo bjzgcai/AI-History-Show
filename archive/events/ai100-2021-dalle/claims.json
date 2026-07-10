@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2021-dalle-summary",
+    "text": {
+      "en": "OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.",
+      "zh": "OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。"
+    },
+    "sourceIds": [
+      "zero-shot-text-to-image-generation",
+      "icml-dall-e-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2021-dalle-quote",
+    "text": {
+      "en": "Zero-shot text-to-image generation",
+      "zh": "零样本文本到图像生成"
+    },
+    "sourceIds": [
+      "zero-shot-text-to-image-generation"
+    ]
+  }
+]

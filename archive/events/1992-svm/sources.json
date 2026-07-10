@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a-training-algorithm-for-optimal-margin-classifiers",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Training Algorithm for Optimal Margin Classifiers",
+      "zh": "最优间隔分类器的训练算法"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/130385.130401"
+  },
+  {
+    "id": "libsvm-project-page",
+    "type": {
+      "en": "Toolkit",
+      "zh": "工具包"
+    },
+    "label": {
+      "en": "LIBSVM project page",
+      "zh": "LIBSVM project page"
+    },
+    "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/"
+  },
+  {
+    "id": "scikit-learn-svc",
+    "type": {
+      "en": "Model docs",
+      "zh": "模型文档"
+    },
+    "label": {
+      "en": "scikit-learn SVC",
+      "zh": "scikit-learn SVC"
+    },
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+  },
+  {
+    "id": "universit-paris-saclay",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Université Paris-Saclay",
+      "zh": "巴黎-萨克雷大学"
+    },
+    "url": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What kind of structure does t-SNE mainly try to preserve?",
+      "zh": "t-SNE 主要试图保留哪类结构？"
+    },
+    "options": [
+      {
+        "en": "Local neighborhood relationships",
+        "zh": "局部邻域关系"
+      },
+      {
+        "en": "Exact global distances everywhere",
+        "zh": "所有位置的精确全局距离"
+      },
+      {
+        "en": "Chess move legality tables",
+        "zh": "国际象棋走法合法性表"
+      },
+      {
+        "en": "Chemical mass spectra only",
+        "zh": "仅化学质谱"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "t-SNE is best understood as a local-neighborhood visualization method, not a faithful global map.",
+      "zh": "t-SNE 最适合理解为局部邻域可视化方法，而不是忠实全局地图。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "visualization",
+      "dimensionality-reduction"
+    ]
+  }
+]

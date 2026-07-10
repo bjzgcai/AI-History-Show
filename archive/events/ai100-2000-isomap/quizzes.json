@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What distance does Isomap try to preserve?",
+      "zh": "Isomap 试图保持哪种距离？"
+    },
+    "options": [
+      {
+        "en": "Geodesic distance along a neighbor graph",
+        "zh": "邻居图上的测地距离"
+      },
+      {
+        "en": "The distance between two websites",
+        "zh": "两个网站之间的距离"
+      },
+      {
+        "en": "A chatbot response delay",
+        "zh": "聊天机器人响应延迟"
+      },
+      {
+        "en": "Only image brightness",
+        "zh": "只有图像亮度"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Isomap estimates distances along the manifold through shortest paths on a neighbor graph.",
+      "zh": "Isomap 通过邻居图上的最短路径估计沿流形的距离。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "isomap",
+      "manifold-learning"
+    ]
+  }
+]

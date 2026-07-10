@@ -1,0 +1,38 @@
+[
+  {
+    "id": "a-computing-procedure-for-quantification-theory",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Computing Procedure for Quantification Theory",
+      "zh": "量词理论的计算过程"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/321033.321034"
+  },
+  {
+    "id": "a-machine-program-for-theorem-proving",
+    "type": {
+      "en": "Program",
+      "zh": "程序"
+    },
+    "label": {
+      "en": "A machine program for theorem-proving",
+      "zh": "用于定理证明的机器程序"
+    },
+    "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/"
+  },
+  {
+    "id": "wikimedia-commons-hilary-putnam",
+    "type": {
+      "en": "Photo",
+      "zh": "照片"
+    },
+    "label": {
+      "en": "Wikimedia Commons: Hilary Putnam",
+      "zh": "维基共享资源: 希拉里·普特南"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
+  }
+]

@@ -1,0 +1,222 @@
+{
+  "description": {
+    "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>",
+    "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.",
+        "zh": "整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Negative responses are clipped to zero while positive responses pass through linearly. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "负响应被截断为零，正响应则线性通过。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat ReLU as a simple engineering choice whose impact was larger than its formula suggests. Its long-term legacy is the non-saturating activation pattern that helped deep networks train reliably and became a default component of modern architectures.",
+        "zh": "专家通常把 ReLU 视为一个简单工程选择，但它的影响远大于公式本身。它的长期影响在于非饱和激活模式帮助深层网络更可靠地训练，并成为现代架构的默认组件。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Piecewise-linear activation",
+      "zh": "分段线性激活"
+    },
+    "artifact": {
+      "en": "Rectified activation function",
+      "zh": "整流激活函数"
+    },
+    "material": {
+      "en": "Neural vision and deep rectifier literature",
+      "zh": "神经视觉与深度整流函数文献"
+    },
+    "demo": {
+      "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+      "zh": "负响应被截断为零，正响应则线性通过。"
+    },
+    "visual": "relu",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Non-saturation",
+          "zh": "非饱和"
+        },
+        "text": {
+          "en": "Positive activations keep gradients from shrinking as quickly.",
+          "zh": "正激活让梯度不那么容易快速缩小。"
+        }
+      },
+      {
+        "label": {
+          "en": "Sparse Activity",
+          "zh": "稀疏活动"
+        },
+        "text": {
+          "en": "Many neurons output exactly zero, simplifying representation.",
+          "zh": "许多神经元输出正好为零，从而简化表示。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Neocognitron",
+        "zh": "新认知机"
+      },
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Japan",
+        "zh": "日本"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input",
+        "zh": "输入"
+      },
+      {
+        "en": "max(0, x)",
+        "zh": "max(0, x)"
+      },
+      {
+        "en": "Sparse activation",
+        "zh": "稀疏激活"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Deep Sparse Rectifier Neural Networks",
+          "zh": "深度稀疏整流神经网络"
+        },
+        "description": {
+          "en": "Article connecting rectifiers to deep sparse neural networks.",
+          "zh": "将整流函数与深度稀疏神经网络联系起来的文章。"
+        },
+        "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+        "source": "https://proceedings.mlr.press/v15/glorot11a.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Deep Sparse Rectifier Neural Networks",
+          "zh": "《深度稀疏整流神经网络》"
+        },
+        "url": "https://proceedings.mlr.press/v15/glorot11a.html"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+          "zh": "《整流线性单元改进受限玻尔兹曼机》"
+        },
+        "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Rectifier activation overview",
+          "zh": "整流激活函数概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Yoshua Bengio profile at Mila",
+          "zh": "Mila 的约书亚·本吉奥资料"
+        },
+        "url": "https://mila.quebec/en/directory/yoshua-bengio"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural vision and deep rectifier literature",
+          "zh": "神经视觉与深度整流函数文献"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+          "zh": "负响应被截断为零，正响应则线性通过。"
+        }
+      }
+    ]
+  }
+}

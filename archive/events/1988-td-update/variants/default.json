@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>",
+    "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+        "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+        "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat temporal-difference learning as a cornerstone of reinforcement learning. Its long-term legacy is the bootstrapping idea that value estimates can learn from later predictions, supporting Q-learning, actor-critic methods, and modern value-based control.",
+        "zh": "专家通常把时序差分学习视为强化学习的基石。它的长期影响在于提出价值估计可以从后续预测中自举学习，并支撑了 Q-learning、actor-critic 方法和现代基于价值的控制。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Reinforcement learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Bootstrapped value prediction",
+      "zh": "自举式价值预测"
+    },
+    "artifact": {
+      "en": "TD learning update rule",
+      "zh": "TD 学习更新规则"
+    },
+    "material": {
+      "en": "Machine Learning paper and RL histories",
+      "zh": "Machine Learning 论文与强化学习史料"
+    },
+    "demo": {
+      "en": "Update a value estimate from the next prediction and reward",
+      "zh": "用下一步预测和奖励更新价值估计"
+    },
+    "visual": "td",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "TD Error",
+          "zh": "TD 误差"
+        },
+        "text": {
+          "en": "The gap between current prediction and one-step bootstrapped target.",
+          "zh": "当前预测与一步自举目标之间的差距。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bootstrapping",
+          "zh": "自举"
+        },
+        "text": {
+          "en": "A prediction is updated using another prediction.",
+          "zh": "用另一个预测来更新一个预测。"
+        }
+      },
+      {
+        "label": {
+          "en": "Value Function",
+          "zh": "价值函数"
+        },
+        "text": {
+          "en": "A function estimates expected future reward from a state.",
+          "zh": "估计从某状态出发的预期未来奖励。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Q Learning",
+        "zh": "Q Learning"
+      },
+      {
+        "en": "Actor-Critic",
+        "zh": "Actor-Critic"
+      },
+      {
+        "en": "Deep Q Network",
+        "zh": "深度 Q 网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States and Canada",
+        "zh": "美国与加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Observe reward",
+        "zh": "观察奖励"
+      },
+      {
+        "en": "Compare next value",
+        "zh": "比较下一价值"
+      },
+      {
+        "en": "Nudge estimate",
+        "zh": "推进估计"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Machine Learning",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "Learning to predict by temporal differences",
+          "zh": "用时序差分学习预测"
+        },
+        "description": {
+          "en": "Canonical Machine Learning paper record for TD learning.",
+          "zh": "TD 学习经典 Machine Learning 论文记录。"
+        },
+        "url": "https://doi.org/10.1007/BF00115009",
+        "source": "https://doi.org/10.1007/BF00115009",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Learning to Predict by the Methods of Temporal Differences",
+          "zh": "Learning to Predict by the Methods of Temporal Differences"
+        },
+        "url": "https://doi.org/10.1007/BF00115009"
+      },
+      {
+        "type": {
+          "en": "Homepage",
+          "zh": "个人主页"
+        },
+        "label": {
+          "en": "Richard Sutton homepage",
+          "zh": "理查德·萨顿 homepage"
+        },
+        "url": "http://incompleteideas.net/"
+      },
+      {
+        "type": {
+          "en": "Award",
+          "zh": "奖项资料"
+        },
+        "label": {
+          "en": "ACM 2024 Turing Award announcement",
+          "zh": "ACM 2024 图灵 Award announcement"
+        },
+        "url": "https://awards.acm.org/about/2024-turing"
+      }
+    ]
+  }
+}

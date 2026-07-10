@@ -1,0 +1,62 @@
+[
+  {
+    "id": "high-resolution-image-synthesis-with-latent-diffusion-models",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "《使用潜扩散模型进行高分辨率图像合成》"
+    },
+    "url": "https://arxiv.org/abs/2112.10752"
+  },
+  {
+    "id": "cvpr-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "CVPR paper page",
+      "zh": "CVPR 论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html"
+  },
+  {
+    "id": "compvis-latent-diffusion-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "CompVis latent diffusion repository",
+      "zh": "CompVis 潜扩散代码仓库"
+    },
+    "url": "https://github.com/CompVis/latent-diffusion"
+  },
+  {
+    "id": "stability-ai-stable-diffusion-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Stability AI Stable Diffusion page",
+      "zh": "Stability AI Stable Diffusion 页面"
+    },
+    "url": "https://stability.ai/stable-image"
+  },
+  {
+    "id": "latent-labs",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Latent Labs",
+      "zh": "Latent Labs"
+    },
+    "url": "https://www.latentlabs.com/our-dna/"
+  }
+]

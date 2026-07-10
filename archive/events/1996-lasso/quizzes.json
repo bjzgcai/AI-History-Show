@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does the L1 penalty in lasso often do to coefficients?",
+      "zh": "Lasso 中的 L1 惩罚通常会让系数发生什么？"
+    },
+    "options": [
+      {
+        "en": "It drives some coefficients exactly to zero",
+        "zh": "它会把部分系数精确压到零"
+      },
+      {
+        "en": "It makes every coefficient infinite",
+        "zh": "它让所有系数变成无穷大"
+      },
+      {
+        "en": "It removes the training data",
+        "zh": "它移除训练数据"
+      },
+      {
+        "en": "It converts regression into video playback",
+        "zh": "它把回归变成视频播放"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The L1 penalty encourages sparsity, so lasso performs variable selection while fitting a model.",
+      "zh": "L1 惩罚鼓励稀疏性，因此 Lasso 在拟合模型时同时进行变量选择。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "statistics",
+      "regularization"
+    ]
+  }
+]

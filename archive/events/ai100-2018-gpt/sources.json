@@ -1,0 +1,62 @@
+[
+  {
+    "id": "improving-language-understanding-by-generative-pre-training",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "Improving Language Understanding by Generative Pre-Training",
+      "zh": "《通过生成式预训练改进语言理解》"
+    },
+    "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+  },
+  {
+    "id": "openai-language-unsupervised-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "OpenAI language unsupervised page",
+      "zh": "OpenAI 无监督语言页面"
+    },
+    "url": "https://openai.com/index/language-unsupervised/"
+  },
+  {
+    "id": "gpt-model-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "GPT model overview",
+      "zh": "GPT 模型概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer"
+  },
+  {
+    "id": "alec-radford-research-context",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Alec Radford research context",
+      "zh": "亚历克·拉德福德研究背景"
+    },
+    "url": "https://openai.com/research/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/alec-radford.png"
+  }
+]

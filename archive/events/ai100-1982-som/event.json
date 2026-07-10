@@ -1,0 +1,53 @@
+{
+  "id": "ai100-1982-som",
+  "year": 1982,
+  "title": {
+    "en": "Self-organizing Map",
+    "zh": "自组织映射"
+  },
+  "location": {
+    "name": {
+      "en": "Helsinki University of Technology",
+      "zh": "赫尔辛基理工大学"
+    },
+    "country": {
+      "en": "Espoo, Finland",
+      "zh": "芬兰埃斯波"
+    },
+    "coordinates": [
+      60.1841,
+      24.8301
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Teuvo Kohonen",
+        "zh": "泰沃·科霍宁"
+      },
+      "role": {
+        "en": "Creator of self-organizing maps",
+        "zh": "自组织映射提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Self-organized formation of topologically correct feature maps",
+    "zh": "拓扑正确特征映射的自组织形成"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Self-organized formation of topologically correct feature maps",
+      "zh": "拓扑正确特征映射的自组织形成"
+    },
+    "workAuthors": {
+      "en": "Teuvo Kohonen, Biological Cybernetics, 1982",
+      "zh": "泰沃·科霍宁，《Biological Cybernetics》，1982"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00337288"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

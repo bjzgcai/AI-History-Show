@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2017-cyclegan-summary",
+    "text": {
+      "en": "CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.",
+      "zh": "CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。"
+    },
+    "sourceIds": [
+      "unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+      "iccv-open-access-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2017-cyclegan-quote",
+    "text": {
+      "en": "Unpaired image-to-image translation using cycle-consistent adversarial networks",
+      "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+    },
+    "sourceIds": [
+      "unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
+    ]
+  }
+]

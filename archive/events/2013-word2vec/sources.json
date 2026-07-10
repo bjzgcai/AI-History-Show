@@ -1,0 +1,47 @@
+[
+  {
+    "id": "efficient-estimation-of-word-representations-in-vector-space",
+    "type": {
+      "en": "Preprint",
+      "zh": "预印本"
+    },
+    "label": {
+      "en": "Efficient Estimation of Word Representations in Vector Space",
+      "zh": "向量空间中词表示的高效估计"
+    },
+    "url": "https://arxiv.org/abs/1301.3781"
+  },
+  {
+    "id": "distributed-representations-of-words-and-phrases-and-their-compositionality",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Distributed Representations of Words and Phrases and their Compositionality",
+      "zh": "词与短语的分布式表示及其组合性"
+    },
+    "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality"
+  },
+  {
+    "id": "google-code-archive-word2vec",
+    "type": {
+      "en": "Code archive",
+      "zh": "代码档案"
+    },
+    "label": {
+      "en": "Google Code archive: word2vec",
+      "zh": "谷歌 代码 archive: word2vec"
+    },
+    "url": "https://code.google.com/archive/p/word2vec/"
+  },
+  {
+    "id": "ieee-signal-processing-society",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "IEEE Signal Processing Society",
+    "url": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2009-imagenet-summary",
+    "text": {
+      "en": "ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.",
+      "zh": "ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。"
+    },
+    "sourceIds": [
+      "imagenet-a-large-scale-hierarchical-image-database",
+      "imagenet-project-website"
+    ]
+  },
+  {
+    "id": "2009-imagenet-quote",
+    "text": {
+      "en": "large-scale hierarchical image database",
+      "zh": "大规模层级图像数据库"
+    },
+    "sourceIds": [
+      "imagenet-a-large-scale-hierarchical-image-database"
+    ]
+  }
+]

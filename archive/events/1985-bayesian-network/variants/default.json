@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>",
+    "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Symbolic AI struggled with uncertainty. Probabilistic graphical models connected knowledge representation with statistical inference.",
+        "zh": "符号 AI 难以处理不确定性。概率图模型把知识表示与统计推断连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular.",
+        "zh": "贝叶斯网络按有向无环图分解联合分布，使推断模块化。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Bayesian networks as a foundational language for uncertain reasoning. Their long-term legacy is the graphical connection between probability, evidence, and dependency structure, which later influenced causal reasoning and decision support.",
+        "zh": "专家通常把贝叶斯网络视为不确定推理的基础语言。它的长期影响在于用图结构连接概率、证据和依赖关系，并影响了后来的因果推理和决策支持。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Probabilistic graphical models",
+      "zh": "概率图模型"
+    },
+    "method": {
+      "en": "Directed acyclic graph plus conditional probabilities",
+      "zh": "有向无环图加条件概率"
+    },
+    "artifact": {
+      "en": "Bayesian network representation",
+      "zh": "贝叶斯网络表示"
+    },
+    "material": {
+      "en": "UCLA technical reports and Pearl references",
+      "zh": "加州大学洛杉矶分校 技术报告与 Pearl 资料"
+    },
+    "demo": {
+      "en": "Pass probabilistic messages through a causal graph",
+      "zh": "在因果图中传递概率消息"
+    },
+    "visual": "bayesnet",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Directed Acyclic Graph",
+          "zh": "有向无环图"
+        },
+        "text": {
+          "en": "Nodes are variables and arrows express dependency structure.",
+          "zh": "节点是变量，箭头表达依赖结构。"
+        }
+      },
+      {
+        "label": {
+          "en": "Conditional Probability Table",
+          "zh": "条件概率表"
+        },
+        "text": {
+          "en": "Each node stores probabilities given its parents.",
+          "zh": "每个节点存储在父节点条件下的概率。"
+        }
+      },
+      {
+        "label": {
+          "en": "Belief Updating",
+          "zh": "信念更新"
+        },
+        "text": {
+          "en": "Evidence changes probabilities throughout the graph.",
+          "zh": "证据会改变图中各处概率。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "LDA",
+        "zh": "LDA"
+      },
+      {
+        "en": "CRF",
+        "zh": "CRF"
+      },
+      {
+        "en": "Causal reasoning",
+        "zh": "因果推理"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Observe evidence",
+        "zh": "观察证据"
+      },
+      {
+        "en": "Pass messages",
+        "zh": "传递消息"
+      },
+      {
+        "en": "Update beliefs",
+        "zh": "更新信念"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "UCLA Computer Science",
+          "zh": "加州大学洛杉矶分校计算机科学系"
+        },
+        "title": {
+          "en": "Bayesian Networks technical paper",
+          "zh": "贝叶斯网络技术论文"
+        },
+        "description": {
+          "en": "UCLA-hosted PDF on Bayesian networks by Judea Pearl.",
+          "zh": "加州大学洛杉矶分校 托管的 朱迪亚·珀尔 贝叶斯网络 PDF。"
+        },
+        "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+        "source": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open UCLA PDF",
+          "zh": "打开 UCLA PDF"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Bayesian Networks",
+          "zh": "贝叶斯网络"
+        },
+        "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+      },
+      {
+        "type": {
+          "en": "Homepage",
+          "zh": "个人主页"
+        },
+        "label": {
+          "en": "Judea Pearl homepage",
+          "zh": "朱迪亚·珀尔 homepage"
+        },
+        "url": "https://bayes.cs.ucla.edu/home.htm"
+      },
+      {
+        "type": {
+          "en": "Profile",
+          "zh": "人物资料"
+        },
+        "label": {
+          "en": "Judea Pearl, UCLA Samueli",
+          "zh": "朱迪亚·珀尔, 加州大学洛杉矶分校 Samueli"
+        },
+        "url": "https://samueli.ucla.edu/judea-pearl/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What later family of models did the neocognitron anticipate?",
+      "zh": "Neocognitron 预示了后来的哪类模型？"
+    },
+    "options": [
+      {
+        "en": "Convolutional vision networks",
+        "zh": "卷积视觉网络"
+      },
+      {
+        "en": "Spreadsheet formulas only",
+        "zh": "只有电子表格公式"
+      },
+      {
+        "en": "Audio compression codecs",
+        "zh": "音频压缩编码"
+      },
+      {
+        "en": "A theorem database only",
+        "zh": "只有定理数据库"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Its hierarchical feature and tolerance layers foreshadowed CNN-style visual processing.",
+      "zh": "它的层级特征层和容忍层预示了 CNN 式视觉处理。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "neocognitron",
+      "cnn"
+    ]
+  }
+]

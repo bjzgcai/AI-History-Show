@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2017-transformer-summary",
+    "text": {
+      "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
+      "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
+    },
+    "sourceIds": [
+      "attention-is-all-you-need",
+      "neurips-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2017-transformer-quote",
+    "text": {
+      "en": "Attention Is All You Need",
+      "zh": "Attention Is All You Need"
+    },
+    "sourceIds": [
+      "attention-is-all-you-need"
+    ]
+  }
+]

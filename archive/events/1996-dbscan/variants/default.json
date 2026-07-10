@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>",
+    "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Many clustering methods preferred round clusters and required the number of clusters before analysis.",
+        "zh": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability.",
+        "zh": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat DBSCAN as a standard density-based clustering method, especially for spatial data and irregular cluster shapes. Its long-term legacy is the core-border-noise vocabulary that made outlier handling and arbitrary-shape clusters practical.",
+        "zh": "专家通常把 DBSCAN 视为标准的基于密度聚类方法，尤其适用于空间数据和不规则簇形状。它的长期影响在于核心点、边界点和噪声点的语言让异常处理和任意形状簇变得实用。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "Density reachability with epsilon and MinPts",
+      "zh": "基于 epsilon 与 MinPts 的密度可达"
+    },
+    "artifact": {
+      "en": "DBSCAN clustering algorithm",
+      "zh": "DBSCAN 聚类算法"
+    },
+    "material": {
+      "en": "KDD 1996 paper and later density-clustering references",
+      "zh": "KDD 1996 论文与后续密度聚类资料"
+    },
+    "demo": {
+      "en": "Grow clusters from core points and mark noise",
+      "zh": "从核心点生长簇并标记噪声"
+    },
+    "visual": "dbscan",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Core Point",
+          "zh": "核心点"
+        },
+        "text": {
+          "en": "A point with enough neighbors in an epsilon radius.",
+          "zh": "epsilon 半径内邻居足够多的点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Density Reachability",
+          "zh": "密度可达"
+        },
+        "text": {
+          "en": "Clusters grow by connecting dense neighborhoods.",
+          "zh": "簇通过连接密集邻域生长。"
+        }
+      },
+      {
+        "label": {
+          "en": "Noise",
+          "zh": "噪声"
+        },
+        "text": {
+          "en": "Sparse points can remain outside all clusters.",
+          "zh": "稀疏点可以不属于任何簇。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "K-means",
+        "zh": "K-means"
+      },
+      {
+        "en": "Spectral clustering",
+        "zh": "谱聚类"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Munich, Germany",
+        "zh": "德国慕尼黑"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Find neighbors",
+        "zh": "寻找邻居"
+      },
+      {
+        "en": "Expand core",
+        "zh": "扩展核心点"
+      },
+      {
+        "en": "Label noise",
+        "zh": "标记噪声"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "KDD Paper",
+          "zh": "KDD 论文"
+        },
+        "title": {
+          "en": "A density-based algorithm for discovering clusters",
+          "zh": "一种发现簇的基于密度的算法"
+        },
+        "description": {
+          "en": "Original KDD paper introducing DBSCAN's density reachability and noise-aware clustering.",
+          "zh": "KDD 原始论文：介绍 DBSCAN 的密度可达与噪声感知聚类。"
+        },
+        "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+        "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+        "action": {
+          "en": "Open paper record",
+          "zh": "打开论文记录"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A density-based algorithm for discovering clusters",
+          "zh": "一种发现簇的基于密度的算法"
+        },
+        "url": "https://dl.acm.org/doi/10.5555/3001460.3001507"
+      },
+      {
+        "type": {
+          "en": "Retrospective",
+          "zh": "回顾"
+        },
+        "label": {
+          "en": "DBSCAN Revisited, Revisited",
+          "zh": "再访 DBSCAN，再访"
+        },
+        "url": "https://doi.org/10.1145/3068335"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn DBSCAN documentation",
+          "zh": "scikit-learn DBSCAN 文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/clustering.html#dbscan"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Martin Ester portrait",
+          "zh": "马丁·埃斯特 人物照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+    "demoPanel": "sources"
+  }
+}

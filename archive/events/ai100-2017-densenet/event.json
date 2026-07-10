@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2017-densenet",
+  "year": 2016,
+  "title": {
+    "en": "DenseNet",
+    "zh": "DenseNet"
+  },
+  "location": {
+    "name": {
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
+    },
+    "country": {
+      "en": "Ithaca, United States",
+      "zh": "美国伊萨卡"
+    },
+    "coordinates": [
+      42.4534,
+      -76.4735
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Gao Huang",
+        "zh": "黄高"
+      },
+      "role": {
+        "en": "Lead author of DenseNet",
+        "zh": "DenseNet 主要作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Zhuang Liu",
+        "zh": "刘壮"
+      },
+      "role": {
+        "en": "Co-author of DenseNet",
+        "zh": "DenseNet 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Densely Connected Convolutional Networks",
+    "zh": "密集连接卷积网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Densely Connected Convolutional Networks",
+      "zh": "密集连接卷积网络"
+    },
+    "workAuthors": {
+      "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+      "zh": "黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1608.06993"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

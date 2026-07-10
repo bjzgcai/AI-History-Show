@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2014-neural-machine-translation-attention",
+  "year": 2014,
+  "title": {
+    "en": "Neural Machine Translation with Attention",
+    "zh": "带注意力机制的神经机器翻译"
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5056,
+      -73.6139
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author of the neural attention paper",
+        "zh": "神经注意力论文共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Co-author of the neural attention paper",
+        "zh": "神经注意力论文共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Neural machine translation by jointly learning to align and translate",
+    "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+      "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+    },
+    "workAuthors": {
+      "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+      "zh": "兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1409.0473"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

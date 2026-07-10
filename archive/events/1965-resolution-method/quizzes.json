@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does the resolution method try to derive after negating the target claim?",
+      "zh": "归结方法在否定目标结论后试图推出什么？"
+    },
+    "options": [
+      {
+        "en": "The empty clause, showing contradiction",
+        "zh": "空子句，表示矛盾"
+      },
+      {
+        "en": "A larger image dataset",
+        "zh": "更大的图像数据集"
+      },
+      {
+        "en": "A random dropout mask",
+        "zh": "随机 dropout 掩码"
+      },
+      {
+        "en": "A chess opening book",
+        "zh": "国际象棋开局库"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Resolution is usually used as refutation: if the premises plus the negated goal imply the empty clause, the original goal follows.",
+      "zh": "归结通常作为反驳证明使用：如果前提加否定目标能推出空子句，原目标就成立。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "logic",
+      "reasoning"
+    ]
+  }
+]

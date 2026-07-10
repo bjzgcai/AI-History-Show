@@ -1,0 +1,50 @@
+[
+  {
+    "id": "auto-encoding-variational-bayes",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Auto-Encoding Variational Bayes",
+      "zh": "《自动编码变分贝叶斯》"
+    },
+    "url": "https://arxiv.org/abs/1312.6114"
+  },
+  {
+    "id": "iclr-paper-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR paper record",
+      "zh": "ICLR 论文记录"
+    },
+    "url": "https://openreview.net/forum?id=33X9fd2-9FyZd"
+  },
+  {
+    "id": "variational-autoencoder-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Variational autoencoder overview",
+      "zh": "变分自编码器概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Variational_autoencoder"
+  },
+  {
+    "id": "diederik-kingma-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Diederik Kingma homepage",
+      "zh": "迪德里克·金马个人主页"
+    },
+    "url": "https://dpkingma.com/"
+  }
+]

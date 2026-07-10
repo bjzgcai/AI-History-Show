@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2020-vit-summary",
+    "text": {
+      "en": "Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.",
+      "zh": "视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。"
+    },
+    "sourceIds": [
+      "an-image-is-worth-16x16-words",
+      "iclr-openreview-page"
+    ]
+  },
+  {
+    "id": "ai100-2020-vit-quote",
+    "text": {
+      "en": "An Image is Worth 16x16 Words",
+      "zh": "一张图像价值 16x16 个词"
+    },
+    "sourceIds": [
+      "an-image-is-worth-16x16-words"
+    ]
+  }
+]

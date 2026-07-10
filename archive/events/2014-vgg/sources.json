@@ -1,0 +1,47 @@
+[
+  {
+    "id": "very-deep-convolutional-networks-for-large-scale-image-recognition",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+      "zh": "用于大规模图像识别的超深卷积网络"
+    },
+    "url": "https://arxiv.org/abs/1409.1556"
+  },
+  {
+    "id": "oxford-vgg-very-deep-convnets",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Oxford VGG Very Deep ConvNets",
+      "zh": "Oxford VGG Very Deep ConvNets"
+    },
+    "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/"
+  },
+  {
+    "id": "torchvision-vgg-model-family",
+    "type": {
+      "en": "Model docs",
+      "zh": "模型文档"
+    },
+    "label": {
+      "en": "TorchVision VGG model family",
+      "zh": "TorchVision VGG model family"
+    },
+    "url": "https://pytorch.org/vision/stable/models/vgg.html"
+  },
+  {
+    "id": "ellis-oxford-university-of-oxford",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "ELLIS Oxford / University of Oxford",
+    "url": "https://www.ellis.ox.ac.uk/people/andew-zisserman"
+  }
+]

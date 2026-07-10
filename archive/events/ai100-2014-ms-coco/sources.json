@@ -1,0 +1,50 @@
+[
+  {
+    "id": "microsoft-coco-common-objects-in-context",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Microsoft COCO: Common Objects in Context",
+      "zh": "《Microsoft COCO：上下文中的常见物体》"
+    },
+    "url": "https://arxiv.org/abs/1405.0312"
+  },
+  {
+    "id": "coco-dataset-website",
+    "type": {
+      "en": "Dataset",
+      "zh": "数据集"
+    },
+    "label": {
+      "en": "COCO dataset website",
+      "zh": "COCO 数据集网站"
+    },
+    "url": "https://cocodataset.org/"
+  },
+  {
+    "id": "eccv-springer-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ECCV Springer record",
+      "zh": "ECCV Springer 记录"
+    },
+    "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48"
+  },
+  {
+    "id": "tsung-yi-lin-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Tsung-Yi Lin homepage",
+      "zh": "林宗毅个人主页"
+    },
+    "url": "https://tsungyilin.info/"
+  }
+]

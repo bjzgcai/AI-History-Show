@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. It made pre-training then fine-tuning a dominant recipe for natural language understanding.</p>",
+    "zh": "<p>雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. It made pre-training then fine-tuning a dominant recipe for natural language understanding.",
+        "zh": "雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat BERT as the milestone that standardized transformer pre-training for language understanding. Its long-term legacy is the encoder foundation-model pattern used for search, classification, extraction, retrieval, and domain adaptation.",
+        "zh": "专家通常把 BERT 视为把 Transformer 预训练标准化用于语言理解的里程碑。它的长期影响在于编码器基础模型模式被用于搜索、分类、抽取、检索和领域适配。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Natural language understanding",
+      "zh": "自然语言理解"
+    },
+    "method": {
+      "en": "Masked bidirectional transformer pre-training",
+      "zh": "掩码双向 Transformer 预训练"
+    },
+    "artifact": {
+      "en": "BERT model family",
+      "zh": "BERT 模型族"
+    },
+    "material": {
+      "en": "NAACL paper and Google release",
+      "zh": "NAACL 论文与 Google 发布材料"
+    },
+    "demo": {
+      "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction.",
+      "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
+    },
+    "visual": "bert",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Masked LM",
+          "zh": "掩码语言模型"
+        },
+        "text": {
+          "en": "Random tokens are hidden and reconstructed.",
+          "zh": "随机令牌被遮盖并重建。"
+        }
+      },
+      {
+        "label": {
+          "en": "Fine-tuning",
+          "zh": "微调"
+        },
+        "text": {
+          "en": "One pre-trained encoder adapts to many tasks.",
+          "zh": "一个预训练编码器适配多种任务。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      },
+      {
+        "en": "Word2Vec",
+        "zh": "Word2Vec"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Mask tokens",
+        "zh": "Mask tokens"
+      },
+      {
+        "en": "Bidirectional encoder",
+        "zh": "Bidirectional encoder"
+      },
+      {
+        "en": "Task head",
+        "zh": "Task head"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+        },
+        "description": {
+          "en": "Open paper for BERT pre-training.",
+          "zh": "BERT 预训练的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1810.04805",
+        "source": "https://arxiv.org/abs/1810.04805",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "BERT",
+          "zh": "《BERT》"
+        },
+        "url": "https://arxiv.org/abs/1810.04805"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "ACL Anthology BERT paper",
+          "zh": "ACL Anthology BERT 论文"
+        },
+        "url": "https://aclanthology.org/N19-1423/"
+      },
+      {
+        "type": {
+          "en": "Code",
+          "zh": "代码"
+        },
+        "label": {
+          "en": "Google Research BERT repository",
+          "zh": "Google Research BERT 代码仓库"
+        },
+        "url": "https://github.com/google-research/bert"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "Google AI BERT blog post",
+          "zh": "Google AI BERT 博客"
+        },
+        "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NAACL paper and Google release",
+          "zh": "NAACL 论文与 Google 发布材料"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Masked words are predicted from both left and right context, then the pre-trained model is fine-tuned for downstream tasks. This makes one encoder reusable for classification, question answering, retrieval, and extraction.",
+          "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bayesian-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Bayesian Networks",
+      "zh": "贝叶斯网络"
+    },
+    "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+  },
+  {
+    "id": "judea-pearl-homepage",
+    "type": {
+      "en": "Homepage",
+      "zh": "个人主页"
+    },
+    "label": {
+      "en": "Judea Pearl homepage",
+      "zh": "朱迪亚·珀尔 homepage"
+    },
+    "url": "https://bayes.cs.ucla.edu/home.htm"
+  },
+  {
+    "id": "judea-pearl-ucla-samueli",
+    "type": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "Judea Pearl, UCLA Samueli",
+      "zh": "朱迪亚·珀尔, 加州大学洛杉矶分校 Samueli"
+    },
+    "url": "https://samueli.ucla.edu/judea-pearl/"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg"
+  }
+]

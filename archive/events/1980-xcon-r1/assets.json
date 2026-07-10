@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1980-xcon-r1-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+    "caption": {
+      "en": "DEC VAX-11/780 system",
+      "zh": "DEC VAX-11/780 系统照片"
+    },
+    "subcaption": {
+      "en": "Representative VAX system class configured by R1/XCON.",
+      "zh": "R1/XCON 所配置的 VAX 系统类别代表照片。"
+    },
+    "sourceId": "dec-vax-11-780-photo",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+    "rights": "CC BY-SA 3.0",
+    "usage": {
+      "en": "Hardware photo",
+      "zh": "硬件照片"
+    }
+  },
+  {
+    "id": "1980-xcon-r1-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+    "caption": {
+      "en": "VAX-11/780 CPU backplane",
+      "zh": "VAX-11/780 CPU 背板"
+    },
+    "subcaption": {
+      "en": "Hardware detail from the VAX-11/780 family.",
+      "zh": "VAX-11/780 系列硬件细节。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+    "rights": "CC BY 4.0",
+    "usage": {
+      "en": "Hardware detail",
+      "zh": "硬件细节"
+    }
+  },
+  {
+    "id": "1980-xcon-r1-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
+    "caption": {
+      "en": "Rule-based configurator",
+      "zh": "规则式配置器"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain.",
+      "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。"
+    },
+    "sourceId": "r1-an-expert-in-the-computer-systems-domain",
+    "sourceName": {
+      "en": "R1: An Expert in the Computer Systems Domain",
+      "zh": "R1：计算机系统领域的专家"
+    },
+    "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Rule diagram",
+      "zh": "规则图"
+    }
+  },
+  {
+    "id": "1980-xcon-r1-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+    "caption": {
+      "en": "Computer-order flow",
+      "zh": "计算机订单流程"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches.",
+      "zh": "依据 重访 R1：一线四年 制作的本地解释图。"
+    },
+    "sourceId": "r1-revisited-four-years-in-the-trenches",
+    "sourceName": {
+      "en": "R1 Revisited: Four Years in the Trenches",
+      "zh": "重访 R1：一线四年"
+    },
+    "sourceUrl": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Order-flow diagram",
+      "zh": "订单流程图"
+    }
+  }
+]

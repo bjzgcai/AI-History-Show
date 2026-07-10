@@ -1,0 +1,62 @@
+[
+  {
+    "id": "highly-accurate-protein-structure-prediction-with-alphafold",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Highly accurate protein structure prediction with AlphaFold",
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》"
+    },
+    "url": "https://doi.org/10.1038/s41586-021-03819-2"
+  },
+  {
+    "id": "deepmind-alphafold-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "DeepMind AlphaFold page",
+      "zh": "DeepMind AlphaFold 页面"
+    },
+    "url": "https://deepmind.google/technologies/alphafold/"
+  },
+  {
+    "id": "alphafold-protein-structure-database",
+    "type": {
+      "en": "Dataset",
+      "zh": "数据集"
+    },
+    "label": {
+      "en": "AlphaFold Protein Structure Database",
+      "zh": "AlphaFold 蛋白质结构数据库"
+    },
+    "url": "https://alphafold.ebi.ac.uk/"
+  },
+  {
+    "id": "alphafold-github-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "AlphaFold GitHub repository",
+      "zh": "AlphaFold GitHub 代码仓库"
+    },
+    "url": "https://github.com/google-deepmind/alphafold"
+  },
+  {
+    "id": "vanderbilt-university",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Vanderbilt University",
+      "zh": "范德堡大学"
+    },
+    "url": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/"
+  }
+]

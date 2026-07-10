@@ -1,0 +1,53 @@
+{
+  "id": "1996-lasso",
+  "year": "1996",
+  "title": {
+    "en": "Lasso",
+    "zh": "Lasso 回归"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Robert Tibshirani",
+        "zh": "罗伯特·蒂布希拉尼"
+      },
+      "role": {
+        "en": "Introduced the lasso method",
+        "zh": "提出 Lasso 方法"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "regression shrinkage and selection",
+    "zh": "回归收缩与选择"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Regression Shrinkage and Selection via the Lasso",
+      "zh": "通过 Lasso 进行回归收缩与选择"
+    },
+    "workAuthors": {
+      "en": "Robert Tibshirani, Journal of the Royal Statistical Society: Series B, 1996",
+      "zh": "罗伯特·蒂布希拉尼, 《皇家统计学会期刊 B辑》, 1996"
+    },
+    "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Statistical Learning / Lasso",
+    "zh": "BenchCouncil AI100：统计学习 / Lasso 回归"
+  }
+}

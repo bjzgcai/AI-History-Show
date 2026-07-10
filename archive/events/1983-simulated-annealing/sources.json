@@ -1,0 +1,47 @@
+[
+  {
+    "id": "optimization-by-simulated-annealing",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Optimization by Simulated Annealing",
+      "zh": "模拟退火优化"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.220.4598.671"
+  },
+  {
+    "id": "scipy-dual-annealing",
+    "type": {
+      "en": "Optimizer docs",
+      "zh": "优化器文档"
+    },
+    "label": {
+      "en": "SciPy dual_annealing",
+      "zh": "SciPy dual_annealing"
+    },
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html"
+  },
+  {
+    "id": "hedibert-course-pdf-mirror",
+    "type": {
+      "en": "Notebook",
+      "zh": "笔记本"
+    },
+    "label": {
+      "en": "Hedibert course PDF mirror",
+      "zh": "Hedibert course PDF mirror"
+    },
+    "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf"
+  },
+  {
+    "id": "collective-cognition-workshop-uc-davis-csc",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "Collective Cognition Workshop / UC Davis CSC",
+    "url": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Which two tricks helped stabilize DQN training?",
+      "zh": "哪两个技巧帮助稳定 DQN 训练？"
+    },
+    "options": [
+      {
+        "en": "Experience replay and a target network",
+        "zh": "经验回放和目标网络"
+      },
+      {
+        "en": "Only handwritten rules and no learning",
+        "zh": "只有手写规则且不学习"
+      },
+      {
+        "en": "WordNet labels and synsets only",
+        "zh": "只有 WordNet 标签和 synsets"
+      },
+      {
+        "en": "Randomly deleting all rewards",
+        "zh": "随机删除所有奖励"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Replay samples past transitions, while the target network slows down the moving target in Q-learning updates.",
+      "zh": "经验回放采样过去转移，目标网络则减慢 Q 学习更新中的移动目标。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "reinforcement-learning",
+      "deep-learning"
+    ]
+  }
+]

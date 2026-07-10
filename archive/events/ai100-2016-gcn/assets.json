@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2016-gcn-image-1",
+    "kind": "image",
+    "path": "https://tkipf.github.io/images/photo.jpg",
+    "caption": {
+      "en": "Thomas Kipf portrait",
+      "zh": "托马斯·基普夫肖像"
+    },
+    "subcaption": {
+      "en": "GCN lead author",
+      "zh": "GCN 主要作者"
+    },
+    "sourceId": "thomas-kipf-homepage",
+    "sourceName": {
+      "en": "Thomas Kipf homepage",
+      "zh": "托马斯·基普夫个人主页"
+    },
+    "sourceUrl": "https://tkipf.github.io/",
+    "originalImageUrl": "https://tkipf.github.io/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2016-gcn-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+    "caption": {
+      "en": "GCN explainer",
+      "zh": "GCN 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "semi-supervised-classification-with-graph-convolutional-networks",
+    "sourceName": {
+      "en": "OpenReview",
+      "zh": "OpenReview"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1609.02907",
+    "originalImageUrl": "https://arxiv.org/abs/1609.02907",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

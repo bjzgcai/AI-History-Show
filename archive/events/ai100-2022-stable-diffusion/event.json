@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2022-stable-diffusion",
+  "year": 2022,
+  "title": {
+    "en": "Stable Diffusion",
+    "zh": "Stable Diffusion"
+  },
+  "location": {
+    "name": {
+      "en": "LMU Munich and Stability AI",
+      "zh": "慕尼黑大学与 Stability AI"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1508,
+      11.5802
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Robin Rombach",
+        "zh": "罗宾·罗姆巴赫"
+      },
+      "role": {
+        "en": "Lead author of latent diffusion models",
+        "zh": "潜扩散模型主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "High-resolution image synthesis with latent diffusion models",
+    "zh": "使用潜扩散模型进行高分辨率图像合成"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "使用潜扩散模型进行高分辨率图像合成"
+    },
+    "workAuthors": {
+      "en": "Robin Rombach et al., CVPR, 2022",
+      "zh": "罗宾·罗姆巴赫等，CVPR，2022"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2112.10752"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

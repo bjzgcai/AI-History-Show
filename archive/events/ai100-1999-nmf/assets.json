@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1999-nmf-image-1",
+    "kind": "image",
+    "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+    "caption": {
+      "en": "H. Sebastian Seung portrait",
+      "zh": "H. 塞巴斯蒂安·承肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of NMF",
+      "zh": "NMF 共同作者"
+    },
+    "sourceId": "princeton-neuroscience-institute",
+    "sourceName": {
+      "en": "Princeton Neuroscience Institute",
+      "zh": "普林斯顿神经科学研究所"
+    },
+    "sourceUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+    "originalImageUrl": "https://pni.princeton.edu/people/h-sebastian-seung",
+    "rights": {
+      "en": "Princeton profile image; reuse rights not stated.",
+      "zh": "普林斯顿个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1999-nmf-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+    "caption": {
+      "en": "Parts-based factorization",
+      "zh": "基于部件的分解"
+    },
+    "subcaption": {
+      "en": "Original local explainer of nonnegative parts-based factorization.",
+      "zh": "关于非负部件分解的本地原创解释图。"
+    },
+    "sourceId": "learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+    "sourceName": {
+      "en": "Nature",
+      "zh": "Nature"
+    },
+    "sourceUrl": "https://doi.org/10.1038/44565",
+    "originalImageUrl": "https://doi.org/10.1038/44565",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

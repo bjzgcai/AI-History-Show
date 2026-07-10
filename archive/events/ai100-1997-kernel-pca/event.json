@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1997-kernel-pca",
+  "year": 1997,
+  "title": {
+    "en": "Kernel PCA",
+    "zh": "Kernel PCA"
+  },
+  "location": {
+    "name": {
+      "en": "Max Planck Institute for Biological Cybernetics",
+      "zh": "马克斯·普朗克生物控制论研究所"
+    },
+    "country": {
+      "en": "Tuebingen, Germany",
+      "zh": "德国图宾根"
+    },
+    "coordinates": [
+      48.5216,
+      9.0576
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Bernhard Scholkopf",
+        "zh": "伯恩哈德·舍尔科普夫"
+      },
+      "role": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Klaus-Robert Muller",
+        "zh": "克劳斯-罗伯特·穆勒"
+      },
+      "role": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+    "zh": "作为核特征值问题的非线性成分分析"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+      "zh": "作为核特征值问题的非线性成分分析"
+    },
+    "workAuthors": {
+      "en": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller, Neural Computation, 1998",
+      "zh": "伯恩哈德·舍尔科普夫、亚历山大·斯莫拉、克劳斯-罗伯特·穆勒，《Neural Computation》，1998"
+    },
+    "sourceUrl": "https://doi.org/10.1162/089976698300017467"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

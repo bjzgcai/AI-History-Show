@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>",
+    "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.",
+        "zh": "Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Q-learning as a foundational control algorithm for reinforcement learning. Its long-term legacy is the Bellman-error update pattern that later scaled into Deep Q Networks and many value-based agents.",
+        "zh": "专家通常把 Q-learning 视为强化学习控制算法的基础。它的长期影响在于 Bellman 误差更新模式后来扩展到深度 Q 网络和许多基于价值的智能体。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Reinforcement learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Off-policy temporal-difference control",
+      "zh": "离策略时序差分控制"
+    },
+    "artifact": {
+      "en": "Q-learning update rule",
+      "zh": "Q-learning 更新规则"
+    },
+    "material": {
+      "en": "PhD thesis and Machine Learning paper",
+      "zh": "博士论文与《Machine Learning》论文"
+    },
+    "demo": {
+      "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target.",
+      "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Action Value",
+          "zh": "动作价值"
+        },
+        "text": {
+          "en": "Q estimates future return for a state-action pair.",
+          "zh": "Q 估计状态-动作对的未来回报。"
+        }
+      },
+      {
+        "label": {
+          "en": "Off-policy",
+          "zh": "离策略"
+        },
+        "text": {
+          "en": "Learning can target a greedy policy while exploring differently.",
+          "zh": "学习可以指向贪心策略，同时用不同方式探索。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Temporal-difference update",
+          "zh": "时序差分更新"
+        },
+        "zh": {
+          "en": "Temporal-difference update",
+          "zh": "时序差分更新"
+        }
+      },
+      {
+        "en": {
+          "en": "Deep Q Network",
+          "zh": "深度 Q 网络"
+        },
+        "zh": {
+          "en": "Deep Q Network",
+          "zh": "深度 Q 网络"
+        }
+      },
+      {
+        "en": {
+          "en": "SARSA",
+          "zh": "SARSA"
+        },
+        "zh": {
+          "en": "SARSA",
+          "zh": "SARSA"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United Kingdom",
+          "zh": "英国"
+        },
+        "zh": {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "State action",
+          "zh": "状态动作"
+        },
+        "zh": {
+          "en": "State action",
+          "zh": "状态动作"
+        }
+      },
+      {
+        "en": {
+          "en": "Reward + next state",
+          "zh": "奖励 + 下一状态"
+        },
+        "zh": {
+          "en": "Reward + next state",
+          "zh": "奖励 + 下一状态"
+        }
+      },
+      {
+        "en": {
+          "en": "Q update",
+          "zh": "Q 更新"
+        },
+        "zh": {
+          "en": "Q update",
+          "zh": "Q 更新"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Royal Holloway",
+          "zh": "伦敦大学皇家霍洛威学院"
+        },
+        "title": {
+          "en": "Learning from Delayed Rewards",
+          "zh": "从延迟奖励中学习"
+        },
+        "description": {
+          "en": "Royal Holloway source card for Q-Learning.",
+          "zh": "伦敦大学皇家霍洛威学院 的Q-Learning资料卡片。"
+        },
+        "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+        "source": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open thesis",
+          "zh": "打开博士论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Thesis",
+          "zh": "博士论文"
+        },
+        "label": {
+          "en": "Learning from Delayed Rewards",
+          "zh": "《从延迟奖励中学习》"
+        },
+        "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Q-learning",
+          "zh": "《Q-learning》"
+        },
+        "url": "https://link.springer.com/article/10.1007/BF00992698"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Q-learning overview",
+          "zh": "Q-learning 概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Q-learning"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "PhD thesis and Machine Learning paper",
+          "zh": "博士论文与《Machine Learning》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The agent observes a reward and next state, then updates the current state-action value toward a Bellman target.",
+          "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does ReLU do to negative input values?",
+      "zh": "ReLU 会怎样处理负输入值？"
+    },
+    "options": [
+      {
+        "en": "It clips them to zero",
+        "zh": "把它们截断为 0"
+      },
+      {
+        "en": "It turns them into images",
+        "zh": "把它们变成图像"
+      },
+      {
+        "en": "It stores them as chess moves",
+        "zh": "把它们存成棋步"
+      },
+      {
+        "en": "It always doubles them",
+        "zh": "总是把它们翻倍"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "ReLU is max(0, x): negative values become zero, and positive values pass through.",
+      "zh": "ReLU 是 max(0, x)：负值变成 0，正值直接通过。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "activation",
+      "deep-learning"
+    ]
+  }
+]

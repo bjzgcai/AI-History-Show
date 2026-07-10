@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1973-prolog-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+    "caption": {
+      "en": "Alain Colmerauer portrait",
+      "zh": "阿兰·科尔梅罗尔 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category.",
+      "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/A-Colmerauer%20web-800x423.jpg",
+    "rights": "License stated on Commons file page.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1973-prolog-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+    "caption": {
+      "en": "Query proof tree",
+      "zh": "查询证明树"
+    },
+    "subcaption": {
+      "en": "Local redraw for PROLOG, based on the listed source material.",
+      "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "the-birth-of-prolog",
+    "sourceName": {
+      "en": "ACM SIGPLAN Notices",
+      "zh": "《ACM SIGPLAN 通讯》"
+    },
+    "sourceUrl": "https://doi.org/10.1145/155360.155362",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1973-prolog-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg",
+    "caption": {
+      "en": "Unification trace",
+      "zh": "合一轨迹"
+    },
+    "subcaption": {
+      "en": "Local redraw for PROLOG, based on the listed source material.",
+      "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "the-birth-of-prolog",
+    "sourceName": {
+      "en": "ACM SIGPLAN Notices",
+      "zh": "《ACM SIGPLAN 通讯》"
+    },
+    "sourceUrl": "https://doi.org/10.1145/155360.155362",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>",
+    "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Computer systems were sold as many interacting components, and human configuration errors could delay or break orders.",
+        "zh": "计算机系统由许多相互作用的组件销售，人为配置错误可能延误订单或导致错误交付。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Production rules matched facts in working memory, fired actions, and incrementally built a valid hardware configuration.",
+        "zh": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat XCON/R1 as a landmark industrial expert system and a proof that knowledge engineering could deliver business value. Its long-term legacy is the case-study role it plays in expert-system maintenance, rule management, and applied AI deployment.",
+        "zh": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。它的长期影响在于成为专家系统维护、规则管理和应用 AI 部署的标准案例。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Expert system",
+      "zh": "专家系统"
+    },
+    "method": {
+      "en": "OPS5 production-rule configuration",
+      "zh": "OPS5 产生式规则配置"
+    },
+    "artifact": {
+      "en": "R1/XCON VAX configurator",
+      "zh": "R1/XCON VAX 配置器"
+    },
+    "material": {
+      "en": "AAAI and Artificial Intelligence expert-system papers",
+      "zh": "AAAI 与 人工智能 专家系统论文"
+    },
+    "demo": {
+      "en": "Turn customer requirements into a valid component list",
+      "zh": "把客户需求转化为有效组件清单"
+    },
+    "visual": "xcon",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Production Rule",
+          "zh": "产生式规则"
+        },
+        "text": {
+          "en": "If-then rules encode configuration expertise.",
+          "zh": "if-then 规则编码配置专长。"
+        }
+      },
+      {
+        "label": {
+          "en": "Working Memory",
+          "zh": "工作记忆"
+        },
+        "text": {
+          "en": "Current order facts are updated as rules fire.",
+          "zh": "规则触发时持续更新当前订单事实。"
+        }
+      },
+      {
+        "label": {
+          "en": "Knowledge Engineering",
+          "zh": "知识工程"
+        },
+        "text": {
+          "en": "Expert knowledge is elicited, encoded, and maintained.",
+          "zh": "专家知识被获取、编码并维护。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "DENDRAL",
+        "zh": "DENDRAL"
+      },
+      {
+        "en": "MYCIN",
+        "zh": "MYCIN"
+      },
+      {
+        "en": "Cyc",
+        "zh": "Cyc"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Pennsylvania, United States",
+        "zh": "美国宾夕法尼亚州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Read order",
+        "zh": "读取订单"
+      },
+      {
+        "en": "Fire rules",
+        "zh": "触发规则"
+      },
+      {
+        "en": "Emit config",
+        "zh": "输出配置"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "AAAI Paper",
+          "zh": "AAAI 论文"
+        },
+        "title": {
+          "en": "R1: An Expert in the Computer Systems Domain",
+          "zh": "R1：计算机系统领域的专家"
+        },
+        "description": {
+          "en": "AAAI paper describing the rule-based configuration expert system behind XCON/R1.",
+          "zh": "介绍 XCON/R1 背后基于规则的配置专家系统的 AAAI 论文。"
+        },
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+        "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+        "action": {
+          "en": "Open AAAI record",
+          "zh": "打开 AAAI 记录"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "R1: An Expert in the Computer Systems Domain",
+          "zh": "R1：计算机系统领域的专家"
+        },
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
+      },
+      {
+        "type": {
+          "en": "Retrospective",
+          "zh": "回顾"
+        },
+        "label": {
+          "en": "R1 Revisited: Four Years in the Trenches",
+          "zh": "重访 R1：一线四年"
+        },
+        "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445"
+      },
+      {
+        "type": {
+          "en": "Overview",
+          "zh": "概览"
+        },
+        "label": {
+          "en": "XCON overview",
+          "zh": "XCON 概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Xcon"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "DEC VAX-11/780 photo",
+          "zh": "DEC VAX-11/780 照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+    "demoPanel": "sources"
+  }
+}

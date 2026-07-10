@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2017-wasserstein-gan",
+  "year": 2017,
+  "title": {
+    "en": "Wasserstein GAN",
+    "zh": "Wasserstein GAN"
+  },
+  "location": {
+    "name": {
+      "en": "Courant Institute and Facebook AI Research",
+      "zh": "Courant Institute and Facebook AI Research"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "New York, United States"
+    },
+    "coordinates": [
+      40.7295,
+      -73.9965
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Arjovsky",
+        "zh": "马丁·阿尔乔夫斯基"
+      },
+      "role": {
+        "en": "Wasserstein GAN lead author",
+        "zh": "Wasserstein GAN 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Wasserstein generative adversarial networks",
+    "zh": "Wasserstein 生成对抗网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Wasserstein Generative Adversarial Networks",
+      "zh": "Wasserstein 生成对抗网络"
+    },
+    "workAuthors": {
+      "en": "Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+      "zh": "马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

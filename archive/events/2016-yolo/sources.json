@@ -1,0 +1,47 @@
+[
+  {
+    "id": "you-only-look-once-unified-real-time-object-detection",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "You Only Look Once: Unified, Real-Time Object Detection",
+      "zh": "你只看一次：统一的实时目标检测"
+    },
+    "url": "https://arxiv.org/abs/1506.02640"
+  },
+  {
+    "id": "cvpr-open-access-paper-page",
+    "type": {
+      "en": "Open access",
+      "zh": "开放论文"
+    },
+    "label": {
+      "en": "CVPR open-access paper page",
+      "zh": "计算机视觉与模式识别会议 open-access paper page"
+    },
+    "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html"
+  },
+  {
+    "id": "darknet-yolo-project-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Darknet YOLO project page",
+      "zh": "Darknet YOLO project page"
+    },
+    "url": "https://pjreddie.com/darknet/yolo/"
+  },
+  {
+    "id": "university-of-washington-allen-school",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "University of Washington Allen School",
+    "url": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/"
+  }
+]

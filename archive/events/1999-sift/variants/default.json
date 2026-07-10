@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>",
+    "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Vision systems needed features that matched the same object despite viewpoint and scale changes.",
+        "zh": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor.",
+        "zh": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat SIFT as a landmark handcrafted feature for pre-deep-learning computer vision. Its long-term legacy is the feature-engineering mindset behind local descriptors, structure-from-motion pipelines, matching benchmarks, and robust visual correspondence.",
+        "zh": "专家通常把 SIFT 视为深度学习之前计算机视觉中标志性的手工特征。它的长期影响在于塑造了局部描述子、运动恢复结构流程、匹配基准和稳健视觉对应背后的特征工程思路。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Computer vision feature extraction",
+      "zh": "计算机视觉特征提取"
+    },
+    "method": {
+      "en": "Scale-invariant local features",
+      "zh": "尺度不变局部特征"
+    },
+    "artifact": {
+      "en": "SIFT keypoint descriptor",
+      "zh": "SIFT 关键点描述子"
+    },
+    "material": {
+      "en": "ICCV paper and IJCV article",
+      "zh": "ICCV 论文与 IJCV 文章"
+    },
+    "demo": {
+      "en": "Find stable keypoints across scale and rotation",
+      "zh": "跨尺度与旋转寻找稳定关键点"
+    },
+    "visual": "sift",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Scale Space",
+          "zh": "尺度空间"
+        },
+        "text": {
+          "en": "The image is examined at multiple blur levels to find stable structures.",
+          "zh": "图像在多个模糊尺度上被检查，以寻找稳定结构。"
+        }
+      },
+      {
+        "label": {
+          "en": "Keypoint",
+          "zh": "关键点"
+        },
+        "text": {
+          "en": "A repeatable local point that can be matched across images.",
+          "zh": "可在多张图像间重复匹配的局部点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Descriptor",
+          "zh": "描述子"
+        },
+        "text": {
+          "en": "Gradient histograms summarize the nearby appearance.",
+          "zh": "梯度直方图概括邻域外观。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "HOG",
+        "zh": "HOG"
+      },
+      {
+        "en": "SURF",
+        "zh": "SURF"
+      },
+      {
+        "en": "Computer vision",
+        "zh": "计算机视觉"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "British Columbia, Canada",
+        "zh": "加拿大不列颠哥伦比亚省"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Build scale space",
+        "zh": "构建尺度空间"
+      },
+      {
+        "en": "Pick keypoints",
+        "zh": "选择关键点"
+      },
+      {
+        "en": "Match descriptors",
+        "zh": "匹配描述子"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "UBC Laboratory for Computational Intelligence",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "SIFT ICCV paper PDF",
+          "zh": "SIFT ICCV 论文 PDF"
+        },
+        "description": {
+          "en": "UBC-hosted PDF for the original SIFT conference paper.",
+          "zh": "UBC 托管的 SIFT 原始会议论文 PDF。"
+        },
+        "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open paper PDF",
+          "zh": "打开论文 PDF"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Object Recognition from Local Scale-Invariant Features",
+          "zh": "Object Recognition from Local Scale-Invariant Features"
+        },
+        "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+      },
+      {
+        "type": {
+          "en": "Journal article",
+          "zh": "期刊论文"
+        },
+        "label": {
+          "en": "Distinctive Image Features from Scale-Invariant Keypoints",
+          "zh": "来自尺度不变关键点的区分性图像特征"
+        },
+        "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94"
+      },
+      {
+        "type": {
+          "en": "Profile",
+          "zh": "人物资料"
+        },
+        "label": {
+          "en": "David Lowe, UBC Computer Science",
+          "zh": "戴维·洛, UBC Computer 《科学》"
+        },
+        "url": "https://www.cs.ubc.ca/people/david-lowe"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+      "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》"
+    },
+    "url": "https://arxiv.org/abs/1703.10593"
+  },
+  {
+    "id": "iccv-open-access-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICCV open-access paper page",
+      "zh": "ICCV 开放论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html"
+  },
+  {
+    "id": "cyclegan-project-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "CycleGAN project page",
+      "zh": "CycleGAN 项目页面"
+    },
+    "url": "https://junyanz.github.io/CycleGAN/"
+  },
+  {
+    "id": "jun-yan-zhu-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Jun-Yan Zhu homepage",
+      "zh": "朱俊彦个人主页"
+    },
+    "url": "https://www.cs.cmu.edu/~junyanz/"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2013-word2vec-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+    "caption": {
+      "en": "Tomas Mikolov portrait",
+      "zh": "托马斯·米科洛夫 肖像"
+    },
+    "subcaption": {
+      "en": "IEEE Signal Processing Society newsletter image for Mikolov.",
+      "zh": "IEEE Signal Processing Society 访谈页面中的 Mikolov 人物图。"
+    },
+    "sourceId": "ieee-signal-processing-society",
+    "sourceName": "IEEE Signal Processing Society",
+    "sourceUrl": "https://signalprocessingsociety.org/newsletter/2021/07/industry-leaders-signal-processing-and-machine-learning-tomas-mikolov",
+    "originalImageUrl": "https://signalprocessingsociety.org/sites/default/files/uploads/newsletter/images/Tomas_Mikolov.jpg",
+    "rights": "IEEE SPS newsletter image; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2013-word2vec-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
+    "caption": {
+      "en": "Skip-gram context window",
+      "zh": "Skip-gram 上下文窗口"
+    },
+    "subcaption": {
+      "en": "Local redraw for Word2Vec, based on the listed source material.",
+      "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "efficient-estimation-of-word-representations-in-vector-space",
+    "sourceName": {
+      "en": "NeurIPS / arXiv",
+      "zh": "神经信息处理系统大会 / arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1301.3781",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2013-word2vec-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg",
+    "caption": {
+      "en": "Vector analogy",
+      "zh": "向量类比"
+    },
+    "subcaption": {
+      "en": "Local redraw for Word2Vec, based on the listed source material.",
+      "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "efficient-estimation-of-word-representations-in-vector-space",
+    "sourceName": {
+      "en": "NeurIPS / arXiv",
+      "zh": "神经信息处理系统大会 / arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1301.3781",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

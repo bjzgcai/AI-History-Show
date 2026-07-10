@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Why is Strachey's draughts program important to AI history?",
+      "zh": "斯特雷奇 的跳棋程序为什么对 AI 历史重要？"
+    },
+    "options": [
+      {
+        "en": "It showed an early computer choosing moves in a non-numerical game",
+        "zh": "它展示了早期计算机在非数值游戏中选择走法"
+      },
+      {
+        "en": "It trained a modern transformer",
+        "zh": "它训练了现代 Transformer"
+      },
+      {
+        "en": "It solved protein folding",
+        "zh": "它解决了蛋白质折叠"
+      },
+      {
+        "en": "It clustered images with DBSCAN",
+        "zh": "它用 DBSCAN 聚类图像"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The program used board representation, legal move generation, and evaluation on early stored-program computers.",
+      "zh": "该程序在早期存储程序计算机上使用棋盘表示、合法走法生成和局面评估。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "game-ai",
+      "early-computing"
+    ]
+  }
+]

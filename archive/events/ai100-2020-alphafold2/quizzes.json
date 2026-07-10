@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What problem did AlphaFold2 transform?",
+      "zh": "AlphaFold2 改变了什么问题？"
+    },
+    "options": [
+      {
+        "en": "Protein structure prediction",
+        "zh": "蛋白质结构预测"
+      },
+      {
+        "en": "Chatbot small talk only",
+        "zh": "只有聊天机器人闲聊"
+      },
+      {
+        "en": "Spreadsheet formatting",
+        "zh": "电子表格格式设置"
+      },
+      {
+        "en": "Theorem clause ordering only",
+        "zh": "只有定理子句排序"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features.",
+      "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "alphafold",
+      "ai-for-science"
+    ]
+  }
+]

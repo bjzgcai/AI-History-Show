@@ -16,6 +16,7 @@
         "quality": "npm run lint && npm run format:check && npm test",
         "validate:startup": "node scripts/validate-startup.js",
         "validate:archive": "node scripts/validate-archive.js",
+        "migrate:ai100-archive": "node scripts/migrate-ai100-archive.js",
         "validate:ai100-context": "node scripts/validate-ai100-context.js",
         "validate:ai100-quizzes": "node scripts/validate-ai100-quizzes-grounded.js",
         "audit:ai100-accuracy": "node scripts/audit-ai100-accuracy.js",

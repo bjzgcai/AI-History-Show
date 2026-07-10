@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1970-ridge-summary",
+    "text": {
+      "en": "Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.",
+      "zh": "阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。"
+    },
+    "sourceIds": [
+      "ridge-regression-biased-estimation-for-nonorthogonal-problems",
+      "open-pdf-copy-of-the-technometrics-paper"
+    ]
+  },
+  {
+    "id": "ai100-1970-ridge-quote",
+    "text": {
+      "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "zh": "岭回归：非正交问题中的有偏估计"
+    },
+    "sourceIds": [
+      "ridge-regression-biased-estimation-for-nonorthogonal-problems"
+    ]
+  }
+]

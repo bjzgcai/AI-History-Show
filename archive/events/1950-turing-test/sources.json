@@ -1,0 +1,74 @@
+[
+  {
+    "id": "computing-machinery-and-intelligence",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Computing Machinery and Intelligence",
+      "zh": "计算机器与智能"
+    },
+    "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+  },
+  {
+    "id": "turing-digital-archive",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "Turing Digital Archive",
+      "zh": "图灵数字档案"
+    },
+    "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence"
+  },
+  {
+    "id": "internet-archive-digital-preview",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "Internet Archive digital preview",
+      "zh": "互联网档案馆 数字化预览"
+    },
+    "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up"
+  },
+  {
+    "id": "stanford-encyclopedia-of-philosophy",
+    "type": {
+      "en": "Context",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Stanford Encyclopedia of Philosophy",
+      "zh": "斯坦福哲学百科全书"
+    },
+    "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg"
+  },
+  {
+    "id": "wikimedia-commons-2",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png"
+  }
+]

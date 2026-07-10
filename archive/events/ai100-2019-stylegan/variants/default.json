@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>",
+    "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.",
+        "zh": "StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat StyleGAN as a benchmark for high-fidelity controllable image synthesis. Its long-term legacy is the style-space interface that shaped face generation, latent editing, and generative media research.",
+        "zh": "专家通常把 StyleGAN 视为高保真可控图像合成的基准。它的长期影响在于风格空间接口塑造了人脸生成、潜空间编辑和生成媒体研究。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Style-modulated generator architecture",
+      "zh": "风格调制生成器架构"
+    },
+    "artifact": {
+      "en": "StyleGAN generator",
+      "zh": "StyleGAN 生成器"
+    },
+    "material": {
+      "en": "CVPR paper and NVIDIA code release",
+      "zh": "CVPR 论文与 NVIDIA 代码发布"
+    },
+    "demo": {
+      "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.",
+      "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Style Space",
+          "zh": "风格空间"
+        },
+        "text": {
+          "en": "A mapping network controls synthesis layers.",
+          "zh": "映射网络控制合成层。"
+        }
+      },
+      {
+        "label": {
+          "en": "Layer Control",
+          "zh": "分层控制"
+        },
+        "text": {
+          "en": "Different layers affect pose, shape, or texture.",
+          "zh": "不同层影响姿态、形状或纹理。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "DCGAN",
+          "zh": "DCGAN"
+        },
+        "zh": {
+          "en": "DCGAN",
+          "zh": "DCGAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        },
+        "zh": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        },
+        "zh": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        }
+      },
+      {
+        "en": {
+          "en": "Style modulation",
+          "zh": "风格调制"
+        },
+        "zh": {
+          "en": "Style modulation",
+          "zh": "风格调制"
+        }
+      },
+      {
+        "en": {
+          "en": "Generated image",
+          "zh": "生成图像"
+        },
+        "zh": {
+          "en": "Generated image",
+          "zh": "生成图像"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVF Open Access",
+          "zh": "CVF 开放论文库"
+        },
+        "title": {
+          "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+          "zh": "面向生成对抗网络的基于风格的生成器架构"
+        },
+        "description": {
+          "en": "CVF Open Access source card for StyleGAN.",
+          "zh": "CVF 开放论文库 的StyleGAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1812.04948",
+        "source": "https://arxiv.org/abs/1812.04948",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A Style-Based Generator Architecture for GANs",
+          "zh": "《面向 GAN 的基于风格的生成器架构》"
+        },
+        "url": "https://arxiv.org/abs/1812.04948"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "CVPR open-access paper page",
+          "zh": "CVPR 开放论文页面"
+        },
+        "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html"
+      },
+      {
+        "type": {
+          "en": "Code",
+          "zh": "代码"
+        },
+        "label": {
+          "en": "NVIDIA StyleGAN repository",
+          "zh": "NVIDIA StyleGAN 代码仓库"
+        },
+        "url": "https://github.com/NVlabs/stylegan"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper and NVIDIA code release",
+          "zh": "CVPR 论文与 NVIDIA 代码发布"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.",
+          "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
+        }
+      }
+    ]
+  }
+}

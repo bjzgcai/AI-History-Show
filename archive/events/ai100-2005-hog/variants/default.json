@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>",
+    "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.",
+        "zh": "纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat HOG as a landmark hand-crafted vision descriptor. Its long-term legacy is the cell-and-block representation pattern that made robust object detection practical before end-to-end learned features took over.",
+        "zh": "专家通常把 HOG 视为手工视觉描述子的标志性成果。它的长期影响在于单元与块的表示模式在端到端学习特征普及前让稳健目标检测变得实用。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Gradient-orientation descriptor",
+      "zh": "梯度方向描述子"
+    },
+    "artifact": {
+      "en": "HOG detector feature",
+      "zh": "HOG 检测特征"
+    },
+    "material": {
+      "en": "CVPR paper",
+      "zh": "CVPR 论文"
+    },
+    "demo": {
+      "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier.",
+      "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
+    },
+    "visual": "hog",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Orientation Histograms",
+          "zh": "方向直方图"
+        },
+        "text": {
+          "en": "Edges vote into local direction bins.",
+          "zh": "边缘投票到局部方向桶。"
+        }
+      },
+      {
+        "label": {
+          "en": "Block Normalization",
+          "zh": "块归一化"
+        },
+        "text": {
+          "en": "Neighboring cells are normalized for illumination robustness.",
+          "zh": "相邻单元归一化以增强光照鲁棒性。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "SIFT",
+        "zh": "SIFT"
+      },
+      {
+        "en": "SURF",
+        "zh": "SURF"
+      },
+      {
+        "en": "Faster R-CNN",
+        "zh": "Faster R-CNN"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "France",
+        "zh": "法国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Image window",
+        "zh": "图像窗口"
+      },
+      {
+        "en": "Gradient cells",
+        "zh": "梯度单元"
+      },
+      {
+        "en": "Classifier",
+        "zh": "分类器"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "INRIA",
+          "zh": "INRIA"
+        },
+        "title": {
+          "en": "Histograms of Oriented Gradients for Human Detection",
+          "zh": "用于人体检测的方向梯度直方图"
+        },
+        "description": {
+          "en": "Open PDF of the HOG human-detection paper.",
+          "zh": "HOG 人体检测论文的开放 PDF。"
+        },
+        "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+        "source": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open PDF",
+          "zh": "打开 PDF"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Histograms of Oriented Gradients for Human Detection",
+          "zh": "《用于人体检测的方向梯度直方图》"
+        },
+        "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "IEEE CVPR paper record",
+          "zh": "IEEE CVPR 论文记录"
+        },
+        "url": "https://doi.org/10.1109/CVPR.2005.177"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Histogram of oriented gradients overview",
+          "zh": "方向梯度直方图概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-image HOG example",
+          "zh": "scikit-image HOG 示例"
+        },
+        "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper",
+          "zh": "CVPR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Image windows are divided into cells, each cell votes edge directions, and normalized blocks feed a classifier.",
+          "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
+        }
+      }
+    ]
+  }
+}

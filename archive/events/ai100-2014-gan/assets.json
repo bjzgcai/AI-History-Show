@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2014-gan-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/ian-goodfellow.jpg",
+    "caption": {
+      "en": "Ian Goodfellow portrait",
+      "zh": "伊恩·古德费洛肖像"
+    },
+    "subcaption": {
+      "en": "GAN lead author",
+      "zh": "GAN 主要作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/ian-goodfellow.jpg",
+    "originalImageUrl": "resources/images/figures/ian-goodfellow.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2014-gan-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+    "caption": {
+      "en": "GAN adversarial loop",
+      "zh": "GAN 对抗循环"
+    },
+    "subcaption": {
+      "en": "Original local explainer of generator-discriminator training.",
+      "zh": "关于生成器-判别器训练的本地原创解释图。"
+    },
+    "sourceId": "neurips-paper-page",
+    "sourceName": {
+      "en": "NeurIPS",
+      "zh": "NeurIPS"
+    },
+    "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+    "originalImageUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

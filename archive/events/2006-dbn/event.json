@@ -1,0 +1,53 @@
+{
+  "id": "2006-dbn",
+  "year": "2006",
+  "title": {
+    "en": "Deep Belief Network",
+    "zh": "深度置信网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Ontario, Canada",
+      "zh": "加拿大安大略省"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author of deep belief net learning",
+        "zh": "深度置信网络学习共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Layer-wise unsupervised pretraining",
+    "zh": "逐层无监督预训练"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Fast learning algorithm for deep belief nets",
+      "zh": "深度置信网络的快速学习算法"
+    },
+    "workAuthors": {
+      "en": "Geoffrey Hinton",
+      "zh": "杰弗里·辛顿"
+    },
+    "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Deep learning / Deep Belief Network",
+    "zh": "BenchCouncil AI100：深度学习 / 深度置信网络"
+  }
+}

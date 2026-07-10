@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-09 21:18
+// 生成时间: 2026-07-10 18:15
 // 数据来源: archive/  +  manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -535,7 +535,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Psychological Review",
+          "site": {
+            "en": "Psychological Review",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "The perceptron paper record",
             "zh": "感知机论文记录"
@@ -6680,7 +6683,11 @@ const milestones = [
           "source": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
           "originalImageUrl": "Not available",
-          "license": "Public domain"
+          "license": "Public domain",
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
         },
         "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png": {
           "caption": {
@@ -7078,7 +7085,11 @@ const milestones = [
           "source": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
           "originalImageUrl": "Not available",
-          "license": "CC BY-SA 2.0"
+          "license": "CC BY-SA 2.0",
+          "usage": {
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
+          }
         },
         "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg": {
           "caption": {
@@ -7335,8 +7346,8 @@ const milestones = [
         "zh": "谷歌 DeepMind"
       },
       "country": {
-        "en": "United Kingdom",
-        "zh": "英国"
+        "en": "London, United Kingdom",
+        "zh": "英国，伦敦"
       },
       "coordinates": [
         51.5074,
@@ -7396,7 +7407,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等，《自然》，2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
     },
     "quoteMeta": {
       "speaker": "",
@@ -7406,7 +7417,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "大卫·席尔瓦等，《自然》，2016"
+        "zh": "戴维·席尔瓦等, 《自然》, 2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -7423,7 +7434,7 @@ const milestones = [
         },
         "html": {
           "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -7468,11 +7479,11 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
-          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "originalImageUrl": "Not available",
           "license": "CC BY 2.0",
           "usage": {
-            "en": "Portrait card",
-            "zh": "人物资料卡"
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
           }
         },
         "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
@@ -7482,7 +7493,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
-            "zh": "根据《自然》AlphaGo 论文与谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+            "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
           },
           "sourceName": {
             "en": "Nature / Google DeepMind",
@@ -7491,10 +7502,7 @@ const milestones = [
           "source": "https://www.nature.com/articles/nature16961",
           "sourceUrl": "https://www.nature.com/articles/nature16961",
           "originalImageUrl": "Local original explainer",
-          "license": {
-            "en": "Original local explainer; publisher figure reuse rights not used.",
-            "zh": "本地原创解释图；未复用出版方论文图。"
-          },
+          "license": "Original local explainer; publisher figure reuse rights not used.",
           "usage": {
             "en": "Supporting image / Explainer graphic",
             "zh": "辅助说明图 / 解释性图形"
@@ -7525,7 +7533,7 @@ const milestones = [
       },
       "material": {
         "en": "Nature paper + blog + SGF/API",
-        "zh": "《自然》论文 + 博客 + 棋谱/API"
+        "zh": "《自然》 论文 + 博客 + 棋谱/API"
       },
       "demo": {
         "en": "Move 37 board explainer",
@@ -7575,7 +7583,7 @@ const milestones = [
           },
           "description": {
             "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
-            "zh": "《自然》官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+            "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "source": "https://www.nature.com/articles/nature16961",
@@ -7589,7 +7597,7 @@ const milestones = [
           },
           "action": {
             "en": "Open Nature paper",
-            "zh": "打开《自然》论文"
+            "zh": "打开 《自然》 论文"
           }
         }
       ],
@@ -7601,42 +7609,31 @@ const milestones = [
           },
           "label": {
             "en": "Nature 2016 AlphaGo paper",
-            "zh": "《自然》2016 AlphaGo 论文"
+            "zh": "《自然》 2016 AlphaGo 论文"
           },
           "url": "https://www.nature.com/articles/nature16961"
         },
         {
           "type": {
-            "en": "Project",
-            "zh": "项目"
+            "en": "Blog",
+            "zh": "博客"
           },
           "label": {
             "en": "Google DeepMind AlphaGo",
             "zh": "谷歌 DeepMind AlphaGo"
           },
-          "url": "https://deepmind.google/research/breakthroughs/alphago/"
+          "url": "https://deepmind.google/research/alphago/"
         },
         {
           "type": {
-            "en": "Code / API",
-            "zh": "代码 / API"
+            "en": "API",
+            "zh": "API"
           },
           "label": {
             "en": "KataGo Analysis Engine",
             "zh": "KataGo 分析引擎"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
-        },
-        {
-          "type": {
-            "en": "Image source",
-            "zh": "图片来源"
-          },
-          "label": {
-            "en": "Wikimedia Commons: Lee Se-Dol",
-            "zh": "维基共享资源：李世石"
-          },
-          "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg"
         }
       ]
     },
@@ -7671,13 +7668,13 @@ const milestones = [
       },
       "source": {
         "label": {
-          "en": "Nature 2016 AlphaGo paper",
-          "zh": "《自然》2016 AlphaGo 论文"
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
         }
       },
       "tags": [
-        "reinforcement-learning",
-        "games"
+        "games",
+        "search"
       ]
     },
     "quizzes": [
@@ -7712,13 +7709,13 @@ const milestones = [
         },
         "source": {
           "label": {
-            "en": "Nature 2016 AlphaGo paper",
-            "zh": "《自然》2016 AlphaGo 论文"
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
           }
         },
         "tags": [
-          "reinforcement-learning",
-          "games"
+          "games",
+          "search"
         ]
       }
     ]
@@ -8373,7 +8370,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "SIAM",
+          "site": {
+            "en": "SIAM",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "On the Uniform Convergence of Relative Frequencies",
             "zh": "《相对频率的一致收敛》"
@@ -9863,42 +9863,26 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg": {
+        "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg": {
           "caption": {
-            "en": "Loss landscape trajectory",
-            "zh": "损失地形轨迹"
+            "en": "Diederik P. Kingma portrait",
+            "zh": "迪德里克·P·金马 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
-            "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+            "en": "Portrait from Kingma's personal website.",
+            "zh": "来自 金马 个人网站的人物照片。"
           },
-          "sourceName": "arXiv / ICLR",
-          "source": "https://arxiv.org/abs/1412.6980",
-          "sourceUrl": "https://arxiv.org/abs/1412.6980",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": {
+            "en": "Diederik P. Kingma personal website",
+            "zh": "迪德里克·P·金马 personal website"
+          },
+          "source": "https://dpkingma.com/",
+          "sourceUrl": "https://dpkingma.com/",
+          "originalImageUrl": "https://dpkingma.com/files/portrait.jpg",
+          "license": "Personal website photo; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2014-adam_beta-schedule.svg": {
-          "caption": {
-            "en": "Beta memory schedule",
-            "zh": "Beta 记忆权重"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
-            "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "arXiv / ICLR",
-          "source": "https://arxiv.org/abs/1412.6980",
-          "sourceUrl": "https://arxiv.org/abs/1412.6980",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / Co-author portrait",
+            "zh": "历史人物 / 共同作者肖像"
           }
         },
         "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg": {
@@ -9920,26 +9904,23 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg": {
+        "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg": {
           "caption": {
-            "en": "Diederik P. Kingma portrait",
-            "zh": "迪德里克·P·金马 肖像"
+            "en": "Loss landscape trajectory",
+            "zh": "损失地形轨迹"
           },
           "subcaption": {
-            "en": "Portrait from Kingma's personal website.",
-            "zh": "来自 金马 个人网站的人物照片。"
+            "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+            "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": {
-            "en": "Diederik P. Kingma personal website",
-            "zh": "迪德里克·P·金马 personal website"
-          },
-          "source": "https://dpkingma.com/",
-          "sourceUrl": "https://dpkingma.com/",
-          "originalImageUrl": "https://dpkingma.com/files/portrait.jpg",
-          "license": "Personal website photo; rights not stated.",
+          "sourceName": "arXiv / ICLR",
+          "source": "https://arxiv.org/abs/1412.6980",
+          "sourceUrl": "https://arxiv.org/abs/1412.6980",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / Co-author portrait",
-            "zh": "历史人物 / 共同作者肖像"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -10033,7 +10014,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "arXiv / ICLR",
+          "site": {
+            "en": "arXiv / ICLR",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Adam paper and Algorithm 1",
             "zh": "Adam 论文与算法 1"
@@ -10318,42 +10302,23 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
+        "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg": {
           "caption": {
-            "en": "3x3 receptive-field build-up",
-            "zh": "3x3 感受野累积"
+            "en": "Andrew Zisserman portrait",
+            "zh": "安德鲁·齐瑟曼 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for VGG Networks, based on the related source material.",
-            "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+            "en": "Profile photo from the ELLIS Oxford / University of Oxford page.",
+            "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。"
           },
-          "sourceName": "Oxford VGG",
-          "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
-          "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": "ELLIS Oxford / University of Oxford",
+          "source": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+          "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+          "originalImageUrl": "https://www.ellis.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/ellis/images/person/andrew_zisserman.jpg?itok=_Y3KBWur",
+          "license": "Institution profile photo; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2014-vgg_model-release.svg": {
-          "caption": {
-            "en": "VGG-16 / VGG-19 release card",
-            "zh": "VGG-16 / VGG-19 发布卡"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for VGG Networks, based on the related source material.",
-            "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "Oxford VGG",
-          "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
-          "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / Co-author portrait",
+            "zh": "历史人物 / 共同作者肖像"
           }
         },
         "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg": {
@@ -10375,23 +10340,23 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg": {
+        "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
           "caption": {
-            "en": "Andrew Zisserman portrait",
-            "zh": "安德鲁·齐瑟曼 肖像"
+            "en": "3x3 receptive-field build-up",
+            "zh": "3x3 感受野累积"
           },
           "subcaption": {
-            "en": "Profile photo from the ELLIS Oxford / University of Oxford page.",
-            "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。"
+            "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+            "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "ELLIS Oxford / University of Oxford",
-          "source": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
-          "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
-          "originalImageUrl": "https://www.ellis.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/ellis/images/person/andrew_zisserman.jpg?itok=_Y3KBWur",
-          "license": "Institution profile photo; rights not stated.",
+          "sourceName": "Oxford VGG",
+          "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / Co-author portrait",
-            "zh": "历史人物 / 共同作者肖像"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -10481,7 +10446,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Oxford VGG",
+          "site": {
+            "en": "Oxford VGG",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Very Deep ConvNets project",
             "zh": "超深卷积网络项目"
@@ -10753,48 +10721,23 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg": {
+        "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg": {
           "caption": {
-            "en": "Chromosome crossover",
-            "zh": "染色体交叉"
+            "en": "John Henry Holland portrait",
+            "zh": "John Henry 霍兰德 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
-            "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+            "en": "Physics Today history article photo, credited there to Santa Fe Institute.",
+            "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。"
           },
-          "sourceName": {
-            "en": "MIT Press",
-            "zh": "麻省理工学院 Press"
-          },
-          "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
-          "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": "Physics Today",
+          "source": "https://physicstoday.aip.org/news/john-henry-holland",
+          "sourceUrl": "https://physicstoday.aip.org/news/john-henry-holland",
+          "originalImageUrl": "https://aip.brightspotcdn.com/dims4/default/811cb1a/2147483647/strip/true/crop/600x396+0+0/resize/600x396!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F9290%2Fpt-5-031409.jpg",
+          "license": "Physics Today article photo; photo credit: Santa Fe Institute.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_fitness-selection.svg": {
-          "caption": {
-            "en": "Fitness selection board",
-            "zh": "适应度选择板"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
-            "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": {
-            "en": "MIT Press",
-            "zh": "麻省理工学院 Press"
-          },
-          "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
-          "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / Genetic algorithms pioneer",
+            "zh": "历史人物 / 遗传算法先驱"
           }
         },
         "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg": {
@@ -10819,23 +10762,26 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg": {
+        "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg": {
           "caption": {
-            "en": "John Henry Holland portrait",
-            "zh": "John Henry 霍兰德 肖像"
+            "en": "Chromosome crossover",
+            "zh": "染色体交叉"
           },
           "subcaption": {
-            "en": "Physics Today history article photo, credited there to Santa Fe Institute.",
-            "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。"
+            "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+            "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Physics Today",
-          "source": "https://physicstoday.aip.org/news/john-henry-holland",
-          "sourceUrl": "https://physicstoday.aip.org/news/john-henry-holland",
-          "originalImageUrl": "https://aip.brightspotcdn.com/dims4/default/811cb1a/2147483647/strip/true/crop/600x396+0+0/resize/600x396!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F9290%2Fpt-5-031409.jpg",
-          "license": "Physics Today article photo; photo credit: Santa Fe Institute.",
+          "sourceName": {
+            "en": "MIT Press",
+            "zh": "麻省理工学院 Press"
+          },
+          "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+          "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / Genetic algorithms pioneer",
-            "zh": "历史人物 / 遗传算法先驱"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -11226,10 +11172,32 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/2015-u-net_skip-copy.svg": {
+        "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg": {
           "caption": {
-            "en": "Skip-copy feature bridge",
-            "zh": "跳跃复制特征桥"
+            "en": "Olaf Ronneberger portrait",
+            "zh": "奥拉夫·龙讷贝格 肖像"
+          },
+          "subcaption": {
+            "en": "Researcher profile photo from the Freiburg LMB page.",
+            "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。"
+          },
+          "sourceName": {
+            "en": "University of Freiburg LMB",
+            "zh": "University of 弗赖堡 LMB"
+          },
+          "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+          "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+          "originalImageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/Ronneberger_Portrait.jpg",
+          "license": "Institution profile photo; rights not stated.",
+          "usage": {
+            "en": "Historical figure / U-Net co-author portrait",
+            "zh": "历史人物 / U-Net 共同作者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg": {
+          "caption": {
+            "en": "U-shaped encoder-decoder",
+            "zh": "U 形编码器-解码器"
           },
           "subcaption": {
             "en": "Distinct local redraw for U-Net, based on the related source material.",
@@ -11268,50 +11236,6 @@ const milestones = [
           "usage": {
             "en": "Supporting image / Distinct visual card",
             "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg": {
-          "caption": {
-            "en": "U-shaped encoder-decoder",
-            "zh": "U 形编码器-解码器"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for U-Net, based on the related source material.",
-            "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": {
-            "en": "Freiburg CVL",
-            "zh": "弗赖堡 CVL"
-          },
-          "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
-          "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg": {
-          "caption": {
-            "en": "Olaf Ronneberger portrait",
-            "zh": "奥拉夫·龙讷贝格 肖像"
-          },
-          "subcaption": {
-            "en": "Researcher profile photo from the Freiburg LMB page.",
-            "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。"
-          },
-          "sourceName": {
-            "en": "University of Freiburg LMB",
-            "zh": "University of 弗赖堡 LMB"
-          },
-          "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
-          "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
-          "originalImageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/Ronneberger_Portrait.jpg",
-          "license": "Institution profile photo; rights not stated.",
-          "usage": {
-            "en": "Historical figure / U-Net co-author portrait",
-            "zh": "历史人物 / U-Net 共同作者肖像"
           }
         }
       },
@@ -11715,10 +11639,35 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_anchor-grid.svg": {
+        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
           "caption": {
-            "en": "Anchor grid over feature map",
-            "zh": "特征图 Anchor 网格"
+            "en": "Kaiming He portrait",
+            "zh": "何恺明肖像"
+          },
+          "subcaption": {
+            "en": "Portrait from Kaiming He's MIT-hosted personal page.",
+            "zh": "Faster R-CNN 共同作者"
+          },
+          "sourceName": {
+            "en": "Kaiming He personal page",
+            "zh": "何恺明个人主页"
+          },
+          "source": "https://people.csail.mit.edu/kaiming/",
+          "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+          "originalImageUrl": "https://people.csail.mit.edu/kaiming/img/kmh2024fall.jpg",
+          "license": {
+            "en": "Personal website photo; rights not stated.",
+            "zh": "个人网站照片；未说明复用权利。"
+          },
+          "usage": {
+            "en": "Historical figure / Faster R-CNN co-author portrait",
+            "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+          }
+        },
+        "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg": {
+          "caption": {
+            "en": "Region proposal network",
+            "zh": "区域建议网络"
           },
           "subcaption": {
             "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
@@ -11751,50 +11700,6 @@ const milestones = [
           "usage": {
             "en": "Supporting image / Distinct visual card",
             "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg": {
-          "caption": {
-            "en": "Region proposal network",
-            "zh": "区域建议网络"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
-            "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "GitHub",
-          "source": "https://github.com/ShaoqingRen/faster_rcnn",
-          "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
-          "caption": {
-            "en": "Kaiming He portrait",
-            "zh": "何恺明肖像"
-          },
-          "subcaption": {
-            "en": "Portrait from Kaiming He's MIT-hosted personal page.",
-            "zh": "Faster R-CNN 共同作者"
-          },
-          "sourceName": {
-            "en": "Kaiming He personal page",
-            "zh": "何恺明个人主页"
-          },
-          "source": "https://people.csail.mit.edu/kaiming/",
-          "sourceUrl": "https://people.csail.mit.edu/kaiming/",
-          "originalImageUrl": "https://people.csail.mit.edu/kaiming/img/kmh2024fall.jpg",
-          "license": {
-            "en": "Personal website photo; rights not stated.",
-            "zh": "个人网站照片；未说明复用权利。"
-          },
-          "usage": {
-            "en": "Historical figure / Faster R-CNN co-author portrait",
-            "zh": "历史人物 / Faster R-CNN 共同作者肖像"
           }
         }
       },
@@ -11888,7 +11793,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "GitHub",
+          "site": {
+            "en": "GitHub",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "ShaoqingRen/faster_rcnn",
             "zh": "任少卿/faster_rcnn"
@@ -12186,42 +12094,26 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg": {
+        "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
           "caption": {
-            "en": "Kernel feature lift",
-            "zh": "核函数特征提升"
+            "en": "Isabelle Guyon portrait",
+            "zh": "伊莎贝尔·居永 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
-            "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+            "en": "University Paris-Saclay article image about Guyon and support vector machines.",
+            "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。"
           },
-          "sourceName": "ACM COLT",
-          "source": "https://dl.acm.org/doi/10.1145/130385.130401",
-          "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": {
+            "en": "Université Paris-Saclay",
+            "zh": "巴黎-萨克雷大学"
+          },
+          "source": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+          "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+          "originalImageUrl": "https://www.universite-paris-saclay.fr/sites/default/files/2020-05/IsabelleGuyon.jpg",
+          "license": "University news image; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1992-svm_support-vectors.svg": {
-          "caption": {
-            "en": "Support-vector set",
-            "zh": "支持向量集合"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
-            "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "ACM COLT",
-          "source": "https://dl.acm.org/doi/10.1145/130385.130401",
-          "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / SVM co-inventor portrait",
+            "zh": "历史人物 / SVM 共同发明者肖像"
           }
         },
         "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg": {
@@ -12243,26 +12135,23 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
+        "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg": {
           "caption": {
-            "en": "Isabelle Guyon portrait",
-            "zh": "伊莎贝尔·居永 肖像"
+            "en": "Kernel feature lift",
+            "zh": "核函数特征提升"
           },
           "subcaption": {
-            "en": "University Paris-Saclay article image about Guyon and support vector machines.",
-            "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。"
+            "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+            "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": {
-            "en": "Université Paris-Saclay",
-            "zh": "巴黎-萨克雷大学"
-          },
-          "source": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
-          "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
-          "originalImageUrl": "https://www.universite-paris-saclay.fr/sites/default/files/2020-05/IsabelleGuyon.jpg",
-          "license": "University news image; rights not stated.",
+          "sourceName": "ACM COLT",
+          "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+          "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / SVM co-inventor portrait",
-            "zh": "历史人物 / SVM 共同发明者肖像"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -12352,7 +12241,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "ACM COLT",
+          "site": {
+            "en": "ACM COLT",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Optimal margin classifiers",
             "zh": "最优间隔分类器"
@@ -12663,42 +12555,26 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg": {
+        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
           "caption": {
-            "en": "Cost-complexity pruning curve",
-            "zh": "代价复杂度剪枝曲线"
+            "en": "Leo Breiman portrait",
+            "zh": "利奥·布雷曼 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for CART, based on the related source material.",
-            "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+            "en": "Portrait from the University of York Portraits of Statisticians archive.",
+            "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。"
           },
-          "sourceName": "Routledge",
-          "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
-          "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": {
+            "en": "University of York / Portraits of Statisticians",
+            "zh": "约克大学 / Portraits of Statisticians"
+          },
+          "source": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+          "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+          "originalImageUrl": "http://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+          "license": "Archive portrait; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1984-cart_terminal-regions.svg": {
-          "caption": {
-            "en": "Terminal regions map",
-            "zh": "终端区域图"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for CART, based on the related source material.",
-            "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "Routledge",
-          "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
-          "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / CART co-author portrait",
+            "zh": "历史人物 / CART 共同作者肖像"
           }
         },
         "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg": {
@@ -12720,26 +12596,23 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+        "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg": {
           "caption": {
-            "en": "Leo Breiman portrait",
-            "zh": "利奥·布雷曼 肖像"
+            "en": "Cost-complexity pruning curve",
+            "zh": "代价复杂度剪枝曲线"
           },
           "subcaption": {
-            "en": "Portrait from the University of York Portraits of Statisticians archive.",
-            "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。"
+            "en": "Distinct local redraw for CART, based on the related source material.",
+            "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": {
-            "en": "University of York / Portraits of Statisticians",
-            "zh": "约克大学 / Portraits of Statisticians"
-          },
-          "source": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
-          "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
-          "originalImageUrl": "http://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
-          "license": "Archive portrait; rights not stated.",
+          "sourceName": "Routledge",
+          "source": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+          "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / CART co-author portrait",
-            "zh": "历史人物 / CART 共同作者肖像"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -12829,7 +12702,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Routledge",
+          "site": {
+            "en": "Routledge",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Classification and Regression Trees",
             "zh": "分类与回归树"
@@ -13127,48 +13003,23 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg": {
+        "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif": {
           "caption": {
-            "en": "Temperature schedule",
-            "zh": "温度计划"
+            "en": "Scott Kirkpatrick portrait",
+            "zh": "斯科特·柯克帕特里克 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
-            "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
+            "en": "Workshop participant page photo for Scott Kirkpatrick.",
+            "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。"
           },
-          "sourceName": {
-            "en": "Science",
-            "zh": "《科学》"
-          },
-          "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
-          "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": "Collective Cognition Workshop / UC Davis CSC",
+          "source": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+          "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
+          "originalImageUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/images/kirkpatrick_pic.gif",
+          "license": "Workshop profile photo; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_acceptance-rule.svg": {
-          "caption": {
-            "en": "Acceptance probability rule",
-            "zh": "接受概率规则"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
-            "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": {
-            "en": "Science",
-            "zh": "《科学》"
-          },
-          "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
-          "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / Simulated annealing co-author portrait",
+            "zh": "历史人物 / 模拟退火共同作者肖像"
           }
         },
         "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg": {
@@ -13193,23 +13044,26 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif": {
+        "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg": {
           "caption": {
-            "en": "Scott Kirkpatrick portrait",
-            "zh": "斯科特·柯克帕特里克 肖像"
+            "en": "Temperature schedule",
+            "zh": "温度计划"
           },
           "subcaption": {
-            "en": "Workshop participant page photo for Scott Kirkpatrick.",
-            "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。"
+            "en": "Distinct local redraw for Simulated Annealing, based on the related source material.",
+            "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "Collective Cognition Workshop / UC Davis CSC",
-          "source": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
-          "sourceUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/people.htm",
-          "originalImageUrl": "https://csc.ucdavis.edu/~dynlearn/colcog/images/kirkpatrick_pic.gif",
-          "license": "Workshop profile photo; rights not stated.",
+          "sourceName": {
+            "en": "Science",
+            "zh": "《科学》"
+          },
+          "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+          "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / Simulated annealing co-author portrait",
-            "zh": "历史人物 / 模拟退火共同作者肖像"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -13574,42 +13428,26 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg": {
+        "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg": {
           "caption": {
-            "en": "Coefficient path",
-            "zh": "系数路径"
+            "en": "Robert Tibshirani portrait",
+            "zh": "罗伯特·蒂布希拉尼 肖像"
           },
           "subcaption": {
-            "en": "Distinct local redraw for Lasso, based on the related source material.",
-            "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
+            "en": "Profile photo from Stanford Profiles.",
+            "zh": "来自 斯坦福个人资料库 的人物照片。"
           },
-          "sourceName": "JRSS / Wiley",
-          "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
-          "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": {
+            "en": "Stanford Profiles",
+            "zh": "斯坦福个人资料库"
+          },
+          "source": "https://profiles.stanford.edu/robert-tibshirani",
+          "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
+          "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/4688/resources/profilephoto/350x350.1509552478140.jpg",
+          "license": "Institution profile photo; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/1996-lasso_feature-selection.svg": {
-          "caption": {
-            "en": "Feature-selection panel",
-            "zh": "特征选择面板"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for Lasso, based on the related source material.",
-            "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "JRSS / Wiley",
-          "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
-          "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / Lasso author portrait",
+            "zh": "历史人物 / Lasso 作者肖像"
           }
         },
         "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg": {
@@ -13631,26 +13469,23 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg": {
+        "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg": {
           "caption": {
-            "en": "Robert Tibshirani portrait",
-            "zh": "罗伯特·蒂布希拉尼 肖像"
+            "en": "Coefficient path",
+            "zh": "系数路径"
           },
           "subcaption": {
-            "en": "Profile photo from Stanford Profiles.",
-            "zh": "来自 斯坦福个人资料库 的人物照片。"
+            "en": "Distinct local redraw for Lasso, based on the related source material.",
+            "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": {
-            "en": "Stanford Profiles",
-            "zh": "斯坦福个人资料库"
-          },
-          "source": "https://profiles.stanford.edu/robert-tibshirani",
-          "sourceUrl": "https://profiles.stanford.edu/robert-tibshirani",
-          "originalImageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/4688/resources/profilephoto/350x350.1509552478140.jpg",
-          "license": "Institution profile photo; rights not stated.",
+          "sourceName": "JRSS / Wiley",
+          "source": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+          "sourceUrl": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / Lasso author portrait",
-            "zh": "历史人物 / Lasso 作者肖像"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -13744,7 +13579,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "JRSS / Wiley",
+          "site": {
+            "en": "JRSS / Wiley",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Regression Shrinkage and Selection via the Lasso",
             "zh": "通过 Lasso 进行回归收缩与选择"
@@ -14029,42 +13867,23 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
+        "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
           "caption": {
-            "en": "1x1 bottleneck reduction",
-            "zh": "1x1 瓶颈降维"
+            "en": "Christian Szegedy episode portrait",
+            "zh": "克里斯蒂安·塞格迪 节目人物图"
           },
           "subcaption": {
-            "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
-            "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+            "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
+            "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
           },
-          "sourceName": "CVF Open Access",
-          "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
-          "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
+          "sourceName": "The TWIML AI Podcast",
+          "source": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+          "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+          "originalImageUrl": "https://twimlai.com/images/at/shows/twiml-christian-szegedy-autoformalization-verifiable-superintelligence-fhd.jpg",
+          "license": "Podcast episode artwork; rights not stated.",
           "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
-          }
-        },
-        "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_aux-classifier.svg": {
-          "caption": {
-            "en": "Auxiliary classifier path",
-            "zh": "辅助分类器路径"
-          },
-          "subcaption": {
-            "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
-            "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
-          },
-          "sourceName": "CVF Open Access",
-          "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
-          "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
-          "originalImageUrl": "Local original redraw",
-          "license": "Original local SVG redraw; source figures are not copied.",
-          "usage": {
-            "en": "Supporting image / Distinct visual card",
-            "zh": "辅助图片 / 独立视觉卡片"
+            "en": "Historical figure / Inception author portrait",
+            "zh": "历史人物 / Inception 作者人物图"
           }
         },
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg": {
@@ -14086,23 +13905,23 @@ const milestones = [
             "zh": "辅助图片 / 独立视觉卡片"
           }
         },
-        "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
+        "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
           "caption": {
-            "en": "Christian Szegedy episode portrait",
-            "zh": "克里斯蒂安·塞格迪 节目人物图"
+            "en": "1x1 bottleneck reduction",
+            "zh": "1x1 瓶颈降维"
           },
           "subcaption": {
-            "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
-            "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
+            "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+            "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
           },
-          "sourceName": "The TWIML AI Podcast",
-          "source": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
-          "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
-          "originalImageUrl": "https://twimlai.com/images/at/shows/twiml-christian-szegedy-autoformalization-verifiable-superintelligence-fhd.jpg",
-          "license": "Podcast episode artwork; rights not stated.",
+          "sourceName": "CVF Open Access",
+          "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "originalImageUrl": "Local original redraw",
+          "license": "Original local SVG redraw; source figures are not copied.",
           "usage": {
-            "en": "Historical figure / Inception author portrait",
-            "zh": "历史人物 / Inception 作者人物图"
+            "en": "Supporting image / Distinct visual card",
+            "zh": "辅助图片 / 独立视觉卡片"
           }
         }
       },
@@ -15927,7 +15746,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "PNAS",
+          "site": {
+            "en": "PNAS",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Hopfield network paper",
             "zh": "Hopfield 网络论文"
@@ -20293,7 +20115,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "ACS Publications",
+          "site": {
+            "en": "ACS Publications",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Chemical inference paper record",
             "zh": "化学推断论文记录"
@@ -20709,7 +20534,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "UBC Laboratory for Computational Intelligence",
+          "site": {
+            "en": "UBC Laboratory for Computational Intelligence",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "SIFT ICCV paper PDF",
             "zh": "SIFT ICCV 论文 PDF"
@@ -21615,7 +21443,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Psychological Review",
+          "site": {
+            "en": "Psychological Review",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "The perceptron paper record",
             "zh": "感知机论文记录"
@@ -22031,7 +21862,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Neural Computation",
+          "site": {
+            "en": "Neural Computation",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Fast learning algorithm for deep belief nets",
             "zh": "深度置信网络快速学习算法"
@@ -22450,7 +22284,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Machine Learning",
+          "site": {
+            "en": "Machine Learning",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Learning to predict by temporal differences",
             "zh": "用时序差分学习预测"
@@ -23343,6 +23180,14 @@ const milestones = [
           "action": {
             "en": "Open reference",
             "zh": "打开参考资料"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -23801,6 +23646,14 @@ const milestones = [
           "action": {
             "en": "Open paper",
             "zh": "打开论文"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -24257,6 +24110,14 @@ const milestones = [
           "action": {
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -24710,6 +24571,14 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -25166,6 +25035,14 @@ const milestones = [
           "action": {
             "en": "Open paper",
             "zh": "打开论文"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -25635,6 +25512,14 @@ const milestones = [
           "action": {
             "en": "Open book record",
             "zh": "打开图书记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -26091,6 +25976,14 @@ const milestones = [
           "action": {
             "en": "Open AAAI record",
             "zh": "打开 AAAI 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -26544,6 +26437,14 @@ const milestones = [
           "action": {
             "en": "Open IEEE record",
             "zh": "打开 IEEE 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -27013,6 +26914,14 @@ const milestones = [
           "action": {
             "en": "Open paper record",
             "zh": "打开论文记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -27482,6 +27391,14 @@ const milestones = [
           "action": {
             "en": "Open IEEE record",
             "zh": "打开 IEEE 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         }
       ],
@@ -52152,6 +52069,14 @@ const milestones = [
           "action": {
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         },
         {
@@ -52606,7 +52531,10 @@ const milestones = [
       "visualModules": [
         {
           "type": "archiveLink",
-          "site": "Machine Learning",
+          "site": {
+            "en": "Machine Learning",
+            "zh": "参考来源"
+          },
           "title": {
             "en": "Learning to predict by temporal differences",
             "zh": "用时序差分学习预测"
@@ -53112,6 +53040,14 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
+          },
+          "license": {
+            "en": "Reference link only; verify source rights before reuse.",
+            "zh": "仅作为参考链接；复用前需核验来源权利。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
           }
         },
         {
@@ -55231,8 +55167,8 @@ const milestones = [
         "zh": "谷歌 DeepMind"
       },
       "country": {
-        "en": "United Kingdom",
-        "zh": "英国"
+        "en": "London, United Kingdom",
+        "zh": "英国，伦敦"
       },
       "coordinates": [
         51.5074,
@@ -55292,7 +55228,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等，《自然》，2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
     },
     "quoteMeta": {
       "speaker": "",
@@ -55302,7 +55238,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "大卫·席尔瓦等，《自然》，2016"
+        "zh": "戴维·席尔瓦等, 《自然》, 2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -55319,7 +55255,7 @@ const milestones = [
         },
         "html": {
           "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
@@ -55364,11 +55300,11 @@ const milestones = [
           },
           "source": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
-          "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg",
+          "originalImageUrl": "Not available",
           "license": "CC BY 2.0",
           "usage": {
-            "en": "Portrait card",
-            "zh": "人物资料卡"
+            "en": "Achievement visual material",
+            "zh": "成就视觉材料"
           }
         },
         "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
@@ -55378,7 +55314,7 @@ const milestones = [
           },
           "subcaption": {
             "en": "Original explainer derived from the Nature AlphaGo paper and Google DeepMind AlphaGo materials.",
-            "zh": "根据《自然》AlphaGo 论文与谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
+            "zh": "根据 《自然》 AlphaGo 论文与 谷歌 DeepMind AlphaGo 官方材料制作的解释图。"
           },
           "sourceName": {
             "en": "Nature / Google DeepMind",
@@ -55387,10 +55323,7 @@ const milestones = [
           "source": "https://www.nature.com/articles/nature16961",
           "sourceUrl": "https://www.nature.com/articles/nature16961",
           "originalImageUrl": "Local original explainer",
-          "license": {
-            "en": "Original local explainer; publisher figure reuse rights not used.",
-            "zh": "本地原创解释图；未复用出版方论文图。"
-          },
+          "license": "Original local explainer; publisher figure reuse rights not used.",
           "usage": {
             "en": "Supporting image / Explainer graphic",
             "zh": "辅助说明图 / 解释性图形"
@@ -55428,7 +55361,7 @@ const milestones = [
       },
       "material": {
         "en": "Nature paper + blog + SGF/API",
-        "zh": "《自然》论文 + 博客 + 棋谱/API"
+        "zh": "《自然》 论文 + 博客 + 棋谱/API"
       },
       "demo": {
         "en": "Move 37 board explainer",
@@ -55478,7 +55411,7 @@ const milestones = [
           },
           "description": {
             "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
-            "zh": "《自然》官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+            "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "source": "https://www.nature.com/articles/nature16961",
@@ -55492,7 +55425,7 @@ const milestones = [
           },
           "action": {
             "en": "Open Nature paper",
-            "zh": "打开《自然》论文"
+            "zh": "打开 《自然》 论文"
           }
         },
         {
@@ -55541,42 +55474,31 @@ const milestones = [
           },
           "label": {
             "en": "Nature 2016 AlphaGo paper",
-            "zh": "《自然》2016 AlphaGo 论文"
+            "zh": "《自然》 2016 AlphaGo 论文"
           },
           "url": "https://www.nature.com/articles/nature16961"
         },
         {
           "type": {
-            "en": "Project",
-            "zh": "项目"
+            "en": "Blog",
+            "zh": "博客"
           },
           "label": {
             "en": "Google DeepMind AlphaGo",
             "zh": "谷歌 DeepMind AlphaGo"
           },
-          "url": "https://deepmind.google/research/breakthroughs/alphago/"
+          "url": "https://deepmind.google/research/alphago/"
         },
         {
           "type": {
-            "en": "Code / API",
-            "zh": "代码 / API"
+            "en": "API",
+            "zh": "API"
           },
           "label": {
             "en": "KataGo Analysis Engine",
             "zh": "KataGo 分析引擎"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
-        },
-        {
-          "type": {
-            "en": "Image source",
-            "zh": "图片来源"
-          },
-          "label": {
-            "en": "Wikimedia Commons: Lee Se-Dol",
-            "zh": "维基共享资源：李世石"
-          },
-          "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg"
         }
       ]
     },
@@ -55611,13 +55533,13 @@ const milestones = [
       },
       "source": {
         "label": {
-          "en": "Nature 2016 AlphaGo paper",
-          "zh": "《自然》2016 AlphaGo 论文"
+          "en": "BenchCouncil AI100 achievement notes",
+          "zh": "BenchCouncil AI100 成就内容"
         }
       },
       "tags": [
-        "reinforcement-learning",
-        "games"
+        "games",
+        "search"
       ]
     },
     "quizzes": [
@@ -55652,13 +55574,13 @@ const milestones = [
         },
         "source": {
           "label": {
-            "en": "Nature 2016 AlphaGo paper",
-            "zh": "《自然》2016 AlphaGo 论文"
+            "en": "BenchCouncil AI100 achievement notes",
+            "zh": "BenchCouncil AI100 成就内容"
           }
         },
         "tags": [
-          "reinforcement-learning",
-          "games"
+          "games",
+          "search"
         ]
       }
     ]

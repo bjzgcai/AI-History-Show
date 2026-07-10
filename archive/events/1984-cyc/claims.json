@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1984-cyc-summary",
+    "text": {
+      "en": "Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.",
+      "zh": "Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。"
+    },
+    "sourceIds": [
+      "building-large-knowledge-based-systems",
+      "the-evolution-of-cycl"
+    ]
+  },
+  {
+    "id": "1984-cyc-quote",
+    "text": {
+      "en": "Common sense as explicit knowledge",
+      "zh": "把常识显式化为知识"
+    },
+    "sourceIds": [
+      "building-large-knowledge-based-systems"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2017-densenet-image-1",
+    "kind": "image",
+    "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+    "caption": {
+      "en": "DenseNet author group",
+      "zh": "DenseNet 作者团队"
+    },
+    "subcaption": {
+      "en": "Researchers behind DenseNet.",
+      "zh": "DenseNet 背后的研究者。"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+    "originalImageUrl": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2017-densenet-image-2",
+    "kind": "image",
+    "path": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+    "caption": {
+      "en": "Dense connectivity",
+      "zh": "密集连接"
+    },
+    "subcaption": {
+      "en": "Architecture visual used by the project.",
+      "zh": "项目使用的架构图。"
+    },
+    "sourceId": "local-project-asset-2",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+    "originalImageUrl": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

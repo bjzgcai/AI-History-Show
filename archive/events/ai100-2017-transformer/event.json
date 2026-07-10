@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2017-transformer",
+  "year": 2017,
+  "title": {
+    "en": "Transformer",
+    "zh": "Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "Google Brain"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ashish Vaswani",
+        "zh": "阿希什·瓦斯瓦尼"
+      },
+      "role": {
+        "en": "Co-author of the Transformer paper",
+        "zh": "Transformer 论文共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Noam Shazeer",
+        "zh": "诺姆·沙泽尔"
+      },
+      "role": {
+        "en": "Co-author of the Transformer paper",
+        "zh": "Transformer 论文共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Attention Is All You Need",
+    "zh": "Attention Is All You Need"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Attention Is All You Need",
+      "zh": "Attention Is All You Need"
+    },
+    "workAuthors": {
+      "en": "Ashish Vaswani et al., NeurIPS, 2017",
+      "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1706.03762"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

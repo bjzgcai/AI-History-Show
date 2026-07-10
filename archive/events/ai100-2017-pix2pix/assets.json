@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2017-pix2pix-image-1",
+    "kind": "image",
+    "path": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+    "caption": {
+      "en": "Phillip Isola portrait",
+      "zh": "菲利普·伊索拉肖像"
+    },
+    "subcaption": {
+      "en": "Pix2Pix lead author",
+      "zh": "Pix2Pix 主要作者"
+    },
+    "sourceId": "phillip-isola-homepage",
+    "sourceName": {
+      "en": "Phillip Isola homepage",
+      "zh": "菲利普·伊索拉个人主页"
+    },
+    "sourceUrl": "https://web.mit.edu/phillipi/",
+    "originalImageUrl": "https://web.mit.edu/phillipi/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2017-pix2pix-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+    "caption": {
+      "en": "Pix2Pix explainer",
+      "zh": "Pix2Pix 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "image-to-image-translation-with-conditional-adversarial-networks",
+    "sourceName": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1611.07004",
+    "originalImageUrl": "https://arxiv.org/abs/1611.07004",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

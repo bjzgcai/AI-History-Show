@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2012-alexnet-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/alex-krizhevsky.jpg",
+    "caption": {
+      "en": "Alex Krizhevsky portrait",
+      "zh": "亚历克斯·克里泽夫斯基肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of AlexNet.",
+      "zh": "AlexNet 主要作者。"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/alex-krizhevsky.jpg",
+    "originalImageUrl": "resources/images/figures/alex-krizhevsky.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2012-alexnet-image-2",
+    "kind": "image",
+    "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+    "caption": {
+      "en": "AlexNet architecture",
+      "zh": "AlexNet 架构"
+    },
+    "subcaption": {
+      "en": "Architecture visual used by the project.",
+      "zh": "项目使用的架构图。"
+    },
+    "sourceId": "local-project-asset-2",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+    "originalImageUrl": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

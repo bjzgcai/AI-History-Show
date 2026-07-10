@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What are the two parts of an actor-critic method?",
+      "zh": "Actor-Critic 方法的两个部分是什么？"
+    },
+    "options": [
+      {
+        "en": "A policy actor and a value critic",
+        "zh": "策略 actor 和价值 critic"
+      },
+      {
+        "en": "A parser and a printer",
+        "zh": "解析器和打印机"
+      },
+      {
+        "en": "A caption and a camera only",
+        "zh": "只有字幕和相机"
+      },
+      {
+        "en": "A password and a database",
+        "zh": "密码和数据库"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The actor chooses actions while the critic evaluates them with value feedback.",
+      "zh": "actor 选择动作，critic 用价值反馈评价动作。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "actor-critic",
+      "ai100"
+    ]
+  }
+]

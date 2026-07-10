@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2006-surf",
+  "year": 2006,
+  "title": {
+    "en": "SURF",
+    "zh": "SURF 加速稳健特征"
+  },
+  "location": {
+    "name": {
+      "en": "ETH Zurich",
+      "zh": "苏黎世联邦理工学院"
+    },
+    "country": {
+      "en": "Zurich, Switzerland",
+      "zh": "瑞士苏黎世"
+    },
+    "coordinates": [
+      47.3763,
+      8.5481
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Herbert Bay",
+        "zh": "赫伯特·贝"
+      },
+      "role": {
+        "en": "Lead author of SURF",
+        "zh": "SURF 主要作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Tinne Tuytelaars",
+        "zh": "蒂娜·图伊特拉尔斯"
+      },
+      "role": {
+        "en": "Co-author of SURF",
+        "zh": "Co-author of SURF"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "SURF: Speeded Up Robust Features",
+    "zh": "SURF：加速稳健特征"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "SURF: Speeded Up Robust Features",
+      "zh": "SURF：加速稳健特征"
+    },
+    "workAuthors": {
+      "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+      "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
+    },
+    "sourceUrl": "https://doi.org/10.1007/11744023_32"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

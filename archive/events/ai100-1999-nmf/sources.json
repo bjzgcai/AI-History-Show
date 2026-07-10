@@ -1,0 +1,62 @@
+[
+  {
+    "id": "learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Learning the parts of objects by non-negative matrix factorization",
+      "zh": "《通过非负矩阵分解学习物体部件》"
+    },
+    "url": "https://doi.org/10.1038/44565"
+  },
+  {
+    "id": "nature-article-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "Nature article page",
+      "zh": "Nature 文章页面"
+    },
+    "url": "https://www.nature.com/articles/44565"
+  },
+  {
+    "id": "pubmed-record-for-the-nature-paper",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "PubMed record for the Nature paper",
+      "zh": "Nature 论文 PubMed 记录"
+    },
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10548103/"
+  },
+  {
+    "id": "scikit-learn-nmf-documentation",
+    "type": {
+      "en": "Documentation",
+      "zh": "文档"
+    },
+    "label": {
+      "en": "scikit-learn NMF documentation",
+      "zh": "scikit-learn NMF 文档"
+    },
+    "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf"
+  },
+  {
+    "id": "princeton-neuroscience-institute",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Princeton Neuroscience Institute",
+      "zh": "普林斯顿神经科学研究所"
+    },
+    "url": "https://pni.princeton.edu/people/h-sebastian-seung"
+  }
+]

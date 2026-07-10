@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1994-chinook-summary",
+    "text": {
+      "en": "Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.",
+      "zh": "Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。"
+    },
+    "sourceIds": [
+      "chinook-project-home",
+      "checkers-is-solved"
+    ]
+  },
+  {
+    "id": "1994-chinook-quote",
+    "text": {
+      "en": "Perfect play in checkers is a draw",
+      "zh": "跳棋完美对弈结果为和棋"
+    },
+    "sourceIds": [
+      "chinook-project-home"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1975-genetic-algorithm-summary",
+    "text": {
+      "en": "John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.",
+      "zh": "John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。"
+    },
+    "sourceIds": [
+      "adaptation-in-natural-and-artificial-systems",
+      "deap-evolutionary-computation-framework"
+    ]
+  },
+  {
+    "id": "1975-genetic-algorithm-quote",
+    "text": {
+      "en": "adaptation in natural and artificial systems",
+      "zh": "自然与人工系统中的适应"
+    },
+    "sourceIds": [
+      "adaptation-in-natural-and-artificial-systems"
+    ]
+  }
+]

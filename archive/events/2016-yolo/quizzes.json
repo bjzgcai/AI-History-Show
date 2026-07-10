@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What made YOLO different from many earlier object detectors?",
+      "zh": "YOLO 与许多早期目标检测器的关键不同是什么？"
+    },
+    "options": [
+      {
+        "en": "It predicts boxes and classes in one network pass",
+        "zh": "它在一次网络前向传播中预测框和类别"
+      },
+      {
+        "en": "It requires a separate theorem prover",
+        "zh": "它需要独立定理证明器"
+      },
+      {
+        "en": "It only clusters tabular points",
+        "zh": "它只聚类表格点"
+      },
+      {
+        "en": "It stores memories as energy basins",
+        "zh": "它把记忆存成能量盆地"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "YOLO treats detection as unified prediction over a grid, enabling real-time performance.",
+      "zh": "YOLO 把检测看作网格上的统一预测问题，从而实现实时性能。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "vision",
+      "object-detection"
+    ]
+  }
+]

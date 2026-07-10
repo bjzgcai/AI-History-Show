@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>",
+    "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.",
+        "zh": "MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat MS COCO as one of the most important datasets for modern computer vision. Its long-term legacy is the multi-task benchmark culture that shaped object detection, segmentation, and captioning progress.",
+        "zh": "专家通常把 MS COCO 视为现代计算机视觉最重要的数据集之一。它的长期影响在于多任务基准文化塑造了目标检测、分割和字幕生成的进展。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Computer Vision Dataset",
+      "zh": "计算机视觉数据集"
+    },
+    "method": {
+      "en": "Objects in context benchmark",
+      "zh": "上下文中的目标基准"
+    },
+    "artifact": {
+      "en": "Microsoft COCO dataset",
+      "zh": "Microsoft COCO 数据集"
+    },
+    "material": {
+      "en": "ECCV paper and dataset website",
+      "zh": "ECCV 论文与数据集网站"
+    },
+    "demo": {
+      "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.",
+      "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Context",
+          "zh": "上下文"
+        },
+        "text": {
+          "en": "Objects are labeled inside everyday scenes.",
+          "zh": "物体在日常场景中被标注。"
+        }
+      },
+      {
+        "label": {
+          "en": "Multi-task Labels",
+          "zh": "多任务标签"
+        },
+        "text": {
+          "en": "Detection, masks, captions, and keypoints share one dataset.",
+          "zh": "检测、掩码、字幕和关键点共享同一数据集。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        },
+        "zh": {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      },
+      {
+        "en": {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        },
+        "zh": {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        }
+      },
+      {
+        "en": {
+          "en": "Segment Anything",
+          "zh": "Segment Anything"
+        },
+        "zh": {
+          "en": "Segment Anything",
+          "zh": "Segment Anything"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Scene image",
+          "zh": "场景图像"
+        },
+        "zh": {
+          "en": "Scene image",
+          "zh": "场景图像"
+        }
+      },
+      {
+        "en": {
+          "en": "Object labels",
+          "zh": "物体标签"
+        },
+        "zh": {
+          "en": "Object labels",
+          "zh": "物体标签"
+        }
+      },
+      {
+        "en": {
+          "en": "Benchmark tasks",
+          "zh": "基准任务"
+        },
+        "zh": {
+          "en": "Benchmark tasks",
+          "zh": "基准任务"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "COCO Dataset",
+          "zh": "COCO 数据集"
+        },
+        "title": {
+          "en": "Microsoft COCO: Common Objects in Context",
+          "zh": "Microsoft COCO：上下文中的常见物体"
+        },
+        "description": {
+          "en": "COCO Dataset source card for MS COCO.",
+          "zh": "COCO 数据集 的MS COCO资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1405.0312",
+        "source": "https://arxiv.org/abs/1405.0312",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open dataset",
+          "zh": "打开数据集"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Microsoft COCO: Common Objects in Context",
+          "zh": "《Microsoft COCO：上下文中的常见物体》"
+        },
+        "url": "https://arxiv.org/abs/1405.0312"
+      },
+      {
+        "type": {
+          "en": "Dataset",
+          "zh": "数据集"
+        },
+        "label": {
+          "en": "COCO dataset website",
+          "zh": "COCO 数据集网站"
+        },
+        "url": "https://cocodataset.org/"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "ECCV Springer record",
+          "zh": "ECCV Springer 记录"
+        },
+        "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ECCV paper and dataset website",
+          "zh": "ECCV 论文与数据集网站"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.",
+          "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-diffusion-model-summary",
+    "text": {
+      "en": "Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.",
+      "zh": "扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。"
+    },
+    "sourceIds": [
+      "deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+      "denoising-diffusion-probabilistic-models"
+    ]
+  },
+  {
+    "id": "ai100-2015-diffusion-model-quote",
+    "text": {
+      "en": "Deep unsupervised learning using nonequilibrium thermodynamics",
+      "zh": "使用非平衡热力学进行深度无监督学习"
+    },
+    "sourceIds": [
+      "deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What did Cyc try to make explicit for AI systems?",
+      "zh": "Cyc 试图为 AI 系统显式表示什么？"
+    },
+    "options": [
+      {
+        "en": "Common-sense knowledge as an ontology and rule base",
+        "zh": "作为本体与规则库的常识知识"
+      },
+      {
+        "en": "Only raw image pixels",
+        "zh": "只有原始图像像素"
+      },
+      {
+        "en": "Only endgame checkers tables",
+        "zh": "只有跳棋残局表"
+      },
+      {
+        "en": "A single gradient update",
+        "zh": "单个梯度更新"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Cyc is a long-running symbolic AI project centered on explicit common-sense knowledge and inference.",
+      "zh": "Cyc 是长期运行的符号 AI 项目，核心是显式常识知识与推理。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "knowledge-representation",
+      "common-sense"
+    ]
+  }
+]

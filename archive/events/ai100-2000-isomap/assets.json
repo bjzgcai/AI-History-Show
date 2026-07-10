@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2000-isomap-image-1",
+    "kind": "image",
+    "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+    "caption": {
+      "en": "Joshua Tenenbaum portrait",
+      "zh": "约书亚·特南鲍姆肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of Isomap",
+      "zh": "Isomap 主要作者"
+    },
+    "sourceId": "mit-quest-for-intelligence",
+    "sourceName": {
+      "en": "MIT Quest for Intelligence",
+      "zh": "MIT Quest for Intelligence"
+    },
+    "sourceUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+    "originalImageUrl": "https://sqi.mit.edu/about/people/joshua-tenenbaum",
+    "rights": {
+      "en": "MIT profile image; reuse rights not stated.",
+      "zh": "MIT 个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2000-isomap-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+    "caption": {
+      "en": "Geodesic manifold map",
+      "zh": "测地流形映射"
+    },
+    "subcaption": {
+      "en": "Original local explainer of Isomap geodesic embedding.",
+      "zh": "关于 Isomap 测地嵌入的本地原创解释图。"
+    },
+    "sourceId": "a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+    "sourceName": {
+      "en": "Science",
+      "zh": "Science"
+    },
+    "sourceUrl": "https://doi.org/10.1126/science.290.5500.2319",
+    "originalImageUrl": "https://doi.org/10.1126/science.290.5500.2319",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

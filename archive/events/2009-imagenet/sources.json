@@ -1,0 +1,38 @@
+[
+  {
+    "id": "imagenet-a-large-scale-hierarchical-image-database",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "zh": "ImageNet：大规模层级图像数据库"
+    },
+    "url": "https://ieeexplore.ieee.org/document/5206848"
+  },
+  {
+    "id": "imagenet-project-website",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "ImageNet project website",
+      "zh": "ImageNet project website"
+    },
+    "url": "https://www.image-net.org/"
+  },
+  {
+    "id": "stanford-profile-fei-fei-li",
+    "type": {
+      "en": "Profile",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Stanford Profile: Fei-Fei Li",
+      "zh": "斯坦福大学 Profile: Fei-Fei Li"
+    },
+    "url": "https://profiles.stanford.edu/fei-fei-li"
+  }
+]

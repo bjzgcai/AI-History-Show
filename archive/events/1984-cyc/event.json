@@ -1,0 +1,63 @@
+{
+  "id": "1984-cyc",
+  "year": "1984",
+  "title": {
+    "en": "Cyc",
+    "zh": "Cyc 常识知识库"
+  },
+  "location": {
+    "name": {
+      "en": "Microelectronics and Computer Technology Corporation",
+      "zh": "微电子与计算机技术公司（MCC）"
+    },
+    "country": {
+      "en": "Texas, United States",
+      "zh": "美国得克萨斯州"
+    },
+    "coordinates": [
+      30.2672,
+      -97.7431
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Douglas Lenat",
+        "zh": "道格拉斯·莱纳特"
+      },
+      "role": {
+        "en": "Founder of the Cyc project",
+        "zh": "Cyc 项目创始人"
+      }
+    },
+    {
+      "name": {
+        "en": "R. V. Guha",
+        "zh": "R·V·古哈"
+      },
+      "role": {
+        "en": "Co-author of core Cyc representation work",
+        "zh": "Cyc 核心表示工作的共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Common sense as explicit knowledge",
+    "zh": "把常识显式化为知识"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Building Large Knowledge-Based Systems",
+      "zh": "构建大型知识系统"
+    },
+    "workAuthors": {
+      "en": "Douglas B. Lenat and R. V. Guha",
+      "zh": "道格拉斯·B·莱纳特、R·V·古哈"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Knowledge representation / Cyc",
+    "zh": "BenchCouncil AI100：知识表示 / Cyc 常识知识库"
+  }
+}

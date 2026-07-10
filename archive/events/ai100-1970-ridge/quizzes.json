@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does ridge regression add to least squares?",
+      "zh": "岭回归在最小二乘中加入了什么？"
+    },
+    "options": [
+      {
+        "en": "An L2 penalty that shrinks coefficients",
+        "zh": "收缩系数的 L2 惩罚"
+      },
+      {
+        "en": "A Go board",
+        "zh": "围棋棋盘"
+      },
+      {
+        "en": "A chatbot script",
+        "zh": "聊天机器人脚本"
+      },
+      {
+        "en": "A theorem clause only",
+        "zh": "只有一个定理子句"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Ridge regression regularizes coefficients to reduce instability from correlated predictors.",
+      "zh": "岭回归通过正则化系数，降低相关预测变量带来的不稳定性。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "ridge",
+      "regularization"
+    ]
+  }
+]

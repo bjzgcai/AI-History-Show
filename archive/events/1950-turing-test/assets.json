@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1950-turing-test-image-1",
+    "kind": "image",
+    "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
+    "caption": {
+      "en": "Alan Turing portrait",
+      "zh": "艾伦·图灵 肖像"
+    },
+    "subcaption": {
+      "en": "Photograph portrait of Alan Turing, 29 March 1951",
+      "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+    "originalImageUrl": "Not available",
+    "rights": "Public domain",
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "1950-turing-test-image-2",
+    "kind": "image",
+    "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png",
+    "caption": {
+      "en": "Turing test diagram",
+      "zh": "图灵测试结构图"
+    },
+    "subcaption": {
+      "en": "Observer C judges hidden human and machine replies through text only.",
+      "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。"
+    },
+    "sourceId": "wikimedia-commons-2",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turing_test_diagram.png",
+    "originalImageUrl": "Not available",
+    "rights": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+    "usage": {
+      "en": "Supporting image / Explainer graphic",
+      "zh": "辅助说明图 / 解释性图形"
+    }
+  }
+]

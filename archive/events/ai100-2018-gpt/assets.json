@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2018-gpt-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/alec-radford.png",
+    "caption": {
+      "en": "Alec Radford portrait",
+      "zh": "亚历克·拉德福德肖像"
+    },
+    "subcaption": {
+      "en": "GPT lead author",
+      "zh": "GPT 主要作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/alec-radford.png",
+    "originalImageUrl": "resources/images/figures/alec-radford.png",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2018-gpt-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+    "caption": {
+      "en": "GPT next-token pre-training",
+      "zh": "GPT 下一个令牌预训练"
+    },
+    "subcaption": {
+      "en": "Original local explainer of decoder-only generative pre-training.",
+      "zh": "关于解码器式生成预训练的本地原创解释图。"
+    },
+    "sourceId": "improving-language-understanding-by-generative-pre-training",
+    "sourceName": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+    "originalImageUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

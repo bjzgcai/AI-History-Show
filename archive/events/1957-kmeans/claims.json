@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1957-kmeans-summary",
+    "text": {
+      "en": "K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.",
+      "zh": "K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。"
+    },
+    "sourceIds": [
+      "least-squares-quantization-in-pcm",
+      "bell-labs-k-means-history-note"
+    ]
+  },
+  {
+    "id": "1957-kmeans-quote",
+    "text": {
+      "en": "Assign points, update centroids, repeat",
+      "zh": "分配样本、更新质心、反复迭代"
+    },
+    "sourceIds": [
+      "least-squares-quantization-in-pcm"
+    ]
+  }
+]

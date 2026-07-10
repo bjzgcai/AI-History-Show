@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does a GCN layer combine?",
+      "zh": "GCN 层组合什么？"
+    },
+    "options": [
+      {
+        "en": "Node features from normalized graph neighborhoods",
+        "zh": "归一化图邻域中的节点特征"
+      },
+      {
+        "en": "Only text prompts",
+        "zh": "只有文本提示"
+      },
+      {
+        "en": "Only protein names",
+        "zh": "只有蛋白质名称"
+      },
+      {
+        "en": "A random password list",
+        "zh": "随机密码列表"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "GCN aggregates nearby node features through a normalized graph propagation rule.",
+      "zh": "GCN 通过归一化图传播规则聚合附近节点特征。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "gcn",
+      "ai100"
+    ]
+  }
+]

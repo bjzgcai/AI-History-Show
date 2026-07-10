@@ -1,0 +1,50 @@
+[
+  {
+    "id": "applications-of-artificial-intelligence-for-chemical-inference",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Applications of Artificial Intelligence for Chemical Inference",
+      "zh": "人工智能在化学推断中的应用"
+    },
+    "url": "https://doi.org/10.1021/ci60034a002"
+  },
+  {
+    "id": "acm-turing-award-profile-for-edward-feigenbaum",
+    "type": {
+      "en": "Award",
+      "zh": "奖项资料"
+    },
+    "label": {
+      "en": "ACM Turing Award profile for Edward Feigenbaum",
+      "zh": "ACM 图灵 Award profile for 爱德华·费根鲍姆"
+    },
+    "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235"
+  },
+  {
+    "id": "stanford-knowledge-systems-laboratory-history",
+    "type": {
+      "en": "History",
+      "zh": "历史资料"
+    },
+    "label": {
+      "en": "Stanford Knowledge Systems Laboratory history",
+      "zh": "斯坦福大学 Knowledge Systems Laboratory history"
+    },
+    "url": "http://ksl-web.stanford.edu/"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:2012-06-15_1994_Turing_Laureate_Ed_Feigenbaum.jpg"
+  }
+]

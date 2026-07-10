@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1974-frame-summary",
+    "text": {
+      "en": "Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.",
+      "zh": "框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。"
+    },
+    "sourceIds": [
+      "a-framework-for-representing-knowledge",
+      "marvin-minsky-obituary-mit-news"
+    ]
+  },
+  {
+    "id": "1974-frame-quote",
+    "text": {
+      "en": "Structured slots with defaults and inheritance",
+      "zh": "带默认值和继承的槽结构"
+    },
+    "sourceIds": [
+      "a-framework-for-representing-knowledge"
+    ]
+  }
+]

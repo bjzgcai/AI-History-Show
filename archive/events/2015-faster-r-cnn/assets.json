@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2015-faster-r-cnn-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+    "caption": {
+      "en": "Kaiming He portrait",
+      "zh": "何恺明肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Kaiming He's MIT-hosted personal page.",
+      "zh": "Faster R-CNN 共同作者"
+    },
+    "sourceId": "kaiming-he-personal-page",
+    "sourceName": {
+      "en": "Kaiming He personal page",
+      "zh": "何恺明个人主页"
+    },
+    "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+    "originalImageUrl": "https://people.csail.mit.edu/kaiming/img/kmh2024fall.jpg",
+    "rights": {
+      "en": "Personal website photo; rights not stated.",
+      "zh": "个人网站照片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Historical figure / Faster R-CNN co-author portrait",
+      "zh": "历史人物 / Faster R-CNN 共同作者肖像"
+    }
+  },
+  {
+    "id": "2015-faster-r-cnn-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
+    "caption": {
+      "en": "Region proposal network",
+      "zh": "区域建议网络"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+      "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "shaoqingren-faster-rcnn",
+    "sourceName": "GitHub",
+    "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "2015-faster-r-cnn-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
+    "caption": {
+      "en": "Detection output boxes",
+      "zh": "检测输出框"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Faster R-CNN, based on the related source material.",
+      "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "shaoqingren-faster-rcnn",
+    "sourceName": "GitHub",
+    "sourceUrl": "https://github.com/ShaoqingRen/faster_rcnn",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

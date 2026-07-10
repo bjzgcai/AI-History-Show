@@ -1,0 +1,53 @@
+{
+  "id": "1975-genetic-algorithm",
+  "year": "1975",
+  "title": {
+    "en": "Genetic Algorithms",
+    "zh": "遗传算法"
+  },
+  "location": {
+    "name": {
+      "en": "University of Michigan",
+      "zh": "密歇根大学"
+    },
+    "country": {
+      "en": "Ann Arbor, United States",
+      "zh": "美国安娜堡"
+    },
+    "coordinates": [
+      42.278,
+      -83.7382
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John H. Holland",
+        "zh": "约翰·H·霍兰德"
+      },
+      "role": {
+        "en": "Developed the genetic algorithm framework",
+        "zh": "提出遗传算法框架"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "adaptation in natural and artificial systems",
+    "zh": "自然与人工系统中的适应"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Adaptation in Natural and Artificial Systems",
+      "zh": "自然系统与人工系统中的适应"
+    },
+    "workAuthors": {
+      "en": "John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "zh": "约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
+    },
+    "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Search and Optimization / Genetic Algorithm",
+    "zh": "BenchCouncil AI100：搜索与优化 / 遗传算法"
+  }
+}

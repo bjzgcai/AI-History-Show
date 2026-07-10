@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a-density-based-algorithm-for-discovering-clusters",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A density-based algorithm for discovering clusters",
+      "zh": "一种发现簇的基于密度的算法"
+    },
+    "url": "https://dl.acm.org/doi/10.5555/3001460.3001507"
+  },
+  {
+    "id": "dbscan-revisited-revisited",
+    "type": {
+      "en": "Retrospective",
+      "zh": "回顾"
+    },
+    "label": {
+      "en": "DBSCAN Revisited, Revisited",
+      "zh": "再访 DBSCAN，再访"
+    },
+    "url": "https://doi.org/10.1145/3068335"
+  },
+  {
+    "id": "scikit-learn-dbscan-documentation",
+    "type": {
+      "en": "Documentation",
+      "zh": "文档"
+    },
+    "label": {
+      "en": "scikit-learn DBSCAN documentation",
+      "zh": "scikit-learn DBSCAN 文档"
+    },
+    "url": "https://scikit-learn.org/stable/modules/clustering.html#dbscan"
+  },
+  {
+    "id": "martin-ester-portrait",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Martin Ester portrait",
+      "zh": "马丁·埃斯特 人物照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg"
+  }
+]

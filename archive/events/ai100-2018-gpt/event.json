@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2018-gpt",
+  "year": 2018,
+  "title": {
+    "en": "GPT",
+    "zh": "GPT"
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "Lead author of the GPT paper",
+        "zh": "GPT 论文主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Improving language understanding by generative pre-training",
+    "zh": "通过生成式预训练改进语言理解"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Improving Language Understanding by Generative Pre-Training",
+      "zh": "通过生成式预训练改进语言理解"
+    },
+    "workAuthors": {
+      "en": "Alec Radford et al., OpenAI, 2018",
+      "zh": "亚历克·拉德福德等，OpenAI，2018"
+    },
+    "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

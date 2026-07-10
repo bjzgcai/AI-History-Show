@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1965-dendral-summary",
+    "text": {
+      "en": "DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.",
+      "zh": "DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。"
+    },
+    "sourceIds": [
+      "applications-of-artificial-intelligence-for-chemical-inference",
+      "acm-turing-award-profile-for-edward-feigenbaum"
+    ]
+  },
+  {
+    "id": "1965-dendral-quote",
+    "text": {
+      "en": "Rule-guided chemical structure inference",
+      "zh": "规则引导的化学结构推断"
+    },
+    "sourceIds": [
+      "applications-of-artificial-intelligence-for-chemical-inference"
+    ]
+  }
+]

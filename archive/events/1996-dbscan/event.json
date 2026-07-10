@@ -1,0 +1,63 @@
+{
+  "id": "1996-dbscan",
+  "year": "1996",
+  "title": {
+    "en": "DBSCAN",
+    "zh": "DBSCAN 密度聚类"
+  },
+  "location": {
+    "name": {
+      "en": "University of Munich",
+      "zh": "慕尼黑大学"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1508,
+      11.58
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Ester",
+        "zh": "马丁·埃斯特"
+      },
+      "role": {
+        "en": "Co-author of DBSCAN",
+        "zh": "DBSCAN 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
+      },
+      "role": {
+        "en": "DBSCAN research team",
+        "zh": "DBSCAN 研究团队"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Clusters are dense regions separated by sparse noise",
+    "zh": "簇是被稀疏噪声隔开的密集区域"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+      "zh": "一种在含噪大型空间数据库中发现簇的基于密度的算法"
+    },
+    "workAuthors": {
+      "en": "Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "zh": "马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Cluster, Classification, Regression / DBSCAN",
+    "zh": "BenchCouncil AI100：聚类、分类与回归 / DBSCAN 密度聚类"
+  }
+}

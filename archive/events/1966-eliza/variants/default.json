@@ -1,0 +1,198 @@
+{
+  "description": {
+    "en": "<p>ELIZA showed how far simple language pattern matching could go in producing the feeling of conversation. Its DOCTOR script reflected user phrases back as questions, making the interaction memorable precisely because the mechanism was shallow. The program became a landmark in chatbot history and in debates about anthropomorphizing machines.</p>",
+    "zh": "<p>ELIZA 展示了简单语言模式匹配在制造“对话感”方面能走多远。它的 DOCTOR 脚本会把用户短语改写成问题反射回来，机制很浅，却让互动令人印象深刻。它成为聊天机器人史和“机器拟人化”争论中的标志性案例。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "In the 1960s, AI language systems were mostly symbolic and hand-built. ELIZA tested whether a small set of scripts could sustain the impression of natural conversation.",
+        "zh": "20 世纪 60 年代，AI 语言系统多为手工构建的符号系统。ELIZA 测试少量脚本能否维持自然对话的印象。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue.",
+        "zh": "DOCTOR 脚本并不理解心理治疗；它把识别到的模式转成反问式提示，诱导用户继续说下去。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat ELIZA as both historically important and cautionary: it produced conversational illusion without deep understanding. Its long-term legacy is the reminder that interaction design, expectation, and user projection strongly shape judgments about AI.",
+        "zh": "专家通常认为 ELIZA 既具有历史重要性，也具有警示意义：它没有深层理解，却能制造对话幻觉。它的长期影响在于提醒人们，交互设计、期待和用户投射会强烈影响对 AI 的判断。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "ChatBot",
+      "zh": "聊天机器人"
+    },
+    "method": {
+      "en": "Pattern matching and scripted reflection",
+      "zh": "模式匹配与脚本反射"
+    },
+    "artifact": {
+      "en": "Early conversational chatbot",
+      "zh": "早期对话机器人"
+    },
+    "material": {
+      "en": "CACM paper, MIT obituary, and ELIZA reconstruction materials",
+      "zh": "CACM 论文、麻省理工学院 讣闻与 ELIZA 复原材料"
+    },
+    "demo": {
+      "en": "Reflect the user phrase into a question",
+      "zh": "把用户短语反射成问题"
+    },
+    "visual": "eliza",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Script",
+          "zh": "脚本"
+        },
+        "text": {
+          "en": "A script defines keywords and response templates for a conversational role.",
+          "zh": "脚本定义某种对话角色的关键词和回应模板。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reflection",
+          "zh": "反射"
+        },
+        "text": {
+          "en": "ELIZA often turns a user statement back into a question using the user’s own words.",
+          "zh": "ELIZA 常用用户自己的词把陈述改写成问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "ELIZA Effect",
+          "zh": "ELIZA 效应"
+        },
+        "text": {
+          "en": "People may attribute understanding to a system that only follows simple conversational rules.",
+          "zh": "人们可能把理解能力归因给只执行简单对话规则的系统。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Turing Test",
+        "zh": "图灵测试"
+      },
+      {
+        "en": "Chatbots",
+        "zh": "聊天机器人"
+      },
+      {
+        "en": "Large language models",
+        "zh": "大语言模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Germany",
+        "zh": "德国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Communications of the ACM",
+          "zh": "《ACM 通讯》"
+        },
+        "title": {
+          "en": "ELIZA paper",
+          "zh": "ELIZA 论文"
+        },
+        "description": {
+          "en": "Canonical paper for ELIZA; local visuals redraw the DOCTOR-style rewrite loop.",
+          "zh": "ELIZA 的经典论文；本地图重画 DOCTOR 风格改写循环。"
+        },
+        "url": "https://doi.org/10.1145/365153.365168",
+        "source": "https://doi.org/10.1145/365153.365168",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open DOI",
+          "zh": "打开 DOI"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "ELIZA CACM paper",
+          "zh": "ELIZA CACM paper"
+        },
+        "url": "https://doi.org/10.1145/365153.365168"
+      },
+      {
+        "type": {
+          "en": "Institution",
+          "zh": "机构"
+        },
+        "label": {
+          "en": "MIT News obituary for Joseph Weizenbaum",
+          "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆"
+        },
+        "url": "https://news.mit.edu/2008/obit-weizenbaum-0310"
+      },
+      {
+        "type": {
+          "en": "Archive",
+          "zh": "档案"
+        },
+        "label": {
+          "en": "ELIZA source reconstruction project",
+          "zh": "ELIZA source reconstruction project"
+        },
+        "url": "https://sites.google.com/view/elizagen-org/"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Script",
+        "zh": "脚本"
+      },
+      {
+        "en": "Reflection",
+        "zh": "反射"
+      },
+      {
+        "en": "ELIZA Effect",
+        "zh": "ELIZA 效应"
+      }
+    ]
+  }
+}

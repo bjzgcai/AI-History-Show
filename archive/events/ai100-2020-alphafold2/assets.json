@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2020-alphafold2-image-1",
+    "kind": "image",
+    "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+    "caption": {
+      "en": "John Jumper portrait",
+      "zh": "约翰·江珀肖像"
+    },
+    "subcaption": {
+      "en": "AlphaFold2 lead researcher",
+      "zh": "AlphaFold2 主要研究者"
+    },
+    "sourceId": "vanderbilt-university",
+    "sourceName": {
+      "en": "Vanderbilt University",
+      "zh": "范德堡大学"
+    },
+    "sourceUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+    "originalImageUrl": "https://news.vanderbilt.edu/2024/10/10/john-m-jumper-deepmind-researcher-and-vanderbilt-alumnus-shares-2024-nobel-prize-in-chemistry/",
+    "rights": {
+      "en": "Vanderbilt University image; reuse rights not stated.",
+      "zh": "范德堡大学图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2020-alphafold2-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+    "caption": {
+      "en": "AlphaFold2 structure pipeline",
+      "zh": "AlphaFold2 结构预测流程"
+    },
+    "subcaption": {
+      "en": "Original local explainer of sequence-to-structure prediction.",
+      "zh": "关于从序列到结构预测的本地原创解释图。"
+    },
+    "sourceId": "highly-accurate-protein-structure-prediction-with-alphafold",
+    "sourceName": {
+      "en": "Nature",
+      "zh": "《Nature》"
+    },
+    "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2",
+    "originalImageUrl": "https://doi.org/10.1038/s41586-021-03819-2",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1959-pandemonium-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+    "caption": {
+      "en": "Oliver Selfridge portrait",
+      "zh": "奥利弗·塞尔弗里奇 人物照片"
+    },
+    "subcaption": {
+      "en": "Author of the Pandemonium architecture.",
+      "zh": "Pandemonium 架构提出者。"
+    },
+    "sourceId": "oliver-selfridge-portrait",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Oliver_Selfridge_at_BBN.jpg",
+    "rights": "CC0",
+    "usage": {
+      "en": "Historical figure photo",
+      "zh": "历史人物照片"
+    }
+  },
+  {
+    "id": "1959-pandemonium-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+    "caption": {
+      "en": "Pandemonium architecture image",
+      "zh": "Pandemonium 架构图片"
+    },
+    "subcaption": {
+      "en": "Illustration associated with the Pandemonium architecture.",
+      "zh": "与 Pandemonium 架构相关的公开图片。"
+    },
+    "sourceId": "pandemonium-architecture-image",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+    "rights": "CC BY-SA 3.0",
+    "usage": {
+      "en": "Architecture image",
+      "zh": "架构图片"
+    }
+  },
+  {
+    "id": "1959-pandemonium-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
+    "caption": {
+      "en": "Feature-vote cascade",
+      "zh": "特征投票级联"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
+      "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。"
+    },
+    "sourceId": "pandemonium-a-paradigm-for-learning",
+    "sourceName": {
+      "en": "Pandemonium: A Paradigm for Learning",
+      "zh": "群魔殿：一种学习范式"
+    },
+    "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Voting diagram",
+      "zh": "投票图"
+    }
+  },
+  {
+    "id": "1959-pandemonium-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+    "caption": {
+      "en": "Layered recognition demons",
+      "zh": "分层识别小程序"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Pandemonium: A Paradigm for Learning.",
+      "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。"
+    },
+    "sourceId": "pandemonium-a-paradigm-for-learning",
+    "sourceName": {
+      "en": "Pandemonium: A Paradigm for Learning",
+      "zh": "群魔殿：一种学习范式"
+    },
+    "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Layered-recognition diagram",
+      "zh": "分层识别图"
+    }
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.</p>",
+    "zh": "<p>扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.",
+        "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat LeNet as a canonical early proof that convolution, weight sharing, and backpropagation could solve real perception tasks. Its long-term legacy is the end-to-end CNN pattern that later scaled into modern computer vision.",
+        "zh": "专家通常把 LeNet 视为早期经典证据，证明卷积、权重共享和反向传播可以解决真实感知任务。它的长期影响在于端到端 CNN 模式后来扩展成现代计算机视觉的基础。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Convolutional character recognition",
+      "zh": "卷积字符识别"
+    },
+    "artifact": {
+      "en": "LeNet handwritten digit network",
+      "zh": "LeNet 手写数字网络"
+    },
+    "material": {
+      "en": "Neural Computation paper",
+      "zh": "《Neural Computation》论文"
+    },
+    "demo": {
+      "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+      "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+    },
+    "visual": "lenet",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Shared Weights",
+          "zh": "权重共享"
+        },
+        "text": {
+          "en": "The same filters scan across the image.",
+          "zh": "相同滤波器在整张图像上扫描。"
+        }
+      },
+      {
+        "label": {
+          "en": "End-to-end Learning",
+          "zh": "端到端学习"
+        },
+        "text": {
+          "en": "Feature extraction and classification are trained together.",
+          "zh": "特征提取和分类一起训练。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "CNN",
+        "zh": "CNN"
+      },
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "ImageNet",
+        "zh": "ImageNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Handwritten image",
+        "zh": "手写图像"
+      },
+      {
+        "en": "Convolution + pooling",
+        "zh": "卷积 + 池化"
+      },
+      {
+        "en": "Digit class",
+        "zh": "数字类别"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Press Direct",
+          "zh": "MIT Press Direct"
+        },
+        "title": {
+          "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+          "zh": "反向传播应用于手写邮编识别"
+        },
+        "description": {
+          "en": "Canonical LeNet paper record.",
+          "zh": "LeNet 经典论文记录。"
+        },
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "source": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI",
+          "zh": "打开 DOI"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+          "zh": "《反向传播应用于手写邮编识别》"
+        },
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541"
+      },
+      {
+        "type": {
+          "en": "Project",
+          "zh": "项目"
+        },
+        "label": {
+          "en": "LeNet-5 demos and documentation",
+          "zh": "LeNet-5 演示与文档"
+        },
+        "url": "https://yann.lecun.com/exdb/lenet/"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Gradient-Based Learning Applied to Document Recognition",
+          "zh": "《基于梯度的文档识别学习》"
+        },
+        "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Yann LeCun's home page",
+          "zh": "扬·勒昆主页"
+        },
+        "url": "https://yann.lecun.com/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural Computation paper",
+          "zh": "《Neural Computation》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+          "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+        }
+      }
+    ]
+  }
+}

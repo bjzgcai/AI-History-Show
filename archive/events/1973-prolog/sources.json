@@ -1,0 +1,50 @@
+[
+  {
+    "id": "the-birth-of-prolog",
+    "type": {
+      "en": "History",
+      "zh": "历史"
+    },
+    "label": {
+      "en": "The Birth of Prolog",
+      "zh": "Prolog 的诞生"
+    },
+    "url": "https://doi.org/10.1145/155360.155362"
+  },
+  {
+    "id": "prolog-heritage",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "Prolog Heritage",
+      "zh": "Prolog Heritage"
+    },
+    "url": "https://www.prolog-heritage.org/en/Prolog_50.html"
+  },
+  {
+    "id": "swi-prolog-documentation",
+    "type": {
+      "en": "Language docs",
+      "zh": "语言文档"
+    },
+    "label": {
+      "en": "SWI-Prolog documentation",
+      "zh": "SWI-Prolog documentation"
+    },
+    "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/Category:Alain_Colmerauer"
+  }
+]

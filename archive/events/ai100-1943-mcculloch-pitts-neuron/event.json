@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1943-mcculloch-pitts-neuron",
+  "year": 1943,
+  "title": {
+    "en": "McCulloch-Pitts Neuron",
+    "zh": "麦卡洛克-皮茨神经元"
+  },
+  "location": {
+    "name": {
+      "en": "University of Illinois at Chicago",
+      "zh": "伊利诺伊大学芝加哥分校"
+    },
+    "country": {
+      "en": "Chicago, United States",
+      "zh": "美国芝加哥"
+    },
+    "coordinates": [
+      41.8719,
+      -87.6493
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Warren McCulloch",
+        "zh": "沃伦·麦卡洛克"
+      },
+      "role": {
+        "en": "Co-author of the logical neuron model",
+        "zh": "逻辑神经元模型共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Walter Pitts",
+        "zh": "沃尔特·皮茨"
+      },
+      "role": {
+        "en": "Co-author of the logical neuron model",
+        "zh": "逻辑神经元模型共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "A logical calculus of the ideas immanent in nervous activity",
+    "zh": "神经活动内在观念的逻辑演算"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+      "zh": "神经活动内在观念的逻辑演算"
+    },
+    "workAuthors": {
+      "en": "Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+      "zh": "沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF02478259"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

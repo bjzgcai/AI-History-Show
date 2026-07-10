@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2021-dalle",
+  "year": 2021,
+  "title": {
+    "en": "DALL-E",
+    "zh": "DALL-E"
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Aditya Ramesh",
+        "zh": "阿迪蒂亚·拉梅什"
+      },
+      "role": {
+        "en": "Lead author and creator of DALL-E",
+        "zh": "DALL-E 主要作者与创建者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Zero-shot text-to-image generation",
+    "zh": "零样本文本到图像生成"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Zero-Shot Text-to-Image Generation",
+      "zh": "零样本文本到图像生成"
+    },
+    "workAuthors": {
+      "en": "Aditya Ramesh et al., ICML, 2021",
+      "zh": "阿迪蒂亚·拉梅什等，ICML，2021"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2102.12092"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

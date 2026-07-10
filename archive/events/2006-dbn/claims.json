@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2006-dbn-summary",
+    "text": {
+      "en": "Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.",
+      "zh": "深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。辛顿 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。"
+    },
+    "sourceIds": [
+      "a-fast-learning-algorithm-for-deep-belief-nets",
+      "reducing-the-dimensionality-of-data-with-neural-networks"
+    ]
+  },
+  {
+    "id": "2006-dbn-quote",
+    "text": {
+      "en": "Layer-wise unsupervised pretraining",
+      "zh": "逐层无监督预训练"
+    },
+    "sourceIds": [
+      "a-fast-learning-algorithm-for-deep-belief-nets"
+    ]
+  }
+]

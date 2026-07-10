@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1983-simulated-annealing-summary",
+    "text": {
+      "en": "Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.",
+      "zh": "模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。"
+    },
+    "sourceIds": [
+      "optimization-by-simulated-annealing",
+      "scipy-dual-annealing"
+    ]
+  },
+  {
+    "id": "1983-simulated-annealing-quote",
+    "text": {
+      "en": "optimization by simulated annealing",
+      "zh": "通过模拟退火进行优化"
+    },
+    "sourceIds": [
+      "optimization-by-simulated-annealing"
+    ]
+  }
+]

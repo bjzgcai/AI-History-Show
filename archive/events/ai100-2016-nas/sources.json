@@ -1,0 +1,50 @@
+[
+  {
+    "id": "neural-architecture-search-with-reinforcement-learning",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Neural Architecture Search with Reinforcement Learning",
+      "zh": "《基于强化学习的神经架构搜索》"
+    },
+    "url": "https://arxiv.org/abs/1611.01578"
+  },
+  {
+    "id": "iclr-openreview-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR OpenReview record",
+      "zh": "ICLR OpenReview 记录"
+    },
+    "url": "https://openreview.net/forum?id=r1Ue8Hcxg"
+  },
+  {
+    "id": "google-ai-automl-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Google AI AutoML overview",
+      "zh": "Google AI AutoML 概览"
+    },
+    "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html"
+  },
+  {
+    "id": "barret-zoph-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Barret Zoph homepage",
+      "zh": "巴雷特·佐夫个人主页"
+    },
+    "url": "https://barretzoph.github.io/"
+  }
+]

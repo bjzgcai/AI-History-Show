@@ -1,0 +1,99 @@
+[
+  {
+    "id": "1957-kmeans-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+    "caption": {
+      "en": "Bell Labs Holmdel",
+      "zh": "贝尔实验室 Holmdel"
+    },
+    "subcaption": {
+      "en": "Bell Labs visual context for Lloyd-style quantization work.",
+      "zh": "劳埃德 量化方法相关的贝尔实验室背景图。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+    "rights": "CC BY-SA 2.0",
+    "usage": {
+      "en": "Institution photo",
+      "zh": "机构照片"
+    }
+  },
+  {
+    "id": "1957-kmeans-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+    "caption": {
+      "en": "Iris k-means clustering graphic",
+      "zh": "鸢尾花 k-means 聚类图"
+    },
+    "subcaption": {
+      "en": "Public-domain k-means clustering illustration.",
+      "zh": "公有领域的 k-means 聚类示意图。"
+    },
+    "sourceId": "iris-flowers-k-means-clustering-graphic",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+    "rights": "Public domain",
+    "usage": {
+      "en": "Clustering diagram",
+      "zh": "聚类图"
+    }
+  },
+  {
+    "id": "1957-kmeans-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
+    "caption": {
+      "en": "Centroid assignment loop",
+      "zh": "质心分配循环"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Least squares quantization in PCM.",
+      "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。"
+    },
+    "sourceId": "least-squares-quantization-in-pcm",
+    "sourceName": {
+      "en": "Least squares quantization in PCM",
+      "zh": "PCM 中的最小二乘量化"
+    },
+    "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Algorithm diagram",
+      "zh": "算法图"
+    }
+  },
+  {
+    "id": "1957-kmeans-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+    "caption": {
+      "en": "Cluster update step",
+      "zh": "簇更新步骤"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on scikit-learn KMeans documentation.",
+      "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。"
+    },
+    "sourceId": "scikit-learn-kmeans-documentation",
+    "sourceName": "scikit-learn KMeans documentation",
+    "sourceUrl": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Update diagram",
+      "zh": "更新图"
+    }
+  }
+]

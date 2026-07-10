@@ -1,0 +1,53 @@
+{
+  "id": "1974-frame",
+  "year": "1974",
+  "title": {
+    "en": "Frame",
+    "zh": "框架"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Author of the frame representation proposal",
+        "zh": "框架表示思想提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Structured slots with defaults and inheritance",
+    "zh": "带默认值和继承的槽结构"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Framework for Representing Knowledge",
+      "zh": "表示知识的一种框架"
+    },
+    "workAuthors": {
+      "en": "Marvin Minsky",
+      "zh": "马文·明斯基"
+    },
+    "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Knowledge representation / Frame",
+    "zh": "BenchCouncil AI100：知识表示 / 框架"
+  }
+}

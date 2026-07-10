@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2014-ms-coco",
+  "year": 2014,
+  "title": {
+    "en": "MS COCO",
+    "zh": "MS COCO"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research",
+      "zh": "Microsoft Research"
+    },
+    "country": {
+      "en": "Redmond, United States",
+      "zh": "Redmond, United States"
+    },
+    "coordinates": [
+      47.674,
+      -122.1215
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tsung-Yi Lin",
+        "zh": "林宗毅"
+      },
+      "role": {
+        "en": "MS COCO lead author",
+        "zh": "MS COCO 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Common objects in context",
+    "zh": "上下文中的常见物体"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Microsoft COCO: Common Objects in Context",
+      "zh": "Microsoft COCO：上下文中的常见物体"
+    },
+    "workAuthors": {
+      "en": "Tsung-Yi Lin et al., ECCV, 2014",
+      "zh": "林宗毅等，ECCV，2014"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1405.0312"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

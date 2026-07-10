@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2013-variational-autoencoder-image-1",
+    "kind": "image",
+    "path": "https://dpkingma.com/files/portrait.jpg",
+    "caption": {
+      "en": "Diederik Kingma portrait",
+      "zh": "迪德里克·金马肖像"
+    },
+    "subcaption": {
+      "en": "VAE lead author",
+      "zh": "VAE 主要作者"
+    },
+    "sourceId": "diederik-kingma-homepage",
+    "sourceName": {
+      "en": "Diederik Kingma homepage",
+      "zh": "迪德里克·金马个人主页"
+    },
+    "sourceUrl": "https://dpkingma.com/",
+    "originalImageUrl": "https://dpkingma.com/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2013-variational-autoencoder-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg",
+    "caption": {
+      "en": "Variational Autoencoder explainer",
+      "zh": "变分自编码器 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "auto-encoding-variational-bayes",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1312.6114",
+    "originalImageUrl": "https://arxiv.org/abs/1312.6114",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

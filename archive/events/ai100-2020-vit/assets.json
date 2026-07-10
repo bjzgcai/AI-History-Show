@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2020-vit-image-1",
+    "kind": "image",
+    "path": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+    "caption": {
+      "en": "Alexey Dosovitskiy portrait",
+      "zh": "阿列克谢·多索维茨基肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of Vision Transformer",
+      "zh": "视觉 Transformer 主要作者"
+    },
+    "sourceId": "eml-munich",
+    "sourceName": {
+      "en": "EML Munich",
+      "zh": "EML Munich"
+    },
+    "sourceUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+    "originalImageUrl": "https://www.eml-munich.de/people/alexey-dosovitskiy",
+    "rights": {
+      "en": "EML Munich profile image; reuse rights not stated.",
+      "zh": "EML Munich 个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2020-vit-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+    "caption": {
+      "en": "Patch tokens to transformer",
+      "zh": "图像块令牌到 Transformer"
+    },
+    "subcaption": {
+      "en": "Original local explainer of ViT patch tokenization.",
+      "zh": "关于 ViT 图像块令牌化的本地原创解释图。"
+    },
+    "sourceId": "an-image-is-worth-16x16-words",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2010.11929",
+    "originalImageUrl": "https://arxiv.org/abs/2010.11929",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

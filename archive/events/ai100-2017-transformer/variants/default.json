@@ -1,0 +1,222 @@
+{
+  "description": {
+    "en": "<p>The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.</p>",
+    "zh": "<p>Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
+        "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
+        "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Self-attention sequence architecture",
+      "zh": "自注意力序列架构"
+    },
+    "artifact": {
+      "en": "Transformer architecture",
+      "zh": "Transformer 架构"
+    },
+    "material": {
+      "en": "NeurIPS paper",
+      "zh": "NeurIPS 论文"
+    },
+    "demo": {
+      "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+      "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+    },
+    "visual": "transformer",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Self-attention",
+          "zh": "自注意力"
+        },
+        "text": {
+          "en": "Tokens exchange information through learned attention weights.",
+          "zh": "令牌通过学习到的注意力权重交换信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Parallel Training",
+          "zh": "并行训练"
+        },
+        "text": {
+          "en": "Sequence positions can be processed without recurrence.",
+          "zh": "序列位置无需循环即可处理。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Attention",
+        "zh": "注意力机制"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      },
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Token embeddings",
+        "zh": "令牌嵌入"
+      },
+      {
+        "en": "Self-attention",
+        "zh": "自注意力"
+      },
+      {
+        "en": "Feed-forward stack",
+        "zh": "前馈堆栈"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Attention Is All You Need",
+          "zh": "Attention Is All You Need"
+        },
+        "description": {
+          "en": "Open paper for the Transformer architecture.",
+          "zh": "Transformer 架构的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1706.03762",
+        "source": "https://arxiv.org/abs/1706.03762",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Attention Is All You Need",
+          "zh": "《Attention Is All You Need》"
+        },
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "NeurIPS paper page",
+          "zh": "NeurIPS 论文页面"
+        },
+        "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "Google Research publication page",
+          "zh": "Google Research 出版页面"
+        },
+        "url": "https://research.google/pubs/attention-is-all-you-need/"
+      },
+      {
+        "type": {
+          "en": "Retrospective",
+          "zh": "回顾"
+        },
+        "label": {
+          "en": "Google Research Transformer blog post",
+          "zh": "Google Research Transformer 博客"
+        },
+        "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NeurIPS paper",
+          "zh": "NeurIPS 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+        }
+      }
+    ]
+  }
+}

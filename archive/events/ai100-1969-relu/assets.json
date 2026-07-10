@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1969-relu-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "caption": {
+      "en": "Yoshua Bengio portrait",
+      "zh": "约书亚·本吉奥肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of influential rectifier analysis.",
+      "zh": "有影响力的整流函数分析共同作者。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1969-relu-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+    "caption": {
+      "en": "Rectified activation",
+      "zh": "整流激活"
+    },
+    "subcaption": {
+      "en": "Original local explainer of the max(0, x) activation.",
+      "zh": "关于 max(0, x) 激活函数的本地原创解释图。"
+    },
+    "sourceId": "deep-sparse-rectifier-neural-networks",
+    "sourceName": {
+      "en": "AISTATS",
+      "zh": "AISTATS"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+    "originalImageUrl": "https://proceedings.mlr.press/v15/glorot11a.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

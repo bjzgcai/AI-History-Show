@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2021-dalle-image-1",
+    "kind": "image",
+    "path": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+    "caption": {
+      "en": "Aditya Ramesh portrait",
+      "zh": "阿迪蒂亚·拉梅什肖像"
+    },
+    "subcaption": {
+      "en": "DALL-E lead author and creator",
+      "zh": "DALL-E 主要作者与创建者"
+    },
+    "sourceId": "venturebeat-openai-via-baai-hub",
+    "sourceName": {
+      "en": "VentureBeat / OpenAI via BAAI Hub",
+      "zh": "VentureBeat / OpenAI，经智源社区转载"
+    },
+    "sourceUrl": "https://hub.baai.ac.cn/view/23577",
+    "originalImageUrl": "https://hub.baai.ac.cn/view/23577",
+    "rights": {
+      "en": "OpenAI image republished by BAAI Hub; reuse rights not stated.",
+      "zh": "OpenAI 图片，经智源社区转载；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2021-dalle-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg",
+    "caption": {
+      "en": "DALL-E text-to-image flow",
+      "zh": "DALL-E 文生图流程"
+    },
+    "subcaption": {
+      "en": "Original local explainer of prompt-conditioned image generation.",
+      "zh": "关于提示词条件图像生成的本地原创解释图。"
+    },
+    "sourceId": "icml-dall-e-paper-page",
+    "sourceName": {
+      "en": "ICML",
+      "zh": "ICML"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+    "originalImageUrl": "https://proceedings.mlr.press/v139/ramesh21a.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

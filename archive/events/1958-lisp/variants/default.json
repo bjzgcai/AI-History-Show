@@ -1,0 +1,158 @@
+{
+  "description": {
+    "en": "<p>John McCarthy's LISP gave symbolic AI a practical programming language. It treated code and data as list structures that could be created, transformed and evaluated recursively. That made it a natural tool for early AI systems built around symbols, rules and programs that manipulate programs.</p>",
+    "zh": "<p>约翰·麦卡锡的 LISP 为符号 AI 提供了实用编程语言。它把代码和数据都表示为表结构，使递归式符号处理成为可执行的工程工具。这让它自然适合早期以符号、规则和“处理程序的程序”为核心的 AI 系统。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Published Paper",
+        "zh": "论文材料"
+      },
+      "html": {
+        "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool.",
+        "zh": "麦卡锡 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I 程序员手册 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。"
+      }
+    },
+    {
+      "label": {
+        "en": "API-Like Primitives",
+        "zh": "类 API 原语"
+      },
+      "html": {
+        "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems.",
+        "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat LISP as one of the defining languages of symbolic AI and interactive programming. Its long-term legacy is the code-as-data idea, recursive symbolic processing, and an ecosystem of AI systems that shaped later programming-language design.",
+        "zh": "专家通常把 LISP 视为符号 AI 和交互式编程的定义性语言之一。它的长期影响在于“代码即数据”、递归符号处理，以及由此形成并影响后续编程语言设计的 AI 系统生态。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Language",
+      "zh": "语言"
+    },
+    "method": {
+      "en": "Symbolic recursion",
+      "zh": "符号递归"
+    },
+    "artifact": {
+      "en": "S-expression evaluator",
+      "zh": "S 表达式求值器"
+    },
+    "material": {
+      "en": "Paper + manual",
+      "zh": "论文 + 手册"
+    },
+    "demo": {
+      "en": "EVAL reduction",
+      "zh": "EVAL 归约"
+    },
+    "visual": "eval",
+    "demoSteps": [
+      {
+        "en": "S-expression",
+        "zh": "S 表达式"
+      },
+      {
+        "en": "Primitive operators",
+        "zh": "基础原语"
+      },
+      {
+        "en": "Code as data",
+        "zh": "代码即数据"
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "PROLOG",
+        "zh": "PROLOG"
+      },
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Stanford / John McCarthy",
+          "zh": "斯坦福大学 / 约翰·麦卡锡"
+        },
+        "title": {
+          "en": "Recursive Functions of Symbolic Expressions",
+          "zh": "《符号表达式的递归函数》原文"
+        },
+        "description": {
+          "en": "Author-hosted Stanford page for McCarthy's original LISP paper, first published in Communications of the ACM in April 1960.",
+          "zh": "麦卡锡 在 斯坦福大学 个人站点保存的 LISP 原始论文页面，论文最初发表于 1960 年 4 月的 《ACM 通讯》。"
+        },
+        "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "license": {
+          "en": "Author-hosted web access; reuse rights for the text are not stated.",
+          "zh": "作者托管的网页访问版本；文本复用权利未说明。"
+        },
+        "usage": {
+          "en": "Source material / Original paper reference",
+          "zh": "原始材料入口 / 原始论文参考"
+        },
+        "action": {
+          "en": "Open paper source",
+          "zh": "打开论文原文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Recursive Functions of Symbolic Expressions",
+          "zh": "符号表达式的递归函数"
+        },
+        "url": "https://www-formal.stanford.edu/jmc/recursive.html"
+      },
+      {
+        "type": {
+          "en": "Manual",
+          "zh": "手册"
+        },
+        "label": {
+          "en": "LISP I Programmer's Manual",
+          "zh": "LISP I 程序员手册"
+        },
+        "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view"
+      },
+      {
+        "type": {
+          "en": "History",
+          "zh": "历史"
+        },
+        "label": {
+          "en": "History of Lisp",
+          "zh": "Lisp 史"
+        },
+        "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
+      }
+    ]
+  }
+}

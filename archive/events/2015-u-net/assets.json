@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2015-u-net-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
+    "caption": {
+      "en": "Olaf Ronneberger portrait",
+      "zh": "奥拉夫·龙讷贝格 肖像"
+    },
+    "subcaption": {
+      "en": "Researcher profile photo from the Freiburg LMB page.",
+      "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。"
+    },
+    "sourceId": "university-of-freiburg-lmb",
+    "sourceName": {
+      "en": "University of Freiburg LMB",
+      "zh": "University of 弗赖堡 LMB"
+    },
+    "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/",
+    "originalImageUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/Ronneberger_Portrait.jpg",
+    "rights": "Institution profile photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / U-Net co-author portrait",
+      "zh": "历史人物 / U-Net 共同作者肖像"
+    }
+  },
+  {
+    "id": "2015-u-net-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
+    "caption": {
+      "en": "U-shaped encoder-decoder",
+      "zh": "U 形编码器-解码器"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for U-Net, based on the related source material.",
+      "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "freiburg-u-net-release-page",
+    "sourceName": {
+      "en": "Freiburg CVL",
+      "zh": "弗赖堡 CVL"
+    },
+    "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "2015-u-net-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg",
+    "caption": {
+      "en": "Biomedical mask output",
+      "zh": "生物医学分割掩码"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for U-Net, based on the related source material.",
+      "zh": "U-Net 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "freiburg-u-net-release-page",
+    "sourceName": {
+      "en": "Freiburg CVL",
+      "zh": "弗赖堡 CVL"
+    },
+    "sourceUrl": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

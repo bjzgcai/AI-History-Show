@@ -1,0 +1,63 @@
+{
+  "id": "2014-dropout",
+  "year": "2014",
+  "title": {
+    "en": "Dropout",
+    "zh": "Dropout"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Nitish Srivastava",
+        "zh": "尼蒂什·斯里瓦斯塔瓦"
+      },
+      "role": {
+        "en": "First author of the JMLR dropout paper",
+        "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author and deep learning pioneer",
+        "zh": "共同作者，深度学习先驱"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "prevent neural networks from overfitting",
+    "zh": "防止神经网络过拟合"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "zh": "Dropout：防止神经网络过拟合的简单方法"
+    },
+    "workAuthors": {
+      "en": "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "zh": "尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Dropout",
+    "zh": "BenchCouncil AI100：神经网络 / Dropout"
+  }
+}

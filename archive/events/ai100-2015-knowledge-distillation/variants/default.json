@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>",
+    "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.",
+        "zh": "知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat knowledge distillation as a standard model-compression and transfer technique. Its long-term legacy is the teacher-student pattern now used for efficient inference, ensembles, and large-model adaptation.",
+        "zh": "专家通常把知识蒸馏视为标准的模型压缩和迁移技术。它的长期影响在于教师-学生模式如今用于高效推理、集成模型和大模型适配。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Model efficiency",
+      "zh": "模型效率"
+    },
+    "method": {
+      "en": "Teacher-student soft-target training",
+      "zh": "教师-学生软目标训练"
+    },
+    "artifact": {
+      "en": "Distillation training recipe",
+      "zh": "蒸馏训练配方"
+    },
+    "material": {
+      "en": "NIPS workshop paper",
+      "zh": "NIPS 研讨会论文"
+    },
+    "demo": {
+      "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels.",
+      "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Soft Targets",
+          "zh": "软目标"
+        },
+        "text": {
+          "en": "Probabilities reveal similarity between classes.",
+          "zh": "概率揭示类别之间的相似性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Student Model",
+          "zh": "学生模型"
+        },
+        "text": {
+          "en": "A smaller model imitates the teacher behavior.",
+          "zh": "较小模型模仿教师行为。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Deep Compression",
+          "zh": "深度压缩"
+        },
+        "zh": {
+          "en": "Deep Compression",
+          "zh": "深度压缩"
+        }
+      },
+      {
+        "en": {
+          "en": "GPT",
+          "zh": "GPT"
+        },
+        "zh": {
+          "en": "GPT",
+          "zh": "GPT"
+        }
+      },
+      {
+        "en": {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        "zh": {
+          "en": "BERT",
+          "zh": "BERT"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Teacher logits",
+          "zh": "教师 logits"
+        },
+        "zh": {
+          "en": "Teacher logits",
+          "zh": "教师 logits"
+        }
+      },
+      {
+        "en": {
+          "en": "Soft targets",
+          "zh": "软目标"
+        },
+        "zh": {
+          "en": "Soft targets",
+          "zh": "软目标"
+        }
+      },
+      {
+        "en": {
+          "en": "Student update",
+          "zh": "学生更新"
+        },
+        "zh": {
+          "en": "Student update",
+          "zh": "学生更新"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Distilling the Knowledge in a Neural Network",
+          "zh": "蒸馏神经网络中的知识"
+        },
+        "description": {
+          "en": "arXiv source card for Knowledge Distillation.",
+          "zh": "arXiv 的知识蒸馏资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1503.02531",
+        "source": "https://arxiv.org/abs/1503.02531",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Distilling the Knowledge in a Neural Network",
+          "zh": "《蒸馏神经网络中的知识》"
+        },
+        "url": "https://arxiv.org/abs/1503.02531"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Knowledge distillation overview",
+          "zh": "知识蒸馏概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Knowledge_distillation"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Geoffrey Hinton profile",
+          "zh": "杰弗里·辛顿资料"
+        },
+        "url": "https://www.cs.toronto.edu/~hinton/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NIPS workshop paper",
+          "zh": "NIPS 研讨会论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels.",
+          "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
+        }
+      }
+    ]
+  }
+}

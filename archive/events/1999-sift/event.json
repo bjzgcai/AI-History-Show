@@ -1,0 +1,53 @@
+{
+  "id": "1999-sift",
+  "year": "1999",
+  "title": {
+    "en": "SIFT",
+    "zh": "SIFT"
+  },
+  "location": {
+    "name": {
+      "en": "University of British Columbia",
+      "zh": "不列颠哥伦比亚大学"
+    },
+    "country": {
+      "en": "British Columbia, Canada",
+      "zh": "加拿大不列颠哥伦比亚省"
+    },
+    "coordinates": [
+      49.2606,
+      -123.246
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Lowe",
+        "zh": "戴维·洛"
+      },
+      "role": {
+        "en": "Inventor of SIFT",
+        "zh": "SIFT 发明者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Scale-invariant local features",
+    "zh": "尺度不变局部特征"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "SIFT ICCV paper PDF",
+      "zh": "SIFT 国际计算机视觉会议论文 PDF"
+    },
+    "workAuthors": {
+      "en": "David Lowe",
+      "zh": "戴维·洛"
+    },
+    "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer vision feature extraction / SIFT",
+    "zh": "BenchCouncil AI100：计算机视觉特征提取 / SIFT"
+  }
+}

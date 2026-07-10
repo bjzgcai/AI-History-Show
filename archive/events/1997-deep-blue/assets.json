@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1997-deep-blue-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+    "caption": {
+      "en": "Murray Campbell portrait",
+      "zh": "默里·坎贝尔 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from IBM Research profile.",
+      "zh": "来自 IBM 研究院 人物资料页的人物图。"
+    },
+    "sourceId": "murray-campbell-ibm-research",
+    "sourceName": {
+      "en": "IBM Research",
+      "zh": "IBM 研究院"
+    },
+    "sourceUrl": "https://research.ibm.com/people/murray-campbell",
+    "originalImageUrl": "https://research-website-prod-ibmers-images.s3.us-east.cloud-object-storage.appdomain.cloud/3729",
+    "rights": {
+      "en": "IBM Research profile image; reuse rights not stated.",
+      "zh": "IBM 研究院 profile image; reuse rights not stated."
+    },
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1997-deep-blue-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+    "caption": {
+      "en": "Chess search tree",
+      "zh": "国际象棋搜索树"
+    },
+    "subcaption": {
+      "en": "Local redraw for Deep Blue, based on the listed source material.",
+      "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "artificial-intelligence",
+    "sourceName": {
+      "en": "Artificial Intelligence",
+      "zh": "人工智能"
+    },
+    "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1997-deep-blue-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg",
+    "caption": {
+      "en": "Hardware-assisted board evaluation",
+      "zh": "硬件辅助棋盘评估"
+    },
+    "subcaption": {
+      "en": "Local redraw for Deep Blue, based on the listed source material.",
+      "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "artificial-intelligence",
+    "sourceName": {
+      "en": "Artificial Intelligence",
+      "zh": "人工智能"
+    },
+    "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

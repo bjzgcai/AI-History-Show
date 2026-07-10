@@ -1,0 +1,53 @@
+{
+  "id": "2013-word2vec",
+  "year": "2013",
+  "title": {
+    "en": "Word2Vec",
+    "zh": "Word2Vec"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "谷歌大脑"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tomas Mikolov",
+        "zh": "托马斯·米科洛夫"
+      },
+      "role": {
+        "en": "Lead author of word2vec papers",
+        "zh": "word2vec 论文主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "distributed representations of words",
+    "zh": "词的分布式表示"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Distributed Representations of Words and Phrases and their Compositionality",
+      "zh": "词与短语的分布式表示及其组合性"
+    },
+    "workAuthors": {
+      "en": "Tomas Mikolov et al., NeurIPS, 2013",
+      "zh": "托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1301.3781"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Word2Vec",
+    "zh": "BenchCouncil AI100：神经网络 / Word2Vec"
+  }
+}

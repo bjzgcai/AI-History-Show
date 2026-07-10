@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2000-neural-language-model-summary",
+    "text": {
+      "en": "Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.",
+      "zh": "神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。"
+    },
+    "sourceIds": [
+      "a-neural-probabilistic-language-model",
+      "jmlr-full-paper-pdf"
+    ]
+  },
+  {
+    "id": "ai100-2000-neural-language-model-quote",
+    "text": {
+      "en": "A Neural Probabilistic Language Model",
+      "zh": "神经概率语言模型"
+    },
+    "sourceIds": [
+      "a-neural-probabilistic-language-model"
+    ]
+  }
+]

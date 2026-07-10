@@ -1,0 +1,53 @@
+{
+  "id": "ai100-1989-lenet",
+  "year": 1989,
+  "title": {
+    "en": "LeNet",
+    "zh": "LeNet"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "New Jersey, United States",
+      "zh": "美国新泽西州"
+    },
+    "coordinates": [
+      40.684,
+      -74.401
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Yann LeCun",
+        "zh": "扬·勒昆"
+      },
+      "role": {
+        "en": "LeNet lead researcher",
+        "zh": "LeNet 主要研究者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+    "zh": "反向传播应用于手写邮编识别"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "zh": "反向传播应用于手写邮编识别"
+    },
+    "workAuthors": {
+      "en": "Yann LeCun et al., Neural Computation, 1989",
+      "zh": "扬·勒昆等，《Neural Computation》，1989"
+    },
+    "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What did neural attention add to machine translation?",
+      "zh": "神经注意力为机器翻译加入了什么？"
+    },
+    "options": [
+      {
+        "en": "Learned alignment between source and target words",
+        "zh": "源词与目标词之间的学习型对齐"
+      },
+      {
+        "en": "A fixed list of chess moves",
+        "zh": "固定棋步列表"
+      },
+      {
+        "en": "Only image denoising",
+        "zh": "只有图像去噪"
+      },
+      {
+        "en": "A chemical rule database",
+        "zh": "化学规则数据库"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Attention lets the decoder weight source positions differently for each target word.",
+      "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "attention",
+      "translation"
+    ]
+  }
+]

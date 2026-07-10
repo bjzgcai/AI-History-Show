@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1997-lstm",
+  "year": 1997,
+  "title": {
+    "en": "LSTM",
+    "zh": "长短期记忆网络"
+  },
+  "location": {
+    "name": {
+      "en": "Technical University of Munich",
+      "zh": "慕尼黑工业大学"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1496,
+      11.5677
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sepp Hochreiter",
+        "zh": "塞普·霍赫赖特"
+      },
+      "role": {
+        "en": "Co-author of LSTM",
+        "zh": "LSTM 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Juergen Schmidhuber",
+        "zh": "尤尔根·施密德胡伯"
+      },
+      "role": {
+        "en": "Co-author of LSTM",
+        "zh": "LSTM 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Long short-term memory",
+    "zh": "长短期记忆"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Long Short-Term Memory",
+      "zh": "长短期记忆"
+    },
+    "workAuthors": {
+      "en": "Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+      "zh": "塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+    },
+    "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

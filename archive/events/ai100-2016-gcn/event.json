@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2016-gcn",
+  "year": 2016,
+  "title": {
+    "en": "GCN",
+    "zh": "GCN"
+  },
+  "location": {
+    "name": {
+      "en": "University of Amsterdam",
+      "zh": "University of Amsterdam"
+    },
+    "country": {
+      "en": "Amsterdam, Netherlands",
+      "zh": "Amsterdam, Netherlands"
+    },
+    "coordinates": [
+      52.3676,
+      4.9041
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Thomas Kipf",
+        "zh": "托马斯·基普夫"
+      },
+      "role": {
+        "en": "GCN lead author",
+        "zh": "GCN 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Semi-supervised classification with graph convolutional networks",
+    "zh": "使用图卷积网络进行半监督分类"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "zh": "使用图卷积网络进行半监督分类"
+    },
+    "workAuthors": {
+      "en": "Thomas Kipf and Max Welling, ICLR, 2017",
+      "zh": "托马斯·基普夫、马克斯·韦林，ICLR，2017"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1609.02907"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "1971-complexity-theory",
+  "year": 1971,
+  "title": {
+    "en": "NP-Completeness",
+    "zh": "NP 完全性"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大，多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Stephen A. Cook",
+        "zh": "斯蒂芬·A·库克"
+      },
+      "role": {
+        "en": "Introduced NP-completeness",
+        "zh": "提出 NP 完全性"
+      }
+    },
+    {
+      "name": {
+        "en": "Leonid Levin",
+        "zh": "列昂尼德·列文"
+      },
+      "role": {
+        "en": "Independently formulated related NP-completeness ideas",
+        "zh": "独立提出相关 NP 完全性思想"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "laid the foundations for the theory of NP-Completeness",
+    "zh": "奠定了 NP 完全性理论的基础"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Stephen A. Cook A.M. Turing Award citation",
+      "zh": "斯蒂芬·A·库克 ACM 图灵奖获奖说明"
+    },
+    "workAuthors": {
+      "en": "Association for Computing Machinery, 1982",
+      "zh": "美国计算机协会, 1982"
+    },
+    "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / Complexity theory",
+    "zh": "BenchCouncil AI100：理论 / 计算复杂性理论"
+  }
+}

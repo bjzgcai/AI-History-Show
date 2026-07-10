@@ -1,0 +1,62 @@
+[
+  {
+    "id": "nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "zh": "《通过局部线性嵌入进行非线性降维》"
+    },
+    "url": "https://doi.org/10.1126/science.290.5500.2323"
+  },
+  {
+    "id": "science-article-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "Science article page",
+      "zh": "Science 文章页面"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.290.5500.2323"
+  },
+  {
+    "id": "pubmed-record-for-lle",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "PubMed record for LLE",
+      "zh": "LLE 的 PubMed 记录"
+    },
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11125150/"
+  },
+  {
+    "id": "scikit-learn-lle-documentation",
+    "type": {
+      "en": "Documentation",
+      "zh": "文档"
+    },
+    "label": {
+      "en": "scikit-learn LLE documentation",
+      "zh": "scikit-learn LLE 文档"
+    },
+    "url": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding"
+  },
+  {
+    "id": "nyu-computer-science",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "NYU Computer Science",
+      "zh": "纽约大学计算机科学系"
+    },
+    "url": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html"
+  }
+]

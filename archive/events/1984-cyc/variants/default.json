@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>",
+    "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Expert systems worked in narrow domains but broke easily when ordinary background knowledge was missing.",
+        "zh": "专家系统能在狭窄领域工作，但缺少日常背景知识时很容易崩溃。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Cyc organizes facts and rules into an ontology with contextual microtheories, then uses inference to answer questions across that structure.",
+        "zh": "Cyc 把事实与规则组织为带上下文微理论的本体，并用推理在该结构上回答问题。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Cyc as one of the most ambitious symbolic-AI attempts to encode common sense explicitly. Its long-term legacy is keeping debates alive about knowledge engineering, hybrid reasoning, ontologies, and the limits of data-only learning.",
+        "zh": "专家通常把 Cyc 视为最雄心勃勃的符号 AI 尝试之一，目标是显式编码常识。它的长期影响在于持续推动关于知识工程、混合推理、本体和纯数据学习局限性的讨论。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Knowledge representation",
+      "zh": "知识表示"
+    },
+    "method": {
+      "en": "Large symbolic ontology and microtheories",
+      "zh": "大型符号本体与微理论"
+    },
+    "artifact": {
+      "en": "Cyc knowledge base and CycL",
+      "zh": "Cyc 知识库与 CycL"
+    },
+    "material": {
+      "en": "Cyc project publications and Cycorp materials",
+      "zh": "Cyc 项目出版物与 Cycorp 材料"
+    },
+    "demo": {
+      "en": "Trace common-sense inference through microtheories",
+      "zh": "沿微理论追踪常识推理"
+    },
+    "visual": "cyc",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Ontology",
+          "zh": "本体"
+        },
+        "text": {
+          "en": "Concepts and relations are encoded explicitly.",
+          "zh": "概念与关系被显式编码。"
+        }
+      },
+      {
+        "label": {
+          "en": "Microtheory",
+          "zh": "微理论"
+        },
+        "text": {
+          "en": "Context-specific assumptions keep reasoning organized.",
+          "zh": "上下文特定假设让推理保持有序。"
+        }
+      },
+      {
+        "label": {
+          "en": "Common Sense",
+          "zh": "常识"
+        },
+        "text": {
+          "en": "Background knowledge is treated as a first-class AI resource.",
+          "zh": "背景知识被视为一等 AI 资源。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Frame",
+        "zh": "框架"
+      },
+      {
+        "en": "XCON/R1",
+        "zh": "XCON/R1"
+      },
+      {
+        "en": "Knowledge graphs",
+        "zh": "知识图谱"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Texas, United States",
+        "zh": "美国得克萨斯州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Assert facts",
+        "zh": "断言事实"
+      },
+      {
+        "en": "Select context",
+        "zh": "选择上下文"
+      },
+      {
+        "en": "Infer answer",
+        "zh": "推理答案"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Book",
+          "zh": "图书"
+        },
+        "title": {
+          "en": "Building Large Knowledge-Based Systems",
+          "zh": "构建大型知识系统"
+        },
+        "description": {
+          "en": "Foundational book record for Cyc and its large common-sense knowledge engineering program.",
+          "zh": "Cyc 及其大型常识知识工程项目的奠基著作记录。"
+        },
+        "url": "https://dl.acm.org/doi/book/10.5555/70571",
+        "source": "https://dl.acm.org/doi/book/10.5555/70571",
+        "action": {
+          "en": "Open book record",
+          "zh": "打开图书记录"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Book",
+          "zh": "专著"
+        },
+        "label": {
+          "en": "Building Large Knowledge-Based Systems",
+          "zh": "构建大型知识系统"
+        },
+        "url": "https://dl.acm.org/doi/book/10.5555/70571"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "The Evolution of CycL",
+          "zh": "CycL 的演化"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/122296.122308"
+      },
+      {
+        "type": {
+          "en": "Official page",
+          "zh": "官方页面"
+        },
+        "label": {
+          "en": "Cyc",
+          "zh": "Cyc"
+        },
+        "url": "https://cyc.com/"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Cyc projects logo image",
+          "zh": "Cyc 项目标识图片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+    "demoPanel": "sources"
+  }
+}

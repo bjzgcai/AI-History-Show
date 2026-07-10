@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2019-stylegan-image-1",
+    "kind": "image",
+    "path": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+    "caption": {
+      "en": "Tero Karras portrait",
+      "zh": "泰罗·卡拉斯肖像"
+    },
+    "subcaption": {
+      "en": "StyleGAN lead author",
+      "zh": "StyleGAN 主要作者"
+    },
+    "sourceId": "nvidia-research-profile",
+    "sourceName": {
+      "en": "NVIDIA Research profile",
+      "zh": "NVIDIA Research 个人资料"
+    },
+    "sourceUrl": "https://research.nvidia.com/person/tero-karras",
+    "originalImageUrl": "https://research.nvidia.com/person/tero-karras",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2019-stylegan-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+    "caption": {
+      "en": "StyleGAN explainer",
+      "zh": "StyleGAN 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "a-style-based-generator-architecture-for-gans",
+    "sourceName": {
+      "en": "CVF Open Access",
+      "zh": "CVF 开放论文库"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1812.04948",
+    "originalImageUrl": "https://arxiv.org/abs/1812.04948",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

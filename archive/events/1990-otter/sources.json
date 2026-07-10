@@ -1,0 +1,38 @@
+[
+  {
+    "id": "otter-3-3-reference-manual",
+    "type": {
+      "en": "Reference",
+      "zh": "参考文献"
+    },
+    "label": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "url": "https://arxiv.org/abs/cs/0310056"
+  },
+  {
+    "id": "a-spectrum-of-applications-of-automated-reasoning",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Spectrum of Applications of Automated Reasoning",
+      "zh": "自动推理应用谱系"
+    },
+    "url": "https://arxiv.org/abs/cs/0205078"
+  },
+  {
+    "id": "checking-clinical-guidelines-using-automated-reasoning-tools",
+    "type": {
+      "en": "Application paper",
+      "zh": "应用论文"
+    },
+    "label": {
+      "en": "Checking Clinical Guidelines using Automated Reasoning Tools",
+      "zh": "使用自动推理工具检查临床指南"
+    },
+    "url": "https://arxiv.org/abs/0806.0250"
+  }
+]

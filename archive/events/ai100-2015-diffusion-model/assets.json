@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2015-diffusion-model-image-1",
+    "kind": "image",
+    "path": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
+    "caption": {
+      "en": "Jascha Sohl-Dickstein portrait",
+      "zh": "雅沙·索尔-迪克斯坦肖像"
+    },
+    "subcaption": {
+      "en": "Diffusion model lead author",
+      "zh": "扩散模型主要作者"
+    },
+    "sourceId": "jascha-sohl-dickstein-homepage",
+    "sourceName": {
+      "en": "Jascha Sohl-Dickstein homepage",
+      "zh": "雅沙·索尔-迪克斯坦个人主页"
+    },
+    "sourceUrl": "https://sohldickstein.com/",
+    "originalImageUrl": "https://sohldickstein.com/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2015-diffusion-model-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+    "caption": {
+      "en": "Diffusion Model explainer",
+      "zh": "扩散模型 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+    "sourceName": {
+      "en": "PMLR",
+      "zh": "PMLR"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+    "originalImageUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

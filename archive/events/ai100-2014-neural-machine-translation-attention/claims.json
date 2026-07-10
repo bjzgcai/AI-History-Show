@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2014-neural-machine-translation-attention-summary",
+    "text": {
+      "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. This made alignment a learned, differentiable part of sequence-to-sequence modeling.",
+      "zh": "兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。"
+    },
+    "sourceIds": [
+      "neural-machine-translation-by-jointly-learning-to-align-and-translate",
+      "iclr-2015-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2014-neural-machine-translation-attention-quote",
+    "text": {
+      "en": "Neural machine translation by jointly learning to align and translate",
+      "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+    },
+    "sourceIds": [
+      "neural-machine-translation-by-jointly-learning-to-align-and-translate"
+    ]
+  }
+]

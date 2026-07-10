@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2006-surf-image-1",
+    "kind": "image",
+    "path": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+    "caption": {
+      "en": "Herbert Bay portrait",
+      "zh": "赫伯特·贝肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of SURF",
+      "zh": "SURF 主要作者"
+    },
+    "sourceId": "herbert-bay-personal-site",
+    "sourceName": {
+      "en": "Herbert Bay personal site",
+      "zh": "赫伯特·贝个人网站"
+    },
+    "sourceUrl": "https://herbertbay.com/",
+    "originalImageUrl": "https://herbertbay.com/",
+    "rights": {
+      "en": "Personal site image; reuse rights not stated.",
+      "zh": "个人网站图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2006-surf-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+    "caption": {
+      "en": "SURF interest points",
+      "zh": "SURF 兴趣点"
+    },
+    "subcaption": {
+      "en": "Original local explainer of SURF-style interest point detection.",
+      "zh": "关于 SURF 式兴趣点检测的本地原创解释图。"
+    },
+    "sourceId": "surf-speeded-up-robust-features",
+    "sourceName": {
+      "en": "ECCV",
+      "zh": "ECCV"
+    },
+    "sourceUrl": "https://doi.org/10.1007/11744023_32",
+    "originalImageUrl": "https://doi.org/10.1007/11744023_32",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

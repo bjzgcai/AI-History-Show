@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does a Prolog query mainly trigger?",
+      "zh": "Prolog 查询主要会触发什么？"
+    },
+    "options": [
+      {
+        "en": "A search for facts and rules that prove the query",
+        "zh": "对能证明查询的事实和规则进行搜索"
+      },
+      {
+        "en": "A fixed image convolution",
+        "zh": "固定图像卷积"
+      },
+      {
+        "en": "A random tree ensemble",
+        "zh": "随机树集成"
+      },
+      {
+        "en": "A GPU-only matrix benchmark",
+        "zh": "只面向 GPU 的矩阵基准"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Prolog evaluates queries by unifying terms with facts and rules, then backtracking through alternatives when needed.",
+      "zh": "Prolog 通过将项与事实和规则合一来求值查询，并在需要时回溯尝试其他路径。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "language",
+      "logic"
+    ]
+  }
+]

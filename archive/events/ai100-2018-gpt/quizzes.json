@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What prediction task drives GPT-style pre-training?",
+      "zh": "GPT 式预训练主要依靠什么预测任务？"
+    },
+    "options": [
+      {
+        "en": "Predicting the next token",
+        "zh": "预测下一个令牌"
+      },
+      {
+        "en": "Finding a protein bond angle only",
+        "zh": "只寻找蛋白质键角"
+      },
+      {
+        "en": "Voting among nearby points",
+        "zh": "让邻近点投票"
+      },
+      {
+        "en": "Choosing a fixed database key",
+        "zh": "选择固定数据库键"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "GPT uses a decoder transformer trained to continue text sequences.",
+      "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "gpt",
+      "language-models"
+    ]
+  }
+]

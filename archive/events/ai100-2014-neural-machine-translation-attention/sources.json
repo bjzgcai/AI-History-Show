@@ -1,0 +1,62 @@
+[
+  {
+    "id": "neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+      "zh": "《通过联合学习对齐与翻译实现神经机器翻译》"
+    },
+    "url": "https://arxiv.org/abs/1409.0473"
+  },
+  {
+    "id": "iclr-2015-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR 2015 paper page",
+      "zh": "ICLR 2015 论文页面"
+    },
+    "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html"
+  },
+  {
+    "id": "attention-mechanism-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Attention mechanism overview",
+      "zh": "注意力机制概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)"
+  },
+  {
+    "id": "yoshua-bengio-lab-profile",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Yoshua Bengio lab profile",
+      "zh": "约书亚·本吉奥 Mila 资料"
+    },
+    "url": "https://mila.quebec/en/person/yoshua-bengio/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/geoffrey-hinton.jpg"
+  }
+]

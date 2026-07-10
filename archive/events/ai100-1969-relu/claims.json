@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1969-relu-summary",
+    "text": {
+      "en": "Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.",
+      "zh": "整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。"
+    },
+    "sourceIds": [
+      "deep-sparse-rectifier-neural-networks",
+      "rectified-linear-units-improve-restricted-boltzmann-machines"
+    ]
+  },
+  {
+    "id": "ai100-1969-relu-quote",
+    "text": {
+      "en": "rectified linear units",
+      "zh": "整流线性单元"
+    },
+    "sourceIds": [
+      "deep-sparse-rectifier-neural-networks"
+    ]
+  }
+]

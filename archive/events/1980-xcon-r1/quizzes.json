@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What did XCON/R1 configure?",
+      "zh": "XCON/R1 主要配置什么？"
+    },
+    "options": [
+      {
+        "en": "DEC VAX computer orders using production rules",
+        "zh": "用产生式规则配置 DEC VAX 计算机订单"
+      },
+      {
+        "en": "Protein folds using diffusion",
+        "zh": "用扩散模型预测蛋白质折叠"
+      },
+      {
+        "en": "Image clusters with eigenvectors",
+        "zh": "用特征向量聚类图像"
+      },
+      {
+        "en": "Jeopardy! clues with endgame tables",
+        "zh": "用残局表回答 Jeopardy! 线索"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "R1/XCON encoded configuration expertise as rules that assembled valid VAX component orders.",
+      "zh": "R1/XCON 把配置专长编码为规则，用来装配有效的 VAX 组件订单。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "expert-system",
+      "production-rules"
+    ]
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>",
+    "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.",
+        "zh": "伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Kernel PCA as a clean bridge between classical PCA and kernel methods. Its long-term legacy is showing how nonlinear representation learning can be expressed through similarity matrices before deep embeddings became common.",
+        "zh": "专家通常把 Kernel PCA 视为经典 PCA 与核方法之间的清晰桥梁。它的长期影响在于展示了在深度嵌入普及前，非线性表示学习可以通过相似性矩阵表达。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Kernelized principal component analysis",
+      "zh": "核化主成分分析"
+    },
+    "artifact": {
+      "en": "Kernel PCA embedding",
+      "zh": "Kernel PCA 嵌入"
+    },
+    "material": {
+      "en": "Neural Computation paper",
+      "zh": "《Neural Computation》论文"
+    },
+    "demo": {
+      "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
+      "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
+    },
+    "visual": "kernelPca",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Kernel Trick",
+          "zh": "核技巧"
+        },
+        "text": {
+          "en": "Dot products are replaced by kernel similarities.",
+          "zh": "用核相似性替代点积。"
+        }
+      },
+      {
+        "label": {
+          "en": "Eigenvectors",
+          "zh": "特征向量"
+        },
+        "text": {
+          "en": "Principal directions come from the kernel matrix.",
+          "zh": "主方向来自核矩阵。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "SVM",
+        "zh": "SVM"
+      },
+      {
+        "en": "Isomap",
+        "zh": "Isomap"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Pairwise kernel",
+        "zh": "成对核值"
+      },
+      {
+        "en": "Eigenvectors",
+        "zh": "特征向量"
+      },
+      {
+        "en": "Nonlinear components",
+        "zh": "非线性成分"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Press",
+          "zh": "MIT Press"
+        },
+        "title": {
+          "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+          "zh": "作为核特征值问题的非线性成分分析"
+        },
+        "description": {
+          "en": "Primary paper record for Kernel PCA.",
+          "zh": "Kernel PCA 的主论文记录。"
+        },
+        "url": "https://doi.org/10.1162/089976698300017467",
+        "source": "https://doi.org/10.1162/089976698300017467",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+          "zh": "《作为核特征值问题的非线性成分分析》"
+        },
+        "url": "https://doi.org/10.1162/089976698300017467"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "Max Planck publication page",
+          "zh": "马克斯·普朗克出版页面"
+        },
+        "url": "https://is.mpg.de/ei/publications/730"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Open Kernel PCA PDF",
+          "zh": "Kernel PCA 开放 PDF"
+        },
+        "url": "https://www.mlpack.org/papers/kpca.pdf"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn KernelPCA documentation",
+          "zh": "scikit-learn KernelPCA 文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural Computation paper",
+          "zh": "《Neural Computation》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
+          "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
+        }
+      }
+    ]
+  }
+}

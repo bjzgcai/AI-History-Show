@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2021-swin-transformer-summary",
+    "text": {
+      "en": "Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.",
+      "zh": "Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。"
+    },
+    "sourceIds": [
+      "swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+      "iccv-open-access-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2021-swin-transformer-quote",
+    "text": {
+      "en": "Hierarchical vision Transformer using shifted windows",
+      "zh": "使用移位窗口的层级视觉 Transformer"
+    },
+    "sourceIds": [
+      "swin-transformer-hierarchical-vision-transformer-using-shifted-windows"
+    ]
+  }
+]

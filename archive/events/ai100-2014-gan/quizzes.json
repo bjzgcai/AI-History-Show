@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What are the two main players in a GAN?",
+      "zh": "GAN 中的两个主要参与者是什么？"
+    },
+    "options": [
+      {
+        "en": "A generator and a discriminator",
+        "zh": "生成器和判别器"
+      },
+      {
+        "en": "A theorem prover and a Go board",
+        "zh": "定理证明器和围棋棋盘"
+      },
+      {
+        "en": "A database row and a spreadsheet cell",
+        "zh": "数据库行和电子表格单元"
+      },
+      {
+        "en": "A parser and a printer only",
+        "zh": "只有解析器和打印机"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The generator makes samples while the discriminator learns to distinguish real from generated data.",
+      "zh": "生成器制造样本，判别器学习区分真实数据和生成数据。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "gan",
+      "generative-ai"
+    ]
+  }
+]

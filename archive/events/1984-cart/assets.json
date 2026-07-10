@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1984-cart-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+    "caption": {
+      "en": "Leo Breiman portrait",
+      "zh": "利奥·布雷曼 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from the University of York Portraits of Statisticians archive.",
+      "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。"
+    },
+    "sourceId": "university-of-york-portraits-of-statisticians",
+    "sourceName": {
+      "en": "University of York / Portraits of Statisticians",
+      "zh": "约克大学 / Portraits of Statisticians"
+    },
+    "sourceUrl": "http://www.york.ac.uk/depts/maths/histstat/people/welcome.htm",
+    "originalImageUrl": "http://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+    "rights": "Archive portrait; rights not stated.",
+    "usage": {
+      "en": "Historical figure / CART co-author portrait",
+      "zh": "历史人物 / CART 共同作者肖像"
+    }
+  },
+  {
+    "id": "1984-cart-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+    "caption": {
+      "en": "Feature-space splits",
+      "zh": "特征空间划分"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for CART, based on the related source material.",
+      "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "classification-and-regression-trees",
+    "sourceName": "Routledge",
+    "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "1984-cart-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg",
+    "caption": {
+      "en": "Cost-complexity pruning curve",
+      "zh": "代价复杂度剪枝曲线"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for CART, based on the related source material.",
+      "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "classification-and-regression-trees",
+    "sourceName": "Routledge",
+    "sourceUrl": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

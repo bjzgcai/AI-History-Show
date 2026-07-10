@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2017-pix2pix",
+  "year": 2017,
+  "title": {
+    "en": "Pix2Pix",
+    "zh": "Pix2Pix"
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley",
+      "zh": "UC Berkeley"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "Berkeley, United States"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Phillip Isola",
+        "zh": "菲利普·伊索拉"
+      },
+      "role": {
+        "en": "Pix2Pix lead author",
+        "zh": "Pix2Pix 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Image-to-image translation with conditional adversarial networks",
+    "zh": "使用条件对抗网络进行图像到图像转换"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "zh": "使用条件对抗网络进行图像到图像转换"
+    },
+    "workAuthors": {
+      "en": "Phillip Isola et al., CVPR, 2017",
+      "zh": "菲利普·伊索拉等，CVPR，2017"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1611.07004"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

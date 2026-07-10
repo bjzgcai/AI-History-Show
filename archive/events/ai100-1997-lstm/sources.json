@@ -1,0 +1,62 @@
+[
+  {
+    "id": "long-short-term-memory",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Long Short-Term Memory",
+      "zh": "《长短期记忆》"
+    },
+    "url": "https://doi.org/10.1162/neco.1997.9.8.1735"
+  },
+  {
+    "id": "author-hosted-lstm-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "Author-hosted LSTM paper PDF",
+      "zh": "作者托管的 LSTM 论文 PDF"
+    },
+    "url": "https://www.bioinf.jku.at/publications/older/2604.pdf"
+  },
+  {
+    "id": "lstm-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "LSTM overview",
+      "zh": "LSTM 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+  },
+  {
+    "id": "sepp-hochreiter-profile",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Sepp Hochreiter profile",
+      "zh": "塞普·霍赫赖特个人资料"
+    },
+    "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/sepp-hochreiter.jpg"
+  }
+]

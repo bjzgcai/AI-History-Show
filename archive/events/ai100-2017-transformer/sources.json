@@ -1,0 +1,62 @@
+[
+  {
+    "id": "attention-is-all-you-need",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Attention Is All You Need",
+      "zh": "《Attention Is All You Need》"
+    },
+    "url": "https://arxiv.org/abs/1706.03762"
+  },
+  {
+    "id": "neurips-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "NeurIPS paper page",
+      "zh": "NeurIPS 论文页面"
+    },
+    "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
+  },
+  {
+    "id": "google-research-publication-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "Google Research publication page",
+      "zh": "Google Research 出版页面"
+    },
+    "url": "https://research.google/pubs/attention-is-all-you-need/"
+  },
+  {
+    "id": "google-research-transformer-blog-post",
+    "type": {
+      "en": "Retrospective",
+      "zh": "回顾"
+    },
+    "label": {
+      "en": "Google Research Transformer blog post",
+      "zh": "Google Research Transformer 博客"
+    },
+    "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/ashish-vaswani.jpg"
+  }
+]

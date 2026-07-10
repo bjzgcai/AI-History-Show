@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2021-clip",
+  "year": 2021,
+  "title": {
+    "en": "CLIP",
+    "zh": "CLIP"
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "Lead author of CLIP",
+        "zh": "CLIP 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Learning transferable visual models from natural language supervision",
+    "zh": "从自然语言监督中学习可迁移视觉模型"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Learning Transferable Visual Models From Natural Language Supervision",
+      "zh": "从自然语言监督中学习可迁移视觉模型"
+    },
+    "workAuthors": {
+      "en": "Alec Radford et al., ICML, 2021",
+      "zh": "亚历克·拉德福德等，ICML，2021"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2103.00020"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

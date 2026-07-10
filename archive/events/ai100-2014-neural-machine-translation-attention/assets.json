@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2014-neural-machine-translation-attention-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/geoffrey-hinton.jpg",
+    "caption": {
+      "en": "Montreal deep learning research context",
+      "zh": "蒙特利尔深度学习研究背景图"
+    },
+    "subcaption": {
+      "en": "Institutional context for neural attention research",
+      "zh": "神经注意力研究的机构背景"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/geoffrey-hinton.jpg",
+    "originalImageUrl": "resources/images/figures/geoffrey-hinton.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2014-neural-machine-translation-attention-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+    "caption": {
+      "en": "Attention alignment map",
+      "zh": "注意力对齐图"
+    },
+    "subcaption": {
+      "en": "Original local explainer of source-token attention.",
+      "zh": "关于源令牌注意力的本地原创解释图。"
+    },
+    "sourceId": "neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "sourceName": {
+      "en": "ICLR",
+      "zh": "ICLR"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1409.0473",
+    "originalImageUrl": "https://arxiv.org/abs/1409.0473",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

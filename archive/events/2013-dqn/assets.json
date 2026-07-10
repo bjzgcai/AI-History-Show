@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2013-dqn-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+    "caption": {
+      "en": "Volodymyr Mnih portrait",
+      "zh": "沃洛迪米尔·姆尼赫 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Mnih’s University of Toronto-hosted personal page.",
+      "zh": "来自 Mnih 多伦多大学托管个人页的人物图。"
+    },
+    "sourceId": "university-of-toronto-personal-page",
+    "sourceName": "University of Toronto personal page",
+    "sourceUrl": "https://www.cs.utoronto.ca/~vmnih/",
+    "originalImageUrl": "https://www.cs.utoronto.ca/~vmnih/paris.jpg",
+    "rights": "Personal website photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2013-dqn-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+    "caption": {
+      "en": "Replay buffer",
+      "zh": "经验回放池"
+    },
+    "subcaption": {
+      "en": "Local redraw for Deep Q Network, based on the listed source material.",
+      "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "playing-atari-with-deep-reinforcement-learning",
+    "sourceName": {
+      "en": "arXiv / Nature",
+      "zh": "arXiv / 《自然》"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1312.5602",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2013-dqn-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
+    "caption": {
+      "en": "Q-value control loop",
+      "zh": "Q 值控制循环"
+    },
+    "subcaption": {
+      "en": "Local redraw for Deep Q Network, based on the listed source material.",
+      "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "playing-atari-with-deep-reinforcement-learning",
+    "sourceName": {
+      "en": "arXiv / Nature",
+      "zh": "arXiv / 《自然》"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1312.5602",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>",
+    "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.",
+        "zh": "扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat diffusion models as one of the major generative-model families after GANs and VAEs. Its long-term legacy is the iterative denoising recipe that powers many high-quality image, audio, and video generators.",
+        "zh": "专家通常把扩散模型视为 GAN 和 VAE 之后的主要生成模型家族之一。它的长期影响在于迭代去噪配方支撑了许多高质量图像、音频和视频生成器。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Forward noising and learned reverse denoising",
+      "zh": "正向加噪与学习型反向去噪"
+    },
+    "artifact": {
+      "en": "Nonequilibrium thermodynamics diffusion model",
+      "zh": "非平衡热力学扩散模型"
+    },
+    "material": {
+      "en": "ICML paper and later denoising diffusion work",
+      "zh": "ICML 论文与后续去噪扩散工作"
+    },
+    "demo": {
+      "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+      "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Forward Process",
+          "zh": "正向过程"
+        },
+        "text": {
+          "en": "Noise is added through many small steps.",
+          "zh": "噪声通过许多小步骤加入。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reverse Process",
+          "zh": "反向过程"
+        },
+        "text": {
+          "en": "A model learns to denoise step by step.",
+          "zh": "模型学习逐步去噪。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        },
+        "zh": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        }
+      },
+      {
+        "en": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        },
+        "zh": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        }
+      },
+      {
+        "en": {
+          "en": "Variational Autoencoder",
+          "zh": "变分自编码器"
+        },
+        "zh": {
+          "en": "Variational Autoencoder",
+          "zh": "变分自编码器"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Add noise",
+          "zh": "加入噪声"
+        },
+        "zh": {
+          "en": "Add noise",
+          "zh": "加入噪声"
+        }
+      },
+      {
+        "en": {
+          "en": "Learn reverse",
+          "zh": "学习反向过程"
+        },
+        "zh": {
+          "en": "Learn reverse",
+          "zh": "学习反向过程"
+        }
+      },
+      {
+        "en": {
+          "en": "Generate sample",
+          "zh": "生成样本"
+        },
+        "zh": {
+          "en": "Generate sample",
+          "zh": "生成样本"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+          "zh": "使用非平衡热力学进行深度无监督学习"
+        },
+        "description": {
+          "en": "PMLR source card for Diffusion Model.",
+          "zh": "PMLR 的扩散模型资料卡片。"
+        },
+        "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+        "source": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+          "zh": "《使用非平衡热力学进行深度无监督学习》"
+        },
+        "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Denoising Diffusion Probabilistic Models",
+          "zh": "《去噪扩散概率模型》"
+        },
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Diffusion model overview",
+          "zh": "扩散模型概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Diffusion_model"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper and later denoising diffusion work",
+          "zh": "ICML 论文与后续去噪扩散工作"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+          "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+        }
+      }
+    ]
+  }
+}

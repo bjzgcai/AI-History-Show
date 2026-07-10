@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2015-deep-compression",
+  "year": 2015,
+  "title": {
+    "en": "Deep Compression",
+    "zh": "深度压缩"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Song Han",
+        "zh": "韩松"
+      },
+      "role": {
+        "en": "Deep Compression lead author",
+        "zh": "Deep Compression 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Compressing deep neural networks with pruning, trained quantization and Huffman coding",
+    "zh": "用剪枝、训练型量化和霍夫曼编码压缩深度神经网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+      "zh": "深度压缩：用剪枝、训练型量化和霍夫曼编码压缩深度神经网络"
+    },
+    "workAuthors": {
+      "en": "Song Han, Huizi Mao, and William Dally, ICLR, 2016",
+      "zh": "韩松、毛慧子、威廉·达利，ICLR，2016"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1510.00149"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

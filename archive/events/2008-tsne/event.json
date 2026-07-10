@@ -1,0 +1,53 @@
+{
+  "id": "2008-tsne",
+  "year": "2008",
+  "title": {
+    "en": "t-SNE",
+    "zh": "t-SNE"
+  },
+  "location": {
+    "name": {
+      "en": "Tilburg University / University of Toronto",
+      "zh": "蒂尔堡大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Netherlands and Canada",
+      "zh": "荷兰与加拿大"
+    },
+    "coordinates": [
+      51.5633,
+      5.0431
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Laurens van der Maaten",
+        "zh": "劳伦斯·范德马滕"
+      },
+      "role": {
+        "en": "Co-author of t-SNE",
+        "zh": "t-SNE 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Neighbor-preserving nonlinear embedding",
+    "zh": "保持邻域的非线性嵌入"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Visualizing Data using t-SNE",
+      "zh": "使用 t-SNE 可视化数据"
+    },
+    "workAuthors": {
+      "en": "Laurens van der Maaten",
+      "zh": "劳伦斯·范德马滕"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Dimensionality reduction / t-SNE",
+    "zh": "BenchCouncil AI100：降维 / t-SNE"
+  }
+}

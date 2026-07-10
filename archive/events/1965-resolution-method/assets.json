@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1965-resolution-method-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+    "caption": {
+      "en": "John Alan Robinson portrait",
+      "zh": "约翰·艾伦·罗宾逊 肖像"
+    },
+    "subcaption": {
+      "en": "Robinson in 2012; Wikimedia Commons portrait.",
+      "zh": "2012 年的 Robinson；维基共享资源 人物照片。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Alan_Robinson_IMG_0493.jpg",
+    "rights": "Creative Commons license stated on Commons file page.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1965-resolution-method-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+    "caption": {
+      "en": "Clause refutation ladder",
+      "zh": "子句反驳阶梯"
+    },
+    "subcaption": {
+      "en": "Local redraw for Resolution Method, based on the listed source material.",
+      "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "a-machine-oriented-logic-based-on-the-resolution-principle",
+    "sourceName": {
+      "en": "Journal of the ACM",
+      "zh": "《ACM 杂志》"
+    },
+    "sourceUrl": "https://doi.org/10.1145/321250.321253",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1965-resolution-method-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg",
+    "caption": {
+      "en": "Unification map",
+      "zh": "合一映射图"
+    },
+    "subcaption": {
+      "en": "Local redraw for Resolution Method, based on the listed source material.",
+      "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "a-machine-oriented-logic-based-on-the-resolution-principle",
+    "sourceName": {
+      "en": "Journal of the ACM",
+      "zh": "《ACM 杂志》"
+    },
+    "sourceUrl": "https://doi.org/10.1145/321250.321253",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

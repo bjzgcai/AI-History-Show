@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-batch-normalization-summary",
+    "text": {
+      "en": "Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.",
+      "zh": "批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。"
+    },
+    "sourceIds": [
+      "batch-normalization",
+      "batch-normalization-on-arxiv"
+    ]
+  },
+  {
+    "id": "ai100-2015-batch-normalization-quote",
+    "text": {
+      "en": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "zh": "批归一化：通过减少内部协变量偏移加速深度网络训练"
+    },
+    "sourceIds": [
+      "batch-normalization"
+    ]
+  }
+]

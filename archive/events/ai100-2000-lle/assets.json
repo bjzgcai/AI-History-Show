@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2000-lle-image-1",
+    "kind": "image",
+    "path": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+    "caption": {
+      "en": "Sam Roweis collaboration photo",
+      "zh": "萨姆·罗维斯合作照片"
+    },
+    "subcaption": {
+      "en": "Co-author of LLE",
+      "zh": "LLE 共同作者"
+    },
+    "sourceId": "nyu-computer-science",
+    "sourceName": {
+      "en": "NYU Computer Science",
+      "zh": "纽约大学计算机科学系"
+    },
+    "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+    "originalImageUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis.html",
+    "rights": {
+      "en": "NYU memorial image; reuse rights not stated.",
+      "zh": "NYU 纪念页图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2000-lle-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+    "caption": {
+      "en": "Locally linear embedding",
+      "zh": "局部线性嵌入"
+    },
+    "subcaption": {
+      "en": "Original local explainer of LLE neighborhood reconstruction.",
+      "zh": "关于 LLE 邻域重建的本地原创解释图。"
+    },
+    "sourceId": "nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+    "sourceName": {
+      "en": "Science",
+      "zh": "Science"
+    },
+    "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323",
+    "originalImageUrl": "https://doi.org/10.1126/science.290.5500.2323",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

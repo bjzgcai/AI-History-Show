@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-deep-compression-summary",
+    "text": {
+      "en": "Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.",
+      "zh": "深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。"
+    },
+    "sourceIds": [
+      "deep-compression",
+      "iclr-openreview-record"
+    ]
+  },
+  {
+    "id": "ai100-2015-deep-compression-quote",
+    "text": {
+      "en": "Compressing deep neural networks with pruning, trained quantization and Huffman coding",
+      "zh": "用剪枝、训练型量化和霍夫曼编码压缩深度神经网络"
+    },
+    "sourceIds": [
+      "deep-compression"
+    ]
+  }
+]

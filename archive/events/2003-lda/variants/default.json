@@ -1,0 +1,198 @@
+{
+  "description": {
+    "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>",
+    "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Text collections needed methods that discovered structure without hand-labeling every theme. LDA made the hidden-topic assumption explicit and probabilistic.",
+        "zh": "文本集合需要无需手工标注每个主题就能发现结构的方法。LDA 把隐藏主题假设明确写成概率模型。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Each document draws a topic mixture; each word chooses a topic and then a word from that topic’s distribution.",
+        "zh": "每篇文档抽取一个主题混合；每个词先选择主题，再从该主题词分布中生成词。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat LDA as a classic probabilistic topic model and a teaching example for generative modeling. Its long-term legacy is interpretability through latent structure, which remains useful even when neural embeddings and transformers perform better in many applications.",
+        "zh": "专家通常把 LDA 视为经典概率主题模型，也是讲解生成式建模的教学范例。它的长期影响在于通过潜在结构提供可解释性，即使神经嵌入和 Transformer 在许多应用中表现更好，这一点仍有价值。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Probabilistic graphical model",
+      "zh": "概率图模型"
+    },
+    "method": {
+      "en": "Bayesian topic model with Dirichlet priors",
+      "zh": "带 Dirichlet 先验的贝叶斯主题模型"
+    },
+    "artifact": {
+      "en": "LDA topic model",
+      "zh": "LDA 主题模型"
+    },
+    "material": {
+      "en": "JMLR paper, author page, and implementation docs",
+      "zh": "《机器学习研究杂志》 论文、作者主页与实现文档"
+    },
+    "demo": {
+      "en": "Documents mix topics; topics emit words",
+      "zh": "文档混合主题；主题生成词"
+    },
+    "visual": "lda",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Topic Mixture",
+          "zh": "主题混合"
+        },
+        "text": {
+          "en": "A document can combine several themes instead of belonging to one class.",
+          "zh": "一篇文档可以组合多个主题，而不是只属于一个类别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Word Distribution",
+          "zh": "词分布"
+        },
+        "text": {
+          "en": "Each topic is represented as probabilities over words.",
+          "zh": "每个主题表示为词上的概率分布。"
+        }
+      },
+      {
+        "label": {
+          "en": "Variational Inference",
+          "zh": "变分推断"
+        },
+        "text": {
+          "en": "Approximate inference estimates hidden topic assignments from observed words.",
+          "zh": "近似推断从可见词估计隐藏主题分配。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Bayesian network",
+        "zh": "贝叶斯网络"
+      },
+      {
+        "en": "Neural language models",
+        "zh": "神经语言模型"
+      },
+      {
+        "en": "Topic modeling",
+        "zh": "主题模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Text mining",
+        "zh": "文本挖掘"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "JMLR",
+          "zh": "《机器学习研究杂志》"
+        },
+        "title": {
+          "en": "LDA paper",
+          "zh": "LDA 论文"
+        },
+        "description": {
+          "en": "Primary JMLR source for LDA; local images redraw topic mixtures and plate notation.",
+          "zh": "LDA 的 《机器学习研究杂志》 原始来源；本地图重画主题混合和 plate notation。"
+        },
+        "url": "https://jmlr.org/papers/v3/blei03a.html",
+        "source": "https://jmlr.org/papers/v3/blei03a.html",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open JMLR paper",
+          "zh": "打开 《机器学习研究杂志》 论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Latent Dirichlet Allocation",
+          "zh": "潜在狄利克雷分配"
+        },
+        "url": "https://jmlr.org/papers/v3/blei03a.html"
+      },
+      {
+        "type": {
+          "en": "Author",
+          "zh": "作者"
+        },
+        "label": {
+          "en": "David M. Blei homepage",
+          "zh": "戴维·M·布莱 homepage"
+        },
+        "url": "https://www.cs.columbia.edu/~blei/"
+      },
+      {
+        "type": {
+          "en": "Implementation",
+          "zh": "实现"
+        },
+        "label": {
+          "en": "scikit-learn LatentDirichletAllocation",
+          "zh": "scikit-learn LatentDirichletAllocation"
+        },
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Topic Mixture",
+        "zh": "主题混合"
+      },
+      {
+        "en": "Word Distribution",
+        "zh": "词分布"
+      },
+      {
+        "en": "Variational Inference",
+        "zh": "变分推断"
+      }
+    ]
+  }
+}

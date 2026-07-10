@@ -1,0 +1,53 @@
+{
+  "id": "1951-strachey-draughts",
+  "year": "1951-1952",
+  "title": {
+    "en": "Christopher Strachey's Draughts",
+    "zh": "克里斯托弗·斯特雷奇 的跳棋程序"
+  },
+  "location": {
+    "name": {
+      "en": "National Physical Laboratory",
+      "zh": "英国国家物理实验室"
+    },
+    "country": {
+      "en": "Teddington, United Kingdom",
+      "zh": "英国特丁顿"
+    },
+    "coordinates": [
+      51.4245,
+      -0.3426
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Christopher Strachey",
+        "zh": "克里斯托弗·斯特雷奇"
+      },
+      "role": {
+        "en": "Developer of the early draughts program",
+        "zh": "早期跳棋程序开发者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Non-numerical programs could play",
+    "zh": "非数值程序也可以对弈"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Logical or non-mathematical programmes",
+      "zh": "逻辑或非数学程序"
+    },
+    "workAuthors": {
+      "en": "Christopher Strachey",
+      "zh": "克里斯托弗·斯特雷奇"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
+    "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
+  }
+}

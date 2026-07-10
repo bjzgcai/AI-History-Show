@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>",
+    "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.",
+        "zh": "约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Isomap as a landmark manifold-learning method because it made global nonlinear geometry operational. Its long-term legacy is the graph-distance view of representation learning, later echoed in visualization and graph-based learning methods.",
+        "zh": "专家通常把 Isomap 视为流形学习的标志性方法，因为它使全局非线性几何变得可操作。它的长期影响在于图距离表示学习视角，后来影响了可视化和图学习方法。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Geodesic manifold embedding",
+      "zh": "测地流形嵌入"
+    },
+    "artifact": {
+      "en": "Isomap embedding",
+      "zh": "Isomap 嵌入"
+    },
+    "material": {
+      "en": "Science paper",
+      "zh": "《Science》论文"
+    },
+    "demo": {
+      "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold.",
+      "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
+    },
+    "visual": "isomap",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Neighbor Graph",
+          "zh": "邻居图"
+        },
+        "text": {
+          "en": "Nearby points form the manifold graph.",
+          "zh": "近邻点形成流形图。"
+        }
+      },
+      {
+        "label": {
+          "en": "Geodesic Distance",
+          "zh": "测地距离"
+        },
+        "text": {
+          "en": "Shortest paths approximate distance along the surface.",
+          "zh": "最短路径近似曲面上的距离。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Kernel PCA",
+        "zh": "Kernel PCA"
+      },
+      {
+        "en": "Locally Linear Embedding",
+        "zh": "局部线性嵌入"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Neighbor graph",
+        "zh": "邻居图"
+      },
+      {
+        "en": "Shortest paths",
+        "zh": "最短路径"
+      },
+      {
+        "en": "Low-dimensional map",
+        "zh": "低维地图"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "title": {
+          "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "zh": "非线性降维的全局几何框架"
+        },
+        "description": {
+          "en": "Primary Science paper record for Isomap.",
+          "zh": "Isomap 的 Science 主论文记录。"
+        },
+        "url": "https://doi.org/10.1126/science.290.5500.2319",
+        "source": "https://doi.org/10.1126/science.290.5500.2319",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "zh": "《非线性降维的全局几何框架》"
+        },
+        "url": "https://doi.org/10.1126/science.290.5500.2319"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "Science article page",
+          "zh": "Science 文章页面"
+        },
+        "url": "https://www.science.org/doi/10.1126/science.290.5500.2319"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "PubMed record for Isomap",
+          "zh": "Isomap 的 PubMed 记录"
+        },
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/"
+      },
+      {
+        "type": {
+          "en": "Documentation",
+          "zh": "文档"
+        },
+        "label": {
+          "en": "scikit-learn Isomap documentation",
+          "zh": "scikit-learn Isomap 文档"
+        },
+        "url": "https://scikit-learn.org/stable/modules/manifold.html#isomap"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Science paper",
+          "zh": "《Science》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Local neighbor edges approximate geodesic distances, then a global embedding unfolds the manifold.",
+          "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
+        }
+      }
+    ]
+  }
+}

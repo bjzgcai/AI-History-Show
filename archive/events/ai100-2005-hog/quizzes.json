@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What kind of image evidence does HOG summarize?",
+      "zh": "HOG 汇总哪类图像证据？"
+    },
+    "options": [
+      {
+        "en": "Local gradient directions in cells",
+        "zh": "单元格中的局部梯度方向"
+      },
+      {
+        "en": "Next-word probabilities",
+        "zh": "下一个词概率"
+      },
+      {
+        "en": "Database table joins",
+        "zh": "数据库表连接"
+      },
+      {
+        "en": "Only GPS coordinates",
+        "zh": "只有 GPS 坐标"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "HOG counts edge-orientation votes over local cells and normalized blocks.",
+      "zh": "HOG 在局部单元和归一化块中统计边缘方向投票。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "hog",
+      "vision"
+    ]
+  }
+]

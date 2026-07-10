@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1988-td-update-summary",
+    "text": {
+      "en": "Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.",
+      "zh": "时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。"
+    },
+    "sourceIds": [
+      "learning-to-predict-by-the-methods-of-temporal-differences",
+      "richard-sutton-homepage"
+    ]
+  },
+  {
+    "id": "1988-td-update-quote",
+    "text": {
+      "en": "Bootstrapped value prediction",
+      "zh": "自举式价值预测"
+    },
+    "sourceIds": [
+      "learning-to-predict-by-the-methods-of-temporal-differences"
+    ]
+  }
+]

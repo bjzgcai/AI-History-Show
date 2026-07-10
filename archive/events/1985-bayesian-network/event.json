@@ -1,0 +1,53 @@
+{
+  "id": "1985-bayesian-network",
+  "year": "1985",
+  "title": {
+    "en": "Bayesian Network",
+    "zh": "贝叶斯网络"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, Los Angeles",
+      "zh": "加州大学洛杉矶分校"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      34.0689,
+      -118.4452
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Judea Pearl",
+        "zh": "朱迪亚·珀尔"
+      },
+      "role": {
+        "en": "Pioneer of Bayesian networks and causal AI",
+        "zh": "贝叶斯网络与因果 AI 先驱"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Directed acyclic graph plus conditional probabilities",
+    "zh": "有向无环图加条件概率"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Bayesian Networks technical paper",
+      "zh": "贝叶斯网络技术论文"
+    },
+    "workAuthors": {
+      "en": "Judea Pearl",
+      "zh": "朱迪亚·珀尔"
+    },
+    "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Probabilistic graphical models / Bayesian Network",
+    "zh": "BenchCouncil AI100：概率图模型 / 贝叶斯网络"
+  }
+}

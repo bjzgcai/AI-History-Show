@@ -1,0 +1,50 @@
+[
+  {
+    "id": "murray-campbell-ibm-research",
+    "type": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "Murray Campbell, IBM Research",
+      "zh": "默里·坎贝尔, IBM 研究院"
+    },
+    "url": "https://research.ibm.com/people/murray-campbell"
+  },
+  {
+    "id": "mastering-the-game-computer-history-museum",
+    "type": {
+      "en": "Museum",
+      "zh": "博物馆"
+    },
+    "label": {
+      "en": "Mastering the Game, Computer History Museum",
+      "zh": "Mastering the Game, Computer History Museum"
+    },
+    "url": "https://www.computerhistory.org/chess/"
+  },
+  {
+    "id": "ibm100-deep-blue",
+    "type": {
+      "en": "Official history",
+      "zh": "官方历史资料"
+    },
+    "label": {
+      "en": "IBM100: Deep Blue",
+      "zh": "IBM100: 深蓝"
+    },
+    "url": "https://www.ibm.com/history/deep-blue"
+  },
+  {
+    "id": "artificial-intelligence",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Artificial Intelligence",
+      "zh": "人工智能"
+    },
+    "url": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+  }
+]
