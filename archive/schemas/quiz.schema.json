@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "quiz.schema.json",
+  "title": "Archive quizzes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "question", "options", "answer"],
+    "properties": {
+      "id": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "storylineId": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "question": {
+        "$ref": "shared.schema.json#/$defs/localizedText"
+      },
+      "options": {
+        "type": "array",
+        "minItems": 2,
+        "items": {
+          "oneOf": [
+            {
+              "$ref": "shared.schema.json#/$defs/localizedText"
+            },
+            {
+              "type": "object",
+              "required": ["id", "text"],
+              "properties": {
+                "id": {
+                  "$ref": "shared.schema.json#/$defs/archiveId"
+                },
+                "text": {
+                  "$ref": "shared.schema.json#/$defs/localizedText"
+                }
+              },
+              "additionalProperties": true
+            }
+          ]
+        }
+      },
+      "answer": {
+        "oneOf": [
+          { "type": "integer", "minimum": 0 },
+          { "$ref": "shared.schema.json#/$defs/archiveId" }
+        ]
+      },
+      "explanation": {
+        "$ref": "shared.schema.json#/$defs/localizedText"
+      },
+      "sourceIds": {
+        "$ref": "shared.schema.json#/$defs/sourceIdList"
+      },
+      "assetIds": {
+        "$ref": "shared.schema.json#/$defs/assetIdList"
+      },
+      "review": {
+        "$ref": "shared.schema.json#/$defs/reviewState"
+      }
+    },
+    "additionalProperties": true
+  }
+}

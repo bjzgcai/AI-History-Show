@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source.schema.json",
+  "title": "Archive sources",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "type", "title"],
+    "properties": {
+      "id": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "type": {
+        "type": "string"
+      },
+      "label": {
+        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+      },
+      "title": {
+        "oneOf": [
+          { "type": "string", "minLength": 1 },
+          { "$ref": "shared.schema.json#/$defs/localizedText" }
+        ]
+      },
+      "authors": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "year": {
+        "oneOf": [
+          { "type": "integer" },
+          { "type": "string" }
+        ]
+      },
+      "url": {
+        "type": "string"
+      },
+      "doi": {
+        "type": "string"
+      },
+      "archiveUrl": {
+        "type": "string"
+      },
+      "language": {
+        "type": "string"
+      },
+      "reliability": {
+        "type": "string",
+        "enum": ["primary", "secondary", "tertiary", "reference-only"]
+      },
+      "notes": {
+        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+      },
+      "review": {
+        "$ref": "shared.schema.json#/$defs/reviewState"
+      }
+    },
+    "anyOf": [
+      { "required": ["url"] },
+      { "required": ["doi"] },
+      { "required": ["archiveUrl"] }
+    ],
+    "additionalProperties": true
+  }
+}

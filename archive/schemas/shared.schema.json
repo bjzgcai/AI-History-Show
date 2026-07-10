@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "shared.schema.json",
+  "title": "Shared archive schema definitions",
+  "$defs": {
+    "archiveId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "localizedText": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {
+        "zh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "optionalLocalizedText": {
+      "type": "object",
+      "properties": {
+        "zh": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["zh"] },
+        { "required": ["en"] }
+      ]
+    },
+    "localizedHtml": {
+      "$ref": "#/$defs/localizedText"
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": ["draft", "needs-source", "verified", "disputed", "deprecated"]
+    },
+    "reviewState": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/reviewStatus"
+        },
+        "notes": {
+          "$ref": "#/$defs/optionalLocalizedText"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "reviewer": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "sourceIdList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/archiveId"
+      },
+      "uniqueItems": true
+    },
+    "assetIdList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/archiveId"
+      },
+      "uniqueItems": true
+    },
+    "coordinates": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^(https?://|resources/|research/|public/|examples/).+"
+    }
+  }
+}

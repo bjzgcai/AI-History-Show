@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "asset.schema.json",
+  "title": "Archive assets",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "type", "path", "role", "caption"],
+    "properties": {
+      "id": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "type": {
+        "type": "string"
+      },
+      "path": {
+        "type": "string",
+        "minLength": 1
+      },
+      "role": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caption": {
+        "$ref": "shared.schema.json#/$defs/localizedText"
+      },
+      "subcaption": {
+        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+      },
+      "sourceId": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "sourceIds": {
+        "$ref": "shared.schema.json#/$defs/sourceIdList"
+      },
+      "rights": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "license": {
+            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+          },
+          "usage": {
+            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+          }
+        },
+        "additionalProperties": true
+      },
+      "usage": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "editable": {
+        "type": "boolean"
+      },
+      "review": {
+        "$ref": "shared.schema.json#/$defs/reviewState"
+      }
+    },
+    "anyOf": [
+      { "required": ["sourceId"] },
+      { "required": ["sourceIds"] }
+    ],
+    "additionalProperties": true
+  }
+}
