@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "figure.schema.json",
+  "title": "Archive figures",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name"],
+    "properties": {
+      "id": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "name": {
+        "$ref": "shared.schema.json#/$defs/localizedText"
+      },
+      "aliases": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "type": {
+        "type": "string"
+      },
+      "organizationIds": {
+        "type": "array",
+        "items": {
+          "$ref": "shared.schema.json#/$defs/archiveId"
+        },
+        "uniqueItems": true
+      },
+      "avatarAssetId": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "url": {
+        "type": "string"
+      },
+      "notes": {
+        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+      },
+      "review": {
+        "$ref": "shared.schema.json#/$defs/reviewState"
+      }
+    },
+    "additionalProperties": true
+  }
+}

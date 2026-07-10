@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "claim.schema.json",
+  "title": "Archive claims",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "text", "sourceIds"],
+    "properties": {
+      "id": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      },
+      "type": {
+        "type": "string"
+      },
+      "importance": {
+        "type": "string",
+        "enum": ["core", "context", "detail", "display"]
+      },
+      "text": {
+        "$ref": "shared.schema.json#/$defs/localizedText"
+      },
+      "sourceIds": {
+        "$ref": "shared.schema.json#/$defs/sourceIdList"
+      },
+      "status": {
+        "$ref": "shared.schema.json#/$defs/reviewStatus"
+      },
+      "notes": {
+        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+      },
+      "review": {
+        "$ref": "shared.schema.json#/$defs/reviewState"
+      }
+    },
+    "additionalProperties": true
+  }
+}
